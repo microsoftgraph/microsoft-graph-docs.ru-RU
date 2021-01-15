@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4627c2a3084dccd73e786bcb09634e3d145da896
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 9990a6a6b44f8699dbabf2290909b47019e1edd0
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523130"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873775"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -35,32 +35,31 @@ ms.locfileid: "49523130"
 * **.NET Framework** — установите [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) или более поздней версии.
 
 #### <a name="command-examples"></a>Примеры команд
+> [!NOTE]
+> Так как команды аналитики элементов доступны только в бета-версии, перед их вызовом нужно переключиться на бета-версию профиля.
+> ```powershell
+>    Select-MgProfile beta
+> ```
 Чтобы получить конфигурацию аналитики элементов для организации, используйте модуль PowerShell Microsoft Graph и следующую команду, заменив в ней `$OrgID` на применимый идентификатор вашей организации:
 ```powershell
    Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
 ```
 
-По умолчанию аналитика элементов включена для всей организации. С помощью модуля PowerShell Microsoft Graph можно изменить это и отключить аналитику элементов для всех пользователей в организации. Используйте следующую команду, заменив `$OrgID` на идентификатор организации и указав `-IsEnabledInOrganization` как `false`:
+По умолчанию аналитика элементов включена для всей организации. С помощью модуля PowerShell Microsoft Graph можно изменить это и отключить аналитику элементов для всех пользователей в организации. 
+> [!NOTE]
+> Для метода обновления требуются дополнительные разрешения `User.ReadWrite`. Чтобы создать сеанс Microsoft Graph с определенной обязательной областью, используйте следующую команду и предоставьте запрошенные разрешения.
+> ```powershell
+>    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+> ```
+
+Используйте следующую команду, заменив `$OrgID` на идентификатор организации и указав `-IsEnabledInOrganization` как `false`.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
 ```
-Также можно изменить поведение по умолчанию и отключить аналитику элементов для определенной группы Azure AD. Используйте следующую команду, заменив `$OrgID` на идентификатор организации, а `$GroupID` — на идентификатор группы Azure AD:
+Также можно изменить поведение по умолчанию и отключить аналитику элементов для определенной группы Azure AD. Используйте следующую команду, заменив `$OrgID` на идентификатор организации, а `$GroupID` — на идентификатор группы Azure AD.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
 ```
-
-#### <a name="using-earlier-versions-of-the-powershell-module"></a>Использование ранних версий модуля PowerShell
-
-Если вы используете модуль Microsoft Graph PowerShell версии 0.9.0 или более ранней, вызовите командлет `Update-MgOrganizationSettingItemInsight` одним из двух способов, как в следующих примерах: 
-
-- Добавьте `-AdditionalProperties @{}` в конец команды:
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup 28f9ceac-39aa-4829-9a67-b8f1db11eaa1 -AdditionalProperties @{}
-  ```
-- Также можно использовать `-BodyParameter`: 
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -BodyParameter @{DisabledForGroup = "85f741b4-e924-41a8-abf8-d61a7b950bb5"; IsEnabledInOrganization = $false}
-  ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>Настройка аналитики элементов с помощью API REST
 Как сказано выше, параметры конфиденциальности для аналитики элементов по умолчанию включены для всей организации. Параметры по умолчанию можно изменить двумя способами.

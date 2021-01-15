@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 71c357932916ae585c96b4c52eaabacbbd19c084
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: a7c489b30b58863378fa083e03cd049abd8bbaf2
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844877"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873712"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -29,6 +29,7 @@ ms.locfileid: "49844877"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение|Бета|Добавлен сложный тип [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство **outOfOfficeSettings** для типа ресурса [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).|
+|Дополнение|Бета|Добавлены свойства **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** и **alternativeRecording** для объекта [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true), предназначенные для создания трансляций.|
 
 ### <a name="groups"></a>Группы
 
@@ -40,7 +41,7 @@ ms.locfileid: "49844877"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлено свойство для **hostNames** к сущности [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Дополнение | Бета | Добавлено свойство для **hostNames** к сущности [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
 
@@ -57,7 +58,7 @@ ms.locfileid: "49844877"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
-| Дополнение | Бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li></ul> |
+| Дополнение | Бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li><li>PrintConnector.Read.All</li><li>PrintConnector.ReadWrite.All</li><li>PrintSettings.Read.All</li><li>PrintSettings.ReadWrite.All</li><li>Reports.Read.All</li></ul> |
 
 ## <a name="december-2020"></a>Декабрь 2020 г.
 
@@ -101,7 +102,7 @@ ms.locfileid: "49844877"
 |:---|:---|:---|
 | Изменение | Бета | Свойство **floorNumber** (Edm.Int) ресурса [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) изменено на **floor** (Edm.String). |
 | Изменение | Бета | Свойство **roomNumber** (Edm.Int) ресурса [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) изменено на **roomName** (Edm.String). |
-| Изменение | бета | Изменен тип связи allowedUsers для ресурса [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
+| Изменение | Бета | Изменен тип связи allowedUsers для ресурса [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
 | Изменение | Бета | Изменен тип связи allowedGroups для ресурса [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
 | Изменение | Бета | Обновлены типы перечислений в ресурсе [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values). |
 | Дополнение | Бета | Действие [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) добавлено для ресурса [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).|
@@ -485,7 +486,7 @@ ms.locfileid: "49844877"
 |Дополнение|1.0|Добавлены новые типы перечисления:<br/>[runAsAccountType](/graph/api/resources/intune-shared-runasaccounttype?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppFileSystemOperationType](/graph/api/resources/intune-apps-win32lobappfilesystemoperationtype?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppMsiPackageType](/graph/api/resources/intune-apps-win32lobappmsipackagetype?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppPowerShellScriptRuleOperationType](/graph/api/resources/intune-apps-win32lobapppowershellscriptruleoperationtype?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppRegistryRuleOperationType](/graph/api/resources/intune-apps-win32lobappregistryruleoperationtype?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppRestartBehavior](/graph/api/resources/intune-apps-win32lobapprestartbehavior?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppReturnCodeType](/graph/api/resources/intune-apps-win32lobappreturncodetype?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppRuleOperator](/graph/api/resources/intune-apps-win32lobappruleoperator?view=graph-rest-1.0&preserve-view=true)<br/>[win32LobAppRuleType](/graph/api/resources/intune-apps-win32lobappruletype?view=graph-rest-1.0&preserve-view=true)<br/>|
 |Изменение|v1.0|Изменены следующие свойства для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-1.0&preserve-view=true):<br/>**firewallBlockStatefulFTP** сделано необязательным.<br/>**firewallMergeKeyingModuleSettings** сделано необязательным.<br/>|
 |Дополнение|Бета|Добавлены новые объекты:<br/>[mobileAppSupersedence](/graph/api/resources/intune-apps-mobileappsupersedence?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthDeviceModelPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthDevicePerformanceDetails](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthOSVersionPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthosversionperformance?view=graph-rest-beta&preserve-view=true)<br/>|
-|Дополнение|бета|Добавлены новые сложные типы:<br/>[textInputQuestion](/graph/api/resources/textInputQuestion?view=graph-rest-beta&preserve-view=true)<br/>|
+|Дополнение|Бета|Добавлены новые сложные типы:<br/>[textInputQuestion](/graph/api/resources/textInputQuestion?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые типы перечисления:<br/>[androidManagedAppSafetyNetEvaluationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetevaluationtype?view=graph-rest-beta&preserve-view=true)<br/>[androidRequiredPasswordComplexity](/graph/api/resources/intune-deviceconfig-androidrequiredpasswordcomplexity?view=graph-rest-beta&preserve-view=true)<br/>[macOSSoftwareUpdateDelayPolicy](/graph/api/resources/intune-deviceconfig-macossoftwareupdatedelaypolicy?view=graph-rest-beta&preserve-view=true)<br/>[managedDeviceManagementFeatures](/graph/api/resources/intune-devices-manageddevicemanagementfeatures?view=graph-rest-beta&preserve-view=true)<br/>[mobileAppRelationshipType](/graph/api/resources/intune-apps-mobileapprelationshiptype?view=graph-rest-beta&preserve-view=true)<br/>[mobileAppSupersedenceType](/graph/api/resources/intune-apps-mobileappsupersedencetype?view=graph-rest-beta&preserve-view=true)<br/>[settingSourceType](/graph/api/resources/intune-shared-settingsourcetype?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Added the [getAvailableExtensionProperties](/graph/api/resources/getAvailableExtensionProperties?view=graph-rest-beta&preserve-view=true) action|
 |Дополнение|Бета|Добавлены [getObjectsById](/graph/api/resources/getObjectsById?view=graph-rest-beta&preserve-view=true)|
@@ -516,7 +517,7 @@ ms.locfileid: "49844877"
 |Удаление|бета|Удалены свойства **activeDevices**, **allOrgsHealthScore**, **allOrgsMeanTimeToFailure**, **appFriendlyName**, **meanTimeToFailure**, **memaTimeGenerated**, **tenantId**, **totalAppCrashes**, **totalAppHangs** и **totalAppUsageDuration** из объекта [userExperienceAnalyticsAppHealthApplicationPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance?view=graph-rest-beta&preserve-view=true)|
 |Дополнение|бета|Добавлены свойства **restartStopCode** и **restartFaultBucket** для объекта [userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory?view=graph-rest-beta&preserve-view=true)|
 |Удаление|бета|Удалено свойство **installLanguage** из объекта [win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta&preserve-view=true)|
-|Дополнение|бета|Добавлено свойство **firewallIPSecExemptionsNone** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta&preserve-view=true)|
+|Дополнение|Бета|Добавлено свойство **firewallIPSecExemptionsNone** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta&preserve-view=true)|
 |Изменение|Бета|Изменены следующие свойства в сущности [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta&preserve-view=true):<br/>**firewallBlockStatefulFTP** сделано необязательным.<br/>**firewallMergeKeyingModuleSettings** сделано необязательным.<br/>|
 |Дополнение|Бета|Добавлены свойства навигации **userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion**, **userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion**, **userExperienceAnalyticsAppHealthDevicePerformance**, **userExperienceAnalyticsAppHealthDeviceModelPerformance**, **userExperienceAnalyticsAppHealthOSVersionPerformance**, **userExperienceAnalyticsAppHealthOverview**, **userExperienceAnalyticsAppHealthDevicePerformanceDetails**, **microsoftTunnelConfigurations** и **microsoftTunnelSites** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta&preserve-view=true)|
 |Дополнение|Бета|Добавлено свойство навигации **rebootAnalyticsMetrics** для объекта [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline?view=graph-rest-beta&preserve-view=true)|
@@ -614,7 +615,7 @@ ms.locfileid: "49844877"
 | Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). Это свойство заменено свойством **includeResourceData**. |
 | Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](change-notifications-delivery.md). |
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -625,7 +626,7 @@ ms.locfileid: "49844877"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
-| Дополнение | бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
+| Дополнение | Бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
 | Дополнение | бета | Добавлены новые [разрешения только для приложений](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
 | Изменение | Бета | Добавлены новые требования к разрешениям для следующих методов: <ul><li>[Перечисление принтеров](/graph/api/print-list-printers?view=graph-rest-beta&preserve-view=true)</li><li>[Получение принтера](/graph/api/printer-get?view=graph-rest-beta&preserve-view=true)</li><li>[Обновление принтера](/graph/api/printer-update?view=graph-rest-beta&preserve-view=true)</li><li>[Удаление принтера](/graph/api/printer-delete?view=graph-rest-beta&preserve-view=true)</li><li>[Перечисление объектов allowedGroup (принтер)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta&preserve-view=true)</li><li>[Перечисление объектов allowedUser (принтер)](/graph/api/printer-list-allowedusers?view=graph-rest-beta&preserve-view=true)</li><li>[Создание объекта allowedGroup (принтер)](/graph/api/printer-post-allowedgroups?view=graph-rest-beta&preserve-view=true)</li><li>[Создание объекта allowedUser (принтер)](/graph/api/printer-post-allowedusers?view=graph-rest-beta&preserve-view=true)</li><li>[Удаление объекта allowedGroup (принтер)](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta&preserve-view=true)</li><li>[Удаление объекта allowedUser (принтер)](/graph/api/printer-delete-alloweduser?view=graph-rest-beta&preserve-view=true)</li><li>[getCapabilities (принтер)](/graph/api/printer-getcapabilities?view=graph-rest-beta&preserve-view=true)</li><li>[Перечисление соединителей (принтер)](/graph/api/printer-list-connectors?view=graph-rest-beta&preserve-view=true)</li><li>[Перечисление заданий (принтер)](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true)</li><li>[Создание задания (принтер)](/graph/api/printer-post-jobs?view=graph-rest-beta&preserve-view=true)</li><li>[resetDefaults (принтер)](/graph/api/printer-resetdefaults?view=graph-rest-beta&preserve-view=true)</li><li>[Перечисление общих ресурсов](/graph/api/print-list-shares?view=graph-rest-beta&preserve-view=true)</li><li>[Получение printerShare](/graph/api/printershare-get?view=graph-rest-beta&preserve-view=true)</li><li>[Создание printerShare](/graph/api/print-post-shares?view=graph-rest-beta&preserve-view=true)</li><li>[Обновление printerShare](/graph/api/printershare-update?view=graph-rest-beta&preserve-view=true)</li><li>[Удаление printerShare](/graph/api/printershare-delete?view=graph-rest-beta&preserve-view=true)</li><li>[Перечисление объектов allowedGroup (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta&preserve-view=true)</li><li>[Перечисление объектов allowedUser (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta&preserve-view=true)</li><li>[Создание объекта allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta&preserve-view=true)</li><li>[Создание объекта allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta&preserve-view=true)</li><li>[Удаление объекта allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta&preserve-view=true)</li><li>[Удаление объекта allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta&preserve-view=true)</li><li>[Создание printJob](/graph/api/printer-post-jobs?view=graph-rest-beta&preserve-view=true)</li><li>[Получение printJob](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta&preserve-view=true)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta&preserve-view=true)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancelprintjob?view=graph-rest-beta&preserve-view=true)</li></ul> |
 | Изменение | Бета | Добавлено свойство **allowAllUsers** для ресурса [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
@@ -633,7 +634,7 @@ ms.locfileid: "49844877"
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 | **Тип изменения** | **Версия**   | **Описание** |
 |:---|:---|:---|
-|Дополнение|бета|Добавлены новые объекты:<br/>[malwareStateForWindowsDevice](/graph/api/resources/intune-devices-malwarestateforwindowsdevice?view=graph-rest-beta&preserve-view=true)<br/>[securityConfigurationTask](/graph/api/resources/intune-partnerintegration-securityconfigurationtask?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthApplicationPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsMetricHistory](/graph/api/resources/intune-devices-userexperienceanalyticsmetrichistory?view=graph-rest-beta&preserve-view=true)<br/>[vulnerableManagedDevice](/graph/api/resources/intune-partnerintegration-vulnerablemanageddevice?view=graph-rest-beta&preserve-view=true)<br/>|
+|Дополнение|Бета|Добавлены новые объекты:<br/>[malwareStateForWindowsDevice](/graph/api/resources/intune-devices-malwarestateforwindowsdevice?view=graph-rest-beta&preserve-view=true)<br/>[securityConfigurationTask](/graph/api/resources/intune-partnerintegration-securityconfigurationtask?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsAppHealthApplicationPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsMetricHistory](/graph/api/resources/intune-devices-userexperienceanalyticsmetrichistory?view=graph-rest-beta&preserve-view=true)<br/>[vulnerableManagedDevice](/graph/api/resources/intune-partnerintegration-vulnerablemanageddevice?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые сложные типы:<br/>[macOSAzureAdSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-macosazureadsinglesignonextension?view=graph-rest-beta&preserve-view=true)<br/>[windowsMalwareSeverityCount](/graph/api/resources/intune-devices-windowsmalwareseveritycount?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые типы перечисления:<br/>[endpointSecurityConfigurationApplicablePlatform](/graph/api/resources/intune-partnerintegration-endpointsecurityconfigurationapplicableplatform?view=graph-rest-beta&preserve-view=true)<br/>[endpointSecurityConfigurationProfileType](/graph/api/resources/intune-partnerintegration-endpointsecurityconfigurationprofiletype?view=graph-rest-beta&preserve-view=true)<br/>[endpointSecurityConfigurationType](/graph/api/resources/intune-partnerintegration-endpointsecurityconfigurationtype?view=graph-rest-beta&preserve-view=true)<br/>[userExperienceAnalyticsOperatingSystemRestartCategory](/graph/api/resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлено действие [syncLicenseCounts](/graph/api/intune-onboarding-vppToken-synclicenses?view=graph-rest-beta&preserve-view=true)?view=graph-rest-beta&preserve-view=true) для коллекции [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta&preserve-view=true) |
@@ -889,7 +890,7 @@ ms.locfileid: "49844877"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлены ресурсы [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection) и [resourceData](/graph/api/resources/resourcedata) для API [change notification](/graph/api/concepts/webhooks). |
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
@@ -1055,7 +1056,7 @@ ms.locfileid: "49844877"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
-| Дополнение | бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
+| Дополнение | Бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
 | Дополнение | бета | Добавлены новые [разрешения только для приложений](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
 
 ## <a name="may-2020"></a>Май 2020 г.
@@ -1470,7 +1471,7 @@ ms.locfileid: "49844877"
 | Дополнение | Бета | Добавлен API [получения callRecord](/graph/api/callrecords-callrecord-get?view=graph-rest-beta&preserve-view=true).|
 | Дополнение | Бета | Добавлены новые объекты:<br /><li>[callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true)</li> <li>[session](/graph/api/resources/callrecords-session?view=graph-rest-beta&preserve-view=true)</li> <li>[segment](/graph/api/resources/callrecords-segment?view=graph-rest-beta&preserve-view=true)</li>|
 | Дополнение | Бета | Добавлены новые сложные типы:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-beta&preserve-view=true)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-beta&preserve-view=true)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-beta&preserve-view=true)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-beta&preserve-view=true)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-beta&preserve-view=true)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-beta&preserve-view=true)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-beta&preserve-view=true)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-beta&preserve-view=true)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-beta&preserve-view=true)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-beta&preserve-view=true)</li> |
-| Добавление | Бета | Добавлена поддержка для подписок [веб-перехватчиков](webhooks.md) на записи звонков.|
+| Дополнение | Бета | Добавлена поддержка для подписок [веб-перехватчиков](webhooks.md) на записи звонков.|
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 
@@ -1605,7 +1606,7 @@ ms.locfileid: "49844877"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 
 Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
 
@@ -2441,8 +2442,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверения и доступ
 
-| **Тип изменения** | 
-  **Version** | **Описание**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Тип изменения** | **Версия** | **Описание**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Дополнение        | Бета        | Добавлен [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), представляющий определения рисков в службе защиты идентификации Azure AD.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Дополнение        | бета        | Появился новый тип ресурса [applicationTemplate](/graph/api/resources/applicationtemplate.md). Этот тип поддерживает операции [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) и [get](/graph/api/applicationtemplate-get.md) с приложениями из коллекции Azure AD.                                                                                                                                                                                                                                                                                                                                                                   |
@@ -2453,30 +2453,26 @@ ms.locfileid: "49844877"
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка разрешения Mail.ReadBasic в API для управления объектом mailFolder: [перечисление объектов mailfolder](/graph/api/user-list-mailfolders?view=graph-rest-beta&preserve-view=true), [получение объекта mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta&preserve-view=true), [перечисление дочерних папок](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta&preserve-view=true) и [перечисление сообщений в папке почты](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta&preserve-view=true). Кроме того, добавлена поддержка Mail.ReadBasic в [разностном запросе для сообщения](/graph/api/message-delta?view=graph-rest-beta&preserve-view=true) и [разностном запросе для объекта mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Дополнение|Бета| Добавлены новые отчеты для получения сведений о регистрации пользователей и использовании действий:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta&preserve-view=true) — создает отчет об использовании самостоятельного сброса паролей.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) — создает отчет о числе регистраций для самостоятельного сброса паролей и многофакторной проверки подлинности.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta&preserve-view=true) — создает отчет об использовании самостоятельного сброса паролей и многофакторной проверки подлинности.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) — создает отчет об использовании самостоятельного сброса паролей для пользователя.</li></ul> |
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлено свойство навигации[followSite](/graph/api/follow-site?view=graph-rest-beta&preserve-view=true) в набор сущностей [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлено свойство навигации [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta&preserve-view=true) в набор сущностей [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлен ресурс [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) и соответствующие методы. |
 
@@ -2491,8 +2487,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar-mail-personal-contacts"></a>Календарь, почта, личные контакты
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 и бета-версия | Для администраторов добавлена возможность ограничить приложению доступ, указав только определенные почтовые ящики, даже если ему предоставлены разрешения приложений на доступ к почте, параметрам почтового ящика, календарям и контактам. Дополнительные сведения см. в статье [Ограничение области разрешений для приложений с указанием определенных почтовых ящиков Exchange Online](auth-limit-mailbox-access.md). |
 
@@ -2500,7 +2495,7 @@ ms.locfileid: "49844877"
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Дополнение|Бета|Добавлены новые объекты:<br/>[deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialsettings?view=graph-rest-beta&preserve-view=true)<br/>[iosDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[securityBaselineCategoryStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinecategorystatesummary?view=graph-rest-beta&preserve-view=true)<br/>|
-|Дополнение|бета|Добавлены новые типы перечисления:<br/>[deviceManagementDerivedCredentialIssuer](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialissuer?view=graph-rest-beta&preserve-view=true)<br/>[deviceManagementDerivedCredentialNotificationType](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype?view=graph-rest-beta&preserve-view=true)<br/>[emailCertificateType](/graph/api/resources/intune-deviceconfig-emailcertificatetype?view=graph-rest-beta&preserve-view=true)<br/>[mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta&preserve-view=true)<br/>|
+|Дополнение|Бета|Добавлены новые типы перечисления:<br/>[deviceManagementDerivedCredentialIssuer](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialissuer?view=graph-rest-beta&preserve-view=true)<br/>[deviceManagementDerivedCredentialNotificationType](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype?view=graph-rest-beta&preserve-view=true)<br/>[emailCertificateType](/graph/api/resources/intune-deviceconfig-emailcertificatetype?view=graph-rest-beta&preserve-view=true)<br/>[mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлено действие executeAction для коллекции [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета|Добавлено действие [rotateFileVaultKey](/graph/api/intune-devices-manageddevice-rotatefilevaultkey?view=graph-rest-beta&preserve-view=true) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta&preserve-view=true) |
 |Дополнение|Бета|Добавлено действие [migrateToTemplate](/graph/api/intune-deviceintent-devicemanagementintent-migratetotemplate?view=graph-rest-beta&preserve-view=true) для объекта [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta&preserve-view=true) |
@@ -2539,8 +2534,7 @@ ms.locfileid: "49844877"
 |Дополнение|Бета|Добавлен элемент **derivedCredential** для типа перечисления [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta&preserve-view=true)|
 
 ### <a name="files"></a>Файлы
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета-версия | Добавлен сложный тип [bundle](/graph/api/resources/bundle?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | Бета-версия | Добавлен сложный тип [album](/graph/api/resources/album?view=graph-rest-beta&preserve-view=true) |
@@ -2559,15 +2553,13 @@ ms.locfileid: "49844877"
 | Дополнение    | Бета    | В перечисление [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#educationuserrole-values) добавлен параметр `faculty`.                              |
 
 ### <a name="groups"></a>Группы
-| **Тип изменения** | 
-  **Version** | **Описание** |
+| **Тип изменения** | **Версия** | **Описание** |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлено свойство **assignedlabels** для объекта [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true). Это свойство представляет список пар меток конфиденциальности (идентификатор и имя метки), связанных с группой.
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлен объект [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta&preserve-view=true). |
 | Дополнение | бета | Добавлена операция [список журнала](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true). |
@@ -2580,23 +2572,20 @@ ms.locfileid: "49844877"
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
 
-| **Тип изменения** | 
-  **Version** | **Описание**                  |
+| **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta&preserve-view=true).|
 | Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="security"></a>Безопасность
 
-| **Тип изменения** | 
-  **Version** | **Описание**              |
+| **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0       | Добавлены API оценки безопасности для [API безопасности](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0&preserve-view=true), включающие следующие ресурсы и операции:<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0&preserve-view=true) (и соответствующие объекты)<br/>[Перечисление объектов secureScores](/graph/api/securescores-list?view=graph-rest-1.0&preserve-view=true)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0&preserve-view=true)<br/>[Перечисление объектов secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0&preserve-view=true)<br/>[Обновление объектов secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0&preserve-view=true) |
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version** | **Описание**                  |
+| **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | бета        | Добавлено свойство **urgent** для перечисления **chatMessageImportance**.|
 | Дополнение        | бета        | Добавлено свойство навигации **hostedContents** для объекта [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).|
@@ -2607,8 +2596,7 @@ ms.locfileid: "49844877"
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлены два типа уведомлений жизненного цикла (`subscriptionRemoved` и `missed`), доступные для ресурсов Outlook. Приложения, выполняющие подписку, могут принимать соответствующие меры, чтобы уменьшить влияние прерывания уведомлений. Дополнительные сведения см. в статье [Уменьшение числа пропущенных подписок и уведомлений о ресурсах Outlook (предварительная версия)](webhooks-lifecycle.md)|
 
@@ -2655,8 +2643,7 @@ ms.locfileid: "49844877"
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство **analytics** для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | 1.0        | Добавлено свойство **analytics** для объекта [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true). |
@@ -2674,8 +2661,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 |  Представлены новые **API журналов аудита для Azure AD**, предоставляющие журналы действий для задач управления каталогом с помощью объекта [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-1.0&preserve-view=true) и действий входа с помощью объекта [signIns](/graph/api/resources/signIns?view=graph-rest-1.0&preserve-view=true).|
 | Дополнение | бета | Добавлены новые разрешения приложений для API **проверки доступа**: AccessReview.Read.All, ProgramControl.Read.All и ProgramControl.ReadWrite.All. Дополнительные сведения см. в статье [Справочник по API проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true). |
@@ -2685,8 +2671,7 @@ ms.locfileid: "49844877"
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета-версия          | Добавлена поддержка нового [разрешения Mail.ReadBasic (предварительная версия)](permissions-reference.md#mail-permissions) для интерфейсов [Список сообщений](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true) и [Получение сообщений](/graph/api/message-get?view=graph-rest-beta&preserve-view=true).            |
 | Дополнение        | Бета-версия          | Добавлена возможность [получения содержимого MIME сообщения](outlook-get-mime-message.md). |
@@ -2694,8 +2679,7 @@ ms.locfileid: "49844877"
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |1.0 | Добавлена поддержка разрешений приложений для ресурса [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true).|
 |Дополнение |1.0| Добавлены свойства **email** и **webUrl** для [канала](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true).|
@@ -2707,12 +2691,11 @@ ms.locfileid: "49844877"
 ## <a name="march-2019"></a>Март 2019 г.
 
 ### <a name="calendar"></a>Календарь
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение | 1.0 | Добавлено действие [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) и сложные типы [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0&preserve-view=true), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0&preserve-view=true) и [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0&preserve-view=true) для поддержки [получения сведений о доступности пользователей, списков рассылки и ресурсов для указанного периода времени](outlook-get-free-busy-schedule.md). |
 |Изменение | бета | Откат изменений типа, связанных с [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta&preserve-view=true), которые представлены в [феврале 2019 г](#february-2019). Конкретные изменения перечислены в строках ниже.|
-|Изменение | бета | Изменен тип данных для следующих параметров [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta&preserve-view=true): <br>**attendees**: с **attendeeDataModel** откат на [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-beta&preserve-view=true) <br>**locationConstraint**: с **locationConstraints** откат на [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta&preserve-view=true) <br> **timeConstraint**: с **findMeetingTimesTimeConstraints** откат на [timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta&preserve-view=true)|
+|Изменение | Бета | Изменен тип данных для следующих параметров [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta&preserve-view=true): <br>**attendees**: с **attendeeDataModel** откат на [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-beta&preserve-view=true) <br>**locationConstraint**: с **locationConstraints** откат на [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta&preserve-view=true) <br> **timeConstraint**: с **findMeetingTimesTimeConstraints** откат на [timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta&preserve-view=true)|
 |Изменение | Бета | Изменен возвращаемый тип **findMeetingTimes** с **findMeetingTimesResponse** обратно на [meetingTimeSuggestionsResult](/graph/api/resources/meetingTimeSuggestionsResult?view=graph-rest-beta&preserve-view=true) |
 |Изменение | Бета-версия | Изменен базовый тип [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta&preserve-view=true) с **locationDataModel** обратно на [location](/graph/api/resources/location?view=graph-rest-beta&preserve-view=true) |
 |Изменение | Бета-версия | Изменены типы данных следующих параметров [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta&preserve-view=true): <br> **attendeeAvailability**: с коллекции **attendeeAvailabilityDataModel** откат на коллекцию [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta&preserve-view=true) <br> **locations**: с коллекции **locationDataModel** откат на коллекцию [location](/graph/api/resources/location?view=graph-rest-beta&preserve-view=true) <br> **meetingTimeSlot**: с **meetingTimeSlotDataModel** откат на [timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta&preserve-view=true) <br> **organizerAvailability**: с **availabilityStatus** откат на **freeBusyStatus** |
@@ -2763,8 +2746,7 @@ ms.locfileid: "49844877"
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство навигации **subscriptions** для объекта [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0&preserve-view=true) |
 | Дополнение        | Бета-версия        | Добавлено свойство **expirationDateTime** для типа DateTimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta&preserve-view=true). |
@@ -2772,15 +2754,13 @@ ms.locfileid: "49844877"
 
 ### <a name="financials"></a>Финансовые показатели
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | бета          | Добавлены API финансовых показателей для Dynamics 365 Business Central. Дополнительные сведения см. в статье [Справочник по API финансовых показателей](/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0&preserve-view=true).|
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлены свойства **passwordNotificationWindowInDays** и **passwordValidityPeriodInDays** для ресурса [domain](/graph/api/resources/domain?view=graph-rest-1.0&preserve-view=true).|
 | Дополнение | Бета-версия и версия 1.0 | Добавлены свойства **complianceExpirationDateTime**, **profileType** и **systemLabels** свойства для ресурса [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true).|
@@ -2788,8 +2768,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |бета| Появился метод [Confirm riskyUsers compromised](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta&preserve-view=true), который позволяет администраторам подтверждать компрометацию пользователей в службе "Защита идентификации Azure AD". |
 |Дополнение |бета| Появился метод [Dismiss riskyUsers](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta&preserve-view=true), который позволяет администраторам отменить отметку "рискованный" для пользователей в службе "Защита идентификации Azure AD". |
@@ -2797,8 +2776,7 @@ ms.locfileid: "49844877"
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Удаление |бета| Удалено свойство **deleted** из ресурса [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true). Вместо него можно использовать **deletedDateTime**. |
 | Дополнение | Бета | Добавлены ресурсы [schedule](/api-reference/beta/resources/schedule.md), [schedulingGroup](/api-reference/beta/resources/schedulinggroup.md), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) и [timeOff](/api-reference/beta/resources/timeoff.md), а также соответствующие методы. |
@@ -2808,8 +2786,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Изменение | Бета | Изменен тип данных для следующих параметров [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta&preserve-view=true): <br>**attendees**: с **attendeeBase** на [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta&preserve-view=true) <br>**locationConstraint**: с **locationConstraint** на [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta&preserve-view=true) <br> **timeConstraint**: с **timeConstraint** на [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta&preserve-view=true)|
 |Изменение | Бета | Изменен возвращаемый тип **findMeetingTimes** с **meetingTimeSuggestionsResult** чтобы [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta&preserve-view=true) |
@@ -2844,16 +2821,14 @@ ms.locfileid: "49844877"
 
 ### <a name="education"></a>Образование
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |Бета|Представлено новое свойство relatedContacts для ресурса [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta&preserve-view=true).|
 |Дополнение |1.0|Представлено новое свойство relatedContacts для ресурса [educationUser](/graph/api/resources/educationUser?view=graph-rest-1.0&preserve-view=true).|
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлено свойство **expirationDateTime** для типа DateTimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлено свойство **password** для строкового типа [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta&preserve-view=true). |
@@ -2871,8 +2846,7 @@ ms.locfileid: "49844877"
 
 ### <a name="notes"></a>Заметки
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета-версия и версия 1.0 | Добавлен метод [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0&preserve-view=true). |
 
@@ -2886,15 +2860,14 @@ ms.locfileid: "49844877"
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |Бета-версия и версия 1.0| Добавлено свойство **internalId** для ресурса [team](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true).|
 |Дополнение |Бета-версия и версия 1.0| Добавлена поддержка для настройки Word, Excel, PowerPoint, PDF и [вкладок](teams-configuring-builtin-tabs.md) библиотек документов. |
 |Дополнение |бета| Представлен API [отправки сообщения в канал](/graph/api/channel-post-messages?view=graph-rest-beta&preserve-view=true). |
 |Дополнение |бета| Представлен API [ответа на сообщение в канале](/graph/api/channel-post-messagereply?view=graph-rest-beta&preserve-view=true). |
 |Удаление |бета| Удален API POST /teams/{id}/channels/{id}/chatThreads. Вместо этого можно использовать [Создание сообщения в канале](/graph/api/channel-post-chatmessage?view=graph-rest-beta&preserve-view=true). |
-|Дополнение |бета | Добавлена поддержка разрешений приложений для ресурса [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true).|
+|Дополнение |Бета | Добавлена поддержка разрешений приложений для ресурса [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true).|
 
 
 ## <a name="january-2019"></a>Январь 2019 г.
@@ -2906,8 +2879,8 @@ ms.locfileid: "49844877"
 |Дополнение|Бета|Добавлены новые объекты:<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta&preserve-view=true)<br/>[appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta&preserve-view=true)<br/>[windowsUpdateState](/graph/api/resources/intune-deviceconfig-windowsupdatestate?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые сложные типы:<br/>[appLogCollectionDownloadDetails](/graph/api/resources/intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta&preserve-view=true)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые типы перечисления:<br/>[appLogDecryptionAlgorithm](/graph/api/resources/intune-devices-applogdecryptionalgorithm?view=graph-rest-beta&preserve-view=true)<br/>[appLogUploadState](/graph/api/resources/intune-devices-apploguploadstate?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-beta&preserve-view=true)<br/>[windowsUpdateStatus](/graph/api/resources/intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta&preserve-view=true)<br/>|
-|Дополнение|Бета|Добавлено действие **createDownloadUrl** для объекта [appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta&preserve-view=true) |
-|Удаление|Бета|Удалены следующие объекты:<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>|
+|Дополнение|бета|Добавлено действие **createDownloadUrl** для объекта [appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta&preserve-view=true) |
+|Удаление|бета|Удалены следующие объекты:<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>|
 |Дополнение|бета|Добавлено свойство **passwordSignInFailureCountBeforeFactoryReset** для объекта [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta&preserve-view=true)|
 |Дополнение|бета|Добавлено свойство **passwordSignInFailureCountBeforeFactoryReset** для объекта [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta&preserve-view=true)|
 |Дополнение|бета|Добавлено свойство **passwordSignInFailureCountBeforeFactoryReset** для объекта [androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta&preserve-view=true)|
@@ -2926,15 +2899,13 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |1.0|С целью поддержки конфигурирования поставщика удостоверений в клиенте Azure AD B2C представлен новый тип ресурса [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-1.0&preserve-view=true) и операции [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0&preserve-view=true), [list](/graph/api/identityprovider-list?view=graph-rest-1.0&preserve-view=true), [get](/graph/api/identityprovider-get?view=graph-rest-1.0&preserve-view=true), [update](/graph/api/identityprovider-update?view=graph-rest-1.0&preserve-view=true) и [delete](/graph/api/identityprovider-delete?view=graph-rest-1.0&preserve-view=true).|
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен новый метод transitiveMembers для объекта [groups](/graph/api/group-list-transitivemembers?view=graph-rest-1.0&preserve-view=true). Этот метод возвращает плоский список элементов, включая вложенные элементы.|
 | Дополнение | 1.0 | Добавлен новый метод transitiveMemberOf для объектов [users](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0&preserve-view=true), [groups](/graph/api/group-list-transitivemembersof?view=graph-rest-beta&preserve-view=true) и [devices](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0&preserve-view=true).|
@@ -2947,8 +2918,7 @@ ms.locfileid: "49844877"
 
 ### <a name="reports"></a>Отчеты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                  |
+| **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | бета  | Добавлены свойства **office365Active** и **office365Inactive** для объекта [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta&preserve-view=true).|
 
@@ -2964,8 +2934,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Дополнение |1.0| Добавлен новый объект [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0&preserve-view=true). Он представляет собой отправленную операцию с политикой данных с целью отслеживания.
 |Дополнение |1.0| Добавлено действие [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0&preserve-view=true) для [пользователей](/graph/api/resources/users?view=graph-rest-1.0&preserve-view=true). Это действие отправляет запрос на экспорт персональных данных, которые корпорация Майкрософт хранит для пользователя. |
@@ -2973,8 +2942,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлено новое свойство `expirationDateTime` в [группы](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) для [срока действия группы](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle).|
 | Дополнение | Бета | Добавлен новый тип ресурса [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta&preserve-view=true).|
@@ -2984,8 +2952,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлено свойство `registeredRoot` для объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true).|
 | Изменение | Бета | Переименовано свойство `onboardDateTime` объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true) для `registeredDateTime`.|
@@ -2996,16 +2963,14 @@ ms.locfileid: "49844877"
 
 ### <a name="security"></a>Безопасность
 
-| **Тип изменения** | 
-  **Version** | **Описание**              |
+| **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Представлен новый сложный тип [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta&preserve-view=true).|
 | Дополнение        | Бета        | Представлен новый сложный тип [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |Бета| Представлен новый тип ресурса [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta&preserve-view=true).|
 |Дополнение |Бета| Представлен новый тип ресурса [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta&preserve-view=true).|
@@ -3016,7 +2981,7 @@ ms.locfileid: "49844877"
 |Дополнение |Бета| Добавлено свойство [specialization](/graph/api/resources/teamspecialization?view=graph-rest-beta&preserve-view=true) для [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).|
 |Дополнение |Бета| Добавлено свойство [видимость](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta&preserve-view=true) для [группы](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).|
 |Дополнение |Бета| Добавлено свойство [шаблон](/graph/api/resources/teamstemplate?view=graph-rest-beta&preserve-view=true) для [группы](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).|
-|Дополнение |бета| Добавлено семейство владельцы для [группы](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).|
+|Дополнение |Бета| Добавлено семейство владельцы для [группы](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).|
 |Дополнение |Бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamVisibilityType.|
 |Дополнение |Бета| Представлен новый элемент перечисления unknownFutureValue для объекта giphyRatingType.|
 |Дополнение |Бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationType.|
@@ -3030,15 +2995,13 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Добавлено новое свойство **progress** для [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta&preserve-view=true). Оно указывает ход выполнения операции.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлено действие [forceDelete](/graph/api/domain-forcedelete?view=graph-rest-1.0&preserve-view=true) для объекта [domains](/graph/api/resources/domain?view=graph-rest-1.0&preserve-view=true).|
 | Дополнение | бета | Добавлен новый метод transitiveMembers для объекта [groups](/graph/api/group-list-transitivemembers?view=graph-rest-beta&preserve-view=true). Этот метод возвращает плоский список элементов, включая вложенные элементы.|
@@ -3056,8 +3019,7 @@ ms.locfileid: "49844877"
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |1.0| Представлен новый тип ресурса [team](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true).|
 |Дополнение |1.0| Представлен новый тип ресурса [channel](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true).|
@@ -3100,7 +3062,7 @@ ms.locfileid: "49844877"
 |Дополнение|1.0|Добавлено свойство **tenantLockdownRequireNetworkDuringOutOfBoxExperience** для объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-1.0&preserve-view=true)|
 |Дополнение|1.0|Добавлено свойство **v12_0** для сложного типа [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-1.0&preserve-view=true)|
 |Дополнение|Бета|Добавлено свойство **lastReportAggregationDateTime** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta&preserve-view=true).|
-|Дополнение|бета|Добавлены новые объекты:<br/>[intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta&preserve-view=true)<br/>|
+|Дополнение|Бета|Добавлены новые объекты:<br/>[intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые сложные типы:<br/>[deviceAndAppManagementAssignedRoleIds](/graph/api/resources/intune-rbac-deviceandappmanagementassignedroleids?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые типы перечисления:<br/>[applicationGuardEnabledOptions](/graph/api/resources/intune-deviceconfig-applicationguardenabledoptions?view=graph-rest-beta&preserve-view=true)<br/>[autoRestartNotificationDismissalMethod](/graph/api/resources/intune-deviceconfig-autorestartnotificationdismissalmethod?view=graph-rest-beta&preserve-view=true)<br/>[meteredConnectionLimitType](/graph/api/resources/intune-deviceconfig-meteredconnectionlimittype?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлено действие [enableLegacyPcManagement](/graph/api/intune-deviceconfig-devicemanagement-enablelegacypcmanagement?view=graph-rest-beta&preserve-view=true) для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta&preserve-view=true) |
@@ -3136,8 +3098,7 @@ ms.locfileid: "49844877"
 
 ### <a name="reports"></a>Отчеты
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Изменение   |бета| Свойство `conditionalAccessPolicies` переименовано на `appliedConditionalAccessPolicy`.|
 |Дополнение |бета| Представлены дополнительные свойства риска в [API входа](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true), в том числе `riskDetail`, `riskLevelAggregated`, `riskLevelDuringSignIn`, `riskEventTypes` и `riskState`.|
@@ -3146,8 +3107,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлен новый метод transitiveMembers для объекта [groups](/graph/api/group-list-transitivemembers?view=graph-rest-beta&preserve-view=true). Этот метод возвращает плоский список элементов, включая вложенные элементы.|
 | Дополнение | Бета | Добавлен новый метод transitiveMemberOf для объектов [users](/graph/api/user-list-transitivemembersof?view=graph-rest-beta&preserve-view=true), [groups](/graph/api/group-list-transitivemembersof?view=graph-rest-beta&preserve-view=true), [devices](/graph/api/device-list-transitivemembersof?view=graph-rest-beta&preserve-view=true) и [service principals](/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta&preserve-view=true).|
@@ -3159,15 +3119,13 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |бета| Добавлен [API riskyUsers](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), представляющий пользователей Azure AD в состоянии риска, как определено защитой идентификации Azure AD. |
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение | бета | Изменен объект [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta&preserve-view=true).|
 | Дополнение | бета | Добавлен объект [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [List](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta&preserve-view=true) |
@@ -3176,8 +3134,7 @@ ms.locfileid: "49844877"
 
 ### <a name="personal-contacts"></a>Личные контакты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Удаление         | 1.0        | Это исправление в документации: удалено свойство **flag** из статьи по объекту [contact](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true). Свойство никогда не было доступным в объекте **contact**.|
 
@@ -3188,23 +3145,20 @@ ms.locfileid: "49844877"
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение|бета|Добавлена поддержка разрешений приложений для API [архивации объекта команды](/graph/api/team-archive?view=graph-rest-beta&preserve-view=true) и [распаковки объекта команды](/graph/api/team-unarchive?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version** | **Описание**                  |
+| **Тип изменения** | **Версия** | **Описание**                  |
 |:------------|:--------|:-----------------------------------------|
 | Дополнение    | бета   | Добавлена возможность [запроса изменений](delta-query-overview.md) для объекта [directoryObject](/graph/api/directoryobject-delta?view=graph-rest-beta&preserve-view=true) |
 | Дополнение    | 1.0   | Добавлена функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0&preserve-view=true) для [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0&preserve-view=true), чтобы поддерживать [отслеживание изменений с помощью запроса изменений](delta-query-overview.md). |
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                  |
+| **Тип изменения** | **Версия** | **Описание**                  |
 |:------------|:--------|:-----------------------------------------|
 | Изменение      | 1.0 и бета-версия  | Другое поведение при возвращении измененных свойств только в отклике JSON для объектов [users](/graph/api/user-delta?view=graph-rest-1.0&preserve-view=true). |
 
@@ -3219,8 +3173,7 @@ ms.locfileid: "49844877"
 
 ### <a name="cloud-communications"></a>Облачные коммуникации
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | Ресурс [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) обновлен для добавления коллекции звонков. |
 | Изменение          | Бета-версия        | Ресурс [operation](/graph/api/resources/operation?view=graph-rest-beta&preserve-view=true) обновлен для поддержки API продолжительных звонков и собраний по сети. |
@@ -3233,8 +3186,7 @@ ms.locfileid: "49844877"
 
 ### <a name="data-access"></a>Доступ к данным
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение         | Неприменимо| Представлена возможность массового доступа к данным Microsoft 365. Подробные сведения см. в статье [Microsoft Graph Data Connect (предварительная версия)](data-connect-overview.md).|
 
@@ -3248,7 +3200,7 @@ ms.locfileid: "49844877"
 |Дополнение|Бета|Добавлено действие **updatePrioritie** для коллекции [officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta&preserve-view=true) |
 |Дополнение|Бета|Добавлены новые объекты:<br/>[deviceConfigurationConflictSummary](/graph/api/resources/intune-deviceconfig-deviceconfigurationconflictsummary?view=graph-rest-beta&preserve-view=true)<br/>[importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta&preserve-view=true)<br/>[win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|Бета|Добавлены новые сложные типы:<br/>[deviceConfigurationTargetedUserAndDevice](/graph/api/resources/intune-deviceconfig-deviceconfigurationtargeteduseranddevice?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppDetection](/graph/api/resources/intune-apps-win32lobappdetection?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppFileSystemDetection](/graph/api/resources/intune-apps-win32lobappfilesystemdetection?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppInstallExperience](/graph/api/resources/intune-apps-win32lobappinstallexperience?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppMsiInformation](/graph/api/resources/intune-apps-win32lobappmsiinformation?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppPowerShellScriptDetection](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetection?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppProductCodeDetection](/graph/api/resources/intune-apps-win32lobappproductcodedetection?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppRegistryDetection](/graph/api/resources/intune-apps-win32lobappregistrydetection?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppReturnCode](/graph/api/resources/intune-apps-win32lobappreturncode?view=graph-rest-beta&preserve-view=true)<br/>[windows10AppsForceUpdateSchedule](/graph/api/resources/intune-deviceconfig-windows10appsforceupdateschedule?view=graph-rest-beta&preserve-view=true)<br/>|
-|Дополнение|бета|Добавлены новые типы перечисления:<br/>[administratorConfiguredDeviceComplianceState](/graph/api/resources/intune-deviceconfig-administratorconfigureddevicecompliancestate?view=graph-rest-beta&preserve-view=true)<br/>[importedWindowsAutopilotDeviceIdentityUploadStatus](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus?view=graph-rest-beta&preserve-view=true)<br/>[microsoftStoreForBusinessPortalSelectionOptions](/graph/api/resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppDetectionOperator](/graph/api/resources/intune-apps-win32lobappdetectionoperator?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppFileSystemDetectionType](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppMsiPackageType](/graph/api/resources/intune-apps-win32lobappmsipackagetype?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppRegistryDetectionType](/graph/api/resources/intune-apps-win32lobappregistrydetectiontype?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppReturnCodeType](/graph/api/resources/intune-apps-win32lobappreturncodetype?view=graph-rest-beta&preserve-view=true)<br/>[windows10AppsUpdateRecurrence](/graph/api/resources/intune-deviceconfig-windows10appsupdaterecurrence?view=graph-rest-beta&preserve-view=true)<br/>[windowsAppStartLayoutTileSize](/graph/api/resources/intune-deviceconfig-windowsappstartlayouttilesize?view=graph-rest-beta&preserve-view=true)<br/>[windowsAutopilotProfileAssignmentDetailedStatus](/graph/api/resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus?view=graph-rest-beta&preserve-view=true)<br/>|
+|Дополнение|Бета|Добавлены новые типы перечисления:<br/>[administratorConfiguredDeviceComplianceState](/graph/api/resources/intune-deviceconfig-administratorconfigureddevicecompliancestate?view=graph-rest-beta&preserve-view=true)<br/>[importedWindowsAutopilotDeviceIdentityUploadStatus](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus?view=graph-rest-beta&preserve-view=true)<br/>[microsoftStoreForBusinessPortalSelectionOptions](/graph/api/resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppDetectionOperator](/graph/api/resources/intune-apps-win32lobappdetectionoperator?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppFileSystemDetectionType](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppMsiPackageType](/graph/api/resources/intune-apps-win32lobappmsipackagetype?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppRegistryDetectionType](/graph/api/resources/intune-apps-win32lobappregistrydetectiontype?view=graph-rest-beta&preserve-view=true)<br/>[win32LobAppReturnCodeType](/graph/api/resources/intune-apps-win32lobappreturncodetype?view=graph-rest-beta&preserve-view=true)<br/>[windows10AppsUpdateRecurrence](/graph/api/resources/intune-deviceconfig-windows10appsupdaterecurrence?view=graph-rest-beta&preserve-view=true)<br/>[windowsAppStartLayoutTileSize](/graph/api/resources/intune-deviceconfig-windowsappstartlayouttilesize?view=graph-rest-beta&preserve-view=true)<br/>[windowsAutopilotProfileAssignmentDetailedStatus](/graph/api/resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus?view=graph-rest-beta&preserve-view=true)<br/>|
 |Дополнение|бета|Добавлено действие **overrideComplianceState** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta&preserve-view=true) |
 |Дополнение|бета|Добавлено действие **getTargetedUsersAndDevices** для коллекции [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta&preserve-view=true) |
 |Дополнение|Бета|Добавлена функция [autopilotDeviceStream](/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream?view=graph-rest-beta&preserve-view=true) для объекта [importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta&preserve-view=true) |
@@ -3283,8 +3235,7 @@ ms.locfileid: "49844877"
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлен аргумент **deferCommit** для действия [createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta&preserve-view=true) в объекте [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true)|
 | Дополнение        | Бета-версия        | Добавлен сложный тип [storagePlanInformation](/graph/api/resources/storageplaninformation?view=graph-rest-beta&preserve-view=true) |
@@ -3314,38 +3265,33 @@ ms.locfileid: "49844877"
 
 ### <a name="financials"></a>Финансовые показатели
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | бета          | Добавлены API финансовых показателей для Dynamics 365 Business Central. Дополнительные сведения см. в статье [Справочник по API финансовых показателей](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta&preserve-view=true)
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета | Свойство **InternetMessageHeaders** объекта [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) теперь доступно для записи при создании сообщения. |
 
 ### <a name="user-notifications"></a>Уведомления пользователей
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение          | Бета        | Добавлен тип ресурса [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta&preserve-view=true). |
 | Дополнение          | Бета        | Добавлен API [создания и публикации уведомлений](/graph/api/projectrome_notification_post?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="security"></a>Безопасность
 
-| **Тип изменения** | 
-  **Version** | **Описание**              |
+| **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета       | Добавлены API оценки безопасности для [API безопасности](/graph/api/resources/securescore-api-overview?view=graph-rest-beta&preserve-view=true), включающие следующие ресурсы и операции:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta&preserve-view=true) (и соответствующие объекты)<br/>[Перечисление объектов secureScores](/graph/api/securescores-list?view=graph-rest-beta&preserve-view=true)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta&preserve-view=true)<br/>[Перечисление объектов secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta&preserve-view=true)<br/>[Обновление secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta&preserve-view=true) |
+| Дополнение        | бета       | Добавлены API оценки безопасности для [API безопасности](/graph/api/resources/securescore-api-overview?view=graph-rest-beta&preserve-view=true), включающие следующие ресурсы и операции:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta&preserve-view=true) (и соответствующие объекты)<br/>[Перечисление объектов secureScores](/graph/api/securescores-list?view=graph-rest-beta&preserve-view=true)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta&preserve-view=true)<br/>[Перечисление объектов secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta&preserve-view=true)<br/>[Обновление secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta&preserve-view=true) |
 | Дополнение        | бета        | Представлен новый сложный тип [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta&preserve-view=true) |
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение|Бета|Добавлены API для [вкладок](/graph/api/resources/teamstab?view=graph-rest-beta&preserve-view=true).|
 |Дополнение|Бета|Добавлены API для [публикации приложений для организации](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true).|
@@ -3363,8 +3309,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлено действие [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta&preserve-view=true) и сложные типы [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta&preserve-view=true), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta&preserve-view=true) и [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta&preserve-view=true) для поддержки [получения сведений о доступности пользователей, списков рассылки и ресурсов для указанного периода времени](outlook-get-free-busy-schedule.md). |
 
@@ -3450,8 +3395,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | v1.0 | Добавлено свойство **isMultipleDataLocationsForServicesEnabled** в ресурс [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true), позволяющее приложениям проверять, включена ли для клиента поддержка нескольких регионов. Добавлено свойство **preferredDataLocation** в ресурс [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true), позволяющее задать предпочтительное расположение данных для группы.|
 | Дополнение | 1.0 | Добавлено свойство [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0&preserve-view=true) в объекты [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) и [Group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true), представляющее ошибки синхронизации службы каталогов при синхронизации локальных каталогов с Azure Active Directory с использованием продукта синхронизации Майкрософт (включая Azure AD Connect, DirSync и MIM + соединитель).|
@@ -3460,8 +3404,7 @@ ms.locfileid: "49844877"
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлена поддержка действия [getMailTips](/graph/api/user-getmailtips?view=graph-rest-1.0&preserve-view=true) для получения подсказок для определенных получателей. Добавлены следующие ресурсы: [automaticRepliesMailTips](/graph/api/resources/automaticrepliesmailtips?view=graph-rest-1.0&preserve-view=true), [mailTips](/graph/api/resources/mailtips?view=graph-rest-1.0&preserve-view=true), [mailTipsError](/graph/api/resources/mailtipserror?view=graph-rest-1.0&preserve-view=true). |
 
@@ -3473,8 +3416,7 @@ ms.locfileid: "49844877"
 
 ### <a name="security"></a>Безопасность
 
-| **Тип изменения** | 
-  **Version** | **Описание**              |
+| **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета       | Добавлены свойства **activityGroupName**, **cloudAppStates**, **confidence** и **registryKeyStates** для объекта [alert](/graph/api/resources/alert?view=graph-rest-beta&preserve-view=true). |
 |Удаление|бета| Удалены свойства **activityGroupStates**, **applicationStates**, **malwareWasRunning**, **riskScore** и **type** из объекта [alert](/graph/api/resources/alert?view=graph-rest-beta&preserve-view=true). |
@@ -3500,8 +3442,7 @@ ms.locfileid: "49844877"
 
 ### <a name="applications"></a>Приложения
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлена возможность [запроса изменений](delta-query-overview.md) для следующих объектов в Azure AD:<br/>[application](/graph/api/application-delta?view=graph-rest-beta&preserve-view=true)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta&preserve-view=true)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta&preserve-view=true) |
 
@@ -3515,29 +3456,25 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | API [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) будут обновлены в предварительной (бета) версии. Первый набор изменений будет применен 16 мая 2018 г. Изменения включают в себя переименование и реструктуризацию свойств. Большинство существующих свойств будут доступны только после применения изменений. Будут добавлены новые свойства. Прежде чем выйдет версия 1.0 с изменениями, будет выпущена бета-версия. |
 
 ### <a name="applications"></a>Приложения
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета-версия | Добавлено свойство **progress** для объекта [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta&preserve-view=true), чтобы разрешить клиентам наблюдать за ходом выполнения задания синхронизации.|
 
 ### <a name="personal-contacts"></a>Личные контакты
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 |:--------------- |:------------- |:---------------------------------------- |
 |Дополнение |Бета-версия | Добавлен сложный тип [typedEmailAddress](/graph/api/resources/typedemailaddress?view=graph-rest-beta&preserve-view=true). |
 |Изменение | Бета-версия | Изменен тип свойства **emailAddresses** для ресурса [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true). Теперь это коллекция экземпляров **typedEmailAddress**.|
 
 ### <a name="teamwork"></a>Командная работа
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Изменение|бета|Обновлен ресурс [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)|
 |Дополнение|Бета|Добавлен тип ресурса [вложения для чата](/graph/api/resources/chatmessageattachment?view=graph-rest-beta&preserve-view=true)|
@@ -3621,26 +3558,23 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлена функция [получения доступа к проверкам](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) в [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Все | Новые разрешения приложений _Application.ReadWrite.All_ и _Application.ReadWrite.OwnedBy_, позволяющие клиентскому приложению создавать, читать, обновлять и удалять приложения и субъекты-службы, как описано в [статье о разрешениях](permissions-reference.md#application-resource-permissions). |
 | Дополнение | 1.0 | Добавлены свойства **ageGroup**, **legalAgeGroupClassification** и **ConsentRequiredForMinor** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true)
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена сущность [privilegedAccess](/graph/api/resources/privilegedaccess?view=graph-rest-beta&preserve-view=true).|
-| Дополнение | Бета | Добавлен объект [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия: <br> [Список](/graph/api/governanceresource-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceresource-get?view=graph-rest-beta&preserve-view=true)<br>|
+| Дополнение | Бета | Добавлен объект [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия: <br> [List](/graph/api/governanceresource-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceresource-get?view=graph-rest-beta&preserve-view=true)<br>|
 | Дополнение | Бета | Добавлена сущность [governanceSubject](/graph/api/resources/governancesubject?view=graph-rest-beta&preserve-view=true).|
 | Дополнение | Бета | Добавлена сущность [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [List](/graph/api/governanceroledefinition-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroledefinition-get?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | Бета | Добавлена сущность [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governanceroleassignment-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroleassignment-get?view=graph-rest-beta&preserve-view=true) <br> [Экспорт](/graph/api/governanceroleassignment-export?view=graph-rest-beta&preserve-view=true) |
@@ -3650,34 +3584,31 @@ ms.locfileid: "49844877"
 
 ### <a name="security"></a>Безопасность
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета        | Добавлены новые типы перечисления:<br/>[alertFeedback](/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta&preserve-view=true)<br/>[alertStatus](/graph/api/resources/alertstatusenumtype?view=graph-rest-beta&preserve-view=true)<br/>[alertType](/graph/api/resources/alerttypeenumtype?view=graph-rest-beta&preserve-view=true)<br/>[applicationPermissionsRequired](/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta&preserve-view=true)<br/>[logonType](/graph/api/resources/logontypeenumtype?view=graph-rest-beta&preserve-view=true)<br/>[processIntegrityLevel](/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta&preserve-view=true)<br/>[securityNetworkProtocol](/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta&preserve-view=true)<br/>[userAccountSecurityType](/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta&preserve-view=true)<br/>
 
 
 ### <a name="teamwork"></a>Командная работа
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение         | Бета-версия          | Добавлены API [архивирования](/graph/api/team-archive?view=graph-rest-beta&preserve-view=true) и [разархивирования](/graph/api/team-unarchive?view=graph-rest-beta&preserve-view=true) команды.|
 |Дополнение         | Бета-версия          | Добавлена операция [клонирования](/graph/api/team-clone?view=graph-rest-beta&preserve-view=true) команды. |
 |Дополнение         | Бета-версия          | Добавлены интерфейсы API для добавления [приложений](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true) в группы и удаления из них. |
 |Изменение|Бета-версия|Обновлен путь к сущности [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).|
-|Изменение|Бета-версия|Обновлен путь к объекту [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true).|
+|Изменение|Бета|Обновлен путь к объекту [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true).|
 
 
 ## <a name="may-2018"></a>Май 2018 г.
 
 ### <a name="customer-booking"></a>Резервирование для пользователей
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
 | Дополнение        | Бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
-| Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
+| Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Дополнение        | Бета          | Добавлены объект [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|
 | Дополнение        | Бета          | Добавлены объект [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingstaffmember-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingstaffmember-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingstaffmember-delete?view=graph-rest-beta&preserve-view=true).|
 | Дополнение        | Бета          | Добавлены следующие сложные типы: <br> [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta&preserve-view=true); <br> [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta&preserve-view=true); <br> [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta&preserve-view=true); <br> [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta&preserve-view=true); <br> [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta&preserve-view=true).|
@@ -3744,30 +3675,26 @@ ms.locfileid: "49844877"
 
 ### <a name="groups"></a>Группы
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета | Добавлено свойство **importance** в объект [post](/graph/api/resources/post?view=graph-rest-1.0&preserve-view=true). |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение           | Бета          | Свойство **creatorUserId** сущности [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) переименовано в **creatorId** для лучшего отражения смысла. |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено действие [перечисления удаленных элементов, принадлежащих пользователю,](/graph/api/directory-deleteditems-user-owned?view=graph-rest-1.0&preserve-view=true) для ресурса [каталог (удаленные элементы)](/graph/api/resources/directory?view=graph-rest-1.0&preserve-view=true). |
 | Дополнение | Бета | В ресурс [directory](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) добавлена функция [getUserOwnedObjects](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta&preserve-view=true) для перечисления удаленных групп, принадлежащих определенному пользователю. |
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Люди и рабочая аналитика | Аналитические сведения
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета          | Добавлены объект [settings](/graph/api/resources/user-settings?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [получение](/graph/api/user-get-settings?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/user-update-settings?view=graph-rest-beta&preserve-view=true). |
 
@@ -3776,8 +3703,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0          | Добавлено свойство **locations** для объекта [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), позволяющее организовать событие, в котором могут участвовать пользователи из нескольких мест. |
 | Дополнение        | 1.0          | Добавлено свойство **locationType** для сложного типа [location](/graph/api/resources/location?view=graph-rest-1.0&preserve-view=true). |
@@ -3785,8 +3711,7 @@ ms.locfileid: "49844877"
 
 ### <a name="cross-device-experiences"></a>Взаимодействие с разными устройствами
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен [API для получения последних действий](/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0&preserve-view=true). |
 | Дополнение | 1.0 | Добавлен [API для получения действий](/graph/api/projectrome-get-activities?view=graph-rest-1.0&preserve-view=true). |
@@ -3860,8 +3785,7 @@ ms.locfileid: "49844877"
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен сложный тип **privacyProfile** для объекта [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true). |
 | Дополнение        | 1.0        | Добавлен сложный тип **legalAgeGroup, ageGroup and consentProvidedForMinor** для объекта [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true). |
@@ -3878,8 +3802,7 @@ ms.locfileid: "49844877"
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0          | Добавлено свойство **flag** для объекта [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true). Добавлен общий сложный тип [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0&preserve-view=true).|
 | Дополнение        | 1.0        | Добавлено свойство **internetMessageHeaders** для объекта [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true). |
@@ -3893,8 +3816,7 @@ ms.locfileid: "49844877"
 
 ### <a name="personal-contacts"></a>Личные контакты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0          | Добавлено свойство **flag** для объекта [contact](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true). Добавлен общий сложный тип [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0&preserve-view=true).|
 
@@ -3906,8 +3828,7 @@ ms.locfileid: "49844877"
 
 ### <a name="security"></a>Безопасность
 
-| **Тип изменения** | 
-  **Version** | **Описание**              |
+| **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия       | Добавлен [API безопасности](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true), включающий следующие ресурсы и операции:<br/>[оповещение](/graph/api/resources/alert?view=graph-rest-beta&preserve-view=true) (и соответствующие объекты);<br/>[получение оповещения](/graph/api/alert-get?view=graph-rest-beta&preserve-view=true);<br/>[перечисление оповещений](/graph/api/alert-list?view=graph-rest-beta&preserve-view=true);<br/>[обновление оповещения](/graph/api/alert-update?view=graph-rest-beta&preserve-view=true).<br/><br/>Добавлена следующая вспомогательная документация:<br/>[сведения об ошибках](/graph/api/resources/security-error-codes?view=graph-rest-beta&preserve-view=true);<br/>[Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API](security-integration.md)
 
@@ -3928,8 +3849,7 @@ ms.locfileid: "49844877"
 
 ### <a name="cross-device-experiences"></a>Взаимодействие с разными устройствами
 
-| **Тип изменения** | 
-  **Version** | **Описание**              |
+| **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия       | Добавлен API [Получение последних действий](/graph/api/projectrome-get-recent-activities?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия       | Добавлен API [Получение действий](/graph/api/projectrome-get-activities?view=graph-rest-beta&preserve-view=true). |
@@ -4014,14 +3934,13 @@ ms.locfileid: "49844877"
 |Дополнение|Бета|Добавлено свойство <b>name</b> для сложного типа [contentTypeInfo](/graph/api/resources/contenttypeinfo?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета|Добавлено свойство <b>objectType</b> для сложного типа [deleteAction](/graph/api/resources/deleteaction?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета|Добавлено свойство <b>newName</b> для сложного типа [renameAction](/graph/api/resources/renameaction?view=graph-rest-beta&preserve-view=true). |
-|Дополнение|бета|Добавлено свойство <b>tenantId</b> для сложного типа [sharepointIds](/graph/api/resources/renameaction?view=graph-rest-beta&preserve-view=true). |
+|Дополнение|Бета|Добавлено свойство <b>tenantId</b> для сложного типа [sharepointIds](/graph/api/resources/renameaction?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета|Добавлено свойство <b>lastRecordedDateTime</b> для сложного типа [itemActivityTimeSet](/graph/api/resources/itemactivitytimeset?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета|Добавлено свойство [preview](/graph/api/driveitem-preview?view=graph-rest-beta&preserve-view=true) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="groups"></a>Группы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен объект [groupLifecyclePolicy](/graph/api/resources/grouplifecyclepolicy?view=graph-rest-1.0&preserve-view=true) |
 | Дополнение        | 1.0        | Для политики жизненного цикла группы добавлены API [создания](/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-1.0&preserve-view=true), [перечисления](/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0&preserve-view=true), [получения](/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0&preserve-view=true), [обновления](/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0&preserve-view=true), [удаления](/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0&preserve-view=true), [добавления группы](/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0&preserve-view=true), [удаления группы](/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-1.0&preserve-view=true) |
@@ -4037,16 +3956,14 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Добавлен новый объект [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta&preserve-view=true). Он представляет собой отправленную операцию с политикой данных с целью отслеживания.
 | Дополнение        | Бета        | Добавлено действие [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta&preserve-view=true) для [пользователей](/graph/api/resources/users?view=graph-rest-beta&preserve-view=true). Это действие отправляет запрос на экспорт персональных данных, которые корпорация Майкрософт хранит для пользователя. |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлен сложный тип **onPremisesExtensionAttributes** для объекта [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true). Он содержит локальные атрибуты расширения AD 1–15. |
 | Дополнение        | Бета-версия        | Добавлен сложный тип **privacyProfile** для объекта [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true). |
@@ -4054,8 +3971,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлены ресурсы [agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) и [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Для ресурса [agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) добавлены API [создания](/graph/api/greement-post-agreements?view=graph-rest-beta&preserve-view=true), [перечисления](/graph/api/agreement-list?view=graph-rest-beta&preserve-view=true), [получения](/graph/api/agreement-get?view=graph-rest-beta&preserve-view=true), [обновления](/graph/api/agreement-update?view=graph-rest-beta&preserve-view=true) и [удаления](/graph/api/agreement-delete?view=graph-rest-beta&preserve-view=true). |
@@ -4063,15 +3979,13 @@ ms.locfileid: "49844877"
 
 ### <a name="reports"></a>Отчеты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Дополнение|бета|Добавлено свойство **siteId** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="workbooks-and-charts"></a>Книги и диаграммы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Изменение|1.0|Добавлено свойство **legacyId** для объекта [Excel Table](/graph/api/resources/table?view=graph-rest-1.0&preserve-view=true). Оно будет содержать числовой идентификатор (строковый тип данных), который будет оставаться постоянным для определенной таблицы Excel. Это свойство входит в состав дополнительных метаданных, если приложение использует устаревший идентификатор из старых клиентских приложений Excel. Примечание. Свойства `id` и `legacyId` должны интерпретироваться как непрозрачные строковые значения и не должны преобразовываться в другой тип в приложении. |
 
@@ -4528,8 +4442,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета          | Добавлены функции [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta&preserve-view=true) и [findRooms](/graph/api/user-findrooms?view=graph-rest-beta&preserve-view=true) для объекта [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета          | Добавлено свойство **locations** для объекта [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true), позволяющее организовать событие, в котором могут участвовать пользователи из нескольких расположений. |
@@ -4581,8 +4494,7 @@ ms.locfileid: "49844877"
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство **system** для ресурса [Drive][]. |
 | Дополнение        | 1.0        | Добавлена связь **list** для ресурса [Drive][]. |
@@ -4637,8 +4549,7 @@ ms.locfileid: "49844877"
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлено свойство **internetMessageHeaders** для объекта [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлен сложный тип [internetMessageHeader](/graph/api/resources/internetmessageheader?view=graph-rest-beta&preserve-view=true). |
@@ -4648,15 +4559,13 @@ ms.locfileid: "49844877"
 
 ### <a name="personal-contacts"></a>Личные контакты
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение          | 1.0 и бета-версия | Это улучшение поведения связано с получением общей папки контактов или содержимого контактов в ней, если кто-то предоставил вошедшему пользователю доступ к папке контактов или делегировал ему почтовый ящик пользователя. В таких случаях приложение может указать ИД пользователя или имя участника-пользователя, чтобы [получить эту общую папку контактов](/graph/api/contactfolder-get?view=graph-rest-1.0&preserve-view=true) или [получить контакты из этой общей папки](/graph/api/user-list-contacts?view=graph-rest-1.0&preserve-view=true), при условии что вошедший пользователь предоставил приложению делегированные разрешения. |
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены новые объекты: [ColumnDefinition][], [ColumnLink][], [ContentType][], [List][], [ListItem][]. |
 | Дополнение        | 1.0        | Добавлены связи **columns**, **contentTypes**, **items** и **lists** для ресурса [Site][]. |
@@ -4720,8 +4629,7 @@ ms.locfileid: "49844877"
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлено новое свойство навигации **masterCategories** для объекта [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-beta&preserve-view=true). **masterCategories** — это коллекция объектов [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлен объект [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-beta&preserve-view=true). |
@@ -4754,14 +4662,13 @@ ms.locfileid: "49844877"
 | Изменение      | Бета-версия    | Удалено свойство **settingsDeviceName** для объекта [windows10TeamGeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10teamgeneralconfiguration?view=graph-rest-beta&preserve-view=true) |
 | Изменение      | Бета-версия    | Удалено свойство **restartMode** для объекта [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta&preserve-view=true) |
 | Изменение      | Бета-версия    | Добавлены свойства навигации **detectedApps** и **managedDevices** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta&preserve-view=true) |
-| Изменение      | Бета    | Добавлено свойство навигации **privacyAccessControls** для объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta&preserve-view=true) |
+| Изменение      | Бета-версия    | Добавлено свойство навигации **privacyAccessControls** для объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta&preserve-view=true) |
 | Изменение      | Бета-версия    | Добавлено свойство **secureByDefault** для сложного типа [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta&preserve-view=true) |
 | Изменение      | Бета-версия    | Добавлено свойство **restartMode** для сложного типа [windowsUpdateScheduledInstall](/graph/api/resources/intune-deviceconfig-windowsupdatescheduledinstall?view=graph-rest-beta&preserve-view=true) |
 
 ### <a name="groups"></a>Группы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлена сущность [groupLifecyclePolicy](/graph/api/resources/grouplifecyclepolicy?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлены следующие API для политики жизненного цикла группы, а именно для: [создания](/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-beta&preserve-view=true), [перечисления](/graph/api/grouplifecyclepolicy-list?view=graph-rest-beta&preserve-view=true), [получения](/graph/api/grouplifecyclepolicy-get?view=graph-rest-beta&preserve-view=true), [обновления](/graph/api/grouplifecyclepolicy-update?view=graph-rest-beta&preserve-view=true), [удаления](/graph/api/grouplifecyclepolicy-delete?view=graph-rest-beta&preserve-view=true), [добавления группы](/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-beta&preserve-view=true), [удаления группы](/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-beta&preserve-view=true) и [возобновления группы](/graph/api/grouplifecyclepolicy-renewgroup?view=graph-rest-beta&preserve-view=true). |
@@ -4769,16 +4676,14 @@ ms.locfileid: "49844877"
 
 ### <a name="notes"></a>Примечания
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Добавлено свойство навигации [onenote](/graph/api/resources/onenote?view=graph-rest-1.0&preserve-view=true) для **site**. |
 | Дополнение        | Бета          | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](/graph/api/notebook-copynotebook?view=graph-rest-1.0&preserve-view=true). |
 
 ### <a name="people-and-workplace-intelligence--people"></a>Люди и рабочая аналитика | Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | В версию 1.0 добавлены интерфейсы [People API](/graph/api/resources/person?view=graph-rest-1.0&preserve-view=true). Подробные сведения об этих API см. в статье, посвященной [получению релевантной информации о людях](people-example.md). |
 | Дополнение        | 1.0        | Добавлено разрешение People.Read.All. Дополнительные сведения см. в [справочнике по разрешениям](permissions-reference.md). |
@@ -4789,8 +4694,7 @@ ms.locfileid: "49844877"
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Добавлено свойство **employeeId** для [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true). |
 
@@ -4826,8 +4730,7 @@ ms.locfileid: "49844877"
 
 ### <a name="groups"></a>Группы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлена поддержка параметров группы.<br/>Новые типы ресурсов: [groupSetting](/graph/api/resources/groupsetting?view=graph-rest-1.0&preserve-view=true), [groupSettingTemplate](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true), [settingValue](/graph/api/resources/settingvalue?view=graph-rest-1.0&preserve-view=true) и [settingTemplateValue](/graph/api/resources/settingtemplatevalue?view=graph-rest-1.0&preserve-view=true). |
 | Изменение          | 1.0        | Добавлено свойство **classification** и свойство навигации **settings** для [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true). |
@@ -4837,15 +4740,13 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Повышен уровень для следующих 4 свойств [calendar](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true) до версии 1.0: **canEdit**, **canShare**, **canViewPrivateItems** и **owner**. |
 
 ### <a name="cross-device-experiences"></a>Взаимодействие с разными устройствами
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлены следующие ресурсы и API:<br/>[Действие](/graph/api/resources/projectrome-activity?view=graph-rest-beta&preserve-view=true)<br/>[Создание или замена действия](/graph/api/projectrome-put-activity?view=graph-rest-beta&preserve-view=true)<br/>[Удаление действия](/graph/api/projectrome-delete-activity?view=graph-rest-beta&preserve-view=true)<br/>[Элемент журнала](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta&preserve-view=true)<br/>[Создание или замена элемента журнала](/graph/api/projectrome-put-historyitem?view=graph-rest-beta&preserve-view=true)<br/>[Удаление элемента журнала](/graph/api/projectrome-delete-historyitem?view=graph-rest-beta&preserve-view=true) |
 
@@ -4906,29 +4807,25 @@ ms.locfileid: "49844877"
 
 ### <a name="application"></a>Приложение
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | Обновление API приложений. Это первый набор изменений, включающий изменение структуры и переименование свойств объекта [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true).<br/>**Новые объекты:** [api](/graph/api/resources/api?view=graph-rest-beta&preserve-view=true), [informationalUrl](/graph/api/resources/informationalurl?view=graph-rest-beta&preserve-view=true), [installedClient](/graph/api/resources/installedclient?view=graph-rest-beta&preserve-view=true), [permissionScope](/graph/api/resources/permissionscope?view=graph-rest-beta&preserve-view=true), [preauthorizedApplication](/graph/api/resources/preauthorizedapplication?view=graph-rest-beta&preserve-view=true), [web](/graph/api/resources/web?view=graph-rest-beta&preserve-view=true).<br/>**Удаленные свойства:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Переименованные свойства:** с appId на id, с identifierUris на applicationAliases, с availableToOtherTenants на orgRestrictions, с mainLogo на logo, с oauth2Permissions на publishedPermissionsScopes, с publicClient на allowPublicClient, с replyUrls на redirectUrls.<br/>**Новые свойства:** tags. |
 
 ### <a name="tasks-and-plans"></a>Задачи и планы
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Удаление        | Бета-версия        | Удалены следующие объекты:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard** |
 
 ### <a name="cross-device-experiences"></a>Взаимодействие с разными устройствами
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлена поддержка Project Rome, в том числе [получения списка устройств](/graph/api/user-list-devices?view=graph-rest-beta&preserve-view=true), [отправки команды устройству](/graph/api/send-device-command?view=graph-rest-beta&preserve-view=true) и [проверки состояния команды](/graph/api/get-device-command-status?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлена поддержка ресурсов [activity](/graph/api/resources/projectrome-activity?view=graph-rest-beta&preserve-view=true) и [historyItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta&preserve-view=true) для объектов user, включая [создание или замену activity](/graph/api/projectrome-put-activity?view=graph-rest-beta&preserve-view=true) и [создание или замену historyItem](/graph/api/projectrome-put-historyitem?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | Тип свойства roleMemberInfo объекта [scopedRoleMembership](/graph/api/resources/scopedrolemembership?view=graph-rest-beta&preserve-view=true) изменен на [identity](/graph/api/resources/identity?view=graph-rest-1.0&preserve-view=true). |
 | Изменение          | Бета-версия        | Свойство навигации scopedAdministratorOf объекта [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) заменено на scopedRoleMemberOf. |
@@ -4937,38 +4834,33 @@ ms.locfileid: "49844877"
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 | Изменение        | Бета       | Добавлена поддержка пользователей и групп в [веб-перехватчиках](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="change-tracking"></a>Отслеживание изменений
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлена поддержка функции delta в версии 1.0. Она позволяет выполнять [разностный запрос](delta-query-overview.md) для следующих объектов:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений для групп](delta-query-groups.md)<br/>[Получение добавочных изменений для сообщений в папке](delta-query-messages.md)<br/>[Получение добавочных изменений для пользователей](delta-query-users.md) |
 | Изменение          | Бета        | Добавлена возможность дополнительной фильтрации запросов (по идентификатору) для [пользователей](/graph/api/user-delta?view=graph-rest-beta&preserve-view=true) и [групп](/graph/api/group-delta?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Добавлена поддержка работы с удаленными элементами для ресурса user
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлена поддержка [восстановления и окончательного удаления пользователей](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="added-onpremisesprovisioningerror"></a>Добавлен объект OnPremisesProvisioningError
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Новый объект: [OnPremisesProvisioningError](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-beta&preserve-view=true) |
 | Изменение          | Бета        | В объекты [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true), [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) и [orgcontact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true) добавлено свойство OnPremisesProvisioningError. |
 
 ### <a name="added-deleteddatetime-property"></a>Добавлено свойство deletedDateTime
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Изменение|Бета|В объект [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) добавлено свойство deletedDateTime.
 |Изменение|Бета|В объект [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) добавлено свойство deletedDateTime.
@@ -4976,8 +4868,7 @@ ms.locfileid: "49844877"
 
 ### <a name="added-domain-operations-to-v10"></a>Добавлены операции с доменами в версии 1.0
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены операции с [domains](/graph/api/resources/domain?view=graph-rest-1.0&preserve-view=true).<br/>Новые объекты:</br>[domain](/graph/api/resources/domain?view=graph-rest-1.0&preserve-view=true);<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0&preserve-view=true);<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0&preserve-view=true);<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0&preserve-view=true);<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0&preserve-view=true);<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0&preserve-view=true);<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0&preserve-view=true).<br/>Новые действия:</br>[verify](/graph/api/domain-verify?view=graph-rest-1.0&preserve-view=true). |
 
@@ -4990,8 +4881,7 @@ ms.locfileid: "49844877"
 
 ### <a name="added-licensedetails-to-v10"></a>Добавлен объект licenseDetails в версии 1.0
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Новый объект:</br>[licenseDetails](/graph/api/resources/licensedetails?view=graph-rest-1.0&preserve-view=true) |
 | Изменение          | 1.0        | Добавлено свойство навигации [licensedetails](/graph/api/user-list-licensedetails?view=graph-rest-1.0&preserve-view=true) для объекта [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true). |
@@ -4999,8 +4889,7 @@ ms.locfileid: "49844877"
 
 ### <a name="files"></a>Файлы
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
 | Дополнение | 1.0 | Добавлен тип ресурса **baseItem**, состоящий из базовых свойств объекта **driveItem**.
 | Дополнение | 1.0 и бета-версия | В объект **thumbnail** добавлено свойство **sourceItemId**. <br/> В объект **sharepointIds** добавлено свойство **siteUrl**. <br/> В объект **shared** добавлены свойства **sharedBy** и **sharedDateTime**. <br/> В объект **remoteItem** добавлено свойство **shared**. <br/> В объекты **drive** и **itemReference** добавлено свойство **sharepointIds**. <br/> В объект **fileSystemInfo** добавлено свойство **lastAccessedDateTime**. <br/> В объект **sharedDriveItem** добавлены свойства навигации **driveItem** и **site**. <br/> В объект **baseItem** добавлено свойство **parentReference**.
@@ -5010,8 +4899,7 @@ ms.locfileid: "49844877"
 
 ### <a name="extensions--open-extensions"></a>Расширения | Открытые расширения
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0          | Поддержка [openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0&preserve-view=true) в ресурсах [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true), [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true), [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) и [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true). |
 | Дополнение        | 1.0 и бета-версия | Если пользователь вошел с помощью личной учетной записи Майкрософт, открытые расширения поддерживаются в ресурсах event, post, group, message, contact и user. (При использовании рабочей или учебной учетной записи открытые расширения также поддерживаются в ресурсах device, group, organization и user.) |
@@ -5021,8 +4909,7 @@ ms.locfileid: "49844877"
 
 ### <a name="extensions--schema-extensions"></a>Расширения | Расширения схемы
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0          | Новый ресурс [schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0&preserve-view=true) и методы CRUD для управления определениями расширений для следующих ресурсов: [contact](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true), [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true), [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true), [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true), [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true), [post](/graph/api/resources/post?view=graph-rest-1.0&preserve-view=true) и [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true). Обратите внимание, что объект [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) по-прежнему поддерживается только в бета-версии. |
 | Дополнение        | 1.0          | Существующие методы POST, GET и PATCH ресурсов [contact](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true), [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true), [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true), [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true), [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true), [post](/graph/api/resources/post?view=graph-rest-1.0&preserve-view=true) и [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) теперь поддерживают добавление, получение, обновление и удаление пользовательских данных, хранящихся в виде расширений схемы в соответствующих экземплярах ресурсов. |
@@ -5033,15 +4920,13 @@ ms.locfileid: "49844877"
 
 ### <a name="groups"></a>Группы
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
 | Дополнение | 1.0 и бета | Добавлены свойства навигации **drives** и **sites** для объекта **group**.
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Люди и рабочая аналитика | Аналитические сведения
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета|Добавлен [API Shared](/graph/api/resources/insights-shared?view=graph-rest-beta&preserve-view=true).<br />Новые ресурсы:<br />[sharingDetail](/graph/api/resources/insights-sharingdetail?view=graph-rest-beta&preserve-view=true) <br />[insightIdentity](/graph/api/resources/insights-insightidentity?view=graph-rest-beta&preserve-view=true) <br />
 |Дополнение|Бета-версия|Добавлен [API Used](/graph/api/resources/insights-used?view=graph-rest-beta&preserve-view=true).<br />Новые ресурсы:<br />[usageDetails](/graph/api/resources/insights-usagedetails?view=graph-rest-beta&preserve-view=true) <br />
@@ -5093,7 +4978,7 @@ ms.locfileid: "49844877"
 | Изменение      | Бета-версия    | Добавлено свойство **subjectAlternativeNameFormatString** для объекта [windows10PkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10pkcscertificateprofile?view=graph-rest-beta&preserve-view=true). |
 | Изменение      | Бета    | Добавлены свойства **subjectNameFormatString** и **subjectAlternativeNameFormatString** для объекта [windows81SCEPCertificateProfile](/graph/api/resources/intune-deviceconfig-windows81scepcertificateprofile?view=graph-rest-beta&preserve-view=true). |
 | Изменение      | Бета-версия    | Добавлены свойства **indexingEncryptedStoresOrItemsBlocked** и **smbAutoEncryptedFileExtensions** для объекта [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-beta&preserve-view=true). |
-| Изменение      | Бета    | Изменены следующие свойства объекта [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-beta&preserve-view=true):<br/>свойство **rightsManagementServicesTemplateId** сделано необязательным.<br/> |
+| Изменение      | Бета-версия    | Изменены следующие свойства объекта [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-beta&preserve-view=true):<br/>свойство **rightsManagementServicesTemplateId** сделано необязательным.<br/> |
 | Изменение      | Бета-версия    | Изменены следующие свойства объекта [windowsMobileMSI](/graph/api/resources/intune-apps-windowsmobilemsi?view=graph-rest-beta&preserve-view=true):<br/>свойство **productCode** сделано необязательным.<br/> |
 | Изменение      | Бета-версия    | Добавлены свойства **subjectNameFormatString** и **subjectAlternativeNameFormatString** для объекта [windowsPhone81SCEPCertificateProfile](/graph/api/resources/intune-deviceconfig-windowsphone81scepcertificateprofile?view=graph-rest-beta&preserve-view=true). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **mobileAppConfigurations** для объекта [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta&preserve-view=true). |
@@ -5112,24 +4997,21 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Для метода **findMeetingTimes** добавлено значение перечисления **unrestricted**, указываемое в качестве свойства **activityDomain** в составе параметра **timeConstraint**. Это позволяет методу **findMeetingTimes** искать интервалы времени, соответствующие типу планируемого мероприятия. Дополнительные сведения см. в разделе [request body](/graph/api/user-findmeetingtimes?view=graph-rest-1.0&preserve-view=true#request-body). |
 | Дополнение        | Бета-версия          | Содержание объекта **event** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](/graph/api/event-get?view=graph-rest-beta&preserve-view=true) и [list](/graph/api/user-list-events?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | Содержание объекта **message** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](/graph/api/message-get?view=graph-rest-beta&preserve-view=true) и [list](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true). |
 
 
 ### <a name="to-do-tasks"></a>Задачи из списка дел
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | В объект [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) добавлено новое свойство навигации **outlook** для доступа к задачам Outlook. |
 | Дополнение        | Бета        | Новые объекты [outlookuser](/graph/api/resources/outlookuser?view=graph-rest-beta&preserve-view=true), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta&preserve-view=true), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta&preserve-view=true) и [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta&preserve-view=true), а также их методы поддерживают доступ к задачам Outlook. |
@@ -5138,15 +5020,13 @@ ms.locfileid: "49844877"
 
 ### <a name="tasks-and-plans"></a>Задачи и планы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен [API Планировщика](/graph/api/resources/planner-overview?view=graph-rest-1.0&preserve-view=true).<br />Новые ресурсы:<br />[plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-1.0&preserve-view=true) <br />[plannerTask](/graph/api/resources/plannertask?view=graph-rest-1.0&preserve-view=true); <br />[plannerPlanDetails](/graph/api/resources/plannerplandetails?view=graph-rest-1.0&preserve-view=true); <br />[plannerTaskDetails](/graph/api/resources/plannertaskdetails?view=graph-rest-1.0&preserve-view=true); <br />[plannerBucket](/graph/api/resources/plannerbucket?view=graph-rest-1.0&preserve-view=true); <br />[plannerAssignedToTaskBoardTaskFormat](/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0&preserve-view=true); <br />[plannerBucketTaskBoardTaskFormat](/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0&preserve-view=true); <br />[plannerProgressTaskBoardTaskFormat](/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0&preserve-view=true). |
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
 | Дополнение      | 1.0      | Теперь в конечной точке версии 1.0 доступен ресурс сайтов.<br/> Добавлены типы ресурсов **site** и **siteCollection**.
 | Изменение        | Бета      | Изменился формат идентификатора ресурса **site**. Это критическое изменение в бета-версии API.
@@ -5154,8 +5034,7 @@ ms.locfileid: "49844877"
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
 | Изменение | Бета | Удалены свойства навигации **sharepoint**. Теперь для доступа к сайтам используется свойство навигации **sites**. <br/> Удален ресурс **fieldDefinition**. Он заменен ресурсом **columnDefinition**. <br/> Удалены свойства **siteCollectionId** и **siteId** объекта **site**. Используйте вместо них свойство **sharepointIds**. <br/> Удалено свойство **listItemId** объекта **listItem**. Используйте вместо него свойство **sharepointIds**. <br/> Свойство **columnSet** объекта **listItem** переименовано на **fields**. <br/> Идентификаторы ресурсов **site** теперь включают имя узла SharePoint.
 | Дополнение | Бета | Добавлены типы ресурсов **booleanColumn**, **calculatedColumn**, **choiceColumn**, **dateTimeColumn**, **lookupColumn**, **numberColumn**, **personOrGroupColumn** и **textColumn**. <br/> В объект **site** добавлено свойство **displayName**. <br/> В объект **site** добавлено свойство навигации **columns**. <br/> В объект **sharedDriveItem** добавлены свойства навигации **list** и **listItem**. <br/> В объекты **list**, **listItem** и **site** добавлено свойство **sharepointIds**. <br/> Добавлен тип ресурса **columnDefinition**.
@@ -5167,49 +5046,42 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | Обновления API административных единиц будут предоставлены в бета-версиях. Первый набор изменений будет применен 3 мая 2017 г. Изменения включают в себя следующие переименования:<br />сложный тип - **roleMemberInfo** для объекта scopedRoleMembership теперь зовется **identity**;<br />свойство навигации - **scopedAdministratorOf** для объекта user теперь зовется **scopedRoleMemberOf**;<br />свойство навигации - **scopedAdministrators** для объекта administrativeUnit теперь зовется **scopedRoleMembers**;<br />свойство навигации - **scopedAdministrators** для объекта directoryRole теперь зовется **scopedMembers**. |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | API [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) будут обновлены в бета-версии. Первый набор изменений будет применен 15 мая 2017 г. Изменения включают переименование и реструктуризацию свойств. Некоторые свойства (например, appRoles и addIns) будут доступны только после применения изменений. Прежде чем выйдет версия 1.0 с изменениями, будут выпущены бета-версии. |
 
 ### <a name="cloud-solution-provider"></a>Cloud Solution Provider
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Приложения, разрешение на использование которых было заранее предоставлено согласно программе Cloud Solution Provider, теперь могут вызывать Microsoft Graph. Описание см. в новой [статье об авторизации](auth-cloudsolutionprovider.md). |
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | К объекту [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) добавлены новые свойства для onPremises: onPremisesDomainName, OnPremisesSamAccountName и onPremisesUserPrincipalName. |
 
 ### <a name="groups"></a>Группы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | Добавлено значение **HiddenMembership** для свойства видимости объекта [Group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="tasks-and-plans"></a>Задачи и планы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлен новый [API Планировщика](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true).<br />Новые ресурсы:<br />[plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) <br />[plannerTask](/graph/api/resources/plannertask?view=graph-rest-beta&preserve-view=true); <br />[plannerPlanDetails](/graph/api/resources/plannerplandetails?view=graph-rest-beta&preserve-view=true); <br />[plannerTaskDetails](/graph/api/resources/plannertaskdetails?view=graph-rest-beta&preserve-view=true); <br />[plannerBucket](/graph/api/resources/plannerbucket?view=graph-rest-beta&preserve-view=true); <br />[plannerAssignedToTaskBoardTaskFormat](/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta&preserve-view=true); <br />[plannerBucketTaskBoardTaskFormat](/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta&preserve-view=true); <br />[plannerProgressTaskBoardTaskFormat](/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлены новые объекты:<br/>[androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta&preserve-view=true);<br/>[deviceComplianceSettingState](/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-beta&preserve-view=true);<br/>[deviceInstallState](/graph/api/resources/intune-books-deviceinstallstate?view=graph-rest-beta&preserve-view=true);<br/>[deviceManagementScript](/graph/api/resources/intune-deviceconfig-devicemanagementscript?view=graph-rest-beta&preserve-view=true)<br/>[deviceManagementScriptGroupAssignment](/graph/api/resources/intune-deviceconfig-devicemanagementscriptgroupassignment?view=graph-rest-beta&preserve-view=true)<br/>[deviceManagementScriptState](/graph/api/resources/intune-deviceconfig-devicemanagementscriptstate?view=graph-rest-beta&preserve-view=true)<br/>[eBookGroupAssignment](/graph/api/resources/intune-books-ebookgroupassignment?view=graph-rest-beta&preserve-view=true);<br/>[iosVppEBook](/graph/api/resources/intune-books-iosvppebook?view=graph-rest-beta&preserve-view=true);<br/>[managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta&preserve-view=true);<br/>[userInstallStateSummary](/graph/api/resources/intune-books-userinstallstatesummary?view=graph-rest-beta&preserve-view=true);<br/>[windowsManagementApp](/graph/api/resources/intune-deviceconfig-windowsmanagementapp?view=graph-rest-beta&preserve-view=true)<br/>[windowsManagementAppHealthState](/graph/api/resources/intune-deviceconfig-windowsmanagementapphealthstate?view=graph-rest-beta&preserve-view=true)<br/> |
 | Дополнение        | Бета-версия        | Добавлены новые сложные типы:<br/>[dailySchedule](/graph/api/resources/intune-deviceconfig-dailyschedule?view=graph-rest-beta&preserve-view=true)<br/>[hourlySchedule](/graph/api/resources/intune-deviceconfig-hourlyschedule?view=graph-rest-beta&preserve-view=true)<br/>[iosBookmark](/graph/api/resources/intune-deviceconfig-iosbookmark?view=graph-rest-beta&preserve-view=true);<br/>[iosWebContentFilterAutoFilter](/graph/api/resources/intune-deviceconfig-ioswebcontentfilterautofilter?view=graph-rest-beta&preserve-view=true);<br/>[iosWebContentFilterBase](/graph/api/resources/intune-deviceconfig-ioswebcontentfilterbase?view=graph-rest-beta&preserve-view=true);<br/>[iosWebContentFilterSpecificWebsitesAccess](/graph/api/resources/intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess?view=graph-rest-beta&preserve-view=true);<br/>[runSchedule](/graph/api/resources/intune-deviceconfig-runschedule?view=graph-rest-beta&preserve-view=true)<br/>[sharedAppleDeviceUser](/graph/api/resources/intune-deviceconfig-sharedappledeviceuser?view=graph-rest-beta&preserve-view=true)<br/>[windows10NetworkProxyServer](/graph/api/resources/intune-deviceconfig-windows10networkproxyserver?view=graph-rest-beta&preserve-view=true).<br/> |
@@ -5352,32 +5224,28 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Новый ресурс:</br>[contract](/graph/api/resources/contract?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлены функции к объектам [domains](/graph/api/resources/domain?view=graph-rest-beta&preserve-view=true).<br/>Новые объекты:</br>[domain](/graph/api/resources/domain?view=graph-rest-beta&preserve-view=true);<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-beta&preserve-view=true);<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-beta&preserve-view=true);<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-beta&preserve-view=true);<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-beta&preserve-view=true);<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-beta&preserve-view=true);<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-beta&preserve-view=true).<br/>Новые действия:</br>[forceDelete](/graph/api/domain-forcedelete?view=graph-rest-beta&preserve-view=true);</br>[verify](/graph/api/domain-verify?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="extensions--schema-extensions"></a>Расширения | Расширения схемы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Добавление данных приложения в Microsoft Graph с помощью [расширений схемы](extensibility-overview.md#schema-extensions)  поддерживается для следующих ресурсов:<br/>administrative unit;<br/>calendar event;<br/>device;<br/>group;<br/>message<br/>organization;<br/>personal contact;<br/>post;<br/>user<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](extensibility-schema-groups.md). |
 | Дополнение        | Бета        | Предоставлен альтернативный способ создания определения расширения схемы без подтвержденного личного домена .com. Подробности см. в разделе [Расширения схемы](extensibility-overview.md#schema-extensions). |
 
 ### <a name="extensions--open-extensions"></a>Расширения | Открытые расширения
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение          | 1.0 и бета-версия | Вместо термина "расширения данных Office 365" теперь используется "открытые расширения". |
 | Дополнение        | Бета-версия          | Добавлены ресурсы, которые поддерживают [открытые расширения](extensibility-overview.md#open-extensions): <br/>administrative unit;<br/>device;<br/>group<br/>organization;<br/>user<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](extensibility-open-users.md). |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлена поддержка [восстановления и окончательного удаления групп](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true).<br/>Новый объект: каталог со свойством навигации deleteditems. |
 | Дополнение        | Бета-версия        | Новый объект:</br>[Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta&preserve-view=true) |
@@ -5388,8 +5256,7 @@ ms.locfileid: "49844877"
 
 ### <a name="reports"></a>Отчеты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Представлена предварительная версия нового API для функций создания отчетов в Microsoft 365. С его помощью можно получать отчеты об использовании служб Microsoft 365 сотрудниками компании. Например, можно выяснить, кто слишком активно использует службы и практически выбрал квоты, а кому лицензия Microsoft 365, возможно, и вовсе не нужна. Дополнительные сведения см. в статье о ресурсе [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
 
@@ -5440,8 +5307,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Новое действие [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0&preserve-view=true) для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true). |
 | Дополнение        | 1.0        | Новый сложный тип [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-1.0&preserve-view=true), который состоит из свойства типа участников. |
@@ -5451,13 +5317,12 @@ ms.locfileid: "49844877"
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлены новые объекты: <br/>[appReportingOverviewStatus](/graph/api/resources/intune-apps-appreportingoverviewstatus?view=graph-rest-beta&preserve-view=true)<br/>[deviceComplianceDeviceOverview](/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-beta&preserve-view=true)<br/>[deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta&preserve-view=true)<br/>[deviceManagementExchangeOnpremisesPolicy](/graph/api/resources/intune-onboarding-devicemanagementexchangeonpremisespolicy?view=graph-rest-beta&preserve-view=true)<br/>[iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[iosEducationDeviceConfiguration](/graph/api/resources/intune-deviceconfig-ioseducationdeviceconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[onpremisesConditionalAccessSettings](/graph/api/resources/intune-onboarding-onpremisesconditionalaccesssettings?view=graph-rest-beta&preserve-view=true)<br/>[sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[windows10EnterpriseModernAppManagementConfiguration](/graph/api/resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[windows10SecureAssessmentConfiguration](/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[windows10WindowsInformationProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10windowsinformationprotectionconfiguration?view=graph-rest-beta&preserve-view=true) |
 |Дополнение|Бета-версия|Добавлены новые сложные типы: <br/> [appInstallationFailure](/graph/api/resources/intune-apps-appinstallationfailure?view=graph-rest-beta&preserve-view=true)<br/>[enterpriseCloudResource](/graph/api/resources/intune-deviceconfig-enterprisecloudresource?view=graph-rest-beta&preserve-view=true)<br/>[iosHomeScreenApp](/graph/api/resources/intune-deviceconfig-ioshomescreenapp?view=graph-rest-beta&preserve-view=true)<br/>[iosHomeScreenFolder](/graph/api/resources/intune-deviceconfig-ioshomescreenfolder?view=graph-rest-beta&preserve-view=true)<br/>[iosHomeScreenFolderPage](/graph/api/resources/intune-deviceconfig-ioshomescreenfolderpage?view=graph-rest-beta&preserve-view=true)<br/>[iosHomeScreenItem](/graph/api/resources/intune-deviceconfig-ioshomescreenitem?view=graph-rest-beta&preserve-view=true)<br/>[iosHomeScreenPage](/graph/api/resources/intune-deviceconfig-ioshomescreenpage?view=graph-rest-beta&preserve-view=true)<br/>[iosNotificationSettings](/graph/api/resources/intune-deviceconfig-iosnotificationsettings?view=graph-rest-beta&preserve-view=true)<br/>[iPv6Range](/graph/api/resources/intune-deviceconfig-ipv6range?view=graph-rest-beta&preserve-view=true)<br/>[sharedPCAccountManagerPolicy](/graph/api/resources/intune-deviceconfig-sharedpcaccountmanagerpolicy?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionAppRule](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionapprule?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionappruleapplockerpolicyfiletemplate?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionAppRuleDesktopTemplate](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionappruledesktoptemplate?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionAppRuleStoreAppTemplate](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionapprulestoreapptemplate?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionAppRuleTemplate](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionappruletemplate?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionCorporateNetworkLocation](/graph/api/resources/intune-deviceconfig-windowsinformationprotectioncorporatenetworklocation?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionDataRecoveryCertificate](/graph/api/resources/intune-deviceconfig-windowsinformationprotectiondatarecoverycertificate?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocation](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocation?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocationEnterpriseCloudResources](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocationenterprisecloudresources?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocationenterpriseinternalproxyservers?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocationenterpriseipv4ranges?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocationenterpriseipv6ranges?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocationenterprisenetworkdomainnames?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocationEnterpriseProxyServers](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocationenterpriseproxyservers?view=graph-rest-beta&preserve-view=true)<br/>[windowsInformationProtectionProtectedLocationNeutralResources](/graph/api/resources/intune-deviceconfig-windowsinformationprotectionprotectedlocationneutralresources?view=graph-rest-beta&preserve-view=true)
 |Удаление|Бета-версия|Следующие сложные типы удалены и заменены на тип microsoft.graph.Json:<br/>managedAppDeploymentSummary <br/>managedAppSummary<br /> |
-|Изменение|Бета|Для следующих объектов тип свойства appConfigComplianceStatus заменен на complianceStatus: <br/>[managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-beta&preserve-view=true)<br/>[managedDeviceMobileAppConfigurationUserStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationuserstatus?view=graph-rest-beta&preserve-view=true)|
+|Изменение|Бета-версия|Для следующих объектов тип свойства appConfigComplianceStatus заменен на complianceStatus: <br/>[managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-beta&preserve-view=true)<br/>[managedDeviceMobileAppConfigurationUserStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationuserstatus?view=graph-rest-beta&preserve-view=true)|
 |Изменение|Бета-версия|Для ресурса [managedAppStatusRaw](/graph/api/resources/intune-mam-managedappstatusraw?view=graph-rest-beta&preserve-view=true) тип свойства content изменен с managedAppSummary на Json.|
 |Изменение|Бета-версия|Из коллекции [managedAppRegistration](/graph/api/resources/intune-mam-managedappregistration?view=graph-rest-beta&preserve-view=true) удалена функция getUsersWithFlaggedAppRegistration.|
 |Изменение|Бета|Изменено свойство навигации **vppToken** объекта [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta&preserve-view=true), теперь он не является включенной коллекцией.|
@@ -5471,28 +5336,25 @@ ms.locfileid: "49844877"
 |Изменение|Бета-версия|Добавлены свойства **azureActiveDirectoryDeviceId**, **deviceCategory**, **deviceRegistrationState** и **managementAgent** к объекту [managedDevice](/graph/api/resources/intune-onboarding-manageddevice?view=graph-rest-beta&preserve-view=true).|
 |Изменение|Бета-версия|Добавлено свойство **lastModifiedDateTime** к объекту [mobileAppCategory](/graph/api/resources/intune-apps-mobileappcategory?view=graph-rest-beta&preserve-view=true).|
 |Изменение|Бета-версия|Добавлены свойства **brandingOptions**, **defaultLocale**, **displayName**, **fromEmailAddress**, **lastModifiedDateTime**, **localizedNotificationMessages** к объекту [notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate?view=graph-rest-beta&preserve-view=true).|
-|Изменение|Бета|Добавлены свойства **appsAllowTrustedAppsSideloading**, **appsBlockWindowsStoreOriginatedApps**, **developerUnlockSetting**, **edgeBlockAccessToAboutFlags**, **edgeBlockDeveloperTools**, **edgeBlockExtensions**, **edgeBlockInPrivateBrowsing**, **edgeFirstRunUrl**, **edgeHomepageUrls**, **gameDvrBlocked**, **settingsBlockAddProvisioningPackage**, **settingsBlockChangeLanguage**, **settingsBlockChangePowerSleep**, **settingsBlockChangeRegion**, **settingsBlockChangeSystemTime**, **settingsBlockEditDeviceName**, **settingsBlockRemoveProvisioningPackage**, **sharedUserAppDataAllowed**, **smartScreenBlockPromptOverride**, **smartScreenBlockPromptOverrideForFiles**, **storageRestrictAppDataToSystemVolume**, **storageRestrictAppInstallToSystemVolume**, **webRtcBlockLocalhostIpAddress**, **windowsStoreBlockAutoUpdate** и **windowsStoreEnablePrivateStoreOnly** к объекту [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta&preserve-view=true).|
+|Изменение|Бета-версия|Добавлены свойства **appsAllowTrustedAppsSideloading**, **appsBlockWindowsStoreOriginatedApps**, **developerUnlockSetting**, **edgeBlockAccessToAboutFlags**, **edgeBlockDeveloperTools**, **edgeBlockExtensions**, **edgeBlockInPrivateBrowsing**, **edgeFirstRunUrl**, **edgeHomepageUrls**, **gameDvrBlocked**, **settingsBlockAddProvisioningPackage**, **settingsBlockChangeLanguage**, **settingsBlockChangePowerSleep**, **settingsBlockChangeRegion**, **settingsBlockChangeSystemTime**, **settingsBlockEditDeviceName**, **settingsBlockRemoveProvisioningPackage**, **sharedUserAppDataAllowed**, **smartScreenBlockPromptOverride**, **smartScreenBlockPromptOverrideForFiles**, **storageRestrictAppDataToSystemVolume**, **storageRestrictAppInstallToSystemVolume**, **webRtcBlockLocalhostIpAddress**, **windowsStoreBlockAutoUpdate** и **windowsStoreEnablePrivateStoreOnly** к объекту [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta&preserve-view=true).|
 
 ## <a name="december-2016"></a>Декабрь 2016 г.
 
 ### <a name="change-tracking"></a>Отслеживание изменений
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | В следующие объекты добавлена новая функция delta для выполнения [запроса на получение различий](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений групп (предварительная версия)](delta-query-groups.md)<br/>[Получение добавочных изменений сообщений в папке (предварительная версия)](delta-query-messages.md)<br/>[Получение добавочных изменений пользователей (предварительная версия)](delta-query-users.md) |
 
 ### <a name="workbooks-and-charts"></a>Книги и диаграммы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены ресурс workbookPivotTable, действия refresh и refreshAll в сводных таблицах, ресурс workbookRangeView, действие visibleView в отфильтрованном диапазоне для возврата workbookRangeView пользователю, коллекция строк get и ресурс range из visibleView, функции columnsAfter, columnsBefore, resizedRange, rowsAbove и rowsBelow из ресурса range и новые свойства таблицы. |
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Добавлены API ресурсов и методов для Microsoft Intune. Это большой набор ресурсов и методов для поддержки общедоступной предварительной версии Intune на портале Azure. Сведения о службе Intune см. в статье [Документация по Intune](https://go.microsoft.com/fwlink/?linkid=836405). Сведения о ресурсах и API Intune см. в разделе [Работа с Intune в Microsoft Graph](/graph/api/resources/intune-graph-overview?view=graph-rest-beta&preserve-view=true). |
 
@@ -5500,8 +5362,7 @@ ms.locfileid: "49844877"
 
 ### <a name="authorization-provider"></a>Поставщик услуг авторизации
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Конечная точка авторизации 2.0 теперь поддерживает тип предоставления OAuth client_credentials, который можно использовать для [процессов управляющей программы и длительных процессов в бизнес-сценариях](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). |
 | Дополнение        | 1.0 и бета-версия | Конечная точка авторизации 2.0 теперь поддерживает [разрешения, требующие согласия администратора](permissions-reference.md) ([конечная точка предоставления согласия администратора](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions)). |
@@ -5509,8 +5370,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлено свойство invitedUserType к типу объекта приглашений, определяющее тип приглашаемого пользователя (**Guest** или **Member**). |
 | Удаление        | Бета-версия        | Мы удалим свойство invitedToGroups для типа объекта invitation 11 ноября 2016 г. Это значит, что вы больше не сможете добавить приглашаемого пользователя в группу с помощью этого API. Это можно будет сделать с помощью [API добавления членов](/graph/api/group-post-members?view=graph-rest-1.0&preserve-view=true). |
@@ -5519,15 +5379,13 @@ ms.locfileid: "49844877"
 
 ### <a name="applications"></a>Приложения
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Теперь API Azure AD Application Proxy доступны в конечной точке Microsoft Graph бета-версии. Эти API позволяют безопасно публиковать локальные приложения для пользователей, находящихся за пределами корпоративной сети, используя Azure AD в качестве общей системы управления доступом. Опубликованные API позволяют создавать приложения, которые могут получать и обновлять различные аспекты прокси приложения, например параметры _connectors_, _connectorGroups_ и _onPremisesPublishing_ приложения. |
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлена коллекция _shared_, благодаря которой можно получать доступ к общим элементам driveItem с помощью идентификатора shareId или URL-адреса для совместного доступа. |
 | Дополнение        | Бета-версия        | Добавлена функция _search_ к объекту drive, которая позволяет искать элементы не только в корневой папке диска. |
@@ -5548,8 +5406,7 @@ ms.locfileid: "49844877"
 
 Добавлена поддержка динамического членства в группах с помощью общедоступной ознакомительной версии API, включая дополнения, указанные в таблице ниже.
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлено свойство **membershipRule**, содержащее правила, которые определяют членов динамической группы. |
 | Дополнение        | Бета-версия        | Добавленное свойство **membershipRuleProcessingState** определяет, включено ли динамическое членство для этой группы. |
@@ -5559,29 +5416,25 @@ ms.locfileid: "49844877"
 
 ### <a name="hybrid-deployment"></a>Гибридное развертывание
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Приложения могут использовать API Почты, Календаря и Контактов Outlook версии 1.0 для доступа к локальным почтовым ящикам в гибридном развертывании Exchange 2016 с накопительным пакетом обновления 3 (CU3). Дополнительные сведения о поддержке REST API см. в разделах, посвященных соответствующему [гибридному развертыванию](hybrid-rest-support.md). **Примечание.** Если вы используете эти наборы API версии 1.0, то теперь ваши приложения (включая рабочие) будут работать с локальными почтовыми ящиками, которые соответствуют требованиям для гибридных развертываний. Доступна только предварительная версия этой возможности. |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета        | В рамках изменения схемы, при котором тип двух свойств расположений будет заменен новым сложным типом в конечной точке identityRiskEvents, в конечной точке identityRiskEvents изменены или добавлены следующие свойства:</br>**location** теперь относится не к Edm.String, а к signInLocation ComplexType;<br/>**previousLocation** теперь относится не к Edm.String, а к signInLocation ComplexType;<br/>**signInLocation** — новый элемент ComplexType, содержащий свойства city, state, countryOrRegion и geoCoordinates;<br/>**geoCoordinates** — новый элемент ComplexType, содержащий свойства latitude и longitude. |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Теперь API диспетчера приглашений доступны в конечной точке Microsoft Graph бета-версии. С помощью API диспетчера приглашений вы можете создать приглашение для добавления внешнего пользователя в организацию. Кроме того, при приглашении пользователя вы можете добавить его в группу Microsoft 365. Дополнительные сведения см. в статье [о диспетчере приглашений](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен метод **CreateUploadSession** для **driveItem**, который позволяет отправлять большие файлы и возобновлять отправку. |
 | Дополнение        | 1.0        | Добавлены свойства для отслеживания идентификаторов SharePoint в элементах из SharePoint (**sharepointIds**) и свойство для идентификации корневых папок (**root**). |
@@ -5593,8 +5446,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство **onlineMeetingUrl** к ресурсу [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true). |
 | Дополнение        | Бета-версия        | Добавлено действие [forward](/graph/api/event-forward?view=graph-rest-beta&preserve-view=true) к ресурсу event. |
@@ -5602,38 +5454,33 @@ ms.locfileid: "49844877"
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | В веб-перехватчики добавлены корневые элементы Drive в качестве ресурса, доступного для подписки. |
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлена возможность создавать, отображать, получать и удалять один или несколько экземпляров объекта [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true) в сообщении. С помощью объектов mention можно привлечь внимание других пользователей в сообщении. |
 | Дополнение        | Бета-версия        | Добавлена поддержка действия [getMailTips](/graph/api/user-getmailtips?view=graph-rest-beta&preserve-view=true) для получения подсказок для определенных получателей. Добавлены следующие ресурсы: [automaticRepliesMailTips](/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta&preserve-view=true), [mailTips](/graph/api/resources/mailtips?view=graph-rest-beta&preserve-view=true), [mailTipsError](/graph/api/resources/mailtipserror?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="query-parameters"></a>Параметры запроса
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | С 26 сентября 2016 г. поддерживаются параметры запроса без префиксов $. Префикс $ в параметрах запроса не является обязательным. |
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Доступ к сайтам и спискам SharePoint [по идентификатору](/graph/api/list-get?view=graph-rest-beta&preserve-view=true) или [URL-адресу](/graph/api/baseitem-getbyurl?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета-версия        | Возможность [отображать, создавать, получать и удалять экземпляры объектов listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Добавлено нередактируемое свойство **refreshTokensValidFromDateTime**, которое указывает дату и время начала действия токенов обновления или токенов сеанса. Все токены, выпущенные до этого времени, недействительны, а при попытке их использования потребуется повторный вход в систему. |
 | Дополнение        | Бета-версия        | Добавлено свойство **showInAddressList**, указывающее, должен ли глобальный список адресов Outlook содержать этого пользователя. |
@@ -5646,30 +5493,26 @@ ms.locfileid: "49844877"
 
 ### <a name="personal-contacts"></a>Личные контакты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | В рамках изменения схемы, при котором удаляются несколько свойств и добавляются соответствующие коллекции в конечную точку contacts, в эту конечную точку добавлены следующие свойства: _Websites Collection(ComplexType: Website)_,_Phones Collection (ComplexType: Phone)_, _PostalAddress Collection(ComplexType: PhysicalAddress)_. Дополнительные сведения см. в записи блога [Предстоящие изменения API Контактов и Людей](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/). |
 | Удаление        | Бета        | В рамках изменения схемы, при котором удаляются несколько свойств и добавляются соответствующие коллекции в конечную точку contacts, из этой конечной точки удалены следующие свойства: _BusinessHomePage_,_HomePhones_, _MobilePhone1_, _BusinessPhones_, _HomeAddress_, _BusinessAddress_, _OtherAddress_. Дополнительные сведения см. в записи блога [Предстоящие изменения API Контактов и Людей](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/). |
 
 ### <a name="workbooks-and-charts"></a>Книги и диаграммы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | REST API Excel стал общедоступным в Microsoft Graph. Теперь вы можете обеспечить глубокую и сложную интеграцию с книгами Excel в Microsoft 365. Дополнительные сведения см. в записи блога [Настройка использования REST API для Excel в приложениях с помощью Microsoft Graph](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/). |
 
 ### <a name="people-and-workplace-intelligence--people"></a>Люди и рабочая аналитика | Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета        | Свойство _WebSite_ переименовано на _Websites_. Дополнительные сведения см. в записи [Предстоящие изменения API Контактов и Людей](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/). |
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Теперь REST API управления привилегированными пользователями доступны в конечной точке Microsoft Graph (бета-версия). [Управление привилегированными пользователями](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) обеспечивает активацию "точно в срок" для привилегированных ролей в организации Azure AD, например ролей глобального администратора, администратора выставления счетов и т. д. C помощью опубликованных API разработчики могут создавать приложения, которые получают и обновляют привилегированные роли и активируют роли для пользователей. Дополнительные сведения см. в статьях [Microsoft Graph: доступна бета-версия API для Azure AD Privileged Identity Management](https://developer.microsoft.com/office/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta/) и [Azure AD Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true). |
 
@@ -5677,8 +5520,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Представлен новый API Administrative Units (предварительная версия). Административные единицы позволяют организациям делить Azure Active Directory на подразделения и делегировать административные обязанности этим подразделениям. Подразделения могут представлять регионы, отделы, места возникновения затрат и т. д. Теперь ими можно управлять с помощью API Microsoft Graph. |
 
@@ -5686,8 +5528,7 @@ ms.locfileid: "49844877"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Представлен новый API IdentityRiskEvents (предварительная версия). Этот API работает в сочетании с защитой идентификации Azure Active Directory. Его можно использовать для запрашивания событий рисков, созданных функцией защиты идентификации. Дополнительные сведения см. в статье [Знакомство с предварительной версией нового API в Microsoft Graph: IdentityRiskEvents](https://developer.microsoft.com/office/blogs/identityriskevents-api-preview/).
 
@@ -5696,35 +5537,31 @@ ms.locfileid: "49844877"
 | **Тип изменения** | 
   **Version** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета-версия        | Области, предназначенные только для приложений, теперь поддерживаются для подписок _mail_ и _contacts_. |
+| Дополнение        | Бета        | Области, предназначенные только для приложений, теперь поддерживаются для подписок _mail_ и _contacts_. |
 
 ## <a name="may-2016"></a>Май 2016 г.
 
 ### <a name="calendar"></a>Календарь
 
-|**Тип изменения**|
-  **Version**|**Описание**|
+|**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Существенные изменения|Бета|Изменения в API findMeetingTimes. Дополнительные сведения см. в записи блога [Обновление API findMeetingTimes в Microsoft Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-findmeetingtimes-api-update/). Это изменение вступило в силу 19 мая 2016 г.
 
 ### <a name="personal-contact"></a>Личный контакт
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен абстрактный тип _extensions_ для поддержки открытого типа openTypeExtension в OData версии 4. |
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Существенные изменения | Бета        | Свойство _settingTemplateId_ теперь называется _templateId_. Это изменение вступило в силу 19 мая 2016 г. |
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен абстрактный тип _extensions_ для объекта **event** с целью поддержки открытого типа openTypeExtension в OData версии 4. |
 | Дополнение        | 1.0        | Добавлены типы _inferenceClassification_ и _extensions_ к объекту **eventMessage**. |
@@ -5732,29 +5569,25 @@ ms.locfileid: "49844877"
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены типы _inferenceClassification_ и _extensions_ к объекту **message**. |
 
 ### <a name="personal-contacts"></a>Личные контакты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Добавлено свойство _wellknownname_ для объекта **contactFolder**. |
 
 ### <a name="groups"></a>Группы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен абстрактный тип _extensions_ для объекта **post** с целью поддержки открытого типа openTypeExtension в OData версии 4. |
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлен тип ресурса _inferenceClassification_. |
 | Дополнение        | Бета-версия        | Добавлено свойство _timeZone_ к типу _mailboxsettings_.   |
@@ -5764,8 +5597,7 @@ ms.locfileid: "49844877"
 
 ### <a name="general"></a>Общие
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                                                                                                                                                                                                                                                                                          |
+| **Тип изменения** | **Версия**   | **Описание**                                                                                                                                                                                                                                                                                          |
 |:----------------|:--------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Дополнение        | 1.0 и бета-версия | Теперь _Accept-Encoding:gzip_ может учитываться.                                                                                                                                                                                                                                                       |
 | Дополнение        | 1.0          | Добавлена поддержка сегмента приведения в пути expand. Например: "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event"                                                                                                                                                   |
@@ -5784,8 +5616,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлены свойства _singleValueExtendedProperties_ и _multiValueExtendedProperties_. |
 | Дополнение        | Бета-версия        | Добавлено свойство _suggestionHint_ к _meetingTimeCandidate_. |
@@ -5796,8 +5627,7 @@ ms.locfileid: "49844877"
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Добавлена функция _recent_ для вывода списка элементов, которые недавно использовал пользователь, вошедший в систему. Этот список включает элементы, находящиеся на диске пользователя, а также элементы на других дисках, к которым у пользователя есть доступ. Пример: GET /me/drive/recent. |
 | Дополнение        | 1.0 и бета-версия | Добавлена функция _sharedWithMe_ для вывода списка элементов, доступ к которым предоставлен текущему пользователю. Пример: GET /me/drive/sharedWithMe. |
@@ -5810,8 +5640,7 @@ ms.locfileid: "49844877"
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Добавлены новое свойство _onlineMeetingUrl_ и новый метод _cancel_ к объекту **event**. |
 | Дополнение        | бета        | Добавлены свойства _startDateTime_, _endDateTime_, _location_, _type_, _recurrence_, _isOutOfDate_, _conversationIndex_, _unsubscribe_, _unsubscribeData_, _unsubscribeEnabled_ и _flag_ к объекту **eventmessage**. |
@@ -5820,15 +5649,13 @@ ms.locfileid: "49844877"
 
 ### <a name="workbooks-and-charts"></a>Книги и диаграммы
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Мы добавляем новые REST API Excel, которые позволяют считывать и изменять данные в рабочей книге Excel. Теперь вы можете создавать интеллектуальные приложения, с помощью которых пользователи смогут эффективно анализировать содержимое, хранящееся в рабочих книгах Excel. Используйте аналитические функции Excel, создавайте таблицы и визуально привлекательные диаграммы в своем приложении. Дополнительные сведения см. в статье [Работа с Excel в Microsoft Graph](/graph/api/resources/excel?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="general"></a>Общие
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета | Улучшено сообщение об ошибке при сопоставлении псевдонима клиента и отклоненных токенов JWT (AAD). |
 | Дополнение        | 1.0 и бета-версия | Сведения о расположении конечной точки службы авторизации теперь возвращаются в заголовке _www-authenticate_ при получении запроса с пустым токеном носителя. |
@@ -5838,8 +5665,7 @@ ms.locfileid: "49844877"
 
 ### <a name="mail"></a>Почта
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлены свойства _wellKnownName_ и _userConfigurations_ к объекту **mailFolder**. |
 | Дополнение        | Бета-версия        | Добавлены свойства _singleValueExtendedProperties_ и _multiValueExtendedProperties_ к объекту **mailFolder**. |
@@ -5852,23 +5678,20 @@ ms.locfileid: "49844877"
 
 ### <a name="permission"></a>Разрешение
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Добавлено свойство _sharingInvitation_ для предоставления сведений о приглашении к совместному использованию, связанном с этим разрешением. |
 
 ### <a name="people-and-workplace-intelligence--people"></a>Люди и рабочая аналитика | Пользователи
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлены новые свойства: _birthday_, _personNotes_, _isFavorite_, _phones_, _permission_, _postalAddresses_, _websites_, _yomiCompany_, _department_, _profession_, _mailboxType_ и _personType_. |
 | Дополнение        | Бета-версия        | Добавлены новые типы перечислений: _physicalAddressType_, _webSite_, _phone_ и _webSiteType_. |
 
 ### <a name="calendar-group-mail-to-do-tasks"></a>Календарь, группа, почта, задачи To-Do
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | К объекту **referenceAttachment** добавлены новые свойства: _sourceUrl_, _providerType_, _thumbnailUrl_, _previewUrl_, _permission_ и _isFolder_. (Справочные сведеления о вложениях поддерживаются в **event**, **message**, **outlookTask** или **post**.)  |
 | Дополнение        | Бета-версия        | Добавлены свойства _singleValueExtendedProperties_ и _multiValueExtendedProperties_ к объекту **referenceAttachment**. |
@@ -5891,15 +5714,13 @@ ms.locfileid: "49844877"
 
 ### <a name="files"></a>Файлы
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Новое свойство _remoteItem_ для driveItem для учетных записей Майкрософт. |
 
 ### <a name="general"></a>Общие
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение          | 1.0 и бета-версия | Конструкция-_/me/drive_ теперь работает как для учетных записей Майкрософт, так и для рабочих и учебных учетных записей. |
 | Изменение          | 1.0 и бета-версия | Запросы Drive для учетных записей, хранилища OneDrive которых подготовлены по запросу, работают более надежно и в большем количестве сценариев, где для используемых по умолчанию сайтов SharePoint клиента применяются нестандартные имена. |
@@ -5907,8 +5728,7 @@ ms.locfileid: "49844877"
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Проверка notificationUrl на создание подписок. Дополнительные сведения см. в статье [Обновление веб-перехватчиков Microsoft Graph — январь 2016 г.](https://developer.microsoft.com/office/blogs/Microsoft-Graph-WebHooks-Update-January-2016/) |
 | Дополнение        | Бета-версия        | Теперь можно удалять объекты подписки. Соответствующий запрос: DELETE https://graph.microsoft.com/beta/subscriptions/. |
@@ -5924,15 +5744,13 @@ ms.locfileid: "49844877"
 
 ### <a name="personal-contacts"></a>Личные контакты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | В набор объектов личных контактов добавлено свойство mobilePhone. |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Исправление             | 1.0 и бета-версия | Исправлены действия вызовов, привязанные к directoryObjects, при которых возникали сбои со следующим сообщением об ошибке:  Тип значения, возвращаемого в результате операции, невозможен для заданного набора объектов. Это относится к следующим действиям: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_. |
 
@@ -5940,15 +5758,13 @@ ms.locfileid: "49844877"
 
 ### <a name="personal-contacts"></a>Личные контакты
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | В набор объектов личных контактов добавлено свойство mobilePhone. |
 
 ### <a name="general"></a>Общие
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Исправление             | 1.0 и бета-версия | Исправлены запросы, в которых используются выражения $filter, указанные для одного и того же свойства несколько раз, при выполнении которых возникали сбои с кодом 500 и отображалось следующее сообщение об ошибке: "Элемент с тем же ключом уже был добавлен". |
 | Исправление             | 1.0 и бета-версия | Исправлена ошибка, при которой не учитывался регистр имен и значений параметров действий. |
@@ -5959,22 +5775,19 @@ ms.locfileid: "49844877"
 
 ### <a name="groups"></a>Группы
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Исправление             | 1.0 и бета-версия | Исправлен вызов следующих действий групп: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ и _microsoft.graph.resetUnseenCount_. |
 
 ### <a name="calendar"></a>Календарь
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | К типу eventMessage добавлен подтип для свойств eventMessageRequest eventMessage, startDateTime, endDateTime, location, type, recurrence и isOutOfDate. |
 
 ### <a name="users"></a>Пользователи
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Исправление             | 1.0 и бета-версия | Устранена возможность выбирать определенные свойства других пользователей, когда на них ссылаются по их основному имени участника-пользователя. Например: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Исправление             | 1.0 и бета-версия | Исправлен вызов функции _microsoft.graph.reminderView_, привязанной к пользователю, при котором возникал сбой и отображалось следующее сообщение об ошибке: "Не удалось найти свойство с именем businessPhones в типе Microsoft.OutlookServices.Reminder". |
