@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a87e70dc7ef99613a40f7579f58e8cb94df346ec
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 2d1c88e975f55361ee83d8ad99d31ab2caa492c5
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597454"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882768"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -311,7 +311,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - Тип ресурса [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
 - Тип ресурса [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
 - [Руководство по уведомлениям об изменениях и отслеживанию изменений](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Уведомления жизненного цикла](/graph/webhooks-lifecycle)
+- [Уведомления жизненного цикла](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
