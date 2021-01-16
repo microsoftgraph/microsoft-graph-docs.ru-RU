@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 381f9a6af883c87ac045c17b9ebd546aa44b7201
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f56bab29e538afd8841ddd86a57b6a5456b969d8
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978410"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883209"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978410"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать объект **plannerPlan**.
+Создайте **планировщик.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,12 +42,14 @@ POST /planner/plans
 | Имя          | Описание               |
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
-Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON. В качестве свойства владельца **PlannerPlan** необходимо указать идентификатор объекта [group](../resources/group.md).
+Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON.
+Необходимо настроить свойство контейнера **plannerPlan.**
 
->**Примечание.** Пользователь, создающий план, должен быть участником группы, владеющей планом. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
+>**Примечание.** Если контейнер является группой Microsoft 365, пользователь, создавший план, должен быть членом группы, которая будет содержать этот план. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
 
 ## <a name="response"></a>Отклик
 
@@ -69,10 +71,12 @@ POST /planner/plans
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
-Content-length: 381
+Content-length: 140
 
 {
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874"
+  },
   "title": "title-value"
 }
 ```
@@ -95,20 +99,20 @@ Content-length: 381
 ---
 
 
-Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON.
-
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 357
+Content-length: 544
 
 {
   "createdBy": {
@@ -116,11 +120,16 @@ Content-length: 357
       "id": "95e27074-6c4a-447a-aa24-9d718a0b86fa"
     },
     "user": {
-      "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
+      "id": "b108ebf3-4e22-b93d-5234-dae5874656d7"
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

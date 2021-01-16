@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a7cfd3da52a8a045f4521d4d30883512708f0694
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bdbaea1b6ae81dacbf63b6a86abe11b562821986
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975960"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883007"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -32,7 +32,7 @@ ms.locfileid: "48975960"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 
@@ -64,8 +64,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
   "blockType": "request",
   "name": "workbookrange_columnsbefore"
 }-->
-```http
-POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-columnsbefore-csharp-snippets.md)]

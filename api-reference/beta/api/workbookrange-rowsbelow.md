@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f99ccc6a9a79e413894dcca5412169badff908f3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8592b60fcca75f127f10a387f8e392ea4f8ea88a
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977093"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883096"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -32,7 +32,7 @@ ms.locfileid: "48977093"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
@@ -65,8 +65,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
   "blockType": "request",
   "name": "workbookrange_rowsBelow"
 }-->
-```http
-POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsbelow-csharp-snippets.md)]

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5b82daea117094456c6a0ecd2b51384603c9fe26
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa5160d83c803e6de0dc95f08e5a4ee4df2f1155
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984576"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882852"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -31,7 +31,7 @@ ms.locfileid: "47984576"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
 
@@ -47,7 +47,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,8 +65,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
   "name": "workbookrange_rowsAbove",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-csharp-snippets.md)]
@@ -110,7 +110,7 @@ Content-length: 157
 }
 ```
 
-При вызове без обязательного `count` параметра эта функция возвращает одну строку над диапазоном.
+Если этот параметр вызван без дополнительного параметра, эта функция возвращает одну `count` строку над диапазоном.
 
 ##### <a name="request"></a>Запрос
 
@@ -121,8 +121,8 @@ Content-length: 157
   "name": "workbookrange_rowsAbove_nocount",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-nocount-csharp-snippets.md)]

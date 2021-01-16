@@ -1,16 +1,16 @@
 ---
 title: Обновление plannerPlan
-description: Обновление свойств объекта **plannerPlan** .
+description: Обновление свойств объекта **plannerPlan.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 3122eae3642ae9ad251ad71b9911fc62503d7da3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 30a0c76d4e2d1a84d897edeadfd7370448ce7b80
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970983"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882920"
 ---
 # <a name="update-plannerplan"></a>Обновление plannerPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "48970983"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта **plannerPlan** .
+Обновление свойств объекта **plannerPlan.**
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,16 +43,11 @@ PATCH /planner/plans/{plan-id}
 | If-Match  | Последнее известное значение ETag обновляемого объекта plannerPlan. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укавите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|owner|String|Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.|
-|title|String|Название плана.|
+## <a name="response"></a>Отклик
 
-## <a name="response"></a>Ответ
-
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [plannerPlan](../resources/plannerplan.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -117,7 +112,12 @@ Content-length: 357
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

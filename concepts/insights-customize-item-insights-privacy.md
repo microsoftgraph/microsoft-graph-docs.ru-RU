@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9990a6a6b44f8699dbabf2290909b47019e1edd0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f4f143b66ba93b488c747eebfda7777e9800aea5
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873775"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883048"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -28,7 +28,7 @@ ms.locfileid: "49873775"
 В следующем разделе описывается настройка параметров аналитики с помощью командлетов PowerShell. Если вы используете API REST, пропустите следующий раздел и перейдите к разделу [Настройка аналитики элементов с помощью API REST](#configure-item-insights-using-rest-api). Дополнительные сведения см. в описании операций REST [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) или [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="how-to-configure-item-insights-setting-via-powershell"></a>Как настроить параметры аналитики элементов с помощью PowerShell?
-Убедитесь, что выполнены следующие дополнительные предварительные требования. После этого используйте [пакет SDK PowerShell Microsoft Graph](/graph/powershell/installation), чтобы настроить аналитику элементов для всей организации или для определенных групп.
+Убедитесь, что выполнены следующие дополнительные предварительные требования. После этого используйте [пакет SDK PowerShell Microsoft Graph](./powershell/installation.md), чтобы настроить аналитику элементов для всей организации или для определенных групп.
 
 #### <a name="additional-prerequisites"></a>Дополнительные предварительные требования
 * **Модуль PowerShell** — установите [модуль версии 0.9.1 или более поздней](https://www.powershellgallery.com/packages/Microsoft.Graph).

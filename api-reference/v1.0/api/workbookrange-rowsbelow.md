@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c013e2889e03d73010dcf6ca67ee0e4ba422f6a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cccaa780902a914187e360a856e9fe29faab170e
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091910"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882809"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -31,7 +31,7 @@ ms.locfileid: "48091910"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
@@ -65,8 +65,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
   "name": "workbookrange_rowsBelow",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsbelow-csharp-snippets.md)]
@@ -110,7 +110,7 @@ Content-length: 157
 }
 ```
 
-При вызове без `count` параметра эта функция принимает значение по умолчанию, равное одной строке.
+Если этот параметр не `count` задан, эта функция по умолчанию является одной строкой.
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

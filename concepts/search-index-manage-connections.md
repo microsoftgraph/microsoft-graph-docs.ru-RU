@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 953d8c5e3d6dd29c0cbc3e1fffd3e5748e5673c1
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: b5d675b8780e7fd7389d8c929d16fcb6756059eb
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572179"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883174"
 ---
 # <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>Создание, обновление и удаление подключений в Microsoft Graph
 
@@ -85,7 +85,7 @@ ms.locfileid: "49572179"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Регистрация схемы подключения](/graph/search-index-manage-schema)
+- [Регистрация схемы подключения](./search-index-manage-schema.md)
 - [Обзор справочника API соединителей Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Обзор соединителей Microsoft Graph](/microsoftsearch/connectors-overview)
 - Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) с сайта GitHub.

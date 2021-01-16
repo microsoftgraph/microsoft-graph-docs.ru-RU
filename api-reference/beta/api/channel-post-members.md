@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 615cb11f3ddbaab50f1a497492fcb2447a2b8a4b
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0230eab4a0b07439f21dc0e44c78b707084ec47f
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522100"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882516"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
@@ -18,7 +18,7 @@ ms.locfileid: "49522100"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [конверсатионмембер](../resources/conversationmember.md) к [каналу](../resources/channel.md). Эта операция разрешена только для каналов со значением **мембершиптипе** `private` .
+Добавление [conversationMember](../resources/conversationmember.md) в [канал.](../resources/channel.md) Эта операция разрешена только для каналов со значением **membershipType.** `private`
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "49522100"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированное (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,8 +49,8 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пустым.|
-|user|[user](../resources/user.md)|Пользователь, добавляемый в канал.|
+|roles|Коллекция строк|Роль пользователя. Должен быть `owner` пустым или пустым.|
+|user|[user](../resources/user.md)|Пользователь, добавляемой в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -58,7 +58,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-a-member-to-a-channel"></a>Пример 1: Добавление участника в канал
+### <a name="example-1-add-a-member-to-a-channel"></a>Пример 1. Добавление участника в канал
 
 #### <a name="request"></a>Запрос
 
@@ -69,6 +69,14 @@ POST /teams/{team-id}/channels/{channel-id}/members
 } -->
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
+Content-type: application/json
+Content-length: 100
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-csharp-snippets.md)]
@@ -114,7 +122,7 @@ Content-length: 468
 }
 ```
 
-### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>Пример 2: Добавление члена с ролью "владелец" в канал
+### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>Пример 2. Добавление участника с ролью владельца в канал
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -163,7 +171,7 @@ Content-length: 468
 
 ## <a name="see-also"></a>См. также
 
-- [Добавление участника в группу](team-post-members.md)
+- [Добавление участника в команду](team-post-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

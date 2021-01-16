@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 32ba187da807e37b8d8467569b2a08e84b32c719
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 4ac64724a676c2da2d39a68d842039bd14138161
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572137"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883181"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-graph-connection"></a>Создание, обновление и удаление элементов, добавленных приложением в связь Microsoft Graph
 
@@ -34,7 +34,7 @@ ms.locfileid: "49572137"
 
 ## <a name="properties"></a>Свойства
 
-С помощью компонента свойств можно добавлять метаданные элементов, которые удобно применять в интерфейсах Microsoft Graph. Вы должны [зарегистрировать схему](/graph/search-index-manage-schema) для связи перед добавлением в нее элементов и преобразованием типов данных в [поддерживаемые типы данных](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
+С помощью компонента свойств можно добавлять метаданные элементов, которые удобно применять в интерфейсах Microsoft Graph. Вы должны [зарегистрировать схему](./search-index-manage-schema.md) для связи перед добавлением в нее элементов и преобразованием типов данных в [поддерживаемые типы данных](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
 
 ![Пример компонента свойства](./images/search-index-manage-items-1.png)
 
@@ -42,7 +42,7 @@ ms.locfileid: "49572137"
 
 Компонент содержимого используется для массового добавления элементов, которые должны быть полнотекстовым индексом. Примеры включают описание запроса, проанализированный текст из файла или вики-страницы.
 
-Содержимое — одно из ключевых полей, влияющих на [релевантность](/graph/search-index-manage-schema.md/#relevance) в интерфейсах Майкрософт. Мы поддерживаем содержимое типа `text` и `HTML`. Если источник данных содержит двоичные файлы, вы можете проанализировать их в качестве текста перед добавлением в Microsoft Graph.
+Содержимое — одно из ключевых полей, влияющих на [релевантность](./search-index-manage-schema.md#relevance) в интерфейсах Майкрософт. Мы поддерживаем содержимое типа `text` и `HTML`. Если источник данных содержит двоичные файлы, вы можете проанализировать их в качестве текста перед добавлением в Microsoft Graph.
 
 ![Пример компонента содержимого](./images/search-index-manage-items-2.png)
 

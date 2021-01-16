@@ -4,12 +4,12 @@ description: 'Ежедневно людям приходится взаимод�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 49cd970eed1dd5934ab537fc3da2670d510292f7
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 4215c10380f8f0576b0f04b743158d3d5d17a29c
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656883"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882509"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>API ретрансляции устройств в Microsoft Graph (ознакомительная версия)
 
@@ -41,4 +41,4 @@ API ретрансляции устройств позволяет прилож�
 
 - [Microsoft Graph и работа на разных устройствах](cross-device-concept-overview.md)
 - [Дополнительные сведения об API ретрансляции устройств](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
-- [Дополнительные сведения о Project Rome](https://aka.ms/projectrome)
+- [Дополнительные сведения о Project Rome](/windows/project-rome/)

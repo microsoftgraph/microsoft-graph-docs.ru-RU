@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: eb75b481ac8b4d8727883dd03128891d72a2b674
-ms.sourcegitcommit: b6c9eb5d33fbe5bedb778ac4bb41aa3ce9fc8850
+ms.openlocfilehash: 58bf192a539d21656f916bba2990854330caf8ec
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581951"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882951"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -72,8 +72,8 @@ ms.locfileid: "49581951"
 Администраторы могут просмотреть [примеры использования командлетов PowerShell](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell), чтобы настроить параметры аналитики элементов для организации.
 
 ### <a name="teamwork"></a>Командная работа
-- Используйте атрибут **channelCreationMode** экземпляра, чтобы указать, что создается [канал](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes) для обслуживания миграции данных. Используйте атрибут [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true), чтобы указать на завершение миграции и возможность публикации и чтения сообщений участниками.
-- Используйте атрибут **teamCreationMode** экземпляра, чтобы указать, что создается [команда](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes) для обслуживания миграции. Используйте атрибут [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true), чтобы указать на завершение миграции и возможность выполнения операций участников и публикации сообщений участниками.
+- Используйте атрибут **channelCreationMode** экземпляра, чтобы указать, что создается [канал](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes) для обслуживания миграции данных. Используйте атрибут [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true), чтобы указать на завершение миграции и возможность публикации и чтения сообщений участниками.
+- Используйте атрибут **teamCreationMode** экземпляра, чтобы указать, что создается [команда](/graph/api/resources/team?preserve-view=true&view=graph-rest-beta#instance-attributes) для обслуживания миграции. Используйте атрибут [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true), чтобы указать на завершение миграции и возможность выполнения операций участников и публикации сообщений участниками.
 
 ## <a name="september-2020-new-and-generally-available"></a>Сентябрь 2020г.: новые и общедоступные возможности
 
@@ -419,7 +419,7 @@ GA функции, которая позволяет организаторам 
 Обновления Intune за [май](changelog.md#may-2020) в версии 1.0.
 
 ### <a name="graph-explorer"></a>Песочница Graph
-Используйте множество новых функций [песочницы Graph](https://developer.microsoft.com/en-us/graph/graph-explorer), которые улучшают обучение и создание прототипов в песочнице. Например:
+Используйте множество новых функций [песочницы Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer), которые улучшают обучение и создание прототипов в песочнице. Например:
 - Просматривайте фрагменты кода, соответствующие введенному запросу API REST, в C#, Java, JavaScript и Objective C.
 - Войдя в систему с помощью клиента, просматривайте и копируйте маркер доступа в свое избранное клиентское приложение для REST.
 
@@ -476,7 +476,7 @@ GA функции, которая позволяет организаторам 
 - Укажите ресурсы для подготовки в свойстве **resourceProvisioningOptions**, которые обычно не входят в объем создания [группы](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) по умолчанию. В настоящее время поддерживается подготовка группы в качестве [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) с возможностями Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Применяйте параметры системного запроса OData (`$count`, `$filter`, `$search`) при получении коллекций сущностей, которые являются производными [directoryObject](). Вы можете выполнить [поиск определенных маркеров](./query-parameters.md#using-search-on-directory-object-collections) в свойствах **displayName** и **description** этих сущностей, а также использовать OData cast для обрезки результатов **directoryObject** до определенных производных типов. Подробные сведения приведены в статье [Создание расширенных запросов в Microsoft Graph с использованием атрибутов $count, $filter, $search и $orderby](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- Применяйте параметры системного запроса OData (`$count`, `$filter`, `$search`) при получении коллекций сущностей, которые являются производными [directoryObject](). Вы можете выполнить [поиск определенных маркеров](./query-parameters.md#using-search-on-directory-object-collections) в свойствах **displayName** и **description** этих сущностей, а также использовать OData cast для обрезки результатов **directoryObject** до определенных производных типов. Подробные сведения приведены в статье [Создание расширенных запросов в Microsoft Graph с использованием атрибутов $count, $filter, $search и $orderby](https://developer.microsoft.com/ru-RU/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - В рамках [API защиты удостоверений](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) используйте свойство **riskEventType**, чтобы [получить тип определенного риска](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true) или [получить тип риска в журнале пользователя](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true). Не используйте свойство **riskType**, поскольку оно устарело.
 - Укажите типы клиентского приложения в свойстве **clientAppTypes** [набора свойств](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) для [политики условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
 - Используйте делегированное разрешение `EntitlementManagement.Read.All`, чтобы разрешить приложению считывание пакетов доступа, а также связанных ресурсов по управлению правами от имени пользователя, выполнившего вход.
