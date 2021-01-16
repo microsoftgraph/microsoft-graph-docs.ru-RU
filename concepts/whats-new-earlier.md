@@ -3,14 +3,60 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 58bf192a539d21656f916bba2990854330caf8ec
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 0414c2414a6765c7e0c29114c2239d15bbe71cea
+ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882951"
+ms.locfileid: "49883419"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="november-2020-new-and-generally-available"></a>Ноябрь 2020 г.: новые и общедоступные возможности
+
+### <a name="cloud-communications"></a>Облачная коммуникация
+- Общая доступность свойства **роль** типа [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo), разделяющего участников [виртуального собрания](/graph/api/resources/onlinemeeting) на участников и докладчиков.
+- Общая доступность свойства **lobbyBypassSettings** и его [значений](/graph/api/resources/lobbybypasssettings#lobbybypassscope-values) для допуска пользователей к виртуальному собранию.
+- Общая доступность свойства **isEntryExitAnnounced** для настройки параметров объявления пользователей, присоединяющихся к виртуальному собранию или покидающих его.
+- Общая доступность свойства **allowedPresenters** для разрешения отдельным пользователям выступать на собрании.
+
+### <a name="search"></a>Поиск
+- Общая доступность [API запросов](/graph/api/resources/search-api-overview) Поиска (Майкрософт), поддерживающих поиск данных следующих типов:
+  - [Сообщения Outlook](./search-concept-messages.md)
+  - [События календаря Outlook](./search-concept-events.md)
+  - [Ресурсы OneDrive и SharePoint](./search-concept-files.md).
+
+### <a name="teamwork"></a>Командная работа
+
+- Общая доступность разрешений с согласием для конкретных ресурсов (RSC). Разрешения RSC позволяют владельцам команд предоставлять детальные разрешения рабочим приложениям на доступ и/или изменение конкретных данных команды, например на чтение параметров команды или изменение названий каналов, описаний и других параметров.
+- Общая доступность API, применяемых к [каналу](/graph/api/resources/channel) или сообщениям в канале. API включают:
+  - [Создание](/graph/api/conversationmember-add) или [удаление](/graph/api/conversationmember-delete) участника беседы из канала.
+  - [Обновление роли участника](/graph/api/conversationmember-update) в канале.
+  - Получение конкретного сообщения или всех сообщений в канале.
+  - Получение конкретного ответа или всех ответов в канале.
+  - [Отслеживание новых или обновленных сообщений в канале](/graph/api/chatmessage-delta).
+
+
+## <a name="november-2020-new-in-preview-only"></a>Ноябрь 2020 г.: новые возможности только в предварительной версии
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+Дебют [API облачного ПК](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true), позволяющего организациям выполнять подготовку виртуальных компьютеров для сотрудников и управлять этими компьютерами. Используйте его в сочетании с API Intune для управления физическими и виртуальными конечными точками.
+
+### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
+[Подписка на уведомления об изменениях](webhooks.md) в [определении задачи печати](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Обновления Intune за [ноябрь](changelog.md#november-2020) для бета-версии.
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+- Указание URL-адресов для отправки маркеров входа пользователей и URI для кодов авторизации и маркеров доступа в свойстве **spa** [приложения](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true).
+- Настройка внешнего вида и удобства использования экранов входа в Azure Active Directory посредством [свойств бренда организации](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). Организации могут выполнять настройку на основе региональных параметров для отдельных пользователей.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Дебютное представление интерфейса [API проверки доступа в целях предоставления членства в группе](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) для регулярной проверки доступа пользователей. Интерфейс позволяет обеспечивать постоянный доступ только нужным пользователям и эффективно управлять членством в группе.
+
+### <a name="search"></a>Поиск
+Вы можете объединять числовые или строковые результаты поиска, импортированные [соединителями Microsoft Graph](/microsoftsearch/connectors-overview), которые настроены в качестве уточняемых в [схеме](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). Ознакомьтесь с дополнительными сведениями об [уточнении результатов поиска с помощью агрегирования](search-concept-aggregation.md).
 
 ## <a name="october-2020-new-and-generally-available"></a>Октябрь 2020 г.: новые и общедоступные возможности
 
@@ -164,7 +210,7 @@ ms.locfileid: "49882951"
 ### <a name="change-notifications"></a>Уведомления об изменениях
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
 - Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 
