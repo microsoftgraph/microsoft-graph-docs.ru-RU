@@ -1,20 +1,20 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e29c9e6ec1639fe4ca9eac3da8fb72a8bbb4dd0e
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: 39f57d272709c9cf32697560cf70ee252d09f765
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402844"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882804"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.me().drive().root().workbook().worksheets("{id}")
+WorkbookRange workbookRange = graphClient.me().drive().root().workbook().worksheets("{id}")
     .range()
-    .rowsBelow(null)
+    .rowsBelow(2)
     .buildRequest()
-    .post();
+    .get();
 
 ```

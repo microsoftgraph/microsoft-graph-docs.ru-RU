@@ -1,31 +1,31 @@
 ---
-title: Использование API службы поиска Microsoft в Microsoft Graph для уточнения запросов с помощью агрегатов
-description: Вы можете использовать API службы поиска Microsoft для получения аггреатионс
+title: Использование API Поиска (Майкрософт) в запросах уточнения Microsoft Graph с агрегациями
+description: Вы можете использовать API Поиска (Майкрософт) для получения агрегации
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 6eb537fa8063281073fbdb12edfb4ec09b88bb93
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: fad049649172750cf2e362d2558cfc247467a6ed
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563431"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883195"
 ---
-# <a name="refine-search-results-using-aggregations-preview"></a><span data-ttu-id="e3d91-103">Уточнение результатов поиска с помощью агрегатов (Предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="e3d91-103">Refine search results using aggregations (preview)</span></span>
+# <a name="refine-search-results-using-aggregations-preview"></a><span data-ttu-id="0953e-103">Уточнение результатов поиска с помощью агрегаций (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="0953e-103">Refine search results using aggregations (preview)</span></span>
 
-<span data-ttu-id="e3d91-104">Уточните результаты поиска и отобразите их распределение в индексе.</span><span class="sxs-lookup"><span data-stu-id="e3d91-104">Refine search results and show their distribution in the index.</span></span>
+<span data-ttu-id="0953e-104">Уточнение результатов поиска и их распространение в индексе.</span><span class="sxs-lookup"><span data-stu-id="0953e-104">Refine search results and show their distribution in the index.</span></span>
 
-## <a name="example-1-request-aggregations-by-string-fields"></a><span data-ttu-id="e3d91-105">Пример 1: запрос агрегатов по строковым полям</span><span class="sxs-lookup"><span data-stu-id="e3d91-105">Example 1: Request aggregations by string fields</span></span>
+## <a name="example-1-request-aggregations-by-string-fields"></a><span data-ttu-id="0953e-105">Пример 1. Запрос агрегации по строкам</span><span class="sxs-lookup"><span data-stu-id="0953e-105">Example 1: Request aggregations by string fields</span></span>
 
-<span data-ttu-id="e3d91-106">В следующем примере выполняется поиск ресурсов **ListItem** и статистические результаты по их типам файлов и классу контента, которые являются строковыми значениями.</span><span class="sxs-lookup"><span data-stu-id="e3d91-106">The following example searches **listItem** resources and aggregates results by their file type and content class, both of which are string values.</span></span>
+<span data-ttu-id="0953e-106">В следующем примере выполняется поиск ресурсов **listItem** и объединяются результаты по типу файла и классу контента, оба из которых являются строками.</span><span class="sxs-lookup"><span data-stu-id="0953e-106">The following example searches **listItem** resources and aggregates results by their file type and content class, both of which are string values.</span></span>
 
-<span data-ttu-id="e3d91-107">Ответ включает два объекта [сеарчбуккет](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) для двух агрегатов:</span><span class="sxs-lookup"><span data-stu-id="e3d91-107">The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) objects for the two aggregations:</span></span>
-- <span data-ttu-id="e3d91-108">Свойство **Key** указывает фактическое значение (by `FileType` или `contentclass` ) для соответствующих объектов **ListItem** , которые объединены в одном сегменте с этим значением.</span><span class="sxs-lookup"><span data-stu-id="e3d91-108">The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.</span></span>
-- <span data-ttu-id="e3d91-109">Свойство **Count** указывает количество таких объектов, собранных в том же сегменте.</span><span class="sxs-lookup"><span data-stu-id="e3d91-109">The **count** property specifies the number of such objects aggregated in the same bucket.</span></span> <span data-ttu-id="e3d91-110">Обратите внимание, что это значение является приближением количества совпадений и не обеспечивает точное количество совпадений.</span><span class="sxs-lookup"><span data-stu-id="e3d91-110">Note that this number is an approximation of the number of matches and will not provide an exact number of matches.</span></span>
-- <span data-ttu-id="e3d91-111">Сегменты результатов, агрегированные по типу файла, сортируются по количеству в порядке убывания.</span><span class="sxs-lookup"><span data-stu-id="e3d91-111">Buckets of results aggregated by file type are sorted by count in descending order.</span></span> <span data-ttu-id="e3d91-112">В этом примере для трех типов файлов используется 3 сегмента: `docx` , `xlsx` и `pptx` .</span><span class="sxs-lookup"><span data-stu-id="e3d91-112">In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.</span></span>
-- <span data-ttu-id="e3d91-113">Сегменты результатов, агрегированные по классу контента, сортируются по строковому значению класса контента в порядке убывания.</span><span class="sxs-lookup"><span data-stu-id="e3d91-113">Buckets of results aggregated by content class are sorted by the string value of the content class in descending order.</span></span> <span data-ttu-id="e3d91-114">В этом примере существует только один сегмент со всеми связанными объектами, совместно использующих один и тот же класс контента `STS_ListItem_DocumentLibrary` .</span><span class="sxs-lookup"><span data-stu-id="e3d91-114">In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.</span></span>
+<span data-ttu-id="0953e-107">Ответ включает два [объекта searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) для двух агрегаций:</span><span class="sxs-lookup"><span data-stu-id="0953e-107">The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) objects for the two aggregations:</span></span>
+- <span data-ttu-id="0953e-108">Свойство **ключа** указывает фактическое значение (по или) для совпадающих объектов `FileType` `contentclass` **listItem,** которые объединяются в одном сегменте по этому значению.</span><span class="sxs-lookup"><span data-stu-id="0953e-108">The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.</span></span>
+- <span data-ttu-id="0953e-109">Свойство **count** указывает количество таких объектов, агрегированных в одном сегменте.</span><span class="sxs-lookup"><span data-stu-id="0953e-109">The **count** property specifies the number of such objects aggregated in the same bucket.</span></span> <span data-ttu-id="0953e-110">Обратите внимание, что это число соответствует количеству совпадений и не предоставляет точное количество совпадений.</span><span class="sxs-lookup"><span data-stu-id="0953e-110">Note that this number is an approximation of the number of matches and will not provide an exact number of matches.</span></span>
+- <span data-ttu-id="0953e-111">Сегменты результатов, агрегированных по типу файла, сортируются по подсчету в порядке убывания.</span><span class="sxs-lookup"><span data-stu-id="0953e-111">Buckets of results aggregated by file type are sorted by count in descending order.</span></span> <span data-ttu-id="0953e-112">В этом примере имеется 3 сегмента для 3 типов файлов: `docx` `xlsx` , и `pptx` .</span><span class="sxs-lookup"><span data-stu-id="0953e-112">In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.</span></span>
+- <span data-ttu-id="0953e-113">Сегменты результатов, агрегированных по классу контента, сортируются по строковому значению класса контента в порядке убывания.</span><span class="sxs-lookup"><span data-stu-id="0953e-113">Buckets of results aggregated by content class are sorted by the string value of the content class in descending order.</span></span> <span data-ttu-id="0953e-114">В этом примере имеется только один контейнер со всеми совпадающие объекты, совместно с одним классом `STS_ListItem_DocumentLibrary` контента.</span><span class="sxs-lookup"><span data-stu-id="0953e-114">In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e3d91-115">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3d91-115">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0953e-115">Запрос</span><span class="sxs-lookup"><span data-stu-id="0953e-115">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -67,7 +67,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e3d91-116">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3d91-116">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0953e-116">Отклик</span><span class="sxs-lookup"><span data-stu-id="0953e-116">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -126,13 +126,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a><span data-ttu-id="e3d91-117">Пример 2: применение фильтра агрегирования на основе предыдущего запроса</span><span class="sxs-lookup"><span data-stu-id="e3d91-117">Example 2: Apply an aggregation filter based on a previous request</span></span>
+## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a><span data-ttu-id="0953e-117">Пример 2. Применение фильтра агрегации на основе предыдущего запроса</span><span class="sxs-lookup"><span data-stu-id="0953e-117">Example 2: Apply an aggregation filter based on a previous request</span></span>
 
-<span data-ttu-id="e3d91-118">В этом примере применяется фильтр агрегирования, основанный на **аггрегатионфилтертокен** , возвращенном для `docx` `FileType` поля в примере 1.</span><span class="sxs-lookup"><span data-stu-id="e3d91-118">In this example, we apply an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `FileType` field in example 1.</span></span>
+<span data-ttu-id="0953e-118">В этом примере применяется фильтр агрегации, основанный на **возвращаемом в** качестве поля в примере `docx` `FileType` 1.</span><span class="sxs-lookup"><span data-stu-id="0953e-118">In this example, we apply an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `FileType` field in example 1.</span></span>
 
-<span data-ttu-id="e3d91-119">Строковое значение, назначенное свойству **аггрегатионфилтерс** , соответствует формату **"{Field}: \\ " {аггрегатионфилтертокен} \\ ""**.</span><span class="sxs-lookup"><span data-stu-id="e3d91-119">The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**.</span></span>
+<span data-ttu-id="0953e-119">Строка, назначенная свойству **aggregationFilters,** имеет формат **"{field}: \\ "{aggregationFilterToken} \\ ""**.</span><span class="sxs-lookup"><span data-stu-id="0953e-119">The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**.</span></span> <span data-ttu-id="0953e-120">Если для одного фильтра требуется несколько значений, строка, назначенная свойству **aggregationFilters,** должна иметь такой формат: **"{field}:or( \\ "{aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ")"**.</span><span class="sxs-lookup"><span data-stu-id="0953e-120">If multiple values for the same filter are required, the string value assigned to the **aggregationFilters** property should follow this format : **"{field}:or(\\"{aggregationFilterToken1}\\",\\"{aggregationFilterToken2}\\")"**.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e3d91-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3d91-120">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0953e-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="0953e-121">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -168,7 +168,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e3d91-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3d91-121">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0953e-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="0953e-122">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -203,18 +203,18 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-request-aggregation-by-a-numeric-field"></a><span data-ttu-id="e3d91-122">Пример 3: запрос агрегирования с помощью числового поля</span><span class="sxs-lookup"><span data-stu-id="e3d91-122">Example 3: Request aggregation by a numeric field</span></span>
+## <a name="example-3-request-aggregation-by-a-numeric-field"></a><span data-ttu-id="0953e-123">Пример 3. Запрос агрегации по числовому полю</span><span class="sxs-lookup"><span data-stu-id="0953e-123">Example 3: Request aggregation by a numeric field</span></span>
 
-<span data-ttu-id="e3d91-123">В следующем примере выполняется поиск ресурсов **driveItem** и статистические результаты по их размеру — числовому значению.</span><span class="sxs-lookup"><span data-stu-id="e3d91-123">The following example searches **driveItem** resources and aggregates results by their size which is a numeric value.</span></span> <span data-ttu-id="e3d91-124">В запросе задается объединение по 3 диапазонам размера:</span><span class="sxs-lookup"><span data-stu-id="e3d91-124">The request specifies aggregation by 3 size ranges:</span></span>
-- <span data-ttu-id="e3d91-125">Размер менее 100</span><span class="sxs-lookup"><span data-stu-id="e3d91-125">Size less than 100</span></span>
-- <span data-ttu-id="e3d91-126">Размер между 100 и 1000</span><span class="sxs-lookup"><span data-stu-id="e3d91-126">Size between 100 and 1000</span></span>
-- <span data-ttu-id="e3d91-127">Размер 1000 и выше</span><span class="sxs-lookup"><span data-stu-id="e3d91-127">Size 1000 and higher</span></span>
+<span data-ttu-id="0953e-124">В следующем примере выполняется поиск ресурсов **driveItem** и объединяются результаты по их размеру, который является числом.</span><span class="sxs-lookup"><span data-stu-id="0953e-124">The following example searches **driveItem** resources and aggregates results by their size which is a numeric value.</span></span> <span data-ttu-id="0953e-125">Запрос определяет агрегацию на 3 диапазона размеров:</span><span class="sxs-lookup"><span data-stu-id="0953e-125">The request specifies aggregation by 3 size ranges:</span></span>
+- <span data-ttu-id="0953e-126">Размер меньше 100</span><span class="sxs-lookup"><span data-stu-id="0953e-126">Size less than 100</span></span>
+- <span data-ttu-id="0953e-127">Размер от 100 до 1000</span><span class="sxs-lookup"><span data-stu-id="0953e-127">Size between 100 and 1000</span></span>
+- <span data-ttu-id="0953e-128">Размер 1000 и выше</span><span class="sxs-lookup"><span data-stu-id="0953e-128">Size 1000 and higher</span></span>
 
-<span data-ttu-id="e3d91-128">Ответ включает 3 объекта **сеарчбуккет** , по одному для каждого объединения диапазонов размеров:</span><span class="sxs-lookup"><span data-stu-id="e3d91-128">The response includes 3 **searchBucket** objects, one for each size range aggregation:</span></span>
-- <span data-ttu-id="e3d91-129">2 сегмента из диапазонов меньшего размера не содержат совпадений поиска.</span><span class="sxs-lookup"><span data-stu-id="e3d91-129">The 2 buckets of the lower size ranges don't include any search matches.</span></span>
-- <span data-ttu-id="e3d91-130">Все 9 совпадений поиска имеют размеры 1000 или выше.</span><span class="sxs-lookup"><span data-stu-id="e3d91-130">All 9 search matches have sizes 1000 or higher.</span></span>
+<span data-ttu-id="0953e-129">Ответ включает 3 **объекта searchBucket,** по одному для каждого агрегирования диапазона размеров:</span><span class="sxs-lookup"><span data-stu-id="0953e-129">The response includes 3 **searchBucket** objects, one for each size range aggregation:</span></span>
+- <span data-ttu-id="0953e-130">2 сегмента диапазонов меньшего размера не включают совпадения поиска.</span><span class="sxs-lookup"><span data-stu-id="0953e-130">The 2 buckets of the lower size ranges don't include any search matches.</span></span>
+- <span data-ttu-id="0953e-131">Размер всех 9 совпадений поиска не превышает 1000.</span><span class="sxs-lookup"><span data-stu-id="0953e-131">All 9 search matches have sizes 1000 or higher.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e3d91-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3d91-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0953e-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="0953e-132">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -259,7 +259,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e3d91-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3d91-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0953e-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="0953e-133">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -306,10 +306,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="e3d91-133">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="e3d91-133">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="0953e-134">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="0953e-134">Known limitations</span></span>
 
-<span data-ttu-id="e3d91-134">Агрегаты поддерживаются только для элементов SharePoint или OneDrive.</span><span class="sxs-lookup"><span data-stu-id="e3d91-134">Aggregations are supported only for SharePoint or OneDrive items.</span></span> <span data-ttu-id="e3d91-135">Они не поддерживаются для **сообщений** или **событий**.</span><span class="sxs-lookup"><span data-stu-id="e3d91-135">They are not supported for **message** or **event**.</span></span>
+<span data-ttu-id="0953e-135">Агрегации поддерживаются только для элементов SharePoint или OneDrive.</span><span class="sxs-lookup"><span data-stu-id="0953e-135">Aggregations are supported only for SharePoint or OneDrive items.</span></span> <span data-ttu-id="0953e-136">Они не поддерживаются для **сообщения или** **события.**</span><span class="sxs-lookup"><span data-stu-id="0953e-136">They are not supported for **message** or **event**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="e3d91-136">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="e3d91-136">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="0953e-137">Следующие шаги</span><span class="sxs-lookup"><span data-stu-id="0953e-137">Next steps</span></span>
 
-- [<span data-ttu-id="e3d91-137">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="e3d91-137">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="0953e-138">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="0953e-138">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
