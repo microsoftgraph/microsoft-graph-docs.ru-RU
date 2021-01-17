@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ccc622b391cd8fc0fcd08a289392026f3458f5cd
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 08baf178608287709632c44cc5e96efd02d34a7a
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754322"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883055"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -39,7 +39,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 |[Использование KQL в терминах запросов](#keyword-query-language-kql-support) | **query** |
 |[Сортировка результатов поиска](#sort-search-results)| **sort** |
 |[Уточнение результатов с помощью агрегатов](#refine-results-using-aggregations)| **aggregations** |
-|[Поиск в соединителях Graph](/graph/search-concept-custom-types)| **contentSources** |
+|[Поиск пользовательских типов, импортированных с помощью соединителей](/graph/search-concept-custom-types)| **contentSources** |
 
 ## <a name="scope-search-based-on-entity-types"></a>Поиск в области по типам объектов
 
@@ -190,9 +190,12 @@ API поиска возвращает отклики с ошибками, опи
   - [Поиск сообщений Outlook](/graph/search-concept-messages)
   - [Поиск событий календаря](/graph/search-concept-events)
   - [Поиск содержимого в OneDrive и SharePoint](/graph/search-concept-files)
-  - [Поиск внешнего контента](/graph/search-concept-custom-types)
+  - [Поиск пользовательских типов, импортированных с помощью соединителей](/graph/search-concept-custom-types)
   - [Сортировка результатов поиска](/graph/search-concept-sort)
   - [Уточнение результатов поиска](/graph/search-concept-aggregation)
 
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
+## <a name="whats-new"></a>Новые возможности
+
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
