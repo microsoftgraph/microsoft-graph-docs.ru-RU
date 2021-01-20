@@ -1,24 +1,24 @@
 ---
-title: Обновление хомереалмдисковериполици
-description: Обновление свойств объекта Хомереалмдисковериполици.
+title: Обновление homerealmdiscoverypolicy
+description: Обновление свойств объекта homeRealmDiscoveryPolicy.
 localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ff01a11507732f5f680c5d24f76776926fabf44e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e04d7ac91dedb7ef515741c86c29f3996d248f6
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001724"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910753"
 ---
-# <a name="update-homerealmdiscoverypolicy"></a>Обновление хомереалмдисковериполици
+# <a name="update-homerealmdiscoverypolicy"></a>Обновление homerealmdiscoverypolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) .
+Обновление свойств объекта [homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,10 +51,10 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный.|
-|description|String| Описание для этой политики.|
-|displayName|String| Отображаемое имя для этой политики. Обязательный.|
-|исорганизатиондефаулт|Логическое|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
+|definition|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики.  Обязательный.|
+|description|String| Описание этой политики.|
+|displayName|String| Отображаемого имени для этой политики. Обязательный.|
+|isOrganizationDefault|Boolean|Если установлено true, активирует эту политику. Для одного типа политики может быть несколько политик, но только одна может быть активирована в качестве организации по умолчанию. Необязательный, значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
 
@@ -81,8 +81,7 @@ Content-type: application/json
     "definition-value"
   ],
   "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "type": "type-value"
+  "isOrganizationDefault": true
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -95,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-homerealmdiscoverypolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-homerealmdiscoverypolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

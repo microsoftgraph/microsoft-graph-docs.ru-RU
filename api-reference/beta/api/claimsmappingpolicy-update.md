@@ -1,24 +1,24 @@
 ---
-title: Обновление клаимсмаппингполици
-description: Обновление свойств объекта Клаимсмаппингполици.
+title: Обновление claimsmappingpolicy
+description: Обновление свойств объекта claimsMappingPolicy.
 localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f4816096436e92daa288aa602430c0051a69db90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6955c9472186490f50c2810109dcf5129a5e005c
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982505"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910664"
 ---
-# <a name="update-claimsmappingpolicy"></a>Обновление клаимсмаппингполици
+# <a name="update-claimsmappingpolicy"></a>Обновление claimsmappingpolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) .
+Обновление свойств объекта [claimsMappingPolicy.](../resources/claimsmappingpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "47982505"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,10 +51,10 @@ PATCH /policies/claimsMappingPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
-|description|String| Описание для этой политики.|
-|displayName|String| Отображаемое имя для этой политики. Обязательно.|
-|исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
+|definition|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики.  Обязательный.|
+|description|String| Описание этой политики.|
+|displayName|String| Отображаемого имени для этой политики. Обязательный.|
+|isOrganizationDefault|Boolean|Если установлено true, активирует эту политику. Для одного типа политики может быть несколько политик, но только одна может быть активирована в качестве организации по умолчанию. Необязательный, значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
 
@@ -81,8 +81,7 @@ Content-type: application/json
     "definition-value"
   ],
   "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "type": "type-value"
+  "isOrganizationDefault": true
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -95,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-claimsmappingpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-claimsmappingpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

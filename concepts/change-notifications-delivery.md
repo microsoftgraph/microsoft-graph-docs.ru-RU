@@ -4,12 +4,12 @@ description: Уведомления об изменениях можно пол�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 52e3be5a2a1beb69417327bd90fb6571c7b93921
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: f48f22a286235ad9863b2ec79a554250c82897ab
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581063"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910278"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>Получение уведомлений об изменениях разными способами (предварительная версия)
 
@@ -37,7 +37,7 @@ ms.locfileid: "49581063"
 
 Средство [Azure CLI](/cli/azure/what-is-azure-cli) позволяет создавать сценарии и автоматизировать админстративные задачи в Azure. Средство CLI можно [установить на локальный компьютер](/cli/azure/install-azure-cli) или запустить напрямую в [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
-```shell
+```azurecli
 # --------------
 # TODO: update the following values
 #sets the name of the resource group
@@ -166,7 +166,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>Что произойдет, если приложение для отслеживания изменений в Microsoft Graph отсутствует?
 
-Возможно, в вашем клиенте нет субъекта-службы **отслеживания изменений в Microsoft Graph**. Это зависит от того, когда был создан клиент и от административных операций. Чтобы устранить эту проблему, выполните [следующий запрос](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) в [проводнике Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+Возможно, в вашем клиенте нет субъекта-службы **отслеживания изменений в Microsoft Graph**. Это зависит от того, когда был создан клиент и от административных операций. Чтобы устранить эту проблему, выполните [следующий запрос](https://developer.microsoft.com/ru-RU/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) в [проводнике Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer).
 
 Подробности запроса:
 

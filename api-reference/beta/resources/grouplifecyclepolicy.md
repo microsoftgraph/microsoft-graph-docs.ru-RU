@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d01be98869a62d72b275f5840ddc2e0edcd5c698
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 647187e7eee5c26a03cff800c5e6a7628d9166e3
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078432"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910332"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет политику жизненного цикла для группы Microsoft 365. Политика жизненного цикла позволяет администраторам устанавливать срок действия групп. Например, срок действия группы истекает через 180 дней. Когда срок действия группы истекает, ее владельцы должны продлить его в течение определенного администратором времени. После продления группа будет оставаться активной в течение определенного политикой количества дней. Например, срок действия группы истекает через 180 дней после продления. Если срок действия группы не продлить, она будет удалена. Группу можно восстановить в течение 30 дней после удаления.
 
@@ -28,7 +30,7 @@ ms.locfileid: "48078432"
 |[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | None | Удаление объекта groupLifecyclePolicy. |
 |[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|None| Добавление группы в политику жизненного цикла. |
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|None| Удаление группы из политики жизненного цикла. |
-|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет| Обновление даты окончания срока действия группы. |
+|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет| Продление срока действия группы. |
 
 ## <a name="properties"></a>Свойства
 
@@ -39,7 +41,7 @@ ms.locfileid: "48078432"
 |id|GUID| Уникальный идентификатор политики. Только для чтения.|
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

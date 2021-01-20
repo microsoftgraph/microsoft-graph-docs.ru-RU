@@ -1,24 +1,24 @@
 ---
-title: Обновление воркфорцеинтегратион
-description: Обновление свойств объекта воркфорцеинтегратион.
+title: Обновление рабочей силы
+description: Обновление свойств объекта workforceintegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e1f7c6486e42ecc2f41604866eef9dd7d069651
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6885976681e11640ea3205ce841fe1f6620e626a
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970551"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910638"
 ---
-# <a name="update-workforceintegration"></a>Обновление воркфорцеинтегратион
+# <a name="update-workforceintegration"></a>Обновление рабочей силы
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [воркфорцеинтегратион](../resources/workforceintegration.md) .
+Обновление свойств объекта [workforceintegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48970551"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -35,14 +35,14 @@ ms.locfileid: "48970551"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teamwork/workforceIntegrations
+PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,23 +50,23 @@ PATCH /teamwork/workforceIntegrations
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции трудовых ресурсов.|
-|шифрования|воркфорцеинтегратионенкриптион|Ресурс для шифрования взаимодействия сотрудников. |
-|isActive|Логический|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
-|имеется|string| Возможные значения:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences` . Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
-|суппортедентитиес|string| Это свойство **будет заменено** в версии 1.0. Мы рекомендуем использовать это свойство вместо **поддерживаемых**. Свойство **Supports будет по-** прежнему поддерживаться в бета-версии в течение этого времени. Возможные значения:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences` . Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
-|url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены. |
+|apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
+|displayName|String|Имя интеграции сотрудников.|
+|шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции сотрудников. |
+|isActive|Boolean|Указывает, активна ли в настоящее время интеграция с сотрудниками.|
+|поддерживает|string| Возможные значения: `none` `shift` , , `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем регистре.|
+|supportedEntities|string| Это свойство заменит **поддержку** в v1.0. Рекомендуется использовать это свойство вместо **поддержки.** Пока **свойство supports** будет поддерживаться в бета-версии. Возможные значения: `none` `shift` , , `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем регистре.|
+|url|String| URL-адрес интеграции сотрудников для вызовов из службы Shift. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-a-workforceintegration-object"></a>Пример 1: обновление объекта Воркфорцеинтегратион
+### <a name="example-1-update-a-workforceintegration-object"></a>Пример 1. Обновление объекта workforceIntegration
 
-В приведенном ниже примере показано, как обновить объект **воркфорцеинтегратион** .
+В следующем примере обновляется **объект workforceIntegration.**
 
 #### <a name="request"></a>Запрос
 
@@ -79,7 +79,7 @@ PATCH /teamwork/workforceIntegrations
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceIntegrationId}
 Content-type: application/json
 
 {
@@ -142,9 +142,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Пример 2: создание нового Воркфорцеинтегратион с включенной функцией Свапрекуест для фильтрации допустимости
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Пример 2. Создание нового workforceIntegration с включенной фильтрацией на соответствие требованиям SwapRequest
 
-В следующем примере показано, как создать **воркфорцеинтегратион** с свапрекуест, включенным для фильтрации приемлемости.
+В следующем примере создается новый **сотрудникIntegration** с включенным фильтром swapRequest.
 
 #### <a name="request"></a>Запрос
 
@@ -170,7 +170,7 @@ Content-type: application/json
 ```
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 {
@@ -188,15 +188,15 @@ HTTP/1.1 200 OK
 }
 
 ```
-Чтобы создать новый **воркфорцеинтегратион** с включенной функцией фильтрации соответствия свапрекуест, ознакомьтесь со статьей метод [CREATE](../api/workforceintegration-post.md) .
+Чтобы создать новую **рабочую** регионацию с включенной фильтрацией правомерности SwapRequest, см. метод [Create.](../api/workforceintegration-post.md)
 
-### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример 3: получение подходящих смен при включении Свапрекуест в Елигибилитифилтеринженабледентитиес
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример 3. Получение подходящих смен, когда SwapRequest включен в eligibilityFilteringEnabledEntities
 
-Конечные точки интеграции "взаимодействие между сменами приложения" и "ресурсы" будут соответствовать существующему шаблону.
+Взаимодействие между конечными точками интеграции приложения Shifts и сотрудников будет выполняться по существующему шаблону.
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, сделанного сменам конечной точки интеграции сотрудников для получения подходящих смен для запроса на замену.
+Ниже приводится пример запроса, сделанного shifts на конечную точку интеграции персонала для получения подходящих смен для запроса на замену.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -213,7 +213,7 @@ Accept-Language: en-us
 ```
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа от службы интеграции сотрудников.
+Ниже приводится пример ответа от службы интеграции сотрудников.
 ```
 HTTP/1.1 200 OK
 {

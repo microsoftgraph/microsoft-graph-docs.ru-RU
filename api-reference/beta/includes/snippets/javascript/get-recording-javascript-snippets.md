@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1931b195137ca9a27a9d4d1cc35436667bbb1eff
+ms.openlocfilehash: 61625e4d8b15350b64dc53c72c15d06189cc8332
 ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910699"
+ms.locfileid: "49910923"
 ---
 ```javascript
 
@@ -15,16 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const tokenLifetimePolicy = {
-  definition: [
-    "definition-value"
-  ],
-  displayName: "displayName-value",
-  isOrganizationDefault: true
-};
-
-let res = await client.api('/policies/tokenLifetimePolicies/{id}')
+let res = await client.api('/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording')
     .version('beta')
-    .update(tokenLifetimePolicy);
+    .get();
 
 ```

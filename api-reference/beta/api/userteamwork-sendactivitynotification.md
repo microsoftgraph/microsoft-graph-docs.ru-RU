@@ -5,15 +5,17 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3dfc3858e51d227bd270bbe783636a4b23c17362
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6a772894e46dd553048ae3d429a9af782173be7f
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873131"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910719"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Отправьте пользователю уведомление веб-канала активности. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в отправке уведомлений [о действиях Teams.](/graph/teams-send-activityfeednotifications)
 
@@ -42,7 +44,7 @@ POST /users/{userId}/teamwork/sendActivityNotification
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -50,8 +52,8 @@ POST /users/{userId}/teamwork/sendActivityNotification
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о который идет речь.|
-|activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
-|chainId|Int64|Необязательное. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
+|activityType|String|Тип действия. Это должно быть объявлено в манифесте [приложения Teams.](/microsoftteams/platform/overview)|
+|chainId|Int64|Необязательное свойство. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
 |previewText|[itemBody](../resources/itembody.md)|Предварительный просмотр текста уведомления. Microsoft Teams будет показывать только первые 150 символов.|
 |templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
 
