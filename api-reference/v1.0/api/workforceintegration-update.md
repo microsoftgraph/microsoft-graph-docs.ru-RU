@@ -1,22 +1,22 @@
 ---
-title: Обновление Воркфорцеинтегратион
-description: Обновление свойств объекта Воркфорцеинтегратион.
+title: Обновление workforceIntegration
+description: Обновление свойств объекта workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9ff45c62726c5efc986593e3e949ffacdb115a15
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 97a902f38b983105a1815250071b3ef7f8b3d7bd
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849083"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910529"
 ---
-# <a name="update-workforceintegration"></a>Обновление Воркфорцеинтегратион
+# <a name="update-workforceintegration"></a>Обновление workforceIntegration
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [воркфорцеинтегратион](../resources/workforceintegration.md) .
+Обновление свойств объекта [workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,25 +24,25 @@ ms.locfileid: "48849083"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teamwork/workforceIntegrations
+PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,16 +50,16 @@ PATCH /teamwork/workforceIntegrations
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции трудовых ресурсов.|
-|шифрования|воркфорцеинтегратионенкриптион|Ресурс для шифрования взаимодействия сотрудников. |
-|isActive|Логический|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
-|суппортедентитиес|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
-|url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены. |
+|apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
+|displayName|String|Имя интеграции сотрудников.|
+|шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции сотрудников. |
+|isActive|Boolean|Указывает, активна ли в настоящее время интеграция с сотрудниками.|
+|supportedEntities|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем регистре.|
+|url|String| URL-адрес интеграции сотрудников для службы переключе вызовов из службы смены. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -75,7 +75,7 @@ PATCH /teamwork/workforceIntegrations
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
+PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforceIntegrationId}
 Content-type: application/json
 
 {
@@ -140,9 +140,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Примеры использования сущностей Воркфорцеинтегратион для фильтрации по допустимости правил WFM
+## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Примеры использования объекта WorkforceIntegration для фильтрации по правилам WFM
 
-### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a>Вариант использования: замена существующего Воркфорцеинтегратион для включения Свапрекуест для фильтрации допустимости
+### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a>Пример использования: замените существующий WorkforceIntegration, чтобы включить SwapRequest для фильтрации правомерности
 
 ### <a name="request"></a>Запрос
 
@@ -164,7 +164,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -182,14 +182,14 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-Чтобы узнать, как создать новый воркфорцеинтегратион с включенной функцией фильтрации соответствия Свапрекуест, ознакомьтесь со статьей [Create (создать](../api/workforceintegration-post.md)).
+Чтобы узнать, как создать новую рабочую силу с помощью SwapRequest, включенной для фильтрации правомерности, см. [создание](../api/workforceintegration-post.md).
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример извлечения подходящих смен при включении Свапрекуест в Елигибилитифилтеринженабледентитиес
-Конечные точки интеграции "взаимодействие между сменами приложения" и "ресурсы" будут соответствовать существующему шаблону.
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример получения подходящих смен, когда SwapRequest включен в eligibilityFilteringEnabledEntities
+Взаимодействие между конечными точками интеграции приложения Shifts и сотрудников будет выполняться по существующему шаблону.
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, сделанного сменам конечной точки интеграции сотрудников для получения подходящих смен для запроса на замену.
+Ниже приводится пример запроса, сделанного shifts на конечную точку интеграции персонала для получения подходящих смен для запроса на замену.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -205,7 +205,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа от службы интеграции сотрудников.
+Ниже приводится пример ответа от службы интеграции сотрудников.
 ```
 HTTP/1.1 200 OK
 {

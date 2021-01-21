@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e8974bee286bd54f0e134a789289abb0e6380f66
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 67fffba99e1bd0e7ac8bd2dd120f84640e8f69b9
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805490"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910414"
 ---
 ```objc
 
@@ -22,7 +22,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [homeRealmDiscoveryPolicy setDefinition:definitionList];
 [homeRealmDiscoveryPolicy setDisplayName:@"displayName-value"];
 [homeRealmDiscoveryPolicy setIsOrganizationDefault: true];
-[homeRealmDiscoveryPolicy setType:@"type-value"];
 
 NSError *error;
 NSData *homeRealmDiscoveryPolicyData = [homeRealmDiscoveryPolicy getSerializedDataWithError:&error];

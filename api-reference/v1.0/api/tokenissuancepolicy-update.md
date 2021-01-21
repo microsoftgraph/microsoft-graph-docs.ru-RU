@@ -1,24 +1,24 @@
 ---
-title: Обновление Токениссуанцеполици
-description: Обновление свойств объекта Токениссуанцеполици.
+title: Обновление tokenIssuancePolicy
+description: Обновление свойств объекта tokenIssuancePolicy.
 localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f67fae76158dd64386559dd8834f0236ea58259b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c4ef332acef3e99cc1236c3e4e1015a0c32dd05a
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043950"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910307"
 ---
-# <a name="update-tokenissuancepolicy"></a>Обновление Токениссуанцеполици
+# <a name="update-tokenissuancepolicy"></a>Обновление tokenIssuancePolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Обновление свойств объекта [токениссуанцеполици](../resources/tokenIssuancePolicy.md) .
+Обновление свойств объекта [tokenIssuancePolicy.](../resources/tokenIssuancePolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48043950"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,10 +51,10 @@ PATCH /policies/tokenIssuancePolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
-|description|String| Описание для этой политики.|
-|displayName|String| Отображаемое имя для этой политики. Обязательно.|
-|исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
+|definition|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики.  Обязательный.|
+|description|String| Описание этой политики.|
+|displayName|String| Отображаемого имени для этой политики. Обязательный.|
+|isOrganizationDefault|Boolean|Если установлено true, активирует эту политику. Для одного типа политики может быть несколько политик, но только одна может быть активирована в качестве организации по умолчанию. Необязательный, значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
 
@@ -82,8 +82,7 @@ Content-type: application/json
     "definition-value"
   ],
   "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "type": "type-value"
+  "isOrganizationDefault": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

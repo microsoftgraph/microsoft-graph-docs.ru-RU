@@ -1,22 +1,22 @@
 ---
 title: Перечисление входов
-description: Описывает метод List ресурса SignIn (Entity) из API Microsoft Graph.
+description: Описывает метод списка ресурса signIn (сущности) из API Microsoft Graph.
 localization_priority: Normal
 author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7218b1fb30906c309664464069f2364af29dfde
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 56a66140da750edc44408ecf5f06c0905e9bafe8
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523534"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910712"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
 Пространство имен: microsoft.graph
 
-Получает входы пользователей Azure AD для клиента. Интерактивные входы в природе (при условии, что имя пользователя и пароль передаются в составе маркера проверки подлинности); успешные Федеративные входы в систему в данный момент включены в журналы входа.
+Получает входы пользователей Azure AD для клиента. В настоящее время в журналы входа включаются интерактивные входы, которые являются интерактивными (когда имя пользователя или пароль передается в рамках маркера авторизования), а успешные федеративные входы включаются в журналы входа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49523534"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | Аудитлог. Read. ALL и Directory. Read. ALL  |
+|Для приложений | AuditLog.Read.All и Directory.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET auditLogs/signIns
 |[$top](/graph/query_parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/signIns?$top=1`|
 |[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметра
 
 |Имя атрибута |Поддерживаемые операторы|
 |:----------------|:------|
@@ -69,7 +69,6 @@ GET auditLogs/signIns
 |deviceDetail/browser| eq, startswith|
 |deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
-|Риск| eq|
 
 ## <a name="response"></a>Отклик
 
