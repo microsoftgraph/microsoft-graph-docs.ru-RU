@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f9fb8834895c7b61745dab084c2b1807ef6143dd
-ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
+ms.openlocfilehash: 9d041944b65949564ade9f1fc4bfc12d5e69519f
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883405"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910761"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -16,6 +16,7 @@ ms.locfileid: "49883405"
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
+
 
 ## <a name="january-2021-new-in-preview-only"></a>Январь 2021 г.: новые возможности только в предварительной версии
 
@@ -42,7 +43,7 @@ ms.locfileid: "49883405"
 Получение состояния обработки динамической группы на основе правил с помощью свойства **membershipRuleProcessingStatus**. Это удобно, когда изменяется атрибут пользователя, участие пользователя в [группе Microsoft 365](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) на основе правил подвергается повторной оценке в соответствии с правилами участия в группе, настроенными в организации. 
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
-- Приложения могут использовать делегированные разрешения, чтобы пользователи могли вызывать API для управления собственными [способами проверки подлинности](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true), или использовать разрешения приложений, чтобы позволить администраторам управлять способами проверки подлинности для других пользователей.
+- Приложения могут использовать разрешения приложений, чтобы позволить администраторам управлять [способами проверки подлинности](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) для пользователей.
 - Поддержка [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) в качестве способа проверки подлинности пользователя для входа или многофакторной проверки подлинности в Azure AD.
 - Использование [политики Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true), чтобы определить параметры конфигурации, а также пользователей или группы, которым разрешено применять Microsoft Authenticator в качестве способа проверки подлинности. Использование политики Microsoft Authenticator вместо [политики входа по телефону без пароля с помощью Microsoft Authenticator](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true), поддержка которой прекращена. 
 - Поддержка [Windows Hello для бизнеса](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true) в качестве способа проверки подлинности пользователя при входе на устройствах с Windows без применения пароля.
