@@ -193,6 +193,9 @@ items:
               - name: Добавление данных в сеанс отправки
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
+              - name: Уведомления об изменениях
+                href: universal-print-webhook-notifications.md
+                displayName: Universal Print Webhook Notifications
           - name: Корпоративное управление
             href: intune-concept-overview.md
             displayName: Intune
