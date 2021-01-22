@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 45c59567e8926e8ae7fc2429939b2491a8237782
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f19ecbb4672ec877371621d7c96284f683f600db
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874286"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934879"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>Тип ресурса unifiedRolePermission
 
@@ -52,8 +52,8 @@ ms.locfileid: "49874286"
 ### <a name="condition-property"></a>свойство condition
 Условия определяют ограничения, которые должны быть выполнены. Например, требование, что основной объект является "владельцем" целевого сайта. Поддерживаются следующие условия:
 
-- Self: "@Subject.objectId == @Resource.objectId"
-- Владелец: "@Subject.objectId Any_of @Resource.owners"
+- Self: "$ResourceIsSelf"
+- Владелец: "$SubjectIsOwner"
 
 Ниже приводится пример разрешения роли с условием.
 
@@ -64,7 +64,7 @@ ms.locfileid: "49874286"
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "@Subject.objectId Any_of @Resource.owners"
+            "condition":  "$SubjectIsOwner"
         }
     ]
 

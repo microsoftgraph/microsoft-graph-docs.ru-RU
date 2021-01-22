@@ -1,24 +1,24 @@
 ---
-title: Создание Акцесспаккажересаурцерекуест
-description: Создание нового Акцесспаккажересаурцерекуест.
+title: Создание accessPackageResourceRequest
+description: Создайте новый accessPackageResourceRequest.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32725d510dba93e5db80c2b91a6f6ded020593df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e7ea15dbe0ec63e539246851ce853b83c40229aa
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951762"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934541"
 ---
-# <a name="create-accesspackageresourcerequest"></a>Создание Акцесспаккажересаурцерекуест
+# <a name="create-accesspackageresourcerequest"></a>Создание accessPackageResourceRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый объект [акцесспаккажересаурцерекуест](../resources/accesspackageresourcerequest.md) , чтобы запросить Добавление ресурса в каталог пакетов Access.
+Создайте новый [объект accessPackageResourceRequest,](../resources/accesspackageresourcerequest.md) чтобы запросить добавление ресурса в каталог пакетов доступа или удаление ресурса из каталога.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,14 +47,16 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [акцесспаккажересаурцерекуест](../resources/accesspackageresourcerequest.md) в формате JSON. Включение `accessPackageResource` связи с объектом [акцесспаккажересаурце](../resources/accesspackageresource.md) в составе запроса.
+В теле запроса укажу представление объекта [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в JSON. `accessPackageResource`Включайте связь с [объектом accessPackageResource](../resources/accesspackageresource.md) как часть запроса.
 
-Чтобы добавить группу Azure AD в качестве ресурса в каталог, значение свойства **оригинсистем** в параметре `accessPackageResource` должно иметь значение **Аадграуп** , а значение **оригинид** — идентификатор группы.
+Чтобы добавить группу Azure AD в качестве ресурса в каталог, задайте **catalogId** в качестве ИД каталога, **requestType** — в качестве `AdminAdd` `accessPackageResource` ресурса. Значением свойства **originSystem** внутри должно быть, а `accessPackageResource` `AadGroup` **значением originId** является идентификатор группы.
+
+Чтобы удалить приложение Azure AD из каталога, установите **catalogId** в качестве ИД каталога, **requestType** должен быть и объект ресурса, который `AdminRemove` необходимо `accessPackageResource` удалить.  Объект ресурса можно получить с помощью [списка accessPackageResources.](accesspackagecatalog-list-accesspackageresources.md)
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажересаурцерекуест](../resources/accesspackageresourcerequest.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика серии 200 и новый [объект accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

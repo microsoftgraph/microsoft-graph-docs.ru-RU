@@ -5,16 +5,18 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f7de268d3472bcef60ad77064c1c725d79174e32
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 7d1052fd3ab6a412323a8fcdc8498f399d41ea85
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844461"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934557"
 ---
 # <a name="list-apps-in-team"></a>Список приложений в команде
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получить список [приложений, установленных](../resources/teamsappinstallation.md) в указанной [команде.](../resources/team.md)
 

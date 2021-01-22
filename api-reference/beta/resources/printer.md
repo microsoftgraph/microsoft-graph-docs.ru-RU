@@ -1,64 +1,67 @@
 ---
-title: Тип ресурса Printer
-description: Представляет физическое устройство печати, зарегистрированное в универсальной службе печати. Ресурсы принтера можно использовать для управления заданиями печати, параметрами принтеров, метаданными принтера и состоянием регистрации.
+title: Тип ресурса printer
+description: Представляет физическое принтерное устройство, зарегистрированное в службе универсальной печати. Ресурсы принтера можно использовать для управления заданиями печати, настройками принтера, метаданными принтера и состоянием регистрации.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 5833dc1f37620a419153100ebf9ce6d7f141fa5d
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: fab3e933608143846555c556a215025e39666257
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617012"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934875"
 ---
-# <a name="printer-resource-type"></a>Тип ресурса Printer
+# <a name="printer-resource-type"></a>Тип ресурса printer
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет устройство принтера, зарегистрированное в универсальной службе печати. Ресурсы принтера можно использовать для управления заданиями печати, параметрами принтеров, метаданными принтера и состоянием регистрации.
+Представляет принтер, зарегистрированный в службе универсальной печати. Ресурсы принтера можно использовать для управления заданиями печати, настройками принтера, метаданными принтера и состоянием регистрации.
+
+Этот ресурс поддерживает:
+* [Подписка на уведомления об изменениях.](/graph/universal-print-webhook-notifications)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
-| [получение](../api/printer-get.md); | [Printer](printer.md) | Чтение свойств и связей объекта Printer. |
-| [Обновление](../api/printer-update.md) | [Printer](printer.md) | Обновление объекта Printer. |
-| [Удаление](../api/printer-delete.md) | Нет | Отмените регистрацию физического принтера в универсальной службе печати. |
-| [ресторефакторидефаултс](../api/printer-restorefactorydefaults.md) | Нет | Восстановите параметры принтера по умолчанию на значения, заданные производителем. |
-| [Список заданий](../api/printer-list-jobs.md) | Коллекция [printJob](printjob.md) | Получение списка заданий печати, помещенных в очередь для обработки принтером. |
-| [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового задания печати для принтера. Чтобы начать печать задания, используйте [Start](../api/printjob-start.md). |
-| [Перечисление соединителей](../api/printer-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей, с которыми связан этот принтер. |
-| [Перечисление taskTriggers](../api/printer-list-tasktriggers.md) | Нет | Список [принттасктригжерс](printtasktrigger.md) , связанных с этим принтером. |
-| [Создание taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Создание [принттасктригжер](printtasktrigger.md) , выполняемого при возникновении событий печати. |
-| [Удаление taskTrigger](../api/printer-delete-tasktrigger.md) | Нет | Удаление [принттасктригжер](printtasktrigger.md) , связанного с принтером. |
+| [Создание](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создайте (зарегистрируйте) новый принтер с помощью универсальной печати. |
+| [получение](../api/printer-get.md); | [printer](printer.md) | Чтение свойств и связей объекта принтера. |
+| [обновление](../api/printer-update.md). | [printer](printer.md) | Обновление объекта принтера. |
+| [удаление](../api/printer-delete.md); | Нет | Отостересть физического принтера от службы универсальной печати. |
+| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Нет | Восстановите параметры принтера по умолчанию до значений, указанных производителем. |
+| [Список заданий](../api/printer-list-jobs.md) | [Коллекция printJob](printjob.md) | Получите список заданий печати, которые находятся в очереди для обработки принтером. |
+| [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создайте новое задание печати для принтера. Чтобы начать печать задания, [используйте](../api/printjob-start.md)start . |
+| [Перечисление соединителей](../api/printer-list-connectors.md) | [Коллекция printConnector](printconnector.md) | Получите список соединитений, с которые связан этот принтер. |
+| [Перечисление taskTriggers](../api/printer-list-tasktriggers.md) | Нет | Список [printTaskTriggers,](printtasktrigger.md) связанных с этим принтером. |
+| [Создание taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Создайте [printTaskTrigger,](printtasktrigger.md) который запускается при событиях печати. |
+| [Удаление taskTrigger](../api/printer-delete-tasktrigger.md) | Нет | Удалите [printTaskTrigger,](printtasktrigger.md) связанный с принтером. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String|Идентификатор документа. Только для чтения.|
 |displayName|String|Имя принтера.|
-|manufacturer|String|Производитель, сообщаемый принтером.|
-|model|String|Имя модели, сообщаемое принтером.|
-|регистереддатетиме|DateTimeOffset|Значение DateTimeOffset при регистрации принтера. Только для чтения.|
-|status|[принтерстатус](printerstatus.md)|Состояние обработки принтера, включая ошибки.|
-|IsShared|Boolean|Значение true, если принтер является общим; в противном случае — false. Только для чтения.|
-|хасфисикалдевице|Boolean|Значение true, если у принтера есть физическое устройство для печати. Только для чтения.|
+|manufacturer|String|Изготовитель, о чем сообщил принтер.|
+|model|String|Имя модели, сообщаемая принтером.|
+|registeredDateTime|DateTimeOffset|DateTimeOffset при регистрации принтера. Только для чтения.|
+|status|[printerStatus](printerstatus.md)|Состояние обработки принтера, включая все ошибки.|
+|IsShared|Boolean|Имеет true, если принтер является общим; в противном случае false. Только для чтения.|
+|hasPhysicalDevice|Boolean|Имеет true, если принтер имеет физическое устройство для печати. Только для чтения.|
 |isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
-|location|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
-|defaults|[принтердефаултс](printerdefaults.md)|Параметры печати по умолчанию для принтера.|
-|capabilities|[принтеркапабилитиес](printercapabilities.md)|Возможности принтера, связанного с этим общим принтером.|
+|location|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение принтера.|
+|defaults|[printerDefaults](printerdefaults.md)|Параметры печати принтера по умолчанию.|
+|capabilities|[printerCapabilities](printercapabilities.md)|Возможности принтера, связанного с этой обоймой принтера.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|jobs|Коллекция [printJob](printjob.md)| Список заданий, помещенных в очередь на печать принтером.|
-|shares|Коллекция [принтершаре](printershare.md)| Список Принтершарес, связанных с принтером. В настоящее время с принтером может быть связан только один Принтершаре. Только для чтения. Допускается значение null.|
-|аудиовыход|[принтконнектор](printconnector.md)|Соединители, связанные с принтером.|
-|тасктригжерс|Коллекция [принттасктригжер](printtasktrigger.md)|Список триггеров задач, связанных с принтером.|
+|jobs|[Коллекция printJob](printjob.md)| Список заданий, которые находятся в очереди для печати принтером.|
+|shares|[Коллекция printerShare](printershare.md)| Список printerShares, связанных с принтером. В настоящее время с принтером может быть связан только один printerShare. Только для чтения. Допускается значение null.|
+|соединители|[printConnector](printconnector.md)|Соединители, связанные с принтером.|
+|taskTriggers|[Коллекция printTaskTrigger](printtasktrigger.md)|Список триггеров задач, связанных с принтером.|
 
 ## <a name="json-representation"></a>Представление JSON
 

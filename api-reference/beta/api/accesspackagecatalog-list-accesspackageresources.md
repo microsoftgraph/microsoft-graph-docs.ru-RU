@@ -1,24 +1,24 @@
 ---
-title: Список Акцесспаккажересаурцес
-description: Получение списка объектов акцесспаккажересаурце.
+title: Список accessPackageResources
+description: Получить список объектов accesspackageresource.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4f1fc80de9a879de24d70265cd336c8613ee41a0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3dc8d28d66f96508270101aa465079ee0ca19d70
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951933"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934550"
 ---
-# <a name="list-accesspackageresources"></a>Список Акцесспаккажересаурцес
+# <a name="list-accesspackageresources"></a>Список accessPackageResources
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [акцесспаккажересаурце](../resources/accesspackageresource.md) в [акцесспаккажекаталог](../resources/accesspackagecatalog.md).
+Получить список объектов [accessPackageResource](../resources/accesspackageresource.md) в [accessPackageCatalog.](../resources/accesspackagecatalog.md)  Чтобы запросить добавление или удаление [accessPackageResource,](../resources/accesspackageresource.md)используйте [создание accessPackageResourceRequest](accesspackageresourcerequest-post.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48951933"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажересаурце](../resources/accesspackageresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [accessPackageResource](../resources/accesspackageresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

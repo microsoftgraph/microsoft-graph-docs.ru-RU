@@ -1,45 +1,45 @@
 ---
-title: Тип ресурса Регионаландлангуажесеттингс
+title: Тип ресурса regionalAndLanguageSettings
 description: Ресурс, представляющий региональные и языковые параметры пользователей
 localization_priority: Normal
 author: jasonbro
 ms.prod: settings
 doc_type: resourcePageType
-ms.openlocfilehash: 0e6178b7d2a461365c759432d62efcffc44cfe6a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66734cba4c5d0e2997a4bfd5b70c54156821f5da
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073518"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934914"
 ---
-# <a name="regionalandlanguagesettings-resource-type"></a>Тип ресурса Регионаландлангуажесеттингс
+# <a name="regionalandlanguagesettings-resource-type"></a>Тип ресурса regionalAndLanguageSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Открытый тип, который представляет предпочтения пользователя для языков в различных контекстах, а также для региональных языковых стандартов и форматирования, которые заменяют календарь по умолчанию и форматирование даты и времени.
+Открытый тип, который представляет предпочтения пользователя для языков в различных контекстах, а также региональных стандартов и форматирования, на котором задается календарь по умолчанию, и форматирования для даты и времени.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                 | Возвращаемый тип                                                   | Описание                                                                                        |
 |:-------------------------------------------------------|:--------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [получение](../api/regionalAndLanguageSettings-get.md);       | [регионаландлангуажесеттингс](regionalAndLanguageSettings.md) | Чтение свойств объекта **регионаландлангуажесеттингс** .                                       |
-| [Обновление](../api/regionalandlanguagesettings-update.md) | [регионаландлангуажесеттингс](regionalAndLanguageSettings.md) | Обновление всех или подмножества свойств объекта **регионаландлангуажесеттингс** для пользователя. |
+| [получение](../api/regionalAndLanguageSettings-get.md);       | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Чтение свойств объекта **regionalAndLanguageSettings.**                                       |
+| [обновление](../api/regionalandlanguagesettings-update.md). | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Обновление всех или подмножества свойств объекта **regionalAndLanguageSettings** для пользователя. |
 
 ## <a name="properties"></a>Свойства
 | Свойство                   | Тип                                                  | Описание                                                                                                                                                         |
 |----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| дефаултдисплайлангуаже     | [localeInfo](localeinfo.md)                           | Предпочтительный язык пользовательского интерфейса пользователя (меню, кнопки, ленты, предупреждающие сообщения) для веб-приложений Майкрософт.<br><br>Возвращается по умолчанию. Значение null не допускается. |
-| аусоринглангуажес         | Коллекция объектов localeInfo                                 | Приоритетный список языков, в которых пользователь читает и авторы.<br><br>Возвращается по умолчанию. Значение null не допускается.                                                              |
-| дефаулттранслатионлангуаже | localeInfo                                            | Язык, на который пользователь ожидает документы, сообщения электронной почты и сообщения, преобразованные в.<br><br>Возвращается по умолчанию.                                                    |
-| дефаултспичинпутлангуаже | localeInfo                                            | Язык, который пользователь должен использовать в качестве входных данных для сценариев преобразования текста в речь.<br><br>Возвращается по умолчанию.                                                              |
-| дефаултрегионалформат      | localeInfo                                            | Языковой стандарт, который управляет форматированием даты, времени и календаря по умолчанию.<br><br>Возвращается по умолчанию.                                                                 |
-| регионалформатоверридес    | [регионалформатоверридес](regionalformatoverrides.md) | Позволяет пользователю переопределять свои Дефаултрегионалформат с использованием определенных форматов полей.<br><br>Возвращается по умолчанию.                                                      |
+| defaultDisplayLanguage     | [localeInfo](localeinfo.md)                           | Предпочитаемый пользователем язык пользовательского интерфейса (меню, кнопки, ленты, предупреждения) для веб-приложений Майкрософт.<br><br>Возвращается по умолчанию. Значение null не допускается. |
+| authoringLanguages         | Коллекция объектов localeInfo                                 | Приоритетный список языков, на которые пользователь читает и авторов.<br><br>Возвращается по умолчанию. Значение null не допускается.                                                              |
+| defaultTranslationLanguage | localeInfo                                            | Язык, на который пользователь ожидает перевода документов, сообщений электронной почты и сообщений.<br><br>Возвращается по умолчанию.                                                    |
+| defaultSpeechInputLanguage | localeInfo                                            | Язык, который пользователь должен использовать в качестве входных данных для текста в речевой сценарий.<br><br>Возвращается по умолчанию.                                                              |
+| defaultRegionalFormat      | localeInfo                                            | Региональные стандарты, которые будут управлять форматированием даты, времени и календаря по умолчанию.<br><br>Возвращается по умолчанию.                                                                 |
+| regionalFormatOverrides    | [regionalFormatOverrides](regionalformatoverrides.md) | Позволяет пользователю переопределять свой defaultRegionalFormat с помощью форматов, определенных для поля.<br><br>Возвращается по умолчанию.                                                      |
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже приведено определение ресурса в формате JSON.
+Ниже приводится определение ресурса в JSON.
 
 <!--{
   "blockType": "resource",
@@ -49,11 +49,11 @@ ms.locfileid: "48073518"
 ```json
 {
     "defaultDisplayLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
-    "authoringLanguages":[{"@odata.type":"microsoft.graph.localeInfo"}] ,
+    "authoringLanguages": [{"@odata.type":"microsoft.graph.localeInfo"}],
     "defaultTranslationLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
     "defaultSpeechInputLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
-    "defaultRegionalFormat":{"@odata.type":"microsoft.graph.localeInfo"} ,
-    "regionalFormatOverrides":{"@odata.type":"microsoft.graph.regionalFormatOverrides"}
+    "defaultRegionalFormat": {"@odata.type":"microsoft.graph.localeInfo"},
+    "regionalFormatOverrides": {"@odata.type":"microsoft.graph.regionalFormatOverrides"}
 }
 ```
 <!-- {

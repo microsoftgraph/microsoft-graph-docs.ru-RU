@@ -1,16 +1,16 @@
 ---
 title: Создание подписки
-description: Подписывает приложение прослушивателя на получение уведомлений об изменениях при изменении данных в ресурсе Microsoft Graph.
+description: Подписывает приложение прослушиватель на получение уведомлений об изменениях при изменении данных ресурса Microsoft Graph.
 localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 850d0f893678ce51e502dcdeb560f816b5ff935c
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.prod: change-notifications
+ms.openlocfilehash: 9efe9120d71f12955f1495cca954d9e873b3da35
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597433"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934564"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -22,14 +22,14 @@ ms.locfileid: "49597433"
 
 ## <a name="permissions"></a>Разрешения
 
-Для создания подписки необходимо разрешение на чтение ресурса. Например, чтобы получать уведомления об изменениях для сообщений, вашему приложению требуется разрешение mail. Read. 
+Для создания подписки требуется разрешение на чтение ресурса. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо разрешение Mail.Read. 
 
  В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается | Чаннелмессаже. Read. Group *, Чаннелмессаже. Read. ALL  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Не поддерживается | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
@@ -42,22 +42,24 @@ ms.locfileid: "49597433"
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
+|[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
-|[тодотаск](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 ### <a name="chatmessage"></a>chatMessage
 
-подписки **chatMessage** с делегированными разрешениями не поддерживают данные ресурсов (**инклудересаурцедата** должны быть `false` ) и не требуют [шифрования](/graph/webhooks-with-resource-data).
+**Подписки chatMessage** с делегными разрешениями не поддерживают данные ресурсов **(includeResourceData** должен быть) и `false` не требуют [шифрования.](/graph/webhooks-with-resource-data)
 
 Подписки **chatMessage** с разрешениями для приложений включают данные ресурса и требуют [шифрования](/graph/webhooks-with-resource-data). Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md). Перед созданием подписки **chatMessage** вы должны запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
 
 > **Примечание.** `/teams/getAllMessages` и `/chats/getAllMessages` доступны для пользователей с [требуемыми лицензиями](https://aka.ms/teams-changenotification-licenses).
+В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов оплаты дополнительных платежей в зависимости от объема данных, доступных через API.
 
-> **Примечание:** `/chats/getAllMessages` Возвращает только сообщения из чатов, принадлежащие клиенту. Если поток чата инициирован пользователем вне клиента, этот поток чата не принадлежит клиенту и не создает уведомления об изменениях.
+> **Примечание.** `/chats/getAllMessages` возвращает только сообщения из чатов, владельцем клиента. Если поток чата инициировался пользователем за пределами клиента, этот поток чата не принадлежит арендатору и не создает уведомления об изменениях.
 
 ### <a name="driveitem"></a>driveItem
 
@@ -77,7 +79,7 @@ ms.locfileid: "49597433"
 
 ### <a name="presence"></a>presence
 
-для подписок на **присутствие** требуется [Шифрование](/graph/webhooks-with-resource-data). Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md).
+**Подписки** на присутствие требуют [шифрования.](/graph/webhooks-with-resource-data) Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -95,7 +97,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Subscription](../resources/subscription.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` объект [подписки](../resources/subscription.md) в тексте отклика.
 
 Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
@@ -106,7 +108,7 @@ POST /subscriptions
 Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
 Поля `clientState` и `latestSupportedTlsVersion` необязательны.
 
-Этот запрос создает подписку на уведомления об изменениях новой почты, полученной в текущий момент, когда пользователь выполнил вход.
+Этот запрос создает подписку для уведомлений об изменениях о новых сообщениях, полученных текущим пользователем, выписав его.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -150,7 +152,7 @@ Content-type: application/json
 
 #### <a name="resources-examples"></a>Примеры ресурсов
 
-Ниже приведены допустимые значения свойства Resource.
+Ниже следующую допустимую величину свойства ресурса.
 
 | Тип ресурса | Примеры |
 |:------ |:----- |
@@ -163,10 +165,11 @@ Content-type: application/json
 |[Группы](../resources/group.md)|`groups`|
 |[Список](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Знак](../resources/presence.md)| `/communications/presences/{id}` (один пользователь) `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
-|[принттаскдефинитион](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
+|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[пользователи](../resources/user.md);|`users`|
-|[тодотаск](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
+|[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Примечание.** Любой путь, начинающийся с `me`, также можно использовать с `users/{id}` вместо `me`, чтобы указать определенного пользователя, а не текущего пользователя.
@@ -203,7 +206,7 @@ Content-length: 252
 
 ### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
-Конечная точка уведомления о подписке (указанная в свойстве **notificationUrl** ) должна иметь возможность отвечать на запрос проверки, как описано в статье [Настройка уведомлений для изменений в пользовательских данных](/graph/webhooks#notification-endpoint-validation). Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
+Конечная точка уведомлений о подписке (указанная в свойстве **notificationUrl)** должна отвечать на запрос проверки, как описано в описании в настройках уведомлений об изменениях данных [пользователя.](/graph/webhooks#notification-endpoint-validation) Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
 
 [error-response]: /graph/errors
 
