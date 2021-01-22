@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2d1c88e975f55361ee83d8ad99d31ab2caa492c5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 046610705fe4d8a2e44f5adf35b0ae7797eee383
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882768"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934634"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -32,6 +32,7 @@ API Microsoft Graph использует механизм веб-перехва�
 
 С помощью API Microsoft Graph приложение может подписаться на изменения для следующих ресурсов:
 
+- Облачная печать [printer][]
 - Облачная печать [printTaskDefinition][]
 - Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
 - Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
@@ -297,6 +298,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |[list][] | Менее 1 минуты | 5 минут |
 |[message][] | Неизвестно | Неизвестно |
 |[presence][] (предварительная версия) | Менее 10 секунд | 1 минута |
+|[printer][] | Менее 1 минуты | 5 минут |
 |[printTaskDefinition][] | Менее 1 минуты | 5 минут |
 |[todoTask][] | Менее 2 минут | 15 минут |
 |[user][] | Менее 2 минут | 15 минут |
@@ -325,5 +327,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
