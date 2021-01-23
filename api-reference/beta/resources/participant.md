@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса участника
+title: тип ресурса participant
 description: Тип участника.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7598171b4d706a639a11d425ffa409e25126dcf8
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: dc1038e80566cab0ce37eaa40b4f5c391a625824
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137150"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943726"
 ---
-# <a name="participant-resource-type"></a>Тип ресурса участника
+# <a name="participant-resource-type"></a>тип ресурса participant
 
 Пространство имен: microsoft.graph
 
@@ -24,25 +24,25 @@ ms.locfileid: "48137150"
 
 | Метод                                                 | Возвращаемый тип                                                 | Описание                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
-| [Участник списка](../api/participant-get.md)         | [participant](participant.md)                               | Получение списка объектов **участников** в вызове. |
-| [Получение участника](../api/participant-get.md)           | [participant](participant.md)                               | Чтение свойств объекта **участника** . |
+| [Список участников](../api/participant-get.md)         | [participant](participant.md)                               | Получить список **объектов-участников** в вызове. |
+| [Получение участника](../api/participant-get.md)           | [participant](participant.md)                               | Чтение свойств объекта **участника.** |
 | [Удаление участника](../api/participant-delete.md)     | Нет   | Удаление участника в вызове.                  |
-| [конфигуремиксер](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Настройка микшера звука участника.         |
-| [Приглашение](../api/participant-invite.md)                 | [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md)                         | Приглашение участника на звонок.              |
-| [Отключение звука участника](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Отключение выключения участника в вызове.                  |
-| [Отключение звука всех участников](../api/participant-muteall.md) | [commsOperation](commsoperation.md) | Отключение выключения всех участников собрания.      |
+| [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Настройте аудиомесяк участника.         |
+| [Приглашение](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                         | Приглашение участника на вызов.              |
+| [Отключение звука участника](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Отключить звук участника в вызове.                  |
+| [Отключение звука всех участников](../api/participant-muteall.md) | [commsOperation](commsoperation.md) | Отключить звук всех участников собрания.      |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип                                     | Описание                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | Строка                                   | Идентификатор участника.                                          |
-| info                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
-| исинлобби            | Boolean                                  | `true` Если участник находится в "зале ожидания".                          |
-| Автозвук              | Boolean                                  | `true` Если участник отключен (клиент или сервер выключен).    |
-| медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
-| метаданных             | Строка                                   | Большой двоичный объект данных, предоставляемый участником в списке.     |
-| recordingInfo        | [recordingInfo](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
+| id                   | String                                   | ИД участника.                                          |
+| info                 | [participantInfo](participantinfo.md)    | Сведения об участнике.                          |
+| isInLobby            | Boolean                                  | `true` если участник находится в "окле".                          |
+| isMuted              | Boolean                                  | `true` если участник отключен (клиент или сервер отключен).    |
+| mediaStreams         | [Коллекция mediaStream](mediastream.md) | Список потоков мультимедиа.                                   |
+| метаданные             | String                                   | Большой объем данных, предоставленный участником в составе.     |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | Сведения о том, есть ли у участника возможность записи. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

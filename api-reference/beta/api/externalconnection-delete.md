@@ -1,24 +1,24 @@
 ---
-title: Удаление Екстерналконнектион
-description: Удаление Екстерналконнектион.
+title: Удаление externalConnection
+description: Удаление внешнего подключения.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1b3e795c51f6ded27bb9f63706939c5a5ff1fa8b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37b46e3cd6de8a12d6a77106abbe81a8a5da090f
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965670"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943614"
 ---
-# <a name="delete-externalconnection"></a>Удаление Екстерналконнектион
+# <a name="delete-externalconnection"></a>Удаление externalConnection
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [екстерналконнектион](../resources/externalconnection.md).
+Удаление [externalConnection](../resources/externalconnection.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "48965670"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ DELETE /external/connections/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,7 +100,7 @@ DELETE https://graph.microsoft.com/beta/connections/contosohr
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

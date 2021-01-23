@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 66cf31f21a105934181aee5e506cc2215f9ce7a9
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 85bac3f22ad609b2914a4a1d36b0d09f2e3d85e2
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663913"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943677"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса teamsAppInstallation
 
@@ -27,11 +27,11 @@ ms.locfileid: "49663913"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список приложений, установленных в команде](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в команде.|
-|[Как установить приложение в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получите указанное приложение, установленное в команде.|
+|[Перечисление приложений, установленных в команде](../api/team-list-installedapps.md) | Коллекция [teamsAppInstallation](teamsappinstallation.md) | Перечисление приложений, установленных в команде.|
+|[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение указанного приложения, установленного в команде.|
 |[Добавление приложения в команду](../api/team-post-installedapps.md) |Нет | Добавление (установка) приложения в команду.|
-|[Обновление приложения, установленного в команде](../api/team-teamsappinstallation-upgrade.md) | Нет | Обновив приложение, установленное в команде, до последней версии.|
-|[Удаление приложения из группы](../api/team-delete-installedapps.md) | Нет | Удалите (удалите) приложение из команды.|
+|[Обновление приложения, установленного в команде](../api/team-teamsappinstallation-upgrade.md) | Нет | Обновление приложения, установленного в команде, до последней версии.|
+|[Удаление приложения из команды](../api/team-delete-installedapps.md) | Нет | Удаление приложения из команды.|
 |[Перечисление приложений, установленных для пользователя](../api/userteamwork-list-installedapps.md) | Коллекция [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Список приложений, установленных в личной области пользователя.|
 |[Как установить приложение для пользователя](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Получите указанное приложение, установленное в личной области пользователя. |
 |[Добавление приложения для пользователя](../api/userteamwork-post-installedapps.md) | | Добавление (установка) приложения в личной области пользователя.|
@@ -47,7 +47,7 @@ ms.locfileid: "49663913"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Уникальный ИД (а не ap-ИД команды). |
+| id                  | string   | Уникальный ИД (не ИД приложения команды). |
 
 ## <a name="relationships"></a>Связи
 

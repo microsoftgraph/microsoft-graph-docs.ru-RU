@@ -1,28 +1,28 @@
 ---
-title: Обновление Акцессревиевсчедуледефинитион
-description: Обновление существующего объекта Акцессревиевсчедуледефинитион для изменения одного или нескольких его свойств.
+title: Обновление accessReviewScheduleDefinition
+description: Обновление существующего объекта accessReviewScheduleDefinition, чтобы изменить одно или несколько его свойств.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06b69bb9e6defcbadb4694d4042fa3bb690ee0f4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 57d1be0916331e342c5d37a29daf2785afe3c644
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221788"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943597"
 ---
-# <a name="update-accessreviewscheduledefinition"></a>Обновление Акцессревиевсчедуледефинитион
+# <a name="update-accessreviewscheduledefinition"></a>Обновление accessReviewScheduleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление существующего объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) для изменения одного или нескольких его свойств.
+Обновление существующего [объекта accessReviewScheduleDefinition,](../resources/accessreviewscheduledefinition.md) чтобы изменить одно или несколько его свойств.
 
 >[!NOTE]
->Любые изменения, внесенные в Акцессревиевсчедуледефинитион, применяются только к будущим экземплярам. Не удается обновить экземпляры, запущенные в текущий момент.
->Кроме того, этот API не предназначен для обновления свойств, в том числе решений, на уровне Акцессревиевинстанце. Дополнительные сведения о экземплярах можно найти в разделе [акцессревиевинстанце](../resources/accessreviewinstance.md) .
+>Любые обновления accessReviewScheduleDefinition применяются только к будущим экземплярам. В настоящее время не удается обновить запущенные экземпляры.
+>Кроме того, этот API не предназначен для обновления свойств, включая решения, на уровне accessReviewInstance. Дополнительные сведения об [экземплярах см. в accessReviewInstance.](../resources/accessreviewinstance.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,29 +45,29 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в формате JSON.
+В теле запроса предопределение представления объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в JSON.
 
-В следующей таблице приведены свойства, принятые для обновления Акцессревиевсчедуледефинитион.
+В следующей таблице показаны свойства, принятые для обновления объекта accessReviewScheduleDefinition.
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Имя серии проверки доступа. |
-| дескриптионфорадминс | String | Контекст проверки, предоставленной администраторам. |
-| дескриптионфорревиеверс | String | Контекст проверки, предоставленной для рецензентов. |
-| параметры | [акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md) | Параметры ряда проверки доступа. Обратитесь к разделу [акцессревиевсчедулесеттингс](../resources/accessreviewscheduledefinition.md). |
-| обсужден | Коллекция [акцессревиевревиеверскопе](../resources/accessreviewreviewerscope.md)|  Определяет, кто является рецензентом. Если ничего не указано, проверка является самостоятельным обзором (пользователи, Просмотрели проверку собственного доступа). Свойство рецензентов можно обновлять только в том случае, если назначены отдельные пользователи в качестве проверяющих. Обратитесь к разделу [акцессревиевревиеверскопе](../resources/accessreviewscheduledefinition.md). | 
+| displayName | String | Название серии отзывов о доступе. |
+| descriptionForAdmins | String | Контекст проверки, предоставленной администраторам. |
+| descriptionForReviewers | String | Контекст отзыва, предоставленного рецензентам. |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии отзывов о доступе. См. [accessReviewScheduleSettings.](../resources/accessreviewscheduledefinition.md) |
+| рецензенты | [Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Определяет, кто такие рецензенты. Если ни один из них не указан, отзыв будет самообнаправлением (пользователи просмотрели свой собственный доступ). Свойство "Рецензенты" может быть только updatable, если отдельные пользователи назначены как рецензенты. См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) | 
 
-Обратите внимание, что запрос PUT ожидает, что передается весь объект, в который включаются все доступные для записи свойства, а не только обновляемые свойства.
+Обратите внимание, что запрос PUT предполагает, что будет передан весь объект, в который включаются все свойства, в которые можно вписать, а не только обновляемые свойства.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `204, Accepted` код отклика и без текста отклика.
+В случае успеха этот метод возвращает код `204, Accepted` отклика без тела отклика.
 
 ## <a name="examples"></a>Примеры
 
-Ниже приведен пример обновления displayName существующего ряда проверки доступа.
+Это пример обновления displayName существующего ряда отзывов о доступе.
 
 ### <a name="request"></a>Запрос
-В теле запроса добавьте представление новых свойств объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в формате JSON.
+В теле запроса предопределение представления новых свойств объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в JSON.
 
 
 
@@ -121,6 +121,14 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

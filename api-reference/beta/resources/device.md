@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ac468f1d561488149cd6306c52f841ffdfc915d9
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 34fc75c74d0c48edda5ca69cb4cc27bbfc78b48c
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753083"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943586"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -34,6 +34,7 @@ ms.locfileid: "49753083"
 |[Перечисление транзитивных свойств memberOf](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, в которые входит устройство. Эта операция является транзитивной. |
 |[Список экземпляров registeredOwner](../api/device-list-registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Перечисление registeredUsers](../api/device-list-registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
+|[Список usageRights](../api/device-list-usagerights.md) | [Коллекция usageRight](usageright.md) | Получите коллекцию прав на использование, предоставленных устройству.|
 |[checkMemberObjects](../api/device-checkmemberobjects.md) | Коллекция String | Проверьте членство в списке групп, ролей каталогов или объектов административных единиц. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
@@ -64,8 +65,8 @@ ms.locfileid: "49753083"
 |operatingSystemVersion|String| Версия операционной системы устройства. Обязательный параметр. |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение NULL не допускается. |
 |profileType|String|Тип профиля устройства. Возможные значения:<br />**RegisteredDevice** (по умолчанию)<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
-|systemLabels|Коллекция строк| Список меток, применяемых к устройству системой. |
-|hostNames|Коллекция строк| Список hostNames для устройства.|
+|systemLabels|Коллекция String| Список меток, применяемых к устройству системой. |
+|hostNames|Коллекция String| Список hostNames для устройства.|
 |trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: <br />**Workplace**. *Принесенные личные устройства*.<br />**AzureAd**. Устройства, присоединенные только через облако.<br />**ServerAd**. Устройства, присоединенные к Azure Active Directory через локальный домен. Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](/azure/active-directory/device-management-introduction). |
 |Имя| String | Удобное имя устройства. Возвращается, только если пользователь входит с помощью учетной записи Майкрософт в составе Project Rome. |
 |Status | String| Устройство находится в сети или автономном режиме. Возвращается, только если пользователь входит с помощью учетной записи Майкрософт в составе Project Rome. |
@@ -84,6 +85,7 @@ ms.locfileid: "49753083"
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)|Пользователи, относящиеся к зарегистрированным владельцам устройства. Только для чтения. Допускается значение null.|
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)|Зарегистрированные пользователи устройства. Только для чтения. Допускается значение null.|
 |Команды  | [коллекция команд](command.md) | Набор команд, отправленных на это устройство|
+|usageRight|[Коллекция usageRight](usageright.md)|Представляет права на использование, предоставленные устройству. |
 
 ## <a name="json-representation"></a>Представление JSON
 

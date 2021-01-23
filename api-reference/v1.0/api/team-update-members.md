@@ -1,22 +1,22 @@
 ---
-title: Обновление члена группы
-description: Обновление роли участника в команде.
+title: Обновление участника команды
+description: Обновим роль участника в команде.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f2da331041c01aa5fbfb3201f3fb656a7ee1fa24
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 10f6c314b32229d88a64d65b75b9c42c23b46a54
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387885"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49943705"
 ---
-# <a name="update-member-in-team"></a>Обновление члена группы
+# <a name="update-member-in-team"></a>Обновление участника команды
 
 Пространство имен: microsoft.graph
 
-Обновление роли [конверсатионмембер](../resources/conversationmember.md) в [команде](../resources/team.md).
+Обновление роли [conversationMember](../resources/conversationmember.md) в [команде.](../resources/team.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49387885"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)|Теаммембер. ReadWrite. ALL. |
+|Делегированные (рабочая или учебная учетная запись)|TeamMember.ReadWrite.All. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Теаммембер. ReadWrite. ALL. |
+|Приложение|TeamMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -43,22 +43,24 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укавите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пустым. Пользователи с ролью "гость" автоматически отмечаются `guest` ролью, и это значение не может быть обновлено. |
+|roles|Коллекция строк|Роль пользователя. Должен быть `owner` пустым или пустым. Гостевых пользователей автоматически помеяют `guest` ролью, и это значение нельзя обновить. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [конверсатионмембер](../resources/conversationmember.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [conversationMember](../resources/conversationmember.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен запрос на применение `owner` роли к существующему участнику команды.
+Ниже приводится запрос на применение роли `owner` к существующему участнику команды.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_member"
@@ -73,6 +75,24 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
@@ -100,7 +120,7 @@ Content-length: 475
 
 ## <a name="see-also"></a>См. также
 
-- [Обновление элемента в канале](channel-update-members.md)
+- [Обновление участника в канале](channel-update-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
