@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f97edcfa87428b29f8db76a1d50efd433c52c54b
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: f1be4221834108281bdf3e46bd3f26ee23b72d91
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683861"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945889"
 ---
 ```csharp
 
@@ -14,11 +14,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversation = new Conversation
 {
     Topic = "Does anyone have a second?",
-    Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
+    Threads = new ConversationThreadsCollectionPage()
     {
         new ConversationThread
         {
-            Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+            Posts = new ConversationThreadPostsCollectionPage()
             {
                 new Post
                 {
@@ -27,7 +27,7 @@ var conversation = new Conversation
                         ContentType = BodyType.Html,
                         Content = "This is urgent!"
                     },
-                    Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
+                    Extensions = new PostExtensionsCollectionPage()
                     {
                         new OpenTypeExtension
                         {

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8e3da77448c27cbaad80311801bc14c20b3b4ab6
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: e6a47cd9c0b646a24ec6735858713b78e856c8a5
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843634"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946044"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_Customer/languages/en')
+let res = await client.api('/identity/b2cUserFlows/B2C_1_CustomerSignUp/languages')
     .version('beta')
     .get();
 

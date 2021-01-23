@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ca8a5df5fbaa0fe351466f5b070937b576dae491
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 7c4880de667bec69b3cf0b1c4773fb9ababca18d
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782797"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946146"
 ---
 ```csharp
 
@@ -50,7 +50,7 @@ var printJob = new PrintJob
     }
 };
 
-await graphClient.Print.Shares["{id}"].Jobs
+await graphClient.Print.Printers["{id}"].Jobs
     .Request()
     .AddAsync(printJob);
 
