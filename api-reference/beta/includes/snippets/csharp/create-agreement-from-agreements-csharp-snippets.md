@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a3c840c973eb41db23b6d0da5c6799651541087e
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: e920f031cd35a5b19a8842f858a003489fd01cb3
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570092"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945981"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var agreement = new Agreement
 {
     DisplayName = "MSGraph Sample",
     IsViewingBeforeAcceptanceRequired = true,
-    Files = (IAgreementFilesCollectionPage)new List<AgreementFileLocalization>()
+    Files = new AgreementFilesCollectionPage()
     {
         new AgreementFileLocalization
         {

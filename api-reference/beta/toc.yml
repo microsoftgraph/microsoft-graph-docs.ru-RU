@@ -291,6 +291,8 @@ items:
                 href: api/user-list-registereddevices.md
               - name: Список членства администраторов в заданной области
                 href: api/user-list-scopedrolememberof.md
+              - name: Список прав пользователя на использование
+                href: api/user-list-usagerights.md
               - name: Повторное назначение лицензии
                 href: api/user-reprocesslicenseassignment.md
               - name: Отозовет сеанс регистрации
@@ -462,7 +464,7 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: Общение в чате между пользователем и приложением
                 href: api/userscopeteamsappinstallation-get-chat.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -10009,6 +10011,8 @@ items:
                     href: api/device-list-memberof.md
                   - name: Перечисление транзитивных групп устройств
                     href: api/device-list-transitivememberof.md
+                  - name: Список прав на использование устройств
+                    href: api/device-list-usagerights.md
                   - name: Проверка объектов-членов
                     href: api/device-checkmemberobjects.md
               - name: Объект каталога
@@ -12952,7 +12956,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: Перечисление
                     href: api/offershiftrequest-list.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/offershiftrequest-approve.md
                   - name: Отклонение
                     href: api/offershiftrequest-decline.md
@@ -12978,7 +12982,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/openshiftchangerequest-approve.md
                   - name: Отклонение
                     href: api/openshiftchangerequest-decline.md
@@ -12998,7 +13002,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/swapshiftschangerequest-approve.md
                   - name: Отклонение
                     href: api/swapshiftschangerequest-decline.md
@@ -13035,7 +13039,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/timeoffrequest-approve.md
                   - name: Отклонение
                     href: api/timeoffrequest-decline.md

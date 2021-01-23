@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3aa41a0da7bd7dbc8804389da83abee627e29bce
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 85f632dc112012f5d06f63f632a874d0b0ee584c
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684698"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945724"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var synchronizationSchema = new SynchronizationSchema
 {
-    Directories = (ISynchronizationSchemaDirectoriesCollectionPage)new List<DirectoryDefinition>()
+    Directories = new SynchronizationSchemaDirectoriesCollectionPage()
     {
         new DirectoryDefinition
         {
