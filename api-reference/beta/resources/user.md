@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 88b86c72ea96194f24112d2b349ca284252c103f
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: cef167704f72222900be256614eddc96404bd4c8
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934812"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943712"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -76,6 +76,7 @@ ms.locfileid: "49934812"
 | [Список ownedObjects](../api/user-list-ownedobjects.md) | Коллекция [directoryObject](directoryobject.md) | Получение объектов каталога, принадлежащих пользователю, из свойства навигации ownedObjects. |
 | [Список registeredDevices](../api/user-list-registereddevices.md) | Коллекция [directoryObject](directoryobject.md) | Получение устройств, зарегистрированных для пользователя, из свойства навигации registeredDevices. |
 | [Перечисление участий с ролью в заданной области](../api/user-list-scopedrolememberof.md) | Коллекция [scopedRoleMembership](scopedrolemembership.md) | Получение участий пользователя в административных единицах с ролью в заданной области. |
+| [Список usageRights](../api/user-list-usagerights.md) | Коллекция [usageRight](usageright.md) | Получение коллекции прав использования, предоставленных пользователю. |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Переработка назначенных подписок для пользователя. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | Нет | Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяет метод **invalidateAllRefreshTokens**. |
 | **Drive** |||
@@ -314,6 +315,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |параметры|[userSettings](usersettings.md) | Только для чтения. Допускается значение null.|
 |teamwork|[userTeamwork](userteamwork.md)| Контейнер для функций Microsoft Teams, доступных пользователю. Только для чтения. Допускается значение null.|
 |todo|[todo](todo.md)|Представляет службы To Do, доступные пользователю. |
+|usageRight|Коллекция [usageRight](usageright.md)|Представляет права использования, предоставленные пользователю. |
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Пользовательские настройки языков и региональных форматов
 Ресурс **user** содержит свойство [mailboxSettings](../resources/mailboxsettings.md), включающее предпочитаемый язык пользователя, формат даты и времени, стандартный часовой пояс, и другие специальные параметры для основного почтового ящика Exchange. Эти настройки предназначены для почтовых клиентов и доступны только в том случае, если для пользователя подготовлен почтовый ящик. Вы можете использовать свойство **mailboxSettings**, если ваш сценарий предназначен только для почты, календаря, контактов и задач Outlook.
