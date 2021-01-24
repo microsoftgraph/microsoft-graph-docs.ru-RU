@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 082efd396a1d26d8054339c82840dfb1fbea52a5
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 1dda6312de4dbda9a4e7afdefa28ff5e7dd3d02f
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582200"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934620"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Работа с пользователями в Microsoft Graph
 
@@ -36,7 +36,7 @@ ms.locfileid: "48582200"
 
 ## <a name="common-properties"></a>Общие свойства
 
-Ниже показан набор свойств, используемый по умолчанию и возвращаемый при получении пользователя или выводе списка пользователей. Это подмножество всех доступных свойств. Чтобы получить дополнительные свойства пользователя, используйте параметр запроса `$select`.
+Ниже показан набор свойств, используемый по умолчанию и возвращаемый при получении пользователя или выводе списка пользователей. Это подмножество всех доступных свойств. Чтобы получить дополнительные свойства пользователя, используйте параметр запроса `$select`. Узнайте, [Как использовать параметр поискового запроса $select ](/graph/query-parameters#select-parameter) и каковы [Свойства, поддерживающие параметр $select поискового запроса](../resources/user.md#properties).
 
 |Свойство |Описание |
 |:----------|:-------------|

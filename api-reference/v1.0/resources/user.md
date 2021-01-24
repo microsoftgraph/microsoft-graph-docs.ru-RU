@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c2dc2a0882e54dc9172e1a4420dafbcf67edece2
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: 03b0b359a462e946fa4ceeacfd034c34c826493e
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768240"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934627"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -167,7 +167,7 @@ ms.locfileid: "49768240"
 |lastPasswordChangeDateTime| DateTimeOffset | Время последнего изменения своего пароля пользователем Azure AD. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z"|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |licenseAssignmentStates|Коллекция [licenseAssignmentState](licenseassignmentstate.md)|Состояние назначений лицензий для пользователя. Только для чтения.|
-|mail|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Поддерживает `$filter`.|
+|mail|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Поддерживает `$filter` и `endsWith`.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения.|
 |mailNickname|String|Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает `$filter`.|
 |mobilePhone|String|Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Возвращается по умолчанию. |
@@ -202,7 +202,7 @@ ms.locfileid: "49768240"
 |streetAddress|String|Почтовый адрес места работы пользователя.|
 |surname|String|Фамилия пользователя. Возвращается по умолчанию. Поддерживает `$filter`.|
 |usageLocation|String|Двухбуквенный код страны (по стандарту ISO 3166). Необходим для пользователей, которым будут назначены лицензии, в связи с законодательным требованием проверять доступность служб в разных странах.  Примеры: "RU", "JP", "GB". Значение null не допускается. Поддерживает `$filter`.|
-|userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). <br><br>Возвращается по умолчанию. Поддерживает `$filter` и `$orderby`.
+|userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). <br><br>Возвращается по умолчанию. Поддерживает `$filter`, `$orderby` и `endsWith`.
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает `$filter`.          |
 
 ### <a name="legal-age-group-property-definitions"></a>Определения свойств юридических возрастных групп
