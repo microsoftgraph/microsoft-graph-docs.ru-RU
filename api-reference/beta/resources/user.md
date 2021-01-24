@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 1b92206d280d1a834ec543388d72b2a3431ece0a
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: 88b86c72ea96194f24112d2b349ca284252c103f
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664158"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934812"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -135,7 +135,7 @@ ms.locfileid: "49664158"
 | **Расширения схемы** |||
 | [Добавление значений расширений для схемы](/graph/extensibility-schema-groups) | Нет | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных. |
 | **Командная работа** |||
-|[Список приложений, установленных для пользователя](../api/userteamwork-list-installedapps.md) | Коллекция [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Список приложений, установленных в личной области пользователя.|
+|[Перечисление приложений, установленных для пользователя](../api/userteamwork-list-installedapps.md) | Коллекция [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Список приложений, установленных в личной области пользователя.|
 |[Получение приложения, установленного для пользователя](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Список указанных приложений, установленных в личной области пользователя. |
 |[Добавление приложения для пользователя](../api/userteamwork-post-installedapps.md) | Нет | Добавление (установка) приложения в личную область пользователя.|
 |[Удаление приложения для пользователя](../api/userteamwork-delete-installedapps.md) | Нет | Удаление приложения из личной области пользователя.|
@@ -193,7 +193,7 @@ ms.locfileid: "49664158"
 | lastPasswordChangeDateTime | DateTimeOffset | Время последнего изменения своего пароля пользователем Azure AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается только с помощью оператора `$select`. |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`. |
 | licenseAssignmentStates | Коллекция [licenseAssignmentState](licenseassignmentstate.md) | Состояние назначений лицензий для пользователя. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
-| mail | String | SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Поддерживает `$filter`. |
+| mail | String | SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Поддерживает `$filter` и `endsWith`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика вошедшего пользователя. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения. <br><br>Возвращается только с помощью оператора `$select`. |
 | mailNickname | String | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 | mobilePhone | String | Основной сотовый телефон пользователя. <br><br>Возвращается по умолчанию. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. |
@@ -230,7 +230,7 @@ ms.locfileid: "49664158"
 | streetAddress | String | Почтовый адрес места работы пользователя. <br><br>Возвращается только с помощью оператора `$select`.|
 | surname | String | Фамилия пользователя. <br><br>Возвращается по умолчанию. Поддерживает `$filter`. |
 | usageLocation | String | Двухбуквенный код страны (по стандарту ISO 3166). Необходим для пользователей, которым будут назначены лицензии, в связи с законодательным требованием проверять доступность служб в разных странах.  Примеры: "RU", "JP", "GB". Значение null не допускается. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`.|
-| userPrincipalName | String | Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). <br><br>Возвращается по умолчанию. Поддерживает `$filter` и `$orderby`.
+| userPrincipalName | String | Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). <br><br>Возвращается по умолчанию. Поддерживает `$filter`, `$orderby` и `endsWith`.
 | userType | String | Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 
 ### <a name="legal-age-group-property-definitions"></a>Определения свойств юридических возрастных групп
