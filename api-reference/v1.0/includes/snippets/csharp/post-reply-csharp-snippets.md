@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a28be0b1b45edbd411075589e70742545641877a
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4c308d664e6488a66616d6a522af50a4366a869b
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684132"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945017"
 ---
 ```csharp
 
@@ -60,7 +60,7 @@ var post = new Post
     InReplyTo = new Post
     {
     },
-    Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+    Attachments = new PostAttachmentsCollectionPage()
     {
         new Attachment
         {
