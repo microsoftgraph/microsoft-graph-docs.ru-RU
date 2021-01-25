@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d96861e673e96cbee81ca3d3e1d927067618bfbf
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 959585428800d12046f382b1f1358c35349790a8
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844447"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934788"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -27,7 +27,7 @@ ms.locfileid: "49844447"
 |[Перечисление приложений](../api/application-list.md) | Коллекция [application](application.md) | Получение списка приложений в организации. |
 |[Создание приложения](../api/application-post-applications.md) | [application](application.md) | Создает (регистрирует) новое приложение.|
 |[Получение приложения](../api/application-get.md) | [application](application.md) |Считывание свойств и связей объекта application.|
-|[Обновление приложения](../api/application-update.md) | [application](application.md) |Обновление объекта application. |
+|[Обновление приложения](../api/application-update.md) | Нет |Обновление объекта application. |
 |[Удаление приложения](../api/application-delete.md) | Нет |Удаление объекта application. |
 |[Получение дельты](../api/application-delta.md)|[application](application.md)|Создавайте, обновляйте или удаляйте приложения без необходимости чтения всей коллекции ресурсов.|
 |[Список удаленных приложений](../api/directory-deleteditems-list.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка недавно удаленных приложений. |
@@ -81,7 +81,7 @@ ms.locfileid: "49844447"
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения. |
 | passwordCredentials | Коллекция [passwordCredential](passwordcredential.md)|Коллекция учетных данных паролей, связанных с приложением. Значение null не допускается.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
-| publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения.|
+| publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения. Дополнительные сведения см. в статье [Практическое руководство. Настройка домена издателя приложения](/azure/active-directory/develop/howto-configure-publisher-domain).|
 | requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)|Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор областей разрешений OAuth и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Значение null не допускается.|
 | signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>`AzureADMyOrg` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (один клиент).</li><li>`AzureADMultipleOrgs` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (несколько клиентов).</li><li>`AzureADandPersonalMicrosoftAccount` — пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации.</li><li>`PersonalMicrosoftAccount` — пользователи только с личной учетной записью Майкрософт.</li></ul>Для проверки подлинности пользователей с помощью пользовательских потоков Azure AD B2C используйте `AzureADandPersonalMicrosoftAccount`. Это значение позволяет использовать самый широкий набор удостоверений пользователей, включая локальные учетные записи и удостоверения пользователей из Microsoft, Facebook, Google, Twitter или любого поставщика OpenID Connect. |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.|
