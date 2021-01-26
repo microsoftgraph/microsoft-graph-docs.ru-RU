@@ -3,34 +3,34 @@ title: Тип ресурса office365GroupsActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 6c67de6592d32c15e7d64112ce9ac31b6a5d4c41
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a212028e4ba9d38ea38e99c835d89fe1fe7d850b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092428"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980698"
 ---
-# <a name="office365groupsactivitycounts-resource-type"></a><span data-ttu-id="c6de1-103">Тип ресурса office365GroupsActivityCounts</span><span class="sxs-lookup"><span data-stu-id="c6de1-103">office365GroupsActivityCounts resource type</span></span>
+# <a name="office365groupsactivitycounts-resource-type"></a><span data-ttu-id="66ec0-103">Тип ресурса office365GroupsActivityCounts</span><span class="sxs-lookup"><span data-stu-id="66ec0-103">office365GroupsActivityCounts resource type</span></span>
 
-<span data-ttu-id="c6de1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c6de1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="66ec0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66ec0-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c6de1-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="c6de1-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="66ec0-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="66ec0-105">Properties</span></span>
 
-| <span data-ttu-id="c6de1-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="c6de1-106">Property</span></span>               | <span data-ttu-id="c6de1-107">Тип</span><span class="sxs-lookup"><span data-stu-id="c6de1-107">Type</span></span>   | <span data-ttu-id="c6de1-108">Описание</span><span class="sxs-lookup"><span data-stu-id="c6de1-108">Description</span></span>                              |
+| <span data-ttu-id="66ec0-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="66ec0-106">Property</span></span>               | <span data-ttu-id="66ec0-107">Тип</span><span class="sxs-lookup"><span data-stu-id="66ec0-107">Type</span></span>   | <span data-ttu-id="66ec0-108">Описание</span><span class="sxs-lookup"><span data-stu-id="66ec0-108">Description</span></span>                              |
 | :--------------------- | :----- | ---------------------------------------- |
-| <span data-ttu-id="c6de1-109">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="c6de1-109">reportRefreshDate</span></span>      | <span data-ttu-id="c6de1-110">Дата</span><span class="sxs-lookup"><span data-stu-id="c6de1-110">Date</span></span>   | <span data-ttu-id="c6de1-111">Самая поздняя дата контента.</span><span class="sxs-lookup"><span data-stu-id="c6de1-111">The latest date of the content.</span></span>          |
-| <span data-ttu-id="c6de1-112">ексчанжеемаилсрецеивед</span><span class="sxs-lookup"><span data-stu-id="c6de1-112">exchangeEmailsReceived</span></span> | <span data-ttu-id="c6de1-113">Int64</span><span class="sxs-lookup"><span data-stu-id="c6de1-113">Int64</span></span>  | <span data-ttu-id="c6de1-114">Количество сообщений электронной почты, получаемых групповой почтовыми ящиками.</span><span class="sxs-lookup"><span data-stu-id="c6de1-114">The number of emails received by Group mailboxes.</span></span> |
-| <span data-ttu-id="c6de1-115">яммермессажеспостед</span><span class="sxs-lookup"><span data-stu-id="c6de1-115">yammerMessagesPosted</span></span>   | <span data-ttu-id="c6de1-116">Int64</span><span class="sxs-lookup"><span data-stu-id="c6de1-116">Int64</span></span>  | <span data-ttu-id="c6de1-117">Количество сообщений, отправленных в группы Yammer.</span><span class="sxs-lookup"><span data-stu-id="c6de1-117">The number of messages posted to Yammer groups.</span></span> |
-| <span data-ttu-id="c6de1-118">яммермессажесреад</span><span class="sxs-lookup"><span data-stu-id="c6de1-118">yammerMessagesRead</span></span>     | <span data-ttu-id="c6de1-119">Int64</span><span class="sxs-lookup"><span data-stu-id="c6de1-119">Int64</span></span>  | <span data-ttu-id="c6de1-120">Количество сообщений, прочитанных в группах Yammer.</span><span class="sxs-lookup"><span data-stu-id="c6de1-120">The number of messages read in Yammer groups.</span></span> |
-| <span data-ttu-id="c6de1-121">яммермессажесликед</span><span class="sxs-lookup"><span data-stu-id="c6de1-121">yammerMessagesLiked</span></span>    | <span data-ttu-id="c6de1-122">Int64</span><span class="sxs-lookup"><span data-stu-id="c6de1-122">Int64</span></span>  | <span data-ttu-id="c6de1-123">Количество сообщений, которые понравилось в группах Yammer.</span><span class="sxs-lookup"><span data-stu-id="c6de1-123">The number of messages liked in Yammer groups.</span></span> |
-| <span data-ttu-id="c6de1-124">reportDate</span><span class="sxs-lookup"><span data-stu-id="c6de1-124">reportDate</span></span>             | <span data-ttu-id="c6de1-125">Дата</span><span class="sxs-lookup"><span data-stu-id="c6de1-125">Date</span></span>   | <span data-ttu-id="c6de1-126">Дата, когда в группу Yammer было отправлено, прочитано или понравилось количество сообщений электронной почты для почтового ящика группы или сообщений.</span><span class="sxs-lookup"><span data-stu-id="c6de1-126">The date on which a number of emails were sent to a group mailbox or a number of messages were posted, read, or liked in a Yammer group</span></span> |
-| <span data-ttu-id="c6de1-127">репортпериод</span><span class="sxs-lookup"><span data-stu-id="c6de1-127">reportPeriod</span></span>           | <span data-ttu-id="c6de1-128">Строка</span><span class="sxs-lookup"><span data-stu-id="c6de1-128">String</span></span> | <span data-ttu-id="c6de1-129">Количество дней, охватываемых отчетом.</span><span class="sxs-lookup"><span data-stu-id="c6de1-129">The number of days the report covers.</span></span>    |
+| <span data-ttu-id="66ec0-109">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="66ec0-109">reportRefreshDate</span></span>      | <span data-ttu-id="66ec0-110">Дата</span><span class="sxs-lookup"><span data-stu-id="66ec0-110">Date</span></span>   | <span data-ttu-id="66ec0-111">Последняя дата содержимого.</span><span class="sxs-lookup"><span data-stu-id="66ec0-111">The latest date of the content.</span></span>          |
+| <span data-ttu-id="66ec0-112">exchangeEmailsReceived</span><span class="sxs-lookup"><span data-stu-id="66ec0-112">exchangeEmailsReceived</span></span> | <span data-ttu-id="66ec0-113">Int64</span><span class="sxs-lookup"><span data-stu-id="66ec0-113">Int64</span></span>  | <span data-ttu-id="66ec0-114">Количество сообщений электронной почты, полученных почтовыми ящиками группы.</span><span class="sxs-lookup"><span data-stu-id="66ec0-114">The number of emails received by Group mailboxes.</span></span> |
+| <span data-ttu-id="66ec0-115">yammerMessagesPosted</span><span class="sxs-lookup"><span data-stu-id="66ec0-115">yammerMessagesPosted</span></span>   | <span data-ttu-id="66ec0-116">Int64</span><span class="sxs-lookup"><span data-stu-id="66ec0-116">Int64</span></span>  | <span data-ttu-id="66ec0-117">Количество сообщений, которые были опубликованы в группах Yammer.</span><span class="sxs-lookup"><span data-stu-id="66ec0-117">The number of messages posted to Yammer groups.</span></span> |
+| <span data-ttu-id="66ec0-118">yammerMessagesRead</span><span class="sxs-lookup"><span data-stu-id="66ec0-118">yammerMessagesRead</span></span>     | <span data-ttu-id="66ec0-119">Int64</span><span class="sxs-lookup"><span data-stu-id="66ec0-119">Int64</span></span>  | <span data-ttu-id="66ec0-120">Количество сообщений, прочитано в группах Yammer.</span><span class="sxs-lookup"><span data-stu-id="66ec0-120">The number of messages read in Yammer groups.</span></span> |
+| <span data-ttu-id="66ec0-121">yammerMessagesИмбл</span><span class="sxs-lookup"><span data-stu-id="66ec0-121">yammerMessagesLiked</span></span>    | <span data-ttu-id="66ec0-122">Int64</span><span class="sxs-lookup"><span data-stu-id="66ec0-122">Int64</span></span>  | <span data-ttu-id="66ec0-123">Количество сообщений, которые нравится в группах Yammer.</span><span class="sxs-lookup"><span data-stu-id="66ec0-123">The number of messages liked in Yammer groups.</span></span> |
+| <span data-ttu-id="66ec0-124">reportDate</span><span class="sxs-lookup"><span data-stu-id="66ec0-124">reportDate</span></span>             | <span data-ttu-id="66ec0-125">Дата</span><span class="sxs-lookup"><span data-stu-id="66ec0-125">Date</span></span>   | <span data-ttu-id="66ec0-126">Дата отправки, чтения или отправки сообщений в почтовом ящике группы в группе Yammer</span><span class="sxs-lookup"><span data-stu-id="66ec0-126">The date on which a number of emails were sent to a group mailbox or a number of messages were posted, read, or liked in a Yammer group</span></span> |
+| <span data-ttu-id="66ec0-127">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="66ec0-127">reportPeriod</span></span>           | <span data-ttu-id="66ec0-128">String</span><span class="sxs-lookup"><span data-stu-id="66ec0-128">String</span></span> | <span data-ttu-id="66ec0-129">Количество дней в отчете.</span><span class="sxs-lookup"><span data-stu-id="66ec0-129">The number of days the report covers.</span></span>    |
 
-## <a name="json-representation"></a><span data-ttu-id="c6de1-130">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c6de1-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="66ec0-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="66ec0-130">JSON representation</span></span>
 
-<span data-ttu-id="c6de1-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c6de1-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="66ec0-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="66ec0-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
