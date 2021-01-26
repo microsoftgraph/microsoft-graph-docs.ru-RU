@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 1e1eb885803d90fca401a6cd4dee6ef3d6a865e0
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: aa4aae66003525efe359ea26238b2ecca3bc192b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844419"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982252"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Вы можете использовать параметр `$filter` запроса в свойстве **mentionsPreview,** чтобы получить сообщения, в которых упоминается во время выполнения действия пользователя.
+Параметр запроса можно `$filter` использовать в свойстве **mentionsPreview** для получения сообщений, в которых упоминается во время выполнения действия пользователя.
 
 ### <a name="using-filter-and-orderby-in-the-same-query"></a>Использование операторов filter и orderby в одном запросе
 При использовании операторов `$filter` и `$orderby` в одном запросе на получение сообщений необходимо указать свойства, соблюдая указанные ниже условия.
@@ -96,7 +96,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` объектов [сообщений](../resources/message.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [сообщений](../resources/message.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
@@ -174,7 +174,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Microsoft Azure",
-                    "address": "azure-noreply@microsoft.com"
+                    "address": "azure-noreply@contoso.com"
                 }
             }
         },
@@ -185,7 +185,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -196,7 +196,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -207,7 +207,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -218,7 +218,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -230,7 +230,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         }
@@ -294,8 +294,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
@@ -310,8 +310,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{

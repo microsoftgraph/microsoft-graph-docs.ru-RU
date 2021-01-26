@@ -3,14 +3,14 @@ title: Тип ресурса office365GroupsActivityFileCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: c887ecb526d9c4215c1d8586bcbcb799c9e2c476
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f4f26e141dc25e1e5e249ad116bc9a988274f18
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092407"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981503"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>Тип ресурса office365GroupsActivityFileCounts
 
@@ -20,13 +20,13 @@ ms.locfileid: "48092407"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| репортрефрешдате | Дата   | Самая поздняя дата контента.          |
+| reportRefreshDate | Дата   | Последняя дата содержимого.          |
 | total             | Int64  | Общее количество файлов в библиотеке документов SharePoint группы. |
-| ASP            | Int64  | Количество файлов, которые были просмотрены, изменены, предоставлены в общий доступ или синхронизированы в библиотеке документов SharePoint группы. |
-| reportDate        | Дата   | Дата, когда число файлов было активно на сайте SharePoint группы. |
-| репортпериод      | Строка | Количество дней, охватываемых отчетом.    |
+| active            | Int64  | Количество файлов, которые просматривались, редактируются, совместно или синхронизированы в библиотеке документов SharePoint группы. |
+| reportDate        | Дата   | Дата, когда на сайте SharePoint группы было активно несколько файлов. |
+| reportPeriod      | String | Количество дней в отчете.    |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

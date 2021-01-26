@@ -1,22 +1,22 @@
 ---
 title: Работа с отчетами об использовании Microsoft 365 в Microsoft Graph
-description: Microsoft Graph позволяет получить доступ к отчетам Microsoft 365 и узнать, как сотрудники компании используют службы Microsoft 365. Например, можно выяснить, кто слишком активно использует службы и практически выбрал квоты, а кому лицензия Microsoft 365, возможно, и вовсе не нужна.
+description: Microsoft Graph позволяет получить доступ к отчетам об использовании Microsoft 365 и узнать, как сотрудники компании используют службы Microsoft 365. Например, можно выяснить, кто слишком активно использует службы и практически выбрал квоты, а кому лицензия Microsoft 365, возможно, и вовсе не нужна.
 localization_priority: Priority
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 0bb97d2682518950011f62824ae2be3cb7239100
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6916d1000dabe7165e47b7a5178b98ce833f02dc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026376"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982504"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Microsoft 365 в Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph позволяет получить доступ к отчетам Microsoft 365 и узнать, как сотрудники компании используют службы Microsoft 365. Например, можно выяснить, кто слишком активно использует службы и практически выбрал квоты, а кому лицензия Microsoft 365, возможно, и вовсе не нужна.
+Microsoft Graph позволяет получить доступ к отчетам об использовании Microsoft 365 и узнать, как сотрудники компании используют службы Microsoft 365. Например, можно выяснить, кто слишком активно использует службы и практически выбрал квоты, а кому лицензия Microsoft 365, возможно, и вовсе не нужна.
 
 ## <a name="authorization"></a>Authorization
 
@@ -55,7 +55,7 @@ Microsoft Graph позволяет управлять доступом к рес
 Ресурсы и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Чтобы узнать больше:
 
 - Изучите подробнее методы и свойства ресурсов, наиболее полезных для вашего сценария.
-- Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 

@@ -3,14 +3,14 @@ title: Тип ресурса office365GroupsActivityGroupCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: c249123a01cde2fe952f5111affe645415ddc6cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad2610f5cbd3aae56651a0a5651e4ee4319b3bb2
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092386"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981496"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>Тип ресурса office365GroupsActivityGroupCounts
 
@@ -20,13 +20,13 @@ ms.locfileid: "48092386"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| репортрефрешдате | Дата   | Самая поздняя дата контента.          |
+| reportRefreshDate | Дата   | Последняя дата содержимого.          |
 | total             | Int64  | Общее количество групп.              |
-| ASP            | Int64  | Количество активных групп. Группа считается активной при возникновении любой из следующих условий: группового почтового ящика получено сообщение электронной почты; Пользователи, которые просматривали, редактирующие, совместно используемые или синхронизированные файлы в библиотеке документов SharePoint; страницы SharePoint, просмотренные пользователями; Разнесенные, прочитанные или понравившиеся сообщения пользователя в группах Yammer. |
-| reportDate        | Дата   | Дата активности ряда групп. |
-| репортпериод      | Строка | Количество дней, охватываемых отчетом.    |
+| active            | Int64  | Количество активных групп. Группа считается активной при любом из следующих действий: почтовый ящик группы, полученный по электронной почте; просматриваются, редактируются, совместно или синхронизируются файлы в библиотеке документов SharePoint; просматривались пользователем страницы SharePoint; пользователи опубликовали, прочитали или понравились сообщения в группах Yammer. |
+| reportDate        | Дата   | Дата, когда было активно несколько групп. |
+| reportPeriod      | String | Количество дней в отчете.    |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

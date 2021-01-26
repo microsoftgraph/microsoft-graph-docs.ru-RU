@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: f73529df562d0fc7bd0e0c5432371b5591701e0b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 9c7f71249f47f9027afc8e7495e8d133a9f74885
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872759"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981720"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>Обновление cloudPcOnPremisesConnection
 
@@ -29,8 +29,8 @@ ms.locfileid: "49872759"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,7 +51,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса предоставляем представление объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в JSON.
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 |displayName|String|Отображаемого имени для локального подключения.|
 |subscriptionId|String|ИД целевой подписки Azure, связанной с клиентом.|
 |adDomainName|String|Полное доменное имя домена Active Directory, к нему нужно присоединиться.|
-|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: contoso@microsoft.com.|
+|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: username@contoso.com.|
 |adDomainPassword|String|Пароль, связанный с adDomainUsername.|
 |resourceGroupId|String|ИД целевой группы ресурсов. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|ИД целевой виртуальной сети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|

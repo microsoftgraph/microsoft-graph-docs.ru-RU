@@ -3,14 +3,14 @@ title: Тип ресурса office365GroupsActivityStorage
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 0b14e6981a193ad1698303d2762d0321de430b73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ac9ca260e4723f7c4aeca8e15f837d4cd57b7c4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092393"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982182"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>Тип ресурса office365GroupsActivityStorage
 
@@ -20,13 +20,13 @@ ms.locfileid: "48092393"
 
 | Свойство                  | Тип   | Описание                              |
 | :------------------------ | :----- | ---------------------------------------- |
-| репортрефрешдате         | Дата   | Самая поздняя дата контента.          |
-| маилбокссторажеусединбитес | Int64  | Хранилище, используемое в почтовом ящике группы.       |
-| ситесторажеусединбитес    | Int64  | Хранилище, используемое в библиотеке документов SharePoint. |
-| reportDate                | Дата   | Дата моментального снимка хранилища для Exchange и SharePoint. |
-| репортпериод              | Строка | Количество дней, охватываемых отчетом.    |
+| reportRefreshDate         | Дата   | Последняя дата содержимого.          |
+| mailboxStorageUsedInBytes | Int64  | Хранилище, используемого в почтовом ящике группы.       |
+| siteStorageUsedInBytes    | Int64  | Хранилище, используемого в библиотеке документов SharePoint. |
+| reportDate                | Дата   | Моментальный снимок используемого хранилища Exchange и SharePoint. |
+| reportPeriod              | String | Количество дней в отчете.    |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

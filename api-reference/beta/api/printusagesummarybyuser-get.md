@@ -1,35 +1,35 @@
 ---
-title: Получение Принтусажесуммарибюсер
-description: Получение сводки об использовании пользователя за определенный период времени.
+title: Получение printUsageSummaryByUser
+description: Извлечение сводки об использовании пользователя за определенный период времени.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7c7ec996054461b2b2eeb201656c018a5796d5bc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: d4051b0c9a660bfe89125b402598dae418cc5871
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848789"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982266"
 ---
-# <a name="get-printusagesummarybyuser"></a>Получение Принтусажесуммарибюсер
+# <a name="get-printusagesummarybyuser"></a>Получение printUsageSummaryByUser
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение сводки об использовании пользователя за определенный период времени. Описание каждой из этих конечных точек представлено в документации по [принтусажесуммарибюсер](../resources/printUsageSummaryByUser.md) .
+Получить сводку об использовании пользователя за определенный период времени. Описание каждой из конечных точек см. в документации [printUsageSummaryByUser.](../resources/printUsageSummaryByUser.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице.
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,10 +48,10 @@ GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтусажесуммарибюсер](../resources/printusagesummarybyuser.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -77,7 +77,7 @@ Content-length: 251
 
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "userPrincipalName": "username@microsoft.com",
+  "userPrincipalName": "username@contoso.com",
   "usageDate": "2020-02-04T00:00:00.0000000Z",
   "completedBlackAndWhiteJobCount": 42,
   "completedColorJobCount": 0,

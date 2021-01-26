@@ -3,14 +3,14 @@ title: Отчеты об участии в конференциях Skype для
 description: Эти отчеты позволяют получить подробные сведения об участии сотрудников организации в конференциях Skype для бизнеса. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 468a413d7ecc678eddf568a86250ea23a2c6ec63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f27942e93ee92a1eb6c1c39ec24b376a8d2ecb2f
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970567"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980635"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Отчеты об участии в конференциях Skype для бизнеса
 
@@ -18,7 +18,7 @@ ms.locfileid: "47970567"
 
 Эти отчеты позволяют получить подробные сведения об участии сотрудников организации в конференциях Skype для бизнеса. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
 
-> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports: действие участника конференции в Skype для бизнеса](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
+> **Примечание.** For details about different report views and names, see [Microsoft 365 reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
 
 ## <a name="reports"></a>Отчеты
 

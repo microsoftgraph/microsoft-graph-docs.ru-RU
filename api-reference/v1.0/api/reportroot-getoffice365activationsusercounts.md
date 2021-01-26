@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: Получите число включенных пользователей, которые активировали подписку на Office на настольных компьютерах, устройствах или общих компьютерах.
+description: Получите количество включенных пользователей и пользователей, активировав подписку Office на настольных компьютерах, устройствах или общих компьютерах.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: ba3beb5bb6ee7412d3fc976c503ad7b351248d38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 07f3583aacdd246b0514d60d866d177765e6bd21
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086944"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982063"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
 Пространство имен: microsoft.graph
 
-Получите число включенных пользователей, которые активировали подписку на Office на настольных компьютерах, устройствах или общих компьютерах.
+Получите количество включенных пользователей и пользователей, активировав подписку Office на настольных компьютерах, устройствах или общих компьютерах.
 
-> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports — активации Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в отчетах [Microsoft 365 Microsoft Office активации.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
 
 ## <a name="permissions"></a>Разрешения
 

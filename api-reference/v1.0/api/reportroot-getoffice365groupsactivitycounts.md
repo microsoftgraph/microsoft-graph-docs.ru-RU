@@ -3,14 +3,14 @@ title: 'reportRoot: getOffice365GroupsActivityCounts'
 description: Узнайте, сколько различных действий было в группах.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 771c9eb636668e2860ccd56d83e469857e1f8d8d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f91f1822ae4423855e7928dcf232c6230898eb09
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086846"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982014"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "48086846"
 
 Узнайте, сколько различных действий было в группах.
 
-> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье microsoft 365 Reports — microsoft 365 Groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 — группы Microsoft 365.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ GET /reports/getOffice365GroupsActivityCounts(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -70,7 +70,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Yammer Messages Read (прочитано сообщений в Yammer)
 - Yammer Messages Liked (понравилось сообщений в Yammer)
 - Report Date (дата отчета)
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 

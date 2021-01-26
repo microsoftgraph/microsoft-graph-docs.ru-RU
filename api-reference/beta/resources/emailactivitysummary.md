@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Емаилактивитисуммари
+title: Тип ресурса emailActivitySummary
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 78853954ef7c6fe4a191cbccefca350e628db210
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b3bb1d05c57874497d536de332f85b462335b5d
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989593"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981874"
 ---
-# <a name="emailactivitysummary-resource-type"></a>Тип ресурса Емаилактивитисуммари
+# <a name="emailactivitysummary-resource-type"></a>Тип ресурса emailActivitySummary
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,12 @@ ms.locfileid: "47989593"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| send              | Int64  |
-| получил           | Int64  |
+| reportRefreshDate | Дата   |
+| Отправить              | Int64  |
+| receive           | Int64  |
 | read              | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Список monthlyPrintUsageSummariesByUser
-description: Получение списка ежемесячных сводок использования печати, сгруппированных по пользователям.
+description: Получить список ежемесячных сводок по использованию печати, сгруппных по пользователю.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 15ab27af3bf70522f3d53ab06bc61b1079b40538
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e9ddbcb6980e90e9d66fa9f62af1b1125a9c1596
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971495"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982756"
 ---
 # <a name="list-monthlyprintusagesummariesbyuser"></a>Список monthlyPrintUsageSummariesByUser
 
@@ -18,18 +18,18 @@ ms.locfileid: "48971495"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка ежемесячных сводок использования печати, сгруппированных по пользователям.
+Получить список ежемесячных сводок по использованию печати, сгруппных по пользователю.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку универсальной печати.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /print/reports/monthlyPrintUsageSummariesByUser
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтусажесуммарибюсер](../resources/printusagesummarybyuser.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -98,7 +98,7 @@ Content-length: 268
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "userPrincipalName": "username@microsoft.com",
+      "userPrincipalName": "username@contoso.com",
       "usageDate": "2020-02-04T00:00:00.0000000Z",
       "completedBlackAndWhiteJobCount": 42,
       "completedColorJobCount": 0,

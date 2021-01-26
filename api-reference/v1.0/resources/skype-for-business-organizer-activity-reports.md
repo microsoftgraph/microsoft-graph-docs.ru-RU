@@ -3,14 +3,14 @@ title: Отчеты об организации конференций Skype д�
 description: Эти отчеты позволяют получить подробные сведения об организации конференций Skype для бизнеса. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 1f41172ec42feeb222315737fdbe05e899dc4fb0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 060c33f6755af32ec0ae9138403e9cc2350a3836
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970616"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980908"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Отчеты об организации конференций Skype для бизнеса
 
@@ -18,7 +18,7 @@ ms.locfileid: "47970616"
 
 Эти отчеты позволяют получить подробные сведения об организации конференций Skype для бизнеса. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
 
-> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports-действия для конференц-связи Skype для бизнеса](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254).
+> **Примечание.** For details about different report views and names, see [Microsoft 365 reports - Skype for Business conference organizer activity](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254).
 
 ## <a name="reports"></a>Отчеты
 

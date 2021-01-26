@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Емаилаппусажеусердетаил
+title: Тип ресурса emailAppUsageUserDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8365e856ee1b34b15b1aea3369b6cc22f99991e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb6dded6e7c86644191f1d941900050813b84594
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081680"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981818"
 ---
-# <a name="emailappusageuserdetail-resource-type"></a>Тип ресурса Емаилаппусажеусердетаил
+# <a name="emailappusageuserdetail-resource-type"></a>Тип ресурса emailAppUsageUserDetail
 
 Пространство имен: microsoft.graph
 
@@ -20,24 +20,24 @@ ms.locfileid: "48081680"
 
 | Свойство          | Тип              |
 | :---------------- | :---------------- |
-| репортрефрешдате | Дата              |
+| reportRefreshDate | Дата              |
 | userPrincipalName | String            |
-| displayName       | Строка            |
+| displayName       | String            |
 | isDeleted         | Boolean           |
-| делетеддате       | Дата              |
-| ластактивитидате  | Дата              |
-| маилформак        | Коллекция String |
-| аутлукформак     | Коллекция String |
-| аутлукфорвиндовс | Коллекция String |
-| аутлукформобиле  | Коллекция String |
-| осерформобиле    | Коллекция String |
-| аутлукфорвеб     | Коллекция String |
+| deletedDate       | Дата              |
+| lastActivityDate  | Дата              |
+| mailForMac        | Коллекция String |
+| outlookForMac     | Коллекция String |
+| outlookForWindows | Коллекция String |
+| outlookForMobile  | Коллекция String |
+| otherForMobile    | Коллекция String |
+| outlookForWeb     | Коллекция String |
 | pop3App           | Коллекция String |
 | imap4App          | Коллекция String |
-| смтпапп           | Коллекция String |
-| репортпериод      | Строка            |
+| smtpApp           | Коллекция String |
+| reportPeriod      | String            |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

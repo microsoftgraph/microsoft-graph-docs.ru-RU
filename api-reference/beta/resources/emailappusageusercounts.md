@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Емаилаппусажеусеркаунтс
+title: Тип ресурса emailAppUsageUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 29f8e9b4ae1a559415bcd826aa1507836492d99a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5630b239f9fb8d887e857993268a45c9d0e0d3b4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979443"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981839"
 ---
-# <a name="emailappusageusercounts-resource-type"></a>Тип ресурса Емаилаппусажеусеркаунтс
+# <a name="emailappusageusercounts-resource-type"></a>Тип ресурса emailAppUsageUserCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,18 +20,18 @@ ms.locfileid: "47979443"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| маилформак        | Int64  |
-| аутлукформак     | Int64  |
-| аутлукфорвиндовс | Int64  |
-| аутлукформобиле  | Int64  |
-| осерформобиле    | Int64  |
-| аутлукфорвеб     | Int64  |
+| reportRefreshDate | Дата   |
+| mailForMac        | Int64  |
+| outlookForMac     | Int64  |
+| outlookForWindows | Int64  |
+| outlookForMobile  | Int64  |
+| otherForMobile    | Int64  |
+| outlookForWeb     | Int64  |
 | pop3App           | Int64  |
 | imap4App          | Int64  |
-| смтпапп           | Int64  |
+| smtpApp           | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

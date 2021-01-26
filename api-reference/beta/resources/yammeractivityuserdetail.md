@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Яммерактивитюсердетаил
+title: Тип ресурса yammerActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: eb17035f0d062d55a3607dd30f31459b79b8400c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 749076f407b49ff4fd408a095312ac49ea008bc1
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971372"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982399"
 ---
-# <a name="yammeractivityuserdetail-resource-type"></a>Тип ресурса Яммерактивитюсердетаил
+# <a name="yammeractivityuserdetail-resource-type"></a>Тип ресурса yammerActivityUserDetail
 
 Пространство имен: microsoft.graph
 
@@ -20,17 +20,17 @@ ms.locfileid: "47971372"
 
 | Свойство          | Тип              |
 | :---------------- | :---------------- |
-| репортрефрешдате | Дата              |
+| reportRefreshDate | Дата              |
 | userPrincipalName | String            |
 | displayName       | String            |
 | userState         | String            |
-| статечанжедате   | Дата              |
-| ластактивитидате  | Дата              |
-| постедкаунт       | Int64             |
-| реадкаунт         | Int64             |
-| ликедкаунт        | Int64             |
-| ассигнедпродуктс  | Коллекция String |
-| репортпериод      | String            |
+| stateChangeDate   | Дата              |
+| lastActivityDate  | Дата              |
+| postedCount       | Int64             |
+| readCount         | Int64             |
+| likedCount        | Int64             |
+| assignedProducts  | Коллекция String |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

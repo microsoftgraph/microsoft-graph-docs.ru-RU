@@ -3,14 +3,14 @@ title: Отчеты об использовании OneDrive
 description: Отчеты об использовании OneDrive позволяют оценить пользу от OneDrive, просматривая общее количество используемых файлов и общий объем используемого хранилища для всех учетных записей OneDrive в организации. Вы также можете получить детализированные сведения для понимания того, каковы тенденции активных учетных записей OneDrive, с каким количеством файлов пользователи работали, какой объем хранилища используется. В этих отчетах также можно просматривать сведения с разбивкой по учетным записям OneDrive.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 63aede8ac57f277070a90599d625479c18ddbdab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22ed2e491bb8ed2631968d35490ca902fce93e4b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970679"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980992"
 ---
 # <a name="onedrive-usage-reports"></a>Отчеты об использовании OneDrive
 
@@ -18,7 +18,7 @@ ms.locfileid: "47970679"
 
 Отчеты об использовании OneDrive позволяют оценить пользу от OneDrive, просматривая общее количество используемых файлов и общий объем используемого хранилища для всех учетных записей OneDrive в организации. Вы также можете получить детализированные сведения для понимания того, каковы тенденции активных учетных записей OneDrive, с каким количеством файлов пользователи работали, какой объем хранилища используется. В этих отчетах также можно просматривать сведения с разбивкой по учетным записям OneDrive.
 
-> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports: использование OneDrive для бизнеса](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании OneDrive для бизнеса.](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)
 
 ## <a name="reports"></a>Отчеты
 

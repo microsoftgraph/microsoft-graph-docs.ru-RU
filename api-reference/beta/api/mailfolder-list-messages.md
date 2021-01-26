@@ -1,16 +1,16 @@
 ---
 title: Список сообщений
-description: Список всех сообщений в почтовом ящике вошедшего пользователя или сообщений в указанной папке почтового ящика или диска.
+description: Список всех сообщений в почтовом ящике пользователя, выписав его, или этих сообщений в указанной папке в почтовом ящике или на диске.
 localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d62aaf947b4119d10f8eeeb7150143cbd4f064a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7eb0f95433c23c58fbed93e514c493bcfb438059
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979292"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983008"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -18,7 +18,7 @@ ms.locfileid: "48979292"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех сообщений в почтовом ящике указанного пользователя или сообщений в указанной папке почтового ящика.
+Список всех сообщений в почтовом ящике указанного пользователя или этих сообщений в указанной папке в почтовом ящике.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48979292"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -129,20 +129,20 @@ Content-length: 317
       "sender": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "from": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "toRecipients": [
           {
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "MeganB@M365x214355.onmicrosoft.com"
+                  "address": "MeganB@contoso.com"
               }
           }
       ],

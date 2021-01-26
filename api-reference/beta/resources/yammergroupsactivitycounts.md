@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Яммерграупсактивитикаунтс
+title: Тип ресурса yammerGroupsActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 828997f6bc89d23d63ab997418f6b3e8d48d1f83
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b7a4cd14f7fb4d9d2d06f8c37d5ed0ffe0e7e37
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046065"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982350"
 ---
-# <a name="yammergroupsactivitycounts-resource-type"></a>Тип ресурса Яммерграупсактивитикаунтс
+# <a name="yammergroupsactivitycounts-resource-type"></a>Тип ресурса yammerGroupsActivityCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,12 @@ ms.locfileid: "48046065"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| метк             | Int64  |
-| размещен            | Int64  |
+| reportRefreshDate | Дата   |
+| liked             | Int64  |
+| posted            | Int64  |
 | read              | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | Строка |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -3,14 +3,14 @@ title: Отчеты об использовании устройств Microsoft
 description: С помощью отчетов об использовании устройств Microsoft Teams можно анализировать использование устройств Microsoft Teams в организации.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 50975066eae30206de3bf65e4b8e9cbf2d373d41
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3045455bb16bacdc42f139bd9e760b048b227893
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083045"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981111"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Отчеты об использовании устройств Microsoft Teams
 

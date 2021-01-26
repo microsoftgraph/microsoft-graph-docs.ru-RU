@@ -3,14 +3,14 @@ title: 'reportRoot: getMailboxUsageQuotaStatusMailboxCounts'
 description: Узнайте, сколько почтовых ящиков пользователей в каждой категории квоты.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 70b03f2580a9a734f46851a0cc3577be17db69eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1fbfd26e233620a07d3888984adeb6914d2d267
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086979"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982077"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
@@ -47,7 +47,7 @@ GET /reports/getMailboxUsageQuotaStatusMailboxCounts(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -71,7 +71,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Send/Receive Prohibited (отправка и получение запрещены)
 - Indeterminate (не определено)
 - Report Date (дата отчета)
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 

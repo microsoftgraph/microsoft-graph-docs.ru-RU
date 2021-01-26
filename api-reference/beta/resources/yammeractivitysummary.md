@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Яммерактивитисуммари
+title: Тип ресурса yammerActivitySummary
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: eb582887e27af068b456b2fcf87971b2cdcf23d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ad57e163d99cf162dbdf0a0c86206a139f0773d
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979212"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982406"
 ---
-# <a name="yammeractivitysummary-resource-type"></a>Тип ресурса Яммерактивитисуммари
+# <a name="yammeractivitysummary-resource-type"></a>Тип ресурса yammerActivitySummary
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,12 @@ ms.locfileid: "47979212"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| метк             | Int64  |
-| размещен            | Int64  |
+| reportRefreshDate | Дата   |
+| liked             | Int64  |
+| posted            | Int64  |
 | read              | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

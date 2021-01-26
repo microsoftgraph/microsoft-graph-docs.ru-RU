@@ -1,16 +1,16 @@
 ---
 title: Отчеты об использовании приложений Microsoft 365
-description: Используйте отчеты об использовании приложений Microsoft 365 для получения ценных сведений об использовании приложений Microsoft 365 в вашей организации.
+description: Используйте отчеты об использовании приложений Microsoft 365, чтобы получить представление об использовании приложений Microsoft 365 в вашей организации.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 78a7e374d0fb90b644199b83dc71abd3b701a897
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f78ec598fb2a0eedea34b2da5b0ef1aa2e4b459f
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021366"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981524"
 ---
 # <a name="microsoft-365-apps-usage-reports"></a>Отчеты об использовании приложений Microsoft 365
 
@@ -18,14 +18,14 @@ ms.locfileid: "48021366"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте отчеты об использовании приложений Microsoft 365 для получения ценных сведений об использовании приложений Microsoft 365 в вашей организации.
+Используйте отчеты об использовании приложений Microsoft 365, чтобы получить представление об использовании приложений Microsoft 365 в вашей организации.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                                        | Возвращаемый тип                                    | Описание                                                |
 | :---------------------------------------------------------------------------- | :--------------------------------------------- | :--------------------------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getm365appuserdetail.md)                  | [report](../resources/intune-shared-report.md) | Получение сведений об использовании приложений Microsoft 365 пользователем. |
-| [Получение количества пользователей](../api/reportroot-getm365appusercounts.md)                  | [report](../resources/intune-shared-report.md) | Получение числа ежедневных уникальных пользователей по приложению.               |
-| [Получение числа пользователей платформы](../api/reportroot-getm365appplatformusercounts.md) | [report](../resources/intune-shared-report.md) | Получение числа ежедневных уникальных пользователей по платформе.          |
+| [Получение сведений о пользователях](../api/reportroot-getm365appuserdetail.md)                  | [report](../resources/intune-shared-report.md) | Получите сведения об использовании приложений Microsoft 365 для пользователей. |
+| [Получение количества пользователей](../api/reportroot-getm365appusercounts.md)                  | [report](../resources/intune-shared-report.md) | Получите количество уникальных пользователей в день по приложению.               |
+| [Получить количество пользователей платформы](../api/reportroot-getm365appplatformusercounts.md) | [report](../resources/intune-shared-report.md) | Получите количество уникальных пользователей в день по платформе.          |
 
 
