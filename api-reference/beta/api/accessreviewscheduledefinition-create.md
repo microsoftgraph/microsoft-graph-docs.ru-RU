@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 041ac8c7c7b0a3e597ebcf68be00d65eaabec41b
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0a3b9d7f9f4513bb92d7f5ba2de66a83fee8e233
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753593"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981188"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -26,7 +26,7 @@ ms.locfileid: "49753593"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.ReadWrite.All |
 
@@ -55,7 +55,7 @@ POST /identityGovernance/accessReviews/definitions
   descriptionForReviewers | string | Контекст отзыва, предоставленного рецензентам. Обязательный. |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, проверяемую в группе. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) Обязательный.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп это определяет область проверки групп. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) | 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии отзывов о доступе. Здесь определяется повторение. См. [accessReviewScheduleSettings.](../resources/accessreviewscheduledefinition.md) |
+| параметры | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии отзывов о доступе. Здесь определяется повторение. См. [accessReviewScheduleSettings.](../resources/accessreviewscheduledefinition.md) |
 | рецензенты | [Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Определяет, кто такие рецензенты. Если ни один из них не указан, отзыв будет самообссвешенным (пользователи просмотрели свой собственный доступ). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
 
 
@@ -158,7 +158,7 @@ Content-type: application/json
     "createdBy": {
         "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@microsoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
         "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",

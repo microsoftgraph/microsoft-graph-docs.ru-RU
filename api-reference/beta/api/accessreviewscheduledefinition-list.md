@@ -1,29 +1,29 @@
 ---
-title: Список Акцессревиевсчедуледефинитионс
-description: Получение объектов Акцессревиевсчедуледефинитион.
+title: Список accessReviewScheduleDefinitions
+description: Извлечение объектов accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 187f60bbae38f5392c8facbf3e832f3b1f42dceb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 71eaf61e43a145b809da34854fc33975eb459c81
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214219"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981006"
 ---
-# <a name="list-accessreviewscheduledefinition"></a>Список Акцессревиевсчедуледефинитион
+# <a name="list-accessreviewscheduledefinition"></a>Список accessReviewScheduleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объектов [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) . Возвращается список из нуля или более объектов Акцессревиевсчедуледефинитион, включая все вложенные свойства для каждой созданной серии проверки доступа. Это не относится к связанным Акцессревиевинстанцес.
+[Извлечение объектов accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Для каждого созданного ряда проверки доступа возвращается список объектов accessReviewScheduleDefinition, включая все их вложенные свойства. Это не включает связанные accessReviewInstances.
 
 >[!NOTE]
->Если возвращается множество **акцессревиевсчедуледефинитионс** , чтобы повысить эффективность и избежать истечения времени ожидания, извлеките набор результатов на страницы, включив в него как параметр запроса $Top, который содержит не более 100, и параметр запроса $Skip = 0 в запросе. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с помощью свойства @odata. nextLink в ответе, который содержит URL-адрес следующей страницы результатов. При наличии этого свойства Продолжайте делать дополнительные запросы с URL-адресом @odata. nextLink в каждом ответе до тех пор, пока не будут возвращены все результаты, как описано в разделе разбиение данных Microsoft Graph в приложении.
+>Если возвращается большое количество **accessReviewScheduleDefinitions,** для повышения эффективности и предотвращения времени выполнения, извлекать набор результатов на страницах, включив в запрос как параметр запроса $top с размером страницы не более 100, так и параметр $skip=0 запроса. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу со свойством @odata.nextLink в отклике, содержа содержам URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в разгонах данных Microsoft Graph в приложении.
 >
->Если не указано ни одного параметра запроса и число результатов превышает 100, Microsoft Graph автоматически разбивать результаты на страницы 100 на каждой странице.
+>Если параметры запроса не заданы и имеется более 100 результатов, Microsoft Graph автоматически размещает результаты по 100 результатов на страницу.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -31,11 +31,11 @@ ms.locfileid: "49214219"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- Вошедшего в систему пользователя также должен находиться в роли каталога, который позволяет им читать проверку доступа.
+ Во входе пользователя также должна быть роль каталога, которая позволяет им прочитать проверку доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,14 +46,14 @@ GET /identityGovernance/accessReviews/definitions
 Нет.
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса.
+Не укажив тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и массив объектов [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и массив объектов `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на получение всех рядов проверки доступа в клиенте.
+В следующем примере показан запрос на извлечение всех серии отзывов о доступе в клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -110,7 +110,7 @@ Content-type: application/json
             "createdBy": {
                 "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             },
             "scope": {
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
@@ -162,7 +162,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Получение Акцессревиевсчедуледефинитион](accessreviewscheduledefinition-get.md)
+- [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 
 
 <!--

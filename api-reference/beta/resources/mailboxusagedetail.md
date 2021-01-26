@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Маилбоксусажедетаил
+title: Тип ресурса mailboxUsageDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bea72f49f1cefc7874d9a5aa7e92e7dcd7caaa71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b3eb643f74129d481b379d72515dbffaafd336c
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055234"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980761"
 ---
-# <a name="mailboxusagedetail-resource-type"></a>Тип ресурса Маилбоксусажедетаил
+# <a name="mailboxusagedetail-resource-type"></a>Тип ресурса mailboxUsageDetail
 
 Пространство имен: microsoft.graph
 
@@ -20,23 +20,23 @@ ms.locfileid: "48055234"
 
 | Свойство                        | Тип    |
 | :------------------------------ | :------ |
-| репортрефрешдате               | Дата    |
+| reportRefreshDate               | Дата    |
 | userPrincipalName               | String  |
 | displayName                     | String  |
 | isDeleted                       | Boolean |
-| делетеддате                     | Дата    |
+| deletedDate                     | Дата    |
 | createdDate                     | Дата    |
-| ластактивитидате                | Дата    |
+| lastActivityDate                | Дата    |
 | itemCount                       | Int64   |
-| сторажеусединбитес              | Int64   |
-| делетедитемкаунт                | Int64   |
-| делетедитемсизеинбитес          | Int64   |
-| иссуеварнингкуотаинбитес        | Int64   |
-| прохибитсендкуотаинбитес        | Int64   |
-| прохибитсендрецеивекуотаинбитес | Int64   |
-| репортпериод                    | String  |
+| storageUsedInBytes              | Int64   |
+| deletedItemCount                | Int64   |
+| deletedItemSizeInBytes          | Int64   |
+| issueWarningQuotaInBytes        | Int64   |
+| prohibitSendQuotaInBytes        | Int64   |
+| prohibitSendReceiveQuotaInBytes | Int64   |
+| reportPeriod                    | String  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

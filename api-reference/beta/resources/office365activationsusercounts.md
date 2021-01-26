@@ -3,14 +3,14 @@ title: Тип ресурса office365ActivationsUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 21e18b35dc4e4ff639087617d679ae1583516026
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6b97aa8b74ad51158c151e9d3723ea5d1ef191b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021226"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980754"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>Тип ресурса office365ActivationsUserCounts
 
@@ -20,11 +20,11 @@ ms.locfileid: "48021226"
 
 | Свойство                 | Тип   | Описание                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| репортрефрешдате        | Дата   | Самая поздняя дата контента.          |
-| продукттипе              | String | Тип продукта, например "Microsoft 365 профессиональный плюс" или "клиент Project". |
-| ей                 | Int64  | Количество пользователей, которым назначена лицензия на продукт. |
-| активной                | Int64  | Количество пользователей, которые активировали продукт. |
-| шаредкомпутерактиватион | Int64  | Количество пользователей, которые использовали продукт на общем компьютере. |
+| reportRefreshDate        | Дата   | Последняя дата содержимого.          |
+| productType              | String | Тип продукта, такой как "Microsoft 365 профессиональныйplus" или "Project Client". |
+| assigned                 | Int64  | Количество пользователей, которые были назначены лицензии на продукт. |
+| activated                | Int64  | Количество пользователей, активировавших продукт. |
+| sharedComputerActivation | Int64  | Количество пользователей, которые использовали продукт на общем компьютере. |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserDetail'
-description: Получение сведений о пользователях, которые активировали Microsoft 365.
+description: Получите сведения о пользователях, активировавших Microsoft 365.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 758bad37777b55c3a611f3c949cc5d96c3c953d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 54332a7206435996d31470904ded5b4d4f3d08cf
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067708"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981335"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
@@ -18,9 +18,9 @@ ms.locfileid: "48067708"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение сведений о пользователях, которые активировали Microsoft 365.
+Получите сведения о пользователях, активировавших Microsoft 365.
 
-> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports — активации Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в отчетах [Microsoft 365 Microsoft Office активации.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,7 +44,7 @@ GET /reports/getOffice365ActivationsUserDetail
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип выходных данных по умолчанию — Text/CSV. Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип выходных данных по умолчанию — text/csv. Однако если требуется указать тип выходных данных, можно использовать параметр запроса OData $format text/csv или application/json.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -72,11 +72,11 @@ CSV-файл содержит столбцы со следующими заго�
 - Windows 10 Mobile
 - iOS
 - Android
-- Активирован на общем компьютере
+- Активация на общем компьютере
 
 ### <a name="json"></a>JSON
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[office365ActivationsUserDetail](../resources/office365activationsuserdetail.md)** в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` **[office365ActivationsUserDetail](../resources/office365activationsuserdetail.md)** в тексте отклика.
 
 Размер страницы по умолчанию для этого запроса составляет 200 элементов.
 
@@ -84,7 +84,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="csv"></a>CSV
 
-Ниже приведен пример выходных данных CSV.
+Ниже приводится пример вывода CSV-данных.
 
 #### <a name="request"></a>Запрос
 
@@ -130,7 +130,7 @@ Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated
 
 ### <a name="json"></a>JSON
 
-Ниже приведен пример, в котором возвращается JSON.
+Ниже приводится пример, который возвращает JSON.
 
 #### <a name="request"></a>Запрос
 
@@ -180,7 +180,7 @@ Content-Length: 400
           "windows10Mobile": 0, 
           "ios": 0, 
           "android": 2,
-          "activatedOnSharedComputer": true
+          "activatedOnSharedComputer": true
         }
       ]
     }

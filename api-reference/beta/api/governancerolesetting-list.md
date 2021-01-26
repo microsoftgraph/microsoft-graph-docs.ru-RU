@@ -1,24 +1,24 @@
 ---
-title: Список Говернанцеролесеттингс
-description: Получение коллекции Говернанцеролесеттингс для ресурса.
+title: Список governanceRoleSettings
+description: Извлечение коллекции governanceRoleSettings для ресурса.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 98a0fc77edb074b16a8665c2c0f0f8701b4cc99d
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: e4469debdaaa2d6d18fdef6630f3987ba4b2bbab
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634972"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981349"
 ---
-# <a name="list-governancerolesettings"></a>Список Говернанцеролесеттингс
+# <a name="list-governancerolesettings"></a>Список governanceRoleSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции [говернанцеролесеттингс](../resources/governancerolesetting.md) для ресурса.
+Извлечение коллекции [governanceRoleSettings для](../resources/governancerolesetting.md) ресурса.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -28,26 +28,26 @@ ms.locfileid: "48634972"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азурересаурцес |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азуреадграупс |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | PrivilegedAccess.Read.AzureADGroups |
 
-Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.
+Помимо области разрешений, этот API требует, чтобы у запрашивателя было по крайней мере одно назначение роли для ресурса.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,11 +65,11 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [говернанцеролесеттинг](../resources/governancerolesetting.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-В этом примере показано, как администратор Перечисляет параметры роли для ресурса компания Wingtip Toys — произ. 
+В этом примере показано, как администратор перечисляет параметры роли для ресурса Wingtip Toys - Prod. 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
@@ -99,7 +99,7 @@ Content-length: 463
             "roleDefinitionId": "5b8bea96-e9f6-4c63-a8e9-fb092c79f0a1",
             "isDefault": false,
             "lastUpdatedDateTime": "2018-03-26T21:21:43.113Z",
-            "lastUpdatedBy": "Vishal Seri",
+            "lastUpdatedBy": "Alex Wilber",
             "adminEligibleSettings": [
                 {
                     "ruleIdentifier": "ExpirationRule",
@@ -136,7 +136,7 @@ Content-length: 463
                 },
                 {
                     "ruleIdentifier": "ApprovalRule",
-                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Vishal Seri\",\"Email\":\"viseri@fimdev.net\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"viseri\",\"Email\":\"viseri@microsoft.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
+                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
                 }
             ]
         },
@@ -146,7 +146,7 @@ Content-length: 463
             "roleDefinitionId": "688de08e-66d4-4efe-b234-1cf476a603b9",
             "isDefault": false,
             "lastUpdatedDateTime": "2017-12-07T18:12:43.417Z",
-            "lastUpdatedBy": "Debashis Choudhury",
+            "lastUpdatedBy": "Allan Deyoung",
             "adminEligibleSettings": [
                 {
                     "ruleIdentifier": "ExpirationRule",
@@ -183,7 +183,7 @@ Content-length: 463
                 },
                 {
                     "ruleIdentifier": "ApprovalRule",
-                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"c178dfee-7236-44b5-a363-e15fc63d91f0\",\"Type\":\"User\",\"DisplayName\":\"Debashis Choudhury\",\"Email\":\"debac@fimdev.net\"}],\"BusinessFlowId\":\"fa7d0b98-ed15-47cd-b3e2-aa6bd3e6533a\"}"
+                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"c178dfee-7236-44b5-a363-e15fc63d91f0\",\"Type\":\"User\",\"DisplayName\":\"Allan Deyoung\",\"Email\":\"AllanD@contoso.com\"}],\"BusinessFlowId\":\"fa7d0b98-ed15-47cd-b3e2-aa6bd3e6533a\"}"
                 }
             ]
         },

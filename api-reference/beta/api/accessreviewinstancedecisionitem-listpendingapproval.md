@@ -1,39 +1,39 @@
 ---
-title: Список ожидающих утверждения АкцессревиевинстанцедеЦисионитем
-description: Получение объектов АкцессревиевинстанцедеЦисионитем, ожидающих утверждения вызывающим пользователем.
+title: Список accessReviewInstanceDecisionItem, ожидающих утверждения
+description: Извлеките объекты accessReviewInstanceDecisionItem, ожидающих утверждения вызываемой пользователем.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ecb6412dd0944e226f8b0bc27fdb571dca5cbe4f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 22c47613ef2017ee226d55cac08df68d718686bd
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221939"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981090"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Список ожидающих утверждения АкцессревиевинстанцедеЦисионитемс
+# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Список accessReviewInstanceDecisionItems, ожидающих утверждения
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объектов [акцессревиевинстанцедеЦисионитем](../resources/accessreviewinstance.md) для определенных [акцессревиевинстанце](../resources/accessreviewscheduledefinition.md) , ожидающих утверждения вызывающим пользователем. Возвращается список из нуля или более объектов АкцессревиевинстанцедеЦисионитем, включая все вложенные свойства.
+Извлеките [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) для определенного [accessReviewInstance,](../resources/accessreviewscheduledefinition.md) ожидающих утверждения вызываемой пользователем. Возвращается список объектов accessReviewInstanceDecisionItem, включая все их вложенные свойства.
 
 >[!NOTE]
->Если возвращается множество **акцессревиевинстанцедеЦисионитемс** , чтобы повысить эффективность и избежать истечения времени ожидания, извлеките набор результатов на страницы, включив в него как параметр запроса $Top, который содержит не более 100, и параметр запроса $Skip = 0 в запросе. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с помощью свойства @odata. nextLink в ответе, который содержит URL-адрес следующей страницы результатов. При наличии этого свойства Продолжайте делать дополнительные запросы с URL-адресом @odata. nextLink в каждом ответе до тех пор, пока не будут возвращены все результаты, как описано в разделе разбиение данных Microsoft Graph в приложении.
+>Если возвращается много **параметров accessReviewInstanceDecisionItems,** для повышения эффективности и предотвращения временивых выходов извлеките набор результатов на страницах, включив в запрос как параметр $top с размером страницы не более 100, так и параметр $skip=0 запроса. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу со свойством @odata.nextLink в отклике, содержа содержам URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в разгонах данных Microsoft Graph в приложении.
 >
->Если не указано ни одного параметра запроса и число результатов превышает 100, Microsoft Graph автоматически разбивать результаты на страницы 100 на каждой странице.
+>Если параметры запроса не заданы и имеется более 100 результатов, Microsoft Graph автоматически размещает результаты по 100 результатов на страницу.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 
-Кроме того, вошедшего в систему пользователя будут отображаться только те решения, которым назначен проверяющий в инстанце'с Акцессревиевсчедуледефинитион.
+Во входе пользователя также будут видеть только те решения, которым они назначены рецензенту, в accessReviewScheduleDefinition экземпляра этого решения.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,14 +44,14 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 Нет.
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса.
+Не укажив тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и массив объектов [акцессревиевинстанцедеЦисионитем](../resources/accessreviewinstance.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и массив объектов `200 OK` [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на получение всех решений для экземпляра проверки доступа, ожидающей утверждения вызывающего пользователя.
+В следующем примере показан запрос на извлечение всех решений по экземпляру проверки доступа, ожидающих утверждения вызываемого пользователя.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,7 +122,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "7eae986b-d425-48b2-adf2-3c777f6256f3",
                 "userDisplayName": "Adele Vance",
-                "userPrincipalName": "AdeleV@microsoft.com"
+                "userPrincipalName": "AdeleV@contoso.com"
             }
         },
         {
@@ -148,7 +148,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "userDisplayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             }
         }
     ]
@@ -157,8 +157,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Получение Акцессревиевсчедуледефинитион](accessreviewscheduledefinition-get.md)
-- [Получение Акцессревиевинстанце](accessreviewinstance-get.md)
+- [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Get accessReviewInstance](accessreviewinstance-get.md)
 
 
 <!--

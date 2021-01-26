@@ -1,37 +1,37 @@
 ---
-title: Получение Акцессревиевсчедуледефинитион
-description: Получение объекта Акцессревиевсчедуледефинитион.
+title: Get accessReviewScheduleDefinition
+description: Извлечение объекта accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 76a79a1d8282641bc7a59b2e8a5945e7458a00db
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bb8b22ecb9baf4e579223fcc490bf29fea4c6894
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221897"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981167"
 ---
-# <a name="get-accessreviewscheduledefinition"></a>Получение Акцессревиевсчедуледефинитион
+# <a name="get-accessreviewscheduledefinition"></a>Get accessReviewScheduleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) по идентификатору. Возвращает все свойства серии проверки доступа "запланированный доступ", за исключением связанного Акцессревиевинстанцес. У каждого Акцессревиевсчедуледефинитион есть по крайней мере один экземпляр. Экземпляр представляет проверку для определенного ресурса (например, членов определенной группы), в течение одного экземпляра (например, Март 2021) повторяющейся проверки.
+[Извлечение объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) по ID. При этом возвращаются все свойства серии запланированных отзывов о доступе, кроме связанных объектов accessReviewInstances. Каждый accessReviewScheduleDefinition имеет по крайней мере один экземпляр. Экземпляр представляет отзыв для определенного ресурса (например, участников конкретной группы) во время одного повторения (например, в марте 2021 г.) повторяющегося отзыва.
 
-Чтобы получить экземпляры серии проверки доступа, используйте [акцессревиевинстанце API List](accessreviewinstance-list.md) .
+Чтобы получить экземпляры серии отзывов о доступе, используйте API [accessReviewInstance для](accessreviewinstance-list.md) списка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Чтобы вызвать этот API, вошедшего в систему пользователь должен также находиться в роли каталога, который позволяет им читать проверку доступа, или пользователь может быть назначен в качестве проверяющего при проверке доступа.  Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviewsv2-root.md).
+Чтобы вызвать этот API, во входе пользователя также должна быть роль каталога, которая позволяет ему читать проверку доступа, или пользователь может быть назначен в качестве рецензента при проверке доступа.  Дополнительные сведения см. в требованиях к роли и разрешениям для [проверки доступа.](../resources/accessreviewsv2-root.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /identityGovernance/accessReviews/definitions/{review-id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
@@ -101,7 +101,7 @@ Content-type: application/json
     "createdBy": {
         "id": "957f1027-c0ee-460d-4444-b8828e59e0fe",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@microsoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
         "query": "/groups/b7a059cb-038a-4802-8fc9-b944440cf11f/transitiveMembers",
@@ -145,9 +145,9 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Создание Акцессревиевсчедуледефинитион](accessreviewscheduledefinition-create.md)
-- [Список Акцессревиевсчедуледефинитион](accessreviewscheduledefinition-list.md)
-- [Список Акцессревиевинстанце](accessreviewinstance-list.md)
+- [Создание accessReviewScheduleDefinition](accessreviewscheduledefinition-create.md)
+- [Список accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
+- [Список accessReviewInstance](accessreviewinstance-list.md)
 
 
 <!--
