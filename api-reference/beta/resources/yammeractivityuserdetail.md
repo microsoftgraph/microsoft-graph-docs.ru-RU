@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса Яммерактивитюсердетаил
+title: Тип ресурса yammerActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: eb17035f0d062d55a3607dd30f31459b79b8400c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 749076f407b49ff4fd408a095312ac49ea008bc1
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971372"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982399"
 ---
-# <a name="yammeractivityuserdetail-resource-type"></a><span data-ttu-id="d217e-103">Тип ресурса Яммерактивитюсердетаил</span><span class="sxs-lookup"><span data-stu-id="d217e-103">yammerActivityUserDetail resource type</span></span>
+# <a name="yammeractivityuserdetail-resource-type"></a><span data-ttu-id="d6148-103">Тип ресурса yammerActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="d6148-103">yammerActivityUserDetail resource type</span></span>
 
-<span data-ttu-id="d217e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d217e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d6148-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d6148-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d217e-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d217e-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d6148-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d6148-105">Properties</span></span>
 
-| <span data-ttu-id="d217e-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d217e-106">Property</span></span>          | <span data-ttu-id="d217e-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d217e-107">Type</span></span>              |
+| <span data-ttu-id="d6148-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d6148-106">Property</span></span>          | <span data-ttu-id="d6148-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d6148-107">Type</span></span>              |
 | :---------------- | :---------------- |
-| <span data-ttu-id="d217e-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="d217e-108">reportRefreshDate</span></span> | <span data-ttu-id="d217e-109">Дата</span><span class="sxs-lookup"><span data-stu-id="d217e-109">Date</span></span>              |
-| <span data-ttu-id="d217e-110">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="d217e-110">userPrincipalName</span></span> | <span data-ttu-id="d217e-111">String</span><span class="sxs-lookup"><span data-stu-id="d217e-111">String</span></span>            |
-| <span data-ttu-id="d217e-112">displayName</span><span class="sxs-lookup"><span data-stu-id="d217e-112">displayName</span></span>       | <span data-ttu-id="d217e-113">String</span><span class="sxs-lookup"><span data-stu-id="d217e-113">String</span></span>            |
-| <span data-ttu-id="d217e-114">userState</span><span class="sxs-lookup"><span data-stu-id="d217e-114">userState</span></span>         | <span data-ttu-id="d217e-115">String</span><span class="sxs-lookup"><span data-stu-id="d217e-115">String</span></span>            |
-| <span data-ttu-id="d217e-116">статечанжедате</span><span class="sxs-lookup"><span data-stu-id="d217e-116">stateChangeDate</span></span>   | <span data-ttu-id="d217e-117">Дата</span><span class="sxs-lookup"><span data-stu-id="d217e-117">Date</span></span>              |
-| <span data-ttu-id="d217e-118">ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="d217e-118">lastActivityDate</span></span>  | <span data-ttu-id="d217e-119">Дата</span><span class="sxs-lookup"><span data-stu-id="d217e-119">Date</span></span>              |
-| <span data-ttu-id="d217e-120">постедкаунт</span><span class="sxs-lookup"><span data-stu-id="d217e-120">postedCount</span></span>       | <span data-ttu-id="d217e-121">Int64</span><span class="sxs-lookup"><span data-stu-id="d217e-121">Int64</span></span>             |
-| <span data-ttu-id="d217e-122">реадкаунт</span><span class="sxs-lookup"><span data-stu-id="d217e-122">readCount</span></span>         | <span data-ttu-id="d217e-123">Int64</span><span class="sxs-lookup"><span data-stu-id="d217e-123">Int64</span></span>             |
-| <span data-ttu-id="d217e-124">ликедкаунт</span><span class="sxs-lookup"><span data-stu-id="d217e-124">likedCount</span></span>        | <span data-ttu-id="d217e-125">Int64</span><span class="sxs-lookup"><span data-stu-id="d217e-125">Int64</span></span>             |
-| <span data-ttu-id="d217e-126">ассигнедпродуктс</span><span class="sxs-lookup"><span data-stu-id="d217e-126">assignedProducts</span></span>  | <span data-ttu-id="d217e-127">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="d217e-127">String collection</span></span> |
-| <span data-ttu-id="d217e-128">репортпериод</span><span class="sxs-lookup"><span data-stu-id="d217e-128">reportPeriod</span></span>      | <span data-ttu-id="d217e-129">String</span><span class="sxs-lookup"><span data-stu-id="d217e-129">String</span></span>            |
+| <span data-ttu-id="d6148-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="d6148-108">reportRefreshDate</span></span> | <span data-ttu-id="d6148-109">Дата</span><span class="sxs-lookup"><span data-stu-id="d6148-109">Date</span></span>              |
+| <span data-ttu-id="d6148-110">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="d6148-110">userPrincipalName</span></span> | <span data-ttu-id="d6148-111">String</span><span class="sxs-lookup"><span data-stu-id="d6148-111">String</span></span>            |
+| <span data-ttu-id="d6148-112">displayName</span><span class="sxs-lookup"><span data-stu-id="d6148-112">displayName</span></span>       | <span data-ttu-id="d6148-113">String</span><span class="sxs-lookup"><span data-stu-id="d6148-113">String</span></span>            |
+| <span data-ttu-id="d6148-114">userState</span><span class="sxs-lookup"><span data-stu-id="d6148-114">userState</span></span>         | <span data-ttu-id="d6148-115">String</span><span class="sxs-lookup"><span data-stu-id="d6148-115">String</span></span>            |
+| <span data-ttu-id="d6148-116">stateChangeDate</span><span class="sxs-lookup"><span data-stu-id="d6148-116">stateChangeDate</span></span>   | <span data-ttu-id="d6148-117">Дата</span><span class="sxs-lookup"><span data-stu-id="d6148-117">Date</span></span>              |
+| <span data-ttu-id="d6148-118">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="d6148-118">lastActivityDate</span></span>  | <span data-ttu-id="d6148-119">Дата</span><span class="sxs-lookup"><span data-stu-id="d6148-119">Date</span></span>              |
+| <span data-ttu-id="d6148-120">postedCount</span><span class="sxs-lookup"><span data-stu-id="d6148-120">postedCount</span></span>       | <span data-ttu-id="d6148-121">Int64</span><span class="sxs-lookup"><span data-stu-id="d6148-121">Int64</span></span>             |
+| <span data-ttu-id="d6148-122">readCount</span><span class="sxs-lookup"><span data-stu-id="d6148-122">readCount</span></span>         | <span data-ttu-id="d6148-123">Int64</span><span class="sxs-lookup"><span data-stu-id="d6148-123">Int64</span></span>             |
+| <span data-ttu-id="d6148-124">likedCount</span><span class="sxs-lookup"><span data-stu-id="d6148-124">likedCount</span></span>        | <span data-ttu-id="d6148-125">Int64</span><span class="sxs-lookup"><span data-stu-id="d6148-125">Int64</span></span>             |
+| <span data-ttu-id="d6148-126">assignedProducts</span><span class="sxs-lookup"><span data-stu-id="d6148-126">assignedProducts</span></span>  | <span data-ttu-id="d6148-127">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="d6148-127">String collection</span></span> |
+| <span data-ttu-id="d6148-128">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="d6148-128">reportPeriod</span></span>      | <span data-ttu-id="d6148-129">String</span><span class="sxs-lookup"><span data-stu-id="d6148-129">String</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="d217e-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d217e-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d6148-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d6148-130">JSON representation</span></span>
 
-<span data-ttu-id="d217e-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d217e-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d6148-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d6148-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
