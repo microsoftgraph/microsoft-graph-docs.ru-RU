@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 83f868f9223f2837d1a4818cf227b94573db3480
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 56bc6b580fe691810600feee468c94cdd8a4d852
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45184004"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980817"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Справочные материалы по REST API Microsoft Graph v1.0
 
@@ -46,7 +46,7 @@ ms.locfileid: "45184004"
 ## <a name="other-api-versions"></a>Другие версии API
 
 В настоящее время существует две версии REST API Microsoft Graph – версия 1.0 и бета-версия.
-Если вас интересует новые и улучшенные API, которые по-прежнему находятся в предварительной версии, см. статью [Справочник по конечной точке бета-версии Microsoft Graph](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta). Следует помнить, что API в предварительной версии могут изменяться и могут нарушить работу существующих сценариев без уведомлений. Не создавайте зависимость рабочей среды от API в конечной точке бета-версии.
+Если вас интересует новые и улучшенные API, которые по-прежнему находятся в предварительной версии, см. статью [Справочник по конечной точке бета-версии Microsoft Graph](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Следует помнить, что API в предварительной версии могут изменяться и могут нарушить работу существующих сценариев без уведомлений. Не создавайте зависимость рабочей среды от API в конечной точке бета-версии.
 
 Дополнительные сведения см. в статье [Управление версиями и поддержка](/graph/versioning-and-support).
 

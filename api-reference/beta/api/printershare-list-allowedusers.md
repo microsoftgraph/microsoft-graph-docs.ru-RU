@@ -1,16 +1,16 @@
 ---
 title: Список allowedUsers для printerShare
-description: Получить список пользователей, которым предоставлен доступ для отправки заданий печати в связанную обную долю принтера.
+description: Получить список пользователей, которым предоставлен доступ для отправки заданий печати в связанную обойму принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 61a35672baeef741e2bad76dc2a67496ed60258d
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 527484207edbfaea7da3a10b5c1937d6058dd5bc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659599"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983344"
 ---
 # <a name="list-allowedusers-for-printershare"></a>Список allowedUsers для printerShare
 
@@ -23,12 +23,12 @@ ms.locfileid: "49659599"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Пользователь, во который вы влияли, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Пользователь, выписав его, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированное (рабочая или учебная учетная запись)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -98,7 +98,7 @@ Content-length: 286
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
       "displayName": "UserName",
-      "userPrincipalName": "username@microsoft.com"
+      "userPrincipalName": "username@contoso.com"
     }
   ]
 }

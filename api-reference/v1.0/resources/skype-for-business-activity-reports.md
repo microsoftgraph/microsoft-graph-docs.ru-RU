@@ -3,14 +3,14 @@ title: Отчеты о работе со Skype для бизнеса
 description: Эти отчеты позволяют получить подробные сведения о работе со Skype для бизнеса в организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений.
 localization_priority: Priority
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: d8358f03c644b1b7436822f1a8a52a1a1e5264a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1394ea6008d2514e091fa773db632f80d56e4b6e
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036949"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980950"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
 

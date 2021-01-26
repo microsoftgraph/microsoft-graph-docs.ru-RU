@@ -2,15 +2,15 @@
 title: Отчеты о работе с электронной почтой
 description: Эти отчеты позволяют получить общее представление о трафике электронной почты в организации. Вы также можете посмотреть развернутые отчеты, чтобы понять динамику и особенности работы с электронной почтой каждого пользователя в организации.
 localization_priority: Priority
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 59a003d8dc14f913efbfe8dc42c993093b11b21d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f0716d42d9b3e2f2fa360e065ebfd9ed7e1a4fc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018587"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982945"
 ---
 # <a name="email-activity-reports"></a>Отчеты о работе с электронной почтой
 

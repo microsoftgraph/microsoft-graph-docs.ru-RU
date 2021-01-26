@@ -1,16 +1,16 @@
 ---
 title: Отчеты о действиях в OneDrive
-description: Вы можете получить сведения о действиях каждого пользователя, имеющего лицензию, для использования OneDrive, изучив их взаимодействие с файлами в OneDrive. Кроме того, вы можете ознакомиться с уровнем совместной работы, в котором показано количество файлов, к которым предоставлен общий доступ.
+description: Вы можете получить действия каждого пользователя, у кого есть лицензия на использование OneDrive, изусмотрив их взаимодействие с файлами в OneDrive. Кроме того, это помогает понять, каков уровень совместной работы, показывая количество общих файлов.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 656d722a9d63e460cd4b62e87a0b2fd8483e37c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d0c069d2787b30f37e634757127b6141843a9ed
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092337"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983603"
 ---
 # <a name="onedrive-activity-reports"></a>Отчеты о действиях в OneDrive
 
@@ -18,16 +18,16 @@ ms.locfileid: "48092337"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете получить сведения о действиях каждого пользователя, имеющего лицензию, для использования OneDrive, изучив их взаимодействие с файлами в OneDrive. Кроме того, вы можете ознакомиться с уровнем совместной работы, в котором показано количество файлов, к которым предоставлен общий доступ.
+Вы можете получить действия каждого пользователя, у кого есть лицензия на использование OneDrive, изусмотрив их взаимодействие с файлами в OneDrive. Кроме того, это помогает понять, каков уровень совместной работы, показывая количество общих файлов.
 
-> **Примечание:** Сведения о различных представлениях и именах отчетов можно найти в [статье Microsoft 365 Reports-Activity for OneDrive для бизнеса](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365: действия в OneDrive для бизнеса.](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)
 
 ## <a name="reports"></a>Отчеты
 
-| Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
+| Функция                                 | Тип возврата CSV | Тип возврата JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getonedriveactivityuserdetail.md) | Stream          | [онедривеактивитюсердетаил](../resources/onedriveactivityuserdetail.md) | Получите сведения о действиях в OneDrive с разбивкой по пользователям. |
-| [Получение количества пользователей](../api/reportroot-getonedriveactivityusercounts.md) | Stream          | [ситеактивитисуммари](../resources/siteactivitysummary.md) | Получение тренда в отношении количества активных пользователей OneDrive. |
-| [Получение количества файлов](../api/reportroot-getonedriveactivityfilecounts.md) | Stream          | [ситеактивитисуммари](../resources/siteactivitysummary.md) | Получение количества уникальных пользователей с лицензией, которые работали с файлами в любой учетной записи OneDrive. |
+| [Получение сведений о пользователях](../api/reportroot-getonedriveactivityuserdetail.md) | Stream          | [oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md) | Получите сведения о действиях в OneDrive с разбивкой по пользователям. |
+| [Получение количества пользователей](../api/reportroot-getonedriveactivityusercounts.md) | Stream          | [siteActivitySummary](../resources/siteactivitysummary.md) | Получение тренда в отношении количества активных пользователей OneDrive. |
+| [Получение количества файлов](../api/reportroot-getonedriveactivityfilecounts.md) | Stream          | [siteActivitySummary](../resources/siteactivitysummary.md) | Получение количества уникальных пользователей с лицензией, которые работали с файлами в любой учетной записи OneDrive. |
 
 

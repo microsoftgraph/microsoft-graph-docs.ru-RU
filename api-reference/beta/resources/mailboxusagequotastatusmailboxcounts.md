@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Маилбоксусажекуотастатусмаилбокскаунтс
+title: Тип ресурса mailboxUsageQuotaStatusMailboxCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e09b9d27da4a85dd89f6a09440d56532045573b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10ce05121ec900f5475a082191f4192974f980b4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029178"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983547"
 ---
-# <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>Тип ресурса Маилбоксусажекуотастатусмаилбокскаунтс
+# <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>Тип ресурса mailboxUsageQuotaStatusMailboxCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,14 +20,14 @@ ms.locfileid: "48029178"
 
 | Свойство              | Тип   |
 | :-------------------- | :----- |
-| репортрефрешдате     | Дата   |
-| поддельное значение            | Int64  |
-| варнингиссуед         | Int64  |
-| сендпрохибитед        | Int64  |
-| сендрецеивепрохибитед | Int64  |
-| определен         | Int64  |
+| reportRefreshDate     | Дата   |
+| underLimit            | Int64  |
+| warningIssued         | Int64  |
+| sendProhibited        | Int64  |
+| sendReceiveProhibited | Int64  |
+| indeterminate         | Int64  |
 | reportDate            | Дата   |
-| репортпериод          | String |
+| reportPeriod          | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

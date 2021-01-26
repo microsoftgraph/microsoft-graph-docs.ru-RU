@@ -1,25 +1,25 @@
 ---
-title: Получение Говернанцеролесеттинг
-description: Получение свойств и связей объекта Говернанцеролесеттинг.
+title: Get governanceRoleSetting
+description: Извлечение свойств и связей объекта governanceRoleSetting.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 4e2c7cbcf0f5f50a14f35d13bd5aafcdab7d31ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 26fcb5363118f74665a7bf319f8ab65a4df10c50
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965443"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983379"
 ---
-# <a name="get-governancerolesetting"></a>Получение Говернанцеролесеттинг
+# <a name="get-governancerolesetting"></a>Get governanceRoleSetting
 
 Пространство имен: microsoft.graph
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [говернанцеролесеттинг](../resources/governancerolesetting.md).
+Извлечение свойств и связей [объекта governanceRoleSetting.](../resources/governancerolesetting.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-#privileged-access-permissions).
@@ -29,26 +29,26 @@ ms.locfileid: "48965443"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения | Привилежедакцесс. Read. Азурересаурцес |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения | PrivilegedAccess.Read.AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения | PrivilegedAccess.Read.AzureADGroups |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | PrivilegedAccess.Read.AzureADGroups |
 
-Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса, к которому относится [говернанцеролесеттинг](../resources/governancerolesetting.md) .
+Помимо области разрешений, этот API требует, чтобы у запрашивателя было по крайней мере одно назначение роли для ресурса, которому принадлежит [governanceRoleSetting.](../resources/governancerolesetting.md)
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,7 +65,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [говернанцеролесеттинг](../resources/governancerolesetting.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 
@@ -113,7 +113,7 @@ Content-length: 370
     "roleDefinitionId": "5b8bea96-e9f6-4c63-a8e9-fb092c79f0a1",
     "isDefault": false,
     "lastUpdatedDateTime": "2018-03-26T21:21:43.113Z",
-    "lastUpdatedBy": "Vishal Seri",
+    "lastUpdatedBy": "Alex Wilber",
     "adminEligibleSettings": [
         {
             "ruleIdentifier": "ExpirationRule",
@@ -150,7 +150,7 @@ Content-length: 370
         },
         {
             "ruleIdentifier": "ApprovalRule",
-            "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Vishal Seri\",\"Email\":\"viseri@fimdev.net\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"viseri\",\"Email\":\"viseri@microsoft.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
+            "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
         }
     ]
 }

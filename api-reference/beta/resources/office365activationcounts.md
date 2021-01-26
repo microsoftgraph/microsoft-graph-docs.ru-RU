@@ -3,14 +3,14 @@ title: Тип ресурса office365ActivationCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: ef612173b8b78d4e87e07e66995ea6cb9ac0dc16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ac3b6bb14b347f4ab273bbf65ce767f1ae6e1a2
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021219"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983205"
 ---
 # <a name="office365activationcounts-resource-type"></a>Тип ресурса office365ActivationCounts
 
@@ -20,13 +20,13 @@ ms.locfileid: "48021219"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| репортрефрешдате | Дата   | Самая поздняя дата контента.          |
-| продукттипе       | String | Тип продукта, например "Microsoft 365 профессиональный плюс" или "клиент Project". |
-| под           | Int64  | Счетчик активаций в Windows. Это число включает все активации на любом компьютере с Windows. |
-| mac               | Int64  | Число активаций в Mac OS.          |
-| ОС           | Int64  | Счетчик активаций на устройстве с Android.  |
-| модуле               | Int64  | Счетчик активаций на iOS.             |
-| windows10Mobile   | Int64  | Счетчик активаций для Windows 10 Mobile. |
+| reportRefreshDate | Дата   | Последняя дата содержимого.          |
+| productType       | String | Тип продукта, например "Microsoft 365 профессиональныйplus" или "Project Client". |
+| windows           | Int64  | Количество активаций в Windows. Это число включает каждую активацию на любом компьютере с Windows. |
+| mac               | Int64  | Количество активаций для Mac OS.          |
+| android           | Int64  | Количество активаций на устройстве с Android.  |
+| ios               | Int64  | Количество активаций для iOS.             |
+| windows10Mobile   | Int64  | Количество активаций в Windows 10 Mobile. |
 
 ## <a name="json-representation"></a>Представление JSON
 
