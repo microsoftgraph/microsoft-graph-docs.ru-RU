@@ -490,6 +490,12 @@ items:
                 href: extensibility-open-users.md
               - name: Использование расширений схемы (пример)
                 href: extensibility-schema-groups.md
+          - name: Использование песочницы Graph
+            items:
+              - name: Начало работы
+                href: graph-explorer/graph-explorer-overview.md
+              - name: Работа с песочницей Graph
+                href: graph-explorer/graph-explorer-features.md
           - name: Использование Postman
             href: use-postman.md
       - name: Миграция
