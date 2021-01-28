@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c56d1012e4b375be318f48f91cfb7e9f863b5704
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 590b97c01623cba26407ca0a39ad7d0b3b7a1ca3
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784873"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034235"
 ---
 # <a name="download-printdocument-binary-file"></a>Скачивание двоичного файла printDocument
 
@@ -23,13 +23,13 @@ ms.locfileid: "49784873"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, у пользователя или клиента приложения должна быть активная подписка [](printer-get.md) универсальной печати и разрешение, которое предоставляет доступ к принтеру в случае маркеров доступа пользователя и разрешения printer.Read.All или Printer.ReadWrite.All приложения в случае маркеров доступа только для приложений. 
+Помимо перечисленных ниже разрешений, у пользователя или клиента приложения должна быть активная подписка универсальной печати и разрешение, которое предоставляет доступ к [принтеру.](printer-get.md)
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                               |
-| Приложение                            | PrintJob.Read.All, PrintJob.ReadWrite.All                    |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                               |
+| Для приложений                            | PrintJob.Read.All, PrintJob.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

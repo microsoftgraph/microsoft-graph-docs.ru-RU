@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 658596b37e5af0dda56985d72fa3df396f339cfa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eafbbdef90484d9fabba731ec6a7a4c0055b8a6c
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969448"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034207"
 ---
 # <a name="list-columns"></a>Перечисление столбцов
 
@@ -40,7 +40,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -48,7 +48,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -95,7 +95,7 @@ Content-length: 126
 {
   "value": [
     {
-      "id": 99,
+      "id": "99",
       "name": "name-value",
       "index": 99,
       "values": "values-value"

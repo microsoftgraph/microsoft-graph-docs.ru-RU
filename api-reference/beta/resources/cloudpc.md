@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 481bcae691632685cafab00a4b7e44addb1ad0cd
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 1b026bccd18af0dcbc9c0a5128595399a0997474
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706089"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033920"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
@@ -40,12 +40,24 @@ ms.locfileid: "49706089"
 |managedDeviceId|String|ИД устройства Intune на облачном компьютере.|
 |managedDeviceName|String|Имя устройства Intune облачного ПК.|
 |provisioningPolicyId|String|ИД политики предоставления на облачном компьютере.|
-|servicePlanId|String|ИД плана обслуживания облачного КОМПЬЮТЕРА.|
+|servicePlanId|String|ИД плана обслуживания облачного ПК.|
 |servicePlanName|String|Имя плана обслуживания облачного ПК.|
-|status|cloudPcStatus|Состояние облачного ПК. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|Состояние облачного ПК. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Сведения о состоянии облачного ПК.|
 |userPrincipalName|String|Имя основного пользователя (UPN) пользователя, назначенного облачному компьютеру.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения облачного ПК. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".|
+
+### <a name="cloudpcstatus-values"></a>Значения cloudPcStatus
+
+|Member|Описание|
+|:---|:---|
+|notProvisioned|Облачный КОМПЬЮТЕР не был предусмотрен.|
+|подготовка|Подготовка облачных компьютеров идет.|
+|provisioned|Облачный компьютер уже предусмотрен и к нему могут получить доступ конечные пользователи.|
+|обновление|В настоящее время идет процесс добиться их добиться.|
+|inGracePeriod|Облачный пк находится в течение одной недели льготного периода, прежде чем он будет отсюжен.|
+|deprovisioning|Облачный КОМПЬЮТЕР не подает продукты.|
+|failed|Сбой операции на облачном компьютере.|
 
 ## <a name="relationships"></a>Связи
 

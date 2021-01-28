@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса servicePrincipal
-description: Represents an instance of an application in a directory. Inherits from directoryObject.
+description: Представляет экземпляр приложения в каталоге. Наследуется от directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: adb18d3cba9f998e62b474c0e4f466d04e679b5c
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: d02868356a2c3ed92942f6a58f451023fd027ad1
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377042"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013382"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
 Пространство имен: microsoft.graph
 
-Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
+Представляет экземпляр приложения в каталоге. Наследуется от [directoryObject](directoryobject.md).
 
 Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/serviceprincipal-delta.md).
 
@@ -79,7 +79,7 @@ Represents an instance of an application in a directory. Inherits from [director
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.|
-| addIns | Коллекция [addIn](addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
+| addIns | Коллекция [addIn](addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
 |alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
 |appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
@@ -93,7 +93,7 @@ Represents an instance of an application in a directory. Inherits from [director
 |id|String|Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение null не допускается.            |
-|loginUrl|Строка|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
+|loginUrl|String|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|
 |oauth2PermissionScopes|Коллекция [permissionScope](permissionScope.md)|Делегированные разрешения, предоставляемые приложением. Дополнительные сведения см. в описании свойства **oauth2PermissionScopes** в свойстве **api** объекта [application](application.md). Значение null не допускается.|
 |notificationEmailAddresses|Коллекция строк|Указывает список адресов электронной почты, по которым Azure AD отправляет уведомление, когда приближается срок окончания действия активного сертификата. Используется только для сертификатов, с помощью которых подписан маркер SAML, выпущенный для приложений коллекции Azure AD.|
@@ -114,7 +114,6 @@ Represents an instance of an application in a directory. Inherits from [director
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен этот субъект-служба. Только для чтения. Допускается значение null.|
 |claimsMappingPolicies|Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)|Типы ресурсов claimsMappingPolicy, назначенные субъекту-службе.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
-|endpoints|Коллекция [endpoint](endpoint.md)|Конечные точки, доступные для обнаружения. Службы, такие как Sharepoint, заполняют это свойство конечными точками, относящимися к клиенту SharePoint. Другие приложения могут обнаруживать эти конечные точки и использовать их.|
 |homeRealmDiscoveryPolicies|Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)|Типы ресурсов homeRealmDiscoveryPolicy, назначенные субъекту-службе.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
 |oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Предоставленные делегированные разрешения, разрешающие этому субъекту-службе доступ к API от имени пользователя, вошедшего в систему. Только для чтения. Допускается значение null.|

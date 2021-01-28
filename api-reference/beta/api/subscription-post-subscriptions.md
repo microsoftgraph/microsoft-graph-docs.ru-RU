@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 9efe9120d71f12955f1495cca954d9e873b3da35
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 68e748a054812350c7aad029d604e87aa77b7345
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934564"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034277"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -50,16 +50,7 @@ ms.locfileid: "49934564"
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
-### <a name="chatmessage"></a>chatMessage
-
-**Подписки chatMessage** с делегными разрешениями не поддерживают данные ресурсов **(includeResourceData** должен быть) и `false` не требуют [шифрования.](/graph/webhooks-with-resource-data)
-
-Подписки **chatMessage** с разрешениями для приложений включают данные ресурса и требуют [шифрования](/graph/webhooks-with-resource-data). Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md). Перед созданием подписки **chatMessage** вы должны запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
-
-> **Примечание.** `/teams/getAllMessages` и `/chats/getAllMessages` доступны для пользователей с [требуемыми лицензиями](https://aka.ms/teams-changenotification-licenses).
-В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов оплаты дополнительных платежей в зависимости от объема данных, доступных через API.
-
-> **Примечание.** `/chats/getAllMessages` возвращает только сообщения из чатов, владельцем клиента. Если поток чата инициировался пользователем за пределами клиента, этот поток чата не принадлежит арендатору и не создает уведомления об изменениях.
+[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
@@ -168,7 +159,7 @@ Content-type: application/json
 |[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
-|[пользователи](../resources/user.md);|`users`|
+|[Пользователи](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 88143f58c070f7a359fab7bb0674fa6a39477d91
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 00b129ed73b64ed9ac0785017cfad8c2a74fde2b
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982735"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033997"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>Тип ресурса cloudPcOnPremisesConnection
 
@@ -42,16 +42,26 @@ ms.locfileid: "49982735"
 |displayName|String|Отображаемого имени для локального подключения.|
 |subscriptionId|String|ИД целевой подписки Azure, связанной с клиентом.|
 |subscriptionName|String|Имя целевой подписки Azure. Только для чтения.|
-|adDomainName|String|Полное доменное имя домена Active Directory, к нему нужно присоединиться.|
+|adDomainName|String|Полное доменное имя домена Active Directory, к который требуется присоединиться.|
 |adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: admin@contoso.com.|
 |adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|organizationalUnit|String|Подразделение, в котором создается учетная запись компьютера. Если оставить значение null, используется OU, настроенное в качестве используемого по умолчанию (известного контейнера объектов компьютера) в домене Active Directory (OU). Необязательное свойство.|
+|organizationalUnit|String|Подразделение, в котором создается учетная запись компьютера. Если оставить значение null, используется OU, настроенное в качестве используемого по умолчанию (известного контейнера объектов компьютера) в домене Active Directory .. Необязательный параметр.|
 |resourceGroupId|String|ИД целевой группы ресурсов. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|ИД целевой виртуальной сети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|ИД целевой подсети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
-|healthCheckStatus|cloudPcOnPremisesConnectionStatus|Состояние последней проверки состояния, которая была сделана для локального подключения. Например, если состояние "passed", локальное подключение прошло все проверки, запускаемые службой. Только для чтения. Возможные значения: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|Состояние последней проверки состояния, которая была сделана для локального подключения. Например, если состояние "passed", локальное подключение прошло все проверки, запускаемые службой. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Сведения о проверках состояния подключения и соответствующих результатах. Возвращается только с помощью оператора `$select`. См. [пример](../api/cloudpconpremisesconnection-get.md) получения свойства healthCheckStatusDetails. Только для чтения.|
-|inUse|Boolean|Если засвеяно, используется локальное подключение. Если заведомо ложно, подключение не используется. Невозможно удалить используемую связь. Только для чтения.|
+|inUse|Логический|Если засвеяно, используется локальное подключение. Если заведомо ложно, подключение не используется. Невозможно удалить используемую связь. Только для чтения.|
+
+### <a name="cloudpconpremisesconnectionstatus-values"></a>Значения cloudPcOnPremisesConnectionStatus
+
+|Member|Описание|
+|:---|:---|
+|pending|Создано и ожидает проверки состояния.
+|running|Запущены проверки состояния.|
+|passed|Пройдены проверки состояния.|
+|failed|Сбой проверки состояния.|
+|unknownFutureValue|Неизвестное будущее состояние (зарезервировано, не используется сейчас).|
 
 ## <a name="relationships"></a>Связи
 

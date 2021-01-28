@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e4079d83d3d92588d27184fc8ef58274095bcee6
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: d9b89d5e8d9fd0e34ba3f03e0d49684d8a49b629
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754182"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013662"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -44,9 +44,7 @@ ms.locfileid: "49754182"
 | [Добавление владельца](../api/group-post-owners.md) | Нет | Добавление владельца группы путем помещения в свойство навигации **owners** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты). |
 | [Создание параметра](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Создание параметра объекта на базе groupSettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. В случае этой операции могут использоваться только шаблоны специально для групп. |
 | [Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта setting. |
-| [Получение конечной точки](../api/endpoint-get.md) | [endpoint](endpoint.md) | Чтение свойств и связей объекта endpoint. |
 | [Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта setting. |
-| [Перечисление конечных точек](../api/group-list-endpoints.md) | Коллекция [endpoint](endpoint.md) | Получение коллекции объектов endpoint. |
 | [Перечисление groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление политик жизненного цикла для групп. |
 | [Перечисление участников](../api/group-list-members.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей и групп, являющихся непосредственными участниками этой группы, из свойства навигации **members**. |
 | [Список владельцев](../api/group-list-owners.md) | Коллекция [directoryObject](directoryobject.md) | Получение владельцев группы из свойства навигации **owners**. |

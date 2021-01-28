@@ -70,11 +70,11 @@ items:
             href: /graph/extensibility-open-users?context=graph/api/beta
           - name: Использование расширений схемы (пример)
             href: /graph/extensibility-schema-groups?context=graph/api/beta
-      - name: Использование обозревателя Graph
+      - name: Использование песочницы Graph
         items:
           - name: Начало работы
             href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
-          - name: Работа с graph Explorer
+          - name: Работа с песочницей Graph
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: Использование Postman
         href: /graph/use-postman?context=graph/api/beta
@@ -301,7 +301,7 @@ items:
                 href: api/user-list-usagerights.md
               - name: Повторное назначение лицензии
                 href: api/user-reprocesslicenseassignment.md
-              - name: Отоиметь сеанс регистрации
+              - name: Отозовет сеанс регистрации
                 href: api/user-revokesigninsessions.md
           - name: Диск
             href: resources/drive.md
@@ -470,7 +470,7 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: Общение в чате между пользователем и приложением
                 href: api/userscopeteamsappinstallation-get-chat.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -1030,7 +1030,7 @@ items:
                     href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
                   - name: Обновление учетных данных единого входа для паролей
                     href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-                  - name: Удаление учетных данных единого входа для пароля
+                  - name: Удаление учетных данных единого входа с паролем
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Синхронизация
             href: resources/synchronization-overview.md
@@ -1114,7 +1114,7 @@ items:
                 href: api/event-accept.md
               - name: Предварительное принятие
                 href: api/event-tentativelyaccept.md
-              - name: Событие Decline
+              - name: Событие отклонения
                 href: api/event-decline.md
               - name: Отмена напоминания
                 href: api/event-dismissreminder.md
@@ -1399,9 +1399,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Перечисление
                     href: api/callrecords-session-list.md
@@ -2787,7 +2787,7 @@ items:
                     href: resources/intune-apps-win32lobappfilesystemdetectiontype.md
                   - name: Тип операции с файловой системой приложения Win32
                     href: resources/intune-apps-win32lobappfilesystemoperationtype.md
-                  - name: Требование к файловой системе приложения для LOB Win32
+                  - name: Требования к файловой системе для приложения win32
                     href: resources/intune-apps-win32lobappfilesystemrequirement.md
                   - name: Правило файловой системы для приложения Win32
                     href: resources/intune-apps-win32lobappfilesystemrule.md
@@ -2799,7 +2799,7 @@ items:
                     href: resources/intune-apps-win32lobappmsipackagetype.md
                   - name: Определение скрипта power shell бизнес-приложения Win32
                     href: resources/intune-apps-win32lobapppowershellscriptdetection.md
-                  - name: Тип обнаружения скрипта power shell для приложения Win32
+                  - name: Тип определения скрипта power shell для приложения win32
                     href: resources/intune-apps-win32lobapppowershellscriptdetectiontype.md
                   - name: Требование сценария power shell для приложения Win32
                     href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
@@ -4477,7 +4477,7 @@ items:
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md
                   - name: Os edition правила управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md
-                  - name: Версия ос правила управления устройствами
+                  - name: Версия ос правила применимости для управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
                   - name: Тип правила применимости управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md
@@ -4883,7 +4883,7 @@ items:
                         href: api/intune-grouppolicy-grouppolicypresentationvaluetext-update.md
                   - name: Тип групповой политики
                     href: resources/intune-grouppolicy-grouppolicytype.md
-                  - name: Категория отправки групповой политики
+                  - name: Категория выгрузки групповой политики
                     href: resources/intune-grouppolicy-grouppolicyuploadedcategory.md
                     items:
                       - name: Перечисление
@@ -5302,7 +5302,7 @@ items:
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
                   - name: 'Элемент доменов, связанных с macOS'
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
-                  - name: Расширение единого входов в MacOS Azure ad
+                  - name: Расширение единого знака "единый вход" в MacOS Azure
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: База профилей сертификатов для macOS
                     href: resources/intune-deviceconfig-macoscertificateprofilebase.md
@@ -5757,7 +5757,7 @@ items:
                         href: api/intune-raimportcerts-pfxusercertificate-delete.md
                       - name: Обновление
                         href: api/intune-raimportcerts-pfxusercertificate-update.md
-                  - name: Тип действия "Питание"
+                  - name: Тип действия Power
                     href: resources/intune-deviceconfig-poweractiontype.md
                   - name: Предварительные версии функций
                     href: resources/intune-deviceconfig-prereleasefeatures.md
@@ -7836,7 +7836,7 @@ items:
                     href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                   - name: Параметр действия "Обновление учетной записи устройства с Windows"
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
-                  - name: Производительность приложения анализа пользовательского интерфейса по версии приложения
+                  - name: Производительность приложения аналитики пользовательского интерфейса по версии приложения
                     href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
                     items:
                       - name: Перечисление
@@ -7849,7 +7849,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md
-                  - name: Производительность приложения аналитики пользовательского интерфейса по версии
+                  - name: Производительность приложения анализа пользовательского интерфейса по версии
                     href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
                     items:
                       - name: Перечисление
@@ -7901,7 +7901,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-update.md
-                  - name: Сведения о производительности устройства для анализа пользовательского интерфейса
+                  - name: Сведения о производительности устройства анализа пользовательского интерфейса
                     href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
                     items:
                       - name: Перечисление
@@ -8022,7 +8022,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetric-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsmetric-update.md
-                  - name: История метрик аналитики пользовательского интерфейса
+                  - name: История показателей аналитики пользовательского интерфейса
                     href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
                     items:
                       - name: Перечисление
@@ -8892,7 +8892,7 @@ items:
                     href: resources/intune-shared-compliancestatus.md
                   - name: Тип фильтра назначений для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmentfiltertype.md
-                  - name: Источник назначения управления устройствами и приложениями
+                  - name: Источник назначения для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmentsource.md
                   - name: Объект назначения для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
@@ -9413,6 +9413,8 @@ items:
                 href: api/educationclass-list-assignments.md
               - name: Создание задания
                 href: api/educationclass-post-assignments.md
+              - name: Получить параметры назначения
+                href: api/educationassignmentsettings-get.md
               - name: Перечисление категорий
                 href: api/educationclass-list-categories.md
               - name: Создание категории
@@ -9475,6 +9477,13 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: Удаление рубрики из назначения
                 href: api/educationassignment-delete-rubric.md
+          - name: Параметры назначения
+            href: resources/educationassignmentsettings.md
+            items:
+              - name: Получить параметры назначения
+                href: api/educationassignmentsettings-get.md
+              - name: Обновление параметров назначения
+                href: api/educationassignmentsettings-update.md
           - name: Category
             href: resources/educationcategory.md
             items:
@@ -10337,7 +10346,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: Удаление
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                  - name: Политика входов на телефон без пароля Microsoft Authenticator (неподготовлена)
+                  - name: Политика microsoft Authenticator Для телефонного доступа без пароля (неподготовлена)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Получение
@@ -10551,7 +10560,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-create.md
                   - name: Локализации
                     href: api/organizationalbrandingpropertieslocalization-get.md
-                  - name: Обновление локализовано
+                  - name: Локализованное обновление
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: Удаление локализованного
                     href: api/organizationalbrandingpropertieslocalization-delete.md
@@ -10647,7 +10656,7 @@ items:
                             href: api/permissiongrantpolicy-delete-includes.md
                           - name: Список исключается
                             href: api/permissiongrantpolicy-list-excludes.md
-                          - name: Create in excludes
+                          - name: Создание исключено
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Удаление из исключений
                             href: api/permissiongrantpolicy-delete-excludes.md
@@ -11005,7 +11014,7 @@ items:
                         href: api/accesspackageassignmentpolicy-update.md
                       - name: Удаление
                         href: api/accesspackageassignmentpolicy-delete.md
-                  - name: Запрос на назначение пакета access
+                  - name: Запрос на назначение пакета доступа
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: Перечисление
@@ -11045,7 +11054,7 @@ items:
                         href: api/accesspackageresourcerequest-list.md
                       - name: Создание
                         href: api/accesspackageresourcerequest-post.md
-                  - name: Область роли ресурса пакета Access
+                  - name: Область роли ресурса пакета access
                     href: resources/accesspackageresourcerolescope.md
                     items:
                       - name: Перечисление
@@ -11840,9 +11849,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Параметры
+              - name: Settings
                 items:
-                  - name: Параметры
+                  - name: Settings
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -11985,7 +11994,7 @@ items:
                   - name: Сводка по входу
                     href: resources/applicationsigninsummary.md
                     items:
-                      - name: Вывод сводки по входу
+                      - name: Сводка по входу
                         href: api/applicationsigninsummary-get.md
                   - name: Сведения о входе
                     href: resources/applicationsignindetailedsummary.md
@@ -12096,7 +12105,7 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: Получить количество пользователей платформы
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Действия с группами Microsoft 365
+              - name: Действия в группах Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Получение сведений о группе
@@ -12523,7 +12532,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -12999,7 +13008,7 @@ items:
                     href: api/shiftpreferences-get.md
                   - name: Обновление
                     href: api/shiftpreferences-put.md
-              - name: Запрос на изменение смены подкачки
+              - name: Запрос на изменение смен смены
                 href: resources/swapshiftschangerequest.md
                 items:
                   - name: Перечисление
@@ -13038,7 +13047,7 @@ items:
                     href: api/timeoffreason-put.md
                   - name: Удаление
                     href: api/timeoffreason-delete.md
-              - name: Запрос на отключение времени
+              - name: Запрос на неохрошое время
                 href: resources/timeoffrequest.md
                 items:
                   - name: Получение
@@ -13105,7 +13114,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Task
             href: resources/todotask.md
             items:
               - name: Перечисление задач

@@ -1,16 +1,16 @@
 ---
 title: Значения enum
-description: Значения для индексирования Microsoft Graph
+description: Значения измеримого индекса Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: eb7558f996adafd34904ce355e355968e0294f83
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 1e35b41fb77b1c1f83c728858fc1b543596c5507
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882929"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034305"
 ---
 # <a name="enum-values"></a>Значения enum
 
@@ -122,14 +122,14 @@ ms.locfileid: "49882929"
 
 |Member|
 |:---|
-|location|
+|расположение;|
 |приложение|
 
 ### <a name="anniversarytype-values"></a>Значения anniversaryType
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |1|
 |unknownFutureValue|
 
@@ -200,7 +200,7 @@ ms.locfileid: "49882929"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -266,7 +266,7 @@ ms.locfileid: "49882929"
 |:---|
 |Нет|
 |car|
-|календарь|
+|calendar|
 |running|
 |plane|
 |firstAid|
@@ -284,7 +284,7 @@ ms.locfileid: "49882929"
 |1|
 |trafficCone|
 |pin|
-|10|
+|1|
 |unknownFutureValue|
 
 ### <a name="schedulechangestate-values"></a>Значения scheduleChangeState
@@ -332,7 +332,7 @@ ms.locfileid: "49882929"
 | iana
 
 
-### <a name="freebusystatus-values"></a>Значения freeBusyStatus
+### <a name="freebusystatus-values"></a>значения freeBusyStatus
 
 | Элемент           | Значение |
 | :--------------- | :---- |
@@ -706,13 +706,13 @@ ms.locfileid: "49882929"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
 
 
-### <a name="responsetype-values"></a>значения responseType
+### <a name="responsetype-values"></a>Значения responseType
 
 | Member
 |:-------------------------
@@ -734,7 +734,7 @@ ms.locfileid: "49882929"
 | unrestricted
 
 
-### <a name="websitetype-values"></a>значения websiteType
+### <a name="websitetype-values"></a>Значения websiteType
 
 | Member
 |:-------------------------
@@ -824,7 +824,7 @@ ms.locfileid: "49882929"
 | Элемент    | Значение | Описание                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | Неизвестно.                      |
-| untrusted | 10     | Уровень целостности не является недоверным. |
+| неверная | 10     | Уровень целостности не является недоверным. |
 | low       | 20    | Уровень целостности низкий.       |
 | medium    | 30    | Уровень целостности средний.    |
 | high      | 40    | Уровень целостности высокий.      |
@@ -1133,7 +1133,7 @@ Enum for severity of alerts.
 
 | Member   | Значение int |  Описание |
 |:---------------|:--------|:----------|
-| Нет | 0 | Значение по умолчанию. Это значение в сообщении, если пользователь не принял действие с сообщением, заблокированным DLP. |
+| Нет | 0 | Значение по умолчанию. Это значение для сообщения, если пользователь не принял действие с сообщением, заблокированным DLP. |
 | Override | 1  | Отправитель переопределил решение и отправил сообщение.|
 | ReportFalsePositive | 2  | Отправитель сообщил администраторам о ложном срабатывии.|
 
@@ -1199,7 +1199,7 @@ Enum for severity of alerts.
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | Неавтные данные; Например, файл в папке.                                 |
 | движение | 1      | Данные в движении. Файл, перехваченный сетевым устройством в пути.         |
-| use    | 2      | Данные используются. Файл открыт в клиентских приложениях, таких как Microsoft Office. |
+| use    | 2      | Данные используются. Файл открывается в клиентских приложениях, таких как Microsoft Office. |
 
 ### <a name="assignmentmethod-values"></a>Значения assignmentMethod
 
@@ -1207,7 +1207,7 @@ Enum for severity of alerts.
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
 | standard   | 0     | Метка была установлена с помощью условия службы или политики.                                                                              |
 | privileged | 1      | Метка была явно установлена пользователем.                                                                                          |
-| Авто       | 2      | Разрешает переопределять любую существующую метку. Обоснование, необходимое для понижения. Приводит к `standard` методу назначения в метаданных. |
+| Авто       | 2      | Разрешает переопределять любую существующую метку. Обоснование, необходимое для понижения. Метод `standard` назначения в метаданных. |
 
 ### <a name="actionsource-values"></a>значения actionSource
 
@@ -1217,7 +1217,7 @@ Enum for severity of alerts.
 | Автоматически     | 1      | Метка была выбрана в результате условий политики.       |
 | Рекомендуемый   | 2      | Выбрано применение рекомендуемой метки.                    |
 | policyDefault | 3     | Пользователь не применял действие и метку по умолчанию политики. |
-| mandatory     | 4      | Пользователь выбрал метку после принудительных выборов.         |
+| mandatory     | 4      | Пользователь выбрал метку после принудительного выбора.         |
 
 ### <a name="contentalignment-values"></a>значения contentAlignment
 
@@ -1225,7 +1225,7 @@ Enum for severity of alerts.
 | :----- | :---- | :---------------------------------- |
 | left   | 0     | Выравнивание пометки содержимого слева.  |
 | Правильно  | 1      | Выравнивание пометки содержимого справа. |
-| center | 2      | Маркировка содержимого по центру.             |
+| center | 2      | Пометка содержимого по центру.             |
 
 ### <a name="watermarklayout-values"></a>значения watermarkLayout
 
@@ -1307,7 +1307,7 @@ Enum for severity of alerts.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1      | Угроза почты.            |
+| mail   | 1      | Угроза почты.            |
 | url    | 2      | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1523,76 +1523,12 @@ Enum for severity of alerts.
 | entityUrl
 | текст
 
-### <a name="cloudpcdeviceimagestatus-values"></a>Значения cloudPcDeviceImageStatus
-
-|Member|
-|:---|
-|pending|
-|ready|
-|failed|
-
-### <a name="cloudpcdeviceimagestatusdetails-values"></a>Значения cloudPcDeviceImageStatusDetails
-
-|Member|
-|:---|
-|internalServerError|
-|sourceImageNotFound|
-
-### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>значения cloudPcOnPremisesConnectionHealthCheckErrorType
-
-|Member|
-|:---|
-|dnsCheckFqdnNotFound|
-|dnsCheckUnknownError|
-|adJoinCheckFqdnNotFound|
-|adJoinCheckIncorrectCredentials|
-|adJoinCheckOrganizationalUnitNotFound|
-|adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError|
-|endpointConnectivityCheckUrlNotWhitelisted|
-|endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError|
-|resourceAvailabilityCheckNoSubnetIP|
-|resourceAvailabilityCheckSubscriptionDisabled|
-|resourceAvailabilityCheckUnknownError|
-|permissionCheckNoSubscriptionReaderRole|
-|permissionCheckNoResourceGroupOwnerRole|
-|permissionCheckNoVNetContributorRole|
-|permissionCheckUnknownError|
-|internalServerUnknownError|
-
-### <a name="cloudpconpremisesconnectionstatus-values"></a>Значения cloudPcOnPremisesConnectionStatus
-
-|Member|
-|:---|
-|pending|
-|running|
-|passed|
-|failed|
-|unknownFutureValue|
-
 ### <a name="cloudpcprovisioningpolicyimagetype-values"></a>Значения cloudPcProvisioningPolicyImageType
 
 |Member|
 |:---|
 |custom|
 |gallery|
-
-### <a name="cloudpcstatus-values"></a>Значения cloudPcStatus
-
-|Member|
-|:---|
-|notProvisioned|
-|подготовка|
-|provisioned|
-|обновление|
-|inGracePeriod|
-|deprovisioning|
-|failed|
-|upgradeFailed|
-|provisionFailed|
-|deprovisionFailed|
-|reprovisionFailed|
 
 ### <a name="chattype-values"></a>значения chatType 
 
