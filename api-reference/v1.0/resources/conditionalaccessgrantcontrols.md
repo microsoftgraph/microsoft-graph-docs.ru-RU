@@ -1,31 +1,40 @@
 ---
-title: Тип ресурса Кондитионалакцессгрантконтролс
-description: Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.
+title: Тип ресурса conditionalAccessGrantControls
+description: Представляет элементы управления предоставлением, которые должны быть выполнены для прохода политики.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 431ea73f20b36b189ae7638cc56a01239c1f113f
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: b0b93508db666fc1673f1c8154ef638762a872f3
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582130"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013669"
 ---
-# <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
+# <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса conditionalAccessGrantControls
 
 Пространство имен: microsoft.graph
 
-Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.
+Представляет элементы управления предоставлением, которые должны быть выполнены для прохода политики.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
-| буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block` , `Mfa` , `CompliantDevice` , `DomainJoinedDevice` , `ApprovedApplication` , `CompliantApplication` |
-| кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Более подробную информацию можно узнать в статье [настраиваемые элементы управления](/azure/active-directory/conditional-access/controls). |
-| термсофусе | Коллекция String | Список [условий использования](/graph/api/resources/agreement) идентификаторов, необходимых для политики. |
+| operator | String | Определяет отношение элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
+| builtInControls | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `block` , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` . `passwordChange` |
+| customAuthenticationFactors | Коллекция String | Список пользовательских ИД элементов управления, необходимых для политики. Дополнительные сведения см. в [настраиваемом элементе управления.](/azure/active-directory/conditional-access/controls) |
+| termsOfUse | Коллекция String | Список [условий использования,](/graph/api/resources/agreement) необходимых для политики. |
+
+### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Особые соображения при использовании `passwordChange` в качестве управления
+
+При использовании этого управления учитывайте `passwordChange` следующее: 
+
+- `passwordChange` должен сопровождаться `mfa` с помощью `AND` оператора. Это сочетание гарантирует безопасное обновление пароля.
+- `passwordChange` должен использоваться в политике, содержащей `userRiskLevels` . Это позволяет пользователям использовать безопасный пароль для сброса рисков пользователей.
+- Политика должна быть нацелена `all` на приложения и не исключать их.
+- Политика не может содержать другие условия, кроме `users` . `applications` `userRiskLevels`
 
 ## <a name="relationships"></a>Связи
 

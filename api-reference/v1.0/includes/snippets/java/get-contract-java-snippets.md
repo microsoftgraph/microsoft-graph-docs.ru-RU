@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4146912c0c36ba229f96837a131377eae4c0e56c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3f296869ae6f1422c1e2e4adcfffc66234b599d1
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883785"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015641"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IContractCollectionPage contracts = graphClient.contracts()
+Contract contract = graphClient.contracts("{id}")
     .buildRequest()
     .get();
 

@@ -1,33 +1,34 @@
 ---
-title: Тип ресурса Кондитионалакцесскондитионсет
-description: Представляет тип условий, определяющих, когда применяется политика.
+title: Тип ресурса conditionalAccessConditionSet
+description: Представляет тип условий, управляющих применимой политикой.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1fd96fb7bfa54ff059afa83b7ea922737dc90809
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3163bbefef420a878364f52f9dabc8dee1e7cae
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018930"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013676"
 ---
-# <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса Кондитионалакцесскондитионсет
+# <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса conditionalAccessConditionSet
 
 Пространство имен: microsoft.graph
 
-Представляет тип условий, определяющих, когда применяется политика.
+Представляет тип условий, управляющих применимой политикой.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|заявлен|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователя, включенные в политику и исключенные из нее. Обязательно. |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательно. |
-|клиентапптипес|Коллекция String| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователей, включенные в политику и исключенные из нее. Обязательный. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательный. |
+|clientAppTypes|Коллекция String| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Расположения, включенные в политику и исключенные из нее. |
-|Embedded|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
-|сигнинрисклевелс|Коллекция String| Уровни риска, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
+|платформы|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
+|signInRiskLevels|Коллекция String| Уровни риска для входов, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
+|userRiskLevels|Коллекция String| Уровни риска для пользователей, включенные в политику. Возможные значения: `low`, `medium`, `high`.|
 
 ## <a name="relationships"></a>Связи
 
@@ -43,7 +44,8 @@ ms.locfileid: "48018930"
     "clientAppTypes",
     "locations",
     "platforms",
-    "signInRiskLevels"
+    "signInRiskLevels",
+    "userRiskLevels"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
   "baseType": null
@@ -56,7 +58,8 @@ ms.locfileid: "48018930"
   "clientAppTypes": ["String"],
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
-  "signInRiskLevels": ["String"]
+  "signInRiskLevels": ["String"],
+  "userRiskLevels": ["String"]
 }
 ```
 
