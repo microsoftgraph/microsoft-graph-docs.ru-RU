@@ -5,52 +5,52 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 84dd108625cbe3620de1776a965f4268030d92ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7109c072d648f3628f3c84540377d0560f932f63
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992193"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033976"
 ---
-# <a name="create-tablecolumn"></a><span data-ttu-id="10168-103">Создание объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="10168-103">Create TableColumn</span></span>
+# <a name="create-tablecolumn"></a><span data-ttu-id="43802-103">Создание объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="43802-103">Create TableColumn</span></span>
 
-<span data-ttu-id="10168-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10168-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="43802-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43802-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="10168-105">С помощью этого API можно создать объект TableColumn.</span><span class="sxs-lookup"><span data-stu-id="10168-105">Use this API to create a new TableColumn.</span></span>
-## <a name="permissions"></a><span data-ttu-id="10168-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="10168-106">Permissions</span></span>
-<span data-ttu-id="10168-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10168-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="43802-105">С помощью этого API можно создать объект TableColumn.</span><span class="sxs-lookup"><span data-stu-id="43802-105">Use this API to create a new TableColumn.</span></span>
+## <a name="permissions"></a><span data-ttu-id="43802-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43802-106">Permissions</span></span>
+<span data-ttu-id="43802-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43802-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10168-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="10168-109">Permission type</span></span>      | <span data-ttu-id="10168-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="10168-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43802-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43802-109">Permission type</span></span>      | <span data-ttu-id="43802-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43802-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="10168-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="10168-111">Delegated (work or school account)</span></span> | <span data-ttu-id="10168-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="10168-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="10168-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="10168-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10168-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="10168-114">Not supported.</span></span>    |
-|<span data-ttu-id="10168-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="10168-115">Application</span></span> | <span data-ttu-id="10168-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="10168-116">Not supported.</span></span> |
+|<span data-ttu-id="43802-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43802-111">Delegated (work or school account)</span></span> | <span data-ttu-id="43802-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="43802-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="43802-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43802-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43802-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43802-114">Not supported.</span></span>    |
+|<span data-ttu-id="43802-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="43802-115">Application</span></span> | <span data-ttu-id="43802-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43802-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="10168-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="10168-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43802-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="43802-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="10168-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="10168-118">Request headers</span></span>
-| <span data-ttu-id="10168-119">Имя</span><span class="sxs-lookup"><span data-stu-id="10168-119">Name</span></span>       | <span data-ttu-id="10168-120">Описание</span><span class="sxs-lookup"><span data-stu-id="10168-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="43802-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="43802-118">Request headers</span></span>
+| <span data-ttu-id="43802-119">Имя</span><span class="sxs-lookup"><span data-stu-id="43802-119">Name</span></span>       | <span data-ttu-id="43802-120">Описание</span><span class="sxs-lookup"><span data-stu-id="43802-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="10168-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="10168-121">Authorization</span></span>  | <span data-ttu-id="10168-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="10168-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="10168-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="10168-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="10168-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="10168-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="43802-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="43802-121">Authorization</span></span>  | <span data-ttu-id="43802-p102">Bearer {token}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="43802-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="43802-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="43802-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="43802-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="43802-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="10168-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="10168-127">Request body</span></span>
-<span data-ttu-id="10168-128">В тексте запроса добавьте представление объекта [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="10168-128">In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43802-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="43802-127">Request body</span></span>
+<span data-ttu-id="43802-128">В теле запроса укажу представление объекта [WorkbookTableColumn](../resources/workbooktablecolumn.md) в JSON.</span><span class="sxs-lookup"><span data-stu-id="43802-128">In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10168-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="10168-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="43802-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="43802-129">Response</span></span>
 
-<span data-ttu-id="10168-130">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="10168-130">If successful, this method returns `201 Created` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.</span></span>
+<span data-ttu-id="43802-130">В случае успеха этот метод возвращает код отклика и объект `201 Created` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="43802-130">If successful, this method returns `201 Created` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10168-131">Пример</span><span class="sxs-lookup"><span data-stu-id="10168-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="10168-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="10168-132">Request</span></span>
-<span data-ttu-id="10168-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="10168-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="43802-131">Пример</span><span class="sxs-lookup"><span data-stu-id="43802-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="43802-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="43802-132">Request</span></span>
+<span data-ttu-id="43802-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="43802-133">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="10168-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="10168-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="43802-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="43802-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tablecolumn_from_table"
@@ -61,33 +61,33 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="10168-135">C#</span><span class="sxs-lookup"><span data-stu-id="10168-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="43802-135">C#</span><span class="sxs-lookup"><span data-stu-id="43802-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tablecolumn-from-table-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="10168-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10168-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="43802-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="43802-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tablecolumn-from-table-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="10168-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10168-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="43802-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="43802-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-tablecolumn-from-table-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="10168-138">Java</span><span class="sxs-lookup"><span data-stu-id="10168-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="43802-138">Java</span><span class="sxs-lookup"><span data-stu-id="43802-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tablecolumn-from-table-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="10168-139">В тексте запроса добавьте представление объекта [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="10168-139">In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="10168-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="10168-140">Response</span></span>
-<span data-ttu-id="10168-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="10168-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="43802-139">В теле запроса укажу представление объекта [WorkbookTableColumn](../resources/workbooktablecolumn.md) в JSON.</span><span class="sxs-lookup"><span data-stu-id="43802-139">In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="43802-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="43802-140">Response</span></span>
+<span data-ttu-id="43802-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="43802-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,7 +99,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"

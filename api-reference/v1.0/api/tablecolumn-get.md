@@ -5,53 +5,53 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3932c02634f284ffe29913bfae8ef9b655bee1d9
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e7b86effb3dc28414dd45653cd3caabaf801434c
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457326"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033906"
 ---
-# <a name="get-tablecolumn"></a><span data-ttu-id="0773e-103">Получение объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="0773e-103">Get TableColumn</span></span>
+# <a name="get-tablecolumn"></a><span data-ttu-id="95253-103">Получение объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="95253-103">Get TableColumn</span></span>
 
-<span data-ttu-id="0773e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0773e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="95253-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="95253-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0773e-105">Получение свойств и связей объекта tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="0773e-105">Retrieve the properties and relationships of tablecolumn object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0773e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0773e-106">Permissions</span></span>
-<span data-ttu-id="0773e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0773e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="95253-105">Получение свойств и связей объекта tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="95253-105">Retrieve the properties and relationships of tablecolumn object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="95253-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="95253-106">Permissions</span></span>
+<span data-ttu-id="95253-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95253-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0773e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0773e-109">Permission type</span></span>      | <span data-ttu-id="0773e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0773e-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="95253-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="95253-109">Permission type</span></span>      | <span data-ttu-id="95253-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="95253-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0773e-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0773e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0773e-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0773e-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="0773e-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0773e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0773e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0773e-114">Not supported.</span></span>    |
-|<span data-ttu-id="0773e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0773e-115">Application</span></span> | <span data-ttu-id="0773e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0773e-116">Not supported.</span></span> |
+|<span data-ttu-id="95253-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="95253-111">Delegated (work or school account)</span></span> | <span data-ttu-id="95253-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="95253-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="95253-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="95253-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95253-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="95253-114">Not supported.</span></span>    |
+|<span data-ttu-id="95253-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="95253-115">Application</span></span> | <span data-ttu-id="95253-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="95253-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0773e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0773e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="95253-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="95253-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/columns/{id|name}
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0773e-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="0773e-118">Optional query parameters</span></span>
-<span data-ttu-id="0773e-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="0773e-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="95253-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="95253-118">Optional query parameters</span></span>
+<span data-ttu-id="95253-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="95253-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0773e-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0773e-120">Request headers</span></span>
-| <span data-ttu-id="0773e-121">Имя</span><span class="sxs-lookup"><span data-stu-id="0773e-121">Name</span></span>      |<span data-ttu-id="0773e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="0773e-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="95253-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="95253-120">Request headers</span></span>
+| <span data-ttu-id="95253-121">Имя</span><span class="sxs-lookup"><span data-stu-id="95253-121">Name</span></span>      |<span data-ttu-id="95253-122">Описание</span><span class="sxs-lookup"><span data-stu-id="95253-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="0773e-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0773e-123">Authorization</span></span>  | <span data-ttu-id="0773e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0773e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="0773e-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="0773e-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="0773e-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="0773e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="95253-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="95253-123">Authorization</span></span>  | <span data-ttu-id="95253-p102">Bearer {token}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="95253-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="95253-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="95253-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="95253-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="95253-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0773e-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0773e-129">Request body</span></span>
-<span data-ttu-id="0773e-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0773e-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="95253-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="95253-129">Request body</span></span>
+<span data-ttu-id="95253-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="95253-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0773e-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="0773e-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="95253-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="95253-131">Response</span></span>
 
-<span data-ttu-id="0773e-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0773e-132">If successful, this method returns a `200 OK` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="0773e-133">Пример</span><span class="sxs-lookup"><span data-stu-id="0773e-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0773e-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="0773e-134">Request</span></span>
-<span data-ttu-id="0773e-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0773e-135">Here is an example of the request.</span></span>
+<span data-ttu-id="95253-132">В случае успеха этот метод возвращает код отклика и объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="95253-132">If successful, this method returns a `200 OK` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="95253-133">Пример</span><span class="sxs-lookup"><span data-stu-id="95253-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="95253-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="95253-134">Request</span></span>
+<span data-ttu-id="95253-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="95253-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0773e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="0773e-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="95253-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="95253-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_tablecolumn"
@@ -59,26 +59,26 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 ```
-# <a name="c"></a>[<span data-ttu-id="0773e-137">C#</span><span class="sxs-lookup"><span data-stu-id="0773e-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="95253-137">C#</span><span class="sxs-lookup"><span data-stu-id="95253-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tablecolumn-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0773e-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0773e-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="95253-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="95253-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tablecolumn-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0773e-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0773e-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="95253-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="95253-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tablecolumn-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0773e-140">Java</span><span class="sxs-lookup"><span data-stu-id="0773e-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="95253-140">Java</span><span class="sxs-lookup"><span data-stu-id="95253-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tablecolumn-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="0773e-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="0773e-141">Response</span></span>
-<span data-ttu-id="0773e-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0773e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="95253-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="95253-141">Response</span></span>
+<span data-ttu-id="95253-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="95253-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
