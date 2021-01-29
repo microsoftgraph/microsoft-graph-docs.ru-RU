@@ -5,18 +5,18 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 3573caaa6c57ada2ca961d8aa94cb5a5ad81811a
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 2b60f8adb623bddfa46e05e3038ffd2eef370bcb
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844881"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034318"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph позволяет вашему приложению получать авторизованный доступ к данным почты Outlook в личной или корпоративной учетной записи. Имея [соответствующие делегированные разрешения или разрешения приложения](/graph/permissions-reference), приложение может получать доступ к данным почты вошедшего пользователя или любого пользователя в клиенте. 
+Microsoft Graph позволяет вашему приложению получать авторизованный доступ к данным почты Outlook в личной или корпоративной учетной записи. Имея соответствующие делегированные разрешения или [разрешения почты приложения](/graph/permissions-reference#mail-permissions), приложение может получать доступ к данным почты вошедшего пользователя или любого пользователя в клиенте. Дополнительные сведения о маркерах доступа, регистрации приложения, а также делегированных разрешениях и разрешениях приложения см. в статье [Основные сведения о проверке подлинности и авторизации](/graph/auth/auth-concepts).
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
