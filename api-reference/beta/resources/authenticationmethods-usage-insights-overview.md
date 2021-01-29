@@ -1,48 +1,67 @@
 ---
-title: Работа с API отчетов об использовании методов проверки подлинности
-description: Отчет об использовании способов проверки подлинности помогает Организации определить, как их конечные пользователи используют функции Azure Active Directory, такие как самостоятельный сброс паролей и многофакторная проверка подлинности (MFA).
+title: Работа с API отчета об использовании методов проверки подлинности
+description: Отчет об использовании методов проверки подлинности помогает организации понять, как пользователи используют такие возможности Azure Active Directory, как самостоятельный сброс паролей и многофакторная проверка подлинности (MFA).
 localization_priority: Normal
 author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: fbf9bc81d37b7f102e46ae47a899403570862660
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: ba46366db81c2fbd754e7e7b83769af65b078294
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523485"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052491"
 ---
-# <a name="working-with-the-authentication-methods-usage-report-api"></a>Работа с API отчетов об использовании методов проверки подлинности
+# <a name="working-with-the-authentication-methods-usage-report-api"></a>Работа с API отчета об использовании методов проверки подлинности
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отчеты об использовании методов проверки подлинности позволяют понять, как пользователи в вашей организации используют функции Azure Active Directory (Azure AD), такие как самостоятельный сброс пароля и многофакторная проверка подлинности (MFA).
+Отчеты об использовании методов проверки подлинности помогают понять, как пользователи в организации используют функции Azure Active Directory (Azure AD), такие как многофакторная проверка подлинности (MFA), Self-Service сброс пароля (SSPR) и проверка подлинности без пароля.
 
-В этих отчетах представлены следующие сведения:
+Эти отчеты предоставляют такие сведения, как:
 
-- Методы проверки подлинности более успешны для Организации. 
-- Сведения об ошибках, с которыми работает конечный пользователь.
-- Какую кампанию необходимо выполнить, чтобы помочь конечным пользователям принять использование REST пароля и MFA для самостоятельного пароля.
+- Количество пользователей, зарегистрированных для каждого метода проверки подлинности
+- Количество пользователей, зарегистрированных для таких функций, как многофакторная проверка подлинности (MFA), Self-Service сброс пароля (SSPR) и проверка подлинности без пароля.
+- Процент сбоев каждого метода проверки подлинности 
 
-## <a name="common-requests"></a>Общие запросы
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуются разрешения ниже. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В следующей таблице перечислены некоторые распространенные запросы, которые можно использовать с этим API.
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|Reports.Read.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
-| Operation | Попробовать в песочнице Graph | Description |
-| --------- | --- | ----------- |
-| [жеткредентиалусеррегистратионкаунт](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [ПОЛУЧЕНИЕ/кредентиалусеррегистратионкаунт](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Получение числа пользователей, зарегистрированных для самостоятельного сброса пароля и MFA. |
-| [жеткредентиалусажесуммари](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [ПОЛУЧЕНИЕ/кредентиалусажесуммари](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Получение числа пользователей, использующих самостоятельный сброс пароля. |
-| [кредентиалусеррегистратиондетаилс](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) | [ПОЛУЧЕНИЕ/кредентиалусеррегистратиондетаилс](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Получение сведений о пользователях для самостоятельного сброса пароля и действий регистрации MFA. |
-| [усеркредентиалусажедетаилс](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) | [ПОЛУЧЕНИЕ/усеркредентиалусажедетаилс](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Получение сведений о пользователях для всех действий самостоятельного сброса пароля. |
+Для доступа к API требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
+
+* Читатель отчетов
+* Читатель сведений о безопасности
+* Администратор безопасности
+* Глобальный читатель
+* Глобальный администратор
 
 ## <a name="licenses"></a>Лицензии
 
-Отчеты об использовании доступны для лицензионных функций, которые используют преимущества самостоятельного сброса пароля и MFA в клиенте.
+Для доступа к сведениям об использовании и статистике необходима лицензия Azure AD Premium P1 или P2. Сведения о лицензировании многофакторной идентификации Azure AD и самостоятельного сброса пароля (SSPR) можно найти на сайте цен [Azure Active Directory.](https://azure.microsoft.com/pricing/details/active-directory/)
+
+## <a name="common-requests"></a>Распространенные запросы
+
+В следующей таблице перечислены некоторые распространенные запросы, которые можно использовать с этим API.
+
+| Операция | Попробовать в песочнице Graph | Описание |
+| --------- | --- | ----------- |
+| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Получите количество пользователей, зарегистрированных для самостоятельного сброса паролей и многофаксной многофаксной защиты. |
+| [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Получить количество пользователей, использующих самостоятельный сброс паролей. |
+| [credentialUserRegistrationDetails](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Получите сведения о пользователях для самостоятельного сброса пароля и регистрации MFA. |
+| [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Получите сведения о пользователях для всех действий по самостоятельному сбросу паролей. |
+| [usersRegisteredByFeature](/graph/api/resources/userregistrationfeaturesummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=beta) | Получите количество пользователей, способных выполнять многофакторную проверку подлинности, самостоятельный сброс паролей и проверку подлинности без пароля. |
+| [usersRegisteredByMethod](/graph/api/resources/userregistrationmethodsummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | Получите количество пользователей, зарегистрированных для каждого метода проверки подлинности. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Сведения о [развертывании средства самообслуживания Azure Active Directory для самостоятельного сброса пароля](/azure/active-directory/authentication/howto-sspr-deployment).
-- Узнайте, как развернуть [Azure Active Directory MFA](/azure/active-directory/authentication/howto-mfa-getstarted).
-- Узнайте, как включить [регистрацию сведений о безопасности в сочетании](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined).
+- Узнайте, как развернуть самостоятельный сброс пароля [Azure Active Directory.](/azure/active-directory/authentication/howto-sspr-deployment)
+- Узнайте, как развернуть [Azure Active Directory MFA.](/azure/active-directory/authentication/howto-mfa-getstarted)
+- Узнайте, как включить [комбинированную регистрацию данных безопасности.](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)

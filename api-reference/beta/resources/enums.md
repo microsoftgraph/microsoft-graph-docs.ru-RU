@@ -1,20 +1,359 @@
 ---
 title: Значения enum
-description: Значения измеримого индекса Microsoft Graph
+description: Значения для индексирования Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 1e35b41fb77b1c1f83c728858fc1b543596c5507
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: b3b6cb7bbc2abacc02939ad374808f4e1ddbed85
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034305"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052540"
 ---
 # <a name="enum-values"></a>Значения enum
 
 Пространство имен: microsoft.graph
+
+### <a name="appliedconditionalaccesspolicyresult-values"></a>значения appliedConditionalAccessPolicyResult 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
+
+### <a name="authenticationmethodfeature-values"></a>Значения authenticationMethodFeature 
+
+
+
+|Member|
+|:---|
+|ssprRegistered|
+|ssprEnabled|
+|ssprCapable|
+|passwordlessCapable|
+|mfaCapable|
+
+### <a name="authmethodstype-values"></a>значения authMethodsType 
+
+
+
+|Member|
+|:---|
+|email|
+|mobileSMS|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appNotificationCode|
+|appNotificationAndCode|
+|appPassword|
+|fido|
+|alternateMobilePhone|
+|mobilePhoneAndSMS|
+|unknownFutureValue|
+
+### <a name="azureadlicensetype-values"></a>значения azureADLicenseType 
+
+
+
+|Member|
+|:---|
+|Нет|
+|free|
+|basic|
+|premiumP1|
+|premiumP2|
+|unknownFutureValue|
+
+### <a name="conditionalaccessconditions-values"></a>значения conditionalAccessConditions 
+
+
+
+|Member|
+|:---|
+|Нет|
+|приложение|
+|users|
+|devicePlatform|
+|расположение;|
+|clientType|
+|signInRisk|
+|userRisk|
+|time|
+|deviceState|
+|client|
+
+### <a name="conditionalaccessstatus-values"></a>значения conditionalAccessStatus 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
+### <a name="featuretype-values"></a>Значения featureType 
+
+
+
+|Member|
+|:---|
+|registration|
+|сброс|
+|unknownFutureValue|
+
+### <a name="grouptype-values"></a>значения groupType 
+
+
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### <a name="includeduserroles-values"></a>значения includedUserRoles 
+
+
+
+|Member|
+|:---|
+|all|
+|privilegedAdmin|
+|admin|
+|user|
+|unknownFutureValue|
+
+### <a name="includedusertypes-values"></a>значения includedUserTypes 
+
+
+
+|Member|
+|:---|
+|all|
+|участники|
+|guest|
+|unknownFutureValue|
+
+### <a name="initiatortype-values"></a>Значения initiatorType 
+
+
+
+|Member|
+|:---|
+|user|
+|приложение|
+|system|
+|unknownFutureValue|
+
+### <a name="migrationstatus-values"></a>Значения migrationStatus 
+
+
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
+
+### <a name="networktype-values"></a>значения networkType 
+
+
+
+|Member|
+|:---|
+|интрасеть|
+|extranet|
+|namedNetwork|
+|trusted|
+|unknownFutureValue|
+
+### <a name="operationresult-values"></a>Значения operationResult 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|timeout|
+|unknownFutureValue|
+
+### <a name="provisioningresult-values"></a>значения provisioningResult 
+
+
+
+|Member|
+|:---|
+|success|
+|failure|
+|пропущено|
+|unknownFutureValue|
+
+### <a name="provisioningsteptype-values"></a>значения provisioningStepType 
+
+
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|обработка|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### <a name="registrationauthmethod-values"></a>значения registrationAuthMethod 
+
+
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+|fido|
+|appPassword|
+|unknownFutureValue|
+
+### <a name="registrationstatustype-values"></a>значения registrationStatusType 
+
+
+
+|Member|
+|:---|
+|registered|
+|включено|
+|capable|
+|mfaRegistered|
+|unknownFutureValue|
+
+### <a name="requirementprovider-values"></a>значения requirementProvider 
+
+
+
+|Member|
+|:---|
+|Многофакторная проверка подлинности|
+|ЦС|
+|unknownFutureValue|
+
+### <a name="riskdetail-values"></a>значения riskDetail 
+
+
+
+|Member|
+|:---|
+|Нет|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|adminConfirmedUserCompromised|
+|unknownFutureValue|
+
+### <a name="riskeventtype-values"></a>значения riskEventType 
+
+
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
+### <a name="risklevel-values"></a>Значения riskLevel 
+
+
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|Нет|
+|unknownFutureValue|
+
+### <a name="riskstate-values"></a>значения riskState 
+
+
+
+|Member|
+|:---|
+|Нет|
+|confirmedSafe|
+|исправлено|
+|dismissed|
+|atRisk|
+|confirmedCompromised|
+|unknownFutureValue|
+
+### <a name="tokenissuertype-values"></a>Значения tokenIssuerType 
+
+
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
+
+### <a name="usageauthmethod-values"></a>значения usageAuthMethod 
+
+
+
+|Member|
+|:---|
+|email|
+|mobileSMS|
+|mobileCall|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobileCall|
+|fido|
+|appPassword|
+|unknownFutureValue|
 
 ### <a name="authenticationmethodkeystrength-values"></a>Значения authenticationMethodKeyStrength
 
@@ -284,7 +623,7 @@ ms.locfileid: "50034305"
 |1|
 |trafficCone|
 |pin|
-|1|
+|10|
 |unknownFutureValue|
 
 ### <a name="schedulechangestate-values"></a>Значения scheduleChangeState
@@ -332,7 +671,7 @@ ms.locfileid: "50034305"
 | iana
 
 
-### <a name="freebusystatus-values"></a>значения freeBusyStatus
+### <a name="freebusystatus-values"></a>Значения freeBusyStatus
 
 | Элемент           | Значение |
 | :--------------- | :---- |
@@ -644,7 +983,7 @@ ms.locfileid: "50034305"
 | Автоматически
 | noPreview
 | checklist
-| description
+| (описание)
 | справочник
 
 
@@ -712,7 +1051,7 @@ ms.locfileid: "50034305"
 | OnPremOneDriveForBusiness
 
 
-### <a name="responsetype-values"></a>Значения responseType
+### <a name="responsetype-values"></a>значения responseType
 
 | Member
 |:-------------------------
@@ -734,7 +1073,7 @@ ms.locfileid: "50034305"
 | unrestricted
 
 
-### <a name="websitetype-values"></a>Значения websiteType
+### <a name="websitetype-values"></a>значения websiteType
 
 | Member
 |:-------------------------
@@ -761,7 +1100,7 @@ ms.locfileid: "50034305"
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -824,7 +1163,7 @@ ms.locfileid: "50034305"
 | Элемент    | Значение | Описание                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | Неизвестно.                      |
-| неверная | 10     | Уровень целостности не является недоверным. |
+| untrusted | 10     | Уровень целостности не является недоверным. |
 | low       | 20    | Уровень целостности низкий.       |
 | medium    | 30    | Уровень целостности средний.    |
 | high      | 40    | Уровень целостности высокий.      |
@@ -872,7 +1211,7 @@ Enum for registry value types as defined by [Registry value types](/windows/desk
 | Нет              | 8      | REG_NONE реестра.                |
 | qword             | 9      | REG_QWORD реестра.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN реестра. |
-| sz                | 11     | REG_SZ реестра.                  |
+| sz                | 11    | REG_SZ реестра.                  |
 
 ### <a name="alertseverity-values"></a>Значения alertSeverity
 
@@ -1133,7 +1472,7 @@ Enum for severity of alerts.
 
 | Member   | Значение int |  Описание |
 |:---------------|:--------|:----------|
-| Нет | 0 | Значение по умолчанию. Это значение для сообщения, если пользователь не принял действие с сообщением, заблокированным DLP. |
+| Нет | 0 | Значение по умолчанию. Это значение в сообщении, если пользователь не принял действие с сообщением, заблокированным DLP. |
 | Override | 1  | Отправитель переопределил решение и отправил сообщение.|
 | ReportFalsePositive | 2  | Отправитель сообщил администраторам о ложном срабатывии.|
 
@@ -1199,7 +1538,7 @@ Enum for severity of alerts.
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | Неавтные данные; Например, файл в папке.                                 |
 | движение | 1      | Данные в движении. Файл, перехваченный сетевым устройством в пути.         |
-| use    | 2      | Данные используются. Файл открывается в клиентских приложениях, таких как Microsoft Office. |
+| use    | 2      | Данные используются. Файл открыт в клиентских приложениях, таких как Microsoft Office. |
 
 ### <a name="assignmentmethod-values"></a>Значения assignmentMethod
 
@@ -1207,7 +1546,7 @@ Enum for severity of alerts.
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
 | standard   | 0     | Метка была установлена с помощью условия службы или политики.                                                                              |
 | privileged | 1      | Метка была явно установлена пользователем.                                                                                          |
-| Авто       | 2      | Разрешает переопределять любую существующую метку. Обоснование, необходимое для понижения. Метод `standard` назначения в метаданных. |
+| Авто       | 2      | Разрешает переопределять любую существующую метку. Обоснование, необходимое для понижения. Приводит к `standard` методу назначения в метаданных. |
 
 ### <a name="actionsource-values"></a>значения actionSource
 
@@ -1217,7 +1556,7 @@ Enum for severity of alerts.
 | Автоматически     | 1      | Метка была выбрана в результате условий политики.       |
 | Рекомендуемый   | 2      | Выбрано применение рекомендуемой метки.                    |
 | policyDefault | 3     | Пользователь не применял действие и метку по умолчанию политики. |
-| mandatory     | 4      | Пользователь выбрал метку после принудительного выбора.         |
+| mandatory     | 4      | Пользователь выбрал метку после принудительных выборов.         |
 
 ### <a name="contentalignment-values"></a>значения contentAlignment
 
@@ -1225,7 +1564,7 @@ Enum for severity of alerts.
 | :----- | :---- | :---------------------------------- |
 | left   | 0     | Выравнивание пометки содержимого слева.  |
 | Правильно  | 1      | Выравнивание пометки содержимого справа. |
-| center | 2      | Пометка содержимого по центру.             |
+| center | 2      | Маркировка содержимого по центру.             |
 
 ### <a name="watermarklayout-values"></a>значения watermarkLayout
 
@@ -1365,7 +1704,7 @@ Enum for severity of alerts.
 | firstTimeSender       | 8      | Заблокировано из-за первого отправитель.   |
 | autoPurgeToInbox      | 9      | TimeTravel перемещает сообщение в "Входящие".   |
 | autoPurgeToJunk       | 10     | TimeTravel перемещает сообщение в нежелательное.    |
-| autoPurgeToDeleted    | 11     | Сообщение с перемещением TimeTravel в удаленное. |
+| autoPurgeToDeleted    | 11    | Сообщение с перемещением TimeTravel в удаленное. |
 | исходящие              | 12     | Исходящие сообщения.                      |
 | notJunk               | 13     | Разрешить из-за того, что не является нежелательным.              |
 | junk                  | 14     | Заблокировано из-за нежелательной почты.                |
