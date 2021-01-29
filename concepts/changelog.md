@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7f53722b84784a4c52990c9acf48790ea33e79f1
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 71858bee79e22afe70757fa7339d83795cfe02dd
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934795"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052531"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "49934795"
 ### <a name="cloud-communications"></a>Облачные коммуникации
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Дополнение|Бета|Добавлен сложный тип [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен сложный тип [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta&preserve-view=true).|
 |Дополнение|Бета|Добавлено свойство **outOfOfficeSettings** для типа ресурса [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).|
 |Дополнение|Бета|Добавлены свойства **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** и **alternativeRecording** для объекта [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true), предназначенные для создания трансляций.|
 
