@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9e57e81974f28aefcef35b341c458f8431426308
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5def48977bafef35efc23972211e91022e1d97f
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012903"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034221"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -36,10 +36,10 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -49,7 +49,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 |name|string|name
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -106,7 +106,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"

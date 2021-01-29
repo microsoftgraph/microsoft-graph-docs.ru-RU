@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9f1d4f44509788dcc00c7d037956862fcd645994
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: c5451a586e0597c43b86ab77fab58b6ec4a81150
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457305"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033894"
 ---
 # <a name="list-columns"></a>Перечисление столбцов
 
@@ -22,8 +22,8 @@ ms.locfileid: "48457305"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +38,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,7 +93,7 @@ Content-length: 126
 {
   "value": [
     {
-      "id": 99,
+      "id": "99",
       "name": "name-value",
       "index": 99,
       "values": "values-value"

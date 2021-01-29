@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b22d8d76b9ece640cc873024c28dd1c0380ea9cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e20ce96e1004f6b16e34b33f5e6b016da6059f8
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012911"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034242"
 ---
 # <a name="update-tablecolumn"></a>Обновление объекта TableColumn
 
@@ -35,10 +35,10 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -86,7 +86,7 @@ Content-length: 81
 
 ---
 > [!NOTE]
-> Если вы хотите обновить несколько полей столбца, сделайте **значения** массивом строк в запросе. Пример: `"values": [["a"], [1], [2], [3]]`.
+> Если вы хотите обновить несколько полей  столбца, сделайте значения массивом строк в запросе. Пример: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -101,7 +101,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"

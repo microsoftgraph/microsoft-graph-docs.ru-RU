@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 98e384fa2c6c9b3f8fe651135e8ab8b7e072a63c
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: f25491b15716522d1ade22781465dfd53c06f610
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460735"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034249"
 ---
 # <a name="list-tablecolumncollection"></a>Список TableColumnCollection
 
@@ -22,8 +22,8 @@ ms.locfileid: "48460735"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +38,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -93,7 +93,7 @@ Content-length: 126
 {
   "value": [
     {
-      "id": 99,
+      "id": "99",
       "name": "name-value",
       "index": 99,
       "values": "values-value"

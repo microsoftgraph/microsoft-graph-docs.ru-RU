@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 84dd108625cbe3620de1776a965f4268030d92ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7109c072d648f3628f3c84540377d0560f932f63
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992193"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033976"
 ---
 # <a name="create-tablecolumn"></a>Создание объекта TableColumn
 
@@ -36,15 +36,15 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в формате JSON.
+В теле запроса укажу представление объекта [WorkbookTableColumn](../resources/workbooktablecolumn.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -61,7 +61,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
@@ -85,7 +85,7 @@ Content-length: 81
 
 ---
 
-В тексте запроса добавьте представление объекта [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в формате JSON.
+В теле запроса укажу представление объекта [WorkbookTableColumn](../resources/workbooktablecolumn.md) в JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"

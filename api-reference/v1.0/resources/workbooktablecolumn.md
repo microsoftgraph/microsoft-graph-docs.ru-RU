@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Воркбуктаблеколумн
+title: Тип ресурса workbookTableColumn
 description: Представляет столбец в таблице.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2d9e978291b7a5f45ba000e7de4095ef03147c15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85a8c4b53eb39ae440946872718447f272ef841b
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015094"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033913"
 ---
-# <a name="workbooktablecolumn-resource-type"></a>Тип ресурса Воркбуктаблеколумн
+# <a name="workbooktablecolumn-resource-type"></a>Тип ресурса workbookTableColumn
 
 Пространство имен: microsoft.graph
 
@@ -45,7 +45,7 @@ ms.locfileid: "48015094"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|filter|[воркбукфилтер](filter.md)|Возвращает фильтр, применяемый к столбцу. Только для чтения.|
+|filter|[WorkbookFilter](filter.md)|Возвращает фильтр, применяемый к столбцу. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -61,7 +61,7 @@ ms.locfileid: "48015094"
 
 ```json
 {
-  "id": 1024,
+  "id": "1024",
   "index": 1024,
   "name": "string",
   "values": "json"

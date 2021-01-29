@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3932c02634f284ffe29913bfae8ef9b655bee1d9
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e7b86effb3dc28414dd45653cd3caabaf801434c
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457326"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033906"
 ---
 # <a name="get-tablecolumn"></a>Получение объекта TableColumn
 
@@ -22,8 +22,8 @@ ms.locfileid: "48457326"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +38,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -90,7 +90,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
