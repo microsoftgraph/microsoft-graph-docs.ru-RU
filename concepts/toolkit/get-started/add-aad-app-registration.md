@@ -3,12 +3,12 @@ title: Создание приложения Azure Active Directory
 description: Создание регистрации приложения Azure Active Directory для связи с Microsoft 365
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 7534d0d15b9ff1b2e1d94fe8d5e8e9e8f771ca91
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 821cd6981ddb24e3917a4c0720f1c8c524081f54
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659171"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059569"
 ---
 # <a name="create-an-azure-active-directory-app-to-use-with-the-microsoft-graph-toolkit"></a>Создание приложения Azure Active Directory для использования с Microsoft Graph Toolkit
 
@@ -24,7 +24,7 @@ Microsoft Graph — это API, используемый для подключе
 1. В меню выберите **Azure Active Directory**.
 1. В меню Azure Active Directory выберите **Регистрация приложений**.
 1. В верхнем меню нажмите кнопку **Новая регистрация**.
-1. Введите имя приложения, например `My M365 app`.
+1. Введите имя приложения; например, `My M365 app` .
 1. Для параметра [Поддерживаемые типы учетных записей](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app) выберите **Учетные записи в любом каталоге организации (любой каталог Azure AD — мультитенантный) и персональные учетные записи Майкрософт (например, Skype, Xbox)**.
 1. В разделе **URI перенаправления** в раскрывающемся списке выберите **Веб**, а в поле URL-адреса введите `http://localhost:3000`.
 1. Подтвердите изменения, нажав кнопку **Зарегистрировать**.

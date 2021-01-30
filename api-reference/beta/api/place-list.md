@@ -1,35 +1,35 @@
 ---
-title: Список мест
-description: Получение списка объектов Place.
+title: Места списка
+description: Получить список объектов мест.
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f12d6cf2e05b8ea85459e41746b9fd4f1cba30c0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6232c19bb3f9e1c8f24908b017625ec6cc00985b
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971793"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059737"
 ---
-# <a name="list-places"></a>Список мест
+# <a name="list-places"></a>Места списка
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции указанного типа объектов [Place](../resources/place.md) , определенных в клиенте. Например, вы можете получить все комнаты, все списки помещений или комнаты в определенном списке помещений в клиенте.
+Получите коллекцию объектов указанного типа [мест,](../resources/place.md) определенных в клиенте. Например, можно получить все комнаты, все списки помещений или комнаты в определенном списке помещений в клиенте.
 
-Объект **Place** может иметь один из следующих типов:
+Объект **place** может быть одним из следующих типов:
 
-* [Комната](../resources/room.md) , включающая в себя обширные свойства, такие как адрес электронной почты для комнаты, Специальные возможности, мощность и поддержка устройств. 
-* [Список помещений](../resources/roomlist.md) , включающий адрес электронной почты для списка помещений, и свойство навигации для получения коллекции экземпляров комнаты в списке помещений. 
+* [Комната,](../resources/room.md) которая содержит богатые свойства, такие как адрес электронной почты для комнаты, а также доступность, емкость и поддержка устройств. 
+* Список [помещений,](../resources/roomlist.md) который включает адрес электронной почты для списка помещений и свойство навигации для получения коллекции экземпляров помещений в списке помещений. 
 
-**Комната** и **RoomList принимают одиночные** являются производными от объекта **Place** .
+И **room,** и **roomList** являются производными от **объекта place.**
 
-По умолчанию эта операция возвращает число почтовых мест в 100 на страницу. 
+По умолчанию эта операция возвращает 100 мест на страницу. 
 
-В сравнении с функциями [финдрумс](../api/user-findrooms.md) и [финдрумлистс](../api/user-findroomlists.md) эта операция возвращает расширенные полезные данные для комнат и списков помещений. Подробнее [о](../resources/place.md#using-the-places-api) том, как они сравниваются.
+По сравнению с [функциями findRooms](../api/user-findrooms.md) и [findRoomLists](../api/user-findroomlists.md) эта операция возвращает более емкие полезной нагрузки для помещений и списков помещений. См. [подробные](../resources/place.md#using-the-places-api) сведения о том, как они сравнивают.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,43 +37,43 @@ ms.locfileid: "48971793"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Place.Read.All |
+| Делегированное (рабочая или учебная учетная запись)     | Place.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Для приложения                            | Place.Read.All |
+| Приложение                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
-Чтобы получить все комнаты в клиенте, выполните следующие действия:
+Чтобы получить все комнаты в клиенте:
 
 ```http
 GET /places/microsoft.graph.room
 ```
 
-Получение всех списков помещений в клиенте:
+Чтобы получить все списки помещений в клиенте:
 
 ```http
 GET /places/microsoft.graph.roomlist
 ```
 
-Чтобы получить все комнаты в указанном списке помещений, выполните следующие действия.
+Чтобы получить все комнаты в указанном списке помещений:
 
 ```http
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Note** : для получения комнат в списке помещений необходимо указать список помещений по свойству **EmailAddress** , а не по **идентификатору**. 
+>**Примечание.** Чтобы получить помещения в списке помещений, необходимо указать список помещений по его свойству **emailAddress,** а не **по его ид.** 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие параметры запроса, помогающие настроить ответ:
+Этот метод поддерживает следующие параметры запроса для настройки ответа:
 - $filter
 - $select
 - $top
 - $skip
-- $count = true
+- $count=true
 
-Используйте $top, чтобы настроить размер страницы. Размер страницы по умолчанию — 100.
+Используйте $top для настройки размера страницы. Размер страницы по умолчанию — 100.
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -89,15 +89,15 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Place](../resources/place.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов-мест](../resources/place.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>Пример 1: список всех комнат, определенных в клиенте
+### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>Пример 1. Список всех комнат, определенных в клиенте
 
 #### <a name="request"></a>Запрос
 
-В приведенном ниже примере показано, как получить все объекты [комнаты](../resources/room.md) в клиенте.
+В следующем примере показано, как получить все [объекты комнаты](../resources/room.md) в клиенте.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -166,11 +166,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "100",
-      "capacity": "50",
+      "capacity": 50,
       "building": "1",
       "floorNumber": 1,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "bean bags"
@@ -197,11 +197,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
@@ -215,11 +215,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>Пример 2: список всех списков помещений, определенных в клиенте
+### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>Пример 2. Список всех списков помещений, определенных в клиенте
 
 #### <a name="request"></a>Запрос
 
-В приведенном ниже примере показано, как получить все объекты [RoomList принимают одиночные](../resources/roomlist.md) в клиенте.
+В следующем примере показано, как получить все [объекты roomList](../resources/roomlist.md) в клиенте.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -302,11 +302,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a>Пример 3: список комнат, включенных в список помещений
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a>Пример 3. Список помещений, содержащихся в списке помещений
 
 #### <a name="request"></a>Запрос
 
-В приведенном ниже примере показано, как получить список объектов [комнаты](../resources/room.md) , содержащийся в элементе **RoomList принимают одиночные**. 
+В следующем примере показано, как получить список объектов [помещения,](../resources/room.md) содержащихся в **списке помещений.** 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -375,11 +375,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
