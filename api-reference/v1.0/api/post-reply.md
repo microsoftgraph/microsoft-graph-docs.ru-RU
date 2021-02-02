@@ -1,16 +1,16 @@
 ---
 title: 'post: reply'
-description: 'Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы. Вы можете указать '
+description: 'Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы. Можно указать '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 00a5c333a91d710111b76e7ff0b427a1bc05084c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ecc13135fee90d0fc8175669551578fe9e22d128
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051832"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072382"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -41,7 +41,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -108,6 +108,7 @@ Content-length: 1131
     },
     "attachments": [
       {
+        "@odata.type": "#microsoft.graph.fileAttachment",
         "lastModifiedDateTime": "datetime-value",
         "name": "name-value",
         "contentType": "contentType-value",

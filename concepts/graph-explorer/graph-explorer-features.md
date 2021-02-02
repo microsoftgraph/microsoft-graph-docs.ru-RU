@@ -3,12 +3,12 @@ title: Работа с graph Explorer
 description: Узнайте, как использовать некоторые важные функции в обозревателе Graph.
 localization_priority: Normal
 author: bettirosengugi
-ms.openlocfilehash: d9fe847a4e9402f1f8523afcd350c77bf3a88766
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: b4c669ae6983efe2082b623c3de5b019a049311d
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013755"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072394"
 ---
 # <a name="working-with-graph-explorer"></a>Работа с graph Explorer
 
@@ -16,7 +16,7 @@ ms.locfileid: "50013755"
 
 ## <a name="consent-to-permissions"></a>Согласие на разрешения
 
-Пользователь или администратор должен предоставить graph Explorer правильные разрешения с помощью процесса согласия на доступ к данным в Microsoft Graph. Соглашаться на разрешения в проводнике Graph с  помощью вкладки "Изменение разрешений" или параметра "Выбор разрешений" в шестеренке параметров рядом с вашим профилем при выходе из нее.  На **вкладке "Изменение разрешений"** перечислены все разрешения, необходимые для выполнения запроса в адресной панели. 
+Пользователь или администратор должен предоставить graph Explorer правильные разрешения с помощью процесса согласия на доступ к данным в Microsoft Graph. Согласие на разрешения в проводнике  Graph с помощью  вкладки "Изменение разрешений" или параметра "Выбор разрешений" в шестеренке параметров рядом с профилем при выходе в систему. На **вкладке "Изменение разрешений"** перечислены все разрешения, необходимые для выполнения запроса в адресной панели. 
 
 Чтобы дать согласие на разрешения:
 
@@ -36,7 +36,7 @@ ms.locfileid: "50013755"
 
 ## <a name="get-an-access-or-authentication-token"></a>Получить маркер доступа или проверки подлинности
 
-В проводнике Graph есть вкладка **маркера доступа,** на которую указывается маркер доступа при входе. На **вкладке маркера** Access вы можете скопировать маркер, если его необходимо использовать в своем любимом клиентских приложениях REST.
+В проводнике Graph есть вкладка **маркера доступа,** на которую указывается маркер доступа при входе. На **вкладке маркера Access** вы можете скопировать маркер, если его необходимо использовать в своем любимом клиентских приложениях REST.
 
 ![Снимок экрана: вкладка маркера доступа в обозревателе Graph с выделенной кнопкой "Копировать"](./images/access-token.png)
 
@@ -48,11 +48,11 @@ ms.locfileid: "50013755"
 
 ## <a name="ui-component-integration"></a>Интеграция компонентов пользовательского интерфейса
 
-В обозревателе Graph есть несколько функций, упрощающих реализацию пользовательского интерфейса. Повторное использование этих компонентов и в приложениях.
+В проводнике Graph есть несколько функций, упрощающих реализацию пользовательского интерфейса. Повторное использование этих компонентов и в приложениях.
 
 ### <a name="microsoft-graph-toolkit-integration"></a>Интеграция набор средств Microsoft Graph
 
-Microsoft [Graph набор средств](/graph/toolkit/overview) — это коллекция веб-компонентов, которые не зависит от структуры, и помощников для доступа к Microsoft Graph и работы с ним. Компоненты полностью функциональны: встроенные поставщики, которые аутентификация и извлечение данных из Microsoft Graph.
+Microsoft [Graph набор средств](/graph/toolkit/overview) — это коллекция веб-компонентов, которые не зависит от структуры, и помощников для доступа к Microsoft Graph и работы с ним. Эти компоненты полностью функциональны и имеют встроенные поставщики, которые аутентификация и извлечение данных из Microsoft Graph.
 
 В проводнике Graph есть примеры запросов REST API, которые соответствуют набор средств Microsoft Graph. Синяя точка на вкладке **набор средств** компонента указывает, что набор средств предоставляет компонент для указанного в настоящее время запроса REST API в обозревателе Graph. Вы можете легко скопировать код компонента в приложение.
 
@@ -64,9 +64,9 @@ Microsoft [Graph набор средств](/graph/toolkit/overview) — это 
 | Get people I work with | [https://mgt.dev/iframe.html?id=components-mgt-people— people](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-people--people&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083372878%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=yMF3X0M%2FmvWTUfhMdNYkG5I7fDMXpPHS6Fwea%2B3ycPs%3D&amp;reserved=0) |
 | GET все мои задачи планировщика | [https://mgt.dev/iframe.html?id=components-mgt-tasks- tasks](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-tasks--tasks&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083382869%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=Vk5IhPb%2FNbni7c6bteEveIdQNn%2BPm6AchwewCJ%2Fkmzk%3D&amp;reserved=0) |
 | Get my events for the next week | [https://mgt.dev/iframe.html?id=components-mgt-agenda— get-events-for-next-week](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-agenda--get-events-for-next-week&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083382869%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=VVFcx3gXMmg%2B%2BdQCZXjAmkCk5zKcrntK6fI35jbdN94%3D&amp;reserved=0) |
-| Получение своей фотографии | [https://mgt.dev/iframe.html?id=components-mgt-person— только для фото человека](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person--person-photo-only&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083392872%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=aI%2BUqciLPOxEqlIpbjT8wtWBgcaJWM6sqooRlLVspZ0%3D&amp;reserved=0) |
+| Получение своей фотографии | [https://mgt.dev/iframe.html?id=components-mgt-person-person-photo-only](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person--person-photo-only&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083392872%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=aI%2BUqciLPOxEqlIpbjT8wtWBgcaJWM6sqooRlLVspZ0%3D&amp;reserved=0) |
 
-![Screenshot showing the набор средств components tab with the code to generate the component highlighted](./images/graph-toolkit.png)
+![Screenshot showing the набор средств components tab with the code to generate the component highlighted](./images/get-graph-toolkit-card.png)
 
 ### <a name="adaptive-cards-integration"></a>Интеграция адаптивных карточек
 
@@ -95,7 +95,7 @@ Microsoft [Graph набор средств](/graph/toolkit/overview) — это 
 
 Чтобы поделиться запросами, нажмите кнопку "Поделиться запросом" в области ответа и нажмите кнопку **"Копировать".** Это копирует ссылку для обмена и позволяет другим пользователям видеть ваш запрос и результаты.
 
-![Screenshot of Graph Explorer with the Share and Copy options highlighted](./images/share-query.png)
+![Снимок экрана: обозреватель Graph с выделенной опцией "Поделиться" и "Копировать"](./images/share-query.png)
 
 ## <a name="graph-explorer-ui-features"></a>Функции пользовательского интерфейса проводника Graph
 
@@ -103,7 +103,7 @@ Microsoft [Graph набор средств](/graph/toolkit/overview) — это 
 
 ![Снимок экрана: обозреватель Graph с выделенной опцией расширения и свернутого экрана](./images/expand-collapse-sidebar-component.png)
 
-Раз развернуть и свернуть предварительный просмотр отклика, выбрав стрелку расширения в окне предварительного просмотра отклика.
+Раз развернуть и свернуть предварительный просмотр отклика, выбрав стрелку в окне предварительного просмотра отклика.
 
 ![Screenshot of the response pane with the expand and collapse options highlighted](./images/expand-collapse-response-preview.png)
 

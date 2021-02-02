@@ -3,12 +3,12 @@ title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы предоставить компонентам доступ к Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: bb657e8fb5d6d9a775fb41e5c5c9fa6bf4662926
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 2dc020dbe02a5b3018c1bfb343b7582f8a6110e5
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657298"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072347"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 
@@ -21,7 +21,6 @@ ms.locfileid: "49657298"
 Инициализируйте поставщика в методе `onInit()` веб-части.
 
 ```ts
-
 // import the providers at the top of the page
 import {Providers, SharePointProvider} from '@microsoft/mgt';
 
@@ -34,7 +33,6 @@ protected async onInit() {
 Теперь вы можете добавить любой компонент в метод `render()` и использовать контекст SharePoint для доступа к Microsoft Graph.
 
 ```ts
-
 public render(): void {
     this.domElement.innerHTML = `
       <mgt-agenda></mgt-agenda>
@@ -46,7 +44,7 @@ public render(): void {
 
 ## <a name="sample"></a>Пример
 
-Сведения об инициализации поставщика SharePoint см. в руководстве по началу работы [Создание веб-части SharePoint](../get-started/build-a-sharepoint-web-part.md).
+Сведения о том, как инициализировать поставщика SharePoint, см. в руководстве по началу работы с веб-частью "Создание веб-части [SharePoint".](../get-started/build-a-sharepoint-web-part.md)
 
 Пример готовой веб-части, в котором показано, как использовать различные компоненты в веб-частях SharePoint, см. в статье [Пример веб-части SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) в репозитории Microsoft Graph Toolkit.
 

@@ -3,12 +3,12 @@ title: Создание вкладки Microsoft Teams с помощью microso
 description: Начало создания вкладки Microsoft Teams с помощью microsoft Graph набор средств.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 9cd548e78ff21577df852a28be76e45144bfb91d
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 96a820fa26697d360128b86ea8ba7cbd4d3c1cd8
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663920"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072354"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Создание вкладки Microsoft Teams с помощью microsoft Graph набор средств
 
@@ -35,9 +35,9 @@ ngrok http 3000
 ```
 В каталоге проекта найдите файл и замените значение `.publish\Development.env` `baseUrl0` url-адреса ngrok.
 
-## <a name="add-the-microsoft-graph-toolkit"></a>Добавление учетной записи Microsoft Graph набор средств
+## <a name="add-the-microsoft-graph-toolkit"></a>Добавление Microsoft Graph Toolkit
 
-Вы можете использовать microsoft Graph набор средств в приложении, ссылаясь на загрузчик напрямую (с помощью unpkg) или установив пакет npm. Чтобы использовать набор средств, вам также потребуется [SDK Microsoft Teams.](/javascript/api/overview/msteams-client?view=msteams-client-js-latest)
+Используйте Microsoft Graph Toolkit в приложении, обратившись непосредственно к загрузчику (через unpkg) или установив пакет npm. Чтобы использовать набор средств, вам также потребуется [SDK Microsoft Teams.](/javascript/api/overview/msteams-client?view=msteams-client-js-latest)
 
 ### <a name="use-via-mgt-loader"></a>Использование с помощью mgt-loader
 Чтобы использовать набор средств и Teams SDK через загрузчики, добавьте следующие ссылки `public/index.html` на:
@@ -48,7 +48,7 @@ ngrok http 3000
 ```
 
 ### <a name="use-via-npm-es6-modules"></a>Использование через npm (модули ES6)
-Использование набор средств с помощью модулей ES6 дает полный контроль над процессом пакетизации и позволяет объединить только код, необходимый для вашего приложения. Чтобы использовать модули ES6, добавьте пакеты npm для набор средств и пакета Microsoft Teams SDK в проект:
+Использование Toolkit с помощью модулей ES6 обеспечивает полное управление процессом объединения и позволяет объединить только код, необходимый для приложения. Чтобы использовать модули ES6, добавьте пакеты npm для набор средств и microsoft Teams SDK в проект:
 
 ```bash
 npm install @microsoft/mgt @microsoft/teams-js
@@ -56,9 +56,9 @@ npm install @microsoft/mgt @microsoft/teams-js
 
 ## <a name="initialize-the-teams-provider"></a>Инициализация поставщика Teams
 
-Поставщики набор средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные см. [в этой теме.](../providers/providers.md) Поставщик [Teams обрабатывает](../providers/teams.md) всю логику и взаимодействия, которые необходимо реализовать с помощью SDK Teams для проверки подлинности пользователя.
+Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). Поставщик [Teams обрабатывает](../providers/teams.md) всю логику и взаимодействия, которые необходимо реализовать с помощью SDK Teams для проверки подлинности пользователя.
 
-Вы можете инициализировать поставщика в коде HTML или JavaScript. 
+Чтобы инициализировать поставщика, можно использовать HTML-код или JavaScript. 
 
 ### <a name="initialize-in-html"></a>Инициализация в HTML
 
@@ -87,15 +87,15 @@ Providers.globalProvider = new TeamsProvider ({
     authPopupUrl: '/auth.html'
 })
 ```
-Замените `<YOUR_CLIENT_ID>` его на ИД клиента для вашего приложения.
+Замените `<YOUR_CLIENT_ID>` на идентификатор клиента для своего приложения.
 
-### <a name="creating-an-appclient-id"></a>Создание приложения или ИД клиента
-Чтобы получить ИД клиента, необходимо зарегистрировать приложение [в](../../auth-register-app-v2.md) Azure AD. Обязательно добавьте URL-адрес ngrok с полным путем во всплывающее окне auth в URIS перенаправления `https://<YOUR_NGROK_URL>/auth.html` (например).
->**Примечание.** MSAL поддерживает только неявный поток для OAuth. Обязательно включите неявный поток в приложении на портале Azure (по умолчанию он не включен). В **разделе "Проверка подлинности"** найдите раздел неявного предоставления и выберите для маркеров **доступа** и **маркеров ID** свои почтовые ящики.  
+### <a name="creating-an-appclient-id"></a>Создание идентификатора клиента/приложения
+Чтобы получить идентификатор клиента, вам нужно [зарегистрировать свое приложение](../../auth-register-app-v2.md) в Azure AD. Обязательно добавьте URL-адрес ngrok с полным путем на всплывающее страницу auth в URIS перенаправления `https://<YOUR_NGROK_URL>/auth.html` (например).
+>**Примечание**. MSAL поддерживает только неявный поток для OAuth. Включите неявный поток в своем приложении на портале Azure (он не включен по умолчанию). В области **Проверка подлинности** найдите раздел **Неявное предоставление** и установите флажки **Маркеры доступа** и **Маркеры идентификаторов**. 
 
 ## <a name="create-the-auth-popup-page"></a>Создание всплываемой страницы auth
 
-Чтобы разрешить пользователям выполнять вход, необходимо указать URL-адрес, который приложение Teams откроет во всплывающее приложение, чтобы следовать потоку проверки подлинности. URL-адрес должен быть в вашем домене, и все, что нужно сделать, это вызвать `TeamsProvider.handleAuth()` метод.
+Чтобы разрешить пользователям выполнять вход, необходимо указать URL-адрес, который приложение Teams откроет во всплывающее приложение для проверки подлинности. URL-адрес должен быть в вашем домене, и все, что нужно сделать, это вызвать `TeamsProvider.handleAuth()` метод.
 
 Это можно сделать в HTML-коде, добавив новый файл в папку (который должен быть на том же уровне, что и) и добавив `auth.html` `public` следующий `index.html` код: 
 
@@ -126,7 +126,7 @@ Providers.globalProvider = new TeamsProvider ({
 npm install @microsoft/mgt-react
 ```
 
-Найдите файл и импортировать компоненты, которые вы хотите использовать `src/components/Tab.js` из `mgt-react` библиотеки. Например, чтобы добавить `Login` использование компонента:
+Найдите файл и импортировать компоненты, которые вы хотите использовать `src/components/Tab.js` из `mgt-react` библиотеки. Например, чтобы добавить использование `Login` компонента:
 
 ```js
 import { Login } from "@microsoft/mgt-react"
@@ -150,14 +150,14 @@ npm install
 npm start
 ```
 
-Чтобы протестировать приложение, необходимо отправить приложение в Teams. Откройте клиент Microsoft Teams, выберите **пункт ...в** левом меню и перейдите в **App Studio.** Перейдите **на вкладку "Редактор** манифеста" и выберите **"Импорт существующего приложения".**
+Чтобы протестировать приложение, необходимо отправить приложение в Teams. Откройте клиент Microsoft Teams, выберите **...в** левом меню и перейдите в **App Studio.** Перейдите **на вкладку "Редактор** манифеста" и выберите **"Импорт существующего приложения".**
 
 Найдите каталог проекта и загрузите **Development.zip** в папку **.publish.**
 
 После загрузки приложения прокрутите меню слева вниз и выберите пункт **"Тестирование и распространение".** Нажмите **кнопку "Установить",** а затем нажмите **кнопку "Добавить".** Вы будете перенаправлены на созданную вкладку.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Ознакомьтесь с этим пошаговом руководстве по [построению вкладки Teams.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)
-- Попробуйте компоненты в игровой [области.](https://mgt.dev)
-- Задайте вопрос на [сайте Stack Overflow.](https://aka.ms/mgt-question)
-- Сообщать об ошибках или оставлять запросы на функции на [GitHub.](https://aka.ms/mgt)
+- Ознакомьтесь с этим пошаговом руководстве по построению [вкладки Teams.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)
+- Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).
+- Задавайте вопросы на сайте [Stack Overflow](https://aka.ms/mgt-question).
+- Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).
