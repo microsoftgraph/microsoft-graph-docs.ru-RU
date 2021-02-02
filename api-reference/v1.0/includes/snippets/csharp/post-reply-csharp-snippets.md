@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4c308d664e6488a66616d6a522af50a4366a869b
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 6ac498defa637bc96fcbf276dcb1c7d422b536e2
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49945017"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072374"
 ---
 ```csharp
 
@@ -62,7 +62,7 @@ var post = new Post
     },
     Attachments = new PostAttachmentsCollectionPage()
     {
-        new Attachment
+        new FileAttachment
         {
             LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
             Name = "name-value",
