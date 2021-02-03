@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0475f49b400b12e8716fcb2ba122c99cf46f4b1e
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: ec19c4e3f49c5535e6ed5f4eddafbbf21d5428ee
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034351"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092520"
 ---
 # <a name="update-educationassignmentsettings"></a>Обновление educationAssignmentSettings
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "50034351"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,7 +51,7 @@ PATCH /education/classes/{id}/assignmentSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|submissionAnimationDisabled|Логический|Указывает, будет ли показана анимация поозднения. Значение `true` указывает, что анимация не будет показана. Значение по умолчанию: `false`.|
+|submissionAnimationDisabled|Boolean|Указывает, будет ли показана анимация поозднения. Значение `true` указывает, что анимация не будет показана. Значение по умолчанию: `false`.|
 
 
 
@@ -62,6 +62,8 @@ PATCH /education/classes/{id}/assignmentSettings
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationassignmentsettings"
@@ -76,6 +78,24 @@ Content-length: 114
   "submissionAnimationDisabled": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentsettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignmentsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignmentsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

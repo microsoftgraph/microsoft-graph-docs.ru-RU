@@ -1,16 +1,16 @@
 ---
 title: Удаление вложения
-description: Удаление вложения из события календаря, сообщения, задачи Outlook или POST.
+description: Удаление вложения из события календаря, сообщения, задачи Outlook или публикации.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: d68d2a933aab0ce71d53ffa5b72884ebad896bbb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ef3469c7cdcb5fba7d8d543a05539e2516af3640
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961638"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092304"
 ---
 # <a name="delete-attachment"></a>Удаление вложения
 
@@ -20,16 +20,19 @@ ms.locfileid: "48961638"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Удаление вложения из [события](../resources/event.md)календаря пользователя, [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).
+Удаление вложения из события календаря [пользователя,](../resources/event.md) [сообщения,](../resources/message.md) [задачи Outlook](../resources/outlooktask.md)или [публикации.](../resources/post.md)
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса **(события,** **сообщения,**  **outlookTask** или post), к который вложено вложение, и типа запрашиваемого разрешения (делегирование или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы узнать больше, в том [числе](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) с осторожностью перед выбором более привилегированных разрешений, найди следующие разрешения в [разрешениях.](/graph/permissions-reference)
 
-* При доступе к вложениям в сообщениях: mail. ReadWrite
-* При доступе к вложениям в событиях: Calendars. ReadWrite
-* При доступе к вложениям в задачах Outlook: Tasks. ReadWrite
-* При доступе к вложениям в записях групп: Group. ReadWrite. ALL
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+| [post](../resources/post.md) | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -47,7 +50,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-Вложения для [события](../resources/event.md) в указанном [календаре](../resources/calendar.md) , принадлежащее пользователю.
+Вложения для [события в](../resources/event.md) указанном [календаре,](../resources/calendar.md) принадлежащем пользователю.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -90,14 +93,14 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д. <!-- { "blockType": "ignored" } -->
+Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.<!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Вложения для [задачи Outlook](../resources/outlooktask.md).
+Вложения для задачи [Outlook.](../resources/outlooktask.md)
 <!-- { "blockType": "ignored" } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: f294ead00726e020748901679f06d226a3ac5f91
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 4373bd4dcc911f08504e9716b1cc19d8d177df16
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796950"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092675"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -19,7 +19,7 @@ ms.locfileid: "48796950"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Открытые расширения (прежнее название — расширения данных Office 365) позволяют легко добавлять нетипизированные свойства непосредственно в ресурс в Microsoft Graph.
-Открытые расширения представлены ресурсом **openTypeExtension** . Все открытые расширения, добавленные в ресурс, отображаются в свойстве навигации **extensions** , которое является производным от абстрактного типа [extension](extension.md).  Каждое расширение, помимо пользовательских данных, содержит свойство **extensionName**  — единственное предопределенное записываемое свойство для всех расширений. Чтобы обеспечить уникальность имен расширений, можно использовать формат обратных DNS, который зависит от _принадлежащего вам домена_ , например `Com.Contoso.ContactInfo`. Не указывайте домен Майкрософт (`Com.Microsoft` или `Com.OnMicrosoft`) в имени расширения.
+Открытые расширения представлены ресурсом **openTypeExtension**. Все открытые расширения, добавленные в ресурс, отображаются в свойстве навигации **extensions**, которое является производным от абстрактного типа [extension](extension.md).  Каждое расширение, помимо пользовательских данных, содержит свойство **extensionName** — единственное предопределенное записываемое свойство для всех расширений. Чтобы обеспечить уникальность имен расширений, можно использовать формат обратных DNS, который зависит от _принадлежащего вам домена_, например `Com.Contoso.ContactInfo`. Не указывайте домен Майкрософт (`Com.Microsoft` или `Com.OnMicrosoft`) в имени расширения.
 
 Пример открытого расширения см. в статье [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users).
 
@@ -27,17 +27,17 @@ ms.locfileid: "48796950"
 
 | Ресурс | Версия |
 |---------------|-------|
-| [administrativeUnit](administrativeunit.md)  | Только предварительная версия |
-| [event](event.md) для календаря | Общедоступная версия |
+| [administrativeUnit](administrativeunit.md)  | Общедоступная |
+| [Событие календаря](event.md) | Общедоступная версия |
 | [event](event.md) для календаря группы | Общедоступная версия |
 | [post](post.md) цепочки беседы группы | Общедоступная версия |
 | [Устройство](device.md) | Общедоступная версия |
 | [Группа](group.md) | Общедоступная версия |
 | [Сообщение](message.md) | Общедоступная версия |
 | [Организация](organization.md) | Общедоступная версия |
-| [contact](contact.md) (личный контакт) | Общедоступная версия |
+| [Личный контакт](contact.md) | Общедоступная версия |
 | [Пользователь](user.md) | Общедоступная версия |
-| [Задача](todotask.md)  | Общедоступная версия ||
+| [Задача](todotask.md)  | Общедоступная ||
 | [Список задач](todotasklist.md)  | Общедоступная версия ||
 
 ## <a name="outlook-specific-considerations"></a>Специальные рекомендации для Outlook
@@ -77,7 +77,7 @@ ms.locfileid: "48796950"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |extensionName|String|Уникальный текстовый идентификатор для модуля обработки данных открытого типа. Обязательный.|
-|id|String| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName** . Только для чтения.|
+|id|String| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName**. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 
@@ -87,7 +87,7 @@ ms.locfileid: "48796950"
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт](contact.md), [событие](event.md), [сообщение](message.md), [POST](post.md), [тодотаск](todotask.md)или [тодотасклист](todotasklist.md) , содержащее объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
+|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт,](contact.md) [событие,](event.md) [сообщение,](message.md) [post,](post.md) [todoTask](todotask.md)или [todoTaskList,](todotasklist.md) содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Обновление объекта openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Нет |Удаление объекта openTypeExtension. |
 

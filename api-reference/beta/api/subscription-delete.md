@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b38975627a0a3c23b9e19acbb235c4bc26036918
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 3f182d82fdac95480715be2385729b0dec2d5d39
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034266"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092752"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -20,9 +20,11 @@ ms.locfileid: "50034266"
 
 Удаление подписки.
 
+Список ресурсов, [](#permissions) которые поддерживают подписку на уведомления об изменениях, см. в таблице в разделе "Разрешения".
+
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы узнать больше, в том [числе](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) с осторожностью перед выбором более привилегированных разрешений, найди следующие разрешения в [разрешениях.](/graph/permissions-reference)
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
@@ -48,7 +50,7 @@ ms.locfileid: "50034266"
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 

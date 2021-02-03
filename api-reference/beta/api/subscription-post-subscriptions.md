@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 68e748a054812350c7aad029d604e87aa77b7345
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 191036a8df1ab58362bf26138722d7212aa2ee69
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034277"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092748"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -20,11 +20,13 @@ ms.locfileid: "50034277"
 
 Создание подписки для приложения прослушивателя, позволяющей ему получать уведомления об изменениях определенного типа в указанном ресурсе в Microsoft Graph.
 
+Список ресурсов, [](#permissions) поддерживаюющих подписку на уведомления об изменениях, см. в таблице в разделе "Разрешения".
+
 ## <a name="permissions"></a>Разрешения
 
 Для создания подписки требуется разрешение на чтение ресурса. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо разрешение Mail.Read. 
 
- В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы узнать больше, в том [числе](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) с осторожностью перед выбором более привилегированных разрешений, найди следующие разрешения в [разрешениях.](/graph/permissions-reference)
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
@@ -50,7 +52,7 @@ ms.locfileid: "50034277"
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
@@ -99,7 +101,7 @@ POST /subscriptions
 Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
 Поля `clientState` и `latestSupportedTlsVersion` необязательны.
 
-Этот запрос создает подписку для уведомлений об изменениях о новых сообщениях, полученных текущим пользователем, выписав его.
+Этот запрос создает подписку на уведомления об изменениях о новых сообщениях, полученных текущим пользователем, выписав его.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -143,7 +145,7 @@ Content-type: application/json
 
 #### <a name="resources-examples"></a>Примеры ресурсов
 
-Ниже следующую допустимую величину свойства ресурса.
+Ниже следующую проверку допустимые значения свойства ресурса.
 
 | Тип ресурса | Примеры |
 |:------ |:----- |
@@ -159,7 +161,7 @@ Content-type: application/json
 |[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
-|[Пользователи](../resources/user.md)|`users`|
+|[пользователи](../resources/user.md);|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 

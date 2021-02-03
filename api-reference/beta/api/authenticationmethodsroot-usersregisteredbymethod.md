@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 684603da36a4d5dcf08fc575042b49055e581e7b
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 36b4d9ae280d34ab74a6c974710e3726ae089a1b
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052581"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092385"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot: usersRegisteredByMethod
 Пространство имен: microsoft.graph
@@ -66,7 +66,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 * Администратор пользователей
 * Администратор проверки подлинности
 
-Значение включает `admin` все роли администратора Azure AD. 
+Это значение `admin` включает все роли администратора Azure AD. 
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -83,6 +83,8 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "authenticationmethodsroot_usersregisteredbymethod"
@@ -91,6 +93,24 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 ``` http
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/authenticationmethodsroot-usersregisteredbymethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/authenticationmethodsroot-usersregisteredbymethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/authenticationmethodsroot-usersregisteredbymethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbymethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
