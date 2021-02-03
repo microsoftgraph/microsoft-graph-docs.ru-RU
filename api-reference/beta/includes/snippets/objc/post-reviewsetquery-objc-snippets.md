@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: dc5e96df8c9f252d7d25a599c64e5329d6140dee
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 8669cc0d15679e8f1359157ddd159bb44d1fff4e
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565107"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093632"
 ---
 ```objc
 
@@ -16,7 +16,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphReviewSetQuery *reviewSetQuery = [[MSGraphReviewSetQuery alloc] init];
+MSGraphEdiscoveryReviewSetQuery *reviewSetQuery = [[MSGraphEdiscoveryReviewSetQuery alloc] init];
 [reviewSetQuery setDisplayName:@"My Query 1"];
 [reviewSetQuery setQuery:@"(subject:\"Quarterly Financials\")"];
 
