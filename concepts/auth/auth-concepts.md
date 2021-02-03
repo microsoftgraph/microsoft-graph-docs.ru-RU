@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: a1c438008ee617797101a1caabcb0baf34f4d031
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fa1f6d243679d4a0a2a4adeb822baa781f490ac0
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289492"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092590"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Основные сведения о проверке подлинности и авторизации для Microsoft Graph
 
@@ -65,6 +65,10 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 Microsoft Graph предоставляет детализированные разрешения, управляющие доступом приложений к ресурсам, таким как пользователи, группы и почта. Вы как разработчик указываете, какие разрешения запрашивать для Microsoft Graph. Входя в приложение, пользователь (иногда администратор) получает возможность согласиться с предоставлением этих разрешений. Если пользователь дает согласие, приложение получает доступ к запрашиваемым ресурсам и интерфейсам API. Для приложений, не предусматривающих вход пользователя, администратор может заранее дать согласие при установке приложения.
 
+### <a name="best-practices-for-requesting-permissions"></a>Рекомендации по запросу разрешений
+[!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
+
+### <a name="delegated-and-application-permissions"></a>Разрешения приложений и делегированные разрешения
 В Microsoft Graph есть два типа разрешений:
 
 - **Делегированные разрешения** используются в приложениях, предусматривающих вход пользователя. Для таких приложений пользователь или администратор соглашается предоставить запрашиваемые разрешения. Приложение может действовать от имени вошедшего пользователя, вызывая Microsoft Graph. Некоторые делегированные разрешения могут предоставлять пользователи, не являющиеся администраторами. Однако для разрешений высокого уровня требуется [согласие администратора](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
