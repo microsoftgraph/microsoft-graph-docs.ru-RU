@@ -1,16 +1,16 @@
 ---
 title: Создание объекта chatMessage в канале
-description: Создание нового chatMessage в указанном канале.
+description: Создайте новый chatMessage в указанном канале.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f7bdb9322b59e78b5b5fe363cccd0713314f3a70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959152"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101911"
 ---
 # <a name="create-chatmessage-in-channel"></a>Создание chatMessage в канале
 
@@ -18,11 +18,9 @@ ms.locfileid: "48959152"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [chatMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md).
+Создайте [новый chatMessage](../resources/chatmessage.md) в указанном [канале.](../resources/channel.md)
 
-> **Note** : мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
-
-> **Note** : нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправлять только сообщения, которые будут читаться.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,9 +28,11 @@ ms.locfileid: "48959152"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Чаннелмессаже. Send, Group. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
+
+> **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -56,17 +56,17 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
+В теле запроса укажу представление объекта [chatMessage](../resources/chatmessage.md) в JSON. Только свойство body является обязательным, другие свойства являются необязательными.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-message-in-a-specified-channel"></a>Пример 1: создание сообщения в указанном канале
+### <a name="example-1-create-a-message-in-a-specified-channel"></a>Пример 1. Создание сообщения в указанном канале
 
-Более полный список примеров приведен [в статье Создание chatMessage в канале или чате](chatmessage-post.md).
+Более полный список примеров см. в примере [создания chatMessage в канале или чате.](chatmessage-post.md)
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -158,13 +158,13 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages-text-only"></a>Пример 2: Импорт сообщений (только текст)
+### <a name="example-2-import-messages-text-only"></a>Пример 2. Импорт сообщений (только текст)
 
-> **Примечание**. `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
+> **Примечание.** Для этого `Teamwork.Migrate.All` сценария требуется область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
-В приведенном ниже примере показано, как импортировать фоновые сообщения с помощью `createDateTime` ключей и `from` в теле запроса.
+В следующем примере покажите, как импортировать сообщения во времени с помощью ключей и `createDateTime` ключей `from` в тексте запроса.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -247,16 +247,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example-3-import-messages-with-inline-images"></a>Пример 3: Импорт сообщений с встроенными изображениями
+### <a name="example-3-import-messages-with-inline-images"></a>Пример 3. Импорт сообщений со inline images
 
 > [!NOTE]
-> В настоящее время встроенными образами является единственный тип мультимедиа, поддерживаемый схемой API импорта сообщений.
+> В настоящее время inline images are the only media type supported by the import message API schema.
 
-> **Примечание**. `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
+> **Примечание.** Для этого `Teamwork.Migrate.All` сценария требуется область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
-В приведенном ниже примере показано, как импортировать фоновые сообщения, содержащие встроенные изображения, с `createDateTime` помощью `from` ключей и в теле запроса.
+В следующем примере показано, как импортировать сообщения времени назад, содержащие в себя изображения, с помощью клавиш и ключей `createDateTime` `from` в тексте запроса.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -287,7 +287,7 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

@@ -5,26 +5,26 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fc50a1017e7b08c8c072a05717b2de4f2fb7894
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8ffd1ceec1d3dbdb7e30a059836b11cc8e5a0276
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459951"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092640"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
 Пространство имен: microsoft.graph
 
-Чтение свойств, связей или необработанного содержимого объекта, представляющего вложение, которое было добавлено к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md) или [записи](../resources/post.md). 
+Чтение свойств, связей или необработанного содержимого вложения, добавленного к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md) или групповой [записи](../resources/post.md). 
 
 Допустимые типы вложений:
 
-* файл (ресурс [fileAttachment](../resources/fileattachment.md));
-* элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md)); Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
-* ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
+* Файл. На программном уровне это ресурс [fileAttachment](../resources/fileattachment.md).
+* Элемент Outlook (контакт, событие или сообщение). На программном уровне вложением элемента является ресурс [itemAttachment](../resources/itemattachment.md). Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
+* Ссылка на файл, хранящийся в облаке. На программном уровне это ресурс [referenceAttachment](../resources/referenceattachment.md).
 
-Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md). 
+Все эти типы вложений являются производными от ресурса [attachment](../resources/attachment.md). 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Получение необработанного содержимого вложенного файла или элемента
 Чтобы получить необработанное содержимое вложенного файла или элемента, вы можете добавить сегмент пути `/$value`. 
@@ -42,11 +42,15 @@ ms.locfileid: "48459951"
 При попытке получить `$value` вложенной ссылки происходит возврат HTTP 405.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-* При доступе к вложениям в сообщениях: Mail.Read.
-* При доступе к вложениям в событиях: Calendars.Read.
-* При доступе к вложениям в событиях или записях групп: Group.Read.All.
+В зависимости от ресурса (**event**, **message** или **post**), к которому добавлено вложение, и типа запрашиваемого расширения (делегированного или для приложений), разрешение, указанное в следующей таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
+
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [post](../resources/post.md) | Group.Read.All | Не поддерживается | Не поддерживается |
+
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.
@@ -620,7 +624,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKiAAA=/attachments/A
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
-В тексте ответа содержится приложение **eventMessage ** в формате MIME. Текст **eventMessage ** усекается для краткости. Полный текст сообщения возвращается от фактического вызова.
+В тексте ответа содержится приложение **eventMessage** в формате MIME. Текст **eventMessage** усекается для краткости. Полный текст сообщения возвращается от фактического вызова.
 
 <!-- {
   "blockType": "ignored",

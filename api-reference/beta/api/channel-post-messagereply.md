@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3f284cacc4e41498a4cc011e98ed9f60898dcc20
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: db0164be77260c60c2d89c726b048b4af8dc741d
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866148"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101904"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -20,9 +20,7 @@ ms.locfileid: "49866148"
 
 Создайте новый ответ [на chatMessage](../resources/chatmessage.md) в указанном [канале.](../resources/channel.md)
 
-> **Примечание.** Мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, не существует.
-
-> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправлять только сообщения, которые люди будут читать.
+> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправлять только сообщения, которые будут читаться.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -31,11 +29,13 @@ ms.locfileid: "49866148"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | ChannelMessage.Send, Group.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Teamwork.Migrate.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:--------------------------------------------|
+| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Teamwork.Migrate.All |
+
+> **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -149,11 +149,11 @@ Content-length: 160
 
 ### <a name="example-2-import-messages"></a>Пример 2. Импорт сообщений
 
-> **Примечание.** Для этого сценария `Teamwork.Migrate.All` требуется область разрешений.
+> **Примечание.** Для этого `Teamwork.Migrate.All` сценария требуется область разрешений.
 
 #### <a name="request"></a>Запрос
 
-В следующем примере покажите, как импортировать сообщения времени назад с помощью ключей и ключей `createDateTime` `from` в тексте запроса.
+В следующем примере покажите, как импортировать сообщения во времени с помощью ключей и `createDateTime` ключей `from` в тексте запроса.
 
 <!-- {
   "blockType": "response",

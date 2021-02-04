@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 12d8bfd49ebc71b6cb82cccd9525a3706cd570fd
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 186599391599c7ac77f637bcc910339f3087c999
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690615"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101883"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -256,6 +256,107 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
+## <a name="notification-payloads"></a>Полезные данные уведомлений
+
+В зависимости от вашей подписки вы можете получать уведомление с данными ресурсов или без них. Подписка с данными ресурсов позволяет получать полезные данные вместе с уведомлением, устраняя необходимость обратного вызова и получения содержимого.
+
+### <a name="notifications-with-resource-data"></a>Уведомления с данными ресурсов
+
+Для уведомлений с данными ресурсов полезные данные выглядят следующим образом. Это полезные данные для сообщения, отправленного в чате.
+
+```json
+{
+    "value": [{
+        "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
+        "changeType": "created",
+        "clientState": "<<--SpecifiedClientState-->>",
+        "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
+        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
+        "resourceData": {
+            "id": "1612289765949",
+            "@odata.type": "#Microsoft.Graph.chatMessage",
+            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
+        },
+        "encryptedContent": {
+            "data": "<<--EncryptedContent-->",
+            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
+            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
+            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
+        },
+        "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
+    }],
+    "validationTokens": ["<<--ValidationTokens-->>"]
+}
+```
+
+Дополнительные сведения о проверке маркеров и расшифровке полезных данных см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов](webhooks-with-resource-data.md).
+
+Расшифрованные полезные данные уведомления выглядят следующим образом. Полезные данные соответствуют схеме [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). Полезные данные похожи на результаты, возвращаемые операциями GET.
+
+```json
+{
+  "id": "1612289992105",
+  "replyToId": null,
+  "etag": "1612289992105",
+  "messageType": "message",
+  "createdDateTime": "2021-02-02T18:19:52Z",
+  "lastModifiedDateTime": "2021-02-02T18:19:52.105Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+      "displayName": "Ramjot Singh",
+      "userIdentityType": "aadUser"
+    },
+    "conversation": null
+  },
+  "body": {
+    "contentType": "text",
+    "content": "test"
+  },
+  "channelIdentity": null,
+  "attachments": [],
+  "mentions": [],
+  "policyViolation": null,
+  "reactions": [],
+  "replies": [],
+  "hostedContents": []
+}
+```
+
+### <a name="notifications-without-resource-data"></a>Уведомления без данных о ресурсах
+
+Уведомления без данных о ресурсах предоставляют достаточно сведений, чтобы выполнить вызов GET для получения содержимого сообщения. Для подписок на уведомления без данных о ресурсах не требуется сертификат шифрования (так как фактические данные ресурсов не передаются).
+
+Полезные данные выглядят следующим образом. Это полезные данные для сообщения, отправленного в канале.
+
+```json
+ {
+  "subscriptionId": "9f9d1ed0-c9cc-42e7-8d80-a7fc4b0cda3c",
+  "changeType": "created",
+  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "clientState": "<<--SpecifiedClientState-->>",
+  "subscriptionExpirationDateTime": "2021-02-02T11:26:41.0537895-08:00",
+  "resource": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')",
+  "resourceData": {
+    "id": "1612293113399",
+    "@odata.type": "#Microsoft.Graph.chatMessage",
+    "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')"
+  }
+}
+```
+
+Свойства **resource** и **@odata.id** можно использовать для вызовов в Microsoft Graph, чтобы получить полезные данные для сообщения. Вызовы GET всегда возвращают текущее состояние сообщения. Если сообщение изменяется с момента отправки уведомления и до получения сообщения, операция возвращает обновленное сообщение.
 
 ## <a name="see-also"></a>См. также
 - [Уведомления об изменениях в Microsoft Graph](webhooks.md)

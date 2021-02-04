@@ -3,12 +3,12 @@ title: Компонент Get в Microsoft Graph Toolkit
 description: С помощью компонента Get можно создавать любые GET-запросы из Microsoft Graph непосредственно в HTML-коде.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7ce33d231b02603c953a57df8ae8751f8544ee7a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 4ef24d5b5eac0b53029c67dd723ba80c7d0f5bff
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659382"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101876"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Компонент Get в Microsoft Graph Toolkit
 

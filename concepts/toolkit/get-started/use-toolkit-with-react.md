@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 57e9901c8b7ee1f8a5474f21ff4b09def053e7db
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
-ms.translationtype: HT
+ms.openlocfilehash: 1ed264233e24f542a3cc0e23d664f1977cbe318f
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664137"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101890"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Использование Microsoft Graph Toolkit с React
 
@@ -27,7 +27,7 @@ Microsoft Graph Toolkit — это набор веб-компонентов, к�
 Создайте приложение React, выполнив следующую команду. Это создаст новое приложение React с использованием TypeScript, что поможет написать более функциональный код и избежать ошибок выполнения.
 
 ```cmd
-npx create-react-app my-m365-app --template typescript
+npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
 Измените рабочий каталог на только что созданное приложение.
