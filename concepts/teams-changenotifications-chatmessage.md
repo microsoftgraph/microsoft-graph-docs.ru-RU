@@ -5,36 +5,36 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 12d8bfd49ebc71b6cb82cccd9525a3706cd570fd
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 186599391599c7ac77f637bcc910339f3087c999
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690615"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101883"
 ---
-# <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a><span data-ttu-id="1b5e2-103">Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1b5e2-103">Get change notifications for messages in Teams channels and chats using Microsoft Graph</span></span>
+# <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a><span data-ttu-id="43c68-103">Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="43c68-103">Get change notifications for messages in Teams channels and chats using Microsoft Graph</span></span>
 
-<span data-ttu-id="1b5e2-104">Уведомления об изменениях позволяют подписаться на изменения (создание, обновление и удаление) [сообщений](/graph/api/resources/chatMessage?preserve-view=true) в [канале](/graph/api/resources/channel?preserve-view=true) или [чате](/graph/api/resources/chat?preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="1b5e2-104">Change notifications enable you to subscribe to changes (create, update, and delete) to [messages](/graph/api/resources/chatMessage?preserve-view=true) in a [channel](/graph/api/resources/channel?preserve-view=true) or [chat](/graph/api/resources/chat?preserve-view=true).</span></span> <span data-ttu-id="1b5e2-105">Уведомления об изменениях обеспечивают модель с низкой задержкой, позволяя управлять [подпиской](/graph/api/resources/webhooks?preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="1b5e2-105">Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true).</span></span> <span data-ttu-id="1b5e2-106">Кроме того, вы можете получать данные ресурсов в уведомлениях и, следовательно, избегать вызова API, чтобы получить полезные данные.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-106">You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.</span></span>
+<span data-ttu-id="43c68-104">Уведомления об изменениях позволяют подписаться на изменения (создание, обновление и удаление) [сообщений](/graph/api/resources/chatMessage?preserve-view=true) в [канале](/graph/api/resources/channel?preserve-view=true) или [чате](/graph/api/resources/chat?preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="43c68-104">Change notifications enable you to subscribe to changes (create, update, and delete) to [messages](/graph/api/resources/chatMessage?preserve-view=true) in a [channel](/graph/api/resources/channel?preserve-view=true) or [chat](/graph/api/resources/chat?preserve-view=true).</span></span> <span data-ttu-id="43c68-105">Уведомления об изменениях обеспечивают модель с низкой задержкой, позволяя управлять [подпиской](/graph/api/resources/webhooks?preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="43c68-105">Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true).</span></span> <span data-ttu-id="43c68-106">Кроме того, вы можете получать данные ресурсов в уведомлениях и, следовательно, избегать вызова API, чтобы получить полезные данные.</span><span class="sxs-lookup"><span data-stu-id="43c68-106">You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.</span></span>
 
-><span data-ttu-id="1b5e2-107">**Примечание.** Максимальный срок действия подписки составляет 60 минут. Однако подписки можно продлевать, пока у вызывающий не получит разрешения на доступ к ресурсу.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-107">**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.</span></span>
+><span data-ttu-id="43c68-107">**Примечание.** Максимальный срок действия подписки составляет 60 минут. Однако подписки можно продлевать, пока у вызывающий не получит разрешения на доступ к ресурсу.</span><span class="sxs-lookup"><span data-stu-id="43c68-107">**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.</span></span>
 
-## <a name="subscribe-to-changes-at-the-tenant-level"></a><span data-ttu-id="1b5e2-108">Подписка на изменения на уровне клиента</span><span class="sxs-lookup"><span data-stu-id="1b5e2-108">Subscribe to changes at the tenant level</span></span>
+## <a name="subscribe-to-changes-at-the-tenant-level"></a><span data-ttu-id="43c68-108">Подписка на изменения на уровне клиента</span><span class="sxs-lookup"><span data-stu-id="43c68-108">Subscribe to changes at the tenant level</span></span>
 
-<span data-ttu-id="1b5e2-109">Чтобы отслеживать все изменения, связанные с сообщениями в клиенте, вы можете использовать подписки на уровне клиента для сообщений канала и чата.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-109">To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages.</span></span> <span data-ttu-id="1b5e2-110">Для этого требуется создать две подписки: одну для отслеживания всех сообщений в [каналах](/graph/api/resources/channel?preserve-view=true), а другую — для отслеживания всех сообщений в [чатах](/graph/api/resources/chat?preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="1b5e2-110">This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).</span></span>
+<span data-ttu-id="43c68-109">Чтобы отслеживать все изменения, связанные с сообщениями в клиенте, вы можете использовать подписки на уровне клиента для сообщений канала и чата.</span><span class="sxs-lookup"><span data-stu-id="43c68-109">To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages.</span></span> <span data-ttu-id="43c68-110">Для этого требуется создать две подписки: одну для отслеживания всех сообщений в [каналах](/graph/api/resources/channel?preserve-view=true), а другую — для отслеживания всех сообщений в [чатах](/graph/api/resources/chat?preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="43c68-110">This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).</span></span>
 
-### <a name="subscribe-to-messages-across-channels"></a><span data-ttu-id="1b5e2-111">Подписка на сообщения в каналах</span><span class="sxs-lookup"><span data-stu-id="1b5e2-111">Subscribe to messages across channels</span></span>
+### <a name="subscribe-to-messages-across-channels"></a><span data-ttu-id="43c68-111">Подписка на сообщения в каналах</span><span class="sxs-lookup"><span data-stu-id="43c68-111">Subscribe to messages across channels</span></span>
 
-<span data-ttu-id="1b5e2-112">Чтобы получать уведомления об изменениях всех сообщений и ответов в каналах в клиенте, подпишитесь на `/teams/getAllMessages`.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-112">To get to change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`.</span></span> <span data-ttu-id="1b5e2-113">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-113">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
+<span data-ttu-id="43c68-112">Чтобы получать уведомления об изменениях всех сообщений и ответов в каналах в клиенте, подпишитесь на `/teams/getAllMessages`.</span><span class="sxs-lookup"><span data-stu-id="43c68-112">To get to change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`.</span></span> <span data-ttu-id="43c68-113">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.</span><span class="sxs-lookup"><span data-stu-id="43c68-113">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
 
-#### <a name="permissions"></a><span data-ttu-id="1b5e2-114">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-114">Permissions</span></span>
+#### <a name="permissions"></a><span data-ttu-id="43c68-114">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-114">Permissions</span></span>
 
-|<span data-ttu-id="1b5e2-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-115">Permission type</span></span>      | <span data-ttu-id="1b5e2-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43c68-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-115">Permission type</span></span>      | <span data-ttu-id="43c68-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43c68-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b5e2-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-117">Delegated (work or school account)</span></span> | <span data-ttu-id="1b5e2-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-118">Not supported.</span></span> |
-|<span data-ttu-id="1b5e2-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b5e2-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-120">Not supported.</span></span>    |
-|<span data-ttu-id="1b5e2-121">Приложение</span><span class="sxs-lookup"><span data-stu-id="1b5e2-121">Application</span></span> | <span data-ttu-id="1b5e2-122">ChannelMessage.Read.All</span><span class="sxs-lookup"><span data-stu-id="1b5e2-122">ChannelMessage.Read.All</span></span> |
+|<span data-ttu-id="43c68-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43c68-117">Delegated (work or school account)</span></span> | <span data-ttu-id="43c68-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43c68-118">Not supported.</span></span> |
+|<span data-ttu-id="43c68-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43c68-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43c68-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43c68-120">Not supported.</span></span>    |
+|<span data-ttu-id="43c68-121">Приложение</span><span class="sxs-lookup"><span data-stu-id="43c68-121">Application</span></span> | <span data-ttu-id="43c68-122">ChannelMessage.Read.All</span><span class="sxs-lookup"><span data-stu-id="43c68-122">ChannelMessage.Read.All</span></span> |
 
-#### <a name="example"></a><span data-ttu-id="1b5e2-123">Пример</span><span class="sxs-lookup"><span data-stu-id="1b5e2-123">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="43c68-123">Пример</span><span class="sxs-lookup"><span data-stu-id="43c68-123">Example</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -52,19 +52,19 @@ Content-Type: application/json
 }
 ```
 
-### <a name="subscribe-to-messages-across-chats"></a><span data-ttu-id="1b5e2-124">Подписка на сообщения в чатах</span><span class="sxs-lookup"><span data-stu-id="1b5e2-124">Subscribe to messages across chats</span></span>
+### <a name="subscribe-to-messages-across-chats"></a><span data-ttu-id="43c68-124">Подписка на сообщения в чатах</span><span class="sxs-lookup"><span data-stu-id="43c68-124">Subscribe to messages across chats</span></span>
 
-<span data-ttu-id="1b5e2-125">Чтобы получать уведомления об изменениях всех сообщений в чатах в клиенте, подпишитесь на `/chats/getAllMessages`.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-125">To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`.</span></span> <span data-ttu-id="1b5e2-126">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-126">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
+<span data-ttu-id="43c68-125">Чтобы получать уведомления об изменениях всех сообщений в чатах в клиенте, подпишитесь на `/chats/getAllMessages`.</span><span class="sxs-lookup"><span data-stu-id="43c68-125">To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`.</span></span> <span data-ttu-id="43c68-126">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.</span><span class="sxs-lookup"><span data-stu-id="43c68-126">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
 
-#### <a name="permissions"></a><span data-ttu-id="1b5e2-127">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-127">Permissions</span></span>
+#### <a name="permissions"></a><span data-ttu-id="43c68-127">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-127">Permissions</span></span>
 
-|<span data-ttu-id="1b5e2-128">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-128">Permission type</span></span>      | <span data-ttu-id="1b5e2-129">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-129">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43c68-128">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-128">Permission type</span></span>      | <span data-ttu-id="43c68-129">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43c68-129">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b5e2-130">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-130">Delegated (work or school account)</span></span> | <span data-ttu-id="1b5e2-131">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-131">Not supported.</span></span> |
-|<span data-ttu-id="1b5e2-132">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-132">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b5e2-133">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-133">Not supported.</span></span>    |
-|<span data-ttu-id="1b5e2-134">Приложение</span><span class="sxs-lookup"><span data-stu-id="1b5e2-134">Application</span></span> | <span data-ttu-id="1b5e2-135">Chat.Read.All</span><span class="sxs-lookup"><span data-stu-id="1b5e2-135">Chat.Read.All</span></span> |
+|<span data-ttu-id="43c68-130">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43c68-130">Delegated (work or school account)</span></span> | <span data-ttu-id="43c68-131">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43c68-131">Not supported.</span></span> |
+|<span data-ttu-id="43c68-132">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43c68-132">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43c68-133">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43c68-133">Not supported.</span></span>    |
+|<span data-ttu-id="43c68-134">Приложение</span><span class="sxs-lookup"><span data-stu-id="43c68-134">Application</span></span> | <span data-ttu-id="43c68-135">Chat.Read.All</span><span class="sxs-lookup"><span data-stu-id="43c68-135">Chat.Read.All</span></span> |
 
-#### <a name="example"></a><span data-ttu-id="1b5e2-136">Пример</span><span class="sxs-lookup"><span data-stu-id="1b5e2-136">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="43c68-136">Пример</span><span class="sxs-lookup"><span data-stu-id="43c68-136">Example</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -82,23 +82,23 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-messages-in-a-channel"></a><span data-ttu-id="1b5e2-137">Подписка на сообщения в канале</span><span class="sxs-lookup"><span data-stu-id="1b5e2-137">Subscribe to messages in a channel</span></span>
+## <a name="subscribe-to-messages-in-a-channel"></a><span data-ttu-id="43c68-137">Подписка на сообщения в канале</span><span class="sxs-lookup"><span data-stu-id="43c68-137">Subscribe to messages in a channel</span></span>
 
-<span data-ttu-id="1b5e2-138">Чтобы отслеживать сообщения и ответы в канале, вы можете создать подписку на уведомления об изменениях на уровне канала.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-138">To track messages and replies in a channel, you can create a change notification subscription at a channel level.</span></span> <span data-ttu-id="1b5e2-139">Для этого подпишитесь на `/teams{id}/channels/{id}/messages`.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-139">To do this, subscribe to `/teams{id}/channels/{id}/messages`.</span></span> <span data-ttu-id="1b5e2-140">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление *в режиме только для приложения*.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-140">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.</span></span>
+<span data-ttu-id="43c68-138">Чтобы отслеживать сообщения и ответы в канале, вы можете создать подписку на уведомления об изменениях на уровне канала.</span><span class="sxs-lookup"><span data-stu-id="43c68-138">To track messages and replies in a channel, you can create a change notification subscription at a channel level.</span></span> <span data-ttu-id="43c68-139">Для этого подпишитесь на `/teams{id}/channels/{id}/messages`.</span><span class="sxs-lookup"><span data-stu-id="43c68-139">To do this, subscribe to `/teams{id}/channels/{id}/messages`.</span></span> <span data-ttu-id="43c68-140">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление *в режиме только для приложения*.</span><span class="sxs-lookup"><span data-stu-id="43c68-140">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.</span></span>
 
-<span data-ttu-id="1b5e2-141">Подписки на уровне канала также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-141">Channel-level subscriptions also support keyword-based search via the `$search` query parameter.</span></span>
+<span data-ttu-id="43c68-141">Подписки на уровне канала также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.</span><span class="sxs-lookup"><span data-stu-id="43c68-141">Channel-level subscriptions also support keyword-based search via the `$search` query parameter.</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="1b5e2-142">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-142">Permissions</span></span>
+### <a name="permissions"></a><span data-ttu-id="43c68-142">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-142">Permissions</span></span>
 
-|<span data-ttu-id="1b5e2-143">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-143">Permission type</span></span>      | <span data-ttu-id="1b5e2-144">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-144">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43c68-143">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-143">Permission type</span></span>      | <span data-ttu-id="43c68-144">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43c68-144">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b5e2-145">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-145">Delegated (work or school account)</span></span> | <span data-ttu-id="1b5e2-146">ChannelMessage.Read.All</span><span class="sxs-lookup"><span data-stu-id="1b5e2-146">ChannelMessage.Read.All</span></span> |
-|<span data-ttu-id="1b5e2-147">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-147">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b5e2-148">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-148">Not supported.</span></span>    |
-|<span data-ttu-id="1b5e2-149">Приложение</span><span class="sxs-lookup"><span data-stu-id="1b5e2-149">Application</span></span> | <span data-ttu-id="1b5e2-150">ChannelMessage.Read.All, ChannelMessage.Read.Group\*</span><span class="sxs-lookup"><span data-stu-id="1b5e2-150">ChannelMessage.Read.All, ChannelMessage.Read.Group\*</span></span> |
+|<span data-ttu-id="43c68-145">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43c68-145">Delegated (work or school account)</span></span> | <span data-ttu-id="43c68-146">ChannelMessage.Read.All</span><span class="sxs-lookup"><span data-stu-id="43c68-146">ChannelMessage.Read.All</span></span> |
+|<span data-ttu-id="43c68-147">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43c68-147">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43c68-148">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43c68-148">Not supported.</span></span>    |
+|<span data-ttu-id="43c68-149">Приложение</span><span class="sxs-lookup"><span data-stu-id="43c68-149">Application</span></span> | <span data-ttu-id="43c68-150">ChannelMessage.Read.All, ChannelMessage.Read.Group\*</span><span class="sxs-lookup"><span data-stu-id="43c68-150">ChannelMessage.Read.All, ChannelMessage.Read.Group\*</span></span> |
 
-><span data-ttu-id="1b5e2-151">**Примечание.** ChannelMessage.Read.Group поддерживается как часть [контента, связанного с конкретными ресурсами](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).</span><span class="sxs-lookup"><span data-stu-id="1b5e2-151">**Note:** ChannelMessage.Read.Group is supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).</span></span>
+><span data-ttu-id="43c68-151">**Примечание.** ChannelMessage.Read.Group поддерживается как часть [контента, связанного с конкретными ресурсами](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).</span><span class="sxs-lookup"><span data-stu-id="43c68-151">**Note:** ChannelMessage.Read.Group is supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).</span></span>
 
-### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a><span data-ttu-id="1b5e2-152">Пример 1. Подписка на все сообщения (и ответы) в канале</span><span class="sxs-lookup"><span data-stu-id="1b5e2-152">Example 1: Subscribe to all messages (and replies) in a channel</span></span>
+### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a><span data-ttu-id="43c68-152">Пример 1. Подписка на все сообщения (и ответы) в канале</span><span class="sxs-lookup"><span data-stu-id="43c68-152">Example 1: Subscribe to all messages (and replies) in a channel</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -116,9 +116,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-subscribe-to-messages-and-replies-in-a-channel-that-contain-certain-text"></a><span data-ttu-id="1b5e2-153">Пример 2. Подписка на сообщения (и ответы) в канале, содержащие определенный текст</span><span class="sxs-lookup"><span data-stu-id="1b5e2-153">Example 2: Subscribe to messages (and replies) in a channel that contain certain text</span></span>
+### <a name="example-2-subscribe-to-messages-and-replies-in-a-channel-that-contain-certain-text"></a><span data-ttu-id="43c68-153">Пример 2. Подписка на сообщения (и ответы) в канале, содержащие определенный текст</span><span class="sxs-lookup"><span data-stu-id="43c68-153">Example 2: Subscribe to messages (and replies) in a channel that contain certain text</span></span>
 
-<span data-ttu-id="1b5e2-154">Следующий запрос отправляет сообщения, содержащие `Hello` подписчику.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-154">The following request will send messages that contain `Hello` to the subscriber.</span></span>
+<span data-ttu-id="43c68-154">Следующий запрос отправляет сообщения, содержащие `Hello` подписчику.</span><span class="sxs-lookup"><span data-stu-id="43c68-154">The following request will send messages that contain `Hello` to the subscriber.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -136,7 +136,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-subscribe-to-messages-and-replies-in-a-channel-without-resource-data"></a><span data-ttu-id="1b5e2-155">Пример 3. Подписка на сообщения (и ответы) в канале без данных ресурса</span><span class="sxs-lookup"><span data-stu-id="1b5e2-155">Example 3: Subscribe to messages (and replies) in a channel without resource data</span></span>
+### <a name="example-3-subscribe-to-messages-and-replies-in-a-channel-without-resource-data"></a><span data-ttu-id="43c68-155">Пример 3. Подписка на сообщения (и ответы) в канале без данных ресурса</span><span class="sxs-lookup"><span data-stu-id="43c68-155">Example 3: Subscribe to messages (and replies) in a channel without resource data</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -152,9 +152,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-subscribe-to-messages-and-replies-in-a-channel-that-mention-a-specific-user"></a><span data-ttu-id="1b5e2-156">Пример 4. Подписка на сообщения (и ответы) в канале с упоминанием определенного пользователя</span><span class="sxs-lookup"><span data-stu-id="1b5e2-156">Example 4: Subscribe to messages (and replies) in a channel that mention a specific user</span></span>
+### <a name="example-4-subscribe-to-messages-and-replies-in-a-channel-that-mention-a-specific-user"></a><span data-ttu-id="43c68-156">Пример 4. Подписка на сообщения (и ответы) в канале с упоминанием определенного пользователя</span><span class="sxs-lookup"><span data-stu-id="43c68-156">Example 4: Subscribe to messages (and replies) in a channel that mention a specific user</span></span>
 
-<span data-ttu-id="1b5e2-157">Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-157">To get notifications only for messages where a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.</span></span>
+<span data-ttu-id="43c68-157">Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.</span><span class="sxs-lookup"><span data-stu-id="43c68-157">To get notifications only for messages where a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -170,23 +170,23 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-messages-in-a-chat"></a><span data-ttu-id="1b5e2-158">Подписка на сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="1b5e2-158">Subscribe to messages in a chat</span></span>
+## <a name="subscribe-to-messages-in-a-chat"></a><span data-ttu-id="43c68-158">Подписка на сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="43c68-158">Subscribe to messages in a chat</span></span>
 
-<span data-ttu-id="1b5e2-159">Чтобы отслеживать сообщения в чате, вы можете создать подписку на уведомления об изменениях на уровне чата.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-159">To track messages in a chat, you can create a change notification subscription at a chat level.</span></span> <span data-ttu-id="1b5e2-160">Для этого подпишитесь на `/chats{id}/messages`.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-160">To do this, subscribe to `/chats{id}/messages`.</span></span> <span data-ttu-id="1b5e2-161">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление *в режиме только для приложения*.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-161">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.</span></span>
+<span data-ttu-id="43c68-159">Чтобы отслеживать сообщения в чате, вы можете создать подписку на уведомления об изменениях на уровне чата.</span><span class="sxs-lookup"><span data-stu-id="43c68-159">To track messages in a chat, you can create a change notification subscription at a chat level.</span></span> <span data-ttu-id="43c68-160">Для этого подпишитесь на `/chats{id}/messages`.</span><span class="sxs-lookup"><span data-stu-id="43c68-160">To do this, subscribe to `/chats{id}/messages`.</span></span> <span data-ttu-id="43c68-161">Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление *в режиме только для приложения*.</span><span class="sxs-lookup"><span data-stu-id="43c68-161">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.</span></span>
 
-<span data-ttu-id="1b5e2-162">Подписки на уровне чата также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-162">Chat-level subscriptions also support keyword-based search via the `$search` query parameter.</span></span>
+<span data-ttu-id="43c68-162">Подписки на уровне чата также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.</span><span class="sxs-lookup"><span data-stu-id="43c68-162">Chat-level subscriptions also support keyword-based search via the `$search` query parameter.</span></span>
 
-> <span data-ttu-id="1b5e2-163">**Примечание.**</span><span class="sxs-lookup"><span data-stu-id="1b5e2-163">**Note.**</span></span> <span data-ttu-id="1b5e2-164">Подписка на сообщения в чате находится в состоянии предварительной версии.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-164">Subcribing to messages in a chat is currently in preview.</span></span>
+> <span data-ttu-id="43c68-163">**Примечание.**</span><span class="sxs-lookup"><span data-stu-id="43c68-163">**Note.**</span></span> <span data-ttu-id="43c68-164">Подписка на сообщения в чате находится в состоянии предварительной версии.</span><span class="sxs-lookup"><span data-stu-id="43c68-164">Subcribing to messages in a chat is currently in preview.</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="1b5e2-165">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-165">Permissions</span></span>
+### <a name="permissions"></a><span data-ttu-id="43c68-165">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-165">Permissions</span></span>
 
-|<span data-ttu-id="1b5e2-166">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5e2-166">Permission type</span></span>      | <span data-ttu-id="1b5e2-167">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-167">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43c68-166">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43c68-166">Permission type</span></span>      | <span data-ttu-id="43c68-167">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43c68-167">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b5e2-168">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-168">Delegated (work or school account)</span></span> | <span data-ttu-id="1b5e2-169">Chat.Read</span><span class="sxs-lookup"><span data-stu-id="1b5e2-169">Chat.Read</span></span> |
-|<span data-ttu-id="1b5e2-170">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b5e2-170">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b5e2-171">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-171">Not supported.</span></span>    |
-|<span data-ttu-id="1b5e2-172">Приложение</span><span class="sxs-lookup"><span data-stu-id="1b5e2-172">Application</span></span> | <span data-ttu-id="1b5e2-173">Chat.Read.All</span><span class="sxs-lookup"><span data-stu-id="1b5e2-173">Chat.Read.All</span></span> |
+|<span data-ttu-id="43c68-168">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43c68-168">Delegated (work or school account)</span></span> | <span data-ttu-id="43c68-169">Chat.Read</span><span class="sxs-lookup"><span data-stu-id="43c68-169">Chat.Read</span></span> |
+|<span data-ttu-id="43c68-170">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43c68-170">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43c68-171">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43c68-171">Not supported.</span></span>    |
+|<span data-ttu-id="43c68-172">Приложение</span><span class="sxs-lookup"><span data-stu-id="43c68-172">Application</span></span> | <span data-ttu-id="43c68-173">Chat.Read.All</span><span class="sxs-lookup"><span data-stu-id="43c68-173">Chat.Read.All</span></span> |
 
-### <a name="example-1-subscribe-to-messages-in-a-chat"></a><span data-ttu-id="1b5e2-174">Пример 1. Подписка на сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="1b5e2-174">Example 1: Subscribe to messages in a chat</span></span>
+### <a name="example-1-subscribe-to-messages-in-a-chat"></a><span data-ttu-id="43c68-174">Пример 1. Подписка на сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="43c68-174">Example 1: Subscribe to messages in a chat</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -204,9 +204,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-subscribe-to-messages-in-a-chat-that-contain-certain-text"></a><span data-ttu-id="1b5e2-175">Пример 2. Подписка на сообщения в чате, содержащие определенный текст</span><span class="sxs-lookup"><span data-stu-id="1b5e2-175">Example 2: Subscribe to messages in a chat that contain certain text</span></span>
+### <a name="example-2-subscribe-to-messages-in-a-chat-that-contain-certain-text"></a><span data-ttu-id="43c68-175">Пример 2. Подписка на сообщения в чате, содержащие определенный текст</span><span class="sxs-lookup"><span data-stu-id="43c68-175">Example 2: Subscribe to messages in a chat that contain certain text</span></span>
 
-<span data-ttu-id="1b5e2-176">Следующий запрос отправляет сообщения, содержащие `Hello` подписчику.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-176">The following request will send messages that contain `Hello` to the subscriber.</span></span>
+<span data-ttu-id="43c68-176">Следующий запрос отправляет сообщения, содержащие `Hello` подписчику.</span><span class="sxs-lookup"><span data-stu-id="43c68-176">The following request will send messages that contain `Hello` to the subscriber.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -224,7 +224,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-subscribe-to-messages-and-replies-in-a-chat-without-resource-data"></a><span data-ttu-id="1b5e2-177">Пример 3. Подписка на сообщения (и ответы) в чате без данных ресурса</span><span class="sxs-lookup"><span data-stu-id="1b5e2-177">Example 3: Subscribe to messages (and replies) in a chat without resource data</span></span>
+### <a name="example-3-subscribe-to-messages-and-replies-in-a-chat-without-resource-data"></a><span data-ttu-id="43c68-177">Пример 3. Подписка на сообщения (и ответы) в чате без данных ресурса</span><span class="sxs-lookup"><span data-stu-id="43c68-177">Example 3: Subscribe to messages (and replies) in a chat without resource data</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -239,9 +239,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-subscribe-to-message-in-a-chat-in-which-a-specific-user-is-mentioned"></a><span data-ttu-id="1b5e2-178">Пример 4. Подписка на сообщения в чате, в которых упоминается определенный пользователь</span><span class="sxs-lookup"><span data-stu-id="1b5e2-178">Example 4: Subscribe to message in a chat in which a specific user is mentioned</span></span>
+### <a name="example-4-subscribe-to-message-in-a-chat-in-which-a-specific-user-is-mentioned"></a><span data-ttu-id="43c68-178">Пример 4. Подписка на сообщения в чате, в которых упоминается определенный пользователь</span><span class="sxs-lookup"><span data-stu-id="43c68-178">Example 4: Subscribe to message in a chat in which a specific user is mentioned</span></span>
 
-<span data-ttu-id="1b5e2-179">Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.</span><span class="sxs-lookup"><span data-stu-id="1b5e2-179">To get notifications only for messages in which a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.</span></span>
+<span data-ttu-id="43c68-179">Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.</span><span class="sxs-lookup"><span data-stu-id="43c68-179">To get notifications only for messages in which a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -257,6 +257,107 @@ Content-Type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1b5e2-180">См. также</span><span class="sxs-lookup"><span data-stu-id="1b5e2-180">See also</span></span>
-- [<span data-ttu-id="1b5e2-181">Уведомления об изменениях в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1b5e2-181">Microsoft Graph change notifications</span></span>](webhooks.md)
-- [<span data-ttu-id="1b5e2-182">Обзор API Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="1b5e2-182">Microsoft Teams API overview</span></span>](teams-concept-overview.md)
+## <a name="notification-payloads"></a><span data-ttu-id="43c68-180">Полезные данные уведомлений</span><span class="sxs-lookup"><span data-stu-id="43c68-180">Notification payloads</span></span>
+
+<span data-ttu-id="43c68-181">В зависимости от вашей подписки вы можете получать уведомление с данными ресурсов или без них.</span><span class="sxs-lookup"><span data-stu-id="43c68-181">Depending on your subscription, you can either get the notification with resource data, or without it.</span></span> <span data-ttu-id="43c68-182">Подписка с данными ресурсов позволяет получать полезные данные вместе с уведомлением, устраняя необходимость обратного вызова и получения содержимого.</span><span class="sxs-lookup"><span data-stu-id="43c68-182">Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.</span></span>
+
+### <a name="notifications-with-resource-data"></a><span data-ttu-id="43c68-183">Уведомления с данными ресурсов</span><span class="sxs-lookup"><span data-stu-id="43c68-183">Notifications with resource data</span></span>
+
+<span data-ttu-id="43c68-184">Для уведомлений с данными ресурсов полезные данные выглядят следующим образом.</span><span class="sxs-lookup"><span data-stu-id="43c68-184">For notifications with resource data, the payload looks like the following.</span></span> <span data-ttu-id="43c68-185">Это полезные данные для сообщения, отправленного в чате.</span><span class="sxs-lookup"><span data-stu-id="43c68-185">This payload is for a message sent in a chat.</span></span>
+
+```json
+{
+    "value": [{
+        "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
+        "changeType": "created",
+        "clientState": "<<--SpecifiedClientState-->>",
+        "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
+        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
+        "resourceData": {
+            "id": "1612289765949",
+            "@odata.type": "#Microsoft.Graph.chatMessage",
+            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
+        },
+        "encryptedContent": {
+            "data": "<<--EncryptedContent-->",
+            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
+            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
+            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
+        },
+        "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
+    }],
+    "validationTokens": ["<<--ValidationTokens-->>"]
+}
+```
+
+<span data-ttu-id="43c68-186">Дополнительные сведения о проверке маркеров и расшифровке полезных данных см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов](webhooks-with-resource-data.md).</span><span class="sxs-lookup"><span data-stu-id="43c68-186">For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).</span></span>
+
+<span data-ttu-id="43c68-187">Расшифрованные полезные данные уведомления выглядят следующим образом.</span><span class="sxs-lookup"><span data-stu-id="43c68-187">The decrypted notification payload looks like the following.</span></span> <span data-ttu-id="43c68-188">Полезные данные соответствуют схеме [chatMessage](/graph/api/resources/chatMessage?preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="43c68-188">The payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema.</span></span> <span data-ttu-id="43c68-189">Полезные данные похожи на результаты, возвращаемые операциями GET.</span><span class="sxs-lookup"><span data-stu-id="43c68-189">The payload is similar to that returned by GET operations.</span></span>
+
+```json
+{
+  "id": "1612289992105",
+  "replyToId": null,
+  "etag": "1612289992105",
+  "messageType": "message",
+  "createdDateTime": "2021-02-02T18:19:52Z",
+  "lastModifiedDateTime": "2021-02-02T18:19:52.105Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+      "displayName": "Ramjot Singh",
+      "userIdentityType": "aadUser"
+    },
+    "conversation": null
+  },
+  "body": {
+    "contentType": "text",
+    "content": "test"
+  },
+  "channelIdentity": null,
+  "attachments": [],
+  "mentions": [],
+  "policyViolation": null,
+  "reactions": [],
+  "replies": [],
+  "hostedContents": []
+}
+```
+
+### <a name="notifications-without-resource-data"></a><span data-ttu-id="43c68-190">Уведомления без данных о ресурсах</span><span class="sxs-lookup"><span data-stu-id="43c68-190">Notifications without resource data</span></span>
+
+<span data-ttu-id="43c68-191">Уведомления без данных о ресурсах предоставляют достаточно сведений, чтобы выполнить вызов GET для получения содержимого сообщения.</span><span class="sxs-lookup"><span data-stu-id="43c68-191">Notifications without resource data give you enough information to make GET calls to get the message content.</span></span> <span data-ttu-id="43c68-192">Для подписок на уведомления без данных о ресурсах не требуется сертификат шифрования (так как фактические данные ресурсов не передаются).</span><span class="sxs-lookup"><span data-stu-id="43c68-192">Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).</span></span>
+
+<span data-ttu-id="43c68-193">Полезные данные выглядят следующим образом.</span><span class="sxs-lookup"><span data-stu-id="43c68-193">The payload looks like the following.</span></span> <span data-ttu-id="43c68-194">Это полезные данные для сообщения, отправленного в канале.</span><span class="sxs-lookup"><span data-stu-id="43c68-194">This payload is for a message sent in a channel.</span></span>
+
+```json
+ {
+  "subscriptionId": "9f9d1ed0-c9cc-42e7-8d80-a7fc4b0cda3c",
+  "changeType": "created",
+  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "clientState": "<<--SpecifiedClientState-->>",
+  "subscriptionExpirationDateTime": "2021-02-02T11:26:41.0537895-08:00",
+  "resource": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')",
+  "resourceData": {
+    "id": "1612293113399",
+    "@odata.type": "#Microsoft.Graph.chatMessage",
+    "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')"
+  }
+}
+```
+
+<span data-ttu-id="43c68-195">Свойства **resource** и **@odata.id** можно использовать для вызовов в Microsoft Graph, чтобы получить полезные данные для сообщения.</span><span class="sxs-lookup"><span data-stu-id="43c68-195">The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message.</span></span> <span data-ttu-id="43c68-196">Вызовы GET всегда возвращают текущее состояние сообщения.</span><span class="sxs-lookup"><span data-stu-id="43c68-196">GET calls will always return the current state of the message.</span></span> <span data-ttu-id="43c68-197">Если сообщение изменяется с момента отправки уведомления и до получения сообщения, операция возвращает обновленное сообщение.</span><span class="sxs-lookup"><span data-stu-id="43c68-197">If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="43c68-198">См. также</span><span class="sxs-lookup"><span data-stu-id="43c68-198">See also</span></span>
+- [<span data-ttu-id="43c68-199">Уведомления об изменениях в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="43c68-199">Microsoft Graph change notifications</span></span>](webhooks.md)
+- [<span data-ttu-id="43c68-200">Обзор API Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="43c68-200">Microsoft Teams API overview</span></span>](teams-concept-overview.md)
