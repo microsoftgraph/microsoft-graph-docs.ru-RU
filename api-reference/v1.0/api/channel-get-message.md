@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac33165f0bead7873f5a68e7cfdbb9a1066b8b98
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 3363d252bb58302e8446c01212b7bd2178d43fa9
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904507"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115178"
 ---
 # <a name="get-channel-message"></a>Получение сообщения в канале
 
@@ -23,9 +23,9 @@ ms.locfileid: "48904507"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированное (рабочая или учебная учетная запись)| ChannelMessage.Read.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| ChannelMessage.Read.Group* |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
