@@ -1,44 +1,52 @@
 ---
-title: Тип ресурса Шарепоинтситеусажедетаил
+title: Тип ресурса sharePointSiteUsageDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 1b61321dfeb0a9aa14651e7d13ad7184b30c3423
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8f06cf9fcf1dfc01af3e98c01a79a86426e19ee
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997790"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115222"
 ---
-# <a name="sharepointsiteusagedetail-resource-type"></a><span data-ttu-id="dc500-103">Тип ресурса Шарепоинтситеусажедетаил</span><span class="sxs-lookup"><span data-stu-id="dc500-103">sharePointSiteUsageDetail resource type</span></span>
+# <a name="sharepointsiteusagedetail-resource-type"></a><span data-ttu-id="42e3b-103">Тип ресурса sharePointSiteUsageDetail</span><span class="sxs-lookup"><span data-stu-id="42e3b-103">sharePointSiteUsageDetail resource type</span></span>
 
-<span data-ttu-id="dc500-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dc500-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="42e3b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42e3b-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dc500-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="dc500-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="42e3b-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="42e3b-105">Properties</span></span>
 
-| <span data-ttu-id="dc500-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="dc500-106">Property</span></span>                | <span data-ttu-id="dc500-107">Тип</span><span class="sxs-lookup"><span data-stu-id="dc500-107">Type</span></span>    |
+| <span data-ttu-id="42e3b-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="42e3b-106">Property</span></span>                | <span data-ttu-id="42e3b-107">Тип</span><span class="sxs-lookup"><span data-stu-id="42e3b-107">Type</span></span>    |
 | :---------------------- | :------ |
-| <span data-ttu-id="dc500-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="dc500-108">reportRefreshDate</span></span>       | <span data-ttu-id="dc500-109">Дата</span><span class="sxs-lookup"><span data-stu-id="dc500-109">Date</span></span>    |
-| <span data-ttu-id="dc500-110">siteId</span><span class="sxs-lookup"><span data-stu-id="dc500-110">siteId</span></span>                  | <span data-ttu-id="dc500-111">Guid</span><span class="sxs-lookup"><span data-stu-id="dc500-111">Guid</span></span>  |
-| <span data-ttu-id="dc500-112">siteUrl</span><span class="sxs-lookup"><span data-stu-id="dc500-112">siteUrl</span></span>                 | <span data-ttu-id="dc500-113">String</span><span class="sxs-lookup"><span data-stu-id="dc500-113">String</span></span>  |
-| <span data-ttu-id="dc500-114">овнердисплайнаме</span><span class="sxs-lookup"><span data-stu-id="dc500-114">ownerDisplayName</span></span>        | <span data-ttu-id="dc500-115">String</span><span class="sxs-lookup"><span data-stu-id="dc500-115">String</span></span>  |
-| <span data-ttu-id="dc500-116">овнерпринЦипалнаме</span><span class="sxs-lookup"><span data-stu-id="dc500-116">ownerPrincipalName</span></span>      | <span data-ttu-id="dc500-117">String</span><span class="sxs-lookup"><span data-stu-id="dc500-117">String</span></span>  |
-| <span data-ttu-id="dc500-118">isDeleted</span><span class="sxs-lookup"><span data-stu-id="dc500-118">isDeleted</span></span>               | <span data-ttu-id="dc500-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="dc500-119">Boolean</span></span> |
-| <span data-ttu-id="dc500-120">ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="dc500-120">lastActivityDate</span></span>        | <span data-ttu-id="dc500-121">Дата</span><span class="sxs-lookup"><span data-stu-id="dc500-121">Date</span></span>    |
-| <span data-ttu-id="dc500-122">филекаунт</span><span class="sxs-lookup"><span data-stu-id="dc500-122">fileCount</span></span>               | <span data-ttu-id="dc500-123">Int64</span><span class="sxs-lookup"><span data-stu-id="dc500-123">Int64</span></span>   |
-| <span data-ttu-id="dc500-124">активефилекаунт</span><span class="sxs-lookup"><span data-stu-id="dc500-124">activeFileCount</span></span>         | <span data-ttu-id="dc500-125">Int64</span><span class="sxs-lookup"><span data-stu-id="dc500-125">Int64</span></span>   |
-| <span data-ttu-id="dc500-126">пажевиевкаунт</span><span class="sxs-lookup"><span data-stu-id="dc500-126">pageViewCount</span></span>           | <span data-ttu-id="dc500-127">Int64</span><span class="sxs-lookup"><span data-stu-id="dc500-127">Int64</span></span>   |
-| <span data-ttu-id="dc500-128">виситедпажекаунт</span><span class="sxs-lookup"><span data-stu-id="dc500-128">visitedPageCount</span></span>        | <span data-ttu-id="dc500-129">Int64</span><span class="sxs-lookup"><span data-stu-id="dc500-129">Int64</span></span>   |
-| <span data-ttu-id="dc500-130">сторажеусединбитес</span><span class="sxs-lookup"><span data-stu-id="dc500-130">storageUsedInBytes</span></span>      | <span data-ttu-id="dc500-131">Int64</span><span class="sxs-lookup"><span data-stu-id="dc500-131">Int64</span></span>   |
-| <span data-ttu-id="dc500-132">сторажеаллокатединбитес</span><span class="sxs-lookup"><span data-stu-id="dc500-132">storageAllocatedInBytes</span></span> | <span data-ttu-id="dc500-133">Int64</span><span class="sxs-lookup"><span data-stu-id="dc500-133">Int64</span></span>   |
-| <span data-ttu-id="dc500-134">рутвебтемплате</span><span class="sxs-lookup"><span data-stu-id="dc500-134">rootWebTemplate</span></span>         | <span data-ttu-id="dc500-135">String</span><span class="sxs-lookup"><span data-stu-id="dc500-135">String</span></span>  |
-| <span data-ttu-id="dc500-136">репортпериод</span><span class="sxs-lookup"><span data-stu-id="dc500-136">reportPeriod</span></span>            | <span data-ttu-id="dc500-137">String</span><span class="sxs-lookup"><span data-stu-id="dc500-137">String</span></span>  |
+| <span data-ttu-id="42e3b-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="42e3b-108">reportRefreshDate</span></span>       | <span data-ttu-id="42e3b-109">Дата</span><span class="sxs-lookup"><span data-stu-id="42e3b-109">Date</span></span>    |
+| <span data-ttu-id="42e3b-110">siteId</span><span class="sxs-lookup"><span data-stu-id="42e3b-110">siteId</span></span>                  | <span data-ttu-id="42e3b-111">Guid</span><span class="sxs-lookup"><span data-stu-id="42e3b-111">Guid</span></span>  |
+| <span data-ttu-id="42e3b-112">siteUrl</span><span class="sxs-lookup"><span data-stu-id="42e3b-112">siteUrl</span></span>                 | <span data-ttu-id="42e3b-113">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-113">String</span></span>  |
+| <span data-ttu-id="42e3b-114">ownerDisplayName</span><span class="sxs-lookup"><span data-stu-id="42e3b-114">ownerDisplayName</span></span>        | <span data-ttu-id="42e3b-115">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-115">String</span></span>  |
+| <span data-ttu-id="42e3b-116">ownerPrincipalName</span><span class="sxs-lookup"><span data-stu-id="42e3b-116">ownerPrincipalName</span></span>      | <span data-ttu-id="42e3b-117">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-117">String</span></span>  |
+| <span data-ttu-id="42e3b-118">isDeleted</span><span class="sxs-lookup"><span data-stu-id="42e3b-118">isDeleted</span></span>               | <span data-ttu-id="42e3b-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="42e3b-119">Boolean</span></span> |
+| <span data-ttu-id="42e3b-120">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="42e3b-120">lastActivityDate</span></span>        | <span data-ttu-id="42e3b-121">Дата</span><span class="sxs-lookup"><span data-stu-id="42e3b-121">Date</span></span>    |
+| <span data-ttu-id="42e3b-122">SiteSensitivityLabelId</span><span class="sxs-lookup"><span data-stu-id="42e3b-122">SiteSensitivityLabelId</span></span>  | <span data-ttu-id="42e3b-123">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-123">String</span></span>  |
+| <span data-ttu-id="42e3b-124">ExternalSharing</span><span class="sxs-lookup"><span data-stu-id="42e3b-124">ExternalSharing</span></span>         | <span data-ttu-id="42e3b-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="42e3b-125">Boolean</span></span> |
+| <span data-ttu-id="42e3b-126">UnmanagedDevicePolicy</span><span class="sxs-lookup"><span data-stu-id="42e3b-126">UnmanagedDevicePolicy</span></span>   | <span data-ttu-id="42e3b-127">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-127">String</span></span>  |
+| <span data-ttu-id="42e3b-128">GeoLocation</span><span class="sxs-lookup"><span data-stu-id="42e3b-128">GeoLocation</span></span>             | <span data-ttu-id="42e3b-129">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-129">String</span></span>  |
+| <span data-ttu-id="42e3b-130">fileCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-130">fileCount</span></span>               | <span data-ttu-id="42e3b-131">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-131">Int64</span></span>   |
+| <span data-ttu-id="42e3b-132">activeFileCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-132">activeFileCount</span></span>         | <span data-ttu-id="42e3b-133">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-133">Int64</span></span>   |
+| <span data-ttu-id="42e3b-134">pageViewCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-134">pageViewCount</span></span>           | <span data-ttu-id="42e3b-135">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-135">Int64</span></span>   |
+| <span data-ttu-id="42e3b-136">visitedPageCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-136">visitedPageCount</span></span>        | <span data-ttu-id="42e3b-137">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-137">Int64</span></span>   |
+| <span data-ttu-id="42e3b-138">AnonymousLinkCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-138">AnonymousLinkCount</span></span>      | <span data-ttu-id="42e3b-139">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-139">Int64</span></span>   |
+| <span data-ttu-id="42e3b-140">CompanyLinkCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-140">CompanyLinkCount</span></span>        | <span data-ttu-id="42e3b-141">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-141">Int64</span></span>   |
+| <span data-ttu-id="42e3b-142">SecureLinkForGuestCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-142">SecureLinkForGuestCount</span></span> | <span data-ttu-id="42e3b-143">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-143">Int64</span></span>   |
+| <span data-ttu-id="42e3b-144">SecureLinkForMemberCount</span><span class="sxs-lookup"><span data-stu-id="42e3b-144">SecureLinkForMemberCount</span></span>| <span data-ttu-id="42e3b-145">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-145">Int64</span></span>   |
+| <span data-ttu-id="42e3b-146">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="42e3b-146">storageUsedInBytes</span></span>      | <span data-ttu-id="42e3b-147">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-147">Int64</span></span>   |
+| <span data-ttu-id="42e3b-148">storageAllocatedInBytes</span><span class="sxs-lookup"><span data-stu-id="42e3b-148">storageAllocatedInBytes</span></span> | <span data-ttu-id="42e3b-149">Int64</span><span class="sxs-lookup"><span data-stu-id="42e3b-149">Int64</span></span>   |
+| <span data-ttu-id="42e3b-150">rootWebTemplate</span><span class="sxs-lookup"><span data-stu-id="42e3b-150">rootWebTemplate</span></span>         | <span data-ttu-id="42e3b-151">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-151">String</span></span>  |
+| <span data-ttu-id="42e3b-152">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="42e3b-152">reportPeriod</span></span>            | <span data-ttu-id="42e3b-153">Строка</span><span class="sxs-lookup"><span data-stu-id="42e3b-153">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="dc500-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dc500-138">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="42e3b-154">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="42e3b-154">JSON representation</span></span>
 
-<span data-ttu-id="dc500-139">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dc500-139">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="42e3b-155">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="42e3b-155">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,10 +62,19 @@ ms.locfileid: "47997790"
   "ownerPrincipalName": "String",
   "isDeleted": true,
   "lastActivityDate": "Date",
+  "lastActivityDate": "2017-09-01", 
+  "SiteSensitivityLabelId": "String",
+  "ExternalSharing": true,
+  "UnmanagedDevicePolicy": "String",
+  "GeoLocation": "String",
   "fileCount": 1024,
   "activeFileCount": 1024,
   "pageViewCount": 1024,
   "visitedPageCount": 1024,
+  "AnonymousLinkCount": 5,
+  "CompanyLinkCount": 8,
+  "SecureLinkForGuestCount": 13,
+  "SecureLinkForMemberCount": 11,
   "storageUsedInBytes": 1024,
   "storageAllocatedInBytes": 1024,
   "rootWebTemplate": "String",
