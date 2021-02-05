@@ -1,22 +1,22 @@
 ---
-title: Получение ответа на сообщение канала
-description: Получение одного ответа на сообщение в канале команды.
+title: Получить ответ на сообщение канала
+description: Получите один ответ на сообщение в канале команды.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 501adcb7e7413bb2793864e604c696a41fe860d6
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 846038341b167f5276d8be4d7a343c17bd70c867
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904472"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115179"
 ---
-# <a name="get-a-reply-to-a-channel-message"></a>Получение ответа на сообщение канала
+# <a name="get-a-reply-to-a-channel-message"></a>Получить ответ на сообщение канала
 
 Пространство имен: microsoft.graph
 
-Получение одного ответа на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) команды.
+Получите один ответ на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) команды.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48904472"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Не поддерживается. |
+|Приложение| ChannelMessage.Read.Group* |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 

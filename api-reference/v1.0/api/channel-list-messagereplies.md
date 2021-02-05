@@ -1,24 +1,24 @@
 ---
 title: Список ответов на сообщения канала
-description: Перечисление всех ответов на сообщение в канале команды.
+description: Список всех ответов сообщения в канале команды.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73bd674eece5e0a3f9d26d7e629ba51f768b4a81
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 98bda1fb8c86d0d3d6bc4c5a803e9f169b798dee
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905332"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115166"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
 Пространство имен: microsoft.graph
 
-Перечисление всех ответов на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) команды.
+Список всех ответов сообщения [в](../resources/chatmessage.md) [канале](../resources/channel.md) команды.
 
-Этот метод перечисляет только ответы на заданное сообщение, если таковые имеются. Чтобы получить само сообщение, просто вызовите [сообщение Get Channel](channel-get-message.md).
+Этот метод перечисляет только ответы указанного сообщения, если они есть. Чтобы получить само сообщение, просто вызовите [get channel message](channel-get-message.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48905332"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Не поддерживается. |
+|Приложение| ChannelMessage.Read.Group* |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -56,7 +56,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/chatmessage.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В этом примере указанное сообщение имеет два ответа. Каждый ответ содержит один или несколько объектов [чатмессажементион](../resources/chatmessagemention.md) .
+В этом примере указанное сообщение имеет два ответа. Каждый ответ имеет один или несколько [объектов chatMessageMention.](../resources/chatmessagemention.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)

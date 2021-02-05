@@ -1,20 +1,20 @@
 ---
 title: Обновление chatMessage
-description: Обновление свойства Полицивиолатион объекта chatMessage.
+description: Обновление свойства policyViolation объекта chatMessage.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d3be68c5c2ba9e561cc66b4665759dfbb9e82753
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: ee729e5285bfd6938329800d8bcedbf611391221
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848648"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115208"
 ---
 # <a name="update-chatmessage"></a>Обновление chatMessage
 
-Обновление объекта [chatMessage](../resources/chatMessage.md) . Можно обновить только свойство **полицивиолатион** элемента **chatMessage** .
+Обновление объекта [chatMessage.](../resources/chatMessage.md) Обновлять можно только свойство **policyViolation** **объекта chatMessage.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,13 +24,13 @@ ms.locfileid: "48848648"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Chat. Упдатеполицивиолатион. ALL для сообщения чата.</br>Чаннелмессаже. Упдатеполицивиолатион. ALL для сообщения канала. |
+|Приложение | Chat.UpdatePolicyViolation.All для сообщения чата.</br>ChannelMessage.UpdatePolicyViolation.All для сообщения канала. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/(team-id)/channels/{channel-id}/chatMessages/{message-id}
-PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,17 +42,17 @@ PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [chatMessage](../resources/chatMessage.md) в формате JSON, указав только свойство **полицивиолатион** .
+В теле запроса укажите представление объекта [chatMessage](../resources/chatMessage.md) в JSON, указав только **свойство policyViolation.**
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` отклик.
+В случае успеха этот метод возвращает `200 OK` ответ.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на обновление свойства **полицивиолатион** сообщения канала Microsoft Teams.
+Ниже приводится пример запроса на обновление свойства **policyViolation** в сообщении канала Microsoft Teams.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

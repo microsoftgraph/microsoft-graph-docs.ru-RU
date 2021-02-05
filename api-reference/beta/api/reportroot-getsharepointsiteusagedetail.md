@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 94fc4840f5be9d33eeac0f1dc2ccf98339268c24
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: be28e66a48462ec2bda64c3ae66b1f0cb6059548
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982630"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115201"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -20,7 +20,7 @@ ms.locfileid: "49982630"
 
 Получите сведения об использовании сайтов SharePoint.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании сайта SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании сайтов SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -78,15 +78,23 @@ CSV-файл содержит столбцы со следующими заго�
 - "Owner Display Name" (Отображаемое имя владельца);
 - Is Deleted (удален)
 - "Last Activity Date" (Дата последнего действия);
+- ИД метки конфиденциальности сайта
+- Внешний общий доступ
+- Неугодная политика устройств
+- Географическое расположение
 - "File Count" (Количество файлов);
 - "Active File Count" (Количество активных файлов);
 - "Page View Count" (Количество просмотров страницы);
 - "Visited Page Count" (Количество посещенных страниц);
-- "Storage Used (Byte)" (Используемый объем хранилища в байтах);
+- Anonymous Link Count
+- Company Link Count
+- Безопасная ссылка для подсчета гостей
+- Безопасная ссылка для подсчета членов
+- Storage Used (Byte) [использовано (байт)]
 - "Storage Allocated (Byte)" (Объем выделенного хранилища в байтах);
 - "Root Web Template" (Шаблон корневого веб-сайта);
 - Owner Principal Name (имя участника-владельца)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ### <a name="json"></a>JSON
 
@@ -139,7 +147,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,Site Sensitivity Label Id,External Sharing,Unmanaged Device Policy,Geo Location,File Count,Active File Count,Page View Count,Visited Page Count,Anonymous Link Count,Company Link Count,Secure Link For Guest Count,Secure Link For Member Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -189,10 +197,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
+      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "ExternalSharing": false,
+      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "GeoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
+      "AnonymousLinkCount": 5,
+      "CompanyLinkCount": 8,
+      "SecureLinkForGuestCount": 13,
+      "SecureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 

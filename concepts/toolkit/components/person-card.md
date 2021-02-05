@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 79a14c3d37fba06a076e319b34029008b7fbf2fd
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: abee2c015c2dbaf53202b132c425a4a12df6ac30
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659185"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115229"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -63,7 +63,7 @@ MgtPersonCard.config.sections.profile = false;
 | files | `boolean` — указывает, отображается ли раздела файлов карточки контакта. Значение по умолчанию: `true`.  |
 | profile | `boolean` — указывает, отображается ли раздел профиля карточки контакта. Значение по умолчанию: `true`.  |
 
-Чтобы отключить раздел, просто задайте для свойства значение `false` в коде инициализации приложения:.
+Чтобы отключить раздел, просто задайте свойство в `false` коде инициализации приложения:
 ```ts
 import { MgtPersonCard } from `@microsoft/mgt`;
 
@@ -94,8 +94,8 @@ TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Объект пользователя, определенный в Microsoft Graph и содержащий подробные сведения о пользователе. |
 | person-image   | string                    | Универсальный код ресурса (URI) изображения, связанный с человеком, который отображается в карточке.                                   |
 | inherit-details   | Отсутствует.                  | Разрешает проработку дерева родителей для компонента `mgt-person` для использования одинаковых данных `person-details` и `person-image`.                      |
-| user-id | string | Позволяет разработчикам предоставлять user-id, чтобы получить данные, отображаемые в компоненте карточки контакта. |
-| person-query | string | Позволяет разработчикам предоставлять person-query, чтобы получить данные, отображаемые в компоненте карточки контакта. |
+| user-id | string | Позволяет разработчикам предоставить удостоверение пользователя для извлечения данных, показанных в компоненте карточки пользователя |
+| person-query | string | Позволяет разработчикам предоставить запрос пользователя для получения данных, показанных в компоненте карточки пользователя |
 
 
 ## <a name="templates"></a>Шаблоны
