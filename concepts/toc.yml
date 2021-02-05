@@ -648,6 +648,6 @@ items:
           - name: Ошибки
             href: errors.md
       - name: Справочник по версии 1.0
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: Документация для бета-версий
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
