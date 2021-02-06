@@ -1,36 +1,36 @@
 ---
 title: Тип ресурса инициатора
-description: Указывает, кто инициировал событие подготовки.
+description: Описывает, кто и что инициировал событие предоставления.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: c0b6b326925d0ca3f0dbf8c0c25df266834ecce6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2aa8c3f365402569d7a9987d9152bae5e4e3c580
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130250"
 ---
-# <a name="initiator-resource-type"></a><span data-ttu-id="1da86-103">Тип ресурса инициатора</span><span class="sxs-lookup"><span data-stu-id="1da86-103">initiator resource type</span></span>
+# <a name="initiator-resource-type"></a><span data-ttu-id="c54c7-103">Тип ресурса инициатора</span><span class="sxs-lookup"><span data-stu-id="c54c7-103">initiator resource type</span></span>
 
-<span data-ttu-id="1da86-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1da86-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c54c7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c54c7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1da86-105">Указывает, кто инициировал событие подготовки.</span><span class="sxs-lookup"><span data-stu-id="1da86-105">Describes who or what initiated the provisioning event.</span></span> 
+<span data-ttu-id="c54c7-105">Описывает, кто и что инициировал событие предоставления.</span><span class="sxs-lookup"><span data-stu-id="c54c7-105">Describes who or what initiated the provisioning event.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="1da86-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="1da86-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c54c7-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="c54c7-106">Properties</span></span>
 
-| <span data-ttu-id="1da86-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="1da86-107">Property</span></span>     | <span data-ttu-id="1da86-108">Тип</span><span class="sxs-lookup"><span data-stu-id="1da86-108">Type</span></span>        | <span data-ttu-id="1da86-109">Описание</span><span class="sxs-lookup"><span data-stu-id="1da86-109">Description</span></span> |
+| <span data-ttu-id="c54c7-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="c54c7-107">Property</span></span>     | <span data-ttu-id="c54c7-108">Тип</span><span class="sxs-lookup"><span data-stu-id="c54c7-108">Type</span></span>        | <span data-ttu-id="c54c7-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c54c7-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1da86-110">displayName</span><span class="sxs-lookup"><span data-stu-id="1da86-110">displayName</span></span>|<span data-ttu-id="1da86-111">String</span><span class="sxs-lookup"><span data-stu-id="1da86-111">String</span></span>|<span data-ttu-id="1da86-112">Имя пользователя или службы, которые инициировали событие подготовки.</span><span class="sxs-lookup"><span data-stu-id="1da86-112">Name of the person or service that initiated the provisioning event.</span></span>|
-|<span data-ttu-id="1da86-113">id</span><span class="sxs-lookup"><span data-stu-id="1da86-113">id</span></span>|<span data-ttu-id="1da86-114">String</span><span class="sxs-lookup"><span data-stu-id="1da86-114">String</span></span>|<span data-ttu-id="1da86-115">Уникальный идентификатор пользователя или службы, которые инициировали событие подготовки.</span><span class="sxs-lookup"><span data-stu-id="1da86-115">Uniquely identifies the person or service that initiated the provisioning event.</span></span>|
-|<span data-ttu-id="1da86-116">инитиатортипе</span><span class="sxs-lookup"><span data-stu-id="1da86-116">initiatorType</span></span>|<span data-ttu-id="1da86-117">String</span><span class="sxs-lookup"><span data-stu-id="1da86-117">String</span></span>| <span data-ttu-id="1da86-118">Тип инициатора.</span><span class="sxs-lookup"><span data-stu-id="1da86-118">Type of initiator.</span></span> <span data-ttu-id="1da86-119">Возможные значения: `user`, `app`, `system`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="1da86-119">Possible values are: `user`, `app`, `system`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="c54c7-110">displayName</span><span class="sxs-lookup"><span data-stu-id="c54c7-110">displayName</span></span>|<span data-ttu-id="c54c7-111">Строка</span><span class="sxs-lookup"><span data-stu-id="c54c7-111">String</span></span>|<span data-ttu-id="c54c7-112">Имя человека или службы, которая инициировала событие предоставления.</span><span class="sxs-lookup"><span data-stu-id="c54c7-112">Name of the person or service that initiated the provisioning event.</span></span>|
+|<span data-ttu-id="c54c7-113">id</span><span class="sxs-lookup"><span data-stu-id="c54c7-113">id</span></span>|<span data-ttu-id="c54c7-114">Строка</span><span class="sxs-lookup"><span data-stu-id="c54c7-114">String</span></span>|<span data-ttu-id="c54c7-115">Уникально идентифицирует человека или службу, инициировали событие предоставления.</span><span class="sxs-lookup"><span data-stu-id="c54c7-115">Uniquely identifies the person or service that initiated the provisioning event.</span></span>|
+|<span data-ttu-id="c54c7-116">initiatorType</span><span class="sxs-lookup"><span data-stu-id="c54c7-116">initiatorType</span></span>|<span data-ttu-id="c54c7-117">Строка</span><span class="sxs-lookup"><span data-stu-id="c54c7-117">String</span></span>| <span data-ttu-id="c54c7-118">Тип инициатора.</span><span class="sxs-lookup"><span data-stu-id="c54c7-118">Type of initiator.</span></span> <span data-ttu-id="c54c7-119">Возможные значения: `user`, `app`, `system`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="c54c7-119">Possible values are: `user`, `app`, `system`, `unknownFutureValue`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1da86-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1da86-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c54c7-120">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c54c7-120">JSON representation</span></span>
 
-<span data-ttu-id="1da86-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1da86-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c54c7-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c54c7-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

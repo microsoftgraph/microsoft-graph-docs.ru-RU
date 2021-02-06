@@ -1,63 +1,63 @@
 ---
-title: Получение Аппликатионсигнинсуммари
-description: Получение свойств и связей объекта **аппликатионсигнинсуммари** .
+title: Получение applicationSignInSummary
+description: Получение свойств и связей объекта **applicationSigninSummary.**
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3ac93b4e2ebba35eeb3ccc68707ca757b13cb8f6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9fad0f7122a1d82cb1f0dfc2ca7172f7f4029e85
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128979"
 ---
-# <a name="get-applicationsigninsummary"></a><span data-ttu-id="9f77e-103">Получение Аппликатионсигнинсуммари</span><span class="sxs-lookup"><span data-stu-id="9f77e-103">Get applicationSignInSummary</span></span>
+# <a name="get-applicationsigninsummary"></a><span data-ttu-id="fcc5f-103">Получение applicationSignInSummary</span><span class="sxs-lookup"><span data-stu-id="fcc5f-103">Get applicationSignInSummary</span></span>
 
-<span data-ttu-id="9f77e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9f77e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fcc5f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fcc5f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9f77e-105">Получение свойств и связей объекта [аппликатионсигнинсуммари](../resources/applicationsigninsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="9f77e-105">Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.</span></span>
+<span data-ttu-id="fcc5f-105">Получение свойств и связей объекта [applicationSigninSummary.](../resources/applicationsigninsummary.md)</span><span class="sxs-lookup"><span data-stu-id="fcc5f-105">Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9f77e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9f77e-106">Permissions</span></span>
-<span data-ttu-id="9f77e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="9f77e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fcc5f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fcc5f-106">Permissions</span></span>
+<span data-ttu-id="fcc5f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="fcc5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="9f77e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9f77e-109">Permission type</span></span>      | <span data-ttu-id="9f77e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9f77e-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fcc5f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fcc5f-109">Permission type</span></span>      | <span data-ttu-id="fcc5f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fcc5f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9f77e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9f77e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9f77e-112">Report. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="9f77e-112">Report.Read.All</span></span> |
-|<span data-ttu-id="9f77e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9f77e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f77e-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="9f77e-114">Not supported</span></span>   |
-|<span data-ttu-id="9f77e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9f77e-115">Application</span></span> | <span data-ttu-id="9f77e-116">Report. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="9f77e-116">Report.Read.All</span></span> | 
+|<span data-ttu-id="fcc5f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fcc5f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fcc5f-112">Report.Read.All</span><span class="sxs-lookup"><span data-stu-id="fcc5f-112">Report.Read.All</span></span> |
+|<span data-ttu-id="fcc5f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fcc5f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fcc5f-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="fcc5f-114">Not supported</span></span>   |
+|<span data-ttu-id="fcc5f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fcc5f-115">Application</span></span> | <span data-ttu-id="fcc5f-116">Report.Read.All</span><span class="sxs-lookup"><span data-stu-id="fcc5f-116">Report.Read.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="9f77e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9f77e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fcc5f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fcc5f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET reports/getAzureADApplicationSignInSummary(period='{period}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="9f77e-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="9f77e-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="fcc5f-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="fcc5f-118">Function parameters</span></span>
 
-| <span data-ttu-id="9f77e-119">Параметр</span><span class="sxs-lookup"><span data-stu-id="9f77e-119">Parameter</span></span> | <span data-ttu-id="9f77e-120">Описание</span><span class="sxs-lookup"><span data-stu-id="9f77e-120">Description</span></span> |
+| <span data-ttu-id="fcc5f-119">Параметр</span><span class="sxs-lookup"><span data-stu-id="fcc5f-119">Parameter</span></span> | <span data-ttu-id="fcc5f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="fcc5f-120">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="9f77e-121">period</span><span class="sxs-lookup"><span data-stu-id="9f77e-121">period</span></span> | <span data-ttu-id="9f77e-122">Либо `D7` (последние семь дней), либо `D30` (последние 30 дней), другие значения создают ошибки.</span><span class="sxs-lookup"><span data-stu-id="9f77e-122">Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors.</span></span> |
+| <span data-ttu-id="fcc5f-121">period</span><span class="sxs-lookup"><span data-stu-id="fcc5f-121">period</span></span> | <span data-ttu-id="fcc5f-122">(последние `D7` семь дней) или `D30` (последние 30 дней); другие значения создают ошибки.</span><span class="sxs-lookup"><span data-stu-id="fcc5f-122">Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="9f77e-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9f77e-123">Request headers</span></span>
-| <span data-ttu-id="9f77e-124">Имя</span><span class="sxs-lookup"><span data-stu-id="9f77e-124">Name</span></span>      |<span data-ttu-id="9f77e-125">Описание</span><span class="sxs-lookup"><span data-stu-id="9f77e-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fcc5f-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fcc5f-123">Request headers</span></span>
+| <span data-ttu-id="fcc5f-124">Имя</span><span class="sxs-lookup"><span data-stu-id="fcc5f-124">Name</span></span>      |<span data-ttu-id="fcc5f-125">Описание</span><span class="sxs-lookup"><span data-stu-id="fcc5f-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9f77e-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9f77e-126">Authorization</span></span> | <span data-ttu-id="9f77e-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="9f77e-127">Bearer {code}</span></span> |
+| <span data-ttu-id="fcc5f-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fcc5f-126">Authorization</span></span> | <span data-ttu-id="fcc5f-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="fcc5f-127">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9f77e-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9f77e-128">Request body</span></span>
-<span data-ttu-id="9f77e-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9f77e-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fcc5f-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fcc5f-128">Request body</span></span>
+<span data-ttu-id="fcc5f-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fcc5f-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9f77e-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="9f77e-130">Response</span></span>
-<span data-ttu-id="9f77e-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аппликатионсигнинсуммари](../resources/applicationsigninsummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9f77e-131">If successful, this method returns a `200 OK` response code and an [applicationSignInSummary](../resources/applicationsigninsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fcc5f-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="fcc5f-130">Response</span></span>
+<span data-ttu-id="fcc5f-131">В случае успеха этот метод возвращает код отклика и объект `200 OK` [applicationSignInSummary](../resources/applicationsigninsummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fcc5f-131">If successful, this method returns a `200 OK` response code and an [applicationSignInSummary](../resources/applicationsigninsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9f77e-132">Пример</span><span class="sxs-lookup"><span data-stu-id="9f77e-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fcc5f-132">Пример</span><span class="sxs-lookup"><span data-stu-id="fcc5f-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9f77e-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="9f77e-133">Request</span></span>
-<span data-ttu-id="9f77e-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9f77e-134">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="fcc5f-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="fcc5f-133">Request</span></span>
+<span data-ttu-id="fcc5f-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fcc5f-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9f77e-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="9f77e-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fcc5f-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="fcc5f-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationsigninsummary"
@@ -65,28 +65,28 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
-# <a name="c"></a>[<span data-ttu-id="9f77e-136">C#</span><span class="sxs-lookup"><span data-stu-id="9f77e-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fcc5f-136">C#</span><span class="sxs-lookup"><span data-stu-id="fcc5f-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationsigninsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9f77e-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9f77e-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fcc5f-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fcc5f-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationsigninsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9f77e-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9f77e-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fcc5f-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fcc5f-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationsigninsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9f77e-139">Java</span><span class="sxs-lookup"><span data-stu-id="9f77e-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fcc5f-139">Java</span><span class="sxs-lookup"><span data-stu-id="fcc5f-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationsigninsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="9f77e-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="9f77e-140">Response</span></span>
-<span data-ttu-id="9f77e-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9f77e-141">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="fcc5f-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="fcc5f-140">Response</span></span>
+<span data-ttu-id="fcc5f-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fcc5f-141">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="9f77e-142">**Примечание:** Объект Response, показанный здесь, ммигхт должен быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="9f77e-142">**Note:** The response object shown here mmight be shortened for readability.</span></span> <span data-ttu-id="9f77e-143">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9f77e-143">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="fcc5f-142">**Примечание.** Объект отклика, показанный здесь mmight, будет сокращен для учитаемости.</span><span class="sxs-lookup"><span data-stu-id="fcc5f-142">**Note:** The response object shown here mmight be shortened for readability.</span></span> <span data-ttu-id="fcc5f-143">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fcc5f-143">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

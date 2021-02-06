@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Пассвордсинглесигнонкредентиалсет
-description: Указывает набор учетных данных, которые полностью определяют последовательность входа для пользователя или группы в приложение.
+title: Тип ресурса passwordSingleSignOnCredentialSet
+description: Указывает набор учетных данных, которые полностью определяют поток входа пользователя или группы в приложение.
 localization_priority: Normal
 author: bharathramh92
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 87aafa6e21171088f9b4b5eac318f6c9551e18ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95526942bcedfc20d983a8873699af6902482b2c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130886"
 ---
-# <a name="passwordsinglesignoncredentialset-resource-type"></a><span data-ttu-id="7a885-103">Тип ресурса Пассвордсинглесигнонкредентиалсет</span><span class="sxs-lookup"><span data-stu-id="7a885-103">passwordSingleSignOnCredentialSet resource type</span></span>
+# <a name="passwordsinglesignoncredentialset-resource-type"></a><span data-ttu-id="416ee-103">Тип ресурса passwordSingleSignOnCredentialSet</span><span class="sxs-lookup"><span data-stu-id="416ee-103">passwordSingleSignOnCredentialSet resource type</span></span>
 
-<span data-ttu-id="7a885-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7a885-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="416ee-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="416ee-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7a885-105">Указывает набор учетных данных, которые полностью определяют последовательность входа для пользователя или группы в приложение.</span><span class="sxs-lookup"><span data-stu-id="7a885-105">Indicates a set of credentials that completely define a sign in flow for a user or group to an application.</span></span>
+<span data-ttu-id="416ee-105">Указывает набор учетных данных, которые полностью определяют поток входа пользователя или группы в приложение.</span><span class="sxs-lookup"><span data-stu-id="416ee-105">Indicates a set of credentials that completely define a sign in flow for a user or group to an application.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7a885-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="7a885-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="416ee-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="416ee-106">Properties</span></span>
 
-| <span data-ttu-id="7a885-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="7a885-107">Property</span></span>     | <span data-ttu-id="7a885-108">Тип</span><span class="sxs-lookup"><span data-stu-id="7a885-108">Type</span></span>        | <span data-ttu-id="7a885-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7a885-109">Description</span></span> |
+| <span data-ttu-id="416ee-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="416ee-107">Property</span></span>     | <span data-ttu-id="416ee-108">Тип</span><span class="sxs-lookup"><span data-stu-id="416ee-108">Type</span></span>        | <span data-ttu-id="416ee-109">Описание</span><span class="sxs-lookup"><span data-stu-id="416ee-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="7a885-110">записей</span><span class="sxs-lookup"><span data-stu-id="7a885-110">credentials</span></span>|<span data-ttu-id="7a885-111">Коллекция [учетных данных](credential.md)</span><span class="sxs-lookup"><span data-stu-id="7a885-111">[credential](credential.md) collection</span></span>|<span data-ttu-id="7a885-112">Список объектов учетных данных, определяющих полный вход.</span><span class="sxs-lookup"><span data-stu-id="7a885-112">A list of credential objects that define the complete sign in flow.</span></span>|
-|<span data-ttu-id="7a885-113">id</span><span class="sxs-lookup"><span data-stu-id="7a885-113">id</span></span>|<span data-ttu-id="7a885-114">String</span><span class="sxs-lookup"><span data-stu-id="7a885-114">String</span></span>|<span data-ttu-id="7a885-115">Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.</span><span class="sxs-lookup"><span data-stu-id="7a885-115">The ID of the user or group this credential set belongs to.</span></span>|
+|<span data-ttu-id="416ee-110">credentials</span><span class="sxs-lookup"><span data-stu-id="416ee-110">credentials</span></span>|<span data-ttu-id="416ee-111">[коллекция учетных](credential.md) данных</span><span class="sxs-lookup"><span data-stu-id="416ee-111">[credential](credential.md) collection</span></span>|<span data-ttu-id="416ee-112">Список объектов учетных данных, которые определяют полный поток входа.</span><span class="sxs-lookup"><span data-stu-id="416ee-112">A list of credential objects that define the complete sign in flow.</span></span>|
+|<span data-ttu-id="416ee-113">id</span><span class="sxs-lookup"><span data-stu-id="416ee-113">id</span></span>|<span data-ttu-id="416ee-114">Строка</span><span class="sxs-lookup"><span data-stu-id="416ee-114">String</span></span>|<span data-ttu-id="416ee-115">ИД пользователя или группы, к которой принадлежит этот набор учетных данных.</span><span class="sxs-lookup"><span data-stu-id="416ee-115">The ID of the user or group this credential set belongs to.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7a885-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7a885-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="416ee-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="416ee-116">JSON representation</span></span>
 
-<span data-ttu-id="7a885-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7a885-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="416ee-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="416ee-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

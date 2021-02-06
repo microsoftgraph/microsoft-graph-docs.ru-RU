@@ -68,11 +68,11 @@ items:
             href: /graph/extensibility-open-users?context=graph/api/1.0
           - name: Использование расширений схемы (пример)
             href: /graph/extensibility-schema-groups?context=graph/api/1.0
-      - name: Использование обозревателя Graph
+      - name: Использование песочницы Graph
         items:
           - name: Начало работы
             href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
-          - name: Работа с graph Explorer
+          - name: Работа с песочницей Graph
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
       - name: Использование Postman
         href: /graph/use-postman?context=graph/api/1.0
@@ -429,7 +429,7 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: Общение в чате между пользователем и приложением
                 href: api/userscopeteamsappinstallation-get-chat.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -732,7 +732,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: Расширения
                 items:
                   - name: Перечисление
                     href: api/application-list-extensionproperty.md
@@ -941,7 +941,7 @@ items:
                 href: api/event-accept.md
               - name: Предварительное принятие
                 href: api/event-tentativelyaccept.md
-              - name: Событие отклонения
+              - name: Событие Decline
                 href: api/event-decline.md
               - name: Отмена напоминания
                 href: api/event-dismissreminder.md
@@ -1203,9 +1203,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получить запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -3615,7 +3615,7 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
-      - name: Extensions
+      - name: Расширения
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -3868,6 +3868,8 @@ items:
                     href: api/domain-post-domains.md
                   - name: Удаление домена
                     href: api/domain-delete.md
+                  - name: Принудительное удаление домена
+                    href: api/domain-forcedelete.md
                   - name: Получение домена
                     href: api/domain-get.md
                   - name: Обновление домена
@@ -4511,11 +4513,10 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Отчеты
         items:
-          - name: Обзор
-            href: resources/report.md
-          - name: Действия в Azure AD
-            href: resources/azure-ad-auditlog-overview.md
+          - name: Отчеты об активности в Azure AD
             items:
+              - name: Обзор
+                href: resources/azure-ad-auditlog-overview.md
               - name: Аудит каталога
                 href: resources/directoryaudit.md
                 items:
@@ -4530,202 +4531,206 @@ items:
                     href: api/signin-list.md
                   - name: Получение события входа
                     href: api/signin-get.md
-          - name: Использование устройств Microsoft Teams
-            href: resources/microsoft-teams-device-usage-reports.md
+          - name: Отчеты об использовании Microsoft 365
             items:
-              - name: Получение сведений о пользователях
-                href: api/reportroot-getteamsdeviceusageuserdetail.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getteamsdeviceusageusercounts.md
-              - name: Получение количества пользователей рассылки
-                href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
-          - name: Активность пользователей Microsoft Teams
-            href: resources/microsoft-teams-user-activity-reports.md
-            items:
-              - name: Получение сведений о пользователях
-                href: api/reportroot-getteamsuseractivityuserdetail.md
-              - name: Получение количества действий
-                href: api/reportroot-getteamsuseractivitycounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getteamsuseractivityusercounts.md
-          - name: Действия в Outlook
-            href: resources/email-activity-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getemailactivityuserdetail.md
-              - name: Получение количества действий
-                href: api/reportroot-getemailactivitycounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getemailactivityusercounts.md
-          - name: Использование приложения Outlook
-            href: resources/email-app-usage-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getemailappusageuserdetail.md
-              - name: Получение количества пользователей приложений
-                href: api/reportroot-getemailappusageappsusercounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getemailappusageusercounts.md
-              - name: Получение количества пользователей для определенных версий
-                href: api/reportroot-getemailappusageversionsusercounts.md
-          - name: Использование почтового ящика Outlook
-            href: resources/mailbox-usage-reports.md
-            items:
-              - name: Получение сведений о почтовом ящике
-                href: api/reportroot-getmailboxusagedetail.md
-              - name: Получение количества почтовых ящиков
-                href: api/reportroot-getmailboxusagemailboxcounts.md
-              - name: Получение количества почтовых ящиков по состоянию квоты
-                href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
-              - name: Получение занятого объема хранилища
-                href: api/reportroot-getmailboxusagestorage.md
-          - name: Активации Microsoft 365
-            href: resources/office-365-activations-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getoffice365activationsuserdetail.md
-              - name: Получение количества активаций
-                href: api/reportroot-getoffice365activationcounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getoffice365activationsusercounts.md
-          - name: Активные пользователи Microsoft 365
-            href: resources/office-365-active-users-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getoffice365activeuserdetail.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getoffice365activeusercounts.md
-              - name: Получение количества пользователей служб
-                href: api/reportroot-getoffice365servicesusercounts.md
-          - name: Действия в группах Microsoft 365
-            href: resources/office-365-groups-activity-reports.md
-            items:
-              - name: Получение сведений о группе
-                href: api/reportroot-getoffice365groupsactivitydetail.md
-              - name: Получение количества действий
-                href: api/reportroot-getoffice365groupsactivitycounts.md
-              - name: Получение количества групп
-                href: api/reportroot-getoffice365groupsactivitygroupcounts.md
-              - name: Получение хранилища
-                href: api/reportroot-getoffice365groupsactivitystorage.md
-              - name: Получение количества файлов
-                href: api/reportroot-getoffice365groupsactivityfilecounts.md
-          - name: Действия в OneDrive
-            href: resources/onedrive-activity-reports.md
-            items:
-              - name: Получение сведений о пользователях
-                href: api/reportroot-getonedriveactivityuserdetail.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getonedriveactivityusercounts.md
-              - name: Получение количества файлов
-                href: api/reportroot-getonedriveactivityfilecounts.md
-          - name: Использование OneDrive
-            href: resources/onedrive-usage-reports.md
-            items:
-              - name: Получение сведений об учетной записи
-                href: api/reportroot-getonedriveusageaccountdetail.md
-              - name: Получение количества учетных записей
-                href: api/reportroot-getonedriveusageaccountcounts.md
-              - name: Получение количества файлов
-                href: api/reportroot-getonedriveusagefilecounts.md
-              - name: Получение хранилища
-                href: api/reportroot-getonedriveusagestorage.md
-          - name: Действия в SharePoint
-            href: resources/sharepoint-activity-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getsharepointactivityuserdetail.md
-              - name: Получение количества файлов
-                href: api/reportroot-getsharepointactivityfilecounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getsharepointactivityusercounts.md
-              - name: Получение страниц
-                href: api/reportroot-getsharepointactivitypages.md
-          - name: Использование сайтов SharePoint
-            href: resources/sharepoint-site-usage-reports.md
-            items:
-              - name: Получение сведений о сайте
-                href: api/reportroot-getsharepointsiteusagedetail.md
-              - name: Получение количества файлов
-                href: api/reportroot-getsharepointsiteusagefilecounts.md
-              - name: Получение количества сайтов
-                href: api/reportroot-getsharepointsiteusagesitecounts.md
-              - name: Получение хранилища
-                href: api/reportroot-getsharepointsiteusagestorage.md
-              - name: Получение страниц
-                href: api/reportroot-getsharepointsiteusagepages.md
-          - name: Действия в Skype для бизнеса
-            href: resources/skype-for-business-activity-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getskypeforbusinessactivityuserdetail.md
-              - name: Получение количества действий
-                href: api/reportroot-getskypeforbusinessactivitycounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getskypeforbusinessactivityusercounts.md
-          - name: Использование устройств со Skype для бизнеса
-            href: resources/skype-for-business-device-usage-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
-              - name: Получение распределенного количества пользователей
-                href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
-          - name: Действия организаторов в Skype для бизнеса
-            href: resources/skype-for-business-organizer-activity-reports.md
-            items:
-              - name: Получение количества действий
-                href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
-              - name: Получение количества минут
-                href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
-          - name: Действия участников в Skype для бизнеса
-            href: resources/skype-for-business-participant-activity-reports.md
-            items:
-              - name: Получение количества действий
-                href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
-              - name: Получение количества минут
-                href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
-          - name: Одноранговые действия в Skype для бизнеса
-            href: resources/skype-for-business-peer-to-peer-activity.md
-            items:
-              - name: Получение количества действий
-                href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
-              - name: Получение количества минут
-                href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
-          - name: Действия в Yammer
-            href: resources/yammer-activity-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getyammeractivityuserdetail.md
-              - name: Получение количества действий
-                href: api/reportroot-getyammeractivitycounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getyammeractivityusercounts.md
-          - name: Использование устройств для Yammer
-            href: resources/yammer-device-usage-reports.md
-            items:
-              - name: Получение сведений о пользователе
-                href: api/reportroot-getyammerdeviceusageuserdetail.md
-              - name: Получение распределенного количества пользователей
-                href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
-              - name: Получение количества пользователей
-                href: api/reportroot-getyammerdeviceusageusercounts.md
-          - name: Действия в группах Yammer
-            href: resources/yammer-groups-activity-reports.md
-            items:
-              - name: Получение сведений о группе
-                href: api/reportroot-getyammergroupsactivitydetail.md
-              - name: Получение количества групп
-                href: api/reportroot-getyammergroupsactivitygroupcounts.md
-              - name: Получение количества действий
-                href: api/reportroot-getyammergroupsactivitycounts.md
+              - name: Обзор
+                href: resources/report.md
+              - name: Использование устройств Microsoft Teams
+                href: resources/microsoft-teams-device-usage-reports.md
+                items:
+                  - name: Получение сведений о пользователях
+                    href: api/reportroot-getteamsdeviceusageuserdetail.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getteamsdeviceusageusercounts.md
+                  - name: Получение количества пользователей рассылки
+                    href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
+              - name: Активность пользователей Microsoft Teams
+                href: resources/microsoft-teams-user-activity-reports.md
+                items:
+                  - name: Получение сведений о пользователях
+                    href: api/reportroot-getteamsuseractivityuserdetail.md
+                  - name: Получение количества действий
+                    href: api/reportroot-getteamsuseractivitycounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getteamsuseractivityusercounts.md
+              - name: Действия в Outlook
+                href: resources/email-activity-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getemailactivityuserdetail.md
+                  - name: Получение количества действий
+                    href: api/reportroot-getemailactivitycounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getemailactivityusercounts.md
+              - name: Использование приложения Outlook
+                href: resources/email-app-usage-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getemailappusageuserdetail.md
+                  - name: Получение количества пользователей приложений
+                    href: api/reportroot-getemailappusageappsusercounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getemailappusageusercounts.md
+                  - name: Получение количества пользователей для определенных версий
+                    href: api/reportroot-getemailappusageversionsusercounts.md
+              - name: Использование почтового ящика Outlook
+                href: resources/mailbox-usage-reports.md
+                items:
+                  - name: Получение сведений о почтовом ящике
+                    href: api/reportroot-getmailboxusagedetail.md
+                  - name: Получение количества почтовых ящиков
+                    href: api/reportroot-getmailboxusagemailboxcounts.md
+                  - name: Получение количества почтовых ящиков по состоянию квоты
+                    href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
+                  - name: Получение занятого объема хранилища
+                    href: api/reportroot-getmailboxusagestorage.md
+              - name: Активации Microsoft 365
+                href: resources/office-365-activations-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getoffice365activationsuserdetail.md
+                  - name: Получение количества активаций
+                    href: api/reportroot-getoffice365activationcounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getoffice365activationsusercounts.md
+              - name: Активные пользователи Microsoft 365
+                href: resources/office-365-active-users-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getoffice365activeuserdetail.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getoffice365activeusercounts.md
+                  - name: Получение количества пользователей служб
+                    href: api/reportroot-getoffice365servicesusercounts.md
+              - name: Действия в группах Microsoft 365
+                href: resources/office-365-groups-activity-reports.md
+                items:
+                  - name: Получение сведений о группе
+                    href: api/reportroot-getoffice365groupsactivitydetail.md
+                  - name: Получение количества действий
+                    href: api/reportroot-getoffice365groupsactivitycounts.md
+                  - name: Получение количества групп
+                    href: api/reportroot-getoffice365groupsactivitygroupcounts.md
+                  - name: Получение хранилища
+                    href: api/reportroot-getoffice365groupsactivitystorage.md
+                  - name: Получение количества файлов
+                    href: api/reportroot-getoffice365groupsactivityfilecounts.md
+              - name: Действия в OneDrive
+                href: resources/onedrive-activity-reports.md
+                items:
+                  - name: Получение сведений о пользователях
+                    href: api/reportroot-getonedriveactivityuserdetail.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getonedriveactivityusercounts.md
+                  - name: Получение количества файлов
+                    href: api/reportroot-getonedriveactivityfilecounts.md
+              - name: Использование OneDrive
+                href: resources/onedrive-usage-reports.md
+                items:
+                  - name: Получение сведений об учетной записи
+                    href: api/reportroot-getonedriveusageaccountdetail.md
+                  - name: Получение количества учетных записей
+                    href: api/reportroot-getonedriveusageaccountcounts.md
+                  - name: Получение количества файлов
+                    href: api/reportroot-getonedriveusagefilecounts.md
+                  - name: Получение хранилища
+                    href: api/reportroot-getonedriveusagestorage.md
+              - name: Действия в SharePoint
+                href: resources/sharepoint-activity-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getsharepointactivityuserdetail.md
+                  - name: Получение количества файлов
+                    href: api/reportroot-getsharepointactivityfilecounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getsharepointactivityusercounts.md
+                  - name: Получение страниц
+                    href: api/reportroot-getsharepointactivitypages.md
+              - name: Использование сайтов SharePoint
+                href: resources/sharepoint-site-usage-reports.md
+                items:
+                  - name: Получение сведений о сайте
+                    href: api/reportroot-getsharepointsiteusagedetail.md
+                  - name: Получение количества файлов
+                    href: api/reportroot-getsharepointsiteusagefilecounts.md
+                  - name: Получение количества сайтов
+                    href: api/reportroot-getsharepointsiteusagesitecounts.md
+                  - name: Получение хранилища
+                    href: api/reportroot-getsharepointsiteusagestorage.md
+                  - name: Получение страниц
+                    href: api/reportroot-getsharepointsiteusagepages.md
+              - name: Действия в Skype для бизнеса
+                href: resources/skype-for-business-activity-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getskypeforbusinessactivityuserdetail.md
+                  - name: Получение количества действий
+                    href: api/reportroot-getskypeforbusinessactivitycounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getskypeforbusinessactivityusercounts.md
+              - name: Использование устройств со Skype для бизнеса
+                href: resources/skype-for-business-device-usage-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
+                  - name: Получение распределенного количества пользователей
+                    href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
+              - name: Действия организаторов в Skype для бизнеса
+                href: resources/skype-for-business-organizer-activity-reports.md
+                items:
+                  - name: Получение количества действий
+                    href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
+                  - name: Получение количества минут
+                    href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
+              - name: Действия участников в Skype для бизнеса
+                href: resources/skype-for-business-participant-activity-reports.md
+                items:
+                  - name: Получение количества действий
+                    href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
+                  - name: Получение количества минут
+                    href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
+              - name: Одноранговые действия в Skype для бизнеса
+                href: resources/skype-for-business-peer-to-peer-activity.md
+                items:
+                  - name: Получение количества действий
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
+                  - name: Получение количества минут
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
+              - name: Действия в Yammer
+                href: resources/yammer-activity-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getyammeractivityuserdetail.md
+                  - name: Получение количества действий
+                    href: api/reportroot-getyammeractivitycounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getyammeractivityusercounts.md
+              - name: Использование устройств для Yammer
+                href: resources/yammer-device-usage-reports.md
+                items:
+                  - name: Получение сведений о пользователе
+                    href: api/reportroot-getyammerdeviceusageuserdetail.md
+                  - name: Получение распределенного количества пользователей
+                    href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
+                  - name: Получение количества пользователей
+                    href: api/reportroot-getyammerdeviceusageusercounts.md
+              - name: Действия в группах Yammer
+                href: resources/yammer-groups-activity-reports.md
+                items:
+                  - name: Получение сведений о группе
+                    href: api/reportroot-getyammergroupsactivitydetail.md
+                  - name: Получение количества групп
+                    href: api/reportroot-getyammergroupsactivitygroupcounts.md
+                  - name: Получение количества действий
+                    href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Поиск
         displayname: Microsoft Search API
         items:
@@ -5335,7 +5340,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Task
             href: resources/todotask.md
             items:
               - name: Перечисление задач
