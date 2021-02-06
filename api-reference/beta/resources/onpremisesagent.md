@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Онпремисесажент
-description: Тип ресурса Онпремисесажент.
+title: Тип ресурса onPremisesAgent
+description: Тип ресурса onPremisesAgent.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: ec125e52eaf9eba3423f70dd47cc7dd1562716bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8269c2d2273df385c4815e2276f320a7e4f5b813
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135886"
 ---
-# <a name="onpremisesagent-resource-type"></a>Тип ресурса Онпремисесажент
+# <a name="onpremisesagent-resource-type"></a>Тип ресурса onPremisesAgent
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет локальный агент. Локальные агенты, установленные администратором клиента, можно настроить для доступа к определенному [опубликованному ресурсу](publishedresource.md)или обработки запросов.
+Представляет локального агента. Для локального агента, установленного администратором клиента, можно настроить доступ и обработку запросов к определенному [опубликованного ресурса.](publishedresource.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Онпремисесажентс](../api/onpremisesagent-list.md) | Коллекция [онпремисесажент](onpremisesagent.md) | Получение коллекции объектов **онпремисесажентс** . |
-| [Получение Онпремисесажент](../api/onpremisesagent-get.md) | [онпремисесажент](onpremisesagent.md) | Чтение свойств и связей объекта **онпремисесажент** . |
-| [Назначение Онпремисесажент для Онпремисесажентграуп](../api/onpremisesagent-post-agentgroups.md) | Нет | Назначение **онпремисесажент** для **онпремисесажентграуп**.|
-| [Удаление Онпремисесажент из Онпремисесажентграуп](../api/onpremisesagent-delete-agentgroups.md) | Нет | Удаление **онпремисесажент** из **онпремисесажентграуп**. |
+| [Список onPremisesAgents](../api/onpremisesagent-list.md) | [Коллекция onPremisesAgent](onpremisesagent.md) | Получите **коллекцию объектов onPremisesAgents.** |
+| [Get onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Чтение свойств и связей объекта **onPremisesAgent.** |
+| [Назначение onPremisesAgent для onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | Нет | **Назначьте onPremisesAgent** для **onPremisesAgentGroup.**|
+| [Удаление onpremisesAgent из onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | Нет | Удалите **onPremisesAgent** из **onPremisesAgentGroup.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|екстерналип|String|Внешний IP-адрес, обнаруженный службой для компьютера агента. Только для чтения|
-|id|String| Идентификатор объекта Онпремисесажент. Только для чтения.|
-|ИмяКомпьютера|String|Имя компьютера, на котором выполняется агжент. Только для чтения|
+|externalIp|Строка|Внешний IP-адрес, обнаруженный службой для компьютера агента. Только для чтения|
+|id|Строка| ИД объекта onPremisesAgent. Только для чтения.|
+|machineName|Строка|Имя компьютера, на которого работает aggent. Только для чтения|
 |status|string| Возможные значения: `active`, `inactive`.|
-|публишингтипе|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ажентграупс|Коллекция [онпремисесажентграуп](onpremisesagentgroup.md)| Список **онпремисесажентграупс** , которым назначено **онпремисесажент** . Только для чтения. Допускается значение null.|
+|agentGroups|[Коллекция onPremisesAgentGroup](onpremisesagentgroup.md)| Список **onPremisesAgentGroups,** которые **назначены onPremisesAgent.** Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -78,5 +78,6 @@ ms.locfileid: "48052606"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

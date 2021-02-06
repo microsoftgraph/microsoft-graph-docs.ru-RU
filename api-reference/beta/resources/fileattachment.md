@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileAttachment
-description: Файл (например, текстовый файл или документ Word), присоединенный к событию,
+description: Файл (например, текстовый файл или документ Word), вложенный в событие,
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: a850e05622b22bf05dfec1011cd4371cbc9e7cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 1ef32e91897ac322b84922012df47c168094f57d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058466"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135648"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -20,7 +20,7 @@ ms.locfileid: "48058466"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Файл (например, текстовый файл или документ Word), присоединенный к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). 
+Файл (например, текстовый файл или документ Word), вложенный в событие [пользователя,](../resources/event.md) [сообщение,](../resources/message.md) [задачу Outlook](../resources/outlooktask.md)или [post.](../resources/post.md) 
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -36,8 +36,8 @@ ms.locfileid: "48058466"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
+|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанных содержимого объекта fileAttachment.|
+|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

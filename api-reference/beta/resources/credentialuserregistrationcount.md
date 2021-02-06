@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Кредентиалусеррегистратионкаунт
-description: Представляет текущее состояние количества пользователей в вашей организации, зарегистрированных для самостоятельного сброса паролей и возможности многофакторной проверки подлинности.
+title: Тип ресурса credentialUserRegistrationCount
+description: Представляет текущее состояние регистрации пользователей в организации для самостоятельного сброса паролей и многофакторной проверки подлинности.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 59c7849a5145064eafbce63804b5d3415fb92b97
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cb83bbfe4c738fd8c5c6460a27aafbbc73cad437
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523135"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136278"
 ---
-# <a name="credentialuserregistrationcount-resource-type"></a>Тип ресурса Кредентиалусеррегистратионкаунт
+# <a name="credentialuserregistrationcount-resource-type"></a>Тип ресурса credentialUserRegistrationCount
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние количества пользователей в вашей организации, зарегистрированных для самостоятельного сброса паролей и возможности многофакторной проверки подлинности.
+Представляет текущее состояние регистрации пользователей в организации для самостоятельного сброса паролей и многофакторной проверки подлинности.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [жеткредентиалусеррегистратионкаунт](../api/reportroot-getcredentialuserregistrationcount.md) | Коллекция Кредентиалусеррегистратионкаунт | Сообщите о текущем состоянии того, сколько пользователей в вашей организации зарегистрировано для самостоятельного сброса паролей и возможностей многофакторной проверки подлинности (MFA). |
+| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | Коллекция credentialUserRegistrationCount | Фиксируйте текущее состояние регистрации пользователей в организации для самостоятельного сброса паролей и многофакторной проверки подлинности (MFA). |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | String | Уникальный идентификатор действия. Только для чтения. |
-| тоталусеркаунт | Int64 | Предоставляет общее число пользователей в клиенте. |
-| усеррегистратионкаунтс | Коллекция [усеррегистратионкаунт](userregistrationcount.md) | Коллекция счетчиков регистрации и сведений о состоянии для пользователей в клиенте. |
+| id | Строка | Уникальный идентификатор действия. Только для чтения. |
+| totalUserCount | Int64 | Предоставляет общее количество пользователей в клиенте. |
+| userRegistrationCounts | [Коллекция userRegistrationCount](userregistrationcount.md) | Коллекция сведений о регистрации и состоянии для пользователей в клиенте. |
 
 ## <a name="relationships"></a>Связи
 

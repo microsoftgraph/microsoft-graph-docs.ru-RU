@@ -3,14 +3,14 @@ title: Тип ресурса accessPackageAnswer
 description: Сложный тип ответов на accessPackageQuestion, хранимый в accessPackageAssignmentRequest.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f947c5235c18d3be5115199d789512602a3e0739
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 3da6d1b0e2e519895af4dacca009b027807b0184
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135508"
 ---
 # <a name="accesspackageanswer-resource-type"></a>Тип ресурса accessPackageAnswer
 
@@ -18,13 +18,13 @@ ms.locfileid: "49720383"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип предоставленного запросителем ответа [на accessPackageQuestion.](../resources/accesspackagequestion.md) Фактическим ответом будет подтип этого сложного [типа, accessPackageAnswerString](../resources/accesspackageanswerstring.md) или [accessPackageAnswerChoice.](../resources/accesspackageanswerchoice.md) Эти ответы будут сохранены в [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+Сложный тип предоставленного запросителем ответа [accessPackageQuestion.](../resources/accesspackagequestion.md) Фактическим ответом будет подтип этого сложного [типа, accessPackageAnswerString](../resources/accesspackageanswerstring.md) или [accessPackageAnswerChoice.](../resources/accesspackageanswerchoice.md) Эти ответы будут сохранены в [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|Вопрос, для ответа на который вы отвечаете. Обязательно и только для чтения.|
-|displayValue|String|Отображаемая величина ответа. Обязательный.|
+|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|Ответ на вопрос. Обязательно и только для чтения.|
+|displayValue|Строка|Отображаемая величина ответа. Обязательный.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

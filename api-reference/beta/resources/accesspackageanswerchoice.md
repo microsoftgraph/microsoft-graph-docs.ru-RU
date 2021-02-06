@@ -3,14 +3,14 @@ title: Тип ресурса accessPackageAnswerChoice
 description: Параметр ответа для accessPackageMultipleChoiceQuestion.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6f34656a72d217adec1ff46be689b283461332fb
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 7c7fc7db1c9360146c2f62fd9048ad0db3d58b80
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720419"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135480"
 ---
 # <a name="accesspackageanswerchoice-resource-type"></a>Тип ресурса accessPackageAnswerChoice
 
@@ -18,12 +18,12 @@ ms.locfileid: "49720419"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает параметр ответа для [accessPackageMultipleChoiceQuestion.](../resources/accesspackagemultiplechoicequestion.md) Несколько accessPackageAnswerChoices можно добавить в [accessPackageMultipleChoiceQuestion.](../resources/accesspackagemultiplechoicequestion.md)
+Указывает параметр ответа для [accessPackageMultipleChoiceQuestion.](../resources/accesspackagemultiplechoicequestion.md) В accessPackageMultipleChoices можно добавить несколько [accessPackageAnswerChoiceQuestion.](../resources/accesspackagemultiplechoicequestion.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actualValue|String|Фактическое значение выбранного выбора. Как правило, это строковое значение, понятное приложениям. Обязательный. |
+|actualValue|Строка|Фактическое значение выбранного выбора. Как правило, это строковое значение, понятное приложениям. Обязательный элемент. |
 |displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Локализованные отображаемые значения, которые отображаются для запрашивающих и утвержденных. Обязательный.
 
 ## <a name="relationships"></a>Связи

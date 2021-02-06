@@ -1,24 +1,24 @@
 ---
-title: Список Публишедресаурцес
-description: Получение списка объектов Публишедресаурце.
+title: Список publishedResources
+description: Получить список объектов publishedResource.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9182d2ed5764d0f35940153c8b240466acffccc2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d3681d9c1000a4549908b248d40cf3d3b96bd98
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973391"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135529"
 ---
-# <a name="list-publishedresources"></a>Список Публишедресаурцес
+# <a name="list-publishedresources"></a>Список publishedResources
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [публишедресаурце](../resources/publishedresource.md) .
+Получить список объектов [publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [публишедресаурце](../resources/publishedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [publishedResource](../resources/publishedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -134,5 +134,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса accessPackageMultipleChoiceQuestion
-description: Подкласс accessPackageQuestion с множественным выбором в качестве формата ответа на вопрос
+description: Подкласс accessPackageQuestion с множественным выбором в качестве формата ответа вопроса
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ab61a8df1faf0f9b1d9fa3dee10521001ddc6d31
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 54054edcda2f41ad3f4e1bd29fb807c18709ee1d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720377"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137342"
 ---
 # <a name="accesspackagemultiplechoicequestion-resource-type"></a>Тип ресурса accessPackageMultipleChoiceQuestion
 
@@ -18,7 +18,7 @@ ms.locfileid: "49720377"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Child of **accessPackageQuestion,** который представляет несколько параметров, из которые запрашивает должен выбрать ответ.
+Child of **accessPackageQuestion,** который представляет несколько параметров, из них запрашивает запрос.
 
 Наследуется от [accessPackageQuestion.](../resources/accesspackagequestion.md)
 
@@ -27,12 +27,12 @@ Child of **accessPackageQuestion,** который представляет не
 |:---|:---|:---|
 |allowsMultipleSelection|Boolean|Указывает, может ли запросителем выбрать несколько вариантов в качестве ответа.|
 |choices|[Коллекция accessPackageAnswerChoice](../resources/accesspackageanswerchoice.md)|Список вариантов ответов.|
-|id|String|ИД вопроса. Наследуется [от accessPackageQuestion.](../resources/accesspackagequestion.md)|
-|isRequired|Boolean|Указывает, требуется ли запрашивать ответ. Наследуется [от accessPackageQuestion.](../resources/accesspackagequestion.md)|
+|id|Строка|ИД вопроса. Наследуется от [accessPackageQuestion.](../resources/accesspackagequestion.md)|
+|isRequired|Boolean|Указывает, требуется ли запрашивать ответ. Наследуется от [accessPackageQuestion.](../resources/accesspackagequestion.md)|
 |sequence|Int32|Относительное положение этого вопроса при отобралчику списка вопросов. Наследуется [от accessPackageQuestion.](../resources/accesspackagequestion.md)|
-|текст|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Текст вопроса для показа запросителем. Наследуется [от accessPackageQuestion.](../resources/accesspackagequestion.md)|
+|текст|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Текст вопроса для показа запросителем. Наследуется от [accessPackageQuestion.](../resources/accesspackagequestion.md)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

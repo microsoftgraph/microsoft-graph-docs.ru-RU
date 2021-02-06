@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса Онпремисеспублишингпрофиле
-description: Тип ресурса Онпремисеспублишингпрофиле.
+title: Тип ресурса onPremisesPublishingProfile
+description: Тип ресурса onPremisesPublishingProfile.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 4299ddec6a05e079d86a070b939c2220087281a0
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 8e74374baa397c292d323dc0520833a7318cbe79
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134906"
 ---
-# <a name="onpremisespublishingprofile-resource-type"></a>Тип ресурса Онпремисеспублишингпрофиле
+# <a name="onpremisespublishingprofile-resource-type"></a>Тип ресурса onPremisesPublishingProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Различные службы Azure (например, [сквозная проверка подлинности](/azure/active-directory/hybrid/how-to-connect-pta)подключения Azure Active Directory, подключение [рабочего дня к пользователям Azure AD](/azure/active-directory/saas-apps/workday-inbound-tutorial)и [прокси приложения](https://aka.ms/whyappproxy) — предоставление доступа к различным локальным ресурсам извне корпоративной сети).
+Различные службы Azure (например, azure Active Directory Connect [Passthrough Authentication,](/azure/active-directory/hybrid/how-to-connect-pta) [Workday to Azure AD users provisioning,](/azure/active-directory/saas-apps/workday-inbound-tutorial)and [Application Proxy](https://aka.ms/whyappproxy) allow access to various on-premises resources from outside the corporate network.
 
-[Локальные агенты](onpremisesagent.md) (или [соединители](connector.md) для прокси-сервера приложения), установленные администратором, могут быть настроены на маршрутизацию запросов на конкретный [опубликованный ресурс](publishedresource.md).
-[Группы агентов](onpremisesagentgroup.md) (или [группы соединителей](connectorgroup.md) для прокси приложения) позволяют администратору назначать определенные агенты для обслуживания определенных опубликованных локальных ресурсов. Администраторы также могут группировать несколько агентов вместе, а затем назначать каждый опубликованный ресурс группе агентов. Весь набор сущностей одного локального типа публикации представлен **онпремисеспублишингпрофиле**.
+[Локально установленные](onpremisesagent.md) администратором агенты [(или](connector.md) соединители для прокси приложения) могут быть настроены для маршрутов запросов на [определенный опубликованный ресурс.](publishedresource.md)
+[Группы агентов](onpremisesagentgroup.md) (или группы [соединители](connectorgroup.md) для прокси приложения) позволяют администратору назначать определенных агентов для обслуживания определенных опубликованных локального ресурса. Администраторы также могут сгруппить несколько агентов, а затем назначить каждый опубликованный ресурс группе агентов. Весь набор сущностями того же локального типа публикации представлен **onPremisesPublishingProfile.**
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Онпремисеспублишингпрофиле](../api/onpremisespublishingprofile-get.md) | [онпремисеспублишингпрофиле](onpremisespublishingprofile.md) | Чтение свойств и связей объекта **онпремисеспублишингпрофиле** . |
-| [Обновление Онпремисеспублишингпрофиле](../api/onpremisespublishingprofile-update.md) | Нет | Обновление объекта [онпремисеспублишингпрофиле](onpremisespublishingprofile.md) . |
+| [Get onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Чтение свойств и связей объекта **onPremisesPublishingProfile.** |
+| [Обновление onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | Нет | Обновление объекта [onPremisesPublishingProfile.](onpremisespublishingprofile.md) |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|хибридажентупдатерконфигуратион|[хибридажентупдатерконфигуратион](hybridagentupdaterconfiguration.md)| Представляет объект **хибридажентупдатерконфигуратион** .|
-|id|String| Представляет тип публикации. Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Только для чтения.|
-|isEnabled|Boolean| Указывает, включен ли [прокси приложения Azure AD](https://aka.ms/whyappproxy) для клиента. |
+|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Представляет объект **hybridAgentUpdaterConfiguration.**|
+|id|Строка| Представляет тип публикации. Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Только для чтения.|
+|isEnabled|Boolean| Представляет, включен ли прокси приложения [Azure AD](https://aka.ms/whyappproxy) для клиента. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ажентграупс|Коллекция [онпремисесажентграуп](onpremisesagentgroup.md)| Список существующих объектов **онпремисесажентграуп** . Только для чтения. Допускается значение null.|
-|агенты|Коллекция [онпремисесажент](onpremisesagent.md)| Список существующих объектов **онпремисесажент** . Только для чтения. Допускается значение null.|
-|коннекторграупс|Коллекция [коннекторграуп](connectorgroup.md)| Список существующих объектов **коннекторграуп** для приложений, опубликованных через прокси приложения. Только для чтения. Допускается значение null.|
-|аудиовыход|Коллекция [соединителей](connector.md)| Список существующих объектов **Connector** для приложений, опубликованных через прокси приложения. Только для чтения. Допускается значение null.|
-|публишедресаурцес|Коллекция [публишедресаурце](publishedresource.md)| Список существующих объектов **публишедресаурце** . Только для чтения. Допускается значение null.|
+|agentGroups|[Коллекция onPremisesAgentGroup](onpremisesagentgroup.md)| Список существующих объектов **onPremisesAgentGroup.** Только для чтения. Допускается значение null.|
+|агенты|[Коллекция onPremisesAgent](onpremisesagent.md)| Список существующих **объектов onPremisesAgent.** Только для чтения. Допускается значение null.|
+|connectorGroups|[Коллекция connectorGroup](connectorgroup.md)| Список существующих объектов **connectorGroup для** приложений, опубликованных через прокси приложения. Только для чтения. Допускается значение null.|
+|соединители|[коллекция соединители](connector.md)| Список существующих объектов **соединитений** для приложений, опубликованных через прокси-сервер приложения. Только для чтения. Допускается значение null.|
+|publishedResources|[Коллекция publishedResource](publishedresource.md)| Список существующих **объектов publishedResource.** Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -78,5 +78,6 @@ ms.locfileid: "48921531"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

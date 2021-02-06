@@ -3,14 +3,14 @@ title: 'servicePrincipals: Перечисление ownedObjects'
 description: Извлечение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 82bb571570631e6309f34f45f02ebbd272e58f45
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 614d91b837bf5a275d19171271336ab5fa3faec0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134318"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Перечисление ownedObjects
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
->Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,3 +119,4 @@ Content-length: 55
   ]
 }
 -->
+

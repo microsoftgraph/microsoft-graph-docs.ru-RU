@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Стрингкэйобжектвалуепаир
-description: Представляет собой запись "ключ-значение", в которой ключ является строкой, а значение — произвольным объектом JSON. Это открытый тип OData, который предполагает наличие свойства с именем `value` , которое является допустимым объектом JSON.
+title: Тип ресурса stringKeyObjectValuePair
+description: Представляет пару "ключ-значение", где ключ является строкой, а значение — произвольным объектом JSON. Это открытый тип OData, который должен иметь свойство с именем, которое `value` является допустимым объектом JSON.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d2b7c32a0048e3aafa3c0c56ff91f1ae51542914
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 535e9f104f42771e6f6c182769f0a5e1f68169b6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137069"
 ---
-# <a name="stringkeyobjectvaluepair-resource-type"></a>Тип ресурса Стрингкэйобжектвалуепаир
+# <a name="stringkeyobjectvaluepair-resource-type"></a>Тип ресурса stringKeyObjectValuePair
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет собой запись "ключ-значение", в которой ключ является строкой, а значение — произвольным объектом JSON. Это открытый тип OData, который предполагает наличие свойства с именем `value` , которое является допустимым объектом JSON.
+Представляет пару "ключ-значение", где ключ является строкой, а значение — произвольным объектом JSON. Это открытый тип OData, который должен иметь свойство с именем, которое `value` является допустимым объектом JSON.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Ключ.|
+|key|Строка|Ключ.|
 |значение|Json|Произвольный объект JSON.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

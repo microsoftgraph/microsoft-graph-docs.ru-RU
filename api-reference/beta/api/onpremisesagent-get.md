@@ -1,24 +1,24 @@
 ---
-title: Получение Онпремисесажент
-description: Получение свойств и связей объекта Онпремисесажент.
+title: Get onPremisesAgent
+description: Извлечение свойств и связей объекта onPremisesAgent.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0d6dfcb413d980cecf19fcf49979ea6b0d6ae18a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f91b5023d4b45d5ea097e6b09ba9b38eef88561c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136530"
 ---
-# <a name="get-onpremisesagent"></a>Получение Онпремисесажент
+# <a name="get-onpremisesagent"></a>Get onPremisesAgent
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [онпремисесажент](../resources/onpremisesagent.md) .
+Извлечение свойств и связей объекта [onPremisesAgent.](../resources/onpremisesagent.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGr
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [онпремисесажент](../resources/onpremisesagent.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [onPremisesAgent](../resources/onpremisesagent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -129,5 +129,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

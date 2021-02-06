@@ -2,15 +2,15 @@
 title: Тип ресурса mailboxSettings
 description: Параметры основного параметра вошедшего пользователя.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c3ff60d591257929d2856720ad298231d2afb944
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5da5e2294845fdf0aba2029acd410a59a7c0806c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135232"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
@@ -18,9 +18,9 @@ ms.locfileid: "48095032"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры основного почтового ящика [пользователя](user.md).
+Параметры основного почтового ящика [пользователя.](user.md)
 
-Вы можете [получить](../api/user-get-mailboxsettings.md) или [Обновить](../api/user-update-mailboxsettings.md) параметры почтового ящика пользователя, запросите свойство **mailboxSettings** пользователя.
+Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры почтового ящика пользователя, запросив свойство **mailboxSettings пользователя.**
 
 
 ## <a name="properties"></a>Свойства
@@ -29,12 +29,12 @@ ms.locfileid: "48095032"
 |archiveFolder|string|Идентификатор архивной папки пользователя. Только для чтения.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
 |dateFormat|string|Формат даты для почтового ящика пользователя.|
-|делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. Значение по умолчанию: `sendToDelegateOnly` .|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Если у пользователя есть делегат календаря, это указывает, будет ли делегат, владелец почтового ящика или оба получать сообщения о собрании и ответы на них. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. Значение по `sendToDelegateOnly` умолчанию: .|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|string|Формат времени для почтового ящика пользователя.|
+|timeFormat|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
-|усерпурпосе|[усерпурпосе](userpurpose.md)|Назначение почтового ящика. Используется для различения почтового ящика одного пользователя из общего почтового ящика и почтового ящика оборудования в Exchange Online. Только для чтения.|
+|userPurpose|[userPurpose](userpurpose.md)|Назначение почтового ящика. Используется для различения почтового ящика отдельного пользователя от общего почтового ящика и почтового ящика оборудования в Exchange Online. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

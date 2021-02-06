@@ -1,16 +1,16 @@
 ---
 title: 'message: createForward'
-description: 'Создание черновика переадресации сообщений для включения комментария или обновления любых свойств сообщения  '
-author: svpsiva
+description: 'Создание черновика переадментного сообщения с комментарием или обновлением свойств сообщения  '
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42115aaedd5de84b0fbbdd898267a18da0d75e37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e36487e3e25e4eac30c4c05987082b26b31601f3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136733"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -18,13 +18,13 @@ ms.locfileid: "48981610"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание черновика переадресации сообщений для включения комментария или обновления любых свойств сообщения  
-все в одном вызове **createForward** . Затем вы можете [Отправить](../api/message-send.md) черновик сообщения.
+Создание черновика переадментного сообщения с комментарием или обновлением свойств сообщения  
+все в одном **вызове createForward.** Затем можно отправить [черновик](../api/message-send.md) сообщения.
 
 **Примечание**
 
-- Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра. Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.
-- Необходимо указать либо параметр, `toRecipients` либо свойство **toRecipients** `message` параметра. Если указать оба параметра или не указывать ни один из них, будет возвращена ошибка ошибки запроса HTTP 400.
+- Можно указать комментарий или свойство **body** `message` параметра. Если указать оба этих запроса, будет возвращена ошибка "HTTP 400 Bad Request".
+- Необходимо указать либо параметр, либо свойство `toRecipients` **toRecipients** `message` параметра. Если указать и то, и другое, не будет возвращена ошибка HTTP 400 Bad Request.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
 |toRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей.|
-|message|[message](../resources/message.md)|Все доступные для записи свойства, которые необходимо обновить в ответном сообщении.|
+|message|[message](../resources/message.md)|Любые записаемые свойства, которые необходимо обновить в ответном сообщении.|
 
 ## <a name="response"></a>Отклик
 

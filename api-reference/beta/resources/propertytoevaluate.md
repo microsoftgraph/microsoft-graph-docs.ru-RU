@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Пропертитоевалуате
+title: Тип ресурса propertyToEvaluate
 description: Определяет имя и значение свойства.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c03ef7cdbb5e40ab77e0b3ad68668263db643568
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078208"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135387"
 ---
-# <a name="propertytoevaluate-resource-type"></a>Тип ресурса Пропертитоевалуате
+# <a name="propertytoevaluate-resource-type"></a>Тип ресурса propertyToEvaluate
 
 Пространство имен: microsoft.graph
 
@@ -24,10 +24,10 @@ ms.locfileid: "48078208"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| propertyName | String | Предоставляет имя свойства. |
-| propertyValue | String | Предоставляет значение свойства. |
+| propertyName | Строка | Предоставляет имя свойства. |
+| propertyValue | Строка | Предоставляет значение свойства. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса Кондитионалакцесскондитионсет
-description: Представляет тип условий, определяющих, когда применяется политика.
+title: Тип ресурса conditionalAccessConditionSet
+description: Представляет тип условий, управляющих применимой политикой.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ba88e9e5fd67bba5dd88fe323f3140bdbebff479
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e331a482fce3274463f742ceba6dc111437cd95
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994297"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137384"
 ---
-# <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса Кондитионалакцесскондитионсет
+# <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса conditionalAccessConditionSet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет тип условий, определяющих, когда применяется политика.
+Представляет тип условий, управляющих применимой политикой.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|заявлен|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователя, включенные в политику и исключенные из нее. Обязательно. |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательно. |
-|клиентапптипес|Коллекция String| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователей, включенные в политику и исключенные из нее. Обязательный элемент. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательный элемент. |
+|clientAppTypes|Коллекция объектов string| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Состояния устройств в политике. |
-|драйверов|[кондитионалакцессдевицес](conditionalaccessdevices.md)| Устройства в политике. |
+|устройства|[conditionalAccessDevices](conditionalaccessdevices.md)| Устройства в политике. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Расположения, включенные в политику и исключенные из нее. |
-|Embedded|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
-|сигнинрисклевелс|Коллекция String| Уровни риска входа, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
-|усеррисклевелс|Коллекция String| Уровни риска пользователей, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
+|платформы|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
+|signInRiskLevels|Коллекция объектов string| Уровни риска для входов, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
+|userRiskLevels|Коллекция объектов string| Уровни риска для пользователей, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
 
->**Примечание.** 
+>**Примечание:** 
 
->**клиентапптипе** `modern` считается устаревшим и заменяется на `mobileAppsAndDesktopClients` . 
+>**clientAppType** `modern` будет неподготовлен и заменен `mobileAppsAndDesktopClients` . 
 
->**клиентапптипе** `easUnsupported` считается нерекомендуемым, в том `exchangeActiveSync` числе поддерживаемых и неподдерживаемых платформах EAS. 
+>**clientAppType** `easUnsupported` будет не поддерживаться, в том числе поддерживаемые и неподдершенные `exchangeActiveSync` платформы EAS. 
 
->Мы рекомендуем использовать условие **девицестатес** , и оно может быть удалено в будущем. Перемотка вперед, используйте состояние **Devices** .
+>Условие **deviceStates** является неподготовленным, и оно может быть удалено в будущем. В будущем используйте **условие устройств.**
 
 ## <a name="relationships"></a>Связи
 

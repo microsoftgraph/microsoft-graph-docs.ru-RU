@@ -3,14 +3,14 @@ title: Сложный тип approvalStage
 description: Используется для свойства approvalStages параметров утверждения в свойстве requestApprovalSettings политики назначения пакета доступа. Указывает основных, откатных и утвердителей эскалации каждого этапа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 158fae1675c26876daeb05b1571d7fd91855df72
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: d24f8def3520cf2605f30dc47ab06f52e09fc163
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777703"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135261"
 ---
 # <a name="approvalstage-complex-type"></a>Сложный тип approvalStage
 
@@ -25,15 +25,15 @@ ms.locfileid: "49777703"
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
 | approvalStageTimeOutInDays |Int32 | Количество дней, в течение которые запрос может быть ожидающих ответа, прежде чем он будет автоматически отклонен. |
-| isApproverJustificationRequired |Boolean | Указывает, должен ли утвержденный предоставить обоснование для утверждения запроса. |
-| isEscalationEnabled |Boolean | Если установлено true, на этом этапе утверждения настраивается один или несколько утвержденных эскалаций. |
+| isApproverJustificationRequired |Boolean | Указывает, требуется ли утвердитель предоставить обоснование для утверждения запроса. |
+| isEscalationEnabled |Boolean | Если установлено true, на этом этапе утверждения настраивается один или несколько утвержденных разрешений эскалации. |
 | escalationTimeInMinutes |Int32 | Если требуется эскалация, время ожидания ответа от основного утвержденного запроса. |
 | primaryApprovers | [Коллекция userSet](userset.md)| Пользователи, которым будет предложено утвердить запросы. Коллекция [singleUser,](singleuser.md) [groupMembers,](groupmembers.md) [requestorManager,](requestormanager.md) [internalSponsors](internalsponsors.md) и [externalSponsors.](externalsponsors.md) |
 | escalationApprovers | [Коллекция userSet](userset.md)| Если эскалация включена, а основные утвержденные не отвечают до эскалации, пользователи, которым будет предложено утвердить запросы, будут запрашивать. Это может быть коллекция [singleUser,](singleuser.md) [groupMembers,](groupmembers.md) [requestorManager,](requestormanager.md) [internalSponsors](internalsponsors.md) и [externalSponsors.](externalsponsors.md)|
 
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже приводится представление этапа утверждения запроса в JSON.
 

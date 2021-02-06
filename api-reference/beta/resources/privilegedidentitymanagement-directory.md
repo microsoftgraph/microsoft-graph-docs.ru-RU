@@ -3,14 +3,14 @@ title: Privileged Identity Management — Azure AD
 description: Интерфейсы API службы Azure AD Privileged Identity Management для управления ролями Azure Active Directory.
 localization_priority: Priority
 author: shauliu
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 5cc552fd03e795898212cb001e30603ddcdd6172
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: fb75ac1876404fbaf477d51960ed00a97ec63829
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136565"
 ---
 # <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management — Azure AD
 
@@ -19,7 +19,7 @@ ms.locfileid: "48904744"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> Поддержка API для управления ролями Azure AD прекращается в большинстве клиентов, кроме нескольких, использующих более раннюю версию управления привилегированными пользователями (PIM). Дополнительные сведения о версиях PIM см. в разделе [Определение версии PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new#determine-your-version-of-pim). Если вы используете новую версию и у вас возникает ошибка **TenantEnabledInAadRoleMigration** , вы можете подождать появления нового API для функций PIM в API [unifiedRoleManagement](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) для ролей Azure AD или использовать API [ресурса Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) для ролей Azure AD. Чтобы использовать API **ресурса Azure** , замените `azureResources` на `aadRoles` для `provider_id` и используйте свой идентификатор клиента для `resource_id`. Мы рекомендуем дождаться нового API. После появления нового API вы сможете продолжать использование API **ресурса Azure**. Любые новые функции, которые будут доступны на портале Azure, также будут доступны только через новый API-интерфейс. 
+> Поддержка API для управления ролями Azure AD прекращается в большинстве клиентов, кроме нескольких, использующих более раннюю версию управления привилегированными пользователями (PIM). Дополнительные сведения о версиях PIM см. в разделе [Определение версии PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new#determine-your-version-of-pim). Если вы используете новую версию и у вас возникает ошибка **TenantEnabledInAadRoleMigration**, вы можете подождать появления нового API для функций PIM в API [unifiedRoleManagement](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) для ролей Azure AD или использовать API [ресурса Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) для ролей Azure AD. Чтобы использовать API **ресурса Azure**, замените `azureResources` на `aadRoles` для `provider_id` и используйте свой идентификатор клиента для `resource_id`. Мы рекомендуем дождаться нового API. После появления нового API вы сможете продолжать использование API **ресурса Azure**. Любые новые функции, которые будут доступны на портале Azure, также будут доступны только через новый API-интерфейс. 
 
 Следующие методы предоставляются службой PIM для ролей Azure AD. Служба создана на основе OData. Чтобы отфильтровать результаты запросов, используйте стандартные выражения OData ``$filter`` в URI.
 

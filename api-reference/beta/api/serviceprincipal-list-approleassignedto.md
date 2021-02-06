@@ -3,14 +3,14 @@ title: Список объектов appRoleAssignment, предоставлен
 description: Получение списка назначенных ролей приложения, предоставленных субъект-службе.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 61b99f642c4dcac44a50bf8885900ef4a15d24e8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 17a12a1f401a63042dd41f1e0e0f7f89c3d94bb2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134409"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных субъект-службе
 
@@ -139,5 +139,6 @@ Content-length: 306
   ]
 }
 -->
+
 
 

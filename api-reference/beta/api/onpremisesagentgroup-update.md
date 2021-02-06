@@ -1,24 +1,24 @@
 ---
-title: Обновление Онпремисесажентграуп
-description: Обновление свойств объекта **онпремисесажентграуп** .
+title: Обновление onPremisesAgentGroup
+description: Обновление свойств объекта **onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 08a2816e21c69ccb1b8104faef829b0d806d8cc0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b04124a5e0cb39d59a95f2278b8ea24f9dc2366
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136379"
 ---
-# <a name="update-onpremisesagentgroup"></a>Обновление Онпремисесажентграуп
+# <a name="update-onpremisesagentgroup"></a>Обновление onPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+Обновление свойств объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,11 +48,11 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Ниже приведен список свойств, которые можно обновить.
+Ниже приводится список свойств, которые можно обновить.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String| Представляет имя группы локальных агентов.|
+|displayName|Строка| Представляет имя локальной группы агентов.|
 
 ## <a name="response"></a>Отклик
 
@@ -122,5 +122,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

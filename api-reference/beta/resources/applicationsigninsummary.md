@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Аппликатионсигниндетаиледсуммари
+title: Тип ресурса applicationSignInDetailedSummary
 description: Представляет сводку по входу в приложение.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: abe2d8524d2ef23885285bacc0c953057035f54d
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 454c4e2e9e57b61194e6f3e6970e5db1ea414369
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523814"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137412"
 ---
-# <a name="applicationsigninsummary-resource-type"></a>Тип ресурса Аппликатионсигнинсуммари
+# <a name="applicationsigninsummary-resource-type"></a>Тип ресурса applicationSignInSummary
 
 Пространство имен: microsoft.graph
 
@@ -24,16 +24,16 @@ ms.locfileid: "49523814"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Аппликатионсигнинсуммари](../api/applicationsigninsummary-get.md) | [аппликатионсигнинсуммари](applicationsigninsummary.md) | Чтение свойств и связей объекта **аппликатионсигнинсуммари** . |
+| [Получение applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Чтение свойств и связей объекта **applicationSignInSummary.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Имя приложения, в которое пользователь выполнил вход.|
-|appId|String|  Идентификатор приложения, выполнившего вход пользователя.|
-|фаиледсигнинкаунт|Int64|Количество неудачных операций входа, выполненных приложением.|
-|сукцессперцентаже|Int32|Процент успешных входов, выполненных приложением.|
-|сукцессфулсигнинкаунт|Int64|Количество успешных входов, выполненных приложением.|
+|appDisplayName|String|Имя приложения, в которое вписались пользователи.|
+|appId|String|  ИД приложения, подписанного пользователем i nto.|
+|failedSignInCount|Int64|Количество неудачных входов в приложение.|
+|successPercentage|Int32|Процент успешных входов, сделанных приложением.|
+|successfulSignInCount|Int64|Количество успешных входов, сделанных приложением.|
 
 ## <a name="relationships"></a>Связи
 Нет

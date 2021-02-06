@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Провисионингсистемдетаилс
-description: Представляет систему, в которую были подготовлены пользователи.
+title: Тип ресурса provisioningSystemDetails
+description: Представляет систему, для которую пользователь был представлен или из нее.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 6880214614047000fcc5a793faf4be3e5a88a5e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5400088c1f239bd73e093679bbc13b8034800f28
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026448"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135340"
 ---
-# <a name="provisioningsystemdetails-resource-type"></a>Тип ресурса Провисионингсистемдетаилс
+# <a name="provisioningsystemdetails-resource-type"></a>Тип ресурса provisioningSystemDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет систему, в которую были подготовлены пользователи. Например, при подготовке пользователя из Azure Active Directory (Azure AD) к ServiceNow система является системой Azure AD, а целевой системой является ServiceNow.
+Представляет систему, для которую пользователь был представлен или из нее. Например, при подготовка пользователя из Azure Active Directory (Azure AD) в ServiceNow, источником системы является Azure AD, а целевая система — ServiceNow.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |details|[detailsInfo](detailsinfo.md)|Сведения о системе.|
-|displayName|String|Имя системы, в которую были подготовлены пользователи.|
-|id|String|Идентификатор системы, в которую были подготовлены пользователи.|
+|displayName|Строка|Имя системы, в которую или из нее был вошел пользователь.|
+|id|Строка|Идентификатор системы, в которую или из нее был вошел пользователь.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,16 +1,16 @@
 ---
 title: Создание объекта mailFolder
-description: Используйте этот API для создания нового дочернего элемента mailFolder.
-author: svpsiva
+description: Используйте этот API для создания нового child mailFolder.
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0f71f44144ef18b41147ff2604f98c0816071159
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 11a64624671a326876fa9ad3556fba6e46860bf7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979243"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136917"
 ---
 # <a name="create-mailfolder"></a>Создание объекта mailFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "48979243"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для создания нового дочернего элемента [mailFolder](../resources/mailfolder.md).
+Используйте этот API для создания нового child [mailFolder.](../resources/mailfolder.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,7 +39,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительскую папку в URL-адресе запроса как идентификатор папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительская папка в URL-адресе запроса в качестве ИД папки или известного имени папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,11 +54,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|displayName|String|Отображаемое имя новой папки.|
+|displayName|Строка|Отображаемое имя новой папки.|
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса "приложение"
+title: Тип ресурса webApplication
 description: Указывает параметры для веб-приложения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: af9f183011ee8774387288f8d02c4bade8352f6b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 630423c787f8a89734c56362b079a402a5606929
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033520"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135620"
 ---
-# <a name="webapplication-resource-type"></a>Тип ресурса "приложение"
+# <a name="webapplication-resource-type"></a>Тип ресурса webApplication
 
 Пространство имен: microsoft.graph
 
@@ -25,11 +25,11 @@ ms.locfileid: "48033520"
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 | `homePageUrl` | String | Главная или начальная страница приложения. |
-| `implicitGrantSettings` | [имплиЦитгрантсеттингс](implicitgrantsettings.md)| Указывает, может ли это веб-приложение запрашивать маркеры, используя неявный поток OAuth 2,0. |
+| `implicitGrantSettings` | [implicitGrantSettings](implicitgrantsettings.md)| Указывает, может ли это веб-приложение запрашивать маркеры с помощью неявного потока OAuth 2.0. |
 | `logoutUrl` | String | Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
-| `redirectUris` | Коллекция String | Задает URL-адреса, по которым маркеры пользователей отправляются для входа, или URI перенаправления, для которых отправляются коды авторизации OAuth 2,0 и маркеры доступа. |
+| `redirectUris` | Коллекция объектов string | Указывает URL-адреса, в которые отправляются маркеры пользователей для входов, или URIS перенаправления, в которые отправляются коды авторизации OAuth 2.0 и маркеры доступа. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

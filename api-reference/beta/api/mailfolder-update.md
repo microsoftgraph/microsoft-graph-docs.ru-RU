@@ -1,16 +1,16 @@
 ---
 title: Обновление mailFolder
 description: Обновление свойств объекта mailFolder.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 742d26144b42b5766dbab2ece4bee564f725fa70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dd94327f83be7fba7360416ea3e76ea5fdcb9010
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981679"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136866"
 ---
 # <a name="update-mailfolder"></a>Обновление mailFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "48981679"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [mailFolder](../resources/mailfolder.md) .
+Обновление свойств объекта [mailFolder.](../resources/mailfolder.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

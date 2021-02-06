@@ -1,24 +1,24 @@
 ---
-title: Получение Публишедресаурце
-description: Получение свойств и связей объекта [публишедресаурце](../resources/publishedresource.md) .
+title: Get publishedResource
+description: Извлечение свойств и связей объекта [publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 685bbf85aa5b21bd46c98b6d364dd80a281ec777
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b0f84de5dfdcde391094e71dbcde451dc4fe3b0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973405"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135536"
 ---
-# <a name="get-publishedresource"></a>Получение Публишедресаурце
+# <a name="get-publishedresource"></a>Get publishedResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [публишедресаурце](../resources/publishedresource.md) .
+Извлечение свойств и связей [объекта publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [публишедресаурце](../resources/publishedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [publishedResource](../resources/publishedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -129,5 +129,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

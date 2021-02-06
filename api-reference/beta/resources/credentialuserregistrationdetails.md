@@ -1,44 +1,44 @@
 ---
-title: Тип ресурса Кредентиалусеррегистратиондетаилс
-description: Представляет сведения об использовании функции автоматического сброса пароля и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей.
+title: Тип ресурса credentialUserRegistrationDetails
+description: Представляет сведения об использовании самостоятельного сброса пароля и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 56d3f603fd9a8daf0c19e30c566379390aca7aed
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 77cd878eb0861990dadf790f91fff774b0862bee
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523740"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136264"
 ---
-# <a name="credentialuserregistrationdetails-resource-type"></a>Тип ресурса Кредентиалусеррегистратиондетаилс
+# <a name="credentialuserregistrationdetails-resource-type"></a>Тип ресурса credentialUserRegistrationDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения об использовании функции автоматического сброса пароля и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей. Сведения включают сведения о пользователе, состояние регистрации и используемый способ проверки подлинности.
+Представляет сведения об использовании самостоятельного сброса паролей и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей. Сведения включают сведения о пользователе, состояние регистрации и используемый метод проверки подлинности.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Кредентиалусеррегистратиондетаилс](../api/reportroot-list-credentialuserregistrationdetails.md) | Коллекция Кредентиалусеррегистратиондетаилс | Получение списка объектов [кредентиалусеррегистратиондетаилс](../resources/credentialuserregistrationdetails.md) для определенного клиента.
+| [Список credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | Коллекция credentialUserRegistrationDetails | Получите список объектов [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) для данного клиента.
  |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| аусмесодс | Коллекция Регистратионаусмесод | Представляет способ проверки подлинности, зарегистрированный пользователем. Возможные значения: `email` , `mobilePhone` ,, `officePhone` `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode` и `alternateMobilePhone` (поддерживается только при регистрации). |
-| id | String | Уникальный идентификатор действия. Только для чтения.|
-| Поддержка | Логический | Указывает, готов ли пользователь к выполнению самостоятельного сброса пароля или MFA. |
-| isEnabled | Boolean | ИндиЦиатес, разрешено ли пользователю выполнять сброс пароля самостоятельно. |
-| исмфарегистеред | Логический | ИндиЦиатес, зарегистрирован ли пользователь для MFA. |
-| Регистрация | Логический | Указывает, зарегистрировал ли пользователь какие бы то ни было методы проверки подлинности для самостоятельного сброса пароля. |
-| userDisplayName | String | Предоставляет имя пользователя для соответствующего пользователя. |
-| userPrincipalName | String | Предоставляет имя участника пользователя для соответствующего пользователя. |
+| authMethods | коллекция registrationAuthMethod | Представляет метод проверки подлинности, зарегистрированный пользователем. Возможные значения: , , , (используется только для самостоятельного сброса `email` `mobilePhone` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode` `alternateMobilePhone` (поддерживается только при регистрации). |
+| id | Строка | Уникальный идентификатор действия. Только для чтения.|
+| isCapable | Boolean | Указывает, готов ли пользователь к самостоятельному сбросу пароля или MFA. |
+| isEnabled | Boolean | Не сообщает, включен ли для пользователя самостоятельный сброс пароля. |
+| isMfaRegistered | Boolean | Не сообщает, зарегистрирован ли пользователь для MFA. |
+| isRegistered | Boolean | Указывает, зарегистрирован ли пользователь какие-либо методы проверки подлинности для самостоятельного сброса пароля. |
+| userDisplayName | String | Предоставляет имя соответствующего пользователя. |
+| userPrincipalName | String | Предоставляет имя основного пользователя соответствующего пользователя. |
 
 ## <a name="relationships"></a>Связи
 

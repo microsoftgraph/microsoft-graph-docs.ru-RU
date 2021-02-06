@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса Привилежедакцесс
-description: " Например, `privilegedAccess/azureResources` представляет PIM управление привилегированным доступом к ресурсам Azure."
+title: Тип ресурса privilegedAccess
+description: " например, `privilegedAccess/azureResources` представляет PIM, управляющее привилегированным доступом к ресурсам Azure."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: f815228157721f6100af79f53f84abf43763f632
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a144ba13974a728b4e89fc661f34f20e8157689
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136621"
 ---
-# <a name="privilegedaccess-resource-type"></a>Тип ресурса Привилежедакцесс
+# <a name="privilegedaccess-resource-type"></a>Тип ресурса privilegedAccess
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет группу функциональных возможностей, предоставляемых службой управления привилегированными удостоверениями (PIM). Различные экземпляры `privilegedAccess` представляют разных поставщиков, УПРАВЛЯЕМЫХ PIM; например, `privilegedAccess/azureResources` представляет PIM управление привилегированным доступом к ресурсам Azure.
+Представляет группу функций, предоставляемых службой Privileged Identity Management (PIM). Разные экземпляры представляют различных поставщиков, управляемых `privilegedAccess` PIM; например, представляет PIM, управляющую привилегированным доступом `privilegedAccess/azureResources` к ресурсам Azure.
 
 
-`privilegedAccess` в настоящее время доступен только для чтения. `POST` `PUT` `PATCH` `DELETE` В наборе сущностей поддерживаются не поддерживаемые операции, а также операции `privilegedAccess` .
+`privilegedAccess` в настоящее время находится только для чтения. Нет, не поддерживаются операции или `POST` операции для `PUT` набора `PATCH` `DELETE` `privilegedAccess` суностей.
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----------|:----------|:----------|
-|id         |String     |Идентификатор поставщика, управляемого службой PIM.|
-|displayName|String     |Отображаемое имя поставщика, управляемого службой PIM.|
+|id         |Строка     |ИД поставщика, управляемого PIM.|
+|displayName|Строка     |Отображаемого имени поставщика, управляемого PIM.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь   | Тип                                         |Описание|
 |:---------------|:---------------------------------------------|:----------|
-|resources       |Коллекция [governanceResource](../resources/governanceresource.md)            |Коллекция ресурсов для поставщика.|
-|roleAssignments |Коллекция [governanceRoleAssignment](../resources/governanceroleassignment.md)|Коллекция назначений ролей для поставщика.|
-|roleDefinitions |Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md)|Коллекция ролей дефинтионс для поставщика.|
-|ролеассигнментрекуестс |Коллекция [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Коллекция запросов назначений ролей для поставщика.|
-|ролесеттингс |Коллекция [говернанцеролесеттинг](../resources/governancerolesetting.md)|Коллекция параметров роли для поставщика.|
+|resources       |[коллекция governanceResource](../resources/governanceresource.md)            |Коллекция ресурсов для поставщика.|
+|roleAssignments |[Коллекция governanceRoleAssignment](../resources/governanceroleassignment.md)|Коллекция назначений ролей для поставщика.|
+|roleDefinitions |[Коллекция governanceRoleDefinition](../resources/governanceroledefinition.md)|Коллекция отозванных ролей для поставщика.|
+|roleAssignmentRequests |[Коллекция governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Коллекция запросов на назначение ролей для поставщика.|
+|roleSettings |[Коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Коллекция параметров роли для поставщика.|
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

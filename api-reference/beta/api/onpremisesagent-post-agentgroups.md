@@ -1,24 +1,24 @@
 ---
-title: Назначение Онпремисесажент для Онпремисесажентграуп
-description: Назначьте Онпремисесажент для Онпремисесажентграуп.
+title: Назначение onPremisesAgent для onPremisesAgentGroup
+description: Назначьте onPremisesAgent onPremisesAgentGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 80a90b19d4f9d93208ce3dc79813732c7e756b78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e4899885573abebda0f5dfb23bdadf852673c02
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072006"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136428"
 ---
-# <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Назначение Онпремисесажент для Онпремисесажентграуп
+# <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Назначение onPremisesAgent для onPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначение объекта [онпремисесажент](../resources/onpremisesagent.md) объекту [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+[Назначьте onPremisesAgent](../resources/onpremisesagent.md) [объекту onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,11 +46,11 @@ POST /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$re
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса добавьте представление ссылки OData в формате JSON для объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+В теле запроса предопустим представление ссылки OData в JSON для объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-В тексте запроса добавьте представление ссылки OData в формате JSON для объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+В теле запроса предоставляем ссылку OData в JSON на объект [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ```http
 {
@@ -111,5 +111,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

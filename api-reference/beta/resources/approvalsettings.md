@@ -1,16 +1,16 @@
 ---
 title: Сложный тип approvalSettings
-description: Используется для свойства requestApprovalSettings политики назначения пакета доступа. Предоставляет дополнительные параметры для выбора, кто должен утвердить каждый запрос.
+description: Используется для свойства requestApprovalSettings политики назначения пакета доступа. Предоставляет дополнительные параметры, чтобы выбрать, кто должен утвердить каждый запрос.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 85d47e09de1b4d8f687a8dff2abf6aff1af0f21f
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 99892e0943b993fe43edb4bd104fd2a3a8736a51
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777731"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135263"
 ---
 # <a name="approvalsettings-complex-type"></a>Сложный тип approvalSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "49777731"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для `requestApprovalSettings` свойства политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) Предоставляет дополнительные параметры для выбора, кто должен утвердить каждый запрос. 
+Используется для `requestApprovalSettings` свойства политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) Предоставляет дополнительные параметры, чтобы выбрать, кто должен утвердить каждый запрос. 
 
 ## <a name="properties"></a>Свойства
 
@@ -27,10 +27,10 @@ ms.locfileid: "49777731"
 | isApprovalRequired | Boolean | Если задается false, утверждение для запросов в этой политике не требуется. |
 | isApprovalRequiredForExtension | Boolean| Если задается false, то для пользователя, у которого уже есть назначение для расширения назначения, утверждение не требуется. |
 | isRequestorJustificationRequired | Boolean | Указывает, требуется ли запрашивать обоснование в своем запросе. |
-| approvalMode| String | Один из `NoApproval` , `SingleStage` или `Serial` . Используется, `NoApproval` если `isApprovalRequired` заведомо неверно. |
+| approvalMode| Строка | Один из `NoApproval` , `SingleStage` или `Serial` . Используется, `NoApproval` если `isApprovalRequired` заведомо false. |
 | approvalStages | [Коллекция approvalStage](approvalstage.md)| Если требуется утверждение, один или два элемента этой коллекции определяют каждый из этапов утверждения. Пустой массив, если утверждение не требуется.  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже приводится представление свойства параметров утверждения запроса в JSON.
 

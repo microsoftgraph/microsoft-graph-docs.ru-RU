@@ -1,24 +1,24 @@
 ---
-title: Создание Синчронизатионтемплате
-description: Создайте новый шаблон синхронизации для конкретного приложения.
+title: Создание synchronizationTemplate
+description: Создайте новый шаблон синхронизации для заданного приложения.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 210c781cda27ad56ed30950b9b4c37f1d3751df9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 054e5dfc672f3336e5c8d633e05c1db82e350fdd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137244"
 ---
-# <a name="create-synchronizationtemplate"></a>Создание Синчронизатионтемплате
+# <a name="create-synchronizationtemplate"></a>Создание synchronizationTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый шаблон синхронизации для конкретного приложения.
+Создайте новый шаблон синхронизации для заданного приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,11 +43,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) , который требуется создать. `id` `applicationId` `factoryTag` Свойства и свойства являются обязательными. Если `schema` с шаблоном не предоставляется никакой шаблон, будет использоваться схема по умолчанию, связанная со `factoryTag` свойством.
+В теле запроса укажи объект [synchronizationTemplate,](../resources/synchronization-synchronizationtemplate.md) который необходимо создать. Свойства и `id` свойства `applicationId` являются `factoryTag` обязательной. Если шаблон не предоставляется, будет использоваться схема по умолчанию, связанная `schema` со `factoryTag` свойством.
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
 
 ### <a name="example"></a>Пример
 
@@ -90,7 +90,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

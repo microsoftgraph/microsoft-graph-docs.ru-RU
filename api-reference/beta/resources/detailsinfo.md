@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса Детаилсинфо
-description: Контейнер свойств, который может содержать любую информацию о связанном идентификаторе или системе.
+title: Тип ресурса detailsInfo
+description: Пакет свойств, который может содержать любые сведения о связанном удостоверении или системе.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 9325942a9419a13be92b41bf4d726efcf926041d
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 25441071581af0b9e35ef941d8c82998bdea7b38
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523373"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135662"
 ---
-# <a name="detailsinfo-resource-type"></a>Тип ресурса Детаилсинфо
+# <a name="detailsinfo-resource-type"></a>Тип ресурса detailsInfo
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер свойств, который может содержать любую информацию о связанном идентификаторе или системе. Сюда могут относиться сведения о свойстве, которое подготавливается или является источником/целевой системой.
+Пакет свойств, который может содержать любые сведения о связанном удостоверении или системе. Это может включать сведения о свойстве, которое необходимо получить, или источник/целевая система.
 
 ## <a name="properties"></a>Свойства
-Ресурс **детаилсинфо** — это строка JSON, содержащая дополнительные свойства, такие как **applicationId**, **ObjectID** и **UPN**. Набор свойств зависит от типа ресурса, который подготавливается к работе. В [списке провисионингобжектсуммари](../api/provisioningobjectsummary-list.md) показан пример этого.
+Ресурс **detailsInfo —** это строка JSON, которая содержит дополнительные свойства, такие как **ApplicationId,** **ObjectId** и **UPN.** Набор свойств зависит от типа ресурса, который необходимо создать. [Пример этого показан в списке provisioningObjectSummary.](../api/provisioningobjectsummary-list.md)
 
 ## <a name="relationships"></a>Связи
 Нет

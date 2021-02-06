@@ -3,14 +3,14 @@ title: Тип ресурса appRoleAssignment
 description: Используется, чтобы записать, когда пользователю, группе или субъекту-службе присваивается роль приложения в субъекте-службе приложения. Можно создавать, читать и удалять назначения ролей приложений.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: c23c0a9d4e3f41ca21b285eb7f5484678c3d8b66
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d91393823efde4a384a2713723effa8c3f947a8b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135270"
 ---
 # <a name="approleassignment-resource-type"></a>Тип ресурса appRoleAssignment
 

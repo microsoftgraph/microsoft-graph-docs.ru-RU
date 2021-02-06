@@ -1,24 +1,24 @@
 ---
-title: Создание Онпремисесажентграуп
-description: Создание нового объекта **онпремисесажентграуп** .
+title: Создание onPremisesAgentGroup
+description: Создание объекта **onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e8217451851d12916ce8fde2d287fa68b23c48c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2486c83d9e22304f57dbd64d322029fcec201c83
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136383"
 ---
-# <a name="create-onpremisesagentgroup"></a>Создание Онпремисесажентграуп
+# <a name="create-onpremisesagentgroup"></a>Создание onPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+Создание объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в формате JSON.
+В теле запроса предоставляем представление объекта [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в JSON.
 
 ```json
 {
@@ -56,7 +56,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-В тексте запроса добавьте представление объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в формате JSON.
+В теле запроса предоставляем представление объекта [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в JSON.
 
 ```json
 {
@@ -125,5 +125,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

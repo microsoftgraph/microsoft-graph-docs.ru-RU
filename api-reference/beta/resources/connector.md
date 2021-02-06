@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса Connector
-description: Представляет соединитель прокси приложения.
+title: Тип ресурса connector
+description: Представляет соединители прокси приложения.
 author: japere
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 3e42bc42c1989e530f7b7f307da3963407ded112
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53a5726456ce3d03ea537e87ec0dddb901623601
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136781"
 ---
-# <a name="connector-resource-type"></a>Тип ресурса Connector
+# <a name="connector-resource-type"></a>Тип ресурса connector
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Соединители это простые агенты, которые размещаются локально и упрощают исходящее подключение к службе [прокси приложения Azure AD](https://aka.ms/whyappproxy) . Каждый соединитель является частью [коннекторграуп](connectorgroup.md).
+Соединители — это облегченные агенты, которые находятся локально и облегчают исходящие подключения к службе прокси приложения [Azure AD.](https://aka.ms/whyappproxy) Каждый соединители являются частью [connectorGroup.](connectorgroup.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление соединителей](../api/connector-list.md) | Коллекция [соединителей](connector.md) | Получение списка объектов Connector. | 
-| [Получение соединителя](../api/connector-get.md) | [PDIF](connector.md) | Чтение свойств и связей объекта Connector. |
-| [Перечисление memberOf](../api/connector-list-memberof.md) | Коллекция [коннекторграуп](connectorgroup.md) | Список коллекций объектов Коннекторграуп, участником которых является соединитель. |
-| [Добавление соединителя для connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Добавление соединителя в Коннекторграуп. |
+| [Перечисление соединителей](../api/connector-list.md) | [коллекция соединители](connector.md) | Получить список объектов соединители. | 
+| [Получение соединителя](../api/connector-get.md) | [connector](connector.md) | Чтение свойств и связей объекта соединители. |
+| [Перечисление memberOf](../api/connector-list-memberof.md) | [Коллекция connectorGroup](connectorgroup.md) | Укажете коллекцию объектов connectorGroup, участником группы. |
+| [Добавление соединителя для connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Добавление соединителю в connectorGroup. |
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|екстерналип|String| Внешний IP-адрес, обнаруженный сервером соединителей. Только для чтения. |
-|id|String| Уникальный идентификатор соединителя. Только для чтения. |
-|ИмяКомпьютера|String| Имя компьютера, на котором установлен и запущен соединитель. |
-|status|string| Указывает состояние соединителя. Возможные значения: `active`, `inactive`. Только для чтения. |
+|externalIp|Строка| Внешний IP-адрес, обнаруженный сервером соединители. Только для чтения. |
+|id|Строка| Уникальный идентификатор соединители. Только для чтения. |
+|machineName|Строка| Имя компьютера, на который установлен и запущен соедините. |
+|status|string| Указывает состояние соединители. Возможные значения: `active`, `inactive`. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|memberOf|Коллекция [коннекторграуп](connectorgroup.md)| Коннекторграуп, участником которого является соединитель. Только для чтения. |
+|memberOf|[Коллекция connectorGroup](connectorgroup.md)| СоединителиГруппы, в которые входит соединитестройка. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -78,5 +78,6 @@ ms.locfileid: "48027169"
   "suppressions": []
 }
 -->
+
 
 

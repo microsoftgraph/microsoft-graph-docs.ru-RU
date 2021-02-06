@@ -1,16 +1,16 @@
 ---
 title: 'mailFolder: move'
 description: Перемещение папки почты со всем ее содержимым в другую папку почты.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d238806575f1efb5b2acb85e24dbc7609b73a0d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 078e5b81a3a3696cf07e7852fa466c0586ae6d09
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979271"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136919"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -52,11 +52,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|destinationId|String|Идентификатор папки или имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
+|destinationId|String|ИД папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

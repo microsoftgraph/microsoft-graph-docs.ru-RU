@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Релингпартидетаиледсуммари
-description: Представляет проверяющую сторону в AD FS.
+title: Тип ресурса relyingPartyDetailedSummary
+description: Представляет в AD FS поднадзорную сторону.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a3a6fd0ad84ce8e41902cd7c0e82a314fb1aa3ca
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: c1c0195302c4b01e39a6223797567c750807e9f6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524717"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136230"
 ---
-# <a name="relyingpartydetailedsummary-resource-type"></a>Тип ресурса Релингпартидетаиледсуммари
+# <a name="relyingpartydetailedsummary-resource-type"></a>Тип ресурса relyingPartyDetailedSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет проверяющую сторону, настроенную с помощью служб федерации Active Directory (AD FS), его агрегированное использование и возможность переноса конфигурации проверяющей стороны в Azure Active Directory.
+Представляет поднадзорную сторону, настроенную со службами федерации Active Directory (AD FS), ее агрегированное использование и возможность переноса конфигурации с этой стороной в Azure Active Directory.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/relyingpartydetailedsummary-list.md) | [релингпартидетаиледсуммари](relyingpartydetailedsummary.md) | Получение списка объектов **релингпартидетаиледсуммари** . |
+| [Список](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Получить список объектов **relyingPartyDetailedSummary.** |
 
 
 ## <a name="properties"></a>Свойства
@@ -32,17 +32,17 @@ ms.locfileid: "49524717"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Только для чтения. Уникальный идентификатор, созданный на уровне API.| 
-|релингпартид|String|Этот идентификатор используется для идентификации проверяющей стороны в службе Федерации. Он используется при выдаче утверждений проверяющей стороне.|
-|serviceId|String|Уникальный идентификатор леса Active Directory.|
-|мигратионстатус|string| Указывает, можно ли переместить приложение в Azure AD или потребовать больше расследований. Возможные значения: `ready`, `needsReview`, `additionalStepsRequired`.|
-|мигратионвалидатиондетаилс|Коллекция [keyValuePair](keyvaluepair.md)|Указывает все проверки на правильность конфигурации приложений, которые позволяют оценить, готово ли приложение к перемещению в Azure AD. Возможные имена: `AdditionalWSFedEndpointCheckResult` ,,,,,,,,,,,,  `AllowedAuthenticationClassReferencesCheckResult` `AlwaysRequireAuthenticationCheckResult`   `AutoUpdateEnabledCheckResult` `ClaimsProviderNameCheckResult` `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult` ,  `DelegationAuthorizationRulesCheckResult` , `IssuanceAuthorizationRulesCheckResult` , `IssuanceTransformRulesCheckResult` . Возможные значения result: `0` , `1` , или `2` . `0` Когда проверка проверки пройдена, `1` при неудачной проверке и `2` при проверке на наличие предупреждения. |
-|релингпартинаме|String|Имя приложения или другой сущности в Интернете, которая использует поставщика удостоверений для проверки подлинности пользователя, который хочет войти в систему.|
-|фаиледсигнинкаунт|Int64| Количество неудачных входов в службу федерации Active Directory в указанном периоде. |
-|replyUrls|Коллекция String|Указывает, где ожидается получение маркера проверяющей стороной.|
-|сигнинсукцессрате|Двойное с плавающей точкой|Количество успешных/(количество успешных и неудачных входов + количество неудачных входов) в службе федерации Active Directory в указанном периоде.|
-|сукцессфулсигнинкаунт|Int64|Количество успешных входов в службу федерации Active Directory.|
-|тоталсигнинкаунт|Int64|Количество успешных и неудачных входных входов в службу федерации Active Directory в указанном периоде.|
-|уникуеусеркаунт|Int64|Количество уникальных пользователей, выполнивших вход в приложение.|
+|relyingPartyId|Строка|Этот идентификатор используется для идентификации службящей стороны для этой службы федерации. Он используется при выдаче утверждений в подавную сторону.|
+|serviceId|Строка|Уникально идентифицирует лес Active Directory.|
+|migrationStatus|string| Указывает, может ли приложение быть перемещено в Azure AD или требуется более подробное исследование. Возможные значения: `ready`, `needsReview`, `additionalStepsRequired`.|
+|migrationValidationDetails|Коллекция [keyValuePair](keyvaluepair.md)|Указывает все проверки, которые необходимо проверить для сведений о конфигурации приложений, чтобы оценить, готово ли приложение к перемещению в Azure AD. Возможные имена: `AdditionalWSFedEndpointCheckResult` , , , , , , ,  `AllowedAuthenticationClassReferencesCheckResult` , `AlwaysRequireAuthenticationCheckResult` , , , ,   `AutoUpdateEnabledCheckResult` `ClaimsProviderNameCheckResult` , `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult`  `DelegationAuthorizationRulesCheckResult` `IssuanceAuthorizationRulesCheckResult` `IssuanceTransformRulesCheckResult` . Возможные значения результатов: `0` `1` , или `2` . `0` когда проверка проверки пройдена, когда проверка не пройдена, и когда проверка проверки является `1` `2` предупреждением. |
+|relyingPartyName|Строка|Имя приложения или другой сущности в Интернете, использующей поставщика удостоверений для проверки подлинности пользователя, который хочет войти в систему.|
+|failedSignInCount|Int64| Количество неудачных входов в службу федерации Active Directory за указанный период. |
+|replyUrls|Коллекция String|Указывает, где ожидается получение маркера.|
+|signInSuccessRate|Двойное с плавающей точкой|Количество успешных или успешных входов в службу федерации Active Directory (число успешных и неудачных входов) в указанном периоде.|
+|successfulSignInCount|Int64|Количество успешных входов в службу федерации Active Directory.|
+|totalSignInCount|Int64|Количество успешных и неудачных входов в службу федерации Active Directory в указанный период.|
+|uniqueUserCount|Int64|Количество уникальных пользователей, которые вписались в приложение.|
 
 ## <a name="relationships"></a>Связи
 

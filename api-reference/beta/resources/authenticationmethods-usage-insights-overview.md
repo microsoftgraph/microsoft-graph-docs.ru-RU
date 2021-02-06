@@ -3,14 +3,14 @@ title: Работа с API отчета об использовании мето
 description: Отчет об использовании методов проверки подлинности помогает организации понять, как пользователи используют такие возможности Azure Active Directory, как самостоятельный сброс паролей и многофакторная проверка подлинности (MFA).
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: ba46366db81c2fbd754e7e7b83769af65b078294
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 54f3b823fc1d1c62df07ac6dd9e61f5ea32a2871
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135505"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Работа с API отчета об использовании методов проверки подлинности
 
@@ -51,7 +51,7 @@ ms.locfileid: "50052491"
 
 В следующей таблице перечислены некоторые распространенные запросы, которые можно использовать с этим API.
 
-| Операция | Попробовать в песочнице Graph | Описание |
+| Operation | Попробовать в песочнице Graph | Описание |
 | --------- | --- | ----------- |
 | [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Получите количество пользователей, зарегистрированных для самостоятельного сброса паролей и многофаксной многофаксной защиты. |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Получить количество пользователей, использующих самостоятельный сброс паролей. |

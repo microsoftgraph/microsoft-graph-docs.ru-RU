@@ -1,24 +1,24 @@
 ---
-title: Список Онпремисесажентграупс
-description: Получение списка объектов Онпремисесажентграуп.
+title: Список onPremisesAgentGroups
+description: Получить список объектов onPremisesAgentGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2daa3ef351d2d0865d3d3990bc1a4c741fe6f39d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0165984437cd3c499b5c922e1e835a5f22fb18a7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136404"
 ---
-# <a name="list-onpremisesagentgroups"></a>Список Онпремисесажентграупс
+# <a name="list-onpremisesagentgroups"></a>Список onPremisesAgentGroups
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+Получить список объектов [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -141,5 +141,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

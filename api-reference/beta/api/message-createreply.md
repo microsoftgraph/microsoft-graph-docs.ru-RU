@@ -1,16 +1,16 @@
 ---
 title: 'message: createReply'
-description: 'Создание черновика ответного сообщения для включения комментария или обновления любого свойства сообщения '
-author: svpsiva
+description: 'Создание черновика ответного сообщения с комментарием или обновлением свойств сообщения '
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d959a18db048764e099bf0629b603d4665a0eda5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d2943f5a822ce02c3fc4c8fd1e6ae34e6d6f7b98
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134732"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -22,8 +22,8 @@ ms.locfileid: "48981587"
 
 **Примечание**
 
-- Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра. Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.
-- Если параметр **replyTo** указан в исходном сообщении, в формате сообщения Интернета ( [RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в **replyTo** , а не получателям **из**. 
+- Можно указать комментарий или свойство **body** `message` параметра. Если указать оба этих запроса, будет возвращена ошибка "HTTP 400 Bad Request".
+- Если **replyTo** указан в исходном сообщении в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)необходимо отправить ответ получателям в **replyTo,** а не получателям из **.** 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,14 +54,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-|message|[message](../resources/message.md)|Все доступные для записи свойства, которые необходимо обновить в ответном сообщении.|
+|message|[message](../resources/message.md)|Любые записаемые свойства, которые необходимо обновить в ответном сообщении.|
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-В приведенном ниже примере создается черновик ответа, в тексте запроса добавляется комментарий и получатель.
+В следующем примере создается черновик ответа, добавляется комментарий и получатель в тело запроса.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

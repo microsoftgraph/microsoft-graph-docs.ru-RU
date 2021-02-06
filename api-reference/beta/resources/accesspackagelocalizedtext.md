@@ -3,14 +3,14 @@ title: Тип ресурса accessPackageLocalizedText
 description: Сложный тип, используемый для представления строки на определенном языке.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9573ae4118f02abdba5686fd94da96da71d374c2
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 8d493f0909617dcda26546ccc262d7591c6b9309
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137349"
 ---
 # <a name="accesspackagelocalizedtext-resource-type"></a>Тип ресурса accessPackageLocalizedText
 
@@ -23,8 +23,8 @@ ms.locfileid: "49720382"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|languageCode|String|Код ISO для намечаемого языка. Обязательный. |
-|текст|String|Текст на определенном языке. Обязательный. |
+|languageCode|Строка|Код ISO для намечаемого языка. Обязательный элемент. |
+|текст|Строка|Текст на определенном языке. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

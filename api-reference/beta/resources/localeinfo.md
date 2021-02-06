@@ -4,13 +4,13 @@ description: Сведения о языковом стандарте, в час�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: 002eb0ce4433e36b53b5e844ea857812022e653c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 455f0ba63a56b75387b1abfe952edfdfb453c71a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135235"
 ---
 # <a name="localeinfo-resource-type"></a>Тип ресурса localeInfo
 
@@ -27,7 +27,7 @@ ms.locfileid: "48073665"
 |языковые стандарты|string|Представления языкового стандарта для пользователя, которое включает предпочитаемый язык и страну или регион. Пример: "en-us". В языковом компоненте используются коды из двух букв, определенные в стандарте [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), а в компоненте страны — коды из стандарта [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
 |displayName|string|Имя, представляющее языковой стандарт пользователя на естественном языке, например "Английский (США)".|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

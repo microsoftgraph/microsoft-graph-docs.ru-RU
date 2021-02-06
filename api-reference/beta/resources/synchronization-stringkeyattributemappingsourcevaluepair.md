@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир
-description: Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — Аттрибутемаппингсаурце.
+title: Тип ресурса stringKeyAttributeMappingSourceValuePair
+description: Представляет пару "ключ-значение", где ключ является строкой, а значением является attributeMappingSource.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d70337be1a3f28e9ba30734ccc919c5459dcbd0b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: d0bd761b64c41c930bda84b820d98501870e0c26
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026196"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135100"
 ---
-# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир
+# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>Тип ресурса stringKeyAttributeMappingSourceValuePair
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — [аттрибутемаппингсаурце](synchronization-attributemappingsource.md).
+Представляет пару "ключ-значение", где ключ является строкой, а [значением является attributeMappingSource.](synchronization-attributemappingsource.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Имя параметра.|
-|значение|[аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Значение параметра.|
+|key|Строка|Имя параметра.|
+|значение|[attributeMappingSource](synchronization-attributemappingsource.md)|Значение параметра.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

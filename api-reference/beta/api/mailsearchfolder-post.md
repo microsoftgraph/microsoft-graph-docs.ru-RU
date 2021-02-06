@@ -1,24 +1,24 @@
 ---
-title: Создание Маилсеарчфолдер
-description: Используйте этот API, чтобы создать новый Маилсеарчфолдер в почтовом ящике указанного пользователя.
+title: Создание mailSearchFolder
+description: Этот API используется для создания нового mailSearchFolder в почтовом ящике указанного пользователя.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5691da201918ef36e6ab7fa6892fab54651ada2f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9a03aef5158db175339ba1abecae03ce2d791fc5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136831"
 ---
-# <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
+# <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [маилсеарчфолдер](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
+Создайте [новый mailSearchFolder](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,7 +39,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительскую папку в URL-адресе запроса как идентификатор папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительская папка в URL-адресе запроса в качестве ИД папки или известного имени папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,21 +54,21 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
-| displayName | String | Отображаемое имя новой папки.|
-| инклуденестедфолдерс | Логический | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false` означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
-| саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
-| филтеркуери | String | Запрос OData для фильтрации сообщений. |
+| @odata.type | Строка | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
+| displayName | Строка | Отображаемое имя новой папки.|
+| includeNestedFolders | Boolean | Указывает, как должна проходить иерархия папок почтового ящика в поиске. `true`означает, что следует глубоко искать, чтобы включить в иерархию каждой папки, явно указанной в **sourceFolderIds.** `false`означает неглубокий поиск только каждой папки, явно указанной в **sourceFolderIds.** |
+| sourceFolderIds | Коллекция объектов string | Папки почтового ящика, которые необходимо миновать. |
+| filterQuery | Строка | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [маилсеарчфолдер](../resources/mailsearchfolder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [mailSearchFolder](../resources/mailsearchfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, который создает папку поиска для сообщений, содержащих строку "Еженедельная сводка" в теме. Папка поиска находится в той же папке, в которой применяется указанный запрос фильтра.
+Ниже приводится пример запроса— он создает папку поиска сообщений, содержащих строку "weekly digest" в теме. Папка поиска находится в той же папке, к которой применяется указанный запрос фильтра.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

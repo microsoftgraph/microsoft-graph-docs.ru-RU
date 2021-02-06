@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipal: Чеккмемберобжектс'
-description: Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта участника службы.
+title: 'servicePrincipal: checkMemberObjects'
+description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта принципов службы.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 363ae809f4430d1219e25edb0871d8258fde2efb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0bf3389563f99b69b7e27651f85163e7f820748
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135921"
 ---
-# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: Чеккмемберобжектс
+# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта [servicePrincipal](../resources/serviceprincipal.md) . Этот метод является транзитивным.
+Проверьте членство в списке групп, ролей каталога или административных единиц для указанного объекта [servicePrincipal.](../resources/serviceprincipal.md) Этот метод является транзитивным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ids|Коллекция String|Коллекция, содержащая идентификаторы объектов групп, ролей каталогов, административных единиц или идентификаторов Ролетемплате ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов.|
+|ids|Коллекция String|Коллекция, которая содержит объектные ИД групп, роли каталога, административные единицы или roleTemplate ИД ролей каталогов, в которых необходимо проверить членство. Может быть указано до 20 объектов.|
 
 ## <a name="response"></a>Отклик
 
@@ -138,5 +138,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

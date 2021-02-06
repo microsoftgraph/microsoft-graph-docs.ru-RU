@@ -1,16 +1,16 @@
 ---
 title: Список существующих шаблонов синхронизации
-description: Список шаблонов синхронизации, связанных с конкретным приложением или участником службы.
+description: Список шаблонов синхронизации, связанных с заданным приложением или основным приложением-службой.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f723d3d3a7adc2fde43ae83d9381468ebe009625
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 7a012dd73b61667a020d53a6190114054d1dccd1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137272"
 ---
 # <a name="list-existing-synchronization-templates"></a>Список существующих шаблонов синхронизации
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список шаблонов синхронизации, связанных с конкретным приложением или участником службы.
+Список шаблонов синхронизации, связанных с заданным приложением или основным приложением-службой.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ GET applications/{id}/synchronization/templates
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и аколлектион объектов [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объекты synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
 
 ### <a name="example"></a>Пример
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

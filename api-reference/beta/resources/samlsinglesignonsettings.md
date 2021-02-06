@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Самлсинглесигнонсеттингс
-description: Представляет параметры единого входа SAML.
+title: Тип ресурса samlSingleSignOnSettings
+description: Представляет параметры единого входов SAML.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6c07e9c0284ef111a3032ec729c3b741be65f920
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b82f334196bcd9f7799a3a7a3ef7b5374571ac4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136143"
 ---
-# <a name="samlsinglesignonsettings-resource-type"></a>Тип ресурса Самлсинглесигнонсеттингс
+# <a name="samlsinglesignonsettings-resource-type"></a>Тип ресурса samlSingleSignOnSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,10 +22,10 @@ ms.locfileid: "48016032"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|релайстате|String| Относительный URI, по которому поставщик услуг перенаправляется после завершения процесса единого входа. |
+|relayState|Строка| Относительный URI, на который поставщик службы перенаправляется после завершения потока единого входов. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

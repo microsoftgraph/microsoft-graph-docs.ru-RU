@@ -3,14 +3,14 @@ title: Тип ресурса accessPackageLocalizedContent
 description: Сложный тип, используемый для представления текста на разных локальных уровнях вместе с текстом по умолчанию.*
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 91ef87428b4171317943e9ecf1ec92e959c7a62b
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 155d0ffd8f7f705c79bd753aa26f659968b87829
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137356"
 ---
 # <a name="accesspackagelocalizedcontent-resource-type"></a>Тип ресурса accessPackageLocalizedContent
 
@@ -23,10 +23,10 @@ ms.locfileid: "49720328"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|defaultText|String|Строка отката, которая используется, когда запрашиваемая локализация недоступна. Обязательный. |
+|defaultText|Строка|Строка отката, которая используется, когда запрашиваемая локализация недоступна. Обязательный элемент. |
 |localizedTexts|[Коллекция accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md)|Контент, представленный в формате для определенного локали. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

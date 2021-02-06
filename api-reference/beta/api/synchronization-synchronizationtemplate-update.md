@@ -1,24 +1,24 @@
 ---
-title: Обновление Синчронизатионтемплате
-description: Update (переопределить) шаблон синхронизации, связанный с заданным приложением.
+title: Обновление synchronizationTemplate
+description: Обновление (переопределение) шаблона синхронизации, связанного с заданным приложением.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 58d69d96626faff3fdaecd80e3cd1661d6b8b689
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: b388c4e63eb30f7ad9fc8cb65a3afed305f12926
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971164"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137237"
 ---
-# <a name="update-synchronizationtemplate"></a>Обновление Синчронизатионтемплате
+# <a name="update-synchronizationtemplate"></a>Обновление synchronizationTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update (переопределить) шаблон синхронизации, связанный с заданным приложением.
+Обновление (переопределение) шаблона синхронизации, связанного с заданным приложением.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +43,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) для замены существующего шаблона. Убедитесь, что все свойства предоставлены. Отсутствующие свойства будут удалены.
+В теле запроса укавите объект [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) для замены существующего шаблона. Убедитесь, что предоставлены все свойства. Отсутствующие свойства будут стираться.
 
 ### <a name="response"></a>Отклик
 
@@ -54,7 +54,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса. 
 
->**Примечание:** Объект Request, показанный здесь, сокращается для удобочитаемости. Включает все свойства в фактическом вызове.
+>**Примечание.** Показанный здесь объект запроса сокращен для учитаемости. Включит все свойства в фактический вызов.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

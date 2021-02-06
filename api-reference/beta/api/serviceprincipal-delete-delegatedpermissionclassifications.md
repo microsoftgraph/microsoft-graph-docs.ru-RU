@@ -1,24 +1,24 @@
 ---
-title: Удаление Делегатедпермиссионклассификатион
-description: Удаление делегированной классификации разрешений из субъекта-службы API.
+title: Удаление delegatedPermissionClassification
+description: Удаление делегированной классификации разрешений из директора-службы API.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 92d38d0559396b7a0ef2adb230a2f6ef4321bacd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aa10fbf12e0fef1ef6b8a96ec61cbb0571d47f8b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137405"
 ---
-# <a name="delete-delegatedpermissionclassification"></a>Удаление Делегатедпермиссионклассификатион
+# <a name="delete-delegatedpermissionclassification"></a>Удаление delegatedPermissionClassification
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [делегатедпермиссионклассификатион](../resources/delegatedPermissionClassification.md) , который ранее был задан для делегированного разрешения.
+Удаляет [delegatedPermissionClassification,](../resources/delegatedPermissionClassification.md) который ранее был настроен для делегирования разрешения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48979453"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Пермиссионгрантполици. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Пермиссионгрантполици. ReadWrite. ALL |
+|Для приложений | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -99,3 +99,4 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissi
 ```http
 HTTP/1.1 204 No Content
 ```
+

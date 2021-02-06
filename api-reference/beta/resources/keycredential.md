@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Кэйкредентиал
-description: Содержит ключевые учетные данные, связанные с приложением или субъектом службы. Свойство **keyCredentials** сущностей Application и servicePrincipal является коллекцией **кэйкредентиал**.
+title: Тип ресурса keyCredential
+description: Содержит учетные данные ключа, связанные с приложением или основным компонентом-службой. Свойство **keyCredentials** объектов application и servicePrincipal — это коллекция **объектов keyCredential.**
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6c005a44827640ed7a61e61f07837a98021d9a9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ba1bfbf5a3769163a2e9c839b568f22f33f9ac8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135438"
 ---
-# <a name="keycredential-resource-type"></a>Тип ресурса Кэйкредентиал
+# <a name="keycredential-resource-type"></a>Тип ресурса keyCredential
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит ключевые учетные данные, связанные с приложением или субъектом службы. Свойство **keyCredentials** сущностей [Application](application.md) и [servicePrincipal](serviceprincipal.md) является коллекцией **кэйкредентиал**.
+Содержит учетные данные ключа, связанные с приложением или основным компонентом-службой. Свойство **keyCredentials** объектов [application](application.md) и [servicePrincipal](serviceprincipal.md) — это коллекция **объектов keyCredential.**
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|кустомкэйидентифиер|Binary| Настраиваемый идентификатор ключа |
-| displayName | String | Понятное имя для ключа. Необязательное свойство. |
-|endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Него значение KeyID|Guid|Уникальный идентификатор (GUID) для ключа.|
-|startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|type|String|Тип учетных данных ключа; Например, "симметричный".|
-|сведений|String|Строка, описывающая цель, для которой можно использовать ключ; Пример: "Verify".|
-|key|Двоичный| Значение для учетных данных ключа. Должно быть значением в кодировке Base 64. |
+|customKeyIdentifier|Binary| Идентификатор пользовательского ключа |
+| displayName | Строка | Имя ключа. Необязательный параметр. |
+|endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|keyId|Guid|Уникальный идентификатор (GUID) для ключа.|
+|startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|type|Строка|Тип учетных данных ключа; например, "Symmetric".|
+|usage|Строка|Строка, описывая назначение, для которого можно использовать ключ; например, "Verify".|
+|key|Двоичный| Значение для учетных данных ключа. Должно быть значением в коде base 64. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

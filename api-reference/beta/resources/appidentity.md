@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Аппидентити
-description: Указывает идентификатор приложения, который выполнил действие или изменился. Включает идентификатор приложения, имя, идентификатор и имя участника службы. Этот ресурс вызывается API Директоряудит
+title: Тип ресурса appIdentity
+description: Указывает удостоверение приложения, которое выполнило действие или было изменено. Включает в себя ИД приложения, имя, ИД основного приложения-службы и имя. Этот ресурс вызван API directoryAudit
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 author: sureshja
-ms.openlocfilehash: ed814cb4e096ff8e13bdb8f06ede6cad4f94c6d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2949acd00b3ef494d7fb3999c180631cf8609cc3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004202"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137048"
 ---
-# <a name="appidentity-resource-type"></a>Тип ресурса Аппидентити
+# <a name="appidentity-resource-type"></a>Тип ресурса appIdentity
 
-Пространство имен: Microsoft. Graph указывает идентификатор приложения, который выполнил действие или изменился. Включает идентификатор приложения, имя, идентификатор и имя участника службы. Этот ресурс вызывается API [директоряудит](../api/directoryaudit-get.md)
+Пространство имен: microsoft.graph указывает удостоверение приложения, которое выполнило действие или было изменено. Включает в себя ИД приложения, имя, ИД основного приложения-службы и имя. Этот ресурс вызван API [directoryAudit](../api/directoryaudit-get.md)
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
-|displayName|String|Указывает на имя приложения, отображаемое на портале Azure.|
-|сервицепринЦипалид|String|Указывает уникальный идентификатор GUID, указывающий идентификатор участника службы в Azure Active Directory для соответствующего приложения.|
-|servicePrincipalName|String|— Имя участника-службы — это имя приложения в клиенте. |
+|displayName|Строка|Указывает на имя приложения, отображаемую на портале Azure.|
+|servicePrincipalId|Строка|Ссылается на уникальный GUID, указывающий ИД основного службы в Azure Active Directory для соответствующего приложения.|
+|servicePrincipalName|String|Ссылается на имя основного службы имя приложения в клиенте. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

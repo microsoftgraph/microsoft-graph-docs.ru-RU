@@ -1,24 +1,24 @@
 ---
-title: Список Усеркредентиалусажедетаилс
-description: Получение списка объектов Усеркредентиалусажедетаилс для определенного клиента.
+title: Список userCredentialUsageDetails
+description: Получите список объектов userCredentialUsageDetails для заданного клиента.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d1420e28ae5cc176b74cb1de8ac064e480249cd1
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: e64d98318bcf9b083005f79156bc425a3b0d0fbc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523968"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134493"
 ---
-# <a name="list-usercredentialusagedetails"></a>Список Усеркредентиалусажедетаилс
+# <a name="list-usercredentialusagedetails"></a>Список userCredentialUsageDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [усеркредентиалусажедетаилс](../resources/usercredentialusagedetails.md) для определенного клиента. Сведения включают сведения о пользователе, состояние сброса и причину сбоя.
+Получите список объектов [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) для заданного клиента. Сведения включают сведения о пользователе, состояние сброса и причину сбоя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,23 +40,23 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Эта функция поддерживает необязательный параметр запроса OData **$Filter**. **$Filter** можно применить к одному или нескольким из следующих свойств ресурса [усеркредентиалусажедетаилс](../resources/usercredentialusagedetails.md) .
+Эта функция поддерживает необязательный параметр запроса OData **$filter.** Вы можете **применить $filter** к одному или более из следующих свойств ресурса [userCredentialUsageDetails.](../resources/usercredentialusagedetails.md)
 
 | Свойства | Описание и пример |
 |:--------- |:----------- |
-| состав | Фильтрация по типу требуемых данных (регистрация VS Reset). Пример: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтра: `eq` |
-| userDisplayName | Фильтрация по отображаемому имени пользователя. Пример: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживает не зависящий от регистра. |
-| userPrincipalName  | Фильтрация по имени участника пользователя. Пример: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживает не зависящий от регистра. |
-| Выполнение | Фильтрация по состоянию действия. Пример: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Поддерживаемые операторы фильтра: `eq` и `orderby` . |
-| аусмесод  | Фильтрация по методам проверки подлинности, используемым во время регистрации. Пример: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Поддерживаемые операторы фильтра: `eq` . |
-| failureReason | Фильтрация по причине сбоя (если действие завершилось с ошибкой). Пример: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживает не зависящий от регистра. |
+| feature | Фильтрация по нужным типам данных об использовании (регистрация и сброс). Пример: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтров: `eq` |
+| userDisplayName | Фильтрация по отображаемой имени пользователя. Пример: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживается безчувствительности к делу. |
+| userPrincipalName  | Фильтрация по имени основного пользователя. Пример: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживается безчувствительности к делу. |
+| isSuccess | Фильтрация по статусу действия. Пример: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Поддерживаемые операторы фильтра: `eq` и `orderby` . |
+| authMethod  | Фильтрация по методам проверки подлинности, используемым во время регистрации. Пример: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Поддерживаемые операторы фильтра: `eq` . |
+| failureReason | Фильтрация по причине сбоя (если действие не удалось). Пример: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживается безчувствительности к делу. |
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усеркредентиалусажедетаилс](../resources/usercredentialusagedetails.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
 

@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Обжектдефинитион
+title: Тип ресурса objectDefinition
 description: Описывает объект и его атрибуты.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0048d11a8241e8a81bf223f337493e37aebaceda
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: bb1b52f4c3bd8f0f45144d43abfbf57be642ab46
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135634"
 ---
-# <a name="objectdefinition-resource-type"></a>Тип ресурса Обжектдефинитион
+# <a name="objectdefinition-resource-type"></a>Тип ресурса objectDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает объект и его атрибуты. Определения объектов входят в состав [директоридефинитион](synchronization-directorydefinition.md), который обновляется в составе [синчронизатионсчема](synchronization-synchronizationschema.md).
+Описывает объект и его атрибуты. Определения объектов являются частью [directoryDefinition,](synchronization-directorydefinition.md)которая обновляется в рамках [synchronizationSchema.](synchronization-synchronizationschema.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|attributes     |Коллекция [аттрибутедефинитион](synchronization-attributedefinition.md)    | Определяет атрибуты объекта. |
-|метаданных       |Коллекция [метадатаентри](synchronization-metadataentry.md)   |Дополнительные свойства расширения. Если явно не указано иное, значения метаданных не должны изменяться.|
-|name           |String     |Имя объекта. Должно быть уникальным в пределах определения каталога. Значение null не допускается.|
+|attributes     |[Коллекция attributeDefinition](synchronization-attributedefinition.md)    | Определяет атрибуты объекта. |
+|метаданные       |[Коллекция metadataEntry](synchronization-metadataentry.md)   |Дополнительные свойства расширения. Если не было явно упомянуто, значения метаданных не следует менять.|
+|name           |String     |Имя объекта. Должен быть уникальным в определении каталога. Значение null не допускается.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

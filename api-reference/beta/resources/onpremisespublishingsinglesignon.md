@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Кербероссигнонсеттингс
-description: Представляет параметры единого входа для локального приложения, опубликованного через прокси приложения.
+title: Тип ресурса kerberosSignOnSettings
+description: Представляет параметры единого знака для локального приложения, опубликованного через прокси-сервер приложения.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 720690a5e62e39665507b80d3c126b162862b470
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 85b2b4963c077b8dcb6ded4818ecc57bce635b39
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134871"
 ---
-# <a name="onpremisespublishingsinglesignon-resource-type"></a>Тип ресурса Онпремисеспублишингсинглесигнон
+# <a name="onpremisespublishingsinglesignon-resource-type"></a>Тип ресурса onPremisesPublishingSingleSignOn
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры единого входа для ресурса [онпремисеспублишинг](onpremisespublishing.md) при публикации локального приложения с помощью прокси приложения Azure AD. Этот ресурс используется для настройки встроенной проверки подлинности Windows и проверки подлинности на основе заголовков в режиме единого входа. Дополнительные сведения см. в статье [ограниченное делегирование Kerberos для единого входа в приложения с помощью прокси-сервера приложения](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+Представляет параметры единого входов для ресурса [onPremisesPublishing](onpremisespublishing.md) при публикации локального приложения с помощью прокси приложения Azure AD. Этот ресурс используется для настройки встроенной проверки подлинности Windows и проверки подлинности на основе загона в режиме единого входов. Дополнительные сведения см. в сведениях о ограниченном делегирования [Kerberos](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)для единого вход в приложения с помощью прокси приложения.
 
 >[!NOTE]
->Не используйте это свойство для настройки SAML или единого входа на основе пароля. Если настраивается единый вход SAML, необходимо задать параметр [servicePrincipal](serviceprincipal.md).
-Если вы настраиваете одиночный символ на основе пароля, его необходимо задать с помощью [креатепассвордсинглесигнонкредентиалс](../api/serviceprincipal-createpasswordsinglesignoncredentials.md).
+>Не используйте это свойство для настройки SAML или единого вход на основе пароля. Если вы настраиваете единый вход SAML, это должно быть установлено в [servicePrincipal.](serviceprincipal.md)
+Если вы настраиваете единый знак на основе пароля, его необходимо настроить с помощью [createPasswordSingleSignOnCredentials.](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|кербероссигнонсеттингс| [кербероссигнонсеттингс](kerberossignonsettings.md)| Параметры ограниченного делегирования Kerberos для приложений, использующих встроенную проверку подлинности Windows. |
-|синглесигнонмоде|String| Предпочтительный режим единого входа для приложения. Возможные значения: `none`, `onPremisesKerberos`, `headerBased`.|
+|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| Параметры ограниченного делегирования Kerberos для приложений, которые используют встроенную проверку подлинности окон. |
+|singleSignOnMode|Строка| Предпочтительный режим единого входов для приложения. Возможные значения: `none`, `onPremisesKerberos`, `headerBased`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

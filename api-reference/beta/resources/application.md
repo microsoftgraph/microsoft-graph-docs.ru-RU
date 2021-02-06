@@ -3,14 +3,14 @@ title: Тип ресурса application
 description: Представляет приложение.
 localization_priority: Priority
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 08d91de0d3e6440c4aa91038e1622805b338ed07
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 84cb01ae1aaa32552bdc6069670cc696e6813e55
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030230"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134771"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -107,7 +107,7 @@ ms.locfileid: "49030230"
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Только для чтения.|
 |extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null.|
 |onlineMeetings  |Коллекция [onlineMeeting](onlinemeeting.md)|Только для чтения. Допускается значение null.|
-|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Требуется версия 2013-11-08 или более поздняя. Только для чтения. Допускается значение null.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Только для чтения. Допускается значение null.|
 |tokenLifetimePolicies|Коллекция [tokenLifetimePolicy](tokenLifetimePolicy.md)|Типы ресурсов tokenLifetimePolicy, назначенные приложению.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -167,3 +167,4 @@ ms.locfileid: "49030230"
   "suppressions": []
 }
 -->
+

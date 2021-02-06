@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Верифиедпублишер
+title: Тип ресурса verifiedPublisher
 description: Представляет проверенного издателя приложения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: 0d704b42c83a853d094406c0ba62010da30ce142
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 5acc66bd72c65b25d8301c4870fa5ff0f98a0d73
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135627"
 ---
-# <a name="verifiedpublisher-resource-type"></a>Тип ресурса Верифиедпублишер
+# <a name="verifiedpublisher-resource-type"></a>Тип ресурса verifiedPublisher
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет проверенного издателя [приложения](application.md). Для получения дополнительных сведений см [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview). Проверенные издатели задаются с помощью [сетверифиедпублишер](../api/application-setverifiedpublisher.md) и могут быть удалены только с помощью [унсетверифиедпублишер](../api/application-unsetverifiedpublisher.md).
+Представляет проверенного издателя [приложения.](application.md) Дополнительные сведения см. в [проверке Publisher.](/azure/active-directory/develop/publisher-verification-overview) Проверенные издатели устанавливаются с помощью [setVerifiedPublisher](../api/application-setverifiedpublisher.md) и могут быть удалены только с помощью [unsetVerifiedPublisher.](../api/application-unsetverifiedpublisher.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|displayName|String|Проверенное имя издателя из учетной записи Microsoft партнерской сети организации (МПН) издателя приложения.|
-|верифиедпублишерид|String| Идентификатор проверенного издателя из учетной записи центра партнера издателя приложения. |
-|аддеддатетиме|DateTimeOffSet| Временная метка при первом добавлении проверенного издателя или последнего обновления. |
+|displayName|Строка|Проверенное имя издателя из учетной записи Microsoft Partner Network (MPN) издателя приложения.|
+|verifiedPublisherId|Строка| ИД проверенного издателя из учетной записи Центра партнеров издателя приложений. |
+|addedDateTime|DateTimeOffSet| Временнаямпетка первого или последнего обновления проверенного издателя. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

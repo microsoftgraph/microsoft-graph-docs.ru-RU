@@ -1,26 +1,26 @@
 ---
-title: 'Синчронизатионсчема: Парсикспрессион'
-description: '(.. Объект/ресаурцес/synchronization_attributemappingsource. md). '
+title: 'synchronizationSchema: parseExpression'
+description: '(.. объект /resources/synchronization_attributemappingsource.md). '
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ad35d176f2807b2daedc7296a2adc657a285b6f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: c53046032ea4927d5f475cbb05961253fd323939
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136362"
 ---
-# <a name="synchronizationschema-parseexpression"></a>Синчронизатионсчема: Парсикспрессион
+# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Синтаксический анализ заданное строковое выражение в объект [аттрибутемаппингсаурце](../resources/synchronization-attributemappingsource.md) .
+Раз parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
 
-Более подробную информацию о выражениях можно узнать [в статье Создание выражений для сопоставлений атрибутов в Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+Дополнительные сведения об выражениях см. в записи выражений для сопоставлений [атрибутов в Azure Active Directory.](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,12 +48,12 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|выражение               |String               |Выражение для синтаксического анализа.|
-|тестинпутобжект          |[експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательный параметр.|
-|таржетаттрибутедефинитион|[аттрибутедефинитион](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этим выражением. Необязательный параметр.|
+|выражение               |Строка               |Выражение для разбомбления.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных для оценки выражения. Необязательный параметр.|
+|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сописано с этим выражением. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [парсикспрессионреспонсе](../resources/synchronization-parseexpressionresponse.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

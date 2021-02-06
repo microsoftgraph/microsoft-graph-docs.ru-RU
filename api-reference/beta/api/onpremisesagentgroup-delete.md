@@ -1,24 +1,24 @@
 ---
-title: Удаление Онпремисесажентграуп
-description: Удаление объекта **онпремисесажентграуп** .
+title: Удаление onPremisesAgentGroup
+description: Удаление объекта **onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ba173597540597314ca832d0904f2ee34eb517a3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 97a778347065783a887de1fd9877af35081e44b8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136432"
 ---
-# <a name="delete-onpremisesagentgroup"></a>Удаление Онпремисесажентграуп
+# <a name="delete-onpremisesagentgroup"></a>Удаление onPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+Удаление объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -108,5 +108,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

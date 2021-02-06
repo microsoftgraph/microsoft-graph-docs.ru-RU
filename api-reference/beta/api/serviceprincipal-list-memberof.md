@@ -3,14 +3,14 @@ title: Перечисление servicePrincipal memberOf
 description: Список групп и ролей каталога, непосредственным участником которых является этот субъект-служба. Эта операция не является транзитивной.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9e34b75872f4a54c99844b67970e4860e2c69393
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: a8203aae8e73417c90dd92a57465238e043d42db
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082099"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134325"
 ---
 # <a name="list-serviceprincipal-memberof"></a>Перечисление servicePrincipal memberOf
 
@@ -297,5 +297,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 

@@ -1,50 +1,50 @@
 ---
-title: Тип ресурса Онпремисесажентграуп
-description: Тип ресурса Онпремисесажентграуп.
+title: Тип ресурса onPremisesAgentGroup
+description: Тип ресурса onPremisesAgentGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 84f0236c2c2e52742a84f19eae8eb7693f1b559b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0056f78eaecfad34a10dfb1ad2da04c15a6bc370
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136152"
 ---
-# <a name="onpremisesagentgroup-resource-type"></a>Тип ресурса Онпремисесажентграуп
+# <a name="onpremisesagentgroup-resource-type"></a>Тип ресурса onPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет локальную группу агентов. Группы агентов позволяют администратору клиента назначать определенные [агенты](onpremisesagent.md) для обслуживания определенных [опубликованных локальных ресурсов](publishedresource.md).
+Представляет группу локального агента. Группы агентов позволяют администратору клиента назначать определенных [агентов](onpremisesagent.md) для обслуживания определенных [опубликованных локального ресурса.](publishedresource.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Онпремисесажентграупс](../api/onpremisesagentgroup-list.md) | Коллекция Онпремисесажентграупс | Получение коллекции объектов **онпремисесажентграуп** . |
-| [Получение Онпремисесажентграуп](../api/onpremisesagentgroup-get.md) | [онпремисесажентграуп](onpremisesagentgroup.md) | Чтение свойств и связей объекта **онпремисесажентграуп** . |
-| [Создание Онпремисесажентграуп](../api/onpremisesagentgroup-post.md)  | [онпремисесажентграуп](onpremisesagentgroup.md) | Создание нового **онпремисесажентграуп**. |
-| [Обновление Онпремисесажентграуп](../api/onpremisesagentgroup-update.md) | [онпремисесажентграуп](onpremisesagentgroup.md) | Обновление объекта **онпремисесажентграуп** . |
-| [Удаление Онпремисесажентграуп](../api/onpremisesagentgroup-delete.md) | Нет | Удаление объекта **онпремисесажентграуп** . |
+| [Список onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | Коллекция onPremisesAgentGroups | Получите **коллекцию объектов onPremisesAgentGroup.** |
+| [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Чтение свойств и связей объекта **onPremisesAgentGroup.** |
+| [Создание onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Создайте **новую группу onPremisesAgentGroup.** |
+| [Обновление onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Обновление объекта **onPremisesAgentGroup.** |
+| [Удаление onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | Нет | Удаление объекта **onPremisesAgentGroup.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображаемое имя **онпремисесажентграуп**.|
-|id|String| Идентификатор объекта **онпремисесажентграуп**. Только для чтения.|
-|isDefault|Boolean|Указывает, является ли **онпремисесажентграуп** группой агентов по умолчанию. Только одна группа агентов может быть **онпремисесажентграуп** по умолчанию и задается системой.|
-|публишингтипе|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|displayName|Строка|Отображаемого имени **onPremisesAgentGroup.**|
+|id|Строка| ИД объекта **onPremisesAgentGroup.** Только для чтения.|
+|isDefault|Boolean|Указывает, является **ли onPremisesAgentGroup** группой агентов по умолчанию. По умолчанию **onPremisesAgentGroup** может быть только одна группа агентов, которая устанавливается системой.|
+|publishingType|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|агенты|Коллекция [онпремисесажент](onpremisesagent.md)| Список **онпремисесажент** , назначенных для **онпремисесажентграуп**. Только для чтения. Допускается значение null.|
-|публишедресаурцес|Коллекция [публишедресаурце](publishedresource.md)| Список **публишедресаурце** , назначенных для **онпремисесажентграуп**. Только для чтения. Допускается значение null.|
+|агенты|[Коллекция onPremisesAgent](onpremisesagent.md)| Список **onPremisesAgent,** которые назначены **onPremisesAgentGroup.** Только для чтения. Допускается значение null.|
+|publishedResources|[Коллекция publishedResource](publishedresource.md)| Список **publishedResource,** которые назначены **onPremisesAgentGroup.** Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -78,5 +78,6 @@ ms.locfileid: "48052609"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

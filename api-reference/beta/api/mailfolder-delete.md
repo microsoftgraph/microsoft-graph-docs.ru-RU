@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта MailFolder
-description: Удаление указанного mailFolder или Маилсеарчфолдер.
-author: svpsiva
+description: Удалите указанный mailFolder или mailSearchFolder.
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8b8518abed38e2e611da84951ddb2ed44f03a39b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2574d3e220e61fb7fa7a61c8c23240348a1594c7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977464"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136761"
 ---
 # <a name="delete-mailfolder"></a>Удаление объекта MailFolder
 
@@ -18,11 +18,11 @@ ms.locfileid: "48977464"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление указанного [mailFolder](../resources/mailfolder.md). Папка может быть [маилсеарчфолдер](../resources/mailsearchfolder.md).
+Удалите указанный [mailFolder.](../resources/mailfolder.md) Папка может быть [mailSearchFolder.](../resources/mailsearchfolder.md)
 
-Вы можете указать почтовую папку по ее ИДЕНТИФИКАТОРу папки или по [известному имени папки](../resources/mailfolder.md), если она существует.
+Вы можете указать папку почты по ее ИД или по ее известному [имени,](../resources/mailfolder.md)если она существует.
 
->**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено известным именем папки `recoverableitemsdeletions` ). Дополнительные сведения см. в статье [Хранение удаленных](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+>**Примечание** Возможно, вам не удастся удалить элементы из папки удаления элементов для восстановления (представленные известным именем `recoverableitemsdeletions` папки). Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статьях "Хранение удаленных элементов" и "Очистка [удаленных](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) элементов".
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

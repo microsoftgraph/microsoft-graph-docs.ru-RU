@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса Кредентиалусажесуммари
-description: Представляет текущее состояние того, сколько пользователей в вашей организации используют возможности самостоятельного сброса пароля.
+title: Тип ресурса credentialUsageSummary
+description: Представляет текущее состояние того, сколько пользователей в организации используют возможности самостоятельного сброса паролей.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 9807e333fd13443462d2d3237150820afd254baa
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 43a17f91a1424d9ac8c0a388ef5404bbadf05189
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523156"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136286"
 ---
-# <a name="credentialusagesummary-resource-type"></a>Тип ресурса Кредентиалусажесуммари
+# <a name="credentialusagesummary-resource-type"></a>Тип ресурса credentialUsageSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние того, сколько пользователей в вашей организации используют возможности самостоятельного сброса пароля.
+Представляет текущее состояние того, сколько пользователей в организации используют возможности самостоятельного сброса паролей.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [жеткредентиалусажесуммари](../api/reportroot-getcredentialusagesummary.md) | кредентиалусажесуммари | Чтение свойств и связей объекта Кредентиалусажесуммари. |
+| [getCredentialUsageSummary](../api/reportroot-getcredentialusagesummary.md) | credentialUsageSummary | Чтение свойств и связей объекта credentialUsageSummary. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| аусмесод | string | Представляет способ проверки подлинности, используемый пользователем. Возможные значения: `email` ,,,, `mobileSMS` `mobileCall` `officePhone` `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode` и  `alternateMobileCall` (поддерживается только для регистрации). |
-| фаилуреактивитикаунт | Int64 | Предоставляет количество неудачных сбросов или регистрационных данных. |
-| состав | string | Определяет компонент для отчета. Возможные значения: `registration` и `reset` . |
-| id | String | Уникальный идентификатор действия. Только для чтения. |
-| сукцессфулактивитикаунт | Int64 | Предоставляет количество успешных регистраций или сбросов. |
+| authMethod | string | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (используется только для самостоятельного сброса `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode`  `alternateMobileCall` (поддерживается только для регистрации). |
+| failureActivityCount | Int64 | Предоставляет количество неудачных сбросов или регистрационных данных. |
+| feature | string | Определяет функцию для отчета. Возможные значения: `registration` и `reset` . |
+| id | Строка | Уникальный идентификатор действия. Только для чтения. |
+| successfulActivityCount | Int64 | Предоставляет количество успешных регистраций или сбросов. |
 
 ## <a name="relationships"></a>Связи
 
