@@ -1,24 +1,24 @@
 ---
-title: Список Екстенсионпропертиес
-description: Получение списка объектов екстенсионпроперти.
+title: List extensionProperties
+description: Получить список объектов extensionproperty.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 90073311ab1f70a5651b0e8e9cd653544442938e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 426c11114a1a5f27dfb329ff63414f0fa3e20fb3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129210"
 ---
-# <a name="list-extensionproperties"></a>Список Екстенсионпропертиес
+# <a name="list-extensionproperties"></a>List extensionProperties
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [екстенсионпроперти](../resources/extensionproperty.md) в приложении.
+Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в приложении.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [екстенсионпроперти](../resources/extensionproperty.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -131,5 +131,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -1,24 +1,24 @@
 ---
-title: Список Провисионингобжектсуммари
-description: Получение всех событий подготовки, произошедших в клиенте.
+title: Список provisioningObjectSummary
+description: Получите все события, которые произошли в клиенте.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 458cdfa3c3575272c11cf879c8db10f8b514e34b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 035cd43487f83cc23f86b3d8b979af5052c708fc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130426"
 ---
-# <a name="list-provisioningobjectsummary"></a>Список Провисионингобжектсуммари
+# <a name="list-provisioningobjectsummary"></a>Список provisioningObjectSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех событий подготовки, произошедших в клиенте, таких как удаление группы в целевом приложении или создание пользователя при подготовке учетных записей пользователей из системы отдела кадров. 
+Получение всех событий, произошедших в клиенте, таких как удаление группы в целевом приложении или создание пользователя при предоставлении учетных записей пользователей из системы управления персоналом. 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48973480"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All |
 
@@ -40,13 +40,13 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Обратите внимание, что все фильтры, кроме состояния, зависят от регистра. 
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Обратите внимание, что все фильтры чувствительны к делу, кроме состояния. 
 
 |Имя     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Фильтрует результаты (строки). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/provisioning?$top=20`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо передать верхний фильтр в запросе. Невозможно указать число результатов, которые необходимо пропустить.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо передать верхний фильтр в запросе. Нельзя указать количество пропускаемого результата.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query_parameters).
 
@@ -54,25 +54,25 @@ GET /auditLogs/provisioning
 
 |Имя атрибута |Поддерживаемые операторы|
 |:----------------|:------|
-|id| EQ содержит|
+|id| eq, contains|
 |activityDateTime| eq|
-|tenantid|EQ содержит|
-|JOBID|EQ содержит|
-|чанжеид|EQ содержит|
-|циклеид|EQ содержит|
-|action|EQ содержит|
-|Статусинфо/Status|EQ содержит|
-|Саурцесистем/displayName|EQ содержит|
-|Таржетсистем/displayName|EQ содержит|
-|Саурцеидентити/Идентититипе|EQ содержит|
-|Таржетидентити/Идентититипе|EQ содержит|
-|Саурцеидентити/ID|EQ содержит|
-|servicePrincipal/ID|eq|
-|servicePrincipal/Name|eq|
-|Таржетидентити/ID|EQ содержит|
-|Саурцеидентити/displayName|EQ содержит|
-|Таржетидентити/displayName|EQ содержит|
-|Инитиатедби/displayName|EQ содержит|
+|tenantid|eq, contains|
+|jobid|eq, contains|
+|changeid|eq, contains|
+|cycleid|eq, contains|
+|action|eq, contains|
+|statusInfo/status|eq, contains|
+|sourceSystem/displayName|eq, contains|
+|targetSystem/displayName|eq, contains|
+|sourceIdentity/identityType|eq, contains|
+|targetIdentity/identityType|eq, contains|
+|sourceIdentity/id|eq, contains|
+|servicePrincipal/id|eq|
+|servicePrincipal/name|eq|
+|targetIdentity/id|eq, contains|
+|sourceIdentity/displayName|eq, contains|
+|targetIdentity/displayName|eq, contains|
+|initiatedBy/displayName|eq, contains|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -86,11 +86,11 @@ GET /auditLogs/provisioning
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [провисионингобжектсуммари](../resources/provisioningobjectsummary.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-successful-request"></a>Пример 1: успешный запрос
+### <a name="example-1-successful-request"></a>Пример 1. Успешный запрос
 
 ### <a name="request"></a>Запрос
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа на успешное выполнение события.
+Ниже приводится пример отклика на успешное событие.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a>Пример 2: ответ на сообщение об ошибке
+### <a name="example-2-error-reponse"></a>Пример 2. Реответ ошибки
 
 ### <a name="request"></a>Запрос
 
@@ -278,7 +278,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа на сообщение о неудачной подготовке.
+Ниже приводится пример отклика на событие сбойной подготовка.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

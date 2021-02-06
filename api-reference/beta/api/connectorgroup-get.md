@@ -1,16 +1,16 @@
 ---
 title: Получение connectorGroup
-description: Получение свойств объекта Коннекторграуп.
+description: Извлечение свойств объекта connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ba4879e4c951f53303a7d4282cd5a2ac328887fc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8052f4aaf16ee16f89141c2715d519360e33dead
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129601"
 ---
 # <a name="get-connectorgroup"></a>Получение connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957433"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [коннекторграуп](../resources/connectorgroup.md).
+Извлечение свойств [connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -113,3 +113,4 @@ Content-length: 119
   "suppressions": []
 }
 -->
+

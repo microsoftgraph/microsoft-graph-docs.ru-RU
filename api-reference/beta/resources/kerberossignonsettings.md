@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Кербероссигнонсеттингс
-description: Представляет параметры Kerberos для локального приложения, опубликованного через прокси приложения.
+title: Тип ресурса kerberosSignOnSettings
+description: Представляет параметры kerberos для локального приложения, опубликованного через прокси приложения.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 366a220dc8979c55c95706830d4e3d36a920c130
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 0220d6d85c7aafe3489e4099a2c6b1837a7439e2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130089"
 ---
-# <a name="kerberossignonsettings-resource-type"></a>Тип ресурса Кербероссигнонсеттингс
+# <a name="kerberossignonsettings-resource-type"></a>Тип ресурса kerberosSignOnSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры ограниченного делегирования Кеберос (ККД) для ресурса [онпремисеспублишингсинглесигнон](onpremisespublishingsinglesignon.md) при публикации локального приложения через прокси-сервер приложения Azure AD. Прокси приложения использует ограниченное делегирование Kerberos (ККД) для поддержки единого входа для встроенных приложений проверки подлинности Windows. Дополнительные сведения см. в статье [ограниченное делегирование Kerberos для единого входа в приложения с помощью прокси-сервера приложения](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+Представляет параметры ограниченного делегирования Keberos (KCD) для ресурса [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md) при публикации локального приложения через прокси приложения Azure AD. Прокси приложения использует ограниченное делегирование Kerberos (KCD) для поддержки единого вход в интегрированные приложения проверки подлинности Windows. Дополнительные сведения см. в сведениях о ограниченном делегирования [Kerberos](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)для единого вход в приложения с помощью прокси приложения.
 
 >[!NOTE]
->Не используйте это свойство для настройки SAML или единого входа на основе пароля. Если настраивается единый вход SAML, необходимо задать параметр [servicePrincipal](serviceprincipal.md).
-Если вы настраиваете одиночный символ на основе пароля, его необходимо задать с помощью [креатепассвордсинглесигнонкредентиалс](../api/serviceprincipal-createpasswordsinglesignoncredentials.md).
+>Не используйте это свойство для настройки samL или единого вход на основе пароля. Если вы настраиваете единый вход SAML, это должно быть установлено в [servicePrincipal.](serviceprincipal.md)
+При настройке единого знака на основе пароля этот код необходимо настроить с помощью [createPasswordSingleSignOnCredentials.](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|кербероссервицепринЦипалнаме|String| Внутреннее имя субъекта-службы приложения сервера приложений. Это имя участника-службы должно быть в списке служб, к которому соединитель может предоставлять делегированные учетные данные. |
-|кербероссигнонмаппингаттрибутетипе|String| Удостоверение делегированного имени входа для соединителя, которое будет использоваться от имени ваших пользователей. Более подробную информацию можно узнать [в статье работа с другими локальными и облачными удостоверениями ](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Возможные значения: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
+|kerberosServicePrincipalName|Строка| Внутреннее spN приложения сервера приложений. Это SPN должно быть в списке служб, которым соединители могут представлять делегированную учетную данные. |
+|kerberosSignOnMappingAttributeType|Строка| Делегированная идентификация для входа в систему, используемая соединитетелем от имени пользователей. Дополнительные сведения см. в работе с различными идентификаторами локальной и [облачной платформы. ](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities) Возможные значения: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Експрессионевалуатиондетаилс
-description: Представляет сведения о выражении, сведения о результатах и свойствах.
+title: Тип ресурса expressionEvaluationDetails
+description: Представляет сведения об выражениях, результатах и свойствах.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f2d14d19bee60581c65d43e81b5ec69acc53df0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01cc4aa4bd6de88541d3886efe54e5da71228448
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026978"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129494"
 ---
-# <a name="expressionevaluationdetails-resource-type"></a>Тип ресурса Експрессионевалуатиондетаилс
+# <a name="expressionevaluationdetails-resource-type"></a>Тип ресурса expressionEvaluationDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения о выражении, сведения о результатах и свойствах.
+Представляет сведения об выражениях, результатах и свойствах.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| выражение | String | Представляет выражение, которое было оценено. |
-| expressionEvaluationDetails | Коллекция Експрессионевалуатиондетаилс | Представляет сведения об оценке выражения. |
-| експрессионресулт | Boolean | Представляет значение результата текущего выражения. |
-| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Определяет имя свойства и значение этого свойства. |
+| выражение | Строка | Представляет выражение, которое было оценено. |
+| expressionEvaluationDetails | Коллекция expressionEvaluationDetails | Представляет сведения об оценке выражения. |
+| expressionResult | Boolean | Представляет значение результата текущего выражения. |
+| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Определяет имя свойства и его значение. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

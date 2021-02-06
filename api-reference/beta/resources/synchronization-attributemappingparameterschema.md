@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Аттрибутемаппингпараметерсчема
-description: Описывает один параметр, используемый в Аттрибутемаппингфунктионсчема.
+title: Тип ресурса attributeMappingParameterSchema
+description: Описывает один параметр, используемый в атрибутеMappingFunctionSchema.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 32710c5411f054ad096bdd293a2f7d46e89a6944
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: c8779211382ffcf7284c5ebf4035be6134efd8bf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128738"
 ---
-# <a name="attributemappingparameterschema-resource-type"></a>Тип ресурса Аттрибутемаппингпараметерсчема
+# <a name="attributemappingparameterschema-resource-type"></a>Тип ресурса attributeMappingParameterSchema
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает один параметр, используемый в [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md).
+Описывает один параметр, используемый в [атрибутеMappingFunctionSchema.](../resources/synchronization-attributemappingfunctionschema.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:-------------------------|:---------------|
-|алловмултиплеоккурренцес    |Boolean                   |Данный параметр может быть указан несколько раз (например, с несколькими входными строками в `Concatenate(string,string,...)` функции). |
+|allowMultipleOccurrences    |Boolean                   |Заданный параметр может быть предоставлен несколько раз (например, несколько строк ввода в `Concatenate(string,string,...)` функции). |
 |name                        |String                    |Имя параметра. |
-|Обязательный                    |Boolean                   |`true` значение, если параметр является обязательным; в противном случае `false` . |
-|type                        |String                    |Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Значение по умолчанию: `String`.|
+|Обязательный                    |Boolean                   |`true` если параметр является требуемой; в противном `false` случае . |
+|type                        |Строка                    |Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Значение по умолчанию: `String`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

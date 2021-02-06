@@ -1,16 +1,16 @@
 ---
 title: Список childFolders
 description: 'Получение коллекции папок в указанной папке. Вы можете использовать короткий путь `.../me/MailFolders` для получения верхнего уровня '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3dd21285fc9437425d1b461957de12976327b0a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2d99b33d3d9ba90b1ad19b204eb93db133c09cf0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979361"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128367"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -28,7 +28,7 @@ ms.locfileid: "48979361"
 |:---------------------------------------|:------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
 | Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
-| Для приложения                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite           |
+| Приложение                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite           |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-mail-folders"></a>Пример 1: список почтовых папок
+### <a name="example-1-list-mail-folders"></a>Пример 1. Список почтовых папок
 
 #### <a name="request"></a>Запрос
 
@@ -146,7 +146,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a>Пример 2: список папок поиска почты
+### <a name="example-2-list-mail-search-folders"></a>Пример 2. Список папок поиска почты
 
 #### <a name="request"></a>Запрос
 

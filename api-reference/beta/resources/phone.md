@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Phone
+title: Тип ресурса phone
 description: Представляет номер телефона.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: 0e87557a3c31ef1fb8f5ebbbdd2ff29b67d8ff8c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c6ee74a588540470ceeffcc37b51e29e7e4f597
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997909"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130882"
 ---
-# <a name="phone-resource-type"></a>Тип ресурса Phone
+# <a name="phone-resource-type"></a>Тип ресурса phone
 
 Пространство имен: microsoft.graph
 
@@ -25,9 +25,9 @@ ms.locfileid: "47997909"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |число|string|Номер телефона.|
-|type|String|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|type|Строка|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

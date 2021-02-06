@@ -1,24 +1,24 @@
 ---
-title: Получение Аппликатионтемплате
-description: Получение свойств и связей объекта аппликатионтемплате.
+title: Получение applicationTemplate
+description: Получение свойств и связей объекта applicationtemplate.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 596ae1ecbf8c3a2fd98272e2f03b413d7841c08f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 07f6f68d3150031963b1beae89d690a95bf503e1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961751"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128970"
 ---
-# <a name="get-applicationtemplate"></a>Получение Аппликатионтемплате
+# <a name="get-applicationtemplate"></a>Получение applicationTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [аппликатионтемплате](../resources/applicationtemplate.md) .
+Получение свойств объекта [applicationTemplate.](../resources/applicationtemplate.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "48961751"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Нет. |
 
-Дополнительные разрешения не являются обязательными для вызова этого API, если ваше приложение имеет действительный маркер доступа для вызова Microsoft Graph.
+Дополнительные разрешения не требуются для вызова этого API, если приложение имеет действительный маркер доступа для вызова Microsoft Graph.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-`$select`С помощью параметра запроса можно указать только те свойства, которые необходимы для достижения максимальной производительности. Свойство **id** возвращается всегда. 
+С помощью параметра запроса можно указать только `$select` свойства, необходимые для лучшей производительности. Свойство **id** возвращается всегда. 
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -58,7 +58,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [аппликатионтемплате](../resources/applicationtemplate.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [requested applicationTemplate](../resources/applicationtemplate.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 Ниже приведен пример отклика.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Показанный здесь объект отклика может быть сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -132,5 +132,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: Список вложений
 description: Получение списка объектов attachment, вложенных в сообщение.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73b6bb66c96d67093f398525ab26b4c0262a8251
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 681c845f25e8bfa92749f5ec2e976b1404490b11
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131210"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-В частности, параметр запроса $expand можно использовать для включения всех вложений в сообщения, встроенных в остальные свойства сообщения. Пример.
+В частности, можно использовать параметр $expand, чтобы включить все вложения в сообщения вместе с остальными свойствами сообщения. Например:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments

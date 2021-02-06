@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Евалуатединамикмембершипресулт
+title: Тип ресурса evaluateDynamicMembershipResult
 description: Представляет результат оценки членства.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d00a2f1a0376c0d631354ea4f05c542dd4d1dcef
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1df07449605f3b1d48c01b1e352100d534fc9b1d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402543"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129508"
 ---
-# <a name="evaluatedynamicmembershipresult-resource-type"></a>Тип ресурса Евалуатединамикмембершипресулт
+# <a name="evaluatedynamicmembershipresult-resource-type"></a>Тип ресурса evaluateDynamicMembershipResult
 
 Пространство имен: microsoft.graph
 
@@ -24,11 +24,11 @@ ms.locfileid: "48402543"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| membershipRule | String | Если указан идентификатор группы, то значение является правилом членства для группы. Если идентификатор группы не указан, то значением является правило членства, предоставленное в качестве параметра. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
-| мембершипруливалуатиондетаилс | [expressionEvaluationDetails](expressionevaluationdetails.md) | Предоставляет подробные анайлсис результатов оценки членства. |
-| мембершипруливалуатионресулт | Логический | Значение, `true` Если пользователь или устройство является участником группы. Значение также может быть `true` указано в том случае, если было предоставлено правило членства, и пользователь или устройство проходят оценку правила; в противном случае — значение `false` . |
+| membershipRule | String | Если предоставлен ИД группы, значением является правило членства для группы. Если ид группы не предоставлен, значением является правило членства, предоставленное в качестве параметра. Дополнительные сведения см. в правилах [динамического членства для групп в Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership) |
+| membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | Предоставляет подробный анализ результатов оценки членства. |
+| membershipRuleEvaluationResult | Boolean | Значением `true` является, если пользователь или устройство входит в группу. Значение также может быть, если предоставлено правило членства и пользователь или устройство проходят оценку правила; в противном `true` случае `false` . |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

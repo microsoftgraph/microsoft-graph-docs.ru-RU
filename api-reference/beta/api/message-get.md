@@ -1,16 +1,16 @@
 ---
 title: Вывод сообщения
 description: Извлечение свойств и связей объекта сообщения.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: edfa35d4606b9933872762d14ab1bd2f36b34526
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 4292b5146ab426accae7d2f331047eeed287d120
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131217"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -22,7 +22,7 @@ ms.locfileid: "49844762"
 
 Например, вы можете получить сообщение и развернуть все [экземпляры](../resources/mention.md) упоминания в сообщении. См. [пример](#example-2-get-all-mentions-in-a-specific-message) ниже.
 
-Вы можете использовать параметр `$value`, чтобы [получить MIME-содержимое сообщения](/graph/outlook-get-mime-message). См. также [пример ниже.](#example-5-get-mime-content)
+Вы можете использовать параметр `$value`, чтобы [получить MIME-содержимое сообщения](/graph/outlook-get-mime-message). Также см. [пример](#example-5-get-mime-content) ниже.
 
 Существует два сценария, когда приложение может получить сообщение из папки почты другого пользователя:
 
@@ -95,7 +95,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 При указании параметра `$value` возвращается содержимое сообщения в формате MIME, а не ресурс **message**.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-get-a-specific-message"></a>Пример 1. Получите определенное сообщение
+### <a name="example-1-get-a-specific-message"></a>Пример 1. Получение определенного сообщения
 #### <a name="request"></a>Запрос
 В первом примере возвращается указанное сообщение. В нем не указывается заголовка для указания нужного формата возвращаемого тела.
 
@@ -288,7 +288,7 @@ Content-length: 2248
 }
 ```
 
-### <a name="example-3-get-message-body-in-text-format"></a>Пример 3. Как получить текст сообщения в текстовом формате
+### <a name="example-3-get-message-body-in-text-format"></a>Пример 3. Получение текста сообщения в текстовом формате
 #### <a name="request"></a>Запрос
 
 В третьем примере показано, как использовать заголовок `Prefer: outlook.body-content-type="text"`, чтобы получить свойства **body** и **uniqueBody** указанного сообщения в текстовом формате.

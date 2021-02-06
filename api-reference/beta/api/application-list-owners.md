@@ -3,14 +3,14 @@ title: Список владельцев
 description: Получение списка владельцев (объектов directoryObject) для приложения.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dc5554c4ed94b47a0961bcb715d3d02546a4b18c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 29b90fba024d97ceecfd4fe72f37a72de6f7fb8a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962121"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129214"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -18,7 +18,7 @@ ms.locfileid: "48962121"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка владельцев для приложения, которое является [directoryObject](../resources/directoryobject.md) объектами.
+Получение списка владельцев приложения, которое является [объектами directoryObject.](../resources/directoryobject.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -115,3 +115,4 @@ Content-length: 55
   ]
 }
 -->
+

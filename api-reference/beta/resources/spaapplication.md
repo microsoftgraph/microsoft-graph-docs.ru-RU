@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Спааппликатион
-description: Задает параметры для одностраничного приложения.
+title: Тип ресурса spaApplication
+description: Указывает параметры для одно страниц приложения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: hamiltonha
-ms.openlocfilehash: dd5e2c6419acd66cb482f2ccff2914b1bf0245dc
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: a05d2eb997212b3baf88b84e21468475a45a691c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031950"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128829"
 ---
-# <a name="spaapplication-resource-type"></a>Тип ресурса Спааппликатион
+# <a name="spaapplication-resource-type"></a>Тип ресурса spaApplication
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задает параметры для одностраничного приложения.
+Указывает параметры для одно страниц приложения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| редиректурис | Коллекция строк | Задает URL-адреса, по которым маркеры пользователей отправляются для входа, или URI перенаправления, для которых отправляются коды авторизации OAuth 2,0 и маркеры доступа. |
+| redirectUris | Коллекция объектов string | Указывает URL-адреса, в которые отправляются маркеры пользователей для входов, или URIS перенаправления, в которые отправляются коды авторизации OAuth 2.0 и маркеры доступа. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 
 <!-- {

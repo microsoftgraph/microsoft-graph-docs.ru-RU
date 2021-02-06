@@ -1,16 +1,16 @@
 ---
 title: Получение соединителя
-description: Получение свойств объекта Connector.
+description: Извлечение свойств объекта соединители.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6a485fed0d4ecc3c13bf7cf40ad6a26a5486c15e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 84d3d5d3b2ae8375304844e5d88315896722d110
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957540"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130096"
 ---
 # <a name="get-connector"></a>Получение соединителя
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957540"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Connector](../resources/connector.md) .
+Извлечение свойств и [](../resources/connector.md) связей объекта соединители.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,14 +41,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Connector](../resources/connector.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` соединители [](../resources/connector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -114,3 +114,4 @@ Content-length: 124
   "suppressions": []
 }
 -->
+

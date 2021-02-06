@@ -1,16 +1,16 @@
 ---
 title: Перечисление connectorGroups
-description: Получение списка объектов коннекторграуп.
+description: Получить список объектов connectorgroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 53918f700233c130a4b195eb4bc604901c3560a9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d8ad142840abba411fb6f2c3b9f0f49c55acd56
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957365"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130103"
 ---
 # <a name="list-connectorgroups"></a>Перечисление connectorGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957365"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [коннекторграуп](../resources/connectorgroup.md) .
+Получить список объектов [connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,14 +41,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -120,3 +120,4 @@ Content-length: 164
   "suppressions": []
 }
 -->
+

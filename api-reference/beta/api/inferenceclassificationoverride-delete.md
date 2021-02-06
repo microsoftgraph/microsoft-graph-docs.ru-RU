@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта inferenceClassificationOverride
-description: Удаление отсортированного переопределения папки "Входящие", указанного с помощью идентификатора.
+description: Удаление переопределения "Отсвеченной почты", указанного по его ИД.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 117a5ce205f7c615300cbe42f1607af03c9ce2af
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 05d6f669faec8f701948546707d3aa7187af4a20
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953039"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130685"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Удаление объекта inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953039"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [отсортированного переопределения папки "Входящие"](../resources/manage-focused-inbox.md) , указанного с помощью идентификатора.
+Удаление [переопределения](../resources/manage-focused-inbox.md) "Отсвеченной почты", указанного по его ИД.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

@@ -1,24 +1,24 @@
 ---
-title: Создание Публишедресаурце
-description: Создание нового объекта **публишедресаурце** .
+title: Создание publishedResource
+description: Создание объекта **publishedResource.**
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5385959f1018d53614b2e5aee42d9293cf9108be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2b87c40556cb7612e6c354ddb8e5815fb4d08760
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130391"
 ---
-# <a name="create-publishedresource"></a>Создание Публишедресаурце
+# <a name="create-publishedresource"></a>Создание publishedResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [публишедресаурце](../resources/publishedresource.md) .
+Создание объекта [publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,18 +46,18 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [публишедресаурце](../resources/publishedresource.md) в формате JSON.
+В теле запроса укажу представление объекта [publishedResource](../resources/publishedresource.md) в JSON.
 
-Укажите значения для следующих свойств.
+Укавите значения для следующих свойств.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображаемое имя Публишедресаурце.|
-|resourceName|String|Имя Публишедресаурце.|
+|displayName|Строка|Отображаемого имени publishedResource.|
+|resourceName|String|Имя publishedResource.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [публишедресаурце](../resources/publishedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект publishedResource](../resources/publishedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -131,5 +131,6 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

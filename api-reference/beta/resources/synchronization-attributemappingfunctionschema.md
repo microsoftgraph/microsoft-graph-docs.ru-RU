@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса Аттрибутемаппингфунктионсчема
-description: Описывает функцию, которая может использоваться в сопоставлении атрибутов для преобразования значений во время синхронизации.
+title: Тип ресурса attributeMappingFunctionSchema
+description: Описывает функцию, которую можно использовать в сопоставлении атрибутов для преобразования значений во время синхронизации.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b655d9cfac5835f6887c54c5a6bcbf79887d586
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: a62d2d635504208fc8266e98add66a8503e3e4d2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128745"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a>Тип ресурса Аттрибутемаппингфунктионсчема
+# <a name="attributemappingfunctionschema-resource-type"></a>Тип ресурса attributeMappingFunctionSchema
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает функцию, которая может использоваться в [сопоставлении атрибутов](synchronization-attributemapping.md) для преобразования значений во время синхронизации.
+Описывает функцию, которую можно использовать в сопоставлении [атрибутов](synchronization-attributemapping.md) для преобразования значений во время синхронизации.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список](../api/synchronization-synchronizationschema-functions.md) | Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)|Список поддерживаемых функций сопоставления атрибутов.|
+|[Список](../api/synchronization-synchronizationschema-functions.md) | [Коллекция attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)|Список поддерживаемых функций сопоставления атрибутов.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:-------------------------|:---------------|
 |name                        |String                    |Имя оператора. |
-|parameters                  |Коллекция [аттрибутемаппингпараметерсчема](../resources/synchronization-attributemappingparameterschema.md)  |Коллекция параметров функции.|
+|parameters                  |[Коллекция attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Коллекция параметров функций.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

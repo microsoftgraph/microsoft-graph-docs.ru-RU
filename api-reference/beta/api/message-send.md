@@ -2,15 +2,15 @@
 title: 'message: send'
 description: Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 60441163dacebe8ca5b15e0571100c4b87f50ef7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 96ea8ccf3f44edb8c5b75b3e955d2381aa339d84
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976489"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131112"
 ---
 # <a name="message-send"></a>message: send
 

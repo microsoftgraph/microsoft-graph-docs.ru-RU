@@ -1,24 +1,24 @@
 ---
-title: Создание Екстенсионпроперти
-description: Создание нового Екстенсионпроперти.
+title: Создание extensionProperty
+description: Создайте новый extensionProperty.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 823f2281a528346124cea997bfaeb90a3b4d7bb6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e1266797975a3c516bff86c453cde74ea73767f1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129102"
 ---
-# <a name="create-extensionproperty"></a>Создание Екстенсионпроперти
+# <a name="create-extensionproperty"></a>Создание extensionProperty
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новое определение [екстенсионпроперти](../resources/extensionproperty.md) . Эту операцию можно использовать для добавления настраиваемого значения свойства в целевой тип объекта, определенный в Екстенсионпроперти, с помощью стандартных запросов на создание и обновление целевого объекта.
+Создайте новое [определение extensionProperty.](../resources/extensionproperty.md) Эту операцию можно использовать для добавления значения настраиваемого свойства к целевому типу объекта, определенному в extensionProperty, с помощью стандартных запросов на создание и обновление целевого объекта.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,19 +46,19 @@ POST /applications/{id}/extensionProperties
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите объект [екстенсионпроперти](../resources/extensionproperty.md) со следующими свойствами.
+В теле запроса [укажите объект extensionProperty](../resources/extensionproperty.md) следующими свойствами.
 
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|dataType|String| Задает тип данных значения, которое может содержать свойство Extension. Поддерживаются следующие значения: Значение null не допускается. <ul><li>`Binary` – 256 байт (максимум)</li><li>`Boolean`</li><li>`DateTime` -Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` — значение 32 — бит.</li><li>`LargeInteger` — значение 64 — бит.</li><li>`String` – 256 символов максимум</li></ul>|
+|dataType|String| Указывает тип данных значения, в который может вметь свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` - Не более 256байт</li><li>`Boolean`</li><li>`DateTime` - Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` - 32-битное значение.</li><li>`LargeInteger` - 64-битное значение.</li><li>`String` — не более 256 символов</li></ul>|
 |name|String| Имя свойства расширения. Значение null не допускается. |
-|таржетобжектс|Коллекция строк| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|Коллекция объектов string| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [екстенсионпроперти](../resources/extensionproperty.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `201, Created` [объект extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [екстенсионпроперти](../resources/extensionProperty.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [extensionProperty](../resources/extensionProperty.md) в тексте отклика.
 
 <!-- {
   "blockType": "response",
@@ -139,5 +139,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

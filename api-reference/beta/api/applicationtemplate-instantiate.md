@@ -1,24 +1,24 @@
 ---
-title: 'Аппликатионтемплате: создание экземпляра'
-description: Используйте этот API для создания нового Аппликатионтемплате
+title: 'applicationTemplate: instantiate'
+description: Использование этого API для создания нового шаблона applicationTemplate
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 51083a8f3e0cc1675b6a7ea211fae7421d38b247
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 22ac7a5cb179f5675e6222d6886b54211e4d1f93
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128953"
 ---
-# <a name="applicationtemplate-instantiate"></a>Аппликатионтемплате: создание экземпляра
+# <a name="applicationtemplate-instantiate"></a>applicationTemplate: instantiate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте экземпляр приложения из коллекции приложений Azure AD в ваш каталог.
+Добавьте экземпляр приложения из коллекции приложений Azure AD в каталог.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48961744"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,11 +50,11 @@ POST /applicationTemplates/{id}/instantiate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Настраиваемое имя приложения|
+|displayName|Строка|Пользовательское имя приложения|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 OK` код отклика и новый объект [аппликатионсервицепринЦипал](../resources/applicationserviceprincipal.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `201 OK` [applicationServicePrincipal](../resources/applicationserviceprincipal.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -65,7 +65,7 @@ POST /applicationTemplates/{id}/instantiate
 Ниже приведен пример запроса.
 
 > [!NOTE] 
-> Вы можете использовать этот API для создания экземпляров [приложений, не относящихся к коллекции](/azure/active-directory/manage-apps/add-non-gallery-app). Используйте следующий идентификатор для **аппликатионтемплате** : `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+> Этот API можно использовать для запуска [нестандартных приложений.](/azure/active-directory/manage-apps/add-non-gallery-app) Используйте следующий ИД для **applicationTemplate:** `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -105,7 +105,7 @@ Content-type: application/json
 Ниже приведен пример отклика.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Показанный здесь объект ответа может быть сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -176,3 +176,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

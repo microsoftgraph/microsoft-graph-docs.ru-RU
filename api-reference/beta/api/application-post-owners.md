@@ -1,16 +1,16 @@
 ---
 title: Добавление владельца
-description: Используйте этот API, чтобы добавить владельца в приложение.
+description: Этот API используется для добавления владельца в приложение.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3fb633630814c7771888848684926cfdaa3715f7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ee3483bec89eef7651ce415fb9506e27b400b60f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129095"
 ---
 # <a name="add-owner"></a>Добавление владельца
 
@@ -18,16 +18,16 @@ ms.locfileid: "48961951"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы добавить владельца в приложение путем публикации в коллекции Owners.
+Этот API используется для добавления владельца в приложение путем добавления в коллекцию владельцев.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /applications/{id}/owners/$ref
 | Авторизация | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.
+В теле запроса укавите идентификатор объекта каталога, который должен быть назначен владельцем.
 
 ## <a name="response"></a>Отклик
 
@@ -112,5 +112,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

@@ -1,31 +1,31 @@
 ---
-title: Получение Аппликатионсигниндетаиледсуммари
-description: Получение свойств и связей объекта Аппликатионсигниндетаилсуммари.
+title: Получение applicationSignInDetailedSummary
+description: Получение свойств и связей объекта applicationSignInDetailSummary.
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3ae9990b2008e091ca5c821adf360cf8c552fd6d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 17f4a087d548ae06b69430c3ca442ead5ac38625
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128990"
 ---
-# <a name="get-applicationsignindetailedsummary"></a>Получение Аппликатионсигниндетаиледсуммари
+# <a name="get-applicationsignindetailedsummary"></a>Получение applicationSignInDetailedSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [аппликатионсигниндетаилсуммари](../resources/applicationsignindetailedsummary.md) .
+Получение свойств и связей объекта [applicationSignInDetailSummary.](../resources/applicationsignindetailedsummary.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Report. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | Report.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -49,7 +49,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аппликатионсигниндетаиледсуммари](../resources/applicationsignindetailedsummary.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

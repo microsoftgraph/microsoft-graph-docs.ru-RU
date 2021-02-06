@@ -1,16 +1,16 @@
 ---
 title: 'synchronization: acquireAccessToken'
-description: Получение маркера доступа OAuth для авторизации службы подготовка Azure AD для предоставления пользователей в приложении
+description: Получение маркера доступа OAuth для авторизации службы предоставления Azure AD для предоставления пользователям доступа к приложению
 author: ArvindHarinder1
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bef2b75abb8e985be6d9ef7742a8baeb86fd5e7f
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: da06e05145949a4001600bae87d2322a532544f0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873544"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128248"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Пространство имен: microsoft.graph
@@ -43,7 +43,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.

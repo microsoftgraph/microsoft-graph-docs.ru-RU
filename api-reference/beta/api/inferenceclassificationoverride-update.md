@@ -1,16 +1,16 @@
 ---
 title: Обновление inferenceClassificationOverride
-description: 'Измените значение поля **classifyAs** для параметра отсортированное переопределение, как указано. '
+description: 'Измените **поле classifyAs** переопределения focused inbox, как указано. '
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 8fd92198bdbcae3d1f9d48bf442bf252b73d1f8b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9195466b1ea09b9b0dde4c00a057d95548184edf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130328"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Обновление inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953011"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Измените значение поля **classifyAs** для параметра [отсортированное](../resources/manage-focused-inbox.md) переопределение, как указано.
+Измените **поле classifyAs** переопределения [focused inbox,](../resources/manage-focused-inbox.md) как указано.
 
 Вы не можете использовать операцию PATCH, чтобы менять поля в экземпляре [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).
 

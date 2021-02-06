@@ -1,16 +1,16 @@
 ---
 title: Добавление соединителя для connectorGroup
-description: Используйте этот API, чтобы добавить соединитель в Коннекторграуп.
+description: Этот API используется для добавления соединителю в connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7a64d86563456f0d5fb9152715d88657a11d6016
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94b4f17dce85108d853cb0d3c21a4f9fc7bf573d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957310"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129809"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957310"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [соединителя](../resources/connector.md) в [коннекторграуп](../resources/connectorgroup.md).
+Добавление [соединителю](../resources/connector.md) в [connectorGroup.](../resources/connectorgroup.md)
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,15 +37,15 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный параметр.|
+| Авторизация  | Bearer. Обязательный параметр.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление ссылки на объект [Connector](../resources/connector.md) в формате JSON.
+В теле запроса укажете В JSON ссылку на объект [соединители.](../resources/connector.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Connector](../resources/connector.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` соединители [](../resources/connector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -107,5 +107,6 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
 
 

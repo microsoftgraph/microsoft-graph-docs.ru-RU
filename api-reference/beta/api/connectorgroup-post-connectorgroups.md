@@ -1,16 +1,16 @@
 ---
 title: Создание connectorGroup
-description: Используйте этот API для создания нового Коннекторграуп.
+description: Используйте этот API для создания соединителиGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 379a4e14d31720a650d05115705d38167edea554
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 07adf13a703868eb1ec77bf67325d6a8eef45ebf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129984"
 ---
 # <a name="create-connectorgroup"></a>Создание connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957344"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [коннекторграуп](../resources/connectorgroup.md).
+Создание [соединителиГруппы.](../resources/connectorgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,14 +38,14 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. рекуриед|
+| Авторизация  | Bearer. Requried|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект connectorGroup](../resources/connectorgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -84,7 +84,7 @@ Content-length: 99
 
 ---
 
-В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -118,5 +118,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

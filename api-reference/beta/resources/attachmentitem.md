@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Аттачментитем
-description: Представляет атрибуты элемента, который необходимо присоединить.
+title: Тип ресурса attachmentItem
+description: Представляет атрибуты вложенного элемента.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 14213afcaf555b21816a3b3ccf2481c1555c4b90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a469ff035b63c16b422a23d4ffad91dbc361157f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040180"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130292"
 ---
-# <a name="attachmentitem-resource-type"></a>Тип ресурса Аттачментитем
+# <a name="attachmentitem-resource-type"></a>Тип ресурса attachmentItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет атрибуты элемента, который необходимо присоединить.
+Представляет атрибуты вложенного элемента.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|attachmentType|String| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
-|contentType|String|Характер данных во вложении. Необязательный.|
-|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательный.|
-|name|String|Отображаемое имя вложения. Это может быть строка с описанием и не обязательно должно быть фактическим именем файла. Обязательный.|
+|attachmentType|Строка| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
+|contentType|String|Характер данных во вложении. Необязательный параметр.|
+|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательный параметр.|
+|name|String|Отображаемое имя вложения. Это может быть описательная строка, которая не должна быть фактическим именем файла. Обязательный элемент.|
 |size|Int64|Размер вложения в байтах. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON

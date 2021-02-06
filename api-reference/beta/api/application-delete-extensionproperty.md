@@ -1,24 +1,24 @@
 ---
-title: Удаление Екстенсионпроперти
-description: Удаление Екстенсионпроперти.
+title: Удаление extensionProperty
+description: Удаление extensionProperty.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3a37d08e7a49ed152e6716a2626f93398799444a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ce1b58d22d58a261f1725bd304be01e5e27478ae
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129291"
 ---
-# <a name="delete-extensionproperty"></a>Удаление Екстенсионпроперти
+# <a name="delete-extensionproperty"></a>Удаление extensionProperty
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [екстенсионпроперти](../resources/extensionproperty.md).
+Удаление [extensionProperty](../resources/extensionproperty.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -108,5 +108,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

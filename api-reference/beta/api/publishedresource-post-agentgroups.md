@@ -1,24 +1,24 @@
 ---
-title: Назначение Публишедресаурце для Онпремисесажентграуп
-description: Назначьте объект **публишедресаурце** объекту **онпремисесажентграуп** .
+title: Назначение publishedResource onPremisesAgentGroup
+description: '**Назначьте объект publishedResource** **объекту onPremisesAgentGroup.**'
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6654f4e9b9c67d8fd6b9df58b9a1dfd91a79076c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e30689074c566511e638db484e7b29db6f9373e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999176"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130678"
 ---
-# <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Назначение Публишедресаурце для Онпремисесажентграуп
+# <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Назначение publishedResource onPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначьте объект [публишедресаурце](../resources/publishedresource.md) объекту [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
+[Назначьте объект publishedResource](../resources/publishedresource.md) [объекту onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,15 +42,15 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/ag
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в формате JSON.
+В теле запроса предоставляем представление объекта [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [публишедресаурце](../resources/publishedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [publishedResource](../resources/publishedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,5 +97,6 @@ HTTP/1.1 204
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

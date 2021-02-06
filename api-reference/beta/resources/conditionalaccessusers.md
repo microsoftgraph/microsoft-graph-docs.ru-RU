@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Кондитионалакцессусерс
+title: Тип ресурса conditionalAccessUsers
 description: Представляет пользователей, группы и роли, включенные в область политики и исключенные из нее.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d1294551fd568b9f41072d3707d64a88d4b04edc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6214c3daacf580aaffa01a93be2b2c785c03f4fd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128584"
 ---
-# <a name="conditionalaccessusers-resource-type"></a>Тип ресурса Кондитионалакцессусерс
+# <a name="conditionalaccessusers-resource-type"></a>Тип ресурса conditionalAccessUsers
 
 Пространство имен: microsoft.graph
 
@@ -24,12 +24,12 @@ ms.locfileid: "47994241"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклудеусерс | Коллекция String | Идентификаторы пользователей в области применения политики, если явно не исключены, или или `None` `All` `GuestsOrExternalUsers` . |
-| ексклудеусерс | Коллекция String | Идентификаторы пользователей, исключенные из области применения политики и/или `GuestsOrExternalUsers` . |
-| инклудеграупс | Коллекция String | Идентификаторы групп в области политики, если явно не исключены, или `All` . |
-| ексклудеграупс | Коллекция String | Идентификаторы групп, исключенные из области применения политики. |
-| инклудеролес | Коллекция String | Идентификаторы ролей в области применения политики, если они явно не исключены, или `All` . |
-| ексклудеролес | Коллекция String | Идентификаторы ролей, исключенные из области применения политики. |
+| includeUsers | Коллекция объектов string | User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers` . |
+| excludeUsers | Коллекция объектов string | User IDs excluded from scope of policy and/or `GuestsOrExternalUsers` . |
+| includeGroups | Коллекция объектов string | Групповые ИД в области политики, если явно не исключены, или `All` . |
+| excludeGroups | Коллекция объектов string | ИД группы, исключенные из области действия политики. |
+| includeRoles | Коллекция объектов string | ИД ролей в области политики, если явно не исключено, или `All` . |
+| excludeRoles | Коллекция объектов string | ИД ролей, исключенные из области действия политики. |
 
 ## <a name="relationships"></a>Связи
 

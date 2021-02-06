@@ -1,16 +1,16 @@
 ---
 title: Добавление вложения
 description: 'С помощью этого API можно добавить вложение к сообщению. '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f8ea0fe40853a9e2caf189d04539c3be4627c578
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 61776660883cdcf9ea8d6122e2e84c5b63505935
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967475"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131182"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -28,11 +28,11 @@ ms.locfileid: "48967475"
 
 Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md). 
 
-Вложение можно добавить к существующему [сообщению](../resources/message.md) , добавив его в коллекцию вложений или в новое сообщение, которое будет [черновиком](../api/user-post-messages.md)или [создано и отправлено на ходу](../api/user-sendmail.md).
+Вы можете добавить вложение [](../resources/message.md) к существующему сообщению, опубликовав его в [](../api/user-post-messages.md)коллекции вложений или к новому сообщению, которое создается или создается и отправляется во [время их создания.](../api/user-sendmail.md)
 
->**Примечание**. Эта операция ограничит размер вложения, которое можно добавить в разделе 3 МБ.
+>**Примечание.** Эта операция ограничивает размер вложения, который можно добавить, до 3 МБ.
 >
-> Однако при присоединении к сообщению файла, который находится в диапазоне от 3 МБ и 150MB, вы можете [создать сеанс отправки](attachment-createuploadsession.md) и итеративно отправлять диапазоны файлов, чтобы присоединить их. В этом примере показано, как [прикрепить большие файлы к сообщениям Outlook](/graph/outlook-large-attachments) .
+> Однако при вложении в сообщение файла размером от 3 МБ до [](attachment-createuploadsession.md) 150 МБ можно создать сеанс отправки и итеративно отправить диапазоны файла для его вложения. См. [пример вложенных больших файлов в](/graph/outlook-large-attachments) сообщения Outlook.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -70,7 +70,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [вложения](../resources/attachment.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` объект [Attachment](../resources/attachment.md) в тексте отклика.
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)
 
@@ -204,7 +204,7 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>Пример (вложенная ссылка)
 
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса, который добавляет к существующему сообщению ссылку с вложением.
+Ниже приводится пример запроса, который добавляет вложение ссылки к существующему сообщению.
 Вложение указывает на папку в OneDrive.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -248,7 +248,7 @@ Content-length: 319
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример полного ответа.
+Вот пример полного ответа.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_message",

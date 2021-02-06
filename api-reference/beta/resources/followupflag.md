@@ -4,13 +4,13 @@ description: Позволяет установить отметку для по�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 3cb79565dae93561b38efd6a8afa977359484cad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 4d075b36cf06db3d4c470ece46229c05c44949af
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033855"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129459"
 ---
 # <a name="followupflag-resource-type"></a>Тип ресурса followupFlag
 
@@ -24,11 +24,11 @@ ms.locfileid: "48033855"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время, когда выполнение было завершено.|
-|dueDateTime|**dateTimeTimeZone**|Дата и время выполнения дальнейших действий. **Примечание**. чтобы задать дату выполнения, необходимо также указать значение, в `startDateTime` противном случае будет получен `400 Bad Request` отклик.|
+|dueDateTime|**dateTimeTimeZone**|Дата и время завершения последующего действия. **Примечание.** Чтобы задать дату окончания, необходимо также указать; в противном случае вы `startDateTime` получите `400 Bad Request` ответ.|
 |flagStatus|String|Состояние выполнения для элемента. Возможные значения: `notFlagged`, `complete` и `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Дата и время, когда следует начать выполнение.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

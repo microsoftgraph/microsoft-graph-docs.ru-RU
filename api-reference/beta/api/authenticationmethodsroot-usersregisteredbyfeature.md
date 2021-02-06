@@ -3,14 +3,14 @@ title: 'authenticationMethodsRoot: usersRegisteredByFeature'
 description: Получите количество пользователей, способных выполнять многофакторную проверку подлинности, самостоятельный сброс паролей и проверку подлинности без пароля.
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a70832426dfc9b6fbadddd070d3531d52d515583
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: c6f0976e364e2cf4b24883bef10e7f3c6e49480f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129672"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot: usersRegisteredByFeature
 Пространство имен: microsoft.graph
@@ -66,7 +66,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 * Администратор пользователей
 * Администратор проверки подлинности
 
-Значение включает `admin` все роли администратора Azure AD. 
+Это значение `admin` включает все роли администратора Azure AD. 
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|

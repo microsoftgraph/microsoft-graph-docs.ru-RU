@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Персистентбровсерсессионконтрол
-description: Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie.
+title: Тип ресурса persistentBrowserSessionControl
+description: Управление сеансом для определения того, следует ли сохранять файлы cookie.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d8924c442cc4795c5f7e51d26826ad6ee2b7f0f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a4870720f02c0b88299ebfa7337ce9725fbcb220
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130889"
 ---
-# <a name="persistentbrowsersessioncontrol-resource-type"></a>Тип ресурса Персистентбровсерсессионконтрол
+# <a name="persistentbrowsersessioncontrol-resource-type"></a>Тип ресурса persistentBrowserSessionControl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie. Наследуется от [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
+Управление сеансом для определения того, следует ли сохранять файлы cookie. Наследуется от [контроля сеанса условного доступа.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
+|isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
 |mode|String| Возможные значения: `always`, `never`.|
 
 ## <a name="relationships"></a>Связи

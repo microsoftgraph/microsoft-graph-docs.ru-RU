@@ -1,24 +1,24 @@
 ---
-title: 'Директоридефинитион: обнаружение'
-description: 'Ознакомьтесь с последним определением схемы для подготовки к работе с приложением. '
+title: 'directoryDefinition: обнаружение'
+description: 'Обнаружение последнего определения схемы для предоставления приложения. '
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e5699bb3586ca737809aa43c7227324eb922273c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8b277d35e1cc83d5a52457cb07ddfe7129eb4cc8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963166"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130951"
 ---
-# <a name="directorydefinition-discover"></a>Директоридефинитион: обнаружение
+# <a name="directorydefinition-discover"></a>directoryDefinition: обнаружение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с последним определением схемы для подготовки к работе с приложением. 
+Обнаружение последнего определения схемы для предоставления приложения. 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` ответ с объектом [директоридефинитион](../resources/synchronization-directorydefinition.md) .
+В случае успеха этот метод возвращает ответ `200 OK` с [объектом directoryDefinition.](../resources/synchronization-directorydefinition.md)
 
 ## <a name="example"></a>Пример
 

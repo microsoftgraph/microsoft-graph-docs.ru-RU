@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Екстенсионпроперти
+title: Тип ресурса extensionProperty
 description: Представляет расширение каталога
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c3cb41c8207027655971da9bd628b3e5407721ae
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f71ec6da3013b6d0bda0edec8d6a47b30de84546
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129480"
 ---
-# <a name="extensionproperty-resource-type"></a>Тип ресурса Екстенсионпроперти
+# <a name="extensionproperty-resource-type"></a>Тип ресурса extensionProperty
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет расширение каталога, которое можно использовать для добавления настраиваемого свойства к объектам каталога без использования внешнего хранилища данных. Например, если в Организации есть бизнес-приложение, для которого требуется идентификатор Skype для каждого пользователя в каталоге, Microsoft Graph можно использовать для регистрации нового свойства с именем Скипеид в объекте пользователя каталога, а затем для записи значения в новое свойство для определенного пользователя.
+Представляет расширение каталога, которое можно использовать для добавления настраиваемой свойства в объекты каталогов без необходимости хранения внешних данных. Например, если в организации есть бизнес-приложение, для которого требуется ИД Skype для каждого пользователя в каталоге, Microsoft Graph можно использовать для регистрации нового свойства skypeId в объекте User каталога, а затем записи значения в новое свойство для определенного пользователя.
 
-Расширения можно добавлять в ресурсы " [пользователь](user.md)", " [Группа](group.md)", " [Организация](organization.md)", " [устройство](device.md)" и "ресурсы [приложения](application.md) ".
+Расширения можно добавлять в ресурсы [пользователей,](user.md) [групп,](group.md) [организаций,](organization.md) [устройств,](device.md) [приложений.](application.md)
 
 > [!IMPORTANT]
-> Расширения схемы Azure AD, описанные в этой статье, доступны только в целях обеспечения обратной совместимости в Microsoft Graph.
-> Он позволяет использовать Microsoft Graph, чтобы продолжить управление свойствами расширения, добавленными через Azure AD Graph или [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
-> Для новых настраиваемых расширений рекомендуется использовать расширения схемы Microsoft Graph для [добавления пользовательских данных в ресурсы](/graph/extensibility-overview).
+> Описанные здесь расширения схемы Azure AD доступны в Microsoft Graph только из соображений обратной совместимости.
+> Это позволяет использовать Microsoft Graph для управления свойствами расширений, добавленными через Azure AD Graph или [Azure AD Connect.](/azure/active-directory/hybrid/whatis-azure-ad-connect)
+> Для новых пользовательских расширений рекомендуется использовать расширения схемы Microsoft Graph для добавления пользовательских [данных в ресурсы.](/graph/extensibility-overview)
 
 ## <a name="methods"></a>Методы
 
@@ -39,11 +39,11 @@ ms.locfileid: "48404758"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appDisplayName|String| Отображаемое имя объекта приложения, для которого определено это свойство расширения. Только для чтения. |
-|dataType|String| Задает тип данных значения, которое может содержать свойство Extension. Поддерживаются следующие значения: Значение null не допускается. <ul><li>`Binary` – 256 байт (максимум)</li><li>`Boolean`</li><li>`DateTime` -Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` — значение 32 — бит.</li><li>`LargeInteger` — значение 64 — бит.</li><li>`String` – 256 символов максимум</li></ul>|
-|иссинцедфромонпремисес|Логический| Указывает, было ли это свойство расширения сикнед из локального каталога с помощью Azure AD Connect. Только для чтения. |
+|appDisplayName|String| Отображает имя объекта приложения, в котором определено это свойство расширения. Только для чтения. |
+|dataType|String| Указывает тип данных значения, который может быть в свойстве расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` - Не более 256байт</li><li>`Boolean`</li><li>`DateTime` - Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` - 32-битное значение.</li><li>`LargeInteger` - 64-битное значение.</li><li>`String` — не более 256 символов</li></ul>|
+|isSyncedFromOnPremises|Boolean| Указывает, было ли это свойство расширения sycned из каталога onpremises с помощью Azure AD Connect. Только для чтения. |
 |name|String| Имя свойства расширения. Значение null не допускается. |
-|таржетобжектс|Коллекция объектов string| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|Коллекция объектов string| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Связи
 

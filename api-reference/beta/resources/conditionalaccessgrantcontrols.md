@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Кондитионалакцессгрантконтролс
-description: Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.
+title: Тип ресурса conditionalAccessGrantControls
+description: Представляет элементы управления предоставлением, которые должны быть выполнены для прохода политики.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2bcb150239e6e6a8487caa3f49f7704fbd2550a8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d8717c1ca8fcd9113b8aeacb5a4a1cefce8df8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994283"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130475"
 ---
-# <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
+# <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса conditionalAccessGrantControls
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.
+Представляет элементы управления предоставлением, которые должны быть выполнены для прохода политики.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
-| буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `block` ,,,,, `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` , `passwordChange` . |
-| кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Дополнительные сведения о настраиваемых элементах управления: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
-| термсофусе | Коллекция String | Список [условий использования](agreement.md) идентификаторов, необходимых для политики. |
+| operator | Строка | Определяет отношение элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
+| builtInControls | Коллекция объектов string | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `block` , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` . `passwordChange` |
+| customAuthenticationFactors | Коллекция объектов string | Список пользовательских ИД элементов управления, необходимых для политики. Узнайте больше о настраиваемом элементе управления здесь: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| termsOfUse | Коллекция объектов string | Список [условий использования,](agreement.md) необходимых для политики. |
 
-### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Особые рекомендации по использованию `passwordChange` в качестве элемента управления
+### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Особые соображения при использовании `passwordChange` в качестве управления
 
-При использовании `passwordChange` элемента управления учитывайте следующее: 
+При использовании этого управления учитывайте `passwordChange` следующее: 
 
-- `passwordChange` должен сопровождаться `mfa` `AND` оператором. Это сочетание гарантирует, что пароль будет обновлен безопасным способом.
-- `passwordChange` должен использоваться в политике, содержащей `userRiskLevels` . Это предназначено для сценариев, в которых пользователям необходимо использовать пароль для безопасного изменения, чтобы сбросить риск для пользователя.
-- Политика должна целевить `all` приложения и не исключать какие бы то ни было приложения.
+- `passwordChange` должен сопровождаться `mfa` с помощью `AND` оператора. Это сочетание гарантирует безопасное обновление пароля.
+- `passwordChange` должен использоваться в политике, содержащей `userRiskLevels` . Это позволяет пользователям использовать безопасный пароль для сброса рисков пользователей.
+- Политика должна быть нацелена `all` на приложения и не исключать их.
 - Политика не может содержать другие условия.
 
 ## <a name="relationships"></a>Связи

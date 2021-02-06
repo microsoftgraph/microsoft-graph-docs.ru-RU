@@ -1,24 +1,24 @@
 ---
-title: Удаление Синчронизатионжоб
-description: Остановите задание синхронизации и окончательно удалите все связанные с ним состояния.
+title: Удаление synchronizationJob
+description: Остановите задание синхронизации и окончательно удалите все связанное с ним состояние.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e69a3073b926f6594c80c975db288a7673a3fd3a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: d10196464b9662a6ad2c24ec8aaee5ea5cf925fa
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129684"
 ---
-# <a name="delete-synchronizationjob"></a>Удаление Синчронизатионжоб
+# <a name="delete-synchronizationjob"></a>Удаление synchronizationJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Остановите задание синхронизации и окончательно удалите все связанные с ним состояния. Синхронизированные учетные записи остаются недоступными.
+Остановите задание синхронизации и окончательно удалите все связанное с ним состояние. Синхронизированные учетные записи оставлены как есть.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `204 No Content` отклик. Метод не возвращает данные в теле отклика.
+В случае успеха возвращает `204 No Content` ответ. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 

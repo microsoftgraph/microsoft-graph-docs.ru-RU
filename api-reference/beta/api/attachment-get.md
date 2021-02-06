@@ -3,14 +3,14 @@ title: Получение вложения
 description: Чтение свойств и связей вложения, вложенного в событие, сообщение, задачу Outlook или публикацию.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 5676615011806a5dbe07297080c06b976d945f11
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 6759953148245935e5a2dc2b0825a7c55af18dc3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092409"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128885"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
@@ -24,11 +24,11 @@ ms.locfileid: "50092409"
 
 Допустимые типы вложений:
 
-* Файл. Программным образом это ресурс [fileAttachment.](../resources/fileattachment.md)
-* Элемент Outlook (контакт, событие или сообщение). Программным образом вложение элемента является [ресурсом itemAttachment.](../resources/itemattachment.md) Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
-* Ссылка на файл, хранимый в облаке. Программным образом это ресурс [referenceAttachment.](../resources/referenceattachment.md)
+* Файл. На программном уровне это ресурс [fileAttachment](../resources/fileattachment.md).
+* Элемент Outlook (контакт, событие или сообщение). На программном уровне вложением элемента является ресурс [itemAttachment](../resources/itemattachment.md). Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
+* Ссылка на файл, хранящийся в облаке. На программном уровне это ресурс [referenceAttachment](../resources/referenceattachment.md).
 
-Все эти типы вложений являются производными от ресурса [attachment.](../resources/attachment.md) 
+Все эти типы вложений являются производными от ресурса [attachment](../resources/attachment.md). 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Получение необработанного содержимого вложенного файла или элемента
 Чтобы получить необработанное содержимое вложенного файла или элемента, вы можете добавить сегмент пути `/$value`. 
@@ -47,9 +47,9 @@ ms.locfileid: "50092409"
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от ресурса **(события,** **сообщения,**  **outlookTask** или post), к который вложено вложение, и типа запрашиваемого разрешения (делегирование или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы узнать больше, в том [числе](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) с осторожностью перед выбором более привилегированных разрешений, найди следующие разрешения в [разрешениях.](/graph/permissions-reference)
+В зависимости от ресурса **(события,** **сообщения,**  **outlookTask** или post), к который вложено вложение, и типа запрашиваемого разрешения (делегирование или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |

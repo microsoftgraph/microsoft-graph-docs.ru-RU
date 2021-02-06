@@ -1,24 +1,24 @@
 ---
 title: Список приложений
-description: Получение списка объектов приложения, связанных с Коннекторграуп.
+description: Получение списка объектов приложений, связанных с соединитетелемGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a4c0dee137cc721cba180784e4f8d36a795a01aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3a25be9468f43e0bcaf911980a4f5e41a1e537f7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129977"
 ---
-# <a name="list-applications-assigned-to-a-connectorgroup"></a>Список приложений, назначенных Коннекторграуп
+# <a name="list-applications-assigned-to-a-connectorgroup"></a>Список приложений, которые назначены соединителиГруппе
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [приложения](../resources/application.md) , связанных с [коннекторграуп](../resources/connectorgroup.md). Этот список содержит все приложения, назначенные определенной группе соединителей.
+Получение списка объектов [приложений,](../resources/application.md) связанных с [connectorGroup.](../resources/connectorgroup.md) Этот список содержит все приложения, которые назначены определенной группе соединитений.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Application](../resources/application.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [приложения](../resources/application.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -156,3 +156,4 @@ Content-length: 420
   "suppressions": []
 }
 -->
+

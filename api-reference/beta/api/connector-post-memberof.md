@@ -3,14 +3,14 @@ title: Добавление соединителю в connectorGroup
 description: Этот API используется для добавления соединителю в новый connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 39822b0415c8c52944f89d86adc74d38af981020
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: d4d9b9b31eafa0906b704b7f1ff1929b1cf35055
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129606"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
@@ -25,7 +25,7 @@ ms.locfileid: "49753011"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,14 +37,14 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer. Обязательна|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажет представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `201 Created` [объект connectorGroup](../resources/connectorgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -82,7 +82,7 @@ Content-length: 99
 
 ---
 
-В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
+В теле запроса укажет представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -116,5 +116,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

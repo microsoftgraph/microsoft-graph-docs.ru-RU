@@ -1,16 +1,16 @@
 ---
 title: Удаление connectorGroup
-description: Удаление объекта Коннекторграуп.
+description: Удаление соединителиГруппы.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 389f7ba94bce852328ed415b5dfa1c9476daba01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d5ad43b789dff0abdc7cf938746e3b75dc5f4ad4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130138"
 ---
 # <a name="delete-connectorgroup"></a>Удаление connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957443"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [коннекторграуп](../resources/connectorgroup.md). Все [соединители](../resources/connector.md) и приложения необходимо удалить из группы соединителей, прежде чем можно будет удалить группу соединителей.
+Удаление [соединителиГруппы.](../resources/connectorgroup.md) Все [соединители](../resources/connector.md) и приложения должны быть удалены из группы соединители, прежде чем можно будет удалить группу соединитеителей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ DELETE /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -99,5 +99,6 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
 
 

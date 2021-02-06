@@ -3,14 +3,14 @@ title: Список приложений
 description: Получение списка приложений в организации.
 author: sureshja
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e94927d7c84e376488873f261f06710e53a84b33
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: b15bfeb1e024de6fe704326080e30e48312d7f72
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129116"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -138,7 +138,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -256,5 +256,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 

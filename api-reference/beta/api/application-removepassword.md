@@ -1,24 +1,24 @@
 ---
-title: 'Приложение: Ремовепассворд'
+title: 'application: removePassword'
 description: Удаление пароля из приложения
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 169c80a7d2e7c4a7e93d5fd7a68641cb9ae34911
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8c8865470e67418e877d130ea9143631a5398e92
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961855"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129046"
 ---
-# <a name="application-removepassword"></a>Приложение: Ремовепассворд
+# <a name="application-removepassword"></a>application: removePassword
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет пароль из [приложения](../resources/application.md).
+Удаляет пароль из [приложения.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,7 +49,7 @@ POST /applications/{id}/removePassword
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
-| Него значение KeyID     | GUID | Уникальный идентификатор пароля. Обязательный. |
+| keyId     | GUID | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -57,7 +57,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="examples"></a>Примеры
 
-В приведенном ниже примере показано, как вызывать этот API.
+Ниже показано, как вызвать этот API.
 
 ### <a name="request"></a>Запрос
 
@@ -119,5 +119,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

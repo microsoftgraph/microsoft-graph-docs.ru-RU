@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Клаудаппсекуритисессионконтрол
-description: Управление сеансами, используемое для применения проверок безопасности облачных приложений.
+title: Тип ресурса cloudAppSecuritySessionControl
+description: Управление сеансами, используемая для принудительной проверки безопасности облачных приложений.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4665fc3456dbd6375ea0ef9651455427e74b732f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba0b0b2d7c2269358bf6d6cd48d6bf6694fc10ab
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034072"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128850"
 ---
-# <a name="cloudappsecuritysessioncontrol-resource-type"></a>Тип ресурса Клаудаппсекуритисессионконтрол
+# <a name="cloudappsecuritysessioncontrol-resource-type"></a>Тип ресурса cloudAppSecuritySessionControl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Управление сеансами, используемое для применения проверок безопасности облачных приложений. Инехритс из [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
+Управление сеансами, используемая для принудительной проверки безопасности облачных приложений. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
-|клаудаппсекурититипе|String | Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Подробнее об этих значениях: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
+|cloudAppSecurityType|Строка | Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Узнайте больше об этих значениях здесь: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

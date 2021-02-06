@@ -3,14 +3,14 @@ title: Тип ресурса usageRight
 description: Содержит сведения об usageRight, назначенного пользователем или устройством
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: dba7f25d77379d00f48a1df820865b193cc0c084
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: d3d7ad0de7eb6929e54b7d3d692c6e562e9da76d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130413"
 ---
 # <a name="usageright-resource-type"></a>Тип ресурса usageRight
 
@@ -24,16 +24,16 @@ ms.locfileid: "49943750"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список user usageRights](../api/user-list-usagerights.md)|[Коллекция usageRight](../resources/usageright.md)|Получите список прав на использование для пользователя.|
-|[Список устройств usageRights](../api/device-list-usagerights.md)|[Коллекция usageRight](../resources/usageright.md)|Получите список прав на использование для устройства.|
+|[Список user usageRights](../api/user-list-usagerights.md)|Коллекция [usageRight](../resources/usageright.md)|Получите список прав на использование для пользователя.|
+|[Список устройств usageRights](../api/device-list-usagerights.md)|Коллекция [usageRight](../resources/usageright.md)|Получите список прав на использование для устройства.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|catalogId|String|ИД продукта, соответствующий правом на использование.|
-|id|String|ИД права на использование.|
-|serviceIdentifier|String|Идентификатор службы, соответствующей правом на использование.|
+|catalogId|Строка|ИД продукта, соответствующий правом на использование.|
+|id|Строка|ИД права на использование.|
+|serviceIdentifier|Строка|Идентификатор службы, соответствующей правом на использование.|
 |state|usageRightState|Состояние права на использование. Возможные значения: `active`, `inactive`, `warning`, `suspended`.|
 
 ### <a name="usagerightstate-values"></a>значения usageRightState 
@@ -46,7 +46,7 @@ ms.locfileid: "49943750"
 |suspended                | Указывает, что право на использование, скорее всего, приостановлено из-за нарушения платежа|
 |unknownFutureValue      | Значение Sentinel, чтобы указать будущие значения. |
 
->**Примечание.** Преимущество можно получить только в активных состояниях и состояниях предупреждений. Все остальные состояния следует рассматривать как не в результате чего полезное преимущество.
+>**Примечание.** Преимущества, которые можно получить, представляют только активные состояния и состояния предупреждений. Все остальные состояния должны рассматриваться как не приумещающие преимущества.
 
 
 

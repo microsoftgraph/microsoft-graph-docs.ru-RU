@@ -1,16 +1,16 @@
 ---
 title: Список memberOf
-description: Получение коннекторграуп, участником которого является соединитель.
+description: Извлечение соединителигруппы, участником группы является соединители.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e0127cbff360f0b4b08d43eccaabe26a5d4e31c6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 395ee64c59cf81ffa1b264140f26e23f03f8dfe1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129625"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957506"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение [коннекторграуп](../resources/connectorgroup.md) , участником которого является [соединитель](../resources/connector.md) .
+Извлекать [соединителиГруппы,](../resources/connectorgroup.md) [в](../resources/connector.md) которые входит соедините.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -117,3 +117,4 @@ Content-length: 164
   "suppressions": []
 }
 -->
+

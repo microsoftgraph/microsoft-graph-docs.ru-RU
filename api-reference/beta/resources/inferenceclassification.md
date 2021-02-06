@@ -4,13 +4,13 @@ description: 'Классификация сообщений пользовате
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 2e051b820bdfb2edd3d75bf75d71c188164d6e79
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: b69f892a9d8223e467a10ce1c055cc470a2c171e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016543"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130257"
 ---
 # <a name="inferenceclassification-resource-type"></a>Тип ресурса inferenceClassification
 
@@ -35,12 +35,12 @@ ms.locfileid: "48016543"
 |:---------------|:--------|:----------|
 |id|string| Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overrides|Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)| Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

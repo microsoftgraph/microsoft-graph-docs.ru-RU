@@ -1,15 +1,15 @@
 ---
 title: Ограничение области разрешений для приложений с указанием определенных почтовых ящиков Exchange Online
 description: Чтобы ограничить область разрешений для приложений с указанием определенных почтовых ящиков Exchange Online, потребуется создать политики доступа приложений.
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 530a7d3628b789e3ed61f4fd4e36f6dff4b53f55
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 83caa52f087bc3ef2ebada764132be67ea3efc27
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131224"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Ограничение области разрешений для приложений с указанием определенных почтовых ящиков Exchange Online 
 

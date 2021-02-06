@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Аутоматикреплиесмаилтипс
-description: Подсказки о любых автоматических ответах, настроенных в почтовом ящике.
+title: Тип ресурса automaticRepliesMailTips
+description: Сообщения об автоматических ответах, которые были настроены для почтового ящика.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 2191f715d3763707f132c4907e34189941436c59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 5ce447f7b18390770bc8ed2d5c1f8912290fb352
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128619"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса Аутоматикреплиесмаилтипс
+# <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса automaticRepliesMailTips
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Подсказки](../resources/mailtips.md) о любых автоматических ответах, настроенных в почтовом ящике.
+[Сообщения об](../resources/mailtips.md) автоматических ответах, которые были настроены для почтового ящика.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:-----|:-----|:-----|
-| message | String | Сообщение автоматического ответа. |
-| мессажелангуаже | [localeInfo](../resources/localeinfo.md) | Язык, на котором находится сообщение с автоматическим ответом. |
-| счедуледендтиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время завершения установки автоматических ответов. |
-| счедуледстарттиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время начала набора автоматических ответов. |
+| message | String | Автоматическое ответное сообщение. |
+| messageLanguage | [localeInfo](../resources/localeinfo.md) | Язык, на который находится автоматическое ответное сообщение. |
+| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время окончания автоматических ответов. |
+| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время начала автоматических ответов. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

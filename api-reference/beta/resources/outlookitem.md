@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookItem
-description: Ниже этот ресурс представлен в формате JSON.
-author: svpsiva
+description: Ниже представлено описание ресурса в формате JSON.
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0d0303e3a80e0231487701d66076ef8fa52be358
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10a4bd64fd8776b1d50d52d5fd9130076417dc85
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998380"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128598"
 ---
 # <a name="outlookitem-resource-type"></a>Тип ресурса outlookItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "47998380"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -44,7 +44,7 @@ ms.locfileid: "47998380"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categories|Коллекция String||
-|changeKey|String||
+|changeKey|Строка||
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|

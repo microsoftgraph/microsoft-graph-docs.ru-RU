@@ -1,16 +1,16 @@
 ---
 title: Обновление правила
 description: Изменение записываемых свойств объекта messageRule и сохранение изменений.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3acbc4276e9868dbfd30073edc8c7b1e8374d217
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 19e4390cee58d9236e6fa22d3caf92940136977f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131056"
 ---
 # <a name="update-rule"></a>Обновление правила
 
@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
-| displayName | String | Отображаемое имя правила. |
+| displayName | Строка | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия исключения для правила. |
 | isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
 | isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |

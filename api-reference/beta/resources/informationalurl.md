@@ -3,14 +3,14 @@ title: Тип ресурса informationalUrl
 description: Основные сведения о профиле приложения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 23c1baa55a8cc50b77f429898614f54e02b7813c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d17ce96d1f714845d07bee3505a28d5a4e7e3978
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016499"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130248"
 ---
 # <a name="informationalurl-resource-type"></a>Тип ресурса informationalUrl
 
@@ -24,13 +24,13 @@ ms.locfileid: "48016499"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|logoUrl|String|URL-адрес сети CDN для логотипа приложения и только для чтения.|
-|маркетингурл|String| Ссылка на маркетинговую страницу приложения. Пример: https://www.contoso.com/app/marketing |
-|привацистатементурл|String| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
-|supportUrl|String| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
-|термсофсервицеурл|String| Ссылка на условия заявления приложения. Пример: https://www.contoso.com/app/termsofservice |
+|logoUrl|Строка|URL-адрес CDN для логотипа приложения, только для чтения.|
+|marketingUrl|Строка| Ссылка на страницу маркетинга приложения. Пример: https://www.contoso.com/app/marketing |
+|privacyStatementUrl|Строка| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
+|supportUrl|Строка| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
+|termsOfServiceUrl|Строка| Ссылка на заявление об условиях обслуживания приложения. Пример: https://www.contoso.com/app/termsofservice |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

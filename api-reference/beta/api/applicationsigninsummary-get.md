@@ -1,33 +1,33 @@
 ---
-title: Получение Аппликатионсигнинсуммари
-description: Получение свойств и связей объекта **аппликатионсигнинсуммари** .
+title: Получение applicationSignInSummary
+description: Получение свойств и связей объекта **applicationSigninSummary.**
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3ac93b4e2ebba35eeb3ccc68707ca757b13cb8f6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9fad0f7122a1d82cb1f0dfc2ca7172f7f4029e85
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128979"
 ---
-# <a name="get-applicationsigninsummary"></a>Получение Аппликатионсигнинсуммари
+# <a name="get-applicationsigninsummary"></a>Получение applicationSignInSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [аппликатионсигнинсуммари](../resources/applicationsigninsummary.md) .
+Получение свойств и связей объекта [applicationSigninSummary.](../resources/applicationsigninsummary.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Report. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Report.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | Report. Read. ALL | 
+|Для приложений | Report.Read.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 
 | Параметр | Описание |
 |:----------|:----------|
-| period | Либо `D7` (последние семь дней), либо `D30` (последние 30 дней), другие значения создают ошибки. |
+| period | (последние `D7` семь дней) или `D30` (последние 30 дней); другие значения создают ошибки. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -50,7 +50,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аппликатионсигнинсуммари](../resources/applicationsigninsummary.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [applicationSignInSummary](../resources/applicationsigninsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание:** Объект Response, показанный здесь, ммигхт должен быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь mmight, будет сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,24 +1,24 @@
 ---
-title: Удаление Аппролеассигнмент из группы
-description: Удаление Аппролеассигнмент, предоставленных группе.
+title: Удаление appRoleAssignment из группы
+description: Удаление appRoleAssignment, предоставленного группе.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 1cc360f607cd2c5fc82a4d4b48522864a3b516fe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ea559919312401bec8885f162788b8b01bb0464
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130801"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-group"></a>Удаление Аппролеассигнмент, назначенного группе
+# <a name="delete-an-approleassignment-granted-to-a-group"></a>Удаление appRoleAssignment, предоставленного группе
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [аппролеассигнмент](../resources/approleassignment.md) , предоставленный группе.
+Удаляет [appRoleAssignment,](../resources/approleassignment.md) предоставленную группе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,7 +39,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Рекомендуется удалять назначения ролей приложений с помощью `appRoleAssignedTo` отношения между субъектами службы _ресурсов_ , а не с `appRoleAssignments` назначенным пользователем, группой или субъектом службы.
+> Рекомендуется удалять назначения ролей приложения через связь с основными службами ресурсов, а не через отношение назначенного пользователя, группы или `appRoleAssignedTo`  `appRoleAssignments` основного службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на удаление назначения роли приложения.
+Вот пример запроса на удаление назначения роли приложения.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -3,14 +3,14 @@ title: Список переопределений
 description: Получение переопределений сортировки почты, настроенных пользователем для классификации сообщений от определенных отправителей.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: b0880959138f9d7b914c490f45fd43b8a7ad866c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 486d99db01c2efbbc0ff295730cf248aaffb643a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953117"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130741"
 ---
 # <a name="list-overrides"></a>Список переопределений
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953117"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение параметров [сортировки папки "Входящие"](../resources/manage-focused-inbox.md) , которые пользователь настроил для того, чтобы всегда классифицировать сообщения от определенных отправителей определенными способами.
+Получите [переопределения](../resources/manage-focused-inbox.md) отправляемой почты, которые пользователь настроил так, чтобы всегда классифицировать сообщения от определенных отправителей определенными способами.
 
 Каждое переопределение соответствует SMTP-адресу отправителя. Изначально у пользователя нет переопределений.
 ## <a name="permissions"></a>Разрешения

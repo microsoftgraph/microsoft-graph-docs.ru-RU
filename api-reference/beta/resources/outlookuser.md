@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookUser
 description: Представляет службы Outlook, доступные пользователю.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6473a7a3808982467f50bafc810cbca80e4ce0dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15afe75d10bad489b913eaf7215cbc8327e02317
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130671"
 ---
 # <a name="outlookuser-resource-type"></a>Тип ресурса outlookUser
 
@@ -31,12 +31,12 @@ ms.locfileid: "47998343"
 |[Перечисление категорий](../api/outlookuser-list-mastercategories.md) | Коллекция [outlookCategory](outlookcategory.md) |Получение всех категорий, определенных для пользователя.|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | Коллекция [localeInfo](localeinfo.md) | Получение списка языковых стандартов и языков, который поддерживается для пользователя, в соответствии с настройкой на сервере почтовых ящиков этого пользователя. |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | Коллекция [timeZoneInformation](timezoneinformation.md) | Получение списка часовых поясов, который поддерживается для пользователя, в соответствии с настройкой на сервере почтовых ящиков этого пользователя. |
-|[Создание outlookTaskFolder](../api/outlookuser-post-taskfolders.md) (устаревшее) |[outlookTaskFolder](outlooktaskfolder.md)| Создайте папку задач в группе задач по умолчанию ( `My Tasks` ) почтового ящика пользователя.|
-|[Список таскфолдерс](../api/outlookuser-list-taskfolders.md) (не рекомендуется) |Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Получение всех папок задач Outlook в почтовом ящике пользователя.|
-|[Создание outlookTaskGroup](../api/outlookuser-post-taskgroups.md) (устаревшее) |[outlookTaskGroup](outlooktaskgroup.md)| Создайте группу задач Outlook в почтовом ящике пользователя.|
-|[Список taskGroups](../api/outlookuser-list-taskgroups.md) (не рекомендуется) |Коллекция [outlookTaskGroup](outlooktaskgroup.md)| Получение всех групп задач Outlook в почтовом ящике пользователя.|
-|[Создание outlookTask](../api/outlookuser-post-tasks.md) (устаревшее) |[outlookTask](outlooktask.md)| Создайте задачу Outlook в группе задач по умолчанию ( `My Tasks` ) и папке задач по умолчанию ( `Tasks` ) в почтовом ящике пользователя.|
-|[Список задач](../api/outlookuser-list-tasks.md) (не рекомендуется) |Коллекция объектов [outlookTask](outlooktask.md)| Получение всех задач Outlook в почтовом ящике пользователя.|
+|[Create outlookTaskFolder](../api/outlookuser-post-taskfolders.md) (deprecated) |[outlookTaskFolder](outlooktaskfolder.md)| Создайте папку задач в группе задач по умолчанию `My Tasks` () почтового ящика пользователя.|
+|[Список taskFolders](../api/outlookuser-list-taskfolders.md) (неподдержный) |[Коллекция outlookTaskFolder](outlooktaskfolder.md)| Получите все папки задач Outlook в почтовом ящике пользователя.|
+|[Создание outlookTaskGroup](../api/outlookuser-post-taskgroups.md) (неподготовлено) |[outlookTaskGroup](outlooktaskgroup.md)| Создайте группу задач Outlook в почтовом ящике пользователя.|
+|[Список taskGroups](../api/outlookuser-list-taskgroups.md) (неподготовленный) |[Коллекция outlookTaskGroup](outlooktaskgroup.md)| Получите все группы задач Outlook в почтовом ящике пользователя.|
+|[Создание объекта outlookTask](../api/outlookuser-post-tasks.md) (не рекомендуется) |[outlookTask](outlooktask.md)| Создайте задачу Outlook в группе задач по умолчанию () и папке задач по умолчанию () в почтовом ящике `My Tasks` `Tasks` пользователя.|
+|[Перечисление задач](../api/outlookuser-list-tasks.md) (не рекомендуется) |Коллекция объектов [outlookTask](outlooktask.md)| Получение всех задач Outlook в почтовом ящике пользователя.|
 
 
 
@@ -47,9 +47,9 @@ ms.locfileid: "47998343"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |masterCategories|Коллекция [outlookCategory](../resources/outlookcategory.md)| Список категорий, определенных для пользователя. | 
-|Таскфолдерс (устаревший)|Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Папки задач Outlook пользователя. Только для чтения. Допускается значение null.|
-|taskGroups (устаревший)|Коллекция [outlookTaskGroup](outlooktaskgroup.md)| Группы задач Outlook пользователя. Только для чтения. Допускается значение null.|
-|задачи (не рекомендуется)|Коллекция объектов [outlookTask](outlooktask.md)| Задачи Outlook пользователя. Только для чтения. Допускается значение null.|
+|taskFolders (неподдержный)|[Коллекция outlookTaskFolder](outlooktaskfolder.md)| Папки задач Outlook пользователя. Только для чтения. Допускается значение null.|
+|taskGroups (неподготовленные)|[Коллекция outlookTaskGroup](outlooktaskgroup.md)| Группы задач Outlook пользователя. Только для чтения. Допускается значение null.|
+|задачи (неподготовленные)|Коллекция объектов [outlookTask](outlooktask.md)| Задачи пользователя Outlook. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

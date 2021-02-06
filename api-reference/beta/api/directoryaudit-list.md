@@ -1,16 +1,16 @@
 ---
 title: Перечисление directoryAudits
-description: Описывает метод List ресурса Директоряудит (Entity) из API Microsoft Graph (бета-версия).
+description: Описывает метод списка ресурса directoryAudit (сущности) из API Microsoft Graph (бета-версия).
 localization_priority: Normal
 author: SarahBar
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 62ba3a563569f9f32bcdadc2ebc614156fcdf7d3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 38e5ec2c48f6f553579b69b12c42821e459cc5b6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963192"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130963"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -18,7 +18,7 @@ ms.locfileid: "48963192"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка журналов аудита, созданных Azure Active Directory. Сюда входят журналы аудита, созданные различными службами в Azure AD, в том числе Управление пользователями, приложениями, устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защиту удостоверений, управление паролями (сброс паролей SSPR и администрирование паролей), а также Управление группами самообслуживания.
+Получите список журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, включая управление пользователями, приложениями, устройствами и группой, привилегированное управление удостоверениями (PIM), проверки доступа, условия использования, защиту идентификации, управление паролями (SSPR и сброс паролей администратора) и самостоятельное управление группой.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Сведения о том, как использовать эти параметры, можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Подробные сведения об использовании этих параметров см. в параметрах [запроса OData.](/graph/query_parameters)
 
 |Параметр     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ GET /auditLogs/directoryAudits
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметра
 
 |Атрибут        |Поддерживаемые операторы|
 |:----------------|:------|
@@ -60,7 +60,7 @@ GET /auditLogs/directoryAudits
 |initiatedBy/user/displayName| eq|
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |initiatedBy/app/appId| eq|
-|Инитиатедби/App/displayName| eq|
+|initiatedBy/app/displayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq, startswith|
 

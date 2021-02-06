@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Пассвордсинглесигнонкредентиалсет
-description: Указывает набор учетных данных, которые полностью определяют последовательность входа для пользователя или группы в приложение.
+title: Тип ресурса passwordSingleSignOnCredentialSet
+description: Указывает набор учетных данных, которые полностью определяют поток входа пользователя или группы в приложение.
 localization_priority: Normal
 author: bharathramh92
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 87aafa6e21171088f9b4b5eac318f6c9551e18ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95526942bcedfc20d983a8873699af6902482b2c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130886"
 ---
-# <a name="passwordsinglesignoncredentialset-resource-type"></a>Тип ресурса Пассвордсинглесигнонкредентиалсет
+# <a name="passwordsinglesignoncredentialset-resource-type"></a>Тип ресурса passwordSingleSignOnCredentialSet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает набор учетных данных, которые полностью определяют последовательность входа для пользователя или группы в приложение.
+Указывает набор учетных данных, которые полностью определяют поток входа пользователя или группы в приложение.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|записей|Коллекция [учетных данных](credential.md)|Список объектов учетных данных, определяющих полный вход.|
-|id|String|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|credentials|[коллекция учетных](credential.md) данных|Список объектов учетных данных, которые определяют полный поток входа.|
+|id|Строка|ИД пользователя или группы, к которой принадлежит этот набор учетных данных.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
