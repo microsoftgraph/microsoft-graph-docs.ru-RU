@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9d041944b65949564ade9f1fc4bfc12d5e69519f
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 3e98e857f4da494491b2e23b0ce971fd93c9765a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133219"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -17,6 +17,12 @@ ms.locfileid: "49910761"
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
 
+
+## <a name="february-2021-new-in-preview-only"></a>Февраль 2021 г.: новые возможности только в предварительной версии
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+- Назначение данных географического расположения [пакету доступа](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true) ресурсу в [запросе на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+- Получение списка всех [сред ресурсов пакета доступа](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true), представляющих географические расположения, в которых хранятся ресурсы SharePoint Online.
 
 ## <a name="january-2021-new-in-preview-only"></a>Январь 2021 г.: новые возможности только в предварительной версии
 
