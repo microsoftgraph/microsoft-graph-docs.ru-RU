@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Пропертитоевалуате
+title: Тип ресурса propertyToEvaluate
 description: Определяет имя и значение свойства.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c03ef7cdbb5e40ab77e0b3ad68668263db643568
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078208"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135387"
 ---
-# <a name="propertytoevaluate-resource-type"></a><span data-ttu-id="d56f8-103">Тип ресурса Пропертитоевалуате</span><span class="sxs-lookup"><span data-stu-id="d56f8-103">propertyToEvaluate resource type</span></span>
+# <a name="propertytoevaluate-resource-type"></a><span data-ttu-id="acfc8-103">Тип ресурса propertyToEvaluate</span><span class="sxs-lookup"><span data-stu-id="acfc8-103">propertyToEvaluate resource type</span></span>
 
-<span data-ttu-id="d56f8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d56f8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="acfc8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="acfc8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d56f8-105">Определяет имя и значение свойства.</span><span class="sxs-lookup"><span data-stu-id="d56f8-105">Defines the name and the value of the property.</span></span>
+<span data-ttu-id="acfc8-105">Определяет имя и значение свойства.</span><span class="sxs-lookup"><span data-stu-id="acfc8-105">Defines the name and the value of the property.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d56f8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d56f8-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="acfc8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="acfc8-106">Properties</span></span>
 
-| <span data-ttu-id="d56f8-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="d56f8-107">Property</span></span> | <span data-ttu-id="d56f8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="d56f8-108">Type</span></span> | <span data-ttu-id="d56f8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d56f8-109">Description</span></span> |
+| <span data-ttu-id="acfc8-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="acfc8-107">Property</span></span> | <span data-ttu-id="acfc8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="acfc8-108">Type</span></span> | <span data-ttu-id="acfc8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="acfc8-109">Description</span></span> |
 |:-------- |:---- |:----------- |
-| <span data-ttu-id="d56f8-110">propertyName</span><span class="sxs-lookup"><span data-stu-id="d56f8-110">propertyName</span></span> | <span data-ttu-id="d56f8-111">String</span><span class="sxs-lookup"><span data-stu-id="d56f8-111">String</span></span> | <span data-ttu-id="d56f8-112">Предоставляет имя свойства.</span><span class="sxs-lookup"><span data-stu-id="d56f8-112">Provides the property name.</span></span> |
-| <span data-ttu-id="d56f8-113">propertyValue</span><span class="sxs-lookup"><span data-stu-id="d56f8-113">propertyValue</span></span> | <span data-ttu-id="d56f8-114">String</span><span class="sxs-lookup"><span data-stu-id="d56f8-114">String</span></span> | <span data-ttu-id="d56f8-115">Предоставляет значение свойства.</span><span class="sxs-lookup"><span data-stu-id="d56f8-115">Provides the property value.</span></span> |
+| <span data-ttu-id="acfc8-110">propertyName</span><span class="sxs-lookup"><span data-stu-id="acfc8-110">propertyName</span></span> | <span data-ttu-id="acfc8-111">Строка</span><span class="sxs-lookup"><span data-stu-id="acfc8-111">String</span></span> | <span data-ttu-id="acfc8-112">Предоставляет имя свойства.</span><span class="sxs-lookup"><span data-stu-id="acfc8-112">Provides the property name.</span></span> |
+| <span data-ttu-id="acfc8-113">propertyValue</span><span class="sxs-lookup"><span data-stu-id="acfc8-113">propertyValue</span></span> | <span data-ttu-id="acfc8-114">Строка</span><span class="sxs-lookup"><span data-stu-id="acfc8-114">String</span></span> | <span data-ttu-id="acfc8-115">Предоставляет значение свойства.</span><span class="sxs-lookup"><span data-stu-id="acfc8-115">Provides the property value.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="d56f8-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d56f8-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="acfc8-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="acfc8-116">JSON representation</span></span>
 
-<span data-ttu-id="d56f8-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d56f8-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="acfc8-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="acfc8-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Ключзначение
-description: Предоставляет дополнительные релевантные сведения о запросе на вход
+title: Тип ресурса keyValue
+description: Предоставляет дополнительные важные сведения о запросе на вход
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 78dd4f6ede6e918bb1caaae3761ef258b4e0a427
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 3459f827f35049b383e732c805d61371577b2260
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524703"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135396"
 ---
-# <a name="keyvalue-resource-type"></a><span data-ttu-id="35ab8-103">Тип ресурса Ключзначение</span><span class="sxs-lookup"><span data-stu-id="35ab8-103">keyValue resource type</span></span>
+# <a name="keyvalue-resource-type"></a><span data-ttu-id="48240-103">Тип ресурса keyValue</span><span class="sxs-lookup"><span data-stu-id="48240-103">keyValue resource type</span></span>
 
-<span data-ttu-id="35ab8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="35ab8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="48240-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="48240-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35ab8-105">Предоставляет дополнительные сведения об обработке проверки подлинности, такие как имя сервера и наличие подсказок для входа и домена.</span><span class="sxs-lookup"><span data-stu-id="35ab8-105">Provides additional authentication processing information, such as the server name and the presence of hints for sign in and domain.</span></span>
+<span data-ttu-id="48240-105">Предоставляет дополнительные сведения об обработке проверки подлинности, такие как имя сервера и наличие подсказок для входов и домена.</span><span class="sxs-lookup"><span data-stu-id="48240-105">Provides additional authentication processing information, such as the server name and the presence of hints for sign in and domain.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="35ab8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="35ab8-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="48240-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="48240-106">Properties</span></span>
 
-| <span data-ttu-id="35ab8-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="35ab8-107">Property</span></span>     | <span data-ttu-id="35ab8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="35ab8-108">Type</span></span>        | <span data-ttu-id="35ab8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="35ab8-109">Description</span></span> |
+| <span data-ttu-id="48240-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="48240-107">Property</span></span>     | <span data-ttu-id="48240-108">Тип</span><span class="sxs-lookup"><span data-stu-id="48240-108">Type</span></span>        | <span data-ttu-id="48240-109">Описание</span><span class="sxs-lookup"><span data-stu-id="48240-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="35ab8-110">key</span><span class="sxs-lookup"><span data-stu-id="35ab8-110">key</span></span>|<span data-ttu-id="35ab8-111">String</span><span class="sxs-lookup"><span data-stu-id="35ab8-111">String</span></span>|<span data-ttu-id="35ab8-112">Содержит имя поля, с которым связано значение.</span><span class="sxs-lookup"><span data-stu-id="35ab8-112">Contains the name of the field that a value is associated with.</span></span> <span data-ttu-id="35ab8-113">Если подсказка входа или домена включена в запрос на вход, соответствующие поля включаются в качестве пар "ключ-значение".</span><span class="sxs-lookup"><span data-stu-id="35ab8-113">When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs.</span></span> <span data-ttu-id="35ab8-114">Возможные ключи: `Login hint present` , `Domain hint present` .</span><span class="sxs-lookup"><span data-stu-id="35ab8-114">Possible keys: `Login hint present`, `Domain hint present`.</span></span>|
-|<span data-ttu-id="35ab8-115">value</span><span class="sxs-lookup"><span data-stu-id="35ab8-115">value</span></span>|<span data-ttu-id="35ab8-116">String</span><span class="sxs-lookup"><span data-stu-id="35ab8-116">String</span></span>|<span data-ttu-id="35ab8-117">Содержит соответствующее значение для указанного ключа.</span><span class="sxs-lookup"><span data-stu-id="35ab8-117">Contains the corresponding value for the specified key.</span></span> <span data-ttu-id="35ab8-118">Значение, `true` Если подсказка для входа была включена в запрос на вход; в противном случае `false` .</span><span class="sxs-lookup"><span data-stu-id="35ab8-118">The value is `true` if a sign in hint was included in the sign-in request; otherwise `false`.</span></span> <span data-ttu-id="35ab8-119">Значение, `true` Если подсказка домена включена в запрос на вход; в противном случае `false` .</span><span class="sxs-lookup"><span data-stu-id="35ab8-119">The value is `true` if a domain hint was included in the sign-in request; otherwise `false`.</span></span>|
+|<span data-ttu-id="48240-110">key</span><span class="sxs-lookup"><span data-stu-id="48240-110">key</span></span>|<span data-ttu-id="48240-111">Строка</span><span class="sxs-lookup"><span data-stu-id="48240-111">String</span></span>|<span data-ttu-id="48240-112">Содержит имя поля, с которое связано значение.</span><span class="sxs-lookup"><span data-stu-id="48240-112">Contains the name of the field that a value is associated with.</span></span> <span data-ttu-id="48240-113">Если в запрос на вход включена подсказка о входе или домене, соответствующие поля включаются в качестве пар "ключ-значение".</span><span class="sxs-lookup"><span data-stu-id="48240-113">When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs.</span></span> <span data-ttu-id="48240-114">Возможные ключи: `Login hint present` , `Domain hint present` .</span><span class="sxs-lookup"><span data-stu-id="48240-114">Possible keys: `Login hint present`, `Domain hint present`.</span></span>|
+|<span data-ttu-id="48240-115">value</span><span class="sxs-lookup"><span data-stu-id="48240-115">value</span></span>|<span data-ttu-id="48240-116">String</span><span class="sxs-lookup"><span data-stu-id="48240-116">String</span></span>|<span data-ttu-id="48240-117">Содержит соответствующее значение для указанного ключа.</span><span class="sxs-lookup"><span data-stu-id="48240-117">Contains the corresponding value for the specified key.</span></span> <span data-ttu-id="48240-118">Значением является, если подсказка для входов была включена в запрос на `true` вход; в противном случае `false` .</span><span class="sxs-lookup"><span data-stu-id="48240-118">The value is `true` if a sign in hint was included in the sign-in request; otherwise `false`.</span></span> <span data-ttu-id="48240-119">Значением `true` является, если подсказка домена была включена в запрос на вход; в противном случае `false` .</span><span class="sxs-lookup"><span data-stu-id="48240-119">The value is `true` if a domain hint was included in the sign-in request; otherwise `false`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="35ab8-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="35ab8-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="48240-120">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="48240-120">JSON representation</span></span>
 
-<span data-ttu-id="35ab8-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="35ab8-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="48240-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="48240-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -4,32 +4,32 @@ description: Сведения о языковом стандарте, в час�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: 002eb0ce4433e36b53b5e844ea857812022e653c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 455f0ba63a56b75387b1abfe952edfdfb453c71a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135235"
 ---
-# <a name="localeinfo-resource-type"></a><span data-ttu-id="3e2e9-103">Тип ресурса localeInfo</span><span class="sxs-lookup"><span data-stu-id="3e2e9-103">localeInfo resource type</span></span>
+# <a name="localeinfo-resource-type"></a><span data-ttu-id="f059d-103">Тип ресурса localeInfo</span><span class="sxs-lookup"><span data-stu-id="f059d-103">localeInfo resource type</span></span>
 
-<span data-ttu-id="3e2e9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e2e9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f059d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f059d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3e2e9-105">Сведения о языковом стандарте, в частности предпочитаемом языке и стране или регионе, вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="3e2e9-105">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
+<span data-ttu-id="f059d-105">Сведения о языковом стандарте, в частности предпочитаемом языке и стране или регионе, вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="f059d-105">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="3e2e9-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="3e2e9-106">Properties</span></span>
-| <span data-ttu-id="3e2e9-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="3e2e9-107">Property</span></span>     | <span data-ttu-id="3e2e9-108">Тип</span><span class="sxs-lookup"><span data-stu-id="3e2e9-108">Type</span></span>   |<span data-ttu-id="3e2e9-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3e2e9-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f059d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f059d-106">Properties</span></span>
+| <span data-ttu-id="f059d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f059d-107">Property</span></span>     | <span data-ttu-id="f059d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f059d-108">Type</span></span>   |<span data-ttu-id="f059d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f059d-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3e2e9-110">языковые стандарты</span><span class="sxs-lookup"><span data-stu-id="3e2e9-110">locale</span></span>|<span data-ttu-id="3e2e9-111">string</span><span class="sxs-lookup"><span data-stu-id="3e2e9-111">string</span></span>|<span data-ttu-id="3e2e9-p101">Представления языкового стандарта для пользователя, которое включает предпочитаемый язык и страну или регион. Пример: "en-us". В языковом компоненте используются коды из двух букв, определенные в стандарте [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), а в компоненте страны — коды из стандарта [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="3e2e9-p101">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
-|<span data-ttu-id="3e2e9-115">displayName</span><span class="sxs-lookup"><span data-stu-id="3e2e9-115">displayName</span></span>|<span data-ttu-id="3e2e9-116">string</span><span class="sxs-lookup"><span data-stu-id="3e2e9-116">string</span></span>|<span data-ttu-id="3e2e9-117">Имя, представляющее языковой стандарт пользователя на естественном языке, например "Английский (США)".</span><span class="sxs-lookup"><span data-stu-id="3e2e9-117">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
+|<span data-ttu-id="f059d-110">языковые стандарты</span><span class="sxs-lookup"><span data-stu-id="f059d-110">locale</span></span>|<span data-ttu-id="f059d-111">string</span><span class="sxs-lookup"><span data-stu-id="f059d-111">string</span></span>|<span data-ttu-id="f059d-p101">Представления языкового стандарта для пользователя, которое включает предпочитаемый язык и страну или регион. Пример: "en-us". В языковом компоненте используются коды из двух букв, определенные в стандарте [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), а в компоненте страны — коды из стандарта [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="f059d-p101">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
+|<span data-ttu-id="f059d-115">displayName</span><span class="sxs-lookup"><span data-stu-id="f059d-115">displayName</span></span>|<span data-ttu-id="f059d-116">string</span><span class="sxs-lookup"><span data-stu-id="f059d-116">string</span></span>|<span data-ttu-id="f059d-117">Имя, представляющее языковой стандарт пользователя на естественном языке, например "Английский (США)".</span><span class="sxs-lookup"><span data-stu-id="f059d-117">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3e2e9-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3e2e9-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f059d-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="f059d-118">JSON representation</span></span>
 
-<span data-ttu-id="3e2e9-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3e2e9-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f059d-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f059d-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

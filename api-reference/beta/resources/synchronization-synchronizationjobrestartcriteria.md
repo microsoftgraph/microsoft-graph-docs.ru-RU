@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Синчронизатионжобрестарткритериа
-description: 'Определяет область действия Синчронизатионжоб: restart.'
+title: Тип ресурса synchronizationJobRestartCriteria
+description: 'Определяет область действия synchronizationJob: действие перезапуска.'
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 82d671f411725a1e6537580205c7298cf887e3a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: ef15c9322c553d0eedb977c3f01ed5de2823e844
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023844"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136509"
 ---
-# <a name="synchronizationjobrestartcriteria-resource-type"></a><span data-ttu-id="0a570-103">Тип ресурса Синчронизатионжобрестарткритериа</span><span class="sxs-lookup"><span data-stu-id="0a570-103">synchronizationJobRestartCriteria resource type</span></span>
+# <a name="synchronizationjobrestartcriteria-resource-type"></a><span data-ttu-id="a2fb0-103">Тип ресурса synchronizationJobRestartCriteria</span><span class="sxs-lookup"><span data-stu-id="a2fb0-103">synchronizationJobRestartCriteria resource type</span></span>
 
-<span data-ttu-id="0a570-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a570-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a2fb0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a2fb0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0a570-105">Определяет область действия [синчронизатионжоб: Restart](../api/synchronization-synchronizationjob-restart.md) .</span><span class="sxs-lookup"><span data-stu-id="0a570-105">Defines the scope of the [synchronizationJob: restart](../api/synchronization-synchronizationjob-restart.md) action.</span></span>
+<span data-ttu-id="a2fb0-105">Определяет область действия [synchronizationJob: действие перезапуска.](../api/synchronization-synchronizationjob-restart.md)</span><span class="sxs-lookup"><span data-stu-id="a2fb0-105">Defines the scope of the [synchronizationJob: restart](../api/synchronization-synchronizationjob-restart.md) action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0a570-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="0a570-106">Properties</span></span>
-| <span data-ttu-id="0a570-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="0a570-107">Property</span></span>     | <span data-ttu-id="0a570-108">Тип</span><span class="sxs-lookup"><span data-stu-id="0a570-108">Type</span></span>   |<span data-ttu-id="0a570-109">Описание</span><span class="sxs-lookup"><span data-stu-id="0a570-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a2fb0-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a2fb0-106">Properties</span></span>
+| <span data-ttu-id="a2fb0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a2fb0-107">Property</span></span>     | <span data-ttu-id="a2fb0-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a2fb0-108">Type</span></span>   |<span data-ttu-id="a2fb0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a2fb0-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0a570-110">ресетскопе</span><span class="sxs-lookup"><span data-stu-id="0a570-110">resetScope</span></span>|<span data-ttu-id="0a570-111">String</span><span class="sxs-lookup"><span data-stu-id="0a570-111">String</span></span>| <span data-ttu-id="0a570-112">Разделенная запятыми комбинация следующих значений: `Full` ,,, `QuarantineState` `Watermark` `Escrows` , `ConnectorDataStore` .</span><span class="sxs-lookup"><span data-stu-id="0a570-112">Comma-separated combination of the following values: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`.</span></span> <span data-ttu-id="0a570-113">Используйте `Full` , если вы хотите использовать все параметры.</span><span class="sxs-lookup"><span data-stu-id="0a570-113">Use `Full` if you want all of the options.</span></span>|
+|<span data-ttu-id="a2fb0-110">resetScope</span><span class="sxs-lookup"><span data-stu-id="a2fb0-110">resetScope</span></span>|<span data-ttu-id="a2fb0-111">Строка</span><span class="sxs-lookup"><span data-stu-id="a2fb0-111">String</span></span>| <span data-ttu-id="a2fb0-112">Сочетание следующих значений, разделенных запятой: `Full` , `QuarantineState` , , `Watermark` `Escrows` `ConnectorDataStore` .</span><span class="sxs-lookup"><span data-stu-id="a2fb0-112">Comma-separated combination of the following values: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`.</span></span> <span data-ttu-id="a2fb0-113">Используйте, `Full` если вам нужны все параметры.</span><span class="sxs-lookup"><span data-stu-id="a2fb0-113">Use `Full` if you want all of the options.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0a570-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0a570-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a2fb0-114">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="a2fb0-114">JSON representation</span></span>
 
-<span data-ttu-id="0a570-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0a570-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a2fb0-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a2fb0-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

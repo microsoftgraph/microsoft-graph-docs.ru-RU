@@ -2,60 +2,60 @@
 title: 'outlookUser: supportedLanguages'
 description: Получение списка поддерживаемых языковых стандартов и языков, которые настроены на сервере почтовых ящиков пользователя.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02640dddf3b70489aa7f1bb3f42acde09a9cbba0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a39e8e3a9116a7dc54241a22fd1832d9eba3a3be
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135158"
 ---
-# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="4a01d-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="4a01d-103">outlookUser: supportedLanguages</span></span>
+# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="10993-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="10993-103">outlookUser: supportedLanguages</span></span>
 
-<span data-ttu-id="4a01d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4a01d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="10993-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10993-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4a01d-105">Получение списка поддерживаемых языковых стандартов и языков, которые настроены на сервере почтовых ящиков пользователя.</span><span class="sxs-lookup"><span data-stu-id="4a01d-105">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="10993-105">Получение списка поддерживаемых языковых стандартов и языков, которые настроены на сервере почтовых ящиков пользователя.</span><span class="sxs-lookup"><span data-stu-id="10993-105">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="4a01d-106">Настраивая клиент Outlook, пользователь выбирает язык из этого списка.</span><span class="sxs-lookup"><span data-stu-id="4a01d-106">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="4a01d-107">После этого вы можете получить выбранный язык вместе с [ настройками почтового ящика пользователя](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="4a01d-107">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="10993-106">Настраивая клиент Outlook, пользователь выбирает язык из этого списка.</span><span class="sxs-lookup"><span data-stu-id="10993-106">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="10993-107">После этого вы можете получить выбранный язык вместе с [ настройками почтового ящика пользователя](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="10993-107">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="4a01d-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4a01d-108">Permissions</span></span>
-<span data-ttu-id="4a01d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4a01d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="10993-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="10993-108">Permissions</span></span>
+<span data-ttu-id="10993-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10993-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a01d-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4a01d-111">Permission type</span></span>      | <span data-ttu-id="4a01d-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4a01d-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="10993-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="10993-111">Permission type</span></span>      | <span data-ttu-id="10993-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="10993-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4a01d-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4a01d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="4a01d-114">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="4a01d-114">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="4a01d-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4a01d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a01d-116">User.Read</span><span class="sxs-lookup"><span data-stu-id="4a01d-116">User.Read</span></span>    |
-|<span data-ttu-id="4a01d-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4a01d-117">Application</span></span> | <span data-ttu-id="4a01d-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="4a01d-118">User.Read.All</span></span> |
+|<span data-ttu-id="10993-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="10993-113">Delegated (work or school account)</span></span> | <span data-ttu-id="10993-114">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="10993-114">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="10993-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="10993-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10993-116">User.Read</span><span class="sxs-lookup"><span data-stu-id="10993-116">User.Read</span></span>    |
+|<span data-ttu-id="10993-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="10993-117">Application</span></span> | <span data-ttu-id="10993-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="10993-118">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4a01d-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4a01d-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="10993-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="10993-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedLanguages
 GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```
-## <a name="request-headers"></a><span data-ttu-id="4a01d-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4a01d-120">Request headers</span></span>
-| <span data-ttu-id="4a01d-121">Имя</span><span class="sxs-lookup"><span data-stu-id="4a01d-121">Name</span></span>       | <span data-ttu-id="4a01d-122">Тип</span><span class="sxs-lookup"><span data-stu-id="4a01d-122">Type</span></span> | <span data-ttu-id="4a01d-123">Описание</span><span class="sxs-lookup"><span data-stu-id="4a01d-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="10993-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="10993-120">Request headers</span></span>
+| <span data-ttu-id="10993-121">Имя</span><span class="sxs-lookup"><span data-stu-id="10993-121">Name</span></span>       | <span data-ttu-id="10993-122">Тип</span><span class="sxs-lookup"><span data-stu-id="10993-122">Type</span></span> | <span data-ttu-id="10993-123">Описание</span><span class="sxs-lookup"><span data-stu-id="10993-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4a01d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4a01d-124">Authorization</span></span>  | <span data-ttu-id="4a01d-125">string</span><span class="sxs-lookup"><span data-stu-id="4a01d-125">string</span></span>  | <span data-ttu-id="4a01d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4a01d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="10993-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="10993-124">Authorization</span></span>  | <span data-ttu-id="10993-125">string</span><span class="sxs-lookup"><span data-stu-id="10993-125">string</span></span>  | <span data-ttu-id="10993-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="10993-p103">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="4a01d-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4a01d-128">Request body</span></span>
-<span data-ttu-id="4a01d-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4a01d-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="10993-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="10993-128">Request body</span></span>
+<span data-ttu-id="10993-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="10993-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4a01d-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="4a01d-130">Response</span></span>
-<span data-ttu-id="4a01d-131">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [localeInfo](../resources/localeinfo.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4a01d-131">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="10993-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="10993-130">Response</span></span>
+<span data-ttu-id="10993-131">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [localeInfo](../resources/localeinfo.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="10993-131">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a01d-132">Пример</span><span class="sxs-lookup"><span data-stu-id="4a01d-132">Example</span></span>
-<span data-ttu-id="4a01d-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="4a01d-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="4a01d-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="4a01d-134">Request</span></span>
-<span data-ttu-id="4a01d-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4a01d-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="10993-132">Пример</span><span class="sxs-lookup"><span data-stu-id="10993-132">Example</span></span>
+<span data-ttu-id="10993-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="10993-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="10993-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="10993-134">Request</span></span>
+<span data-ttu-id="10993-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="10993-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4a01d-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="4a01d-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="10993-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="10993-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_supportedlanguages"
@@ -63,27 +63,27 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 ```
-# <a name="c"></a>[<span data-ttu-id="4a01d-137">C#</span><span class="sxs-lookup"><span data-stu-id="4a01d-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="10993-137">C#</span><span class="sxs-lookup"><span data-stu-id="10993-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedlanguages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4a01d-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4a01d-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="10993-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10993-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-supportedlanguages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4a01d-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4a01d-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="10993-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10993-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-supportedlanguages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4a01d-140">Java</span><span class="sxs-lookup"><span data-stu-id="4a01d-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="10993-140">Java</span><span class="sxs-lookup"><span data-stu-id="10993-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedlanguages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4a01d-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="4a01d-141">Response</span></span>
-<span data-ttu-id="4a01d-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4a01d-142">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="10993-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="10993-141">Response</span></span>
+<span data-ttu-id="10993-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="10993-142">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

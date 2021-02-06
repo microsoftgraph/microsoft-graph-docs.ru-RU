@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Провисионингсистемдетаилс
-description: Представляет систему, в которую были подготовлены пользователи.
+title: Тип ресурса provisioningSystemDetails
+description: Представляет систему, для которую пользователь был представлен или из нее.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 6880214614047000fcc5a793faf4be3e5a88a5e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5400088c1f239bd73e093679bbc13b8034800f28
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026448"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135340"
 ---
-# <a name="provisioningsystemdetails-resource-type"></a><span data-ttu-id="4e140-103">Тип ресурса Провисионингсистемдетаилс</span><span class="sxs-lookup"><span data-stu-id="4e140-103">provisioningSystemDetails resource type</span></span>
+# <a name="provisioningsystemdetails-resource-type"></a><span data-ttu-id="d9038-103">Тип ресурса provisioningSystemDetails</span><span class="sxs-lookup"><span data-stu-id="d9038-103">provisioningSystemDetails resource type</span></span>
 
-<span data-ttu-id="4e140-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4e140-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d9038-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9038-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4e140-105">Представляет систему, в которую были подготовлены пользователи.</span><span class="sxs-lookup"><span data-stu-id="4e140-105">Represents the system that a user was provisioned to or from.</span></span> <span data-ttu-id="4e140-106">Например, при подготовке пользователя из Azure Active Directory (Azure AD) к ServiceNow система является системой Azure AD, а целевой системой является ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="4e140-106">For example, when provisioning a user from Azure Active Directory (Azure AD) to ServiceNow, the source system is Azure AD, and the target system is ServiceNow.</span></span>
+<span data-ttu-id="d9038-105">Представляет систему, для которую пользователь был представлен или из нее.</span><span class="sxs-lookup"><span data-stu-id="d9038-105">Represents the system that a user was provisioned to or from.</span></span> <span data-ttu-id="d9038-106">Например, при подготовка пользователя из Azure Active Directory (Azure AD) в ServiceNow, источником системы является Azure AD, а целевая система — ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="d9038-106">For example, when provisioning a user from Azure Active Directory (Azure AD) to ServiceNow, the source system is Azure AD, and the target system is ServiceNow.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4e140-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4e140-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d9038-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="d9038-107">Properties</span></span>
 
-| <span data-ttu-id="4e140-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4e140-108">Property</span></span>     | <span data-ttu-id="4e140-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4e140-109">Type</span></span>        | <span data-ttu-id="4e140-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4e140-110">Description</span></span> |
+| <span data-ttu-id="d9038-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="d9038-108">Property</span></span>     | <span data-ttu-id="d9038-109">Тип</span><span class="sxs-lookup"><span data-stu-id="d9038-109">Type</span></span>        | <span data-ttu-id="d9038-110">Описание</span><span class="sxs-lookup"><span data-stu-id="d9038-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="4e140-111">details</span><span class="sxs-lookup"><span data-stu-id="4e140-111">details</span></span>|[<span data-ttu-id="4e140-112">detailsInfo</span><span class="sxs-lookup"><span data-stu-id="4e140-112">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="4e140-113">Сведения о системе.</span><span class="sxs-lookup"><span data-stu-id="4e140-113">Details of the system.</span></span>|
-|<span data-ttu-id="4e140-114">displayName</span><span class="sxs-lookup"><span data-stu-id="4e140-114">displayName</span></span>|<span data-ttu-id="4e140-115">String</span><span class="sxs-lookup"><span data-stu-id="4e140-115">String</span></span>|<span data-ttu-id="4e140-116">Имя системы, в которую были подготовлены пользователи.</span><span class="sxs-lookup"><span data-stu-id="4e140-116">Name of the system that a user was provisioned to or from.</span></span>|
-|<span data-ttu-id="4e140-117">id</span><span class="sxs-lookup"><span data-stu-id="4e140-117">id</span></span>|<span data-ttu-id="4e140-118">String</span><span class="sxs-lookup"><span data-stu-id="4e140-118">String</span></span>|<span data-ttu-id="4e140-119">Идентификатор системы, в которую были подготовлены пользователи.</span><span class="sxs-lookup"><span data-stu-id="4e140-119">Identifier of the system that a user was provisioned to or from.</span></span>|
+|<span data-ttu-id="d9038-111">details</span><span class="sxs-lookup"><span data-stu-id="d9038-111">details</span></span>|[<span data-ttu-id="d9038-112">detailsInfo</span><span class="sxs-lookup"><span data-stu-id="d9038-112">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="d9038-113">Сведения о системе.</span><span class="sxs-lookup"><span data-stu-id="d9038-113">Details of the system.</span></span>|
+|<span data-ttu-id="d9038-114">displayName</span><span class="sxs-lookup"><span data-stu-id="d9038-114">displayName</span></span>|<span data-ttu-id="d9038-115">Строка</span><span class="sxs-lookup"><span data-stu-id="d9038-115">String</span></span>|<span data-ttu-id="d9038-116">Имя системы, в которую или из нее был вошел пользователь.</span><span class="sxs-lookup"><span data-stu-id="d9038-116">Name of the system that a user was provisioned to or from.</span></span>|
+|<span data-ttu-id="d9038-117">id</span><span class="sxs-lookup"><span data-stu-id="d9038-117">id</span></span>|<span data-ttu-id="d9038-118">Строка</span><span class="sxs-lookup"><span data-stu-id="d9038-118">String</span></span>|<span data-ttu-id="d9038-119">Идентификатор системы, в которую или из нее был вошел пользователь.</span><span class="sxs-lookup"><span data-stu-id="d9038-119">Identifier of the system that a user was provisioned to or from.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4e140-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4e140-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d9038-120">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="d9038-120">JSON representation</span></span>
 
-<span data-ttu-id="4e140-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4e140-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d9038-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d9038-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
