@@ -1,16 +1,16 @@
 ---
 title: 'message: createReplyAll'
-description: 'Создание черновика сообщения "ответить всем" для включения комментария или обновления любых свойств сообщения '
+description: 'Создайте черновик сообщения для всех ответов, чтобы включить комментарий или обновить любые свойства сообщения, '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 992cc883a99bcd5877035fc8dd8faee8b7604c12
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 593024ee53e739b0651646309b21e20934a33940
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132814"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -22,9 +22,9 @@ ms.locfileid: "48981580"
 
 **Примечание**
 
-- Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра. Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.
-- Если свойство **replyTo** указано в исходном сообщении, в формате Интернет-сообщений ( [RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в  
-свойства **replyTo** и **toRecipients** , а не получатели в свойствах **from** и **toRecipients** . 
+- Можно указать комментарий или свойство **body** `message` параметра. Если указать оба этих запроса, будет возвращена ошибка "HTTP 400 Bad Request".
+- Если свойство **replyTo** указано в исходном сообщении в формате сообщений Интернета [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)необходимо отправить ответ получателям в  
+**свойства replyTo** **и toRecipients,** а не получатели в свойствах **from** и **toRecipients.** 
 
 
 ## <a name="permissions"></a>Разрешения
@@ -56,14 +56,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-|message|[message](../resources/message.md)|Все доступные для записи свойства, которые необходимо обновить в сообщении "ответить всем".|
+|message|[message](../resources/message.md)|Любые записаемые свойства, которые необходимо обновить в сообщении для всех ответов.|
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-В следующем примере создается черновик для ответа ALL и добавляется вложение и комментарий в одном вызове **createReplyAll** .
+В следующем примере создается черновик для ответа всем, добавляется вложение и комментарий в одном вызове **createReplyAll.**
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

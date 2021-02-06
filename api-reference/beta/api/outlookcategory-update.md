@@ -1,16 +1,16 @@
 ---
 title: Обновление категории Outlook
-description: 'Обновление перезаписываемого свойства **color** указанного объекта outlookCategory. Невозможно изменить свойство **DisplayName** '
+description: 'Обновление перезаписываемого свойства **color** указанного объекта outlookCategory. Невозможно изменить свойство **displayName** '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ccff867928bfd456af85e48a90e377f3a5ce1adc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 85e2b6f532de7edd753b670700e53a9fd2d9b8af
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972881"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133667"
 ---
 # <a name="update-outlook-category"></a>Обновление категории Outlook
 

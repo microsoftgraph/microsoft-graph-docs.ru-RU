@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipal: Упдатепассвордсинглесигнонкредентиалс'
-description: Обновление учетных данных единого входа с помощью пароля пользователя или группы.
+title: 'servicePrincipal: updatePasswordSingleSignOnCredentials'
+description: Обновление учетных данных единого входа с помощью пароля для пользователя или группы.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3bf67536398326f92d95dacd2a9d831076bed918
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 154e74f3cdf7ed8b0fd690bd4b5b6c476a787d30
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132120"
 ---
-# <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal: Упдатепассвордсинглесигнонкредентиалс
+# <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal: updatePasswordSingleSignOnCredentials
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление учетных данных единого входа с помощью пароля пользователя или группы.
+Обновление учетных данных единого входа с помощью пароля для пользователя или группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,12 +26,12 @@ ms.locfileid: "48969267"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> Пользователи могут самостоятельно создавать учетные данные. Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор. Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> Пользователи могут создавать учетные данные для себя. Владельцы и администраторы основных служб со следующими ролями могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные узнать см. в [ролях каталога.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,8 +54,8 @@ POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
-|записей|Коллекция [учетных данных](../resources/credential.md)|Список объектов учетных данных, определяющих полный вход.|
+|id|Строка|ИД пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|credentials|[коллекция учетных](../resources/credential.md) данных|Список объектов учетных данных, которые определяют полный поток входа.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Кондитионалакцесссессионконтрол
+title: Тип ресурса conditionalAccessSessionControl
 description: Базовый тип управления сеансом.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d1d6de0ee5b50b67e994a97c098cea3bf3cc89ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d0cdf7928eff5b574268147d1acbee4fe0fc072
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132330"
 ---
-# <a name="conditionalaccesssessioncontrol-resource-type"></a>Тип ресурса Кондитионалакцесссессионконтрол
+# <a name="conditionalaccesssessioncontrol-resource-type"></a>Тип ресурса conditionalAccessSessionControl
 
 Пространство имен: microsoft.graph
 
@@ -24,9 +24,9 @@ ms.locfileid: "48021945"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
+|isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

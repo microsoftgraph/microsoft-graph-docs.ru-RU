@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Привилежедролесуммари
+title: Тип ресурса privilegedRoleSummary
 description: Сводка статистики для определенной роли.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 05b8646090726570ed0d4ec9f38862a404bbc6d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 368ed2ba6b206ba102f821ceac38de70494f8718
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070501"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133976"
 ---
-# <a name="privilegedrolesummary-resource-type"></a>Тип ресурса Привилежедролесуммари
+# <a name="privilegedrolesummary-resource-type"></a>Тип ресурса privilegedRoleSummary
 
 Пространство имен: microsoft.graph
 
@@ -25,19 +25,19 @@ ms.locfileid: "48070501"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Чтение свойств и связей объекта Привилежедролесуммари.|
+|[Получение privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Чтение свойств и связей объекта privilegedRoleSummary.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|елеватедкаунт|int32|Число пользователей с назначенной ролью и активацией роли.|
-|id|string| Уникальный идентификатор для роли. Только для чтения.|
-|манажедкаунт|int32|Количество пользователей, которым назначена роль, но отключена роль.|
-|мфаенаблед|boolean|**значение true** , если для активации роли требуется mfa. **false** , если для активации роли не требуется mfa.|
-|status|string| Возможные значения: `ok`, `bad`. Значение зависит от коэффициента (Манажедкаунт/Усерскаунт). Если отношение меньше заданного порогового значения, `ok` возвращается. В противном случае `bad` возвращается.|
-|усерскаунт|int32|Число пользователей, которым назначена роль.|
+|elevatedCount|int32|Количество пользователей, для пользователей с назначенной ролью и ролью активируется.|
+|id|string| Уникальный идентификатор роли. Только для чтения.|
+|managedCount|int32|Количество пользователей с назначенной ролью, но отключаемой ролью.|
+|mfaEnabled|boolean|**true,** если для активации роли требуется многофаксная активация. **false,** если активация роли не требует многофаксической активации.|
+|status|string| Возможные значения: `ok`, `bad`. Значение зависит от соотношения (managedCount / usersCount). Если коэффициент меньше предварительно заранее установленного порогового значения, `ok` возвращается. В `bad` противном случае возвращается.|
+|usersCount|int32|Количество пользователей, которые назначены этой роли.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

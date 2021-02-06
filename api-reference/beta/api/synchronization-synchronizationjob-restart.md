@@ -1,24 +1,24 @@
 ---
-title: Перезапуск Синчронизатионжоб
-description: Перезапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге. При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.
+title: Restart synchronizationJob
+description: Перезапустите задание синхронизации, принудительно обжав все объекты в каталоге. При желании очищает существующее состояние синхронизации и предыдущие ошибки.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ef264ff6720f9aa1863ab731db741e441fe3a5d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: dc257c78f5f7463cafb987a0d34c8fed546f3dd8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132785"
 ---
-# <a name="restart-synchronizationjob"></a>Перезапуск Синчронизатионжоб
+# <a name="restart-synchronizationjob"></a>Restart synchronizationJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перезапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге. При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.
+Перезапустите задание синхронизации, принудительно обобсвив все объекты в каталоге. При желании очищает существующее состояние синхронизации и предыдущие ошибки.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,15 +43,15 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите объект JSON со следующим параметром.
+В теле запроса укажу объект JSON со следующим параметром.
 
 | Параметр     | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|criteria       |[синчронизатионжобрестарткритериа](../resources/synchronization-synchronizationjobrestartcriteria.md) |Условия перезапуска|
+|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Условия перезапуска|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `204 No Content` отклик. Метод не возвращает данные в теле отклика.
+В случае успеха возвращает `204 No Content` ответ. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 

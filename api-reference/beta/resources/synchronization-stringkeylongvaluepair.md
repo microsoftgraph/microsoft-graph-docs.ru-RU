@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Стрингкэйлонгвалуепаир
-description: Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, и значением является Int64.
+title: Тип ресурса stringKeyLongValuePair
+description: Представляет пару "ключ-значение", где ключ — это строка, а значение — Int64.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 34f2e368b45f3a9647eedfd3a6dc1ab6b2b6e9cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: a7d9cbba895f1ebb38abf1ae92dc58243c079e25
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132531"
 ---
-# <a name="stringkeylongvaluepair-resource-type"></a>Тип ресурса Стрингкэйлонгвалуепаир
+# <a name="stringkeylongvaluepair-resource-type"></a>Тип ресурса stringKeyLongValuePair
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, и значением является Int64.
+Представляет пару "ключ-значение", где ключ — это строка, а значение — Int64.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Ключ.|
+|key|Строка|Ключ.|
 |значение|Int64|Значение|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса Акцессревиевскопе
-description: 'В функции рецензирования Access в Azure AD — `accessReviewScope` указывает, какие сущности будут проверены при проверке доступа.  '
+title: Тип ресурса accessReviewScope
+description: 'В функции проверки доступа Azure AD объекты, которые будут рассмотрены в `accessReviewScope` проверке доступа.  '
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: af5a9bde0763f8aea9e28dc74832586c9e0d2e82
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 8739ff822ffc6b0f2989b80a150c7d968880f532
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001043"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133447"
 ---
-# <a name="accessreviewscope-resource-type"></a>Тип ресурса Акцессревиевскопе
+# <a name="accessreviewscope-resource-type"></a>Тип ресурса accessReviewScope
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Акцессревиевскопе** определяет, какие сущности будут проверены в [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md). Он выражается в запросе OData. Тип запроса также должен быть выражен таким образом, чтобы можно было поддерживать сценарии для просмотра сущностей за преMicrosoftGraph, таких как ARM.
+**AccessReviewScope** определяет, какие сущности будут рассмотрены в [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Это выражается как запрос odata. Тип запроса также должен быть выражен, чтобы сценарии можно было поддерживать для просмотра сущностями за пределами MicrosoftGraph, например ARM.
 
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип  | Описание |
 | :-------------------------| :---------- | :---------- |
-| Запрос |Строка  | Запрос, указывающий, что будет рассмотрено. Примеры приведены в таблице. |
-|куеритипе  |Строка | Тип запроса. Примеры включают MicrosoftGraph и ARM. |
+| Запрос |Строка  | Запрос, определяющий, что будет рассмотрено. Примеры см. в таблице. |
+|queryType  |Строка | Тип запроса. Примеры: MicrosoftGraph и ARM. |
 
-### <a name="supported-queries-for-accessreviewscope-as-scope"></a>Поддерживаемые запросы для Акцессревиевскопе в качестве области
-Ниже приведены запросы, поддерживаемые в качестве `scope` свойства в [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md) .
+### <a name="supported-queries-for-accessreviewscope-as-scope"></a>Поддерживаемые запросы для accessReviewScope в качестве области
+Далее запросы поддерживаются в качестве `scope` свойства [в accessReviewScheduleDefinition](accessreviewscheduledefinition.md)
 
 |Сценарий| Запрос | Дополнительные комментарии |
 |--|--|-- |
-| Просмотр всех пользователей, назначенных группе | Идентификатор/граупс/{грауп}/Транситивемемберс ||
-| Обзор гостевых пользователей, назначенных группе | /граупс/{грауп ID}/Микрософт.граф.Усер/? $count = true&$filter = (userType EQ "гость") ||
-| Проверка пользователей, назначенных всем группам | ./мемберс/Микрософт.граф.Усер/? $count = true&$filter = (userType EQ "гость") | Обратите внимание, что соответствующий Инстанцеенумератионскопе также должен быть передан в Акцессревиевсчедуледефинитион. В таблице ниже представлен запрос Инстанцеенумератионскопе. |
-| Проверка Ассигмент на доступ к пакету управления обслуживанием | /Идентитиговернанце/ентитлементманажемент/акцесспаккажеассигнментс? $filter = (Акцесспаккажеид EQ "{ИД пакета}" и assignmentPolicyId EQ "{ID}")| Обратите внимание, что для проверки назначений пакетов Access поддерживается только чтение|
+| Проверка всех пользователей, которые назначены группе | /groups/{group id}/transitiveMembers ||
+| Просмотр гостевых пользователей, присвоенных группе | /groups/{group id}/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') ||
+| Проверка гостевых пользователей, присвоенных всем группам | ./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') | Обратите внимание, что соответствующий экземплярEnumerationScope также следует передать в accessReviewScheduleDefinition. См. таблицу ниже для запроса instanceEnumerationScope. |
+| Проверки пакета управления правами на доступ к данным | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Обратите внимание, что для проверки назначения пакета Access поддерживается только чтение|
 
-### <a name="supported-queries-for-accessreviewscope-as-instanceenumerationscope"></a>Поддерживаемые запросы для Акцессревиевскопе как Инстанцеенумератионскопе
-Ниже приведены запросы, поддерживаемые в качестве `instanceEnumerationScope` свойства в [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md) .
+### <a name="supported-queries-for-accessreviewscope-as-instanceenumerationscope"></a>Поддерживаемые запросы для accessReviewScope как instanceEnumerationScope
+Далее запросы поддерживаются в качестве `instanceEnumerationScope` свойства [в accessReviewScheduleDefinition](accessreviewscheduledefinition.md)
 
 |Сценарий| Запрос | Дополнительные комментарии |
 |--|--|--|
-| Проверка пользователей, которым назначены все группы, за исключением указанных групп | /граупс? $filter = (groupTypes/Any (к:к + EQ + ' Unified ') и идентификатор Ne ' {Group ID} ' и ID Ne ' {Group ID} ' и ID Ne ' {Group ID} ') &$count = true | Обратите внимание, что соответствующая область также должна передаваться в Акцессревиевсчедуледефинитион. В разделе "Просмотр гостевых пользователей, назначенных всем группам" в таблице свойств области над запросом области. |
+| Просмотр гостевых пользователей, которые назначены всем группам, за исключением указанных групп | /groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '{group id}' and id ne '{group id}' and id ne '{group id}')&$count=true | Обратите внимание, что соответствующая область также должна быть передана в accessReviewScheduleDefinition. См. выше в таблице свойств области "Просмотр гостевых пользователей, присвоенных всем группам" запроса области. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

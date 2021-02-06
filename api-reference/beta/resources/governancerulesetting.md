@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Говернанцерулесеттинг
-description: Представляет правила, из которых состоят параметры ролей.
+title: Тип ресурса governanceRuleSetting
+description: Представляет правила, из которого состоят параметры роли.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b2a4b70eb7d8af5dde6e3741c3473683ca7e0586
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b55ddfea8f46f9d064b4a032a804c2c5f4847d1a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081638"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132694"
 ---
-# <a name="governancerulesetting-resource-type"></a>Тип ресурса Говернанцерулесеттинг
+# <a name="governancerulesetting-resource-type"></a>Тип ресурса governanceRuleSetting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет правила, из которых состоят параметры ролей.
+Представляет правила, из которого состоят параметры роли.
 
 
 ## <a name="properties"></a>Свойства
 |Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|рулеидентифиер|Строка        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule`` .|
-|setting       |String        |Параметры правила. Значением является строка JSON со списком пар в формате Parameter_Name: Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|ruleIdentifier|Строка        |ИД правила. Например, ``ExpirationRule`` и ``MfaRule`` .|
+|setting       |String        |Параметры правила. Значением является строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

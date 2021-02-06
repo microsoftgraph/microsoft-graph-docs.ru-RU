@@ -1,24 +1,24 @@
 ---
-title: Создание Синчронизатионжоб
-description: Создайте новое задание синхронизации с схемой синхронизации по умолчанию. Задание создано в отключенном состоянии. Запустите задание запуска, чтобы начать синхронизацию.
+title: Создание synchronizationJob
+description: Создание нового задания синхронизации со схемой синхронизации по умолчанию. Задание создается в отключеном состоянии. Вызов задания "Начните" для запуска синхронизации.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9b857ade97b841df28c4f5090bd4f9132b76e742
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: a565a393715edb2379590b225e0569f4397b9b23
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131651"
 ---
-# <a name="create-synchronizationjob"></a>Создание Синчронизатионжоб
+# <a name="create-synchronizationjob"></a>Создание synchronizationJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новое задание синхронизации с схемой синхронизации по умолчанию. Задание создано в отключенном состоянии. Запустите [Задание запуска](synchronization-synchronizationjob-start.md) , чтобы начать синхронизацию.
+Создание нового задания синхронизации со схемой синхронизации по умолчанию. Задание создается в отключеном состоянии. Вызов [задания "Начните"](synchronization-synchronizationjob-start.md) для запуска синхронизации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,11 +43,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в формате JSON. Единственное обязательное свойство — `templateId` . `templateId`Свойство должно быть соответствующим одному из шаблонов, созданных для этого приложения или субъекта-службы. Чтобы найти доступные шаблоны, используйте [шаблоны списков](synchronization-synchronizationtemplate-list.md).
+В теле запроса укажу представление объекта [synchronizationJob,](../resources/synchronization-synchronizationjob.md) который необходимо создать, в JSON. Единственное обязательное свойство `templateId` — . Свойство `templateId` должно соответствовать одному из шаблонов, созданных для этого приложения или основного приложения-службы. Чтобы найти доступные шаблоны, используйте [шаблоны списков.](synchronization-synchronizationtemplate-list.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `201 Created` код отклика и объект [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.
+В случае успеха возвращает код отклика и объект `201 Created` [synchronizationJob](../resources/synchronization-synchronizationjob.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса Акцесспаккажересаурцероле
+title: Тип ресурса accessPackageResourceRole
 description: Ссылка на роль, определенную в ресурсе.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ff36109d59ee0bef4d81caf16c16f69f26b0a03e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d7f97410c924b804ef4002932ca75182a461989
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133604"
 ---
-# <a name="accesspackageresourcerole-resource-type"></a>Тип ресурса Акцесспаккажересаурцероле
+# <a name="accesspackageresourcerole-resource-type"></a>Тип ресурса accessPackageResourceRole
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)роль ресурса пакета Access — это ссылка на роль, определенную в ресурсе. Эту ссылку можно использовать после создания пакета Access, чтобы указать роли каждого из ресурсов каталога, к которым должен предоставлять пакет Access, путем [создания области применения роли ресурса пакета Access](../api/accesspackage-post-accesspackageresourcerolescopes.md).
+В [управлении правами Azure AD](entitlementmanagement-root.md)роль ресурса пакета доступа является ссылкой на роль, определенную в ресурсе. Эта ссылка может использоваться после создания пакета доступа для указания ролей каждого из ресурсов каталога, в которые должен доставляться пакет доступа, путем создания области роли ресурса пакета [доступа.](../api/accesspackage-post-accesspackageresourcerolescopes.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список ролей ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md) | Получение списка объектов Акцесспаккажересаурцероле для каталога. |
+| [Список ролей ресурсов accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Коллекция accessPackageResourceRole](accesspackageresourcerole.md) | Получить список объектов accessPackageResourceRole для каталога. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание роли ресурса.|
-|displayName|Строка|Отображаемое имя роли ресурса, например роль, определяемую приложением.|
+|description|Строка|Описание роли ресурса.|
+|displayName|Строка|Отображаемого имени роли ресурса, например роли, определенной приложением.|
 |id|String| Только для чтения.|
-|оригинид|Строка|Уникальный идентификатор роли ресурса в исходной системе. |
-|оригинсистем|Строка|Тип ресурса в исходной системе, например `SharePointOnline` , `AadApplication` или `AadGroup` .|
+|originId|Строка|Уникальный идентификатор роли ресурса в системе источника. |
+|originSystem|Строка|Тип ресурса в системе источника, например `SharePointOnline` , или `AadApplication` `AadGroup` .|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажересаурце|[акцесспаккажересаурце](accesspackageresource.md)| Только для чтения. Допускается значение null.|
+|accessPackageResource|[accessPackageResource](accesspackageresource.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

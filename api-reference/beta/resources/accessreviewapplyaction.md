@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Акцессревиеваппляктион
-description: Представляет действие, которое необходимо выполнить для проверенных пользователей после завершения экземпляра проверки доступа.
+title: Тип ресурса accessReviewApplyAction
+description: Представляет действие, необходимое для проверяемой пользователей после завершения экземпляра проверки доступа.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 33aa0f7a9d7fbfeab9b957f4c94b87d6f6e50d44
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 7360c2a3a058eb4f884cb786c05a83efe09a6193
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001046"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133541"
 ---
-# <a name="accessreviewapplyaction-resource-type"></a>Тип ресурса Акцессревиеваппляктион
+# <a name="accessreviewapplyaction-resource-type"></a>Тип ресурса accessReviewApplyAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет базовый класс для применения действий в [акцессревиевсчедулесеттингс](accessreviewschedulesettings.md) объекта [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md). Поддерживаемые производные типы:
+Представляет базовый класс для применения действий [в accessReviewScheduleSettings](accessreviewschedulesettings.md) [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Поддерживаемые производные типы:
 
-- **ремовеакцессаппляктион** — это производный тип акцессревиеваппляктион, указывающий на удаление доступа сущности, которая просматривается после выполнения проверки. Это тип по умолчанию для свойства Аппляктионс в Акцессревиевсчедулесеттингс, и его не требуется указывать.
+- **removeAccessApplyAction** — это производный тип accessReviewApplyAction, который указывает на удаление доступа к объекту, проверяемого по завершении проверки. Это тип по умолчанию для свойства applyActions в accessReviewScheduleSettings, который не требуется задан.
 
-- **дисаблеандделетеусераппляктион** — это производный тип акцессревиеваппляктион, который указывает на отключение и удаление пользователя, который просматривается после выполнения проверки. Это не тип по умолчанию, и его необходимо указать в Акцессревиевсчедулесеттингс.
+- **disableAndDeleteUserApplyAction** — это производный тип accessReviewApplyAction, который указывает на отключение и удаление пользователя, проверяемого по завершении проверки. Этот тип не является типом по умолчанию и должен быть указан в accessReviewScheduleSettings.
 
 ## <a name="properties"></a>Свойства
 Нет

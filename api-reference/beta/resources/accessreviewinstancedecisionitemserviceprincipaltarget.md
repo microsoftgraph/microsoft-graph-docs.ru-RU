@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса АкцессревиевинстанцедеЦисионитемсервицепринЦипалтаржет
-description: Представляет целевой объект проверки в качестве целевого объекта участника службы.
+title: Тип ресурса accessReviewInstanceDecisionItemServicePrincipalTarget
+description: Представляет целевой объект проверки в качестве основного целевого объекта службы.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e9943a287dd28a44f3b36eae1a92d1b2c385496c
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: ef944fdd1b8dbe989b1ad92e3d49b1b057fdef74
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133499"
 ---
-# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>Тип ресурса АкцессревиевинстанцедеЦисионитемсервицепринЦипалтаржет
+# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemServicePrincipalTarget
 
 Пространство имен: microsoft.graph
 
-Представляет участника службы в разделе "Обзор" в [акцессревиевинстанце](accessreviewinstance.md).
+Представляет проверяемую службу в [accessReviewInstance.](accessreviewinstance.md)
 
-Наследуется от [акцессревиевинстанцедеЦисионитемтаржет](../resources/accessreviewinstancedecisionitemtarget.md).
+Наследуется [от accessReviewInstanceDecisionItemTarget.](../resources/accessreviewinstancedecisionitemtarget.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| сервицепринЦипалид | Строка | Идентификатор субъекта-службы, доступ к которому просматривается. |
-| сервицепринЦипалдисплайнаме | Строка | Отображаемое имя субъекта-службы, доступ к которому просматривается. |
-| appId | String | AppId для анализируемого объекта участника службы. |
+| servicePrincipalID | Строка | Идентификатор основного службы, доступ которого просматривается. |
+| servicePrincipalDisplayName | Строка | Отображаемого имени основного службы, доступ которого просматривается. |
+| appId | String | AppId для проверяемого объекта субъекта-службы. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

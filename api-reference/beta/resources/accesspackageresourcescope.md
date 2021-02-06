@@ -1,45 +1,45 @@
 ---
-title: Тип ресурса Акцесспаккажересаурцескопе
-description: В управлении службой управления правами Azure AD областью ресурсов пакета Access является ссылка на область в пределах ресурса.
+title: Тип ресурса accessPackageResourceScope
+description: В управлении правами Azure AD область ресурсов пакета доступа является ссылкой на область в ресурсе.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 355838fa9f93cef7d44972b98af317a74036e421
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1491028bb566e8742dcfc1e4928681f61e5272c7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133590"
 ---
-# <a name="accesspackageresourcescope-resource-type"></a>Тип ресурса Акцесспаккажересаурцескопе
+# <a name="accesspackageresourcescope-resource-type"></a>Тип ресурса accessPackageResourceScope
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)область ресурсов пакета Access — это ссылка на область в ресурсе для этих ресурсов с несколькими областями.
+В [управлении правами Azure AD](entitlementmanagement-root.md)область ресурсов пакета доступа — это ссылка на область в ресурсе для ресурсов с несколькими уровнями.
 
-Можно определить область ресурсов пакета доступа для ресурса, который уже был добавлен в пакет Access, с помощью [List акцесспаккажересаурцеролескопес](../api/accesspackage-list-accesspackageresourcerolescopes.md) , чтобы вернуть коллекцию объектов [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md) .
+Область ресурса пакета доступа для ресурса, который уже был добавлен в пакет доступа, можно определить с помощью списка [accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) для возврата коллекции объектов [accessPackageResourceRoleScope.](accesspackageresourcerolescope.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание области.|
-|displayName|String|Отображаемое имя области.|
+|description|Строка|Описание области.|
+|displayName|Строка|Отображаемого имени области.|
 |id|String| Только для чтения.|
-|исрутскопе|Boolean|Значение true, если области упорядочены в иерархию, а это верхняя или корневая область ресурса.|
-|оригинид|String|Уникальный идентификатор области ресурса в соответствии с определением в исходной системе.|
-|оригинсистем|String|Исходная система для области.|
-|ролеоригинид|String|Исходная система для роли, если она отличается.|
-|url|String|Указатель ресурсов для области.|
+|isRootScope|Boolean|Имеет true, если области расположены в иерархии и это верхняя или корневая область ресурса.|
+|originId|Строка|Уникальный идентификатор области в ресурсе, определенный в системе источника.|
+|originSystem|Строка|Система источника для области.|
+|roleOriginId|Строка|Система источника для роли, если она отличается.|
+|url|String|Локатор ресурсов для области.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажересаурце|[акцесспаккажересаурце](accesspackageresource.md)| Только для чтения. Допускается значение null.|
+|accessPackageResource|[accessPackageResource](accesspackageresource.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

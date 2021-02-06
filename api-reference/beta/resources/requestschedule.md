@@ -3,14 +3,14 @@ title: Тип ресурса requestSchedule
 description: Расписание запроса может быть включено в запрос на назначение пакета доступа и присутствует в назначении пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e16359e554bba495378ec48ab52937c198a0ed5d
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 74fa9589552ba860962c73814e66332eda1c8e8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777630"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132540"
 ---
 # <a name="requestschedule-resource-type"></a>Тип ресурса requestSchedule
 
@@ -28,7 +28,7 @@ ms.locfileid: "49777630"
 |expiration|[expirationPattern](expirationpattern.md)|По истечении срока действия доступа.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Для повторяющегося доступа. В настоящее время не используется.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

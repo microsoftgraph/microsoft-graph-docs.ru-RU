@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Делегатедпермиссионклассификатион
+title: Тип ресурса delegatedPermissionClassification
 description: Используется для указания классификации делегированного разрешения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: f3d35c11ffe29feafed025b95c8f221e4f9ee4cb
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 4a567696d2adf0cd2a53cc2eb4d193ec1e1c2855
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921734"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133639"
 ---
-# <a name="delegatedpermissionclassification-resource-type"></a>Тип ресурса Делегатедпермиссионклассификатион
+# <a name="delegatedpermissionclassification-resource-type"></a>Тип ресурса delegatedPermissionClassification
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "48921734"
 
 Используется для указания классификации делегированного разрешения.
 
-Делегированные классификации разрешений можно использовать в сочетании с параметрами согласия пользователя для выбора разрешений, на которые пользователю разрешено согласие. Узнайте, [как конечные пользователи](/azure/active-directory/manage-apps/configure-user-consent) могут узнать больше о классификациях разрешений для приложений.
+Делегированную классификацию разрешений можно использовать в сочетании с настройками согласия пользователя, чтобы выбрать разрешения, на которые пользователь может дать согласие. См. ["Настройка согласия конечных пользователей на использование](/azure/active-directory/manage-apps/configure-user-consent) приложений для получения дополнительных данных о классификациях разрешений".
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| id | String | Уникальный идентификатор для ключа **делегатедпермиссионклассификатион** . Значение null не допускается. Только для чтения. |
-| classification | пермиссионклассификатионтипе | Заданное значение классификации. Возможные значения: `low` . Не поддерживает `$filter`. |
-| пермиссионид | Guid | Уникальный идентификатор ( **ID** ) для делегированного разрешения, указанного в коллекции **публишедпермиссионскопес** объекта [servicePrincipal](servicePrincipal.md). Требуется при создании. Не поддерживает `$filter`. |
-| пермиссионнаме | String | Значение утверждения ( **value** ) для делегированного разрешения, указанного в коллекции **публишедпермиссионскопес** объекта [servicePrincipal](servicePrincipal.md). Не поддерживает `$filter`. |
+| id | Строка | Уникальный идентификатор ключа **delegatedPermissionClassification.** Значение null не допускается. Только для чтения. |
+| classification | permissionClassificationType | Заданный значение классификации. Возможное значение: `low` . Не поддерживает `$filter`. |
+| permissionId | Guid | Уникальный идентификатор **(идентификатор)** делегированного разрешения, перечисленного в коллекции **publishedPermissionScopes** [servicePrincipal.](servicePrincipal.md) Требуется при создании. Не поддерживает `$filter`. |
+| permissionName | Строка | Значение утверждения **(значение)** для делегированного разрешения, перечисленного в коллекции **publishedPermissionScopes** [servicePrincipal.](servicePrincipal.md) Не поддерживает `$filter`. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -51,3 +51,4 @@ ms.locfileid: "48921734"
   "permissionName": "string"
 }
 ```
+

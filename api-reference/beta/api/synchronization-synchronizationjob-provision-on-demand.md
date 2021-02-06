@@ -3,14 +3,14 @@ title: 'synchronizationJob: provisionOnDemand'
 description: Выберите пользователя и подберем учетную запись по запросу.
 author: ArvindHarinder1
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ca9a670bfb70e35a76915514d925f7cb3fb0fb06
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: fa7acf4aa4ced807098d40f473aa4104593ed40a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133852"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
 
@@ -24,7 +24,7 @@ ms.locfileid: "49753435"
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт) |Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
 |Для приложений                            |Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос

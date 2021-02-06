@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Метадатаентри
-description: Метаданные для данного объекта.
+title: Тип ресурса metadataEntry
+description: Метаданные для заданного объекта.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a12711fbaeb8b613762f16a2a877cb1e2248369c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 9d10c6fd30d161e886ea782ca3564f550352a5f6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131875"
 ---
-# <a name="metadataentry-resource-type"></a>Тип ресурса Метадатаентри
+# <a name="metadataentry-resource-type"></a>Тип ресурса metadataEntry
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Метаданные для данного объекта.
+Метаданные для заданного объекта.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Имя свойства метаданных.|
+|key|Строка|Имя свойства метаданных.|
 |value|String|Значение свойства метаданных.|
 
 ## <a name="json-representation"></a>Представление в формате JSON

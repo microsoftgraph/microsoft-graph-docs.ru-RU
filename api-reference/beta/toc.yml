@@ -777,7 +777,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: Расширения
                 items:
                   - name: Список расширений
                     href: api/application-list-extensionproperty.md
@@ -873,7 +873,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Удаление из группы агентов
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Соединитель
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: Перечисление
@@ -910,7 +910,7 @@ items:
             items:
               - name: Перечисление субъектов-служб
                 href: api/serviceprincipal-list.md
-              - name: Создание директора-службы
+              - name: Создание основного службы
                 href: api/serviceprincipal-post-serviceprincipals.md
               - name: Получение субъекта-службы
                 href: api/serviceprincipal-get.md
@@ -4163,7 +4163,7 @@ items:
                     href: resources/intune-deviceconfig-certificateissuancestates.md
                   - name: Статус отзыва сертификатов
                     href: resources/intune-deviceconfig-certificaterevocationstatus.md
-                  - name: Изменение разрешения параметров uefi
+                  - name: Изменение разрешения uefi settings
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
                   - name: Код
                     href: resources/intune-deviceconfig-code.md
@@ -4495,7 +4495,7 @@ items:
                     href: resources/intune-deviceconfig-devicetypes.md
                   - name: Режим отправки диагностических данных
                     href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-                  - name: Группа Диффи Диффама (Diffieie)
+                  - name: Группа Диффи Диффама
                     href: resources/intune-deviceconfig-diffiehellmangroup.md
                   - name: Тип политики перечисления устройства защиты DMA
                     href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
@@ -5003,7 +5003,7 @@ items:
                         href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-ioscustomconfiguration-update.md
-                  - name: Конфигурация проверки подлинности на основе учетных данных на основе iOS
+                  - name: 'Конфигурация проверки подлинности учетных данных, производная от iOS'
                     href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
                     items:
                       - name: Перечисление
@@ -5533,7 +5533,7 @@ items:
                     href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
                   - name: Состояние обновления программного обеспечения macOS
                     href: resources/intune-deviceconfig-macossoftwareupdatestate.md
-                  - name: Сводка состояния обновления программного обеспечения macOS
+                  - name: Сводка о состоянии обновления программного обеспечения macOS
                     href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
                     items:
                       - name: Перечисление
@@ -7772,7 +7772,7 @@ items:
                     href: resources/intune-devices-revokeapplevpplicensesactionresult.md
                   - name: Сведения о теге области роли
                     href: resources/intune-auditing-rolescopetaginfo.md
-                  - name: Результат действия с повернутым устройством с ключами BitLocker
+                  - name: Результат действия устройства с поворачивать клавиши BitLocker
                     href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
                   - name: Сводка состояния базовой категории безопасности
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
@@ -7789,7 +7789,7 @@ items:
                         href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
                   - name: Состояние соответствия требованиям базового плана безопасности
                     href: resources/intune-deviceintent-securitybaselinecompliancestate.md
-                  - name: Политика вкладов базового плана безопасности
+                  - name: Базовая политика вкладов для системы безопасности
                     href: resources/intune-deviceintent-securitybaselinecontributingpolicy.md
                   - name: Состояние устройства базового плана безопасности
                     href: resources/intune-deviceintent-securitybaselinedevicestate.md
@@ -8022,7 +8022,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetric-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsmetric-update.md
-                  - name: История метрик аналитики пользовательского интерфейса
+                  - name: История показателей аналитики пользовательского интерфейса
                     href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
                     items:
                       - name: Перечисление
@@ -8510,7 +8510,7 @@ items:
                     href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
                   - name: Данные об управлении устройствами и приложениями
                     href: resources/intune-onboarding-deviceandappmanagementdata.md
-                  - name: Конфигурация управления совместной управлением устройствами
+                  - name: Конфигурация полномочий для совместной управления устройствами
                     href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
                     items:
                       - name: Перечисление
@@ -9572,7 +9572,7 @@ items:
             items:
               - name: Получение ошибок синхронизации
                 href: api/educationsynchronizationerrors-get.md
-      - name: Extensions
+      - name: Расширения
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -10099,6 +10099,8 @@ items:
                   - name: Создание домена
                     href: api/domain-post-domains.md
                   - name: Удаление домена
+                    href: api/domain-delete.md
+                  - name: Принудительное удаление домена
                     href: api/domain-forcedelete.md
                   - name: Получение домена
                     href: api/domain-get.md
@@ -10300,7 +10302,7 @@ items:
                         href: api/phoneauthenticationmethod-enablesmssignin.md
                       - name: Отключение sms-входов
                         href: api/phoneauthenticationmethod-disablesmssignin.md
-                  - name: Электронный адрес
+                  - name: Электронная почта
                     href: resources/emailauthenticationmethod.md
                     items:
                       - name: Перечисление
@@ -10346,7 +10348,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: Удаление
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                  - name: Политика microsoft Authenticator Для телефонного доступа без пароля (неподготовлена)
+                  - name: Политика входов на телефон без пароля Microsoft Authenticator (неподготовлена)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Получение
@@ -10468,7 +10470,7 @@ items:
               - name: Защита идентификации
                 href: resources/identityprotection-root.md
                 items:
-                  - name: События риска идентификации (неподготовленные)
+                  - name: События риска для удостоверений (неподготовленные)
                     items:
                       - name: Событие риска для удостоверений
                         href: resources/identityriskevent.md
@@ -10560,7 +10562,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-create.md
                   - name: Локализации
                     href: api/organizationalbrandingpropertieslocalization-get.md
-                  - name: Локализованное обновление
+                  - name: Обновление локализовано
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: Удаление локализованного
                     href: api/organizationalbrandingpropertieslocalization-delete.md
@@ -11054,6 +11056,13 @@ items:
                         href: api/accesspackageresourcerequest-list.md
                       - name: Создание
                         href: api/accesspackageresourcerequest-post.md
+                  - name: Среда ресурсов пакета Access
+                    href: resources/accesspackageresourceenvironment.md
+                    items:
+                      - name: Перечисление
+                        href: api/accesspackageresourceenvironment-list.md
+                      - name: Получение
+                        href: api/accesspackageresourceenvironment-get.md
                   - name: Область роли ресурса пакета access
                     href: resources/accesspackageresourcerolescope.md
                     items:
@@ -11093,9 +11102,9 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Служба Privileged Identity Management
+              - name: Управление привилегированными пользователями
                 items:
-                  - name: Служба Privileged Identity Management
+                  - name: Управление привилегированными пользователями
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD
                     items:
@@ -11605,7 +11614,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Удаление
                     href: api/educationalactivity-delete.md
-              - name: адрес электронной почты;
+              - name: Адрес электронной почты
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -11849,9 +11858,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Параметры
                 items:
-                  - name: Settings
+                  - name: Параметры
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -12542,7 +12551,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -13018,7 +13027,7 @@ items:
                     href: api/shiftpreferences-get.md
                   - name: Обновление
                     href: api/shiftpreferences-put.md
-              - name: Запрос на изменение смены подкачки
+              - name: Запрос на изменение смен смены
                 href: resources/swapshiftschangerequest.md
                 items:
                   - name: Перечисление

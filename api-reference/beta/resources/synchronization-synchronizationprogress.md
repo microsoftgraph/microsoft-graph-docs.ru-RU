@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Синчронизатионпрогресс
-description: Представляет ход выполнения Синчронизатионжоб в сторону завершения.
+title: Тип ресурса synchronizationProgress
+description: Представляет ход выполнения синхронизации.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5040cb32b664497f2cbed9dc9ca77ce2a2a54ee7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: f6f8f7cc5d0419a6f0e9203513db5b1452db1797
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023830"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131644"
 ---
-# <a name="synchronizationprogress-resource-type"></a>Тип ресурса Синчронизатионпрогресс
+# <a name="synchronizationprogress-resource-type"></a>Тип ресурса synchronizationProgress
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ход выполнения [синчронизатионжоб](synchronization-synchronizationjob.md) в сторону завершения.
+Представляет ход выполнения [синхронизации.](synchronization-synchronizationjob.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                              | Тип      | Описание    |
 |:--------------------------------------|:----------|:---------------|
-|комплетедунитс|Int32|Числитель коэффициента выполнения; количество единиц изменений, которые уже обработаны.|
-|прогрессобсерватиондатетиме|DateTimeOffset|Время отслеживания хода выполнения как смещение в минутах от времени в формате UTC.|
-|тоталунитс|Int32|Знаменатель коэффициента выполнения; количество единиц изменений, которые необходимо обработать для выполнения синхронизации.|
-|продукции|String|Необязательное описание единиц измерения.|
+|completedUnits|Int32|Числитель соотношения хода выполнения; количество уже обработанных единиц изменений.|
+|progressObservationDateTime|DateTimeOffset|Время наблюдения за ходом выполнения как смещение в минутах от времени в UTC.|
+|totalUnits|Int32|Коэффициент выполнения; количество единиц изменений, которые необходимо обработать для выполнения синхронизации.|
+|units|Строка|Необязательное описание единиц.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

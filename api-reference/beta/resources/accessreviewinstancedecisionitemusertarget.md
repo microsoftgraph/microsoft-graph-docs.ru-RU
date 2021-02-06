@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса АкцессревиевинстанцедеЦисионитемусертаржет
-description: Представляет целевой объект проверки от имени пользователя.
+title: Тип ресурса accessReviewInstanceDecisionItemUserTarget
+description: Представляет цель проверки в качестве пользователя.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: aa2117895599ba1d2c4b9829b7cad22b581f2055
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 73fba5b7329a6dd13ddc455b9ba327467dde9016
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001063"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133471"
 ---
-# <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>Тип ресурса АкцессревиевинстанцедеЦисионитемусертаржет
+# <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemUserTarget
 
 Пространство имен: microsoft.graph
 
-Представляет удостоверение пользователя в ходе рецензирования в [акцессревиевинстанце](accessreviewinstance.md).
+Представляет удостоверение пользователя, проверяемого в [accessReviewInstance.](accessreviewinstance.md)
 
-Наследуется от [акцессревиевинстанцедеЦисионитемтаржет](../resources/accessreviewinstancedecisionitemtarget.md).
+Наследуется [от accessReviewInstanceDecisionItemTarget.](../resources/accessreviewinstancedecisionitemtarget.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

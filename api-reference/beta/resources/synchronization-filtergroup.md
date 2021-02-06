@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Филтерграуп
-description: Определяет набор предложений, которым должен удовлетворять объект, чтобы рассматриваться в области.
+title: Тип ресурса filterGroup
+description: Определяет набор предложений, которые должны удовлетворяться объектом, чтобы считаться в области.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4dd174442cedf8f194bb9faf87d8e844b8c73163
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 6338ae4b02b79d1512d5e9f695a69155197e2f4a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131917"
 ---
-# <a name="filtergroup-resource-type"></a>Тип ресурса Филтерграуп
+# <a name="filtergroup-resource-type"></a>Тип ресурса filterGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определяет набор предложений, которым должен удовлетворять объект, чтобы рассматриваться в области. Объект рассматривается в области для группы (Группа оценивается как `true` ) только в том случае, если все предложения группы оцениваются `true` .
+Определяет набор предложений, которые должны удовлетворяться объектом, чтобы считаться в области. Объект рассматривается в области для группы (группа оценивается как ) только в том случае, если все предложения группы `true` оцениваются как `true` .
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|предложения|Коллекция [филтерклаусе](synchronization-filterclause.md)|Предложения фильтра (условия) этой группы. Все предложения в группе должны быть удовлетворены для того, чтобы Группа фильтров вычислить значение `true` .|
-|name|String|Понятное имя группы фильтров.|
+|clauses|[Коллекция filterClause](synchronization-filterclause.md)|Условия фильтра для этой группы. Все предложения в группе должны быть выполнены, чтобы группа фильтров оценивалась как `true` .|
+|name|String|Понятное для человека имя группы фильтров.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

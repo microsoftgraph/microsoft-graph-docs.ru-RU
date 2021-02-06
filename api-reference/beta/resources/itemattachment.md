@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса itemAttachment
-description: Контакт, событие или сообщение, присоединенное к другому событию,
+description: Контакт, событие или сообщение, вложенное в другое событие,
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: 9cce3ac77838867d70d2bd847e8a9d631e7f3b5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: db57bbad71349af6b40b16c88941444d6bac200e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075625"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133786"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
@@ -20,7 +20,7 @@ ms.locfileid: "48075625"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Контакт, событие или сообщение, прикрепленное к [событию](../resources/event.md)пользователя, [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).  
+Контакт, событие или сообщение, вложенное в событие [пользователя,](../resources/event.md) [сообщение,](../resources/message.md) [задачу Outlook](../resources/outlooktask.md)или [post.](../resources/post.md)  
 
 Производный от типа [attachment](attachment.md).
 

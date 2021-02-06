@@ -1,24 +1,24 @@
 ---
-title: Обновление Онпремисеспублишингпрофиле
-description: Обновление свойств объекта Онпремисеспублишингпрофиле.
+title: Обновление onPremisesPublishingProfile
+description: Обновление свойств объекта onPremisesPublishingProfile.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dfcd5ffb5cc2665559d0b74c9a2722424d3ee3be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e1200e66da53b564e21396bbf347959a3223fd3a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968792"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132794"
 ---
-# <a name="update-onpremisespublishingprofile"></a>Обновление Онпремисеспублишингпрофиле
+# <a name="update-onpremisespublishingprofile"></a>Обновление onPremisesPublishingProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [онпремисеспублишингпрофиле](../resources/onpremisespublishingprofile.md) .
+Обновление свойств объекта [onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,11 +46,11 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укавите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|хибридажентупдатерконфигуратион|хибридажентупдатерконфигуратион|Представляет [хибридажентупдатерконфигуратион](../resources/hybridagentupdaterconfiguration.md).|
+|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|Представляет [hybridAgentUpdaterConfiguration.](../resources/hybridagentupdaterconfiguration.md)|
 
 ## <a name="response"></a>Отклик
 
@@ -58,9 +58,9 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>Пример 1: обновление Упдатевиндов в Хибридажентупдатерконфигуратион
+### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>Пример 1. Обновление updateWindow в гибридной версииAgentUpdaterConfiguration
 
-В следующем примере выполняется обновление **упдатевиндов** в **хибридажентупдатерконфигуратион**.
+В следующем примере **обновляется updateWindow** в **гибридной версииAgentUpdaterConfiguration.**
 
 #### <a name="request"></a>Запрос
 
@@ -115,9 +115,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>Пример 2: обновление Деферупдате в Хибридажентупдатерконфигуратион 
+### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>Пример 2. Обновление deferUpdate в гибридной версииAgentUpdaterConfiguration 
 
-В следующем примере показано, как обновить **деферупдате** в **хибридажентупдатерконфигуратион**.
+В следующем примере обновления **deferUpdate** в **гибридной версииAgentUpdaterConfiguration.**
 
 #### <a name="request"></a>Запрос
 
@@ -148,9 +148,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>Пример 3: обновление Алловупдатеконфигуратионоверриде в Хибридажентупдатерконфигуратион
+### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>Пример 3. Обновление allowUpdateConfigurationOverride в гибридной версииAgentUpdaterConfiguration
 
-В следующем примере показано, как обновить **алловупдатеконфигуратионоверриде** в **хибридажентупдатерконфигуратион**.
+В следующем примере **обновляется allowUpdateConfigurationOverride в** **гибридной версииAgentUpdaterConfiguration.**
 
 #### <a name="request"></a>Запрос
 
@@ -190,5 +190,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

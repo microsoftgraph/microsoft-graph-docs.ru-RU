@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса АкцессревиевинстанцедеЦисионитемтаржет
-description: 'Представляет целевой объект проверки как целевой объект пользователя или целевой объект участника службы. '
+title: Тип ресурса accessReviewInstanceDecisionItemTarget
+description: 'Представляет целевой объект проверки как целевой объект пользователя или основной целевой объект службы. '
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c395ffffaf19f03185dac15238eb535155353dca
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: dc6b21634735ed1e7061bd738617f44e446e3288
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001062"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133506"
 ---
-# <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>Тип ресурса АкцессревиевинстанцедеЦисионитемтаржет
+# <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemTarget
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет базовый класс для различных типов целевых объектов проверки, каждый из которых имеет собственные конкретные свойства. Поддерживаемые целевые типы: [акцессревиевинстанцедеЦисионитемусертаржет](accessreviewinstancedecisionitemusertarget.md) и [акцессревиевинстанцедеЦисионитемсервицепринЦипалтаржет](accessreviewinstancedecisionitemserviceprincipaltarget.md).
+Представляет базовый класс для различных типов целевых объектов проверки, каждый из которых имеет собственные свойства. Поддерживаемые целевые типы: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) и [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
 
 ## <a name="properties"></a>Свойства
 Отсутствуют.

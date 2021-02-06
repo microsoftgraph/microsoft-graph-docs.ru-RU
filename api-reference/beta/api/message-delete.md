@@ -1,16 +1,16 @@
 ---
 title: Удаление сообщения
-description: Удаление сообщения из почтового ящика указанного пользователя или удаление связи сообщения.
+description: Удаление сообщения в почтовом ящике указанного пользователя или удаление связи сообщения.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cd91b26948ed3ecdd6c1b07b66217466e59b56d3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71ab17fa25dee8c5158d5ef166de68ca934d7ae5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981631"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132827"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
@@ -18,11 +18,11 @@ ms.locfileid: "48981631"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление сообщения из почтового ящика указанного пользователя или удаление связи сообщения.
+Удаление сообщения в почтовом ящике указанного пользователя или удаление связи сообщения.
 
-Например, вы можете [удалить из сообщения](../resources/mention.md) указанного пользователя.
+Например, можно удалить определенное [@упоминание](../resources/mention.md) указанного пользователя в сообщении.
 
->**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено [известным именем папки](../resources/mailfolder.md) `recoverableitemsdeletions` ). Дополнительные сведения см. в статье [Хранение удаленных](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+>**Примечание** Возможно, вам не удастся удалить элементы из папки удаления элементов для восстановления (представленные известным [именем папки).](../resources/mailfolder.md) `recoverableitemsdeletions` Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статьях "Хранение удаленных элементов" и "Очистка [удаленных](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) элементов".
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ ms.locfileid: "48981631"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Удаление указанного сообщения:
+Чтобы удалить указанное сообщение:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
@@ -44,7 +44,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-Чтобы удалить определенное [упоминание](../resources/mention.md) в сообщении, выполните следующие действия:
+Чтобы удалить определенное [упоминание](../resources/mention.md) в сообщении:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
@@ -67,7 +67,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
-В первом примере показано, как удалить указанное сообщение.
+В первом примере указанное сообщение удаляется.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>Запрос 2
-В следующем примере показано, как удалить определенное **упоминание** из указанного сообщения.
+В следующем примере удаляется определенное **упоминание** в указанном сообщении.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

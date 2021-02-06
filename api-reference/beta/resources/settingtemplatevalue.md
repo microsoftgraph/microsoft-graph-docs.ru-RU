@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Сеттингтемплатевалуе
-description: Представляет определение отдельного параметра шаблона, включая значение по умолчанию, если не создается экземпляр этого параметра.
+title: Тип ресурса settingTemplateValue
+description: Представляет отдельное определение параметра шаблона, включая значение по умолчанию для параметра, если этот параметр не создается.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: b0f9db75d870cc775b22011674e6a460e11d8812
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15110b88b62352476619501c50457a5bd1db5a89
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131630"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>Тип ресурса Сеттингтемплатевалуе
+# <a name="settingtemplatevalue-resource-type"></a>Тип ресурса settingTemplateValue
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет определение отдельного параметра шаблона, включая значение по умолчанию, если не создается экземпляр этого параметра.
+Представляет отдельное определение параметра шаблона, включая значение по умолчанию для параметра, если этот параметр не создается.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Значение|string|Значение по умолчанию для параметра. Только для чтения.|
+|defaultValue|string|Значение по умолчанию для параметра. Только для чтения.|
 |description|string|Описание параметра. Только для чтения.|
 |name|string|Имя параметра. Только для чтения.|
 |type|string|Тип параметра. Только для чтения.|

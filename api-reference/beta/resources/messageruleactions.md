@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса messageRuleActions
 description: Представляет набор действий, доступных для правила.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: aae9420f3d1b6e329a007eda3917ce7eaa8c4dda
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 21e7e08287911cb16c40333ec68d8cdd1f3b1fbd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133751"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
@@ -36,7 +36,7 @@ ms.locfileid: "47971547"
 | stopProcessingRules | Boolean | Указывает, должны ли обрабатываться последующие правила. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

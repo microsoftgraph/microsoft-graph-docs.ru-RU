@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fido2KeyRestrictions
-description: Представляет ключевые ограничения, которые применяются в рамках политики методов проверки подлинности для ключа безопасности FIDO2.
+description: Представляет ключевые ограничения, которые применяются в рамках политики методов проверки подлинности ключей безопасности FIDO2.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c606b1d7bdbf604bd5109379bffb2c1a20f60730
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: a40a185f688038d3c849113ae8e9b53c4f0652f5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418422"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133800"
 ---
 # <a name="fido2keyrestrictions-resource-type"></a>Тип ресурса fido2KeyRestrictions
 
@@ -18,14 +18,14 @@ ms.locfileid: "48418422"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ключевые ограничения, которые применяются в рамках [политики методов проверки подлинности для ключа безопасности FIDO2](../resources/fido2authenticationmethodconfiguration.md).
+Представляет ключевые ограничения, которые применяются в рамках политики методов проверки подлинности ключей безопасности [FIDO2.](../resources/fido2authenticationmethodconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аагуидс|Коллекция String|Коллекция идентификаторов GUID аттестации проверки подлинности. Аадгуидс определение типов ключей и производителей.|
-|енфорцементтипе|fido2RestrictionEnforcementType|Тип принудительного применения. Возможные значения: `allow`, `block`.|
-|Принудительное применение|Boolean|Определяет, включено ли настроенное применение ключа.|
+|aaGuids|Коллекция объектов string|Коллекция GUID аутентификации. AADGUID определяют ключевые типы и изготовителей.|
+|enforcementType|fido2RestrictionEnforcementType|Тип принуителя. Возможные значения: `allow`, `block`.|
+|isEnforced|Boolean|Определяет, включено ли настроено правопримение ключа.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

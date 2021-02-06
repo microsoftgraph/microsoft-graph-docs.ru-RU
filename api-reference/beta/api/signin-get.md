@@ -1,16 +1,16 @@
 ---
 title: Получение объекта signIn
 doc_type: apiPageType
-description: Получение объекта SignIn, содержащего все входные сведения о клиенте Azure Active Directory.
+description: Получите объект signIn, содержащий все входы в клиент Azure Active Directory.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba955ab431597efdaf3edfddbba715fdc502243a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: 139ee4c8ae45699f284d866740c494a86fcb05a9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134136"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "49524348"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [SignIn](../resources/signin.md) , содержащего конкретное пользовательское событие входа для вашего клиента. Сюда входят входы, в которых пользователю предлагается ввести имя пользователя или пароль, а также маркеры сеансов.
+Получите объект [signIn,](../resources/signin.md) содержащий определенное событие для вашего клиента. К ним относятся входы, при которых пользователю будет предложено ввести имя пользователя или пароль, а также маркеры сеанса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "49524348"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись) | Аудитлог. Read. ALL, Directory. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение | Аудитлог. Read. ALL, Directory. Read. ALL | 
+| Для приложений | AuditLog.Read.All, Directory.Read.All | 
 
 Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -47,7 +47,7 @@ GET /auditLogs/signIns/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,11 +55,11 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [SignIn](../resources/signin.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [signIn](../resources/signin.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Пример 1: пользователь подписывается с помощью MFA, который активируется политикой условного доступа. Основной способ проверки подлинности — Фидо.
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Пример 1. Вход пользователя с помощью MFA, запускаемого политикой условного доступа. Основная проверка подлинности — через FIDO.
 
 #### <a name="request"></a>Запрос
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -215,7 +215,7 @@ Content-length: 211
 }
 ```
 
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Пример 2: пользователь входит только с основной проверкой подлинности. Первичная проверка подлинности осуществляется с помощью облачного пароля.
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Пример 2. Пользователь должен в ней войт с помощью только первичной проверки подлинности. Основная проверка подлинности — облачный пароль.
 
 #### <a name="request"></a>Запрос
 

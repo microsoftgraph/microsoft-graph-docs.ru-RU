@@ -3,14 +3,14 @@ title: Проверки доступа Azure AD — членство в груп
 description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя. Эта документация обслуживает 2-ю версию API.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fd476139edafda2daaac38008cbcaa241ee29d45
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: b26bd7e42746b74a14d08849e9454864512ceca8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133408"
 ---
 # <a name="azure-ad-access-reviews-for-groups"></a>Проверки доступа Azure AD для групп
 
@@ -48,9 +48,9 @@ ms.locfileid: "49790603"
 |[Создание accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создание объекта `accessReviewScheduleDefinition`. |
 |[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление с `accessReviewScheduleDefinition` указанным ИД. |
 |[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств объекта с `accessReviewScheduleDefinition` указанным ИД. |
-|[Список accessReviewInstance](../api/accessreviewinstance-list.md) | [Коллекция accessReviewInstance](accessreviewinstance.md) | Перечисляет `accessReviewInstance` каждый из них для определенного `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` s в списки. |
+|[Список accessReviewInstance](../api/accessreviewinstance-list.md) | [Коллекция accessReviewInstance](accessreviewinstance.md) | Перечисляет `accessReviewInstance` каждый из них для определенного `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` s в листинги. |
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Возвращает для `accessReviewInstance` `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` s в объект. |
-|[Список ожидающих утверждения accessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [коллекция accessReviewInstance;](accessreviewinstance.md) | Получить `accessReviewInstance` все, что назначено вызываемму пользователю. |
+|[Список ожидающих утверждения accessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [коллекция accessReviewInstance;](accessreviewinstance.md) | Получите `accessReviewInstance` все, что назначено вызываемму пользователю. |
 |[Отправка напоминания accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Нет. | Отправьте напоминание рецензентам. `accessReviewInstance` |
 |[Остановка accessReviewInstance](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите `accessReviewInstance` . |
 |[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендации по принятию решений для каждого notReviewed, в которых он является рецензентом для `accessReviewInstanceDecisionItem` определенного `accessReviewInstance` пользователя. |
@@ -63,7 +63,7 @@ ms.locfileid: "49790603"
 
 Следующие роли каталога необходимы вызываемой пользователю для управления проверками доступа. Обратите внимание, что в настоящее время с помощью API Microsoft Graph поддерживаются только проверки доступа для групп.
 
-| Операция | Разрешения приложений | Требуемая роль каталога вызываемого пользователя |
+| Operation | Разрешения приложений | Требуемая роль каталога вызываемого пользователя |
 |:------------------|:------------|:--------------------------------------------|
 | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор пользователя |
 | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор пользователей |

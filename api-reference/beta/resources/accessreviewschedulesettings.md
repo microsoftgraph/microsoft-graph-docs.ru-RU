@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Акцессревиевсчедулесеттингс
-description: В функции рецензирования Access в Azure AD `accessReviewScheduleSettings` — представляет параметры, связанные с серией проверки доступа.
+title: Тип ресурса accessReviewScheduleSettings
+description: В функции проверки доступа Azure AD параметры, связанные с ряду отзывов `accessReviewScheduleSettings` о доступе.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7cca1fa7fd0da05719c22728dd472087d9737d4e
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 3a58ba9a682e443efbc159befaea61b15e3fdc81
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133450"
 ---
-# <a name="accessreviewschedulesettings-resource-type"></a>Тип ресурса Акцессревиевсчедулесеттингс
+# <a name="accessreviewschedulesettings-resource-type"></a>Тип ресурса accessReviewScheduleSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Акцессревиевсчедулесеттингс** определяет параметры объекта [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md). 
+**AccessReviewScheduleSettings** определяет параметры [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) 
 
 ## <a name="properties"></a>Свойства
 | Свойство    | Тип   | Описание |
 | :---------------| :---------- | :---------- |
-| маилнотификатионсенаблед|Логический | Флаг, указывающий, включены ли сообщения электронной почты.                |
-| реминдернотификатионсенаблед|Логический  | Флаг, указывающий, включены ли напоминания.   |
-| жустификатионрекуиредонаппровал|Логический | Флаг, указывающий, требуются ли проверяющие для предоставления обоснования для решения. |
-| дефаултдеЦисионенаблед|Логический | Флаг, указывающий, включено ли решение по умолчанию или отключено, когда проверяющие не отвечают. |
-| дефаултдеЦисион|Строка | Решение выбрано, если `defaultDecisionEnabled` включено. Может иметь одно из "утверждений", "deny" или "рекомендация". |
-| инстанцедуратиониндайс|Int32 | Продолжительность каждого повторения проверки ( `accessReviewInstance` ) в днях. |
-| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Подробные параметры для периодичности. Использование стандартного объекта повторения Outlook.  |
-| аутоапплидеЦисионсенаблед|Логический | Флаг, указывающий, включена ли функция автоматического применения. |
-| аппляктионс|Коллекция [акцессревиеваппляктион](../resources/accessreviewapplyaction.md) | Необязательное поле. Описывает действия, которые необходимо выполнить после завершения проверки. В настоящее время поддерживаются два типа: `removeAccessApplyAction` (по умолчанию) и `disableAndDeleteUserApplyAction` . Поле необходимо указать только в случае `disableAndDeleteUserApplyAction` . Обратитесь к разделу [акцессревиеваппляктион](accessreviewapplyaction.md). |
-| рекоммендатионсенаблед|Логический | Флаг, указывающий, включены ли рекомендации по принятию или отключены. |
+| mailNotificationsEnabled|Boolean | Флаг, который указывает, включены ли или отключены сообщения электронной почты.                |
+| reminderNotificationsEnabled|Boolean  | Флаг, который указывает, включены или отключены напоминания.   |
+| justificationRequiredOnApproval|Boolean | Флаг, который указывает, требуются ли проверяющих для обоснования своего решения. |
+| defaultDecisionEnabled|Boolean | Флаг, который указывает, включено ли решение по умолчанию, если рецензенты не отвечают. |
+| defaultDecision|Строка | Решение, выбранное, `defaultDecisionEnabled` если включено. Может иметь одно из двух ок: "Утвердить", "Запретить" или "Рекомендация". |
+| instanceDurationInDays|Int32 | Длительность каждого повторения проверки `accessReviewInstance` () в днях. |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Подробные параметры повторения. Использование стандартного объекта повторения Outlook.  |
+| autoApplyDecisionsEnabled|Boolean | Флаг, который указывает, включена ли функция автоматического применения. |
+| applyActions|[Коллекция accessReviewApplyAction](../resources/accessreviewapplyaction.md) | Необязательное поле. Описывает действия, которые необходимо выполнить после проверки. В настоящее время поддерживаются два типа: `removeAccessApplyAction` (по умолчанию) и `disableAndDeleteUserApplyAction` . Поле должно быть указано только в случае с `disableAndDeleteUserApplyAction` . См. [accessReviewApplyAction.](accessreviewapplyaction.md) |
+| recommendationsEnabled|Boolean | Флаг, который указывает, включены ли рекомендации по принятию решений. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

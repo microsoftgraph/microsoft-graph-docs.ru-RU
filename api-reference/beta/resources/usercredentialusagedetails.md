@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса Усеркредентиалусажедетаилс
-description: Представляет использование функции самостоятельного сброса пароля для данного клиента.
+title: Тип ресурса userCredentialUsageDetails
+description: Представляет использование самостоятельного сброса пароля для данного клиента.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 6ac0e1b8b73b019636e460772975da7a4f0505a1
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7ac344ae6953d1b7dc14eaaaa104116c385da8a2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133037"
 ---
-# <a name="usercredentialusagedetails-resource-type"></a>Тип ресурса Усеркредентиалусажедетаилс
+# <a name="usercredentialusagedetails-resource-type"></a>Тип ресурса userCredentialUsageDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет использование функции самостоятельного сброса пароля для данного клиента. Сведения включают сведения о пользователе, состояние сброса и причину сбоя.
+Представляет использование самостоятельного сброса пароля для данного клиента. Сведения включают сведения о пользователе, состояние сброса и причину сбоя.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Усеркредентиалусажедетаилс](../api/reportroot-list-usercredentialusagedetails.md) | усеркредентиалусажедетаилс | Чтение свойств и связей объекта Усеркредентиалусажедетаилс. |
+| [Список userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | userCredentialUsageDetails | Чтение свойств и связей объекта userCredentialUsageDetails. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| аусмесод | string | Представляет способ проверки подлинности, используемый пользователем. Возможные значения: `email` ,,,, `mobileSMS` `mobileCall` `officePhone` `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode` и `alternateMobileCall` (поддерживается только при регистрации). |
+| authMethod | string | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (используется только для самостоятельного сброса `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode` `alternateMobileCall` (поддерживается только при регистрации). |
 | eventDateTime | DateTimeOffset | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
-| failureReason | String | Предоставляет причину ошибки для соответствующего сброса или рабочего процесса регистрации. |
-| состав | string | Возможные значения: `registration` и `reset` . |
+| failureReason | String | Предоставляет причину сбоя для соответствующего рабочего процесса сброса или регистрации. |
+| feature | string | Возможные значения: `registration` и `reset` . |
 | id | String | Только для чтения. Уникальный идентификатор действия. Только для чтения.|
-| Выполнение | Логический | Указывает на успешное или неудачное завершение рабочего процесса. |
-| userDisplayName | String | Имя пользователя, выполняющего сброс или регистрацию рабочего процесса. |
-| userPrincipalName | String | Имя участника-пользователя, выполняющего сброс или регистрацию. |
+| isSuccess | Boolean | Указывает на успешность или сбой рабочего процесса. |
+| userDisplayName | String | Имя пользователя, который выполняет рабочий процесс сброса или регистрации. |
+| userPrincipalName | String | Имя пользователя, который выполняет рабочий процесс сброса или регистрации. |
 
 ## <a name="relationships"></a>Связи
 

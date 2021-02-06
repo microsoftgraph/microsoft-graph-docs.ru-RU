@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Усераттрибутевалуеситем
-description: Используется для заполнения значений атрибута Flow Flow в пользовательском цикле, если выбрано несколько вариантов.
+title: Тип ресурса userAttributeValuesItem
+description: Используется для заполнения значений атрибута пользовательского потока в пользовательском потоке при выборе нескольких вариантов.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6fd0d582ef4dcdd83dba6947536c5acdbc14a8cb
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 64b2416cd6fd0e8c92d9a00ff2d599226e3cd02c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581419"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133023"
 ---
-# <a name="userattributevaluesitem-resource-type"></a>Тип ресурса Усераттрибутевалуеситем
+# <a name="userattributevaluesitem-resource-type"></a>Тип ресурса userAttributeValuesItem
 
 Пространство имен: microsoft.graph
 
-Используется для заполнения значений атрибута Flow Flow в пользовательском цикле, если выбрано несколько вариантов. Усераттрибутевалуеситем применяется к Усеринпуттипес `radioSingleSelect` , `dropdownSingleSelect` и `checkboxMultiSelect` для [идентитюсерфловаттрибутеассигнмент](..\resources\identityuserflowattributeassignment.md).
+Используется для заполнения значений атрибута пользовательского потока в пользовательском потоке при выборе нескольких вариантов. userAttributeValuesItem применимо к userInputTypes , и `radioSingleSelect` `dropdownSingleSelect` для `checkboxMultiSelect` [identityUserFlowAttributeAssignment](..\resources\identityuserflowattributeassignment.md).
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|isDefault|Boolean|Используется, чтобы задать значение по умолчанию.|
-|name|String|Отображаемое имя свойства, отображаемого для конечного пользователя в пользовательском движении.|
-|value|String|Значение, заданное при выборе этого элемента.|
+|isDefault|Boolean|Используется для настройки значения по умолчанию.|
+|name|String|Отображаемого имени свойства, отображаемого для конечного пользователя в пользовательском потоке.|
+|value|String|Значение, заданной при выборе этого элемента.|
 
 ## <a name="relationships"></a>Связи
 

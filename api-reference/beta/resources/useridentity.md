@@ -1,16 +1,16 @@
 ---
 title: Тип userIdentity
-description: Представляет удостоверение пользователя Azure AD для проверяющего, проверяющего доступ.
+description: Представляет удостоверение пользователя Azure AD для рецензента проверки доступа.
 localization_priority: Normal
 author: krbain
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 154e6cf9bc06ab53e5a2013127349eeda5538b5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5451216ea41e6de286b5ecc0de2bed1b7ce7c8cf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057894"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132974"
 ---
 # <a name="useridentity-type"></a>Тип userIdentity
 
@@ -18,22 +18,22 @@ ms.locfileid: "48057894"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Для [просмотров Access](accessreviews-root.md)Azure AD этот тип представляет собой удостоверение пользователя Azure AD для создателя или рецензента проверки доступа.
-В контексте журнала аудита Azure AD — это сведения о пользователях, которые были инициированы или затронуты действием аудита.
+Для проверок доступа Azure [AD](accessreviews-root.md)этот тип представляет удостоверение пользователя Azure AD для создателя или рецензента проверки доступа.
+В контексте журнала аудита Azure AD это сведения о пользователях, которые инициировали или были затронуты действиями аудита.
 
-Этот тип наследуется от [Identity](identity.md) и имеет одно дополнительное свойство, имя участника пользователя.
+Этот тип наследуется от [удостоверения](identity.md) и имеет одно дополнительное свойство, имя пользователя-пользователя.
 
 ## <a name="methods"></a>Методы
 
-Отсутствуют.  При [создании акцессревиев](../api/accessreview-create.md)необходимо включить в текст запроса объекты этого типа.
+Нет.  При создании accessReview объекты этого типа будут включены в тело [запроса.](../api/accessreview-create.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
-| `displayName` | `String` | Отображаемое имя удостоверения. Обратите внимание, что эта возможность не всегда доступна или не актуальна.    |
+| `displayName` | `String` | Отображаемое имя удостоверения. Обратите внимание, что это может быть не всегда доступно или не всегда в курсе.    |
 | `id`          | `String` | Уникальный идентификатор удостоверения.  |
-| `ipAddress`| `String`| IP-адрес клиента, используемый пользователем для выполнения действия (только журнал аудита).|
+| `ipAddress`| `String`| Указывает IP-адрес клиента, используемый пользователем, выполнив действие (только в журнале аудита).|
 | `userPrincipalName`|`String` | Атрибут userPrincipalName пользователя. |
 
 ## <a name="remarks"></a>Заметки
@@ -48,13 +48,13 @@ ms.locfileid: "48057894"
 
 | Метод                                                                | Возвращаемый тип                                | Описание                             |
 |:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
-| [Получение рецензентов Акцессревиев](../api/accessreview-listreviewers.md)    | Коллекция [userIdentity](useridentity.md) | Получение рецензентов объекта Акцессревиев.   |
-| [Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md)       | Отсутствуют.                                      | Добавьте проверяющего в объект Акцессревиев.      |
-| [Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Отсутствуют.                                      | Удаление проверяющего из Акцессревиев. |
+| [Просмотр рецензентов accessReview](../api/accessreview-listreviewers.md)    | [Коллекция userIdentity](useridentity.md) | Получите проверяющих accessReview.   |
+| [Добавление рецензента accessReview](../api/accessreview-addreviewer.md)       | Нет.                                      | Добавление рецензента в accessReview.      |
+| [Удаление рецензента accessReview](../api/accessreview-removereviewer.md) | Нет.                                      | Удаление рецензента из accessReview. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже показано представление типа в формате JSON.
+Вот представление типа в JSON.
 
 <!-- {
   "blockType": "resource",

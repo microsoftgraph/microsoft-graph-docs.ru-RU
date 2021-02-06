@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Говернанцесубжект
-description: Представляет пользователей, группы и субъекты-службы, которыми управляет привилегированный Диспетчер удостоверений (PIM).
+title: Тип ресурса governanceSubject
+description: Представляет пользователей, группы и участников-служб, которыми управляет privileged Identity Management (PIM).
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 12f99f7face3013a3286b95ce90c377ff2d1bbf5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eedcaff8538d5a0efa110b34cd6a72aef2a3210a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132680"
 ---
-# <a name="governancesubject-resource-type"></a>Тип ресурса Говернанцесубжект
+# <a name="governancesubject-resource-type"></a>Тип ресурса governanceSubject
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователей, группы и субъекты-службы, которыми управляет привилегированный Диспетчер удостоверений (PIM).
+Представляет пользователей, группы и участников-служб, которыми управляет privileged Identity Management (PIM).
 
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип       |Описание|
 |:----------|:----------|:----------|
-|id         |String     | Идентификатор субъекта.|
-|type       |String     |Тип субъекта. Возможные значения: ``User`` , ``Group`` и ``ServicePrincipal`` .|
-|displayName|String     |Отображаемое имя субъекта.|
+|id         |Строка     | ИД темы.|
+|type       |Строка     |Тип темы. Значение может быть ``User`` , ``Group`` и ``ServicePrincipal`` .|
+|displayName|Строка     |Отображаемого имени темы.|
 |email      |String     |Адрес электронной почты субъекта пользователя. Если тема находится в других типах, она пуста.|
 |principalName|String   |Имя субъекта пользователя. Если тема находится в других типах, она пуста.|
 

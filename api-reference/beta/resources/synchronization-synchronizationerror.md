@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Синчронизатионеррор
-description: Представляет сообщение об ошибке, возникшей во время процесса синхронизации.
+title: Тип ресурса synchronizationError
+description: Представляет ошибку, которая произошла в процессе синхронизации.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c32f3bc22d2357c0eca88e6f693cd958a6dd5ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: a49f2cf9b9d3e621533490127a5b2674ab43bf14
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131490"
 ---
-# <a name="synchronizationerror-resource-type"></a>Тип ресурса Синчронизатионеррор
+# <a name="synchronizationerror-resource-type"></a>Тип ресурса synchronizationError
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сообщение об ошибке, возникшей во время процесса синхронизации.
+Представляет ошибку, которая произошла в процессе синхронизации.
 
 ## <a name="properties"></a>Свойства
 
 <!-- Add descriptions for the properties. -->
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|code|String||
+|code|Строка||
 |message|String||
-|тенантактионабле|Boolean||
+|tenantActionable|Boolean||
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

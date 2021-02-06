@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Акцесспаккажесубжект
-description: В службе управления обслуживанием Azure AD тема назначения пакета Access.
+title: Тип ресурса accessPackageSubject
+description: В управлении правами Azure AD тема назначения пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f8b967e2ba2d678d9648b09eae4aeb3dca760c52
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4969afac14f7eeb24d2901946d5e5961258c8b7b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133583"
 ---
-# <a name="accesspackagesubject-resource-type"></a>Тип ресурса Акцесспаккажесубжект
+# <a name="accesspackagesubject-resource-type"></a>Тип ресурса accessPackageSubject
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)субъектом пакета Access является пользователь, участник службы или другой объект, который можно настроить для запроса или назначения пакета доступа.
+В управлении правами [Azure AD](entitlementmanagement-root.md)субъектом пакета доступа является пользователь, субъект-служба или другая сущность, которую можно настроить для запроса или получения пакета доступа.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображаемое имя субъекта.|
-|email|String|Адрес электронной почты субъекта.|
+|displayName|Строка|Отображаемого имени темы.|
+|email|String|Адрес электронной почты темы.|
 |id|String| Только для чтения.|
-|objectId|String|Идентификатор объекта subject.|
-|principalName|String|Имя участника (если оно известно) субъекта.|
-|type|String|Тип ресурса субъекта.|
+|objectId|String|ИД объекта темы.|
+|principalName|String|Имя субъекта, если известно, субъекта.|
+|type|Строка|Тип ресурса темы.|
 
 ## <a name="relationships"></a>Связи
 

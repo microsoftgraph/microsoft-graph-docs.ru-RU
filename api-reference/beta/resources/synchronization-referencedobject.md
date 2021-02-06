@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Референцедобжект
+title: Тип ресурса referencedObject
 description: Описывает ссылку на другой объект, определенный в том же определении каталога.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ea400e40074b30943412cf7b5fbae75f9037ca1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: c6e273474c70919bab3c30335a26477509eca8cc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132533"
 ---
-# <a name="referencedobject-resource-type"></a>Тип ресурса Референцедобжект
+# <a name="referencedobject-resource-type"></a>Тип ресурса referencedObject
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает ссылку на другой объект, определенный в том же [определении каталога](synchronization-directorydefinition.md).
+Описывает ссылку на другой объект, определенный в том же [определении каталога.](synchronization-directorydefinition.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|референцедобжектнаме        |String                     |Имя объекта, на который указывает ссылка. Должен сопоставлять один из объектов в [определении каталога](synchronization-directorydefinition.md).|
-|референцедпроперти          |String                     |**В настоящее время не поддерживается**. Имя свойства в объекте, на который указывает ссылка, значение, которое используется в качестве ссылки.|
+|referencedObjectName        |Строка                     |Имя объекта, на который ссылается ссылка. Должен соответствовать одному из объектов в [определении каталога.](synchronization-directorydefinition.md)|
+|referencedProperty          |Строка                     |**В настоящее время не поддерживается.** Имя свойства в объекте, на который ссылается ссылка, значение для которого используется в качестве ссылки.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

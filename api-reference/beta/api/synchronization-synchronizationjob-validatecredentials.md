@@ -1,24 +1,24 @@
 ---
-title: 'Синчронизатионжоб: Валидатекредентиалс'
-description: Убедитесь, что учетные данные действительны в клиенте.
+title: 'synchronizationJob: validateCredentials'
+description: Проверьте, действительны ли учетные данные в клиенте.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4094fefb1dd911de70c8f896abb43299dfce9638
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 4f36764ca7d6787629299261e6ec42c9454ddc46
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132071"
 ---
-# <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
+# <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Убедитесь, что учетные данные действительны в клиенте.
+Проверьте, действительны ли учетные данные в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,11 +45,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|усесаведкредентиалс|Логический|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
-|записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, если `useSavedCredentials` параметр имеет значение `true` .|
+|useSavedCredentials|Boolean|Если параметр будет игнорироваться, а ранее сохраненные учетные данные (если таковые есть) будут `true` `credentials` проверены. |
+|credentials|[Коллекция synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, если `useSavedCredentials` параметр имеет . `true`|
 
 ## <a name="response"></a>Отклик
-Если проверка прошла успешно, этот метод возвращает `204, No Content` код отклика. Метод не возвращает данные в теле отклика.
+Если проверка прошла успешно, этот метод возвращает `204, No Content` код отклика. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 

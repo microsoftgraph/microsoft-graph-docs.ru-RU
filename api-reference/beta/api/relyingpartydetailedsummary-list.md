@@ -1,24 +1,24 @@
 ---
-title: Список Релингпартидетаиледсуммари
-description: Получение списка объектов Релингпартидетаиледсуммари.
+title: Список relyingPartyDetailedSummary
+description: Получить список объектов relyingPartyDetailedSummary.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7dcba9c98467461a8dae3b4d39d752c6d369c4d5
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7512cc10db5b37cce6c899f5399f0c51194ab59c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131406"
 ---
-# <a name="list-relyingpartydetailedsummary"></a>Список Релингпартидетаиледсуммари
+# <a name="list-relyingpartydetailedsummary"></a>Список relyingPartyDetailedSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов **релингпартидетаиледсуммари** .
+Получить список объектов **relyingPartyDetailedSummary.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "49523303"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Report. Read. ALL |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Report. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Report.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Report.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,14 +41,14 @@ GET /reports/getRelyingPartyDetailedSummary
 
 | Параметр | Описание |
 |:----------|:----------|
-| period | Поддерживаются следующие значения: D1, D7, D30. Эти значения указываются в формате Dn, где n — количество дней в отчетном периоде.|
+| period | Поддерживаемые значения: D1, D7, D30. Эти значения указываются в формате Dn, где n — количество дней в отчетном периоде.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. 
 
-- Параметр можно использовать `$filter` для фильтрации по релингпартид, мигратионстатус и другим атрибутам. Например, $filter = Релингпартид EQ "identifier".
-- Вы можете использовать `$orderby` `$top` Параметры, и `$skip` запросы в любом запросе GET.
+- Этот параметр можно использовать `$filter` для фильтрации по relyingPartyId, migrationStatus и другим атрибутам. Например, $filter= relyingPartyId eq 'identifier'.
+- Вы можете использовать `$orderby` `$top` параметры и `$skip` параметры запроса в любом запросе GET.
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -65,7 +65,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [релингпартидетаиледсуммари](../resources/relyingpartydetailedsummary.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и запрашиваемого `200 OK` [объекта relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

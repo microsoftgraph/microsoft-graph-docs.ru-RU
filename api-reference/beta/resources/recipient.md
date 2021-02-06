@@ -4,13 +4,13 @@ description: 'Представляет сведения о пользовате�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: b7c04404a557a897af4008f024e27a47684e835f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 7a0f48eecdca77bda7261ed85b3b962550d99ec0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133191"
 ---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
 
@@ -25,7 +25,7 @@ ms.locfileid: "47993023"
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|Электронный адрес получателя.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

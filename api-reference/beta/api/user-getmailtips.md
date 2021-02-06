@@ -1,33 +1,33 @@
 ---
-title: 'Пользователь: подсказки'
-description: Получение подсказок одного или нескольких получателей, доступных пользователю, вошедшего в систему.
-author: svpsiva
+title: 'user: getMailTips'
+description: Получите сообщения о том, что один или несколько получателей доступны во вписаемом пользователю.
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 979ad697b781d52f1492f76d0a5eea38951c1626
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cbbeffff7949096693969b03d6f3aa7bbf5bfe44
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131679"
 ---
-# <a name="user-getmailtips"></a>Пользователь: подсказки
+# <a name="user-getmailtips"></a>user: getMailTips
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение подсказок одного или нескольких получателей, доступных [пользователю](../resources/user.md), вошедшего в систему.
+Получите в качестве доступных для пользователя, выписав в качестве адресатов, соответствующие одному или более [получателям.](../resources/user.md)
 
-Обратите внимание, что выполнив `POST` вызов `getMailTips` действия, вы можете запросить определенные типы подсказок, которые будут возвращаться сразу для нескольких получателей. Запрошенные подсказки возвращаются в коллекции [подсказок](../resources/mailtips.md) .
+Обратите внимание, что, вызовите действие, вы можете запросить определенные типы сообщений, которые будут возвращаться для более чем одного получателя `POST` `getMailTips` за один раз. Запрашиваемая электронная почта возвращается в [коллекции.](../resources/mailtips.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail. Read, mail. Read. Shared    |
+|Делегированные (рабочая или учебная учетная запись) | Mail.Read, Mail.Read.Shared    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.Read    |
 |Для приложений | Mail.Read |
 
@@ -50,15 +50,15 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция строк|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
-|маилтипсоптионс|String|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные значения: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` и `totalMemberCount` .|
+|EmailAddresses|Коллекция объектов string|Коллекция SMTP-адресов получателей для получения сообщений.|
+|MailTipsOptions|Строка|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` , , , , , , , и `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [подсказки](../resources/mailtips.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [mailTips](../resources/mailtips.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере показано, как получить подсказки для указанных получателей для всех параметров автоматического ответа и полного состояния почтового ящика.
+В следующем примере по мере настройки автоматического ответа и полного состояния почтового ящика для указанных получателей возвращается сообщение о всех параметрах автоматического ответа.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

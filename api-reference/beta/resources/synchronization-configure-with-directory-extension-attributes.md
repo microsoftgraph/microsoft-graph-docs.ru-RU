@@ -1,16 +1,16 @@
 ---
 title: Настройка синхронизации с атрибутами расширения каталога
-description: Настройте схему синхронизации, включив в нее атрибуты расширения каталога Azure Active Directory (Azure AD).
+description: Настройте схему синхронизации, включив атрибуты расширения каталога Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3c66e632e7b573be0d899dfee1704624e826c909
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: applications
+ms.openlocfilehash: 1a19db23c5797812c41b10ca281efde887da90fc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131511"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Настройка синхронизации с атрибутами расширения каталога
 
@@ -18,13 +18,13 @@ ms.locfileid: "49521322"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете настроить схему синхронизации, включив в нее атрибуты расширения каталога Azure Active Directory (Azure AD). В этой статье описывается, как использовать атрибут расширения каталога (**extension_9d98asdfl15980a_Nickname**) для заполнения значения User. Коммунитиниккнаме в Salesforce. В этом сценарии у вас есть Azure AD Connect, настроенный на подготовку ряда атрибутов расширения каталогов из локальной среды Windows Server Active Directory в Azure AD. 
+Схему синхронизации можно настроить так, чтобы она включала атрибуты расширения каталога Azure Active Directory (Azure AD). В этой статье описывается использование атрибута расширения каталога **(extension_9d98asdfl15980a_Nickname)** для заполнения значения User.CommunityNickname в Salesforce. В этом сценарии azure AD Connect настроен для предоставления ряда атрибутов расширения каталога из локальной службы Windows Server Active Directory в Azure AD. 
 
-В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью [портала Azure](https://portal.azure.com), вы знаете отображаемое имя приложения, и у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, можно найти [в статье получение маркеров доступа для вызова Microsoft Graph](/graph/auth/).
+В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью портала [Azure,](https://portal.azure.com)что вы знаете отображаемого имени приложения и у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, см. в подзапуске маркеров доступа [для вызова Microsoft Graph.](/graph/auth/)
 
-## <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта субъекта службы по отображаемому имени
+## <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта-службы по отображаемой имени
 
-В приведенном ниже примере показано, как найти объект участника службы с отображаемым именем "песочницы Salesforce".
+В следующем примере показано, как найти объект-службу с отображаемой именем "Песочница Salesforce".
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -54,11 +54,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-Параметр `{servicePrincipalId}` имеет значение `60443998-8cf7-4e61-b05c-a53b658cb5e1` .
+The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1` .
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Перечисление заданий синхронизации в контексте субъекта-службы 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Список заданий синхронизации в контексте основного службы 
 
-В приведенном ниже примере показано, как получить сведения о том `jobId` , что необходимо для работы. Как правило, ответ возвращает только одно задание.
+В следующем примере показано, как получить необходимые `jobId` данные. Как правило, ответ возвращает только одно задание.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -79,18 +79,18 @@ Authorization: Bearer {Token}
 }
 ```
 
-Параметр `{jobId}` имеет значение `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .
+The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .
 
-## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>Найдите имя необходимого атрибута расширения каталога
+## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>Найдите нужное имя атрибута расширения каталога
 
-Вам потребуется полное имя атрибута расширения. Если полное имя (которое должно выглядеть аналогично **extension_9d98asdfl15980a_Nickname**), ознакомьтесь со следующими сведениями о атрибутах расширения каталогов и способах их проверки: 
+Вам потребуется полное имя атрибута расширения. Если вы не знаете полное имя (которое должно выглядеть примерно так же, как **extension_9d98asdfl15980a_Nickname),** см. следующие сведения об атрибутах расширения каталога и о том, как их проверить: 
 
-* [Расширение схемы каталога Azure AD с помощью настраиваемых свойств](/graph/extensibility-overview)
-* [Расширения схемы каталогов | Основные понятия API Graph](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [Расширение схемы каталога Azure AD с помощью настраиваемой свойства](/graph/extensibility-overview)
+* [Расширения схемы каталогов | Концепции API Graph](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
-## <a name="get-the-synchronization-schema"></a>Получение схемы синхронизации
-В приведенном ниже примере показано, как получить схему синхронизации.
+## <a name="get-the-synchronization-schema"></a>Получить схему синхронизации
+В следующем примере показано, как получить схему синхронизации.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -121,7 +121,7 @@ Authorization: Bearer {Token}
 ---
 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",
@@ -219,20 +219,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Добавление определения атрибута расширения каталога и сопоставления между атрибутами
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Добавление определения для атрибута расширения каталога и сопоставления между атрибутами
 
-Используйте простой текстовый редактор (например, [Notepad + +](https://notepad-plus-plus.org/) или [Редактор JSON Online](https://www.jsoneditoronline.org/)), чтобы:
+Используйте обычный текстовый редактор (например, [Блокнот++](https://notepad-plus-plus.org/) или [JSON Editor Online),](https://www.jsoneditoronline.org/)чтобы:
 
-1. Добавьте [Определение атрибута](synchronization-attributedefinition.md) `extension_9d98asdfl15980a_Nickname` . 
+1. Добавьте определение [атрибута](synchronization-attributedefinition.md) `extension_9d98asdfl15980a_Nickname` для атрибута. 
 
-    - В разделе Каталоги найдите каталог с именем "Azure Active Directory" и в массиве объекта найдите одного пользователя с именем **User**.
+    - В каталогах найдите каталог с именем "Azure Active Directory", а в массиве объекта найдите каталог с именем **User.**
     - Добавьте новый атрибут в список, указав имя и тип, как показано в следующем примере.
 
-2. Добавьте [сопоставление атрибутов](synchronization-attributemapping.md) между Extension_9d98asdfl15980a_Nickname и коммунитиниккнаме.
+2. Добавьте [сопоставление атрибутов](synchronization-attributemapping.md) между extension_9d98asdfl15980a_Nickname и CommunityNickname.
 
-    - В разделе [синчронизатионрулес](synchronization-synchronizationrule.md)найдите правило, задающее Azure AD в качестве исходного каталога, и Salesforce.com в качестве целевого каталога ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
-    - В [обжектмаппингс](synchronization-objectmapping.md) правила найдите сопоставление между пользователями ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
-    - В массиве [аттрибутемаппингс](synchronization-attributemapping.md) объекта **обжектмаппинг** добавьте новую запись, как показано в следующем примере.
+    - В [synchronizationRules](synchronization-synchronizationrule.md)найдите правило, которое указывает Azure AD как исходный каталог, и Salesforce.com в качестве целевого каталога ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
+    - В [объектахmappings](synchronization-objectmapping.md) правила найдите сопоставление между пользователями ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
+    - В массив [attributeMappings](synchronization-attributemapping.md) **объектаMapping** добавьте новую запись, как показано в следующем примере.
 
     ```json
     {
@@ -285,7 +285,7 @@ Content-Type: application/json
 
 ## <a name="save-the-modified-synchronization-schema"></a>Сохранение измененной схемы синхронизации
 
-При сохранении обновленной схемы синхронизации убедитесь, что включается вся схема, включая неизмененные части. Этот запрос заменит существующую схему на предоставленную вами.
+При экономии обновленной схемы синхронизации убедитесь, что включена вся схема, включая неизмененые части. Этот запрос заменит существующую схему на предоставляемую.
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -298,7 +298,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-Если схема была успешно сохранена, в следующей итерации задания синхронизации начнется повторная обработка всех учетных записей в Azure AD, а новые сопоставления будут применены ко всем подготовленным учетным записям.
+Если схема успешно сохранена, при следующей итерации задания синхронизации она начнет повторно обрабатывать все учетные записи в Azure AD, и новые сопоставления будут применены для всех учетных записей, которые были готовы.
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

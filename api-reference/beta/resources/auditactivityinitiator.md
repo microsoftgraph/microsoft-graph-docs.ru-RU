@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Аудитактивитинитиатор
-description: Identity объект ресурса, инициирующий действие. Инициатор может быть пользователем, приложением или системой (который рассматривается как приложение).
+title: Тип ресурса auditActivityInitiator
+description: Удостоверение объекта ресурса, который инициирует действие. Инициатором может быть пользователь, приложение или система (которая считается приложением)
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: identity-and-access-reports
 author: SarahBar
-ms.openlocfilehash: f5f472be4d8fd40d053efa4ae2b5ad38e4925c76
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 71aa5e2bd09d66a2aea49058ceffea3e017eaf4d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131637"
 ---
-# <a name="auditactivityinitiator-resource-type"></a>Тип ресурса Аудитактивитинитиатор
+# <a name="auditactivityinitiator-resource-type"></a>Тип ресурса auditActivityInitiator
 
-Пространство имен: Microsoft. Graph Identity объект ресурса, инициирующий действие. Инициатор может быть пользователем, приложением или системой (который рассматривается как приложение).
+Пространство имен: удостоверение microsoft.graph для объекта ресурса, который инициирует действие. Инициатором может быть пользователь, приложение или система (которая считается приложением)
 
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|программы|[аппидентити](appidentity.md)|Если ресурс, инициирующий действие, является приложением, это свойство указывает все связанные с приложением сведения, такие как appId, Name, СервицепринЦипалид и Name.|
-|user|[userIdentity](useridentity.md)|Если ресурс, инициирующий действие, является пользователем, это свойство указывает все связанные с пользователем сведения, такие как userId, Name, Усерприникпалнаме.|
+|приложение|[appIdentity](appidentity.md)|Если ресурс, инициируя действие, является приложением, это свойство указывает все связанные с приложением сведения, такие как appId, Name, servicePrincipalId, Name.|
+|user|[userIdentity](useridentity.md)|Если ресурсом, инициирующим действие, является пользователь, это свойство указывает все связанные с пользователем сведения, такие как userId, Name, UserPrinicpalName.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

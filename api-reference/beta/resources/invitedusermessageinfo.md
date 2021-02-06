@@ -1,34 +1,34 @@
 ---
-title: Настройка сообщения с приглашением
-description: Объект invitedUserMessageInfo позволяет настроить сообщение с приглашением.
+title: Настройка сообщения приглашения
+description: Объект invitedUserMessageInfo позволяет настроить сообщение приглашения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: elisolMS
-ms.openlocfilehash: 713af92d91f179f90c9d37a238a23730f351895d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6092a5bd493377480c0a835b28982aec2d95c522
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131501"
 ---
-# <a name="configuring-the-invitation-message"></a>Настройка сообщения с приглашением
+# <a name="configuring-the-invitation-message"></a>Настройка сообщения приглашения
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект invitedUserMessageInfo позволяет настроить сообщение с [приглашением](invitation.md) .
+Объект invitedUserMessageInfo позволяет настроить сообщение [приглашения.](invitation.md)
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ccRecipients|Коллекция [recipient](recipient.md)|Дополнительные получатели сообщение о приглашении должно быть отправлено. В настоящее время поддерживается только один дополнительный получатель.|
-|кустомизедмессажебоди|String|Настраиваемый текст сообщения, которое вы хотите отправить, если вы не хотите использовать сообщение по умолчанию.|
-|мессажелангуаже|String|Язык, по которому необходимо отправить сообщение по умолчанию. Если указан параметр Кустомизедмессажебоди, это свойство игнорируется, а сообщение отправляется с помощью Кустомизедмессажебоди. Языковой формат должен быть в стандарте ISO 639. Значение по умолчанию — en-US.|
+|ccRecipients|Коллекция [recipient](recipient.md)|Дополнительные получатели, на которые должно быть отправлено приглашение. В настоящее время поддерживается только один дополнительный получатель.|
+|customizedMessageBody|Строка|Настраиваемый текст сообщения, который необходимо отправить, если сообщение по умолчанию не нужно.|
+|messageLanguage|Строка|Язык, на который вы хотите отправить сообщение по умолчанию. Если задан параметр customizedMessageBody, это свойство игнорируется, и сообщение отправляется с помощью параметра customizedMessageBody. Формат языка должен быть в формате ISO 639. Значение по умолчанию : en-US.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->

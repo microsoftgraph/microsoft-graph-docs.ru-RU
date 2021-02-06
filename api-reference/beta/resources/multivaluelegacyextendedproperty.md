@@ -4,13 +4,13 @@ description: Расширенное свойство, содержащее ко�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 4ccfdc6fd703673cdd71284cf3ad367f94efdc5e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: a8752fa866478eff57124f486e958388fa7603a1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021282"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131931"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Тип ресурса multiValueLegacyExtendedProperty
 
@@ -28,8 +28,8 @@ ms.locfileid: "48021282"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | Поддерживаемый экземпляр ресурса: [Message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [Calendar](../resources/calendar.md), [Contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Task](../resources/outlooktask.md)или [Outlook Task](../resources/outlooktaskfolder.md). Обратите внимание, что ресурсы [post](../resources/post.md) групп не поддерживаются. | Создание объекта **multiValueLegacyExtendedProperty** в новом или существующем экземпляре поддерживаемого ресурса. |
-|[Получение](../api/multivaluelegacyextendedproperty-get.md) |Поддерживаемый экземпляр ресурса ([Message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [Calendar](../resources/calendar.md), [Contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Task Task](../resources/outlooktask.md), [Outlook Task Folder](../resources/outlooktaskfolder.md)или POST Group [POST](../resources/post.md)), дополненный объектом [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) . |Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand`.|
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | Поддерживаемый экземпляр ресурса: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Outlook task](../resources/outlooktask.md), or Outlook [task folder](../resources/outlooktaskfolder.md). Обратите внимание, что ресурсы [post](../resources/post.md) групп не поддерживаются. | Создание объекта **multiValueLegacyExtendedProperty** в новом или существующем экземпляре поддерживаемого ресурса. |
+|[Получение](../api/multivaluelegacyextendedproperty-get.md) |Поддерживаемый экземпляр ресурса[(сообщение,](../resources/message.md) [mailFolder,](../resources/mailfolder.md) [событие,](../resources/event.md)календарь, [](../resources/calendar.md) [контакт,](../resources/contact.md) [contactFolder,](../resources/contactfolder.md)задача [Outlook,](../resources/outlooktask.md)папка задач [Outlook](../resources/outlooktaskfolder.md)или публикация [группы),](../resources/post.md)расширенный [объектом multiValueLegacyExtendedProperty.](multivaluelegacyextendedproperty.md) |Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand`.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -37,7 +37,7 @@ ms.locfileid: "48021282"
 |id|string|Идентификатор свойства. Только для чтения.|
 |значение|Коллекция строк|Коллекция значений свойств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

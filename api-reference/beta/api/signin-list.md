@@ -1,16 +1,16 @@
 ---
 title: Перечисление входов
 doc_type: apiPageType
-description: Получение списка входов пользователей в клиенте Azure Active Directory.
+description: Получите список входов пользователей в клиенте Azure Active Directory.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a26d753241c88443a0aeceabd0f6c800f59c6d7
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: d850fdf92f88c2c6cd3290dfe9479df8e09834be
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132155"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -18,7 +18,7 @@ ms.locfileid: "49524262"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [SignIn](../resources/signin.md) . В этом списке содержатся входы пользователей для клиента Azure Active Directory. Входы, в которых имя пользователя и пароль передаются в составе маркера авторизации, а успешные Федеративные входы в систему в данный момент включены в журналы входа. Первыми возвращаются последние входные.
+Получите список объектов [signIn.](../resources/signin.md) В этом списке содержатся входы пользователей для клиента Azure Active Directory. Входы, в которых имя пользователя и пароль передаются как часть маркера авторизации, а успешные федераированные входы в настоящее время включаются в журналы входа. Самые последние входы возвращаются первыми.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,11 +26,11 @@ ms.locfileid: "49524262"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись) | Аудитлог. Read. ALL, Directory. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение | Аудитлог. Read. ALL, Directory. Read. ALL | 
+| Для приложений | AuditLog.Read.All, Directory.Read.All | 
 
-Кроме того, приложения должны быть должным образом зарегистрированы в Azure Active Directory.
+Кроме того, приложения должны быть правильно зарегистрированы в Azure Active Directory.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET auditLogs/signIns
 | [$top](/graph/query-parameters#top-parameter) | Задает размер страницы результатов. | `/auditLogs/signIns?$top=1` |
 | [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметра
 
 | Имя атрибута | Поддерживаемые операторы |
 |:-------------- |:------------------- |
@@ -59,7 +59,7 @@ GET auditLogs/signIns
 | userDisplayName | eq, startswith |
 | userPrincipalName | eq, startswith |
 | appDisplayName | eq, startswith |
-| аусентикатионрекуиремент |eq, startswith |
+| authenticationRequirement |eq, startswith |
 | ipAddress | eq, startswith |
 | location/city | eq, startswith |
 | location/state | eq, startswith |
@@ -84,16 +84,16 @@ GET auditLogs/signIns
 | tokenIssuerType | eq |
 | resourceDisplayName | eq |
 | resourceId | eq |
-| сервицепринЦипалид | eq, startswith |
+| servicePrincipalId | eq, startswith |
 | servicePrincipalName | eq, startswith |
 | userAgent | eq, startswith |
-| алтернатесигниннаме | eq, startswith |
+| alternateSignInName | eq, startswith |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -105,7 +105,7 @@ GET auditLogs/signIns
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Пример 1: пользователь подписывается с помощью MFA, который активируется политикой условного доступа. Основной способ проверки подлинности — Фидо.
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Пример 1. Вход пользователя с помощью MFA, запускаемого политикой условного доступа. Основная проверка подлинности — через FIDO.
 
 #### <a name="request"></a>Запрос
 
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -257,7 +257,7 @@ Content-length: 211
     ]
 }
 ```
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Пример 2: пользователь входит только с основной проверкой подлинности. Первичная проверка подлинности осуществляется с помощью облачного пароля.
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Пример 2. Пользователь может в это время воймить только при первичной проверке подлинности. Основная проверка подлинности — облачный пароль.
 
 #### <a name="request"></a>Запрос
 

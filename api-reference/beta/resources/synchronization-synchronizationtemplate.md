@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Синчронизатионтемплате
-description: Предоставляет предварительно настроенные параметры синхронизации для определенного приложения.
+title: Тип ресурса synchronizationTemplate
+description: Предоставляет предварительно настроенные параметры синхронизации для конкретного приложения.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d794391c4cf8043ab4eaeafcfa21958d93e3412a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: c08f5c3eee6225a1149ff993415f83b2e5916583
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985687"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132309"
 ---
-# <a name="synchronizationtemplate-resource-type"></a>Тип ресурса Синчронизатионтемплате
+# <a name="synchronizationtemplate-resource-type"></a>Тип ресурса synchronizationTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предоставляет предварительно настроенные параметры синхронизации для определенного приложения. Эти параметры будут использоваться по умолчанию для всех [заданий синхронизации](synchronization-synchronizationjob.md) , основанных на шаблоне. Разработчик приложения определяет шаблон; любой пользователь может получить шаблон для просмотра параметров по умолчанию, в том числе [схемы синхронизации](synchronization-synchronizationschema.md).
+Предоставляет предварительно настроенные параметры синхронизации для конкретного приложения. Эти параметры будут использоваться по умолчанию для [любого](synchronization-synchronizationjob.md) задания синхронизации, основанного на шаблоне. Разработчик приложения определяет шаблон; Любой может получить шаблон, чтобы увидеть параметры по умолчанию, включая схему [синхронизации.](synchronization-synchronizationschema.md)
 
-Вы можете предоставить несколько шаблонов для приложения и назначить шаблон по умолчанию. Если для интересующего вас приложения доступно несколько шаблонов, попросите рекомендаций для конкретного приложения, чтобы определить, какой из них наилучшим образом соответствует вашим потребностям.
+Для приложения можно предоставить несколько шаблонов и назначить шаблон по умолчанию. Если для интересуемого приложения доступно несколько шаблонов, обратитесь к конкретным приложениям, чтобы определить, какой из них лучше всего соответствует вашим потребностям.
 
 ## <a name="methods"></a>Методы
 
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[Список](../api/synchronization-synchronizationtemplate-list.md)    |Коллекция [синчронизатионтемплате](synchronization-synchronizationtemplate.md)  |Список шаблонов, доступных для приложения или экземпляра приложения (субъекта-службы).|
-|[получение](../api/synchronization-synchronizationtemplate-get.md);      |[синчронизатионтемплате](synchronization-synchronizationtemplate.md)   |Чтение свойств и связей объекта **синчронизатионтемплате** .|
+|[Список](../api/synchronization-synchronizationtemplate-list.md)    |[Коллекция synchronizationTemplate](synchronization-synchronizationtemplate.md)  |Список шаблонов, доступных для экземпляра приложения или приложения (участников-служб).|
+|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Чтение свойств и связей объекта **synchronizationTemplate.**|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -37,20 +37,20 @@ ms.locfileid: "47985687"
 
 | Свойство      | Тип                      | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |String                     |Уникальный идентификатор шаблона.|
-|applicationId  |String                     |Идентификатор приложения, к которому принадлежит этот шаблон.|
-|умолчани        |Boolean                    |`true` Если этот шаблон рекомендуется использовать по умолчанию для приложения.|
-|description    |String                     |Описание шаблона.|
-|обнаружения   |String                     |`true` Если этот шаблон должен отображаться в коллекции шаблонов, доступных для экземпляра приложения (субъекта-службы).|
-|факторитаг     |String                     |Один из известных тегов фабрики, поддерживаемых обработчиком синхронизации. **Факторитаг** сообщает обработчику синхронизации, какую реализацию следует использовать при обработке заданий на основе этого шаблона.|
-|метаданных       |Коллекция Метадатаентри   |Дополнительные свойства расширения. Если явно не указано иное, значения метаданных не должны изменяться.|
+|id             |Строка                     |Уникальный идентификатор шаблона.|
+|applicationId  |String                     |Идентификатор приложения, к которой принадлежит этот шаблон.|
+|default        |Boolean                    |`true` если этот шаблон рекомендуется использовать по умолчанию для приложения.|
+|description    |Строка                     |Описание шаблона.|
+|обнаруживаемый   |Строка                     |`true` если этот шаблон должен отображаться в коллекции шаблонов, доступных для экземпляра приложения (основного приложения-службы).|
+|factoryTag     |Строка                     |Один из известных заводских тегов, поддерживаемых механизмом синхронизации. FactoryTag **сообщает** механизму синхронизации, какую реализацию использовать при обработке заданий на основе этого шаблона.|
+|метаданные       |Коллекция metadataEntry   |Дополнительные свойства расширения. Если не было явно упомянуто, значения метаданных не следует менять.|
 
 ## <a name="relationships"></a>Связи
 | Связь      | Тип      |Описание|
 |:------------------|:----------|:----------|
-|схемы             |[синчронизатионсчема](synchronization-synchronizationschema.md)     |Схема синхронизации по умолчанию для заданий, основанных на этом шаблоне.|
+|схема             |[synchronizationSchema](synchronization-synchronizationschema.md)     |Схема синхронизации по умолчанию для заданий, основанных на этом шаблоне.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

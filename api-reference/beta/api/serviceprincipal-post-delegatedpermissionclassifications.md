@@ -3,14 +3,14 @@ title: Создание delegatedPermissionClassification
 description: Классификация разрешения путем добавления делегированияPermissionClassification к основному классу-службе API.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 3ca3724858dc9f6ddde69ed630ffc7eac343feb4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 631c68bb6986362c5c9743dd59b2d51809d5bbfb
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874391"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134194"
 ---
 # <a name="create-delegatedpermissionclassification"></a>Создание delegatedPermissionClassification
 
@@ -28,7 +28,7 @@ ms.locfileid: "49874391"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | PermissionGrantPolicy.ReadWrite.All |
+|Для приложений | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса укажу представление объекта [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) в JSON.
 
@@ -116,3 +116,4 @@ Content-type: application/json
   "classification": "low"
 }
 ```
+

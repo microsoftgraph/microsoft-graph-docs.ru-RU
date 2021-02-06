@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipal: Ремовепассворд'
+title: 'servicePrincipal: removePassword'
 description: Удаление пароля из servicePrincipal
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ab823413e0b5f295148dffff0b1aa6944753d9fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be45dacbb123c93d7670d3f01f9b7444e561300a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076689"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134115"
 ---
-# <a name="serviceprincipal-removepassword"></a>servicePrincipal: Ремовепассворд
+# <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пароля из объекта [servicePrincipal](../resources/serviceprincipal.md) .
+Удаление пароля из объекта [servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48076689"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/removePassword
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| Него значение KeyID | GUID | Уникальный идентификатор пароля. Обязательный. |
+| keyId | GUID | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -107,5 +107,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

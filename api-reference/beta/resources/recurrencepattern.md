@@ -3,14 +3,14 @@ title: Тип ресурса recurrencePattern
 description: Описывает частоту повторения события.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: harini84
-ms.openlocfilehash: ab3b33a00467dffb5a65865be3c0d3cdbc5c2dcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7db1d0b13f9e27e3e57aadc4c490bfb926553f0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133632"
 ---
 # <a name="recurrencepattern-resource-type"></a>Тип ресурса recurrencePattern
 
@@ -45,7 +45,7 @@ ms.locfileid: "48073546"
 |index|String|Указывает, в какой из разрешенных дней, указанных в **daysOfsWeek**, происходит событие (начиная с первого экземпляра за месяц). Возможные значения: `first`, `second`, `third`, `fourth`, `last`. Значение по умолчанию: `first`. Необязательное, если для **type** задано значение `relativeMonthly` или `relativeYearly`. |
 |interval|Int32|Количество единиц между повторениями. Единицами могут быть дни, недели, месяцы или годы (в зависимости от значения **type**). Обязательное. |
 |month|Int32|Месяц, в который происходит событие.  Это число от 1 до 12.|
-|type|String|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательный элемент.|
+|type|Строка|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON
 

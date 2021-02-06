@@ -3,14 +3,14 @@ title: Тип ресурса userRegistrationFeatureSummary
 description: Сводка пользователей, способных выполнять многофакторную проверку подлинности, Self-Service и проверку подлинности без пароля.
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3dc3b48e6883b8c953db5d7b826243989109f2d9
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 291da483380d6e1d65b5db527128098b8b416c83
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132937"
 ---
 # <a name="userregistrationfeaturesummary-resource-type"></a>Тип ресурса userRegistrationFeatureSummary
 
@@ -46,7 +46,7 @@ ms.locfileid: "50052619"
 * Администратор пользователей
 * Администратор проверки подлинности
 
-Значение включает `admin` все роли администратора Azure AD. 
+Это значение `admin` включает все роли администратора Azure AD. 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

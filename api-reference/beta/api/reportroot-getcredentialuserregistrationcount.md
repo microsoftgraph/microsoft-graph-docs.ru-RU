@@ -1,24 +1,24 @@
 ---
-title: 'Reportroot.: Жеткредентиалусеррегистратионкаунт'
-description: Сообщите о текущем состоянии того, сколько пользователей в вашей организации зарегистрировано для самостоятельного сброса паролей и возможностей многофакторной проверки подлинности (MFA).
+title: 'reportRoot: getCredentialUserRegistrationCount'
+description: Фиксируйте текущее состояние регистрации пользователей в организации для самостоятельного сброса паролей и многофакторной проверки подлинности (MFA).
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8fd2b2d950055eb778242664b95e0eaafe95dbc9
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7224d49e71933716fb36b90dfe5cbb2b0d99223f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523058"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131350"
 ---
-# <a name="reportroot-getcredentialuserregistrationcount"></a>Reportroot.: Жеткредентиалусеррегистратионкаунт
+# <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot: getCredentialUserRegistrationCount
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сообщите о текущем состоянии того, сколько пользователей в вашей организации зарегистрировано для самостоятельного сброса паролей и возможностей многофакторной проверки подлинности (MFA).
+Фиксируйте текущее состояние регистрации пользователей в организации для самостоятельного сброса паролей и многофакторной проверки подлинности (MFA).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [кредентиалусеррегистратионкаунт](../resources/credentialuserregistrationcount.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `200 OK` [коллекции credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
 

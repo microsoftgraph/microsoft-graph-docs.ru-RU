@@ -1,24 +1,24 @@
 ---
-title: Получение Синчронизатионсчема
-description: Получение схемы для данного задания или шаблона синхронизации.
+title: Get synchronizationSchema
+description: Извлекает схему для заданного задания или шаблона синхронизации.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c952e2b8831a7d2d23964590fb944d8f5c3580c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 9e91c0697c39c031f149477d7dbcac5a35679040
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969520"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132715"
 ---
-# <a name="get-synchronizationschema"></a>Получение Синчронизатионсчема
+# <a name="get-synchronizationschema"></a>Get synchronizationSchema
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение схемы для данного задания или шаблона синхронизации.
+Извлекает схему для заданного задания или шаблона синхронизации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [синчронизатионсчема](../resources/synchronization-synchronizationschema.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [synchronizationSchema](../resources/synchronization-synchronizationschema.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

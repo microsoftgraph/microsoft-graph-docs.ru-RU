@@ -1,24 +1,24 @@
 ---
-title: 'Reportroot.: Жеткредентиалусажесуммари'
-description: Сообщите о текущем состоянии того, сколько пользователей в вашей организации используют возможности самостоятельного сброса пароля.
+title: 'reportRoot: getCredentialUsageSummary'
+description: Report the current state of how many users in your organization are using self-service password reset capabilities.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5d270b3edaebc64160cd356ef32c60ae77d8f539
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 56015afd7bc5589d518277df555ac511b7f91657
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523576"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131357"
 ---
-# <a name="reportroot-getcredentialusagesummary"></a>Reportroot.: Жеткредентиалусажесуммари
+# <a name="reportroot-getcredentialusagesummary"></a>reportRoot: getCredentialUsageSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сообщите о текущем состоянии того, сколько пользователей в вашей организации использовало возможности самостоятельного сброса пароля.
+Report the current state of how many users in your organization used the self-service password reset capabilities.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,25 +40,25 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="function-parameters"></a>Параметры функции
 
-Для настройки отклика можно использовать следующий параметр функции.
+Для настройки ответа можно использовать следующий параметр функции.
 
 | Параметр | Тип | Описание |
 |:--------- |:---- |:----------- |
-| period | String | Задает период времени, для которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1` , `D7` , и `D30` . В периоде регистр не учитывается. |
+| period | Строка | Указывает период времени, для которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1` , `D7` , и `D30` . Точка нечувствительна к делу. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Эта функция поддерживает необязательный параметр запроса OData **$Filter**. **$Filter** можно применить к одному или нескольким из следующих свойств ресурса [кредентиалусажесуммари](../resources/credentialusagesummary.md) .
+Эта функция поддерживает необязательный параметр запроса OData **$filter.** Вы можете **применить $filter** к одному или более из следующих свойств ресурса [credentialUsageSummary.](../resources/credentialusagesummary.md)
 
 | Свойства | Описание и пример |
 |:---- |:----------- |
-| состав | Задает тип данных об использовании (регистрация и сброс). Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтра: `eq` . |
+| feature | Указывает нужный тип данных об использовании (регистрация и сброс). Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтра: `eq` . |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,7 +67,7 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [кредентиалусажесуммари](../resources/credentialusagesummary.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `200 OK` [коллекции credentialUsageSummary](../resources/credentialusagesummary.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
 

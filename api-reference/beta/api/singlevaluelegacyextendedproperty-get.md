@@ -1,16 +1,16 @@
 ---
 title: Получение объекта singleValueLegacyExtendedProperty
-description: Можно получить один экземпляр ресурса, дополненный определенным расширенным свойством, или коллекцию экземпляров ресурса.
+description: Можно получить один экземпляр ресурса, расширенный с определенным расширенным свойством, или коллекцию экземпляров ресурсов
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 1f28bf02d3f63445ebe14b148f7260971266fb4e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+author: abheek-das
+ms.openlocfilehash: dedb7eefacd028a837c39b3712ec6f61e0ee032f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969848"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134094"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Получение объекта singleValueLegacyExtendedProperty
 
@@ -22,9 +22,9 @@ ms.locfileid: "48969848"
 
 Вы можете получить отдельный экземпляр ресурса, дополненный определенным расширенным свойством, или коллекцию экземпляров ресурсов, включающую расширенные свойства, которые соответствуют фильтру.
 
-Параметр запроса `$expand` позволяет получить указанный экземпляр ресурса, дополненный определенным расширенным свойством. Используйте операторы `$filter` и `eq` в свойстве **id** , чтобы указать расширенное свойство. На данный момент это единственный способ получить объект [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), представляющий расширенное свойство.
+Параметр запроса `$expand` позволяет получить указанный экземпляр ресурса, дополненный определенным расширенным свойством. Используйте операторы `$filter` и `eq` в свойстве **id**, чтобы указать расширенное свойство. На данный момент это единственный способ получить объект [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), представляющий расширенное свойство.
 
-Чтобы получить экземпляры ресурсов, которые содержат определенные расширенные свойства, используйте параметр запроса `$filter` и примените оператор `eq` к свойству **id**. Кроме того, для числовых расширенных свойств примените один из следующих операторов к свойству **value** : `eq`, `ne`, `ge`, `gt`, `le` или `lt`. Для расширенных свойств строкового типа примените оператор `contains`, `startswith`, `eq` или `ne` к свойству **value**.
+Чтобы получить экземпляры ресурсов, которые содержат определенные расширенные свойства, используйте параметр запроса `$filter` и примените оператор `eq` к свойству **id**. Кроме того, для числовых расширенных свойств примените один из следующих операторов к свойству **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`. Для расширенных свойств строкового типа примените оператор `contains`, `startswith`, `eq` или `ne` к свойству **value**.
 
 При фильтрации имени строки (`Name`) в свойстве **id** расширенного свойства учитывается регистр. При фильтрации свойства **value** расширенного свойства регистр не учитывается.
 
@@ -48,7 +48,7 @@ ms.locfileid: "48969848"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, из которого вы получаете расширенное свойство, а также от запрашиваемого типа разрешения (делегированного или приложения), для вызова этого API требуется минимум разрешение, указанное в следующей таблице. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, из которых вы получаете расширенное свойство, и типа запрашиваемого разрешения (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным требованием для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -70,34 +70,34 @@ ms.locfileid: "48969848"
 #### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>Получение экземпляра ресурса, дополненного расширенным свойством, которое соответствует фильтру
 Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
 
-Получение экземпляра объекта **message** :
+Получение экземпляра объекта **message**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **mailFolder** :
+Получение экземпляра объекта **mailFolder**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра объекта **event** :
+Получение экземпляра объекта **event**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **calendar** :
+Получение экземпляра объекта **calendar**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра объекта **contact** :
+Получение экземпляра объекта **contact**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -105,14 +105,14 @@ GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedPrope
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **contactFolder** :
+Получение экземпляра объекта **contactFolder**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **outlookTask** :
+Получите экземпляр **outlookTask:**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -122,7 +122,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=si
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **outlookTaskFolder** :
+Получите экземпляр **outlookTaskFolder:**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -146,38 +146,38 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>Получение экземпляров ресурсов с числовыми расширенными свойствами, которые соответствуют фильтру
 
-Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру. В случае фильтра используется оператор `eq` для свойства **id** , а также применяется один из следующих операторов для свойства **value** : `eq`, `ne`, `ge`, `gt`, `le` или `lt`.
-Убедитесь, что вы применяете [кодировку URL-адреса](https://www.w3schools.com/tags/ref_urlencode.asp) к следующим символам в строке фильтра — двоеточие, косая черта и пробел.
+Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`.
+Убедитесь, что вы [](https://www.w3schools.com/tags/ref_urlencode.asp) применяли кодику URL-адресов к следующим символам в строке фильтра — двоеточию, косой черте и пробелу.
 
 В приведенных ниже строках синтаксиса показан фильтр, в случае которого один оператор `eq` используется для свойства id, а другой оператор `eq` — для свойства value. Вы можете заменить оператор `eq` для свойства **value** любым из других операторов (`ne`, `ge`, `gt`, `le` или `lt`), которые применяются к числовым значениям.
 
-Получение экземпляров объекта **message** :
+Получение экземпляров объекта **message**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **mailFolder** :
+Получение экземпляров объекта **mailFolder**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Список экземпляров объекта **event** :
+Список экземпляров объекта **event**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **calendar** :
+Получение экземпляров объекта **calendar**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **contact** :
+Получение экземпляров объекта **contact**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -185,14 +185,14 @@ GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **contactFolder** :
+Получение экземпляров объекта **contactFolder**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Получение экземпляра **outlookTask** :
+Получите экземпляр **outlookTask:**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -202,7 +202,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks?$filter=singleV
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляра **outlookTaskFolder** :
+Получите экземпляр **outlookTaskFolder:**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -226,10 +226,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 #### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a>Получение экземпляров ресурсов с расширенными свойствами строкового типа, которые соответствуют фильтру
 
-Получите экземпляры ресурса **message** или **event** , которые включают расширенное свойство строкового типа, соответствующее фильтру. В случае фильтра используется оператор `eq` для свойства **id** , а также применяется один из следующих операторов для свойства **value** : `contains`, `startswith`, `eq` или `ne`. Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
+Получите экземпляры ресурса **message** или **event**, которые включают расширенное свойство строкового типа, соответствующее фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `contains`, `startswith`, `eq` или `ne`. Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
 
 
-Получение экземпляров объекта **message** :
+Получение экземпляров объекта **message**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -249,7 +249,7 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-Получение экземпляров объекта **event** :
+Получение экземпляров объекта **event**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -407,7 +407,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProp
 
 #### <a name="response-3"></a>Отклик 3
 
-В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а тело отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру. Например, сообщение, которое содержит однозначное расширенное свойство со свойством **id** , равным строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, и свойством **value** , равным строке `Light green`, будет соответствовать фильтру и включено в отклик.
+В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а тело отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру. Например, сообщение, которое содержит однозначное расширенное свойство со свойством **id**, равным строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, и свойством **value**, равным строке `Light green`, будет соответствовать фильтру и включено в отклик.
 
 Тело отклика такое же, как при [получении коллекции сообщений](../api/user-list-messages.md). Отклик не включает соответствующее расширенное свойство.
 

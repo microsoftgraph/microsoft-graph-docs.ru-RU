@@ -2,15 +2,15 @@
 title: Получение параметров почтового ящика пользователя
 description: 'Получение объекта mailboxSettings пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78991c5140695c178ea7f878c51546b19b6c28f4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cc87e9d4c111c7e0204614df4ece37ecef6452d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970115"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131693"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -24,12 +24,12 @@ ms.locfileid: "48970115"
 
 - [автоматические ответы](../resources/automaticrepliessetting.md) (автоматическое уведомление пользователей при получении их почты);
 - формат даты;
-- делегатемитингмессажеделиверйоптионс
+- delegateMeetingMessageDeliveryOptions
 - [языковой стандарт](../resources/localeinfo.md) (язык и страну или регион);
 - формат времени;
 - часовой пояс;
 - [рабочее время](../resources/workinghours.md).
-- [Назначение пользователя](../resources/userpurpose.md)
+- [назначение пользователя](../resources/userpurpose.md)
 
 С помощью Outlook в Интернете пользователи могут настраивать предпочитаемый формат даты и времени. Пользователи могут выбрать один из поддерживаемых [кратких форматов даты](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [кратких форматов времени](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime). Эта операция `GET` возвращает формат, выбранный пользователем.
 
@@ -54,7 +54,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Для получения определенных параметров можно использовать только параметры автоматических ответов, формат даты, языковой стандарт, формат времени, часовой пояс, рабочие часы и назначение пользователей:
+Чтобы получить определенные параметры — только параметры автоматических ответов, формат даты, региональные параметры, формат времени, часовой пояс, рабочие часы или назначение пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -97,19 +97,19 @@ GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 
 - Объект [mailboxSettings](../resources/mailboxsettings.md).
 - Объект [automaticRepliesSetting](../resources/automaticrepliessetting.md).
-- Строка (для параметра **dateFormat** ).
-- строка (для **делегатемитингмессажеделиверйоптионс** )
+- Строка (для параметра **dateFormat**).
+- string (для **delegateMeetingMessageDeliveryOptions)**
 - Объект [localeInfo](../resources/localeinfo.md).
-- Строка (для параметра **timeFormat** ).
-- Строка (для параметра **timeZone** ).
+- Строка (для параметра **timeFormat**).
+- Строка (для параметра **timeZone**).
 - [workingHours](../resources/workinghours.md)
-- [усерпурпосе](../resources/userpurpose.md)
+- [userPurpose](../resources/userpurpose.md)
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1"></a>Пример 1
 #### <a name="request"></a>Запрос 
-В первом примере возвращаются все параметры почтового ящика пользователя, выполнившего вход, который включает параметры для автоматических ответов, форматов даты, языкового стандарта (языка и страны/региона), формата времени, часового пояса, рабочих часов и назначения пользователей.
+Первый пример получает все параметры почтового ящика воходящего пользователя, которые включают параметры автоматических ответов, формат даты, языковой стандарт (язык и страна или регион), формат времени, часовой пояс, рабочие часы и назначение пользователя.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -312,7 +312,7 @@ Content-type: application/json
 
 ### <a name="example-4"></a>Пример 4
 #### <a name="request"></a>Запрос
-В четвертом примере показано, как получить параметры [пользователя](../resources/userpurpose.md) почтового ящика пользователя, выполнившего вход в систему.
+В четвертом примере [](../resources/userpurpose.md) получаются параметры назначения пользователя для почтового ящика воходящего пользователя.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -341,7 +341,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ---
 
 #### <a name="response"></a>Отклик
-Ответ включает только параметры [назначения пользователя](../resources/userpurpose.md) .
+Ответ включает только параметры [назначения](../resources/userpurpose.md) пользователя.
 
 <!-- {
   "blockType": "response",

@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Филтероперанд
-description: Содержит коллекцию значений для операнда.
+title: Тип ресурса filterOperand
+description: Содержит коллекцию значений для операнд.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bdb43108d327a727f6c5899d0ea097caf357f205
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 1ee9d52ca4cf93347696362a46f3fc145ff4f448
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131896"
 ---
-# <a name="filteroperand-resource-type"></a>Тип ресурса Филтероперанд
+# <a name="filteroperand-resource-type"></a>Тип ресурса filterOperand
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит коллекцию значений для операнда.
+Содержит коллекцию значений для операнд.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|values|Коллекция String|Коллекция значений.|
+|values|Коллекция объектов string|Коллекция значений.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

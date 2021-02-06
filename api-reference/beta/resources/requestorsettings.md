@@ -3,14 +3,14 @@ title: Сложный тип requestorSettings
 description: Используется для `requestorSettings` свойства политики назначения пакета доступа. Предоставляет дополнительные параметры для выбора, кто может создать запрос.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ccaa57a3dfa2f81d33e4e6fea804a91d1db7da20
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: a9bd91605d106b488de21f29baefe4b31d28f323
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133730"
 ---
 # <a name="requestorsettings-resource-type"></a>Тип ресурса requestorSettings
 
@@ -35,11 +35,11 @@ ms.locfileid: "49777615"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |Кто может запросить. Один из `NoSubjects` , , , , , , или `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllConfiguredConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` `AllExternalSubjects` .  |
+| scopeType |Строка |Кто может запросить. Один из `NoSubjects` , , , , , , или `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllConfiguredConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` `AllExternalSubjects` .  |
 | acceptRequests | Boolean | Указывает, принимаются ли новые запросы для этой политики. |
 | allowedRequestors | [Коллекция userSet](userset.md)| Пользователи, которым разрешено запрашивать эту политику, которые могут быть [singleUser,](singleuser.md) [groupMembers](groupmembers.md)и [connectedOrganizationMembers.](connectedorganizationmembers.md) |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 
 Ниже приводится представление свойства **requestorSettings** политики в JSON, которое позволяет участникам группы запрашивать запросы.

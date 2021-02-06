@@ -3,14 +3,14 @@ title: Тип ресурса licenseUnitsDetail
 description: Свойство **prepaidUnits** объекта subscribedSku относится к типу **licenseUnitsDetail**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: krbain
-ms.openlocfilehash: c241ed81ee7c8b724352c4cac6505595c47c6b7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d4925c2acea0216e16283eaa8f779cb556e0857
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029192"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132435"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
 
@@ -27,7 +27,7 @@ ms.locfileid: "48029192"
 |suspended|Int32| Количество приостановленных единиц. |
 |warning|Int32| Количество единиц, которые находятся в состоянии предупреждения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

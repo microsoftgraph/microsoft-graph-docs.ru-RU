@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Усеррегистратионкаунт
-description: Представляет счетчик регистраций и состояние для пользователей в клиенте.
+title: Тип ресурса userRegistrationCount
+description: Представляет количество регистраций и состояние пользователей в клиенте.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3e3a5e7e3925f5528d5ce73a15233cea8e50eebd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 5cdcdb4cfd56c0828cfeb7e71defe4c7459e3133
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132953"
 ---
-# <a name="userregistrationcount-resource-type"></a>Тип ресурса Усеррегистратионкаунт
+# <a name="userregistrationcount-resource-type"></a>Тип ресурса userRegistrationCount
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет счетчик регистраций и состояние для пользователей в клиенте.
+Представляет количество регистраций и состояние пользователей в клиенте.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| регистратионкаунт | Int64 | Предоставляет счетчик регистраций для клиента. |
-| регистратионстатус | String | Представляет состояние регистрации пользователя. Возможные значения: `registered` , `enabled` , `capable` и `mfaRegistered` . |
+| registrationCount | Int64 | Предоставляет количество регистраций для вашего клиента. |
+| registrationStatus | Строка | Представляет состояние регистрации пользователя. Возможные значения: `registered` , , , и `enabled` `capable` `mfaRegistered` . |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

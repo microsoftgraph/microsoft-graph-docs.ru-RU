@@ -1,24 +1,24 @@
 ---
-title: 'Синчронизатионсчема: Филтероператорс'
-description: Перечисление всех операторов, поддерживаемых в фильтрах областей видимости.
+title: 'synchronizationSchema: filterOperators'
+description: Список всех операторов, поддерживаемых фильтрами области.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 37b6fa4eccbf6afe3f4f9b16dec91bbf6e95fec2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 9d790707aa11642499924dd93f75e2cec3945bb3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133835"
 ---
-# <a name="synchronizationschema-filteroperators"></a>Синчронизатионсчема: Филтероператорс
+# <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление всех операторов, поддерживаемых в [фильтрах областей видимости](../resources/synchronization-filter.md).
+Список всех операторов, поддерживаемых [фильтрами области.](../resources/synchronization-filter.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,13 +43,13 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200, OK` код отклика и объект коллекции [филтероператорсчема](../resources/synchronization-filteroperatorschema.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект коллекции `200, OK` [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",

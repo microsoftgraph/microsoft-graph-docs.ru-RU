@@ -1,16 +1,16 @@
 ---
 title: Проверки доступа Azure AD (все ресурсы)
-description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя. Эта документация предназначена для устаревших API.
+description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователей. Эта документация предназначена для устаревших API.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 113e24c801c804024d37700148ca1eb12c128a06
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: b2978179dbe581a1013d34e848e9a4c3614d9761
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133464"
 ---
 # <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Проверки доступа Azure AD (для ресурсов, кроме групп)
 
@@ -52,7 +52,7 @@ ms.locfileid: "49790750"
 |[Добавление рецензента accessReview](../api/accessreview-addreviewer.md) |      Нет.   |   Добавление рецензента в accessReview. |
 |[Удаление рецензента accessReview](../api/accessreview-removereviewer.md) | Нет.  |   Удаление рецензента из accessReview. |
 |[Список решений accessReview](../api/accessreview-listdecisions.md) |      [Коллекция accessReviewDecision](accessreviewdecision.md)| Получите решения accessReview.|
-|[Список решений accessReview](../api/accessreview-listmydecisions.md) |     [Коллекция accessReviewDecision](accessreviewdecision.md)| Как рецензент получите мои решения по accessReview.|
+|[Список решений accessReview](../api/accessreview-listmydecisions.md) |     [Коллекция accessReviewDecision](accessreviewdecision.md)| Как рецензент получите мои решения о accessReview.|
 |[Отправка напоминания accessReview](../api/accessreview-sendreminder.md) |        Нет.   |   Отправьте напоминание рецензентам accessReview. |
 |[Остановка accessReview](../api/accessreview-stop.md) |     Нет.   |   Остановите accessReview. |
 |[Сброс решений accessReview](../api/accessreview-reset.md) |     Нет.   |   Сброс решений в ходе выполнения accessReview.|
@@ -72,7 +72,7 @@ ms.locfileid: "49790750"
 
 Следующие роли каталога необходимы вызываемой пользователю для управления проверками доступа, программами и средствами управления.
 
-| Целевой ресурс | Операция | Разрешения приложений | Требуемая роль каталога вызываемого пользователя |
+| Целевой ресурс | Operation | Разрешения приложений | Требуемая роль каталога вызываемого пользователя |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) роли Azure AD | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор привилегированных ролей |
 |[accessReview](accessreview.md) роли Azure AD | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор привилегированных ролей |

@@ -1,24 +1,24 @@
 ---
-title: Запуск Синчронизатионжоб
-description: Запуск существующего задания синхронизации. Если задание приостановлено, оно продолжит обработку изменений с того места, где оно было приостановлено. Если задание находится в карантине, состояние карантина будет очищено.
+title: Запуск synchronizationJob
+description: Запустите существующее задание синхронизации. Если задание приостановлено, оно продолжит обработку изменений с момента приостановки. Если задание находится в карантине, состояние карантина будет очищено.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8d85a371db7b86010bf3aaf81b3b91837b8546d0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 1fae704446d35c7a93d850f25f31355f50d332e0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978858"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132771"
 ---
-# <a name="start-synchronizationjob"></a>Запуск Синчронизатионжоб
+# <a name="start-synchronizationjob"></a>Запуск synchronizationJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запуск существующего задания синхронизации. Если задание приостановлено, оно продолжит обработку изменений с того места, где оно было приостановлено. Если задание находится в карантине, состояние карантина будет очищено.
+Запустите существующее задание синхронизации. Если задание приостановлено, оно продолжит обработку изменений с момента приостановки. Если задание находится в карантине, состояние карантина будет очищено.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `204 No Content` отклик. Метод не возвращает данные в теле отклика.
+В случае успеха возвращает `204 No Content` ответ. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 

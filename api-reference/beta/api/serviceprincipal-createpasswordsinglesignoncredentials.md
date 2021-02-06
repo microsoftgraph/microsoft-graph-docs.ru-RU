@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipal: Креатепассвордсинглесигнонкредентиалс'
+title: 'servicePrincipal: createPasswordSingleSignOnCredentials'
 description: Создайте учетные данные единого входа, используя пароль для пользователя или группы.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 16dedab55ccec0e4dab7e9a6483b7fb03ae7e2c1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7874e0f875b54b4bffb18efd3a3cdbe4cd468ccd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132470"
 ---
-# <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal: Креатепассвордсинглесигнонкредентиалс
+# <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal: createPasswordSingleSignOnCredentials
 
 Пространство имен: microsoft.graph
 
@@ -26,12 +26,12 @@ ms.locfileid: "48970842"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> Пользователи могут самостоятельно создавать учетные данные. Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор. Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> Пользователи могут создавать учетные данные для себя. Владельцы и администраторы, в которых есть следующие роли, могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные узнать см. в [ролях каталога.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,12 +54,12 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
-|записей|Коллекция [учетных данных](../resources/credential.md)|Список объектов учетных данных, определяющих полный вход.|
+|id|Строка|ИД пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|credentials|[коллекция учетных](../resources/credential.md) данных|Список объектов учетных данных, которые определяют полный поток входа.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [пассвордсинглесигнонкредентиалсет](../resources/passwordsinglesignoncredentialset.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `200 OK` [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Филтероператорсчема
+title: Тип ресурса filterOperatorSchema
 description: Описывает оператор, который можно использовать в фильтре.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694af6455cc7b2dbf1f6f6ae811713b5b9d61265
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 1128b12ffcadd36f2fdd2f34d27f95d973cdfd9d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131889"
 ---
-# <a name="filteroperatorschema-resource-type"></a>Тип ресурса Филтероператорсчема
+# <a name="filteroperatorschema-resource-type"></a>Тип ресурса filterOperatorSchema
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает оператор, который можно использовать в [фильтре](synchronization-filter.md).
+Описывает оператор, который можно использовать в [фильтре.](synchronization-filter.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|равн                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию: `Binary` .|
-|мултивалуедкомпарисонтипе   |скопеоператормултивалуедкомпарисонтипе          |Возможные значения: `All`, `Any`. Применяется только к многозначным атрибутам. `All` означает, что все значения должны удовлетворять условию. `Any` Указывает, что по крайней мере одно значение должно удовлетворять условию. Значение по умолчанию: `All` .|
+|arity                       |Строка          |Arity of the operator. Возможные значения: `Binary`, `Unary`. Значение по `Binary` умолчанию: .|
+|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Возможные значения: `All`, `Any`. Применяется только к многоценным атрибутам. `All` означает, что все значения должны удовлетворять условию. `Any` означает, что условие должно удовлетворять хотя бы одному значению. Значение по `All` умолчанию: .|
 |name                        |String                     |Имя оператора. |
-|суппортедаттрибутетипес     |Коллекция String         |Типы атрибутов, поддерживаемые оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|supportedAttributeTypes     |Коллекция объектов string         |Типы атрибутов, поддерживаемые оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

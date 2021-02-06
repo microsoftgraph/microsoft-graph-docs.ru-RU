@@ -1,24 +1,24 @@
 ---
-title: 'Синчронизатионсчема: функции'
-description: Перечисление всех функций, которые в настоящее время поддерживаются в Аттрибутемаппингсаурце.
+title: 'synchronizationSchema: функции'
+description: Список всех функций, в настоящее время поддерживаемых в attributeMappingSource.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6bfd4bf92e49b2c213db561285321552a3383377
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 626ab146bf928691d846b4ffab209720be5b8f66
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132759"
 ---
-# <a name="synchronizationschema-functions"></a>Синчронизатионсчема: функции
+# <a name="synchronizationschema-functions"></a>synchronizationSchema: функции
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление всех функций, которые в настоящее время поддерживаются в [аттрибутемаппингсаурце](../resources/synchronization-attributemappingsource.md).
+Перечислить все функции, поддерживаемые в [attributeMappingSource.](../resources/synchronization-attributemappingsource.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 
 <!--
 {
