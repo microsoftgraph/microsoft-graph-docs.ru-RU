@@ -1,16 +1,16 @@
 ---
 title: Список заданий синхронизации
-description: Перечисление существующих заданий для определенного экземпляра приложения (субъекта-службы).
+description: Список существующих заданий для заданного экземпляра приложения (участников-служб).
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c59a3414d1e480caee34023b6ad0bd5fd7773684
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 8dafcb1120190244902c2fc4deaa56ee7d4d274c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137496"
 ---
 # <a name="list-synchronization-jobs"></a>Список заданий синхронизации
 
@@ -18,7 +18,7 @@ ms.locfileid: "48974220"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление существующих заданий для определенного экземпляра приложения (субъекта-службы).
+Список существующих заданий для заданного экземпляра приложения (участников-служб).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [synchronizationJob](../resources/synchronization-synchronizationjob.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

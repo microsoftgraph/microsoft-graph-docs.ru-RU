@@ -1,24 +1,24 @@
 ---
-title: Обновление Публишедресаурце
-description: Обновление свойств объекта [публишедресаурце](../resources/publishedresource.md) .
+title: Обновление publishedResource
+description: Обновление свойств объекта [publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2c5cfac4e39c9aee07d2a8fdadefa0027b0cc789
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8c8a6cfe8eead7219918daf5ac2e87090cc18888
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973345"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137678"
 ---
-# <a name="update-publishedresource"></a>Обновление Публишедресаурце
+# <a name="update-publishedresource"></a>Обновление publishedResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта публишедресаурце  [публишедресаурце](../resources/publishedresource.md) .
+Обновление свойств объекта publishedresource [publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,13 +46,13 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укавите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 В следующей таблице перечислены свойства, которые можно обновить.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Представляет локальное имя опубликованного ресурса.|
+|displayName|Строка|Представляет локально опубликованное имя ресурса.|
 
 ## <a name="response"></a>Отклик
 
@@ -121,5 +121,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

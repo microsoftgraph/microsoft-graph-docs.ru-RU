@@ -1,24 +1,24 @@
 ---
-title: Получение Синчронизатионжоб
-description: Получение существующего задания синхронизации и его свойств.
+title: Get synchronizationJob
+description: Извлекает существующее задание синхронизации и его свойства.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f37a58c5b808473ac6ece68dd1a35efe54b15aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: b5a676d3509cd0a2511fb64704ef9b72d3aa15ff
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137510"
 ---
-# <a name="get-synchronizationjob"></a>Получение Синчронизатионжоб
+# <a name="get-synchronizationjob"></a>Get synchronizationJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение существующего задания синхронизации и его свойств.
+Извлекает существующее задание синхронизации и его свойства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `200 OK` ответ с [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.
+В случае успеха возвращает ответ `200 OK` с помощью [synchronizationJob](../resources/synchronization-synchronizationjob.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

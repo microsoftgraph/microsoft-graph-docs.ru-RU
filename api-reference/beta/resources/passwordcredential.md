@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса Пассвордкредентиал
-description: Содержит учетные данные пароля, связанные с приложением или субъектом службы.
+title: Тип ресурса passwordCredential
+description: Содержит учетные данные пароля, связанные с приложением или основным приложением-службой.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 25b2070a7a665bf6893ad870a7a3111ae9eba80f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f7906f2f7411c680eb07c94166e5d324e922d67
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137664"
 ---
-# <a name="passwordcredential-resource-type"></a>Тип ресурса Пассвордкредентиал
+# <a name="passwordcredential-resource-type"></a>Тип ресурса passwordCredential
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет учетные данные пароля, связанные с приложением или субъектом службы. Свойство **пассвордкредентиалс** [приложения](application.md) и [servicePrincipal](serviceprincipal.md) ентититес — это коллекция объектов **пассвордкредентиал** .
+Представляет учетные данные пароля, связанные с приложением или основным приложением-службой. Свойство **passwordCredentials** объектов [application](application.md) и [servicePrincipal](serviceprincipal.md) — это коллекция **объектов passwordCredential.**
 
 > [!IMPORTANT]
-> Использование POST или PATCH для установки **пассвордкредентиал** не поддерживается. Используйте методы Аддпассворд и Ремовепассворд для обновления пароля приложения или servicePrincipal:
+> Использование POST или PATCH для применения **passwordCredential** не поддерживается. Используйте методы addPassword и removePassword для обновления пароля приложения или servicePrincipal:
 >
-> - [Приложение: Аддпассворд](../api/application-addpassword.md)
-> - [Приложение: Ремовепассворд](../api/application-removepassword.md)
-> - [servicePrincipal: Аддпассворд](../api/serviceprincipal-addpassword.md)
-> - [servicePrincipal: Ремовепассворд](../api/serviceprincipal-removepassword.md)
+> - [application: addPassword](../api/application-addpassword.md)
+> - [application: removePassword](../api/application-removepassword.md)
+> - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
+> - [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| кустомкэйидентифиер | Binary | Не следует использовать. |
-| displayName | String | Понятное имя для пароля. Необязательный параметр. |
-| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. |
-| сказок | String | Содержит первые три символа пароля. Только для чтения. |
-| Него значение KeyID | Guid | Уникальный идентификатор пароля. |
-| секреттекст | String | Только для чтения; Содержит надежные пароли, созданные Azure AD длиной 16-64 символов. Созданное значение пароля возвращается только во время начального запроса POST в [аддпассворд](../api/application-addpassword.md). В будущем невозможно получить этот пароль. |
+| customKeyIdentifier | Binary | Не следует использовать. |
+| displayName | Строка | Удобное имя пароля. Необязательный параметр. |
+| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля представлены в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. |
+| hint | Строка | Содержит первые три символа пароля. Только для чтения. |
+| keyId | Guid | Уникальный идентификатор пароля. |
+| secretText | Строка | Только для чтения; Содержит надежные пароли, созданные в Azure AD длиной от 16 до 64 символов. Созданный пароль возвращается только во время первоначального запроса POST для [addPassword.](../api/application-addpassword.md) В будущем получить этот пароль будет не нужно. |
 | startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -54,7 +54,7 @@ ms.locfileid: "47998222"
 -->
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,16 +1,16 @@
 ---
-title: сложный тип ресурса targetResource — API Microsoft Graph
-description: Определяет сложный тип ресурса сущности targetResource API Microsoft Graph, который поддерживает действия Организации отчетности журнала аудита (клиента).
+title: Сложный тип ресурса targetResource — API Microsoft Graph
+description: Определяет сложный тип ресурса объекта targetResource для API Microsoft Graph, который поддерживает действия организации (клиента) по отчетам журнала аудита.
 author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bec25af7e0f39a4adf15577c21d4141e1a3c431a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: 2dc8adea2edf11674d844cee4e5548da96882f7d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137587"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 
@@ -23,14 +23,14 @@ ms.locfileid: "47985652"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String|Указывает уникальный идентификатор ресурса.|
-|displayName|String|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
-|type|String|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , `ServicePrincipal` и `User` .|
-|userPrincipalName|String|Если для параметра **Type** задано значение `User` , это имя пользователя, инициировавшего действие, `null` для других типов.|
-|groupType|String|Если для параметра **Type** задано значение `Group` , это указывает тип группы.|
-|modifiedProperties|Коллекция [модифиедпроперти](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого атрибута, который изменился. Значения свойств зависят от **типа**операции.|
+|id|Строка|Указывает уникальный ИД ресурса.|
+|displayName|Строка|Указывает видимое имя, определенное для ресурса. Обычно указывается, когда создается ресурс.|
+|type|Строка|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , и `ServicePrincipal` `User` .|
+|userPrincipalName|String|Если **за** установлен тип, это включает имя пользователя, инициа которого было инициировано действие; для `User` других `null` типов.|
+|groupType|Строка|Если **за** установлен `Group` тип, это указывает на тип группы.|
+|modifiedProperties|[Коллекция modifiedProperty](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого из измененных атрибутов. Значения свойств зависят от типа **операции.**|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

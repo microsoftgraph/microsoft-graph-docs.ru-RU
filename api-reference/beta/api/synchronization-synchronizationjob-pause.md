@@ -1,24 +1,24 @@
 ---
-title: 'Синчронизатионжоб: пауза'
-description: Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении начального вызова.
+title: 'synchronizationJob: pause'
+description: Временно остановите синхронизацию. Все ходы выполнения, включая состояние задания, сохраняются, и задание продолжит работу с того места, где оно было отключено при запуске вызова.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ffaaba6087a27e88a8aef36c35bdfa20d01d1972
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: eba89e688b8dc9ea02fee633ee4beeb40bb55106
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974186"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137492"
 ---
-# <a name="synchronizationjob-pause"></a>Синчронизатионжоб: пауза
+# <a name="synchronizationjob-pause"></a>synchronizationJob: pause
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении [начального](../api/synchronization-synchronizationjob-start.md) вызова.
+Временно остановите синхронизацию. Все ходы выполнения, включая состояние задания, сохраняются, и задание продолжит работу с того места, где оно было отключено при [запуске](../api/synchronization-synchronizationjob-start.md) вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `204 No Content` отклик. Метод не возвращает данные в теле отклика.
+В случае успеха возвращает `204 No Content` ответ. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 

@@ -3,14 +3,14 @@ title: Тип ресурса patternedRecurrence
 description: Расписание и диапазон повторения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: harini84
-ms.openlocfilehash: 9fb6741ab3710ae71c27dfe32870b6f3e3411dd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e64fa16f1aceb22eccd744588bd325943f79e930
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998112"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137650"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
 
@@ -26,7 +26,7 @@ ms.locfileid: "47998112"
 |pattern|[recurrencePattern](recurrencepattern.md)|Частота события.|
 |range|[recurrenceRange](recurrencerange.md)|Продолжительность события.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
