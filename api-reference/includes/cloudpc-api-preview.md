@@ -2,14 +2,14 @@
 author: AshleyYangSZ
 ms.topic: include
 ms.date: 12/12/2020
-ms.openlocfilehash: f3b3535d04e28880e56805243831c539aabd67a7
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: c4624a8d8c66e5079a132238fa7687eba2fd9806
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563274"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137829"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> API Cloud PC доступен в предварительной версии и в настоящее время доступен только для выбранной группы клиентов. Для получения дополнительных сведений обратитесь в Гббс на современном рабочем месте.
+> API облачного ПК находится в предварительной версии и в настоящее время доступен только для выбранной группы клиентов.

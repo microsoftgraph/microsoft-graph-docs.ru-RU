@@ -3,14 +3,83 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 0414c2414a6765c7e0c29114c2239d15bbe71cea
-ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
+ms.openlocfilehash: 97cd975beeaf1d45dba7d4db9ffd0809ae6c54ae
+ms.sourcegitcommit: cee56ed143e73d1d47cb015b18e01c2808e760ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883419"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137820"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="december-2020-new-and-generally-available"></a>Декабрь 2020 г.: новые и общедоступные возможности
+
+### <a name="calendar"></a>Календарь
+- Организаторы собраний могут использовать свойство **hideAttendees** ресурса [event](/graph/api/resources/event), чтобы управлять возможностью участников видеть друг друга в списке собрания **Отслеживание**.
+- Общая доступность свойства **isDraft** и метода [cancel](/graph/api/event-cancel), которые доступны для организаторов, а также доступность метода [forward](/graph/api/event-forward) для организаторов и участников, чтобы лучше управлять ресурсами [event](/graph/api/resources/event) в календаре.
+- Общая доступность свойств **hexColor** и **isDefault** ресурса [calendar](/graph/api/resources/calendar), чтобы улучшить управление календарями.
+
+### <a name="cloud-communications"></a>Облачные коммуникации
+Общая доступность ресурса [presence](/graph/api/resources/presence), позволяющего получать сведения о присутствии одного или нескольких пользователей, например их доступность и действия.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+Воспользуйтесь новым [учебником](tutorial-riskdetection-api.md), чтобы узнать, как использовать [API защиты удостоверения](/graph/api/resources/identityprotectionroot) для идентификации риска и настройки рабочего процесса для подтверждения компрометации или включения исправления.
+
+### <a name="teamwork"></a>Командная работа
+- Общая доступность [API для управления установкой приложения Teams](/graph/api/resources/teamsappinstallation), в том числе управления установкой приложений, а также добавления, удаления или обновления приложения в команде или в личной области пользователя.
+- [Получение чата между пользователем и приложением Teams](/graph/api/userscopeteamsappinstallation-get-chat).
+
+### <a name="use-the-toolkit"></a>Использование набора средств
+Общая доступность набора средств Microsoft Graph Toolkit 2.0. Этот выпуск включает новый [компонент для задач Microsoft Graph To-Do](./toolkit/components/todo.md), отличающийся от [компонента задач Планировщика](./toolkit/components/tasks.md), и улучшенный [компонент карточки контакта](./toolkit/components/person-card.md). Дополнительные сведения см. в соответствующей [записи блога](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/).
+
+
+## <a name="december-2020-new-in-preview-only"></a>Декабрь 2020 г.: новые возможности только в предварительной версии
+
+### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
+Продолжением реализации конвейера [API соответствия требованиям Microsoft 365](/graph/api/resources/ediscoveryapioverview?view=graph-rest-beta&preserve-view=true) является ресурс [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true) и связанные с ним операции и методы для [выпуска](/graph/api/custodian-release?view=graph-rest-beta&preserve-view=true) или [активации](/graph/api/custodian-activate?view=graph-rest-beta&preserve-view=true) хранителя. Используйте ресурс **custodian** для доступа к данным хранителя ([userSource](/graph/api/resources/userSource?view=graph-rest-beta&preserve-view=true)) в почтовом ящике Exchange Online, OneDrive для бизнеса, сайтах SharePoint ([siteSource](/graph/api/resources/siteSource?view=graph-rest-beta&preserve-view=true)) и группах Microsoft 365 ([unifiedGroupSource](/graph/api/resources/unifiedGroupSource?view=graph-rest-beta&preserve-view=true)).
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+Определение состояния сбоя виртуального рабочего стола с облачным управлением в целом как `failed` в свойстве **status** ресурса [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
+- [Обновление](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) [конфигурации](/graph/api/resources/printjobconfiguration?view=graph-rest-beta&preserve-view=true) [задания печати](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).
+- Сведения о переименовании нескольких свойств и изменении типа связей см. в разделе Декабрь 2020 г. [журнала изменений API](https://developer.microsoft.com/graph/changelog/).
+
+### <a name="education"></a>Образование
+- Если учащиеся добавляются после публикации задания, преподаватели могут управлять действием задания, используя свойство **addedStudentAction** ресурса [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- Преподаватели могут размещать уведомление о публикации задания с помощью свойства **notificationChannelUrl** ресурса **educationAssignment**.
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+Получение или настройка метаданных версии и создания для [соглашения](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) [об условиях использования](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true), [файла соглашения](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) и отношения [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true) в Azure AD.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+В рамках [управления правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true) Azure Active Directory, когда пользователи хотят получить доступ к группам или приложениям либо сайты SharePoint Online запрашивают назначение для [пакета доступа](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true), они теперь могут отвечать на [вопросы](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true), представленные [локализованном содержимом](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) [запросa на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+- Администраторы могут связывать пользовательские потоки с приложениями, общий доступ к которым предоставлен внешним пользователям, и включить [самостоятельную регистрацию](/azure/active-directory/external-identities/self-service-sign-up-overview) в этих приложениях. Они могут настраивать пользовательские потоки самостоятельной регистрации и создавать персонализированные интерфейсы регистрации. В частности, они могут создать [прослушивателя для события начала регистрации, чтобы вызывать настраиваемый пользовательский поток](/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true). После связи приложения с пользовательским потоком пользователи, переходящие в это приложение, смогут запускать поток регистрации, предоставляющий гостевую учетную запись.
+- В [пользовательском потоке Azure Active Directory](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) или [пользовательском потоке клиента Azure Active Directory B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) вы можете управлять стандартными языковыми параметрами и [настраивать языки и строки, отображаемые для пользователей в пользовательском потоке](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true).
+- Использование [соединителя API](/graph/api/resources/identityapiconnector?view=graph-rest-beta&preserve-view=true) в пользовательских потоках для самостоятельной регистрации Azure AD и регистрации Azure AD B2C, чтобы вызывать API на определенном шаге для воздействия на выполнение пользовательского потока.
+- Определение [политики способов проверки подлинности OTP электронной почты](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) для клиента.
+
+### <a name="teamwork"></a>Командная работа
+- Новые возможности для ресурса [member](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) в контексте [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [канала](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [чата](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true):
+  - Выделение участника, который является [пользователем Azure AD](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true), с указанием ИД пользователя, адреса электронной почты и ИД клиента Azure AD. 
+  - [Добавление нескольких пользователей в качестве участников команды](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true).
+- Для ресурса [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true):
+  - [Получение всех сообщений в чатах, в которых принимал участие определенный пользователь](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true), включая приватные чаты, групповые чаты и чаты собраний.
+  - Использование всех возможностей для перечисления, получения, добавления, удаления и обновления [приложения](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) или [вкладки](/graph/api/resources/teamstab?view=graph-rest-beta&preserve-view=true) в чате.
+  - Использование свойства **chatType**, чтобы отличать приватный чат от группового чата или от чата, связанного с собранием по сети.
+  - [Создание](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true) или [обновление](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true) чата.
+  - Для участника в контексте чата используйте свойство **visibleHistoryStartDateTime**, чтобы настроить или получить метку времени, указывающую, с какого момента в прошлом участнику предоставлен журнал беседы.
+  - [Создание](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) или [удаление](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true) участника из указанного чата. 
+- Для ресурса [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true):
+  - [Получение всех сообщений из всех каналов в команде](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true).
+  - Владельцы команд могут включить [модерацию для канала](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true), чтобы контролировать, кто может создавать новые сообщения или отвечать на сообщения в канале, используя свойство **moderationSettings** канала.
+- В рамках [определения приложения Teams](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) используйте связь **bot**, чтобы подключаться к [боту командной работы](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).
+
+### <a name="to-do-tasks"></a>Задачи To-Do
+Подписывайтесь на [уведомления об изменениях](webhooks.md) [задачи To Do](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
+
 
 ## <a name="november-2020-new-and-generally-available"></a>Ноябрь 2020 г.: новые и общедоступные возможности
 
@@ -210,7 +279,7 @@ ms.locfileid: "49883419"
 ### <a name="change-notifications"></a>Уведомления об изменениях
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
 - Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 
