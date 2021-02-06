@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Синчронизатионеррор
-description: Представляет сообщение об ошибке, возникшей во время процесса синхронизации.
+title: Тип ресурса synchronizationError
+description: Представляет ошибку, которая произошла в процессе синхронизации.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c32f3bc22d2357c0eca88e6f693cd958a6dd5ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: a49f2cf9b9d3e621533490127a5b2674ab43bf14
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131490"
 ---
-# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="80f5a-103">Тип ресурса Синчронизатионеррор</span><span class="sxs-lookup"><span data-stu-id="80f5a-103">synchronizationError resource type</span></span>
+# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="626bc-103">Тип ресурса synchronizationError</span><span class="sxs-lookup"><span data-stu-id="626bc-103">synchronizationError resource type</span></span>
 
-<span data-ttu-id="80f5a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80f5a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="626bc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="626bc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="80f5a-105">Представляет сообщение об ошибке, возникшей во время процесса синхронизации.</span><span class="sxs-lookup"><span data-stu-id="80f5a-105">Represents an error that occurred during the synchronization process.</span></span>
+<span data-ttu-id="626bc-105">Представляет ошибку, которая произошла в процессе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="626bc-105">Represents an error that occurred during the synchronization process.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="80f5a-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="80f5a-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="626bc-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="626bc-106">Properties</span></span>
 
 <!-- Add descriptions for the properties. -->
-| <span data-ttu-id="80f5a-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="80f5a-107">Property</span></span>     | <span data-ttu-id="80f5a-108">Тип</span><span class="sxs-lookup"><span data-stu-id="80f5a-108">Type</span></span>   |<span data-ttu-id="80f5a-109">Описание</span><span class="sxs-lookup"><span data-stu-id="80f5a-109">Description</span></span>|
+| <span data-ttu-id="626bc-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="626bc-107">Property</span></span>     | <span data-ttu-id="626bc-108">Тип</span><span class="sxs-lookup"><span data-stu-id="626bc-108">Type</span></span>   |<span data-ttu-id="626bc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="626bc-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="80f5a-110">code</span><span class="sxs-lookup"><span data-stu-id="80f5a-110">code</span></span>|<span data-ttu-id="80f5a-111">String</span><span class="sxs-lookup"><span data-stu-id="80f5a-111">String</span></span>||
-|<span data-ttu-id="80f5a-112">message</span><span class="sxs-lookup"><span data-stu-id="80f5a-112">message</span></span>|<span data-ttu-id="80f5a-113">String</span><span class="sxs-lookup"><span data-stu-id="80f5a-113">String</span></span>||
-|<span data-ttu-id="80f5a-114">тенантактионабле</span><span class="sxs-lookup"><span data-stu-id="80f5a-114">tenantActionable</span></span>|<span data-ttu-id="80f5a-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="80f5a-115">Boolean</span></span>||
+|<span data-ttu-id="626bc-110">code</span><span class="sxs-lookup"><span data-stu-id="626bc-110">code</span></span>|<span data-ttu-id="626bc-111">Строка</span><span class="sxs-lookup"><span data-stu-id="626bc-111">String</span></span>||
+|<span data-ttu-id="626bc-112">message</span><span class="sxs-lookup"><span data-stu-id="626bc-112">message</span></span>|<span data-ttu-id="626bc-113">String</span><span class="sxs-lookup"><span data-stu-id="626bc-113">String</span></span>||
+|<span data-ttu-id="626bc-114">tenantActionable</span><span class="sxs-lookup"><span data-stu-id="626bc-114">tenantActionable</span></span>|<span data-ttu-id="626bc-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="626bc-115">Boolean</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="80f5a-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="80f5a-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="626bc-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="626bc-116">JSON representation</span></span>
 
-<span data-ttu-id="80f5a-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80f5a-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="626bc-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="626bc-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,72 +1,72 @@
 ---
 title: Получение объекта signIn
 doc_type: apiPageType
-description: Получение объекта SignIn, содержащего все входные сведения о клиенте Azure Active Directory.
+description: Получите объект signIn, содержащий все входы в клиент Azure Active Directory.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba955ab431597efdaf3edfddbba715fdc502243a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: 139ee4c8ae45699f284d866740c494a86fcb05a9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134136"
 ---
-# <a name="get-signin"></a><span data-ttu-id="66795-103">Получение объекта signIn</span><span class="sxs-lookup"><span data-stu-id="66795-103">Get signIn</span></span>
+# <a name="get-signin"></a><span data-ttu-id="2680a-103">Получение объекта signIn</span><span class="sxs-lookup"><span data-stu-id="2680a-103">Get signIn</span></span>
 
-<span data-ttu-id="66795-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66795-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2680a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2680a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="66795-105">Получение объекта [SignIn](../resources/signin.md) , содержащего конкретное пользовательское событие входа для вашего клиента.</span><span class="sxs-lookup"><span data-stu-id="66795-105">Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant.</span></span> <span data-ttu-id="66795-106">Сюда входят входы, в которых пользователю предлагается ввести имя пользователя или пароль, а также маркеры сеансов.</span><span class="sxs-lookup"><span data-stu-id="66795-106">This includes sign-ins where a user is asked to enter a username or password, and session tokens.</span></span>
+<span data-ttu-id="2680a-105">Получите объект [signIn,](../resources/signin.md) содержащий определенное событие для вашего клиента.</span><span class="sxs-lookup"><span data-stu-id="2680a-105">Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant.</span></span> <span data-ttu-id="2680a-106">К ним относятся входы, при которых пользователю будет предложено ввести имя пользователя или пароль, а также маркеры сеанса.</span><span class="sxs-lookup"><span data-stu-id="2680a-106">This includes sign-ins where a user is asked to enter a username or password, and session tokens.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="66795-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="66795-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2680a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2680a-107">Permissions</span></span>
 
-<span data-ttu-id="66795-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="66795-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2680a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2680a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="66795-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="66795-110">Permission type</span></span>      | <span data-ttu-id="66795-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="66795-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2680a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2680a-110">Permission type</span></span>      | <span data-ttu-id="2680a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2680a-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-| <span data-ttu-id="66795-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="66795-112">Delegated (work or school account)</span></span> | <span data-ttu-id="66795-113">Аудитлог. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="66795-113">AuditLog.Read.All, Directory.Read.All</span></span> |
-| <span data-ttu-id="66795-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="66795-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="66795-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="66795-115">Not supported</span></span> |
-| <span data-ttu-id="66795-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="66795-116">Application</span></span> | <span data-ttu-id="66795-117">Аудитлог. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="66795-117">AuditLog.Read.All, Directory.Read.All</span></span> | 
+| <span data-ttu-id="2680a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2680a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2680a-113">AuditLog.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="2680a-113">AuditLog.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="2680a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2680a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2680a-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="2680a-115">Not supported</span></span> |
+| <span data-ttu-id="2680a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2680a-116">Application</span></span> | <span data-ttu-id="2680a-117">AuditLog.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="2680a-117">AuditLog.Read.All, Directory.Read.All</span></span> | 
 
-<span data-ttu-id="66795-118">Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="66795-118">In addition, apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+<span data-ttu-id="2680a-118">Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="2680a-118">In addition, apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="66795-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="66795-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2680a-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2680a-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="66795-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="66795-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2680a-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2680a-120">Optional query parameters</span></span>
 
-<span data-ttu-id="66795-121">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="66795-121">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="66795-122">Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="66795-122">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="2680a-121">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="2680a-121">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="2680a-122">Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="2680a-122">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="66795-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="66795-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2680a-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2680a-123">Request headers</span></span>
 
-| <span data-ttu-id="66795-124">Имя</span><span class="sxs-lookup"><span data-stu-id="66795-124">Name</span></span>      |<span data-ttu-id="66795-125">Описание</span><span class="sxs-lookup"><span data-stu-id="66795-125">Description</span></span>|
+| <span data-ttu-id="2680a-124">Имя</span><span class="sxs-lookup"><span data-stu-id="2680a-124">Name</span></span>      |<span data-ttu-id="2680a-125">Описание</span><span class="sxs-lookup"><span data-stu-id="2680a-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="66795-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="66795-126">Authorization</span></span> | <span data-ttu-id="66795-127">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="66795-127">Bearer {token}</span></span> |
+| <span data-ttu-id="2680a-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2680a-126">Authorization</span></span> | <span data-ttu-id="2680a-127">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="2680a-127">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="66795-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="66795-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2680a-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2680a-128">Request body</span></span>
 
-<span data-ttu-id="66795-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="66795-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2680a-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2680a-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="66795-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="66795-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2680a-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="2680a-130">Response</span></span>
 
-<span data-ttu-id="66795-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [SignIn](../resources/signin.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="66795-131">If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.</span></span>
+<span data-ttu-id="2680a-131">В случае успеха этот метод возвращает код отклика и объект `200 OK` [signIn](../resources/signin.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2680a-131">If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="66795-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="66795-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2680a-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="2680a-132">Examples</span></span>
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a><span data-ttu-id="66795-133">Пример 1: пользователь подписывается с помощью MFA, который активируется политикой условного доступа.</span><span class="sxs-lookup"><span data-stu-id="66795-133">Example 1: User signs in using MFA, which is triggered by a conditional access policy.</span></span> <span data-ttu-id="66795-134">Основной способ проверки подлинности — Фидо.</span><span class="sxs-lookup"><span data-stu-id="66795-134">Primary authentication is through FIDO.</span></span>
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a><span data-ttu-id="2680a-133">Пример 1. Вход пользователя с помощью MFA, запускаемого политикой условного доступа.</span><span class="sxs-lookup"><span data-stu-id="2680a-133">Example 1: User signs in using MFA, which is triggered by a conditional access policy.</span></span> <span data-ttu-id="2680a-134">Основная проверка подлинности — через FIDO.</span><span class="sxs-lookup"><span data-stu-id="2680a-134">Primary authentication is through FIDO.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="66795-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="66795-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2680a-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="2680a-135">Request</span></span>
 
-<span data-ttu-id="66795-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="66795-136">The following is an example of the request.</span></span>
+<span data-ttu-id="2680a-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2680a-136">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="66795-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="66795-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2680a-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="2680a-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_1"
@@ -74,27 +74,27 @@ GET /auditLogs/signIns/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="66795-138">C#</span><span class="sxs-lookup"><span data-stu-id="66795-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2680a-138">C#</span><span class="sxs-lookup"><span data-stu-id="2680a-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="66795-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="66795-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2680a-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2680a-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="66795-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="66795-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2680a-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2680a-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="66795-141">Java</span><span class="sxs-lookup"><span data-stu-id="66795-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2680a-141">Java</span><span class="sxs-lookup"><span data-stu-id="2680a-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="66795-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="66795-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2680a-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="2680a-142">Response</span></span>
 
-<span data-ttu-id="66795-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="66795-143">The following is an example of the response.</span></span>
+<span data-ttu-id="2680a-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2680a-143">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -215,14 +215,14 @@ Content-length: 211
 }
 ```
 
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a><span data-ttu-id="66795-144">Пример 2: пользователь входит только с основной проверкой подлинности.</span><span class="sxs-lookup"><span data-stu-id="66795-144">Example 2: User signs in with only primary authentication.</span></span> <span data-ttu-id="66795-145">Первичная проверка подлинности осуществляется с помощью облачного пароля.</span><span class="sxs-lookup"><span data-stu-id="66795-145">Primary authentication is through cloud password.</span></span>
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a><span data-ttu-id="2680a-144">Пример 2. Пользователь должен в ней войт с помощью только первичной проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="2680a-144">Example 2: User signs in with only primary authentication.</span></span> <span data-ttu-id="2680a-145">Основная проверка подлинности — облачный пароль.</span><span class="sxs-lookup"><span data-stu-id="2680a-145">Primary authentication is through cloud password.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="66795-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="66795-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2680a-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="2680a-146">Request</span></span>
 
-<span data-ttu-id="66795-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="66795-147">The following is an example of the request.</span></span>
+<span data-ttu-id="2680a-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2680a-147">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="66795-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="66795-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2680a-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="2680a-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_2"
@@ -230,28 +230,28 @@ Content-length: 211
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="66795-149">C#</span><span class="sxs-lookup"><span data-stu-id="66795-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2680a-149">C#</span><span class="sxs-lookup"><span data-stu-id="2680a-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="66795-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="66795-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2680a-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2680a-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="66795-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="66795-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2680a-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2680a-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="66795-152">Java</span><span class="sxs-lookup"><span data-stu-id="66795-152">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2680a-152">Java</span><span class="sxs-lookup"><span data-stu-id="2680a-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="66795-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="66795-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2680a-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="2680a-153">Response</span></span>
 
-<span data-ttu-id="66795-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="66795-154">The following is an example of the response.</span></span>
+<span data-ttu-id="2680a-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="2680a-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

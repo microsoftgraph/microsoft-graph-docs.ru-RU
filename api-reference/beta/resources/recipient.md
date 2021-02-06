@@ -4,30 +4,30 @@ description: 'Представляет сведения о пользовате�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: b7c04404a557a897af4008f024e27a47684e835f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 7a0f48eecdca77bda7261ed85b3b962550d99ec0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133191"
 ---
-# <a name="recipient-resource-type"></a><span data-ttu-id="6011c-103">Тип ресурса recipient</span><span class="sxs-lookup"><span data-stu-id="6011c-103">recipient resource type</span></span>
+# <a name="recipient-resource-type"></a><span data-ttu-id="3d72e-103">Тип ресурса recipient</span><span class="sxs-lookup"><span data-stu-id="3d72e-103">recipient resource type</span></span>
 
-<span data-ttu-id="6011c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6011c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3d72e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3d72e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6011c-105">Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе.</span><span class="sxs-lookup"><span data-stu-id="6011c-105">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span>
+<span data-ttu-id="3d72e-105">Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе.</span><span class="sxs-lookup"><span data-stu-id="3d72e-105">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6011c-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="6011c-106">Properties</span></span>
-| <span data-ttu-id="6011c-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="6011c-107">Property</span></span>     | <span data-ttu-id="6011c-108">Тип</span><span class="sxs-lookup"><span data-stu-id="6011c-108">Type</span></span>   |<span data-ttu-id="6011c-109">Описание</span><span class="sxs-lookup"><span data-stu-id="6011c-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3d72e-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="3d72e-106">Properties</span></span>
+| <span data-ttu-id="3d72e-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="3d72e-107">Property</span></span>     | <span data-ttu-id="3d72e-108">Тип</span><span class="sxs-lookup"><span data-stu-id="3d72e-108">Type</span></span>   |<span data-ttu-id="3d72e-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3d72e-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6011c-110">emailAddress</span><span class="sxs-lookup"><span data-stu-id="6011c-110">emailAddress</span></span>|[<span data-ttu-id="6011c-111">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="6011c-111">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="6011c-112">Электронный адрес получателя.</span><span class="sxs-lookup"><span data-stu-id="6011c-112">The recipient's email address.</span></span>|
+|<span data-ttu-id="3d72e-110">emailAddress</span><span class="sxs-lookup"><span data-stu-id="3d72e-110">emailAddress</span></span>|[<span data-ttu-id="3d72e-111">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="3d72e-111">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="3d72e-112">Электронный адрес получателя.</span><span class="sxs-lookup"><span data-stu-id="3d72e-112">The recipient's email address.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6011c-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6011c-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d72e-113">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="3d72e-113">JSON representation</span></span>
 
-<span data-ttu-id="6011c-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6011c-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3d72e-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d72e-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

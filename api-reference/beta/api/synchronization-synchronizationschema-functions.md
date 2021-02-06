@@ -1,35 +1,35 @@
 ---
-title: 'Синчронизатионсчема: функции'
-description: Перечисление всех функций, которые в настоящее время поддерживаются в Аттрибутемаппингсаурце.
+title: 'synchronizationSchema: функции'
+description: Список всех функций, в настоящее время поддерживаемых в attributeMappingSource.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6bfd4bf92e49b2c213db561285321552a3383377
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 626ab146bf928691d846b4ffab209720be5b8f66
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132759"
 ---
-# <a name="synchronizationschema-functions"></a><span data-ttu-id="ff92d-103">Синчронизатионсчема: функции</span><span class="sxs-lookup"><span data-stu-id="ff92d-103">synchronizationSchema: functions</span></span>
+# <a name="synchronizationschema-functions"></a><span data-ttu-id="b5984-103">synchronizationSchema: функции</span><span class="sxs-lookup"><span data-stu-id="b5984-103">synchronizationSchema: functions</span></span>
 
-<span data-ttu-id="ff92d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ff92d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b5984-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b5984-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ff92d-105">Перечисление всех функций, которые в настоящее время поддерживаются в [аттрибутемаппингсаурце](../resources/synchronization-attributemappingsource.md).</span><span class="sxs-lookup"><span data-stu-id="ff92d-105">List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).</span></span>
+<span data-ttu-id="b5984-105">Перечислить все функции, поддерживаемые в [attributeMappingSource.](../resources/synchronization-attributemappingsource.md)</span><span class="sxs-lookup"><span data-stu-id="b5984-105">List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ff92d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ff92d-106">Permissions</span></span>
-<span data-ttu-id="ff92d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff92d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b5984-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b5984-106">Permissions</span></span>
+<span data-ttu-id="b5984-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b5984-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff92d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ff92d-109">Permission type</span></span>                        | <span data-ttu-id="ff92d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ff92d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b5984-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b5984-109">Permission type</span></span>                        | <span data-ttu-id="b5984-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b5984-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ff92d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ff92d-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="ff92d-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff92d-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="ff92d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ff92d-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="ff92d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ff92d-114">Not supported.</span></span>|
-|<span data-ttu-id="ff92d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ff92d-115">Application</span></span>                            |<span data-ttu-id="ff92d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ff92d-116">Not supported.</span></span> | 
+|<span data-ttu-id="b5984-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b5984-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="b5984-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5984-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="b5984-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b5984-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="b5984-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b5984-114">Not supported.</span></span>|
+|<span data-ttu-id="b5984-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b5984-115">Application</span></span>                            |<span data-ttu-id="b5984-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b5984-116">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="ff92d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ff92d-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b5984-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b5984-117">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
@@ -37,26 +37,26 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/functi
 GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ff92d-118">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="ff92d-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b5984-118">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="b5984-118">Request headers</span></span>
 
-| <span data-ttu-id="ff92d-119">Имя</span><span class="sxs-lookup"><span data-stu-id="ff92d-119">Name</span></span>           | <span data-ttu-id="ff92d-120">Тип</span><span class="sxs-lookup"><span data-stu-id="ff92d-120">Type</span></span>    | <span data-ttu-id="ff92d-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ff92d-121">Description</span></span>|
+| <span data-ttu-id="b5984-119">Имя</span><span class="sxs-lookup"><span data-stu-id="b5984-119">Name</span></span>           | <span data-ttu-id="b5984-120">Тип</span><span class="sxs-lookup"><span data-stu-id="b5984-120">Type</span></span>    | <span data-ttu-id="b5984-121">Описание</span><span class="sxs-lookup"><span data-stu-id="b5984-121">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="ff92d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff92d-122">Authorization</span></span>  | <span data-ttu-id="ff92d-123">string</span><span class="sxs-lookup"><span data-stu-id="ff92d-123">string</span></span>  | <span data-ttu-id="ff92d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ff92d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b5984-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5984-122">Authorization</span></span>  | <span data-ttu-id="b5984-123">string</span><span class="sxs-lookup"><span data-stu-id="b5984-123">string</span></span>  | <span data-ttu-id="b5984-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b5984-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ff92d-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ff92d-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b5984-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b5984-126">Request body</span></span>
 
-<span data-ttu-id="ff92d-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ff92d-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b5984-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b5984-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ff92d-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="ff92d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b5984-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5984-128">Response</span></span>
 
-<span data-ttu-id="ff92d-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ff92d-129">If successful, this method returns a `200 OK` response code and a collection of [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) objects in the response body.</span></span>
+<span data-ttu-id="b5984-129">В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b5984-129">If successful, this method returns a `200 OK` response code and a collection of [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ff92d-130">Пример</span><span class="sxs-lookup"><span data-stu-id="ff92d-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b5984-130">Пример</span><span class="sxs-lookup"><span data-stu-id="b5984-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="ff92d-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="ff92d-131">Request</span></span>
-<span data-ttu-id="ff92d-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ff92d-132">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b5984-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5984-131">Request</span></span>
+<span data-ttu-id="b5984-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b5984-132">The following is an example of a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ff92d-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff92d-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b5984-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="b5984-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_functions"
@@ -64,29 +64,29 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 ```
-# <a name="c"></a>[<span data-ttu-id="ff92d-134">C#</span><span class="sxs-lookup"><span data-stu-id="ff92d-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b5984-134">C#</span><span class="sxs-lookup"><span data-stu-id="b5984-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-functions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ff92d-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff92d-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b5984-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b5984-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-functions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ff92d-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff92d-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b5984-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b5984-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-functions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ff92d-137">Java</span><span class="sxs-lookup"><span data-stu-id="ff92d-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b5984-137">Java</span><span class="sxs-lookup"><span data-stu-id="b5984-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationschema-functions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ff92d-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="ff92d-138">Response</span></span>
-<span data-ttu-id="ff92d-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ff92d-139">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="b5984-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5984-138">Response</span></span>
+<span data-ttu-id="b5984-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b5984-139">The following is an example of a response.</span></span>
 
-><span data-ttu-id="ff92d-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ff92d-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ff92d-141">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ff92d-141">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="b5984-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b5984-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b5984-141">Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="b5984-141">All the properties will be returned in an actual call.</span></span>
 
 <!--
 {

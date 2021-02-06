@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса Кондитионалакцессплатформс
+title: Тип ресурса conditionalAccessPlatforms
 description: Платформы, включенные в область политики и исключенные из нее.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3b835d5a9ab348a7786211f51f3b4f39c100efaf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69191885dd3e21aa0ab1f7d4266a33cfe1514e34
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132358"
 ---
-# <a name="conditionalaccessplatforms-resource-type"></a><span data-ttu-id="cd0fe-103">Тип ресурса Кондитионалакцессплатформс</span><span class="sxs-lookup"><span data-stu-id="cd0fe-103">conditionalAccessPlatforms resource type</span></span>
+# <a name="conditionalaccessplatforms-resource-type"></a><span data-ttu-id="b1abc-103">Тип ресурса conditionalAccessPlatforms</span><span class="sxs-lookup"><span data-stu-id="b1abc-103">conditionalAccessPlatforms resource type</span></span>
 
-<span data-ttu-id="cd0fe-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cd0fe-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b1abc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b1abc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cd0fe-105">Платформы, включенные в область политики и исключенные из нее.</span><span class="sxs-lookup"><span data-stu-id="cd0fe-105">Platforms included in and excluded from the policy scope.</span></span>
+<span data-ttu-id="b1abc-105">Платформы, включенные в область политики и исключенные из нее.</span><span class="sxs-lookup"><span data-stu-id="b1abc-105">Platforms included in and excluded from the policy scope.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cd0fe-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="cd0fe-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b1abc-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b1abc-106">Properties</span></span>
 
-| <span data-ttu-id="cd0fe-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="cd0fe-107">Property</span></span>     | <span data-ttu-id="cd0fe-108">Тип</span><span class="sxs-lookup"><span data-stu-id="cd0fe-108">Type</span></span>        | <span data-ttu-id="cd0fe-109">Описание</span><span class="sxs-lookup"><span data-stu-id="cd0fe-109">Description</span></span> |
+| <span data-ttu-id="b1abc-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="b1abc-107">Property</span></span>     | <span data-ttu-id="b1abc-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b1abc-108">Type</span></span>        | <span data-ttu-id="b1abc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b1abc-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="cd0fe-110">инклудеплатформс</span><span class="sxs-lookup"><span data-stu-id="cd0fe-110">includePlatforms</span></span>|<span data-ttu-id="cd0fe-111">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="cd0fe-111">String collection</span></span>| <span data-ttu-id="cd0fe-112">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.</span><span class="sxs-lookup"><span data-stu-id="cd0fe-112">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.</span></span>|
-|<span data-ttu-id="cd0fe-113">ексклудеплатформс</span><span class="sxs-lookup"><span data-stu-id="cd0fe-113">excludePlatforms</span></span>|<span data-ttu-id="cd0fe-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="cd0fe-114">String collection</span></span>| <span data-ttu-id="cd0fe-115">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.</span><span class="sxs-lookup"><span data-stu-id="cd0fe-115">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.</span></span>|
+|<span data-ttu-id="b1abc-110">includePlatforms</span><span class="sxs-lookup"><span data-stu-id="b1abc-110">includePlatforms</span></span>|<span data-ttu-id="b1abc-111">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="b1abc-111">String collection</span></span>| <span data-ttu-id="b1abc-112">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.</span><span class="sxs-lookup"><span data-stu-id="b1abc-112">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.</span></span>|
+|<span data-ttu-id="b1abc-113">excludePlatforms</span><span class="sxs-lookup"><span data-stu-id="b1abc-113">excludePlatforms</span></span>|<span data-ttu-id="b1abc-114">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="b1abc-114">String collection</span></span>| <span data-ttu-id="b1abc-115">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.</span><span class="sxs-lookup"><span data-stu-id="b1abc-115">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="cd0fe-116">Связи</span><span class="sxs-lookup"><span data-stu-id="cd0fe-116">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="b1abc-116">Связи</span><span class="sxs-lookup"><span data-stu-id="b1abc-116">Relationships</span></span>
 
-<span data-ttu-id="cd0fe-117">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="cd0fe-117">None.</span></span>
+<span data-ttu-id="b1abc-117">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="b1abc-117">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="cd0fe-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="cd0fe-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b1abc-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b1abc-118">JSON representation</span></span>
 
-<span data-ttu-id="cd0fe-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cd0fe-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b1abc-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b1abc-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
