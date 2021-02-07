@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Персистентбровсерсессионконтрол
-description: Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie.
+title: Тип ресурса persistentBrowserSessionControl
+description: Управление сеансом для определения того, следует ли сохранять файлы cookie.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ad25e798b2f49ab373c85ee9072b3e7990cfe67d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b418f16a69e5b97cbb42bc81994dfd87e5a3c1e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135739"
 ---
-# <a name="persistentbrowsersessioncontrol-resource-type"></a><span data-ttu-id="6c91e-103">Тип ресурса Персистентбровсерсессионконтрол</span><span class="sxs-lookup"><span data-stu-id="6c91e-103">persistentBrowserSessionControl resource type</span></span>
+# <a name="persistentbrowsersessioncontrol-resource-type"></a><span data-ttu-id="78754-103">Тип ресурса persistentBrowserSessionControl</span><span class="sxs-lookup"><span data-stu-id="78754-103">persistentBrowserSessionControl resource type</span></span>
 
-<span data-ttu-id="6c91e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6c91e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="78754-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="78754-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="6c91e-105">Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie.</span><span class="sxs-lookup"><span data-stu-id="6c91e-105">Session control to define whether to persist cookies or not.</span></span> <span data-ttu-id="6c91e-106">Наследуется от [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).</span><span class="sxs-lookup"><span data-stu-id="6c91e-106">Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
+<span data-ttu-id="78754-105">Управление сеансом для определения того, следует ли сохранять файлы cookie.</span><span class="sxs-lookup"><span data-stu-id="78754-105">Session control to define whether to persist cookies or not.</span></span> <span data-ttu-id="78754-106">Наследуется от [контроля сеанса условного доступа.](conditionalaccesssessioncontrol.md)</span><span class="sxs-lookup"><span data-stu-id="78754-106">Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6c91e-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6c91e-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="78754-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="78754-107">Properties</span></span>
 
-| <span data-ttu-id="6c91e-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6c91e-108">Property</span></span>     | <span data-ttu-id="6c91e-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6c91e-109">Type</span></span>        | <span data-ttu-id="6c91e-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6c91e-110">Description</span></span> |
+| <span data-ttu-id="78754-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="78754-108">Property</span></span>     | <span data-ttu-id="78754-109">Тип</span><span class="sxs-lookup"><span data-stu-id="78754-109">Type</span></span>        | <span data-ttu-id="78754-110">Описание</span><span class="sxs-lookup"><span data-stu-id="78754-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="6c91e-111">isEnabled</span><span class="sxs-lookup"><span data-stu-id="6c91e-111">isEnabled</span></span>     |<span data-ttu-id="6c91e-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="6c91e-112">Boolean</span></span>      | <span data-ttu-id="6c91e-113">Указывает, включен ли элемент управления сеансом.</span><span class="sxs-lookup"><span data-stu-id="6c91e-113">Specifies whether the session control is enabled.</span></span> |
-|<span data-ttu-id="6c91e-114">mode</span><span class="sxs-lookup"><span data-stu-id="6c91e-114">mode</span></span>|<span data-ttu-id="6c91e-115">String</span><span class="sxs-lookup"><span data-stu-id="6c91e-115">String</span></span>| <span data-ttu-id="6c91e-116">Возможные значения: `always`, `never`.</span><span class="sxs-lookup"><span data-stu-id="6c91e-116">Possible values are: `always`, `never`.</span></span>|
+|<span data-ttu-id="78754-111">isEnabled</span><span class="sxs-lookup"><span data-stu-id="78754-111">isEnabled</span></span>     |<span data-ttu-id="78754-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="78754-112">Boolean</span></span>      | <span data-ttu-id="78754-113">Указывает, включено ли управление сеансом.</span><span class="sxs-lookup"><span data-stu-id="78754-113">Specifies whether the session control is enabled.</span></span> |
+|<span data-ttu-id="78754-114">mode</span><span class="sxs-lookup"><span data-stu-id="78754-114">mode</span></span>|<span data-ttu-id="78754-115">String</span><span class="sxs-lookup"><span data-stu-id="78754-115">String</span></span>| <span data-ttu-id="78754-116">Возможные значения: `always`, `never`.</span><span class="sxs-lookup"><span data-stu-id="78754-116">Possible values are: `always`, `never`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6c91e-117">Связи</span><span class="sxs-lookup"><span data-stu-id="6c91e-117">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="78754-117">Связи</span><span class="sxs-lookup"><span data-stu-id="78754-117">Relationships</span></span>
 
-<span data-ttu-id="6c91e-118">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="6c91e-118">None.</span></span>
+<span data-ttu-id="78754-118">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="78754-118">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6c91e-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="6c91e-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="78754-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="78754-119">JSON representation</span></span>
 
-<span data-ttu-id="6c91e-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6c91e-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="78754-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="78754-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
