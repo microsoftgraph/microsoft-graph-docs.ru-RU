@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookUser
 description: Представляет службы Outlook, доступные пользователю.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 32014d4d9591cb72adf16434ee99d4d57255bfb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd2cd782fafbcff4c3006bea22c659c6607bf11a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066266"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137006"
 ---
 # <a name="outlookuser-resource-type"></a>Тип ресурса outlookUser
 

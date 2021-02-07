@@ -1,18 +1,18 @@
 ---
-title: 'Пользователь: Транслатиксчанжеидс'
+title: 'user: translateExchangeIds'
 description: Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a35e196c483a630577b93d54943b99e10a50d5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0bcacfa2d17b6105b943cb2391da0db423d120c0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069525"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137202"
 ---
-# <a name="user-translateexchangeids"></a>Пользователь: Транслатиксчанжеидс
+# <a name="user-translateexchangeids"></a>user: translateExchangeIds
 
 Пространство имен: microsoft.graph
 
@@ -24,8 +24,8 @@ ms.locfileid: "48069525"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:----------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись) | User. ReadBasic. ALL, User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadBasic. ALL, User. Read, User. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadBasic.All, User.Read, User.ReadWrite |
 | Для приложений | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,34 +47,34 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| инпутидс | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
-| саурцеидтипе | ексчанжеидформат | Тип идентификатора идентификаторов в `InputIds` параметре. |
-| таржетидтипе | ексчанжеидформат | Запрошенный тип идентификатора для преобразования. |
+| inputIds | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции ДОЛЖНЫ иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
+| sourceIdType | exchangeIdFormat | Тип идентификаторов в `InputIds` параметре. |
+| targetIdType | exchangeIdFormat | Запрашиваемого типа ID для преобразования. |
 
-### <a name="exchangeidformat-values"></a>значения Ексчанжеидформат
+### <a name="exchangeidformat-values"></a>Значения exchangeIdFormat
 
 | Значения | Описание |
 |:-------|:------------|
-| Код | Формат идентификатора двоичной записи, используемый клиентами MAPI. |
-| евсид | Формат идентификатора, используемый клиентами веб-служб Exchange. |
-| иммутаблинтрид | Двоичный формат неизменяемого идентификатора, совместимый с MAPI. |
-| рестид | Формат идентификатора по умолчанию, используемый Microsoft Graph. |
-| рестиммутаблинтрид | Неизменяемый формат идентификатора, используемый Microsoft Graph. |
+| entryId | Формат двоичного ИД записи, используемый клиентами MAPI. |
+| ewsId | Формат ИД, используемый клиентами веб-служб Exchange. |
+| immutableEntryId | Двоичный формат ID, совместимый с MAPI. |
+| restId | Формат по умолчанию, используемый Microsoft Graph. |
+| restImmutableEntryId | Не изменяемый формат ИД, используемый в Microsoft Graph. |
 
-Двоичные форматы ( `entryId` и `immutableEntryId` ) являются безопасными в URL-адресах в кодировке Base64. Безопасность URL реализована путем изменения кодировки base64 двоичных данных следующим образом:
+Двоичные форматы `entryId` `immutableEntryId` (и) — это безопасный URL-адрес в коде base64. Защита URL-адресов реализуется путем изменения кодировидности base64 двоичных данных следующим образом:
 
-- Замените `+` на `-`
-- Замените `/` на `_`
-- Удалите все замыкающие символы заполнения ( `=` ).
-- Добавьте целое число в конец строки, указывающую количество заполненных символов в исходной ( `0` , `1` или `2` ).
+- Заменить `+` на `-`
+- Заменить `/` на `_`
+- Удалите все символы заполнения в окнах ( `=` )
+- Добавьте в конец строки integer, указывающее, сколько символов заполнения было в исходном ( `0` , , , или `1` `2` )
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию [конвертидресулт](../resources/convertidresult.md) в тексте отклика.
+В случае успеха этот метод возвращает `200 OK` код отклика и [коллекцию convertIdResult](../resources/convertidresult.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере показано, как преобразовать несколько идентификаторов из стандартного формата REST API ( `restId` ) в неизменяемый формат REST ( `restImmutableEntryId` ).
+В следующем примере показано, как преобразовать несколько идентификаторов из обычного формата REST API ( ) в `restId` необраменяемый формат REST ( `restImmutableEntryId` ).
 
 ### <a name="request"></a>Запрос
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа
+Вот пример ответа
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.convertIdResult",

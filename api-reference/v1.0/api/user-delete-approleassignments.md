@@ -1,22 +1,22 @@
 ---
-title: Удаление Аппролеассигнмент, назначенных пользователю
-description: Удаление Аппролеассигнмент, предоставленных пользователю.
+title: Удаление appRoleAssignment, предоставленного пользователю
+description: Удаление appRoleAssignment, предоставленного пользователю.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: users
 author: krbain
-ms.openlocfilehash: 939dbfa3863f89be1148c3f3954a3cdc7cd0b74f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3515e492514d8ac2162f6d988ea6a7c2fbc94e3f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134745"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-user"></a>Удаление Аппролеассигнмент, назначенных пользователю
+# <a name="delete-an-approleassignment-granted-to-a-user"></a>Удаление appRoleAssignment, предоставленного пользователю
 
 Пространство имен: microsoft.graph
 
-Удаление [аппролеассигнмент](../resources/approleassignment.md) , предоставленных пользователю.
+Удаление [appRoleAssignment,](../resources/approleassignment.md) предоставленного пользователю.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "47992204"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All |
 
@@ -37,7 +37,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Рекомендуется удалять назначения ролей приложений с помощью `appRoleAssignedTo` отношения между субъектами службы _ресурсов_ , а не с `appRoleAssignments` назначенным пользователем, группой или субъектом службы.
+> Рекомендуется удалять назначения ролей приложения через связь с основными службами ресурсов, а не через отношение назначенного пользователя, группы или `appRoleAssignedTo`  `appRoleAssignments` основного службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -45,7 +45,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -57,7 +57,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на удаление назначения роли приложения.
+Вот пример запроса на удаление назначения роли приложения.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

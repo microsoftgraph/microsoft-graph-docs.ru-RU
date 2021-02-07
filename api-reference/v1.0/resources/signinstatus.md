@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Сигнинстатус
-description: Предоставляет состояние входа (успешный или неудачный) входа
+title: Тип ресурса signInStatus
+description: Предоставляет состояние (успешное или неудачное) для этого.
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3633968869c0cf61e16afa4ba056a530c86b3c93
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 37eb91434fd7a5fb0dc65f5c7203effd42f3878e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137090"
 ---
-# <a name="signinstatus-resource-type"></a>Тип ресурса Сигнинстатус
+# <a name="signinstatus-resource-type"></a>Тип ресурса signInStatus
 
 Пространство имен: microsoft.graph
 
-Предоставляет состояние входа (успешный или неудачный) входа.
+Предоставляет состояние (успешное или неудачное) для этого.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|additionalDetails|String|Предоставляет дополнительные сведения об активности входа|
-|errorCode|Int32|Предоставляет код ошибки 5-6, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
-|failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|additionalDetails|String|Предоставляет дополнительные сведения об активности при входе|
+|errorCode|Int32|Предоставляет код ошибки из 5–6 цифр, который создается во время сбоя при входе. Ознакомьтесь [со списком кодов ошибок и сообщений.](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)|
+|failureReason|String|Предоставляет сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь [со списком кодов ошибок и сообщений.](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)|
 
 ## <a name="json-representation"></a>Представление JSON
 

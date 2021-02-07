@@ -1,16 +1,16 @@
 ---
 title: Создание правила
 description: 'Создает объект messageRule, определяя набор условий и действий. '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 311566f63476dc03d3e2139ce714dc59bacb3903
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b305bbfca7d9a61197f677db9d7e3da785f81c0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137629"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите параметры, применимые к вашему правилу. Ниже представлены параметры текста, которые обычно используются при создании правил. Можно соответствующим образом указать любые другие записываемые свойства **messageRule** в тексте запроса.
 
 | Имя       | Тип|Описание|

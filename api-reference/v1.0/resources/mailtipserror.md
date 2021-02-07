@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Маилтипсеррор
-description: Ошибка, возникающая во время действия.
+title: Тип ресурса mailTipsError
+description: Ошибка, которая возникает во время действия.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 53029bf5c8fc195bcafa52409b6d00b03f547c68
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1dfb1953a0cbd5362e59975bfd22a1f70c826272
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137601"
 ---
-# <a name="mailtipserror-resource-type"></a>Тип ресурса Маилтипсеррор
+# <a name="mailtipserror-resource-type"></a>Тип ресурса mailTipsError
 
 Пространство имен: microsoft.graph
 
-Ошибка, возникающая во время действия.
+Ошибка, которая возникает во время действия.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

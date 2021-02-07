@@ -1,22 +1,22 @@
 ---
 title: Удаление владельца
-description: Удаление владельца из СервицепринЦипалс.
+description: Удаление владельца из servicePrincipals.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5d3856dc2337e7bfb55ece8aee9d24e47df7f918
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 7fc09427747d42ccc37cf9074ee42f8748567033
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903525"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135991"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
 Пространство имен: microsoft.graph
 
-Удаление владельца из объекта [servicePrincipal](../resources/serviceprincipal.md) .
+Удаление владельца из объекта [servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 | Авторизация | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.
+В теле запроса укавите идентификатор объекта каталога, который должен быть назначен владельцем.
 
 ## <a name="response"></a>Отклик
 

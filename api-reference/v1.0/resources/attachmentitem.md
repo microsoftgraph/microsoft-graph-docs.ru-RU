@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Аттачментитем
-description: Представляет атрибуты элемента, который необходимо присоединить.
+title: Тип ресурса attachmentItem
+description: Представляет атрибуты вложенного элемента.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2027654cbbeab483a965cdbce8d743092ec9f379
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 385af6c31033ceabf1293c29e9127187cf879d64
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003278"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135781"
 ---
-# <a name="attachmentitem-resource-type"></a>Тип ресурса Аттачментитем
+# <a name="attachmentitem-resource-type"></a>Тип ресурса attachmentItem
 
 Пространство имен: microsoft.graph
 
-Представляет атрибуты элемента, который необходимо присоединить.
+Представляет атрибуты вложенного элемента.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |attachmentType|String| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
-|contentType|String|Характер данных во вложении. Необязательный параметр.|
-|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательный параметр.|
-|name|String|Отображаемое имя вложения. Это может быть строка с описанием и не обязательно должно быть фактическим именем файла. Обязательно.|
+|contentType|String|Характер данных во вложении. Необязательное свойство.|
+|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательное свойство.|
+|name|String|Отображаемое имя вложения. Это может быть описательная строка, которая не должна быть фактическим именем файла. Обязательный элемент.|
 |size|Int64|Размер вложения в байтах. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON

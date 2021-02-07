@@ -2,15 +2,15 @@
 title: Получение параметров почтового ящика пользователя
 description: 'Получение объекта mailboxSettings пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0fda1d7a60c341d6d45d04485b6cd9285ab274f6
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 933e23431e0c6655ad09c16a5c2cb3bc3fcb443d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135179"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -22,7 +22,7 @@ ms.locfileid: "48635434"
 
 - [автоматические ответы](../resources/automaticrepliessetting.md) (автоматическое уведомление пользователей при получении их почты);
 - формат даты;
-- делегатемитингмессажеделиверйоптионс
+- delegateMeetingMessageDeliveryOptions
 - [языковой стандарт](../resources/localeinfo.md) (язык и страну или регион);
 - формат времени;
 - часовой пояс;
@@ -82,7 +82,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -92,7 +92,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - Объект [mailboxSettings](../resources/mailboxsettings.md).
 - Объект [automaticRepliesSetting](../resources/automaticrepliessetting.md).
 - Строка (для параметра **dateFormat**).
-- строка (для **делегатемитингмессажеделиверйоптионс**)
+- string (для **delegateMeetingMessageDeliveryOptions)**
 - Объект [localeInfo](../resources/localeinfo.md).
 - Строка (для параметра **timeFormat**).
 - Строка (для параметра **timeZone**).

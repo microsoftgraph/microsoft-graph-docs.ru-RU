@@ -2,15 +2,15 @@
 title: Создание объекта MailFolder
 description: С помощью этого API можно создать папку почты в корневой папке почтового ящика пользователя.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc295bdcfc1f38e689d8a1f92e3503ce012f5eea
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 434e3ae114f0514ad002939aa1a39f82b0c31455
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563956"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137223"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 

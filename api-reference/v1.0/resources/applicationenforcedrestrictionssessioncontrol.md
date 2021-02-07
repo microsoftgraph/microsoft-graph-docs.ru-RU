@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Аппликатионенфорцедрестриктионссессионконтрол
-description: Управление сеансами для применения ограничений приложений.
+title: Тип ресурса applicationEnforcedRestrictionsSessionControl
+description: Управление сеансом для применения ограничений приложений.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0819b9133e6495bbe6691170ce0c38a2d93302d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 130644ebf0d72b4870dc78e64455c2dfab446ae5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134969"
 ---
-# <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>Тип ресурса Аппликатионенфорцедрестриктионссессионконтрол
+# <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>Тип ресурса applicationEnforcedRestrictionsSessionControl
 
 Пространство имен: microsoft.graph
 
-Управление сеансами для применения ограничений приложений. Наследуется от [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
+Управление сеансом для применения ограничений приложений. Наследуется от [контроля сеанса условного доступа.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
+|isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
 
 ## <a name="relationships"></a>Связи
 

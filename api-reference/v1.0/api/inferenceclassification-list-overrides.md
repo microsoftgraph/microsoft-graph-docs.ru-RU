@@ -2,15 +2,15 @@
 title: Список переопределений
 description: Получение переопределений, настроенных пользователем для классификации сообщений от определенных отправителей.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 38f888d1375aef53f5a407e006eae5de8da5641c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc912b0cee9b3d361a0313e47578e6f6b26f35bf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136124"
 ---
 # <a name="list-overrides"></a>Список переопределений
 
@@ -40,7 +40,7 @@ GET /users/{id}/inferenceClassification/overrides
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

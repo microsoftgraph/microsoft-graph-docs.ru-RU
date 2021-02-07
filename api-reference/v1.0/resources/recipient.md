@@ -2,15 +2,15 @@
 title: Тип ресурса recipient
 description: 'Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ef7f459fd345992cb51e8c3ac2742146648772dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 600b058124f17f66b30af7430016a2ad274107e6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137503"
 ---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
 

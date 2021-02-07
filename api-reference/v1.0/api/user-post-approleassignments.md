@@ -3,14 +3,14 @@ title: Предоставление appRoleAssignment пользователю
 description: Предоставление назначения роли приложения пользователю.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: users
 author: psignoret
-ms.openlocfilehash: 3ec3534896bd5763d450e457edfac9a924e10d3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c0df54ed9a4d6a5079f2c6ce587793d6d8a3982
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135942"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Предоставление appRoleAssignment пользователю
 

@@ -3,14 +3,14 @@ title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
 localization_priority: Normal
 author: krbain
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5ea10e7894b91fd6bf23625c6c3c0097fbe9ed09
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 44af60c7d74f0a0d21a2312a19853a23cdcbe0ec
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135305"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -23,21 +23,21 @@ ms.locfileid: "49563767"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ассигнеддатетиме|DateTimeOffset|Дата и время назначения плана. Пример: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|капабилитистатус|[капабилитистатус](#capabilitystatus-values)|Условие назначения возможности. Возможные значения:,,, `Enabled` `Warning` `Suspended` `Deleted` , `LockedOut` .|
+|assignedDateTime|DateTimeOffset|Дата и время назначения плана. Пример: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Условие назначения возможности. Возможные значения: `Enabled` `Warning` , , , `Suspended` `Deleted` `LockedOut` .|
 |service|String|Имя службы, например "Exchange".|
-|сервицепланид|Guid|Идентификатор GUID, определяющий план обслуживания.|
+|servicePlanId|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
 
-### <a name="capabilitystatus-values"></a>значения Капабилитистатус
+### <a name="capabilitystatus-values"></a>значения capabilityStatus
 
 | Member | Описание  |
 |:---------------|:--------|
-| Включено | Доступен для обычного использования. |
-| Предупреждение | Доступен для нормального использования, но находится в периоде отсрочки. |
+| Включено | Доступно для обычного использования. |
+| Предупреждение | Доступно для обычного использования, но находится в льготном периоде. |
 | Suspended | Недоступно, но все данные, связанные с возможностью, должны быть сохранены. |
-| Deleted | Все данные, связанные с возможностью, недоступны и могут быть удалены. |
-| Блокировка | Недоступно для всех администраторов и пользователей, но все данные, связанные с этой возможностью, должны быть сохранены. |
+| Deleted | Недоступны и любые данные, связанные с возможностью, могут быть удалены. |
+| LockedOut | Недоступно для всех администраторов и пользователей, но все данные, связанные с возможностью, должны быть сохранены. |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,22 +1,22 @@
 ---
 title: Перечисление directoryAudits
-description: Описывает метод List ресурса Директоряудит (Entity) из API Microsoft Graph.
+description: Описывает метод списка ресурса directoryAudit (сущности) из API Microsoft Graph.
 localization_priority: Normal
 author: SarahBar
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9a06d02929ca194d29820cedbe4b40aea5590035
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: b53ab2d25bd577c9f6b8d56b1efd01f0d46f9844
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136684"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
 Пространство имен: microsoft.graph
 
-Получение списка журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, в том числе Управление пользователями, приложениями, устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защиту учетных записей, управление паролями (сброс паролей самообслуживания и администратора) и самостоятельное управление группами и т. д.
+Получите список журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, включая управление пользователями, приложениями, устройствами и группой, привилегированное управление удостоверениями (PIM), проверки доступа, условия использования, защиту идентификации, управление паролями (самостоятельный сброс паролей и сброс паролей администратора), управление группой самообслужения и т. д.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "48601610"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Аудитлог. Read. ALL и Directory. Read. ALL    |
+| Делегированные (рабочая или учебная учетная запись)     | AuditLog.Read.All и Directory.Read.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Для приложений                            | AuditLog.Read.All                           |
 
@@ -42,11 +42,11 @@ GET /auditLogs/directoryaudits
 
 | Параметр                                                       | Описание                                                                   | Пример                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$Фишинг](/graph/query_parameters#filter-parameter)       | Фильтрует результаты (строки).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
+| [\$filter](/graph/query_parameters#filter-parameter)       | Фильтрует результаты (строки).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
 | [\$Вверх](/graph/query_parameters#top-parameter)             | Задает размер страницы результатов.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые \$ параметром Filter
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые \$ параметром filter
 
 | Атрибут                                                    | Поддерживаемые операторы |
 | :----------------------------------------------------------- | :------------------ |
@@ -57,10 +57,10 @@ GET /auditLogs/directoryaudits
 | initiatedBy/user/displayName                                 | eq                  |
 | initiatedBy/user/userPrincipalName                           | eq, startswith      |
 | initiatedBy/app/appId                                        | eq                  |
-| Инитиатедби/App/displayName                                  | eq                  |
-| Таржетресаурцес/Any (t: t/ID EQ ' {значение} ')                    | eq                  |
-| Таржетресаурцес/Any (t: t/displayName EQ ' {значение} ')            | eq                  |
-| Таржетресаурцес/Any (x: StartsWith (x/displayName, ' {значение} ')) | startswith          |
+| initiatedBy/app/displayName                                  | eq                  |
+| targetResources/any(t: t/id eq '{value}')                    | eq                  |
+| targetResources/any(t:t/displayName eq '{value}')            | eq                  |
+| targetResources/any(x: startswith(x/displayName, '{value}')) | startswith          |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -72,9 +72,9 @@ GET /auditLogs/directoryaudits
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директоряудит](../resources/directoryaudit.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [directoryAudit](../resources/directoryaudit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

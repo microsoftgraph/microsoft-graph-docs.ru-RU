@@ -3,14 +3,14 @@ title: Тип ресурса application
 description: Представляет приложение.
 localization_priority: Priority
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 959585428800d12046f382b1f1358c35349790a8
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 2ca266a1e3f170579d2b466ea8fd23f52b2a0099
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934788"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135021"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -95,7 +95,7 @@ ms.locfileid: "49934788"
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Только для чтения.|
 |extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null.|
-|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Требуется версия 2013-11-08 или более поздняя. Только для чтения. Допускается значение null.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

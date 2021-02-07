@@ -1,22 +1,22 @@
 ---
-title: 'Группа: Чеккмемберобжектс'
-description: Проверка членства в списке групп или ролей каталогов для указанного объекта Group.
+title: 'group: checkMemberObjects'
+description: Проверьте членство в списке групп или ролей каталога для указанного объекта группы.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d8cb8324c3b812963e461d63807aa2a071ff8a63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35ad4cc491d0a3d8513ca070a258ecc8e6080e8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023333"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135592"
 ---
-# <a name="group-checkmemberobjects"></a>Группа: Чеккмемберобжектс
+# <a name="group-checkmemberobjects"></a>group: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
-Проверка членства в списке групп или ролей каталогов для указанной группы. Этот метод является транзитивным.
+Проверьте членство в списке групп или ролей каталога для указанной группы. Этот метод является транзитивным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "48023333"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All<br>С<br><ul><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All<br>И:<br><ul><li>При проверке членства в административных единицах: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Group.Read.All, Group.ReadWrite.All<br>С<br><ul><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Group.Read.All, Group.ReadWrite.All<br>И:<br><ul><li>При проверке членства в административных единицах: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,11 +49,11 @@ POST /groups/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ids|Коллекция String| Коллекция, содержащая идентификаторы объектов групп, ролей каталогов или идентификаторов Ролетемплате для ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов. |
+|ids|Коллекция String| Коллекция, которая содержит ИД объектов групп, ролей каталога или roleTemplate ID ролей каталога, в которых проверяется членство. Можно указать до 20 объектов. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

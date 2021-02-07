@@ -3,25 +3,25 @@ title: Тип ресурса addIn
 description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bbb7a106c3710b5f7e433bfe0c7904f9df91a988
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dcd3b36ed01d455feca2a996e740203d21d33455
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135011"
 ---
 # <a name="addin-resource-type"></a>Тип ресурса addIn
 
 Пространство имен: microsoft.graph
 
-Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые могут визуализировать файловые потоки, [могут настраивать надстройки](/onedrive/developer/file-handlers/?view=odsp-graph-online) для своей функции "филехандлер". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.
+Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые могут отрисовки файлового потока, могут настраивать [addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) для функций FileHandler. Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|кодом||
+|id|guid||
 |properties|Коллекция [keyValue](keyvalue.md)||
 |type|string||
 

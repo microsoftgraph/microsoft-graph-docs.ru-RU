@@ -2,15 +2,15 @@
 title: Тип ресурса daylightTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход со стандартного времени на летнее.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8289a4edd9f04698292676971adf9598940ad823
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79e5af9a7a117d3747928d211229bbbd27d046bf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018751"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135148"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Тип ресурса daylightTimeZoneOffset
 
@@ -31,7 +31,7 @@ ms.locfileid: "48018751"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| daylightBias | Edm.Int32 | Смещение летнего времени относительно времени в формате UTC. Это значение представлено в минутах.  |
+| daylightBias | Edm.Int32 | Смещение летнего времени относительно времени в формате UTC. Это значение представлено в минутах.  |
 | dayOccurrence | Edm.Int32 | Представляет n-е повторение дня недели, в который осуществляется переход со стандартного времени на летнее. |
 | dayOfWeek | строка | Представляет день недели, в который осуществляется переход со стандартного времени на летнее. |
 | month | Edm.Int32 | Представляет месяц года, в который осуществляется переход со стандартного времени на летнее. |

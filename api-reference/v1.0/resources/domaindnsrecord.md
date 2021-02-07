@@ -1,35 +1,35 @@
 ---
 title: Тип ресурса domainDnsRecord
-description: Объект DomainDnsRecord используется для представления записей DNS.
+description: Объект DomainDnsRecord используется для представить записи DNS.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a1c0e9938fd9967b159c273782bc674b695b842d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba4955c670548b3670dc90a574bc1b4fd8a11c58
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018664"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135109"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
 
 Пространство имен: microsoft.graph
 
-Для каждого домена в клиенте может потребоваться добавить записи DNS в файл зоны DNS домена, чтобы домен можно было использовать в Microsoft Online Services. Объект **DomainDnsRecord** используется для представления таких DNS-записей. Базовый объект для сущностей [домаинднскнамерекорд](domaindnscnamerecord.md), [домаинднсмксрекорд](domaindnsmxrecord.md), [домаинднссрврекорд](domaindnssrvrecord.md) и [домаинднсткстрекорд](domaindnstxtrecord.md) .
+Для каждого домена в клиенте может потребоваться добавить записи DNS в DNS-файл зоны домена, прежде чем домен сможет использоваться Microsoft Online Services. Объект **DomainDnsRecord используется** для представить такие записи DNS. Базовый объект для сущностей [DomainDnsCnameRecord,](domaindnscnamerecord.md) [DomainDnsMxRecord,](domaindnsmxrecord.md) [DomainDnsSrvRecord](domaindnssrvrecord.md) и [DomainDnsTxtRecord.](domaindnstxtrecord.md)
 
-## <a name="methods"></a>Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .
+## <a name="methods"></a>Methods
+Прямые запросы к этому ресурсу не поддерживаются. Сведения о [том,](domain.md) как запрашивать записи доменной службы, см. в разделе "Домен".
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
-|Переключатель|Boolean| Если задано значение false, эта запись должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
-|label|String| Значение, используемое при настройке имени DNS-записи на узле DNS. |
-|recordType|String| Указывает, какой тип записи DNS представляет эта сущность.</br></br>Может принимать одно из следующих значений: *CNAME*, *MX*, *SRV*, *txt* .</br></br>Key |
-|суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи DNS.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|используем|Int32| Значение, используемое при настройке свойства срока жизни (TTL) записи DNS на узле DNS. Не допускает значение null |
+|id|String| Уникальный идентификатор, присвоенный этой сущности. Не имеет null, только для чтения.|
+|isOptional|Boolean| Если установлено false, эта запись должна быть настроена клиентом на DNS-Microsoft Online Services для правильной работы с доменом. |
+|label|String| Значение, используемого при настройке имени DNS-записи на DNS-хосте. |
+|recordType|String| Указывает, какой тип DNS-записи представляет этот объект.</br></br>Может иметь одно из следующих значений: *CName,* *Mx,* *Srv,* *Txt*</br></br>Key |
+|supportedService|String| Microsoft Online Service или функция, которая зависит от этой записи DNS.</br></br>Может иметь одно из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|ttl|Int32| Значение, используемого при настройке свойства времени жизни (ttl) записи DNS на DNS-хосте. Не nullable |
 
 ## <a name="relationships"></a>Связи
 Нет

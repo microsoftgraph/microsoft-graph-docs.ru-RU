@@ -1,22 +1,22 @@
 ---
 title: Получение домена
-description: Получение свойств и связей объекта домена.
+description: Извлечение свойств и связей объекта домена.
 author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf7557ecf9ff34cf0746f4267aa8461e277a9004
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: d2b777a59118160cddef98f9b2f1fbf3c7a0855c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135227"
 ---
 # <a name="get-domain"></a>Получение домена
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта домена.
+Извлечение свойств и связей объекта домена.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,9 +25,9 @@ ms.locfileid: "48457767"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.Read.All, Domain.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ GET /domains/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [domain](../resources/domain.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [домена](../resources/domain.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

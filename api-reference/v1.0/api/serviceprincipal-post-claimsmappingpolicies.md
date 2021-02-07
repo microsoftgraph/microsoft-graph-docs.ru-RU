@@ -1,16 +1,16 @@
 ---
 title: Назначение типа ресурса claimsMappingPolicy
-description: Назначьте Клаимсмаппингполици для servicePrincipal.
+description: Назначьте claimsMappingPolicy servicePrincipal.
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 45e69c257a101ea594bc7bb1b0f6750d1215b006
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de92c1f75288c4e5c0575eb7369dd8d7bf1e4ce0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978638"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135802"
 ---
 # <a name="assign-claimsmappingpolicy"></a>Назначение типа ресурса claimsMappingPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "47978638"
 
 
 
-Назначьте [клаимсмаппингполици](../resources/claimsmappingpolicy.md) для [servicePrincipal](../resources/serviceprincipal.md).
+[Назначьте claimsMappingPolicy](../resources/claimsmappingpolicy.md) [servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "47978638"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL |
+| Для приложений                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите идентификатор объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) (с помощью `@odata.id` Свойства), который должен быть назначен субъекту-службе.
+В теле запроса укавите идентификатор объекта [claimsMappingPolicy](../resources/claimsmappingpolicy.md) (используя свойство), который должен быть назначен основному `@odata.id` объекту-службе.
 
 ## <a name="response"></a>Отклик
 

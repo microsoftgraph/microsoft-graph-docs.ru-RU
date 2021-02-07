@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса messageRuleActions
 description: Представляет набор действий, доступных для правила.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ed2486994a9ccb496dc92e241506baa867ebeb1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52ed8905f3120d17bf6c9c19d76ae9a2bcf5f77c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965388"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136054"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
@@ -31,7 +31,7 @@ ms.locfileid: "47965388"
 | markImportance | importance | Задает важность сообщения. Допустимые значения: `low`, `normal`, `high`. |
 | moveToFolder |  String| Идентификатор папки, в которую сообщение будет перемещено. |
 | permanentDelete | Boolean | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
-| redirectTo | Коллекция [recipient](recipient.md) | Адреса электронной почты, на которые необходимо перенаправить сообщение. |
+| redirectTo | Коллекция [recipient](recipient.md) | Адреса электронной почты, на которые должно быть перенаправлено сообщение. |
 | stopProcessingRules | Boolean | Указывает, должны ли обрабатываться последующие правила. |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Кондитионалакцесссессионконтролс
-description: Представляет сложный тип элементов управления сеанса, который принудительно применяется после входа.
+title: Тип ресурса conditionalAccessSessionControls
+description: Представляет сложный тип элементов управления сеансом, которые применяются после регистрации.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 78c9ab3c3b5a55623ba13e1f7ce6d28a9425ded5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e41def74a1654b20e1aa3618abdc6518e774045
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135935"
 ---
-# <a name="conditionalaccesssessioncontrols-resource-type"></a>Тип ресурса Кондитионалакцесссессионконтролс
+# <a name="conditionalaccesssessioncontrols-resource-type"></a>Тип ресурса conditionalAccessSessionControls
 
 Пространство имен: microsoft.graph
 
-Представляет элементы управления сеансом, которые применяются после входа.
-Все элементы управления сеансом наследуются от [кондитионалакцесссессионконтрол](conditionalaccesssessioncontrol.md).
+Представляет элементы управления сеансом, которые применяются после регистрации.
+Все элементы управления сеансом наследуются [от conditionalAccessSessionControl.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|аппликатионенфорцедрестриктионс|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Управление сеансами для применения ограничений приложений. Этот элемент управления сеансом поддерживают только Exchange Online и SharePoint Online. |
-|клаудаппсекурити|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Управление сеансами для применения Cloud App Security.|
-|персистентбровсер|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie. Для правильной работы этого элемента управления сеансом необходимо выбрать все приложения. |
-|сигнинфрекуенци|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Управление сеансами для применения частоты входа.|
+|applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Управление сеансом для применения ограничений приложений. Этот контроль сеансов поддерживается только в Exchange Online и Sharepoint Online. |
+|cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Управление сеансом для применения безопасности облачных приложений.|
+|persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. Для правильной работы этого сеанса необходимо выбрать все приложения. |
+|signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Управление сеансом для принудительной регистрации.|
 
 ## <a name="relationships"></a>Связи
 

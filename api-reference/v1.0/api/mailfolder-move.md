@@ -1,16 +1,16 @@
 ---
 title: 'mailFolder: move'
 description: Перемещение папки почты со всем ее содержимым в другую папку почты.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e689a77484aad7b2a6d1412c4a49e07f33ea0441
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea5e38ab2196c5ba7dba8a1776bd989b0ba97086
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135333"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -44,17 +44,17 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 | Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|destinationId|String|Идентификатор папки или имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
+|destinationId|String|ИД папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и ресурс `200 OK` [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -102,7 +102,7 @@ Content-length: 44
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
