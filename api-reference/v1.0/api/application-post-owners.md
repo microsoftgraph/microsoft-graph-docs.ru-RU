@@ -1,31 +1,31 @@
 ---
 title: Добавление владельца
-description: Добавление владельца в приложение.
+description: Добавьте владельца в приложение.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3b91447ae4c031df3c910dbc799740bc9b7076a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd6af2af85c713556c7847853cd24db1013714d4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131462"
 ---
 # <a name="add-owner"></a>Добавление владельца
 
 Пространство имен: microsoft.graph
 
-Добавление владельца в [приложение](../resources/application.md) путем публикации в коллекции Owners.
+Добавление владельца в приложение [путем](../resources/application.md) добавления в коллекцию владельцев.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Application. ReadWrite. ALL и Directory. Read. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,8 +38,8 @@ POST /applications/{id}/owners/$ref
 |:---- |:---------- |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.
+## <a name="request-body"></a>Текст запроса
+В теле запроса укавите идентификатор объекта каталога, который должен быть назначен владельцем.
 
 ## <a name="response"></a>Отклик
 
@@ -88,7 +88,7 @@ Content-length: 30
 
 Ниже приведен пример отклика.
 
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

@@ -3,14 +3,14 @@ title: Обзор API отчетов об активности
 description: Используйте API отчетов об активности в Microsoft Graph для получения доступа к отчетам Azure Active Directory, чтобы отслеживать действия пользователей в клиенте.
 localization_priority: Priority
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 31ea854ab9ef69fdbb0698ea11fd3831bdb3f07c
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0fb2445fe66eed0b4f20a998390c22636b3ec7cc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597251"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132855"
 ---
 # <a name="activity-reports-api-overview"></a>Обзор API отчетов об активности
 

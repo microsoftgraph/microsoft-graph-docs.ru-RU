@@ -1,16 +1,16 @@
 ---
 title: Перечисление правил
-description: Получение всех объектов messageRule, определенных для папки "Входящие" пользователя.
+description: Получите все объекты messageRule, определенные для почтового ящика пользователя.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70b75dbf1a1cffe10a484b7fda20464e535102e2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 762f243145b544b8e20114578abb875160793f79
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131010"
 ---
 # <a name="list-rules"></a>Перечисление правил
 
@@ -23,7 +23,7 @@ ms.locfileid: "48458488"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | MailboxSettings.Read    |
+|Делегированные (рабочая или учебная учетная запись) | MailboxSettings.Read    |
 |Делегированные (личная учетная запись Майкрософт) | MailboxSettings.Read    |
 |Для приложений | MailboxSettings.Read |
 

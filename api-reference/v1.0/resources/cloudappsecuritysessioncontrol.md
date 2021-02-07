@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Клаудаппсекуритисессионконтрол
-description: Управление сеансами, используемое для применения проверок безопасности облачных приложений.
+title: Тип ресурса cloudAppSecuritySessionControl
+description: Контроль сеансов, используемый для принудительной проверки безопасности облачных приложений.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 114e788e12ab8f633bc6350b08140f9d5e4fe8a3
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: b1eee93b3f80b6d7d916f38d783ca94cef8e81a1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133058"
 ---
-# <a name="cloudappsecuritysessioncontrol-resource-type"></a>Тип ресурса Клаудаппсекуритисессионконтрол
+# <a name="cloudappsecuritysessioncontrol-resource-type"></a>Тип ресурса cloudAppSecuritySessionControl
 
 Пространство имен: microsoft.graph
 
-Управление сеансами, используемое для применения проверок безопасности облачных приложений. Инехритс из [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
+Управление сеансами, используемая для принудительной проверки безопасности облачных приложений. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
-|клаудаппсекурититипе|String| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Для получения дополнительных сведений обратитесь [к разделу развертывание приложения условного доступа для популярных приложений](/cloud-app-security/proxy-deployment-aad). |
+|isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
+|cloudAppSecurityType|String| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Дополнительные сведения [см. в теме "Развертывание функции управления приложениями условного доступа для рекомендуемых приложений".](/cloud-app-security/proxy-deployment-aad) |
 
 ## <a name="relationships"></a>Связи
 

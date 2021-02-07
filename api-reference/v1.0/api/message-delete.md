@@ -1,24 +1,24 @@
 ---
 title: Удаление сообщения
-description: Удаление сообщения из почтового ящика указанного пользователя или удаление связи сообщения.
+description: Удаление сообщения в почтовом ящике указанного пользователя или удаление связи сообщения.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 014cbcbeb9d7ac34fa4ab038377363e2c3e6286c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c890d5574b60069de6ac305786e6e146d633a131
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019077"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130573"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
 Пространство имен: microsoft.graph
 
-Удаление сообщения из почтового ящика указанного пользователя или удаление связи сообщения.
+Удаление сообщения в почтовом ящике указанного пользователя или удаление связи сообщения.
 
->**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено [известным именем папки](../resources/mailfolder.md) `recoverableitemsdeletions` ). Дополнительные сведения см. в статье [Хранение удаленных](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+>**Примечание** Вы можете не иметь возможности удалять элементы в папке удаления элементов для восстановления (представленные известным [именем папки).](../resources/mailfolder.md) `recoverableitemsdeletions` Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статьях "Хранение удаленных элементов" и "Очистка удаленных элементов". [](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,15 +2,15 @@
 title: Получение вложения
 description: 'Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к данным о событии '
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8ffd1ceec1d3dbdb7e30a059836b11cc8e5a0276
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: e839d9936409a954fe8ca307b0d0310000076d64
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133905"
 ---
 # <a name="get-attachment"></a>Получение вложения
 

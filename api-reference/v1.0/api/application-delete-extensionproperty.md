@@ -3,14 +3,14 @@ title: Удаление extensionProperty
 description: Удаление extensionProperty.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 08a4cbd6478edb4a24d9e26318c8becef3e0f92c
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 38e5358a39214c060a56513ff31120c3ea12ead8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131826"
 ---
 # <a name="delete-extensionproperty"></a>Удаление extensionProperty
 
@@ -26,7 +26,7 @@ ms.locfileid: "49844636"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

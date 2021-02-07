@@ -3,14 +3,14 @@ title: List extensionProperties
 description: Получить список объектов extensionproperty.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 814c465dc0479dbe70dd23c7177a6b0bdbd0e0f2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 4375f868d6588250c1bdd11b339565fa7f125ab8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132498"
 ---
 # <a name="list-extensionproperties"></a>List extensionProperties
 
@@ -24,7 +24,7 @@ ms.locfileid: "49844685"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Application.Read.All, Application.ReadWrite.All |
 |Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 

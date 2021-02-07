@@ -1,31 +1,31 @@
 ---
 title: Тип ресурса onPremisesProvisioningError
-description: Представляет ошибки синхронизации каталогов для группы пользователей и контактных ресурсов при синхронизации локальных каталогов с Azure Active Directory.
+description: Представляет ошибки синхронизации службы каталогов для группы пользователей и контактных ресурсов при синхронизации локального каталога с Azure Active Directory.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 719bb525fad934bb92f44fb427d1214bf288ec46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2647e32653d26793b4f875bb47ce43e83a294c4a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133332"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>Тип ресурса onPremisesProvisioningError
 
 Пространство имен: microsoft.graph
 
-Представляет ошибки синхронизации каталогов для [пользователей](user.md), [групп](group.md) и [orgContact](orgcontact.md) ресурсов при синхронизации локальных каталогов с Azure Active Directory.
+Представляет ошибки синхронизации службы каталогов для ресурсов [user,](user.md) [group](group.md) и [orgContact](orgcontact.md) при синхронизации локального каталога с Azure Active Directory.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|category|String| Категория ошибки подготовки. Примечание. в настоящее время существует только одно возможное значение. Возможное значение: *пропертиконфликт* — указывает, что значение свойства не является уникальным. Другие объекты содержат одно и то же значение свойства. |
-|оккурреддатетиме|DateTimeOffset| Дата и время возникновения ошибки. |
-|пропертикаусинжеррор|String| Имя свойства каталога, вызвавшего ошибку. Текущие возможные значения: *userPrincipalName* или *proxyAddress* |
-|value|String| Значение свойства, вызвавшего ошибку. |
+|category|String| Категория ошибки при предоставлении. Примечание. В настоящее время существует только одно возможное значение. Возможное значение: *PropertyConflict* — указывает, что значение свойства не уникально. Другие объекты содержат такое же значение свойства. |
+|occurredDateTime|DateTimeOffset| Дата и время, когда произошла ошибка. |
+|propertyCausingError|String| Имя свойства каталога, вызываемого ошибкой. Текущие возможные значения: *UserPrincipalName* или *ProxyAddress* |
+|value|String| Значение свойства, вызываемого ошибкой. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

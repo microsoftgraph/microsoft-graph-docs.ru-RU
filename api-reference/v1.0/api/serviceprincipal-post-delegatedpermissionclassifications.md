@@ -3,14 +3,14 @@ title: Создание delegatedPermissionClassification
 description: Классификация разрешения путем добавления делегированияPermissionClassification к основному классу-службе API.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: e5ef5c38bea499494adcffa6a5660cae7395b97e
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c8ec9f622adcbd823df3219cea8876e8077d8977
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873649"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128710"
 ---
 # <a name="create-delegatedpermissionclassification"></a>Создание delegatedPermissionClassification
 
@@ -25,8 +25,8 @@ ms.locfileid: "49873649"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | PermissionGrantPolicy.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

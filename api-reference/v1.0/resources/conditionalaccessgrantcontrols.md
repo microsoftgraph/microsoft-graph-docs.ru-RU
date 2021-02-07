@@ -3,14 +3,14 @@ title: Тип ресурса conditionalAccessGrantControls
 description: Представляет элементы управления предоставлением, которые должны быть выполнены для прохода политики.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b0b93508db666fc1673f1c8154ef638762a872f3
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 99b6d6dc3bd15ea84c4a8507981acd9c8ac2eb6f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013669"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130790"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса conditionalAccessGrantControls
 
@@ -23,7 +23,7 @@ ms.locfileid: "50013669"
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
 | operator | String | Определяет отношение элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
-| builtInControls | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `block` , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` . `passwordChange` |
+| builtInControls | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `block` , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` . |
 | customAuthenticationFactors | Коллекция String | Список пользовательских ИД элементов управления, необходимых для политики. Дополнительные сведения см. в [настраиваемом элементе управления.](/azure/active-directory/conditional-access/controls) |
 | termsOfUse | Коллекция String | Список [условий использования,](/graph/api/resources/agreement) необходимых для политики. |
 

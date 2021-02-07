@@ -3,14 +3,14 @@ title: Получение объекта application
 description: Получение свойств и связей объекта application.
 author: sureshja
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4ab0163709fa083ea481374b8fbce8e10f338c84
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 6950722d4fcc0c2f52c6ad2dd2e7fc4acc674557
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132512"
 ---
 # <a name="get-application"></a>Получение объекта application
 

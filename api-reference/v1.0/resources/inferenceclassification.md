@@ -2,15 +2,15 @@
 title: Тип ресурса inferenceClassification
 description: 'Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях. '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ebb32964f07345eee8c1786c68e196003ed2c804
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 021af9fe2401791ff0b42eb8ff908eead5c085de
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133688"
 ---
 # <a name="inferenceclassification-resource-type"></a>Тип ресурса inferenceClassification
 
@@ -33,7 +33,7 @@ ms.locfileid: "48054884"
 |:---------------|:--------|:----------|
 |id|string| Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overrides|Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)| Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.|

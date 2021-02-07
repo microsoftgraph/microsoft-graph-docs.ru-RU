@@ -2,15 +2,15 @@
 title: 'mailFolder: delta'
 description: Получение набора папок почты, которые были добавлены в почтовый ящик пользователя или удалены из него.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 77c9e786622b025e84780390fe64495fa98412bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c154644261239f2be6b2273b1a7007db52b68fc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033099"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129361"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 

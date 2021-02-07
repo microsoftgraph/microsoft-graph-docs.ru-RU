@@ -2,15 +2,15 @@
 title: 'outlookUser: supportedTimeZones'
 description: Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 11022c5aa6dcea11c007f435f6fd7040a24c8e34
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53bdd461051f2a137c0a9b04b82a0d9acc254065
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128304"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -45,7 +45,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## <a name="function-parameters"></a>Параметры функции
 | Параметр       | Тип | Описание|
 |:---------------|:--------|:----------|
-| TimeZoneStandard  | тимезонестандард  | Формат часовых поясов. Поддерживаемые значение: `Windows` и `Iana`. Необязательный параметр. |
+| TimeZoneStandard  | timeZoneStandard  | Формат часовых поясов. Поддерживаемые значение: `Windows` и `Iana`. Необязательный параметр. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|

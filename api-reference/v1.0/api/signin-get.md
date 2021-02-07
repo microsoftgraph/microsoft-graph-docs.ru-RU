@@ -1,22 +1,22 @@
 ---
 title: Получение объекта signIn
-description: Описывает метод Get ресурса SignIn (Entity) из API Microsoft Graph.
+description: Описывает метод get ресурса signIn (сущности) из API Microsoft Graph.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 033a700e27fb618f285ef1e4dd9bae8e9e8ece71
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cb09d2f9fde80ba6e9d24cae80a39a74faacc3ed
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523751"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131994"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
 Пространство имен: microsoft.graph
 
-Получение определенного события входа пользователя Azure AD для клиента. Интерактивные входы в природе (при условии, что имя пользователя и пароль передаются в составе маркера проверки подлинности); успешные Федеративные входы в систему в данный момент включены в журналы входа.
+Получение определенного события входа пользователя Azure AD для клиента. В настоящее время в журналы входа включаются интерактивные входы, которые являются интерактивными (когда имя пользователя или пароль передается в рамках маркера авторизования), а успешные федеративные входы включаются в журналы входа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49523751"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Приложение | Аудитлог. Read. ALL и Directory. Read. ALL |
+|Для приложений | AuditLog.Read.All и Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

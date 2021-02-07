@@ -1,22 +1,22 @@
 ---
-title: Удаление Делегатедпермиссионклассификатион
-description: Удаление делегированной классификации разрешений из субъекта-службы API.
+title: Удаление delegatedPermissionClassification
+description: Удаление делегированной классификации разрешений из директора-службы API.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 91c2fb5a728438abb428e97311de51048732b024
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: decce0d0a9e3f6915676cb7151da0d43ddff3067
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523347"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133100"
 ---
-# <a name="delete-delegatedpermissionclassification"></a>Удаление Делегатедпермиссионклассификатион
+# <a name="delete-delegatedpermissionclassification"></a>Удаление delegatedPermissionClassification
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [делегатедпермиссионклассификатион](../resources/delegatedPermissionClassification.md) , который ранее был задан для делегированного разрешения.
+Удаляет [делегированную классификацию,](../resources/delegatedPermissionClassification.md) которая ранее была настроена для делегирования разрешений.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49523347"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Пермиссионгрантполици. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Пермиссионгрантполици. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

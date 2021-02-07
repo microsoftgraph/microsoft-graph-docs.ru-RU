@@ -1,22 +1,22 @@
 ---
-title: Удаление Аппролеассигнмент, назначенного субъекту службы
-description: Удаление Аппролеассигнмент, назначенного субъекту службы.
+title: Удаление appRoleAssignment, предоставленного для основного приложения-службы
+description: Удаление appRoleAssignment, предоставленного для основного приложения-службы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b5928746f7550250ad11d995781c8fc620fdcf00
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd6263fa3fdb479bb0290b6c27846ea03155c34b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128731"
 ---
-# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>Удаление Аппролеассигнмент, назначенного субъекту службы
+# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>Удаление appRoleAssignment, предоставленного для основного приложения-службы
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [аппролеассигнмент](../resources/approleassignment.md) , предоставленный субъекту "пользователь", "Группа" или "клиентская служба" для субъекта службы ресурсов.
+Удаляет [appRoleAssignment,](../resources/approleassignment.md) предоставленное пользователем, группой или клиентской службой для основного ресурса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "47967781"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All |
 
@@ -37,7 +37,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 
 > [!NOTE]
-> Рекомендуется удалять назначения ролей приложений с помощью `appRoleAssignedTo` отношения между субъектами службы _ресурсов_ , а не с `appRoleAssignments` назначенным пользователем, группой или субъектом службы.
+> Рекомендуется удалять назначения ролей приложения через связь с основными службами ресурсов, а не через отношение назначенного пользователя, группы или `appRoleAssignedTo`  `appRoleAssignments` основного пользователя-службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -45,7 +45,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -57,7 +57,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на удаление назначения роли приложения от субъекта-службы ресурсов.
+Вот пример запроса на удаление назначения роли приложения из основного ресурса службы.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

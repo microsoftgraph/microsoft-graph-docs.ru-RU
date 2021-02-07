@@ -1,16 +1,16 @@
 ---
 title: Добавление вложения
 description: 'С помощью этого API можно добавить вложение к сообщению. '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c1e4a91061e66c7e43cb63dafe07e70310f859eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14913adaad256ffc29b5dc5e5086ab061bf44c54
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089072"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128381"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48089072"
 
 Вы можете добавить вложение к существующему сообщению, добавив его в коллекцию вложений, или к сообщению, [создаваемому и отправляемому на ходу](../api/user-sendmail.md).
 
-Эта операция ограничит размер вложения, которое можно добавить в раздел 3 МБ.
+Эта операция ограничивает размер вложения, который можно добавить, до 3 МБ.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

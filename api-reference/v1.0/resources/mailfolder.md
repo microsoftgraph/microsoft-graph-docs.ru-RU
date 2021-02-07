@@ -2,15 +2,15 @@
 title: Тип ресурса mailFolder
 description: Почтовая папка в почтовом ящике пользователя, например "Входящие" или "Черновики". Почтовые папки могут содержать сообщения, другие элементы Outlook и дочерние почтовые папки.
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9918e611c767cb791908d16307c91fd3483c4e9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d2363f2bc25ddf3356215910e14b3451fccf6fcf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130776"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 

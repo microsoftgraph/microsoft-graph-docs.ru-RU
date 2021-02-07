@@ -1,16 +1,16 @@
 ---
 title: Создание объекта MailFolder
 description: С помощью этого API можно создать дочернюю папку почты.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 529e6750784436ef5db00de0c89c2fc0d9e04a6c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b83a9776e39c6bf58e2d42ebd7eaf04a30cb481
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033015"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131723"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -37,7 +37,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительскую папку в URL-адресе запроса как идентификатор папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительская папка в URL-адресе запроса в качестве ИД папки или известного имени папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -46,9 +46,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **DisplayName** это единственное свойство для записи объекта [mailFolder](../resources/mailfolder.md) .
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** — это единственное свойство, списамое для объекта [mailFolder.](../resources/mailfolder.md)
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и ресурс `201 Created` [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -101,7 +101,7 @@ Content-length: 159
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
-> **Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

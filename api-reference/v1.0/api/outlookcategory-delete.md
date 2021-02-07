@@ -1,16 +1,16 @@
 ---
 title: Удаление категории Outlook
 description: Удаление указанного объекта outlookCategory.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1ee827a1653d4b6a997cb73c04c8235fccece43a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf557fcefa48857a93557be8a87c3394d936f149
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133114"
 ---
 # <a name="delete-outlook-category"></a>Удаление категории Outlook
 
@@ -40,7 +40,7 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

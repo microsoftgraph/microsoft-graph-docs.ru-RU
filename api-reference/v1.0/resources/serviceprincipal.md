@@ -3,14 +3,14 @@ title: Тип ресурса servicePrincipal
 description: Представляет экземпляр приложения в каталоге. Наследуется от directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d02868356a2c3ed92942f6a58f451023fd027ad1
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 63f0023504b66cc1ba6644ff0f1d4a907f57528f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133681"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 

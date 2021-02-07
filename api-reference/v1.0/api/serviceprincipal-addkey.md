@@ -1,29 +1,29 @@
 ---
-title: 'servicePrincipal: Аддкэй'
+title: 'servicePrincipal: addKey'
 description: Добавление учетных данных ключа объекту servicePrincipal.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d69567692476266671bc9556b2750f1b7174f9eb
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 5249bcf7f3e647239cf2fd6f9aa87ded7376e7dd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133233"
 ---
-# <a name="serviceprincipal-addkey"></a>servicePrincipal: Аддкэй
+# <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
 Пространство имен: microsoft.graph
 
-Добавление ключевых учетных данных в [servicePrincipal](../resources/serviceprincipal.md). Этот метод вместе с [ремовекэй](serviceprincipal-removekey.md) можно использовать в servicePrincipal для автоматизации изкрутки ключей истечения срока действия.
+Добавляет учетные данные ключа в [servicePrincipal.](../resources/serviceprincipal.md) Этот метод вместе с [removeKey](serviceprincipal-removekey.md) может использоваться servicePrincipal для автоматизации перетаскивания ключей окончания срока действия.
 
 > [!NOTE]
-> [Создание servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [обновление операций servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления ключевых учетных данных для любых servicePrincipal с контекстом пользователя или без него.
+> [Операции создания servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления ключевых учетных данных для любого servicePrincipal с контекстом пользователя или без него.
 
-В рамках проверки запроса для этого метода проверяется наличие проверки на наличие существующего ключа перед выполнением действия. 
+В рамках проверки запроса для этого метода перед выполнением действия проверяется подтверждение на владение существующим ключом. 
 
-СервицепринЦипалс, у которых нет существующих действительных сертификатов (например, не было добавлено ни одного сертификата, или у всех сертификатов истек срок действия), не сможете использовать это действие службы. [Обновление servicePrincipal](../api/serviceprincipal-update.md) можно использовать для выполнения обновления.
+ServicePrincipals, у которых нет действительных сертификатов (т. е. сертификаты еще не добавлены или срок действия всех сертификатов истек), не смогут использовать это действие службы. [Обновление servicePrincipal](../api/serviceprincipal-update.md) можно использовать для выполнения обновления.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "48905177"
 |Приложение | Нет. |
 
 > [!NOTE]
-> ServicePrincipal не требует каких – либо специальных разрешений для внесения в них собственных ключей.
+> ServicePrincipal не нуждается в специальном разрешении для переката собственных ключей.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,22 +53,22 @@ POST /servicePrincipals/{id}/addKey
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите следующие обязательные свойства.
+В теле запроса укажив следующие необходимые свойства.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа servicePrincipal для добавления. Для этого использования требуются свойства __Type__ , __Usage__ и __Key__ . Поддерживаются следующие типы ключей:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Необходимо задать только __секреттекст__ , который должен содержать пароль для ключа. Это свойство является обязательным только для ключей типа `X509CertAndPassword` . Задайте для него значение `null` другой.|
-| совмещен | String | Самозаверяющий маркер JWT, используемый в качестве подтверждения наличия существующих ключей. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` -Issuer должен быть __идентификатором__  servicePrincipal, осуществляющим вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Ниже приведен [Пример](/graph/application-rollkey-prooftoken) кода, который можно использовать для создания этого маркера для проверки подлинности.|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа servicePrincipal, которые необходимо добавить. __Тип,__ __использование и__ __ключ__ являются свойствами, требуемой для этого использования. Поддерживаемые типы ключей:<br><ul><li>`AsymmetricX509Cert`: использование должно быть `Verify` .</li><li>`X509CertAndPassword`: использование должно быть `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей `X509CertAndPassword` типа. В противном `null` случае.|
+| proof | String | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer должен быть __ид__  servicePrincipal, который делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [кэйкредентиал](../resources/keycredential.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>Пример 1: Добавление новых учетных данных ключа в объект servicePrincipal
+### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>Пример 1. Добавление новых учетных данных ключа в servicePrincipal
 
 #### <a name="request"></a>Запрос
 
@@ -133,7 +133,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a>Пример 2: Добавление учетных данных ключа и соответствующего пароля для ключа
+### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a>Пример 2. Добавление учетных данных ключа и связанного пароля для ключа
 
 #### <a name="request"></a>Запрос
 

@@ -1,22 +1,22 @@
 ---
 title: Получение directoryAudit
-description: Описывает метод Get ресурса Директоряудит (Entity) из API Microsoft Graph.
+description: Описывает метод get ресурса directoryAudit (сущности) из API Microsoft Graph.
 localization_priority: Normal
 author: SarahBar
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 83be228cd6826c00af42e41fca31b5d60c919ba6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d54a39393b86d3e986c1723466adaf9203378529
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131735"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
 Пространство имен: microsoft.graph
 
-Получение конкретного элемента журнала аудита Azure Active Directory. Сюда входит элемент журнала аудита, созданный различными службами в Azure Active Directory, такими как пользователь, приложение, Управление устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защита удостоверений, управление паролями (сброс паролей самообслуживания и администратора), Управление группами самообслуживания и т. д.
+Получите определенный элемент журнала аудита Azure Active Directory. К ним относится элемент журнала аудита, созданный различными службами в Azure Active Directory, например пользователем, приложением, управлением устройствами и группой, привилегированным управлением удостоверениями (PIM), проверками доступа, условиями использования, защитой удостоверений, управлением паролями (самостоятельный сброс паролей и сброс паролей администратора), управлением группой самообслужения и так далее.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "48052476"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All |
 
@@ -51,7 +51,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директоряудит](../resources/directoryaudit.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [directoryAudit](../resources/directoryaudit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

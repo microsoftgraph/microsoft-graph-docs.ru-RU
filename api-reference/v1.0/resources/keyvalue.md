@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Ключзначение
-description: Стандартный тип ресурса "ключ — значение".
+title: Тип ресурса keyValue
+description: Стандартный тип ресурса пары "ключ-значение".
 localization_priority: Normal
 author: dougeby
-ms.prod: ''
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b9ecf552b059e60f1cc7a981d4881a83beeffb51
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ae252d03884b6d43b2ca12a4d59d2f5477dab5b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134717"
 ---
-# <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
+# <a name="keyvalue-resource-type"></a>Тип ресурса keyValue
 
 Пространство имен: microsoft.graph
 
-Представляет собой ключевую строку "ключ — значение".
+Представляет пару "ключ-значение".
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|string| Ключ для параметра "ключ — значение". |
-|value|string| Значение для параметра "ключ — значение".|
+|key|string| Ключ для пары "ключ-значение". |
+|value|string| Значение для пары "ключ-значение".|
 
 ## <a name="json-representation"></a>Представление JSON
 

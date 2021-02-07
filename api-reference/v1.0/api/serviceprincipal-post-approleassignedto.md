@@ -3,14 +3,14 @@ title: Предоставление appRoleAssignment субъекту-служ�
 description: Предоставление назначения роли приложения субъекту-службе
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b57c927815e371c79cf27fa4c732e81e0da5e7ba
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 67faa1ea6448562ba4db66fd15baa46f21a71d9e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132911"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 

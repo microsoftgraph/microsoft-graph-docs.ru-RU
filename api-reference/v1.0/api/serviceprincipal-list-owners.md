@@ -3,14 +3,14 @@ title: 'servicePrincipals: Перечисление владельцев'
 description: Извлечение списка владельцев servicePrincipal.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: be35d927a1860ee4aa4c38807bc7001a7f99408a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 6e1bd835b63514a0e6c92501537ee93a0eabda79
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134489"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: Перечисление владельцев
 

@@ -1,22 +1,22 @@
 ---
-title: Список Делегатедпермиссионклассификатионс коллекции servicePrincipal
-description: Получение списка классификаций, предоставленных делегированным разрешениям, предоставленным субъектом-службой API.
+title: Список коллекции delegatedPermissionClassifications servicePrincipal
+description: Извлекает список классификаций, которые даются делегированным разрешениям, которые предоставляет основной службы API.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: d2a1a46aa97150cb3d1d015ca295a6b0062a926a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 4ab551d0e8d23a2d8810d3bc10c812318aaaaa10
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524018"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132232"
 ---
-# <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Список Делегатедпермиссионклассификатионс коллекции servicePrincipal
+# <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Список коллекции delegatedPermissionClassifications servicePrincipal
 
 Пространство имен: microsoft.graph
 
-Получение списка [делегатедпермиссионклассификатион](../resources/delegatedpermissionclassification.md) , настроенных в настоящее время для делегированных разрешений, предоставляемых API.
+Получить список [делегированияPermissionClassification,](../resources/delegatedpermissionclassification.md) настроенный в настоящее время для делегируемых разрешений, которые могут быть выявимы aPI.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524018"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application. Read. Овнедби, Application. Read. ALL, Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [делегатедпермиссионклассификатион](../resources/delegatedpermissionclassification.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

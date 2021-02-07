@@ -1,16 +1,16 @@
 ---
 title: Список объектов appRoleAssignment, предоставленных субъект-службе
-description: Получение списка назначений ролей приложений, предоставленных субъект-службе.
+description: Получение списка назначенных ролей приложения, предоставленных субъект-службе.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 21b09abfd4d2c0d768ab885070fec454d2e1cde2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e4d718f0e1f7b583d5f662ddbdf4bf500fa71ac
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015549"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132253"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных субъект-службе
 
@@ -30,7 +30,7 @@ ms.locfileid: "48015549"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

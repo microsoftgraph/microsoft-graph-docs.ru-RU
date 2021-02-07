@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Кондитионалакцессаппликатионс
-description: Представляет приложения и действия пользователя, включенные в область политики и исключенные из нее.
+title: Тип ресурса conditionalAccessApplications
+description: Представляет приложения и действия пользователей, включенные в область политики и исключенные из нее.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5a9794a274b876ba93cc3fdbe14ea7731776daa3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42ceafb6c786666378d1327ecd158a04559d7f0d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132162"
 ---
-# <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса Кондитионалакцессаппликатионс
+# <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса conditionalAccessApplications
 
 Пространство имен: microsoft.graph
 
-Представляет приложения и действия пользователя, включенные в политику и исключенные из нее.
+Представляет приложения и действия пользователей, включенные в политику и исключенные из нее.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклудеаппликатионс | Коллекция String | Список идентификаторов приложений, к которым применяется политика, если явно не исключено (в Ексклудеаппликатионс). Также можно задать значение `All` . |
-| ексклудеаппликатионс | Коллекция String | Список идентификаторов приложений, явно исключенных из политики. |
-| инклудеусерактионс | Коллекция String | Включаемые действия пользователя. Пример: `urn:user:registersecurityinfo` |
+| includeApplications | Коллекция String | Список ИД приложений, к которых применяется политика, за исключением явно исключенных (в excludeApplications). Также может быть установлено в `All` . |
+| excludeApplications | Коллекция String | Список явно исключенных из политики ИД приложений. |
+| includeUserActions | Коллекция String | Действия пользователей, которые необходимо включить. Пример: `urn:user:registersecurityinfo` |
 
 ## <a name="relationships"></a>Связи
 

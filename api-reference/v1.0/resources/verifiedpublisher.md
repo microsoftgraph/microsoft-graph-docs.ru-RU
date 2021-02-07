@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Верифиедпублишер
+title: Тип ресурса verifiedPublisher
 description: Представляет проверенного издателя приложения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: d998b8bf3e5ab4ad253e31a96794e8e531e6803e
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 0c7d500a4fd032704f36953c8bf18efe6fa0f68d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129681"
 ---
-# <a name="verifiedpublisher-resource-type"></a>Тип ресурса Верифиедпублишер
+# <a name="verifiedpublisher-resource-type"></a>Тип ресурса verifiedPublisher
 
 Пространство имен: microsoft.graph
 
-Представляет проверенного издателя [приложения](application.md). Для получения дополнительных сведений см [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview). Проверенные издатели задаются с помощью [сетверифиедпублишер](../api/application-setverifiedpublisher.md) и могут быть удалены только с помощью [унсетверифиедпублишер](../api/application-unsetverifiedpublisher.md).
+Представляет проверенного издателя [приложения.](application.md) Дополнительные сведения см. в [проверке Publisher.](/azure/active-directory/develop/publisher-verification-overview) Проверенные издатели устанавливаются с помощью [setVerifiedPublisher](../api/application-setverifiedpublisher.md) и могут быть удалены только с помощью [unsetVerifiedPublisher.](../api/application-unsetverifiedpublisher.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|displayName|String|Проверенное имя издателя из учетной записи центра партнера издателя приложения.|
-|верифиедпублишерид|String| Идентификатор проверенного издателя из учетной записи центра партнера издателя приложения. |
-|аддеддатетиме|DateTimeOffSet| Временная метка при первом добавлении проверенного издателя или последнего обновления. |
+|displayName|String|Проверенное имя издателя из учетной записи Центра партнеров издателя приложения.|
+|verifiedPublisherId|String| ИД проверенного издателя из учетной записи Центра партнеров издателя приложений. |
+|addedDateTime|DateTimeOffSet| Временнаямпетка первого или последнего обновления проверенного издателя. |
 
 
 ## <a name="json-representation"></a>Представление JSON

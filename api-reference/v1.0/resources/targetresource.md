@@ -3,14 +3,14 @@ title: Тип ресурса targetResource
 description: Представляет целевые типы ресурсов, связанные с действиями аудита.
 localization_priority: Normal
 author: dhanyahk
-ms.prod: azure-ad
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 641097b6e8b4646d878182ba1763fd62ab75b080
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66470d9e29bad5c662bfa6aa3227091b2ec739bc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094059"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130152"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 
@@ -22,12 +22,12 @@ ms.locfileid: "48094059"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка|Указывает уникальный идентификатор ресурса.|
-|displayName|Строка|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
-|type|Строка|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , `ServicePrincipal` и `User` .|
-|userPrincipalName|String|Если для параметра **Type** задано значение `User` , это имя пользователя, инициировавшего действие, `null` для других типов.|
-|groupType|Строка|Если для параметра **Type** задано значение `Group` , это указывает тип группы.|
-|modifiedProperties|Коллекция [модифиедпроперти](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого атрибута, который изменился. Значения свойств зависят от **типа**операции.|
+|id|String|Указывает уникальный ИД ресурса.|
+|displayName|String|Указывает видимое имя, определенное для ресурса. Обычно указывается, когда создается ресурс.|
+|type|String|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , и `ServicePrincipal` `User` .|
+|userPrincipalName|String|Если **за** установлен тип, это включает имя пользователя, инициа которого было инициировано действие; для `User` других `null` типов.|
+|groupType|String|Если **за** установлен `Group` тип, это указывает на тип группы.|
+|modifiedProperties|[Коллекция modifiedProperty](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого из измененных атрибутов. Значения свойств зависят от типа **операции.**|
 
 ## <a name="json-representation"></a>Представление JSON
 

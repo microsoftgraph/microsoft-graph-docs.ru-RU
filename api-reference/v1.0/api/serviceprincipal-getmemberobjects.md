@@ -3,14 +3,14 @@ title: 'servicePrincipal: getMemberObjects'
 description: Получение списка групп и ролей каталога, в которых участвует субъект-служба.  Это транзитивная проверка.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0b88be8f3318d7675cdb8538d785748293b2fbc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0b670e0769a5176cc1472edfb2707ddcce65c80
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134598"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 

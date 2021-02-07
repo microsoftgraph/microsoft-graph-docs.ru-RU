@@ -1,22 +1,22 @@
 ---
-title: 'servicePrincipal: Чеккмемберобжектс'
-description: Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта участника службы.
+title: 'servicePrincipal: checkMemberObjects'
+description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта принципов службы.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e050b70cf7842bb79a29288d1b7bc6a832905af0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 529699aafe2051f6e3aebfa115cde3bc2c26400e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025405"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131387"
 ---
-# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: Чеккмемберобжектс
+# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
-Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта [servicePrincipal](../resources/serviceprincipal.md) . Этот метод является транзитивным.
+Проверьте членство в списке групп, ролей каталога или административных единиц для указанного объекта [servicePrincipal.](../resources/serviceprincipal.md) Этот метод является транзитивным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,11 +48,11 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ids|Коллекция String|Коллекция, содержащая идентификаторы объектов групп, ролей каталогов, административных единиц или идентификаторов Ролетемплате ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов.|
+|ids|Коллекция String|Коллекция, которая содержит объектные ИД групп, роли каталога, административные единицы или roleTemplate ИД ролей каталогов, в которых необходимо проверить членство. Может быть указано до 20 объектов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

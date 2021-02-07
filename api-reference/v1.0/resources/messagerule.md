@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса messageRule
 description: Правило, которое применяется к сообщениям в папке "Входящие" пользователя.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 87f6413b3b7bb38d45a8ba30dc39c3168a2a0d97
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb13379cbd68319ae1384f6a3b8ce2caf663c8e0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965402"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132372"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
 
@@ -71,7 +71,7 @@ ms.locfileid: "47965402"
 |[Получение правила](../api/messagerule-get.md) | [messageRule](messagerule.md) |Считывает свойства и отношения объекта **messageRule**.|
 |[Создание](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Создает объект **messageRule**, определяя набор условий и действий.|
 |[Обновление](../api/messagerule-update.md) | [messageRule](messagerule.md) |Изменяет записываемые свойства объекта **messageRule** и сохраняет изменения. |
-|[удаление](../api/messagerule-delete.md); | Нет |Удаляет указанный объект **messageRule**. |
+|[Удаление](../api/messagerule-delete.md) | Нет |Удаляет указанный объект **messageRule**. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

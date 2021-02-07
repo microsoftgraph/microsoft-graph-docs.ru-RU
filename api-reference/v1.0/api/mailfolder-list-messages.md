@@ -2,15 +2,15 @@
 title: Список сообщений
 description: Получение всех сообщений в почтовом ящике вошедшего пользователя или в указанной папке этого почтового ящика.
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 876416ff9409c23461f05820c18ae19f69505e25
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 5132bd1ef9bfbdd5c9926d9eff0ec91ee284d00d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981489"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128402"
 ---
 # <a name="list-messages"></a>Список сообщений
 

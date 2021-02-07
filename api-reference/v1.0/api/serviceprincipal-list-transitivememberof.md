@@ -3,14 +3,14 @@ title: Перечисление servicePrincipal transitive memberOf
 description: Список групп и ролей каталога, участником которых является этот субъект-служба.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d4fcf26c9ff013a34ddddaef2543cb3f71a1fda0
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 415da422b4d7dfa51c2978da4120c88a3e6d82d3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132920"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Перечисление servicePrincipal transitive memberOf
 

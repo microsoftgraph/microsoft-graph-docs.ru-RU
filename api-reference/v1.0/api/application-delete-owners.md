@@ -3,27 +3,27 @@ title: Удаление владельца
 description: Удаление владельца приложения.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 35e288b8ea07294eeca0569ed606a25d231e5796
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b392de25e1213cef27761c81137a7569aacec344
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992813"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131812"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
 Пространство имен: microsoft.graph
 
-Удаление владельца из [приложения](../resources/application.md).
+Удаление владельца из [приложения.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -38,8 +38,8 @@ DELETE /applications/{id}/owners/{id}/$ref
 |:---- |:---------- |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.
+## <a name="request-body"></a>Текст запроса
+В теле запроса укавите идентификатор объекта каталога, который должен быть назначен владельцем.
 
 ## <a name="response"></a>Отклик
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
 
 Ниже приведен пример отклика.
 
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

@@ -1,27 +1,27 @@
 ---
-title: 'servicePrincipal: Ремовекэй'
-description: Удаление ключа учетных данных из servicePrincipal
+title: 'servicePrincipal: removeKey'
+description: Удаление учетных данных ключа из servicePrincipal
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e746f45f146b8fdfe2449ed6f1549e31c0f26c47
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 1f949bad054ccac344e7b82a0f8241d320d7b8ee
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134010"
 ---
-# <a name="serviceprincipal-removekey"></a>servicePrincipal: Ремовекэй
+# <a name="serviceprincipal-removekey"></a>servicePrincipal: removeKey
 
 Пространство имен: microsoft.graph
 
-Удаление ключевых учетных данных из [servicePrincipal](../resources/serviceprincipal.md). Этот метод вместе с [аддкэй](serviceprincipal-addkey.md) можно использовать в servicePrincipal для автоматизации изкрутки ключей истечения срока действия.
+Удалите учетные данные ключа [из servicePrincipal.](../resources/serviceprincipal.md) Этот метод вместе с [addKey](serviceprincipal-addkey.md) может использоваться servicePrincipal для автоматизации перетаскивания ключей окончания срока действия.
 
 > [!NOTE]
-> [Создание servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [обновление операций servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления ключевых учетных данных для любых servicePrincipal с контекстом пользователя или без него.
+> [Операции создания servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления ключевых учетных данных для любого servicePrincipal с контекстом пользователя или без него.
 
-В рамках проверки запроса для этого метода проверяется наличие проверки на наличие существующего ключа перед выполнением действия.
+В рамках проверки запроса для этого метода перед выполнением действия проверяется подтверждение на владение существующим ключом.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,7 @@ ms.locfileid: "48905435"
 |Приложение | Нет. |
 
 > [!NOTE]
-> ServicePrincipal не требует каких – либо специальных разрешений для развертывания собственных ключей.
+> ServicePrincipal не требует специального разрешения на откат собственных ключей.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,12 +51,12 @@ POST /servicePrincipals/{id}/removeKey
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите следующие обязательные свойства.
+В теле запроса укажив следующие необходимые свойства.
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
-| Него значение KeyID     | GUID | Уникальный идентификатор пароля.|
-| совмещен | String | Самозаверяющий маркер JWT, используемый в качестве подтверждения наличия существующих ключей. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` -Issuer должен быть __идентификатором__  servicePrincipal, осуществляющим вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Ниже приведен [Пример](/graph/application-rollkey-prooftoken) кода, который можно использовать для создания этого маркера для проверки подлинности.|
+| keyId     | GUID | Уникальный идентификатор пароля.|
+| proof | String | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer должен быть __идом__  servicePrincipal, который делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
 
 ## <a name="response"></a>Отклик
 
@@ -64,7 +64,7 @@ POST /servicePrincipals/{id}/removeKey
 
 ## <a name="examples"></a>Примеры
 
-В приведенном ниже примере показано, как вызывать этот API.
+Ниже показано, как вызвать этот API.
 
 ### <a name="request"></a>Запрос
 

@@ -1,22 +1,22 @@
 ---
-title: 'servicePrincipal: Ремовепассворд'
+title: 'servicePrincipal: removePassword'
 description: Удаление пароля из servicePrincipal
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 407bd1e2ad56ace6af783e4c83094d3ea74a5d42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30f66a540a7a140e6381ff4f4f556b3509a04a3b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130538"
 ---
-# <a name="serviceprincipal-removepassword"></a>servicePrincipal: Ремовепассворд
+# <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
 Пространство имен: microsoft.graph
 
-Удаление пароля из объекта [servicePrincipal](../resources/serviceprincipal.md) .
+Удаление пароля из объекта [servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "47978594"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/removePassword
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| Него значение KeyID | GUID | Уникальный идентификатор пароля. Обязательный. |
+| keyId | GUID | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 

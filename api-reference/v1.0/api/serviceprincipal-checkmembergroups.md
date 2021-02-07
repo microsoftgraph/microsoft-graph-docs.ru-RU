@@ -1,22 +1,22 @@
 ---
 title: 'servicePrincipal: checkMemberGroups'
-description: Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых субъект-служба состоит напрямую или транзитивно.
+description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых субъект-служба является прямым или транзитивным участником.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bca8a52ea2d10ba4dd32e871ab0dbadcf454bf00
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 573b15c61735786550d2a33fc356a9de3f19cded
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025398"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131404"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
 Пространство имен: microsoft.graph
 
-Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых [servicePrincipal](../resources/serviceprincipal.md) состоит напрямую или транзитивно.
+Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых [servicePrincipal](../resources/serviceprincipal.md) является прямым или транзитивным участниом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

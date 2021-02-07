@@ -1,22 +1,22 @@
 ---
-title: 'servicePrincipal: Аддпассворд'
+title: 'servicePrincipal: addPassword'
 description: Добавление стойкого пароля объекту servicePrincipal.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ab4e1a8fef31f9f2284604f39812bf6056ec82d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 518d7b696d214ead133bcf869381099034094359
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025420"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132015"
 ---
-# <a name="serviceprincipal-addpassword"></a>servicePrincipal: Аддпассворд
+# <a name="serviceprincipal-addpassword"></a>servicePrincipal: addPassword
 
 Пространство имен: microsoft.graph
 
-Добавьте надежный пароль для объекта [servicePrincipal](../resources/serviceprincipal.md) .
+Добавьте надежный пароль в [объект servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "48025420"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -45,17 +45,17 @@ POST /servicePrincipals/{id}/addPassword
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите необязательный `passwordCredential` объект со следующими свойствами.
+В теле запроса укажив необязательный `passwordCredential` объект со следующими свойствами.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Понятное имя для пароля. Необязательный параметр. |
-| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. Значение по умолчанию — "startDateTime + 2 года". |
-| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. Значение по умолчанию — "Now".|
+| displayName | String | Удобное имя пароля. Необязательное свойство. |
+| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля представлены в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию : startDateTime + 2 years. |
+| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию — "now".|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [пассвордкредентиал](../resources/passwordcredential.md) в тексте отклика. Свойство **секреттекст** в объекте Response содержит надежные пароли, созданные Azure Active Directory длиной 16-64 символов. В будущем невозможно получить этот пароль.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект passwordCredential](../resources/passwordcredential.md) в тексте отклика. Свойство **secretText** в объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной от 16 до 64 символов. В будущем получить этот пароль будет не нужно.
 
 ## <a name="examples"></a>Примеры
 

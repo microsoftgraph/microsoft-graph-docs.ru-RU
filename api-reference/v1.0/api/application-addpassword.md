@@ -3,14 +3,14 @@ title: 'application: addPassword'
 description: Добавление надежного пароля в приложение.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a9de58ceb2907ddc868a9cf866ddc501c0e0070e
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 8b5cec3e647670be037b27bcf2cae438111f04e5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131861"
 ---
 # <a name="application-addpassword"></a>application: addPassword
 
@@ -26,7 +26,7 @@ ms.locfileid: "49844601"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,13 +49,13 @@ POST /applications/{id}/addPassword
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Удобное имя пароля. Необязательный. |
-| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля представлены в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный. Значение по умолчанию: startDateTime + 2 years. |
-| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный.  Значение по умолчанию — "now". |
+| displayName | String | Удобное имя пароля. Необязательное свойство. |
+| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля представлены в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию : startDateTime + 2 years. |
+| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство.  Значение по умолчанию — "now". |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект passwordCredential](../resources/passwordcredential.md) в тексте отклика. Свойство **secretText** в объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной от 16 до 64 символов. В будущем получить этот пароль не будет.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект passwordCredential](../resources/passwordcredential.md) в тексте отклика. Свойство **secretText** в объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной от 16 до 64 символов. В будущем получить этот пароль будет не нужно.
 
 ## <a name="examples"></a>Примеры
 

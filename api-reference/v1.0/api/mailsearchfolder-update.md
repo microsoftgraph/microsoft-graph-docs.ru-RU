@@ -1,22 +1,22 @@
 ---
-title: Обновление Маилсеарчфолдер
-description: Обновление свойств, доступных для записи, объекта Маилсеарчфолдер.
+title: Обновление mailSearchFolder
+description: Обновление переописаемых свойств объекта mailSearchFolder.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4cee0bd483501dfa9328ad71bb9210616d55670a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 939a25a6aef69625571dd812f16c0b76ac458281
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032966"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130657"
 ---
-# <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
+# <a name="update-mailsearchfolder"></a>Обновление mailSearchFolder
 
 Пространство имен: microsoft.graph
 
-Обновление свойств, доступных для записи, объекта [маилсеарчфолдер](../resources/mailsearchfolder.md) .
+Обновление переописаемых свойств объекта [mailSearchFolder.](../resources/mailsearchfolder.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,17 +45,17 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true` означает, что следует выполнить глубокий поиск, а это `false` означает, что вместо этого следует выполнить неглубокий Поиск. |
-| саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
-| филтеркуери | String | Запрос OData для фильтрации сообщений. |
+| displayName | String | Отображаемого имени [mailFolder](../resources/mailfolder.md).|
+| includeNestedFolders | Boolean | Как должна проходить иерархия папок почтового ящика. `true` означает, что следует глубоко искать, тогда как вместо этого следует делать `false` неглубокий поиск. |
+| sourceFolderIds | Коллекция String | Папки почтового ящика, которые необходимо миновать. |
+| filterQuery | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, который обновляет свойство **филтеркуери** папки поиска.
+Ниже приводится пример запроса, который обновляет свойство **filterQuery** папки поиска.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
