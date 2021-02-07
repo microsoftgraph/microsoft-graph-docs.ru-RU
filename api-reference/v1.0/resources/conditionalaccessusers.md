@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Кондитионалакцессусерс
+title: Тип ресурса conditionalAccessUsers
 description: Представляет пользователей, группы и роли, включенные в область политики и исключенные из нее.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 01fe92a5c317a2349776284c16ff38669e2c6c1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f75eb86ab9627b2cb9d507de9321743524203b3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129774"
 ---
-# <a name="conditionalaccessusers-resource-type"></a><span data-ttu-id="18804-103">Тип ресурса Кондитионалакцессусерс</span><span class="sxs-lookup"><span data-stu-id="18804-103">conditionalAccessUsers resource type</span></span>
+# <a name="conditionalaccessusers-resource-type"></a><span data-ttu-id="b22fa-103">Тип ресурса conditionalAccessUsers</span><span class="sxs-lookup"><span data-stu-id="b22fa-103">conditionalAccessUsers resource type</span></span>
 
-<span data-ttu-id="18804-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="18804-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b22fa-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b22fa-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="18804-105">Представляет пользователей, группы и роли, включенные в область политики и исключенные из нее.</span><span class="sxs-lookup"><span data-stu-id="18804-105">Represents users, groups, and roles included in and excluded from the policy scope.</span></span>
+<span data-ttu-id="b22fa-105">Представляет пользователей, группы и роли, включенные в область политики и исключенные из нее.</span><span class="sxs-lookup"><span data-stu-id="b22fa-105">Represents users, groups, and roles included in and excluded from the policy scope.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="18804-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="18804-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b22fa-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b22fa-106">Properties</span></span>
 
-| <span data-ttu-id="18804-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="18804-107">Property</span></span>     | <span data-ttu-id="18804-108">Тип</span><span class="sxs-lookup"><span data-stu-id="18804-108">Type</span></span>        | <span data-ttu-id="18804-109">Описание</span><span class="sxs-lookup"><span data-stu-id="18804-109">Description</span></span> |
+| <span data-ttu-id="b22fa-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="b22fa-107">Property</span></span>     | <span data-ttu-id="b22fa-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b22fa-108">Type</span></span>        | <span data-ttu-id="b22fa-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b22fa-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="18804-110">инклудеусерс</span><span class="sxs-lookup"><span data-stu-id="18804-110">includeUsers</span></span> | <span data-ttu-id="18804-111">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="18804-111">String collection</span></span> | <span data-ttu-id="18804-112">Идентификаторы пользователей в области применения политики, если явно не исключены, или или `None` `All` `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="18804-112">User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers`.</span></span> |
-| <span data-ttu-id="18804-113">ексклудеусерс</span><span class="sxs-lookup"><span data-stu-id="18804-113">excludeUsers</span></span> | <span data-ttu-id="18804-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="18804-114">String collection</span></span> | <span data-ttu-id="18804-115">Идентификаторы пользователей, исключенные из области применения политики и/или `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="18804-115">User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`.</span></span> |
-| <span data-ttu-id="18804-116">инклудеграупс</span><span class="sxs-lookup"><span data-stu-id="18804-116">includeGroups</span></span> | <span data-ttu-id="18804-117">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="18804-117">String collection</span></span> | <span data-ttu-id="18804-118">Идентификаторы групп в области политики, если явно не исключены, или `All` .</span><span class="sxs-lookup"><span data-stu-id="18804-118">Group IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
-| <span data-ttu-id="18804-119">ексклудеграупс</span><span class="sxs-lookup"><span data-stu-id="18804-119">excludeGroups</span></span> | <span data-ttu-id="18804-120">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="18804-120">String collection</span></span> | <span data-ttu-id="18804-121">Идентификаторы групп, исключенные из области применения политики.</span><span class="sxs-lookup"><span data-stu-id="18804-121">Group IDs excluded from scope of policy.</span></span> |
-| <span data-ttu-id="18804-122">инклудеролес</span><span class="sxs-lookup"><span data-stu-id="18804-122">includeRoles</span></span> | <span data-ttu-id="18804-123">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="18804-123">String collection</span></span> | <span data-ttu-id="18804-124">Идентификаторы ролей в области применения политики, если они явно не исключены, или `All` .</span><span class="sxs-lookup"><span data-stu-id="18804-124">Role IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
-| <span data-ttu-id="18804-125">ексклудеролес</span><span class="sxs-lookup"><span data-stu-id="18804-125">excludeRoles</span></span> | <span data-ttu-id="18804-126">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="18804-126">String collection</span></span> | <span data-ttu-id="18804-127">Идентификаторы ролей, исключенные из области применения политики.</span><span class="sxs-lookup"><span data-stu-id="18804-127">Role IDs excluded from scope of policy.</span></span> |
+| <span data-ttu-id="b22fa-110">includeUsers</span><span class="sxs-lookup"><span data-stu-id="b22fa-110">includeUsers</span></span> | <span data-ttu-id="b22fa-111">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="b22fa-111">String collection</span></span> | <span data-ttu-id="b22fa-112">User IDs in scope of policy unless explicitly excluded, or `None` `All` or or `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="b22fa-112">User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers`.</span></span> |
+| <span data-ttu-id="b22fa-113">excludeUsers</span><span class="sxs-lookup"><span data-stu-id="b22fa-113">excludeUsers</span></span> | <span data-ttu-id="b22fa-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="b22fa-114">String collection</span></span> | <span data-ttu-id="b22fa-115">ИД пользователей, исключенных из области действия политики и/или `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="b22fa-115">User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`.</span></span> |
+| <span data-ttu-id="b22fa-116">includeGroups</span><span class="sxs-lookup"><span data-stu-id="b22fa-116">includeGroups</span></span> | <span data-ttu-id="b22fa-117">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="b22fa-117">String collection</span></span> | <span data-ttu-id="b22fa-118">Групповые ИД в области политики, если явно не исключены, или `All` .</span><span class="sxs-lookup"><span data-stu-id="b22fa-118">Group IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
+| <span data-ttu-id="b22fa-119">excludeGroups</span><span class="sxs-lookup"><span data-stu-id="b22fa-119">excludeGroups</span></span> | <span data-ttu-id="b22fa-120">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="b22fa-120">String collection</span></span> | <span data-ttu-id="b22fa-121">ИД группы, исключенные из области действия политики.</span><span class="sxs-lookup"><span data-stu-id="b22fa-121">Group IDs excluded from scope of policy.</span></span> |
+| <span data-ttu-id="b22fa-122">includeRoles</span><span class="sxs-lookup"><span data-stu-id="b22fa-122">includeRoles</span></span> | <span data-ttu-id="b22fa-123">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="b22fa-123">String collection</span></span> | <span data-ttu-id="b22fa-124">ИД ролей в области политики, если явно не исключено, или `All` .</span><span class="sxs-lookup"><span data-stu-id="b22fa-124">Role IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
+| <span data-ttu-id="b22fa-125">excludeRoles</span><span class="sxs-lookup"><span data-stu-id="b22fa-125">excludeRoles</span></span> | <span data-ttu-id="b22fa-126">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="b22fa-126">String collection</span></span> | <span data-ttu-id="b22fa-127">ИД ролей, исключенные из области действия политики.</span><span class="sxs-lookup"><span data-stu-id="b22fa-127">Role IDs excluded from scope of policy.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="18804-128">Связи</span><span class="sxs-lookup"><span data-stu-id="18804-128">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="b22fa-128">Связи</span><span class="sxs-lookup"><span data-stu-id="b22fa-128">Relationships</span></span>
 
-<span data-ttu-id="18804-129">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="18804-129">None.</span></span>
+<span data-ttu-id="b22fa-129">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="b22fa-129">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="18804-130">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="18804-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b22fa-130">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b22fa-130">JSON representation</span></span>
 
-<span data-ttu-id="18804-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="18804-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b22fa-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b22fa-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

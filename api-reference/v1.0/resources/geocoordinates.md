@@ -5,24 +5,24 @@ ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 description: Ресурс GeoCoordinates предоставляет географические координаты и высоту расположения в соответствии с метаданными файла.
-ms.prod: ''
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: c96420fedf0a0b89dd64881417af29e6178bbdc3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 048fefc8938a789a0aae06f3dd6f50c25c305c31
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018233"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130510"
 ---
-# <a name="geocoordinates-resource-type"></a><span data-ttu-id="34a9c-103">Тип ресурса GeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="34a9c-103">GeoCoordinates resource type</span></span>
+# <a name="geocoordinates-resource-type"></a><span data-ttu-id="3aa6b-103">Тип ресурса GeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="3aa6b-103">GeoCoordinates resource type</span></span>
 
-<span data-ttu-id="34a9c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="34a9c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3aa6b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3aa6b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="34a9c-p101">Ресурс **GeoCoordinates** предоставляет географические координаты и высоту расположения в соответствии с метаданными файла. Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **location**, то этот ресурс представляет файл, с которым связано известное расположение.</span><span class="sxs-lookup"><span data-stu-id="34a9c-p101">The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file. If a [**DriveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.</span></span>
+<span data-ttu-id="3aa6b-p101">Ресурс **GeoCoordinates** предоставляет географические координаты и высоту расположения в соответствии с метаданными файла. Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **location**, то этот ресурс представляет файл, с которым связано известное расположение.</span><span class="sxs-lookup"><span data-stu-id="3aa6b-p101">The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file. If a [**DriveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="34a9c-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="34a9c-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3aa6b-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3aa6b-107">JSON representation</span></span>
 
-<span data-ttu-id="34a9c-108">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="34a9c-108">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3aa6b-108">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="3aa6b-108">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,17 +40,17 @@ ms.locfileid: "48018233"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="34a9c-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="34a9c-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3aa6b-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="3aa6b-109">Properties</span></span>
 
-| <span data-ttu-id="34a9c-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="34a9c-110">Property</span></span>  | <span data-ttu-id="34a9c-111">Тип</span><span class="sxs-lookup"><span data-stu-id="34a9c-111">Type</span></span>   | <span data-ttu-id="34a9c-112">Описание</span><span class="sxs-lookup"><span data-stu-id="34a9c-112">Description</span></span>
+| <span data-ttu-id="3aa6b-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="3aa6b-110">Property</span></span>  | <span data-ttu-id="3aa6b-111">Тип</span><span class="sxs-lookup"><span data-stu-id="3aa6b-111">Type</span></span>   | <span data-ttu-id="3aa6b-112">Описание</span><span class="sxs-lookup"><span data-stu-id="3aa6b-112">Description</span></span>
 |:----------|:-------|:--------------------------------------------------------
-| <span data-ttu-id="34a9c-113">altitude</span><span class="sxs-lookup"><span data-stu-id="34a9c-113">altitude</span></span>  | <span data-ttu-id="34a9c-114">Double</span><span class="sxs-lookup"><span data-stu-id="34a9c-114">Double</span></span> | <span data-ttu-id="34a9c-p102">Необязательный. Высота элемента над уровнем моря (в футах). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="34a9c-p102">Optional. The altitude (height), in feet,  above sea level for the item. Read-only.</span></span>
-| <span data-ttu-id="34a9c-118">latitude</span><span class="sxs-lookup"><span data-stu-id="34a9c-118">latitude</span></span>  | <span data-ttu-id="34a9c-119">Double</span><span class="sxs-lookup"><span data-stu-id="34a9c-119">Double</span></span> | <span data-ttu-id="34a9c-p103">Необязательный. Широта элемента (в десятичной системе). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="34a9c-p103">Optional. The latitude, in decimal, for the item. Read-only.</span></span>
-| <span data-ttu-id="34a9c-123">longitude</span><span class="sxs-lookup"><span data-stu-id="34a9c-123">longitude</span></span> | <span data-ttu-id="34a9c-124">Double</span><span class="sxs-lookup"><span data-stu-id="34a9c-124">Double</span></span> | <span data-ttu-id="34a9c-p104">Необязательный. Широта элемента (в десятичном виде). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="34a9c-p104">Optional. The longitude, in decimal, for the item. Read-only.</span></span>
+| <span data-ttu-id="3aa6b-113">altitude</span><span class="sxs-lookup"><span data-stu-id="3aa6b-113">altitude</span></span>  | <span data-ttu-id="3aa6b-114">Double</span><span class="sxs-lookup"><span data-stu-id="3aa6b-114">Double</span></span> | <span data-ttu-id="3aa6b-p102">Необязательный. Высота элемента над уровнем моря (в футах). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3aa6b-p102">Optional. The altitude (height), in feet,  above sea level for the item. Read-only.</span></span>
+| <span data-ttu-id="3aa6b-118">latitude</span><span class="sxs-lookup"><span data-stu-id="3aa6b-118">latitude</span></span>  | <span data-ttu-id="3aa6b-119">Double</span><span class="sxs-lookup"><span data-stu-id="3aa6b-119">Double</span></span> | <span data-ttu-id="3aa6b-p103">Необязательный. Широта элемента (в десятичной системе). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3aa6b-p103">Optional. The latitude, in decimal, for the item. Read-only.</span></span>
+| <span data-ttu-id="3aa6b-123">longitude</span><span class="sxs-lookup"><span data-stu-id="3aa6b-123">longitude</span></span> | <span data-ttu-id="3aa6b-124">Double</span><span class="sxs-lookup"><span data-stu-id="3aa6b-124">Double</span></span> | <span data-ttu-id="3aa6b-p104">Необязательный. Широта элемента (в десятичном виде). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3aa6b-p104">Optional. The longitude, in decimal, for the item. Read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="34a9c-128">Заметки</span><span class="sxs-lookup"><span data-stu-id="34a9c-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3aa6b-128">Заметки</span><span class="sxs-lookup"><span data-stu-id="3aa6b-128">Remarks</span></span>
 
-<span data-ttu-id="34a9c-129">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="34a9c-129">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="3aa6b-129">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="3aa6b-129">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 <!-- {
   "type": "#page.annotation",

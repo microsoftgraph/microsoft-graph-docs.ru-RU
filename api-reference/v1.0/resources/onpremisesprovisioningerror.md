@@ -1,34 +1,34 @@
 ---
 title: Тип ресурса onPremisesProvisioningError
-description: Представляет ошибки синхронизации каталогов для группы пользователей и контактных ресурсов при синхронизации локальных каталогов с Azure Active Directory.
+description: Представляет ошибки синхронизации службы каталогов для группы пользователей и контактных ресурсов при синхронизации локального каталога с Azure Active Directory.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 719bb525fad934bb92f44fb427d1214bf288ec46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2647e32653d26793b4f875bb47ce43e83a294c4a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133332"
 ---
-# <a name="onpremisesprovisioningerror-resource-type"></a><span data-ttu-id="12c4d-103">Тип ресурса onPremisesProvisioningError</span><span class="sxs-lookup"><span data-stu-id="12c4d-103">onPremisesProvisioningError resource type</span></span>
+# <a name="onpremisesprovisioningerror-resource-type"></a><span data-ttu-id="21d38-103">Тип ресурса onPremisesProvisioningError</span><span class="sxs-lookup"><span data-stu-id="21d38-103">onPremisesProvisioningError resource type</span></span>
 
-<span data-ttu-id="12c4d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="12c4d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="21d38-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="21d38-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="12c4d-105">Представляет ошибки синхронизации каталогов для [пользователей](user.md), [групп](group.md) и [orgContact](orgcontact.md) ресурсов при синхронизации локальных каталогов с Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="12c4d-105">Represents directory synchronization errors for the [user](user.md), [group](group.md) and [orgContact](orgcontact.md) resources when synchronizing on-premises directories to Azure Active Directory.</span></span>
+<span data-ttu-id="21d38-105">Представляет ошибки синхронизации службы каталогов для ресурсов [user,](user.md) [group](group.md) и [orgContact](orgcontact.md) при синхронизации локального каталога с Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="21d38-105">Represents directory synchronization errors for the [user](user.md), [group](group.md) and [orgContact](orgcontact.md) resources when synchronizing on-premises directories to Azure Active Directory.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="12c4d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="12c4d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="21d38-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="21d38-106">Properties</span></span>
 
-| <span data-ttu-id="12c4d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="12c4d-107">Property</span></span> | <span data-ttu-id="12c4d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="12c4d-108">Type</span></span> | <span data-ttu-id="12c4d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="12c4d-109">Description</span></span> |
+| <span data-ttu-id="21d38-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="21d38-107">Property</span></span> | <span data-ttu-id="21d38-108">Тип</span><span class="sxs-lookup"><span data-stu-id="21d38-108">Type</span></span> | <span data-ttu-id="21d38-109">Описание</span><span class="sxs-lookup"><span data-stu-id="21d38-109">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="12c4d-110">category</span><span class="sxs-lookup"><span data-stu-id="12c4d-110">category</span></span>|<span data-ttu-id="12c4d-111">String</span><span class="sxs-lookup"><span data-stu-id="12c4d-111">String</span></span>| <span data-ttu-id="12c4d-112">Категория ошибки подготовки.</span><span class="sxs-lookup"><span data-stu-id="12c4d-112">Category of the provisioning error.</span></span> <span data-ttu-id="12c4d-113">Примечание. в настоящее время существует только одно возможное значение.</span><span class="sxs-lookup"><span data-stu-id="12c4d-113">Note: Currently, there is only one possible value.</span></span> <span data-ttu-id="12c4d-114">Возможное значение: *пропертиконфликт* — указывает, что значение свойства не является уникальным.</span><span class="sxs-lookup"><span data-stu-id="12c4d-114">Possible value: *PropertyConflict* - indicates a property value is not unique.</span></span> <span data-ttu-id="12c4d-115">Другие объекты содержат одно и то же значение свойства.</span><span class="sxs-lookup"><span data-stu-id="12c4d-115">Other objects contain the same value for the property.</span></span> |
-|<span data-ttu-id="12c4d-116">оккурреддатетиме</span><span class="sxs-lookup"><span data-stu-id="12c4d-116">occurredDateTime</span></span>|<span data-ttu-id="12c4d-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="12c4d-117">DateTimeOffset</span></span>| <span data-ttu-id="12c4d-118">Дата и время возникновения ошибки.</span><span class="sxs-lookup"><span data-stu-id="12c4d-118">The date and time at which the error occurred.</span></span> |
-|<span data-ttu-id="12c4d-119">пропертикаусинжеррор</span><span class="sxs-lookup"><span data-stu-id="12c4d-119">propertyCausingError</span></span>|<span data-ttu-id="12c4d-120">String</span><span class="sxs-lookup"><span data-stu-id="12c4d-120">String</span></span>| <span data-ttu-id="12c4d-121">Имя свойства каталога, вызвавшего ошибку.</span><span class="sxs-lookup"><span data-stu-id="12c4d-121">Name of the directory property causing the error.</span></span> <span data-ttu-id="12c4d-122">Текущие возможные значения: *userPrincipalName* или *proxyAddress*</span><span class="sxs-lookup"><span data-stu-id="12c4d-122">Current possible values: *UserPrincipalName* or *ProxyAddress*</span></span> |
-|<span data-ttu-id="12c4d-123">value</span><span class="sxs-lookup"><span data-stu-id="12c4d-123">value</span></span>|<span data-ttu-id="12c4d-124">String</span><span class="sxs-lookup"><span data-stu-id="12c4d-124">String</span></span>| <span data-ttu-id="12c4d-125">Значение свойства, вызвавшего ошибку.</span><span class="sxs-lookup"><span data-stu-id="12c4d-125">Value of the property causing the error.</span></span> |
+|<span data-ttu-id="21d38-110">category</span><span class="sxs-lookup"><span data-stu-id="21d38-110">category</span></span>|<span data-ttu-id="21d38-111">String</span><span class="sxs-lookup"><span data-stu-id="21d38-111">String</span></span>| <span data-ttu-id="21d38-112">Категория ошибки при предоставлении.</span><span class="sxs-lookup"><span data-stu-id="21d38-112">Category of the provisioning error.</span></span> <span data-ttu-id="21d38-113">Примечание. В настоящее время существует только одно возможное значение.</span><span class="sxs-lookup"><span data-stu-id="21d38-113">Note: Currently, there is only one possible value.</span></span> <span data-ttu-id="21d38-114">Возможное значение: *PropertyConflict* — указывает, что значение свойства не уникально.</span><span class="sxs-lookup"><span data-stu-id="21d38-114">Possible value: *PropertyConflict* - indicates a property value is not unique.</span></span> <span data-ttu-id="21d38-115">Другие объекты содержат такое же значение свойства.</span><span class="sxs-lookup"><span data-stu-id="21d38-115">Other objects contain the same value for the property.</span></span> |
+|<span data-ttu-id="21d38-116">occurredDateTime</span><span class="sxs-lookup"><span data-stu-id="21d38-116">occurredDateTime</span></span>|<span data-ttu-id="21d38-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="21d38-117">DateTimeOffset</span></span>| <span data-ttu-id="21d38-118">Дата и время, когда произошла ошибка.</span><span class="sxs-lookup"><span data-stu-id="21d38-118">The date and time at which the error occurred.</span></span> |
+|<span data-ttu-id="21d38-119">propertyCausingError</span><span class="sxs-lookup"><span data-stu-id="21d38-119">propertyCausingError</span></span>|<span data-ttu-id="21d38-120">String</span><span class="sxs-lookup"><span data-stu-id="21d38-120">String</span></span>| <span data-ttu-id="21d38-121">Имя свойства каталога, вызываемого ошибкой.</span><span class="sxs-lookup"><span data-stu-id="21d38-121">Name of the directory property causing the error.</span></span> <span data-ttu-id="21d38-122">Текущие возможные значения: *UserPrincipalName* или *ProxyAddress*</span><span class="sxs-lookup"><span data-stu-id="21d38-122">Current possible values: *UserPrincipalName* or *ProxyAddress*</span></span> |
+|<span data-ttu-id="21d38-123">value</span><span class="sxs-lookup"><span data-stu-id="21d38-123">value</span></span>|<span data-ttu-id="21d38-124">String</span><span class="sxs-lookup"><span data-stu-id="21d38-124">String</span></span>| <span data-ttu-id="21d38-125">Значение свойства, вызываемого ошибкой.</span><span class="sxs-lookup"><span data-stu-id="21d38-125">Value of the property causing the error.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="12c4d-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="12c4d-126">JSON representation</span></span>
-<span data-ttu-id="12c4d-127">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="12c4d-127">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="21d38-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="21d38-126">JSON representation</span></span>
+<span data-ttu-id="21d38-127">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="21d38-127">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
