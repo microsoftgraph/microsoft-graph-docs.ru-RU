@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b4ecb9ebf2b022ebdddd41e5b63595b55ca49154
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3a8b5110682815a54878a104b69ed0552ca6548e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132890"
 ---
 # <a name="delete-a-user"></a>Удалить пользователя
 
@@ -29,6 +29,12 @@ ms.locfileid: "48037953"
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All |
+
+Рабочая или учебная учетная запись должна использоваться в одной из следующих ролей:
++ Глобальный администратор
++ Администратор пользователей
+
+Только глобальный администратор может удалить пользователя в роли глобального администратора или _любого_ пользователя в клиенте. Администратор пользователей может удалять только тех пользователей, которые не являются администраторами, или пользователей в роли с ограниченными правами. Дополнительные сведения см. в разделе [Разрешения для роли администратора в Azure AD](/azure/active-directory/roles/permissions-reference#available-roles)
 
 ## <a name="http-request"></a>HTTP-запрос
 
