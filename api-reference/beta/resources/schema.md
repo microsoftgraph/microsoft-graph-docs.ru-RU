@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса схемы
-description: Схема подключения определяет, как контент, добавляемый в подключение, будет использоваться в различных интерфейсах Microsoft Graph.
+description: Схема подключения определяет, как содержимое, добавленное в подключение, будет использоваться в различных решениях Microsoft Graph.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ff14f04adb31d99aadec15cb9368e09a098c7a26
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 88509a885a528f9ef2d55cd84381db493e128003
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192870"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156359"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "48192870"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Схема [подключения](externalconnection.md) определяет, как внешнее содержимое будет использоваться в различных интерфейсах Microsoft Graph. Schema — это плоский список всех свойств, которые вы планируете добавить к подключению вместе с их атрибутами, метками и псевдонимами. Перед добавлением элементов в подключение необходимо зарегистрировать схему.
+Схема [подключения](externalconnection.md) определяет, как внешний контент будет использоваться в различных решениях Microsoft Graph. Схема — это плоский список всех свойств, которые вы планируете добавить в связь, а также их атрибуты, метки и псевдонимы. Перед добавлением элементов в связь вы должны зарегистрировать схему.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -26,15 +26,15 @@ ms.locfileid: "48192870"
 
 | Метод                                                    | Возвращаемый тип                   | Описание |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [Создание схемы](../api/externalconnection-post-schema.md) | Нет *или* [схема](schema.md) | Регистрация схемы подключения. |
-| [Получение схемы](../api/schema-get.md)                        | [schema](schema.md)           | Чтение свойств объекта Schema. |
+| [Создание схемы](../api/externalconnection-post-schema.md) | Нет *или* [схема](schema.md) | Зарегистрируйте схему подключения. |
+| [Получение схемы](../api/schema-get.md)                        | [schema](schema.md)           | Чтение свойств объекта схемы. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип                               | Описание                |
 |:-----------|:-----------------------------------|:---------------------------|
 | baseType   | String                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательно. |
-| properties | Коллекция [свойств](property.md) | Свойства, заданные для элементов в подключении. Минимальное число свойств — 1, максимальное — 128. |
+| properties | [коллекция свойств](property.md) | Свойства, определенные для элементов подключения. Минимальное число свойств — одно, максимальное — 128. |
 
 ## <a name="relationships"></a>Связи
 
@@ -50,7 +50,6 @@ ms.locfileid: "48192870"
 
   ],
   "@odata.type": "microsoft.graph.schema",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

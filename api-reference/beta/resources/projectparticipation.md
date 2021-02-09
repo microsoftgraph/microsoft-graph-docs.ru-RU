@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса ПрожектпартиЦипатион
-description: Тип ресурса ПрожектпартиЦипатион
+title: Тип ресурса projectParticipation
+description: Тип ресурса projectParticipation
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 72d36f21a156fd6239dd8466808b1fe6ba2e6889
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d349b33dc3325451e97d055c178082676b48de3
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078299"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156366"
 ---
-# <a name="projectparticipation-resource-type"></a>Тип ресурса ПрожектпартиЦипатион
+# <a name="projectparticipation-resource-type"></a>Тип ресурса projectParticipation
 
 Пространство имен: microsoft.graph
 
@@ -20,38 +20,38 @@ ms.locfileid: "48078299"
 
 Представляет подробные сведения о проектах, связанных с пользователем.
 
-Наследуется от [итемфацет](itemfacet.md).
+Наследуется от [itemFacet.](itemfacet.md)
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список проектов](../api/profile-list-projects.md)|Коллекция [прожектпартиЦипатион](../resources/projectparticipation.md)|Получение ресурсов ПрожектпартиЦипатион из свойства навигации Projects.|
-|[Создание ПрожектпартиЦипатион](../api/profile-post-projects.md)|[прожектпартиЦипатион](../resources/projectparticipation.md)|Создание нового объекта ПрожектпартиЦипатион.|
-|[Получение ПрожектпартиЦипатион](../api/projectparticipation-get.md)|[прожектпартиЦипатион](../resources/projectparticipation.md)|Чтение свойств и связей объекта [прожектпартиЦипатион](../resources/projectparticipation.md) .|
-|[Обновление ПрожектпартиЦипатион](../api/projectparticipation-update.md)|[прожектпартиЦипатион](../resources/projectparticipation.md)|Обновление свойств объекта [прожектпартиЦипатион](../resources/projectparticipation.md) .|
-|[Удаление ПрожектпартиЦипатион](../api/projectparticipation-delete.md)|Нет|Удаляет объект [прожектпартиЦипатион](../resources/projectparticipation.md) .|
+|[Список проектов](../api/profile-list-projects.md)|[Коллекция projectParticipation](../resources/projectparticipation.md)|Получите ресурсы projectParticipation из свойства навигации проектов.|
+|[Создание projectParticipation](../api/profile-post-projects.md)|[projectParticipation](../resources/projectparticipation.md)|Создание объекта projectParticipation.|
+|[Get projectParticipation](../api/projectparticipation-get.md)|[projectParticipation](../resources/projectparticipation.md)|Чтение свойств и связей объекта [projectParticipation.](../resources/projectparticipation.md)|
+|[Обновление projectParticipation](../api/projectparticipation-update.md)|[projectParticipation](../resources/projectparticipation.md)|Обновление свойств объекта [projectParticipation.](../resources/projectparticipation.md)|
+|[Удаление projectParticipation](../api/projectparticipation-delete.md)|Нет|Удаляет объект [projectParticipation.](../resources/projectparticipation.md)|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Содержит категории, связанные с проектом пользователем (например, цифровое преобразование, гидростенд). |
-|Клиенты|[компанидетаил](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для которого выполнялся проект. |
-|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
-|коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Список людей, которые также работали над проектом. |
-|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о роли пользователя в проекте.|
-|displayName|String|Содержит понятное имя проекта.|
-|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|спонсорами|Коллекция [релатедперсон](../resources/relatedperson.md)|Пользователь или люди, которые спонсорируют проект.    |
-## <a name="relationships"></a>Отношения
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Наследуется [от itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, связанные с проектом пользователем (например, цифровая трансформация, оснастка). |
+|client|[companyDetail](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для который был проект. |
+|collaborationTags|Коллекция String|Содержит теги сценария работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , , `wantsToLearn` `wantsToImprove` .|
+|colleagues|[коллекция relatedPerson](../resources/relatedperson.md)|Перечисляет людей, которые также работали над проектом. |
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создав объект. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет dateTimeOffset для времени создания сущности. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|detail|[positionDetail](../resources/positiondetail.md)|Содержит сведения о роли пользователя в проекте.|
+|displayName|String|Содержит удобное имя проекта.|
+|id|String|Идентификатор, используемый для индивидуального обращения к объекту. Наследуется [от объекта](../resources/entity.md)|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если сущность создается или изменяется приложением. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которые в последний раз изменили сущность. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет dateTimeOffset для времени создания сущности. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникают, если синхронизированы из другой службы. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|sponsors|[коллекция relatedPerson](../resources/relatedperson.md)|Лицо или люди, которые спонсировали проект.    |
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -64,8 +64,7 @@ ms.locfileid: "48078299"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.projectParticipation",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.projectParticipation"
 }-->
 
 ```json

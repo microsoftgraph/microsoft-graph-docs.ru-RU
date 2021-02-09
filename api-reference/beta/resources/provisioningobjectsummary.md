@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e51a3a5e184fae0c5c35e01b5a0b23494f63edc7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2b1add3f614fd05060df2dfc45b84a46f19dd134
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135375"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156352"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>Тип ресурса provisioningObjectSummary
 
@@ -31,14 +31,14 @@ ms.locfileid: "50135375"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|action|Строка|Указывает имя действия или имя операции (например, "Создать пользователя", "Добавить участника в группу"). Список зарегистрированных действий можно найти в списке действий Azure AD.|
+|action|String|Указывает имя действия или имя операции (например, "Создать пользователя", "Добавить участника в группу"). Список зарегистрированных действий можно найти в списке действий Azure AD.|
 |activityDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|changeId|Строка|Уникальный ИД этого изменения в этом цикле.|
-|cycleId|Строка|Уникальный ИД для итерации задания.|
+|changeId|String|Уникальный ИД этого изменения в этом цикле.|
+|cycleId|String|Уникальный ИД для итерации задания.|
 |durationInMilliseconds|Int32|Указывает, сколько времени потребовалось для завершения этого действия. Измеряется в миллисекунах.|
 |id|String| Указывает уникальный идентификатор для действия. Это GUID только для чтения.|
 |initiatedBy|[initiator](initiator.md)|Сведения о том, кто инициировал эту подготовка.|
-|jobId|Строка|Уникальный ИД для всего задания по обеспечению.|
+|jobId|String|Уникальный ИД для всего задания по обеспечению.|
 |modifiedProperties|[Коллекция modifiedProperty](modifiedproperty.md)|Сведения о каждом свойстве, которое было изменено в этом действии по обеспечению этого объекта.|
 |provisioningSteps|[Коллекция provisioningStep](provisioningstep.md)|Подробные сведения о каждом шаге в предоставлении.|
 |servicePrincipal|Коллекция [servicePrincipal](serviceprincipal.md)|Представляет основной сервис, используемый для предоставления.|
@@ -63,7 +63,6 @@ ms.locfileid: "50135375"
 
   ],
   "@odata.type": "microsoft.graph.provisioningObjectSummary",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

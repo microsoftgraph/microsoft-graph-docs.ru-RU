@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Усерекспериенцеаналитиксоператингсистемрестарткатегори
+title: Тип enum userExperienceAnalyticsOperatingSystemRestartCategory
 description: Категория перезапуска операционной системы
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9768f77cacb98436b947a516a4ce769798679f1a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d298545fae20b123440b86a475b713686ae65ea4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226365"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156814"
 ---
-# <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>тип перечисления Усерекспериенцеаналитиксоператингсистемрестарткатегори
+# <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>Тип enum userExperienceAnalyticsOperatingSystemRestartCategory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,14 +25,15 @@ ms.locfileid: "49226365"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Неизвестно|
-|рестартвисупдате|1,1|Перезапуск с обновлением|
-|рестартвисаутупдате|2|Перезагрузка без обновления|
-|блуескрин|4|Перезагрузка синего экрана|
-|шутдовнвисупдате|4 |Завершение работы с обновлением|
-|шутдовнвисаутупдате|5 |Завершение работы без обновления|
-|лонгповербуттонпресс|6 |Нажатие кнопки длительного энергопотребления|
-|бутеррор|7 |Ошибка загрузки|
+|unknown|0|Неизвестно|
+|restartWithUpdate|1 |Перезапуск с обновлением|
+|restartWithoutUpdate|2 |Перезапуск без обновления|
+|blueScreen|3 |Перезапуск синего экрана|
+|shutdownWithUpdate|4 |Завершение работы с обновлением|
+|shutdownWithoutUpdate|5 |Завершение работы без обновления|
+|longPowerButtonPress|6 |Длинное нажатие кнопки питания|
+|bootError|7 |Ошибка загрузки|
+|update|8 |Update|
 
 
 

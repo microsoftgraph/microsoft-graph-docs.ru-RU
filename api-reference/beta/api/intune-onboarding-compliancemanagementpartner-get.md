@@ -1,26 +1,26 @@
 ---
-title: Получение Комплианцеманажементпартнер
-description: Чтение свойств и связей объекта Комплианцеманажементпартнер.
+title: Get complianceManagementPartner
+description: Чтение свойств и связей объекта complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a37d8be96299982c9f56ae79e3f200b20b665892
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5f62404cbffa5a7e7755d7656acb67781d9b7fc3
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49305794"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156926"
 ---
-# <a name="get-compliancemanagementpartner"></a>Получение Комплианцеманажементпартнер
+# <a name="get-compliancemanagementpartner"></a>Get complianceManagementPartner
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .
+Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -53,7 +53,7 @@ GET /deviceManagement/complianceManagementPartners/{complianceManagementPartnerI
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/complianceManagementPartne
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2110
+Content-Length: 2390
 
 {
   "value": {
@@ -85,9 +85,10 @@ Content-Length: 2110
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
           "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-          "deviceAndAppManagementAssignmentFilterType": "include"
+          "deviceAndAppManagementAssignmentFilterType": "include",
+          "collectionId": "Collection Id value"
         }
       }
     ],
@@ -95,9 +96,10 @@ Content-Length: 2110
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
           "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-          "deviceAndAppManagementAssignmentFilterType": "include"
+          "deviceAndAppManagementAssignmentFilterType": "include",
+          "collectionId": "Collection Id value"
         }
       }
     ],
@@ -105,9 +107,10 @@ Content-Length: 2110
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
           "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-          "deviceAndAppManagementAssignmentFilterType": "include"
+          "deviceAndAppManagementAssignmentFilterType": "include",
+          "collectionId": "Collection Id value"
         }
       }
     ],
@@ -115,9 +118,10 @@ Content-Length: 2110
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
           "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-          "deviceAndAppManagementAssignmentFilterType": "include"
+          "deviceAndAppManagementAssignmentFilterType": "include",
+          "collectionId": "Collection Id value"
         }
       }
     ]

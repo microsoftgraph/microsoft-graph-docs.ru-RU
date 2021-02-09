@@ -1,53 +1,53 @@
 ---
-title: Тип ресурса Мобилеаппполицисетитем
-description: Класс, содержащий свойства, используемые для мобильного приложения Полицисетитем.
+title: Тип ресурса mobileAppPolicySetItem
+description: Класс, содержащий свойства, используемые для объекта PolicySetItem мобильного приложения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ad2bb5ae18b6b91590c7f9b11e1fe78a2735e4d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7e05859971181518d9ab457f612df7e2400206b2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288056"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156772"
 ---
-# <a name="mobileapppolicysetitem-resource-type"></a>Тип ресурса Мобилеаппполицисетитем
+# <a name="mobileapppolicysetitem-resource-type"></a>Тип ресурса mobileAppPolicySetItem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, содержащий свойства, используемые для мобильного приложения Полицисетитем.
+Класс, содержащий свойства, используемые для объекта PolicySetItem мобильного приложения.
 
 
-Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)
+Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Мобилеаппполицисетитемс](../api/intune-policyset-mobileapppolicysetitem-list.md)|Коллекция [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md)|Список свойств и связей объектов [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) .|
-|[Получение Мобилеаппполицисетитем](../api/intune-policyset-mobileapppolicysetitem-get.md)|[mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Чтение свойств и связей объекта [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) .|
-|[Создание Мобилеаппполицисетитем](../api/intune-policyset-mobileapppolicysetitem-create.md)|[mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Создание нового объекта [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) .|
-|[Удаление Мобилеаппполицисетитем](../api/intune-policyset-mobileapppolicysetitem-delete.md)|Нет|Удаляет объект [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md).|
-|[Обновление Мобилеаппполицисетитем](../api/intune-policyset-mobileapppolicysetitem-update.md)|[mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Обновление свойств объекта [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) .|
+|[Список mobileAppPolicySetItems](../api/intune-policyset-mobileapppolicysetitem-list.md)|[Коллекция mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Список свойств и связей объектов [mobileAppPolicySetItem.](../resources/intune-policyset-mobileapppolicysetitem.md)|
+|[Get mobileAppPolicySetItem](../api/intune-policyset-mobileapppolicysetitem-get.md)|[mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Чтение свойств и связей объекта [mobileAppPolicySetItem.](../resources/intune-policyset-mobileapppolicysetitem.md)|
+|[Создание mobileAppPolicySetItem](../api/intune-policyset-mobileapppolicysetitem-create.md)|[mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Создание объекта [mobileAppPolicySetItem.](../resources/intune-policyset-mobileapppolicysetitem.md)|
+|[Удаление mobileAppPolicySetItem](../api/intune-policyset-mobileapppolicysetitem-delete.md)|Нет|Удаляет [mobileAppPolicySetItem.](../resources/intune-policyset-mobileapppolicysetitem.md)|
+|[Обновление mobileAppPolicySetItem](../api/intune-policyset-mobileapppolicysetitem-update.md)|[mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Обновление свойств объекта [mobileAppPolicySetItem.](../resources/intune-policyset-mobileapppolicysetitem.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ Мобилеаппполицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|createdDateTime|DateTimeOffset|Время создания Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|пайлоадид|String|Пайлоадид Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|itemType|String|Полицисеттипе Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|displayName|String|DisplayName объекта Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md). Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция строк|Теги управляемого развертывания, унаследованные от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|intent|[installIntent](../resources/intune-shared-installintent.md)|Установка цели Мобилеаппполицисетитем. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
-|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Параметры Мобилеаппполицисетитем.|
+|id|String|Ключ MobileAppPolicySetItem. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)|
+|createdDateTime|DateTimeOffset|Время создания policySetItem. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения policySetItem. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)|
+|payloadId|String|PayloadId для PolicySetItem. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)|
+|itemType|String|policySetType для PolicySetItem. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)|
+|displayName|String|DisplayName для PolicySetItem. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние policySetItem. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md). Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если она произошла. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|guidedDeploymentTags|Коллекция String|Теги управляемого развертывания. Наследуется [от policySetItem](../resources/intune-policyset-policysetitem.md)|
+|intent|[installIntent](../resources/intune-shared-installintent.md)|Установка намерения MobileAppPolicySetItem. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Параметры MobileAppPolicySetItem.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -78,7 +78,8 @@ ms.locfileid: "49288056"
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "String",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   }
 }
 ```

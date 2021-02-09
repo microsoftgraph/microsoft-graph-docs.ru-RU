@@ -1,15 +1,15 @@
 ---
-title: Управление мобильными приложениями с помощью Microsoft Intune API Microsoft Graph
+title: 'Управление мобильными приложениями с помощью Microsoft Intune : API Microsoft Graph'
 description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), связанных с управлением мобильными приложениями (MAM) для организации клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 62a3b0e9751acaa552dc1deed037bb3356cfce0b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9ccf992c534e26b9f24e3fd0f3e56d08b3603f90
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702392"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155918"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -21,14 +21,14 @@ ms.locfileid: "48702392"
 
 Политики защиты приложений в Microsoft Intune помогают защитить корпоративные данные и предотвратить потерю данных.
 
-Политики защиты приложений в Intune используются для защиты корпоративных данных. Так как политики защиты приложений Intune могут использоваться независимо от решения для управления мобильными устройствами (MDM), вы можете использовать ее для защиты данных вашей компании от регистрации устройств в решении для управления устройствами или без них. Внедрив политики уровня приложения, вы можете ограничить доступ к корпоративным ресурсам и оставить данные в поле зрения ИТ-отдела.
+Политики защиты приложений в Intune используются для защиты корпоративных данных. Так как политики защиты приложений Intune можно использовать независимо от любого решения для управления мобильными устройствами (MDM), их можно использовать для защиты данных компании с помощью или без регистрации устройств в решении для управления устройствами. Внедрив политики уровня приложения, вы можете ограничить доступ к корпоративным ресурсам и оставить данные в поле зрения ИТ-отдела.
 
 Для управления политиками защиты приложений в Intune используются перечисленные ниже ресурсы Graph.
 
 - [Регистрация управляемых приложений для Android](intune-mam-androidmanagedappregistration.md)
 - [Тип проверки приложений системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Тип аттестации устройства системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
-- [Тип оценки сети безопасности управляемого приложения Android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
+- [Тип оценки сети безопасности управляемых приложений для Android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Идентификатор мобильных приложений для Android](intune-mam-androidmobileappidentifier.md)
 - [Уровень управления приложениями](intune-mam-appmanagementlevel.md)
 - [Тип приложения](intune-wip-applicationtype.md)
@@ -38,18 +38,19 @@ ms.locfileid: "48702392"
 - [Регистрация управляемых приложений для iOS](intune-mam-iosmanagedappregistration.md)
 - [Идентификатор мобильных приложений для iOS](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
+- [Идентификатор приложения для Mac](intune-mam-macappidentifier.md)
 - [Уровень совместного доступа к буферу обмена управляемого приложения](intune-mam-managedappclipboardsharinglevel.md)
 - [Конфигурация управляемых приложений](intune-mam-managedappconfiguration.md)
 - [Тип шифрования данных управляемого приложения](intune-mam-managedappdataencryptiontype.md)
-- [Место приема данных для управляемого приложения](intune-mam-managedappdataingestionlocation.md)
+- [Расположение для хранения данных управляемого приложения](intune-mam-managedappdataingestionlocation.md)
 - [Место хранения данных управляемого приложения](intune-mam-managedappdatastoragelocation.md)
 - [Уровень передачи данных управляемого приложения](intune-mam-managedappdatatransferlevel.md)
-- [Уровень угроз для управляемого приложения](intune-mam-managedappdevicethreatlevel.md)
+- [Уровень угроз для устройства управляемого приложения](intune-mam-managedappdevicethreatlevel.md)
 - [Состояние диагностики управляемых приложений](intune-mam-managedappdiagnosticstatus.md)
 - [Причина пометки управляемого приложения](intune-mam-managedappflaggedreason.md)
-- [Ограничение на уведомления управляемого приложения](intune-mam-managedappnotificationrestriction.md)
+- [Ограничение уведомлений управляемого приложения](intune-mam-managedappnotificationrestriction.md)
 - [Операция управляемых приложений](intune-mam-managedappoperation.md)
-- [Уровень перенаправления для номера телефона управляемого приложения](intune-mam-managedappphonenumberredirectlevel.md)
+- [Уровень перенаправления номера телефона управляемого приложения](intune-mam-managedappphonenumberredirectlevel.md)
 - [Набор символов ПИН-кода управляемого приложения](intune-mam-managedapppincharacterset.md)
 - [Политика управляемых приложений](intune-mam-managedapppolicy.md)
 - [Сводка по развертыванию политик для управляемых приложений](intune-mam-managedapppolicydeploymentsummary.md)
@@ -64,6 +65,7 @@ ms.locfileid: "48702392"
 - [Идентификатор мобильных приложений](intune-mam-mobileappidentifier.md)
 - [Назначение целевой политики для управляемых приложений](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Целевая защита управляемых приложений](intune-mam-targetedmanagedappprotection.md)
+- [Идентификатор приложения для Windows](intune-mam-windowsappidentifier.md)
 - [Windows Information Protection](intune-mam-windowsinformationprotection.md)
 - [Приложение Windows Information Protection](intune-mam-windowsinformationprotectionapp.md)
 - [Сводка по обучению приложения Windows Information Protection](intune-wip-windowsinformationprotectionapplearningsummary.md)
