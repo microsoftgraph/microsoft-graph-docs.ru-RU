@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса Опеншифтчанжерекуест
-description: Представляет тип запроса на сдвиг для утверждения открытого сдвига в расписании.
+title: Тип ресурса openShiftChangeRequest
+description: Представляет тип запроса на смену для утверждения открытой смены в расписании.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 26dccf0d0e79e2f0427f07035ee31e5480c52b95
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e141dcb6657c9efc7d751b1713aa8b53d79c9264
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998560"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161431"
 ---
-# <a name="openshiftchangerequest-resource-type"></a>Тип ресурса Опеншифтчанжерекуест
+# <a name="openshiftchangerequest-resource-type"></a>Тип ресурса openShiftChangeRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет тип запроса на сдвиг для утверждения [опеншифт](../resources/openshift.md) по [расписанию](../resources/schedule.md).
+Представляет тип запроса на смену для утверждения [openshift](../resources/openshift.md) в [расписании.](../resources/schedule.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание](../api/openshiftchangerequest-post.md) | [опеншифтчанжерекуест](openshiftchangerequest.md) | Создайте экземпляр объекта опеншифтчанжерекуест. |
-| [List](../api/openshiftchangerequest-list.md) | Коллекция [опеншифтчанжерекуест](openshiftchangerequest.md) | Перечисление свойств и связей объектов **опеншифтчанжерекуест** в команде. |
-| [получение](../api/openshiftchangerequest-get.md); | [опеншифтчанжерекуест](openshiftchangerequest.md) | Чтение свойств и связей объекта **опеншифтчанжерекуест** . |
-|[Утвердить](../api/openshiftchangerequest-approve.md)|Нет|Утверждение запроса на изменение открытого сочетания клавиш.|
-|[Отклоня](../api/openshiftchangerequest-decline.md)|Нет| Отклонить запрос на изменение открытого Shift.|
+| [Создание](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Создание экземпляра объекта openshiftchangerequest. |
+| [Список](../api/openshiftchangerequest-list.md) | Коллекция [openshiftchangerequest](openshiftchangerequest.md) | Список свойств и связей объектов **openShiftChangeRequest** в команде. |
+| [Получение](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Чтение свойств и связей объекта **openShiftChangeRequest.** |
+|[Утвердить](../api/openshiftchangerequest-approve.md)|Нет|Утверждение запроса на изменение открытой смены.|
+|[Отклонение](../api/openshiftchangerequest-decline.md)|Нет| Отклонение запроса на изменение открытой смены.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|опеншифтид|String| Идентификатор для открытой смены.|
+|openShiftId|String| ИД для открытой смены.|
 
 ## <a name="relationships"></a>Связи
 
@@ -49,8 +49,7 @@ ms.locfileid: "47998560"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShiftChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.openShiftChangeRequest"
 }-->
 
 ```json

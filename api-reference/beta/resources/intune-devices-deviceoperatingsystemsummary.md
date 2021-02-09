@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ceb52ef01838ad1f03c5dcc7e38ae3cc13512c7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 01965c1dfaeb04d05d2dc6293fc449c0bbc878fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267483"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157640"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,13 +31,14 @@ ms.locfileid: "49267483"
 |windowsMobileCount|Int32|Количество мобильных устройств с Windows.|
 |windowsCount|Int32|Количество устройств с Windows.|
 |unknownCount|Int32|Количество неизвестных устройств.|
-|андроиддедикатедкаунт|Int32|Количество выделенных устройств с Android.|
-|андроиддевицеадминкаунт|Int32|Число устройств с Android для администрирования устройств.|
-|андроидфуллиманажедкаунт|Int32|Количество полностью управляемых устройств с Android.|
-|андроидворкпрофилекаунт|Int32|Количество устройств с Android в рабочем профиле.|
-|андроидкорпоратеворкпрофилекаунт|Int32|Количество устройств с Android для корпоративных профилей рабочих профилей. Также называется корпоративным владельцем. Допустимые значения: от 1 до 2147483647|
-|конфигмгрдевицекаунт|Int32|Количество управляемых устройств ConfigMgr.|
-|аоспусерлесскаунт|Int32|Количество выделенных устройств с АОСП для Android. Допустимые значения — от 0 до 2147483647|
+|androidDedicatedCount|Int32|Количество выделенных устройств с Android.|
+|androidDeviceAdminCount|Int32|Количество устройств администратора устройств с Android.|
+|androidFullyManagedCount|Int32|Количество полностью управляемых устройств с Android.|
+|androidWorkProfileCount|Int32|Количество устройств с профилем работы с Android.|
+|androidCorporateWorkProfileCount|Int32|Количество устройств Android корпоративного профиля. Также известно как CORPORATE Owned Personally Enabled (СИБ). Допустимые значения : от -1 до 2 147 483 647|
+|configMgrDeviceCount|Int32|Количество управляемых устройств ConfigMgr.|
+|aospUserlessCount|Int32|Количество устройств с Android без пользователей AOSP. Допустимые значения: от 0 до 2 147 483 647|
+|aospUserAssociatedCount|Int32|Количество устройств Android, связанных с пользователем AOSP. Допустимые значения: от 0 до 2 147 483 647|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -64,7 +65,8 @@ ms.locfileid: "49267483"
   "androidWorkProfileCount": 1024,
   "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024,
-  "aospUserlessCount": 1024
+  "aospUserlessCount": 1024,
+  "aospUserAssociatedCount": 1024
 }
 ```
 

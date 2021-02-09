@@ -1,50 +1,51 @@
 ---
-title: Тип ресурса Мобилеаппдепенденци
-description: Описывает тип зависимости между двумя мобильными приложениями.
+title: Тип ресурса mobileAppDependency
+description: Описывает тип зависимостей между двумя мобильными приложениями.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 525e094350a3ce255d0a695ad2631485087e3d37
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e8e6bdcd9cf5903d07fb858103bd3620e9a187da
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280960"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161567"
 ---
-# <a name="mobileappdependency-resource-type"></a>Тип ресурса Мобилеаппдепенденци
+# <a name="mobileappdependency-resource-type"></a>Тип ресурса mobileAppDependency
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Описывает тип зависимости между двумя мобильными приложениями.
+Описывает тип зависимостей между двумя мобильными приложениями.
 
 
-Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)
+Наследуется от [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список МобилеаппдепенденЦиес](../api/intune-apps-mobileappdependency-list.md)|Коллекция [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md)|Список свойств и связей объектов [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) .|
-|[Получение Мобилеаппдепенденци](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Чтение свойств и связей объекта [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) .|
-|[Создание Мобилеаппдепенденци](../api/intune-apps-mobileappdependency-create.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Создание нового объекта [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) .|
-|[Удаление Мобилеаппдепенденци](../api/intune-apps-mobileappdependency-delete.md)|Нет|Удаляет объект [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md).|
-|[Обновление Мобилеаппдепенденци](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Обновление свойств объекта [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) .|
+|[Список mobileAppDependencies](../api/intune-apps-mobileappdependency-list.md)|[Коллекция mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Список свойств и связей объектов [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
+|[Get mobileAppDependency](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Чтение свойств и связей объекта [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
+|[Создание mobileAppDependency](../api/intune-apps-mobileappdependency-create.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Создание объекта [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
+|[Удаление mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|Нет|Удаляет [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
+|[Обновление mobileAppDependency](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|Обновление свойств объекта [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|Идентификатор приложения целевого приложения для мобильных устройств. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетдисплайверсион|String|Версия отображения целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетпублишер|String|Издатель целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md). Возможные значения: `child`, `parent`.|
-|депенденцитипе|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
-|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
+|id|String|ИД сущности отношения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|String|ИД целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|String|Отображаемое имя целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|Отображаемая версия целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|Издатель целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или родительским. Наследуется [от mobileAppRelationship.](../resources/intune-apps-mobileapprelationship.md) Возможные значения: `child`, `parent`.|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимостей между родительским и родительским приложениями. Возможные значения: `detect`, `autoInstall`.|
+|dependentAppCount|Int32|Общее количество приложений, которые напрямую или косвенно зависят от родительского приложения.|
+|dependsOnAppCount|Int32|Общее количество приложений, от которых непосредственно или косвенно зависит это приложение.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -67,7 +68,8 @@ ms.locfileid: "49280960"
   "targetPublisher": "String",
   "targetType": "String",
   "dependencyType": "String",
-  "dependentAppCount": 1024
+  "dependentAppCount": 1024,
+  "dependsOnAppCount": 1024
 }
 ```
 

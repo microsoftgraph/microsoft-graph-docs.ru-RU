@@ -1,54 +1,54 @@
 ---
-title: Тип ресурса Персонинтерест
-description: Тип ресурса Персонинтерест
+title: Тип ресурса personInterest
+description: Тип ресурса personInterest
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7071f089c7dbc9ff309dfc1d45628ef24c367567
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b635ab19f4cda9985de05e317316579ad60f7b1
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997965"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161399"
 ---
-# <a name="personinterest-resource-type"></a>Тип ресурса Персонинтерест
+# <a name="personinterest-resource-type"></a>Тип ресурса personInterest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предоставляет подробные сведения о интересах, которые пользователь связал с собственными службами в различных службах.
+Предоставляет подробные сведения об интересах, которые пользователь связал с собой в различных службах.
 
-Наследуется от [итемфацет](itemfacet.md).
+Наследуется [от itemFacet.](itemfacet.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                    | Возвращаемый тип                         | Описание                                                           |
 |:----------------------------------------------------------|:------------------------------------|:----------------------------------------------------------------------|
-|[Список интересов](../api/profile-list-interests.md)|Коллекция [персонинтерест](../resources/personinterest.md)|Получение ресурсов Персонинтерест из свойства навигации по интересам.|
-|[Создание Персонинтерест](../api/profile-post-interests.md)|[персонинтерест](../resources/personinterest.md)|Создание нового объекта Персонинтерест.|
-|[Получение Персонинтерест](../api/personinterest-get.md)|[персонинтерест](../resources/personinterest.md)|Чтение свойств и связей объекта [персонинтерест](../resources/personinterest.md) .|
-|[Обновление Персонинтерест](../api/personinterest-update.md)|[персонинтерест](../resources/personinterest.md)|Обновление свойств объекта [персонинтерест](../resources/personinterest.md) .|
-|[Удаление Персонинтерест](../api/personinterest-delete.md)|Нет|Удаляет объект [персонинтерест](../resources/personinterest.md) .|
+|[Список интересов](../api/profile-list-interests.md)|[Коллекция personInterest](../resources/personinterest.md)|Получите ресурсы personInterest из свойства навигации по интересам.|
+|[Создание personInterest](../api/profile-post-interests.md)|[personInterest](../resources/personinterest.md)|Создание объекта personInterest.|
+|[Get personInterest](../api/personinterest-get.md)|[personInterest](../resources/personinterest.md)|Чтение свойств и связей объекта [personInterest.](../resources/personinterest.md)|
+|[Обновление personInterest](../api/personinterest-update.md)|[personInterest](../resources/personinterest.md)|Обновление свойств объекта [personInterest.](../resources/personinterest.md)|
+|[Удаление personInterest](../api/personinterest-delete.md)|Нет|Удаляет объект [personInterest.](../resources/personinterest.md)|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Содержит категории, которые пользователь связал с интересом (например, персональный, реЦипиес). |
-|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
-|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|description|String|Содержит описание интереса.|
-|displayName|String|Содержит понятное имя для интереса.  |
-|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|webUrl|String|Содержит ссылку на веб-страницу или ресурс, представляющие интерес. |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется [от itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, связанные пользователем с интересом (например, персональные, высмеи). |
+|collaborationTags|Коллекция String|Содержит теги сценария работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , , `wantsToLearn` `wantsToImprove` .|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создав объект. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет dateTimeOffset для времени создания сущности. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|description|String|Содержит описание интерес.|
+|displayName|String|Содержит удобное имя для интересуя вас.  |
+|id|String|Идентификатор, используемый для индивидуального обращения к объекту. Наследуется [от объекта](../resources/entity.md)|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если сущность создается или изменяется приложением. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которые в последний раз изменили сущность. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет dateTimeOffset для времени создания сущности. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникают, если синхронизированы из другой службы. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|webUrl|String|Содержит ссылку на веб-страницу или ресурс о интересе. |
 
 ## <a name="relationships"></a>Связи
 
@@ -63,8 +63,7 @@ ms.locfileid: "47997965"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.personInterest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.personInterest"
 }-->
 
 ```json

@@ -1,70 +1,70 @@
 ---
-title: Тип ресурса хранитель
-description: В контексте обнаружения электронных данных представляет пользователя и все свои цифровые ресурсы, такие как электронная почта и документы.
+title: Тип ресурса custodian
+description: В контексте eDiscovery представляет пользователя и все его цифровые активы, такие как электронная почта и документы.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: a2e22f711eaec4cd68cc5026e36b900d5284e71a
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 6c6b2befbb4066b851e38e6e17fd8be5aa59b031
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597831"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157696"
 ---
-# <a name="custodian-resource-type"></a>Тип ресурса хранитель
+# <a name="custodian-resource-type"></a>Тип ресурса custodian
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В контексте обнаружения электронных данных представляет пользователя и все свои цифровые ресурсы, такие как электронная почта и документы.
+В контексте eDiscovery представляет пользователя и все его цифровые активы, такие как электронная почта и документы.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список custodians](../api/ediscoverycase-list-custodians.md)|Коллекция [хранитель](../resources/custodian.md)|Получение списка объектов **хранитель** и их свойств.|
-|[Создание хранитель](../api/ediscoverycase-post-custodians.md)|[Хранитель](../resources/custodian.md)|Создание нового объекта **хранитель** .|
-|[Получение хранитель](../api/custodian-get.md)|[Хранитель](../resources/custodian.md)|Чтение свойств и связей объекта **хранитель** .|
-|[Обновление хранитель](../api/custodian-update.md)|[Хранитель](../resources/custodian.md)|Обновление свойств объекта **хранитель** .|
-|[удаления](../api/custodian-release.md)|Нет|Освобождение хранитель от случая.|
-|[отключить](../api/custodian-activate.md)|Нет|Повторно активируйте хранитель, выпущенные из случая, и сделайте их частью этого случая.|
-|[Список Ситесаурцес](../api/custodian-list-sitesources.md)|Коллекция [ситесаурце](../resources/sitesource.md)|Получение ресурсов **ситесаурце** из свойства навигации **ситесаурцес** .|
-|[Создание Ситесаурцес](../api/custodian-post-sitesources.md)|[ситесаурце](../resources/sitesource.md)|Создание нового объекта **ситесаурце** .|
-|[Список Унифиедграупсаурцес](../api/custodian-list-unifiedgroupsources.md)|Коллекция [унифиедграупсаурце](../resources/unifiedgroupsource.md)|Получение ресурсов **унифиедграупсаурце** из свойства навигации **унифиедграупсаурцес** .|
-|[Создание Унифиедграупсаурцес](../api/custodian-post-unifiedgroupsources.md)|[унифиедграупсаурце](../resources/unifiedgroupsource.md)|Создание нового объекта **унифиедграупсаурце** .|
-|[Список Усерсаурцес](../api/custodian-list-usersources.md)|Коллекция [усерсаурце](../resources/usersource.md)|Получение ресурсов **усерсаурце** из свойства навигации **усерсаурцес** .|
-|[Создание Усерсаурцес](../api/custodian-post-usersources.md)|[усерсаурце](../resources/usersource.md)|Создание нового объекта **усерсаурце** .|
+|[Список хранителей](../api/ediscoverycase-list-custodians.md)|[коллекция custodian](../resources/custodian.md)|Получите список объектов **хранителя** и их свойств.|
+|[Создание хранителя](../api/ediscoverycase-post-custodians.md)|[custodian](../resources/custodian.md)|Создание объекта **хранителя.**|
+|[Получить хранителя](../api/custodian-get.md)|[custodian](../resources/custodian.md)|Чтение свойств и связей объекта **хранителя.**|
+|[Обновление хранителя](../api/custodian-update.md)|[custodian](../resources/custodian.md)|Обновление свойств объекта **custodian.**|
+|[release](../api/custodian-release.md)|Нет|Освобождение хранителя из дела.|
+|[activate](../api/custodian-activate.md)|Нет|Повторно активировать хранителя, освобожденного из дела, и снова сделать его частью дела.|
+|[Список siteSources](../api/custodian-list-sitesources.md)|[Коллекция siteSource](../resources/sitesource.md)|Получите ресурсы **siteSource** из свойства навигации **siteSources.**|
+|[Создание siteSources](../api/custodian-post-sitesources.md)|[siteSource](../resources/sitesource.md)|Создание объекта **siteSource.**|
+|[Список unifiedGroupSources](../api/custodian-list-unifiedgroupsources.md)|[Коллекция unifiedGroupSource](../resources/unifiedgroupsource.md)|Получите ресурсы **unifiedGroupSource из** свойства навигации **unifiedGroupSources.**|
+|[Создание unifiedGroupSources](../api/custodian-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Создание объекта **unifiedGroupSource.**|
+|[Список userSources](../api/custodian-list-usersources.md)|[Коллекция userSource](../resources/usersource.md)|Получите ресурсы **userSource** из свойства **навигации userSources.**|
+|[Создание userSources](../api/custodian-post-usersources.md)|[userSource](../resources/usersource.md)|Создание объекта **userSource.**|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аккновледжеддатетиме|DateTimeOffset|Дата и время, когда хранитель подтвердил уведомление об удержании.|
-|апплихолдтосаурцес|Логический|Определяет, были ли источники хранитель сохранены во время создания.|
-|createdDateTime|DateTimeOffset|Дата и время добавления хранитель к обращению.|
-|displayName|String|Отображаемое имя хранитель.|
-|email|String|Адрес электронной почты хранитель.|
-|id|String|Идентификатор хранитель в указанном случае. Только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта хранитель|
-|релеаседдатетиме|DateTimeOffset|Дата и время, когда хранитель был выпущен из дела.|
-|status|кустодианстатус|Состояние хранитель. Возможные значения: `active`, `released`.|
+|acknowledgedDateTime|DateTimeOffset|Дата и время, когда хранител подтвердил уведомление об удержании.|
+|applyHoldToSources|Boolean|Определяет, были ли источники хранителя помещены на удержание во время создания.|
+|createdDateTime|DateTimeOffset|Дата и время, когда хранители были добавлены в дело.|
+|displayName|String|Отображаемого имени хранителя.|
+|email|String|Адрес электронной почты хранителя.|
+|id|String|ИД хранителя в указанном случае. Только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта хранителя|
+|releasedDateTime|DateTimeOffset|Дата и время освобождения хранителя из дела.|
+|status|custodianStatus|Состояние хранителя. Возможные значения: `active`, `released`.|
 
-### <a name="custodianstatus-values"></a>значения Кустодианстатус
+### <a name="custodianstatus-values"></a>значения custodianStatus
 
 |Member|Описание|
 |:----|-----------|
-|ASP|Хранитель — это активная часть этого случая. |
-|снят|Хранитель выпущен из этого случая.|
+|active|Хранителя является активной частью дела. |
+|released|Хранители освобождены из дела.|
 
 ## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|ситесаурцес|Коллекция [ситесаурце](../resources/sitesource.md)|Объект источника данных для сайтов SharePoint, связанных с хранитель.|
-|унифиедграупсаурцес|Коллекция [унифиедграупсаурце](../resources/unifiedgroupsource.md)|Сущность источника данных для групп, связанных с хранитель.|
-|усерсаурцес|Коллекция [усерсаурце](../resources/usersource.md)|Сущность источника данных для объекта хранитель. Это контейнер для почтового ящика хранитель и сайта OneDrive для бизнеса.|
+|siteSources|[Коллекция siteSource](../resources/sitesource.md)|Объект источника данных для сайтов SharePoint, связанных с хранителями.|
+|unifiedGroupSources|[Коллекция unifiedGroupSource](../resources/unifiedgroupsource.md)|Объект источника данных для групп, связанных с хранителями.|
+|userSources|[Коллекция userSource](../resources/usersource.md)|Объект источника данных для хранителя. Это контейнер для почтового ящика хранителя и сайта OneDrive для бизнеса.|
 
 <!--|lastIndexOperation|[caseIndexOperation](../resources/caseindexoperation.md)|**TODO: Add Description**| -->
 
@@ -75,7 +75,6 @@ ms.locfileid: "49597831"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.custodian",
-  "baseType": "",
   "openType": false
 }
 -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c78834d027720371c1d259ce596fde82cb32ca46
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 37468877721b9ac534c0118aeb93fd613fca7f88
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133212"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159180"
 ---
 # <a name="applicationtemplate-resource-type"></a>Тип ресурса applicationTemplate
 
@@ -34,14 +34,14 @@ ms.locfileid: "50133212"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |categories|Коллекция String|Список категорий для приложения. Поддерживаемые значения: `Collaboration` , , , , `Business Management` `Consumer` , `Content management` , , `CRM` , , `Data services` , `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` `Human resources` и `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel` `Web design & hosting` .|
-|description|Строка|Описание приложения.|
-|displayName|Строка|Имя приложения.|
-|homePageUrl|Строка|URL-адрес домашней страницы приложения.|
-|id|Строка| Уникальный идентификатор приложения. Только для чтения.|
-|logoUrl|Строка|URL-адрес для получения логотипа для этого приложения.|
+|description|String|Описание приложения.|
+|displayName|String|Имя приложения.|
+|homePageUrl|String|URL-адрес домашней страницы приложения.|
+|id|String| Уникальный идентификатор приложения. Только для чтения.|
+|logoUrl|String|URL-адрес для получения логотипа для этого приложения.|
 |publisher|String|Имя издателя для этого приложения.|
-|supportedProvisioningTypes|Коллекция объектов string|Список режимов предоставления, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .|
-|supportedSingleSignOnModes|Коллекция объектов string|Список режимов единого входов, поддерживаемых этим приложением. Поддерживаемые значения: `password`, `saml`, `external` и `oidc`.|
+|supportedProvisioningTypes|Коллекция String|Список режимов предоставления, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .|
+|supportedSingleSignOnModes|Коллекция String|Список режимов единого входов, поддерживаемых этим приложением. Поддерживаемые значения: `password`, `saml`, `external` и `oidc`.|
 
 ## <a name="relationships"></a>Связи
 
@@ -57,7 +57,6 @@ ms.locfileid: "50133212"
 
   ],
   "@odata.type": "microsoft.graph.applicationTemplate",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

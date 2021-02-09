@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Каунтринамедлокатион
-description: Представляет имя расположения Azure Active Directory, определенное странами и регионами. Именованные расположения — это настраиваемые правила, определяющие сетевые расположения, которые можно использовать в политике условного доступа.
+title: Тип ресурса countryNamedLocation
+description: Представляет именуемую позицию Azure Active Directory, определяемую в странах и регионах. Именуемые расположения — это настраиваемые правила, которые определяют сетевые расположения, которые затем можно использовать в политике условного доступа.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8c4807abc04cb980ec452590b9643f2b07d0ce67
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d61621a0cade0bcb479f19ffb0c29050f367401
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016711"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157724"
 ---
-# <a name="countrynamedlocation-resource-type"></a>Тип ресурса Каунтринамедлокатион
+# <a name="countrynamedlocation-resource-type"></a>Тип ресурса countryNamedLocation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет имя расположения Azure Active Directory, определенное странами и регионами. Именованные расположения — это настраиваемые правила, определяющие сетевые расположения, которые можно использовать в политике условного доступа.
+Представляет именуемую позицию Azure Active Directory, определяемую в странах и регионах. Именуемые расположения — это настраиваемые правила, которые определяют сетевые расположения, которые затем можно использовать в политике условного доступа.
 
-Наследуется от [намедлокатион](../resources/namedLocation.md)
+Наследуется от [namedLocation](../resources/namedLocation.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Каунтринамедлокатионс](../api/conditionalaccessroot-list-namedlocations.md) | Коллекция [каунтринамедлокатион](countryNamedLocation.md) | Получение всех объектов **каунтринамедлокатион** в Организации. |
-| [Создание Каунтринамедлокатион](../api/conditionalaccessroot-post-namedlocations.md) | [каунтринамедлокатион](countryNamedLocation.md) | Создание нового объекта **каунтринамедлокатион** . |
-| [Получение Каунтринамедлокатион](../api/countrynamedlocation-get.md) | [каунтринамедлокатион](countrynamedlocation.md) | Чтение свойств и связей объекта **каунтринамедлокатион** . |
-| [Обновление Каунтринамедлокатион](../api/countrynamedlocation-update.md) | [каунтринамедлокатион](countrynamedlocation.md) | Обновление объекта **каунтринамедлокатион** . |
-| [Удаление Каунтринамедлокатион](../api/countrynamedlocation-delete.md) | Нет | Удаление объекта **каунтринамедлокатион** . |
+| [Список countryNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [коллекция countryNamedLocation](countryNamedLocation.md) | Получить все **объекты countryNamedLocation** в организации. |
+| [Создание countryNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | Создание объекта **countryNamedLocation.** |
+| [Get countryNamedLocation](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | Чтение свойств и связей объекта **countryNamedLocation.** |
+| [Обновление countryNamedLocation](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | Обновление объекта **countryNamedLocation.** |
+| [Удаление countryNamedLocation](../api/countrynamedlocation-delete.md) | Нет | Удаление объекта **countryNamedLocation.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
-|createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|displayName|String|Удобное для человека имя расположения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|инклудеункновнкаунтриесандрегионс|Boolean|Значение true, если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
-|modifiedDateTime|DateTimeOffset|Тип timestamp представляет дату и время последнего изменения расположения с использованием формата ISO 8601, которое всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
+|countriesAndRegions|Коллекция String|Список стран и/или регионов в двухформатном формате, заданном в ISO 3166-2.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет дату и время создания расположения в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется [от namedLocation.](../resources/namedLocation.md)|
+|displayName|String|Понятное человеку имя расположения. Наследуется [от namedLocation.](../resources/namedLocation.md)|
+|id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation.](../resources/namedLocation.md)|
+|includeUnknownCountriesAndRegions|Boolean|Имеет true, если IP-адреса, которые не сопойдутся со странаю или регионом, должны быть включены в именоваемом расположении.|
+|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет дату и время последнего изменения расположения в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется [от namedLocation.](../resources/namedLocation.md)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -56,8 +56,7 @@ ms.locfileid: "48016711"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.countryNamedLocation",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.countryNamedLocation"
 }-->
 
 ```json

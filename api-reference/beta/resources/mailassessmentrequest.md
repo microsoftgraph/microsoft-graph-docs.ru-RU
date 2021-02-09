@@ -1,58 +1,58 @@
 ---
-title: Тип ресурса Маилассессментрекуест
-description: Используется для создания и получения оценки угроз электронной почты.
+title: Тип ресурса mailAssessmentRequest
+description: Используется для создания и извлечения оценки угрозы почты.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 959c9a15fe96012dd586ef8fa67daa07626a76d3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ea2a227b414317942b0c0ea48109f0056543a60
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095027"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161434"
 ---
-# <a name="mailassessmentrequest-resource-type"></a>Тип ресурса Маилассессментрекуест
+# <a name="mailassessmentrequest-resource-type"></a>Тип ресурса mailAssessmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для создания и получения оценки угроз электронной почты, производных от [среатассессментрекуест](threatAssessmentRequest.md).
+Используется для создания и извлечения оценки угрозы почты, полученной из [threatAssessmentRequest.](threatAssessmentRequest.md)
 
-Когда вы создаете запрос оценки угроз для электронной почты, сообщение должно быть получено пользователем, указанным в `recipientEmail` . Делегированные [разрешения на почту](/graph/permissions-reference#mail-permissions) (mail. Read или mail. Read. shared) — рекуриед для доступа к почте, полученной пользователем или предоставленных другим пользователем.
+При создании запроса на оценку угроз почты сообщение должно быть получено указанным `recipientEmail` пользователем. Делегированная почта разрешений (Mail.Read или Mail.Read.Shared) повторно приравнивается для доступа к почте, полученной пользователем или другим пользователем. [](/graph/permissions-reference#mail-permissions)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [mailAssessmentRequest](mailAssessmentRequest.md) | Создание запроса на оценку почты путем отправки объекта **маилассессментрекуест** . |
-| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Чтение свойств и связей объекта **маилассессментрекуест** . |
+| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [mailAssessmentRequest](mailAssessmentRequest.md) | Создайте новый запрос на оценку почты, опубликовав объект **mailAssessmentRequest.** |
+| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Чтение свойств и связей объекта **mailAssessmentRequest.** |
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|дестинатионраутингреасон|[маилдестинатионраутингреасон](enums.md#maildestinationroutingreason-values)|Причина, по которой почта перенаправляется в назначение. Возможные значения: `none` , `mailFlowRule` ,,,,, `safeSender` `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` ,,, `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` , `autoPurgeToJunk` , `autoPurgeToDeleted` , `outbound` , `notJunk` , `junk` .|
-|мессажеури|Строка|URI ресурса почтового сообщения для оценки.|
-|реЦипиентемаил|Строка|Получатель почты, политики которого используются для оценки почты.|
-|category|[среаткатегори](enums.md#threatcategory-values)|Категория угроз. Возможные значения: `spam`, `phishing`, `malware`.|
-|contentType|[среатассессментконтенттипе](enums.md#threatassessmentcontenttype-values)|Тип контента для оценки угроз. Возможные значения: `mail`, `url`, `file`.|
+|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|Причина перенаправления почты в место назначения. Возможные значения: `none` , , , , , , , `mailFlowRule` , , `safeSender` , `blockedSender` `advancedSpamFiltering` , `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` . `junk`|
+|messageUri|String|URI ресурса почтового сообщения для оценки.|
+|recipientEmail|String|Получатель почты, политики которого используются для оценки почты.|
+|category|[threatCategory](enums.md#threatcategory-values)|Категория угрозы. Возможные значения: `spam`, `phishing`, `malware`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип контента для оценки угроз. Возможные значения: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|Создатель запроса на оценку угроз.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|експектедассессмент|[среатекспектедассессмент](enums.md#threatexpectedassessment-values)|Ожидаемая Оценка от отправителя. Возможные значения: `block`, `unblock`.|
-|id|Строка|Идентификатор запроса оценки угроз — это глобальный уникальный идентификатор (GUID).|
-|рекуестсаурце|[среатассессментрекуестсаурце](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
-|status|[среатассессментстатус](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
+|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|Ожидаемая оценка от подавщика. Возможные значения: `block`, `unblock`.|
+|id|String|Идентификатор запроса на оценку угроз — это глобальный уникальный идентификатор (GUID).|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|results|Коллекция [среатассессментресулт](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a не `GET /threatAssessmentRequests/{id}` возвращает это свойство, пока не применено `$expand` к нему.|
+|results|[Коллекция threatAssessmentResult](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a `GET /threatAssessmentRequests/{id}` не возвращает это свойство, если к этому свойству не `$expand` применяется.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -62,7 +62,6 @@ ms.locfileid: "48095027"
 
   ],
   "@odata.type": "microsoft.graph.mailAssessmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

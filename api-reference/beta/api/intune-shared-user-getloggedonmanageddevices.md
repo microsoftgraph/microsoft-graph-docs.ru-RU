@@ -1,22 +1,22 @@
 ---
-title: Функция Жетлогжедонманажеддевицес
+title: Функция getLoggedOnManagedDevices
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2115ddf94a645d013aa901646a153820b637730
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 315e05f322e00122876e4f246d970c58b97e180b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303932"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157787"
 ---
-# <a name="getloggedonmanageddevices-function"></a>Функция Жетлогжедонманажеддевицес
+# <a name="getloggedonmanageddevices-function"></a>Функция getLoggedOnManagedDevices
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API в версии /beta в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,10 +29,10 @@ ms.locfileid: "49303932"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений||
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,7 +56,7 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [managedDevice](../resources/intune-devices-manageddevice.md) в тексте отклика.
+В случае успеха эта функция возвращает код отклика и коллекцию `200 OK` [managedDevice](../resources/intune-shared-manageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,60 +1,60 @@
 ---
-title: Тип ресурса Акцессревиевсчедуледефинитион
-description: Представляет серию проверки доступа или проверки доступа.
+title: Тип ресурса accessReviewScheduleDefinition
+description: Представляет серию отзывов о доступе или доступе.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f8ee04dde7ee19d24be5de58237f08b4fb538e8c
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: f95047602ec1a73549b6b5c4217e32890a5996e6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001042"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161161"
 ---
-# <a name="accessreviewscheduledefinition-resource-type"></a>Тип ресурса Акцессревиевсчедуледефинитион
+# <a name="accessreviewscheduledefinition-resource-type"></a>Тип ресурса accessReviewScheduleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет расписание [проверки доступа](accessreviewsv2-root.md)Azure AD. 
+Представляет расписание проверки доступа Azure [AD.](accessreviewsv2-root.md) 
 
-Объект Акцессревиевсчедуледефинитион содержит список объектов [акцессревиевинстанце](accessreviewinstance.md) . Каждый повтор определения расписания создаст экземпляр. Экземпляры также представляют каждую проверяемую группу. Если в определении расписания просматриваются несколько групп, каждая группа будет иметь уникальный экземпляр для каждого повторения. В случае одноразового рассмотрения для каждой группы будет создан только один экземпляр.
+Объект accessReviewScheduleDefinition содержит список объектов [accessReviewInstance.](accessreviewinstance.md) Каждое повторение определения расписания создает экземпляр. Экземпляры также представляют каждую уникальную проверяемую группу. Если определение расписания проверяет несколько групп, каждая группа будет иметь уникальный экземпляр для каждого повторения. В случае разовой проверки для одной группы будет создан только один экземпляр.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список Акцессревиевсчедуледефинитионс](../api/accessreviewscheduledefinition-list.md) | Коллекция [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md) | Перечисление всех Акцессревиевсчедуледефинитион. Не включает связанные экземпляры Акцессревиевинстанце в вхождениях. |
-|[Получение Акцессревиевсчедуледефинитион](../api/accessreviewscheduledefinition-get.md) | [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md) | Получение Акцессревиевсчедуледефинитион с указанным идентификатором. |
-|[Создание Акцессревиевсчедуледефинитион](../api/accessreviewscheduledefinition-create.md) | [акцессревиевсчедуледефинитион](accessreviewscheduledefinition.md) | Создание нового Акцессревиевсчедуледефинитион. |
-|[Удаление Акцессревиевсчедуледефинитион](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление объекта Акцессревиевсчедуледефинитион с указанным идентификатором. |
-|[Обновление Акцессревиевсчедуледефинитион](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств объекта Акцессревиевсчедуледефинитион с указанным идентификатором. |
+|[Список accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [Коллекция accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Перечисляет все accessReviewScheduleDefinition. Не включает связанные экземпляры accessReviewInstance в листинги. |
+|[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Получите accessReviewScheduleDefinition с указанным ид. |
+|[Создание accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создайте новый accessReviewScheduleDefinition. |
+|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление accessReviewScheduleDefinition с указанным идентификатором. |
+|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств объекта accessReviewScheduleDefinition с помощью указанного идентификатора. |
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :------------------| :-------------- | :---------- |
-| id | Строка | Уникальный идентификатор проверки доступа, назначенный компоненту.|
-| displayName | Строка   | Имя серии проверки доступа. Требуется при создании. |
-| createdDateTime  |DateTimeOffset  | Дата и время создания серии проверки. |
-| lastModifiedDateTime | DateTimeOffset   | Дата и время последнего изменения ряда проверки.|
-| status  |string   | В этом поле, доступном только для чтения, указывается состояние Акцессревиев. Типичные состояния:,,,,, `Initializing` `NotStarted` `Starting` `InProgress` `Completing` `Completed` , `AutoReviewing` и `AutoReviewed` . |
-| дескриптионфорадминс  |строка  |  Описание, предоставленное авторами рецензирования, для предоставления более подробного контекста просмотра администраторам. |
-| дескриптионфорревиеверс |строка | Описание, предоставленное авторами рецензирования, для предоставления более подробного контекста проверки рецензентам. Проверяющие увидят это описание в отправленном им сообщении электронной почты с запросом на проверку. |
-| createdBy  |[userIdentity](../resources/useridentity.md)  | Пользователь, создавший эту проверку. |
-| scope  |[акцессревиевскопе](../resources/accessreviewscope.md)  | Определяет область пользователей, проверенных в группе. Поддерживаемые области приведены в разделе [акцессревиевскопе](accessreviewscope.md). Требуется при создании. |
-| инстанцеенумератионскопе|[акцессревиевскопе](../resources/accessreviewscope.md)  | В случае проверки всех групп это определяет область, в которой будут проверяться группы. Каждая группа станет уникальной Акцессревиевинстанце серии проверки доступа.  Поддерживаемые области приведены в разделе [акцессревиевскопе](accessreviewscope.md). | 
-| settings  |[акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md)| Параметрах серии проверки доступа можно узнать в статье Type Definition ниже. |
-| обсужден   |Коллекция [акцессревиевревиеверскопе](../resources/accessreviewreviewerscope.md)| Эта коллекция областей проверки доступа используется, чтобы определить, кто является рецензентами. Обратитесь к разделу [акцессревиевревиеверскопе](accessreviewreviewerscope.md). Требуется при создании. |
-| баккупревиеверс   |Коллекция [акцессревиевревиеверскопе](../resources/accessreviewreviewerscope.md)| Эта коллекция областей рецензентов используется для определения списка резервных рецензентов. Эти резервные проверяющие будут получать уведомления о предпринимаемых действиях, если в списке указанных рецензентов не найдено ни одного пользователя. Это может произойти, если владелец группы указан как проверяющий, но владелец группы не существует или руководитель указан как проверяющий, но не существует руководителя пользователя. Обратитесь к разделу [акцессревиевревиеверскопе](accessreviewreviewerscope.md). |
-| instances |Collection (Microsoft. Graph. Акцессревиевинстанце)|  Набор рецензированных экземпляров Access для этого ряда проверки доступа. Для неповторяющихся просмотров необходим только один экземпляр; в противном случае будет использоваться экземпляр каждого повторения. |
+| id | String | Уникальный идентификатор проверки доступа, назначенного функции.|
+| displayName | String   | Название серии отзывов о доступе. Требуется при создании. |
+| createdDateTime  |DateTimeOffset  | Дата и время создания серии отзывов. |
+| lastModifiedDateTime | DateTimeOffset   | Дата и время последнего изменения серии отзывов.|
+| status  |string   | Это поле, доступное только для чтения, указывает состояние accessReview. Типичные состояния: `Initializing` , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
+| descriptionForAdmins  |string  |  Описание, предоставленное создателями отзывов, чтобы предоставить администраторам дополнительный контекст проверки. |
+| descriptionForReviewers |string | Описание, предоставленное авторами отзывов, чтобы предоставить рецензентам дополнительный контекст проверки. Рецензенты увидят это описание в сообщении электронной почты, отослав запрос на проверку. |
+| createdBy  |[userIdentity](../resources/useridentity.md)  | Пользователь, создавший этот отзыв. |
+| scope  |[accessReviewScope](../resources/accessreviewscope.md)  | Определяет область пользователей, проверяемую в группе. Поддерживаемые области [см. в accessReviewScope.](accessreviewscope.md) Требуется при создании. |
+| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | В случае проверки всех групп это определяет область проверки групп. Каждая группа станет уникальным accessReviewInstance из серии отзывов о доступе.  Поддерживаемые области см. [в accessReviewScope.](accessreviewscope.md) | 
+| settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии отзывов о доступе см. ниже в определении типа. |
+| рецензенты   |[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Эта коллекция областей проверки доступа используется для определения проверяющих. См. [accessReviewReviewerScope.](accessreviewreviewerscope.md) Требуется при создании. |
+| backupReviewers   |[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Эта коллекция областей проверяющих используется для определения списка проверяющих. Эти рецензенты будут уведомлены о необходимости принятия мер, если пользователи не найдены в списке указанных рецензентов. Это может произойти, если владелец группы указан в качестве рецензента, но владелец группы не существует или руководитель указан как рецензент, но руководитель пользователя не существует. См. [accessReviewReviewerScope.](accessreviewreviewerscope.md) |
+| instances |Collection(microsoft.graph.accessReviewInstance)|  Набор экземпляров проверки доступа для этой серии отзывов о доступе. Проверки доступа, которые не повторялись, будут иметь только один экземпляр; в противном случае для каждого повторения будет иметься экземпляр. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `instances`               |Коллекция [акцессревиевинстанце](accessreviewinstance.md)         | Если это `accessReviewScheduleDefinition` повторяющаяся проверка доступа, экземпляры представляют каждое повторение. Проверка, которая не повторяется, будет иметь ровно один экземпляр. Экземпляры также представляют каждую уникальную группу в разделе "Рецензирование" в `accessReviewScheduleDefinition` . Если у рецензирования несколько групп и несколько экземпляров, каждая группа будет иметь уникальный экземпляр для каждого повторения. |
+| `instances`               |[Коллекция accessReviewInstance](accessreviewinstance.md)         | Если это `accessReviewScheduleDefinition` повторяющаяся проверка доступа, экземпляры представляют каждое повторение. Повторная проверка будет иметь только один экземпляр. Экземпляры также представляют каждую уникальную группу, проверяемую в `accessReviewScheduleDefinition` . Если проверка имеет несколько групп и несколько экземпляров, каждая группа будет иметь уникальный экземпляр для каждого повторения. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
@@ -62,7 +62,6 @@ ms.locfileid: "49001042"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
-  "baseType": "",
   "openType": false
 }
 -->

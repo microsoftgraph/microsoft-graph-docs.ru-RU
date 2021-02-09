@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: cb83bbfe4c738fd8c5c6460a27aafbbc73cad437
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 521c8eca7c3233000bf04f2324e8990fd25c55f6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136278"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159922"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>Тип ресурса credentialUserRegistrationCount
 
@@ -30,7 +30,7 @@ ms.locfileid: "50136278"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | Строка | Уникальный идентификатор действия. Только для чтения. |
+| id | String | Уникальный идентификатор действия. Только для чтения. |
 | totalUserCount | Int64 | Предоставляет общее количество пользователей в клиенте. |
 | userRegistrationCounts | [Коллекция userRegistrationCount](userregistrationcount.md) | Коллекция сведений о регистрации и состоянии для пользователей в клиенте. |
 
@@ -48,7 +48,6 @@ ms.locfileid: "50136278"
 
   ],
   "@odata.type": "microsoft.graph.credentialUserRegistrationCount",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

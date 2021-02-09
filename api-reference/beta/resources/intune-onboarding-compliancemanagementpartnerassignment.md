@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Комплианцеманажементпартнерассигнмент
-description: Нацеленность для группы пользователей для партнера по управлению соответствием требованиям
+title: Тип ресурса complianceManagementPartnerAssignment
+description: Целевая группа пользователей для партнера по управлению соответствием требованиям
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed6a9b6fe9c1262dcc54b851f84a40096b2cb04c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e46e4e6a5e073e3087267329880cf0f36bb79c4a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222746"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161441"
 ---
-# <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса Комплианцеманажементпартнерассигнмент
+# <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса complianceManagementPartnerAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Нацеленность для группы пользователей для партнера по управлению соответствием требованиям
+Целевая группа пользователей для партнера по управлению соответствием требованиям
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -41,9 +41,10 @@ ms.locfileid: "49222746"
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartnerAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "collectionId": "String"
   }
 }
 ```

@@ -5,18 +5,18 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 69a32fbb3ec84928c9e4112134b6d771ca3149f4
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: c9c963fcb7f22af34de92d0ad1c9a472974e346f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706409"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159796"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>Тип ресурса userFlowLanguageConfiguration
 
 Пространство имен: microsoft.graph
 
-Пользовательская настройка языка потоков — это функция, которая позволяет заданным пользовательским потокам поддерживать настройку нескольких языков— от всех встроенных языков до настраиваемых.
+Пользовательские потоки настройки языка — это функция, которая позволяет заданным пользовательским потокам поддерживать настройку нескольких языков— от всех встроенных языков до настраиваемых.
 
 Для потоков пользователей [Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-language-customization#supported-languages)можно использовать встроенные языки или настроить язык для языка, который в настоящее время не встроен по умолчанию. Для [потоков пользователей Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/user-flow-customize-language)можно использовать только встроенные языки, предоставляемые корпорацией Майкрософт. Потоки пользователей для Azure Active Directory B2C и Azure Active Directory поддерживают настройку языка и строк, которые показываются пользователям при настройке потоков пользователей.
 
@@ -51,7 +51,6 @@ ms.locfileid: "49706409"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.userFlowLanguageConfiguration",
-  "baseType": "",
   "openType": false
 }
 -->

@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 9c23abbb3d525a3110cca31b21f2ee24d3c9f26d
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
-ms.translationtype: HT
+ms.openlocfilehash: 691955aa64ff0afc42b5f8912658a6f36e1d77ec
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753776"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161378"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -65,7 +65,7 @@ ms.locfileid: "49753776"
      >**Примечание.** Если пользователь не найден по `id`, данные для этого `id` не будут отображаться.
 
     ```javascript
-    // id = Mirosoft graph User "id"
+    // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 

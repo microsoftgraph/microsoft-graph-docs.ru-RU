@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса Цертификатебаседаусконфигуратион
-description: Представляет коллекцию центров сертификации.
+title: Тип ресурса certificateBasedAuthConfiguration
+description: Представляет коллекцию сертификатов.
 localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d6afa60a48522596754bb1991f2e9982d4a8ed8c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b37022852407951fb850b8e82508cfff1973247f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401794"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161154"
 ---
-# <a name="certificatebasedauthconfiguration-resource-type"></a>Тип ресурса Цертификатебаседаусконфигуратион
+# <a name="certificatebasedauthconfiguration-resource-type"></a>Тип ресурса certificateBasedAuthConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверка подлинности на основе сертификатов обеспечивает проверку подлинности Azure Active Directory с помощью сертификата клиента на устройстве Windows, Android или iOS при подключении учетной записи Exchange Online к:
+Проверка подлинности на основе сертификатов позволяет azure Active Directory проверить подлинность с помощью сертификата клиента на устройстве с Windows, Android или iOS при подключении учетной записи Exchange Online к:
 
 - Мобильные приложения Майкрософт, такие как Outlook и Word
-- Клиенты Exchange ActiveSync (EAS)
+- Exchange ActiveSync (EAS)
 
-Настройка этой функции исключает необходимость ввода имени пользователя и пароля в определенные приложения электронной почты и приложения Microsoft Office на мобильном устройстве.
+Настройка этой функции устраняет необходимость ввода имени пользователя и пароля в определенных почтовых Microsoft Office приложениях на мобильном устройстве.
 
-Настройка проверки подлинности на основе сертификатов обеспечивается через коллекцию центров сертификации. Центры сертификации используются для установки доверенной цепочки сертификатов, что позволяет клиентам выполнять проверку подлинности с помощью Azure Active Directory с помощью сертификата клиента.
+Конфигурация проверки подлинности на основе сертификатов предоставляется с помощью коллекции сертификатных органов. Эти органы используются для создания надежной цепочки сертификатов, которая позволяет клиентам аутентификацию с помощью Azure Active Directory с помощью сертификата клиента.
 
-Узнайте больше о [проверке подлинности на основе сертификатов в Azure Active Directory](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
+Узнайте больше о проверке подлинности на [основе сертификатов в Azure Active Directory.](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Цертификатебаседаусконфигуратион](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Перечисление свойств коллекции **цертификатебаседаусконфигуратион** . |
-| [Получение Цертификатебаседаусконфигуратион](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Чтение свойств объекта **цертификатебаседаусконфигуратион** . |
-| [Создание Цертификатебаседаусконфигуратион](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Создание нового объекта **цертификатебаседаусконфигуратион** . |
-| [Удаление Цертификатебаседаусконфигуратион](../api/certificatebasedauthconfiguration-delete.md) | Нет | Удаление объекта **цертификатебаседаусконфигуратион** . |
+| [Список certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Список свойств коллекции **certificateBasedAuthConfiguration.** |
+| [Get certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Чтение свойств объекта **certificateBasedAuthConfiguration.** |
+| [Создание certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Создание объекта **certificateBasedAuthConfiguration.** |
+| [Удаление certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | Нет | Удаление объекта **certificateBasedAuthConfiguration.** |
 
 >[!NOTE]
->Обновление Церфикатебаседаусконфигуратион не поддерживается. Чтобы изменить Церфикатебаседаусконфигуратион, сначала удалите его, а затем создайте новый Церфикатебаседаусконфигуратион.
+>Обновление cerficateBasedAuthConfiguration не поддерживается. Чтобы изменить cerficateBasedAuthConfiguration, сначала удалите, а затем создайте новый cerficateBasedAuthConfiguration.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|цертификатеаусоритиес|Коллекция [цертификатеаусорити](certificateauthority.md)|Коллекция центров сертификации, которая создает доверенную цепочку сертификатов.|
-|id|String|Уникальный идентификатор конфигурации проверки подлинности на основе сертификатов. Только для чтения.|
+|certificateAuthorities|[Коллекция certificateAuthority](certificateauthority.md)|Коллекция органов сертификации, которые создают доверенного цепочку сертификатов.|
+|id|String|Уникальный идентификатор конфигурации auth на основе сертификата. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 
@@ -62,7 +62,6 @@ ms.locfileid: "48401794"
 
   ],
   "@odata.type": "microsoft.graph.certificateBasedAuthConfiguration",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
