@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов unifiedRoleAssignmentMultiple
-description: Получение свойств и связей объекта Унифиедролеассигнментмултипле.
+description: Извлечение свойств и связей объекта unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 54407dcbc45d2a14011ec50aba81bc7ddd759383
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac53a5de9e2bc927e8798bda0315206bc4b19bdc
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989869"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154504"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "47989869"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) . Используйте эту возможность для получения списка назначений ролей в Microsoft Intune. Для других приложений Микрсофт 365 (например, Azure AD) используйте [унифиедролеассигнмент](../resources/unifiedroleassignment.md).
+Получите список объекта [unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте его для получения списка назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "47989869"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
+| Для приложений | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Вы можете фильтровать свойства `roleDefinitionId` или `principalId` по их свойствам. Свойство `roleDefinitionId` может быть либо ид объекта роли, либо ид объекта шаблона роли. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,19 +47,19 @@ GET /roleManagement/deviceManagement/roleAssignments
 |:---- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
+Ниже приводится пример запроса.
 
 <!-- {
   "blockType": "request",
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приводится пример отклика.
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {

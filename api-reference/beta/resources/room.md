@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 39e1bf097519f143bc2eeb1a825fc963d49fd359
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 1599d029987be2cac8ac33b007dab485bc1474a4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059562"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154252"
 ---
 # <a name="room-resource-type"></a>Тип ресурса room
 
@@ -49,7 +49,7 @@ ms.locfileid: "50059562"
 | label                  | String                                            | Указывает описательную метку для комнаты, например номер или имя. |
 | nickname               | String                                            | Указывает псевдоним для комнаты, например "conf room". |
 | phone                  | String                                            | Номер телефона комнаты. |
-| tags                   | Коллекция объектов string                                 | Указывает дополнительные функции комнаты, например сведения о типе представления или типе ветвя. |
+| tags                   | Коллекция String                                 | Указывает дополнительные функции комнаты, например такие сведения, как тип представления или тип ветвя. |
 | videoDeviceName        | String                                            | Указывает имя видео устройства в комнате. |
 
 ### <a name="bookingtype-values"></a>Значения bookingType
@@ -72,8 +72,7 @@ ms.locfileid: "50059562"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.room",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.room"
 }-->
 
 ```json

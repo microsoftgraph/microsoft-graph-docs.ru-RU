@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d6a6bd597fb274d8fdb8150be0a2c5e085949156
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 25fb1c94db9443ed67a0555d09f3859e666bed19
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706374"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155470"
 ---
 # <a name="userflowlanguagepage-resource-type"></a>Тип ресурса userFlowLanguagePage
 
@@ -43,7 +43,6 @@ ms.locfileid: "49706374"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.userFlowLanguagePage",
-  "baseType": "",
   "openType": false
 }
 -->

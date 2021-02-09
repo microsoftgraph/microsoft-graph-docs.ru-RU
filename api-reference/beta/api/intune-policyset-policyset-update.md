@@ -1,22 +1,22 @@
 ---
-title: действие обновления
+title: Действие обновления
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57d1bc7b6225b4b61bf884d00880e0fb50ee8492
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f43b890de04a3a5392b1daefd74f6ae47fe6cb05
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49257900"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153769"
 ---
-# <a name="update-action"></a>действие обновления
+# <a name="update-action"></a>Действие обновления
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "49257900"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,10 +53,10 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аддедполицисетитемс|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
-|упдатедполицисетитемс|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
-|делетедполицисетитемс|Коллекция строк|Н/Д|
-|assignments|Коллекция [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md)|Пока не задокументировано.|
+|addedPolicySetItems|[Коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
+|updatedPolicySetItems|[Коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
+|deletedPolicySetItems|Коллекция строк|Н/Д|
+|assignments|[Коллекция policySetAssignment](../resources/intune-policyset-policysetassignment.md)|Пока не задокументировано.|
 
 
 
@@ -71,7 +71,7 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/update
 
 Content-type: application/json
-Content-length: 1692
+Content-length: 1760
 
 {
   "addedPolicySetItems": [
@@ -115,9 +115,10 @@ Content-length: 1692
       "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

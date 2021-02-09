@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7dc0d39ffad515de2adf8536a118bdcef9c2d22e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 18ae994079f92c570df1de1d5dcd069b71aac60e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49296906"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154553"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 34198
+Content-Length: 34441
 
 {
   "value": [
@@ -681,6 +681,7 @@ Content-Length: 34198
       "defenderExploitProtectionXml": "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA==",
       "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
       "defenderSecurityCenterBlockExploitProtectionOverride": true,
+      "defenderBlockPersistenceThroughWmiType": "block",
       "appLockerApplicationControl": "enforceComponentsAndStoreApps",
       "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
       "deviceGuardEnableVirtualizationBasedSecurity": true,
@@ -702,6 +703,10 @@ Content-Length: 34198
       "applicationGuardAllowPrintToNetworkPrinters": true,
       "applicationGuardAllowVirtualGPU": true,
       "applicationGuardAllowFileSaveOnHost": true,
+      "applicationGuardAllowCameraMicrophoneRedirection": true,
+      "applicationGuardCertificateThumbprints": [
+        "Application Guard Certificate Thumbprints value"
+      ],
       "bitLockerAllowStandardUserEncryption": true,
       "bitLockerDisableWarningForOtherDiskEncryption": true,
       "bitLockerEnableStorageCardEncryptionOnMobile": true,

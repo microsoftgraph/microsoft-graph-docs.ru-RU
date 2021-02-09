@@ -1,39 +1,40 @@
 ---
-title: тип перечисления Андроидворкпрофилевпнконнектионтипе
-description: Тип VPN-подключения для рабочего профиля Android.
+title: Тип enum androidWorkProfileVpnConnectionType
+description: Тип VPN-подключения для профиля работы Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 52a43b9d2ccfa6e0a7fb3f8c3979a4003fee148f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 95f93b3ff5802472afc40b10f43b2d4d999cb158
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280692"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154308"
 ---
-# <a name="androidworkprofilevpnconnectiontype-enum-type"></a>тип перечисления Андроидворкпрофилевпнконнектионтипе
+# <a name="androidworkprofilevpnconnectiontype-enum-type"></a>Тип enum androidWorkProfileVpnConnectionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип VPN-подключения для рабочего профиля Android.
+Тип VPN-подключения для профиля работы Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Цискоаниконнект|нуль|Cisco Аниконнект.|
-|пулсесекуре|1,1|Безопасный импульс.|
-|f5EdgeClient|2|Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
-|чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
-|клиентов|5 |Клиентов|
-|Элемент paloaltoglobalprotect|6 |Palo Alto сети Глобалпротект.|
-|микрософттуннел|7 |Туннель Microsoft.|
-|нетмотионмобилити|8 |Мобильность Нетмотион.|
+|ciscoAnyConnect|0|Cisco AnyConnect.|
+|pulseSecure|1 |Pulse Secure.|
+|f5EdgeClient|2 |F5 Edge Client.|
+|dellSonicWallMobileConnect|3 |Dell SonicWALL Mobile Connection.|
+|checkPointCapsuleVpn|4 |Check Point Vpn Vpn.|
+|citrix|5 |Citrix|
+|paloAltoGlobalProtect|6 |Palo Alto Networks GlobalProtect.|
+|microsoftTunnel|7 |Microsoft Tunnel.|
+|netMotionMobility|8 |NetMotion Mobility.|
+|microsoftProtect|9 |Защита (Майкрософт).|
 
 
 

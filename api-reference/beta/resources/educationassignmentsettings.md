@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c670cb2bbef0b82ff80996e4acb52c2826ec118f
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: d5990453eefbe63013ecfa0be03ff5b4d99330fa
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034359"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153655"
 ---
 # <a name="educationassignmentsettings-resource-type"></a>Тип ресурса educationAssignmentSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "50034359"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|submissionAnimationDisabled|Логический|Указывает, будет ли показана анимация поозднения. Значение `true` указывает, что анимация не будет показана. Значение по умолчанию: `false`.|
+|submissionAnimationDisabled|Boolean|Указывает, будет ли показана анимация поозднения. Значение `true` указывает, что анимация не будет показана. Значение по умолчанию: `false`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -40,7 +40,6 @@ ms.locfileid: "50034359"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.educationAssignmentSettings",
-  "baseType": "",
   "openType": false
 }
 -->

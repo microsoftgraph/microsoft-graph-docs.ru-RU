@@ -1,26 +1,26 @@
 ---
-title: Создание Усерекспериенцеаналитиксметричистори
-description: Создание нового объекта Усерекспериенцеаналитиксметричистори.
+title: Создание userExperienceAnalyticsMetricHistory
+description: Создание объекта userExperienceAnalyticsMetricHistory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e552d1ee052572baddd484535b9395d1daca261
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 070c34b225ab49eb7625c313544a785d7cc3e518
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49234148"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155057"
 ---
-# <a name="create-userexperienceanalyticsmetrichistory"></a>Создание Усерекспериенцеаналитиксметричистори
+# <a name="create-userexperienceanalyticsmetrichistory"></a>Создание userExperienceAnalyticsMetricHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) .
+Создание объекта [userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49234148"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,19 +47,20 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксметричистори в формате JSON.
+В теле запроса укажу представление объекта userExperienceAnalyticsMetricHistory в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксметричистори.
+В следующей таблице показаны свойства, необходимые при создании объекта userExperienceAnalyticsMetricHistory.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор истории метрики аналитики взаимодействия с пользователем.|
-|метрикдатетиме|DateTimeOffset|Дата и время метрики аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор истории показателей аналитики пользовательского интерфейса.|
+|metricDateTime|DateTimeOffset|Дата даты анализа пользовательского интерфейса.|
+|metricType|String|Тип метрики аналитики пользовательского интерфейса.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,11 +69,12 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory
 Content-type: application/json
-Content-length: 136
+Content-length: 174
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
-  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
+  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
+  "metricType": "Metric Type value"
 }
 ```
 
@@ -81,12 +83,13 @@ Content-length: 136
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 185
+Content-Length: 223
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
-  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
+  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
+  "metricType": "Metric Type value"
 }
 ```
 

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Воркбукоператион
+title: Тип ресурса workbookOperation
 description: Представляет состояние длительных операций с книгой.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 957f94087fa8c11cf3a5cc794bf194e21bbba346
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04dc2afc707c4a991f9bb638102bb7180f9b1fab
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075380"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154231"
 ---
-# <a name="workbookoperation-resource-type"></a>Тип ресурса Воркбукоператион
+# <a name="workbookoperation-resource-type"></a>Тип ресурса workbookOperation
 
 Представляет состояние длительной операции с книгой.
 
@@ -20,18 +20,18 @@ ms.locfileid: "48075380"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Воркбукоператион](../api/workbookoperation-get.md) | [воркбукоператион](workbookoperation.md) | Получение состояния объекта **воркбукоператион** . |
+| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Извлечение состояния объекта **workbookOperation.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Идентификатор операции. только для чтения.|
+|id|String| ИД операции. Только для чтения.|
 |status|String| Текущее состояние операции. Возможные значения: `notStarted`, `running`, `succeeded`, `failed`.|
-|error|[воркбукоператионеррор](workbookoperationerror.md)| Ошибка, возвращенная операцией.|
-|ресаурцелокатион|String| URI ресурса для результата.|
+|error|[workbookOperationError](workbookoperationerror.md)| Ошибка, возвращенная операцией.|
+|resourceLocation|String| URI ресурса для результата.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -45,7 +45,6 @@ ms.locfileid: "48075380"
 
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

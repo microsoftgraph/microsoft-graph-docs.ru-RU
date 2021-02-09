@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса основы
-description: Представляет абстрактный базовый тип для типов политик, от которых наследуется наследование.
+title: Тип ресурса policyBase
+description: Представляет абстрактный базовый тип для типов политик, от которые необходимо наследовать.
 localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 527549d4af2e2fb103cb7d2484d844fd3c876e4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6b3f0951248bcfe3571f218549f952a27cf7b92
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033645"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153615"
 ---
-# <a name="policybase-resource-type"></a>Тип ресурса основы
+# <a name="policybase-resource-type"></a>Тип ресурса policyBase
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет абстрактный базовый тип для типов политик, от которых наследуется наследование.
+Представляет абстрактный базовый тип для типов политик, от которые необходимо наследовать.
 
 ## <a name="methods"></a>Методы
 
@@ -29,10 +29,10 @@ ms.locfileid: "48033645"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|description|String| Описание для этой политики.|
-|displayName|String| Отображаемое имя для этой политики. |
+|description|String| Описание этой политики.|
+|displayName|String| Отображаемого имени для этой политики. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -46,7 +46,6 @@ ms.locfileid: "48033645"
 
   ],
   "@odata.type": "microsoft.graph.policyBase",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

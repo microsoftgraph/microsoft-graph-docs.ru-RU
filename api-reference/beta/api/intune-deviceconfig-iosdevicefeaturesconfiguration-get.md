@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ae84e46e7b843f84d4c44c76bc23b08ad248b63
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 927645df8c0657115a914e1f6c8796a6bdfe516b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49265173"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153993"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>Get iosDeviceFeaturesConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "49265173"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7359
+Content-Length: 7435
 
 {
   "value": {
@@ -148,7 +148,8 @@ Content-Length: 7359
               {
                 "@odata.type": "microsoft.graph.iosHomeScreenApp",
                 "displayName": "Display Name value",
-                "bundleID": "Bundle ID value"
+                "bundleID": "Bundle ID value",
+                "isWebClip": true
               }
             ]
           }
@@ -171,7 +172,8 @@ Content-Length: 7359
                   {
                     "@odata.type": "microsoft.graph.iosHomeScreenApp",
                     "displayName": "Display Name value",
-                    "bundleID": "Bundle ID value"
+                    "bundleID": "Bundle ID value",
+                    "isWebClip": true
                   }
                 ]
               }

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a82ad6733060856cf5607d9dd5afb494a62dca1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 811f86578531f23e42b09fe1a26c9bcc21c17168
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49249150"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155358"
 ---
 # <a name="update-mobileappassignment"></a>Обновление объекта mobileAppAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "49249150"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -58,7 +58,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, который является источником для назначения. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|String|Идентификатор источника назначения.|
+|sourceId|String|Идентификатор источника назначения.|
 
 
 
@@ -72,7 +72,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 591
+Content-length: 617
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -85,7 +85,8 @@ Content-length: 591
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -97,7 +98,7 @@ Content-length: 591
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 640
+Content-Length: 666
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -111,7 +112,8 @@ Content-Length: 640
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"

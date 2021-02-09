@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Едукатионпоинтсауткоме
-description: Объект Едукатионауткоме, который дает числовой уровень
+title: Тип ресурса educationPointsOutcome
+description: EducationOutcome, который дает числовую оценку
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: eb8c95fa7d13f57cca2c2fe19d7b992e6e2cab98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ebf9a0bf12b7c4a78f28c9d75c93469afec2c34c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049753"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153632"
 ---
-# <a name="educationpointsoutcome-resource-type"></a>Тип ресурса Едукатионпоинтсауткоме
+# <a name="educationpointsoutcome-resource-type"></a>Тип ресурса educationPointsOutcome
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Едукатионауткоме](educationoutcome.md) , который предоставляет числовой уровень.
+[EducationOutcome,](educationoutcome.md) который дает числовую оценку.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Обновление Едукатионауткоме](../api/educationoutcome-update.md) | [едукатионауткоме](educationoutcome.md) | Обновление объекта Едукатионауткоме. |
+| [Обновление educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Обновление объекта educationOutcome. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|points|[едукатионассигнментпоинтсграде](educationassignmentpointsgrade.md)|Числовое значение, которое преподаватель приделил студенту для этого назначения.|
-|публишедпоинтс|[едукатионассигнментпоинтсграде](educationassignmentpointsgrade.md)|Копия свойства Points, которое устанавливается при отпадении уровня на учащийся.|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Числовая оценка, присвоенная преподавателем для этого задания.|
+|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Копия свойства points, которая сделана при отписке оценки учащемуся.|
 
 ## <a name="relationships"></a>Связи
 
@@ -47,7 +47,6 @@ ms.locfileid: "48049753"
 
   ],
   "@odata.type": "microsoft.graph.educationPointsOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

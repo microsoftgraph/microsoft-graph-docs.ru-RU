@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57a2b8f793a96d6d352893147019f071d774ae71
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d5bcf218aea3870fa98a59b5b71ffa304bf0ba2e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49310813"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155148"
 ---
 # <a name="assign-action"></a>Действие назначения
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -53,8 +53,8 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицеманажементскриптграупассигнментс|Коллекция [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Пока не задокументировано.|
-|девицеманажементскриптассигнментс|Коллекция [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md)|Пока не задокументировано.|
+|deviceManagementScriptGroupAssignments|[Коллекция deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Пока не задокументировано.|
+|deviceManagementScriptAssignments|[Коллекция deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Пока не задокументировано.|
 
 
 
@@ -69,7 +69,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/assign
 
 Content-type: application/json
-Content-length: 713
+Content-length: 781
 
 {
   "deviceManagementScriptGroupAssignments": [
@@ -84,9 +84,10 @@ Content-length: 713
       "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
       "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

@@ -1,26 +1,26 @@
 ---
-title: Создание Мобилеаппдепенденци
-description: Создание нового объекта Мобилеаппдепенденци.
+title: Создание mobileAppDependency
+description: Создание объекта mobileAppDependency.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc7fa701835678deb9256b36f0aa9fe9dceb75a6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7b88594fe645780c538d3b44b2b0b0958bf022b3
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49248590"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155344"
 ---
-# <a name="create-mobileappdependency"></a>Создание Мобилеаппдепенденци
+# <a name="create-mobileappdependency"></a>Создание mobileAppDependency
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) .
+Создание объекта [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49248590"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,25 +47,26 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Мобилеаппдепенденци в формате JSON.
+В теле запроса укажу представление объекта mobileAppDependency в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании Мобилеаппдепенденци.
+В следующей таблице показаны свойства, необходимые при создании объекта mobileAppDependency.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|Идентификатор приложения целевого приложения для мобильных устройств. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетдисплайверсион|String|Версия отображения целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетпублишер|String|Издатель целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md). Возможные значения: `child`, `parent`.|
-|депенденцитипе|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
-|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
+|id|String|ИД сущности отношения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|String|ИД целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|String|Отображаемое имя целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|Отображаемая версия целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|Издатель целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или родительским. Наследуется [от mobileAppRelationship.](../resources/intune-apps-mobileapprelationship.md) Возможные значения: `child`, `parent`.|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимостей между родительским и родительским приложениями. Возможные значения: `detect`, `autoInstall`.|
+|dependentAppCount|Int32|Общее количество приложений, которые напрямую или косвенно зависят от родительского приложения.|
+|dependsOnAppCount|Int32|Общее количество приложений, от которых непосредственно или косвенно зависит это приложение.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -74,7 +75,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Content-type: application/json
-Content-length: 345
+Content-length: 372
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
@@ -84,7 +85,8 @@ Content-length: 345
   "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "dependsOnAppCount": 1
 }
 ```
 
@@ -93,7 +95,7 @@ Content-length: 345
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 394
+Content-Length: 421
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
@@ -104,7 +106,8 @@ Content-Length: 394
   "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "dependsOnAppCount": 1
 }
 ```
 

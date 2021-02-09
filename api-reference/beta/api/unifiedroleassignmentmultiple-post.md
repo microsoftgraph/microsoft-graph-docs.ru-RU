@@ -1,16 +1,16 @@
 ---
 title: Создание unifiedRoleAssignmentMultiple
-description: Создание нового объекта Унифиедролеассигнментмултипле.
+description: Создание объекта unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: be9c7fc4d2e5df4eadcab349e6ef7e7bf1d872fd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cf393fb8a47bc797993120fc7a23865b5647fae4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978113"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154707"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Создание unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978113"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) . Используйте этот объект для создания назначений ролей в Microsoft Intune. Для других приложений Микрсофт 365 (например, Azure AD) используйте [унифиедролеассигнмент](../resources/unifiedroleassignment.md).
+Создание объекта [unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте этот объект для создания назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978113"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения | DeviceManagementRBAC.ReadWrite.All |
+| Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,19 +47,20 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeIds` , или область, зависящая от приложения, например `appScopeId` . Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. 
+В теле запроса укатите представление объекта [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в JSON. Запрос должен иметь область, определенную в Azure AD, например, область `directoryScopeIds` приложения, `appScopeId` например. Примерами области Azure AD являются клиент ("/"), административные единицы или приложения. 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>Пример 1: Создание назначения роли в Intune для двух групп областей (которые являются объектами Azure AD)
+### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>Пример 1. Создание назначения роли в Intune для двух групп областей (которые являются объектами Azure AD)
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Обратите внимание на использование параметра **ролетемплатеид** для **роледефинитионид**. **роледефинитионид** может быть либо идентификатором шаблона на уровне службы, либо **роледефинитионид** , зависящим от каталога.
+Ниже приведен пример запроса.
+> **Примечание.** Использование **roleTemplateId** для **roleDefinitionId.** **roleDefinitionId** может быть либо ИД шаблона для всей службы, либо каталогом **roleDefinitionId.**
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -124,12 +125,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-role-assignment-in-intune-at-intune-specific-scope-of-all-devices"></a>Пример 2: Создание назначения роли в Intune в области, зависящей от Intune, для "All Devices".
+### <a name="example-2-create-a-role-assignment-in-intune-at-intune-specific-scope-of-all-devices"></a>Пример 2. Создание назначения роли в Intune в определенной для Intune области "все устройства"
 
 Используйте следующие сведения для создания назначений ролей Intune:
-- Чтобы разрешить назначения на всех устройствах Intune, используйте `AllDevices` значение в **аппскопеидс**.
-- Чтобы разрешить назначения для всех пользователей, лицензированных в Intune, используйте `AllLicensedUsers` значение в **аппскопеидс**.
-- Чтобы разрешить назначения для всех устройств Intune и лицензированных пользователей, используйте `/` значение в **директорископеидс**.
+- Чтобы разрешить назначения на всех устройствах Intune, используйте значение `AllDevices` **в appScopeIds.**
+- Чтобы разрешить назначения всем лицензированным пользователям Intune, используйте значение `AllLicensedUsers` **в appScopeIds.**
+- Чтобы разрешить назначения для всех устройств Intune и лицензированных пользователей, используйте значение `/` **в directoryScopeIds.**
 
 #### <a name="request"></a>Запрос
 

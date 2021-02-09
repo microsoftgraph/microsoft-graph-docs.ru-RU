@@ -1,26 +1,26 @@
 ---
-title: Получение windowsPhone81AppXBundle
+title: Get windowsPhone81AppXBundle
 description: Чтение свойств и связей объекта windowsPhone81AppXBundle.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c365f95e7da280164f71d87312acc9fa85139ea7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a4a9ac2fe548a9424223532c41340a3d0cda9ef5
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49246695"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154693"
 ---
-# <a name="get-windowsphone81appxbundle"></a>Получение windowsPhone81AppXBundle
+# <a name="get-windowsphone81appxbundle"></a>Get windowsPhone81AppXBundle
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) .
+Чтение свойств и связей объекта [windowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49246695"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +55,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2703
+Content-Length: 2811
 
 {
   "value": {
@@ -118,7 +118,9 @@ Content-Length: 2703
       "v10_1709": true,
       "v10_1803": true,
       "v10_1809": true,
-      "v10_1903": true
+      "v10_1903": true,
+      "v10_1909": true,
+      "v10_2004": true
     },
     "phoneProductIdentifier": "Phone Product Identifier value",
     "phonePublisherId": "Phone Publisher Id value",
@@ -142,7 +144,9 @@ Content-Length: 2703
           "v10_1709": true,
           "v10_1803": true,
           "v10_1809": true,
-          "v10_1903": true
+          "v10_1903": true,
+          "v10_1909": true,
+          "v10_2004": true
         }
       }
     ]

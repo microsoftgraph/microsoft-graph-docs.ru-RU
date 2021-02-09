@@ -1,26 +1,26 @@
 ---
-title: Список Граупполициконфигуратионассигнментс
-description: Список свойств и связей объектов Граупполициконфигуратионассигнмент.
+title: Список groupPolicyConfigurationAssignments
+description: Список свойств и связей объектов groupPolicyConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 917dedddd24e751311e7f8cfedc8a772930ee846
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 54601807802df51ef984761e8558795d2b11abb7
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49306018"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153937"
 ---
-# <a name="list-grouppolicyconfigurationassignments"></a>Список Граупполициконфигуратионассигнментс
+# <a name="list-grouppolicyconfigurationassignments"></a>Список groupPolicyConfigurationAssignments
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) .
+Список свойств и связей объектов [groupPolicyConfigurationAssignment.](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/ass
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 507
+Content-Length: 575
 
 {
   "value": [
@@ -74,9 +74,10 @@ Content-Length: 507
       "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

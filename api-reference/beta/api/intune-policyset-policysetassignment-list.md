@@ -1,26 +1,26 @@
 ---
-title: Список Полицисетассигнментс
-description: Список свойств и связей объектов Полицисетассигнмент.
+title: Список policySetAssignments
+description: Список свойств и связей объектов policySetAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ae01c255808b12cbc3652d5e5efaa0cc503af30
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b4e7eda14f5dadab6be9d00950dd8ce044ab9240
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49224161"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153740"
 ---
-# <a name="list-policysetassignments"></a>Список Полицисетассигнментс
+# <a name="list-policysetassignments"></a>Список policySetAssignments
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md) .
+Список свойств и связей объектов [policySetAssignment.](../resources/intune-policyset-policysetassignment.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49224161"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/assignments
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [policySetAssignment](../resources/intune-policyset-policysetassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 492
+Content-Length: 560
 
 {
   "value": [
@@ -74,9 +74,10 @@ Content-Length: 492
       "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

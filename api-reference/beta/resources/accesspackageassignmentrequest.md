@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9ecaa9b77a92dc6393b3c7231976937e36502c8d
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 7ce7d47ccb4e911689e9398c2514cb8311b3ae0a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719757"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155613"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>Тип ресурса accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "49719757"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа, или от его имени. В случае успешного выполнения запроса с любыми необходимыми утверждениями пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также автоматически создает запросы на назначение пакета доступа для отслеживания удаления доступа.
+В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа, или от его имени. В случае успешного выполнения запроса с необходимыми утверждениями пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также автоматически создает запросы на назначение пакета доступа для отслеживания удаления доступа.
 
 ## <a name="methods"></a>Методы
 
@@ -37,14 +37,14 @@ ms.locfileid: "49719757"
 |id|String| Только для чтения.|
 |isValidationOnly|Boolean|Имеет true, если запрос не обрабатывается для назначения.|
 |обоснование|String|Предоставленная запросителем обоснование.|
-|requestState|String|Один из `PendingApproval` , , , или `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` . Только для чтения.|
+|requestState|String|Один из `PendingApproval` , , , , , , или `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` . Только для чтения.|
 |requestStatus|String|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
 |requestType|String|Один из `UserAdd` , , , или `UserRemove` `AdminAdd` `AdminRemove` `SystemRemove` . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove` . Только для чтения.|
 |schedule|[requestSchedule](requestschedule.md)| Диапазон дат, в которые должен быть назначен доступ запрашиваемой информации. Только для чтения.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Для requestType или , это назначение пакета доступа `UserAdd` `AdminAdd` запрашивается для создания.  Для объекта requestType или , это свойство существующего `UserRemove` `AdminRemove` `SystemRemove` `id` назначения, который необходимо удалить.|
 |answers|[Коллекция accessPackageAnswer](accesspackageanswer.md)|Ответы, предоставленные запрашивателем [для accessPackageQuestions,](accesspackagequestion.md) которые запрашивали их во время запроса.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -60,7 +60,6 @@ ms.locfileid: "49719757"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

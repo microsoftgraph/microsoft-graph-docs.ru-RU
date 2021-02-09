@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Акцесспаккажеассигнментресаурцероле
-description: Роль ресурса назначения пакета Access указывает на роль, связанную с определенным ресурсом, которой назначена тема с помощью назначения пакета Access.
+title: Тип ресурса accessPackageAssignmentResourceRole
+description: Роль ресурса назначения пакета доступа указывает роль, относяющуюся к ресурсу, которая была назначена субъекту посредством назначения пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8bf839d68db3f54df5a27601a4a05463e013fbef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b4893d40db8b5ac70a2ac3093d8dfbdf55c3175
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089863"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155603"
 ---
-# <a name="accesspackageassignmentresourcerole-resource-type"></a>Тип ресурса Акцесспаккажеассигнментресаурцероле
+# <a name="accesspackageassignmentresourcerole-resource-type"></a>Тип ресурса accessPackageAssignmentResourceRole
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В разделе [Управление обслуживанием в Azure AD](entitlementmanagement-root.md)роль ресурса назначения пакета Access указывает роль, связанную с определенным ресурсом, которой назначена тема с помощью назначения пакета Access.
+В [управлении правами Azure AD](entitlementmanagement-root.md)роль ресурса назначения пакета доступа указывает роль, относяющуюся к ресурсу, которой субъект был назначен посредством назначения пакета доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Акцесспаккажеассигнментресаурцероле](../api/accesspackageassignmentresourcerole-get.md) | [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md)  | Получение объекта Акцесспаккажеассигнментресаурцероле. |
-| [Список Акцесспаккажеассигнментресаурцеролес](../api/accesspackageassignmentresourcerole-list.md) | Коллекция [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md) | Получение списка объектов Акцесспаккажеассигнментресаурцероле. |
+| [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Извлечение объекта accessPackageAssignmentResourceRole. |
+| [Список accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [Коллекция accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Получить список объектов accessPackageAssignmentResourceRole. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
-|оригинид|Строка|Уникальный идентификатор, относящийся к исходной системе, соответствующий свойству Оригинид объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md). |
-|оригинсистем|Строка|Система, в которой необходимо создать назначение роли или она была создана для назначения пакета Access, например `SharePointOnline` , `AadGroup` или `AadApplication` соответствующего свойству оригинсистем объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md).|
-|status|String|Это значение используется, `PendingFulfillment` когда назначение пакета Access еще не было доставлено в исходную систему, и `Fulfilled` когда назначение пакета Access было доставлено в исходную систему.|
+|originId|String|Уникальный идентификатор относительно системы источника, соответствующий свойству originId [объекта accessPackageResourceRole.](accesspackageresourcerole.md) |
+|originSystem|String|Система, в которой должно быть создано назначение роли или создано для назначения пакета доступа, например , или ,, соответствующие свойству `SharePointOnline` `AadGroup` `AadApplication` originSystem [accessPackageResourceRole](accesspackageresourcerole.md).|
+|status|String|Значением является то, когда назначение пакета доступа еще не было доставлено в систему источника и когда назначение пакета доступа было доставлено в систему `PendingFulfillment` `Fulfilled` источника.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажеассигнментс|Коллекция [акцесспаккажеассигнмент](accesspackageassignment.md)| Назначения для пакетов Access, которые применяют это назначение роли. Только для чтения. Допускается значение null.|
-|акцесспаккажересаурцероле|[акцесспаккажересаурцероле](accesspackageresourcerole.md)| Только для чтения. Допускается значение null.|
-|акцесспаккажересаурцескопе|[акцесспаккажересаурцескопе](accesspackageresourcescope.md)| Только для чтения. Допускается значение null.|
-|акцесспаккажесубжект|[акцесспаккажесубжект](accesspackagesubject.md)| Только для чтения. Допускается значение null.|
+|accessPackageAssignments|[Коллекция accessPackageAssignment](accesspackageassignment.md)| Назначения пакета доступа, в результате чего это назначение роли. Только для чтения. Допускается значение null.|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Только для чтения. Допускается значение null.|
+|accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Только для чтения. Допускается значение null.|
+|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Только для чтения. Допускается значение null.|
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,7 +56,6 @@ ms.locfileid: "48089863"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignmentResourceRole",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

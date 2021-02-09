@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c963030980e96c5baabe8bcfe9103d4dc5167979
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 34716752715399d1e16f7edeb609eace4c9b9b0b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719764"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155617"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>Тип ресурса accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "49719764"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)политика назначения пакета доступа определяет политику, с помощью которой субъекты могут запрашивать или получать пакет доступа через назначение пакета доступа. Пакет доступа может иметь ноль или несколько политик. При получении запроса от субъекта тема соедется с каждой политикой, чтобы найти политику (если таково) с requestorSettings, которые включают эту тему. Затем политика определяет, требуется ли утверждение запроса, продолжительность назначения пакета доступа и требуется ли регулярно проверять назначение.
+В управлении правами [Azure AD](entitlementmanagement-root.md)политика назначения пакета доступа определяет политику, с помощью которой субъекты могут запрашивать или получать пакет доступа через назначение пакета доступа. Пакет доступа может иметь ноль или несколько политик. При получении запроса от субъекта тема со встречена с каждой политикой, чтобы найти политику (если таково) с requestorSettings, включающие эту тему. Затем политика определяет, требуется ли утверждение запроса, продолжительность назначения пакета доступа и требуется ли регулярно проверять назначение.
 
 Чтобы назначить пользователя пакету доступа, создайте [accessPackageAssignmentRequest,](../api/accesspackageassignmentrequest-post.md) который ссылается на пакет доступа и политику назначения пакета доступа.
 
@@ -54,7 +54,7 @@ ms.locfileid: "49719764"
 |вопросы|[Коллекция accessPackageQuestion](accesspackagequestion.md)|Вопросы, которые представляют запросителем.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -70,7 +70,6 @@ ms.locfileid: "49719764"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

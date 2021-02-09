@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Едукатионфидбаккауткоме
-description: Объект Едукатионауткоме, который дает отзыв в виде текста.
+title: Тип ресурса educationFeedbackOutcome
+description: EducationOutcome, который дает отзыв в виде текста.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b1b768fbb87804d2df16e6300cc14d71283461c0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c50776f6b8dde27d8f937e8b7ee2028ce1cfca1
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095466"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153657"
 ---
-# <a name="educationfeedbackoutcome-resource-type"></a>Тип ресурса Едукатионфидбаккауткоме
+# <a name="educationfeedbackoutcome-resource-type"></a>Тип ресурса educationFeedbackOutcome
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет обратную связь для объекта [едукатионауткоме](educationoutcome.md) в виде текста. 
+Представляет отзыв об [объекте educationOutcome](educationoutcome.md) в виде текста. 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Обновление Едукатионауткоме](../api/educationoutcome-update.md) | [едукатионауткоме](educationoutcome.md) | Обновление объекта Едукатионауткоме. |
+| [Обновление educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Обновление объекта educationOutcome. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|feedback|[едукатионфидбакк](educationfeedback.md)|Письменный отзыв учащегося.|
-|публишедфидбакк|[едукатионфидбакк](educationfeedback.md)|Копия свойства обратной связи, выполняемого при отпадении оценки на учащийся.|
+|feedback|[educationFeedback](educationfeedback.md)|Письменный отзыв преподавателя для учащегося.|
+|publishedFeedback|[educationFeedback](educationfeedback.md)|Копия свойства обратной связи, которая выдана учащемуся после выпуска оценки.|
 
 ## <a name="relationships"></a>Связи
 
@@ -47,7 +47,6 @@ ms.locfileid: "48095466"
 
   ],
   "@odata.type": "microsoft.graph.educationFeedbackOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

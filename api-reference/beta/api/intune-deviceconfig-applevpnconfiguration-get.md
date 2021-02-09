@@ -1,26 +1,26 @@
 ---
-title: Получение appleVpnConfiguration
+title: Get appleVpnConfiguration
 description: Чтение свойств и связей объекта appleVpnConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97af74a3bff1357213267180cb1ce4c3c57add36
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3e4444619f2b4b3a23477de27d4ae475479de9b9
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221080"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154679"
 ---
-# <a name="get-applevpnconfiguration"></a>Получение appleVpnConfiguration
+# <a name="get-applevpnconfiguration"></a>Get appleVpnConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) .
+Чтение свойств и связей объекта [appleVpnConfiguration.](../resources/intune-deviceconfig-applevpnconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49221080"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3140
+Content-Length: 3210
 
 {
   "value": {
@@ -157,6 +157,9 @@ Content-Length: 3140
       }
     ],
     "providerType": "appProxy",
+    "associatedDomains": [
+      "Associated Domains value"
+    ],
     "excludedDomains": [
       "Excluded Domains value"
     ],

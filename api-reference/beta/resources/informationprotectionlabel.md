@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Информатионпротектионлабел
-description: Описывает метку Information Protection, которая подробно описывает, как правильно применять метку конфиденциальности к данным.
+title: Тип ресурса informationProtectionLabel
+description: Описание метки защиты информации, которая описывает, как правильно применить метку конфиденциальности к информации.
 localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b634166896932897b200d2eeb17a1e54aadb543
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 694015f819d1c1afc9fe9feb23c67c92c05eed70
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021943"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153636"
 ---
-# <a name="informationprotectionlabel-resource-type"></a>Тип ресурса Информатионпротектионлабел
+# <a name="informationprotectionlabel-resource-type"></a>Тип ресурса informationProtectionLabel
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает метку Information Protection, которая подробно описывает, как правильно применять метку конфиденциальности к данным. Ресурс **информатионпротектионлабел** описывает конфигурацию меток конфиденциальности, которые применяются к пользователю или клиенту.  
+Описание метки защиты информации, которая описывает, как правильно применить метку конфиденциальности к информации. Ресурс **informationProtectionLabel** описывает конфигурацию меток конфиденциальности, которые применяются к пользователю или арендатору.  
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                                                              | Возвращаемый тип                                                               | Описание                                                                                                                                                            |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Список Информатионпротектионлабел](../api/informationprotectionpolicy-list-labels.md)                | Коллекция [информатионпротектионлабел](informationprotectionlabel.md) | Перечисление всех настроенных меток защиты информации для пользователя или клиента.                                                                                                |
-| [Получение Информатионпротектионлабел](../api/informationprotectionlabel-get.md)                          | [информатионпротектионлабел](informationprotectionlabel.md)               | При наличии определенного идентификатора метки возвратите **информатионпротектионлабел**.                                                                                                  |
-| [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md)                     | Коллекция [информатионпротектионактион](informationprotectionaction.md)  | При наличии входных данных для [контентинфо](contentinfo.md) и [лабелингоптионс](labelingoptions.md)расчет набора действий требует применения метки.                      |
-| [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) | Коллекция [информатионпротектионактион](informationprotectionaction.md)  | Имея входные данные о [контентинфо](contentinfo.md) и классификации, вычислите набор действий, необходимых для применения метки.                                  |
-| [евалуатеремовал](../api/informationprotectionlabel-evaluateremoval.md)                             | Коллекция [информатионпротектионактион](informationprotectionaction.md)  | При наличии входных данных для [контентинфо](contentinfo.md) и [довнградежустификатион](downgradejustification.md)вычисляет действия, которые следует предпринять для удаления метки. |
-| [екстрактлабел](../api/informationprotectionlabel-extractlabel.md)                                   | [информатионпротектионконтентлабел](informationprotectioncontentlabel.md) | При наличии входных данных [контентинфо](contentinfo.md)возвращает сведения о [информатионпротектионлабел](informationprotectionlabel.md) , которые представляют метаданные.       |
+| [Список informationProtectionLabel](../api/informationprotectionpolicy-list-labels.md)                | [Коллекция informationProtectionLabel](informationprotectionlabel.md) | Список всех настроенных меток защиты информации для пользователя или клиента.                                                                                                |
+| [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | С учетом определенного ИД метки **вернете informationProtectionLabel.**                                                                                                  |
+| [evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)                     | [Коллекция informationProtectionAction](informationprotectionaction.md)  | Учитывая входные данные [contentInfo](contentinfo.md) и [labelingOptions,](labelingoptions.md)вычислите набор действий, необходимых для применения метки.                      |
+| [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [Коллекция informationProtectionAction](informationprotectionaction.md)  | С учетом [входных данных contentInfo](contentinfo.md) и результатов классификации вычислить набор действий, необходимых для применения метки.                                  |
+| [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [Коллекция informationProtectionAction](informationprotectionaction.md)  | Учитывая входные данные [contentInfo](contentinfo.md) и [downgradeJustification,](downgradejustification.md)вычислите действия, которые необходимо принять для удаления метки. |
+| [extractLabel](../api/informationprotectionlabel-extractlabel.md)                                   | [informationProtectionContentLabel](informationprotectioncontentlabel.md) | При вводе [contentInfo](contentinfo.md)возвращает сведения о [метке informationProtectionLabel,](informationprotectionlabel.md) которую представляют метаданные.       |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип    | Описание                                                                                     |
 | :---------- | :------ | :---------------------------------------------------------------------------------------------- |
-| color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если она настроена.                              |
-| description | String  | Заданное администратором описание метки.                                                    |
-| id          | String  | ИДЕНТИФИКАТОР метки является глобальным уникальным идентификатором (GUID)                                             |
+| color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если он настроен.                              |
+| description | String  | Описание метки, определенное администратором.                                                    |
+| id          | String  | Идентификатор метки — это глобальный уникальный идентификатор (GUID)                                             |
 | isActive    | Boolean | Указывает, активна ли метка. Активные метки должны быть скрыты или отключены в пользовательском интерфейсе. |
-| name        | String  | Имя в виде открытого текста метки.                                                                |
-| sensitivity | Int32   | Значение чувствительности метки, где меньше конфиденциально.                              |
-| tooltip     | String  | Всплывающая подсказка, отображаемая для метки в пользовательском интерфейсе.                                     |
+| name        | String  | Обычное имя метки.                                                                |
+| sensitivity | Int32   | Значение конфиденциальности метки, где меньшее значение менее конфиденциально.                              |
+| tooltip     | String  | The tooltip that should be displayed for the label in a UI.                                     |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -57,7 +57,6 @@ ms.locfileid: "48021943"
 
   ],
   "@odata.type": "microsoft.graph.informationProtectionLabel",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

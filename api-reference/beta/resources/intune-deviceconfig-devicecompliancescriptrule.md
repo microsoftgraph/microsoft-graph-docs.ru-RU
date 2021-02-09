@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Девицекомплианцескриптруле
+title: Тип ресурса deviceComplianceScriptRule
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29264e89f3c935d473161edb2c4fbad3bb88849b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 169c286043e4c1ec7b9b16e45fa6fb4520781211
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260265"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154903"
 ---
-# <a name="devicecompliancescriptrule-resource-type"></a>Тип ресурса Девицекомплианцескриптруле
+# <a name="devicecompliancescriptrule-resource-type"></a>Тип ресурса deviceComplianceScriptRule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -26,9 +26,11 @@ ms.locfileid: "49260265"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |settingName|String|Имя параметра, указанное в правиле.|
-|operator|[operator](../resources/intune-deviceconfig-operator.md)|Оператор, указанный в правиле. Возможные значения:,,,,,,,,,,, `none` `and` `or` `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` , `notBeginsWith` ,,, `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` ,, `excludesAll` ,,,,,,,,,,,,,.|
-|dataType|[DataType](../resources/intune-deviceconfig-datatype.md)|Тип данных, указанный в правиле. Возможные значения: `none` , `boolean` ,,,,, `int64` `double` `string` `dateTime` `version` ,,, `base64` `xml` `booleanArray` , `int64Array` , `doubleArray` , `stringArray` , `dateTimeArray` , `versionArray` .|
-|начинается|String|Операнд, указанный в правиле.|
+|operator|[operator](../resources/intune-deviceconfig-operator.md)|Оператор, указанный в правиле. Возможные значения: `none` , , , `and` `or` `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` , `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` `notBeginsWith` `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` `excludesAll` .|
+|deviceComplianceScriptRulOperator|[deviceComplianceScriptRulOperator](../resources/intune-deviceconfig-devicecompliancescriptruloperator.md)|Оператор, указанный в правиле. Возможные значения: `none` , , , `and` `or` `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` , `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` `notBeginsWith` `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` `excludesAll` .|
+|dataType|[DataType](../resources/intune-deviceconfig-datatype.md)|Тип данных, указанный в правиле. Возможные значения: `none` , , , , , , , `boolean` , , `int64` , `double` `string` , `dateTime` `version` `base64` `xml` `booleanArray` `int64Array` `doubleArray` `stringArray` `dateTimeArray` . `versionArray`|
+|deviceComplianceScriptRuleDataType|[deviceComplianceScriptRuleDataType](../resources/intune-deviceconfig-devicecompliancescriptruledatatype.md)|Тип данных, указанный в правиле. Возможные значения: `none` , , , , , , , `boolean` , , `int64` , `double` `string` , `dateTime` `version` `base64` `xml` `booleanArray` `int64Array` `doubleArray` `stringArray` `dateTimeArray` . `versionArray`|
+|operand|String|Операнд, указанный в правиле.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +47,9 @@ ms.locfileid: "49260265"
   "@odata.type": "#microsoft.graph.deviceComplianceScriptRule",
   "settingName": "String",
   "operator": "String",
+  "deviceComplianceScriptRulOperator": "String",
   "dataType": "String",
+  "deviceComplianceScriptRuleDataType": "String",
   "operand": "String"
 }
 ```

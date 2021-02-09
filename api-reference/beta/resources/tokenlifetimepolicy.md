@@ -1,56 +1,56 @@
 ---
-title: Тип ресурса Токенлифетимеполици
-description: Представляет политику, которая может управлять временем существования маркера доступа, выданного Azure Active Directory.
+title: Тип ресурса tokenLifetimePolicy
+description: Представляет политику, которая может управлять сроком действия маркера доступа, выданного Azure Active Directory.
 localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 000adc837b85ff18842b009fbba5a7911f90fc2b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: bcfe06a8a42db4b0cfd5c8dab8da2b753e195f2c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401119"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155512"
 ---
-# <a name="tokenlifetimepolicy-resource-type"></a>Тип ресурса Токенлифетимеполици
+# <a name="tokenlifetimepolicy-resource-type"></a>Тип ресурса tokenLifetimePolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику, которая может управлять жизненным циклом маркера доступа JWT, маркером ID или маркером SAML 1.1/2.0, выданным Azure Active Directory (Azure AD). Вы можете задать время жизни маркеров для всех приложений в Организации, для приложения с несколькими клиентами (многоорганизации) или для определенного субъекта-службы в Организации.  Дополнительные сведения о сценариях см [в разделе Настраиваемые сроки жизни маркеров в Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+Представляет политику, которая может управлять сроком действия маркера доступа JWT, маркера ИД или маркера SAML 1.1/2.0, выданного Azure Active Directory (Azure AD). Жизненный цикл маркера можно задать для всех приложений в вашей организации, мультитенантного приложения (охватывающего несколько организаций) или отдельного субъекта-службы в вашей организации.  Дополнительные сведения о сценарии см. в сведениях [о настраиваемых сроках действия маркеров в Azure Active Directory.](/azure/active-directory/develop/active-directory-configurable-token-lifetimes)
 
->Note: Настройка этой политики для маркеров обновления и маркеров сеансов не поддерживается.
+>Примечание. Настройка этой политики для маркеров обновления и маркеров сеансов не поддерживается.
 
-Наследуется от [стсполици](stsPolicy.md).
+Наследуется от [stsPolicy.](stsPolicy.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание Токенлифетимеполици](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [токенлифетимеполици](tokenlifetimepolicy.md) | Создание объекта Токенлифетимеполици. |
-| [Получение Токенлифетимеполици](../api/tokenlifetimepolicy-get.md) | [токенлифетимеполици](tokenlifetimepolicy.md) | Чтение свойств и связей объекта Токенлифетимеполици. |
-| [Перечисление типов ресурсов tokenLifetimePolicy](../api/tokenlifetimepolicy-list.md) | [токенлифетимеполици](tokenlifetimepolicy.md) | Чтение свойств и связей объектов ТокенлифетимеполиЦиес. |
-| [Обновление Токенлифетимеполици](../api/tokenlifetimepolicy-update.md) | Нет | Обновление объекта Токенлифетимеполици. |
-| [Удаление Токенлифетимеполици](../api/tokenlifetimepolicy-delete.md) | Нет | Удаление объекта Токенлифетимеполици. |
-| [Список appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка Директорйобжектс, к которым применена эта политика. |
-| [Назначение типа ресурса tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | Нет | Назначьте объект Токенлифетимеполици объекту [Application](application.md) или [servicePrincipal](serviceprincipal.md) . |
-| [Список назначенных Токенлифетимеполици](../api/application-list-tokenlifetimepolicies.md) | Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md) | Перечисление объектов Токенлифетимеполици, назначенных [приложению](application.md) или объекту [servicePrincipal](serviceprincipal.md) . |
-| [Удаление типа ресурса tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | Нет | Удаление объекта Токенлифетимеполици из [приложения](application.md) или объекта [servicePrincipal](serviceprincipal.md) . |
+| [Создание tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Создание объекта tokenLifetimePolicy. |
+| [Get tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Чтение свойств и связей объекта tokenLifetimePolicy. |
+| [Перечисление типов ресурсов tokenLifetimePolicy](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Чтение свойств и связей объектов tokenLifetimePolicies. |
+| [Обновление tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | Нет | Обновление объекта tokenLifetimePolicy. |
+| [Удаление tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Нет | Удаление объекта tokenLifetimePolicy. |
+| [List appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получите список directoryObjects, к которые была применена эта политика. |
+| [Назначение типа ресурса tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | Нет | Назначьте объект tokenLifetimePolicy [объекту application](application.md) или [servicePrincipal.](serviceprincipal.md) |
+| [Список assigned tokenLifetimePolicy](../api/application-list-tokenlifetimepolicies.md) | Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md) | Список объектов tokenLifetimePolicy, которые назначены объекту [application](application.md) или [servicePrincipal.](serviceprincipal.md) |
+| [Удаление типа ресурса tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | Нет | Удаление объекта tokenLifetimePolicy из [объекта application](application.md) или [servicePrincipal.](serviceprincipal.md) |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики. Ниже приведены дополнительные сведения о схеме JSON для этого свойства. Обязательный.|
-|description|String| Описание для этой политики.|
-|displayName|String| Отображаемое имя для этой политики. Обязательно.|
-|исорганизатиондефаулт|Логический|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
+|definition|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
+|description|String| Описание этой политики.|
+|displayName|String| Отображаемого имени для этой политики. Обязательно.|
+|isOrganizationDefault|Boolean|Если установлено true, активирует эту политику. Для одного типа политики может быть несколько политик, но только одна может быть активирована в качестве организации по умолчанию. Необязательный, значение по умолчанию — false.|
 
 
-### <a name="properties-of-a-token-lifetime-policy-definition"></a>Свойства определения политики времени существования маркера
-Свойства, приведенные ниже, формируют объект JSON, представляющий политику времени существования маркеров. Этот объект JSON необходимо **преобразовать в строку с escape-символами** , которые будут вставлены в свойство **definition** . Ниже показан пример в формате JSON.
+### <a name="properties-of-a-token-lifetime-policy-definition"></a>Свойства определения политики жизненного срока действия маркера
+Ниже properties form the JSON object that represents a token lifetime policy. Этот объект JSON необходимо **преобразовать** в строку с escape-кавычками, чтобы вставить его в **свойство** определения. Пример показан ниже в формате JSON:
 
 <!-- {
   "blockType": "ignored"
@@ -61,20 +61,20 @@ ms.locfileid: "48401119"
   ]
 ```
 
->Note: все временные интервалы в этих свойствах указаны в формате "DD. чч: мм: СС".
+>Примечание. Все сроки в этих свойствах заданы в формате "дд.чч:мм:сс".
 
->Note: Max Values для свойств, обозначенных в "Days", — 1 секунды, обозначенное как количество дней. Например, максимальное значение в 1 день задается как "23:59:59".
+>Примечание. Максимальное количество свойств, обозначаемого в "днях", составляет 1 секунду от заметимого количества дней. Например, максимальное значение 1 дня указывается как "23:59:59".
 
-| Свойство     | Тип   |Описание| Минимальное значение | Максимальное значение | Значение по умолчанию|
+| Свойство     | Тип   |Описание| Min Value | Максимальное значение | Значение по умолчанию|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|акцесстокенлифетиме|String|Управляет тем, как долго считаются действительными маркеры доступа и ИДЕНТИФИКАТОРы.|10 минут|1 день|1 час|
+|AccessTokenLifetime|String|Управляет тем, как долго маркеры доступа и маркеры ID считаются допустимым.|10 минут|1 день|1 час|
 |Версия|Целое число|Установите значение 1. Обязательно.|Нет|Нет|Нет|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Тег|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject](directoryObject.md) , к которой применена эта политика. Только для чтения.|
+|appliesTo|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject,](directoryObject.md) к которую применена эта политика. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -86,7 +86,6 @@ ms.locfileid: "48401119"
 
   ],
   "@odata.type": "microsoft.graph.tokenLifetimePolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
