@@ -1,37 +1,37 @@
 ---
-title: Обновление Усерекспериенцеаналитиксовервиев
-description: Обновление свойств объекта Усерекспериенцеаналитиксовервиев.
+title: Обновление userExperienceAnalyticsOverview
+description: Обновление свойств объекта userExperienceAnalyticsOverview.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6dcdb99b31608ce4712da2d1b8363aa09b5a5603
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 77d0107c7a1ca3255bcc87f60b3dba0ff140d133
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49233959"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161238"
 ---
-# <a name="update-userexperienceanalyticsoverview"></a><span data-ttu-id="1f042-103">Обновление Усерекспериенцеаналитиксовервиев</span><span class="sxs-lookup"><span data-stu-id="1f042-103">Update userExperienceAnalyticsOverview</span></span>
+# <a name="update-userexperienceanalyticsoverview"></a><span data-ttu-id="43de7-103">Обновление userExperienceAnalyticsOverview</span><span class="sxs-lookup"><span data-stu-id="43de7-103">Update userExperienceAnalyticsOverview</span></span>
 
-<span data-ttu-id="1f042-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1f042-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="43de7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43de7-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1f042-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1f042-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="43de7-105">**Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43de7-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1f042-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1f042-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="43de7-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="43de7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1f042-107">Обновление свойств объекта [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md) .</span><span class="sxs-lookup"><span data-stu-id="1f042-107">Update the properties of a [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object.</span></span>
+<span data-ttu-id="43de7-107">Обновление свойств объекта [userExperienceAnalyticsOverview.](../resources/intune-devices-userexperienceanalyticsoverview.md)</span><span class="sxs-lookup"><span data-stu-id="43de7-107">Update the properties of a [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1f042-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="1f042-108">Prerequisites</span></span>
-<span data-ttu-id="1f042-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1f042-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="43de7-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="43de7-108">Prerequisites</span></span>
+<span data-ttu-id="43de7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43de7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1f042-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1f042-111">Permission type</span></span>|<span data-ttu-id="1f042-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1f042-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="43de7-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43de7-111">Permission type</span></span>|<span data-ttu-id="43de7-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="43de7-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1f042-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1f042-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1f042-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f042-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="1f042-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1f042-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1f042-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1f042-116">Not supported.</span></span>|
-|<span data-ttu-id="1f042-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="1f042-117">Application</span></span>|<span data-ttu-id="1f042-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f042-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="43de7-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43de7-113">Delegated (work or school account)</span></span>|<span data-ttu-id="43de7-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43de7-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="43de7-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43de7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="43de7-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43de7-116">Not supported.</span></span>|
+|<span data-ttu-id="43de7-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="43de7-117">Application</span></span>|<span data-ttu-id="43de7-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43de7-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1f042-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1f042-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43de7-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="43de7-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,47 +40,50 @@ ms.locfileid: "49233959"
 PATCH /deviceManagement/userExperienceAnalyticsOverview
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1f042-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="1f042-120">Request headers</span></span>
-|<span data-ttu-id="1f042-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1f042-121">Header</span></span>|<span data-ttu-id="1f042-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1f042-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="43de7-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="43de7-120">Request headers</span></span>
+|<span data-ttu-id="43de7-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="43de7-121">Header</span></span>|<span data-ttu-id="43de7-122">Значение</span><span class="sxs-lookup"><span data-stu-id="43de7-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1f042-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1f042-123">Authorization</span></span>|<span data-ttu-id="1f042-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1f042-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1f042-125">Accept</span><span class="sxs-lookup"><span data-stu-id="1f042-125">Accept</span></span>|<span data-ttu-id="1f042-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1f042-126">application/json</span></span>|
+|<span data-ttu-id="43de7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="43de7-123">Authorization</span></span>|<span data-ttu-id="43de7-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="43de7-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="43de7-125">Accept</span><span class="sxs-lookup"><span data-stu-id="43de7-125">Accept</span></span>|<span data-ttu-id="43de7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="43de7-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1f042-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1f042-127">Request body</span></span>
-<span data-ttu-id="1f042-128">В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1f042-128">In the request body, supply a JSON representation for the [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43de7-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="43de7-127">Request body</span></span>
+<span data-ttu-id="43de7-128">В теле запроса укажу представление объекта [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) в JSON.</span><span class="sxs-lookup"><span data-stu-id="43de7-128">In the request body, supply a JSON representation for the [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object.</span></span>
 
-<span data-ttu-id="1f042-129">В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md).</span><span class="sxs-lookup"><span data-stu-id="1f042-129">The following table shows the properties that are required when you create the [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md).</span></span>
+<span data-ttu-id="43de7-129">В следующей таблице показаны свойства, необходимые при создании [объекта userExperienceAnalyticsOverview.](../resources/intune-devices-userexperienceanalyticsoverview.md)</span><span class="sxs-lookup"><span data-stu-id="43de7-129">The following table shows the properties that are required when you create the [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md).</span></span>
 
-|<span data-ttu-id="1f042-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="1f042-130">Property</span></span>|<span data-ttu-id="1f042-131">Тип</span><span class="sxs-lookup"><span data-stu-id="1f042-131">Type</span></span>|<span data-ttu-id="1f042-132">Описание</span><span class="sxs-lookup"><span data-stu-id="1f042-132">Description</span></span>|
+|<span data-ttu-id="43de7-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="43de7-130">Property</span></span>|<span data-ttu-id="43de7-131">Тип</span><span class="sxs-lookup"><span data-stu-id="43de7-131">Type</span></span>|<span data-ttu-id="43de7-132">Описание</span><span class="sxs-lookup"><span data-stu-id="43de7-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1f042-133">id</span><span class="sxs-lookup"><span data-stu-id="1f042-133">id</span></span>|<span data-ttu-id="1f042-134">String</span><span class="sxs-lookup"><span data-stu-id="1f042-134">String</span></span>|<span data-ttu-id="1f042-135">Уникальный идентификатор для обзора аналитики взаимодействия с пользователем.</span><span class="sxs-lookup"><span data-stu-id="1f042-135">The unique identifier of the user experience analytics overview.</span></span>|
-|<span data-ttu-id="1f042-136">овераллскоре</span><span class="sxs-lookup"><span data-stu-id="1f042-136">overallScore</span></span>|<span data-ttu-id="1f042-137">Int32</span><span class="sxs-lookup"><span data-stu-id="1f042-137">Int32</span></span>|<span data-ttu-id="1f042-138">Общий показатель аналитики взаимодействия с пользователем.</span><span class="sxs-lookup"><span data-stu-id="1f042-138">The user experience analytics overall score.</span></span>|
-|<span data-ttu-id="1f042-139">девицебутперформанцеовераллскоре</span><span class="sxs-lookup"><span data-stu-id="1f042-139">deviceBootPerformanceOverallScore</span></span>|<span data-ttu-id="1f042-140">Int32</span><span class="sxs-lookup"><span data-stu-id="1f042-140">Int32</span></span>|<span data-ttu-id="1f042-141">Общая оценка производительности при загрузке устройства Analytics.</span><span class="sxs-lookup"><span data-stu-id="1f042-141">The user experience analytics device boot performance overall score.</span></span>|
-|<span data-ttu-id="1f042-142">бестпрактицесовераллскоре</span><span class="sxs-lookup"><span data-stu-id="1f042-142">bestPracticesOverallScore</span></span>|<span data-ttu-id="1f042-143">Int32</span><span class="sxs-lookup"><span data-stu-id="1f042-143">Int32</span></span>|<span data-ttu-id="1f042-144">Общая оценка рекомендаций по анализу пользовательских интерфейсов.</span><span class="sxs-lookup"><span data-stu-id="1f042-144">The user experience analytics best practices overall score.</span></span>|
-|<span data-ttu-id="1f042-145">insights</span><span class="sxs-lookup"><span data-stu-id="1f042-145">insights</span></span>|<span data-ttu-id="1f042-146">Коллекция [усерекспериенцеаналитиксинсигхт](../resources/intune-devices-userexperienceanalyticsinsight.md)</span><span class="sxs-lookup"><span data-stu-id="1f042-146">[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection</span></span>|<span data-ttu-id="1f042-147">Аналитика взаимодействия с пользователем.</span><span class="sxs-lookup"><span data-stu-id="1f042-147">The user experience analytics insights.</span></span>|
-|<span data-ttu-id="1f042-148">state</span><span class="sxs-lookup"><span data-stu-id="1f042-148">state</span></span>|[<span data-ttu-id="1f042-149">userExperienceAnalyticsHealthState</span><span class="sxs-lookup"><span data-stu-id="1f042-149">userExperienceAnalyticsHealthState</span></span>](../resources/intune-devices-userexperienceanalyticshealthstate.md)|<span data-ttu-id="1f042-150">Текущее состояние работоспособности в обзоре аналитики взаимодействия с пользователем.</span><span class="sxs-lookup"><span data-stu-id="1f042-150">The current health state of the user experience analytics overview.</span></span> <span data-ttu-id="1f042-151">Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span><span class="sxs-lookup"><span data-stu-id="1f042-151">Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span></span>|
-|<span data-ttu-id="1f042-152">девицебутперформанцехеалсстате</span><span class="sxs-lookup"><span data-stu-id="1f042-152">deviceBootPerformanceHealthState</span></span>|[<span data-ttu-id="1f042-153">userExperienceAnalyticsHealthState</span><span class="sxs-lookup"><span data-stu-id="1f042-153">userExperienceAnalyticsHealthState</span></span>](../resources/intune-devices-userexperienceanalyticshealthstate.md)|<span data-ttu-id="1f042-154">Текущее состояние работоспособности категории аналитики взаимодействия с пользователем "Бутперформанце".</span><span class="sxs-lookup"><span data-stu-id="1f042-154">The current health state of the user experience analytics 'BootPerformance' category.</span></span> <span data-ttu-id="1f042-155">Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span><span class="sxs-lookup"><span data-stu-id="1f042-155">Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span></span>|
-|<span data-ttu-id="1f042-156">бестпрактицешеалсстате</span><span class="sxs-lookup"><span data-stu-id="1f042-156">bestPracticesHealthState</span></span>|[<span data-ttu-id="1f042-157">userExperienceAnalyticsHealthState</span><span class="sxs-lookup"><span data-stu-id="1f042-157">userExperienceAnalyticsHealthState</span></span>](../resources/intune-devices-userexperienceanalyticshealthstate.md)|<span data-ttu-id="1f042-158">Текущее состояние работоспособности категории аналитики взаимодействия с пользователем "Бестпрактицес".</span><span class="sxs-lookup"><span data-stu-id="1f042-158">The current health state of the user experience analytics 'BestPractices' category.</span></span> <span data-ttu-id="1f042-159">Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span><span class="sxs-lookup"><span data-stu-id="1f042-159">Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span></span>|
+|<span data-ttu-id="43de7-133">id</span><span class="sxs-lookup"><span data-stu-id="43de7-133">id</span></span>|<span data-ttu-id="43de7-134">String</span><span class="sxs-lookup"><span data-stu-id="43de7-134">String</span></span>|<span data-ttu-id="43de7-135">Уникальный идентификатор обзора аналитики пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="43de7-135">The unique identifier of the user experience analytics overview.</span></span>|
+|<span data-ttu-id="43de7-136">overallScore</span><span class="sxs-lookup"><span data-stu-id="43de7-136">overallScore</span></span>|<span data-ttu-id="43de7-137">Int32</span><span class="sxs-lookup"><span data-stu-id="43de7-137">Int32</span></span>|<span data-ttu-id="43de7-138">Общая оценка аналитики пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="43de7-138">The user experience analytics overall score.</span></span>|
+|<span data-ttu-id="43de7-139">deviceBootPerformanceOverallScore</span><span class="sxs-lookup"><span data-stu-id="43de7-139">deviceBootPerformanceOverallScore</span></span>|<span data-ttu-id="43de7-140">Int32</span><span class="sxs-lookup"><span data-stu-id="43de7-140">Int32</span></span>|<span data-ttu-id="43de7-141">Общая производительность загрузки устройства аналитики пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="43de7-141">The user experience analytics device boot performance overall score.</span></span>|
+|<span data-ttu-id="43de7-142">bestPracticesOverallScore</span><span class="sxs-lookup"><span data-stu-id="43de7-142">bestPracticesOverallScore</span></span>|<span data-ttu-id="43de7-143">Int32</span><span class="sxs-lookup"><span data-stu-id="43de7-143">Int32</span></span>|<span data-ttu-id="43de7-144">Общие методики анализа пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="43de7-144">The user experience analytics best practices overall score.</span></span>|
+|<span data-ttu-id="43de7-145">appHealthOverallScore</span><span class="sxs-lookup"><span data-stu-id="43de7-145">appHealthOverallScore</span></span>|<span data-ttu-id="43de7-146">Int32</span><span class="sxs-lookup"><span data-stu-id="43de7-146">Int32</span></span>|<span data-ttu-id="43de7-147">Общая оценка состояния приложения аналитики пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="43de7-147">The user experience analytics app health overall score.</span></span>|
+|<span data-ttu-id="43de7-148">insights</span><span class="sxs-lookup"><span data-stu-id="43de7-148">insights</span></span>|<span data-ttu-id="43de7-149">[Коллекция userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)</span><span class="sxs-lookup"><span data-stu-id="43de7-149">[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection</span></span>|<span data-ttu-id="43de7-150">Аналитика пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="43de7-150">The user experience analytics insights.</span></span>|
+|<span data-ttu-id="43de7-151">state</span><span class="sxs-lookup"><span data-stu-id="43de7-151">state</span></span>|[<span data-ttu-id="43de7-152">userExperienceAnalyticsHealthState</span><span class="sxs-lookup"><span data-stu-id="43de7-152">userExperienceAnalyticsHealthState</span></span>](../resources/intune-devices-userexperienceanalyticshealthstate.md)|<span data-ttu-id="43de7-153">Текущее состояние состояния анализа пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="43de7-153">The current health state of the user experience analytics overview.</span></span> <span data-ttu-id="43de7-154">Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span><span class="sxs-lookup"><span data-stu-id="43de7-154">Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span></span>|
+|<span data-ttu-id="43de7-155">deviceBootPerformanceHealthState</span><span class="sxs-lookup"><span data-stu-id="43de7-155">deviceBootPerformanceHealthState</span></span>|[<span data-ttu-id="43de7-156">userExperienceAnalyticsHealthState</span><span class="sxs-lookup"><span data-stu-id="43de7-156">userExperienceAnalyticsHealthState</span></span>](../resources/intune-devices-userexperienceanalyticshealthstate.md)|<span data-ttu-id="43de7-157">Текущее состояние состояния аналитики пользовательского интерфейса "BootPerformance".</span><span class="sxs-lookup"><span data-stu-id="43de7-157">The current health state of the user experience analytics 'BootPerformance' category.</span></span> <span data-ttu-id="43de7-158">Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span><span class="sxs-lookup"><span data-stu-id="43de7-158">Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span></span>|
+|<span data-ttu-id="43de7-159">bestPracticesHealthState</span><span class="sxs-lookup"><span data-stu-id="43de7-159">bestPracticesHealthState</span></span>|[<span data-ttu-id="43de7-160">userExperienceAnalyticsHealthState</span><span class="sxs-lookup"><span data-stu-id="43de7-160">userExperienceAnalyticsHealthState</span></span>](../resources/intune-devices-userexperienceanalyticshealthstate.md)|<span data-ttu-id="43de7-161">Текущее состояние состояния аналитики пользовательского интерфейса категории "BestPractices".</span><span class="sxs-lookup"><span data-stu-id="43de7-161">The current health state of the user experience analytics 'BestPractices' category.</span></span> <span data-ttu-id="43de7-162">Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span><span class="sxs-lookup"><span data-stu-id="43de7-162">Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span></span>|
+|<span data-ttu-id="43de7-163">appHealthState</span><span class="sxs-lookup"><span data-stu-id="43de7-163">appHealthState</span></span>|[<span data-ttu-id="43de7-164">userExperienceAnalyticsHealthState</span><span class="sxs-lookup"><span data-stu-id="43de7-164">userExperienceAnalyticsHealthState</span></span>](../resources/intune-devices-userexperienceanalyticshealthstate.md)|<span data-ttu-id="43de7-165">Текущее состояние состояния аналитики пользовательского интерфейса категории "BestPractices".</span><span class="sxs-lookup"><span data-stu-id="43de7-165">The current health state of the user experience analytics 'BestPractices' category.</span></span> <span data-ttu-id="43de7-166">Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span><span class="sxs-lookup"><span data-stu-id="43de7-166">Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1f042-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="1f042-160">Response</span></span>
-<span data-ttu-id="1f042-161">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1f042-161">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="43de7-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="43de7-167">Response</span></span>
+<span data-ttu-id="43de7-168">В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="43de7-168">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f042-162">Пример</span><span class="sxs-lookup"><span data-stu-id="1f042-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="43de7-169">Пример</span><span class="sxs-lookup"><span data-stu-id="43de7-169">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1f042-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="1f042-163">Request</span></span>
-<span data-ttu-id="1f042-164">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1f042-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="43de7-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="43de7-170">Request</span></span>
+<span data-ttu-id="43de7-171">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="43de7-171">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 741
+Content-length: 813
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
   "overallScore": 12,
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
+  "appHealthOverallScore": 5,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -97,16 +100,17 @@ Content-length: 741
   ],
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
-  "bestPracticesHealthState": "insufficientData"
+  "bestPracticesHealthState": "insufficientData",
+  "appHealthState": "insufficientData"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1f042-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="1f042-165">Response</span></span>
-<span data-ttu-id="1f042-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1f042-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="43de7-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="43de7-172">Response</span></span>
+<span data-ttu-id="43de7-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="43de7-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 790
+Content-Length: 862
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -114,6 +118,7 @@ Content-Length: 790
   "overallScore": 12,
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
+  "appHealthOverallScore": 5,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -130,7 +135,8 @@ Content-Length: 790
   ],
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
-  "bestPracticesHealthState": "insufficientData"
+  "bestPracticesHealthState": "insufficientData",
+  "appHealthState": "insufficientData"
 }
 ```
 

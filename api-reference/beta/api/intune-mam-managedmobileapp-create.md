@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 486a1fa2a7bf1cd697aa779160213d31864f30f0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c9f8d375f30c7af8540c42a5f2277fb775e54636
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49308552"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157885"
 ---
-# <a name="create-managedmobileapp"></a><span data-ttu-id="a3409-103">Создание объекта managedMobileApp</span><span class="sxs-lookup"><span data-stu-id="a3409-103">Create managedMobileApp</span></span>
+# <a name="create-managedmobileapp"></a><span data-ttu-id="efaa6-103">Создание объекта managedMobileApp</span><span class="sxs-lookup"><span data-stu-id="efaa6-103">Create managedMobileApp</span></span>
 
-<span data-ttu-id="a3409-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a3409-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="efaa6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="efaa6-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a3409-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3409-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="efaa6-105">**Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="efaa6-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a3409-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a3409-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="efaa6-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="efaa6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a3409-107">Создание объекта [managedMobileApp](../resources/intune-mam-managedmobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="a3409-107">Create a new [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.</span></span>
+<span data-ttu-id="efaa6-107">Создание объекта [managedMobileApp](../resources/intune-mam-managedmobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="efaa6-107">Create a new [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a3409-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="a3409-108">Prerequisites</span></span>
-<span data-ttu-id="a3409-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3409-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="efaa6-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="efaa6-108">Prerequisites</span></span>
+<span data-ttu-id="efaa6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="efaa6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a3409-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a3409-111">Permission type</span></span>|<span data-ttu-id="a3409-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a3409-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="efaa6-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="efaa6-111">Permission type</span></span>|<span data-ttu-id="efaa6-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="efaa6-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a3409-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a3409-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a3409-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3409-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a3409-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a3409-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a3409-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3409-116">Not supported.</span></span>|
-|<span data-ttu-id="a3409-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a3409-117">Application</span></span>|<span data-ttu-id="a3409-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3409-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="efaa6-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="efaa6-113">Delegated (work or school account)</span></span>|<span data-ttu-id="efaa6-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="efaa6-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="efaa6-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="efaa6-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="efaa6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="efaa6-116">Not supported.</span></span>|
+|<span data-ttu-id="efaa6-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="efaa6-117">Application</span></span>|<span data-ttu-id="efaa6-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="efaa6-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a3409-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a3409-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="efaa6-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="efaa6-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -43,59 +43,59 @@ POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtect
 POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a3409-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="a3409-120">Request headers</span></span>
-|<span data-ttu-id="a3409-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a3409-121">Header</span></span>|<span data-ttu-id="a3409-122">Значение</span><span class="sxs-lookup"><span data-stu-id="a3409-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="efaa6-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="efaa6-120">Request headers</span></span>
+|<span data-ttu-id="efaa6-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="efaa6-121">Header</span></span>|<span data-ttu-id="efaa6-122">Значение</span><span class="sxs-lookup"><span data-stu-id="efaa6-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a3409-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a3409-123">Authorization</span></span>|<span data-ttu-id="a3409-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a3409-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a3409-125">Accept</span><span class="sxs-lookup"><span data-stu-id="a3409-125">Accept</span></span>|<span data-ttu-id="a3409-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a3409-126">application/json</span></span>|
+|<span data-ttu-id="efaa6-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="efaa6-123">Authorization</span></span>|<span data-ttu-id="efaa6-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="efaa6-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="efaa6-125">Accept</span><span class="sxs-lookup"><span data-stu-id="efaa6-125">Accept</span></span>|<span data-ttu-id="efaa6-126">application/json</span><span class="sxs-lookup"><span data-stu-id="efaa6-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a3409-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a3409-127">Request body</span></span>
-<span data-ttu-id="a3409-128">В теле запроса добавьте представление объекта managedMobileApp в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a3409-128">In the request body, supply a JSON representation for the managedMobileApp object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="efaa6-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="efaa6-127">Request body</span></span>
+<span data-ttu-id="efaa6-128">В теле запроса добавьте представление объекта managedMobileApp в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="efaa6-128">In the request body, supply a JSON representation for the managedMobileApp object.</span></span>
 
-<span data-ttu-id="a3409-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта managedMobileApp.</span><span class="sxs-lookup"><span data-stu-id="a3409-129">The following table shows the properties that are required when you create the managedMobileApp.</span></span>
+<span data-ttu-id="efaa6-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта managedMobileApp.</span><span class="sxs-lookup"><span data-stu-id="efaa6-129">The following table shows the properties that are required when you create the managedMobileApp.</span></span>
 
-|<span data-ttu-id="a3409-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="a3409-130">Property</span></span>|<span data-ttu-id="a3409-131">Тип</span><span class="sxs-lookup"><span data-stu-id="a3409-131">Type</span></span>|<span data-ttu-id="a3409-132">Описание</span><span class="sxs-lookup"><span data-stu-id="a3409-132">Description</span></span>|
+|<span data-ttu-id="efaa6-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="efaa6-130">Property</span></span>|<span data-ttu-id="efaa6-131">Тип</span><span class="sxs-lookup"><span data-stu-id="efaa6-131">Type</span></span>|<span data-ttu-id="efaa6-132">Описание</span><span class="sxs-lookup"><span data-stu-id="efaa6-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a3409-133">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="a3409-133">mobileAppIdentifier</span></span>|[<span data-ttu-id="a3409-134">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="a3409-134">mobileAppIdentifier</span></span>](../resources/intune-mam-mobileappidentifier.md)|<span data-ttu-id="a3409-135">Идентификатор приложения с типом его операционной системы.</span><span class="sxs-lookup"><span data-stu-id="a3409-135">The identifier for an app with it's operating system type.</span></span>|
-|<span data-ttu-id="a3409-136">id</span><span class="sxs-lookup"><span data-stu-id="a3409-136">id</span></span>|<span data-ttu-id="a3409-137">String</span><span class="sxs-lookup"><span data-stu-id="a3409-137">String</span></span>|<span data-ttu-id="a3409-138">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="a3409-138">Key of the entity.</span></span>|
-|<span data-ttu-id="a3409-139">version</span><span class="sxs-lookup"><span data-stu-id="a3409-139">version</span></span>|<span data-ttu-id="a3409-140">String</span><span class="sxs-lookup"><span data-stu-id="a3409-140">String</span></span>|<span data-ttu-id="a3409-141">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="a3409-141">Version of the entity.</span></span>|
+|<span data-ttu-id="efaa6-133">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="efaa6-133">mobileAppIdentifier</span></span>|[<span data-ttu-id="efaa6-134">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="efaa6-134">mobileAppIdentifier</span></span>](../resources/intune-mam-mobileappidentifier.md)|<span data-ttu-id="efaa6-135">Идентификатор приложения с типом его операционной системы.</span><span class="sxs-lookup"><span data-stu-id="efaa6-135">The identifier for an app with it's operating system type.</span></span>|
+|<span data-ttu-id="efaa6-136">id</span><span class="sxs-lookup"><span data-stu-id="efaa6-136">id</span></span>|<span data-ttu-id="efaa6-137">String</span><span class="sxs-lookup"><span data-stu-id="efaa6-137">String</span></span>|<span data-ttu-id="efaa6-138">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="efaa6-138">Key of the entity.</span></span>|
+|<span data-ttu-id="efaa6-139">version</span><span class="sxs-lookup"><span data-stu-id="efaa6-139">version</span></span>|<span data-ttu-id="efaa6-140">String</span><span class="sxs-lookup"><span data-stu-id="efaa6-140">String</span></span>|<span data-ttu-id="efaa6-141">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="efaa6-141">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a3409-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3409-142">Response</span></span>
-<span data-ttu-id="a3409-143">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [managedMobileApp](../resources/intune-mam-managedmobileapp.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="a3409-143">If successful, this method returns a `201 Created` response code and a [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="efaa6-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="efaa6-142">Response</span></span>
+<span data-ttu-id="efaa6-143">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [managedMobileApp](../resources/intune-mam-managedmobileapp.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="efaa6-143">If successful, this method returns a `201 Created` response code and a [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a3409-144">Пример</span><span class="sxs-lookup"><span data-stu-id="a3409-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="efaa6-144">Пример</span><span class="sxs-lookup"><span data-stu-id="efaa6-144">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a3409-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="a3409-145">Request</span></span>
-<span data-ttu-id="a3409-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a3409-146">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="efaa6-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="efaa6-145">Request</span></span>
+<span data-ttu-id="efaa6-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="efaa6-146">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
 Content-type: application/json
-Content-length: 226
+Content-length: 227
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "Package Id value"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "Windows App Id value"
   },
   "version": "Version value"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a3409-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3409-147">Response</span></span>
-<span data-ttu-id="a3409-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a3409-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="efaa6-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="efaa6-147">Response</span></span>
+<span data-ttu-id="efaa6-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="efaa6-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 275
+Content-Length: 276
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "Package Id value"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "Windows App Id value"
   },
   "id": "0a129715-9715-0a12-1597-120a1597120a",
   "version": "Version value"

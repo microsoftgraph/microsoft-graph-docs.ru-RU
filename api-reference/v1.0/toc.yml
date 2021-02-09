@@ -291,7 +291,7 @@ items:
                 href: api/user-list-registereddevices.md
               - name: Повторное назначение лицензии
                 href: api/user-reprocesslicenseassignment.md
-              - name: Отоиметь сеанс регистрации
+              - name: Отозовет сеанс регистрации
                 href: api/user-revokesigninsessions.md
           - name: Диск
             href: resources/drive.md
@@ -445,7 +445,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Group
+          - name: Группа
             href: resources/group.md
             items:
               - name: Список групп
@@ -891,7 +891,7 @@ items:
                             href: api/permissiongrantpolicy-delete-includes.md
                           - name: Список исключается
                             href: api/permissiongrantpolicy-list-excludes.md
-                          - name: Create in excludes
+                          - name: Создание исключено
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Удаление из исключений
                             href: api/permissiongrantpolicy-delete-excludes.md
@@ -941,7 +941,7 @@ items:
                 href: api/event-accept.md
               - name: Предварительное принятие
                 href: api/event-tentativelyaccept.md
-              - name: Событие Decline
+              - name: Событие отклонения
                 href: api/event-decline.md
               - name: Отмена напоминания
                 href: api/event-dismissreminder.md
@@ -3731,7 +3731,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверение и доступ
+      - name: Удостоверения и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -4820,6 +4820,19 @@ items:
                 href: api/site-unfollow.md
               - name: Перечисление отслеживаемых сайтов
                 href: api/sites-list-followed.md
+              - name: Разрешения
+                href: resources/permission.md
+                items:
+                  - name: Получить разрешение на сайт
+                    href: api/site-get-permission.md
+                  - name: Список разрешений сайта
+                    href: api/site-list-permissions.md
+                  - name: Создание разрешений для сайта
+                    href: api/site-post-permissions.md
+                  - name: Обновление разрешения сайта
+                    href: api/site-update-permission.md
+                  - name: Удаление разрешения сайта
+                    href: api/site-delete-permission.md
           - name: Списки
             href: resources/list.md
             items:
@@ -4849,7 +4862,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
