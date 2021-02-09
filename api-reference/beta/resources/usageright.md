@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса usageRight
-description: Содержит сведения об usageRight, назначенного пользователем или устройством
+description: Содержит сведения об usageRight, назначенной пользователю или устройству
 author: jeeshnair
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d3d7ad0de7eb6929e54b7d3d692c6e562e9da76d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3f54fb6b54f08d28ab63bf2ec70180c5e0daf490
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130413"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159824"
 ---
 # <a name="usageright-resource-type"></a>Тип ресурса usageRight
 
@@ -31,9 +31,9 @@ ms.locfileid: "50130413"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|catalogId|Строка|ИД продукта, соответствующий правом на использование.|
-|id|Строка|ИД права на использование.|
-|serviceIdentifier|Строка|Идентификатор службы, соответствующей правом на использование.|
+|catalogId|String|ИД продукта, соответствующий правом на использование.|
+|id|String|ИД права на использование.|
+|serviceIdentifier|String|Идентификатор службы, соответствующей правом на использование.|
 |state|usageRightState|Состояние права на использование. Возможные значения: `active`, `inactive`, `warning`, `suspended`.|
 
 ### <a name="usagerightstate-values"></a>значения usageRightState 
@@ -61,7 +61,6 @@ ms.locfileid: "50130413"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.usageRight",
-  "baseType": "",
   "openType": false
 }
 -->

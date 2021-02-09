@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0eef89ac7af8fb304af310b3131587d7c4545ff4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 9bd20ddb5a228cf6764dc2ecf6ff770218ca916a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406065"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159443"
 ---
 # <a name="securityaction-resource-type"></a>Тип ресурса securityAction
 
@@ -27,28 +27,28 @@ ms.locfileid: "48406065"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Получение действия по обеспечению безопасности](../api/securityaction-get.md) | [securityAction](securityaction.md) | Чтение свойств и связей объекта securityAction. |
-| [Создание действия по обеспечению безопасности](../api/securityactions-post.md) | [securityAction](securityaction.md) | Создание нового securityAction путем отправки в коллекцию Секуритяктионс. |
-| [Перечисление действий по обеспечению безопасности](../api/securityactions-list.md) | Коллекция [securityAction](securityaction.md) | Получение коллекции объектов securityAction. |
+| [Создание действия по обеспечению безопасности](../api/securityactions-post.md) | [securityAction](securityaction.md) | Создание нового securityAction путем публикации в коллекции securityActions. |
+| [Перечисление действий по обеспечению безопасности](../api/securityactions-list.md) | [коллекция securityAction](securityaction.md) | Получите коллекцию объектов securityAction. |
 |[Отмена действия по обеспечению безопасности](../api/securityaction-cancelsecurityaction.md)|Нет|Отмена операции безопасности.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|актионреасон|String|Причина для вызова этого действия.|
-|appId|String|Идентификатор приложения, который передал действие (POST). AppId необходимо извлечь из маркера проверки подлинности и не вводить вручную вызывающим приложением.|
-|azureTenantId|String|Идентификатор клиента Azure объекта, который определяет, к какому клиенту относится данная сущность (поддержка с поддержкой нескольких клиентов). Азуретенантид необходимо извлечь из маркера проверки подлинности и не вводить вручную вызывающим приложением.|
-|completedDateTime|DateTimeOffset|Временная метка выполнения действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|createdDateTime|DateTimeOffset|Временная метка при создании действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|errorInfo|[resultInfo](resultinfo.md)| Сведения об ошибке при сбое действия.|
-|id|String| Создается системой при выполнении действия. Созданный GUID/уникальный идентификатор. Только для чтения.|
-|ластактиондатетиме|DateTimeOffset| Временная метка при последнем обновлении этого действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|actionReason|String|Причина для этого действия.|
+|appId|String|ИД вызываемого приложения, которое отправило действие (POST). AppId должен быть извлечен из маркера проверки, а не введен приложением вызова вручную.|
+|azureTenantId|String|Azure tenant ID of the entity to determine which tenant the entity belongs to (multi-tenancy support). AzureTenantId должен извлекаться из маркера проверки и не ввели вручную вызывающей приложением.|
+|completedDateTime|DateTimeOffset|Timestamp when the action was completed. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Timestamp when the action is created. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|errorInfo|[resultInfo](resultinfo.md)| Сведения об ошибке при сбойе действия.|
+|id|String| Создается системой при в отношении действия. Созданный ИДЕНТИФИКАТОР GUID/уникальный идентификатор. Только для чтения.|
+|lastActionDateTime|DateTimeOffset| Timestamp when this action was last updated. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |name|String| Имя действия.|
 |parameters|Коллекция [keyValuePair](keyvaluepair.md)| Коллекция параметров (пар "ключ-значение"), необходимых для вызова действия, например URL-адрес или fileHash для блокировки и т. д.). **Required**|
-|состояния|Коллекция [секуритяктионстате](securityactionstate.md)|Коллекция Секуритяктионстате, в которой будет храниться журнал действия.|
+|states|[Коллекция securityActionState](securityactionstate.md)|Коллекция securityActionState для сохраняемого истории действия.|
 |status|string| Состояние действия. Возможные значения: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|пользователь|String| Имя участника-пользователя, который выполнил вход в действие (POST). Пользователь должен быть извлечен из маркера проверки подлинности и не был введен вручную вызывающим приложением вручную.|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о продуктах, поставщиках и подчиненных поставщиках системы безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подчиненный поставщик = AppLocker).|
+|user|String| Имя вошел пользователя, который отправил (POST) действие. Пользователь должен быть извлечен из маркера проверки и не введен приложением- вызовом вручную.|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о поставщике продукта или службы безопасности, поставщике и вложенных поставщиках (например, vendor=Microsoft; provider=Защитник Windows ATP; sub-provider=AppLocker).|
 
 ## <a name="relationships"></a>Связи
 
@@ -64,7 +64,6 @@ ms.locfileid: "48406065"
 
   ],
   "@odata.type": "microsoft.graph.securityAction",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

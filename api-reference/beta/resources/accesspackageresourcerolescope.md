@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Акцесспаккажересаурцеролескопе
-description: Область применения роли пакета Access — это ссылка на область в ресурсе и роль в этом ресурсе.
+title: Тип ресурса accessPackageResourceRoleScope
+description: Область роли ресурса пакета доступа — это ссылка как на область в ресурсе, так и на роль в этом ресурсе.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c96d5a0499ae269c7ce67bae2252c6521d66eb7b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f6b68ad23505458a40be54ed073e0c01a81f06e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024649"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158557"
 ---
-# <a name="accesspackageresourcerolescope-resource-type"></a>Тип ресурса Акцесспаккажересаурцеролескопе
+# <a name="accesspackageresourcerolescope-resource-type"></a>Тип ресурса accessPackageResourceRoleScope
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)областью применения роли ресурса Package является ссылка на область в ресурсе и роль в этом ресурсе для этой области.  Пакет Access будет иметь доступ к областям роли ресурса пакета для ресурсов в каталоге, которые относятся к этому пакету Access.  Когда тема получает назначение пакета Access, тема будет подготовлена к работе с ролью в этой области каждой области применения роли ресурса пакета Access.
+В управлении правами [Azure AD](entitlementmanagement-root.md)область роли пакета доступа — это ссылка как на область ресурса, так и на роль в этом ресурсе для этой области.  Пакет доступа будет иметь области ролей ресурсов пакета доступа для ресурсов в каталоге, которые имеют отношение к этому пакету доступа.  Когда субъект получает назначение пакета доступа, субъекту будет присвоена роль в этой области каждой области роли ресурса пакета доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Акцесспаккажересаурцеролескопес](../api/accesspackage-list-accesspackageresourcerolescopes.md) | Коллекция [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md) | Получение списка объектов **акцесспаккажересаурцеролескопе** для пакета Access. |
-| [Создание Акцесспаккажересаурцеролескопе](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый объект **акцесспаккажересаурцеролескопе** для пакета Access. |
+| [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Получить список объектов **accessPackageResourceRoleScope** для пакета доступа. |
+| [Создание accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый **объект accessPackageResourceRoleScope** для пакета доступа. |
 
 ## <a name="properties"></a>Свойства
 
@@ -34,15 +34,15 @@ ms.locfileid: "48024649"
 |createdBy|String|Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|модифиедби|String|Только для чтения.|
+|modifiedBy|String|Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажересаурцероле|[акцесспаккажересаурцероле](accesspackageresourcerole.md)| Только для чтения. Допускается значение null.|
-|акцесспаккажересаурцескопе|[акцесспаккажересаурцескопе](accesspackageresourcescope.md)| Только для чтения. Допускается значение null.|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Только для чтения. Допускается значение null.|
+|accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -54,7 +54,6 @@ ms.locfileid: "48024649"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRoleScope",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

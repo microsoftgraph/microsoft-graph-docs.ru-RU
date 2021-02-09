@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса Ипнамедлокатион
-description: Представляет Azure Active Directory с именем Location, заданным диапазонами IP-адресов. Именованные расположения — это настраиваемые правила, определяющие сетевые расположения, которые можно использовать в политике условного доступа.
+title: Тип ресурса ipNamedLocation
+description: Представляет именуемую позицию Azure Active Directory, определяемую диапазонами IP-адресов. Именуемые расположения — это настраиваемые правила, которые определяют сетевые расположения, которые затем можно использовать в политике условного доступа.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 37e5f46bf4806e402dcb527745c58c381945160a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b63452ca6eefb9ad3a0d4b3f860fb1a8d41638fb
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988970"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158403"
 ---
-# <a name="ipnamedlocation-resource-type"></a>Тип ресурса Ипнамедлокатион
+# <a name="ipnamedlocation-resource-type"></a>Тип ресурса ipNamedLocation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет Azure Active Directory с именем Location, заданным диапазонами IP-адресов. Именованные расположения — это настраиваемые правила, определяющие сетевые расположения, которые можно использовать в политике условного доступа.
+Представляет именуемую позицию Azure Active Directory, определяемую диапазонами IP-адресов. Именуемые расположения — это настраиваемые правила, которые определяют сетевые расположения, которые затем можно использовать в политике условного доступа.
 
-Наследуется от [намедлокатион](../resources/namedLocation.md)
+Наследуется от [namedLocation](../resources/namedLocation.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Ипнамедлокатионс](../api/conditionalaccessroot-list-namedlocations.md) | Коллекция [ипнамедлокатион](ipNamedLocation.md) | Получение всех объектов **ипнамедлокатион** в Организации. |
-| [Создание Ипнамедлокатион](../api/conditionalaccessroot-post-namedlocations.md) | [ипнамедлокатион](ipNamedLocation.md) | Создание нового объекта **ипнамедлокатион** . |
-| [Получение Ипнамедлокатион](../api/ipnamedlocation-get.md) | [ипнамедлокатион](ipnamedlocation.md) | Чтение свойств и связей объекта **ипнамедлокатион** . |
-| [Обновление Ипнамедлокатион](../api/ipnamedlocation-update.md) | [ипнамедлокатион](ipnamedlocation.md) | Обновление объекта **ипнамедлокатион** . |
-| [Удаление Ипнамедлокатион](../api/ipnamedlocation-delete.md) | Нет | Удаление объекта **ипнамедлокатион** . |
+| [Список ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [Коллекция ipNamedLocation](ipNamedLocation.md) | Получить все **объекты ipNamedLocation** в организации. |
+| [Создание ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Создание объекта **ipNamedLocation.** |
+| [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Чтение свойств и связей объекта **ipNamedLocation.** |
+| [Обновление ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Обновление объекта **ipNamedLocation.** |
+| [Удаление ipNamedLocation](../api/ipnamedlocation-delete.md) | Нет | Удаление объекта **ipNamedLocation.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|displayName|String|Удобное для человека имя расположения.|
-|id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|ипранжес|Коллекция объектов [ipRange](iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC596.|
-|Доверять|Boolean|Значение true, если данное расположение явно является доверенным.|
-|modifiedDateTime|DateTimeOffset|Тип timestamp представляет дату и время последнего изменения расположения с использованием формата ISO 8601, которое всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет дату и время создания расположения в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется [от namedLocation.](../resources/namedLocation.md)|
+|displayName|String|Понятное человеку имя расположения.|
+|id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation.](../resources/namedLocation.md)|
+|ipRanges|Коллекция объектов [ipRange](iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (например, 1.2.3.4/32) или любой допустимый формат IPv6 из IETF RFC596.|
+|isTrusted|Boolean|Имеет true, если это расположение является явным доверенным.|
+|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет дату и время последнего изменения расположения в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется [от namedLocation.](../resources/namedLocation.md)|
 
 ## <a name="relationships"></a>Связи
 
@@ -56,8 +56,7 @@ ms.locfileid: "47988970"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ipNamedLocation",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.ipNamedLocation"
 }-->
 
 ```json

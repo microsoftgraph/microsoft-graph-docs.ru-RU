@@ -1,26 +1,26 @@
 ---
-title: Список Макосвпнконфигуратионс
-description: Список свойств и связей объектов Макосвпнконфигуратион.
+title: Список macOSVpnConfigurations
+description: Список свойств и связей объектов macOSVpnConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 230cfb962bf7cd6d7d003b711fdbc1a06b326416
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3349454a3bc6a9d4cf5cbb8b08f4492f852ad439
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278746"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155757"
 ---
-# <a name="list-macosvpnconfigurations"></a>Список Макосвпнконфигуратионс
+# <a name="list-macosvpnconfigurations"></a>Список macOSVpnConfigurations
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [макосвпнконфигуратион](../resources/intune-deviceconfig-macosvpnconfiguration.md) .
+Список свойств и связей объектов [macOSVpnConfiguration.](../resources/intune-deviceconfig-macosvpnconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [макосвпнконфигуратион](../resources/intune-deviceconfig-macosvpnconfiguration.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3342
+Content-Length: 3418
 
 {
   "value": [
@@ -154,6 +154,9 @@ Content-Length: 3342
         }
       ],
       "providerType": "appProxy",
+      "associatedDomains": [
+        "Associated Domains value"
+      ],
       "excludedDomains": [
         "Excluded Domains value"
       ],

@@ -1,26 +1,26 @@
 ---
-title: Получение Девицеманажементконфигуратиончоицесеттингдефинитион
-description: Чтение свойств и связей объекта Девицеманажементконфигуратиончоицесеттингдефинитион.
+title: Get deviceManagementConfigurationChoiceSettingDefinition
+description: Чтение свойств и связей объекта deviceManagementConfigurationChoiceSettingDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91909aca893328557f3542d961fc690960980b1d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 676e9a38c6d725652bf50d7378ec51acf364f269
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242335"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158613"
 ---
-# <a name="get-devicemanagementconfigurationchoicesettingdefinition"></a>Получение Девицеманажементконфигуратиончоицесеттингдефинитион
+# <a name="get-devicemanagementconfigurationchoicesettingdefinition"></a>Get deviceManagementConfigurationChoiceSettingDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [девицеманажементконфигуратиончоицесеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) .
+Чтение свойств и связей объекта [deviceManagementConfigurationChoiceSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49242335"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементконфигуратиончоицесеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10285
+Content-Length: 10316
 
 {
   "value": {
@@ -98,6 +98,7 @@ Content-Length: 10285
     "rootDefinitionId": "Root Definition Id value",
     "categoryId": "Category Id value",
     "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
     "id": "30b2258a-258a-30b2-8a25-b2308a25b230",
     "description": "Description value",
     "helpText": "Help Text value",

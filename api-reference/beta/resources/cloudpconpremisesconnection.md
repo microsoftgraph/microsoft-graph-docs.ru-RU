@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 00b129ed73b64ed9ac0785017cfad8c2a74fde2b
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: ec7a3dfaee2f1e111b81bc551f427764fce50f1b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033997"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159614"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>Тип ресурса cloudPcOnPremisesConnection
 
@@ -42,16 +42,16 @@ ms.locfileid: "50033997"
 |displayName|String|Отображаемого имени для локального подключения.|
 |subscriptionId|String|ИД целевой подписки Azure, связанной с клиентом.|
 |subscriptionName|String|Имя целевой подписки Azure. Только для чтения.|
-|adDomainName|String|Полное доменное имя домена Active Directory, к который требуется присоединиться.|
+|adDomainName|String|Полное доменное имя домена Active Directory, к нему нужно присоединиться.|
 |adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: admin@contoso.com.|
 |adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|organizationalUnit|String|Подразделение, в котором создается учетная запись компьютера. Если оставить значение null, используется OU, настроенное в качестве используемого по умолчанию (известного контейнера объектов компьютера) в домене Active Directory .. Необязательный параметр.|
+|organizationalUnit|String|Подразделение, в котором создается учетная запись компьютера. Если оставить значение null, используется OU, настроенное в качестве используемого по умолчанию (известного контейнера объектов компьютера) в домене Active Directory (OU). Необязательный параметр.|
 |resourceGroupId|String|ИД целевой группы ресурсов. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|ИД целевой виртуальной сети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|ИД целевой подсети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 |healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|Состояние последней проверки состояния, которая была сделана для локального подключения. Например, если состояние "passed", локальное подключение прошло все проверки, запускаемые службой. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Сведения о проверках состояния подключения и соответствующих результатах. Возвращается только с помощью оператора `$select`. См. [пример](../api/cloudpconpremisesconnection-get.md) получения свойства healthCheckStatusDetails. Только для чтения.|
-|inUse|Логический|Если засвеяно, используется локальное подключение. Если заведомо ложно, подключение не используется. Невозможно удалить используемую связь. Только для чтения.|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Сведения о проверках состояния подключения и соответствующих результатах. Возвращается только в `$select` . Пример получения свойства **inUse** см. в примере 2. Получите выбранные свойства локального подключения, включая [healthCheckStatusDetails.](../api/cloudpconpremisesconnection-get.md) Только для чтения.|
+|inUse|Boolean|Когда `true` используется локальное подключение. Когда `false` подключение не используется. Невозможно удалить используемую связь. Возвращается только с помощью оператора `$select`. Пример получения свойства **inUse** см. в примере 2. Получите выбранные свойства локального подключения, включая [healthCheckStatusDetails.](../api/cloudpconpremisesconnection-get.md) Только для чтения.|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>Значения cloudPcOnPremisesConnectionStatus
 

@@ -1,26 +1,26 @@
 ---
-title: Список Девицеманажементаутопилотполицистатусдетаилс
-description: Список свойств и связей объектов Девицеманажементаутопилотполицистатусдетаил.
+title: Список deviceManagementAutopilotPolicyStatusDetails
+description: Список свойств и связей объектов deviceManagementAutopilotPolicyStatusDetail.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3a4f866b231bb8661efdef6cba5f37d2c83ac69
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 400d9578704bf4154e356fa8f608dc921effda52
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200297"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155666"
 ---
-# <a name="list-devicemanagementautopilotpolicystatusdetails"></a>Список Девицеманажементаутопилотполицистатусдетаилс
+# <a name="list-devicemanagementautopilotpolicystatusdetails"></a>Список deviceManagementAutopilotPolicyStatusDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [девицеманажементаутопилотполицистатусдетаил](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) .
+Список свойств и связей объектов [deviceManagementAutopilotPolicyStatusDetail.](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49200297"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyS
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементаутопилотполицистатусдетаил](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceMan
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 405
+Content-Length: 428
 
 {
   "value": [
@@ -76,7 +76,8 @@ Content-Length: 405
       "policyType": "application",
       "complianceStatus": "compliant",
       "trackedOnEnrollmentStatus": true,
-      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+      "errorCode": 9
     }
   ]
 }

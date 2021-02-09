@@ -1,26 +1,26 @@
 ---
-title: Список Девицеманажементконфигуратионсимплесеттингколлектиондефинитионс
-description: Список свойств и связей объектов Девицеманажементконфигуратионсимплесеттингколлектиондефинитион.
+title: Список deviceManagementConfigurationSimpleSettingCollectionDefinitions
+description: Список свойств и связей объектов deviceManagementConfigurationSimpleSettingCollectionDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7853e1a1c04ea716326cfe5e470f934ca3af5f99
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5ce7ff52796fc55f4ca6c6f4522545236fabfea1
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242475"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158865"
 ---
-# <a name="list-devicemanagementconfigurationsimplesettingcollectiondefinitions"></a>Список Девицеманажементконфигуратионсимплесеттингколлектиондефинитионс
+# <a name="list-devicemanagementconfigurationsimplesettingcollectiondefinitions"></a>Список deviceManagementConfigurationSimpleSettingCollectionDefinitions
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [девицеманажементконфигуратионсимплесеттингколлектиондефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) .
+Список свойств и связей объектов [deviceManagementConfigurationSimpleSettingCollectionDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49242475"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +51,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементконфигуратионсимплесеттингколлектиондефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9921
+Content-Length: 9954
 
 {
   "value": [
@@ -96,6 +96,7 @@ Content-Length: 9921
       "rootDefinitionId": "Root Definition Id value",
       "categoryId": "Category Id value",
       "settingUsage": "configuration",
+      "uxBehavior": "dropdown",
       "id": "cb4abda1-bda1-cb4a-a1bd-4acba1bd4acb",
       "description": "Description value",
       "helpText": "Help Text value",

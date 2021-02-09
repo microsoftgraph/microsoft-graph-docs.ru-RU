@@ -1,35 +1,35 @@
 ---
-title: Обновление Девицеманажементрепортс
-description: Обновление свойств объекта Девицеманажементрепортс.
+title: Обновление deviceManagementReports
+description: Обновление свойств объекта deviceManagementReports.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e929cdf462e9cb7144e680680c59589ae76e1a09
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4282a518e5594c88b421a301e7377fa2973e504c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223985"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159250"
 ---
-# <a name="update-devicemanagementreports"></a>Обновление Девицеманажементрепортс
+# <a name="update-devicemanagementreports"></a>Обновление deviceManagementReports
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md) .
+Обновление свойств объекта [deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,18 +47,18 @@ PATCH /deviceManagement/reports
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md) в формате JSON.
+В теле запроса укажу представление объекта [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
+|id|String|Уникальный идентификатор для этого объекта|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

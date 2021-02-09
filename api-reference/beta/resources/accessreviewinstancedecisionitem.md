@@ -1,53 +1,53 @@
 ---
-title: Тип ресурса АкцессревиевинстанцедеЦисионитем
-description: Представляет решение для доступа пользователя в Акцессревиевинстанце.
+title: Тип ресурса accessReviewInstanceDecisionItem
+description: Представляет решение о доступе пользователя к accessReviewInstance.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d9ad5f8a49d44c82f1a43a1666f08f2b49853395
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 10166dc9da512bf74a0b4e5ad97f4797cdf6c317
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001067"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159201"
 ---
-# <a name="accessreviewinstancedecisionitem-resource-type"></a>Тип ресурса АкцессревиевинстанцедеЦисионитем
+# <a name="accessreviewinstancedecisionitem-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет решение по [проверке доступа](accessreviewsv2-root.md) Azure AD для экземпляра проверки. Это решение представляет определение доступа пользователя или субъекта к данному [экземпляру проверки доступа](accessreviewinstance.md).
+Представляет решение о проверке [доступа](accessreviewsv2-root.md) Azure AD для экземпляра проверки. Это решение представляет определение доступа пользователя или директора-службы для данного экземпляра [проверки доступа.](accessreviewinstance.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Список АкцессревиевинстанцедеЦисионитемс](../api/accessreviewinstancedecisionitem-list.md) | Коллекция [акцессревиевинстанцедеЦисионитем](accessreviewinstancedecisionitem.md) | Перечисление всех АкцессревиевинстанцедеЦисионитем для определенного Акцессревиевинстанце. |
-|[Список ожидающих утверждения АкцессревиевинстанцедеЦисионитемс](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | Коллекция [акцессревиевинстанцедеЦисионитем](accessreviewinstancedecisionitem.md) . | Получение всех АкцессревиевинстанцедеЦисионитемс, назначенных вызывающему пользователю для определенного Акцессревиевинстанце. |
-|[Обновление АкцессревиевинстанцедеЦисионитем](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Для всех АкцессревиевинстанцедеЦисионитемс, для которых вызывающему пользователю назначен проверяющий, вызывающий пользователь может записать решение, заменив исправление объекта принятия решений. |
+|[Список accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [Коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Перечисляет все accessReviewInstanceDecisionItem для определенного accessReviewInstance. |
+|[Список accessReviewInstanceDecisionItems, ожидающих утверждения](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [коллекция accessReviewInstanceDecisionItem;](accessreviewinstancedecisionitem.md) | Получите все accessReviewInstanceDecisionItems, присвоенные вызыванию пользователю, для определенного accessReviewInstance. |
+|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Для любых объектов accessReviewInstanceDecisionItems, в которые назначен вызывающий пользователь, вызывающий пользователь может записать решение, обновив объект решения. |
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип |  Описание |
 | :---------------| :---- | :---------- |
-| id | Строка | Идентификатор решения. |
-| акцессревиевид | Строка | Идентификатор родителя Акцессревиевинстанце. |
-| ревиеведби | [userIdentity](useridentity.md) | Идентификатор проверяющего. |
-| ревиеведдатетиме | DateTimeOffset | Дата и время, когда произошла проверка. |
-| решении | Строка | Результат проверки. Возможные значения: `Approve` , `Deny` , `NotReviewed` , или `DontKnow` . |
-| текста | Строка | Проверка обоснования решения. |
-| апплиедби | [userIdentity](useridentity.md) | Идентификатор пользователя, который применил решение. |
-| апплиеддатетиме | DateTimeOffset | Дата и время, когда было применено решение об утверждении. |
-| апплиресулт | Строка | Результат применения решения. Возможные значения: `NotApplied` , `Success` , `Failed` , `NotFound` , или `NotSupported` . |
-| Рекомендуемые | Строка | Созданная системой рекомендация для решения об утверждении. Возможные значения: `Approve` , `Deny` , или `NotAvailable` .  |
-| target | [акцессревиевинстанцедеЦисионитемтаржет](accessreviewinstancedecisionitemtarget.md)  | Цель этого конкретного решения. Целевые показатели решений могут принадлежать разным типам — каждый из них имеет собственные конкретные свойства. Обратитесь к разделу [акцессревиевинстанцедеЦисионитемтаржет](accessreviewinstancedecisionitemtarget.md). |
+| id | String | Идентификатор решения. |
+| accessReviewId | String | Идентификатор родительского accessReviewInstance. |
+| reviewedBy | [userIdentity](useridentity.md) | Идентификатор проверяемого. |
+| reviewedDateTime | DateTimeOffset | Дата и время проверки. |
+| decision | String | Результат проверки. Возможные значения: `Approve` , , , или `Deny` `NotReviewed` `DontKnow` . |
+| обоснование | String | Обоснование принятия решения о проверке. |
+| appliedBy | [userIdentity](useridentity.md) | Идентификатор пользователя, который применил решение. |
+| appliedDateTime | DateTimeOffset | Дата и время, когда было применено решение об утверждении. |
+| applyResult | String | Результат применения решения. Возможные значения: `NotApplied` , , , , или `Success` `Failed` `NotFound` `NotSupported` . |
+| recommendation | String | Системная рекомендация для решения об утверждении. Возможные значения: `Approve` , `Deny` , или `NotAvailable` .  |
+| target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | Цель конкретного решения. Целевые объекты принятия решений могут быть разных типов , каждый из которых имеет собственные свойства. См. [accessReviewInstanceDecisionItemTarget.](accessreviewinstancedecisionitemtarget.md) |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-| вхождения |[акцессревиевинстанце](accessreviewinstance.md) | Каждое решение имеет только один Акцессревиевинстанце, связанный с каждым из них. Экземпляр является родительским элементом решения, представляющим повторение проверки доступа, над которой принимается решение. |
+| экземпляр |[accessReviewInstance](accessreviewinstance.md) | С каждым решением связан только один accessReviewInstance. Экземпляр является родительским элементом элемента решения, представляющим повторение проверки доступа, на которое было принято решение. |
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,7 +58,6 @@ ms.locfileid: "49001067"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
-  "baseType": "",
   "openType": true
 }
 -->

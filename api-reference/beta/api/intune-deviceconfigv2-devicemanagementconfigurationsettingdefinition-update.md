@@ -1,26 +1,26 @@
 ---
-title: Обновление Девицеманажементконфигуратионсеттингдефинитион
-description: Обновление свойств объекта Девицеманажементконфигуратионсеттингдефинитион.
+title: Обновление deviceManagementConfigurationSettingDefinition
+description: Обновление свойств объекта deviceManagementConfigurationSettingDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb49bbd90b7c952deba932e0bbd1946f7bfc6ede
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1370c49932bb32e3fb96d0a1111b496094f69000
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242547"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50160055"
 ---
-# <a name="update-devicemanagementconfigurationsettingdefinition"></a>Обновление Девицеманажементконфигуратионсеттингдефинитион
+# <a name="update-devicemanagementconfigurationsettingdefinition"></a>Обновление deviceManagementConfigurationSettingDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) .
+Обновление свойств объекта [deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49242547"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,33 +48,34 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) в формате JSON.
+В теле запроса предопределение представления объекта [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|применения|[девицеманажементконфигуратионсеттингаппликабилити](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какие параметры устройства применяются для|
-|акцесстипес|[девицеманажементконфигуратионсеттингакцесстипес](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа для чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|keywords|Коллекция строк|Маркеры, для которых необходимо выполнить поиск параметров|
-|инфаурлс|Коллекция строк|Список ссылок дополнительные сведения для параметра можно найти по адресу|
-|экземпляр|[девицеманажементконфигуратионсеттингоккурренце](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, является ли параметр обязательным или нет|
-|baseUri|String|Путь к основному поставщику служб шифрования|
-|оффсетури|String|Путь от базового поставщика CSP|
-|рутдефинитионид|String|Определение корневого параметра, если параметр является дочерним.|
-|categoryId|String|Указывает группу областей, в которой параметр настроен в указанном поставщике службы конфигурации (CSP).|
-|сеттингусаже|[девицеманажементконфигуратионсеттингусаже](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Тип параметра, например, "Конфигурация" и "соответствие". Возможные значения: `none`, `configuration`.|
+|применимость|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какой параметр устройства применим к|
+|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа для чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
+|keywords|Коллекция String|Маркеры, в которых необходимо искать параметры|
+|infoUrls|Коллекция String|Список ссылок на дополнительные сведения о параметре можно найти по адресу|
+|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, является ли параметр требуемой|
+|baseUri|String|Базовый путь CSP|
+|offsetUri|String|Смещение пути CSP от базового|
+|rootDefinitionId|String|Определение корневого параметра, если этот параметр является параметром-дитя.|
+|categoryId|String|Указывает группу области, в которой этот параметр настроен в указанном поставщике служб конфигурации (CSP)|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Тип параметра, например конфигурация и соответствие требованиям. Возможные значения: `none`, `configuration`.|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Представление типа управления параметром в UX. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |id|String|Идентификатор элемента|
 |description|String|Описание элемента|
-|helpText|String|Текст справки элемента|
+|helpText|String|Текст справки для элемента|
 |name|String|Имя элемента|
-|displayName|String|Отображаемое имя элемента|
+|displayName|String|Отображаемого имени элемента|
 |version|String|Версия элемента|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -83,7 +84,7 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 Content-type: application/json
-Content-length: 977
+Content-length: 1006
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -111,6 +112,7 @@ Content-length: 977
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
   "description": "Description value",
   "helpText": "Help Text value",
   "name": "Name value",
@@ -124,7 +126,7 @@ Content-length: 977
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1026
+Content-Length: 1055
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -152,6 +154,7 @@ Content-Length: 1026
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
   "id": "7af649e5-49e5-7af6-e549-f67ae549f67a",
   "description": "Description value",
   "helpText": "Help Text value",

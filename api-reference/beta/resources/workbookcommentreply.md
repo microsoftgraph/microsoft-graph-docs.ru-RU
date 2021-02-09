@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Воркбуккомментрепли
-description: Определение типа ресурса Воркбуккомментрепли
+title: Тип ресурса workbookCommentReply
+description: Определение типа ресурса workbookCommentReply
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8206f2cef7996bd0abc64a1f99493b701c4730e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc25b02005e0f419fbb878005006f155f1f99e72
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079647"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159432"
 ---
-# <a name="workbookcommentreply-resource-type"></a>Тип ресурса Воркбуккомментрепли
+# <a name="workbookcommentreply-resource-type"></a>Тип ресурса workbookCommentReply
 
 Пространство имен: microsoft.graph
 
@@ -22,19 +22,19 @@ ms.locfileid: "48079647"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Воркбуккомментреплиес](../api/workbookcomment-list-replies.md) | Коллекция [воркбуккомментрепли](workbookcommentreply.md) | Получение списка объектов воркбуккомментрепли. |
-| [Получение Воркбуккомментрепли](../api/workbookcommentreply-get.md) | [воркбуккомментрепли](workbookcommentreply.md) | Чтение свойств и связей объекта Воркбуккомментрепли. |
-| [Создание Воркбуккомментрепли](../api/workbookcomment-post-replies.md) | [воркбуккомментрепли](workbookcommentreply.md) | Создание нового Воркбуккомментрепли. |
+| [Список workbookCommentReplies](../api/workbookcomment-list-replies.md) | [Коллекция workbookCommentReply](workbookcommentreply.md) | Получить список объектов workbookcommentreply. |
+| [Get workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Чтение свойств и связей объекта workbookCommentReply. |
+| [Создание workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Создайте новую книгуCommentReply. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|content|String|Содержимое комментария, на который дан ответ.|
-|contentType|String|Указывает тип комментария для ответа.|
+|content|String|Содержимое ответного комментария.|
+|contentType|String|Указывает тип ответного комментария.|
 |id|String|Представляет идентификатор примечания. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -48,7 +48,6 @@ ms.locfileid: "48079647"
 
   ],
   "@odata.type": "microsoft.graph.workbookCommentReply",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ddddea13ceb2840c61ec31238c03e7ab6e43d2d4
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 16198df73c51b1b5f7cb7f8c7748da4816800890
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934814"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158585"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>Тип ресурса accessPackageResourceRequest
 
@@ -57,7 +57,6 @@ ms.locfileid: "49934814"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

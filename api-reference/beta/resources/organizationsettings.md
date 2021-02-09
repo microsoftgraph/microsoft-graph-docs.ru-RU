@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Организатионсеттингс
-description: Содержит параметры, которые применяются к организациям или объектам пользователей в ней.
+title: Тип ресурса organizationSettings
+description: Содержит параметры, применимые к организации или объектам-пользователям в ней.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: e95bae902b444735b87fa7b29e061bf9bf2629ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 105a57c7cb5827e9017df7494d32802ef7ac6fa5
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998476"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158326"
 ---
-# <a name="organizationsettings-resource-type"></a>Тип ресурса Организатионсеттингс
+# <a name="organizationsettings-resource-type"></a>Тип ресурса organizationSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит параметры, применимые к [Организации](organization.md) или применяемые к объектам [пользователей](user.md) в Организации.
+Содержит параметры, применимые [](organization.md) к организации или применяемые к объектам [пользователей](user.md) в организации.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение параметров Организации](../api/organizationsettings-get.md) | [организатионсеттингс](organizationsettings.md) | Чтение объекта параметров Организации. |
-| [Создание Профилекардпроперти](../api/organizationsettings-post-profilecardproperties.md) | [профилекардпроперти](profilecardproperty.md) | Создание нового **профилекардпроперти** путем отправки в коллекцию объектов **профилекардпроперти** . |
-| [Список Профилекардпропертиес](../api/organizationsettings-list-profilecardproperties.md) | Коллекция [профилекардпроперти](profilecardproperty.md) | Получение коллекции объектов **профилекардпроперти** . |
-| [Получение Итеминсигхтссеттингс](../api/iteminsightssettings-get.md) | [итеминсигхтссеттингс](iteminsightssettings.md) | Получение свойств объекта **итеминсигхтссеттингс** . |
-| [Обновление Итеминсигхтссеттингс](../api/iteminsightssettings-update.md) | [итеминсигхтссеттингс](iteminsightssettings.md) | Обновление свойств указанного ресурса **итеминсигхтссеттингс** . |
+| [Получить параметры организации](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Чтение объекта параметров организации. |
+| [Создание profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Создание нового **объекта profileCardProperty** путем публикации в коллекции объектов **profileCardProperty.** |
+| [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [Коллекция profileCardProperty](profilecardproperty.md) | Получите **коллекцию объектов profileCardProperty.** |
+| [Get itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Получите свойства объекта **itemInsightsSettings.** |
+| [Обновление itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Обновление свойств указанного ресурса **itemInsightsSettings.** |
 
 ## <a name="properties"></a>Свойства
 
@@ -36,9 +36,9 @@ ms.locfileid: "47998476"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id |String| Идентификатор объекта параметров для Организации. |
-|профилекардпропертиес|Коллекция [профилекардпроперти](profilecardproperty.md)| Содержит коллекцию свойств, которые администратор определил как видимый в карточке профиля Microsoft 365. [Получить параметры организации](../api/organizationsettings-get.md) Возвращает свойства, настроенные для карточек профилей в Организации.|
-|itemInsights|[итеминсигхтссеттингс](iteminsightssettings.md)| Содержит свойства, настроенные администратором для отображения данных, получаемых от Microsoft Graph, между пользователем и другими элементами в Microsoft 365, такими как документы и сайты. [Получите итеминсигхтссеттингс](../api/iteminsightssettings-get.md) через это свойство навигации.|
+|id |String| ИД объекта параметров для организации. |
+|profileCardProperties|[Коллекция profileCardProperty](profilecardproperty.md)| Содержит коллекцию свойств, которые администратор определил как видимые на карточке профиля Microsoft 365. [При этом возвращаются](../api/organizationsettings-get.md) свойства, настроенные для карт профилей организации.|
+|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Содержит свойства, настроенные администратором для видимости данных, полученных от Microsoft Graph, между пользователем и другими элементами в Microsoft 365, такими как документы или сайты. [Получите itemInsightsSettings через](../api/iteminsightssettings-get.md) это свойство навигации.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -50,7 +50,6 @@ ms.locfileid: "47998476"
 
   ],
   "@odata.type": "microsoft.graph.organizationSettings",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

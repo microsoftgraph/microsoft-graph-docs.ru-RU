@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса credentialUserRegistrationDetails
-description: Представляет сведения об использовании самостоятельного сброса пароля и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей.
+description: Представляет сведения об использовании самостоятельного сброса паролей и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 77cd878eb0861990dadf790f91fff774b0862bee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c7e45b186e1ef7a3a96115f408cb5a0992e538fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136264"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159908"
 ---
 # <a name="credentialuserregistrationdetails-resource-type"></a>Тип ресурса credentialUserRegistrationDetails
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136264"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения об использовании самостоятельного сброса паролей и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей. Сведения включают сведения о пользователе, состояние регистрации и используемый метод проверки подлинности.
+Представляет сведения об использовании самостоятельного сброса пароля и многофакторной проверки подлинности (MFA) для всех зарегистрированных пользователей. Сведения включают сведения о пользователе, состояние регистрации и используемый метод проверки подлинности.
 
 ## <a name="methods"></a>Методы
 
@@ -32,7 +32,7 @@ ms.locfileid: "50136264"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | authMethods | коллекция registrationAuthMethod | Представляет метод проверки подлинности, зарегистрированный пользователем. Возможные значения: , , , (используется только для самостоятельного сброса `email` `mobilePhone` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode` `alternateMobilePhone` (поддерживается только при регистрации). |
-| id | Строка | Уникальный идентификатор действия. Только для чтения.|
+| id | String | Уникальный идентификатор действия. Только для чтения.|
 | isCapable | Boolean | Указывает, готов ли пользователь к самостоятельному сбросу пароля или MFA. |
 | isEnabled | Boolean | Не сообщает, включен ли для пользователя самостоятельный сброс пароля. |
 | isMfaRegistered | Boolean | Не сообщает, зарегистрирован ли пользователь для MFA. |
@@ -54,7 +54,6 @@ ms.locfileid: "50136264"
 
   ],
   "@odata.type": "microsoft.graph.credentialUserRegistrationDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Тимеоффрекуест
-description: Представляет тип запроса на сдвиг для получения тимеофф.
+title: Тип ресурса timeOffRequest
+description: Представляет тип запроса на смену для отключки.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1b1e6c3f55b716590a399c9324ea759ff93810d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d94f90ca0c77fc0e97de94027a4bf5b591820f4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073392"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159446"
 ---
-# <a name="timeoffrequest-resource-type"></a>Тип ресурса Тимеоффрекуест
+# <a name="timeoffrequest-resource-type"></a>Тип ресурса timeOffRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет тип запроса на сдвиг для получения [тимеофф](../resources/timeoff.md).
+Представляет тип запроса на смену для [отключки.](../resources/timeoff.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/timeoffrequest-list.md) | Коллекция [тимеоффрекуест](timeoffrequest.md) | Получение списка объектов **тимеоффрекуест** в этом расписании.|
-| [получение](../api/timeoffrequest-get.md); | [тимеоффрекуест](timeoffrequest.md) | Чтение свойств и связей объекта **тимеоффрекуест** . |
-| [Удаление](../api/timeoffrequest-delete.md) | Нет | Удаление объекта **тимеоффрекуест** . |
-| [Утвердить](../api/timeoffrequest-approve.md)|Нет|Утверждение запроса на нерабочее время.|
-| [Отклоня](../api/timeoffrequest-decline.md)|Нет|Отклонить запрос времени ожидания.|
+| [Список](../api/timeoffrequest-list.md) | [Коллекция timeOffRequest](timeoffrequest.md) | Получите список объектов **timeOffRequest** в этом расписании.|
+| [Получение](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Чтение свойств и связей объекта **timeOffRequest.** |
+| [удаление](../api/timeoffrequest-delete.md); | Нет | Удаление объекта **timeOffRequest.** |
+| [Утвердить](../api/timeoffrequest-approve.md)|Нет|Утверждение запроса на неавключие.|
+| [Отклонение](../api/timeoffrequest-decline.md)|Нет|Отклонение запроса на отключение.|
 
 ## <a name="properties"></a>Свойства
 
@@ -36,9 +36,9 @@ ms.locfileid: "48073392"
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|тимеоффреасонид|String|Причина невыходного времени.|
+|timeOffReasonId|String|Причина простоя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -51,8 +51,7 @@ ms.locfileid: "48073392"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeOffRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.timeOffRequest"
 }-->
 
 ```json

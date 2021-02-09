@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1d7f97410c924b804ef4002932ca75182a461989
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 188504dc96628ba0047f9feb2489e94b8f138874
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133604"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158578"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>Тип ресурса accessPackageResourceRole
 
@@ -30,11 +30,11 @@ ms.locfileid: "50133604"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Описание роли ресурса.|
-|displayName|Строка|Отображаемого имени роли ресурса, например роли, определенной приложением.|
+|description|String|Описание роли ресурса.|
+|displayName|String|Отображаемого имени роли ресурса, например роли, определенной приложением.|
 |id|String| Только для чтения.|
-|originId|Строка|Уникальный идентификатор роли ресурса в системе источника. |
-|originSystem|Строка|Тип ресурса в системе источника, например `SharePointOnline` , или `AadApplication` `AadGroup` .|
+|originId|String|Уникальный идентификатор роли ресурса в системе источника. |
+|originSystem|String|Тип ресурса в системе источника, например `SharePointOnline` , или `AadApplication` `AadGroup` .|
 
 ## <a name="relationships"></a>Связи
 
@@ -52,7 +52,6 @@ ms.locfileid: "50133604"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRole",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

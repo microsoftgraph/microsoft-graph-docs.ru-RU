@@ -1,26 +1,26 @@
 ---
-title: Получение Девицеманажементконфигуратиончоицесеттингколлектиондефинитион
-description: Чтение свойств и связей объекта Девицеманажементконфигуратиончоицесеттингколлектиондефинитион.
+title: Get deviceManagementConfigurationChoiceSettingCollectionDefinition
+description: Чтение свойств и связей объекта deviceManagementConfigurationChoiceSettingCollectionDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17f64ff7422e97f4ed2cc3d4c1a51879a6a94bd5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d4d31b21966dff36491a612d907b556f8791b14c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242144"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158914"
 ---
-# <a name="get-devicemanagementconfigurationchoicesettingcollectiondefinition"></a>Получение Девицеманажементконфигуратиончоицесеттингколлектиондефинитион
+# <a name="get-devicemanagementconfigurationchoicesettingcollectiondefinition"></a>Get deviceManagementConfigurationChoiceSettingCollectionDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [девицеманажементконфигуратиончоицесеттингколлектиондефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingcollectiondefinition.md) .
+Чтение свойств и связей объекта [deviceManagementConfigurationChoiceSettingCollectionDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingcollectiondefinition.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49242144"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементконфигуратиончоицесеттингколлектиондефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingcollectiondefinition.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [deviceManagementConfigurationChoiceSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingcollectiondefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10345
+Content-Length: 10376
 
 {
   "value": {
@@ -98,6 +98,7 @@ Content-Length: 10345
     "rootDefinitionId": "Root Definition Id value",
     "categoryId": "Category Id value",
     "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
     "id": "eb03fdca-fdca-eb03-cafd-03ebcafd03eb",
     "description": "Description value",
     "helpText": "Help Text value",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 0056f78eaecfad34a10dfb1ad2da04c15a6bc370
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da089ba198b5056bdecdceba96be572366618a23
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136152"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158347"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>Тип ресурса onPremisesAgentGroup
 
@@ -34,9 +34,9 @@ ms.locfileid: "50136152"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображаемого имени **onPremisesAgentGroup.**|
-|id|Строка| ИД объекта **onPremisesAgentGroup.** Только для чтения.|
-|isDefault|Boolean|Указывает, является **ли onPremisesAgentGroup** группой агентов по умолчанию. По умолчанию **onPremisesAgentGroup** может быть только одна группа агентов, которая устанавливается системой.|
+|displayName|String|Отображаемого имени **onPremisesAgentGroup.**|
+|id|String| ИД объекта **onPremisesAgentGroup.** Только для чтения.|
+|isDefault|Boolean|Указывает, является ли **onPremisesAgentGroup** группой агентов по умолчанию. По умолчанию **onPremisesAgentGroup** может быть только одна группа агентов, которая устанавливается системой.|
 |publishingType|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Связи
@@ -56,7 +56,6 @@ ms.locfileid: "50136152"
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgentGroup",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -1,26 +1,26 @@
 ---
-title: Список Мобилеаппполицисетитемс
-description: Список свойств и связей объектов Мобилеаппполицисетитем.
+title: Список mobileAppPolicySetItems
+description: Список свойств и связей объектов mobileAppPolicySetItem.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6532aa87d0544ef06d02054b28904fe79763002c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 99e03a0cdb84c8b166dee4e71efb21ebd76baf87
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49233105"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159306"
 ---
-# <a name="list-mobileapppolicysetitems"></a>Список Мобилеаппполицисетитемс
+# <a name="list-mobileapppolicysetitems"></a>Список mobileAppPolicySetItems
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) .
+Список свойств и связей объектов [mobileAppPolicySetItem.](../resources/intune-policyset-mobileapppolicysetitem.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49233105"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 791
+Content-Length: 821
 
 {
   "value": [
@@ -86,7 +86,8 @@ Content-Length: 791
       "settings": {
         "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
         "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true
+        "uninstallOnDeviceRemoval": true,
+        "isRemovable": true
       }
     }
   ]

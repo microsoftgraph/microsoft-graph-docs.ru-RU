@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионсеттингдефинитион
+title: Тип ресурса deviceManagementConfigurationSettingDefinition
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d5e0b2e1c200ffb14011d7fcd22aac3aca86246
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1c28b29b26a24d20281fbd60c167646656ac57f3
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242187"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159586"
 ---
-# <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементконфигуратионсеттингдефинитион
+# <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>Тип ресурса deviceManagementConfigurationSettingDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,30 +25,31 @@ ms.locfileid: "49242187"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Девицеманажементконфигуратионсеттингдефинитионс](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-list.md)|Коллекция [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Список свойств и связей объектов [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) .|
-|[Получение Девицеманажементконфигуратионсеттингдефинитион](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-get.md)|[девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Чтение свойств и связей объекта [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) .|
-|[Создание Девицеманажементконфигуратионсеттингдефинитион](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-create.md)|[девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Создание нового объекта [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) .|
-|[Удаление Девицеманажементконфигуратионсеттингдефинитион](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-delete.md)|Нет|Удаляет объект [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).|
-|[Обновление Девицеманажементконфигуратионсеттингдефинитион](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-update.md)|[девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Обновление свойств объекта [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) .|
+|[Список deviceManagementConfigurationSettingDefinitions](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-list.md)|[Коллекция deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Список свойств и связей объектов [deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|[Get deviceManagementConfigurationSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-get.md)|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Чтение свойств и связей объекта [deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|[Создание deviceManagementConfigurationSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-create.md)|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Создание объекта [deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|[Удаление deviceManagementConfigurationSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-delete.md)|Нет|Удаляет [deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|[Обновление deviceManagementConfigurationSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-update.md)|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Обновление свойств объекта [deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|применения|[девицеманажементконфигуратионсеттингаппликабилити](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какие параметры устройства применяются для|
-|акцесстипес|[девицеманажементконфигуратионсеттингакцесстипес](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа для чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|keywords|Коллекция строк|Маркеры, для которых необходимо выполнить поиск параметров|
-|инфаурлс|Коллекция строк|Список ссылок дополнительные сведения для параметра можно найти по адресу|
-|экземпляр|[девицеманажементконфигуратионсеттингоккурренце](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, является ли параметр обязательным или нет|
-|baseUri|String|Путь к основному поставщику служб шифрования|
-|оффсетури|String|Путь от базового поставщика CSP|
-|рутдефинитионид|String|Определение корневого параметра, если параметр является дочерним.|
-|categoryId|String|Указывает группу областей, в которой параметр настроен в указанном поставщике службы конфигурации (CSP).|
-|сеттингусаже|[девицеманажементконфигуратионсеттингусаже](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Тип параметра, например, "Конфигурация" и "соответствие". Возможные значения: `none`, `configuration`.|
+|применимость|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какой параметр устройства применим к|
+|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа для чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
+|keywords|Коллекция String|Маркеры, в которых необходимо искать параметры|
+|infoUrls|Коллекция String|Список ссылок на дополнительные сведения о параметре можно найти по адресу|
+|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, является ли параметр требуемой|
+|baseUri|String|Базовый путь CSP|
+|offsetUri|String|Смещение пути CSP от базового|
+|rootDefinitionId|String|Определение корневого параметра, если этот параметр является параметром-child.|
+|categoryId|String|Указывает группу области, в которой настроен параметр в указанном поставщике служб конфигурации (CSP)|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Тип параметра, например конфигурация и соответствие требованиям. Возможные значения: `none`, `configuration`.|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Установка представления типа управления в UX. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |id|String|Идентификатор элемента|
 |description|String|Описание элемента|
-|helpText|String|Текст справки элемента|
+|helpText|String|Текст справки для элемента|
 |name|String|Имя элемента|
-|displayName|String|Отображаемое имя элемента|
+|displayName|String|Отображаемого имени элемента|
 |version|String|Версия элемента|
 
 ## <a name="relationships"></a>Связи
@@ -89,6 +90,7 @@ ms.locfileid: "49242187"
   "rootDefinitionId": "String",
   "categoryId": "String",
   "settingUsage": "String",
+  "uxBehavior": "String",
   "id": "String (identifier)",
   "description": "String",
   "helpText": "String",

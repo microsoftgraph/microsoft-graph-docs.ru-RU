@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Идентитюсерфловаттрибутеассигнмент
-description: Идентитюсерфловаттрибутеассигнментс используются для сбора определенных Идентитюсерфловаттрибутес в рамках пользовательского процесса.
+title: Тип ресурса identityUserFlowAttributeAssignment
+description: identityUserFlowAttributeAssignments используются для сбора определенных identityUserFlowAttributes в пользовательском потоке.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 80bc6547307914e0d206ea9b5c79073f96fce19c
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 65859cb0d235454577e236761064f4597f5c68d8
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581345"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158788"
 ---
-# <a name="identityuserflowattributeassignment-resource-type"></a>Тип ресурса Идентитюсерфловаттрибутеассигнмент
+# <a name="identityuserflowattributeassignment-resource-type"></a>Тип ресурса identityUserFlowAttributeAssignment
 
 Пространство имен: microsoft.graph
 
-Идентитюсерфловаттрибутеассигнментс используются для сбора определенных Идентитюсерфловаттрибутес в рамках пользовательского процесса. Это позволяет управлять атрибутами, собранными в пользовательском цикле, и предоставляет варианты настройки для сбора атрибута в пределах пользовательского процесса. Вы можете использовать несколько Идентитюсерфловаттрибутеассигнментс в одном потоке пользователей, который создает интерфейс, который видит конечный пользователь во время регистрации, когда вам будет предложено предоставить сведения, необходимые для входа пользователя в систему.
+identityUserFlowAttributeAssignments используются для сбора определенных identityUserFlowAttributes в пользовательском потоке. Это позволяет управлять атрибутами, собранными в пользовательском потоке, и предоставляет параметры настройки для сбора атрибута в пользовательском потоке. В одном пользовательском потоке может быть несколько удостоверенийUserFlowAttributeAssignment, что создает интерфейс, который видит конечный пользователь во время регистрации при запросе на предоставление сведений, необходимых пользовательскому потоку для завершения регистрации.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Получение Идентитюсерфловаттрибутеассигнмент](../api/identityuserflowattributeassignment-get.md)|[идентитюсерфловаттрибутеассигнмент](../resources/identityuserflowattributeassignment.md)|Чтение свойств и связей объекта Идентитюсерфловаттрибутеассигнмент.|
-|[Обновление Идентитюсерфловаттрибутеассигнмент](../api/identityuserflowattributeassignment-update.md)|Нет|Обновление свойств объекта Идентитюсерфловаттрибутеассигнмент.|
-|[Удаление Идентитюсерфловаттрибутеассигнмент](../api/identityuserflowattributeassignment-delete.md)|Нет|Удаление определенного объекта Идентитюсерфловаттрибутеассигнмент.|
-|[по убыванию](../api/identityuserflowattributeassignment-getorder.md)|[ассигнментордер](../resources/assignmentorder.md)|Получает порядок Идентитюсерфловаттрибутес, собранных в пользовательском движении.|
-|[сетордер](../api/identityuserflowattributeassignment-setorder.md)|Нет|Задает порядок Идентитюсерфловаттрибутес, собранных в пользовательском движении.|
+|[Get identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-get.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Чтение свойств и связей объекта identityUserFlowAttributeAssignment.|
+|[Обновление identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-update.md)|Нет|Обновление свойств объекта identityUserFlowAttributeAssignment.|
+|[Удаление identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-delete.md)|Нет|Удаление определенного объекта identityUserFlowAttributeAssignment.|
+|[getOrder](../api/identityuserflowattributeassignment-getorder.md)|[assignmentOrder](../resources/assignmentorder.md)|Получает порядок identityUserFlowAttributes, собираемого в пользовательском потоке.|
+|[setOrder](../api/identityuserflowattributeassignment-setorder.md)|Нет|Задает порядок identityUserFlowAttributes, собираемого в пользовательском потоке.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор Идентитюсерфловаттрибутеассигнмент. Этот идентификатор становится неизменяемым после его создания. Это свойство доступно только для чтения.|
-|displayName|String|Отображаемое имя Идентитюсерфловаттрибуте в пользовательском движении.|
-|Переключатель|Логический|Определяет, является ли Идентитюсерфловаттрибуте необязательным. `true` означает, что пользователю не нужно указывать значение. `false` означает, что пользователь не может выполнить вход, не указывая значение.|
-|рекуиресверификатион|Логический|Определяет, требуется ли для Идентитюсерфловаттрибуте проверка. Используется только для проверки номера телефона пользователя или адреса электронной почты.|
-|усераттрибутевалуес|Коллекция [усераттрибутевалуеситем](../resources/userattributevaluesitem.md)|Параметры ввода для атрибута Flow User. Применяется только в том случае, если для Усеринпуттипе задано значение `radioSingleSelect` , `dropdownSingleSelect` или `checkboxMultiSelect` .|
-|усеринпуттипе|идентитюсерфловаттрибутеинпуттипе|Тип входных данных для атрибута Flow User. Возможные значения: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
+|id|String|Идентификатор identityUserFlowAttributeAssignment. Этот идентификатор не может быть неуявяем после его создания. Это свойство только для чтения.|
+|displayName|String|Отображаемого имени identityUserFlowAttribute в пользовательском потоке.|
+|isOptional|Boolean|Определяет, является ли identityUserFlowAttribute необязательным. `true` означает, что пользователю не нужно предоставлять значение. `false` означает, что пользователь не может завершить регистрацию без предоставления значения.|
+|requiresVerification|Boolean|Определяет, требуется ли проверка identityUserFlowAttribute. Он используется только для проверки номера телефона или адреса электронной почты пользователя.|
+|userAttributeValues|[Коллекция userAttributeValuesItem](../resources/userattributevaluesitem.md)|Параметры ввода для атрибута пользовательского потока. Применимо только в том случае, если userInputType имеет , `radioSingleSelect` `dropdownSingleSelect` или `checkboxMultiSelect` .|
+|userInputType|identityUserFlowAttributeInputType|Тип ввода атрибута пользовательского потока. Возможные значения: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
 
 ## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|усераттрибуте|[идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md)|Атрибут пользователя, который требуется добавить в пользовательский блок.|
+|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|Атрибут пользователя, который вы хотите добавить в пользовательский поток.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -52,7 +52,6 @@ ms.locfileid: "49581345"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityUserFlowAttributeAssignment",
-  "baseType": "",
   "openType": false
 }
 -->

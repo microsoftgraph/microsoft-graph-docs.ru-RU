@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса Трустфрамеворккэйсет
-description: Представляет ключи набора ключей и политики для инфраструктуры доверия.
+title: Тип ресурса trustFrameworkKeySet
+description: Представляет набор ключей и ключи политики для структуры доверия.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 17e9e0d73ce25fab0462d6ee8eb50e3e232f8340
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4223681a11ff11b8ea75b165247b5269d1a6cf84
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083892"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159859"
 ---
-# <a name="trustframeworkkeyset-resource-type"></a>Тип ресурса Трустфрамеворккэйсет
+# <a name="trustframeworkkeyset-resource-type"></a>Тип ресурса trustFrameworkKeySet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ключи набора ключей и политики для инфраструктуры доверия. В платформе удостоверений хранятся секреты, которые можно использовать в политиках. Секреты могут представлять собой пароли, сертификаты и другие файлы. В портале эти сущности отображаются как `Policy keys` . Платформа удостоверений использует стандарт JSON Web Key (ЖВК) для кэйсетс. Эта сущность соответствует формату, указанному в [RFC 7517 в разделе 5](https://tools.ietf.org/html/rfc7517#section-5).
+Представляет набор ключей и ключи политики для структуры доверия. В базе identity Experience framework хранится секрет, который можно использовать в политиках. Секреты могут быть паролями, сертификатами или другими файлами. На портале эти сущности показаны как `Policy keys` . В структуре identity Experience используется стандарт JSON Web Key (JWK) для ключей. Эта сущность следует формату, указанному в разделе [5 RFC 7517.](https://tools.ietf.org/html/rfc7517#section-5)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление](../api/trustframework-list-keysets.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) Семейства | Список Трустфрамеворккэйсетс. |
-| [Создание](../api/trustframework-post-keysets.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Создайте Трустфрамеворккэйсет. |
-| [Получение](../api/trustframeworkkeyset-get.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Чтение свойств и связей объекта Трустфрамеворккэйсет. |
-| [Обновление](../api/trustframeworkkeyset-update.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Обновление объекта Трустфрамеворккэйсет. |
-| [удаление](../api/trustframeworkkeyset-delete.md); | Нет | Удаление объекта Трустфрамеворккэйсет. |
-|[Создание ключа](../api/trustframeworkkeyset-generatekey.md)|[трустфрамеворккэй](trustframeworkkey.md)| Создание ключа в наборе ключей. |
-|[Получение активного ключа](../api/trustframeworkkeyset-getactivekey.md)|[трустфрамеворккэй](trustframeworkkey.md)| Получить активный в данный момент ключ в наборе ключей. |
-|[Отправка сертификата](../api/trustframeworkkeyset-uploadcertificate.md)|[трустфрамеворккэй](trustframeworkkey.md)| Отправьте сертификат X. 509. |
-|[Отправка PKCS12](../api/trustframeworkkeyset-uploadpkcs12.md)|[трустфрамеворккэй](trustframeworkkey.md)| Отправьте сертификат формата PKCS12. |
-|[Отправка секрета](../api/trustframeworkkeyset-uploadsecret.md)|[трустфрамеворккэй](trustframeworkkey.md)| Отправка секрета на основе строки. |
+| [Список](../api/trustframework-list-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) Коллекция | Список trustFrameworkKeySets. |
+| [Создание](../api/trustframework-post-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Создание trustFrameworkKeySet. |
+| [Получение](../api/trustframeworkkeyset-get.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Чтение свойств и связей объекта trustFrameworkKeySet. |
+| [Обновление](../api/trustframeworkkeyset-update.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Обновление объекта trustFrameworkKeySet. |
+| [удаление](../api/trustframeworkkeyset-delete.md); | Нет | Удаление объекта trustFrameworkKeySet. |
+|[Создание ключа](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Создание ключа в наборе ключей. |
+|[Получить активный ключ](../api/trustframeworkkeyset-getactivekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Получите текущий активный ключ в наборе ключей. |
+|[Отправка сертификата](../api/trustframeworkkeyset-uploadcertificate.md)|[trustFrameworkKey](trustframeworkkey.md)| Отправка сертификата X.509. |
+|[Отправка PKCS12](../api/trustframeworkkeyset-uploadpkcs12.md)|[trustFrameworkKey](trustframeworkkey.md)| Отправка сертификата формата PKCS12. |
+|[Секрет отправки](../api/trustframeworkkeyset-uploadsecret.md)|[trustFrameworkKey](trustframeworkkey.md)| Отправка секрета на основе строки. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Уникальный идентификатор набора ключей трустфрамеворк |
-|переключен|Коллекция [трустфрамеворккэй](trustframeworkkey.md)| Коллекция ключей. |
+|id|String| Уникальный идентификатор наборов ключей инфраструктуры доверия |
+|keys|[Коллекция trustFrameworkKey](trustframeworkkey.md)| Коллекция ключей. |
 
 ## <a name="relationships"></a>Связи
 
@@ -56,7 +56,6 @@ ms.locfileid: "48083892"
 
   ],
   "@odata.type": "microsoft.graph.trustFrameworkKeySet",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

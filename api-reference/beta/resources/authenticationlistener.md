@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d89d7660fc2580b8fad185633b6b819df1a41aaf
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 41114f69bb169922b5594ee5cbbcdb236edfb0d0
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720353"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159166"
 ---
 # <a name="authenticationlistener-resource-type"></a>Тип ресурса authenticationListener
 
@@ -18,9 +18,9 @@ ms.locfileid: "49720353"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определяет прослушиватель, который будет оцениваться при событии проверки подлинности при проверке подлинности. AuthenticationListener абстрактный и является базовым классом различных типов прослушивателей, которые можно оценить во время события проверки подлинности. 
+Определяет прослушиватель для оценки события проверки подлинности при проверке подлинности. AuthenticationListener абстрактный и является базовым классом различных типов прослушивателей, которые можно оценить во время события проверки подлинности. 
 
-Вы можете создать [invokeUserFlowListener](../resources/invokeuserflowlistener.md) для события onSignUpStart.. Это связывает приложение с пользовательским потоком, что позволяет самообслуживить [процесс регистрации.](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) После того как приложение будет связано с потоком пользователей, пользователи, которые будут перейти к этому приложению, смогут инициировать процесс регистрации, который подавит гостевую учетную запись.
+Вы можете создать [invokeUserFlowListener](../resources/invokeuserflowlistener.md) для события onSignUpStart.. Это связывает приложение с пользовательским потоком, что позволяет [самообслуживить процесс регистрации.](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) После того как приложение будет связано с потоком пользователей, пользователи, которые будут перейти к этому приложению, смогут инициировать процесс регистрации, который будет подготовка гостевой учетной записи.
 
 ## <a name="methods"></a>Методы
 
@@ -41,7 +41,7 @@ ms.locfileid: "49720353"
 |priority|Int32|Приоритет прослушиватель. Определяет порядок оценки, если событие имеет несколько прослушивателей. Приоритет оценивается от низкого до высокого.|
 |sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Фильтрация на основе источника проверки подлинности, используемого для определения того, оценивается ли прослушиватель. В настоящее время это ограничение ограничено оценками, основанными на приложении, в которое пользователь проходит проверку подлинности.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -52,7 +52,6 @@ ms.locfileid: "49720353"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationListener",
-  "baseType": "",
   "openType": false
 }
 -->

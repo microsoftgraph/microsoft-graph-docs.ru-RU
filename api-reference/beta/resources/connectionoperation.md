@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Коннектионоператион
-description: Описывает состояние асинхронного запроса для создания схемы подключения поиска Microsoft Search.
+title: Тип ресурса connectionOperation
+description: Описывает состояние асинхронного запроса на создание схемы подключения Поиска (Майкрософт).
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aed9574ba6fd5e8b2c47b38ee4eebb3326cf2a37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e17b1f55b00fd7b9bdc69eb7a7a34d3453ab332d
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027190"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158305"
 ---
-# <a name="connectionoperation-resource-type"></a>Тип ресурса Коннектионоператион
+# <a name="connectionoperation-resource-type"></a>Тип ресурса connectionOperation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает состояние асинхронного запроса для создания [схемы](schema.md)подключения поиска Microsoft Search.
+Описывает состояние асинхронного запроса на создание схемы подключения Поиска [(Майкрософт).](schema.md)
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -26,17 +26,17 @@ ms.locfileid: "48027190"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Коннектионоператион](../api/connectionoperation-get.md) | [коннектионоператион](connectionoperation.md) | Чтение свойств объекта Коннектионоператион. |
+| [Get connectionOperation](../api/connectionoperation-get.md) | [connectionOperation](connectionoperation.md) | Чтение свойств объекта connectionOperation. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип                          | Описание                       |
 |:---------|:------------------------------|:----------------------------------|
-| error    | [еррордетаил](errordetail.md) | Если `status` это так `failed` , предоставляет дополнительные сведения об ошибке, вызвавшей сбой. |
-| id       | String                        | Уникальный идентификатор для Коннектионоператион. Только для чтения. |
+| error    | [errorDetail](errordetail.md) | Если `status` это `failed` так, предоставляет дополнительные сведения об ошибке, которая привела к сбою. |
+| id       | String                        | Уникальный идентификатор для connectionOperation. Только для чтения. |
 | status   | string                        | Указывает состояние асинхронной операции. Возможные значения: `unspecified`, `inprogress`, `completed`, `failed`. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -50,7 +50,6 @@ ms.locfileid: "48027190"
 
   ],
   "@odata.type": "microsoft.graph.connectionOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

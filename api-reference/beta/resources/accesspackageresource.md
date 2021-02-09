@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 31499fda1d2d12f1e9868da6cf9e09fde38298cd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2137d5452ddef86580504577614a042398a1b9ad
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137475"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158599"
 ---
 # <a name="accesspackageresource-resource-type"></a>Тип ресурса accessPackageResource
 
@@ -30,16 +30,16 @@ ms.locfileid: "50137475"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Содержит сведения о среде для ресурса. Это можно настроить с помощью `@odata.bind` аннотации или источника *среды.*|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Содержит сведения о среде для ресурса. Это можно сделать с помощью `@odata.bind` аннотации или источника *среды.*|
 |addedBy|String|Только для чтения.|
 |addedOn|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|description|Строка|Описание ресурса.|
-|displayName|Строка|Отображаемого имени ресурса, например имя приложения, имя группы или имя сайта.|
+|description|String|Описание ресурса.|
+|displayName|String|Отображаемого имени ресурса, например имя приложения, имя группы или имя сайта.|
 |id|String| Только для чтения.|
 |isPendingOnboarding|Boolean|Имеет true, если ресурс еще не доступен для назначения.|
-|originId|Строка|Уникальный идентификатор ресурса в системе источника. В случае группы Azure AD это идентификатор группы. |
-|originSystem|Строка|Тип ресурса в системе источника, например `SharePointOnline` , или `AadApplication` `AadGroup` .|
-|resourceType|Строка|Тип ресурса, например, подключенное к Azure AD приложение `Application` или сайт `SharePoint Online Site` SharePoint Online.|
+|originId|String|Уникальный идентификатор ресурса в системе источника. В случае группы Azure AD это идентификатор группы. |
+|originSystem|String|Тип ресурса в системе источника, например `SharePointOnline` , или `AadApplication` `AadGroup` .|
+|resourceType|String|Тип ресурса, например, подключенное к Azure AD приложение `Application` или сайт `SharePoint Online Site` SharePoint Online.|
 |url|String|Уникальный локатор ресурса, например URL-адрес для регистрации пользователя в приложении.|
 
 ## <a name="relationships"></a>Связи
@@ -60,7 +60,6 @@ ms.locfileid: "50137475"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResource",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

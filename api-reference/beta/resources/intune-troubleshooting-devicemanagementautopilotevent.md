@@ -1,68 +1,71 @@
 ---
-title: Тип ресурса Девицеманажементаутопилотевент
-description: Представляет событие процесса автопилота.
+title: Тип ресурса deviceManagementAutopilotEvent
+description: Представляет событие потока Autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20fc18da2f6c123b82a9e04d3110313dd830d041
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ef175825e7ab6d84200fdda6caca84b8c4110d1f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49258726"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159887"
 ---
-# <a name="devicemanagementautopilotevent-resource-type"></a>Тип ресурса Девицеманажементаутопилотевент
+# <a name="devicemanagementautopilotevent-resource-type"></a>Тип ресурса deviceManagementAutopilotEvent
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет событие процесса автопилота.
+Представляет событие потока Autopilot.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Девицеманажементаутопилотевентс](../api/intune-troubleshooting-devicemanagementautopilotevent-list.md)|Коллекция [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Список свойств и связей объектов [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .|
-|[Получение Девицеманажементаутопилотевент](../api/intune-troubleshooting-devicemanagementautopilotevent-get.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Чтение свойств и связей объекта [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .|
-|[Создание Девицеманажементаутопилотевент](../api/intune-troubleshooting-devicemanagementautopilotevent-create.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Создание нового объекта [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .|
-|[Удаление Девицеманажементаутопилотевент](../api/intune-troubleshooting-devicemanagementautopilotevent-delete.md)|Нет|Удаляет объект [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md).|
-|[Обновление Девицеманажементаутопилотевент](../api/intune-troubleshooting-devicemanagementautopilotevent-update.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Обновление свойств объекта [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .|
+|[Список deviceManagementAutopilotEvents](../api/intune-troubleshooting-devicemanagementautopilotevent-list.md)|[Коллекция deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Список свойств и связей объектов [deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
+|[Get deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-get.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Чтение свойств и связей объекта [deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
+|[Создание deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-create.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Создание объекта [deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
+|[Удаление deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-delete.md)|Нет|Удаляет [deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
+|[Обновление deviceManagementAutopilotEvent](../api/intune-troubleshooting-devicemanagementautopilotevent-update.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|Обновление свойств объекта [deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|UUID объекта.|
-|deviceId|String|Идентификатор устройства, связанный с объектом|
+|deviceId|String|ИД устройства, связанный с объектом|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
-|девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
-|енроллментстартдатетиме|DateTimeOffset|Дата начала регистрации устройства.|
+|deviceRegisteredDateTime|DateTimeOffset|Дата регистрации устройства.|
+|enrollmentStartDateTime|DateTimeOffset|Дата начала регистрации устройства.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|девицесериалнумбер|String|Серийный номер устройства.|
-|managedDeviceName|String|Управляемое имя устройства.|
-|userPrincipalName|String|Имя участника пользователя, используемое для регистрации устройства.|
-|виндовсаутопилотдеплойментпрофиледисплайнаме|String|Имя профиля для автопилота.|
-|енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Не удалось зарегистрировать состояние регистрации, например "зарегистрировано". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|deviceSerialNumber|String|Серийный номер устройства.|
+|managedDeviceName|String|Имя управляемого устройства.|
+|userPrincipalName|String|Имя основного пользователя, используемая для регистрации устройства.|
+|windowsAutopilotDeploymentProfileDisplayName|String|Имя профиля Autopilot.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации, например "Зарегистрировано", "Сбой". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
-|деплойментстате|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
+|windows10EnrollmentCompletionPageConfigurationId|String|ИД профиля страницы состояния регистрации|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например Success, Failure, InProgress, SuccessWithTimeout. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа настройки устройства страницы состояния регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа настройки учетной записи страницы состояния регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Версия операционной системы устройства.|
-|деплойментдуратион|Длительность|Длительность развертывания с автопилотной версией, включая регистрацию.|
-|деплойменттоталдуратион|Длительность|Общее время развертывания с экрана регистрации на рабочем столе.|
-|девицепрепаратиондуратион|Длительность|Время, затраченное на регистрацию устройств.|
-|девицесетупдуратион|Длительность|Время, затраченное на устройство ESP.|
-|аккаунтсетупдуратион|Длительность|Время, затраченное на ESP пользователем.|
-|деплойментстартдатетиме|DateTimeOffset|Время начала развертывания.|
-|деплойментенддатетиме|DateTimeOffset|Время окончания развертывания.|
-|таржетедаппкаунт|Int32|Количество целевых приложений.|
-|таржетедполицикаунт|Int32|Количество целевых политик.|
-|енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
+|deploymentDuration|Duration|Продолжительность развертывания Autopilot, включая регистрацию.|
+|deploymentTotalDuration|Duration|Общая продолжительность развертывания от регистрации до экрана рабочего стола.|
+|devicePreparationDuration|Duration|Время, затраченное на регистрацию устройств.|
+|deviceSetupDuration|Duration|Время, затраченное на ESP устройства.|
+|accountSetupDuration|Duration|Время, затраченное на ESP пользователя.|
+|deploymentStartDateTime|DateTimeOffset|Время начала развертывания.|
+|deploymentEndDateTime|DateTimeOffset|Время окончания развертывания.|
+|targetedAppCount|Int32|Количество целевых приложений.|
+|targetedPolicyCount|Int32|Количество целевых политик.|
+|enrollmentFailureDetails|String|Сведения о сбое регистрации.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|полицистатусдетаилс|Коллекция [девицеманажементаутопилотполицистатусдетаил](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)|Сведения о политике и состоянии приложения для этого устройства.|
+|policyStatusDetails|[Коллекция deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)|Сведения о политике и состоянии приложения для этого устройства.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -87,7 +90,10 @@ ms.locfileid: "49258726"
   "windowsAutopilotDeploymentProfileDisplayName": "String",
   "enrollmentState": "String",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "String",
+  "windows10EnrollmentCompletionPageConfigurationId": "String",
   "deploymentState": "String",
+  "deviceSetupStatus": "String",
+  "accountSetupStatus": "String",
   "osVersion": "String",
   "deploymentDuration": "String (duration)",
   "deploymentTotalDuration": "String (duration)",

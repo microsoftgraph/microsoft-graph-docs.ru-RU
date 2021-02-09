@@ -1,26 +1,26 @@
 ---
-title: Обновление Усерекспериенцеаналитиксдевицестартуфистори
-description: Обновление свойств объекта Усерекспериенцеаналитиксдевицестартуфистори.
+title: Обновление userExperienceAnalyticsDeviceStartupHistory
+description: Обновление свойств объекта userExperienceAnalyticsDeviceStartupHistory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2ce7aab7eea93e6026d07005c6b84c562a385fe
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4bf2ddc2ad60d850ba1511c6a1a7339a48326ec2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263948"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159670"
 ---
-# <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Обновление Усерекспериенцеаналитиксдевицестартуфистори
+# <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Обновление userExperienceAnalyticsDeviceStartupHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) .
+Обновление свойств объекта [userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49263948"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,34 +47,34 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в формате JSON.
+В теле запроса укажу представление объекта [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
-|deviceId|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
-|startTime|DateTimeOffset|Время начала загрузки устройства Analytics User Experience.|
-|коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
-|граупполицибуттимеинмс|Int32|Время загрузки групповой политики устройства Analytics для пользователя (в миллисекундах).|
-|феатуреупдатебуттимеинмс|Int32|Время обновления компонента службы аналитики взаимодействия с пользователем (в миллисекундах).|
-|тоталбуттимеинмс|Int32|Общее время загрузки устройства Analytics User Experience (в миллисекундах).|
-|граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
-|корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
-|тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|исфирстлогин|Boolean|Первое имя входа устройства Analytics User Experience.|
-|исфеатуреупдате|Boolean|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
-|operatingSystemVersion|String|Версия операционной системы для записи загрузки устройства службы аналитики взаимодействия с пользователем.|
-|рестарткатегори|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезагрузки ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
-|рестартстопкоде|String|Код остановки перезапуска ОС. Здесь показан код проверки ошибки, который можно использовать для поиска причины синего экрана.|
-|рестартфаултбуккет|String|Сегмент сбоя при перезапуске ОС. Блок сбоя используется для поиска дополнительных сведений о сбое системы.|
+|id|String|Уникальный идентификатор истории запуска устройства аналитики пользовательского интерфейса.|
+|deviceId|String|ИД устройства аналитики пользовательского интерфейса.|
+|startTime|DateTimeOffset|Время начала загрузки устройства аналитики пользовательского интерфейса.|
+|coreBootTimeInMs|Int32|Время загрузки основного устройства аналитики пользовательского интерфейса в миллисекунах.|
+|groupPolicyBootTimeInMs|Int32|Время загрузки групповой политики устройства аналитики пользовательского интерфейса в миллисекунах.|
+|featureUpdateBootTimeInMs|Int32|Время обновления функции устройства аналитики пользовательского интерфейса в миллисекунах.|
+|totalBootTimeInMs|Int32|Общее время загрузки устройства аналитики пользовательского интерфейса в миллисекунах.|
+|groupPolicyLoginTimeInMs|Int32|Время входа в групповую политику устройства аналитики пользовательского интерфейса (в миллисекунах).|
+|coreLoginTimeInMs|Int32|Время входа в систему устройства аналитики пользовательского интерфейса в миллисекунах.|
+|responsiveDesktopTimeInMs|Int32|Аналитика пользовательского интерфейса отвечает за время рабочего стола в миллисекунах.|
+|totalLoginTimeInMs|Int32|Общее время входа устройства аналитики пользовательского интерфейса в миллисекунд.|
+|isFirstLogin|Boolean|Устройство аналитики пользовательского интерфейса сначала входит в систему.|
+|isFeatureUpdate|Boolean|Запись загрузки устройства аналитики пользовательского интерфейса является обновлением функций.|
+|operatingSystemVersion|String|Версия операционной системы записи загрузки устройства аналитики пользовательского интерфейса.|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезапуска ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
+|restartStopCode|String|Код остановки перезапуска ОС. Здесь показан код проверки ошибок, который можно использовать для отслеживания причины синего экрана.|
+|restartFaultBucket|String|Сегмент сбоя перезапуска ОС. Сегмент сбоя используется для поиска дополнительных сведений о сбое системы.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

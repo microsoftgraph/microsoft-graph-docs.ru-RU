@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицеандаппманажементассигнментфилтертипе
+title: Тип enum deviceAndAppManagementAssignmentFilterType
 description: Представляет тип фильтра назначений.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4589169fde76efe842c1c3a2ee610096d57f391c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6a2b9f9e2f01cb4ca7d5a0f1a1d51d00e985369c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271914"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155862"
 ---
-# <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>тип перечисления Девицеандаппманажементассигнментфилтертипе
+# <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>Тип enum deviceAndAppManagementAssignmentFilterType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,9 @@ ms.locfileid: "49271914"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Значение по умолчанию. Не следует использовать.|
-|предусмотрен|1,1|Указывает, что в фильтре при сопоставлении правил будут предложены полезные данные для устройств.|
+|Нет|0|Значение по умолчанию. Не следует использовать.|
+|include|1 |Указывает, что в фильтре соответствие правил будет предлагать устройствам полезной нагрузки.|
+|exclude|2 |Указывает, что при фильтрации правила не будут предлагаться полезной нагрузки на устройства.|
 
 
 

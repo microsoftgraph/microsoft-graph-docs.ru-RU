@@ -1,26 +1,26 @@
 ---
-title: Создание Девицеманажементаутопилотевент
-description: Создание нового объекта Девицеманажементаутопилотевент.
+title: Создание deviceManagementAutopilotEvent
+description: Создание объекта deviceManagementAutopilotEvent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 701dd737830c412d3b6c50f4a2c423ec5620dc86
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 411e7dd15a8f3fe75d726f0caab38c7592b3a8a6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49257039"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159215"
 ---
-# <a name="create-devicemanagementautopilotevent"></a>Создание Девицеманажементаутопилотевент
+# <a name="create-devicemanagementautopilotevent"></a>Создание deviceManagementAutopilotEvent
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .
+Создание объекта [deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49257039"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,41 +47,44 @@ POST /deviceManagement/autopilotEvents
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицеманажементаутопилотевент в формате JSON.
+В теле запроса укажу представление объекта deviceManagementAutopilotEvent в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании Девицеманажементаутопилотевент.
+В следующей таблице показаны свойства, необходимые при создании объекта deviceManagementAutopilotEvent.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|UUID объекта.|
-|deviceId|String|Идентификатор устройства, связанный с объектом|
+|deviceId|String|ИД устройства, связанный с объектом|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
-|девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
-|енроллментстартдатетиме|DateTimeOffset|Дата начала регистрации устройства.|
+|deviceRegisteredDateTime|DateTimeOffset|Дата регистрации устройства.|
+|enrollmentStartDateTime|DateTimeOffset|Дата начала регистрации устройства.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|девицесериалнумбер|String|Серийный номер устройства.|
-|managedDeviceName|String|Управляемое имя устройства.|
-|userPrincipalName|String|Имя участника пользователя, используемое для регистрации устройства.|
-|виндовсаутопилотдеплойментпрофиледисплайнаме|String|Имя профиля для автопилота.|
-|енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Не удалось зарегистрировать состояние регистрации, например "зарегистрировано". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|deviceSerialNumber|String|Серийный номер устройства.|
+|managedDeviceName|String|Имя управляемого устройства.|
+|userPrincipalName|String|Имя основного пользователя, используемая для регистрации устройства.|
+|windowsAutopilotDeploymentProfileDisplayName|String|Имя профиля Autopilot.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации, например "Зарегистрировано", "Сбой". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
-|деплойментстате|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
+|windows10EnrollmentCompletionPageConfigurationId|String|ИД профиля страницы состояния регистрации|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например Success, Failure, InProgress, SuccessWithTimeout. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа настройки устройства страницы состояния регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа настройки учетной записи страницы состояния регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Версия операционной системы устройства.|
-|деплойментдуратион|Длительность|Длительность развертывания с автопилотной версией, включая регистрацию.|
-|деплойменттоталдуратион|Длительность|Общее время развертывания с экрана регистрации на рабочем столе.|
-|девицепрепаратиондуратион|Длительность|Время, затраченное на регистрацию устройств.|
-|девицесетупдуратион|Длительность|Время, затраченное на устройство ESP.|
-|аккаунтсетупдуратион|Длительность|Время, затраченное на ESP пользователем.|
-|деплойментстартдатетиме|DateTimeOffset|Время начала развертывания.|
-|деплойментенддатетиме|DateTimeOffset|Время окончания развертывания.|
-|таржетедаппкаунт|Int32|Количество целевых приложений.|
-|таржетедполицикаунт|Int32|Количество целевых политик.|
-|енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
+|deploymentDuration|Duration|Продолжительность развертывания Autopilot, включая регистрацию.|
+|deploymentTotalDuration|Duration|Общая продолжительность развертывания от регистрации до экрана рабочего стола.|
+|devicePreparationDuration|Duration|Время, затраченное на регистрацию устройств.|
+|deviceSetupDuration|Duration|Время, затраченное на ESP устройства.|
+|accountSetupDuration|Duration|Время, затраченное на esp пользователя.|
+|deploymentStartDateTime|DateTimeOffset|Время начала развертывания.|
+|deploymentEndDateTime|DateTimeOffset|Время окончания развертывания.|
+|targetedAppCount|Int32|Количество целевых приложений.|
+|targetedPolicyCount|Int32|Количество целевых политик.|
+|enrollmentFailureDetails|String|Сведения о сбое регистрации.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -90,7 +93,7 @@ POST /deviceManagement/autopilotEvents
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents
 Content-type: application/json
-Content-length: 1357
+Content-length: 1545
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
@@ -105,7 +108,10 @@ Content-length: 1357
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",
@@ -125,7 +131,7 @@ Content-length: 1357
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1406
+Content-Length: 1594
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
@@ -141,7 +147,10 @@ Content-Length: 1406
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",

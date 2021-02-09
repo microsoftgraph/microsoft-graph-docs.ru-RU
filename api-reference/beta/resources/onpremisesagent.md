@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8269c2d2273df385c4815e2276f320a7e4f5b813
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 59ee11bb952c85695b8c20daa1e040c8899740b9
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135886"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158354"
 ---
 # <a name="onpremisesagent-resource-type"></a>Тип ресурса onPremisesAgent
 
@@ -26,16 +26,16 @@ ms.locfileid: "50135886"
 |:-------------|:------------|:------------|
 | [Список onPremisesAgents](../api/onpremisesagent-list.md) | [Коллекция onPremisesAgent](onpremisesagent.md) | Получите **коллекцию объектов onPremisesAgents.** |
 | [Get onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Чтение свойств и связей объекта **onPremisesAgent.** |
-| [Назначение onPremisesAgent для onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | Нет | **Назначьте onPremisesAgent** для **onPremisesAgentGroup.**|
+| [Назначение onPremisesAgent onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | Нет | **Назначьте onPremisesAgent** для **onPremisesAgentGroup.**|
 | [Удаление onpremisesAgent из onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | Нет | Удалите **onPremisesAgent** из **onPremisesAgentGroup.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|externalIp|Строка|Внешний IP-адрес, обнаруженный службой для компьютера агента. Только для чтения|
-|id|Строка| ИД объекта onPremisesAgent. Только для чтения.|
-|machineName|Строка|Имя компьютера, на которого работает aggent. Только для чтения|
+|externalIp|String|Внешний IP-адрес, обнаруженный службой для компьютера агента. Только для чтения|
+|id|String| ИД объекта onPremisesAgent. Только для чтения.|
+|machineName|String|Имя компьютера, на которого работает aggent. Только для чтения|
 |status|string| Возможные значения: `active`, `inactive`.|
 |publishingType|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
@@ -55,7 +55,6 @@ ms.locfileid: "50135886"
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgent",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

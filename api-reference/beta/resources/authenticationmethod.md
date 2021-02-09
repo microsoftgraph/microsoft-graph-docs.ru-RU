@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d1c43525352411a4b27952be4e6592401d28c54b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f09780904d459ff628f9a13b21f3238611ede6ca
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874328"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159159"
 ---
 # <a name="authenticationmethod-resource-type"></a>Тип ресурса authenticationMethod
 
@@ -47,7 +47,6 @@ ms.locfileid: "49874328"
 
   ],
   "@odata.type": "microsoft.graph.authenticationMethod",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Виндовсаутопилотдеплойментстате
+title: Тип enum windowsAutopilotDeploymentState
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9089d267ed6e6b72c39fef409f3459910c04c439
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 75d3c9845def01adcde4912ae28590cc5166f96d
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271438"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159031"
 ---
-# <a name="windowsautopilotdeploymentstate-enum-type"></a>тип перечисления Виндовсаутопилотдеплойментстате
+# <a name="windowsautopilotdeploymentstate-enum-type"></a>Тип enum windowsAutopilotDeploymentState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,13 @@ ms.locfileid: "49271438"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Пока не задокументировано.|
-|success|1,1|Пока не задокументировано.|
-|inProgress|2|Пока не задокументировано.|
-|Failure|4|Пока не задокументировано.|
-|сукцессвистимеаут|4 |Пока не задокументировано.|
+|unknown|0|Пока не задокументировано.|
+|success|1 |Пока не задокументировано.|
+|inProgress|2 |Пока не задокументировано.|
+|failure|3 |Пока не задокументировано.|
+|successWithTimeout|4 |Пока не задокументировано.|
+|notAttempted|5 |Пока не задокументировано.|
+|отключено|6 |Пока не задокументировано.|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aafcb3813dd1a11c05613ac3819a7f5b5d4fdcbc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e2a0345b19c2c2954b0bce231ca05d1bc2d2adcb
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49292984"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158495"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -37,8 +37,8 @@ ms.locfileid: "49292984"
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Общие сведения об операционной системе устройства.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Распределение состояния доступа к Exchange в Intune.|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Модели и производства меатадата для управляемых устройств в учетной записи|
-|lastModifiedDateTime|DateTimeOffset|Общие сведения о дате и времени последнего изменения устройства|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Модели и производство в учетной записи для управляемых устройств|
+|lastModifiedDateTime|DateTimeOffset|Обзор даты последнего изменения устройства|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -72,7 +72,8 @@ ms.locfileid: "49292984"
     "androidWorkProfileCount": 1024,
     "androidCorporateWorkProfileCount": 1024,
     "configMgrDeviceCount": 1024,
-    "aospUserlessCount": 1024
+    "aospUserlessCount": 1024,
+    "aospUserAssociatedCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

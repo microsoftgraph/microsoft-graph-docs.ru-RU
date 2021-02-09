@@ -1,62 +1,62 @@
 ---
-title: Тип ресурса Акцесспаккаже
-description: Пакет Access определяет коллекции ролей ресурсов и политики, которые могут получить доступ к этим ресурсам для одного или нескольких пользователей.
+title: Тип ресурса accessPackage
+description: Пакет доступа определяет коллекции ролей ресурсов и политики того, как один или несколько пользователей могут получить доступ к этим ресурсам.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e8603904e2a1cdb6315c1f7b5264e461cfdff09b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e47b8076e70c5b7c792c0232c63ae9ce828ac146
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031790"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155645"
 ---
-# <a name="accesspackage-resource-type"></a>Тип ресурса Акцесспаккаже
+# <a name="accesspackage-resource-type"></a>Тип ресурса accessPackage
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+В службе управления правами [Azure AD](entitlementmanagement-root.md)пакет доступа определяет коллекции ролей ресурсов и политики предоставления доступа к этим ресурсам одним или более пользователями.  
+Каждый пакет доступа ссылается на один каталог пакетов доступа и содержит ссылки на ресурсы из этого каталога через области ролей для определенных ресурсов, которые определяют доступ, который предоставляет пакет.  Пакет доступа также ссылается на политики назначения пакетов доступа, каждая из которых определяет, кто может запрашивать или кому назначено назначение пакета доступа.
 
-В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)пакет Access определяет коллекции ролей ресурсов и политики того, как один или несколько пользователей могут получить доступ к этим ресурсам.  
-Каждый пакет Access ссылается на один каталог пакетов доступа и содержит ссылки на ресурсы из этого каталога с помощью областей ролей, определяющих доступ к пакету.  Пакет Access также содержит ссылки на политики назначения пакетов Access, каждый из которых определяет, кто может запрашивать или назначать назначение пакета Access.
-
-Чтобы назначить пользователя пакету Access, [Создайте акцесспаккажеассигнментрекуест](../api/accesspackageassignmentrequest-post.md) , ссылающийся на политику назначения пакетов доступа и пакетов Access.
+Чтобы назначить пользователя пакету доступа, создайте [accessPackageAssignmentRequest,](../api/accesspackageassignmentrequest-post.md) который ссылается на пакет доступа и политику назначения пакета доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Акцесспаккажес](../api/accesspackage-list.md) | Коллекция [акцесспаккаже](accesspackage.md) | Получение списка объектов **акцесспаккаже** . |
-| [Создание Акцесспаккаже](../api/accesspackage-post.md) | [акцесспаккаже](accesspackage.md) | Создание нового объекта **акцесспаккаже** . |
-| [Получение Акцесспаккаже](../api/accesspackage-get.md) | [акцесспаккаже](accesspackage.md) | Чтение свойств и связей объекта **акцесспаккаже** . |
-| [Обновление Акцесспаккаже](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **акцесспаккаже** . |
-| [Удаление Акцесспаккаже](../api/accesspackage-delete.md) |Нет | Удаление **акцесспаккаже**. |
-| [Список Акцесспаккажересаурцеролескопес](../api/accesspackage-list-accesspackageresourcerolescopes.md) | Коллекция [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md) | Получение списка объектов **акцесспаккажересаурцеролескопе** для этого пакета Access. |
-| [Создание Акцесспаккажересаурцеролескопе](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Нет | Создайте новый объект **акцесспаккажересаурцеролескопе** для этого пакета Access. |
+| [Список accessPackages](../api/accesspackage-list.md) | [Коллекция accessPackage](accesspackage.md) | Получить список объектов **accesspackage.** |
+| [Создание accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Создание объекта **accesspackage.** |
+| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Чтение свойств и связей объекта **accesspackage.** |
+| [Обновление accessPackage](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **accesspackage.** |
+| [Удаление accessPackage](../api/accesspackage-delete.md) |Нет | Удаление **accesspackage**. |
+| [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Получить список объектов **accessPackageResourceRoleScope** для этого пакета доступа. |
+| [Создание accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Нет | Создайте новый **объект accessPackageResourceRoleScope** для этого пакета доступа. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каталогид|String|Идентификатор каталога пакетов доступа, на который ссылается этот пакет Access. Только для чтения.|
-|createdBy|String|Имя участника-пользователя или идентификатор субъекта, создавшего этот ресурс. Только для чтения.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|description|String|Описание пакета Access.|
-|displayName|String|Отображаемое имя пакета Access.|
+|catalogId|String|ИД каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
+|createdBy|String|UpN пользователя или удостоверения субъекта, создавшего этот ресурс. Только для чтения.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|description|String|Описание пакета доступа.|
+|displayName|String|Отображаемого имени пакета доступа.|
 |id|String| Только для чтения.|
-|Скрытый|Boolean|Указывает, является ли пакет доступа скрытым от запрашивающего.|
-|исролескопесвисибле|Boolean|Указывает, видимы ли области ролей.|
-|модифиедби|String|Имя участника-пользователя, который последним изменил этот ресурс. Только для чтения.|
-|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+|isHidden|Boolean|Является ли пакет доступа скрытым от запрашивателя.|
+|isRoleScopesVisible|Boolean|Указывает, видны ли области ролей.|
+|modifiedBy|String|Имя пользователя, который последним изменил этот ресурс. Только для чтения.|
+|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажеассигнментполиЦиес|Коллекция [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md)| Только для чтения. Допускается значение null.|
-|акцесспаккажекаталог|[акцесспаккажекаталог](accesspackagecatalog.md)| Только для чтения. Допускается значение null.|
-|акцесспаккажересаурцеролескопес|Коллекция [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md)| Допускается значение null.|
+|accessPackageAssignmentPolicies|[Коллекция accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Только для чтения. Допускается значение null.|
+|accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Только для чтения. Допускается значение null.|
+|accessPackageResourceRoleScopes|[Коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md)| Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -68,7 +68,6 @@ ms.locfileid: "48031790"
 
   ],
   "@odata.type": "microsoft.graph.accessPackage",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
