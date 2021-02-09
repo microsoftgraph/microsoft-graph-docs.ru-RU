@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 625017970be66b64ffa593e726b6aaf647fe05d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 152100311e85dc905e14ca6f434a9a9fbe1d87fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092288"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155848"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -37,6 +37,11 @@ ms.locfileid: "48092288"
 | [Отслеживание сайта][]                | POST /users/{user-id}/followedSites/add
 | [Прекращение отслеживания сайта][]              | POST /users/{user-id}/followedSites/remove
 | [Перечисление отслеживаемых сайтов][]        | GET /me/followedSites
+| [Получение разрешения][]             | GET /sites/{site-id}/permissions/{permission-id}
+| [Список разрешений][]           | GET /sites/{site-id}/permissions
+| [Создание разрешений][]         | POST /sites/{site-id}/permissions
+| [Удаление разрешения][]         | DELETE /sites/{site-id}/permissions/{permission-id}
+| [Обновление разрешения][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -50,6 +55,11 @@ ms.locfileid: "48092288"
 [Отслеживание сайта]: ../api/site-follow.md
 [Прекращение отслеживания сайта]: ../api/site-unfollow.md
 [Перечисление отслеживаемых сайтов]: ../api/sites-list-followed.md
+[Получение разрешения]: ../api/site-get-permission.md
+[Список разрешений]: ../api/site-list-permissions.md
+[Создание разрешений]: ../api/site-post-permissions.md
+[Удаление разрешения]: ../api/site-delete-permission.md
+[Обновление разрешения]: ../api/site-update-permission.md
 
 
 ## <a name="properties"></a>Свойства
@@ -66,7 +76,7 @@ ms.locfileid: "48092288"
 | **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
-| **webUrl**               | string (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
+| **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ### <a name="id-property"></a>Свойство id
 Ресурс **site** идентифицируется посредством уникального идентификатора, при создании которого используются следующие значения:
@@ -91,6 +101,7 @@ ms.locfileid: "48092288"
 | **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
 | **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
 | **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
+| **permissions**   | Collection([permission][])         | Разрешения, связанные с сайтом. Допускается значение NULL.
 | **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
 
 [columnDefinition]: columndefinition.md
@@ -100,6 +111,7 @@ ms.locfileid: "48092288"
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
+[permission]: permission.md
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
@@ -120,6 +132,7 @@ ms.locfileid: "48092288"
     "siteCollection",
     "drive",
     "drives",
+    "permissions",
     "sites"
   ],
   "keyProperty": "id",
@@ -142,6 +155,7 @@ ms.locfileid: "48092288"
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
 
@@ -168,5 +182,3 @@ ms.locfileid: "48092288"
   "suppressions": []
 }
 -->
-
-
