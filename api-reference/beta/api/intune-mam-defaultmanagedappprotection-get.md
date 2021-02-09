@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fbfb1ee3d545427bf5496e69b40f24f66565b78
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 489b3083cc3ea6eda2dffcd6e68208e9ad8a6218
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49308776"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162057"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5543
+Content-Length: 5743
 
 {
   "value": {
@@ -106,6 +106,9 @@ Content-Length: 5543
     "printBlocked": true,
     "fingerprintBlocked": true,
     "disableAppPinIfDevicePinIsSet": true,
+    "maximumRequiredOsVersion": "Maximum Required Os Version value",
+    "maximumWarningOsVersion": "Maximum Warning Os Version value",
+    "maximumWipeOsVersion": "Maximum Wipe Os Version value",
     "minimumRequiredOsVersion": "Minimum Required Os Version value",
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",

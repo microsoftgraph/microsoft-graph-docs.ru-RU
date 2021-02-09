@@ -1,26 +1,26 @@
 ---
-title: Обновление Девицеманажементресаурцеакцесспрофилеассигнмент
-description: Обновление свойств объекта Девицеманажементресаурцеакцесспрофилеассигнмент.
+title: Обновление deviceManagementResourceAccessProfileAssignment
+description: Обновление свойств объекта deviceManagementResourceAccessProfileAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32f2a64c0e6b4db08182919514bf5eb14755fd3e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1cc09d3d66ba27ae440688a7a18bbfdc3bbd1246
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302338"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161994"
 ---
-# <a name="update-devicemanagementresourceaccessprofileassignment"></a>Обновление Девицеманажементресаурцеакцесспрофилеассигнмент
+# <a name="update-devicemanagementresourceaccessprofileassignment"></a>Обновление deviceManagementResourceAccessProfileAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементресаурцеакцесспрофилеассигнмент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) .
+Обновление свойств объекта [deviceManagementResourceAccessProfileAssignment.](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,21 +47,21 @@ PATCH /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPr
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементресаурцеакцесспрофилеассигнмент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) в формате JSON.
+В теле запроса укажу представление объекта [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементресаурцеакцесспрофилеассигнмент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementResourceAccessProfileAssignment.](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для назначений|
-|intent|[девицеманажементресаурцеакцесспрофилеинтент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|Цель назначения для профиля доступа к ресурсам. Возможные значения: `apply`, `remove`.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля доступа к ресурсу.|
-|Идентификатор|String|Идентификатор источника назначения.|
+|intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|Назначение профиля доступа к ресурсам. Возможные значения: `apply`, `remove`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевой объект назначения для профиля доступа к ресурсам.|
+|sourceId|String|Идентификатор источника назначения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементресаурцеакцесспрофилеассигнмент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,15 +70,16 @@ PATCH /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPr
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}/assignments/{deviceManagementResourceAccessProfileAssignmentId}
 Content-type: application/json
-Content-length: 399
+Content-length: 463
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }
@@ -89,16 +90,17 @@ Content-length: 399
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 448
+Content-Length: 512
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "id": "4ebb8d4e-8d4e-4ebb-4e8d-bb4e4e8dbb4e",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Екстерналконнектион
-description: Подключение — это логический контейнер для внешнего контента в Microsoft Graph.
+title: Тип ресурса externalConnection
+description: Подключение — это логический контейнер для внешнего контента в Microsoft Graph
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 82a68c8670a1381263d0b6fd3704f9d6d900d1f0
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 4355ffe51fe1b160c7fb486272e85f2b2cf0bf2c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193143"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161712"
 ---
-# <a name="externalconnection-resource-type"></a>Тип ресурса Екстерналконнектион
+# <a name="externalconnection-resource-type"></a>Тип ресурса externalConnection
 
 Пространство имен: microsoft.graph
 
@@ -26,32 +26,32 @@ ms.locfileid: "48193143"
 
 | Метод                                                           | Возвращаемый тип                                   | Описание |
 |:-----------------------------------------------------------------|:----------------------------------------------|:--|
-| [Создание Екстерналконнектион](../api/external-post-connections.md) | externalConnection                            | Создание нового Екстерналконнектион путем публикации в коллекции Connections. |
-| [Список Екстерналконнектионс](../api/externalconnection-list.md)    | Коллекция Екстерналконнектион                 | Получение коллекции объектов Екстерналконнектион. |
-| [Получение Екстерналконнектион](../api/externalconnection-get.md)       | externalConnection                            | Чтение свойств и связей объекта Екстерналконнектион. |
-| [Обновление Екстерналконнектион](../api/externalconnection-update.md) | externalConnection                            | Обновление объекта Екстерналконнектион. |
-| [Удаление Екстерналконнектион](../api/externalconnection-delete.md) | Нет                                          | Удаление объекта Екстерналконнектион. |
-| [Создание схемы](../api/externalconnection-post-schema.md)        | Нет *или* [схема](schema.md)                 | Регистрация схемы подключения. |
-| [Получение операции](../api/connectionoperation-get.md)               | [коннектионоператион](connectionoperation.md) | Получение состояния асинхронного запроса для создания схемы подключения. |
-| [Создание Екстерналитем](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Создание нового Екстерналитем путем публикации в коллекции Items. |
+| [Создание externalConnection](../api/external-post-connections.md) | externalConnection                            | Создание внешнего подключения путем публикации в коллекции подключений. |
+| [Список externalConnections](../api/externalconnection-list.md)    | коллекция externalConnection                 | Получить коллекцию объектов externalConnection. |
+| [Get externalConnection](../api/externalconnection-get.md)       | externalConnection                            | Чтение свойств и связей объекта externalConnection. |
+| [Обновление externalConnection](../api/externalconnection-update.md) | externalConnection                            | Обновление объекта externalConnection. |
+| [Удаление externalConnection](../api/externalconnection-delete.md) | Нет                                          | Удаление объекта externalConnection. |
+| [Создание схемы](../api/externalconnection-post-schema.md)        | Нет *или* [схема](schema.md)                 | Зарегистрируйте схему подключения. |
+| [Получить операцию](../api/connectionoperation-get.md)               | [connectionOperation](connectionoperation.md) | Получите состояние асинхронного запроса для создания схемы подключения. |
+| [Создание externalItem](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Создание внешнегоitem путем публикации в коллекции элементов. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип                              | Описание |
 |:--------------|:----------------------------------|:------------|
-| configuration | [configuration](configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. Необязательно. |
-| description   | String                            | Описание подключения, отображаемое в центре администрирования Microsoft 365. Необязательно. |
-| id            | String                            | Предоставленный разработчиком уникальный идентификатор подключения в клиенте Azure Active Directory. Максимальная длина 32 символов. Должно содержать только буквенно-цифровые символы. Не может начинаться с `Microsoft` одного из следующих значений:,,,,,,,,,, `None` `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` , `Connectors` . Обязательно. |
-| name          | String                            | Отображаемое имя подключения, отображаемое в центре администрирования Microsoft 365. Максимальная длина 128 символов. Обязательно. |
-| state         | коннектионстате                   | Указывает текущее состояние подключения. Возможные значения: `draft` , `ready` , `obsolete` и `limitExceeded` . Обязательный. |
+| configuration | [configuration](configuration.md) | Указывает дополнительные ИД приложений, которые разрешено использовать для управления подключением и индексации содержимого подключения. Необязательный параметр. |
+| description   | String                            | Описание подключения, отображаемого в Центре администрирования Microsoft 365. Необязательный параметр. |
+| id            | String                            | Уникальный ИД подключения в клиенте Azure Active Directory, предоставленный разработчиком. Максимальная длина — 32 символа. Должен содержать только буквы и цифры. Не может начинаться с одного из следующих `Microsoft` значений: `None` , , , , , , , , `Directory` , `Exchange` , `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` . Обязательно. |
+| name          | String                            | Отображаемого имени подключения, отображаемого в Центре администрирования Microsoft 365. Максимальная длина — 128 символов. Обязательно. |
+| state         | connectionState                   | Указывает текущее состояние подключения. Возможные значения: `draft` `ready` , , и `obsolete` `limitExceeded` . Обязательный. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип                                                     | Описание |
 |:-------------|:---------------------------------------------------------|:---|
-| items        | Коллекция [екстерналитем](externalitem.md)               | Только для чтения. Допускается значение null. |
-| operations   | Коллекция [коннектионоператион](connectionoperation.md) | Только для чтения. Допускается значение null. |
-| схемы       | [schema](schema.md)                                      | Только для чтения. Допускается значение null. |
+| items        | [коллекция externalItem](externalitem.md)               | Только для чтения. Допускается значение null. |
+| operations   | [Коллекция connectionOperation](connectionoperation.md) | Только для чтения. Допускается значение null. |
+| схема       | [schema](schema.md)                                      | Только для чтения. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -63,7 +63,6 @@ ms.locfileid: "48193143"
 
   ],
   "@odata.type": "microsoft.graph.externalConnection",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -1,26 +1,26 @@
 ---
-title: Создание Девицеманажементресаурцеакцесспрофилеассигнмент
-description: Создание нового объекта Девицеманажементресаурцеакцесспрофилеассигнмент.
+title: Создание deviceManagementResourceAccessProfileAssignment
+description: Создание объекта deviceManagementResourceAccessProfileAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1053da56d274206d7f050797350d8948d55fa7b3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bf146dc616f1fff4e9bed12b1eedad2ad3a046d6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302050"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162007"
 ---
-# <a name="create-devicemanagementresourceaccessprofileassignment"></a>Создание Девицеманажементресаурцеакцесспрофилеассигнмент
+# <a name="create-devicemanagementresourceaccessprofileassignment"></a>Создание deviceManagementResourceAccessProfileAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицеманажементресаурцеакцесспрофилеассигнмент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) .
+Создание объекта [deviceManagementResourceAccessProfileAssignment.](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "49302050"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,21 +47,21 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицеманажементресаурцеакцесспрофилеассигнмент в формате JSON.
+В теле запроса укажу представление объекта deviceManagementResourceAccessProfileAssignment в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании Девицеманажементресаурцеакцесспрофилеассигнмент.
+В следующей таблице показаны свойства, необходимые при создании объекта deviceManagementResourceAccessProfileAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для назначений|
-|intent|[девицеманажементресаурцеакцесспрофилеинтент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|Цель назначения для профиля доступа к ресурсам. Возможные значения: `apply`, `remove`.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля доступа к ресурсу.|
-|Идентификатор|String|Идентификатор источника назначения.|
+|intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|Назначение профиля доступа к ресурсам. Возможные значения: `apply`, `remove`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевой объект назначения для профиля доступа к ресурсам.|
+|sourceId|String|Идентификатор источника назначения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементресаурцеакцесспрофилеассигнмент](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,15 +70,16 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}/assignments
 Content-type: application/json
-Content-length: 399
+Content-length: 463
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }
@@ -89,16 +90,17 @@ Content-length: 399
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 448
+Content-Length: 512
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "id": "4ebb8d4e-8d4e-4ebb-4e8d-bb4e4e8dbb4e",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }

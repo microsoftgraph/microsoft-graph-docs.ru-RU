@@ -1,26 +1,26 @@
 ---
-title: Обновление Девицеманажементрепортс
-description: Обновление свойств объекта Девицеманажементрепортс.
+title: Обновление deviceManagementReports
+description: Обновление свойств объекта deviceManagementReports.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f8160041f593972d28aaf8122a32c1d28360568
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9f887940b917225ee4def8b6def8cb8bf50c8854
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302116"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162001"
 ---
-# <a name="update-devicemanagementreports"></a>Обновление Девицеманажементрепортс
+# <a name="update-devicemanagementreports"></a>Обновление deviceManagementReports
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md) .
+Обновление свойств объекта [deviceManagementReports.](../resources/intune-rapolicy-devicemanagementreports.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,18 +47,18 @@ PATCH /deviceManagement/reports
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md) в формате JSON.
+В теле запроса укажу представление объекта [deviceManagementReports](../resources/intune-rapolicy-devicemanagementreports.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementReports.](../resources/intune-rapolicy-devicemanagementreports.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
+|id|String|Уникальный идентификатор для этого объекта|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементрепортс](../resources/intune-shared-devicemanagementreports.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [deviceManagementReports](../resources/intune-rapolicy-devicemanagementreports.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

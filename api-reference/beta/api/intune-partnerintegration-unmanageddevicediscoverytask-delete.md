@@ -1,18 +1,18 @@
 ---
-title: Get deviceManagementReports
-description: Чтение свойств и связей объекта deviceManagementReports.
+title: Удаление unmanagedDeviceDiscoveryTask
+description: Удаляет unmanagedDeviceDiscoveryTask.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c530da07f4e9e46cefd1d825d250cbac56d4a745
+ms.openlocfilehash: 9dc99daed62eab6b6777d4a1c9dc3485da8a9359
 ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162029"
+ms.locfileid: "50162597"
 ---
-# <a name="get-devicemanagementreports"></a>Get deviceManagementReports
+# <a name="delete-unmanageddevicediscoverytask"></a>Удаление unmanagedDeviceDiscoveryTask
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "50162029"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [deviceManagementReports.](../resources/intune-rapolicy-devicemanagementreports.md)
+Удаляет [unmanagedDeviceDiscoveryTask.](../resources/intune-partnerintegration-unmanageddevicediscoverytask.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,13 +37,10 @@ ms.locfileid: "50162029"
 }
 -->
 ``` http
-GET /deviceManagement/reports
+DELETE /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,29 +50,20 @@ GET /deviceManagement/reports
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [deviceManagementReports](../resources/intune-rapolicy-devicemanagementreports.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/reports
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 137
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementReports",
-    "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 

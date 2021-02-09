@@ -1,32 +1,32 @@
 ---
 title: Тип ресурса iosHomeScreenPage
-description: Страница, содержащая приложения и папки с начального экрана
+description: Страница, содержащая приложения, папки и веб-клипы на домашнем экране.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 124c457cdbda94fae86dfcfc43a2119e61fb156a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 53385201015b7d22223e9d39f173416feb111b6c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280370"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161805"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>Тип ресурса iosHomeScreenPage
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Страница, содержащая приложения и папки с начального экрана
+Страница, содержащая приложения, папки и веб-клипы на домашнем экране.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя страницы|
-|icons|Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Список приложений и папок, отображающихся на странице. Эта коллекция может включать до 500 элементов.|
+|icons|Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Список приложений, папок и веб-клипов, которые должны отображаться на странице. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -54,7 +54,8 @@ ms.locfileid: "49280370"
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
               "displayName": "String",
-              "bundleID": "String"
+              "bundleID": "String",
+              "isWebClip": true
             }
           ]
         }

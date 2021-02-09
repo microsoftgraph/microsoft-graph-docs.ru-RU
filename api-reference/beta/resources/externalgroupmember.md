@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса Екстерналграупмембер
-description: Представляет члена объекта Екстерналграуп, используемого для установки разрешений на доступ к внешнему контенту, добавленному в Microsoft Graph.
+title: Тип ресурса externalGroupMember
+description: Представляет члена внешней группы, используемой для изменения разрешений для внешнего контента, добавленного в Microsoft Graph.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 19b5c5094501215cc3ffd3e852ba6ca427807988
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 1e86fb275b941b7a3033999fedd4c71aa3ac1de1
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193936"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161693"
 ---
-# <a name="externalgroupmember-resource-type"></a>Тип ресурса Екстерналграупмембер
+# <a name="externalgroupmember-resource-type"></a>Тип ресурса externalGroupMember
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет члена объекта [екстерналграуп](externalgroup.md) , используемого для установки разрешений на доступ к внешнему контенту, добавленному в Microsoft Graph.
+Представляет члена внешней группы, [используемой для](externalgroup.md) изменения разрешений для внешнего контента, добавленного в Microsoft Graph.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                              | Тип возвращаемых данных         | Описание                              |
 |:--------------------------------------------------------------------|:--------------------|:-----------------------------------------|
-| [Создание Екстерналграупмембер](../api/externalgroup-post-members.md) | екстерналграупмембер | Создание нового объекта **екстерналграупмембер** . |
-| [Удаление Екстерналграупмембер](../api/externalgroupmember-delete.md)  | Нет                | Удаление объекта **екстерналграупмембер** .   |
+| [Создание externalGroupMember](../api/externalgroup-post-members.md) | externalGroupMember | Создание объекта **externalGroupMember.** |
+| [Удаление externalGroupMember](../api/externalgroupmember-delete.md)  | Нет                | Удаление объекта **externalGroupMember.**   |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип                    | Описание                                                          |
 |:---------------|:------------------------|:---------------------------------------------------------------------|
-| id             | String                  | Уникальный идентификатор элемента. Это идентификатор objectId в случае с пользователями или группами Azure Active Directory, а также свойством **ID** **екстерналграуп** в случае внешних групп.                                    |
-| type           | екстерналграупмембертипе | Тип элемента, добавляемого во внешнюю группу. Возможные значения: `user` или `group` , если **идентитисаурце** , `azureActiveDirectory` и только в том `group` случае, если **идентитисаурце** `external` . |
-| идентитисаурце | идентитисаурцетипе      | Источник удостоверения, к которому принадлежит член. Возможные значения: `azureActiveDirectory`, `external`.                                                                                         |
+| id             | String                  | Уникальный ИД участника. Это будет objectId в случае пользователей или групп Azure Active Directory и свойство **id** **внешней группы** в случае внешних групп.                                    |
+| type           | externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user` или когда идентификатор `group` **identitySource** и только `azureActiveDirectory` `group` тогда, когда идентификатор **identitySource** имеет значение `external` . |
+| identitySource | identitySourceType      | Источник удостоверений, к которой принадлежит участник. Возможные значения: `azureActiveDirectory`, `external`.                                                                                         |
 
 ## <a name="relationships"></a>Связи
 
@@ -46,7 +46,6 @@ ms.locfileid: "48193936"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.externalGroupMember",
-  "baseType": "",
   "openType": false
 }
 -->

@@ -1,24 +1,24 @@
 ---
 title: Тип ресурса dataSource
-description: Объект DataSource — абстрактный базовый класс
+description: Объект Datasource — абстрактный базовый класс
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 645ae33eb6c43972122623e52bfecf17f39491e4
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: c019a6b8338180584a31382c0741018791973184
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597830"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161924"
 ---
 # <a name="datasource-resource-type"></a>Тип ресурса dataSource
 
 Пространство имен: microsoft.graph
 
-Сущность dataSource — это абстрактный объект BaseClass, используемый для определения источников контента для обнаружения электронных данных.
+Объект dataSource — это абстрактный базовый класс, используемый для определения источников контента для eDiscovery.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 Нет
 
@@ -26,10 +26,10 @@ ms.locfileid: "49597830"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **источник данных**.|
-|createdDateTime|DateTimeOffset|Дата и время создания **источника данных** .|
-|displayName|String|Отображаемое имя **источника данных**. Это будет имя сайта SharePoint.|
-|id|String| Идентификатор **источника данных**. Это значение не является ИДЕНТИФИКАТОРом действительного сайта.|
+|createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **dataSource.**|
+|createdDateTime|DateTimeOffset|Дата и время создания **dataSource.**|
+|displayName|String|Отображаемого имени **dataSource**. Это имя сайта SharePoint.|
+|id|String| ИД **dataSource.** Это не ИД фактического сайта.|
 
 ## <a name="relationships"></a>Связи
 
@@ -42,7 +42,6 @@ ms.locfileid: "49597830"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.dataSource",
-  "baseType": "",
   "openType": false
 }
 -->

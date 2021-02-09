@@ -1,18 +1,18 @@
 ---
-title: Действие assign
+title: Действие getConfigurationPolicyNonComplianceReport
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7947a3a1c8fb3c315f8e1f60db8b4231b52be8f9
+ms.openlocfilehash: 95ea2c6f9f5695205564511df89eaf7f78a54280
 ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162022"
+ms.locfileid: "50162589"
 ---
-# <a name="assign-action"></a>Действие назначения
+# <a name="getconfigurationpolicynoncompliancereport-action"></a>Действие getConfigurationPolicyNonComplianceReport
 
 Пространство имен: microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "50162022"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "50162022"
 }
 -->
 ``` http
-POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}/assign
+POST /deviceManagement/reports/getConfigurationPolicyNonComplianceReport
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -53,38 +53,47 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|[Коллекция deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md)|Пока не задокументировано.|
+|name|String|Пока не задокументировано.|
+|select|Коллекция строк|Н/Д|
+|search|String|Пока не задокументировано.|
+|groupBy|Коллекция строк|Н/Д|
+|orderBy|Коллекция строк|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|sessionId|String|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения это действие возвращает код отклика и коллекцию `200 OK` [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) в тексте отклика.
+В случае успеха это действие возвращает код `200 OK` отклика и поток в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getConfigurationPolicyNonComplianceReport
 
 Content-type: application/json
-Content-length: 591
+Content-length: 278
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
-      "id": "4ebb8d4e-8d4e-4ebb-4e8d-bb4e4e8dbb4e",
-      "intent": "remove",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      },
-      "sourceId": "Source Id value"
-    }
-  ]
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
@@ -93,23 +102,10 @@ Content-length: 591
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 585
+Content-Length: 115
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
-      "id": "4ebb8d4e-8d4e-4ebb-4e8d-bb4e4e8dbb4e",
-      "intent": "remove",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      },
-      "sourceId": "Source Id value"
-    }
-  ]
+  "value": "Z2V0Q29uZmlndXJhdGlvblBvbGljeU5vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgLTE2MTk2MDUzMTI="
 }
 ```
 

@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса Екстерналграуп
-description: Представляет внешнюю группу, используемую для установки разрешений для Екстерналитемс, добавленных в подключение Microsoft Graph.
+title: Тип ресурса externalGroup
+description: Представляет внешнюю группу, используемую для изменения разрешений для externalItems, добавленных к подключению Microsoft Graph.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c258df9e6f20cf7a19e291fd298ad66345a72949
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2e9d8e3a605f1c3df39b13607f82e7541d59e62e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193939"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161714"
 ---
-# <a name="externalgroup-resource-type"></a>Тип ресурса Екстерналграуп
+# <a name="externalgroup-resource-type"></a>Тип ресурса externalGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет внешнюю группу. Внешние группы (наряду с пользователями и группами Azure Active Directory) используются для установки разрешений **екстерналитемс** , добавляемых в подключение Microsoft Graph. Используйте **екстерналграупс** для представления групп, не относящихся к Azure Active Directory, или конструкций, подобных группам (таких как бизнес-единицы, Teams и налево), которые определяют разрешения на доступ к контенту во внешнем источнике данных.
+Представляет внешнюю группу. Внешние группы (наряду с пользователями и группами Azure Active Directory) используются для изменения разрешений **для externalItems,** добавленных к подключению Microsoft Graph. Используйте **externalGroups** для представления групп, не в том числе Azure Active Directory, или конструкций, похожих на группы (таких как бизнес-единицы, Teams и другие), которые определяют разрешения на содержимое во внешнем источнике данных.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Создание Екстерналграуп](../api/externalconnection-post-groups.md)|[екстерналграуп](../resources/externalgroup.md)|Создание нового объекта **екстерналграуп** .|
-|[Удаление Екстерналграуп](../api/externalgroup-delete.md)|Нет|Удаление объекта **екстерналграуп** .|
-|[Создание участников](../api/externalgroup-post-members.md)|[екстерналграупмембер](../resources/externalgroupmember.md)|Создание нового объекта **екстерналграупмембер** .|
+|[Создание externalGroup](../api/externalconnection-post-groups.md)|[externalGroup](../resources/externalgroup.md)|Создание объекта **externalGroup.**|
+|[Удаление externalGroup](../api/externalgroup-delete.md)|Нет|Удаление объекта **externalGroup.**|
+|[Создание участников](../api/externalgroup-post-members.md)|[externalGroupMember](../resources/externalgroupmember.md)|Создание объекта **externalGroupMember.**|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | Уникальный идентификатор внешней группы в подключении. Он должен состоять из буквенно-цифровых символов и иметь длину до 128 символов. |
-| displayName | String | Понятное имя внешней группы. Необязательно.                                                                       |
-| description | String | Описание внешней группы. Необязательно.                                                                         
+| id          | String | Уникальный ИД внешней группы в соединении. Она должна быть букво-цифрой и длиной до 128 символов. |
+| displayName | String | Имя внешней группы. Необязательный параметр.                                                                       |
+| description | String | Описание внешней группы. Необязательный параметр.                                                                         
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип                                                                  | Описание                                               |
 |:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
-| members      | Коллекция [екстерналграупмембер](../resources/externalgroupmember.md) | Член, добавленный в объект **екстерналграуп**. Вы можете добавлять пользователей Azure Active Directory, группы Azure Active Directory или другие **екстерналграупс** в качестве участников. |
+| members      | [Коллекция externalGroupMember](../resources/externalgroupmember.md) | Член, добавленный в **внешнюю группу.** В качестве участников можно добавить пользователей Azure Active Directory, группы Azure Active Directory или другие **внешние группы.** |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -49,7 +49,6 @@ ms.locfileid: "48193939"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.externalGroup",
-  "baseType": "",
   "openType": false
 }
 -->

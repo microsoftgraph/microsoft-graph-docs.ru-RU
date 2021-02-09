@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c5c1c37ada9902e6f3e4aaf8499303f1c2f8a058
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 22f2e0f4b66742322f3ff6b1f18a50092fdf4895
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981566"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162078"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Создание cloudPcOnPremisesConnection
 
@@ -28,8 +28,8 @@ ms.locfileid: "49981566"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -60,7 +60,7 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 |:---|:---|:---|
 |displayName|String|Отображаемого имени для локального подключения.|
 |subscriptionId|String|ИД целевой подписки Azure, связанной с клиентом.|
-|adDomainName|String|Полное доменное имя домена Active Directory, к который требуется присоединиться.|
+|adDomainName|String|Полное доменное имя домена Active Directory, к нему нужно присоединиться.|
 |adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: admin@contoso.com.|
 |adDomainPassword|String|Пароль, связанный с adDomainUsername.|
 |resourceGroupId|String|ИД целевой группы ресурсов. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
@@ -147,7 +147,6 @@ Content-length: 897
   "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
   "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
   "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
-  "healthCheckStatus": "pending",
-  "inUse": false
+  "healthCheckStatus": "pending"
 }
 ```

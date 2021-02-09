@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6098b146b5117332df36b76adcbce95698d6041d
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: e5b3c10e6a03c4868e010f8f62f0f073ce37ca61
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720460"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161651"
 ---
 # <a name="identityapiconnector-resource-type"></a>Тип ресурса identityApiConnector
 
@@ -29,9 +29,9 @@ ms.locfileid: "49720460"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Список](../api/identityapiconnector-list.md)|[Коллекция identityApiConnector](identityapiconnector.md)| Получить список соединителов API|
-|[создание](../api/identityapiconnector-create.md);|[identityApiConnector](identityapiconnector.md)|Создайте соединители API. |
-|[получение](../api/identityapiconnector-get.md);|[identityApiConnector](identityapiconnector.md)|Чтение свойств объекта [identityApiConnector.](../resources/identityapiconnector.md)|
-|[обновление](../api/identityapiconnector-update.md).|[identityApiConnector](identityapiconnector.md)|Обновление свойств соединители API.|
+|[Создание](../api/identityapiconnector-create.md)|[identityApiConnector](identityapiconnector.md)|Создайте соединители API. |
+|[Получение](../api/identityapiconnector-get.md)|[identityApiConnector](identityapiconnector.md)|Чтение свойств объекта [identityApiConnector.](../resources/identityapiconnector.md)|
+|[Обновление](../api/identityapiconnector-update.md)|[identityApiConnector](identityapiconnector.md)|Обновление свойств соединители API.|
 |[удаление](../api/identityapiconnector-delete.md);|Нет|Удаление соединители API.|
 
 ## <a name="properties"></a>Свойства
@@ -43,7 +43,7 @@ ms.locfileid: "49720460"
 |targetUrl|String| URL-адрес конечной точки API для вызова. |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, который описывает сведения о конфигурации проверки подлинности для вызова API. В [настоящее время поддерживается](basicauthentication.md) только базовая проверка подлинности.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -54,7 +54,6 @@ ms.locfileid: "49720460"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityApiConnector",
-  "baseType": "",
   "openType": false
 }
 -->

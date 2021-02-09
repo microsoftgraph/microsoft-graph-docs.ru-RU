@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса Едукатионрубрикауткоме
-description: Едукатионауткоме, обеспечивающий высококачественный Rubric
+title: Тип ресурса educationRubricOutcome
+description: EducationOutcome, который предоставляет оградимую рубрику
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ade372d6bd5e669f0dcde1ac36e8ef06e473cd43
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c8132159fa70c175a46a43a13ebce981299f2431
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071292"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161917"
 ---
-# <a name="educationrubricoutcome-resource-type"></a>Тип ресурса Едукатионрубрикауткоме
+# <a name="educationrubricoutcome-resource-type"></a>Тип ресурса educationRubricOutcome
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект [едукатионауткоме](educationoutcome.md) , обеспечивающий высококачественную Rubric.
+[EducationOutcome,](educationoutcome.md) который предоставляет оградимую рубрику.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Обновление Едукатионауткоме](../api/educationoutcome-update.md) | [едукатионауткоме](educationoutcome.md) | Обновление объекта Едукатионауткоме. |
+| [Обновление educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Обновление объекта educationOutcome. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь для изменения ресурса.|
-|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|публишедрубриккуалитифидбакк|Коллекция [рубриккуалитифидбаккмодел](rubricqualityfeedbackmodel.md)|Копия свойства Рубриккуалитифидбакк, выполняемого при отпадении оценки на учащийся.|
-|публишедрубриккуалитиселектедлевелс|Коллекция [рубриккуалитиселектедколумнмодел](rubricqualityselectedcolumnmodel.md)|Копия свойства Рубриккуалитиселектедлевелс, выполняемого при отпадении оценки на учащийся.|
-|рубриккуалитифидбакк|Коллекция [рубриккуалитифидбаккмодел](rubricqualityfeedbackmodel.md)|Коллекция определенных отзывов для каждого качества этого Rubric.|
-|рубриккуалитиселектедлевелс|Коллекция [рубриккуалитиселектедколумнмодел](rubricqualityselectedcolumnmodel.md)|Уровень, который преподаватель выбрал для каждого качества при ступенчатом назначении.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменял ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|publishedRubricQualityFeedback|[Коллекция rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Копия свойства rubricQualityFeedback, которая происходит, когда учащемуся отпущен класс.|
+|publishedRubricQualitySelectedLevels|[Коллекция rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|Копия свойства rubricQualitySelectedLevels, которая сделана, когда учащемуся был освобожден класс.|
+|rubricQualityFeedback|[Коллекция rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Коллекция определенных отзывов для каждого качества этой рубрики.|
+|rubricQualitySelectedLevels|[Коллекция rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|Уровень, выбранный преподавателем для каждого качества при классификации этого задания.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -51,7 +51,6 @@ ms.locfileid: "48071292"
 
   ],
   "@odata.type": "microsoft.graph.educationRubricOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

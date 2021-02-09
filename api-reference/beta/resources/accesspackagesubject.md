@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса accessPackageSubject
-description: В управлении правами Azure AD тема назначения пакета доступа.
+description: В управлении правами Azure AD субъект назначения пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4969afac14f7eeb24d2901946d5e5961258c8b7b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3f5bbd3147b27193d8a8e8a3e4bea3914719124c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133583"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161784"
 ---
 # <a name="accesspackagesubject-resource-type"></a>Тип ресурса accessPackageSubject
 
@@ -24,12 +24,12 @@ ms.locfileid: "50133583"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображаемого имени темы.|
+|displayName|String|Отображаемого имени темы.|
 |email|String|Адрес электронной почты темы.|
 |id|String| Только для чтения.|
 |objectId|String|ИД объекта темы.|
-|principalName|String|Имя субъекта, если известно, субъекта.|
-|type|Строка|Тип ресурса темы.|
+|principalName|String|Имя субъекта( если известно) темы.|
+|type|String|Тип ресурса темы.|
 
 ## <a name="relationships"></a>Связи
 
@@ -45,7 +45,6 @@ ms.locfileid: "50133583"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageSubject",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -1,26 +1,26 @@
 ---
 title: Тип ресурса iosHomeScreenFolder
-description: Папка, содержащая страницы приложений на начальном экране
+description: Папка, содержащая страницы приложений и веб-клипов на домашнем экране.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4571baad6e1e0967b8b38ced9b96fd977f154fd7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7ad090d7e5a01eaf3dda10c6d9edd5cfafacb1a2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280426"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161819"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Тип ресурса iosHomeScreenFolder
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Папка, содержащая страницы приложений на начальном экране
+Папка, содержащая страницы приложений и веб-клипов на домашнем экране.
 
 
 Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
@@ -29,7 +29,7 @@ ms.locfileid: "49280426"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков на начальном экране, которые должны относиться к типу приложения. Эта коллекция может включать до 500 элементов.|
+|pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков макета домашнего экрана, которые должны быть приложениями или веб-клипами. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -53,7 +53,8 @@ ms.locfileid: "49280426"
         {
           "@odata.type": "microsoft.graph.iosHomeScreenApp",
           "displayName": "String",
-          "bundleID": "String"
+          "bundleID": "String",
+          "isWebClip": true
         }
       ]
     }
