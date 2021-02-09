@@ -5,33 +5,33 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8dd316be345e1df4c840e11f53e721aa4b7782e7
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c1d9945b9fb5458ec5e497f8b757d07388d73f8b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872774"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158277"
 ---
-# <a name="get-cloudpconpremisesconnection"></a><span data-ttu-id="546ab-103">Get cloudPcOnPremisesConnection</span><span class="sxs-lookup"><span data-stu-id="546ab-103">Get cloudPcOnPremisesConnection</span></span>
+# <a name="get-cloudpconpremisesconnection"></a><span data-ttu-id="d509d-103">Get cloudPcOnPremisesConnection</span><span class="sxs-lookup"><span data-stu-id="d509d-103">Get cloudPcOnPremisesConnection</span></span>
 
-<span data-ttu-id="546ab-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="546ab-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d509d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d509d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="546ab-105">Чтение свойств и связей объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)</span><span class="sxs-lookup"><span data-stu-id="546ab-105">Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.</span></span>
+<span data-ttu-id="d509d-105">Чтение свойств и связей объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)</span><span class="sxs-lookup"><span data-stu-id="d509d-105">Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.</span></span>
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a><span data-ttu-id="546ab-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="546ab-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d509d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d509d-106">Permissions</span></span>
 
-<span data-ttu-id="546ab-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="546ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d509d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d509d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="546ab-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="546ab-109">Permission type</span></span>| <span data-ttu-id="546ab-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="546ab-110">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="d509d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d509d-109">Permission type</span></span>| <span data-ttu-id="d509d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d509d-110">Permissions (from least to most privileged)</span></span> |
 |:---|:---|
-|<span data-ttu-id="546ab-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="546ab-111">Delegated (work or school account)</span></span>|<span data-ttu-id="546ab-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="546ab-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>|
-|<span data-ttu-id="546ab-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="546ab-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="546ab-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="546ab-114">Not supported.</span></span>|
-|<span data-ttu-id="546ab-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="546ab-115">Application</span></span>| <span data-ttu-id="546ab-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="546ab-116">Not supported.</span></span>|
+|<span data-ttu-id="d509d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d509d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d509d-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d509d-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>|
+|<span data-ttu-id="d509d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d509d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d509d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d509d-114">Not supported.</span></span>|
+|<span data-ttu-id="d509d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d509d-115">Application</span></span>| <span data-ttu-id="d509d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d509d-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="546ab-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="546ab-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d509d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d509d-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -42,32 +42,32 @@ ms.locfileid: "49872774"
 GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="546ab-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="546ab-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d509d-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d509d-118">Optional query parameters</span></span>
 
-<span data-ttu-id="546ab-119">Этот метод поддерживает параметр `$select` запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="546ab-119">This method supports `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="546ab-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="546ab-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="d509d-119">Этот метод поддерживает параметр `$select` запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d509d-119">This method supports `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="d509d-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d509d-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="546ab-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="546ab-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d509d-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d509d-121">Request headers</span></span>
 
-| <span data-ttu-id="546ab-122">Имя</span><span class="sxs-lookup"><span data-stu-id="546ab-122">Name</span></span>          | <span data-ttu-id="546ab-123">Описание</span><span class="sxs-lookup"><span data-stu-id="546ab-123">Description</span></span>               |
+| <span data-ttu-id="d509d-122">Имя</span><span class="sxs-lookup"><span data-stu-id="d509d-122">Name</span></span>          | <span data-ttu-id="d509d-123">Описание</span><span class="sxs-lookup"><span data-stu-id="d509d-123">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="546ab-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="546ab-124">Authorization</span></span> | <span data-ttu-id="546ab-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="546ab-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d509d-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d509d-124">Authorization</span></span> | <span data-ttu-id="d509d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d509d-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="546ab-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="546ab-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d509d-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d509d-127">Request body</span></span>
 
-<span data-ttu-id="546ab-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="546ab-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d509d-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d509d-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="546ab-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="546ab-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d509d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="d509d-129">Response</span></span>
 
-<span data-ttu-id="546ab-130">В случае успеха этот метод возвращает код отклика и объект `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="546ab-130">If successful, this method returns a `200 OK` response code and a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object in the response body.</span></span>
+<span data-ttu-id="d509d-130">В случае успеха этот метод возвращает код отклика и объект `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d509d-130">If successful, this method returns a `200 OK` response code and a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="546ab-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="546ab-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d509d-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="d509d-131">Examples</span></span>
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a><span data-ttu-id="546ab-132">Пример 1. Получите свойства локального подключения по умолчанию</span><span class="sxs-lookup"><span data-stu-id="546ab-132">Example 1: Get the default properties of an on-premises connection</span></span>
+### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a><span data-ttu-id="d509d-132">Пример 1. Получите свойства локального подключения по умолчанию</span><span class="sxs-lookup"><span data-stu-id="d509d-132">Example 1: Get the default properties of an on-premises connection</span></span>
 
-#### <a name="request"></a><span data-ttu-id="546ab-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="546ab-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d509d-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="d509d-133">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="546ab-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="546ab-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d509d-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="d509d-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpconpremisesconnection"
@@ -77,28 +77,28 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="546ab-135">C#</span><span class="sxs-lookup"><span data-stu-id="546ab-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d509d-135">C#</span><span class="sxs-lookup"><span data-stu-id="d509d-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpconpremisesconnection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="546ab-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="546ab-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d509d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d509d-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpconpremisesconnection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="546ab-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="546ab-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d509d-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d509d-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpconpremisesconnection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="546ab-138">Java</span><span class="sxs-lookup"><span data-stu-id="546ab-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d509d-138">Java</span><span class="sxs-lookup"><span data-stu-id="d509d-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="546ab-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="546ab-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d509d-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="d509d-139">Response</span></span>
 
-<span data-ttu-id="546ab-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="546ab-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="d509d-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d509d-140">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,18 +123,17 @@ Content-Type: application/json
     "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
     "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
     "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
-    "healthCheckStatus": "running",
-    "inUse": false
+    "healthCheckStatus": "running"
   }
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a><span data-ttu-id="546ab-141">Пример 2. Получите выбранные свойства локального подключения, включая healthCheckStatusDetails</span><span class="sxs-lookup"><span data-stu-id="546ab-141">Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails</span></span>
+### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a><span data-ttu-id="d509d-141">Пример 2. Получите выбранные свойства локального подключения, включая healthCheckStatusDetails</span><span class="sxs-lookup"><span data-stu-id="d509d-141">Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails</span></span>
 
-#### <a name="request"></a><span data-ttu-id="546ab-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="546ab-142">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d509d-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="d509d-142">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="546ab-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="546ab-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d509d-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="d509d-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpconpremisesconnection_withDetails"
@@ -142,30 +141,30 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,subscriptionId,subscriptionName,adDomainName,adDomainUsername,organizationalUnit,virtualNetworkId,subnetId,healthCheckStatus,healthCheckStatusDetails,inUse
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse
 ```
-# <a name="c"></a>[<span data-ttu-id="546ab-144">C#</span><span class="sxs-lookup"><span data-stu-id="546ab-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d509d-144">C#</span><span class="sxs-lookup"><span data-stu-id="d509d-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpconpremisesconnection-withdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="546ab-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="546ab-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d509d-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d509d-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpconpremisesconnection-withdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="546ab-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="546ab-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d509d-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d509d-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpconpremisesconnection-withdetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="546ab-147">Java</span><span class="sxs-lookup"><span data-stu-id="546ab-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d509d-147">Java</span><span class="sxs-lookup"><span data-stu-id="d509d-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-withdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="546ab-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="546ab-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d509d-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="d509d-148">Response</span></span>
 
-<span data-ttu-id="546ab-149">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="546ab-149">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="d509d-149">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d509d-149">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -182,14 +181,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "displayName": "Display Name value",
-    "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-    "subscriptionName": "Subscription Name value",
-    "adDomainName": "Active Directory Domain Name value",
-    "adDomainUsername": "Active Directory Domain User Name value",
-    "organizationalUnit": "Organization Unit value",
-    "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
-    "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
-    "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {
       "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",

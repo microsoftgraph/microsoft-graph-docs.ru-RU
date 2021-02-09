@@ -1,37 +1,37 @@
 ---
-title: Создание Комплианцеманажементпартнер
-description: Создание нового объекта Комплианцеманажементпартнер.
+title: Создание complianceManagementPartner
+description: Создание объекта complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 541cdf768cd717ea4a284fff660a56641dc359dc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 679c7f5aa1ec083d1036f133979af057e3151d66
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274854"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159327"
 ---
-# <a name="create-compliancemanagementpartner"></a><span data-ttu-id="c1d7e-103">Создание Комплианцеманажементпартнер</span><span class="sxs-lookup"><span data-stu-id="c1d7e-103">Create complianceManagementPartner</span></span>
+# <a name="create-compliancemanagementpartner"></a><span data-ttu-id="1e53c-103">Создание complianceManagementPartner</span><span class="sxs-lookup"><span data-stu-id="1e53c-103">Create complianceManagementPartner</span></span>
 
-<span data-ttu-id="c1d7e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c1d7e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1e53c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1e53c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="c1d7e-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1e53c-105">**Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1e53c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c1d7e-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1e53c-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1e53c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c1d7e-107">Создание нового объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .</span><span class="sxs-lookup"><span data-stu-id="c1d7e-107">Create a new [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) object.</span></span>
+<span data-ttu-id="1e53c-107">Создание объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)</span><span class="sxs-lookup"><span data-stu-id="1e53c-107">Create a new [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c1d7e-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="c1d7e-108">Prerequisites</span></span>
-<span data-ttu-id="c1d7e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c1d7e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1e53c-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="1e53c-108">Prerequisites</span></span>
+<span data-ttu-id="1e53c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1e53c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c1d7e-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c1d7e-111">Permission type</span></span>|<span data-ttu-id="c1d7e-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="c1d7e-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1e53c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1e53c-111">Permission type</span></span>|<span data-ttu-id="1e53c-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1e53c-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c1d7e-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c1d7e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="c1d7e-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1d7e-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="c1d7e-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c1d7e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c1d7e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-116">Not supported.</span></span>|
-|<span data-ttu-id="c1d7e-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c1d7e-117">Application</span></span>|<span data-ttu-id="c1d7e-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1d7e-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="1e53c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1e53c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1e53c-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e53c-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="1e53c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1e53c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1e53c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1e53c-116">Not supported.</span></span>|
+|<span data-ttu-id="1e53c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1e53c-117">Application</span></span>|<span data-ttu-id="1e53c-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e53c-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c1d7e-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c1d7e-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1e53c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1e53c-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,45 +40,45 @@ ms.locfileid: "49274854"
 POST /deviceManagement/complianceManagementPartners
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c1d7e-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="c1d7e-120">Request headers</span></span>
-|<span data-ttu-id="c1d7e-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c1d7e-121">Header</span></span>|<span data-ttu-id="c1d7e-122">Значение</span><span class="sxs-lookup"><span data-stu-id="c1d7e-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1e53c-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="1e53c-120">Request headers</span></span>
+|<span data-ttu-id="1e53c-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1e53c-121">Header</span></span>|<span data-ttu-id="1e53c-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1e53c-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c1d7e-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c1d7e-123">Authorization</span></span>|<span data-ttu-id="c1d7e-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c1d7e-125">Accept</span><span class="sxs-lookup"><span data-stu-id="c1d7e-125">Accept</span></span>|<span data-ttu-id="c1d7e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c1d7e-126">application/json</span></span>|
+|<span data-ttu-id="1e53c-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1e53c-123">Authorization</span></span>|<span data-ttu-id="1e53c-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1e53c-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1e53c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="1e53c-125">Accept</span></span>|<span data-ttu-id="1e53c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1e53c-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c1d7e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c1d7e-127">Request body</span></span>
-<span data-ttu-id="c1d7e-128">В тексте запроса добавьте представление объекта Комплианцеманажементпартнер в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-128">In the request body, supply a JSON representation for the complianceManagementPartner object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1e53c-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1e53c-127">Request body</span></span>
+<span data-ttu-id="1e53c-128">В теле запроса укажу представление объекта complianceManagementPartner в JSON.</span><span class="sxs-lookup"><span data-stu-id="1e53c-128">In the request body, supply a JSON representation for the complianceManagementPartner object.</span></span>
 
-<span data-ttu-id="c1d7e-129">В следующей таблице приведены свойства, необходимые при создании Комплианцеманажементпартнер.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-129">The following table shows the properties that are required when you create the complianceManagementPartner.</span></span>
+<span data-ttu-id="1e53c-129">В следующей таблице показаны свойства, необходимые при создании объекта complianceManagementPartner.</span><span class="sxs-lookup"><span data-stu-id="1e53c-129">The following table shows the properties that are required when you create the complianceManagementPartner.</span></span>
 
-|<span data-ttu-id="c1d7e-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="c1d7e-130">Property</span></span>|<span data-ttu-id="c1d7e-131">Тип</span><span class="sxs-lookup"><span data-stu-id="c1d7e-131">Type</span></span>|<span data-ttu-id="c1d7e-132">Описание</span><span class="sxs-lookup"><span data-stu-id="c1d7e-132">Description</span></span>|
+|<span data-ttu-id="1e53c-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="1e53c-130">Property</span></span>|<span data-ttu-id="1e53c-131">Тип</span><span class="sxs-lookup"><span data-stu-id="1e53c-131">Type</span></span>|<span data-ttu-id="1e53c-132">Описание</span><span class="sxs-lookup"><span data-stu-id="1e53c-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c1d7e-133">id</span><span class="sxs-lookup"><span data-stu-id="c1d7e-133">id</span></span>|<span data-ttu-id="c1d7e-134">String</span><span class="sxs-lookup"><span data-stu-id="c1d7e-134">String</span></span>|<span data-ttu-id="c1d7e-135">Идентификатор объекта</span><span class="sxs-lookup"><span data-stu-id="c1d7e-135">Id of the entity</span></span>|
-|<span data-ttu-id="c1d7e-136">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="c1d7e-136">lastHeartbeatDateTime</span></span>|<span data-ttu-id="c1d7e-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c1d7e-137">DateTimeOffset</span></span>|<span data-ttu-id="c1d7e-138">Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием</span><span class="sxs-lookup"><span data-stu-id="c1d7e-138">Timestamp of last heartbeat after admin onboarded to the compliance management partner</span></span>|
-|<span data-ttu-id="c1d7e-139">partnerState</span><span class="sxs-lookup"><span data-stu-id="c1d7e-139">partnerState</span></span>|[<span data-ttu-id="c1d7e-140">девицеманажементпартнертенантстате</span><span class="sxs-lookup"><span data-stu-id="c1d7e-140">deviceManagementPartnerTenantState</span></span>](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|<span data-ttu-id="c1d7e-141">Состояние партнера этого клиента.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-141">Partner state of this tenant.</span></span> <span data-ttu-id="c1d7e-142">Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-142">Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span></span>|
-|<span data-ttu-id="c1d7e-143">displayName</span><span class="sxs-lookup"><span data-stu-id="c1d7e-143">displayName</span></span>|<span data-ttu-id="c1d7e-144">String</span><span class="sxs-lookup"><span data-stu-id="c1d7e-144">String</span></span>|<span data-ttu-id="c1d7e-145">Отображаемое имя партнера</span><span class="sxs-lookup"><span data-stu-id="c1d7e-145">Partner display name</span></span>|
-|<span data-ttu-id="c1d7e-146">макосонбоардед</span><span class="sxs-lookup"><span data-stu-id="c1d7e-146">macOsOnboarded</span></span>|<span data-ttu-id="c1d7e-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="c1d7e-147">Boolean</span></span>|<span data-ttu-id="c1d7e-148">Партнер, подключенный к устройствам Mac.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-148">Partner onboarded for Mac devices.</span></span>|
-|<span data-ttu-id="c1d7e-149">виндовсонбоардед</span><span class="sxs-lookup"><span data-stu-id="c1d7e-149">windowsOnboarded</span></span>|<span data-ttu-id="c1d7e-150">Boolean</span><span class="sxs-lookup"><span data-stu-id="c1d7e-150">Boolean</span></span>|<span data-ttu-id="c1d7e-151">Партнер, направленный на устройства с Windows.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-151">Partner onboarded for Windows devices.</span></span>|
-|<span data-ttu-id="c1d7e-152">андроидонбоардед</span><span class="sxs-lookup"><span data-stu-id="c1d7e-152">androidOnboarded</span></span>|<span data-ttu-id="c1d7e-153">Boolean</span><span class="sxs-lookup"><span data-stu-id="c1d7e-153">Boolean</span></span>|<span data-ttu-id="c1d7e-154">Партнер, направленный на устройства с Android.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-154">Partner onboarded for Android devices.</span></span>|
-|<span data-ttu-id="c1d7e-155">иосонбоардед</span><span class="sxs-lookup"><span data-stu-id="c1d7e-155">iosOnboarded</span></span>|<span data-ttu-id="c1d7e-156">Boolean</span><span class="sxs-lookup"><span data-stu-id="c1d7e-156">Boolean</span></span>|<span data-ttu-id="c1d7e-157">Партнер, подключенный к устройствам iOS.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-157">Partner onboarded for ios devices.</span></span>|
-|<span data-ttu-id="c1d7e-158">макосенроллментассигнментс</span><span class="sxs-lookup"><span data-stu-id="c1d7e-158">macOsEnrollmentAssignments</span></span>|<span data-ttu-id="c1d7e-159">Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="c1d7e-159">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="c1d7e-160">Группы пользователей, которые регистрируют устройства Mac через партнера.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-160">User groups which enroll Mac devices through partner.</span></span>|
-|<span data-ttu-id="c1d7e-161">виндовсенроллментассигнментс</span><span class="sxs-lookup"><span data-stu-id="c1d7e-161">windowsEnrollmentAssignments</span></span>|<span data-ttu-id="c1d7e-162">Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="c1d7e-162">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="c1d7e-163">Группы пользователей, которые регистрируют устройства Windows с помощью партнера.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-163">User groups which enroll Windows devices through partner.</span></span>|
-|<span data-ttu-id="c1d7e-164">андроиденроллментассигнментс</span><span class="sxs-lookup"><span data-stu-id="c1d7e-164">androidEnrollmentAssignments</span></span>|<span data-ttu-id="c1d7e-165">Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="c1d7e-165">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="c1d7e-166">Группы пользователей, которые регистрируют устройства с Android через партнера.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-166">User groups which enroll Android devices through partner.</span></span>|
-|<span data-ttu-id="c1d7e-167">иосенроллментассигнментс</span><span class="sxs-lookup"><span data-stu-id="c1d7e-167">iosEnrollmentAssignments</span></span>|<span data-ttu-id="c1d7e-168">Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="c1d7e-168">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="c1d7e-169">Группы пользователей, которые регистрируют устройства с iOS через партнера.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-169">User groups which enroll ios devices through partner.</span></span>|
+|<span data-ttu-id="1e53c-133">id</span><span class="sxs-lookup"><span data-stu-id="1e53c-133">id</span></span>|<span data-ttu-id="1e53c-134">String</span><span class="sxs-lookup"><span data-stu-id="1e53c-134">String</span></span>|<span data-ttu-id="1e53c-135">ИД сущности</span><span class="sxs-lookup"><span data-stu-id="1e53c-135">Id of the entity</span></span>|
+|<span data-ttu-id="1e53c-136">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="1e53c-136">lastHeartbeatDateTime</span></span>|<span data-ttu-id="1e53c-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1e53c-137">DateTimeOffset</span></span>|<span data-ttu-id="1e53c-138">Timestamp of last heartbeat after admin onboarded to the compliance management partner</span><span class="sxs-lookup"><span data-stu-id="1e53c-138">Timestamp of last heartbeat after admin onboarded to the compliance management partner</span></span>|
+|<span data-ttu-id="1e53c-139">partnerState</span><span class="sxs-lookup"><span data-stu-id="1e53c-139">partnerState</span></span>|[<span data-ttu-id="1e53c-140">deviceManagementPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="1e53c-140">deviceManagementPartnerTenantState</span></span>](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|<span data-ttu-id="1e53c-141">Состояние партнера этого клиента.</span><span class="sxs-lookup"><span data-stu-id="1e53c-141">Partner state of this tenant.</span></span> <span data-ttu-id="1e53c-142">Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span><span class="sxs-lookup"><span data-stu-id="1e53c-142">Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span></span>|
+|<span data-ttu-id="1e53c-143">displayName</span><span class="sxs-lookup"><span data-stu-id="1e53c-143">displayName</span></span>|<span data-ttu-id="1e53c-144">String</span><span class="sxs-lookup"><span data-stu-id="1e53c-144">String</span></span>|<span data-ttu-id="1e53c-145">Отображаемое имя партнера</span><span class="sxs-lookup"><span data-stu-id="1e53c-145">Partner display name</span></span>|
+|<span data-ttu-id="1e53c-146">macOsOnboarded</span><span class="sxs-lookup"><span data-stu-id="1e53c-146">macOsOnboarded</span></span>|<span data-ttu-id="1e53c-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e53c-147">Boolean</span></span>|<span data-ttu-id="1e53c-148">Партнер для устройств Mac.</span><span class="sxs-lookup"><span data-stu-id="1e53c-148">Partner onboarded for Mac devices.</span></span>|
+|<span data-ttu-id="1e53c-149">windowsOnboarded</span><span class="sxs-lookup"><span data-stu-id="1e53c-149">windowsOnboarded</span></span>|<span data-ttu-id="1e53c-150">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e53c-150">Boolean</span></span>|<span data-ttu-id="1e53c-151">Партнер, в который вошел для устройств с Windows.</span><span class="sxs-lookup"><span data-stu-id="1e53c-151">Partner onboarded for Windows devices.</span></span>|
+|<span data-ttu-id="1e53c-152">androidOnboarded</span><span class="sxs-lookup"><span data-stu-id="1e53c-152">androidOnboarded</span></span>|<span data-ttu-id="1e53c-153">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e53c-153">Boolean</span></span>|<span data-ttu-id="1e53c-154">Партнер, вошел в платформу для устройств с Android.</span><span class="sxs-lookup"><span data-stu-id="1e53c-154">Partner onboarded for Android devices.</span></span>|
+|<span data-ttu-id="1e53c-155">iosOnboarded</span><span class="sxs-lookup"><span data-stu-id="1e53c-155">iosOnboarded</span></span>|<span data-ttu-id="1e53c-156">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e53c-156">Boolean</span></span>|<span data-ttu-id="1e53c-157">Партнер, в который вошел для устройств с ios.</span><span class="sxs-lookup"><span data-stu-id="1e53c-157">Partner onboarded for ios devices.</span></span>|
+|<span data-ttu-id="1e53c-158">macOsEnrollmentAssignments</span><span class="sxs-lookup"><span data-stu-id="1e53c-158">macOsEnrollmentAssignments</span></span>|<span data-ttu-id="1e53c-159">[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="1e53c-159">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="1e53c-160">Группы пользователей, которые регистрют устройства Mac через партнера.</span><span class="sxs-lookup"><span data-stu-id="1e53c-160">User groups which enroll Mac devices through partner.</span></span>|
+|<span data-ttu-id="1e53c-161">windowsEnrollmentAssignments</span><span class="sxs-lookup"><span data-stu-id="1e53c-161">windowsEnrollmentAssignments</span></span>|<span data-ttu-id="1e53c-162">[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="1e53c-162">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="1e53c-163">Группы пользователей, которые регистрют устройства с Windows через партнера.</span><span class="sxs-lookup"><span data-stu-id="1e53c-163">User groups which enroll Windows devices through partner.</span></span>|
+|<span data-ttu-id="1e53c-164">androidEnrollmentAssignments</span><span class="sxs-lookup"><span data-stu-id="1e53c-164">androidEnrollmentAssignments</span></span>|<span data-ttu-id="1e53c-165">[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="1e53c-165">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="1e53c-166">Группы пользователей, которые регистрют устройства Android через партнера.</span><span class="sxs-lookup"><span data-stu-id="1e53c-166">User groups which enroll Android devices through partner.</span></span>|
+|<span data-ttu-id="1e53c-167">iosEnrollmentAssignments</span><span class="sxs-lookup"><span data-stu-id="1e53c-167">iosEnrollmentAssignments</span></span>|<span data-ttu-id="1e53c-168">[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="1e53c-168">[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="1e53c-169">Группы пользователей, которые регистрют устройства ios через партнера.</span><span class="sxs-lookup"><span data-stu-id="1e53c-169">User groups which enroll ios devices through partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="c1d7e-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1d7e-170">Response</span></span>
-<span data-ttu-id="c1d7e-171">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-171">If successful, this method returns a `201 Created` response code and a [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1e53c-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="1e53c-170">Response</span></span>
+<span data-ttu-id="1e53c-171">В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1e53c-171">If successful, this method returns a `201 Created` response code and a [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c1d7e-172">Пример</span><span class="sxs-lookup"><span data-stu-id="c1d7e-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1e53c-172">Пример</span><span class="sxs-lookup"><span data-stu-id="1e53c-172">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c1d7e-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="c1d7e-173">Request</span></span>
-<span data-ttu-id="c1d7e-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1e53c-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="1e53c-173">Request</span></span>
+<span data-ttu-id="1e53c-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1e53c-174">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/complianceManagementPartners
 Content-type: application/json
-Content-length: 1944
+Content-length: 2216
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -93,9 +93,10 @@ Content-length: 1944
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -103,9 +104,10 @@ Content-length: 1944
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -113,9 +115,10 @@ Content-length: 1944
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -123,21 +126,22 @@ Content-length: 1944
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c1d7e-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1d7e-175">Response</span></span>
-<span data-ttu-id="c1d7e-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c1d7e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1e53c-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="1e53c-175">Response</span></span>
+<span data-ttu-id="1e53c-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1e53c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1993
+Content-Length: 2265
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -153,9 +157,10 @@ Content-Length: 1993
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -163,9 +168,10 @@ Content-Length: 1993
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -173,9 +179,10 @@ Content-Length: 1993
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -183,9 +190,10 @@ Content-Length: 1993
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]
