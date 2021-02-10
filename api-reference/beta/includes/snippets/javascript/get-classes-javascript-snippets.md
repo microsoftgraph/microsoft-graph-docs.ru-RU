@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1ef1157774c3e58cc8e4a4d649bd8dc24ff8baa6
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: dab65c7a9478aa5ba171a0841f69f5a4c531645b
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50015778"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50179420"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/classes')
+let res = await client.api('/education/schools/10002/classes')
     .version('beta')
     .get();
 
