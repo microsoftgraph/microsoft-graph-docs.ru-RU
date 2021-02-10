@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7c23ea17f1bc68b88490d8a54a68e50fe0604a78
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 1d7f38e5fc128d176ff5c954ae0dae7113f18285
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719778"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176616"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -20,7 +20,7 @@ ms.locfileid: "49719778"
 
 Переводить активный одноранговой звонок.
 
-> **Примечание.** Это поддерживается, только если и переносимый, и целевой объект переноса являются пользователями Microsoft Teams, принадлежащими одному и тем же арендатору. Передача на номер STN поддерживается только для экземпляра приложения. Дополнительные информацию о переносимом, переносимом и целевом объекте см. в [RFC 5589.](https://tools.ietf.org/html/rfc5589#section-2)
+> **Примечание.** Это поддерживается, только если и переносимый, и целевой объект передачи являются пользователями Microsoft Teams, принадлежащими одному и тем же арендатору. Передача на номер STN поддерживается только для экземпляра приложения. Дополнительные информацию о переносимом, переносимом и целевом объекте см. в [RFC 5589.](https://tools.ietf.org/html/rfc5589#section-2)
 
 Перенабор при консультации означает, что перед перенабором перед перенабором он может сообщить о перенаборе. Это не касается прямой передачи вызова.
 
@@ -31,7 +31,7 @@ ms.locfileid: "49719778"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Приложение     | Calls.Initiate.All                                  |
+| Для приложений     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -215,7 +215,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
+> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -327,7 +327,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
 
-> **Примечание.** Передача, принимаемая, может происходить после или до нее неактивный звук состояния мультимедиа.
+> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -386,7 +386,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
+> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -423,7 +423,7 @@ Content-Type: application/json
 
 ### <a name="example-3-call-transfer-to-pstn-number"></a>Пример 3. Передача вызовов на номер STN
 
-Для этого вызова требуется экземпляр приложения с назначенным номером STN.
+Для этого вызова требуется экземпляр приложения с назначенным номером PSTN.
 
 #### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
 Используя учетные данные администратора клиента, вызовите следующие cmdlets в удаленной powerShell клиента, чтобы создать экземпляр приложения. Дополнительные сведения см. в командах [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
@@ -445,7 +445,6 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Примечание.** Если клиент имеет номера STN в Австралии, присвоенные экземплярам приложений, этот вызов может привести к сбойу. Если клиент создан только что, может потребоваться несколько дней, чтобы эта функция была доступна.
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -581,7 +580,7 @@ Content-Type: application/json
 ```
 ### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
+> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -618,9 +617,6 @@ Content-Type: application/json
 ### <a name="example-4-consultative-transfer-to-pstn-number"></a>Пример 4. Консультационная передача на номер STN
 
 Для этого вызова требуется экземпляр приложения с назначенным номером STN, как описано в примере 3.
-
-> **Примечание.** Этот вызов может привести к сбойу, если клиент имеет номера STN в Австралии, присвоенные экземплярам приложений. Если клиент создан только что, может потребоваться несколько дней, чтобы эта функция была доступна.
-
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -755,7 +751,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
+> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -1,24 +1,24 @@
 ---
-title: Удаление Акцесспаккаже
-description: Удаление Акцесспаккаже.
+title: Удаление accessPackage
+description: Удаление accessPackage.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 018491e47b1c780d3640d749f7f98fbfd1d3002b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b48b132bc12bd35b248be0efe33b038fcd884a35
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952381"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176404"
 ---
-# <a name="delete-accesspackage"></a>Удаление Акцесспаккаже
+# <a name="delete-accesspackage"></a>Удаление accessPackage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [акцесспаккаже](../resources/accesspackage.md) .
+Удаление объекта [accessPackage.](../resources/accesspackage.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,14 +36,13 @@ ms.locfileid: "48952381"
 
 ```http
 DELETE /identityGovernance/entitlementManagement/accessPackages/{id}
-
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 

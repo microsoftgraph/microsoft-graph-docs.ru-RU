@@ -1,24 +1,24 @@
 ---
-title: Создание Усерфлов
-description: Используйте этот API для создания нового Усерфлов.
+title: Создание userFlow
+description: Используйте этот API для создания нового пользовательского процесса.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02ae410aaef61dfb2e2de6bf03227b9b2ddc2eb2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36ccf24fb65a0098ebccb8774c36af804aece41f
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953230"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176537"
 ---
-# <a name="create-userflow"></a>Создание Усерфлов
+# <a name="create-userflow"></a>Создание userFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [усерфлов](../resources/identityuserflow.md) .
+Создание объекта [userFlow.](../resources/identityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,11 +47,11 @@ POST /identity/userFlows
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [усерфлов](../resources/identityuserflow.md) в формате JSON.
+В теле запроса укажу представление объекта [userFlow](../resources/identityuserflow.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [усерфлов](../resources/identityuserflow.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `201 Created` [объект userFlow](../resources/identityuserflow.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -70,6 +70,7 @@ POST https://graph.microsoft.com/beta/identity/userFlows
 Content-type: application/json
 
 {
+  "id": "Pol1",
   "userFlowType": "signUpOrSignIn",
   "userFlowTypeVersion": 1
 }

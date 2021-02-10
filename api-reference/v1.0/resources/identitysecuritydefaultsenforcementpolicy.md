@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса Идентитисекуритидефаултсенфорцементполици
-description: Представляет политику безопасности по умолчанию для Azure Active Directory. Параметры безопасности по умолчанию содержат предварительно настроенные параметры безопасности, которые защищаются от распространенных атак.
+title: Тип ресурса identitySecurityDefaultsEnforcementPolicy
+description: Представляет политику по умолчанию для безопасности Azure Active Directory. Значения по умолчанию для системы безопасности содержат предварительно заранее настраиваемую настройку параметров безопасности, которые защищают от распространенных атак.
 localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c208733525162397c190bd425cdf7c770a302c0f
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 924eda550472436332d4829bdd436723e0fa9678
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581920"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153454"
 ---
-# <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Тип ресурса Идентитисекуритидефаултсенфорцементполици
+# <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Тип ресурса identitySecurityDefaultsEnforcementPolicy
 
 Пространство имен: microsoft.graph
 
-Представляет политику [безопасности по умолчанию](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) для Azure Active Directory. Параметры безопасности по умолчанию содержат предварительно настроенные параметры безопасности, которые защищаются от распространенных атак.
+Представляет политику по умолчанию для [безопасности](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) Azure Active Directory. Значения по умолчанию для системы безопасности содержат предварительно заранее настраиваемую настройку параметров безопасности, которые защищают от распространенных атак.
 
-Наследуется от [основы](../resources/policybase.md).
+Наследуется [от policyBase.](../resources/policybase.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/identitysecuritydefaultsenforcementpolicy-get.md); | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Чтение свойств объекта **идентитисекуритидефаултсенфорцементполици** . |
-| [обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md). | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Обновление объекта **идентитисекуритидефаултсенфорцементполици** . |
+| [Получение](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Чтение свойств объекта **identitySecurityDefaultsEnforcementPolicy.** |
+| [Обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Обновление объекта **identitySecurityDefaultsEnforcementPolicy.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание для этой политики. Только для чтения.|
-|displayName|String|Отображаемое имя для этой политики. Только для чтения.|
-|id|String|Идентификатор для этой политики. Только для чтения.|
-|isEnabled|Boolean|Если задано значение true, по умолчанию для клиента будет включен параметр безопасности Azure Active Directory.|
+|description|String|Описание этой политики. Только для чтения.|
+|displayName|String|Отображаемого имени для этой политики. Только для чтения.|
+|id|String|Идентификатор этой политики. Только для чтения.|
+|isEnabled|Boolean|Если установлено значение true, для клиента включены значения по умолчанию для системы безопасности Azure Active Directory.|
 
 ## <a name="relationships"></a>Связи
 
@@ -50,7 +50,6 @@ ms.locfileid: "48581920"
 
   ],
   "@odata.type": "microsoft.graph.identitySecurityDefaultsEnforcementPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

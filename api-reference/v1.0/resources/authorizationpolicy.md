@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Аусоризатионполици
-description: Представляет политику, которая может управлять параметрами авторизации Azure Active Directory.
+title: Тип ресурса authorizationPolicy
+description: Представляет политику, которая может управлять настройками авторизации Azure Active Directory.
 localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5c71e4d01ba54c9043ff827b3749be63442d06ac
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 12fe4ad670d2bb5056d05fde533d4b690068f7a5
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581250"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154217"
 ---
-# <a name="authorizationpolicy-resource-type"></a>Тип ресурса Аусоризатионполици
+# <a name="authorizationpolicy-resource-type"></a>Тип ресурса authorizationPolicy
 
 Пространство имен: microsoft.graph
 
-Представляет политику, которая может управлять параметрами авторизации Azure Active Directory. Это одноэлементный экземпляр, который наследуется от базового типа политики и всегда существует для клиента.
+Представляет политику, которая может управлять настройками авторизации Azure Active Directory. Это однотон, наследуется от базового типа политики и всегда существует для клиента.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Аусоризатионполици](../api/authorizationpolicy-get.md) | [аусоризатионполици](authorizationpolicy.md) | Чтение объекта Аусоризатионполици. |
-| [Обновление Аусоризатионполици](../api/authorizationpolicy-update.md) | Нет | Обновление объекта Аусоризатионполици. |
+| [Get authorizationPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Чтение объекта authorizationPolicy. |
+| [Обновление authorizationPolicy](../api/authorizationpolicy-update.md) | Нет | Обновление объекта authorizationPolicy. |
 
 ## <a name="properties"></a>Свойства  
 | Свойство | Тип | Описание | 
 |-|-|-|
-|id|String| Идентификатор политики авторизации. Обязательно. Только для чтения.| 
-|displayName|String| Отображаемое имя для этой политики. |  
+|id|String| ИД политики авторизации. Обязательно. Только для чтения.| 
+|displayName|String| Отображаемого имени для этой политики. |  
 |description|String| Описание этой политики.|  
-|блоккмсолповершелл|Логический| Чтобы отключить использование MSOL PowerShell, установите для этого свойства значение true. Если задано значение true, также будет отключен доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
-|defaultUserRolePermissions|[defaultUserRolePermissions](defaultuserrolepermissions.md)| Задает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
-|allowedToUseSSPR|Логический| Указывает, может ли функция сброса пароля Self-Serve использоваться пользователями клиента. | 
-|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи регистрироваться на почтовые подписки. | 
-|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. | 
-|алловинвитесфром|String|Указывает, кто может приглашать внешних пользователей в Организации. Возможные значения:<ul><li>`none` — Запретить всем, в том числе администраторам, приглашать внешних пользователей. Настройка по умолчанию для государственных организаций США.</li><li>`adminsAndGuestInviters` — Разрешить членам группы "Администраторы", "Администраторы пользователей" и "гость" приглашать внешних пользователей.</li><li>`adminsGuestInvitersAndAllMembers` — Разрешить внешним пользователям приглашать этих ролей администратора и других участников роли пользователей.</li><li>`everyone` — Разрешить всем пользователям в Организации, в том числе гостям, приглашать внешних пользователей. Значение по умолчанию для всех облачных сред, кроме государственных организаций США.</li></ul> |
+|blockMsolPowerShell|Логическое| Чтобы отключить использование MSOL PowerShell, установите для этого свойства true. При установке true также будет отключен доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не влияет на Azure AD Connect или Microsoft Graph. | 
+|defaultUserRolePermissions|[defaultUserRolePermissions](defaultuserrolepermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
+|allowedToUseSSPR|Логическое| Указывает, может ли функция Self-Serve сброса пароля может использоваться пользователями в клиенте. | 
+|allowedToSignUpEmailBasedSubscriptions|Логическое| Указывает, могут ли пользователи зарегистрироваться для подписок на основе электронной почты. | 
+|allowEmailVerifiedUsersToJoinOrganization|Логическое| Указывает, может ли пользователь присоединиться к клиенту по электронной почте. | 
+|allowInvitesFrom|String|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения:<ul><li>`none` – Запретить всем, включая администраторов, приглашать внешних пользователей. Настройка по умолчанию для правительства США.</li><li>`adminsAndGuestInviters` - Разрешить участникам ролей глобальных администраторов, администраторов пользователей и приглашений гостей приглашать внешних пользователей.</li><li>`adminsGuestInvitersAndAllMembers` - Разрешить вышеуказанным ролям администратора и всем другим участникам роли пользователя приглашать внешних пользователей.</li><li>`everyone` - Разрешить всем пользователям в организации, включая гостевых пользователей, приглашать внешних пользователей. Значение по умолчанию для всех облачных сред, кроме правительства США.</li></ul> |
 
 ## <a name="relationships"></a>Связи
 
@@ -52,7 +52,6 @@ ms.locfileid: "49581250"
 
   ],
   "@odata.type": "microsoft.graph.authorizationPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

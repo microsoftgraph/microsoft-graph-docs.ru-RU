@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Опеншифт
-description: Представляет неназначенный открытый сдвиг в расписании.
+title: Тип ресурса openShift
+description: Представляет неназначить открытую смену в расписании.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4a1a616cee4f61a93f8b3db379a0e5f39afc5f22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d513c73cebdc2cc039f53c395c6ff7c1411f806
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003040"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158690"
 ---
-# <a name="openshift-resource-type"></a>Тип ресурса Опеншифт
+# <a name="openshift-resource-type"></a>Тип ресурса openShift
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет Неназначенное, Открытый сдвиг по [расписанию](../resources/schedule.md).
+Представляет неназначить открытую смену в [расписании.](../resources/schedule.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/openshift-list.md) | Коллекция [опеншифт](openshift.md) | Перечисление свойств и связей объектов **опеншифт** в команде.|
-| [создание](../api/openshift-post.md); | [опеншифт](openshift.md) | Создайте экземпляр объекта **опеншифт** . |
-| [получение](../api/openshift-get.md); | [опеншифт](openshift.md) | Чтение свойств и связей объекта **опеншифт** . |
-| [обновление](../api/openshift-update.md). | [опеншифт](openshift.md) | Обновление объекта **опеншифт** . |
-| [удаление](../api/openshift-delete.md); | Нет | Удаление объекта **опеншифт** . |
+| [Список](../api/openshift-list.md) | Коллекция [openShift](openshift.md) | Список свойств и связей объектов **openShift** в команде.|
+| [Создание](../api/openshift-post.md) | [openShift](openshift.md) | Создание экземпляра объекта **openShift.** |
+| [Получение](../api/openshift-get.md) | [openShift](openshift.md) | Чтение свойств и связей объекта **openShift.** |
+| [Обновление](../api/openshift-update.md) | [openShift](openshift.md) | Обновление объекта **openShift.** |
+| [удаление](../api/openshift-delete.md); | Нет | Удаление объекта **openShift.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|драфтопеншифт|[опеншифтитем](openshiftitem.md)|Неопубликованная открытая смена.|
-|schedulingGroupId|String|Идентификатор группы планирования, к которой относится открытая смена.|
-|шаредопеншифт|[опеншифтитем](openshiftitem.md)|Опубликованная открытая смена.|
+|draftOpenShift|[openShiftItem](openshiftitem.md)|Неопубликоваемая открытая смена.|
+|schedulingGroupId|String|ИД группы планирования, к которой принадлежит открытая смена.|
+|sharedOpenShift|[openShiftItem](openshiftitem.md)|Опубликованная открытая смена.|
 
 ## <a name="relationships"></a>Связи
 
@@ -51,8 +51,7 @@ ms.locfileid: "48003040"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShift",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.openShift"
 }-->
 
 ```json

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Воркбуккоммент
-description: Определение типа ресурса Воркбуккоммент
+title: Тип ресурса workbookComment
+description: Определение типа ресурса workbookComment
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b89f7b1ed2ca1ca833d8d5bae72d74a58b714997
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 24cce9a392f9d5b9cfcdfc35e0c87ade16d760d7
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015171"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158053"
 ---
-# <a name="workbookcomment-resource-type"></a>Тип ресурса Воркбуккоммент
+# <a name="workbookcomment-resource-type"></a>Тип ресурса workbookComment
 
 Пространство имен: microsoft.graph
 
@@ -22,8 +22,8 @@ ms.locfileid: "48015171"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Воркбуккомментс](../api/workbook-list-comments.md) | Коллекция [воркбуккоммент](workbookComment.md) | Получение коллекции объектов **воркбуккоммент** . |
-| [Получение Воркбуккоммент](../api/workbookcomment-get.md) | [воркбуккоммент](workbookcomment.md) | Чтение свойств и связей объекта **воркбуккоммент** . |
+| [Список workbookComments](../api/workbook-list-comments.md) | [коллекция workbookComment](workbookComment.md) | Получите **коллекцию объектов workbookComment.** |
+| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Чтение свойств и связей объекта **workbookComment.** |
 
 ## <a name="properties"></a>Свойства
 
@@ -33,11 +33,11 @@ ms.locfileid: "48015171"
 |contentType|String|Указывает тип комментария.|
 |id|String| Представляет идентификатор примечания. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|отвечать|Коллекция [воркбуккомментрепли](workbookcommentreply.md)| Только для чтения. Допускается значение null.|
+|replies|[Коллекция workbookCommentReply](workbookcommentreply.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -49,7 +49,6 @@ ms.locfileid: "48015171"
 
   ],
   "@odata.type": "microsoft.graph.workbookComment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

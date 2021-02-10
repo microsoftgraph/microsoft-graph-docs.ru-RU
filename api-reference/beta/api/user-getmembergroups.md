@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a3c6ae4419a09f14c5a1374250ad7d1208aebf4d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 76b5cb609ca5661e0d9592897723e1fccaa8a0e8
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970325"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177258"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -28,9 +28,9 @@ ms.locfileid: "48970325"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read, User.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
-| Для приложения                            | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All, Directory.ReadWrite.All            |
+| Для приложения                            | User.Read.All, Directory.Read.All, Directory.ReadWrite.All            |
 
 ## <a name="http-request"></a>HTTP-запрос
 

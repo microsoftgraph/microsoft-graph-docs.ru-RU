@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса ipRange
-description: Базовый класс диапазона IP-адресов для представления диапазонов IPV4-и IPV6-адресов.
+description: Базовый класс диапазона IP-адресов для представления диапазонов адресов IPV4 и IPV6.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 984a4cec88f8bea6e88be04dfe04807ab15f591d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43be17079a7b67b02cf0355fd3261d204e5fda0b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967466"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158991"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
 Пространство имен: microsoft.graph
 
-Базовый класс диапазона IP-адресов для представления диапазонов IPV4-и IPV6-адресов.
+Базовый класс диапазона IP-адресов для представления диапазонов адресов IPV4 и IPV6.
 
 ## <a name="properties"></a>Свойства
 
@@ -31,8 +31,7 @@ ms.locfileid: "47967466"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ipRange",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.ipRange"
 }-->
 
 ```json

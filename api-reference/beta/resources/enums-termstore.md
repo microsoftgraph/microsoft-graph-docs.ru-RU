@@ -1,37 +1,37 @@
 ---
-title: значения перечисления для банка терминов
-description: Значения перечисления банка терминов Microsoft Graph
+title: Значения termstore enum
+description: Значения из termstore в Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: Sharepoint
 author: mohitpcad
-ms.openlocfilehash: b64f262dec0f2384b36b522bfb2edae887498096
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b8724e0bccf806f99c8a3cbb28f1d1216381530
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989502"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176649"
 ---
-# <a name="microsoft-graph-termstore-enumeration-values"></a>Значения перечисления банка терминов Microsoft Graph
+# <a name="microsoft-graph-termstore-enumeration-values"></a>Значения из termstore в Microsoft Graph
 
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termstore
 
-### <a name="relationtype-values"></a>значения Релатионтипе
+### <a name="relationtype-values"></a>значения relationType
 
-Указывает, какие типы значений могут принимать связи в банке терминов
+Указывает типы значений, которые могут принимать отношения в termstore
 
-|Members|
+|Member|
 |:---|
-|крепления|
-|использованием|
+|pin|
+|повторное использование|
 
-### <a name="termgroupscope-values"></a>значения Термграупскопе
+### <a name="termgroupscope-values"></a>Значения termGroupScope
 
-Указывает значения, которые могут принимать различные типы групп в пределах банка терминов.
+Указывает значения, которые могут принимать различные типы групп в termstore
 
-|Members|
+|Member|
 |:---|
-|глобального|
+|global|
 |system|
 |siteCollection|
 

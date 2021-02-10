@@ -1,30 +1,30 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-title: Тип ресурса разрешения
-description: ресурс Permission, представляющий разрешение на совместный доступ, предоставленное для объекта driveItem
+title: Тип ресурса permission
+description: ресурс разрешений, представляющий разрешение на общий доступ, предоставленного для ресурса driveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 29b4c7aaccc62afa16057388758e1a62f05db41e
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: c372436fc4c4e65f583ca95d7a208e0fe9a5df14
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582354"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177230"
 ---
-# <a name="permission-resource-type"></a>Тип ресурса разрешения
+# <a name="permission-resource-type"></a>Тип ресурса permission
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **Permission** предоставляет сведения о разрешении на совместный доступ, предоставленном для ресурса [driveItem](driveitem.md) .
+Ресурс **разрешений** предоставляет сведения о разрешении общего доступа, предоставленного [ресурсу driveItem.](driveitem.md)
 
 Разрешения на совместный доступ могут иметь самые различные формы.
-Ресурс **Permission** представляет эти различные формы с помощью аспектов ресурса.
+Ресурс **разрешений** представляет эти различные формы с помощью аспектов ресурса.
 
->**Примечание:** Библиотеки документов OneDrive для бизнеса и SharePoint не возвращают свойство **inheritedFrom** .
+>**Примечание.** Библиотеки документов OneDrive для бизнеса и SharePoint не возвращают **свойство inheritedFrom.**
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -79,7 +79,7 @@ ms.locfileid: "48582354"
 
 ### <a name="roles-property-values"></a>Значения свойств роли
 
-| Роль              | Сведения                                                                        |
+| Значение              | Описание                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | read            | Дает возможность считывать метаданные и содержимое элемента.            |
 | write           | Дает возможность считывать и изменять метаданные и содержимое элемента. |
@@ -102,7 +102,7 @@ ms.locfileid: "48582354"
 
 Вот несколько примеров ссылок совместного доступа.
 
-### <a name="view-link"></a>Ссылка для просмотра
+### <a name="view-link"></a>Ссылка "Просмотр"
 
 Эта ссылка для просмотра предоставляет доступ только для чтения любому пользователю с ссылкой.
 
@@ -196,9 +196,9 @@ ms.locfileid: "48582354"
 }
 ```
 
-## <a name="sharing-invitations"></a>Приглашение на общий доступ
+## <a name="sharing-invitations"></a>Приглашения к совместному доступу
 
-Разрешения, отправляемые API [INVITE][] или [предоставления][] , могут содержать дополнительные сведения в [invitation][SharingInvitation] аспекта приглашения для адресов электронной почты, которые не совпадают с известной учетной записью. В таких случаях свойство **грантедто** может быть настроено до тех пор, пока не будет активирована ссылка приглашения, которая возникает при первом щелчке ссылки и входе в систему.
+Разрешения, отправленные [][] приглашением или [API][] предоставления, []могут иметь дополнительные сведения в аспекте[Invitation SharingInvitation] для адресов электронной почты, которые не соответствуют известной учетной записи. В таких случаях свойство **grantedTo** может быть не задано до тех пор, пока ссылка приглашения не будет активна, что происходит при первом нажатии ссылки пользователем и его подстрок.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -249,10 +249,10 @@ ms.locfileid: "48582354"
 | [Обновление](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [удаление](../api/permission-delete.md);                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Добавление пользователей в ссылку совместного доступа](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
-| [Отзыв разрешений](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
+| [Отозовет предоставление](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
-[обладают]: ../api/permission-grant.md
+[grant]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
 [invite]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md

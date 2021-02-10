@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Session
+title: Тип ресурса session
 description: Тип сеанса
 localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 76b8253bdf80c6368a8e16b06a757fc5a75287e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a61fca17c8b04e9f5c236d0104b2b93f1a6704e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069318"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153497"
 ---
-# <a name="session-resource-type"></a>Тип ресурса Session
+# <a name="session-resource-type"></a>Тип ресурса session
 
 Пространство имен: microsoft.graph.callRecords
 
-Представляет пользовательское взаимодействие с пользователем или собрание пользователя в случае вызова конференции.
+Представляет User-User или User-Meeting в случае конференц-связи.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление сеансов](../api/callrecords-session-list.md) | Коллекция [Microsoft. Graph. каллрекордс. Session](callrecords-session.md) | Получение списка сеансов, связанных с объектом [каллрекорд](callrecords-callrecord.md) .
+| [Перечисление сеансов](../api/callrecords-session-list.md) | [коллекция microsoft.graph.callRecords.session](callrecords-session.md) | Получить список сеансов, связанных с [объектом callRecord.](callrecords-callrecord.md)
  |
 
 ## <a name="properties"></a>Свойства
@@ -30,19 +30,19 @@ ms.locfileid: "48069318"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|string|Уникальный идентификатор сеанса. Только для чтения.|
-|объекта|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала сеанс.|
-|вызываемого абонента|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на сеанс.|
-|failureInfo|[Microsoft. Graph. Каллрекордс. Фаилуреинфо](callrecords-failureinfo.md)|Сведения о сбое, связанные с сеансом в случае сбоя сеанса.|
-|модальности|коллекция Microsoft. Graph. Каллрекордс. Modal|Список модальности, присутствующих в сеансе. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
-|startDateTime|DateTimeOffset|UTC Фиме, когда первый пользователь присоединился к сеансу. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|endDateTime|DateTimeOffset|Время в формате UTC, когда последний пользователь оставил сеанс. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала сеанс.|
+|вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, ответив на сеанс.|
+|failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Сведения о сбое, связанном с сеансом, если сеанс не был сбой.|
+|модальности|Коллекция microsoft.graph.callRecords.modality|Список модальных режимов, присутствующих в сеансе. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|startDateTime|DateTimeOffset|Время в UTC, когда первый пользователь присоединился к сеансу. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|endDateTime|DateTimeOffset|Время в UTC, когда последний пользователь покинул сеанс. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|segments|Коллекция [Microsoft. Graph. каллрекордс. segment](callrecords-segment.md)|Список сегментов, участвующих в сеансе. Только для чтения. Допускается значение null.|
+|segments|[Коллекция microsoft.graph.callRecords.segment](callrecords-segment.md)|Список сегментов, участвующих в сеансе. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -54,7 +54,6 @@ ms.locfileid: "48069318"
 
   ],
   "@odata.type": "microsoft.graph.callRecords.session",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

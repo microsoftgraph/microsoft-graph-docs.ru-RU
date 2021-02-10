@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2d2e44349f7896dfed0d0dff455e9afd0ac65772
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 1629b46b12d91fd96dca72577027f0031ab0102a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714279"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161791"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
@@ -52,7 +52,6 @@ ms.locfileid: "49714279"
 
   ],
   "@odata.type": "microsoft.graph.conversationMember",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

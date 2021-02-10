@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bdf8dc74f18490773e532795946053f626652847
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: c41c3c65231b379bc6bd12e297439c63eda1016d
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719568"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176271"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -18,7 +18,7 @@ ms.locfileid: "49719568"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [вызова](../resources/call.md) позволяет боту создать новый исходяющий одноранговой или групповой звонок или присоединиться к существующему собранию. Вам потребуется зарегистрировать [бота вызова](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и перейти к списку необходимых разрешений, как упоминалось ниже.
+Создание [вызова](../resources/call.md) позволяет боту создать новый исходяющий одноранговой или групповой звонок или присоединиться к существующему собранию. Вам потребуется зарегистрировать [вызываемого](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) бота и перейти к списку необходимых разрешений, как упоминалось ниже.
 
 > **Примечание.** В настоящее время поддерживаются только вызовы VoIP. 
 
@@ -30,7 +30,7 @@ ms.locfileid: "49719568"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Приложение                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. All, Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. All, Calls.InitiateGroupCalls.All |
 
 > **Примечание.** Для вызова с мультимедиа, на который работает приложение, необходимо разрешение Calls.AccessMedia.All в дополнение к одному из указанных разрешений.
 
@@ -267,7 +267,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2. Создание одноранговых вызовов VoIP с помощью мультимедиа, на который есть приложение
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2. Создание одноранговых вызовов VoIP с помощью мультимедиа с приложением
 
 > **Примечание.** В этом примере Calls.Iniплитки. Разрешения All и Calls.AccessMedia.All.
 
@@ -348,7 +348,7 @@ Content-Type: application/json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
 
->**Примечание.** Для одноранговых вызовов ожидаемые уведомления только об изменениях состояния вызова.
+>**Примечание.** Для одноранговых вызовов ожидаемые уведомления только об изменениях состояния вызовов.
 
 ##### <a name="response"></a>Отклик
 
@@ -490,7 +490,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Пример 4. Создание группового вызова с помощью мультимедиа, на который есть приложение
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Пример 4. Создание группового вызова с помощью мультимедиа, в которое было вмещаяся в приложении
 
 Это поддерживает до 5 пользователей VoIP. В примере показано, как создать групповой звонок с двумя пользователями VoIP.
 > **Примечание.** В этом примере вызова требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
@@ -558,8 +558,8 @@ Content-Type: application/json
 ```
 
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Пример 5. Присоединяйтесь к запланированному собранию с помощью мультимедиа, на который есть служба
-Чтобы присоединиться к запланированному собранию, нам потребуется получить ид потока, ид сообщения, ид организатора и ид клиента, в котором запланировано собрание.
-Эти сведения можно получить из [API get Online Meetings.](../api/onlinemeeting-get.md)
+Чтобы присоединиться к запланированному собранию, необходимо получить ид потока, ид сообщения, ид организатора и ид клиента, в котором запланировано собрание.
+Эти сведения можно получить из [API Get Online Meetings.](../api/onlinemeeting-get.md)
 
 Чтобы пример работал, необходимо заменить значения маркера авторизации, URL-адреса, ид приложения, имени приложения, имени пользователя и ид клиента, а также сведения, полученные из  [API Get Online Meetings,](../api/onlinemeeting-get.md) на фактические значения.
 > **Примечание.** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение.
@@ -1122,11 +1122,11 @@ Content-Type: application/json
 ```
 > **Примечание.** Приложение не будет получать список участников собрания, пока его не допустят из "lobby"
 
-### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Пример 9. Создание одноранговых вызовов STN с помощью мультимедиа, на которые есть служба
+### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Пример 9. Создание одноранговых вызовов PSTN с помощью мультимедиа, ведаемого службой
 
 > **Примечание.** Для этого вызова требуется Calls.Iniплитки. Все разрешения.
 
-Для этого вызова требуется экземпляр приложения с назначенным номером STN.
+Для этого вызова требуется экземпляр приложения с назначенным номером PSTN.
 
 #### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
 Используя учетные данные администратора клиента, вызовите следующие cmdlets в удаленной powerShell клиента, чтобы создать экземпляр приложения. Дополнительные сведения см. в командах [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
@@ -1148,7 +1148,6 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Примечание.** Если клиент имеет номера STN в Австралии, присвоенные экземплярам приложений, этот вызов может привести к сбойу. Если клиент создан только что, может потребоваться несколько дней, чтобы эта функция была доступна.
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговую связь между ботом и номером STN. В этом примере мультимедиа находится в службе. Чтобы пример работал, значения маркера авторизации, URL-адреса, ИД приложения, имени приложения, ИД пользователя, имени пользователя и ИД клиента необходимо заменить фактическими значениями.
@@ -1294,8 +1293,6 @@ Content-Type: application/json
 > **Примечание.** В этом примере Calls.Iniплитки. Разрешения All и Calls.AccessMedia.All.
 
 Для этого вызова требуется экземпляр приложения с назначенным номером STN, как описано в примере 9.
-
-> **Примечание.** Если клиент имеет номера STN в Австралии, присвоенные экземплярам приложений, этот вызов может не работать. Если клиент создан только что, может потребоваться несколько дней, чтобы эта функция была доступна.
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговую связь между ботом и номером STN. В этом примере мультимедиа локально находится в приложении. Замените значения маркера авторизации, URL-адреса вызова, ИД приложения, имени приложения, ИД пользователя, имени пользователя и ИД клиента, чтобы пример работал.

@@ -3,14 +3,14 @@ title: Восстановление удаленного элемента
 description: 'Восстановление недавно удаленного элемента из контейнера для удаленных элементов. '
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c00e117bd31960dfe1a0874c7cd5986f368b218b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e263d8693b277156d96dc6668945699466979fa0
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963298"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176556"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -20,7 +20,7 @@ ms.locfileid: "48963298"
 
 Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md). 
 
-В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) . Вы можете полностью восстановить случайно удаленный элемент.
+В настоящее время функции восстановления удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групп](../resources/group.md)и [ресурсов](../resources/user.md) пользователей. Вы можете полностью восстановить случайно удаленный элемент. Это не относится к группам безопасности, которые удаляются окончательно.
 
 Удаленный элемент можно восстановить в течение 30 дней. Через 30 дней элемент удаляется без возможности восстановления.
 
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | &lt;Необходим маркер носителя &gt; *Required*|
+| Авторизация  | Требуется маркер &lt; &gt; *носитела*|
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса

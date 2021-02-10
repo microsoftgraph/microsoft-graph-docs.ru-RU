@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1a297888d8b469944b5fdbebaa9948db0ba59c97
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 3936338aee39eb0c10a179e5d1970b3e18493214
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059667"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156331"
 ---
 # <a name="room-resource-type"></a>Тип ресурса room
 
@@ -34,7 +34,7 @@ ms.locfileid: "50059667"
 | address                | [physicalAddress](physicaladdress.md)             | Адрес улицы помещения. |
 | audioDeviceName        | String                                            | Указывает имя звукового устройства в комнате. |
 | bookingType            | [bookingType](#bookingtype-values)                | Тип комнаты. Возможные значения: `standard` и `reserved` . |
-| building               | String                                            | Указывает название здания или номер здания, в который находится помещение. |
+| building               | String                                            | Указывает имя здания или номер здания, в который находится помещение. |
 | capacity               | Int32                                             | Указывает емкость комнаты. |
 | displayName            | String                                            | Имя, связанное с комнатой. |
 | displayDeviceName      | String                                            | Указывает имя устройства отображения в комнате. |
@@ -43,11 +43,11 @@ ms.locfileid: "50059667"
 | floorNumber            | Int32                                             | Указывает номер этажа, на который находится комната. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Указывает расположение помещения в широте, долготе и при желании в координатах высоты. |
 | id                     | String                                            | Уникальный идентификатор комнаты. Только для чтения. |
-| isWheelChairAccessible | Boolean                                           | Указывает, доступна ли комната. |
+| isWheelChairAccessible | Логическое                                           | Указывает, доступна ли комната. |
 | label                  | String                                            | Указывает описательную метку для комнаты, например номер или имя. |
 | nickname               | String                                            | Указывает псевдоним для комнаты, например "conf room". |
 | phone                  | String                                            | Номер телефона комнаты. |
-| tags                   | Коллекция объектов string                                 | Указывает дополнительные функции комнаты, например такие сведения, как тип представления или тип ветвя. |
+| tags                   | Коллекция String                                 | Указывает дополнительные функции комнаты, например сведения о типе представления или типе ветвя. |
 | videoDeviceName        | String                                            | Указывает имя видео устройства в комнате. |
 
 ### <a name="bookingtype-values"></a>Значения bookingType
@@ -70,8 +70,7 @@ ms.locfileid: "50059667"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.room",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.room"
 }-->
 
 ```json

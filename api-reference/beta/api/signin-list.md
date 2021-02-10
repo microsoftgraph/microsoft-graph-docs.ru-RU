@@ -5,12 +5,12 @@ description: Получите список входов пользователе
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: d850fdf92f88c2c6cd3290dfe9479df8e09834be
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b0662b88d8f6cca9ea8d602ee67073883f8504ef
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132155"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177034"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -101,7 +101,7 @@ GET auditLogs/signIns
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [signIn](../resources/signin.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [signIn](../resources/signin.md) в тексте отклика. Коллекция объектов указана в порядке убывания на основе **createdDateTime.**
 
 ## <a name="examples"></a>Примеры
 

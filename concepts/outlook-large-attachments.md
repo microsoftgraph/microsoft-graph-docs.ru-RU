@@ -1,15 +1,15 @@
 ---
 title: Вложение крупных файлов в сообщения и события Outlook
 description: В зависимости от размера файла можно выбрать один из двух способов вложения файлов в сообщения или события.
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: c4779ff60b0fe0f5a2452a5991a04958c0a5fd9f
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 014fa749dfc7a06522b317cade0cbce81940e12d
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013459"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177244"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Вложение крупных файлов в сообщения и события Outlook
 
@@ -340,7 +340,7 @@ Content-Length: 0
 
 Тем не менее, получение большого вложенного файла в формате кодировки base64 влияет на производительность API. Если ожидается вложение большого размера:
 
-- Вместо получения вложенного содержимого в формате base64 можно [получить необработанные данные вложенного файла](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message).
+- Вместо получения вложенного содержимого в формате base64 можно [получить необработанные данные вложенного файла](/graph/api/attachment-get#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
 - Чтобы [получить метаданные вложенного файла](/graph/api/attachment-get#example-1-get-the-properties-of-a-file-attachment), добавьте параметр `$select`, включающий только нужные свойства метаданных, исключая свойство **contentBytes**, которое возвращает вложенный файл в формате base64.
 
 ### <a name="example-get-the-raw-file-attached-to-the-event"></a>Пример: получение необработанного файла, вложенного в событие

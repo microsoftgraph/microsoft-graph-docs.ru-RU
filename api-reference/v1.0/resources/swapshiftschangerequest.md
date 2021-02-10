@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Свапшифтсчанжерекуест
-description: Представляет тип запроса на смену для замены смены другим пользователем в команде.
+title: Тип ресурса swapShiftsChangeRequest
+description: Представляет тип запроса на смену для замены смены другому пользователю в команде.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3a18b3627aec777bf95ece65cd26a170d6f98ad7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f5d1bb7a520d5d7f64640725a846ef5bc76a0b2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056445"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154735"
 ---
-# <a name="swapshiftschangerequest-resource-type"></a>Тип ресурса Свапшифтсчанжерекуест
+# <a name="swapshiftschangerequest-resource-type"></a>Тип ресурса swapShiftsChangeRequest
 
 Пространство имен: microsoft.graph
 
-Представляет тип запроса на сдвиг для замены [смены](../resources/shift.md) другим пользователем в [команде](../resources/team.md).
+Представляет тип запроса на смену для замены смены [другому](../resources/shift.md) пользователю в [команде.](../resources/team.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/swapshiftschangerequest-list.md) | Коллекция [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Перечисление свойств и связей объектов **свапшифтсчанжерекуест** в команде. |
-| [создание](../api/swapshiftschangerequest-post.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Создайте экземпляр объекта **свапшифтсчанжерекуест** . |
-| [получение](../api/swapshiftschangerequest-get.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Чтение свойств и связей объекта **свапшифтсчанжерекуест** . |
-|[Утвердить](../api/swapshiftschangerequest-approve.md)|Нет|Утверждение **свапшифтсчанжерекуест**. |
-|[Отклоня](../api/swapshiftschangerequest-decline.md)|Нет|Отклонить **свапшифтсчанжерекуест**.|
+| [Список](../api/swapshiftschangerequest-list.md) | Коллекция [swapShiftsChangeRequest](swapshiftschangerequest.md) | Список свойств и связей объектов **swapShiftsChangeRequest** в команде. |
+| [Создание](../api/swapshiftschangerequest-post.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Создание экземпляра объекта **swapShiftsChangeRequest.** |
+| [Получение](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Чтение свойств и связей объекта **swapShiftsChangeRequest.** |
+|[Утвердить](../api/swapshiftschangerequest-approve.md)|Нет|Утверждение **swapShiftsChangeRequest.** |
+|[Отклонение](../api/swapshiftschangerequest-decline.md)|Нет|Отклонение **swapShiftsChangeRequest.**|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|реЦипиентшифтид|String|Шифтид для пользователя получателя, с которым отправляется запрос.|
+|recipientShiftId|String|ShiftId для пользователя получателя, с которым необходимо заменить запрос.|
 
 ## <a name="relationships"></a>Связи
 
@@ -47,8 +47,7 @@ ms.locfileid: "48056445"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 }-->
 
 ```json

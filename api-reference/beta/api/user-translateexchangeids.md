@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7817557e09bbfba9cf04e1e226c8a96a9616ddc6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4bdb22f649cc0fd30734b5762106c959c34e3cf6
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134913"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176978"
 ---
 # <a name="user-translateexchangeids"></a>user: translateExchangeIds
 
@@ -49,13 +49,13 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| inputIds | Коллекция объектов string | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции ДОЛЖНЫ иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
+| inputIds | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции ДОЛЖНЫ иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
 | sourceIdType | exchangeIdFormat | Тип идентификаторов в `InputIds` параметре. |
 | targetIdType | exchangeIdFormat | Запрашиваемого типа ID для преобразования. |
 
 ### <a name="exchangeidformat-values"></a>Значения exchangeIdFormat
 
-| Значения | Описание |
+| Member | Описание |
 |:-------|:------------|
 | entryId | Формат двоичных записей, используемый клиентами MAPI. |
 | ewsId | Формат ИД, используемый клиентами веб-служб Exchange. |

@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса Воркфорцеинтегратион
-description: Экземпляр интеграции сотрудников с сменами.
+title: Тип ресурса workforceIntegration
+description: Экземпляр интеграции сотрудников со сменами.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 715c78e8cb412f11b7b336680e3c433369c9e608
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 637e18d2751ee528331771f11f41fc893770ad09
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015101"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158935"
 ---
-# <a name="workforceintegration-resource-type"></a>Тип ресурса Воркфорцеинтегратион
+# <a name="workforceintegration-resource-type"></a>Тип ресурса workforceIntegration
 
 Пространство имен: microsoft.graph
 
-Экземпляр интеграции сотрудников с сменами.
+Экземпляр интеграции сотрудников со сменами.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание](../api/workforceintegration-post.md) | [воркфорцеинтегратион](workforceintegration.md) | Создание нового объекта **воркфорцеинтегратион** .|
-| [List](../api/workforceintegration-list.md) | Коллекция [воркфорцеинтегратион](workforceintegration.md) | Получение списка объектов **воркфорцеинтегратион** , связанных с этим расписанием.|
-| [получение](../api/workforceintegration-get.md); | [воркфорцеинтегратион](workforceintegration.md) | Чтение свойств и связей объекта **воркфорцеинтегратион** . |
-| [обновление](../api/workforceintegration-update.md). | [воркфорцеинтегратион](workforceintegration.md) | Обновление объекта **воркфорцеинтегратион** . |
-| [удаление](../api/workforceintegration-delete.md); | Нет | Удаление объекта **воркфорцеинтегратион** . |
+| [Создание](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Создание объекта **workforceIntegration.**|
+| [Список](../api/workforceintegration-list.md) | [коллекция workforceIntegration](workforceintegration.md) | Получите список объектов **workforceIntegration,** связанных с этим расписанием.|
+| [Получение](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Чтение свойств и связей объекта **workforceIntegration.** |
+| [Обновление](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Обновление объекта **workforceIntegration.** |
+| [удаление](../api/workforceintegration-delete.md); | Нет | Удаление объекта **workforceIntegration.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции трудовых ресурсов.|
-|шифрования|[воркфорцеинтегратионенкриптион](workforceintegrationencryption.md)|Ресурс для шифрования взаимодействия сотрудников.|
-|isActive|Boolean|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
-|суппортедентитиес|string| Сущности сдвигов, поддерживаемые для синхронных уведомлений об изменении. Смены потребуют обратного вызова на URL-адрес, указанный в изменениях клиентов для этих сущностей, добавленных здесь. По умолчанию для уведомлений об изменениях не поддерживаются никакие сущности. Возможные значения: `none` , `shift` ,, `swapRequest` , `openshift` `openShiftRequest` , `userShiftPreferences`|
-|url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены.|
+|apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
+|displayName|String|Имя интеграции сотрудников.|
+|шифрование|[workforceIntegrationEncryption](workforceintegrationencryption.md)|Ресурс шифрования интеграции сотрудников.|
+|isActive|Логическое|Указывает, активна ли в настоящее время интеграция с сотрудниками.|
+|supportedEntities|string| Объекты Shifts, поддерживаемые для синхронных уведомлений об изменениях. Смены будут возвращать URL-адрес, предоставленный при изменениях клиентов для добавленных здесь сущностями. По умолчанию уведомления об изменениях не поддерживаются никакими сущностями. Возможные значения: `none` , , , `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences`|
+|url|String| URL-адрес интеграции сотрудников для переключеных вызовов из службы Shifts.|
 
 ## <a name="relationships"></a>Связи
 
@@ -52,8 +52,7 @@ ms.locfileid: "48015101"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workforceIntegration",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.workforceIntegration"
 }-->
 
 ```json

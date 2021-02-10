@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c814b44b73fcd7f3f6b6ec48b524218185ca49b3
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: fd261e0d94a23e32c661bf7bf70e3fd16935928c
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720009"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177223"
 ---
 # <a name="participant-invite"></a>participant: invite
 
@@ -31,7 +31,7 @@ ms.locfileid: "49720009"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Calls.InitiateGroupCalls.All                               |
+| Для приложений     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -254,7 +254,7 @@ Content-Type: application/json
 
 ### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Пример 2. Приглашение нескольких участников к существующему групповому вызову
 
-> **Примечание.** Существующий групповой вызов должен иметь допустимый [chatInfo.](../resources/chatInfo.md) Приглашение до 5 участников поддерживается.
+> **Примечание.** Существующий групповой звонок должен иметь допустимый [chatInfo.](../resources/chatInfo.md) Поддерживается приглашение до 5 участников.
 
 #### <a name="request"></a>Запрос
 
@@ -511,7 +511,7 @@ API приглашений поддерживает только одного у
 
 
 > **Примечание.** API приглашений поддерживает только одного участника, `replacesCallId` если он предоставлен. 
-> Дополнительные сведения об использовании для замены существующего однорангового вызова см. в `replacesCallId` приглашенииParticipantInfo. [](../resources/invitationparticipantinfo.md)
+> Дополнительные сведения об использовании замены существующего однорангового вызова см. в `replacesCallId` приглашенииParticipantInfo. [](../resources/invitationparticipantinfo.md)
 
 #### <a name="request"></a>Запрос
 
@@ -701,9 +701,9 @@ Content-Type: application/json
 
 >**Примечание.** С состоянием "завершено" можно ожидать получения уведомлений о том, как ваш исходный одноранговой звонок был завершен и удален.
 
-### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника PSTN к существующему групповому вызову
+### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника STN к существующему групповому вызову
 
-Для этого вызова требуется экземпляр приложения с назначенным номером STN.
+Для этого вызова требуется экземпляр приложения с назначенным номером PSTN.
 
 #### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
 Используя учетные данные администратора клиента, вызовите следующие cmdlets в удаленной powerShell клиента, чтобы создать экземпляр приложения. Дополнительные сведения см. в командах [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
@@ -725,7 +725,6 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Примечание.** Если клиент имеет номера STN в Австралии, присвоенные экземплярам приложений, этот вызов может привести к сбойу. Если клиент создан только что, может потребоваться несколько дней, чтобы эта функция была доступна.
 
 #### <a name="request"></a>Запрос
 

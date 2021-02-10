@@ -6,12 +6,12 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 51a6f8653becc78d8bd95f3bc5a18d9ac342bda8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 261ed729bc865b6679bf6dc9d08060148f32006a
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998035"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176411"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
 
@@ -42,9 +42,9 @@ ms.locfileid: "47998035"
 | **displayAs**              | string  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
 | **chooseFromType**         | string  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
 
-## <a name="displayas-values"></a>Значения DisplayAs
+## <a name="displayas-values"></a>Значения displayAs
 
-| Значение DisplayAs               | Описание                                                                                                 |
+| Значение               | Описание                                                                                                 |
 |:------------------------------|:------------------------------------------------------------------------------------------------------------|
 | **account**                   | Необработанная закодированная строка утверждения SharePoint для человека или группы (например, `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | Отдел человека или группы.                                                                           |

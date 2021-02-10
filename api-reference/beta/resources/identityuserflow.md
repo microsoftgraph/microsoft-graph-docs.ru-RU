@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4b4842b506e3c3c3e675ec2a47837fbf0c2e10be
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: fa6829d346fc1e2520fb5eab28f5ce5fd9c72ae4
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158291"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176971"
 ---
 # <a name="userflow-resource-type"></a>Тип ресурса UserFlow
 
@@ -18,7 +18,7 @@ ms.locfileid: "50158291"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Потоки пользователей позволяют определять предварительно определенные настраиваемые политики для входов, регистрации, объединенной регистрации и входов, сброса паролей и обновления профиля.
+Потоки пользователей позволяют определять предварительно определенные настраиваемые политики для регистрации, регистрации, объединенной регистрации и входов, сброса пароля и обновления профиля.
 
 ## <a name="methods"></a>Методы
 
@@ -33,7 +33,7 @@ ms.locfileid: "50158291"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Только для чтения.|
+|id|String| Идентификатор пользовательского потока. Префикс B2C_1_ **добавляется** к заранее заранее предоставляемого значения.|
 |userFlowType|string| Возможные значения: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
 |userFlowTypeVersion|Одинарное| Это версия типа пользовательского потока. Каждый тип пользовательского потока может иметь различные возможные версии, например 1, 1.1 или 2.  |
 
