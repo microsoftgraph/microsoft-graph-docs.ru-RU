@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Обновление файла или папки
 localization_priority: Priority
 ms.prod: sharepoint
 description: Обновление метаданных ресурса DriveItem по идентификатору или пути.
 doc_type: apiPageType
-ms.openlocfilehash: 799a643170a89336fe24d3e7bc4922e6bd007ff4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01456ff44b20641b13b2718c20e87ae601ef764f
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063794"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240194"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 

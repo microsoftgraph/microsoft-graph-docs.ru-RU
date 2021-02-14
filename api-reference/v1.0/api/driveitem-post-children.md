@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание папки
 localization_priority: Priority
 ms.prod: sharepoint
 description: Создание папки или ресурса DriveItem в объекте Drive с указанным родительским элементом или по указанному пути.
 doc_type: apiPageType
-ms.openlocfilehash: d57162189315d760d523e3ae3504fbd9660a5bd9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8beb1d210b40258b63d54e7af0fac3ff29b8e8e7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073287"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240236"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
 

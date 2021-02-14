@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Преобразование в другие форматы
 localization_priority: Priority
 ms.prod: sharepoint
 description: С помощью этого API вы можете получить содержимое элемента в определенном формате.
 doc_type: apiPageType
-ms.openlocfilehash: ca39ea1bb0707093b782a7068f965cb7716eb381
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 722b90ddec082e6b415d532e81d67bfe415d68e6
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009802"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240320"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 

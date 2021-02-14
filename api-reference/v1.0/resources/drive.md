@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: c389d801f8aea070dd310e1d826c9139298578cd
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 81589377d30b0e1e2c494ade1ba9b48d7803495e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082288"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239025"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса Drive
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Скачивание файла
 localization_priority: Priority
 ms.prod: sharepoint
 description: Скачивание содержимого основного потока (файла) ресурса DriveItem. Можно скачать только те ресурсы driveItem, у которых есть свойство file.
 doc_type: apiPageType
-ms.openlocfilehash: 7ae054544645b07cf2d1fa112e346e907523706e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 212f11a6d76853e3ab3a7f0e23fd4812b260b496
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042172"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240313"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
 
