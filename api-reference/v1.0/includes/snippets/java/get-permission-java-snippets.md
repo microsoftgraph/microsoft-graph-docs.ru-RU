@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4709f81c0d9d1216298d465ff2370876bc9567eb
+ms.openlocfilehash: a130ae28fe564ebce5c37417ac9dee0c9ba2fd3f
 ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179040"
+ms.locfileid: "50176883"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.education().classes("{class-id}").teachers("{teacher-id}")
+Permission permission = graphClient.sites("{sitesId}").permissions("{permissionId}")
     .buildRequest()
-    .delete();
+    .get();
 
 ```

@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 415eebc06fdcade6596b07a8a636d99ae4a326e3
+ms.openlocfilehash: 5efe02a18b6441db1738836fcca5833a19c25219
 ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179140"
+ms.locfileid: "50176841"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupLifecyclePolicy = await graphClient.GroupLifecyclePolicies["{id}"]
+var permissions = await graphClient.Sites["{sitesId}"].Permissions
     .Request()
     .GetAsync();
 

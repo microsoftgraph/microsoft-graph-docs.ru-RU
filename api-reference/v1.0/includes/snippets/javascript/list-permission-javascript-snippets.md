@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 704cce82a1bfdcb96181b64bbb081aa719cabbea
+ms.openlocfilehash: bbed28be705bb478c3349ab834e907d0aed5e762
 ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179032"
+ms.locfileid: "50176836"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groupLifecyclePolicies/{id}')
+let res = await client.api('/sites/{sitesId}/permissions')
     .get();
 
 ```
