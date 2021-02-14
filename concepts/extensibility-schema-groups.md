@@ -4,12 +4,12 @@ description: 'В этой статье рассматривается приме
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f26f58343acb417daedf22563132a67f5c3dc8a3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 86295c9ebebb763effa1cb19aa1a2388163f295b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289171"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240362"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Добавление пользовательских данных в группы с помощью расширений схемы 
 
@@ -70,7 +70,7 @@ Content-length: 420
 
 Затем укажите описание (необходимо для поиска), целевые типы (ресурсы, к которым применимо это расширение) и настраиваемые свойства, из которых состоит схема.  В этом примере укажите настраиваемые свойства `courseId`, `courseName` и `courseType`, а также их типы.
 
-См. [пример другого способа назначения **id** в запросе](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0#request-2), где требуется указать только имя схемы.
+См. [пример другого способа назначения **id** в запросе](/graph/api/schemaextension-post-schemaextensions#request-2), где требуется указать только имя схемы.
 
 Обратите внимание, что при первоначальном создании расширение схемы имеет состояние **InDevelopment**. Во время разработки расширения такое состояние можно сохранять. Пока оно не изменится, только ваше приложение, создавшее расширение, сможет его обновлять, внося дополнительные изменения, или удалять. Когда вы будете готовы предоставить доступ к расширению другим приложениям, установите для параметра **status** значение **Available**.
 
@@ -242,10 +242,10 @@ Content-length: 326
 - [Добавление пользовательских данных в ресурсы с помощью расширений](extensibility-overview.md)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](extensibility-open-users.md).
 - [Домены Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Добавление и проверка домена для НОВОГО плана Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-- [Тип ресурса schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0)
-- [Перечисление schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)
-- [Создание schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
-- [Получение schemaExtension](/graph/api/schemaextension-get?view=graph-rest-1.0)
-- [Обновление schemaExtension](/graph/api/schemaextension-update?view=graph-rest-1.0)
-- [Удаление schemaExtension](/graph/api/schemaextension-delete?view=graph-rest-1.0)
+- [Добавление и проверка домена для Microsoft 365](/microsoft-365/admin/setup/add-domain)
+- [Тип ресурса schemaExtension](/graph/api/resources/schemaextension)
+- [Перечисление schemaExtensions](/graph/api/schemaextension-list)
+- [Создание schemaExtension](/graph/api/schemaextension-post-schemaextensions)
+- [Получение schemaExtension](/graph/api/schemaextension-get)
+- [Обновление schemaExtension](/graph/api/schemaextension-update)
+- [Удаление schemaExtension](/graph/api/schemaextension-delete)
