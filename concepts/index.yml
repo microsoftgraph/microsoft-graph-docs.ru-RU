@@ -7,16 +7,15 @@ metadata:
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.author: celested
   ms.date: 02/28/2020
   featureFlags:
   - clicktale
-  ms.openlocfilehash: 5683fcb0ab57d1541a53a547c815341ca8fcfb71
-  ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+  ms.openlocfilehash: a015eb68954a7c08c4cbe618cb0af4943734cfb5
+  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/26/2020
-  ms.locfileid: "48289122"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "50239914"
 highlightedContent:
   items:
   - title: Обзор Microsoft Graph
@@ -52,7 +51,7 @@ conceptualContent:
       text: Примеры использования
     - url: ./tutorials.yml
       itemType: tutorial
-      text: Учебники
+      text: Руководства
   - title: Узнать
     links:
     - url: ./azuread-users-concept-overview.md
@@ -72,7 +71,7 @@ conceptualContent:
       text: Почта
     - url: ./azuread-identity-access-management-concept-overview.md
       itemType: overview
-      text: Удостоверение и доступ
+      text: Удостоверения и доступ
   - title: Разработка
     links:
     - url: ./auth/auth-concepts.md
@@ -101,14 +100,14 @@ additionalContent:
       summary: Сведения об известных проблемах, связанных с Microsoft Graph
       url: ./known-issues.md
     - title: Поддержка
-      summary: Задайте вопрос или поделитесь своим мнением об интерфейсах API или документах.
+      summary: Задайте вопрос или делайте отзыв о наших API или документы.
       url: https://developer.microsoft.com/graph/support
     - title: Блог Microsoft Graph
       summary: Читайте блог, чтобы узнавать последние новости о новых API, критических изменениях и многом другом.
       url: https://developer.microsoft.com/graph/blogs/
-    - title: Ежемесячные вызовы сообщества
-      summary: Присоединитесь к месячным вызовам или перехватить их в предыдущих записях.
+    - title: Ежемесячные звонки сообщества
+      summary: Присоединяйтесь к ежемесячным звонкам или перезаписывает предыдущие записи.
       url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
-    - title: Видеоролики и подкасты
-      summary: Ознакомьтесь с серией видеороликов и подкастами, чтобы узнать больше о API Microsoft Graph.
+    - title: Видео и подкасты
+      summary: Ознакомьтесь с нашими сериями видео и подкастами, чтобы узнать больше об API Microsoft Graph.
       url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
