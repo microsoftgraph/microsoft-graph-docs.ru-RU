@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Изменение разрешений общего доступа
 localization_priority: Normal
 description: В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a282219ec10ff1201618815ad5425e9f6fb786c3
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 1c3b8c4fdd9b0306aef909525c87facde6bdc6de
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790757"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240388"
 ---
 # <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
@@ -61,8 +60,8 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Тип разрешения        | Свойство | Тип              | Описание                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| User                   | roles    | Набор строк | Массив типов разрешений. |
-| Ссылка для анонимного общего доступа | expirationDateTime | DateTimeOffset | Формат y-MM-ddTHH:mm:ssZ dateTimeOffset в течение срока действия разрешения. |
+| Пользователь                   | roles    | Набор строк | Массив типов разрешений. |
+| Анонимная ссылка для общего доступа | expirationDateTime | DateTimeOffset | Формат yyyy-MM-ddTHH:mm:ssZ dateTimeOffset в течение срока действия разрешения. |
 
 ### <a name="remarks"></a>Примечания
 Неподтверченные изменения разрешений включают следующие:

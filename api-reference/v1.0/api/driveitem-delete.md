@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Удаление файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 description: Удаление ресурса DriveItem по идентификатору или пути.
 doc_type: apiPageType
-ms.openlocfilehash: 3ea6f5d45420c5ec0ee8ce49f39bf112b288422b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b0cde1fcfc4fda989c8260c3b35ab8be73e0846
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009865"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238549"
 ---
 # <a name="delete-a-driveitem"></a>Удаление ресурса DriveItem
 
@@ -88,7 +87,7 @@ DELETE /me/drive/items/{item-id}
 HTTP/1.1 204 No Content
 ```
 
-### <a name="error-responses"></a>Ответы с ошибками
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
 description: Ресурс FolderView предоставляет или задает рекомендации для пользовательского интерфейса папки.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 749b66b50545b6bc7de66647c47153227cb54fa7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2af23d76083b14bf26afe2cfd9a67388870d1f8a
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018279"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240026"
 ---
 # <a name="folderview-resource-type"></a>Тип ресурса FolderView
 

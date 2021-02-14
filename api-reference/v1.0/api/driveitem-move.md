@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Перемещение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 description: Чтобы переместить ресурс DriveItem в новый родительский элемент, веб-приложению требуется обновить элемент parentReference из DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: f2794a6ba876c13ac876d8876c3bd684e6955120
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf09789b370df585c9245376524f209cfb9e1bbf
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073285"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240250"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Перемещение ресурса DriveItem в новую папку
 
@@ -123,7 +122,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Ответы с ошибками
+## <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 

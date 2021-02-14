@@ -1,27 +1,26 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Тип ресурса restoreAction
 description: Объект RestoreAction предоставляет сведения о действии, которое восстанавливает элемент.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 95a8073a4191c0ecc696da03198f1376c647a36b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51fe7daa69bd70b6e3f1a554131844b69d451d10
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967221"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239781"
 ---
 # <a name="restoreaction-resource-type"></a>Тип ресурса restoreAction
 
 Пространство имен: microsoft.graph
 
-Присутствие ресурса **restoreAction** в [**itemActivity**][activity] указывает на то, что действие восстановило элемент.
+Наличие ресурса **restoreAction** в [**itemActivity**][activity] указывает, что действие восстановило элемент.
 
-**Примечание**: этот ресурс в настоящее время пуст. В будущем оно может быть заполнено дополнительными свойствами.
+**Примечание.** В настоящее время этот ресурс пуст. В будущем он может быть заполнен дополнительными свойствами.
 
->**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 

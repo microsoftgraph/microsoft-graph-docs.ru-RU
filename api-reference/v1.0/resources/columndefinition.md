@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 description: Ниже показано представление ресурса ColumnDefinition в формате JSON.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aae4b71055c7a6574cc4abbaa506fad8961991d9
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 83f278123a8153629593c54604ce1285a48439a7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581228"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239247"
 ---
 # <a name="columndefinition-resource"></a>Ресурс ColumnDefinition
 
@@ -85,14 +84,14 @@ ms.locfileid: "48581228"
 | **currency**      | [currencyColumn][]      | В этом столбце хранятся денежные значения.
 | **dateTime**      | [dateTimeColumn][]      | В этом столбце хранятся значения даты и времени.
 | **defaultValue**  | [defaultColumnValue][]  | Значение по умолчанию для этого столбца.
-| **географическое положение**   | [жеолокатионколумн][]   | В этом столбце хранится географическое положение.
+| **geolocation**   | [geolocationColumn][]   | В этом столбце хранится географическое местонахождение.
 | **lookup**        | [lookupColumn][]        | Данные в этом столбце берутся из другого источника на сайте.
 | **number**        | [numberColumn][]        | В этом столбце хранятся числовые значения.
 | **personOrGroup** | [personOrGroupColumn][] | В этом столбце хранятся значения людей или групп.
 | **text**          | [textColumn][]          | В этом столбце хранятся текстовые значения.
 
 Примечание. Эти свойства соответствуют перечислению [SPFieldType][] в SharePoint.
-Хотя наиболее распространенные типы полей представлены выше, этот API все еще не содержит.
+Хотя наиболее распространенные типы полей представлены выше, некоторые из них в этом API по-прежнему отсутствуют.
 При использовании этих типов не заполняются никакие аспекты типа столбца, а сам столбец обладает только основными свойствами.
 
 ## <a name="remarks"></a>Примечания
@@ -107,7 +106,7 @@ ms.locfileid: "48581228"
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
-[жеолокатионколумн]: geolocationcolumn.md
+[geolocationColumn]: geolocationcolumn.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md

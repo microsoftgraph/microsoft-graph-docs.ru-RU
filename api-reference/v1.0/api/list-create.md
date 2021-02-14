@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Создание списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 description: Создание списка на сайте.
 doc_type: apiPageType
-ms.openlocfilehash: 96ab4b1f80ea85a6c17c7ad1d22214dac4bf687e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fab24561aa8e0202b5033c9f7b31ed46ba05ea05
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038468"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238822"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -26,8 +25,8 @@ ms.locfileid: "48038468"
 
 |            Тип разрешения             | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Sites.ReadWrite.All                         |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +37,7 @@ ms.locfileid: "48038468"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.
 

@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Тип ресурса renameAction
-description: Объект renameAction предоставляет сведения о действии, которое переименовало элемент.
+description: Объект renameAction предоставляет сведения о действии, которое переименовывает элемент.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 693c5d8586a7ceef2c30f1e6dae17ac47d8e2d1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35e0aa9929b8e152265a5540625f5981a587edb7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967319"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238654"
 ---
 # <a name="renameaction-resource-type"></a>Тип ресурса renameAction
 
 Пространство имен: microsoft.graph
 
-Присутствие ресурса **renameAction** в [**itemActivity**][activity] указывает, что действие переименовало элемент.
+Наличие ресурса **renameAction** в [**itemActivity**][activity] означает, что действие переименовывает элемент.
 
->**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
@@ -28,7 +27,7 @@ ms.locfileid: "47967319"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | oldName       | string | Предыдущее имя элемента.
-| Новое       | string | Новое имя элемента.
+| newName       | string | Новое имя элемента.
 
 ## <a name="json-representation"></a>Представление JSON
 

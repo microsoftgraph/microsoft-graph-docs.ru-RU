@@ -1,25 +1,24 @@
 ---
 author: learafa
-ms.author: learafa
-description: Отменяйте подписку на элемент, на который подписан пользователь.
-title: Отписаться от элемента Drive
+description: Ото всех элементов, на которые следует пользователь.
+title: Unfollow drive item
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 057ba8e3d75b9e78af19008060426ad695ca5543
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 5e73fdee9d1b6c6bc9329ec5cd6597a3f2d504c5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904211"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240189"
 ---
-# <a name="unfollow-drive-item"></a>Отписаться от элемента Drive
+# <a name="unfollow-drive-item"></a>Unfollow drive item
 
 Пространство имен: microsoft.graph
 
-Отменяйте подписку на [driveItem](../resources/driveitem.md).
+Unfollow a [driveItem](../resources/driveitem.md).
 
->**Примечание:** Чтобы подписаться на элемент, обратитесь к разделу [Отслеживание элемента](driveitem-follow.md).
+>**Примечание.** Чтобы следовать за элементом, см. [статью "Следовать элементу".](driveitem-follow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,12 +47,12 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении вызова API возвращается отклик `204 No Content`. Метод не возвращает данные в теле отклика.
+При успешном выполнении вызова API возвращается отклик `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-В этом примере отменяется отслеживание элемента, указанного в параметре `{item-id}` .
+В этом примере отозначяется элемент, идентифицированный `{item-id}` по .
 
 
 # <a name="http"></a>[HTTP](#tab/http)

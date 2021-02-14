@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: baseItem
 localization_priority: Normal
-description: Ресурс baseItem — это абстрактный ресурс, который содержит общий набор свойств, которые являются общими для нескольких других типов ресурсов.
+description: Ресурс baseItem — это абстрактный ресурс, содержащий общий набор свойств, общий для нескольких других типов ресурсов.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6c247891afed001977174f3de232a8b2385e0841
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 717426f29b8c466af5799871fcc12cf4cd8bdf65
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075086"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239095"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
@@ -60,7 +59,7 @@ ms.locfileid: "48075086"
 | id                   | string            | Уникальный идентификатор диска. Только для чтения.                                         |
 | createdBy            | [identitySet][]   | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.        |
 | createdDateTime      | dateTimeOffset    | Дата и время создания элемента. Только для чтения.                                             |
-| description          | Строка            | Предоставляет видимое пользователю описание элемента. Необязательное.                             |
+| description          | String            | Предоставляет видимое пользователю описание элемента. Необязательный параметр.                             |
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения. |
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |

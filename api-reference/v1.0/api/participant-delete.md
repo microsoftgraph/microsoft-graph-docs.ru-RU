@@ -3,20 +3,19 @@ title: Удаление участника
 description: Удаление определенного участника в вызове.
 manager: zhengni
 author: jackry6350
-ms.author: yoren
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6abe3de1e077a2f147a6b70deff62da8d14fdcc2
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 40171c4cea7fe97fb20dc7ef3bfb7e27ff287bf3
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222862"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240390"
 ---
 # <a name="delete-participant"></a>Удаление участника
 
-Удаление определенного участника в вызове. В некоторых ситуациях приложение может удалить участника из активного вызова. Это действие можно выполнить после того, как участник ответит на вызов. После удаления активного вызывающего абонента он сразу же удаляется из вызова без уведомления о допуске или после удаления.
+Удаление определенного участника в вызове. В некоторых ситуациях приложение может удалить участника из активного вызова. Это действие можно сделать после того, как участник ответит на вызов. При удалении активного вызываемого, он немедленно удаляется из звонка без предварительного или после удаления уведомления.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,9 +24,9 @@ ms.locfileid: "48222862"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Нет                                        |
+| Для приложений                            | Нет                                        |
 
-Настройка собраний для приложения на уровне клиента необходима для того, чтобы приложение мог вызывать этот API. Администратор клиента должен вызвать следующий командлет в удаленной оболочке PowerShell клиента, чтобы предоставить приложению разрешение на вызов этого API. Дополнительные сведения см. в статье [Set – ксаппликатионмитингконфигуратион](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
+Чтобы разрешить приложению вызывать этот API, необходима конфигурация собрания на уровне клиента. Администратор клиента должен вызвать следующий cmdlet в удаленной powerShell клиента, чтобы предоставить приложению разрешение на вызов этого API. Дополнительные сведения [см. в подстроке Set-CsApplicationMeetingConfiguration.](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```

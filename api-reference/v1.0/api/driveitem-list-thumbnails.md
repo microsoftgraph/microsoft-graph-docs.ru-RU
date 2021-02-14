@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Получение эскизов файла или папки
+title: Извлечение эскизов файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 description: Получение коллекции ресурсов ThumbnailSet для ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 12a461764e48e0b17f2842bf6e725ed26edfa7f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69095159ca155be1dff624f92b5f2a26d323b44a
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089240"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240299"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -58,8 +57,8 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.
 
-Кроме того, этот метод поддерживает получение эскиза с исходным значением EXIF и без примененного вращения путем добавления `originalOrientation=true` параметра запроса.
-В настоящее время поддерживается только в OneDrive персональный.
+Кроме того, этот метод поддерживает искомый эскиз с исходным значением EXIF ориентации и без примененного поворота путем добавления `originalOrientation=true` параметра запроса.
+В настоящее время этот параметр поддерживается только в OneDrive персональный.
 
 ## <a name="response"></a>Отклик
 

@@ -1,18 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: contentTypeInfo
 localization_priority: Normal
 description: Ресурс contentTypeInfo указывает тип контента элемента в SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7ad6cfebb54c2fbf9628847a7617f72704af14c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 910a28df8199bb5b363d6ec4379b191ce2516c84
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056949"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238542"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Тип ресурса contentTypeInfo
 

@@ -1,18 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/13/2017
 title: contentTypeOrder
 localization_priority: Normal
 description: Ресурс contentTypeOrder указывает, в каком порядке тип контента будет отображаться в пользовательском интерфейсе выбора.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2015b0def71ece538fddafde407e8bf044375b4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e25025e86c03d7c94ed88a94ad390a56db4a44b0
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056942"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238507"
 ---
 # <a name="contenttypeorder-resource-type"></a>Тип ресурса contentTypeOrder
 

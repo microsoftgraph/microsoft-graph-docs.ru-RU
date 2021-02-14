@@ -1,27 +1,26 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Тип ресурса editAction
-description: Объект EditAction предоставляет сведения о действии, которое редактировало элемент.
+description: Объект EditAction предоставляет сведения о действии, отредактируемом элементом.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2e2a597821e97457ace6c1caa5582eef26599506
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ac5c4b463bcb4c1276cc9eabf148b07b8c08be5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032714"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239011"
 ---
 # <a name="editaction-resource-type"></a>Тип ресурса editAction
 
 Пространство имен: microsoft.graph
 
-Присутствие ресурса **editAction** в [**itemActivity**][activity] указывает на то, что действие редактировало элемент.
+Наличие ресурса **editAction** в [**itemActivity**][activity] указывает, что действие отредактирует элемент.
 
-**Примечание**: этот ресурс в настоящее время пуст. В будущем оно может быть заполнено дополнительными свойствами.
+**Примечание.** В настоящее время этот ресурс пуст. В будущем он может быть заполнен дополнительными свойствами.
 
->**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 

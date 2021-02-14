@@ -1,28 +1,27 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Тип ресурса itemActivity
-description: Объект itemActivity предоставляет сведения о действиях, которые были выполнены над элементом.
+description: Объект itemActivity предоставляет сведения о действии, которое произошло с элементом.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae71056fccebcb372891124b01999004b1957c2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef213dd50e5a6be8a96880ccd1a64f15f183f54b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009333"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238689"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса itemActivity
 
 Пространство имен: microsoft.graph
 
-Ресурс **itemActivity** предоставляет сведения о действиях, выполняемых над элементом или в контейнере.
+Ресурс **itemActivity** предоставляет сведения о действиях, которые произошли в элементе или контейнере.
 В настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 
-Действия, выполняемые в itemActivity, подробно описаны в свойстве [itemActionSet][] .
+Действия, которые произошли в объекте itemActivity, подробно описаны в [свойстве itemActionSet.][]
 
->**Note:** **itemActivity** в настоящее время доступно только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** **ItemActivity** в настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 
 [itemActionSet]: itemactionset.md#properties
 
@@ -31,11 +30,11 @@ ms.locfileid: "48009333"
 | Свойство | Тип                    | Описание
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | Уникальный идентификатор действия. Только для чтения.
-| обращения   | [акцессактион][]        | Доступ к элементу.
+| access   | [accessAction][]        | Был доступ к элементу.
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
 | activityDateTime    | DateTimeOffset | Сведения о том, когда было выполнено действие. Только для чтения.
 
-[акцессактион]: accessaction.md
+[accessAction]: accessaction.md
 [identitySet]: identityset.md
 
 ## <a name="relationships"></a>Связи

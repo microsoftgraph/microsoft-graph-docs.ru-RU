@@ -1,27 +1,26 @@
 ---
 author: daspek
-ms.author: dspektor
-title: Получение Итеманалитикс
-description: Получение Итеманалитикс о представлениях, которые были выполнены для этого ресурса.
+title: Get itemAnalytics
+description: Получите itemAnalytics о представлениях, которые произошли в этом ресурсе.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 311d7eea81ba3001af6cb94e2a3f837824a67fde
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2307df47b5c914a1b9257e30d39c3fe2b539bf32
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038475"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238829"
 ---
-# <a name="get-itemanalytics"></a>Получение Итеманалитикс
+# <a name="get-itemanalytics"></a>Get itemAnalytics
 
 Пространство имен: microsoft.graph
 
-Получение [итеманалитикс][] о представлениях, которые были выполнены для этого ресурса.
-Ресурс **итеманалитикс** — это удобный способ получения статистики действий `allTime` и `lastSevenDays` .
-Для настраиваемого диапазона или интервала времени используйте API [getActivitiesByInterval][] .
+Получите [itemAnalytics][] о представлениях, которые произошли в этом ресурсе.
+Ресурс **itemAnalytics** — удобный способ получить статистику активности `allTime` для и `lastSevenDays` .
+Для настраиваемого диапазона времени или интервала используйте API [getActivitiesByInterval.][]
 
->**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
+>**Примечание.** Ресурс **itemAnalytics** пока не доступен во всех [национальных развертываниях.](/graph/deployments)
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -54,13 +53,13 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик 
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объекта [итеманалитикс][] в тексте отклика. 
+В случае успеха этот метод возвращает код отклика и коллекцию объекта `200 OK` [itemAnalytics][] в тексте отклика. 
 
 ## <a name="example"></a>Пример
 

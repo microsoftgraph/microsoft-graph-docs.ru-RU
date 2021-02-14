@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Видео
 localization_priority: Normal
 description: Ресурс Video — это единая структура, объединяющая элементы данных, связанные с видео.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 20e9a4672f1f77f2fa3f5e98479cb6190c9f9022
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f79ca080182a4439277c4eb32a2ccccb4df2928
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015276"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238983"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -58,7 +57,7 @@ ms.locfileid: "48015276"
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.
 | **fourCC**                | string | Название формата видео в виде четырехзначного кода.
-| **Частота**             | double | Частота кадров видео.
+| **frameRate**             | double | Частота кадров видео.
 | **height**                | Int32  | Высота видео в пикселях.
 | **width**                 | Int32  | Ширина видео в пикселях.
 

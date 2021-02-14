@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Назначаем
+title: Quota
 localization_priority: Normal
 description: Ресурс quota предоставляет сведения об ограничениях дискового пространства в ресурсе Drive.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 833093569de75af450f325384f29d001e50da000
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 145d145e764128c719e757c213b8d7b2266e0b68
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037109"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238899"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса quota
 
@@ -52,7 +51,7 @@ ms.locfileid: "48037109"
 | remaining     | Int64  | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения. |
 | deleted       | Int64  | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.      |
 | состояние         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
-| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квот хранилища диска. Только в личном хранилище OneDrive.|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квот дискового пространства. Только в Личном хранилище OneDrive.|
 
 ## <a name="state-enumeration"></a>Перечисление state
 

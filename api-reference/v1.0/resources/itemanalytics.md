@@ -1,34 +1,33 @@
 ---
 author: daspek
-ms.author: dspektor
-title: Тип ресурса Итеманалитикс
-description: Объект Итеманалитикс предоставляет аналитику о действиях, которые были выполнены над элементом.
+title: Тип ресурса itemAnalytics
+description: Объект ItemAnalytics предоставляет аналитические данные о действиях, которые произошли с элементом.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 879fad9ae77f065a7235a6adbfde5f742a1970f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96ad65ef5cc8907663a9ca67e5ea2b7546b8fa03
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009298"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238661"
 ---
-# <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
+# <a name="itemanalytics-resource-type"></a>Тип ресурса itemAnalytics
 
 Пространство имен: microsoft.graph
 
-Ресурс **итеманалитикс** предоставляет аналитику о действиях, которые были выполнены для элемента. Этот ресурс в настоящее время доступен только в SharePoint и OneDrive для бизнеса.
+Ресурс **itemAnalytics** предоставляет аналитические данные о действиях, которые произошли с элементом. В настоящее время этот ресурс доступен только в SharePoint и OneDrive для бизнеса.
 
-Вы также можете использовать API [getActivitiesByInterval][] для получения аналитики через настраиваемый диапазон или интервал времени.
+Вы также можете использовать API [getActivitiesByInterval][] для получения аналитики за настраиваемый диапазон времени или интервал.
 
->**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
+>**Примечание.** Ресурс **itemAnalytics** пока не доступен во всех [национальных развертываниях.](/graph/deployments)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип                 | Описание
 |:--------------|:---------------------|:--------------------------------------
-| аллтиме       | [itemActivityStat][] | Аналитика за сроком службы элемента.
-| ластсевендайс | [itemActivityStat][] | Аналитика за последние семь дней.
+| allTime       | [itemActivityStat][] | Аналитика на протяжении жизненного срока элемента.
+| lastSevenDays | [itemActivityStat][] | Аналитика за последние семь дней.
 
 [itemActivityStat]: itemactivitystat.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md

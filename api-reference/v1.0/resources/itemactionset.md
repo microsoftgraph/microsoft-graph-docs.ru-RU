@@ -1,31 +1,30 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Тип ресурса ItemActionSet
-description: Объект itemActionSet предоставляет сведения о действиях, выполняемых в рамках действия с элементом.
+description: Объект itemActionSet предоставляет сведения о действиях, которые произошли в рамках действия с элементом.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9563f138c5074e1317927e8e9636eeba42beed35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6dcc630b76adcbec3c719a43280e4b28d1d933e5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967452"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239256"
 ---
 # <a name="itemactionset-resource-type"></a>Тип ресурса itemActionSet
 
 Пространство имен: microsoft.graph
 
-Ресурс **itemActionSet** предоставляет сведения о действиях, которые составляют [действие][itemActivity] для элемента.
+Ресурс **itemActionSet** предоставляет сведения о действиях, которые составили [действие][itemActivity] для элемента.
 
->**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [itemActivity]: itemactivity.md
 
 ## <a name="properties"></a>Свойства
 
-В настоящее время доступны следующие действия. Так как новые действия могут быть добавлены в будущем, убедитесь, что ваше приложение может обрабатывать **itemActionSet** , который включает неизвестные действия.
+В настоящее время доступны следующие действия. Так как новые действия могут быть добавлены в будущем, убедитесь, что ваше приложение может обрабатывать **объект itemActionSet,** который включает неизвестные действия.
 
 | Имя свойства | Тип              | Описание
 |:--------------|:------------------|:-----------------------------------------

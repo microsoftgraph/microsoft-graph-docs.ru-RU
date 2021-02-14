@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Thumbnail
 localization_priority: Normal
 description: Тип ресурса thumbnail представляет эскиз изображения, видео, документа или любого другого элемента, представленного как растровое изображение.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a7415a8d1c288ce65e87cb1a8653d2f7676222c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76d71cc8cbebc987eea6bbf057945dc41b55f0ee
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090874"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239270"
 ---
 # <a name="thumbnail-resource-type"></a>Тип ресурса thumbnail
 

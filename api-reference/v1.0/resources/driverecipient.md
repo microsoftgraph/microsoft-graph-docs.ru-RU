@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс DriveRecipient представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия invite.
 doc_type: resourcePageType
-ms.openlocfilehash: d509a1819b0ad10f695d97153a8f837793b9dbe4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 907a3d46c7f2ec933a6165470a976cc07706fbc4
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032727"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239018"
 ---
 # <a name="driverecipient-resource"></a>Ресурс DriveRecipient
 

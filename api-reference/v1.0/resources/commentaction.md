@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Тип ресурса commentAction
-description: Объект commentAction предоставляет сведения о комментариях, сделанных для элемента.
+description: Объект commentAction предоставляет сведения о комментарии к элементу.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f1632847461b1aa0cde429edfc4d8c5cff11ee3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2f3ab7f0798ee1020b107c38262a912fdae53ef
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988333"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238416"
 ---
 # <a name="commentaction-resource-type"></a>Тип ресурса commentAction
 
 Пространство имен: microsoft.graph
 
-Ресурс **commentAction** предоставляет сведения о [действиях][] с комментариями, выполняемых над элементом.
+Ресурс **commentAction** предоставляет сведения о действии при [комментарии][] к элементу.
 
->**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [действии]: itemactivity.md
 

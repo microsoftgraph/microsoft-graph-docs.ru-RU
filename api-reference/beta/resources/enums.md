@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: b3b6cb7bbc2abacc02939ad374808f4e1ddbed85
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: a38f82743e7520fda7b13fa76f6f9192cd44167c
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052540"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238227"
 ---
 # <a name="enum-values"></a>Значения enum
 
@@ -53,7 +53,7 @@ ms.locfileid: "50052540"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -227,7 +227,7 @@ ms.locfileid: "50052540"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -468,7 +468,7 @@ ms.locfileid: "50052540"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |1|
 |unknownFutureValue|
 
@@ -539,7 +539,7 @@ ms.locfileid: "50052540"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -574,7 +574,7 @@ ms.locfileid: "50052540"
 | родитель             | 0     | Родительский пользователь.                       |
 | relative           | 1      | Относительный пользователь.                     |
 | aide               | 2      | Помощник пользователя.                         |
-| 1             | 3     | Пользователь должен быть в сети.                       |
+| 1             | 3      | Пользователь должен быть в сети.                       |
 | guardian           | 4      | Защитник пользователя.                     |
 | child              | 5      | Дитя пользователя.                        |
 | other              | 6      | Неопределенные отношения с пользователем. |
@@ -678,7 +678,7 @@ ms.locfileid: "50052540"
 | free             | 0     |
 | tentative        | 1      |
 | busy             | 2      |
-| oof              | 3     |
+| oof              | 3      |
 | workingElsewhere | 4      |
 | unknown          | –1    |
 
@@ -728,7 +728,7 @@ ms.locfileid: "50052540"
 | lightBlue   | 0     |
 | lightGreen  | 1      |
 | lightOrange | 2      |
-| lightGray   | 3     |
+| lightGray   | 3      |
 | lightYellow | 4      |
 | lightTeal   | 5      |
 | lightPink   | 6      |
@@ -742,7 +742,7 @@ ms.locfileid: "50052540"
 | Элемент             | Значение |
 | :----------------- | :---- |
 | удаление           | 2      |
-| deletionFailed     | 3     |
+| deletionFailed     | 3      |
 | provisioningFailed | 5      |
 | provisioned        | 6      |
 | подготовка       | 7      |
@@ -756,7 +756,7 @@ ms.locfileid: "50052540"
 | paused             | 0     |
 | inProgress         | 1      |
 | success            | 2      |
-| error              | 3     |
+| error              | 3      |
 | validationError    | 4      |
 | карантин        | 5      |
 | unknownFutureValue | 6      |
@@ -983,7 +983,7 @@ ms.locfileid: "50052540"
 | Автоматически
 | noPreview
 | checklist
-| (описание)
+| description
 | справочник
 
 
@@ -1092,7 +1092,7 @@ ms.locfileid: "50052540"
 | preset0  | 0     |
 | preset1  | 1      |
 | preset2  | 2      |
-| preset3  | 3     |
+| preset3  | 3      |
 | preset4  | 4      |
 | preset5  | 5      |
 | preset6  | 6      |
@@ -1124,7 +1124,7 @@ ms.locfileid: "50052540"
 | unknown        | 0     | Неизвестно.                  |
 | truePositive   | 1      | Оповещение имеет положительный результат.   |
 | falsePositive  | 2      | Оповещение имеет ложное срабатыващение.  |
-| benignPositive | 3     | Оповещение положительное. |
+| benignPositive | 3      | Оповещение положительное. |
 
 ### <a name="filehashtype-values"></a>Значения fileHashType
 
@@ -1133,7 +1133,7 @@ ms.locfileid: "50052540"
 | unknown             | 0     | Неизвестный тип.                  |
 | sha1                | 1      | Тип hash SHA1.                |
 | sha256              | 2      | Тип hash SHA256.              |
-| md5                 | 3     | Тип hash MD5.                 |
+| md5                 | 3      | Тип hash MD5.                 |
 | authenticodeHash256 | 4      | Тип hash AuthenticodeHash256. |
 | lsHash              | 5      | Тип hash LsHash.              |
 | CTPH                | 6      | Тип hash CTPH.                |
@@ -1155,7 +1155,7 @@ ms.locfileid: "50052540"
 | unknown   | 0     | Неизвестное состояние подключения. |
 | attempted | 1      | Попытка подключения.      |
 | succeeded | 2      | Подключение успешно.      |
-| blocked   | 3     | Подключение заблокировано.        |
+| blocked   | 3      | Подключение заблокировано.        |
 | failed    | 4      | Сбой подключения.         |
 
 ### <a name="processintegritylevel-values"></a>значения processIntegrityLevel
@@ -1178,7 +1178,7 @@ Enum for registry hives as defined by [https://docs.microsoft.com/windows/deskto
 | unknown                 | 0     | Неизвестный улей.                     |
 | currentConfig           | 1      | HKEY_CURRENT_CONFIG.         |
 | currentUser             | 2      | HKEY_CURRENT_USER.           |
-| localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM.      |
+| localMachineSam         | 3      | HKEY_LOCAL_MACHINE\SAM.      |
 | localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Software. |
 | localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\System.   |
 | usersDefault            | 6      | HKEY_USERS \\ . Hive по умолчанию.        |
@@ -1192,7 +1192,7 @@ Enum for registry hives as defined by [https://docs.microsoft.com/windows/deskto
 | unknown | 0     | Неизвестный тип значения реестра. |
 | create  | 1      | Создайте реестр.             |
 | modify  | 2      | Изменение реестра.             |
-| delete  | 3     | Удаление реестра.             |
+| delete  | 3      | Удаление реестра.             |
 
 ### <a name="registryvaluetype-values"></a>значения registryValueType
 
@@ -1203,7 +1203,7 @@ Enum for registry value types as defined by [Registry value types](/windows/desk
 | unknown           | 0     | Неизвестный тип значения реестра.                 |
 | двоичный            | 1      | REG_BINARY реестра.              |
 | dword             | 2      | REG_DWORD реестра.               |
-| dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN реестра. |
+| dwordLittleEndian | 3      | REG_DWORD_LITTLE_ENDIAN реестра. |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN реестра.    |
 | expandSz          | 5      | REG_EXPAND_SZ реестра.           |
 | ссылка              | 6      | REG_LINK реестра.                |
@@ -1222,7 +1222,7 @@ Enum for severity of alerts.
 | unknown       | 0     | Серьезность неизвестна.              |
 | информационный | 1      | Серьезность только для сведений. |
 | low           | 2      | Степень серьезности низка.                  |
-| medium        | 3     | Степень серьезности средняя.               |
+| medium        | 3      | Степень серьезности средняя.               |
 | high          | 4      | Степень серьезности высока.                 |
 
 ### <a name="alertstatus-values"></a>Значения alertStatus
@@ -1256,7 +1256,7 @@ Enum for severity of alerts.
 | interactive       | 0     | В этом режиме можно в интерактивном режиме.        |
 | remoteInteractive | 1      | В этом режиме можно использовать удаленный интерактивный режим. |
 | сеть           | 2      | Во время logon это сеть.            |
-| batch             | 3     | В этом пакетном пакете.              |
+| batch             | 3      | В этом пакетном пакетном пакетном пакете.              |
 | служба           | 4      | Logon is service.            |
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
@@ -1555,7 +1555,7 @@ Enum for severity of alerts.
 | Вручную        | 0     | Пользователь вручную выбрал метку.                          |
 | Автоматически     | 1      | Метка была выбрана в результате условий политики.       |
 | Рекомендуемый   | 2      | Выбрано применение рекомендуемой метки.                    |
-| policyDefault | 3     | Пользователь не применял действие и метку по умолчанию политики. |
+| policyDefault | 3      | Пользователь не применял действие и метку по умолчанию политики. |
 | mandatory     | 4      | Пользователь выбрал метку после принудительных выборов.         |
 
 ### <a name="contentalignment-values"></a>значения contentAlignment
@@ -1640,7 +1640,7 @@ Enum for severity of alerts.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1 |
-|Низкие|2 |
+|Низкая|2 |
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
@@ -1648,7 +1648,7 @@ Enum for severity of alerts.
 |:-------|:------|:------------------------|
 | mail   | 1      | Угроза почты.            |
 | url    | 2      | Угроза URL-адреса.             |
-| file   | 3     | Угроза файла вложения. |
+| file   | 3      | Угроза файла вложения. |
 
 ### <a name="threatexpectedassessment-values"></a>значения threatExpectedAssessment
 
@@ -1663,7 +1663,7 @@ Enum for severity of alerts.
 |:-------------------|:------|:-------------------|
 | уверенности               | 1      | Угроза нежелательной почты.       |
 | степенью           | 2      | Фишинговая угроза.   |
-| malware            | 3     | Угроза вредоносного ПО.    |
+| malware            | 3      | Угроза вредоносного ПО.    |
 | unknownFutureValue | 4      | Член sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>Значения threatAssessmentStatus
@@ -1687,7 +1687,7 @@ Enum for severity of alerts.
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1      | Результат проверки политики только для `mail` оценки. |
 | rescan             | 2      | Результат повторного скана.                                   |
-| unknownFutureValue | 3     | Член sentinel.                                   |
+| unknownFutureValue | 3      | Член sentinel.                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>Значения mailDestinationRoutingReason
 
@@ -1696,7 +1696,7 @@ Enum for severity of alerts.
 | Нет                  | 0     | Пока не известно.                       |
 | mailFlowRule          | 1      | Правило транспорта Exchange.            |
 | safeSender            | 2      | Список надежных отправитель.                   |
-| blockedSender         | 3     | Список заблокированных отправитель.                |
+| blockedSender         | 3      | Список заблокированных отправитель.                |
 | advancedSpamFiltering | 4      | Расширенный параметр размещания нежелательной почты.     |
 | domainAllowList       | 5      | Список разрешает домен отправитель.           |
 | domainBlockList       | 6      | Список заблокированных доменов отправитель.           |
@@ -1809,7 +1809,7 @@ Enum for severity of alerts.
 |:----------------------|:------|:------------------------------------|
 | string                | 1      | строковый тип данных                    |
 | boolean               | 2      | тип данных Boolean                   |
-| int64                 | 3     | Тип данных Int                       |
+| int64                 | 3      | Тип данных Int                       |
 | stringCollection      | 4      | Тип данных коллекции строк         |
 | unknownFutureValue    | 5      | Член sentinel.                  |
 
@@ -1819,7 +1819,7 @@ Enum for severity of alerts.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1      | Этот тип атрибута пользовательского потока означает, что он был создан системой |
 | custom                | 2      | Этот тип атрибута потока пользователя обозначает, что он был создан пользователем   |
-| unknownFutureValue    | 3     | Член sentinel.                                                 |
+| unknownFutureValue    | 3      | Член sentinel.                                                 |
 
 ### <a name="connectionstate-values"></a>значения connectionState
 
@@ -1876,7 +1876,16 @@ Enum for severity of alerts.
 |oneOnOne            | 0     | Указывает, что чат является чатом 1:1. Для этого типа чата зафиксирован размер группы, член не может быть удален или добавлен.                  |
 |group               | 1      | Указывает, что чат является групповым чатом. Для этого типа чата можно обновить размер группы (не менее 2 человек). Члены можно удалить или добавить позже.   |
 |meeting             | 2      | Указывает, что чат является чатом собрания, который создается как побочный эффект создания OnlineMeeting.  |
-|unknownFutureValue  | 3     | Значение Sentinel, чтобы указать будущие значения. |
+|unknownFutureValue  | 3      | Значение Sentinel, чтобы указать будущие значения. |
+
+### <a name="singlesignonmode-values"></a>Значения singleSignOnMode
+
+|Member|
+|:---|
+|Нет|
+|onPremisesKerberos|
+|aadHeaderBased|
+|pingHeaderBased|
 
 ### <a name="plannercontainertype-values"></a>значения plannerContainerType 
 
@@ -1884,3 +1893,14 @@ Enum for severity of alerts.
 |:---|
 |group|
 |unknownFutureValue|
+
+### <a name="plannerplancontexttype-values"></a>значения plannerPlanContextType 
+
+|Member|
+|:---|
+|teamsTab|
+|sharePointPage|
+|meetingNotes|
+|other|
+|unknownFutureValue|
+

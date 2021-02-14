@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: calculatedColumn
 localization_priority: Normal
 description: Ресурс calculatedColumn в ресурсе columnDefinition указывает, что данные столбца вычисляются на основании значений в других столбцах на сайте.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 29699b5f220f4b9e46258a42c3b353cc9712ac6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a75db3ea7a3973d57a3d09aa6cba2cb85a66ce11
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066537"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239081"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Тип ресурса calculatedColumn
 

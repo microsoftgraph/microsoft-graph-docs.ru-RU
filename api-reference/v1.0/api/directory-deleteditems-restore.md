@@ -3,14 +3,14 @@ title: Восстановление удаленного элемента
 description: 'Восстановление недавно удаленного элемента из контейнера для удаленных элементов. '
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c588dee2de9ff1f4ffed128ed3b7b316f1e632e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68de5d829ab9b56b900af675c9ca9450688d13cb
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057611"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239620"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -18,7 +18,7 @@ ms.locfileid: "48057611"
 
 Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md). 
 
-В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) . Вы можете полностью восстановить случайно удаленный элемент.
+В настоящее время функции восстановления удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групп и](../resources/group.md) [ресурсов](../resources/user.md) пользователей. Вы можете полностью восстановить случайно удаленный элемент. Это не относится к группам безопасности, которые удаляются окончательно.
 
 Удаленный элемент можно восстановить в течение 30 дней. Через 30 дней элемент удаляется без возможности восстановления.
 
@@ -38,16 +38,16 @@ ms.locfileid: "48057611"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.AccessAsUser.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | User.ReadWrite.All |
 
 ### <a name="for-groups"></a>Для групп:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.AccessAsUser.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -59,10 +59,10 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | &lt;Необходим маркер носителя &gt; *Required*|
+| Authorization  | Требуется маркер &lt; &gt; *носитела*|
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

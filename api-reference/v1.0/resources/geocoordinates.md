@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 description: Ресурс GeoCoordinates предоставляет географические координаты и высоту расположения в соответствии с метаданными файла.
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 048fefc8938a789a0aae06f3dd6f50c25c305c31
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b2c6fec5e27e3b8fe902b330b226fc498b09b138
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130510"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240012"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса GeoCoordinates
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: dateTimeColumn
 localization_priority: Normal
 description: Ресурс dateTimeColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой даты или время.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 37ae27f2ae9b74612895784e69752d37ef976b04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28639277416b4bcea3caf641413078e355ff9de7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091840"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239648"
 ---
 # <a name="datetimecolumn-resource-type"></a>Тип ресурса dateTimeColumn
 

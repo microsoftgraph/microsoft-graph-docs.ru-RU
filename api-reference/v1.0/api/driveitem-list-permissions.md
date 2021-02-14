@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Список пользователей, имеющих доступ к файлу
+title: Список лиц, у которых есть доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-description: Перечислите эффективные разрешения общего доступа в driveItem.
+description: Список эффективных разрешений общего доступа для driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 1aa566d42a65d3e3c168759d3b76ce175895af3f
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a89dc20289ee86933d4eee0c217f769b9fbd426e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634503"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240278"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a>Список разрешений на совместное использование в driveItem
+# <a name="list-sharing-permissions-on-a-driveitem"></a>Список разрешений на общий доступ к сайту driveItem
 
 Пространство имен: microsoft.graph
 
-Перечислите эффективные разрешения на общий доступ к [driveItem](../resources/driveitem.md).
+Список эффективных разрешений общего доступа для [driveItem.](../resources/driveitem.md)
 
 ## <a name="access-to-sharing-permissions"></a>Доступ к разрешениями совместного доступа
 

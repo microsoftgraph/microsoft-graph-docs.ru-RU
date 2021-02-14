@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Корневой
+title: Root
 localization_priority: Normal
 description: Аспект Root указывает, что объект находится на верхнем уровне в иерархии.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a983fe816f1b728f12b365c60cd782fce52a13c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91bf739ebb3f335c4b1e284c8d59d08d15b777f3
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088470"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240453"
 ---
 # <a name="root-resource-type"></a>Тип ресурса Root
 

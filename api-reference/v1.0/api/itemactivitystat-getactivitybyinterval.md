@@ -1,27 +1,26 @@
 ---
 author: daspek
-ms.author: dspektor
-title: Получение статистики по действиям элемента по интервалу
-description: Получение Итеманалитицистатс для действий, выполненных с этим ресурсом в течение указанного интервала времени.
+title: Получить статистику активности элемента по интервалу
+description: Получите itemAnalyticyStats для действий, которые произошли в этом ресурсе в течение указанного интервала времени.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a26892aac83aa28b7a4769f2ad678643a3c417ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0ce73166603831c5cf870a6b969f1844c81ffb4
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087227"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238584"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>Получение статистики по действиям элемента по интервалу
+# <a name="get-item-activity-stats-by-interval"></a>Получить статистику активности элемента по интервалу
 
 Пространство имен: microsoft.graph
 
-Получение коллекции ресурсов [итемактивитистатс][] для действий, выполняемых с этим ресурсом в течение указанного интервала времени.
+Получите коллекцию ресурсов [itemActivityStats][] для действий, которые произошли в этом ресурсе в течение указанного интервала времени.
 
->**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments). 
+>**Примечание.** Ресурс **itemAnalytics** пока не доступен во всех [национальных развертываниях.](/graph/deployments) 
 
-Статистические функции аналитики могут быть недоступны для всех типов действий.
+Аналитика может быть доступна не для всех типов действий.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,11 +46,11 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Параметр      | Тип               | Описание
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | строка (timestamp) | Время начала агрегирования действий.
-| endDateTime    | строка (timestamp) | Время окончания агрегирования действий.
-| interval       | string             | Интервал объединения.
+| startDateTime  | string (timestamp) | Время начала, в течение которого объединяются действия.
+| endDateTime    | string (timestamp) | Время окончания, в течение которого будут агрегироваться действия.
+| interval       | string             | Интервал агрегации.
 
->**Примечание:** Этот API поддерживает только диапазон времени 90 дней для ежедневных счетчиков. Значение `startDateTime` `endDateTime` параметра и должно представлять собой диапазон времени менее 90 дней.
+>**Примечание.** Этот API поддерживает только диапазон времени в 90 дней для ежедневных подсчетов. Значение параметра и параметра должно представлять диапазон времени менее `startDateTime` `endDateTime` 90 дней.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
@@ -68,7 +67,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="response"></a>Отклик 
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объекта [итемактивитистатс][] в тексте отклика. 
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [itemActivityStats][] в тексте отклика. 
 
 ## <a name="example"></a>Пример
 
@@ -137,7 +136,7 @@ Content-type: application/json
     ]
 }
 ```
-[итемактивитистатс]: ../resources/itemactivitystat.md
+[itemActivityStats]: ../resources/itemactivitystat.md
 
 <!--
 {

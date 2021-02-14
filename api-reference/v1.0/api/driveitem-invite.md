@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Отправка приглашения на доступ к элементу
 localization_priority: Normal
 ms.prod: sharepoint
-description: Отправляет приглашение на доступ к driveItem.
+description: Отправляет приглашение к совместному доступу для driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 0ef9d44623dd27f8172aeaaf07d4ce0d129eae7f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e514fbd3b8f79d3696f894a6b15ad55055137b70
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042151"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240292"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
 Пространство имен: microsoft.graph
 
-Отправляет приглашение на доступ к **driveItem**.
+Отправляет приглашение к совместному доступу для **driveItem.**
 Приглашение к совместному использованию предоставляет получателям разрешения и при необходимости отправляет им сообщение электронной почты с [ссылкой совместного доступа][].
 
 ## <a name="permissions"></a>Разрешения
@@ -43,7 +42,7 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -69,8 +68,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                        | Указывает, должен ли получатель приглашения выполнить вход, чтобы просмотреть элемент, к которому предоставлен общий доступ.
 | sendInvitation   | Boolean                        | Если указано значение true, получателю отправляется [ссылка совместного доступа][]. В противном случае разрешение предоставляется напрямую без отправки уведомления.
 | roles            | Collection(String)             | Указывает роли, которые необходимо предоставить получателям приглашения к совместному использованию.
-| expirationDateTime | DateTimeOffset                       | Укажите значение даты и времени, после которого истечет срок действия разрешения. Доступно в OneDrive для бизнеса, SharePoint и в личных учетных записях OneDrive для бизнеса.
-| password           | Строка                         | Пароль, установленный в приглашении создателем. Только необязательные и OneDrive персональный.
+| expirationDateTime | DateTimeOffset                       | Укажите дату и время окончания срока действия разрешения. Доступно в OneDrive для бизнеса, SharePoint и личных учетных записях OneDrive премиум- и премиум-версий.
+| password           | Строка                         | Пароль, установленный в приглашении создателем. Необязательный и только OneDrive персональный.
 
 ## <a name="example"></a>Пример
 
@@ -157,9 +156,9 @@ Content-type: application/json
 ## <a name="remarks"></a>Примечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
-* Список доступных ролей приведен в разделе [значения свойств Roles](../resources/permission.md#roles-property-values).
+* Список доступных ролей см. в [значениях свойств ролей.](../resources/permission.md#roles-property-values)
 
-## <a name="error-responses"></a>Ответы с ошибками
+## <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

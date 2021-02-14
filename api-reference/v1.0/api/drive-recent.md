@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Список последних файлов
 localization_priority: Normal
 ms.prod: sharepoint
 description: Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись.
 doc_type: apiPageType
-ms.openlocfilehash: 355c40d3997831e1ef15f5b9e3645f3c91993738
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d7d1f67353301889f50ae6ead03e70d574ee386
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971259"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239872"
 ---
 # <a name="list-recent-files"></a>Список последних файлов
 

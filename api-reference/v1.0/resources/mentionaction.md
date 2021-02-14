@@ -1,17 +1,16 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Тип ресурса mentionAction
-description: Объект MentionAction предоставляет сведения о пользователях, упомянутых во время действия.
+description: Объект MentionAction предоставляет сведения о том, кто был упомянут во время действия.
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 8937a8f7acd55af93fdeac9eceb17d46e2cf495c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc876f05949beb09b3e495a8b9b0536070b352cb
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991903"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238388"
 ---
 # <a name="mentionaction-resource-type"></a>Тип ресурса mentionAction
 
@@ -19,7 +18,7 @@ ms.locfileid: "47991903"
 
 Ресурс **MentionAction** предоставляет сведения о ресурсе [activity][], в котором есть упоминания пользователей.
 
->**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [действии]: itemactivity.md
 

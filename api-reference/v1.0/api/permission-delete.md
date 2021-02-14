@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Отмена доступа к элементу
+title: Удаление доступа к элементу
 localization_priority: Normal
 description: Отмена доступа к ресурсу DriveItem.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 30920b677f3d88a5884b6ff5bf77ef0fa67eb82b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea5e5eca29db3ffb668f6e4e126e4c127b2a7cfc
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984819"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240152"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Удаление разрешения на общий доступ для файла или папки
 

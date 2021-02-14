@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
 description: Ресурс ThumbnailSet представляет собой коллекцию ресурсов thumbnail с ключами.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5aa7ca5646ea0555c0f6547e7171312537343345
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fe322d202b0c1b5735736ed6ca1d135839c3420
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090860"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239263"
 ---
 # <a name="thumbnailset-resource-type"></a>Тип ресурса ThumbnailSet
 
@@ -52,7 +51,7 @@ ms.locfileid: "48090860"
 
 | Свойство | Тип                      | Описание                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | Строка                    | Идентификатор в элементе. Только для чтения.                                                |
+| id       | String                    | Идентификатор в элементе. Только для чтения.                                                |
 | large    | [Thumbnail](thumbnail.md) | Эскиз размером 1920x1920.                                                     |
 | medium   | [Thumbnail](thumbnail.md) | Эскиз размером 176x176.                                                       |
 | small    | [Thumbnail](thumbnail.md) | Обрезанный эскиз размером 48x48.                                                        |
