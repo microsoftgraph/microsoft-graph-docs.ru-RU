@@ -6,14 +6,13 @@ metadata:
   description: Учебники по Microsoft Graph — это пошаговая обучающая программа, которая поможет вам создать базовое приложение, которое будет получать доступ к данным через Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
-  ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: c064f803856c8d290e8c88a6399de6a806349aad
-  ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+  ms.openlocfilehash: 15a26f4ebffbcd3518db742f216b4f6a57cac98f
+  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/15/2020
-  ms.locfileid: "49675851"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "50240481"
 landingContent:
 - title: Создание первого серверного приложения
   linkLists:
