@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Ресурс Permission содержит сведения о разрешении на совместный доступ, предоставленном для ресурса DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0736268bfa2670a3afd05874a44a9a72f81621e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aaea9aa9ac1bbb6368b2303973aa461c89f3f720
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074883"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177062"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса Permission
 
@@ -84,7 +84,7 @@ ms.locfileid: "48074883"
 
 ### <a name="roles-property-values"></a>Значения свойств роли
 
-| Роль              | Сведения                                                                        |
+| Значение              | Описание                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | read            | Дает возможность считывать метаданные и содержимое элемента.            |
 | write           | Дает возможность считывать и изменять метаданные и содержимое элемента. |

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e839d9936409a954fe8ca307b0d0310000076d64
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebfa1907cd6234770a02809202a0cd738e1d207d
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133905"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177069"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
@@ -20,24 +20,24 @@ ms.locfileid: "50133905"
 
 Допустимые типы вложений:
 
-* Файл. На программном уровне это ресурс [fileAttachment](../resources/fileattachment.md).
-* Элемент Outlook (контакт, событие или сообщение). На программном уровне вложением элемента является ресурс [itemAttachment](../resources/itemattachment.md). Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
-* Ссылка на файл, хранящийся в облаке. На программном уровне это ресурс [referenceAttachment](../resources/referenceattachment.md).
+* Файл. На программном уровне это ресурс [fileAttachment](../resources/fileattachment.md). См. [пример 1](#example-1-get-the-properties-of-a-file-attachment).
+* Элемент Outlook (контакт, событие или сообщение). На программном уровне вложением элемента является ресурс [itemAttachment](../resources/itemattachment.md). Вы можете использовать параметр `$expand`, чтобы получить дополнительные свойства этого элемента, включая любые вложения (до 30 уровней). См. [пример 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) и [пример 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+* Ссылка на файл, хранящийся в облаке. На программном уровне это ресурс [referenceAttachment](../resources/referenceattachment.md). См. [пример 5](#example-5-get-the-properties-of-a-reference-attachment).
 
 Все эти типы вложений являются производными от ресурса [attachment](../resources/attachment.md). 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Получение необработанного содержимого вложенного файла или элемента
 Чтобы получить необработанное содержимое вложенного файла или элемента, вы можете добавить сегмент пути `/$value`. 
 
-Для вложенного файла тип содержимого определяется исходя из его исходного типа. См. [пример](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) ниже.
+Для вложенного файла тип содержимого определяется исходя из его исходного типа. См. [пример 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
 
 Для вложенного элемента, которое является [контактом ](../resources/contact.md), [событием ](../resources/event.md) и [сообщением](../resources/message.md), возвращаемое необработанное содержимое будет иметь формат MIME.
 
 | тип вложенного элемента  | Возвращаемое необработанное содержимое |
 |:-----------|:----------|
-| **контакт** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) в формате MIME. См. [пример](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **событие** | iCal в формате MIME. См. [пример](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **сообщение** | Формат MIME. См. [пример](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **контакт** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) в формате MIME. См. [пример](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **событие** | iCal в формате MIME. См. [пример](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **сообщение** | Формат MIME. См. [пример](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 При попытке получить `$value` вложенной ссылки происходит возврат HTTP 405.
 
@@ -145,7 +145,10 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает некоторые [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+
+Используйте параметр `$expand`, чтобы получить свойства вложения элемента (контакта, события или сообщения). См. [пример 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) и [пример 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -344,6 +347,7 @@ Content-type: application/json
     "hasAttachments":false,
     "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
     "subject":"Reminder - please bring laptop",
+    "bodyPreview": "PFA\r\n\r\nThanks,\r\nRob",
     "importance":"normal",
     "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
     "conversationIndex":"AQHTAbcSwb41IIwGp0qstrYSZH+U7Q==",
@@ -352,6 +356,7 @@ Content-type: application/json
     "isRead":false,
     "isDraft":false,
     "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "internetMessageHeaders": [ ],
     "body":{
       "contentType":"html",
       "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
@@ -383,14 +388,117 @@ Content-type: application/json
           "address":"AdeleV@contoso.onmicrosoft.com"
         }
       }
-    ]
+    ],
+    "flag":{
+      "flagStatus":"notFlagged"
+    }
   }
 }
 ```
 
+### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>Пример 4. Развертывание и получение свойств элемента, вложенного в сообщение, включая любые вложения элемента
+#### <a name="request"></a>Запрос
+В следующем примере используется тот же запрос, что и в [примере 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message), чтобы получить свойства вложения элемента в сообщении с помощью параметра `$expand`. В данном случае, так как вложенный элемент также содержит вложенный файл, в отклик также включаются свойства вложенного файла. 
 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
+  "name": "get_and_expand_nested_item_attachment"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
+```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Пример 4. Получение свойств вложенной ссылки
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "name": "get_and_expand_nested_item_attachment",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments(microsoft.graph.itemAttachment/item())/$entity",
+    "@odata.type": "#microsoft.graph.itemAttachment",
+    "id": "AAMkADA1MCJKtzmnlcqVgqI=",
+    "lastModifiedDateTime": "2021-01-06T13:28:11Z",
+    "name": "Nested Message With Attachment",
+    "contentType": null,
+    "size": 465916,
+    "isInline": false,
+    "item@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+    "item": {
+        "@odata.type": "#microsoft.graph.message",
+        "id": "",
+        "createdDateTime": "2021-01-06T13:28:30Z",
+        "lastModifiedDateTime": "2021-01-06T13:27:40Z",
+        "receivedDateTime": "2021-01-06T13:27:25Z",
+        "sentDateTime": "2021-01-06T13:27:04Z",
+        "hasAttachments": true,
+        "internetMessageId": "<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+        "subject": "Nested Message With Attachment",
+        "bodyPreview": "PFAThanks,Adele",
+        "importance": "normal",
+        "conversationId": "AAQkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWQyZjg2YWQwMTNkZAAQAO6hkp84oMdGm6ZBsSH72sE=",
+        "conversationIndex": "AQHW5C+U7qGSnzigx0abpkGxIfvawQ==",
+        "isDeliveryReceiptRequested": false,
+        "isReadReceiptRequested": false,
+        "isRead": true,
+        "isDraft": false,
+        "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ItemAttachment",
+        "internetMessageHeaders": [],
+        "body": {
+            "contentType": "html",
+            "content": "<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+        },
+        "sender": {
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "Adele.Vance@microsoft.com"
+            }
+        },
+        "from": {
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "Adele.Vance@microsoft.com"
+            }
+        },
+        "toRecipients": [
+            {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "Adele.Vance@microsoft.com"
+                }
+            }
+        ],
+        "flag": {
+            "flagStatus": "notFlagged"
+        },
+        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
+        "attachments": [
+            {
+                "@odata.type": "#microsoft.graph.fileAttachment",
+                "@odata.mediaContentType": "application/pdf",
+                "id": "AAMkADg3NTYULmbsDYNg==",
+                "lastModifiedDateTime": "2021-01-21T14:56:18Z",
+                "name": "Info.pdf",
+                "contentType": "application/pdf",
+                "size": 417351,
+                "isInline": false,
+                "contentId": null,
+                "contentLocation": null,
+                "contentBytes": "JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFuZyhlbi1JTikgL1N0cnVjdFRyZWVSb29"
+            }
+        ]
+    }
+}
+```
+
+### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>Пример 5. Получение свойств вложенной ссылки
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса на получение вложенной ссылки из сообщения.
@@ -423,7 +531,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/A
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -446,7 +554,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Пример 5. Получение необработанного содержимого вложенного файла в сообщении
+### <a name="example-6-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Пример 6. Получение необработанного содержимого вложенного файла в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -477,7 +585,7 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Пример 6. Получение необработанного содержимого MIME вложенного контакта в сообщении
+### <a name="example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Пример 7. Получение необработанного содержимого MIME вложенного контакта в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -526,7 +634,7 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Пример 7. Получение необработанного содержимого MIME вложенного события в сообщении
+### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Пример 8. Получение необработанного содержимого MIME вложенного события в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -606,7 +714,7 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Пример 8. Получение необработанного содержимого MIME вложенного элемента приглашения на собрание в сообщении
+### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Пример 9. Получение необработанного содержимого MIME вложенного элемента приглашения на собрание в сообщении
 
 #### <a name="request"></a>Запрос
 

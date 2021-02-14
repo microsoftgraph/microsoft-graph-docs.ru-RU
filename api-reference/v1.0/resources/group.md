@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d9b89d5e8d9fd0e34ba3f03e0d49684d8a49b629
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 671b7ade56d6aa5260e575be01915fd6dd94a8d1
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013662"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177202"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -148,7 +148,7 @@ ms.locfileid: "50013662"
 |securityIdentifier|String|Идентификатор безопасности группы, используемый в сценариях Windows. <br><br>Возвращается по умолчанию.|
 |theme|String|Указывает цветовую тему группы Microsoft 365. Возможные значения: `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` или `Red`. <br><br>Возвращается по умолчанию. |
 |unseenCount|Int32|Количество бесед с новыми сообщениями, полученными с момента последнего посещения группы вошедшим в систему пользователем. <br><br>Возвращается только с помощью оператора $select. |
-|visibility|String| Определяет видимость группы Microsoft 365. Возможные значения: `Private`, `Public` или `Hiddenmembership`. Пустые значения считаются общедоступными.  Дополнительные сведения см. в разделе [Параметры видимости группы](#group-visibility-options).<br>Видимость можно настроить только при создании группы. Ее нельзя изменить.<br>Видимость поддерживается только для единых групп. Она не поддерживается для групп безопасности. <br><br>Возвращается по умолчанию.|
+|visibility|String| Указывает политику присоединения к группе и видимость содержимого для групп. Возможные значения: `Private`, `Public` или `Hiddenmembership`. `Hiddenmembership` задается только для Групп Microsoft 365 при их создании. Обновление невозможно выполнить позже. Другие значения видимости можно обновлять после создания группы.<br> Если при создании группы в Microsoft Graph не задается значение видимости, группа безопасности по умолчанию создается как `Private`, а группа Microsoft 365 —`Public`. Дополнительные сведения см. в разделе [Параметры видимости группы](#group-visibility-options). <br><br>Возвращается по умолчанию.|
 
 
 ### <a name="group-visibility-options"></a>Параметры видимости группы
