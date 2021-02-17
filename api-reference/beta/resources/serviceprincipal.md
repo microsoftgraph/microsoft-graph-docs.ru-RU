@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f1dfb3ced2a93853d717677c509514da410c1951
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 886f1fb126ff68d0a8feb5b67051c13fa41f66a1
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132648"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272512"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -125,8 +125,8 @@ ms.locfileid: "50132648"
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
-|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен этот субъект-служба. Только для чтения. Допускается значение null.|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Назначение ролей приложений для приложения или службы, предоставляемых пользователям, группам и другим субъектам-службам.|
+|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Назначение роли приложения для другого приложения или службы, предоставляемых субъекту-службе.|
 |claimsMappingPolicies|Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)|Типы ресурсов claimsMappingPolicy, назначенные субъекту-службе.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
 |delegatedPermissionClassifications|Коллекция [delegatedPermissionClassification](delegatedpermissionclassification.md)|Классификации для делегированных разрешений, предоставленные приложением, которое представляет эта субъект-служба.|
