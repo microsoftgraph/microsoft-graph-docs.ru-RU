@@ -224,7 +224,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Управление
             items:
-              - name: Создание пакета доступа
+              - name: Управление доступом к ресурсам
                 href: tutorial-access-package-api.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
