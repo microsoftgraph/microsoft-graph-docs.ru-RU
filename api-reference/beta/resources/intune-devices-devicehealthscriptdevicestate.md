@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceHealthScriptDeviceState
-description: Содержит свойства для состояния запуска устройства сценария состояния устройства.
+description: Содержит свойства состояния запуска устройства для сценария состояния устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a08147acb2a6054784faf0cd67af1f2650146fcb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 5804a3f648ef60d55cfe99008ef790afdef55888
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154840"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272284"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>Тип ресурса deviceHealthScriptDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "50154840"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для состояния запуска устройства сценария состояния устройства.
+Содержит свойства состояния запуска устройства для сценария состояния устройства.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|

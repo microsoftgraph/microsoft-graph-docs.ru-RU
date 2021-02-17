@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c12cb905ff49b2997c123aa881f2d6281c2591f3
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: f7be993efd25633e6e9ba330e8da7bc1ed3e7e6b
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082064"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271983"
 ---
 # <a name="list-group-members"></a>Перечисление участников группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "49082064"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка непосредственных участников группы. У группы могут быть пользователи, контакты, устройства, субъекты служб и другие группы в качестве участников. Эта операция не является транзитивной.
+Получение списка непосредственных участников группы. В качестве членов группы могут быть пользователи, контакты, устройства, участники-службы и другие группы. Эта операция не является транзитивной.
 
 Если группа содержит более 100 участников, Microsoft Graph возвращает в отклике свойство `@odata.nextLink`, содержащее URL-адрес следующей страницы результатов. При наличии этого свойства продолжайте выполнять дополнительные запросы с URL-адресом `@odata.nextLink` в каждом отклике, пока не будут возвращены все результаты, как описано в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).
 
@@ -28,11 +28,11 @@ ms.locfileid: "49082064"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All |
+| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Group.Read.All, Directory.Read.All |
+| Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
-> **Примечание:** Чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
+> **Примечание.** Для получения списка участников скрытой группы членства требуется разрешение Member.Read.Hidden.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
  
@@ -188,7 +188,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Пример 4: используйте $search и приведение OData для получения членства пользователя в группах с отображаемыми именами, содержащими буквы "PR", включая число возвращаемых объектов
+### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Пример 4. Использование $search и OData для получения членства пользователей в группах с отображаемой и отображаемой именами, которые содержат буквы Pr, включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 

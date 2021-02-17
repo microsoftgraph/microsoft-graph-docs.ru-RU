@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: a08be511c3752e27f2e86415aee62d112d2c5262
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2c0cbfae55ca02743d1b8e10777580e431529103
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133179"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272516"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Обзор API синхронизации Azure AD
 
@@ -19,7 +19,7 @@ ms.locfileid: "50133179"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Синхронизация удостоверений Azure Active Directory (Azure AD) (также называемая "подготовка") позволяет автоматизировать подготовка (создание, обслуживание) и отмену (удаление) удостоверений из любого из следующих систем:
-- От Active Directory к Azure AD
+- Из Active Directory в Azure AD
 - Рабочий день в Azure AD
 - Azure AD для облачных приложений, таких как Dropbox, Salesforce, ServiceNow и другие 
 
@@ -44,7 +44,7 @@ ms.locfileid: "50133179"
 
 ## <a name="synchronization-schema"></a>Схема синхронизации
 
-Схема синхронизации определяет, какие объекты будут синхронизироваться и как они будут синхронизироваться. Схема синхронизации содержит большую часть сведений об установке для конкретного задания синхронизации. Обычно некоторые сопоставления атрибутов [](synchronization-attributemapping.md)настраиваются или добавляются [](synchronization-filter.md) фильтры области для синхронизации только объектов, удовлетворяющих определенному условию.
+Схема синхронизации определяет, какие объекты будут синхронизироваться и как они будут синхронизироваться. Схема синхронизации содержит большую часть сведений об установке для конкретного задания синхронизации. Как правило, некоторые сопоставления [](synchronization-attributemapping.md)атрибутов настраиваются или [](synchronization-filter.md) добавляются фильтры области для синхронизации только объектов, удовлетворяющих определенному условию.
 
 Схема синхронизации включает следующие компоненты:
 
@@ -64,7 +64,7 @@ ms.locfileid: "50133179"
 
 Работа с API синхронизации в основном включает доступ к ресурсам [synchronizationJob](synchronization-synchronizationjob.md) и [synchronizationSchema.](synchronization-synchronizationschema.md) Чтобы найти ресурс [synchronizationJob,](synchronization-synchronizationjob.md) необходимо знать ИД объекта-службы, к которой принадлежит задание синхронизации. В следующих примерах покажем, как работать с **ресурсами synchronizationJob** и **synchronizationSchema.**
 
-### <a name="authorization"></a>Авторизация
+### <a name="authorization"></a>Authorization
 
 Для авторизации API синхронизации Azure AD использует OAuth 2.0. Прежде чем делать запросы к API, необходимо получить маркер доступа. Дополнительные сведения см. в сведениях о [том, как получить маркеры доступа для вызова Microsoft Graph.](/graph/auth/) Для доступа к ресурсам синхронизации приложению необходимы разрешения Directory.ReadWrite.All. Дополнительные сведения [см. в сведениях о разрешениях для каталогов.](/graph/permissions-reference#directory-permissions)
 
@@ -84,19 +84,20 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayN
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
-    "value": [
-    {
-        "id": "bc0dc311-87df-48ac-91b1-259bd2c3a31c",
-        "appId": "f7808c5e-cb57-4e37-8094-406d302c0f8d",
-        "displayName": "Salesforce"
-    },
-    {
-        "id": "d813d7d7-0f41-4edc-b284-d0dfaf399d15",
-        "appId": "219561ee-1480-4c67-9aa6-63d861fae3ef",
-        "displayName": "salesforce 3"
-    }
-    ]
+   "value":[
+      {
+         "id":"bc0dc311-87df-48ac-91b1-259bd2c3a31c",
+         "appId":"f7808c5e-cb57-4e37-8094-406d302c0f8d",
+         "displayName":"Salesforce"
+      },
+      {
+         "id":"d813d7d7-0f41-4edc-b284-d0dfaf399d15",
+         "appId":"219561ee-1480-4c67-9aa6-63d861fae3ef",
+         "displayName":"salesforce 3"
+      }
+   ]
 }
 ```
 
@@ -114,6 +115,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayN
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {
@@ -140,6 +142,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {
@@ -170,17 +173,18 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 **Отклик**
 <!-- { "blockType": "ignored" } -->
 ```http
-    HTTP/1.1 200 OK
-    {
-        "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
-        "templateId": "SfSandboxOutDelta",
-        "schedule": {
-            "expiration": null,
-            "interval": "PT20M",
-            "state": "Active"
-        },
-        "status": {}
-    }
+HTTP/1.1 200 OK
+
+{
+    "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
+    "templateId": "SfSandboxOutDelta",
+    "schedule": {
+        "expiration": null,
+        "interval": "PT20M",
+        "state": "Active"
+    },
+    "status": {}
+}
 ```
 
 ### <a name="get-synchronization-schema"></a>Получить схему синхронизации
@@ -196,6 +200,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "directories": [],
     "synchronizationRules": []

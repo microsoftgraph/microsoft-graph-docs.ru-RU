@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6f6b68ad23505458a40be54ed073e0c01a81f06e
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 5c1446816f5487a579395f75dba521ba53f136fe
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158557"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272123"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>Тип ресурса accessPackageResourceRoleScope
 
@@ -18,7 +18,7 @@ ms.locfileid: "50158557"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)область роли пакета доступа — это ссылка как на область ресурса, так и на роль в этом ресурсе для этой области.  Пакет доступа будет иметь области ролей ресурсов пакета доступа для ресурсов в каталоге, которые имеют отношение к этому пакету доступа.  Когда субъект получает назначение пакета доступа, субъекту будет присвоена роль в этой области каждой области роли ресурса пакета доступа.
+В управлении правами [Azure AD](entitlementmanagement-root.md)область роли пакета доступа — это ссылка как на область в ресурсе, так и на роль в этом ресурсе для этой области.  Пакет доступа будет иметь доступ к области ролей пакета ресурсов для ресурсов в каталоге, которые имеют отношение к этому пакету доступа.  Когда субъект получает назначение пакета доступа, субъекту будет присвоена роль в этой области каждой области роли ресурса пакета доступа.
 
 ## <a name="methods"></a>Методы
 
@@ -59,25 +59,24 @@ ms.locfileid: "50158557"
 
 ```json
 {
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)",
-  "accessPackageResourceRole": {
-    "id": "String (identifier)",
-     "displayName": "String",
-     "originSystem": "String",
-     "originId": "String"
-  },
-  "accessPackageResourceScope": {
-     "id": "String (identifier)",
-     "displayName": "String",
-     "description": "String",
-     "originId": "String (identifier)",
-     "originSystem": "String"
-  }
-
+   "createdBy":"String",
+   "createdDateTime":"String (timestamp)",
+   "id":"String (identifier)",
+   "modifiedBy":"String",
+   "modifiedDateTime":"String (timestamp)",
+   "accessPackageResourceRole":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "originSystem":"String",
+      "originId":"String"
+   },
+   "accessPackageResourceScope":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "description":"String",
+      "originId":"String (identifier)",
+      "originSystem":"String"
+   }
 }
 ```
 

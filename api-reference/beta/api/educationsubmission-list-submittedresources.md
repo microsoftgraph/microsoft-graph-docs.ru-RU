@@ -1,31 +1,31 @@
 ---
-title: Список Субмиттедресаурцес
-description: Перечислите ресурсы, которые были отправлены официально. Студент, владеющий отправкой, не может изменить отправленный список без повторной отправки назначения. Это оболочка для реального ресурса и может содержать указатель на фактический ресурс назначения, если этот ресурс был скопирован из назначения.
+title: Список submittedResources
+description: Список ресурсов, которые были официально отправлены для классификации. Учащийся, которому принадлежит отправка, не может изменить отправленный список без повторной отправки задания. Это оболочка для реального ресурса, которая может содержать указатель на фактический ресурс назначения, если этот ресурс был скопирован из назначения.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0d2301bae65555cddcba22766b6766c0e7ebf24c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 43339285a6b98b572d252f754727432d9eba47cf
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403376"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271955"
 ---
-# <a name="list-submittedresources"></a>Список Субмиттедресаурцес
+# <a name="list-submittedresources"></a>Список submittedResources
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечислите ресурсы, которые были отправлены официально. Студент, владеющий отправкой, не может изменить отправленный список без повторной отправки назначения. Это оболочка для реального ресурса и может содержать указатель на фактический ресурс назначения, если этот ресурс был скопирован из назначения.
+Список ресурсов, которые были официально отправлены для классификации. Учащийся, которому принадлежит отправка, не может изменить отправленный список без повторной отправки задания. Это оболочка для реального ресурса, которая может содержать указатель на фактический ресурс назначения, если этот ресурс был скопирован из назначения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -42,10 +42,10 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.
+## <a name="response"></a>Ответ
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [educationSubmissionResource](../resources/educationsubmissionresource.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -98,9 +98,9 @@ Content-length: 1045
                   "displayName": null
               }
           },
-        "link": "https://www.microsoft.com
-        },
-        "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
+          "link": "https://www.microsoft.com"
+      },
+      "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
     }
   ]
 }

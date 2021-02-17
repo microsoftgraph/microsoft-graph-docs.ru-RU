@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ad167c9145cebb965ec807a88c58588b3a8a1c8
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: db40c6412f022ce9ba94619005ab2ebcf60e3dab
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158508"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272186"
 ---
 # <a name="devicecompliancescriptdevicestate-resource-type"></a>Тип ресурса deviceComplianceScriptDeviceState
 
@@ -37,7 +37,7 @@ ms.locfileid: "50158508"
 |id|String|Ключ объекта состояния устройства для сценария соответствия требованиям. Это свойство доступно только для чтения.|
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Состояние обнаружения из последнего выполнения сценария соответствия устройств требованиям. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|Последняя временная запамяка выполнения сценария соответствия устройств требованиям|
-|expectedStateUpdateDateTime|DateTimeOffset|Следующая временная заметив, когда должен выполняться сценарий соответствия устройств|
+|expectedStateUpdateDateTime|DateTimeOffset|Следующая временная заметив, когда ожидается выполнение сценария соответствия устройств требованиям|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации расширения управления Intune с Intune|
 |scriptOutput|String|Выходные данные сценария обнаружения|
 |scriptError|String|Ошибка сценария обнаружения|

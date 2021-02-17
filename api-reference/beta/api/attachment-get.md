@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: abe9ef81f8b00fdbac85cc9ff44cde1fffb4c10e
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 0c4126ae9396c8afab1ee77a36cf35a1c91c8708
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176943"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272172"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
@@ -24,8 +24,8 @@ ms.locfileid: "50176943"
 
 Допустимые типы вложений:
 
-* Файл. На программном уровне это ресурс [fileAttachment](../resources/fileattachment.md). См. [пример 1.](#example-1-get-the-properties-of-a-file-attachment)
-* Элемент Outlook (контакт, событие или сообщение). На программном уровне вложением элемента является ресурс [itemAttachment](../resources/itemattachment.md). Вы можете использовать для дальнейшего получения свойств этого элемента, включая любые вложенные вложения до `$expand` 30 уровней. См. [пример 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) [и пример 4.](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)
+* Файл. На программном уровне это ресурс [fileAttachment](../resources/fileattachment.md). См. [пример 1](#example-1-get-the-properties-of-a-file-attachment).
+* Элемент Outlook (контакт, событие или сообщение). На программном уровне вложением элемента является ресурс [itemAttachment](../resources/itemattachment.md). Вы можете использовать параметр `$expand`, чтобы получить дополнительные свойства этого элемента, включая любые вложения (до 30 уровней). См. [пример 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) и [пример 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
 * Ссылка на файл, хранящийся в облаке. На программном уровне это ресурс [referenceAttachment](../resources/referenceattachment.md). См. [пример 5](#example-5-get-the-properties-of-a-reference-attachment).
 
 Все эти типы вложений являются производными от ресурса [attachment](../resources/attachment.md). 
@@ -139,7 +139,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 Этот метод поддерживает некоторые [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Используется для получения свойств вложения элемента `$expand` (контакт, событие или сообщение). См. [пример 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) [и пример 4.](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)
+Используйте параметр `$expand`, чтобы получить свойства вложения элемента (контакта, события или сообщения). См. [пример 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) и [пример 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -147,11 +147,11 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха метод GET возвращает `200 OK` код отклика. 
 
@@ -402,9 +402,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>Пример 4. Раз развернуть и получить свойства элемента, вложенного в сообщение, включая вложение в элемент
+### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>Пример 4. Развертывание и получение свойств элемента, вложенного в сообщение, включая любые вложения элемента
 #### <a name="request"></a>Запрос
-В следующем примере используется тот же запрос, что и в примере [3,](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) чтобы получить свойства вложения элемента в сообщении с помощью `$expand` . В этом случае, так как вложенный элемент также содержит вложенный файл, ответ также включает свойства вложенного файла. 
+В следующем примере используется тот же запрос, что и в [примере 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message), чтобы получить свойства вложения элемента в сообщении с помощью параметра `$expand`. В данном случае, так как вложенный элемент также содержит вложенный файл, в отклик также включаются свойства вложенного файла. 
 
 <!-- {
   "blockType": "request",
@@ -412,7 +412,7 @@ Content-type: application/json
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
@@ -505,7 +505,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>Пример 5. Получите свойства эталонного вложения
+### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>Пример 5. Получение свойств вложенной ссылки
 
 #### <a name="request"></a>Запрос
 
@@ -572,7 +572,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-6-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Пример 6. Просмотр необработанных содержимого вложенного файла в сообщении
+### <a name="example-6-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Пример 6. Получение необработанного содержимого вложенного файла в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -603,7 +603,7 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Пример 7. Получите необработанные содержимого MIME вложения контакта в сообщении
+### <a name="example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Пример 7. Получение необработанного содержимого MIME вложенного контакта в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -652,7 +652,7 @@ END:VCARD
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Пример 8. Получите необработанные содержимого MIME вложения события в сообщении
+### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Пример 8. Получение необработанного содержимого MIME вложенного события в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -732,7 +732,7 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Пример 9. Просмотр необработанных содержимого MIME вложенного элемента приглашения на собрание в сообщении
+### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Пример 9. Получение необработанного содержимого MIME вложенного элемента приглашения на собрание в сообщении
 
 #### <a name="request"></a>Запрос
 
