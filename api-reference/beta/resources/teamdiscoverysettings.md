@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Теамдисковерисеттингс
+title: Тип ресурса teamDiscoverySettings
 description: Параметры для настройки возможности обнаружения команды другими пользователями.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f26c47b2e1863c3108bc23f7c388179bd8006156
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edc3c6cc446e35f2f5a97212d3c0b6f69b81ce30
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046666"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292915"
 ---
-# <a name="teamdiscoverysettings-resource-type"></a><span data-ttu-id="5f0e6-103">Тип ресурса Теамдисковерисеттингс</span><span class="sxs-lookup"><span data-stu-id="5f0e6-103">teamDiscoverySettings resource type</span></span>
+# <a name="teamdiscoverysettings-resource-type"></a><span data-ttu-id="a8695-103">Тип ресурса teamDiscoverySettings</span><span class="sxs-lookup"><span data-stu-id="a8695-103">teamDiscoverySettings resource type</span></span>
 
-<span data-ttu-id="5f0e6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5f0e6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a8695-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8695-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5f0e6-105">Предоставляет параметры, позволяющие другим пользователям настраивать обнаружение [команды](team.md) .</span><span class="sxs-lookup"><span data-stu-id="5f0e6-105">Provides settings to enable others to configure [team](team.md) discoverability.</span></span> <span data-ttu-id="5f0e6-106">Параметры обнаружения можно изменять только для частных Teams.</span><span class="sxs-lookup"><span data-stu-id="5f0e6-106">You can only modify discovery settings for private teams.</span></span>
+<span data-ttu-id="a8695-105">Предоставляет параметры, позволяющие другим пользователям настраивать [возможность](team.md) обнаружения команд.</span><span class="sxs-lookup"><span data-stu-id="a8695-105">Provides settings to enable others to configure [team](team.md) discoverability.</span></span> <span data-ttu-id="a8695-106">Изменить параметры обнаружения можно только для закрытых команд.</span><span class="sxs-lookup"><span data-stu-id="a8695-106">You can only modify discovery settings for private teams.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5f0e6-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="5f0e6-107">Properties</span></span>
-| <span data-ttu-id="5f0e6-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="5f0e6-108">Property</span></span>     | <span data-ttu-id="5f0e6-109">Тип</span><span class="sxs-lookup"><span data-stu-id="5f0e6-109">Type</span></span>   |<span data-ttu-id="5f0e6-110">Описание</span><span class="sxs-lookup"><span data-stu-id="5f0e6-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a8695-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="a8695-107">Properties</span></span>
+| <span data-ttu-id="a8695-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="a8695-108">Property</span></span>     | <span data-ttu-id="a8695-109">Тип</span><span class="sxs-lookup"><span data-stu-id="a8695-109">Type</span></span>   |<span data-ttu-id="a8695-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a8695-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5f0e6-111">шовинтеамссеарчандсугжестионс</span><span class="sxs-lookup"><span data-stu-id="5f0e6-111">showInTeamsSearchAndSuggestions</span></span>|<span data-ttu-id="5f0e6-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="5f0e6-112">Boolean</span></span>|<span data-ttu-id="5f0e6-113">Если задано значение true, команда становится видимой через поиск и предложения от клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="5f0e6-113">If set to true, the team is visible via search and suggestions from the Teams client.</span></span>|
+|<span data-ttu-id="a8695-111">showInTeamsSearchAndSuggestions</span><span class="sxs-lookup"><span data-stu-id="a8695-111">showInTeamsSearchAndSuggestions</span></span>|<span data-ttu-id="a8695-112">Логический</span><span class="sxs-lookup"><span data-stu-id="a8695-112">Boolean</span></span>|<span data-ttu-id="a8695-113">Если за установлено true, команда будет видна с помощью поиска и предложений из клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="a8695-113">If set to true, the team is visible via search and suggestions from the Teams client.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5f0e6-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5f0e6-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a8695-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a8695-114">JSON representation</span></span>
 
-<span data-ttu-id="5f0e6-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5f0e6-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a8695-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a8695-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,7 +49,6 @@ ms.locfileid: "48046666"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/teamdiscoverysettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
 
