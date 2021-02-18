@@ -1,24 +1,24 @@
 ---
-title: Получение Опеншифтчанжерекуест
-description: Получение свойств и связей объекта Опеншифтчанжерекуест.
+title: Get openShiftChangeRequest
+description: Извлечение свойств и связей объекта openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fccc487c2082fe6a50dcbcabb219190503a39bb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ff9cc4ff991cfbe588dc773446e21cd2889c056
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071936"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292730"
 ---
-# <a name="get-openshiftchangerequest"></a>Получение Опеншифтчанжерекуест
+# <a name="get-openshiftchangerequest"></a>Get openShiftChangeRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) .
+Извлечение свойств и связей объекта [openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48071936"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Group. ReadWrite. ALL, Group. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Group.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -35,7 +35,7 @@ ms.locfileid: "48071936"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+GET /teams/{id}/schedule/openShiftChangeRequests/{openShiftsChangeRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -48,13 +48,13 @@ GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -67,7 +67,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
 ```
 
 ### <a name="response"></a>Отклик

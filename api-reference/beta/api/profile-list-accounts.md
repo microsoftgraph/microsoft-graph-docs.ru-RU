@@ -1,16 +1,16 @@
 ---
 title: Список учетных записей
-description: Получение списка объектов Усераккаунтинформатион.
+description: Получить список объектов userAccountInformation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 46938229882213a818416df37b7a3edb1f9d3336
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44727e74b249828124413c120eb458cd0fd2b5a6
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034849"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292436"
 ---
 # <a name="list-accounts"></a>Список учетных записей
 
@@ -18,7 +18,7 @@ ms.locfileid: "48034849"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получает свойства, связанные с учетными записями пользователя из [профиля](../resources/profile.md).
+Получает свойства, связанные с учетной записью пользователя, из [профиля.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,17 +26,17 @@ ms.locfileid: "48034849"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/accounts
-GET /users/{id | userPrincipalName}/profile/accounts
+GET /me/profile/account
+GET /users/{id | userPrincipalName}/profile/account
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -45,10 +45,10 @@ GET /users/{id | userPrincipalName}/profile/accounts
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .|
+|$filter         |string   |Ограничивает отклик только теми объектами, которые содержат указанные критерии.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в отклике сортируются по их значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$orderby.*|
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
-|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                |
+|$skip           |int      |Пропустите первые n результаты, полезные для разгибания по простоям.                                                                                                                                |
 |$top            |int      |Количество возвращаемых результатов.                                                                                                                                           |
 
 
@@ -63,9 +63,9 @@ GET /users/{id | userPrincipalName}/profile/accounts
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усераккаунтинформатион](../resources/useraccountinformation.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userAccountInformation](../resources/useraccountinformation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -73,28 +73,14 @@ GET /users/{id | userPrincipalName}/profile/accounts
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_account"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/accounts
+GET https://graph.microsoft.com/beta/me/profile/account
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-account-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-account-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>Отклик

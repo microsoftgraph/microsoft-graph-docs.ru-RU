@@ -5,18 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b6f24316e3ad45197b1630fdcdc4e249655ae19b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da155d49eedf03cdc935eeefc6b6808847176a41
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133569"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292716"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 Представляет проверку доступа Azure [AD.](accessreviews-root.md)  
 
@@ -43,17 +45,17 @@ ms.locfileid: "50133569"
 
 | Свойство | Тип   | Описание |
 |:-------- |:---- |:----------- |
-| id | Строка | Уникальный идентификатор проверки доступа, назначенного функции. |
-| displayName | Строка | Имя проверки доступа. Требуется при создании. |
+| id | String | Уникальный идентификатор проверки доступа, назначенного функции. |
+| displayName | String | Имя проверки доступа. Требуется при создании. |
 | startDateTime | DateTimeOffset | Дата и время начала проверки.  Это может быть дата в будущем.  Требуется при создании. |
-| endDateTime | DateTimeOffset | Дата и время окончания проверки. Это должно быть по крайней мере на один день позже даты начала.  Требуется при создании. |
+| endDateTime | DateTimeOffset | Дата и время окончания проверки. Это должно быть по крайней мере на день позже даты начала.  Требуется при создании. |
 | status | String | Это поле, доступное только для чтения, указывает состояние accessReview. Типичные состояния: `Initializing` , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
-| description | Строка | Описание, предоставленное автором проверки доступа, чтобы показать рецензентам. |
-| businessFlowTemplateId | Строка | Идентификатор шаблона бизнес-потока. Требуется при создании.  Это значение с чувствительностью к делу. |
-| reviewerType | Строка | Тип отношения проверяемого с целевым объектом, одним из `self` или `delegated` `entityOwners` . Требуется при создании. | 
+| description | String | Описание, предоставленное автором проверки доступа, чтобы показать рецензентам. |
+| businessFlowTemplateId | String | Идентификатор шаблона бизнес-потока. Требуется при создании.  Это значение с чувствительностью к делу. |
+| reviewerType | String | Тип отношения проверяемого с целевым объектом, одним из `self` или `delegated` `entityOwners` . Требуется при создании. | 
 | createdBy | [userIdentity](useridentity.md) | Пользователь, создавший этот отзыв. |
 | reviewedEntity | [identity](identity.md) | Объект, для которого проверяется доступ, просматривает назначения прав доступа. Это может быть группа для просмотра членства пользователей в группе или приложение для просмотра назначений пользователей приложению. Требуется при создании. | 
-| settings | [accessReviewSettings](accessreviewsettings.md) | Параметры accessReview см. ниже в определении типа. |
+| параметры | [accessReviewSettings](accessreviewsettings.md) | Параметры accessReview см. ниже в определении типа. |
 
 ## <a name="relationships"></a>Связи
 
@@ -72,7 +74,7 @@ ms.locfileid: "50133569"
 | Проверка повторяющегося доступа | Да | Нет | Да |
 | Экземпляр проверки повторяющегося доступа | Да | Да, после начала работы | Нет |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

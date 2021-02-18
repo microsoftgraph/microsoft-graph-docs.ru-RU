@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0abf0f44ec5ace58192ae61238c3ea5843198bc9
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 869a8b3319d1ba2459f3dc7c190f913b4fd61551
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581283"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293059"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -124,16 +124,6 @@ ms.locfileid: "48581283"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'businessPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesLastSyncDateTime' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesSyncEnabled' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationMails' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table."
   ],
   "tocPath": ""
 }-->

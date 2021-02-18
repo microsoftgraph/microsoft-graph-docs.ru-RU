@@ -1,22 +1,22 @@
 ---
-title: 'Опеншифтчанжерекуест: отклонить'
-description: Отклонить Опеншифтчанжерекуест.
+title: 'openShiftChangeRequest: decline'
+description: Отклонение openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dcdc94950ace03452c3e1781b230b01ae0a4db5e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4801239c9d149ce20d056db612e95a3209b8ea5a
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059357"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292366"
 ---
-# <a name="openshiftchangerequest-decline"></a>Опеншифтчанжерекуест: отклонить
+# <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest: decline
 
 Пространство имен: microsoft.graph
 
-Отклонить объект [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) .
+Отклонение [объекта openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,18 +24,18 @@ ms.locfileid: "48059357"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,7 +51,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение об отклонении.|
+|message|String|Пользовательское сообщение об отклонении.|
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +70,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 Content-type: application/json
 
 {

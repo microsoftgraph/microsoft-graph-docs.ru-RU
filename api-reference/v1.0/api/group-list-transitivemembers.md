@@ -1,22 +1,22 @@
 ---
 title: Перечисление транзитивных участников группы
-description: Получение списка членов группы. У группы могут быть пользователи, устройства, организационные контакты и другие группы в качестве участников. Эта операция является транзитивным и возвращает плоский список всех вложенных элементов.
+description: Получите список членов группы. В качестве членов группы могут быть пользователи, устройства, контакты организации и другие группы. Эта операция является транзитивной и возвращает плоский список всех вложенных членов.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b3dfe9ea9de5752187f5b869c00c13486f6a1d90
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 0b428dd011937473d1c860e15b95d11e7171eb92
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082249"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272179"
 ---
 # <a name="list-group-transitive-members"></a>Перечисление транзитивных участников группы
 
 Пространство имен: microsoft.graph
 
-Получение списка членов группы. У группы могут быть пользователи, устройства, организационные контакты и другие группы в качестве участников. Эта операция является транзитивным и возвращает плоский список всех вложенных элементов.
+Получите список членов группы. В качестве членов группы могут быть пользователи, устройства, контакты организации и другие группы. Эта операция является транзитивной и возвращает плоский список всех вложенных членов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "49082249"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Directory. AccessAsUser. ALL, User. ReadBasic. ALL, User. Read. ALL, Application. Read. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory. Read. ALL, User. Read. ALL, Application. Read. ALL |
+|Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
->**Примечание:** Чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
+>**Примечание.** Для получения списка участников скрытой группы членства требуется разрешение Member.Read.Hidden.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -61,7 +61,7 @@ GET /groups/{id}/transitiveMembers
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-transitive-membership-of-a-group"></a>Пример 1: получение транзитивного членства в группе
+### <a name="example-1-get-the-transitive-membership-of-a-group"></a>Пример 1. Просмотр транзитивного членства в группе
 
 #### <a name="request"></a>Запрос
 
@@ -122,7 +122,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-transitive-membership"></a>Пример 2: получение только числа транзитивных участников
+### <a name="example-2-get-only-a-count-of-transitive-membership"></a>Пример 2. Получить только число транзитивных членства
 
 #### <a name="request"></a>Запрос
 
@@ -154,7 +154,7 @@ Content-type: text/plain
 
 `893`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 3: использование функции CAST и $search для получения членства в группах с отображаемыми именами, содержащими уровень, включая количество возвращаемых объектов
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 3. Использование cast и $search OData для получения членства в группах с отображаемой и отображаемой именами, которые содержат буквы "tier", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -197,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4: использование функции CAST и $filter для получения членства пользователя в группах с отображаемым именем, начинающимся с "A", включая количество возвращаемых объектов
+### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4. Использование cast и $filter OData для получения членства пользователей в группах с отображаемой именем, которая начинается с "A", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 

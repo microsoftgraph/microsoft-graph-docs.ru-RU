@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 03b0b359a462e946fa4ceeacfd034c34c826493e
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 21a1ac768ba99b0b095a91f038a9f45e0bb5f8d5
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934627"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292198"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -191,7 +191,7 @@ ms.locfileid: "49934627"
 |preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU". Возвращается по умолчанию.|
 |preferredName|String|Предпочитаемое имя пользователя.|
 |provisionedPlans|Коллекция [provisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается. |
-|proxyAddresses|Коллекция String|Например: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Только для чтения. Значение null не допускается. Поддерживает `$filter`.|
+|proxyAddresses|Коллекция строк|Например: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Только для чтения. Значение null не допускается. Поддерживает `$filter`.|
 |refreshTokensValidFromDateTime|DateTimeOffset|Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
 |responsibilities;|Коллекция строк|Список обязанностей пользователя.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
@@ -550,8 +550,6 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
   "description": "user resource",
   "keywords": "",
   "suppressions" : [
-     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
-      Property 'createdDateTime' found in markdown table but not in resource definition."
   ],
   "section": "documentation",
   "tocPath": ""

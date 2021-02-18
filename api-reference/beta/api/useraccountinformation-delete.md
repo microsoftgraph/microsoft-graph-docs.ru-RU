@@ -1,24 +1,24 @@
 ---
-title: Удаление Усераккаунтинформатион
-description: Удаление объекта Усераккаунтинформатион.
+title: Удаление userAccountInformation
+description: Удаление объекта userAccountInformation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b7df1498260be758fd7c945fe013b09d09e1aed0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30e9a3e098a26e4e490a5f1c1799eca2124edd73
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050299"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291967"
 ---
-# <a name="delete-useraccountinformation"></a>Удаление Усераккаунтинформатион
+# <a name="delete-useraccountinformation"></a>Удаление userAccountInformation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [усераккаунтинформатион](../resources/useraccountinformation.md) из [профиля](../resources/profile.md)пользователя.
+Удаление объекта [userAccountInformation](../resources/useraccountinformation.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48050299"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -35,8 +35,8 @@ ms.locfileid: "48050299"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/accounts/{id}
-DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
+DELETE /me/profile/account/{id}
+DELETE /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,7 +45,7 @@ DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -64,7 +64,7 @@ DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/profile/accounts/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/account/{id}
 ```
 
 ### <a name="response"></a>Отклик

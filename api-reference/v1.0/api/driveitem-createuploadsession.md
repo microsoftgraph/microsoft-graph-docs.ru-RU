@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
 doc_type: apiPageType
-ms.openlocfilehash: 0e4a048f9c2c1db4aabc41a9e11171b759961803
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4a70e038838366b656a4d38d4d118f255794660e
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239907"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292191"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -413,8 +413,6 @@ Content-Type: application/json
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/driveitem-createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

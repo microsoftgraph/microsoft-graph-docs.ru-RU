@@ -1,24 +1,24 @@
 ---
-title: Список Опеншифтчанжерекуестс
-description: Получение списка объектов Опеншифтчанжерекуест в команде.
+title: Список openShiftChangeRequests
+description: Получить список объектов openShiftChangeRequest в команде.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9beb83beff4b2c80ee267f3e967fc12619017e42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e4526bea138c468c7da9642ce11e4629adce3ef
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071922"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292541"
 ---
-# <a name="list-openshiftchangerequests"></a>Список Опеншифтчанжерекуестс
+# <a name="list-openshiftchangerequests"></a>Список openShiftChangeRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в команде.
+Получить список объектов [openShiftChangeRequest](../resources/openshiftchangerequest.md) в команде.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48071922"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Group. ReadWrite. ALL, Group. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Group.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -35,7 +35,7 @@ ms.locfileid: "48071922"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests
+GET /teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -48,13 +48,13 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список объектов [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и список объектов `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -67,7 +67,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ### <a name="response"></a>Отклик

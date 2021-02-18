@@ -1,16 +1,16 @@
 ---
 title: Проверки доступа Azure AD (все ресурсы)
-description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователей. Эта документация предназначена для устаревших API.
+description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя. Эта документация предназначена для устаревших API.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: b2978179dbe581a1013d34e848e9a4c3614d9761
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0c616b20ac6c3dfc00ffdae319978a6bce60db5f
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133464"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292035"
 ---
 # <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Проверки доступа Azure AD (для ресурсов, кроме групп)
 
@@ -18,8 +18,7 @@ ms.locfileid: "50133464"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->API проверки доступа в этом разделе применяются ко всем поддерживаемых типам ресурсов, _кроме групп._ API проверки доступа, которые применяются к членству в группах, см. в отзывах [Access для групп.](accessreviewsv2-root.md) 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 Вы можете использовать проверки [доступа Azure AD,](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя.
 
@@ -34,7 +33,7 @@ ms.locfileid: "50133464"
 Клиенты также могут просмотреть и сертифицировать назначения ролей административных пользователей, которым назначены роли Azure AD, такие как роли глобального администратора или подписки Azure.  Эта возможность включена в [Azure AD Privileged Identity Management.](privilegedidentitymanagement-root.md)
 
 Обратите внимание, что функция проверки доступа, включая API, включена в Azure AD Premium P2.  У клиента, на котором создается проверка доступа, должна быть действительная приобретенная или пробная подписка на Azure AD Premium P2 или EMS E5.
-Перед созданием проверки доступа, управления программой или программой администратор должен предварительно вошел в группу, чтобы подготовить ресурсы [programControlType](programcontroltype.md) и [businessFlowTemplate.](businessflowtemplate.md) Организация может присоединения к проверки доступа Azure AD или, в случае проверки доступа ролей Azure AD или ролей подписки Azure, Azure AD PIM.
+Перед созданием проверки доступа, программы или управления программой администратор должен предварительно вошел в группу, чтобы подготовить ресурсы [programControlType](programcontroltype.md) и [businessFlowTemplate.](businessflowtemplate.md) Организация может присоединения к проверки доступа Azure AD или, в случае проверки доступа ролей Azure AD или ролей подписки Azure, Azure AD PIM.
 
 
 ## <a name="methods"></a>Методы
@@ -52,7 +51,7 @@ ms.locfileid: "50133464"
 |[Добавление рецензента accessReview](../api/accessreview-addreviewer.md) |      Нет.   |   Добавление рецензента в accessReview. |
 |[Удаление рецензента accessReview](../api/accessreview-removereviewer.md) | Нет.  |   Удаление рецензента из accessReview. |
 |[Список решений accessReview](../api/accessreview-listdecisions.md) |      [Коллекция accessReviewDecision](accessreviewdecision.md)| Получите решения accessReview.|
-|[Список решений accessReview](../api/accessreview-listmydecisions.md) |     [Коллекция accessReviewDecision](accessreviewdecision.md)| Как рецензент получите мои решения о accessReview.|
+|[Список решений accessReview](../api/accessreview-listmydecisions.md) |     [Коллекция accessReviewDecision](accessreviewdecision.md)| Как рецензент получите мои решения по accessReview.|
 |[Отправка напоминания accessReview](../api/accessreview-sendreminder.md) |        Нет.   |   Отправьте напоминание рецензентам accessReview. |
 |[Остановка accessReview](../api/accessreview-stop.md) |     Нет.   |   Остановите accessReview. |
 |[Сброс решений accessReview](../api/accessreview-reset.md) |     Нет.   |   Сброс решений в ходе выполнения accessReview.|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 184608404cfff5eda297a184373fc71f88869c4f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9a6dcc39a529f3f2b84070dc0e6d2a0699b988cc
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129543"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292044"
 ---
 # <a name="application-addkey"></a>application: addKey
 
@@ -21,7 +21,7 @@ ms.locfileid: "50129543"
 Добавьте учетные данные ключа в [приложение.](../resources/application.md) Этот метод, наряду [с removeKey,](application-removekey.md)может использоваться приложением для автоматизации перетаскивания ключей окончания срока действия.
 
 > [!NOTE]
-> Вы можете продолжать [](../api/application-post-applications.md) использовать операции [](../api/application-update.md) создания приложения и обновления приложения для добавления и обновления учетных данных ключей для любого приложения с контекстом пользователя или без него. 
+> Вы можете продолжать [](../api/application-post-applications.md) использовать операции [](../api/application-update.md) создания приложения и обновления приложения для добавления и обновления учетных данных ключа для любого приложения с контекстом пользователя или без него. 
 
 В рамках проверки запроса для этого метода перед выполнением действия проверяется подтверждение на владение существующим ключом. 
 
@@ -59,11 +59,11 @@ POST /applications/{id}/addKey
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа приложения, которые необходимо добавить. Свойства __типа,__ __использования__ __и ключа__ являются обязательной для этого использования. Поддерживаемые типы ключей:<br><ul><li>`AsymmetricX509Cert`: использование должно быть `Verify` .</li><li>`X509CertAndPassword`: использование должно быть `Sign`</li></ul>|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа приложения, которые необходимо добавить. __Тип,__ __использование и__ __ключ__ являются свойствами, требуемой для этого использования. Поддерживаемые типы ключей:<br><ul><li>`AsymmetricX509Cert`: использование должно быть `Verify` .</li><li>`X509CertAndPassword`: использование должно быть `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей `X509CertAndPassword` типа. В противном `null` случае.|
-| proof | Строка | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
+| proof | String | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте отклика.
 
@@ -168,7 +168,8 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.keyCredential"
 } -->
 
 ```http
@@ -189,8 +190,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: application_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
-    ]
+  ]
 }-->
 
 

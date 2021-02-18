@@ -1,24 +1,24 @@
 ---
-title: Обновление Усераккаунтинформатион
-description: Обновление свойств объекта Усераккаунтинформатион.
+title: Обновление userAccountInformation
+description: Обновление свойств объекта userAccountInformation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4400d405ec2f8e265fbe8bc34cd7e623475dbcac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8638eeadd59ba7efaae0e6ad32bd4f740dab6d36
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973996"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291995"
 ---
-# <a name="update-useraccountinformation"></a>Обновление усераккаунтинформатион
+# <a name="update-useraccountinformation"></a>Обновление useraccountinformation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [усераккаунтинформатион](../resources/useraccountinformation.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [userAccountInformation](../resources/useraccountinformation.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48973996"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -35,8 +35,8 @@ ms.locfileid: "48973996"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/accounts/{id}
-PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
+PATCH /me/profile/account/{id}
+PATCH /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
 | Имя           |Описание                 |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json. Обязательный |
+| Content-Type   | application/json. Обязательна |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,14 +52,14 @@ PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|String|Содержит двухбуквенный код страны, связанный с учетной записью пользователя.  |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|преферредлангуажетаг|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал с учетной записью как предпочитаемый.   |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется [от itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|String|Содержит двух символьный код страны, связанный с учетной записью пользователя.  |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если сущность создается или изменяется приложением. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал как предпочтительный для учетной записи.   |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усераккаунтинформатион](../resources/useraccountinformation.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userAccountInformation](../resources/useraccountinformation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

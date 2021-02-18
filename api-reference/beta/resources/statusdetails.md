@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Статусдетаилс
-description: Описывает состояние события подготовки и связанных с ним ошибок.
+title: Тип ресурса statusDetails
+description: Описывает состояние события предоставления и связанные ошибки.
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 16f014ebc3a188644784434a69e13917f05beaae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81ea4a75970e37a360c402aced66f01ccb9e7c47
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029024"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292614"
 ---
-# <a name="statusdetails-resource-type"></a>Тип ресурса Статусдетаилс
+# <a name="statusdetails-resource-type"></a>Тип ресурса statusDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает состояние события подготовки и связанных с ним ошибок. Он наследуется от [статусбасе](/graph/api/resources/statusbase?view=graph-rest-beta) и используется только в том случае, если для параметра Status задано значение "failure".  
+Описывает состояние события предоставления и связанные ошибки. Он наследуется от [statusBase и](/graph/api/resources/statusbase) используется только в том случае, если задан статус `failure` .  
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|status|String|Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`. Наследуется от Статусбасе.|
+|status|String|Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`. Наследуется от statusBase.|
 |additionalDetails|String|Дополнительные сведения в случае ошибки.|
-|errorCategory|String|Классификация кода ошибки.|
-|errorCode|String|Уникальный код ошибки (при возникновении ошибки).|
-|reason|String|Сводка состояния и описание причин возникновения состояния.|
-|рекоммендедактион|String|Предоставляет решение для соответствующей ошибки.|
+|errorCategory|String|Классифицировать код ошибки. Возможные значения: `Failure`, `NonServiceFailure`, `Success`.|
+|errorCode|String|Уникальный код ошибки, если таковое произошло. [Подробнее](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|reason|String|Суммирует состояние и описывает, почему это состояние произошло.|
+|recommendedAction|String|Предоставляет разрешение соответствующей ошибки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

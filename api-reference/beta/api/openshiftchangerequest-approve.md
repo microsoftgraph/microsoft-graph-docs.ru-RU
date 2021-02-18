@@ -1,24 +1,24 @@
 ---
-title: 'Опеншифтчанжерекуест: утверждение'
-description: Утверждение запроса опеншифт.
+title: 'openShiftChangeRequest: утвердить'
+description: Утверждение запроса openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37af35af00f6c5f0253580f5d5034cfbd8e1f3bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ee856fef01a992eb5a1e82776d44a414ed9f888
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019910"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292450"
 ---
-# <a name="openshiftchangerequest-approve"></a>Опеншифтчанжерекуест: утверждение
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: утвердить
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Утверждение объекта [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) .
+Утверждение объекта [openshiftchangerequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,7 +35,7 @@ ms.locfileid: "48019910"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,7 +51,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/ap
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение утверждения.|
+|message|String|Пользовательское сообщение об утверждении.|
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +70,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/ap
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {

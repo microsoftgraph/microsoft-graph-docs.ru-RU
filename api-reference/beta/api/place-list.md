@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6232c19bb3f9e1c8f24908b017625ec6cc00985b
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 81447b77efb0ee518aaaf33ecb8e1b4262660163
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059737"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292149"
 ---
 # <a name="list-places"></a>Места списка
 
@@ -37,9 +37,9 @@ ms.locfileid: "50059737"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Place.Read.All |
+| Делегированные (рабочая или учебная учетная запись)     | Place.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение                            | Place.Read.All |
+| Для приложений                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -83,11 +83,11 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов-мест](../resources/place.md) в тексте отклика.
 
@@ -402,7 +402,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
 

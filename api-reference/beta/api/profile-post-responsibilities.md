@@ -1,21 +1,21 @@
 ---
 title: Создание обязанностей
-description: Создание нового объекта обязанностей.
+description: Создайте новый объект ответственности.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9c0907217bd75b79bc7e200dfc5d9deb901a2bfe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f46a7ba7e7e2d0a6b0d51d16059b78d286fe8e5a
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034349"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292345"
 ---
-# <a name="create-personresponsibility"></a>Создание Персонреспонсибилити
+# <a name="create-personresponsibility"></a>Создание personResponsibility
 Пространство имен: microsoft.graph
 
-Создание нового объекта [персонреспонсибилити](../resources/personresponsibility.md) в [профиле](../resources/profile.md)пользователя.
+Создание объекта [personResponsibility](../resources/personresponsibility.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "48034349"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -34,8 +34,8 @@ ms.locfileid: "48034349"
 }
 -->
 ``` http
-POST /me/profile/responsibilities
-POST /users/{id | userPrincipalName}/profile/responsibilities
+POST /me/responsibilities
+POST /users/{id | userPrincipalName}/responsibilities
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,34 +45,33 @@ POST /users/{id | userPrincipalName}/profile/responsibilities
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [персонреспонсибилити](../resources/personresponsibility.md) в формате JSON.
+В теле запроса укажу представление объекта [personResponsibility](../resources/personresponsibility.md) в JSON.
 
-В следующей таблице приведены свойства, которые можно задать в новом объекте [персонреспонсибилити](../resources/personresponsibility.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно настроить в новом объекте [personResponsibility](../resources/personresponsibility.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется [от itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|collaborationTags|Коллекция строк|Содержит теги сценария работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , , `wantsToLearn` `wantsToImprove` .|
 |description|String|Описание ответственности.|
-|displayName|String|Содержит понятное имя для ответственности. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|webUrl|String|Содержит ссылку на веб-страницу или ресурс, отвечающие за ответственность.|
+|displayName|String|Содержит удобное имя для ответственности. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если сущность создается или изменяется приложением. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникают, если синхронизированы из другой службы. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|webUrl|String|Содержит ссылку на веб-страницу или ресурс об ответственности.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [персонреспонсибилити](../resources/personannotation.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [personResponsibility](../resources/personannotation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_personresponsibility_from_profile"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/responsibilities
+POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
 Content-length: 413
 
@@ -84,19 +83,6 @@ Content-length: 413
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>Отклик
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

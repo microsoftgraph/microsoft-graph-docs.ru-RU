@@ -1,24 +1,24 @@
 ---
-title: 'Опеншифтчанжерекуест: отклонить'
-description: Отклонить запрос опеншифт.
+title: 'openShiftChangeRequest: decline'
+description: Отклонение запроса openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 60135908638b6cb3e956ca864e4b0a53da352489
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 766faedd7fb46fb3cd6cf8434c2987e26a0ba96b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019908"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292443"
 ---
-# <a name="openshiftchangerequest-decline"></a>Опеншифтчанжерекуест: отклонить
+# <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest: decline
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отклонить объект [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) .
+Отклонение [объекта openshiftchangerequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,7 +35,7 @@ ms.locfileid: "48019908"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,13 +44,13 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение об отклонении.|
+|message|String|Пользовательское сообщение об отклонении.|
 
 ## <a name="response"></a>Отклик
 
@@ -69,7 +69,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 Content-type: application/json
 
 {

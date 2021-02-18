@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c33849920a06154f0c2a0ac781dcd5cdf64fa51f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 52d4e2a262d3a90010cc0e254e11f2d723a5e550
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133520"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292695"
 ---
 # <a name="accessreviewdecision-resource-type"></a>Тип ресурса accessReviewDecision
 
@@ -18,7 +18,9 @@ ms.locfileid: "50133520"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [проверки](accessreviews-root.md) доступа Azure AD эта функция представляет решение о проверке доступа Azure AD для доступа `accessReviewDecision` определенной сущности.  В рамках проверки доступа или экземпляра рецензии на повторяющийся доступ имеется один экземпляр для `accessReviewDecision` каждого проверяемого пользователя.  Например, если группа имеет двух гостей и одного не из них в качестве участников, а для нее выполняется проверка доступа гостей, то будут два объекта принятия решений для проверки доступа.  Если рецензент изменяет свое решение или другой рецензент переопределяет его, то `accessReviewDecision` обновляется.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В функции [проверки](accessreviews-root.md) доступа Azure AD эта функция представляет решение о проверке доступа Azure AD для доступа `accessReviewDecision` определенной сущности.  В рамках проверки доступа или экземпляра рецензии на повторяющийся доступ имеется один экземпляр для `accessReviewDecision` каждого проверяемого пользователя.  Например, если группа состоит из двух гостей и одного не гостя в качестве участников, а для нее выполняется проверка доступа гостей, то будут два объекта принятия решений для проверки доступа.  Если рецензент изменяет свое решение или другой рецензент переопределяет его, то `accessReviewDecision` обновляется.
 
 
 ## <a name="methods"></a>Методы
@@ -34,11 +36,11 @@ ms.locfileid: "50133520"
 | `id`                            |`String`                      | ИД решения в рамках проверки доступа.                                                                                     |
 | `accessReviewId`                |`String`                      | Созданный функцией ид проверки доступа.                                                                                       |
 | `reviewedBy`                    |[userIdentity](useridentity.md)| Удостоверение проверяющего. Если рекомендация использовалась в качестве отзыва, userPrincipalName пуст.                                                                                      |
-| `reviewedDate`                  |`DateTimeOffset`              | Дата и время последнего отзыва для этого права доступа.                                                                         |
+| `reviewedDate`                  |`DateTimeOffset`              | Дата и время последней проверки для этого права доступа.                                                                         |
 | `reviewResult`                  |`String`                      | Результат проверки, один из `NotReviewed` `Deny` , или `DontKnow` `Approve` .                                                                                    |
 | `justification`                 |`String`                      | Бизнес-обоснование проверяемой, если она предоставлена.                                                                         |
 | `appliedBy`                     |[userIdentity](useridentity.md)| После завершения проверки, если результаты были применены вручную, удостоверение пользователя, который применил решение. Если отзыв был применен автоматически, userPrincipalName пуст.                                                          |
-| `appliedDateTime`               |`DateTimeOffset`              | Дата и время принятия решения об отзыве.                                                          |
+| `appliedDateTime`               |`DateTimeOffset`              | Дата и время принятия решения о проверке.                                                          |
 | `applyResult`                   |`String`                      | Результат применения решения, один из `NotApplied` `Success` , , или `Failed` `NotFound` `NotSupported` .                      |
 | `accessRecommendation`          |`String`                      | Рекомендация, сгенерированная функцией, показанная рецензенту, одна из или `Approve` `Deny` `NotAvailable` . |
 
@@ -49,7 +51,7 @@ ms.locfileid: "50133520"
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `userId`                            |`String`                      | ИД пользователя, доступ к которым был рассмотрен.                                                                                    |
 | `userDisplayName`                            |`String`                      | Отображаемого имени пользователя, доступ к которым был рассмотрен.                                                                                     |
-| `userPrincipalName`                            |`String`                      | Имя пользователя, доступ к которым был проанализировано.                                                                                     |
+| `userPrincipalName`                            |`String`                      | Имя пользователя, доступ к которым был рассмотрен.                                                                                     |
 
 
 
@@ -64,7 +66,7 @@ ms.locfileid: "50133520"
 |[Список решений accessReview](../api/accessreview-listdecisions.md) |      [Коллекция accessReviewDecision](accessreviewdecision.md)| Получите решения accessReview.|
 |[Список решений accessReview](../api/accessreview-listmydecisions.md) |     [Коллекция accessReviewDecision](accessreviewdecision.md)| Как рецензент получите мои решения по accessReview.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

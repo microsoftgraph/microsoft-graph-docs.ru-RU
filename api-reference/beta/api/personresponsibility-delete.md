@@ -1,21 +1,21 @@
 ---
-title: Удаление Персонреспонсибилити
-description: Удаляет объект Персонреспонсибилити.
+title: Удаление personResponsibility
+description: Удаляет объект personResponsibility.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8e5ae2fecc8c1845712b1d15161694da9c215ae1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17ce90f05b52cb05c3030ceff0fb3312f71466ef
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986240"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292723"
 ---
-# <a name="delete-personresponsibility"></a>Удаление Персонреспонсибилити
+# <a name="delete-personresponsibility"></a>Удаление personResponsibility
 Пространство имен: microsoft.graph
 
-Удаляет объект [персонреспонсибилити](../resources/personresponsibility.md) из [профиля](../resources/profile.md)пользователя.
+Удаляет объект [personResponsibility](../resources/personresponsibility.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "47986240"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -34,8 +34,8 @@ ms.locfileid: "47986240"
 }
 -->
 ``` http
-DELETE /me/profile/responsibilities/{id}
-DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
+DELETE /me/responsibilities/{id}
+DELETE /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -60,7 +60,7 @@ DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+DELETE https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 ```
 
 ### <a name="response"></a>Отклик

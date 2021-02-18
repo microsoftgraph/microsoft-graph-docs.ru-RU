@@ -1,24 +1,24 @@
 ---
-title: Обновление Онлинемитинг
+title: Обновление onlineMeeting
 description: Обновление свойств собрания по сети.
 author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0db330c3bf6bbf182e1b3242a31c5df2c48527e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6699071afe0fb8b7e6ec2183e29785558a2c5d48
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980110"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292170"
 ---
-# <a name="update-onlinemeeting"></a>Обновление Онлинемитинг
+# <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств **startDateTime** , **endDateTime** , **участников** и **субъекта** указанного [онлинемитинг](../resources/onlinemeeting.md).
+Обновление свойств **startDateTime,** **endDateTime,** **участников** и темы указанного [объекта onlineMeeting.](../resources/onlinemeeting.md) 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,26 +29,24 @@ ms.locfileid: "48980110"
 | Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, доставке приложения, настроенного в политике, для обновления собраний по сети от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
+> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, разрешив приложению, настроенное в политике, обновлять собрание по сети от имени этого пользователя (ид пользователя, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
-
-Запрос с помощью делегированного маркера:
+Обновление указанного onlineMeeting с помощью ИД собрания с помощью делегирования маркера:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
+PATCH /me/onlineMeetings/{meetingId}
 ```
 
-Запрос с помощью маркера приложения:
+Обновление указанного onlineMeeting с помощью ИД собрания с помощью маркера приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > **Примечания.**
->
-> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy).
-> - `meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).
+> - `userId`— это ИД объекта пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения [см. в политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `meetingId`— **это ид** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание                 |
@@ -57,7 +55,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON. Можно изменить только свойства **startDateTime** , **endDateTime** , **Участники** и **subject** . **StartDateTime** и **endDateTime** должны указываться парами.
+В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON. Изменять можно **только свойства startDateTime,** **endDateTime,** **участников** и темы.  **StartDateTime** и **endDateTime** должны отображаться парами.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.

@@ -1,21 +1,21 @@
 ---
 title: Создание учетной записи
-description: Создайте новый объект Account.
+description: Создание объекта учетной записи.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bddb2367a3f5c595fbca2609e9ec42cce7a677be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1fb13f513450515361f2bdb15ebfd7461635e1c
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034538"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292975"
 ---
 # <a name="create-account"></a>Создание учетной записи
 Пространство имен: microsoft.graph
 
-Создание нового объекта [усераккаунтинформатион](../resources/useraccountinformation.md) в [профиле](../resources/profile.md)пользователя.
+Создание объекта [userAccountInformation](../resources/useraccountinformation.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "48034538"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -34,8 +34,8 @@ ms.locfileid: "48034538"
 }
 -->
 ``` http
-POST /me/profile/accounts
-POST /users/{id | userPrincipalName}/profile/accounts
+POST /me/profile/account
+POST /users/{id | userPrincipalName}/profile/account
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,32 +45,31 @@ POST /users/{id | userPrincipalName}/profile/accounts
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [усераккаунтинформатион](../resources/useraccountinformation.md) в формате JSON.
+В теле запроса укажу представление объекта [userAccountInformation](../resources/useraccountinformation.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании нового объекта [усераккаунтинформатион](../resources/useraccountinformation.md) .
+В следующей таблице показаны свойства, необходимые при создании объекта [userAccountInformation.](../resources/useraccountinformation.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|String|Содержит двухбуквенный код страны, связанный с учетной записью пользователя.  |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|преферредлангуажетаг|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал с учетной записью как предпочитаемый.   |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется [от itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|String|Содержит двух символьный код страны, связанный с учетной записью пользователя.  |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если сущность создается или изменяется приложением. Наследуется [от itemFacet](../resources/itemfacet.md).|
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал как предпочтительный для учетной записи.   |
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникают, если синхронизированы из другой службы. Наследуется [от itemFacet](../resources/itemfacet.md).|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усераккаунтинформатион](../resources/useraccountinformation.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [userAccountInformation](../resources/useraccountinformation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_useraccountinformation_from_profile"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/accounts
+POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
 Content-length: 494
 
@@ -79,19 +78,6 @@ Content-length: 494
   "countryCode": "NO",
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-useraccountinformation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-useraccountinformation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>Отклик
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

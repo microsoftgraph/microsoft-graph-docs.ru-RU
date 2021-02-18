@@ -1,20 +1,20 @@
 ---
-title: Тип ресурса "поставщики"
-description: Объект Vendor в Dynamics 365 Business Central.
+title: Тип ресурса vendors
+description: Объект поставщика в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: a2102a77748ebef8267792a887a522fa716619ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0848b6fbb67964faa9565f2ed95120f563c71f53
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040049"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293073"
 ---
-# <a name="vendors-resource-type"></a>Тип ресурса "поставщики"
+# <a name="vendors-resource-type"></a>Тип ресурса vendors
 
 Пространство имен: microsoft.graph
 
@@ -26,31 +26,31 @@ ms.locfileid: "48040049"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение поставщиков](../api/dynamics-vendor-get.md)|поставщиков|Возвращает объект Vendor.|
-|[Учет поставщиков](../api/dynamics-create-vendor.md)|поставщиков|Создает объект Vendor.|
-|[Поставщики обновлений](../api/dynamics-vendor-update.md)|поставщиков|Обновляет объект Vendor.|
-|[Удаление поставщика](../api/dynamics-vendor-delete.md)|Нет|Удаляет объект Vendor.|
+|[Получить поставщиков](../api/dynamics-vendor-get.md)|поставщики|Получает объект поставщика.|
+|[Поставщики post](../api/dynamics-create-vendor.md)|поставщики|Создает объект поставщика.|
+|[Поставщики исправлений](../api/dynamics-vendor-update.md)|поставщики|Обновляет объект поставщика.|
+|[Удаление поставщика](../api/dynamics-vendor-delete.md)|Нет|Удаляет объект поставщика.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор поставщика. Не редактируемые.|
-|число|string|Номер поставщика.|
-|displayName|string|Отображаемое имя поставщика.|
-|address|[Навигационная. посталаддресс](../resources/dynamics-complextypes.md)|Адрес поставщика.|
-|phoneNumber|string|Номер телефона поставщика.|
+|id|GUID|Уникальный ИД поставщика. Нередактируемое.|
+|число|Строка|Номер поставщика.|
+|displayName|string|Отображаемая фамилия поставщика.|
+|address|[NAV. PostalAddress](../resources/dynamics-complextypes.md)|Адрес поставщика.|
+|phoneNumber|Строка|Номер телефона поставщика.|
 |email|строка|Адрес электронной почты поставщика.|
-|веб-сайт|string|Адрес веб-сайта поставщика.|
-|таксрегистратионнумбер|string|Регистрационный номер налогоплательщика поставщика.|
-|курренциид|GUID|Идентификатор кода валюты по умолчанию для поставщика.|
-|курренцикоде|string|Код валюты по умолчанию для поставщика.|
-|irs1099Code|string|Указывает код 1099 для поставщика. Только для США.|
-|пайменттермсид|GUID|КОД условий оплаты для поставщика по умолчанию.|
-|пайментмесодид|GUID|Идентификатор метода оплаты по умолчанию для поставщика.|
-|такслиабле|boolean|Указывает, является ли поставщик подлежащей налогообложению.|
-|заблокированных|string|Указывает, какие транзакции у поставщика, который не может быть разнесен. Допустимые значения: пусто, оплата или все|
-|равномерно|decimal|Сальдо поставщика. Только для чтения.|
-|lastModifiedDateTime|datetime|Дата и время последнего изменения поставщика. Только для чтения.|  
+|веб-сайт|Строка|Адрес веб-сайта поставщика.|
+|taxRegistrationNumber|Строка|Номер регистрации налога поставщика.|
+|currencyId|GUID|Код валюты по умолчанию для поставщика.|
+|currencyCode|Строка|Код валюты по умолчанию для поставщика.|
+|irs1099Code|Строка|Указывает код 1099 для поставщика. Только для США.|
+|paymentTermsId|GUID|ИД условий оплаты по умолчанию для поставщика.|
+|paymentMethodId|GUID|ИД метода оплаты по умолчанию для поставщика.|
+|taxLiable|boolean|Указывает, несет ли поставщик ответственность за налоги.|
+|blocked|Строка|Указывает, какие транзакции с поставщиком не могут быть опубликованы. Accepted values are blank, Payment or All|
+|balance|decimal|Баланс поставщика. Только для чтения.|
+|lastModifiedDateTime|datetime|Дата последнего изменения поставщика. Только для чтения.|  
 
 
 ## <a name="relationships"></a>Связи
@@ -58,7 +58,14 @@ ms.locfileid: "48040049"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление поставщика в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.vendor"
+}-->
+
+Вот представление поставщика в JSON.
 
 ```json
 {
@@ -80,7 +87,6 @@ ms.locfileid: "48040049"
   "balance": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 

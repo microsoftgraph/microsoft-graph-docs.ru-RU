@@ -1,24 +1,24 @@
 ---
-title: 'Онлинемитинг: Креатеоржет'
-description: Создайте собрание по сети с настраиваемым указанным внешним ИДЕНТИФИКАТОРом. Если внешний идентификатор уже существует, этот API возвратит объект Онлинемитинг с этим внешним ИДЕНТИФИКАТОРом.
+title: 'onlineMeeting: createOrGet'
+description: Создание собрания по сети с пользовательским указанным внешним ИД. Если внешний ИД уже существует, этот API возвращает объект onlineMeeting с этим внешним ИД.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51e619e6f09f98fcaa12423881a930df72c0597a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b87e7c0360302bc181811d5550834e9f8d4ca99e
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980159"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293038"
 ---
-# <a name="onlinemeeting-createorget"></a>Онлинемитинг: Креатеоржет
+# <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [онлинемитинг](../resources/onlinemeeting.md) с настраиваемым указанным внешним идентификатором. Если внешний идентификатор уже существует, этот API возвратит объект [онлинемитинг](../resources/onlinemeeting.md) с этим внешним идентификатором. 
+Создание объекта [onlineMeeting](../resources/onlinemeeting.md) с пользовательским указанным внешним ИД. Если внешний ИД уже существует, этот API возвращает объект [onlineMeeting](../resources/onlinemeeting.md) с этим внешним ИД. 
 
 > **Примечание.** Собрание не отображается в календаре пользователя.
 
@@ -32,17 +32,16 @@ ms.locfileid: "48980159"
 | Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, дополнив авторизацию приложения, настроенного в политике, чтобы создать или получить собрание по сети с внешним идентификатором от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
+> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, разрешив приложению, настроенном в политике, создавать или получать собрание по сети с внешним ИД от имени этого пользователя (ид пользователя, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
-
-Запрос при использовании токена делегирования:
+Вызов **API createOrGet** с делегированным маркером:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-Запрос при использовании токена приложения:
+Вызов **API createOrGet** с маркером приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
@@ -61,29 +60,29 @@ POST /users/{userId}/onlineMeetings/createOrGet
 
 | Параметр     | Тип                                                       | Описание                                                                                          |
 | :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | Сведения о чате, связанные с этим собранием по сети.                                            |
-| endDateTime   | DateTime                                                   | Время окончания собрания в формате UTC.                                                                         |
-| externalId    | String                                                     | Внешний идентификатор. Настраиваемый идентификатор. Потребоваться                                                             |
-| participants  | [митингпартиЦипантс](../resources/meetingparticipants.md) | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
-| startDateTime | DateTime                                                   | Время начала собрания в формате UTC.                                                                       |
+| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | Сведения чата, связанные с этим собранием по сети.                                            |
+| endDateTime   | DateTime                                                   | Время окончания собрания в UTC.                                                                         |
+| externalId    | String                                                     | Внешний ИД. Настраиваемый ИД. (Обязательно)                                                             |
+| participants  | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с собранием по сети.  К ним относятся организатор и участники. |
+| startDateTime | DateTime                                                   | Время начала собрания в UTC.                                                                       |
 | subject       | String                                                     | Тема собрания по сети.                                                                   |
 
 > **Примечания.**
 >
-> - Если **startDateTime** и **endDateTime** не указаны, то **startDateTime** по умолчанию будет иметь текущее значение DateTime, а значение **endDateTime** будет равно **startDateTime** + 1 час.
+> - Если **значения startDateTime** и **endDateTime** не предоставлены, **значение startDateTime** по умолчанию будет равно текущему значению dateTime, а **значение endDateTime** равно **startDateTime** + 1 часу.
 >
-> - Если предоставлено значение **startDateTime** , но значение **endDateTime** не задано, значение **endDateTime** будет равно **startDateTime** + 1 час.
+> - Если значение **startDateTime** предоставлено, а **endDateTime** — нет, значение **endDateTime** будет равно **startDateTime** + 1 часу.
 >
-> - Если **endDateTime** предоставляется без **startDateTime** или **endDateTime** более ранней версии, чем **startDateTime** , будет выдаваться сообщение об ошибке.
+> - Ошибка будет выброшена, если **endDateTime** предоставляется без **startDateTime** или **если endDateTime** **раньше, чем startDateTime.**
 >
-> - В настоящее время **чатинфо** поддерживается только в бета-версии.
+> - В **настоящее время chatInfo** поддерживается только в бета-версии.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если создается новое собрание, или `200 OK` код ответа при получении существующего собрания. В обоих случаях объект [онлинемитинг](../resources/onlinemeeting.md) возвращается в теле отклика.
+## <a name="response"></a>Ответ
+В случае успеха этот метод возвращает код ответа, если создано новое собрание, или код ответа при извлечении `201 Created` `200 OK` существующего собрания. В обоих случаях объект [onlineMeeting](../resources/onlinemeeting.md) возвращается в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-or-get-an-online-meeting-with-an-external-id"></a>Пример 1: создание или получение собрания по сети с внешним ИДЕНТИФИКАТОРом
+### <a name="example-1-create-or-get-an-online-meeting-with-an-external-id"></a>Пример 1. Создание или создание собрания по сети с внешним ИД
 
 #### <a name="request"></a>Запрос
 
@@ -207,7 +206,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>Пример 2: создание или получение собрания по сети в канале Microsoft Teams с внешним ИДЕНТИФИКАТОРом
+### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>Пример 2. Создание или создание собрания по сети в канале Microsoft Teams с внешним ИД
 
 #### <a name="request"></a>Запрос
 

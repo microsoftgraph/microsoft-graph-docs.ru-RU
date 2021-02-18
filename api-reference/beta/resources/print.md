@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса Print
-description: С помощью универсальной подписки на печать функция печати позволяет управлять принтерами и обнаруживать Принтсервицеендпоинтс, которые можно использовать для управления принтерами и заданиями печати в универсальной печати.
+title: Тип ресурса print
+description: При подписке на универсальную печать функция печати позволяет управлять принтерами и обнаруживать точки printServiceEndpoints, которые можно использовать для управления принтерами и заданиями печати в универсальной печати.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 309b7c8e62b94703bb00e21fb8c8ed2a2e917efe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0604044824d153c9e6d39586c2ca58ee9ca893ea
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985890"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292261"
 ---
-# <a name="print-resource-type"></a>Тип ресурса Print
+# <a name="print-resource-type"></a>Тип ресурса print
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью универсальной подписки на печать функция печати позволяет управлять принтерами и обнаруживать [принтсервицеендпоинтс](printserviceendpoint.md) , которые можно использовать для управления принтерами и заданиями печати в универсальной печати.
+При подписке на универсальную печать функция печати позволяет управлять принтерами и обнаруживать точки [printServiceEndpoints,](printserviceendpoint.md) которые можно использовать для управления принтерами и заданиями печати в универсальной печати.
 
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление соединителей](../api/print-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей печати. |
-| [Перечисление принтеров](../api/print-list-printers.md) | Коллекция [принтеров](printer.md) | Получение списка принтеров. |
-| [Перечисление общих ресурсов](../api/print-list-shares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров. |
-| [Список служб](../api/print-list-services.md) | Коллекция [принтсервице](printservice.md) | Получение списка служб. |
-| [Создание printerShare](../api/print-post-shares.md) | [принтершаре](printershare.md) | Создайте новый общий ресурс для принтера, отправив его в коллекцию **shares** . |
-| [Создание принтера](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
-| [Обновление параметров](../api/print-update-settings.md) |  [принтсеттингс](printsettings.md) | Обновляет параметры на уровне клиента для универсальной службы печати. |
-| [Перечисление taskDefinitions](../api/print-list-taskdefinitions.md) | Коллекция [принттаскдефинитион](printtaskdefinition.md) | Получение общего для клиента списка Принттаскдефинитионс, созданного в универсальной печати. |
-| [Создание taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Создание нового Принттаскдефинитион. |
-| [Обновление taskDefinition](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Обновление Принттаскдефинитион. |
-| [Удаление taskDefinition](../api/print-delete-taskdefinition.md) | Нет | Удаление объекта Принттаскдефинитион. |
+| [Перечисление соединителей](../api/print-list-connectors.md) | [Коллекция printConnector](printconnector.md) | Получите список соединители печати. |
+| [Перечисление принтеров](../api/print-list-printers.md) | [коллекция принтеров](printer.md) | Получите список принтеров. |
+| [Перечисление общих ресурсов](../api/print-list-shares.md) | [Коллекция printerShare](printershare.md) | Получите список обетов принтеров. |
+| [Список служб](../api/print-list-services.md) | [Коллекция printService](printservice.md) | Получите список служб. |
+| [Создание printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | Создание новой обоймы принтера путем публикации в **коллекции.** |
+| [Создание принтера](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создайте (зарегистрируйте) новый принтер с помощью универсальной печати. |
+| [Обновление параметров](../api/print-update-settings.md) |  [printSettings](printsettings.md) | Обновляет параметры службы универсальной печати на всем клиенте. |
+| [Перечисление taskDefinitions](../api/print-list-taskdefinitions.md) | [Коллекция printTaskDefinition](printtaskdefinition.md) | Получите список printTaskDefinitions на всем клиенте, созданный в универсальной печати. |
+| [Создание taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Создайте новый printTaskDefinition. |
+| [Обновление taskDefinition](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Обновление printTaskDefinition. |
+| [Удаление taskDefinition](../api/print-delete-taskdefinition.md) | Нет | Удаление printTaskDefinition. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|параметры|[принтсеттингс](printsettings.md)|Параметры на уровне клиента для универсальной службы печати.|
+|параметры|[printSettings](printsettings.md)|Параметры универсальной печати на всем клиенте.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|служб|Коллекция [принтсервице](printservice.md)|Список доступных конечных точек универсальной службы печати.|
-|типографи|Коллекция [принтеров](printer.md)|Список принтеров, зарегистрированных в клиенте.|
-|shares|Коллекция [принтершаре](printershare.md)|Список общих принтеров, зарегистрированных в клиенте.|
-|аудиовыход|Коллекция [принтконнектор](printconnector.md)|Список доступных соединителей печати.|
+|services|[Коллекция printService](printservice.md)|Список доступных конечных точек службы универсальной печати.|
+|printers|[коллекция принтеров](printer.md)|Список принтеров, зарегистрированных в клиенте.|
+|shares|[Коллекция printerShare](printershare.md)|Список акций принтера, зарегистрированных в клиенте.|
+|соединители|[Коллекция printConnector](printconnector.md)|Список доступных соединители печати.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -76,8 +76,7 @@ ms.locfileid: "47985890"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [ 
-    "Error: Resource print has documented navigation properties, but we thought it was a complex type!",
-    "Resource print has documented navigation properties, but we thought it was a complex type!"
+  ]
 }-->
 
 

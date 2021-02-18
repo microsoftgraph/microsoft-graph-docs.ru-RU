@@ -1,24 +1,23 @@
 ---
-title: Получение Онлинемитинг
-description: Получение свойств и связей объекта собрания по **сети** .
+title: Get onlineMeeting
+description: Извлечение свойств и связей объекта собрания по сети.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 22b3884dff4f2d3b7a69b80f82bab0afa9e2d6c3
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 18f4d06e106bb7413054d2ab62f93d02885a90a0
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742085"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292940"
 ---
-# <a name="get-onlinemeeting"></a>Получение Онлинемитинг
+# <a name="get-onlinemeeting"></a>Get onlineMeeting
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [онлинемитинг](../resources/onlinemeeting.md) .
+Извлечение свойств и связей объекта [onlineMeeting.](../resources/onlinemeeting.md) Вы можете получить сведения о onlineMeeting с помощью [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) или [ИД собрания.](#example-2-retrieve-an-online-meeting-by-meeting-id)
 
-> **Примечание:** В `GET` настоящее время метод поддерживается только для [идентификатора конференции VTC](/microsoftteams/cloud-video-interop-for-teams-set-up). Эти идентификаторы создаются для пользователей, лицензированных для облачных видеоконференций, и этот метод используется для получения сведений о присоединении к собранию.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,15 +25,37 @@ ms.locfileid: "48742085"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Приложение                            | OnlineMeetings.Read.All |
+| Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+
+> [!IMPORTANT]
+> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, разрешив приложению, настроенном в политике, получать собрание по сети от имени этого пользователя (ид пользователя, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
+Чтобы получить указанный onlineMeeting с помощью ИД собрания с делегированным маркером:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /me/onlineMeetings/{meetingId}
 ```
+
+Чтобы получить указанный onlineMeeting с помощью ИД собрания с маркером приложения:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+Чтобы получить указанное onlineMeeting с помощью **videoTeleconferenceId***:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+> **Примечание:**
+> - `userId`— это ИД объекта пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения [см. в политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `meetingId`— **это ид** объекта [onlineMeeting.](../resources/onlinemeeting.md)
+> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и находится в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно найти в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
+> - \* Этот сценарий поддерживает только маркер приложения и не поддерживает политику доступа к приложениям.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -47,7 +68,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -55,7 +76,9 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания по сети с помощью VideoTeleconferenceId
+
+#### <a name="request"></a>Запрос
 Ниже показан пример запроса.
 
 
@@ -93,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
     }  
 ```
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -161,6 +184,65 @@ Content-Length: 1574
   },
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone"
+}
+```
+
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Пример 2. Извлечение собрания по сети по его ИД
+Вы можете получить сведения о собрании с помощью ИД собрания с помощью маркера пользователя или приложения. При создании объекта [onlineMeeting](../resources/onlinemeeting.md)в объекте ответа предоставляется ИД собрания. Этот параметр доступен для поддержки случаев использования, когда известен ИД собрания, например, когда приложение сначала создает собрание по сети с помощью API Graph, а затем извлекает сведения о собрании позже в качестве отдельного действия.
+
+#### <a name="request"></a>Запрос
+
+> **Примечание.** Для учитаемости был усечен ИД собрания.
+
+В следующем запросе используется маркер пользователя.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+```
+
+В следующем запросе используется маркер приложения.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+```
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+```json
+{
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+    "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+    "startDateTime": "2020-09-29T22:35:31.389759Z",
+    "endDateTime": "2020-09-29T23:35:31.389759Z",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "subject": null,
+    "autoAdmittedUsers": "EveryoneInCompany",
+    "isEntryExitAnnounced": true,
+    "allowedPresenters": "everyone",
+    "videoTeleconferenceId": "(redacted)",
+    "participants": {
+        "organizer": {
+            "upn": "(redacted)",
+            "role": "presenter",
+            "identity": {
+                "user": {
+                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "displayName": null,
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "identityProvider": "AAD"
+                }
+            }
+        },
+        "attendees": [],
+        "producers": [],
+        "contributors": []
+    },
+    "lobbyBypassSettings": {
+        "scope": "organization",
+        "isDialInBypassEnabled": false
+    }
 }
 ```
 

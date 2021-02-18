@@ -1,24 +1,24 @@
 ---
-title: Получение Усераккаунтинформатион
-description: Получение свойств и связей объекта Усераккаунтинформатион.
+title: Get userAccountInformation
+description: Извлечение свойств и связей объекта userAccountInformation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: Profile
 doc_type: apiPageType
-ms.openlocfilehash: 1c67ccd6c5e248265cdab14933b6728250681a8f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9418fad469cd831c2620f79408ff06266d69f3b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022078"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291939"
 ---
-# <a name="get-useraccountinformation"></a>Получение Усераккаунтинформатион
+# <a name="get-useraccountinformation"></a>Get userAccountInformation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [усераккаунтинформатион](../resources/useraccountinformation.md) в [профиле](../resources/profile.md)пользователя.
+Извлечение свойств и связей объекта [userAccountInformation](../resources/useraccountinformation.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,22 +26,22 @@ ms.locfileid: "48022078"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/accounts/{id}
-GET /users/{id | userPrincipalName}/profile/accounts/{id}
+GET /me/profile/account/{id}
+GET /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
+Этот метод поддерживает параметр `$select` запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятой. Для оптимальной производительности выберите только подмножество необходимых свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,13 +49,13 @@ GET /users/{id | userPrincipalName}/profile/accounts/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [усераккаунтинформатион](../resources/useraccountinformation.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [requested userAccountInformation](../resources/useraccountinformation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -68,7 +68,7 @@ GET /users/{id | userPrincipalName}/profile/accounts/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/user/profile/accounts/{id}
+GET https://graph.microsoft.com/beta/me/profile/account/{id}
 ```
 
 ### <a name="response"></a>Отклик

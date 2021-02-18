@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f2107ff1bde5fb34b541565e828ca91247803598
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a8eb9959faaf5f4a6bcaecceb165384be737623d
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131341"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292275"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>Тип ресурса microsoftAuthenticatorAuthenticationMethodTarget
 Пространство имен: microsoft.graph
@@ -22,11 +22,11 @@ ms.locfileid: "50131341"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ИД объекта пользователя или группы Azure AD.|
-|isNumberMatchingRequired (Private Preview)|Boolean|Требовать от пользователя совпадения номера, отображаемого на странице для регистрации, чтобы утвердить уведомление MFA.|
-|isRegistrationRequired|Boolean|Определяет, должен ли пользователь принудительно регистрировать метод проверки подлинности. *Не поддерживается.* |
-|shownContext (Private Preview)|authenticatorAppContextType|Определяет, какие типы контекста о входе должны быть показаны пользователю в теле уведомления. Возможные значения: `location`, `app`.|
-|targetType|authenticationMethodTargetType| Возможные значения: `user`, `group`.|
+|id|String|ИД объекта пользователя или группы Azure AD.|
+|isNumberMatchingRequired (private Preview)|Логический|Требовать от пользователя совпадения номера, отображаемого на странице для регистрации, чтобы утвердить уведомление MFA.|
+|isRegistrationRequired|Логический|Определяет, должен ли пользователь принудительно регистрировать метод проверки подлинности. *Не поддерживается.* |
+|shownContext (Private Preview)|authenticatorAppContextType|Определяет, какие типы контекста о входе должны показываться пользователю в теле уведомления. Возможные значения: `location`, `app`.|
+|targetType|authenticationMethodTargetType| Возможные значения: `null`, `user`, `group`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

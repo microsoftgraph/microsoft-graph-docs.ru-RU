@@ -1,22 +1,22 @@
 ---
-title: 'Онлинемитинг: Креатеоржет'
-description: Создайте собрание по сети с настраиваемым указанным внешним ИДЕНТИФИКАТОРом. Если внешний идентификатор уже существует, этот API возвратит объект **онлинемитинг** с этим внешним идентификатором.
+title: 'onlineMeeting: createOrGet'
+description: Создание собрания по сети с пользовательским указанным внешним ИД. Если внешний ИД уже существует, этот API возвращает объект **onlineMeeting** с этим внешним ИД.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6e9ab9e05279ea240228db02d94d3c7895868fe0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 883741901f3031300ea6fe8073e2560b50b53eac
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059378"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292219"
 ---
-# <a name="onlinemeeting-createorget"></a>Онлинемитинг: Креатеоржет
+# <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
 Пространство имен: microsoft.graph
 
-Создание объекта [онлинемитинг](../resources/onlinemeeting.md) с настраиваемым указанным внешним идентификатором. Если внешний идентификатор уже существует, этот API возвратит объект [онлинемитинг](../resources/onlinemeeting.md) с этим внешним идентификатором. 
+Создание объекта [onlineMeeting](../resources/onlinemeeting.md) с пользовательским указанным внешним ИД. Если внешний ИД уже существует, этот API возвращает объект [onlineMeeting](../resources/onlinemeeting.md) с этим внешним ИД. 
 
 > **Примечание.** Собрание не отображается в календаре пользователя.
 
@@ -27,13 +27,25 @@ ms.locfileid: "48059378"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Не поддерживается.                |
+| Для приложений                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \*Администраторы должны [](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) создать политику доступа к приложениям и предоставить ее пользователю, разрешив приложению, настроенном в политике, создавать или получать собрание по сети с внешним ИД от имени этого пользователя (ид пользователя, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
+Вызов **API createOrGet** с делегированным маркером:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
+
+Вызов **API createOrGet** с маркером приложения:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings/createOrGet
+```
+
+> **Примечание.** `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -46,28 +58,28 @@ POST /me/onlineMeetings/createOrGet
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| endDateTime      | DateTime                                 | Время окончания собрания в формате UTC. |
-| externalId       | String                                   | Внешний идентификатор. Настраиваемый идентификатор. Потребоваться |
-| participants     | [митингпартиЦипантс](../resources/meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
-| startDateTime    | DateTime                                 | Время начала собрания в формате UTC. |
+| endDateTime      | DateTime                                 | Время окончания собрания в UTC. |
+| externalId       | String                                   | Внешний ИД. Настраиваемый ИД. (Обязательно) |
+| participants     | [meetingParticipants](../resources/meetingparticipants.md)          | Участники, связанные с собранием по сети.  К ним относятся организатор и участники. |
+| startDateTime    | DateTime                                 | Время начала собрания в UTC. |
 | subject          | String                                   | Тема собрания по сети. |
 
 > **Примечания.**
 >
-> - Если **startDateTime** и **endDateTime** не указаны, то **startDateTime** по умолчанию будет иметь текущее значение DateTime, а значение **endDateTime** будет равно **startDateTime** + 1 час.
+> - Если **значения startDateTime** и **endDateTime** не предоставлены, **значение startDateTime** по умолчанию будет равно текущему значению dateTime, а **значение endDateTime** равно **startDateTime** + 1 часу.
 >
-> - Если предоставлено значение **startDateTime** , но значение **endDateTime** не задано, значение **endDateTime** будет равно **startDateTime** + 1 час.
+> - Если значение **startDateTime** предоставлено, а **endDateTime** — нет, значение **endDateTime** будет равно **startDateTime** + 1 часу.
 >
-> - Если **endDateTime** предоставляется без **startDateTime** или **endDateTime** более ранней версии, чем **startDateTime**, будет выдаваться сообщение об ошибке.
+> - Ошибка будет выброшена, если **endDateTime** предоставляется без **startDateTime** или **если endDateTime** **раньше, чем startDateTime.**
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если создается новое собрание, или `200 OK` код ответа при получении существующего собрания. В обоих случаях объект [онлинемитинг](../resources/onlinemeeting.md) возвращается в теле отклика.
+## <a name="response"></a>Ответ
+В случае успеха этот метод возвращает код ответа, если создано новое собрание, или код ответа при извлечении `201 Created` `200 OK` существующего собрания. В обоих случаях объект [onlineMeeting](../resources/onlinemeeting.md) возвращается в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В приведенном ниже примере показано, как создать или получить собрание по сети с внешним ИДЕНТИФИКАТОРом.
+В следующем примере показано, как создать или получить собрание по сети с внешним ИД.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

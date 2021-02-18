@@ -1,22 +1,22 @@
 ---
-title: 'Опеншифтчанжерекуест: утверждение'
-description: Утверждение запроса Опеншифтчанжерекуест.
+title: 'openShiftChangeRequest: утвердить'
+description: Утверждение запроса openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86ee81554c030eb0d4306866af386bba9e45a6cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b6adfeb7cd69ba90b79aea5c1ec3108c3fd6085
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025671"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292401"
 ---
-# <a name="openshiftchangerequest-approve"></a>Опеншифтчанжерекуест: утверждение
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: утвердить
 
 Пространство имен: microsoft.graph
 
-Утверждение объекта [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) .
+Утверждение объекта [openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,18 +24,18 @@ ms.locfileid: "48025671"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,7 +51,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/ap
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение утверждения.|
+|message|String|Пользовательское сообщение об утверждении.|
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +70,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/ap
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {

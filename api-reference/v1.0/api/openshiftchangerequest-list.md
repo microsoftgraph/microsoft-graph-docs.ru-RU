@@ -1,22 +1,22 @@
 ---
-title: Список Опеншифтчанжерекуестс
-description: Получение списка объектов Опеншифтчанжерекуест в команде.
+title: Список openShiftChangeRequests
+description: Получить список объектов openShiftChangeRequest в команде.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a4771862325c211b342e9985d586fbe50c29ba58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40eef8348138f974a1a9f6c6d7f5dea180477307
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059315"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292352"
 ---
-# <a name="list-openshiftchangerequests"></a>Список Опеншифтчанжерекуестс
+# <a name="list-openshiftchangerequests"></a>Список openShiftChangeRequests
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в команде.
+Получить список объектов [openShiftChangeRequest](../resources/openshiftchangerequest.md) в команде.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,18 +24,18 @@ ms.locfileid: "48059315"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+| Для приложений                            | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests
+GET /teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,9 +52,9 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список объектов [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и список объектов `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -67,7 +67,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests
+GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ### <a name="response"></a>Отклик

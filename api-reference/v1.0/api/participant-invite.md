@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d4702e7257a5c49a8ef1232391dc923589bd2808
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 9a0a6bb439a54703ab952e046ebb71486baaf31c
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177104"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272575"
 ---
 # <a name="participant-invite"></a>participant: invite
 
@@ -18,7 +18,7 @@ ms.locfileid: "50177104"
 
 Приглашение участников в активный вызов.
 
-Дополнительные сведения о том, как обрабатывать операции, см. в [подстроке commsoperation.](../resources/commsoperation.md)
+Дополнительные сведения об обработке операций см. в [подстроке commsoperation.](../resources/commsoperation.md)
 
 >**Примечание.** Этот API поддерживается только для групповых вызовов.
 
@@ -49,9 +49,9 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Приглашенные участники.|
-|clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 chars.|
+|clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение составляет 256 chars.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Если это не так, этот метод возвращает код отклика и заглавную ссылку с URI для `200 OK` [метода inviteParticipantsOperation,](../resources/inviteparticipantsoperation.md) созданного для этого запроса. 
 
 Тело ответа содержит созданный [inviteParticipantsOperation.](../resources/inviteparticipantsoperation.md)
@@ -60,7 +60,7 @@ POST /communications/calls/{id}/participants/invite
 
 
 ## <a name="examples"></a>Примеры
-В следующих примерах покажите, как вызвать этот API.
+В следующих примерах покажем, как вызвать этот API.
 
 > **Примечание.** Объекты ответа могут быть сокращены для учитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 ### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Пример 2. Приглашение нескольких участников к существующему групповому вызову
 
-> **Примечание.** Существующий групповой звонок должен иметь допустимый [chatInfo.](../resources/chatInfo.md) Поддерживается приглашение до 5 участников.
+> **Примечание.** Существующий групповой вызов должен иметь допустимый [chatInfo.](../resources/chatInfo.md) Приглашение до 5 участников поддерживается.
 
 ##### <a name="request"></a>Запрос
 
@@ -506,11 +506,11 @@ Content-Type: application/json
 ### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Пример 3. Приглашение участников к существующему групповому вызову, заменив существующий одноранговой вызов
 
 
-API приглашений поддерживает только одного участника при замене существующего одноранговых вызовов. Если в тексте запроса есть несколько участников, будет прочитан только первый участник, а остальные участники будут игнорироваться.
+API приглашений поддерживает только одного участника при замене существующего одноранговых вызовов. Если в тексте запроса есть несколько участников, только первый участник будет прочитан, а остальные участники будут игнорироваться.
 
 
 > **Примечание.** API приглашений поддерживает только одного участника, `replacesCallId` если он предоставлен. 
-> Дополнительные сведения об использовании замены существующего однорангового вызова см. в `replacesCallId` приглашенииParticipantInfo. [](../resources/invitationparticipantinfo.md)
+> Дополнительные сведения об использовании для замены существующего однорангового вызова см. в `replacesCallId` приглашенииParticipantInfo. [](../resources/invitationparticipantinfo.md)
 
 ##### <a name="request"></a>Запрос
 
@@ -727,6 +727,8 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite"
@@ -752,6 +754,16 @@ Content-Length: 464
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

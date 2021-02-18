@@ -1,22 +1,22 @@
 ---
-title: Создание Опеншифтчанжерекуест
-description: Создайте экземпляр объекта Опеншифтчанжерекуест.
+title: Создание openShiftChangeRequest
+description: Создание экземпляра объекта openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5da8ba38351e6681447a3ed3dee17caf6c328898
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e861dc2e5da1c175f419fdf47c76a4fac3b877bd
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059294"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292184"
 ---
-# <a name="create-openshiftchangerequest"></a>Создание Опеншифтчанжерекуест
+# <a name="create-openshiftchangerequest"></a>Создание openShiftChangeRequest
 
 Пространство имен: microsoft.graph
 
-Создание экземпляра объекта [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) .
+Создание экземпляра объекта [openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,18 +24,18 @@ ms.locfileid: "48059294"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests
+POST /teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,11 +46,11 @@ POST /teams/{id}/schedule/openShiftsChangeRequests
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление объекта [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в формате JSON.
+В теле запроса предостерегать представление нового объекта [openShiftChangeRequest](../resources/openshiftchangerequest.md) в JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и созданный объект [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и созданный объект `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -62,7 +62,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftsChangeRequests
+POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftChangeRequests
 Authorization: Bearer {token}
 Content-type: application/json
 Content-length: 244

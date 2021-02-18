@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9ca45981d2825769f540048a94488dda4ba91c00
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: b641e60fec03fc862f166dfe14240392817441e3
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115194"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292849"
 ---
 # <a name="educationuser-resource-type"></a>Тип ресурса educationUser
 
@@ -28,13 +28,13 @@ ms.locfileid: "50115194"
 | [Перечисление учебных заведений](../api/educationuser-list-schools.md) | Коллекция [educationSchool] | Получение коллекции объектов **educationSchool**, для которых пользователь является участником. |
 | [Получение пользователя](../api/educationuser-get-user.md)         | [user]                       | Получение простого каталога **user**, который соответствует этому объекту **educationUser**. |
 | [Обновление](../api/educationuser-update.md)             | [educationUser]              | Обновление объекта **educationUser**.                                           |
-| [Delete](../api/educationuser-delete.md)             | Нет                         | Удаление объекта **educationUser**.                                           |
+| [удаление](../api/educationuser-delete.md);             | Нет                         | Удаление объекта **educationUser**.                                           |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип                         | Описание                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | :---------------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| accountEnabled    | Boolean                      | Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Это свойство обязательно указывать при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| accountEnabled    | Логический                      | Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Это свойство обязательно указывать при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                                                                                                                    |
 | assignedLicenses  | Коллекция [assignedLicense] | Лицензии, назначенные пользователю. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | assignedPlans     | Коллекция [assignedPlan]    | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | businessPhones    | Коллекция строк            | Номера телефонов пользователя. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер.                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -79,7 +79,7 @@ ms.locfileid: "50115194"
 >var betaBaseUrl = "https://graph.microsoft.com/beta/education";  // for administrativeUnit and educationOrganization
 >```
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -133,9 +133,7 @@ ms.locfileid: "50115194"
   "section": "documentation",
   "suppressions": [
     "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN",
-    "Warning: /api-reference/v1.0/resources/educationuser.md/microsoft.graph.educationUser:
-      Property 'relatedContacts' found in markdown table but not in resource definition."
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
   ],
   "tocPath": ""
 }-->
