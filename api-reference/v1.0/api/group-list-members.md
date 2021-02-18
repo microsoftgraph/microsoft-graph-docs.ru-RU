@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4520107b64ba8c1cf2501b7723ba5fd19a360500
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: a0d9c77bb6fd6bb7685fd13ae816ee5587c01f83
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081968"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272200"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -25,9 +25,9 @@ ms.locfileid: "49081968"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All  |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

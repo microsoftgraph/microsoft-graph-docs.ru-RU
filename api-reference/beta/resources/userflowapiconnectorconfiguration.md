@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8e9732759a609eabb6733629a97c82afaba364
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 78e93f4b743f57a68faad530f2a26ad6dead8a08
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132981"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292917"
 ---
 # <a name="userflowapiconnectorconfiguration-resource-type"></a>Тип ресурса userFlowApiConnectorConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "50132981"
 | postFederationSignup    | [identityApiConnector](identityapiconnector.md) | Указывает API, который будет вызываться после федерации с внешним поставщиком удостоверений (например, Google, Facebook или Azure AD), после регистрации пользователя (не применяется для регистрации). |
 | postAttributeCollection | [identityApiConnector](identityapiconnector.md) | Указывает API, который будет вызываться после отправки пользователем собранных атрибутов и до создания пользователя во время регистрации.                                                      |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {
@@ -49,6 +49,5 @@ ms.locfileid: "50132981"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Resource userFlowApiConnectorConfiguration has documented navigation properties, but we thought it was a complex type!"
   ]
 }-->

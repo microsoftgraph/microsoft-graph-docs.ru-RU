@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Теамдисковерисеттингс
+title: Тип ресурса teamDiscoverySettings
 description: Параметры для настройки возможности обнаружения команды другими пользователями.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f26c47b2e1863c3108bc23f7c388179bd8006156
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edc3c6cc446e35f2f5a97212d3c0b6f69b81ce30
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046666"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292915"
 ---
-# <a name="teamdiscoverysettings-resource-type"></a>Тип ресурса Теамдисковерисеттингс
+# <a name="teamdiscoverysettings-resource-type"></a>Тип ресурса teamDiscoverySettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предоставляет параметры, позволяющие другим пользователям настраивать обнаружение [команды](team.md) . Параметры обнаружения можно изменять только для частных Teams.
+Предоставляет параметры, позволяющие другим пользователям настраивать [возможность](team.md) обнаружения команд. Изменить параметры обнаружения можно только для закрытых команд.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|шовинтеамссеарчандсугжестионс|Boolean|Если задано значение true, команда становится видимой через поиск и предложения от клиента Teams.|
+|showInTeamsSearchAndSuggestions|Логический|Если за установлено true, команда будет видна с помощью поиска и предложений из клиента Teams.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -49,7 +49,6 @@ ms.locfileid: "48046666"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/teamdiscoverysettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
 
