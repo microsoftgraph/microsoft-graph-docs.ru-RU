@@ -1,6 +1,6 @@
 ---
 title: Удаление publishedResource
-description: Удаление объекта [publishedResource.](../resources/publishedresource.md)
+description: Удаление [объекта publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
@@ -18,7 +18,7 @@ ms.locfileid: "50130398"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [publishedResource.](../resources/publishedresource.md)
+Удаление [объекта publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,9 +42,9 @@ DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

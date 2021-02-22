@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> Пакеты SDK Microsoft Graph по умолчанию используют версию API версии 1.0 и не поддерживают все типы, свойства и API, доступные в бета-версии. Более подробную информацию о доступе к API бета-версии с помощью пакета SDK можно узнать в [статье Использование пакетов SDK Microsoft Graph с бета-версией API](/graph/sdks/use-beta).
+> SDKs Microsoft Graph используют версию API v1.0 по умолчанию и не поддерживают все типы, свойства и API, доступные в бета-версии. Сведения о доступе к бета-API с SDK см. в материале [Использование SDK Microsoft Graph с бета-API.](/graph/sdks/use-beta)
 >
-> Ознакомьтесь с [документацией по пакету SDK](/graph/sdks/sdks-overview) , чтобы узнать [, как добавить пакет SDK](/graph/sdks/sdk-installation) в проект и [создать экземпляр ауспровидер](/graph/sdks/choose-authentication-providers) .
+> Ознакомьтесь [с документацией по SDK,](/graph/sdks/sdks-overview) чтобы узнать, как добавить [SDK](/graph/sdks/sdk-installation) в проект и создать [экземпляр authProvider.](/graph/sdks/choose-authentication-providers)
