@@ -1,36 +1,36 @@
 ---
-title: Получение Аусоризатионполици
-description: Получение свойств и связей объекта Аусоризатионполици.
+title: Get authorizationPolicy
+description: Извлечение свойств и связей объекта authorizationPolicy.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ef827c1b8a0fec8ff676eeeef10c2d20dca50377
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4725d6f8b868852efc282982cd00a2f7208bf53a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401878"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438423"
 ---
-# <a name="get-authorizationpolicy"></a><span data-ttu-id="1d80e-103">Получение Аусоризатионполици</span><span class="sxs-lookup"><span data-stu-id="1d80e-103">Get authorizationPolicy</span></span>
+# <a name="get-authorizationpolicy"></a><span data-ttu-id="f556d-103">Get authorizationPolicy</span><span class="sxs-lookup"><span data-stu-id="f556d-103">Get authorizationPolicy</span></span>
 
-<span data-ttu-id="1d80e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1d80e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f556d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f556d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1d80e-105">Получение свойств объекта [аусоризатионполици](../resources/authorizationpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="1d80e-105">Retrieve the properties of an [authorizationPolicy](../resources/authorizationpolicy.md) object.</span></span>
+<span data-ttu-id="f556d-105">Извлечение свойств [объекта authorizationPolicy.](../resources/authorizationpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="f556d-105">Retrieve the properties of an [authorizationPolicy](../resources/authorizationpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1d80e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1d80e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f556d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f556d-106">Permissions</span></span>
 
-<span data-ttu-id="1d80e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d80e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f556d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f556d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1d80e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1d80e-109">Permission type</span></span>                        | <span data-ttu-id="1d80e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1d80e-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f556d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f556d-109">Permission type</span></span>                        | <span data-ttu-id="f556d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f556d-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="1d80e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1d80e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1d80e-112">Policy. Read. ALL, Policy. ReadWrite. Authorization</span><span class="sxs-lookup"><span data-stu-id="1d80e-112">Policy.Read.All, Policy.ReadWrite.Authorization</span></span> |
-| <span data-ttu-id="1d80e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1d80e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d80e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1d80e-114">Not supported.</span></span> |
-| <span data-ttu-id="1d80e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1d80e-115">Application</span></span>                            | <span data-ttu-id="1d80e-116">Policy. Read. ALL, Policy. ReadWrite. Authorization</span><span class="sxs-lookup"><span data-stu-id="1d80e-116">Policy.Read.All, Policy.ReadWrite.Authorization</span></span> |
+| <span data-ttu-id="f556d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f556d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f556d-112">Policy.Read.All, Policy.ReadWrite.Authorization</span><span class="sxs-lookup"><span data-stu-id="f556d-112">Policy.Read.All, Policy.ReadWrite.Authorization</span></span> |
+| <span data-ttu-id="f556d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f556d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f556d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f556d-114">Not supported.</span></span> |
+| <span data-ttu-id="f556d-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="f556d-115">Application</span></span>                            | <span data-ttu-id="f556d-116">Policy.Read.All, Policy.ReadWrite.Authorization</span><span class="sxs-lookup"><span data-stu-id="f556d-116">Policy.Read.All, Policy.ReadWrite.Authorization</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1d80e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1d80e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f556d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f556d-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,36 +38,36 @@ ms.locfileid: "48401878"
 GET /policies/authorizationPolicy/authorizationPolicy
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1d80e-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1d80e-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f556d-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f556d-118">Request headers</span></span>
 
-| <span data-ttu-id="1d80e-119">Имя</span><span class="sxs-lookup"><span data-stu-id="1d80e-119">Name</span></span>      |<span data-ttu-id="1d80e-120">Описание</span><span class="sxs-lookup"><span data-stu-id="1d80e-120">Description</span></span>|
+| <span data-ttu-id="f556d-119">Имя</span><span class="sxs-lookup"><span data-stu-id="f556d-119">Name</span></span>      |<span data-ttu-id="f556d-120">Описание</span><span class="sxs-lookup"><span data-stu-id="f556d-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1d80e-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1d80e-121">Authorization</span></span> | <span data-ttu-id="1d80e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1d80e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f556d-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f556d-121">Authorization</span></span> | <span data-ttu-id="f556d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f556d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1d80e-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1d80e-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f556d-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f556d-124">Request body</span></span>
 
-<span data-ttu-id="1d80e-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1d80e-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f556d-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f556d-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1d80e-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d80e-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f556d-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="f556d-126">Response</span></span>
 
-<span data-ttu-id="1d80e-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и один объект [аусоризатионполици](../resources/authorizationpolicy.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="1d80e-127">If successful, this method returns a `200 OK` response code and the single [authorizationPolicy](../resources/authorizationpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="f556d-127">В случае успешной работы этот метод возвращает код ответа и один объект `200 OK` [authorizationPolicy](../resources/authorizationpolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="f556d-127">If successful, this method returns a `200 OK` response code and the single [authorizationPolicy](../resources/authorizationpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1d80e-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="1d80e-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f556d-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="f556d-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="1d80e-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="1d80e-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f556d-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="f556d-129">Request</span></span>
 
-<span data-ttu-id="1d80e-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1d80e-130">The following is an example of the request.</span></span>
+<span data-ttu-id="f556d-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f556d-130">The following is an example of the request.</span></span>
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 ```
 ---
 
-### <a name="response"></a><span data-ttu-id="1d80e-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d80e-131">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f556d-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="f556d-131">Response</span></span>
 
-<span data-ttu-id="1d80e-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1d80e-132">The following is an example of the response.</span></span>
+<span data-ttu-id="f556d-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f556d-132">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="1d80e-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1d80e-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f556d-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f556d-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
