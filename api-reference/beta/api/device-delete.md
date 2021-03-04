@@ -3,14 +3,14 @@ title: Удаление устройства
 description: Удаление зарегистрированного устройства.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ebadef5f01881137c388aa0c35bf5a51a17fa265
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9753faebf1d66604ba52657561387b8a43d7a96d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956436"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437214"
 ---
 # <a name="delete-device"></a>Удаление устройства
 
@@ -44,7 +44,7 @@ DELETE /devices/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

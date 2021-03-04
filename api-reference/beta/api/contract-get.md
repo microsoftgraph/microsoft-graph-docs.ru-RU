@@ -1,24 +1,24 @@
 ---
-title: Получение контракта
-description: Получение свойств и связей объекта Contract.
+title: Получить контракт
+description: Извлечение свойств и связей объекта контракта.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 60739a6c12494feab5d61d4aa7563f84cd0ec273
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9e88686b3772fcd5f9c43ddd64e1c9eda865b518
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957221"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437277"
 ---
-# <a name="get-contract"></a>Получение контракта
+# <a name="get-contract"></a>Получить контракт
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Contract](../resources/contract.md) .
+Извлечение свойств и связей объекта [контракта.](../resources/contract.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,13 +47,13 @@ GET /contracts/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [контракта](../resources/contract.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект Contract](../resources/contract.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

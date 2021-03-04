@@ -1,18 +1,18 @@
 ---
-title: Get connectedOrganization
+title: ПодключениеОрганизация
 description: Извлечение свойств и связей объекта connectedorganization.
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 27b0765bf16f4fabf5057b35ad4d1b0992ba79de
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: ec4bfa06754f9381c19154e886691f7657e0ab18
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872711"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437487"
 ---
-# <a name="get-connectedorganization"></a>Get connectedOrganization
+# <a name="get-connectedorganization"></a>ПодключениеОрганизация
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872711"
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,13 +50,13 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `200 OK` отклика и [объект connectedOrganization](../resources/connectedorganization.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект connectedOrganization](../resources/connectedorganization.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,16 +1,16 @@
 ---
 title: Назначение appliesTo
-description: Назначение directoryObject для развертывания компонентов.
+description: Назначение каталогаОбект для выкатки функций.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dfde14bace860b847449a3d530103e52e8abc27d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7f8842d554f5cb6f949f0f7f528b3b1f506936f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954530"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436094"
 ---
 # <a name="assign-appliesto"></a>Назначение appliesTo
 
@@ -18,7 +18,7 @@ ms.locfileid: "48954530"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте элемент appliesTo в объект [феатурероллаутполици](../resources/featurerolloutpolicy.md) , чтобы указать [directoryObject](../resources/directoryobject.md) , к которому необходимо применить [феатурероллаутполици](../resources/featurerolloutpolicy.md) .
+Добавьте appliesTo на [объект featureRolloutPolicy,](../resources/featurerolloutpolicy.md) чтобы указать [directoryObject,](../resources/directoryobject.md) к которому следует применить функциюRolloutPolicy. [](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,7 +50,7 @@ POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

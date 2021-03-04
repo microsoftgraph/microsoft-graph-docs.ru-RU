@@ -1,16 +1,16 @@
 ---
 title: Получение объекта DirectoryObject
-description: Получение свойств и связей объекта directoryobject.
+description: Извлечение свойств и связей объекта directoryobject.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e616e0aa4955173917cd0dcfadf54f8b5229ba56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7303cefc9779f4080ddccd3fbe6b55ec6a4404c3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963109"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436920"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "48963109"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта directoryobject.
+Извлечение свойств и связей объекта directoryobject.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -40,7 +40,7 @@ GET /directoryObjects/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

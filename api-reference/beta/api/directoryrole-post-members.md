@@ -1,16 +1,16 @@
 ---
 title: Добавление участника роли каталога
-description: Создайте новый член роли каталога.
+description: Создание нового участника роли каталога.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dd7554c41816e54240e081fd1265861f24fa7d56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0385ad02b854753e9b88e103a14b68aebd290497
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956310"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436731"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -18,15 +18,15 @@ ms.locfileid: "48956310"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый член роли каталога.
+Создание нового участника роли каталога.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,9 +48,9 @@ POST /directoryRoles/{id}/members/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-assign-a-built-in-role-to-a-user"></a>Пример 1: назначение встроенной роли пользователю
+### <a name="example-1-assign-a-built-in-role-to-a-user"></a>Пример 1. Назначение встроенной роли пользователю
 #### <a name="request"></a>Запрос
-В следующем примере для пользователя назначается встроенная роль.
+В следующем примере пользователю назначается встроенная роль.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,9 +96,9 @@ Content-length: 30
 HTTP/1.1 204 No content
 ```
 
-### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Пример 2: назначение встроенной роли группе
+### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Пример 2. Назначение встроенной роли группе
 #### <a name="request"></a>Запрос
-Вы можете использовать определенный набор ресурсов, такой как пользователи или группы, в теле запроса, или можно использовать универсальный **директорйобжектс**. В этом примере показано, как можно использовать **директорйобжектс**.
+Вы можете использовать определенный набор ресурсов, например пользователей или групп в теле запроса, или общие **каталогиОбъектов.** В этом примере показано, как можно использовать **directoryObjects.**
 
 <!-- {
   "blockType": "request",

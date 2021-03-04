@@ -1,24 +1,24 @@
 ---
-title: Создание Феатурероллаутполици
-description: Создание нового объекта Феатурероллаутполици.
+title: Создание featureRolloutPolicy
+description: Создайте новый объект featureRolloutPolicy.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8d7d670303748893fdb7e5825369861dea502178
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1ec54a67867ecbf62da04fc87c6f1e7b9d043755
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963236"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436969"
 ---
-# <a name="create-featurerolloutpolicy"></a>Создание Феатурероллаутполици
+# <a name="create-featurerolloutpolicy"></a>Создание featureRolloutPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [феатурероллаутполици](../resources/featurerolloutpolicy.md) .
+Создайте новый [объект featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,19 +46,19 @@ POST /directory/featureRolloutPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [феатурероллаутполици](../resources/featurerolloutpolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
-В следующей таблице приведены свойства, необходимые при создании объекта [феатурероллаутполици](../resources/featurerolloutpolicy.md).
+В следующей таблице показаны свойства, необходимые при создании [featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|displayName |string |Отображаемое имя для этой политики развертывания компонента.|
-|состав |стажедфеатуренаме |Компонент, который будет выполнен с помощью этой политики.|
-|isEnabled |string |Указывает, включен ли выпуск компонентов.|
+|displayName |string |Имя отображения для этой политики выкатки функций.|
+|функция |stagedFeatureName |Функция, которая будет выкатываться с помощью этой политики.|
+|isEnabled |string |Указывает, включена ли выкатка функций.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [феатурероллаутполици](../resources/featurerolloutpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект featureRolloutPolicy](../resources/featurerolloutpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

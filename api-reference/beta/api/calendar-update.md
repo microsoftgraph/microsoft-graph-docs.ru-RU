@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ed82886c3a5b6b8bff90b32b09361fb92ecfe091
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18720d55ee57fbe50ee14f77d43e36e6d0c29764
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960025"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437872"
 ---
 # <a name="update-calendar"></a>Обновление календаря
 
@@ -40,9 +40,6 @@ PATCH /groups/{id}/calendar
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
-
-PATCH /me/calendarGroup/calendars/{id}
-PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 [Календарь](../resources/calendar.md) пользователя в определенной группе [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -69,7 +66,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 В случае успеха этот метод возвратит код отклика `200 OK` и обновленный объект [calendar](../resources/calendar.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере обновляется имя календаря пользователя, вошедшего в систему по умолчанию.
+В следующем примере обновляется имя календаря по умолчанию пользователя, подписанного по умолчанию.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -1,24 +1,24 @@
 ---
-title: Обновление Кондитионалакцессполици
-description: Обновление свойств объекта Кондитионалакцессполици.
+title: Обновление conditionalAccessPolicy
+description: Обновление свойств объекта conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 28db2e1b2e366604536bfa72e465f5f56d80f4b6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 92c11d7577656b3cea62bf627209f2cb5c9aa351
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957925"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437611"
 ---
-# <a name="update-conditionalaccesspolicy"></a>Обновление Кондитионалакцессполици
+# <a name="update-conditionalaccesspolicy"></a>Обновление conditionalAccessPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) .
+Обновление свойств объекта [conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,12 +26,12 @@ ms.locfileid: "48957925"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Приложение                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
-> У этого API есть [известная проблема](/graph/known-issues#permissions) , связанная с разрешениями.
+> Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ PATCH /identity/conditionalAccess/policies/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Список свойств приведен в разделе [кондитионалакцессполици](../resources/conditionalaccesspolicy.md).
+Список свойств см. в [условном спискеAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="response"></a>Отклик
 

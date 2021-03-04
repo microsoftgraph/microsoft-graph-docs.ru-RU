@@ -1,16 +1,16 @@
 ---
 title: Список externalSponsors
-description: Получить список внешнихSponsors connectedOrganization.
+description: Извлечение списка внешнихSponsors connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 299a957386387b7faee6daeae8a064fe46fbd663
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6eeb457567766c9c16a581d0fb864ebde1d16db5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872704"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437459"
 ---
 # <a name="list-externalsponsors"></a>Список externalSponsors
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872704"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список внешних спонсоров [connectedOrganization.](../resources/connectedorganization.md)  Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной организации.
+Извлечение списка внешних спонсоров [connectedOrganization.](../resources/connectedorganization.md)  Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой связанной организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872704"
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}/extern
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

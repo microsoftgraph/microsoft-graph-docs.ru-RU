@@ -1,24 +1,24 @@
 ---
-title: Удаление Цертификатебаседаусконфигуратион
-description: Удаление Цертификатебаседаусконфигуратион.
+title: Удаление certificateBasedAuthConfiguration
+description: Удаление certificateBasedAuthConfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7baac52887e83b431bd76029849cb8c24207dac7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b404a68afd042e20a5c0b43ebd4ca1faf0287685
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959453"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437869"
 ---
-# <a name="delete-certificatebasedauthconfiguration"></a>Удаление Цертификатебаседаусконфигуратион
+# <a name="delete-certificatebasedauthconfiguration"></a>Удаление certificateBasedAuthConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [цертификатебаседаусконфигуратион](../resources/certificateBasedAuthConfiguration.md) .
+Удаление [объекта certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48959453"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений    | Organization.ReadWrite.All |
+| Приложение    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /organization/{id}/certificateBasedAuthConfiguration/{id}
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

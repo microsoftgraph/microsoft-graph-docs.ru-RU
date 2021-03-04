@@ -1,16 +1,16 @@
 ---
 title: Список групп устройств
-description: Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
+description: Получите группы, в которые входит это устройство. Эта операция не является транзитивной.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 91c23877c49bfd36bd64adaa2230bfcf2ffc65e1
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: d37036734e1e00d8130612528ee90305c3986476
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082036"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437200"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -18,7 +18,7 @@ ms.locfileid: "49082036"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
+Получите группы, в которые входит это устройство. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -56,7 +56,7 @@ GET /devices/{id}/memberOf
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>Пример 1: получение групп, непосредственным участником которых является устройство
+### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>Пример 1. Получить группы, которые устройство является непосредственным участником
 
 #### <a name="request"></a>Запрос
 
@@ -151,7 +151,7 @@ Content-type: text/plain
 
 394
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3: использование функции CAST и $search для получения членства с отображаемыми именами, содержащими видео "Video", включая число возвращаемых объектов
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства с именами отображения, которые содержат буквы "Видео", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -194,7 +194,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Пример 4: использование функции CAST и $filter для получения членства с отображаемым именем, начинающимся с буквы "A", включая количество возвращаемых объектов
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $filter OData для получения членства с именем отображения, которое начинается с буквы "A", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 

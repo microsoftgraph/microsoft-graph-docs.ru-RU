@@ -3,14 +3,14 @@ title: Удаление connectedOrganization
 description: Удаление connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8ce2aed28aaa4d1b97767e7ebb46e9b206d32d75
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a14207407d3810e53a1b6be871060e8e6f609c8c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872718"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437508"
 ---
 # <a name="delete-connectedorganization"></a>Удаление connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872718"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [connectedOrganization.](../resources/connectedorganization.md)
+Удаление [объекта connectedOrganization.](../resources/connectedorganization.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872718"
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

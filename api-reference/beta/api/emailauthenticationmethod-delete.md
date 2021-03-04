@@ -3,32 +3,32 @@ title: Удаление emailAuthenticationMethod
 description: Удаляет объект emailAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7fbb2f6af414da2c44ca6d68dc688973e9d34bce
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a06a31d41a2cd1564f83f056dcfc4bd6c21e7614
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873502"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436353"
 ---
 # <a name="delete-emailauthenticationmethod"></a>Удаление emailAuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект метода проверки [подлинности электронной почты](../resources/emailauthenticationmethod.md) пользователя.
+Удаляет объект метода проверки подлинности электронной [почты](../resources/emailauthenticationmethod.md) пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от наименее до самых привилегированных)|Разрешения, действующие на других (от наименее привилегированных)|
 |:---|:---|:--|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Приложение                            | Не применимо. | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | Неприменимо. | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
@@ -49,7 +49,7 @@ DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

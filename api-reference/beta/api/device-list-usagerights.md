@@ -1,23 +1,23 @@
 ---
-title: Список устройств usageRights
-description: Получить список объектов usageRights для устройства.
+title: Список использования устройствRights
+description: Извлечение списка объектов useRights для устройства.
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 73a67ecd46085c7c4369e68db5f72655cbaf395a
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 1edaa5f049a80744999c4259f8755f0be3d9aaf4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013627"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437128"
 ---
-# <a name="list-device-usagerights"></a>Список устройств usageRights
+# <a name="list-device-usagerights"></a>Список использования устройствRights
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [usageRight](../resources/usageright.md) для заданного устройства.
+Извлечение списка [объектов useRight](../resources/usageright.md) для данного устройства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "50013627"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Приложение|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,30 +41,30 @@ GET /devices/{objectId}/usageRights
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот API поддерживает параметр $filter [OData.](/graph/query-parameters) Поддерживаются следующие шаблоны $filter:
 
-- $filter = state eq 'value'
+- $filter = значение состояния eq
 - $filter = serviceIdentifier eq 'value'
-- $filter = state eq 'value' and serviceIdentifier eq 'value'
-- $filter = state in ('value1', 'value2')
+- $filter = состояние eq 'value' и serviceIdentifier eq 'value'
+- $filter = состояние в ('value1', 'value2')
 - $filter = serviceIdentifier в ('value1', 'value2')
-- $filter = state in ('value1', 'value2') and serviceIdentifier in ('value1', 'value2')
+- $filter = состояние в ('value1', 'value2') и serviceIdentifier в ('value1', 'value2')
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
-|odata.maxpagesize|Установите максимальный размер страницы результатов. Необязательный параметр.|
+|Авторизация|Bearer {токен}. Обязательный.|
+|odata.maxpagesize|Установите переоценку размера страницы максимального результата. Необязательный параметр.|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [usageRight](../resources/usageright.md) в тексте отклика.
+В случае успешного использования этот метод возвращает код отклика и коллекцию `200 OK` [объектов useRight](../resources/usageright.md) в тексте отклика.
 
-Кроме того, если в отклике больше страниц, возвращается @odata.nextLink.
+Кроме того, если в ответе больше страниц, возвращается @odata.nextLink.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-all-usage-rights-for-a-device"></a>Пример 1. Получите все права на использование устройства
+### <a name="example-1-get-all-usage-rights-for-a-device"></a>Пример 1. Получить все права использования для устройства
  
 #### <a name="request"></a>Запрос
 
@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-usage-rights-for-a-device-with-specific-service-identifiers-and-states"></a>Пример 2. Получите права на использование для устройства с определенными идентификаторами и состояниями службы
+### <a name="example-2-get-usage-rights-for-a-device-with-specific-service-identifiers-and-states"></a>Пример 2. Получить права использования для устройства с определенными идентификаторами и состояниями службы
 
 #### <a name="request"></a>Запрос
 

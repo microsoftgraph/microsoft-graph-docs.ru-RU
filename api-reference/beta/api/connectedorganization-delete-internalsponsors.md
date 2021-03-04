@@ -1,24 +1,24 @@
 ---
-title: Удаление внутреннего спонсора подключенной Организации
-description: Удаление пользователя или группы из внутренних спонсоров подключенной Организации.
+title: Удаление внутреннего спонсора подключенной организации
+description: Удалите пользователя или группу из внутренних спонсоров подключенной организации.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de860ed2e5bc087ec14b1ee0765cc1a863724e93
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 35450f6b409543d7b56f27b6b682f4184b5b33b1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957793"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437522"
 ---
-# <a name="remove-connected-organization-internal-sponsor"></a>Удаление внутреннего спонсора подключенной Организации
+# <a name="remove-connected-organization-internal-sponsor"></a>Удаление внутреннего спонсора подключенной организации
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пользователя или группы из внутренних спонсоров подключенной Организации. Внутренние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной Организации.
+Удалите пользователя или группу из внутренних спонсоров подключенной организации. Внутренние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой связанной организации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48957793"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connect
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,16 +1,16 @@
 ---
 title: Список политик
-description: Получение списка объектов Кондитионалакцессполици.
+description: Извлечение списка объектов conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bd073c4770aa40c9ec822de3def04172f0dc5312
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8d4622c0c60521b6d4a56db86b5c4bd959950a2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957891"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437577"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957891"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) .
+Извлечение списка [объектов conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/policies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$skip` параметры запросов,,,, `$top` `$count` `$filter` `$orderBy` и `$select` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$skip` параметры `$top` запросов , , , , и `$count` `$filter` `$orderBy` `$select` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identity/conditionalAccess/policies
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

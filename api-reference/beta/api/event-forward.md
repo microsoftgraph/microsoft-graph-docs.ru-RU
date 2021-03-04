@@ -1,26 +1,26 @@
 ---
-title: 'событие: Forwarded'
-description: 'Это действие позволяет Организатору или участнику события "собрание" пересылать '
+title: 'событие: вперед'
+description: 'Это действие позволяет организатору или участнику собрания '
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4d46bad4f7252e1c387a968102f5dc1c0ef9a1a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75f294c456969dbd7f8ffccfc941451d4c611b03
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954890"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436213"
 ---
-# <a name="event-forward"></a>событие: Forwarded
+# <a name="event-forward"></a>событие: вперед
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это действие позволяет Организатору или участнику [события](../resources/event.md) "собрание" пересылать приглашение на собрание новому получателю. 
+Это действие позволяет организатору или [](../resources/event.md) участнику собрания перенаадть запрос собрания новому получателю. 
 
-Если событие "собрание" переадресовано от почтового ящика Microsoft 365 другому получателю, это действие также отправляет сообщение организатору переадресации и добавляет получателя к копии события собрания организатора. Это удобство недоступно при пересылке с учетной записи Outlook.com.
+Если событие собрания передается из почтового ящика Microsoft 365 участника другому получателю, это действие также отправляет сообщение для уведомления организатора пересылания и добавляет получателя в копию организатора собрания. Это удобство не доступно при переададки из Outlook.com учетной записи.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -46,9 +46,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
 
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
 ```
@@ -64,7 +61,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-|ToRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей, на которые пересылается событие.|
+|ToRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей для переададки события.|
 
 ## <a name="response"></a>Отклик
 

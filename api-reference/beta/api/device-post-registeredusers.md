@@ -3,14 +3,14 @@ title: Создание объекта registeredUser
 description: Добавление зарегистрированного пользователя устройства.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bb541ca5c15fc771978d6d8fa838de7862b6c7dc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 114ff43ffe09ca03c43b509f6963768763f85202
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963409"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437088"
 ---
 # <a name="create-registereduser"></a>Создание объекта registeredUser
 
@@ -28,7 +28,7 @@ ms.locfileid: "48963409"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

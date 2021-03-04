@@ -1,26 +1,26 @@
 ---
-title: Список serviceConfigurationRecords
-description: Получает список объектов domainDnsRecord, необходимых для включения служб для домена.
+title: Служба ListConfigurationRecords
+description: Извлекает список объектов domainDnsRecord, необходимых для обеспечения служб для домена.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9f743f2d5fd949d76fb25c6417e530a4bc8b6e83
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eb0afcfc5882be85ed69174527b0a233f679b9e0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956016"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436514"
 ---
-# <a name="list-serviceconfigurationrecords"></a>Список serviceConfigurationRecords
+# <a name="list-serviceconfigurationrecords"></a>Служба ListConfigurationRecords
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получает список объектов [domainDnsRecord](../resources/domaindnsrecord.md) , необходимых для включения служб для домена.
+Извлекает список [объектов domainDnsRecord,](../resources/domaindnsrecord.md) необходимых для обеспечения служб для домена.
 
-Используйте возвращенный список, чтобы добавить записи в файл зоны домена. Это можно сделать с помощью регистратора доменных имен или DNS-сервера.
+Используйте возвращенный список, чтобы добавить записи в файл зоны домена. Это можно сделать с помощью регистратора домена или конфигурации сервера DNS.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "48956016"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Domain.ReadWrite.All |
+|Приложение | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,13 +50,13 @@ GET /domains/{id}/serviceConfigurationRecords
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов domainDnsRecord](../resources/domaindnsrecord.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

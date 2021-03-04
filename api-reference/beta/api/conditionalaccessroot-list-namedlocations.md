@@ -1,24 +1,24 @@
 ---
-title: Список Намедлокатионс
-description: Получение списка объектов Намедлокатион.
+title: Список namedLocations
+description: Получите список объектов namedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 959cbfc7f0b73ef121f74e9aabc9232dc6e1eb3f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e71912d74b5d1994cad1ca86333a6e207bab33bc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957911"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437565"
 ---
-# <a name="list-namedlocations"></a>Список Намедлокатионс
+# <a name="list-namedlocations"></a>Список namedLocations
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [намедлокатион](../resources/namedlocation.md) .
+Получите список объектов [namedLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$count` параметры запросов,,,, `$filter` `$orderBy` `$select` `$skip` и `$top` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$count` параметры `$filter` запросов , , , , и `$orderBy` `$select` `$skip` `$top` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,17 +48,17 @@ GET /identity/conditionalAccess/namedLocations
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [намедлокатион](../resources/namedlocation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов namedLocation](../resources/namedlocation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-namedlocations"></a>Пример 1: List All ALL Намедлокатионс
+### <a name="example-1-list-all-namedlocations"></a>Пример 1. Список всех именных локаций
 
 #### <a name="request"></a>Запрос
 
@@ -164,7 +164,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-list-all-ipnamedlocations"></a>Пример 2: список всех Ипнамедлокатионс
+### <a name="example-2-list-all-ipnamedlocations"></a>Пример 2. Список всех ipNamedLocations
 
 #### <a name="request"></a>Запрос
 
@@ -258,7 +258,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>Пример 3: список всех Намедлокатионс, созданных после определенной даты
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>Пример 3. Список всех имен локаций, созданных после определенной даты
 
 #### <a name="request"></a>Запрос
 
@@ -334,7 +334,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>Пример 4: список всех Каунтринамедлокатионс, содержащих определенную страну или регион
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>Пример 4. Список всех имен стран, содержащих определенную страну или регион
 
 #### <a name="request"></a>Запрос
 

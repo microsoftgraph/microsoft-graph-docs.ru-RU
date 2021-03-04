@@ -1,24 +1,24 @@
 ---
-title: Получение Феатурероллаутполици
-description: Получение свойств и связей объекта феатурероллаутполици.
+title: Get featureRolloutPolicy
+description: Извлечение свойств и связей объекта featurerolloutpolicy.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 35de5467a5be96f25348659aa92654cb57c28605
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5cd9830833ed06febf4b1b66b77d3ca4f72c52f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965573"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436136"
 ---
-# <a name="get-featurerolloutpolicy"></a>Получение Феатурероллаутполици
+# <a name="get-featurerolloutpolicy"></a>Get featureRolloutPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [феатурероллаутполици](../resources/featurerolloutpolicy.md) .
+Извлечение свойств и связей [объекта featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [феатурероллаутполици](../resources/featurerolloutpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [featureRolloutPolicy](../resources/featurerolloutpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e
 Ниже приведен пример отклика.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Проверка групп элементов
-description: Проверка членства в указанном списке групп и возврат из этого списка этих групп
+description: Проверка членства в указанном списке групп и возвраты из этого списка этих групп
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 549a8ac05895ffd149971a6c34297b126c7ea2da
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 7a07e4c8be19d9a6aaf20d30168ebe02f3af74bf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176558"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436962"
 ---
 # <a name="check-member-groups"></a>Проверка членства в группах
 
@@ -18,7 +18,7 @@ ms.locfileid: "50176558"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверьте членство в указанном списке групп и возвращает из него группы, участником которых является указанный пользователь, группа, участник службы или объект каталога. Это транзитивная функция.
+Проверьте членство в указанном списке групп и возвращайте из этого списка те группы, членом которых является указанный пользователь, группа, руководитель службы или объект каталога. Это транзитивная функция.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,12 +30,12 @@ ms.locfileid: "50176558"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, Directory.Read.All |
 
-Используйте рекомендации по следующим сценариям, чтобы определить, какие типы разрешений использовать:
-- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All, чтобы получить членство в группах для во доступного пользователя.
-- Используйте разрешения User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All, чтобы получить членство в группах для любого пользователя.
-- Используйте разрешение GroupMember.Read.All или Group.Read.All, чтобы получить членство в группе.
-- Используйте разрешения Application.ReadWrite.All и GroupMember.Read.All или Application.ReadWrite.All и Group.Read.All для получения членства в группах для участников-служб.
-- Используйте разрешение Directory.Read.All для получения членства в группах для объекта каталога.
+Используйте руководство по следующим сценариям, чтобы определить, какие типы разрешений использовать:
+- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All для получения членства в группах для пользователя, вступив в группу.
+- Используйте user.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All для получения членства в группе для любого пользователя.
+- Чтобы получить членство в группе, используйте разрешение GroupMember.Read.All или Group.Read.All.
+- Используйте разрешения Application.ReadWrite.All и GroupMember.Read.All или Application.ReadWrite.All и Group.Read.All для получения членства в группе для директора службы.
+- Используйте разрешение Directory.Read.All для получения членства в группе для объекта каталога.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,12 +52,12 @@ POST /directoryObjects/{id}/checkMemberGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция String |Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
+|groupIds|Коллекция строк |Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
 

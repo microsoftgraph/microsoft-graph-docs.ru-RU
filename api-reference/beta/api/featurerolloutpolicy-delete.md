@@ -1,24 +1,24 @@
 ---
-title: Удаление Феатурероллаутполици
-description: Удаление объекта Феатурероллаутполици.
+title: Удаление featureRolloutPolicy
+description: Удаление объекта featureRolloutPolicy.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 078af77e9b3cffa63e7a86b22aec49c7d98b3dee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7197ffff516b1343b14c6042480fd003a94fac6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006771"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436101"
 ---
-# <a name="delete-featurerolloutpolicy"></a>Удаление Феатурероллаутполици
+# <a name="delete-featurerolloutpolicy"></a>Удаление featureRolloutPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [феатурероллаутполици](../resources/featurerolloutpolicy.md) .
+Удаление [объекта featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 

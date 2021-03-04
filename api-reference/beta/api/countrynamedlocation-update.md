@@ -1,24 +1,24 @@
 ---
-title: Обновление Каунтринамедлокатион
-description: Обновление свойств объекта Каунтринамедлокатион.
+title: Обновление countryNamedlocation
+description: Обновление свойств объекта countryNamedLocation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 394d58908bfc3830b944644f947035c067fa1c15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5827219409f49e5e27eed9539c23609cf126bf02
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956540"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437249"
 ---
-# <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
+# <a name="update-countrynamedlocation"></a>Обновление countryNamedLocation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [каунтринамедлокатион](../resources/countryNamedLocation.md) .
+Обновление свойств объекта [countryNamedLocation.](../resources/countryNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48956540"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Приложение                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,9 +51,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каунтриесандрегионс|Коллекция строк|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
-|displayName|String|Удобное для человека имя расположения.|
-|инклудеункновнкаунтриесандрегионс|Логический|Значение, `true` Если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
+|countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|displayName|String|Понятное человеку имя расположения.|
+|includeUnknownCountriesAndRegions|Boolean|Значение в том случае, если IP-адреса, которые не относятся к стране или региону, должны быть включены `true` в именоваемом расположении.|
 
 ## <a name="response"></a>Отклик
 

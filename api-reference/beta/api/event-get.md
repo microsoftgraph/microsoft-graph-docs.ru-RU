@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f61a1715fa1823e496598e723d856c8c76c81959
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 44007d0c4b8ad4feaf97cb3940fac388b9cca902
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719715"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436234"
 ---
 # <a name="get-event"></a>Вывод события
 
@@ -22,10 +22,10 @@ ms.locfileid: "49719715"
 
 Приложение может получить событие в календаре другого пользователя, если:
 
-* Приложение имеет разрешения приложения
-* Приложение имеет соответствующие [](#permissions) делегирование разрешений от одного пользователя, а другой пользователь поделился календарем с этим пользователем или предоставил ему делегирование доступа. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
+* У приложения есть разрешения на приложения
+* Приложение имеет соответствующие [](#permissions) делегированные разрешения от одного пользователя, а другой пользователь поделился календарем с этим пользователем или предоставил ему делегированную возможность доступа. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
 
-Так как **ресурс события** поддерживает [расширения,](/graph/extensibility-overview)вы также можете использовать эту операцию для получения пользовательских свойств и данных `GET` расширения в **экземпляре** события.
+Так как **ресурс событий** поддерживает [расширения,](/graph/extensibility-overview)вы также можете использовать операцию для получения настраиваемой информации о свойствах и расширении `GET` в **экземпляре** события.
 
 
 ### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
@@ -64,9 +64,6 @@ GET /groups/{id}/calendar/events/{id}
 GET /me/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
@@ -89,7 +86,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 ### <a name="example-1-get-a-specified-event"></a>Пример 1. Получить указанное событие
 #### <a name="request"></a>Запрос
-В следующем примере возвращается указанное событие. В нем указывается:
+В следующем примере получается указанное событие. В нем указывается:
 
 - Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
 - Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.
@@ -212,9 +209,9 @@ Content-length: 1928
     }
 }
 ```
-### <a name="example-2-get-the-body-property-in-text-format"></a>Пример 2. Получите свойство body в текстовом формате
+### <a name="example-2-get-the-body-property-in-text-format"></a>Пример 2. Получить свойство body в текстовом формате
 #### <a name="request"></a>Запрос
-В следующем примере показано, как использовать заголовщик для получения свойства body указанного события `Prefer: outlook.body-content-type="text"` в текстовом  формате.
+В следующем примере показано, как использовать заголовка для получения свойства тела указанного события `Prefer: outlook.body-content-type="text"` в текстовом  формате.
 
 В запросе также используется параметр `$select` для возврата отдельных свойств. Без параметра `$select` будут возвращены все свойства событий.
 
@@ -274,7 +271,7 @@ Content-length: 636
 }
 ```
 
-### <a name="example-3-get-an-event-that-specifies-more-than-one-location"></a>Пример 3. Получите событие, которое указывает несколько расположений
+### <a name="example-3-get-an-event-that-specifies-more-than-one-location"></a>Пример 3. Получить событие, которое указывает несколько местоположений
 #### <a name="request"></a>Запрос
 
 В следующем примере показано получение события, которое указывает несколько расположений. В запросе указан параметр `$select` для возврата отдельных свойств. 
@@ -309,7 +306,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Свойство **locations** включает информацию о трех местах, для которых организовано событие. 
 
-Поскольку в запросе не указаны какие-либо или заголовщики, свойства начала и окончания отображаются в часовом поясе UTC по умолчанию, а тело в `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` формате HTML   по умолчанию.  
+Так как в запросе не указаны какие-либо заголовки или заголовки, свойства запуска и окончания отображаются в часовом поясе UTC по умолчанию, а тело находится в `Prefer: outlook.timezone` HTML-формате `Prefer: outlook.body-content-type` по умолчанию.    
 
 <!-- {
   "blockType": "response",
@@ -408,10 +405,10 @@ Content-length: 1992
   }
 }
 ```
-### <a name="example-4-expand-a-series-master-event"></a>Пример 4. Расширение события "Образец серии"
+### <a name="example-4-expand-a-series-master-event"></a>Пример 4. Расширение мастер-события серии
 #### <a name="request"></a>Запрос
 
-В следующем примере показано, как развернуть событие хозяина серии повторяющегося ряда с исключениями и отмененными событиями. В запросе указан параметр `$select` для возврата отдельных свойств. 
+В следующем примере показано расширение мастер-события серии повторяющихся серий с исключениями и отмененными событиями. В запросе указан параметр `$select` для возврата отдельных свойств. 
 
 <!-- {
   "blockType": "request",
@@ -421,7 +418,7 @@ Content-length: 1992
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### <a name="response"></a>Отклик
-Операция GET возвращает выбранные свойства для события хозяина ряда. В частности, для событий в коллекции **exceptionOccurrences** операция возвращает свойство **id** и применимые, выбранные свойства **(тема,** **начало,** **конец,** **occurrenceId).** Что касается событий в коллекции **cancelledOccurrences,** так как события больше не существуют, операция возвращает только значения их **свойств occurrenceId.**
+Операция GET возвращает выбранные свойства для мастер-события серии. В частности, для событий в коллекции **exceptionOccurrences** операция возвращает свойство **id** и применимые, выбранные свойства **(subject,** **start**, **end**, **occurrenceId).** Что касается событий в **коллекции cancelledOccurrences,** так как события больше не существуют, операция возвращает только значения **свойств occurrenceId.**
 
 <!-- {
   "blockType": "response",

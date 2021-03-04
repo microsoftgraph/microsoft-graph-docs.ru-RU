@@ -3,14 +3,14 @@ title: Обновление объекта connectedOrganization
 description: Обновление объекта connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 980fade00646062a6afe740e26cc5a9cdf976512
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 36619c33de483693f35c3ca1163f8e57f063622a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872676"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437417"
 ---
 # <a name="update-connectedorganization"></a>Обновление connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872676"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление [объекта connectedOrganization,](../resources/connectedorganization.md) чтобы изменить одно или несколько его свойств.
+[Обновим объект connectedOrganization,](../resources/connectedorganization.md) чтобы изменить одно или несколько его свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "49872676"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,20 +45,20 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [connectedOrganization](../resources/connectedorganization.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [connectedOrganization.](../resources/connectedorganization.md)
 
-В следующей таблице показаны свойства, необходимые при обновлении [объекта connectedOrganization.](../resources/connectedorganization.md)
+В следующей таблице показаны свойства, которые можно получить при обновлении [connectedOrganization.](../resources/connectedorganization.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 | displayName  |String | Имя подключенной организации.  |
 | description  |String | Описание подключенной организации. |
-| state        |connectedOrganizationState|Состояние подключенной организации определяет, применимы ли политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запросителя. Возможные значения: `configured`, `proposed`.|
+| state        |connectedOrganizationState|Состояние связанной организации определяет, применимы ли политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запроса. Возможные значения: `configured`, `proposed`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `204 Accepted` отклика и [объект connectedOrganization](../resources/connectedorganization.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `204 Accepted` [объект connectedOrganization](../resources/connectedorganization.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

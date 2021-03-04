@@ -1,16 +1,16 @@
 ---
 title: Создание параметра каталога
-description: Используйте этот API, чтобы создать новый параметр на основе шаблонов, доступных в Директорисеттингтемплатес.
+description: Используйте этот API для создания нового параметра на основе шаблонов, доступных в directorySettingTemplates.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d2a94361ee3d92ae6662751a633176ff236819ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a4dec36d0932870b7d8601223b71aa4340175c47
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956191"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436641"
 ---
 # <a name="create-a-directory-setting"></a>Создание параметра каталога
 
@@ -18,11 +18,11 @@ ms.locfileid: "48956191"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый параметр на основе шаблонов, доступных в Директорисеттингтемплатес. Эти параметры могут быть на уровне клиента или на уровне объекта (в настоящее время только для групп). Запрос на создание должен предоставлять Сеттингвалуес для всех параметров, определенных в шаблоне. Для параметров, относящихся к группе, можно задать только параметр, определяющий, могут ли участники группы приглашать гостевых пользователей. Это поведение будет управляться после того, как возможность добавлять гостей в группу является общедоступной.
+Используйте этот API для создания нового параметра на основе шаблонов, доступных в directorySettingTemplates. Эти параметры могут быть на уровне клиента или на уровне объекта (в настоящее время только для групп). Запрос на создание должен предоставить параметрValues для всех параметров, определенных в шаблоне. Для параметров, определенных для группы, можно установить только параметр, регуляющий, могут ли члены группы приглашать гостевых пользователей. Это будет регулировать такое поведение после того, как будет доступна возможность добавлять гостевых пользователей в группу.
 
-> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована для *создания граупсеттингс*.
+> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Create groupSettings.*
 
-Чтобы получить список шаблонов и свойств, которые они поддерживают в бета-версии, используйте [запрос директорисеттингтемплате](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta). (Для конечных точек v 1.0 вызовите [граупсеттингтемплатес](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)
+Для списка шаблонов и свойств, которые они поддерживают в бета-версии, используйте [запрос directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta). (Для конечных точек v1.0 вызываемая [группаSettingTemplates.)](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)
 
 
 ## <a name="permissions"></a>Разрешения
@@ -32,7 +32,7 @@ ms.locfileid: "48956191"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,12 +45,12 @@ POST /groups/{id}/settings
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.  Однако отображаемое имя для параметра будет задано на основе имени шаблона параметров, на который указывает ссылка.
+## <a name="request-body"></a>Тело запроса
+В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)  Однако имя отображения для параметра будет устанавливаться на основе имени шаблона ссылок параметров.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -94,7 +94,7 @@ Content-length: 222
 
 ---
 
-В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

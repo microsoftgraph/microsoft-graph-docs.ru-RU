@@ -1,24 +1,24 @@
 ---
-title: 'Device: Чеккмемберобжектс'
-description: Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта Device.
+title: 'устройство: checkMemberObjects'
+description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта устройства.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2c419eee8856ff257f236259c923d2ab0980049e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ea5fffe49079388cac3d9d18daab5a13d7a05f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956477"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437238"
 ---
-# <a name="device-checkmemberobjects"></a>Device: Чеккмемберобжектс
+# <a name="device-checkmemberobjects"></a>устройство: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверка членства в списке групп или административных единиц для указанного объекта Device. Этот метод является транзитивным.
+Проверьте членство в списке групп или административных единиц для указанного объекта устройства. Этот метод является транзитным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,13 +45,13 @@ POST /devices/{id}/checkMemberObjects
 | Authorization | Bearer {token} |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-| ids | Коллекция String | Коллекция, содержащая идентификаторы объектов групп, ролей каталогов, административных единиц или идентификаторов Ролетемплате ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов. |
+| ids | Коллекция String | Коллекция, в которой содержатся объектные ИД групп, роли каталога, административные единицы или roleTemplate ID ролей каталога, в которых необходимо проверить членство. Может быть указано до 20 объектов. |
 
 ## <a name="response"></a>Отклик
 

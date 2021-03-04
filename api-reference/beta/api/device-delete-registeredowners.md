@@ -1,16 +1,16 @@
 ---
-title: Удаление registeredowners
-description: Удаление пользователя в качестве зарегистрированного владельца устройства.
+title: Удаление регистраторов
+description: Удалите пользователя как зарегистрированного владельца устройства.
 localization_priority: Normal
 author: michaelrm97
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eb4da89260b91ae96ecfd21bbf9f3266b0228084
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 094c7aa46102d10cd61267b0056654d3e463a335
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956463"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437242"
 ---
 # <a name="delete-registeredowner"></a>Удаление registeredOwner
 
@@ -18,7 +18,7 @@ ms.locfileid: "48956463"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пользователя в качестве зарегистрированного владельца устройства.
+Удалите пользователя как зарегистрированного владельца устройства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48956463"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,7 +43,7 @@ DELETE /devices/{id}/registeredOwners/{id}/$ref
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

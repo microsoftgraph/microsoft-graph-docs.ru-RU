@@ -1,35 +1,35 @@
 ---
-title: Обновление Континуаусакцессевалуатионполици
-description: Обновление свойств объекта Континуаусакцессевалуатионполици.
+title: Обновление continuousAccessEvaluationPolicy
+description: Обновление свойств объекта continuousAccessEvaluationPolicy.
 author: jerrysai
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 990428fc0022bca7d27f6eaac7978071f49381cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 80c08c4b711daa2e79600c20ce11f30cd7879af4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956943"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437284"
 ---
-# <a name="update-continuousaccessevaluationpolicy"></a>Обновление Континуаусакцессевалуатионполици
+# <a name="update-continuousaccessevaluationpolicy"></a>Обновление continuousAccessEvaluationPolicy
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [континуаусакцессевалуатионполици](../resources/continuousaccessevaluationpolicy.md) .
+Обновление свойств объекта [continuousAccessEvaluationPolicy.](../resources/continuousaccessevaluationpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Приложение                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
-> У этого API есть [известная проблема](/graph/known-issues#permissions) , связанная с разрешениями.
+> Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,9 +52,9 @@ PATCH /identity/continuousAccessEvaluationPolicy
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groups|Коллекция строк|Коллекция идентификаторов групп в области для оценки. Если коллекция пуста, все группы находятся в области действия.|
-|isEnabled|Boolean| `true` , чтобы указать, следует ли выполнять оценку непрерывного доступа; в противном случае `false` . |
-|users|Коллекция строк|Коллекция идентификаторов пользователей в области для оценки. Если коллекция пуста, все пользователи находятся в области действия.|
+|groups|Коллекция строк|Коллекция идентификаторов групп в области для оценки. Все группы находятся в области, когда коллекция пуста.|
+|isEnabled|Boolean| `true` указать, следует ли проводить оценку непрерывного доступа; в противном `false` случае . |
+|users|Коллекция строк|Коллекция идентификаторов пользователей в области для оценки. Все пользователи находятся в области, когда коллекция пуста.|
 
 
 ## <a name="response"></a>Отклик

@@ -3,14 +3,14 @@ title: Удаление параметра каталога
 description: Удаление параметра каталога.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6b64e3d5a4e00ac829f12f3d07446a8da895171d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d1459e7ace8a2de6bae4fc696ac308cffca6392
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956240"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436700"
 ---
 # <a name="delete-a-directory-setting"></a>Удаление параметра каталога
 
@@ -20,7 +20,7 @@ ms.locfileid: "48956240"
 
 Удаление параметра каталога.
 
-> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *Удалить граупсеттингс*.
+> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Delete groupSettings.*
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,11 +29,11 @@ ms.locfileid: "48956240"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Удаление определенного параметра на уровне клиента или группы
+Удаление определенного параметра для клиента или группы
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}
@@ -44,7 +44,7 @@ DELETE /groups/{id}/settings/{id}
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

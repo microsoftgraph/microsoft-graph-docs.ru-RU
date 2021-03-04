@@ -1,24 +1,24 @@
 ---
-title: Получение Каунтринамедлокатион
-description: Получение свойств и связей объекта Каунтринамедлокатион.
+title: Get countryNamedLocation
+description: Извлечение свойств и связей объекта countryNamedlocation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 14ac09bc9fdcfbecd660d3eea9a09917702ae9e3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 16e8a3e27eb0858cff682b2f28fb1179aaf05f0c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956589"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437256"
 ---
-# <a name="get-countrynamedlocation"></a>Получение Каунтринамедлокатион
+# <a name="get-countrynamedlocation"></a>Get countryNamedLocation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [каунтринамедлокатион](../resources/countryNamedLocation.md) .
+Извлечение свойств и связей [объекта countryNamedLocation.](../resources/countryNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identity/conditionalAccess/namedLocations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [каунтринамедлокатион](../resources/countrynamedlocation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [countryNamedLocation](../resources/countrynamedlocation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

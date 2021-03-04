@@ -1,24 +1,24 @@
 ---
-title: Получение Кондитионалакцессполици
-description: Получение свойств и связей объекта Кондитионалакцессполици.
+title: Get conditionalAccessPolicy
+description: Извлечение свойств и связей объекта conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 88754721d394cbf881de84b316bfddc5b2734f1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c414e809bb7f111ef1d39eb9d6a29e47a75f9aeb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957939"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437613"
 ---
-# <a name="get-conditionalaccesspolicy"></a>Получение Кондитионалакцессполици
+# <a name="get-conditionalaccesspolicy"></a>Get conditionalAccessPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) .
+Извлечение свойств и связей объекта [conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/policies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identity/conditionalAccess/policies/{id}
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -177,10 +177,10 @@ Content-type: application/json
         },
         "deviceStates": null,
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }

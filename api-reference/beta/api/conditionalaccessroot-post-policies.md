@@ -1,24 +1,24 @@
 ---
-title: Создание Кондитионалакцессполици
-description: Создание нового Кондитионалакцессполици.
+title: Создание conditionalAccessPolicy
+description: Создайте новый conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 791aad23890344dd0aef2bcfb40c32010f13ec22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 667e704b98752446232af343b7e73f43e3693512
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957834"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437543"
 ---
-# <a name="create-conditionalaccesspolicy"></a>Создание Кондитионалакцессполици
+# <a name="create-conditionalaccesspolicy"></a>Создание conditionalAccessPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [кондитионалакцессполици](../resources/conditionalaccesspolicy.md).
+Создание нового [условногоAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,12 +26,12 @@ ms.locfileid: "48957834"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Приложение                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
-> У этого API есть [известная проблема](/graph/known-issues#permissions) , связанная с разрешениями.
+> Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,22 +50,22 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
-Допустимая политика должна содержать по крайней мере одно правило [приложения](../resources/conditionalaccessapplications.md) , например, `'includeApplications': 'none'` одно правило [пользователя](../resources/conditionalaccessusers.md) , например, `'includeUsers': 'none'` и по крайней мере один элемент управления " [предоставление](../resources/conditionalaccessgrantcontrols.md) / [сеанса](../resources/conditionalaccesssessioncontrols.md) ".
+Допустимая политика должна содержать [](../resources/conditionalaccessapplications.md) по крайней мере одно правило приложения , например, одно правило пользователя, например, и по крайней мере одно управление `'includeApplications': 'none'` [](../resources/conditionalaccessusers.md) `'includeUsers': 'none'` [](../resources/conditionalaccessgrantcontrols.md) / [сеансом гранта.](../resources/conditionalaccesssessioncontrols.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и новый `201 Created` [объект conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Пример 1: запрос MFA для доступа к Exchange Online вне надежных расположений
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Пример 1. Требовать от MFA доступа к Exchange Online за пределами надежных местоположений
 
 #### <a name="request"></a>Запрос
-В следующем примере показан общий запрос на проверку подлинности многофакторной проверки подлинности для доступа к Exchange Online из современных клиентов проверки подлинности вне надежных расположений для определенной группы.
+В следующем примере показан распространенный запрос на требование многофакторной проверки подлинности для доступа к Exchange Online от современных клиентов проверки подлинности за пределами надежных мест для определенной группы.
 
->**Примечание:** Перед использованием этой операции необходимо настроить надежные расположения.
+>**Примечание:** Перед использованием этой операции необходимо настроить доверенные расположения.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -197,11 +197,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Пример 2: Блокировка доступа к Exchange Online из ненадежных регионов
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Пример 2. Блокировка доступа к Exchange Online из неуверенных регионов
 
 #### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на блокировку доступа к Exchange Online из недоверенных и неизвестных областей.
-В этом примере предполагается, что именованное расположение с идентификатором ID = 198ad66e-87b3-4157-85a3-8a7b51794ee9 соответствует списку ненадежных и неизвестных областей.
+В следующем примере показан запрос на блокировку доступа к Exchange Online из неуверенных и неизвестных регионов.
+В этом примере предполагается, что названное расположение с id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 соответствует списку ненадегих и неизвестных регионов.
 
 <!-- {
   "blockType": "request",
@@ -306,10 +306,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-use-all-conditionscontrols"></a>Пример 3: использование всех условий и элементов управления
+### <a name="example-3-use-all-conditionscontrols"></a>Пример 3. Использование всех условий и элементов управления
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса на использование всех условий и элементов управления.
+Ниже приводится пример запроса на использование всех условий и элементов управления.
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -547,12 +547,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Пример 4: запрос MFA для Exchange Online с устройств, не являющихся жалобами
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Пример 4. Требовать от MFA exchange Online с устройств без жалоб
 
->**Примечание:** Мы рекомендуем использовать условие **девицестатес** , и оно может быть удалено в будущем. Перемотка вперед, используйте состояние **Devices** .
+>**Примечание:** Мы отстраняем состояние **deviceStates,** и оно может быть удалено в будущем. В будущем используйте **условие устройств.**
 
 #### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на перевод в Exchange Online с помощью сервера MFA в Exchange Online с устройств, не являющихся жалобами.
+В следующем примере показан запрос на требование MFA к Exchange Online с устройств без жалоб.
 
 <!-- {
   "blockType": "request",
@@ -576,10 +576,10 @@ Content-type: application/json
             "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }
@@ -644,10 +644,10 @@ Content-type: application/json
             "excludeRoles": []
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }

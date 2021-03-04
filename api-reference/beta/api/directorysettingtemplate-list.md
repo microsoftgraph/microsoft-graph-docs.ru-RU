@@ -1,26 +1,26 @@
 ---
-title: Список Директорисеттингтемплатес
-description: Эта операция извлекает список доступных объектов Директорисеттингтемплатес.
+title: List directorySettingTemplates
+description: Эта операция извлекает список доступных объектов directorySettingTemplates.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cc0a52f8d53ea867171459ee92e9ec512c757e19
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 13462b4a4d980d42667fee1252c8ded94b0a7ea8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956093"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436605"
 ---
-# <a name="list-directorysettingtemplates"></a>Список Директорисеттингтемплатес
+# <a name="list-directorysettingtemplates"></a>List directorySettingTemplates
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблоны параметров каталога представляют собой набор шаблонов параметров каталогов, из которых можно создавать и использовать параметры каталогов в клиенте.  Эта операция извлекает список доступных объектов **директорисеттингтемплатес** .
+Шаблоны параметров каталогов представляют собой набор шаблонов параметров каталогов, из которых можно создавать и использовать параметры каталога в клиенте.  Эта операция извлекает список доступных **объектов directorySettingTemplates.**
 
-> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована в *List groupSettingTemplate*.
+> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *list groupSettingTemplate.*
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,12 +44,12 @@ GET /directorySettingTemplates
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директорисеттингтемплате](../resources/directorysettingtemplate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов directorySettingTemplate](../resources/directorysettingtemplate.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

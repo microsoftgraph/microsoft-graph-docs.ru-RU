@@ -3,14 +3,14 @@ title: Список registeredUsers
 description: Получение списка пользователей, являющихся зарегистрированными пользователями устройства.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9ebeb558e4c969d9249bbfbca7779b4a0213765e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cf352b1ba3fcf8c5e76cf200fdfdaa9ef7cc46c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962864"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437172"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
@@ -27,9 +27,9 @@ ms.locfileid: "48962864"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL или Directory. ReadWrite. ALL или Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All или Directory.ReadWrite.All или Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения | Directory.Read.All или Directory.ReadWrite.All |
+|Приложение | Directory.Read.All или Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -48,7 +48,7 @@ GET /devices/{id}/registeredUsers
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

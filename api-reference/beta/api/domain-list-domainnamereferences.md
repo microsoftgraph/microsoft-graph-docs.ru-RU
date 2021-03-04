@@ -1,24 +1,24 @@
 ---
-title: Список Домаиннамереференцес
-description: Получение списка directoryObject со ссылкой на домен.
+title: Список domainNameReferences
+description: Извлечение списка directoryObject со ссылкой на домен.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2244ca2b5163ac20ce6fb3154ce550196e8f444b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 505c78a9adef3efc2baae05487a46b59d97d6ca6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956047"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436549"
 ---
-# <a name="list-domainnamereferences"></a>Список Домаиннамереференцес
+# <a name="list-domainnamereferences"></a>Список domainNameReferences
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращаемый список будет содержать все объекты каталога с зависимостью от домена.
+Извлечение списка [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращенный список будет содержать все объекты каталога, которые имеют зависимость от домена.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "48956047"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Domain.ReadWrite.All |
+|Приложение | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -51,7 +51,7 @@ GET /domains/{id}/domainNameReferences
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

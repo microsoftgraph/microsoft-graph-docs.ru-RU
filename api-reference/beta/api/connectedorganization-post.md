@@ -1,16 +1,16 @@
 ---
 title: Создание connectedOrganization
-description: Создайте новую connectedOrganization.
+description: Создание новой связаннойорганизации.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75981889ae018e3c5852dae52bcb6ac09a195103
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 00cac73ca31774a4b86a0df3db5b7c958e65e052
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872683"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437424"
 ---
 # <a name="create-connectedorganization"></a>Создание connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872683"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [connectedOrganization.](../resources/connectedorganization.md)
+Создание нового [объекта connectedOrganization.](../resources/connectedorganization.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872683"
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,21 +47,21 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [connectedOrganization](../resources/connectedorganization.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [connectedOrganization.](../resources/connectedorganization.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта connectedOrganization.](../resources/connectedorganization.md)
+В следующей таблице показаны свойства, необходимые при создании [connectedOrganization.](../resources/connectedorganization.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя подключенной организации. |
 |description|String|Описание подключенной организации.|
-|identitySources|[Коллекция identitySource](../resources/identitysource.md)|Коллекция с одним элементом, исходным источником удостоверений в этой подключенной организации.|
-|state|connectedOrganizationState|Состояние подключенной организации определяет, применимы ли политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запросителя. Возможные значения: `configured`, `proposed`.|
+|identitySources|[коллекция identitySource](../resources/identitysource.md)|Коллекция с одним элементом, исходный источник удостоверений в этой связанной организации.|
+|state|connectedOrganizationState|Состояние связанной организации определяет, применимы ли политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запроса. Возможные значения: `configured`, `proposed`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `201 Created` [объект connectedOrganization](../resources/connectedorganization.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` новый [объект connectedOrganization](../resources/connectedorganization.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

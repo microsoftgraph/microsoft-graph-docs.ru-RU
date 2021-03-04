@@ -1,24 +1,24 @@
 ---
-title: Обновление Ентитлементманажементсеттингс
-description: Обновление объекта Ентитлементманажементсеттингс для изменения одного или нескольких его свойств.
+title: Обновление entitlementManagementSettings
+description: Обновление объекта entitlementManagementSettings, чтобы изменить одно или несколько его свойств.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 43859025dd98e93d029813d627487e78dca5fd69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8799edcb1eba5d88837916bc086b7238002889e7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955033"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436290"
 ---
-# <a name="update-entitlementmanagementsettings"></a>Обновление Ентитлементманажементсеттингс
+# <a name="update-entitlementmanagementsettings"></a>Обновление entitlementManagementSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление существующего объекта [ентитлементманажементсеттингс](../resources/entitlementmanagementsettings.md) для изменения одного или нескольких его свойств.
+Обновим [существующий объект entitlementManagementSettings,](../resources/entitlementmanagementsettings.md) чтобы изменить одно или несколько его свойств.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -28,7 +28,7 @@ ms.locfileid: "48955033"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /identityGovernance/entitlementManagement/settings
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление параметров объекта [ентитлементманажементсеттингс](../resources/entitlementmanagementsettings.md) в формате JSON.
+В теле запроса поставляем представление JSON параметров объекта [entitlementManagementSettings.](../resources/entitlementmanagementsettings.md)
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.

@@ -1,24 +1,24 @@
 ---
-title: Создание Намедлокатион
-description: Создание нового Намедлокатион.
+title: Создание namedLocation
+description: Создайте новое имяLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 890beaddcfcea426828da8176a5b84f574d8ea0e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8a6bab90f795259fd2e52610008744434e7f6247
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957841"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437571"
 ---
-# <a name="create-namedlocation"></a>Создание Намедлокатион
+# <a name="create-namedlocation"></a>Создание namedLocation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [намедлокатион](../resources/namedlocation.md) .
+Создайте новый [объект с именемLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48957841"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Приложение                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,15 +47,15 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [ипнамедлокатион](../resources/ipnamedlocation.md) или [КАУНТРИНАМЕДЛОКАТИОН](../resources/countrynamedlocation.md) в формате JSON.
+В теле запроса укажи представление JSON объекта [ipNamedLocation](../resources/ipnamedlocation.md) или [countryNamedLocation.](../resources/countrynamedlocation.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [Ипнамедлокатион](../resources/ipnamedlocation.md) или [каунтринамедлокатион](../resources/countrynamedlocation.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект ipNamedLocation](../resources/ipnamedlocation.md) или [объект countryNamedLocation](../resources/countrynamedlocation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-an-ipnamedlocation"></a>Пример 1: создание Ипнамедлокатион
+### <a name="example-1-create-an-ipnamedlocation"></a>Пример 1. Создание ipNamedLocation
 
 #### <a name="request"></a>Запрос
 
@@ -142,7 +142,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-create-a-countrynamedlocation"></a>Пример 2: создание объекта Каунтринамедлокатион
+### <a name="example-2-create-a-countrynamedlocation"></a>Пример 2. Создание страныNamedLocation
 
 #### <a name="request"></a>Запрос
 

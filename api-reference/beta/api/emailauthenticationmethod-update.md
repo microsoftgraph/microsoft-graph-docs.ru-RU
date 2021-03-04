@@ -3,32 +3,32 @@ title: Обновление emailAuthenticationMethod
 description: Обновление свойств объекта emailAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 87671a3c0a3bb5c663beb50ce740c8d25631f1c0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4e5eeaa1173b6ab5970fe85c472d0e6559ef9cd5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872074"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436332"
 ---
 # <a name="update-emailauthenticationmethod"></a>Обновление emailAuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление адреса электронной почты пользователя, связанного с объектом [метода проверки подлинности электронной почты.](../resources/emailauthenticationmethod.md)
+Обновление электронного адреса пользователя, связанного с объектом [метода проверки подлинности электронной](../resources/emailauthenticationmethod.md) почты.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от наименее до самых привилегированных)|Разрешения, действующие на других (от наименее привилегированных)|
 |:---|:---|:--|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Приложение                            | Не применимо. | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | Неприменимо. | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
@@ -50,10 +50,10 @@ PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) в JSON с обновленным адресом электронной почты.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем JSON-представление объекта [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) с обновленным адресом электронной почты.
 
-В следующей таблице показаны свойства, необходимые при обновлении [объекта emailAuthenticationMethod.](../resources/emailauthenticationmethod.md)
+В следующей таблице показаны свойства, необходимые при обновлении [электронной почтыAuthenticationMethod.](../resources/emailauthenticationmethod.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -63,7 +63,7 @@ PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

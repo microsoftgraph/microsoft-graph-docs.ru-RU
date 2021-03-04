@@ -3,14 +3,14 @@ title: Удаление объекта directoryObject
 description: Удаление directoryObject.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6bb655c26e91891eda9ac59236f5c08e8960bd4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cef22c9deb67d9e1ac7c083fc9e3152bf6c78fa5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008913"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436941"
 ---
 # <a name="delete-directoryobject"></a>Удаление объекта directoryObject
 
@@ -29,7 +29,7 @@ ms.locfileid: "48008913"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
-**Примечание:** Пользователи, группы и контакты — это типы объекта каталога. В результате, если необходимо удалить пользователей, можно использовать следующее разрешение: User. ReadWrite. ALL.
+**ПРИМЕЧАНИЕ:** Пользователи, группы и контакты — это типы объекта каталога. В результате, если требуется удалить пользователей, можно и нужно использовать следующее разрешение: User.ReadWrite.All
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,7 +41,7 @@ DELETE /directoryObjects/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

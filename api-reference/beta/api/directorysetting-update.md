@@ -1,16 +1,16 @@
 ---
 title: Обновление параметра каталога
-description: Обновление свойств определенного объекта параметров каталога.
+description: Обновление свойств определенного объекта параметра каталога.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ecf6d6fbaa3b4d491356924b965bb1ac8b9facb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 805ad8068418d50e6cfc4a6e395a150782cb1aab
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956149"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436626"
 ---
 # <a name="update-a-directory-setting"></a>Обновление параметра каталога
 
@@ -18,9 +18,9 @@ ms.locfileid: "48956149"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств определенного объекта параметров каталога.
+Обновление свойств определенного объекта параметра каталога.
 
-> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована для *обновления граупсеттингс*.
+> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Update groupSettings.*
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "48956149"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /groups/{id}/settings/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| values | Коллекция [settingValue](../resources/settingvalue.md) | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
+| values | [settingValue](../resources/settingvalue.md) collection | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
 
 ## <a name="response"></a>Отклик
 

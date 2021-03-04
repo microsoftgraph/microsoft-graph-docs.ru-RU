@@ -1,24 +1,24 @@
 ---
-title: Список ФеатурероллаутполиЦиес
-description: Получение списка объектов Феатурероллаутполици.
+title: Функция ListRolloutPolicies
+description: Извлечение списка объектов featureRolloutPolicy.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c0d8cea4913e49f854d0d36215bc602eb3cc02a4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b594b19d420ec794001851132457824691794c9c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963270"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436990"
 ---
-# <a name="list-featurerolloutpolicies"></a>Список ФеатурероллаутполиЦиес
+# <a name="list-featurerolloutpolicies"></a>Функция ListRolloutPolicies
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [феатурероллаутполици](../resources/featurerolloutpolicy.md) .
+Извлечение списка [объектов featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /directory/featureRolloutPolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки отклика:,,,,, `$count` `$expand` `$filter` `$orderby` `$select` `$skip` , `$top` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ: `$count` , , , , , , `$expand` `$filter` `$orderby` `$select` `$skip` `$top` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /directory/featureRolloutPolicies
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [феатурероллаутполици](../resources/featurerolloutpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [featureRolloutPolicy](../resources/featurerolloutpolicy.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

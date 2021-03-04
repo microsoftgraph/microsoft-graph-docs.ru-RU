@@ -1,26 +1,26 @@
 ---
-title: Параметры каталога списка
-description: Получение списка объектов параметров каталога.
+title: Параметры каталога списков
+description: Извлечение списка объектов настройки каталогов.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dc1c3b075c4686ad3211f9565efd6540a583e478
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a460a86f94adae7dd482491fb92241f27555fb6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956212"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436661"
 ---
-# <a name="list-directory-settings"></a>Параметры каталога списка
+# <a name="list-directory-settings"></a>Параметры каталога списков
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов параметров каталога.
+Извлечение списка объектов настройки каталогов.
 
-> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована в *List граупсеттингс*.
+> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *List groupSettings.*
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +33,7 @@ ms.locfileid: "48956212"
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Перечисление параметров на уровне клиента или группы
+Список параметров клиента или группы
 ```http
 GET /settings
 GET /group/{id}/settings
@@ -46,12 +46,12 @@ GET /group/{id}/settings
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директорисеттинг](../resources/directorysetting.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов directorySetting](../resources/directorysetting.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

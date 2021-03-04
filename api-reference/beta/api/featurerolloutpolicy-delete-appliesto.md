@@ -1,16 +1,16 @@
 ---
 title: Удаление appliesTo
-description: Удаление directoryObject из развертывания компонента.
+description: Удалите directoryObject из выкатки функций.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89a94dfd896310bb5f941730ebe8f8be0f686538
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4bd3ce83f81a040583fdc3400e8ce808e1a3c8f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954544"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436134"
 ---
 # <a name="remove-appliesto"></a>Удаление appliesTo
 
@@ -18,7 +18,7 @@ ms.locfileid: "48954544"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите элемент appliesTo в объекте [феатурероллаутполици](../resources/featurerolloutpolicy.md) , чтобы удалить [directoryObject](../resources/directoryobject.md) из развертывания компонента.
+Удалите appliesTo на [объекте featureRolloutPolicy,](../resources/featurerolloutpolicy.md) чтобы удалить [directoryObject](../resources/directoryobject.md) из выкатки функций.
 
 ## <a name="permissions"></a>Разрешения
 

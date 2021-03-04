@@ -1,18 +1,18 @@
 ---
 title: Создание поставщиков
-description: Создает объект Vendor в Dynamics 365 Business Central.
+description: Создает объект поставщика в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b0a85dd1d177f5a6ac3caea8054e6bc0aa5aeb0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 24e0137e4d4979133ac03f98a0b58d599b018d9e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981550"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436437"
 ---
 # <a name="create-vendors"></a>Создание поставщиков
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981550"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект Vendor в Dynamics 365 Business Central.
+Создание объекта поставщика в Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "47981550"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 POST /financials/companies/{id}/vendors
 ```
 
@@ -46,16 +46,16 @@ POST /financials/companies/{id}/vendors
 |Content-Type  |application/json   |
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта **вендоров** в формате JSON.
+В теле запроса поставляем представление JSON объекта **поставщиков.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **вендоров** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект ```201 Created``` поставщиков в  тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
 ```json
 POST https://graph.microsoft.com/beta/financials/companies/{id}/vendors
@@ -98,7 +98,6 @@ Content-type: application/json
   "displayName": "Wide World Importers",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
-
 ```
 
 

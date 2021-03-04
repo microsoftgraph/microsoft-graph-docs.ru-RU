@@ -1,16 +1,16 @@
 ---
-title: Обновление featureRolloutPolicy
+title: Обновление функцииRolloutPolicy
 description: Обновление свойств объекта featurerolloutpolicy.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 676983e4fbffcbe9edf3feae83c8344c52cf4596
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 8dc8f4542e6a354607db019d0044290585f340f6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719946"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436066"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление featurerolloutpolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "49719946"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
+Обновление свойств [объекта featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "49719946"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.FeatureRollout |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,13 +51,13 @@ PATCH /directory/featureRolloutPolicies/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание этой политики.|
-|displayName|String|Отображаемого имени для этой политики.|
-|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику для всей организации.|
-|isEnabled|Boolean|Указывает, включен ли выкат функции.|
+|displayName|String|Имя отображения для этой политики.|
+|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [featureRolloutPolicy](../resources/featurerolloutpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` обновленный [объект featureRolloutPolicy](../resources/featurerolloutpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

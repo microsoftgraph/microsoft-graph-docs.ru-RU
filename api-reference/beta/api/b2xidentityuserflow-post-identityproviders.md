@@ -1,16 +1,16 @@
 ---
 title: Добавление identityProvider в b2xIdentityUserFlow
-description: Добавление identityProvider в b2xIdentityUserFlow.
+description: Добавьте identityProvider в b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ec56d34d2068ce30a856d740144a744df0446ab2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: a1d9e3da3610497e5cb7b85bccb34fdc7f0ab21a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961057"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438059"
 ---
 # <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>Добавление identityProvider в b2xIdentityUserFlow
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961057"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление поставщиков удостоверений в объекте [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) .
+Обновление поставщиков удостоверений в [объекте b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "48961057"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения| IdentityUserFlow.ReadWrite.All|
+|Приложение| IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ PATCH /b2xUserFlows/{id}/identityProviders/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление объекта IdentityProvider, который требуется добавить, в формате JSON `id` . [identityProvider](../resources/identityprovider.md) Для самостоятельной регистрации пользовательских потоков значения могут быть `Google-OAUTH` или `Facebook-OAUTH` .
+В теле запроса предопрейте JSON представление `id` [идентификатораProvider,](../resources/identityprovider.md) который необходимо добавить. Для самообслуживки зарегистрироваться потоки пользователей, значения могут быть `Google-OAUTH` или `Facebook-OAUTH` .
 
 ## <a name="response"></a>Отклик
 

@@ -1,31 +1,31 @@
 ---
-title: Получение dataPolicyOperation
-description: Получение свойств объекта dataPolicyOperation.
+title: Get dataPolicyOperation
+description: Извлечение свойств объекта dataPolicyOperation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fb356740aa79a1980bfbe0b0305a362a4a0db7df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ec3a59b236cdb7cf833332f7c79d1cf35e5e693c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956519"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437221"
 ---
-# <a name="get-datapolicyoperation"></a>Получение dataPolicyOperation
+# <a name="get-datapolicyoperation"></a>Get dataPolicyOperation
 
 Пространство имен: microsoft.graph
 
-Получение свойств объекта dataPolicyOperation.
+Извлечение свойств объекта dataPolicyOperation.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  User. Export. ALL и User. Read. ALL  |
+|Делегированные (рабочая или учебная учетная запись) |  User.Export.All и User.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Для приложений | User. Export. ALL и User. Read. ALL | 
+|Приложение | User.Export.All и User.Read.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,10 +38,10 @@ GET /dataPolicyOperations/{id}
 |:----------|:----------|
 | Authorization  | Bearer {token}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [dataPolicyOperation](../resources/datapolicyoperation.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект dataPolicyOperation](../resources/datapolicyoperation.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

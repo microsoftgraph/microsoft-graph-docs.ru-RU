@@ -1,24 +1,24 @@
 ---
-title: Получение Ентитлементманажементсеттингс
-description: Получение свойств объекта Ентитлементманажементсеттингс.
+title: Получение entitlementManagementSettings
+description: Получение свойств объекта entitlementManagementSettings.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e84530e6354ba647ec522253e6dbef88afcded37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1bc8fd3682fbe365ee083eec369957f197c3feea
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955047"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436304"
 ---
-# <a name="get-entitlementmanagementsettings"></a>Получение Ентитлементманажементсеттингс
+# <a name="get-entitlementmanagementsettings"></a>Получение entitlementManagementSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [ентитлементманажементсеттингс](../resources/entitlementManagementSettings.md) .
+Получение свойств объекта [entitlementManagementSettings.](../resources/entitlementManagementSettings.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48955047"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +48,13 @@ GET /identityGovernance/entitlementManagement/settings
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [ентитлементманажементсеттингс](../resources/entitlementManagementSettings.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [entitlementManagementSettings](../resources/entitlementManagementSettings.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ecd5d5240805ca0c9b523f32ba9de24dbacac771
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d4060489167c438077e85800e04c2973adf6a58
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980976"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436143"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -18,9 +18,9 @@ ms.locfileid: "47980976"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предварительно принять указанное [событие](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
+Предварительно принять указанное событие [в](../resources/event.md) пользовательском [календаре.](../resources/calendar.md)
 
-Если событие позволяет создавать предложения для нового времени, при отклике на запрос о событии приглашение можно предложить альтернативное время, включив параметр **пропоседневтиме** . Дополнительные сведения о том, как предлагать время, а также как получать и принимать новое предложение по времени, приведены в разделе [предложение нового времени проведения собрания](/graph/outlook-calendar-meeting-proposals).
+Если событие позволяет предложить предложения для нового времени при предварительном отклике на событие, приглашенный может выбрать альтернативное время, включив предложенный **параметрNewTime.** Дополнительные сведения о том, как предложить время, а также как получить и принять новое предложение времени, см. в дополнительных сведениях о том, как предложить [новое время собраний.](/graph/outlook-calendar-meeting-proposals)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,9 +43,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
 
-POST /me/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
@@ -62,21 +59,21 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
-|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо задать для параметра **сендреспонсе** значение `true` . Необязательный параметр.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Альтернативные даты и времени, предлагаемые приглашенным для запроса на собрание, чтобы начать и закончить. Допустимо только для событий, которые позволяют новые предложения времени. Для настройки этого параметра **необходимо установить sendResponse** для `true` . Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-Это действие возвращает HTTP-400, если выполняется одно или оба следующих действия:
+Это действие возвращает HTTP 400, если происходит одно или оба из следующих действий:
 
-- Параметр **пропоседневтиме** включен, но свойство **алловневтимепропосалс** **события** имеет значение `false` . 
-- Параметр **пропоседневтиме** включен, но для параметра **сендреспонсе** задано значение `false` .
+- Предлагаемый **параметрNewTime** включен, но свойство **allowNewTimeProposals** **события** `false` . 
+- Предлагаемый **параметрNewTime** включен, но параметр **sendResponse** задан для `false` .
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
 ### <a name="request"></a>Запрос
-В следующем примере вошедшего в систему пользователя отвечает за заданное событие, устанавливает для параметра **сендреспонсе** значение true и включает альтернативное время в параметр **пропоседневтиме** .
+В следующем примере пользователь, во время записи, предварительно отвечает на указанное событие, задает параметр **sendResponse** для true и включает альтернативное время в предлагаемый **параметрNewTime.**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

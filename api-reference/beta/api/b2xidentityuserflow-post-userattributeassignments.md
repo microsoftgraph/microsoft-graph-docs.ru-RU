@@ -1,22 +1,22 @@
 ---
 title: Создание userAttributeAssignments
-description: Создание объекта identityUserFlowAttributeAssignment в b2xIdentityUserFlow.
+description: Создайте новый объект identityUserFlowAttributeAssignment в b2xIdentityUserFlow.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5a330e365cdb5c198136ae52d3edc3ba197b8c47
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 38d011b2300e690862ec4fe519fba21d969ab20f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689514"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438829"
 ---
 # <a name="create-userattributeassignments"></a>Создание userAttributeAssignments
 
 Пространство имен: microsoft.graph
 
-Создание объекта identityUserFlowAttributeAssignment в [b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
+Создайте новый объект identityUserFlowAttributeAssignment в [b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "49689514"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
@@ -48,22 +48,22 @@ POST /identity/b2xUserFlows/{id}/userAttributeAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) в JSON.
+В теле запроса подарят представление JSON объекта [identityUserFlowAttributeAssignment.](../resources/identityuserflowattributeassignment.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта identityUserFlowAttributeAssignment.](../resources/identityuserflowattributeassignment.md)
+В следующей таблице показаны свойства, необходимые при создании [identityUserFlowAttributeAssignment.](../resources/identityuserflowattributeassignment.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемого имени identityUserFlowAttribute в пользовательском потоке.|
+|displayName|String|Отображение имени identityUserFlowAttribute в потоке пользователей.|
 |isOptional|Boolean|Определяет, является ли identityUserFlowAttribute необязательным. `true` означает, что пользователю не нужно предоставлять значение. `false` означает, что пользователь не может завершить регистрацию без предоставления значения.|
-|requiresVerification|Boolean|Определяет, требуется ли проверка identityUserFlowAttribute. Он используется только для проверки номера телефона или адреса электронной почты пользователя.|
-|userAttributeValues|[Коллекция userAttributeValuesItem](../resources/userattributevaluesitem.md)|Параметры ввода для атрибута пользовательского потока. Применимо только в том случае, если userInputType имеет , `radioSingleSelect` `dropdownSingleSelect` или `checkboxMultiSelect` .|
-|userInputType|identityUserFlowAttributeInputType|Тип ввода атрибута пользовательского потока. Возможные значения: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
-|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|Идентификатор атрибута пользовательского потока, который необходимо включить в назначение пользовательского потока.
+|requiresVerification|Boolean|Определяет, требуется ли проверка identityUserFlowAttribute. Это используется только для проверки номера телефона или адреса электронной почты пользователя.|
+|userAttributeValues|[коллекция userAttributeValuesItem](../resources/userattributevaluesitem.md)|Параметры ввода атрибута потока пользователя. Применимо только в том случае, если userInputType `radioSingleSelect` является `dropdownSingleSelect` , или `checkboxMultiSelect` .|
+|userInputType|identityUserFlowAttributeInputType|Тип ввода атрибута потока пользователя. Возможные значения: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
+|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|Идентификатор атрибута потока пользователей, который должен включаться в назначение потока пользователей.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код ответа и `201 Created` [объект identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

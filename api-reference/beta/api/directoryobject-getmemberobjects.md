@@ -1,16 +1,16 @@
 ---
 title: Вывод объектов элементов
-description: " Возвращает все группы, административные единицы и роли каталогов, членом которых является пользователь, группа, субъект-служба или объект каталога. Это транзитивная функция. "
+description: " Возвращает все группы, административные единицы и роли каталога, в которые входит пользователь, группа, директоры служб или объект каталога. Это транзитивная функция. "
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7fc793e19d27bfb12061b9c63885a344dabb9a13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47ad4aa86e41ace7edc9e5b5eb0351557a94a7ae
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963053"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436864"
 ---
 # <a name="get-member-objects"></a>Вывод объектов членства
 
@@ -18,7 +18,7 @@ ms.locfileid: "48963053"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Возвращает все группы, административные единицы и роли каталогов, членом которых является пользователь, группа, субъект-служба или объект каталога. Это транзитивная функция. 
+ Возвращает все группы, административные единицы и роли каталога, в которые входит пользователь, группа, директоры служб или объект каталога. Это транзитивная функция. 
  > Примечание. Участниками ролей каталога могут быть только пользователи.
 
 ## <a name="permissions"></a>Разрешения
@@ -47,7 +47,7 @@ POST /directoryObjects/{id}/getMemberObjects
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

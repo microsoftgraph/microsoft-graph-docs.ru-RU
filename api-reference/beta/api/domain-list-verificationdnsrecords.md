@@ -1,28 +1,28 @@
 ---
-title: Список verificationDnsRecords
-description: Получение списка объектов domainDnsRecord.
+title: Проверка спискаDnsRecords
+description: Извлечение списка объектов domainDnsRecord.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 924abf24db60a6bab2f229d82f5fb2af1b57e68a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6338f9c6f61594d9485a2241da85e9add7e6efb0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955941"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436500"
 ---
-# <a name="list-verificationdnsrecords"></a>Список verificationDnsRecords
+# <a name="list-verificationdnsrecords"></a>Проверка спискаDnsRecords
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [domainDnsRecord](../resources/domaindnsrecord.md) .
+Извлечение списка [объектов domainDnsRecord.](../resources/domaindnsrecord.md)
 
-Вы не можете использовать связанный домен с клиентом Azure AD, пока не будет проверено владение. Чтобы проверить владение доменом, извлеките записи проверки домена и добавьте сведения в файл зоны домена. Это можно сделать с помощью регистратора доменных имен или DNS-сервера.
+Вы не можете использовать связанный домен с клиентом Azure AD до тех пор, пока не будет проверено право собственности. Чтобы проверить право собственности на домен, извлекайте записи проверки домена и добавьте сведения в файл зоны домена. Это можно сделать с помощью регистратора домена или конфигурации сервера DNS.
 
-Корневые домены требуют проверки. Например, для contoso.com требуется проверка. При проверке корневого домена автоматически проверяются дочерние домены корневого домена. Например, subdomain.contoso.com автоматически проверяется, если contoso.com проверено.
+Корневые домены требуют проверки. Например, contoso.com требуется проверка. При проверке корневого домена автоматически проверяются поддомены корневого домена. Например, subdomain.contoso.com проверяется автоматически, если contoso.com проверено.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "48955941"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Domain.ReadWrite.All |
+|Приложение | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,13 +54,13 @@ GET /domains/{id}/verificationDnsRecords
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов domainDnsRecord](../resources/domaindnsrecord.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

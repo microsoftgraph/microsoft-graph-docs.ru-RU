@@ -1,23 +1,23 @@
 ---
 title: Get continuousAccessEvaluationPolicy
-description: Чтение свойств объекта continuousAccessEvaluationPolicy.
+description: Ознакомьтесь с свойствами объекта continuousAccessEvaluationPolicy.
 author: jerrysai
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8dcafa080167facb1a692af8634fb6d1f4f345b5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 0f0aac891c40e84266ebb48fb3e196bbdfd13d03
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872655"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437291"
 ---
 # <a name="get-continuousaccessevaluationpolicy"></a>Get continuousAccessEvaluationPolicy
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [continuousAccessEvaluationPolicy.](../resources/continuousaccessevaluationpolicy.md)
+Ознакомьтесь с свойствами и отношениями объекта [continuousAccessEvaluationPolicy.](../resources/continuousaccessevaluationpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,19 +36,19 @@ GET /identity/continuousAccessEvaluationPolicy
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр запроса OData $select '$select' для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр запроса $select OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

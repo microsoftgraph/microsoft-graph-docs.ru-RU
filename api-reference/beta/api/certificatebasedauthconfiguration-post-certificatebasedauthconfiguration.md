@@ -1,27 +1,27 @@
 ---
-title: Создание Цертификатебаседаусконфигуратион
-description: Используйте этот API для создания нового Цертификатебаседаусконфигуратион.
+title: Создание certificateBasedAuthConfiguration
+description: Используйте этот API для создания нового сертификатаBasedAuthConfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f424ec111fb7551232bdf102b8debcb9dc248394
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6556ef064287b7378e5929983ebb951571c7e8a0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959367"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437788"
 ---
-# <a name="create-certificatebasedauthconfiguration"></a>Создание Цертификатебаседаусконфигуратион
+# <a name="create-certificatebasedauthconfiguration"></a>Создание certificateBasedAuthConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [цертификатебаседаусконфигуратион](../resources/certificateBasedAuthConfiguration.md) .
+Создайте новый [объект certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 > [!NOTE]
-> Можно создать только один экземпляр **цертификатебаседаусконфигуратион** (коллекция может содержать только один элемент). Он всегда имеет фиксированный идентификатор со значением "29728ade-6ae4-4ee9-9103-412912537da5".
+> Можно создать только один экземпляр **сертификатаBasedAuthConfiguration** (в коллекции может быть только один член). Он всегда имеет фиксированный ID со значением '29728ade-6ae4-4ee9-9103-412912537da5'.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "48959367"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений    | Organization.ReadWrite.All |
+| Приложение    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,17 +48,17 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 | Authorization | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-Для создания объекта [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) требуются следующие свойства:
+Для создания объекта [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) необходимы следующие свойства.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|цертификатеаусоритиес| Коллекция [цертификатеаусорити](../resources/certificateauthority.md) |Коллекция центров сертификации, которая создает доверенную цепочку сертификатов.  Каждый член коллекции должен содержать свойства **Certificate** и **исрутаусорити** . |
+|certificateAuthorities| [коллекция certificateAuthority](../resources/certificateauthority.md) |Коллекция органов сертификации, создав цепочку доверенных сертификатов.  Каждый член коллекции должен содержать **свойства сертификата** **и isRootAuthority.** |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c760cdb6f4963c90edd479a0f84b5fd6d37eda5
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: baf3bca6650afc44781866ea6b5d176b80424480
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719736"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437921"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -41,9 +41,6 @@ POST /groups/{id}/calendar/events
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
-
-POST /me/calendarGroup/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 [Календарь](../resources/calendar.md) пользователя в определенной группе [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -133,7 +130,7 @@ Content-type: application/json
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -232,7 +229,7 @@ Content-type: application/json
 ### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>Пример 2. Создание и включение события в качестве собрания по сети
 
 #### <a name="request"></a>Запрос
-В следующем примере создается событие в указанном календаре пользователя, выписав его в качестве собрания по сети.
+В следующем примере создается событие в указанном календаре подписанного пользователя и оно включается в качестве собрания в Интернете.
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 

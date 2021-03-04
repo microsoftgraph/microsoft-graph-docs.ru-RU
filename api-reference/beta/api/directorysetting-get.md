@@ -1,26 +1,26 @@
 ---
-title: Получение параметра каталога
-description: Получение свойств определенного объекта параметров каталога.
+title: Получить параметр каталога
+description: Извлечение свойств определенного объекта настройки каталога.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a31a3d647bf00a5a827ea43f6ecda1950f5221f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d548aa51a7412d9a07076ee9c5de846a8c5a751b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956226"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436668"
 ---
-# <a name="get-a-directory-setting"></a>Получение параметра каталога
+# <a name="get-a-directory-setting"></a>Получить параметр каталога
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств определенного объекта параметров каталога.
+Извлечение свойств определенного объекта настройки каталога.
 
-> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *получить граупсеттингс*.
+> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Get groupSettings.*
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +33,7 @@ ms.locfileid: "48956226"
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Получение определенного параметра на уровне клиента или группы
+Получить определенный параметр для клиента или группы
 ```http
 GET /settings/{id}
 GET /groups/{id}/settings/{id}
@@ -46,12 +46,12 @@ GET /groups/{id}/settings/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

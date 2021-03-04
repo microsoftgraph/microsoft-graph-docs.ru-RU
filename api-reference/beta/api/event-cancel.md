@@ -1,18 +1,18 @@
 ---
-title: 'событие: Cancel (Отмена)'
+title: 'событие: отмена'
 description: 'Это действие позволяет организатору собрания отправить сообщение об отмене и отменить событие. '
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7d491e33a3c8f2ccb1ae04aeeadcaa75fd056a5f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 60d374fe91128ec9d5e8401435dde3c0dac6e9bd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954971"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436283"
 ---
-# <a name="event-cancel"></a>событие: Cancel (Отмена)
+# <a name="event-cancel"></a>событие: отмена
 
 Пространство имен: microsoft.graph
 
@@ -20,11 +20,11 @@ ms.locfileid: "48954971"
 
 Это действие позволяет организатору собрания отправить сообщение об отмене и отменить событие. 
 
-Действие перемещает событие в папку "Удаленные". Организатор также может отменить вхождение повторяющегося собрания, указав идентификатор события. Участник, вызывающий это действие, получает ошибку (ошибочный запрос HTTP 400) со следующим сообщением об ошибке:
+Действие перемещает событие в папку "Удаленные элементы". Организатор также может отменить повторяющиеся собрания, предоставив ID события возникновения. Участник, назвав это действие, получает ошибку (HTTP 400 Bad Request) со следующим сообщением об ошибке:
 
-"Ваш запрос не может быть выполнен. Для отмены собрания необходимо быть организатором. "
+"Ваш запрос не может быть выполнен. Чтобы отменить собрание, необходимо быть организатором".
 
-Это действие отличается от [удаления](event-delete.md) в этой **отмене** , доступной только организатору, и позволяет Организатору отправлять настраиваемое сообщение участникам об отмене.
+Это действие отличается от [Delete](event-delete.md) в том, что **Отмена** доступна только организатору, и позволяет организатору отправлять пользовательские сообщения участникам об отмене.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,9 +49,6 @@ POST /groups/{id}/calendar/events/{id}/cancel
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
 
-POST /me/calendargroup/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/cancel
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```
@@ -66,7 +63,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|comment|String|Комментарий об отмене, отправленном всем участникам. Необязательный параметр.|
+|comment|String|Комментарий об отмене, отправленный всем участникам. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 

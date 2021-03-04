@@ -1,34 +1,34 @@
 ---
-title: Список Бусинессфловтемплатес
-description: В функции проверок доступа Azure AD перечислите все объекты Бусинессфловтемплате.
+title: Список businessFlowTemplates
+description: В функции обзоров доступа Azure AD перечислите все объекты businessFlowTemplate.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 3ea42f9d287aa255390fec357708643058c4c6b5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1ecb7dac1020bf243f6f58e0f6a80afc0724bfdc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960145"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437997"
 ---
-# <a name="list-businessflowtemplates"></a>Список Бусинессфловтемплатес
+# <a name="list-businessflowtemplates"></a>Список businessFlowTemplates
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [проверок доступа](../resources/accessreviews-root.md) Azure AD перечислите все объекты [бусинессфловтемплате](../resources/businessflowtemplate.md) .
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) перечислите все [объекты businessFlowTemplate.](../resources/businessflowtemplate.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL  |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
-Пользователь, вошедшего в систему, также должен быть членом роли каталога, который позволяет им читать проверку доступа.
+Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +40,11 @@ GET /businessFlowTemplates
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не следует предоставлять текст запроса.
+## <a name="request-body"></a>Тело запроса
+Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [бусинессфловтемплате](../resources/businessflowtemplate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и массив объектов `200, OK` [businessFlowTemplate](../resources/businessflowtemplate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -120,7 +120,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание Акцессревиев](accessreview-create.md) |    [акцессревиев](../resources/accessreview.md) |  Создание нового Акцессревиев. |
+|[Создание accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Создание нового accessReview. |
 
 
 

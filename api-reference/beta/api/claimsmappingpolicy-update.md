@@ -1,18 +1,18 @@
 ---
-title: Обновление claimsmappingpolicy
+title: Update claimsmappingpolicy
 description: Обновление свойств объекта claimsMappingPolicy.
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6955c9472186490f50c2810109dcf5129a5e005c
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 57f02d1d3156865a84dba99b2af95947eb6e4d3b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910664"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437648"
 ---
-# <a name="update-claimsmappingpolicy"></a>Обновление claimsmappingpolicy
+# <a name="update-claimsmappingpolicy"></a>Update claimsmappingpolicy
 
 Пространство имен: microsoft.graph
 
@@ -51,10 +51,10 @@ PATCH /policies/claimsMappingPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|definition|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики.  Обязательный.|
+|определение|Коллекция строк| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображаемого имени для этой политики. Обязательный.|
-|isOrganizationDefault|Boolean|Если установлено true, активирует эту политику. Для одного типа политики может быть несколько политик, но только одна может быть активирована в качестве организации по умолчанию. Необязательный, значение по умолчанию — false.|
+|displayName|String| Отображение имени для этой политики. Обязательный.|
+|isOrganizationDefault|Boolean|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
 
