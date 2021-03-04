@@ -1,36 +1,36 @@
 ---
-title: 'Device: Чеккмемберобжектс'
-description: Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта Device.
+title: 'устройство: checkMemberObjects'
+description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта устройства.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2c419eee8856ff257f236259c923d2ab0980049e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ea5fffe49079388cac3d9d18daab5a13d7a05f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956477"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437238"
 ---
-# <a name="device-checkmemberobjects"></a><span data-ttu-id="85bb8-103">Device: Чеккмемберобжектс</span><span class="sxs-lookup"><span data-stu-id="85bb8-103">device: checkMemberObjects</span></span>
+# <a name="device-checkmemberobjects"></a><span data-ttu-id="401ce-103">устройство: checkMemberObjects</span><span class="sxs-lookup"><span data-stu-id="401ce-103">device: checkMemberObjects</span></span>
 
-<span data-ttu-id="85bb8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="85bb8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="401ce-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="401ce-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="85bb8-105">Проверка членства в списке групп или административных единиц для указанного объекта Device.</span><span class="sxs-lookup"><span data-stu-id="85bb8-105">Check for membership in a list of groups or administrative units for the specified device object.</span></span> <span data-ttu-id="85bb8-106">Этот метод является транзитивным.</span><span class="sxs-lookup"><span data-stu-id="85bb8-106">This method is transitive.</span></span>
+<span data-ttu-id="401ce-105">Проверьте членство в списке групп или административных единиц для указанного объекта устройства.</span><span class="sxs-lookup"><span data-stu-id="401ce-105">Check for membership in a list of groups or administrative units for the specified device object.</span></span> <span data-ttu-id="401ce-106">Этот метод является транзитным.</span><span class="sxs-lookup"><span data-stu-id="401ce-106">This method is transitive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="85bb8-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="85bb8-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="401ce-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="401ce-107">Permissions</span></span>
 
-<span data-ttu-id="85bb8-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85bb8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="401ce-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="401ce-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="85bb8-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="85bb8-110">Permission type</span></span>                        | <span data-ttu-id="85bb8-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="85bb8-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="401ce-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="401ce-110">Permission type</span></span>                        | <span data-ttu-id="401ce-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="401ce-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="85bb8-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="85bb8-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="85bb8-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="85bb8-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="85bb8-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="85bb8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85bb8-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="85bb8-115">Not supported.</span></span> |
-| <span data-ttu-id="85bb8-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="85bb8-116">Application</span></span>                            | <span data-ttu-id="85bb8-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85bb8-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="401ce-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="401ce-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="401ce-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="401ce-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="401ce-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="401ce-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="401ce-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="401ce-115">Not supported.</span></span> |
+| <span data-ttu-id="401ce-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="401ce-116">Application</span></span>                            | <span data-ttu-id="401ce-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="401ce-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="85bb8-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="85bb8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="401ce-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="401ce-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,34 +38,34 @@ ms.locfileid: "48956477"
 POST /devices/{id}/checkMemberObjects
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="85bb8-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="85bb8-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="401ce-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="401ce-119">Request headers</span></span>
 
-| <span data-ttu-id="85bb8-120">Имя</span><span class="sxs-lookup"><span data-stu-id="85bb8-120">Name</span></span>          | <span data-ttu-id="85bb8-121">Описание</span><span class="sxs-lookup"><span data-stu-id="85bb8-121">Description</span></span>   |
+| <span data-ttu-id="401ce-120">Имя</span><span class="sxs-lookup"><span data-stu-id="401ce-120">Name</span></span>          | <span data-ttu-id="401ce-121">Описание</span><span class="sxs-lookup"><span data-stu-id="401ce-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="85bb8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="85bb8-122">Authorization</span></span> | <span data-ttu-id="85bb8-123">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="85bb8-123">Bearer {token}</span></span> |
-| <span data-ttu-id="85bb8-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="85bb8-124">Content-Type</span></span>  | <span data-ttu-id="85bb8-125">application/json</span><span class="sxs-lookup"><span data-stu-id="85bb8-125">application/json</span></span> |
+| <span data-ttu-id="401ce-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="401ce-122">Authorization</span></span> | <span data-ttu-id="401ce-123">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="401ce-123">Bearer {token}</span></span> |
+| <span data-ttu-id="401ce-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="401ce-124">Content-Type</span></span>  | <span data-ttu-id="401ce-125">application/json</span><span class="sxs-lookup"><span data-stu-id="401ce-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="85bb8-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="85bb8-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="401ce-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="401ce-126">Request body</span></span>
 
-<span data-ttu-id="85bb8-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="85bb8-127">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="401ce-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="401ce-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="85bb8-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="85bb8-128">Parameter</span></span>    | <span data-ttu-id="85bb8-129">Тип</span><span class="sxs-lookup"><span data-stu-id="85bb8-129">Type</span></span>        | <span data-ttu-id="85bb8-130">Описание</span><span class="sxs-lookup"><span data-stu-id="85bb8-130">Description</span></span> |
+| <span data-ttu-id="401ce-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="401ce-128">Parameter</span></span>    | <span data-ttu-id="401ce-129">Тип</span><span class="sxs-lookup"><span data-stu-id="401ce-129">Type</span></span>        | <span data-ttu-id="401ce-130">Описание</span><span class="sxs-lookup"><span data-stu-id="401ce-130">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="85bb8-131">ids</span><span class="sxs-lookup"><span data-stu-id="85bb8-131">ids</span></span> | <span data-ttu-id="85bb8-132">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="85bb8-132">String collection</span></span> | <span data-ttu-id="85bb8-133">Коллекция, содержащая идентификаторы объектов групп, ролей каталогов, административных единиц или идентификаторов Ролетемплате ролей каталогов, в которых проверяется членство.</span><span class="sxs-lookup"><span data-stu-id="85bb8-133">A collection that contains the object IDs of the groups, directory roles, administrative units, or roleTemplate IDs of directory roles, in which to check membership.</span></span> <span data-ttu-id="85bb8-134">Можно указать до 20 объектов.</span><span class="sxs-lookup"><span data-stu-id="85bb8-134">Up to 20 objects may be specified.</span></span> |
+| <span data-ttu-id="401ce-131">ids</span><span class="sxs-lookup"><span data-stu-id="401ce-131">ids</span></span> | <span data-ttu-id="401ce-132">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="401ce-132">String collection</span></span> | <span data-ttu-id="401ce-133">Коллекция, в которой содержатся объектные ИД групп, роли каталога, административные единицы или roleTemplate ID ролей каталога, в которых необходимо проверить членство.</span><span class="sxs-lookup"><span data-stu-id="401ce-133">A collection that contains the object IDs of the groups, directory roles, administrative units, or roleTemplate IDs of directory roles, in which to check membership.</span></span> <span data-ttu-id="401ce-134">Может быть указано до 20 объектов.</span><span class="sxs-lookup"><span data-stu-id="401ce-134">Up to 20 objects may be specified.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="85bb8-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="85bb8-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="401ce-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="401ce-135">Response</span></span>
 
-<span data-ttu-id="85bb8-136">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="85bb8-136">If successful, this method returns a `200 OK` response code and a String collection object in the response body.</span></span>
+<span data-ttu-id="401ce-136">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="401ce-136">If successful, this method returns a `200 OK` response code and a String collection object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="85bb8-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="85bb8-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="401ce-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="401ce-137">Examples</span></span>
 
-<span data-ttu-id="85bb8-138">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="85bb8-138">The following example shows how to call this API.</span></span>
+<span data-ttu-id="401ce-138">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="401ce-138">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="85bb8-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="85bb8-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="401ce-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="401ce-139">Request</span></span>
 
-<span data-ttu-id="85bb8-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="85bb8-140">The following is an example of the request.</span></span>
+<span data-ttu-id="401ce-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="401ce-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="85bb8-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="85bb8-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="401ce-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="401ce-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "device_checkmemberobjects"
@@ -84,30 +84,30 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="85bb8-142">C#</span><span class="sxs-lookup"><span data-stu-id="85bb8-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="401ce-142">C#</span><span class="sxs-lookup"><span data-stu-id="401ce-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/device-checkmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="85bb8-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="85bb8-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="401ce-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="401ce-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/device-checkmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="85bb8-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="85bb8-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="401ce-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="401ce-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/device-checkmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="85bb8-145">Java</span><span class="sxs-lookup"><span data-stu-id="85bb8-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="401ce-145">Java</span><span class="sxs-lookup"><span data-stu-id="401ce-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/device-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="85bb8-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="85bb8-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="401ce-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="401ce-146">Response</span></span>
 
-<span data-ttu-id="85bb8-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="85bb8-147">The following is an example of the response.</span></span> 
+<span data-ttu-id="401ce-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="401ce-147">The following is an example of the response.</span></span> 
 
-> <span data-ttu-id="85bb8-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="85bb8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="401ce-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="401ce-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,59 +1,59 @@
 ---
-title: Добавление внешнего спонсора для подключенной Организации
-description: Добавление пользователя или группы в Внешние спонсоры подключенной Организации.
+title: Добавление внешнего спонсора подключенной организации
+description: Добавьте пользователя или группу к внешним спонсорам подключенной организации.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1876cc5b89a52ba98bfa3c6561e735ef923ac7d9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f6881448e4d8454134787122319b4feb428275f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957645"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437437"
 ---
-# <a name="add-connected-organization-external-sponsor"></a><span data-ttu-id="ff1df-103">Добавление внешнего спонсора для подключенной Организации</span><span class="sxs-lookup"><span data-stu-id="ff1df-103">Add connected organization external sponsor</span></span>
+# <a name="add-connected-organization-external-sponsor"></a><span data-ttu-id="08b2f-103">Добавление внешнего спонсора подключенной организации</span><span class="sxs-lookup"><span data-stu-id="08b2f-103">Add connected organization external sponsor</span></span>
 
-<span data-ttu-id="ff1df-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ff1df-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="08b2f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="08b2f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ff1df-105">Добавление пользователя или группы в Внешние спонсоры подключенной Организации.</span><span class="sxs-lookup"><span data-stu-id="ff1df-105">Add a user or a group to the connected organization's external sponsors.</span></span> <span data-ttu-id="ff1df-106">Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной Организации.</span><span class="sxs-lookup"><span data-stu-id="ff1df-106">The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.</span></span>
+<span data-ttu-id="08b2f-105">Добавьте пользователя или группу к внешним спонсорам подключенной организации.</span><span class="sxs-lookup"><span data-stu-id="08b2f-105">Add a user or a group to the connected organization's external sponsors.</span></span> <span data-ttu-id="08b2f-106">Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой связанной организации.</span><span class="sxs-lookup"><span data-stu-id="08b2f-106">The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ff1df-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ff1df-107">Permissions</span></span>
-<span data-ttu-id="ff1df-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff1df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="08b2f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="08b2f-107">Permissions</span></span>
+<span data-ttu-id="08b2f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="08b2f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff1df-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ff1df-110">Permission type</span></span>      | <span data-ttu-id="ff1df-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ff1df-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="08b2f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="08b2f-110">Permission type</span></span>      | <span data-ttu-id="08b2f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="08b2f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ff1df-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ff1df-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="ff1df-113">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff1df-113">EntitlementManagement.ReadWrite.All</span></span> |
-|<span data-ttu-id="ff1df-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ff1df-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff1df-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ff1df-115">Not supported.</span></span>    |
-|<span data-ttu-id="ff1df-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ff1df-116">Application</span></span> | <span data-ttu-id="ff1df-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ff1df-117">Not supported.</span></span> |
+|<span data-ttu-id="08b2f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="08b2f-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="08b2f-113">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08b2f-113">EntitlementManagement.ReadWrite.All</span></span> |
+|<span data-ttu-id="08b2f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="08b2f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08b2f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08b2f-115">Not supported.</span></span>    |
+|<span data-ttu-id="08b2f-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="08b2f-116">Application</span></span> | <span data-ttu-id="08b2f-117">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08b2f-117">EntitlementManagement.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ff1df-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ff1df-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08b2f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="08b2f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="ff1df-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ff1df-119">Request headers</span></span>
-| <span data-ttu-id="ff1df-120">Имя</span><span class="sxs-lookup"><span data-stu-id="ff1df-120">Name</span></span>       | <span data-ttu-id="ff1df-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ff1df-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="08b2f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="08b2f-119">Request headers</span></span>
+| <span data-ttu-id="08b2f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="08b2f-120">Name</span></span>       | <span data-ttu-id="08b2f-121">Описание</span><span class="sxs-lookup"><span data-stu-id="08b2f-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ff1df-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ff1df-122">Authorization</span></span>  | <span data-ttu-id="ff1df-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ff1df-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ff1df-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ff1df-125">Content-type</span></span> | <span data-ttu-id="ff1df-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ff1df-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="08b2f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="08b2f-122">Authorization</span></span>  | <span data-ttu-id="08b2f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="08b2f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="08b2f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="08b2f-125">Content-type</span></span> | <span data-ttu-id="08b2f-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="08b2f-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ff1df-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ff1df-128">Request body</span></span>
-<span data-ttu-id="ff1df-129">В теле запроса добавьте представление ссылки на объект добавляемого [пользователя](../resources/user.md) или [группы](../resources/group.md) в виде `@odata.id` свойства с полным URI пользователя или группы.</span><span class="sxs-lookup"><span data-stu-id="ff1df-129">In the request body, supply a JSON representation of the reference to the [user](../resources/user.md) or [group](../resources/group.md) object to be added, as an `@odata.id` property with the full URI of the user or group.</span></span>
+## <a name="request-body"></a><span data-ttu-id="08b2f-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="08b2f-128">Request body</span></span>
+<span data-ttu-id="08b2f-129">В тексте запроса в качестве свойства с [](../resources/user.md) полным [](../resources/group.md) URI пользователя или группы необходимо предоставить представление JSON ссылки на добавленный объект пользователя или `@odata.id` группы.</span><span class="sxs-lookup"><span data-stu-id="08b2f-129">In the request body, supply a JSON representation of the reference to the [user](../resources/user.md) or [group](../resources/group.md) object to be added, as an `@odata.id` property with the full URI of the user or group.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ff1df-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="ff1df-130">Response</span></span>
-<span data-ttu-id="ff1df-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ff1df-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="08b2f-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="08b2f-130">Response</span></span>
+<span data-ttu-id="08b2f-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="08b2f-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ff1df-133">Пример</span><span class="sxs-lookup"><span data-stu-id="ff1df-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="08b2f-133">Пример</span><span class="sxs-lookup"><span data-stu-id="08b2f-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ff1df-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="ff1df-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="08b2f-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="08b2f-134">Request</span></span>
 
-<span data-ttu-id="ff1df-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ff1df-135">The following is an example of the request.</span></span>
+<span data-ttu-id="08b2f-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="08b2f-135">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ff1df-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff1df-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="08b2f-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="08b2f-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externalsponsor_from_connectedorganization"
@@ -68,28 +68,28 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ff1df-137">C#</span><span class="sxs-lookup"><span data-stu-id="ff1df-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="08b2f-137">C#</span><span class="sxs-lookup"><span data-stu-id="08b2f-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalsponsor-from-connectedorganization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ff1df-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff1df-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="08b2f-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08b2f-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-externalsponsor-from-connectedorganization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ff1df-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff1df-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="08b2f-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="08b2f-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalsponsor-from-connectedorganization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ff1df-140">Java</span><span class="sxs-lookup"><span data-stu-id="ff1df-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="08b2f-140">Java</span><span class="sxs-lookup"><span data-stu-id="08b2f-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalsponsor-from-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ff1df-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="ff1df-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="08b2f-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="08b2f-141">Response</span></span>
 
-<span data-ttu-id="ff1df-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ff1df-142">The following is an example of the response.</span></span>
+<span data-ttu-id="08b2f-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="08b2f-142">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
