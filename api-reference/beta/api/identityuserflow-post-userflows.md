@@ -1,24 +1,24 @@
 ---
-title: Создание userFlow
-description: Используйте этот API для создания нового пользовательского процесса.
+title: Создание пользовательского потока
+description: Используйте этот API для создания нового пользовательского потока.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 36ccf24fb65a0098ebccb8774c36af804aece41f
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 3ed41278c913361f22d8df3f2ac34ce50c69d2ed
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176537"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435303"
 ---
-# <a name="create-userflow"></a>Создание userFlow
+# <a name="create-userflow"></a>Создание пользовательского потока
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [userFlow.](../resources/identityuserflow.md)
+Создание нового [объекта пользовательского потока.](../resources/identityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50176537"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | IdentityUserFlow.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | IdentityUserFlow.ReadWrite.All |
+| Приложение                            | IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,11 +47,11 @@ POST /identity/userFlows
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [userFlow](../resources/identityuserflow.md) в JSON.
+В теле запроса поставляем JSON-представление [объекта userFlow.](../resources/identityuserflow.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `201 Created` [объект userFlow](../resources/identityuserflow.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект пользовательского потока](../resources/identityuserflow.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

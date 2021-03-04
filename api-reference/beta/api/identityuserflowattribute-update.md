@@ -1,24 +1,24 @@
 ---
-title: Обновление Идентитюсерфловаттрибуте
-description: Обновление свойств объекта Идентитюсерфловаттрибуте.
+title: Обновление identityUserFlowAttribute
+description: Обновление свойств identityUserFlowAttribute.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c3bce3e4af9ddef293ae172193b868c4b5e59cf8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: c53781dba635e583531682f755b5c76be6dfac5e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953130"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435240"
 ---
-# <a name="update-identityuserflowattribute"></a>Обновление Идентитюсерфловаттрибуте
+# <a name="update-identityuserflowattribute"></a>Обновление identityUserFlowAttribute
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md) . Можно обновлять только настраиваемые атрибуты пользовательского процесса.
+Обновление свойств объекта [identityUserFlowAttribute.](../resources/identityuserflowattribute.md) Можно обновить только настраиваемые атрибуты потока пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "48953130"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений| IdentityUserFlow.ReadWrite.All|
+|Приложение| IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Внешний идентификатор пользователя Администратор атрибутов пользовательского процесса
+* Администратор атрибутов потока внешних удостоверений пользователей
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,13 +52,13 @@ PATCH /userFlowAttributes/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите объект JSON с одним или несколькими свойствами, которые необходимо обновить для объекта [идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md) .
+В теле запроса предопределять объект JSON одним или более свойствами, которые необходимо обновить для [объекта identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
->**Примечание:** Можно обновить только свойство **Description** .
+>**Примечание:** Только свойство **описания** может быть обновлено.
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|description|String|Описание атрибута Flow User. Он отображается для пользователя во время регистрации.|
+|description|String|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
 
 ## <a name="response"></a>Отклик
 

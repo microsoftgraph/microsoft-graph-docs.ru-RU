@@ -1,16 +1,16 @@
 ---
 title: Удаление publishedResource из onPremisesAgentGroup
-description: Удаление объекта [publishedResource](../resources/publishedresource.md) из объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+description: Удалите [объект publishedResource](../resources/publishedresource.md) из [объекта onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f7ac461d17ac14f97c0043381ad565614c4c09d1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6c852ae5f49ddc928e83c08d91be7c4d1be86265
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132466"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433854"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Удаление publishedResource из onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50132466"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [publishedResource](../resources/publishedresource.md) из объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+Удалите [объект publishedResource](../resources/publishedresource.md) из [объекта onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,16 +35,16 @@ ms.locfileid: "50132466"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups{id2}/$ref
+DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups/{id2}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

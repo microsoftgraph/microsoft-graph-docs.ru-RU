@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса administrativeUnit
-description: Административное устройство предоставляет концептуальный контейнер для объектов каталога пользователей и групп.
+title: тип ресурса administrativeUnit
+description: Административное подразделение предоставляет концептуальный контейнер для объектов каталогов пользователей и групп.
 localization_priority: Normal
 author: anandyadavMSFT
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 024fe8619ced3287560ad6246ca3169577a56383
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 251aa5113e6ebd20b4f58f4cde340dbfbbd3d2ce
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024447"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433238"
 ---
-# <a name="administrativeunit-resource-type"></a>Тип ресурса administrativeUnit
+# <a name="administrativeunit-resource-type"></a>тип ресурса administrativeUnit
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Административное устройство предоставляет концептуальный контейнер для объектов каталога пользователей и групп. С помощью административных единиц администратор компании может делегировать административные обязанности для управления пользователями и группами, которые находятся в административной единице или в области действия, на региональном или подразделенном администраторе.
+Административное подразделение предоставляет концептуальный контейнер для объектов каталогов пользователей и групп. С помощью административных подразделений администратор компании теперь может делегировать административные обязанности по управлению пользователями и группами, содержамися в пределах или в пределах области, административному подразделению региональному или ведомству.
 
 Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/administrativeunit-delta.md).
 
-Рассмотрим эти действия на примере. Представьте, что компания Contoso Corp состоит из двух подразделений — западных и восточноазиатских подразделений. Роли каталога в компании Contoso ограничены всеми клиентами. Иванов, администратор компании Contoso, хочет делегировать административные обязанности, а область их до деления Западного или Восточного Дальневосточный.  Пользователь может создать *единицу измерения "Западный адмистративе* " и поместить все пользователи с Западом Дальневосточный в эту административную единицу.  Аналогичным образом, Иванов может создать *админстративе единицу Восточной побережье*.  Теперь можно приступить к делегированию административных обязанностей другим пользователям, но с **областью действия** , созданной для новых административных модулей, которые он создал. Иванов помещает Jennifer в роль *администратора службы поддержки* в **область** *административное подразделение Дальневосточный Запад*.  Это позволяет Jennifer сбросить пароль любого пользователя, но только в том случае, если эти пользователи находятся в *административном подразделении Дальневосточный Запад*.  Аналогичным образом, Иванову помещаете Дениса в роль *администратора учетных записей пользователей* с **областью** *административного подразделения East Дальневосточный*.  Это позволяет Дениса обновлять пользователей, назначать лицензии и сбрасывать пароли всех пользователей, но только если они находятся в *административном модуле "Восток*". Для просмотра видео ознакомьтесь со статьей [Введение в административные единицы Azure Active Directory](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units).
+Рассмотрим эти действия на примере. Представьте себе, что Contoso Corp состоит из двух подразделений — подразделения Западного побережья и подразделения Восточного побережья. Роли каталога в Contoso имеют область действия для всего клиента. Ли, администратор компании Contoso, хочет делегировать административные обязанности, но область их в отдел Западного побережья или подразделение Восточного побережья.  Ли может создать адмистративный блок *Западного* побережья и разместить всех пользователей западного побережья в это административное подразделение.  Кроме того, Ли может создать админстративную единицу *Восточного побережья.*  Теперь Ли может начать делегирование административных  обязанностей другим, но в области новых созданных им административных подразделений. Ли помещает Дженнифер в *роль администратора helpdesk,* **которая имеется** в административном подразделении *Западного побережья.*  Это позволяет Дженнифер сбросить пароль любого пользователя, но только в том случае, если эти пользователи находятся в административном подразделении *Западного побережья.*  Кроме того, Ли помещает Дэйва *в* роль администратора учетной записи пользователя, которая **имеет** область охвата *административного подразделения Восточного побережья.*  Это позволяет Дэйву обновлять пользователей, назначать лицензии и сбрасывать пароль любого пользователя, но только в том случае, если эти пользователи находятся в административном подразделении *Восточного побережья.* Обзор видео см. в обзоре Введение в административные единицы [Azure Active Directory.](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)
 
 С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](/graph/extensibility-overview).
 
-В этом разделе описаны объявленные свойства и свойства навигации, предоставляемые объектом administrativeUnit, а также операции и функции, которые можно вызывать для ресурса Административеунитс.
+В этом разделе описаны заявленные свойства и свойства навигации, выставленные объектом administrativeUnit, а также операции и функции, которые можно назвать на ресурсе administrativeUnits.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод   | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Создание](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Создайте новое административное подразделение.|
-|[List](../api/administrativeunit-list.md) | Коллекция [administrativeUnit](administrativeunit.md) |Список свойств всех Административеунитс.|
+|[Создание](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Создание нового административного подразделения.|
+|[List](../api/administrativeunit-list.md) | [коллекция administrativeUnit](administrativeunit.md) |Список свойств всех административных объектов.|
 |[получение](../api/administrativeunit-get.md); | [administrativeUnit](administrativeunit.md) |Чтение свойств и связей определенного объекта administrativeUnit.|
 |[Обновление](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Обновление объекта administrativeUnit. |
-|[Удаление](../api/administrativeunit-delete.md) | Нет |Удаление объекта administrativeUnit. |
-|[Получение дельты](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Получите только что созданный, обновленный или удаленный **административеунитс** , не требуя полного считывания всей коллекции ресурсов.|
-|[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление члена (пользователя или группы).|
-|[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка участников (пользователей и групп).|
-|[Получение члена](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Получение определенного участника.|
-|[Удаление члена](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Удаление члена.|
-|[Добавление роли члена с областью](../api/administrativeunit-post-scopedrolemembers.md) |[Scopedrolemembership изменен](scopedrolemembership.md)| Добавление члена с областью ролей.|
-|[Область списка — элементы роли](../api/administrativeunit-list-scopedrolemembers.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Получение списка администраторов ролей с областью действия.|
-|[Получение члена роли с областью действия](../api/administrativeunit-get-scopedrolemembers.md) |[Scopedrolemembership изменен](scopedrolemembership.md)| Получение определенного члена с областью действия роли.|
-|[Удаление члена с областью ролей](../api/administrativeunit-delete-scopedrolemembers.md) |[Scopedrolemembership изменен](scopedrolemembership.md)| Удаление члена с областью ролей.|
+|[удаление](../api/administrativeunit-delete.md); | Нет |Удаление объекта administrativeUnit. |
+|[Получение дельты](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Создайте заново созданные, обновленные или удаленные **административные** подразделения, не выполняя полное чтение всей коллекции ресурсов.|
+|[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление участника (пользователя или группы).|
+|[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получите список участников (пользователей и групп).|
+|[Получение члена](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Получите определенного участника.|
+|[Удаление члена](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Удалите член.|
+|[Добавление члена scoped-role](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Добавление члена с областью действия роли.|
+|[Участники списка с областью ролей](../api/administrativeunit-list-scopedrolemembers.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Получите список администраторов с масштабной ролью.|
+|[Получить участника с областью действия](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Получите определенного члена с областью действия.|
+|[Удаление члена с областью ролей](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Удаление члена с областью действия.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -56,17 +56,17 @@ ms.locfileid: "48024447"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|string|Необязательное описание административной единицы.|
-|displayName|string|Отображаемое имя административной единицы.|
-|id|string|Уникальный идентификатор административной единицы. Только для чтения.|
-|visibility|string|Определяет, является ли модуль админстративе и его элементы скрытыми или общедоступными. Может быть задано значение значение hiddenmembership или public. Если не задано, то поведение по умолчанию — Public. Если задано значение значение hiddenmembership, только члены административной единицы могут перечислить других членов единицы админстративе.|
+|description|string|Необязательное описание административного подразделения.|
+|displayName|string|Отображение имени административного подразделения.|
+|id|string|Уникальный идентификатор для административного подразделения. Только для чтения.|
+|visibility|string|Контролирует, скрыта ли админстративная единица и ее члены. Можно установить в HiddenMembership или Public. Если не установлено, поведение по умолчанию является общедоступным. При наборе к HiddenMembership только члены административного подразделения могут перечислять других членов админстративного подразделения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для данной административной единицы. Допускается значение null.|
-|members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, являющиеся членами этого Админситративе подразделения. Методы HTTP: GET (List Members), POST (Add Members), DELETE (удалить участников).|
-|Scopedadministrators|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены роли с областью действия этой административной единицы.  Методы HTTP: GET (List Скопедролемембершипс), POST (Add Scopedrolemembership изменен), DELETE (удалить Scopedrolemembership изменен). |
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для этого административного подразделения. Допускается значение null.|
+|members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, которые являются членами этого администраторского подразделения. МЕТОДЫ HTTP: GET (участники списка), POST (добавление участников), DELETE (удаление участников).|
+|scopedRoleMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Scoped-role members of this Administrative Unit.  МЕТОДЫ HTTP: GET (список scopedRoleMemberships), POST (добавление scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 
 ## <a name="json-representation"></a>Представление JSON
 

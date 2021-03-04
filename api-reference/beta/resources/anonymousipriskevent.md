@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса Анонимаусиприскевент
-description: Событие риска, обнаруженное службой удостоверений Azure Active Directory, в котором выполняется попытка входа учетной записи с IP-адреса, который является анонимным. Полную информацию о событиях риска можно найти в документации по защите удостоверений Azure AD.
+title: тип ресурсов anonymousIpRiskEvent
+description: Событие риска, обнаруженное службой Azure Active Directory Identity Protection, в котором с IP-адреса, который кажется анонимным, попытается войти учетная запись. Полные сведения о событиях риска можно найти в документации по защите удостоверений Azure AD.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: bcbe25270f4752e7660ab4ce0c8b9d7d636c22e6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4b5ead2c32368ec29c87fd5d5f05f4e48e5e17a0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405619"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433196"
 ---
-# <a name="anonymousipriskevent-resource-type-deprecated"></a>Тип ресурса Анонимаусиприскевент (не рекомендуется)
+# <a name="anonymousipriskevent-resource-type-deprecated"></a>тип ресурсов anonymousIpRiskEvent (неподготовленный)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+>API **identityRiskEvents** обесценен и прекратит возвращать данные 10 января 2020 г. Подробные сведения см. в материале [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Событие риска, обнаруженное службой [удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) , в котором выполняется попытка входа учетной записи с IP-адреса, который является анонимным. Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](/azure/active-directory/identity-protection/overview-identity-protection).
+Событие риска, обнаруженное [службой Azure Active Directory Identity Protection,](/azure/active-directory/identity-protection/overview-identity-protection) в котором с IP-адреса, который кажется анонимным, попытается войти учетная запись. Полные сведения о событиях риска можно найти в документации [azure AD Identity Protection.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) | [анонимаусиприскевент](anonymousipriskevent.md) |Чтение свойств и связей объекта Анонимаусиприскевент.|
+|[Получение объекта anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) | [anonymousIpRiskEvent](anonymousipriskevent.md) |Чтение свойств и связей анонимного объектаIpRiskEvent.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
-|createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
+|createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно дате самого события риска. Это правильное свойство, используемее в качестве фильтра при запросе событий риска.|
 |id|string| Только для чтения|
-|ipAddress|string| IP-адрес входа|
-|location|string| Расположение, подключенное к IP-адресу входа|
-|рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|ipAddress|string| IP-адрес входного|
+|location|string| Расположение, прикрепленное к IP-адресу входного|
+|riskEventDateTime|dateTimeOffset| Дата и время возникновения события риска|
+|riskEventStatus|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|рискевенттипе|string| Тип риска|
-|userDisplayName|string| Имя пользователя под угрозой|
-|userId|строка| Идентификатор пользователя, который подвергается риску|
-|userPrincipalName|string| Имя участника пользователя, который подвергается риску|
+|riskEventType|string| Тип риска|
+|userDisplayName|string| Имя пользователя, на которого существует риск|
+|userId|строка| ID пользователя, на который существует риск|
+|userPrincipalName|string| Основное имя пользователя пользователя, на которого существует риск|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
+|impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

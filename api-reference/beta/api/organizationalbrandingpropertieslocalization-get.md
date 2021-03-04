@@ -1,22 +1,22 @@
 ---
-title: Получение локализованных Организатионалбрандингпропертиес
-description: Получение объекта организатионалбрандингпропертиес для определенного языкового стандарта.
+title: Получить локализованные организационные свойстваBranding
+description: Извлечение объекта organizationalbrandingproperties для определенного локального объекта.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9ca1f3459910a41b38632acafdab79be61025da3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 00a37f3b888e1e5dde0449c13102b9646da11e1a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49523928"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434085"
 ---
-# <a name="get-localized-organizationalbrandingproperties"></a>Получение локализованных Организатионалбрандингпропертиес
+# <a name="get-localized-organizationalbrandingproperties"></a>Get Localized organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [организатионалбрандингпропертиес](../resources/organizationalbrandingproperties.md) .
+Извлечение свойств объекта [organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "49523928"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Organization. Read. ALL, User. Read, User. Read. ALL, User. ReadBasic. ALL |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -33,7 +33,7 @@ ms.locfileid: "49523928"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}/{property name}
+GET /organization/{id}/branding/localizations/{locale}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,11 +53,11 @@ GET /organization/{id}/branding/localizations/{locale}/{property name}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [организатионалбрандингпропертиес](../resources/organizationalbrandingproperties.md) в тексте отклика. Значение ID соответствует запрошенной локализации.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) в тексте ответа. Значение "id" соответствует запрашиваемой локализации.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>Пример 1: получение локализованного фирменного стиля для определенного языкового стандарта (fr)
-Запрос GET на определенную локализацию возвращает только значения для этой локализации. Значения NULL не будут заменены на имена, указанные в фирменной символике по умолчанию.
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>Пример 1. Получить локализованный брендинг для определенного локального (fr)
+Запрос GET для определенной локализации возвращает только значения для этой локализации. Значения Null не будут заменены значениями из брендинга по умолчанию.
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a>Пример 2: получение всех настроенных локализаций для определенных языков
+### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a>Пример 2. Получить все языковые локализации, которые были настроены
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -208,8 +208,8 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a>Пример 3: получение значения Сигнинпажетекст для определенного языкового стандарта
-При запросе свойства локализации возвращается это значение или 204, если значение равно null.
+### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a>Пример 3. Получить значение signInPageText для определенного локального значения
+Запрос свойства локализации возвращает это значение или 204, если значение null.
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.

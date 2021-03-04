@@ -1,16 +1,16 @@
 ---
 title: Список b2xIdentityUserFlows
-description: Получение списка объектов b2xIdentityUserFlow.
+description: Извлечение списка объектов b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8e0751deda4d298c3336c14d9a23514d930df774
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 672e98257776a0335c3b8691bc934a7641de6ed6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953570"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435548"
 ---
 # <a name="list-b2xidentityuserflows"></a>Список b2xIdentityUserFlows
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953570"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) .
+Извлечение списка [объектов b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "48953570"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identity/b2xUserFlows
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Можно использовать `$expand` для расширения определенных свойств пользовательского пользовательского процесса, которые по умолчанию не развернуты.
+Вы можете использовать для расширения определенных свойств потока пользователей, которые не `$expand` расширяются по умолчанию.
 
 Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -55,17 +55,17 @@ GET /identity/b2xUserFlows
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-b2xidentityuserflow-objects"></a>Пример 1: список всех объектов b2xIdentityUserFlow
+### <a name="example-1-list-all-b2xidentityuserflow-objects"></a>Пример 1. Список всех объектов b2xIdentityUserFlow
 
 #### <a name="request"></a>Запрос
 
@@ -135,7 +135,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-b2xidentityuserflow-objects-and-expand-identityproviders"></a>Пример 2: список всех объектов b2xIdentityUserFlow и разверните узел Идентитипровидерс
+### <a name="example-2-list-all-b2xidentityuserflow-objects-and-expand-identityproviders"></a>Пример 2. Список всех объектов b2xIdentityUserFlow и расширение identityProviders
 
 #### <a name="request"></a>Запрос
 

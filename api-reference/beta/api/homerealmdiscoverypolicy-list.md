@@ -1,16 +1,16 @@
 ---
 title: Перечисление типов ресурсов homeRealmDiscoveryPolicy
-description: Получение списка объектов Хомереалмдисковериполици.
+description: Получите список объектов homeRealmDiscoveryPolicy.
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0f10ba7edb9784e2b8dac4e74368f959be09fb61
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: da64f9edd6f8ca39e88c3108bcb7f08ec2236b4c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964760"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435702"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>Перечисление типов ресурсов homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48964760"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) .
+Получите список объектов [homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48964760"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион |
+| Приложение                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,21 +40,21 @@ GET policies/homeRealmDiscoveryPolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$expand` `$filter` `$select` Параметры запроса, и `$top` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` Убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
+Этот метод поддерживает параметры `$expand` `$filter` запроса `$select` OData и OData для настройки `$top` ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` убедитесь, что приложение запрашивает разрешения на чтение расширенных объектов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

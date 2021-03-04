@@ -1,24 +1,24 @@
 ---
-title: Список identityApiConnectors
+title: List identityApiConnectors
 description: Получить список объектов identityApiConnector и их свойств
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ee208f75ce3629ea4217ae992e365578861d9aed
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 065413d8d5abb3bd60075f12882d2a0696b5aaf8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874314"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435583"
 ---
-# <a name="list-identityapiconnectors"></a>Список identityApiConnectors
+# <a name="list-identityapiconnectors"></a>List identityApiConnectors
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств объекта [identityApiConnector.](../resources/identityapiconnector.md)
+Ознакомьтесь с свойствами [объекта identityApiConnector.](../resources/identityapiconnector.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49874314"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 | Приложение                            | APIConnectors.ReadWrite.All |
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,12 +53,12 @@ GET /identity/apiConnectors/
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [identityApiConnector](../resources/identityapiconnector.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [identityApiConnector](../resources/identityapiconnector.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

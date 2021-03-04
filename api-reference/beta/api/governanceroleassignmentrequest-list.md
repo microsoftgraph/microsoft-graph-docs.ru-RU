@@ -1,24 +1,24 @@
 ---
-title: Список Говернанцеролеассигнментрекуестс
-description: 'Получение коллекции Говернанцеролеассигнментрекуестс. '
+title: Список governanceRoleAssignmentRequests
+description: 'Извлечение коллекции governanceRoleAssignmentRequests. '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: f7b35d88167a608d2a25ae5a76a1fed8ed539d58
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a084967a7d0daa20a71992dad102c6a0d46b302e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634916"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435874"
 ---
-# <a name="list-governanceroleassignmentrequests"></a>Список Говернанцеролеассигнментрекуестс
+# <a name="list-governanceroleassignmentrequests"></a>Список governanceRoleAssignmentRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md). 
+Извлечения коллекции [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -29,7 +29,7 @@ ms.locfileid: "48634916"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азурересаурцес |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,35 +37,35 @@ ms.locfileid: "48634916"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азуреадграупс |
+| Приложение | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Перечисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) для ресурса.
+Список коллекции [governanceRoleAssignmentRequests на](../resources/governanceroleassignmentrequest.md) ресурсе.
     
->**Примечание:** Кроме области разрешений, запрос должен иметь по крайней мере одно назначение роли для ресурса.
+>**Примечание:** Кроме области разрешений, запрос требует, чтобы у запроса было хотя бы одно назначение роли на ресурсе.
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-Перечисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) .
+Список коллекции [моих произведений governanceRoleAssignmentRequests.](../resources/governanceroleassignmentrequest.md)
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-Перечисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) , которые являются ожидающими решениями администратора.
+Список коллекции [управляющегоRoleAssignmentRequests,](../resources/governanceroleassignmentrequest.md) которые находятся в ожидании решений администратора.
     
->**Примечание:** В этом запросе, кроме области разрешений, должен быть по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса.
+>**Примечание:** Помимо области разрешений, для этого запроса требуется, чтобы у запросителя было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -82,21 +82,21 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-Администраторы запрашивают запросы о назначениях ролей, ожидающие утверждения, для подписки Wingtip Toys — произ.
+Администраторы запрашивают запросы о назначении ролей для подписки Wingtip Toys - Prod.
 ##### <a name="request"></a>Запрос
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

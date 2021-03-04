@@ -1,16 +1,16 @@
 ---
 title: Перечисление orgContacts
-description: Получение списка контактов Организации для этой Организации.
+description: Извлечение списка организационных контактов для этой организации.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a98715d76933e0925d9b074a6d25788ee3b85ce6
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 17913ebe1e09c65588baab54748f2abd5e35a913
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352191"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433983"
 ---
 # <a name="list-orgcontacts"></a>Перечисление orgContacts
 
@@ -18,16 +18,16 @@ ms.locfileid: "49352191"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка контактов Организации для этой Организации.
+Получите список организационных контактов для этой организации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Приложение | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,24 +35,24 @@ ms.locfileid: "49352191"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запроса OData](/graph/query_parameters) для настройки отклика, в том числе `$search`, `$count` и `$filter`. Вы можете использовать параметр `$search` в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров запроса `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [orgContact](../resources/orgcontact.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [orgContact](../resources/orgcontact.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-organizational-contacts-for-an-organization"></a>Пример 1: получение организационных контактов для Организации
+### <a name="example-1-get-organizational-contacts-for-an-organization"></a>Пример 1. Получить организационные контакты для организации
 
 #### <a name="request"></a>Запрос
 
@@ -132,7 +132,7 @@ Content-length: 222
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>Пример 2: получение только количества контактов Организации
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>Пример 2. Получить только количество организационных контактов
 
 #### <a name="request"></a>Запрос
 
@@ -164,7 +164,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: использование $filter и $top для получения одного организационного контакта с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Использование $filter и $top для получения одного организационного контакта с именем отображения, которое начинается с "a", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 4: использование $search для получения организационных контактов с отображаемыми именами, содержащими "WA", в том числе от количества возвращаемых объектов.
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 4. Использование $search для получения организационных контактов с именами отображения, которые содержат буквы "wa", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 

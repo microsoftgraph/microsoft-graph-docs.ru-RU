@@ -4,13 +4,13 @@ description: Удаление identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 53950e1c839b70e84c924d39c0943c8d2ffe34a1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: f09503674cf3f340ef6b7ebe7a918c7c061368c9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953454"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435492"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953454"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
 
@@ -47,7 +47,7 @@ DELETE /identityProviders/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

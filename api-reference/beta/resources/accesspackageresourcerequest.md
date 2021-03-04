@@ -1,51 +1,51 @@
 ---
-title: Тип ресурса accessPackageResourceRequest
-description: Запрос на доступ к пакету доступа — это запрос на добавление ресурса в каталог, чтобы роли ресурса можно было использовать в одном или более пакетах доступа каталога.
+title: тип ресурса accessPackageResourceRequest
+description: Запрос ресурса пакета доступа — это запрос на добавление ресурса в каталог, чтобы роли ресурса можно было использовать в одном или более пакетах доступа каталога.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 16198df73c51b1b5f7cb7f8c7748da4816800890
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 7e045a327869432eb58d135262da1a3f4fa91307
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158585"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433259"
 ---
-# <a name="accesspackageresourcerequest-resource-type"></a>Тип ресурса accessPackageResourceRequest
+# <a name="accesspackageresourcerequest-resource-type"></a>тип ресурса accessPackageResourceRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)запрос на доступ к пакету доступа — это запрос на добавление ресурса в каталог, чтобы роли ресурса можно было использовать в одном или более пакетах доступа каталога, или удалить ресурс из каталога, который больше не нужен пакетам доступа.
+В управлении правами [Azure AD](entitlementmanagement-root.md)запрос ресурсов пакета доступа — это запрос на добавление ресурса в каталог, чтобы роли ресурса можно было использовать в одном или несколько пакетах доступа каталога или удалить ресурс из каталога, который больше не требуется пакетам доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [Коллекция accessPackageResourceRequest](accesspackageresourcerequest.md) | Получить список объектов **accessPackageResourceRequest.** |
-| [Создание accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Создание объекта **accessPackageResourceRequest.** |
+| [Список accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [коллекция accessPackageResourceRequest](accesspackageresourcerequest.md) | Извлечение списка **объектов accessPackageResourceRequest.** |
+| [Создание accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Создание нового **объекта accessPackageResourceRequest.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|catalogId|String|Уникальный ИД каталога пакетов доступа.|
+|catalogId|String|Уникальный ID каталога пакетов доступа.|
 |expirationDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|isValidationOnly|Boolean|Если этот набор за установлен, ресурс не добавляется.|
-|обоснование|String|Обоснование запросителя для добавления или удаления ресурса.|
-|requestState|String| Результат того, удалось ли службе добавить ресурс в каталог.  Значением является `Delivered` то, был ли добавлен или удален ресурс. Только для чтения.|
+|isValidationOnly|Boolean|Если установлено, ресурс не добавляется.|
+|обоснование|String|Обоснование запроса для добавления или удаления ресурса.|
+|requestState|String| Результат того, удалось ли службе добавить ресурс в каталог.  Значение, если `Delivered` ресурс был добавлен или удален. Только для чтения.|
 |requestStatus|String|Только для чтения.|
-|requestType|String|Используется для добавления ресурса, если вызываемая является администратором или владельцем ресурса, или `AdminAdd` `AdminRemove` для удаления ресурса. |
+|requestType|String|Используйте для добавления ресурса, если вызываемая является администратором или владельцем ресурса, или `AdminAdd` `AdminRemove` для удаления ресурса. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |accessPackageResource|[accessPackageResource](accesspackageresource.md)| Допускается значение null.|
-|requestor|[accessPackageSubject](accesspackagesubject.md)| Только для чтения. Допускается значение null.|
+|запросчик|[accessPackageSubject](accesspackagesubject.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

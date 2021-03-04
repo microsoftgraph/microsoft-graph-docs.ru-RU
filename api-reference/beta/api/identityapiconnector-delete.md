@@ -3,14 +3,14 @@ title: Удаление identityApiConnector
 description: Удаляет объект identityApiConnector.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3f021afd1285d00e71ef9ddab25210f00c8ac2be
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 74d8b44e73b6343efd55240e51bb22896e78ce6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873684"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435632"
 ---
 # <a name="delete-identityapiconnector"></a>Удаление identityApiConnector
 
@@ -30,10 +30,10 @@ ms.locfileid: "49873684"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 | Приложение                            | APIConnectors.ReadWrite.All |
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ DELETE /identity/apiConnectors/{identityApiConnectorId}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

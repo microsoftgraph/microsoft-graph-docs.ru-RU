@@ -1,24 +1,24 @@
 ---
-title: Создание Пермиссионгранткондитионсет в коллекции включенных элементов Пермиссионгрантполици
-description: Добавьте условия, при которых событие предоставления разрешений включается в политику предоставления разрешений.
+title: Создание permissionGrantConditionSet включает коллекцию разрешенийGrantPolicy
+description: Добавьте условия, при которых событие предоставления разрешений включено в политику предоставления разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a90c126f4a1d6de42bdd375f8fbb27e94688f711
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d98162be084e40c06f81c871a46fb804a7d612c8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962801"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433910"
 ---
-# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Создание Пермиссионгранткондитионсет в коллекции включенных элементов Пермиссионгрантполици
+# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Создание permissionGrantConditionSet включает коллекцию разрешенийGrantPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте условия, при которых событие предоставления разрешений *включается* в политику предоставления разрешений. Это можно сделать, добавив [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в коллекцию **includes** объекта  [пермиссионгрантполици](../resources/permissionGrantPolicy.md).
+Добавьте условия, при которых событие предоставления разрешений *включено* в политику предоставления разрешений. Это необходимо, добавив [permissionGrantConditionSet](../resources/permissiongrantconditionset.md)  в коллекцию [разрешенийGrantPolicy.](../resources/permissionGrantPolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48962801"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Policy.ReadWrite.PermissionGrant |
+|Приложение | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,17 +47,17 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в формате JSON.
+В теле запроса необходимо предоставить представление JSON объекта [permissionGrantConditionSet.](../resources/permissiongrantconditionset.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект permissionGrantConditionSet](../resources/permissiongrantconditionset.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В этом примере *все* делегированные разрешения для клиентских приложений из проверенных издателей включены в политику предоставления разрешений. Так как все остальные условия из [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) опущены, они будут принимать значения по умолчанию, которые в каждом случае являются самыми-инклюзивными.
+В этом примере *все* делегированные разрешения для клиентских приложений от проверенных издателей включены в политику предоставления разрешений. Так как все остальные условия [из permissionGrantConditionSet](../resources/permissiongrantconditionset.md) были пропущены, они будут принимать значения по умолчанию, которые в каждом случае наиболее все включено.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

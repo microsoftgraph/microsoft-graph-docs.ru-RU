@@ -1,24 +1,24 @@
 ---
-title: Список ПермиссионгрантполиЦиес
-description: Получение списка объектов permissionGrantPolicy.
+title: List permissionGrantPolicies
+description: Извлечение списка объектов permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fc877e5f29c0e896dd18dd063e15a68a325dd8b3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3bb3377100559583f7e9511ac009dba18f36f16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967932"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433924"
 ---
-# <a name="list-permissiongrantpolicies"></a>Список ПермиссионгрантполиЦиес
+# <a name="list-permissiongrantpolicies"></a>List permissionGrantPolicies
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [пермиссионгрантполици](../resources/permissiongrantpolicy.md) .
+Извлечение списка [объектов permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48967932"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
+| Приложение                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +48,13 @@ GET /policies/permissionGrantPolicies
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [пермиссионгрантполици](../resources/permissiongrantpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [permissionGrantPolicy](../resources/permissiongrantpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

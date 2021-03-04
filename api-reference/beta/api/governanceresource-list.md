@@ -1,24 +1,24 @@
 ---
-title: Список Говернанцересаурцес
-description: Получение коллекции governanceResource, к которой у запрашивающего есть доступ.
+title: Список governanceResources
+description: Извлечение коллекции governanceResource, к которую имеет доступ запроситель.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: a2414c02c2526ffccb1aab6bd75101047e5bbe6c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b386e00506055c38a6f330f08c5722de8f6e015c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954425"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435968"
 ---
-# <a name="list-governanceresources"></a>Список Говернанцересаурцес
+# <a name="list-governanceresources"></a>Список governanceResources
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции [governanceResource](../resources/governanceresource.md) , к которой у запрашивающего есть доступ.
+Извлечение коллекции [governanceResource,](../resources/governanceresource.md) к которую имеет доступ запроситель.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -29,7 +29,7 @@ ms.locfileid: "48954425"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Привилежедакцесс. Read. Азурересаурцес |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "48954425"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -45,7 +45,7 @@ ms.locfileid: "48954425"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureADGroups |
+| Приложение | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -63,10 +63,10 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [governanceResource](../resources/governanceresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [governanceResource](../resources/governanceresource.md) в тексте ответа.
 ## <a name="examples"></a>Примеры
 
-В этом примере выводится список всех ресурсов, к которым я могу получить доступ.
+В этом примере перечислены все ресурсы, к которые в настоящее время можно получить доступ.
 ##### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)

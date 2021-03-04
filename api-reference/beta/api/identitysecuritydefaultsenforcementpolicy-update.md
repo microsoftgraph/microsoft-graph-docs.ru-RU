@@ -1,24 +1,24 @@
 ---
-title: Обновление Идентитисекуритидефаултсенфорцементполици
-description: Обновление свойств объекта Идентитисекуритидефаултсенфорцементполици.
+title: Обновление identitySecurityDefaultsEnforcementPolicy
+description: Обновление свойств объекта identitySecurityDefaultsEnforcementPolicy.
 localization_priority: Normal
 author: rohinigoyal1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4d165011c980eb8677a13e43a38d5755913ceef2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f280b6a8798cc6ab8fc8dd383270c8e199a837d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953341"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435373"
 ---
-# <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Обновление Идентитисекуритидефаултсенфорцементполици
+# <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Обновление identitySecurityDefaultsEnforcementPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [идентитисекуритидефаултсенфорцементполици](../resources/identitysecuritydefaultsenforcementpolicy.md) .
+Обновление свойств объекта [identitySecurityDefaultsEnforcementPolicy.](../resources/identitysecuritydefaultsenforcementpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48953341"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Приложение                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ PATCH /policies/identitySecurityDefaultsEnforcementPolicy
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean|Если задано значение true, по умолчанию для клиента будет включен параметр безопасности Azure Active Directory.|
+|isEnabled|Boolean|Если установлено значение true, по умолчанию безопасность Azure Active Directory включена для клиента.|
 
 ## <a name="response"></a>Отклик
 

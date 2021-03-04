@@ -3,14 +3,14 @@ title: 'orgContact: getMemberGroups'
 description: Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 83c17963db08bc0cc479ee94a4d4dc6859b0d86f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e27ab176eb819d6a81b4a99962202d4fe7dd96a6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979040"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433994"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
@@ -38,7 +38,7 @@ POST /contacts/{id}/getMemberGroups
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

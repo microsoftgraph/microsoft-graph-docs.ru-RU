@@ -1,24 +1,24 @@
 ---
-title: Список governanceRoleSettings
-description: Извлечение коллекции governanceRoleSettings для ресурса.
+title: Управление спискамиRoleSettings
+description: Извлечение коллекции governanceRoleSettings на ресурсе.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: e4469debdaaa2d6d18fdef6630f3987ba4b2bbab
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 753ffc488c67091ae1364a8cd898b294261a7b41
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981349"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435779"
 ---
-# <a name="list-governancerolesettings"></a>Список governanceRoleSettings
+# <a name="list-governancerolesettings"></a>Управление спискамиRoleSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение коллекции [governanceRoleSettings для](../resources/governancerolesetting.md) ресурса.
+Извлечение коллекции [governanceRoleSettings на](../resources/governancerolesetting.md) ресурсе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -28,7 +28,7 @@ ms.locfileid: "49981349"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -36,7 +36,7 @@ ms.locfileid: "49981349"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
@@ -44,10 +44,10 @@ ms.locfileid: "49981349"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение | PrivilegedAccess.Read.AzureADGroups |
 
-Помимо области разрешений, этот API требует, чтобы у запрашивателя было по крайней мере одно назначение роли для ресурса.
+Помимо области разрешений этот API требует, чтобы у запросителя было как минимум одно назначение ролей на ресурсе.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -66,10 +66,10 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-В этом примере показано, как администратор перечисляет параметры роли для ресурса Wingtip Toys - Prod. 
+В этом примере показано, как администратор перечисляет параметры ролей для ресурса Wingtip Toys - Prod. 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"

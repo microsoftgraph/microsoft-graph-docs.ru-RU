@@ -1,24 +1,24 @@
 ---
-title: 'Трустфрамеворккэйсет: uploadPkcs12'
-description: Отправьте ключ формата PKCS 12 (PFX) в набор ключей.
+title: 'trustFrameworkKeySet: uploadPkcs12'
+description: Загрузите ключ формата PKCS 12 (PFX) в набор ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8861e5b74820062b96331405a731b7f68c5fe0b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9de90df699c3086261321b38375373a00b464da1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977402"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433602"
 ---
-# <a name="trustframeworkkeyset-uploadpkcs12"></a>Трустфрамеворккэйсет: uploadPkcs12
+# <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet: uploadPkcs12
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте ключ формата PKCS12 (PFX) в [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md). Входные данные — это значение, закодированное как Base-64, для контента сертификата pfx. Этот метод возвращает [трустфрамеворккэй](../resources/trustframeworkkey.md).
+Загрузите ключ формата PKCS12 (PFX) в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Входное значение — это закодированное значение содержимого сертификата Pfx. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48977402"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,12 +51,12 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String|Это поле для отправки PFX-содержимого. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64.|
-|password|Строка|Это поле для отправки пароля в PFX-контент.|
+|key|String|Это поле для отправки контента pfx. Значение должно быть кодированной версией базового-64 фактического контента сертификата.|
+|password|Строка|Это поле для отправки пароля контенту PFX.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,24 +1,24 @@
 ---
-title: Список Аваилаблепровидертипес
-description: Получение всех доступных типов поставщиков удостоверений в каталоге.
+title: Список доступныхProviderTypes
+description: Извлечение всех доступных типов поставщика удостоверений в каталоге.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f0297edc48e413865fc03ffe6d8f7bd5642f7b8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: ef78aea89344c480e9a0bc9a89e19144b7726ea0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953426"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435471"
 ---
-# <a name="list-availableprovidertypes"></a>Список Аваилаблепровидертипес
+# <a name="list-availableprovidertypes"></a>Список доступныхProviderTypes
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получает все типы поставщиков удостоверений, доступные в каталоге.
+Извлекает все типы поставщиков удостоверений, доступные в каталоге.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953426"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
 
@@ -48,7 +48,7 @@ GET /identityProviders/availableProviderTypes
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

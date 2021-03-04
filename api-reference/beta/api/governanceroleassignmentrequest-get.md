@@ -1,24 +1,24 @@
 ---
-title: Получение governanceRoleAssignmentRequest
-description: 'Получение governanceRoleAssignmentRequest. '
+title: Get governanceRoleAssignmentRequest
+description: 'Получите governanceRoleAssignmentRequest. '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 1e52cf77c9dd2be0a059f7c119c416f69b109715
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 63d7e1e494d2195f5622dfa6b0c2e6403975b8da
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635014"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435877"
 ---
-# <a name="get-governanceroleassignmentrequest"></a>Получение governanceRoleAssignmentRequest
+# <a name="get-governanceroleassignmentrequest"></a>Get governanceRoleAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
+Получите [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -29,7 +29,7 @@ ms.locfileid: "48635014"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азурересаурцес |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,19 +37,19 @@ ms.locfileid: "48635014"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азуреадграупс |
+| Приложение | PrivilegedAccess.Read.AzureADGroups |
 
-Кроме области разрешений, для него требуется запрашивающий 
-*   для ресурса по крайней мере одно назначение роли; также
-*   — Это тема [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Помимо области разрешений, для этого требуется запросчик 
+*   иметь хотя бы одно назначение роли на ресурсе; или
+*   является предметом [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -67,11 +67,11 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-Получение запроса на назначение роли
+Получить запрос на назначение ролей
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"

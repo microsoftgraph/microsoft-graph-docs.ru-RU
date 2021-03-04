@@ -1,16 +1,16 @@
 ---
 title: Создание identityApiConnector
-description: Создание объекта identityApiConnector.
+description: Создание нового объекта identityApiConnector.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: baa7890717b74a690ee2b225ab4e6e869ec034f4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e2ff03ae081a1d406a56c5a826664bb402983a4f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873698"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435630"
 ---
 # <a name="create-identityapiconnector"></a>Создание identityApiConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "49873698"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [identityApiConnector.](../resources/identityapiconnector.md)
+Создание нового [объекта identityApiConnector.](../resources/identityapiconnector.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49873698"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 | Приложение                            | APIConnectors.ReadWrite.All |
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,21 +53,21 @@ POST /identity/apiConnectors
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [identityApiConnector](../resources/identityapiconnector.md) в JSON.
+В теле запроса поставляем представление JSON объекта [identityApiConnector.](../resources/identityapiconnector.md)
 
 В следующей таблице показаны свойства, необходимые при создании [identityApiConnector.](../resources/identityapiconnector.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String| Имя соединители API. |
+|displayName|String| Имя соединитетеля API. |
 |targetUrl|String| URL-адрес конечной точки API для вызова. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, который описывает сведения о конфигурации проверки подлинности для вызова API. Поддерживается [только базовая](../resources/basicauthentication.md) проверка подлинности.|
+|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. Поддерживается [только базовая](../resources/basicauthentication.md) проверка подлинности.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [identityApiConnector](../resources/identityapiconnector.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект identityApiConnector](../resources/identityapiconnector.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

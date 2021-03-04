@@ -1,16 +1,16 @@
 ---
-title: Список событий
+title: Перечисление событий
 description: 'Получение списка объектов event из стандартного календаря пользователя или '
 localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 559128bb2fb20c4014d0cad6cd098b947e65633b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 726fa26ce41571050c94c74165a2898ca767b8d3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973591"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433567"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -62,9 +62,6 @@ GET /users/{id | userPrincipalName}/calendar/events
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
 
-GET /me/calendargroup/calendars/{id}/events
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events
-
 GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
@@ -77,7 +74,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 | Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательное свойство. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

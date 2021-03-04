@@ -1,27 +1,27 @@
 ---
 title: Получение объекта suspiciousIpRiskEvent
-description: Получение свойств и связей объекта суспиЦиаусиприскевент.
+description: Извлечение свойств и связей объекта suspiciousipriskevent.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: c1302d72a6ec8d55d694219a8fc9f27dc004ce85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec11b8eb813a8087b9913288fd46fb9eaabbb04b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013883"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433777"
 ---
-# <a name="get-suspiciousipriskevent-deprecated"></a>Получение СуспиЦиаусиприскевент (не рекомендуется)
+# <a name="get-suspiciousipriskevent-deprecated"></a>Get suspiciousIpRiskEvent (deprecated)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+>API **identityRiskEvents** обесценен и прекратит возвращать данные 10 января 2020 г. Подробные сведения см. в материале [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Получение свойств и связей объекта суспиЦиаусиприскевент.
+Извлечение свойств и связей объекта suspiciousipriskevent.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ ms.locfileid: "48013883"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /suspiciousIpRiskEvents/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [суспиЦиаусиприскевент](../resources/suspiciousipriskevent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и подозрительный `200 OK` [объектIpRiskEvent](../resources/suspiciousipriskevent.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

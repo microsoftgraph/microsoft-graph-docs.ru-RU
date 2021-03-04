@@ -3,14 +3,14 @@ title: Список организаций
 description: Получение списка объектов организаций.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e626e5efc7668f8b4b958979bda5a7ed3a7492ed
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3b0127e1bba6335c8e67d2fd7ed7b223bd96ea53
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975526"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434113"
 ---
 # <a name="list-organization"></a>Список организаций
 
@@ -40,7 +40,7 @@ GET /organization
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

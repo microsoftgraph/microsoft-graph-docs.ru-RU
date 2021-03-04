@@ -1,22 +1,22 @@
 ---
-title: Удаление Организатионалбрандингпропертиес
-description: Удаление Организатионалбрандингпропертиес.
+title: Удаление organizationalBrandingProperties
+description: Удаление организационных свойств.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 87a588fd4a44f89cbbc5364e26c5a91b1a6b3289
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d21a5752521e84e352b9239d42a8a1454c879a3c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524530"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434104"
 ---
-# <a name="delete-organizationalbrandingproperties"></a>Удаление Организатионалбрандингпропертиес
+# <a name="delete-organizationalbrandingproperties"></a>Удаление organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [организатионалбрандингпропертиес](../resources/organizationalbrandingproperties.md) .
+Удаление [объекта organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "49524530"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,7 +42,7 @@ DELETE /organization/{id}/branding
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

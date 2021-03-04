@@ -1,23 +1,23 @@
 ---
 title: Get fido2AuthenticationMethodConfiguration
-description: Чтение свойств и связей объекта fido2AuthenticationMethodConfiguration.
+description: Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19e751bab6f076f7269ca895abc35f40a1160423
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c394bf0d75e9115f3cfe7ec44ff4978f716401d0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872998"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436003"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Get fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [fido2AuthenticationMethodConfiguration,](../resources/fido2authenticationmethodconfiguration.md) который представляет [](../resources/authenticationmethodspolicies-overview.md) политику метода проверки подлинности клавиш безопасности FIDO2 для клиента Azure Active Directory (Azure AD).
+Извлечение свойств и связей объекта [fido2AuthenticationMethodConfiguration,](../resources/fido2authenticationmethodconfiguration.md) который представляет [](../resources/authenticationmethodspolicies-overview.md) политику метода проверки подлинности ключей безопасности FIDO2 для клиента Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,12 +48,12 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

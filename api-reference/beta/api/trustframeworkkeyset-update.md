@@ -1,24 +1,24 @@
 ---
-title: Обновление Трустфрамеворккэйсет
-description: Обновление свойств объекта **трустфрамеворккэйсет** .
+title: Обновление trustFrameworkKeySet
+description: Обновление свойств объекта **trustFrameworkKeySet.**
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c8ff863eb72fef990ac76e10a2a448edfd9120f2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c86b9e64e06434f5c669b53e8303248ed42c521b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980936"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433630"
 ---
-# <a name="update-trustframeworkkeyset"></a>Обновление Трустфрамеворккэйсет
+# <a name="update-trustframeworkkeyset"></a>Обновление trustFrameworkKeySet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md). Эта операция заменит содержимое существующего набора ключей. Указывать идентификатор в полезных данных запроса необязательно.
+Обновление свойств [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Эта операция заменит содержимое существующего наборов ключей. Указание ID в полезной нагрузке запроса является необязательным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48980936"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,11 +50,11 @@ PUT /trustFramework/keySets/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|переключен|Коллекция [трустфрамеворккэй](../resources/trustframeworkkey.md)| Обновляет коллекцию Трустфрамеворккэйс|
+|клавиши|[коллекция trustFrameworkKey](../resources/trustframeworkkey.md)| обновляет коллекцию Trustframeworkkeys|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект trustFrameworkKeySet](../resources/trustframeworkkeyset.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

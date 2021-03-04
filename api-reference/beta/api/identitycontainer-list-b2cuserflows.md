@@ -1,16 +1,16 @@
 ---
 title: Список b2cIdentityUserFlows
-description: Получить список объектов b2cIdentityUserFlow.
+description: Извлечение списка объектов b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 454422c09649b97ffbab96c313201ebef0cad23e
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 6dfcdb67de89b298d98268b20c68b4d10dbef7b3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705851"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435555"
 ---
 # <a name="list-b2cidentityuserflows"></a>Список b2cIdentityUserFlows
 
@@ -18,7 +18,7 @@ ms.locfileid: "49705851"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
+Извлечение списка [объектов b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49705851"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identity/b2cUserFlows
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Можно использовать `$expand` для расширения определенных свойств пользовательского потока, которые не расширены по умолчанию.
+Вы можете использовать для расширения определенных свойств потока пользователей, которые не `$expand` расширяются по умолчанию.
 
 Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -55,13 +55,13 @@ GET /identity/b2cUserFlows
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,27 +1,27 @@
 ---
-title: Список Импоссиблетравелрискевентс
-description: Получение списка объектов импоссиблетравелрискевент.
+title: Список невозможныхTravelRiskEvents
+description: Извлечение списка объектов impossibletravelriskevent.
 localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 738eeee4040cbb9ad29aae6d7c9cf1c77464fb54
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 5ab2f3a075a248d0d8b2bcea1bcc2290fc0fac7e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990636"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435107"
 ---
-# <a name="list-impossibletravelriskevents-deprecated"></a>Список Импоссиблетравелрискевентс (не рекомендуется)
+# <a name="list-impossibletravelriskevents-deprecated"></a>Список невозможныхTravelRiskEvents (обесценен)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+>API **identityRiskEvents** обесценен и прекратит возвращать данные 10 января 2020 г. Подробные сведения см. в материале [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Получение списка объектов импоссиблетравелрискевент.
+Извлечение списка объектов impossibletravelriskevent.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ ms.locfileid: "47990636"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /impossibleTravelRiskEvents
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [импоссиблетравелрискевент](../resources/impossibletravelriskevent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

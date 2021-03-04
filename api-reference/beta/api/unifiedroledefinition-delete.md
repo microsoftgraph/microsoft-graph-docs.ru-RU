@@ -1,24 +1,24 @@
 ---
-title: Удаление Унифиедроледефинитион
-description: Удаление объекта Унифиедроледефинитион.
+title: Удаление unifiedRoleDefinition
+description: Удаление объекта unifiedRoleDefinition.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3950c02a7ef55c0c2f24878aa0c419cfe98d9f24
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3d92ecaef12cd9581add7f8c3bdd096edf205e7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978878"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433524"
 ---
-# <a name="delete-unifiedroledefinition"></a>Удаление Унифиедроледефинитион
+# <a name="delete-unifiedroledefinition"></a>Удаление unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [унифиедроледефинитион](../resources/unifiedRoleDefinition.md) .
+Удаление [объекта unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978878"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | RoleManagement.ReadWrite.Directory |
+| Приложение                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,9 +43,9 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -3,20 +3,20 @@ title: Обновление userFlowLanguagePage
 description: Обновление значений в объекте userFlowLanguagePage.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4e6d1488851e4d76fc1771296ef0661f81da1b33
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 2d9a38a94dfc5fe8f801a246ff4bcab2bc41eab7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844799"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433455"
 ---
 # <a name="update-userflowlanguagepage"></a>Обновление userFlowLanguagePage
 
 Пространство имен: microsoft.graph
 
-Обновление значений в объекте userFlowLanguagePage. Вы можете обновлять только значения в overridesPage, которое используется для настройки значений, которые показываются пользователю во время пользовательского пути, определенного потоком пользователя.
+Обновление значений в объекте userFlowLanguagePage. Вы можете обновлять значения только в переопределяемой странице, которая используется для настройки значений, показанных пользователю во время пользовательского пути, определенного потоком пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,14 +28,14 @@ ms.locfileid: "49844799"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Для ссылки на содержимое в объекте необходимо использовать `$value` . Это возвращает содержимое в объекте и позволяет ссылаться на него напрямую.
+Чтобы ссылаться на содержимое объекта, необходимо использовать `$value` . Это возвращает содержимое объекта и позволяет ссылаться на него напрямую.
 
 <!-- {
   "blockType": "ignored"
@@ -56,7 +56,7 @@ PUT /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление значений, содержащихся в [userFlowLanguagePage,](../resources/userflowlanguagepage.md)в JSON.
+В теле запроса поставляем представление JSON для значений, содержащихся в [пользовательском интерфейсеFlowLanguagePage.](../resources/userflowlanguagepage.md)
 
 ## <a name="response"></a>Отклик
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

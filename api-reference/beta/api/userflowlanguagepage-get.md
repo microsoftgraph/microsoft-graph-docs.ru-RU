@@ -1,22 +1,22 @@
 ---
 title: Get userFlowLanguagePage
-description: Чтение значений в объекте userFlowLanguagePage для языка в пользовательском потоке.
+description: Чтение значений в объекте userFlowLanguagePage для языка в потоке пользователей.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f4f95eb22b709a9cf87481da54bfd697237bf8ac
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 0848078f889b5d959cadb2ec5c403d1d1edf3cb9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844840"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433462"
 ---
 # <a name="get-userflowlanguagepage"></a>Get userFlowLanguagePage
 
 Пространство имен: microsoft.graph
 
-Чтение значений в [объекте userFlowLanguagePage](../resources/userflowlanguagepage.md) для языка в пользовательском потоке. Эти значения показываются пользователю во время пользовательского пути, определенного пользовательским потоком.
+Чтение значений в [объекте userFlowLanguagePage](../resources/userflowlanguagepage.md) для языка в потоке пользователей. Эти значения показаны пользователю во время путешествия пользователя, определенного потоком пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,14 +28,14 @@ ms.locfileid: "49844840"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Для ссылки на содержимое в объекте необходимо использовать `$value` . Это возвращает содержимое в объекте и позволяет ссылаться на него напрямую.
+Чтобы ссылаться на содержимое объекта, необходимо использовать `$value` . Это возвращает содержимое объекта и позволяет ссылаться на него напрямую.
 
 <!-- {
   "blockType": "ignored"
@@ -55,13 +55,13 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [userFlowLanguagePage](../resources/userflowlanguagepage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userFlowLanguagePage](../resources/userflowlanguagepage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

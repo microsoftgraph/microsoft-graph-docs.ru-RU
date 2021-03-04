@@ -3,14 +3,14 @@ title: Отмена governanceRoleAssignmentRequest
 description: Отмена governanceRoleAssignmentRequest.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b707621c6ab6423cdffa910d9c6f7e5cb86d57ce
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1fad0311a688a2093e216a8b8d53405260d1fa19
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981363"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435933"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "49981363"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмена [governanceRoleAssignmentRequest.](../resources/governanceroleassignmentrequest.md)
+Отмена [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -28,7 +28,7 @@ ms.locfileid: "49981363"
 | Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -36,7 +36,7 @@ ms.locfileid: "49981363"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="groups"></a>Группы
@@ -44,11 +44,11 @@ ms.locfileid: "49981363"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод не **поддерживает** [параметры запросов OData.](/graph/query-parameters)
+Этот метод **не поддерживает** [параметры запроса OData.](/graph/query-parameters)
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -62,18 +62,18 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 NoContent`. В тексте отклика не возвращается никаких данных. 
 
 ## <a name="error-codes"></a>Коды ошибок
-Этот API следует стандарту кодов HTTP. Кроме того, ниже показаны пользовательские коды ошибок.
+Этот API следует стандарту http-кодов. Кроме того, ниже показаны пользовательские коды ошибок.
 
 | Код ошибки | Сообщение об ошибке | Сведения |
 |:---------- |:------------- |:------- |
-| 400 BadRequest | RoleAssignmentRequestNotFound | GovernanceRoleAssignmentRequest не существует в системе. |
+| 400 BadRequest | RoleAssignmentRequestNotFound | В системе не существует системы governanceRoleAssignmentRequest. |
 | 400 BadRequest | RequestCannotBeCancelled | Только запросы в состоянии `Granted` , и могут быть `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` отменены. |
 
 ## <a name="example"></a>Пример

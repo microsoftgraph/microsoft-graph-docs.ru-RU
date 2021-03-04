@@ -1,22 +1,22 @@
 ---
-title: Получение Организатионалбрандингпропертиес
-description: Получение свойств и связей объекта Организатионалбрандингпропертиес.
+title: Get organizationalBrandingProperties
+description: Извлечение свойств и связей объекта organizationalBrandingProperties.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d9788b29d559dd1c243b1b5ea5ef37db978f61b3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3e0d5b77b3420e6019a61b7f3545a4e333dfad58
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524507"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434106"
 ---
-# <a name="get-organizationalbrandingproperties"></a>Получение Организатионалбрандингпропертиес
+# <a name="get-organizationalbrandingproperties"></a>Get organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [организатионалбрандингпропертиес](../resources/organizationalbrandingproperties.md) .
+Извлечение свойств и связей объекта [organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "49524507"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Organization. Read. ALL, User. Read, User. Read. ALL, User. ReadBasic. ALL |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -33,7 +33,7 @@ ms.locfileid: "49524507"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/{property name}
+GET /organization/{id}/branding
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -47,22 +47,22 @@ GET /organization/{id}/branding/{property name}
 | Авторизация | Bearer {токен}. Обязательный. |
 
 >[!NOTE]
->Если вы попробуете выполнить запрос в проводнике Graph, необходимо также добавить заголовок запроса Accept-Language с допустимым языковым стандартом ISO-639.
+>При попытке запроса в Graph Explorer необходимо также включить Accept-Language запроса с допустимым локализом ISO-639.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [организатионалбрандингпропертиес](../resources/organizationalbrandingproperties.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-default-branding"></a>Пример 1: получение фирменной символики по умолчанию
+### <a name="example-1-get-the-default-branding"></a>Пример 1. Получить брендинг по умолчанию
 
 >[!NOTE]
->Если вы попробуете пример в проводнике Graph, необходимо также добавить заголовок запроса Accept-Language с допустимым языковым стандартом ISO-639, чтобы избежать ошибки "Недопустимый код языка — en-US, EN; q = 0.9. Он должен быть допустимым языковым стандартом ISO-639. "
+>Если вы попробуете пример в Graph Explorer, необходимо также включить загон Accept-Language запроса с допустимым локальным кодом ISO-639, чтобы избежать ошибки "Недействительное значение удостоверения местного значения en-US,en;q=0.9. Это должен быть допустимый локал ISO-639".
 
 #### <a name="request"></a>Запрос
 
@@ -129,9 +129,9 @@ Content-Type: application/json
 }
 ```
 
-Запросы для/брандинг всегда возвращают свойства **медиаконтенттипе**, **медиареадлинк** и **медиаедитлинк** . Если применен языковой стандарт, **медиаедитлинк** является **медиаедитлинк** для языкового стандарта (который всегда имеет значение, отличное от NULL), а **Медиареадлинк** и **медиаконтенттипе** — это **Медиареадлинк** и **медиаконтенттипе** для языкового стандарта, если **mediaReadLink** языкового стандарта не имеет значение null; в противном случае — **медиареадлинк** и **медиаконтенттипе** по умолчанию.
+Запросы на /branding всегда возвращают **свойства mediaContentType,** **mediaReadLink** и **mediaEditLink.** Если был применен локализ, **mediaEditLink** — это **mediaEditLink** для локального (который всегда не является null), а **mediaReadLink** и **mediaContentType** — **это mediaReadLink** и **mediaContentType** локального сайта, если **mediaReadLink** локального сайта не является null; в противном случае **по умолчанию mediaReadLink** и **mediaContentType**.
 
-### <a name="example-2-get-organizational-branding-but-no-branding-configured"></a>Пример 2: получение фирменной символики Организации, но не настроена фирменная символика
+### <a name="example-2-get-organizational-branding-but-no-branding-configured"></a>Пример 2. Получить организационный брендинг, но не настроить брендинг
 
 #### <a name="request"></a>Запрос
 
@@ -147,7 +147,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -159,8 +159,8 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 HTTP/1.1 404 NOT FOUND
 ```
 
-### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Пример 3: получение фирменной символики для французского языка
-Заголовок Accept-Langauge используется для применения определенной локализации к фирменной символике. Свойства, которые имеют значение NULL в указанной локализации, возвращаются из фирменной символики по умолчанию. Если заголовок Accept-Language указан в запросе, в ответ будет включен заголовок Content-Language, если это не так `und` .
+### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Пример 3. Получить организационный брендинг для французского языка
+Заго Accept-Langauge используется для применения определенной локализации к брендингу. Свойства, которые являются недействительными в указанной локализации, возвращаются из брендинга по умолчанию. Если Accept-Language в запросе указана загонщика, ответ будет включать заглавный заглавный контент-язык, если это не `und` так.
 
 #### <a name="request"></a>Запрос
 
@@ -209,8 +209,8 @@ Content-Language: fr
 }
 ```
 
-### <a name="example-4-get-bannerlogo-for-the-french-locale"></a>Пример 4: Get Баннерлого для французского языка
-Возвращает **баннерлого** для языкового стандарта fr, если он существует. Если локализация не существует, возвращается **баннерлого** по умолчанию.
+### <a name="example-4-get-bannerlogo-for-the-french-locale"></a>Пример 4. Получить bannerLogo для французского языка
+Возвращает **bannerLogo** для fr locale, если он существует. Если локализация не существует, возвращается **баннер по умолчаниюLogo**.
 
 #### <a name="request"></a>Запрос
 
@@ -247,7 +247,7 @@ Accept-Language: fr
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -266,9 +266,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-get-bannerlogo-when-no-bannerlogo-is-configured"></a>Пример 5: Get Баннерлого, если не настроен ни один Баннерлого
+### <a name="example-5-get-bannerlogo-when-no-bannerlogo-is-configured"></a>Пример 5. Получить bannerLogo, когда не настроен bannerLogo
 
-В этом примере показан запрос для свойства, которое не существует на фирменной символике по умолчанию или на языке, указанном в заголовке Accept-Language.
+В этом примере показан запрос на свойство, которое не существует в фирменой марке по умолчанию или языка, указанного в Accept-Language.
 
 #### <a name="request"></a>Запрос
 

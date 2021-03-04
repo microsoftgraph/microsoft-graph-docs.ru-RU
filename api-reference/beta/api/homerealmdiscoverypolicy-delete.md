@@ -1,24 +1,24 @@
 ---
-title: Удаление Хомереалмдисковериполици
-description: Удаление Хомереалмдисковериполици.
+title: Удаление homeRealmDiscoveryPolicy
+description: Удаление homeRealmDiscoveryPolicy.
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d144fe6e81f17e4f9aa688e0ba65548ba160fad1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d18b0f018eb23bf0513507884ede82cc6a9fd234
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964809"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435751"
 ---
-# <a name="delete-homerealmdiscoverypolicy"></a>Удаление Хомереалмдисковериполици
+# <a name="delete-homerealmdiscoverypolicy"></a>Удаление homeRealmDiscoveryPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) .
+Удаление [объекта homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48964809"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,9 +42,9 @@ DELETE /policies/homeRealmDiscoveryPolicies/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

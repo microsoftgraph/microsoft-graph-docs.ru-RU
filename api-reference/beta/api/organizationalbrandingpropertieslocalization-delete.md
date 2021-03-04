@@ -1,22 +1,22 @@
 ---
-title: Удаление локализованных Организатионалбрандингпропертиес
-description: Удаление Организатионалбрандингпропертиес для определенной локализации.
+title: Удаление локализованных организационных свойствBrandingProperties
+description: Удаление организационных свойств для определенной локализации.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8136325ce1e81728951165475d49944f048dd1a5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 946868fb22c3d2b5ba0a54e764214c3453c39d56
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524626"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434092"
 ---
-# <a name="delete-localized-organizationalbrandingproperties"></a>Удаление локализованных Организатионалбрандингпропертиес
+# <a name="delete-localized-organizationalbrandingproperties"></a>Удаление локализованных организационных свойствBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [организатионалбрандингпропертиес](../resources/organizationalbrandingproperties.md) .
+Удаление [объекта organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "49524626"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,7 +42,7 @@ DELETE /organization/{id}/branding/localizations/{locale}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,24 +1,24 @@
 ---
-title: Получение Усерфлов
-description: Получение свойств и связей объекта усерфлов.
+title: Get userFlow
+description: Извлечение свойств и связей объекта пользовательского потока.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54c510d8db3468aa20d2bd1f28a0ac99866f992d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 143b86109eb0f7cfd14d3366a66fd712f6406262
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953263"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435324"
 ---
-# <a name="get-userflow"></a>Получение Усерфлов
+# <a name="get-userflow"></a>Get userFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей для объекта [усерфлов](../resources/identityuserflow.md) .
+Извлечение свойств и ассоциаций для [объекта userFlow.](../resources/identityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48953263"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL |
+| Приложение                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /identity/userFlows/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [усерфлов](../resources/identityuserflow.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [пользовательского потока](../resources/identityuserflow.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,24 +1,24 @@
 ---
-title: 'Трустфрамеворккэйсет: Уплоадцертификате'
-description: Отправьте сертификат в набор ключей.
+title: 'trustFrameworkKeySet: uploadCertificate'
+description: Загрузите сертификат в набор ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 11e307ac3c876bc9a57daac99bfc3dd031cab3d5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 279794743f6f6b4cbd80fd9b3793195a73ff0e18
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980928"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433616"
 ---
-# <a name="trustframeworkkeyset-uploadcertificate"></a>Трустфрамеворккэйсет: Уплоадцертификате
+# <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте сертификат в [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md). Входное значение — это значение сертификата в кодировке Base-64. Этот метод возвращает [трустфрамеворккэй](../resources/trustframeworkkey.md).
+Загрузите сертификат в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Входное значение — это закодированное значение содержимого сертификата базового значения 64. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48980928"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,11 +51,11 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String| Это поле для отправки контента сертификата. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64. |
+|key|String| Это поле для отправки контента сертификата. Значение должно быть кодированной версией базового-64 фактического контента сертификата. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

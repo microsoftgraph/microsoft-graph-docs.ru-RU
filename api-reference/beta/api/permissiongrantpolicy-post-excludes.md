@@ -1,24 +1,24 @@
 ---
-title: Create Пермиссионгранткондитионсет в исключении коллекции Пермиссионгрантполици
+title: Создание permissionGrantConditionSet исключает коллекцию разрешенийGrantPolicy
 description: Добавьте условия, при которых событие предоставления разрешений исключается в политике предоставления разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 39fcd797f61be5bf8468edc2a5153d08b29f32c5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a15b82fdc595da0a032b2d6962cdcf02b57843fc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969302"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433921"
 ---
-# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Create Пермиссионгранткондитионсет в исключении коллекции Пермиссионгрантполици
+# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Создание permissionGrantConditionSet исключает коллекцию разрешенийGrantPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте условия, при которых событие предоставления разрешений *исключается* в политике предоставления разрешений. Для этого необходимо добавить [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в коллекцию **исключений** объекта  [пермиссионгрантполици](../resources/permissionGrantPolicy.md).
+Добавьте условия, при которых событие предоставления разрешений *исключается* в политике предоставления разрешений. Это необходимо, добавив [permissionGrantConditionSet](../resources/permissiongrantconditionset.md)  в исключенную коллекцию [разрешенийGrantPolicy.](../resources/permissionGrantPolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48969302"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Policy.ReadWrite.PermissionGrant |
+|Приложение | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,17 +47,17 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в формате JSON.
+В теле запроса необходимо предоставить представление JSON объекта [permissionGrantConditionSet.](../resources/permissiongrantconditionset.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект permissionGrantConditionSet](../resources/permissiongrantconditionset.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В этом примере *все* делегированные разрешения для Microsoft Graph ( **AppID** 00000003-0000-0000-C000-000000000000) исключаются из политики предоставления разрешений.
+В этом  примере все делегированные разрешения для Microsoft Graph **(appId** 00000003-0000-0000-0000-000000000000000) исключены из политики предоставления разрешений.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

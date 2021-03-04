@@ -1,29 +1,29 @@
 ---
-title: Обновление Говернанцеролеассигнментрекуестс
-description: Позволяет администраторам обновлять свои решения ( `AdminApproved` или `AdminDenied` ) в говернанцеролеассигнментрекуестс, которые находятся в состоянии `PendingAdminDecision` .
+title: Обновление governanceRoleAssignmentRequests
+description: Включить администраторов для обновления своих решений `AdminApproved` (или) по `AdminDenied` governanceRoleAssignmentRequests, которые находятся в состоянии `PendingAdminDecision` .
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 869755946b1e2abe3b2a332899408519da013c07
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59080cf19cf96d82f029d3ba9513cd16a042157a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965454"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435856"
 ---
-# <a name="update-governanceroleassignmentrequests"></a>Обновление Говернанцеролеассигнментрекуестс
+# <a name="update-governanceroleassignmentrequests"></a>Обновление governanceRoleAssignmentRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет администраторам обновлять свои решения ( `AdminApproved` или `AdminDenied` ) в [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) , которые находятся в состоянии `PendingAdminDecision` .
+Включить администраторов для обновления своих решений `AdminApproved` (или) по `AdminDenied` [governanceRoleAssignmentRequests,](../resources/governanceroleassignmentrequest.md) которые находятся в состоянии `PendingAdminDecision` .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
->**Примечание:** Кроме того, для этого API необходимо, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса, к которому относится [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
+>**Примечание:** Этот API также требует, чтобы у запрашиваемого по крайней мере одно назначение роли администратора (или) на ресурсе, к который принадлежит `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest.](../resources/governanceroleassignmentrequest.md) 
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
@@ -61,16 +61,16 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 | Авторизация  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |String                 |✓        |Причина, предоставляемая администратором для своего решения.|
-|решении        |String                 |✓        |Принятие решения администратором запроса на назначение роли. Значение должно быть Обновлено как `AdminApproved` или `AdminDenied` .|
-|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение роли. Для состояния `AdminApproved` это обязательное требование.|
-|ассигнментстате      |String|         | Состояние присваивания, а также значения `Eligible` `Active` : или. Для решения `AdminApproved` это необходимо. |
+|reason        |String                 |✓        |Причина, по которой администратор принял решение.|
+|решение        |String                 |✓        |Решение администратора запроса на назначение ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied` .|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение ролей. Для состояния `AdminApproved` требуется.|
+|assignmentState      |String|         | Состояние назначения и значения могут быть `Eligible` или `Active` . Для принятия `AdminApproved` решения требуется. |
 ### <a name="response"></a>Отклик
-Этот метод можно применять только к запросам, которые находятся в состоянии `PendingAdminDecision` .
+Этот метод может применяться только к запросам, которые находятся в состоянии `PendingAdminDecision` .
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 

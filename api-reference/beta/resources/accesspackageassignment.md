@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса accessPackageAssignment
-description: Назначение пакета доступа — это назначение пакета доступа определенной теме на определенный период времени.
+title: тип ресурса accessPackageAssignment
+description: Назначение пакета доступа — это назначение пакета доступа определенному субъекту в течение определенного периода времени.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3a7d9a947490676b48a170130fac2bf9e776c183
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3fcacacf4d616b1b9e52b9615864de9056bf1592
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155624"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433287"
 ---
-# <a name="accesspackageassignment-resource-type"></a>Тип ресурса accessPackageAssignment
+# <a name="accesspackageassignment-resource-type"></a>тип ресурса accessPackageAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)назначение пакета доступа — это назначение пакета доступа определенному субъекту на определенный период времени.  Например, в назначении пакета доступа может быть установлено, что пользователю Алисе был назначен доступ через пакет доступа "Продажи" за период с января 2019 г. по июль 2019 г.
+В [управлении правами Azure AD](entitlementmanagement-root.md)назначение пакета доступа — это назначение пакета доступа определенному субъекту на определенный период времени.  Например, в назначении пакета доступа может быть установлено, что пользователю Алисе назначен доступ через пакет продаж пакета доступа за период с января 2019 г. по июль 2019 г.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список accessPackageAssignments](../api/accesspackageassignment-list.md) | [Коллекция accessPackageAssignment](accesspackageassignment.md) | Получить список объектов **accesspackageassignment.** |
+| [Списки accessPackageAssignments](../api/accesspackageassignment-list.md) | [коллекция accessPackageAssignment](accesspackageassignment.md) | Извлечение списка **объектов accesspackageassignment.** |
 
->**Примечание.** Вы не можете использовать метод для создания или удаления назначения пакета доступа. Вместо этого клиент, который хочет запросить назначение пакета доступа для пользователя или удалить назначение пакета доступа у пользователя, может создать [accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
+>**Примечание:** Вы не можете использовать метод для создания или удаления назначения пакета доступа. Вместо этого клиент, который хочет запросить назначение пакета доступа для пользователя или удалить назначение пакета доступа у пользователя, может создать [accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
 ## <a name="properties"></a>Свойства
 
@@ -34,13 +34,13 @@ ms.locfileid: "50155624"
 |:-------------|:------------|:------------|
 |accessPackageId|String|Идентификатор пакета доступа. Только для чтения.|
 |assignmentPolicyId|String|Идентификатор политики назначения пакета доступа. Только для чтения.|
-|assignmentState|String|Состояние назначения пакета доступа. Возможные значения: `Delivering` `Delivered` , или `Expired` . Только для чтения.|
-|assignmentStatus|String|Дополнительные сведения о жизненном цикле назначения.  Возможные значения: `Delivering` , , , или `Delivered` `NearExpiry1DayNotificationTriggered` `ExpiredNotificationTriggered` .  Только для чтения.|
+|assignmentState|String|Состояние назначения пакета доступа. Возможные значения `Delivering` , `Delivered` или `Expired` . Только для чтения.|
+|assignmentStatus|String|Дополнительные сведения о жизненном цикле назначения.  Возможные значения включают `Delivering` `Delivered` , или `NearExpiry1DayNotificationTriggered` `ExpiredNotificationTriggered` .  Только для чтения.|
 |catalogId|String|Идентификатор каталога, содержащего пакет доступа. Только для чтения.|
 |expiredDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
 |isExtended|Boolean|Указывает, расширено ли назначение пакета доступа. Только для чтения.|
-|targetId|String| ИД субъекта с назначением. Только для чтения.|
+|targetId|String| ID субъекта с назначением. Только для чтения.|
 |schedule|[requestSchedule](requestschedule.md)| Когда назначение доступа должно быть на месте. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
@@ -49,7 +49,7 @@ ms.locfileid: "50155624"
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| Только для чтения. Допускается значение null.|
 |accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Только для чтения. Допускается значение null.|
-|accessPackageAssignmentResourceRoles|[Коллекция accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)| Роли ресурсов, доставленные целевому пользователю для этого назначения. Только для чтения. Допускается значение null.|
+|accessPackageAssignmentResourceRoles|[коллекция accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)| Роли ресурсов, переданные целевому пользователю для этого назначения. Только для чтения. Допускается значение null.|
 |target|[accessPackageSubject](accesspackagesubject.md)| Тема назначения пакета доступа. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

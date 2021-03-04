@@ -1,24 +1,24 @@
 ---
-title: Обновление Пермиссионгрантполици
-description: Обновление объекта Пермиссионгрантполици.
+title: Обновление permissionGrantPolicy
+description: Обновление объекта permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 75c84a1bff24ece3c44a67a5986dbb76c1b8816b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 28e8fdd96bcbdc5b9542d42d8a24d8f5cf4e4da3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968536"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433861"
 ---
-# <a name="update-permissiongrantpolicy"></a>Обновление Пермиссионгрантполици
+# <a name="update-permissiongrantpolicy"></a>Обновление permissionGrantPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта  [пермиссионгрантполици](../resources/permissiongrantpolicy.md).
+Обновление свойств  [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48968536"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.PermissionGrant |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.ReadWrite.PermissionGrant |
+| Приложение                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,12 +50,12 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
-| displayName | String |Отображаемое имя политики предоставления разрешений.|
+| displayName | String |Имя отображения политики предоставления разрешений.|
 | description |String| Описание политики предоставления разрешений.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `204 No Content` код отклика и не возвращает ничего в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и ничего не возвращает `204 No Content` в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

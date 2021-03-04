@@ -1,24 +1,24 @@
 ---
-title: Создание объекта b2cIdentityUserFlow
-description: Создание объекта b2cIdentityUserFlow.
+title: Создание b2cIdentityUserFlow
+description: Создайте новый объект b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 88595851390bdfefb6db3e8246da92940084de92
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: edb0a8eab1406c3bcdd3856c158b4fb936228eb5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292016"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435541"
 ---
-# <a name="create-b2cidentityuserflow"></a>Создание объекта b2cIdentityUserFlow
+# <a name="create-b2cidentityuserflow"></a>Создание b2cIdentityUserFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
+Создайте [новый объект b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "50292016"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityUserFlow.ReadWrite.All|
+|Приложение|IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,20 +52,20 @@ POST /identity/b2cUserFlows
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса предостерегать представление [объекта b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)в JSON.
+В теле запроса предостерегать представление [JSON b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Обязательный. Имя пользовательского потока. Имя будет предварительно замещено после `B2C_1` создания.|
-|userFlowType|String|Обязательный. Тип создаемого пользовательского потока. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|id|String|Обязательный. Имя пользовательского потока. После создания имя будет предварительно заранее. `B2C_1`|
+|userFlowType|String|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
-|isLanguageCustomizationEnabled|Логический|Необязательный параметр. Определяет, включена ли настройка языка в пользовательском потоке B2C Azure AD. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
-|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию для b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный параметр. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
+|isLanguageCustomizationEnabled|Логический|Необязательное. Определяет, включена ли настройка языка в потоке пользователей Azure AD B2C. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
+|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и заголовщик Location с `201 Created` URI [объекту b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) созданному для этого запроса, с префиксом, добавленным к `B2C_1` имени. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешной работы этот метод возвращает код отклика и заголовку Location с URI на объект `201 Created` [b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) созданный для этого запроса, с префиксом, добавленным в `B2C_1` имя. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
@@ -226,7 +226,7 @@ Content-type: application/json
   ]
 }-->
 
-### <a name="example-3-create-a-user-flow-with-the-default-values-and-configuration-for-api-connectors"></a>Пример 3. Создание пользовательского потока со значениями по умолчанию и конфигурацией для соединителов API
+### <a name="example-3-create-a-user-flow-with-the-default-values-and-configuration-for-api-connectors"></a>Пример 3. Создание пользовательского потока с значениями по умолчанию и конфигурацией для соединителов API
 
 #### <a name="request"></a>Запрос
 
@@ -284,7 +284,7 @@ Content-length: 154
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
-**Примечание.** Свойство всегда возвращает значение `apiConnectorConfiguration` {} '. Чтобы увидеть полное значение свойств навигации, [используйте](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) этот API.
+**Примечание:** Свойство `apiConnectorConfiguration` всегда возвращает значение {} '. Чтобы увидеть полное значение свойств навигации, используйте [этот](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API.
 
 <!-- {
   "blockType": "response",

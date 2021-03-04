@@ -1,30 +1,30 @@
 ---
-title: 'governanceResource: Register'
+title: 'governanceResource: регистрация'
 description: Регистрация объекта governanceResource в PIM.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: df5e9a2d63c6a49a8eb7b8ab9b5ed88b4f50c577
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: fed82587a1132b6c39e6e27e09546906792486b0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635063"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435947"
 ---
-# <a name="governanceresource-register"></a>governanceResource: Register
+# <a name="governanceresource-register"></a>governanceResource: регистрация
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Зарегистрируйте объект [governanceResource](../resources/governanceresource.md) в привилегированном управлении удостоверениями.
+Регистрация объекта [governanceResource в](../resources/governanceresource.md) привилегированном управлении удостоверениями.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
->**Примечание:** Этот API также требует, чтобы у запрашивающего по крайней мере одно назначение активной роли для ресурса.
+>**Примечание:** Этот API также требует, чтобы у запрашиваемой стороны было по крайней мере одно назначение активной роли на ресурсе.
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
@@ -46,7 +46,7 @@ ms.locfileid: "48635063"
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
@@ -59,24 +59,24 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает **только** `$select` `$expand` [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод **поддерживает** только `$select` параметры `$expand` [запроса oData и OData,](/graph/query-parameters) чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса
 
 | Свойства | Тип | Описание |
 |:---------- |:---- |:----------- |
-| externalId | String | Внешний идентификатор ресурса, регистрируемого в PIM. При регистрации подписки идентификатором является идентификатор подписки, добавленный в начале `/subscriptions/` . Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+| externalId | String | Внешний идентификатор ресурса, который будет зарегистрирован в PIM. При регистрации подписки идентификатором является идентификатор подписки, предварительно заранее задверяющий `/subscriptions/` . Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` отклик.
+В случае успешной работы этот метод возвращает `200 OK` ответ.
 
 ## <a name="example"></a>Пример
 

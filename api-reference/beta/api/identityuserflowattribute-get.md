@@ -1,24 +1,24 @@
 ---
-title: Получение Идентитюсерфловаттрибуте
-description: Получение свойств и связей объекта Идентитюсерфловаттрибуте.
+title: Get identityUserFlowAttribute
+description: Извлечение свойств и связей объекта identityUserFlowAttribute.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2497ac509376aa07b692ac8d137e64b5c299ab49
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: f98dc9a69aee1297d26ef4ed9891f9035a297ced
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953187"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435275"
 ---
-# <a name="get-identityuserflowattribute"></a>Получение Идентитюсерфловаттрибуте
+# <a name="get-identityuserflowattribute"></a>Get identityUserFlowAttribute
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md) .
+Извлечение свойств и связей [объекта identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "48953187"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибутов пользовательского процесса внешнего удостоверения
+* Администратор атрибута потока внешних удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,13 +49,13 @@ GET /identity/userFlowAttributes/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и представление объекта [идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md) в тексте отклика в формате JSON.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` представление JSON в тексте ответа [identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
 ## <a name="examples"></a>Примеры
 

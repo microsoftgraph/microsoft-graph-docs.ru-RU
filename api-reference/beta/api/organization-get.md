@@ -3,14 +3,14 @@ title: Получение организации
 description: Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 50d26588e35c1790464c61a389ef354db0777d38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3e0f2408c01bf6cfcbb492e4661480cebc149840
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975733"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434148"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -32,7 +32,7 @@ ms.locfileid: "48975733"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложения | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Примечание.** Приложения с разрешением User.Read могут считывать только такие свойства организации, как **id** , **displayName** и **verifiedDomains**.  Для всех остальных свойств возвращается значение `null`. Считать все свойства можно с помощью Organization.Read.All.
+> **Примечание.** Приложения с разрешением User.Read могут считывать только такие свойства организации, как **id**, **displayName** и **verifiedDomains**.  Для всех остальных свойств возвращается значение `null`. Считать все свойства можно с помощью Organization.Read.All.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /organization
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

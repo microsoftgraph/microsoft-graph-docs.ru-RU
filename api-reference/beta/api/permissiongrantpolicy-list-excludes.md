@@ -1,24 +1,24 @@
 ---
-title: List исключает коллекцию Пермиссионгрантполици
-description: Получение списка наборов условий, описывающих условия, при которых событие предоставления разрешений исключается в политике предоставления разрешений.
+title: Список исключает коллекцию разрешенийGrantPolicy
+description: Извлечение списка наборов условий, в которых описываются условия, при которых событие предоставления разрешений исключается в политике предоставления разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9d79489d047e51ae765ddb15f04850b13aa51122
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 97d069280460020da48ee2327c624911925d5b50
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979914"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433966"
 ---
-# <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List исключает коллекцию Пермиссионгрантполици
+# <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Список исключает коллекцию разрешенийGrantPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение наборов условий, *исключаемых* в [пермиссионгрантполици](../resources/permissiongrantpolicy.md).
+Извлечение наборов *условий, исключенных* в [permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48979914"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Policy. Read. Пермиссионгрант, Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Policy. Read. Пермиссионгрант, Directory. Read. ALL |
+|Приложение | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,19 +47,19 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение наборов условий, **исключаемых** из встроенной политики предоставления разрешений `microsoft-application-admin` . Эта политика предоставления разрешений включает все делегированные разрешения, а также все разрешения приложений, кроме разрешений приложений для Microsoft Graph и разрешений приложений для Azure AD Graph.
+Ниже приводится пример запроса на  извлечение исключенных наборов условий встроенной политики предоставления `microsoft-application-admin` разрешений. Эта политика предоставления разрешений включает все делегированные разрешения и все разрешения приложений, за исключением разрешений приложений для Microsoft Graph и разрешений приложений для Azure AD Graph.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,24 +1,24 @@
 ---
-title: Получение Говернанцероледефинитион
-description: Получение свойств и связей объекта Говернанцероледефинитион.
+title: Get governanceRoleDefinition
+description: Извлечение свойств и связей управленияRoleDefinition.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 1e9a2f52ea264f7bbcf3353e68deb9f51378efd1
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 97d3ed248d5a808cf57edf5f18cc37cc07e44bf7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634981"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435842"
 ---
-# <a name="get-governanceroledefinition"></a>Получение Говернанцероледефинитион
+# <a name="get-governanceroledefinition"></a>Get governanceRoleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [говернанцероледефинитион](../resources/governanceroledefinition.md).
+Извлечение свойств и связей [управленияRoleDefinition](../resources/governanceroledefinition.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -29,7 +29,7 @@ ms.locfileid: "48634981"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азурересаурцес |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,17 +37,17 @@ ms.locfileid: "48634981"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Привилежедакцесс. Read. Азуреадграупс |
+| Приложение | PrivilegedAccess.Read.AzureADGroups |
 
-Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса, к которому относится [говернанцероледефинитион](../resources/governanceroledefinition.md) .
+Помимо области разрешений, этот API требует, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе, которому принадлежит [governanceRoleDefinition.](../resources/governanceroledefinition.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Этот метод **не поддерживает** [параметры запроса OData для](/graph/query-parameters) настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -66,10 +66,10 @@ GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [говернанцероледефинитион](../resources/governanceroledefinition.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект governanceRoleDefinition](../resources/governanceroledefinition.md) в тексте ответа.
 ## <a name="example"></a>Пример
-В этом примере показано, как получить сведения об участниках определения роли DNS в подписке Wingtip Toys-произ.
+В этом примере показано, как получить сведения об определении роли DNS Zone Contributor в подписке Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinition"

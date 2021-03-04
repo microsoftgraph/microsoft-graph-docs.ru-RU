@@ -3,21 +3,21 @@ title: Обновление fido2AuthenticationMethodConfiguration
 description: Обновление свойств объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 88a780fc872b46163966f1b1d611ca5b6d503e28
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 93ea4ad235ba58df44c33be8c64beaa294557628
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872991"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436000"
 ---
 # <a name="update-fido2authenticationmethodconfiguration"></a>Обновление fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [fido2AuthenticationMethodConfiguration,](../resources/fido2authenticationmethodconfiguration.md) который представляет политику метода проверки подлинности клавиш безопасности FIDO2 для клиента Azure AD.
+Обновим свойства объекта [fido2AuthenticationMethodConfiguration,](../resources/fido2authenticationmethodconfiguration.md) который представляет политику метода проверки подлинности ключей безопасности FIDO2 для клиента Azure AD.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,12 +49,12 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/f
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса предоставляем представление объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) в JSON со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+## <a name="request-body"></a>Текст запроса
+В корпусе запроса необходимо предоставить представление JSON объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Список свойств, которые можно обновить, см. в списке [fido2AuthenticationMethodConfiguration.](../resources/fido2authenticationmethodconfiguration.md)
+Список свойств, которые можно обновить, см. [в списке fido2AuthenticationMethodConfiguration.](../resources/fido2authenticationmethodconfiguration.md)
 
->**Примечание.** Свойство `@odata.type` со значением должно `#microsoft.graph.fido2AuthenticationMethodConfiguration` быть включено в тело.
+>**Примечание:** Свойство `@odata.type` со значением `#microsoft.graph.fido2AuthenticationMethodConfiguration` должно быть включено в тело.
 
 
 ## <a name="response"></a>Отклик

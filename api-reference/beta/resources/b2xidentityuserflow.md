@@ -3,14 +3,14 @@ title: Тип ресурса b2xIdentityUserFlow
 description: Представляет пользовательский поток в клиенте Azure Active Directory.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 35751faed998b7fa69922e4f045748989096cbd8
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 6a3668afb0f2d0e40b3c1cc014158a884a1e754f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719666"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433154"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>Тип ресурса b2xIdentityUserFlow
 

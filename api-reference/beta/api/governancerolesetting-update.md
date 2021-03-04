@@ -1,29 +1,29 @@
 ---
-title: Обновление Говернанцеролесеттинг
-description: Обновление свойств объекта Говернанцеролесеттинг.
+title: Обновление управленияRoleSetting
+description: Обновление свойств governanceRoleSetting.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 24a2e96136bf416547a974bbecf004bc46d81f04
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2c4392529d64683a183002b9f0b302495f8042e5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965412"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435787"
 ---
-# <a name="update-governancerolesetting"></a>Обновление Говернанцеролесеттинг
+# <a name="update-governancerolesetting"></a>Обновление управленияRoleSetting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [говернанцеролесеттинг](../resources/governancerolesetting.md).
+Обновление свойств [governanceRoleSetting.](../resources/governancerolesetting.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
->**Примечание:** Этот API также требует, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса.
+>**Примечание:** Этот API также требует, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
@@ -62,33 +62,33 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {token}|
+| Authorization  | Bearer {token}|
 | Content-Type  | application/json|
 
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для [говернанцерулесеттингс](../resources/governancerulesetting.md) , которые необходимо обновить. 
+## <a name="request-body"></a>Тело запроса
+В теле запроса укажи значения [для governanceRuleSettings,](../resources/governancerulesetting.md) которые необходимо обновить. 
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|админелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда администратор пытается добавить подходящего назначения роли.|
-|админмемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытке администратора добавить назначение роли прямого члена.|
-|усерелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить подходящего назначения роли. |
-|усермемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается активировать назначение роли.|
+|adminEligibleSettings|[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при добавлении администратором назначения подходящих ролей.|
+|adminMemberSettings|[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда администратор пытается добавить назначение ролей прямого участника.|
+|userEligibleSettings|[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, оцениваемые при добавлении права на назначение ролей. |
+|userMemberSettings|[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытках пользователя активировать назначение ролей.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 NoContent`. Метод не возвращает данные в теле отклика. 
 
 ### <a name="error-codes"></a>Коды ошибок
-Этот API возвращает стандартные коды ошибок HTTP. Кроме того, возвращаются следующие коды настраиваемых ошибок.
+Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает следующие пользовательские коды ошибок.
 
 |Код ошибки     | Сообщение об ошибке         | Сведения             |
 |:--------------| :---------------------|:--------------------|
-| 400 Бадрекуест| ролесеттингнотфаунд   | [Говернанцеролесеттинг](../resources/governancerolesetting.md) не существует в системе.
-| 400 Бадрекуест| инвалидролесеттинг    | В тексте запроса указаны недопустимые значения [говернанцерулесеттингс](../resources/governancerulesetting.md) .
+| 400 BadRequest| RoleSettingNotFound   | В системе не существует системы [governanceRoleSetting.](../resources/governancerolesetting.md)
+| 400 BadRequest| InvalidRoleSetting    | Значения [governanceRuleSettings,](../resources/governancerulesetting.md) предоставляемые в теле запроса, не допустимы.
 
 ## <a name="example"></a>Пример 
-В этом примере обновляется параметр Role для настраиваемой роли 3 в подписке Wingtip Toys — произ.
+В этом примере обновляется параметр роли для настраиваемой роли 3 в подписке Wingtip Toys - Prod.
 ##### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)

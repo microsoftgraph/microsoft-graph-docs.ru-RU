@@ -1,54 +1,54 @@
 ---
-title: Тип ресурса accessPackageAssignmentRequest
+title: тип ресурса accessPackageAssignmentRequest
 description: Запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7ce7d47ccb4e911689e9398c2514cb8311b3ae0a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 89977897860133b92fc445036296de283a56b922
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155613"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433281"
 ---
-# <a name="accesspackageassignmentrequest-resource-type"></a>Тип ресурса accessPackageAssignmentRequest
+# <a name="accesspackageassignmentrequest-resource-type"></a>тип ресурса accessPackageAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа, или от его имени. В случае успешного выполнения запроса с необходимыми утверждениями пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также автоматически создает запросы на назначение пакета доступа для отслеживания удаления доступа.
+В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем или от имени пользователя, который хочет получить назначение пакета доступа. Если запрос является успешным, с любыми необходимыми утверждениями, пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также создает запросы на назначение пакетов доступа автоматически для отслеживания удаления доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [Коллекция accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Получить список объектов accesspackageassignmentrequest. |
-| [Создание accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создайте новый accessPackageAssignmentRequest. |
-| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта accessPackageAssignmentRequest. |
+| [Список accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка объектов accesspackageassignmentrequest. |
+| [Создание accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создание нового accessPackageAssignmentRequest. |
+| [Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта accessPackageAssignmentRequest. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|completedDate|DateTimeOffset|Дата окончания обработки (успешного или неудачного) запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|completedDate|DateTimeOffset|Дата окончания обработки , успешной или неудачной, запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |id|String| Только для чтения.|
-|isValidationOnly|Boolean|Имеет true, если запрос не обрабатывается для назначения.|
-|обоснование|String|Предоставленная запросителем обоснование.|
-|requestState|String|Один из `PendingApproval` , , , , , , или `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` . Только для чтения.|
-|requestStatus|String|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
-|requestType|String|Один из `UserAdd` , , , или `UserRemove` `AdminAdd` `AdminRemove` `SystemRemove` . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove` . Только для чтения.|
-|schedule|[requestSchedule](requestschedule.md)| Диапазон дат, в которые должен быть назначен доступ запрашиваемой информации. Только для чтения.|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Для requestType или , это назначение пакета доступа `UserAdd` `AdminAdd` запрашивается для создания.  Для объекта requestType или , это свойство существующего `UserRemove` `AdminRemove` `SystemRemove` `id` назначения, который необходимо удалить.|
-|answers|[Коллекция accessPackageAnswer](accesspackageanswer.md)|Ответы, предоставленные запрашивателем [для accessPackageQuestions,](accesspackagequestion.md) которые запрашивали их во время запроса.|
+|isValidationOnly|Boolean|True, если запрос не обрабатывается для назначения.|
+|обоснование|String|Предоставлено обоснование запроса.|
+|requestState|String|Один `PendingApproval` из `Canceled` , , , , , или  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` . Только для чтения.|
+|requestStatus|String|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
+|requestType|String|Один `UserAdd` из `UserRemove` , , или `AdminAdd` `AdminRemove` `SystemRemove` . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove` . Только для чтения.|
+|schedule|[requestSchedule](requestschedule.md)| Диапазон дат, которые должен быть назначен запросчику. Только для чтения.|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Для requestType или , это назначение пакета `UserAdd` `AdminAdd` доступа, запрашиваемого для создания.  Для requestType или , это свойство существующего `UserRemove` `AdminRemove` `SystemRemove` `id` назначения, которые будут удалены.|
+|ответы|[коллекция accessPackageAnswer](accesspackageanswer.md)|Ответы, предоставленные запрашивателем для [доступа кPackageQuestions,](accesspackagequestion.md) заданные им во время запроса.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|requestor|[accessPackageSubject](accesspackagesubject.md)| Субъект, запросивший или, если прямое назначение, был назначен. Только для чтения. Допускается значение null.|
+|запросчик|[accessPackageSubject](accesspackagesubject.md)| Субъекту, который запрашивал или, если прямое назначение, было назначено. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

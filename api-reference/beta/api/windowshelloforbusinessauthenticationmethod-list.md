@@ -3,14 +3,14 @@ title: Список windowsHelloForBusinessAuthenticationMethods
 description: Получите список объектов windowsHelloForBusinessAuthenticationMethod и их свойств.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8fca4ebf68dad9d0c85dfa75b36b2ee094e84bff
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: d1d0493c89ae8e2673601c8fbe66fe1b4412f635
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013683"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433388"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>Список windowsHelloForBusinessAuthenticationMethods
 Пространство имен: microsoft.graph
@@ -31,19 +31,19 @@ ms.locfileid: "50013683"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только маскирование номеров телефонов)
+* Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -70,11 +70,13 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_windowshelloforbusinessauthenticationmethod"
@@ -83,6 +85,24 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 ``` http
 GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/windowsHelloForBusinessMethods
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-windowshelloforbusinessauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-windowshelloforbusinessauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-windowshelloforbusinessauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-windowshelloforbusinessauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

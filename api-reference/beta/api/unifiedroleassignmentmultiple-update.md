@@ -1,16 +1,16 @@
 ---
 title: Обновление unifiedRoleAssignmentMultiple
-description: Обновление нового объекта Унифиедролеассигнментмултипле.
+description: Обновление нового объекта unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: af1749b0def974fab47bfe3403f4e53e83f65b52
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1f24bf6b9464ec878f47d68553bf36db6dc48866
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978892"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433549"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Обновление unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978892"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление существующего объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) . Используйте эту возможность для обновления назначений ролей в Microsoft Intune. Обратите внимание, что [унифиедролеассигнмент](../resources/unifiedroleassignment.md) не поддерживает обновление.
+Обновление [существующего объекта unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте это для обновления назначений ролей в Microsoft Intune. Обратите [внимание, что unifiedRoleAssignment](../resources/unifiedroleassignment.md) не поддерживает обновление.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978892"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения | DeviceManagementRBAC.ReadWrite.All |
+| Приложение | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ PATCH /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [унифиедассигнментмултипле](../resources/unifiedroleassignmentMultiple.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

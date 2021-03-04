@@ -1,24 +1,24 @@
 ---
-title: Получение Пермиссионгрантполици
-description: Получение одного объекта Пермиссионгрантполици.
+title: Получить permissionGrantPolicy
+description: Извлечение одного объекта permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 20d22030d16d99fc1bba22dd173d76b83ca96d2c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7065399613ceb1eaa2c797afadb511a5bf2b62e5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977944"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433973"
 ---
-# <a name="get-permissiongrantpolicy"></a>Получение Пермиссионгрантполици
+# <a name="get-permissiongrantpolicy"></a>Получить permissionGrantPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение одного объекта [пермиссионгрантполици](../resources/permissiongrantpolicy.md) .
+Извлечение одного [объекта permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48977944"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
+| Приложение                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,19 +48,19 @@ GET /policies/permissionGrantPolicies/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [пермиссионгрантполици](../resources/permissiongrantpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [permissionGrantPolicy](../resources/permissiongrantpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В этом примере запрошенная политика — это встроенная политика предоставления разрешений `microsoft-user-default-low` , которая включает в себя недорогие делегированные разрешения для приложений из проверенных издателей или приложений, зарегистрированных в этом клиенте.
+Ниже приведен пример запроса. В этом примере запрашиваемой политикой является встроенная политика предоставления разрешений, которая включает делегирование разрешений, классифицированных с низким уровнем, для приложений от проверенных издателей или приложений, зарегистрированных в `microsoft-user-default-low` этом клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Политика имеет два `includes` набора условий, один из которых соответствует Делегированному разрешению, классифицированному `low` для клиентских приложений, зарегистрированных в этом клиенте, и другой, который соответствует делегированным разрешениям, классифицированным `low` для приложений из проверенных издателей (независимо от того, в каком клиенте зарегистрировано приложение).
+Ниже приведен пример отклика. Политика имеет два набора условий, один из которых совпадает с делегированным разрешением, классифицированным для клиентских приложений, зарегистрированных в этом клиенте, и другой, который соответствует делегированию разрешений, классифицированных для приложений от проверенных издателей (независимо от того, в каком клиенте зарегистрировано `includes` `low` `low` приложение).
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

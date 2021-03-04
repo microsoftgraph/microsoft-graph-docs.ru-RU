@@ -1,24 +1,24 @@
 ---
-title: Создание Идентитюсерфловаттрибуте
-description: Создание нового объекта Идентитюсерфловаттрибуте.
+title: Создание identityUserFlowAttribute
+description: Создание нового объекта identityUserFlowAttribute.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 816b9e94ca95ec61f7a9628de7ede6617cebb7fd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: f6cdbf3d22e7b51e656e3dbe3d44180232a1467b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953144"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435261"
 ---
-# <a name="create-identityuserflowattribute"></a>Создание Идентитюсерфловаттрибуте
+# <a name="create-identityuserflowattribute"></a>Создание identityUserFlowAttribute
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md) .
+Создание нового [объекта identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "48953144"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityUserFlow.ReadWrite.All|
+|Приложение|IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибутов пользовательского процесса внешнего удостоверения
+* Администратор атрибута потока внешних удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,19 +52,19 @@ POST /identity/userFlowAttributes
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте представление объекта [идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md)в формате JSON.
+В теле запроса предопределять представление JSON [identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Идентификатор атрибута потока пользователей. Это автоматически созданный атрибут только для чтения.|
-|displayName|String|Отображаемое имя атрибута потока пользователей.|
-|description|String|Описание атрибута Flow User. Он отображается для пользователя во время регистрации.|
-|userFlowAttributeType|String|Тип атрибута потока пользователей. Это автоматически настроенный атрибут только для чтения. В зависимости от типа атрибута значением этого свойства является `builtIn` или `custom`.|
-|dataType|String|Тип данных атрибута потока пользователей. Этот параметр нельзя изменить после создания настраиваемого атрибута пользовательского процесса. Поддерживаемые значения для **dataType** :<br/><ul><li>`string` : указывает, что тип данных для Идентитюсерфловаттрибуте является строкой. </li><li>`boolean` : указывает, что тип данных для Идентитюсерфловаттрибуте является логическим.</li><li>`int64` : указывает, что тип данных для Идентитюсерфловаттрибуте является целым числом.</li></ul>|
+|id|String|Идентификатор атрибута потока пользователей. Это атрибут только для чтения, который создается автоматически.|
+|displayName|String|Отображает имя атрибута потока пользователя.|
+|description|String|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
+|userFlowAttributeType|String|Тип атрибута потока пользователя. Это атрибут только для чтения, заданной автоматически. В зависимости от типа атрибута значения для этого свойства будут `builtIn` или `custom` .|
+|dataType|String|Тип данных атрибута потока пользователя. Это невозможно изменить после создания настраиваемой атрибута потока пользователей. Поддерживаемые значения **dataType:**<br/><ul><li>`string` : обозначает, что dataType для identityUserFlowAttribute — это строка. </li><li>`boolean` : обозначает, что dataType для identityUserFlowAttribute является boolean.</li><li>`int64` : обозначает, что dataType для identityUserFlowAttribute является набором.</li></ul>|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект identityUserFlowAttribute](../resources/identityuserflowattribute.md) в тексте ответа. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 

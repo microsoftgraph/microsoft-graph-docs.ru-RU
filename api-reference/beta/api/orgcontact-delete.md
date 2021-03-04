@@ -3,14 +3,14 @@ title: Удаление orgContact
 description: Удаление orgContact.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d50cd13a2bafdbe04d36632bcf1dc915885c7af9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b853a153afea17bae86a7e0d4215f9ae0ac39db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972124"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434029"
 ---
 # <a name="delete-orgcontact"></a>Удаление orgContact
 
@@ -39,7 +39,7 @@ DELETE /contacts/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

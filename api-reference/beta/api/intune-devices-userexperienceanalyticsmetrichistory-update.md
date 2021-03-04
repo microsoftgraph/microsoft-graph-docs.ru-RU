@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b914f7d20793caa5b9a8848e90e3dc8bed61577a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 7ca67205cd47625b08ba31173c2bbcf152147581
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161301"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434974"
 ---
 # <a name="update-userexperienceanalyticsmetrichistory"></a>Обновление userExperienceAnalyticsMetricHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "50161301"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,29 +38,31 @@ ms.locfileid: "50161301"
 -->
 ``` http
 PATCH /deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnalyticsMetricHistoryId}
+PATCH /deviceManagement/userExperienceAnalyticsDeviceMetricHistory/{userExperienceAnalyticsMetricHistoryId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в JSON.
+## <a name="request-body"></a>Тело запроса
+В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)
+В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор истории показателей аналитики пользовательского интерфейса.|
-|metricDateTime|DateTimeOffset|Дата даты анализа пользовательского интерфейса.|
-|metricType|String|Тип метрики аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор метрики аналитики пользовательского опыта.|
+|deviceId|String|ID устройства аналитики пользовательского интерфейса.|
+|metricDateTime|DateTimeOffset|Время даты даты аналитики пользовательского интерфейса.|
+|metricType|String|Тип метрики аналитики пользовательского опыта.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -69,10 +71,11 @@ PATCH /deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnal
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnalyticsMetricHistoryId}
 Content-type: application/json
-Content-length: 174
+Content-length: 208
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }
@@ -83,11 +86,12 @@ Content-length: 174
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 257
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }

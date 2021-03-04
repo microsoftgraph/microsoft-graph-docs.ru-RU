@@ -3,21 +3,21 @@ title: Удаление fido2AuthenticationMethodConfiguration
 description: Удаление объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 473c0605cc302b29730ddb359f51904050296ff2
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c50f653f1be712fe2950404ee690097f7063b00b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873005"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436017"
 ---
 # <a name="delete-fido2authenticationmethodconfiguration"></a>Удаление fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите изменения, внесенные в политику метода проверки подлинности [FIDO2,](../resources/fido2authenticationmethodconfiguration.md) вернув политику к конфигурации по умолчанию.
+Удалите изменения, внесенные в политику метода проверки подлинности [FIDO2,](../resources/fido2authenticationmethodconfiguration.md) возвращая политику к ее конфигурации по умолчанию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,7 +49,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

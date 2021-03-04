@@ -3,14 +3,14 @@ title: Обновление identityApiConnector
 description: Обновление свойств объекта identityApiConnector.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9037a6bfcd53af0ee009f232909a964a8b0e6a86
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 179507abb9da8637919b2679fdc1d8ed0267eaba
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873670"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435599"
 ---
 # <a name="update-identityapiconnector"></a>Обновление identityApiConnector
 
@@ -30,10 +30,10 @@ ms.locfileid: "49873670"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 | Приложение                            | APIConnectors.ReadWrite.All |
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,17 +52,17 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [identityApiConnector](../resources/identityapiconnector.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [identityApiConnector.](../resources/identityapiconnector.md)
 
-В следующей таблице показаны свойства [identityApiConnector,](../resources/identityapiconnector.md) которые можно обновить.
+В следующей таблице показаны свойства [удостоверенияApiConnector,](../resources/identityapiconnector.md) который можно обновить.
 
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String| Имя соединители API. |
+|displayName|String| Имя соединитетеля API. |
 |targetUrl|String| URL-адрес конечной точки API для вызова. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, который описывает сведения о конфигурации проверки подлинности для вызова API. В [настоящее время поддерживается](../resources/basicauthentication.md) только базовая проверка подлинности. Все свойства apiAuthenticationConfigurationBase должны быть установлены одновременно, например имя пользователя и пароль.|
+|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. В [настоящее время](../resources/basicauthentication.md) поддерживается только базовая проверка подлинности. Все свойства apiAuthenticationConfigurationBase должны быть заданы одновременно, как имя пользователя, так и пароль.|
 
 ## <a name="response"></a>Отклик
 

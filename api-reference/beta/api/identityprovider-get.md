@@ -1,16 +1,16 @@
 ---
 title: Получение identityProvider
-description: Получение свойств и связей объекта identityProvider.
+description: Извлечение свойств и связей объекта identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 69615bbe83d3d93f09120a39277f8c18415ca745
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 803a684ef8a1432ffedc43a87b2af5c258a394d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953444"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435478"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953444"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [identityProvider](../resources/identityprovider.md).
+Извлечение свойств и связей [identityProvider](../resources/identityprovider.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953444"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
 
@@ -47,17 +47,17 @@ GET /identityProviders/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и представление объекта [IdentityProvider](../resources/identityprovider.md) или [Опенидконнектпровидер](../resources/openidconnectprovider.md) (только для Azure AD B2C) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и представление JSON для `200 OK` [identityProvider](../resources/identityprovider.md) или [openIdConnectProvider](../resources/openidconnectprovider.md) (только для Azure AD B2C) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-retrieve-a-specific-identityprovider"></a>Пример 1: получение определенного identityProvider
+### <a name="example-1-retrieve-a-specific-identityprovider"></a>Пример 1. Извлечение определенного удостоверенияProvider
 
 #### <a name="request"></a>Запрос
 
@@ -115,7 +115,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Пример 2: получение определенного Опенидконнектпровидер (только для Azure AD B2C)
+### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Пример 2. Извлечение определенного openIDConnectProvider (только для Azure AD B2C)
 
 #### <a name="request"></a>Запрос
 
