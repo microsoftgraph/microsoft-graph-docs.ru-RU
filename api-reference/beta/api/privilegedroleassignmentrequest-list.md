@@ -1,34 +1,34 @@
 ---
-title: Список privilegedRoleAssignmentRequests
-description: 'Получить коллекцию privilegedRoleAssignmentRequest. '
+title: Список привилегированныхRoleAssignmentRequests
+description: 'Извлечение коллекции privilegedRoleAssignmentRequest. '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 5447e4540ddba88a40b3bf13fa041c5f24ae86da
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: 7df9eab695ae60884274a01487f87369751bfb19
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866237"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441179"
 ---
-# <a name="list-privilegedroleassignmentrequests"></a>Список privilegedRoleAssignmentRequests
+# <a name="list-privilegedroleassignmentrequests"></a>Список привилегированныхRoleAssignmentRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить коллекцию [privilegedRoleAssignmentRequest.](../resources/privilegedroleassignmentrequest.md) 
+Извлечения коллекции [привилегированныхRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
 
-**Примечание.** У этого запросивщика должно быть хотя бы одно назначение роли для ресурса.
+**Примечание:** Этот запрашиватель должен иметь как минимум одно назначение ролей на ресурсе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,11 +45,11 @@ GET /privilegedRoleAssignmentRequests
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

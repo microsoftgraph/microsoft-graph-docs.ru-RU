@@ -1,18 +1,18 @@
 ---
-title: 'Привилежедроле: Селфдеактивате'
+title: 'privilegedRole: selfDeactivate'
 description: Деактивация роли, назначенной запрашивающей стороне.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: a7ea75d4ca90efe583351f33b5454c5159aeaa0b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a50f74e928d95ba5bce5e39dc61febb30f9d67b7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970395"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441286"
 ---
-# <a name="privilegedrole-selfdeactivate"></a>Привилежедроле: Селфдеактивате
+# <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 
 Пространство имен: microsoft.graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "48970395"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запрашивающая сторона может вызвать только ```selfDeactivate``` назначенную ему роль. 
+Запросчик может вызывать только назначенную ему ```selfDeactivate``` роль. 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,20 +36,20 @@ ms.locfileid: "48970395"
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Обратите внимание, что ``{id}`` это идентификатор целевой роли.
+Обратите ``{id}`` внимание, что это целевой id роли.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос

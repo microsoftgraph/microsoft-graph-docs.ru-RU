@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3ecb884ec0a9b4e372adf303b4a29c1469af20d5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 03c8ca5be5429fe0d42d24a596ed468a86becbf3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971098"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443485"
 ---
 # <a name="tablecolumn-range"></a>TableColumn: Range
 
@@ -31,8 +31,8 @@ ms.locfileid: "48971098"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+GET /workbook/tables/{id|name}/columns/{id|name}/Range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,7 +45,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [workbookRange](../resources/workbookrange.md)) в теле отклика.
+В случае успеха этот метод возвращает код ответа и `200 OK` [объект workbookRange](../resources/workbookrange.md)в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -57,8 +57,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
   "blockType": "request",
   "name": "tablecolumn_range"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-range-csharp-snippets.md)]

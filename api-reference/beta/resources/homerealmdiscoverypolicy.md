@@ -1,54 +1,54 @@
 ---
-title: Тип ресурса homeRealmDiscoveryPolicy
-description: Представляет политику для управления поведением проверки подлинности Azure Active Directory для федерационных пользователей.
+title: тип ресурса homeRealmDiscoveryPolicy
+description: Представляет политику управления поведением проверки подлинности Azure Active Directory для федерационных пользователей.
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 462e3a00ae5e8cb497ade27675fbde17eec90362
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 205ac24ace9e0a2a4a4a70af50ef1ac49348d0db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161658"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443036"
 ---
-# <a name="homerealmdiscoverypolicy-resource-type"></a>Тип ресурса homeRealmDiscoveryPolicy
+# <a name="homerealmdiscoverypolicy-resource-type"></a>тип ресурса homeRealmDiscoveryPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику для управления поведением проверки подлинности Azure Active Directory для федерационных пользователей, в частности для ограничений автоматического ускорения и проверки подлинности пользователей в федерационных доменах. Вы можете настроить homeRealmDiscoveryPolicy для всех основных служб в организации или для определенных в организации.  Дополнительные сведения о сценарии и политике см. в настройках поведения при входе [в Azure AD](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal) для приложения с помощью политики обнаружения домашней области, а также в входе в [Azure Active Directory](/azure/active-directory/authentication/howto-authentication-use-email-signin)с помощью электронной почты в качестве альтернативного ИД входа.
+Представляет политику управления поведением проверки подлинности Azure Active Directory для федерационных пользователей, в частности для ограничений автоматического ускорения и проверки подлинности пользователей в федерадных доменах. Вы можете установить homeRealmDiscoveryPolicy для всех директоров служб в вашей организации или для определенных директоров служб в вашей организации.  Дополнительные сведения о сценарии и политике см. в примере [Configure Azure AD sign in behaviour for an application by using a Home Realm Discovery policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal) as well as [Sign-in to Azure Active Directory using email as an alternate login ID.](/azure/active-directory/authentication/howto-authentication-use-email-signin)
 
-Наследуется от [stsPolicy.](stsPolicy.md)
+Наследует [от stsPolicy](stsPolicy.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Создание homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Создание объекта homeRealmDiscoveryPolicy. |
-| [Get homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Чтение свойств и связей объекта homeRealmDiscoveryPolicy. |
+| [Get homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Чтение свойств и отношений объекта homeRealmDiscoveryPolicy. |
 | [Перечисление типов ресурсов homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-list.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Чтение свойств и связей объектов homeRealmDiscoveryPolicies. |
 | [Обновление homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-update.md) | Нет | Обновление объекта homeRealmDiscoveryPolicy. |
 | [Удаление homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-delete.md) | Нет | Удаление объекта homeRealmDiscoveryPolicy. |
-| [List appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получите список directoryObjects, к которые была применена эта политика. |
-| [Назначение типа ресурса homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md) | Нет | Назначьте объект homeRealmDiscoveryPolicy [объекту servicePrincipal.](serviceprincipal.md) |
-| [Список присвоенных homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md) | Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Список объектов homeRealmDiscoveryPolicy, которые назначены [объекту servicePrincipal.](serviceprincipal.md) |
-| [Удаление типа ресурса homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md) | Нет | Удаление объекта homeRealmDiscoveryPolicy из [объекта servicePrincipal.](serviceprincipal.md) |
+| [Список применяетсяTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получите список directoryObjects, к которые была применена эта политика. |
+| [Назначение типа ресурса homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md) | Нет | Назначение объекта homeRealmDiscoveryPolicy [объекту servicePrincipal.](serviceprincipal.md) |
+| [Список, присвоенный homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md) | Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Список объектов homeRealmDiscoveryPolicy, которые назначены [объекту servicePrincipal.](serviceprincipal.md) |
+| [Удаление типа ресурса homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md) | Нет | Удалите объект homeRealmDiscoveryPolicy из [объекта servicePrincipal.](serviceprincipal.md) |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|definition|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
+|определение|Коллекция строк| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображаемого имени для этой политики. Обязательно.|
-|isOrganizationDefault|Boolean|Если установлено true, активирует эту политику. Для одного типа политики может быть несколько политик, но только одна может быть активирована в качестве организации по умолчанию. Необязательный, значение по умолчанию — false.|
+|displayName|String| Отображение имени для этой политики. Обязательный.|
+|isOrganizationDefault|Boolean|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 
 ### <a name="properties-of-a-home-realm-discovery-policy-definition"></a>Свойства определения политики обнаружения домашней области
-Ниже properties form the JSON object that represents a token lifetime policy. Этот объект JSON необходимо **преобразовать** в строку с escape-кавычками, чтобы вставить его в **свойство** определения. Пример показан ниже в формате JSON:
+Свойства, представленные ниже, формируют объект JSON, который представляет политику срока службы маркера. Этот объект JSON необходимо **преобразовать** в строку с кавычками, которые будут вставлены в **свойство определения.** Пример показан ниже в формате JSON:
 
 <!-- {
   "blockType": "ignored"
@@ -64,16 +64,16 @@ ms.locfileid: "50161658"
 
 | Свойство     | Тип   |Описание| 
 |:---------------|:--------|:----------|
-|AccelerateToFederatedDomain|Boolean| Установите для `true` автоматического ускорения (обход обнаружения домашней области). Если в клиенте имеется только один проверенный и федераированный домен, пользователи будут перенаправлены непосредственно к федератированному поставщику удостоверений `true` (например, ADFS) для входов. Если в клиенте имеется несколько проверенных доменов, необходимо `true` у указано **имя PreferredDomain.** Необязательный параметр.|
-|PreferredDomain|String| Указывает домен, в который необходимо ускорить вход. Его можно о пропущено, если у клиента только один федераированный домен. Если он опущен и существует несколько проверенных федераированных доменов, эта политика не действует. Обязательно, если **accelerateToFederatedDomain** `true` имеет .|
-|AllowCloudPasswordValidation|Boolean| Установите, чтобы разрешить приложению проверку подлинности федератора, предостановив учетные данные пользователя или пароля непосредственно в конечной точке маркера `true` Azure Active Directory. Работает, только если включена синхронизация паролей. Необязательный параметр.|
-|AlternateIdLogin| Json |Установите {"Enabled": true}, чтобы разрешить вход в Azure AD с помощью электронной почты в качестве [альтернативного ИД входа.](/azure/active-directory/authentication/howto-authentication-use-email-signin) Работает только в **том случае, если для IsOrganizationDefault** установлено такое же `true` время. Необязательный параметр.|
+|AccelerateToFederatedDomain|Boolean| Настройка для `true` автоматического ускорения (обход обнаружения домашней области). Если в клиенте есть только один проверенный и федераированный домен, пользователи будут доставлены непосредственно к федератированному поставщику удостоверений `true` (например, ADFS) для регистрации. Если в клиенте имеется несколько проверенных `true` доменов, необходимо укаменеть **PreferredDomain.** Необязательное.|
+|PreferredDomain|String| Указывает домен, чтобы ускорить вход в. Он может быть опущен, если у клиента есть только один федераированный домен. Если он опущен и существует несколько проверенных федераированных доменов, эта политика не влияет. Обязательно, **если accelerateToFederatedDomain** `true` является .|
+|AllowCloudPasswordValidation|Boolean| Установите, чтобы разрешить приложению проверку подлинности федерарно настроенного пользователя путем вручения учетных данных пользователя или пароля непосредственно в конечной точке маркера `true` Azure Active Directory. Работает только в том случае, если включена синхронизация паролей. Необязательное.|
+|AlternateIdLogin| Json |Установите {"Включено": true} чтобы разрешить вход в Azure AD с помощью электронной почты в качестве [альтернативного входа.](/azure/active-directory/authentication/howto-authentication-use-email-signin) Работает только при **наборе IsOrganizationDefault** `true` . Необязательное.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appliesTo|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject,](directoryObject.md) к которую применена эта политика. Только для чтения.|
+|appliesTo|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject,](directoryObject.md) к которую была применена эта политика. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

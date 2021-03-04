@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Рискусерактивити
+title: тип ресурса riskUserActivity
 description: author
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ecfe618a8db9f03bbf088ea053476fe6e51bcbf7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7772bde328004ffd26133421cc97a9f296ae9370
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988942"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442875"
 ---
-# <a name="riskuseractivity-resource-type"></a>Тип ресурса Рискусерактивити
+# <a name="riskuseractivity-resource-type"></a>тип ресурса riskUserActivity
 
 Пространство имен: microsoft.graph
 
@@ -22,9 +22,9 @@ ms.locfileid: "47988942"
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| евенттипес | Коллекция Рискевенттипе |Список типов событий риска. Устарело. Вместо этого используйте **рискевенттипе** . |
-|рискевенттипе|string|Тип обнаруженного события риска. Возможные значения:,,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` и `unknownFutureValue` . |
-| описаны     | riskDetail  | Возможные значения:,,,,,,,,,, `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` , `unknownFutureValue` .  |
+| eventTypes | коллекция riskEventType |Список типов событий риска. Устарело. Вместо **этого используйте riskEventType.** |
+|riskEventType|string|Тип обнаруженного события риска. Возможные `unlikelyTravel` значения: `anonymizedIPAddress` , `maliciousIPAddress` , , , , , , , , `unfamiliarFeatures` и `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . |
+| подробные     | riskDetail  | Возможные `none` значения: `adminGeneratedTemporaryPassword` , `userPerformedSecuredPasswordChange` , , , , `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` , `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` `unknownFutureValue` , .  |
 
 ## <a name="json-representation"></a>Представление JSON
 

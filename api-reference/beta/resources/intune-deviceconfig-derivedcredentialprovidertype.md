@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Дериведкредентиалпровидертипе
+title: derivedCredentialProviderType enum type
 description: Тип поставщика для производных учетных данных.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b5605b482591b8815af651c0f46ca91d705d1b6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 729625cfbc23f81db2563618360fe0e0eaa13143
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288714"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443001"
 ---
-# <a name="derivedcredentialprovidertype-enum-type"></a>тип перечисления Дериведкредентиалпровидертипе
+# <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49288714"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен производный поставщик учетных данных.|
-|ентрустдатакард|1,1|Ентруст.|
-|пуребред|2|Агентство по оборонным информационным системам пуребред.|
-|кстек|4|Кстек — Аусенткс.|
-|интерцеде|4 |Интерцеде.|
+|notConfigured|0|Не настроен поставщик производных учетных данных.|
+|entrustDataCard|1 |Доверяй.|
+|purebred|2 |Purebred — Агентство информационных систем обороны.|
+|xTec|3 |Xtec — AuthentX.|
+|intercede|4 |Intercede.|
 
 
 

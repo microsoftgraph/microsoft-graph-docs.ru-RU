@@ -1,51 +1,51 @@
 ---
-title: Тип ресурса accessPackageCatalog
+title: тип ресурса accessPackageCatalog
 description: Каталог пакетов доступа — это контейнер для пакетов доступа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 97c683ca47f453efdcd267839b3a2239a400db66
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a920312977d640d67f34e8f11ffd37fe032f0f0d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158634"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443225"
 ---
-# <a name="accesspackagecatalog-resource-type"></a>Тип ресурса accessPackageCatalog
+# <a name="accesspackagecatalog-resource-type"></a>тип ресурса accessPackageCatalog
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [службе управления правами Azure AD](entitlementmanagement-root.md)каталог пакетов доступа является контейнером для пакетов доступа с нуля или более.  Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для предоставления доступа.
+В [управлении правами Azure AD](entitlementmanagement-root.md)каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом.  Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [Коллекция accessPackageCatalog](accesspackagecatalog.md) | Получить список объектов accesspackagecatalog. |
-| [Создание accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Создание объекта accessPackageCatalog. |
-| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Чтение свойств и связей объекта accessPackageCatalog. |
+| [Список accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [коллекция accessPackageCatalog](accesspackagecatalog.md) | Извлечение списка объектов accesspackagecatalog. |
+| [Создание accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Создайте новый объект accessPackageCatalog. |
+| [Получить accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Чтение свойств и связей объекта accessPackageCatalog. |
 | [Обновление accessPackageCatalog](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта accessPackageCatalog. |
 | [Удаление accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Удаление accessPackageCatalog. |
-| [Список ресурсов accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | [Коллекция accessPackageResource](accesspackageresource.md) | Получить список объектов accessPackageResource в каталоге. |
-| [Список ролей ресурсов accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Коллекция accessPackageResourceRole](accesspackageresourcerole.md) | Получить список объектов accessPackageResourceRole для ресурсов в каталоге. |
+| [Ресурсы accessPackageCatalog списка](../api/accesspackagecatalog-list-accesspackageresources.md) | [коллекция accessPackageResource](accesspackageresource.md) | Извлечение списка объектов accessPackageResource в каталоге. |
+| [Роли ресурсов accessPackageCatalog в списке](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [коллекция accessPackageResourceRole](accesspackageresourcerole.md) | Извлечение списка объектов accessPackageResourceRole для ресурсов в каталоге. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |catalogStatus|String|Имеет `Published` значение, если пакеты доступа доступны для управления.|
-|catalogType|String|Один из `UserManaged` или `ServiceDefault` . |
-|createdBy|String|Имя пользователя, создавшего этот ресурс. Только для чтения.|
+|catalogType|String|Один `UserManaged` из или `ServiceDefault` . |
+|createdBy|String|UPN пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |description|String|Описание каталога пакетов доступа.|
-|displayName|String|Отображаемого имени каталога пакетов доступа.|
+|displayName|String|Отображение имени каталога пакетов доступа.|
 |id|String| Только для чтения.|
-|isExternallyVisible|Boolean|Могут ли пользователи за пределами клиента запрашивать пакеты доступа в этом каталоге.|
-|modifiedBy|String|Имя пользователя, который последним изменил этот ресурс. Только для чтения.|
+|isExternallyVisible|Boolean|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
+|modifiedBy|String|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 
 
@@ -53,8 +53,8 @@ ms.locfileid: "50158634"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|accessPackages|[Коллекция accessPackage](accesspackage.md)| Пакеты доступа в этом каталоге. Только для чтения. Допускается значение null.|
-|accessPackageResources|[Коллекция accessPackageResource](accesspackageresource.md)| Только для чтения. Допускается значение null.|
+|accessPackages|[коллекция accessPackage](accesspackage.md)| Пакеты доступа в этом каталоге. Только для чтения. Допускается значение null.|
+|accessPackageResources|[коллекция accessPackageResource](accesspackageresource.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

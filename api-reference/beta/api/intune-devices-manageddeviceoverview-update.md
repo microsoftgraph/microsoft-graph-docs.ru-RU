@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 568cbdff57bc304b5757af6f35aed04e6195130c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 811f36570e58dffa921190557a45f5459b487ca6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155092"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441552"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "50155092"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
@@ -59,8 +59,8 @@ PATCH /deviceManagement/managedDeviceOverview
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Общие сведения об операционной системе устройства.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Распределение состояния доступа к Exchange в Intune.|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Модели и производство в учетной записи для управляемых устройств|
-|lastModifiedDateTime|DateTimeOffset|Обзор даты последнего изменения устройства|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Модели и производство meatadata для управляемых устройств в учетной записи|
+|lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты обзора устройства|
 
 
 
@@ -74,7 +74,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1222
+Content-length: 1245
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -96,7 +96,8 @@ Content-length: 1222
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
-    "aospUserAssociatedCount": 7
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -123,7 +124,7 @@ Content-length: 1222
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1335
+Content-Length: 1358
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -146,7 +147,8 @@ Content-Length: 1335
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
-    "aospUserAssociatedCount": 7
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

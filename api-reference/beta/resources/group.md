@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: ff8c3a7cb78479ff8a49be89c25f1013140a7dbd
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 8e30a69fb2345c2269286302f18d5d19776ea5aa
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177251"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443050"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -175,6 +175,7 @@ ms.locfileid: "50177251"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |acceptedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым разрешено создавать записи или события календаря в этой группе. Если этот список не пуст, то добавлять записи разрешено только перечисленным в нем пользователям и группам.|
+|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Представляет роли группе, предоставленные пользователю для приложения. |
 |calendar|[calendar](calendar.md)|Календарь группы. Только для чтения.|
 |calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения.|
 |conversations|Коллекция [conversation](conversation.md)|Беседы группы.|

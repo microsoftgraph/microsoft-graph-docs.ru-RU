@@ -1,24 +1,24 @@
 ---
-title: Удаление Токенлифетимеполици
-description: Удаление Токенлифетимеполици.
+title: Удаление tokenLifetimePolicy
+description: Удаление tokenLifetimePolicy.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a7746b8790e9c50735bcf6307b3bb3f520989aa1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d73fd917d7fa503857cf7592c2c95925166b133b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980264"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443393"
 ---
-# <a name="delete-tokenlifetimepolicy"></a>Удаление Токенлифетимеполици
+# <a name="delete-tokenlifetimepolicy"></a>Удаление tokenLifetimePolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) .
+Удаление [объекта tokenLifetimePolicy.](../resources/tokenlifetimepolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48980264"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,9 +42,9 @@ DELETE /policies/tokenLifetimePolicies/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

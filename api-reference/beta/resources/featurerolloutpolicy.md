@@ -1,74 +1,74 @@
 ---
-title: Тип ресурса featureRolloutPolicy
-description: Представляет политику выката функций, связанную с объектом каталога.
+title: тип ресурса featureRolloutPolicy
+description: Представляет политику выкатки функций, связанную с объектом каталога.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fa572cf9140a00d28b9db9d0e6a8e58fe6bb8969
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 8c223f377941f0a897810de20aadeb4b86804d9f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161672"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443118"
 ---
-# <a name="featurerolloutpolicy-resource-type"></a>Тип ресурса featureRolloutPolicy
+# <a name="featurerolloutpolicy-resource-type"></a>тип ресурса featureRolloutPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику выката функций, связанную с объектом каталога. Создание политики внедрения компонентов помогает администраторам клиентов пилотным функциям Azure AD с определенной группой перед включением функций для всей организации. Это минимизирует влияние и помогает администраторам постепенно тестировать и тестировать связанные функции проверки подлинности.
+Представляет политику выкатки функций, связанную с объектом каталога. Создание политики внедрения компонентов помогает администраторам клиентов пилотным функциям Azure AD с определенной группой, прежде чем включать функции для всей организации. Это минимизирует влияние и помогает администраторам постепенно тестировать и выкатывать связанные функции проверки подлинности.
 
-Ниже данная возможность может быть ограниченной.
+Ниже представлены ограничения для выкатки функций:
 
 - Каждая функция поддерживает не более 10 групп.
 - Поле **appliesTo** поддерживает только группы.
-- Динамические и вложенные группы не поддерживаются.
+- Динамические группы и вложенные группы не поддерживаются.
 
-Ниже представлены предварительные требования для каждой функции, которая в настоящее время используется для применения этой политики.
+Ниже представлены предварительные требования для каждой из функций, которые в настоящее время подаваются в суд для выкатки с помощью этой политики выкатки.
 
-### <a name="passthrough-authentication"></a>Passthrough Authentication
+### <a name="passthrough-authentication"></a>Проверка подлинности через проход
 
-* Определите сервер под управлением Windows Server 2012 R2 или более поздней версии, на котором должен работать агент [PassthroughAuthentication.](/azure/active-directory/hybrid/how-to-connect-pta)Убедитесь, что сервер присоединяется к домену, может проверить подлинность выбранных пользователей с помощью Active Directory и взаимодействовать с Azure AD через исходящие порты и URL-адреса.
-* [Загрузите](https://aka.ms/getauthagent) & установить агент проверки подлинности Microsoft Azure AD Connect на сервере.
-* Чтобы обеспечить высокую доступность, установите дополнительные агенты проверки подлинности на другие серверы, как [описано здесь.](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
-* Убедитесь, что вы правильно настроили параметры [интеллектуальной](/azure/active-directory/authentication/howto-password-smart-lockout) блокировки. Это необходимо для того, чтобы учетные записи пользователей в локальной службе Active Directory не блокировали плохо активные субъекты.
+* Определите сервер с Windows Server 2012 R2 или более поздней версии, на котором необходимо запустить агент [PassthroughAuthentication.](/azure/active-directory/hybrid/how-to-connect-pta)Убедитесь, что сервер соединен с доменом, может проверить подлинность выбранных пользователей с помощью Active Directory и взаимодействовать с Azure AD в исходящие порты и URL-адреса.
+* [Скачайте](https://aka.ms/getauthagent) & установите агент проверки подлинности Microsoft Azure AD Connect на сервере.
+* Чтобы обеспечить высокую доступность, установите дополнительные агенты проверки подлинности на других серверах, как описано [здесь.](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
+* Убедитесь, что вы правильно настроили параметры [smart lockout.](/azure/active-directory/authentication/howto-password-smart-lockout) Это необходимо для обеспечения того, чтобы учетные записи активных каталогов пользователей не блокировалися плохими субъектами.
 
 ### <a name="seamlesssso"></a>SeamlessSso
 
-* В этом режиме в лесах AD в соответствии с этими [инструкциями](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) включается [seamlessSso.](/azure/active-directory/hybrid/how-to-connect-sso)
+* Включить [SeamlessSso](/azure/active-directory/hybrid/how-to-connect-sso) для лесов AD на основе [этих](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) инструкций.
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-* Включении [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)со страницы "Необязательные   функции" в Azure AD Connect.
+* Включении [PasswordHashSync со](/azure/active-directory/hybrid/whatis-phs)   страницы "Необязательные функции" в Azure AD Connect.
 
 ### <a name="emailasalternateid"></a>EmailAsAlternateId
 
-* Связывать альтернативную электронную почту с учетными записями пользователей.
+* Связывать альтернативные сообщения электронной почты с учетными записями пользователей.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                                         | Возвращаемый тип                                     | Описание                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
-| [Список featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Получить список объектов featureRolloutPolicy.                          |
+| [Функция ListRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Извлечение списка объектов featureRolloutPolicy.                          |
 | [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Извлечение свойств и связей объекта featurerolloutpolicy. |
-| [Создание featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Создание объекта featureRolloutPolicy.                                 |
-| [Обновление featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Обновление свойств объекта featurerolloutpolicy.                     |
+| [Создание featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Создайте новый объект featureRolloutPolicy.                                 |
+| [Обновление функцииRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Обновление свойств объекта featurerolloutpolicy.                     |
 | [Удаление featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | Нет                                            | Удаление объекта featureRolloutPolicy.                                     |
-| [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Назначьте directoryObject для выдаваемой функции.                              |
-| [Remove appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Нет                                            | Удаление directoryObject из проектов функций.                            |
+| [Назначение appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Назначение каталогаОбект для выкатки функций.                              |
+| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Нет                                            | Удалите directoryObject из выкатки функций.                            |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание этой политики выката функций.|
-|displayName|String|Отображаемого имени для этой политики выката функций.|
-|feature|stagedFeatureName| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
+|description|String|Описание этой политики выкатки функций.|
+|displayName|String|Имя отображения для этой политики выкатки функций.|
+|функция|stagedFeatureName| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Только для чтения.|
-|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику для всей организации.|
-|isEnabled|Boolean|Указывает, включен ли выкат функции.|
+|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ## <a name="relationships"></a>Связи
 

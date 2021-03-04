@@ -1,26 +1,26 @@
 ---
-title: Получение Девицеманажементконфигуратионкатегори
-description: Чтение свойств и связей объекта Девицеманажементконфигуратионкатегори.
+title: Get deviceManagementConfigurationCategory
+description: Чтение свойств и связей объекта deviceManagementConfigurationCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ccea73766e40bce27a6b0d688e7f9ae6a7e98f9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d7b76ca23b5a89d2f8d33ebcbfd39ff3948012e6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242155"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441601"
 ---
-# <a name="get-devicemanagementconfigurationcategory"></a>Получение Девицеманажементконфигуратионкатегори
+# <a name="get-devicemanagementconfigurationcategory"></a>Get deviceManagementConfigurationCategory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [девицеманажементконфигуратионкатегори](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) .
+Чтение свойств и связей [объекта deviceManagementConfigurationCategory.](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /deviceManagement/configurationCategories/{deviceManagementConfigurationCate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементконфигуратионкатегори](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{d
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 352
+Content-Length: 561
 
 {
   "value": {
@@ -79,7 +79,13 @@ Content-Length: 352
     "name": "Name value",
     "displayName": "Display Name value",
     "platforms": "macOS",
-    "technologies": "mdm"
+    "technologies": "mdm",
+    "settingUsage": "configuration",
+    "parentCategoryId": "Parent Category Id value",
+    "rootCategoryId": "Root Category Id value",
+    "childCategoryIds": [
+      "Child Category Ids value"
+    ]
   }
 }
 ```

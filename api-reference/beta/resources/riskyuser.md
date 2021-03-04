@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Рискюсер
-description: Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
+title: тип ресурса riskyUser
+description: Представляет пользователей Azure AD, которые находятся в опасности. Azure AD непрерывно оценивает риски пользователей на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям в Azure AD.
 author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f97da36c0a3a4c1d20e586293ae3ef5efcd0cdc4
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 9a234bc4c84ed6acc569f98c8c9b5d475a5b56be
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601078"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442861"
 ---
-# <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
+# <a name="riskyuser-resource-type"></a>тип ресурса riskyUser
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
+Представляет пользователей Azure AD, которые находятся в опасности. Azure AD непрерывно оценивает риски пользователей на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям в Azure AD.
 
-Для получения дополнительных сведений о событиях риска обратитесь к разделу [Защита удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection).
+Дополнительные сведения о событиях с рисками см. в [видеоролике Azure Active Directory Identity Protection.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -28,25 +28,25 @@ ms.locfileid: "48601078"
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Список riskyUsers](../api/riskyusers-list.md) | Коллекция [рискюсер](riskyuser.md)|Список рискованных пользователей и их свойств.|
-|[Получение Рискюсер](../api/riskyusers-get.md) | [рискюсер](riskyuser.md)|Получение определенного опасного пользователя и его свойств.|
-|[Журнал списка](../api/riskyuser-list-history.md) | Коллекция [рискюсерхисторитем](riskyuserhistoryitem.md)|Получение журнала рисков пользователя Azure AD.|
-|[Подтверждение riskyUsers скомпрометированных атак](../api/riskyusers-confirmcompromised.md)|Нет |Подтвердите опасного пользователя в качестве скомпрометированного.|
-|[Отклонить riskyUsers](../api/riskyusers-dismiss.md)|Нет | Отклонить риск опасного пользователя.|
+|[Список riskyUsers](../api/riskyusers-list.md) | [коллекция riskyUser](riskyuser.md)|Список рискованных пользователей и их свойств.|
+|[Get riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Получите определенного рискованного пользователя и его свойства.|
+|[История списка](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Получите историю рисков пользователя Azure AD.|
+|[Подтверждение скомпрометации riskyUsers](../api/riskyusers-confirmcompromised.md)|Нет |Подтвердит риск пользователя как скомпрометированного.|
+|[Увольнение riskyUsers](../api/riskyusers-dismiss.md)|Нет | Отклонять риск рискованного пользователя.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|`id`|`string`|Уникальный идентификатор пользователя под угрозой.|
+|`id`|`string`|Уникальный ID пользователя в опасности.|
 |`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true`, `false`.|
-|`isProcessing`|`bool`|Указывает, обрабатывается ли небезопасным состояние пользователя в серверной части.|
+|`isProcessing`|`bool`|Указывает, обрабатывается ли приложением рискованное состояние пользователя.|
 |`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованного пользователя|
-|`riskLevel`|`riskLevel`| Возможные значения: "минимум", "средний", "высокий", "скрытый", "нет", unknownFutureValue.  |
-|`riskState`|`riskState`| Возможные значения: None, Конфирмедсафе, remediateо, Атриск, unknownFutureValue.  |
-|`riskDetail`|`riskDetail`| Возможные значения: None, Админженератедтемпорарипассворд, Усерперформедсекуредпассвордчанже, Усерперформедсекуредпассвордресет, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
-|`userDisplayName`|`string`|Опасное отображаемое имя пользователя.|
-|`userPrincipalName`|`string`|Опасное имя участника пользователя.|
+|`riskLevel`|`riskLevel`| Возможные значения : низкие, средние, высокие, скрытые, неизвестные.  |
+|`riskState`|`riskState`| Возможные значения не являются никакими, подтвержденнымиSafe, исправленными, atRisk, unknownFutureValue.  |
+|`riskDetail`|`riskDetail`| Возможные значения не являются никакими, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
+|`userDisplayName`|`string`|Рискованное имя отображения пользователя.|
+|`userPrincipalName`|`string`|Рискованное основное имя пользователя.|
 
 ## <a name="relationships"></a>Связи
 

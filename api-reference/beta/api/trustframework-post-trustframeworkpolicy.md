@@ -1,24 +1,24 @@
 ---
-title: Создание Трустфрамеворкполици
-description: Эта операция создает новый объект Трустфрамеворкполици в клиенте Azure AD B2C.
+title: Создание trustFrameworkPolicy
+description: Эта операция создает новый объект trustFrameworkPolicy в клиенте Azure AD B2C.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7975d6834b162a4ced71ced6886faa8cee797159
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9027c578acecbf5e78f52dfcd0026721330a6f4b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027365"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443295"
 ---
-# <a name="create-trustframeworkpolicy"></a>Создание Трустфрамеворкполици
+# <a name="create-trustframeworkpolicy"></a>Создание trustFrameworkPolicy
 
 Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Создание нового объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) .
+Создание нового [объекта trustFrameworkPolicy.](../resources/trustframeworkpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48027365"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Policy.ReadWrite.TrustFramework|
+|Приложение|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -44,19 +44,19 @@ POST /trustFramework/policies
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|Application/XML. Обязательно.|
+|Content-Type|application/xml. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . Необходимый тип контента — `application/xml`.
+В теле запроса укажи XML-представление [объекта trustFrameworkPolicy.](../resources/trustframeworkpolicy.md) Необходимый тип контента — `application/xml`.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект trustFrameworkPolicy](../resources/trustframeworkpolicy.md) в тексте ответа. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 
-В следующем примере создается объект **трустфрамеворкполици**.
+В следующем примере **создается trustFrameworkPolicy**.
 
 ##### <a name="request"></a>Запрос
 

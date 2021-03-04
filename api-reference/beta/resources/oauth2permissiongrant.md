@@ -1,53 +1,53 @@
 ---
-title: Тип ресурса oAuth2PermissionGrant
-description: Представляет делегированные разрешения (области OAuth 2,0), которые были предоставлены приложению, часто в результате процесса согласия пользователя или администратора.
+title: тип ресурса oAuth2PermissionGrant
+description: Представляет делегированную разрешения (области OAuth 2.0), которые были предоставлены приложению, часто в результате процесса согласия пользователя или администратора.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 32a3acf998b9be8c5a7001ea83a50f177c332933
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 944a96858bea7a1e46ea1f59ef6b67092e4b06a6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026567"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442936"
 ---
-# <a name="oauth2permissiongrant-resource-type"></a>Тип ресурса oAuth2PermissionGrant
+# <a name="oauth2permissiongrant-resource-type"></a>тип ресурса oAuth2PermissionGrant
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет делегированные разрешения, которые были предоставлены участнику службы приложения.
+Представляет делегированную лицензию, выданную директору службы приложения.
 
-Предоставленные делегированные разрешения могут быть созданы в результате того, что пользователь отправил запрос на доступ к API или создал его напрямую.
+Гранты на делегирование разрешений могут создаваться в результате согласия пользователя на запрос приложения на доступ к API или непосредственного создания.
 
-Делегированные разрешения иногда называются "областями" OAuth 2,0 "или" Scopes ".
+Делегирование разрешений иногда называется "области OAuth 2.0" или "scopes".
 
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-| [Список oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md) | Получение списка предоставленных делегированных разрешений. |
-| [Получение oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)  | Считывание разрешения с одним делегированным делегированием.|
-| [Создание oAuth2PermissionGrant](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Создайте делегированное предоставление разрешений. |
+| [Список oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md) | Получение списка делегирования разрешений. |
+| [Получить oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)  | Ознакомьтесь с одним делегированным разрешением.|
+| [Создание oAuth2PermissionGrant](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Создание делегированного разрешения. |
 | [Обновление oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | Нет | Обновление объекта oAuth2PermissionGrant. |
-| [Удаление oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Нет  | Удаление делегированного предоставления разрешений. |
+| [Удаление oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Нет  | Удаление делегированного разрешения. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| id | String | Уникальный идентификатор для **oAuth2PermissionGrant**. Только для чтения.|
-| clientId | String | **Идентификатор** [субъекта-службы](serviceprincipal.md) клиента для приложения, которому разрешено работать от имени вошедшего пользователя при доступе к API. Обязательный. Поддерживается `$filter` ( `eq` только). |
-| консенттипе | String | Указывает, предоставляется ли авторизация клиентскому приложению для олицетворения всех пользователей или только определенного пользователя. *АллпринЦипалс* указывает авторизацию для олицетворения всех пользователей. *Субъект* указывает на авторизацию для олицетворения определенного пользователя. Согласие от имени всех пользователей может быть предоставлено администратором. Пользователи, не являющиеся администраторами, могут быть авторизованы для разрешения от чужого имени в некоторых случаях для некоторых делегированных разрешений. Обязательный. Поддерживается `$filter` ( `eq` только). |
-| principalId | String | **Идентификатор** [пользователя](user.md) , от имени которого клиент имеет право доступа к ресурсу, когда **консенттипе** является *субъектом*. Если **консенттипе** — *аллпринЦипалс* , это значение равно null. Является обязательным, если **консенттипе** является *субъектом*. |
-| resourceId | String | **Идентификатор** [субъекта службы](serviceprincipal.md) ресурсов, которому разрешен доступ. Этот параметр определяет API, который клиент может пытаться вызвать от имени пользователя, выполнившего вход в систему. |
-| scope | String | Разделенный пробелами список значений утверждений для делегированных разрешений, которые следует включить в маркеры доступа для приложения ресурсов (API). Например, `openid User.Read GroupMember.Read.All`. Каждое значение утверждения должно быть согласовано с полем **значение** одного из делегированных разрешений, определенных API, указанным в свойстве **публишедпермиссионскопес** [субъекта-службы](serviceprincipal.md)ресурсов. |
-| startTime | DateTimeOffset | В настоящее время значение времени начала игнорируется, но при создании объекта **oAuth2PermissionGrant**необходимо указать значение. Обязательный. |
-| експиритиме | DateTimeOffset | В настоящее время значение конечного времени игнорируется, но при создании **oAuth2PermissionGrant**необходимо указать значение. Обязательный. |
+| id | String | Уникальный идентификатор **для oAuth2PermissionGrant**. Только для чтения.|
+| clientId | String | ID **директора** клиентской службы для приложения, которому разрешено действовать от имени пользователя, входишего в него, при доступе к API. [](serviceprincipal.md) Обязательный. Поддерживает `$filter` (только `eq`). |
+| consentType | String | Указывает, предоставляется ли клиентской приложению авторизация, чтобы выдать себя за всех пользователей или только определенного пользователя. *AllPrincipals* указывает авторизацию, чтобы выдать себя за всех пользователей. *Principal* указывает авторизацию, чтобы выдать себя за конкретного пользователя. Согласие от имени всех пользователей может быть предоставлено администратором. В некоторых случаях для некоторых делегированных разрешений пользователям, не относя правительственным администраторам, может быть разрешено согласие от имени самих себя. Обязательный. Поддерживает `$filter` (только `eq`). |
+| principalId | String | ID **пользователя,** от имени которого клиент уполномочен получать доступ к ресурсу, если **consentType** является [](user.md) *основным.* Если **consentType** *— это AllPrincipals,* это значение является null. Обязательно, когда **consentType** является *основным*. |
+| resourceId | String | ID **главного** ресурса [службы,](serviceprincipal.md) к которому разрешен доступ. При этом определяется API, который клиент уполномочен пытаться вызвать от имени подписанного пользователя. |
+| scope | String | Разделенный пробелом список значений утверждений для делегирования разрешений, которые должны быть включены в маркеры доступа для приложения-ресурса (API). Например, `openid User.Read GroupMember.Read.All`. Каждое значение утверждения  должно совпадать с полем значения одного из делегированных разрешений, определенных API, перечисленным в свойстве **publishedPermissionScopes** директора [службы ресурсов.](serviceprincipal.md) |
+| startTime | DateTimeOffset | В настоящее время значение времени начала игнорируется, но при создании **oAuth2PermissionGrant** требуется значение. Обязательный. |
+| expiryTime | DateTimeOffset | В настоящее время значение конца времени игнорируется, но при создании **oAuth2PermissionGrant** требуется значение. Обязательный. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -57,25 +57,25 @@ ms.locfileid: "48026567"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md) | Получение списка объектов **oauth2PermissionGrant** . |
-|[Получение oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Чтение свойств и связей объекта **oAuth2PermissionGrant** .|
-|[Обновление oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Обновление объекта  **oAuth2PermissionGrant** . |
-|[Удаление oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Нет |Удаление объекта **oAuth2PermissionGrant** . |
-|[Получение дельты](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|Получение только что созданных, обновленных или удаленных объектов **oauth2permissiongrant** без выполнения полного считывания всей коллекции ресурсов.|
+|[Список oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md) | Извлечение списка **объектов oauth2PermissionGrant.** |
+|[Получить oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Ознакомьтесь с свойствами и отношениями объекта **oAuth2PermissionGrant.**|
+|[Обновление oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Обновление **объекта oAuth2PermissionGrant.** |
+|[Удаление oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Нет |Удаление **объекта oAuth2PermissionGrant.** |
+|[Получение дельты](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|Получить вновь созданные, обновленные или удаленные **объекты oauth2permissiongrant** без полного чтения всей коллекции ресурсов.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|clientId|String| Идентификатор субъекта-службы, которому предоставлено согласие на олицетворение пользователя при доступе к ресурсу (представленному свойством resourceId). |
-|консенттипе|String| Указывает, было ли согласие предоставлено администратором (от имени Организации) или отдельным пользователем. Возможные значения: *аллпринЦипалс* или *Principal*. |
-|експиритиме|DateTimeOffset| В настоящее время значение срока действия игнорируется. |
+|clientId|String| ID директора службы дал согласие на олицетворение пользователя при доступе к ресурсу (представлен свойством resourceId). |
+|consentType|String| Указывает, было ли согласие предоставлено администратором (от имени организации) или отдельным лицом. Возможные значения *AllPrincipals или* *Principal*. |
+|expiryTime|DateTimeOffset| В настоящее время значение времени истечения игнорируется. |
 |id|String| Уникальный идентификатор. Только для чтения.|
-|principalId|String| Если Консенттипе — *аллпринЦипалс* , это значение равно null, а согласие применяется ко всем пользователям в Организации. Если Консенттипе является *субъектом*, это свойство указывает идентификатор пользователя, который предоставил согласие и применяется только для этого пользователя. |
-|resourceId|String| Указывает идентификатор субъекта службы ресурсов, которому предоставлен доступ. |
-|scope|String| Указывает значение утверждения [области](/graph/permissions-reference) , которое должно ожидать приложение ресурсов в маркере доступа OAuth 2,0. Например, *User. Read* |
+|principalId|String| Если consentType *— это AllPrincipals,* это значение равно нуль, и это согласие применяется ко всем пользователям в организации. Если consentType является *основным,* то это свойство указывает id пользователя, который предоставил согласие и применяется только для этого пользователя. |
+|resourceId|String| Указывает id директора службы ресурсов, к которому был предоставлен доступ. |
+|scope|String| Указывает значение утверждения [](/graph/permissions-reference) области, которое приложение ресурсов должно ожидать в маркере доступа OAuth 2.0. Например, *User.Read* |
 |startTime|DateTimeOffset| В настоящее время значение времени начала игнорируется. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

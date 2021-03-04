@@ -1,16 +1,16 @@
 ---
 title: Перечисление заданий
-description: Получение списка объектов Привилежедролеассигнмент, связанных с ролью. Каждый объект privilegedRoleAssignment представляет назначение роли пользователю.
+description: Извлечение списка объектов privilegedRoleAssignment, связанных с ролью. Каждый объект privilegedRoleAssignment представляет назначение роли пользователю.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 49222ddc719a3c7b853f0c0af87d9d3a31adfb56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 298742424152f7e483d709b33a6668e61cd866c3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970437"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441335"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -18,11 +18,11 @@ ms.locfileid: "48970437"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [привилежедролеассигнмент](../resources/privilegedroleassignment.md) , связанных с ролью. Каждый [привилежедролеассигнмент](../resources/privilegedroleassignment.md) представляет назначение роли пользователю.
+Извлечение списка [объектов privilegedRoleAssignment,](../resources/privilegedroleassignment.md) связанных с ролью. Каждое [привилегированное назначениеRoleAssignment](../resources/privilegedroleassignment.md) представляет собой назначение роли пользователю.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запрашивающая сторона должна иметь одну из следующих ролей: _привилегированный администратор ролей_ , _глобальный администратор_ , _администратор безопасности_ или _средство чтения безопасности_.
+У запросителя должна быть одна из следующих ролей: _администратор_ привилегированных _ролей,_ глобальный _администратор,_ администратор безопасности или _читатель безопасности._
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -37,7 +37,7 @@ ms.locfileid: "48970437"
 GET /privilegedRoles/{id}/assignments
 ```
 
-Обратите внимание, что ``{id}`` это идентификатор целевой роли.
+Обратите ``{id}`` внимание, что это целевой id роли.
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -46,14 +46,14 @@ GET /privilegedRoles/{id}/assignments
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

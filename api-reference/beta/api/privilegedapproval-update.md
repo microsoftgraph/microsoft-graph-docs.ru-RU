@@ -1,31 +1,31 @@
 ---
-title: Обновление привилежедаппровал
-description: Обновление свойств объекта привилежедаппровал.
+title: Обновление privilegedapproval
+description: Обновление свойств объекта privilegedapproval.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 9f15f7653f7d50c381de39df549f6719fe495179
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 214bd01cd196a9f03facf4d4ca36d155831445f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035192"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441349"
 ---
-# <a name="update-privilegedapproval"></a>Обновление привилежедаппровал
+# <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта привилежедаппровал.
+Обновление свойств объекта privilegedapproval.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -39,26 +39,26 @@ PATCH /privilegedApproval/{id}
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|аппровалдуратион|Длительность||
-|аппровалстате|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|аппровалтипе|String||
-|аппроверреасон|String||
+|approvalDuration|Duration||
+|approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalType|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset||
-|рекуесторреасон|String||
+|requestorReason|String||
 |roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|String||
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `204 No Content` код отклика
+В случае успешной работы этот метод возвращает `204 No Content` код ответа
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

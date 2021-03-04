@@ -3,14 +3,14 @@ title: Обновление tokenlifetimepolicy
 description: Обновление свойств объекта tokenLifetimePolicy.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 356f5c4c5fe7461f4fd21fbe74d18eeee5008552
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 76b26601c1e0d10b4f3fbca16dd833c9be58d8b3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910704"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443389"
 ---
 # <a name="update-tokenlifetimepolicy"></a>Обновление tokenlifetimepolicy
 
@@ -51,10 +51,10 @@ PATCH /policies/tokenLifetimePolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|definition|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики.  Обязательный.|
+|определение|Коллекция строк| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображаемого имени для этой политики. Обязательный.|
-|isOrganizationDefault|Boolean|Если установлено true, активирует эту политику. Для одного типа политики может быть несколько политик, но только одна может быть активирована в качестве организации по умолчанию. Необязательный, значение по умолчанию — false.|
+|displayName|String| Отображение имени для этой политики. Обязательный.|
+|isOrganizationDefault|Boolean|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
 

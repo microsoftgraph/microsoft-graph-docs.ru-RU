@@ -1,16 +1,16 @@
 ---
 title: Перечисление privilegedApproval
-description: Получение списка объектов привилежедаппровал.
+description: Извлечение списка привилегированных объектов.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 176fde8ad184c9f6071255454602f187f2e3e958
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 89d7fee2b8123e6f3e706cf6fd0e5c78d5821396
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970513"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441384"
 ---
 # <a name="list-privilegedapproval"></a>Перечисление privilegedApproval
 
@@ -18,7 +18,7 @@ ms.locfileid: "48970513"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов привилежедаппровал.
+Извлечение списка привилегированных объектов.
 
 Чтобы отфильтровать результаты запроса, используйте стандартные выражения OData ``$filter`` в URI.
 ## <a name="permissions"></a>Разрешения
@@ -27,7 +27,7 @@ ms.locfileid: "48970513"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -44,14 +44,14 @@ GET /privilegedApproval
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию привилегированных `200 OK` [объектовApproval](../resources/privilegedapproval.md) в тексте ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

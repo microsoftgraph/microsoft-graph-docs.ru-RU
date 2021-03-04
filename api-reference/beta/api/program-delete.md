@@ -1,16 +1,16 @@
 ---
 title: Удаление программы
-description: В функции рецензирования Access Azure AD удалите объект Program.
+description: В функции обзоров доступа Azure AD удалите объект программы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 6949a3fd6d925296711c915d7934f3e0855d0f1d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a80b84aa0835fe0c8fa3e21cf1f8da37e851b394
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977906"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440992"
 ---
 # <a name="delete-program"></a>Удаление программы
 
@@ -18,9 +18,9 @@ ms.locfileid: "48977906"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](../resources/accessreviews-root.md) Azure AD удалите объект [Program](../resources/program.md) .
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект](../resources/program.md) программы.
 
-Не удаляйте программу, с которой все еще `programControl` связаны, эти проверки доступа сначала необходимо удалить или удалить из программы, а затем связать с другой программой.  Кроме того, обратите внимание на то, что встроенная программа по умолчанию не может быть удалена.
+Не удаляйте программу, которая по-прежнему связана с ней, эти обзоры доступа сначала должны быть удалены или отвязаны из программы и связаны `programControl` с другой программой.  Кроме того, обратите внимание, что встроенная программа по умолчанию не может быть удалена.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -32,7 +32,7 @@ ms.locfileid: "48977906"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
-Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать программы.
+Подписанный пользователь также должен быть в роли каталога, что позволяет им создавать программу.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ DELETE /programs/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 

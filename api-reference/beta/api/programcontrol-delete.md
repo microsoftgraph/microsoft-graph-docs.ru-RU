@@ -1,24 +1,24 @@
 ---
-title: Удаление Програмконтрол
-description: В функции рецензирования Access Azure AD удалите объект Програмконтрол.  Это отменяет связь с проверкой доступа из программы.
+title: Удаление программыControl
+description: В функции обзоров доступа Azure AD удалите объект programControl.  Это отонка обзора доступа из программы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a6b6d52e7699517555db22dee92a116af1f37c58
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c80aed58daa58cb12d8366761580327450300dfb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969454"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442206"
 ---
-# <a name="delete-programcontrol"></a>Удаление Програмконтрол
+# <a name="delete-programcontrol"></a>Удаление программыControl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](../resources/accessreviews-root.md) Azure AD удалите объект [програмконтрол](../resources/programcontrol.md) .  Это отменяет связь с проверкой доступа из программы.
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект programControl.](../resources/programcontrol.md)  Это отонка обзора доступа из программы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,9 +26,9 @@ ms.locfileid: "48969454"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            | ProgramControl.ReadWrite.All  |
+|Приложение                            | ProgramControl.ReadWrite.All  |
 
-Пользователь, вошедшего в систему, также должен находиться в роли каталога, который разрешает им удалять `programControl` .
+Подписанный пользователь также должен быть в роли каталога, которая позволяет им удалять `programControl` .
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ DELETE /programControls/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 

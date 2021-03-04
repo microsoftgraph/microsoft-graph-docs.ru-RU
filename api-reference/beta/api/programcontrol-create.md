@@ -1,30 +1,30 @@
 ---
-title: Создание Програмконтрол
-description: В средстве проверки доступа Azure AD создайте новый объект Програмконтрол.  При этом будет связана проверка доступа к программе.
+title: Создание programControl
+description: В функции обзоров доступа Azure AD создайте новый объект programControl.  Это связывает обзор доступа с программой.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f5a6fd297422c946b1764626828780a0cb32643f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4d70ea6dacb12b56a4ae14486cb0ed5adcb6850b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967749"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442217"
 ---
-# <a name="create-programcontrol"></a>Создание Програмконтрол
+# <a name="create-programcontrol"></a>Создание programControl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В средстве проверки [доступа](../resources/accessreviews-root.md) Azure AD создайте новый объект [програмконтрол](../resources/programcontrol.md) .  При этом будет связана проверка доступа к программе.
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) создайте новый [объект programControl.](../resources/programcontrol.md)  Это связывает обзор доступа с программой.
 
-Перед выполнением этого запроса вызывающий абонент должен был
+Прежде чем сделать этот запрос, вызываемая должна иметь ранее
 
-- [созданная программа](program-create.md) или [получена программа](program-list.md)со значением, `programId` включаемым в запрос.
-- [создана проверка доступа](accessreview-create.md) или [полученная проверка доступа](accessreview-get.md), для которой значение `controlId` должно быть включено в запрос, а
-- [получен список типов программного управления](programcontroltype-list.md), чтобы `controlTypeId` включить в запрос значение, которое необходимо включить в запрос.
+- [создали программу](program-create.md) или [извлекли программу,](program-list.md)чтобы иметь значение включить `programId` в запрос,
+- [создать обзор доступа](accessreview-create.md) или [получить обзор доступа,](accessreview-get.md)чтобы иметь значение включить в `controlId` запрос, и
+- [извлекли список типов управления программой,](programcontroltype-list.md)чтобы иметь значение включить в `controlTypeId` запрос.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -34,9 +34,9 @@ ms.locfileid: "48967749"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            |  ProgramControl.ReadWrite.All  |
+|Приложение                            |  ProgramControl.ReadWrite.All  |
 
-Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать **програмконтрол**. 
+Подписанный пользователь также должен быть в роли каталога, что позволяет им создавать **программуControl**. 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,24 +48,24 @@ POST /programControls
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [програмконтрол](../resources/programcontrol.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В теле запроса поставляем представление JSON объекта [programControl.](../resources/programcontrol.md)
 
-В следующей таблице приведены свойства, необходимые при создании программного элемента управления.
+В следующей таблице показаны свойства, необходимые при создании управления программой.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | Програмид программы, которая будет являться частью этого элемента управления.                             |
-| `controlId`              |`String`                | ControlId элемента управления, в частности идентификатор проверки доступа.                                                |
-| `controlTypeId`          |`String`                | Програмконтролтипе определяет тип элемента управления программы, например элемент управления, который связывается с проверками гостевого доступа. |
+| `programId`              |`String`                | ProgramId программы этот контроль станет частью.                             |
+| `controlId`              |`String`                | ControlId управления, в частности идентификатор обзора доступа.                                                |
+| `controlTypeId`          |`String`                | ПрограммаControlType определяет тип управления программой , например, контрольную ссылку на отзывы о доступе гостей. |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [програмконтрол](../resources/programcontrol.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201, Created` [объект programControl](../resources/programcontrol.md) в тексте ответа.
 
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В тексте запроса добавьте представление объекта [програмконтрол](../resources/programcontrol.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта programControl.](../resources/programcontrol.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -128,7 +128,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список Програмконтролтипес](../api/programcontroltype-list.md) | Коллекция [програмконтролтипе](../resources/programcontroltype.md)| Список типов элементов управления программы. |
+|[List programControlTypes](../api/programcontroltype-list.md) | [коллекция programControlType](../resources/programcontroltype.md)| Типы управления программами списка. |
 
 
 <!--

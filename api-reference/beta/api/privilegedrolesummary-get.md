@@ -1,16 +1,16 @@
 ---
 title: Получение privilegedRoleSummary
-description: Получение свойств и связей объекта Привилежедролесуммари.
+description: Извлечение свойств и связей объекта privilegedRoleSummary.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 6ef967ce3a60ee09654d41b373dca6388f5f5b64
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 81b0bcdc8cf665e256070162be4550321311ba53
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976145"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442238"
 ---
 # <a name="get-privilegedrolesummary"></a>Получение privilegedRoleSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48976145"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [привилежедролесуммари](../resources/privilegedrolesummary.md) .
+Извлечение свойств и связей объекта [privilegedRoleSummary.](../resources/privilegedrolesummary.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -42,14 +42,14 @@ GET /privilegedRoles/{id}?$expand=summary
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедролесуммари](../resources/privilegedrolesummary.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [privilegedRoleSummary](../resources/privilegedrolesummary.md) в тексте ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

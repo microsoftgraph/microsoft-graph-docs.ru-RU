@@ -1,24 +1,24 @@
 ---
-title: Обновление Трустфрамеворкполици
-description: 'Эта операция обновляет существующий объект Трустфрамеворкполици или, если таковой не существует, создает его. '
+title: Обновление trustFrameworkPolicy
+description: 'Эта операция обновляет существующий объект trustFrameworkPolicy, или если его не существует, она создает его. '
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2305c7dfde39d742ce1694c030f395f59f6fb7bb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027351"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443288"
 ---
-# <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание Трустфрамеворкполици
+# <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание trustFrameworkPolicy
 
 Пространство имен: microsoft.graph
 
 >**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Обновите существующий [трустфрамеворкполици](../resources/trustframeworkpolicy.md) или создайте его, если он не существует.
+Обнови [существующее довериеFrameworkPolicy](../resources/trustframeworkpolicy.md) или создайте его, если оно не существует.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48027351"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Policy.ReadWrite.TrustFramework|
+|Приложение|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -45,24 +45,24 @@ PUT /trustFramework/policies/{id}/$value
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|Application/XML. Обязательно.|
+|Content-Type|application/xml. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . 
+В теле запроса укажи XML-представление [объекта trustFrameworkPolicy.](../resources/trustframeworkpolicy.md) 
 
->**Note:** тип контента должен быть `application/xml` .
+>**Примечание:** тип контента должен быть `application/xml` .
 
 ## <a name="response"></a>Отклик
 
-Ответ будет одним из следующих вариантов:
-- Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) существует, успешный запрос возвращает `200 OK` код отклика.
-- Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) не существует, успешный запрос возвращает `201 Created` код отклика.
+Ответ будет одним из следующих:
+- Если существует [trustFrameworkPolicy,](../resources/trustframeworkpolicy.md) успешный запрос возвращает `200 OK` код ответа.
+- Если [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) не существует, успешный запрос возвращает `201 Created` код ответа.
 - В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как обновить объект **трустфрамеворкполици**.
+В следующем примере **обновляется trustFrameworkPolicy.**
 
 ##### <a name="request"></a>Запрос
 

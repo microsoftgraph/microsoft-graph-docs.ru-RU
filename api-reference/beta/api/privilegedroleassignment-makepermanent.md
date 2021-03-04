@@ -1,18 +1,18 @@
 ---
-title: 'Привилежедролеассигнмент: Макеперманент'
+title: 'privilegedRoleAssignment: makePermanent'
 description: Сделайте назначение роли постоянным.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: e9acf97c13fcba15bf197253ee1aeb521c0a94bf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c457cc3c70e1a3f7cafec9a929c68ed3b7fddcea
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981993"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441202"
 ---
-# <a name="privilegedroleassignment-makepermanent"></a>Привилежедролеассигнмент: Макеперманент
+# <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,9 @@ ms.locfileid: "48981993"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Клиент должен быть зарегистрирован в PIM. В противном случае возвращается сообщение об ошибке HTTP 403 запрещено.
+Клиент должен быть зарегистрирован в PIM. В противном случае будет возвращена ошибка http 403 Forbidden.
 
-Запрашивающая сторона должна иметь _привилегированную роль администратора ролей_ . 
+Запросчику должна быть роль _администратора привилегированных_ ролей. 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,18 +43,18 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|reason|string|Необязательно. Причина для совершения звонка.|
-|тиккетнумбер|string|Необязательно. Регистрационный номер, связанный с этим действием.|
-|тиккетсистем|string|Необязательно. Система билетов.|
+|reason|string|Необязательный параметр. Причина для этого вызова.|
+|ticketNumber|string|Необязательный параметр. Номер билета, связанный с этим действием.|
+|ticketSystem|string|Необязательный параметр. Система билетов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

@@ -1,18 +1,18 @@
 ---
-title: 'Привилежедаппровал: Мирекуестс'
+title: 'privilegedApproval: myRequests'
 description: Получение запросов утверждения запрашивающей стороны.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 595528ef40da9193fadeb53d742bd6ab6aa6008b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c552e49826c28368657af6dd574811288986cb5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970493"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442252"
 ---
-# <a name="privilegedapproval-myrequests"></a>Привилежедаппровал: Мирекуестс
+# <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
 Пространство имен: microsoft.graph
 
@@ -45,9 +45,9 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект privilegedApproval](../resources/privilegedapproval.md) в тексте ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса organizationalBrandingProperties
-description: Содержит сведения о фирменой фирменой марке организации.
+title: тип ресурса organizationalBrandingProperties
+description: Содержит сведения о брендинге организации.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 531e026fa08e13bafc72f0bf361345e7f1d10c0a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: e27966381c5838ac7662b977c5061a46bb660f1c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158333"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442917"
 ---
-# <a name="organizationalbrandingproperties-resource-type"></a>Тип ресурса organizationalBrandingProperties
+# <a name="organizationalbrandingproperties-resource-type"></a>тип ресурса organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Для добавления пользовательской фирменной настройки необходимо использовать выпуски Azure Active Directory Premium 1, Premium 2 или Basic или лицензию на Microsoft 365. Дополнительные сведения о лицензировании и выпусках см. в подписке [на Azure AD Premium.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Выпуски Azure AD Premium и Basic доступны для клиентов в Китае с помощью всемирного экземпляра Azure Active Directory. Выпуски Azure AD Premium и Basic в настоящее время не поддерживаются в службе Azure под управлением 21Vianet в Китае. Дополнительные сведения можно найти на форуме [Azure Active Directory.](https://feedback.azure.com/forums/169401-azure-active-directory/)
+>Чтобы добавить настраиваемый брендинг, необходимо использовать Azure Active Directory Premium 1, Premium 2 или Basic или иметь лицензию Microsoft 365. Дополнительные сведения о лицензировании и выпусках см. в документе [Sign up for Azure AD Premium.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Выпуски Azure AD Premium и Basic доступны для клиентов в Китае с помощью всемирного экземпляра Azure Active Directory. В настоящее время выпуски Azure AD Premium и Basic не поддерживаются в службе Azure, выполняемой 21Vianet в Китае. Дополнительные сведения можно получить с помощью [форума Azure Active Directory.](https://feedback.azure.com/forums/169401-azure-active-directory/)
 
-Содержит сведения о фирменой фирменой марке организации.
+Содержит сведения о брендинге организации.
 
-Организации могут настраивать свои страницы для входов в Azure AD, которые отображаются при входе пользователей в приложения, определенные в клиенте организации, или когда Azure AD идентифицирует клиент пользователя по имени пользователя. Разработчик также может прочитать сведения о фирменой фирменой марке компании и настроить интерфейс приложения, чтобы адаптировать его специально для во выписаного пользователя с использованием фирменой марки компании.
+Организации могут настраивать страницы регистрации Azure AD, которые отображаются при входе пользователей в конкретные приложения своей организации или когда Azure AD идентифицирует клиента пользователя из имени пользователя. Разработчик также может ознакомиться с информацией о брендинге компании и настроить интерфейс приложения, чтобы настроить его специально для пользователя, вписаного в нее, с помощью фирменого бренда.
 
-Компании могут добавлять разные фирменные фирменки на основе региональных региональных ний. Региональные органы служат ключом во всех запросах.
+Компании могут добавлять различные брендинги в зависимости от локального уровня. Locale служит ключом во всех запросах.
 
->**Примечание.** Фирменное название является свойством организации с коллекцией локализации, специфичная для конкретных региональных стандартов. **organizationalBrandingProperties** — это абстрактный класс, который определяет свойства **для organizationalBranding.**
+>**Примечание:** Брендинг выставляется как свойство под организацией с коллекцией локализации, определенной для локального. **organizationalBrandingProperties** — это абстрактный класс, определяющий свойства **для organizationalBranding.**
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создайте фирменую марку организации с помощью объекта organizationalBrandingProperties. |
-| [Получение](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
+| [Создание](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создание организационного брендинга с помощью объекта organizationalBrandingProperties. |
+| [получение](../api/organizationalbrandingproperties-get.md); | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
 | [Обновление](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Обновление объекта organizationalBrandingProperties. |
 | [удаление](../api/organizationalbrandingproperties-delete.md); | Нет | Удаление объекта organizationalBrandingProperties. |
 
@@ -41,12 +41,12 @@ ms.locfileid: "50158333"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |backgroundColor|String| Цвет, который будет отображаться на месте фонового изображения в подключениях с низкой пропускной способностью. Здесь рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal (например, белый #FFFFFF). |
-|backgroundImage|Stream| Изображение, которое отображается в качестве фона страницы для регистрации. .png или JPG не больше 1920x1080 и меньше 300 кб. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страниц более высокой. |
-|bannerLogo|Stream| На странице для регистрации появится баннер с логотипом вашей компании. .png или JPG не больше 36x245px. Мы рекомендуем использовать прозрачное изображение без заполнения логотипа. |
-|id|String| Это ид, наследуемый от microsoft.graph.entity, это языковой стандарт, определяющий стандарт ISO 639 для языка, например английский — "en-us" или "en". В будущем, если функции будут иметь несколько фирменной фирменной марки для одного локали, это можно изменить. Обратите внимание, что ид для default /branding всегда является "und", пока у нас не будет singleton-элементов без ключей. Только для чтения. |
-|signInPageText|String| Текст, который отображается в нижней части окна для регистрации. С его помощью можно сообщить дополнительную информацию, например номер телефона, в службу поддержки или в юридический отчет. Этот текст должен быть Юникод и не должен превышать 1024 символов. |
-|squareLogo|Stream| Квадратная версия логотипа компании. Эта возможность отображается в windows 10 при включаемом (OOBE) режиме и когда Windows Autopilot включен для развертывания. PNG или JPG размером не более 240x240px и размером не более 10 кб. Мы рекомендуем использовать прозрачное изображение без заполнения логотипа. |
-|usernameHintText|String| Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране входов. Этот текст должен быть Юникод без ссылок и кода и не может превышать 64 символа. |
+|backgroundImage|Stream| Изображение, которое отображается в качестве фона знака на странице. .png или .jpg не больше 1920x1080 и меньше 300kb. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страниц более высокой. |
+|bannerLogo|Stream| На странице входного знака отображается баннерная версия логотипа вашей компании. .png или .jpg не больше 36x245px. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
+|id|String| Это id, унаследованный от microsoft.graph.entity, — это локал, указывающий стандарт ISO 639 для языка, например английский — "en-ru" или "ru". Если мы обналичим функциональность с несколькими фирменными марками для одного локального уровня, это можно изменить. Обратите внимание, что id для default/branding всегда является "und" до тех пор, пока у нас нет однотонов без ключей. Только для чтения. |
+|signInPageText|String| Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов. |
+|squareLogo|Stream| Квадратная версия логотипа вашей компании. Это отображается в windows 10 вне окна (OOBE) опытом и когда Windows Автопилот включен для развертывания. .png или .jpg размером не более 240x240px и размером не более 10 кб. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
+|usernameHintText|String| Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов. |
 
 ## <a name="relationships"></a>Связи
 

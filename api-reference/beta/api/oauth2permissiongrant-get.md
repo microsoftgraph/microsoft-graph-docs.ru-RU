@@ -1,18 +1,18 @@
 ---
-title: Получение oAuth2PermissionGrant
-description: Получение свойств и связей одного oAuth2PermissionGrant, представляющих делегированное предоставление разрешений.
+title: Получить oAuth2PermissionGrant
+description: Извлечение свойств и связей одного oAuth2PermissionGrant, представляющего делегированную лицензию.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2a5a48b2a96717a749ca400c47ce56b5b807de80
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4919e2e664ba3af1d3b74c8af9f7f5047c915a16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967574"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442387"
 ---
-# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Получение делегированного разрешения Grant (oAuth2PermissionGrant)
+# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Получить делегированную субсидию разрешений (oAuth2PermissionGrant)
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "48967574"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств одного объекта [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Извлечение свойств одного [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
-**OAuth2PermissionGrant** представляет делегированные разрешения, которые были предоставлены клиентскому приложению для доступа к API от имени пользователя, выполнившего вход в систему.
+**OAuth2PermissionGrant** представляет делегированную разрешений, которые были предоставлены для клиентского приложения для доступа к API от имени подписанного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -52,13 +52,13 @@ GET /oauth2PermissionGrants/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

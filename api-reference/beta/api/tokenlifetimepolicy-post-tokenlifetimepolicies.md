@@ -1,24 +1,24 @@
 ---
-title: Создание Токенлифетимеполици
-description: Создание нового Токенлифетимеполици.
+title: Создание tokenLifetimePolicy
+description: Создайте новый tokenLifetimePolicy.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: be767fa4a9b0ffdcb5fdf3da080c1eee48ae0122
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 763b80954e12eb3b3dccb9d5c4a6b365dd9994e1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971885"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443387"
 ---
-# <a name="create-tokenlifetimepolicy"></a>Создание Токенлифетимеполици
+# <a name="create-tokenlifetimepolicy"></a>Создание tokenLifetimePolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) .
+Создайте новый [объект tokenLifetimePolicy.](../resources/tokenlifetimepolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48971885"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,16 +42,16 @@ POST policies/tokenLifetimePolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта tokenLifetimePolicy.](../resources/tokenlifetimepolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [токенлифетимеполици](../resources/tokenlifetimepolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` новый [объект tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 217b819fe99c463f09311b0a19181ccce803201b
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 797d90c7242b27e7734f5c0f4729e410c3ac3c2a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272193"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442680"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -64,7 +64,7 @@ ms.locfileid: "50272193"
 | [Список объектов contactFolder](../api/user-list-contactfolders.md) | Коллекция [contactFolder](contactfolder.md) | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя. |
 | **Объекты каталога**|||
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
@@ -219,7 +219,7 @@ ms.locfileid: "50272193"
 | preferredLanguage | String | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU". <br><br>Возвращается по умолчанию. |
 | preferredName | String | Предпочитаемое имя пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
 | provisionedPlans | Коллекция [provisionedPlan](provisionedplan.md) | Планы, подготовленные для пользователя. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. Значение null не допускается. |
-| proxyAddresses | Коллекция String | Например: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. Значение null не допускается. Поддерживает `$filter`. |
+| proxyAddresses | Коллекция строк | Например: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. Значение null не допускается. Поддерживает `$filter`. |
 | refreshTokensValidFromDateTime | DateTimeOffset | Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. Сброс можно выполнить с помощью [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md). |
 | responsibilities | Коллекция строк | Список обязанностей пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
 | schools | Коллекция строк | Список учебных заведений, которые посещал пользователь. <br><br>Возвращается только с помощью оператора `$select`. |
@@ -280,6 +280,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |agreementAcceptances|Коллекция [agreementAcceptance](agreementacceptance.md)| Состояния принятия пользователем условий использования. Только для чтения. Допускается значение null.|
+|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Представляет роли приложения, предоставленные пользователю для приложения. |
 |calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
 |calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
 |calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|

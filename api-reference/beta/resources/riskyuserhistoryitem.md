@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Рискюсерхисторитем
-description: Представляет историю риска для пользователей Azure AD
+title: тип ресурса riskyUserHistoryItem
+description: Представляет историю рисков пользователей Azure AD
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f91f07e889a1808696a0bfb7180b51aa06355334
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ae6d5fbc28e8dddb4c782aa9e9b2fad79b347ad
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016172"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442859"
 ---
-# <a name="riskyuserhistoryitem-resource-type"></a>Тип ресурса Рискюсерхисторитем
+# <a name="riskyuserhistoryitem-resource-type"></a>тип ресурса riskyUserHistoryItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Представляет историю риска пользователя Azure AD, определенная службой защиты удостоверений Azure AD. 
+Представляет историю рисков пользователя Azure AD, определяемую службой Azure AD Identity Protection. 
 
 ## <a name="methods"></a>Методы
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Журнал списка](../api/riskyuser-list-history.md) | Коллекция [рискюсерхисторитем](riskyuserhistoryitem.md)|Получение журнала рисков пользователя Azure AD.|
+|[История списка](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Получите историю рисков пользователя Azure AD.|
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип    | Описание |
 |:---------------|:--------|:------------|
-| userId         | строка  | Идентификатор пользователя. |
-| initiatedBy    | логический    | Идентификатор субъекта, который выполняет операцию. |
-| activity       | [рискусерактивити](riskuseractivity.md)| Действие, связанное с изменением уровня риска пользователя. | 
+| userId         | строка  | ID пользователя. |
+| initiatedBy    | bool    | ID субъекта, который делает операцию. |
+| действие       | [riskUserActivity](riskuseractivity.md)| Действие, связанное с изменением уровня риска пользователя. | 
 
 ## <a name="json-representation"></a>Представление JSON
 

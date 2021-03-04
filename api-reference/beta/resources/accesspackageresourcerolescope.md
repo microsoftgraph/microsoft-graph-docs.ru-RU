@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса accessPackageResourceRoleScope
-description: Область роли ресурса пакета доступа — это ссылка как на область в ресурсе, так и на роль в этом ресурсе.
+title: тип ресурса accessPackageResourceRoleScope
+description: Область роли ресурсов пакета доступа — это ссылка как на область в ресурсе, так и на роль в этом ресурсе.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5c1446816f5487a579395f75dba521ba53f136fe
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: f899203fd58174fdb2d7935da3de4105576338d2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272123"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443204"
 ---
-# <a name="accesspackageresourcerolescope-resource-type"></a>Тип ресурса accessPackageResourceRoleScope
+# <a name="accesspackageresourcerolescope-resource-type"></a>тип ресурса accessPackageResourceRoleScope
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)область роли пакета доступа — это ссылка как на область в ресурсе, так и на роль в этом ресурсе для этой области.  Пакет доступа будет иметь доступ к области ролей пакета ресурсов для ресурсов в каталоге, которые имеют отношение к этому пакету доступа.  Когда субъект получает назначение пакета доступа, субъекту будет присвоена роль в этой области каждой области роли ресурса пакета доступа.
+В управлении правами [Azure AD](entitlementmanagement-root.md)область ролей пакета доступа является ссылкой как на область в ресурсе, так и на роль в этом ресурсе для этой области.  Пакет доступа будет иметь области ролей ресурсов пакета доступа для ресурсов в его каталоге, которые имеют отношение к этому пакету доступа.  Когда субъект получает назначение пакета доступа, субъекту будет присвоена роль в этой области для каждого области ролей ресурсов пакета доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Получить список объектов **accessPackageResourceRoleScope** для пакета доступа. |
+| [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Извлечение списка **объектов accessPackageResourceRoleScope** для пакета доступа. |
 | [Создание accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый **объект accessPackageResourceRoleScope** для пакета доступа. |
 
 ## <a name="properties"></a>Свойства

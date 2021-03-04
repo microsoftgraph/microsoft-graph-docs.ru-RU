@@ -1,37 +1,39 @@
 ---
-title: Тип ресурса accessReviewInstance
-description: Представляет повторение `accessReviewScheduleDefinition` .
+title: тип ресурсов accessReviewInstance
+description: Представляет собой повторение `accessReviewScheduleDefinition` .
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0f480b870af2fd4717ff1341a1ab66b73301fc7f
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a0003ab8a79372a4dfefea1a62120ea8e40fa2c1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158536"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443197"
 ---
-# <a name="accessreviewinstance-resource-type"></a>Тип ресурса accessReviewInstance
+# <a name="accessreviewinstance-resource-type"></a>тип ресурсов accessReviewInstance
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет повторение [проверки](accessreviewsv2-root.md) доступа Azure AD. Если родительский [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) является повторяющимся обзором доступа, экземпляры представляют каждое повторение. Повторная проверка будет иметь только один экземпляр. Экземпляры также представляют каждую уникальную группу, проверяемую в определении расписания. Если определение расписания проверяет несколько групп, каждая группа будет иметь уникальный экземпляр для каждого повторения.
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Каждый **accessReviewInstance** содержит список решений, которые могут принять рецензенты. [](accessreviewinstancedecisionitem.md) Существует одно решение для каждого проверяемого удостоверения.
+Представляет повторение проверки доступа Azure [AD.](accessreviewsv2-root.md) Если родительский [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) является повторяемой проверкой доступа, экземпляры представляют каждое повторение. Обзор, который не повторяется, будет иметь точно один экземпляр. Экземпляры также представляют каждую уникальную группу, проверяемую в определении расписания. Если определение расписания проверяет несколько групп, каждая группа будет иметь уникальный экземпляр для каждого повторения.
+
+Каждый **accessReviewInstance содержит** список решений, которые могут приниматься рецензентами. [](accessreviewinstancedecisionitem.md) Существует одно решение для каждого проверяемого удостоверения.
 
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Список accessReviewInstances](../api/accessreviewinstance-list.md) | [Коллекция accessReviewInstance](accessreviewinstance.md) | Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
-|[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Возвращает accessReviewInstance для accessReviewScheduleDefinition. Не включает связанные объекты accessReviewInstanceDecisionItem. |
-|[Список pendingAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [коллекция accessReviewInstance;](accessreviewinstance.md) | Получите все ожидающих ресурсов accessReviewInstance, которые назначены вызываемму пользователю. |
+|[Список accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
+|[Получить accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Возвращает accessReviewInstance для accessReviewScheduleDefinition. Не включает связанный accessReviewInstanceDecisionItem в объекте. |
+|[Список ожидающихAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [accessReviewInstance collection.](accessreviewinstance.md) | Получите все ожидающих accessReviewInstance ресурсы, назначенные вызываемой пользователю. |
 |[Отправка напоминания accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Нет. | Отправьте напоминание рецензентам accessReviewInstance. |
 |[Остановка accessReviewInstance](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите accessReviewInstance. |
-|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендации по принятию решений для каждого notReviewed accessReviewInstanceDecisionItem, в которых он является рецензентом для определенного accessReviewInstance. |
+|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендацию по принятию решений для каждого notReviewed accessReviewInstanceDecisionItem, на которых он является рецензентом для определенного accessReviewInstance. |
 |[Применение решений](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную применить решение для accessReviewInstance. |
 
 
@@ -40,20 +42,20 @@ ms.locfileid: "50158536"
 | Свойство | Тип | Описание |
 | :-------------------------| :---------------------------------- | :---------- |
 | id | String | Уникальный идентификатор экземпляра. |
-| displayName | String | Имя родительского accessReviewScheduleDefinition. |
-| startDateTime | DateTimeOffset | Дата и время, когда запланирован запуск экземпляра проверки. Может быть в будущем. |
-| endDateTime | DateTimeOffset | DateTime, когда планируется завершение экземпляра проверки. |
-| status | string | Указывает состояние accessReview. Типичные состояния: `Initializing` , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` .  Только для чтения.|
-| scope | [accessReviewScope](accessreviewscope.md) | Создается **на основе области** и **экземпляраEnumerationScope** на уровне accessReviewScheduleDefinition. Определяет область пользователей, проверяемую в группе. В случае одногруппной проверки область, определяемая на уровне, применяется `accessReviewScheduleDefinition` ко всем экземплярам. В случае проверки всех групп область действия для каждой группы может быть разной. Только для чтения.  | 
-| decisions | [Коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Каждый пользователь, рассмотренный в accessReviewInstance, имеет элемент решения, представляющий, был ли его доступ утвержден, отклонен или еще не рассмотрен. |
-| definition |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | С каждым экземпляром связан только один accessReviewScheduleDefinition. Это родительское расписание экземпляра, в котором создаются экземпляры для каждого повторения определения проверки и каждой группы, выбранной для проверки определением. |
+| displayName | String | Имя родительского доступаReviewScheduleDefinition. |
+| startDateTime | DateTimeOffset | DateTime при запуске экземпляра проверки. Может быть в будущем. |
+| endDateTime | DateTimeOffset | DateTime, когда экземпляр проверки должен завершиться. |
+| status | string | Указывает состояние accessReview. Типичные состояния `Initializing` включают , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` .  Только для чтения.|
+| scope | [accessReviewScope](accessreviewscope.md) | Создан на **основе области** и **экземпляраEnumerationScope** на уровне accessReviewScheduleDefinition. Определяет область пользователей, рассмотренных в группе. В случае одногруппного обзора область, определяемая на уровне, `accessReviewScheduleDefinition` применяется ко всем экземплярам. В случае проверки всех групп область действия для каждой группы может быть различной. Только для чтения.  | 
+| решения | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Каждый пользователь, рассмотренный в accessReviewInstance, имеет элемент решения, представляющий, был ли его доступ одобрен, отклонен или еще не рассмотрен. |
+| определение |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Существует точно один accessReviewScheduleDefinition, связанный с каждым экземпляром. Это родительское расписание экземпляра, в котором создаются экземпляры для каждого повторения определения обзора и каждой группы, выбранной для проверки по определению. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `definition`               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | С каждым экземпляром связан именно один `accessReviewScheduleDefinition` экземпляр. Это родительское расписание экземпляра, в котором создаются экземпляры для каждого повторения определения проверки и каждой группы, выбранной для проверки определением. |
-| `decisions`               |[Коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md)        | Каждый пользователь, рассмотренный в документе, имеет элемент решения, представляющий, утвержден ли, отклонен или `accessReviewInstance` еще не рассмотрен. |
+| `definition`               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | Существует точно один `accessReviewScheduleDefinition` связанный с каждым экземпляром. Это родительское расписание экземпляра, в котором создаются экземпляры для каждого повторения определения обзора и каждой группы, выбранной для проверки по определению. |
+| `decisions`               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Каждый пользователь, рассмотренный в элементе, имеет элемент решения, представляющий, были ли они утверждены, отклонены `accessReviewInstance` или еще не рассмотрены. |
 
 ## <a name="json-representation"></a>Представление JSON
 

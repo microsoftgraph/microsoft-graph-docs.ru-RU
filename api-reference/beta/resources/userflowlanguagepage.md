@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса userFlowLanguagePage
-description: Используемые страницы языка пользовательского потока определяют, какие строки пользователи будут показывать во время пользовательского пути, настроенного с помощью пользовательских потоков.
+title: тип ресурса userFlowLanguagePage
+description: Используются языковые страницы потока пользователей, которые определяют, какие строки будут показаны пользователям во время пользовательского путешествия, настроенного с помощью пользовательских потоков.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 25fb1c94db9443ed67a0555d09f3859e666bed19
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c76d746aabab06fcc68ffcead238aaf2cc6ddb41
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155470"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442717"
 ---
-# <a name="userflowlanguagepage-resource-type"></a>Тип ресурса userFlowLanguagePage
+# <a name="userflowlanguagepage-resource-type"></a>тип ресурса userFlowLanguagePage
 
 Пространство имен: microsoft.graph
 
-Используемые страницы языка пользовательского потока определяют, какие строки пользователи будут показывать во время пользовательского пути, настроенного с помощью пользовательских потоков. Эти языковые страницы включают как переводы языка по умолчанию, предоставляемые корпорацией Майкрософт, так и настраиваемые страницы, которые можно создать для настройки перевода языков.
+Используются языковые страницы потока пользователей, которые определяют, какие строки будут показаны пользователям во время пользовательского путешествия, настроенного с помощью пользовательских потоков. Эти языковые страницы включают как языковые переводы по умолчанию, предоставляемые Корпорацией Майкрософт, так и настраиваемые страницы, которые можно создать для настройки языковых переводов.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get userFlowLanguagePage](../api/userflowlanguagepage-get.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Извлечение значений объекта [userFlowLanguagePage](../resources/userflowlanguagepage.md) по умолчанию или пользовательского объекта.|
+|[Get userFlowLanguagePage](../api/userflowlanguagepage-get.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Извлечение значений объекта по умолчанию или [пользовательского пользователяFlowLanguagePage.](../resources/userflowlanguagepage.md)|
 |[Обновление userFlowLanguagePage](../api/userflowlanguagepage-put.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Обновление значений в настраиваемом [объекте userFlowLanguagePage.](../resources/userflowlanguagepage.md)|
 |[Удаление userFlowLanguagePage](../api/userflowlanguagepage-delete.md)|Нет|Удаляет значения из пользовательского [объекта userFlowLanguagePage.](../resources/userflowlanguagepage.md)|
 

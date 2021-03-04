@@ -1,24 +1,24 @@
 ---
-title: 'Привилежедролеассигнмент: My'
-description: Получение привилегированных назначений ролей запрашивающей стороны.
+title: 'privilegedRoleAssignment: моя'
+description: Получите привилегированные назначения ролей запросителя.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: d837972a8f44112f6aa154592901a03707b17780
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71d683092ead996daff5cb86eba8ca02abe80192
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981980"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441195"
 ---
-# <a name="privilegedroleassignment-my"></a>Привилежедролеассигнмент: My
+# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: моя
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение привилегированных назначений ролей запрашивающей стороны.
+Получите привилегированные назначения ролей запросителя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,12 +39,12 @@ GET /privilegedRoleAssignments/my
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и объект коллекции `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

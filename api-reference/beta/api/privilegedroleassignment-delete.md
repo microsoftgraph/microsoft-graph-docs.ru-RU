@@ -1,16 +1,16 @@
 ---
 title: Удаление privilegedRoleAssignment
-description: Удаление Привилежедролеассигнмент.
+description: Удаление privilegedRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 3f2b370f19da665ed70197c5f59e40807d259350
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0481108a141d41b62689de12cfaef882756fef9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970367"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441279"
 ---
 # <a name="delete-privilegedroleassignment"></a>Удаление privilegedRoleAssignment
 
@@ -18,11 +18,11 @@ ms.locfileid: "48970367"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [привилежедролеассигнмент](../resources/privilegedroleassignment.md).
+Удаление [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запрашивающая сторона должна иметь _привилегированную роль администратора ролей_ .
+Запросчику должна быть роль _администратора привилегированных_ ролей.
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -37,21 +37,21 @@ ms.locfileid: "48970367"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-Обратите внимание, что ``{id}`` используется формат "userId_roleId", где UserID — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.
+Обратите внимание, что в формате "userId_roleId", где userId — это строка GUID для пользовательского id Azure AD, а roleId — это строка GUID для id роли администратора ``{id}`` Azure.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

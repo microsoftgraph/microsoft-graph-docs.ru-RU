@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Битлоккеррековерикэй
+title: тип ресурса bitlockerRecoveryKey
 description: Ресурс ключа восстановления BitLocker
 author: hafowler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 038feb77f7ca57d426a44c04b3d9c93ae29e5aa4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 466a5d907b3deb589ec1b70351903e24aba0ab32
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082074"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443155"
 ---
-# <a name="bitlockerrecoverykey-resource-type"></a>Тип ресурса Битлоккеррековерикэй
+# <a name="bitlockerrecoverykey-resource-type"></a>тип ресурса bitlockerRecoveryKey
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сохраненный ключ BitLocker, который содержит фактический ключ восстановления с помощью **ключевого** свойства.
+Представляет сохраненный ключ BitLocker, содержащий фактический ключ восстановления с помощью **свойства ключа.**
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список Рековерикэйс](../api/bitlocker-list-recoverykeys.md)|Коллекция [битлоккеррековерикэй](../resources/bitlockerrecoverykey.md)|Получение списка объектов [битлоккеррековерикэй](../resources/bitlockerrecoverykey.md) и их свойств.|
-|[Получение Битлоккеррековерикэй](../api/bitlockerrecoverykey-get.md)|[битлоккеррековерикэй](../resources/bitlockerrecoverykey.md)|Получение свойств и связей объекта [битлоккеррековерикэй](../resources/bitlockerrecoverykey.md) . Note: свойство **Key** не возвращается по умолчанию.|
+|[Список recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Получите список объектов [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) и их свойств.|
+|[Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Извлечение свойств и связей [объекта bitlockerRecoveryKey.](../resources/bitlockerrecoverykey.md) Примечание. **Свойство ключа** не возвращается по умолчанию.|
 
-> **Note**: только некоторые роли имеют разрешения на вызов этих API.
+> **Примечание.** Только некоторые роли имеют разрешения на вызов этих API.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Дата и время первоначального резервного копирования ключа в Azure Active Directory.|
-|deviceId|String|ИДЕНТИФИКАТОР устройства, с которого создана резервная копия ключа BitLocker.|
-|id|Строка|Уникальный идентификатор для ключа BitLocker.|
-|ключа|Строка|Ключ восстановления BitLocker.|
-|волуметипе|волуметипе|Указывает тип тома, с которым связан ключ BitLocker. Возможные значения: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|Дата и время, когда клавиша изначально была отсвеяна в Azure Active Directory.|
+|deviceId|String|ID устройства с ключом BitLocker изначально отсвеяли.|
+|id|String|Уникальный идентификатор для ключа BitLocker.|
+|ключа|String|Ключ восстановления BitLocker.|
+|volumeType|volumeType|Указывает тип тома, с чем связан ключ BitLocker. Возможные значения: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

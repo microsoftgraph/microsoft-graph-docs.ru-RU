@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса identityApiConnector
+title: тип ресурса identityApiConnector
 description: Представляет соединители API в клиенте Azure Active Directory.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: e5b3c10e6a03c4868e010f8f62f0f073ce37ca61
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a267fdb60dfcbcbbadfe75c65d49137f46425434
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161651"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443029"
 ---
-# <a name="identityapiconnector-resource-type"></a>Тип ресурса identityApiConnector
+# <a name="identityapiconnector-resource-type"></a>тип ресурса identityApiConnector
 
 Пространство имен: microsoft.graph
 
@@ -20,28 +20,28 @@ ms.locfileid: "50161651"
 
 Представляет соединители API в клиентах Azure Active Directory (Azure AD) и Azure AD B2C.
 
-Соединитель API, используемый при самостоятельной регистрации внешних удостоверений Azure AD и потоках регистрации пользователей Azure AD B2C, позволяет вызывать API во время выполнения пользовательского потока. Соединителение API предоставляет сведения, необходимые для вызова API, включая URL-адрес конечной точки и проверку подлинности. Соединители API можно использовать на определенном этапе пользовательского потока, чтобы повлиять на выполнение пользовательского потока. Например, ответ API может блокировать регистрацию пользователя, показывать ошибку проверки ввода или переописывать собранные пользователем атрибуты.
+Соединитель API, используемый в вашей самообслуживке Azure AD External Identities и потоках пользователей для регистрации Azure AD B2C, позволяет вызывать API во время выполнения потока пользователей. Соединителя API предоставляет сведения, необходимые для вызова API, включая URL-адрес конечной точки и проверку подлинности. Соединители API можно использовать на определенном шаге в потоке пользователей, чтобы повлиять на выполнение потока пользователей. Например, ответ API может заблокировать регистрацию пользователя, показать ошибку проверки ввода или переписать собранные атрибуты пользователя.
 
-Используйте API [b2xIdentityUserFlow](b2xidentityuserflow.md) для использования соединителю API из пользовательского потока самостоятельной регистрации внешних удостоверений.
+Используйте [API b2xIdentityUserFlow](b2xidentityuserflow.md) для использования соединителю API из потока пользователей самообслуживания внешних удостоверений.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список](../api/identityapiconnector-list.md)|[Коллекция identityApiConnector](identityapiconnector.md)| Получить список соединителов API|
-|[Создание](../api/identityapiconnector-create.md)|[identityApiConnector](identityapiconnector.md)|Создайте соединители API. |
-|[Получение](../api/identityapiconnector-get.md)|[identityApiConnector](identityapiconnector.md)|Чтение свойств объекта [identityApiConnector.](../resources/identityapiconnector.md)|
-|[Обновление](../api/identityapiconnector-update.md)|[identityApiConnector](identityapiconnector.md)|Обновление свойств соединители API.|
-|[удаление](../api/identityapiconnector-delete.md);|Нет|Удаление соединители API.|
+|[Список](../api/identityapiconnector-list.md)|[коллекция identityApiConnector](identityapiconnector.md)| Получить список соединителов API|
+|[Создание](../api/identityapiconnector-create.md)|[identityApiConnector](identityapiconnector.md)|Создание нового соединитетеля API. |
+|[получение](../api/identityapiconnector-get.md);|[identityApiConnector](identityapiconnector.md)|Ознакомьтесь с свойствами [объекта identityApiConnector.](../resources/identityapiconnector.md)|
+|[Обновление](../api/identityapiconnector-update.md)|[identityApiConnector](identityapiconnector.md)|Обновление свойств соединиттеля API.|
+|[удаление](../api/identityapiconnector-delete.md);|Нет|Удаление соединитетеля API.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Случайным образом созданный ИД соединителю API. |
-|displayName|String| Имя соединители API. |
+|id|String|Случайно созданный ID соединиттеля API. |
+|displayName|String| Имя соединитетеля API. |
 |targetUrl|String| URL-адрес конечной точки API для вызова. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, который описывает сведения о конфигурации проверки подлинности для вызова API. В [настоящее время поддерживается](basicauthentication.md) только базовая проверка подлинности.|
+|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. В [настоящее время](basicauthentication.md) поддерживается только базовая проверка подлинности.|
 
 ## <a name="relationships"></a>Связи
 

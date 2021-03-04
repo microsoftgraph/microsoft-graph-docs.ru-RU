@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса authenticationEventsPolicy
-description: События проверки подлинности используются для вызова пользовательских потоков в определенных точках потока проверки подлинности.
+title: тип ресурса authenticationEventsPolicy
+description: События проверки подлинности используются для вызова потоков пользователей в определенных точках потока проверки подлинности.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4fe50176ebf49d79adc1db55c657bcf7fed8f096
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6cd727ebe51bbb6d5ad2162b180c4fc891ff792a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159955"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443169"
 ---
-# <a name="authenticationeventspolicy-resource-type"></a>Тип ресурса authenticationEventsPolicy
+# <a name="authenticationeventspolicy-resource-type"></a>тип ресурса authenticationEventsPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс, определяющий события в средстве проверки подлинности, при этом каждое событие дополнительно определяет доступные типы прослушивателей, которые можно создать для события. События являются неотъемлемой частью проверки подлинности; Этот ресурс не настраивается пользователем.
+Ресурс, который указывает события в опытом проверки подлинности, с каждым событием далее определяет доступные типы слушателей, которые могут быть созданы для события. События присущи опыту проверки подлинности; этот ресурс не настраивается пользователем.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список прослушивателей onSignUpStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[Коллекция authenticationListener](../resources/authenticationlistener.md)|Получите коллекцию ресурсов authenticationListener, поддерживаемых событием onSignupStart.|
+|[Список слушателей onSignUpStart](../api/authenticationeventspolicy-list-onsignupstart.md)|[коллекция authenticationListener](../resources/authenticationlistener.md)|Получите коллекцию ресурсов authenticationListener, поддерживаемую событием onSignupStart.|
 |[Создание authenticationListener](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md)|Создайте новый объект authenticationListener для события onSignupStart.|
 
 ## <a name="properties"></a>Свойства
@@ -37,7 +37,7 @@ ms.locfileid: "50159955"
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|onSignupStart|[Коллекция authenticationListener](../resources/authenticationlistener.md)|Список применимых действий, которые необходимо принять при регистрации.|
+|onSignupStart|[коллекция authenticationListener](../resources/authenticationlistener.md)|Список применимых действий, которые необходимо принять при регистрации.|
 
 ## <a name="json-representation"></a>Представление JSON
 

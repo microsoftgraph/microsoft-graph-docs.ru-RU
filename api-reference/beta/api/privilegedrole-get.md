@@ -1,16 +1,16 @@
 ---
 title: Получение privilegedRole
-description: 'Получение свойств и связей объекта Привилежедроле. '
+description: 'Извлечение свойств и связей объекта privilegedRole. '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 907b01aec0138b9795f6f880e05e0f98d73a122b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 64cc3fe214149d61f8f8cbd43fabc0ef1d3b81e3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970451"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441342"
 ---
 # <a name="get-privilegedrole"></a>Получение privilegedRole
 
@@ -18,12 +18,12 @@ ms.locfileid: "48970451"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [привилежедроле](../resources/privilegedrole.md) . 
+Извлечение свойств и связей [объекта privilegedRole.](../resources/privilegedrole.md) 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запрашивающая сторона должна иметь одну из следующих ролей: _привилегированный администратор ролей_ , _глобальный администратор_ , _администратор безопасности_ или _средство чтения безопасности_.
+У запросителя должна быть одна из следующих ролей: _администратор_ привилегированных _ролей,_ глобальный _администратор,_ администратор безопасности или _читатель безопасности._
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -46,14 +46,14 @@ GET /privilegedRoleAssignments/{id}/roleInfo
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедроле](../resources/privilegedrole.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект privilegedRole](../resources/privilegedrole.md) в тексте ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

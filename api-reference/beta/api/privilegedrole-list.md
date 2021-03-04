@@ -1,30 +1,30 @@
 ---
-title: Список Привилежедролес
-description: Получение списка объектов Привилежедроле.
+title: Список привилегированныхролей
+description: Извлечение списка объектов privilegedRole.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 5bf6ba52e0c3c3cc2f729e86cb3a47de18de7f64
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1567b4fbf3d1be3be85b309e2b6edab05e90828d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970423"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441325"
 ---
-# <a name="list-privilegedroles"></a>Список Привилежедролес
+# <a name="list-privilegedroles"></a>Список привилегированныхролей
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [привилежедроле](../resources/privilegedrole.md) .
+Извлечение списка [объектов privilegedRole.](../resources/privilegedrole.md)
 
 Чтобы отфильтровать результаты запроса, используйте стандартные выражения OData ``$filter`` в URI.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запрашивающая сторона должна иметь одну из следующих ролей: _привилегированный администратор ролей_ , _глобальный администратор_ , _администратор безопасности_ или _средство чтения безопасности_.
+У запросителя должна быть одна из следующих ролей: _администратор_ привилегированных _ролей,_ глобальный _администратор,_ администратор безопасности или _читатель безопасности._
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -46,14 +46,14 @@ GET /privilegedRoles
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедроле](../resources/privilegedrole.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [privilegedRole](../resources/privilegedrole.md) в тексте ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

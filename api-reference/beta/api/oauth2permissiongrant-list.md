@@ -1,16 +1,16 @@
 ---
 title: Список oAuth2PermissionGrants
-description: Получение списка объектов oauth2PermissionGrant, представляющих делегированные разрешения разрешений.
+description: Получение списка объектов oauth2PermissionGrant, представляющих делегированную дотации разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2e31122ca135b0009a4632fb8981768c482bcf29
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dfd7348e674c3cb2ec9e57f1d6bb304473907674
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967560"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442376"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -18,7 +18,7 @@ ms.locfileid: "48967560"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , представляющих делегированные разрешения, которые были предоставлены клиентским приложениям для доступа к API от имени пользователей, выполнивших вход в систему.
+Получение списка [объектов oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) представляющих делегированную лицензию, выданную для клиентских приложений для доступа к API от имени пользователей, входиющих в нее.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,7 +48,7 @@ GET /oauth2PermissionGrants
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

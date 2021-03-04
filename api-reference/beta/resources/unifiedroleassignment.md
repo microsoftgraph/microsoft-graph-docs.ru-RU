@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса unifiedRoleAssignment
-description: Назначение роли — это связь между определением роли и основным в определенной области для предоставления доступа.
+title: тип ресурса unifiedRoleAssignment
+description: Назначение ролей — это связь между определением роли и главным в определенной области для предоставления доступа.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4dc0ec6bb692c88d2b01a440bae1d7789bd042a5
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 04d296371a5d10dc447ea7588fdfbf5faea4f99d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159033"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442721"
 ---
-# <a name="unifiedroleassignment-resource-type"></a>Тип ресурса unifiedRoleAssignment
+# <a name="unifiedroleassignment-resource-type"></a>тип ресурса unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Для предоставления доступа к ресурсам используется unifiedRoleAssignment. Он представляет определение роли, назначенное основному пользователю в определенной области.
+Для предоставления доступа к ресурсам используется единая системаRoleAssignment. Он представляет определение роли, назначенное основному (обычно пользователю) в определенной области.
 
-Требуется предоставить directoryScopeId или appScopeId.
+Необходимо предоставить directoryScopeId или appScopeId.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Get unifiedRoleAssignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Чтение свойств и связей объекта unifiedRoleAssignment. |
-| [Создание unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Создание нового unifiedRoleAssignment путем публикации в коллекции roleAssignment. |
+| [Создание unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Создайте новую унифицированную функциюRoleAssignment, разместив в коллекции roleAssignment. |
 | [Удаление unifiedRoleAssignment](../api/unifiedroleassignment-delete.md) | Нет | Удаление объекта unifiedRoleAssignment. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Уникальный идентификатор unifiedRoleAssignment. Ключ, а не значение null, только для чтения. |
-|roleDefinitionId|String| ИД unifiedRoleDefinition, для который требуется назначение. Только для чтения. |
-|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|Свойство, указывающее roleDefinition, для которого назначение. Предоставляется для того, чтобы вызыватели могли получить определение роли одновременно с получением `$expand` назначения роли. roleDefinition.Id будет автоматически расширена
-|principalId|String| Objectid основного объекта, которому предоставлено назначение. |
-|principal|[directoryObject](directoryobject.md)| Свойство, ссылаясь на назначенного директора. Предоставляется для того, чтобы вызыватели могли получить основное значение одновременно с получением `$expand` назначения роли. Только для чтения. |
-|directoryScopeId|String|ИД объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым был предоставлен доступ для основного. Области каталогов — это общие области, хранимые в каталоге, которые понимаются несколькими приложениями. Области приложения — это области, которые определяются и понятны только этому приложению.|
-|directoryScope|[directoryObject](directoryobject.md)|Свойство, ссылаясь на объект каталога, который является областью назначения. Предоставляется для того, чтобы вызыватели могли получить объект каталога одновременно с получением `$expand` назначения роли. Только для чтения. |
-|appScopeId|String|ИД конкретной области приложения, если область назначения является конкретной областью приложения. Область назначения определяет набор ресурсов, к которым был предоставлен доступ для основного. Области каталогов — это общие области, хранимые в каталоге, которые понимаются несколькими приложениями. Используйте "/" для области на клиенте. Области приложения — это области, которые определяются и понятны только этому приложению.|
-|appScope|[appScope](appscope.md)|Свойство только для чтения с подробными сведениями об определенной области приложения, если область назначения является конкретной областью приложения. Объект Containment. |
-|resourceScope|String| Область применения unifiedRoleAssignment. Это "/" для службы. **НЕ ИСПОЛЬЗУЙТЕ. Это свойство скоро будет неподготовлено.**|
+|id|String| Уникальный идентификатор для единойRoleAssignment. Key, not nullable, Read-only. |
+|roleDefinitionId|String| ID унифицированногоRoleDefinition для назначения. Только для чтения. |
+|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|Свойство, указывающее рольDefinition для назначения. При условии, что вызыватели могут получать определение роли, используя одновременно `$expand` с назначением роли. roleDefinition.Id будет автоматически расширена
+|principalId|String| Объект объекта, которому предоставляется назначение. |
+|основной|[directoryObject](directoryobject.md)| Свойство, ссылаясь на назначенного доверенного. При условии, что звонители могут получать основное использование одновременно с `$expand` назначением ролей. Только для чтения. |
+|directoryScopeId|String|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением.|
+|directoryScope|[directoryObject](directoryobject.md)|Свойство, ссылаясь на объект каталога, который является областью назначения. При условии, что вызыватели могут получать объект каталога с помощью одновременно с назначением `$expand` ролей. Только для чтения. |
+|appScopeId|String|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением.|
+|appScope|[appScope](appscope.md)|Свойство только для чтения с подробными сведениями о области приложения, если область назначения является конкретной. Объект containment. |
+|resourceScope|String| Область применения unifiedRoleAssignment. Это "/" для всей службы. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось.**|
 
 ## <a name="relationships"></a>Связи
 
