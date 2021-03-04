@@ -1,24 +1,24 @@
 ---
-title: Список Акцесспаккажеассигнментресаурцеролес
-description: Получение списка объектов Акцесспаккажеассигнментресаурцероле.
+title: Список accessPackageAssignmentResourceRoles
+description: Извлечение списка объектов accessPackageAssignmentResourceRole.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75765eb48eb4166c588e9692b8cc155d730ce183
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e1d6c10437f4fa0c2eee26026dca3d323bf3bdd0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952010"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439627"
 ---
-# <a name="list-accesspackageassignmentresourceroles"></a>Список Акцесспаккажеассигнментресаурцеролес
+# <a name="list-accesspackageassignmentresourceroles"></a>Список accessPackageAssignmentResourceRoles
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [акцесспаккажеассигнментресаурцероле](../resources/accesspackageassignmentresourcerole.md) .  Полученный список включает все роли ресурсов для всех назначений, которые абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.
+Извлечение списка [объектов accessPackageAssignmentResourceRole.](../resources/accesspackageassignmentresourcerole.md)  В итоговом списке содержатся все роли ресурсов всех назначений, которые вызываемая имеет доступ к считыву, во всех каталогах и пакетах доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48952010"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Например, чтобы получить только роли ресурса назначения пакетов доступа для определенного пользователя, можно включить запрос с фильтром, предназначенным для идентификатора объекта этого пользователя `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` .
+Например, чтобы получить только роли ресурсов назначения пакета доступа для конкретного пользователя, можно включить запрос с фильтром, нацеленным на объект ID этого `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` пользователя.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,13 +51,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнментресаурцероле](../resources/accesspackageassignmentresourcerole.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,16 +1,16 @@
 ---
 title: Создание accessReviewScheduleDefinition
-description: Создание объекта accessReviewScheduleDefinition.
+description: Создайте новый объект accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0a3b9d7f9f4513bb92d7f5ba2de66a83fee8e233
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b82980e053a50b7562cf94d0a5224badfd1d2a8a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981188"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439109"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "49981188"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Создайте новый [объект accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,11 +26,11 @@ ms.locfileid: "49981188"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.ReadWrite.All |
 
-Во входе пользователя также должна быть роль каталога, которая позволяет создать проверку доступа.  Дополнительные сведения см. в требованиях к роли и разрешениям для [проверки доступа.](../resources/accessreviewsv2-root.md)
+При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,30 +44,30 @@ POST /identityGovernance/accessReviews/definitions
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [accessReview](../resources/accessreview.md) в JSON.
+В теле запроса поставляем представление JSON объекта [accessReview.](../resources/accessreview.md)
 
 В следующей таблице показаны свойства, принятые для создания accessReview.
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Название серии отзывов о доступе. Обязательный.|
-| descriptionForAdmins | string | Контекст проверки, предоставленной администраторам. Обязательный. |
-  descriptionForReviewers | string | Контекст отзыва, предоставленного рецензентам. Обязательный. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, проверяемую в группе. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) Обязательный.| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп это определяет область проверки групп. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) | 
-| параметры | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии отзывов о доступе. Здесь определяется повторение. См. [accessReviewScheduleSettings.](../resources/accessreviewscheduledefinition.md) |
-| рецензенты | [Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Определяет, кто такие рецензенты. Если ни один из них не указан, отзыв будет самообссвешенным (пользователи просмотрели свой собственный доступ). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
+| displayName | String | Имя серии обзоров доступа. Обязательный.|
+| descriptionForAdmins | string | Контекст обзора, предоставленного администраторам. Обязательный. |
+  descriptionForReviewers | string | Контекст обзора, предоставленного рецензентам. Обязательный. |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. См.  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Обязательный.| 
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. См. [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
+| параметры | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `201, Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и `201, Created` [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-Это пример создания серии отзывов о доступе с определенным пользователем, ид объекта пользователя — 7eae4444-d425-48b2-adf2-3c777f6256f3 в качестве рецензента. Проверка проверяет всех членов определенной группы, у которых есть ид объекта группы b7a059cb-038a-4802-8fc9-b9d1ed0c4444. Она повторяется еженедельно.
+Это пример создания серии обзоров доступа с определенным пользователем, имя объекта пользователя которого 7eae4444-d425-48b2-adf2-3c777f6256f3, как рецензент. В обзоре рассматриваются все члены определенной группы, чьи групповой объектный id b7a059cb-038a-4802-8fc9-b9d1ed0c4444. Он повторяется еженедельно.
 
 ### <a name="request"></a>Запрос
-В теле запроса предопределение представления объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в JSON.
+В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)

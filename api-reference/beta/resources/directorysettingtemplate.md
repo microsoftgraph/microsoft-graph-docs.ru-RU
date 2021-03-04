@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса Директорисеттингтемплате
-description: Шаблоны параметров каталога представляют системные параметры, доступные для клиента.
+title: тип ресурса directorySettingTemplate
+description: Шаблоны параметров каталогов представляют параметры, определяемые системой, доступные для клиента.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 032ddf2ffd557f88a944aafbb72164e2fe356d77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 71984d472aab9f78197134fae0668fd0a90d7716
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010425"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440411"
 ---
-# <a name="directorysettingtemplate-resource-type"></a>Тип ресурса Директорисеттингтемплате
+# <a name="directorysettingtemplate-resource-type"></a>тип ресурса directorySettingTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблоны параметров каталога представляют системные параметры, доступные для клиента. [Параметры каталога](directorysetting.md) могут быть созданы на основе доступных директорисеттингтемплатес, и значения, заданные по умолчанию, изменяются. Шаблоны параметров каталога невозможно создать, обновить или удалить. Эти параметры могут представлять параметры на уровне клиента или конкретные параметры сущности.  В настоящее время доступны только шаблоны для групп Office, а также параметры, например, могут ли пользователи создавать группы или приглашать гостей извне организации для становиться членами группы.
+Шаблоны параметров каталогов представляют параметры, определяемые системой, доступные для клиента. [Параметры каталога](directorysetting.md) могут быть созданы на основе доступных directorySettingTemplates, а значения изменены по заранее. Шаблоны параметров каталога не могут быть созданы, обновлены или удалены. Эти параметры могут представлять параметры для клиента или представлять определенные параметры сущности.  В настоящее время только доступные шаблоны применяются к группам Office и включают параметры, например, могут ли пользователи создавать группы или приглашать гостей из-за пределов организации, чтобы стать членами группы.
 
-> **Note**: версия/Beta типа ресурса директорисеттингтемплате применяется только к группам. Версия/v1.0 переименована в groupSettingTemplate.
+> **Примечание.**/бета-версия типа ресурса directorySettingTemplate применяется только к группам. Версия /v1.0 переименована в groupSettingTemplate.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Директорисеттингтемплате](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Чтение определенных свойств одного из системных объектов Директорисеттингтемплате, определенных системой.|
-|[Список Директорисеттингтемплате](../api/directorysettingtemplate-list.md) | [Коллекция Директорисеттингтемплате](directorysettingtemplate.md) |Перечисление всех объектов Директорисеттингтемплате, определенных системой.|
+|[Get directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Ознакомьтесь с определенными свойствами одного из системных объектов directorySettingTemplate.|
+|[Каталог listSettingTemplate](../api/directorysettingtemplate-list.md) | [Коллекция directorySettingTemplate](directorysettingtemplate.md) |Список всех системных объектов directorySettingTemplate.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|string|Описание шаблона. Только для чтения.|
-|displayName|string|Отображаемое имя шаблона. Только для чтения. |
+|displayName|string|Отображение имени шаблона. Только для чтения. |
 |id|string| Уникальный идентификатор шаблона. Только для чтения.|
-|values|Коллекция [сеттингтемплатевалуе](settingtemplatevalue.md)| Коллекция Settingtemplatevalue, в которой перечислены набор доступных параметров, значения по умолчанию и типы, которые составляют этот шаблон.  Только для чтения. |
+|values|[settingTemplateValue](settingtemplatevalue.md) collection| Коллекция параметровTemplateValues, которые перечисляют набор доступных параметров, по умолчанию и типов, которые составляют этот шаблон.  Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

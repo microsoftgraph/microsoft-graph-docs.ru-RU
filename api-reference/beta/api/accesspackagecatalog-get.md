@@ -1,24 +1,24 @@
 ---
-title: Получение Акцесспаккажекаталог
-description: Получение свойств и связей объекта акцесспаккажекаталог.
+title: Получить accessPackageCatalog
+description: Извлечение свойств и связей объекта accesspackagecatalog.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 33e28019f61dfb991dd3c53994dbea05791b3d54
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bae6156db7160d860975d1642bb75d51bbea8909
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951970"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439599"
 ---
-# <a name="get-accesspackagecatalog"></a>Получение Акцесспаккажекаталог
+# <a name="get-accesspackagecatalog"></a>Получить accessPackageCatalog
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [акцесспаккажекаталог](../resources/accesspackagecatalog.md) .
+Извлечение свойств и связей объекта [accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48951970"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить пакеты Access в каталоге, включите `$expand=accessPackages` в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить пакеты доступа в каталоге, включайте `$expand=accessPackages` в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и запрашиваемого `200 OK` [объекта accessPackageCatalog](../resources/accesspackagecatalog.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,26 +1,26 @@
 ---
-title: 'Акцессревиевинстанце: АпплидеЦисионс'
-description: Применение решений к Акцессревиевинстанце.
+title: 'accessReviewInstance: applyDecisions'
+description: Применение решений для accessReviewInstance.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0af1ae1291a95145041a3e92bedf948c766bd1c0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cb3d91137753ae3383bdaea2700a6664f8b48356
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214771"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439235"
 ---
-# <a name="accessreviewinstance-applydecisions"></a>Акцессревиевинстанце: АпплидеЦисионс
+# <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Применение решений по рецензированию для [акцессревиевинстанце](../resources/accessreviewinstance.md).
+Применение решений проверки [для accessReviewInstance](../resources/accessreviewinstance.md).
 
-Обратите внимание, что решения будут применяться автоматически, если параметр АутоапплидеЦисионсенаблед имеет значение true в [акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md)рецензирования.
+Обратите внимание, что решения будут применяться автоматически, если параметр autoApplyDecisionsEnabled является true в [accessReviewScheduleSettings обзора](../resources/accessreviewschedulesettings.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

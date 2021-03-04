@@ -1,39 +1,39 @@
 ---
-title: Список accessReviewInstanceDecisionItem, ожидающих утверждения
-description: Извлеките объекты accessReviewInstanceDecisionItem, ожидающих утверждения вызываемой пользователем.
+title: Список accessReviewInstanceDecisionItem до утверждения
+description: Извлечение объектов accessReviewInstanceDecisionItem до утверждения пользователем вызова.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 22c47613ef2017ee226d55cac08df68d718686bd
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 426abc674df2b14b19dee6ef838d3b7d5fe31a3c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981090"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439130"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Список accessReviewInstanceDecisionItems, ожидающих утверждения
+# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Список accessReviewInstanceDecisionItems до утверждения
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлеките [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) для определенного [accessReviewInstance,](../resources/accessreviewscheduledefinition.md) ожидающих утверждения вызываемой пользователем. Возвращается список объектов accessReviewInstanceDecisionItem, включая все их вложенные свойства.
+Извлечение [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) для определенного [accessReviewInstance](../resources/accessreviewscheduledefinition.md) до утверждения пользователем вызова. Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.
 
 >[!NOTE]
->Если возвращается много **параметров accessReviewInstanceDecisionItems,** для повышения эффективности и предотвращения временивых выходов извлеките набор результатов на страницах, включив в запрос как параметр $top с размером страницы не более 100, так и параметр $skip=0 запроса. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу со свойством @odata.nextLink в отклике, содержа содержам URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в разгонах данных Microsoft Graph в приложении.
+>Если возвращается много **accessReviewInstanceDecisionItems,** чтобы повысить эффективность и избежать периодов времени, извлеките результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с свойством @odata.nextLink в ответ, содержащий URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в проверке данных Microsoft Graph в вашем приложении.
 >
->Если параметры запроса не заданы и имеется более 100 результатов, Microsoft Graph автоматически размещает результаты по 100 результатов на страницу.
+>Если параметры запроса не предоставлены и результатов более 100, Microsoft Graph автоматически будет предоставлять результаты по 100 результатов на страницу.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 
-Во входе пользователя также будут видеть только те решения, которым они назначены рецензенту, в accessReviewScheduleDefinition экземпляра этого решения.
+При входе пользователь также увидит решения, которым им назначен рецензент в доступе экземпляра этого решенияReviewScheduleDefinition.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,15 +43,15 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
-Не укажив тело запроса.
+## <a name="request-body"></a>Тело запроса
+Не поставляем тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и массив объектов `200 OK` [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и массив `200 OK` [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В следующем примере показан запрос на извлечение всех решений по экземпляру проверки доступа, ожидающих утверждения вызываемого пользователя.
+В следующем примере показан запрос на извлечение всех решений в экземпляре обзора доступа до утверждения вызываемого пользователя.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -157,8 +157,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [Get accessReviewInstance](accessreviewinstance-get.md)
+- [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Получить accessReviewInstance](accessreviewinstance-get.md)
 
 
 <!--

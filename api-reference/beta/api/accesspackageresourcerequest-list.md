@@ -1,24 +1,24 @@
 ---
-title: Список Акцесспаккажересаурцерекуестс
-description: Получение списка объектов Акцесспаккажересаурцерекуест.
+title: Список accessPackageResourceRequests
+description: Извлечение списка объектов accessPackageResourceRequest.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1f8e1df84ccb12f4ccdcce3a4aa0e5338be59f3f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cf54d4df1debdfcf2bb0f0ebb378d310d917e065
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951757"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439459"
 ---
-# <a name="list-accesspackageresourcerequests"></a>Список Акцесспаккажересаурцерекуестс
+# <a name="list-accesspackageresourcerequests"></a>Список accessPackageResourceRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [акцесспаккажересаурцерекуест](../resources/accesspackageresourcerequest.md) .
+Извлечение списка [объектов accessPackageResourceRequest.](../resources/accesspackageresourcerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48951757"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить сведения о том, кто запросил Добавление ресурса в каталог, включите `$expand=requestor` в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить запрос о добавлении ресурса в каталог, `$expand=requestor` включайте его в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажересаурцерекуест](../resources/accesspackageresourcerequest.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и коллекцию объектов `200 OK` [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

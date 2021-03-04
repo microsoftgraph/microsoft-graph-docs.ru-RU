@@ -1,37 +1,37 @@
 ---
-title: Получение Акцессревиевинстанце
-description: Получение объекта Акцессревиевинстанце.
+title: Получить accessReviewInstance
+description: Извлечение объекта accessReviewInstance.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3bed5512ac3ddb4588cdd86ae54804482c8f722a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5f475f966d3ddc8539431c76fc613e3d6e0044e4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222142"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439200"
 ---
-# <a name="get-accessreviewinstance"></a>Получение Акцессревиевинстанце
+# <a name="get-accessreviewinstance"></a>Получить accessReviewInstance
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [акцессревиевинстанце](../resources/accessreviewinstance.md) с помощью идентификатора акцессревиевинстанце и его родительского [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md). Возвращает все свойства экземпляра, кроме связанного [акцессревиевинстанцедеЦисионитемс](../resources/accessreviewinstancedecisionitem.md).
+Извлечение [объекта accessReviewInstance](../resources/accessreviewinstance.md) с помощью идентификатора accessReviewInstance и родительского [доступаReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Это возвращает все свойства экземпляра, за исключением связанного [доступаReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md).
 
-Чтобы получить решения для экземпляра, используйте [List акцессревиевинстанцедеЦисионитем](accessreviewinstancedecisionitem-list.md).
+Чтобы получить решения в экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Чтобы вызвать этот API, пользователь, вошедшего в систему, должен быть включен в роль каталога, которая разрешает им читать проверку доступа, или пользователь может быть назначен в качестве проверяющего при проверке доступа.  Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviewsv2-root.md).
+Чтобы вызвать этот API, подписанный пользователем должен также быть в роли каталога, который позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,11 +41,11 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [акцессревиевинстанце](../resources/accessreviewinstance.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReviewInstance](../resources/accessreviewinstance.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
@@ -105,8 +105,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Получение Акцессревиевсчедуледефинитион](accessreviewscheduledefinition-get.md)
-- [Список Акцессревиевинстанце](accessreviewinstance-list.md)
+- [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [List accessReviewInstance](accessreviewinstance-list.md)
 
 
 <!--

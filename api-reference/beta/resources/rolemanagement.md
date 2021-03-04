@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Ролеманажемент
-description: Ресурс управления ролями RBAC
+title: тип ресурса roleManagement
+description: Ресурс управления ролью RBAC
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 531412e826d730b634ff7506386963e0e465127b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 241de0b72a9ffad507975fca408fe49f0b0a90f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400608"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440131"
 ---
-# <a name="rolemanagement-resource-type"></a>Тип ресурса Ролеманажемент
+# <a name="rolemanagement-resource-type"></a>тип ресурса roleManagement
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет объект управления ролями Microsoft 365 RBAC. Предоставляет доступ к определениям ролей и назначениям ролей, предоставляемым поставщикам RBAC. В настоящее время поддерживаются поставщики Active Directory (Azure AD) и deviceManagement (Intune). 
+Представляет сущность управления ролью Microsoft 365 RBAC. Предоставляет доступ к определениям ролей и назначениям ролей, которые всплыли у поставщиков RBAC. В настоящее время поддерживаются поставщики каталогов (Azure AD) и deviceManagement (Intune). 
 
 Дополнительные сведения см. в указанных ниже статьях. 
 * [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-* [Управление доступом на основе ролей (RBAC) в Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
+* [Управление доступом на основе ролей (RBAC) с Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 Нет.
 
@@ -36,8 +36,8 @@ ms.locfileid: "48400608"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каталога|[рбакаппликатион](rbacapplication.md)| Только для чтения. Допускается значение null.|
-|deviceManagement|[рбакаппликатионмултипле](rbacapplicationmultiple.md)| Только для чтения. Допускается значение null.|
+|каталог|[rbacApplication](rbacapplication.md)| Только для чтения. Допускается значение null.|
+|deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

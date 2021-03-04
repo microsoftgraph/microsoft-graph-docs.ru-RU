@@ -1,24 +1,24 @@
 ---
-title: Создание Унифиедроледефинитион
-description: Создание нового объекта Унифиедроледефинитион.
+title: Создание unifiedRoleDefinition
+description: Создайте новый объект unifiedRoleDefinition.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 37ce4feaf55848fb213ce64d9de0f33dec0b8c2c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2485652b97a015797ddd519d2009243a8a85902e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981097"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440880"
 ---
-# <a name="create-unifiedroledefinition"></a>Создание Унифиедроледефинитион
+# <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [унифиедроледефинитион](../resources/unifiedroledefinition.md) .
+Создайте новый [объект unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48981097"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | RoleManagement.ReadWrite.Directory |
+| Приложение                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,29 +42,29 @@ POST /roleManagement/directory/roleDefinitions
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [унифиедроледефинитион](../resources/unifiedroledefinition.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
 
-В следующей таблице приведены свойства, необходимые при создании объекта roleDefinition.
+В следующей таблице показаны свойства, необходимые при создании roleDefinition.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|displayName |string |Отображаемое имя определения роли.|
+|displayName |string |Имя отображения для определения роли.|
 |isEnabled |Boolean |Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения.|
-|rolePermissions |Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
+|rolePermissions |[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `201 Created` [объект unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример создания настраиваемой роли.
+Ниже приводится пример создания настраиваемой роли.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

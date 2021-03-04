@@ -3,14 +3,14 @@ title: Список accessReviewScheduleDefinitions
 description: Извлечение объектов accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 71eaf61e43a145b809da34854fc33975eb459c81
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 983ecadb7bf60258ee531ad252c4c67325e97802
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981006"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439056"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Список accessReviewScheduleDefinition
 
@@ -18,12 +18,12 @@ ms.locfileid: "49981006"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение объектов accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Для каждого созданного ряда проверки доступа возвращается список объектов accessReviewScheduleDefinition, включая все их вложенные свойства. Это не включает связанные accessReviewInstances.
+Извлечение [объектов accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Возвращается список объектов accessReviewScheduleDefinition, включая все вложенные свойства, для каждой созданной серии обзоров доступа. Это не включает связанные accessReviewInstances.
 
 >[!NOTE]
->Если возвращается большое количество **accessReviewScheduleDefinitions,** для повышения эффективности и предотвращения времени выполнения, извлекать набор результатов на страницах, включив в запрос как параметр запроса $top с размером страницы не более 100, так и параметр $skip=0 запроса. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу со свойством @odata.nextLink в отклике, содержа содержам URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в разгонах данных Microsoft Graph в приложении.
+>Если возвращается большое количество **accessReviewScheduleDefinitions,** чтобы повысить эффективность и избежать периодов времени, извлекайте результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с свойством @odata.nextLink в ответ, содержащий URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в проверке данных Microsoft Graph в вашем приложении.
 >
->Если параметры запроса не заданы и имеется более 100 результатов, Microsoft Graph автоматически размещает результаты по 100 результатов на страницу.
+>Если параметры запроса не предоставлены и результатов более 100, Microsoft Graph автоматически будет предоставлять результаты по 100 результатов на страницу.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -31,11 +31,11 @@ ms.locfileid: "49981006"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- Во входе пользователя также должна быть роль каталога, которая позволяет им прочитать проверку доступа.
+ В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,15 +45,15 @@ GET /identityGovernance/accessReviews/definitions
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
-Не укажив тело запроса.
+## <a name="request-body"></a>Тело запроса
+Не поставляем тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и массив объектов `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и массив `200 OK` [объектов accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В следующем примере показан запрос на извлечение всех серии отзывов о доступе в клиенте.
+В следующем примере показан запрос на извлечение всех серий обзоров доступа в клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -162,7 +162,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 
 
 <!--

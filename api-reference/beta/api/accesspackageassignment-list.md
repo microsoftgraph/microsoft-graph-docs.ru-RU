@@ -1,24 +1,24 @@
 ---
-title: Список accessPackageAssignments
-description: Получить список объектов accesspackageassignment.
+title: Списки accessPackageAssignments
+description: Извлечение списка объектов accesspackageassignment.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 605bc5bdfcafbf4c7aaae9903530bc5d067c748f
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 38f04b95f5a72f3f79b848c5bac86ba9492ef645
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934543"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439760"
 ---
-# <a name="list-accesspackageassignments"></a>Список accessPackageAssignments
+# <a name="list-accesspackageassignments"></a>Списки accessPackageAssignments
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [средстве управления правами Azure AD](../resources/entitlementmanagement-root.md)извлекает список объектов [accessPackageAssignment.](../resources/accesspackageassignment.md) Для администраторов всего каталога в итоговом списке содержатся все назначения, текущие и просроченные, которые вызывающий имеет доступ для чтения во всех каталогах и пакетах доступа.  Если вызываемая система находится от имени делегированного пользователя, которому назначены только делегированные административные роли каталога, запрос должен предоставить фильтр, чтобы указать определенный пакет доступа, `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` например:
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте список [объектов accessPackageAssignment.](../resources/accesspackageassignment.md) Для администраторов, доступных по каталогам, в итоговом списке содержатся все назначения, текущие и просроченные, которые вызываемая имеет доступ к считывке во всех каталогах и пакетах доступа.  Если звонивший от имени делегирования пользователя, которому назначены только делегированная административная роль в каталоге, запрос должен предоставить фильтр, чтобы указать определенный пакет доступа, например: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "49934543"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Если вызываемая система находится от имени делегированного пользователя, которому назначены только делегированные административные роли каталога, запрос должен предоставить фильтр, чтобы указать определенный пакет доступа, `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` например:  Этот метод также поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы также вернуть целевую тему и пакет доступа, включаем `$expand=target,accessPackage` . Чтобы получить только доставленные назначения, можно включить `$filter=assignmentState eq 'Delivered'` запрос. Чтобы получить только назначения для определенного пользователя, можно включить запрос с назначениями, нацеленными на ИД объекта этого пользователя: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Чтобы получить только назначения для определенного пользователя и определенный пакет доступа, можно включить запрос с назначениями, нацеленными на этот пакет доступа, и ид объекта этого пользователя: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Чтобы получить только назначения, полученные из определенной политики назначения пакета доступа, можно включить запрос для этой политики: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` .
+Если звонивший от имени делегирования пользователя, которому назначены только делегированная административная роль в каталоге, запрос должен предоставить фильтр, чтобы указать определенный пакет доступа, например: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` .  Этот метод также поддерживает некоторые параметры запроса OData, чтобы помочь настроить ответ. Например, чтобы также вернуть целевой объект и пакет доступа, включай `$expand=target,accessPackage` . Чтобы получить только доставленные назначения, можно включить запрос `$filter=assignmentState eq 'Delivered'` . Чтобы получить только назначения для конкретного пользователя, можно включить запрос с назначениями, нацеленными на объект ID этого пользователя: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Чтобы получить только назначения для конкретного пользователя и определенного пакета доступа, можно включить запрос с назначениями, нацеленными на этот пакет доступа, и ID объекта этого пользователя: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Чтобы получить только назначения, полученные в результате определенной политики назначения пакета доступа, можно включить запрос для этой политики: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` .
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -51,13 +51,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [accessPackageAssignment](../resources/accesspackageassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [accessPackageAssignment](../resources/accesspackageassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

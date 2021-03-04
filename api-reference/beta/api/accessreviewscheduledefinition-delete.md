@@ -1,24 +1,24 @@
 ---
-title: Удаление Акцессревиевсчедуледефинитион
-description: Удаление объекта Акцессревиевсчедуледефинитион.
+title: Удаление accessReviewScheduleDefinition
+description: Удаление объекта accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 93d61dd2b903014ee92f41929e1cb4ad13f05b50
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9bf7197643ca0b445e11d59e97693c80a9627913
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214267"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439081"
 ---
-# <a name="delete-accessreviewscheduledefinition"></a>Удаление Акцессревиевсчедуледефинитион
+# <a name="delete-accessreviewscheduledefinition"></a>Удаление accessReviewScheduleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) .
+Удаление [объекта accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,7 +36,7 @@ DELETE /identityGovernance/accessReviews/definitions/{review-id}
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 

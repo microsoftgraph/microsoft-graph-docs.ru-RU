@@ -3,14 +3,14 @@ title: Обновление accessPackage
 description: Обновление свойств объекта accessPackage.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3f0c0f5878cbd2176854685b82b8becf6ab88173
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 40f299edcca636a6f2041a36e10b0dc3963d8422
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872200"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439767"
 ---
 # <a name="update-accesspackage"></a>Обновление accessPackage
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872200"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновив [существующий объект accessPackage,](../resources/accesspackage.md) измените одно или несколько его свойств, например отображаемое имя или описание.
+Обновим [существующий объект accessPackage,](../resources/accesspackage.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
@@ -27,7 +27,7 @@ ms.locfileid: "49872200"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление параметров объекта [accessPackage](../resources/accesspackage.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON параметров [объекта accessPackage.](../resources/accesspackage.md)
 
-В следующей таблице показаны свойства, которые могут быть предоставлены при обновлении [accessPackage.](../resources/accesspackage.md)
+В следующей таблице показаны свойства, которые можно получить при обновлении [accessPackage.](../resources/accesspackage.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -105,7 +105,6 @@ Content-length: 38
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
-
 ```
 
 <!--

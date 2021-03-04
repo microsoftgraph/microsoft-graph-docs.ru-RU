@@ -1,39 +1,39 @@
 ---
-title: Список Акцессревиевинстанце
-description: Получение объектов Акцессревиевинстанце.
+title: List accessReviewInstance
+description: Извлечение объектов accessReviewInstance.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 43ad30510610ebe64a7a6a818ba068c5dc1bb4b4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 155c77e5a7b7fc8c81c5595dd2d504febd14673f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214760"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439198"
 ---
-# <a name="list-accessreviewinstance"></a>Список Акцессревиевинстанце
+# <a name="list-accessreviewinstance"></a>List accessReviewInstance
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объектов [акцессревиевинстанце](../resources/accessreviewinstance.md) для определенного [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md). Возвращается список из нуля или более объектов **акцессревиевинстанце** , включая все вложенные свойства. Возвращенные объекты не включают связанные АкцессревиевинстанцедеЦисионитемс. Чтобы получить решения для экземпляра, используйте [List акцессревиевинстанцедеЦисионитем](accessreviewinstancedecisionitem-list.md).
+[Извлечение объектов accessReviewInstance](../resources/accessreviewinstance.md) для определенного [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Возвращается список объектов zero или more **accessReviewInstance,** включая все вложенные свойства. Возвращенные объекты не включают связанный accessReviewInstanceDecisionItems. Чтобы получить решения в экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
 
 >[!NOTE]
->Если возвращается множество **акцессревиевинстанцес** , чтобы повысить эффективность и избежать истечения времени ожидания, извлеките набор результатов на страницы, включив в него как параметр запроса $Top, который содержит не более 100, и параметр запроса $Skip = 0 в запросе. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с помощью свойства @odata. nextLink в ответе, который содержит URL-адрес следующей страницы результатов. При наличии этого свойства Продолжайте делать дополнительные запросы с URL-адресом @odata. nextLink в каждом ответе до тех пор, пока не будут возвращены все результаты, как описано в разделе разбиение данных Microsoft Graph в приложении.
+>Если возвращается большое количество **accessReviewInstances,** чтобы повысить эффективность и избежать периодов времени, извлекайте результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с свойством @odata.nextLink в ответ, содержащий URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в проверке данных Microsoft Graph в вашем приложении.
 >
->Если не указано ни одного параметра запроса и число результатов превышает 100, Microsoft Graph автоматически разбивать результаты на страницы 100 на каждой странице.
+>Если параметры запроса не предоставлены и результатов более 100, Microsoft Graph автоматически будет предоставлять результаты по 100 результатов на страницу.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
-|Приложение                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Вошедшего в систему пользователя также должен находиться в роли каталога, который позволяет им читать проверку доступа. Чтобы просмотреть только те экземпляры, для которых пользователь, вошедшего в систему, назначен проверяющему, ознакомьтесь со статьей [Просмотр списка ожидающих доступных экземпляров](accessreviewinstance-pendingaccessreviewinstances.md)
+В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. Чтобы просмотреть только те экземпляры, в которые назначен рецензент, см. в примере [List pending access review instances](accessreviewinstance-pendingaccessreviewinstances.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,15 +43,15 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса.
+## <a name="request-body"></a>Тело запроса
+Не поставляем тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и массив объектов [акцессревиевинстанце](../resources/accessreviewinstance.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и массив `200 OK` [объектов accessReviewInstance](../resources/accessreviewinstance.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на получение всех экземпляров проверки доступа для определения.
+В следующем примере показан запрос на извлечение всех экземпляров обзора доступа для определения.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -121,8 +121,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Список Акцессревиевсчедуледефинитион](accessreviewscheduledefinition-list.md)
-- [Получение Акцессревиевинстанце](accessreviewinstance-get.md)
+- [Список accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
+- [Получить accessReviewInstance](accessreviewinstance-get.md)
 
 
 <!--

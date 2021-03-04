@@ -1,16 +1,16 @@
 ---
 title: Создание administrativeUnit
-description: Используйте этот API для создания нового administrativeUnit.
+description: Используйте этот API для создания нового администратораUnit.
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 595a7be416ab33ea69e324b6f4e53cbb6516ac15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6915c434afcbb2b862912c86e3a3eb9d64550fc7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962549"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438801"
 ---
 # <a name="create-administrativeunit"></a>Создание administrativeUnit
 
@@ -18,16 +18,16 @@ ms.locfileid: "48962549"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для создания нового [administrativeUnit](../resources/administrativeunit.md).
+Используйте этот API для создания нового [администратораUnit](../resources/administrativeunit.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | AdministrativeUnit.ReadWrite.All |
+|Приложение | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,13 +42,13 @@ POST /administrativeUnits
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [administrativeUnit.](../resources/administrativeunit.md)
 
-Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавлять настраиваемые свойства с собственными данными в административную единицу при создании.
+Так как **ресурс administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)можно использовать операцию и добавлять настраиваемые свойства с собственными данными в административный блок при `POST` его создании.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` объект [administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -90,7 +90,7 @@ Content-length: 150
 
 ---
 
-В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [administrativeUnit.](../resources/administrativeunit.md)
 
 ### <a name="response"></a>Отклик
 

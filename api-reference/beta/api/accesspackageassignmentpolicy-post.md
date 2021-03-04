@@ -3,14 +3,14 @@ title: Создание accessPackageAssignmentPolicy
 description: Используйте этот API для создания нового accessPackageAssignmentPolicy.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a56baffd8f15997180569c89c550ccd2e093b176
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 6868c48fd2fdfba309a0af5849451a039bae1769
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753054"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439704"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>Создание accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "49753054"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [средстве управления правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,8 +27,8 @@ ms.locfileid: "49753054"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All  |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,21 +47,21 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в JSON.
+В теле запроса поставляем представление JSON объекта [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика серии 200 и новый [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика из 200 серий и новый [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-a-direct-assignment-policy"></a>Пример 1. Создание политики прямого назначения
 
-Политика прямого назначения полезна, когда запросы на назначение пакета доступа создаются только администратором, а не самими пользователями.
+Политика прямого назначения полезна, когда запросы на назначение пакетов доступа будут создаваться только администратором, а не самими пользователями.
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание политики назначения пакета доступа. В этой политике пользователи не могут запрашивать запросы, утверждение не требуется, проверки доступа не требуются.
+В следующем примере показан запрос на создание политики назначения пакета доступа. В этой политике пользователи не могут запрашивать, не требуется утверждение и нет отзывов доступа.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -134,9 +134,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>Пример 2. Создание политики для пользователей из других организаций для запроса
+### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>Пример 2. Создание политики для запроса пользователями из других организаций
 
-В следующем примере показана более сложная политика с двухуголными утверждениями и проверками доступа.
+В следующем примере показана более сложная политика с двух этапами утверждений и обзоров доступа.
 
 #### <a name="request"></a>Запрос
 
@@ -279,9 +279,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-assignment-policy-with-questions"></a>Пример 3. Создание политики назначения с вопросами
+### <a name="example-3-create-assignment-policy-with-questions"></a>Пример 3. Создание политики назначения с помощью вопросов
 
-Вопросы, настроенные в политике назначения, будут заданы инициаторам запроса в области политики. Их ответы будут показаны их утвержденным. ИД вопросов являются только для чтения и включаются в ответ по умолчанию.
+Вопросы, настроенные в политике назначения, будут задаваться запрашивателям в области политики. Их ответы будут показаны их утверждениям. ID-вопросы являются только для чтения и включаются в ответ по умолчанию.
 
 #### <a name="request"></a>Запрос
 

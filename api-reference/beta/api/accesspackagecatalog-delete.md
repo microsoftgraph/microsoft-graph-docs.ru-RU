@@ -1,24 +1,24 @@
 ---
-title: Удаление Акцесспаккажекаталог
-description: Удаление Акцесспаккажекаталог.
+title: Удаление accessPackageCatalog
+description: Удаление accessPackageCatalog.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75889298f67ca7e751ef400d13902b588afafa04
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ad2dd60c9e2f104987edeef0bac46dcf940a14cd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951996"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439606"
 ---
-# <a name="delete-accesspackagecatalog"></a>Удаление Акцесспаккажекаталог
+# <a name="delete-accesspackagecatalog"></a>Удаление accessPackageCatalog
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [акцесспаккажекаталог](../resources/accesspackagecatalog.md).
+Удаление [accessPackageCatalog](../resources/accesspackagecatalog.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48951996"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,13 +44,13 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 |:--------------|:--------------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200. Метод не возвращает данные в теле отклика.
+В случае успешной работы этот метод возвращает код ответа из 200 серий. В тексте отклика не возвращается никаких данных.
 
 ## <a name="examples"></a>Примеры
 

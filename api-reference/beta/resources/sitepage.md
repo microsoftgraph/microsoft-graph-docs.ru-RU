@@ -2,38 +2,38 @@
 author: rahmit
 description: Этот ресурс представляет страницу в списке SitePages.
 ms.date: 03/15/2018
-title: ситепаже
+title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bdb7c0c89938eb3419607839aa1973812788063c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5562c0e60f0e36acf3621a160c1801d49661ea5c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997699"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440117"
 ---
-# <a name="sitepage-resource"></a>ресурс Ситепаже
+# <a name="sitepage-resource"></a>ресурс sitePage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Этот ресурс представляет страницу в [списке][]SitePages.
-Он содержит заголовок, макет и коллекцию [веб-частей][]s.
+Этот ресурс представляет страницу в списке SitePages. [][]
+Он содержит название, макет и коллекцию [веб-парт.][]
 
 ## <a name="tasks-on-a-page"></a>Задачи на странице
 
-Для ресурсов **ситепаже** доступны следующие задачи.
-Все приведенные ниже примеры относятся к [сайту][], например: `https://graph.microsoft.com/{api-version}/sites/{site-id}` .
+Следующие задачи доступны для **ресурсов sitePage.**
+Все примеры относились к [сайту;][] например, `https://graph.microsoft.com/{api-version}/sites/{site-id}` .
 
 | Стандартная задача                     | Метод HTTP
 |:--------------------------------|:------------------------------
-| [Перечисление страниц][]                  | ПОЛУЧЕНИЕ/Pages
-| [Вывод страницы][]                    | ПОЛУЧЕНИЕ/Пажес/{Паже-ИД}
-| [создание][];                      | POST/Pages
-| [удаление][];                      | Удаление/Пажес/{Паже-ИД}
-| [публикация][];                     | POST/Пажес/{Паже-ИД}/публиш
+| [Перечисление страниц][]                  | GET /pages
+| [Вывод страницы][]                    | GET /pages/{page-id}
+| [Создание][]                      | POST /pages
+| [удаление][];                      | DELETE /pages/{page-id}
+| [публикация][];                     | POST /pages/{page-id}/publish
 
 [Перечисление страниц]: ../api/sitepage-list.md
 [Вывод страницы]: ../api/sitepage-get.md
@@ -43,7 +43,7 @@ ms.locfileid: "47997699"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление ресурса **ситепаже** в формате JSON.
+Вот представление JSON ресурса **sitePage.**
 
 <!--{
   "blockType": "resource",
@@ -81,29 +81,29 @@ ms.locfileid: "47997699"
 
 ## <a name="properties"></a>Свойства
 
-Ресурс **ситепаже** имеет следующие свойства.
+Ресурс **sitePage** имеет следующие свойства.
 
 | Имя свойства    | Тип                         | Описание
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | Тип контента страницы.
 
-## <a name="page-content"></a>Контент страницы
+## <a name="page-content"></a>Содержимое страницы
 
-Ресурс **ситепаже** имеет следующие поля контента.
+Ресурс **sitePage** имеет следующие поля контента.
 
 | Имя свойства      | Тип                       | Описание
 |:-------------------|:---------------------------|:---------------------------
 | title              | string                     | Заголовок страницы.
 | pageLayout         | string                     | Имя макета страницы.
-| webParts           | [Частей][]                | Веб-части на странице.
+| webParts           | [webPart][]                | Веб-части на странице.
 
-## <a name="authoring-metadata"></a>Метаданные для разработки
+## <a name="authoring-metadata"></a>Авторство метаданных
 
-Ресурс **ситепаже** содержит следующие метаданные, связанные с созданием и отправкой. Свойство Публишингстате будет отражать состояние создания страницы, например извлеченный или опубликованный.
+На **ресурсе sitePage** есть следующие метаданные, связанные с авторингом. Свойство **publishingState будет** отражать состояние авторинга страниц, как выехав или опубликованный.
 
 | Имя свойства          | Тип                   | Описание
 |:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][].   | Состояние публикации и версия MM.mm страницы.
+| publishingState        | [publicationFacet][].   | Состояние публикации и MM.mm версии страницы.
 
 Ниже перечислены свойства, которые наследуются от ресурса **[baseItem][]**.
 
@@ -120,7 +120,7 @@ ms.locfileid: "47997699"
 
 ## <a name="relationships"></a>Связи
 
-У ресурса **ситепаже** нет отношений с другими ресурсами.
+Ресурс **sitePage** не имеет связей с другими ресурсами.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -132,7 +132,7 @@ ms.locfileid: "47997699"
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md.
 [site]: site.md
-[Частей]: webpart.md
+[webPart]: webpart.md
 
 <!--
 {

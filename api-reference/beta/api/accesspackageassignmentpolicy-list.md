@@ -1,24 +1,24 @@
 ---
-title: Список АкцесспаккажеассигнментполиЦиес
-description: Получение списка объектов Акцесспаккажеассигнментполици.
+title: Список accessPackageAssignmentPolicies
+description: Извлечение списка объектов accessPackageAssignmentPolicy.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4220c2b6d92291d91d8ee6cfea36783550b91537
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: be973adb399d60846282acd55f9d44d5968af7ce
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952171"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439711"
 ---
-# <a name="list-accesspackageassignmentpolicies"></a>Список АкцесспаккажеассигнментполиЦиес
+# <a name="list-accesspackageassignmentpolicies"></a>Список accessPackageAssignmentPolicies
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md). Если делегированный пользователь находится в роли каталога, полученный список включает все политики назначения, которые абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.  Если делегированный пользователь является диспетчером пакетов доступа или владельцем каталога, он должен вместо этого получать политики для пакетов доступа, которые они могут читать с помощью [List акцесспаккажес](accesspackage-list.md) , включая `$expand=accessPackageAssignmentPolicies` в качестве параметра запроса.
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте список объектов [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md) Если делегированная пользователь находится в роли каталога, в итоговом списке содержатся все политики назначения, которые вызывающий имеет доступ к считыву, во всех каталогах и пакетах доступа.  Если делегированная пользователь является менеджером пакетов доступа или владельцем каталога, он [](accesspackage-list.md) должен вместо этого получить политики для пакетов доступа, которые они могут прочитать с помощью пакетов доступа к спискам, в том числе в качестве параметра `$expand=accessPackageAssignmentPolicies` запроса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48952171"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить политику назначения пакетов Access с указанным отображаемым именем, включите `$filter=displayName eq 'Employee sales support'` в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить политику назначения пакета доступа с заданным именем отображения, `$filter=displayName eq 'Employee sales support'` включайте в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

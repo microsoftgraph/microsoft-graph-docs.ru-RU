@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицеенроллменттипе
+title: тип enum deviceEnrollmentType
 description: Возможные способы добавления мобильного устройства в управление.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c0e75b3a8ab7cc9ebf3929c0764eba243cb1357c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3d3bc9b0862dd376b393019838980ce9c82c7df3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49306872"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440173"
 ---
-# <a name="deviceenrollmenttype-enum-type"></a>тип перечисления Девицеенроллменттипе
+# <a name="deviceenrollmenttype-enum-type"></a>тип enum deviceEnrollmentType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,22 +25,23 @@ ms.locfileid: "49306872"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Значение по умолчанию: тип регистрации не был собран.|
-|усеренроллмент|1,1|Управляемая пользователями регистрация через канал BYOD.|
-|девицеенроллментманажер|2|Регистрация пользователей с помощью учетной записи менеджера регистрации устройств.|
-|апплебулквисусер|4|Массовая регистрация Apple с задачей пользователя. (Предотвращение выполнения данных, Apple Configurator)|
-|апплебулквисаутусер|4 |Массовая регистрация Apple без задачи пользователя. (Предотвращение выполнения данных, Apple Configurator, Mobile config)|
-|виндовсазуреаджоин|5 |Присоединение к Windows 10 Azure AD.|
-|виндовсбулкусерлесс|6 |Массовая регистрация Windows 10 с помощью ICD с помощью сертификата.|
-|виндовсаутоенроллмент|7 |Автоматическая регистрация в Windows 10. (Добавление рабочей учетной записи)|
-|виндовсбулказуредомаинжоин|8 |Массовый присоединение к Windows 10 Azure AD.|
-|виндовскоманажемент|9 |Windows 10 Co-Management активированы с помощью автопилота или групповой политики.|
-|апплеусеренроллмент|11 |Устройство, управляемое регистрацией пользователей Apple|
-|апплеусеренроллментвиссервицеаккаунт|12 |Устройство, управляемое регистрацией пользователей Apple, с учетной записью службы|
-|азуреаджоинусингазуревмекстенсион|14 |Регистрация подключения Azure AD при подготовке виртуальной машины Azure|
-|андроидентерприседедикатеддевице|15 |Специальное устройство для Android Enterprise|
-|андроидентерприсефуллиманажед|16 |Полностью управляемый Android Enterprise|
-|андроидентерприсекорпоратеворкпрофиле|17 |Корпоративный профиль для корпоративных рабочих работ Android|
+|unknown|0|Значение по умолчанию, тип регистрации не был собран.|
+|userEnrollment|1 |Регистрация по инициативе пользователя через канал BYOD.|
+|deviceEnrollmentManager|2 |Регистрация пользователей с учетной записью диспетчера регистрации устройств.|
+|appleBulkWithUser|3 |Массовое зачисление Apple с проблемой пользователя. (DEP, настраиваемый Apple)|
+|appleBulkWithoutUser|4 |Массовое зачисление Apple без проблем пользователя. (DEP, Apple Configurator, Mobile Config)|
+|windowsAzureADJoin|5 |Windows 10 Azure AD Join.|
+|windowsBulkUserless|6 |Регистрация Windows 10 с помощью ICD с сертификатом.|
+|windowsAutoEnrollment|7 |Автоматическая регистрация Windows 10. (Добавление учетной записи работы)|
+|windowsBulkAzureDomainJoin|8 |Windows 10 bulk Azure AD Join.|
+|windowsCoManagement|9 |Windows 10 Co-Management с помощью автопилота или групповой политики.|
+|windowsAzureADJoinUsingDeviceAuth|10 |Windows 10 Azure AD Join using Device Auth.|
+|appleUserEnrollment|11|Устройство, управляемое регистрацией пользователей Apple|
+|appleUserEnrollmentWithServiceAccount|12 |Устройство, управляемое регистрацией пользователей Apple с учетной записью службы|
+|azureAdJoinUsingAzureVmExtension|14 |Регистрация Azure AD Join при условии обеспечения azure VM|
+|AndroidEnterpriseDedicatedDevice|15 |Устройство, посвященное предприятию Android|
+|AndroidEnterpriseFullyManaged|16 |Полностью управляемый Android Enterprise|
+|AndroidEnterpriseCorporateWorkProfile|17 |Корпоративный профиль корпоративной работы android|
 
 
 

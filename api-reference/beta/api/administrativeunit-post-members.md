@@ -1,16 +1,16 @@
 ---
 title: Добавление участника
-description: Используйте этот API, чтобы добавить члена (пользователя или группы) в административную единицу.
+description: Используйте этот API для добавления участника (пользователя или группы) в административное подразделение.
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef1ff3e00de98a248fbe6a3b059b2de739d7df7b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6df32e3023752d3edf32163b3e99a377df8a5de1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997223"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438738"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -18,7 +18,7 @@ ms.locfileid: "47997223"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы добавить члена (пользователя или группы) в административную единицу.
+Используйте этот API для добавления участника (пользователя или группы) в административное подразделение.
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -28,9 +28,9 @@ ms.locfileid: "47997223"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.ReadWrite.All |
+|Приложение | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите `id` [пользователя](../resources/user.md),  [группу](../resources/group.md) или [directoryObject](../resources/directoryobject.md) , которого требуется добавить.
+В теле запроса укажи добавить пользователя, группу или `id` [directoryObject.](../resources/directoryobject.md) [](../resources/user.md) [](../resources/group.md)
 
 ## <a name="response"></a>Отклик
 
@@ -63,7 +63,7 @@ Content-length: 109
 }
 
 ```
-В тексте запроса укажите `id` объект [пользователя](../resources/user.md) или [группы](../resources/group.md) , который вы хотите добавить.
+В теле запроса укажи объект пользователя или группы, который `id` необходимо добавить. [](../resources/user.md) [](../resources/group.md)
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

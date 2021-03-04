@@ -3,14 +3,14 @@ title: Обновление accessPackageCatalog
 description: Обновление свойств объекта accessPackageCatalog.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c7bb4b1cadfd3991f19ff02b5ad596f5a8ff1491
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: de8173002582bc55aa3e59b7fbaa966240e0076e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872165"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439492"
 ---
 # <a name="update-accesspackagecatalog"></a>Обновление accessPackageCatalog
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872165"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновите [существующий объект accessPackageCatalog,](../resources/accesspackagecatalog.md) чтобы изменить одно или несколько его свойств, например отображаемое имя или описание.
+Обнови [существующий объект accessPackageCatalog,](../resources/accesspackagecatalog.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
@@ -27,7 +27,7 @@ ms.locfileid: "49872165"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,8 +43,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [accessPackageCatalog](../resources/accesspackagecatalog.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
 В следующей таблице показаны свойства, необходимые при обновлении [accessPackageCatalog.](../resources/accesspackagecatalog.md)
 

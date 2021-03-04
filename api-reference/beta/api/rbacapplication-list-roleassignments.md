@@ -1,24 +1,24 @@
 ---
-title: Список Унифиедролеассигнментс
-description: Получение списка объектов Унифиедролеассигнмент.
+title: Список unifiedRoleAssignments
+description: Получите список объектов unifiedRoleAssignment.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 05625429cd49c9d59324a7b4b8bfe2547909dc63
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5b4066c59eedb5ddc98912f263e586a095dde4eb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981126"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440943"
 ---
-# <a name="list-unifiedroleassignments"></a>Список Унифиедролеассигнментс
+# <a name="list-unifiedroleassignments"></a>Список unifiedRoleAssignments
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [унифиедролеассигнмент](../resources/unifiedroleassignment.md) для поставщика.
+Получите список объектов [unifiedRoleAssignment](../resources/unifiedroleassignment.md) для поставщика.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48981126"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,25 +40,25 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Для выполнения этой операции требуется `$filter` параметр запроса. Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Эта операция требует `$filter` параметра запроса. Вы можете фильтровать свойства `roleDefinitionId` или `principalId` свойства. Свойство `roleDefinitionId` может быть как ИД объекта роли, так и объектом шаблона ролей. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-request-using-a-filter-on-role-definition-id"></a>Пример 1: запрос с использованием фильтра по ИДЕНТИФИКАТОРу определения роли
+### <a name="example-1-request-using-a-filter-on-role-definition-id"></a>Пример 1. Запрос на использование фильтра для определения роли
 
 #### <a name="request"></a>Запрос
 
@@ -213,7 +213,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-request-using-a-filter-on-principal-id"></a>Пример 2: запрос с использованием фильтра по ИДЕНТИФИКАТОРу субъекта
+### <a name="example-2-request-using-a-filter-on-principal-id"></a>Пример 2. Запрос на использование фильтра для основного ID
 
 #### <a name="request"></a>Запрос
 

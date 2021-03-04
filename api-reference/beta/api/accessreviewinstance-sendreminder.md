@@ -1,32 +1,32 @@
 ---
-title: 'Акцессревиевинстанце: Сендреминдер'
-description: Отправляет напоминание рецензентам текущего активного Акцессревиевинстанце.
+title: 'accessReviewInstance: sendReminder'
+description: Отправляет напоминание рецензентам активного доступаReviewInstance.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 63f746e463a9aa9c073d1acf9ac648e3ac55b927
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ff136fc640ffb622310e97601d8222c9c9e103bd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49521252"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439152"
 ---
-# <a name="accessreviewinstance-sendreminder"></a>Акцессревиевинстанце: Сендреминдер
+# <a name="accessreviewinstance-sendreminder"></a>accessReviewInstance: sendReminder
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправка напоминания рецензентам, которые активны в настоящее время [акцессревиевинстанце](../resources/accessreviewinstance.md).
+Отправьте напоминание рецензентам активного в настоящее время [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,7 +37,7 @@ POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{ins
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

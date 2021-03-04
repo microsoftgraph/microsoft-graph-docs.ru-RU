@@ -1,27 +1,27 @@
 ---
-title: Получение Рискдетектион
-description: Получение свойств объекта **рискдетектион** .
+title: Get riskDetection
+description: Извлечение свойств **объекта riskdetection.**
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3e241563f310c251f6077758856092c4a08bee50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ab2778e33a0d26b63f54cc87156fe0cca647e8e8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977682"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440859"
 ---
-# <a name="get-riskdetection"></a>Получение Рискдетектион
+# <a name="get-riskdetection"></a>Get riskDetection
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта **рискдетектион** .
+Извлечение свойств **объекта riskDetection.**
 
 >[!NOTE]
->Для использования API обнаружения риска необходима лицензия Azure AD Premium P1 или P2.
+>Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "48977682"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,15 +45,15 @@ GET /identityProtection/riskDetections/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискдетектион](../resources/riskdetection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [riskDetection](../resources/riskdetection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-get-risk-detections"></a>Пример 1: получение обнаруженных рисков
+### <a name="example-1-get-risk-detections"></a>Пример 1. Обнаружение рисков
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -123,7 +123,7 @@ Content-type: application/json
     "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
 }
 ```
-### <a name="example-2-get-risk-detections-for-specific-user"></a>Пример 2: получение обнаруженных рисков для определенного пользователя
+### <a name="example-2-get-risk-detections-for-specific-user"></a>Пример 2. Обнаружение рисков для определенного пользователя
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

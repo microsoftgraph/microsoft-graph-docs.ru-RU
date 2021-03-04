@@ -3,14 +3,14 @@ title: Тип ресурса UserFlow
 description: Потоки пользователей удостоверений — это встроенные пути проверки подлинности
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: fa6829d346fc1e2520fb5eab28f5ce5fd9c72ae4
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 3a5cb0bfd61e9b99e9837c36484feefc0ff3a635
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176971"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440251"
 ---
 # <a name="userflow-resource-type"></a>Тип ресурса UserFlow
 
@@ -18,24 +18,24 @@ ms.locfileid: "50176971"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Потоки пользователей позволяют определять предварительно определенные настраиваемые политики для регистрации, регистрации, объединенной регистрации и входов, сброса пароля и обновления профиля.
+Потоки пользователей позволяют определять заранее настроенные политики для регистрации, регистрации, комбинированной регистрации и регистрации, сброса паролей и обновления профиля.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/identityuserflow-list.md) | [Коллекция UserFlow](identityuserflow.md) | Список userFlows. |
+| [Список](../api/identityuserflow-list.md) | [Коллекция UserFlow](identityuserflow.md) | Список пользовательских процессов. |
 | [Создание](../api/identityuserflow-post-userflows.md) | [UserFlow](identityuserflow.md) | Создание объекта UserFlow. |
-| [Получение](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | Чтение свойств и связей объекта UserFlow. |
+| [получение](../api/identityuserflow-get.md); | [UserFlow](identityuserflow.md) | Чтение свойств и связей объекта UserFlow. |
 | [удаление](../api/identityuserflow-delete.md); | Нет | Удаление объекта UserFlow. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Идентификатор пользовательского потока. Префикс B2C_1_ **добавляется** к заранее заранее предоставляемого значения.|
+|id|String| Идентификатор потока пользователей. Префикс **B2C_1_** добавляется к предоставляемой вами стоимости.|
 |userFlowType|string| Возможные значения: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
-|userFlowTypeVersion|Одинарное| Это версия типа пользовательского потока. Каждый тип пользовательского потока может иметь различные возможные версии, например 1, 1.1 или 2.  |
+|userFlowTypeVersion|Одинарное| Это версия типа потока пользователя. Каждый тип потока пользователей может иметь различные возможные версии, такие как 1, 1.1 или 2.  |
 
 ## <a name="relationships"></a>Связи
 

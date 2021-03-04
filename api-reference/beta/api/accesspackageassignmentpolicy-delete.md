@@ -1,24 +1,24 @@
 ---
-title: Удаление Акцесспаккажеассигнментполици
-description: Удаление Акцесспаккажеассигнментполици.
+title: Удаление accessPackageAssignmentPolicy
+description: Удаление accessPackageAssignmentPolicy.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 042a0389308e1f68171bea3586daf6ced7a7a090
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fa2ca4ac595beaf917a76c20d88d148ddf02516f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952227"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439753"
 ---
-# <a name="delete-accesspackageassignmentpolicy"></a>Удаление Акцесспаккажеассигнментполици
+# <a name="delete-accesspackageassignmentpolicy"></a>Удаление accessPackageAssignmentPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении обслуживанием Azure AD](../resources/entitlementmanagement-root.md)удалите [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md).
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)удалите [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48952227"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,13 +44,13 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 |:--------------|:--------------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа "нет содержимого" (204). Метод не возвращает данные в теле отклика.
+В случае успешной работы этот метод возвращает код ответа 204 Без контента. В тексте отклика не возвращается никаких данных.
 
 ## <a name="examples"></a>Примеры
 

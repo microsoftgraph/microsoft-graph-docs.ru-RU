@@ -1,16 +1,16 @@
 ---
 title: Создание accessPackageAssignmentRequest
-description: Создайте новый accessPackageAssignmentRequest.
+description: Создание нового accessPackageAssignmentRequest.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75388c02cf63113c28475b77b194a67c76d588b8
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 0e5daf6473e3e5da652c73f317c7d3a559f4dd67
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719551"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439641"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "49719551"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [средстве управления правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,8 +27,8 @@ ms.locfileid: "49719551"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,30 +42,30 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в JSON.
+В теле запроса поставляем представление JSON объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
 
-Чтобы администратор запрашивал создание назначения для пользователя, свойство **requestType** имеет значение , а свойство `AdminAdd` **accessPackageAssignment** содержит назначенного пользователя, свойство `targetId` **assignmentPolicyId,** определяющие [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и свойство **accessPackageId,** определяющие [accessPackage.](../resources/accesspackage.md)
+Для администратора, запрашиваемого для создания назначения для пользователя, значение свойства **requestType** составляет , а свойство `AdminAdd` **accessPackageAssignment** содержит назначенного пользователя, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage.](../resources/accesspackage.md)
 
-Чтобы администратор запрашивал удаление назначения, свойство **requestType** имеет значение , а свойство `AdminRemove` **accessPackageAssignment** содержит свойство **id,** определяющие удаляемую [accessPackageAssignment.](../resources/accesspackageassignment.md)
+Для администратора, запрашиваемого для удаления назначения, значение свойства **requestType** составляет , а свойство accessPackageAssignment содержит свойство id, определяющий удаляемую `AdminRemove`  [accessPackageAssignment.](../resources/accesspackageassignment.md) 
 
-Чтобы пользователь, не управляющего, запросил создание назначения для себя, свойство **requestType** имеет значение , а свойство `UserAdd` **accessPackageAssignment содержит свойство accessPackageAssignment** с ИД самих пользователей, свойство `targetId` **assignmentPolicyId,** определяющие [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и свойство **accessPackageId,** определяющие [accessPackage](../resources/accesspackage.md).  Пользователь, который делает запрос, должен уже существовать в каталоге.
+Для пользователя, не администратора, чтобы попросить создать назначение для себя, значение свойства **requestType** является , и `UserAdd` свойство **accessPackageAssignment** содержит с ID самих пользователей, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage](../resources/accesspackage.md).  Пользователь, делая запрос, должен уже существовать в каталоге.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика из 200 рядов и новый объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте отклика.  
+В случае успешного выполнения этот метод возвращает код ответа из 200 серий и новый объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.  
 
-Если это запрос, то затем также создается `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject.](../resources/accesspackagesubject.md) Их можно найти с помощью параметров запроса при [перечислении объектов accessPackageAssignment.](accesspackageassignment-list.md)
+Если это запрос, то впоследствии создается `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject.](../resources/accesspackagesubject.md) Вы можете найти тех, кто использует параметры запроса при [перечислении accessPackageAssignments](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a>Пример 1. Администратор запрашивает прямое назначение для пользователя
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя. Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, **значение targetID** — это ИД объекта назначенного пользователя, значение **accessPackageId** — это нужный пакет доступа для этого пользователя, а **значение assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.
+Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя. Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, значение **targetID** — это объектный ID назначенного пользователя, значение **accessPackageId** — это желаемый пакет доступа для этого пользователя, а значение **assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -132,10 +132,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Пример 2. Пользователь запрашивает пакет и отвечает на вопросы на утверждение
+### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Пример 2. Пользователь запрашивает пакет и отвечает на вопросы для утверждения
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, в котором запрашиватель предоставил ответ утвержденному, чтобы помочь ему принять решение.
+Ниже приводится пример запроса, в котором запросчик предоставил ответы на вопросы, чтобы помочь ему принять решение.
  
 
 

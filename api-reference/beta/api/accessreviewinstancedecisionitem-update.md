@@ -1,30 +1,30 @@
 ---
-title: Обновление АкцессревиевинстанцедеЦисионитем
-description: Обновление существующего объекта АкцессревиевинстанцедеЦисионитем, для которого вызывающий пользователь является проверяющим.
+title: Обновление accessReviewInstanceDecisionItem
+description: Обновление существующего объекта accessReviewInstanceDecisionItem, вызываемого пользователем, является рецензентом.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2f14ed26169c659354af16963e03e449f246421c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4322009b4f574e9a32958c25bf65320d4e535435
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214387"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439116"
 ---
-# <a name="update-accessreviewinstancedecisionitem"></a>Обновление АкцессревиевинстанцедеЦисионитем
+# <a name="update-accessreviewinstancedecisionitem"></a>Обновление accessReviewInstanceDecisionItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление решений Access, известных как [акцессревиевинстанцедеЦисионитемс](../resources/accessreviewinstancedecisionitem.md), для которых пользователь является рецензентом.
+Обновите решения о доступе, известные как [accessReviewInstanceDecisionItems,](../resources/accessreviewinstancedecisionitem.md)для которых пользователь является рецензентом.
 
 >[!NOTE]
->Любые изменения, внесенные в **акцессревиевинстанцедеЦисионитем** , могут выполняться только вызываемыми пользователями, указанными в качестве проверяющего для родительского [акцессревиевинстанце](../resources/accessreviewinstance.md).
+>Любые обновления, сделанные в **accessReviewInstanceDecisionItem,** могут быть сделаны только путем вызова пользователей, которые указаны в качестве рецензента для родительского [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Делегированные разрешения для личных учетных записей Майкрософт не поддерживаются. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих разрешений. Делегирование разрешений личным учетным записям Майкрософт не поддерживается. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -43,20 +43,20 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В следующей таблице приведены свойства, принятые для обновления `accessReviewInstanceDecisionItem` .
+В следующей таблице показаны свойства, принятые для обновления `accessReviewInstanceDecisionItem` .
 
 | Свойство     | Тип       | Описание |
 |:-------------|:------------|:------------|
-| решении  | String | Решение о доступе к проверяемой сущности. Возможные значения: `Approve` `Deny` `NotReviewed` `DontKnow` . Обязательный.  |
-|  текста | String | Контекст проверки, предоставленной администраторам. Является обязательным, если Жустификатионрекуиредонаппровал имеет значение true для Акцессревиевсчедуледефинитион.  |
+| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve` `Deny` `NotReviewed` `DontKnow` . Обязательный.  |
+|  обоснование | String | Контекст обзора, предоставленного администраторам. Обязательно, если оправданиеRequiredOnApproval является true на accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `204, NoContent` код отклика и без текста отклика.
+В случае успешной работы этот метод возвращает код `204, NoContent` ответа и не возвращает текст ответа.
 
 ### <a name="request"></a>Запрос
 ## <a name="examples"></a>Примеры
 
-Это пример утверждающего доступа для пользователя, представленного в `accessReviewInstanceDecisionItem` .
+Это пример утверждения доступа для пользователя, представленного пользователем `accessReviewInstanceDecisionItem` .
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,24 +1,24 @@
 ---
-title: 'Акцессревиевинстанце: Акцептрекоммендатионс'
-description: 'Разрешает принятие рекомендаций по всем непроверенным решениям в экземпляре проверки доступа, на котором они являются проверяющими. '
+title: 'accessReviewInstance: acceptRecommendations'
+description: 'Позволяет принимать рекомендации по всем не рассмотренным решениям в экземпляре проверки доступа, на который они являются рецензентом. '
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a9dee9f65d4070860c2826b64b602984d7d324a1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2ed7a78287acd725955220cfaca426faf0739556
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222198"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439249"
 ---
-# <a name="accessreviewinstance-acceptrecommendations"></a>Акцессревиевинстанце: Акцептрекоммендатионс
+# <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Разрешает принятие рекомендаций для всех непроверенных [акцессревиевинстанцедеЦисионитем](../resources/accessreviewinstancedecisionitem.md) на [акцессревиевинстанце](../resources/accessreviewinstance.md) , на которых они являются рецензентом.
+Позволяет принимать рекомендации для всех не рассмотренных [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) на [accessReviewInstance,](../resources/accessreviewinstance.md) на который они являются рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "49222198"
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
 
-Пользователь, вошедшего в систему, также должен быть проверяющим на Акцессревиевинстанце.
+В accessReviewInstance пользователь должен также быть рецензентом.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /me/pendingAccessReviewInstances/{instance-id}/acceptRecommendations
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,24 +1,24 @@
 ---
-title: Создание Акцесспаккаже
-description: Создание нового Акцесспаккаже.
+title: Создание accessPackage
+description: Создание нового accessPackage.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3657d5ba4e3fbe120ec5bf92ebf3ddd25c43c13e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1a415978968b4fa03133de156702ead1c473f1a1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952290"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439774"
 ---
-# <a name="create-accesspackage"></a>Создание Акцесспаккаже
+# <a name="create-accesspackage"></a>Создание accessPackage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [акцесспаккаже](../resources/accesspackage.md) .
+Создайте новый [объект accessPackage.](../resources/accesspackage.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48952290"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,13 +45,13 @@ POST /identityGovernance/entitlementManagement/accessPackages
 | Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [акцесспаккаже](../resources/accesspackage.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта accessPackage.](../resources/accesspackage.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика 201, созданный в теле отклика, и новый объект [акцесспаккаже](../resources/accesspackage.md) .
+В случае успешной работы этот метод возвращает созданный код ответа 201 и новый [объект accessPackage](../resources/accesspackage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

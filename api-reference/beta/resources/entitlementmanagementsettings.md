@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса entitlementManagementSettings
-description: Представляет параметры для всего клиента для управления правами Azure AD.
+title: тип ресурса entitlementManagementSettings
+description: Представляет параметры для управления правами Azure AD для всех клиентов.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9d5cc340837f173924802196bf12c9a63f26949a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b4b6ee584e671e070955eb7c065c59cb8481c375
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159124"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440355"
 ---
-# <a name="entitlementmanagementsettings-resource-type"></a>Тип ресурса entitlementManagementSettings
+# <a name="entitlementmanagementsettings-resource-type"></a>тип ресурса entitlementManagementSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры, управляющие поведением управления [правами Azure AD.](entitlementmanagement-root.md)
+Представляет параметры, которые контролируют поведение управления правами [Azure AD.](entitlementmanagement-root.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Чтение свойств объекта **entitlementManagementSettings.** |
+| [получение](../api/entitlementmanagementsettings-get.md); | [entitlementManagementSettings](entitlementmanagementsettings.md) | Ознакомьтесь с свойствами объекта **entitlementManagementSettings.** |
 | [Обновление](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Обновление свойств объекта **entitlementManagementSettings.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|String|Один из `None` `BlockSignIn` , или `BlockSignInAndDelete` . |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|Если это так, то количество дней после блокировки внешнего пользователя на вход до удаления его `externalUserLifecycleAction` `BlockSignInAndDelete` учетной записи.|
+|externalUserLifecycleAction|String|Один `None` из `BlockSignIn` , или `BlockSignInAndDelete` . |
+|daysUntilExternalUserDeletedAfterBlocked|Int64|Если это так, то количество дней после блокировки внешнего пользователя при входе до удаления `externalUserLifecycleAction` `BlockSignInAndDelete` учетной записи.|
 
 ## <a name="relationships"></a>Связи
 

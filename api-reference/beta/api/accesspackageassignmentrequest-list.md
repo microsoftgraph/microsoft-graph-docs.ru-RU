@@ -1,24 +1,24 @@
 ---
-title: Список Акцесспаккажеассигнментрекуестс
-description: Получение списка объектов Акцесспаккажеассигнментрекуест.
+title: Список accessPackageAssignmentRequests
+description: Извлечение списка объектов accessPackageAssignmentRequest.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8b9d6ec77ef3653a5bd9caf7e163529af542b8ab
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a455b4ecddbc264446ffbb8909b06b0f3b66997f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952073"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439686"
 ---
-# <a name="list-accesspackageassignmentrequests"></a>Список Акцесспаккажеассигнментрекуестс
+# <a name="list-accesspackageassignmentrequests"></a>Список accessPackageAssignmentRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md).  Полученный список включает все запросы на начисление, текущие и срок действия которых просрочены, которые вызывающий абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте список объектов [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  В итоговом списке содержатся все запросы на назначение, текущие и просроченные, которые вызываемая имеет доступ к считывке во всех каталогах и пакетах доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48952073"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить пакет доступа для каждого запроса, включите `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включите в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .  Чтобы получить результирующее назначение, включите `$expand=accessPackageAssignment` в запрос.
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить пакет доступа каждого запроса, включайте `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включайте в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .  Чтобы получить результат назначения, включайте `$expand=accessPackageAssignment` запрос.
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,13 +49,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

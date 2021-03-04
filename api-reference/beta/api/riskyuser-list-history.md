@@ -1,24 +1,24 @@
 ---
-title: Журнал списка Рискюсер
-description: Получение журнала рисков
+title: Список истории riskyUser
+description: Извлечение истории рисков
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0f19ee45387996436d47e92f90c98eddd5b9bbad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 28f10f6181d3bfa5091fdb2c98fb584c9bf26452
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977669"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440852"
 ---
-# <a name="list-history-of-riskyuser"></a>Журнал списка Рискюсер
+# <a name="list-history-of-riskyuser"></a>Список истории riskyUser
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение журнала рисков ресурса [рискюсер](../resources/riskyuser.md) .
+Получите историю рисков ресурса [riskyUser.](../resources/riskyuser.md)
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -27,9 +27,9 @@ ms.locfileid: "48977669"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Идентитирискюсер. Read. ALL, Идентитирискусер. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Идентитирискюсер. Read. ALL, Идентитирискусер. ReadWrite. ALL |
+|Приложение | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,15 +44,15 @@ GET /identityProtection/riskyUsers/{id}/history/
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискюсершисторитем](../resources/riskyuserhistoryitem.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и коллекцию объектов `200 OK` [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-list-history-of-a-specific-user"></a>Пример 1: журнал списка определенного пользователя
+### <a name="example-1-list-history-of-a-specific-user"></a>Пример 1. История списка определенного пользователя
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -158,7 +158,7 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-list-history-of-a-specific-user"></a>Пример 2: журнал списка определенного пользователя
+### <a name="example-2-list-history-of-a-specific-user"></a>Пример 2. История списка определенного пользователя
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

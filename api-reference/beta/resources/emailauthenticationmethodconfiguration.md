@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса Емаилаусентикатионмесодконфигуратион
-description: Представляет политику методов проверки подлинности методом проверки подлинности методом OTP
+title: тип ресурса emailAuthenticationMethodConfiguration
+description: Представляет политику методов проверки подлинности OTP электронной почты
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3e3e18973759d7f120dd0bd8e984c98568054960
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 73b620a3fd5bea62aa927722a7dac7ce3d5a9fab
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617145"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440362"
 ---
-# <a name="emailauthenticationmethodconfiguration-resource-type"></a>Тип ресурса Емаилаусентикатионмесодконфигуратион
+# <a name="emailauthenticationmethodconfiguration-resource-type"></a>тип ресурса emailAuthenticationMethodConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику методов проверки подлинности методом проверки подлинности OTP для этого клиента. Политики методов проверки подлинности определяют параметры конфигурации, а также пользователей или группы, для которых разрешено использование метода проверки подлинности. В некоторых случаях для проверки подлинности с помощью облачных пользователей для самостоятельного сброса пароля или внешними пользователями для проверки подлинности может использоваться подтверждение подлинности OTP.
+Представляет политику методов проверки подлинности электронной почты этого клиента. Политики методов проверки подлинности определяют параметры конфигурации, а также пользователей или групп, которым включен метод проверки подлинности. OTP-адрес электронной почты может использоваться облачными пользователями клиента для сброса пароля самообслуживления или внешними пользователями для проверки подлинности в некоторых случаях.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Получение Емаилаусентикатионмесодконфигуратион](../api/emailauthenticationmethodconfiguration-get.md)|[емаилаусентикатионмесодконфигуратион](../resources/emailauthenticationmethodconfiguration.md)|Чтение свойств и связей объекта Емаилаусентикатионмесодконфигуратион.|
-|[Обновление Емаилаусентикатионмесодконфигуратион](../api/emailauthenticationmethodconfiguration-update.md)|[емаилаусентикатионмесодконфигуратион](../resources/emailauthenticationmethodconfiguration.md)|Обновление свойств объекта Емаилаусентикатионмесодконфигуратион.|
-|[Удаление Емаилаусентикатионмесодконфигуратион](../api/emailauthenticationmethodconfiguration-delete.md)|Нет|Удаляет объект Емаилаусентикатионмесодконфигуратион.|
+|[Получить emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-get.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Ознакомьтесь с свойствами и отношениями объекта emailAuthenticationMethodConfiguration.|
+|[Обновление emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-update.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Обновление свойств объекта emailAuthenticationMethodConfiguration.|
+|[Удаление emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-delete.md)|Нет|Удаляет объект emailAuthenticationMethodConfiguration.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики метода проверки подлинности. Наследуется от [аусентикатионмесодконфигуратион](../resources/authenticationmethodconfiguration.md).|
-|state|аусентикатионмесодстате|Указывает, включен ли этот метод проверки подлинности. Возможные значения: `enabled`, `disabled`.|
-|алловекстерналидтаусимаилотп|екстерналемаилотпстате|Определяет, будут ли для проверки подлинности использоваться внешние пользователи для проверки подлинности методом OTP. Возможные значения: `default`, `enabled`, `disabled`, `unknownFutureValue`. Клиенты, для `default` которых не использовалась общедоступная Предварительная версия, автоматически включили OTP, начиная с 2021 марта.|
+|id|String|Идентификатор политики метода проверки подлинности. Унаследованный от [проверки подлинностиMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|state|authenticationMethodState|Указывает, включен этот метод проверки подлинности или нет. Возможные значения: `enabled`, `disabled`.|
+|allowExternalIdToUseEmailOtp|externalEmailOtpState|Определяет, является ли OTP электронной почты для внешних пользователей для проверки подлинности. Возможные значения: `default`, `enabled`, `disabled`, `unknownFutureValue`. Клиенты в состоянии, которое не использует общедоступный предварительный просмотр, автоматически будут иметь включенную OTP-почту начиная с `default` марта 2021 г.|
 
 ## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|инклудетаржетс|Коллекция [аусентикатионмесодтаржет](../resources/authenticationmethodtarget.md)|Коллекция пользователей или групп, которым разрешено использовать метод проверки подлинности.|
+|includeTargets|[коллекция authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Коллекция пользователей или групп, которые могут использовать метод проверки подлинности.|
 
 ## <a name="json-representation"></a>Представление JSON
 

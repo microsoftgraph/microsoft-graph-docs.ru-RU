@@ -1,24 +1,24 @@
 ---
-title: Создание Акцесспаккажересаурцеролескопе
-description: Создайте новый Акцесспаккажересаурцеролескопе для добавления роли ресурса в пакет Access.
+title: Создание accessPackageResourceRoleScope
+description: Создайте новый accessPackageResourceRoleScope для добавления роли ресурса в пакет доступа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 21111e91d87d3ff70f8edb8de826c87310b99007
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffaedc45cc512b554fda3ce4dd06794fba716b16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952325"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439811"
 ---
-# <a name="create-accesspackageresourcerolescope"></a>Создание Акцесспаккажересаурцеролескопе
+# <a name="create-accesspackageresourcerolescope"></a>Создание accessPackageResourceRoleScope
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) для добавления роли ресурса в пакет Access.  Ресурс пакета Access уже должен существовать в каталоге пакетов Access.  Все последующие запросы на назначение пакетов доступа к этому пакету доступа будут включать эту роль ресурса.  
+Создайте [новый accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) для добавления роли ресурса в пакет доступа.  Ресурс пакета доступа уже должен существовать в каталоге пакетов доступа.  Все последующие запросы на назначение пакета доступа к этому пакету доступа будут включать эту роль ресурса.  
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48952325"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,11 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в формате JSON.  Включите в объект связи для [акцесспаккажересаурцероле](../resources/accesspackageresourcerole.md) и [акцесспаккажересаурцескопе](../resources/accesspackageresourcescope.md).  
+В теле запроса устройте представление JSON объекта [accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Включив в объект связи с [accessPackageResourceRole](../resources/accesspackageresourcerole.md) и [accessPackageResourceScope.](../resources/accesspackageresourcescope.md)  
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа из 200 серий и новый [объект accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

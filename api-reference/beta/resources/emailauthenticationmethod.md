@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса Емаилаусентикатионмесод
-description: Представление адреса электронной почты, зарегистрированного для пользователя. Электронная почта — способ проверки подлинности, доступный только для самостоятельного сброса пароля (SSPR)
+title: тип ресурса emailAuthenticationMethod
+description: Представление адреса электронной почты, зарегистрированного пользователем. Электронная почта — это метод проверки подлинности, доступный только для сброса пароля самообслуживления (SSPR)
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6dde3c9a859f2527241b66c0172d6b5dd877aac4
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: a24a67fdb4bcc054036de26ba235bf4bac0f2da2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418475"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440369"
 ---
-# <a name="emailauthenticationmethod-resource-type"></a>Тип ресурса Емаилаусентикатионмесод
+# <a name="emailauthenticationmethod-resource-type"></a>тип ресурса emailAuthenticationMethod
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представление адреса электронной почты, зарегистрированного для пользователя. Электронная почта — это способ проверки подлинности, доступный только для самостоятельного сброса пароля (SSPR). У пользователей может быть только один способ проверки подлинности электронной почты.
+Представление адреса электронной почты, зарегистрированного пользователем. Электронная почта — это метод проверки подлинности, доступный только для сброса пароля самообслуживления (SSPR). У пользователей может быть только один метод проверки подлинности электронной почты.
 
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Перечисление](../api/emailauthenticationmethod-list.md)|Коллекция [емаилаусентикатионмесод](../resources/emailauthenticationmethod.md)|Получение списка Емаилаусентикатионмесодс пользователя. У пользователей может быть только один способ проверки подлинности электронной почты.|
-|[Создание](../api/emailauthenticationmethod-post.md)|[емаилаусентикатионмесод](../resources/emailauthenticationmethod.md)|Создание объекта Емаилмесодс пользователя.|
-|[Получение](../api/emailauthenticationmethod-get.md)|[емаилаусентикатионмесод](../resources/emailauthenticationmethod.md)|Получение свойств объекта Емаилаусентикатионмесод пользователя.|
-|[Обновление](../api/emailauthenticationmethod-update.md)|[емаилаусентикатионмесод](../resources/emailauthenticationmethod.md)|Обновление свойств объекта Емаилмесодс пользователя.|
-|[Удаление](../api/emailauthenticationmethod-delete.md)|Нет|Удаление объекта Емаилаусентикатионмесод пользователя.|
+|[Список](../api/emailauthenticationmethod-list.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Извлечение списка электронной почты пользователяAuthenticationMethods. У пользователей может быть только один метод проверки подлинности электронной почты.|
+|[Создание](../api/emailauthenticationmethod-post.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Создайте объект электронной почты пользователяMethods.|
+|[получение](../api/emailauthenticationmethod-get.md);|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Извлечение свойств объекта электронной почты пользователяAuthenticationMethod.|
+|[Обновление](../api/emailauthenticationmethod-update.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Обновление свойств объекта электронной почты пользователяMethods.|
+|[удаление](../api/emailauthenticationmethod-delete.md);|Нет|Удаление объекта электронной почты пользователяAuthenticationMethod.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор адреса электронной почты, зарегистрированный для этого пользователя.|
+|id|String|Идентификатор адреса электронной почты, зарегистрированного для этого пользователя.|
 |emailAddress|String|Адрес электронной почты, зарегистрированный для этого пользователя.|
 
 ## <a name="relationships"></a>Связи

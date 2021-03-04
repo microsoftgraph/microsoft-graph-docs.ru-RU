@@ -1,63 +1,63 @@
 ---
-title: Тип ресурса Идентитирискевент
-description: 'Событие риска, обнаруженное защитой удостоверений Azure Active Directory. Это базовый тип для каждого конкретного типа событий риска:'
+title: тип ресурса identityRiskEvent
+description: 'Событие риска, обнаруженное службой Azure Active Directory Identity Protection. Это базовый тип для каждого конкретного типа событий риска:'
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 77ca53e3da465438bef1054b281842faa866a38c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: acb48ce5ef63abf5ec2a09d8a3365a744bb8a668
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401416"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440292"
 ---
-# <a name="identityriskevent-resource-type-deprecated"></a>Тип ресурса Идентитирискевент (не рекомендуется)
+# <a name="identityriskevent-resource-type-deprecated"></a>тип ресурса identityRiskEvent (обесценен)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+>API **identityRiskEvents** обесценен и прекратит возвращать данные 10 января 2020 г. Подробные сведения см. в материале [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Событие риска, обнаруженное [защитой удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection). Это базовый тип для каждого конкретного типа событий риска:
+Событие риска, обнаруженное [Azure Active Directory Identity Protection.](/azure/active-directory/identity-protection/overview-identity-protection) Это базовый тип для каждого конкретного типа событий риска:
 
 | Тип события         | Описание|
 |:---------------|:-----------|
-|[анонимаусиприскевент](anonymousipriskevent.md) | Входы из анонимных IP-адресов. |
-|[малварерискевент](malwareriskevent.md) | Входы с зараженных вредоносными программами устройств. |
-|[импоссиблетравелрискевент](impossibletravelriskevent.md) | Невозможность перемещаться к необычным расположениям. |
-|[леакедкредентиалсрискевент](leakedcredentialsriskevent.md) | Пользователи с потерянными учетными данными. |
-|[суспиЦиаусиприскевент](suspiciousipriskevent.md) | Входы из подозрительных IP-адресов. |
-|[унфамилиарлокатионрискевент](unfamiliarlocationriskevent.md) | Входы из незнакомых расположений. |
+|[anonymousipRiskEvent](anonymousipriskevent.md) | Входы с анонимных IP-адресов. |
+|[malwareRiskEvent](malwareriskevent.md) | Входы с зараженных вредоносными программами устройств. |
+|[impossibleTravelRiskEvent](impossibletravelriskevent.md) | Невозможное путешествие в нетипичные расположения. |
+|[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) | Пользователи с утечкой учетных данных. |
+|[suspiciousIpRiskEvent](suspiciousipriskevent.md) | Входы с подозрительных IP-адресов. |
+|[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | Входы из незнакомых мест. |
 
-Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](/azure/active-directory/active-directory-reporting-risk-events).
+Полные сведения о событиях риска можно найти в документации [azure AD Identity Protection.](/azure/active-directory/active-directory-reporting-risk-events)
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта identityRiskEvent](../api/identityriskevent-get.md) | [идентитирискевент](identityriskevent.md) |Чтение свойств и связей объекта Идентитирискевент.|
+|[Получение объекта identityRiskEvent](../api/identityriskevent-get.md) | [identityRiskEvent](identityriskevent.md) |Чтение свойств и связей объекта identityRiskEvent.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
-|createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
+|createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно дате самого события риска. Это правильное свойство, используемее в качестве фильтра при запросе событий риска.|
 |id|string| Только для чтения|
-|рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventDateTime|dateTimeOffset| Дата и время возникновения события риска|
+|riskEventStatus|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|рискевенттипе|string| Тип риска|
-|userDisplayName|string| Имя пользователя под угрозой|
-|userId|строка| Идентификатор пользователя, который подвергается риску|
-|userPrincipalName|string| Имя участника пользователя, который подвергается риску|
+|riskEventType|string| Тип риска|
+|userDisplayName|string| Имя пользователя, на которого существует риск|
+|userId|строка| ID пользователя, на который существует риск|
+|userPrincipalName|string| Основное имя пользователя пользователя, на которого существует риск|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
+|impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

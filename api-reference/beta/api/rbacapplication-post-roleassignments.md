@@ -1,24 +1,24 @@
 ---
-title: Создание Унифиедролеассигнмент
-description: Создание нового объекта Унифиедролеассигнмент.
+title: Создание unifiedRoleAssignment
+description: Создайте новый объект unifiedRoleAssignment.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef1fbbf7c23e7ee79582d1b1c949b0f013f15713
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d654b852358c94e4b762c794c6da114f19b091af
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975160"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440887"
 ---
-# <a name="create-unifiedroleassignment"></a>Создание Унифиедролеассигнмент
+# <a name="create-unifiedroleassignment"></a>Создание unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [унифиедролеассигнмент](../resources/unifiedroleassignment.md) .
+Создайте новый [объект unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48975160"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | RoleManagement.ReadWrite.Directory |
+| Приложение                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,23 +42,23 @@ POST /roleManagement/directory/roleAssignments
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeId` , или область, зависящая от приложения, например `appScopeId` . Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. Дополнительные сведения см. в разделе [аппскопе](../resources/appscope.md).
+В теле запроса поставляем представление JSON объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md) Запрос должен иметь область, определенную в Azure AD, например область, определенную приложению, например `directoryScopeId` `appScopeId` . Примерами области Azure AD являются клиенты ("/"), административные единицы или приложения. Дополнительные сведения см. [в appScope.](../resources/appscope.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>Пример 1: Создание назначения роли на уровне клиента
+### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>Пример 1. Создание назначения ролей в области клиента
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Обратите внимание на использование параметра Ролетемплатеид для Роледефинитионид. Роледефинитионид может быть либо идентификатором шаблона на уровне службы, либо Роледефинитионид, зависящим от каталога.
+Ниже приведен пример запроса. Обратите внимание на использование ролиTemplateId для roleDefinitionId. roleDefinitionId может быть как ИД-шаблона для всей службы, так и каталогом ролейDefinitionId.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,11 +122,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>Пример 2: Создание назначения роли на уровне административной единицы
+### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>Пример 2. Создание назначения ролей над областью административного подразделения
 
 #### <a name="request"></a>Запрос
 
-В следующем примере роль администратора основного пользователя назначается административной единице.
+В следующем примере назначается основная роль администратора пользователя над административным подразделением.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

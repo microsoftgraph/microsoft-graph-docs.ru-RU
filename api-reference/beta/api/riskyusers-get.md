@@ -1,24 +1,24 @@
 ---
-title: Получение Рискюсер
-description: Получение свойств и связей объекта **рискюсер** .
+title: Get riskyUser
+description: Извлечение свойств и связей объекта **riskyUser.**
 localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d3b255bbcf6f0de516b004513c98e08f05420b1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 8b5a249d6baaac5fe1234888832633317e049cb3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979165"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440838"
 ---
-# <a name="get-riskyuser"></a>Получение Рискюсер
+# <a name="get-riskyuser"></a>Get riskyUser
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта **рискюсер** .
+Извлечение свойств и связей объекта **riskyUser.**
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -29,7 +29,7 @@ ms.locfileid: "48979165"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskyUser.Read.All |
+|Приложение | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,16 +43,16 @@ GET /identityProtection/riskyUsers/{id}
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательное свойство.|
+| Workbook-Session-Id  | ID сеанса книги, определяя, сохраняются ли изменения. Необязательный параметр.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискюсер](../resources/riskyuser.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [riskyUser](../resources/riskyuser.md) в тексте ответа.
 ## <a name="examples"></a>Примеры
-### <a name="example-1-get-a-risky-user"></a>Пример 1: получение опасного пользователя
+### <a name="example-1-get-a-risky-user"></a>Пример 1. Получить рискованного пользователя
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -106,7 +106,7 @@ Content-type: application/json
   "userPrincipalName": "alexw@contoso.com"
 }
 ```
-### <a name="example-2-get-risky-users"></a>Пример 2: получение рискованных пользователей
+### <a name="example-2-get-risky-users"></a>Пример 2. Получить рискованных пользователей
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

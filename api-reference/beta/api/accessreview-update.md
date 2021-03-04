@@ -1,26 +1,26 @@
 ---
-title: Обновление Акцессревиев
-description: В функции рецензирования Access в Azure AD обновите существующий объект Акцессревиев, чтобы изменить одно или несколько его свойств.
+title: Обновление accessReview
+description: В функции обзоров доступа Azure AD обновим существующий объект accessReview, чтобы изменить одно или несколько его свойств.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1229729f2d3d149bf06d5a6308fa659ed56dcca7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6de1862411d20f1e1fc68fc202a5e59aa888f165
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952613"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439263"
 ---
-# <a name="update-accessreview"></a>Обновление Акцессревиев
+# <a name="update-accessreview"></a>Обновление accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](../resources/accessreviews-root.md) в Azure AD обновите существующий объект [акцессревиев](../resources/accessreview.md) , чтобы изменить одно или несколько его свойств.
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) обновим существующий [объект accessReview,](../resources/accessreview.md) чтобы изменить одно или несколько его свойств.
 
-Этот API не предназначен для изменения рецензентов или решений проверки.  Чтобы изменить проверяющих, используйте API [аддревиевер](accessreview-addreviewer.md) или [ремоверевиевер](accessreview-removereviewer.md) .  Чтобы остановить уже начатую проверку или уже запущенный экземпляр повторяющегося рецензирования, используйте API [Stop](accessreview-stop.md) . Чтобы применить решения к целевой группе или правам доступа приложения, используйте API [Apply](accessreview-apply.md) . 
+Этот API не предназначен для изменения рецензентов или решений проверки.  Чтобы изменить рецензентов, используйте [API addReviewer](accessreview-addreviewer.md) или [removeReviewer.](accessreview-removereviewer.md)  Чтобы остановить уже запущенный разовую проверку или уже запущенный экземпляр повторяющегося обзора, используйте API [остановки.](accessreview-stop.md) Чтобы применить решения к правам доступа к целевой группе или приложению, используйте [применимый](accessreview-apply.md) API. 
 
 
 ## <a name="permissions"></a>Разрешения
@@ -28,9 +28,9 @@ ms.locfileid: "48952613"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.ReadWrite.Membership |
+|Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,29 +42,29 @@ PATCH /accessReviews/{reviewId}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление параметров объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В теле запроса поставляем представление JSON параметров [объекта accessReview.](../resources/accessreview.md)
 
-В следующей таблице приведены свойства, которые можно указать при обновлении Акцессревиев.
+В следующей таблице показаны свойства, которые можно получить при обновлении accessReview.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | Имя проверки доступа.  |
-| `startDateTime`           |`DateTimeOffset`                                                | Дата и время, когда выполняется запланированное начало проверки.  Это должна быть Дата в будущем.   |
-| `endDateTime`             |`DateTimeOffset`                                                | Дата и время окончания запланированного рассмотрения. Это должен быть по крайней мере один день позже даты начала.   |
-| `description`             |`String`                                                        | Описание, которое будет отображаться для рецензентов. |
+| `displayName`             |`String`                                                        | Имя обзора доступа.  |
+| `startDateTime`           |`DateTimeOffset`                                                | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.   |
+| `endDateTime`             |`DateTimeOffset`                                                | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.   |
+| `description`             |`String`                                                        | Описание, чтобы показать рецензентам. |
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `204, Accepted` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `204, Accepted` [объект accessReview](../resources/accessreview.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-Это пример обновления доступа к одноразовой (неповторной) проверке доступа.
+Это пример обновления разового (не повторяемого) обзора доступа.
 
 ##### <a name="request"></a>Запрос
-В теле запроса добавьте представление новых свойств объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
+В теле запроса поставляем представление JSON о новых свойствах [объекта accessReview.](../resources/accessreview.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)

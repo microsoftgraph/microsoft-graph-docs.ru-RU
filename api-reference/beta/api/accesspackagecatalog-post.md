@@ -1,24 +1,24 @@
 ---
-title: Создание Акцесспаккажекаталог
-description: Создание нового Акцесспаккажекаталог.
+title: Создание accessPackageCatalog
+description: Создание нового accessPackageCatalog.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cdf414490d10445574cb3b0442e6fa4496f7dec5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 783744f3e2cfc59f20e2105468b5f2cdc2d7ee7d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951832"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439529"
 ---
-# <a name="create-accesspackagecatalog"></a>Создание Акцесспаккажекаталог
+# <a name="create-accesspackagecatalog"></a>Создание accessPackageCatalog
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [акцесспаккажекаталог](../resources/accesspackagecatalog.md) .
+Создайте новый [объект accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48951832"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,13 +45,13 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 | Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в формате JSON.  Включите свойства **DisplayName** , **Description** и **исекстерналливисибле** .
+В теле запроса поставляем представление JSON объекта [accessPackageCatalog.](../resources/accesspackagecatalog.md)  **Включай имя отображения,** **описание** и **свойства isExternallyVisible.**
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика 200-й серии и новый [объект accessPackageCatalog](../resources/accesspackagecatalog.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

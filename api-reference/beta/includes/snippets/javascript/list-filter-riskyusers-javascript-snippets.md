@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c7b6f38f25300135e0ccc8f5ac1475efeb36f5fb
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: e19ca488f1af3c453165ee1f0248eade14f7bc3b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570174"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440780"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 let res = await client.api('/identityProtection/riskyUsers')
     .version('beta')
-    .filter('riskLevel eq microsoft.graph.riskLevel'medium'')
+    .filter('riskLevel eq microsoft.graph.riskLevel\'medium\'')
     .get();
 
 ```

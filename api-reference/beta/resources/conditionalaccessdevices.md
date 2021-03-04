@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Кондитионалакцессдевицес
+title: тип ресурса conditionalAccessDevices
 description: Представляет устройства в области политики.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f0610fb376b265a261b8a88ab4181dd89bb9f6c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a42e6023ace493c5efb230ffd53eb9c4caee7d16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040077"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440530"
 ---
-# <a name="conditionalaccessdevices-resource-type"></a>Тип ресурса Кондитионалакцессдевицес
+# <a name="conditionalaccessdevices-resource-type"></a>тип ресурса conditionalAccessDevices
 
 Пространство имен: microsoft.graph
 
@@ -24,10 +24,12 @@ ms.locfileid: "48040077"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклудедевицестатес | Коллекция String | Состояния политики. `All` — Единственное допустимое значение. |
-| ексклудедевицестатес | Коллекция String | Состояния, исключенные из области применения политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeDevices | Коллекция строк | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeDevices | Коллекция строк | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeDeviceStates (deprecated)| Коллекция строк | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeDeviceStates (deprecated)| Коллекция строк | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -38,8 +40,8 @@ ms.locfileid: "48040077"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "includeDeviceStates",
-    "excludeDeviceStates"
+    "includeDevices",
+    "excludeDevices"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -47,8 +49,8 @@ ms.locfileid: "48040077"
 
 ```json
 {
-  "includeDeviceStates": [ "String" ],
-  "excludeDeviceStates": [ "String" ]
+  "includeDevices": [ "String" ],
+  "excludeDevices": [ "String" ]
 }
 ```
 
@@ -56,7 +58,7 @@ ms.locfileid: "48040077"
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "conditionalAccessDeviceStates resource",
+  "description": "conditionalAccessDevices resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

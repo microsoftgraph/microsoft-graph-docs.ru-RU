@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryRoleTemplate
-description: Представляет шаблон роли каталога. Шаблон роли каталога определяет значения свойств роли каталога (directoryRole). Существует связанный объект шаблона роли каталога для каждой роли каталога, которая может быть активирована в клиенте.
+description: Представляет шаблон ролей каталога. Шаблон ролей каталога указывает значения свойств роли каталога (directoryRole). Существует связанный объект шаблона ролей каталога для каждой из ролей каталога, которые могут быть активированы в клиенте.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3316936c755ec05cbfad9d1fe9876fc14a2e1ba4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 18684434fa7a7b34d82fc98ff7caf34595bc91ef
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027092"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440460"
 ---
 # <a name="directoryroletemplate-resource-type"></a>Тип ресурса directoryRoleTemplate
 
@@ -34,7 +34,7 @@ ms.locfileid: "48027092"
 |displayName|String|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
 |id|String|Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

@@ -1,24 +1,24 @@
 ---
-title: Список Акцесспаккажересаурцеролескопес
-description: Получение списка объектов акцесспаккажересаурцеролескопе.
+title: Список accessPackageResourceRoleScopes
+description: Извлечение списка объектов accesspackageresourcerolescope.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3223b5ea5c4673e38cdcfcf256edc232a05e28bc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82a70b30c7669cecc209b5a129dbfaeba5a89f8b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952353"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439823"
 ---
-# <a name="list-accesspackageresourcerolescopes"></a>Список Акцесспаккажересаурцеролескопес
+# <a name="list-accesspackageresourcerolescopes"></a>Список accessPackageResourceRoleScopes
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение пакета Access со списком объектов [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) .  Каждый объект связывается с [акцесспаккажересаурцероле](../resources/accesspackageresourcerole.md) и [акцесспаккажересаурцескопе](../resources/accesspackageresourcescope.md).
+Извлечение пакета доступа со списком [объектов accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Каждый объект ссылок на [accessPackageResourceRole](../resources/accesspackageresourcerole.md) и [accessPackageResourceScope](../resources/accesspackageresourcescope.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48952353"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод использует параметры запроса OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод использует параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [акцесспаккаже](../resources/accesspackage.md) , содержащий коллекцию объектов [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [accessPackage,](../resources/accesspackage.md) содержащий коллекцию объектов [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

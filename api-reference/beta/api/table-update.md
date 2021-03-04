@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d5348b648a515bf31258e46c1a21a0da0fd65ac9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f4ae70f180520e312fcf7f08847d319db260b85c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980418"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440695"
 ---
 # <a name="update-table"></a>Обновление таблицы
 
@@ -48,7 +48,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 |name|string|Имя таблицы.|
 |showHeaders|boolean|Указывает, отображается ли строка заголовков. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.|
 |showTotals|boolean|Указывает, отображается ли строка итогов. Можно задать это значение, чтобы отобразить или скрыть строку итогов.|
-|style|string|Постоянное значение, представляющее стиль таблицы. Возможные значения: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.|
+|style|string|Постоянное значение, представляющее стиль таблицы. Возможные значения: `TableStyleLight1` через `TableStyleLight21` , через , `TableStyleMedium1` через  `TableStyleMedium28` `TableStyleDark1` `TableStyleDark11` . Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.|
 
 ## <a name="response"></a>Отклик
 

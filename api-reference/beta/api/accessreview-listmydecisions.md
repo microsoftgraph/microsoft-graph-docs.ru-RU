@@ -1,34 +1,34 @@
 ---
-title: Список моих решений Акцессревиев
-description: В функции рецензирования Access в Azure AD извлекаются решения объекта Акцессревиев для вызывающего пользователя как проверяющего.
+title: Список решений accessReview
+description: В функции обзоров доступа Azure AD извлекаем решения объекта accessReview для вызываемого пользователя в качестве рецензента.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e92a34429cdde9e9911f309439394d44dfb6fd1e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ca028cb7605f90037ec41b8c1e6d994766bf10d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951879"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439358"
 ---
-# <a name="list-my-accessreview-decisions"></a>Список моих решений Акцессревиев
+# <a name="list-my-accessreview-decisions"></a>Список решений accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](../resources/accessreviews-root.md) в Azure AD извлекаются решения объекта [акцессревиев](../resources/accessreview.md) для вызывающего пользователя как проверяющего.
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем решения объекта [accessReview](../resources/accessreview.md) для вызываемого пользователя в качестве рецензента.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL   |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
-Кроме того, вошедшего в систему пользователь должен иметь разрешение на чтение этой конкретной проверки доступа.
+Подписанное в пользователе также должно быть разрешено прочитать данный обзор доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +40,11 @@ GET /accessReviews/{reviewId}/myDecisions
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не следует предоставлять текст запроса.
+## <a name="request-body"></a>Тело запроса
+Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [акцессревиевдеЦисион](../resources/accessreviewdecision.md) в теле отклика, для которого вызывающий пользователь является назначенным рецензентом.
+В случае успешной работы этот метод возвращает код отклика и массив объектов `200, OK` [accessReviewDecision](../resources/accessreviewdecision.md) в теле ответа, для которых вызываемая пользователь является назначенным рецензентом.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -106,8 +106,8 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Акцессревиев](accessreview-get.md) |  [акцессревиев](../resources/accessreview.md) |  Получение проверки доступа. |
-|[Список решений Акцессревиев](accessreview-listdecisions.md) |     Коллекция [акцессревиевдеЦисион](../resources/accessreviewdecision.md)|    Получение всех решений Акцессревиев.|
+|[Получить accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Извлечение обзора доступа. |
+|[Списки решений accessReview](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md) collection|    Извлечение всех решений accessReview.|
 
 
 <!--

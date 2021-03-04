@@ -3,14 +3,14 @@ title: Обновление accessPackageAssignmentPolicy
 description: Обновление свойств объекта accessPackageAssignmentPolicy.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2a82476a61fbc775e894f5c5baf0444468041ab5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6e0c691ce754d0c024dd4a639823f91a7e168035
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872116"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439697"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872116"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновим существующий объект [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md) чтобы изменить одно или несколько его свойств, например отображаемое имя или описание.
+Обнови [существующий объект accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
@@ -27,7 +27,7 @@ ms.locfileid: "49872116"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,32 +43,32 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
-В следующей таблице показаны свойства, необходимые при обновлении [объекта accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+В следующей таблице показаны свойства, необходимые при обновлении [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемого имени политики.|
+|displayName|String|Отображает имя политики.|
 |description|String|Описание политики.|
 |canExtend|Boolean|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
-|durationInDays|Int32|Количество дней, в течение которых назначения из этой политики продлятся до истечения срока их действия.|
-|expirationDateTime|DateTimeOffset|Дата окончания срока действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
+|expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Кто может запросить этот пакет доступа из этой политики.|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Кто должен утверждать запросы на пакет доступа в этой политике.|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Кто должен и как часто проверяются назначения пакета доступа из этой политики. Это свойство имеет null, если проверки не требуются.|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Кто должен и как часто выполнять назначения пакету доступа из этой политики. Это свойство является null, если отзывы не требуются.|
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
 
 
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-В этом обновлении политики был удален один из вариантов вопроса с множественным выбором. В будущем у инициаторов запроса больше не будет возможности удалить их.
+В этом обновлении политики был удален один из вариантов нескольких вариантов выбора. Будущие запросчики больше не будут иметь удаленную опцию, доступную для них.
 
 <!-- {
   "blockType": "request",

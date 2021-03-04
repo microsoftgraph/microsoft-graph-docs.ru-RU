@@ -1,16 +1,16 @@
 ---
 title: Список участников
-description: Используйте этот API, чтобы получить список Members (User и Group) в административной единице.
+description: Используйте этот API для получения списка участников (пользователя и группы) в административном подразделении.
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bcb61938d42ac38a04b90c542d3ea1ac207e034d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 873bf5b812be584725b515aa6f23505bd85cea42
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997251"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438843"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -18,18 +18,18 @@ ms.locfileid: "47997251"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы получить список Members (User и Group) в административной единице.
+Используйте этот API для получения списка участников (пользователя и группы) в административном подразделении.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Приложение | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
-> Note: чтобы получить список членов скрытого членства в административной единице, требуется разрешение Member. Read. Hidden.
+> Примечание. Чтобы перечислить членов скрытого членства в административном подразделении, требуется разрешение Member.Read.Hidden.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -49,11 +49,11 @@ GET /administrativeUnits/{id}/members/$ref
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [User](../resources/user.md) и/или [Group](../resources/group.md) в тексте отклика.  Вместо этого, если вы помещаете `$ref` в конец запроса, ответ будет содержать коллекцию `@odata.id` ссылок/URL-адресов для членов.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов пользователей и/или групп в `200 OK` тексте отклика. [](../resources/user.md) [](../resources/group.md)  Вместо этого, если вы поместите в конце запроса, ответ будет содержать коллекцию ссылок `$ref` `@odata.id` и URL-адресов для участников.
 
 ## <a name="examples"></a>Примеры
-##### <a name="list-member-objects"></a>Список объектов Member
-Следующий запрос выведет список членов административной единицы, возвращая коллекцию пользователей и/или групп.
+##### <a name="list-member-objects"></a>Объекты участников списка
+В следующем запросе будут перечисляться члены административного подразделения, возвращающие коллекцию пользователей и/или групп.
 
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
@@ -86,8 +86,8 @@ Content-length: 100
 }
 ```
 
-##### <a name="list-member-references"></a>Ссылки на элементы списка
-Следующий запрос выведет список ссылок на элементы административной единицы, возвращая коллекцию `@odata.id` ссылок на элементы.
+##### <a name="list-member-references"></a>Ссылки на членов списка
+Следующий запрос будет перечислять ссылки членов административного подразделения, возвращая коллекцию ссылок `@odata.id` на членов.
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```

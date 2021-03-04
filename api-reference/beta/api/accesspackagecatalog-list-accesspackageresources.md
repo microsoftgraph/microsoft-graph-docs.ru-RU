@@ -1,16 +1,16 @@
 ---
 title: Список accessPackageResources
-description: Получить список объектов accesspackageresource.
+description: Извлечение списка объектов accesspackageresource.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3dc8d28d66f96508270101aa465079ee0ca19d70
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: a148144c416d91ed43d1eedcbc800b779dc2800a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934550"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439557"
 ---
 # <a name="list-accesspackageresources"></a>Список accessPackageResources
 
@@ -18,7 +18,7 @@ ms.locfileid: "49934550"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [accessPackageResource](../resources/accesspackageresource.md) в [accessPackageCatalog.](../resources/accesspackagecatalog.md)  Чтобы запросить добавление или удаление [accessPackageResource,](../resources/accesspackageresource.md)используйте [создание accessPackageResourceRequest](accesspackageresourcerequest-post.md).
+Извлечение списка [объектов accessPackageResource](../resources/accesspackageresource.md) в [accessPackageCatalog](../resources/accesspackagecatalog.md).  Чтобы попросить добавить или удалить [accessPackageResource,](../resources/accesspackageresource.md)используйте [создание accessPackageResourceRequest.](accesspackageresourcerequest-post.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "49934550"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +48,13 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [accessPackageResource](../resources/accesspackageresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [accessPackageResource](../resources/accesspackageresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

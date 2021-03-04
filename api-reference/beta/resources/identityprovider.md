@@ -3,14 +3,14 @@ title: Тип ресурса identityProvider
 description: Представляет поставщиков удостоверений в клиенте Azure Active Directory и клиенте Azure AD B2C.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 8f8adb3911b5912644356771f1b228880021ca94
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d9f6d123d13b75a8dde23a47a5119bbb9b87ca06
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401430"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440306"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 

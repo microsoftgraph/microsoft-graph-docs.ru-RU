@@ -1,35 +1,35 @@
 ---
-title: Список рецензентов Акцессревиев
-description: В функции рецензирования Access в Azure AD извлеките проверяющих объект Акцессревиев.
+title: Рецензенты списка accessReview
+description: В функции обзоров доступа Azure AD извлекаем рецензентов объекта accessReview.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8b1acf9a196551c0f2f170ca9df507d902558744
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d77ac50435a9923ec8e504a135e36c6b406f764
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951544"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439319"
 ---
-# <a name="list-accessreview-reviewers"></a>Список рецензентов Акцессревиев
+# <a name="list-accessreview-reviewers"></a>Рецензенты списка accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](../resources/accessreviews-root.md) в Azure AD извлеките проверяющих объект [акцессревиев](../resources/accessreview.md) .
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем рецензентов объекта [accessReview.](../resources/accessreview.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership  |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 
- Пользователь, вошедшего в систему, также должен быть членом роли каталога, который позволяет им читать проверку доступа.
+ Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,11 +41,11 @@ GET /accessReviews/{reviewId}/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не следует предоставлять текст запроса.
+## <a name="request-body"></a>Тело запроса
+Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [userIdentity](../resources/useridentity.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и массив объектов `200, OK` [userIdentity](../resources/useridentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -104,9 +104,9 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Акцессревиев](accessreview-get.md) |  [акцессревиев](../resources/accessreview.md) |  Получение проверки доступа. |
-|[Добавление рецензента Акцессревиев](accessreview-addreviewer.md) |     Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
-|[Удаление рецензента Акцессревиев](accessreview-removereviewer.md) | Нет. |   Удаление проверяющего из Акцессревиев. |
+|[Получить accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Извлечение обзора доступа. |
+|[Добавление рецензента accessReview](accessreview-addreviewer.md) |     Нет.   |   Добавление рецензента в accessReview. |
+|[Удаление рецензента accessReview](accessreview-removereviewer.md) | Нет. |   Удаление рецензента из accessReview. |
 
 
 <!--

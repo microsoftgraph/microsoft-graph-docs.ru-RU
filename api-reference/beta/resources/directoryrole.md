@@ -3,14 +3,14 @@ title: Тип ресурса directoryRole
 description: Представляет роль каталога Azure AD. Роли каталога Azure AD также известны как *роли администратора*.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: bec9df52add7ab5a3c0440f3d7c7896d2920370a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 88032b4b514431924ec48f7b7d5e595ca4eb8375
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402291"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440468"
 ---
 # <a name="directoryrole-resource-type"></a>Тип ресурса directoryRole
 
@@ -18,9 +18,9 @@ ms.locfileid: "48402291"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет роль каталога Azure AD. Роли каталога Azure AD также известны как *роли администратора*. Для получения дополнительных сведений о ролях каталога (администратора) см. статью [Назначение ролей администратора в Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). С помощью Microsoft Graph можно назначать пользователям роли каталога, чтобы предоставить им разрешения целевой роли. Чтобы можно было считать роль каталога или обновить ее членов, сначала следует активировать ее на клиенте. По умолчанию активируется только роль каталога администраторов организации. Чтобы активировать другие доступные роли каталога, отправьте запрос POST с ИДЕНТИФИКАТОРом [directoryRoleTemplate](directoryroletemplate.md) , на котором основана роль каталога. [Перечислите шаблоны для ролей каталогов](../api/directoryroletemplate-list.md), чтобы получить все остальные доступные роли каталогов. Наследуется от [directoryObject](directoryobject.md).
+Представляет роль каталога Azure AD. Роли каталога Azure AD также известны как *роли администратора*. Для получения дополнительных сведений о ролях каталога (администратора) см. статью [Назначение ролей администратора в Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). С помощью Microsoft Graph можно назначать пользователям роли каталога, чтобы предоставить им разрешения целевой роли. Чтобы можно было считать роль каталога или обновить ее членов, сначала следует активировать ее на клиенте. По умолчанию активируется только роль каталога администраторов организации. Чтобы активировать другие доступные роли каталога, вы отправляете запрос POST с ИД [каталогаRoleTemplate,](directoryroletemplate.md) на котором основана роль каталога. [Перечислите шаблоны для ролей каталогов](../api/directoryroletemplate-list.md), чтобы получить все остальные доступные роли каталогов. Наследуется от [directoryObject](directoryobject.md).
 
-По умолчанию роли каталога разделяются на уровне клиента.  Однако роли каталогов (в настоящее время только *Администратор учетной записи пользователя* и *администратор службы поддержки*) также могут быть ограничены [административными единицами](administrativeunit.md).
+По умолчанию роли каталогов могут быть широкими для клиента.  Однако роли каталога (в  настоящее время только администратор учетной записи пользователя и администратор *helpdesk)* также могут быть определимы в [административных единицах.](administrativeunit.md)
 
 Этот ресурс поддерживает:
 
@@ -35,7 +35,7 @@ ms.locfileid: "48402291"
 |[Добавление элемента](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| Добавление пользователя в роль каталога путем записи данных в свойство навигации members.|
 |[Список членов](../api/directoryrole-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к членам роли каталога, из свойства навигации members.|
 |[Удаление члена](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Удаление ресурса user из роли каталога.|
-|[Область списка — элементы роли](../api/directoryrole-list-members.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Перечислите членов этой роли каталога, область действия которой ограничена [административными единицами](administrativeunit.md), с помощью коллекции ресурсов scopedrolemembership изменен.|
+|[Участники списка с областью ролей](../api/directoryrole-list-members.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Список членов этой роли каталога, которые [](administrativeunit.md)являются административными единицами, с помощью коллекции ресурсов scopedRoleMembership.|
 |[delta](../api/directoryrole-delta.md)|Коллекция объектов directoryRole| Получение добавочных изменений для ролей каталога. |
 
 ## <a name="properties"></a>Свойства
@@ -50,7 +50,7 @@ ms.locfileid: "48402291"
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |members|Коллекция [directoryObject](directoryobject.md)|Пользователи, которые относятся к членам этой роли каталога. Методы HTTP: GET, POST, DELETE. Только для чтения. Допускается значение null.|
-|Scopedadministrators|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены этой роли каталога, областью действия которой являются [административные единицы](administrativeunit.md). Только для чтения. Допускается значение null.|
+|scopedMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены этой роли каталога, которые имеют область применения к [административным единицам.](administrativeunit.md) Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

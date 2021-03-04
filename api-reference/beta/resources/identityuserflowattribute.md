@@ -3,14 +3,14 @@ title: Тип ресурса identityUserFlowAttribute
 description: Представляет атрибуты потоков пользователей в клиенте Azure Active Directory и клиенте Azure AD B2C.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: f5166cafff64a7050b89bbd7f70cba66f429646d
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 3e8707627b09784972a1a578fe4b6b84a623f4dd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742422"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440244"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>Тип ресурса identityUserFlowAttribute
 

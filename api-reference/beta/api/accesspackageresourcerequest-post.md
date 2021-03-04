@@ -1,16 +1,16 @@
 ---
 title: Создание accessPackageResourceRequest
-description: Создайте новый accessPackageResourceRequest.
+description: Создание нового accessPackageResourceRequest.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 70699361c862a2c372eca68649db516b111533f0
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 82b84110f7936ea8a5bfef7e7d479ecc6c4aaeea
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176365"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439473"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Создание accessPackageResourceRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "50176365"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект accessPackageResourceRequest,](../resources/accesspackageresourcerequest.md) чтобы запросить добавление ресурса в каталог пакетов доступа или удаление ресурса из каталога.
+Создайте новый [объект accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) для запроса добавления ресурса в каталог пакетов доступа или удаления ресурса из каталога.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,20 +47,20 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в JSON. `accessPackageResource`Включайте связь с [объектом accessPackageResource](../resources/accesspackageresource.md) как часть запроса.
+В теле запроса поставляем представление JSON объекта [accessPackageResourceRequest.](../resources/accesspackageresourcerequest.md) `accessPackageResource`Включайте связь с [объектом accessPackageResource](../resources/accesspackageresource.md) в качестве части запроса.
 
-Чтобы добавить группу Azure AD в качестве ресурса в каталог, задайте **catalogId** в качестве ИД каталога, **requestType** — в качестве `AdminAdd` `accessPackageResource` ресурса. Значением свойства **originSystem** внутри должно быть, а `accessPackageResource` `AadGroup` **значением originId** является идентификатор группы.
+Чтобы добавить группу Azure AD в качестве  ресурса в каталог, задайте каталогId ID каталога, **requestType** to be `AdminAdd` и `accessPackageResource` представляющий ресурс. Значение свойства **originSystem** внутри должно быть, а значение originId — `accessPackageResource` `AadGroup` идентификатор группы. 
 
-Чтобы удалить приложение Azure AD из каталога, установите **catalogId** в качестве ИД каталога, **requestType** должен быть и объект ресурса, который `AdminRemove` необходимо `accessPackageResource` удалить.  Объект ресурса можно получить с помощью [списка accessPackageResources.](accesspackagecatalog-list-accesspackageresources.md)
+Чтобы удалить приложение Azure AD из  каталога, установите каталогId в ID каталога, **requestType** to be и объект ресурса, который необходимо `AdminRemove` `accessPackageResource` удалить.  Объект ресурса можно получить с помощью [списка accessPackageResources.](accesspackagecatalog-list-accesspackageresources.md)
 
-Чтобы назначить среду географического размещения ресурсу Sharepoint Online с несколькими географическими условиями, включите в объект связь **accessPackageResourceEnvironment.** `accessPackageResource` Это можно сделать двумя способами:
-+ Используйте `@odata.bind` аннотацию, чтобы `id` назначить `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` объекту объект.
+Чтобы назначить среду геолокации для ресурса Sharepoint Online с несколькими геолокациями, включите связь **accessPackageResourceEnvironment** в `accessPackageResource` объекте. Это можно сделать двумя способами:
++ Чтобы `@odata.bind` назначить объекту `id` аннотацию, `accessPackageResourceEnvironment` используйте `accessPackageResourceEnvironment` аннотацию.
 + Укажите `originId` параметр `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` объекта.
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -144,7 +144,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В этом примере `@odata.bind` аннотация используется для назначения `id` `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` объекта.
+Ниже приведен пример запроса. В этом примере аннотация используется для назначения `@odata.bind` `id` `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` объекта.
 
 
 
@@ -222,7 +222,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В этом примере параметры объекта `accessPackageResourceEnvironment` заданы в `accessPackageResourceEnvironment` объекте.
+Ниже приведен пример запроса. В этом примере параметры объекта `accessPackageResourceEnvironment` указаны в `accessPackageResourceEnvironment` объекте.
 
 
 

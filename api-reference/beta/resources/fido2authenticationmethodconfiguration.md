@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса fido2AuthenticationMethodConfiguration
+title: тип ресурса fido2AuthenticationMethodConfiguration
 description: Представляет политику методов проверки подлинности FIDO2
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62aa22fa22b70235f5221bc820cee5178b55b51b
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: b5d823caefba62a66fc9b2a7236c063cfaeee69b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418431"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440320"
 ---
-# <a name="fido2authenticationmethodconfiguration-resource-type"></a>Тип ресурса fido2AuthenticationMethodConfiguration
+# <a name="fido2authenticationmethodconfiguration-resource-type"></a>тип ресурса fido2AuthenticationMethodConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику методов проверки подлинности FIDO2. Политики методов проверки подлинности определяют параметры конфигурации, а также пользователей или группы, для которых разрешено использование метода проверки подлинности.
+Представляет политику методов проверки подлинности FIDO2. Политики методов проверки подлинности определяют параметры конфигурации, а также пользователей или групп, которым включен метод проверки подлинности.
 
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Получение](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Чтение свойств и связей объекта fido2AuthenticationMethodConfiguration.|
+|[получение](../api/fido2authenticationmethodconfiguration-get.md);|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.|
 |[Обновление](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Обновление свойств объекта fido2AuthenticationMethodConfiguration.|
-|[Удаление](../api/fido2authenticationmethodconfiguration-delete.md)|Нет|Возвращает объект fido2AuthenticationMethodConfiguration в конфигурацию по умолчанию.|
+|[удаление](../api/fido2authenticationmethodconfiguration-delete.md);|Нет|Возвращает объект fido2AuthenticationMethodConfiguration к конфигурации по умолчанию.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор политики метода проверки подлинности.|
-|исаттестатионенфорцед|Boolean|Определяет, следует ли применять аттестацию для регистрации ключа безопасности FIDO2.|
-|исселфсервицерегистратионалловед|Boolean|Определяет, могут ли пользователи регистрировать новые ключи безопасности FIDO2.|
-|кэйрестриктионс|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Определяет, применяются ли ограничения ключей к ключам безопасности FIDO2, разрешать или запрещать определенные типы ключей, как определено идентификатором GUID аттестации (ААГУИД), идентификатором, указывающим тип (например, make and model) средства проверки подлинности.|
-|state|аусентикатионмесодстате|Возможные значения: `enabled`, `disabled`.|
+|isAttestationEnforced|Boolean|Определяет, необходимо ли применять проверку для регистрации ключей безопасности FIDO2.|
+|isSelfServiceRegistrationAllowed|Boolean|Определяет, могут ли пользователи зарегистрировать новые ключи безопасности FIDO2.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Контролирует, применяются ли ключевые ограничения для ключей безопасности FIDO2, разрешая или отменить определенные типы ключей, определенных GUID проверки подлинности (AAGUID), идентификатором, который указывает тип (например, сделать и модель) аутентиста.|
+|state|authenticationMethodState|Возможные значения: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|инклудетаржетс|Коллекция [аусентикатионмесодтаржет](../resources/authenticationmethodtarget.md)|Коллекция пользователей или групп, которым разрешено использовать метод проверки подлинности.|
+|includeTargets|[коллекция authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Коллекция пользователей или групп, которые могут использовать метод проверки подлинности.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

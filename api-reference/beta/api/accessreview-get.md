@@ -1,39 +1,39 @@
 ---
-title: Получение Акцессревиев
-description: В функции рецензирования Access Azure AD извлеките объект Акцессревиев.
+title: Получить accessReview
+description: В функции обзоров доступа Azure AD извлекаем объект accessReview.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bc47fa2d371f2ab0dbcd150aa0005a3cbc82cdac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c77a64b5cc125791b08a4d860a781c7ce40ae16d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951717"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439403"
 ---
-# <a name="get-accessreview"></a>Получение Акцессревиев
+# <a name="get-accessreview"></a>Получить accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](../resources/accessreviews-root.md) Azure AD извлеките объект [акцессревиев](../resources/accessreview.md) .  
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем [объект accessReview.](../resources/accessreview.md)  
 
-Чтобы получить рецензентов проверки доступа, используйте API [List акцессревиев проверяющих](accessreview-listreviewers.md) . Чтобы получить решение об анализе доступа, используйте API [List акцессревиев решений](accessreview-listdecisions.md) или [перечислите мои API решений акцессревиев](accessreview-listmydecisions.md) .
+Для получения рецензентов обзора доступа используйте API [рецензентов списка accessReview.](accessreview-listreviewers.md) Чтобы получить решения обзора доступа, используйте API решений [accessReview](accessreview-listdecisions.md) или список API решений [accessReview.](accessreview-listmydecisions.md)
 
-Если эта проверка доступа повторяется, то решения не будут связаны с серией проверки доступа. Вместо этого используйте `instances` связь этого ряда для получения коллекции [акцессревиев](../resources/accessreview.md) из прошлых, текущих и будущих экземпляров проверки доступа. Все прошедшие и текущие экземпляры будут принимать решения.
+Если это повторяющийся обзор доступа, никакие решения не будут связаны с повторяющимися сериями обзоров доступа. Вместо этого используйте связь этой серии для получения `instances` [коллекции accessReview](../resources/accessreview.md) прошлых, текущих и будущих экземпляров обзора доступа. Каждый прошлый и текущий экземпляр будут иметь решения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL  |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership  |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
-Чтобы вызвать этот API, пользователь, вошедшего в систему, должен быть включен в роль каталога, которая разрешает им читать проверку доступа, или пользователь может быть назначен в качестве проверяющего при проверке доступа.  Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviews-root.md).
+Чтобы вызвать этот API, подписанный пользователем должен также быть в роли каталога, который позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviews-root.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +45,11 @@ GET /accessReviews/{reviewId}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReview](../resources/accessreview.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -126,12 +126,12 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Создание Акцессревиев](accessreview-create.md)
-- [Список Акцессревиевс](accessreview-list.md)
-- [Список Програмконтролс](programcontrol-list.md)
-- [Список рецензентов Акцессревиев](accessreview-listreviewers.md)
-- [Список решений Акцессревиев](accessreview-listdecisions.md)
-- [Список моих решений Акцессревиев](accessreview-listmydecisions.md)
+- [Создание accessReview](accessreview-create.md)
+- [AccessReviews списка](accessreview-list.md)
+- [List programControls](programcontrol-list.md)
+- [Рецензенты списка accessReview](accessreview-listreviewers.md)
+- [Списки решений accessReview](accessreview-listdecisions.md)
+- [Список решений accessReview](accessreview-listmydecisions.md)
 
 
 <!--
