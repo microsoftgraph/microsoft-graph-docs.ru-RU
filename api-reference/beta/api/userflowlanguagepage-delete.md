@@ -3,20 +3,20 @@ title: Удаление userFlowLanguagePage
 description: Удаляет значения в объекте userFlowLanguagePage.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 041151af6dfe03728578bfc42b47bbfe5c422c5f
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: ce15fce0565a7e7fdeb704d645a177342c7ad17d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844914"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444618"
 ---
 # <a name="delete-userflowlanguagepage"></a>Удаление userFlowLanguagePage
 
 Пространство имен: microsoft.graph
 
-Удаляет значения в [объекте userFlowLanguagePage.](../resources/userflowlanguagepage.md) Можно удалить только значения в overridesPage, который используется для настройки значений, показанных пользователю во время пользовательского пути, определенного пользовательским потоком.
+Удаляет значения в [объекте userFlowLanguagePage.](../resources/userflowlanguagepage.md) Можно удалить только значения в переопределеченной странице, которая используется для настройки значений, показанных пользователю во время пользовательского пути, определенного потоком пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,14 +28,14 @@ ms.locfileid: "49844914"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Для ссылки на содержимое в объекте необходимо использовать `$value` . Это возвращает содержимое в объекте и позволяет ссылаться на него напрямую.
+Чтобы ссылаться на содержимое объекта, необходимо использовать `$value` . Это возвращает содержимое объекта и позволяет ссылаться на него напрямую.
 
 <!-- {
   "blockType": "ignored"
@@ -53,7 +53,7 @@ DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

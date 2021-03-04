@@ -1,24 +1,24 @@
 ---
-title: 'Трустфрамеворккэйсет: Уплоадсекрет'
-description: Отправьте секрет в набор ключей.
+title: 'trustFrameworkKeySet: uploadSecret'
+description: Загрузите секрет в набор ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 037792b26464fe0ce5644b33d38e41d1f44de596
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b008e1ae41d61fb14dbd80e5a820208355bb670d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972180"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444975"
 ---
-# <a name="trustframeworkkeyset-uploadsecret"></a>Трустфрамеворккэйсет: Уплоадсекрет
+# <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте открытый текст секрета в [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md). Примеры секретов — это секреты приложения в Azure Active Directory, Google, Facebook или любом другом поставщике удостоверений. его метод возвращает [трустфрамеворккэй](../resources/trustframeworkkey.md).
+Загрузите простой текстовый секрет в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Примеры секретов — секреты приложений в Azure Active Directory, Google, Facebook или любом другом поставщике удостоверений. его метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48972180"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,14 +51,14 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Используйте|String|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
-|звонить|String|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
-|nbf|Int64|Аналогично свойству **NBF** объекта **трустфрамеворккэй**.|
-|exp|Int64|Аналогично свойству **exp** объекта **трустфрамеворккэй**.|
+|использование|String|Аналогично **свойству использования** **trustFrameworkKey.**|
+|k|String|Аналогично свойству **k** **trustFrameworkKey.** Это поле, которое используется для отправки секрета.|
+|nbf|Int64|Аналогично свойству **nbf** **trustFrameworkKey.**|
+|exp|Int64|Аналогично свойству **exp** **trustFrameworkKey.**|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

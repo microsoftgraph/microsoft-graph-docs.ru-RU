@@ -1,16 +1,16 @@
 ---
 title: Get phoneAuthenticationMethod
-description: Получить один объект phoneAuthenticationMethod.
+description: Извлечение одного объекта phoneAuthenticationMethod.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 76e0718f847b9e8eddc2b87c5a8bb523cc464a78
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 2a4936fcbcd39751e9ba8ed9c7b3df8579fc1f9c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796663"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447724"
 ---
 # <a name="get-phoneauthenticationmethod"></a>Get phoneAuthenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "49796663"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить один [объект phoneAuthenticationMethod.](../resources/phoneauthenticationmethod.md)
+Извлечение одного [объекта phoneAuthenticationMethod.](../resources/phoneauthenticationmethod.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,7 @@ ms.locfileid: "49796663"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -40,11 +40,11 @@ ms.locfileid: "49796663"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только маскирование номеров телефонов)
+* Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -65,13 +65,13 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

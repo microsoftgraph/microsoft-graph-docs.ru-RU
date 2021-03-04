@@ -1,24 +1,24 @@
 ---
-title: 'openShiftChangeRequest: утвердить'
+title: 'openShiftChangeRequest: утверждение'
 description: Утверждение запроса openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6ee856fef01a992eb5a1e82776d44a414ed9f888
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: a6ce178eb59045d572bed00d790c2405be349e5a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292450"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447917"
 ---
-# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: утвердить
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: утверждение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Утверждение объекта [openshiftchangerequest.](../resources/openshiftchangerequest.md)
+Утверждение [объекта openshiftchangerequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/app
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Пользовательское сообщение об утверждении.|
+|message|String|Пользовательское сообщение утверждения.|
 
 ## <a name="response"></a>Отклик
 
@@ -64,6 +64,8 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/app
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "openshiftchangerequest_approve"
@@ -77,6 +79,24 @@ Content-type: application/json
   "message": "message-value"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/openshiftchangerequest-approve-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/openshiftchangerequest-approve-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/openshiftchangerequest-approve-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/openshiftchangerequest-approve-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

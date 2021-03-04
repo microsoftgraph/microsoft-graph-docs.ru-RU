@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: List memberOf'
-description: Получение списка групп и единиц админстративе, участником которых является контакт.
+description: Извлечение списка групп и администраторских единиц, членом которых является контакт.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2bbc70c849be34eb1be6b8c09a3f4d6c84c95b50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59de08584d0f516bb7e9b4a031b3a2bceb23ddf9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979019"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447809"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: List memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "48979019"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка групп и единиц админстративе, участником которых является контакт.
+Извлечение списка групп и администраторских единиц, членом которых является контакт.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,7 +44,7 @@ GET /contacts/{id}/memberOf
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

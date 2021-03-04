@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса Привилежедаппровал
-description: Представляет утверждение, запрошенное в результате привилегированного управления удостоверениями для доступа к роли.
+title: тип ресурса privilegedApproval
+description: Представляет утверждение, запрашиваемого в привилегированном управлении удостоверениями для получения роли.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: cd6f352ad114307933682f4d6df22408b54ebc73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ecb9752fa11650615dd81a7f1a2ddd9bd80272a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070585"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444025"
 ---
-# <a name="privilegedapproval-resource-type"></a>Тип ресурса Привилежедаппровал
+# <a name="privilegedapproval-resource-type"></a>тип ресурса privilegedApproval
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет утверждение, запрошенное в результате привилегированного управления удостоверениями для доступа к роли.
+Представляет утверждение, запрашиваемого в привилегированном управлении удостоверениями для получения роли.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Чтение свойств и связей объекта Привилежедаппровал.|
-|[Список объектов Привилежедаппровал](../api/privilegedapproval-list.md) | Коллекция [privilegedApproval](privilegedapproval.md)|Получение коллекции Привилежедаппровал.|
+|[Получение privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Чтение свойств и связей объекта privilegedApproval.|
+|[Список объектов privilegedApproval](../api/privilegedapproval-list.md) | Коллекция [privilegedApproval](privilegedapproval.md)|Получите коллекцию privilegedApproval.|
 |[Создание privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Создание объекта privilegedApproval. |
 |[Обновление privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Обновление объекта privilegedApproval. |
-|[мирекуестс](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Получение запросов утверждения запрашивающей стороны.|
+|[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Получение запросов утверждения запрашивающей стороны.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|аппровалдуратион|Длительность||
-|аппровалстате|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|аппровалтипе|String||
-|аппроверреасон|String||
+|approvalDuration|Duration||
+|approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalType|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|рекуесторреасон|String||
+|requestorReason|String||
 |roleId|String||
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |userId|String||
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
-|Request|[привилежедролеассигнментрекуест](privilegedroleassignmentrequest.md)| Только для чтения. Запрос на назначение роли для этого объекта утверждения|
+|roleInfo|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
+|запрос|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Только для чтения. Запрос назначения ролей для этого объекта утверждения|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -1,26 +1,26 @@
 ---
-title: Обновление Виндовсупдатестате
-description: Обновление свойств объекта Виндовсупдатестате.
+title: Обновление windowsUpdateState
+description: Обновление свойств объекта WindowsUpdateState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c4f1f8af27b8663f13e1e47551a3a83b6337c73
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6505707c957ad890d07c9d418512b41e09ff5109
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200569"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443799"
 ---
-# <a name="update-windowsupdatestate"></a>Обновление Виндовсупдатестате
+# <a name="update-windowsupdatestate"></a>Обновление windowsUpdateState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) .
+Обновление свойств объекта [WindowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,31 +47,31 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В теле запроса укажи представление JSON для [объекта WindowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)
 
-В следующей таблице приведены свойства, необходимые при создании [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md).
+В следующей таблице показаны свойства, необходимые при создании [windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Это идентификатор объекта.|
-|deviceId|String|Идентификатор устройства.|
-|userId|String|Идентификатор пользователя.|
-|deviceDisplayName|String|Отображаемое имя устройства.|
-|userPrincipalName|String|Имя участника пользователя.|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|куалитюпдатеверсион|String|Версия устройства для обновления качества.|
-|феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
-|ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
-|lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации устройства с Microsoft Intune.|
+|id|String|Это Id объекта.|
+|deviceId|String|ID устройства.|
+|userId|String|ID пользователя.|
+|deviceDisplayName|String|Имя отображения устройства.|
+|userPrincipalName|String|Имя основного пользователя.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Состояние udpate Windows. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|qualityUpdateVersion|String|Версия обновления качества устройства.|
+|featureUpdateVersion|String|Текущая версия обновления функций устройства.|
+|lastScanDateTime|DateTimeOffset|Время даты успешного сканирования агентом обновления Windows.|
+|lastSyncDateTime|DateTimeOffset|Последний раз, когда устройство синхронизируется с Microsoft Intune.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsUpdateState](../resources/intune-shared-windowsupdatestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

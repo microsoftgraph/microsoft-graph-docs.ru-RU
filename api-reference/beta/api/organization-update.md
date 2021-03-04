@@ -3,14 +3,14 @@ title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4968a1f686df8acfda23b283e99e42b56f90cb0a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d137f9e519247c61a1b38d547c15f0eb3e68b859
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975519"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447910"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -18,7 +18,7 @@ ms.locfileid: "48975519"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновите свойства организации, которая прошла проверку подлинности. В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** Организации.
+Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется как коллекция ровно одной записи, поэтому ее ID должен быть указан `organization` в запросе.   **ID** также известен как **tenantId** организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48975519"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Организация. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Organization.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения | Organization.ReadWrite.All |
+|Приложение | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ PATCH /organization/{id}
 | Content-Type   | application/json |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -58,7 +58,7 @@ PATCH /organization/{id}
 |securityComplianceNotificationPhones|Коллекция String||
 |technicalNotificationMails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
 
-Так как ресурс **Организации** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **Организации** .
+Так как ресурс **организации** поддерживает [расширения,](/graph/extensibility-overview)операцию можно использовать для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` организации. 
 
 ## <a name="response"></a>Отклик
 

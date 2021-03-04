@@ -1,26 +1,26 @@
 ---
 title: Обновление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: Обновление свойств объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.
+description: Обновление свойств объекта без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: adcafc9c37ad13dfab88ccdbabb668016569fd0b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 9093e049eab262df56c914bdb735e9d9600b799d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873425"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447670"
 ---
-# <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Обновление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration (неподдерживаемая версия)
+# <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Обновление passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности без пароля Microsoft Authenticator для клиента Azure AD.
+Обновим свойства объекта Без [пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности без пароля Microsoft Authenticator Phone для клиента Azure AD.
 
 > [!CAUTION]
-> API политики проверки подлинности для телефона без пароля Microsoft Authenticator является неподготовленным и больше не возвращает результаты 31 декабря 2020 г. Используйте новую политику метода [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
+> API политики метода проверки подлинности без паролей Microsoft Authenticator Phone является обесценен и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику метода проверки подлинности [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,12 +52,12 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/p
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса необходимо предоставить представление объекта без [пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) в JSON со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+## <a name="request-body"></a>Текст запроса
+В корпусе запроса устройте представление JSON без [пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Список свойств см. в записи [без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)
+Список свойств см. в списке [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)
 
->**Примечание.** Свойство `@odata.type` со значением должно `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` быть включено в тело.
+>**Примечание:** Свойство `@odata.type` со значением `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` должно быть включено в тело.
 
 
 ## <a name="response"></a>Отклик

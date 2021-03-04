@@ -1,24 +1,24 @@
 ---
-title: 'orgContact: List directReports'
-description: Получение подчиненных отчетов о контакте.
+title: 'orgContact: Список directReports'
+description: Получите прямые отчеты контакта.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b5c06596c273807c53f49bd36f273f62fc96e833
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0a8de1f8b16ccac69a865d3c09f3d5eebdcc46c5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975183"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447813"
 ---
-# <a name="orgcontact-list-directreports"></a>orgContact: List directReports
+# <a name="orgcontact-list-directreports"></a>orgContact: Список directReports
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение подчиненных отчетов о контакте.
+Получите прямые отчеты контакта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,7 +44,7 @@ GET /contacts/{id}/directReports
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

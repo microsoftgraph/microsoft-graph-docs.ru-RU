@@ -1,24 +1,24 @@
 ---
-title: Удаление Пермиссионгрантполици
-description: Удаление объекта Пермиссионгрантполици.
+title: Удаление permissionGrantPolicy
+description: Удаление объекта permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3a554e5e8a68e30937911159ec8c0498ade41dcc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a2e6791392330b8b2d2b59a61e2e5d84098dc9d8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977954"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447731"
 ---
-# <a name="delete-permissiongrantpolicy"></a>Удаление Пермиссионгрантполици
+# <a name="delete-permissiongrantpolicy"></a>Удаление permissionGrantPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [пермиссионгрантполици](../resources/permissiongrantpolicy.md) .
+Удаление [объекта permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48977954"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.PermissionGrant |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.ReadWrite.PermissionGrant |
+| Приложение                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /policies/permissionGrantPolicies/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

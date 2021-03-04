@@ -1,40 +1,40 @@
 ---
-title: 'принтер: Capabilities'
-description: Получение списка возможностей принтера.
+title: 'принтер: getCapabilities'
+description: Получите список возможностей для принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6a7c8029dba6cd86e71bb1f090b18e7fb682b047
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a9d9b1e21d26e39ea50020f56f48f496c83b609c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972431"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447737"
 ---
-# <a name="printer-getcapabilities"></a>принтер: Capabilities
+# <a name="printer-getcapabilities"></a>принтер: getCapabilities
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка возможностей [принтера](../resources/printer.md).
+Получите список возможностей для [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer. Read. ALL, Printer. ReadWrite. ALL, Printer. FullControl. ALL. |
+|Делегированные (рабочая или учебная учетная запись)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| Не поддерживается. |
+|Приложение| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printers/{id}/getCapabilities
+GET /print/printers/{id}/getCapabilities
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
@@ -44,7 +44,7 @@ POST /print/printers/{id}/getCapabilities
 ## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтеркапабилитиес](../resources/printercapabilities.md) в тексте отклика.
+В случае успешного использования этот метод возвращает код отклика и `200 OK` [объект printerCapabilities](../resources/printercapabilities.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -56,8 +56,8 @@ POST /print/printers/{id}/getCapabilities
   "blockType": "request",
   "name": "printer-getCapabilities"
 }-->
-```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printer-getcapabilities-csharp-snippets.md)]

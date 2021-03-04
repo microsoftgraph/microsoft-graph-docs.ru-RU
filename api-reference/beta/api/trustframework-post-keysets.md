@@ -1,24 +1,24 @@
 ---
-title: Создание Трустфрамеворккэйсет
-description: Создание нового объекта **трустфрамеворккэйсет** .
+title: Создание trustFrameworkKeySet
+description: Создайте новый **объект trustFrameworkKeySet.**
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c00701e2a6f1e370f2f646c225c2154a83441aa9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c4295de0e6a6e361a28932fa4755b35aca80b64b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971836"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444986"
 ---
-# <a name="create-trustframeworkkeyset"></a>Создание Трустфрамеворккэйсет
+# <a name="create-trustframeworkkeyset"></a>Создание trustFrameworkKeySet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md). В запросе на создание должен быть указан идентификатор **трустфрамеворккэйсет** ; Тем не менее, она может быть изменена службой. Измененный идентификатор будет доступен в ответе и в заголовке Location.
+Создание нового [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). В запросе на создание ожидается ID **trustFrameworkKeySet;** однако службой она может быть изменена. Измененный ID будет доступен в ответе и в загоне расположения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48971836"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL   |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All   |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL    |
+| Приложение                            | TrustFrameworkKeySet.ReadWrite.All    |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,16 +47,16 @@ POST /trustFramework/keySets
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в формате JSON.
+В теле запроса подарйте JSON представление объекта [trustFrameworkKeySet.](../resources/trustframeworkkeyset.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, заголовок расположения для нового объекта и новый объект [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика, заголовку расположения для вновь созданного объекта и новый объект `201 Created` [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-an-empty-keyset"></a>Пример 1: создание пустого набора ключей
-Это одна из наиболее эффективных операций. Сначала необходимо создать пустой набор ключей. Затем в новом наборе ключей можно создать ключ, отправить секрет вручную и отправить сертификат или ключ PKCS12. 
+### <a name="example-1-create-an-empty-keyset"></a>Пример 1. Создание пустого наборов ключей
+Это одна из самых полезных операций. Сначала создается пустой набор ключей. Затем в новом наборе ключей можно создать ключ, загрузить секрет вручную и загрузить сертификат или ключ PKCS12. 
 
 #### <a name="request"></a>Запрос
 
@@ -118,9 +118,9 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 }
 ```
 
-### <a name="example-2-create-a-keyset-with-a-key"></a>Пример 2: создание набора ключей с ключом
+### <a name="example-2-create-a-keyset-with-a-key"></a>Пример 2. Создание наборов ключей с ключом
 
-Это расширенный сценарий, в котором необходимо знать формат ключа JSON, совместимый с [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) , для ключа.
+Это расширенный сценарий, в котором необходимо знать формат ключа JSON Web Key, совместимый с [RFC 7517.](https://tools.ietf.org/html/rfc7517#section-5)
 
 #### <a name="request"></a>Запрос
 

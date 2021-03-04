@@ -1,16 +1,16 @@
 ---
 title: Удаление unifiedRoleAssignmentMultiple
-description: Удаление объекта Унифиедролеассигнментмултипле.
+description: Удаление объекта unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89c81e4dd63a892553d59f715c62620db5ae0895
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 85d721888b3f64f77533e6c83c53c84c943ec824
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978138"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444856"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>Удаление unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978138"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) . Это относится к приложению RBAC, которое поддерживает несколько субъектов и областей. Microsoft Intune это приложение.
+Удаление [объекта unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Это применимо для приложения RBAC, которое поддерживает несколько принципов и областей. Microsoft Intune — это такое приложение.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978138"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения | DeviceManagementRBAC.ReadWrite.All |
+| Приложение | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,9 +42,9 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

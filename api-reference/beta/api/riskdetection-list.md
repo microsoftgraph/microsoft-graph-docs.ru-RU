@@ -1,27 +1,27 @@
 ---
-title: Список Рискдетектион
-description: Получение свойств коллекции объекта **рискдетектион** .
+title: List riskDetection
+description: Извлечение свойств коллекции объекта **riskDetection.**
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: da19ac0afc940b1a204940157cac3b8f78bcd17b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d6308ba07530d8fd3c13e3d9e9e6e089c008176c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977702"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443622"
 ---
-# <a name="list-riskdetection"></a>Список Рискдетектион
+# <a name="list-riskdetection"></a>List riskDetection
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств коллекции объектов **рискдетектион** .
+Извлечение свойств коллекции объектов **riskDetection.**
 
 >[!NOTE]
->Для использования API обнаружения риска необходима лицензия Azure AD Premium P1 или P2.
+>Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "48977702"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /identityProtection/riskDetections
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$filter` и `$select` настраивает ответ на запрос. Просмотрите пример, приведенный далее в этом разделе. 
+Этот метод поддерживает `$filter` и `$select` настраивает ответ на запрос. Пример см. в этом разделе. 
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,18 +51,18 @@ GET /identityProtection/riskDetections
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискдетектион](../resources/riskdetection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [riskDetection](../resources/riskdetection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 
-### <a name="example-1-list-risk-detections"></a>Пример 1: список обнаруженных рисков
+### <a name="example-1-list-risk-detections"></a>Пример 1. Список обнаружения рисков
 
 #### <a name="request"></a>Запрос
 
@@ -143,7 +143,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risk-detections-for-a-specific-user"></a>Пример 2: список обнаруженных рисков для определенного пользователя
+### <a name="example-2-list-risk-detections-for-a-specific-user"></a>Пример 2. Список обнаружения рисков для определенного пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -224,11 +224,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-risk-detections-and-filter-the-results"></a>Пример 3: список обнаруженных рисков и фильтрация результатов
+### <a name="example-3-list-risk-detections-and-filter-the-results"></a>Пример 3. Список обнаружения рисков и фильтрация результатов
 
 #### <a name="request"></a>Запрос
 
-В приведенном ниже примере показано, как `$filter` получить коллекцию обнаружений рисков, в которой уровень риска является средним, или тип события риска — унфамиларфеатурес, что означает, что вход в систему был незнакомым или неизвестным расположением.
+В следующем примере показано, как использовать для получения коллекции обнаружения рисков, где уровень риска средний или тип событий риска — unfamilarFeatures, что указывает на то, что вход был в незнакомом или аномальном `$filter` расположении.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

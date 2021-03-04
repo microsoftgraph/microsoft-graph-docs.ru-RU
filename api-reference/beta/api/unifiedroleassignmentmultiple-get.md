@@ -1,16 +1,16 @@
 ---
 title: Получение unifiedRoleAssignmentMultiple
-description: Получение свойств и связей объекта Унифиедролеассигнментмултипле.
+description: Извлечение свойств и связей объекта unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cf276a23ebae48160d386ddbcaaa89fe5c9a5ce7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04c485d6f9c493514f82f8787b3f9ab5c9f1c2c2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978149"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444849"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Получение unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978149"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) . Используйте этот объект для получения назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [унифиедролеассигнмент](../resources/unifiedroleassignment.md).
+Извлечение свойств и связей объекта [unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте этот объект для получения назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [унифицированныеRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48978149"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
+| Приложение | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,17 +47,17 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 |:----- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-intune"></a>Пример 1: получение Ролеассигнментмултипле с областью действия каталога в Intune
+### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-intune"></a>Пример 1. Получить роль в каталогеAssignmentMultiple в Intune
 
 #### <a name="request"></a>Запрос
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>Пример 2: получение Ролеассигнментмултипле в Intune, назначенной группе
+### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>Пример 2. Получить рольAssignmentMultiple в Intune, назначенной группе
 
 #### <a name="request"></a>Запрос
 
@@ -190,11 +190,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Пример 3: получение Ролеассигнментмултипле с областью действия в каталоге с `$expand`
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Пример 3. Получить роль с областью каталогаAssignmentMultiple с `$expand`
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса с `$expand` параметром Query.
+Ниже приводится пример запроса с `$expand` параметром запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,24 +1,24 @@
 ---
-title: Получение элемента журнала для Рискюсер
-description: Получение элемента журнала объекта Рискюсер.
+title: Получить элемент истории riskyUser
+description: Получите элемент истории объекта riskyUser.
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f2d1f7d652b16066f42e3145021036d3855a72c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 78eb02bb7667625ef71aba1a5ad5f3d2e3fc252f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977626"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443594"
 ---
-# <a name="get-riskyuserhistoryitem"></a>Получение Рискюсерхисторитем
+# <a name="get-riskyuserhistoryitem"></a>Get riskyUserHistoryItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [рискюсерхисторитем](../resources/riskyuserhistoryitem.md) объекта [рискюсер](../resources/riskyuser.md).
+Получите [объект riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) для [riskyUser.](../resources/riskyuser.md)
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -27,9 +27,9 @@ ms.locfileid: "48977626"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Идентитирискюсер. Read. ALL, Идентитирискусер. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Идентитирискюсер. Read. ALL, Идентитирискусер. ReadWrite. ALL |
+|Приложение | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,15 +44,15 @@ GET /identityProtection/riskyUsers/{userid}/history/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискюсерхисторитем](../resources/riskyuserhistoryitem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-get-history-of-a-risky-user"></a>Пример 1: получение журнала опасного пользователя
+### <a name="example-1-get-history-of-a-risky-user"></a>Пример 1. Получить историю рискованного пользователя
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-history-of-a-risky-user"></a>Пример 2: получение истории опасного пользователя
+### <a name="example-2-get-history-of-a-risky-user"></a>Пример 2. История рискованных пользователей
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

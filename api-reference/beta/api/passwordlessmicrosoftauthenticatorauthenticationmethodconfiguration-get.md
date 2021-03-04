@@ -1,26 +1,26 @@
 ---
 title: Get passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: Чтение свойств и связей объекта без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.
+description: Ознакомьтесь с свойствами и отношениями объекта без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 03208270209cc2bbede3df0dfe46862c3a821bb5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c21d1c8601715beef6f056defbf203afa417ac0c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873439"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447761"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Get passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) который представляет политику метода [](../resources/authenticationmethodspolicies-overview.md) проверки подлинности без пароля Microsoft Authenticator для клиента Azure AD.
+Извлечение свойств и связей объекта Без паролейMicrosoftAuthenticatorAuthenticationMethodConfiguration, который представляет политику [](../resources/authenticationmethodspolicies-overview.md) метода проверки подлинности без паролей Microsoft Authenticator Для клиента Azure AD. [](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)
 
 > [!CAUTION]
-> API политики проверки подлинности телефона без пароля Microsoft Authenticator является неподготовленным и больше не возвращает результаты 31 декабря 2020 г. Используйте новую политику метода [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
+> API политики метода проверки подлинности без паролей Microsoft Authenticator Phone является обесценен и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику метода проверки подлинности [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,12 +51,12 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/pas
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

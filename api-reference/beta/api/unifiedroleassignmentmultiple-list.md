@@ -3,14 +3,14 @@ title: Перечисление объектов unifiedRoleAssignmentMultiple
 description: Извлечение свойств и связей объекта unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ac53a5de9e2bc927e8798bda0315206bc4b19bdc
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 968e90bc659cdbdf2c654bb62c58e64ab250627f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154504"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444807"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "50154504"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объекта [unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте его для получения списка назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Получите список [объекта unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте это, чтобы получить список назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [унифицированныеRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50154504"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Приложение | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Вы можете фильтровать свойства `roleDefinitionId` или `principalId` по их свойствам. Свойство `roleDefinitionId` может быть либо ид объекта роли, либо ид объекта шаблона роли. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Вы можете фильтровать свойства `roleDefinitionId` или `principalId` свойства. Свойство `roleDefinitionId` может быть как ИД объекта роли, так и объектом шаблона ролей. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,19 +47,19 @@ GET /roleManagement/deviceManagement/roleAssignments
 |:---- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса.
+Ниже приводится пример запроса:
 
 <!-- {
   "blockType": "request",
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже приводится пример ответа:
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {

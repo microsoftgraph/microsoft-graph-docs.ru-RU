@@ -1,24 +1,24 @@
 ---
-title: 'orgContact: получение менеджера'
-description: Получение руководителя контакта
+title: 'orgContact: get manager'
+description: Получить диспетчера контакта
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 20ba81b13ab70a952909ea1b1218e2397d490bef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6df291504286729737765d375a74fdfd1a725b2e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964536"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447822"
 ---
-# <a name="orgcontact-get-manager"></a>orgContact: получение менеджера
+# <a name="orgcontact-get-manager"></a>orgContact: get manager
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение руководителя контакта
+Получить диспетчера контакта
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ GET /contacts/{id}/manager
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

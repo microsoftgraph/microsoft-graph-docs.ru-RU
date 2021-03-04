@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса passwordAuthenticationMethod
-description: Представление пароля, зарегистрированного для пользователя.
+title: passwordAuthenticationMethod resource type
+description: Представление пароля, зарегистрированного пользователю.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 92e135b74bc68662749376298b4be44155b577b2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2982b79df70b65bf09dff8f9b906ed85a8854b52
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156695"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444086"
 ---
-# <a name="passwordauthenticationmethod-resource-type"></a>Тип ресурса passwordAuthenticationMethod
+# <a name="passwordauthenticationmethod-resource-type"></a>passwordAuthenticationMethod resource type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представление пароля пользователя. В целях безопасности сам пароль никогда не возвращается в объекте, но для сброса пароля можно принять меры.
+Представление пароля пользователя. Для безопасности сам пароль никогда не будет возвращен в объекте, но можно принять меры для сброса пароля.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|[Список passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [Коллекция passwordAuthenticationMethod](passwordauthenticationmethod.md) | Чтение свойств и связей всех объектов **passwordAuthenticationMethod** этого пользователя. |
-|[Get passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Чтение свойств и связей объекта **passwordAuthenticationMethod.** |
-|[Сброс пароля](../api/passwordauthenticationmethod-resetpassword.md)|Нет|Сброс пароля пользователя в облаке и, если он синхронизирован, в локальной сети.|
+|[Список passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Ознакомьтесь с свойствами и отношениями всех объектов **passwordAuthenticationMethod.** |
+|[Get passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Ознакомьтесь с свойствами и отношениями объекта **passwordAuthenticationMethod.** |
+|[Сброс пароля](../api/passwordauthenticationmethod-resetpassword.md)|Нет|Сброс пароля пользователя в облаке и при синхронизации с локальной.|
 
 ## <a name="properties"></a>Свойства
 
@@ -34,7 +34,7 @@ ms.locfileid: "50156695"
 |:-------------|:------------|:------------|
 |creationDateTime|DateTimeOffset|Дата и время последнего обновления пароля. Это свойство в настоящее время не заполнено. Только для чтения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Идентификатор этого пароля, зарегистрированного для этого пользователя. Только для чтения.|
-|password|Строка|Для обеспечения безопасности пароль всегда возвращается в качестве NULL из операции LIST или GET.|
+|password|Строка|Для обеспечения безопасности пароль всегда возвращается в качестве null из операции LIST или GET.|
 
 ## <a name="relationships"></a>Связи
 

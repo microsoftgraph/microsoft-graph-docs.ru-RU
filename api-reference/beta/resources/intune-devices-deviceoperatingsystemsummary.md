@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01965c1dfaeb04d05d2dc6293fc449c0bbc878fe
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: de94b00a1660dc874e457d20315df2f3b0690164
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157640"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444485"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,14 +31,15 @@ ms.locfileid: "50157640"
 |windowsMobileCount|Int32|Количество мобильных устройств с Windows.|
 |windowsCount|Int32|Количество устройств с Windows.|
 |unknownCount|Int32|Количество неизвестных устройств.|
-|androidDedicatedCount|Int32|Количество выделенных устройств с Android.|
-|androidDeviceAdminCount|Int32|Количество устройств администратора устройств с Android.|
-|androidFullyManagedCount|Int32|Количество полностью управляемых устройств с Android.|
-|androidWorkProfileCount|Int32|Количество устройств с профилем работы с Android.|
-|androidCorporateWorkProfileCount|Int32|Количество устройств Android корпоративного профиля. Также известно как CORPORATE Owned Personally Enabled (СИБ). Допустимые значения : от -1 до 2 147 483 647|
+|AndroidDedicatedCount|Int32|Количество выделенных android-устройств.|
+|AndroidDeviceAdminCount|Int32|Количество устройств администратора устройств Android.|
+|AndroidFullyManagedCount|Int32|Количество полностью управляемых android-устройств.|
+|AndroidWorkProfileCount|Int32|Количество устройств Android профиля работы.|
+|AndroidCorporateWorkProfileCount|Int32|Количество устройств Android корпоративного профиля работы. Также известный как корпоративный личный включен (COPE). Допустимые значения -1 до 2147483647|
 |configMgrDeviceCount|Int32|Количество управляемых устройств ConfigMgr.|
-|aospUserlessCount|Int32|Количество устройств с Android без пользователей AOSP. Допустимые значения: от 0 до 2 147 483 647|
-|aospUserAssociatedCount|Int32|Количество устройств Android, связанных с пользователем AOSP. Допустимые значения: от 0 до 2 147 483 647|
+|aospUserlessCount|Int32|Количество устройств без пользователей AOSP для Android. Допустимые значения от 0 до 2147483647|
+|aospUserAssociatedCount|Int32|Количество устройств Android, связанных с пользователем AOSP. Допустимые значения от 0 до 2147483647|
+|LinuxCount|Int32|Количество устройств ОС Linux. Допустимые значения от 0 до 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -66,7 +67,8 @@ ms.locfileid: "50157640"
   "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024,
   "aospUserlessCount": 1024,
-  "aospUserAssociatedCount": 1024
+  "aospUserAssociatedCount": 1024,
+  "linuxCount": 1024
 }
 ```
 

@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса passwordlessMicrosoftAuthenticatorAuthenticationMethod
-description: Представление метода входов на телефоне без пароля Microsoft Authenticator, зарегистрированного для пользователя.
+title: passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type
+description: Представление метода microsoft Authenticator Passwordless Phone Sign-in, зарегистрированного на пользователя.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8815d84a8a85491399e97f7d10aa2e6cc1aeaf9d
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 0949a92d0adbcfdd53164b550b6d8f8bc07444eb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796551"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444079"
 ---
-# <a name="passwordlessmicrosoftauthenticatorauthenticationmethod-resource-type-deprecated"></a>Тип ресурса passwordlessMicrosoftAuthenticatorAuthenticationMethod (неподготовлен)
+# <a name="passwordlessmicrosoftauthenticatorauthenticationmethod-resource-type-deprecated"></a>passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type (deprecated)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представление метода входов на телефон без пароля Microsoft Authenticator, зарегистрированного для пользователя.
+Представление метода microsoft Authenticator Passwordless Phone Sign-in, зарегистрированного на пользователя.
 
 > [!CAUTION]
-> API метода microsoft Authenticator Без пароля для телефона является неподготовленным и перестает возвращать результаты 31 декабря 2020 г. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
+> API без пароля Microsoft Authenticator phone is deprecated and will stop returning results on 31 December 2020. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md) (неподготовлен)|[Коллекция passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)|Получить список объектов без пароля ПользователяMicrosoftAuthenticatorAuthenticationMethod и их свойств.|
-|[Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md) (неподготовлен)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)|Чтение свойств и связей объекта user без пароляMicrosoftAuthenticatorAuthenticationMethod.|
-|[Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md) (deprecated)|Нет|Удаляет объект user без пароляMicrosoftAuthenticatorAuthenticationMethod.|
+|[Список](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md) (неподготовленный)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) collection|Извлечение списка объектов без паролейMicrosoftAuthenticatorAuthenticationMethod и их свойств.|
+|[Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md) (deprecated)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)|Ознакомьтесь с свойствами и отношениями объекта без пароляMicrosoftAuthenticatorAuthenticationMethod.|
+|[Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md) (deprecated)|Нет|Удаляет объект без пароляMicrosoftAuthenticatorAuthenticationMethod.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор метода проверки подлинности.|
-|displayName|String|Отображаемое имя мобильного устройства, заданное пользователем.|
-|creationDateTime|DateTimeOffset|Временная пометь, когда этот метод был зарегистрирован для пользователя.|
+|displayName|String|Отображающее имя мобильного устройства в качестве данной пользователем.|
+|creationDateTime|DateTimeOffset|Время регистрации этого метода пользователем.|
 
 
 ## <a name="json-representation"></a>Представление JSON

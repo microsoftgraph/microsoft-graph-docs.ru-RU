@@ -1,23 +1,23 @@
 ---
-title: Удаление microsoftAuthenticatorAuthenticationMethodConfiguration
-description: Удаляет объект microsoftAuthenticatorAuthenticationMethodConfiguration.
+title: Удаление MicrosoftAuthenticatorAuthenticationMethodConfiguration
+description: Удаляет объект MicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 740bba96925e6393ce8b8c4dee517da3461b6b7c
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 132ad08227887d13bdf9b11b413dfb711acb9a2e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874488"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447850"
 ---
-# <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>Удаление microsoftAuthenticatorAuthenticationMethodConfiguration
+# <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>Удаление MicrosoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите изменения, внесенные в политику метода проверки подлинности [Microsoft Authenticator,](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) вернув политику к конфигурации по умолчанию.
+Удалите изменения, внесенные в политику проверки подлинности [Microsoft Authenticator,](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) возвращая политику к ее конфигурации по умолчанию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "49874488"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в [сведениях о роли.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в [роли](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

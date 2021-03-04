@@ -1,26 +1,26 @@
 ---
 title: Get passwordlessMicrosoftAuthenticatorAuthenticationMethod
-description: Чтение свойств и связей объекта Без пароляMicrosoftAuthenticatorAuthenticationMethod.
+description: Ознакомьтесь с свойствами и отношениями объекта Без пароляMicrosoftAuthenticatorAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3c488ef34c5278ff3628986a08357c543bf8d4ce
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 56d5e5223480f09bb9d2626a48938a783fbaa2bc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796521"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447794"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Get passwordlessMicrosoftAuthenticatorAuthenticationMethod (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение одного объекта метода для пользователя [Microsoft Authenticator Без](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) пароля.
+Извлечение пользовательского единого [объекта метода microsoft Authenticator Passwordless Phone Sign-in.](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)
 
 > [!CAUTION]
-> API метода microsoft Authenticator Без пароля для телефона является неподготовленным и перестает возвращать результаты 31 декабря 2020 г. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
+> API без пароля Microsoft Authenticator phone is deprecated and will stop returning results on 31 December 2020. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "49796521"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -42,11 +42,11 @@ ms.locfileid: "49796521"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только маскирование номеров телефонов)
+* Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -64,12 +64,12 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашивается без `200 OK` [пароляMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuth
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

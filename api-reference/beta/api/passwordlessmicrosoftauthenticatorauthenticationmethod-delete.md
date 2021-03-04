@@ -1,26 +1,26 @@
 ---
 title: Удаление без пароляMicrosoftAuthenticatorAuthenticationMethod
-description: Удаляет объект Без пароляMicrosoftAuthenticatorAuthenticationMethod.
+description: Удаляет объект PasswordlessMicrosoftAuthenticatorAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6e894cd8332969e708c8a7d8d1a53ca7c17be2dc
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 132f847f11d9fff5886337334a43896f54bc179c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796565"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447811"
 ---
-# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Удаление без пароляMicrosoftAuthenticatorAuthenticationMethod (неподготовлено)
+# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Удаление без пароляMicrosoftAuthenticatorAuthenticationMethod (обесценен)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект метода для пользователя [Microsoft Authenticator Без](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) пароля для телефона для входов в учетную запись.
+Удаляет объект метода "Microsoft [Authenticator Passwordless Phone Sign-in"](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) пользователя.
 
 > [!CAUTION]
-> API метода microsoft Authenticator Без пароля для телефона является неподготовленным и перестает возвращать результаты 31 декабря 2020 г. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
+> API без пароля Microsoft Authenticator phone is deprecated and will stop returning results on 31 December 2020. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "49796565"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -42,7 +42,7 @@ ms.locfileid: "49796565"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности
@@ -62,7 +62,7 @@ DELETE /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthe
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

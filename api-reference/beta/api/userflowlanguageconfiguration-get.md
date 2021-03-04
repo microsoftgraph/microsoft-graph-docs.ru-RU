@@ -1,24 +1,24 @@
 ---
 title: Get userFlowLanguageConfiguration
-description: Чтение свойств и связей объекта [userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
+description: Ознакомьтесь с свойствами и отношениями [объекта userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 50af91b7a225e08c2e5543d34ef9e97e2eae2c78
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: f96a74fb1209aedba27677088be7af271baac7c8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844986"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444709"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>Get userFlowLanguageConfiguration
 
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Эти объекты представляют язык, доступный в пользовательском потоке.
+Ознакомьтесь с свойствами и отношениями [объекта userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Эти объекты представляют язык, доступный в потоке пользователей.
 
-**Примечание.** Чтобы получить язык, поддерживаемый для настройки, необходимо сначала включить настройку языка в пользовательском потоке B2C Azure AD. Дополнительные сведения [см. в обновлении b2cIdentityUserFlow.](../api/b2cidentityuserflow-update.md) Настройка языка включена по умолчанию в потоках пользователей [Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Примечание:** Чтобы получить язык, поддерживаемый для настройки, сначала необходимо включить настройку языка в потоке пользователей Azure AD B2C. Дополнительные сведения см. [в обновлении b2cIdentityUserFlow.](../api/b2cidentityuserflow-update.md) Настройка языка включена по умолчанию в [потоках пользователей Azure Active Directory.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49844986"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,13 +53,13 @@ GET identity/b2xUserFlows/{id}/languages/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

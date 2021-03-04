@@ -1,27 +1,27 @@
 ---
 title: Получение объекта leakedCredentialsRiskEvent
-description: Получение свойств и связей объекта леакедкредентиалсрискевент.
+description: Извлечение свойств и связей объекта leakedcredentialsriskevent.
 localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a615edb24485d96e36e706f3c41f2b34da305be3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: c76eab673cc93f31dfa4f95cb2847c91a427d2f2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999216"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443785"
 ---
-# <a name="get-leakedcredentialsriskevent-deprecated"></a>Получение Леакедкредентиалсрискевент (не рекомендуется)
+# <a name="get-leakedcredentialsriskevent-deprecated"></a>Get leakedCredentialsRiskEvent (deprecated)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+>API **identityRiskEvents** обесценен и прекратит возвращать данные 10 января 2020 г. Подробные сведения см. в материале [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Получение свойств и связей объекта леакедкредентиалсрискевент.
+Извлечение свойств и связей объекта leakedcredentialsriskevent.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ ms.locfileid: "47999216"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /leakedCredentialsRiskEvents/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [леакедкредентиалсрискевент](../resources/leakedcredentialsriskevent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и передает `200 OK` [объектCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md) в текст ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

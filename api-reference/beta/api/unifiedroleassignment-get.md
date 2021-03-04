@@ -1,24 +1,24 @@
 ---
-title: Получение Унифиедролеассигнмент
-description: Получение свойств и связей объекта Унифиедролеассигнмент.
+title: Get unifiedRoleAssignment
+description: Извлечение свойств и связей объекта unifiedRoleAssignment.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dda763b8b50a0a02e1bd826739095a81e9d85b22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3900e716926ca200a82ae56eee19819b8c2e80b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978915"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444877"
 ---
-# <a name="get-unifiedroleassignment"></a>Получение Унифиедролеассигнмент
+# <a name="get-unifiedroleassignment"></a>Get unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [унифиедролеассигнмент](../resources/unifiedroleassignment.md) .
+Извлечение свойств и связей объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48978915"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,19 +46,19 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1--get-details-of-a-role-assignment"></a>Пример 1: получение сведений о назначении роли
+### <a name="example-1--get-details-of-a-role-assignment"></a>Пример 1. Сведения о назначении ролей
 
 #### <a name="request"></a>Запрос
 
@@ -118,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>Пример 2: получение сведений о назначении роли с помощью `$expand`
+### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>Пример 2. Сведения о назначении ролей с помощью `$expand`
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса с `$expand` параметром Query.
+Ниже приводится пример запроса с `$expand` параметром запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

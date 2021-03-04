@@ -3,20 +3,20 @@ title: Список defaultPages
 description: Получите ресурсы userFlowLanguagePage из свойства навигации defaultPages.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5339bebc87223fb6ca055fa0c1801bdffbd3edc1
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: f57df2bb3a1ff5b16517b291ea756c0ee420dc7a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844944"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444674"
 ---
 # <a name="list-defaultpages"></a>Список defaultPages
 
 Пространство имен: microsoft.graph
 
-Получите ресурсы userFlowLanguagePage из свойства навигации defaultPages. Они содержат значения, показанные пользователю в пользовательском пути по умолчанию для пользовательского потока.
+Получите ресурсы userFlowLanguagePage из свойства навигации defaultPages. Они содержат значения, показанные пользователю в пользовательском путешествии по умолчанию пользовательского потока.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,10 +28,10 @@ ms.locfileid: "49844944"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,13 +51,13 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/defaultPages
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userFlowLanguagePage](../resources/userflowlanguagepage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [userFlowLanguagePage](../resources/userflowlanguagepage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

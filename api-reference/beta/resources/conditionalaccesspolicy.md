@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса conditionalAccessPolicy
-description: Представляет политику условного доступа Azure Active Directory. Политики условного доступа — это настраиваемые правила, которые определяют сценарий доступа.
+title: тип ресурса conditionalAccessPolicy
+description: Представляет политику условного доступа Azure Active Directory. Политики условного доступа — это настраиваемые правила, определяемые сценарием доступа.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d8a8a065bc9e365fbbb03691d20ab188586db336
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a1ec10d2a64017eac4894d947b5da20802a38c96
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161147"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444310"
 ---
-# <a name="conditionalaccesspolicy-resource-type"></a>Тип ресурса conditionalAccessPolicy
+# <a name="conditionalaccesspolicy-resource-type"></a>тип ресурса conditionalAccessPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику условного доступа Azure Active Directory. Политики условного доступа — это настраиваемые правила, которые определяют сценарий доступа. Дополнительные сведения см. в [документации по условному доступу.](/azure/active-directory/conditional-access/)
+Представляет политику условного доступа Azure Active Directory. Политики условного доступа — это настраиваемые правила, определяемые сценарием доступа. Дополнительные сведения см. в [документации условного доступа.](/azure/active-directory/conditional-access/)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Список conditionalAccessPolicies](../api/conditionalaccessroot-list-policies.md) | Коллекция [conditionalAccessPolicy](conditionalaccesspolicy.md) | Получите все объекты conditionalAccessPolicies в организации. |
-| [Создание conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Создание объекта conditionalAccessPolicy. |
+| [Создание conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Создайте новый объект conditionalAccessPolicy. |
 | [Get conditionalAccessPolicy](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Чтение свойств и связей объекта conditionalAccessPolicy. |
 | [Обновление conditionalAccessPolicy](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Обновление объекта conditionalAccessPolicy. |
 | [Удаление conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | Нет | Удаление объекта conditionalAccessPolicy. |
@@ -34,14 +34,14 @@ ms.locfileid: "50161147"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Определяет правила, которые должны быть выполнены, чтобы применить политику. Обязательный элемент. |
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Указывает правила, которые необходимо соблюдать для применения политики. Обязательный. |
 |createdDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Readonly. |
 |description|String| Не используется. |
-|displayName|String| Указывает отображаемое имя объекта conditionalAccessPolicy. |
-|grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Указывает элементы управления предоставлением, которые должны быть выполнены для прохода политики. |
+|displayName|String| Указывает имя отображения объекта conditionalAccessPolicy. |
+|grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Указывает элементы управления грантами, которые необходимо выполнить для выполнения политики. |
 |id|String| Указывает идентификатор объекта conditionalAccessPolicy. Только для чтения.|
 |modifiedDateTime| DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Readonly. |
-|sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Указывает элементы управления сеансом, которые применяются после регистрации. |
+|sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Указывает элементы управления сеансами, которые применяются после регистрации. |
 |состояние|string| Указывает состояние объекта conditionalAccessPolicy. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательный. |
 
 ## <a name="relationships"></a>Связи

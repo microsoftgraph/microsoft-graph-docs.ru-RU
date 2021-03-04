@@ -1,22 +1,22 @@
 ---
-title: Список overridesPages
+title: Переопределения списка
 description: Получите ресурсы userFlowLanguagePage из свойства навигации overridesPages.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b642f412cd02bd387b8d63c61d19721882ad6f2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 130710b0c1be9ad2b46a73aeeb80f319c5d4adde
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844937"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444660"
 ---
-# <a name="list-overridespages"></a>Список overridesPages
+# <a name="list-overridespages"></a>Переопределения списка
 
 Пространство имен: microsoft.graph
 
-Получите ресурсы userFlowLanguagePage из свойства навигации overridesPages. Эти страницы используются для настройки значений, которые показываются пользователю во время пользовательского пути в пользовательском потоке.
+Получите ресурсы userFlowLanguagePage из свойства навигации overridesPages. Эти страницы используются для настройки значений, показанных пользователю во время пользовательского пути в потоке пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,10 +28,10 @@ ms.locfileid: "49844937"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,13 +51,13 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userFlowLanguagePage](../resources/userflowlanguagepage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [userFlowLanguagePage](../resources/userflowlanguagepage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/b2cUserFlows/B2C_1_Customer/languages/en/ov
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

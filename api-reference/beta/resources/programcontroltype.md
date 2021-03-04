@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Програмконтролтипе
-description: 'В функции рецензирования Access в Azure AD при сопоставлении элемента управления с программой используется тип элемента управления Program, чтобы указать тип проверки доступа, для которой предназначен элемент управления.  '
+title: тип ресурса programControlType
+description: 'В функции обзоров доступа Azure AD используется тип управления программой при присоединении элементов управления к программе, чтобы указать тип обзора доступа, для который используется элемент управления.  '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: ddf5ee29c01770d06c9725413f362bd0f0e18bee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 593d8a8fa36c03515dbad9a1ee1dd0b267f98577
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029066"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443960"
 ---
-# <a name="programcontroltype-resource-type"></a>Тип ресурса Програмконтролтипе
+# <a name="programcontroltype-resource-type"></a>тип ресурса programControlType
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](accessreviews-root.md) в Azure AD при сопоставлении элемента управления с программой используется тип элемента управления Program, чтобы указать тип проверки доступа, для которой предназначен элемент управления.  
+В функции обзоров доступа Azure [AD](accessreviews-root.md) используется тип управления программой при присоединении элементов управления к программе, чтобы указать тип обзора доступа, для который используется элемент управления.  
 
-Объекты типа управления программой автоматически создаются, когда глобальный администратор, входящей в клиент, должен использовать функцию "обзоры доступа".  Невозможно создать дополнительные типы элементов управления программы.
+Объекты типа управления программами автоматически создаются, когда глобальный администратор на борту клиента использует функцию обзоров доступа.  Дополнительные типы управления программами не создаются.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список Програмконтролтипес](../api/programcontroltype-list.md) | Коллекция [програмконтролтипе](programcontroltype.md)| Список типов элементов управления программы. |
+|[List programControlTypes](../api/programcontroltype-list.md) | [коллекция programControlType](programcontroltype.md)| Типы управления программами списка. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | Идентификатор типа программного элемента управления, назначенный с помощью функции                                      |
-| `displayName`            |`String`                | Имя типа элемента управления программы                                                             |
+| `id`                     |`String`                | Идентификатор типа управления программой, заданная функцией                                      |
+| `displayName`            |`String`                | Имя типа управления программой                                                             |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -45,7 +45,7 @@ ms.locfileid: "48029066"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание Програмконтрол](../api/programcontrol-create.md) |     [програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу.|
+|[Создание programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте программуControl в программу.|
 
 
 ## <a name="json-representation"></a>Представление JSON

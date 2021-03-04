@@ -1,24 +1,24 @@
 ---
-title: Удаление Трустфрамеворкполици
-description: Эта операция удаляет существующий объект Трустфрамеворкполици из клиента Azure AD B2C.
+title: Удаление trustFrameworkPolicy
+description: Эта операция удаляет существующий объект trustFrameworkPolicy из клиента Azure AD B2C.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bfb69093b6ace4009285d26ef8b6df2e763c3ccf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ebca87f50af1d4db6c4b6053bcabcaf9aa672d3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968589"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444954"
 ---
-# <a name="delete-trustframeworkpolicy"></a>Удаление Трустфрамеворкполици
+# <a name="delete-trustframeworkpolicy"></a>Удаление trustFrameworkPolicy
 
 Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Удаление существующего [трустфрамеворкполици](../resources/trustframeworkpolicy.md).
+Удаление существующего [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48968589"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|Policy.ReadWrite.TrustFramework|
+|Приложение|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -45,7 +45,7 @@ DELETE /trustFramework/policies/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -55,7 +55,7 @@ DELETE /trustFramework/policies/{id}
 
 ## <a name="example"></a>Пример
 
-В следующем примере удаляется объект **трустфрамеворкполици**.
+В следующем примере **удаляется trustFrameworkPolicy**.
 
 ##### <a name="request"></a>Запрос
 

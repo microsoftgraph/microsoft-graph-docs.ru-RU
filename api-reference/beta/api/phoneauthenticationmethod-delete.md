@@ -1,16 +1,16 @@
 ---
 title: Удаление phoneAuthenticationMethod
-description: Удаление метода проверки подлинности на телефоне пользователя.
+description: Удаление метода проверки подлинности телефона пользователя.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b506851ec693b5fe9cba2216910ba635c7d648af
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: b10f0e6e89b891c41cc226a378b6b0fddf82a990
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796600"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447727"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>Удаление phoneAuthenticationMethod
 
@@ -18,13 +18,13 @@ ms.locfileid: "49796600"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление метода проверки подлинности [на телефоне пользователя.](../resources/phoneauthenticationmethod.md) 
+Удаление метода проверки подлинности [телефона пользователя.](../resources/phoneauthenticationmethod.md) 
 
->**Примечание.** Это удаляет номер телефона пользователя, и он больше не сможет использовать этот номер для проверки подлинности с помощью SMS или голосовых вызовов.
+>**Примечание:** Это удаляет номер телефона у пользователя, и он больше не сможет использовать его для проверки подлинности, будь то с помощью SMS или голосовых вызовов.
 
-Помните, что пользователь не может иметь `alternateMobile` номер без `mobile` него. Если вы хотите удалить номер пользователя, который также имеет номер, сначала обновите его до нового номера, а затем `mobile` `alternateMobile` [](phoneauthenticationmethod-update.md) `mobile` `alternateMobile` удалите номер.
+Помните, что пользователь не может иметь `alternateMobile` номер без `mobile` номера. Если вы хотите удалить номер пользователя, который также имеет номер, сначала обновите номер на новый `mobile` `alternateMobile` [](phoneauthenticationmethod-update.md) `mobile` номер, а затем удалите `alternateMobile` номер.
 
-Если номер телефона является методом многофакторной проверки подлинности Azure (MFA) пользователя по умолчанию, его нельзя удалить. Пользователь должен изменить метод проверки подлинности по умолчанию, а затем удалить номер.
+Если номер телефона является методом многофакторной проверки подлинности Azure по умолчанию, его невозможно удалить. Измените метод проверки подлинности по умолчанию, а затем удалите номер.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +38,7 @@ ms.locfileid: "49796600"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -46,7 +46,7 @@ ms.locfileid: "49796600"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности
@@ -66,7 +66,7 @@ DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

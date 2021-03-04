@@ -3,14 +3,14 @@ title: Обновление orgcontact
 description: Обновление свойств объекта orgcontact.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c425af3a39a2a9f13a46792d8482d59804c8d37f
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 85b08d815b742a0b4117c7dd0ae786da979f92dc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352158"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447831"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
@@ -38,22 +38,22 @@ PATCH /contacts/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |city|String||
-|country|Строка||
+|country|String||
 |department|String||
 |onPremisesSyncEnabled|Boolean||
-|displayName|Строка||
+|displayName|String||
 |givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|mail|String||
+|почта;|String||
 |mailNickname|String||
-|mobilePhone;|String||
+|mobilePhone|String||
 |officeLocation|String||
 |postalCode|String||
 |proxyAddresses|String||

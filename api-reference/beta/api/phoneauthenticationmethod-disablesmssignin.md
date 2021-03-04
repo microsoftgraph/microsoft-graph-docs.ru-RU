@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: disableSmsSignIn'
-description: Отключение sms-входов для мобильного телефона
+description: Отключение sms-регистрации для мобильного телефона
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e4440c5fac4a774b264b068a6e1e17d3d7c7d83
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 235257c4df9c24dec33aad15e11b2318e0fb8e30
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796635"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447729"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
 
@@ -18,9 +18,9 @@ ms.locfileid: "49796635"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отключать вход с помощью SMS для существующего `mobile` номера телефона. 
+Отключение sms-регистрации для существующего `mobile` номера телефона. 
 
->**Примечание.** Номер больше не будет доступен для sms-входов, что может препятствовать входу пользователя.
+>**Примечание:** Номер больше не будет доступен для регистрации SMS, что может помешать входу пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "49796635"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -42,7 +42,7 @@ ms.locfileid: "49796635"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSms
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

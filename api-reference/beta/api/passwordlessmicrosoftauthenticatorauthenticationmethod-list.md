@@ -1,26 +1,26 @@
 ---
-title: Список без пароляMicrosoftAuthenticatorAuthenticationMethods
-description: Получить список объектов Без пароляMicrosoftAuthenticatorAuthenticationMethod и их свойств.
+title: Список без паролейMicrosoftAuthenticatorAuthenticationMethods
+description: Извлечение списка объектов без пароляMicrosoftAuthenticatorAuthenticationMethod и их свойств.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4947304335ff59839dda00b9da554961c266fbc
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 18a0e9e6961e97f2b6d9c709eff61676242417ab
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796670"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447775"
 ---
-# <a name="list-passwordlessmicrosoftauthenticatorauthenticationmethods-deprecated"></a>Список без пароляMicrosoftAuthenticatorAuthenticationMethods (неподготовлен)
+# <a name="list-passwordlessmicrosoftauthenticatorauthenticationmethods-deprecated"></a>Список без паролейMicrosoftAuthenticatorAuthenticationMethods (обесценен)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов метода microsoft [Authenticator](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) user без пароля для телефона и их свойств.
+Извлечение списка объектов метода регистрации без паролей [Microsoft Authenticator](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) пользователя и их свойств.
 
 > [!CAUTION]
-> API метода microsoft Authenticator Без пароля для телефона является неподготовленным и перестает возвращать результаты 31 декабря 2020 г. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
+> API без пароля Microsoft Authenticator phone is deprecated and will stop returning results on 31 December 2020. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "49796670"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -42,11 +42,11 @@ ms.locfileid: "49796670"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только маскирование номеров телефонов)
+* Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -65,14 +65,14 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}|
+|Authorization|Bearer {token}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [Без пароляMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` без паролейMicrosoftAuthenticatorAuthenticationMethod в теле отклика. [](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuth
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -1,18 +1,18 @@
 ---
 title: Удаление oAuth2PermissionGrant
-description: Удаление объекта oAuth2PermissionGrant, представляющего делегированное предоставление разрешений.
+description: Удаление oAuth2PermissionGrant, представляющего делегированную выдачу разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b24b6b1ec47540c15ee7cc4c107114251b5d4f4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b026f2e254a0901526baddaf786ab8d1d6efab6d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967705"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447985"
 ---
-# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>Удаление делегированного предоставления разрешений (oAuth2PermissionGrant)
+# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>Удаление делегированного разрешения (oAuth2PermissionGrant)
 
 Пространство имен: microsoft.graph
 
@@ -22,10 +22,10 @@ ms.locfileid: "48967705"
 
 Удаление [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
-При удалении делегированного разрешения предоставленный им доступ отзывается. Существующие маркеры доступа продолжат действовать в течение всего времени существования, но новые маркеры доступа не будут предоставлены делегированным разрешениям, определенным в удаленном **oAuth2PermissionGrant**.
+При удалении делегированного разрешения доступ, предоставленный им, отменяется. Существующие маркеры доступа будут по-прежнему действительны для их срока службы, но новые маркеры доступа не будут предоставлены для делегирования разрешений, выявленных в удаленной **oAuth2PermissionGrant**.
 
 > [!NOTE]
-> Можно предоставить два делегированных разрешения на авторизацию приложения, действующего от имени пользователя при вызове API. Это может произойти, когда пользователь отправляет приложение по собственному имени (создавая **oAuth2PermissionGrant** с *участником* **консенттипе** , определяя пользователя), а затем администратор предоставляет согласие администратора на уровне клиента от имени всех пользователей (создание второго **oAuth2PermissionGrant** с **консенттипе** *аллпринЦипалс* ).
+> Может быть два делегированных разрешения, разрешающих приложению действовать от имени пользователя при вызове API. Это может произойти, когда пользователь соглашается на приложение от своего имени (создает **oAuth2PermissionGrant** с **согласияType** *Principal,* идентифицирует пользователя), а затем администратор предоставляет согласие администратора на все клиенты от имени всех пользователей (создание второго **oAuth2PermissionGrant** с **согласияType** *allPrincipals).*
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,9 +33,9 @@ ms.locfileid: "48967705"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Делегатедпермиссионгрант. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ DELETE /oauth2PermissionGrants/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

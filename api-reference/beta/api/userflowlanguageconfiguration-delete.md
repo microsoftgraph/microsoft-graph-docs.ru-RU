@@ -1,24 +1,24 @@
 ---
 title: Удаление userFlowLanguageConfiguration
-description: Удаляет объект userFlowLanguageConfiguration из пользовательского потока B2C.
+description: Удаляет объект userFlowLanguageConfiguration из потока пользователей B2C.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4b9a59c8786fa27b458fd6f1236a30e33f1fb355
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: d148db0712ffbfb9ca41ba1c62e13c90c852cbc6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844963"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444751"
 ---
 # <a name="delete-userflowlanguageconfiguration"></a>Удаление userFlowLanguageConfiguration
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) из пользовательского потока [B2C Azure AD.](../resources/b2cidentityuserflow.md)
+Удаляет объект [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) из потока [пользователей Azure AD B2C.](../resources/b2cidentityuserflow.md)
 
-**Примечание.** Вы не можете удалить языки из пользовательского [потока Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Примечание:** Нельзя удалять языки из потока [пользователей Azure Active Directory.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49844963"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ DELETE /identity/b2cUserFlows/{id}/languages/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: enableSmsSignIn'
-description: Включить вход с помощью SMS для мобильного телефона.
+description: Включить вход в SMS для мобильного телефона.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e2c8087005f65ac74a202ea43d90767172267a46
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 149ea3f8975ce281f2c5059df46cee761576bb4f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796607"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443644"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
@@ -18,11 +18,11 @@ ms.locfileid: "49796607"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Включить вход с помощью SMS для существующего `mobile` номера телефона. Чтобы успешно включить:
+Включить вход в SMS для существующего `mobile` номера телефона. Чтобы успешно включить:
 
 * Телефон должен иметь `"phoneType": "mobile"` .
-* Телефон должен быть уникальным в системе sms-входов (никто больше не может использовать этот номер).
-* Пользователю необходимо включить вход с помощью SMS в политике [методов проверки подлинности.](/azure/active-directory/authentication/concept-authentication-methods)
+* Телефон должен быть уникальным в системе регистрации SMS (никто другой не может использовать этот номер).
+* Пользователь должен быть включен для входа в SMS в политике [методов проверки подлинности.](/azure/active-directory/authentication/concept-authentication-methods)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,7 +36,7 @@ ms.locfileid: "49796607"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -44,7 +44,7 @@ ms.locfileid: "49796607"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности
@@ -64,7 +64,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsS
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

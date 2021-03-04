@@ -1,24 +1,24 @@
 ---
-title: Получение Трустфрамеворкполици
-description: Эта операция возвращает существующий контент Трустфрамеворкполици из клиента Azure AD B2C.
+title: Get trustFrameworkPolicy
+description: Эта операция извлекает существующий контент trustFrameworkPolicy из клиента Azure AD B2C.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: efb26734bbcb39cdad5fe451e636d836ea615243
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbfa30131d2f17ab046f2ef6c1b997c8fca739b4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095606"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444926"
 ---
-# <a name="get-trustframeworkpolicy"></a>Получение Трустфрамеворкполици
+# <a name="get-trustframeworkpolicy"></a>Get trustFrameworkPolicy
 
 Пространство имен: microsoft.graph
 
 >**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Получение содержимого существующего [трустфрамеворкполици](../resources/trustframeworkpolicy.md).
+Извлечение содержимого существующего [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48095606"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Policy. Read. ALL, Policy. ReadWrite. Трустфрамеворк|
+|Делегированные (рабочая или учебная учетная запись)| Policy.Read.All, Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Policy. Read. ALL, Policy. ReadWrite. Трустфрамеворк|
+|Приложение|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -41,7 +41,7 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` `$expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` и `$expand` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,19 +49,19 @@ GET /trustFramework/policies/{id}/$value
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в тексте отклика.  
+В случае успешной работы этот метод возвращает код отклика и `200 OK` XML-представление [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) в тексте ответа.  
 
->**Note:** тип контента ответа будет иметь значение `application/xml` .
+>**Примечание:** тип контента ответа будет `application/xml` .
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере возвращается определенный **трустфрамеворкполици**.
+В следующем примере извлекается определенное **довериеFrameworkPolicy**.
 
 ##### <a name="request"></a>Запрос
 

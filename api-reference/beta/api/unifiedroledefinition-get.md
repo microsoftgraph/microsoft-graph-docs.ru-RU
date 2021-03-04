@@ -1,24 +1,24 @@
 ---
-title: Получение Унифиедроледефинитион
-description: Получение свойств и связей объекта Унифиедроледефинитион.
+title: Get unifiedRoleDefinition
+description: Извлечение свойств и связей объекта unifiedRoleDefinition.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dd5660c8fd5c748748d137e9773130fd7856c380
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ac38b1c6b131c22f8b3197500640cf36ef2f691
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976690"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444821"
 ---
-# <a name="get-unifiedroledefinition"></a>Получение Унифиедроледефинитион
+# <a name="get-unifiedroledefinition"></a>Get unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [унифиедроледефинитион](../resources/unifiedRoleDefinition.md) . В настоящее время "каталог" является единственным поддерживаемым приложением RBAC.
+Извлечение свойств и связей объекта [unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) В настоящее время "каталог" является единственным поддерживаемой приложением RBAC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48976690"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,19 +46,19 @@ GET /roleManagement/directory/roleDefinitions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-definition-of-a-custom-role"></a>Пример 1: получение определения настраиваемой роли
+### <a name="example-1-get-the-definition-of-a-custom-role"></a>Пример 1. Определение настраиваемой роли
 
 #### <a name="request"></a>Запрос
 
@@ -132,7 +132,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-built-in-role"></a>Пример 2: получение определения встроенной роли
+### <a name="example-2-get-the-definition-of-a-built-in-role"></a>Пример 2. Определение встроенной роли
 
 #### <a name="request"></a>Запрос
 
@@ -232,7 +232,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Пример 3: получение определения встроенной роли Azure AD и $expand роли, от которой он наследуется
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Пример 3. Определение встроенной роли Azure AD и $expand роли, которую она наследует
 
 #### <a name="request"></a>Запрос
 

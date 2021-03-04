@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса Програмконтрол
-description: В функции рецензирования Access в Azure AD объект элемента управления Program представляет элемент управления, связывая проверку доступа с программой.
+title: тип ресурса programControl
+description: В функции обзоров доступа Azure AD объект управления программой представляет элемент управления, связывающий обзор доступа с программой.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 9837f160015dedb0f37cce65b8209ff9a6ec5331
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 492dc57bfa332472cb7565580ffaa8a5260234c0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330178"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443981"
 ---
-# <a name="programcontrol-resource-type"></a>Тип ресурса Програмконтрол
+# <a name="programcontrol-resource-type"></a>тип ресурса programControl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](accessreviews-root.md) в Azure AD объект элемента управления Program представляет элемент управления, связывая проверку доступа с программой.
+В функции обзоров доступа Azure [AD](accessreviews-root.md) объект управления программой представляет элемент управления, связывающий обзор доступа с программой.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:------ |:----------- |:----------- |
-| [Создание Програмконтрол](../api/programcontrol-create.md) |    [програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу. |
-| [Удаление Програмконтрол](../api/programcontrol-delete.md) | Нет. | Удаление Програмконтрол из программы. |
-| [Список Програмконтролс](../api/programcontrol-list.md) | Коллекция [програмконтрол](programcontrol.md) | Перечисление элементов управления для всех программ в клиенте. |
-| [Список Програмконтролс программы](../api/program-listcontrols.md) | Коллекция [програмконтрол](programcontrol.md) |    Получение коллекции элементов управления программы. |
-| [Список Програмконтролтипес](../api/programcontroltype-list.md) | Коллекция [програмконтролтипе](programcontroltype.md)| Список типов элементов управления программы. |
+| [Создание programControl](../api/programcontrol-create.md) |    [programControl](programcontrol.md) |   Добавьте программуControl в программу. |
+| [Удаление программыControl](../api/programcontrol-delete.md) | Нет. | Удаление программыControl из программы. |
+| [List programControls](../api/programcontrol-list.md) | [коллекция programControl](programcontrol.md) | Элементы управления списками для всех программ в клиенте. |
+| [Список программКонтроли программы](../api/program-listcontrols.md) | [коллекция programControl](programcontrol.md) |    Получите коллекцию элементов управления программы. |
+| [List programControlTypes](../api/programcontroltype-list.md) | [коллекция programControlType](programcontroltype.md)| Типы управления программами списка. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание |
 |:-------- |:---- |:----------- |
-| id | Строка | Присвоенный компоненту идентификатор ссылки между программой и элементом управления. |
-| програмид | Строка | Програмид программы, частью которой является этот элемент управления. Требуется при создании. |
-| controlId | Строка | ControlId элемента управления, в частности идентификатор проверки доступа. Требуется при создании. |
-| контролтипеид | Строка | Програмконтролтипе определяет тип элемента управления программы, например элемент управления, который связывается с проверками гостевого доступа. Требуется при создании. |
-| displayName | Строка | Имя элемента управления. |
-| status | String | Состояние жизненного цикла элемента управления. |
-| createdDateTime | DateTimeOffset | Дата и время создания программного элемента управления. |
-| owner | [userIdentity](useridentity.md) | Пользователь, создавший элемент управления программы. |
-| resource | [програмресаурце](programresource.md) | Ресурс, группа или приложение, предназначенные для проверки доступа этого элемента управления. |
+| id | String | Обозначенный функцией идентификатор связи между программой и элементом управления. |
+| programId | String | ProgramId программы этот контроль является частью. Требуется при создании. |
+| controlId | String | ControlId управления, в частности идентификатор обзора доступа. Требуется при создании. |
+| controlTypeId | String | ПрограммаControlType определяет тип управления программой , например, контрольную ссылку на отзывы о доступе гостей. Требуется при создании. |
+| displayName | String | Имя управления. |
+| status | String | Состояние жизненного цикла управления. |
+| createdDateTime | DateTimeOffset | Дата создания и время управления программой. |
+| owner | [userIdentity](useridentity.md) | Пользователь, создавший управление программой. |
+| resource | [programResource](programresource.md) | Ресурс, группа или приложение, которые ориентированы на обзор доступа управления этой программой. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип   | Описание |
 |:------------ |:---- |:----------- |
-| Программа | [Программа](program.md) | Программа, частью которой является этот элемент управления. |
+| программа | [программа](program.md) | Программа, частью этой системы управления. |
 
 ## <a name="json-representation"></a>Представление JSON
 
