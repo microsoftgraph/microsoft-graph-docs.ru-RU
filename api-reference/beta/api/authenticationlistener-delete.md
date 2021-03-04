@@ -1,24 +1,24 @@
 ---
-title: Удаление authenticationListener
-description: Удаляет authenticationListener из события, поддерживаемых authenticationEventsPolicy.
+title: Удаление проверки подлинностиListener
+description: Удаляет аутентификациюListener из события, поддерживаемом проверкой подлинностиEventsPolicy.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3db702f80e92ce475d0b3699236096d7d7b79392
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c808aa161bacb2612c90a53f58b7163f663e4150
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872326"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438493"
 ---
-# <a name="remove-authenticationlistener"></a>Удаление authenticationListener
+# <a name="remove-authenticationlistener"></a>Удаление проверки подлинностиListener
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите указанный [authenticationListener,](../resources/authenticationlistener.md) определенный для события onSignupStart в конвейере проверки подлинности.
+Удаление указанной [проверки подлинностиListener,](../resources/authenticationlistener.md) определенной для события onSignupStart в конвейере проверки подлинности.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ DELETE /identity/events/onSignupStart/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

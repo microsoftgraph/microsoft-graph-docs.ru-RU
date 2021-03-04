@@ -1,24 +1,24 @@
 ---
-title: Получение Аусоризатионполици
-description: Получение свойств и связей объекта Аусоризатионполици.
+title: Get authorizationPolicy
+description: Извлечение свойств и связей объекта authorizationPolicy.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ef827c1b8a0fec8ff676eeeef10c2d20dca50377
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4725d6f8b868852efc282982cd00a2f7208bf53a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401878"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438423"
 ---
-# <a name="get-authorizationpolicy"></a>Получение Аусоризатионполици
+# <a name="get-authorizationpolicy"></a>Get authorizationPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [аусоризатионполици](../resources/authorizationpolicy.md) .
+Извлечение свойств [объекта authorizationPolicy.](../resources/authorizationpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48401878"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Authorization |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.Authorization |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL, Policy. ReadWrite. Authorization |
+| Приложение                            | Policy.Read.All, Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,13 +44,13 @@ GET /policies/authorizationPolicy/authorizationPolicy
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и один объект [аусоризатионполици](../resources/authorizationpolicy.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и один объект `200 OK` [authorizationPolicy](../resources/authorizationpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

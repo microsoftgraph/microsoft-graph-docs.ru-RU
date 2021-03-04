@@ -1,16 +1,16 @@
 ---
 title: Get userFlowApiConnectorConfiguration
-description: Получите свойство userFlowApiConnectorConfiguration объекта b2xIdentityUserFlow.
+description: Получите свойство userFlowApiConnectorConfiguration b2xIdentityUserFlow.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 986737621f5b98226c64124f69ac5522c9f5bf69
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 937e102e05b4b7e2a1b03538a0b023ae583ef3c6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843728"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438143"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>Get userFlowApiConnectorConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "49843728"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойство [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) в [потоке b2xIdentityUserFlow,](../resources/userFlowApiConnectorConfiguration.md) чтобы получить подробные данные о соединителях API, включенных для пользовательского потока.
+Получите свойство [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) в [потоке b2xIdentityUserFlow,](../resources/userFlowApiConnectorConfiguration.md) чтобы подробно уобразить соединители API, включенные для потока пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49843728"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$expand` запроса OData для настройки ответа. Например, чтобы получить соединителю API для этих `postFederationSignup` действий и `postAttributeCollection` действий, добавьте `$expand=postFederationSignup,postAttributeCollection` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$expand` запроса OData для настройки ответа. Например, чтобы получить соединителю API для действий `postFederationSignup` и `postAttributeCollection` действий, добавьте `$expand=postFederationSignup,postAttributeCollection` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -56,13 +56,13 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
 
 ## <a name="examples"></a>Примеры
 

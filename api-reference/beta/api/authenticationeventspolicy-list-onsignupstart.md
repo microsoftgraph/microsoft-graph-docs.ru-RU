@@ -1,26 +1,26 @@
 ---
-title: Список прослушивателей onSignUpStart
-description: Получите коллекцию ресурсов authenticationListener, поддерживаемых событием onSignupStart.
+title: Список слушателей onSignUpStart
+description: Получите коллекцию ресурсов authenticationListener, поддерживаемую событием onSignupStart.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 346db0f1085190252b2bb8e48dcfcb8adfc23f61
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1cdf120afeb553124e18488cb0cde20b6de23056
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872368"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438556"
 ---
-# <a name="list-onsignupstart-listeners"></a>Список прослушивателей onSignUpStart
+# <a name="list-onsignupstart-listeners"></a>Список слушателей onSignUpStart
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию ресурсов authenticationListener, поддерживаемых событием onSignupStart. Событие onSignUpStart поддерживает тип [invokeUserFlowListener.](../resources/invokeuserflowlistener.md)
+Получите коллекцию ресурсов authenticationListener, поддерживаемую событием onSignupStart. Событие onSignUpStart поддерживает [тип invokeUserFlowListener.](../resources/invokeuserflowlistener.md)
 
-Когда [invokeUserFlowListener](../resources/invokeuserflowlistener.md) назначен событию onSignUpStart, приложение связано с пользовательским потоком, [](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) что позволяет самостоятельно зарегистрироваться в нем. После создания события проверки подлинности для создания пользовательского потока пользователи, которые перейдут к этому приложению, смогут инициировать процесс регистрации, который создает гостевую учетную запись.
+При присвоении [invokeUserFlowListener](../resources/invokeuserflowlistener.md) событию onSignUpStart приложение связано с потоком пользователей, [](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) что позволяет самообслуживке зарегистрироваться на нем. После создания события проверки подлинности для обращения к потоку пользователей пользователи, которые идут в это приложение, смогут инициировать поток регистрации, который содержит учетную запись гостей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ GET /identity/events/onSignupStart
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр запроса OData для расширения сведений `$expand` об invokeUserFlowListener. См. пример ниже. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр запроса OData для расширения сведений `$expand` об invokeUserFlowListener. Ниже приведен пример. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -53,17 +53,17 @@ GET /identity/events/onSignupStart
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [authenticationListener](../resources/authenticationlistener.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [authenticationListener](../resources/authenticationlistener.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a>Пример 1. Список authenticationListeners для события onSignUpStart
+### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a>Пример 1. Список аутентификацииListeners для события onSignUpStart
 
 #### <a name="request"></a>Запрос
 
@@ -122,9 +122,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a>Пример 2. Развернуть invokeUserFlowListeners в authenticationListeners для события onSignUpStart
+### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a>Пример 2. Расширение invokeUserFlowListeners в проверке подлинностиListeners для события onSignUpStart
 
-В следующем примере перечисляются прослушиватели, определенные для события onSignupStart, и для каждого прослушиватель, расширяется поток пользователя, который вызывается.
+В следующем примере перечислены слушатели, определенные для события onSignupStart, и для каждого слушателя расширяется поток пользователей, который вызывается.
 
 #### <a name="request"></a>Запрос
 

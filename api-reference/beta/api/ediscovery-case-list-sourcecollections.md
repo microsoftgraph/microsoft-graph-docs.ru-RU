@@ -1,0 +1,116 @@
+---
+title: Список sourceCollections
+description: Получите список ресурсов sourceCollections из объекта case.
+author: mahage-msft
+localization_priority: Normal
+ms.prod: ediscovery
+doc_type: apiPageType
+ms.openlocfilehash: 10f474b98d8ecde7d12b353ae0bedb4bcebed749
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447155"
+---
+# <a name="list-sourcecollections"></a>Список sourceCollections
+
+Пространство имен: microsoft.graph.ediscovery
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получите список [sourceCollections из](../resources/ediscovery-sourcecollection.md) объекта [case.](../resources/ediscovery-case.md)
+
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+GET /compliance/ediscovery/cases/{caseId}/sourceCollections
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Заголовки запросов
+
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Тело запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) в теле ответа.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "list_sourcecollection"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourceCollections
+```
+
+### <a name="response"></a>Отклик
+
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.ediscovery.sourceCollection)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/sourceCollections",
+    "value": [
+        {
+            "description": "",
+            "lastModifiedDateTime": "2020-12-31T18:54:28.80694Z",
+            "createdBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "contentQuery": "subject:'Quarterly Financials'",
+            "tenantSources": "none",
+            "id": "fe5ef84e9c8c45819c056f6eb261718e",
+            "displayName": "Quarterly Financials",
+            "createdDateTime": "2020-12-11T22:56:14.2329133Z"
+        }
+    ]
+}
+```

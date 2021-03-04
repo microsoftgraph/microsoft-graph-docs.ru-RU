@@ -1,16 +1,16 @@
 ---
 title: Настройка соединителя API в пользовательском потоке
-description: Включив или отключив соединители API для определенного шага в пользовательском потоке, обновив свойство apiConnectorConfiguration.
+description: Включить или отключить соединители API для определенного шага в потоке пользователей, обновив свойство apiConnectorConfiguration.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cf5315c6100c55686001245f91a7a2847a2b5689
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 2ac44aa402d46335a425dbe8f2124e6c1cd0b289
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844034"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438227"
 ---
 # <a name="configure-userflowapiconnectorconfiguration"></a>Настройка userFlowApiConnectorConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "49844034"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновите свойство [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) в [b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) чтобы включить или отключить соединители API в пользовательском потоке. Каждая связь [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) соответствует определенному шагу в пользовательском потоке, который можно настроить для вызова соединителя API. Соединители API настраиваются для определенного шага по одному, как показано ниже.
+[Обнови свойство apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) в [потоке b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) чтобы включить или отключить соединителю API в потоке пользователей. Каждое отношение [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) соответствует определенному шагу в потоке пользователей, который можно настроить для вызова соединителя API. Вы настраивает соединители API для определенного шага одновременно, как показано ниже.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49844034"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ PUT /identity/b2cUserFlows/{b2cUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажите представление идентификатора `id` [IdentityApiConnector](../resources/identityapiconnector.md) в JSON, который вы хотите использовать для конкретного шага. Чтобы отключить соединители API, можно использовать значение {} .
+В теле запроса уделяем JSON представление `id` [удостоверенияApiConnector,](../resources/identityapiconnector.md) который необходимо использовать для определенного шага. Чтобы отключить соединители API, значение может быть {} .
 
 ## <a name="response"></a>Отклик
 
@@ -63,7 +63,7 @@ PUT /identity/b2cUserFlows/{b2cUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>Пример 1. Enable API connector for Post IDP Federation on sign up
+### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>Пример 1. Включить соединители API для Федерации почтовых IDP при регистрации
 
 #### <a name="request"></a>Запрос
 
@@ -108,7 +108,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик 
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -119,7 +119,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 2. Enable API connector for Post Attribute Collection on sign up
+### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 2. Включить соединители API для коллекции атрибутов post при регистрации
 
 #### <a name="request"></a>Запрос 
 
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -173,7 +173,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 3. Отключение соединители API для коллекции атрибутов Post при регистрации
+### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 3. Отключение соединители API для коллекции атрибутов post при регистрации
 
 #### <a name="request"></a>Запрос 
 

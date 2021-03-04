@@ -3,14 +3,14 @@ title: Удаление соглашения
 description: Удаление объекта соглашения.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: e954c23f6fb44b6258f468808370dc73a4af440c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 526edb64838435c1b83c4ae25b6d7c4cc604a868
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962492"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438745"
 ---
 # <a name="delete-agreement"></a>Удаление соглашения
 
@@ -18,7 +18,7 @@ ms.locfileid: "48962492"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [соглашения](../resources/agreement.md) .
+Удаление объекта [соглашения.](../resources/agreement.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -38,7 +38,7 @@ DELETE /agreements/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 

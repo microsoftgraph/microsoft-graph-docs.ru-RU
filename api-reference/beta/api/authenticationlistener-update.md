@@ -1,24 +1,24 @@
 ---
-title: Обновление authenticationListener
-description: Обновим прослушиватель, определенный для события в конвейере проверки подлинности.
+title: Обновление проверки подлинностиListener
+description: Обновление слушателя, определенного для события в конвейере проверки подлинности.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d5acb660843bf0b7a60fd66886841ab4c490f396
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 65e5fa8252bdb4b25c1992282f655f532f66e1f3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872396"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438430"
 ---
-# <a name="update-authenticationlistener"></a>Обновление authenticationListener
+# <a name="update-authenticationlistener"></a>Обновление проверки подлинностиListener
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление [authenticationListener,](../resources/authenticationlistener.md) определенного для события в конвейере проверки подлинности.
+Обновление [проверки подлинностиListener,](../resources/authenticationlistener.md) определенного для события в конвейере проверки подлинности.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,16 +48,16 @@ PATCH /identity/events/onSignupStart/{id}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [authenticationListener](../resources/authenticationlistener.md) в JSON.
+В теле запроса поставляем представление JSON объекта [authenticationListener.](../resources/authenticationlistener.md)
 
 В следующей таблице показаны свойства, необходимые при обновлении [invokeUserFlowAction.](../resources/invokeuserflowlistener.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|priority|Int32|Приоритет прослушиватель. Определяет порядок оценки, если событие имеет несколько прослушивателей. Приоритет оценивается от низкого до высокого.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Фильтр на основе источника проверки подлинности, который используется для определения того, оценивается ли прослушиватель. В настоящее время это ограничение ограничено оценками, основанными на приложении, в которое пользователь проходит проверку подлинности.|
+|priority|Int32|Приоритет слушателя. Определяет порядок оценки, когда в событии имеется несколько слушателей. Приоритет оценивается от низкого до высокого.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Фильтр на основе источника проверки подлинности, который используется для определения оценки прослушиваемого. В настоящее время это ограничивается оценками на основе приложения, в которое пользователь проходит проверку подлинности.|
 
 ## <a name="response"></a>Отклик
 

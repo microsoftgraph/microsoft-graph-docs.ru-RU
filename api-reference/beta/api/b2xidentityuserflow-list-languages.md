@@ -1,22 +1,22 @@
 ---
 title: Перечисление языков
-description: Получить список языков, поддерживаемых для настройки в пользовательском потоке B2X.
+description: Извлечение списка языков, поддерживаемых для настройки в потоке пользователей B2X.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 523b9c09b879e6d9938e08d96714dd9a709a3a85
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: b6f629f8abe4691e0f8f688e4640d2b56f0dce27
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843642"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438080"
 ---
 # <a name="list-languages"></a>Перечисление языков
 
 Пространство имен: microsoft.graph
 
-Получить список языков, поддерживаемых для настройки в пользовательском потоке B2X.
+Извлечение списка языков, поддерживаемых для настройки в потоке пользователей B2X.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,10 +28,10 @@ ms.locfileid: "49843642"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,13 +50,13 @@ GET /identity/b2xUserFlows/{id}/languages
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

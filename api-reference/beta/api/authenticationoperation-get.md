@@ -1,43 +1,43 @@
 ---
-title: Получение операции проверки подлинности
-description: Получение свойств и связей объекта Operation.
+title: Операция проверки подлинности
+description: Извлечение свойств и связей объекта операции.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 920439ce54ba5fb547a51d968be90ab46bd82858
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 800eb549222fda99592701ba28a85021289fee95
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961338"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438444"
 ---
-# <a name="get-authentication-operation"></a>Получение операции проверки подлинности
+# <a name="get-authentication-operation"></a>Операция проверки подлинности
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Operation](../resources/operation.md) . В настоящее время эти операции создаются путем инициирования сброса пароля с помощью метода [сброса пароля](passwordauthenticationmethod-resetpassword.md) . Объект Operation сообщает вызывающей стороне о текущем состоянии операции сброса пароля. Возможные состояния:
+Извлечение свойств и связей [объекта](../resources/operation.md) операции. В настоящее время эти операции создаются путем инициации сброса пароля с помощью метода [сброса](passwordauthenticationmethod-resetpassword.md) пароля. Объект операции сообщает звониму о текущем состоянии операции сброса пароля. Возможные состояния:
 
 * NotStarted
 * Выполняется
 * Succeeded
 * Не выполнено
 
-`Succeeded` и `Failed` являются состояниями терминала.
+`Succeeded` и `Failed` являются терминальных состояниях.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения, действующие на себя (по крайней мере для самых привилегированных) | Разрешения, действующие на других (по крайней мере для самых привилегированных)|
+| Тип разрешения                        | Разрешения, действующие на себя (от наименее до самых привилегированных) | Разрешения, действующие на других (от наименее привилегированных)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Делегированные (рабочая или учебная учетная запись)     | Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL | Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
 | Для приложений                            | Не поддерживается. | Не поддерживается. |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
@@ -54,7 +54,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -62,13 +62,13 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Operation](../resources/operation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого объекта `200 OK` операции в тексте ответа. [](../resources/operation.md)
 
 ## <a name="examples"></a>Примеры
 

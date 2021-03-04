@@ -1,16 +1,16 @@
 ---
 title: Обновление соглашения
-description: Обновление свойств объекта договора.
+description: Обновление свойств объекта соглашения.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 192b1712d55d0e19d15e4b73037e20ee24c24212
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 143031ad9e9123c650557a09401695387495ed18
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962415"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438682"
 ---
 # <a name="update-agreement"></a>Обновление соглашения
 
@@ -18,7 +18,7 @@ ms.locfileid: "48962415"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [договора](../resources/agreement.md) .
+Обновление свойств объекта [соглашения.](../resources/agreement.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -43,11 +43,11 @@ PATCH /agreements/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображаемое имя соглашения.|
-|исвиевингбефореакцептанцерекуиред|Логический|Следует ли пользователю разворачивать и просматривать соглашение перед принятием.|
+|displayName|String|Отображение имени соглашения.|
+|isViewingBeforeAcceptanceRequired|Boolean|Необходимо ли пользователю расширить и просмотреть соглашение перед его принятием.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Agreement](../resources/agreement.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный объект соглашения `200 OK` в тексте [](../resources/agreement.md) ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

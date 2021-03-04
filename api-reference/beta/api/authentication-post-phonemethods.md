@@ -3,14 +3,14 @@ title: Создание phoneAuthenticationMethod
 description: Добавьте новый метод проверки подлинности телефона.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 41a419425d9d4368aae34a5af0ed3c2b778165d8
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 541feb0aee2f0ea76b92b097b1a2a794111dff2f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796475"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438577"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Создание phoneAuthenticationMethod
 
@@ -18,23 +18,23 @@ ms.locfileid: "49796475"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте новый метод [проверки подлинности телефона.](../resources/phoneauthenticationmethod.md) Пользователь может иметь только один телефон каждого типа, захваченный в **свойстве phoneType.** Это означает, например, что при добавлении телефона к пользователю с `mobile` предустанавливным телефоном не `mobile` удастся. Кроме того, перед добавлением телефона у пользователя всегда должен `mobile` быть `alternateMobile` телефон.
+Добавьте новый [метод проверки подлинности телефона.](../resources/phoneauthenticationmethod.md) У пользователя может быть только один телефон каждого типа, захваченный в **свойстве phoneType.** Это означает, например, что добавление телефона пользователю с `mobile` предустанавливным телефоном не `mobile` удастся. Кроме того, перед добавлением телефона у пользователя всегда должен быть `mobile` `alternateMobile` телефон.
 
-Добавление телефонного номера делает его доступным для использования как при многофакторной проверке подлинности Azure (MFA), так и при самостоятельном сбросе пароля (SSPR), если он включен.
+Добавление номера телефона делает его доступным для использования в многофакторной проверке подлинности Azure (MFA) и сбросе пароля самообслуживления (SSPR), если включена.
 
-Кроме того, если пользователю политика позволяет использовать вход с помощью SMS и добавляется номер, система попытается зарегистрировать номер для использования `mobile` в этой системе.
+Кроме того, если политики позволяют пользователю использовать вход в SMS и добавляется номер, система попытается зарегистрировать номер для использования `mobile` в этой системе.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения, действующие на себя (от наименее привилегированных) | Разрешения, действующие над другими (от наименее привилегированных)|
+| Тип разрешения                        | Разрешения, действующие на себя (от наименее до самых привилегированных) | Разрешения, действующие на других (от наименее привилегированных)|
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Приложение                            | Не применимо. | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | Неприменимо. | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
@@ -58,16 +58,16 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в JSON. JSON должен включать `phoneNumber` `phoneType` и, но не `smsSignInState` включать (только для чтения).
+В теле запроса поставляем JSON-представление объекта [phoneAuthenticationMethod.](../resources/phoneauthenticationmethod.md) JSON должен включать и не включать `phoneNumber` `phoneType` `smsSignInState` (только для чтения).
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|phoneNumber|String|Номер телефона для текста или вызов для проверки подлинности. Номера телефонов используют формат "+ \<country code\> \<number\> \<extension\> x", с необязательным расширением. Например, допустимы +1 5555551234 или +1 5555551234x123. Числа отклоняется при создании или обновлении, если они не соответствуют требуемму формату.|
-|phoneType|String|Возможные значения: `mobile` , , и `alternateMobile` `office` .|
+|phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Номера телефонов используют формат "+ \<country code\> \<number\> \<extension\> x", при этом расширение необязательно. Например, допустимы +1 5555551234 или +1 5555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
+|phoneType|String|Возможные значения: `mobile` , `alternateMobile` и `office` .|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и новый `201 Created` [объект phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

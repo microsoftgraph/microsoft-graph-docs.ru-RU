@@ -1,16 +1,16 @@
 ---
 title: Удаление identityProvider из b2xIdentityUserFlow
-description: Удаление объекта identityProvider из b2xIdentityUserFlow.
+description: Удаление identityProvider из b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 25db32f3f84a705f167fe1216b2a68554d9e3e9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 4359ded92c7bfa54a07f487554be83e17ee3c064
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961141"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438178"
 ---
 # <a name="delete-identityprovider-from-b2xidentityuserflow"></a>Удаление identityProvider из b2xIdentityUserFlow
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961141"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление поставщика удостоверений из объекта [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) . Для самостоятельной регистрации пользовательских потоков значения могут быть `Google-OAUTH` или `Facebook-OAUTH` .
+Удаление поставщика удостоверений из [объекта b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md) Для самообслуживки зарегистрироваться потоки пользователей, значения могут быть `Google-OAUTH` или `Facebook-OAUTH` .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "48961141"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения| IdentityUserFlow.ReadWrite.All|
+|Приложение| IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

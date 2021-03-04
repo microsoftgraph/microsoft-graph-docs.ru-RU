@@ -3,14 +3,14 @@ title: Получение b2cAuthenticationMethodsPolicy
 description: Чтение свойств объекта b2cAuthenticationMethodsPolicy.
 localization_priority: Priority
 author: namkedia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a90275bc0f5e3235909263a3fd7672ddddf76746
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 840d3be6471391e4c4128421dbf69da6efa6a985
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961288"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438402"
 ---
 # <a name="get-b2cauthenticationmethodspolicy"></a>Получение b2cAuthenticationMethodsPolicy
 
@@ -44,7 +44,7 @@ GET /policies/b2cAuthenticationMethodsPolicy
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

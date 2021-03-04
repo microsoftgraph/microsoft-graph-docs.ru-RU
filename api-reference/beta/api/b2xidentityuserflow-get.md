@@ -1,24 +1,24 @@
 ---
-title: Получение b2xIdentityUserFlow
-description: Получение свойств и связей объекта b2xIdentityUserFlow.
+title: Get b2xIdentityUserFlow
+description: Извлечение свойств и связей объекта b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5b32f8abb87892dcd1149a7614a921897e1b229c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 004c56043fa26f4141c029b64c88407feb2446bf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961100"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438129"
 ---
-# <a name="get-b2xidentityuserflow"></a>Получение b2xIdentityUserFlow
+# <a name="get-b2xidentityuserflow"></a>Get b2xIdentityUserFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) .
+Извлечение свойств и связей объекта [b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "48961100"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identity/b2xUserFlows/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Можно использовать `$expand` для расширения определенных свойств пользовательского пользовательского процесса, которые по умолчанию не развернуты.
+Вы можете использовать для расширения определенных свойств потока пользователей, которые не `$expand` расширяются по умолчанию.
 
 Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -55,13 +55,13 @@ GET /identity/b2xUserFlows/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и представление объекта [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) в тексте отклика в формате JSON.
+В случае успеха этот метод возвращает код отклика и `200 OK` представление [JSON b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,24 +1,24 @@
 ---
 title: Создание языков
-description: Создайте пользовательский язык в пользовательском потоке Azure AD B2C.
+description: Создание настраиваемого языка в потоке пользователей Azure AD B2C.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1edc89a4de37805bc150e2d0fc9f0a2c74b262da
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: e24841cebf0385563a1445a576cda8e8609f40c7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843929"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438192"
 ---
 # <a name="create-languages"></a>Создание языков
 
 Пространство имен: microsoft.graph
 
-Этот метод используется для создания или обновления пользовательского языка в пользовательском потоке Azure AD B2C.
+Этот метод используется для создания или обновления настраиваемого языка в потоке пользователей Azure AD B2C.
 
-**Примечание.** Перед созданием настраиваемого языка необходимо включить настройку языка в пользовательском потоке Azure AD B2C. Дополнительные сведения [см. в обновлении b2cIdentityUserFlow.](../api/b2cidentityuserflow-update.md)
+**Примечание:** Прежде чем создать настраиваемый язык, необходимо включить настройку языка в потоке пользователей Azure AD B2C. Дополнительные сведения см. [в обновлении b2cIdentityUserFlow.](../api/b2cidentityuserflow-update.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49843929"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,22 +55,22 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса предоставляем представление объекта [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в JSON.
+В теле запроса предоставляем представление JSON объекта [userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
 
-В следующей таблице показаны свойства, которые можно предоставлять при создании [объекта userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
+В следующей таблице показаны свойства, которые можно дополнительно предоставлять при создании [userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор языка. Это поле является тегом языка, совместимым с [RFC 5646,](https://tools.ietf.org/html/rfc5646) и должно быть документированным ИД языка. Если он указан в теле запроса, он должен соответствовать отступу, предоставленного в URL-адресе запроса.|
-|isEnabled|Boolean|Указывает, включен ли язык в пользовательском потоке. Если это не предоставлено в запросе, для isEnabled будет установлено "true".|
+|id|String|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД. Если оно предоставлено в теле запроса, оно должно соответствовать identifer, предоставленного в URL-адресе запроса.|
+|isEnabled|Boolean|Указывает, включен ли язык в потоке пользователей. Если это не предусмотрено в запросе, для isEnabled будет установлено "true".|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>Пример 1. Создание настраиваемого языка в пользовательском потоке B2C Azure AD
+### <a name="example-1-create-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>Пример 1. Создание настраиваемого языка в потоке пользователей Azure AD B2C
 
 #### <a name="request"></a>Запрос
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -136,7 +136,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-update-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>Пример 2. Обновление настраиваемого языка в пользовательском потоке B2C Azure AD
+### <a name="example-2-update-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>Пример 2. Обновление настраиваемого языка в потоке пользователей Azure AD B2C
 
 #### <a name="request"></a>Запрос
 

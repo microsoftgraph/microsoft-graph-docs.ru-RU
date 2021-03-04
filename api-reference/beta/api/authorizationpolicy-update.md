@@ -1,24 +1,24 @@
 ---
-title: Обновление аусоризатионполици
-description: Обновление свойств объекта Аусоризатионполици.
+title: Обновление авторизации
+description: Обновление свойств объекта authorizationPolicy.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dd6d618c7aab7e3e9f3c4339ce840c6b2dc0a1f6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 12a55657266bb7cc8d757d6be85b0ab2c92c974a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961472"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438458"
 ---
-# <a name="update-authorizationpolicy"></a>Обновление Аусоризатионполици
+# <a name="update-authorizationpolicy"></a>Обновление авторизацииPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [аусоризатионполици](../resources/authorizationpolicy.md) .
+Обновление свойств объекта [authorizationPolicy.](../resources/authorizationpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48961472"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.ReadWrite.Authorization|
+| Приложение                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,16 +51,16 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|  
-|displayName|String| Отображаемое имя для этой политики. |  
+|displayName|String| Отображение имени для этой политики. |  
 |description|String| Описание этой политики. |  
-|гуестусерролеид|Guid| Представляет templateId роли для роли, которая должна быть выделена пользователю "гость". Обратитесь к [списку унифиедроледефинитионс](./rbacapplication-list-roledefinitions.md) , чтобы найти список доступных шаблонов ролей. Только поддерживаемые роли: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), гость (10dae51f-b6af-4016-8d66-8c2a99b929b3) и пользователь с ограниченным гостями (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
-|енабледпревиевфеатурес|Коллекция (String)| Список компонентов, включенных для закрытой предварительной версии в клиенте. | 
-|блоккмсолповершелл|Логический| Чтобы отключить использование MSOL PowerShell, задайте для этого свойства значение `true` . Параметр `true` также отключит доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
-|defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Задает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
-|allowedToUseSSPR|Логический| Указывает, может ли функция сброса пароля Self-Serve использоваться пользователями клиента. | 
-|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи регистрироваться на почтовые подписки. | 
-|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
-| пермиссионгрантполициидсассигнедтодефаултусерроле | Коллекция строк | Указывает, разрешено ли согласие пользователя на доступ к приложениям, а также от того, какая [политика согласия приложения](/azure/active-directory/manage-apps/manage-app-consent-policies) определяет разрешение для пользователей на предоставление согласия. Значения должны быть в формате `managePermissionGrantsForSelf.{id}` , где `{id}` — это **идентификатор** встроенной или настраиваемой [политики согласия приложений](/azure/active-directory/manage-apps/manage-app-consent-policies). Пустой список указывает на то, что согласие пользователя на приложения отключено. |
+|guestUserRoleId|Guid| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. Чтобы найти список доступных шаблонов ролей, обратитесь к list [unifiedRoleDefinitions.](./rbacapplication-list-roledefinitions.md) Только поддерживаемые роли сегодня : Пользователь (a0b1b346-4d3e-4e8b-98f8-753987be4970), Гостевой пользователь (10dae51f-b6af-401 6-8d66-8c2a99b929b3) и ограниченный гость (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
+|enabledPreviewFeatures|Коллекция (строка)| Список функций, включенных для личного предварительного просмотра в клиенте. | 
+|blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Настройка также отключит пользовательский доступ к конечной точке устаревшей `true` службы, используемой MSOL PowerShell. Это не влияет на Azure AD Connect или Microsoft Graph. | 
+|defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
+|allowedToUseSSPR|Boolean| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | Коллекция строк | Указывает, разрешено ли согласие пользователя на приложения, [](/azure/active-directory/manage-apps/manage-app-consent-policies) и если это так, то какая политика согласия приложения регулирует разрешение для пользователей на предоставление согласия. Значения должны быть в формате , где находится id встроенной или настраиваемой политики согласия `managePermissionGrantsForSelf.{id}` `{id}` [приложения.](/azure/active-directory/manage-apps/manage-app-consent-policies)  Пустой список указывает, что согласие пользователя на приложения отключено. |
 
 ## <a name="response"></a>Отклик
 
@@ -68,11 +68,11 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-or-set-guest-user-access-level-for-the-tenant"></a>Пример 1: обновление или Настройка уровня доступа гостей для клиента
+### <a name="example-1-update-or-set-guest-user-access-level-for-the-tenant"></a>Пример 1. Обновление или настройка уровня доступа к гостевому пользователю для клиента
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В этом примере уровень гостевого доступа изменяется на "ограниченный гостевой пользователь".
+Ниже приведен пример запроса. В этом примере уровень гостевого доступа изменен на ограниченный гостевой пользователь.
 
 <!-- {
   "blockType": "request",
@@ -101,7 +101,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-enable-new-feature-for-preview-on-tenant"></a>Пример 2: включение новой функции для предварительного просмотра в клиенте
+### <a name="example-2-enable-new-feature-for-preview-on-tenant"></a>Пример 2. Включить новую функцию для предварительного просмотра в клиенте
 
 #### <a name="request"></a>Запрос
 
@@ -155,7 +155,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-block-msol-powershell-in-tenant"></a>Пример 3: Блокировка MSOL PowerShell в клиенте
+### <a name="example-3-block-msol-powershell-in-tenant"></a>Пример 3. Блок MSOL PowerShell в клиенте
 
 #### <a name="request"></a>Запрос
 
@@ -206,7 +206,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-4-disable-default-user-roles-permission-to-create-applications"></a>Пример 4: отключение разрешения роли пользователя по умолчанию для создания приложений
+### <a name="example-4-disable-default-user-roles-permission-to-create-applications"></a>Пример 4. Отключение разрешения роли пользователя по умолчанию на создание приложений
 
 #### <a name="request"></a>Запрос
 
@@ -260,7 +260,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-5-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>Пример 5: Включение роли пользователя по умолчанию для использования функции сброса пароля Self-Serve
+### <a name="example-5-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>Пример 5. Включить роль пользователя по умолчанию для использования функции Self-Serve сброса пароля
 
 #### <a name="request"></a>Запрос
 
@@ -312,7 +312,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-6-disable-user-consent-to-apps-for-default-user-role"></a>Пример 6: отключение согласия пользователя для приложений для роли пользователя по умолчанию
+### <a name="example-6-disable-user-consent-to-apps-for-default-user-role"></a>Пример 6. Отключение согласия пользователя на приложения для роли пользователя по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -367,11 +367,11 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-7-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>Пример 7: включение согласия пользователя для приложений, подчиняются политике согласия приложений 
+### <a name="example-7-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>Пример 7. Включить согласие пользователя на приложения с учетом политики согласия на приложения 
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, который разрешает согласие пользователя на приложения, в соответствии со встроенной [политикой согласия приложений](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low` , которая разрешает делегированные разрешения, классифицированные как низкие, для клиентских приложений из проверенных издателей или зарегистрированных в одном клиенте.
+Ниже приводится пример запроса, который позволяет получить согласие пользователя на [](/azure/active-directory/manage-apps/manage-app-consent-policies) приложения при условии политики согласия на встроенные приложения, которая позволяет делегировать разрешения, классифицированные "низко", для клиентских приложений от проверенных издателей или зарегистрированных в том же `microsoft-user-default-low` клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

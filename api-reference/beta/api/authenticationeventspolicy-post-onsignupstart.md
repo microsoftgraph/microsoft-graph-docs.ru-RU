@@ -3,14 +3,14 @@ title: Создание authenticationListener
 description: Создайте новый объект authenticationListener для события onSignUpStart.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 098a8679f09c7f766b361146abddc0d01a5aa20e
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c24ceff80c873181799ea38fbe23c6054f876bc7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872361"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438535"
 ---
 # <a name="create-authenticationlistener"></a>Создание authenticationListener
 
@@ -48,21 +48,21 @@ POST /identity/events/onSignupStart
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [authenticationListener](../resources/authenticationlistener.md) в JSON.
+В теле запроса поставляем представление JSON объекта [authenticationListener.](../resources/authenticationlistener.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта invokeUserFlowListener](../resources/invokeuserflowlistener.md) authenticationListener.
+В следующей таблице показаны свойства, необходимые при создании проверки подлинности [invokeUserFlowListener.](../resources/invokeuserflowlistener.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|priority|Int32|Приоритет прослушиватель. Определяет порядок оценки, если событие имеет несколько прослушивателей. Приоритет оценивается от низкого до высокого.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Фильтрация на основе источника проверки подлинности, используемого для определения того, оценивается ли прослушиватель. В настоящее время это ограничение ограничено оценками на основе приложения, в которое проходит проверку подлинности пользователь.|
+|priority|Int32|Приоритет слушателя. Определяет порядок оценки, когда в событии имеется несколько слушателей. Приоритет оценивается от низкого до высокого.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Фильтр на основе источника проверки подлинности, который используется для определения оценки прослушиваемого. В настоящее время это ограничивается оценками на основе приложения, в которое пользователь проходит проверку подлинности.|
 |userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|Объект [b2xIdentityUserFlow,](../resources/b2xidentityuserflow.md) который будет вызываться при оценке этого действия.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [authenticationListener](../resources/authenticationlistener.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` объект [authenticationListener](../resources/authenticationlistener.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -3,14 +3,14 @@ title: Получение authenticationFlowsPolicy
 description: Прочтение свойств и связей объекта authenticationFlowsPolicy.
 author: linkhp
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9d90eab2779baa0626ec660bf41c5af16f52bbce
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 0a9b7f09490562e40a556ac229585118fc21bb96
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872438"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438542"
 ---
 # <a name="get-authenticationflowspolicy"></a>Получение authenticationFlowsPolicy
 
@@ -42,7 +42,7 @@ GET /policies/authenticationFlowsPolicy
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

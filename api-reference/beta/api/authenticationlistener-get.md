@@ -1,24 +1,24 @@
 ---
-title: Get authenticationListener
-description: Чтение свойств и связей объекта authenticationListener.
+title: Получить проверку подлинностиListener
+description: Ознакомьтесь с свойствами и отношениями объекта authenticationListener.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c3e6f07ac59e143ab7e9723c5a5b81a4c8489e54
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e6cacb31a31963457c2e37fd9a63d1c0eeea2c6c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438486"
 ---
-# <a name="get-authenticationlistener"></a>Get authenticationListener
+# <a name="get-authenticationlistener"></a>Получить проверку подлинностиListener
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите указанный [authenticationListener,](../resources/authenticationlistener.md) определенный для события onSignupStart в конвейере проверки подлинности.
+Получите указанный [документ проверки подлинностиListener,](../resources/authenticationlistener.md) определенный для события onSignupStart в конвейере проверки подлинности.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ GET /identity/events/onSignupStart/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр запроса OData для расширения сведений `$expand` об invokeUserFlowListener. См. пример ниже. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр запроса OData для расширения сведений `$expand` об invokeUserFlowListener. Ниже приведен пример. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,17 +51,17 @@ GET /identity/events/onSignupStart/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [authenticationListener](../resources/authenticationlistener.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [authenticationListener](../resources/authenticationlistener.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-an-authenticationlistener-by-id"></a>Пример 1. Get an authenticationListener by id
+### <a name="example-1-get-an-authenticationlistener-by-id"></a>Пример 1. Получить проверку подлинностиListener по id
 
 #### <a name="request"></a>Запрос
 
@@ -106,9 +106,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-expand-invokeuserflowlistener-for-a-specific-authenticationlistener"></a>Пример 2. Расширение invokeUserFlowListener для определенного authenticationListener
+### <a name="example-2-expand-invokeuserflowlistener-for-a-specific-authenticationlistener"></a>Пример 2. Расширение invokeUserFlowListener для определенной проверки подлинностиListener
 
-В следующем примере по id получается прослушиватель для события onSignupStart и расширяется вызываемая пользовательопоток.
+В следующем примере слушатель получает по id для события onSignupStart и расширяет поток пользователей, который вызывается.
 
 #### <a name="request"></a>Запрос
 

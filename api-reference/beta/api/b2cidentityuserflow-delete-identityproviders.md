@@ -1,24 +1,24 @@
 ---
 title: Удаление identityProvider из b2cIdentityUserFlow
-description: Удаление объекта identityProvider из b2cIdentityUserFlow.
+description: Удаление identityProvider из b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c670adb59f6acf7eb04579f64e80efebb718304b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 36e45692dce064ac34662a0030c921f344777df6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961248"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438360"
 ---
-# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow"></a>Удаление объекта identityProvider из b2cIdentityUserFlow
+# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow"></a>Удаление identityProvider из b2cIdentityUserFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление поставщика удостоверений из объекта [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) . Дополнительные сведения о поставщиках удостоверений, доступных для пользовательских потоков, представлены в справочнике по API [идентитипровидерс](../resources/identityprovider.md) .
+Удаление поставщика удостоверений из [объекта b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md) Дополнительные сведения о поставщиках удостоверений, доступных для потоков пользователей, см. в справке об API [identityProviders.](../resources/identityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "48961248"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения| IdentityUserFlow.ReadWrite.All|
+|Приложение| IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ DELETE /b2cUserFlows/{id}/identityProviders/{id}/$ref
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,24 +1,24 @@
 ---
-title: Перечисление всех Идентитипровидерс в b2xIdentityUserFlow
-description: Перечисление всех Идентитипровидерс в b2xIdentityUserFlow.
+title: Список всех identityProviders в b2xIdentityUserFlow
+description: Список всех identityProviders в b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c741e8251ec5ce0de6d169580687346fbf4e0502
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: d1589c5ec3267bcfe51de38540bb9ef83efeee78
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961094"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438108"
 ---
-# <a name="list-all-identityproviders-in-a-b2xidentityuserflow"></a>Перечисление всех Идентитипровидерс в b2xIdentityUserFlow
+# <a name="list-all-identityproviders-in-a-b2xidentityuserflow"></a>Список всех identityProviders в b2xIdentityUserFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение поставщиков удостоверений в объекте [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)
+Получите поставщиков удостоверений в [объекте b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "48961094"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения| IdentityUserFlow.ReadWrite.All|
+|Приложение| IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,13 +49,13 @@ GET /b2xUserFlows/{id}/identityProviders
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и представление объекта [идентитипровидерс](../resources/identityprovider.md) в тексте отклика в формате JSON.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` представление JSON [идентификаторовProviders](../resources/identityprovider.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

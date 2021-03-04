@@ -1,16 +1,16 @@
 ---
 title: Получение соглашения
-description: Получение свойств и связей объекта Agreement.
+description: Извлечение свойств и связей объекта соглашения.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 28f09bd8c7d6d38348882c80800caa737b003d43
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ac3ed8e3447f05339c1d9af338a63a646d5128cc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962479"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438724"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
@@ -18,7 +18,7 @@ ms.locfileid: "48962479"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Agreement](../resources/agreement.md) .
+Извлечение свойств и связей объекта [соглашения.](../resources/agreement.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -43,10 +43,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Agreement](../resources/agreement.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` соглашения в тексте ответа. [](../resources/agreement.md)
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

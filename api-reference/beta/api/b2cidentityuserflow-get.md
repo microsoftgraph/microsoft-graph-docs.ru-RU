@@ -4,13 +4,13 @@ description: Извлечение свойств и связей объекта 
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 45fc991d02a5b588f924154a8e9c4e639546f485
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: e718174b9b537ddf6a0144ae3ab481d730a5f7d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705718"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438318"
 ---
 # <a name="get-b2cidentityuserflow"></a>Get b2cIdentityUserFlow
 
@@ -18,7 +18,7 @@ ms.locfileid: "49705718"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [b2cUserFlow.](../resources/b2cidentityuserflow.md)
+Извлечение свойств и связей [объекта b2cUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,10 +30,10 @@ ms.locfileid: "49705718"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока пользователей внешнего удостоверения
+* Администратор потока внешних пользователей удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identity/b2cUserFlows/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Можно использовать `$expand` для расширения определенных свойств пользовательского потока, которые не расширены по умолчанию.
+Вы можете использовать для расширения определенных свойств потока пользователей, которые не `$expand` расширяются по умолчанию.
 
 Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -55,13 +55,13 @@ GET /identity/b2cUserFlows/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и представление `200 OK` объекта [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) в тексте отклика в JSON.
+В случае успеха этот метод возвращает код отклика и `200 OK` представление [JSON b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
