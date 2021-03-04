@@ -1,24 +1,24 @@
 ---
-title: 'Трустфрамеворккэйсет: Женератекэй'
-description: Автоматически создает ключ и секрет в наборе ключей.
+title: 'trustFrameworkKeySet: generateKey'
+description: Создание ключа и секрета автоматически в наборе ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5915bcf514c96ddea2c7e3ce2df2653e38b4cb7d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ffcb8beb1744d8ca702ed1d9fd550721b6e7747
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981700"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433675"
 ---
-# <a name="trustframeworkkeyset-generatekey"></a>Трустфрамеворккэйсет: Женератекэй
+# <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Автоматическое создание [трустфрамеворккэй](../resources/trustFrameworkKey.md) и секрета в [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md). Вызывающий абонент не должен предоставлять секрет.
+Создание [trustFrameworkKey](../resources/trustFrameworkKey.md) и секрет автоматически в [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Вызываемая не должна предоставлять секрет.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48981700"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Для приложений                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,14 +51,14 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Используйте | string | Аналогично свойству **use** объекта **трустфрамеворккэй**. |
-| кти | string | Аналогично свойству **КТИ** объекта **трустфрамеворккэй**. |
-| nbf | int | Аналогично **NBF** для свойства **трустфрамеворккэй**. |
-| exp | int | Аналогично свойству **exp** объекта **трустфрамеворккэй**. |
+| использование | string | Аналогично **свойству использования** **trustFrameworkKey.** |
+| kty | string | Аналогично **свойству kty** **trustFrameworkKey.** |
+| nbf | int | Аналогично **свойству nbf** **trustFrameworkKey.** |
+| exp | int | Аналогично **свойству exp** **trustFrameworkKey.** |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

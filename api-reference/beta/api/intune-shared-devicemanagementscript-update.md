@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2df66d7a5e5bb22d74c898c012e7d177784f9ffd
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3c04a56e5b3f5cfe8abebc328898ed5ab862f081
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153671"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448027"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "50153671"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -47,32 +47,33 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в JSON.
+## <a name="request-body"></a>Тело запроса
+В теле запроса поставляем представление JSON для [объекта deviceManagementScript.](../resources/intune-shared-devicemanagementscript.md)
 
 В следующей таблице показаны свойства, необходимые при создании [deviceManagementScript.](../resources/intune-shared-devicemanagementscript.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сценария управления устройствами.|
+|id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
 |description|String|Необязательное описание сценария управления устройствами.|
-|scriptContent|Binary|Содержимое сценария.|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
+|scriptContent|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Указать, требуется ли проверять подпись сценария.|
+|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция String|Список ИД тегов области для этого экземпляра PowerShellScript.|
-|runAs32Bit|Boolean|Значение, указывающее, должен ли сценарий PowerShell работать как 32-битный|
+|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -87,6 +88,9 @@ Content-length: 443
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -110,6 +114,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

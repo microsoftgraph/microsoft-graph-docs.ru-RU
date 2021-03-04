@@ -1,24 +1,24 @@
 ---
-title: Получение Ипнамедлокатион
-description: Получение свойств и связей объекта ипнамедлокатион.
+title: Get ipNamedLocation
+description: Извлечение свойств и связей объекта ipnamedlocation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bafc8914721be288161eb4923d0ef14c0ba3db3c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fbbf9d56ac73a997159b62e1483dde2d562e2ac5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970045"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448048"
 ---
-# <a name="get-ipnamedlocation"></a>Получение Ипнамедлокатион
+# <a name="get-ipnamedlocation"></a>Get ipNamedLocation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [ипнамедлокатион](../resources/ipNamedLocation.md) .
+Извлечение свойств и связей [объекта ipNamedLocation.](../resources/ipNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identity/conditionalAccess/namedLocations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [ипнамедлокатион](../resources/ipnamedlocation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого `200 OK` [объекта ipNamedLocation](../resources/ipnamedlocation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

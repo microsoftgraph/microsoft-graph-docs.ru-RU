@@ -1,24 +1,24 @@
 ---
-title: Получение Трустфрамеворккэйсет
-description: Получение свойств и связей объекта трустфрамеворккэйсет.
+title: Get trustFrameworkKeySet
+description: Извлечение свойств и связей объекта trustframeworkkeyset.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 35fc4afe312c5a09e97d4c0fef2bf476f7450d32
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 31272fc287ceba29dd39286a0e103ebcf6829e1d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980964"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433677"
 ---
-# <a name="get-trustframeworkkeyset"></a>Получение Трустфрамеворккэйсет
+# <a name="get-trustframeworkkeyset"></a>Get trustFrameworkKeySet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей для объекта [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md).
+Извлечение свойств и ассоциаций для [Trustframeworkkeyset.](../resources/trustframeworkkeyset.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48980964"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. Read. ALL, Трустфрамеворккэйсет. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. Read. ALL, Трустфрамеворккэйсет. ReadWrite. ALL |
+| Для приложений                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /trustFramework/keySets/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

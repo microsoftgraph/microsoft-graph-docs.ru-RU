@@ -1,24 +1,24 @@
 ---
-title: 'Трустфрамеворккэйсет: Жетактивекэй'
-description: Получение активного ключа в наборе ключей.
+title: 'trustFrameworkKeySet: getActiveKey'
+description: Получите активный ключ в наборе ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d387cbeb9dc668f3c52583ef1573ad3951aed8ee
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e0d94153e675e5c5c8da58b61eaf4f7166e5e239
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980955"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433665"
 ---
-# <a name="trustframeworkkeyset-getactivekey"></a>Трустфрамеворккэйсет: Жетактивекэй
+# <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение активных в данный момент [трустфрамеворккэй](../resources/trustframeworkkey.md) в [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md). В наборе ключей одновременно активен только один ключ.
+Получите активную [в настоящее время trustFrameworkKey в](../resources/trustframeworkkey.md) [trustFrameworkKeySet.](../resources/trustframeworkkeyset.md) В наборе ключей одновременно активен только один ключ.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -27,9 +27,9 @@ ms.locfileid: "48980955"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. Read. ALL, Трустфрамеворккэйсет. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Трустфрамеворккэйсет. Read. ALL, Трустфрамеворккэйсет. ReadWrite. ALL |
+| Для приложений                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /trustFramework/keySets/{id}/getActiveKey
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
