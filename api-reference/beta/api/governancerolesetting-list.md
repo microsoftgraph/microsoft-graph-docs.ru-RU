@@ -1,84 +1,84 @@
 ---
-title: Список governanceRoleSettings
-description: Извлечение коллекции governanceRoleSettings для ресурса.
+title: Управление спискамиRoleSettings
+description: Извлечение коллекции governanceRoleSettings на ресурсе.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: e4469debdaaa2d6d18fdef6630f3987ba4b2bbab
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 753ffc488c67091ae1364a8cd898b294261a7b41
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981349"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435779"
 ---
-# <a name="list-governancerolesettings"></a><span data-ttu-id="2685e-103">Список governanceRoleSettings</span><span class="sxs-lookup"><span data-stu-id="2685e-103">List governanceRoleSettings</span></span>
+# <a name="list-governancerolesettings"></a><span data-ttu-id="264c4-103">Управление спискамиRoleSettings</span><span class="sxs-lookup"><span data-stu-id="264c4-103">List governanceRoleSettings</span></span>
 
-<span data-ttu-id="2685e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2685e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="264c4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="264c4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2685e-105">Извлечение коллекции [governanceRoleSettings для](../resources/governancerolesetting.md) ресурса.</span><span class="sxs-lookup"><span data-stu-id="2685e-105">Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.</span></span>
+<span data-ttu-id="264c4-105">Извлечение коллекции [governanceRoleSettings на](../resources/governancerolesetting.md) ресурсе.</span><span class="sxs-lookup"><span data-stu-id="264c4-105">Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2685e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2685e-106">Permissions</span></span>
-<span data-ttu-id="2685e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).</span><span class="sxs-lookup"><span data-stu-id="2685e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).</span></span>
+## <a name="permissions"></a><span data-ttu-id="264c4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="264c4-106">Permissions</span></span>
+<span data-ttu-id="264c4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).</span><span class="sxs-lookup"><span data-stu-id="264c4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).</span></span>
 
-### <a name="azure-resources"></a><span data-ttu-id="2685e-109">Ресурсы Azure</span><span class="sxs-lookup"><span data-stu-id="2685e-109">Azure resources</span></span>
+### <a name="azure-resources"></a><span data-ttu-id="264c4-109">Ресурсы Azure</span><span class="sxs-lookup"><span data-stu-id="264c4-109">Azure resources</span></span>
 
-| <span data-ttu-id="2685e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2685e-110">Permission type</span></span> | <span data-ttu-id="2685e-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2685e-111">Permissions</span></span> |
+| <span data-ttu-id="264c4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="264c4-110">Permission type</span></span> | <span data-ttu-id="264c4-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="264c4-111">Permissions</span></span> |
 |:--------------- |:----------- |
-| <span data-ttu-id="2685e-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2685e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2685e-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="2685e-113">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
-| <span data-ttu-id="2685e-114">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2685e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2685e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2685e-115">Not supported.</span></span> |
-| <span data-ttu-id="2685e-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="2685e-116">Application</span></span> | <span data-ttu-id="2685e-117">PrivilegedAccess.Read.AzureResources</span><span class="sxs-lookup"><span data-stu-id="2685e-117">PrivilegedAccess.Read.AzureResources</span></span> |
+| <span data-ttu-id="264c4-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="264c4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="264c4-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="264c4-113">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+| <span data-ttu-id="264c4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="264c4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="264c4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="264c4-115">Not supported.</span></span> |
+| <span data-ttu-id="264c4-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="264c4-116">Application</span></span> | <span data-ttu-id="264c4-117">PrivilegedAccess.Read.AzureResources</span><span class="sxs-lookup"><span data-stu-id="264c4-117">PrivilegedAccess.Read.AzureResources</span></span> |
 
-### <a name="azure-ad"></a><span data-ttu-id="2685e-118">Azure AD</span><span class="sxs-lookup"><span data-stu-id="2685e-118">Azure AD</span></span>
+### <a name="azure-ad"></a><span data-ttu-id="264c4-118">Azure AD</span><span class="sxs-lookup"><span data-stu-id="264c4-118">Azure AD</span></span>
 
-| <span data-ttu-id="2685e-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2685e-119">Permission type</span></span> | <span data-ttu-id="2685e-120">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2685e-120">Permissions</span></span> |
+| <span data-ttu-id="264c4-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="264c4-119">Permission type</span></span> | <span data-ttu-id="264c4-120">Разрешения</span><span class="sxs-lookup"><span data-stu-id="264c4-120">Permissions</span></span> |
 |:--------------- |:----------- |
-| <span data-ttu-id="2685e-121">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2685e-121">Delegated (work or school account)</span></span> | <span data-ttu-id="2685e-122">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="2685e-122">PrivilegedAccess.ReadWrite.AzureAD</span></span> |
-| <span data-ttu-id="2685e-123">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2685e-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2685e-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2685e-124">Not supported.</span></span> |
-| <span data-ttu-id="2685e-125">Приложение</span><span class="sxs-lookup"><span data-stu-id="2685e-125">Application</span></span> | <span data-ttu-id="2685e-126">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="2685e-126">PrivilegedAccess.Read.AzureAD</span></span> |
+| <span data-ttu-id="264c4-121">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="264c4-121">Delegated (work or school account)</span></span> | <span data-ttu-id="264c4-122">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="264c4-122">PrivilegedAccess.ReadWrite.AzureAD</span></span> |
+| <span data-ttu-id="264c4-123">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="264c4-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="264c4-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="264c4-124">Not supported.</span></span> |
+| <span data-ttu-id="264c4-125">Приложение</span><span class="sxs-lookup"><span data-stu-id="264c4-125">Application</span></span> | <span data-ttu-id="264c4-126">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="264c4-126">PrivilegedAccess.Read.AzureAD</span></span> |
 
-### <a name="groups"></a><span data-ttu-id="2685e-127">Группы</span><span class="sxs-lookup"><span data-stu-id="2685e-127">Groups</span></span>
+### <a name="groups"></a><span data-ttu-id="264c4-127">Группы</span><span class="sxs-lookup"><span data-stu-id="264c4-127">Groups</span></span>
 
-|<span data-ttu-id="2685e-128">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2685e-128">Permission type</span></span> | <span data-ttu-id="2685e-129">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2685e-129">Permissions</span></span> |
+|<span data-ttu-id="264c4-128">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="264c4-128">Permission type</span></span> | <span data-ttu-id="264c4-129">Разрешения</span><span class="sxs-lookup"><span data-stu-id="264c4-129">Permissions</span></span> |
 |:-------------- |:----------- |
-| <span data-ttu-id="2685e-130">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2685e-130">Delegated (work or school account)</span></span> | <span data-ttu-id="2685e-131">PrivilegedAccess.ReadWrite.AzureADGroups</span><span class="sxs-lookup"><span data-stu-id="2685e-131">PrivilegedAccess.ReadWrite.AzureADGroups</span></span> |
-| <span data-ttu-id="2685e-132">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2685e-132">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2685e-133">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2685e-133">Not supported.</span></span> |
-| <span data-ttu-id="2685e-134">Приложение</span><span class="sxs-lookup"><span data-stu-id="2685e-134">Application</span></span> | <span data-ttu-id="2685e-135">PrivilegedAccess.Read.AzureADGroups</span><span class="sxs-lookup"><span data-stu-id="2685e-135">PrivilegedAccess.Read.AzureADGroups</span></span> |
+| <span data-ttu-id="264c4-130">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="264c4-130">Delegated (work or school account)</span></span> | <span data-ttu-id="264c4-131">PrivilegedAccess.ReadWrite.AzureADGroups</span><span class="sxs-lookup"><span data-stu-id="264c4-131">PrivilegedAccess.ReadWrite.AzureADGroups</span></span> |
+| <span data-ttu-id="264c4-132">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="264c4-132">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="264c4-133">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="264c4-133">Not supported.</span></span> |
+| <span data-ttu-id="264c4-134">Приложение</span><span class="sxs-lookup"><span data-stu-id="264c4-134">Application</span></span> | <span data-ttu-id="264c4-135">PrivilegedAccess.Read.AzureADGroups</span><span class="sxs-lookup"><span data-stu-id="264c4-135">PrivilegedAccess.Read.AzureADGroups</span></span> |
 
-<span data-ttu-id="2685e-136">Помимо области разрешений, этот API требует, чтобы у запрашивателя было по крайней мере одно назначение роли для ресурса.</span><span class="sxs-lookup"><span data-stu-id="2685e-136">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
-## <a name="http-request"></a><span data-ttu-id="2685e-137">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2685e-137">HTTP request</span></span>
+<span data-ttu-id="264c4-136">Помимо области разрешений этот API требует, чтобы у запросителя было как минимум одно назначение ролей на ресурсе.</span><span class="sxs-lookup"><span data-stu-id="264c4-136">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
+## <a name="http-request"></a><span data-ttu-id="264c4-137">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="264c4-137">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="2685e-138">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2685e-138">Optional query parameters</span></span>
-<span data-ttu-id="2685e-139">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="2685e-139">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="264c4-138">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="264c4-138">Optional query parameters</span></span>
+<span data-ttu-id="264c4-139">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="264c4-139">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2685e-140">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2685e-140">Request headers</span></span>
-| <span data-ttu-id="2685e-141">Имя</span><span class="sxs-lookup"><span data-stu-id="2685e-141">Name</span></span>      |<span data-ttu-id="2685e-142">Описание</span><span class="sxs-lookup"><span data-stu-id="2685e-142">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="264c4-140">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="264c4-140">Request headers</span></span>
+| <span data-ttu-id="264c4-141">Имя</span><span class="sxs-lookup"><span data-stu-id="264c4-141">Name</span></span>      |<span data-ttu-id="264c4-142">Описание</span><span class="sxs-lookup"><span data-stu-id="264c4-142">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="2685e-143">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2685e-143">Authorization</span></span>  | <span data-ttu-id="2685e-144">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="2685e-144">Bearer {code}</span></span>|
+| <span data-ttu-id="264c4-143">Авторизация</span><span class="sxs-lookup"><span data-stu-id="264c4-143">Authorization</span></span>  | <span data-ttu-id="264c4-144">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="264c4-144">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2685e-145">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2685e-145">Request body</span></span>
-<span data-ttu-id="2685e-146">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2685e-146">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="264c4-145">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="264c4-145">Request body</span></span>
+<span data-ttu-id="264c4-146">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="264c4-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2685e-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="2685e-147">Response</span></span>
-<span data-ttu-id="2685e-148">В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2685e-148">If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="264c4-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="264c4-147">Response</span></span>
+<span data-ttu-id="264c4-148">В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="264c4-148">If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2685e-149">Пример</span><span class="sxs-lookup"><span data-stu-id="2685e-149">Example</span></span>
-<span data-ttu-id="2685e-150">В этом примере показано, как администратор перечисляет параметры роли для ресурса Wingtip Toys - Prod.</span><span class="sxs-lookup"><span data-stu-id="2685e-150">This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.</span></span> 
+## <a name="example"></a><span data-ttu-id="264c4-149">Пример</span><span class="sxs-lookup"><span data-stu-id="264c4-149">Example</span></span>
+<span data-ttu-id="264c4-150">В этом примере показано, как администратор перечисляет параметры ролей для ресурса Wingtip Toys - Prod.</span><span class="sxs-lookup"><span data-stu-id="264c4-150">This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
 }-->
-##### <a name="request"></a><span data-ttu-id="2685e-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="2685e-151">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="264c4-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="264c4-151">Request</span></span>
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleSettings
 ```
-##### <a name="response"></a><span data-ttu-id="2685e-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="2685e-152">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="264c4-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="264c4-152">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
