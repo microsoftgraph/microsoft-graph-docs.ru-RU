@@ -1,61 +1,61 @@
 ---
-title: Получение Акцессревиев
-description: В функции рецензирования Access Azure AD извлеките объект Акцессревиев.
+title: Получить accessReview
+description: В функции обзоров доступа Azure AD извлекаем объект accessReview.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bc47fa2d371f2ab0dbcd150aa0005a3cbc82cdac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c77a64b5cc125791b08a4d860a781c7ce40ae16d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951717"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439403"
 ---
-# <a name="get-accessreview"></a><span data-ttu-id="b3ae0-103">Получение Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="b3ae0-103">Get accessReview</span></span>
+# <a name="get-accessreview"></a><span data-ttu-id="234bb-103">Получить accessReview</span><span class="sxs-lookup"><span data-stu-id="234bb-103">Get accessReview</span></span>
 
-<span data-ttu-id="b3ae0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b3ae0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="234bb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="234bb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b3ae0-105">В функции [рецензирования Access](../resources/accessreviews-root.md) Azure AD извлеките объект [акцессревиев](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="b3ae0-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.</span></span>  
+<span data-ttu-id="234bb-105">В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем [объект accessReview.](../resources/accessreview.md)</span><span class="sxs-lookup"><span data-stu-id="234bb-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.</span></span>  
 
-<span data-ttu-id="b3ae0-106">Чтобы получить рецензентов проверки доступа, используйте API [List акцессревиев проверяющих](accessreview-listreviewers.md) .</span><span class="sxs-lookup"><span data-stu-id="b3ae0-106">To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API.</span></span> <span data-ttu-id="b3ae0-107">Чтобы получить решение об анализе доступа, используйте API [List акцессревиев решений](accessreview-listdecisions.md) или [перечислите мои API решений акцессревиев](accessreview-listmydecisions.md) .</span><span class="sxs-lookup"><span data-stu-id="b3ae0-107">To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.</span></span>
+<span data-ttu-id="234bb-106">Для получения рецензентов обзора доступа используйте API [рецензентов списка accessReview.](accessreview-listreviewers.md)</span><span class="sxs-lookup"><span data-stu-id="234bb-106">To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API.</span></span> <span data-ttu-id="234bb-107">Чтобы получить решения обзора доступа, используйте API решений [accessReview](accessreview-listdecisions.md) или список API решений [accessReview.](accessreview-listmydecisions.md)</span><span class="sxs-lookup"><span data-stu-id="234bb-107">To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.</span></span>
 
-<span data-ttu-id="b3ae0-108">Если эта проверка доступа повторяется, то решения не будут связаны с серией проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-108">If this is a recurring access review, no decisions will be associated with the recurring access review series.</span></span> <span data-ttu-id="b3ae0-109">Вместо этого используйте `instances` связь этого ряда для получения коллекции [акцессревиев](../resources/accessreview.md) из прошлых, текущих и будущих экземпляров проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-109">Instead, use the `instances` relationship of that series to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review.</span></span> <span data-ttu-id="b3ae0-110">Все прошедшие и текущие экземпляры будут принимать решения.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-110">Each past and current instance will have decisions.</span></span>
+<span data-ttu-id="234bb-108">Если это повторяющийся обзор доступа, никакие решения не будут связаны с повторяющимися сериями обзоров доступа.</span><span class="sxs-lookup"><span data-stu-id="234bb-108">If this is a recurring access review, no decisions will be associated with the recurring access review series.</span></span> <span data-ttu-id="234bb-109">Вместо этого используйте связь этой серии для получения `instances` [коллекции accessReview](../resources/accessreview.md) прошлых, текущих и будущих экземпляров обзора доступа.</span><span class="sxs-lookup"><span data-stu-id="234bb-109">Instead, use the `instances` relationship of that series to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review.</span></span> <span data-ttu-id="234bb-110">Каждый прошлый и текущий экземпляр будут иметь решения.</span><span class="sxs-lookup"><span data-stu-id="234bb-110">Each past and current instance will have decisions.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b3ae0-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b3ae0-111">Permissions</span></span>
-<span data-ttu-id="b3ae0-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b3ae0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="234bb-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="234bb-111">Permissions</span></span>
+<span data-ttu-id="234bb-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="234bb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b3ae0-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b3ae0-114">Permission type</span></span>                        | <span data-ttu-id="b3ae0-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b3ae0-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="234bb-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="234bb-114">Permission type</span></span>                        | <span data-ttu-id="234bb-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="234bb-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b3ae0-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b3ae0-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="b3ae0-117">Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="b3ae0-117">AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="b3ae0-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b3ae0-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b3ae0-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-119">Not supported.</span></span> |
-|<span data-ttu-id="b3ae0-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b3ae0-120">Application</span></span>                            | <span data-ttu-id="b3ae0-121">Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership</span><span class="sxs-lookup"><span data-stu-id="b3ae0-121">AccessReview.Read.All, AccessReview.ReadWrite.Membership</span></span>  |
+|<span data-ttu-id="234bb-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="234bb-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="234bb-117">AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="234bb-117">AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="234bb-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="234bb-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="234bb-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="234bb-119">Not supported.</span></span> |
+|<span data-ttu-id="234bb-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="234bb-120">Application</span></span>                            | <span data-ttu-id="234bb-121">AccessReview.Read.All, AccessReview.ReadWrite.Membership</span><span class="sxs-lookup"><span data-stu-id="234bb-121">AccessReview.Read.All, AccessReview.ReadWrite.Membership</span></span>  |
 
-<span data-ttu-id="b3ae0-122">Чтобы вызвать этот API, пользователь, вошедшего в систему, должен быть включен в роль каталога, которая разрешает им читать проверку доступа, или пользователь может быть назначен в качестве проверяющего при проверке доступа.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-122">In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.</span></span>  <span data-ttu-id="b3ae0-123">Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviews-root.md).</span><span class="sxs-lookup"><span data-stu-id="b3ae0-123">For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).</span></span>
+<span data-ttu-id="234bb-122">Чтобы вызвать этот API, подписанный пользователем должен также быть в роли каталога, который позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.</span><span class="sxs-lookup"><span data-stu-id="234bb-122">In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.</span></span>  <span data-ttu-id="234bb-123">Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviews-root.md)</span><span class="sxs-lookup"><span data-stu-id="234bb-123">For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b3ae0-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b3ae0-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="234bb-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="234bb-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /accessReviews/{reviewId}
 ```
-## <a name="request-headers"></a><span data-ttu-id="b3ae0-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b3ae0-125">Request headers</span></span>
-| <span data-ttu-id="b3ae0-126">Имя</span><span class="sxs-lookup"><span data-stu-id="b3ae0-126">Name</span></span>         | <span data-ttu-id="b3ae0-127">Тип</span><span class="sxs-lookup"><span data-stu-id="b3ae0-127">Type</span></span>        | <span data-ttu-id="b3ae0-128">Описание</span><span class="sxs-lookup"><span data-stu-id="b3ae0-128">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="234bb-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="234bb-125">Request headers</span></span>
+| <span data-ttu-id="234bb-126">Имя</span><span class="sxs-lookup"><span data-stu-id="234bb-126">Name</span></span>         | <span data-ttu-id="234bb-127">Тип</span><span class="sxs-lookup"><span data-stu-id="234bb-127">Type</span></span>        | <span data-ttu-id="234bb-128">Описание</span><span class="sxs-lookup"><span data-stu-id="234bb-128">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="b3ae0-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="b3ae0-129">Authorization</span></span> | <span data-ttu-id="b3ae0-130">string</span><span class="sxs-lookup"><span data-stu-id="b3ae0-130">string</span></span> | <span data-ttu-id="b3ae0-p105">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-p105">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="234bb-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="234bb-129">Authorization</span></span> | <span data-ttu-id="234bb-130">string</span><span class="sxs-lookup"><span data-stu-id="234bb-130">string</span></span> | <span data-ttu-id="234bb-p105">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="234bb-p105">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b3ae0-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b3ae0-133">Request body</span></span>
-<span data-ttu-id="b3ae0-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="234bb-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="234bb-133">Request body</span></span>
+<span data-ttu-id="234bb-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="234bb-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b3ae0-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3ae0-135">Response</span></span>
-<span data-ttu-id="b3ae0-136">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-136">If successful, this method returns a `200 OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="234bb-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="234bb-135">Response</span></span>
+<span data-ttu-id="234bb-136">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReview](../resources/accessreview.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="234bb-136">If successful, this method returns a `200 OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b3ae0-137">Пример</span><span class="sxs-lookup"><span data-stu-id="b3ae0-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b3ae0-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="b3ae0-138">Request</span></span>
+## <a name="example"></a><span data-ttu-id="234bb-137">Пример</span><span class="sxs-lookup"><span data-stu-id="234bb-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="234bb-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="234bb-138">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b3ae0-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="b3ae0-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="234bb-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="234bb-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessReview"
@@ -63,27 +63,27 @@ GET /accessReviews/{reviewId}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d
 ```
-# <a name="c"></a>[<span data-ttu-id="b3ae0-140">C#</span><span class="sxs-lookup"><span data-stu-id="b3ae0-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="234bb-140">C#</span><span class="sxs-lookup"><span data-stu-id="234bb-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b3ae0-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b3ae0-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="234bb-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="234bb-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b3ae0-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b3ae0-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="234bb-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="234bb-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b3ae0-143">Java</span><span class="sxs-lookup"><span data-stu-id="b3ae0-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="234bb-143">Java</span><span class="sxs-lookup"><span data-stu-id="234bb-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="b3ae0-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3ae0-144">Response</span></span>
-><span data-ttu-id="b3ae0-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b3ae0-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="234bb-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="234bb-144">Response</span></span>
+><span data-ttu-id="234bb-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="234bb-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,14 +124,14 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="b3ae0-147">См. также</span><span class="sxs-lookup"><span data-stu-id="b3ae0-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="234bb-147">См. также</span><span class="sxs-lookup"><span data-stu-id="234bb-147">See also</span></span>
 
-- [<span data-ttu-id="b3ae0-148">Создание Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="b3ae0-148">Create accessReview</span></span>](accessreview-create.md)
-- [<span data-ttu-id="b3ae0-149">Список Акцессревиевс</span><span class="sxs-lookup"><span data-stu-id="b3ae0-149">List accessReviews</span></span>](accessreview-list.md)
-- [<span data-ttu-id="b3ae0-150">Список Програмконтролс</span><span class="sxs-lookup"><span data-stu-id="b3ae0-150">List programControls</span></span>](programcontrol-list.md)
-- [<span data-ttu-id="b3ae0-151">Список рецензентов Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="b3ae0-151">List accessReview reviewers</span></span>](accessreview-listreviewers.md)
-- [<span data-ttu-id="b3ae0-152">Список решений Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="b3ae0-152">List accessReview decisions</span></span>](accessreview-listdecisions.md)
-- [<span data-ttu-id="b3ae0-153">Список моих решений Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="b3ae0-153">List my accessReview decisions</span></span>](accessreview-listmydecisions.md)
+- [<span data-ttu-id="234bb-148">Создание accessReview</span><span class="sxs-lookup"><span data-stu-id="234bb-148">Create accessReview</span></span>](accessreview-create.md)
+- [<span data-ttu-id="234bb-149">AccessReviews списка</span><span class="sxs-lookup"><span data-stu-id="234bb-149">List accessReviews</span></span>](accessreview-list.md)
+- [<span data-ttu-id="234bb-150">List programControls</span><span class="sxs-lookup"><span data-stu-id="234bb-150">List programControls</span></span>](programcontrol-list.md)
+- [<span data-ttu-id="234bb-151">Рецензенты списка accessReview</span><span class="sxs-lookup"><span data-stu-id="234bb-151">List accessReview reviewers</span></span>](accessreview-listreviewers.md)
+- [<span data-ttu-id="234bb-152">Списки решений accessReview</span><span class="sxs-lookup"><span data-stu-id="234bb-152">List accessReview decisions</span></span>](accessreview-listdecisions.md)
+- [<span data-ttu-id="234bb-153">Список решений accessReview</span><span class="sxs-lookup"><span data-stu-id="234bb-153">List my accessReview decisions</span></span>](accessreview-listmydecisions.md)
 
 
 <!--

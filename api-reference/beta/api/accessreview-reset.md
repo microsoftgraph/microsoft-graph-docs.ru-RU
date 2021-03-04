@@ -1,55 +1,55 @@
 ---
-title: Сброс Акцессревиев
-description: В средстве проверки доступа Azure AD выполните сброс решений текущего активного Акцессревиев.  Целевой объект может быть либо одноразовой проверкой доступом, либо экземпляром повторяющейся проверки доступа.  Предыдущие решения не записываются, но проверяющие могут продолжать обновлять решения.
+title: Сброс accessReview
+description: В функции обзоров доступа Azure AD сброшены решения действующего в настоящее время accessReview.  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 05d76043970fad8a6cc3018cabedc734fe6ae92c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d4dd539e4809a8914b74700fd550917cab164145
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952725"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439314"
 ---
-# <a name="reset-accessreview"></a><span data-ttu-id="fe936-105">Сброс Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="fe936-105">Reset accessReview</span></span>
+# <a name="reset-accessreview"></a><span data-ttu-id="dbbcc-105">Сброс accessReview</span><span class="sxs-lookup"><span data-stu-id="dbbcc-105">Reset accessReview</span></span>
 
-<span data-ttu-id="fe936-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fe936-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dbbcc-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dbbcc-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fe936-107">В средстве проверки [доступа](../resources/accessreviews-root.md) Azure AD выполните сброс решений текущего активного [акцессревиев](../resources/accessreview.md).</span><span class="sxs-lookup"><span data-stu-id="fe936-107">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, reset the decisions of a currently active [accessReview](../resources/accessreview.md).</span></span>  <span data-ttu-id="fe936-108">Целевой объект может быть либо одноразовой проверкой доступом, либо экземпляром повторяющейся проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="fe936-108">The target object can be either a one-time access review, or an instance of a recurring access review.</span></span>  <span data-ttu-id="fe936-109">Предыдущие решения не записываются, но проверяющие могут продолжать обновлять решения.</span><span class="sxs-lookup"><span data-stu-id="fe936-109">Previous decisions are no longer recorded, but reviewers can continue to update decisions.</span></span>
+<span data-ttu-id="dbbcc-107">В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) сброшены решения активного в настоящее время [accessReview.](../resources/accessreview.md)</span><span class="sxs-lookup"><span data-stu-id="dbbcc-107">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, reset the decisions of a currently active [accessReview](../resources/accessreview.md).</span></span>  <span data-ttu-id="dbbcc-108">Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-108">The target object can be either a one-time access review, or an instance of a recurring access review.</span></span>  <span data-ttu-id="dbbcc-109">Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-109">Previous decisions are no longer recorded, but reviewers can continue to update decisions.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fe936-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fe936-110">Permissions</span></span>
-<span data-ttu-id="fe936-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe936-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dbbcc-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dbbcc-110">Permissions</span></span>
+<span data-ttu-id="dbbcc-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dbbcc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fe936-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fe936-113">Permission type</span></span>                        | <span data-ttu-id="fe936-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fe936-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dbbcc-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dbbcc-113">Permission type</span></span>                        | <span data-ttu-id="dbbcc-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dbbcc-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fe936-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fe936-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="fe936-116">Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="fe936-116">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="fe936-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fe936-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe936-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe936-118">Not supported.</span></span> |
-|<span data-ttu-id="fe936-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fe936-119">Application</span></span>                            | <span data-ttu-id="fe936-120">AccessReview.ReadWrite.Membership</span><span class="sxs-lookup"><span data-stu-id="fe936-120">AccessReview.ReadWrite.Membership</span></span> |
+|<span data-ttu-id="dbbcc-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dbbcc-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="dbbcc-116">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbbcc-116">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="dbbcc-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dbbcc-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dbbcc-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-118">Not supported.</span></span> |
+|<span data-ttu-id="dbbcc-119">Приложение</span><span class="sxs-lookup"><span data-stu-id="dbbcc-119">Application</span></span>                            | <span data-ttu-id="dbbcc-120">AccessReview.ReadWrite.Membership</span><span class="sxs-lookup"><span data-stu-id="dbbcc-120">AccessReview.ReadWrite.Membership</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fe936-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fe936-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dbbcc-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dbbcc-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews/{reviewId}/resetDecisions
 ```
-## <a name="request-headers"></a><span data-ttu-id="fe936-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fe936-122">Request headers</span></span>
-| <span data-ttu-id="fe936-123">Имя</span><span class="sxs-lookup"><span data-stu-id="fe936-123">Name</span></span>         | <span data-ttu-id="fe936-124">Тип</span><span class="sxs-lookup"><span data-stu-id="fe936-124">Type</span></span>        | <span data-ttu-id="fe936-125">Описание</span><span class="sxs-lookup"><span data-stu-id="fe936-125">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="dbbcc-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dbbcc-122">Request headers</span></span>
+| <span data-ttu-id="dbbcc-123">Имя</span><span class="sxs-lookup"><span data-stu-id="dbbcc-123">Name</span></span>         | <span data-ttu-id="dbbcc-124">Тип</span><span class="sxs-lookup"><span data-stu-id="dbbcc-124">Type</span></span>        | <span data-ttu-id="dbbcc-125">Описание</span><span class="sxs-lookup"><span data-stu-id="dbbcc-125">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="fe936-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="fe936-126">Authorization</span></span> | <span data-ttu-id="fe936-127">string</span><span class="sxs-lookup"><span data-stu-id="fe936-127">string</span></span> | <span data-ttu-id="fe936-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fe936-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="dbbcc-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="dbbcc-126">Authorization</span></span> | <span data-ttu-id="dbbcc-127">string</span><span class="sxs-lookup"><span data-stu-id="dbbcc-127">string</span></span> | <span data-ttu-id="dbbcc-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fe936-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fe936-130">Request body</span></span>
-<span data-ttu-id="fe936-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fe936-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dbbcc-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="dbbcc-130">Request body</span></span>
+<span data-ttu-id="dbbcc-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-131">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="fe936-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="fe936-132">Response</span></span>
-<span data-ttu-id="fe936-p105">При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="fe936-p105">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dbbcc-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="dbbcc-132">Response</span></span>
+<span data-ttu-id="dbbcc-p105">При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-p105">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fe936-135">Пример</span><span class="sxs-lookup"><span data-stu-id="fe936-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fe936-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="fe936-136">Request</span></span>
+## <a name="example"></a><span data-ttu-id="dbbcc-135">Пример</span><span class="sxs-lookup"><span data-stu-id="dbbcc-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dbbcc-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="dbbcc-136">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="fe936-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="fe936-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dbbcc-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="dbbcc-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reset_accessReview"
@@ -57,26 +57,26 @@ POST /accessReviews/{reviewId}/resetDecisions
 ```http
 POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/resetDecisions
 ```
-# <a name="c"></a>[<span data-ttu-id="fe936-138">C#</span><span class="sxs-lookup"><span data-stu-id="fe936-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="dbbcc-138">C#</span><span class="sxs-lookup"><span data-stu-id="dbbcc-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reset-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fe936-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fe936-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="dbbcc-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dbbcc-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reset-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fe936-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fe936-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="dbbcc-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dbbcc-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reset-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fe936-141">Java</span><span class="sxs-lookup"><span data-stu-id="fe936-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="dbbcc-141">Java</span><span class="sxs-lookup"><span data-stu-id="dbbcc-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reset-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="fe936-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="fe936-142">Response</span></span>
-><span data-ttu-id="fe936-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fe936-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="dbbcc-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="dbbcc-142">Response</span></span>
+><span data-ttu-id="dbbcc-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
