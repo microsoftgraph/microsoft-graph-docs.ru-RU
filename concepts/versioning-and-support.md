@@ -2,12 +2,12 @@
 title: 'Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии '
 description: В этой статье описаны политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии API Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: 5dd6b3bfbcb438addd6651dc8c9659fcb2b91a99
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 24f9cb99f079e1544528ab4b5139e52cbecbf4f9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013556"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474654"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии
 
@@ -79,4 +79,4 @@ Microsoft Graph придерживается политики [Microsoft Lifecyc
 
 Используя API Microsoft Graph, вы принимаете [Условия использования API Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context).
 
-Ваши отзывы важны для нас. Для связи с нами используйте сайт [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Помечайте свои вопросы тегом [microsoft-graph].
+Ваши отзывы важны для нас. Свяжитесь с нами через раздел [Вопросы и ответы Майкрософт](https://aka.ms/askgraph). Помечайте свои вопросы тегом [microsoft-graph-*].

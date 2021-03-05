@@ -3,18 +3,26 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9579298e3433d84b2193458181276d4467b1ee54
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cc02755348046e33536c9e38931fe3a798f45b3b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434260"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472008"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал изменений описывает конкретные изменения уровня API в Microsoft Graph v1.0 и бета-версии.
 
 Сводную информацию о значении этих изменений API, а также о последних инструментах, компонентах, руководствах и учебных пособиях см. в разделе [Что нового в Microsoft Graph](whats-new-overview.md).
+
+## <a name="march-2021"></a>Март 2021 г.
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+
+| **Тип изменения** | **Версия** | **Описание** |
+|:---|:---|:---|
+| Дополнение        | 1.0        | Появился новый тип ресурса [applicationTemplate](/graph/api/resources/applicationtemplate.md). Этот тип поддерживает операции [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) и [get](/graph/api/applicationtemplate-get.md) с приложениями из коллекции Azure AD.
 
 ## <a name="february-2021"></a>Февраль 2021 г.
 
@@ -692,7 +700,7 @@ ms.locfileid: "50434260"
 | Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). Это свойство заменено свойством **includeResourceData**. |
 | Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](change-notifications-delivery.md). |
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -967,7 +975,7 @@ ms.locfileid: "50434260"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлены ресурсы [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection) и [resourceData](/graph/api/resources/resourcedata) для API [change notification](/graph/api/concepts/webhooks). |
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
@@ -1683,7 +1691,7 @@ ms.locfileid: "50434260"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 
 Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
 
@@ -3203,7 +3211,7 @@ ms.locfileid: "50434260"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение | бета | Изменен объект [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta&preserve-view=true).|
-| Дополнение | бета | Добавлен объект [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Перечисление](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | бета | Добавлен объект [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [List](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | бета | Добавлено [Update](/graph/api/privilegedrolesettings-update?view=graph-rest-beta&preserve-view=true) для [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta&preserve-view=true)|
 | Удаление |бета| Удалена [самостоятельная активация назначения ролей](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta&preserve-view=true)|
 
@@ -3648,12 +3656,12 @@ ms.locfileid: "50434260"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена сущность [privilegedAccess](/graph/api/resources/privilegedaccess?view=graph-rest-beta&preserve-view=true).|
-| Дополнение | Бета | Добавлен объект [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия: <br> [Список](/graph/api/governanceresource-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceresource-get?view=graph-rest-beta&preserve-view=true)<br>|
+| Дополнение | Бета | Добавлен объект [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия: <br> [List](/graph/api/governanceresource-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceresource-get?view=graph-rest-beta&preserve-view=true)<br>|
 | Дополнение | Бета | Добавлена сущность [governanceSubject](/graph/api/resources/governancesubject?view=graph-rest-beta&preserve-view=true).|
-| Дополнение | Бета | Добавлена сущность [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governanceroledefinition-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroledefinition-get?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | Бета | Добавлена сущность [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [List](/graph/api/governanceroledefinition-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroledefinition-get?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | Бета | Добавлена сущность [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governanceroleassignment-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroleassignment-get?view=graph-rest-beta&preserve-view=true) <br> [Экспорт](/graph/api/governanceroleassignment-export?view=graph-rest-beta&preserve-view=true) |
-| Дополнение | Бета | Добавлена сущность [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Перечисление](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Отмена](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Обновление](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
-| Дополнение | Бета | Добавлена сущность [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true) <br> [Обновление](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | Бета | Добавлена сущность [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [перечисление](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true); <br> [получение](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Отмена](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Обновление](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | Бета | Добавлена сущность [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | Бета | Добавлены следующие сложные типы: <br> [governancePermission](/graph/api/resources/governancepermission?view=graph-rest-beta&preserve-view=true) <br> [governanceRoleAssignmentRequestStatus](/graph/api/resources/governanceroleassignmentrequeststatus?view=graph-rest-beta&preserve-view=true) <br> [governanceRuleSetting](/graph/api/resources/governancerulesetting?view=graph-rest-beta&preserve-view=true) <br> [governanceSchedule](/graph/api/resources/governanceschedule?view=graph-rest-beta&preserve-view=true)|
 
 ### <a name="security"></a>Безопасность
@@ -3679,8 +3687,8 @@ ms.locfileid: "50434260"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | Бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
-| Дополнение        | Бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Дополнение        | Бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
+| Дополнение        | Бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Дополнение        | Бета          | Добавлены объект [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|

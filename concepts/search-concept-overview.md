@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 78b568924443c848d03067a88eecb6355c436bca
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2d354a26d2d756ceddac9da0f00a271c595f9fdb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523716"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472799"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph
 
@@ -69,4 +69,4 @@ API Поиска (Майкрософт) поддерживает поиск сл
 
 ## <a name="see-also"></a>См. также
 
-- Участвуйте в работе сообщества на [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search) или на GitHub.
+- Участвуйте в работе сообщества на сайте [Вопросы и ответы Майкрософт](https://aka.ms/askgraph) или на GitHub.

@@ -4,12 +4,12 @@ description: Вы можете сделать так, чтобы приложе�
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: ae762d605170142add3854628e8d97e82b88c932
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 7b93a0245c34b67d3975d0b568df5defd292b72c
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052532"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472855"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Вызов служб Microsoft 365 в Visual Studio 2017 с помощью API Microsoft Graph
 
@@ -94,4 +94,4 @@ ms.locfileid: "50052532"
 
 ## <a name="need-help"></a>Нужна помощь?
 
-Если вам нужна помощь, задавайте вопросы на сайте [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Отметьте вашу запись тегом {microsoftgraph}.
+Если вам нужна помощь, задайте вопрос на сайте [Вопросы и ответы Майкрософт](https://aka.ms/askgraph). Пометьте вопрос тегом {microsoft-graph-identity}.

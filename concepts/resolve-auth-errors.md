@@ -4,12 +4,12 @@ description: Узнайте, как устранить ошибки автори
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c0379ed6559d06d35a6bc5e85080c8e36b562ed1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 95d5dfe0a6e3cf3806eceb2240f318b2255dadb9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288625"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470062"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Устранение ошибок авторизации в Microsoft Graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "48288625"
 
 ## <a name="steps-to-resolve-common-errors"></a>Действия по устранению распространенных ошибок
 
-Чтобы устранить распространенные ошибки авторизации, попробуйте действия, описанные для ошибки, которая больше всего похожа на вашу. Можно использовать описание для нескольких ошибок. Кроме того, можно ознакомиться с ответами, которые уже доступны на Stack Overflow, для [ошибки 401](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+401+isanswered%3Ayes+views%3A50) и [ошибки 403](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+403+isanswered%3Ayes+views%3A50). Если вам не удается найти решение проблемы, [задайте новый вопрос на Stack Overflow](https://stackoverflow.com/questions/ask) с тегом *microsoft-graph*.
+Чтобы устранить распространенные ошибки авторизации, попробуйте действия, описанные для ошибки, которая больше всего похожа на вашу. Можно использовать описание для нескольких ошибок. Кроме того, можно ознакомиться с ответами, которые уже доступны в разделе «Вопросы и ответы Майкрософт», для [ошибки 401](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20401%20) и [ошибки 403](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20403). Если вам не удается найти решение проблемы, задайте[ новый вопрос на через раздел «Вопросы и ответы Майкрософт»](https://aka.ms/askgraph) с тегом *microsoft-graph**.
 
 **Ошибка "401 — недостаточно прав": является ли маркер допустимым?** <br>
 

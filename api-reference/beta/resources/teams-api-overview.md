@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 8482dc9f218c3df5026dbbce680a40f1f9706dad
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: c3f0715e8ac09d8cc6f3138aa5defbbdbe89dd0b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607177"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474619"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -30,7 +30,7 @@ Microsoft Teams — это рабочее пространство с чатам
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/team-list-installedapps.md), [установка](../api/team-post-installedapps.md), [обновление](../api/team-delete-installedapps.md), [удаление](../api/team-delete-installedapps.md) |
 |[chatMessage](../resources/chatmessage.md)| [список в канале](../api/channel-list-messages.md), [список в чате](../api/chat-list-message.md), [отправка](../api/chatmessage-post.md), [чтение в канале](../api/channel-get-message.md), [чтение в чате](../api/chat-get-message.md)|
 |[chat](../resources/chat.md)| [список](../api/chat-list.md), [чтение](../api/chat-get.md),
-|[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [перенаправление](../api/call-redirect.md), [отключение звука](../api/call-mute.md), [включение звука](../api/call-unmute.md), [обновление метаданных](../api/call-updatemetadata.md), [изменение роли при демонстрации экрана](../api/call-changescreensharingrole.md), [перечисление участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md), [отключение звука всех участников](../api/participant-muteall.md) |
+|[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [перенаправление](../api/call-redirect.md), [отключение звука](../api/call-mute.md), [включение звука](../api/call-unmute.md), [изменение роли при демонстрации экрана](../api/call-changescreensharingrole.md), [перечисление участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md), [ отключение звука всех участников](../api/participant-muteall.md) |
 |[schedule](../resources/schedule.md)| [Создание или замена](../api/team-put-schedule.md), [получение](../api/schedule-get.md), [предоставление общего доступа](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Создание](../api/schedule-post-schedulinggroups.md), [список](../api/schedule-list-schedulinggroups.md), [получение](../api/schedulinggroup-get.md), [замена](../api/schedulinggroup-put.md), [удаление](../api/schedulinggroup-delete.md) |
 |activityFeedNotification| [Отправить уведомление пользователю в области чата](../api/chat-sendactivitynotification.md), [Отправить уведомление пользователю в области команды](../api/team-sendactivitynotification.md), [Отправить уведомление пользователю в персональной области](../api/userteamwork-sendactivitynotification.md)|

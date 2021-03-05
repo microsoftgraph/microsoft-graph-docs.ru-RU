@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Micro
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: cf6926103ac3fbade3c7857f1e13c01e5bc0c981
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9efc445fa1d239cc180b7bfeeb71bb5d0848f227
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897465"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474948"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 
@@ -701,5 +701,5 @@ not | `not contains(tolower(title),'school')` |
 - [Входной и выходной HTML-код для страниц OneNote](onenote-input-output-html.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote на сайте Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](https://docs.microsoft.com/ru-RU/answers/topics/microsoft-graph-notes.html)
 - [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)  
