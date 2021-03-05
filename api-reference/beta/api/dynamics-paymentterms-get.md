@@ -1,26 +1,26 @@
 ---
-title: Получение Пайменттермс
-description: Получает объект термина платежа в Dynamics 365 Business Central.
+title: Get paymentTerms
+description: Получает объект терминов оплаты в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cc3f7146d24ae37e3f270d3b947758191c0b0e3b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b0a882a043652eb1b4f0e6be0290c04cf33e1e1b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474276"
 ---
-# <a name="get-paymentterms"></a>Получение Пайменттермс
+# <a name="get-paymentterms"></a>Get paymentTerms
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта условий оплаты для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта терминов оплаты для Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,8 +28,8 @@ ms.locfileid: "48008255"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Financials.ReadWrite.All|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,14 +49,14 @@ GET /financials/companies/{id}/paymentTerms/{id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **пайменттермс** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` **paymentTerms** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 

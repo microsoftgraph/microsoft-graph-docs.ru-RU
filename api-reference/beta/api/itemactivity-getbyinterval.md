@@ -1,31 +1,31 @@
 ---
 author: daspek
-description: Получение Итемактивитистатс для действий, выполненных с этим ресурсом в течение указанного интервала времени.
+description: Получите itemActivityStats для действий, которые проходили в этом ресурсе в течение указанного интервала времени.
 ms.date: 10/06/2017
-title: Получение статистики по действиям элемента по интервалу
+title: Получать статистику активности элементов по интервалу
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 7f34f626c6fe24110c827424cdb53e1dc8c73c99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c56169132d43843f60a9c53417271faf30f4afb1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970024"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474696"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>Получение статистики по действиям элемента по интервалу
+# <a name="get-item-activity-stats-by-interval"></a>Получать статистику активности элементов по интервалу
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение [итемактивитистатс][] для действий, выполненных с этим ресурсом в течение указанного интервала времени.
+Получите [itemActivityStats][] для действий, которые проходили в этом ресурсе в течение указанного интервала времени.
 
->**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
+>**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях.](/graph/deployments)
 
-Статистические функции аналитики могут быть недоступны для всех типов действий.
+Агрегаты аналитики могут быть недоступны для всех типов действий.
 
-[итемактивитистатс]: ../resources/itemactivitystat.md
+[itemActivityStats]: ../resources/itemactivitystat.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,9 +51,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Параметр      | Тип               | Описание
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | строка (timestamp) | Время начала агрегирования действий.
-| endDateTime    | строка (timestamp) | Время окончания агрегирования действий.
-| interval       | string             | Интервал объединения.
+| startDateTime  | string (timestamp) | Время начала, за которое можно агрегировать действия.
+| endDateTime    | string (timestamp) | Конечный период, за который можно агрегировать действия.
+| interval       | string             | Интервал агрегации.
 
 ## <a name="example"></a>Пример
 
@@ -89,7 +89,7 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

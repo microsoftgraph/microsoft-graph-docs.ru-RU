@@ -1,22 +1,22 @@
 ---
 author: learafa
 title: Отслеживание сайта
-description: Подпишитесь на сайт или сайты пользователя.
+description: Следуйте сайту или сайтам пользователя.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 07acd4f0baf9cf1450605a4b5fc7a4775ba06df9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f643671f9d9ccb744974f278007ce26186b2c97
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038216"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473723"
 ---
 # <a name="follow-site"></a>Отслеживание сайта 
 
 Пространство имен: microsoft.graph
 
-Подпишитесь на [сайт](../resources/site.md) пользователя или несколько сайтов.
+Следуйте сайту [пользователя или](../resources/site.md) нескольким сайтам.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,9 +36,9 @@ ms.locfileid: "48038216"
 POST /users/{user-id}/followedSites/add
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса добавьте массив объектов JSON с параметром ID, указанным в приведенной ниже таблице. 
+В теле запроса поставляем массив объектов JSON с параметром id, указанным в таблице ниже. 
 
 
 | Имя                 | Значение  | Описание                                                            |
@@ -48,12 +48,12 @@ POST /users/{user-id}/followedSites/add
 
 ## <a name="response"></a>Отклик 
 
-* Если запрос выполнен успешно, этот метод возвращает массив сайтов, которые были выполнены.  
-* Если при выполнении какого-либо из указанных сайтов возникла ошибка, этот метод возвращает `207` код состояния, а текст отклика будет содержать массив записей, содержащих объекты [Error](/graph/errors) , и ситеидс, указывающие, какие сайты не могут быть выполнены.
+* Если запрос будет успешным, этот метод возвращает массив сайтов, которые были сследованы.  
+* Если ошибка произошла при следовании за любым из указанных сайтов, этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты были не в состоянии `207` следовать. [](/graph/errors)
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере показано, как подписаться на несколько сайтов. 
+В следующем примере показано, как следовать нескольким сайтам. 
 
 ### <a name="request"></a>Запрос
 
@@ -97,11 +97,11 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения возвращается следующий ответ JSON. 
+В случае успешной работы возвращается следующий ответ JSON. 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -137,11 +137,11 @@ Content-type: application/json
 }
 ```
 
-Если возникла ошибка, возвращается следующий ответ JSON 
+Если произошла ошибка, она возвращает следующий ответ JSON 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 {

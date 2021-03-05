@@ -1,5 +1,5 @@
 ---
-title: Получение Жаурналлинес
+title: Get journalLines
 description: Получает объект строки журнала в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,20 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6a090ef8672c68ba14396c0d155955a7d57494b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70cba53e682bb8e7228be8aef28e9c1fa41952eb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981183"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474349"
 ---
-# <a name="get-journallines"></a>Получение Жаурналлинес
+# <a name="get-journallines"></a>Get journalLines
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта строки журнала для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта строки журнала для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981183"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,18 +45,18 @@ GET /financials/companies/{id}/journals/{id}/journalLines/{id}
 |-------------|--------------------------|
 |Авторизация|Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **жаурналлинес** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` **journalLines** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 

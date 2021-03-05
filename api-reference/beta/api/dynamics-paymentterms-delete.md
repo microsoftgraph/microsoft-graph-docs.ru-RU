@@ -1,26 +1,26 @@
 ---
-title: Удаление Пайменттермс
-description: Удаляет объект термина платежа в Dynamics 365 Business Central.
+title: Удаление paymentTerms
+description: Удаляет объект терминов оплаты в Центре бизнеса Dynamics 365.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 515086b79c6a75c75375d159ef20eb2cc56ef231
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbf2841faf2c33109417ff159ab2391b43b82edc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474297"
 ---
-# <a name="delete-paymentterms"></a>Удаление Пайменттермс
+# <a name="delete-paymentterms"></a>Удаление paymentTerms
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта условий оплаты из Dynamics 365 Business Central.
+Удаление объекта терминов оплаты из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,8 +28,8 @@ ms.locfileid: "48008248"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Financials.ReadWrite.All|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
@@ -44,7 +44,7 @@ DELETE /financials/companies/{id}/paymentTerms/{id}
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайменттермс**, **пайменттермс** не будет обновлен. |
+|If-Match       |Обязательно. Если этот заглавный запрос включен и предоставленный eTag не соответствует текущему тегу **на paymentTerms,** **paymentTerms** не будет обновляться. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -58,7 +58,7 @@ DELETE /financials/companies/{id}/paymentTerms/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
@@ -66,7 +66,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

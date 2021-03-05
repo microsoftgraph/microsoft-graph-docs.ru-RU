@@ -1,18 +1,18 @@
 ---
 title: Создание вложения
-description: Используйте этот API, чтобы добавить вложение в объект outlookTask.
+description: Используйте этот API, чтобы добавить вложение в outlookTask.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 928a4e77130d7992842feea6037d363dce09d0d8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 70e14b9e13656e61a17bb0d3dc7b393dcf36f9b4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974063"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474778"
 ---
-# <a name="create-attachment-deprecated"></a>Создание вложения (не рекомендуется)
+# <a name="create-attachment-deprecated"></a>Создание вложений (неподготовленных)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48974063"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md). Вложение может представлять собой файл (из типа [fileAttachment](../resources/fileattachment.md) ) или элемент Outlook (тип[itemAttachment](../resources/itemattachment.md) ).
+Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в [outlookTask.](../resources/outlooktask.md) Вложение может быть файлом (типа [fileAttachment)](../resources/fileattachment.md) или элементом Outlook[(тип itemAttachment).](../resources/itemattachment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательно. |
+| Content-Type | Строка, которая представляет тип данных в теле объекта. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-file-attachment"></a>Пример 1: Добавление вложенного файла 
+### <a name="example-1-add-file-attachment"></a>Пример 1. Добавление вложения в файл 
 
 #### <a name="request"></a>Запрос
 
@@ -130,14 +130,16 @@ HTTP 201 Created
 }
 ```
 
-### <a name="example-2-add-item-attachment"></a>Пример 2: Добавление вложения элемента
+### <a name="example-2-add-item-attachment"></a>Пример 2. Добавление вложения элемента
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.
+Вот пример, который прикрепит событие с другим событием в качестве вложения элемента.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "add_item_attachment_to_task"
 }-->
 
@@ -166,6 +168,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-item-attachment-to-task-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-item-attachment-to-task-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-item-attachment-to-task-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-item-attachment-to-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

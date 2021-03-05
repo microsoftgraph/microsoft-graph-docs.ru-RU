@@ -1,26 +1,26 @@
 ---
-title: Обновление Унитсофмеасуре
-description: Обновляет объект единицы измерения в Dynamics 365 Business Central.
+title: Обновление unitsOfMeasure
+description: Обновляет единицу объекта измерения в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d464d2e45939c1956e2fce981328fff0484195c5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6ea28b64aeca1b6f73f67ca41d2e3983ae2f8b7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008076"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474115"
 ---
-# <a name="update-unitsofmeasure"></a>Обновление Унитсофмеасуре
+# <a name="update-unitsofmeasure"></a>Обновление unitsOfMeasure
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта Units of Measure для Dynamics 365 Business Central.
+Обновление свойств объекта измерения для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "48008076"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,22 +43,22 @@ PATCH /financials/companies/{id}/unitsOfMeasure/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |------|-----|
-|Authorization |Носителя. Обязательно.|
+|Авторизация |Носителер. Обязательно.|
 |Content-Type  |application/json|
-|If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **унитсофмеасуре**, **унитсофмеасуре** не будет обновлен. |
+|If-Match      |Обязательно. Если этот загорелый запрос включен и предоставленный eTag не соответствует текущему тегу на **unitsOfMeasure,** **подразделенияOfMeasure** не будут обновляться. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект **унитсофмеасуре** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` **unitsOfMeasure** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 PATCH https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{id}
 Content-type: application/json
 
@@ -73,7 +73,7 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

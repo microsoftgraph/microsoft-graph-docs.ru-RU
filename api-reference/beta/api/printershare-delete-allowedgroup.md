@@ -1,29 +1,29 @@
 ---
-title: Удаление Алловедграуп из Принтершаре
-description: Отозвать доступ указанной группы, чтобы отправить задания печати на соответствующий общий ресурс принтера.
+title: Удаление allowedGroup из принтераShare
+description: Отзовет доступ указанной группы для отправки заданий печати в связанную долю принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8af0fd030bf438f8126e593cefe2df4cc9c5c38e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c4af683b2eb4cde04d871999ab9a352c2e07d676
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313463"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474857"
 ---
-# <a name="delete-allowedgroup-from-printershare"></a>Удаление Алловедграуп из Принтершаре
+# <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из принтераShare
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отозвать доступ указанной группы, чтобы послать задания печати в связанный [принтершаре](../resources/printershare.md).
+Отзовет доступ указанной группы для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -55,7 +55,7 @@ DELETE /print/shares/{id}/allowedGroups/{id}/$ref
   "name": "delete_allowedgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroup/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$ref
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

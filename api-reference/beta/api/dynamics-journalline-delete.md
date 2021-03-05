@@ -1,5 +1,5 @@
 ---
-title: Удаление Жаурналлинес
+title: Удаление journalLines
 description: Удаляет строку журнала в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,14 +7,14 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c293b28547846083a6ec1df743d12a3c205e6665
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cbd90f9e6ec22ad0bdb16e3422381ac8075e0837
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008318"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474353"
 ---
-# <a name="delete-journallines"></a>Удаление Жаурналлинес
+# <a name="delete-journallines"></a>Удаление journalLines
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "48008318"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/journals/{id}/journalLines/{id}
 |Заголовок          |Значение                     |
 |----------------|--------------------------|
 |Авторизация   |Bearer {токен}. Обязательный. |
-|If-Match        |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **жаурналлинес**, **жаурналлинес** не будет обновлен. |
+|If-Match        |Обязательно. Если заголовка запроса включена, а предоставленный eTag не соответствует текущему тегу в **journalLines,** **journalLines** не будет обновляться. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,7 +59,7 @@ DELETE /financials/companies/{id}/journals/{id}/journalLines/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

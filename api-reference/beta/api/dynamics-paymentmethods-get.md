@@ -1,26 +1,26 @@
 ---
-title: Получение Пайментмесодс
-description: Возвращает объект метода оплаты в Dynamics 365 Business Central.
+title: Get paymentMethods
+description: Получает объект метода оплаты в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 61331ef6faff36993ba9fe5c6378a40778c41616
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2162578856b80deff2507ccf97222cb825f61a1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981158"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474318"
 ---
-# <a name="get-paymentmethods"></a>Получение Пайментмесодс
+# <a name="get-paymentmethods"></a>Get paymentMethods
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта метода оплаты для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта метода оплаты для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981158"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,18 +45,18 @@ GET /financials/companies/{id}/paymentMethods/{id}
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **пайментмесодс** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` **paymentMethods** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 

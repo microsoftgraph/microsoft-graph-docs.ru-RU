@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса applicationTemplate
-description: Представляет приложение в коллекции приложений Azure AD
+title: тип ресурса applicationTemplate
+description: Представляет приложение в галерее приложений Azure AD
 localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 37468877721b9ac534c0118aeb93fd613fca7f88
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6f541d27a8ee701dadf4d1ec260d7fdc810d70fb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159180"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474647"
 ---
-# <a name="applicationtemplate-resource-type"></a>Тип ресурса applicationTemplate
+# <a name="applicationtemplate-resource-type"></a>тип ресурса applicationTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет приложение в коллекции [приложений Azure AD.](/azure/active-directory/saas-apps/tutorial-list)
+Представляет приложение в галерее [приложений Azure AD.](/azure/active-directory/saas-apps/tutorial-list)
 
 ## <a name="methods"></a>Методы
 
@@ -26,22 +26,22 @@ ms.locfileid: "50159180"
 |:-------------|:------------|:------------|
 |[Перечисление applicationTemplate](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Получение списка объектов applicationTemplate.|
 | [Получение applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Чтение свойств и связей объекта applicationTemplate. |
-|[Создание экземпляра applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Добавьте экземпляр приложения из коллекции приложений Azure AD в каталог.|
+|[Создание экземпляра applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Добавьте экземпляр приложения из галереи приложений Azure AD в каталог.|
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|categories|Коллекция String|Список категорий для приложения. Поддерживаемые значения: `Collaboration` , , , , `Business Management` `Consumer` , `Content management` , , `CRM` , , `Data services` , `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` `Human resources` и `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel` `Web design & hosting` .|
+|categories|Коллекция String|Список категорий для приложения. Поддерживаемые значения могут быть: `Collaboration` `Business Management` , `Consumer` `Content management` `CRM` `Data services` `Developer services` `E-commerce` `Education` , `ERP` `Finance` и `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel` `Web design & hosting` .|
 |description|String|Описание приложения.|
 |displayName|String|Имя приложения.|
 |homePageUrl|String|URL-адрес домашней страницы приложения.|
-|id|String| Уникальный идентификатор приложения. Только для чтения.|
+|id|String| Уникальный идентификатор для приложения. Только для чтения.|
 |logoUrl|String|URL-адрес для получения логотипа для этого приложения.|
 |publisher|String|Имя издателя для этого приложения.|
-|supportedProvisioningTypes|Коллекция String|Список режимов предоставления, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .|
-|supportedSingleSignOnModes|Коллекция String|Список режимов единого входов, поддерживаемых этим приложением. Поддерживаемые значения: `password`, `saml`, `external` и `oidc`.|
+|supportedProvisioningTypes|Коллекция строк|Список режимов подготовка, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .|
+|supportedSingleSignOnModes|Коллекция строк|Список режимов единой регистрации, поддерживаемых этим приложением. Поддерживаемые значения: `oidc`, `password`, `saml` и `notSupported`.|
 
 ## <a name="relationships"></a>Связи
 

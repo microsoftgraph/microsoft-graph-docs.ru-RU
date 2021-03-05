@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Отправка приглашения на доступ к элементу
+title: Отправка приглашения для доступа к элементу
 localization_priority: Normal
 ms.prod: sharepoint
-description: Отправляет приглашение к совместному доступу для driveItem.
+description: Отправляет приглашение общего доступа для driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: e514fbd3b8f79d3696f894a6b15ad55055137b70
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bbd7d4226cd4c289019dd5bcc6abd863f2be7688
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473849"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
 Пространство имен: microsoft.graph
 
-Отправляет приглашение к совместному доступу для **driveItem.**
+Отправляет приглашение общего доступа для **driveItem.**
 Приглашение к совместному использованию предоставляет получателям разрешения и при необходимости отправляет им сообщение электронной почты с [ссылкой совместного доступа][].
 
 ## <a name="permissions"></a>Разрешения
@@ -68,8 +68,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                        | Указывает, должен ли получатель приглашения выполнить вход, чтобы просмотреть элемент, к которому предоставлен общий доступ.
 | sendInvitation   | Boolean                        | Если указано значение true, получателю отправляется [ссылка совместного доступа][]. В противном случае разрешение предоставляется напрямую без отправки уведомления.
 | roles            | Collection(String)             | Указывает роли, которые необходимо предоставить получателям приглашения к совместному использованию.
-| expirationDateTime | DateTimeOffset                       | Укажите дату и время окончания срока действия разрешения. Доступно в OneDrive для бизнеса, SharePoint и личных учетных записях OneDrive премиум- и премиум-версий.
-| password           | Строка                         | Пароль, установленный в приглашении создателем. Необязательный и только OneDrive персональный.
+| expirationDateTime | DateTimeOffset                       | Укажите dateTime, по истечении которого истекает срок действия разрешения. Доступно на персональных учетных записях OneDrive для бизнеса, SharePoint и Премиум OneDrive.
+| password           | Строка                         | Пароль, установленный на приглашении создателем. Необязательный и только OneDrive Personal.
 
 ## <a name="example"></a>Пример
 
@@ -84,7 +84,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
@@ -127,7 +127,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -156,9 +156,9 @@ Content-type: application/json
 ## <a name="remarks"></a>Примечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
-* Список доступных ролей см. в [значениях свойств ролей.](../resources/permission.md#roles-property-values)
+* Список доступных ролей см. в списке [значений свойств ролей.](../resources/permission.md#roles-property-values)
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

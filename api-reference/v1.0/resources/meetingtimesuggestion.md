@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов meetingTimeSuggestion
-description: 'Предложение о собрании, которое включает такие сведения, как время собрания, вероятность посещения, Индивидуальная '
+description: 'Предложение собрания, которое включает сведения, такие как время собрания, вероятность посещения, индивидуальный '
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6356b5ba19bc24b39aa8ceaea2f203f433006167
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5340fa9912ecb183dda8603d4b3ce4bbf6d70e8d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086517"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474703"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Тип ресурсов meetingTimeSuggestion
 
@@ -48,10 +48,10 @@ ms.locfileid: "48086517"
 |attendeeAvailability|Коллекция [attendeeAvailability](attendeeavailability.md)|Массив, показывающий состояние занятости каждого участника для этого варианта собрания.|
 |confidence|Double|Процент вероятности того, что все участники будут присутствовать на собрании.|
 |locations|Коллекция [location](location.md)|Массив, в котором указано имя и географические данные каждого расположения для проведения этого варианта собрания.|
-|митингтимеслот|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
-|порядке|Int32|Порядок предложений по времени собраний, отсортированных по их вычисленному значению, от высокого до невысокой, затем по чронологи при наличии предложений с одинаковым уровнем достоверности. |
-|организераваилабилити|freeBusyStatus| Доступность организатора собрания для этого варианта собрания. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|Suggestionreason объяснение|String|Обоснование предложенного времени для проведения собрания.|
+|meetingTimeSlot|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
+|порядок|Int32|Порядок предложений по времени собраний, отсортироваться по их вычисляемой уверенности от высокого до низкого, а затем по хронологии, если есть предложения с той же уверенностью. |
+|organisAvailability|freeBusyStatus| Доступность организатора собрания для этого варианта собрания. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|suggestionReason|String|Обоснование предложенного времени для проведения собрания.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,5 +1,5 @@
 ---
-title: Обновление Жаурналлинес
+title: Обновление journalLines
 description: Обновляет строку журнала в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,14 +7,14 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 7f011b816fbd5c217a41faed82d836947ef1e817
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 548bac42e1c46247858bcf18a21c0886fd5774df
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008250"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474332"
 ---
-# <a name="update-journallines"></a>Обновление Жаурналлинес
+# <a name="update-journallines"></a>Обновление journalLines
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "48008250"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,20 +45,20 @@ PATCH /financials/companies/{id}/journals/{id}/journalLines/{id}
 |--------------|--------------------------|
 |Авторизация |Bearer {токен}. Обязательный. |
 |Content-Type  |application/json          |
-|If-Match      |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **жаурналлинес**, **жаурналлинес** не будет обновлен. |
+|If-Match      |Обязательно. Если заголовка запроса включена, а предоставленный eTag не соответствует текущему тегу в **journalLines,** **journalLines** не будет обновляться. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект **жаурналлинес** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` **journalLines** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 PATCH https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 Content-type: application/json
 
@@ -69,7 +69,7 @@ Content-type: application/json
 
 **Отклик**
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -1,16 +1,16 @@
 ---
 title: Обновление plannerUser
-description: Обновление свойств объекта plannerUser. Эту операцию можно использовать для добавления или удаления планов из списка избранных планов пользователя, а также для указания планов, которые пользователь просматривал в последнее время.
+description: Обновление свойств объекта plannerUser. С помощью этой операции можно добавить или удалить планы из списка любимых планов пользователя и указать, какие планы недавно просмотрел пользователь.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5510de45148e3fe9e66d2696f0b117920231e688
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20c50b423962e9c8289ba3c00556deeba22b50e4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095662"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474040"
 ---
 # <a name="update-planneruser"></a>Обновление plannerUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "48095662"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [plannerUser](../resources/planneruser.md) . Эту операцию можно использовать для добавления или удаления планов из списка избранных планов пользователя, а также для указания планов, которые пользователь просматривал в последнее время.
+Обновление свойств объекта [plannerUser.](../resources/planneruser.md) С помощью этой операции можно добавить или удалить планы из списка любимых планов пользователя и указать, какие планы недавно просмотрел пользователь.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,26 +38,28 @@ PATCH /me/planner
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {код}. Обязательно.|
-| If-Match  | Последнее известное значение ETag для **plannerUser** , которое требуется обновить. Обязательно.|
+| If-Match  | Последнее известное значение ETag для **обновляемого планировщика.** Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|фаворитепланреференцес|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md);|Изменения коллекции, содержащие ссылки на планы, помеченные пользователем в качестве избранного.|
-|рецентпланреференцес|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md).|Изменения коллекции, содержащие ссылки на планы, которые пользователь недавно просматривал.|
+|favouritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md);|Изменения в коллекции, содержащие ссылки на планы, отмеченные пользователем как любимые.|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md).|Изменения в коллекции, содержащие ссылки на планы, которые пользователь недавно просмотрел.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [plannerUser](../resources/planneruser.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [plannerUser](../resources/planneruser.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса. В этом запросе добавляется план "следующее обсуждение выпуска" с ИДЕНТИФИКАТОРом "jd8S5gOaFk2S8aWCIAJz42QAAxtD" в качестве избранного для пользователя и удаляется Plan с ИДЕНТИФИКАТОРом "7oTB5aMIAE2rVo — 1N L7RmQAGX2q" из списка "Избранные планы".
-Он также обновляет время последнего просмотра плана "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
+Ниже приведен пример запроса. Этот запрос добавляет план "Обсуждение следующего выпуска" с ИД "jd8S5gOaFk2S8aWCIAJz42QAAxtD" в качестве избранного для пользователя и удаляет план с ИД "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" из списка любимых планов.
+Он также обновляет время последнего представления плана "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_planneruser"
 }-->
 ```http
@@ -84,13 +86,23 @@ If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-planneruser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-planneruser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerUser"
 } -->

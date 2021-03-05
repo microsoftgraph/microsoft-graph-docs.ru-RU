@@ -1,26 +1,26 @@
 ---
-title: Удаление Таксграупс
-description: Удаляет объект налоговой группы в Dynamics 365 Business Central.
+title: Удаление taxGroups
+description: Удаляет объект группы налогообложения в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e864b8237d71a21542b69052046f5f75aadba569
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aeae1cfaedfdde0f94da93e31f1613654894cebf
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008106"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474165"
 ---
-# <a name="delete-taxgroups"></a>Удаление Таксграупс
+# <a name="delete-taxgroups"></a>Удаление taxGroups
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта налоговой группы из Dynamics 365 Business Central.
+Удаление объекта группы налогообложения из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,8 +28,8 @@ ms.locfileid: "48008106"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Financials.ReadWrite.All|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/taxGroups/{id}
 |Заголовок|Значение|
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **таксграупс**, **таксграупс** не будет обновлен. |
+|If-Match       |Обязательно. Если заглавная группа запроса включена и предоставленный eTag не соответствует текущему тегу в **taxGroups,** **taxGroups** не будет обновляться. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -57,7 +57,7 @@ DELETE /financials/companies/{id}/taxGroups/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

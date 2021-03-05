@@ -5,20 +5,20 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc4ac88d706d64cbcf260fb841c0fd4297aa5114
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14d62182f4d21618dae5d8009c4376404fff66eb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038797"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473828"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
 Пространство имен: microsoft.graph
 
-Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) к существующему [событию](../resources/event.md). Эта операция ограничит размер вложения, которое можно добавить в раздел 3 МБ.
+Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) к существующему [событию.](../resources/event.md) Эта операция ограничивает размер вложения, который можно добавить до 3 МБ.
 
-Если организатор добавляет вложение в событие собрания, организатор может впоследствии [Обновить](event-update.md) событие, чтобы отправить вложение и обновить событие для каждого участника.
+Если организатор добавляет вложение в событие собрания, [](event-update.md) организатор может впоследствии обновить событие, чтобы отправить вложение и обновить событие для каждого участника.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,9 +54,6 @@ POST /groups/{id}/calendar/events/{id}/attachments
 ```http
 POST /me/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
 <!-- { "blockType": "ignored" } -->
@@ -151,10 +148,12 @@ Content-type: application/json
 
 ##### <a name="request"></a>Запрос
 
-Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.
+Вот пример, который прикрепит событие с другим событием в качестве вложения элемента.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_item_attachment_from_event"
 }-->
 
@@ -184,6 +183,24 @@ Content-length: 600
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-item-attachment-from-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-item-attachment-from-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-item-attachment-from-event-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-item-attachment-from-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ##### <a name="response"></a>Отклик
