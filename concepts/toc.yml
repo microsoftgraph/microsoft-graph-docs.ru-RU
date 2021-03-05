@@ -588,6 +588,8 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Создание вкладки Microsoft Teams
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Создание приложения Electron
+                href: toolkit/get-started/build-an-electron-app.md
           - name: Поставщики
             items:
               - name: Использование поставщиков
@@ -598,6 +600,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Поставщик Microsoft Teams
                 href: toolkit/providers/teams.md
+              - name: Поставщик Electron
+                href: toolkit/providers/electron.md
               - name: Поставщик прокси
                 href: toolkit/providers/proxy.md
               - name: Настраиваемый поставщик
