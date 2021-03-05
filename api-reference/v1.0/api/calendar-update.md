@@ -5,71 +5,68 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b04ae92134cf46298f215cd1d14f6f5164bdedd2
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 870432cf062fa1aa933a73f479fcfedf66b638e6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720699"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434862"
 ---
-# <a name="update-calendar"></a><span data-ttu-id="3973c-104">Обновление календаря</span><span class="sxs-lookup"><span data-stu-id="3973c-104">Update calendar</span></span>
+# <a name="update-calendar"></a><span data-ttu-id="15d80-104">Обновление календаря</span><span class="sxs-lookup"><span data-stu-id="15d80-104">Update calendar</span></span>
 
-<span data-ttu-id="3973c-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3973c-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="15d80-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15d80-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3973c-106">Обновление свойств объекта [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="3973c-106">Update the properties of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="3973c-107">Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="3973c-107">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="3973c-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3973c-108">Permissions</span></span>
-<span data-ttu-id="3973c-109">В зависимости от типа календаря, к которому относится событие, а также от требуемого типа разрешений (делегированные или разрешения приложений), для вызова этого API необходимо одно из указанных ниже разрешений.</span><span class="sxs-lookup"><span data-stu-id="3973c-109">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="3973c-110">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3973c-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="15d80-106">Обновление свойств объекта [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="15d80-106">Update the properties of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="15d80-107">Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="15d80-107">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="15d80-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="15d80-108">Permissions</span></span>
+<span data-ttu-id="15d80-109">В зависимости от типа календаря, к которому относится событие, а также от требуемого типа разрешений (делегированные или разрешения приложений), для вызова этого API необходимо одно из указанных ниже разрешений.</span><span class="sxs-lookup"><span data-stu-id="15d80-109">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="15d80-110">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15d80-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="3973c-111">Календарь</span><span class="sxs-lookup"><span data-stu-id="3973c-111">Calendar</span></span> | <span data-ttu-id="3973c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3973c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3973c-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3973c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3973c-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="3973c-114">Application</span></span> |
+| <span data-ttu-id="15d80-111">Календарь</span><span class="sxs-lookup"><span data-stu-id="15d80-111">Calendar</span></span> | <span data-ttu-id="15d80-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="15d80-112">Delegated (work or school account)</span></span> | <span data-ttu-id="15d80-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="15d80-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15d80-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="15d80-114">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="3973c-115">календарь пользователя</span><span class="sxs-lookup"><span data-stu-id="3973c-115">user calendar</span></span> | <span data-ttu-id="3973c-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3973c-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="3973c-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3973c-117">Calendars.ReadWrite</span></span> | <span data-ttu-id="3973c-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3973c-118">Calendars.ReadWrite</span></span> |
-| <span data-ttu-id="3973c-119">календарь группы</span><span class="sxs-lookup"><span data-stu-id="3973c-119">group calendar</span></span> | <span data-ttu-id="3973c-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3973c-120">Group.ReadWrite.All</span></span> | <span data-ttu-id="3973c-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3973c-121">Not supported.</span></span> | <span data-ttu-id="3973c-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3973c-122">Not supported.</span></span> |
+| <span data-ttu-id="15d80-115">календарь пользователя</span><span class="sxs-lookup"><span data-stu-id="15d80-115">user calendar</span></span> | <span data-ttu-id="15d80-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15d80-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="15d80-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15d80-117">Calendars.ReadWrite</span></span> | <span data-ttu-id="15d80-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15d80-118">Calendars.ReadWrite</span></span> |
+| <span data-ttu-id="15d80-119">календарь группы</span><span class="sxs-lookup"><span data-stu-id="15d80-119">group calendar</span></span> | <span data-ttu-id="15d80-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15d80-120">Group.ReadWrite.All</span></span> | <span data-ttu-id="15d80-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15d80-121">Not supported.</span></span> | <span data-ttu-id="15d80-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15d80-122">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="3973c-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3973c-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15d80-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="15d80-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="3973c-124">[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="3973c-124">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="15d80-124">[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="15d80-124">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
 PATCH /groups/{id}/calendar
 ```
-<span data-ttu-id="3973c-125">Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="3973c-125">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="15d80-125">Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="15d80-125">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
-
-PATCH /me/calendarGroup/calendars/{id}
-PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
-<span data-ttu-id="3973c-126">[Календарь](../resources/calendar.md) пользователя в определенной группе [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="3973c-126">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="15d80-126">[Календарь](../resources/calendar.md) пользователя в определенной группе [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="15d80-126">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendarGroups/{id}/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="3973c-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3973c-127">Request headers</span></span>
-| <span data-ttu-id="3973c-128">Заголовок</span><span class="sxs-lookup"><span data-stu-id="3973c-128">Header</span></span>       | <span data-ttu-id="3973c-129">Значение</span><span class="sxs-lookup"><span data-stu-id="3973c-129">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="15d80-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="15d80-127">Request headers</span></span>
+| <span data-ttu-id="15d80-128">Заголовок</span><span class="sxs-lookup"><span data-stu-id="15d80-128">Header</span></span>       | <span data-ttu-id="15d80-129">Значение</span><span class="sxs-lookup"><span data-stu-id="15d80-129">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3973c-130">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3973c-130">Authorization</span></span>  | <span data-ttu-id="3973c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3973c-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="3973c-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3973c-133">Content-Type</span></span>  | <span data-ttu-id="3973c-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3973c-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="15d80-130">Авторизация</span><span class="sxs-lookup"><span data-stu-id="15d80-130">Authorization</span></span>  | <span data-ttu-id="15d80-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="15d80-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="15d80-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="15d80-133">Content-Type</span></span>  | <span data-ttu-id="15d80-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="15d80-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3973c-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3973c-136">Request body</span></span>
-<span data-ttu-id="3973c-p106">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="3973c-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15d80-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="15d80-136">Request body</span></span>
+<span data-ttu-id="15d80-p106">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="15d80-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="3973c-140">Свойство</span><span class="sxs-lookup"><span data-stu-id="3973c-140">Property</span></span>     | <span data-ttu-id="3973c-141">Тип</span><span class="sxs-lookup"><span data-stu-id="3973c-141">Type</span></span>   |<span data-ttu-id="3973c-142">Описание</span><span class="sxs-lookup"><span data-stu-id="3973c-142">Description</span></span>|
+| <span data-ttu-id="15d80-140">Свойство</span><span class="sxs-lookup"><span data-stu-id="15d80-140">Property</span></span>     | <span data-ttu-id="15d80-141">Тип</span><span class="sxs-lookup"><span data-stu-id="15d80-141">Type</span></span>   |<span data-ttu-id="15d80-142">Описание</span><span class="sxs-lookup"><span data-stu-id="15d80-142">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3973c-143">color</span><span class="sxs-lookup"><span data-stu-id="3973c-143">color</span></span>|<span data-ttu-id="3973c-144">String</span><span class="sxs-lookup"><span data-stu-id="3973c-144">String</span></span>|<span data-ttu-id="3973c-p107">Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span><span class="sxs-lookup"><span data-stu-id="3973c-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
-|<span data-ttu-id="3973c-147">isDefaultCalendar</span><span class="sxs-lookup"><span data-stu-id="3973c-147">isDefaultCalendar</span></span>|<span data-ttu-id="3973c-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="3973c-148">Boolean</span></span>|<span data-ttu-id="3973c-149">Значение true, если это используемый по умолчанию календарь пользователя. В противном случае используется значение false.</span><span class="sxs-lookup"><span data-stu-id="3973c-149">True if this calendar is the user's default calendar, false otherwise.</span></span>|
-|<span data-ttu-id="3973c-150">name</span><span class="sxs-lookup"><span data-stu-id="3973c-150">name</span></span>|<span data-ttu-id="3973c-151">String</span><span class="sxs-lookup"><span data-stu-id="3973c-151">String</span></span>|<span data-ttu-id="3973c-152">Имя календаря.</span><span class="sxs-lookup"><span data-stu-id="3973c-152">The calendar name.</span></span>|
+|<span data-ttu-id="15d80-143">color</span><span class="sxs-lookup"><span data-stu-id="15d80-143">color</span></span>|<span data-ttu-id="15d80-144">String</span><span class="sxs-lookup"><span data-stu-id="15d80-144">String</span></span>|<span data-ttu-id="15d80-p107">Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span><span class="sxs-lookup"><span data-stu-id="15d80-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
+|<span data-ttu-id="15d80-147">isDefaultCalendar</span><span class="sxs-lookup"><span data-stu-id="15d80-147">isDefaultCalendar</span></span>|<span data-ttu-id="15d80-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="15d80-148">Boolean</span></span>|<span data-ttu-id="15d80-149">Значение true, если это используемый по умолчанию календарь пользователя. В противном случае используется значение false.</span><span class="sxs-lookup"><span data-stu-id="15d80-149">True if this calendar is the user's default calendar, false otherwise.</span></span>|
+|<span data-ttu-id="15d80-150">name</span><span class="sxs-lookup"><span data-stu-id="15d80-150">name</span></span>|<span data-ttu-id="15d80-151">String</span><span class="sxs-lookup"><span data-stu-id="15d80-151">String</span></span>|<span data-ttu-id="15d80-152">Имя календаря.</span><span class="sxs-lookup"><span data-stu-id="15d80-152">The calendar name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="3973c-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="3973c-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15d80-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="15d80-153">Response</span></span>
 
-<span data-ttu-id="3973c-154">В случае успеха этот метод возвратит код отклика `200 OK` и обновленный объект [calendar](../resources/calendar.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3973c-154">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="3973c-155">Пример</span><span class="sxs-lookup"><span data-stu-id="3973c-155">Example</span></span>
-### <a name="request"></a><span data-ttu-id="3973c-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="3973c-156">Request</span></span>
-<span data-ttu-id="3973c-157">В следующем примере обновляется имя календаря по умолчанию пользователя, во которого был выписана учетная информация.</span><span class="sxs-lookup"><span data-stu-id="3973c-157">The following example updates the name of the signed-in user's default calendar.</span></span>
+<span data-ttu-id="15d80-154">В случае успеха этот метод возвратит код отклика `200 OK` и обновленный объект [calendar](../resources/calendar.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="15d80-154">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="15d80-155">Пример</span><span class="sxs-lookup"><span data-stu-id="15d80-155">Example</span></span>
+### <a name="request"></a><span data-ttu-id="15d80-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="15d80-156">Request</span></span>
+<span data-ttu-id="15d80-157">В следующем примере обновляется имя календаря по умолчанию пользователя, подписанного по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="15d80-157">The following example updates the name of the signed-in user's default calendar.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3973c-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="3973c-158">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="15d80-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="15d80-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -82,26 +79,26 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="3973c-159">C#</span><span class="sxs-lookup"><span data-stu-id="3973c-159">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="15d80-159">C#</span><span class="sxs-lookup"><span data-stu-id="15d80-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3973c-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3973c-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="15d80-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15d80-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3973c-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3973c-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="15d80-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15d80-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3973c-162">Java</span><span class="sxs-lookup"><span data-stu-id="3973c-162">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="15d80-162">Java</span><span class="sxs-lookup"><span data-stu-id="15d80-162">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="3973c-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="3973c-163">Response</span></span>
-<span data-ttu-id="3973c-p108">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3973c-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="15d80-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="15d80-163">Response</span></span>
+<span data-ttu-id="15d80-p108">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="15d80-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

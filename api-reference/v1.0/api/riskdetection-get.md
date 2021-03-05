@@ -1,35 +1,35 @@
 ---
-title: Получение Рискдетектион
-description: Чтение свойств и связей объекта Рискдетектион.
+title: Get riskDetection
+description: Ознакомьтесь с свойствами и отношениями объекта riskDetection.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dda9daf89bd320defaed2886281d9fb044bad5b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ded8ac4a0b55d189e4695b6f458adc78b5faf7b9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025531"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440110"
 ---
-# <a name="get-riskdetection"></a><span data-ttu-id="1195e-103">Получение Рискдетектион</span><span class="sxs-lookup"><span data-stu-id="1195e-103">Get riskDetection</span></span>
-<span data-ttu-id="1195e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1195e-104">Namespace: microsoft.graph</span></span>
+# <a name="get-riskdetection"></a><span data-ttu-id="7ac92-103">Get riskDetection</span><span class="sxs-lookup"><span data-stu-id="7ac92-103">Get riskDetection</span></span>
+<span data-ttu-id="7ac92-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7ac92-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1195e-105">Чтение свойств и связей объекта [рискдетектион](../resources/riskdetection.md) .</span><span class="sxs-lookup"><span data-stu-id="1195e-105">Read the properties and relationships of a [riskDetection](../resources/riskdetection.md) object.</span></span>
+<span data-ttu-id="7ac92-105">Ознакомьтесь с свойствами и отношениями объекта [riskDetection.](../resources/riskdetection.md)</span><span class="sxs-lookup"><span data-stu-id="7ac92-105">Read the properties and relationships of a [riskDetection](../resources/riskdetection.md) object.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="1195e-106">Для использования API обнаружения риска необходима лицензия Azure AD Premium P1 или P2.</span><span class="sxs-lookup"><span data-stu-id="1195e-106">You must have an Azure AD Premium P1 or P2 license to use the risk detection API.</span></span>
+><span data-ttu-id="7ac92-106">Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.</span><span class="sxs-lookup"><span data-stu-id="7ac92-106">You must have an Azure AD Premium P1 or P2 license to use the risk detection API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1195e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1195e-107">Permissions</span></span>
-<span data-ttu-id="1195e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="1195e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ac92-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7ac92-107">Permissions</span></span>
+<span data-ttu-id="7ac92-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="7ac92-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
 
-|<span data-ttu-id="1195e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1195e-110">Permission type</span></span>      | <span data-ttu-id="1195e-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1195e-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7ac92-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7ac92-110">Permission type</span></span>      | <span data-ttu-id="7ac92-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7ac92-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1195e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1195e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1195e-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="1195e-113">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="1195e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1195e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1195e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1195e-115">Not supported.</span></span>    |
-|<span data-ttu-id="1195e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1195e-116">Application</span></span> | <span data-ttu-id="1195e-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="1195e-117">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="7ac92-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7ac92-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7ac92-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="7ac92-113">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="7ac92-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7ac92-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ac92-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ac92-115">Not supported.</span></span>    |
+|<span data-ttu-id="7ac92-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7ac92-116">Application</span></span> | <span data-ttu-id="7ac92-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="7ac92-117">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1195e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1195e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ac92-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7ac92-118">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,24 +39,24 @@ ms.locfileid: "48025531"
 GET /identityProtection/riskDetections/{riskDetectionId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1195e-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1195e-119">Optional query parameters</span></span>
-<span data-ttu-id="1195e-120">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="1195e-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="1195e-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="1195e-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7ac92-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7ac92-119">Optional query parameters</span></span>
+<span data-ttu-id="7ac92-120">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="7ac92-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="7ac92-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="7ac92-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1195e-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1195e-122">Request headers</span></span>
-|<span data-ttu-id="1195e-123">Имя</span><span class="sxs-lookup"><span data-stu-id="1195e-123">Name</span></span>|<span data-ttu-id="1195e-124">Описание</span><span class="sxs-lookup"><span data-stu-id="1195e-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7ac92-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7ac92-122">Request headers</span></span>
+|<span data-ttu-id="7ac92-123">Имя</span><span class="sxs-lookup"><span data-stu-id="7ac92-123">Name</span></span>|<span data-ttu-id="7ac92-124">Описание</span><span class="sxs-lookup"><span data-stu-id="7ac92-124">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="1195e-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1195e-125">Authorization</span></span>|<span data-ttu-id="1195e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1195e-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="7ac92-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7ac92-125">Authorization</span></span>|<span data-ttu-id="7ac92-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7ac92-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1195e-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1195e-128">Request body</span></span>
-<span data-ttu-id="1195e-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1195e-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ac92-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7ac92-128">Request body</span></span>
+<span data-ttu-id="7ac92-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7ac92-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1195e-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="1195e-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7ac92-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ac92-130">Response</span></span>
 
-<span data-ttu-id="1195e-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискдетектион](../resources/riskdetection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1195e-131">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.</span></span>
+<span data-ttu-id="7ac92-131">В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [riskDetection](../resources/riskdetection.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="7ac92-131">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1195e-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="1195e-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7ac92-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="7ac92-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="1195e-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="1195e-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7ac92-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="7ac92-133">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_riskdetection"
@@ -67,8 +67,8 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-
 ```
 
 
-### <a name="response"></a><span data-ttu-id="1195e-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="1195e-134">Response</span></span>
-<span data-ttu-id="1195e-135">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="1195e-135">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="7ac92-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ac92-134">Response</span></span>
+<span data-ttu-id="7ac92-135">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="7ac92-135">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

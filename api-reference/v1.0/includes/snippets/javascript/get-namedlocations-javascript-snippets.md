@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 939d7e4f8e514a1994da830ad180f1cec0276c80
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: afba25d151d9e2e4f06296327547b15d2804bddb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566044"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434735"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/identity/conditionalAccess/namedLocations')
-    .filter('microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')')
+    .filter('microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq \'CA\')')
     .get();
 
 ```
