@@ -1,19 +1,19 @@
 ---
 title: Обновление содержимого страниц OneNote
-description: " Корпоративные записные книжки в Microsoft 365"
+description: " Корпоративная записная книжка в Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c37418332a484223b82154c13e73801db525cbc3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 9a30197744cb3d03255ea3d215ff0774546ae023
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289079"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472337"
 ---
 # <a name="update-onenote-page-content"></a>Обновление содержимого страниц OneNote
 
-**Применимо к** Записные книжки для потребителей в OneDrive | Корпоративные записные книжки в Microsoft 365
+**Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
 
 
 Чтобы обновить содержимое страницы OneNote, необходимо отправить запрос PATCH в конечную точку *content* страницы:
@@ -59,7 +59,7 @@ HTML-код страницы OneNote содержит текст, изображ
 Следующий массив определяет два изменения. Первое вставляет изображение над абзацем в качестве элемента того же уровня, а второе добавляет элемент в список в качестве последнего дочернего элемента.
 
 > [!NOTE]
-> При обновлении изображения на странице OneNote невозможно использовать веб-ссылки. Служба не пытается скачать случайные ресурсы. Вместо этого изображение должно быть частью запроса: URL-адресом изображения или частью имени составного запроса.
+> При обновлении изображения на странице OneNote нельзя использовать ссылки www. Служба не будет пытаться скачивать случайные ресурсы. Вместо этого изображение должно быть частью запроса либо url-адресом изображений, либо имям части многопартийного запроса.
 
 ```json
 [
@@ -447,9 +447,9 @@ Content-Type: image/png
 
 <br/> 
 
-| Данные отклика | Описание |  
+| Данные в отклике | Описание |  
 |------|------|  
-| Код успешного завершения действия | Код состояния HTTP 204. Данные JSON не возвращаются по PATCH-запросу. |  
+| Код успешного завершения | Код состояния HTTP 204. Данные JSON не возвращаются по PATCH-запросу. |  
 | Ошибки | Дополнительные сведения об ошибках OneNote, которые может возвращать Microsoft Graph, см. в статье [Коды ошибок для API OneNote в Microsoft Graph](onenote-error-codes.md). |  
  
  
@@ -490,5 +490,5 @@ Content-Type: image/png
 - [Добавление изображений и файлов](onenote-images-files.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote на сайте Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)

@@ -1,15 +1,15 @@
 ---
 title: Получение содержимого MIME сообщения
 description: Multipurpose Internet Mail Extensions (MIME) — это отраслевой стандарт электронной почты. Теперь вы можете использовать сегмент `$value`, чтобы получить содержимое MIME из сообщения Outlook.
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 4e0ffb77d7e06fb72be2a4d965465e438d054c43
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 48847396d14a280d5978e014bc31b10f7a77b65d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868543"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472267"
 ---
 # <a name="get-mime-content-of-a-message"></a>Получение содержимого MIME сообщения
 
