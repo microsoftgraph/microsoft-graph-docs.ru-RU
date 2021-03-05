@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 21a1ac768ba99b0b095a91f038a9f45e0bb5f8d5
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 7d04c0b7288cef79b09300c5dbc4a3eac0236376
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292198"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441657"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -252,6 +252,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 | Связь | Тип    |Описание|
 |:---------------|:--------|:----------|
 |activities|Коллекция [userActivity](projectrome-activity.md)|Действия пользователя на разных устройствах. Только для чтения. Допускается значение null.|
+|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Представляет роли приложения, предоставленные пользователю для приложения. |
 |calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
 |calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
 |calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|

@@ -3,14 +3,14 @@ title: Список устройств
 description: Получение списка объектов устройств, зарегистрированных в организации.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 14ef2993f6dd7766846bb006d047cd4e2f90c615
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: d00be7a9625a45d1824240381d334eb11a5b729e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082239"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434540"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -53,7 +53,7 @@ GET /devices
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-list-of-devices"></a>Пример 1: получение списка устройств
+### <a name="example-1-get-a-list-of-devices"></a>Пример 1. Получить список устройств
 
 #### <a name="request"></a>Запрос
 
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-devices"></a>Пример 2: получение только количества устройств
+### <a name="example-2-get-only-a-count-of-devices"></a>Пример 2. Получить только количество устройств
 
 #### <a name="request"></a>Запрос
 
@@ -133,7 +133,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response"
@@ -145,7 +145,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: используйте $filter и $top, чтобы получить одно устройство с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов.
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Использование $filter и $top для получения одного устройства с именем отображения, которое начинается с "a", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -193,7 +193,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Пример 4: использование $search для получения устройств с отображаемыми именами, которые содержат буквы "Android", включая число возвращаемых объектов
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Пример 4. Использование $search для получения устройств с именами отображения, которые содержат буквы "Android", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 

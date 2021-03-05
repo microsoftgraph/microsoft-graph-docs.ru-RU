@@ -3,19 +3,19 @@ title: 'directoryObject: getAvailableExtensionProperties'
 description: Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ed4650a03955d4952a8c90845734ae07d53f13dc
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 0464228669013360ad71eb24d214c4810bdb4c43
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873026"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434414"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Пространство имен: microsoft.graph
 
-Возвращает все или отфильтрованный список свойств расширения каталога, зарегистрированных в каталоге. Следующие сущности поддерживают свойства расширения: **user,** **group,** **organization,** **device,** **application** и **servicePrincipal.**
+Верни все или отфильтрованный список свойств расширения каталога, зарегистрированных в каталоге. Следующие сущности поддерживают свойства расширения: **пользовательские,** **групповые,** **организации,** **устройства,** **приложения** и **servicePrincipal.**
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "49873026"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| Directory.Read.All |
-|Делегированное (личная учетная запись Майкрософт)| Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
 |Для приложений| Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,12 +49,12 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` чтобы указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что должны быть возвращены только свойства расширения, которые не синхронизируются из `false` локального каталога. Если этот параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
+|isSyncedFromOnPremises|Логический|`true` указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что возвращаются только свойства расширения, не синхронизированные из локального `false` каталога. Если параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код отклика и коллекцию `200 OK` [extensionProperty](../resources/extensionproperty.md) в тексте отклика.
+В случае успеха это действие возвращает код ответа и `200 OK` [коллекцию extensionProperty](../resources/extensionproperty.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

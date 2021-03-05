@@ -1,22 +1,22 @@
 ---
-title: Список Домаиннамереференцес
-description: Получение списка directoryObject со ссылкой на домен.
+title: Список domainNameReferences
+description: Извлечение списка directoryObject со ссылкой на домен.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 35d779f5869e657ed46fa73a6d3d69fea7d53506
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 82b406604740adf85a161068565482f263295718
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460042"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434396"
 ---
-# <a name="list-domainnamereferences"></a>Список Домаиннамереференцес
+# <a name="list-domainnamereferences"></a>Список domainNameReferences
 
 Пространство имен: microsoft.graph
 
-Получение списка [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращаемый список будет содержать все объекты каталога с зависимостью от домена.
+Извлечение списка [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращенный список будет содержать все объекты каталога, которые имеют зависимость от домена.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,9 +25,9 @@ ms.locfileid: "48460042"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Не поддерживается. |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

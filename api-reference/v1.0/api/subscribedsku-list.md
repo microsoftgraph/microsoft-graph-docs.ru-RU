@@ -3,14 +3,14 @@ title: Список объектов SubscribedSku
 description: Получение списка коммерческих подписок, приобретенных организацией.
 localization_priority: Priority
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6ff8f279f817a520de5f56c7b6af1f85ac335458
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 0e1d403e4930c9edcf48dd7c008fd95c9d3fbe61
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461414"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442539"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 

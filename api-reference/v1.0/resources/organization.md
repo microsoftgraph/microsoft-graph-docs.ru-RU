@@ -3,14 +3,14 @@ title: Тип ресурса organization
 description: " Создание и удаление не поддерживаются. Наследуется от directoryObject."
 localization_priority: Priority
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 869a8b3319d1ba2459f3dc7c190f913b4fd61551
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: b3eec4f182331e1e84e3322a401e8dc415985d7a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293059"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432874"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 

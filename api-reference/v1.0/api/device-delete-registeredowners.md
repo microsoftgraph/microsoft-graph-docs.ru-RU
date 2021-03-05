@@ -1,22 +1,22 @@
 ---
-title: Удаление registeredOwners
-description: Удаление пользователя в качестве зарегистрированного владельца устройства.
+title: Удаление зарегистрированныхowners
+description: Удалите пользователя как зарегистрированного владельца устройства.
 localization_priority: Normal
 author: michaelrm97
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: afad1b2c93d552cbb3dfe2f63dc0509fd3faf5d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9fdb783adfe599c52cd6772ebf80a3b3c4bfa0c6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013407"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434659"
 ---
 # <a name="delete-registeredowner"></a>Удаление registeredOwner
 
 Пространство имен: microsoft.graph
 
-Удаление пользователя в качестве зарегистрированного владельца устройства.
+Удалите пользователя как зарегистрированного владельца устройства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ DELETE /devices/{id}/registeredOwners/{id}/$ref
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

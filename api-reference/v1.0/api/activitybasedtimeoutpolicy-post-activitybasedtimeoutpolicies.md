@@ -1,24 +1,24 @@
 ---
-title: Создание Активитибаседтимеаутполици
-description: Создание нового Активитибаседтимеаутполици.
+title: Создание activityBasedTimeoutPolicy
+description: Создайте новое действиеBasedTimeoutPolicy.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 480ab012a6f58e378d0bf9085d994eddb51e539d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1114963c8da713fefa7c7cbcc1c6e9864e5885d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992937"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442602"
 ---
-# <a name="create-activitybasedtimeoutpolicy"></a>Создание Активитибаседтимеаутполици
+# <a name="create-activitybasedtimeoutpolicy"></a>Создание activityBasedTimeoutPolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Создание нового объекта [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) .
+Создайте новый [объект activityBasedTimeoutPolicy.](../resources/activitybasedtimeoutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,11 +47,11 @@ POST policies/activityBasedTimeoutPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [activityBasedTimeoutPolicy.](../resources/activitybasedtimeoutpolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и новый `201 Created` [объект activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

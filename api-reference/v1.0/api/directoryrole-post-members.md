@@ -3,14 +3,14 @@ title: Добавление участника роли каталога
 description: С помощью этого API можно создать участника роли каталога.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9478f08f404967f8a95acf57eb6905ecbb2932fd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: c04c122039cbce1dc3b362902012c6166c098aff
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522697"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442042"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -19,16 +19,16 @@ ms.locfileid: "49522697"
 С помощью этого API можно создать участника роли каталога.
 
 > [!Note]
-> С этим API можно использовать как идентификатор объекта, так и идентификатор шаблона **directoryRole** . Неизменяемый идентификатор шаблона встроенной роли, который можно просмотреть в описании роли на портале Azure. Дополнительные сведения: [идентификаторы шаблонов ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+> С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ POST /directoryRoles/{id}/members/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>Пример 1: Добавление нового члена к роли каталога с помощью ИД объекта Role
+### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>Пример 1. Добавление нового участника в роль каталога с помощью объекта roleId
 
 ##### <a name="request"></a>Запрос
 
@@ -100,7 +100,7 @@ Content-type: text/plain
 
 ```
 
-### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Пример 2: Добавление нового члена к роли каталога с помощью роли templateId
+### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Пример 2. Добавление нового участника в роль каталога с помощью шаблона ролейId
 
 ##### <a name="request"></a>Запрос
 

@@ -1,23 +1,23 @@
 ---
 title: 'riskyUser: confirmCompromised'
-description: Подтверждение компрометации пользователя
+description: Подтверждение скомпрометации пользователя
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dbf80b5642616f9c48fbd3e3b80121ed77566a15
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 193baf4a8e450f0fc05812da8cb48440ebfccab1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719995"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440096"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 Пространство имен: microsoft.graph
 
->**Примечание.** Для API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** API riskyUsers требует лицензии Azure AD Premium P2.
 
-Подтвердит, что один или [несколько объектов riskyUser](../resources/riskyuser.md) скомпрометированы. Это действие устанавливает высокий уровень риска целевого пользователя.
+Подтвердим, что один или несколько [объектов riskyUser](../resources/riskyuser.md) могут быть скомпрометированы. Это действие задает высокий уровень риска целевого пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
@@ -25,8 +25,8 @@ ms.locfileid: "49719995"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskyUser.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /identityProtection/riskyUsers/confirmCompromised
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|userIds|Набор строк|Укажите рискованные ИД пользователей, которые необходимо отклонять в теле запроса.|
+|userIds|Коллекция строк|Укажите рискованные пользовательские ИД, которые необходимо отклонять в теле запроса.|
 
 
 

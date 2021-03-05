@@ -1,22 +1,22 @@
 ---
-title: Удаление Ипнамедлокатион
-description: Удаление объекта Ипнамедлокатион.
+title: Удаление ipNamedLocation
+description: Удаление объекта ipNamedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d73fac55ac26110ea2dd12b06dbe490798827e78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e7f3034e2c4134805ed86082a9b696690aa4e5a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972842"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441811"
 ---
-# <a name="delete-ipnamedlocation"></a>Удаление Ипнамедлокатион
+# <a name="delete-ipnamedlocation"></a>Удаление ipNamedLocation
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [ипнамедлокатион](../resources/ipNamedLocation.md) .
+Удаление [объекта ipNamedLocation.](../resources/ipNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "47972842"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Для приложений                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /identity/conditionalAccess/namedLocations/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

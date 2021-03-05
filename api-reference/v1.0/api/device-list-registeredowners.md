@@ -3,14 +3,14 @@ title: Список registeredOwners
 description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c7f86a1c2038cd9d6ff477d3c18cbf00b829624a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 198655463c227fa5f0b7b547e59c9f11b08b7571
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457872"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434589"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 
@@ -26,7 +26,7 @@ ms.locfileid: "48457872"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.Read.All или Directory.ReadWrite.All |
+|Для приложений | Directory.Read.All или Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

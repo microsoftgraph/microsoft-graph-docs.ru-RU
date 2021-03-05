@@ -1,22 +1,22 @@
 ---
-title: Удаление Клаимсмаппингполици
-description: Удаление Клаимсмаппингполици.
+title: Удаление утвержденийMappingPolicy
+description: Удаление утвержденийMappingPolicy.
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4ff68292b6140f3c0175f28adecacb68e18a0cc2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 036865e9ab85407dd000c40252837de46be9fd52
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966256"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432960"
 ---
-# <a name="delete-claimsmappingpolicy"></a>Удаление Клаимсмаппингполици
+# <a name="delete-claimsmappingpolicy"></a>Удаление утвержденийMappingPolicy
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) .
+Удаление [объекта claimsMappingPolicy.](../resources/claimsmappingpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,9 +40,9 @@ DELETE /policies/claimsMappingPolicies/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

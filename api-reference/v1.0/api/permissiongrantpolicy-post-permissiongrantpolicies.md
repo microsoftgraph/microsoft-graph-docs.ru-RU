@@ -1,24 +1,24 @@
 ---
-title: Создание Пермиссионгрантполици
-description: Создает объект Пермиссионгрантполици, описывающий условия, при которых могут быть предоставлены разрешения.
+title: Создание permissionGrantPolicy
+description: Создает объект permissionGrantPolicy, описывающий условия, при которых могут быть предоставлены разрешения.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 210294ab470c0a0697ab701a74b26d94edb05e49
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0e08d51d13d23a74907e91f41972be75b90a555b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524140"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441685"
 ---
-# <a name="create-permissiongrantpolicy"></a>Создание Пермиссионгрантполици
+# <a name="create-permissiongrantpolicy"></a>Создание permissionGrantPolicy
 
 Пространство имен: microsoft.graph
 
-Создает объект [пермиссионгрантполици](../resources/permissiongrantpolicy.md). Политика предоставления разрешений используется для описания условий, при которых могут быть предоставлены разрешения (например, во время согласия приложения).
+Создает [permissionGrantPolicy](../resources/permissiongrantpolicy.md). Политика предоставления разрешений используется для описания условий, при которых могут быть предоставлены разрешения (например, во время согласия приложения).
 
-После создания политики предоставления разрешений можно [добавить наборы условий include](permissiongrantpolicy-post-includes.md) , чтобы добавить правила проверки совпадения, и [добавить наборы условий исключения](permissiongrantpolicy-post-excludes.md) для добавления правил исключения.
+После создания политики предоставления разрешений можно добавить наборы условий [](permissiongrantpolicy-post-excludes.md) для добавления правил совпадения и добавить наборы исключений для добавления правил исключения. [](permissiongrantpolicy-post-includes.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "49524140"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Пермиссионгрантполици. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Пермиссионгрантполици. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,11 +46,11 @@ POST /policies/permissionGrantPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [пермиссионгрантполици](../resources/permissiongrantpolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [пермиссионгрантполици](../resources/permissiongrantpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект permissionGrantPolicy](../resources/permissiongrantpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

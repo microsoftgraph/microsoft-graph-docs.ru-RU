@@ -1,24 +1,24 @@
 ---
-title: Создание Токенлифетимеполици
-description: Создание нового Токенлифетимеполици.
+title: Создание tokenLifetimePolicy
+description: Создайте новый tokenLifetimePolicy.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ffdf954ab963d123fca71c937d44add9a67cd53b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 466290d323d7bc7d64baaf72838b4c2e4f29dac6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022981"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439984"
 ---
-# <a name="create-tokenlifetimepolicy"></a>Создание Токенлифетимеполици
+# <a name="create-tokenlifetimepolicy"></a>Создание tokenLifetimePolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Создание нового объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) .
+Создайте новый [объект tokenLifetimePolicy.](../resources/tokenlifetimepolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,11 +47,11 @@ POST policies/tokenLifetimePolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта tokenLifetimePolicy.](../resources/tokenlifetimepolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [токенлифетимеполици](../resources/tokenlifetimepolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` новый [объект tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

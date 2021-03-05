@@ -1,31 +1,31 @@
 ---
-title: Обновление administrativeunit
+title: Обновление администрирования
 description: Обновление свойств объекта administrativeUnit.
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 00e82bed212b992abeda19d49a9aa7645a88371a
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 195ae89d8f32659f975be172fcf586f0cc7a02eb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223700"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442574"
 ---
-# <a name="update-administrativeunit"></a>Обновление administrativeunit
+# <a name="update-administrativeunit"></a>Обновление администрирования
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [administrativeUnit](../resources/administrativeunit.md) .
+Обновление свойств объекта [administrativeUnit.](../resources/administrativeunit.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +45,11 @@ PATCH /directory/administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|string|Описание административной единицы.|
-|displayName|string|Отображаемое имя административной единицы.|
-|visibility|string|Видимость административной единицы. Если не задано, то значение по умолчанию — "общедоступный". Может иметь значение "значение hiddenmembership", которое скрывает членство в группах, не являющихся участниками.|
+|description|string|Описание административного подразделения.|
+|displayName|string|Отображение имени административного подразделения.|
+|visibility|string|Видимость для административного подразделения. Если не установить, то по умолчанию является "общедоступным". Можно установить "HiddenMembership", которое скрывает членство от нечленов.|
 
-Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **administrativeUnit** .
+Так как ресурс **administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)вы можете использовать операцию для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` **administrativeUnit.**
 
 ## <a name="response"></a>Отклик
 

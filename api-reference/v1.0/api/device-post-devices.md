@@ -3,14 +3,14 @@ title: Создание устройства
 description: Создание и регистрация нового устройства в организации.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d6096257131256cb583a23ef1bc29397fa2d2f62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89e4b54e91cb027d88b36c426da8146f98fce781
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092274"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434533"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -26,7 +26,7 @@ ms.locfileid: "48092274"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Device.ReadWrite.All |
+|Для приложений | Device.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

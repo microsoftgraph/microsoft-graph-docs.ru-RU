@@ -1,18 +1,18 @@
 ---
-title: Обновление политики авторизации
+title: Обновление авторизации
 description: Обновление свойств объекта authorizationPolicy.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e8ae872ad6a78f7faee94802d7d93f8775900903
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: e3b8cee408b25b19d0fe36b57ce445e4dcbb13ff
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691447"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434960"
 ---
-# <a name="update-authorizationpolicy"></a>Обновление authorizationPolicy
+# <a name="update-authorizationpolicy"></a>Обновление авторизацииPolicy
 
 Пространство имен: microsoft.graph
 
@@ -24,9 +24,9 @@ ms.locfileid: "49691447"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.ReadWrite.Authorization|
+| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,14 +49,14 @@ PATCH /policies/authorizationPolicy
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка| Отображаемого имени для этой политики. |
-|description|Строка| Описание этой политики.|
-|blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите для этого свойства true. При установке true также будет отключен доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не влияет на Azure AD Connect или Microsoft Graph. |
+|displayName|String| Отображение имени для этой политики. |
+|description|String| Описание этой политики.|
+|blockMsolPowerShell|Логический| Чтобы отключить использование MSOL PowerShell, установите это свойство true. Настройка true также отключит пользовательский доступ к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не влияет на Azure AD Connect или Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. |
-|allowedToUseSSPR|Boolean| Указывает, может ли функция Self-Serve сброса пароля может использоваться пользователями в клиенте. |
-|allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи зарегистрироваться для подписок на основе электронной почты. |
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по электронной почте. |
-|allowInvitesFrom|Строка|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения:<ul><li>`none` – Запретить всем, включая администраторов, приглашать внешних пользователей. Параметр по умолчанию для правительства США.</li><li>`adminsAndGuestInviters` - Разрешить участникам ролей глобальных администраторов, администраторов пользователей и приглашений гостей приглашать внешних пользователей.</li><li>`adminsGuestInvitersAndAllMembers` - Разрешить вышеуказанным ролям администратора и всем другим участникам роли пользователя приглашать внешних пользователей.</li><li>`everyone` - Разрешить всем пользователям в организации, включая гостевых пользователей, приглашать внешних пользователей. Настройка по умолчанию для всех облачных сред, кроме правительства США.</li></ul> |
+|allowedToUseSSPR|Логический| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. |
+|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. |
+|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+|allowInvitesFrom|String|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения:<ul><li>`none` - Запретить всем, включая администраторов, приглашать внешних пользователей. Параметр по умолчанию для правительства США.</li><li>`adminsAndGuestInviters` - Разрешить участникам глобальных администраторов, администраторов пользователей и приглашенных приглашений приглашать внешних пользователей.</li><li>`adminsGuestInvitersAndAllMembers` - Разрешить вышеперечисленные роли администратора и всем другим участникам роли пользователя приглашать внешних пользователей.</li><li>`everyone` - Разрешить всем в организации, включая гостевых пользователей, приглашать внешних пользователей. Параметр по умолчанию для всех облачных сред, кроме правительства США.</li></ul> |
 
 ## <a name="response"></a>Отклик
 
@@ -64,11 +64,11 @@ PATCH /policies/authorizationPolicy
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-or-set-guest-user-access-level-for-the-tenant"></a>Пример 1. Обновление или настройка уровня доступа гостевых пользователей для клиента
+### <a name="example-1-update-or-set-guest-user-access-level-for-the-tenant"></a>Пример 1. Обновление или настройка уровня доступа к гостевому пользователю для клиента
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В этом примере уровень гостевого доступа изменен на "Ограниченный гостевой пользователь".
+Ниже приведен пример запроса. В этом примере уровень гостевого доступа изменен на ограниченный гостевой пользователь.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -117,7 +117,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-block-msol-powershell-in-tenant"></a>Пример 2. Блокировка MSOL PowerShell в клиенте
+### <a name="example-2-block-msol-powershell-in-tenant"></a>Пример 2. Блок MSOL PowerShell в клиенте
 
 #### <a name="request"></a>Запрос
 
@@ -333,11 +333,11 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-6-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>Пример 6. Разрешение согласия пользователя на приложения с помощью политики согласия приложения
+### <a name="example-6-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>Пример 6. Включить согласие пользователя на приложения с учетом политики согласия на приложения
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, который позволяет пользователям соглашаться с [](/azure/active-directory/manage-apps/manage-app-consent-policies) приложениями с помощью встроенной политики согласия приложения, которая позволяет делегировать разрешения, классифицированные как "низкий", для клиентских приложений от проверенных издателей или зарегистрированных в том же `microsoft-user-default-low` клиенте.
+Ниже приводится пример запроса, который позволяет получить согласие пользователя на [](/azure/active-directory/manage-apps/manage-app-consent-policies) приложения при условии политики согласия на встроенные приложения, которая позволяет делегировать разрешения, классифицированные "низко", для клиентских приложений от проверенных издателей или зарегистрированных в том же `microsoft-user-default-low` клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

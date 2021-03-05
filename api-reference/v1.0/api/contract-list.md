@@ -1,22 +1,22 @@
 ---
 title: Список контрактов
-description: Получение списка объектов контракта, связанных с клиентом партнера.
+description: Извлечение списка объектов контракта, связанных с клиентом-партнером.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eae592ff532291af45d21248b101988b3e1627aa
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: da5c6e1d6e4b3bffc6be502eb901ed4ada1c1a9f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460617"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434722"
 ---
 # <a name="list-contracts"></a>Список контрактов
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [контракта](../resources/contract.md) , связанных с клиентом партнера.
+Извлечение списка объектов [контракта,](../resources/contract.md) связанных с клиентом-партнером.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /contracts
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа. 
 
-> Фильтрация поддерживается для customerId, Дефаултдомаиннаме и displayName.
+> Фильтрация поддерживается для customerId, defaultDomainName и displayName.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /contracts
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Contract](../resources/contract.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [Contract](../resources/contract.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

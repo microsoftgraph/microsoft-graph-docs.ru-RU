@@ -1,16 +1,16 @@
 ---
 title: Проверка групп элементов
-description: Проверка членства в указанном списке групп и возврат из этого списка этих групп
+description: Проверка членства в указанном списке групп и возвраты из этого списка этих групп
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1daa0e3abe6badb8349806bd8af66adeafd02c7
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: d2e4377923ff3433751c4e162ce59399e12270d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176227"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442063"
 ---
 # <a name="check-member-groups"></a>Проверка членства в группах
 
@@ -27,11 +27,11 @@ ms.locfileid: "50176227"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, Directory.Read.All |
 
-Используйте рекомендации по следующим сценариям, чтобы определить, какие типы разрешений использовать:
-- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All, чтобы получить членство в группах для во доступного пользователя.
-- Используйте разрешения User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All для получения членства в группах для любого пользователя.
-- Используйте разрешение GroupMember.Read.All или Group.Read.All, чтобы получить членство в группе.
-- Используйте разрешение Directory.Read.All для проверки членства в группах для объекта каталога.
+Используйте руководство по следующим сценариям, чтобы определить, какие типы разрешений использовать:
+- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All для получения членства в группах для пользователя, вступив в группу.
+- Используйте user.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All для получения членства в группе для любого пользователя.
+- Чтобы получить членство в группе, используйте разрешение GroupMember.Read.All или Group.Read.All.
+- Используйте разрешение Directory.Read.All для проверки членства в группе для объекта каталога.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция String|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
+|groupIds|Коллекция строк|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
 

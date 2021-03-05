@@ -1,22 +1,22 @@
 ---
-title: Список включает коллекцию Пермиссионгрантполици
-description: Получение списка наборов условий, описывающих условия, при которых событие предоставления разрешений включается в политику предоставления разрешений.
+title: Список включает коллекцию разрешенийGrantPolicy
+description: Извлечение списка наборов условий, в которых описываются условия, при которых событие предоставления разрешений включено в политику предоставления разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 5fd7894faf78fd8e89ed4e7447f4115a1e62bbfb
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0bada20eabc2621db0cd69bb398e113524f8695d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524332"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441695"
 ---
-# <a name="list-includes-collection-of-permissiongrantpolicy"></a>Список включает коллекцию Пермиссионгрантполици
+# <a name="list-includes-collection-of-permissiongrantpolicy"></a>Список включает коллекцию разрешенийGrantPolicy
 
 Пространство имен: microsoft.graph
 
-Получение наборов условий, *включенных* в [пермиссионгрантполици](../resources/permissiongrantpolicy.md).
+Извлечение наборов условий, *включенных* в [permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524332"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Policy. Read. Пермиссионгрант, Directory. Read. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Policy. Read. Пермиссионгрант, Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Policy.Read.PermissionGrant, Directory.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

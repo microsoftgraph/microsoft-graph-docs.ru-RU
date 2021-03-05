@@ -3,14 +3,14 @@ title: Тип ресурса permissionGrantConditionSet
 description: Указывает правило соответствия условиям, при которых событие включается или исключается из политики предоставления разрешений.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: cef3de207aeb6baffd022598edc7c872d5c647fe
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 36220039ee1682db4ec337da91545fd27f2970e1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377415"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439831"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>Тип ресурса permissionGrantConditionSet
 

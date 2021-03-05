@@ -1,22 +1,22 @@
 ---
-title: Получение Кондитионалакцессполици
-description: Получение свойств и связей объекта Кондитионалакцессполици.
+title: Get conditionalAccessPolicy
+description: Извлечение свойств и связей объекта conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dec8d9a5e064be9507b4de680c824bfff06f4887
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30432a8c70253f092366782f5d8ff537905894da
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067078"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442126"
 ---
-# <a name="get-conditionalaccesspolicy"></a>Получение Кондитионалакцессполици
+# <a name="get-conditionalaccesspolicy"></a>Get conditionalAccessPolicy
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) .
+Извлечение свойств и связей объекта [conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "48067078"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.Read.All |
+| Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/policies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,7 +52,7 @@ GET /identity/conditionalAccess/policies/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

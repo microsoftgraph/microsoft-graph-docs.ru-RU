@@ -1,21 +1,21 @@
 ---
-title: Получение журнала
-description: Чтение свойств и связей объекта Рискюсерхисторитем.
+title: Получить историю
+description: Ознакомьтесь с свойствами и отношениями объекта riskyUserHistoryItem.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7a6f22a5d213749299d85548108b72ac9ab4031f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef1baa85f405ffdb36ec86d97df858d864ead3cb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972758"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440075"
 ---
-# <a name="get-history"></a>Получение журнала
+# <a name="get-history"></a>Получить историю
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [рискюсерхисторитем](../resources/riskyuserhistoryitem.md) .
+Ознакомьтесь с свойствами и отношениями объекта [riskyUserHistoryItem.](../resources/riskyuserhistoryitem.md)
 
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
@@ -25,9 +25,9 @@ ms.locfileid: "47972758"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Идентитирискюсер. Read. ALL, Идентитирискусер. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Идентитирискюсер. Read. ALL, Идентитирискусер. ReadWrite. ALL |
+|Для приложений | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,12 +47,12 @@ GET /identityProtection/riskyUsers/{userId}/history
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискюсерхисторитем](../resources/riskyuserhistoryitem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

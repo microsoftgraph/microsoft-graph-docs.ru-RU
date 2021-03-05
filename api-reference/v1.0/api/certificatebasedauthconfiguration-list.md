@@ -1,25 +1,25 @@
 ---
-title: Список Цертификатебаседаусконфигуратионс
-description: Получение списка объектов цертификатебаседаусконфигуратион.
+title: List certificateBasedAuthConfigurations
+description: Получите список объектов certificatebasedauthconfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6b230da9d17a934e40edc90767f30ba859a488e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7023645fd534eaf7dfbc8b69be37ebfad510f3e4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992441"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434827"
 ---
-# <a name="list-certificatebasedauthconfigurations"></a>Список Цертификатебаседаусконфигуратионс
+# <a name="list-certificatebasedauthconfigurations"></a>List certificateBasedAuthConfigurations
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [цертификатебаседаусконфигуратион](../resources/certificateBasedAuthConfiguration.md) .
+Получите список [объектов certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 > [!NOTE]
-> В коллекции может существовать только один экземпляр Цертификатебаседаусконфигуратион. Он всегда имеет фиксированный идентификатор со значением "29728ade-6ae4-4ee9-9103-412912537da5".
+> В коллекции может существовать только один экземпляр certificateBasedAuthConfiguration. Он всегда имеет фиксированный ID со значением '29728ade-6ae4-4ee9-9103-412912537da5'.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,9 +27,9 @@ ms.locfileid: "47992441"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Организация. чтение. ALL, Организация. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Organization.Read.All, Organization.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений    | Организация. чтение. ALL, Организация. ReadWrite. ALL |
+| Для приложений    | Organization.Read.All, Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,13 +45,13 @@ GET /organization/{id}/certificateBasedAuthConfiguration
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

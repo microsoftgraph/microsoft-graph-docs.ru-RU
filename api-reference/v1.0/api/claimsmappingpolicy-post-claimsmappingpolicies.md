@@ -1,22 +1,22 @@
 ---
 title: Создание claimsMappingPolicy
-description: Создание нового Клаимсмаппингполици.
+description: Создание новых утвержденийMappingPolicy.
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4d7b95680877ed16e0366f526b3b16b1f61c7b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20aa2b84085fde1b2a68b8d6781313e60b448e74
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083878"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434799"
 ---
 # <a name="create-claimsmappingpolicy"></a>Создание claimsMappingPolicy
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) .
+Создайте новый [объект claimsMappingPolicy.](../resources/claimsmappingpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48083878"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy.ReadWrite.ApplicationConfiguration |
+| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,11 +45,11 @@ POST policies/claimsMappingPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [claimsMappingPolicy.](../resources/claimsmappingpolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [клаимсмаппингполици](../resources/claimsmappingpolicy.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и новый объект `201 Created` [claimsMappingPolicy](../resources/claimsmappingpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

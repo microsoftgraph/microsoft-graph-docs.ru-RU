@@ -3,14 +3,14 @@ title: Список registeredUsers
 description: Получение списка пользователей, являющихся зарегистрированными пользователями устройства.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b49ef34bd3accb659f01718436bb1a26e264fb58
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e679baba5dcdac47fb2a14d45555707afadddc7b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461680"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434554"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
@@ -27,7 +27,7 @@ ms.locfileid: "48461680"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.Read.All или Directory.ReadWrite.All |
+|Для приложений | Directory.Read.All или Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

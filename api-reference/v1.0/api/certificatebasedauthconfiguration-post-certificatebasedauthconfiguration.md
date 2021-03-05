@@ -1,25 +1,25 @@
 ---
-title: Создание Цертификатебаседаусконфигуратион
-description: Используйте этот API для создания нового Цертификатебаседаусконфигуратион.
+title: Создание certificateBasedAuthConfiguration
+description: Используйте этот API для создания нового сертификатаBasedAuthConfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2a690be92dd0bef8291dd933846104e3c3dd0843
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: fa9b96d3df3c03dd48f75142cfc58efc5d0b0cd8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905821"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434820"
 ---
-# <a name="create-certificatebasedauthconfiguration"></a>Создание Цертификатебаседаусконфигуратион
+# <a name="create-certificatebasedauthconfiguration"></a>Создание certificateBasedAuthConfiguration
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [цертификатебаседаусконфигуратион](../resources/certificateBasedAuthConfiguration.md) .
+Создайте новый [объект certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 > [!NOTE]
-> Можно создать только один экземпляр **цертификатебаседаусконфигуратион** (коллекция может содержать только один элемент). Он всегда имеет фиксированный идентификатор со значением "29728ade-6ae4-4ee9-9103-412912537da5".
+> Можно создать только один экземпляр **сертификатаBasedAuthConfiguration** (в коллекции может быть только один член). Он всегда имеет фиксированный ID со значением '29728ade-6ae4-4ee9-9103-412912537da5'.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,15 +48,15 @@ POST /organization/{id}/certificateBasedAuthConfiguration/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-Для создания объекта [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) требуются следующие свойства:
+Для создания объекта [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) необходимы следующие свойства.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|цертификатеаусоритиес| Коллекция [цертификатеаусорити](../resources/certificateauthority.md) |Коллекция центров сертификации, которая создает доверенную цепочку сертификатов.  Каждый член коллекции должен содержать свойства **Certificate** и **исрутаусорити** . |
+|certificateAuthorities| [коллекция certificateAuthority](../resources/certificateauthority.md) |Коллекция органов сертификации, создав цепочку доверенных сертификатов.  Каждый член коллекции должен содержать **свойства сертификата** **и isRootAuthority.** |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

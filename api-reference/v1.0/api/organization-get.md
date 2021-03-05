@@ -3,14 +3,14 @@ title: Получение организации
 description: Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
 localization_priority: Priority
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a224d2e166939fcbe7e50a59fce692c9f72209ad
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ded6854e4bc6a46290ce1d0d73a0845ddd280370
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461197"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441762"
 ---
 # <a name="get-organization"></a>Получение организации
 

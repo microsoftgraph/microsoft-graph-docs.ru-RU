@@ -1,22 +1,22 @@
 ---
-title: Создание Токениссуанцеполици
-description: Создание нового Токениссуанцеполици.
+title: Создание tokenIssuancePolicy
+description: Создание нового tokenIssuancePolicy.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 50f918f804cda5fbf1bd20d125f4e29e1d5c35d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faf7e73c0eb15deaa9d7c748513f6451c74b03cf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023039"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440040"
 ---
-# <a name="create-tokenissuancepolicy"></a>Создание Токениссуанцеполици
+# <a name="create-tokenissuancepolicy"></a>Создание tokenIssuancePolicy
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) .
+Создание нового [объекта tokenIssuancePolicy.](../resources/tokenissuancepolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,11 +45,11 @@ POST policies/tokenIssuancePolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [tokenIssuancePolicy.](../resources/tokenissuancepolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [токениссуанцеполици](../resources/tokenissuancepolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект tokenIssuancePolicy](../resources/tokenissuancepolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

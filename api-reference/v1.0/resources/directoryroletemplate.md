@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryRoleTemplate
-description: Представляет шаблон роли каталога.
+description: Представляет шаблон ролей каталога.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4b4c99bcba706b0634179a47109feb80960571ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b13fa5eada7202ed240fe748f0fc92bc15ba8648
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091763"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439893"
 ---
 # <a name="directoryroletemplate-resource-type"></a>Тип ресурса directoryRoleTemplate
 
@@ -29,9 +29,9 @@ ms.locfileid: "48091763"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|Строка|Описание, которое нужно задать для роли каталога. Только для чтения.|
-|displayName|Строка|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
-|id|Строка|Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.|
+|description|String|Описание, которое нужно задать для роли каталога. Только для чтения.|
+|displayName|String|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
+|id|String|Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,22 +1,22 @@
 ---
-title: Получение Каунтринамедлокатион
-description: Получение свойств и связей объекта Каунтринамедлокатион.
+title: Get countryNamedLocation
+description: Извлечение свойств и связей объекта countryNamedlocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8c049e8c947d931f4173e7a763b3e6b563e5ba36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c7bf45d45fd6f204f45e9fe7c659bb42555fb71
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009970"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434701"
 ---
-# <a name="get-countrynamedlocation"></a>Получение Каунтринамедлокатион
+# <a name="get-countrynamedlocation"></a>Get countryNamedLocation
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [каунтринамедлокатион](../resources/countryNamedLocation.md) .
+Извлечение свойств и связей [объекта countryNamedLocation.](../resources/countryNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "48009970"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -46,13 +46,13 @@ GET /identity/conditionalAccess/namedLocations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [каунтринамедлокатион](../resources/countrynamedlocation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [countryNamedLocation](../resources/countrynamedlocation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

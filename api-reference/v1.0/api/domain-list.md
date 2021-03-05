@@ -1,22 +1,22 @@
 ---
 title: Список доменов
-description: Получить список объектов домена.
+description: Извлечение списка объектов домена.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 310ba5d5471813255ad95f869b81565c83fbafd1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cb5d075b9802a44fb73f4c50bf61b90e8d7acb47
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128444"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441965"
 ---
 # <a name="list-domains"></a>Список доменов
 
 Пространство имен: microsoft.graph
 
-Получить список объектов домена.
+Извлечение списка объектов домена.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,7 +46,7 @@ GET /domains
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [домена](../resources/domain.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [домена](../resources/domain.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

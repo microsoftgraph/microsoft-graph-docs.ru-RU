@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса Рискюсерхисторитем
-description: элемент истории опасного пользователя
+title: тип ресурса riskyUserHistoryItem
+description: рискованный элемент истории пользователей
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 551f008696b3c9507f1cae414c34de5a8779ab24
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2188a3a13d36a6d224b3c8ca2a7ac297c22712ce
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984161"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443890"
 ---
-# <a name="riskyuserhistoryitem-resource-type"></a>Тип ресурса Рискюсерхисторитем
+# <a name="riskyuserhistoryitem-resource-type"></a>тип ресурса riskyUserHistoryItem
 
 Пространство имен: microsoft.graph
 
-Представляет историю риска пользователя Azure AD, определенная службой защиты удостоверений Azure AD.
+Представляет историю рисков пользователя Azure AD, определяемую службой Azure AD Identity Protection.
 
 
-Наследуется от [рискюсер](../resources/riskyuser.md).
+Наследует от [riskyUser](../resources/riskyuser.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Журнал списка](../api/riskyuser-list-history.md)|Коллекция [рискюсерхисторитем](../resources/riskyuserhistoryitem.md)|Получение Рискюсерхисторитемс из свойства навигации по журналу.|
-|[Получение журнала](../api/riskyuser-get-riskyuserhistoryitem.md)|[рискюсерхисторитем](../resources/riskyuserhistoryitem.md)|Чтение свойств и связей объекта [рискюсерхисторитем](../resources/riskyuserhistoryitem.md) .|
+|[История списка](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|Получите свойство riskyUserHistoryItems из свойства навигации по истории.|
+|[Получить историю](../api/riskyuser-get-riskyuserhistoryitem.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Ознакомьтесь с свойствами и отношениями объекта [riskyUserHistoryItem.](../resources/riskyuserhistoryitem.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|activity|[рискусерактивити](../resources/riskuseractivity.md)|Действие, связанное с изменением уровня риска пользователя.|
-|id|String|Наследуется от [объекта](../resources/entity.md)|
-|initiatedBy|String|Идентификатор субъекта, который выполняет операцию.|
-|isDeleted|Boolean| Наследуется от [рискюсер](../resources/riskyuser.md)|
-|Процесс обработки|Boolean| Наследуется от [рискюсер](../resources/riskyuser.md)|
-|riskDetail|riskDetail|Наследуется от [рискюсер](../resources/riskyuser.md). Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|рискластупдатеддатетиме|DateTimeOffset|Наследуется от [рискюсер](../resources/riskyuser.md)|
-|riskLevel|riskLevel|Наследуется от [рискюсер](../resources/riskyuser.md). Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|riskState|riskState|Наследуется от [рискюсер](../resources/riskyuser.md). Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|userDisplayName|String|Наследуется от [рискюсер](../resources/riskyuser.md)|
-|userId|String|Идентификатор пользователя.|
-|userPrincipalName|String|Опасное имя участника пользователя. Наследуется от [рискюсер](../resources/riskyuser.md)|
+|действие|[riskUserActivity](../resources/riskuseractivity.md)|Действие, связанное с изменением уровня риска пользователя.|
+|id|String|Унаследованный от [сущности](../resources/entity.md)|
+|initiatedBy|String|ID субъекта, который делает операцию.|
+|isDeleted|Логический| Унаследованный от [riskyUser](../resources/riskyuser.md)|
+|isProcessing|Логический| Унаследованный от [riskyUser](../resources/riskyuser.md)|
+|riskDetail|riskDetail|Унаследованный от [riskyUser](../resources/riskyuser.md). Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
+|riskLastUpdatedDateTime|DateTimeOffset|Унаследованный от [riskyUser](../resources/riskyuser.md)|
+|riskLevel|riskLevel|Унаследованный от [riskyUser](../resources/riskyuser.md). Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|riskState|riskState|Унаследованный от [riskyUser](../resources/riskyuser.md). Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|userDisplayName|String|Унаследованный от [riskyUser](../resources/riskyuser.md)|
+|userId|String|ID пользователя.|
+|userPrincipalName|String|Рискованное основное имя пользователя. Унаследованный от [riskyUser](../resources/riskyuser.md)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|лист|Коллекция [рискюсерхисторитем](../resources/riskyuserhistoryitem.md)| Наследуется от [рискюсер](../resources/riskyuser.md)|
+|история|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection| Унаследованный от [riskyUser](../resources/riskyuser.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

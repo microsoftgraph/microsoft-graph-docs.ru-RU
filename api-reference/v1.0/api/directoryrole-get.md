@@ -3,32 +3,32 @@ title: Получение directoryRole
 description: Получение свойств объекта directoryRole.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 368503c10b809571dcef4cef5265a86a37044031
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: b0917837174f0b4fa2bb7c7f0ea6f5879df1b2a1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522761"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442037"
 ---
 # <a name="get-directoryrole"></a>Получение directoryRole
 
 Пространство имен: microsoft.graph
 
-Получение свойств объекта [directoryRole](../resources/directoryrole.md) . Для успешного ответа роль должна быть активирована в клиенте.
+Извлечение свойств [объекта directoryRole.](../resources/directoryrole.md) Роль должна быть активирована в клиенте для успешного ответа.
 
 > [!Note]
-> С этим API можно использовать как идентификатор объекта, так и идентификатор шаблона **directoryRole** . Неизменяемый идентификатор шаблона встроенной роли, который можно просмотреть в описании роли на портале Azure. Дополнительные сведения: [идентификаторы шаблонов ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+> С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ GET /directoryRoles/{id}
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryRole](../resources/directoryrole.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>Пример 1: получение определения роли каталога с помощью objectId
+### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>Пример 1. Определение роли каталога с помощью objectId
 ##### <a name="request"></a>Запрос
 
 
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>Пример 2: получение определения роли каталога с помощью templateId
+### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>Пример 2. Определение роли каталога с помощью templateId
 ##### <a name="request"></a>Запрос
 
 

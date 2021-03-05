@@ -1,24 +1,24 @@
 ---
-title: Создание Хомереалмдисковериполици
-description: Создание нового Хомереалмдисковериполици.
+title: Создание homeRealmDiscoveryPolicy
+description: Создайте новый homeRealmDiscoveryPolicy.
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dcfe1b9aee6f752b61f5a2303ad9150e72d57893
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d8529aeb1d3f6146ee0a1d9d2761919612a5ebd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973262"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441874"
 ---
-# <a name="create-homerealmdiscoverypolicy"></a>Создание Хомереалмдисковериполици
+# <a name="create-homerealmdiscoverypolicy"></a>Создание homeRealmDiscoveryPolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Создание нового объекта [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) .
+Создайте новый [объект homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,11 +47,11 @@ POST policies/homeRealmDiscoveryPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) в формате JSON.
+В теле запроса поставляем JSON представление [объекта homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

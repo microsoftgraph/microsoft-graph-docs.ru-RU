@@ -1,22 +1,22 @@
 ---
-title: Список Намедлокатионс
-description: Получение списка объектов Намедлокатион.
+title: Список namedLocations
+description: Получите список объектов namedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54c7c25b058c380363e86d4aab3b4f90b80b700b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b75cd74e3c015fa8d8e1b02370991e5c17b31588
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033505"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434734"
 ---
-# <a name="list-namedlocations"></a>Список Намедлокатионс
+# <a name="list-namedlocations"></a>Список namedLocations
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [намедлокатион](../resources/namedlocation.md) .
+Получите список объектов [namedLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "48033505"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$count` параметры запросов,,,, `$filter` `$orderBy` `$select` `$skip` и `$top` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$count` параметры `$filter` запросов , , , , и `$orderBy` `$select` `$skip` `$top` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -46,17 +46,17 @@ GET /identity/conditionalAccess/namedLocations
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [намедлокатион](../resources/namedlocation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов namedLocation](../resources/namedlocation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-namedlocations"></a>Пример 1: List All ALL Намедлокатионс
+### <a name="example-1-list-all-namedlocations"></a>Пример 1. Список всех именных локаций
 
 #### <a name="request"></a>Запрос
 
@@ -163,7 +163,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-list-all-ipnamedlocations"></a>Пример 2: список всех Ипнамедлокатионс
+### <a name="example-2-list-all-ipnamedlocations"></a>Пример 2. Список всех ipNamedLocations
 
 #### <a name="request"></a>Запрос
 
@@ -258,7 +258,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>Пример 3: список всех Намедлокатионс, созданных после определенной даты
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>Пример 3. Список всех имен локаций, созданных после определенной даты
 
 #### <a name="request"></a>Запрос
 
@@ -335,7 +335,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>Пример 4: список всех Каунтринамедлокатионс, содержащих определенную страну или регион
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>Пример 4. Список всех имен стран, содержащих определенную страну или регион
 
 #### <a name="request"></a>Запрос
 

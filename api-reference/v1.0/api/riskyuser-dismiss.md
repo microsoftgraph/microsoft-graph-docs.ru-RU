@@ -1,23 +1,23 @@
 ---
-title: 'riskyUser: dismiss'
-description: Отклонение рискованных пользователей
+title: 'riskyUser: увольнение'
+description: Увольнение рискованного пользователя
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f0b1d2b7b911ef4c946a6d3a3603465d6495de73
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: d03d2199d11b2b9f285d8a425e01c70a6a49da35
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719974"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440089"
 ---
-# <a name="riskyuser-dismiss"></a>riskyUser: dismiss
+# <a name="riskyuser-dismiss"></a>riskyUser: увольнение
 Пространство имен: microsoft.graph
 
->**Примечание.** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
-Отклонять риск одного или более [объектов riskyUser.](../resources/riskyuser.md) Это действие устанавливает для целевого пользователя уровень риска "Нет".
+Отклонять риск одного или более [объектов riskyUser.](../resources/riskyuser.md) Это действие задает целевому пользователю уровень риска ни к одному.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
@@ -25,8 +25,8 @@ ms.locfileid: "49719974"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskyUser.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /identityProtection/riskyUsers/dismiss
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|userIds|Набор строк|Укажите userIds, которые необходимо отклонять в теле запроса.|
+|userIds|Коллекция строк|Укажите пользовательские интерфейсы, которые необходимо отклонять в теле запроса.|
 
 
 

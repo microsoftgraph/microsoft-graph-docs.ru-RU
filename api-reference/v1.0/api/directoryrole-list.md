@@ -3,14 +3,14 @@ title: Перечисление объектов directoryRole
 description: Перечисление ролей каталога, активированных в клиенте.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4e2919c242bb8ee50387daac2f3ce52f1e58018f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 998646fc16119ad7aaccf468fff5b9156cf7a3d2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458593"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434407"
 ---
 # <a name="list-directoryroles"></a>Перечисление объектов directoryRole
 
@@ -18,18 +18,18 @@ ms.locfileid: "48458593"
 
 Перечисление ролей каталога, активированных в клиенте.
 
-Эта операция возвращает только те роли, которые были активированы. Роль активируется при активации роли администратором с помощью API [активации directoryRole](directoryrole-post-directoryroles.md) . Не все встроенные роли изначально активированы. 
+Эта операция возвращает только роли, которые были активированы. Роль активируется, когда администратор активирует роль с помощью API [Activat directoryRole.](directoryrole-post-directoryroles.md) Не все встроенные роли изначально активируются. 
 
-При назначении роли с помощью портала Azure этап активации роли неявным образом выполняется от имени администратора. Чтобы получить полный список ролей, доступных в Azure AD, используйте [List директориролетемплатес](directoryroletemplate-list.md).
+При назначении роли с помощью портала Azure шаг активации роли неявно делается от имени администратора. Чтобы получить полный список ролей, доступных в Azure AD, используйте [list directoryRoleTemplates.](directoryroletemplate-list.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /directoryRoles
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [directoryRole](../resources/directoryrole.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [directoryRole](../resources/directoryrole.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

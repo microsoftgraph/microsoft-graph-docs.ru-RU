@@ -1,24 +1,24 @@
 ---
-title: Получение Рискдетектион
-description: Чтение свойств и связей объекта Рискдетектион.
+title: Get riskDetection
+description: Ознакомьтесь с свойствами и отношениями объекта riskDetection.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dda9daf89bd320defaed2886281d9fb044bad5b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ded8ac4a0b55d189e4695b6f458adc78b5faf7b9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025531"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440110"
 ---
-# <a name="get-riskdetection"></a>Получение Рискдетектион
+# <a name="get-riskdetection"></a>Get riskDetection
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [рискдетектион](../resources/riskdetection.md) .
+Ознакомьтесь с свойствами и отношениями объекта [riskDetection.](../resources/riskdetection.md)
 
 >[!NOTE]
->Для использования API обнаружения риска необходима лицензия Azure AD Premium P1 или P2.
+>Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
@@ -47,12 +47,12 @@ GET /identityProtection/riskDetections/{riskDetectionId}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискдетектион](../resources/riskdetection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [riskDetection](../resources/riskdetection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

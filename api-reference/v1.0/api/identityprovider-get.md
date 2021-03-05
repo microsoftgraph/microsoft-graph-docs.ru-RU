@@ -3,14 +3,14 @@ title: Получение identityProvider
 description: Получение свойств существующего объекта identityProvider
 localization_priority: Priority
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 24008899b83237f8232c32828999f71ac78739a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d45ab0b1c315793bffd376d90fb22dc175886e5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033449"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434281"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 

@@ -1,22 +1,22 @@
 ---
-title: Получение Аусоризатионполици
-description: Получение свойств и связей объекта Аусоризатионполици.
+title: Get authorizationPolicy
+description: Извлечение свойств и связей объекта authorizationPolicy.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 620c01155c8ae1af11416c88ccdf1793bfb054f7
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 7ffb4e245e9a24f5ed33576dbd414891ee5d28ac
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581246"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434918"
 ---
-# <a name="get-authorizationpolicy"></a>Получение Аусоризатионполици
+# <a name="get-authorizationpolicy"></a>Get authorizationPolicy
 
 Пространство имен: microsoft.graph
 
-Получение свойств объекта [аусоризатионполици](../resources/authorizationpolicy.md) .
+Извлечение свойств [объекта authorizationPolicy.](../resources/authorizationpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49581246"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Authorization |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. Read. ALL, Policy. ReadWrite. Authorization |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.Authorization |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Policy.Read.All, Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /policies/authorizationPolicy
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и один объект [аусоризатионполици](../resources/authorizationpolicy.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и один объект `200 OK` [authorizationPolicy](../resources/authorizationpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

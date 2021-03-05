@@ -1,22 +1,22 @@
 ---
-title: Обновление Каунтринамедлокатион
-description: Обновление свойств объекта Каунтринамедлокатион.
+title: Обновление countryNamedlocation
+description: Обновление свойств объекта countryNamedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 814dfc073707ef99c1a97635884cabe822b00003
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa684d1dc42887f636217056e30e5a0807507bef
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009910"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434680"
 ---
-# <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
+# <a name="update-countrynamedlocation"></a>Обновление countryNamedLocation
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [каунтринамедлокатион](../resources/countryNamedLocation.md) .
+Обновление свойств объекта [countryNamedLocation.](../resources/countryNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "48009910"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Для приложений                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
-|displayName|String|Удобное для человека имя расположения.|
-|инклудеункновнкаунтриесандрегионс|Boolean|Значение, `true` Если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
+|countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|displayName|String|Понятное человеку имя расположения.|
+|includeUnknownCountriesAndRegions|Логический|Значение в том случае, если IP-адреса, которые не относятся к стране или региону, должны быть включены `true` в именоваемом расположении.|
 
 ## <a name="response"></a>Отклик
 

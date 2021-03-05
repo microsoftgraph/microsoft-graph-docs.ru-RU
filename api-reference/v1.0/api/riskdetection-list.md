@@ -1,24 +1,24 @@
 ---
-title: Список Рискдетектионс
-description: Получение списка объектов Рискдетектион и их свойств.
+title: Список riskDetections
+description: Получите список объектов riskDetection и их свойств.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b6d1a57d0f83608169b412b520f1342662b592d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92e521575e18c51874dc954cd61db18b5c8d5808
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079349"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440103"
 ---
-# <a name="list-riskdetections"></a>Список Рискдетектионс
+# <a name="list-riskdetections"></a>Список riskDetections
 Пространство имен: microsoft.graph
 
-Получение списка объектов [рискдетектион](../resources/riskdetection.md) и их свойств.
+Получите список объектов [riskDetection](../resources/riskdetection.md) и их свойств.
 
 >[!NOTE]
->Для использования API обнаружения риска необходима лицензия Azure AD Premium P1 или P2.
+>Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48079349"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /identityProtection/riskDetections
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискдетектион](../resources/riskdetection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [riskDetection](../resources/riskdetection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

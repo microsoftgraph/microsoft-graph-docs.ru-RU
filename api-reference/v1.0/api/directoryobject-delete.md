@@ -3,14 +3,14 @@ title: Удаление объекта directoryObject
 description: Удаляет directoryObject.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a5855a454156509818951cf3e6b8d570b1b9d8bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fab6000f09ae96e1a002c3e698d8c92faa015c51
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026098"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434456"
 ---
 # <a name="delete-directoryobject"></a>Удаление объекта directoryObject
 
@@ -39,7 +39,7 @@ DELETE /directoryObjects/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

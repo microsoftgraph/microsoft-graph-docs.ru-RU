@@ -1,22 +1,22 @@
 ---
 title: Удаление registeredUsers
-description: Удаление пользователя в качестве зарегистрированного пользователя устройства.
+description: Удалите пользователя как зарегистрированного пользователя устройства.
 localization_priority: Normal
 author: michaelrm97
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c0c5c7464a7e10e75f6eefda353e46c39aee7bd3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 78f5755e249a6a83f040cb6ad31aaccde8b010f6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070312"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434652"
 ---
-# <a name="delete-registereduser"></a>Удаление экземпляра registereduser
+# <a name="delete-registereduser"></a>Удаление registeredUser
 
 Пространство имен: microsoft.graph
 
-Удаление пользователя в качестве зарегистрированного пользователя устройства.
+Удалите пользователя как зарегистрированного пользователя устройства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48070312"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

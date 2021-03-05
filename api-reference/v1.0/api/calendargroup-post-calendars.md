@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05eaf41def09668177c9c222c171ac76e08c0ec1
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 3573c4ebc1df251706f4fc3b11f66ce4445374d7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754009"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432965"
 ---
 # <a name="create-calendar"></a>Создание объекта Calendar
 
@@ -35,8 +35,8 @@ ms.locfileid: "49754009"
 Объект [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
 
 ```http
-POST /me/calendarGroup/calendars
-POST /users/{id | userPrincipalName}/calendarGroup/calendars
+POST /me/calendars
+POST /users/{id | userPrincipalName}/calendars
 ```
 
 Любой объект [calendarGroup](../resources/calendargroup.md) пользователя.

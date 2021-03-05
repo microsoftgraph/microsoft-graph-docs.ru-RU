@@ -1,21 +1,21 @@
 ---
-title: Получение Рискюсер
-description: Чтение свойств и связей объекта Рискюсер.
+title: Get riskyUser
+description: Ознакомьтесь с свойствами и отношениями объекта riskyUser.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f50406077053976ae0e1af349dfd22f6f69fd424
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc7b7758b7d368ffe248cbfe57c29c98955b3ef6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051307"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440033"
 ---
-# <a name="get-riskyuser"></a>Получение Рискюсер
+# <a name="get-riskyuser"></a>Get riskyUser
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [рискюсер](../resources/riskyuser.md) .
+Ознакомьтесь с свойствами и отношениями объекта [riskyUser.](../resources/riskyuser.md)
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -46,12 +46,12 @@ GET /identityProtection/riskyUsers/{riskyUserId}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискюсер](../resources/riskyuser.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [riskyUser](../resources/riskyuser.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

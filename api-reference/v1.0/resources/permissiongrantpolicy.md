@@ -3,14 +3,14 @@ title: Тип ресурса permissionGrantPolicy
 description: Указывает условия, при которых может быть предоставлено согласие.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: cd5911f46dfaad1279b2c21f2f5e1646796edf7f
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 5d599c6035d2afd3371f86ec35b955577a419d3e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377309"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432881"
 ---
 # <a name="permissiongrantpolicy-resource-type"></a>Тип ресурса permissionGrantPolicy
 

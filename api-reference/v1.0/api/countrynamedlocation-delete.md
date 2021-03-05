@@ -1,22 +1,22 @@
 ---
-title: Удаление Каунтринамедлокатион
-description: Удаление объекта Каунтринамедлокатион.
+title: Удаление countryNamedLocation
+description: Удаление объекта countryNamedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 18f530c24972670ca5633339df7570409495837e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41d563d8c48879e11b35b214c6b52dddb5050132
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988688"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434715"
 ---
-# <a name="delete-countrynamedlocation"></a>Удаление Каунтринамедлокатион
+# <a name="delete-countrynamedlocation"></a>Удаление countryNamedLocation
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [каунтринамедлокатион](../resources/countryNamedLocation.md) .
+Удаление [объекта countryNamedLocation.](../resources/countryNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "47988688"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Для приложений                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /identity/conditionalAccess/namedLocations/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
