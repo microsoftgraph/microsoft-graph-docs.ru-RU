@@ -1,16 +1,16 @@
 ---
 title: Get onPremisesPublishingProfile
-description: Извлечение свойств и связей объекта [onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
+description: Извлечение свойств и связей [объекта onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b7eec602f502f1501b8cfab96a5cc0de0c2faa8c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3c2b3c6010970290a7416f3080e8d60d51799ff3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136369"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471889"
 ---
 # <a name="get-onpremisespublishingprofile"></a>Get onPremisesPublishingProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136369"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
+Извлечение свойств и связей [объекта onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning?$
   "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
 } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 
 {

@@ -1,29 +1,29 @@
 ---
-title: 'отчеты: Жетпринтерарчиведпринтжобс'
-description: Получение списка архивированных заданий печати, которые были поставлены в очередь для определенного принтера.
+title: 'отчеты: getPrinterArchivedPrintJobs'
+description: Получите список архивных заданий печати, которые стояли в очереди для определенного принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a06f20d8de1fc6f1be72e382beaf01158529f260
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: daf0acf2ab9bc285d05aae9f3b875ffc6f329b03
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848249"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472414"
 ---
-# <a name="reports-getprinterarchivedprintjobs"></a>отчеты: Жетпринтерарчиведпринтжобс
+# <a name="reports-getprinterarchivedprintjobs"></a>отчеты: getPrinterArchivedPrintJobs
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка архивированных заданий печати, которые были поставлены в очередь для определенного [принтера](../resources/printer.md).
+Получите список архивных заданий печати, которые стояли в очереди для определенного [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -34,8 +34,8 @@ ms.locfileid: "48848249"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getPrinterArchivedPrintJobs
-GET /reports/getPrinterArchivedPrintJobs
+GET /print/reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
@@ -46,12 +46,12 @@ GET /reports/getPrinterArchivedPrintJobs
 
 | Параметр     | Тип                 | Обязательный? | Описание                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `printerId`   | `Edm.String`         | Да       | ИДЕНТИФИКАТОР принтера, для которого возвращаются данные.                            |
-| `periodStart` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) периода времени, из которого требуется включить данные. |
-| `periodEnd`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) периода времени, из которого требуется включить данные.   |
+| `printerId`   | `Edm.String`         | Да       | ID принтера для возврата данных.                            |
+| `startDateTime` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) для периода времени с учетом данных. |
+| `endDateTime`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) для периода времени с учетом данных.   |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [арчиведпринтжоб](../resources/archivedprintjob.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -62,7 +62,7 @@ GET /reports/getPrinterArchivedPrintJobs
   "name": "reports-getprinterarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>Отклик

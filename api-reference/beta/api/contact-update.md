@@ -1,16 +1,16 @@
 ---
 title: Обновление контакта
-description: Обновление свойств объекта Contact.
+description: Обновление свойств контактного объекта.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b52e2f0089a8793956ec481932e2aa36cd200d7d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7022203e1e3ca4867ba1c1b026f450d21d94b591
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957161"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472526"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957161"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта Contact.
+Обновление свойств контактного объекта.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -30,7 +30,7 @@ ms.locfileid: "48957161"
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-[Контакт](../resources/contact.md) от [contactFolder](../resources/contactfolder.md)пользователя по умолчанию.
+Контакт [от](../resources/contact.md) пользователя по умолчанию [contactFolder](../resources/contactfolder.md).
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
 Объект [contact](../resources/contact.md) из дочерней папки в папке [contactFolder](../resources/mailfolder.md).  Приведенный ниже пример показывает один уровень вложенности, но для хранения контакта допускается несколько.
 ```http
-PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -63,7 +63,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |companyName|String|Название компании контакта.|
 |department|String|Отдел контакта.|
 |displayName|String|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
-|emailAddresses|Коллекция [типедемаиладдресс](../resources/typedemailaddress.md)|Электронные адреса контакта.|
+|emailAddresses|[коллекция typedEmailAddress](../resources/typedemailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |gender |String |Пол контакта. |
 |generation|String|Поколение контакта.|
@@ -77,26 +77,26 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |officeLocation|String|Расположение офиса контакта.|
 |parentFolderId|String|Идентификатор родительской папки контакта.|
 |personalNotes|String|Заметки пользователя о контакте.|
-|phones |Коллекция [phone](../resources/phone.md) |Номера телефонов, связанные с контактом, например домашний телефон, мобильный телефон и служебный телефон. |
-|postalAddresses |Коллекция [physicalAddress](../resources/physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и служебный адрес. |
+|phones |Коллекция [phone](../resources/phone.md) |Телефонные номера, связанные с контактом, например домашний телефон, мобильный телефон и бизнес-телефон. |
+|postalAddresses |[коллекция physicalAddress](../resources/physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и бизнес-адрес. |
 |profession|String|Профессия контакта.|
 |spouseName|String|Имя супруга или супруги контакта.|
 |surname|String|Фамилия контакта.|
 |title|String|Звание контакта.|
 |websites |Коллекция [website](../resources/website.md)|Веб-сайты, связанные с контактом. |
-|веддинганниверсари |Дата |Годовщина свадьбы контакта. |
+|weddingAnniversary |Дата |Годовщина свадьбы контакта. |
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
-Так как **контактный** ресурс поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, относящиеся к приложению, в пользовательских свойствах расширения в существующем экземпляре **контакта** .
+Так **как** контактный ресурс поддерживает [расширения,](/graph/extensibility-overview)операцию можно использовать для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` контакта. 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Contact](../resources/contact.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` обновленный контактный объект в [](../resources/contact.md) тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере обновляется личный адрес электронной почты указанного контакта.
+В следующем примере обновляется личный электронный адрес указанного контакта.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

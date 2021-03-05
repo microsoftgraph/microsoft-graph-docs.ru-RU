@@ -1,26 +1,26 @@
 ---
-title: Получение Компанинформатион
-description: Возвращает объект сведений об Организации в Dynamics 365 Business Central.
+title: Get companyInformation
+description: Получает информационный объект компании в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0f98b395182a5b0acaf122bf0973c5904cc9e5d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fcbba1e491df93040865f5720e88c04ebe06af9c
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981746"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473674"
 ---
-# <a name="get-companyinformation"></a>Получение Компанинформатион
+# <a name="get-companyinformation"></a>Get companyInformation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта сведений об организации для Dynamics 365 Business Central.
+Извлечение свойств и связей информационного объекта компании для Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "47981746"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 GET /financials/companies/{id}/companyInformation/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -43,18 +43,18 @@ GET /financials/companies/{id}/companyInformation/{id}
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **компанинформатион** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` **объект companyInformation** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
 ```
 

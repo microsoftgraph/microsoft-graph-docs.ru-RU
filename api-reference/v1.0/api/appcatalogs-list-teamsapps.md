@@ -1,33 +1,35 @@
 ---
-title: Список teamsApp
-description: Список приложений Teams, опубликованных в каталоге приложений клиента.
+title: List teamsApp
+description: Приложения List Teams, опубликованные в каталоге приложений клиента.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35a922e2ed7fd3ccd4c41d19173199d243bb3192
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 29867275aa1c10a49b05bb9c52a79c4e78bc5d80
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690393"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471812"
 ---
-# <a name="list-teamsapp"></a>Список teamsApp
+# <a name="list-teamsapp"></a>List teamsApp
 
 Пространство имен: microsoft.graph
 
-Список [приложений,](../resources/teamsapp.md) опубликованных в каталоге приложений Microsoft Teams. К ним относятся приложения из Магазина Microsoft Teams, а также приложения из каталога приложений вашей организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите `organization` в качестве **distributionMethod** в запросе.
+Список [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
+К ним относятся приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите в запросе `organization` **рассылкуMethod.**
+
+> [!NOTE]
+> Ресурс `id` **teamsApp** создается сервером и не является таким же, как указанный в `id` манифесте приложения Teams. Предоставленный разработчиком в рамках манифеста приложения Teams штампуется как ресурс `id` `externalId` **teamsApp.**
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
-
-> **Примечание.** Только глобальные администраторы могут вызывать этот API.
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
+| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,9 +44,9 @@ GET /appCatalogs/teamsApps
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
-При `$expand=AppDefinitions` использовании будут возвращены дополнительные сведения о состоянии приложения. 
+Использование возвращает дополнительные сведения о состоянии приложения, например `$expand=AppDefinitions` **publishingState,** которое отражает состояние проверки отправки приложения и возвращает, было ли приложение утверждено, отклонено или остается в стадии рассмотрения. 
 
-> **Примечание.** Можно отфильтровать любые поля объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Можно использовать любую из следующих операций фильтра: "Равно", "не равно" и "или" или "нет".
+> **Примечание:** Вы можете фильтровать любое из полей объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Вы можете использовать любую из следующих операций фильтра: Равная, не равная, и, или, и нет.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,13 +60,13 @@ GET /appCatalogs/teamsApps
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и список объектов `200 OK` [teamsApp](../resources/teamsapp.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и список объектов `200 OK` [teamsApp](../resources/teamsapp.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Список всех приложений, характерных для клиента
+### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Список всех приложений, определенных для клиента
 
-В следующем примере перечислены все приложения, которые являются специфическими для вашего клиента.
+В следующем примере перечислены все приложения, которые специфичны для клиента.
 
 #### <a name="request"></a>Запрос
 
@@ -187,7 +189,7 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе ИД манифеста приложения Teams.
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе ID манифеста приложения Teams.
 
 В следующем примере перечислены приложения, которые соответствуют "id", указанному в манифесте приложения Teams. В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
@@ -248,8 +250,171 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4. Список приложений с заданным ИД и возвращение состояния проверки отправки
+
+В следующем примере перечислены приложения с заданным ID и расширены **приложенияDefinitions,** чтобы вернуть **publishingState,** что отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в стадии ожидания, означает, что приложение было утверждено администратором, а значит, приложение было отклонено `published` `rejected` администратором.
+
+#### <a name="request"></a>Запрос
+
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_filter_expand_appdefinitions"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
+```
+
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_with_filter_expand_appdefinitions",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "876df28f-2e78-423b-94a5-44181bd0e225",
+      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "name": "Test App",
+      "version": "1.0.1",
+      "distributionMethod": "Organization",
+      "appDefinitions": [
+        {
+          "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
+          "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
+          "azureADAppId": null,
+          "displayName": "Test App",
+          "version": "1.0.1",
+          "requiredResourceSpecificApplicationPermissions": [],
+          "publishingState": "published"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Пример 5. Список сведений только о тех приложениях в каталоге, которые содержат бот
+
+В следующем примере перечислены только те приложения в каталоге, которые содержат бот.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_bots"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
+```
+
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_with_bots",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions(bot()))",
+    "value": [
+        {
+            "id": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+            "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
+            "displayName": "Ducks-3",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions(bot())",
+            "appDefinitions": [
+                {
+                    "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
+                    "id": "OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ=",
+                    "teamsAppId": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+                    "azureADAppId": null,
+                    "displayName": "Ducks-3",
+                    "version": "1.0.9",
+                    "requiredResourceSpecificApplicationPermissions": [],
+                    "publishingState": "rejected",
+                    "shortDescription": "quaerat quasi magnam. slight change. 5",
+                    "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
+                    "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
+                    "createdBy": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "70292a90-d2a7-432c-857e-55db6d8f5cd0",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "bot@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
+                    "bot": {
+                        "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+            "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
+            "displayName": "Self-Install-App-E2E-Tests",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions(bot())",
+            "appDefinitions": [
+                {
+                    "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
+                    "id": "MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk",
+                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+                    "azureADAppId": "d75abc57-8255-4309-9c29-a3c689e20341",
+                    "displayName": "Self-Install-App-E2E-Tests",
+                    "version": "6.0.0",
+                    "requiredResourceSpecificApplicationPermissions": [],
+                    "publishingState": "submitted",
+                    "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                    "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+                    "lastModifiedDateTime": "2020-08-25T18:40:13.035341Z",
+                    "createdBy": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "c071a180-a220-43a1-adaf-e8db95c4a7d6",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "bot@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions('MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk')/bot/$entity",
+                    "bot": {
+                        "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
 ## <a name="see-also"></a>См. также
 
-- [Список приложений, установленных в команде](team-list-installedapps.md)
+- [Список приложений, установленных в команде](team-list-installedapps.md) <!-- - [List apps installed in a chat](chat-list-installedapps.md) -->
 - [Список приложений, установленных в личной области пользователя](userteamwork-list-installedapps.md)
 

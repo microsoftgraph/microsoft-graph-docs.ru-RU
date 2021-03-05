@@ -1,18 +1,18 @@
 ---
 title: Получение компаний
-description: Возвращает объект Company в Dynamics 365 Business Central.
+description: Получает объект компании в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cbf7abae89c7cc7c212920807b190b2072ef815d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1c663f86e696d6fd26a9294ca8e0afa0ca3dda8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008458"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473422"
 ---
 # <a name="get-companies"></a>Получение компаний
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008458"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта фирмы для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта компании для Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "48008458"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Financials.ReadWrite.All|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 GET /financials/companies
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -47,14 +47,14 @@ GET /financials/companies
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **фирмы** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` **объект компании** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies
 ```
 

@@ -5,22 +5,22 @@ description: Получите itemAnalytics о представлениях, к�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2307df47b5c914a1b9257e30d39c3fe2b539bf32
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 25965acd48ca69b68f0715d9e075a5e71d5d1529
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471691"
 ---
 # <a name="get-itemanalytics"></a>Get itemAnalytics
 
 Пространство имен: microsoft.graph
 
 Получите [itemAnalytics][] о представлениях, которые произошли в этом ресурсе.
-Ресурс **itemAnalytics** — удобный способ получить статистику активности `allTime` для и `lastSevenDays` .
-Для настраиваемого диапазона времени или интервала используйте API [getActivitiesByInterval.][]
+Ресурс **itemAnalytics** — это удобный способ получения статистики активности для `allTime` и `lastSevenDays` .
+Для настраиваемого диапазона времени или интервала используйте [API getActivitiesByInterval.][]
 
->**Примечание.** Ресурс **itemAnalytics** пока не доступен во всех [национальных развертываниях.](/graph/deployments)
+>**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях.](/graph/deployments)
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -59,7 +59,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 ## <a name="response"></a>Отклик 
 
-В случае успеха этот метод возвращает код отклика и коллекцию объекта `200 OK` [itemAnalytics][] в тексте отклика. 
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объекта itemAnalytics][] в тексте ответа. 
 
 ## <a name="example"></a>Пример
 
@@ -95,7 +95,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

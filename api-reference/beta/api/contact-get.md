@@ -1,16 +1,16 @@
 ---
 title: Получение контакта
-description: Получение свойств и связей объекта Contact.
+description: Извлечение свойств и связей контактного объекта.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 06977c974bde533de8f18b992ef63e15c55c07a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: accc9f8f8b089a5c4dc8a46bd3129806a9795bd8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957203"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472540"
 ---
 # <a name="get-contact"></a>Вывод контакта
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957203"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта Contact.
+Извлечение свойств и связей контактного объекта.
 
 Существует два сценария, в которых приложение может получить контакт в папке контактов другого пользователя:
 
@@ -37,25 +37,25 @@ ms.locfileid: "48957203"
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-[Контакт](../resources/contact.md) в почтовом ящике пользователя.
+Контакт [в](../resources/contact.md) почтовом ящике пользователя.
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-[Контакт](../resources/contact.md) из верхнего уровня [contactFolder](../resources/contactfolder.md) пользователя.
+Контакт [с](../resources/contact.md) верхнего уровня [contactFolder](../resources/contactfolder.md) пользователя.
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 Объект [contact](../resources/contact.md) из дочерней папки в папке [contactFolder](../resources/mailfolder.md).  Приведенный ниже пример показывает один уровень вложенности, но для хранения контакта допускается несколько.
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 |Имя|Значение|Описание|
 |:---------------|:--------|:-------|
-|$expand|string|Список отношений, развертываемых и включаемых в ответ (разделитель — запятая). Сведения о поддерживаемых именах см. в таблице связи объекта [Contact](../resources/contact.md) . |
+|$expand|string|Список отношений, развертываемых и включаемых в ответ (разделитель — запятая). См. таблицу [связей контактного](../resources/contact.md) объекта для поддерживаемых имен. |
 |$select|string|Разделенный запятыми список свойств, включаемых в ответ.|
 
 ## <a name="request-headers"></a>Заголовки запросов

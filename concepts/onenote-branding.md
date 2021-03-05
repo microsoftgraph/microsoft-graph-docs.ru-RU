@@ -4,16 +4,16 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 50fec3a91fa6d2a72c2452a356ed3e776db83a37
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 1ff5373cc671f7f60e0a8a4870d69340f7538ea0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896037"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473492"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Правила использования фирменной символики для разработчиков API OneNote 
  
-**Применимо к** Записные книжки для потребителей в OneDrive | Корпоративные записные книжки в Microsoft 365
+**Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
 
 Следуйте инструкциям, приведенным в этой статье, чтобы наилучшим образом интегрировать торговую марку OneNote в ваш продукт, а также соблюсти требования к фирменной символике OneNote.
 
@@ -45,7 +45,7 @@ ms.locfileid: "44896037"
 
 Чтобы логотип выделялся на странице, необходимо оставить вокруг него определенную часть незаполненного пространства. Минимальный отступ сверху, снизу и по бокам логотипа должен соответствовать его высоте.
 
-![Логотип, демонстрирующий очистку псаце с высотой символа](images/onenotelogoclearspace.png)
+![Логотип, показывающий четкий psace, который является высотой символа](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -58,7 +58,7 @@ ms.locfileid: "44896037"
  
 **Печать:**&nbsp;&nbsp;5 мм (0,2 дюйма) 
 
-![Логотип, демонстрирующий минимальный размер экрана и печати](images/onenotelogominsize.png)
+![Логотип, показывающий минимальный размер экрана и печати](images/onenotelogominsize.png)
 
 
 <a name="color"></a>
@@ -71,7 +71,7 @@ ms.locfileid: "44896037"
 
 **Печать:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![Logo швоинг предпочтительный цвет фирменного стиля с белым и цветным фоном для фирменного стиля](images/onenotelogobgs.png)
+  ![Логотип shwoing предпочтительный цвет бренда с белым и фирменным фоном цвета](images/onenotelogobgs.png)
  
 В цветовой среде с ограниченным набором цветов логотип может отображаться черным цветом. Однако логотип никогда не должен быть серым.
 <!--or white?-->
@@ -170,7 +170,7 @@ ms.locfileid: "44896037"
 
 ![Хороший пример логотипа на упаковке](images/onenoteusagepackaging1.png)
 
-![Другое представление хорошего примера логотипа в упаковке](images/onenoteusagepackaging2.png)
+![Еще одно представление хорошего примера логотипа в упаковке](images/onenoteusagepackaging2.png)
 
 
 Если у вас есть вопросы по этому руководству или вы создаете новые средства взаимодействия с использованием фирменной символики, представленной здесь, свяжитесь с нами по адресу [@onenotedev](https://twitter.com/onenotedev).
@@ -180,7 +180,7 @@ ms.locfileid: "44896037"
 - [Правила использования фирменной символики для разработчиков решений на основе API OneNote](https://www.microsoft.com/download/details.aspx?id=42977) (страница скачивания)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote на сайте Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)  
 
 

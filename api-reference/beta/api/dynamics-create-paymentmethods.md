@@ -1,5 +1,5 @@
 ---
-title: Создание Пайментмесодс
+title: Создание paymentMethods
 description: Создает объект метода оплаты в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,20 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f4e23fd95c4550c43ce78aa0a1c15771afe7672a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64d7dac3590845f4fa4a95de9fc32829654a1d57
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981656"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473282"
 ---
-# <a name="create-paymentmethods"></a>Создание Пайментмесодс
+# <a name="create-paymentmethods"></a>Создание paymentMethods
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект метода оплаты в Ддинамикс 365 Business Central.
+Создание объекта метода оплаты в центре бизнеса DDynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "47981656"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 POST /financials/companies/{id}/paymentMethods
 ```
 
@@ -45,19 +45,19 @@ POST /financials/companies/{id}/paymentMethods
 |Авторизация  |Bearer {токен}. Обязательный.    |
 |Content-Type   |application/json             |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта **пайментмесодс** в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта **paymentMethods.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **пайментмесодс** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект ```201 Created``` **paymentMethods** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods
 Content-type: application/json
 
@@ -73,7 +73,7 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

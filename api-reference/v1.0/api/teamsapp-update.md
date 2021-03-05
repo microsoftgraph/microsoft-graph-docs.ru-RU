@@ -1,24 +1,24 @@
 ---
 title: Обновление teamsApp
-description: 'Обновление приложения, опубликованного ранее в каталоге приложений Teams. '
+description: 'Обновление приложения, ранее опубликованного в каталоге приложений Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ca82b7d1f46722896529a53a0c12ced726a6525
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: ca0bb22bf8be1898c376807a5df2e727f282b30d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607163"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472015"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
 Пространство имен: microsoft.graph
 
-Обновление [приложения](../resources/teamsapp.md) , опубликованного ранее в каталоге приложений Microsoft Teams. Чтобы обновить приложение, свойству **distributionMethod** для приложения необходимо присвоить значение `organization` .
+Обновление [приложения,](../resources/teamsapp.md) ранее опубликованного в каталоге приложений Microsoft Teams. Чтобы обновить приложение, необходимо задать свойство **distributionMethod** для `organization` приложения.
 
-Этот API-интерфейс специально обновляет приложение, опубликованное в каталоге приложений вашей организации (Каталог приложений клиента).
+Этот API специально обновляет приложение, опубликованное в каталоге приложений организации (каталоге приложений клиента).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "49607163"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированное (рабочая или учебная учетная запись)     | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
@@ -40,18 +40,24 @@ ms.locfileid: "49607163"
 POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```
 
+## <a name="query-parameters"></a>Параметры запроса
+
+|Свойство|Тип|Описание|
+|----|----|----|
+|requiresReview| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
-| Content-Type  | Application/ZIP. Обязательно. |
+| Content-Type  | application/zip. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса включите полезные данные манифеста ZIP для Teams. Дополнительные сведения см. [в статье Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package)
+В теле запроса включите полезной нагрузкой манифест Teams zip. Дополнительные сведения см. [в материале Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
 
->**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./appcatalogs-list-teamsapps.md) , для ссылки на приложение, которое вы хотите обновить. Не используйте идентификатор из манифеста пакета приложения ZIP.
+>**Примечание:** Используйте ID, возвращенный из вызова опубликованных приложений [Списка,](./appcatalogs-list-teamsapps.md) для ссылки на приложение, которое необходимо обновить. Не используйте ID из манифеста пакета почтовых приложений.
 
 ## <a name="response"></a>Отклик
 
@@ -59,43 +65,53 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Пример 1: обновление приложения, опубликованного ранее в каталоге приложений Microsoft Teams
+### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Пример 1. Обновление приложения, ранее опубликованного в каталоге приложений Microsoft Teams
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
+Content-type: application/zip
+Content-length: 244
+
+[Zip file containing a Teams app package]
+```
+
+Дополнительные сведения о почтовом файле приложения Teams см. в [материале Create app package.](/microsoftteams/platform/concepts/apps/apps-package)
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-a-new-version-of-an-existing-app-for-admin-review-prior-to-publication-in-the-current-tenant-catalog"></a>Пример 2. Обновление новой версии существующего приложения для проверки администратора до публикации в текущем каталоге клиента
+
+#### <a name="request"></a>Запрос
 
 <!-- markdownlint-disable MD034 -->
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
 }-->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
 Content-type: application/zip
 Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsapp-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-teamsapp-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код ответа и пару `201 Created` ключей и значений: `publishingState` в `submitted` тексте ответа. *См.* [раздел TeamsAppdefinition](../resources/teamsappdefinition.md).
 
 <!-- {
   "blockType": "response",
@@ -104,5 +120,25 @@ Content-length: 244
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions/MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appDefinition",
+    "@odata.etag": "158749010",
+    "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+    "teamsAppId": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
+    "displayName": "Test app",
+    "version": "1.0.11",
+    "azureADAppId": "a651cc7d-ec54-4fb2-9d0e-2c58dc830b0b",
+    "requiredResourceSpecificApplicationPermissions":[
+         "ChannelMessage.Read.Group",
+         "Channel.Create.Group",
+         "Tab.ReadWrite.Group",
+         "Member.Read.Group"
+    ],
+    "publishingState": "submitted",
+    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
+}
 ```

@@ -1,18 +1,18 @@
 ---
 title: Создание клиентов
-description: Создает объект Customer в Dynamics 365 Business Central.
+description: Создает объект клиента в Центре бизнеса Dynamics 365.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3eb9717f980120e4acb7d9e3c192a95cc2e2872b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e2426fdba7b41019e71cd7e4161d1d6fd2330433
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008360"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473394"
 ---
 # <a name="create-customers"></a>Создание клиентов
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008360"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект Customer в Dynamics 365 Business Central.
+Создание объекта клиента в Центре бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "48008360"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 POST /financials/companies/{id}/customers
 ```
 
@@ -45,19 +45,19 @@ POST /financials/companies/{id}/customers
 |Авторизация  |Bearer {токен}. Обязательный.|
 |Content-Type   |application/json         |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта **Customers** в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем JSON-представление объекта **клиентов.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **Customers** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект ```201 Created``` клиента в тексте ответа. 
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/customers
 Content-type: application/json
 
@@ -97,7 +97,7 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

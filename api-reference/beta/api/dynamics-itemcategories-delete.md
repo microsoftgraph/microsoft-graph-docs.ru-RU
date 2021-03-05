@@ -1,5 +1,5 @@
 ---
-title: Удаление Итемкатегориес
+title: Удаление itemCategories
 description: Удаляет категорию элементов в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,20 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f5739ea8e4109346c961c175804632c586db28b4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 664b4f7d87ab34a2ff14a0e1c2ee65cde4473e90
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981249"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472946"
 ---
-# <a name="delete-itemcategories"></a>Удаление Итемкатегориес
+# <a name="delete-itemcategories"></a>Удаление itemCategories
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление Итемкатегори из Dynamics 365 Business Central.
+Удаление элементаCategory из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981249"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,9 +43,9 @@ DELETE /financials/companies/{id}/itemCategories/{id}
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **итемкатегориес**, **итемкатегориес** не будет обновлен. |
+|If-Match       |Обязательно. Если заголовка этого запроса включена и предоставленный eTag не соответствует текущему тегу в **itemCategories,** **itemCategories** не будет обновляться. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -57,7 +57,7 @@ DELETE /financials/companies/{id}/itemCategories/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

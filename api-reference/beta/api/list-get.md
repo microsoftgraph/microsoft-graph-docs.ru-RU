@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Получение метаданных списка
-description: Возвращает метаданные для списка.
+description: Возвращаем метаданные для списка.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1cce486364a0b630cf79f20a7a63aba7c6592f57
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6225e85c751e47cd6c0e499eba2aff4e892fb3f0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969764"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472911"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 
@@ -18,7 +18,7 @@ ms.locfileid: "48969764"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает метаданные для [списка][].
+Возвращение метаданных для [списка][].
 
 [списка]: ../resources/list.md
 
@@ -78,7 +78,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -128,7 +128,7 @@ GET /sites/{site-id}/lists/{list-title}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -178,7 +178,7 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -231,8 +231,8 @@ Content-type: application/json
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
-В приведенном ниже примере показано, как получить метаданные для списка, содержащего три столбца: Name, Quantity и category.
-Столбцы [управляемых метаданных](/sharepoint/managed-metadata) ```Category``` , такие как возвращаемые значения, в качестве идентификатора термина и имени термина.
+В следующем примере показано, как получить метаданные для списка, который содержит три столбца: Name, Quantity и Category.
+[Управляемые столбцы метаданных,](/sharepoint/managed-metadata) такие как значения возврата в виде термина ```Category``` ID и пары имен терминов.
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
@@ -241,7 +241,7 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

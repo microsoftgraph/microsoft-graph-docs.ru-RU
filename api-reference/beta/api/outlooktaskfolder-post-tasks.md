@@ -1,18 +1,18 @@
 ---
 title: Создание объекта outlookTask
-description: Создание задачи Outlook в указанной папке задач.
+description: Создайте задачу Outlook в указанной папке задач.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dceaffdbf5cea3166b20b98dca06c71fc456bb98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7278347dce74138b6eb38281f32dc7b968a9aacb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979751"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472456"
 ---
-# <a name="create-outlooktask-deprecated"></a>Создание outlookTask (устаревшее)
+# <a name="create-outlooktask-deprecated"></a>Создание объекта outlookTask (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,9 +21,9 @@ ms.locfileid: "47979751"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Создание задачи Outlook в указанной папке задач.
+Создайте задачу Outlook в указанной папке задач.
 
-Метод POST всегда игнорирует часть времени **startDateTime** и **дуедатетиме** в теле запроса и предполагает, что время будет всегда в полночь в заданном часовом поясе.
+Метод POST всегда игнорирует временную часть **startDateTime** и **dueDateTime** в теле запроса и предполагает время, когда всегда будет полночь в указанном часовом поясе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON [объекта OutlookTask.](../resources/outlooktask.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект OutlookTask](../resources/outlooktask.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -63,7 +63,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
   "name": "create_outlooktask_from_outlooktaskfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
+POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
 Content-length: 376
 
@@ -79,11 +79,11 @@ Content-length: 376
   }
 }
 ```
-В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
+В теле запроса поставляем представление JSON [объекта OutlookTask.](../resources/outlooktask.md)
 ##### <a name="response"></a>Отклик
-Метод POST игнорирует часть времени в теле запроса и принимает время в полночь всегда в заданном часовом поясе (PST). Затем по умолчанию метод POST преобразует и отображает все свойства, связанные с датой, в формате UTC в ответе.
+Метод POST игнорирует время в теле запроса и предполагает время, когда всегда будет полночь в указанном часовом поясе (PST). Затем метод POST по умолчанию преобразует и отображает все связанные с датой свойства в UTC в ответе.
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

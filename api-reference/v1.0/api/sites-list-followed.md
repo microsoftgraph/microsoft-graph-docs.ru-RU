@@ -5,18 +5,18 @@ title: Перечисление отслеживаемых сайтов
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: d52b91fa9b24394f92169a74c46d12278c779784
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4520d428511601ad2fa17c4d993a6ab373566eb0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038084"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473681"
 ---
 # <a name="list-followed-sites"></a>Перечисление отслеживаемых сайтов
 
 Пространство имен: microsoft.graph
 
-Перечислите [сайты](../resources/site.md) , за которыми подписан пользователь.
+Список [сайтов,](../resources/site.md) за которыми последовала подпись пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,19 +30,19 @@ ms.locfileid: "48038084"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Этот метод доступен только в OneDrive для бизнеса.
+Этот метод доступен только через OneDrive для бизнеса.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-Получение списка сайтов, за которыми следует целевой пользователь, в зависимости от его идентификатора.
+Получите список сайтов, за которыми следует целевой пользователь, на основе его ID.
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-**Примечание:** Чтобы получить доступ к списку отслеживаемых сайтов другого пользователя, необходимы разрешения приложения.
+**Примечание:** Чтобы получить доступ к списку последующих сайтов другого целевого пользователя, необходимы разрешения приложений.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
@@ -59,7 +59,7 @@ GET /users/{user-id}/followedSites
 
 ## <a name="response"></a>Отклик
 
-Этот метод возвращает коллекцию ресурсов [сайта](../resources/site.md) , которые подписаны пользователем.
+Этот метод возвращает коллекцию ресурсов [сайтов,](../resources/site.md) которые следует пользователю.
 Если сайты не найдены, возвращается пустая коллекция.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,7 @@ GET /me/followedSites
 ### <a name="response"></a>Отклик
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

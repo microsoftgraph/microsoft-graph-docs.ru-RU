@@ -1,16 +1,16 @@
 ---
 title: Управление устройствами в Microsoft Intune
-description: Ресурсы по управлению устройствами в Microsoft Intune
+description: Ресурсы управления устройствами в Microsoft Intune
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: f8535c9553bfc6bdcf353b9341237e5d7ba27b7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 80c643d4d1c75c27df35a85a576f93838dd03554
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041598"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472344"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -20,10 +20,6 @@ ms.locfileid: "48041598"
 
 - [Состояние действия](intune-devices-actionstate.md)
 - [Сертификат push-уведомлений Apple](intune-devices-applepushnotificationcertificate.md)
-- [Субъект аудита](intune-auditing-auditactor.md)
-- [Событие аудита](intune-auditing-auditevent.md)
-- [Свойство аудита](intune-auditing-auditproperty.md)
-- [Ресурс аудита](intune-auditing-auditresource.md)
 - [Состояние соответствия требованиям](intune-devices-compliancestate.md)
 - [Функции с поддержкой клиента Configuration Manager](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Удаление пользователя из результата действия над общим устройством Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)

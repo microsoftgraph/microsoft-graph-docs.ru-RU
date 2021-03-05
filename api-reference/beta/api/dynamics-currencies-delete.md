@@ -1,18 +1,18 @@
 ---
 title: Удаление валют
-description: Удаляет объект Currency в Dynamics 365 Business Central.
+description: Удаляет объект валюты в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 495800dbb9308971ef03172cc25602a15cffc103
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9f6c729dc97d523952454978afc056c05c354c5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981543"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473156"
 ---
 # <a name="delete-currencies"></a>Удаление валют
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981543"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта Currency из Dynamics 365 Business Central.
+Удаление объекта валюты из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981543"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,10 +44,10 @@ DELETE /financials/companies/{id}/currencies/{id}
 |Заголовок|Значение|
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **валютах**, то **валюты** не будут
- обновленный. |
+|If-Match       |Обязательно. При включении этого загона запроса и предоставленного eTag не  совпадает с текущим тегом в валютах, валюты не будут
+ обновлено. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -59,7 +59,7 @@ DELETE /financials/companies/{id}/currencies/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

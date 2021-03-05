@@ -6,12 +6,12 @@ title: Создание списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2399fad301cf857a699d3f018f771e1ce7370d54
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b92c29934fe7d01f4aaef712c231db7f7eac6336
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982281"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472204"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -128,7 +128,7 @@ Content-type: application/json
 **Примечание.** Ответ усечен для наглядности.
 При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[list]: ../resources/list.md
+[списке]: ../resources/list.md
 [site]: ../resources/site.md
 
 <!--

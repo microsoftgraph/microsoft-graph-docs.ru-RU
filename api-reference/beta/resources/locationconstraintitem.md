@@ -2,15 +2,15 @@
 title: Тип ресурсов locationConstraintItem
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 58c05dadf30399ef704980b3bbbf24ac74330f6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 00aa2852744904a57fe3e90303cf562346c478a3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472055"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 
@@ -22,7 +22,7 @@ ms.locfileid: "48058102"
 
 Тип, производный от [location](location.md).
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -57,7 +57,7 @@ ms.locfileid: "48058102"
 | locationEmailAddress | String | Необязательный адрес электронной почты для расположения. |
 | locationType | locationType | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
 | locationUri | String | Необязательный URI, представляющий местоположение. |
-| ресолвеаваилабилити | Boolean | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user-findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
+| resolveAvailability | Boolean | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user-findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
 | uniqueId | String | Только для внутреннего использования.|
 | uniqueIdType | String | Только для внутреннего использования. |
 

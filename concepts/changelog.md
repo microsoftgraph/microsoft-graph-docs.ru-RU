@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9653153d8dc7dd2ae9c13f027191c9cfe7da620c
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 9579298e3433d84b2193458181276d4467b1ee54
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292842"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434260"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,19 @@ ms.locfileid: "50292842"
 Сводную информацию о значении этих изменений API, а также о последних инструментах, компонентах, руководствах и учебных пособиях см. в разделе [Что нового в Microsoft Graph](whats-new-overview.md).
 
 ## <a name="february-2021"></a>Февраль 2021 г.
+
+
+### <a name="cloud-communications"></a>Облачные коммуникации
+| **Тип изменения** | **Версия**   | **Описание**                                                                                              |
+| :-------------- | :------------ | :---------------------------------------                                                                     |
+| Дополнение        | Бета          | Добавлен параметр **participantCapacity** для операции [answer](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлен тип ресурса [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлен тип ресурса [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлен тип ресурса [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлен тип ресурса [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлен тип ресурса [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлен тип ресурса [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta).|
+
 
 ### <a name="tasks-and-plans"></a>Задачи и планы
 
@@ -173,7 +186,7 @@ ms.locfileid: "50292842"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета | Добавлено необязательное свойство **notificationChannelUrl** в ресурс [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). | 
+| Дополнение | Бета | Добавлено необязательное свойство **notificationChannelUrl** в ресурс [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). |
 | Дополнение | Бета | Добавлено необязательное свойство **addedStudentAction** в ресурс [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). |
 | Дополнение | Бета | Добавлен тип перечисления **educationAddedStudentAction**. |
 
@@ -204,6 +217,10 @@ ms.locfileid: "50292842"
 | Дополнение | Бета | Добавлены методы для перечисления и создания назначений атрибутов пользователей для ресурса [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Дополнение | Бета | Добавлены методы для перечисления и создания назначений атрибутов пользователей для ресурса [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Дополнение | 1.0 | Добавлен тип ресурса [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true). |
+| Дополнение | Бета | Добавлено свойство **includeDevices** для ресурса [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
+| Дополнение | Бета | Добавлено свойство **excludeDevices** для ресурса [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
+| Изменение | Бета | Прекращена поддержка свойства **includeDeviceStates** для ресурса [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
+| Изменение | Бета | Прекращена поддержка свойства **excludeDeviceStates** для ресурса [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
 | Дополнение | Бета | Добавлен тип ресурса [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta). |
 | Дополнение | Бета | Добавлен тип ресурса [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta). |
 | Дополнение | Бета | Добавлен тип ресурсов [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta). |
@@ -409,9 +426,9 @@ ms.locfileid: "50292842"
 | Изменение | Бета | Прекращена поддержка свойства **feedDirections** в ресурсе [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true). |
 | Изменение | Бета | Добавлено свойство **details** для ресурса [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). |
 | Изменение | Бета | Прекращена поддержка свойства **processingStateReasons** в ресурсе [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). |
-| Изменение | Бета | Переименованы свойства в ресурсе [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |  
+| Изменение | Бета | Переименованы свойства в ресурсе [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |
 | Изменение | Бета | Добавлено свойство **details** для ресурса [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true). |
-| Изменение | Бета | Переименованы свойства в ресурсе [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+| Изменение | Бета | Переименованы свойства в ресурсе [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 
@@ -675,7 +692,7 @@ ms.locfileid: "50292842"
 | Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). Это свойство заменено свойством **includeResourceData**. |
 | Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](change-notifications-delivery.md). |
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -950,7 +967,7 @@ ms.locfileid: "50292842"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлены ресурсы [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection) и [resourceData](/graph/api/resources/resourcedata) для API [change notification](/graph/api/concepts/webhooks). |
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
@@ -1666,7 +1683,7 @@ ms.locfileid: "50292842"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 
 Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
 
@@ -3186,7 +3203,7 @@ ms.locfileid: "50292842"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение | бета | Изменен объект [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta&preserve-view=true).|
-| Дополнение | бета | Добавлен объект [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [List](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | бета | Добавлен объект [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Перечисление](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | бета | Добавлено [Update](/graph/api/privilegedrolesettings-update?view=graph-rest-beta&preserve-view=true) для [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta&preserve-view=true)|
 | Удаление |бета| Удалена [самостоятельная активация назначения ролей](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta&preserve-view=true)|
 
@@ -3631,12 +3648,12 @@ ms.locfileid: "50292842"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена сущность [privilegedAccess](/graph/api/resources/privilegedaccess?view=graph-rest-beta&preserve-view=true).|
-| Дополнение | Бета | Добавлен объект [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия: <br> [List](/graph/api/governanceresource-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceresource-get?view=graph-rest-beta&preserve-view=true)<br>|
+| Дополнение | Бета | Добавлен объект [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия: <br> [Список](/graph/api/governanceresource-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceresource-get?view=graph-rest-beta&preserve-view=true)<br>|
 | Дополнение | Бета | Добавлена сущность [governanceSubject](/graph/api/resources/governancesubject?view=graph-rest-beta&preserve-view=true).|
-| Дополнение | Бета | Добавлена сущность [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [List](/graph/api/governanceroledefinition-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroledefinition-get?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | Бета | Добавлена сущность [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governanceroledefinition-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroledefinition-get?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | Бета | Добавлена сущность [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governanceroleassignment-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroleassignment-get?view=graph-rest-beta&preserve-view=true) <br> [Экспорт](/graph/api/governanceroleassignment-export?view=graph-rest-beta&preserve-view=true) |
-| Дополнение | Бета | Добавлена сущность [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [перечисление](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true); <br> [получение](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Отмена](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Обновление](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
-| Дополнение | Бета | Добавлена сущность [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | Бета | Добавлена сущность [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Перечисление](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Отмена](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Обновление](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
+| Дополнение | Бета | Добавлена сущность [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true), а также следующие методы и действия:<br> [Список](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [Получение](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true) <br> [Обновление](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
 | Дополнение | Бета | Добавлены следующие сложные типы: <br> [governancePermission](/graph/api/resources/governancepermission?view=graph-rest-beta&preserve-view=true) <br> [governanceRoleAssignmentRequestStatus](/graph/api/resources/governanceroleassignmentrequeststatus?view=graph-rest-beta&preserve-view=true) <br> [governanceRuleSetting](/graph/api/resources/governancerulesetting?view=graph-rest-beta&preserve-view=true) <br> [governanceSchedule](/graph/api/resources/governanceschedule?view=graph-rest-beta&preserve-view=true)|
 
 ### <a name="security"></a>Безопасность

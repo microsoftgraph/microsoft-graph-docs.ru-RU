@@ -1,18 +1,18 @@
 ---
 title: Создание элементов
-description: Создает объект item в Dynamics 365 Business Central.
+description: Создает объект элемента в Центре бизнеса Dynamics 365.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 25c56b0c2a65454d93b900706cb54977e912069f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27c56da8501ec8617228754327c8c2ad35f2f653
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981690"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473296"
 ---
 # <a name="create-items"></a>Создание элементов
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981690"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание элемента в Dynamics 365 Business Central для использования в счетах, квотах и т. д.
+Создайте элемент в Dynamics 365 Business Central для использования в счетах, кавычках и т. д.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "47981690"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 POST /financials/companies/{id}/items
 ```
 
@@ -45,18 +45,18 @@ POST /financials/companies/{id}/items
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type |application/json         |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта **Items** в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляют представление JSON объекта **элементов.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **Items** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и ```201 Created``` объект **элементов** в тексте отклика.
 
 ## <a name="example"></a>Пример
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/items
 Content-type: application/json
 
@@ -83,14 +83,14 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
   "id": "id-value",
   "number": "1896-S",
-  "displayName": "ATHENS Desk",
+  "displayName": "ATHENS Desk",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
 ```

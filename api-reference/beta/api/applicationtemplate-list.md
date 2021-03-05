@@ -1,24 +1,24 @@
 ---
-title: Список applicationTemplates
+title: List applicationTemplates
 description: Получение списка объектов applicationtemplate.
 localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3041982a4c26de4c29bf55ca672692c4dfee548f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebd1b178ad1a6ea0e178ab582439ace433951ffb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128955"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471539"
 ---
-# <a name="list-applicationtemplates"></a>Список applicationTemplates
+# <a name="list-applicationtemplates"></a>List applicationTemplates
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [applicationTemplate](../resources/applicationtemplate.md) из коллекции приложений Azure AD.
+Получение списка объектов [applicationTemplate](../resources/applicationtemplate.md) из галереи приложений Azure AD.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "50128955"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Нет. |
 
-Дополнительные разрешения не требуются для вызова этого API, если приложение имеет действительный маркер доступа для вызова Microsoft Graph.
+Дополнительные разрешения не требуются для вызова этого API, если приложение имеет допустимый маркер доступа для вызова Microsoft Graph.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,8 +44,8 @@ GET /applicationTemplates
 
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. 
 
-- Этот параметр можно `$filter` использовать ограниченно. Фильтровать можно только **по displayName** или **категориям.** Пример:  `$filter=contains(displayName, 'salesf')` или `$filter=categories/any(c:contains(c, 'myCategory'))`.
-- Вы можете использовать `$orderby` `$top,` параметры запроса и их `$skip` параметры в любом запросе GET.
+- Параметр можно `$filter` использовать ограниченным способом. Фильтровать можно только **по displayName** или **категориям.** Пример:  `$filter=contains(displayName, 'salesf')` или `$filter=categories/any(c:contains(c, 'myCategory'))`.
+- Параметры `$orderby` запроса и `$top,` `$skip` запроса можно использовать в любом запросе GET.
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -61,7 +61,7 @@ GET /applicationTemplates
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [applicationTemplate](../resources/applicationtemplate.md) в тексте отклика.
+В случае успешного применения этот метод возвращает код отклика и коллекцию `200 OK` [объектов applicationTemplate](../resources/applicationtemplate.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,10 +99,9 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> [!NOTE]
-> Показанный здесь объект отклика может быть сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -1,5 +1,5 @@
 ---
-title: Работа с API Dynamics 365 Business Central в Microsoft Graph
+title: Работа с центральным API Dynamics 365 в Microsoft Graph
 description: Документация по API для интеграции с Microsoft Graph
 services: project-madeira
 documentationcenter: ''
@@ -7,33 +7,33 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: conceptualPageType
-ms.openlocfilehash: cb4cc183df82ebd743aa424592ff6c1c36e062e3
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b1fdc91d884c4c0869b97f2068d005407158d6a5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402559"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473590"
 ---
-# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Работа с API Dynamics 365 Business Central в Microsoft Graph
+# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Работа с центральным API Dynamics 365 в Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете использовать Microsoft Graph для подключения и интеграции веб-службы или решения SaaS с Microsoft Dynamics 365 Business Central. С помощью Microsoft Graph вы можете создавать приложения, которые обеспечивают доступ к данным и тесно интегрируются с Microsoft Dynamics 365 Business Central.
+Вы можете использовать Microsoft Graph для подключения и интеграции веб-службы или решения SaaS с Microsoft Dynamics 365 Business Central. С помощью Microsoft Graph можно создавать приложения, которые получают авторизованный доступ к данным Microsoft Dynamics 365 Business Central и интегрируются с ними без проблем.
 
 ## <a name="authorization"></a>Авторизация
-Используйте конечную точку Azure AD версии 2.0 для проверки подлинности в Dynamics 365 Business Central API. Для всех API требуется `Authorization: Bearer {access-token}` заголовок запроса. Дополнительные сведения о проверке подлинности приведены [в разделе получение маркеров доступа для вызова Microsoft Graph](/graph/auth/).
+Используйте конечную точку Azure AD v2.0 для проверки подлинности API Dynamics 365 Business Central. Все API требуют `Authorization: Bearer {access-token}` загона запроса. Дополнительные сведения о авторизации см. в записи [Get access tokens to call Microsoft Graph.](/graph/auth/)
 
-## <a name="common-dynamics-365-business-central-scenarios"></a>Распространенные сценарии Dynamics 365 Business Central
-API Dynamics 365 Business Central позволяет считывать и изменять бизнес-данные через приложения, которые подключены и интегрируются через одну конечную точку. Используйте API, например, для получения доступа к сведениям о [клиентах](../resources/dynamics-customer.md) и [поставщиках](../resources/dynamics-vendor.md) или [просмотра просроченных платежей](../resources/dynamics-agedaccountspayable.md).
+## <a name="common-dynamics-365-business-central-scenarios"></a>Сценарии Common Dynamics 365 Business Central
+Центр API Dynamics 365 позволяет читать и изменять бизнес-данные с помощью приложений, подключенных и интегрированных через одну конечную точку. Используйте API, чтобы, например, [](../resources/dynamics-customer.md) получить [](../resources/dynamics-vendor.md) доступ к сведениям о клиентах и поставщиках или [просмотреть просроченные платежи.](../resources/dynamics-agedaccountspayable.md)
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-API Dynamics 365 Business Central может открыть новые способы взаимодействия с пользователями. Дополнительные сведения см. в следующих источниках.
+Центр API Dynamics 365 может открыть новые способы для работы с пользователями. Дополнительные сведения см. в следующих источниках.
 
-+ [Dynamics 365 Business Central Overview](/graph/dynamics-business-central-concept-overview)
-+ Попробуйте использовать [проводник Graph](https://developer.microsoft.com/graph/graph-explorer).
++ [Обзор центра бизнеса Dynamics 365](/graph/dynamics-business-central-concept-overview)
++ Попробуйте [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 <!--
 |For Resource Type |See                                                 |
@@ -65,7 +65,6 @@ API Dynamics 365 Business Central может открыть новые спос�
 |shipmentMethods resource type|[shipmentMethods](../resources/dynamics-shipmentmethods.md)|
 |taxGroups resource type|[taxGroups](../resources/dynamics-taxgroups.md)|
 |taxArea resource type|[taxAreas](..resources/dynamics-taxarea.md)|
-|trial balance resource type|[trialBalance](../resources/dynamics-trialbalance.md)|
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->

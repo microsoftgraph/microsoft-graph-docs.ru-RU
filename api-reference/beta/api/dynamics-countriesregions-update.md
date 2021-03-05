@@ -1,26 +1,26 @@
 ---
-title: Обновление Каунтриесрегионс
-description: Обновляет объект стран и регионов в Dynamics 365 Business Central.
+title: Обновление countriesRegions
+description: Обновляет объект страны и регионы в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: a04b7b0cf5f0f23f82c95a074c03962ef7327779
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1425ac005b214167fe63323a63eaaa40d2c9d92
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008391"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473611"
 ---
-# <a name="update-countriesregions"></a>Обновление Каунтриесрегионс
+# <a name="update-countriesregions"></a>Обновление countriesRegions
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта Country/Region для Dynamics 365 Business Central.
+Обновление свойств объекта страны или региона для Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "48008391"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 PATCH /financials/companies/{id}/countriesRegions/{id}
 ```
 
@@ -44,13 +44,13 @@ PATCH /financials/companies/{id}/countriesRegions/{id}
 |------|-----|
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json|
-|If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **каунтриесрегионс**, **каунтриесрегионс** не будет обновлен. |
+|If-Match      |Обязательно. Если этот заглавный запрос включен и предоставленный eTag не соответствует текущему тегу в **countriesRegions,** **страныRegions** не будут обновляться. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект **каунтриесрегионс** в тексте отклика.
+В случае успеха этот метод возвращает код ответа и обновленный `200 OK` **объект countriesRegions** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -58,7 +58,7 @@ PATCH /financials/companies/{id}/countriesRegions/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 Content-type: application/json
 
@@ -73,7 +73,7 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

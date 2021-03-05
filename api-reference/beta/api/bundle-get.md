@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
-title: Получение пакета
-description: Получение пакета элементов driveitem
+title: Получить пакет
+description: Получить пакет driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f9deca81a99d36e91247ddd042fc875d0ffc1cad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8a3d74c5f4b746d6232bc39a9be7e82c5119d497
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960312"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472750"
 ---
-# <a name="get-bundle"></a>Получение пакета
+# <a name="get-bundle"></a>Получить пакет
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение метаданных для [пакета][] на основе уникального идентификатора пакета.
+Извлечение метаданных для [пакета][] на основе уникального ID пакета.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,8 +37,8 @@ GET /drive/bundles/{bundle-id}
 GET /drive/items/{bundle-id}
 ```
 
-Так как пакеты являются элементами, вы можете использовать коллекцию **Items** для возвращения метаданных пакета.
-Кроме того, вы можете **использовать коллекцию** Collections, чтобы убедиться, что вы получаете пакет в ответе.
+Так как пакеты являются элементами, можно использовать **коллекцию** элементов для возврата метаданных о пакете.
+Вы также можете использовать коллекцию **пакетов** в качестве удобства, чтобы убедиться, что вы получаете пакет в ответ.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -48,8 +47,8 @@ GET /drive/items/{bundle-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный. |
-| if-none-match | тегом. Необязательное свойство. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
+| Авторизация | Носитель \{токен\}. Обязательный. |
+| if-none-match | eTag. Необязательно. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -57,13 +56,13 @@ GET /drive/items/{bundle-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает объект [driveItem][driveItem] resource with the [bundle][bundle] в тексте отклика.
+В случае успешной работы этот метод возвращает [driveItem][driveItem] resource with the [bundle][bundle] в теле отклика.
 
-Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.
+Дополнительные сведения о возвращении ошибок см. в статье [Отклики с ошибками][error-response].
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-bundle"></a>Пример 1: получение пакета
+### <a name="example-1-get-a-bundle"></a>Пример 1. Получить пакет
 
 #### <a name="request"></a>Запрос
 
@@ -97,7 +96,7 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -119,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
-### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>Пример 2: получение пакета и его дочерних элементов в едином вызове
+### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>Пример 2. Получить пакет и его детей в одном вызове
 
-Можно использовать [`expand`](/graph/query-parameters) параметр строки запроса, чтобы включить дочерние элементы пакета в тот же вызов, что и получение метаданных пакета.
+Параметр строки запроса можно использовать для включения детей пакета в тот же вызов, что и для запроса метаданных [`expand`](/graph/query-parameters) пакета.
 
 #### <a name="request"></a>Запрос
 
@@ -155,14 +154,14 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 
 #### <a name="response"></a>Отклик
 
-Этот вызов возвратит метаданные пакета и список дочерних элементов набора.
-Если у пакета нет дочерних элементов, он возвратит пустую коллекцию.
+Этот вызов возвращает метаданные пакета и список детей пакета.
+Если в пакете нет детей, он возвращает пустую коллекцию.
 
-Если количество дочерних элементов в пакете превышает размер страницы по умолчанию, свойство **Children@odata. nextLink** будет возвращено с URL-адресом, который можно использовать для запроса следующей страницы дочерних элементов в пакете.
+Если количество детей в пакете больше размера страницы по умолчанию, **свойство children@odata.nextLink** возвращается с URL-адресом, который можно использовать для запроса следующей страницы детей в пакете.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -177,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
 
 [bundle]: ../resources/bundle.md

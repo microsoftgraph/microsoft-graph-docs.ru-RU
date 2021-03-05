@@ -3,14 +3,14 @@ title: Тип ресурсов timeSlot
 description: Период времени.
 localization_priority: Normal
 doc_type: resourcePageType
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
-ms.openlocfilehash: 0631f618e644d9502d670ac988253f491fd2eeb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f531add7d16fc5d1922a40e7341894b7fedd6535
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075429"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472057"
 ---
 # <a name="timeslot-resource-type"></a>Тип ресурсов timeSlot
 
@@ -42,8 +42,8 @@ ms.locfileid: "48075429"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается период. |
-|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, в течение которого заканчивается срок.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, который начинается. |
+|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, который заканчивается.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,26 +1,26 @@
 ---
-title: Получение Женералледжерентриес
-description: Возвращает объект записи главной книги в Dynamics 365 Business Central.
+title: Get generalLedgerEntries
+description: Получает общий объект записи книги в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4aa22cf2a0634d9c54d6c9e12573730714be3ca4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3862417cd75e2a6adb55c1c9660b8b1c2ddabc4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473051"
 ---
-# <a name="get-generalledgerentries"></a>Получение Женералледжерентриес
+# <a name="get-generalledgerentries"></a>Get generalLedgerEntries
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта записи главной книги для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта записи общей книги для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981321"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 
@@ -43,20 +43,20 @@ GET /financials/companies/{id}/generalLedgerEntries/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок       |Значение             |
 |-------------|------------------|
-|Authorization|Носителя. Обязательно. |
+|Авторизация|Носителер. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **женералледжерентриес** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` **объект generalLedgerEntries** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntries/{id}
 ```
 

@@ -1,18 +1,18 @@
 ---
 title: Создание валют
-description: Создает объект Currency в Dynamics 365 Business Central.
+description: Создает объект валюты в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: eb78fef62cb2d17e622c11cbd575905b60656f79
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0b374c85cded81b4547c576537f79036fa8427f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981739"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473408"
 ---
 # <a name="create-currencies"></a>Создание валют
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981739"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект Currency в Dynamics 365 Business Central.
+Создание объекта валюты в Центре бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "47981739"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 POST /financials/companies/{id}/currencies
 ```
 
@@ -45,19 +45,19 @@ POST /financials/companies/{id}/currencies
 |Авторизация  |Bearer {токен}. Обязательный.|
 |Content-Type   |application/json         |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта **денежных единиц** в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем объект JSON для **объекта валют.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **валюты** в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и ```201 Created``` **объект валюты** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/currencies
 Content-type: application/json
 
@@ -76,7 +76,7 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

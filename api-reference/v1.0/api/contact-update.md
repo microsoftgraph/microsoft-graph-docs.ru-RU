@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 15242ab1be72d7b85b1974d9fd200a59dd4db7f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b7643f411533dd554934d522e988d6dfcb49eb4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057670"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472771"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -40,7 +40,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
 Объект [contact](../resources/contact.md) из дочерней папки в папке [contactFolder](../resources/mailfolder.md). Приведенный ниже пример показывает один уровень вложенности, но для хранения контакта допускается несколько.
 ```http
-PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов

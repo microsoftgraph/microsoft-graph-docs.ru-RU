@@ -1,16 +1,16 @@
 ---
 title: 'applicationTemplate: instantiate'
-description: Использование этого API для создания нового шаблона applicationTemplate
+description: Используйте этот API для создания нового приложенияTemplate
 localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 22ac7a5cb179f5675e6222d6886b54211e4d1f93
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bc94c8abe1de8d45324fc6ad65e44e7c1329c3f5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128953"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471535"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instantiate
 
@@ -18,7 +18,7 @@ ms.locfileid: "50128953"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте экземпляр приложения из коллекции приложений Azure AD в каталог.
+Добавьте экземпляр приложения из галереи приложений Azure AD в каталог.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,11 +50,11 @@ POST /applicationTemplates/{id}/instantiate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Пользовательское имя приложения|
+|displayName|String|Настраиваемая фамилия приложения|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый объект `201 OK` [applicationServicePrincipal](../resources/applicationserviceprincipal.md) в тексте отклика.
+В случае успешного применения этот метод возвращает код отклика и `201 OK` новый [объект applicationServicePrincipal](../resources/applicationserviceprincipal.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -63,9 +63,8 @@ POST /applicationTemplates/{id}/instantiate
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
-> [!NOTE] 
-> Этот API можно использовать для запуска [нестандартных приложений.](/azure/active-directory/manage-apps/add-non-gallery-app) Используйте следующий ИД для **applicationTemplate:** `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+ 
+> Этот API можно использовать для мгновенного обмена приложениями, не в [галерее.](/azure/active-directory/manage-apps/add-non-gallery-app) Используйте следующий ID для **applicationTemplate:** `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -102,10 +101,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> [!NOTE]
-> Показанный здесь объект ответа может быть сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",

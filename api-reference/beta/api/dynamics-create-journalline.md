@@ -1,5 +1,5 @@
 ---
-title: Создание Жаурналлинес
+title: Создание journalLines
 description: Создает строку журнала в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,14 +7,14 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cb188423bbbdcc90a71442f6a0e80ba70dcbc42d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38feb577f11f482fe00c5d44d883e1b0995ff562
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981669"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473268"
 ---
-# <a name="create-journallines"></a>Создание Жаурналлинес
+# <a name="create-journallines"></a>Создание journalLines
 
 Пространство имен: microsoft.graph
 
@@ -28,12 +28,12 @@ ms.locfileid: "47981669"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
-```
+```http
 POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
@@ -46,19 +46,19 @@ POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json         |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта **жаурналлинес** в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта **journalLines.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **жаурналлинес** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и ```201 Created``` **объект journalLines** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines
 Content-type: application/json
 
@@ -76,7 +76,7 @@ Content-type: application/json
 ```
 **Отклик**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

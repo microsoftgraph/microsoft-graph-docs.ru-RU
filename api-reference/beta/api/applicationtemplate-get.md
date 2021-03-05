@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 07f6f68d3150031963b1beae89d690a95bf503e1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4ae3d9f451785ef44f36df75667968bc271065dc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128970"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471595"
 ---
 # <a name="get-applicationtemplate"></a>Получение applicationTemplate
 
@@ -30,7 +30,7 @@ ms.locfileid: "50128970"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Нет. |
 
-Дополнительные разрешения не требуются для вызова этого API, если приложение имеет действительный маркер доступа для вызова Microsoft Graph.
+Дополнительные разрешения не требуются для вызова этого API, если приложение имеет допустимый маркер доступа для вызова Microsoft Graph.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-С помощью параметра запроса можно указать только `$select` свойства, необходимые для лучшей производительности. Свойство **id** возвращается всегда. 
+Параметр запроса можно указать только свойства, необходимые `$select` для лучшей производительности. Свойство **id** возвращается всегда. 
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -58,7 +58,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [requested applicationTemplate](../resources/applicationtemplate.md) в тексте отклика.
+В случае успешного применения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [applicationTemplate](../resources/applicationtemplate.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -96,10 +96,9 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> [!NOTE]
-> Показанный здесь объект отклика может быть сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",

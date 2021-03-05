@@ -1,26 +1,26 @@
 ---
-title: Получение Ажедаккаунтспайабле
-description: Возвращает устаревший объект кредиторской задолженности в Dynamics 365 Business Central.
+title: Get agedAccountsPayable
+description: Получает объект для оплаты по возрастным счетам в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3bb688455e394b632402be6d71ba29be0eb9ba86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e39778aa0e61fe9c70ec29733577a32a366e5b67
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981767"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473429"
 ---
-# <a name="get-agedaccountspayable"></a>Получение Ажедаккаунтспайабле
+# <a name="get-agedaccountspayable"></a>Get agedAccountsPayable
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей для устаревших отчетов об оплате учетных записей для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта отчетов по возрасту для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,11 @@ ms.locfileid: "47981767"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 GET /financials/companies/{id}/agedAccountsPayable
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -43,18 +43,18 @@ GET /financials/companies/{id}/agedAccountsPayable
 |--------------|--------------------------|
 |Авторизация |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **ажедаккаунтспайабле** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` **объект agedAccountsPayable** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 

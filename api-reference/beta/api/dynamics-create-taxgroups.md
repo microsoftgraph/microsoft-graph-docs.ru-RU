@@ -1,26 +1,26 @@
 ---
-title: Создание Таксграупс
-description: Создает объект налоговой группы в Dynamics 365 Business Central.
+title: Создание taxGroups
+description: Создает объект группы налогообложения в Центре бизнеса Dynamics 365.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: fff1e6b1376669b8d5f226b14f2b3f647aec39d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30fc1054dc3a9851c8dc18ffb7de05224d08285c
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981599"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473222"
 ---
-# <a name="create-taxgroups"></a>Создание Таксграупс
+# <a name="create-taxgroups"></a>Создание taxGroups
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект налоговой группы в Dynamics 365 Business Central.
+Создание объекта налоговых групп в Центре бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981599"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,19 +46,19 @@ POST /financials/companies/{id}/taxGroups
 |Авторизация  |Bearer {токен}. Обязательный. |
 |Content-Type  |application/json   |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта **таксграупс** в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В органе запроса поставляем представление JSON объекта **taxGroups.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **таксграупс** в тексте отклика.
+В случае успеха этот метод возвращает код ответа и ```201 Created``` **объект taxGroups** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups
 Content-type: application/json
 
@@ -75,7 +75,7 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

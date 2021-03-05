@@ -1,18 +1,18 @@
 ---
-title: 'outlookTask: завершено'
-description: 'Выполните задачу Outlook, которая устанавливает для свойства **комплетеддатетиме** текущую дату. '
+title: 'outlookTask: полный'
+description: 'Выполните задачу Outlook, которая задает **свойство completedDateTime** к текущей дате, '
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba271ddb112769187a4944dbee0df324fe8ea1f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edf7f24efc2a3c208a1aed4c4a03e41ad596c4c4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017411"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471847"
 ---
-# <a name="outlooktask-complete-deprecated"></a>outlookTask: Complete (устарело)
+# <a name="outlooktask-complete-deprecated"></a>outlookTask: полный (неподготовленный)
 
 Пространство имен: microsoft.graph
 
@@ -21,13 +21,13 @@ ms.locfileid: "48017411"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Выполните задачу Outlook, которая устанавливает для свойства **комплетеддатетиме** текущую дату, а свойству **Status** — значение `completed` .
+Выполните задачу Outlook, которая задает **свойство completedDateTime** к текущей дате и свойство **состояния** `completed` .
 
-Если вы завершаете задачу в повторяющейся серии, в ответе коллекция задач будет содержать завершенную задачу в ряду и следующую задачу в ряду.
+Если вы завершаете задачу в повторяющейся серии, в ответе коллекция задач будет содержать завершенную задачу в серии и следующую задачу в серии.
 
-Свойство **комплетеддатетиме** представляет дату завершения задачи. По умолчанию для части времени **комплетеддатетиме** по умолчанию задается полночь UTC.
+Свойство **completedDateTime** представляет дату завершения задачи. Временная часть **completedDateTime** по умолчанию задана до полуночи UTC.
 
-По умолчанию эта операция (и операции задания POST, GET и PATCH) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+По умолчанию эта операция (и задачи POST, GET и PATCH) возвращает свойства, связанные с датами в UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,11 +61,11 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект OutlookTask](../resources/outlooktask.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере указанная задача отмечается как завершенная. В нем задается тихоокеанское стандартное время (PST) в `Prefer: outlook.timezone` заголовке.
+В следующем примере указанная задача будет завершена. Он указывает тихоокеанское стандартное время (PST) в `Prefer: outlook.timezone` заговорке.
 
 ### <a name="request"></a>Запрос
 
@@ -76,13 +76,13 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
+POST https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Свойства **комплетеддатетиме** и другие связанные с датами свойства в отклике выражаются в PST-файле.
+Ниже приведен пример отклика. Свойства **completedDateTime** и другие свойства, связанные с датами в ответе, выражены в PST.
 
 > **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

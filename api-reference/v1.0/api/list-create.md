@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Создание списка на сайте.
 doc_type: apiPageType
-ms.openlocfilehash: fab24561aa8e0202b5033c9f7b31ed46ba05ea05
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f8abd6311f1b9fa98ed4a1a99cb36ac3b1a77812
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238822"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471697"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -25,8 +25,8 @@ ms.locfileid: "50238822"
 
 |            Тип разрешения             | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированные (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Sites.ReadWrite.All                         |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -100,7 +100,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -126,7 +126,7 @@ Content-type: application/json
 **Примечание.** Ответ усечен для наглядности.
 При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[list]: ../resources/list.md
+[списке]: ../resources/list.md
 [site]: ../resources/site.md
 
 <!-- {

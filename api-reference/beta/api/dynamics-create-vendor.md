@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 24e0137e4d4979133ac03f98a0b58d599b018d9e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0074567f6e7d197aaf4948838bc1137735ce768f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436437"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473198"
 ---
 # <a name="create-vendors"></a>Создание поставщиков
 
@@ -29,7 +29,7 @@ ms.locfileid: "50436437"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Financials.ReadWrite.All|
+|Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 ```http
@@ -45,7 +45,7 @@ POST /financials/companies/{id}/vendors
 |Авторизация  |Bearer {токен}. Обязательный. |
 |Content-Type  |application/json   |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта **поставщиков.**
 
 ## <a name="response"></a>Отклик
@@ -57,7 +57,7 @@ POST /financials/companies/{id}/vendors
 
 Вот пример запроса.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/vendors
 Content-type: application/json
 
@@ -88,7 +88,7 @@ Content-type: application/json
 
 > **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

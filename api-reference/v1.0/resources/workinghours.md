@@ -2,15 +2,15 @@
 title: Тип ресурса workingHours
 description: Представляет дни недели и часы работы пользователя в определенном часовом поясе.
 localization_priority: Normal
-author: angelgolfer-ms
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 63460f95e419a6e1e39a1c52fbf17d05ef9f5a5c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c6ebab4fe505e93bc9a4980aeb1e7999aa5a78f0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015017"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473443"
 ---
 # <a name="workinghours-resource-type"></a>Тип ресурса workingHours
 
@@ -28,7 +28,7 @@ ms.locfileid: "48015017"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| daysOfWeek | Коллекция dayOfWeek | Дни недели, в которые работает пользователь. |
+| daysOfWeek | коллекция dayOfWeek | Дни недели, в которые работает пользователь. |
 | startTime | Edm.TimeOfDay | Время дня, в которое пользователь начинает работать. |
 | endTime | Edm.TimeOfDay | Время дня, в которое пользователь заканчивает работать. |
 | timeZone | [timeZoneBase](timezonebase.md) | Часовой пояс, к которому относится рабочее время. |

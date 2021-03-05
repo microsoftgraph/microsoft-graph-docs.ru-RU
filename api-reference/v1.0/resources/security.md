@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса "безопасность"
-description: Ресурс Security — точка входа для объектной модели безопасности. Он возвращает одноэлементный ресурс безопасности. Он не содержит пригодных для использования свойств.
+title: тип ресурсов безопасности
+description: Ресурс безопасности является точкой входа для объектной модели безопасности. Он возвращает ресурс безопасности singleton. Он не содержит никаких полезных свойств.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0c120bccd3defa4cb56966c8cee26119472b3876
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 345e3e81b86fe42d16f4110450120c9f225c22dd
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984007"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473667"
 ---
-# <a name="security-resource-type"></a>Тип ресурса "безопасность"
+# <a name="security-resource-type"></a>тип ресурсов безопасности
 
 Пространство имен: microsoft.graph
 
-Ресурс Security — точка входа для объектной модели безопасности. Он возвращает одноэлементный ресурс безопасности. Он не содержит пригодных для использования свойств.
+Ресурс безопасности является точкой входа для объектной модели безопасности. Он возвращает ресурс безопасности singleton. Он не содержит никаких полезных свойств.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление оповещений](../api/alert-list.md) | Коллекция [alert](alert.md) | Получение коллекции объектов Alert. |
-| [получение оповещений](../api/alert-get.md) | Коллекция [alert](alert.md) | Получение объекта Alert. |
-| [Обновление оповещений](../api/alert-update.md) | Коллекция [alert](alert.md) | Получение объекта Alert. |
+| [Перечисление оповещений](../api/alert-list.md) | Коллекция [alert](alert.md) | Получите коллекцию объектов оповещения. |
+| [получения оповещений](../api/alert-get.md) | Коллекция [alert](alert.md) | Получите объект оповещений. |
+| [Обновление оповещений](../api/alert-update.md) | Коллекция [alert](alert.md) | Получите объект оповещений. |
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -36,7 +36,7 @@ ms.locfileid: "47984007"
 
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+Ниже показано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/security
   "truncated": true,
   "@odata.type": "microsoft.graph.security"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

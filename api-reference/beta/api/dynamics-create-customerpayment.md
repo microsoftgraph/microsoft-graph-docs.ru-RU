@@ -1,25 +1,25 @@
 ---
-title: Создание Кустомерпайментс
-description: Создает объект платежа клиента в Dynamics 365 Business Central.
+title: Создание customerPayments
+description: Создает объект клиентской оплаты в Dynamics 365 Business Central.
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c5005a3fb97b44a173042d76088fb6fee0947a1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6647852d3d48d7f63aab6f2f63140ca474c7043b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473352"
 ---
-# <a name="create-customerpayments"></a>Создание Кустомерпайментс
+# <a name="create-customerpayments"></a>Создание customerPayments
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает объект платежа клиента в Dynamics 365 Business Central.
+Создает объект клиентской оплаты в Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,11 +27,11 @@ ms.locfileid: "48008353"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Financials.ReadWrite.All|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
@@ -45,19 +45,19 @@ POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{i
 |Content-Type  |application/json         |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта **кустомерпайментс** в формате JSON.
+В теле запроса поставляем представление JSON объекта **customerPayments.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **кустомерпайментс** в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и объект ```201 Created``` **customerPayments** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 **Запрос**
 
-Ниже приведен пример запроса.
+Вот пример запроса.
 
-```json
-POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournal/{id}/customerPayments
+```http
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments
 Content-type: application/json
 
 {
@@ -77,7 +77,7 @@ Content-type: application/json
 ```
 **Отклик**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

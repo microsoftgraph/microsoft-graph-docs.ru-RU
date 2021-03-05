@@ -1,16 +1,16 @@
 ---
 title: Список контактов
-description: Получение контактов в почтовом ящике пользователя.
+description: Получите контакты в почтовом ящике пользователя.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14a01366288c4b6107942b32ff136a5f14e8425f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cea6bfeebc6143648163c110b5c6ee1dbe48eb2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471882"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -18,7 +18,7 @@ ms.locfileid: "48951522"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение контактов в почтовом ящике пользователя.
+Получите контакты в почтовом ящике пользователя.
 
 Существует два сценария, с помощью которых приложение может получить контакты из папки контактов другого пользователя:
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/contacts
 GET /me/contactfolders/{Id}/contacts
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -63,7 +63,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-Обратите внимание, что вы можете использовать оператор `$filter`, `any`, и `eq` только для дочернего свойства **address** для экземпляров коллекции **emailAddresses**. Т.е. вы не можете выполнять фильтрацию с помощью дочернего свойства **name** или другого дочернего свойства экземпляра **emailAddresses** , как и не можете применять другие операторы или функции с `filter`, такие как `ne`, `le` и `startswith()`.
+Обратите внимание, что вы можете использовать оператор `$filter`, `any`, и `eq` только для дочернего свойства **address** для экземпляров коллекции **emailAddresses**. Т.е. вы не можете выполнять фильтрацию с помощью дочернего свойства **name** или другого дочернего свойства экземпляра **emailAddresses**, как и не можете применять другие операторы или функции с `filter`, такие как `ne`, `le` и `startswith()`.
 
 Общие сведения о параметре запроса `$filter` см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -77,10 +77,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Contact](../resources/contact.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию контактных объектов в [](../resources/contact.md) тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере возвращаются свойства **DisplayName** и **EmailAddresses** для контактов вошедшего пользователя.
+В следующем примере отображаются **свойства displayName** и **emailAddresses** контактов подписанного пользователя.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
