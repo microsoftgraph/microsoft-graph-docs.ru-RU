@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 691668647e8ea8f96a2379c2bdd32248ba3b92e0
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: faa75042ce43683cddb2b12cc308938eee0b7435
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522379"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50465184"
 ---
 ```java
 
@@ -28,7 +28,7 @@ templateParameters.value = "Task 12322";
 templateParametersList.add(templateParameters);
 
 graphClient.users("{userId}").teamwork()
-    .sendActivityNotification(topic,activityType,null,previewText,templateParametersList)
+    .sendActivityNotification(topic,activityType,null,previewText,templateParametersList,null)
     .buildRequest()
     .post();
 
