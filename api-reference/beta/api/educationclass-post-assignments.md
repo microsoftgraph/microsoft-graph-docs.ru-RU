@@ -1,55 +1,55 @@
 ---
 title: Создание educationAssignment
-description: 'Создает новое назначение. Только преподаватели в классе могут создавать задания. Задания начинаются в состоянии черновика, что означает, что учащиеся не будут видеть назначение, пока не будет вызвана публикация.  '
+description: 'Создает новое назначение. Только преподаватели в классе могут создать назначение. Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до тех пор, пока не будет вызвана публикация.  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2f123980cbecc9d1abeaffd48e5ec16af84480a1
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 399f97fc7e93657f7c3eefb039f5a410121e7a65
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753685"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470235"
 ---
-# <a name="create-educationassignment"></a><span data-ttu-id="89ad2-105">Создание educationAssignment</span><span class="sxs-lookup"><span data-stu-id="89ad2-105">Create educationAssignment</span></span>
+# <a name="create-educationassignment"></a><span data-ttu-id="c9af9-105">Создание educationAssignment</span><span class="sxs-lookup"><span data-stu-id="c9af9-105">Create educationAssignment</span></span>
 
-<span data-ttu-id="89ad2-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89ad2-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c9af9-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c9af9-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="89ad2-107">Создает новое назначение.</span><span class="sxs-lookup"><span data-stu-id="89ad2-107">Creates a new assignment.</span></span> <span data-ttu-id="89ad2-108">Только преподаватели в классе могут создавать задания.</span><span class="sxs-lookup"><span data-stu-id="89ad2-108">Only teachers in a class can create an assignment.</span></span> <span data-ttu-id="89ad2-109">Задания начинаются в состоянии черновика, что означает, что учащиеся не будут видеть назначение, пока не будет вызвана публикация.</span><span class="sxs-lookup"><span data-stu-id="89ad2-109">Assignments start in the Draft state, which means that students will not see the assignment until publish is called.</span></span>  
+<span data-ttu-id="c9af9-107">Создает новое назначение.</span><span class="sxs-lookup"><span data-stu-id="c9af9-107">Creates a new assignment.</span></span> <span data-ttu-id="c9af9-108">Только преподаватели в классе могут создать назначение.</span><span class="sxs-lookup"><span data-stu-id="c9af9-108">Only teachers in a class can create an assignment.</span></span> <span data-ttu-id="c9af9-109">Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до тех пор, пока не будет вызвана публикация.</span><span class="sxs-lookup"><span data-stu-id="c9af9-109">Assignments start in the Draft state, which means that students will not see the assignment until publish is called.</span></span>  
 
-## <a name="permissions"></a><span data-ttu-id="89ad2-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="89ad2-110">Permissions</span></span>
-<span data-ttu-id="89ad2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89ad2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c9af9-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c9af9-110">Permissions</span></span>
+<span data-ttu-id="c9af9-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9af9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="89ad2-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="89ad2-113">Permission type</span></span>      | <span data-ttu-id="89ad2-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="89ad2-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c9af9-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c9af9-113">Permission type</span></span>      | <span data-ttu-id="c9af9-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c9af9-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="89ad2-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="89ad2-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="89ad2-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="89ad2-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="89ad2-117">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="89ad2-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="89ad2-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="89ad2-118">Not supported.</span></span>  |
-|<span data-ttu-id="89ad2-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="89ad2-119">Application</span></span> | <span data-ttu-id="89ad2-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="89ad2-120">Not supported.</span></span> | 
+|<span data-ttu-id="c9af9-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c9af9-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="c9af9-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9af9-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="c9af9-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c9af9-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c9af9-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c9af9-118">Not supported.</span></span>  |
+|<span data-ttu-id="c9af9-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c9af9-119">Application</span></span> | <span data-ttu-id="c9af9-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c9af9-120">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="89ad2-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="89ad2-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c9af9-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c9af9-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments
 ```
-## <a name="request-headers"></a><span data-ttu-id="89ad2-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="89ad2-122">Request headers</span></span>
-| <span data-ttu-id="89ad2-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="89ad2-123">Header</span></span>       | <span data-ttu-id="89ad2-124">Значение</span><span class="sxs-lookup"><span data-stu-id="89ad2-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c9af9-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c9af9-122">Request headers</span></span>
+| <span data-ttu-id="c9af9-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c9af9-123">Header</span></span>       | <span data-ttu-id="c9af9-124">Значение</span><span class="sxs-lookup"><span data-stu-id="c9af9-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="89ad2-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="89ad2-125">Authorization</span></span>  | <span data-ttu-id="89ad2-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="89ad2-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="89ad2-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="89ad2-128">Content-Type</span></span>  | <span data-ttu-id="89ad2-129">application/json</span><span class="sxs-lookup"><span data-stu-id="89ad2-129">application/json</span></span>  |
+| <span data-ttu-id="c9af9-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c9af9-125">Authorization</span></span>  | <span data-ttu-id="c9af9-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c9af9-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c9af9-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c9af9-128">Content-Type</span></span>  | <span data-ttu-id="c9af9-129">application/json</span><span class="sxs-lookup"><span data-stu-id="c9af9-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="89ad2-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="89ad2-130">Request body</span></span>
-<span data-ttu-id="89ad2-131">В теле запроса укажу представление объекта [educationAssignment](../resources/educationassignment.md) в JSON.</span><span class="sxs-lookup"><span data-stu-id="89ad2-131">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c9af9-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c9af9-130">Request body</span></span>
+<span data-ttu-id="c9af9-131">В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)</span><span class="sxs-lookup"><span data-stu-id="c9af9-131">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="89ad2-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="89ad2-132">Response</span></span>
-<span data-ttu-id="89ad2-133">В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [educationAssignment](../resources/educationassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="89ad2-133">If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c9af9-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9af9-132">Response</span></span>
+<span data-ttu-id="c9af9-133">В случае успешного выполнения этот метод возвращает код отклика и `201 Created` объект [educationAssignment](../resources/educationassignment.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="c9af9-133">If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="89ad2-134">Пример</span><span class="sxs-lookup"><span data-stu-id="89ad2-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="89ad2-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="89ad2-135">Request</span></span>
-<span data-ttu-id="89ad2-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="89ad2-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c9af9-134">Пример</span><span class="sxs-lookup"><span data-stu-id="c9af9-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c9af9-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9af9-135">Request</span></span>
+<span data-ttu-id="c9af9-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c9af9-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationassignment_from_educationclass"
@@ -77,15 +77,15 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-<span data-ttu-id="89ad2-137">В теле запроса укажу представление объекта [educationAssignment](../resources/educationassignment.md) в JSON.</span><span class="sxs-lookup"><span data-stu-id="89ad2-137">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
+<span data-ttu-id="c9af9-137">В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)</span><span class="sxs-lookup"><span data-stu-id="c9af9-137">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="89ad2-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="89ad2-138">Response</span></span>
-<span data-ttu-id="89ad2-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="89ad2-139">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c9af9-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9af9-138">Response</span></span>
+<span data-ttu-id="c9af9-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c9af9-139">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="89ad2-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="89ad2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="c9af9-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c9af9-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment"
 } -->
