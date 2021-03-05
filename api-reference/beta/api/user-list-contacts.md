@@ -1,43 +1,43 @@
 ---
 title: Список контактов
-description: Получение контактов в почтовом ящике пользователя.
+description: Получите контакты в почтовом ящике пользователя.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14a01366288c4b6107942b32ff136a5f14e8425f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cea6bfeebc6143648163c110b5c6ee1dbe48eb2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471882"
 ---
-# <a name="list-contacts"></a><span data-ttu-id="0ea19-103">Список контактов</span><span class="sxs-lookup"><span data-stu-id="0ea19-103">List contacts</span></span>
+# <a name="list-contacts"></a><span data-ttu-id="efda6-103">Список контактов</span><span class="sxs-lookup"><span data-stu-id="efda6-103">List contacts</span></span>
 
-<span data-ttu-id="0ea19-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0ea19-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="efda6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="efda6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0ea19-105">Получение контактов в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="0ea19-105">Get contacts in the user's mailbox.</span></span>
+<span data-ttu-id="efda6-105">Получите контакты в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="efda6-105">Get contacts in the user's mailbox.</span></span>
 
-<span data-ttu-id="0ea19-106">Существует два сценария, с помощью которых приложение может получить контакты из папки контактов другого пользователя:</span><span class="sxs-lookup"><span data-stu-id="0ea19-106">There are two scenarios where an app can get contacts in another user's contact folder:</span></span>
+<span data-ttu-id="efda6-106">Существует два сценария, с помощью которых приложение может получить контакты из папки контактов другого пользователя:</span><span class="sxs-lookup"><span data-stu-id="efda6-106">There are two scenarios where an app can get contacts in another user's contact folder:</span></span>
 
-* <span data-ttu-id="0ea19-107">У приложения есть разрешения для приложений; или</span><span class="sxs-lookup"><span data-stu-id="0ea19-107">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="0ea19-108">У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой контактов или предоставил ему делегированный доступ.</span><span class="sxs-lookup"><span data-stu-id="0ea19-108">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="0ea19-109">См. [подробные сведения и пример](/graph/outlook-get-shared-contacts-folders).</span><span class="sxs-lookup"><span data-stu-id="0ea19-109">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
+* <span data-ttu-id="efda6-107">У приложения есть разрешения для приложений; или</span><span class="sxs-lookup"><span data-stu-id="efda6-107">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="efda6-108">У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой контактов или предоставил ему делегированный доступ.</span><span class="sxs-lookup"><span data-stu-id="efda6-108">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="efda6-109">См. [подробные сведения и пример](/graph/outlook-get-shared-contacts-folders).</span><span class="sxs-lookup"><span data-stu-id="efda6-109">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="0ea19-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0ea19-110">Permissions</span></span>
-<span data-ttu-id="0ea19-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ea19-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="efda6-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="efda6-110">Permissions</span></span>
+<span data-ttu-id="efda6-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="efda6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0ea19-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0ea19-113">Permission type</span></span>      | <span data-ttu-id="0ea19-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0ea19-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="efda6-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="efda6-113">Permission type</span></span>      | <span data-ttu-id="efda6-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="efda6-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0ea19-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0ea19-115">Delegated (work or school account)</span></span> | <span data-ttu-id="0ea19-116">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ea19-116">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="0ea19-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0ea19-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ea19-118">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ea19-118">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="0ea19-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0ea19-119">Application</span></span> | <span data-ttu-id="0ea19-120">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ea19-120">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="efda6-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="efda6-115">Delegated (work or school account)</span></span> | <span data-ttu-id="efda6-116">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="efda6-116">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="efda6-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="efda6-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="efda6-118">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="efda6-118">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="efda6-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="efda6-119">Application</span></span> | <span data-ttu-id="efda6-120">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="efda6-120">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0ea19-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0ea19-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="efda6-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="efda6-121">HTTP request</span></span>
 
-<span data-ttu-id="0ea19-122">Для получения всех контактов в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="0ea19-122">To get all the contacts in a user's mailbox:</span></span>
+<span data-ttu-id="efda6-122">Для получения всех контактов в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="efda6-122">To get all the contacts in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -45,44 +45,44 @@ GET /me/contacts
 GET /users/{id | userPrincipalName}/contacts
 ```
 
-<span data-ttu-id="0ea19-123">Для получения контактов, которые хранятся в определенной папке в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="0ea19-123">To get contacts in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="efda6-123">Для получения контактов, которые хранятся в определенной папке в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="efda6-123">To get contacts in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{Id}/contacts
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0ea19-124">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="0ea19-124">Optional query parameters</span></span>
-<span data-ttu-id="0ea19-125">С помощью параметра запроса `$filter` можно фильтровать контакты на основе адресов электронной почты:</span><span class="sxs-lookup"><span data-stu-id="0ea19-125">You can use the `$filter` query parameter to filter contacts based on their email addresses:</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="efda6-124">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="efda6-124">Optional query parameters</span></span>
+<span data-ttu-id="efda6-125">С помощью параметра запроса `$filter` можно фильтровать контакты на основе адресов электронной почты:</span><span class="sxs-lookup"><span data-stu-id="efda6-125">You can use the `$filter` query parameter to filter contacts based on their email addresses:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-<span data-ttu-id="0ea19-126">Обратите внимание, что вы можете использовать оператор `$filter`, `any`, и `eq` только для дочернего свойства **address** для экземпляров коллекции **emailAddresses**.</span><span class="sxs-lookup"><span data-stu-id="0ea19-126">Note that you can use `$filter`, `any`, and the `eq` operator on only the **address** sub-property of instances in an **emailAddresses** collection.</span></span> <span data-ttu-id="0ea19-127">Т.е. вы не можете выполнять фильтрацию с помощью дочернего свойства **name** или другого дочернего свойства экземпляра **emailAddresses** , как и не можете применять другие операторы или функции с `filter`, такие как `ne`, `le` и `startswith()`.</span><span class="sxs-lookup"><span data-stu-id="0ea19-127">That is, you cannot filter on the **name** or any other sub-property of an instance of **emailAddresses** , nor can you apply any other operator or function with `filter`, such as `ne`, `le`, and `startswith()`.</span></span>
+<span data-ttu-id="efda6-126">Обратите внимание, что вы можете использовать оператор `$filter`, `any`, и `eq` только для дочернего свойства **address** для экземпляров коллекции **emailAddresses**.</span><span class="sxs-lookup"><span data-stu-id="efda6-126">Note that you can use `$filter`, `any`, and the `eq` operator on only the **address** sub-property of instances in an **emailAddresses** collection.</span></span> <span data-ttu-id="efda6-127">Т.е. вы не можете выполнять фильтрацию с помощью дочернего свойства **name** или другого дочернего свойства экземпляра **emailAddresses**, как и не можете применять другие операторы или функции с `filter`, такие как `ne`, `le` и `startswith()`.</span><span class="sxs-lookup"><span data-stu-id="efda6-127">That is, you cannot filter on the **name** or any other sub-property of an instance of **emailAddresses**, nor can you apply any other operator or function with `filter`, such as `ne`, `le`, and `startswith()`.</span></span>
 
-<span data-ttu-id="0ea19-128">Общие сведения о параметре запроса `$filter` см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="0ea19-128">For general information on the `$filter` query parameter, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="efda6-128">Общие сведения о параметре запроса `$filter` см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="efda6-128">For general information on the `$filter` query parameter, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0ea19-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0ea19-129">Request headers</span></span>
-| <span data-ttu-id="0ea19-130">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0ea19-130">Header</span></span>       | <span data-ttu-id="0ea19-131">Значение</span><span class="sxs-lookup"><span data-stu-id="0ea19-131">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="efda6-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="efda6-129">Request headers</span></span>
+| <span data-ttu-id="efda6-130">Заголовок</span><span class="sxs-lookup"><span data-stu-id="efda6-130">Header</span></span>       | <span data-ttu-id="efda6-131">Значение</span><span class="sxs-lookup"><span data-stu-id="efda6-131">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="0ea19-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0ea19-132">Authorization</span></span>  | <span data-ttu-id="0ea19-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0ea19-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="efda6-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="efda6-132">Authorization</span></span>  | <span data-ttu-id="efda6-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="efda6-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="0ea19-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0ea19-135">Request body</span></span>
-<span data-ttu-id="0ea19-136">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0ea19-136">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="efda6-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="efda6-135">Request body</span></span>
+<span data-ttu-id="efda6-136">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="efda6-136">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0ea19-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ea19-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="efda6-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="efda6-137">Response</span></span>
 
-<span data-ttu-id="0ea19-138">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Contact](../resources/contact.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0ea19-138">If successful, this method returns a `200 OK` response code and collection of [contact](../resources/contact.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="0ea19-139">Пример</span><span class="sxs-lookup"><span data-stu-id="0ea19-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0ea19-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ea19-140">Request</span></span>
-<span data-ttu-id="0ea19-141">В следующем примере возвращаются свойства **DisplayName** и **EmailAddresses** для контактов вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="0ea19-141">The following example gets the **displayName** and **emailAddresses** properties of the signed-in user's contacts.</span></span>
+<span data-ttu-id="efda6-138">В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию контактных объектов в [](../resources/contact.md) тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="efda6-138">If successful, this method returns a `200 OK` response code and collection of [contact](../resources/contact.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="efda6-139">Пример</span><span class="sxs-lookup"><span data-stu-id="efda6-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="efda6-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="efda6-140">Request</span></span>
+<span data-ttu-id="efda6-141">В следующем примере отображаются **свойства displayName** и **emailAddresses** контактов подписанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="efda6-141">The following example gets the **displayName** and **emailAddresses** properties of the signed-in user's contacts.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0ea19-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="0ea19-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="efda6-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="efda6-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_get_contacts"
@@ -90,19 +90,19 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddresses
 ```
-# <a name="c"></a>[<span data-ttu-id="0ea19-143">C#</span><span class="sxs-lookup"><span data-stu-id="0ea19-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="efda6-143">C#</span><span class="sxs-lookup"><span data-stu-id="efda6-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-contacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0ea19-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0ea19-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="efda6-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="efda6-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-contacts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0ea19-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0ea19-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="efda6-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="efda6-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-contacts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0ea19-146">Java</span><span class="sxs-lookup"><span data-stu-id="0ea19-146">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="efda6-146">Java</span><span class="sxs-lookup"><span data-stu-id="efda6-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-contacts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -110,8 +110,8 @@ GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddres
 
 
 
-##### <a name="response"></a><span data-ttu-id="0ea19-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ea19-147">Response</span></span>
-<span data-ttu-id="0ea19-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0ea19-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="efda6-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="efda6-147">Response</span></span>
+<span data-ttu-id="efda6-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="efda6-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
