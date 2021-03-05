@@ -1,50 +1,50 @@
 ---
 author: rahmit
-description: Получение коллекции объектов Ситепаже из страниц сайта [list] на сайте. Возвращаются все страницы сайта (с разбивкой на страницы).
+description: Получите коллекцию объектов sitePage со страниц сайта [список] на сайте. Возвращаются все страницы сайта (с pagination).
 ms.date: 03/15/2018
-title: Список страниц сайта
+title: Список страниц на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f3a77b7f6d70d79cc1f44635266144f9d8ceb2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c8559fdc469823b3218a8af93ccda0d10ec357b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044433"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475711"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="d6fcd-104">Перечисление страниц в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="d6fcd-104">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="bf80a-104">Список страниц в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="bf80a-104">List the pages in the site pages list of a site</span></span>
 
-<span data-ttu-id="d6fcd-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d6fcd-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bf80a-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bf80a-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d6fcd-106">Получение коллекции объектов [ситепаже][] из [списка][] страниц сайта на [сайте][]сайта.</span><span class="sxs-lookup"><span data-stu-id="d6fcd-106">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="d6fcd-107">Возвращаются все страницы сайта (с разбивкой на страницы).</span><span class="sxs-lookup"><span data-stu-id="d6fcd-107">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="bf80a-106">Получите коллекцию [объектов sitePage][] из списка страниц [сайта][] на [сайте.][]</span><span class="sxs-lookup"><span data-stu-id="bf80a-106">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="bf80a-107">Возвращаются все страницы сайта (с pagination).</span><span class="sxs-lookup"><span data-stu-id="bf80a-107">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="d6fcd-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d6fcd-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bf80a-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bf80a-111">Permissions</span></span>
 
-<span data-ttu-id="d6fcd-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d6fcd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bf80a-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bf80a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d6fcd-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d6fcd-114">Permission type</span></span>      | <span data-ttu-id="d6fcd-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d6fcd-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bf80a-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bf80a-114">Permission type</span></span>      | <span data-ttu-id="bf80a-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bf80a-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d6fcd-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d6fcd-116">Delegated (work or school account)</span></span> | <span data-ttu-id="d6fcd-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6fcd-117">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d6fcd-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d6fcd-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d6fcd-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d6fcd-119">Not supported.</span></span>    |
-|<span data-ttu-id="d6fcd-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d6fcd-120">Application</span></span> | <span data-ttu-id="d6fcd-121">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6fcd-121">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="bf80a-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bf80a-116">Delegated (work or school account)</span></span> | <span data-ttu-id="bf80a-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf80a-117">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bf80a-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bf80a-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf80a-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bf80a-119">Not supported.</span></span>    |
+|<span data-ttu-id="bf80a-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bf80a-120">Application</span></span> | <span data-ttu-id="bf80a-121">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf80a-121">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d6fcd-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d6fcd-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf80a-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bf80a-122">HTTP request</span></span>
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="d6fcd-123">Пример</span><span class="sxs-lookup"><span data-stu-id="d6fcd-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bf80a-123">Пример</span><span class="sxs-lookup"><span data-stu-id="bf80a-123">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d6fcd-124">Запрос</span><span class="sxs-lookup"><span data-stu-id="d6fcd-124">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="bf80a-124">Запрос</span><span class="sxs-lookup"><span data-stu-id="bf80a-124">Request</span></span>
 
 <!-- 
 { 
@@ -59,7 +59,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="d6fcd-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="d6fcd-125">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="bf80a-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="bf80a-125">Response</span></span>
 
 <!-- 
 { 
@@ -70,7 +70,7 @@ GET /sites/{site-id}/pages
 } 
 -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -114,37 +114,37 @@ Content-type: application/json
                 {
                     "type": "daf0b71c-6de8-4ef7-b511-faae7c388708",
                     "data": {
-                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
-                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
-                        "title": "Registration",
-                        "description": "...",
-                        "serverProcessedContent": {
-                            "htmlStrings": {},
-                            "searchablePlainTexts": {
-                                "title": ""
-                            },
-                            "imageSources": {},
-                            "links": {
-                                "baseUrl": "/teams/SPClientTest"
-                            },
-                            "componentDependencies": {
-                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
-                            }
-                        },
-                        "dataVersion": "2.1",
-                        "properties": {
-                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
-                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": {  },
-                            "templateId": 1,
-                            "maxItemsPerPage": 10,
-                            "hideWebPartWhenEmpty": false,
-                            "kqlQueryTemplate": "...",
-                            "displayMaps": {  },
-                            "sites": [],
-                            "layoutId": "Card",
-                            "dataProviderId": "Search"
-                        }
+                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
+                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
+                        "title": "Registration",
+                        "description": "...",
+                        "serverProcessedContent": {
+                            "htmlStrings": {},
+                            "searchablePlainTexts": {
+                                "title": ""
+                            },
+                            "imageSources": {},
+                            "links": {
+                                "baseUrl": "/teams/SPClientTest"
+                            },
+                            "componentDependencies": {
+                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
+                            }
+                        },
+                        "dataVersion": "2.1",
+                        "properties": {
+                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
+                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
+                            "query": {  },
+                            "templateId": 1,
+                            "maxItemsPerPage": 10,
+                            "hideWebPartWhenEmpty": false,
+                            "kqlQueryTemplate": "...",
+                            "displayMaps": {  },
+                            "sites": [],
+                            "layoutId": "Card",
+                            "dataProviderId": "Search"
+                        }
                     }
                 }
             ]

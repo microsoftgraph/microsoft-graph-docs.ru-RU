@@ -1,37 +1,37 @@
 ---
 author: rahmit
-description: Создайте новый Ситепаже в списке страниц сайта на сайте.
+description: Создайте новый sitePage в списке страниц сайта.
 ms.date: 05/07/2018
 title: Создание новой страницы на сайте SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1a326b83055cf25d3741976981fc499f0fdd8788
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044503"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475767"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="bce66-103">Создание страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="bce66-103">Create a page in the site pages list of a site</span></span>
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="a5229-103">Создание страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="a5229-103">Create a page in the site pages list of a site</span></span>
 
-<span data-ttu-id="bce66-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bce66-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a5229-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a5229-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bce66-105">Создайте новый [ситепаже][] в [списке][] страниц сайта на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="bce66-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="a5229-105">Создайте новый [sitePage][] в списке [][]страниц [сайта.][]</span><span class="sxs-lookup"><span data-stu-id="a5229-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bce66-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bce66-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a5229-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a5229-106">Permissions</span></span>
 
-<span data-ttu-id="bce66-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bce66-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a5229-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5229-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bce66-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bce66-109">Permission type</span></span>      | <span data-ttu-id="bce66-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bce66-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a5229-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a5229-109">Permission type</span></span>      | <span data-ttu-id="a5229-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a5229-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bce66-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bce66-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bce66-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bce66-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bce66-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bce66-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bce66-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bce66-114">Not supported.</span></span>    |
-|<span data-ttu-id="bce66-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bce66-115">Application</span></span> | <span data-ttu-id="bce66-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bce66-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a5229-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a5229-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a5229-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5229-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a5229-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a5229-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5229-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5229-114">Not supported.</span></span>    |
+|<span data-ttu-id="a5229-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a5229-115">Application</span></span> | <span data-ttu-id="a5229-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5229-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bce66-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bce66-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a5229-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a5229-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,19 +39,19 @@ ms.locfileid: "48044503"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a><span data-ttu-id="bce66-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bce66-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a5229-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a5229-118">Request body</span></span>
 
-<span data-ttu-id="bce66-119">В теле запроса добавьте представление ресурса [ситепаже][] , который требуется создать, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bce66-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
+<span data-ttu-id="a5229-119">В корпусе запроса поставляем представление JSON для создания [ресурса sitePage.][]</span><span class="sxs-lookup"><span data-stu-id="a5229-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bce66-120">Пример</span><span class="sxs-lookup"><span data-stu-id="bce66-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a5229-120">Пример</span><span class="sxs-lookup"><span data-stu-id="a5229-120">Example</span></span>
 
-<span data-ttu-id="bce66-121">В приведенном ниже примере показано, как создать новую страницу.</span><span class="sxs-lookup"><span data-stu-id="bce66-121">The following example shows how to create a new page.</span></span>
+<span data-ttu-id="a5229-121">В следующем примере показано, как создать новую страницу.</span><span class="sxs-lookup"><span data-stu-id="a5229-121">The following example shows how to create a new page.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="bce66-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="bce66-122">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a5229-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="a5229-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST /sites/{site-id}/pages
 Content-Type: application/json
 
@@ -103,24 +103,24 @@ Content-Type: application/json
     ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="bce66-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bce66-123">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a5229-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a5229-123">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="bce66-124">C#</span><span class="sxs-lookup"><span data-stu-id="bce66-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a5229-124">C#</span><span class="sxs-lookup"><span data-stu-id="a5229-124">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="bce66-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="bce66-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a5229-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="a5229-125">Response</span></span>
 
-<span data-ttu-id="bce66-126">В случае успешного выполнения этот метод возвращает объект [ситепаже][] в тексте отклика для созданной страницы.</span><span class="sxs-lookup"><span data-stu-id="bce66-126">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
+<span data-ttu-id="a5229-126">В случае успешной работы этот метод возвращает [страницу sitePage][] в теле ответа на созданную страницу.</span><span class="sxs-lookup"><span data-stu-id="a5229-126">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -197,8 +197,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="bce66-127">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="bce66-127">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="bce66-128">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="bce66-128">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="a5229-127">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="a5229-127">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="a5229-128">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="a5229-128">Default properties will be returned from the actual call.</span></span>
 
+[списке]: ../resources/list.md
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [site]: ../resources/site.md

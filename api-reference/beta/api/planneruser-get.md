@@ -1,66 +1,86 @@
 ---
 title: Получение объекта plannerUser
-description: 'Получение свойств и связей объекта plannerUser. Возвращаемые свойства включают в себя избранные планы и недавно просмотренные планы пользователя. '
+description: 'Получение свойств и связей объекта plannerUser. Возвращенные свойства включают любимые планы пользователя и недавно просматриваемые планы. '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 972ce36307cefbc528d3efed5367a93a79926fb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b2d797b62d5418dc3b07e700ca9805fdd3072db
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095732"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475452"
 ---
-# <a name="get-planneruser"></a><span data-ttu-id="aac02-104">Получение объекта plannerUser</span><span class="sxs-lookup"><span data-stu-id="aac02-104">Get plannerUser</span></span>
+# <a name="get-planneruser"></a><span data-ttu-id="7f0ec-104">Получение объекта plannerUser</span><span class="sxs-lookup"><span data-stu-id="7f0ec-104">Get plannerUser</span></span>
 
-<span data-ttu-id="aac02-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aac02-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7f0ec-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7f0ec-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="aac02-106">Получение свойств и связей объекта [plannerUser](../resources/planneruser.md) .</span><span class="sxs-lookup"><span data-stu-id="aac02-106">Retrieve the properties and relationships of a [plannerUser](../resources/planneruser.md) object.</span></span> <span data-ttu-id="aac02-107">Возвращаемые свойства включают в себя избранные планы и недавно просмотренные планы пользователя.</span><span class="sxs-lookup"><span data-stu-id="aac02-107">The returned properties include the user's favorite plans and recently viewed plans.</span></span> 
-## <a name="permissions"></a><span data-ttu-id="aac02-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aac02-108">Permissions</span></span>
-<span data-ttu-id="aac02-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aac02-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7f0ec-106">Извлечение свойств и связей объекта [plannerUser.](../resources/planneruser.md)</span><span class="sxs-lookup"><span data-stu-id="7f0ec-106">Retrieve the properties and relationships of a [plannerUser](../resources/planneruser.md) object.</span></span> <span data-ttu-id="7f0ec-107">Возвращенные свойства включают любимые планы пользователя и недавно просматриваемые планы.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-107">The returned properties include the user's favorite plans and recently viewed plans.</span></span> 
+## <a name="permissions"></a><span data-ttu-id="7f0ec-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7f0ec-108">Permissions</span></span>
+<span data-ttu-id="7f0ec-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7f0ec-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="aac02-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aac02-111">Permission type</span></span>      | <span data-ttu-id="aac02-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="aac02-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7f0ec-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7f0ec-111">Permission type</span></span>      | <span data-ttu-id="7f0ec-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7f0ec-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="aac02-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aac02-113">Delegated (work or school account)</span></span> | <span data-ttu-id="aac02-114">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="aac02-114">Group.Read.All</span></span>    |
-|<span data-ttu-id="aac02-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aac02-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aac02-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aac02-116">Not supported.</span></span>    |
-|<span data-ttu-id="aac02-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aac02-117">Application</span></span> | <span data-ttu-id="aac02-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aac02-118">Not supported.</span></span> |
+|<span data-ttu-id="7f0ec-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7f0ec-113">Delegated (work or school account)</span></span> | <span data-ttu-id="7f0ec-114">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="7f0ec-114">Group.Read.All</span></span>    |
+|<span data-ttu-id="7f0ec-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7f0ec-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f0ec-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-116">Not supported.</span></span>    |
+|<span data-ttu-id="7f0ec-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7f0ec-117">Application</span></span> | <span data-ttu-id="7f0ec-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="aac02-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aac02-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f0ec-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f0ec-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner
 GET /users/{id}/planner
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="aac02-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="aac02-120">Request headers</span></span>
-| <span data-ttu-id="aac02-121">Имя</span><span class="sxs-lookup"><span data-stu-id="aac02-121">Name</span></span>      |<span data-ttu-id="aac02-122">Описание</span><span class="sxs-lookup"><span data-stu-id="aac02-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7f0ec-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7f0ec-120">Request headers</span></span>
+| <span data-ttu-id="7f0ec-121">Имя</span><span class="sxs-lookup"><span data-stu-id="7f0ec-121">Name</span></span>      |<span data-ttu-id="7f0ec-122">Описание</span><span class="sxs-lookup"><span data-stu-id="7f0ec-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="aac02-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="aac02-123">Authorization</span></span>  | <span data-ttu-id="aac02-124">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="aac02-124">Bearer {code}.</span></span> <span data-ttu-id="aac02-125">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="aac02-125">Required.</span></span>|
+| <span data-ttu-id="7f0ec-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7f0ec-123">Authorization</span></span>  | <span data-ttu-id="7f0ec-124">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-124">Bearer {code}.</span></span> <span data-ttu-id="7f0ec-125">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-125">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="aac02-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="aac02-126">Request body</span></span>
-<span data-ttu-id="aac02-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="aac02-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="aac02-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="aac02-128">Response</span></span>
-<span data-ttu-id="aac02-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [plannerUser](../resources/planneruser.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="aac02-129">If successful, this method returns a `200 OK` response code and a [plannerUser](../resources/planneruser.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="aac02-130">Пример</span><span class="sxs-lookup"><span data-stu-id="aac02-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="aac02-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="aac02-131">Request</span></span>
-<span data-ttu-id="aac02-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="aac02-132">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7f0ec-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7f0ec-126">Request body</span></span>
+<span data-ttu-id="7f0ec-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="7f0ec-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f0ec-128">Response</span></span>
+<span data-ttu-id="7f0ec-129">В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [plannerUser](../resources/planneruser.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-129">If successful, this method returns a `200 OK` response code and a [plannerUser](../resources/planneruser.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7f0ec-130">Пример</span><span class="sxs-lookup"><span data-stu-id="7f0ec-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7f0ec-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="7f0ec-131">Request</span></span>
+<span data-ttu-id="7f0ec-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-132">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="7f0ec-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f0ec-133">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_planneruser"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner
 ```
-##### <a name="response"></a><span data-ttu-id="aac02-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="aac02-133">Response</span></span>
-<span data-ttu-id="aac02-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="aac02-134">The following is an example of the response.</span></span> 
+# <a name="c"></a>[<span data-ttu-id="7f0ec-134">C#</span><span class="sxs-lookup"><span data-stu-id="7f0ec-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-planneruser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="aac02-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="aac02-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="7f0ec-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f0ec-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-planneruser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="7f0ec-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f0ec-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-planneruser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7f0ec-137">Java</span><span class="sxs-lookup"><span data-stu-id="7f0ec-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-planneruser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="7f0ec-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f0ec-138">Response</span></span>
+<span data-ttu-id="7f0ec-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-139">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="7f0ec-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7f0ec-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerUser"
 } -->

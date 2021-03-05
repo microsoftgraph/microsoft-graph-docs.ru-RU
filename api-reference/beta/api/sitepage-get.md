@@ -1,81 +1,81 @@
 ---
 author: rahmit
-description: Возвращает метаданные для sitePage в списке страниц сайта.
+description: Возвращает метаданные для сайтаPage в списке страниц сайта.
 ms.date: 03/15/2018
 title: Получить страницу на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 61b8b40496daef16abf56d1d297b3dcb2dd92f91
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: c51354818d81cde7e408ea5407c655ce6d7913cf
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981146"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475746"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="14a97-103">Получить страницу в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="14a97-103">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="81d0d-103">Получить страницу в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="81d0d-103">Get a page in the site pages list of a site</span></span>
 
-<span data-ttu-id="14a97-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="14a97-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="81d0d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="81d0d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="14a97-105">Возвращает метаданные для [sitePage][] в списке [][] страниц [сайта.][]</span><span class="sxs-lookup"><span data-stu-id="14a97-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="81d0d-105">Возвращает метаданные для [sitePage][] в списке страниц [сайта][] [на сайте.][]</span><span class="sxs-lookup"><span data-stu-id="81d0d-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="14a97-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="14a97-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="81d0d-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="81d0d-109">Permissions</span></span>
 
-<span data-ttu-id="14a97-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14a97-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="81d0d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="81d0d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14a97-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="14a97-112">Permission type</span></span>      | <span data-ttu-id="14a97-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="14a97-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="81d0d-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="81d0d-112">Permission type</span></span>      | <span data-ttu-id="81d0d-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="81d0d-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14a97-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="14a97-114">Delegated (work or school account)</span></span> | <span data-ttu-id="14a97-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14a97-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="14a97-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="14a97-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14a97-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="14a97-117">Not supported.</span></span>    |
-|<span data-ttu-id="14a97-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="14a97-118">Application</span></span> | <span data-ttu-id="14a97-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14a97-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="81d0d-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="81d0d-114">Delegated (work or school account)</span></span> | <span data-ttu-id="81d0d-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="81d0d-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="81d0d-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="81d0d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="81d0d-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="81d0d-117">Not supported.</span></span>    |
+|<span data-ttu-id="81d0d-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="81d0d-118">Application</span></span> | <span data-ttu-id="81d0d-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="81d0d-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="14a97-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="14a97-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="81d0d-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="81d0d-120">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="14a97-121">Пример</span><span class="sxs-lookup"><span data-stu-id="14a97-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="81d0d-121">Пример</span><span class="sxs-lookup"><span data-stu-id="81d0d-121">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="14a97-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="14a97-122">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="81d0d-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="81d0d-122">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="14a97-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="14a97-123">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="81d0d-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="81d0d-123">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="14a97-124">C#</span><span class="sxs-lookup"><span data-stu-id="14a97-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="81d0d-124">C#</span><span class="sxs-lookup"><span data-stu-id="81d0d-124">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="14a97-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="14a97-125">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="81d0d-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="81d0d-125">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="14a97-126">Objective-C</span><span class="sxs-lookup"><span data-stu-id="14a97-126">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="81d0d-126">Objective-C</span><span class="sxs-lookup"><span data-stu-id="81d0d-126">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="14a97-127">Java</span><span class="sxs-lookup"><span data-stu-id="14a97-127">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="81d0d-127">Java</span><span class="sxs-lookup"><span data-stu-id="81d0d-127">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="14a97-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="14a97-128">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="81d0d-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="81d0d-128">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
