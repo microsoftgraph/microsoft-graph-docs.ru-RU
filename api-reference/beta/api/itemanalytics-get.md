@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: Получение Итеманалитикс о представлениях, которые были выполнены для этого ресурса.
+description: Получите itemAnalytics о представлениях, которые произошли в этом ресурсе.
 ms.date: 10/06/2017
 title: Получение аналитики
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: bb733e8c146d054d88a0b2d24c2f7f114c68522b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6366106097b4f6b9b43d8fe0eacddeaeab53826d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475837"
 ---
 # <a name="get-analytics"></a>Получение аналитики
 
@@ -19,11 +19,11 @@ ms.locfileid: "48975421"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение [итеманалитикс][] о представлениях, которые были выполнены для этого ресурса.
-Ресурс **итеманалитикс** — это удобный способ получения статистики действий `allTime` и `lastSevenDays` .
-Для настраиваемого диапазона или интервала времени используйте API [getActivitiesByInterval][] .
+Получите [itemAnalytics][] о представлениях, которые произошли в этом ресурсе.
+Ресурс **itemAnalytics** — это удобный способ получения статистики активности для `allTime` и `lastSevenDays` .
+Для настраиваемого диапазона времени или интервала используйте [API getActivitiesByInterval.][]
 
->**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
+>**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях.](/graph/deployments)
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -82,7 +82,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

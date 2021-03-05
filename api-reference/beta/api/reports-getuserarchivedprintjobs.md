@@ -1,29 +1,29 @@
 ---
-title: 'отчеты: Жетусерарчиведпринтжобс'
-description: Получение списка архивных заданий печати для определенного пользователя.
+title: 'отчеты: getUserArchivedPrintJobs'
+description: Получите список архивных заданий печати для конкретного пользователя.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dfd038b70c42396d1ce2a932ca20d0929acef90f
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 9ec8ecc5fb8453a8219660cd47486c762fbfebd6
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848235"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475284"
 ---
-# <a name="reports-getuserarchivedprintjobs"></a>отчеты: Жетусерарчиведпринтжобс
+# <a name="reports-getuserarchivedprintjobs"></a>отчеты: getUserArchivedPrintJobs
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка архивных заданий печати для определенного пользователя.
+Получите список архивных заданий печати для конкретного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -34,8 +34,8 @@ ms.locfileid: "48848235"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getUserArchivedPrintJobs
-GET /reports/getUserArchivedPrintJobs
+GET /print/reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
@@ -46,12 +46,12 @@ GET /reports/getUserArchivedPrintJobs
 
 | Параметр     | Тип                 | Обязательный? | Описание                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `userId`      | `Edm.String`         | Да       | Идентификатор пользователя, для которого возвращаются данные.                               |
-| `periodStart` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) периода времени, из которого требуется включить данные. |
-| `periodEnd`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) периода времени, из которого требуется включить данные.   |
+| `userId`      | `Edm.String`         | Да       | ID пользователя для возврата данных.                               |
+| `startDateTime` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) для периода времени с учетом данных. |
+| `endDateTime`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) для периода времени с учетом данных.   |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [арчиведпринтжоб](../resources/archivedprintjob.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -62,7 +62,7 @@ GET /reports/getUserArchivedPrintJobs
   "name": "reports-getuserarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId={id},periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>Отклик

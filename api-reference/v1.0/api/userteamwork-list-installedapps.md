@@ -5,18 +5,18 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 619b01917a74f0819abd340e9b3109ec518a8c12
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 50de6c02fdfcb13d5a07d6b01c0b6ca3a4be249f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690999"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475543"
 ---
 # <a name="list-apps-installed-for-user"></a>Перечисление приложений, установленных для пользователя
 
 Пространство имен: microsoft.graph
 
-Получить список [приложений, установленных](../resources/teamsappinstallation.md) в личной области указанного [пользователя.](../resources/user.md)
+Извлечение списка [приложений,](../resources/teamsappinstallation.md) установленных в личном поле указанного [пользователя.](../resources/user.md)
 
 > [!NOTE]
 > `id`Ресурс **teamsAppInstallation** имеет не то же значение, что и `id` связанный ресурс **teamsApp**.
@@ -27,9 +27,9 @@ ms.locfileid: "49690999"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Пример 2. Просмотр имен и других сведений о приложениях, установленных для пользователя
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Пример 2. Получить имена и другие сведения о приложениях, установленных для пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -202,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Пример 3. Получите ресурс установки приложения на основе ИД манифеста связанного приложения
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Пример 3. Получить ресурс установки приложения на основе манифеста ID связанного приложения
 
 #### <a name="request"></a>Запрос
 
@@ -272,7 +272,7 @@ Content-type: application/json
                 "requiredResourceSpecificApplicationPermissions": [
                 ],
                 "publishingState": "published",
-                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                 "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
                 "lastModifiedDateTime": null,
                 "createdBy": null

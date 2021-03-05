@@ -1,22 +1,22 @@
 ---
 author: learafa
 title: Прекращение отслеживания сайта
-description: Отменять подписку на сайт пользователя
+description: Unfollow a user's site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 167a45619edf0f867a3a83835a8a194027bab3c8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6d938fc0c02cfc876449edd5bf656770df9190c4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973229"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475755"
 ---
 # <a name="unfollow-site"></a>Прекращение отслеживания сайта 
 
 Пространство имен: microsoft.graph
 
-Отменяйте подписку на [сайт](../resources/site.md) пользователя или несколько сайтов.
+Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +38,7 @@ POST /users/{user-id}/followedSites/remove
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса добавьте массив объектов JSON с параметром ID, указанным в приведенной ниже таблице. 
+В теле запроса поставляем массив объектов JSON с параметром id, указанным в таблице ниже. 
 
 
 | Имя                 | Значение  | Описание                                                            |
@@ -47,12 +47,12 @@ POST /users/{user-id}/followedSites/remove
 
 ## <a name="response"></a>Отклик
 
-* Если запрос выполнен успешно, этот метод возвращает `204` код состояния без содержимого.  
-* Если при невозможности отследовать от указанных сайтов возникла ошибка, этот метод возвращает `207` код состояния, а текст отклика будет содержать массив записей, содержащих объекты [Error](/graph/errors) , и ситеидс, указывающие, какие сайты не могут быть отключены.
+* В случае успешного запроса этот метод возвращает код `204` состояния без контента.  
+* Если ошибка произошла при отсоединиле любой из указанных сайтов, этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты не могут быть `207` unfollowed. [](/graph/errors)
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере показано, как отписаться от нескольких сайтов.
+В следующем примере показано, как отметь несколько сайтов.
 
 ### <a name="request"></a>Запрос
 
@@ -96,19 +96,19 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения возвращается следующий ответ JSON. 
+В случае успешной работы возвращается следующий ответ JSON. 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 
-Если возникла ошибка, возвращается следующий ответ JSON 
+Если произошла ошибка, она возвращает следующий ответ JSON 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 

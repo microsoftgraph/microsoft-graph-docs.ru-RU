@@ -2,13 +2,13 @@
 title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 localization_priority: Normal
-author: vogtn
-ms.openlocfilehash: 691955aa64ff0afc42b5f8912658a6f36e1d77ec
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+author: elisenyang
+ms.openlocfilehash: c9541130abe8f520b41a0bd4d52de9a167e18c24
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161378"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475186"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -38,6 +38,7 @@ ms.locfileid: "50161378"
 | placeholder   | placeholder    | Текст по умолчанию, который объясняет, как использовать компонент. Значение по умолчанию — `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | При предоставлении строки разделенных запятой ИД пользователей Microsoft Graph, компонент отображает соответствующих пользователей как выбранных после инициализации.
 | selection-mode | selectionMode | Используется, чтобы указать следует ли разрешить выбирать несколько элементов (пользователей или групп) или только один элемент. Доступные варианты — `single`, `multiple`. Значение по умолчанию — `multiple`.
+| отключено | отключено | Задает отключение выборщика людей. При отключении пользователь не может искать или выбирать людей.
 
 Ниже приведен пример `show-max`.
 

@@ -1,17 +1,17 @@
 ---
 author: rahmit
-description: Создайте новый Ситепаже в списке страниц сайта на сайте.
+description: Создайте новый sitePage в списке страниц сайта.
 ms.date: 05/07/2018
 title: Создание новой страницы на сайте SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1a326b83055cf25d3741976981fc499f0fdd8788
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044503"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475767"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создание страницы в списке страниц сайта
 
@@ -19,7 +19,7 @@ ms.locfileid: "48044503"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [ситепаже][] в [списке][] страниц сайта на [сайте][].
+Создайте новый [sitePage][] в списке [][]страниц [сайта.][]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,17 +41,17 @@ POST /sites/{site-id}/pages
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса добавьте представление ресурса [ситепаже][] , который требуется создать, в формате JSON.
+В корпусе запроса поставляем представление JSON для создания [ресурса sitePage.][]
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере показано, как создать новую страницу.
+В следующем примере показано, как создать новую страницу.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST /sites/{site-id}/pages
 Content-Type: application/json
 
@@ -116,11 +116,11 @@ Content-Type: application/json
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает объект [ситепаже][] в тексте отклика для созданной страницы.
+В случае успешной работы этот метод возвращает [страницу sitePage][] в теле ответа на созданную страницу.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -199,7 +199,7 @@ Content-type: application/json
 
 **Примечание.** Ответ усечен для наглядности. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[list]: ../resources/list.md
+[списке]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md

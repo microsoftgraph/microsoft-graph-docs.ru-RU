@@ -2,15 +2,15 @@
 title: 'user: findMeetingTimes'
 description: Предложение времени проведения собрания и местоположения с учетом доступности организатора и участников, а также ограничений по местоположению или времени, указанных в качестве параметров.
 localization_priority: Priority
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 64149cc41235a1eafa2ac763b1ee676787f7d28b
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f17661dd3f65266633413cf9dcbcb76ecd37e861
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292310"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475550"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 

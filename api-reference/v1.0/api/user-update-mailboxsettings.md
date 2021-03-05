@@ -1,22 +1,22 @@
 ---
 title: Обновление параметров почтового ящика пользователя
-description: Обновление одного или нескольких параметров почтового ящика пользователя. К ним относятся параметры автоматических ответов (уведомления пользователей об автоматическом получении электронной почты), языкового стандарта (языка и страны или региона), часового пояса и рабочего времени.
+description: Обновление одного или нескольких параметров почтового ящика пользователя. Это включает параметры автоматических ответов (оповещать людей автоматически при получении электронной почты), языкового языка (языка и страны/региона), часового пояса и рабочего времени.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dca5e8f82e2a9b67356e31fe7ab95c179be25b76
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f63768297d1930f4a06c82392e66086434f1a484
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137188"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475515"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
 Пространство имен: microsoft.graph
 
-Включать, настраивать или отключать один или несколько из следующих параметров в составе почтового ящика [пользователя:](../resources/mailboxsettings.md)
+Включить, настроить или отключить один или несколько следующих параметров в составе почтовых [ящиков пользователя.](../resources/mailboxsettings.md)
 
 - [автоматические ответы](../resources/automaticrepliessetting.md) (автоматическое уведомление пользователей при получении их почты);
 - dateFormat
@@ -26,12 +26,12 @@ ms.locfileid: "50137188"
 - часовой пояс;
 - [рабочее время](../resources/workinghours.md).
 
-При обновлении предпочтительного формата даты или времени для [](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) пользователя укажите его в кратком формате даты или [короткого](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) времени.
+При обновлении предпочтительного формата даты или времени для пользователя укажите его соответственно, короткий или [короткий](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) [формат](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) времени.
 
-При обновлении предпочтительного часового пояса для пользователя укажите его в формате часового пояса Windows или [IANA](https://www.iana.org/time-zones) (также известного как часовой пояс Олсон). Вы также можете дополнительно настроить часовой пояс, как показано в [примере 2](#example-2) ниже.
+При обновлении предпочтительного часового пояса для пользователя укажите его в формате часового пояса Windows или Internet [Assigned Numbers Authority (IANA)](https://www.iana.org/time-zones) (также известного как часовой пояс Olson). Вы также можете дополнительно настроить часовой пояс, как показано в [примере 2](#example-2) ниже.
 
 > [!TIP]
-> Невозможно создать или удалить параметры почтового ящика.
+> Невозможно создать или удалить параметры почтовых ящиков.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -60,9 +60,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для будущих диапазонов дат.|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Такие уведомления можно настроить только для диапазона будущих дат.|
 |dateFormat|string|Формат даты для почтового ящика пользователя.|
-|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Если у пользователя есть делегат календаря, это указывает, будет ли делегат, владелец почтового ящика или оба получать сообщения о собрании и ответы на них. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Если у пользователя есть делегат календаря, это указывает, получает ли делегат, владелец почтового ящика или как получать сообщения о собраниях, так и ответы на собрания. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
 |timeFormat|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
@@ -70,7 +70,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика и обновленные свойства объекта `200 OK` [mailboxSettings](../resources/mailboxsettings.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленные свойства объекта `200 OK` [mailboxSettings](../resources/mailboxsettings.md) в тексте ответа.
 
 ## <a name="errors"></a>Ошибки
 
@@ -168,8 +168,10 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 Во втором примере настраивается часовой пояс для рабочего времени вошедшего пользователя. Для этого в свойстве **timeZone** указывается [пользовательский часовой пояс](../resources/customtimezone.md).
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_mailboxsettings_2"
 }-->
 ```http
@@ -210,10 +212,28 @@ Content-Type: application/json
   }
 } 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mailboxsettings-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxsettings-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxsettings-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "name": "update_mailboxsettings_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailboxSettings"

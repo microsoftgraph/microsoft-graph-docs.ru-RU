@@ -1,24 +1,24 @@
 ---
 title: Список temporaryAccessPassAuthenticationMethods
-description: Получите список временных объектовAccessPassAuthenticationMethod и их свойств.
+description: Получите список объектов temporaryAccessPassAuthenticationMethod и их свойств.
 author: inbarckMS
 ms.author: inbarc
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6b44daae82d401da223d7012c662c9b3c9a97bec
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: a7a0b7af4cd5a7040f7cef3360ef153a5af7da60
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272706"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475834"
 ---
 # <a name="list-temporaryaccesspassauthenticationmethods"></a>Список temporaryAccessPassAuthenticationMethods
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список временных [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  пользователя и их свойств. Этот вызов возвращает только один объект, так как для пользователей можно настроить только один метод временного доступа.
+Извлечение списка временных [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  и их свойств. Этот вызов возвращает только один объект, так как для пользователей может быть установлен только один метод временного пропуска доступа.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "50272706"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|:-----------------|
@@ -40,7 +40,7 @@ ms.locfileid: "50272706"
 | Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
@@ -69,13 +69,15 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## <a name="request"></a>Запрос 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию временных `200 OK` [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в тексте отклика.  Этот вызов возвращает только один объект, так как для пользователей можно установить только один **временный объектAccessPassAuthenticationMethod.**
+В случае успеха этот метод возвращает код ответа и коллекцию временных `200 OK` [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в теле ответа.  Этот вызов возвращает только один объект, так как для пользователей может быть установлен только один **временный ОбъектAccessPassAuthenticationMethod.**
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_temporaryaccesspassauthenticationmethod"
@@ -84,6 +86,24 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ``` http
 GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethods
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-temporaryaccesspassauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-temporaryaccesspassauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

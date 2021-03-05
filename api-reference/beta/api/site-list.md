@@ -1,32 +1,32 @@
 ---
-title: Перечисление сайтов
-description: Перечислите доступные [сайты] [] в Организации, которые совпадают с предоставленными критериями фильтра и параметрами запроса.
+title: Переумерия сайтов
+description: Список доступных [сайтов][] в организации, которая соответствует критериям фильтра и параметрам запроса.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: ec9a9608a688e39ce6766672abd59ed21c273590
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c1b8af50227346e4440e4ca98873b20160ecd81b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475786"
 ---
-# <a name="enumerate-sites"></a>Перечисление сайтов
+# <a name="enumerate-sites"></a>Переумерия сайтов
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список доступных [сайтов][] в Организации, которые отвечают предоставленным условиям фильтра и параметрам запроса.
+Список доступных [сайтов в][] организации, которая соответствует предоставленным критериям фильтрации и параметрам запроса.
 
-В настоящее время поддерживаются только следующие параметры запросов:
+В настоящее время поддерживаются только следующие параметры запроса:
 
-| Оператор Filter             | Оператор SELECT        | Описание
+| Заявление фильтра             | Выберите утверждение        | Описание
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | Перечисление всех семейств сайтов корневого уровня в Организации. Полезен для обнаружения домашнего сайта для каждого из географических регионов.
+|`siteCollection/root ne null` | `siteCollection,webUrl` | Списки всех корневых коллекций сайтов в организации. Полезно для обнаружения домашнего сайта для каждой географии.
 
-Кроме того, вы можете использовать **[$searchный][]** запрос для поиска сайтов, отвечающих заданному ключевому слову.
+Кроме того, для поиска сайтов, **[совпадающих с ключевыми словами,][]** можно использовать $search запрос в отношении коллекции "/сайты".
 
 [$search]: site-search.md
 [сайтов]: ../resources/site.md
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

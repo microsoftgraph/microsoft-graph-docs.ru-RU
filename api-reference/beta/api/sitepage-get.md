@@ -1,17 +1,17 @@
 ---
 author: rahmit
-description: Возвращает метаданные для sitePage в списке страниц сайта.
+description: Возвращает метаданные для сайтаPage в списке страниц сайта.
 ms.date: 03/15/2018
 title: Получить страницу на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 61b8b40496daef16abf56d1d297b3dcb2dd92f91
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: c51354818d81cde7e408ea5407c655ce6d7913cf
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981146"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475746"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получить страницу в списке страниц сайта
 
@@ -19,7 +19,7 @@ ms.locfileid: "49981146"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает метаданные для [sitePage][] в списке [][] страниц [сайта.][]
+Возвращает метаданные для [sitePage][] в списке страниц [сайта][] [на сайте.][]
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -75,7 +75,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

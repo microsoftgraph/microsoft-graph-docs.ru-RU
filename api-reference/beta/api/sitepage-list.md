@@ -1,25 +1,25 @@
 ---
 author: rahmit
-description: Получение коллекции объектов Ситепаже из страниц сайта [list] на сайте. Возвращаются все страницы сайта (с разбивкой на страницы).
+description: Получите коллекцию объектов sitePage со страниц сайта [список] на сайте. Возвращаются все страницы сайта (с pagination).
 ms.date: 03/15/2018
-title: Список страниц сайта
+title: Список страниц на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f3a77b7f6d70d79cc1f44635266144f9d8ceb2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c8559fdc469823b3218a8af93ccda0d10ec357b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044433"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475711"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Перечисление страниц в списке страниц сайта
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Список страниц в списке страниц сайта
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции объектов [ситепаже][] из [списка][] страниц сайта на [сайте][]сайта. Возвращаются все страницы сайта (с разбивкой на страницы).
+Получите коллекцию [объектов sitePage][] из списка страниц [сайта][] на [сайте.][] Возвращаются все страницы сайта (с pagination).
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -70,7 +70,7 @@ GET /sites/{site-id}/pages
 } 
 -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -114,37 +114,37 @@ Content-type: application/json
                 {
                     "type": "daf0b71c-6de8-4ef7-b511-faae7c388708",
                     "data": {
-                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
-                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
-                        "title": "Registration",
-                        "description": "...",
-                        "serverProcessedContent": {
-                            "htmlStrings": {},
-                            "searchablePlainTexts": {
-                                "title": ""
-                            },
-                            "imageSources": {},
-                            "links": {
-                                "baseUrl": "/teams/SPClientTest"
-                            },
-                            "componentDependencies": {
-                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
-                            }
-                        },
-                        "dataVersion": "2.1",
-                        "properties": {
-                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
-                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": {  },
-                            "templateId": 1,
-                            "maxItemsPerPage": 10,
-                            "hideWebPartWhenEmpty": false,
-                            "kqlQueryTemplate": "...",
-                            "displayMaps": {  },
-                            "sites": [],
-                            "layoutId": "Card",
-                            "dataProviderId": "Search"
-                        }
+                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
+                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
+                        "title": "Registration",
+                        "description": "...",
+                        "serverProcessedContent": {
+                            "htmlStrings": {},
+                            "searchablePlainTexts": {
+                                "title": ""
+                            },
+                            "imageSources": {},
+                            "links": {
+                                "baseUrl": "/teams/SPClientTest"
+                            },
+                            "componentDependencies": {
+                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
+                            }
+                        },
+                        "dataVersion": "2.1",
+                        "properties": {
+                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
+                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
+                            "query": {  },
+                            "templateId": 1,
+                            "maxItemsPerPage": 10,
+                            "hideWebPartWhenEmpty": false,
+                            "kqlQueryTemplate": "...",
+                            "displayMaps": {  },
+                            "sites": [],
+                            "layoutId": "Card",
+                            "dataProviderId": "Search"
+                        }
                     }
                 }
             ]

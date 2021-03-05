@@ -1,15 +1,15 @@
 ---
 title: Создание событий Outlook в общем или делегированном календаре
 description: В Outlook клиенты могут поделиться календарем с другими пользователями и позволить им просматривать или изменять события в этом календаре. Клиенты также могут предоставить делегату право выполнять действия от их имени, получать приглашения на собрания или отвечать на них, а также создавать или изменять элементы в календаре.
-author: angelgolfer-ms
+author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 006b4bf1e9a3729979e523e16d95bf0affc02e89
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: fd231521a36ba761297042bc41f3ee60ef438a01
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229509"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475536"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Создание событий Outlook в общем или делегированном календаре
 
@@ -666,7 +666,7 @@ Content-type: application/json
 
 Артем сохранил значение по умолчанию, позволяющее Outlook направлять все приглашения на собрание и ответы только делегатам, поэтому он не получает ответ Алены на шаге 4. Однако он может получить ответ с помощью [события](/graph/api/resources/event?view=graph-rest-1.0) в своем основном календаре.
 
-Войдя в систему под именем Артема, получите[событие](/graph/api/resources/event?view=graph-rest-1.0), созданное Анной на шаге 2, а также ответы свойства **attendees**.
+Войдя в систему под именем Артема, получите [событие](/graph/api/resources/event?view=graph-rest-1.0), созданное Анной на шаге 2, а также ответы свойства **attendees**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

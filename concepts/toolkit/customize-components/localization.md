@@ -3,22 +3,22 @@ title: Локализация компонентов Microsoft Graph Toolkit
 description: Используйте LocalizationHelper для локализации компонентов Microsoft Graph Toolkit.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: a2bd44330e3b5e9476b86c9e9cd69aadcab43467
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 3fafc71f20079f5320d07a62b06a2a18f97c5831
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272526"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475417"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>Локализация компонентов Microsoft Graph Toolkit
 
-Локализация является важным аспектом разработки приложений для поддержки пользователей с различными языковыми требованиями на глобальном уровне.
+Локализация является важным аспектом разработки приложений для поддержки пользователей с различными языковыми требованиями во всем мире.
 
 Чтобы пользовательский интерфейс отражал целевой язык, вы можете локализовать компоненты Microsoft Graph Toolkit.
 
 ## <a name="use-localizationhelper-to-add-localized-strings"></a>Использование LocalizationHelper для добавления локализованных строк
 
-Ни одна строка в наборе средств не локализована, но вы можете предоставить собственные локализованные строки и управлять различными языками с помощью того же процесса, который вы используете для локализации приложения. Чтобы облегчить локализацию, набор средств Toolkit предоставляет статический класс `LocalizationHelper`.
+Ни одна из строк в наборе инструментов не локализована, но вы можете предоставить собственные локализованные строки и управлять различными языками с помощью того же процесса, который используется для локализации приложения. Чтобы облегчить локализацию, набор средств Toolkit предоставляет статический класс `LocalizationHelper`.
 
 В примере ниже показано, как локализовать несколько компонентов.
 
@@ -51,6 +51,7 @@ LocalizationHelper.strings = {
     "person-card": {
       sendEmailLinkSubtitle: "ارسل بريد الكتروني",
       startChatLinkSubtitle: "ابدأ الدردشة",
+      showExpandedDetailsButton: 'Show expanded details',
       showMoreSectionButton: "أظهر المزيد", // global declaration
     },
     "person-card-contact": {
@@ -67,7 +68,7 @@ LocalizationHelper.strings = {
 };
 ```
 
-При присвоении свойства все компоненты автоматически получают новые строки и повторно отрисовку, что позволяет динамически `strings` `LocalizationHelper` изменять строки. 
+При присвоении свойству все компоненты автоматически подбирают новые строки и повторно отрисовку, что позволяет динамически изменять `strings` `LocalizationHelper` строки. 
 
 Строки можно задать на глобальном уровне или на уровне компонента (с помощью свойства `_components:`).
 

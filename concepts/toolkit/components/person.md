@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: cfe5f6b97c35c2704def8c4879522268cc8cc91e
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 9ac8eebfaa4d95ccd935414329ab1dd145839dd2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660041"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475060"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -59,9 +59,11 @@ ms.locfileid: "49660041"
 | user-id         | userId         | Установите идентификатор пользователя, чтобы получить сведения об этом пользователе и его изображение из Microsoft Graph.|
 | person-query    | personQuery    | Чтобы найти пользователя в Microsoft Graph, установите его имя или адрес электронной почты пользователя и получите сведения о первом пользователе и его изображение.|
 | person-details  | personDetails  | Установите объект, представляющий пользователя. Используется для объекта из ресурсов "люди", "пользователи", "контакты" или "группа". |
+| fallback-details| fallbackDetails| Установите объект, представляющий человека, если в графе не обнаружено пользователя/пользователя/контакта.
 | person-image    | personImage    | Задать изображение, которое будет отображаться для пользователя. |
 | person-presence | personPresence | Установка присутствия для пользователя. |
 | fetch-image     | fetchImage     | Установите флажок для автоматического получения `personImage` из Microsoft Graph на основе объекта `personDetails`, предоставленного пользователем. |
+| тип аватара     | avatarType     | Установите или `initials` `photo` отобразить состояние отображения по умолчанию — это фотография. |
 | представление            | представление           | Установите, чтобы настроить, как выглядит пользователь. Значение по умолчанию: `avatar` <br /> `avatar` — Показывать только аватар <br /> `oneline` — Показывать аватар и первую строку (`displayName` по умолчанию) <br /> `twolines` — Показывать аватар и две строки текста (`displayName` и `mail` по умолчанию)|
 | line1-property  | line1Property  | Задает свойство personDetails для использования для первой строки текста. Значение по умолчанию: `displayName`.|
 | line2-property  | line2Property  | Задает свойство personDetails для использования для второй строки текста. Значение по умолчанию: `mail`.|
@@ -106,6 +108,16 @@ mgt-person {
 
 Дополнительные сведения см. в статье [Компоненты стиля](../customize-components/style.md).
 
+## <a name="events"></a>События
+
+Из компонента инициируются следующие события.
+
+| Событие | Сведения | Описание |
+| --- | --- | --- |
+| line1clicked | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 1. |
+| line2clicked | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки2. |
+| line3clicked | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 3. |
+
 ## <a name="templates"></a>Шаблоны
 
 Компонент `mgt-person` поддерживает несколько [шаблонов](../customize-components/templates.md), позволяющих заменить определенные части компонента. Чтобы указать шаблон, добавьте элемент `<template>` в компонент и установите для параметра `data-type` одно из следующих значений.
@@ -116,10 +128,14 @@ mgt-person {
 | no-data | Нет | Шаблон для использования, если изображения или данные не доступны. | 
 | default | пользователь: объект сведений о пользователе <br> `personImage`: URL-адрес изображения. | Шаблон по умолчанию заменяет весь компонент вашим собственным компонентом. |
 | person-card | пользователь: объект сведений о пользователе <br> `personImage`: URL-адрес изображения. | Шаблон для обновления карточки mgt-person-card, отображаемой при наведении указателя мыши или щелчке мышью. |
+| line1 | person: объект сведений о пользователе | Шаблон для первой строки метаданных человека. |
+| line2 | person: объект сведений о пользователе | Шаблон для второй строки метаданных человека. |
+| line3 | person: объект сведений о пользователе | Шаблон для третьей строки метаданных человека. |
 
 В следующем примере определяется шаблон для компонента пользователя.
 
 ```html
+<!-- Retemplate the entire person component -->
 <mgt-person>
   <template>
     <div data-if="personImage">
@@ -127,6 +143,25 @@ mgt-person {
     </div>
     <div data-else>
       {{person.displayName}}
+    </div>
+  </template>
+</mgt-person>
+
+<!-- Retemplate the line properties -->
+<mgt-person view="threeLines">
+  <template data-type="line1">
+    <div>
+      Hello, my name is: {{person.displayName}}
+    </div>
+  </template>
+  <template data-type="line2">
+    <div>
+      Super cool
+    </div>
+  </template>
+  <template data-type="line3">
+    <div>
+      Loves MGT
     </div>
   </template>
 </mgt-person>
