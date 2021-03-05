@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: b62417559c5fb70b973055a732a56ee66aadc41f
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 66171b50560b5cfc31ad04757a4acc93f7aa9751
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714132"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470657"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -169,7 +169,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 * Доступ к контакту в дочерней папке папки **contactFolder**.  В приведенном ниже примере показан один уровень вложения, но для хранения контакта допускается несколько.
 
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 

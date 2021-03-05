@@ -1,22 +1,22 @@
 ---
-title: 'Device: Чеккмемберобжектс'
-description: Проверка членства в списке групп или ролей каталогов для указанного объекта Device.
+title: 'устройство: checkMemberObjects'
+description: Проверьте членство в списке групп или ролей каталога для указанного объекта устройства.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6d10d0f2e1be05e42ecdb5f97b2b7c1cd0810507
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3abeb1822efb34af9d46a9d0b4577885f2f82c96
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044097"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448865"
 ---
-# <a name="device-checkmemberobjects"></a>Device: Чеккмемберобжектс
+# <a name="device-checkmemberobjects"></a>устройство: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
-Проверка членства в списке групп или ролей каталогов для указанного объекта Device. Этот метод является транзитивным.
+Проверьте членство в списке групп или ролей каталога для указанного объекта устройства. Этот метод является транзитным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,11 +49,11 @@ POST /devices/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-| ids | Коллекция String | Коллекция, содержащая идентификаторы объектов групп, ролей каталогов или идентификаторов Ролетемплате для ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов. |
+| ids | Коллекция String | Коллекция, которая содержит объектные ID групп, роли каталога или roleTemplate ID ролей каталога, в которых необходимо проверить членство. Можно указать до 20 объектов. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

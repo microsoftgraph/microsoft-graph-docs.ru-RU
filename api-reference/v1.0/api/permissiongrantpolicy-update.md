@@ -1,22 +1,22 @@
 ---
-title: Обновление Пермиссионгрантполици
-description: Обновление объекта Пермиссионгрантполици.
+title: Обновление permissionGrantPolicy
+description: Обновление объекта permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 403968aa3ee4cde189c5b58331cd4dc90dd3cabd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 223fffce4f607004897360c2653dc8327c166255
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524089"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448083"
 ---
-# <a name="update-permissiongrantpolicy"></a>Обновление Пермиссионгрантполици
+# <a name="update-permissiongrantpolicy"></a>Обновление permissionGrantPolicy
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта  [пермиссионгрантполици](../resources/permissiongrantpolicy.md).
+Обновление свойств  [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524089"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Policy. ReadWrite. Пермиссионгрант |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. ReadWrite. Пермиссионгрант |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.PermissionGrant |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `204 No Content` код отклика и не возвращает ничего в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и ничего не возвращает `204 No Content` в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

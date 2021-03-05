@@ -1,33 +1,33 @@
 ---
-title: Получение Едукатионсинчронизатионпрофиле
-description: Получение профиля синхронизации данных School в клиенте на основе идентификатора.
+title: Get an educationSynchronizationProfile
+description: Извлечение профиля синхронизации школьных данных в клиенте на основе идентификатора.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b11993f73422e7b5c64ac59b1c5277fb507deb57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b3dd16ba86e455e63f21132cc67a1c33b055a1d6
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991238"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470444"
 ---
-# <a name="get-an-educationsynchronizationprofile"></a>Получение Едукатионсинчронизатионпрофиле
+# <a name="get-an-educationsynchronizationprofile"></a>Get an educationSynchronizationProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте на основе идентификатора.
+Извлечение профиля [синхронизации школьных данных](../resources/educationsynchronizationprofile.md) в клиенте на основе идентификатора.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | Едуадминистратион. Read, Едуадминистратион. ReadWrite |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read, EduAdministration.ReadWrite |
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,21 +40,41 @@ GET /synchronizationProfiles/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_educationSynchronizationProfile"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -62,7 +82,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->

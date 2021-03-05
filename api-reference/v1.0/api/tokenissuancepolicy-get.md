@@ -1,24 +1,24 @@
 ---
-title: Получение Токениссуанцеполици
-description: Получение свойств и связей объекта Токениссуанцеполици.
+title: Get tokenIssuancePolicy
+description: Извлечение свойств и связей объекта tokenIssuancePolicy.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5ab1288a7bec3271a0771ebba025e9c40b354c1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ecfb5f435a3d8c14ba54a7a1e8c54bf60ab17bd1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043990"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50449000"
 ---
-# <a name="get-tokenissuancepolicy"></a>Получение Токениссуанцеполици
+# <a name="get-tokenissuancepolicy"></a>Get tokenIssuancePolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Получение свойств и связей объекта [токениссуанцеполици](../resources/tokenIssuancePolicy.md) .
+Извлечение свойств и связей объекта [tokenIssuancePolicy.](../resources/tokenIssuancePolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48043990"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион |
+| Для приложений                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /policies/tokenIssuancePolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$expand` `$select` параметры запросов OData и для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` Убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
+Этот метод поддерживает параметры `$expand` `$select` запроса oData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании убедитесь, что ваше приложение запрашивает `$expand` разрешения на чтение расширенных объектов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /policies/tokenIssuancePolicies/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [токениссуанцеполици](../resources/tokenIssuancePolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

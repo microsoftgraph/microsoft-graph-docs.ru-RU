@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4bd3ce83f81a040583fdc3400e8ce808e1a3c8f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c574cf350ac77ba8b3300beba225d97e98e53e52
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436134"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471252"
 ---
 # <a name="remove-appliesto"></a>Удаление appliesTo
 
@@ -26,7 +26,7 @@ ms.locfileid: "50436134"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.FeatureRollout |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 

@@ -3,14 +3,14 @@ title: Получение домена
 description: Извлечение свойств и связей объекта домена.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d2b777a59118160cddef98f9b2f1fbf3c7a0855c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e7118d376aa403d43eeeef1d8888984fea6c9ca0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135227"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448536"
 ---
 # <a name="get-domain"></a>Получение домена
 
@@ -54,7 +54,7 @@ GET /domains/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [домена](../resources/domain.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект домена](../resources/domain.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

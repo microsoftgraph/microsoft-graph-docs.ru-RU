@@ -1,22 +1,22 @@
 ---
-title: Обновление ипнамедлокатион
-description: Обновление свойств объекта Ипнамедлокатион.
+title: Обновление ipnamedlocation
+description: Обновление свойств объекта ipNamedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0af6dfe76e64558e933899463d5bd18ae21cf1cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58c76f32a230c42b912e2a4e2f91e76f0e231785
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087245"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448244"
 ---
-# <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
+# <a name="update-ipnamedlocation"></a>Обновление ipNamedlocation
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [ипнамедлокатион](../resources/ipNamedLocation.md) .
+Обновление свойств объекта [ipNamedLocation.](../resources/ipNamedLocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "48087245"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Для приложений                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Удобное для человека имя расположения.|
-|ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
-|Доверять|Boolean|Значение, `true` если это расположение явно доверенное.|
+|displayName|String|Понятное человеку имя расположения.|
+|ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC5962.|
+|isTrusted|Логический|Значение, если `true` это расположение явно доверяется.|
 
 ## <a name="response"></a>Отклик
 

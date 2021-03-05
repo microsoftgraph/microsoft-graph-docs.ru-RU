@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0f1fa81923bb0deeecd7de01b1cb014f5f0b22a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8c135e600c0e057b63700716577a47af890b5e6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459769"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448300"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -53,9 +53,6 @@ GET /groups/{id}/calendar/events/{id}/attachments
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
 

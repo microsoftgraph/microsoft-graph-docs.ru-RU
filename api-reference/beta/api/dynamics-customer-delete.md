@@ -1,18 +1,18 @@
 ---
 title: Удаление клиентов
-description: Удаляет объект Customers из Dynamics 365 Business Central.
+description: Удаляет объект клиентов из Центра бизнеса Dynamics 365.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9dd3dd0d1a1938b02a339836aa410966043ca77d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de4976e6a80fd54db75fc0e4111c7fa22746f535
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981508"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471336"
 ---
 # <a name="delete-customers"></a>Удаление клиентов
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981508"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта Customer из Dynamics 365 Business Central.
+Удаление объекта клиента из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981508"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,9 +43,9 @@ DELETE /financials/companies/{id}/customers/{id}
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **клиентов**, **Клиенты** не будут обновлены. |
+|If-Match       |Обязательно. Если этот заглавный запрос включен и предоставленный eTag не совпадает с текущим тегом для **клиентов,** клиенты не будут обновляться.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -57,7 +57,7 @@ DELETE /financials/companies/{id}/customers/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

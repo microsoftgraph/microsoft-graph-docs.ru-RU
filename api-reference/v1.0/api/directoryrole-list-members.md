@@ -1,25 +1,25 @@
 ---
-title: Список членов роли каталога
-description: Получение списка субъектов, назначенных для роли каталога.
+title: Список участников роли каталога
+description: Извлечение списка директоров, которые назначены роли каталога.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 357333bb1f15828e8dd4ee0d37233539ce47edbd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2860e1c0d6293f13fa07df26e7b9493501ac8185
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524612"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448557"
 ---
-# <a name="list-members-of-a-directory-role"></a>Список членов роли каталога
+# <a name="list-members-of-a-directory-role"></a>Список участников роли каталога
 
 Пространство имен: microsoft.graph
 
-Получение списка субъектов, назначенных для роли каталога. 
+Извлечение списка директоров, которые назначены роли каталога. 
 
 > [!Note]
-> С этим API можно использовать как идентификатор объекта, так и идентификатор шаблона **directoryRole** . Неизменяемый идентификатор шаблона встроенной роли, который можно просмотреть в описании роли на портале Azure. Дополнительные сведения: [идентификаторы шаблонов ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+> С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,9 +27,9 @@ ms.locfileid: "49524612"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -53,7 +53,7 @@ GET /directoryRoles/{id}/members
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>Пример 1: получение членов роли каталога с помощью objectId
+### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>Пример 1. Получить членов роли каталога с помощью objectId
 
 ##### <a name="request"></a>Запрос
 
@@ -112,7 +112,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>Пример 2: получение членов роли каталога с помощью templateId
+### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>Пример 2. Получить членов роли каталога с помощью templateId
 
 ##### <a name="request"></a>Запрос
 

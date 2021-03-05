@@ -1,22 +1,22 @@
 ---
 title: 'event: snoozeReminder'
-description: Отложить напоминание о событии в календаре пользователя до нового времени.
+description: Отложить напоминание о событии в пользовательском календаре до нового времени.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b64f1b621cc6171870227185fcc17f1e326e8d26
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca25306bc830f6ec0760926ac713d80e140f9ffa
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038783"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448279"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
 Пространство имен: microsoft.graph
 
-Отложить напоминание о [событии](../resources/event.md) в [календаре](../resources/calendar.md) пользователя до нового времени.
+Отложить напоминание о событии [в](../resources/event.md) пользовательском [календаре](../resources/calendar.md) до нового времени.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,9 +38,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
 
 POST /me/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/snoozeReminder
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder

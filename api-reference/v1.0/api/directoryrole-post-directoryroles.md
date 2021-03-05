@@ -3,14 +3,14 @@ title: Активация directoryRole
 description: Активация роли каталога.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f48fb24b5f7c4889faf3ebba0b5147a8de14b877
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be7793024e9b8eb0f7ca9bec5a57d2b4ec1248db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052392"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448550"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -23,7 +23,7 @@ ms.locfileid: "48052392"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.ReadWrite.Directory |
 
@@ -39,14 +39,14 @@ POST /directoryRoles
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при активации роли каталога.
 
 |Параметр | Тип | Описание|
 |:---------|:---------|:---------|
-|roleTemplateId | string | Обязательное. Идентификатор для объекта [directoryRoleTemplate](../resources/directoryroletemplate.md), который лежит в основе роли. Это единственное свойство, которое можно указать в запросе.|
+|roleTemplateId | string | Обязательный. Идентификатор для объекта [directoryRoleTemplate](../resources/directoryroletemplate.md), который лежит в основе роли. Это единственное свойство, которое можно указать в запросе.|
 
 ## <a name="response"></a>Отклик
 

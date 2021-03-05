@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1ec54a67867ecbf62da04fc87c6f1e7b9d043755
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b40a37d881cf6cf1632a9a104c47a5b5aae1a374
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436969"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471522"
 ---
 # <a name="create-featurerolloutpolicy"></a>Создание featureRolloutPolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "50436969"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.FeatureRollout |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 

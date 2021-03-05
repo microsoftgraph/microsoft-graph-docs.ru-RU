@@ -1,22 +1,22 @@
 ---
-title: Создание Пермиссионгранткондитионсет в коллекции включенных элементов Пермиссионгрантполици
-description: Добавьте условия, при которых событие предоставления разрешений включается в политику предоставления разрешений.
+title: Создание permissionGrantConditionSet включает коллекцию разрешенийGrantPolicy
+description: Добавьте условия, при которых событие предоставления разрешений включено в политику предоставления разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 432ba5f4bc6ec42a54b9aa6ac59ad9176e48feb6
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 1300319e2411a7e5e39b7cf9d1fd5ad365a2f363
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524166"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448081"
 ---
-# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Создание Пермиссионгранткондитионсет в коллекции включенных элементов Пермиссионгрантполици
+# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Создание permissionGrantConditionSet включает коллекцию разрешенийGrantPolicy
 
 Пространство имен: microsoft.graph
 
-Добавьте условия, при которых событие предоставления разрешений *включается* в политику предоставления разрешений. Это можно сделать, добавив [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в коллекцию **includes** объекта  [пермиссионгрантполици](../resources/permissionGrantPolicy.md).
+Добавьте условия, при которых событие предоставления разрешений *включено* в политику предоставления разрешений. Это необходимо, добавив [permissionGrantConditionSet](../resources/permissiongrantconditionset.md)  в коллекцию [разрешенийGrantPolicy.](../resources/permissionGrantPolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524166"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Policy. ReadWrite. Пермиссионгрант |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Policy. ReadWrite. Пермиссионгрант |
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,17 +45,17 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в формате JSON.
+В теле запроса необходимо предоставить представление JSON объекта [permissionGrantConditionSet.](../resources/permissiongrantconditionset.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект permissionGrantConditionSet](../resources/permissiongrantconditionset.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В этом примере *все* делегированные разрешения для клиентских приложений из проверенных издателей включены в политику предоставления разрешений. Так как все остальные условия из [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) опущены, они будут принимать значения по умолчанию, которые в каждом случае являются самыми-инклюзивными.
+В этом примере *все* делегированные разрешения для клиентских приложений от проверенных издателей включены в политику предоставления разрешений. Так как все остальные условия [из permissionGrantConditionSet](../resources/permissiongrantconditionset.md) были пропущены, они будут принимать значения по умолчанию, которые в каждом случае наиболее все включено.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

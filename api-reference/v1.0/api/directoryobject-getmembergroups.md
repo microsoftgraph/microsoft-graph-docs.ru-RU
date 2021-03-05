@@ -3,14 +3,14 @@ title: Вывод групп элементов
 description: Возвращает все группы, в которых состоит указанный пользователь, группа или объект каталога. Это транзитивная функция.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 160f40dc21a7cb35c9f409f02b0cc6d2d258c2ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66b6e2cbbc4958a434a67f8dd70251d65c2f370f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971316"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448585"
 ---
 # <a name="get-member-groups"></a>Вывод групп пользователя
 
@@ -23,15 +23,15 @@ ms.locfileid: "47971316"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User. Read. ALL и Граупмембер. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
-Используйте приведенные ниже рекомендации по сценариям, чтобы определить, какие типы разрешений следует использовать:
-- Используйте User. Read и Граупмембер. Read. ALL или User. Read. ALL или User. Read и Group. Read. ALL для получения сведений о членстве в группах для вошедшего пользователя.
-- Используйте User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы получить сведения о членстве в группах для любого пользователя.
-- Используйте Граупмембер. Read. ALL или Group. Read. ALL для получения сведений о членстве в группах для группы.
-- Используйте разрешение Directory. Read. ALL для получения сведений о членстве в группах для объекта каталога.
+Используйте руководство по следующим сценариям, чтобы определить, какие типы разрешений использовать:
+- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All для получения членства в группах для пользователя, вступив в группу.
+- Используйте user.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All для получения членства в группе для любого пользователя.
+- Чтобы получить членство в группе, используйте разрешение GroupMember.Read.All или Group.Read.All.
+- Используйте разрешение Directory.Read.All для получения членства в группе для объекта каталога.
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ POST /directoryObjects/{id}/getMemberGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type   | string  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

@@ -1,22 +1,22 @@
 ---
-title: Удаление Намедлокатион
-description: Удаление объекта Намедлокатион.
+title: Удаление namedLocation
+description: Удаление объекта namedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed34312485a26e239a0e870ddac32cdf44d60513
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a51da64e4e04d962991303d2cd23f5a4f71372a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028590"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448237"
 ---
-# <a name="delete-namedlocation"></a>Удаление Намедлокатион
+# <a name="delete-namedlocation"></a>Удаление namedLocation
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [намедлокатион](../resources/namedlocation.md) .
+Удаление [объекта namedLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "48028590"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Для приложений                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /identity/conditionalAccess/namedLocations/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -3,20 +3,20 @@ title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9df86cb8b32b087952ce50bbd5e8c18aac6d3f1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4179ee12cd0941f1976a2c5136a47e55a8504f4c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063025"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448125"
 ---
 # <a name="update-organization"></a>Обновление организации
 
 Пространство имен: microsoft.graph
 
-Обновите свойства организации, которая прошла проверку подлинности. В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** Организации.
+Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется как коллекция ровно одной записи, поэтому ее ID должен быть указан `organization` в запросе.   **ID** также известен как **tenantId** организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "48063025"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Организация. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Organization.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Organization.ReadWrite.All |
 

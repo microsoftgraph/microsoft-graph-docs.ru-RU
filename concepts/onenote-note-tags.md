@@ -4,12 +4,12 @@ description: " Корпоративные записные книжки в Micro
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c238f51ccce57b51fa3e17340c2d92321c3b6185
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: HT
+ms.openlocfilehash: be9d85811842939be0931416970bb5b7e800938a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895484"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470531"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>Использование тегов заметок на страницах OneNote
 
@@ -78,7 +78,7 @@ ms.locfileid: "44895484"
 
 Обратите внимание, что теги `<p>` над каждым пунктом включают атрибут `data-id`. Это упрощает изменение тегов заметок с флажками. Например, показанный ниже запрос помечает элемент списка дел (посвященный весенней высадке растений) как выполненный.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -364,7 +364,7 @@ Microsoft Graph возвращает указанные ниже сведени�
 - [Обновление содержимого страницы OneNote](onenote-update-page.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote на сайте Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)
 
 

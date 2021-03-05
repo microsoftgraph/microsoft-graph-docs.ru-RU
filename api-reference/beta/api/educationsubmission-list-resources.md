@@ -1,16 +1,16 @@
 ---
 title: Список ресурсов
-description: Перечислите ресурсы, связанные с этой отправкой. Объект **субмиссионресаурце** является оболочкой для фактического объекта ресурса, над которым работает учащийся. Кроме того, обертка содержит указатель на ресурсы назначения, который был скопирован из назначения во время процесса Assign. Эти ресурсы являются рабочей копией назначения. **Субмиттедресаурцес** — это ресурсы, которые официально передаются на производительность.
+description: Список ресурсов, связанных с этой отправкой. Объект **submissionResource** — это оболочка вокруг фактического объекта ресурса, над который работает студент. Оболочка также включает указатель на ресурсы назначения, если он был скопирован из назначения во время процесса назначения. Эти ресурсы являются рабочей копией назначения. **SubmittedResources —** это ресурсы, официально отправленные для оценки.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 796324308b76a51d98af1ffc9afed3bc51278f93
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1eb9e7ce677f6d04a6c61572f13a7e81bd127a5f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403383"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470472"
 ---
 # <a name="list-resources"></a>Список ресурсов
 
@@ -18,7 +18,7 @@ ms.locfileid: "48403383"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечислите ресурсы, связанные с этой отправкой. Объект **субмиссионресаурце** является оболочкой для фактического объекта ресурса, над которым работает учащийся. Кроме того, обертка содержит указатель на ресурсы назначения, который был скопирован из назначения во время процесса Assign. Эти ресурсы являются рабочей копией назначения. **Субмиттедресаурцес** — это ресурсы, которые официально передаются на производительность.
+Список ресурсов, связанных с этой отправкой. Объект **submissionResource** — это оболочка вокруг фактического объекта ресурса, над который работает студент. Оболочка также включает указатель на ресурсы назначения, если он был скопирован из назначения во время процесса назначения. Эти ресурсы являются рабочей копией назначения. **SubmittedResources —** это ресурсы, официально отправленные для оценки.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48403383"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
 | Для приложений                            | Не поддерживается.                                                                                         |
 
@@ -53,7 +53,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [educationSubmissionResource](../resources/educationsubmissionresource.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -61,14 +61,34 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_resources"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-resources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-resources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-resources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 
@@ -77,7 +97,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmissionResource",
   "isCollection": true

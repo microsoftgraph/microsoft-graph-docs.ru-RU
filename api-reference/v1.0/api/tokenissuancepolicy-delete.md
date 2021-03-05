@@ -1,24 +1,24 @@
 ---
-title: Удаление Токениссуанцеполици
-description: Удаление Токениссуанцеполици.
+title: Удаление tokenIssuancePolicy
+description: Удаление tokenIssuancePolicy.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b6a16c367b06fc67ead648d2103e0f01f233e61d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad4f37ffe097b38d0b19fb839d52916e4173d146
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043991"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50449021"
 ---
-# <a name="delete-tokenissuancepolicy"></a>Удаление Токениссуанцеполици
+# <a name="delete-tokenissuancepolicy"></a>Удаление tokenIssuancePolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Удаление объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) .
+Удаление [объекта tokenIssuancePolicy.](../resources/tokenissuancepolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,7 +44,7 @@ DELETE /policies/tokenIssuancePolicies/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

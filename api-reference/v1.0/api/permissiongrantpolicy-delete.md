@@ -1,22 +1,22 @@
 ---
-title: Удаление Пермиссионгрантполици
-description: Удаление объекта Пермиссионгрантполици.
+title: Удаление permissionGrantPolicy
+description: Удаление объекта permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 45b91dd3480ba4228ed159b13dcaeeda2385c993
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: dfb93c8fa308441a5a01924fe4b02792cd7bf12a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524362"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448111"
 ---
-# <a name="delete-permissiongrantpolicy"></a>Удаление Пермиссионгрантполици
+# <a name="delete-permissiongrantpolicy"></a>Удаление permissionGrantPolicy
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [пермиссионгрантполици](../resources/permissiongrantpolicy.md) .
+Удаление [объекта permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524362"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Policy. ReadWrite. Пермиссионгрант |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. ReadWrite. Пермиссионгрант |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.PermissionGrant |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,20 +5,20 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7fad61b7dde22df382f92d8306bd5bc15b758bf6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac8f69d790b19e7569b60fc5d16559aa0c36eb76
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971274"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448328"
 ---
 # <a name="event-decline"></a>event: decline
 
 Пространство имен: microsoft.graph
 
-Отклонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
+Отклонение приглашения на указанное [событие](../resources/event.md) в календаре [пользователей.](../resources/calendar.md)
 
-Если событие разрешает предложения для нового времени, при отправке события приглашение можно предложить альтернативным способом, включив параметр **пропоседневтиме** . Дополнительные сведения о том, как предлагать время, а также как получать и принимать новое предложение по времени, приведены в разделе [предложение нового времени проведения собрания](/graph/outlook-calendar-meeting-proposals).
+Если событие позволяет предложить предложения для нового времени при отклонении события, приглашенный может выбрать альтернативное время, включив предложенный **параметрNewTime.** Дополнительные сведения о том, как предложить время, а также как получить и принять новое предложение времени, см. в дополнительных сведениях о том, как предложить [новое время собраний.](/graph/outlook-calendar-meeting-proposals)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,9 +44,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
 
-POST /me/calendargroup/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/decline
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
 ```
@@ -67,17 +64,17 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
-|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо задать для параметра **сендреспонсе** значение `true` . Необязательный.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Альтернативные даты и времени, предлагаемые приглашенным для запроса на собрание, чтобы начать и закончить. Допустимо только для событий, которые позволяют новые предложения времени. Для настройки этого параметра **необходимо установить sendResponse** для `true` . Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-Это действие возвращает HTTP-400, если выполняется одно или оба следующих действия:
+Это действие возвращает HTTP 400, если происходит одно или оба из следующих действий:
 
-- Параметр **пропоседневтиме** включен, но свойство **алловневтимепропосалс** **события** имеет значение `false` . 
-- Параметр **пропоседневтиме** включен, но для параметра **сендреспонсе** задано значение `false` .
+- Предлагаемый **параметрNewTime** включен, но свойство **allowNewTimeProposals** **события** `false` . 
+- Предлагаемый **параметрNewTime** включен, но параметр **sendResponse** задан для `false` .
 
 
 ## <a name="example"></a>Пример

@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Создание пакета
-description: Создание пакета элементов driveitem
+description: Создание пакета driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a586617ed783d737386c3487502e9af14f2348e6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8883006a6aa1daf86e4d3b8a6efac31e0ae25376
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955783"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471385"
 ---
 # <a name="create-bundle"></a>Создание пакета
 
@@ -19,7 +18,7 @@ ms.locfileid: "48955783"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление нового [пакета][] на диск пользователя.
+Добавьте новый [пакет][] в диск пользователя.
 
 [bundle]: ../resources/bundle.md
 
@@ -45,25 +44,25 @@ POST /drive/bundles
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление создаваемого набора в формате JSON.
+В корпусе запроса поставляем представление JSON созданного пакета.
 
 ## <a name="response"></a>Отклик
 
-Если запрос выполнен успешно, будет возвращен [driveItem](../resources/driveitem.md) , представляющий созданный пакет.
+Если запрос будет успешным, будет возвращен [driveItem,](../resources/driveitem.md) представляющий только что созданный пакет.
 
-Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.
+Дополнительные сведения о возвращении ошибок см. в статье [Отклики с ошибками][error-response].
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-bundle"></a>Пример 1: создание пакета
+### <a name="example-1-create-a-bundle"></a>Пример 1. Создание пакета
 
-В приведенном ниже примере показано, как создать базовый пакет.
-Этот запрос создаст новый пакет с именем `Just some files` и добавит в пакет два существующих элемента.
-Этот пакет можно использовать для совместного использования коллекции файлов с другими пользователями без предоставления общего доступа к папке, в которой хранятся эти элементы.
+В следующем примере показано, как создать базовый новый пакет.
+Этот запрос создаст новый пакет с именем и добавит в пакет два `Just some files` существующих элементов.
+Этот пакет можно использовать для обмена файлами с другими пользователями, не делясь папкой, в которая хранятся эти элементы.
 
 #### <a name="request"></a>Запрос
 
@@ -71,7 +70,7 @@ POST /drive/bundles
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -108,7 +107,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -121,11 +120,11 @@ Content-Type: application/json
 }
 ```
 
-Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
-### <a name="example-2-create-an-album"></a>Пример 2: Создание альбома
+### <a name="example-2-create-an-album"></a>Пример 2. Создание альбома
 
-Запрос на создание нового фотоальбома похож на то, что в аспекте пакета свойство альбома устанавливается в значение, отличное от NULL.
+Запрос на создание нового фотоальбома схож, хотя в аспекте пакета свойство альбомов занигается до значения non-null.
 
 #### <a name="request"></a>Запрос
 
@@ -133,7 +132,7 @@ Content-Type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -169,7 +168,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -183,13 +182,13 @@ Content-Type: application/json
 }
 ```
 
-Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
-Если для _@microsoft. Graph. conflictBehavior_ задано **Переименование** , а пакет с таким именем уже существует, то новое имя пакета будет обновляться как уникальное.
-OneDrive добавит номер в конец имени пакета.
+Если _@microsoft.graph.conflictBehavior_ будет переименован  и пакет с тем же именем уже существует, новое имя пакета будет обновлено, чтобы быть уникальным.
+OneDrive привносим номер в конец имени пакета.
 
-Например, будет `My Day at the Beach` переименован `My Day at the Beach 1` .
-Если `My Day at the Beach 1` используется, то номер будет увеличен повторно до тех пор, пока не будет обнаружено уникальное имя пакета.
+Например, `My Day at the Beach` будет `My Day at the Beach 1` переименовано .
+Если будет принято, то номер будет приращен еще раз, пока не будет обнаружено уникальное `My Day at the Beach 1` имя пакета.
 
 
 [error-response]: /graph/errors

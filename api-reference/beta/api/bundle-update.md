@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Обновление пакета
-description: Обновление пакета элементов driveitem
+description: Обновление пакета driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: af14454f660761a6e8fc6304d23870d5216540fc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c27690f146924db2ade4baf8539a4973aa01ce2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960188"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471525"
 ---
 # <a name="update-bundle"></a>Пакет обновления
 
@@ -19,11 +18,11 @@ ms.locfileid: "48960188"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление метаданных для [пакета][] [элементов DRIVEITEM][driveItem] по идентификатору.
-Вы можете обновлять только следующие метаданные:
+Обновление метаданных для [пакета][] [driveItems][driveItem по] ID.
+Можно обновить только следующие метаданные:
 
 * Имя пакета
-* Альбом `coverImageItemId` (если требуется)
+* Альбом `coverImageItemId` (если применимо)
 
 Любые другие запросы на изменение будут игнорироваться.
 
@@ -49,8 +48,8 @@ PATCH /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный. |
-| if-match      | тегом. Необязательное свойство. Если указан заголовок запроса, а предоставленное значение eTag не совпадают с текущим тегом eTag в бункле, `412 Precondition Failed` возвращается ответ.
+| Авторизация | Носитель \{токен\}. Обязательный. |
+| if-match      | eTag. Необязательно. Если этот загон запроса включен, а предоставленный eTag не соответствует текущему eTag на койке, `412 Precondition Failed` возвращается ответ.
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -58,13 +57,13 @@ PATCH /drive/items/{bundle-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает ресурс [driveItem][] , представляющий обновленный пакет, в тексте отклика.
+В случае успешного использования этот метод возвращает [ресурс driveItem,][] который представляет обновленный пакет в теле отклика.
 
-Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.
+Дополнительные сведения о возвращении ошибок см. в статье [Отклики с ошибками][error-response].
 
 ## <a name="example"></a>Пример
 
-В этом примере переименовывается пакет.
+В этом примере переименовка пакета.
 
 ### <a name="request"></a>Запрос
 
@@ -72,7 +71,7 @@ PATCH /drive/items/{bundle-id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
 Content-Type: application/json
 
@@ -103,7 +102,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -116,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
 
 [bundle]: ../resources/bundle.md

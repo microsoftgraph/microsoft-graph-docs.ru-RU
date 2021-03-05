@@ -1,32 +1,32 @@
 ---
-title: Создание Едукатионсинчронизатионпрофиле
-description: 'Создайте запрос для нового профиля синхронизации данных School в клиенте. Запросите состояние, чтобы получить состояние профиля. '
+title: Создание educationSynchronizationProfile
+description: 'Создайте запрос для нового профиля синхронизации школьных данных в клиенте. Запрос состояния, чтобы получить состояние профиля. '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7f8b7eb8ccbbb0df4fd0b32a434582f7e07e9ec4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f84d4f66036d3f767182c5e7abf12c231699073f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007198"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470237"
 ---
-# <a name="create-an-educationsynchronizationprofile"></a>Создание Едукатионсинчронизатионпрофиле
+# <a name="create-an-educationsynchronizationprofile"></a>Создание educationSynchronizationProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте запрос для нового [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте. [Запросите состояние](educationsynchronizationprofilestatus-get.md) , чтобы получить состояние профиля. 
+Создайте запрос для нового профиля синхронизации [школьных](../resources/educationsynchronizationprofile.md) данных в клиенте. [Запрос состояния,](educationsynchronizationprofilestatus-get.md) чтобы получить состояние профиля. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,13 +39,13 @@ POST /synchronizationProfiles
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
-| Content-Type | string | Приложение/JSON. Обязательно. |
+| Content-Type | string | Application/json. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [educationSynchronizationProfile.](../resources/educationsynchronizationprofile.md)
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `202, Accepted` код отклика и объект [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `202, Accepted` [объект educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -107,7 +107,7 @@ Content-type: application/json
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->

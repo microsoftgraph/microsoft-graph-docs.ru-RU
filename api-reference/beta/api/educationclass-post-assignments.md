@@ -1,16 +1,16 @@
 ---
 title: Создание educationAssignment
-description: 'Создает новое назначение. Только преподаватели в классе могут создавать задания. Задания начинаются в состоянии черновика, что означает, что учащиеся не будут видеть назначение, пока не будет вызвана публикация.  '
+description: 'Создает новое назначение. Только преподаватели в классе могут создать назначение. Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до тех пор, пока не будет вызвана публикация.  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2f123980cbecc9d1abeaffd48e5ec16af84480a1
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 399f97fc7e93657f7c3eefb039f5a410121e7a65
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753685"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470235"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "49753685"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает новое назначение. Только преподаватели в классе могут создавать задания. Задания начинаются в состоянии черновика, что означает, что учащиеся не будут видеть назначение, пока не будет вызвана публикация.  
+Создает новое назначение. Только преподаватели в классе могут создать назначение. Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до тех пор, пока не будет вызвана публикация.  
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "49753685"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -41,11 +41,11 @@ POST /education/classes/{id}/assignments
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [educationAssignment](../resources/educationassignment.md) в JSON.
+В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [educationAssignment](../resources/educationassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и `201 Created` объект [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -77,7 +77,7 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-В теле запроса укажу представление объекта [educationAssignment](../resources/educationassignment.md) в JSON.
+В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -85,7 +85,7 @@ Content-length: 279
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment"
 } -->

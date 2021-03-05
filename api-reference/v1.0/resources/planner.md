@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса планировщика
-description: Ресурс **планировщика** — точка входа для объектной модели планировщика. Он возвращает одноэлементный ресурс **планировщика** .  Он не содержит пригодных для использования свойств.
+title: Тип ресурсов планировщика
+description: Ресурс **планировщика** — это точка входа для объектной модели Planner. Он возвращает ресурс **планировщика singleton.**  Он не содержит никаких полезных свойств.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f8333596ee93a42db8eded49815059e8633bf3db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8fc5f91dd8da85b259dd792a0926311d57098ee9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037635"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470678"
 ---
-# <a name="planner-resource-type"></a>Тип ресурса планировщика
+# <a name="planner-resource-type"></a>Тип ресурсов планировщика
 
 Пространство имен: microsoft.graph
 
-Ресурс **планировщика** — точка входа для объектной модели планировщика. Он возвращает одноэлементный ресурс **планировщика** .  Он не содержит пригодных для использования свойств.
+Ресурс **планировщика** — это точка входа для объектной модели Planner. Он возвращает ресурс **планировщика singleton.**  Он не содержит никаких полезных свойств.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание объекта plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md);| Создание нового **plannerBucket** путем публикации в коллекции "сегменты".|
-|[Создание объекта plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Создание нового **plannerPlan** путем публикации в коллекции plans.|
-|[Создание объекта plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md);| Создание нового **plannerTask** путем публикации в коллекции Tasks.|
+|[Создание объекта plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md);| Создайте новый **планировщикBucket,** разместив в коллекции ведер.|
+|[Создание объекта plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Создайте новый **планировщикPlan,** разместив в коллекции планов.|
+|[Создание объекта plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md);| Создайте новый **планировщикTask,** разместив в коллекции задач.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных сегментов|
-|планирует|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных планов|
+|buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных ведер|
+|планы|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных планов|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных задач|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+Ниже показано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -50,7 +50,7 @@ ms.locfileid: "48037635"
 
 ## <a name="example"></a>Пример
 
-Ресурс **планировщика** доступен в корневом каталоге диаграммы.
+Ресурс **планировщика** доступен в корне графа.
 
 <!--{
   "blockType": "request"
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/planner
   "truncated": true,
   "@odata.type": "microsoft.graph.planner"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

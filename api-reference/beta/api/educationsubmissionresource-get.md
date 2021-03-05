@@ -1,31 +1,31 @@
 ---
-title: Получение Едукатионсубмиссионресаурце
-description: Получает свойства определенного ресурса, связанного с отправкой. Этот ресурс находится в списке ресурсов "Рабочий" и должен рассматриваться в процессе работы студентом. Этот ресурс упаковывается с возможной обратной указателем на ресурс назначения, если он был скопирован из назначения.
+title: Get educationSubmissionResource
+description: Извлекает свойства определенного ресурса, связанного с отправкой. Этот ресурс находится в "рабочем" списке ресурсов и должен рассматриваться студентом в процессе работы. Этот ресурс завернут с помощью возможного указателя обратно в ресурс назначения, если он был скопирован из назначения.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c0cac6fc194164cb13fb4e4bf473b00ed60def41
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b6f12b9b1739f844b5ef41e99942c3063f0cec95
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403360"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470395"
 ---
-# <a name="get-educationsubmissionresource"></a>Получение Едукатионсубмиссионресаурце
+# <a name="get-educationsubmissionresource"></a>Get educationSubmissionResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получает свойства определенного ресурса, связанного с отправкой. Этот ресурс находится в списке ресурсов "Рабочий" и должен рассматриваться в процессе работы студентом. Этот ресурс упаковывается с возможной обратной указателем на ресурс назначения, если он был скопирован из назначения.
+Извлекает свойства определенного ресурса, связанного с отправкой. Этот ресурс находится в "рабочем" списке ресурсов и должен рассматриваться студентом в процессе работы. Этот ресурс завернут с помощью возможного указателя обратно в ресурс назначения, если он был скопирован из назначения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -45,24 +45,44 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [educationSubmissionResource](../resources/educationsubmissionresource.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_educationsubmissionresource"
 }-->
-```http 
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsubmissionresource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsubmissionresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationsubmissionresource-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsubmissionresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmissionResource"
 } -->

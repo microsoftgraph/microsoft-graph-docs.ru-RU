@@ -1,29 +1,29 @@
 ---
-title: 'отчеты: Жетграупарчиведпринтжобс'
-description: Получение списка архивных заданий печати для определенной группы.
+title: 'отчеты: getGroupArchivedPrintJobs'
+description: Получите список архивных заданий печати для определенной группы.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1242a7cfa4789a5c35138d3bbe53e73d456566e5
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 98e208816a2415f176407d1d76194046c0284250
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848320"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470811"
 ---
-# <a name="reports-getgrouparchivedprintjobs"></a>отчеты: Жетграупарчиведпринтжобс
+# <a name="reports-getgrouparchivedprintjobs"></a>отчеты: getGroupArchivedPrintJobs
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка архивных заданий печати для определенной группы.
+Получите список архивных заданий печати для определенной группы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -34,8 +34,8 @@ ms.locfileid: "48848320"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getGroupArchivedPrintJobs
-GET /reports/getGroupArchivedPrintJobs
+GET /print/reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
@@ -46,12 +46,12 @@ GET /reports/getGroupArchivedPrintJobs
 
 | Параметр     | Тип                 | Обязательный? | Описание                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `groupId`     | `Edm.String`         | Да       | Идентификатор группы, для которой требуется возвратить данные.                              |
-| `periodStart` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) периода времени, из которого требуется включить данные. |
-| `periodEnd`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) периода времени, из которого требуется включить данные.   |
+| `groupId`     | `Edm.String`         | Да       | ID группы для возврата данных.                              |
+| `startDateTime` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) для периода времени с учетом данных. |
+| `endDateTime`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) для периода времени с учетом данных.   |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [арчиведпринтжоб](../resources/archivedprintjob.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -62,7 +62,7 @@ GET /reports/getGroupArchivedPrintJobs
   "name": "reports-getgrouparchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>Отклик

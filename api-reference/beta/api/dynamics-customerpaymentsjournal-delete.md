@@ -1,26 +1,26 @@
 ---
-title: Удаление Кустомерпайментжаурналс
-description: Удаляет журнал платежей клиента в Dynamics 365 Business Central.
+title: Удаление customerPaymentJournals
+description: Удаляет журнал платежей клиентов в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 2cdc8058b2a3069695ecc543d07d7fd543eab70a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03a2e95752e869ff5a897695713688e0892af316
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981410"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471297"
 ---
-# <a name="delete-customerpaymentjournals"></a>Удаление Кустомерпайментжаурналс
+# <a name="delete-customerpaymentjournals"></a>Удаление customerPaymentJournals
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта журнала платежей клиентов из Dynamics 365 Business Central.
+Удаление объекта журнала платежей клиентов из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981410"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,9 +43,9 @@ DELETE /financials/companies/{id}/customerPaymentJournals/{id}
 |Заголовок       |Значение                     |
 |-------------|--------------------------|
 |Авторизация|Bearer {токен}. Обязательный. |
-|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментжаурналс**, **кустомерпайментжаурналс** не будет обновлен. |
+|If-Match     |Обязательно. Если этот загон запроса включен и предоставленный eTag не совпадает с текущим тегом в **customerPaymentJournals,** **клиентPaymentJournals** не обновляется. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -59,7 +59,7 @@ DELETE /financials/companies/{id}/customerPaymentJournals/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymen
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

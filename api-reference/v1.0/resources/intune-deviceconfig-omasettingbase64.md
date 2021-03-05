@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c7bdd9eda67d9bdebc2452ad778d4ad653d7df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6288803dd87afa7fe45525c20258bdded34482ea
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079279"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470755"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -26,10 +26,10 @@ ms.locfileid: "48079279"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
+|fileName|String|Имя файла, связанное с свойством Value (*.cer \| *.crt \| *.p7b \| *.bin).|
 |value|String|Значение (строка в кодировке Base64).|
 
 ## <a name="relationships"></a>Связи

@@ -1,18 +1,18 @@
 ---
 title: Удаление сотрудников
-description: Удаляет объект Employee в Dynamics 365 Business Central.
+description: Удаляет объект сотрудника в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 47e9902bc51c739446cb9bf3055c063632cc7206
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5aeab6c8b746ddd815ae26bf99e401c71d91746
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981347"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471279"
 ---
 # <a name="delete-employees"></a>Удаление сотрудников
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981347"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление сотрудника из Dynamics 365 Business Central.
+Удаление сотрудника из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981347"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,9 +43,9 @@ DELETE /financials/companies/{id}/employees/{id}
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **сотрудников**, **сотрудники** не будут обновляться. |
+|If-Match       |Обязательно. Если этот заглавный запрос включен и предоставленный eTag не соответствует  текущему тегу сотрудников, сотрудники не будут обновляться. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -57,7 +57,7 @@ DELETE /financials/companies/{id}/employees/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -1,18 +1,18 @@
 ---
 title: Удаление элементов
-description: Удаляет объект item в Dynamics 365 Business Central.
+description: Удаляет объект элемента в Центре бизнеса Dynamics 365.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c86848fbfe8d15e9f28a448508deeff4988213d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76f498cbc5e8edfab73dc26735b10b46c6cbcee9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981298"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471278"
 ---
 # <a name="delete-items"></a>Удаление элементов
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981298"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление элемента из Dynamics 365 Business Central.
+Удаление элемента из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981298"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,9 +43,9 @@ DELETE /financials/companies/{id}/items/{id}
 |Заголовок       |Значение                    |
 |-------------|-------------------------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **элементов**, **элементы** не будут обновлены. |
+|If-Match     |Обязательно. Если этот заглавный элемент запроса включен и предоставленный eTag  не соответствует текущему тегу элементов, элементы не будут обновляться. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -56,7 +56,7 @@ DELETE /financials/companies/{id}/items/{id}
 **Запрос**
 
 Ниже приведен пример запроса.
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 ```
 
@@ -64,7 +64,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

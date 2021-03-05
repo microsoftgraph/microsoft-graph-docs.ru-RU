@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса Рискюсер
+title: тип ресурса riskyUser
 description: элемент рискованных пользователей
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2989b0f74243679daaebcb482c0640a78bc9effa
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 00a284f4a3592ccf378e0e6f218c56902c219d51
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581290"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448993"
 ---
-# <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
+# <a name="riskyuser-resource-type"></a>тип ресурса riskyUser
 
 Пространство имен: microsoft.graph
 
-Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
+Представляет пользователей Azure AD, которые находятся в опасности. Azure AD непрерывно оценивает риски пользователей на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям в Azure AD.
 
-Для получения дополнительных сведений о событиях риска обратитесь к разделу [Защита удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection).
+Дополнительные сведения о событиях с рисками см. в [видеоролике Azure Active Directory Identity Protection.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список riskyUsers](../api/riskyuser-list.md)|Коллекция [рискюсер](../resources/riskyuser.md)|Получение списка объектов **рискюсер** и их свойств.|
-|[Получение Рискюсер](../api/riskyuser-get.md)|[рискюсер](../resources/riskyuser.md)|Чтение свойств и связей объекта **рискюсер** .|
-|[Отклонение Рискюсер](../api/riskyuser-dismiss.md)|Нет|Отклонить риск одного или нескольких объектов **рискюсер** . |
-|[Подтверждение Рискюсер в качестве скомпрометированного](../api/riskyuser-confirmcompromised.md)|Нет|Подтвердите, что один или несколько объектов **рискюсер** считаются скомпрометированными.|
-|[Журнал списка](../api/riskyuser-list-history.md)|Коллекция [рискюсерхисторитем](../resources/riskyuserhistoryitem.md)|Получение **рискюсерхисторитемс** из свойства навигации по журналу.|
-|[Получение журнала](../api/riskyuser-get-riskyuserhistoryitem.md)|[рискюсерхисторитем](../resources/riskyuserhistoryitem.md)|Чтение свойств и связей объекта [рискюсерхисторитем](../resources/riskyuserhistoryitem.md) .|
+|[Список riskyUsers](../api/riskyuser-list.md)|[коллекция riskyUser](../resources/riskyuser.md)|Получите список объектов **riskyUser** и их свойств.|
+|[Get riskyUser](../api/riskyuser-get.md)|[riskyUser](../resources/riskyuser.md)|Ознакомьтесь с свойствами и отношениями объекта **riskyUser.**|
+|[Отклонение riskyUser](../api/riskyuser-dismiss.md)|Нет|Отклонять риск одного или более **объектов riskyUser.** |
+|[Подтверждение riskyUser как скомпрометированного](../api/riskyuser-confirmcompromised.md)|Нет|Подтвердим, что один или несколько **объектов riskyUser** могут быть скомпрометированы.|
+|[История списка](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|Получите **свойство riskyUserHistoryItems из** свойства навигации по истории.|
+|[Получить историю](../api/riskyuser-get-riskyuserhistoryitem.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Ознакомьтесь с свойствами и отношениями объекта [riskyUserHistoryItem.](../resources/riskyuserhistoryitem.md)|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор пользователя под угрозой.|
-|isDeleted|Boolean|Указывает, удален ли пользователь. Возможные значения: `true` , `false`|
-|Процесс обработки|Boolean|Указывает, вехсер ли опасное состояние пользователя при обработке внутренней|
-|riskDetail|riskDetail|Сведения об обнаруженном риске. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|рискластупдатеддатетиме|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.|
-|riskLevel|riskLevel|Уровень обнаруженного опасного пользователя. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|id|String|Уникальный ID пользователя в опасности.|
+|isDeleted|Логический|Указывает, удален ли пользователь. Возможные значения: `true` , `false`|
+|isProcessing|Логический|Указывает, что рискованное состояние пользователя обрабатывается backend|
+|riskDetail|riskDetail|Сведения об обнаружении риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
+|riskLastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.|
+|riskLevel|riskLevel|Уровень обнаруженного рискованного пользователя. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|Состояние риска пользователя. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|userDisplayName|String|Опасное отображаемое имя пользователя.|
-|userPrincipalName|String|Опасное имя участника пользователя.|
+|userDisplayName|String|Рискованное имя отображения пользователя.|
+|userPrincipalName|String|Рискованное основное имя пользователя.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|лист|Коллекция [рискюсерхисторитем](../resources/riskyuserhistoryitem.md)|   Действие, связанное с изменением уровня риска пользователя|
+|история|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|   Действие, связанное с изменением уровня риска пользователя|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

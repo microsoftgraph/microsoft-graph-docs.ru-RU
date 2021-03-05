@@ -1,22 +1,22 @@
 ---
 title: Список приложений в команде
-description: Получить список приложений, установленных в указанной команде.
+description: Извлечение списка приложений, установленных в указанной группе.
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f796b05cb5b315841dde43c9a18f29cba9a6927
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 24c3de7479de6f4d380b50a5c917f99b5495f9bb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691235"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470706"
 ---
 # <a name="list-apps-in-team"></a>Список приложений в команде
 
 Пространство имен: microsoft.graph
 
-Получить список [приложений, установленных](../resources/teamsappinstallation.md) в указанной [команде.](../resources/team.md)
+Извлечение списка [приложений, установленных](../resources/teamsappinstallation.md) в указанной [группе.](../resources/team.md)
 
 
 > [!NOTE]
@@ -28,9 +28,9 @@ ms.locfileid: "49691235"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -44,7 +44,7 @@ GET /teams/{team-id}/installedApps
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$filter` `$select` запросов `$expand` [OData и OData](/graph/query-parameters) для настройки отклика.
+Этот метод поддерживает `$filter` параметры `$select` запроса `$expand` [OData и OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,7 +58,7 @@ GET /teams/{team-id}/installedApps
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [teamsAppInstallation](../resources/teamsappinstallation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов teamsAppInstallation](../resources/teamsappinstallation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -129,7 +129,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>Пример 2. Просмотр имен и других сведений об установленных приложениях
+### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>Пример 2. Получить имена и другие сведения об установленных приложениях
 
 #### <a name="request"></a>Запрос
 
@@ -195,7 +195,7 @@ Content-type: application/json
                 "version": "1.0.2",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Be more productive with Microsoft Flow",
+                "shortDescription": "Be more productive with Microsoft Flow",
                 "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -211,7 +211,7 @@ Content-type: application/json
                 "version": "1.2",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Add a tab for a SharePoint news article or page.",
+                "shortDescription": "Add a tab for a SharePoint news article or page.",
                 "description": "This app allows you to tab intranet pages from any SharePoint site so that they can be viewed by your team inside Teams channels.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -227,7 +227,7 @@ Content-type: application/json
                 "version": "1.0.0",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Capture and share ideas, to-do lists and other notes with your team.",
+                "shortDescription": "Capture and share ideas, to-do lists and other notes with your team.",
                 "description": "Capture and share ideas, to-do lists and other thoughts with your team. You can also co-author anytime.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -237,7 +237,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Пример 3. Получите ресурс установки приложения на основе ИД манифеста связанного приложения
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Пример 3. Получить ресурс установки приложения на основе манифеста ID связанного приложения
 
 #### <a name="request"></a>Запрос
 
@@ -307,7 +307,7 @@ Content-type: application/json
                 "requiredResourceSpecificApplicationPermissions": [
                 ],
                 "publishingState": "published",
-                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                 "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
                 "lastModifiedDateTime": null,
                 "createdBy": null

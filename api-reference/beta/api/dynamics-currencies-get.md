@@ -1,18 +1,18 @@
 ---
 title: Получение валют
-description: Возвращает объект Currency в Dynamics 365 Business Central.
+description: Получает объект валюты в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: fb96fceef882cd90def2746ea556bc9ea54581a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6b471b0aa7233c9777aaccdadafc8621aa65cc3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471350"
 ---
 # <a name="get-currencies"></a>Получение валют
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981522"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта Currency для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта валюты для Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981522"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,11 +45,11 @@ GET /financials/companies/{id}/currencies/{id}
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **валюты** в теле отклика.
+В случае успеха этот метод возвращает код ответа и объект `200 OK` **валюты** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -57,7 +57,7 @@ GET /financials/companies/{id}/currencies/{id}
 
 Ниже приведен пример запроса.
 
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 

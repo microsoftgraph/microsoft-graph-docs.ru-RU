@@ -1,25 +1,25 @@
 ---
 title: Создание oAuth2PermissionGrant
-description: Создание объекта oAuth2PermissionGrant, представляющего делегированное предоставление разрешений.
+description: Создайте объект oAuth2PermissionGrant, представляющий делегированную выдачу разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8f5e458738db2b0431a034e9b70d6e727853cbcb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e893f69fba9e8494854cb89b030f75fe5b30dc8f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087217"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448202"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>Создание делегированного предоставления разрешений (oAuth2PermissionGrant)
+# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>Создание делегированного разрешения (oAuth2PermissionGrant)
 
 Пространство имен: microsoft.graph
 
 
-Создайте делегированное предоставление разрешений. Делегированное предоставление разрешений представлено объектом [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
+Создание делегированного разрешения. Делегированная выдача разрешений представлена объектом [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
-Делегированное разрешение предоставляет субъекту-клиенту (представляющему клиентское приложение) доступ к субъекту-службе ресурсов (представляющему API), от имени пользователя, выполнившего вход, для уровня доступа, ограниченного делегированными разрешениями, которые были предоставлены.
+Делегированная выдача разрешений разрешает директору клиентской службы (представляющим клиентскую заявку) получать доступ к директору службы ресурсов (представляющим API) от имени подписанного пользователя, для уровня доступа, ограниченного делегированных разрешений, которые были предоставлены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,9 +27,9 @@ ms.locfileid: "48087217"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Делегатедпермиссионгрант. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,11 +47,11 @@ POST /oauth2PermissionGrants
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика 200-й серии и новый [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8dc8f4542e6a354607db019d0044290585f340f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 26d5f16bd6d61689ff4cfe73b83c4a45add9c2f7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436066"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471105"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление featurerolloutpolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "50436066"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.FeatureRollout |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -52,7 +52,7 @@ PATCH /directory/featureRolloutPolicies/{id}
 |:-------------|:------------|:------------|
 |description|String|Описание этой политики.|
 |displayName|String|Имя отображения для этой политики.|
-|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|isAppliedToOrganization|Логический|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
 |isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ## <a name="response"></a>Отклик

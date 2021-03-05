@@ -1,22 +1,22 @@
 ---
 title: 'event: dismissReminder'
-description: Отклонить напоминание, запущенное для события в календаре пользователя.
+description: Отклонять напоминание, которое было вызвано событием в календаре пользователей.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab67b59711a47e4ed004e7956c64d06b277bff17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b2a33e199a7add86c494a48da5b519119279732
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028947"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448321"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
 Пространство имен: microsoft.graph
 
-Отклонить напоминание, запущенное для [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
+Отклонять напоминание, которое было вызвано [событием](../resources/event.md) в календаре [пользователей.](../resources/calendar.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,9 +40,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/dismissReminder
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder

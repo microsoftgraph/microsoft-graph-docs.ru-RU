@@ -3,14 +3,14 @@ title: Список riskyUsers
 description: Получите список объектов riskyUser и их свойств.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 075f135afe075450197ff8b3ed1d8e1c5bbde36d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cc72c174b81a5d2442b264026305e28cbb03afdf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874349"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448062"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 Пространство имен: microsoft.graph
@@ -23,8 +23,8 @@ ms.locfileid: "49874349"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskyUser.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /identityProtection/riskyUsers
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов riskyUser](../resources/riskyuser.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [riskyUser](../resources/riskyuser.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

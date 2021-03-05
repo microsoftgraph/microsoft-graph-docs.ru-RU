@@ -3,14 +3,14 @@ title: 'directoryObject: getByIds'
 description: Возвращает объекты каталогов, указанные в списке идентификаторов.
 author: keylimesoda
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3e144a86ffdf3338fdb4afa5925ffe91e59e9901
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d86b10766b0a735e482fd0d09d19a0682d7099d6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971330"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448592"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 

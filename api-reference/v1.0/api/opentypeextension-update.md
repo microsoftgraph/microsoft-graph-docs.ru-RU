@@ -1,33 +1,33 @@
 ---
 title: Обновление открытого расширения
-description: 'Обновление открытого расширения (объекта openTypeExtension) со свойствами в теле запроса:'
+description: 'Обновим открытое расширение (объект openTypeExtension) свойствами в теле запроса:'
 localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 87a56bd0728f069748da23edfbf71f8ebd1dec76
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: e32fc9a5a37453bfe77a2fa4a8539d69ebedef6f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092444"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470723"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
 Пространство имен: microsoft.graph
 
-Обновление открытого расширения[(объекта openTypeExtension)](../resources/opentypeextension.md) со свойствами в теле запроса:
+Обновление открытого расширения[(объекта openTypeExtension)](../resources/opentypeextension.md) с свойствами в теле запроса:
 
 - Если свойство в теле запроса совпадает с именем существующего свойства в расширении, то данные в расширении будут обновлены.
 - В противном случае это свойство и его данные будут добавлены в расширение. 
 
 Данные в расширении могут относиться к элементарным типам или массиву элементарных типов.
 
-Список ресурсов, [](#permissions) которые поддерживают открытые расширения, см. в таблице в разделе "Разрешения".
+Список ресурсов, поддерживаюных открытые расширения, см. в таблице в разделе [Разрешения.](#permissions)
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от ресурса, в который было создано расширение, и запрашиваемого типа разрешений (делегирование или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы узнать больше, в том [числе](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) с осторожностью перед выбором более привилегированных разрешений, найди следующие разрешения в [разрешениях.](/graph/permissions-reference)
+В зависимости от ресурса, в который было создано расширение, и запрашиваемого типа разрешений (делегирования или приложения), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -61,7 +61,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extension
 PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
->**Примечание.** В примере выше показаны некоторые распространенные способы идентификации экземпляра ресурса для обновления расширения в нем. Весь другой синтаксис, позволяющий идентифицировать эти экземпляры ресурсов, поддерживает обновление открытых расширений в них аналогичным образом.
+>**Примечание:** В вышеуказанном синтаксисе показано несколько распространенных способов идентификации экземпляра ресурса для обновления расширения в нем. Все остальные синтаксис, позволяющие идентифицировать эти экземпляры ресурсов, поддерживают обновление открытых расширений в них аналогичным образом.
 
 См. раздел [Тело запроса](#request-body) о том, как включить в тело запроса специальные данные для изменения или дополнения этого расширения.
 
@@ -194,8 +194,10 @@ Content-type: application/json
 
 Ниже приведен запрос и тело запроса для изменения значения параметра `expirationDate` на `2016-07-30T11:00:00Z`.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "sampleKeys": ["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
   "name": "update_opentypeextension"
 }-->
@@ -216,13 +218,27 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-opentypeextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response-2"></a>Отклик 2
 
 Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.
 
 <!-- {  
-  "blockType": "ignored",  
+  "blockType": "response",  
   "truncated": true,  
   "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 

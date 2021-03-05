@@ -1,26 +1,26 @@
 ---
-title: Получение учетных записей
-description: Возвращает объект Account в Dynamics 365 Business Central.
+title: Получить учетные записи
+description: Получает объект учетной записи в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ebf53db9904b7df506f36fb519b21980eab44121
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6af282938adaf801046164b94270bcf2e60d98a5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981802"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471378"
 ---
-# <a name="get-accounts"></a>Получение учетных записей
+# <a name="get-accounts"></a>Получить учетные записи
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта Account для Dynamics 365 Business Central.
+Извлечение свойств и связей объекта учетной записи для Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981802"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 
@@ -45,17 +45,17 @@ GET /financials/companies/{id}/accounts/{id}
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Accounts** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект учетных `200 OK` записей в  тексте ответа.
 
 ## <a name="example"></a>Пример
 
-**Request (запрос** ) Ниже приведен пример запроса.
+**Запрос** Вот пример запроса.
 
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/accounts/{id}
 ```
 

@@ -1,24 +1,24 @@
 ---
-title: Получение oAuth2PermissionGrant
-description: Получение свойств и связей одного oAuth2PermissionGrant, представляющих делегированное предоставление разрешений.
+title: Получить oAuth2PermissionGrant
+description: Извлечение свойств и связей одного oAuth2PermissionGrant, представляющего делегированную лицензию.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b9b3f1c196b60bf2c4b04a9a2a6a04f254f16b2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a268a5801ee5202bd6621b4f7f05aac39a0fb86
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971057"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448216"
 ---
-# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Получение делегированного разрешения Grant (oAuth2PermissionGrant)
+# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Получить делегированную субсидию разрешений (oAuth2PermissionGrant)
 
 Пространство имен: microsoft.graph
 
-Получение свойств одного объекта [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Извлечение свойств одного [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
-**OAuth2PermissionGrant** представляет делегированные разрешения, которые были предоставлены клиентскому приложению для доступа к API от имени пользователя, выполнившего вход в систему.
+**OAuth2PermissionGrant** представляет делегированную разрешений, которые были предоставлены для клиентского приложения для доступа к API от имени подписанного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "47971057"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Делегатедпермиссионгрант. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -48,13 +48,13 @@ GET /oauth2PermissionGrants/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

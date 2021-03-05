@@ -3,14 +3,14 @@ title: Удаление элемента роли каталога
 description: Удаление элемента из объекта directoryRole.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72491fbc37dfbb77411178e9cfdfe2147d5119b7
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: c5f074b99260154db0d5e9f725a2082c4980af91
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522836"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448565"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -19,7 +19,7 @@ ms.locfileid: "49522836"
 Удаление члена из [directoryRole](../resources/directoryrole.md).
 
 > [!Note]
-> С этим API можно использовать как идентификатор объекта, так и идентификатор шаблона **directoryRole** . Неизменяемый идентификатор шаблона встроенной роли, который можно просмотреть в описании роли на портале Azure. Дополнительные сведения: [идентификаторы шаблонов ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+> С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "49522836"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +56,7 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Пример 1: Удаление члена роли каталога с помощью ИД роли
+### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Пример 1. Удаление члена роли каталога с помощью объекта role objectId
 
 ##### <a name="request"></a>Запрос
 
@@ -102,7 +102,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Пример 2: Удаление члена роли каталога с помощью templateId ролей
+### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Пример 2. Удаление члена роли каталога с помощью шаблона roleId
 
 ##### <a name="request"></a>Запрос
 

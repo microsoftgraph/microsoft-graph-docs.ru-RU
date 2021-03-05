@@ -1,22 +1,22 @@
 ---
-title: Получение Намедлокатион
-description: Получение свойств и связей объекта намедлокатион.
+title: Get namedLocation
+description: Извлечение свойств и связей объекта с именем.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f05785844fd7ee67d0db6b89854e0bdbde94e381
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b65c4569777c4a0f17e335ae03de7aaa1c07b03f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020873"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448230"
 ---
-# <a name="get-namedlocation"></a>Получение Намедлокатион
+# <a name="get-namedlocation"></a>Get namedLocation
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [намедлокатион](../resources/namedlocation.md) .
+Извлечение свойств и связей объекта [с именемLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "48020873"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -46,13 +46,13 @@ GET /identity/conditionalAccess/namedLocations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [намедлокатион](../resources/namedlocation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` с именемLocation в тексте [](../resources/namedlocation.md) ответа.
 
 ## <a name="examples"></a>Примеры
 

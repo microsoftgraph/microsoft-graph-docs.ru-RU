@@ -1,21 +1,21 @@
 ---
-title: История списков
-description: Получите объект riskyUserHistoryItems из свойства навигации истории.
+title: История списка
+description: Получите свойство riskyUserHistoryItems из свойства навигации по истории.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: eddb74f1bc6aacc12f9a2a73df6df44b2684a5c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4115251bbc9644e4f3beb5fdf0ddea0437f6d594
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874356"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448069"
 ---
-# <a name="list-history"></a>История списков
+# <a name="list-history"></a>История списка
 Пространство имен: microsoft.graph
 
-Получите объект riskyUserHistoryItems из свойства навигации истории.
+Получите свойство riskyUserHistoryItems из свойства навигации по истории.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
@@ -23,8 +23,8 @@ ms.locfileid: "49874356"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskyUser.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /identityProtection/riskyUsers/{riskyUserId}/history/{riskyUserHistoryItemId
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

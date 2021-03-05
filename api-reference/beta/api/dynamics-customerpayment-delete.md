@@ -1,26 +1,26 @@
 ---
-title: Удаление Кустомерпайментс
-description: Удаляет объект платежа клиента в Dynamics 365 Business Central.
+title: Удаление customerPayments
+description: Удаляет объект платежей клиента в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1127f996cbe002e9ca1f475dcbafccf0a3a6fded
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f84c522604b73442b023cdc2085b387e0131e244
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981459"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471315"
 ---
-# <a name="delete-customerpayments"></a>Удаление Кустомерпайментс
+# <a name="delete-customerpayments"></a>Удаление customerPayments
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление Кустомерпаймент из Dynamics 365 Business Central.
+Удаление клиентской предоплаты из Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "47981459"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,9 +43,9 @@ DELETE /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментс**, **кустомерпайментс** не будет обновлен. |
+|If-Match       |Обязательно. Если заглавная информация об этом запросе включена и предоставленный eTag не соответствует текущему тегу на **customerPayments,** **клиенты** не будут обновляться. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -59,7 +59,7 @@ DELETE /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/
 
 Ниже приведен пример запроса.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymen
 
 Ниже приведен пример отклика. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

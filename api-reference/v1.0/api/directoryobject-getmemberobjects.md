@@ -3,14 +3,14 @@ title: Вывод объектов элементов
 description: " Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная функция. "
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a4823e7e659eb667d46937aae1891fe5c8011854
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3bd1d45833f0c164b554cc2350266f1a500216bb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052448"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448578"
 ---
 # <a name="get-member-objects"></a>Вывод объектов членства
 
@@ -43,7 +43,7 @@ POST /directoryObjects/{id}/getMemberObjects
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type   | string  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

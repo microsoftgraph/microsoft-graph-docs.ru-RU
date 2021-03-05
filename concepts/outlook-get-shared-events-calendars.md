@@ -1,15 +1,15 @@
 ---
 title: Получение общего или делегированного календаря Outlook и его событий
 description: В Outlook владелец календаря может поделиться им с другими пользователями и предоставить им доступ на просмотр или изменение событий в своем календаре. Календарь может быть пользовательским или основным. Владелец также может предоставить делегату право выполнять действия от его имени, получать приглашения на собрания или отвечать на них, а также создавать или изменять элементы в основном календаре учетной записи электронной почты.
-author: angelgolfer-ms
+author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: afa12541519f5f6f2db24ab5d68644dbdba8572b
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 06e11f11b9c25e3392075e027278558d1330d51e
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652025"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470076"
 ---
 # <a name="get-shared-or-delegated-outlook-calendar-and-its-events"></a>Получение общего или делегированного календаря Outlook и его событий
 

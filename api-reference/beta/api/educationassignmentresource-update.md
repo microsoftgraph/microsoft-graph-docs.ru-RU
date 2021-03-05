@@ -1,31 +1,31 @@
 ---
-title: Обновление Едукатионассигнментресаурце
-description: 'Обновление свойств ресурса, связанного с назначением. Изменять объекты ресурсов назначения могут только преподаватели в классе.  '
+title: Обновление educationAssignmentResource
+description: 'Обновление свойств ресурса, связанного с назначением. Только преподаватели в классе могут изменять объекты ресурсов назначения.  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 17b1b6353c02633fbecdb8d480cb6f1411b31f40
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d2ed74d02d54464360f0c1b2d08fda9d53caebb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002484"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470432"
 ---
-# <a name="update-educationassignmentresource"></a>Обновление Едукатионассигнментресаурце
+# <a name="update-educationassignmentresource"></a>Обновление educationAssignmentResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств ресурса, связанного с назначением. Изменять объекты ресурсов назначения могут только преподаватели в классе.  
+Обновление свойств ресурса, связанного с назначением. Только преподаватели в классе могут изменять объекты ресурсов назначения.  
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite   |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -45,16 +45,18 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дистрибутефорстудентворк|Boolean| Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.|
-|resource|едукатионресаурце| Объект Resource. |
+|distributeForStudentWork|Логический| Указывает, следует ли скопировать этот ресурс на объект ресурсов каждого учащегося при публикации назначения.|
+|resource|educationResource| Объект Resource. |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignmentResource](../resources/educationassignmentresource.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_educationassignmentresource"
 }-->
 ```http
@@ -66,6 +68,24 @@ Content-length: 822
   "distributeForStudentWork": "false"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentresource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignmentresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignmentresource-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
@@ -73,7 +93,7 @@ Content-length: 822
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->

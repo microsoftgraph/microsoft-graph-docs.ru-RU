@@ -1,22 +1,22 @@
 ---
-title: Удаление Пермиссионгранткондитионсет из коллекции исключений Пермиссионгрантполици
+title: Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 description: Удаляет исключенный набор условий из политики предоставления разрешений.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 745e42b4d236177febe3486ba1dfcbf427fe27bd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7cdcf9cb5a4888d9700202fd719afb8a8f8eb073
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524400"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448119"
 ---
-# <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление Пермиссионгранткондитионсет из коллекции исключений Пермиссионгрантполици
+# <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) из коллекции **исключений** объекта [пермиссионгрантполици](../resources/permissiongrantpolicy.md).
+Удаляет [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) из  исключенной коллекции [permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524400"
 
 | Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись) | Пермиссионгрантполици. ReadWrite. ALL |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение | Пермиссионгрантполици. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+| Для приложений | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
