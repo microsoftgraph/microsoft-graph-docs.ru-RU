@@ -5,36 +5,38 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 6e5a8a06f21d338703db7ca557e9911c96b87bbb
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: 448c0525a318cac64bb5d381b986c238f563025d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816163"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515703"
 ---
-# <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a><span data-ttu-id="c87e7-103">Отправка документов с помощью API универсальной печати Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="c87e7-103">Upload documents using the Microsoft Graph Universal Print API</span></span>
+# <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a><span data-ttu-id="8f5bf-103">Отправка документов с помощью API универсальной печати Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8f5bf-103">Upload documents using the Microsoft Graph Universal Print API</span></span>
 
-<span data-ttu-id="c87e7-104">Чтобы напечатать документ с помощью API универсальной печати в Microsoft Graph, [создайте задание печати](/graph/api/printershare-post-jobs?view=graph-rest-beta), отправьте документ и [запустите задание печати](/graph/api/printjob-start?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="c87e7-104">To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta), upload a document, and then [start the print job](/graph/api/printjob-start?view=graph-rest-beta).</span></span> <span data-ttu-id="c87e7-105">В этой статье описано, как отправить документ, начиная с [создания сеанса отправки](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="c87e7-105">This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).</span></span>
+[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
-<span data-ttu-id="c87e7-106">Чтобы отправить файл или его часть, приложение отправляет запрос PUT на адрес **uploadUrl** , указанный в ответе для **createUploadSession** .</span><span class="sxs-lookup"><span data-stu-id="c87e7-106">To upload a file, or a portion of a file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
-<span data-ttu-id="c87e7-107">Вы можете отправить файл целиком или разделить его на несколько диапазонов байтов. При этом каждый запрос должен содержать фрагмент размером менее 10 МБ.</span><span class="sxs-lookup"><span data-stu-id="c87e7-107">You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.</span></span>
+<span data-ttu-id="8f5bf-104">Чтобы напечатать документ с помощью API универсальной печати в Microsoft Graph, [создайте задание печати](/graph/api/printershare-post-jobs), отправьте документ и [запустите задание печати](/graph/api/printjob-start).</span><span class="sxs-lookup"><span data-stu-id="8f5bf-104">To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs), upload a document, and then [start the print job](/graph/api/printjob-start).</span></span> <span data-ttu-id="8f5bf-105">В этой статье описано, как отправить документ, начиная с [создания сеанса отправки](/graph/api/printdocument-createuploadsession).</span><span class="sxs-lookup"><span data-stu-id="8f5bf-105">This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession).</span></span>
 
-<span data-ttu-id="c87e7-108">Сегменты файла можно отправлять в любом порядке, в том числе параллельно (до четырех параллельных запросов).</span><span class="sxs-lookup"><span data-stu-id="c87e7-108">The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests.</span></span> <span data-ttu-id="c87e7-109">После отправки всех двоичных сегментов документа двоичный файл связывается с **printDocument** .</span><span class="sxs-lookup"><span data-stu-id="c87e7-109">When all the binary segments of document are uploaded, the binary file is linked to the **printDocument** .</span></span>
+<span data-ttu-id="8f5bf-106">Чтобы отправить файл или его часть, приложение отправляет запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-106">To upload a file, or a portion of a file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
+<span data-ttu-id="8f5bf-107">Вы можете отправить файл целиком или разделить его на несколько диапазонов байтов. При этом каждый запрос должен содержать фрагмент размером менее 10 МБ.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-107">You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c87e7-110">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c87e7-110">HTTP request</span></span>
+<span data-ttu-id="8f5bf-108">Сегменты файла можно отправлять в любом порядке, в том числе параллельно (до четырех параллельных запросов).</span><span class="sxs-lookup"><span data-stu-id="8f5bf-108">The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests.</span></span> <span data-ttu-id="8f5bf-109">После отправки всех двоичных сегментов документа двоичный файл связывается с **printDocument**.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-109">When all the binary segments of document are uploaded, the binary file is linked to the **printDocument**.</span></span>
 
-<span data-ttu-id="c87e7-111">Отправьте запрос PUT на адрес **uploadUrl** , указанный в ответе для **createUploadSession** .</span><span class="sxs-lookup"><span data-stu-id="c87e7-111">Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f5bf-110">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8f5bf-110">HTTP request</span></span>
 
-### <a name="request-headers"></a><span data-ttu-id="c87e7-112">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c87e7-112">Request headers</span></span>
-| <span data-ttu-id="c87e7-113">Имя</span><span class="sxs-lookup"><span data-stu-id="c87e7-113">Name</span></span>          | <span data-ttu-id="c87e7-114">Описание</span><span class="sxs-lookup"><span data-stu-id="c87e7-114">Description</span></span>   |
+<span data-ttu-id="8f5bf-111">Отправьте запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-111">Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
+
+### <a name="request-headers"></a><span data-ttu-id="8f5bf-112">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8f5bf-112">Request headers</span></span>
+| <span data-ttu-id="8f5bf-113">Имя</span><span class="sxs-lookup"><span data-stu-id="8f5bf-113">Name</span></span>          | <span data-ttu-id="8f5bf-114">Описание</span><span class="sxs-lookup"><span data-stu-id="8f5bf-114">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="c87e7-115">Content-Range</span><span class="sxs-lookup"><span data-stu-id="c87e7-115">Content-Range</span></span> | <span data-ttu-id="c87e7-116">Диапазон байтов: {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}.</span><span class="sxs-lookup"><span data-stu-id="c87e7-116">bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}.</span></span> <span data-ttu-id="c87e7-117">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="c87e7-117">Required.</span></span>|
-| <span data-ttu-id="c87e7-118">Content-Length</span><span class="sxs-lookup"><span data-stu-id="c87e7-118">Content-Length</span></span> | <span data-ttu-id="c87e7-119">{contentLength}‬ обязательно.</span><span class="sxs-lookup"><span data-stu-id="c87e7-119">{contentLength}‬ Required.</span></span>|
+| <span data-ttu-id="8f5bf-115">Content-Range</span><span class="sxs-lookup"><span data-stu-id="8f5bf-115">Content-Range</span></span> | <span data-ttu-id="8f5bf-116">Диапазон байтов: {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-116">bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}.</span></span> <span data-ttu-id="8f5bf-117">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-117">Required.</span></span>|
+| <span data-ttu-id="8f5bf-118">Content-Length</span><span class="sxs-lookup"><span data-stu-id="8f5bf-118">Content-Length</span></span> | <span data-ttu-id="8f5bf-119">{contentLength}‬ обязательно.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-119">{contentLength}‬ Required.</span></span>|
 
-### <a name="request-body"></a><span data-ttu-id="c87e7-120">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c87e7-120">Request body</span></span>
-<span data-ttu-id="c87e7-121">Текст запроса — это большой двоичный объект, содержащий байты документа, указанные как **инклюзивный** диапазон байтов, в заголовке `Content-Range`.</span><span class="sxs-lookup"><span data-stu-id="c87e7-121">The request body is a binary blob containing the bytes of the document that are specified as an **inclusive** byte range in the `Content-Range` header.</span></span> 
+### <a name="request-body"></a><span data-ttu-id="8f5bf-120">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8f5bf-120">Request body</span></span>
+<span data-ttu-id="8f5bf-121">Текст запроса — это большой двоичный объект, содержащий байты документа, указанные как **инклюзивный** диапазон байтов, в заголовке `Content-Range`.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-121">The request body is a binary blob containing the bytes of the document that are specified as an **inclusive** byte range in the `Content-Range` header.</span></span> 
 
-### <a name="example"></a><span data-ttu-id="c87e7-122">Пример</span><span class="sxs-lookup"><span data-stu-id="c87e7-122">Example</span></span>
+### <a name="example"></a><span data-ttu-id="8f5bf-122">Пример</span><span class="sxs-lookup"><span data-stu-id="8f5bf-122">Example</span></span>
 
 ```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
@@ -43,9 +45,9 @@ Content-Length: 72797
 
 <bytes 0-72796 of the file>
 ```
-### <a name="http-response"></a><span data-ttu-id="c87e7-123">HTTP-ответ</span><span class="sxs-lookup"><span data-stu-id="c87e7-123">HTTP response</span></span>
+### <a name="http-response"></a><span data-ttu-id="8f5bf-123">HTTP-ответ</span><span class="sxs-lookup"><span data-stu-id="8f5bf-123">HTTP response</span></span>
 
-<span data-ttu-id="c87e7-124">После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.</span><span class="sxs-lookup"><span data-stu-id="c87e7-124">When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.</span></span>
+<span data-ttu-id="8f5bf-124">После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-124">When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -59,7 +61,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="c87e7-125">С помощью значения **nextExpectedRanges** приложение может определить, где должен начинаться следующий диапазон байтов.</span><span class="sxs-lookup"><span data-stu-id="c87e7-125">Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.</span></span> <span data-ttu-id="c87e7-126">Вы можете увидеть несколько диапазонов, указывающих части файла, еще не полученные сервером.</span><span class="sxs-lookup"><span data-stu-id="c87e7-126">You might see multiple ranges specified, indicating parts of the file that the server has not yet received.</span></span> <span data-ttu-id="c87e7-127">Свойство **nextExpectedRanges** указывает диапазоны файла, которые не были получены, а не схему отправки файла приложением.</span><span class="sxs-lookup"><span data-stu-id="c87e7-127">The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.</span></span>
+<span data-ttu-id="8f5bf-125">С помощью значения **nextExpectedRanges** приложение может определить, где должен начинаться следующий диапазон байтов.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-125">Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.</span></span> <span data-ttu-id="8f5bf-126">Вы можете увидеть несколько диапазонов, указывающих части файла, еще не полученные сервером.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-126">You might see multiple ranges specified, indicating parts of the file that the server has not yet received.</span></span> <span data-ttu-id="8f5bf-127">Свойство **nextExpectedRanges** указывает диапазоны файла, которые не были получены, а не схему отправки файла приложением.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-127">The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.</span></span>
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -76,14 +78,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="remarks"></a><span data-ttu-id="c87e7-128">Примечания</span><span class="sxs-lookup"><span data-stu-id="c87e7-128">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="8f5bf-128">Примечания</span><span class="sxs-lookup"><span data-stu-id="8f5bf-128">Remarks</span></span>
 
-* <span data-ttu-id="c87e7-p106">При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#get-the-upload-session), чтобы получить более подробный список недостающих диапазонов.</span><span class="sxs-lookup"><span data-stu-id="c87e7-p106">On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.</span></span>
-* <span data-ttu-id="c87e7-131">В ответ на добавление заголовка авторизации при совершении вызова `PUT` может появиться сообщение об ошибке `HTTP 401 Unauthorized`.</span><span class="sxs-lookup"><span data-stu-id="c87e7-131">Including the Authorization header when issuing the `PUT` call might result in a `HTTP 401 Unauthorized` response.</span></span> <span data-ttu-id="c87e7-132">Заголовок авторизации и маркер носителя необходимо отправлять только при создании сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="c87e7-132">The Authorization header and bearer token should only be sent when creating upload session.</span></span> <span data-ttu-id="c87e7-133">Их не следует включать при отправке данных для сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="c87e7-133">It should be not be included when uploading data to upload session.</span></span>
+* <span data-ttu-id="8f5bf-p106">При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#get-the-upload-session), чтобы получить более подробный список недостающих диапазонов.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-p106">On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.</span></span>
+* <span data-ttu-id="8f5bf-131">В ответ на добавление заголовка авторизации при совершении вызова `PUT` может появиться сообщение об ошибке `HTTP 401 Unauthorized`.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-131">Including the Authorization header when issuing the `PUT` call might result in a `HTTP 401 Unauthorized` response.</span></span> <span data-ttu-id="8f5bf-132">Заголовок авторизации и маркер носителя необходимо отправлять только при создании сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-132">The Authorization header and bearer token should only be sent when creating upload session.</span></span> <span data-ttu-id="8f5bf-133">Их не следует включать при отправке данных для сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-133">It should be not be included when uploading data to upload session.</span></span>
 
-## <a name="completing-a-file"></a><span data-ttu-id="c87e7-134">Завершение отправки файла</span><span class="sxs-lookup"><span data-stu-id="c87e7-134">Completing a file</span></span>
+## <a name="completing-a-file"></a><span data-ttu-id="8f5bf-134">Завершение отправки файла</span><span class="sxs-lookup"><span data-stu-id="8f5bf-134">Completing a file</span></span>
 
-<span data-ttu-id="c87e7-135">После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created`.</span><span class="sxs-lookup"><span data-stu-id="c87e7-135">When the last byte range of a file is received, the server will response with an `HTTP 201 Created`.</span></span> <span data-ttu-id="c87e7-136">Текст ответа также будет включать набор свойств для связанного **printDocument** .</span><span class="sxs-lookup"><span data-stu-id="c87e7-136">The response body will also include the property set for the associated **printDocument** .</span></span>
+<span data-ttu-id="8f5bf-135">После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created`.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-135">When the last byte range of a file is received, the server will response with an `HTTP 201 Created`.</span></span> <span data-ttu-id="8f5bf-136">Текст ответа также будет включать набор свойств для связанного **printDocument**.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-136">The response body will also include the property set for the associated **printDocument**.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
 
@@ -109,20 +111,20 @@ Content-Type: application/json
 }
 ```
 
-><span data-ttu-id="c87e7-137">**Примечание.** Сеанс отправки удаляется после завершения отправки документов.</span><span class="sxs-lookup"><span data-stu-id="c87e7-137">**Note:** Upload session is deleted after document upload is complete.</span></span>
+><span data-ttu-id="8f5bf-137">**Примечание.** Сеанс отправки удаляется после завершения отправки документов.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-137">**Note:** Upload session is deleted after document upload is complete.</span></span>
 
-## <a name="get-the-upload-session"></a><span data-ttu-id="c87e7-138">Получение сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="c87e7-138">Get the upload session</span></span>
+## <a name="get-the-upload-session"></a><span data-ttu-id="8f5bf-138">Получение сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="8f5bf-138">Get the upload session</span></span>
 
-<span data-ttu-id="c87e7-139">Чтобы получить сеанс отправки, отправьте запрос GET на URL-адрес отправки.</span><span class="sxs-lookup"><span data-stu-id="c87e7-139">To get upload session, send a GET request to the upload URL.</span></span> 
+<span data-ttu-id="8f5bf-139">Чтобы получить сеанс отправки, отправьте запрос GET на URL-адрес отправки.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-139">To get upload session, send a GET request to the upload URL.</span></span> 
 
-### <a name="request"></a><span data-ttu-id="c87e7-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="c87e7-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8f5bf-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="8f5bf-140">Request</span></span>
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 ```
 
-### <a name="response"></a><span data-ttu-id="c87e7-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="c87e7-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8f5bf-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f5bf-141">Response</span></span>
 
 <!-- { "blockType": "response" } -->
 ```http
@@ -138,13 +140,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="cancel-the-upload-session"></a><span data-ttu-id="c87e7-142">Отмена сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="c87e7-142">Cancel the upload session</span></span>
+## <a name="cancel-the-upload-session"></a><span data-ttu-id="8f5bf-142">Отмена сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="8f5bf-142">Cancel the upload session</span></span>
 
-<span data-ttu-id="c87e7-143">Чтобы отменить сеанс отправки, отправьте запрос DELETE на URL-адрес отправки.</span><span class="sxs-lookup"><span data-stu-id="c87e7-143">To cancel an upload session, send a DELETE request to the upload URL.</span></span> <span data-ttu-id="c87e7-144">Это следует делать в тех случаях, когда отправка прерывается (например, если пользователь отменил передачу).</span><span class="sxs-lookup"><span data-stu-id="c87e7-144">This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.</span></span>
+<span data-ttu-id="8f5bf-143">Чтобы отменить сеанс отправки, отправьте запрос DELETE на URL-адрес отправки.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-143">To cancel an upload session, send a DELETE request to the upload URL.</span></span> <span data-ttu-id="8f5bf-144">Это следует делать в тех случаях, когда отправка прерывается (например, если пользователь отменил передачу).</span><span class="sxs-lookup"><span data-stu-id="8f5bf-144">This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.</span></span>
 
-<span data-ttu-id="c87e7-145">Временные файлы и соответствующий сеанс отправки автоматически очищаются по прошествии времени, указанного свойством **expirationDateTime** .</span><span class="sxs-lookup"><span data-stu-id="c87e7-145">Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.</span></span>
+<span data-ttu-id="8f5bf-145">Временные файлы и соответствующий сеанс отправки автоматически очищаются по прошествии времени, указанного свойством **expirationDateTime**.</span><span class="sxs-lookup"><span data-stu-id="8f5bf-145">Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.</span></span>
 
-### <a name="request"></a><span data-ttu-id="c87e7-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="c87e7-146">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8f5bf-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="8f5bf-146">Request</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "printjob.readwrite" } -->
 
@@ -152,7 +154,7 @@ Content-Type: application/json
 DELETE https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 ```
 
-### <a name="response"></a><span data-ttu-id="c87e7-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="c87e7-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8f5bf-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f5bf-147">Response</span></span>
 
 <!-- { "blockType": "response" } -->
 

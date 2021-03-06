@@ -1,72 +1,72 @@
 ---
-title: Обновление Регионаландлангуажесеттингс
-description: Обновление региональных и языковых параметров пользователя
+title: Обновление regionalAndLanguageSettings
+description: Обновление региональных и языковых параметров пользователя.
 author: jasonbro
 localization_priority: Normal
-ms.prod: settings
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d5d9d10adc73f37906c8cf07073e97e8b81bfe1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82f33ae2b4165586ccb4a3d55873e1e6ff6c1765
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966843"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516621"
 ---
-# <a name="update-regionalandlanguagesettings"></a><span data-ttu-id="9cd20-103">Обновление Регионаландлангуажесеттингс</span><span class="sxs-lookup"><span data-stu-id="9cd20-103">Update regionalAndLanguageSettings</span></span>
+# <a name="update-regionalandlanguagesettings"></a><span data-ttu-id="0a89f-103">Обновление regionalAndLanguageSettings</span><span class="sxs-lookup"><span data-stu-id="0a89f-103">Update regionalAndLanguageSettings</span></span>
 
-<span data-ttu-id="9cd20-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9cd20-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0a89f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a89f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9cd20-105">Обновление некоторых или всех свойств объекта [регионаландлангуажесеттингс](../resources/regionalAndLanguageSettings.md) .</span><span class="sxs-lookup"><span data-stu-id="9cd20-105">Update some or all of the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.</span></span>
+<span data-ttu-id="0a89f-105">Обновим некоторые или все свойства объекта [regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)</span><span class="sxs-lookup"><span data-stu-id="0a89f-105">Update some or all of the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9cd20-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9cd20-106">Permissions</span></span>
-<span data-ttu-id="9cd20-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9cd20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0a89f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0a89f-106">Permissions</span></span>
+<span data-ttu-id="0a89f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0a89f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9cd20-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9cd20-109">Permission Type</span></span>                   |<span data-ttu-id="9cd20-110">Разрешение (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="9cd20-110">Permission (from least to most privileged)</span></span>     |
+|<span data-ttu-id="0a89f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0a89f-109">Permission Type</span></span>                   |<span data-ttu-id="0a89f-110">Разрешение (от наименее до самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="0a89f-110">Permission (from least to most privileged)</span></span>     |
 |----------------------------------|---------------------------------------------- |
-|<span data-ttu-id="9cd20-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9cd20-111">Delegated (work or school account)</span></span>|<span data-ttu-id="9cd20-112">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="9cd20-112">User.ReadWrite, User.ReadWrite.All</span></span>             |
-|<span data-ttu-id="9cd20-113">Делегированная учетная запись (личная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9cd20-113">Delegated (personal account)</span></span>      |<span data-ttu-id="9cd20-114">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="9cd20-114">User.ReadWrite, User.ReadWrite.All</span></span>             |
-|<span data-ttu-id="9cd20-115">Для приложения</span><span class="sxs-lookup"><span data-stu-id="9cd20-115">Application</span></span>                       |<span data-ttu-id="9cd20-116">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="9cd20-116">User.ReadWrite, User.ReadWrite.All</span></span>             |
+|<span data-ttu-id="0a89f-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0a89f-111">Delegated (work or school account)</span></span>|<span data-ttu-id="0a89f-112">User.ReadWrite, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a89f-112">User.ReadWrite, User.ReadWrite.All</span></span>             |
+|<span data-ttu-id="0a89f-113">Делегированная (личная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0a89f-113">Delegated (personal account)</span></span>      |<span data-ttu-id="0a89f-114">User.ReadWrite, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a89f-114">User.ReadWrite, User.ReadWrite.All</span></span>             |
+|<span data-ttu-id="0a89f-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="0a89f-115">Application</span></span>                       |<span data-ttu-id="0a89f-116">User.ReadWrite, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a89f-116">User.ReadWrite, User.ReadWrite.All</span></span>             |
 
-## <a name="http-request"></a><span data-ttu-id="9cd20-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9cd20-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0a89f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0a89f-117">HTTP request</span></span>
 
-<span data-ttu-id="9cd20-118">Чтобы обновить региональные и языковые параметры пользователя, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="9cd20-118">To update all of a user's regional and language settings:</span></span>
+<span data-ttu-id="0a89f-118">Обновление всех региональных и языковых параметров пользователя:</span><span class="sxs-lookup"><span data-stu-id="0a89f-118">To update all of a user's regional and language settings:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /settings/regionalAndLanguageSettings
 ```
 
-<span data-ttu-id="9cd20-119">Обновление подмножества свойств региональных и языковых параметров пользователя:</span><span class="sxs-lookup"><span data-stu-id="9cd20-119">To update a subset of the properties of a user's regional and language settings:</span></span>
+<span data-ttu-id="0a89f-119">Обновление подмножество свойств региональных и языковых параметров пользователя:</span><span class="sxs-lookup"><span data-stu-id="0a89f-119">To update a subset of the properties of a user's regional and language settings:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /settings/regionalAndLanguageSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9cd20-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9cd20-120">Request headers</span></span>
-| <span data-ttu-id="9cd20-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9cd20-121">Header</span></span>       | <span data-ttu-id="9cd20-122">Значение</span><span class="sxs-lookup"><span data-stu-id="9cd20-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0a89f-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0a89f-120">Request headers</span></span>
+| <span data-ttu-id="0a89f-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0a89f-121">Header</span></span>       | <span data-ttu-id="0a89f-122">Значение</span><span class="sxs-lookup"><span data-stu-id="0a89f-122">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="9cd20-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9cd20-123">Authorization</span></span>  | <span data-ttu-id="9cd20-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9cd20-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="9cd20-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9cd20-126">Content-Type</span></span>  | <span data-ttu-id="9cd20-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9cd20-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="0a89f-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0a89f-123">Authorization</span></span>  | <span data-ttu-id="0a89f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0a89f-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="0a89f-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0a89f-126">Content-Type</span></span>  | <span data-ttu-id="0a89f-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0a89f-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9cd20-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9cd20-129">Request body</span></span>
- <span data-ttu-id="9cd20-130">**Put** : в теле запроса добавьте объект [регионаландлангуажесеттингс](../resources/regionalAndLanguageSettings.md) .</span><span class="sxs-lookup"><span data-stu-id="9cd20-130">**PUT** : In the request body, supply a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0a89f-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0a89f-129">Request body</span></span>
+ <span data-ttu-id="0a89f-130">**PUT.** В теле запроса поставьте [объект regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)</span><span class="sxs-lookup"><span data-stu-id="0a89f-130">**PUT**: In the request body, supply a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.</span></span>
  
- <span data-ttu-id="9cd20-131">**Patch** : указывайте только значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="9cd20-131">**PATCH** : Only supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="9cd20-132">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="9cd20-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="9cd20-133">Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="9cd20-133">For best performance you shouldn't include existing values that haven't changed.</span></span>
+ <span data-ttu-id="0a89f-131">**PATCH.** Только поставляем значения для соответствующих полей, которые должны быть обновлены.</span><span class="sxs-lookup"><span data-stu-id="0a89f-131">**PATCH**: Only supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="0a89f-132">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="0a89f-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="0a89f-133">Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="0a89f-133">For best performance you shouldn't include existing values that haven't changed.</span></span>
  
-## <a name="response"></a><span data-ttu-id="9cd20-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="9cd20-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0a89f-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="0a89f-134">Response</span></span>
 
-<span data-ttu-id="9cd20-135">В случае успешного выполнения этот метод возвращает код ответа 200 и обновленный объект Регионаландлангуажесеттингс</span><span class="sxs-lookup"><span data-stu-id="9cd20-135">If successful, this method returns a 200 response code and the updated regionalAndLanguageSettings object</span></span>
+<span data-ttu-id="0a89f-135">В случае успеха этот метод возвращает код ответа 200 и обновленный **объект regionalAndLanguageSettings.**</span><span class="sxs-lookup"><span data-stu-id="0a89f-135">If successful, this method returns a 200 response code and the updated **regionalAndLanguageSettings** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9cd20-136">Пример</span><span class="sxs-lookup"><span data-stu-id="9cd20-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0a89f-136">Пример</span><span class="sxs-lookup"><span data-stu-id="0a89f-136">Example</span></span>
 
-### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a><span data-ttu-id="9cd20-137">Пример 1: обновление всего объекта Регионаландлангуажесеттингс пользователя, выполнившего вход в систему</span><span class="sxs-lookup"><span data-stu-id="9cd20-137">Example 1: Update the entire regionalAndLanguageSettings object of the signed-in user</span></span>
+### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a><span data-ttu-id="0a89f-137">Пример 1. Обновление всего объекта regionalAndLanguageSettings для подписанного пользователя</span><span class="sxs-lookup"><span data-stu-id="0a89f-137">Example 1: Update the entire regionalAndLanguageSettings object of the signed-in user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9cd20-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="9cd20-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0a89f-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="0a89f-138">Request</span></span>
 
-<span data-ttu-id="9cd20-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9cd20-139">The following is an example of the request.</span></span>
+<span data-ttu-id="0a89f-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0a89f-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9cd20-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="9cd20-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0a89f-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="0a89f-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "put_regionalAndLanguageSettings"
@@ -104,22 +104,31 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ]
+     }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9cd20-141">C#</span><span class="sxs-lookup"><span data-stu-id="9cd20-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0a89f-141">C#</span><span class="sxs-lookup"><span data-stu-id="0a89f-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/put-regionalandlanguagesettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9cd20-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9cd20-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0a89f-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0a89f-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-regionalandlanguagesettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9cd20-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9cd20-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0a89f-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0a89f-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/put-regionalandlanguagesettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9cd20-144">Java</span><span class="sxs-lookup"><span data-stu-id="9cd20-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0a89f-144">Java</span><span class="sxs-lookup"><span data-stu-id="0a89f-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/put-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -128,9 +137,9 @@ Content-type: application/json
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="9cd20-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cd20-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0a89f-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="0a89f-145">Response</span></span>
 
-<span data-ttu-id="9cd20-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9cd20-146">The following is an example of the response.</span></span>
+<span data-ttu-id="0a89f-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0a89f-146">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -141,13 +150,13 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a><span data-ttu-id="9cd20-147">Пример 2: Обновление выбранных свойств вошедшего пользователя</span><span class="sxs-lookup"><span data-stu-id="9cd20-147">Example 2: Update selected properties of the signed-in user</span></span>
+### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a><span data-ttu-id="0a89f-147">Пример 2. Обновление выбранных свойств подписанного пользователя</span><span class="sxs-lookup"><span data-stu-id="0a89f-147">Example 2: Update selected properties of the signed-in user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9cd20-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="9cd20-148">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0a89f-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="0a89f-148">Request</span></span>
 
-<span data-ttu-id="9cd20-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9cd20-149">The following is an example of the request.</span></span>
+<span data-ttu-id="0a89f-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0a89f-149">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9cd20-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="9cd20-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0a89f-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="0a89f-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_regionalAndLanguageSettings"
@@ -168,19 +177,19 @@ Content-type: application/json
    }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9cd20-151">C#</span><span class="sxs-lookup"><span data-stu-id="9cd20-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0a89f-151">C#</span><span class="sxs-lookup"><span data-stu-id="0a89f-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-regionalandlanguagesettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9cd20-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9cd20-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0a89f-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0a89f-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/patch-regionalandlanguagesettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9cd20-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9cd20-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0a89f-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0a89f-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-regionalandlanguagesettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9cd20-154">Java</span><span class="sxs-lookup"><span data-stu-id="9cd20-154">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0a89f-154">Java</span><span class="sxs-lookup"><span data-stu-id="0a89f-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -189,9 +198,9 @@ Content-type: application/json
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="9cd20-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cd20-155">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0a89f-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="0a89f-155">Response</span></span>
 
-<span data-ttu-id="9cd20-156">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9cd20-156">The following is an example of the response.</span></span>
+<span data-ttu-id="0a89f-156">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0a89f-156">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

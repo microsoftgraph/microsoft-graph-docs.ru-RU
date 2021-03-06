@@ -5,61 +5,61 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 035ecc67d35caa719524de710c684c50dca340cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cdd0c5987ce7ee73b3185030d72d97e616c9eebf
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987038"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515795"
 ---
-# <a name="chart-delete"></a><span data-ttu-id="b35db-103">Chart: delete</span><span class="sxs-lookup"><span data-stu-id="b35db-103">Chart: delete</span></span>
+# <a name="chart-delete"></a><span data-ttu-id="c0c37-103">Chart: delete</span><span class="sxs-lookup"><span data-stu-id="c0c37-103">Chart: delete</span></span>
 
-<span data-ttu-id="b35db-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b35db-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c0c37-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c0c37-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b35db-105">Удаляет объект диаграммы.</span><span class="sxs-lookup"><span data-stu-id="b35db-105">Deletes the chart object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b35db-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b35db-106">Permissions</span></span>
-<span data-ttu-id="b35db-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b35db-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c0c37-105">Удаляет объект диаграммы.</span><span class="sxs-lookup"><span data-stu-id="c0c37-105">Deletes the chart object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c0c37-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c0c37-106">Permissions</span></span>
+<span data-ttu-id="c0c37-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0c37-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b35db-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b35db-109">Permission type</span></span>      | <span data-ttu-id="b35db-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b35db-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c0c37-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c0c37-109">Permission type</span></span>      | <span data-ttu-id="c0c37-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c0c37-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b35db-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b35db-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b35db-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b35db-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="b35db-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b35db-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b35db-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b35db-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="b35db-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b35db-115">Application</span></span> | <span data-ttu-id="b35db-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b35db-116">Not supported.</span></span> |
+|<span data-ttu-id="c0c37-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c0c37-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c0c37-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0c37-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c0c37-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c0c37-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0c37-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0c37-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c0c37-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c0c37-115">Application</span></span> | <span data-ttu-id="c0c37-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c0c37-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b35db-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b35db-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0c37-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c0c37-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE /workbook/worksheets/{id|name}/charts/{name}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="b35db-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b35db-118">Request headers</span></span>
-| <span data-ttu-id="b35db-119">Имя</span><span class="sxs-lookup"><span data-stu-id="b35db-119">Name</span></span>       | <span data-ttu-id="b35db-120">Описание</span><span class="sxs-lookup"><span data-stu-id="b35db-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c0c37-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c0c37-118">Request headers</span></span>
+| <span data-ttu-id="c0c37-119">Имя</span><span class="sxs-lookup"><span data-stu-id="c0c37-119">Name</span></span>       | <span data-ttu-id="c0c37-120">Описание</span><span class="sxs-lookup"><span data-stu-id="c0c37-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="b35db-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b35db-121">Authorization</span></span>  | <span data-ttu-id="b35db-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b35db-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b35db-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b35db-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="b35db-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="b35db-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c0c37-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c0c37-121">Authorization</span></span>  | <span data-ttu-id="c0c37-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c0c37-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c0c37-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c0c37-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="c0c37-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c0c37-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b35db-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b35db-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0c37-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c0c37-127">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="b35db-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="b35db-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c0c37-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="c0c37-128">Response</span></span>
 
-<span data-ttu-id="b35db-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="b35db-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c0c37-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c0c37-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b35db-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b35db-131">Example</span></span>
-<span data-ttu-id="b35db-132">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="b35db-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="b35db-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="b35db-133">Request</span></span>
-<span data-ttu-id="b35db-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b35db-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c0c37-131">Пример</span><span class="sxs-lookup"><span data-stu-id="c0c37-131">Example</span></span>
+<span data-ttu-id="c0c37-132">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="c0c37-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c0c37-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c0c37-133">Request</span></span>
+<span data-ttu-id="c0c37-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c0c37-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 ```
 
-##### <a name="response"></a><span data-ttu-id="b35db-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="b35db-135">Response</span></span>
-<span data-ttu-id="b35db-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b35db-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c0c37-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c0c37-135">Response</span></span>
+<span data-ttu-id="c0c37-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c0c37-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
