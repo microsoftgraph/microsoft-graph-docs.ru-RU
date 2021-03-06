@@ -1498,7 +1498,7 @@ ms.locfileid: "50516222"
 
 ### <a name="search"></a>Поиск
 
-| Тип изменения | Версия | Описание                                                                                                                                               |
+| Тип изменения | Версия | Description                                                                                                                                               |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Изменение      | Бета    | Ресурс [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) не рекомендуется.                                                  |
 | Изменение      | Бета    | Для ресурса [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) теперь поддерживается обновление свойств **содержимое** и **свойства**.      |
@@ -3860,7 +3860,7 @@ ms.locfileid: "50516222"
 
 ### <a name="education"></a>Образование
 
-|Тип изменения|Версия|Описание|
+|Тип изменения|Версия|Description|
 |:---|:---|:---|
 |Изменение|Бета-версия|Добавлено свойство reportableIdentifier объекта [educationsynchronizationerror](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta&preserve-view=true).|
 |Изменение|Бета-версия|Обновлены варианты ответа для API [uploadUrl](/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta&preserve-view=true).|
@@ -4040,7 +4040,7 @@ ms.locfileid: "50516222"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-|Тип изменения|Версия|Описание|
+|Тип изменения|Версия|Description|
 |:---|:---|:---|
 |Изменение|Бета|Добавлены свойства **applicationID** и **creatorUserID** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). |
 |Изменение|Бета|Добавлена операция [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true) для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). |
@@ -4332,13 +4332,13 @@ ms.locfileid: "50516222"
 
 ### <a name="users"></a>Пользователи
 
-| Тип изменения | Версия | Описание                              |
+| Тип изменения | Версия | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Изменение      | v1.0    | Добавлена возможность фильтрации разностных запросов [пользователей](/graph/api/user-delta?view=graph-rest-1.0&preserve-view=true). |
 
 ### <a name="groups"></a>Группы
 
-| Тип изменения | Версия | Описание                              |
+| Тип изменения | Версия | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Изменение      | v1.0    | Добавлена возможность фильтрации разностных запросов [групп](/graph/api/group-delta?view=graph-rest-1.0&preserve-view=true). |
 
@@ -4488,12 +4488,12 @@ ms.locfileid: "50516222"
 
 ### <a name="mail"></a>Почта
 
-| Тип изменения | Версия | Описание                              |
+| Тип изменения | Версия | Description                              |
 | :---------- | :------ | :--------------------------------------- |
 | Изменение          | 1.0 и бета-версия | Это улучшение поведения связано с получением общей почтовой папки или содержимого сообщений в ней, если кто-то предоставил вошедшему пользователю доступ к почтовой папке или делегировал ему почтовый ящик пользователя. В таких случаях приложение может указать ИД пользователя или имя участника-пользователя, чтобы [получить эту общую почтовую папку](/graph/api/mailfolder-get?view=graph-rest-1.0&preserve-view=true) или [получить сообщения из этого общего календаря](/graph/api/user-list-messages?view=graph-rest-1.0&preserve-view=true), при условии что вошедший пользователь предоставил приложению делегированные разрешения. |
 
 ### <a name="reports"></a>Отчеты
-| Тип изменения | Версия | Описание                              |
+| Тип изменения | Версия | Description                              |
 | :---------- | :------ | :--------------------------------------- |
 | Изменение      | Бета-версия    | Добавлены API [getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta&preserve-view=true), [getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta&preserve-view=true) и [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta&preserve-view=true). Они заменили API EmailActivity. |
 | Изменение      | Бета-версия    | Добавлены API [getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta&preserve-view=true), [getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta&preserve-view=true), [getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta&preserve-view=true) и [getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta&preserve-view=true). Они заменили API EmailAppUsage. |
