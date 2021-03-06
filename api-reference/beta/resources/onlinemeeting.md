@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: fedfb6a7558e081bb333c1fc6f579f2600137e9c
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: db18746a74db9ebc9f6eb19ed55ae3e7b019a77f
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866230"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515863"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -18,61 +18,61 @@ ms.locfileid: "49866230"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о собрании, включая URL-адрес, используемый для присоединиться к собранию, список участников и описание.
+Содержит сведения о собрании, включая URL-адрес собрания, список участников и описание.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                             | Возвращаемый тип                       | Описание                                                                                                       |
 | :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| [Создание](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | Создание собрания по сети.                                                                                         |
-| [Get](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **onlineMeeting.**                                             |
-| [Создание или get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создание собрания по сети с пользовательским внешним ИД. Если собрание уже существует, извлекаете его свойства.      |
-| [обновление](../api/onlinemeeting-update.md).                           | [onlineMeeting](onlinemeeting.md) | Обновление свойств **startDateTime,** **endDateTime**, **subject** и **участников** собрания по сети. |
-| [удаление](../api/onlinemeeting-delete.md);                           | Нет                              | Удаление ресурса **onlineMeeting.**                                                                             |
+| [Создание](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | Создание собрания в Интернете.                                                                                         |
+| [получение](../api/onlinemeeting-get.md);                                 | [onlineMeeting](onlinemeeting.md) | Ознакомьтесь с свойствами и отношениями **объекта onlineMeeting.**                                             |
+| [обновление](../api/onlinemeeting-update.md).                           | [onlineMeeting](onlinemeeting.md) | Обновление свойств объекта **onlineMeeting.** |
+| [удаление](../api/onlinemeeting-delete.md);                           | Нет                              | Удаление **объекта onlineMeeting.**                                                                             |
+| [Создание или доступ к onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте онлайн-собрание с пользовательским внешним ИД. Если собрание уже существует, извлекай его свойства.      |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство              | Тип                                          | Описание                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers     | String                                        | Параметр, который определяет тип участников, которые будут автоматически разрешены в собрании по сети. Возможные значения: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Только для чтения. |
-| audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о телефонном доступе (с телефонным доступом) для собрания по сети. Только для чтения.                                                                                                                                                                                    |
-| chatInfo              | [chatInfo](chatinfo.md)                       | Сведения чата, связанные с этим собранием по сети.                                                                                                                                                                                                   |
+| allowedPresenters     | onlineMeetingPresenters                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения `everyone` : , , , и `organization` `roleIsPresenter` `organizer` `unknownFutureValue` .                                                                                                    |
+| alternativeRecording  | Stream                                        | Поток контента альтернативной записи живого события. Только для чтения.                                                                                                                                                                                 |
+| attendeeReport        | Stream                                        | Поток контента отчета участника о событии в прямом эфире. Только для чтения.                                                                                                                                                                                       |
+| autoAdmittedUsers     | String                                        | Параметр, который указывает тип участников, которые будут автоматически допущены к собранию в Интернете. Возможные значения: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Только для чтения. |
+| audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения.                                                                                                                                                                                    |
+| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Параметры, связанные с живым событием*                                                                                                                                                                                                                    |
+| chatInfo              | [chatInfo](chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                                                                                                                                                                                   |
 | creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                                                                                                                                                                |
-| startDateTime         | DateTime                                      | Время начала собрания в UTC.                                                                                                                                                                                                                              |
+| capabilities          | Коллекция String                             | Список возможностей собраний. Возможные значения: `questionAndAnswer` .                                                                                                                                                                                 |
 | endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                                                                                                                                                                |
-| id                    | String                                        | ИД по умолчанию, связанный с собранием по сети. Только для чтения.                                                                                                                                                                                               |
-| joinWebUrl            | String                                        | URL-адрес собрания по сети. Только для чтения.                                                                                                                                                                                                              |
-| participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием.  К ним относятся организатор и участники.                                                                                                                                                        |
-| subject               | String                                        | Тема собрания по сети.                                                                                                                                                                                                                          |
-| capabilities          | Коллекция объектов string                             | Список возможностей собраний. Возможные значения: `questionAndAnswer` .                                                                                                                                                                                 |
-| videoTeleconferenceId | String                                        | ИД видеоконференции. Только для чтения.                                                                                                                                                                                                                   |
-| joinInformation       | [itemBody](itembody.md)                       | Сведения о подступах к языку и языковом варианте, указанные в HTTP-заголке HTTP-запроса "Accept-Language". Только для чтения                                                                                                                                       |
-| externalId            | String                                        | Внешний ИД. Настраиваемый ИД. Необязательный.                                                                                                                                                                                                                     |
-| isEntryExitAnnounced  | Логический                                       | Следует ли объявлять, когда звонят, присоединяться или уходить.                                                                                                                                                                                                      |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обходить "lobby" собрания.                                                                                                                                                                                                  |
-| allowedPresenters     | onlineMeetingPresenters                       | Указывает, кто может быть presenter в собрании. Возможные значения: `everyone` `organization` , и `roleIsPresenter` `organizer` `unknownFutureValue` .                                                                                                    |
-| isBroadcast           | Логический                                       | Указывает, является ли это трансляцией.                                                                                                                                                                                                                   |
-| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Параметры, связанные с трансляцией*                                                                                                                                                                                                                    |
-| attendeeReport        | Поток                                        | Поток содержимого отчета об участниках трансляции. Только для чтения.                                                                                                                                                                                       |
-| recording             | Поток                                        | Поток содержимого записи трансляции. Только для чтения.                                                                                                                                                                                             |
-| alternativeRecording  | Поток                                        | Поток содержимого альтернативной записи трансляции. Только для чтения.                                                                                                                                                                                 |
+| externalId            | String                                        | Внешний ID. Пользовательский ID. Необязательный атрибут.                                                                                                                                                                                                                     |
+| id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                                                                                                                                                               |
+| isBroadcast           | Boolean                                       | Указывает, является ли это событием в прямом эфире.                                                                                                                                                                                                                   |
+| isEntryExitAnnounced  | Boolean                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                                                                                                                                      |
+| joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                                                                                                                                                              |
+| joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанном в заглавной странице HTTP-запроса "Accept-Language". Только для чтения                                                                                                                                       |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                                                                                                                                                                  |
+| participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием.  Это включает организатора и участников.                                                                                                                                                        |
+| запись             | Stream                                        | Поток контента записи живого события. Только для чтения.                                                                                                                                                                                             |
+| startDateTime         | DateTime                                      | Время начала собрания в UTC.                                                                                                                                                                                                                              |
+| subject               | String                                        | Тема собрания в Интернете.                                                                                                                                                                                                                          |
+| videoTeleconferenceId | String                                        | ID видеоконференции. Только для чтения.                                                                                                                                                                                                                   |
 
 > [!IMPORTANT]
-> Свойство **autoAdmittedUsers** устарело. Вместо **этого используйте lobbyBypassSettings.scope** для настройки вариантов собраний.
+> Свойство **autoAdmittedUsers** устарело. Используйте **lobbyBypassSettings.scope** вместо конфигураций вариантов собраний.
 > 
-> *\Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Дополнительные сведения можно найти [в broadcastSettings.](broadcastMeetingSettings.md)
+> *\Создание событий в прямом эфире с **свойством broadcastSettings** находится в бета-версии с важными ограничениями. Дополнительные сведения можно получить [в broadcastSettings.](broadcastMeetingSettings.md)
 
-### <a name="onlinemeetingpresenters-values"></a>Значения onlineMeetingPresenters
+### <a name="onlinemeetingpresenters-values"></a>значения onlineMeetingPresenters
 
 | Значение              | Описание                                                   |
 | ------------------ | ------------------------------------------------------------- |
-| все           | Все — это presenter (это параметр по умолчанию).             |
-| organization;       | Все в организации организатора — это организатор.          |
-| roleIsPresenter    | Только участники, роль которых является presenter, являются участниками. |
-| organizer          | Только организатор является организатором.                           |
+| все           | Каждый — это презентер (это параметр по умолчанию).             |
+| organization;       | Каждый в организации организатора — это презентер.          |
+| roleIsPresenter    | Только участники, роль которых является презентатором, являются участниками. |
+| organizer          | Только организатор — это презентер.                           |
 | unknownFutureValue | Неизвестное будущее значение.                                         |
 
-**Примечание.** Если для **свойства allowedPresenters** установлено значение , укажите роль каждого участника собрания, используя свойство role в `roleIsPresenter` [meetingParticipantInfo.](../resources/meetingparticipantinfo.md) 
+**Примечание.** Если установлено значение **allowedPresenters,** укажите роль собрания каждого участника собрания, используя свойство role в `roleIsPresenter` [meetingParticipantInfo](../resources/meetingparticipantinfo.md). 
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -85,22 +85,22 @@ ms.locfileid: "49866230"
 }-->
 ```json
 {
-  "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "joinWebUrl": "String",
-  "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "capabilities": [ "questionAndAnswer" ],
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String",
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "#microsoft.graph.broadcastSettings"}
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"}
 }
 ```
 

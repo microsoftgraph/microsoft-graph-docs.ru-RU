@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 149ea3f8975ce281f2c5059df46cee761576bb4f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8377d1d2806bb5ec86f14911c60a6569bd1054e3
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443644"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516579"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
@@ -32,16 +32,16 @@ ms.locfileid: "50443644"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|:---------------------------------------|:-------------------------|
+| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
@@ -64,7 +64,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsS
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

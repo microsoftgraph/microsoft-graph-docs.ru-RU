@@ -1,16 +1,16 @@
 ---
 title: Get onlineMeeting
 description: Извлечение свойств и связей объекта onlineMeeting.
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 13a03b462626464fd5b8ea933f7f7bc67f815a67
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f930a0c60b228942781086b4ecae0a17b0e20b91
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292527"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516019"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -18,18 +18,18 @@ ms.locfileid: "50292527"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [onlineMeeting.](../resources/onlinemeeting.md)
+Извлечение свойств и связей [объекта onlineMeeting.](../resources/onlinemeeting.md)
 
 Например, вы можете:
-- Получите сведения об onlineMeeting с помощью [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ИД](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [JoinWebURL.](#example-3-retrieve-an-online-meeting-by-joinweburl)
-- Используйте `/attendeeReport` путь, чтобы получить отчет участника о трансляции, как показано [в примере 4.](#example-4-retrieve-the-attendee-report-of-a-live-event)
-- Используйте эти пути для получения записей трансляции, как показано `/recording` `/alternativeRecording` в [примере 5.](#example-5-retrieve-the-recording-of-a-live-event)
+- Сведения о onlineMeeting с помощью [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Используйте путь, чтобы получить отчет участника о событии `/attendeeReport` в прямом эфире, как показано [в примере 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
+- Используйте пути и пути для получения записей живого события, как `/recording` `/alternativeRecording` показано [в примере 5](#example-5-retrieve-the-recording-of-a-live-event).
 
 >**Примечания.** 
->- В настоящее время отчеты и записи участников доступны только для трансляций.
+>- В настоящее время отчеты и записи участников доступны только для живых событий.
 >- Только организатор событий может получить доступ к отчетам и записям участников.
->- Отчеты и записи участников доступны только при завершении трансляции.
->- Срок действия ссылки для скачивания `302 Found` [в ответе](#example-4-retrieve-the-attendee-report-of-a-live-event) истекает **через 60** секунд.
+>- Отчеты и записи участников доступны только по завершению события в прямом эфире.
+>- Срок действия ссылки на `302 Found` [скачивание в ответе](#example-4-retrieve-the-attendee-report-of-a-live-event) истекает **через 60** секунд.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,12 +37,12 @@ ms.locfileid: "50292527"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
 | :------------------------------------- | :---------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
+| Делегированное (рабочая или учебная учетная запись)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                        |
 | Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, разрешив приложению, настроенном в политике, получать собрание по сети от имени этого пользователя (ид пользователя, указанный в пути запроса).
+> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, получить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,32 +52,32 @@ ms.locfileid: "50292527"
 GET /me/onlineMeetings/{meetingId}
 ```
 
-Чтобы получить указанный onlineMeeting с помощью ИД собрания с разрешением приложения:
+Чтобы получить указанный onlineMeeting с помощью ИД собрания с разрешения приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Чтобы получить указанное onlineMeeting с **помощью videoTeleconferenceId:**
+Чтобы получить указанный onlineMeeting с **помощью videoTeleconferenceId:**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-Чтобы получить указанное onlineMeeting с **помощью joinWebUrl:**
+Чтобы получить указанный onlineMeeting с **помощью joinWebUrl:**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-Чтобы получить отчет об участниках трансляции:
+Чтобы получить отчет участника о событии в прямом эфире:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-Чтобы получить записи трансляции:
+Чтобы получить записи живого события:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}/recording
@@ -86,10 +86,10 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 >**Примечания.**
 >- Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
->- `userId`— это ИД объекта пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения [см. в политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
->- `meetingId`— **это ид** объекта [onlineMeeting.](../resources/onlinemeeting.md)
-> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и находится в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно найти в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
->- `joinWebUrl` должен быть закодирован в URL-адрес, и этот маршрут можно использовать только для получения собраний, созданных с помощью `userId` .
+>- `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+>- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
+> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
+>- `joinWebUrl` должен быть закодирован URL-адрес, и этот маршрут можно использовать только для получения собраний, созданных `userId` .
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -102,24 +102,25 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Метод также включает одно из следующих:
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
 
-- Если вы получаете собрание по сети на основе ИД собрания, **videoTeleconferenceId** или **joinWebUrl,** этот метод также возвращает объект [onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
-- Если вы получаете отчет об участниках или запись собрания по сети, этот метод также возвращает заглавную запись, которая указывает URI отчета или записи участника `Location` соответственно.
+- Если вы получаете онлайн-собрание на основе ID собрания, **videoTeleconferenceId** или **joinWebUrl,** этот метод также возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
+- Если вы получаете отчет участника или запись собрания в режиме онлайн, этот метод также возвращает заготку, которая указывает URI на отчет или запись `Location` участника, соответственно.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания по сети с помощью VideoTeleconferenceId
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания в Интернете с помощью VideoTeleconferenceId
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["123456789"],
   "name": "get-onlineMeeting"
 }-->
 ```msgraph-interactive
@@ -225,12 +226,12 @@ Content-Length: 1574
     }  
 ```
 
-### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Пример 2. Извлечение собрания по сети по его ИД
-Вы можете получить сведения о собрании с помощью ИД собрания с помощью маркера пользователя или приложения. При создании объекта [onlineMeeting](../resources/onlinemeeting.md)в объекте ответа предоставляется ИД собрания. Этот параметр доступен для поддержки случаев использования, когда известен ИД собрания, например, когда приложение сначала создает собрание по сети с помощью API Graph, а затем извлекает сведения о собрании позже в качестве отдельного действия.
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Пример 2. Извлечение собрания в Интернете с помощью ИД собрания
+Сведения о собраниях можно получить с помощью ИД собрания с помощью маркера пользователя или приложения. ID собрания предоставляется в объекте ответа при создании [onlineMeeting.](../resources/onlinemeeting.md) Этот параметр доступен для поддержки случаев использования, в которых известен ID собрания, например, когда приложение сначала создает онлайн-собрание с помощью API Graph, а затем извлекает сведения о собраниях позже в качестве отдельного действия.
 
 #### <a name="request"></a>Запрос
 
-> **Примечание.** Для учитаемости был усечен ИД собрания.
+> **Примечание:** ID собрания был усечен для чтения.
 
 В следующем запросе используется маркер пользователя.
 <!-- { "blockType": "ignored" } -->
@@ -284,8 +285,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Пример 3. Извлечение собрания по сети с помощью JoinWebUrl
-Сведения о собрании можно получить с помощью JoinWebUrl с помощью маркера пользователя или приложения. Этот параметр доступен для поддержки вариантов использования, когда ИД собрания неизвестен, а joinWebUrl — например, когда пользователь создает собрание (например, в клиенте Microsoft Teams), а отдельное приложение должно получить сведения о собрании в качестве действия по последующему действию.
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Пример 3. Извлечение собрания в Интернете с помощью JoinWebUrl
+Сведения о собраниях можно получить с помощью JoinWebUrl с помощью маркера пользователя или приложения. Этот параметр доступен для поддержки случаев использования, когда неизвестен ИД собрания, но используется JoinWebUrl, например, когда пользователь создает собрание (например, в клиенте Microsoft Teams), а отдельному приложению необходимо получить сведения о собрании в качестве последующего действия.
 
 #### <a name="request"></a>Запрос
 
@@ -345,14 +346,15 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a>Пример 4. Извлечение отчета участника о трансляции
-В следующем примере показан запрос на скачивание отчета участника.
+### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a>Пример 4. Извлечение отчета участника о событии в прямом эфире
+В следующем примере показан запрос на скачивание отчета об участниках.
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
   "name": "get-attendeeReport"
 }-->
 ```msgraph-interactive
@@ -386,7 +388,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### <a name="example-5-retrieve-the-recording-of-a-live-event"></a>Пример 5. Извлечение записи трансляции
+### <a name="example-5-retrieve-the-recording-of-a-live-event"></a>Пример 5. Извлечение записи живого события
 В следующем примере показан запрос на скачивание записи.
 
 #### <a name="request"></a>Запрос
@@ -394,6 +396,7 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
   "name": "get-recording"
 }-->
 ```msgraph-interactive

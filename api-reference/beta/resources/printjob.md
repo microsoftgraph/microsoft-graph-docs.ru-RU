@@ -1,44 +1,45 @@
 ---
-title: Тип ресурса printJob
-description: Представляет задание печати, которое было в очереди для принтера.
+title: тип ресурса printJob
+description: Представляет задание печати, которое выстроилось в очередь для принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 5124f3123331c4889f5e16110109938e7f264925
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 170f413c7607933c2651720c9c9c463f90cf55df
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883039"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516530"
 ---
-# <a name="printjob-resource-type"></a>Тип ресурса printJob
+# <a name="printjob-resource-type"></a>тип ресурса printJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет задание печати, которое было в очереди для принтера.
+Представляет задание печати, которое выстроилось в очередь для принтера.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [получение](../api/printjob-get.md); | [printJob](printjob.md) | Чтение свойств и связей объекта printJob. |
-| [Создание](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание объекта задания печати. |
+| [Создание](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового объекта задания печати. |
+| [обновление](../api/printjob-update.md). | [printJob](printjob.md) | Обновление объекта задания печати. |
 | [Начало](../api/printjob-start.md)|Нет|Запустите задание печати.|
-| [Отмена](../api/printjob-cancel.md)|Нет|Отмените задание печати.|
-| [Прервать](../api/printjob-abort.md)|Нет|Отменить задание печати.|
+| [Отмена](../api/printjob-cancel.md)|Нет|Отмена задания печати.|
+| [Прервать](../api/printjob-abort.md)|Нет|Прервать задание печати.|
 | [Перенаправление (на другой принтер)](../api/printjob-redirect.md) | [printJob](printjob.md) | Задание печати, которое находится в очереди для принтера назначения. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|GUID принтера. Только для чтения.|
-|createdDateTime|DateTimeOffset|DateTimeOffset, когда было создано задание. Только для чтения.|
+|id|String|GUID принтера. Только для чтения.|
+|createdDateTime|DateTimeOffset|DateTimeOffset, когда задание было создано. Только для чтения.|
 |status|[printJobStatus](printjobstatus.md)|Состояние задания печати. Только для чтения.|
 |configuration|[printJobConfiguration](printJobConfiguration.md)|Группа параметров, которые принтер должен использовать для печати задания.|
-|isFetchable|Edm.Boolean|Если засвеяно, документ может быть извлечен принтером.|
+|isFetchable|Edm.Boolean|Если это так, документ можно получить на принтере.|
 |redirectedFrom|Edm.String|Содержит URL-адрес задания источника, если задание было перенаправлено с другого принтера.|
 |redirectedTo|Edm.String|Содержит URL-адрес задания назначения, если задание было перенаправлено на другой принтер.|
 
@@ -46,8 +47,8 @@ ms.locfileid: "49883039"
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdBy|[userIdentity](useridentity.md)| Только для чтения. Допускается значение null.|
-|documents|[Коллекция printDocument](printdocument.md)| Только для чтения.|
-|tasks|[Коллекция printTask](printtask.md)|Список [printTasks,](printtask.md) которые были инициированы этим заданием печати.|
+|документы|[коллекция printDocument](printdocument.md)| Только для чтения.|
+|tasks|[printTask](printtask.md) collection|Список [printTasks,](printtask.md) которые были вызваны этим заданием печати.|
 
 ## <a name="json-representation"></a>Представление JSON
 

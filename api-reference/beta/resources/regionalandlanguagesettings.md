@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса regionalAndLanguageSettings
-description: Ресурс, представляющий региональные и языковые параметры пользователей
+title: тип ресурса regionalAndLanguageSettings
+description: Ресурс, представляющий региональные и языковые предпочтения пользователей
 localization_priority: Normal
 author: jasonbro
-ms.prod: settings
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 66734cba4c5d0e2997a4bfd5b70c54156821f5da
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: d5fd77038735ed1faa175d77ed2bd10b3b2ef784
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934914"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516488"
 ---
-# <a name="regionalandlanguagesettings-resource-type"></a>Тип ресурса regionalAndLanguageSettings
+# <a name="regionalandlanguagesettings-resource-type"></a>тип ресурса regionalAndLanguageSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Открытый тип, который представляет предпочтения пользователя для языков в различных контекстах, а также региональных стандартов и форматирования, на котором задается календарь по умолчанию, и форматирования для даты и времени.
+Открытый тип, который представляет предпочтения пользователя для языков в различных контекстах, а также для регионального языка и форматирования, который диски календаря по умолчанию, и форматирование для даты и времени.
 
 ## <a name="methods"></a>Методы
 
@@ -30,16 +30,17 @@ ms.locfileid: "49934914"
 ## <a name="properties"></a>Свойства
 | Свойство                   | Тип                                                  | Описание                                                                                                                                                         |
 |----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| defaultDisplayLanguage     | [localeInfo](localeinfo.md)                           | Предпочитаемый пользователем язык пользовательского интерфейса (меню, кнопки, ленты, предупреждения) для веб-приложений Майкрософт.<br><br>Возвращается по умолчанию. Значение null не допускается. |
-| authoringLanguages         | Коллекция объектов localeInfo                                 | Приоритетный список языков, на которые пользователь читает и авторов.<br><br>Возвращается по умолчанию. Значение null не допускается.                                                              |
-| defaultTranslationLanguage | localeInfo                                            | Язык, на который пользователь ожидает перевода документов, сообщений электронной почты и сообщений.<br><br>Возвращается по умолчанию.                                                    |
-| defaultSpeechInputLanguage | localeInfo                                            | Язык, который пользователь должен использовать в качестве входных данных для текста в речевой сценарий.<br><br>Возвращается по умолчанию.                                                              |
-| defaultRegionalFormat      | localeInfo                                            | Региональные стандарты, которые будут управлять форматированием даты, времени и календаря по умолчанию.<br><br>Возвращается по умолчанию.                                                                 |
-| regionalFormatOverrides    | [regionalFormatOverrides](regionalformatoverrides.md) | Позволяет пользователю переопределять свой defaultRegionalFormat с помощью форматов, определенных для поля.<br><br>Возвращается по умолчанию.                                                      |
+| defaultDisplayLanguage     | [localeInfo](localeinfo.md)                           | Предпочтительный язык пользовательского интерфейса пользователя (меню, кнопки, ленты, предупреждающие сообщения) для веб-приложений Майкрософт.<br><br>Возвращается по умолчанию. Значение null не допускается. |
+| authoringLanguages         | Коллекция объектов localeInfo                                 | Приоритизированный список языков, на которые пользователь читает и авторов.<br><br>Возвращается по умолчанию. Значение null не допускается.                                                              |
+| defaultTranslationLanguage | localeInfo                                            | Язык, на который пользователь ожидает перевода документов, электронной почты и сообщений.<br><br>Возвращается по умолчанию.                                                    |
+| defaultSpeechInputLanguage | localeInfo                                            | Язык, который пользователь должен использовать в качестве ввода для текстовых сценариев речи.<br><br>Возвращается по умолчанию.                                                              |
+| defaultRegionalFormat      | localeInfo                                            | Локализ, который диски по умолчанию даты, времени и форматирования календаря.<br><br>Возвращается по умолчанию.                                                                 |
+| regionalFormatOverrides    | [regionalFormatOverrides](regionalformatoverrides.md) | Позволяет пользователю переопределять значение defaultRegionalFormat с помощью определенных форматов поля.<br><br>Возвращается по умолчанию.                                                      |
+| translationPreferences     | [translationPreferences](translationPreferences.md)   | Предпочтительные параметры пользователя при потреблении переведенных документов, электронной почты, сообщений и веб-сайтов.<br><br>Возвращается по умолчанию. Значение null не допускается.                                       |
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже приводится определение ресурса в JSON.
+Ниже приводится определение ресурса JSON.
 
 <!--{
   "blockType": "resource",
@@ -53,7 +54,8 @@ ms.locfileid: "49934914"
     "defaultTranslationLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
     "defaultSpeechInputLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
     "defaultRegionalFormat": {"@odata.type":"microsoft.graph.localeInfo"},
-    "regionalFormatOverrides": {"@odata.type":"microsoft.graph.regionalFormatOverrides"}
+    "regionalFormatOverrides": {"@odata.type":"microsoft.graph.regionalFormatOverrides"},
+    "translationPreferences":{"@odata.type":"microsoft.graph.translationPreferences"}
 }
 ```
 <!-- {

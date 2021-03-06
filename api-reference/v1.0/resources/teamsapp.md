@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 55fd373fd59f79abdfca8b3e066ca496daf8770b
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 2ffa5b3f5562e83d1e1e1ef64629e39a1da41cd4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706005"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472862"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
 
@@ -28,6 +28,7 @@ ms.locfileid: "49706005"
 |[Отправка приложения в каталог](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Отправка приложения в каталог приложений организации.|
 |[Обновление приложения в каталоге](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Обновление приложения в каталоге приложений организации.|
 |[Удаление приложения из каталога](../api/teamsapp-delete.md) | Нет | Удаление приложения из каталога приложений организации.|
+|[Получение бота, связанного с приложением в каталоге](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Получение бота, связанного с приложением Teams.|
 
 ## <a name="properties"></a>Свойства
 

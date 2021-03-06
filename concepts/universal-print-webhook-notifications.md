@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 03049f27b367d4842f80f63e142752c5816039e9
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 0d4cbaabb6fc05df3d9a58d1ced467bee0b8ef04
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934924"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515732"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Подписка на уведомления об изменениях из API облачной печати с использованием Microsoft Graph
 
@@ -208,4 +208,3 @@ Content-Type: application/json
 
 - Дополнительные сведения об API облачной печати в Microsoft Graph см. в статье [Обзор API облачной среды универсальной печати](/graph/universal-print-concept-overview). 
 - Чтобы отправить предложения и отзывы об API облачной печати в Microsoft Graph, перейдите в [техническое сообщество универсальной печати](https://aka.ms/community/UniversalPrint).
-

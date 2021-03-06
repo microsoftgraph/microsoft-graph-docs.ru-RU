@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: 74bd8ae832580750dd2e5822acf4e72570ed4272
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8cfda5016861ada120914cc61b19c00081dc5297
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441481"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515655"
 ---
 # <a name="get-printusagesummarybyprinter"></a>Получение printUsageSummaryByPrinter
 
@@ -36,7 +36,7 @@ ms.locfileid: "50441481"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /reports/dailyPrintUsageSummariesByPrinter/{id}
-GET /reports/monhtlyPrintUsageSummariesByPrinter/{id}
+GET /reports/monthlyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/dailyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/monthlyPrintUsageSummariesByPrinter/{id}
 ```
@@ -49,7 +49,7 @@ GET /print/reports/monthlyPrintUsageSummariesByPrinter/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) в тексте ответа.

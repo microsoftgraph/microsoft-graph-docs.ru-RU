@@ -1,33 +1,33 @@
 ---
-title: Получение ресурса Регионаландлангуажесеттингс
-description: Получение свойств объекта Регионаландлангуажесеттингс пользователя
+title: Получить ресурс regionalAndLanguageSettings
+description: Извлечение свойств региональных свойств пользователяAndLanguageSettings
 author: jasonbro
 localization_priority: Normal
-ms.prod: settings
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 39b7f0afb8f7abd8bf1838465c4f51bb5336862e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6bd4f758a2e7b0113ba6da5eb04b1823171986b8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981086"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516635"
 ---
-# <a name="get-regionalandlanguagesettings"></a>Получение Регионаландлангуажесеттингс
+# <a name="get-regionalandlanguagesettings"></a>Get regionalAndLanguageSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [регионаландлангуажесеттингс](../resources/regionalAndLanguageSettings.md) .
+Получите свойства объекта [regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения                   |Разрешение (по крайней мере для самых привилегированных)     |
+|Тип разрешения                   |Разрешение (от наименее до самых привилегированных)     |
 |----------------------------------|---------------------------------------------- |
-|Делегированные (рабочая или учебная учетная запись)|User. Read, User. Read. ALL                        |
-|Делегированная учетная запись (личная учетная запись)      |User. Read, User. Read. ALL              |
-|Для приложения                       |User. Read, User. Read. ALL              |
+|Делегированное (рабочая или учебная учетная запись)|User.Read, User.Read.All                        |
+|Делегированная (личная учетная запись)      |User.Read, User.Read.All              |
+|Приложение                       |User.Read, User.Read.All              |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ ms.locfileid: "48981086"
 GET /settings/regionalAndLanguageSettings
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Вы можете использовать `$select` для получения определенных свойств регионаландлангуажесеттингс, включая те, которые не возвращаются по умолчанию.
+Вы можете использовать `$select` для получения определенных региональных свойствAndLanguageSettings, включая те, которые не возвращаются по умолчанию.
 
 Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -43,18 +43,17 @@ GET /settings/regionalAndLanguageSettings
 | Заголовок       | Значение|
 |:-----------|:------|
 | Авторизация  | Bearer {токен}. Обязательный.|
-| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [регионаландлангуажесеттингс](../resources/regionalandlanguagesettings.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-В следующем примере возвращаются свойства вошедшего пользователя.
+В следующем примере получаются свойства пользователя, вписаного в него.
 
 ### <a name="request"></a>Запрос
 
@@ -134,7 +133,17 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ],
+        "untranslatedLanguages": ["de"]
+     }
 }
 ```
 

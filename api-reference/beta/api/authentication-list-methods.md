@@ -1,16 +1,16 @@
 ---
 title: Методы List
-description: Получить список объектов метода проверки подлинности.
+description: Извлечение списка объектов метода проверки подлинности.
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bce0b22bd43772fe94b7a0f88c98229ecdca55f1
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 48156b4f2c478b5d58978fba837a0f44ed17d502
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872417"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515508"
 ---
 # <a name="list-methods"></a>Методы List
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872417"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [метода проверки подлинности.](../resources/authenticationmethod.md)
+Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,23 +28,23 @@ ms.locfileid: "49872417"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|:---------------------------------------|:-------------------------|
+| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только маскирование номеров телефонов)
+* Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

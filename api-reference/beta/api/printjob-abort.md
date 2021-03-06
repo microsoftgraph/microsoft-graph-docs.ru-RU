@@ -1,35 +1,35 @@
 ---
-title: 'printJob: abort'
-description: Отменить задание печати.
+title: 'printJob: прекращение'
+description: Прервать задание печати.
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c92786af585eed2ba2b405fb9c6042c96b415a7b
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: cfd82c356463f3e642d5817ff0203c2bec8627db
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784860"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515452"
 ---
-# <a name="printjob-abort"></a>printJob: abort
+# <a name="printjob-abort"></a>printJob: прекращение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отменить задание печати. Только приложения, использующие разрешения приложений, могут отменить задание печати.
+Прервать задание печати. Только приложения с разрешениями приложений могут прервать задание печати.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент приложения должен иметь активную подписку универсальной печати и разрешение printer.Read.All или Printer.ReadWrite.All приложения.
+Помимо следующих разрешений, клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение printer.Read.All или Printer.ReadWrite.All.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Приложение| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /print/printers/{id}/jobs/{id}/abort
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-При желании в теле запроса можно упросить причину, по которой задание прерывается.
+В теле запроса можно дополнительно упросить причину, по которой задание прерывается.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|

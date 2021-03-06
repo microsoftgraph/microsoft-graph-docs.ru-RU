@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fed35d14abc6295c900aff50b0db8da74f1a5ec7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2cc3e747e70626d83817660ed02254689d447ae6
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433553"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516768"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -37,12 +37,6 @@ GET /me/calendars
 GET /users/{id | userPrincipalName}/calendars
 ```
 
-Календари пользователя в объекте [calendarGroup](../resources/calendargroup.md) по умолчанию.
-```http
-GET /me/calendars
-GET /users/{id | userPrincipalName}/calendars
-```
-
 Календари пользователя в указанном объекте [calendarGroup](../resources/calendargroup.md).
 ```http
 GET /me/calendarGroups/{calendar_group_id}/calendars
@@ -57,7 +51,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

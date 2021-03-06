@@ -4,14 +4,14 @@ description: Ресурс site предоставляет метаданные �
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 152100311e85dc905e14ca6f434a9a9fbe1d87fe
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 587014aa0c9dbe4c05c0e3b946c3f6e44b7cb821
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155848"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442802"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -76,7 +76,7 @@ ms.locfileid: "50155848"
 | **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
-| **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
+| **webUrl**               | string (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ### <a name="id-property"></a>Свойство id
 Ресурс **site** идентифицируется посредством уникального идентификатора, при создании которого используются следующие значения:
@@ -103,6 +103,7 @@ ms.locfileid: "50155848"
 | **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
 | **permissions**   | Collection([permission][])         | Разрешения, связанные с сайтом. Допускается значение NULL.
 | **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
+| **externalColumns**     | Collection([columnDefinition][])  | Коллекция определений столбцов, доступных на сайте, на которые ссылаются сайты в родительской иерархии текущего сайта.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -158,7 +159,7 @@ ms.locfileid: "50155848"
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",

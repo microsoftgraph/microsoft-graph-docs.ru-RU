@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: 'Получение содержимого определенной версии driveItem. '
+description: 'Извлечение содержимого определенной версии driveItem. '
 ms.date: 09/10/2017
 title: Загрузка предыдущей версии
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 670909b87afe96b237ce90d51af7e13b16b27546
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c521c3ad4c4776e67747d9f6b09deb5e39fcac82
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964153"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515529"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Скачивание содержимого ресурса DriveItemVersion (ознакомительная версия)
 
@@ -19,9 +19,9 @@ ms.locfileid: "48964153"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение содержимого определенной версии [driveItem](../resources/driveitem.md). 
+Извлечение содержимого определенной версии [driveItem](../resources/driveitem.md). 
 
->**Примечание:** Не поддерживается извлечение контента текущей версии. Вместо этого используйте [конечную точку содержимого driveItem](driveitem-get-content.md).
+>**Примечание:** Получение контента текущей версии не поддерживается. Вместо этого используйте [конечную точку контента driveItem.](driveitem-get-content.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ ms.locfileid: "48964153"
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+GET /groups/{group-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
@@ -102,7 +102,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive не сохраняет полные метаданные для предыдущих версий файла.
 
-Когда приложение извлекает список доступных версий для файла, возвращается ресурс [driveItemVersion](../resources/driveitemversion.md) , который предоставляет доступ к сведениям о конкретной версии.
+Когда приложение извлекает список доступных версий для файла, возвращается ресурс [driveItemVersion,](../resources/driveitemversion.md) который предоставляет доступную информацию о конкретной версии.
 
 <!--
 {

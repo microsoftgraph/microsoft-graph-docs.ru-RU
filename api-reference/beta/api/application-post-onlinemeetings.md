@@ -1,16 +1,16 @@
 ---
 title: Создание объекта onlineMeeting
 description: Создание собрания по сети от имени пользователя, указанного в тексте запроса.
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c41ffb69bcc539e27f6febdce38cd232338579f9
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 255c7e02b601b05b54b80ed7dbb3bd15df8925d9
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291963"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515599"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 

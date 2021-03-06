@@ -1,45 +1,47 @@
 ---
-title: Тип ресурса presence
-description: Содержит сведения о присутствии пользователя, включая сведения об их доступности и действиях пользователей.
+title: Тип ресурса присутствия
+description: Содержит сведения о присутствии пользователя, включая его доступность и активность пользователей.
 author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: ddbe555df37d232940bb8eadb081be459d0f8562
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: d6f88f23a6c08d5aa757163d4956c104a603e87b
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796579"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515634"
 ---
-# <a name="presence-resource-type"></a>Тип ресурса presence
+# <a name="presence-resource-type"></a>Тип ресурса присутствия
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о присутствии пользователя, включая сведения об их доступности и действиях пользователей.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> **Примечание.** В настоящее время этот ресурс поддерживается только для пользователей Microsoft Teams.
+Содержит сведения о присутствии пользователя, включая его доступность и активность пользователей.
 
-Этот ресурс поддерживает подписку на уведомления [об изменениях.](/graph/webhooks)
+> **Примечание:** В настоящее время этот ресурс поддерживается только для пользователей Microsoft Teams.
+
+Этот ресурс поддерживает подписку на изменение [уведомлений.](/graph/webhooks)
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                            | Возвращаемый тип                                       | Описание                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
 | [Получить присутствие](../api/presence-get.md)     | [presence](../resources/presence.md)     | Получите сведения о присутствии пользователя.
-| [Получить присутствие нескольких пользователей](../api/cloudcommunications-getpresencesbyuserid.md)    |  [коллекция presence](../resources/presence.md)     |  Получите сведения о присутствии для нескольких пользователей.      |
+| [Наличие нескольких пользователей](../api/cloudcommunications-getpresencesbyuserid.md)    |  [Коллекция присутствия](../resources/presence.md)     |  Получите сведения о присутствии для нескольких пользователей.      |
 
 
 ## <a name="properties"></a>Свойства
 
 | Связь        | Тип                                                 | Описание                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  string     |  ИД объекта пользователя   |
-|availability    |  Коллекция строк   |   Базовые сведения о присутствии для пользователя. Возможные значения: `Available` `AvailableIdle` , , `Away` `BeRightBack` , `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
-|действие    |  Коллекция строк      |    Дополнительная информация о доступности пользователя. Возможные значения: `Available` `Away` , `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` .       |
-|outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | Параметры "Нет на месте" для пользователя. |
+|id    |  string     |  ID объекта пользователя   |
+|availability    |  string collection   |   Базовые сведения о присутствии пользователя. Возможные значения `Available` : , , , , `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` , `Offline``PresenceUnknown`  |
+|действие    |  string collection      |    Дополнительные сведения о доступности пользователя. Возможные `Available` значения: , , , , , , , , `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` .       |
+|outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | Параметры вне офиса для пользователя. |
 
->**Примечание.** Дополнительные данные о различных состояниях присутствия см. в [записях о присутствии пользователей в Teams.](/microsoftteams/presence-admins) 
+>**Примечание:** Дополнительные данные о различных состояниях присутствия см. в [записи Присутствия пользователя в Teams.](/microsoftteams/presence-admins) 
 
 ## <a name="relationships"></a>Связи
 

@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса АудиоконференЦинг
-description: Представляет сведения о доступе к телефонной линии для собрания по сети.
+title: тип ресурса audioConferencing
+description: Представляет сведения о доступе к телефону для собрания в Интернете.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8cff9b4405dc853e8502fccd9311899bb397b758
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 45ab16c357f8779bdf1a638e1f5a5291eba48e19
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999008"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515673"
 ---
-# <a name="audioconferencing-resource-type"></a>Тип ресурса АудиоконференЦинг
+# <a name="audioconferencing-resource-type"></a>тип ресурса audioConferencing
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения о доступе к телефонии для [онлинемитинг](onlinemeeting.md).
+Представляет сведения о доступе к телефону для [onlineMeeting.](onlinemeeting.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип    | Описание                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| диалинурл           | String  | URL-адрес веб-страницы, которая содержит сведения о телефонном доступе. |
-| конференцеид        | String  | Идентификатор конференции онлайн-собрания.      |
-| толлфринумбер      | String  | Бесплатный номер, который подключается к поставщику конференции с аудио.              |
-| толлнумбер          | String  | Платный номер, который подключается к поставщику конференции с аудио-и видеоконференциями.                   |
+| dialinUrl           | String  | URL-адрес веб-страницы, доступной извне, который содержит сведения о диалоговом номере. |
+| conferenceId        | String  | ID конференции собрания в Интернете.      |
+| tollFreeNumber      | String  | Бесплатный номер, подключенный к поставщику аудиоконференции.              |
+| tollNumber          | String  | Платный номер, который подключается к поставщику аудиоконференции.                   |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,7 +43,7 @@ ms.locfileid: "47999008"
 ```json
 {
   "dialinUrl": "String",
-  "ConferenceId": "String",
+  "conferenceId": "String",
   "tollFreeNumber": "String",
   "tollNumber": "String"
 }

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 4373bd4dcc911f08504e9716b1cc19d8d177df16
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: de3a4fa33e44788442d0a2ccf1abb4df80e0ea0d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092675"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516705"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -27,7 +27,7 @@ ms.locfileid: "50092675"
 
 | Ресурс | Версия |
 |---------------|-------|
-| [administrativeUnit](administrativeunit.md)  | Общедоступная |
+| [administrativeUnit](administrativeunit.md)  | Общедоступная версия |
 | [Событие календаря](event.md) | Общедоступная версия |
 | [event](event.md) для календаря группы | Общедоступная версия |
 | [post](post.md) цепочки беседы группы | Общедоступная версия |
@@ -37,8 +37,8 @@ ms.locfileid: "50092675"
 | [Организация](organization.md) | Общедоступная версия |
 | [Личный контакт](contact.md) | Общедоступная версия |
 | [Пользователь](user.md) | Общедоступная версия |
-| [Задача](todotask.md)  | Общедоступная ||
-| [Список задач](todotasklist.md)  | Общедоступная версия ||
+| [Задача](todotask.md)  | Общедоступная версия |
+| [Список задач](todotasklist.md)  | Общедоступная версия |
 
 ## <a name="outlook-specific-considerations"></a>Специальные рекомендации для Outlook
 
@@ -87,7 +87,8 @@ ms.locfileid: "50092675"
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт,](contact.md) [событие,](event.md) [сообщение,](message.md) [post,](post.md) [todoTask](todotask.md)или [todoTaskList,](todotasklist.md) содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
+|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт,](contact.md) [событие,](event.md) [сообщение,](message.md) [сообщение,](post.md) [todoTask](todotask.md)или [todoTaskList,](todotasklist.md) содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Обновление объекта openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Нет |Удаление объекта openTypeExtension. |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf24e7b30a2cd38830a4291bf4a698b728a7b0cf
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 2112788ce5127326e0e82ef91c1068b5b56ec14a
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796656"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515597"
 ---
 # <a name="get-passwordauthenticationmethod"></a>Get passwordAuthenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "49796656"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [метода проверки подлинности паролем.](../resources/passwordauthenticationmethod.md) 
+Извлечение свойств и связей объекта [метода проверки подлинности паролей.](../resources/passwordauthenticationmethod.md) 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,23 +28,23 @@ ms.locfileid: "49796656"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|:---------------------------------------|:-------------------------|
+| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только маскирование номеров телефонов)
+* Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,7 +63,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого `200 OK` [пароляAuthenticationMethod](../resources/passwordauthenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

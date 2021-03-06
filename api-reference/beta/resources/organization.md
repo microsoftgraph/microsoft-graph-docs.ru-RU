@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 02fb9079ed8ecec9bab8ad8833ce36ff3569813b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 56bcd6ee76089e8b982ddcfd8e63555f05878554
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442937"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516702"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -33,8 +33,9 @@ ms.locfileid: "50442937"
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
 |**Расширения схемы**| | |
-|[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.| [Создание organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создайте новую организациюBrandingProperties, разместив в коллекции брендинга. |
-| [Получить брендинг](../api/organizationalbrandingproperties-get.md) | [коллекция organizationalBrandingProperties](organizationalbrandingproperties.md) | Получите коллекцию объектов organizationalBrandingProperties. |
+|[Добавление значений расширений для схемы](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
+|[Создание organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создайте новую организациюBrandingProperties, разместив в коллекции брендинга. |
+|[Получить брендинг](../api/organizationalbrandingproperties-get.md) | [коллекция organizationalBrandingProperties](organizationalbrandingproperties.md) | Получите коллекцию объектов organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Свойства 
 | Свойство | Тип   | Описание |

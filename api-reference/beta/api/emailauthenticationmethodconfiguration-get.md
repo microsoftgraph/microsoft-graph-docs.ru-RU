@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e3e2fd05c8d4f2d3f3036c55a6f9c817e2ba9c91
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 006fd4ae3bb69157e18235a6dd31d1d090533205
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436311"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515884"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Получить emailAuthenticationMethodConfiguration
 
@@ -42,7 +42,7 @@ ms.locfileid: "50436311"
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,7 +51,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 -->
 
 ```http
-GET /policies/authenticationMethodsPolicy/email
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ### <a name="response"></a>Отклик

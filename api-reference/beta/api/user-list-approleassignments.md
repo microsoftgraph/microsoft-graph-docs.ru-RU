@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 6fa31fd31c8c898b508b9b0d02c602047eea58c5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 43f1119f83d0865319462e7ffb65c263eb67f06f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136215"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433528"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Список объектов appRoleAssignment, предоставленных для пользователя
 
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -55,9 +55,11 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-list-approleassignments-granted-to-a-user"></a>Пример 1. Список объектов appRoleAssignment, предоставленных для пользователя
+
+#### <a name="request"></a>Запрос
 
 В приведенном примере показано, как запросить извлечение ролей приложения, назначенных пользователю.
 
@@ -69,7 +71,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/appRoleAssignments
+GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-approleassignments-csharp-snippets.md)]
@@ -90,11 +92,11 @@ GET https://graph.microsoft.com/beta/users/{id}/appRoleAssignments
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -106,17 +108,68 @@ GET https://graph.microsoft.com/beta/users/{id}/appRoleAssignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "deletedDateTime": null,
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "principalDisplayName": "Alex Wilber",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
+    }
+  ]
+}
+```
+
+### <a name="example-2-list-approleassignments-granted-to-a-user-filtered-by-resourceid"></a>Пример 2. Список объектов appRoleAssignment, предоставленных для пользователя и отфильтрованных по resourceId
+
+#### <a name="request"></a>Запрос
+
+В приведенном примере показано, как запросить извлечение ролей приложения, назначенных пользователю, отфильтровав их по `resourceId`, который является типом GUID
+
+<!-- {
+  "blockType": "request",
+  "name": "user_get_approleassignments_filterby_resourceId"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments?$filter=resourceId eq 8e881353-1735-45af-af21-ee1344582a4d
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
+  "value": [
+    {
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "principalDisplayName": "MOD Administrator",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 47292fbffad4902acb7433a40ffadf4681140423
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c47b6c66eac284cc3ca0c2157c524001cca36048
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092902"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516026"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
@@ -24,14 +24,14 @@ ms.locfileid: "48092902"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/delete
+DELETE /workbook/worksheets/{id|name}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -55,7 +55,7 @@ POST /workbook/worksheets/{id|name}/delete
   "name": "worksheet_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}
 ```
 
 ##### <a name="response"></a>Отклик

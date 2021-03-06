@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d4e05ae666f2fb46285dfb6b4b92892d7febdcf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 28d3049df417b0eec9d6e98eff18f1343f5e09b8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436297"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515865"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>Обновление emailAuthenticationMethodConfiguration
 
@@ -41,7 +41,7 @@ ms.locfileid: "50436297"
 -->
 
 ```http
-PATCH /policies/authenticationMethodsPolicy/email
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -73,7 +73,7 @@ PATCH /policies/authenticationMethodsPolicy/email
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 Content-Type: application/json
 Content-length: 147
 

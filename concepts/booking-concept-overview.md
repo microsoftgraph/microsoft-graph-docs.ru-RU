@@ -5,16 +5,16 @@ author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3197c2eccc6d4f8db12bfc15e40f3ecd692c95a1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 5dfd34bb7defd6f525a5869221ce2c0215826da6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892143"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432867"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 
-Microsoft Bookings — это приложения для браузера и мобильных устройств, упрощающие планирование встреч для небольших компаний и их клиентов. Любая организация, предоставляющая услуги по предварительной записи, например крупные компании, автосервисы, парикмахерские и юридические фирмы, может получить выгоду от управления своими заказами, чтобы высвободить время для более важной задачи развития своего бизнеса. Служба Microsoft Bookings доступен корпоративным организациям и предприятиям, имеющим подписку на Microsoft 365 бизнес премиум.
+Microsoft Bookings — это приложения для браузера и мобильных устройств, упрощающие планирование встреч для небольших компаний и их клиентов. Любая организация, предоставляющая услуги по предварительной записи, например крупные компании, автосервисы, парикмахерские и юридические фирмы, может получить выгоду от управления своими заказами, чтобы высвободить время для более важной задачи развития своего бизнеса. Служба Microsoft Bookings доступна корпоративным организациям и предприятиям, имеющим подписку на Microsoft 365 бизнес премиум.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Зачем проводить интеграцию с Microsoft Bookings, используя Microsoft Graph?
 

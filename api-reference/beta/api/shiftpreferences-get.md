@@ -1,24 +1,24 @@
 ---
-title: Получение Шифтпреференцес
-description: Получение предпочтения смены по ИДЕНТИФИКАТОРу.
+title: Получить shiftPreferences
+description: Получите параметр shift preference by ID.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b5c6d26eb62a97a2c90e0d376435e9e524523110
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 247e4626c35eb9b0d9d3cf82d5ebc32621922755
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969169"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516803"
 ---
-# <a name="get-shiftpreferences"></a>Получение Шифтпреференцес
+# <a name="get-shiftpreferences"></a>Получить shiftPreferences
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) по идентификатору.
+Извлечение свойств и связей [объекта shiftPreferences](../resources/shiftpreferences.md) по ID.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает параметры запросов OData для настройки отклика.
+Этот метод не поддерживает параметры запроса OData для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -53,7 +53,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [шифтпреференцес](../resources/shiftpreferences.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [shiftPreferences](../resources/shiftpreferences.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -67,7 +67,7 @@ GET /users/{userId}/settings/shiftPreferences
   "name": "shift-get"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences
+GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]

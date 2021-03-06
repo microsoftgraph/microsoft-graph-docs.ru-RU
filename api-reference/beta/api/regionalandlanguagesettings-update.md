@@ -1,43 +1,43 @@
 ---
-title: Обновление Регионаландлангуажесеттингс
-description: Обновление региональных и языковых параметров пользователя
+title: Обновление regionalAndLanguageSettings
+description: Обновление региональных и языковых параметров пользователя.
 author: jasonbro
 localization_priority: Normal
-ms.prod: settings
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d5d9d10adc73f37906c8cf07073e97e8b81bfe1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82f33ae2b4165586ccb4a3d55873e1e6ff6c1765
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966843"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516621"
 ---
-# <a name="update-regionalandlanguagesettings"></a>Обновление Регионаландлангуажесеттингс
+# <a name="update-regionalandlanguagesettings"></a>Обновление regionalAndLanguageSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление некоторых или всех свойств объекта [регионаландлангуажесеттингс](../resources/regionalAndLanguageSettings.md) .
+Обновим некоторые или все свойства объекта [regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения                   |Разрешение (по крайней мере для самых привилегированных)     |
+|Тип разрешения                   |Разрешение (от наименее до самых привилегированных)     |
 |----------------------------------|---------------------------------------------- |
-|Делегированные (рабочая или учебная учетная запись)|User. ReadWrite, User. ReadWrite. ALL             |
-|Делегированная учетная запись (личная учетная запись)      |User. ReadWrite, User. ReadWrite. ALL             |
-|Для приложения                       |User. ReadWrite, User. ReadWrite. ALL             |
+|Делегированное (рабочая или учебная учетная запись)|User.ReadWrite, User.ReadWrite.All             |
+|Делегированная (личная учетная запись)      |User.ReadWrite, User.ReadWrite.All             |
+|Приложение                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы обновить региональные и языковые параметры пользователя, выполните указанные ниже действия.
+Обновление всех региональных и языковых параметров пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /settings/regionalAndLanguageSettings
 ```
 
-Обновление подмножества свойств региональных и языковых параметров пользователя:
+Обновление подмножество свойств региональных и языковых параметров пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /settings/regionalAndLanguageSettings
@@ -50,17 +50,17 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
- **Put** : в теле запроса добавьте объект [регионаландлангуажесеттингс](../resources/regionalAndLanguageSettings.md) .
+ **PUT.** В теле запроса поставьте [объект regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
  
- **Patch** : указывайте только значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
+ **PATCH.** Только поставляем значения для соответствующих полей, которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
  
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код ответа 200 и обновленный объект Регионаландлангуажесеттингс
+В случае успеха этот метод возвращает код ответа 200 и обновленный **объект regionalAndLanguageSettings.**
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Пример 1: обновление всего объекта Регионаландлангуажесеттингс пользователя, выполнившего вход в систему
+### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Пример 1. Обновление всего объекта regionalAndLanguageSettings для подписанного пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -104,7 +104,16 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ]
+     }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -141,7 +150,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Пример 2: Обновление выбранных свойств вошедшего пользователя
+### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Пример 2. Обновление выбранных свойств подписанного пользователя
 
 #### <a name="request"></a>Запрос
 

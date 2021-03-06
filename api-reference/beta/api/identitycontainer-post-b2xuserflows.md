@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c6e65a9f3edaa5e3be984db518067def60a394ba
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: af73dffdebe41d41e33b463c9c347d36f542985d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435520"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515900"
 ---
 # <a name="create-b2xidentityuserflow"></a>Создание b2xIdentityUserFlow
 
@@ -26,8 +26,8 @@ ms.locfileid: "50435520"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
@@ -40,7 +40,7 @@ ms.locfileid: "50435520"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /identity/b2xUserFlow
+POST /identity/b2xUserFlows
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,8 +59,8 @@ POST /identity/b2xUserFlow
 |id|String|Обязательный. Имя пользовательского потока. После создания имя будет предварительно заранее. `B2X_1`|
 |userFlowType|String|Обязательный. Тип пользовательского потока, который вы создаете. Это значение всегда будет `signUpOrSignIn` .|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока. Это значение всегда будет 1.|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
-|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательное. Настройка для включения соединителя API с целью использования в составе пользовательского потока.|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный атрибут. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательный атрибут. Настройка для включения соединителя API с целью использования в составе пользовательского потока.|
 
 ## <a name="response"></a>Отклик
 
