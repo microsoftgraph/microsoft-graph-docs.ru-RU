@@ -3,18 +3,27 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: cc02755348046e33536c9e38931fe3a798f45b3b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2a6fe540d280b7db44f9c3c2488f0ea4ab652175
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472008"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516222"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал изменений описывает конкретные изменения уровня API в Microsoft Graph v1.0 и бета-версии.
 
 Сводную информацию о значении этих изменений API, а также о последних инструментах, компонентах, руководствах и учебных пособиях см. в разделе [Что нового в Microsoft Graph](whats-new-overview.md).
+## <a name="march-2021"></a>Март 2021 г.
+
+### <a name="users"></a>Пользователи
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлен ресурс [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true).|
+| Дополнение | Бета | Добавлен ресурс [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true).|
+| Дополнение | Бета | Добавлено свойство **translationPreferences** для ресурса [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true).|
 
 ## <a name="march-2021"></a>Март 2021 г.
 
@@ -700,7 +709,7 @@ ms.locfileid: "50472008"
 | Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). Это свойство заменено свойством **includeResourceData**. |
 | Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](change-notifications-delivery.md). |
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -975,7 +984,7 @@ ms.locfileid: "50472008"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлены ресурсы [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection) и [resourceData](/graph/api/resources/resourcedata) для API [change notification](/graph/api/concepts/webhooks). |
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
@@ -1691,7 +1700,7 @@ ms.locfileid: "50472008"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 
 Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
 
