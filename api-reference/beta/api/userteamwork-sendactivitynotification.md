@@ -1,23 +1,23 @@
 ---
 title: 'userTeamwork: sendActivityNotification'
-description: Отправьте пользователю уведомление веб-канала активности.
+description: Отправка уведомления о канале действий пользователю.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a772894e46dd553048ae3d429a9af782173be7f
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 97d623906a54c7fc6f4cd44435d9edd4b52ce6ab
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910719"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516320"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте пользователю уведомление веб-канала активности. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в отправке уведомлений [о действиях Teams.](/graph/teams-send-activityfeednotifications)
+Отправка уведомления о канале действий пользователю. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в материале Отправка уведомлений о [действиях Teams.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "49910719"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamsActivity.Send|
+|Для приложений|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,13 +51,13 @@ POST /users/{userId}/teamwork/sendActivityNotification
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о который идет речь.|
-|activityType|String|Тип действия. Это должно быть объявлено в манифесте [приложения Teams.](/microsoftteams/platform/overview)|
-|chainId|Int64|Необязательное свойство. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
-|previewText|[itemBody](../resources/itembody.md)|Предварительный просмотр текста уведомления. Microsoft Teams будет показывать только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
+|activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
+|chainId|Int64|Необязательное. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams покажет только первые 150 символов.|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи ленты действий, соответствующие `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
 
-Следующие ресурсы поддерживаются при установке для свойства `source` **темы** значения `entityUrl` :
+При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityUrl` ресурсы:
 
 - [teamsAppInstallation](../resources/teamsappinstallation.md)
 - [teamsCatalogApp](../resources/teamscatalogapp.md)
@@ -68,7 +68,7 @@ POST /users/{userId}/teamwork/sendActivityNotification
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-send-notification-to-a-user-for-a-task-created"></a>Пример 1. Отправка уведомления пользователю о созданной задаче
+### <a name="example-1-send-notification-to-a-user-for-a-task-created"></a>Пример 1. Отправка уведомления пользователю для задачи, созданной
 
 #### <a name="request"></a>Запрос
 
@@ -98,7 +98,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/userteamwork-sendactivitynotification-csharp-snippets.md)]
@@ -129,9 +128,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Пример 2. Уведомление пользователя о событии с помощью настраиваемой темы
+### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Пример 2. Уведомление пользователя о событии с использованием настраиваемой темы
 
-Если вы хотите связать аспект, который не представлен Microsoft Graph, или настроить имя, вы можете установить источник и передать для него пользовательское `topic` `text` значение. `webUrl` требуется при использовании источника `topic` в качестве `text` .
+Если вы хотите связать аспект, который не представлен Microsoft Graph, или настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при использовании `topic` источника в качестве `text` .
 
 #### <a name="request"></a>Запрос
 
