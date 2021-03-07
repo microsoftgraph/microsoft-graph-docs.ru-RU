@@ -184,8 +184,7 @@ items:
       - name: Устройства и приложения
         expanded: true
         items:
-          - name: Облачная печать (предварительная версия)
-            expanded: true
+          - name: Облачная печать
             items:
               - name: Обзор
                 href: universal-print-concept-overview.md
