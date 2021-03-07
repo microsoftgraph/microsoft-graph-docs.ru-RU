@@ -1,22 +1,22 @@
 ---
 title: Get onlineMeeting
-description: Извлечение свойств и связей объекта собрания по сети.
-author: ananmishr
+description: Извлечение свойств и связей объекта собраний в Интернете.
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 18f4d06e106bb7413054d2ab62f93d02885a90a0
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 81ef5019ad98af32cd2a393b1f531ee6b5b0ba87
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292940"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515886"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [onlineMeeting.](../resources/onlinemeeting.md) Вы можете получить сведения о onlineMeeting с помощью [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) или [ИД собрания.](#example-2-retrieve-an-online-meeting-by-meeting-id)
+Извлечение свойств и связей [объекта onlineMeeting.](../resources/onlinemeeting.md) Сведения о onlineMeeting можно получить с помощью [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) или [ID собрания.](#example-2-retrieve-an-online-meeting-by-meeting-id)
 
 
 ## <a name="permissions"></a>Разрешения
@@ -30,10 +30,10 @@ ms.locfileid: "50292940"
 | Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, разрешив приложению, настроенном в политике, получать собрание по сети от имени этого пользователя (ид пользователя, указанный в пути запроса).
+> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, получить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить указанный onlineMeeting с помощью ИД собрания с делегированным маркером:
+Чтобы получить указанный onlineMeeting с помощью ID собрания с делегированным маркером:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
@@ -45,17 +45,17 @@ GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Чтобы получить указанное onlineMeeting с помощью **videoTeleconferenceId***:
+Чтобы получить указанный onlineMeeting с помощью **videoTeleconferenceId***:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
 > **Примечание:**
-> - `userId`— это ИД объекта пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения [см. в политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
-> - `meetingId`— **это ид** объекта [onlineMeeting.](../resources/onlinemeeting.md)
-> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и находится в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно найти в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
-> - \* Этот сценарий поддерживает только маркер приложения и не поддерживает политику доступа к приложениям.
+> - `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
+> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
+> - \* Этот сценарий поддерживает только маркер приложений и не поддерживает политику доступа к приложениям.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -68,7 +68,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -76,7 +76,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания по сети с помощью VideoTeleconferenceId
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания в Интернете с помощью VideoTeleconferenceId
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -85,6 +85,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["123456789"],
   "name": "get-onlineMeeting"
 }-->
 ```msgraph-interactive
@@ -187,12 +188,12 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Пример 2. Извлечение собрания по сети по его ИД
-Вы можете получить сведения о собрании с помощью ИД собрания с помощью маркера пользователя или приложения. При создании объекта [onlineMeeting](../resources/onlinemeeting.md)в объекте ответа предоставляется ИД собрания. Этот параметр доступен для поддержки случаев использования, когда известен ИД собрания, например, когда приложение сначала создает собрание по сети с помощью API Graph, а затем извлекает сведения о собрании позже в качестве отдельного действия.
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Пример 2. Извлечение собрания в Интернете с помощью ИД собрания
+Сведения о собраниях можно получить с помощью ИД собрания с помощью маркера пользователя или приложения. ID собрания предоставляется в объекте ответа при создании [onlineMeeting.](../resources/onlinemeeting.md) Этот параметр доступен для поддержки случаев использования, в которых известен ID собрания, например, когда приложение сначала создает онлайн-собрание с помощью API Graph, а затем извлекает сведения о собраниях позже в качестве отдельного действия.
 
 #### <a name="request"></a>Запрос
 
-> **Примечание.** Для учитаемости был усечен ИД собрания.
+> **Примечание:** ID собрания был усечен для чтения.
 
 В следующем запросе используется маркер пользователя.
 <!-- { "blockType": "ignored" } -->

@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Чтобы переместить ресурс DriveItem в новый родительский элемент, веб-приложению требуется обновить элемент parentReference из DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: cf09789b370df585c9245376524f209cfb9e1bbf
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 9465ac1ad39781ee330d134c763c8189e89d208f
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240250"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516754"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Перемещение ресурса DriveItem в новую папку
 
@@ -39,7 +39,7 @@ ms.locfileid: "50240250"
 
 ```http
 PATCH /drives/{drive-id}/items/{item-id}
-PATCH /groups/{group-id}/drive/{item-id}
+PATCH /groups/{group-id}/drive/items/{item-id}
 PATCH /me/drive/items/{item-id}
 PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}
@@ -122,7 +122,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 

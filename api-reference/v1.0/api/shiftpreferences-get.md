@@ -1,22 +1,22 @@
 ---
-title: Получение Шифтпреференцес
-description: Получение предпочтения смены по ИДЕНТИФИКАТОРу.
+title: Получить shiftPreferences
+description: Получите параметр shift preference by ID.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a0cda56aa25c6fac2c0abf009af3fc97ddaa7729
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b5949168ca90236fdad51968159d64074cda669
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012917"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516299"
 ---
-# <a name="get-shiftpreferences"></a>Получение Шифтпреференцес
+# <a name="get-shiftpreferences"></a>Получить shiftPreferences
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) по идентификатору.
+Извлечение свойств и связей [объекта shiftPreferences](../resources/shiftpreferences.md) по ID.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48012917"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Усершифтпреференцес. Read. ALL, Усершифтпреференцес. ReadWrite. ALL |
+|Приложение | UserShiftPreferences.Read.All, UserShiftPreferences.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает параметры запросов OData для настройки отклика.
+Этот метод не поддерживает параметры запроса OData для настройки ответа.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,12 +49,12 @@ GET /users/{userId}/settings/shiftPreferences
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [шифтпреференцес](../resources/shiftpreferences.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [shiftPreferences](../resources/shiftpreferences.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -62,35 +62,13 @@ GET /users/{userId}/settings/shiftPreferences
 
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "get_shiftpreferences"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences
+```http
+GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
-
 
 ### <a name="response"></a>Отклик
 

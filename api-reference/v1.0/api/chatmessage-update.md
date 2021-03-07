@@ -1,20 +1,20 @@
 ---
 title: Обновление chatMessage
-description: Обновление свойства policyViolation объекта chatMessage.
+description: Обновление свойства policyViolation для chatMessage.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ee729e5285bfd6938329800d8bcedbf611391221
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: 06ceb5aae99955062c9d409eb69dac5fdef0d6d9
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115208"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515613"
 ---
 # <a name="update-chatmessage"></a>Обновление chatMessage
 
-Обновление объекта [chatMessage.](../resources/chatMessage.md) Обновлять можно только свойство **policyViolation** **объекта chatMessage.**
+Обновление [объекта chatMessage.](../resources/chatMessage.md) Можно обновить только свойство **policyViolation** **для chatMessage.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,6 @@ ms.locfileid: "50115208"
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
-PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,11 +41,11 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажите представление объекта [chatMessage](../resources/chatMessage.md) в JSON, указав только **свойство policyViolation.**
+В теле запроса покажите JSON представление объекта [chatMessage,](../resources/chatMessage.md) указав только свойство **policyViolation.**
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `200 OK` ответ.
+В случае успешной работы этот метод возвращает `200 OK` ответ.
 
 ## <a name="example"></a>Пример
 

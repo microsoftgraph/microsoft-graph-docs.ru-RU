@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 9ea1a2f078880397f8cb5b96c962c7aa7453b502
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: fc14425ed08795f00ac7a92a348c84f9bcbe537d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092689"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515571"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -38,8 +38,8 @@ ms.locfileid: "50092689"
 | [organization](organization.md) | Общедоступная версия |
 | [Личный контакт](contact.md) | Общедоступная версия |
 | [user](user.md) | Общедоступная версия |
-| [Задача](todotask.md)  | Общедоступная версия ||
-| [Список задач](todotasklist.md)  | Общедоступная версия ||
+| [Задача](todotask.md)  | Общедоступная версия |
+| [Список задач](todotasklist.md)  | Общедоступная версия |
 
 ## <a name="outlook-specific-considerations"></a>Специальные рекомендации для Outlook
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b9e0ddaead438d3df4cc01ecd193f213576569f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c98aa15c2e969d760a266842fe03d4a679757dc2
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012868"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516551"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 
@@ -29,8 +29,8 @@ ms.locfileid: "48012868"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/{index}/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
+DELETE /workbook/tables/{id|name}/rows/{index}
+DELETE /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -54,7 +54,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/delete
+DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 ```
 
 ##### <a name="response"></a>Отклик

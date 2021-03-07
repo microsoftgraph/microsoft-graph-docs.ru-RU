@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ca64fabc676d42c43960bc8fc1c4620a7cf52a83
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: c12646d969c170e019f2892acde3afc9fa88d544
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115159"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515926"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -28,7 +28,7 @@ ms.locfileid: "50115159"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChannelMessage.Read.Group* |
+|Приложение| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 

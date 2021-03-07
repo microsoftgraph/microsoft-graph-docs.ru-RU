@@ -1,22 +1,22 @@
 ---
 title: Удаление onlineMeeting
-description: Удаление собрания по сети.
-author: ananmishr
+description: Удаление собрания в Интернете.
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 09e59b4264636c7ac712f49fe93c0c121076b54f
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: fb05bb2746a68d307a46651498163e570c7ca0f2
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292338"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516159"
 ---
 # <a name="delete-onlinemeeting"></a>Удаление onlineMeeting
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [onlineMeeting.](../resources/onlinemeeting.md)
+Удаление [объекта onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,30 +27,30 @@ ms.locfileid: "50292338"
 | Для приложений                            | OnlineMeetings.ReadWrite.All*          |
 
 > [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, разрешив приложению, настроенном в политике, удалить собрание по сети от имени этого пользователя (ид пользователя, указанный в пути повторного доступа).
+> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, удалить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути reuqest).
 
 ## <a name="http-request"></a>HTTP-запрос
-Удаление указанного onlineMeeting по ИД собрания с делегированным разрешением:
+Удаление указанного onlineMeeting путем собрания ID с делегированным разрешением:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}
 ```
 
-Удаление указанного onlineMeeting по ИД собрания с разрешением приложения:
+Удаление указанного onlineMeeting путем встречи с ИД с разрешением приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
 > **Примечание:**
-> - `userId`— это ИД объекта пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения [см. в политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
-> - `meetingId`— **это ид** объекта [onlineMeeting.](../resources/onlinemeeting.md)
+> - `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,6 +65,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype"],
   "name": "delete-call"
 }-->
 ```http

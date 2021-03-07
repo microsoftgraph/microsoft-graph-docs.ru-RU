@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d010f19945b08a7bd127c19a0938473b73ff0fae
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 79c38e9f8f2dbe378198e01610c57453eb7a2ba8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377098"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515816"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -31,13 +31,12 @@ ms.locfileid: "49377098"
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members/{id}
-GET /users/{id}/chats/{id}/members/{id}
 GET /teams/{id}/channels/{id}/members/{id}
 ```
 
