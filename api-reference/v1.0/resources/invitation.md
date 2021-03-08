@@ -5,12 +5,12 @@ localization_priority: Priority
 author: elisolMS
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ed0dd07a0460ef35b2e1be567d1de1b12294e68c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 484ac459d36d98353038fa68af4a2c8c9312ac56
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444359"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516614"
 ---
 # <a name="invitation-resource-type"></a>Тип ресурса invitation
 
@@ -41,7 +41,7 @@ ms.locfileid: "50444359"
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
 |sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: false.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
-|inviteRedeemUrl|Строка|URL-адрес для активации приглашения. Только для чтения.|.
+|inviteRedeemUrl|Строка|URL-адрес для активации приглашения. Только для чтения.|
 |invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. Значение по умолчанию: Guest. Администратор компании может заменить его на Member. |
 |status|String|Состояние приглашения. Возможные значения: PendingAcceptance, Completed, InProgress и Error|
 
