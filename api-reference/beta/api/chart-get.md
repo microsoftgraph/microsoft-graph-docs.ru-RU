@@ -5,14 +5,14 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9a5126b50c4bdfe6847c667ce0799a1b75616b0f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2f01860597b5f5dc47bceb87069c1df0f694dfce
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959081"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574876"
 ---
-# <a name="get-workbookchart"></a>Получение воркбукчарт
+# <a name="get-workbookchart"></a>Get workbookchart
 
 Пространство имен: microsoft.graph
 
@@ -31,7 +31,8 @@ ms.locfileid: "48959081"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [книгиChart](../resources/workbookchart.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

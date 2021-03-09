@@ -1,24 +1,24 @@
 ---
-title: Приостановка синхронизации в Едукатионсинчронизатионпрофиле
-description: Приостановите синхронизацию определенного профиля синхронизации данных School в клиенте.
+title: Синхронизация паузы на educationSynchronizationProfile
+description: Приостановка синхронизации определенного профиля синхронизации школьных данных в клиенте.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c0dd8f15ea3cccc6abecb8d4293a8bf9d3a4ce35
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 44477aae7799922008b0a7623fd7e4c91c09e0aa
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965873"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574218"
 ---
-# <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Приостановка синхронизации в Едукатионсинчронизатионпрофиле
+# <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Синхронизация паузы на educationSynchronizationProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Приостановите синхронизацию определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.
+Приостановка синхронизации определенного профиля синхронизации [школьных данных](../resources/educationsynchronizationprofile.md) в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,13 +26,13 @@ ms.locfileid: "48965873"
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/pause
+POST /education/synchronizationProfiles/{id}/pause
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
 
 ##### <a name="response"></a>Отклик
 
-Текст отклика отсутствует.
+Тело ответа не существует.
 
 <!-- {
   "blockType": "response",

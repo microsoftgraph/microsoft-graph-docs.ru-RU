@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса workbook
-description: Содержит связанные объекты книг, такие как листы, таблицы, диапазоны и т. д.
+description: Содержит связанные объекты книги, такие как таблицы, таблицы, диапазоны и так далее.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a2940b4b873630f21ceb3c7db21456e81e8c859a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69d04f6ccd5e537c97854abcb1cf2a9c24820a87
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039190"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575709"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса workbook
 
 Пространство имен: microsoft.graph
 
-Содержит связанные объекты книг, такие как листы, таблицы, диапазоны и т. д.
+Содержит связанные объекты книги, такие как таблицы, таблицы, диапазоны и так далее.
 
 ## <a name="methods"></a>Методы
 
@@ -35,12 +35,12 @@ ms.locfileid: "48039190"
 |names|Коллекция [workbookNamedItem](workbooknameditem.md) |Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|
 |tables|Коллекция [workbookTable](workbooktable.md) |Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
 |worksheets|Коллекция [workbookWorksheet](workbookworksheet.md) |Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
-|воркббукаппликатион|[воркбукаппликатион](workbookapplication.md) |Представляет Воркбукаппликатион Excel, который управляет книгой.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Представляет книгу Excel, которая управляет книгой.|
 |operations|Коллекция [workbookOperation](workbookoperation.md)|Состояние операций книги. Получить коллекцию операций нельзя, но можно получить состояние длительной операции, если в ответе возвращается заголовок `Location`. Только для чтения. Допускается значение null.|
 
 ## <a name="functions"></a>Функции
 
-[Функции Excel](#functions): вызов функции книги с использованием синтаксиса `POST /workbook/functions/{function-name}` и предоставление аргументов функции в основном тексте с помощью объекта JSON. Результирующее `value` функции и любые строки `error` возвращаются в объекте результата функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции. 
+[Функции Excel](#functions): вызов функции книги с использованием синтаксиса `POST /me/drive/root/workbook/functions/{function-name}` и предоставление аргументов функции в основном тексте с помощью объекта JSON. Результирующее `value` функции и любые строки `error` возвращаются в объекте результата функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции. 
 
 Полный список поддерживаемых функций см. [здесь](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Имена определенных параметров и типы данных см. в сигнатуре функции.
 

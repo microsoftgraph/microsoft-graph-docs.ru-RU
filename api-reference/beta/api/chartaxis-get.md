@@ -1,18 +1,18 @@
 ---
-title: Получение Воркбукчартаксис
-description: Получение свойств и связей объекта Воркбукчартаксис.
+title: Получить книгуChartAxis
+description: Извлечение свойств и связей объекта книгиChartAxis.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5afa08974f03af049596eb5b1bd20c94a345f9b5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4374efe4e4ca9d2d5cf691895690f783983b4d43
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958941"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574743"
 ---
-# <a name="get-workbookchartaxis"></a>Получение Воркбукчартаксис
+# <a name="get-workbookchartaxis"></a>Получить книгуChartAxis
 
 Пространство имен: microsoft.graph
 
@@ -31,9 +31,12 @@ ms.locfileid: "48958941"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -49,7 +52,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартаксис](../resources/workbookchartaxis.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [книгиChartAxis](../resources/workbookchartaxis.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

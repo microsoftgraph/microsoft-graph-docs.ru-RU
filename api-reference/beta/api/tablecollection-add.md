@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8cd6ebaa40d04f527fc12f9b6bfbc96ab1573ed8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 157f6c40b19b7b81fa6f72bf0cf9b945ce593e43
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980417"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576437"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -36,8 +36,10 @@ ms.locfileid: "48980417"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/add
-POST /workbook/worksheets/{id|name}/tables/add
+POST /me/drive/items/{id}/workbook/tables/add
+POST /me/drive/root:/{item-path}:/workbook/tables/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -56,7 +58,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект workbookTable](../resources/workbooktable.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

@@ -1,38 +1,38 @@
 ---
-title: Удаление Едукатионсубмиссионресаурце
-description: Удаляет ресурс из отправки. Это может сделать только студентом. Если ресурс был скопирован из назначения, то после удаления текущей копии будет создан новый экземпляр ресурса.
+title: Удаление educationSubmissionResource
+description: Удаляет ресурс из отправки. Это может быть сделано только студентом. Если ресурс был скопирован из назначения, после удаления текущей копии будет создана новая копия ресурса.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4dc8b2970bf6cf241c93934593d0424d538fc01a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c67944bc0060d495685bf5893ed74325b5c705ed
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955407"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574309"
 ---
-# <a name="delete-educationsubmissionresource"></a>Удаление Едукатионсубмиссионресаурце
+# <a name="delete-educationsubmissionresource"></a>Удаление educationSubmissionResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет ресурс из отправки. Это может сделать только студентом. Если ресурс был скопирован из назначения, то после удаления текущей копии будет создан новый экземпляр ресурса. Это позволяет «сбросить» ресурс в исходное состояние. Если ресурс не был скопирован из назначения, но добавлен из учащегося, ресурс просто удаляется.
+Удаляет ресурс из отправки. Это может быть сделано только студентом. Если ресурс был скопирован из назначения, после удаления текущей копии будет создана новая копия ресурса. Это позволяет "сбросить" ресурс в исходное состояние. Если ресурс не был скопирован из назначения, а добавлен из студента, ресурс просто удаляется.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
+DELETE /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов

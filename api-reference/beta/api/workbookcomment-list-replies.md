@@ -1,22 +1,22 @@
 ---
-title: Список Воркбуккомментреплиес
-description: Получение списка объектов Воркбуккомментреплиес.
+title: Список книгCommentReplies
+description: Извлечение списка объектов книгиCommentReplies.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 71230ccebfe426dadb80af5ad1cb2d4e268acd31
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e8208d42b1ffa4ef2021d5e23d466a521052a59d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975807"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575198"
 ---
-# <a name="list-workbookcommentreplies"></a>Список Воркбуккомментреплиес
+# <a name="list-workbookcommentreplies"></a>Список книгCommentReplies
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [воркбуккомментрепли](../resources/workbookcommentreply.md) .
+Извлечение списка [объектов книгиCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,8 @@ ms.locfileid: "48975807"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /workbook/comments/{id}/replies
+GET /me/drive/items/{id}/workbook/comments/{id}/replies
+GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,7 +49,7 @@ GET /workbook/comments/{id}/replies
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [workbookCommentReply](../resources/workbookcommentreply.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

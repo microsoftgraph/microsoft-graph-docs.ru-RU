@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f1c03853330fcffe216c0aaf5e3a30372373aa94
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 3a937ecbf523c68adc3b8068a06c775c6a0c9449
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034088"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576297"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
@@ -31,14 +31,16 @@ ms.locfileid: "50034088"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +52,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

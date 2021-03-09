@@ -1,22 +1,22 @@
 ---
-title: Список Воркбуккомментс
-description: Получение списка объектов Воркбуккомментс.
+title: Список книгКомменты
+description: Извлечение списка объектов workbookComments.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 757b1362333110f80831634350b1dda075a327ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 255acd6d36aa61e3aa044ad1ffe167f007253593
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982127"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575324"
 ---
-# <a name="list-workbookcomments"></a>Список Воркбуккомментс
+# <a name="list-workbookcomments"></a>Список книгКомменты
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов  [воркбуккоммент](../resources/workbookcomment.md) .
+Извлечение списка [объектов книгиComment.](../resources/workbookcomment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,8 @@ ms.locfileid: "48982127"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /workbook/comments
+GET /me/drive/items/{id}/workbook/comments
+GET /me/drive/root:/{item-path}:/workbook/comments
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,7 +49,7 @@ GET /workbook/comments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуккоммент](../resources/workbookcomment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [workbookComment](../resources/workbookcomment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

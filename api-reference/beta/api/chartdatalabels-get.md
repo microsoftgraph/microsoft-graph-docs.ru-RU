@@ -1,16 +1,16 @@
 ---
-title: Получение Воркбукчартдаталабелс
-description: Получение свойств и связей объекта воркбукчартдаталабелс.
+title: Получить книгуChartDataLabels
+description: Извлечение свойств и связей объекта workbookchartdatalabels.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 70cd47e8af87174f36de5798cf2de5c364f54270
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d93649d857ef4eb017e1036ed03731c9ea439db1
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958808"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574638"
 ---
 # <a name="get-chartdatalabels"></a>Получение объекта ChartDataLabels
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958808"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/datalabels
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/datalabels
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/datalabels
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартдаталабелс](../resources/workbookchartdatalabels.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [книгиChartDataLabels](../resources/workbookchartdatalabels.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

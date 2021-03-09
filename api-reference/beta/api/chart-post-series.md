@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7ce102719514db4398626371fcdd9f8b9c52bfdf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 426555d2d68620a38ff3c34bf25881c66ecaabe5
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958997"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574792"
 ---
 # <a name="create-chartseries"></a>Создание объекта ChartSeries
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958997"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/series
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,11 +42,11 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [воркбукчартсериес](../resources/workbookchartseries.md) в формате JSON.
+В корпусе запроса поставляем представление JSON объекта [книгиChartSeries.](../resources/workbookchartseries.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбукчартсериес](../resources/workbookchartseries.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `201 Created` [книгиChartSeries](../resources/workbookchartseries.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -83,7 +84,7 @@ Content-length: 26
 
 ---
 
-В тексте запроса добавьте представление объекта [воркбукчартсериес](../resources/workbookchartseries.md) в формате JSON.
+В корпусе запроса поставляем представление JSON объекта [книгиChartSeries.](../resources/workbookchartseries.md)
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

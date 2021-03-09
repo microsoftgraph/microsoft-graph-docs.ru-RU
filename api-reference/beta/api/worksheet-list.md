@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5346b0024e109e9b918108cc39f9819459c1d02d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3d1f0921ed196b073f3a21a71c415af5f771c110
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977296"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576850"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977296"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets
+GET /me/drive/items/{id}/workbook/worksheets
+GET /me/drive/root:/{item-path}:/workbook/worksheets
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +48,7 @@ GET /workbook/worksheets
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [workbookWorksheet](../resources/workbookworksheet.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

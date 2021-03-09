@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d5b178d461b80bcdf5d074754fd727a4e24c5fb6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7554c121eab155449417cd34984dced48ed537d6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976233"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573973"
 ---
 # <a name="update-rangefont"></a>Обновление объекта rangefont
 
@@ -31,9 +31,12 @@ ms.locfileid: "48976233"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/font
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -55,7 +58,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукранжефонт](../resources/workbookrangefont.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [workbookRangeFont](../resources/workbookrangefont.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

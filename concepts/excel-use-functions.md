@@ -1,19 +1,19 @@
 ---
 title: Использование функций книг в Excel с помощью Microsoft Graph
-description: 'Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /workbook/functions/{function-name}`. Укажите аргументы функции в теле запроса с помощью объекта JSON. Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.'
+description: 'Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /me/drive/root/workbook/functions/{function-name}`. Укажите аргументы функции в теле запроса с помощью объекта JSON. Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.'
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 38acd639e5364c28292d71aab54de6a89b0058ac
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0f475b8a1f2a0efece607ea5281504942e0034ea
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37969775"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573560"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Использование функций книг в Excel с помощью Microsoft Graph
 
-Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /workbook/functions/{function-name}`. Укажите аргументы функции в теле запроса с помощью объекта JSON. Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.
+Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /me/drive/root/workbook/functions/{function-name}`. Укажите аргументы функции в теле запроса с помощью объекта JSON. Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.
 
 Полный список поддерживаемых функций см. [здесь](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Имена определенных параметров и типы данных см. в сигнатуре функции.
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2ad6842c4956c10b46421a99c9647f313eec20cd
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 888fb523ad54f840b5ecbc807b5ed46c8f798efb
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472287"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574904"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -30,7 +30,7 @@ ms.locfileid: "50472287"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Для приложений                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. Все, Calls.InitiateGroupCalls.All |
+| Приложение                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. Все, Calls.InitiateGroupCalls.All |
 
 > **Примечание:** Для вызова в средствах массовой информации с использованием приложений требуется разрешение Calls.AccessMedia.All в дополнение к одному из перечисленных разрешений.
 
@@ -1142,28 +1142,7 @@ Content-Type: application/json
 
 > **Примечание:** Этот вызов требует Calls.Initiate. Все разрешения.
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN.
-
-#### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
-Используя учетные данные администратора клиента, для создания экземпляра приложения вызывайте следующие cmdlets на удаленной PowerShell клиента. Дополнительные сведения см. [в new-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Шаг 2. Назначение лицензий Microsoft 365
-1. Используйте учетные данные администратора клиента, чтобы войти на вкладку https://admin.microsoft.com/ **Пользователи -> активных пользователей.**
-2. Выберите экземпляр приложения, назначьте План внутренних и международных вызовов **Microsoft 365** и телефонную систему **Microsoft 365 —** лицензии виртуальных пользователей и нажмите **кнопку Сохранить изменения.** Если в клиенте не доступны необходимые лицензии, их можно получить на вкладке Службы > **покупки.**
-#### <a name="step-3-acquire-pstn-number"></a>Шаг 3. Приобретение номера PSTN
-1. Используйте учетные данные администратора клиента, чтобы войти и щелкнуть вкладку https://admin.teams.microsoft.com/ **Портал Legacy** на левой панели.
-2. На новой странице перейдите на вкладку **голосовых > номеров** телефонов.
-3. Нажмите **+** кнопку, **выберите новые номера служб** и перейдите на страницу Добавить новые **номера** службы.
-4. Выберите **Country/Region,** **State/Region,** **City,** input **Quantity** и **щелкните добавить в** поиск. Нажмите **кнопку получение номеров**. Недавно приобретенный номер будет показываться на **вкладке номера** телефонов.
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Шаг 4. Назначение номера PSTN экземпляру приложения
-С учетными данными администратора клиента вызываем следующие cmdlets на удаленной PowerShell клиента, чтобы назначить номер PSTN экземпляру приложения. Дополнительные сведения см. [в рублях Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере носители хозяйской службы. Значения маркера авторизации, URL-адреса, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
@@ -1308,7 +1287,7 @@ Content-Type: application/json
 
 > **Примечание.** В этом примере Calls.Initiate. Все разрешения и разрешения Calls.AccessMedia.All.
 
-Этот вызов требует экземпляра приложения с присвоенным номером PSTN, как описано в примере 9.
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере средства массовой информации локализованы приложением. Замените значения маркера авторизации, URL-адреса вызова, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента, чтобы сделать пример работой.

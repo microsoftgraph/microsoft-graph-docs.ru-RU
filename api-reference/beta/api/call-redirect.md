@@ -1,26 +1,26 @@
 ---
-title: 'call: redirect'
+title: 'вызов: перенаправление'
 description: Перенаправление входящего вызова.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 869933a08580fdae4d55258dfd439fd10ff6015c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: fb2aa01474a5c5d29ed1c87978c2d2aacae9ac92
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176621"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574897"
 ---
-# <a name="call-redirect"></a>call: redirect
+# <a name="call-redirect"></a>вызов: перенаправление
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перенаправление входящих вызовов, на которые еще не был ответ [или](./call-answer.md) [отклонен.](./call-reject.md) Термины "перенаправление" и "переадресовка" вызова используются взаимозаменяемо.
+Перенаправьте входящий вызов, на который еще не ответили [и](./call-answer.md) [не ответили.](./call-reject.md) Термины "перенаправление" и "переадресовка" вызова используются взаимозаменяемо.
 
-Ожидается, что бот перенаправит вызов до того, как он по инет. Текущее значение времени простоя составляет 15 секунд.
+Ожидается, что бот перенаправляет вызов до времени вызова. Текущее значение времени времени — 15 секунд.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "50176621"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Приложение     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,22 +54,22 @@ POST /communications/calls/{id}/redirect
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если указано несколько целевых объектов, это имитирует вызов. Это означает, что все целевые объекты будут одновременно рангом, и будет подключен только первый целевой объект, который выбирает. Мы поддерживаем до 25 целевых объектов для моделирования.
-|targetDisposition|String|(Неподготовлено) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр является неподготовленным, мы автоматически определяем, является ли он переадреательным вызовом или имитирует вызов из числа заданных целей.|
-|timeout|Int32|Время (в секундах) для операции перенаправления. Диапазон значений времени от 15 до 90 секунд включительно. Значение по умолчанию — 55 секунд для одного целевого объекта и 60 секунд для нескольких целей (при условии изменения). |
-|maskCallee|Логическое|Указывает, должен ли вызываемая стороны быть скрыта от вызываемой стороны. Если установлено true, то идентификатор вызываемого пользователя — это идентификатор бота. Значение по умолчанию: false.|
-|maskCaller|Логическое|Указывает, следует ли скрыть вызываемую из вызываемой стороны. Если установлено true, то идентификатором вызывающего пользователя является идентификатор бота. Значение по умолчанию: false.|
-|callbackUri|String|Это позволяет ботам предоставлять определенный URI для текущего вызова для получения последующих уведомлений. Если это свойство не за установлено, вместо него будет использоваться глобальный URI для вызова бота. Это должен быть `https` .|
+|targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если задано несколько целевых объектов, это симуляцный вызов. Это означает, что все целевые объекты будут одновременно звонили и подключена только первая цель, подбираемая. Мы поддерживаем до 25 целей для simulring.
+|targetDisposition|String|(Неуловимый) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр обесценен, мы автоматически определяем, является ли это вызовом или симулируется из числа предоставляемых целей.|
+|timeout|Int32|Период времени (в секундах) для операции перенаправления. Диапазон значения времени от 15 до 90 секунд включительно. Значение времени по умолчанию — 55 секунд для одной цели и 60 секунд для нескольких целей (при условии изменения). |
+|maskCallee|Boolean|Указывает, следует ли скрывать вызываемую от вызываемой. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
+|maskCaller|Boolean|Указывает, следует ли скрывать вызываемую от вызываемой стороны. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
+|callbackUri|String|Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
 
 ## <a name="examples"></a>Примеры
-В этих примерах освещается рабочий процесс уведомления о входящих вызовах и его перенаправление.
+В этих примерах будет освещаться рабочий процесс уведомления о входящих вызовах и его перенаправление.
 
-> **Примечание.** Показанные здесь объекты ответа могут быть сокращены для учитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание:** Объекты ответа, показанные здесь, могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 
-### <a name="example-1-forward-a-call-to-a-target"></a>Пример 1. Переад вызов на целевой объект
+### <a name="example-1-forward-a-call-to-a-target"></a>Пример 1. Переадвока вызова в целевой адрес
 
 #### <a name="notification---incoming"></a>Уведомление — входящий
 <!-- {
@@ -178,7 +178,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="notification---terminated"></a>Уведомление — завершено
+#### <a name="notification---terminated"></a>Уведомление — прекращено
 
 <!-- {
   "blockType": "example", 
@@ -240,7 +240,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a>Пример 2. Переадронизовыв вызов на несколько целей с одновременным вызовом
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a>Пример 2. Перенацелив вызов на несколько целей с одновременным кольцом
 
 #### <a name="notification---incoming"></a>Уведомление — входящий
 
@@ -358,7 +358,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---terminated"></a>Уведомление — завершено
+#### <a name="notification---terminated"></a>Уведомление — прекращено
 
 <!-- {
   "blockType": "example", 
@@ -415,30 +415,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Пример 3. Переадронизовыв вызов на номер STN
+### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Пример 3. Переадмить вызов на номер PSTN
 
-Для этого вызова требуется экземпляр приложения с назначенным номером PSTN.
-
-#### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
-Используя учетные данные администратора клиента, вызовите следующие cmdlets в удаленной powerShell клиента, чтобы создать экземпляр приложения. Дополнительные сведения см. в командах [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Шаг 2. Назначение лицензий Microsoft 365
-1. Используйте учетные данные администратора клиента для входа и перейдите на вкладку https://admin.microsoft.com/ **"Пользователи > активные пользователи".**
-2. Выберите экземпляр приложения, назначьте план внутренних и международных звонков **Microsoft 365** и телефонную систему **Microsoft 365 —** лицензии виртуальных пользователей и нажмите кнопку **"Сохранить изменения".** Если необходимые лицензии недоступны в клиенте, их можно получить на вкладке "Выставление счета **-> Приобретение служб".**
-#### <a name="step-3-acquire-pstn-number"></a>Шаг 3. Получение номера STN
-1. Используйте учетные данные администратора клиента для входа и перейдите на вкладку "Устаревший https://admin.teams.microsoft.com/ **портал"** на левой панели.
-2. На новой странице перейдите на вкладку **голосовых > номеров** телефонов.
-3. Нажмите **+** кнопку, выберите **"Новые номера служб"** и перейдите на страницу **"Добавление новых номеров служб".**
-4. Выберите **"Страна/регион",** **"Область",** **"Город",**"Количество **входных** данных" и нажмите **кнопку "Добавить"** для поиска. Щелкните **"Получить номера".** Недавно полученный номер будет показываться на **вкладке "Номера** телефонов".
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Шаг 4. Назначение номера STN экземпляру приложения
-С помощью учетных данных администратора клиента вызовите следующие cmdlets в удаленной powerShell клиента, чтобы назначить номер STN экземпляру приложения. Дополнительные сведения см. в командах [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="notification---incoming"></a>Уведомление — входящий
 <!-- {
@@ -532,7 +511,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="notification---terminated"></a>Уведомление — завершено
+#### <a name="notification---terminated"></a>Уведомление — прекращено
 
 <!-- {
   "blockType": "example", 

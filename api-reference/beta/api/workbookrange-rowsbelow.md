@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8592b60fcca75f127f10a387f8e392ea4f8ea88a
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 3890c6a0ecbeebefce80e80c4d738c379cde508f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883096"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575165"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -32,7 +32,8 @@ ms.locfileid: "49883096"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 

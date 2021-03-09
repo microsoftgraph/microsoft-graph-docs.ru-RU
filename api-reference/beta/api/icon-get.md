@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 24e37908225c2fbb3606f87e1fe4787e79f9332c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d2d7d83fbadd9f86d261ddf918bc4d7bb59f4e33
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402718"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574036"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
 
@@ -31,8 +31,10 @@ ms.locfileid: "48402718"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/sort/fields/icon
-GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +49,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукикон](../resources/workbookicon.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект workbookIcon](../resources/workbookicon.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

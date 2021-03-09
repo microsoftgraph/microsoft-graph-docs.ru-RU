@@ -1,16 +1,16 @@
 ---
-title: 'Воркбукчартколлектион: Итемат'
-description: Получает объект воркбукчарт, основанный на его позиции в коллекции.
+title: 'workbookChartCollection: ItemAt'
+description: Получает книгу в зависимости от ее положения в коллекции.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bb3dfa39d16859068307dde8c744e40b7ab5ad81
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac0d7b125bf4b511dc837bbae220ee8f36e52f28
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983067"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574666"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -31,7 +31,8 @@ ms.locfileid: "47983067"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/ItemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,7 +41,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -49,7 +50,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [книгиChart](../resources/workbookchart.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

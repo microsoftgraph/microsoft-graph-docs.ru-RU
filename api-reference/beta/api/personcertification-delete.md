@@ -1,21 +1,21 @@
 ---
-title: Удаление Персонцертификатион
-description: Удаляет объект Персонцертификатион.
+title: Удаление personCertification
+description: Удаляет объект personCertification.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 24183622b540934bdf6007d1fe4b3508de323a17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9defbcc8505176c305626dc710b4ba4c13c634fa
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969300"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573959"
 ---
-# <a name="delete-personcertification"></a>Удаление Персонцертификатион
+# <a name="delete-personcertification"></a>Удаление personCertification
 Пространство имен: microsoft.graph
 
-Удаляет объект [персонцертификатион](../resources/personcertification.md) из [профиля](../resources/profile.md)пользователя.
+Удаляет объект [personCertification](../resources/personcertification.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "47969300"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ DELETE /users/{id | userPrincipalName}/profile/certifications/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -60,7 +60,7 @@ DELETE /users/{id | userPrincipalName}/profile/certifications/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]

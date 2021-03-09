@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b047f9f6d9203b11ad4306a20fa26b8056af0405
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dec0364db914f9c834b8507de52c7809f44c3fba
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978627"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575359"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -31,8 +31,10 @@ ms.locfileid: "48978627"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,7 +48,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|Коллекция Воркбуксортфиелд|Список условий для сортировки.|
+|fields|коллекция workbookSortField|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |method|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
 

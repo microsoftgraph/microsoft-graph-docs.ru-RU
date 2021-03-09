@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c560b6f3d326555e514b9bd73f2aef08a665606e
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 85836f056ef755e7fafe1889765544c0cca2599b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034317"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576328"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -31,14 +31,16 @@ ms.locfileid: "50034317"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/add
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,11 +49,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|number|Определяет относительную позицию нового столбца. Предыдущий столбец на этой позиции сдвигается вправо. Значение индекса должно быть равно или меньше значения индекса последнего столбца, чтобы его невозможно было использовать для добавления столбца в конце таблицы. Используется нулевой индекс.|
-|values|Коллекция (boolean, string или number)|Необязательный параметр. Двухмерный массив неформатированных значений столбца таблицы.|
+|values|(boolean или string or number) collection|Необязательный параметр. Двухмерный массив неформатированных значений столбца таблицы.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

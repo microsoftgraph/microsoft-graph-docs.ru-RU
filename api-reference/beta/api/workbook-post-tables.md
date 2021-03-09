@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f54fd06feb33b2324550ac3ce777bb610923d527
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6a772cf10c0442ee53e3843d9d49e98cfeb565e1
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977590"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575296"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977590"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/$/add
+POST /me/drive/items/{id}/workbook/tables/$/add
+POST /me/drive/root:/{item-path}:/workbook/tables/$/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,7 +51,7 @@ POST /workbook/tables/$/add
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект workbookTable](../resources/workbooktable.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

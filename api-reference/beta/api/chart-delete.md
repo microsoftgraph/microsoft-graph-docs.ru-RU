@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cdd0c5987ce7ee73b3185030d72d97e616c9eebf
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: a270319dcad87451c90258203eb13b4817908783
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515795"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574845"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -24,15 +24,15 @@ ms.locfileid: "50515795"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/worksheets/{id|name}/charts/{name}
-
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|

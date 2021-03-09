@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e58f0073a5719ac0cf9ef2f34b9fc8552a455ac1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c9a98f731b58a55b70a27b0d39fd6d0d2b2d240
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958430"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574365"
 ---
 # <a name="create-chartpoint"></a>Создание ChartPoint
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958430"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,11 +42,11 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [воркбукчартпоинт](../resources/workbookchartpoint.md) в формате JSON.
+В теле запроса укажи JSON представление [объекта книгиChartPoint.](../resources/workbookchartpoint.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбукчартпоинт](../resources/workbookchartpoint.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [книгиChartPoint](../resources/workbookchartpoint.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -82,7 +83,7 @@ Content-length: 3
 
 ---
 
-В тексте запроса добавьте представление объекта [воркбукчартпоинт](../resources/workbookchartpoint.md) в формате JSON.
+В теле запроса укажи JSON представление [объекта книгиChartPoint.](../resources/workbookchartpoint.md)
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

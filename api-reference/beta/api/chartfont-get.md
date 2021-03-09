@@ -1,18 +1,18 @@
 ---
-title: Получение Воркбукчартфонт
-description: Получение свойств и связей объекта Воркбукчартфонт.
+title: Получить книгуChartFont
+description: Извлечение свойств и связей объекта книгиChartFont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c882a469123d2db0289375ca494ed4e4ca446762
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d6a5778dce1f1d7f758e625230ad0fa53faa470f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958731"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574562"
 ---
-# <a name="get-workbookchartfont"></a>Получение Воркбукчартфонт
+# <a name="get-workbookchartfont"></a>Получить книгуChartFont
 
 Пространство имен: microsoft.graph
 
@@ -31,9 +31,12 @@ ms.locfileid: "48958731"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/font
-GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/font
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/font
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -49,7 +52,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартфонт](../resources/workbookchartfont.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [книгиChartFont](../resources/workbookchartfont.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

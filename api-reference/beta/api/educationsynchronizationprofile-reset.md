@@ -1,26 +1,26 @@
 ---
-title: Сброс синхронизации для Едукатионсинчронизатионпрофиле
-description: Сбросьте синхронизацию определенного профиля синхронизации данных School в клиенте.
+title: Сброс синхронизации на educationSynchronizationProfile
+description: Сброс синхронизации определенного профиля синхронизации школьных данных в клиенте.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 517dc5e2fddf0c959215fb69621e0bb99bad75e5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2afd14b647b02897c140287e96f8bd1f5fdd89fe
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965846"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574176"
 ---
-# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Сброс синхронизации для Едукатионсинчронизатионпрофиле
+# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Сброс синхронизации на educationSynchronizationProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сбросьте синхронизацию определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.
+Сброс синхронизации определенного профиля синхронизации [школьных](../resources/educationsynchronizationprofile.md) данных в клиенте.
 
-> **Примечание:** Эта операция приведет к перезапуску синхронизации. Все обнаруженные ошибки будут удалены. Данные не будут удалены из Azure Active Directory (Azure AD). 
+> **Примечание:** Эта операция приведет к перезапуску синхронизации. Все ошибки, с которыми столкнулись, будут удалены. Данные не будут удалены из Azure Active Directory (Azure AD). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,13 +28,13 @@ ms.locfileid: "48965846"
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/reset
+POST /education/synchronizationProfiles/{id}/reset
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -80,7 +80,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 ##### <a name="response"></a>Отклик
 
-Текст отклика отсутствует.
+Тело ответа не существует.
 
 <!-- {
   "blockType": "response",

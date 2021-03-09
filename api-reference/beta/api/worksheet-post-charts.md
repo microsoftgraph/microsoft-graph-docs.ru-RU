@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 140e44092312e88f05f39532c62be34297d9fb67
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 306d538f06d2a1f2857f745580e9ab0e8cb9a59c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977268"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575142"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977268"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,11 +42,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [воркбукчарт](../resources/workbookchart.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [книгиChart.](../resources/workbookchart.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [книгиChart](../resources/workbookchart.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -85,7 +86,7 @@ Content-length: 52
 
 ---
 
-В тексте запроса добавьте представление объекта [воркбукчарт](../resources/workbookchart.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [книгиChart.](../resources/workbookchart.md)
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

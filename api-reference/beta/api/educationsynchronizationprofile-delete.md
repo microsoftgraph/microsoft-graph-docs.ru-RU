@@ -1,24 +1,24 @@
 ---
-title: Удаление Едукатионсинчронизатионпрофиле
-description: Удалите профиль School Data Synchronization в клиенте на основе идентификатора.
+title: Удаление educationSynchronizationProfile
+description: Удаление профиля синхронизации школьных данных в клиенте на основе идентификатора.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2dc90964e7637a9b80e56d09618d83878aaaecbf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cc7d03b406888022fc8bab935af2b5118357c0c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955358"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574288"
 ---
-# <a name="delete-a-educationsynchronizationprofile"></a>Удаление Едукатионсинчронизатионпрофиле
+# <a name="delete-a-educationsynchronizationprofile"></a>Удаление educationSynchronizationProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите профиль School Data [Synchronization](../resources/educationsynchronizationprofile.md) в клиенте на основе идентификатора.
+Удаление профиля [синхронизации школьных данных](../resources/educationsynchronizationprofile.md) в клиенте на основе идентификатора.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,20 +30,20 @@ ms.locfileid: "48955358"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /synchronizationProfiles/{id}
+DELETE /education/synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и без текста отклика.
+В случае успешной работы этот метод возвращает код `202 Accepted` ответа и не возвращает текст ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

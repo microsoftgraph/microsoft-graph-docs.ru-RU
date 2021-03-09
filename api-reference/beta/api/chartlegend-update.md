@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6299de840cef45827a026d0201d1699e047f685c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14671f02929d4750f714cd870f4b76af969ca391
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958625"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574512"
 ---
 # <a name="update-chartlegend"></a>Обновление объекта chartlegend
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958625"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -50,7 +51,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартлеженд](../resources/workbookchartlegend.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [книгиChartLegend](../resources/workbookchartlegend.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -1,90 +1,102 @@
 ---
 title: Управление номерами телефонов для ботов
-description: В этой статье описывается, как создать робот, достижимый через телефонный номер.
+description: В этой статье описывается создание бота, который можно достичь с помощью номера телефона.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 679ee5ac5da1a8754d7517dfb9f35bd9e0a071db
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d6b71d2db1be951137ca33026f243dae6055c93f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289374"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573574"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Управление номерами телефонов для ботов 
 
-В этой статье описывается, как создать робот, достижимый через телефонный номер. По мере создания ленты вам будет полезно ознакомиться со следующими терминами:
+В этой статье описывается создание бота, который можно достичь с помощью номера телефона. При создании бота будет полезно ознакомиться со следующими терминами:
 
-- **Приложение** — приложение, размещенное в Azure, которое также называется " **Bot**".
+- **Application** — приложение, которое находится в Azure, также именуемом **ботом.**
 
-- **Экземпляр приложения** — объект отключенного пользователя, который может быть назначен телефонному номеру, который может использоваться с помощью Bot. Это также называется [учетной записью ресурса](/microsoftteams/manage-resource-accounts). Это единственный способ, которым можно назначить номер телефона для ленты.
+- **Пример приложения** — объект с отключенным пользователем, который может быть назначен номеру телефона, который может использоваться ботом. Это также называется учетной [записью ресурса.](/microsoftteams/manage-resource-accounts) Это единственный способ присвоения номера телефона боту.
 
-Одно приложение может иметь несколько экземпляров приложений, и каждый клиент может иметь несколько экземпляров приложения, как показано на следующем рисунке.
+Одно приложение может иметь несколько экземпляров приложений, а каждый клиент может иметь несколько экземпляров приложений, как показано на следующем изображении.
 
-![Изображение номера телефона с клиентами с одним или несколькими экземплярами приложений](images/communications-app-tenant.PNG)
+![Изображение, на котором показан номер телефона с клиентом с одним или более экземплярами приложений](images/communications-app-tenant.PNG)
 
-## <a name="prerequisite---register-a-bot"></a>Обязательное требование: регистрация Bot
-Чтобы приступить к работе, выполните инструкции по [регистрации абонентского робота](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). Вам понадобятся значения конфигурации, такие как ИДЕНТИФИКАТОРы Bot, идентификатор приложения и пароль Microsoft App, чтобы использовать их в вашем коде.
+## <a name="prerequisite---register-a-bot"></a>Обязательное условие — регистрация бота
+Чтобы начать работу, следуйте инструкциям по регистрации [вызываемого бота.](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html) Для использования в коде вам потребуется использовать конфигуративные значения, такие как код бота, код приложения Майкрософт и пароль приложения Майкрософт.
 
-Добавьте указанные ниже разрешения для ленты. Администратору клиента необходимо также предоставить разрешения для этих разрешений:
+Добавьте следующие разрешения в бот. Администратору клиента также необходимо дать согласие на эти разрешения:
 
 - Calls.AccessMedia.All
 - Calls.Initiate.All
 - Calls.JoinGroupCall.All
-- Calls. Жоинграупкалласгуест. ALL
+- Calls.JoinGroupCallAsGuest.All
 
-Дополнительные сведения о разрешениях, связанных с вызовами, приведены в статье [References](permissions-reference.md#calls-permissions).
+Дополнительные сведения о разрешениях, связанных с вызовами, см. в справке [Permissions.](permissions-reference.md#calls-permissions)
 
 
-## <a name="assign-a-phone-number-to-your-bot"></a>Назначение номера телефона для ленты
+## <a name="assign-a-phone-number-to-your-bot"></a>Назначение номера телефона боту
 
-Назначение номера телефона для ленты состоит из трех этапов:
+Назначение номера телефона боту включает в себя три действия:
 
-1.  Создайте экземпляр приложения.
-2.  Назначьте для экземпляра приложения лицензию виртуального пользователя.
-3.  Назначить номер телефона экземпляру приложения (только администратор клиента).
+1.  Создание экземпляра приложения.
+2.  Назначение лицензий Microsoft 365 экземпляру приложения.
+3.  Назначьте номер телефона экземпляру приложения (только администратору клиента).
 
 ### <a name="create-an-application-instance"></a>Создание экземпляра приложения
 
-Если он еще не установлен, администратору клиента необходимо установить [модуль Skype для бизнеса Online](https://www.microsoft.com/download/details.aspx?id=39366) для PowerShell. Перед выполнением командлета администратор клиента должен войти в систему, используя свои учетные данные.
+Если он еще не установлен, администратору клиента необходимо установить [модуль Skype для бизнеса Online для](https://www.microsoft.com/download/details.aspx?id=39366) PowerShell. Администратор клиента должен войти с помощью учетных данных перед запуском cmdlet.
 
-Для создания нового экземпляра приложения администратор клиента выполняет следующий командлет.
+Чтобы создать новый экземпляр приложения, администратор клиента запускает следующий кодлет.
 
-`PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <user@contoso.com> -ApplicationId “<app_id>” -DisplayName "<bot_display_name>"`
+`PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <user@contoso.com> -ApplicationId <app_id> -DisplayName <bot_display_name>`
 
-При создании экземпляра приложения используйте командлет Sync.
+При создания экземпляра приложения используйте комлет синхронизации.
 
 `PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <application_instance_id>`
 
-### <a name="assign-a-virtual-user-license-to-your-application-instance"></a>Назначение лицензии виртуального пользователя экземпляру приложения
+Дополнительные сведения см. [в new-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
 
-Назначьте для экземпляра приложения лицензию виртуального пользователя. Дополнительную информацию можно узнать в статье [Лицензия виртуального пользователя телефонной системы](/microsoftteams/teams-add-on-licensing/virtual-user).
+### <a name="assign-microsoft-365-licenses-to-your-application-instance"></a>Назначение лицензий Microsoft 365 экземпляру приложения
 
-### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>Назначение номера телефона экземпляру приложения (только администратор клиента)
+Назначение виртуальной пользовательской лицензии экземпляру приложения. Подробные сведения см. в [материале Phone system virtual user license.](/microsoftteams/teams-add-on-licensing/virtual-user)
+
+Назначение плана вызова экземпляру приложения. Подробные сведения [см. в материале Calling plans for Microsoft 365.](/microsoftteams/calling-plans-for-office-365)
+
+### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>Назначение номера телефона экземпляру приложения (только администратору клиента)
+
+Прежде чем выполнить настройку пользователей в пределах своей организации на осуществление и прием звонков, необходимо получить телефонные номера для них. Подробные сведения см. [в материале Получение номеров телефонов для пользователей.](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users)
 
 Чтобы назначить номер телефона экземпляру приложения, администратор клиента:
 
-1. Вход в центр администрирования Teams в качестве администратора клиента.
-2. Передается на голосовые телефоны **центра администрирования Teams**  >  **Voice**  >  **Phone Numbers**.
-3. Назначает номер телефона службы (формат 11D) с помощью следующего командлета.
+1. Войт в центр администрирования Teams в качестве администратора клиента.
+2. Переходит на **номера голосовых телефонов Центра**  >    >  **администрирования** Teams.
+3. Назначает номер телефона службы (+11D-формат) с помощью следующего cmdlet.
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`
+  
+При присвоении номера телефона службы используйте комлет синхронизации.
 
-## <a name="unassign-a-bot-phone-number"></a>Отмена назначения номера телефона для ленты
+`PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <application_instance_id>`
 
-Используйте следующий командлет, чтобы отменить назначение номера телефона.
+Дополнительные сведения см. [в рублях Set-CsOnlineVoiceApplicationInstance](/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
+
+## <a name="unassign-a-bot-phone-number"></a>Отозвание номера телефона бота
+
+Чтобы отогнать номер телефона, используйте следующий комдлет.
 
 `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber $null`
 
->**Примечание:** В настоящее время это работает только с номерами в сети, а не с номерами аварийной маршрутизации (DR). Это известная проблема.
+>**Примечание:** В настоящее время это работает только с онлайн-номерами, а не с номерами прямой маршрутики (DR). Это известная проблема.
 
-## <a name="update-a-bot-phone-number"></a>Обновление номера телефона для ленты
+## <a name="update-a-bot-phone-number"></a>Обновление номера телефона бота
 
-После этого вы можете назначить себе другой номер с помощью следующего командлета.
+После отвода номера можно назначить боту другой номер с помощью следующего cmdlet.
 
 `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <new phone_number>`
 
 ## <a name="see-also"></a>См. также
 
-- [Пример ленты для инцидента](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
- - Сведения о развертывании можно найти в статье [развертывание примера](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample).
+- [Пример бота инцидента](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
+ - Дополнительные сведения о развертывании см. в [примере Deploying the sample.](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9a3ff94fd4888cbc36f3f4e02683e2bebbfcb0d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e26b77addf8d31e61c93e2d028db908410647401
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994423"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574988"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -31,8 +31,10 @@ ms.locfileid: "47994423"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/rows/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,7 +43,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -50,7 +52,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеров](../resources/workbooktablerow.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [workbookTableRow](../resources/workbooktablerow.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

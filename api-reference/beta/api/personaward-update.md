@@ -1,22 +1,22 @@
 ---
-title: Обновление Персонавард
-description: Обновление свойств объекта Персонавард.
+title: Обновление personAward
+description: Обновление свойств объекта personAward.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1338c1990ad76611295ac34e13b30b53651839d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 821293e804b5ec56cdde33464695ad0dcec7a103
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969321"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574029"
 ---
-# <a name="update-personaward"></a>Обновление Персонавард
+# <a name="update-personaward"></a>Обновление personAward
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [персонавард](../resources/personAward.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [personAward](../resources/personAward.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "47969321"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,18 +51,18 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Дескприптион вознаграждения или почетной грамоты. |
-|displayName|String|Название вознаграждения или соблюдается. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|иссуеддате|Дата|Дата предоставления вознаграждения или почетной грамоты. |
-|иссуингаусорити|String|Орган, которому предоставлена премия или соблюдается.  |
-|thumbnailUrl|String|URL-адрес, ссылающийся на эскиз вознаграждения или соблюдается.  |
-|webUrl|String|URL-адрес, ссылающийся на награду или соблюдать. |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Descpription of the award or honor. |
+|displayName|String|Имя награды или чести. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|issuedDate|Дата|Дата, в которую была предоставлена награда или честь. |
+|issuingAuthority|String|Орган, который предоставил награду или честь.  |
+|thumbnailUrl|String|URL-адрес, ссылающийся на эскиз награды или чести.  |
+|webUrl|String|URL-адрес, ссылающийся на награду или честь. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонавард](../resources/personaward.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` обновленный [объект personAward](../resources/personaward.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -74,7 +74,7 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwardId}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 Content-Type: application/json
 Content-length: 497
 

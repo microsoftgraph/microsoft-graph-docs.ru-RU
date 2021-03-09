@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bdbaea1b6ae81dacbf63b6a86abe11b562821986
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 750d7b56b4263fabb871eadb39054e6692ad99e2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883007"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575170"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -32,7 +32,8 @@ ms.locfileid: "49883007"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/columnsBefore(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 

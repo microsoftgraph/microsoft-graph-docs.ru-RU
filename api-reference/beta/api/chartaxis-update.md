@@ -1,18 +1,18 @@
 ---
-title: Обновление Воркбукчартаксис
-description: Обновление свойств объекта воркбукчартаксис.
+title: Обновление книгиChartAxis
+description: Обновление свойств объекта workbookchartaxis.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 69061badcdf8827322f664a50d9c6270604ab032
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0901db47b4ae1d4daa11684000b564a0aadb87b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958898"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574729"
 ---
-# <a name="update-workbookchartaxis"></a>Обновление Воркбукчартаксис
+# <a name="update-workbookchartaxis"></a>Обновление книгиChartAxis
 
 Пространство имен: microsoft.graph
 
@@ -31,9 +31,12 @@ ms.locfileid: "48958898"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -53,7 +56,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартаксис](../resources/workbookchartaxis.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [книгиChartAxis](../resources/workbookchartaxis.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

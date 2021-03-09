@@ -1,24 +1,24 @@
 ---
-title: Обновление Воркбукчартаксиститле
-description: Обновление свойств объекта воркбукчартаксиститле.
+title: Обновление книгиChartAxisTitle
+description: Обновление свойств объекта workbookchartaxistitle.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 279c371b01b2882ec5a415cbcf3c9680fc98f16f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a55c30501a7f885802fa97f8758c8af211a8493c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958871"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574680"
 ---
-# <a name="update-workbookchartaxistitle"></a>Обновление Воркбукчартаксиститле
+# <a name="update-workbookchartaxistitle"></a>Обновление книгиChartAxisTitle
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта Воркбукчартаксиститле.
+Обновление свойств объекта книгиChartAxisTitle.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,9 +31,12 @@ ms.locfileid: "48958871"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/title
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/title
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/title
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/title
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/title
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/title
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -51,7 +54,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартаксиститле](../resources/workbookchartaxistitle.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [книгиChartAxisTitle](../resources/workbookchartaxistitle.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

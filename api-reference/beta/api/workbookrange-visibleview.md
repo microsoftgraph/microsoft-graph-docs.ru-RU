@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e212315de4917b2322f0ffb6f3ef8630ce57f9da
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1e80f4debc42b1051f4abf6f873933e44c17a12a
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979061"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575149"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
@@ -30,7 +30,8 @@ ms.locfileid: "48979061"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|

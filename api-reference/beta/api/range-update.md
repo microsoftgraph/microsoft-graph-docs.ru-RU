@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a4024f6805780fb3c972019c4957ad14cb404172
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50f6d99cec55a5d0fd60f941bc2c64c2a6d3e0af
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081820"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576696"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -31,9 +31,12 @@ ms.locfileid: "48081820"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range
+PATCH /me/drive/items/{id}/workbook/names/{name}/range
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -56,7 +59,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [workbookRange](../resources/workbookrange.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [workbookRange](../resources/workbookrange.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса. Он обновляет диапазон — значения числовой формат и формулу. Значение `null` сообщает API, что в данном случае нужно пропустить ячейку. Значения, числовые форматы и формулы можно обновлять по отдельности или в одном вызове API. 

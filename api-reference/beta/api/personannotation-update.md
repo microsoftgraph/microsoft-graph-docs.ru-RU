@@ -1,21 +1,21 @@
 ---
-title: Обновление Персонаннотатион
-description: Обновление свойств объекта Персонаннотатион.
+title: Обновление personAnnotation
+description: Обновление свойств объекта personAnnotation.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1685d6ef406af3adb1bb73f1974f3ddcbe45e97b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d9c6503c3aeb5fb52ad0982eabfc29729cc23e6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969398"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576059"
 ---
-# <a name="update-personannotation"></a>Обновление Персонаннотатион
+# <a name="update-personannotation"></a>Обновление personAnnotation
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [персонаннотатион](../resources/personannotation.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [personAnnotation](../resources/personannotation.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "47969398"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,18 +48,18 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-В следующей таблице приведены свойства, которые можно обновлять в существующем объекте [персонаннотатион](../resources/personannotation.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно обновить в существующем объекте [personAnnotation](../resources/personannotation.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|описаны|[itemBody](../resources/itembody.md)|Содержит подробные сведения о самом заметке.|
-|displayName|String|Содержит понятное имя для заметки.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|подробные|[itemBody](../resources/itembody.md)|Содержит сведения о самой заметке.|
+|displayName|String|Содержит удобное имя для заметки.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонаннотатион](../resources/personannotation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` [personAnnotation](../resources/personannotation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -71,7 +71,7 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 Content-Type: application/json
 Content-length: 413
 

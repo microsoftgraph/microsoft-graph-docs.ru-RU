@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f84d4f66036d3f767182c5e7abf12c231699073f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: fee9dc42f53a19aa40d9af105829b309eada7ccf
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470237"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574204"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Создание educationSynchronizationProfile
 
@@ -32,7 +32,7 @@ ms.locfileid: "50470237"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles
+POST /education/synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

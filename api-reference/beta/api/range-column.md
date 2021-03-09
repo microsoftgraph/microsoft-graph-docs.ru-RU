@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9ecda0515037b7a4da7ad0d3003102134f5b0755
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 758eac6e54d8ed04852bfc598dabefb619f86bef
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004517"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573784"
 ---
 # <a name="range-column"></a>Range: Column
 
@@ -31,9 +31,12 @@ ms.locfileid: "48004517"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/Column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
+GET /me/drive/items/{id}/workbook/names/{name}/range/Column
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/Column
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/Column
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/Column
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/Column
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/Column
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,7 +45,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

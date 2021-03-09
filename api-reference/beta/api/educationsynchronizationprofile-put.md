@@ -1,38 +1,38 @@
 ---
-title: Обновление Едукатионсинчронизатионпрофиле
-description: Обновление свойств существующего профиля синхронизации данных School в клиенте.
+title: Обновление educationSynchronizationProfile
+description: Обновление свойств существующего профиля синхронизации школьных данных в клиенте.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2145db383d919b218a6d86115dba79d9b9e9875b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27210f444228e3feb5bde98b0b048f26612f4493
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007086"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574122"
 ---
-# <a name="update-an-educationsynchronizationprofile"></a>Обновление Едукатионсинчронизатионпрофиле
+# <a name="update-an-educationsynchronizationprofile"></a>Обновление educationSynchronizationProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств существующего [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.
+Обновление свойств существующего профиля синхронизации [школьных](../resources/educationsynchronizationprofile.md) данных в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /synchronizationProfiles
+PUT /education/synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,10 +42,10 @@ PUT /synchronizationProfiles
 | Content-Type | string | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [синчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [synchronizationProfile.](../resources/educationsynchronizationprofile.md)
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `202, Accepted` код отклика и объект [синчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `202, Accepted` [синхронизацииProfile](../resources/educationsynchronizationprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 547d52a10b565f81037a038bfe967c314d58c578
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c03c85138bb39194c17d41aee6f7d5e9337f2a2f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952773"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575767"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 
@@ -31,7 +31,8 @@ ms.locfileid: "48952773"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}
+PATCH /me/drive/items/{id}/workbook/names/{name}
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -49,7 +50,7 @@ PATCH /workbook/names/{name}
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукнамедитем](../resources/workbooknameditem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [workbookNamedItem](../resources/workbooknameditem.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

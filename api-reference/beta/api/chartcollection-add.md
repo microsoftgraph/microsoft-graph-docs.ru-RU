@@ -1,18 +1,18 @@
 ---
-title: 'Воркбукчартколлектион: Add'
-description: Создает новый объект Воркбукчарт.
+title: 'workbookChartCollection: добавить'
+description: Создает новую книгуChart.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c7d5911190fe41e0afa7a4d158ba7a81bd955d68
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a456a9770421d42310a5b6f0784bf1621da94a22
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958857"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574677"
 ---
-# <a name="workbookchartcollection-add"></a>Воркбукчартколлектион: Add
+# <a name="workbookchartcollection-add"></a>workbookChartCollection: добавить
 
 Пространство имен: microsoft.graph
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958857"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,13 +46,13 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered` , `ColumnStacked` ,,, `ColumnStacked100` `BarClustered` `BarStacked` , `BarStacked100` , `LineStacked` , `LineStacked100` , `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` ,,,,.|
+|type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered` , , , , , , , , `ColumnStacked` `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` .|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
 |seriesBy|string|Необязательно. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [книгиChart](../resources/workbookchart.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

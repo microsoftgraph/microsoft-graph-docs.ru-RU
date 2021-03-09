@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b6ee961ca1d62bc1b03133550bd07be3df515993
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 819b5f74981143ed2f784f89f957d66702e81d26
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019763"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576955"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -31,9 +31,12 @@ ms.locfileid: "48019763"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/borders/ItemAt
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/borders/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,7 +54,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [workbookRangeBorder](../resources/workbookrangeborder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

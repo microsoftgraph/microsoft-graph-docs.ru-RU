@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c8e7f25b04869ec80ecad8fc27eff24a6117b621
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 410300b7339e7d9bc0aa6b5ea0bb437263f42971
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958954"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574757"
 ---
 # <a name="update-chart"></a>Обновление диаграммы
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958954"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -52,7 +53,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [книгиChart](../resources/workbookchart.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

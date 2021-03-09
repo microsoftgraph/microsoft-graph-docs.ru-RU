@@ -1,18 +1,18 @@
 ---
-title: 'Воркбукаппликатион: Calculate'
+title: 'workbookApplication: вычислять'
 description: Пересчитывает данные во всех открытых в текущий момент книгах Excel.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1d5ffa3d4e3da633e25c69f5165b31f782b77803
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 10b3ecd3115b24a6bc614e83a11b48ee12e280d9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977542"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575226"
 ---
-# <a name="workbookapplication-calculate"></a>Воркбукаппликатион: Calculate
+# <a name="workbookapplication-calculate"></a>workbookApplication: вычислять
 
 Пространство имен: microsoft.graph
 
@@ -32,7 +32,8 @@ ms.locfileid: "48977542"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/application/calculate
+POST /me/drive/items/{id}/workbook/application/calculate
+POST /me/drive/root:/{item-path}:/workbook/application/calculate
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,7 +47,7 @@ POST /workbook/application/calculate
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|калкулатионтипе|string|Определяет тип расчета, который нужно использовать.  Возможные значения: `Recalculate`, `Full`, `FullRebuild`.|
+|calculationType|string|Определяет тип расчета, который нужно использовать.  Возможные значения: `Recalculate`, `Full`, `FullRebuild`.|
 
 ## <a name="response"></a>Отклик
 

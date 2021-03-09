@@ -1,24 +1,24 @@
 ---
-title: Получение Воркбукаппликатион
-description: Получение свойств и связей объекта Воркбукаппликатион.
+title: Get workbookApplication
+description: Извлечение свойств и связей объекта workbookApplication.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d8b660e2e12ea7c209a3e38d9f56bc5f89234de4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75bc2129f7f92c4c4ad48a2ec5d123d026b69188
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977528"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575240"
 ---
-# <a name="get-workbookapplication"></a>Получение Воркбукаппликатион
+# <a name="get-workbookapplication"></a>Get workbookApplication
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [воркбукаппликатион](../resources/workbookapplication.md) .
+Извлечение свойств и связей объекта [workbookApplication.](../resources/workbookapplication.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977528"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/application
+GET /me/drive/items/{id}/workbook/application
+GET /me/drive/root:/{item-path}:/workbook/application
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -46,7 +47,7 @@ GET /workbook/application
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукаппликатион](../resources/workbookapplication.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и `200 OK` объект [workbookApplication](../resources/workbookapplication.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

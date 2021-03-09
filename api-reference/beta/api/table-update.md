@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f4ae70f180520e312fcf7f08847d319db260b85c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e54b6a88cda3fa673ba9ce73ed5ce6954d910b5e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440695"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576469"
 ---
 # <a name="update-table"></a>Обновление таблицы
 
@@ -31,8 +31,10 @@ ms.locfileid: "50440695"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -40,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

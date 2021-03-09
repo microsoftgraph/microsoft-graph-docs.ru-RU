@@ -1,21 +1,21 @@
 ---
-title: Удаление Персонаннотатион
-description: Удаляет объект Персонаннотатион.
+title: Удаление personAnnotation
+description: Удаляет объект personAnnotation.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b7aa573e5579d2387a1a93e7ff7bac44a398db4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 45edea76de53e127d6b74de3b680d4b9d8bd9309
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022283"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576045"
 ---
-# <a name="delete-personannotation"></a>Удаление Персонаннотатион
+# <a name="delete-personannotation"></a>Удаление personAnnotation
 Пространство имен: microsoft.graph
 
-Удаляет объект [персонаннотатион](../resources/personannotation.md) из [профиля](../resources/profile.md)пользователя.
+Удаляет объект [personAnnotation](../resources/personannotation.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "48022283"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -60,7 +60,7 @@ DELETE /users/{id | userPrincipalName}/profile/notes/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]

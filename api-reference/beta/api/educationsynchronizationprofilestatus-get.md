@@ -1,24 +1,24 @@
 ---
-title: Получение состояния Едукатионсинчронизатионпрофиле
-description: Получение состояния определенного профиля синхронизации данных School в клиенте. Ответ будет указывать на состояние синхронизации.
+title: Получить статус educationSynchronizationProfile
+description: Получите состояние определенного профиля синхронизации школьных данных в клиенте. В ответе указывается состояние синхронизации.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 30cde845220ecf2619516ddee1dcc5c58d3740c1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fef6a53f112f9c7f5922e9242761e5365e9f15a5
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955345"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574143"
 ---
-# <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Получение состояния Едукатионсинчронизатионпрофиле
+# <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Получить статус educationSynchronizationProfile
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение состояния определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте. Ответ будет указывать на состояние синхронизации.
+Получите состояние определенного профиля синхронизации [школьных данных](../resources/educationsynchronizationprofile.md) в клиенте. В ответе указывается состояние синхронизации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,15 +26,15 @@ ms.locfileid: "48955345"
 
 | Тип разрешения                       | Разрешения (в порядке повышения привилегий)                 |
 | :------------------------------------ | :---------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)    | Едуадминистратион. Read, Едуадминистратион. ReadWrite         |
-| Делегированная учетная запись (личная учетная запись Майкрософт) | Не поддерживается.                                              |
-| Для приложений                           | Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)    | EduAdministration.Read, EduAdministration.ReadWrite         |
+| Делегированная (личная учетная запись Майкрософт) | Не поддерживается.                                              |
+| Приложение                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles/{id}/profileStatus
+GET /education/synchronizationProfiles/{id}/profileStatus
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,7 +49,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионсинчронизатионпрофилестатус](../resources/educationsynchronizationprofilestatus.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
