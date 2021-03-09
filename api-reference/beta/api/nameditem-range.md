@@ -5,53 +5,54 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: b61baa7046e683977744ce4426dbfade60b1c4a0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d2681c588fd28a2ca4cfbcba00b39893da963a9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442462"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576717"
 ---
-# <a name="nameditem-range"></a><span data-ttu-id="4bb74-104">NamedItem: Range</span><span class="sxs-lookup"><span data-stu-id="4bb74-104">NamedItem: Range</span></span>
+# <a name="nameditem-range"></a><span data-ttu-id="e55c2-104">NamedItem: Range</span><span class="sxs-lookup"><span data-stu-id="e55c2-104">NamedItem: Range</span></span>
 
-<span data-ttu-id="4bb74-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4bb74-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e55c2-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e55c2-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4bb74-p102">Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.</span><span class="sxs-lookup"><span data-stu-id="4bb74-p102">Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4bb74-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4bb74-108">Permissions</span></span>
-<span data-ttu-id="4bb74-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4bb74-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e55c2-p102">Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.</span><span class="sxs-lookup"><span data-stu-id="e55c2-p102">Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e55c2-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e55c2-108">Permissions</span></span>
+<span data-ttu-id="e55c2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e55c2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4bb74-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4bb74-111">Permission type</span></span>      | <span data-ttu-id="4bb74-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4bb74-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e55c2-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e55c2-111">Permission type</span></span>      | <span data-ttu-id="e55c2-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e55c2-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4bb74-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4bb74-113">Delegated (work or school account)</span></span> | <span data-ttu-id="4bb74-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4bb74-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4bb74-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4bb74-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4bb74-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4bb74-116">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4bb74-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4bb74-117">Application</span></span> | <span data-ttu-id="4bb74-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4bb74-118">Not supported.</span></span> |
+|<span data-ttu-id="e55c2-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e55c2-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e55c2-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e55c2-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e55c2-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e55c2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e55c2-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e55c2-116">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e55c2-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e55c2-117">Application</span></span> | <span data-ttu-id="e55c2-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e55c2-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4bb74-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4bb74-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e55c2-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e55c2-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/Range
+GET /me/drive/items/{id}/workbook/names/{name}/Range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/Range
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4bb74-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4bb74-120">Request headers</span></span>
-| <span data-ttu-id="4bb74-121">Имя</span><span class="sxs-lookup"><span data-stu-id="4bb74-121">Name</span></span>       | <span data-ttu-id="4bb74-122">Описание</span><span class="sxs-lookup"><span data-stu-id="4bb74-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e55c2-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e55c2-120">Request headers</span></span>
+| <span data-ttu-id="e55c2-121">Имя</span><span class="sxs-lookup"><span data-stu-id="e55c2-121">Name</span></span>       | <span data-ttu-id="e55c2-122">Описание</span><span class="sxs-lookup"><span data-stu-id="e55c2-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4bb74-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4bb74-123">Authorization</span></span>  | <span data-ttu-id="4bb74-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4bb74-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4bb74-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4bb74-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="4bb74-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="4bb74-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e55c2-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e55c2-123">Authorization</span></span>  | <span data-ttu-id="e55c2-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e55c2-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e55c2-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e55c2-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="e55c2-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="e55c2-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4bb74-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4bb74-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e55c2-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e55c2-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="4bb74-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="4bb74-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e55c2-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="e55c2-130">Response</span></span>
 
-<span data-ttu-id="4bb74-131">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/workbookrange.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="4bb74-131">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
+<span data-ttu-id="e55c2-131">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/workbookrange.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="e55c2-131">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4bb74-132">Пример</span><span class="sxs-lookup"><span data-stu-id="4bb74-132">Example</span></span>
-<span data-ttu-id="4bb74-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="4bb74-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="4bb74-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="4bb74-134">Request</span></span>
-<span data-ttu-id="4bb74-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4bb74-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e55c2-132">Пример</span><span class="sxs-lookup"><span data-stu-id="e55c2-132">Example</span></span>
+<span data-ttu-id="e55c2-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e55c2-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e55c2-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="e55c2-134">Request</span></span>
+<span data-ttu-id="e55c2-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e55c2-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4bb74-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="4bb74-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e55c2-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="e55c2-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "nameditem_range"
@@ -59,27 +60,27 @@ GET /workbook/names/{name}/Range
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/Range
 ```
-# <a name="c"></a>[<span data-ttu-id="4bb74-137">C#</span><span class="sxs-lookup"><span data-stu-id="4bb74-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e55c2-137">C#</span><span class="sxs-lookup"><span data-stu-id="e55c2-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4bb74-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4bb74-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e55c2-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e55c2-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditem-range-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4bb74-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4bb74-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e55c2-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e55c2-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditem-range-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4bb74-140">Java</span><span class="sxs-lookup"><span data-stu-id="4bb74-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e55c2-140">Java</span><span class="sxs-lookup"><span data-stu-id="e55c2-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/nameditem-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4bb74-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="4bb74-141">Response</span></span>
-<span data-ttu-id="4bb74-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4bb74-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e55c2-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="e55c2-141">Response</span></span>
+<span data-ttu-id="e55c2-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e55c2-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

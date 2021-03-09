@@ -5,54 +5,55 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5878cea28afe1154535b27e2afea42a4ac94e6ab
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ec795f41c6cd2f60872eed989e083fb1e5e92ab8
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958556"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574465"
 ---
-# <a name="get-chartpoint"></a><span data-ttu-id="56e6d-103">Получение объекта ChartPoint</span><span class="sxs-lookup"><span data-stu-id="56e6d-103">Get ChartPoint</span></span>
+# <a name="get-chartpoint"></a><span data-ttu-id="2a793-103">Получение объекта ChartPoint</span><span class="sxs-lookup"><span data-stu-id="2a793-103">Get ChartPoint</span></span>
 
-<span data-ttu-id="56e6d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="56e6d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2a793-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2a793-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="56e6d-105">Получение свойств и связей объекта chartpoint.</span><span class="sxs-lookup"><span data-stu-id="56e6d-105">Retrieve the properties and relationships of chartpoint object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="56e6d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="56e6d-106">Permissions</span></span>
-<span data-ttu-id="56e6d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56e6d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2a793-105">Получение свойств и связей объекта chartpoint.</span><span class="sxs-lookup"><span data-stu-id="2a793-105">Retrieve the properties and relationships of chartpoint object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2a793-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2a793-106">Permissions</span></span>
+<span data-ttu-id="2a793-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a793-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="56e6d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="56e6d-109">Permission type</span></span>      | <span data-ttu-id="56e6d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="56e6d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2a793-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2a793-109">Permission type</span></span>      | <span data-ttu-id="2a793-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2a793-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="56e6d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="56e6d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="56e6d-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="56e6d-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="56e6d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="56e6d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56e6d-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="56e6d-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="56e6d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="56e6d-115">Application</span></span> | <span data-ttu-id="56e6d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56e6d-116">Not supported.</span></span> |
+|<span data-ttu-id="2a793-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2a793-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2a793-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a793-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2a793-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2a793-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a793-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a793-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2a793-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2a793-115">Application</span></span> | <span data-ttu-id="2a793-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a793-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="56e6d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="56e6d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a793-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2a793-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{undefined}
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{undefined}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{undefined}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="56e6d-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="56e6d-118">Optional query parameters</span></span>
-<span data-ttu-id="56e6d-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="56e6d-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2a793-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2a793-118">Optional query parameters</span></span>
+<span data-ttu-id="2a793-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="2a793-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="56e6d-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="56e6d-120">Request headers</span></span>
-| <span data-ttu-id="56e6d-121">Имя</span><span class="sxs-lookup"><span data-stu-id="56e6d-121">Name</span></span>      |<span data-ttu-id="56e6d-122">Описание</span><span class="sxs-lookup"><span data-stu-id="56e6d-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2a793-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2a793-120">Request headers</span></span>
+| <span data-ttu-id="2a793-121">Имя</span><span class="sxs-lookup"><span data-stu-id="2a793-121">Name</span></span>      |<span data-ttu-id="2a793-122">Описание</span><span class="sxs-lookup"><span data-stu-id="2a793-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="56e6d-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="56e6d-123">Authorization</span></span>  | <span data-ttu-id="56e6d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="56e6d-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="56e6d-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="56e6d-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="56e6d-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="56e6d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2a793-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2a793-123">Authorization</span></span>  | <span data-ttu-id="2a793-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2a793-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2a793-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2a793-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="2a793-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="2a793-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="56e6d-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="56e6d-129">Request body</span></span>
-<span data-ttu-id="56e6d-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="56e6d-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2a793-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2a793-129">Request body</span></span>
+<span data-ttu-id="2a793-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2a793-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="56e6d-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="56e6d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2a793-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a793-131">Response</span></span>
 
-<span data-ttu-id="56e6d-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартпоинт](../resources/workbookchartpoint.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="56e6d-132">If successful, this method returns a `200 OK` response code and [workbookChartPoint](../resources/workbookchartpoint.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="56e6d-133">Пример</span><span class="sxs-lookup"><span data-stu-id="56e6d-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="56e6d-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="56e6d-134">Request</span></span>
-<span data-ttu-id="56e6d-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="56e6d-135">Here is an example of the request.</span></span>
+<span data-ttu-id="2a793-132">В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [книгиChartPoint](../resources/workbookchartpoint.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="2a793-132">If successful, this method returns a `200 OK` response code and [workbookChartPoint](../resources/workbookchartpoint.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2a793-133">Пример</span><span class="sxs-lookup"><span data-stu-id="2a793-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2a793-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="2a793-134">Request</span></span>
+<span data-ttu-id="2a793-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2a793-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="56e6d-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="56e6d-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2a793-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="2a793-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chartpoint"
@@ -60,26 +61,26 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{unde
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{undefined}
 ```
-# <a name="c"></a>[<span data-ttu-id="56e6d-137">C#</span><span class="sxs-lookup"><span data-stu-id="56e6d-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2a793-137">C#</span><span class="sxs-lookup"><span data-stu-id="2a793-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chartpoint-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="56e6d-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56e6d-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2a793-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2a793-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chartpoint-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="56e6d-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56e6d-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2a793-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2a793-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chartpoint-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="56e6d-140">Java</span><span class="sxs-lookup"><span data-stu-id="56e6d-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2a793-140">Java</span><span class="sxs-lookup"><span data-stu-id="2a793-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chartpoint-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="56e6d-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="56e6d-141">Response</span></span>
-<span data-ttu-id="56e6d-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="56e6d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2a793-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a793-141">Response</span></span>
+<span data-ttu-id="2a793-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2a793-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
