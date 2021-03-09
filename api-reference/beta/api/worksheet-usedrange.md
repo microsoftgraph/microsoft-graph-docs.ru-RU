@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cc587a9a18193dd18756809f7865afd4e809be28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3da9ece84c8c6fedd36a08bb6f489eaa89bb8b7c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980153"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578152"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -29,7 +29,8 @@ ms.locfileid: "48980153"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/UsedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/UsedRange
 
 ```
 
@@ -46,7 +47,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

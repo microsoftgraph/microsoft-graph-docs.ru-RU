@@ -1,22 +1,22 @@
 ---
-title: Обновление Итемпатент
-description: Обновление свойств объекта Итемпатент.
+title: Обновление itemPatent
+description: Обновление свойств объекта itemPatent.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b480f7ba45b0b3ea6cea7625af373650ac279414
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 442c5360438755f8d48b156b9ca7911380add017
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999414"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577429"
 ---
-# <a name="update-itempatent"></a>Обновление Итемпатент
+# <a name="update-itempatent"></a>Обновление itemPatent
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [итемпатент](../resources/itempatent.md) .
+Обновление свойств объекта [itemPatent.](../resources/itempatent.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "47999414"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,20 +51,20 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Дескприптион патента или для хранения. |
-|displayName|String|Название патента или его для архивации. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|Ожидается        |Boolean     |Указывает, что патент находится в состоянии ожидания.        |
-|иссуеддате       |Дата        |Дата предоставления патента.   |
-|иссуингаусорити |String      |Центр сертификации, который предоставил патент.     |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Descpription патента или подачи. |
+|displayName|String|Название патента или подачи. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|isPending        |Boolean     |Указывает, что патент находится в стадии ожидания.        |
+|issuedDate       |Дата        |Дата предоставления патента.   |
+|issuingAuthority |String      |Орган, выдав патент.     |
 |число           |String      |Номер патента.                      |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|webUrl           |String      |URL-адрес, ссылающийся на патент или в систему архивации. |
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|webUrl           |String      |URL-адрес, ссылающийся на патент или подачу. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемпатент](../resources/itempatent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` обновленный [объект itemPatent](../resources/itempatent.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -76,7 +76,7 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 Content-Type: application/json
 Content-length: 497
 

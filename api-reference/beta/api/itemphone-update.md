@@ -1,24 +1,24 @@
 ---
-title: Обновление итемфоне
-description: Обновление свойств объекта Итемфоне.
+title: Обновление itemphone
+description: Обновление свойств объекта itemPhone.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 823dbabbe2936cc7c75af4a480610c7c5d71085c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a6d446e68125b8be0d750f1c81cfa7d3f11a5c5
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999359"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577396"
 ---
-# <a name="update-itemphonenumber"></a>Обновление итемфоненумбер
+# <a name="update-itemphonenumber"></a>Обновление itemphonenumber
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [итемфоне](../resources/itemphone.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [itemPhone](../resources/itemphone.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "47999359"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +38,7 @@ ms.locfileid: "47999359"
 -->
 ``` http
 PATCH /me/profile/phones/{id}
-PATCH /user/{userId}/profile/phones/{id}
+PATCH /users/{userId}/profile/phones/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,20 +51,20 @@ PATCH /user/{userId}/profile/phones/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-В следующей таблице приведены свойства, которые можно задать при обновлении объекта [итемфоне](../resources/itemphone.md) в профиле пользователя.
+В следующей таблице показаны свойства, которые можно установить при обновлении объекта [itemPhone](../resources/itemphone.md) в профиле пользователей.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Понятное имя, назначенное пользователю для этого номера телефона. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Удобное имя, назначенное пользователем этому номеру телефона. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |число|String|Номер телефона, предоставленный пользователем.|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|type|фонетипе|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|type|phoneType|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемфоне](../resources/itemphone.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` обновленный [объект itemPhone](../resources/itemphone.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -76,7 +76,7 @@ PATCH /user/{userId}/profile/phones/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/phones/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/phones/{id}
 Content-Type: application/json
 Content-length: 382
 

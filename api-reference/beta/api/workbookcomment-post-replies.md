@@ -1,22 +1,22 @@
 ---
-title: Создание Воркбуккомментрепли
-description: Создание нового Воркбуккомментрепли.
+title: Создание книгиCommentReply
+description: Создание новой книгиCommentReply.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fb76b19dde2034d11b5491a78e883d009d34e70d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fbdb2cac897fe99a7f7aa733bdd0bcf56004a464
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964334"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578615"
 ---
-# <a name="create-workbookcommentreply"></a>Создание Воркбуккомментрепли
+# <a name="create-workbookcommentreply"></a>Создание книгиCommentReply
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [воркбуккомментрепли](../resources/workbookcommentreply.md) .
+Создайте новый [объект книгиCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,8 @@ ms.locfileid: "48964334"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /workbook/comments/{id}/replies
+POST /me/drive/items/{id}/workbook/comments/{id}/replies
+POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,11 +45,11 @@ POST /workbook/comments/{id}/replies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [воркбуккомментрепли](../resources/workbookcommentreply.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [книгиCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

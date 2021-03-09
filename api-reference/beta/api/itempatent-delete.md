@@ -1,22 +1,22 @@
 ---
-title: Удаление Итемпатент
-description: Удаляет объект Итемпатент.
+title: Удаление itemPatent
+description: Удаляет объект itemPatent.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1721797203410eab2fee7ff46970e1da36d8047f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a5045c4c9c2cd95bee5534b86e99c2d4fba5202
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090003"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577438"
 ---
-# <a name="delete-itempatent"></a>Удаление Итемпатент
+# <a name="delete-itempatent"></a>Удаление itemPatent
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [итемпатент](../resources/itempatent.md) .
+Удаляет объект [itemPatent.](../resources/itempatent.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "48090003"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -61,7 +61,7 @@ DELETE /users/{id | userPrincipalName}/profile/patents/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]

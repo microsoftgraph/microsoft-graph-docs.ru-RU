@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f4bb3dfd7433a5bced3e105ac63b7865984c52a5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d399b86863fcf7ae95dd1bd9f65f72c45abbf4fe
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977258"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578194"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977258"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/tables/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,12 +46,12 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | Параметр       | Тип|Описание|
 |:---------------|:----------|:----------|
-| Адрес  | string| Адрес диапазона. Если вы вызываете этот API из `worksheets/{id|name}/tables/add` пути, нет необходимости поддерживать префикс имени листа в адресе. Тем не менее, если вы звоните по `workbook/tables/add` адресу, укажите имя листа, на котором необходимо создать таблицу (например: `sheet1!A1:D4` ).|
+| Адрес  | string| Адрес диапазона. Если этот API отключен от пути, нет необходимости поддерживать префикс имени листа `worksheets/{id|name}/tables/add` в адресе. Однако, если вы вызываете это отключение пути, затем поставляют имя листа, на котором должна быть создана таблица `workbook/tables/add` (пример: `sheet1!A1:D4` )|
 | hasHeaders  | boolean|Логическое значение, указывающее, имеет ли диапазон метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.|
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект workbookTable](../resources/workbooktable.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

@@ -1,24 +1,24 @@
 ---
-title: Получение Итемфоне
-description: Получение свойств и связей объекта Итемфоне.
+title: Get itemPhone
+description: Извлечение свойств и связей объекта itemPhone.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 66207a802433720be38e57387084e2ca4fffa5ba
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0622fef3be1d34c6bac46601eb42af2d2420d2c6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969940"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577431"
 ---
-# <a name="get-itemphonenumber"></a>Получение Итемфоненумбер
+# <a name="get-itemphonenumber"></a>Получить itemPhoneNumber
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [итемфоне](../resources/itemphone.md) в [профиле](../resources/profile.md)пользователя.
+Извлечение свойств и связей объекта [itemPhone](../resources/itemphone.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48969940"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,12 +36,12 @@ ms.locfileid: "48969940"
 
 ```http
 GET /me/profile/phones/{id}
-GET /user/{userId}/profile/phones/{id}
+GET /users/{userId}/profile/phones/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
+Этот метод поддерживает параметр `$select` запроса. Укажите список свойств, которые необходимо включить в ответ, разделив их запятой. Для оптимальной производительности выберите только подмножество необходимых свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -53,7 +53,7 @@ GET /user/{userId}/profile/phones/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [итемфоне](../resources/itemphone.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект itemPhone](../resources/itemphone.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a81c799df7a1f161bfa1718e32d72ad9f415cdf3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6e2b2f9dcf1a7bda077ef3f5386d5010a3368ff5
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981140"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577352"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -31,9 +31,12 @@ ms.locfileid: "48981140"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/sort/apply
-POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
-POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
+POST /me/drive/items/{id}/workbook/names/{name}/range/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,7 +50,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|Коллекция Воркбуксортфиелд|Список условий для сортировки.|
+|fields|коллекция workbookSortField|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
 |orientation|string|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|

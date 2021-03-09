@@ -1,21 +1,21 @@
 ---
-title: Удаление Итемаддресс
-description: Удаляет объект Итемаддресс.
+title: Удаление itemAddress
+description: Удаляет объект itemAddress.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7478633b46309d6e6047ee65314b51c90b9a5384
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ede930a2f76c09ea0b469a6b449b92275abbac28
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980024"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578712"
 ---
-# <a name="delete-itemaddress"></a>Удаление Итемаддресс
+# <a name="delete-itemaddress"></a>Удаление itemAddress
 Пространство имен: microsoft.graph
 
-Удаляет объект [итемаддресс](../resources/itemaddress.md) .
+Удаляет объект [itemAddress.](../resources/itemaddress.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "47980024"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ DELETE /users/{id | userPrincipalName}/profile/addresses/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -60,7 +60,7 @@ DELETE /users/{id | userPrincipalName}/profile/addresses/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/addresses/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/addresses/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]

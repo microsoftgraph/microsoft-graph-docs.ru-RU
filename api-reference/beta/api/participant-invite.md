@@ -1,18 +1,18 @@
 ---
-title: 'participant: invite'
+title: 'участник: приглашение'
 description: Приглашение участников в активный вызов.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fd261e0d94a23e32c661bf7bf70e3fd16935928c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 295a8aa728754d8e4ffc6d2f412c44059a63c794
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177223"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578348"
 ---
-# <a name="participant-invite"></a>participant: invite
+# <a name="participant-invite"></a>участник: приглашение
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "50177223"
 
 Приглашение участников в активный вызов.
 
-Дополнительные сведения о том, как обрабатывать операции, см. в [подстроке commsoperation.](../resources/commsoperation.md)
+Дополнительные сведения о том, как обрабатывать операции, см. [в commsoperation.](../resources/commsoperation.md)
 
->**Примечание.** Этот API поддерживается только для групповых вызовов.
+>**Примечание:** Этот API поддерживается только для групповых вызовов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "50177223"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls.InitiateGroupCalls.All                               |
+| Приложение     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,21 +52,21 @@ POST /communications/calls/{id}/participants/invite
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Приглашенные участники.|
-|clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 chars.|
+|participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
+|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
-Если это не так, этот метод возвращает код отклика и заглавную ссылку Location с URI для `200 OK` [метода inviteParticipantsOperation,](../resources/inviteparticipantsoperation.md) созданного для этого запроса. Тело ответа содержит созданный [inviteParticipantsOperation.](../resources/inviteparticipantsoperation.md)
+Если этот метод безусысный, этот метод возвращает код отклика и заглавную ссылку Location с URI в `200 OK` [inviteParticipantsOperation,](../resources/inviteparticipantsoperation.md) созданный для этого запроса. Тело ответа содержит созданный [inviteParticipantsOperation.](../resources/inviteparticipantsoperation.md)
 
->**Примечание.** Когда этот API возвращает успешный ответ, все участники получат обновление для участников.
+>**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление реестра.
 
 
 ## <a name="examples"></a>Примеры
 В следующих примерах покажите, как вызвать этот API.
 
-> **Примечание.** Объекты ответа могут быть сокращены для учитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание:** Объекты отклика могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 
-### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Пример 1. Приглашение одного участника к существующему групповому вызову
+### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Пример 1. Приглашение одного участника на существующий групповой вызов
 
 #### <a name="request"></a>Запрос
 
@@ -197,7 +197,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с помощью добавленного участника
+#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с добавленным участником
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -252,9 +252,9 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Пример 2. Приглашение нескольких участников к существующему групповому вызову
+### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Пример 2. Приглашение нескольких участников на существующий групповой вызов
 
-> **Примечание.** Существующий групповой звонок должен иметь допустимый [chatInfo.](../resources/chatInfo.md) Поддерживается приглашение до 5 участников.
+> **Примечание.** Существующий групповой вызов должен иметь [допустимый chatInfo](../resources/chatInfo.md). Приглашение до 5 участников поддерживается.
 
 #### <a name="request"></a>Запрос
 
@@ -504,14 +504,14 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Пример 3. Приглашение участников к существующему групповому вызову, заменив существующий одноранговой вызов
+### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Пример 3. Приглашение участников на существующий групповой вызов, заменив существующий одноранговой вызов
 
 
-API приглашений поддерживает только одного участника при замене существующего одноранговых вызовов. Если в тексте запроса есть несколько участников, будет прочитан только первый участник, а остальные участники будут игнорироваться.
+API приглашения поддерживает только одного участника при замене существующего одноранговых вызовов. Если в тексте запроса будет предоставлено несколько участников, будет прочитан только первый участник, а остальные участники будут проигнорированы.
 
 
-> **Примечание.** API приглашений поддерживает только одного участника, `replacesCallId` если он предоставлен. 
-> Дополнительные сведения об использовании замены существующего однорангового вызова см. в `replacesCallId` приглашенииParticipantInfo. [](../resources/invitationparticipantinfo.md)
+> **Примечание:** API приглашения поддерживает только одного участника при `replacesCallId` условии. 
+> Дополнительные сведения об использовании для замены существующего однорангового вызова см. в `replacesCallId` [материале invitationParticipantInfo.](../resources/invitationparticipantinfo.md)
 
 #### <a name="request"></a>Запрос
 
@@ -643,7 +643,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с помощью добавленного участника
+#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с добавленным участником
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -699,32 +699,11 @@ Content-Type: application/json
 }
 ```
 
->**Примечание.** С состоянием "завершено" можно ожидать получения уведомлений о том, как ваш исходный одноранговой звонок был завершен и удален.
+>**Примечание:** С состоянием "завершен" можно ожидать получения уведомлений о прекращении и удалении исходного одноранговых вызовов.
 
-### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника STN к существующему групповому вызову
+### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника PSTN на существующий групповой вызов
 
-Для этого вызова требуется экземпляр приложения с назначенным номером PSTN.
-
-#### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
-Используя учетные данные администратора клиента, вызовите следующие cmdlets в удаленной powerShell клиента, чтобы создать экземпляр приложения. Дополнительные сведения см. в командах [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Шаг 2. Назначение лицензий Microsoft 365
-1. Используйте учетные данные администратора клиента для входа и перейдите на вкладку https://admin.microsoft.com/ **"Пользователи > активные пользователи".**
-2. Выберите экземпляр приложения, назначьте план внутренних и международных звонков **Microsoft 365** и телефонную систему **Microsoft 365 —** лицензии виртуальных пользователей и нажмите кнопку **"Сохранить изменения".** Если необходимые лицензии недоступны в клиенте, их можно получить на вкладке "Выставление счета **-> Приобретение служб".**
-#### <a name="step-3-acquire-pstn-number"></a>Шаг 3. Получение номера STN
-1. Используйте учетные данные администратора клиента для входа и перейдите на вкладку "Устаревший https://admin.teams.microsoft.com/ **портал"** на левой панели.
-2. На новой странице перейдите на вкладку **голосовых > номеров** телефонов.
-3. Нажмите **+** кнопку, выберите **"Новые номера служб"** и перейдите на страницу **"Добавление новых номеров служб".**
-4. Выберите **"Страна/регион",** **"Область",** **"Город",**"Количество **входных** данных" и нажмите **кнопку "Добавить"** для поиска. Щелкните **"Получить номера".** Недавно полученный номер будет показываться на **вкладке "Номера** телефонов".
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Шаг 4. Назначение номера STN экземпляру приложения
-С помощью учетных данных администратора клиента вызовите следующие cmdlets в удаленной powerShell клиента, чтобы назначить номер STN экземпляру приложения. Дополнительные сведения см. в командах [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 
@@ -839,7 +818,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с помощью добавленного участника
+#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с добавленным участником
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -893,7 +872,7 @@ Content-Type: application/json
 
 ```
 
->**Примечание.** С состоянием можно ожидать получения уведомлений о том, как ваш исходный одноранговой звонок `completed` был завершен и удален.
+>**Примечание:** Со статусом можно ожидать получения уведомлений о прекращении и удалении исходного одноранговых `completed` вызовов.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 43694025b741cbb2a8069b6375e78c6be0e1e4d4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7150455cc667efb678bb887793c005b5e4324235
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974440"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578705"
 ---
 # <a name="get-range"></a>Получение диапазона
 
@@ -31,8 +31,10 @@ ms.locfileid: "48974440"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/range(address='<address>')
-GET /workbook/tables/{id|name}/columns/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -48,7 +50,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [workbookRange](../resources/workbookrange.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект workbookRange](../resources/workbookrange.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

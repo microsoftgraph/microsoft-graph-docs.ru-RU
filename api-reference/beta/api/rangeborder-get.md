@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 60f5fe2333c067087bec2cc0bbc0c38f1d87ad37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d71605d7ddcea9ed0a390c8e0684cd7e4268cb9a
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981910"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577023"
 ---
 # <a name="get-rangeborder"></a>Получение объекта RangeBorder
 
@@ -31,9 +31,12 @@ ms.locfileid: "48981910"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/borders(<sideIndex>)
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/borders(<sideIndex>)
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders(<sideIndex>)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -49,7 +52,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [workbookRangeBorder](../resources/workbookrangeborder.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

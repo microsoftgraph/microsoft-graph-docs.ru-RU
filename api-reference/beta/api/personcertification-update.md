@@ -1,21 +1,21 @@
 ---
-title: Обновление Персонцертификатион
-description: Обновление свойств объекта Персонцертификатион.
+title: Обновление personCertification
+description: Обновление свойств объекта personCertification.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 66c6db323684d9530913e0f6675052ffca78739a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce03e7499cd79f1616c26ea53444a443e39b6f68
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022272"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577355"
 ---
-# <a name="update-personcertification"></a>Обновление Персонцертификатион
+# <a name="update-personcertification"></a>Обновление personCertification
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [персонцертификатион](../resources/personcertification.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [personCertification](../resources/personcertification.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "48022272"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,22 +50,22 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|цертификатионид  |String      |Справочный идентификатор для сертификации. |
-|description      |String      |Описание сертификата.                   |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |String      |Справочный идентификатор для сертификации. |
+|description      |String      |Описание сертификации.                   |
 |displayName      |String      |Название сертификата.                         |
-|endDate          |Date        |Дата истечения срока действия сертификата.            |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|иссуеддате       |Дата        |Дата выдачи сертификата.         |
-|иссуингаусорити |String      |Центр сертификации, который предоставил сертификат.          |
-|иссуингкомпани   |String      |Центр сертификации, который предоставил сертификат.          |
-|startDate        |Date        |Дата, когда сертификация стала действительна.       |
+|endDate          |Date        |Дата истечения срока сертификации.            |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|issuedDate       |Дата        |Дата выдачи сертификата.         |
+|issuingAuthority |String      |Орган, который предоставил сертификацию.          |
+|issuingCompany   |String      |Орган, который предоставил сертификацию.          |
+|startDate        |Date        |Дата, когда сертификация стала допустимой.       |
 |thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
-|webUrl           |String      |URL-адрес, ссылающийся на сертификат.                  |
+|webUrl           |String      |URL-адрес, ссылающийся на сертификацию.                  |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонцертификатион](../resources/personcertification.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [personCertification](../resources/personcertification.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -77,7 +77,7 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
 Content-length: 497
 

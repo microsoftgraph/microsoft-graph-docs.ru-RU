@@ -1,24 +1,24 @@
 ---
-title: Получение Воркбукворкшитпротектион
-description: Получение свойств и связей объекта воркбукворкшитпротектион.
+title: Get workbookWorksheetProtection
+description: Извлечение свойств и связей объекта workbookworksheetprotection.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 188ca823194e9d895dde498444a2a824ac7fac64
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5741a9ed6e24519f704d0c2df13d62945e36d13b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973117"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578147"
 ---
-# <a name="get-workbookworksheetprotection"></a>Получение Воркбукворкшитпротектион
+# <a name="get-workbookworksheetprotection"></a>Get workbookWorksheetProtection
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта Воркбукворкшитпротектион.
+Извлечение свойств и связей объекта workbookWorksheetProtection.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,7 +31,8 @@ ms.locfileid: "48973117"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/protection
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/protection
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/protection
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшитпротектион](../resources/workbookworksheetprotection.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

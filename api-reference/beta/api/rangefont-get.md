@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 612aab696a30a2ecdddfe94d2f00cae743f0f9f3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5e6b6bdef82c688e20d82be74123300ace2e52a1
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976219"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578838"
 ---
 # <a name="get-rangefont"></a>Получение объекта RangeFont
 
@@ -31,9 +31,12 @@ ms.locfileid: "48976219"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/font
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/font
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/font
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/font
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -49,7 +52,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжефонт](../resources/workbookrangefont.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [workbookRangeFont](../resources/workbookrangefont.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -1,16 +1,16 @@
 ---
 title: 'WorksheetCollection: add'
-description: . Активируйте ().
+description: .activate() на нем.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d3162d29d94e5903f85e8f1ea4b5ea6527daa78b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a4c587117beeb6e06e7a683dd119d8199c3e940c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979971"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578166"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -31,7 +31,8 @@ ms.locfileid: "48979971"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/
+POST /me/drive/items/{id}/workbook/worksheets/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,7 +50,7 @@ POST /workbook/worksheets/
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [workbookWorksheet](../resources/workbookworksheet.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

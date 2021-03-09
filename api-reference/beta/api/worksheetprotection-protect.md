@@ -1,18 +1,18 @@
 ---
-title: 'Воркбукворкшитпротектион: защита'
+title: 'workbookWorksheetProtection: защита'
 description: Защита листа. Выдает исключение, если лист защищен.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 321091e5e23af53955e6d39065540828e83568f5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bfbb6252a13db3afb3cab4f3b21bb947897cd297
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973109"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578096"
 ---
-# <a name="workbookworksheetprotection-protect"></a>Воркбукворкшитпротектион: защита
+# <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection: защита
 
 Пространство имен: microsoft.graph
 
@@ -31,7 +31,8 @@ ms.locfileid: "48973109"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/protect
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,7 +46,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|options|[воркбукворкшитпротектионоптионс](../resources/workbookworksheetprotectionoptions.md)|Необязательные параметры защиты листа.|
+|options|[workbookWorksheetProtectionOptions](../resources/workbookworksheetprotectionoptions.md)|Необязательные параметры защиты листа.|
 
 ## <a name="response"></a>Отклик
 

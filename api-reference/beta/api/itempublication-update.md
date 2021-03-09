@@ -1,22 +1,22 @@
 ---
-title: Обновление Итемпубликатион
-description: Обновление свойств объекта Итемпубликатион.
+title: Обновление itemPublication
+description: Обновление свойств объекта itemPublication.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 407e110d3d2f0da3a130b973c2382849b1db40bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae5e659048db6cd8a46c964fd02860f204c66116
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999328"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577382"
 ---
-# <a name="update-itempublication"></a>Обновление Итемпубликатион
+# <a name="update-itempublication"></a>Обновление itemPublication
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [итемпубликатион](../resources/itempublication.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [itemPublication](../resources/itempublication.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "47999328"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,19 +51,19 @@ PATCH /users/{id | userPrincipalName}/profile/publications/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description    |String      |Описание публикации.                   |
 |displayName    |String      |Название публикации.                         |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|публишеддате  |Дата        |Дата публикации публикации.      |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|publishedDate  |Дата        |Дата публикации.      |
 |publisher      |String      |Публикация или издатель для публикации.     |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |thumbnailUrl   |String      |URL-адрес, ссылающийся на эскиз публикации.   |
 |webUrl         |String      |URL-адрес, ссылающийся на публикацию.                  |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемпубликатион](../resources/itemPublication.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект itemPublication](../resources/itemPublication.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -75,7 +75,7 @@ PATCH /users/{id | userPrincipalName}/profile/publications/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/publications/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/publications/{id}
 Content-Type: application/json
 Content-length: 497
 

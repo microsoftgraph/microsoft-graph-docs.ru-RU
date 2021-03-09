@@ -1,24 +1,24 @@
 ---
-title: Удаление Итемфоне
-description: Удаление объекта Итемфоне из профиля пользователя.
+title: Удаление itemPhone
+description: Удаление объекта itemPhone из профиля пользователя.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f66130b9c898865926acf728e0dfc79447530d83
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b947a7674f73a4351cdb6742587812acd66d253
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999355"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577417"
 ---
-# <a name="delete-itemphonenumber"></a>Удаление Итемфоненумбер
+# <a name="delete-itemphonenumber"></a>Удаление элементаPhoneNumber
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [итемфоне](../resources/itemphone.md) из [профиля](../resources/profile.md)пользователя.
+Удаление [объекта itemPhone](../resources/itemphone.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "47999355"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,7 +37,7 @@ ms.locfileid: "47999355"
 -->
 ``` http
 DELETE /me/profile/phones/{itemPhoneId}
-DELETE /user/{userId}/profile/phones/{itemPhoneId}
+DELETE /users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,7 +46,7 @@ DELETE /user/{userId}/profile/phones/{itemPhoneId}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -65,7 +65,7 @@ DELETE /user/{userId}/profile/phones/{itemPhoneId}
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ### <a name="response"></a>Отклик

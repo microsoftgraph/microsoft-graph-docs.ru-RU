@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e1bdd7bb0be828320da0a279a3cf6aaab98e69ad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 17f3e342bbeccd23afab63ce8bde4d9fb85f75e7
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972153"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577627"
 ---
 # <a name="list-names"></a>Перечисление имен
 
@@ -24,14 +24,15 @@ ms.locfileid: "48972153"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files. Read, Files. ReadWrite, sites. Read. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Files. Read, Files. ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Files.Read, Files.ReadWrite, Sites.Read.All    |
+|Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite    |
 |Для приложений | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/names
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/names
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/names
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукнамедитем](../resources/workbooknameditem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [workbookNamedItem](../resources/workbooknameditem.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 35fb2b20127678a6815b5eb36fccad3d70d0c5b3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1c9d7eb22a11710b41d64c3284e4fd72789d8e4b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963490"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577361"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -31,9 +31,12 @@ ms.locfileid: "48963490"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/borders
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -43,11 +46,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [workbookRangeBorder.](../resources/workbookrangeborder.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [workbookRangeBorder](../resources/workbookrangeborder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -89,7 +92,7 @@ Content-length: 136
 
 ---
 
-В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [workbookRangeBorder.](../resources/workbookrangeborder.md)
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
