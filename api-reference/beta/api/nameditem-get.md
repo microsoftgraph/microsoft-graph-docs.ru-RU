@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 83746e018d292da5b9f886fbab770af0f35b61d2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 605f3aac4737fc54cd329f3b115df65eb345eb08
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976464"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575779"
 ---
 # <a name="get-nameditem"></a>Получение объекта NamedItem
 
@@ -31,7 +31,8 @@ ms.locfileid: "48976464"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}
+GET /me/drive/items/{id}/workbook/names/{name}
+GET /me/drive/root:/{item-path}:/workbook/names/{name}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +48,7 @@ GET /workbook/names/{name}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукнамедитем](../resources/workbooknameditem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [книгиNamedItem](../resources/workbooknameditem.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

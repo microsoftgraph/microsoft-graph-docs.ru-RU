@@ -1,22 +1,22 @@
 ---
-title: Удаление Персонавард
-description: Удаляет объект Персонавард.
+title: Удаление personAward
+description: Удаляет объект personAward.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ec8358fb1015e2816818b28a887a6e7a8c2f9a48
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83f1c3ee61d20edd25af9b66e40b91b62551efde
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969349"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576031"
 ---
-# <a name="delete-personaward"></a>Удаление Персонавард
+# <a name="delete-personaward"></a>Удаление personAward
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [персонавард](../resources/personaward.md) из [профиля](../resources/profile.md)пользователя.
+Удаляет объект [personAward](../resources/personaward.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "47969349"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ DELETE /users/{id | userPrincipalName}/profile/awards/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,7 +61,7 @@ DELETE /users/{id | userPrincipalName}/profile/awards/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwardId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
