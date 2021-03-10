@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 06e3f6d5c029acdf6b7688c92c8530512a60f5c7
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9d4722f5d8ae484865b8b24f29d0535092b8eda4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460322"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578404"
 ---
 # <a name="get-rangefill"></a>Получение объекта RangeFill
 
@@ -22,16 +22,19 @@ ms.locfileid: "48460322"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/fill
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/fill
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/fill
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +50,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжефилл](../resources/rangefill.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WorkbookRangeFill](../resources/rangefill.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -1,18 +1,18 @@
 ---
-title: Get synchronizationTemplate
+title: Получить синхронизациюTemplate
 description: Извлечение шаблона синхронизации по его идентификатору.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8887896e734a2fd1d81d9a3e9c14e36125e78a9c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6d4663d4b6ed7275c00f61f0e1a93f13f2b1e0bf
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136341"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625939"
 ---
-# <a name="get-synchronizationtemplate"></a>Get synchronizationTemplate
+# <a name="get-synchronizationtemplate"></a>Получить синхронизациюTemplate
 
 Пространство имен: microsoft.graph
 
@@ -25,9 +25,9 @@ ms.locfileid: "50136341"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается.| 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 ### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект синхронизацииTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте ответа.
 
 ### <a name="example"></a>Пример
 

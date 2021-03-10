@@ -1,33 +1,33 @@
 ---
-title: 'synchronizationSchema: функции'
-description: Список всех функций, в настоящее время поддерживаемых в attributeMappingSource.
+title: 'синхронизацияSchema: функции'
+description: Список всех функций, поддерживаемых в атрибутеMappingSource.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 626ab146bf928691d846b4ffab209720be5b8f66
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ff6d231f8f20d96262530230304028368554e41b
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132759"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625967"
 ---
-# <a name="synchronizationschema-functions"></a>synchronizationSchema: функции
+# <a name="synchronizationschema-functions"></a>синхронизацияSchema: функции
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечислить все функции, поддерживаемые в [attributeMappingSource.](../resources/synchronization-attributemappingsource.md)
+Список всех функций, поддерживаемых в [атрибутеMappingSource.](../resources/synchronization-attributemappingsource.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается. | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

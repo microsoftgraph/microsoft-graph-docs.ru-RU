@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 39fd7852ad57b9f618da9d7d8608fb5f09521179
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e78bc8a5bcb897a6418e35c2718c872c65f537e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059889"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578481"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -29,7 +29,8 @@ ms.locfileid: "48059889"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,18 +39,18 @@ POST /workbook/worksheets/{id|name}/charts/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered` , `ColumnStacked` ,,, `ColumnStacked100` `BarClustered` `BarStacked` , `BarStacked100` , `LineStacked` , `LineStacked100` , `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` ,,,,.|
+|type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered` , , , , , , , , `ColumnStacked` `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` .|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
+|seriesBy|string|Необязательно. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/chart.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WorkbookChart](../resources/chart.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

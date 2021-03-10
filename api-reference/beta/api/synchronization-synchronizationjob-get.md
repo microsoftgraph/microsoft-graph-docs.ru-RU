@@ -1,33 +1,33 @@
 ---
-title: Get synchronizationJob
-description: Извлекает существующее задание синхронизации и его свойства.
+title: Получить синхронизациюJob
+description: Извлечение существующего задания синхронизации и его свойств.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b5a676d3509cd0a2511fb64704ef9b72d3aa15ff
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 64d5b801b7529b94cbc6a02bf20315cf4374eff4
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137510"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625985"
 ---
-# <a name="get-synchronizationjob"></a>Get synchronizationJob
+# <a name="get-synchronizationjob"></a>Получить синхронизациюJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлекает существующее задание синхронизации и его свойства.
+Извлечение существующего задания синхронизации и его свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.  |
-|Для приложений                            |Не поддерживается. | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает ответ `200 OK` с помощью [synchronizationJob](../resources/synchronization-synchronizationjob.md) в теле отклика.
+В случае успешного ответа `200 OK` возвращается ответ с [синхронизациейJob](../resources/synchronization-synchronizationjob.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 

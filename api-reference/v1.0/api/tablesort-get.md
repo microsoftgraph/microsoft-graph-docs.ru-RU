@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2892da8b6415f708feb2b1d0b69e97d329998081
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 93460eff1c57633a2c3b684c640ab17923b7e00a
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460896"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578740"
 ---
 # <a name="get-tablesort"></a>Получение объекта TableSort
 
@@ -22,15 +22,17 @@ ms.locfileid: "48460896"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/sort
-GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
+GET /me/drive/items/{id}/workbook/tables/{id|name}/sort
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -46,7 +48,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблесорт](../resources/tablesort.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [WorkbookTableSort](../resources/tablesort.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 36e45692dce064ac34662a0030c921f344777df6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e06a26f8c78add6a815a531ce39b5f5c4b443730
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438360"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625809"
 ---
 # <a name="delete-an-identityprovider-from-a-b2cidentityuserflow"></a>Удаление identityProvider из b2cIdentityUserFlow
 
@@ -40,7 +40,7 @@ ms.locfileid: "50438360"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2cUserFlows/{id}/identityProviders/{id}/$ref
+DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,7 +49,7 @@ DELETE /b2cUserFlows/{id}/identityProviders/{id}/$ref
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

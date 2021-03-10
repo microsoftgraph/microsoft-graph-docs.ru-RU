@@ -1,33 +1,33 @@
 ---
-title: Get synchronizationSchema
-description: Извлекает схему для заданного задания или шаблона синхронизации.
+title: Получить синхронизациюSchema
+description: Извлечение схемы для данного задания синхронизации или шаблона.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9e91c0697c39c031f149477d7dbcac5a35679040
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 84c1dc9112851330be721f425a01228d278d014b
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132715"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625971"
 ---
-# <a name="get-synchronizationschema"></a>Get synchronizationSchema
+# <a name="get-synchronizationschema"></a>Получить синхронизациюSchema
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлекает схему для заданного задания или шаблона синхронизации.
+Извлечение схемы для данного задания синхронизации или шаблона.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Не поддерживается. | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [synchronizationSchema](../resources/synchronization-synchronizationschema.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [синхронизацииSchema](../resources/synchronization-synchronizationschema.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1e55d93db6b47d437ec2c7b062e10bfd93852bf3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e36ef7d95da25b216237f4abb4f5848199f51cd4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059868"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578454"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -30,7 +30,8 @@ ms.locfileid: "48059868"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/itemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/itemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -39,7 +40,7 @@ POST /workbook/worksheets/{id|name}/charts/itemAt
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -48,7 +49,7 @@ POST /workbook/worksheets/{id|name}/charts/itemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/chart.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WorkbookChart](../resources/chart.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

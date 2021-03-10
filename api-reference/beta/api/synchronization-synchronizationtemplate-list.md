@@ -1,16 +1,16 @@
 ---
 title: Список существующих шаблонов синхронизации
-description: Список шаблонов синхронизации, связанных с заданным приложением или основным приложением-службой.
+description: Список шаблонов синхронизации, связанных с заданным приложением или директором службы.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 7a012dd73b61667a020d53a6190114054d1dccd1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 323a870c94ea465ce0cbfa84903090ee944a5ee7
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137272"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625943"
 ---
 # <a name="list-existing-synchronization-templates"></a>Список существующих шаблонов синхронизации
 
@@ -18,16 +18,16 @@ ms.locfileid: "50137272"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список шаблонов синхронизации, связанных с заданным приложением или основным приложением-службой.
+Список шаблонов синхронизации, связанных с заданным приложением или директором службы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается.| 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET applications/{id}/synchronization/templates
 
 ### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `200 OK` [объекты synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и аколлекцию объектов `200 OK` [синхронизацииTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте ответа.
 
 ### <a name="example"></a>Пример
 

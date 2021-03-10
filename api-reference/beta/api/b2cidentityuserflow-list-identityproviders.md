@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: e908159c657016f7b36d1886e3d3b501503b295b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f0d0dbf0cedb1ea267da23301614bd8944da7cdf
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438316"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625802"
 ---
 # <a name="list-all-identityproviders-in-a-b2cidentityuserflow"></a>Список всех identityProviders в b2cIdentityUserFlow
 
@@ -40,7 +40,7 @@ ms.locfileid: "50438316"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /b2cUserFlows/{id}/identityProviders
+GET /identity/b2cUserFlows/{id}/identityProviders
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,7 +49,7 @@ GET /b2cUserFlows/{id}/identityProviders
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

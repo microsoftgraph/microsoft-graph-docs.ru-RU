@@ -1,16 +1,16 @@
 ---
 title: 'synchronizationSchema: filterOperators'
-description: Список всех операторов, поддерживаемых фильтрами области.
+description: Список всех операторов, поддерживаемых в фильтрах scoping.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9d790707aa11642499924dd93f75e2cec3945bb3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0f2274490bba86653e6c1423fa832db265394526
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133835"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625646"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
@@ -18,16 +18,16 @@ ms.locfileid: "50133835"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех операторов, поддерживаемых [фильтрами области.](../resources/synchronization-filter.md)
+Список всех операторов, поддерживаемых в [фильтрах scoping.](../resources/synchronization-filter.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается. | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект коллекции `200, OK` [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200, OK` [коллекции filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

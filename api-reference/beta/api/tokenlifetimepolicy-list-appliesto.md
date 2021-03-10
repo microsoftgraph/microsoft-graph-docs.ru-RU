@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ac3df91789bb0be148ace7b5e26d94f8c34fae75
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cd8afffd9de357767c57b55e007551151d47afa8
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443344"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625370"
 ---
 # <a name="list-appliesto"></a>Список применяетсяTo
 
@@ -48,7 +48,7 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -67,7 +67,7 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/tokenLifetimePolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/{id}/appliesTo
 ```
 
 ### <a name="response"></a>Отклик

@@ -1,22 +1,22 @@
 ---
-title: Получение Воркбуккомментрепли
-description: Получение свойств и связей объекта воркбуккомментрепли.
+title: Get workbookCommentReply
+description: Извлечение свойств и связей объекта workbookcommentreply.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2c6727cd0500b9ece8a84cff5a2b42e64ee5dda7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48a93ff5828a8dcba909acf74fbfca9582d2cf95
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970707"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578719"
 ---
-# <a name="get-workbookcommentreply"></a>Получение Воркбуккомментрепли
+# <a name="get-workbookcommentreply"></a>Get workbookCommentReply
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [воркбуккомментрепли](../resources/workbookcommentreply.md) .
+Извлечение свойств и связей [объекта workbookCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,8 @@ ms.locfileid: "47970707"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /workbook/comments/{id}/replies/{id}
+GET /me/drive/items/{id}/workbook/comments/{id}/replies/{id}
+GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,13 +43,13 @@ GET /workbook/comments/{id}/replies/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [workbookCommentReply](../resources/workbookcommentreply.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
