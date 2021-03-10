@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6eb022a2b45bcc6ebe08cce88088ec6863292e19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82917ab1b2c1fa20b6331182512ef78c847a426a
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057082"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577487"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 
@@ -29,7 +29,8 @@ ms.locfileid: "48057082"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/protect
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,12 +39,12 @@ POST /workbook/worksheets/{id|name}/protection/protect
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|options|воркбукворкшитпротектионоптионс|Необязательные параметры защиты листа.|
+|options|WorkbookWorksheetProtectionOptions|Необязательные параметры защиты листа.|
 
 ## <a name="response"></a>Отклик
 

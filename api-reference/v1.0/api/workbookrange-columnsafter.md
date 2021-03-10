@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b8bc3eac6f73f0395fde20eb4e9dd43f36979a98
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 57edb0762d5e0d6b3b2061c52cee4d3374415345
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883166"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577522"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -31,7 +31,8 @@ ms.locfileid: "49883166"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
 

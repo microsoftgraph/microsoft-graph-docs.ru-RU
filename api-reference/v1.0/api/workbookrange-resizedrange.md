@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9c19dabb01cba3d8277b5d251a9da11ff9bfb160
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31a7cf1b88f54309bb43c1a021673bd29f290dae
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083164"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573588"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 
-Пространство имен: Microsoft. Graph получает объект Range, подобный текущему объекту Range, но с развернутым (или контрактным) углом нижнего угла, на некоторое количество строк и столбцов.
+Пространство имен: microsoft.graph получает объект диапазона, похожий на текущий объект диапазона, но с его нижним правым углом, расширенным (или законтрактованым) рядом строк и столбцов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,8 @@ ms.locfileid: "48083164"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
+POST /me/drive/items/{id}/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
 
@@ -37,7 +38,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|Количество строк, добавляемых в правый нижний угол текущего диапазона. Используйте положительное число, чтобы расширить диапазон, или отрицательное число, чтобы уменьшить его.|
-|deltaColumns|Int32|Количество столбцов, по которым разворачивается нижний правый угол относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.|
+|deltaColumns|Int32|Количество столбцов, с помощью которых можно расширить нижний правый угол по отношению к текущему диапазону. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|

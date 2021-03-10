@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f5761a90cafafc00abb00ec40318a3fac176b5c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a56aec44618ef160853d058263a31a0d335d8442
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051566"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576150"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -30,9 +30,12 @@ ms.locfileid: "48051566"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/usedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/usedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
+GET /me/drive/items/{id}/workbook/names/{name}/range/usedRange
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/usedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/usedRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -84,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",
@@ -106,7 +109,7 @@ Content-length: 169
 }
 ```
 
-Ниже приведен пример, в котором указывается необязательный `valuesOnly` параметр.
+Вот пример, указывающий необязательный `valuesOnly` параметр.
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

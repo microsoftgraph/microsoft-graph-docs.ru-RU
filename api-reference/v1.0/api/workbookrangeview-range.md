@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 980209466060c9b65263fa42b312fc760fa4016e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48cbd8bed3fd2818366c2560a0064d302adb8e0b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059238"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575450"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 
-Пространство имен: Microsoft. Graph возвращает диапазон, связанный с ресурсом rangeView.
+Пространство имен: microsoft.graph Возвращает диапазон, связанный с ресурсом rangeView.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,8 @@ ms.locfileid: "48059238"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/range
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView/range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов

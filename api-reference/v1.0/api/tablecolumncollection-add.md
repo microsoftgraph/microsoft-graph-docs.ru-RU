@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f5def48977bafef35efc23972211e91022e1d97f
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 09312b06c0ba3be49e5f26b1346345017cd05095
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034221"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575898"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -29,14 +29,16 @@ ms.locfileid: "50034221"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/add
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +51,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 |name|string|name
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

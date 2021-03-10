@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c8732a2e9c91f326da3ff29b0b9943d8d560f0ae
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 413beec6c0e03e03040df1ae8fbb6e985935678e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460728"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576709"
 ---
 # <a name="get-tablerow"></a>Получение объекта TableRow
 
@@ -22,15 +22,17 @@ ms.locfileid: "48460728"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/rows/{index}
-GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -46,7 +48,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеров](../resources/tablerow.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [WorkbookTableRow](../resources/tablerow.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

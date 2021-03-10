@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4b8c6bac04e7ca0ae1c280a57f5c49414b0badcf
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 5b8abef9b3ab9843d8de5bf372d1ab7323b76b88
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634969"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578320"
 ---
 # <a name="get-workbookpivottable"></a>Получение workbookPivotTable
 
@@ -31,7 +31,8 @@ ms.locfileid: "48634969"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -42,7 +43,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookPivotTable](../resources/workbookpivottable.md) в теле отклика.

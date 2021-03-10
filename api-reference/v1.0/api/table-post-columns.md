@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7109c072d648f3628f3c84540377d0560f932f63
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 69d0edb9fe9a8b0bc1960d9e94cf92de2e76cdc3
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033976"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577200"
 ---
 # <a name="create-tablecolumn"></a>Создание объекта TableColumn
 
@@ -29,22 +29,24 @@ ms.locfileid: "50033976"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [WorkbookTableColumn](../resources/workbooktablecolumn.md) в JSON.
+В корпусе запроса поставляем представление JSON объекта [WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -85,7 +87,7 @@ Content-length: 81
 
 ---
 
-В теле запроса укажу представление объекта [WorkbookTableColumn](../resources/workbooktablecolumn.md) в JSON.
+В корпусе запроса поставляем представление JSON объекта [WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

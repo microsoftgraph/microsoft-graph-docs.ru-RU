@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b1185fadbc72c31f0c68bed180fbec54e015ae17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03edc3f2b9c35084c0de1c39df5a45bbeaeb3374
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028457"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577256"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 
@@ -29,9 +29,12 @@ ms.locfileid: "48028457"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/autofitColumns
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/autofitColumns
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/autofitColumns
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов

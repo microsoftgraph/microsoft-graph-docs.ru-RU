@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0e20ce96e1004f6b16e34b33f5e6b016da6059f8
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 634861ae08d2ed85593e46fa56f31ce6c5b23b21
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034242"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575506"
 ---
 # <a name="update-tablecolumn"></a>Обновление объекта TableColumn
 
@@ -29,13 +29,15 @@ ms.locfileid: "50034242"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/columns/{id|name}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,7 +49,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -86,7 +88,7 @@ Content-length: 81
 
 ---
 > [!NOTE]
-> Если вы хотите обновить несколько полей  столбца, сделайте значения массивом строк в запросе. Пример: `"values": [["a"], [1], [2], [3]]`.
+> Если необходимо обновить несколько полей столбца, сделайте **значения** строки массива в запросе. Пример: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.

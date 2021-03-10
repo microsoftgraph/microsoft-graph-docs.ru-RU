@@ -1,22 +1,22 @@
 ---
-title: Список Воркбуккомментреплиес
-description: Получение списка объектов воркбуккомментрепли.
+title: Список книгCommentReplies
+description: Извлечение списка объектов workbookcommentreply.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0c1dc01ed5e424297821a985422b9e2ce9855163
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faa089c24e6e332ad6da285400ffa11be2c6b2cd
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970770"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577662"
 ---
-# <a name="list-workbookcommentreplies"></a>Список Воркбуккомментреплиес
+# <a name="list-workbookcommentreplies"></a>Список книгCommentReplies
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [воркбуккомментрепли](../resources/workbookcommentreply.md) .
+Извлечение списка [объектов книгиCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,8 @@ ms.locfileid: "47970770"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /workbook/comments/{id}/replies
+GET /me/drive/items/{id}/workbook/comments/{id}/replies
+GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,13 +43,13 @@ GET /workbook/comments/{id}/replies
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [workbookCommentReply](../resources/workbookcommentreply.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

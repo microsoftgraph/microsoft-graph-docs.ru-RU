@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: eb45ef827102cea2a43435af4d7f5b7925843729
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91efcaf38191b4f975ce27d1219fc3ba7c862b91
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059877"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573910"
 ---
 # <a name="update-chartdatalabels"></a>Обновление объекта chartdatalabels
 
@@ -29,7 +29,8 @@ ms.locfileid: "48059877"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -37,12 +38,12 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None` , `Center` ,,, `InsideEnd` `InsideBase` `OutsideEnd` , `Left` , `Right` ,,, `Top` `Bottom` `BestFit` , `Callout` .|
+|position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None` `Center` , , , , , , `InsideEnd` , `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom` `BestFit` `Callout` .|
 |separator|string|Строка, представляющая разделитель для меток данных на диаграмме.|
 |showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
 |showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
@@ -53,7 +54,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартдаталабелс](../resources/chartdatalabels.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [WorkbookChartDataLabels](../resources/chartdatalabels.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

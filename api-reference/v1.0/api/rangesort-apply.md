@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a20799459003b8a8bf72bfd8eb8651dec15f9233
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23e71091a9758fd3cef821985c7443e07a3945b6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984679"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573903"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -29,9 +29,12 @@ ms.locfileid: "47984679"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/sort/apply
-POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
-POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
+POST /me/drive/items/{id}/workbook/names/{name}/range/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,16 +43,16 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|Коллекция Воркбуксортфиелд|Список условий для сортировки.|
+|fields|Коллекция WorkbookSortField|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
-|orientation|string|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows` , `Columns` .|
-|method|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin` , `StrokeCount` .|
+|orientation|string|Необязательно. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows` , `Columns` .|
+|method|string|Необязательно. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin` , `StrokeCount` .|
 
 ## <a name="response"></a>Отклик
 

@@ -1,26 +1,26 @@
 ---
-title: 'call: transfer'
-description: Переводить активный одноранговой звонок.
+title: 'вызов: передача'
+description: Передача активного одноранговых вызовов.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 17597fd1dc7411da0d828af32feeba05433d5f2d
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2feec9b37375da3b76191ec84869346c07af36f3
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238976"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573770"
 ---
-# <a name="call-transfer"></a>call: transfer
+# <a name="call-transfer"></a>вызов: передача
 
 Пространство имен: microsoft.graph
 
-Переводить активный одноранговой звонок.
+Передача активного одноранговых вызовов.
 
-> **Примечание.** Это поддерживается, только если и переносимый, и целевой объект передачи являются пользователями Microsoft Teams, принадлежащими одному и тем же арендатору. Передача на номер STN поддерживается только для экземпляра приложения. Дополнительные информацию о переносимом, переносимом и целевом объекте см. в [RFC 5589.](https://tools.ietf.org/html/rfc5589#section-2)
+> **Примечание:** Это поддерживается только в том случае, если как передателем, так и целевой целью передачи являются пользователи Microsoft Teams, принадлежащие одному клиенту. Передача на номер PSTN поддерживается только для экземпляра приложения. Дополнительные информацию о целевой цели переноса, переноса и переноса см. в [rFC 5589.](https://tools.ietf.org/html/rfc5589#section-2)
 
-Перенабор при консультации означает, что перед перенабором перед перенабором он может сообщить о перенаборе. Это не касается прямой передачи вызова.
+Консультативная передача означает, что перед передачей перед передачей переносчик может сообщить человеку, на которого он хочет передать вызов. Это противоположно переносу вызова напрямую.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "50238976"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Приложение     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,14 +48,14 @@ POST /communications/calls/{id}/transfer
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
-|clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 chars.|
+|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является объектом переноса.|
+|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
 
 ## <a name="examples"></a>Примеры
-В этих примерах показывается поток входящих вызовов в различных типах уведомлений о передаче.
+В этих примерах покажите поток входящих вызовов в различные типы уведомлений о переносе.
 
 ### <a name="example-1-call-transfer"></a>Пример 1. Передача вызовов
 
@@ -119,7 +119,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Уведомление — передача
+##### <a name="notification---transferring"></a>Уведомление — перенос
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -147,9 +147,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
+##### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
 
-> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
+> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -177,7 +177,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
+##### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -213,7 +213,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -248,7 +248,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-consultative-transfer"></a>Пример 2. Передача консультаций
+### <a name="example-2-consultative-transfer"></a>Пример 2. Перенос консультаций
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -293,7 +293,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Уведомление — передача
+##### <a name="notification---transferring"></a>Уведомление — перенос
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -321,9 +321,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
+##### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
 
-> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
+> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -351,7 +351,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
+##### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -382,7 +382,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -417,30 +417,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-call-transfer-to-pstn-number"></a>Пример 3. Передача вызовов на номер STN
+### <a name="example-3-call-transfer-to-pstn-number"></a>Пример 3. Передача вызовов на номер PSTN
 
-Для этого вызова требуется экземпляр приложения с назначенным номером STN.
-
-#### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
-Используя учетные данные администратора клиента, вызовите следующие cmdlets в удаленной powerShell клиента, чтобы создать экземпляр приложения. Дополнительные сведения см. в командах [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Шаг 2. Назначение лицензий Microsoft 365
-1. Используйте учетные данные администратора клиента для входа и перейдите на вкладку https://admin.microsoft.com/ **"Пользователи > активные пользователи".**
-2. Выберите экземпляр приложения, назначьте план внутренних и международных звонков **Microsoft 365** и телефонную систему **Microsoft 365 —** лицензии виртуальных пользователей и нажмите кнопку **"Сохранить изменения".** Если необходимые лицензии недоступны в клиенте, их можно получить на вкладке "Выставление счета **-> Приобретение служб".**
-#### <a name="step-3-acquire-pstn-number"></a>Шаг 3. Получение номера STN
-1. Используйте учетные данные администратора клиента, чтобы войти в учетную панель и щелкнуть вкладку "Устаревший https://admin.teams.microsoft.com/ **портал"** на левой панели.
-2. На новой странице перейдите на вкладку **голосовых > номеров** телефонов.
-3. Нажмите **+** кнопку, выберите **"Новые номера служб"** и перейдите на страницу **"Добавление новых номеров служб".**
-4. Выберите **"Страна/регион",** **"Область",** **"Город",**"Количество **входных** данных" и нажмите **кнопку "Добавить"** для поиска. Щелкните **"Получить номера".** Недавно полученный номер будет показываться на **вкладке "Номера** телефонов".
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Шаг 4. Назначение номера STN экземпляру приложения
-С помощью учетных данных администратора клиента вызовите следующие cmdlets в удаленной powerShell клиента, чтобы назначить номер STN экземпляру приложения. Дополнительные сведения см. в командах [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -483,7 +462,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Уведомление — передача
+#### <a name="notification---transferring"></a>Уведомление — перенос
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -511,9 +490,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
+#### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
 
-> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
+> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -541,7 +520,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
+#### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -576,7 +555,7 @@ Content-Type: application/json
 ```
 ### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -610,9 +589,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-consultative-transfer-to-pstn-number"></a>Пример 4. Консультационная передача на номер STN
+### <a name="example-4-consultative-transfer-to-pstn-number"></a>Пример 4. Консультативный перевод на номер PSTN
 
-Для этого вызова требуется экземпляр приложения с назначенным номером STN, как описано в примере 3.
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -658,7 +637,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Уведомление — передача
+#### <a name="notification---transferring"></a>Уведомление — перенос
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -686,9 +665,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
+#### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
 
-> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
+> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -716,7 +695,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
+#### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -747,7 +726,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание.** Если перенаправка звонка не удаться, состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls

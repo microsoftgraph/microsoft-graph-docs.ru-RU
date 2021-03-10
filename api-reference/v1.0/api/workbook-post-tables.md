@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c79bb7be3c8a82fb1d489ffc0602b842f2b1b833
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c2289c29e7e8c69e8838955bbc01fdb33de5391
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970812"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575828"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -29,7 +29,8 @@ ms.locfileid: "47970812"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{table-id}/add
+POST /me/drive/items/{id}/workbook/tables/{table-id}/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{table-id}/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,7 +39,7 @@ POST /workbook/tables/{table-id}/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр           | Тип      |Описание|
@@ -48,7 +49,7 @@ POST /workbook/tables/{table-id}/add
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбуктабле](../resources/table.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект WorkbookTable](../resources/table.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

@@ -1,22 +1,22 @@
 ---
 title: 'WorksheetCollection: add'
-description: . Активируйте ().
+description: .activate() на нем.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4eb8b914d44bf9f92fa3951d4e935ba1afa58ed2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: afb5f118ad467c769df2ae59b082e95e2d8a9ce2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041731"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573601"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
 Пространство имен: microsoft.graph
 
-Добавляет новый лист в книгу. Лист будет добавлен после существующих листов. Если вы хотите активировать недавно добавленный лист, вызовите. Activate ().
+Добавляет новый лист в книгу. Лист будет добавлен после существующих листов. Если вы хотите активировать только что добавленный таблицу, позвоните .activate() на нем.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +29,8 @@ ms.locfileid: "48041731"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/
+POST /me/drive/items/{id}/workbook/worksheets/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,7 +39,7 @@ POST /workbook/worksheets/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -47,7 +48,7 @@ POST /workbook/worksheets/
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшит](../resources/worksheet.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект WorkbookWorksheet](../resources/worksheet.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

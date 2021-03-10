@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c98aa15c2e969d760a266842fe03d4a679757dc2
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 96d1ccae95b53bb86a64b5be528f313cc246a9cc
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516551"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575835"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 
@@ -29,8 +29,10 @@ ms.locfileid: "50516551"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/tables/{id|name}/rows/{index}
-DELETE /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+DELETE /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
+DELETE /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6472041ea42345a6b15bc3991b6d18ff2b7a3328
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1a5d7d6effe0539b348b0410edc332c284490f2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973241"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576745"
 ---
 # <a name="update-icon"></a>Обновление значка
 
@@ -29,8 +29,10 @@ ms.locfileid: "47973241"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/sort/fields/icon
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -38,13 +40,13 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Представляет собой индекс значка данного набора.|
-|set|string|Представляет набор, в который входит значок. Возможные значения:,,,,,,,,,,,,,,,,,,, `Invalid` `ThreeArrows` `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` , `FourTrafficLights` , `FiveArrows` , `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles` `FiveBoxes` ,,,,,.|
+|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid` `ThreeArrows` , , `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` , `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles` . `FiveBoxes`|
 
 ## <a name="response"></a>Отклик
 

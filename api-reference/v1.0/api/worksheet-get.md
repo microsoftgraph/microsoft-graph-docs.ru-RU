@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bf571ac8d11b4cb16288bfec2104f61a11f52b7c
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 38f6fefba79fa4be74c4912afe4109830a3e6b0e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635455"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575415"
 ---
 # <a name="get-worksheet"></a>Получение листа
 
@@ -29,7 +29,8 @@ ms.locfileid: "48635455"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -40,12 +41,12 @@ GET /workbook/worksheets/{id|name}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшит](../resources/worksheet.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [WorkbookWorksheet](../resources/worksheet.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

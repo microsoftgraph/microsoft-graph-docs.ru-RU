@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8c43a64c71fbd21276ac56e8ea273fd37cffb676
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43b04b3404cbebdc893919710f0da3b402bfe8ef
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038377"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577942"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -29,9 +29,12 @@ ms.locfileid: "48038377"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/clear
-POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
-POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /me/drive/items/{id}/workbook/names/{name}/range/clear
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,12 +43,12 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|applyTo|string|Необязательный параметр. Определяет тип действия очистки.  Допустимые значения: `All`, `Formats`, `Contents`.|
+|applyTo|string|Необязательно. Определяет тип действия очистки.  Допустимые значения: `All`, `Formats`, `Contents`.|
 
 ## <a name="response"></a>Отклик
 

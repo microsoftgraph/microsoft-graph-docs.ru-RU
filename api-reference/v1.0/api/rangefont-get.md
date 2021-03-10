@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 69c869f027077b83a53ec4c0f7c3ff7be9bcd49b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: fe64e0fa48a0f9e8fd227aba686ea9e43d7aed04
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458523"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577298"
 ---
 # <a name="get-rangefont"></a>Получение объекта RangeFont
 
@@ -22,16 +22,19 @@ ms.locfileid: "48458523"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/font
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/font
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/font
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/font
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -47,7 +50,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжефонт](../resources/rangefont.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [WorkbookRangeFont](../resources/rangefont.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

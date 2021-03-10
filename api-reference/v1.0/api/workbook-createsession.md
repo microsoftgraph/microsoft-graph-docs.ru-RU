@@ -1,22 +1,22 @@
 ---
-title: 'книга: Креатесессион'
-description: Создайте новый сеанс книги.
+title: 'книга: createSession'
+description: Создание нового сеанса книги.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a7b021173b28826642898d96c889a955f8bd182e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f931313e09068892ebbe167ecb85d5577a148f92
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970903"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575058"
 ---
-# <a name="workbook-createsession"></a>книга: Креатесессион
+# <a name="workbook-createsession"></a>книга: createSession
 
 Пространство имен: microsoft.graph
 
-Создайте новый сеанс книги. 
+Создание нового сеанса книги. 
 
 Интерфейсы API Excel можно вызвать в одном из двух режимов. 
 
@@ -27,11 +27,11 @@ ms.locfileid: "47970903"
 
 >**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.  
 
-В некоторых случаях для создания нового сеанса требуется неопределенное время. Microsoft Graph также предоставляет шаблон операций длительного выполнения. Этот шаблон предоставляет способ опроса обновлений состояния создания, не дожидаясь завершения создания. Ниже описаны действия, которые следует выполнить.
+В некоторых случаях для создания нового сеанса требуется определенное время. Microsoft Graph также предоставляет длительный шаблон операций. Этот шаблон позволяет оповещеть об обновлениях состояния создания, не дожидаясь завершения создания. Ниже следующую меру:
 
-1. В `Prefer: respond-async` запрос добавляется заголовок, указывающий на выполнение длительной операции.
-2. В ответе возвращается `Location` заголовок, указывающий URL-адрес для опроса состояния операции создания. Вы можете получить состояние операции, обратившись к указанному URL-адресу. Состояние будет одним из следующих: `notStarted` ,, `running` `succeeded` , или `failed` .
-3. После завершения операции можно запросить состояние повторно, а в ответе будет отображаться либо `succeeded` `failed` .
+1. В `Prefer: respond-async` запрос добавляется загон, чтобы указать, что это долгосрочная операция.
+2. Ответ возвращает `Location` заглавную, чтобы указать URL-адрес для опроса состояния операции создания. Вы можете получить состояние операции, доступ к указанному URL-адресу. Состояние будет одним из следующих: `notStarted` , , , или `running` `succeeded` `failed` .
+3. После завершения операции можно снова запросить состояние, и ответ будет либо показываться, либо `succeeded` `failed` .
 
 ## <a name="error-handling"></a>Обработка ошибок
 
@@ -49,23 +49,24 @@ ms.locfileid: "47970903"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/createSession
+POST /me/drive/items/{id}/workbook/createSession
+POST /me/drive/root:/{item-path}:/workbook/createSession
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [workbookSessionInfo](../resources/workbooksessioninfo.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [workbookSessionInfo.](../resources/workbooksessioninfo.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [workbookSessionInfo](../resources/workbooksessioninfo.md) в тексте отклика. Для длительной операции она возвращает `202 Accepted ` код отклика и `Location` заголовок с пустым текстом в ответе.
+В случае успеха этот метод возвращает код ответа и объект `201 Created` [workbookSessionInfo](../resources/workbooksessioninfo.md) в тексте ответа. Для длительной операции возвращается код ответа и заголовка с `202 Accepted ` `Location` пустым телом в ответе.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-basic-session-creation"></a>Пример 1: создание базового сеанса
+### <a name="example-1-basic-session-creation"></a>Пример 1. Создание базового сеанса
 #### <a name="request"></a>Запрос
 
 
@@ -119,7 +120,7 @@ Content-length: 52
 }
 ```
 
-### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>Пример 2: Создание сеанса с длительным шаблоном операции
+### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>Пример 2. Создание сеанса с длительным шаблоном работы
 
 #### <a name="request"></a>Запрос
 

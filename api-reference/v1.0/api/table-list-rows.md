@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 61d8ce4dae2ec75b6eef74278b2b8d23b1eab193
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4eb0ee794b5e1eff672b2df7c8f514a7d4193e32
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461456"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575576"
 ---
 # <a name="list-rows"></a>Перечисление строк
 
@@ -22,15 +22,17 @@ ms.locfileid: "48461456"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/rows
-GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.  Для получения надежных результатов применяйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter) на странице. Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.
@@ -46,7 +48,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеров](../resources/tablerow.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [WorkbookTableRow](../resources/tablerow.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -99,7 +101,7 @@ Content-length: 82
   ]
 }
 ```
-> **Примечание:** Используйте параметры запроса [$Top](/graph/query-parameters#top) и [$Skip](/graph/query-parameters#skip-parameter) для постраничного выполнения большого количества строк.
+> **Примечание:** Используйте [параметры $top](/graph/query-parameters#top) [и $skip](/graph/query-parameters#skip-parameter) запроса для страницы через большое количество строк.
 
 Пример: 
 

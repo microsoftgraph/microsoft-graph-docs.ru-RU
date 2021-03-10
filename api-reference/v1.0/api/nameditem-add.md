@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4ba770c4a17dc07b56c91a657a182ce501f2c240
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df9279c091fd2c69a95ebfad72dbee0aa472079b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984861"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576227"
 ---
 # <a name="add-named-item"></a>Add Named Item
 
@@ -25,13 +25,15 @@ ms.locfileid: "47984861"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Sites.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All |
+|Приложение | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/add
-POST /workbook/worksheets/{id|name}/names/add
+POST /me/drive/items/{id}/workbook/names/add
+POST /me/drive/root:/{item-path}:/workbook/names/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/names/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,7 +42,7 @@ POST /workbook/worksheets/{id|name}/names/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -51,7 +53,7 @@ POST /workbook/worksheets/{id|name}/names/add
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукнамедитем](../resources/nameditem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект WorkbookNamedItem](../resources/nameditem.md) в тексте ответа.
 
 
 ## <a name="example"></a>Пример

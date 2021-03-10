@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7eacd45f64dc5e6dea3155103b309a6b18ffcae5
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: f93bd8cf72d66e283554b619a635ac0f6e59523d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461463"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575569"
 ---
 # <a name="list-tablecollection"></a>Список TableCollection
 
@@ -22,15 +22,17 @@ ms.locfileid: "48461463"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables
-GET /workbook/worksheets/{id|name}/tables
+GET /me/drive/items/{id}/workbook/tables
+GET /me/drive/root:/{item-path}:/workbook/tables
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -46,7 +48,7 @@ GET /workbook/worksheets/{id|name}/tables
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктабле](../resources/table.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [WorkbookTable](../resources/table.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

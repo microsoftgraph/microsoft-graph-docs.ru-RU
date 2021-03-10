@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2a6fe540d280b7db44f9c3c2488f0ea4ab652175
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 5b6dd45622371277deb40b28763edd0dc2c6275b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516222"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575821"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -487,6 +487,7 @@ ms.locfileid: "50516222"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлена поддержка параметров запросов `$count`, `$search` и `$filter` для улучшения возможностей запросов для следующих действий: <br><ul><li>[Перечисление приложений](/graph/api/application-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление устройств](/graph/api/device-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление групп устройств](/graph/api/device-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление транзитивных групп устройств](/graph/api/device-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление групп](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление участников группы](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление транзитивных участников группы](/graph/api/group-list-transitivemembers?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление объектов orgContact](/graph/api/orgcontact-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление объектов servicePrincipal](/graph/api/serviceprincipal-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление пользователей](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul><br>Добавлены примеры использования OData cast для следующего: <ul><li>[Перечисление group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление участников группы](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Перечисление user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul> |
+| Дополнение | Бета | Добавлен метод [activateServicePlan](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) для ресурса [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
@@ -709,7 +710,7 @@ ms.locfileid: "50516222"
 | Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). Это свойство заменено свойством **includeResourceData**. |
 | Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](change-notifications-delivery.md). |
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -984,7 +985,7 @@ ms.locfileid: "50516222"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлены ресурсы [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection) и [resourceData](/graph/api/resources/resourcedata) для API [change notification](/graph/api/concepts/webhooks). |
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
@@ -1498,7 +1499,7 @@ ms.locfileid: "50516222"
 
 ### <a name="search"></a>Поиск
 
-| Тип изменения | Версия | Description                                                                                                                                               |
+| Тип изменения | Версия | Описание                                                                                                                                               |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Изменение      | Бета    | Ресурс [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) не рекомендуется.                                                  |
 | Изменение      | Бета    | Для ресурса [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) теперь поддерживается обновление свойств **содержимое** и **свойства**.      |
@@ -1700,7 +1701,7 @@ ms.locfileid: "50516222"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 
 Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
 
@@ -3860,7 +3861,7 @@ ms.locfileid: "50516222"
 
 ### <a name="education"></a>Образование
 
-|Тип изменения|Версия|Description|
+|Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Изменение|Бета-версия|Добавлено свойство reportableIdentifier объекта [educationsynchronizationerror](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta&preserve-view=true).|
 |Изменение|Бета-версия|Обновлены варианты ответа для API [uploadUrl](/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta&preserve-view=true).|
@@ -4040,7 +4041,7 @@ ms.locfileid: "50516222"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-|Тип изменения|Версия|Description|
+|Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Изменение|Бета|Добавлены свойства **applicationID** и **creatorUserID** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). |
 |Изменение|Бета|Добавлена операция [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true) для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). |
@@ -4332,13 +4333,13 @@ ms.locfileid: "50516222"
 
 ### <a name="users"></a>Пользователи
 
-| Тип изменения | Версия | Description                              |
+| Тип изменения | Версия | Описание                              |
 |:------------|:--------|:-----------------------------------------|
 | Изменение      | v1.0    | Добавлена возможность фильтрации разностных запросов [пользователей](/graph/api/user-delta?view=graph-rest-1.0&preserve-view=true). |
 
 ### <a name="groups"></a>Группы
 
-| Тип изменения | Версия | Description                              |
+| Тип изменения | Версия | Описание                              |
 |:------------|:--------|:-----------------------------------------|
 | Изменение      | v1.0    | Добавлена возможность фильтрации разностных запросов [групп](/graph/api/group-delta?view=graph-rest-1.0&preserve-view=true). |
 
@@ -4488,12 +4489,12 @@ ms.locfileid: "50516222"
 
 ### <a name="mail"></a>Почта
 
-| Тип изменения | Версия | Description                              |
+| Тип изменения | Версия | Описание                              |
 | :---------- | :------ | :--------------------------------------- |
 | Изменение          | 1.0 и бета-версия | Это улучшение поведения связано с получением общей почтовой папки или содержимого сообщений в ней, если кто-то предоставил вошедшему пользователю доступ к почтовой папке или делегировал ему почтовый ящик пользователя. В таких случаях приложение может указать ИД пользователя или имя участника-пользователя, чтобы [получить эту общую почтовую папку](/graph/api/mailfolder-get?view=graph-rest-1.0&preserve-view=true) или [получить сообщения из этого общего календаря](/graph/api/user-list-messages?view=graph-rest-1.0&preserve-view=true), при условии что вошедший пользователь предоставил приложению делегированные разрешения. |
 
 ### <a name="reports"></a>Отчеты
-| Тип изменения | Версия | Description                              |
+| Тип изменения | Версия | Описание                              |
 | :---------- | :------ | :--------------------------------------- |
 | Изменение      | Бета-версия    | Добавлены API [getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta&preserve-view=true), [getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta&preserve-view=true) и [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta&preserve-view=true). Они заменили API EmailActivity. |
 | Изменение      | Бета-версия    | Добавлены API [getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta&preserve-view=true), [getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta&preserve-view=true), [getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta&preserve-view=true) и [getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta&preserve-view=true). Они заменили API EmailAppUsage. |

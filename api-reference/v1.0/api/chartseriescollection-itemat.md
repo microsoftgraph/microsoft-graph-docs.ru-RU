@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5747b32506eda019904098c42fc36064089f8bb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf95f7457489a3ca502c1de5c3641a261d8c6c4d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089205"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574953"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -30,7 +30,8 @@ ms.locfileid: "48089205"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/series/itemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/itemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series/itemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,7 +49,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/itemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартсериес](../resources/chartseries.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и `200 OK` [объект WorkbookChartSeries](../resources/chartseries.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

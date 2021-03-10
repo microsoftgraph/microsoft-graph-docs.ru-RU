@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: be97858b4a4a26e1c820e04819a638387c5b3a1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f04796749ee69c30cb02c213be85c26d0da3fdef
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978694"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577291"
 ---
 # <a name="update-rangefont"></a>Обновление объекта rangefont
 
@@ -29,9 +29,12 @@ ms.locfileid: "47978694"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/font
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -39,7 +42,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -53,7 +56,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукранжефонт](../resources/rangefont.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [WorkbookRangeFont](../resources/rangefont.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

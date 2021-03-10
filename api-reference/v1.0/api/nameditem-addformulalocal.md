@@ -5,16 +5,16 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8cc4909b88274213f9f69c537fa4cdaa011abd91
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a27a3378c8de08a4a70de01ad83ea25d09c25339
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984882"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577578"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
-Пространство имен: Microsoft. Graph добавляет новое имя в коллекцию заданной области, используя языковой стандарт пользователя для формулы.
+Пространство имен: microsoft.graph добавляет новое имя в коллекцию данной области с помощью локалиа пользователя для формулы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,13 +23,15 @@ ms.locfileid: "47984882"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Sites.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All |
+|Приложение | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/add
-POST /workbook/worksheets/{id|name}/names/add
+POST /me/drive/items/{id}/workbook/names/add
+POST /me/drive/root:/{item-path}:/workbook/names/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/names/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,7 +40,7 @@ POST /workbook/worksheets/{id|name}/names/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -49,7 +51,7 @@ POST /workbook/worksheets/{id|name}/names/add
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукнамедитем](../resources/nameditem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект WorkbookNamedItem](../resources/nameditem.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

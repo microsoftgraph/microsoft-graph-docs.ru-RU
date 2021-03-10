@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fcc975891dca549f52cc8611107ef94655e6032
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 804ce9a4caa19d427e47599a7be0a8f49b6fba5f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094549"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575051"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -29,7 +29,8 @@ ms.locfileid: "48094549"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -81,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,7 +103,7 @@ Content-length: 169
 }
 ```
 
-Если необязательный `address` параметр не указан, эта функция возвращает весь диапазон листа.
+Если необязательный параметр не указан, эта функция возвращает весь диапазон `address` таблиц.
 
 ##### <a name="request"></a>Запрос
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ad5da2b0e9e126983e66540b64eca09ea21977a8
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 195322de4d387ee78342993f5c7e6bafb9c5a002
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459300"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574946"
 ---
 # <a name="get-charttitle"></a>Получение объекта ChartTitle
 
@@ -22,14 +22,15 @@ ms.locfileid: "48459300"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/title
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/title
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -45,7 +46,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/title
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарттитле](../resources/charttitle.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [WorkbookChartTitle](../resources/charttitle.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

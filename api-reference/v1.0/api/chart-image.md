@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bcda7c036c7f0f7fc37214af2d340fe0ed888e48
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9a3eb3c23e7222a083eb6e34f5e08be44424250
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013428"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575702"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -29,10 +29,14 @@ ms.locfileid: "48013428"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/image
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -45,9 +49,9 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|Int32|Нужная высота создаваемого изображения. Необязательный параметр.|
-|width|Int32|Нужная ширина создаваемого изображения. Необязательный параметр.|
-|fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных размеров (если заданы и высота, и ширина). "  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
+|height|Int32|Нужная высота создаваемого изображения. Необязательное.|
+|width|Int32|Нужная ширина создаваемого изображения. Необязательное.|
+|fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных размеров (если заданы как высота, так и ширина)."  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +69,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true

@@ -1,22 +1,22 @@
 ---
-title: Создание Воркбуккомментрепли
-description: Используйте этот API для создания нового Воркбуккомментрепли.
+title: Создание книгиCommentReply
+description: Используйте этот API для создания новой книгиCommentReply.
 localization_priority: Normal
 author: grangeryy
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 80054510b1bb64ab0bb069ce7b0d5b85512f9ca6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b6a17c5dd650691114e6f6dfba43e70c5ed557c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970768"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573645"
 ---
-# <a name="create-workbookcommentreply"></a>Создание Воркбуккомментрепли
+# <a name="create-workbookcommentreply"></a>Создание книгиCommentReply
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [воркбуккомментрепли](../resources/workbookcommentreply.md) .
+Создайте новый [объект книгиCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,8 @@ ms.locfileid: "47970768"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /workbook/comments/{id}/replies
+POST /me/drive/items/{id}/workbook/comments/{id}/replies
+POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,13 +43,13 @@ POST /workbook/comments/{id}/replies
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [воркбуккомментрепли](../resources/workbookcommentreply.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [книгиCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

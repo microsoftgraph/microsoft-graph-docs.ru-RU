@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cccaa780902a914187e360a856e9fe29faab170e
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 714743d68d31439afaa8aa648dfdf0f305f758ae
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882809"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575504"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -31,7 +31,8 @@ ms.locfileid: "49882809"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
@@ -88,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/rang
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",
@@ -110,7 +111,7 @@ Content-length: 157
 }
 ```
 
-Если этот параметр не `count` задан, эта функция по умолчанию является одной строкой.
+Если она вызвана без `count` параметра, эта функция по умолчанию передается в одну строку.
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

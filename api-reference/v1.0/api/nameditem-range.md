@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8dcedaca340f87eae9ecd9dac0a242046bb6dbbf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d2515f3ff07bc81bf782a5197ceda87df9feb85b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971064"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577305"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
@@ -29,7 +29,8 @@ ms.locfileid: "47971064"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range
+GET /me/drive/items/{id}/workbook/names/{name}/range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов

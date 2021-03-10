@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 009fe91b669f626eca4be556b27ac3b814c537a8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2afb32bfabdcf703e5c85867946ec196a290e0cd
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059749"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578026"
 ---
 # <a name="update-chartlegend"></a>Обновление объекта chartlegend
 
@@ -29,7 +29,8 @@ ms.locfileid: "48059749"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -37,7 +38,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -48,7 +49,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартлеженд](../resources/chartlegend.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [WorkbookChartLegend](../resources/chartlegend.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

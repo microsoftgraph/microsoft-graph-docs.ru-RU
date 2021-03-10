@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4dbacfe9df2bfe0bad66091bf9f44c2536e8b178
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbbeb36dbd78538e1a23a3d007f355205450a90e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037957"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577648"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
@@ -32,7 +32,8 @@ ms.locfileid: "48037957"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|

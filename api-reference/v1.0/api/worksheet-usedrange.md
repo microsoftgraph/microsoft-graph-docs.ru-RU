@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 49a29f78963758ffad5ffe5bd7236429b52a0d37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43bc6bc3646dadde3b8438977daa5f1b41682582
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988673"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575870"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -30,12 +30,13 @@ ms.locfileid: "47988673"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/usedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/usedRange
 
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
-В URL-адресе запроса можно указать необязательные параметры.
+В URL-адресе запроса могут быть указаны необязательные параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/usedRange
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -89,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",
@@ -107,7 +108,7 @@ Content-length: 169
 }
 ```
 
-Кроме того, эта функция может вызываться с необязательным `valuesOnly` параметром.
+Кроме того, эту функцию можно назвать с необязательным `valuesOnly` параметром.
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

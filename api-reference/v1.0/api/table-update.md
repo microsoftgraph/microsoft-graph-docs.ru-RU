@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fcf2132c0c34899deebb6a04ae605d7c18a8b0e8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2ad466de2ded72969ddfc2645ef17101d3947f78
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443911"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577158"
 ---
 # <a name="update-table"></a>Обновление таблицы
 
@@ -29,8 +29,10 @@ ms.locfileid: "50443911"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|

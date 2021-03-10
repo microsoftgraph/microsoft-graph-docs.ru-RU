@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 5ec408c33a318126057b42d2ecc1116d6b13b4ee
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 8db8facb302863ec96107c333b8e17f59f2b27a4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518113"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573861"
 ---
 # <a name="create-allowedgroup-for-printershare"></a>Создание allowedGroup для принтераShare
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "50518113"
 Предоставление указанной группе доступа для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
@@ -37,7 +37,7 @@ ms.locfileid: "50518113"
 }
 -->
 ``` http
-POST /print/printers/{printerShareId}/allowedGroups/$ref
+POST /print/printers/{printerId}/shares/{printerShareId}/allowedGroups/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

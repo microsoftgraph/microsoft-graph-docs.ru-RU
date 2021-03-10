@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 01300e76d1400cf054efbdb8b4af266d8a3e45bf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4088ac84bc8960b2877278c8f64f667bd7dd7998
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432838"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577613"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -81,6 +81,7 @@ ms.locfileid: "50432838"
 |accountEnabled|Boolean| Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.|
 | addIns | Коллекция [addIn](addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
 |alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](https://aka.ms/azuremanagedidentity).|
+|appDescription|Строка|Описание, предоставляемое связанным приложением.|
 |appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
 |appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
 |applicationTemplateId|Строка|Уникальный идентификатор шаблона applicationTemplate, из которого создан объект servicePrincipal. Только для чтения.|
@@ -88,6 +89,7 @@ ms.locfileid: "50432838"
 |appRoleAssignmentRequired|Boolean|Указывает, нужно ли предоставлять назначение роли пользователям или другим субъектам-службам для этого субъекта-службы, прежде чем пользователи смогут выполнять вход, а приложения — получать маркеры. Значение по умолчанию — **false**. Значение null не допускается. |
 |appRoles|Коллекция [appRole](approle.md)|Роли, предоставляемые приложением, которое представляет этот субъект-служба. Дополнительные сведения см. в определении свойства **appRoles** для объекта [application](application.md). Значение null не допускается. |
 | deletedDateTime | DateTimeOffset | Дата и время удаления субъекта-службы. Только для чтения. |
+|description| String | Поле с произвольным текстом для предоставления внутренним пользователям описания субъекта-службы. На порталах конечных пользователей, например [MyApps](/azure/active-directory/user-help/my-apps-portal-end-user-access), в этом поле будет отображаться описание приложения. Максимальная длина — 1024 символа.|
 |displayName|String|Отображаемое имя для субъекта-службы.|
 |homepage|String|Главная или начальная страница приложения.|
 |id|String|Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
@@ -95,6 +97,7 @@ ms.locfileid: "50432838"
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение null не допускается.            |
 |loginUrl|String|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|
+|notes|String|Поле с произвольным текстом для записи сведений о субъекте-службе, обычно применяемых в рабочих целях. Максимальная длина — 1024 символа.|
 |oauth2PermissionScopes|Коллекция [permissionScope](permissionScope.md)|Делегированные разрешения, предоставляемые приложением. Дополнительные сведения см. в описании свойства **oauth2PermissionScopes** в свойстве **api** объекта [application](application.md). Значение null не допускается.|
 |notificationEmailAddresses|Коллекция строк|Указывает список адресов электронной почты, по которым Azure AD отправляет уведомление, когда приближается срок окончания действия активного сертификата. Используется только для сертификатов, с помощью которых подписан маркер SAML, выпущенный для приложений коллекции Azure AD.|
 |preferredSingleSignOnMode|Строка|Указывает режим единого входа, настроенный для этого приложения. Azure AD использует предпочитаемый режим единого входа для запуска этого приложения из Microsoft 365 или из раздела "Мои приложения" Azure AD. Поддерживаемые значения: `password`, `saml`, `notSupported` и `oidc`.|
@@ -157,6 +160,7 @@ ms.locfileid: "50432838"
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logoutUrl": "string",
+  "notes": "string",
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "replyUrls": ["string"],

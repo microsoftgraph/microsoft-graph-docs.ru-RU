@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 04a385e994d48705583e93f755a699d6a426008e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c5b9b48fd552cb8399b4cf04f293db61bbc62678
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012875"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577676"
 ---
 # <a name="update-tablerow"></a>Обновление объекта tableRow
 
@@ -29,8 +29,10 @@ ms.locfileid: "48012875"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/rows/{index}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -38,7 +40,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -47,7 +49,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбуктаблеров](../resources/tablerow.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [WorkbookTableRow](../resources/tablerow.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

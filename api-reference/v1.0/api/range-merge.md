@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 58a5f86abc58cc47fcdd899edb92cda6297a4762
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ac0ea9456175c929fb1194345536180ee12dd07
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051622"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573665"
 ---
 # <a name="range-merge"></a>Range: merge
 
@@ -29,9 +29,12 @@ ms.locfileid: "48051622"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/merge
-POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
-POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
+POST /me/drive/items/{id}/workbook/names/{name}/range/merge
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/merge
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/merge
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/merge
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/merge
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,7 +43,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

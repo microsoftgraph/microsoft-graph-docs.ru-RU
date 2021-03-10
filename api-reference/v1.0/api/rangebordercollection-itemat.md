@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0e08bde28f5044c733d0ec4f0c0d6cd05fbd524d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7329cccd9438153ab73ba5c271cdaf288c71f2e8
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045686"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576094"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -30,9 +30,12 @@ ms.locfileid: "48045686"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/borders/itemAt
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/itemAt
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders/itemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/itemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/itemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -50,7 +53,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [WorkbookRangeBorder](../resources/rangeborder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

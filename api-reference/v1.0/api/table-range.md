@@ -1,22 +1,22 @@
 ---
-title: 'Воркбуктабле: Range'
+title: 'workbookTable: диапазон'
 description: Получает объект диапазона, связанный со всей таблицей.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 086ec5dc0ded09aed75ece8285e69d7ba73be806
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23112ea6e9bd594dc12db2b4e68faf5826587460
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092050"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575090"
 ---
-# <a name="workbooktable-range"></a>Воркбуктабле: Range
+# <a name="workbooktable-range"></a>workbookTable: диапазон
 
 Пространство имен: microsoft.graph
 
-Получение объекта Range, связанного со всей таблицей.
+Получите объект диапазона, связанный со всей таблицей.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -30,8 +30,10 @@ ms.locfileid: "48092050"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,7 +46,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [workbookRange](../resources/range.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [workbookRange](../resources/range.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

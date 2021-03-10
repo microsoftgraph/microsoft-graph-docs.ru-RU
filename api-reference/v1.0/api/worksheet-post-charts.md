@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 62aaeb698aadc8a16f266e70aa96027ca953debe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f5715ca356b50be73f85d7100c3a3c9357a8242
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967655"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578313"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -29,7 +29,8 @@ ms.locfileid: "47967655"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -39,11 +40,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [воркбукчарт](../resources/chart.md) в формате JSON.
+В теле запроса поставляем JSON-представление объекта [WorkbookChart.](../resources/chart.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбукчарт](../resources/chart.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект WorkbookChart](../resources/chart.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -83,7 +84,7 @@ Content-length: 52
 
 ---
 
-В тексте запроса добавьте представление объекта [воркбукчарт](../resources/chart.md) в формате JSON.
+В теле запроса поставляем JSON-представление объекта [WorkbookChart.](../resources/chart.md)
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

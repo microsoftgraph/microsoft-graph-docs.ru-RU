@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 54c6b9bd1f6394ca48d86a27d211d0f96b96b730
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dfaf7209037bdbb61e2e487200be9c96b791fa92
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988660"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575856"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -29,7 +29,8 @@ ms.locfileid: "47988660"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/unprotect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unprotect
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

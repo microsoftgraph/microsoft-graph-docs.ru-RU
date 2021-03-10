@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 71e46ef8ec6fde1a1586516b885bdb146bc203ea
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 749d6115936875482728777e9df7c801262eef01
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292555"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575065"
 ---
 # <a name="close-session"></a>Close Session
 
@@ -30,7 +30,8 @@ ms.locfileid: "50292555"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -87,7 +88,7 @@ Content-length: 0
 Обратите внимание, что заголовок workbook-session-id является обязательным.
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {
