@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: db86b22f61b7293683a775460cb3678af7ca4f5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c20fd79c9539ed2502960a63cb5b1de154c9693a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985810"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721476"
 ---
 # <a name="schedulinggroup-resource-type"></a>Тип ресурса schedulingGroup
 
@@ -37,8 +37,8 @@ ms.locfileid: "47985810"
 | displayName   | `string`      | Отображаемое имя объекта `schedulingGroup`. Обязательный. |
 | isActive          |`bool`      | Указывает, можно ли использовать объект `schedulingGroup` при создании новых сущностей или обновлении существующих. Обязательный. |
 | userIds       | `collection(string)`    |  Список идентификаторов пользователей, являющихся участниками группы `schedulingGroup`. Обязательный. |
-| createdDateTime       |`DateTimeOffset`        |Метка времени создания объекта `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
-| lastModifiedDateTime      |`DateTimeOffset`        |Метка времени последнего обновления объекта `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| createdDateTime       |`DateTimeOffset`        |Метка времени создания объекта `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`        |Метка времени последнего обновления объекта `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md) |Учетная запись, которая последней обновила этот объект `schedulingGroup`.|
 
 ## <a name="json-representation"></a>Представление в формате JSON

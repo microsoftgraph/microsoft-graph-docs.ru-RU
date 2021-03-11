@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса educationRubricOutcome
-description: EducationOutcome, который предоставляет оградимую рубрику
+title: тип ресурса educationRubricOutcome
+description: EducationOutcome, в который содержится разрисовка рубрики
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c8132159fa70c175a46a43a13ebce981299f2431
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 10863f6ce1271f132ad23fb3e0c62a625e012058
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161917"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721028"
 ---
-# <a name="educationrubricoutcome-resource-type"></a>Тип ресурса educationRubricOutcome
+# <a name="educationrubricoutcome-resource-type"></a>тип ресурса educationRubricOutcome
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationOutcome,](educationoutcome.md) который предоставляет оградимую рубрику.
+[EducationOutcome,](educationoutcome.md) который содержит градуарную рубрику.
 
 ## <a name="methods"></a>Методы
 
@@ -30,12 +30,12 @@ ms.locfileid: "50161917"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменял ресурс.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|publishedRubricQualityFeedback|[Коллекция rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Копия свойства rubricQualityFeedback, которая происходит, когда учащемуся отпущен класс.|
-|publishedRubricQualitySelectedLevels|[Коллекция rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|Копия свойства rubricQualitySelectedLevels, которая сделана, когда учащемуся был освобожден класс.|
-|rubricQualityFeedback|[Коллекция rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Коллекция определенных отзывов для каждого качества этой рубрики.|
-|rubricQualitySelectedLevels|[Коллекция rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|Уровень, выбранный преподавателем для каждого качества при классификации этого задания.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменит ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) collection|Копия свойства rubricQualityFeedback, которое будет сделано после выпуска класса для учащегося.|
+|publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) collection|Копия свойства rubricQualitySelectedLevels, выполненного при отсвойке класса учащемуся.|
+|rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) collection|Коллекция конкретных отзывов для каждого качества этой рубрики.|
+|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) collection|Уровень, выбранный преподавателем для каждого качества при классификации этого назначения.|
 
 ## <a name="relationships"></a>Связи
 

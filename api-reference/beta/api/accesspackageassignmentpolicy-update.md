@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6e0c691ce754d0c024dd4a639823f91a7e168035
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5a32ed205a10035e234a540f0048867e3bee4fa4
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439697"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719234"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "50439697"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | EntitlementManagement.ReadWrite.All |
+|Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |description|String|Описание политики.|
 |canExtend|Boolean|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
-|expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Кто может запросить этот пакет доступа из этой политики.|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Кто должен утверждать запросы на пакет доступа в этой политике.|
 |accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Кто должен и как часто выполнять назначения пакету доступа из этой политики. Это свойство является null, если отзывы не требуются.|

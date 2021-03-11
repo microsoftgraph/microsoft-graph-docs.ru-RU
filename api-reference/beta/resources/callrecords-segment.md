@@ -1,40 +1,40 @@
 ---
-title: тип ресурса segment
+title: тип ресурсов сегмента
 description: Тип сегмента
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ef965bcfb10eeafd0a2c4f58351aa74650abcd05
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 5cb95c665ed3967aeb9b18fcefd262ad52490306
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159642"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720230"
 ---
-# <a name="segment-resource-type"></a>тип ресурса segment
+# <a name="segment-resource-type"></a>тип ресурсов сегмента
 
 Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет часть User-User или User-Meeting связи в случае конференц-связи. Типичный вызов VOIP будет иметь один сегмент на сеанс. В некоторых сценариях, таких как вызовы STN, в сеансе будет несколько сегментов, так как для подключения вызова требуется дополнительная связь "сервер-сервер".
+Представляет часть User-User или User-Meeting связи в случае конференц-звонка. Типичный вызов VOIP будет иметь один сегмент в сеансе. В некоторых сценариях, таких как вызовы PSTN, в сеансе будет несколько сегментов из-за дополнительной связи между сервером и сервером, необходимой для подключения вызова.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
-Методы прямого доступа к сегментам не существуют. Используйте API [Get callRecord](../api/callrecords-callrecord-get.md) с API или API сеанса списка, чтобы получить сегменты `$expand=sessions($expand=segments)` для [](../api/callrecords-session-list.md) `$expand=segments` [callRecord](callrecords-callrecord.md).
+Нет методов непосредственного доступа к сегментам. Чтобы получить сегменты [для callRecord,](../api/callrecords-callrecord-get.md) используйте api Get `$expand=sessions($expand=segments)` [](../api/callrecords-session-list.md) `$expand=segments` [callRecord](callrecords-callrecord.md)с api или API сеанса List.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Уникальный идентификатор сегмента. Только для чтения.|
+|id|String|Уникальный идентификатор для сегмента. Только для чтения.|
 |вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала этот сегмент.|
-|вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, ответив на этот сегмент.|
+|вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на этот сегмент.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Сведения о сбое, связанные с сегментом в случае сбоя.|
-|media|[Коллекция microsoft.graph.callRecords.media](callrecords-media.md)|Носители, связанные с этим сегментом.|
-|startDateTime|DateTimeOffset|Время начала сегмента в UTC. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|endDateTime|DateTimeOffset|Время окончания сегмента в UTC. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|мультимедиа|[коллекция microsoft.graph.callRecords.media](callrecords-media.md)|Носители, связанные с этим сегментом.|
+|startDateTime|DateTimeOffset|Время UTC, когда начался сегмент. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Время UTC после окончания сегмента. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="relationships"></a>Связи
 

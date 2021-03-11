@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b3090c352c009eb071a148fbbd8203752e56aab7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 97b698a2a74925451228dec6c11b167551ec4420
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438241"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719971"
 ---
 # <a name="list-recoverykeys"></a>Список recoveryKeys
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "50438241"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLocker.ReadBasic.All, BitLocker.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 >**Примечание.** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен был назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был отыскирован ключ восстановления BitLocker: 
 * Глобальный администратор
@@ -47,7 +47,7 @@ ms.locfileid: "50438241"
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys
+GET /informationProtection/bitlocker/recoveryKeys
 ```
 
 Чтобы получить список ключей BitLocker в клиенте, фильтруемом по **id устройства:**
@@ -57,11 +57,11 @@ GET /bitlocker/recoveryKeys
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
+GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр запроса OData для фильтрации результатов с помощью id устройства, на который был недавно отсвеят `$filter` ключ.  Подробные сведения [см. в примере 2](#example-2). Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр запроса OData для фильтрации результатов с помощью id устройства, на который был недавно отсвеят `$filter` ключ.  Этот метод не поддерживает `$top` фильтр. Подробные сведения [см. в примере 2](#example-2). Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 В ответе также может содержаться страница, которую можно использовать для страницы `odata.nextLink` с помощью набора результатов. Подробные сведения см. в [материале Paging Microsoft Graph data](/graph/paging).
 
@@ -69,10 +69,10 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательный.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательный атрибут.|
 |ocp-client-version|Версия клиентского приложения с вызовом API. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -94,7 +94,7 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 0ecb9752fa11650615dd81a7f1a2ddd9bd80272a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7d7842b89bce06d582aa827b853e4170b0693ff8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444025"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721609"
 ---
 # <a name="privilegedapproval-resource-type"></a>тип ресурса privilegedApproval
 
@@ -35,14 +35,14 @@ ms.locfileid: "50444025"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalState|Строка| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|String||
 |approverReason|String||
-|endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
 |requestorReason|String||
 |roleId|String||
-|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |userId|String||
 
 ## <a name="relationships"></a>Связи

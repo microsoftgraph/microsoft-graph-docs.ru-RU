@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса educationRubric
-description: Рубрика ограды, которую можно прикрепить к назначению
+title: тип ресурса educationRubric
+description: Рубрика классификации, которую можно прикрепить к назначению
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 37e1d4a6267f1f1292a72cc7f34b8135483091ec
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2e5c9713de4da614c8bfb0f6332930edb8ad775b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161938"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721584"
 ---
-# <a name="educationrubric-resource-type"></a>Тип ресурса educationRubric
+# <a name="educationrubric-resource-type"></a>тип ресурса educationRubric
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Рубрика ограды, которую можно прикрепить к назначению. Рубрика связана с **educationUser** (преподавателем) и прикреплена к одному или более **ресурсам educationAssignment.** 
+Рубрика классификации, которую можно прикрепить к назначению. Рубрика связана с **educationUser** (учителем) и присоединена к одному или более ресурсам **educationAssignment.** 
 
-Дополнительные [сведения см. в обзоре рубрики для](/graph/education-rubric-overview) образования.
+Дополнительные [сведения см. в рубрике Образование.](/graph/education-rubric-overview)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание educationRubric](../api/educationuser-post-rubrics.md) | [educationRubric](educationrubric.md) | Создание объекта educationRubric. |
+| [Создание educationRubric](../api/educationuser-post-rubrics.md) | [educationRubric](educationrubric.md) | Создайте новый объект educationRubric. |
 | [Get educationRubric](../api/educationrubric-get.md) | [educationRubric](educationrubric.md) | Чтение свойств и связей объекта educationRubric. |
 | [Обновление educationRubric](../api/educationrubric-update.md) | [educationRubric](educationrubric.md) | Обновление объекта educationRubric. |
 | [Удаление educationRubric](../api/educationrubric-delete.md) | Нет | Удаление объекта educationRubric. |
@@ -36,14 +36,14 @@ ms.locfileid: "50161938"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdBy|[identitySet](identityset.md)|Пользователь, создавший этот ресурс.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|(описание)|[itemBody](itembody.md)|Описание этой рубрики.|
-|displayName|String|Имя этой рубрики.|
-|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Тип классификации этой рубрики — null для рубрики без пунктов или [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) для рубрики точек.|
-|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменял ресурс.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|levels|[Коллекция rubricLevel](rubriclevel.md)|Коллекция уровней, которые составляет эта рубрика.|
-|qualities|[Коллекция rubricQuality](rubricquality.md)|Коллекция качеств, из которых состоит эта рубрика.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|description|[itemBody](itembody.md)|Описание этой рубрики.|
+|displayName|String|Название этой рубрики.|
+|классификация|[educationAssignmentGradeType](educationassignmentgradetype.md)|Тип классификации этой рубрики — null для неочковой рубрики или [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) для рубрики точек.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменит ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|уровни|[коллекция rubricLevel](rubriclevel.md)|Коллекция уровней, в которые состоит эта рубрика.|
+|качества|[rubricQuality](rubricquality.md) collection|Коллекция качеств, из которых состоит эта рубрика.|
 
 ## <a name="relationships"></a>Связи
 

@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса keyCredential
-description: Содержит учетные данные ключа, связанные с приложением или основным компонентом-службой. Свойство **keyCredentials** объектов application и servicePrincipal — это коллекция **объектов keyCredential.**
+title: тип ресурса keyCredential
+description: Содержит ключевые учетные данные, связанные с приложением или директором службы. Свойство **keyCredentials** сущностями приложения и servicePrincipal — это коллекция **keyCredential**.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 7ba1bfbf5a3769163a2e9c839b568f22f33f9ac8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cc6d66a4361f760b702844991e6fdc3f590c4007
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135438"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721490"
 ---
-# <a name="keycredential-resource-type"></a>Тип ресурса keyCredential
+# <a name="keycredential-resource-type"></a>тип ресурса keyCredential
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит учетные данные ключа, связанные с приложением или основным компонентом-службой. Свойство **keyCredentials** объектов [application](application.md) и [servicePrincipal](serviceprincipal.md) — это коллекция **объектов keyCredential.**
+Содержит ключевые учетные данные, связанные с приложением или директором службы. Свойство **keyCredentials** сущностями приложения и [servicePrincipal](serviceprincipal.md) — это коллекция **keyCredential**. [](application.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|Binary| Идентификатор пользовательского ключа |
-| displayName | Строка | Имя ключа. Необязательный параметр. |
-|endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|customKeyIdentifier|Binary| Настраиваемый идентификатор ключа |
+| displayName | String | Удобное имя для ключа. Необязательное. |
+|endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |keyId|Guid|Уникальный идентификатор (GUID) для ключа.|
-|startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|type|Строка|Тип учетных данных ключа; например, "Symmetric".|
-|usage|Строка|Строка, описывая назначение, для которого можно использовать ключ; например, "Verify".|
-|key|Двоичный| Значение для учетных данных ключа. Должно быть значением в коде base 64. |
+|startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|type|String|Тип учетных данных ключей; например, "Симметричный".|
+|использование|String|Строка, описываемая цель, для которой можно использовать ключ; например, "Проверка".|
+|key|Двоичный| Значение для учетных данных ключа. Должно быть базовым значением 64. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
 description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8c0c56f83a2a420a88590f36ab4de5f3942e334b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 620d4688cb803e6ed3af1304561c1bd76d23c679
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976617"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720370"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -30,7 +30,7 @@ ms.locfileid: "48976617"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, User.ReadWrite.All и GroupMember.Read.All, User.ReadWrite.All и Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                     |
-| Приложение                            | User. Read. ALL и Граупмембер. Read. ALL, User. Read. ALL и Group. Read. ALL, User. ReadWrite. ALL и Граупмембер. Read. ALL, User. ReadWrite. ALL и Group. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, User.ReadWrite.All и GroupMember.Read.All, User.ReadWrite.All и Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json          |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

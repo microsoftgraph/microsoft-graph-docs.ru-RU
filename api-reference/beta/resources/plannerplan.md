@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f5820ecc8f4e29f5876b0fbbf9ca9f1acc93c0cb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4763f268628a4609ac91d0597aeb4f55a2d406ce
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444030"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720993"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
@@ -35,7 +35,7 @@ ms.locfileid: "50444030"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |контейнер|[plannerPlanContainer](../resources/plannerplancontainer.md)|Определяет контейнер плана. После установки значения обновить это свойство невозможно. Обязательный.|
-|createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения. Идентификатор плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
 |title|String|Обязательный. Название плана.|
 |createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший этот план.|

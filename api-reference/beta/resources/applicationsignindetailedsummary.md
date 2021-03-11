@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса applicationSignInDetailedSummary — API Microsoft Graph
-description: Представляет подробную сводку по входу в приложение.
+title: тип ресурса applicationSignInDetailedSummary — API Microsoft Graph
+description: Представляет подробную сводку регистрации приложения.
 localization_priority: Normal
 author: sureshja
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d0d1eaa15d71dfa219271cef74880a092e9522db
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8f53d1ebce8a7a578c067354ba7f89c6c27ea947
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137454"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720832"
 ---
-# <a name="applicationsignindetailedsummary-resource-type"></a>Тип ресурса applicationSignInDetailedSummary
+# <a name="applicationsignindetailedsummary-resource-type"></a>тип ресурса applicationSignInDetailedSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет подробную сводку по входу в приложение.
+Представляет подробную сводку регистрации приложения.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Чтение свойств и связей объекта **applicationSignInDetailedSummary.** |
+| [Получение applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Ознакомьтесь с свойствами и отношениями **объекта applicationSignInDetailedSummary.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|aggregatedEventDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|appDisplayName|String|Имя приложения, в которое вписались пользователи.|
-|appId|String|ИД приложения, в которое вписался пользователь.|
-|id|Строка| Уникальный ИД, представляющий действие при входе.|
+|aggregatedEventDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|appDisplayName|String|Имя приложения, в которое пользователь вписались.|
+|appId|String|ID приложения, в которое пользователь вписался.|
+|id|String| Уникальный ID, представляющий действие входного знака.|
 |signInCount|Int64|Количество входов, сделанных приложением.|
 |status|[signInStatus](signinstatus.md)|Сведения о состоянии регистрации.|
 

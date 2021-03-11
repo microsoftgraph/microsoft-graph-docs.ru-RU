@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса referenceAttachment
-description: 'Ссылка на папку или файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых расположениях хранения, вложенных в '
+description: 'Ссылка на папку или файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или других поддерживаемых хранилищах, присоединенных к '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 914d04a6482b96fda0ee55c92f25bf950e594173
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e0c3723648710fb1640927fad10e0847e1e155a6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136772"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721322"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136772"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ссылка на папку или файл (например, текстовый файл или документ Word) на облачном диске OneDrive для [](../resources/message.md)бизнеса или других поддерживаемых расположениях хранения, прикрепленных к событию, [](../resources/event.md)сообщению или публикации. [](../resources/post.md)
+Ссылка на папку или файл (например, текстовый файл или документ Word) на облачном диске OneDrive для [](../resources/message.md)бизнеса или других поддерживаемых хранилищах, присоединенных к событию, [](../resources/event.md)сообщению или сообщению. [](../resources/post.md)
 
 Производный от типа [attachment](attachment.md).
 
@@ -27,23 +27,23 @@ ms.locfileid: "50136772"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[получение](../api/attachment-get.md); | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
-|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contentType|String|Тип контента этого вложения. Необязательный параметр.|
-|id|Строка|Идентификатор вложения.  Только для чтения.|
-|isFolder|Boolean|Указывает, является ли вложение ссылкой на папку. Должно иметь true, если **sourceUrl** является ссылкой на папку. Необязательный параметр.|
-|isInline|Boolean|Значение true указывает, что вложение встроено в содержимое объекта. Необязательный параметр.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр.|
-|name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла. Обязательный элемент.|
-|permission|referenceAttachmentPermission|Указывает разрешения, предоставленные для вложения типом поставщика **в providerType.** Возможные значения: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Необязательный параметр.|
-|previewUrl|Строка|Применяется только к вложению ссылки изображения — URL-адресу для получения изображения предварительного просмотра. Используйте **thumbnailUrl и** **previewUrl** только в том случае, **если sourceUrl** идентифицирует файл изображения. Необязательный параметр.|
-|providerType|referenceAttachmentProvider|Тип поставщика, который поддерживает вложение этого contentType. Возможные значения: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Необязательный параметр.|
-|size|Int32|Размер метаданных в виде ветвей, которые хранятся в сообщении для эталонного вложения. Это значение не отображает фактический размер файла. Необязательный параметр.|
-|sourceUrl|Строка|URL-адрес для получения содержимого вложения. If this is a URL to a folder, then for the folder to be displayed correctly in Outlook or Outlook on the web, set **isFolder** to true. Обязательный элемент.|
-|thumbnailUrl|Строка|Применяется только к вложению ссылки изображения — URL-адресу для получения эскиза. Используйте **thumbnailUrl и** **previewUrl** только в том случае, **если sourceUrl** идентифицирует файл изображения. Необязательный параметр.|
+|contentType|String|Тип контента этого вложения. Необязательное.|
+|id|String|Идентификатор вложения.  Только для чтения.|
+|isFolder|Boolean|Указывает, является ли вложение ссылкой на папку. Необходимо установить это, если **sourceUrl** является ссылкой на папку. Необязательное.|
+|isInline|Boolean|Значение true указывает, что вложение встроено в содержимое объекта. Необязательное.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательное.|
+|name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла. Обязательный атрибут.|
+|разрешение|referenceAttachmentPermission|Указывает разрешения, предоставленные для вложения типом поставщика в **providerType.** Возможные значения: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Необязательное.|
+|previewUrl|String|Применяется только к ссылке на вложение изображения — URL-адрес для получения изображения предварительного просмотра. Используйте **thumbnailUrl и** **previewUrl** только тогда, когда **sourceUrl** идентифицирует файл изображений. Необязательное.|
+|providerType|referenceAttachmentProvider|Тип поставщика, который поддерживает вложение этого contentType. Возможные значения: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Необязательное.|
+|size|Int32|Размер метаданных в bytes, хранимых в сообщении для эталонного вложения. Это значение не отображает фактический размер файла. Необязательное.|
+|sourceUrl|String|URL-адрес для получения содержимого вложения. Если это URL-адрес папки, то для правильного отображения папки в Outlook или Outlook в Интернете заданной **являетсяFolder** to true. Обязательный атрибут.|
+|thumbnailUrl|String|Применяется только к ссылке на вложение изображения — URL-адрес для получения эскизного изображения. Используйте **thumbnailUrl и** **previewUrl** только тогда, когда **sourceUrl** идентифицирует файл изображений. Необязательное.|
 
 ## <a name="relationships"></a>Связи
 Нет

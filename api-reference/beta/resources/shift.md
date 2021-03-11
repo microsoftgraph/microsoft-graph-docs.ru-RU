@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 49d877859202ca9d8dc5c7b414368a63d2fcf8ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2152c8c4f612c55e7523bbc2000170c4e982bd5f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058104"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721161"
 ---
 # <a name="shift-resource-type"></a>Тип ресурса shift
 
@@ -38,8 +38,8 @@ ms.locfileid: "48058104"
 | schedulingGroupId         |`string`      |Идентификатор группы планирования, частью которой является объект `shift`. Обязательный элемент. |
 | sharedShift   |[shiftItem](shiftitem.md)  |Общая версия объекта `shift`, доступная для просмотра как сотрудникам, так и руководителям. Обязательный элемент. |
 | draftShift        |[shiftItem](shiftitem.md)        |Черновая версия объекта `shift`, доступная для просмотра руководителями. Обязательный элемент. |
-| createdDateTime       |`DateTimeOffset`        |Метка времени создания объекта `shift`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
-| lastModifiedDateTime      |`DateTimeOffset`        |Метка времени последнего обновления объекта `shift`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| createdDateTime       |`DateTimeOffset`        |Метка времени создания объекта `shift`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`        |Метка времени последнего обновления объекта `shift`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md)        |Учетная запись, которая последней обновила этот объект `shift`.|
 
 ## <a name="json-representation"></a>Представление в формате JSON

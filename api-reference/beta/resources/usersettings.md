@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userSettings
 description: 'Параметры текущего пользователя для поиска контента. '
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 81391c38f2577fd3f60c57fa40f9671ae710c2a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b03b1b41c466582a219a034d93a16bb887fa356
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057775"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721441"
 ---
 # <a name="usersettings-resource-type"></a>Тип ресурса userSettings
 
@@ -18,17 +18,17 @@ ms.locfileid: "48057775"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры, представляющие предпочтения пользователя для [региональных языковых стандартов и языков](../resources/regionalandlanguagesettings.md), для [планирования расписаний](../resources/shiftpreferences.md), а также для [анализа и обнаружения контента](../resources/officegraphinsights.md).
+Параметры, которые представляют предпочтения пользователя для регионального языка и [языков,](../resources/regionalandlanguagesettings.md)для планирования [смены,](../resources/shiftpreferences.md)а также для анализа и [обнаружения контента.](../resources/officegraphinsights.md)
 
-Управление настройками на основе языкового стандарта пользователя: 
-  - Определение языка и региональных форматов, предпочитаемых пользователем для просмотра приложений.
-  - Обновление языков и региональных параметров форматирования пользователя.
+Управление предпочтениями на основе локального пользователя: 
+  - Определение языка и регионального форматирования, с помощью чего пользователь предпочитает просматривать приложения.
+  - Обновление языковых и региональных предпочтений форматирования пользователя.
 
-Управление настройками рабочей смены пользователя: 
-  - Проверка того, можно ли назначить пользователя для смены по расписанию.
-  - Обновление предпочтений пользователя при смене.
+Управление предпочтениями смены работы пользователя: 
+  - Проверка того, можно ли пользователю назначены изменения в расписании.
+  - Обновление личных предпочтений пользователя.
   
-Включение обнаружения контента и аналитической информации, ориентированной на документы:
+Включить обнаружение контента и документов, ориентированных на анализ:
   - Проверку участия пользователя и организации пользователя в поиске содержимого.
   - Включение и отключение поиска содержимого для конкретных пользователей. При этом также отключаются документы в Office Delve.
 
@@ -47,17 +47,17 @@ ms.locfileid: "48057775"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логический|Если задано значение true, делегированный доступ к API [trending](insights-trending.md) пользователя отключен. Если задано значение true, документы в Office Delve пользователя отключены. Если задано значение true, то релевантность содержимого, отображаемого в Microsoft 365, например в разделе Рекомендуемые сайты в SharePoint Home и представление "Обнаружение" в OneDrive для бизнеса влияет. Пользователи могут управлять этим параметром в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отображает [параметр на уровне организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff), управляющий делегированным доступом к API [trending](insights-trending.md). Если задано значение true, у организации отсутствует доступ к Office Delve. Релевантность содержимого, отображаемого в Microsoft 365, например в разделе Рекомендуемые сайты в SharePoint Home, а представление обнаружения в OneDrive для бизнеса влияет на всю организацию. Этот параметр доступен только для чтения и может изменяться только администраторами в [Центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Логический|Если задано значение true, делегированный доступ к API [trending](insights-trending.md) пользователя отключен. Если задано значение true, документы в Office Delve пользователя отключены. Установка значения true влияет на релевантность содержимого, отображаемого в Microsoft 365, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Пользователи могут управлять этим параметром в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отображает [параметр на уровне организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff), управляющий делегированным доступом к API [trending](insights-trending.md). Если задано значение true, у организации отсутствует доступ к Office Delve. Это влияет на релевантность содержимого, отображаемого в Microsoft 365 для всей организации, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Этот параметр доступен только для чтения и может изменяться только администраторами в [Центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
-|шифтпреференцес|[шифтпреференцес](shiftpreferences.md)| Настройки смены для пользователя. |
-|регионаландлангуажесеттингс|[регионаландлангуажесеттингс](regionalandlanguagesettings.md)| Предпочтения пользователя для языков, региональных стандартов и форматирования даты и времени. |
+|shiftPreferences|[shiftPreferences](shiftpreferences.md)| Параметры переноса для пользователя. |
+|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| Предпочтения пользователя для языков, регионального языка и форматирования даты и времени. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

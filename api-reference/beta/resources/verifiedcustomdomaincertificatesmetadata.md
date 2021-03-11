@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса verifiedCustomDomainCertificatesMetadata
-description: Представляет настраиваемые метаданные сертификата для локального приложения, опубликованного через прокси приложения.
+title: verifiedCustomDomainCertificatesMetadata resource type
+description: Представляет настраиваемые метаданные сертификации для локального приложения, опубликованного с помощью прокси-сервера приложения.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: bc0f839d91147f80d41dc48ee53c0f888aa35283
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: eab6823bdd3ed6a822cbeabdebf0aedfb654b769
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137594"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721434"
 ---
-# <a name="verifiedcustomdomaincertificatesmetadata-resource-type"></a>Тип ресурса verifiedCustomDomainCertificatesMetadata
+# <a name="verifiedcustomdomaincertificatesmetadata-resource-type"></a>verifiedCustomDomainCertificatesMetadata resource type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метаданные сертификата настраиваемого домена для ресурса [onPremisesPublishing](onpremisespublishing.md) при публикации локального приложения с прокси-сервером приложения. Использование настраиваемого домена позволяет использовать для приложения собственное доменное имя вместо домена по умолчанию msappproxy.net домена. Чтобы узнать больше, [пользовательские домены в прокси приложения Azure AD.](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain)
+Представляет настраиваемые метаданные сертификата домена для ресурса [onPremisesPublishing](onpremisespublishing.md) при публикации локального приложения с помощью прокси-приложения. Использование настраиваемого домена позволяет использовать собственное доменное имя вместо домена по умолчанию, msappproxy.net, для приложения. Дополнительные дополнительные новости см. в [специально созданных доменах в Прокси-сервере приложений Azure AD.](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|expiryDate|DateTimeOffset| Дата окончания срока действия сертификата настраиваемого домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
-|issueDate|DateTimeOffset| Дата выдачи настраиваемого домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
-|issuerName|Строка| Имя issuer сертификата настраиваемого домена. |
+|expiryDate|DateTimeOffset| Срок действия пользовательского сертификата домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+|issueDate|DateTimeOffset| Дата выпуска настраиваемого домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+|issuerName|String| Имя эмитента пользовательского сертификата домена. |
 |subjectName|String| Имя субъекта пользовательского сертификата домена. |
-|thumbprint|Строка| Отпечаток, связанный с сертификатом пользовательского домена. |
+|отпечатки пальцев|String| Отпечатки пальцев, связанные с пользовательским сертификатом домена. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

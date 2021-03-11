@@ -1,16 +1,16 @@
 ---
 title: Обновление параметров
 description: 'Обновление свойств объекта settings. '
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 736096454aa0189e8a420ce61d842f5286a0ed44
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f40f2f22dab49d39a6dbe39a0fa32cff9febdeb
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022052"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721049"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -18,15 +18,15 @@ ms.locfileid: "48022052"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [усерсеттингс](../resources/usersettings.md) . Пользователи в одной организации могут иметь различные параметры в зависимости от их предпочтения или политики Организации. Чтобы получить текущие параметры пользователя, просмотрите [параметры текущей учетной записи пользователя](usersettings-get.md). 
+Обновление свойств объекта [userSettings.](../resources/usersettings.md) Пользователи в одной организации могут иметь различные параметры в зависимости от их предпочтений или политик организации. Чтобы получить текущие параметры пользователя, см. [текущие параметры пользователя.](usersettings-get.md) 
 
 
 ### <a name="batch-request"></a>Пакетный запрос
 
-Кроме того, можно отказаться от использования нескольких пользователей из delve и отказаться от их вклада в релевантность содержимого для всей Организации с помощью пакетного запроса.
-Для получения дополнительных сведений см [Пакетная обработка JSON](/graph/json-batching).
+Кроме того, можно отказать нескольким пользователям в Delve и отключить их вклад в запрос на контент для всей организации.
+Дополнительные дополнительные информации см. в серии [JSON.](/graph/json-batching)
 
->**Важно!** только члены группы ролей " [Управление организацией](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) " могут обновлять нескольких пользователей. 
+>**Важно.** Только члены группы [ролей](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) управления организацией могут обновлять несколько пользователей. 
 
 
 
@@ -36,7 +36,7 @@ ms.locfileid: "48022052"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User. ReadWrite, User. ReadWrite. ALL   |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite, User.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All |
 
@@ -65,13 +65,13 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логический|Установите значение true, чтобы запретить представителю доступ к API [тенденций](../resources/insights-trending.md) и отключить доступ к документам в Office delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Microsoft 365 — например, Рекомендуемые сайты в SharePoint Home и представление обнаружение в OneDrive для бизнеса содержат менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Office delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Логический|Установите для пользователя возможность отключения доступа делегатов к API [Trending](../resources/insights-trending.md) и отключения доступа к документам в Office Delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Microsoft 365, например, рекомендуемые сайты в SharePoint Home и представление Discover в OneDrive для бизнеса показывают менее релевантные результаты. Этот параметр отражает состояние управления [в Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 
 ##### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на отказаться от участия пользователя в delve и отказаться от его участия в релевантности контента для всей Организации.
+Вот пример запроса о том, как отключить пользователя из Delve и отключить его вклад в содержимого для всей организации.
 
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings

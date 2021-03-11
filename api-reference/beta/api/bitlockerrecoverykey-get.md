@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 97af35852d19211bde53717b12fcdff2f1981cb8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 49c79732c2953f3e6627061b621a99c00315a4ed
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438010"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719968"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Get bitlockerRecoveryKey
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "50438010"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLocker.ReadBasic.All, BitLocker.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 >**Примечание:** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был подписан ключ BitLocker:  
 * Глобальный администратор
@@ -46,7 +46,7 @@ ms.locfileid: "50438010"
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
 Чтобы получить указанный ключ BitLocker, включая его **ключевое** свойство:
@@ -55,7 +55,7 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -65,10 +65,10 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательный.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательный атрибут.|
 |ocp-client-version|Версия клиентского приложения с вызовом API. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -91,7 +91,7 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -154,7 +154,7 @@ Content-type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]

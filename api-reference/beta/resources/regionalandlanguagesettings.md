@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jasonbro
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d5fd77038735ed1faa175d77ed2bd10b3b2ef784
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 25af8de5a93bc67ed774b161ec63c1698434efb2
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516488"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721315"
 ---
 # <a name="regionalandlanguagesettings-resource-type"></a>тип ресурса regionalAndLanguageSettings
 
@@ -25,16 +25,16 @@ ms.locfileid: "50516488"
 | Метод                                                 | Возвращаемый тип                                                   | Описание                                                                                        |
 |:-------------------------------------------------------|:--------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [получение](../api/regionalAndLanguageSettings-get.md);       | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Чтение свойств объекта **regionalAndLanguageSettings.**                                       |
-| [обновление](../api/regionalandlanguagesettings-update.md). | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Обновление всех или подмножества свойств объекта **regionalAndLanguageSettings** для пользователя. |
+| [Обновление](../api/regionalandlanguagesettings-update.md) | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Обновление всех или подмножества свойств объекта **regionalAndLanguageSettings** для пользователя. |
 
 ## <a name="properties"></a>Свойства
 | Свойство                   | Тип                                                  | Описание                                                                                                                                                         |
 |----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | defaultDisplayLanguage     | [localeInfo](localeinfo.md)                           | Предпочтительный язык пользовательского интерфейса пользователя (меню, кнопки, ленты, предупреждающие сообщения) для веб-приложений Майкрософт.<br><br>Возвращается по умолчанию. Значение null не допускается. |
-| authoringLanguages         | Коллекция объектов localeInfo                                 | Приоритизированный список языков, на которые пользователь читает и авторов.<br><br>Возвращается по умолчанию. Значение null не допускается.                                                              |
-| defaultTranslationLanguage | localeInfo                                            | Язык, на который пользователь ожидает перевода документов, электронной почты и сообщений.<br><br>Возвращается по умолчанию.                                                    |
-| defaultSpeechInputLanguage | localeInfo                                            | Язык, который пользователь должен использовать в качестве ввода для текстовых сценариев речи.<br><br>Возвращается по умолчанию.                                                              |
-| defaultRegionalFormat      | localeInfo                                            | Локализ, который диски по умолчанию даты, времени и форматирования календаря.<br><br>Возвращается по умолчанию.                                                                 |
+| authoringLanguages         | Коллекция объектов [localeInfo](localeinfo.md)                                 | Приоритизированный список языков, на которые пользователь читает и авторов.<br><br>Возвращается по умолчанию. Значение null не допускается.                                                              |
+| defaultTranslationLanguage | [localeInfo](localeinfo.md)                 | Язык, на который пользователь ожидает перевода документов, электронной почты и сообщений.<br><br>Возвращается по умолчанию.                                                    |
+| defaultSpeechInputLanguage | [localeInfo](localeinfo.md)                 | Язык, который пользователь должен использовать в качестве ввода для текстовых сценариев речи.<br><br>Возвращается по умолчанию.                                                              |
+| defaultRegionalFormat      | [localeInfo](localeinfo.md)            | Локализ, который диски по умолчанию даты, времени и форматирования календаря.<br><br>Возвращается по умолчанию.                                                                 |
 | regionalFormatOverrides    | [regionalFormatOverrides](regionalformatoverrides.md) | Позволяет пользователю переопределять значение defaultRegionalFormat с помощью определенных форматов поля.<br><br>Возвращается по умолчанию.                                                      |
 | translationPreferences     | [translationPreferences](translationPreferences.md)   | Предпочтительные параметры пользователя при потреблении переведенных документов, электронной почты, сообщений и веб-сайтов.<br><br>Возвращается по умолчанию. Значение null не допускается.                                       |
 

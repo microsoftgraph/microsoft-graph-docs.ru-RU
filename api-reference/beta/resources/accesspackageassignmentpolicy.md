@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 269a3a27d83951c82d50dcaf0ba52c6ce7a5a1bb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: db463609803e3547b88f586cc447974846738e22
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433285"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720454"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>тип ресурса accessPackageAssignmentPolicy
 
@@ -41,14 +41,14 @@ ms.locfileid: "50433285"
 |accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Кто должен и как часто выполнять назначения пакету доступа из этой политики. Это свойство является null, если отзывы не требуются.|
 |canExtend|Boolean|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |createdBy|String|Только для чтения.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |description|String|Описание политики.|
 |displayName|String|Отображает имя политики.|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
-|expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
 |modifiedBy|String|Только для чтения.|
-|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Кто должен утверждать запросы на пакет доступа в этой политике.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Кто может запросить этот пакет доступа из этой политики.|
 |вопросы|[коллекция accessPackageQuestion](accesspackagequestion.md)|Вопросы, заданные запросчику.|

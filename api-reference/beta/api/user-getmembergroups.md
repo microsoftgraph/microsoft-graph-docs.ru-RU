@@ -2,15 +2,15 @@
 title: 'user: getMemberGroups'
 description: 'Возвращает все группы, в которых состоит пользователь. Это промежуточная проверка, в отличие от считывания '
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 76b5cb609ca5661e0d9592897723e1fccaa8a0e8
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 1d2819f6475df39b25a27ce5523d201eab162939
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177258"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720083"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json          |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

@@ -1,16 +1,16 @@
 ---
 title: Список ownedDevices
 description: Получение списка устройств, принадлежащих пользователю.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f4750a0ad3dbf4c98bb3b65cc354416b67fefc0d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fb714f9d570f63c6b55842b32f16e5afcf0752da
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967335"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718523"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -26,7 +26,7 @@ ms.locfileid: "48967335"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

@@ -4,12 +4,12 @@ description: 'Пакетная обработка JSON позволяет опт
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5737d57ef9256333c6485abe4da400be9e7ec745
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 4e1ad5734d0fefe2cdb7634e461ee9f297aae93e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643990"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721574"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 
@@ -131,8 +131,6 @@ Content-Type: application/json
 * Вместо свойств `method` и `url` отдельные ответы содержат свойство `status`. Значение `status` — это код состояния HTTP.
 
 Пакетный ответ обычно содержит код состояния `200` или `400`. Если пакетный запрос имеет неправильный формат, код состояния — `400`. Если пакетный запрос пригоден для анализа, код состояния — `200`. Код состояния `200` пакетного ответа не указывает на успешное выполнение отдельных запросов в пакете. Именно поэтому у каждого отдельного ответа в свойстве `responses` есть код состояния.
-
-В дополнение к свойству `responses` в пакетном ответе может быть свойство `nextLink`. Это позволяет Microsoft Graph возвращать пакетный ответ сразу после выполнения каждого из отдельных запросов. Чтобы убедиться, что получены все отдельные ответы, продолжайте переходить по ссылке `nextLink`, пока она передается.
 
 ## <a name="sequencing-requests-with-the-dependson-property"></a>Выстраивание последовательности запросов с помощью свойства dependsOn
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: harini84
-ms.openlocfilehash: ccb9d02fd8319798d691756526a42e88a661b93a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ee9c70baa5cdea45868feb1517623081f2b62b2
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026260"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718473"
 ---
 # <a name="responsestatus-resource-type"></a>Тип ресурса responseStatus
 
@@ -25,7 +25,7 @@ ms.locfileid: "48026260"
 | Свойство | Тип           | Описание |
 |:---------|:---------------|:------------|
 | response | String         | Тип ответа. Возможные значения: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
-| time     | DateTimeOffset | Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.
+| time     | DateTimeOffset | Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.
 
 ## <a name="json-representation"></a>Представление JSON
 

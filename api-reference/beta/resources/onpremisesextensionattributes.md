@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса onPremisesExtensionAttributes
-description: Свойство **onPremisesExtensionAttributes** объекта user содержит пятнадцать свойств настраиваемого атрибута расширения.
+description: Свойство **onPremisesExtensionAttributes** объекта пользователя содержит 15 пользовательских свойств атрибута расширения.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
-author: krbain
-ms.openlocfilehash: 2729d6d624f1bde304425229ccf4ae7df8ddf781
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: jpettere
+ms.openlocfilehash: 95d777140210070471c9578399e26e0eda3620d7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052600"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720587"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 
@@ -18,9 +18,9 @@ ms.locfileid: "48052600"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Свойство **onPremisesExtensionAttributes** объекта [User](user.md) содержит пятнадцать свойств настраиваемого атрибута расширения. Для пользователя **onPremisesSyncEnabled** источником полномочий для этого набора свойств является локальный каталог Active Directory, который синхронизируется с Azure AD и доступен только для чтения. Для пользователя, предназначенного только для облачного облака (где **onPremisesSyncEnabled** имеет значение false), эти свойства можно задать при создании или обновлении.
+Свойство **onPremisesExtensionAttributes** объекта пользователя содержит [15](user.md) пользовательских свойств атрибута расширения. Для **пользователя onPremisesSyncEnabled** источником полномочий для этого набора свойств является локальное Active Directory, синхронизированное с Azure AD и только для чтения. Для облачного пользователя (где **onPremisesSyncEnabled** является ложным), эти свойства могут быть заданы во время создания или обновления.
 
-> **Примечание:** Эти атрибуты расширения также называются пользовательскими атрибутами Exchange 1-15.
+> **Примечание:** Эти атрибуты расширения также известны как пользовательские атрибуты Exchange 1-15.
 
 
 ## <a name="properties"></a>Свойства
@@ -34,12 +34,12 @@ ms.locfileid: "48052600"
 |extensionAttribute6|String| Шестой настраиваемый атрибут расширения. |
 |extensionAttribute7|String| Седьмой настраиваемый атрибут расширения. |
 |extensionAttribute8|String| Восьмой настраиваемый атрибут расширения. |
-|extensionAttribute9|String| Девятый атрибут расширения. |
-|extensionAttribute10|String| Десятый атрибут расширенной настройки. |
-|extensionAttribute11|String| Одиннадцатый атрибут настраиваемого расширения. |
+|extensionAttribute9|String| Девятый настраиваемый атрибут расширения. |
+|extensionAttribute10|String| Десятый настраиваемый атрибут расширения. |
+|extensionAttribute11|String| Одиннадцатый настраиваемый атрибут расширения. |
 |extensionAttribute12|String| Двенадцатый настраиваемый атрибут расширения. |
-|extensionAttribute13|String| Настраиваемый атрибут расширения сиртинс. |
-|extensionAttribute14|String| Настраиваемый атрибут расширения фауртинс. |
+|extensionAttribute13|String| Тринадцатый настраиваемый атрибут расширения. |
+|extensionAttribute14|String| Четырнадцатый настраиваемый атрибут расширения. |
 |extensionAttribute15|String| Пятнадцатый настраиваемый атрибут расширения. |
 
 ## <a name="json-representation"></a>Представление JSON

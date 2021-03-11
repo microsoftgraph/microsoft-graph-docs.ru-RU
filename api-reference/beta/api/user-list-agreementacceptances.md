@@ -1,16 +1,16 @@
 ---
 title: Перечисление agreementAcceptances
-description: Получение списка объектов agreementAcceptance пользователя.
+description: Извлечение списка объектов agreementAcceptance пользователя.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3e7f256b5fb800a17a8d329463f44a5ddc571f33
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b0bc9630d503847832b8fb3ab73e8064fa90c96c
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973821"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720062"
 ---
 # <a name="list-agreementacceptances"></a>Перечисление agreementAcceptances
 
@@ -18,7 +18,7 @@ ms.locfileid: "48973821"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [agreementAcceptance](../resources/agreementacceptance.md) пользователя.
+Извлечение списка объектов [agreementAcceptance пользователя.](../resources/agreementacceptance.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -46,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [agreementAcceptance](../resources/agreementacceptance.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов agreementAcceptance](../resources/agreementacceptance.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

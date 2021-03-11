@@ -1,44 +1,44 @@
 ---
-title: Тип ресурса Тимеоффреасон
-description: Допустимая причина для выполнения времени ожидания в расписании.
+title: тип ресурса timeOffReason
+description: Веские причины для того, чтобы взять время в расписании.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3a08ad02b03b3b39385f6f351e727d8b5ed54af1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b449f2cb4dcfcd73208d58f8e1e969b9a701e54b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075485"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720188"
 ---
-# <a name="timeoffreason-resource-type"></a>Тип ресурса Тимеоффреасон
+# <a name="timeoffreason-resource-type"></a>тип ресурса timeOffReason
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Допустимая причина для экземпляра [тимеофф](timeoff.md) по [расписанию](schedule.md).
+Веские основания для [экземпляра timeOff](timeoff.md) в [расписании](schedule.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Создание](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Создание нового **тимеоффреасон**.|
-|[Список](../api/schedule-list-timeoffreasons.md) | Коллекция [тимеоффреасон](timeoffreason.md) | Получение списка **тимеоффреасон** по расписанию.|
-|[получение](../api/timeoffreason-get.md); | [timeOffReason](timeoffreason.md) | Получение **тимеоффреасон** по идентификатору.|
-|[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Замените **тимеоффреасон**.|
-|[Удаление](../api/timeoffreason-delete.md) | Нет | Пометка **тимеоффреасон** как неактивной.|
+|[Создание](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Создание нового **timeOffReason**.|
+|[List](../api/schedule-list-timeoffreasons.md) | [коллекция timeOffReason](timeoffreason.md) | Получите список **timeOffReason в** расписании.|
+|[получение](../api/timeoffreason-get.md); | [timeOffReason](timeoffreason.md) | Получите **timeOffReason по** ID.|
+|[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Замените **timeOffReason**.|
+|[Удаление](../api/timeoffreason-delete.md) | Нет | **Пометить timeOffReason** как неактивное.|
 
 ## <a name="properties"></a>Свойства
 |Имя          |Тип           |Описание                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |Идентификатор объекта `timeOffReason`.|
-| displayName               | `string`                  | Имя ресурса `timeOffReason`. Обязательно. |
-| иконтипе | `timeOffReasonIconType`   | Поддерживаемые типы значков: нет; Мойка ведения запускается ходил Фирстаид; врача Нотворкинг; регистрации Журидути; любой кружк звонков Погода Общий Пиггибанк; Dog очень Траффикконе; крепления Веселая. Обязательный. |
+| displayName               | `string`                  | Имя ресурса `timeOffReason`. Обязательный атрибут. |
+| iconType | `timeOffReasonIconType`   | Поддерживаемые типы значков: нет; автомобиль; календарь; запуск; плоскости; firstAid; врач; notWorking; часы; juryDuty; глобус; чашка; телефон; погода; зонт; piggyBank; собака; торт; trafficCone; пин-код; солнечный. Обязательный. |
 | isActive          |`Boolean`      | Указывает, можно ли использовать объект `timeOffReason` при создании новых сущностей или обновлении существующих. Обязательный. |
-| createdDateTime       |`DateTimeOffset`        |Отметка времени `timeOffReason` первоначального создания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
-| lastModifiedDateTime      |`DateTimeOffset`         |Отметка времени `timeOffReason` последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| createdDateTime       |`DateTimeOffset`        |Штамп времени, на котором `timeOffReason` это было впервые создано. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`         |Отпечаток времени, на котором `timeOffReason` это было обновлено в последний раз. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md)        |Учетная запись, которая последней обновила этот объект `timeOffReason`.|
 
 ## <a name="json-representation"></a>Представление в формате JSON

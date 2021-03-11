@@ -1,51 +1,51 @@
 ---
-title: Тип ресурса urlAssessmentRequest
-description: Используется для создания и извлечения оценки угрозы URL-адреса.
+title: тип ресурса urlAssessmentRequest
+description: Используется для создания и получения оценки угрозы URL-адреса.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 68df999766bd7fd1b548e0db7e96a8819c04c75a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 226e4fff9114fbf13bc0e8bcdc9290180cc487f4
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156674"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720961"
 ---
-# <a name="urlassessmentrequest-resource-type"></a>Тип ресурса urlAssessmentRequest
+# <a name="urlassessmentrequest-resource-type"></a>тип ресурса urlAssessmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для создания и извлечения оценки угрозы URL-адреса, полученной из [threatAssessmentRequest.](threatAssessmentRequest.md)
+Используется для создания и получения оценки угроз URL-адреса, полученной из [threatAssessmentRequest.](threatAssessmentRequest.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [urlAssessmentRequest](urlAssessmentRequest.md) | Создайте новый запрос на оценку URL-адреса, опубликовав объект **urlAssessmentRequest.** |
-| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [urlAssessmentRequest](urlassessmentrequest.md) | Чтение свойств и связей объекта **urlAssessmentRequest.** |
+| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [urlAssessmentRequest](urlAssessmentRequest.md) | Создайте новый запрос на оценку URL-адресов, разместив **объект urlAssessmentRequest.** |
+| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [urlAssessmentRequest](urlassessmentrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **urlAssessmentRequest.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |url|String|Строка URL-адреса.|
-|category|[threatCategory](enums.md#threatcategory-values)|Категория угрозы. Возможные значения: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип контента оценки угроз. Возможные значения: `mail`, `url`, `file`.|
+|category|[threatCategory](enums.md#threatcategory-values)|Категория угроз. Возможные значения: `spam`, `phishing`, `malware`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип контента оценки угрозы. Возможные значения: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|Создатель запроса на оценку угроз.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|Ожидаемая оценка от ubmitter. Возможные значения: `block`, `unblock`.|
-|id|String|Идентификатор запроса на оценку угроз — это глобальный уникальный идентификатор (GUID).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
+|id|String|Идентификатор запроса на оценку угрозы — это уникальный идентификатор глобального идентификатора (GUID).|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угрозы. Возможные значения: `user`, `administrator`.|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|results|[Коллекция threatAssessmentResult](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a не возвращает это свойство, если к этому `GET /threatAssessmentRequests/{id}` свойству не `$expand` применяется.|
+|results|[коллекция threatAssessmentResult](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию это `GET /threatAssessmentRequests/{id}` свойство не возвращается, если оно не `$expand` применяется.|
 
 ## <a name="json-representation"></a>Представление JSON
 

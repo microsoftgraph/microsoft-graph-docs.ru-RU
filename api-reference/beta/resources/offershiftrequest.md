@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса offerShiftRequest
-description: Представляет тип запроса на смену для предложения смены другому пользователю в команде.
+title: тип ресурса offerShiftRequest
+description: Представляет тип запроса на смену, чтобы предложить переход другому пользователю в команде.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d1b26d7801a3eb4570104ff68b9037fd9c553a68
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0f80e8578422aa00d6af1d2df22a0dfb7472c8c8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156716"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721483"
 ---
-# <a name="offershiftrequest-resource-type"></a>Тип ресурса offerShiftRequest
+# <a name="offershiftrequest-resource-type"></a>тип ресурса offerShiftRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет тип запроса на смену для предложения смены другому пользователю в команде.
+Представляет тип запроса на смену, чтобы предложить переход другому пользователю в команде.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Создание](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Создание экземпляра объекта offerShiftRequest. |
-| [Получение](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Чтение свойств и связей объекта offerShiftRequest. |
-| [Список](../api/offershiftrequest-list.md) | Коллекция [offerShiftRequest](offershiftrequest.md) | Чтение свойств и связей всех объектов offerShiftRequest в команде. |
-|[Утвердить](../api/offershiftrequest-approve.md)|Нет|Утверждение offerShiftRequest. |
+| [получение](../api/offershiftrequest-get.md); | [offerShiftRequest](offershiftrequest.md) | Чтение свойств и связей объекта offerShiftRequest. |
+| [List](../api/offershiftrequest-list.md) | Коллекция [offerShiftRequest](offershiftrequest.md) | Чтение свойств и связей всех объектов offerShiftRequest в команде. |
+|[Утвердить](../api/offershiftrequest-approve.md)|Нет|Утверждение предложенияShiftRequest. |
 |[Отклонение](../api/offershiftrequest-decline.md)|Нет|Отклонение предложенияShiftRequest. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|recipientActionDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|recipientActionMessage|String| Настраиваемые сообщения, отправленные получателем запроса на смену предложения. |
-|recipientUserId|String| ИД пользователя получателя запроса на смену предложения.|
-|senderShiftId|String| ИД отправитель запроса на смену предложения.|
+|recipientActionDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|recipientActionMessage|String| Настраиваемые сообщения, отправленные получателем запроса на перенос предложения. |
+|recipientUserId|String| Пользовательский id получателя запроса на перенос предложения.|
+|senderShiftId|String| Пользовательский id отправитель запроса на перенос предложения.|
 
 ## <a name="relationships"></a>Связи
 

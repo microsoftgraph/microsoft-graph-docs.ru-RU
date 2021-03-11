@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Post
-description: Представляет отдельный элемент POST в объекте Конверстаионсреад.
+description: Представляет отдельный элемент столба в объекте converstaionThread.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 27e883898a30692ba01de816728f3267bf293a5d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2cc4a4ca9cdf9b57f835992604b9ac00776b67d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067232"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720965"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 
@@ -18,7 +18,7 @@ ms.locfileid: "48067232"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет отдельный элемент POST в объекте [конверстаионсреад](conversationthread.md) .
+Представляет отдельный элемент столба в [объекте converstaionThread.](conversationthread.md)
 
 Хотя явно создать экземпляр post невозможно, он будет создан в результате выполнения любого из указанных ниже действий.
 
@@ -29,7 +29,7 @@ ms.locfileid: "48067232"
 
 С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](/graph/extensibility-overview).
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -70,26 +70,26 @@ ms.locfileid: "48067232"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|Содержимое публикации. Это свойство используется по умолчанию. Это свойство может иметь значение null.|
-|categories|Коллекция String|Категории, сопоставленные с публикацией. Каждая категория соответствует свойству **DisplayName** объекта [outlookCategory](outlookcategory.md) , определенного для пользователя.|
+|categories|Коллекция String|Категории, сопоставленные с публикацией. Каждая категория соответствует свойству **displayName** [outlookCategory,](outlookcategory.md) определенному для пользователя.|
 |changeKey|String|Указывает версию публикации. При каждом изменении публикации также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |conversationId|String|Уникальный идентификатор беседы. Только для чтения.|
 |conversationThreadId|Строка|Уникальный идентификатор цепочки беседы. Только для чтения.|
-|createdDateTime|DateTimeOffset|Указывает, когда была создана публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Указывает, когда была создана должность. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |from|[recipient](recipient.md)|Используется в сценариях делегированного доступа. Указывает, кто опубликовал сообщение от имени другого пользователя. Это свойство используется по умолчанию.|
 |hasAttachments|Boolean|Указывает, есть ли в публикации хотя бы одно вложение. Это свойство используется по умолчанию.|
 |id|String| Только для чтения.|
-|importance | String | Важность записи группы: `low` , `normal` , `high` . |
-|lastModifiedDateTime|DateTimeOffset|Указывает дату и время последнего изменения публикации. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|невпартиЦипантс|Коллекция объектов [recipient](recipient.md)|Участники беседы, которые были добавлены в цепочку в рамках этой публикации.|
-|receivedDateTime|DateTimeOffset|Указывает, когда была получена публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|importance | String | Важность групповой публикации: `low` , `normal` `high` . |
+|lastModifiedDateTime|DateTimeOffset|Указывает, когда сообщение было изменено в последний раз. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|newParticipants|Коллекция объектов [recipient](recipient.md)|Участники беседы, которые были добавлены в цепочку в рамках этой публикации.|
+|receivedDateTime|DateTimeOffset|Указывает, когда сообщение было получено. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |sender|[recipient](recipient.md)|Содержит электронный адрес отправителя. Если получатель не указан, то в качестве значения Sender используется адрес пользователя, прошедшего проверку подлинности. Это свойство используется по умолчанию.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для POST. Только для чтения. Допускается значение null.|
-|extensions|Коллекция [Extension](extension.md)|Коллекция открытых расширений, определенных для записи. Только для чтения. Допускается значение null.|
-|инреплито|[Post](post.md)|Предыдущая запись, на которую отвечает эта запись, находится в [conversationThread](conversationthread.md). Только для чтения.|
+|attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [fileAttachment,](fileattachment.md) [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для публикации. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [Extension](extension.md)|Коллекция открытых расширений, определенных для столба. Только для чтения. Допускается значение null.|
+|inReplyTo|[Post](post.md)|Более ранний пост, на который этот пост отвечает в [conversationThread](conversationthread.md). Только для чтения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для публикации. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для публикации. Только для чтения. Допускается значение null.|
 
@@ -110,7 +110,7 @@ ms.locfileid: "48067232"
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |**Расширенные свойства**| | |
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Создание одного или нескольких расширенных свойств с одним значением в новой или существующей публикации.   |
+|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Создание одного или нескольких расширенных свойств с одним значением в новой или существующей публикации.   |
 |[Получение публикации с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Получение публикаций, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новой или существующей публикации.  |
 |[Получение публикации с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Получение публикации, которая содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |

@@ -1,16 +1,16 @@
 ---
 title: Перечисление user transitive memberOf
-description: Получите группы, роли каталога и административные единицы, в которые входит пользователь. Этот запрос API является транзитивным и также возвращает все группы, в которые входит пользователь.
+description: Получите группы, роли каталогов и административные единицы, в которые входит пользователь. Этот запрос API является транзитным и также возвращает все группы, вложенные пользователем.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1bcc55916406665b7484d7234c9e1b55564b480d
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 20d2a8b0384a3c346a0f1f3f9f1a8b66cd9a6bfa
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934844"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720734"
 ---
 # <a name="list-user-transitive-memberof"></a>Перечисление user transitive memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "49934844"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите группы, роли каталога и административные единицы, в которые входит пользователь. Этот запрос API является транзитивным и также возвращает все группы, в которые входит пользователь.
+Получите группы, роли каталогов и административные единицы, в которые входит пользователь. Этот запрос API является транзитным и также возвращает все группы, вложенные пользователем.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Также включена литейка OData, например можно привести, чтобы получить только транзитивное членство в группах. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Также включено литье OData, например, можно литье, чтобы получить только транзитное членство в группах. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>Пример 1. Получите группы, роли каталога и административные единицы, в которые входит пользователь
+### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>Пример 1. Получить группы, роли каталогов и административные единицы, в которые пользователь входит
 
 #### <a name="request"></a>Запрос
 
@@ -130,7 +130,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>Пример 2. Получить только количество транзитивного членства в группах, ролях каталогов и административных единицах
+### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>Пример 2. Получить только число транзитных членов в группах, ролях каталогов и административных единицах
 
 #### <a name="request"></a>Запрос
 
@@ -179,7 +179,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -194,7 +194,7 @@ Content-type: text/plain
 588
 ```
 
-### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование $search и OData для получения транзитивного членства в группах с отображаемыми именами, которые содержат буквы "tier", включая количество возвращенных объектов
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование $search и OData для получения переходного членства в группах с отображаемыми именами, содержами буквы "tier", включая количество возвращенных объектов.
 
 #### <a name="request"></a>Запрос
 
@@ -236,7 +236,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 5. Использование $filter и OData для получения транзитивного членства в группах с отображаемым именем, которое начинается с "a", включая число возвращенных объектов
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 5. Использование $filter и OData для получения переходного членства в группах с именем отображения, которое начинается с "a", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 

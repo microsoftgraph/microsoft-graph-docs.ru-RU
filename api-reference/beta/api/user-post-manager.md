@@ -2,15 +2,15 @@
 title: Назначение руководителя
 description: С помощью этого API можно назначить руководителя пользователю.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 00350bc85bb7e3952fe06dde424a3a8c83ee7e34
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3949306eb646fe3dd83419c88ed306dd20e63c41
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064537"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721718"
 ---
 # <a name="assign-a-manager"></a>Назначение руководителя
 

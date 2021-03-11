@@ -1,53 +1,53 @@
 ---
-title: Тип ресурса provisioningObjectSummary
-description: Представляет действие, выполняемые службой предоставления Azure AD, и связанные с ней свойства.
+title: тип ресурса provisioningObjectSummary
+description: Представляет действие, выполняемые службой подготовка Azure AD и связанными с ней свойствами.
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 2b1add3f614fd05060df2dfc45b84a46f19dd134
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2bfe519d6a5cab816bdd35da451221be58105e37
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156352"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719404"
 ---
-# <a name="provisioningobjectsummary-resource-type"></a>Тип ресурса provisioningObjectSummary
+# <a name="provisioningobjectsummary-resource-type"></a>тип ресурса provisioningObjectSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие, выполняемые службой предоставления Azure AD, и связанные с ней свойства. 
+Представляет действие, выполняемые службой подготовка Azure AD и связанными с ней свойствами. 
 
 ## <a name="methods"></a>Методы
 
 | Метод  | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Получите список всех событий предоставления, произошедших в клиенте. |
+| [Список provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Получите список всех событий, которые произошли в клиенте. |
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|action|String|Указывает имя действия или имя операции (например, "Создать пользователя", "Добавить участника в группу"). Список зарегистрированных действий можно найти в списке действий Azure AD.|
-|activityDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|changeId|String|Уникальный ИД этого изменения в этом цикле.|
-|cycleId|String|Уникальный ИД для итерации задания.|
-|durationInMilliseconds|Int32|Указывает, сколько времени потребовалось для завершения этого действия. Измеряется в миллисекунах.|
+|action|String|Указывает имя действия или имя операции (например, Создание пользователя, добавление участника в группу). Список действий, зарегистрированных в журнале, обратитесь к списку действий Azure AD.|
+|activityDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|changeId|String|Уникальный ID этого изменения в этом цикле.|
+|cycleId|String|Уникальный ID для итерации задания.|
+|durationInMilliseconds|Int32|Указывает, сколько времени потребовалось для завершения этого действия по подготовкам. Измеряется в миллисекунд.|
 |id|String| Указывает уникальный идентификатор для действия. Это GUID только для чтения.|
-|initiatedBy|[initiator](initiator.md)|Сведения о том, кто инициировал эту подготовка.|
-|jobId|String|Уникальный ИД для всего задания по обеспечению.|
-|modifiedProperties|[Коллекция modifiedProperty](modifiedproperty.md)|Сведения о каждом свойстве, которое было изменено в этом действии по обеспечению этого объекта.|
-|provisioningSteps|[Коллекция provisioningStep](provisioningstep.md)|Подробные сведения о каждом шаге в предоставлении.|
-|servicePrincipal|Коллекция [servicePrincipal](serviceprincipal.md)|Представляет основной сервис, используемый для предоставления.|
-|sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Сведения о объекте-источнике, который необходимо подготовка.|
-|sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Сведения об источнике системы для объекта, который необходимо подготовка.|
-|statusInfo|[statusBase](statusbase.md)|Сведения о состоянии предоставления.|
-|targetIdentity|[provisionedIdentity](provisionedidentity.md)|Сведения о подготовках целевого объекта.|
-|targetSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Сведения о целевой системе для объекта, который необходимо подготовка.|
-|tenantId|String|Уникальный ИД клиента Azure AD.|
+|initiatedBy|[initiator](initiator.md)|Сведения о том, кто инициировал это подготовка.|
+|jobId|String|Уникальный ID для всего задания по подготовкам.|
+|modifiedProperties|[измененная коллекцияProperty](modifiedproperty.md)|Сведения о каждом свойстве, которое было изменено в этом действии по обеспечению этого объекта.|
+|provisioningSteps|[provisioningStep](provisioningstep.md) collection|Сведения о каждом шаге в области подготовка.|
+|servicePrincipal|Коллекция [servicePrincipal](serviceprincipal.md)|Представляет принцип службы, используемый для обеспечения.|
+|sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Сведения о предварительном предоставлении объекта-источника.|
+|sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Сведения о исходных системах объекта, который был закамут.|
+|statusInfo|[statusBase](statusbase.md)|Сведения о состоянии подготовка.|
+|targetIdentity|[provisionedIdentity](provisionedidentity.md)|Сведения о предварительном предоставлении целевого объекта.|
+|targetSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Сведения о целевой системе объекта.|
+|tenantId|String|Уникальный ID клиента Azure AD.|
 
 ## <a name="relationships"></a>Связи
 

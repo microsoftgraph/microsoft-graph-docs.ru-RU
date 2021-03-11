@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryAudit
-description: Описывает ресурс directoryAudit (сущность) API Microsoft Graph (REST), который помогает проводить аудит действий в каталоге (клиенте) (бета-версия).
+description: Описывает ресурс directoryAudit (сущность) API Microsoft Graph (REST), который помогает аудиту (клиент) действий (бета-версии).
 author: SarahBar
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 7d5407fd0c9c32598228c001cff25ac5437aa121
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e2c6cb6dfee9f3efb015e7bcb7b44968236d7e1a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130271"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721651"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 
@@ -31,8 +31,8 @@ ms.locfileid: "50130271"
 ## <a name="properties"></a>Свойства
 | Свойство            | Тип                                                | Описание                                                                                                                                                                                                                                                            |
 |:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| activityDateTime    | DateTimeOffset                                      | Указывает дату и время выполнения действия. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.                                                                              |
-| activityDisplayName | String                                              | Указывает имя действия или операции (например, "Создание пользователя", "Добавление участника в группу"). Список зарегистрированных действий можно найти в списке действий [Azure Ad.](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list) |
+| activityDateTime    | DateTimeOffset                                      | Указывает дату и время выполнения действия. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.                                                                              |
+| activityDisplayName | String                                              | Указывает имя действия или операции (например, "Создание пользователя", "Добавление участника в группу"). Список действий, зарегистрированных в журнале, обратитесь к списку действий [Azure Ad.](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list) |
 | additionalDetails   | Коллекция [keyValue](keyvalue.md)                  | Указывает дополнительные сведения о действии.                                                                                                                                                                                                                          |
 | category            | String                                              | Указывает, для какой категории ресурса предназначено действие. (Пример: управление пользователями, управление группами и т. д.)                                                                                                                                              |
 | correlationId       | GUID                                                | Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.                                                                                                                                    |

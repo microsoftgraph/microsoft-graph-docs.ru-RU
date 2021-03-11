@@ -3,12 +3,12 @@ title: Поставщик Microsoft Teams
 description: Используйте поставщика Teams в своей вкладке Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 463fa4afdfd4e0dd3e3cb09ad155f0cae08fb347
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
-ms.translationtype: HT
+ms.openlocfilehash: 2d4bff6363cc87256f7ec3f9456fbd11f011b48e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664039"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719755"
 ---
 # <a name="microsoft-teams-provider"></a>Поставщик Microsoft Teams
 
@@ -33,10 +33,10 @@ npm install @microsoft/mgt @microsoft/teams-js
 Затем импортируйте и используйте поставщика.
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {Providers, TeamsProvider} from '@microsoft/mgt';
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsProvider.microsoftTeamsLib = microsoftTeams;
 Providers.globalProvider = new TeamsProvider(config);
 ```
 
@@ -84,10 +84,10 @@ export interface TeamsConfig {
 # <a name="npm"></a>[npm](#tab/ts)
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {Providers, TeamsProvider} from '@microsoft/mgt';
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsProvider.microsoftTeamsLib = microsoftTeams;
 TeamsProvider.handleAuth();
 ```
 

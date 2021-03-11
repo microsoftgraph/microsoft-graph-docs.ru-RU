@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a8dab67cfff9e695c94c7cbcf4549e49eb9812fa
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 98e9a22137f9f6faaa39fbbb010a32b40f8f0254
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433294"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720846"
 ---
 # <a name="accesspackage-resource-type"></a>тип ресурса accessPackage
 
@@ -41,14 +41,14 @@ ms.locfileid: "50433294"
 |:-------------|:------------|:------------|
 |catalogId|String|ID каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
 |createdBy|String|UPN пользователя или удостоверения субъекта, создавшего этот ресурс. Только для чтения.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |description|String|Описание пакета доступа.|
 |displayName|String|Отображение имени пакета доступа.|
 |id|String| Только для чтения.|
 |isHidden|Boolean|Скрыт ли пакет доступа от запросителя.|
 |isRoleScopesVisible|Boolean|Указывает, видны ли области ролей.|
 |modifiedBy|String|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
-|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
 

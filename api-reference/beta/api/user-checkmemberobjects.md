@@ -1,24 +1,24 @@
 ---
-title: 'Пользователь: Чеккмемберобжектс'
-description: Проверка членства в списке объектов группы, роли каталога или административных единиц для указанного объекта пользователя.
+title: 'пользователь: checkMemberObjects'
+description: Проверьте членство в списке объектов группового, каталога или административных единиц для указанного объекта пользователя.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8491978f3ee0c44a653cdc28a00aee39fcea1093
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1f23615fb3e62eb30f576e8015986541063d8dd2
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976589"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720363"
 ---
-# <a name="user-checkmemberobjects"></a>Пользователь: Чеккмемберобжектс
+# <a name="user-checkmemberobjects"></a>пользователь: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверка членства в списке объектов группы, роли каталога или административных единиц для указанного объекта пользователя. Этот метод является транзитивным.
+Проверьте членство в списке объектов группового, каталога или административных единиц для указанного объекта пользователя. Этот метод является транзитным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48976589"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br><br>Кроме того:<br><br><ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>Кроме того:<br><br><ul><li>При проверке на членство в группах: Group.Read.All, Group.ReadWrite.All</li><li>При проверке на членство в административных подразделениях: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>При проверке на членство в ролях каталога: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br>С<ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>И:<ul><li>При проверке на членство в группах: Group.Read.All, Group.ReadWrite.All</li><li>При проверке на членство в административных подразделениях: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>При проверке на членство в ролях каталога: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,15 +52,15 @@ POST /users/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ids|Коллекция String|Коллекция, содержащая идентификаторы объектов групп, ролей каталогов, административных единиц или идентификаторов Ролетемплате ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов.|
+|ids|Коллекция String|Коллекция, в которой содержатся объектные ИД групп, роли каталога, административные единицы или roleTemplate ID ролей каталога, в которых необходимо проверить членство. Может быть указано до 20 объектов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции String в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый объект `200 OK` коллекции String в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-Ниже приведен пример вызова этого API.
+Ниже приводится пример вызова этого API.
 
 ### <a name="request"></a>Запрос
 

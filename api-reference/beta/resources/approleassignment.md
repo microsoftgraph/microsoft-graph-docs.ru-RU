@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: d91393823efde4a384a2713723effa8c3f947a8b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 621313667c39747c5aad81192e086ad1234b0d96
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135270"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719075"
 ---
 # <a name="approleassignment-resource-type"></a>Тип ресурса appRoleAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "50135270"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 | id | Строка | Уникальный идентификатор ключа **appRoleAssignment**. Значение null не допускается. Только для чтения. |
-| creationTimestamp | DateTimeOffset | Время создания назначения роли приложения. Тип Timestamp представляет сведения о времени и дате в формате ISO 8601 (всегда используется время в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Не поддерживает `$filter`. |
+| creationTimestamp | DateTimeOffset | Время создания назначения роли приложения. Тип Timestamp представляет сведения о времени и дате в формате ISO 8601 (всегда используется время в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Не поддерживает `$filter`. |
 | principalId | Guid | Уникальный идентификатор (**ИД**) [пользователя](user.md), [группы](group.md) или [субъекта-службы](serviceprincipal.md), которым предоставляется роль приложения. Требуется при создании. Не поддерживает `$filter`. |
 | principalType | Строка | Тип назначенного субъекта. Это может "Пользователь", "Группа" или "Субъект-служба". Только для чтения. Не поддерживает `$filter`. |
 | principalDisplayName | Строка |Отображаемое имя пользователя, группа или субъекта-службы, которым было предоставлено назначение роли приложения. Только для чтения. Поддерживает `$filter` (`eq` и `startswith`). |

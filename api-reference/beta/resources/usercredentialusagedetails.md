@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса userCredentialUsageDetails
-description: Представляет использование самостоятельного сброса пароля для данного клиента.
+title: тип ресурса userCredentialUsageDetails
+description: Представляет использование сброса пароля самообслуживателя для данного клиента.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3992272aa6917aa43d2ffdb4c4c980b88fc60e7e
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a10d262444b0a33dfbeadbb21611d914d9253e0d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159820"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719908"
 ---
-# <a name="usercredentialusagedetails-resource-type"></a>Тип ресурса userCredentialUsageDetails
+# <a name="usercredentialusagedetails-resource-type"></a>тип ресурса userCredentialUsageDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет использование самостоятельного сброса пароля для данного клиента. Сведения включают сведения о пользователе, состояние сброса и причину сбоя.
+Представляет использование сброса пароля самообслуживателя для данного клиента. Сведения включают сведения о пользователях, состояние сброса и причину сбоя.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | userCredentialUsageDetails | Чтение свойств и связей объекта userCredentialUsageDetails. |
+| [Список пользователейCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | userCredentialUsageDetails | Чтение свойств и связей объекта userCredentialUsageDetails. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| authMethod | string | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (используется только для самостоятельного сброса `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode` `alternateMobileCall` (поддерживается только при регистрации). |
-| eventDateTime | DateTimeOffset | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
+| authMethod | Строка | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (только используется для самообслуживки сброс `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode` `alternateMobileCall` (поддерживается только в регистрации). |
+| eventDateTime | DateTimeOffset | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | failureReason | String | Предоставляет причину сбоя для соответствующего рабочего процесса сброса или регистрации. |
-| feature | string | Возможные значения: `registration` и `reset` . |
-| id | String | Только для чтения. Уникальный идентификатор действия. Только для чтения.|
+| функция | Строка | Возможные значения: `registration` и `reset` . |
+| id | String | Только для чтения. Уникальный идентификатор для этого действия. Только для чтения.|
 | isSuccess | Boolean | Указывает на успешность или сбой рабочего процесса. |
 | userDisplayName | String | Имя пользователя, который выполняет рабочий процесс сброса или регистрации. |
-| userPrincipalName | String | Имя пользователя, который выполняет рабочий процесс сброса или регистрации. |
+| userPrincipalName | String | Основное имя пользователя, который выполняет рабочий процесс сброса или регистрации. |
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 214bd01cd196a9f03facf4d4ca36d155831445f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a04f33c283cd82715cb1e0d63917cea7cb373329
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441349"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720461"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -39,13 +39,13 @@ PATCH /privilegedApproval/{id}
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalState|Строка| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset||
@@ -68,7 +68,7 @@ PATCH /privilegedApproval/{id}
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
+PATCH https://graph.microsoft.com/beta/privilegedApproval/{requestId}
 Content-type: application/json
 Content-length: 180
 

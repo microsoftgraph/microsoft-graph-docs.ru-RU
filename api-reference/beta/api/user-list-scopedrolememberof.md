@@ -1,24 +1,24 @@
 ---
-title: Список Скопедадминистратороф
-description: Получение списка Scopedrolemembership изменен для пользователя.
-author: krbain
+title: List scopedAdministratorOf
+description: Извлечение списка scopedRoleMembership для пользователя.
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 390a0963c5c892732da851f6e28e39f87e50c58a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1de486edef0764b528491ed63bd5fd01d2e94895
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968820"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721497"
 ---
-# <a name="list-scopedadministratorof"></a>Список Скопедадминистратороф
+# <a name="list-scopedadministratorof"></a>List scopedAdministratorOf
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [scopedrolemembership изменен](../resources/scopedrolemembership.md) для пользователя.
+Извлечение списка [scopedRoleMembership](../resources/scopedrolemembership.md) для пользователя.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -49,7 +49,7 @@ GET /users/{id}/scopedRoleMemberOf
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.
+В случае успешного применения этот метод возвращает код ответа и коллекцию объектов `200 OK` [scopedRoleMembership](../resources/scopedrolemembership.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

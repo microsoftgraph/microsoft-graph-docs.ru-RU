@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Планнерчекклиститем
-description: Ресурс **планнерчекклиститем** представляет элемент в контрольном списке задачи. Контрольный список для задачи представлен объектом Чекклиститемс.
+title: тип ресурса plannerChecklistItem
+description: Ресурс **plannerChecklistItem** представляет элемент в списке задач. Контрольный список задачи представлен объектом checklistItems.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 3c60b2727af2fccfdac8e8f9e60e055b0471c861
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5702e7a8c34c9ca0b996f437a65409371e8f3c98
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046808"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721007"
 ---
-# <a name="plannerchecklistitem-resource-type"></a>Тип ресурса Планнерчекклиститем
+# <a name="plannerchecklistitem-resource-type"></a>тип ресурса plannerChecklistItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **планнерчекклиститем** представляет элемент в контрольном списке задачи. Контрольный список для задачи представлен [объектом чекклиститемс](plannerchecklistitems.md).
+Ресурс **plannerChecklistItem** представляет элемент в списке задач. Контрольный список задачи представлен [объектом checklistItems.](plannerchecklistitems.md)
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|с возвратом|Boolean|Значение, `true` Если элемент отмечен флажком и `false` в противном случае.|
-|lastModifiedBy|[identitySet](identityset.md)| Только для чтения. Идентификатор пользователя, на который последний раз изменился.|
-|lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|orderHint|String|Используется для задания относительного порядка элементов в контрольном списке. Формат определяется, как описано [ниже](planner-order-hint-format.md).|
-|title|Строка|Название элемента контрольного списка|
+|isChecked|Boolean|Значение, `true` если элемент проверяется и в `false` противном случае.|
+|lastModifiedBy|[identitySet](identityset.md)| Только для чтения. Пользовательский ID, с помощью которого он был изменен в последний раз.|
+|lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|orderHint|String|Используется для набора относительного порядка элементов в списке. Формат определяется как описанный [здесь](planner-order-hint-format.md).|
+|title|String|Название элемента контрольного списка|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

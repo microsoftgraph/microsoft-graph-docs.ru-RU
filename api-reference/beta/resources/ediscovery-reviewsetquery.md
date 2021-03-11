@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: f9c535cb1adbb62f33aee1324b6dc06a910f4b46
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8eb674ed70eac47d4e29d127ebfc9f48b7b988a1
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447362"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720321"
 ---
 # <a name="reviewsetquery-resource-type"></a>reviewSetQuery resource type
 
@@ -36,11 +36,11 @@ ms.locfileid: "50447362"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | createdBy | [identitySet](/graph/api/resources/identityset) | Пользователь, создавший запрос. |
-| createdDateTime |DateTimeOffset| Время и дата создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+| createdDateTime |DateTimeOffset| Время и дата создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 | displayName | String | Имя запроса.|
 | id |String| Уникальный идентификатор запроса. Только для чтения.|
 | lastModifiedBy | [identitySet](/graph/api/resources/identityset) | Пользователь, который в последний раз изменил запрос. |
-| lastModifiedDateTime |DateTimeOffset | Дата и время последнего изменения запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+| lastModifiedDateTime |DateTimeOffset | Дата и время последнего изменения запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 | Запрос | String | Строка запроса в запросе KQL (Язык запросов ключевых слов). Дополнительные сведения см. [в материале Поля метаданных документа в advanced eDiscovery.](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)  Это поле совмещеется непосредственно с условием ключевых слов.  Поиск можно уточнить с помощью  полей, перечисленных в имени поля поиска в паре со значениями; например, *subject:"Quarterly Financials" And Date>=06/01/2016 and Date<=07/01/2016*. |
 
 ## <a name="relationships"></a>Связи

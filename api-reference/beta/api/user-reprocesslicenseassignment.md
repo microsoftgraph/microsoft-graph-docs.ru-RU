@@ -1,24 +1,24 @@
 ---
-title: 'Пользователь: Репроцесслиценсеассигнмент'
-description: Повторно обработайте все назначения лицензий на основе группы для пользователя.
+title: 'пользователь: reprocessLicenseAssignment'
+description: Перепроцес всех групповых назначений лицензий для пользователя.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 958e35e270034a2081e7565e7cf4eb4b7feea2d6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 58d2372356f43167b15f2b84d245f9acc98b38c8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981881"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721098"
 ---
-# <a name="user-reprocesslicenseassignment"></a>Пользователь: Репроцесслиценсеассигнмент
+# <a name="user-reprocesslicenseassignment"></a>пользователь: reprocessLicenseAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Повторно обработайте все назначения лицензий на основе группы для пользователя. Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Кроме того, для получения дополнительных сведений ознакомьтесь с [разрешениями проблем назначения лицензий для группы в Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) .
+Перепроцес всех групповых назначений лицензий для пользователя. Дополнительные информацию о лицензировании на основе групп см. в видеоролике Что такое групповое лицензирование [в Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Дополнительные сведения см. в материале [Identify and resolve license assignment problems for a group in Azure Active Directory.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)
 
 
 ## <a name="permissions"></a>Разрешения
@@ -46,10 +46,10 @@ POST /users/{id}/reprocessLicenseAssignment
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [User](../resources/user.md) в тексте отклика.
+В случае успеха этот метод возвращает `200 OK` код [](../resources/user.md) отклика и обновленный объект пользователя в тексте отклика.
 
 ## <a name="example"></a>Пример
-В приведенном ниже примере показано, как повторно обработать назначения лицензий для пользователя.
+В следующем примере показано, как перепроцесровать назначения лицензий для пользователя.
 ### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 
 ### <a name="response"></a>Отклик
-Отклик — обновленный объект User.
+Ответ — это обновленный объект пользователя.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

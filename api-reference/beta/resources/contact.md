@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4fd41e9c5027d685f064c86e927f86af1212d299
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5be9d6b9ad408d69a347990cfa458be07edef7b7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027127"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721679"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -88,39 +88,39 @@ ms.locfileid: "48027127"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assistantName|String|Имя помощника контакта.|
-|birthday|DateTimeOffset|Дата рождения контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|birthday|DateTimeOffset|Дата рождения контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |categories|Коллекция String|Категории, связанные с контактом. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя.|
 |changeKey|Строка|Указывает версию контакта. При каждом изменении контакта также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |children|Коллекция String|Имена детей контакта.|
 |companyName|String|Название компании контакта.|
-|createdDateTime|DateTimeOffset|Время создания контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|отделу;|String|Отдел контакта.|
+|createdDateTime|DateTimeOffset|Время создания контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|department|String|Отдел контакта.|
 |displayName|String|Отображаемое имя контакта. Отображаемое имя можно указать в операции [создания](../api/user-post-contacts.md) или [обновления](../api/contact-update.md). Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию [обновления](../api/contact-update.md).|
-|emailAddresses|Коллекция [типедемаиладдресс](typedemailaddress.md)|Электронные адреса контакта.|
+|emailAddresses|[коллекция typedEmailAddress](typedemailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
-|flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения для контакта. |
+|flag|[followupFlag](followupflag.md)|Значение флага, которое указывает состояние, дату начала, дату выполнения или дату завершения контакта. |
 |gender |String |Пол контакта. |
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
-|id|String| Уникальный идентификатор контакта. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
+|id|String| Уникальный идентификатор для контакта. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
 |imAddresses|Коллекция String|Адреса контакта для обмена мгновенными сообщениями.|
 |initials|String|Инициалы контакта.|
 |jobTitle|String|Должность контакта.|
-|lastModifiedDateTime|DateTimeOffset|Время изменения контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Время изменения контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |manager|String|Имя руководителя контакта.
 |middleName|String|Отчество контакта.|
 |nickName|String|Псевдоним контакта.|
 |officeLocation|String|Расположение офиса контакта.|
 |parentFolderId|String|Идентификатор родительской папки контакта.|
 |personalNotes|String|Заметки пользователя о контакте.|
-|phones |Коллекция [phone](phone.md) |Номера телефонов, связанные с контактом, например домашний телефон, мобильный телефон и служебный телефон. |
-|postalAddresses |Коллекция [physicalAddress](physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и служебный адрес. |
+|phones |Коллекция [phone](phone.md) |Телефонные номера, связанные с контактом, например домашний телефон, мобильный телефон и бизнес-телефон. |
+|postalAddresses |[коллекция physicalAddress](physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и бизнес-адрес. |
 |profession|String|Профессия контакта.|
 |spouseName|String|Имя супруга или супруги контакта.|
 |surname|String|Фамилия контакта.|
 |title|String|Звание контакта.|
 |websites |Коллекция [website](website.md)|Веб-сайты, связанные с контактом. |
-|веддинганниверсари |Дата |Годовщина свадьбы контакта. |
+|weddingAnniversary |Дата |Годовщина свадьбы контакта. |
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски.|
 |yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски.|
@@ -155,7 +155,7 @@ ms.locfileid: "48027127"
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users)

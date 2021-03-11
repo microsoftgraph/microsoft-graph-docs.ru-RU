@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9eb488b931cb5ff89796526f1285fa5454a5bae8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5862cec0cfb7a78a9e7d48fa08998327c7b7a04a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437690"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720104"
 ---
 # <a name="list-appliesto"></a>Список применяетсяTo
 
@@ -28,7 +28,7 @@ ms.locfileid: "50437690"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All |
+| Для приложений                            | Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,9 +46,9 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -67,7 +67,7 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/claimsMappingPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}/appliesTo
 ```
 
 ### <a name="response"></a>Отклик

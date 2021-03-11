@@ -1,16 +1,16 @@
 ---
 title: Список trendingAround
-description: Вычисляемое представление, возвращающее список элементов, которые обходить пользователь.
-author: krbain
+description: Вычислимая информация, возвращаемая списку элементов, относяющихся к пользователю.
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ede5f41f57c96aa490ae85a287568d6a5074556d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 139416e3b21166f50e2f9fed529a7efe6b4dbd3e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405097"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720678"
 ---
 # <a name="list-trendingaround"></a>Список trendingAround
 
@@ -18,9 +18,9 @@ ms.locfileid: "48405097"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисляемое представление, возвращающее список элементов, которые обходить пользователь.
+Вычислимая информация, возвращаемая списку элементов, относяющихся к пользователю.
 
-**Примечание:** Этот API будет устаревшим и заменен [API-интерфейсом тенденций](../resources/insights-trending.md).
+**Примечание:** Этот API будет обесценить и заменить [API Trending](../resources/insights-trending.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,7 +52,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа 200 ОК и коллекцию объектов [driveItem](../resources/driveitem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа 200 ОК и коллекцию [объектов driveItem](../resources/driveitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

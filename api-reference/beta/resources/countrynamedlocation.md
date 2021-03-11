@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: dcd31478a82e6e132264b31f070d5bad317edae7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f6a986907ee82ea3f40c7b294cf21bf4dcc191a4
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444257"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721658"
 ---
 # <a name="countrynamedlocation-resource-type"></a>тип ресурса countryNamedLocation
 
@@ -36,12 +36,12 @@ ms.locfileid: "50444257"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
+|countriesAndRegions|Коллекция объектов string|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |displayName|String|Понятное человеку имя расположения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |includeUnknownCountriesAndRegions|Boolean|Верно, если IP-адреса, которые не относятся к стране или региону, должны быть включены в именоваемом расположении.|
-|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
+|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Связи
 
