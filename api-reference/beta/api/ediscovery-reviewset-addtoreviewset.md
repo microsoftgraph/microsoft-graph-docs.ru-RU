@@ -5,32 +5,32 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 95a185a8028e35d26513fc90c05d06dbd9d900c1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4eb0a7c2de533332c57f3e26d3b6fba25a68259d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446984"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720377"
 ---
-# <a name="reviewset-addtoreviewset"></a><span data-ttu-id="88dc8-103">reviewSet: addToReviewSet</span><span class="sxs-lookup"><span data-stu-id="88dc8-103">reviewSet: addToReviewSet</span></span>
+# <a name="reviewset-addtoreviewset"></a><span data-ttu-id="a5c38-103">reviewSet: addToReviewSet</span><span class="sxs-lookup"><span data-stu-id="a5c38-103">reviewSet: addToReviewSet</span></span>
 
-<span data-ttu-id="88dc8-104">Пространство имен: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="88dc8-104">Namespace: microsoft.graph.ediscovery</span></span>
+<span data-ttu-id="a5c38-104">Пространство имен: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="a5c38-104">Namespace: microsoft.graph.ediscovery</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="88dc8-105">Начните процесс добавления коллекции из служб Microsoft 365 в набор отзывов.</span><span class="sxs-lookup"><span data-stu-id="88dc8-105">Start the process of adding a collection from Microsoft 365 services to a review set.</span></span> <span data-ttu-id="88dc8-106">После создания операции можно получить состояние операции путем получения параметра `Location` из заглавных параметров ответа.</span><span class="sxs-lookup"><span data-stu-id="88dc8-106">After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers.</span></span> <span data-ttu-id="88dc8-107">Расположение предоставляет URL-адрес, который возвращает [случайExportOperation](../resources/ediscovery-caseexportoperation.md).</span><span class="sxs-lookup"><span data-stu-id="88dc8-107">The location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).</span></span>
+<span data-ttu-id="a5c38-105">Начните процесс добавления коллекции из служб Microsoft 365 в набор отзывов.</span><span class="sxs-lookup"><span data-stu-id="a5c38-105">Start the process of adding a collection from Microsoft 365 services to a review set.</span></span> <span data-ttu-id="a5c38-106">После создания операции можно получить состояние операции путем получения параметра `Location` из заглавных параметров ответа.</span><span class="sxs-lookup"><span data-stu-id="a5c38-106">After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers.</span></span> <span data-ttu-id="a5c38-107">Расположение предоставляет URL-адрес, который возвращает [случайExportOperation](../resources/ediscovery-caseexportoperation.md).</span><span class="sxs-lookup"><span data-stu-id="a5c38-107">The location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="88dc8-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="88dc8-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a5c38-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a5c38-108">Permissions</span></span>
 
-<span data-ttu-id="88dc8-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88dc8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a5c38-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5c38-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88dc8-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="88dc8-111">Permission type</span></span>|<span data-ttu-id="88dc8-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="88dc8-112">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="a5c38-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a5c38-111">Permission type</span></span>|<span data-ttu-id="a5c38-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a5c38-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="88dc8-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="88dc8-113">Delegated (work or school account)</span></span>|<span data-ttu-id="88dc8-114">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88dc8-114">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
-|<span data-ttu-id="88dc8-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="88dc8-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="88dc8-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="88dc8-116">Not supported.</span></span>|
-|<span data-ttu-id="88dc8-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="88dc8-117">Application</span></span>|<span data-ttu-id="88dc8-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="88dc8-118">Not supported.</span></span>|
+|<span data-ttu-id="a5c38-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a5c38-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a5c38-114">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5c38-114">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
+|<span data-ttu-id="a5c38-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a5c38-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a5c38-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5c38-116">Not supported.</span></span>|
+|<span data-ttu-id="a5c38-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a5c38-117">Application</span></span>|<span data-ttu-id="a5c38-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5c38-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="88dc8-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="88dc8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a5c38-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a5c38-119">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,34 +38,34 @@ ms.locfileid: "50446984"
 -->
 
 ``` http
-POST /cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
+POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="88dc8-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="88dc8-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a5c38-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a5c38-120">Request headers</span></span>
 
-|<span data-ttu-id="88dc8-121">Имя</span><span class="sxs-lookup"><span data-stu-id="88dc8-121">Name</span></span>|<span data-ttu-id="88dc8-122">Описание</span><span class="sxs-lookup"><span data-stu-id="88dc8-122">Description</span></span>|
+|<span data-ttu-id="a5c38-121">Имя</span><span class="sxs-lookup"><span data-stu-id="a5c38-121">Name</span></span>|<span data-ttu-id="a5c38-122">Описание</span><span class="sxs-lookup"><span data-stu-id="a5c38-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="88dc8-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="88dc8-123">Authorization</span></span>|<span data-ttu-id="88dc8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="88dc8-p103">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="88dc8-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="88dc8-126">Content-Type</span></span>|<span data-ttu-id="88dc8-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="88dc8-p104">application/json. Required.</span></span>|
+|<span data-ttu-id="a5c38-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a5c38-123">Authorization</span></span>|<span data-ttu-id="a5c38-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a5c38-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="a5c38-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a5c38-126">Content-Type</span></span>|<span data-ttu-id="a5c38-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a5c38-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="88dc8-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="88dc8-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a5c38-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a5c38-129">Request body</span></span>
 
-<span data-ttu-id="88dc8-130">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="88dc8-130">In the request body, supply JSON representation of the parameters.</span></span>
+<span data-ttu-id="a5c38-130">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a5c38-130">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="88dc8-131">В следующей таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="88dc8-131">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="a5c38-131">В следующей таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="a5c38-131">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="88dc8-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="88dc8-132">Parameter</span></span>|<span data-ttu-id="88dc8-133">Тип</span><span class="sxs-lookup"><span data-stu-id="88dc8-133">Type</span></span>|<span data-ttu-id="88dc8-134">Описание</span><span class="sxs-lookup"><span data-stu-id="88dc8-134">Description</span></span>|
+|<span data-ttu-id="a5c38-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="a5c38-132">Parameter</span></span>|<span data-ttu-id="a5c38-133">Тип</span><span class="sxs-lookup"><span data-stu-id="a5c38-133">Type</span></span>|<span data-ttu-id="a5c38-134">Описание</span><span class="sxs-lookup"><span data-stu-id="a5c38-134">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="88dc8-135">sourceCollection</span><span class="sxs-lookup"><span data-stu-id="88dc8-135">sourceCollection</span></span>|[<span data-ttu-id="88dc8-136">microsoft.graph.ediscovery.sourceCollection</span><span class="sxs-lookup"><span data-stu-id="88dc8-136">microsoft.graph.ediscovery.sourceCollection</span></span>](../resources/ediscovery-sourcecollection.md)|<span data-ttu-id="88dc8-137">ID **источникаCollection**.</span><span class="sxs-lookup"><span data-stu-id="88dc8-137">The ID of the **sourceCollection**.</span></span>|
-|<span data-ttu-id="88dc8-138">additionalData</span><span class="sxs-lookup"><span data-stu-id="88dc8-138">additionalData</span></span>|[<span data-ttu-id="88dc8-139">microsoft.graph.ediscovery.dataCollectionScope</span><span class="sxs-lookup"><span data-stu-id="88dc8-139">microsoft.graph.ediscovery.dataCollectionScope</span></span>](../resources/ediscovery-addtoreviewsetoperation.md#datacollectionscope-values)|<span data-ttu-id="88dc8-140">**DataCollectionScope,** который будет включен в коллекцию.</span><span class="sxs-lookup"><span data-stu-id="88dc8-140">The **dataCollectionScope** that will be included with the collection.</span></span>|
+|<span data-ttu-id="a5c38-135">sourceCollection</span><span class="sxs-lookup"><span data-stu-id="a5c38-135">sourceCollection</span></span>|[<span data-ttu-id="a5c38-136">microsoft.graph.ediscovery.sourceCollection</span><span class="sxs-lookup"><span data-stu-id="a5c38-136">microsoft.graph.ediscovery.sourceCollection</span></span>](../resources/ediscovery-sourcecollection.md)|<span data-ttu-id="a5c38-137">ID **источникаCollection**.</span><span class="sxs-lookup"><span data-stu-id="a5c38-137">The ID of the **sourceCollection**.</span></span>|
+|<span data-ttu-id="a5c38-138">additionalData</span><span class="sxs-lookup"><span data-stu-id="a5c38-138">additionalData</span></span>|[<span data-ttu-id="a5c38-139">microsoft.graph.ediscovery.dataCollectionScope</span><span class="sxs-lookup"><span data-stu-id="a5c38-139">microsoft.graph.ediscovery.dataCollectionScope</span></span>](../resources/ediscovery-addtoreviewsetoperation.md#datacollectionscope-values)|<span data-ttu-id="a5c38-140">**DataCollectionScope,** который будет включен в коллекцию.</span><span class="sxs-lookup"><span data-stu-id="a5c38-140">The **dataCollectionScope** that will be included with the collection.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="88dc8-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="88dc8-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a5c38-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="a5c38-141">Response</span></span>
 
-<span data-ttu-id="88dc8-142">В случае успешного выполнения это действие возвращает код отклика `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="88dc8-142">If successful, this action returns a `202 Accepted` response code.</span></span>
+<span data-ttu-id="a5c38-142">В случае успешного выполнения это действие возвращает код отклика `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="a5c38-142">If successful, this action returns a `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="88dc8-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="88dc8-143">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a5c38-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="a5c38-143">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="88dc8-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="88dc8-144">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a5c38-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="a5c38-144">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -86,7 +86,7 @@ Content-length: 531
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="88dc8-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="88dc8-145">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a5c38-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="a5c38-145">Response</span></span>
 
 <!-- {
   "blockType": "response",
