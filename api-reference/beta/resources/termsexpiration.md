@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса termsExpiration
+title: тип ресурса termsExpiration
 description: Предоставляет дополнительные параметры при настройке запланированного срока действия соглашения.
 localization_priority: Normal
 ms.prod: governance
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: 3f31489a80c87dd17a31500818c0c650c57c8a7c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 29489f3e225b24cc57c20826d9a6071c2a501154
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128514"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721728"
 ---
-# <a name="termsexpiration-resource-type"></a>Тип ресурса termsExpiration
+# <a name="termsexpiration-resource-type"></a>тип ресурса termsExpiration
 
 Пространство имен: microsoft.graph
 
@@ -24,12 +24,12 @@ ms.locfileid: "50128514"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| startDateTime|DateTimeOffset | Дата и время истечения срока действия соглашения для всех пользователей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".|
-| frequency| Duration | Представляет частоту истечения срока действия терминов по истечении первого срока действия, установленного в **startDateTime.** Значение представлено в формате ISO 8601 в течение длительности. Например, `PT1M` представляет период времени 1 месяц.|
+| startDateTime|DateTimeOffset | DateTime, когда срок действия соглашения истекает для всех пользователей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+| частота| Duration | Представляет частоту, с которой срок действия терминов истекает после его первого истечения, как установлено **в startDateTime.** Значение представлено в формате ISO 8601 для длительности. Например, `PT1M` представляет период времени 1 месяц.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже приводится представление этого ресурса в JSON.
+Ниже приводится представление JSON этого ресурса.
 
 <!-- {
   "blockType": "resource",

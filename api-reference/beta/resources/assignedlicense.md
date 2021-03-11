@@ -4,13 +4,13 @@ description: Представляет лицензию, назначенную �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: krbain
-ms.openlocfilehash: 240fe5ad24858a735d0ee2ce1a668ad64d703bb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: jpettere
+ms.openlocfilehash: 4014198d211c2955866b1a56d80377e19ba4a38f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050109"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721854"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 
@@ -23,7 +23,7 @@ ms.locfileid: "48050109"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дисабледпланс|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
+|disabledPlans|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
 |skuId|Guid|Уникальный идентификатор SKU.|
 
 ## <a name="json-representation"></a>Представление JSON

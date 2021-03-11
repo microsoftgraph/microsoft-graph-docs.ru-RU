@@ -1,44 +1,44 @@
 ---
-title: Тип ресурса synchronizationTaskExecution
-description: Суммирует результаты запуска задания синхронизации.
+title: тип ресурса синхронизацииTaskExecution
+description: Суммирует результаты работы синхронизации.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ac42a91ec35c1d81d81efa52f4306bbd1cfb2f55
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d83092949e1f27c9dac9744d2b4b16be4bcbae0d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135039"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722050"
 ---
-# <a name="synchronizationtaskexecution-resource-type"></a>Тип ресурса synchronizationTaskExecution
+# <a name="synchronizationtaskexecution-resource-type"></a>тип ресурса синхронизацииTaskExecution
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Суммирует результаты запуска задания синхронизации.
+Суммирует результаты работы синхронизации.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activityIdentifier           |Строка |Идентификатор запуска задания.|
+|activityIdentifier           |String |Идентификатор запуска задания.|
 |countEntitled                |Int64  |Количество обработанных записей, которые были назначены для этого приложения.|
-|countEntitledForProvisioning |Int64  |Количество обработанных записей, которые были назначены для предоставления.|
+|countEntitledForProvisioning |Int64  |Количество обработанных записей, которые были назначены для предварительной обработки.|
 |countEscrowed                |Int64  |Количество записей, которые были escrowed (ошибки).|
-|countEscrowedRaw             |Int64  |Количество записей, которые были escrowed, включая созданные системой escrows.|
+|countEscrowedRaw             |Int64  |Количество записей, которые были депонированы, включая системные эскроу-|
 |countExported                |Int64  |Количество экспортных записей.|
-|countExports                 |Int64  |Количество записей, которые должны были быть экспортироваться.|
-|countImported                |Int64  |Количество импортируемых записей.|
-|countImportedDeltas          |Int64  |Количество импортируемых изменений.|
-|countImportedReferenceDeltas |Int64  |Количество импортируемых изменений, связанных с изменениями ссылок.|
-|error                        |[synchronizationError](synchronization-synchronizationerror.md)|Если произошла ошибка, содержит объект **synchronizationError** с подробными сведениями.|
-|state                        |String |Код, суммарный результат этого запуска. Возможные значения: `Succeeded`, `Failed`, `EntryLevelErrors`.|
-|timeBegan                    |DateTimeOffset|Время начала этого задания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|timeEnded                    |DateTimeOffset|Время окончания этого задания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|countExports                 |Int64  |Количество записей, которые должны были экспортироваться.|
+|countImported                |Int64  |Количество импортных записей.|
+|countImportedDeltas          |Int64  |Количество импортируемых изменений дельты.|
+|countImportedReferenceDeltas |Int64  |Количество импортируемых изменений дельты, относящихся к эталонным изменениям.|
+|error                        |[синхронизацияError](synchronization-synchronizationerror.md)|В случае ошибки содержится объект **синхронизацииError** с подробными сведениями.|
+|state                        |String |Код, подводя итоги этого запуска. Возможные значения: `Succeeded`, `Failed`, `EntryLevelErrors`.|
+|timeBegan                    |DateTimeOffset|Время начала этого запуска задания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|timeEnded                    |DateTimeOffset|Время окончания этого задания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса agreementAcceptance
-description: Представляет текущее состояние пользователя в пределах области настраиваемых терминов компании на платформе Azure Active Directory (Azure AD).
+title: тип ресурса agreementAcceptance
+description: Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с использованием Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: f3bad64c1cb691c5a5f5c1c5377bcb4e0188f184
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55e0be212c0f7a9e655acff03606eda851a0e5c6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067510"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722484"
 ---
-# <a name="agreementacceptance-resource-type"></a>Тип ресурса agreementAcceptance
+# <a name="agreementacceptance-resource-type"></a>тип ресурса agreementAcceptance
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние пользователя в пределах области настраиваемых терминов компании на платформе Azure Active Directory (Azure AD).
+Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с использованием Azure Active Directory (Azure AD).
 
 <!--
 ## Methods
@@ -33,22 +33,22 @@ ms.locfileid: "48067510"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|агриментфилеид|String|Идентификатор файла соглашения, принятого пользователем.|
-|агриментид|String|Идентификатор соглашения.|
-|deviceDisplayName|String|Отображаемое имя устройства, используемое для принятия соглашения.|
-|deviceId|String|Уникальный идентификатор устройства, используемого для принятия соглашения.|
-|девицеостипе|String|Операционная система, используемая для принятия соглашения.|
-|девицеосверсион|String|Версия операционной системы устройства, используемая для принятия соглашения.    |
-|expirationDateTime|DateTimeOffset|Дата и время окончания срока действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|agreementFileId|String|ID файла соглашения, принятого пользователем.|
+|agreementId|String|ID соглашения.|
+|deviceDisplayName|String|Отображающее имя устройства, используемого для принятие соглашения.|
+|deviceId|String|Уникальный идентификатор устройства, используемого для принятие соглашения.|
+|deviceOSType|String|Операционная система, используемая для принятие соглашения.|
+|deviceOSVersion|String|Версия операционной системы устройства, используемого для принятие соглашения.    |
+|expirationDateTime|DateTimeOffset|Срок действия даты принятия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
-|recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |состояние|string| Возможные значения: `accepted`, `declined`.|
-|userDisplayName|String|Отображаемое имя пользователя, когда оно было записано.|
-|userEmail|String|Сообщение электронной почты пользователя, когда сообщение о принятии было записано.|
-|userId|String|Идентификатор пользователя, который принял соглашение.|
-|userPrincipalName|String|Имя участника-пользователя, когда оно было записано.|
+|userDisplayName|String|Отображение имени пользователя при записи приемки.|
+|userEmail|String|Электронная почта пользователя при записи принятия.|
+|userId|String|ID пользователя, который принял соглашение.|
+|userPrincipalName|String|UPN пользователя при записи принятия.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 

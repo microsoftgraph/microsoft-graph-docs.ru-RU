@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7e045a327869432eb58d135262da1a3f4fa91307
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ea0d6ae14d93fbc691af4713cf40452a890d1891
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433259"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722190"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>тип ресурса accessPackageResourceRequest
 
@@ -32,7 +32,7 @@ ms.locfileid: "50433259"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |catalogId|String|Уникальный ID каталога пакетов доступа.|
-|expirationDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|expirationDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
 |isValidationOnly|Boolean|Если установлено, ресурс не добавляется.|
 |обоснование|String|Обоснование запроса для добавления или удаления ресурса.|

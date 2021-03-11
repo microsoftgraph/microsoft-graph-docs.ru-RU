@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: b1e601908a8f12523f9e02549e3fd24903e77bda
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 29b30bd80dba96b061d0c83f2710d224c3da8758
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442224"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721784"
 ---
 # <a name="update-program"></a>Программа обновления
 
@@ -33,14 +33,14 @@ ms.locfileid: "50442224"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /programs('{programId}')
+PATCH /programs/{programId}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [программы.](../resources/program.md)
 
 В следующей таблице показаны свойства, которые можно получить при обновлении программы.

@@ -1,18 +1,18 @@
 ---
-title: Обновление synchronizationTemplate
+title: Обновление синхронизацииTemplate
 description: Обновление (переопределение) шаблона синхронизации, связанного с заданным приложением.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b388c4e63eb30f7ad9fc8cb65a3afed305f12926
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 133f503ee6361619581cea058fbf3a47a8c7de01
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137237"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722024"
 ---
-# <a name="update-synchronizationtemplate"></a>Обновление synchronizationTemplate
+# <a name="update-synchronizationtemplate"></a>Обновление синхронизацииTemplate
 
 Пространство имен: microsoft.graph
 
@@ -27,12 +27,12 @@ ms.locfileid: "50137237"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается.| 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH application/{id}/synchronization/templates/{templateId}
+PATCH applications/{id}/synchronization/templates/{templateId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -43,7 +43,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укавите объект [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) для замены существующего шаблона. Убедитесь, что предоставлены все свойства. Отсутствующие свойства будут стираться.
+В теле запроса поставляем объект [синхронизацииTemplate](../resources/synchronization-synchronizationtemplate.md) для замены существующего шаблона. Убедитесь, что все свойства предоставлены. Отсутствующие свойства будут стерт.
 
 ### <a name="response"></a>Отклик
 
@@ -54,7 +54,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса. 
 
->**Примечание.** Показанный здесь объект запроса сокращен для учитаемости. Включит все свойства в фактический вызов.
+>**Примечание:** Показанный здесь объект запроса сокращается для читаемости. Включай все свойства в фактический вызов.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

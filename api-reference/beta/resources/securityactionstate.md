@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Секуритяктионстате
+title: тип ресурса securityActionState
 description: Представляет историю изменений состояния securityAction.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: ba22a03f4d4a6d03b0093ed28b8c54a7c095d037
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a2fecbc05c9987ee8daec8fa017d728a2d03ed3
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988865"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722092"
 ---
-# <a name="securityactionstate-resource-type"></a>Тип ресурса Секуритяктионстате
+# <a name="securityactionstate-resource-type"></a>тип ресурса securityActionState
 
 Пространство имен: microsoft.graph
 
@@ -24,10 +24,10 @@ ms.locfileid: "47988865"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appId|String|Идентификатор приложения вызывающего приложения, отправившего обновление (исправление) действию. Его `appId` необходимо извлечь из маркера проверки подлинности и не вводить вручную вызывающим приложением.|
+|appId|String|ID приложения вызываемого приложения, которое представило обновление (PATCH) к действию. Маркер должен быть извлечен из маркера auth и не вошел `appId` вручную с помощью вызываемого приложения.|
 |status|String| Состояние securityAction в этом обновлении. Возможные значения: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|упдатеддатетиме|DateTimeOffset| Временная метка при обновлении actionState. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|user|String|Имя участника-пользователя, который выполнил вход в действие при отправке обновления (исправления). Его `user` необходимо извлечь из маркера проверки подлинности и не вводить вручную вызывающим приложением.|
+|updatedDateTime|DateTimeOffset| Timestamp при обновлении actionState. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|user|String|Основное имя пользователя пользователя, который отправил в действие обновление (PATCH). Маркер должен быть извлечен из маркера auth и не вошел `user` вручную с помощью вызываемого приложения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

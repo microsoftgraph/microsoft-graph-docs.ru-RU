@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 7206bea058910aa24d6dd907ea495acb6cace0aa
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6d9e1b56a503ffdf1bde6bde6a583b78f8a34851
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443106"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722309"
 ---
 # <a name="governanceroleassignment-resource-type"></a>тип ресурса governanceRoleAssignment
 
@@ -42,8 +42,8 @@ ms.locfileid: "50443106"
 |subjectId|String       |Обязательный. ID субъекта, с которым связано назначение ролей. |
 |linkedEligibleRoleAssignmentId|String|Если это и создано из-за активации `active assignment` на , он представляет собой `eligible assignment` ID `eligible assignment` этого; В противном случае значение `null` . |
 |externalId   |String     |Внешний ID ресурса, который используется для определения назначения роли в поставщике.|
-|startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|endDateTime|DateTimeOffset|Для назначения непостоянных ролей это время, когда срок действия назначения роли истекает. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Для назначения непостоянных ролей это время, когда срок действия назначения роли истекает. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |assignmentState|String  |Состояние назначения. Значение может быть <ul><li> `Eligible` для назначения</li><li> `Active` - если оно непосредственно назначено администраторами или активировано при назначении, назначенное `Active` пользователями.</li></ul>|
 |memberType|String      |Тип участника. Значение может быть: <ul><li>`Inherited` — назначение роли наследуется из области родительского ресурса</li><li>`Group`— назначение роли не наследуется, а происходит от членства в групповом назначении</li><li>`User` — назначение роли не наследуется или не наследуется групповым назначением.</li></ul>|
 

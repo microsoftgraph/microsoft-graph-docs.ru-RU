@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса threatAssessmentResult
-description: Представляет элемент результата оценки угрозы.
+title: тип ресурса threatAssessmentResult
+description: Представляет элемент результатов оценки угроз.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 35a5d10b631a22f19c881b1d3c2326ab6b09b46c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9120ad0afe3efb2a559e913c7b6357a76e9ac49b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155519"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722078"
 ---
-# <a name="threatassessmentresult-resource-type"></a>Тип ресурса threatAssessmentResult
+# <a name="threatassessmentresult-resource-type"></a>тип ресурса threatAssessmentResult
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет элемент результата оценки угрозы.
+Представляет элемент результатов оценки угроз.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|String|Идентификатор результата оценки угроз — это глобальный уникальный идентификатор (GUID).|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|id|String|Идентификатор результатов оценки угроз — это уникальный идентификатор глобального идентификатора (GUID).|
 |message|String|Сообщение результата для каждой оценки угрозы.|
-|resultType|[threatAssessmentResultType](enums.md#threatassessmentresulttype-values)|Тип результата оценки угроз. Возможные значения: `checkPolicy`, `rescan`.|
+|resultType|[threatAssessmentResultType](enums.md#threatassessmentresulttype-values)|Тип результатов оценки угроз. Возможные значения: `checkPolicy`, `rescan`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: c03202a2df807bcc9c4d9b0707e50aa5b9d519c1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a7786408d782f4b380ad7761bcc7c91ce6b8340b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447386"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722477"
 ---
 # <a name="case-resource-type"></a>тип ресурса case
 
@@ -47,15 +47,15 @@ ms.locfileid: "50447386"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |closedBy|[identitySet](/graph/api/resources/identityset)|Пользователь, закрывавший дело.|
-|closedDateTime|DateTimeOffset|Дата и время закрытия дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|closedDateTime|DateTimeOffset|Дата и время закрытия дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](/graph/api/resources/identityset)|Пользователь, создавший дело.|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |description|String|Описание случая.|
 |displayName|String|Имя случая.|
 |externalId|String|Внешний номер случая для клиентской ссылки.|
 |id|String| ID для дела об обнаружении электронной почты. Только для чтения. |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|Последний пользователь, который изменил сущность.|
-|lastModifiedDateTime|DateTimeOffset| Последняя дата и время изменения дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset| Последняя дата и время изменения дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |status|microsoft.graph.ediscovery.caseStatus| Состояние дела. Возможные значения `unknown` : , , , , , и `active` `pendingDelete` `closing` `closed` `closedWithError` . Подробные сведения см. в следующей таблице.|
 
 ### <a name="casestatus-values"></a>значения caseStatus

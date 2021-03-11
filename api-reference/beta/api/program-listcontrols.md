@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 4fbf23ec1b0f0d25d412cb80389001b15be8de50
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 06eeeed15e6f46c8bbe802e504a1d7b15a83d867
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440987"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721782"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Список программКонтроли программы
 
@@ -26,21 +26,21 @@ ms.locfileid: "50440987"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Для приложений                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
  Подписанный пользователь также должен быть в роли каталога, которая позволяет им читать программу.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /programs('{programId}')/controls
+GET /programs/{programId}/controls
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
