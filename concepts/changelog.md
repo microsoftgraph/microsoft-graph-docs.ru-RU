@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5b6dd45622371277deb40b28763edd0dc2c6275b
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 44349921023e4197f73709a5b2cae0b0e56e02d8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575821"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722211"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -34,7 +34,6 @@ ms.locfileid: "50575821"
 | Дополнение        | 1.0        | Появился новый тип ресурса [applicationTemplate](/graph/api/resources/applicationtemplate.md). Этот тип поддерживает операции [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) и [get](/graph/api/applicationtemplate-get.md) с приложениями из коллекции Azure AD.
 
 ## <a name="february-2021"></a>Февраль 2021 г.
-
 
 ### <a name="cloud-communications"></a>Облачные коммуникации
 | **Тип изменения** | **Версия**   | **Описание**                                                                                              |
@@ -710,7 +709,7 @@ ms.locfileid: "50575821"
 | Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). Это свойство заменено свойством **includeResourceData**. |
 | Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](change-notifications-delivery.md). |
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -985,7 +984,7 @@ ms.locfileid: "50575821"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлены ресурсы [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection) и [resourceData](/graph/api/resources/resourcedata) для API [change notification](/graph/api/concepts/webhooks). |
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
@@ -1701,7 +1700,7 @@ ms.locfileid: "50575821"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 
 Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
 
@@ -3697,8 +3696,8 @@ ms.locfileid: "50575821"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | Бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
-| Дополнение        | Бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Дополнение        | Бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
+| Дополнение        | Бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Дополнение        | Бета          | Добавлены объект [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true); <br> [Создание](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [получение](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true); <br> [обновление](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true); <br> [удаление](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|

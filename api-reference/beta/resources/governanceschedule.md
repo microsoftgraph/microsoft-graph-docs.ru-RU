@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса governanceSchedule
-description: 'Представляет расписание для governanceRoleAssignmentRequest. Для запроса на назначение роли расписание контролирует время выполнения операции назначения роли, время остановки назначения роли и то, как часто выполняется операция назначения ролей. '
+title: тип ресурса governanceSchedule
+description: 'Представляет расписание для governanceRoleAssignmentRequest. Для запроса назначения ролей расписание контролирует время выполнения операции назначения ролей, остановку назначения ролей и частое выполнение операции назначения ролей. '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: e7b444b1daa45daf3228476fb48a38be4e7bb2b2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f7583f15641c541493ded9f9a4779777e9f35f2a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132678"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722286"
 ---
-# <a name="governanceschedule-resource-type"></a>Тип ресурса governanceSchedule
+# <a name="governanceschedule-resource-type"></a>тип ресурса governanceSchedule
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет расписание для [governanceRoleAssignmentRequest.](../resources/governanceroleassignmentrequest.md) Для запроса на назначение роли расписание контролирует время выполнения операции назначения роли, время остановки назначения роли и время выполнения операции назначения роли.
+Представляет расписание для [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). Для запроса назначения ролей расписание контролирует время выполнения операции назначения ролей, остановку назначения ролей и частое выполнение операции назначения ролей.
 
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|endDateTime|DateTimeOffset|Время окончания назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. *Примечание. Если это значение, `null` оно указывает на постоянное назначение.*|
-|type|Строка|Тип расписания назначения ролей. Пока `Once` поддерживается только.
-|duration|Duration|Продолжительность назначения роли. Он имеет формат TimeSpan.|
+|startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Конечное время назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. *Примечание. Если это `null` значение, оно указывает на постоянное назначение.*|
+|type|String|Тип расписания назначения ролей. Только `Once` поддерживается на данный момент.
+|duration|Duration|Продолжительность назначения ролей. Он находится в формате TimeSpan.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

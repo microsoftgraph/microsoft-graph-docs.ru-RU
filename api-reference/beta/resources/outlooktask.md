@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 524adc7d538203569253af52d29d1fa588f00269
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 05f11678242aca85f64c742a3a74b2db287aa7bf
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998382"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721812"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>Тип ресурса outlookTask (нерекомендуемый)
 
@@ -65,13 +65,13 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |categories|Коллекция String|Категории, связанные с задачей. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенному пользователем.|
 |changeKey|String|Версия задачи.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача была завершена.|
-|createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
 |hasAttachments|Boolean|Присвоено значение true, если у задачи есть вложения.|
 |id|String| Уникальный идентификатор задачи. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |owner|String|Имя пользователя, создавшего задачу.|
 |parentFolderId|String|Уникальный идентификатор родительской папки задачи.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Расписание повторения задачи.|

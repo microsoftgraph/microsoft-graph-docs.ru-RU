@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 2a976632c038f87a1a3e09c3683ebcdd6d448b35
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b6e7a9c4a761b699ffe4128a62fd69a75a0662df
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444009"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722271"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>тип ресурса privilegedRoleAssignmentRequest
 
@@ -39,7 +39,7 @@ ms.locfileid: "50444009"
 |assignmentState|String| Состояние назначения. Это значение может быть для присвоения, если оно непосредственно назначено администраторами или активировано при назначении, назначенного `Eligible` `Active` `Active` пользователями.|
 |duration|String| Продолжительность назначения ролей.|
 |reason|String| Причина назначения роли.|
-|requestedDateTime|DateTimeOffset| Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|requestedDateTime|DateTimeOffset| Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |roleId|String| ID роли.|
 |schedule|[governanceSchedule](governanceschedule.md)| Объект расписания запроса назначения ролей.|
 |status|String| Read-only.The status of the role assignment request. Значение может быть `NotStarted` , , , , , , , `Completed` , `RequestedApproval` `Scheduled` `Approved` `ApprovalDenied` `ApprovalAborted` `Cancelling` `Cancelled` `Revoked` `RequestExpired` .|
