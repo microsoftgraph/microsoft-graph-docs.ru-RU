@@ -1,22 +1,22 @@
 ---
-title: Список Транситивемембероф
-description: Получение групп, участником которых является контакт органзиатионал. Этот запрос API является транзитивным и также возвращает все группы, в которых пользователь является вложенным.
+title: Список transitiveMemberOf
+description: Получите группы, в которые входит органзиационный контакт. Этот запрос API является транзитным и также возвращает все группы, вложенные пользователем.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2387bf17583869f8b5a043d0a8318a424f37af15
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 94a41d23225615a6233b8d37a5cded8f569c7898
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797146"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625992"
 ---
-# <a name="list-transitivememberof"></a>Список Транситивемембероф
+# <a name="list-transitivememberof"></a>Список transitiveMemberOf
 
 Пространство имен: microsoft.graph
 
-Получение групп, членом которых является это [организационное Контактное лицо](../resources/orgcontact.md) . Запрос API является транзитивным и возвращает все группы. Контактное лицо является вложенным элементом.
+Получите группы, [в которые](../resources/orgcontact.md) входит этот организационный контакт. Запрос API является транзитным и возвращает все группы, вложенные в организацию.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "48797146"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Этот метод поддерживает `$select` [параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -67,13 +67,13 @@ GET /contacts/{id}/transitiveMemberOf
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/{id}/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/contacts/{id}/transitiveMemberOf
 ```
 
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
->**Примечание** . Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+>**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",

@@ -3,21 +3,21 @@ author: daspek
 title: Получить конечную точку websocket
 localization_priority: Normal
 ms.prod: sharepoint
-description: Позволяет получать уведомления об изменениях диска в режиме реального времени с помощью socket.io.
+description: Позволяет получать уведомления об изменениях в режиме реального времени для диска с socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: 2868ba963114bc78053c6098996b6cff597572d9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3c937a9d51073ca89148c9ff8a3b51c8f32d30c5
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238444"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626218"
 ---
 # <a name="get-websocket-endpoint"></a>Получить конечную точку websocket
 
 Пространство имен: microsoft.graph
 
-Позволяет получать уведомления об изменениях диска и [][] списка в [][]режиме реального времени с помощью [socket.io.][]
-Socket.io является популярной библиотекой уведомлений для JavaScript, которая использует WebSockets. Дополнительные узнать см. [в socket.io.](https://socket.io)
+Позволяет получать уведомления об изменениях в режиме [][] реального времени для диска и списка с помощью [socket.io.][] [][]
+Socket.io — это популярная библиотека уведомлений для JavaScript, которая использует WebSockets. Подробнее см. в [socket.io.](https://socket.io)
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
@@ -29,8 +29,8 @@ Socket.io является популярной библиотекой увед�
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)
 |:---------------------------------------|:-------------------------------------------
-| Делегированное (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-| Делегированное (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
+| Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
+| Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
 | Для приложений                            | Не поддерживается.
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,7 +40,7 @@ Socket.io является популярной библиотекой увед�
 ```http
 GET /me/drive/root/subscriptions/socketIo
 GET /drives/{driveId}/root/subscriptions/socketIo
-GET /lists/{list-id}/subscriptions/socketIo
+GET /drives/{driveId}/list/subscriptions/socketIo
 GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```
@@ -76,7 +76,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `200 OK` объект [подписки](../resources/subscription.md) в тексте отклика.
+В случае успешного использования этот метод возвращает код отклика и объект подписки `200 OK` в тексте [](../resources/subscription.md) ответа.
 
 <!-- {
   "blockType": "response",
@@ -93,9 +93,9 @@ Content-type: application/json
 }
 ```
 
-Возвращается `notificationUrl` URL-адрес socket.io конечной точки.
+Возвращенный `notificationUrl` URL-адрес socket.io конечной точки.
 
-В следующем примере показано, как использовать `notificationUrl` socket.io в JavaScript.
+В следующем примере показано, как использовать `notificationUrl` socket.io JavaScript.
 
 ```javascript
 // this is the notificationUrl returned from this API

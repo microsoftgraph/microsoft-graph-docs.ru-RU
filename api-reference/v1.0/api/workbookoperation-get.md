@@ -1,20 +1,20 @@
 ---
-title: Получение Воркбукоператион
-description: Получение состояния объекта Воркбукоператион.
+title: Get workbookOperation
+description: Извлечение состояния объекта workbookOperation.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2d5aca6184a392409abe8e103255ebe9999e9478
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5947f24447a96d4f28275322b25b507c95256978
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988649"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626140"
 ---
-# <a name="get-workbookoperation"></a>Получение Воркбукоператион
+# <a name="get-workbookoperation"></a>Get workbookOperation
 
-Получение состояния объекта [воркбукоператион](../resources/workbookoperation.md) .
+Извлечение состояния [объекта workbookOperation.](../resources/workbookoperation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -22,7 +22,7 @@ ms.locfileid: "47988649"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Files. ReadWrite. |
+| Делегированные (рабочая или учебная учетная запись)     | Files.ReadWrite. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -31,7 +31,7 @@ ms.locfileid: "47988649"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/operations/{operation-id}
+GET /me/drive/items/{id}/workbook/operations/{operation-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,13 +40,13 @@ GET workbook/operations/{operation-id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркбукоператион](../resources/workbookoperation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [workbookOperation](../resources/workbookoperation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен ответ со статусом "работает".
+Ниже приводится ответ со статусом "запуск".
 
 
 <!-- {
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-Ниже приведен ответ со статусом "выполнено успешно".
+Ниже приводится ответ со статусом "успешно".
 
 ```http
 HTTP/1.1 200 OK
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-Ниже приведен ответ со статусом "Failed".
+Ниже приводится ответ со статусом "не удалось".
 
 ```http
 HTTP/1.1 200 OK

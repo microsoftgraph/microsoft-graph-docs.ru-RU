@@ -1,22 +1,22 @@
 ---
-title: Получение Воркбуккоммент
-description: Получение свойств и связей объекта воркбуккоммент.
+title: Get workbookComment
+description: Извлечение свойств и связей объекта книги.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6d9378f4f2ee69108384e771e42a317060a53dce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 199350a2da6a93a734e08b92181ef1f518848f1d
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970756"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626246"
 ---
-# <a name="get-workbookcomment"></a>Получение Воркбуккоммент
+# <a name="get-workbookcomment"></a>Get workbookComment
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [воркбуккоммент](../resources/workbookcomment.md) .
+Извлечение свойств и связей объекта [workbookComment.](../resources/workbookcomment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "47970756"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/comments/{id}
+GET /me/drive/items/{id}/workbook/comments/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,13 +42,13 @@ GET workbook/comments/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркбуккоммент](../resources/workbookcomment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [workbookComment](../resources/workbookcomment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

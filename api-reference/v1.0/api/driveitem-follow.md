@@ -1,24 +1,24 @@
 ---
 author: learafa
 description: Отслеживание ресурса driveItem.
-title: Подписаться на диск
+title: Следуйте элементу диска
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e0a60f3c8254eeccb4476c9b27e1bf47e0a3559d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96d979708ea9a1c5a607804cde5f7c4171228916
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009795"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625978"
 ---
-# <a name="follow-drive-item"></a>Подписаться на диск
+# <a name="follow-drive-item"></a>Следуйте элементу диска
 
 Пространство имен: microsoft.graph
 
-Подпишитесь на [driveItem](../resources/driveitem.md).
+Следуйте [driveItem](../resources/driveitem.md).
 
->**Примечание:** Чтобы отписаться от элемента, ознакомьтесь со статьей [элемент не подписаться](driveitem-unfollow.md).
+>**Примечание:** Чтобы отоблести элемент, см. [в статье Unfollow item](driveitem-unfollow.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,7 +36,7 @@ ms.locfileid: "48009795"
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/follow
-POST /groups/{group-id/drive/items/{item-id}/follow
+POST /groups/{group-id}/drive/items/{item-id}/follow
 POST /me/drive/items/{item-id}/follow
 POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
@@ -48,11 +48,11 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 ## <a name="response"></a>Отклик
 
-Этот метод возвращает объект [DriveItem](../resources/driveitem.md) для отслеживаемого элемента.
+Этот метод возвращает [driveItem для](../resources/driveitem.md) элемента, за которым следует.
 
 ## <a name="example"></a>Пример
 
-В этом примере используется элемент, идентифицируемый `{item-id}` .
+В этом примере следует элемент, идентифицированный `{item-id}` .
 
 
 # <a name="http"></a>[HTTP](#tab/http)
