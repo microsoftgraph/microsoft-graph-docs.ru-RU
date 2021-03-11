@@ -1,62 +1,62 @@
 ---
-title: Получение Воркбуккоммент
-description: Получение свойств и связей объекта воркбуккоммент.
+title: Get workbookComment
+description: Извлечение свойств и связей объекта книги.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6d9378f4f2ee69108384e771e42a317060a53dce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 199350a2da6a93a734e08b92181ef1f518848f1d
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970756"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626246"
 ---
-# <a name="get-workbookcomment"></a><span data-ttu-id="e8529-103">Получение Воркбуккоммент</span><span class="sxs-lookup"><span data-stu-id="e8529-103">Get workbookComment</span></span>
+# <a name="get-workbookcomment"></a><span data-ttu-id="5b965-103">Get workbookComment</span><span class="sxs-lookup"><span data-stu-id="5b965-103">Get workbookComment</span></span>
 
-<span data-ttu-id="e8529-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e8529-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5b965-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b965-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e8529-105">Получение свойств и связей объекта [воркбуккоммент](../resources/workbookcomment.md) .</span><span class="sxs-lookup"><span data-stu-id="e8529-105">Retrieve the properties and relationships of a [workbookComment](../resources/workbookcomment.md) object.</span></span>
+<span data-ttu-id="5b965-105">Извлечение свойств и связей объекта [workbookComment.](../resources/workbookcomment.md)</span><span class="sxs-lookup"><span data-stu-id="5b965-105">Retrieve the properties and relationships of a [workbookComment](../resources/workbookcomment.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e8529-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e8529-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5b965-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5b965-106">Permissions</span></span>
 
-<span data-ttu-id="e8529-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8529-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5b965-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b965-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e8529-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e8529-109">Permission type</span></span>                        | <span data-ttu-id="e8529-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e8529-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="5b965-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5b965-109">Permission type</span></span>                        | <span data-ttu-id="5b965-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5b965-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e8529-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e8529-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e8529-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8529-112">Files.ReadWrite</span></span> |
-| <span data-ttu-id="e8529-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e8529-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8529-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e8529-114">Not supported.</span></span> |
-| <span data-ttu-id="e8529-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e8529-115">Application</span></span>                            | <span data-ttu-id="e8529-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e8529-116">Not supported.</span></span> |
+| <span data-ttu-id="5b965-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5b965-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5b965-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5b965-112">Files.ReadWrite</span></span> |
+| <span data-ttu-id="5b965-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5b965-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b965-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5b965-114">Not supported.</span></span> |
+| <span data-ttu-id="5b965-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5b965-115">Application</span></span>                            | <span data-ttu-id="5b965-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5b965-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e8529-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e8529-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b965-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5b965-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/comments/{id}
+GET /me/drive/items/{id}/workbook/comments/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e8529-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e8529-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5b965-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5b965-118">Request headers</span></span>
 
-| <span data-ttu-id="e8529-119">Имя</span><span class="sxs-lookup"><span data-stu-id="e8529-119">Name</span></span>      |<span data-ttu-id="e8529-120">Описание</span><span class="sxs-lookup"><span data-stu-id="e8529-120">Description</span></span>|
+| <span data-ttu-id="5b965-119">Имя</span><span class="sxs-lookup"><span data-stu-id="5b965-119">Name</span></span>      |<span data-ttu-id="5b965-120">Описание</span><span class="sxs-lookup"><span data-stu-id="5b965-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e8529-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e8529-121">Authorization</span></span> | <span data-ttu-id="e8529-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e8529-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5b965-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5b965-121">Authorization</span></span> | <span data-ttu-id="5b965-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b965-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e8529-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e8529-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b965-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5b965-124">Request body</span></span>
 
-<span data-ttu-id="e8529-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e8529-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="5b965-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5b965-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e8529-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="e8529-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5b965-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b965-126">Response</span></span>
 
-<span data-ttu-id="e8529-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркбуккоммент](../resources/workbookcomment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e8529-127">If successful, this method returns a `200 OK` response code and the requested [workbookComment](../resources/workbookcomment.md) object in the response body.</span></span>
+<span data-ttu-id="5b965-127">В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [workbookComment](../resources/workbookcomment.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="5b965-127">If successful, this method returns a `200 OK` response code and the requested [workbookComment](../resources/workbookcomment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e8529-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="e8529-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5b965-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="5b965-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e8529-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="e8529-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5b965-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b965-129">Request</span></span>
 
-<span data-ttu-id="e8529-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e8529-130">The following is an example of the request.</span></span>
+<span data-ttu-id="5b965-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5b965-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e8529-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="e8529-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5b965-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b965-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_workbookcomment"
@@ -65,30 +65,30 @@ GET workbook/comments/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="e8529-132">C#</span><span class="sxs-lookup"><span data-stu-id="e8529-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5b965-132">C#</span><span class="sxs-lookup"><span data-stu-id="5b965-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookcomment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e8529-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e8529-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5b965-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b965-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-workbookcomment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e8529-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e8529-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5b965-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b965-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookcomment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e8529-135">Java</span><span class="sxs-lookup"><span data-stu-id="e8529-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5b965-135">Java</span><span class="sxs-lookup"><span data-stu-id="5b965-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-workbookcomment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e8529-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="e8529-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5b965-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b965-136">Response</span></span>
 
-<span data-ttu-id="e8529-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e8529-137">The following is an example of the response.</span></span>
+<span data-ttu-id="5b965-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5b965-137">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e8529-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e8529-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5b965-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5b965-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
