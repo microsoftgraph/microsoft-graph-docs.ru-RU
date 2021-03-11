@@ -29,7 +29,7 @@ ms.locfileid: "50722274"
 |createdDateTime|DateTimeOffset|Время начала процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хеши файлов (криптографические и чувствительные к расположению).|
 |integrityLevel|processIntegrityLevel|Уровень целостности процесса. Возможные значения: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|isElevated|Boolean|True, если процесс повышен.|
+|isElevated|Логический|True, если процесс повышен.|
 |name|String|Имя файла Image процесса.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime, на котором был запущен родительский процесс. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |parentProcessId|Int32|ID процесса (PID) родительского процесса.|
