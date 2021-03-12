@@ -2,32 +2,32 @@
 title: Тип ресурса licenseUnitsDetail
 description: Свойство **prepaidUnits** объекта subscribedSku относится к типу **licenseUnitsDetail**.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a942cb72d3830e95f983134a960daa4af1ff1589
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a34b093954915fa49ed7d907e367c7e53133c14f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136652"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722225"
 ---
-# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="3ed62-103">Тип ресурса licenseUnitsDetail</span><span class="sxs-lookup"><span data-stu-id="3ed62-103">licenseUnitsDetail resource type</span></span>
+# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="248a3-103">Тип ресурса licenseUnitsDetail</span><span class="sxs-lookup"><span data-stu-id="248a3-103">licenseUnitsDetail resource type</span></span>
 
-<span data-ttu-id="3ed62-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3ed62-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="248a3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="248a3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3ed62-105">Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**.</span><span class="sxs-lookup"><span data-stu-id="3ed62-105">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
+<span data-ttu-id="248a3-105">Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**.</span><span class="sxs-lookup"><span data-stu-id="248a3-105">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3ed62-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="3ed62-106">Properties</span></span>
-| <span data-ttu-id="3ed62-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="3ed62-107">Property</span></span>     | <span data-ttu-id="3ed62-108">Тип</span><span class="sxs-lookup"><span data-stu-id="3ed62-108">Type</span></span>   |<span data-ttu-id="3ed62-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3ed62-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="248a3-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="248a3-106">Properties</span></span>
+| <span data-ttu-id="248a3-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="248a3-107">Property</span></span>     | <span data-ttu-id="248a3-108">Тип</span><span class="sxs-lookup"><span data-stu-id="248a3-108">Type</span></span>   |<span data-ttu-id="248a3-109">Описание</span><span class="sxs-lookup"><span data-stu-id="248a3-109">Description</span></span>|
 |:-------------|:-----|:----------|
-|<span data-ttu-id="3ed62-110">enabled</span><span class="sxs-lookup"><span data-stu-id="3ed62-110">enabled</span></span>|<span data-ttu-id="3ed62-111">Int32</span><span class="sxs-lookup"><span data-stu-id="3ed62-111">Int32</span></span>| <span data-ttu-id="3ed62-112">Количество включенных единиц.</span><span class="sxs-lookup"><span data-stu-id="3ed62-112">The number of units that are enabled.</span></span> |
-|<span data-ttu-id="3ed62-113">suspended</span><span class="sxs-lookup"><span data-stu-id="3ed62-113">suspended</span></span>|<span data-ttu-id="3ed62-114">Int32</span><span class="sxs-lookup"><span data-stu-id="3ed62-114">Int32</span></span>| <span data-ttu-id="3ed62-115">Количество приостановленных единиц.</span><span class="sxs-lookup"><span data-stu-id="3ed62-115">The number of units that are suspended.</span></span> |
-|<span data-ttu-id="3ed62-116">warning</span><span class="sxs-lookup"><span data-stu-id="3ed62-116">warning</span></span>|<span data-ttu-id="3ed62-117">Int32</span><span class="sxs-lookup"><span data-stu-id="3ed62-117">Int32</span></span>| <span data-ttu-id="3ed62-118">Количество единиц, которые находятся в состоянии предупреждения.</span><span class="sxs-lookup"><span data-stu-id="3ed62-118">The number of units that are in warning status.</span></span> |
+|<span data-ttu-id="248a3-110">enabled</span><span class="sxs-lookup"><span data-stu-id="248a3-110">enabled</span></span>|<span data-ttu-id="248a3-111">Int32</span><span class="sxs-lookup"><span data-stu-id="248a3-111">Int32</span></span>| <span data-ttu-id="248a3-112">Количество включенных единиц.</span><span class="sxs-lookup"><span data-stu-id="248a3-112">The number of units that are enabled.</span></span> |
+|<span data-ttu-id="248a3-113">suspended</span><span class="sxs-lookup"><span data-stu-id="248a3-113">suspended</span></span>|<span data-ttu-id="248a3-114">Int32</span><span class="sxs-lookup"><span data-stu-id="248a3-114">Int32</span></span>| <span data-ttu-id="248a3-115">Количество приостановленных единиц.</span><span class="sxs-lookup"><span data-stu-id="248a3-115">The number of units that are suspended.</span></span> |
+|<span data-ttu-id="248a3-116">warning</span><span class="sxs-lookup"><span data-stu-id="248a3-116">warning</span></span>|<span data-ttu-id="248a3-117">Int32</span><span class="sxs-lookup"><span data-stu-id="248a3-117">Int32</span></span>| <span data-ttu-id="248a3-118">Количество единиц, которые находятся в состоянии предупреждения.</span><span class="sxs-lookup"><span data-stu-id="248a3-118">The number of units that are in warning status.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="3ed62-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3ed62-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="248a3-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="248a3-119">JSON representation</span></span>
 
-<span data-ttu-id="3ed62-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3ed62-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="248a3-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="248a3-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
