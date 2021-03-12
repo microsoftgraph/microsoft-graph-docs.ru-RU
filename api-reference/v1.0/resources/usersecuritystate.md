@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Усерсекуритистате
-description: Содержит сведения о состоянии учетной записи пользователя.
-author: krbain
+title: тип ресурсов userSecurityState
+description: Содержит сведения о учетной записи пользователя.
+author: jpettere
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ae085791cb60aa6d5071332ead86033861a6305a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 54785117a30318154d6ebe1b0a0681fe825368ea
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015374"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721889"
 ---
-# <a name="usersecuritystate-resource-type"></a>Тип ресурса Усерсекуритистате
+# <a name="usersecuritystate-resource-type"></a>тип ресурсов userSecurityState
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о состоянии учетной записи пользователя.
+Содержит сведения о учетной записи пользователя.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|аадусерид|String|Идентификатор объекта пользователя AAD (GUID) — представляет объект пользователя физической или многопользовательской учетной записи.|
-|accountName|String|Имя учетной записи пользователя (без домена Active Directory или DNS-домена) (также называется `mailNickName` ).|
-|domainName|String|NetBIOS/Active Directory учетной записи пользователя (то есть формат домен \ пользователь).|
-|emailRole|emailRole|Для оповещений, связанных с электронной почтой: "роль" — Электронная почта учетной записи пользователя. Возможные значения: `unknown`, `sender`, `recipient`.|
-|исвпн|Boolean|Указывает, вошел ли пользователь в систему через VPN.|
-|логондатетиме|DateTimeOffset|Время возникновения входа. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|логонид|String|Идентификатор входа пользователя.|
-|logonIp|String|IP-адрес, с которого поступил запрос на вход.|
-|логонлокатион|String|Расположение (по сопоставлению IP-адресов), связанное с событием входа пользователя этим пользователем.|
-|logonType|logonType|Способ входа пользователя в систему. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
-|onPremisesSecurityIdentifier|String|Идентификатор безопасности (SID) Active Directory (локальный идентификатор) пользователя.|
-|riskScore|String|Рассчитанный поставщиком и вычисляемый показатель риска учетной записи пользователя. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
-|усераккаунттипе|userAccountSecurityType|Тип учетной записи пользователя (членство в группе), определение Windows. Возможные значения: `unknown`, `standard`, `power`, `administrator`.|
-|userPrincipalName|String|Имя пользователя для входа в Интернет: (имя учетной записи пользователя) @ (DNS-имя домена учетной записи пользователя).|
+|aadUserId|String|Идентификатор объекта пользователя AAD (GUID) — представляет физическое/многосчетное пользовательское лицо.|
+|accountName|String|Имя учетной записи пользователя (без домена Active Directory или домена DNS) — (также `mailNickName` называемого).|
+|domainName|String|Домен учетной записи пользователя NetBIOS/Active Directory (то есть формат домена\учетной записи).|
+|emailRole|emailRole|Для оповещений, связанных с электронной почтой, — "роль" учетной записи пользователя. Возможные значения: `unknown`, `sender`, `recipient`.|
+|isVpn|Логический|Указывает, вошел ли пользователь в систему через VPN.|
+|logonDateTime|DateTimeOffset|Время, в которое произошел вход. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|logonId|String|ID для регистрации пользователя.|
+|logonIp|String|IP-адрес запроса на вход возник из.|
+|logonLocation|String|Расположение (по сопоставлению IP-адресов), связанное с событием регистрации пользователя этим пользователем.|
+|logonType|logonType|Метод входной записи пользователя. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|onPremisesSecurityIdentifier|String|Идентификатор безопасности Active Directory (локально) пользователя.|
+|riskScore|String|Оценка риска учетной записи пользователя сгенерирована/рассчитана с учетной записью поставщика. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
+|userAccountType|userAccountSecurityType|Тип учетной записи пользователя (членство в группе) в определении Windows. Возможные значения: `unknown`, `standard`, `power`, `administrator`.|
+|userPrincipalName|String|Имя регистрации пользователя — интернет-формат: (имя учетной записи пользователя)@(имя доменного имени учетной записи пользователя DNS).|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса fileAssessmentRequest
-description: Используется для создания и извлечения оценки угрозы файла.
+title: тип ресурса fileAssessmentRequest
+description: Используется для создания и получения оценки угрозы файла.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 22142bacd6ebff4cad2d3856de168f89b8b2b3d4
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c08a520f28adb470f6c92b037bad967714a9a593
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154742"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722449"
 ---
-# <a name="fileassessmentrequest-resource-type"></a>Тип ресурса fileAssessmentRequest
+# <a name="fileassessmentrequest-resource-type"></a>тип ресурса fileAssessmentRequest
 
-Используется для создания и извлечения оценки угроз файлов, полученной из [threatAssessmentRequest.](threatAssessmentRequest.md)
+Используется для создания и получения оценки угрозы файлов, полученной из [threatAssessmentRequest.](threatAssessmentRequest.md)
 
-Это может быть текстовый файл, документ Word или двоичный файл, полученный во вложенном сообщении электронной почты.
+Файл может быть текстовым файлом или документом Word или двоичным файлом, полученным в вложении электронной почты.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Создайте запрос на оценку файлов, опубликовав **объект fileAssessmentRequest.** |
-| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Чтение свойств и связей объекта **fileAssessmentRequest.** |
+| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Создайте новый запрос на оценку файлов, разместив объект **fileAssessmentRequest.** |
+| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **fileAssessmentRequest.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|contentData|String|Содержимое файла в кодированном коде Base64. Содержимое файла не может получить обратно, так как оно не хранится.|
+|contentData|String|Кодированное содержимое файла Base64. Содержимое файла не может получить обратно, так как оно не хранится.|
 |fileName|String|Имя файла.|
-|category|[threatCategory](enums.md#threatcategory-values)|Категория угрозы. Возможные значения: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип контента для оценки угроз. Возможные значения: `mail`, `url`, `file`.|
+|category|[threatCategory](enums.md#threatcategory-values)|Категория угроз. Возможные значения: `spam`, `phishing`, `malware`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип оценки угрозы контента. Возможные значения: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|Создатель запроса на оценку угроз.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|Ожидаемая оценка от подавщика. Возможные значения: `block`, `unblock`.|
-|id|String|Идентификатор запроса на оценку угроз — это глобальный уникальный идентификатор (GUID).|
+|id|String|Идентификатор запроса на оценку угрозы — это уникальный идентификатор глобального идентификатора (GUID).|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
@@ -44,7 +44,7 @@ ms.locfileid: "50154742"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|results|[Коллекция threatAssessmentResult](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a не возвращает это свойство, если к этому `GET /threatAssessmentRequests/{id}` свойству не `$expand` применяется.|
+|results|[коллекция threatAssessmentResult](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию это `GET /threatAssessmentRequests/{id}` свойство не возвращается, если оно не `$expand` применяется.|
 
 ## <a name="json-representation"></a>Представление JSON
 

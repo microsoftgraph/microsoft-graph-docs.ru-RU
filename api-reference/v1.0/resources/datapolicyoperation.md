@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 27843a57190910584bcc09c4f65aa75314e3ab1c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 18294905754cd962ec1c18136b61ca20799eee3d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449014"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718445"
 ---
 # <a name="datapolicyoperation-resource-type"></a>тип ресурса dataPolicyOperation
 
@@ -31,12 +31,12 @@ ms.locfileid: "50449014"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|Представляет, когда запрос на эту операцию политики данных был выполнен во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Null до завершения операции.|
+|completedDateTime|DateTimeOffset|Представляет, когда запрос на эту операцию политики данных был выполнен во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Null до завершения операции.|
 |id|String| Уникальный ключ для этой операции. |
 |status|string| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|Расположение URL-адреса, куда экспортируются данные для запросов на экспорт.|
 |userId|String|ID для пользователя, на котором выполняется операция.|
-|submittedDateTime|DateTimeOffset|Представляет при отправке запроса на эту операцию данных во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|submittedDateTime|DateTimeOffset|Представляет при отправке запроса на эту операцию данных во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |progress|String|Указывает ход операции.|
 
 ## <a name="relationships"></a>Связи

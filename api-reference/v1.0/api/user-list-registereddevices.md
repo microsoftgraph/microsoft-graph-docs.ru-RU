@@ -2,15 +2,15 @@
 title: Список registeredDevices
 description: Получение списка зарегистрированных устройств пользователя.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd7868adbe90bcc750a5f988626cb532b30bbab8
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 1965a89e4815b525f2e3ee42e65f46bd4b74bb21
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634958"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721938"
 ---
 # <a name="list-registereddevices"></a>Список registeredDevices
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

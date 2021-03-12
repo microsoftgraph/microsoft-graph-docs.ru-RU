@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Чанжетраккедентити
-description: Представляет сущность для отслеживания изменений, внесенных в любой поддерживаемый ресурс смен
+title: тип ресурса changeTrackedEntity
+description: Представляет объект для отслеживания изменений, внесенных в любой поддерживаемый ресурс Shifts.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4e569df025277d1b9a39e9e10110631bbb6537
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6037e8ff07c79834dd8929ec93997c2a26282d28
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009361"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719796"
 ---
-# <a name="changetrackedentity-resource-type"></a>Тип ресурса Чанжетраккедентити
+# <a name="changetrackedentity-resource-type"></a>тип ресурса changeTrackedEntity
 
 Пространство имен: microsoft.graph
 
-Представляет сущность для отслеживания изменений, внесенных в любое поддерживаемое [Расписание](schedule.md) и связанный ресурс.
+Представляет объект для отслеживания изменений, внесенных в любое поддерживаемый [график](schedule.md) и связанный ресурс.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
-|lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, который последним изменил объект.|
-|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedBy|[identitySet](identityset.md)|Удостоверение человека, который в последний раз изменил объект.|
+|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="relationships"></a>Связи
 

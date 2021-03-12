@@ -1,18 +1,18 @@
 ---
-title: 'application: addPassword'
+title: 'приложение: addPassword'
 description: Добавление надежного пароля в приложение.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8b5cec3e647670be037b27bcf2cae438111f04e5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 90fc14f3d56c9ca815d7abd721cdeef48dfdb23b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131861"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721980"
 ---
-# <a name="application-addpassword"></a>application: addPassword
+# <a name="application-addpassword"></a>приложение: addPassword
 
 Пространство имен: microsoft.graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "50131861"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,17 +45,17 @@ POST /applications/{id}/addPassword
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажив необязательный `passwordCredential` объект со следующими свойствами.
+В теле запроса укажи необязательный `passwordCredential` объект со следующими свойствами.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | String | Удобное имя пароля. Необязательное свойство. |
-| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля представлены в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию : startDateTime + 2 years. |
-| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство.  Значение по умолчанию — "now". |
+| endDateTime | DateTimeOffset | Дата и время, в течение которых истекает срок действия пароля, представлены в формате ISO 8601 и всегда во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательное свойство. Значение по умолчанию — startDateTime + 2 лет. |
+| startDateTime | DateTimeOffset | Дата и время, в течение которых пароль становится допустимым. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательное свойство.  По умолчанию значение "сейчас". |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект passwordCredential](../resources/passwordcredential.md) в тексте отклика. Свойство **secretText** в объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной от 16 до 64 символов. В будущем получить этот пароль будет не нужно.
+В случае успешной работы этот метод возвращает код отклика и новый `200 OK` [объект passwordCredential](../resources/passwordcredential.md) в тексте ответа. Свойство **secretText в** объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной 16-64 символов. В будущем этот пароль не будет извлечен.
 
 ## <a name="examples"></a>Примеры
 
@@ -63,7 +63,7 @@ POST /applications/{id}/addPassword
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. **ИД,** указанный в запросе, является значением свойства **id** приложения, а не значением **свойства appId.** 
+Ниже приведен пример запроса. **ID,** указанный в запросе, — это значение свойства **id** приложения, а не свойства **appId.** 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -1,54 +1,54 @@
 ---
-title: Тип ресурса threatAssessmentRequest
-description: Абстрактный тип повторного использования, используемый для представления элемента запроса на оценку угроз.
+title: тип ресурса threatAssessmentRequest
+description: Абстрактный тип повторного использования, используемый для представления элемента запроса на оценку угрозы.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e316591f4f9db189b1b21dc2d9c3b8d83358c5da
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: dddb7416e18c802b0fbca60c0d134629763f2a03
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158963"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721021"
 ---
-# <a name="threatassessmentrequest-resource-type"></a>Тип ресурса threatAssessmentRequest
+# <a name="threatassessmentrequest-resource-type"></a>тип ресурса threatAssessmentRequest
 
-Абстрактный тип повторного использования, используемый для представления элемента запроса на оценку угроз.
+Абстрактный тип повторного использования, используемый для представления элемента запроса на оценку угрозы.
 
 Запрос на оценку угроз может быть одним из следующих типов:
 
-* Mail ([ресурс mailAssessmentRequest)](mailAssessmentRequest.md)
+* Почта[(ресурс mailAssessmentRequest)](mailAssessmentRequest.md)
 * Файл электронной почты[(ресурс emailFileAssessmentRequest)](emailFileAssessmentRequest.md)
-* File ([ресурс fileAssessmentRequest)](fileAssessmentRequest.md)
-* URL ([ресурс urlAssessmentRequest)](urlAssessmentRequest.md)
+* Файл[(ресурс fileAssessmentRequest)](fileAssessmentRequest.md)
+* [URL-адрес (ресурс urlAssessmentRequest)](urlAssessmentRequest.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление объектов threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) | [Коллекция threatAssessmentRequest](threatassessmentrequest.md) | Список всех запросов на оценку угроз в клиенте. |
-| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Создайте запрос на оценку угроз, опубликовав производный тип ресурса: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md). |
-| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Извлечение свойств и связей указанного **ресурса threatAssessmentRequest.** |
+| [Перечисление объектов threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) | [коллекция threatAssessmentRequest](threatassessmentrequest.md) | Список всех запросов на оценку угроз в клиенте. |
+| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Создайте новый запрос на оценку угрозы, разместив производный тип ресурса: [mailAssessmentRequest,](../resources/mailAssessmentRequest.md) [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md). |
+| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Извлечение свойств и связей указанного ресурса **threatAssessmentRequest.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 | :-------------|:------------|:------------|
-|category|[threatCategory](enums.md#threatcategory-values)|Категория угрозы. Возможные значения: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип контента для оценки угроз. Возможные значения: `mail`, `url`, `file`.|
+|category|[threatCategory](enums.md#threatcategory-values)|Категория угроз. Возможные значения: `spam`, `phishing`, `malware`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип оценки угрозы контента. Возможные значения: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|Создатель запроса на оценку угроз.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|Ожидаемая оценка от подавщика. Возможные значения: `block`, `unblock`.|
-|id|String|Идентификатор запроса на оценку угроз — это глобальный уникальный идентификатор (GUID).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
+|id|String|Идентификатор запроса на оценку угрозы — это уникальный идентификатор глобального идентификатора (GUID).|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угрозы. Возможные значения: `user`, `administrator`.|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|results|[Коллекция threatAssessmentResult](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a не возвращает это свойство, если к этому `GET /threatAssessmentRequests/{id}` свойству не `$expand` применяется.|
+|results|[коллекция threatAssessmentResult](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию это `GET /threatAssessmentRequests/{id}` свойство не возвращается, если оно не `$expand` применяется.|
 
 ## <a name="json-representation"></a>Представление JSON
 

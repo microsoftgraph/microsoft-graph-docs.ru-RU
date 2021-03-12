@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 981ff7ce5effe9faa2518d58b72de8d395d4cfd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa9ce48f9b0dd0dd1869a1e31937b70cf4edb975
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018853"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720153"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 
@@ -40,9 +40,9 @@ conversationThread — это коллекция экземпляров [post](p
 | ccRecipients          | Коллекция [recipient](recipient.md) | Получатели в поле "Копия" для цепочки.                                                                                                                                                               |
 | topic                 | String                               | Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.                                                                              |
 | hasAttachments        | Boolean                              | Указывает, содержит ли какая-либо запись в этой цепочке хотя бы одно вложение.                                                                                                               |
-| ластделивереддатетиме | DateTimeOffset                       | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
-| уникуесендерс         | Коллекция String                    | Все пользователи, которые отправили сообщение в эту цепочку.                                                                                                                                                |
-| preview               | String                               | Краткая сводка из тела последней публикации в этой беседе.                                                                                                                           |
+| lastDeliveredDateTime | DateTimeOffset                       | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| uniqueSenders         | Коллекция String                    | Все пользователи, которые отправили сообщение в эту цепочку.                                                                                                                                                |
+| preview               | String                               | Краткая сводка из тела последней публикации в этом разговоре.                                                                                                                           |
 | isLocked              | Boolean                              | Указывает, заблокирована ли цепочка.                                                                                                                                                               |
 
 ## <a name="relationships"></a>Связи

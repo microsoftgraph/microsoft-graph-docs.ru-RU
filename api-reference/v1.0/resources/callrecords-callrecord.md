@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса callRecord
+title: тип ресурса callRecord
 description: Тип callRecord
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cc1f6498abe52386ccf8aaa67a542adb891b60bb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 23c66be2623d208482ce80ac60a66abf1bacfdc6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159411"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722253"
 ---
-# <a name="callrecord-resource-type"></a>Тип ресурса callRecord
+# <a name="callrecord-resource-type"></a>тип ресурса callRecord
 
 Пространство имен: microsoft.graph.callRecords
 
-Представляет один одноранговой звонок или групповой звонок между несколькими участниками, которые иногда называют собранием по сети.
+Представляет один одноранговой вызов или групповой вызов между несколькими участниками, иногда именуемого как онлайн-собрание.
 
 ## <a name="methods"></a>Методы
 
@@ -28,22 +28,22 @@ ms.locfileid: "50159411"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|Время в UTC, когда последний пользователь оставил вызов. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|String|Уникальный идентификатор записи вызова. Только для чтения.|
-|joinWebUrl|String|URL-адрес собрания, связанный с вызовом. Может быть не доступен для типа записи вызова peerToPeer.|
-|lastModifiedDateTime|DateTimeOffset|Время создания записи вызова в UTC. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|модальности|Коллекция microsoft.graph.callRecords.modality|Список всех модальных режимов, используемых в вызове. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|endDateTime|DateTimeOffset|Время UTC, когда последний пользователь покинул вызов. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|id|String|Уникальный идентификатор для записи вызовов. Только для чтения.|
+|joinWebUrl|String|Собрание URL-адреса, связанного с вызовом. Может быть недоступным для типа записи вызовов peerToPeer.|
+|lastModifiedDateTime|DateTimeOffset|Время UTC при создания записи вызовов. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|модальности|коллекция microsoft.graph.callRecords.modality|Список всех способов, используемых в вызове. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|Удостоверение организатора.|
-|participants|Коллекция [identitySet](identityset.md)|Список отдельных удостоверений, участвующих в вызове.|
-|startDateTime|DateTimeOffset|Время в UTC, когда первый пользователь присоединился к вызову. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|participants|Коллекция [identitySet](identityset.md)|Список различных удостоверений, участвующих в вызове.|
+|startDateTime|DateTimeOffset|Время UTC, когда первый пользователь присоединился к вызову. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |type|microsoft.graph.callRecords.callType|Указывает тип вызова. Возможные значения: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
-|version|Int64|Монотонно увеличивающаяся версия записи вызова. Записи вызовов более высокой версии с таким же идом включают дополнительные данные по сравнению с более низкой версией.|
+|version|Int64|Монотонно увеличивающаяся версия записи вызовов. Записи вызовов более высокой версии с тем же ид включают дополнительные данные по сравнению с более низкой версией.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|sessions|[коллекция microsoft.graph.callRecords.session](callrecords-session.md)|Список сеансов, участвующих в вызове. Одноранговые вызовы обычно имеют только один сеанс, тогда как групповые вызовы обычно имеют по крайней мере один сеанс на участника. Только для чтения. Допускается значение null.|
+|сеансы|[коллекция microsoft.graph.callRecords.session](callrecords-session.md)|Список сеансов, участвующих в вызове. Одноранговые вызовы обычно имеют только один сеанс, в то время как групповые вызовы обычно имеют по крайней мере один сеанс на каждого участника. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

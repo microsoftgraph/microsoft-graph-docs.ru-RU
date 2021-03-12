@@ -2,15 +2,15 @@
 title: Тип ресурса servicePlanInfo
 description: Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта subscribedSku представляет собой коллекцию объектов **servicePlanInfo**.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0fe4ff98fd06932ee6f46ce2489c36cd2a524bc0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 68dd5a4af0b6406ef9e230e0d9ac848532db7e09
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130173"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721791"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 
@@ -24,8 +24,8 @@ ms.locfileid: "50130173"
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|Уникальный идентификатор плана обслуживания.|
 |servicePlanName|String|Имя плана обслуживания.|
-|provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>"Успешно" — служба полностью завершена.<br/>"Отключено" — служба отключена.<br/>"PendingInput" — служба еще не завершена; ожидает подтверждения службы.<br/>"PendingActivation" — служба уже предусмотрена, но требует явной активации администратором (например, Intune_O365 плана обслуживания)<br/>"PendingProvisioning" — корпорация Майкрософт добавила новую службу в SKU продукта и еще не была активирована в клиенте.|
-|appliesTo|String|Объект, который может быть назначен плану обслуживания. Возможные значения:<br/>"Пользователь" — план обслуживания может быть назначен отдельным пользователям.<br/>"Компания" — план обслуживания может быть назначен всему арендатору.|
+|provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>"Успех" — служба полностью предусмотрена.<br/>"Отключено" - служба отключена.<br/>"PendingInput" — служба еще не предусмотрена; ожидание подтверждения службы.<br/>"PendingActivation" — служба предусмотрена, но требует явной активации администратором (например, Intune_O365 плана службы)<br/>"PendingProvisioning" — Microsoft добавила новую службу в SKU продукта, и она еще не была активирована в клиенте.|
+|appliesTo|String|Объект, на который может быть назначен план службы. Возможные значения:<br/>"Пользователь" — план службы может быть назначен отдельным пользователям.<br/>"Company" — план обслуживания может быть назначен всему клиенту.|
 
 ## <a name="json-representation"></a>Представление JSON
 

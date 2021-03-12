@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: outlook
 author: abheek-das
 doc_type: resourcePageType
-ms.openlocfilehash: ae16b7df05a6a240b0081e189d74b4622f2f7988
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8a9b4d43a7bbc31c737c85ea1a18bd14beefcb05
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129342"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722414"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -25,7 +25,7 @@ ms.locfileid: "50129342"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[получение](../api/attachment-get.md); | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
+|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -33,7 +33,7 @@ ms.locfileid: "50129342"
 |contentType|String|Тип контента этого вложения.|
 |id|String|Идентификатор вложения.  Только для чтения.|
 |isInline|Boolean|Значение true указывает, что вложение встроено в содержимое объекта.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
 |size|Int32|Объем метаданных, которые хранятся в сообщении с вложением (в байтах). Это значение не отображает фактический размер файла.|
 

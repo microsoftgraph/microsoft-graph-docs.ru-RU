@@ -1,16 +1,16 @@
 ---
 title: Перечисление createdObjects
 description: Получение списка созданных пользователем объектов каталога.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a65576632169d3eb63d7ce09ad4e05ed0fb8b01a
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: e4389c36adf5d3b54cd419828cb67fc82414c4a6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635350"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722085"
 ---
 # <a name="list-createdobjects"></a>Перечисление createdObjects
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/createdObjects
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

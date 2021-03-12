@@ -1,16 +1,16 @@
 ---
 title: Список ownedDevices
 description: Получение списка устройств, принадлежащих пользователю.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ff3bda5afd0dedb9781c532052c4978a7c493c49
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 3034b75b8f868d721d0051ed5a35f1ba55c919dd
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635497"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721952"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

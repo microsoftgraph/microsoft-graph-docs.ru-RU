@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4aa2040c33d91a098c1c3783c0f427fefa7eb7b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 666dd7e287e8bb460b039b58fe99b39febf581d0
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018846"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720643"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48018846"
 
 Беседа — коллекция [цепочек](conversationthread.md), содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
 
-Этот ресурс поддерживает подписку на [уведомления об изменениях](/graph/webhooks).
+Этот ресурс поддерживает подписку на изменение [уведомлений.](/graph/webhooks)
 
 ## <a name="methods"></a>Методы
 
@@ -36,10 +36,10 @@ ms.locfileid: "48018846"
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Указывает, содержит ли какая-либо запись в этой беседе хотя бы одно вложение.|
 |id|String|Уникальный идентификатор беседы. Только для чтения.|
-|ластделивереддатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastDeliveredDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |preview|String|Краткая сводка из текста последней записи в этой беседе.|
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
-|уникуесендерс|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
+|uniqueSenders|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

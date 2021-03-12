@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
 description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fb59d98d78856cf45686a51fe0e7974c6babd6be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5f1a65246b459a9f34632f3db469d8fb252970d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022988"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721035"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json          |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

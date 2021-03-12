@@ -1,22 +1,22 @@
 ---
-title: ресурс Оненотинтитисчемаобжектмодел
-description: Это базовый тип для объектов OneNote.
+title: ресурс onenoteEntitySchemaObjectModel
+description: Это базовый тип для сущностям OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 1d7f4cd1ef452acbae902c1d4f2aadaa16f69ffe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9dd44c3360a58195f04632b849f5cafd73490676
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079034"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722337"
 ---
-# <a name="onenoteentityschemaobjectmodel-resource"></a>ресурс Оненотинтитисчемаобжектмодел
+# <a name="onenoteentityschemaobjectmodel-resource"></a>ресурс onenoteEntitySchemaObjectModel
 
 Пространство имен: microsoft.graph
 
-Это базовый тип для объектов OneNote.
+Это базовый тип для сущностям OneNote.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -41,7 +41,7 @@ ms.locfileid: "48079034"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Дата и время создания страницы. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|createdDateTime|DateTimeOffset|Дата и время создания страницы. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

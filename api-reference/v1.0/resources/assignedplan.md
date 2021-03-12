@@ -2,15 +2,15 @@
 title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 44af60c7d74f0a0d21a2312a19853a23cdcbe0ec
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9e2c9c3dd04c2c3842fa984308d5f2ba002e607e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135305"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720818"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -23,8 +23,8 @@ ms.locfileid: "50135305"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedDateTime|DateTimeOffset|Дата и время назначения плана. Пример: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Условие назначения возможности. Возможные значения: `Enabled` `Warning` , , , `Suspended` `Deleted` `LockedOut` .|
+|assignedDateTime|DateTimeOffset|дата и время, в которые был назначен план; например: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Условие назначения возможностей. Возможные значения `Enabled` , `Warning` `Suspended` , , `Deleted` `LockedOut` .|
 |service|String|Имя службы, например "Exchange".|
 |servicePlanId|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
@@ -33,11 +33,11 @@ ms.locfileid: "50135305"
 
 | Member | Описание  |
 |:---------------|:--------|
-| Включено | Доступно для обычного использования. |
-| Предупреждение | Доступно для обычного использования, но находится в льготном периоде. |
-| Suspended | Недоступно, но все данные, связанные с возможностью, должны быть сохранены. |
-| Deleted | Недоступны и любые данные, связанные с возможностью, могут быть удалены. |
-| LockedOut | Недоступно для всех администраторов и пользователей, но все данные, связанные с возможностью, должны быть сохранены. |
+| Включен | Доступно для нормального использования. |
+| Предупреждение | Доступно для нормального использования, но находится в льготном периоде. |
+| Suspended | Недоступны, но все данные, связанные с этой возможностью, должны быть сохранены. |
+| Deleted | Недоступные и любые данные, связанные с этой возможностью, могут быть удалены. |
+| LockedOut | Недоступно для всех администраторов и пользователей, но все данные, связанные с этой возможностью, должны быть сохранены. |
 
 ## <a name="json-representation"></a>Представление JSON
 

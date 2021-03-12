@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Ассигнедлабел
+title: тип ресурса assignedLabel
 description: Представляет метку конфиденциальности, назначенную группе Microsoft 365.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 923b616c024a240407161b909baf22ac73d590cc
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 9602e10dda5d558110c55f1fb4ee166e53187989
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581955"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720895"
 ---
-# <a name="assignedlabel-resource-type"></a>Тип ресурса Ассигнедлабел
+# <a name="assignedlabel-resource-type"></a>тип ресурса assignedLabel
 
 Пространство имен: microsoft.graph
 
-Представляет метку конфиденциальности, назначенную группе Microsoft 365. Метки конфиденциальности позволяют администраторам применять определенные параметры группы к группе, назначая классификацию группе (например, конфиденциальную, строго конфиденциальную или общую). Метки конфиденциальности публикуются администраторами в центре безопасности Microsoft 365 & соответствия требованиям в рамках возможностей защиты информации Майкрософт. Дополнительные сведения о метках конфиденциальности приведены в разделе [Обзор меток конфиденциальности](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
+Представляет метку конфиденциальности, назначенную группе Microsoft 365. Метки конфиденциальности позволяют администраторам применять определенные групповые параметры в группе, назначая классификацию группе (например, конфиденциальность, высокая конфиденциальность или общие). Метки конфиденциальности публикуются администраторами в Центре безопасности Microsoft 365 & соответствия требованиям в рамках возможностей Microsoft Information Protection. Дополнительные сведения о метки конфиденциальности см. в обзоре [меток sensitivity.](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|лабелид|String|Уникальный идентификатор метки.|
-|displayName|String|Отображаемое имя метки. Только для чтения.|
+|labelId|String|Уникальный идентификатор метки.|
+|displayName|String|Имя отображения метки. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

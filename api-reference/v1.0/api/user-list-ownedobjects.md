@@ -1,16 +1,16 @@
 ---
 title: Список ownedObjects
 description: Получение списка объектов каталога, принадлежащих пользователю.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e8d1381b390968e10401534f8e92929a651686b5
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 0e52e757aa6120a2b340374304dca8de092e7c24
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634454"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721945"
 ---
 # <a name="list-ownedobjects"></a>Список ownedObjects
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

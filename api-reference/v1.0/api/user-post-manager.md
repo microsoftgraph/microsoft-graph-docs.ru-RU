@@ -2,15 +2,15 @@
 title: Назначение руководителя
 description: Назначение руководителя пользователя.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 20c4a97c183fc3109721c600a41e16f7b704fbb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 34ffe0a968ef500214d7f987d3a76c7fe4616cf7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972704"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721420"
 ---
 # <a name="assign-manager"></a>Назначение руководителя
 
@@ -18,7 +18,7 @@ ms.locfileid: "47972704"
 
 Назначение руководителя пользователя.
 > [!NOTE]
-> Нельзя назначать прямые отчеты; Вместо этого используйте этот API.
+> Нельзя назначать прямые отчеты; вместо этого используйте этот API.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ PUT /users/{id}/manager/$ref
 | Content-Type   | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [контакта Организации](../resources/orgcontact.md) в формате JSON.
+В теле запроса укажи JSON представление [объекта directoryObject,](../resources/directoryobject.md) [пользователя](../resources/user.md)или объекта контакта организации, который будет добавлен. [](../resources/orgcontact.md)
 
 ## <a name="response"></a>Отклик
 

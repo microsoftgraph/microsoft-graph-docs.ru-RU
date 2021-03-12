@@ -1,22 +1,22 @@
 ---
-title: ресурс Оненотинтитихиерарчимодел
-description: Это базовый тип для объектов OneNote.
+title: ресурс onenoteEntityHierarchyModel
+description: Это базовый тип для сущностям OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 8547839597e5f98cf0bcceef80f28814888d539e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ddad970ead6c8bd575267f04266426e54a66568
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079027"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720860"
 ---
-# <a name="onenoteentityhierarchymodel-resource"></a>ресурс Оненотинтитихиерарчимодел
+# <a name="onenoteentityhierarchymodel-resource"></a>ресурс onenoteEntityHierarchyModel
 
 Пространство имен: microsoft.graph
 
-Это базовый тип для объектов OneNote.
+Это базовый тип для сущностям OneNote.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -45,10 +45,10 @@ ms.locfileid: "48079027"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Имя записной книжки.|
+|displayName|String|Имя записной книжки.|
 |createdBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 
 <!-- uuid: 8b1af557-1a7c-4432-86eb-94989c2d4b54
 2015-10-25 14:57:30 UTC -->
