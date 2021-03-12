@@ -445,7 +445,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Group
+          - name: Группа
             href: resources/group.md
             items:
               - name: Список групп
@@ -1149,9 +1149,10 @@ items:
         items:
           - name: Обзор
             href: resources/communications-api-overview.md
-          - name: Звонок
-            href: resources/call.md
+          - name: Звонки
             items:
+              - name: Звонок
+                href: resources/call.md
               - name: Создание
                 href: api/application-post-calls.md
               - name: Получение
@@ -1218,9 +1219,10 @@ items:
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
-          - name: Собрание по сети
-            href: resources/onlinemeeting.md
+          - name: Собрания по сети
             items:
+              - name: Собрание по сети
+                href: resources/onlinemeeting.md
               - name: Создание
                 href: api/application-post-onlinemeetings.md
               - name: Получение
@@ -5027,7 +5029,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -5522,7 +5524,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Task
+          - name: Задача
             href: resources/todotask.md
             items:
               - name: Перечисление задач
