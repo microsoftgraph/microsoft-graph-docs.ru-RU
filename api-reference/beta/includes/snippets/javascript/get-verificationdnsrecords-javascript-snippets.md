@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: bc7443848049372502b239fae20d9fc0c5773eb2
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0b585a3ac81e37a526011e4679617bf38b9a3ef8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48617334"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795831"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/domains/contoso.com/verificationDnsRecords')
+let verificationDnsRecords = await client.api('/domains/contoso.com/verificationDnsRecords')
     .version('beta')
     .get();
 
