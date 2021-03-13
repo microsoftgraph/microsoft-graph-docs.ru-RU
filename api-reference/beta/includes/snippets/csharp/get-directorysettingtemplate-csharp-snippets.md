@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d3abfd8a05d639136f02927226626e27ba760b0f
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ff2cf2aa1321b4256c698d4fe13ae0afa7113888
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620865"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794756"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directorySettingTemplate = await graphClient.DirectorySettingTemplates["{id}"]
+var directorySettingTemplate = await graphClient.DirectorySettingTemplates["{directorySettingTemplate-id}"]
     .Request()
     .GetAsync();
 
