@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ed9794eedfbd953c7ecb4c932febde2db8fa5642
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0a6cf27cd569441408565218c0e383ad1b323d4e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437576"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793410"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/conditionalAccess/policies')
+let policies = await client.api('/identity/conditionalAccess/policies')
     .version('beta')
     .filter('displayName eq \'SimplePolicy1\' or displayName eq \'SimplePolicy2\'')
     .get();

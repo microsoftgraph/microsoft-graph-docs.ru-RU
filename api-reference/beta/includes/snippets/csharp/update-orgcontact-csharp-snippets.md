@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 43f3800c9b9f8f0746ba1472612493cf136dc91f
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: dc9b9c83d8765723c32d89ca9aa5163b3fdb33be
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684771"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787539"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var orgContact = new OrgContact
     }
 };
 
-await graphClient.Contacts["{id}"]
+await graphClient.Contacts["{orgContact-id}"]
     .Request()
     .UpdateAsync(orgContact);
 
