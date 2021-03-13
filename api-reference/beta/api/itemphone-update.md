@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7a6d446e68125b8be0d750f1c81cfa7d3f11a5c5
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: c88e7eb1b3bd357735689ba36955170372b8b9e4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577396"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770410"
 ---
-# <a name="update-itemphonenumber"></a><span data-ttu-id="fc069-103">Обновление itemphonenumber</span><span class="sxs-lookup"><span data-stu-id="fc069-103">Update itemphonenumber</span></span>
+# <a name="update-itemphonenumber"></a><span data-ttu-id="3b73a-103">Обновление itemphonenumber</span><span class="sxs-lookup"><span data-stu-id="3b73a-103">Update itemphonenumber</span></span>
 
-<span data-ttu-id="fc069-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fc069-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3b73a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3b73a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fc069-105">Обновление свойств объекта [itemPhone](../resources/itemphone.md) в профиле [пользователя.](../resources/profile.md)</span><span class="sxs-lookup"><span data-stu-id="fc069-105">Update the properties of an [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="3b73a-105">Обновление свойств объекта [itemPhone](../resources/itemphone.md) в профиле [пользователя.](../resources/profile.md)</span><span class="sxs-lookup"><span data-stu-id="3b73a-105">Update the properties of an [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fc069-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fc069-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3b73a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3b73a-106">Permissions</span></span>
 
-<span data-ttu-id="fc069-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fc069-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3b73a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b73a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fc069-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fc069-109">Permission type</span></span>                        | <span data-ttu-id="fc069-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fc069-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3b73a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3b73a-109">Permission type</span></span>                        | <span data-ttu-id="3b73a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3b73a-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="fc069-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fc069-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fc069-112">User.ReadWrite, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc069-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="fc069-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fc069-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc069-114">User.ReadWrite, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc069-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="fc069-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fc069-115">Application</span></span>                            | <span data-ttu-id="fc069-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc069-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="3b73a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3b73a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3b73a-112">User.ReadWrite, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b73a-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="3b73a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3b73a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b73a-114">User.ReadWrite, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b73a-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="3b73a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3b73a-115">Application</span></span>                            | <span data-ttu-id="3b73a-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b73a-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="fc069-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fc069-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3b73a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3b73a-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,35 +41,35 @@ PATCH /me/profile/phones/{id}
 PATCH /users/{userId}/profile/phones/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fc069-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fc069-118">Request headers</span></span>
-|<span data-ttu-id="fc069-119">Имя</span><span class="sxs-lookup"><span data-stu-id="fc069-119">Name</span></span>|<span data-ttu-id="fc069-120">Описание</span><span class="sxs-lookup"><span data-stu-id="fc069-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3b73a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3b73a-118">Request headers</span></span>
+|<span data-ttu-id="3b73a-119">Имя</span><span class="sxs-lookup"><span data-stu-id="3b73a-119">Name</span></span>|<span data-ttu-id="3b73a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="3b73a-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="fc069-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fc069-121">Authorization</span></span>|<span data-ttu-id="fc069-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fc069-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="fc069-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fc069-124">Content-Type</span></span>|<span data-ttu-id="fc069-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fc069-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="3b73a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3b73a-121">Authorization</span></span>|<span data-ttu-id="3b73a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3b73a-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="3b73a-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3b73a-124">Content-Type</span></span>|<span data-ttu-id="3b73a-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3b73a-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fc069-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fc069-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3b73a-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3b73a-127">Request body</span></span>
 
-<span data-ttu-id="fc069-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="fc069-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="fc069-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="fc069-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="fc069-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="fc069-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="3b73a-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="3b73a-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="3b73a-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="3b73a-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="3b73a-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="3b73a-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="fc069-131">В следующей таблице показаны свойства, которые можно установить при обновлении объекта [itemPhone](../resources/itemphone.md) в профиле пользователей.</span><span class="sxs-lookup"><span data-stu-id="fc069-131">The following table shows the properties that are possible to set when you update an [itemPhone](../resources/itemphone.md) object in a users profile.</span></span>
+<span data-ttu-id="3b73a-131">В следующей таблице показаны свойства, которые можно установить при обновлении объекта [itemPhone](../resources/itemphone.md) в профиле пользователей.</span><span class="sxs-lookup"><span data-stu-id="3b73a-131">The following table shows the properties that are possible to set when you update an [itemPhone](../resources/itemphone.md) object in a users profile.</span></span>
 
-|<span data-ttu-id="fc069-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="fc069-132">Property</span></span>|<span data-ttu-id="fc069-133">Тип</span><span class="sxs-lookup"><span data-stu-id="fc069-133">Type</span></span>|<span data-ttu-id="fc069-134">Описание</span><span class="sxs-lookup"><span data-stu-id="fc069-134">Description</span></span>|
+|<span data-ttu-id="3b73a-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="3b73a-132">Property</span></span>|<span data-ttu-id="3b73a-133">Тип</span><span class="sxs-lookup"><span data-stu-id="3b73a-133">Type</span></span>|<span data-ttu-id="3b73a-134">Описание</span><span class="sxs-lookup"><span data-stu-id="3b73a-134">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fc069-135">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="fc069-135">allowedAudiences</span></span>|<span data-ttu-id="fc069-136">String</span><span class="sxs-lookup"><span data-stu-id="fc069-136">String</span></span>|<span data-ttu-id="fc069-137">Аудитории, которые могут видеть значения, содержащиеся в объекте.</span><span class="sxs-lookup"><span data-stu-id="fc069-137">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="fc069-138">Унаследовано от [itemFacet](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="fc069-138">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="fc069-139">Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="fc069-139">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="fc069-140">displayName</span><span class="sxs-lookup"><span data-stu-id="fc069-140">displayName</span></span>|<span data-ttu-id="fc069-141">String</span><span class="sxs-lookup"><span data-stu-id="fc069-141">String</span></span>|<span data-ttu-id="fc069-142">Удобное имя, назначенное пользователем этому номеру телефона.</span><span class="sxs-lookup"><span data-stu-id="fc069-142">Friendly name the user has assigned this phone number.</span></span> |
-|<span data-ttu-id="fc069-143">вывод</span><span class="sxs-lookup"><span data-stu-id="fc069-143">inference</span></span>|[<span data-ttu-id="fc069-144">inferenceData</span><span class="sxs-lookup"><span data-stu-id="fc069-144">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="fc069-145">Содержит сведения о выводе, если объект создается или модифицируют приложение.</span><span class="sxs-lookup"><span data-stu-id="fc069-145">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="fc069-146">Унаследовано от [itemFacet](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="fc069-146">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="fc069-147">число</span><span class="sxs-lookup"><span data-stu-id="fc069-147">number</span></span>|<span data-ttu-id="fc069-148">String</span><span class="sxs-lookup"><span data-stu-id="fc069-148">String</span></span>|<span data-ttu-id="fc069-149">Номер телефона, предоставленный пользователем.</span><span class="sxs-lookup"><span data-stu-id="fc069-149">Phone number provided by the user.</span></span>|
-|<span data-ttu-id="fc069-150">source</span><span class="sxs-lookup"><span data-stu-id="fc069-150">source</span></span>|[<span data-ttu-id="fc069-151">personDataSource</span><span class="sxs-lookup"><span data-stu-id="fc069-151">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="fc069-152">Где значения возникли, если синхронизированы с другой службы.</span><span class="sxs-lookup"><span data-stu-id="fc069-152">Where the values originated if synced from another service.</span></span> <span data-ttu-id="fc069-153">Унаследовано от [itemFacet](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="fc069-153">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="fc069-154">type</span><span class="sxs-lookup"><span data-stu-id="fc069-154">type</span></span>|<span data-ttu-id="fc069-155">phoneType</span><span class="sxs-lookup"><span data-stu-id="fc069-155">phoneType</span></span>|<span data-ttu-id="fc069-156">Тип номера телефона в объекте.</span><span class="sxs-lookup"><span data-stu-id="fc069-156">The type of phone number within the object.</span></span> <span data-ttu-id="fc069-157">Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="fc069-157">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="3b73a-135">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="3b73a-135">allowedAudiences</span></span>|<span data-ttu-id="3b73a-136">String</span><span class="sxs-lookup"><span data-stu-id="3b73a-136">String</span></span>|<span data-ttu-id="3b73a-137">Аудитории, которые могут видеть значения, содержащиеся в объекте.</span><span class="sxs-lookup"><span data-stu-id="3b73a-137">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="3b73a-138">Унаследовано от [itemFacet](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="3b73a-138">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="3b73a-139">Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="3b73a-139">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="3b73a-140">displayName</span><span class="sxs-lookup"><span data-stu-id="3b73a-140">displayName</span></span>|<span data-ttu-id="3b73a-141">String</span><span class="sxs-lookup"><span data-stu-id="3b73a-141">String</span></span>|<span data-ttu-id="3b73a-142">Удобное имя, назначенное пользователем этому номеру телефона.</span><span class="sxs-lookup"><span data-stu-id="3b73a-142">Friendly name the user has assigned this phone number.</span></span> |
+|<span data-ttu-id="3b73a-143">вывод</span><span class="sxs-lookup"><span data-stu-id="3b73a-143">inference</span></span>|[<span data-ttu-id="3b73a-144">inferenceData</span><span class="sxs-lookup"><span data-stu-id="3b73a-144">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="3b73a-145">Содержит сведения о выводе, если объект создается или модифицируют приложение.</span><span class="sxs-lookup"><span data-stu-id="3b73a-145">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="3b73a-146">Унаследовано от [itemFacet](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="3b73a-146">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="3b73a-147">число</span><span class="sxs-lookup"><span data-stu-id="3b73a-147">number</span></span>|<span data-ttu-id="3b73a-148">String</span><span class="sxs-lookup"><span data-stu-id="3b73a-148">String</span></span>|<span data-ttu-id="3b73a-149">Номер телефона, предоставленный пользователем.</span><span class="sxs-lookup"><span data-stu-id="3b73a-149">Phone number provided by the user.</span></span>|
+|<span data-ttu-id="3b73a-150">source</span><span class="sxs-lookup"><span data-stu-id="3b73a-150">source</span></span>|[<span data-ttu-id="3b73a-151">personDataSource</span><span class="sxs-lookup"><span data-stu-id="3b73a-151">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="3b73a-152">Где значения возникли, если синхронизированы с другой службы.</span><span class="sxs-lookup"><span data-stu-id="3b73a-152">Where the values originated if synced from another service.</span></span> <span data-ttu-id="3b73a-153">Унаследовано от [itemFacet](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="3b73a-153">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="3b73a-154">type</span><span class="sxs-lookup"><span data-stu-id="3b73a-154">type</span></span>|<span data-ttu-id="3b73a-155">phoneType</span><span class="sxs-lookup"><span data-stu-id="3b73a-155">phoneType</span></span>|<span data-ttu-id="3b73a-156">Тип номера телефона в объекте.</span><span class="sxs-lookup"><span data-stu-id="3b73a-156">The type of phone number within the object.</span></span> <span data-ttu-id="3b73a-157">Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="3b73a-157">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fc069-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc069-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3b73a-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b73a-158">Response</span></span>
 
-<span data-ttu-id="fc069-159">В случае успеха этот метод возвращает код отклика и `200 OK` обновленный [объект itemPhone](../resources/itemphone.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="fc069-159">If successful, this method returns a `200 OK` response code and an updated [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
+<span data-ttu-id="3b73a-159">В случае успеха этот метод возвращает код отклика и `200 OK` обновленный [объект itemPhone](../resources/itemphone.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="3b73a-159">If successful, this method returns a `200 OK` response code and an updated [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fc069-160">Примеры</span><span class="sxs-lookup"><span data-stu-id="fc069-160">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3b73a-160">Примеры</span><span class="sxs-lookup"><span data-stu-id="3b73a-160">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="fc069-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="fc069-161">Request</span></span>
-# <a name="http"></a>[<span data-ttu-id="fc069-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="fc069-162">HTTP</span></span>](#tab/http)
+### <a name="request"></a><span data-ttu-id="3b73a-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="3b73a-161">Request</span></span>
+# <a name="http"></a>[<span data-ttu-id="3b73a-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b73a-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itemphone"
@@ -84,22 +84,26 @@ Content-length: 382
   "type": "other"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="fc069-163">C#</span><span class="sxs-lookup"><span data-stu-id="fc069-163">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="3b73a-163">C#</span><span class="sxs-lookup"><span data-stu-id="3b73a-163">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-itemphone-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fc069-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fc069-164">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="3b73a-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b73a-164">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-itemphone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fc069-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fc069-165">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="3b73a-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3b73a-165">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-itemphone-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="3b73a-166">Java</span><span class="sxs-lookup"><span data-stu-id="3b73a-166">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-itemphone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="fc069-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc069-166">Response</span></span>
-<span data-ttu-id="fc069-167">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="fc069-167">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="3b73a-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b73a-167">Response</span></span>
+<span data-ttu-id="3b73a-168">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="3b73a-168">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
