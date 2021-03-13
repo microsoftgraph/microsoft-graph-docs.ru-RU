@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: c868f7162f171cbb552c216139cc6afdc3aea988
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 07ee284f40264c76ec6156235fab651fff77cfe6
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516243"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777007"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -332,14 +332,11 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams).
 
-### <a name="unable-to-remove-members-from-chat"></a>Не удается удалить участников из чата
-В некоторых ситуациях вызов `DELETE /chats/chat-id/members/membership-id` завершится ошибкой с кодом `404`, даже если участник чата существует. Это связано с проблемами вычисления `membership-id`.
-
 ### <a name="unable-to-filter-team-members-by-roles"></a>Не удается отфильтровать участников команды по ролям
 Запрос фильтра на получение участников команды на основе их ролей `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` может не работать. Сервер может вернуть `BAD REQUEST`.
 
-### <a name="missing-tenantid-for-chat-members"></a>Отсутствие tenantId для участников чатов
-В некоторых случаях свойство `tenantId` для отдельных участников беседы может быть не заполнено в запросах `GET /chats/chat-id/members` или `GET /chats/chat-id/members/membership-id`.
+### <a name="missing-properties-for-chat-members"></a>Отсутствующие свойства для участников чатов
+В некоторых случаях свойство `tenantId` / `email` / `displayName` для отдельных участников чата может не заполняться в запросах `GET /chats/chat-id/members` или `GET /chats/chat-id/members/membership-id`.
 
 ## <a name="users"></a>Пользователи
 

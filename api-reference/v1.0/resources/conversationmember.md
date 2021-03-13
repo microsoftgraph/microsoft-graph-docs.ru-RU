@@ -5,19 +5,19 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1629b46b12d91fd96dca72577027f0031ab0102a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 14a70fcc6492ec143fa2f4e892438805d3526d60
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161791"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777722"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
 Пространство имен: microsoft.graph
 
-Представляет пользователя в команде, [канале](channel.md)или [чате.](chat.md) [](team.md)
-См. [также aadUserConversationMember.](aaduserconversationmember.md)
+Представляет пользователя в [команде,](team.md) [канале](channel.md)или [чате.](chat.md)
+См. [также aadUserConversationMember](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Методы
 
@@ -33,6 +33,10 @@ ms.locfileid: "50161791"
 |[Получение участника канала](../api/channel-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника канала.|
 |[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для канала с типом членства `private`.|
 |[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
+|[Перечисление участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников чата.|
+|[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление участника в чат.| 
+|[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение участника чата.|
+|[Удаление участника чата](../api/chat-delete-members.md) | Нет | Удаление участника из чата.| 
 
 ## <a name="properties"></a>Свойства
 
@@ -41,6 +45,7 @@ ms.locfileid: "50161791"
 |id|String| Только для чтения. Уникальный идентификатор пользователя.|
 |displayName| string | Отображаемое имя пользователя. |
 |roles| Коллекция строк | Роли этого пользователя. |
+|visibleHistoryStartDateTime| DateTimeOffset | Метка времени, обозначающая, насколько глубоко участник беседы может видеть историю беседы. Это свойство можно задать только для участников чата. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -48,18 +53,21 @@ ms.locfileid: "50161791"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.conversationMember",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.conversationMember",
   "id": "String (identifier)",
-  "roles": ["String"]
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 
