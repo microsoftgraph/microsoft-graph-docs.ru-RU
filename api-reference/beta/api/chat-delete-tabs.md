@@ -1,16 +1,16 @@
 ---
 title: Удаление вкладки из чата
 description: 'Удалите (открепите) вкладку из указанного чата. '
-author: nkramer
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f32a1afd3fa23a42fee600d2d3243f70957dde55
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d2020d0fe097be2a02c5b0fba4c47a0d700ca3ae
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690085"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775887"
 ---
 # <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
@@ -20,15 +20,15 @@ ms.locfileid: "49690085"
 
 Удалите (открепите) вкладку из указанного [чата.](../resources/chat.md) 
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет удалена из собрания.
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет удалена с собрания.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 

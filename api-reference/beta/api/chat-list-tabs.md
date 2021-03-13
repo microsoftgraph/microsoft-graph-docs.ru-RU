@@ -1,16 +1,16 @@
 ---
 title: Список вкладок в чате
-description: 'Получить список вкладок в указанном чате. '
-author: nkramer
+description: 'Извлечение списка вкладок в указанном чате. '
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8d61dc426fd456a356b2838a03c30e3629772ef
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7f0d7b1feff7205144193a389a3ef84158f570d3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689960"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775775"
 ---
 # <a name="list-tabs-in-chat"></a>Список вкладок в чате
 
@@ -18,21 +18,25 @@ ms.locfileid: "49689960"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список вкладок [в](../resources/teamstab.md) указанном [чате.](../resources/chat.md)
+Извлечение списка [вкладок](../resources/teamstab.md) в указанном [чате.](../resources/chat.md)
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) фактически, вкладки, закрепленные на собрании, будут перечислены. 
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) то фактически вкладки, закрепленные на собрании, будут перечислены. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs
 ```
@@ -50,7 +54,7 @@ GET /chats/{chat-id}/tabs
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [вкладок](../resources/teamstab.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [вкладок](../resources/teamstab.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -245,7 +249,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 - [Список вкладок на канале](channel-list-tabs.md)
 - 

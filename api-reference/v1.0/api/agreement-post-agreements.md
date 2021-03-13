@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: a34d2d78964ca4d50496cfe0850d2ee840f3f04b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1a3e30754a9359d26c41bad35407674c9b5c88c5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722683"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774976"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -22,8 +22,8 @@ ms.locfileid: "50722683"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Agreement.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | Agreement.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /identityGovernance/termsOfUse/agreements
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|String|Отображение имени соглашения.|
-|isViewingBeforeAcceptanceRequired|Логический|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
+|isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
 |fileName|String|Имя файла соглашения (например, TOU.pdf).|
 |isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если язык соответствует предпочтениям клиента. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию.|
 |language|String|Язык файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
@@ -58,6 +58,8 @@ POST /identityGovernance/termsOfUse/agreements
 ### <a name="request"></a>Запрос
 В органе запроса поставляем представление JSON объекта [соглашения.](../resources/agreement.md)
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agreement_from_agreements"
@@ -81,6 +83,24 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-agreement-from-agreements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agreement-from-agreements-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-agreement-from-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

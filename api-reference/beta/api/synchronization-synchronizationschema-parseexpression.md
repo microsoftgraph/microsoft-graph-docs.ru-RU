@@ -1,35 +1,35 @@
 ---
-title: 'synchronizationSchema: parseExpression'
-description: '(.. объект /resources/synchronization_attributemappingsource.md). '
+title: 'синхронизацияSchema: parseExpression'
+description: '(.. /resources/synchronization_attributemappingsource.md) объекта. '
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: c53046032ea4927d5f475cbb05961253fd323939
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1de23b474cf2cd12191da9ce5c876417fbaad984
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136362"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775474"
 ---
-# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
+# <a name="synchronizationschema-parseexpression"></a>синхронизацияSchema: parseExpression
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Раз parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
+Размыть заданное выражение строки в [объект attributeMappingSource.](../resources/synchronization-attributemappingsource.md)
 
-Дополнительные сведения об выражениях см. в записи выражений для сопоставлений [атрибутов в Azure Active Directory.](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
+Дополнительные сведения о выражениях см. в [статьи Writing Expressions for Attribute Mappings in Azure Active Directory.](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) |Не поддерживается.|
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,12 +48,12 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|выражение               |Строка               |Выражение для разбомбления.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных для оценки выражения. Необязательный параметр.|
-|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сописано с этим выражением. Необязательный параметр.|
+|выражение               |String               |Выражение для размыкать.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Протестировать объект данных для оценки выражений. Необязательный параметр.|
+|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет относяться к этому выражению. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

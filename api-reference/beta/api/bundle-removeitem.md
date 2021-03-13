@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Удаление элемента из пакета
-description: Удаление элемента из набора элементов driveitem
+description: Удаление элемента из пакета driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9bf7968d9de8ad1b7cd2e2fc781b196405f9ced5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: edd7647be648b5eda1560157d35c6a7b2d4aa130
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960201"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50774364"
 ---
 # <a name="remove-item-from-bundle"></a>Удаление элемента из пакета
 
@@ -41,7 +40,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -49,9 +48,9 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха отклика `204 No Content` .
+В случае успешного ответа `204 No Content` .
 
-Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.
+Дополнительные сведения о возвращении ошибок см. в статье [Отклики с ошибками][error-response].
 
 ## <a name="example"></a>Пример
 

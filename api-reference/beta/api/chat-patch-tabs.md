@@ -1,18 +1,18 @@
 ---
-title: Вкладка "Обновление" в чате
+title: Обновление вкладки в чате
 description: Обновление свойств указанной вкладки в чате.
-author: nkramer
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0225dd70a952d7d977c77c42595d19f7e671f9ff
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d7d1b1a169e1ba1bc2b9e6b9ad518c2ac4fa48eb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689831"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775719"
 ---
-# <a name="update-tab-in-chat"></a>Вкладка "Обновление" в чате
+# <a name="update-tab-in-chat"></a>Обновление вкладки в чате
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "49689831"
 
 Обновление свойств указанной вкладки [в](../resources/teamstab.md) [чате.](../resources/chat.md) Это можно использовать для настройки содержимого вкладки.
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) фактически вкладка, закрепленная на собрании, будет обновлена.
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) то фактически вкладка, закрепленная на собрании, будет обновлена.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,10 +30,15 @@ ms.locfileid: "49689831"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Для приложений | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /chats/{chat-id}/tabs/{tab-id}
 ```
@@ -45,11 +50,11 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [tab](../resources/teamstab.md) в JSON.
+В теле запроса поставляем представление JSON объекта [вкладки.](../resources/teamstab.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный ресурс `200 OK` **teamsTab** в тексте отклика.
+В случае успешного использования этот метод возвращает код ответа и обновленный ресурс `200 OK` **teamsTab** в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>Пример 1. Обновление имени вкладки в чате

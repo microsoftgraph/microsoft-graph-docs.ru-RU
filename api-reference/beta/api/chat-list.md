@@ -1,24 +1,24 @@
 ---
-title: Список чатов
-description: Получить список чатов для пользователя.
-author: nkramer
+title: Чаты списка
+description: Извлечение списка чатов для пользователя.
+author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2e366ab960509bba1408bc7b346f89980fc828c4
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0416a123b0694b3b2ffcd6756334fcf891da0b82
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752957"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775768"
 ---
-# <a name="list-chats"></a>Список чатов
+# <a name="list-chats"></a>Чаты списка
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список [чатов,](../resources/chat.md) в которые входит пользователь.
+Извлечение списка [чатов,](../resources/chat.md) в которые входит пользователь.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает (только для свойства members) и параметры `$expand`  `$filter` [запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметры запросов (только для свойств участников) и `$expand`  `$filter` [OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -179,7 +179,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 > [!NOTE]
 > Идентификаторы членства, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
 >
-> Результаты членства могут быть соединимы с пользователями из разных клиентов, как указано в ответе, в будущем. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
+> Результаты членства могут соединимся с пользователями из разных клиентов, как указано в ответе, в будущем. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -311,11 +311,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>Пример 3. Список всех чатов с участником с определенным отображаемой именем
+### <a name="example-3-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>Пример 3. Список всех чатов, в которые входит член с определенным именем отображения
 
 #### <a name="request"></a>Запрос
 
-Ниже показан пример запроса, который будет фильтровать все чаты на основе отображаемого имени определенного участника.
+Вот пример запроса, который будет фильтровать все чаты на основе отображаемого имени конкретного участника.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

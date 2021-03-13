@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 844fbf0d990a51a199fade3f8bbd9719fd77bae0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 2f1415e4fc91fead1ed25f66867a3bd08f0dceb8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518029"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775978"
 ---
 # <a name="printjob-redirect"></a>printJob: перенаправление
 Пространство имен: microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "50518029"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintJob.Manage.All |
+|Для приложений| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|destinationPrinterId|Строка|ID принтера, на который должно быть перенаправлено задание печати.|
+|destinationPrinterId|String|ID принтера, на который должно быть перенаправлено задание печати.|
 |configuration|microsoft.graph.printJobConfiguration|Обновленная конфигурация задания печати.|
 
 ## <a name="response"></a>Отклик
@@ -62,6 +62,8 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob_redirect"
@@ -107,6 +109,24 @@ Content-length: 128
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

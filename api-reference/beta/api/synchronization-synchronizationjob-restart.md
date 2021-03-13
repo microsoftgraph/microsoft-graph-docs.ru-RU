@@ -1,24 +1,24 @@
 ---
-title: Restart synchronizationJob
-description: Перезапустите задание синхронизации, принудительно обжав все объекты в каталоге. При желании очищает существующее состояние синхронизации и предыдущие ошибки.
+title: Перезапуск синхронизацииJob
+description: Перезапустите задание синхронизации, заставив его перепроцесизировать все объекты каталога. Необязательно очищает существующее состояние синхронизации и предыдущие ошибки.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: dc257c78f5f7463cafb987a0d34c8fed546f3dd8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 216da34bb6900d246f990529c88bc398cc1cdcc7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132785"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775080"
 ---
-# <a name="restart-synchronizationjob"></a>Restart synchronizationJob
+# <a name="restart-synchronizationjob"></a>Перезапуск синхронизацииJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перезапустите задание синхронизации, принудительно обобсвив все объекты в каталоге. При желании очищает существующее состояние синхронизации и предыдущие ошибки.
+Перезапустите задание синхронизации, заставив его перепроцесизировать все объекты каталога. Необязательно очищает существующее состояние синхронизации и предыдущие ошибки.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50132785"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Не поддерживается.  | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,15 +43,15 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу объект JSON со следующим параметром.
+В теле запроса укажи объект JSON со следующим параметром.
 
 | Параметр     | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Условия перезапуска|
+|criteria       |[синхронизацияJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Критерии перезапуска|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `204 No Content` ответ. В тексте отклика не возвращается никаких данных.
+В случае успешного ответа `204 No Content` возвращается ответ. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 

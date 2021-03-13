@@ -1,33 +1,33 @@
 ---
-title: Создание synchronizationTemplate
-description: Создайте новый шаблон синхронизации для заданного приложения.
+title: Создание синхронизацииTemplate
+description: Создайте новый шаблон синхронизации для данного приложения.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 054e5dfc672f3336e5c8d633e05c1db82e350fdd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b2c501d0c07e91aa3b0dbb707320f4909db299de
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137244"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775432"
 ---
-# <a name="create-synchronizationtemplate"></a>Создание synchronizationTemplate
+# <a name="create-synchronizationtemplate"></a>Создание синхронизацииTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый шаблон синхронизации для заданного приложения.
+Создайте новый шаблон синхронизации для данного приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается.| 
+|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) |Не поддерживается.|
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажи объект [synchronizationTemplate,](../resources/synchronization-synchronizationtemplate.md) который необходимо создать. Свойства и `id` свойства `applicationId` являются `factoryTag` обязательной. Если шаблон не предоставляется, будет использоваться схема по умолчанию, связанная `schema` со `factoryTag` свойством.
+В корпусе запроса поставляем созданный [объект синхронизацииTemplate.](../resources/synchronization-synchronizationtemplate.md) Необходимы `id` свойства `applicationId` и `factoryTag` свойства. Если шаблон не предоставляется, будет использоваться схема по умолчанию, связанная `schema` с `factoryTag` свойством.
 
 ### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект синхронизацииTemplate](../resources/synchronization-synchronizationtemplate.md) в тексте ответа.
 
 ### <a name="example"></a>Пример
 

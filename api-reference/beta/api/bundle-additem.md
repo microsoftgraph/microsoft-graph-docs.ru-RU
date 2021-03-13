@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Добавление элемента в пакет
-description: Добавление элемента в пакет элементов driveitem
+description: Добавление элемента в пакет driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5b764bf94894d77ccead6adaa205882f6723fc5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f632b8054c1819c1af8bdd632c0d13092117cb30
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960306"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50774385"
 ---
 # <a name="add-item-to-a-bundle"></a>Добавление элемента в пакет
 
@@ -19,7 +18,7 @@ ms.locfileid: "48960306"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление дополнительного [driveItem][] с диска в [пакет][].
+Добавьте дополнительный [driveItem][] из диска в [пакет.][]
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
@@ -44,17 +43,17 @@ POST /drive/bundles/{bundle-id}/children
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
-Текст запроса включает идентификатор для элемента, который следует добавить в коллекцию Children набора.
+Тело запроса включает идентификатор элемента, который должен быть добавлен в коллекцию детей пакета.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха отклика `204 No Content` .
+В случае успешного ответа `204 No Content` .
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
 ## <a name="example"></a>Пример
 

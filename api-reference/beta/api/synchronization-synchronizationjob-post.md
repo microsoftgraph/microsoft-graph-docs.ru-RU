@@ -1,24 +1,24 @@
 ---
-title: Создание synchronizationJob
-description: Создание нового задания синхронизации со схемой синхронизации по умолчанию. Задание создается в отключеном состоянии. Вызов задания "Начните" для запуска синхронизации.
+title: Создание синхронизацииJob
+description: Создайте новое задание синхронизации с схемой синхронизации по умолчанию. Задание создается в состоянии отключения. Вызов Начните работу, чтобы начать синхронизацию.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: a565a393715edb2379590b225e0569f4397b9b23
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bc66071c18beeaa62e6f9a336f345cd24be91fdd
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131651"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775101"
 ---
-# <a name="create-synchronizationjob"></a>Создание synchronizationJob
+# <a name="create-synchronizationjob"></a>Создание синхронизацииJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового задания синхронизации со схемой синхронизации по умолчанию. Задание создается в отключеном состоянии. Вызов [задания "Начните"](synchronization-synchronizationjob-start.md) для запуска синхронизации.
+Создайте новое задание синхронизации с схемой синхронизации по умолчанию. Задание создается в состоянии отключения. Вызов [Начните работу,](synchronization-synchronizationjob-start.md) чтобы начать синхронизацию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50131651"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается.  | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [synchronizationJob,](../resources/synchronization-synchronizationjob.md) который необходимо создать, в JSON. Единственное обязательное свойство `templateId` — . Свойство `templateId` должно соответствовать одному из шаблонов, созданных для этого приложения или основного приложения-службы. Чтобы найти доступные шаблоны, используйте [шаблоны списков.](synchronization-synchronizationtemplate-list.md)
+В корпусе запроса создадим JSON-представление создаваемого объекта [синхронизацииJob.](../resources/synchronization-synchronizationjob.md) Единственное необходимое свойство `templateId` . Свойство `templateId` должно соответствовать одному из шаблонов, созданных для этого основного приложения или службы. Чтобы найти доступные шаблоны, используйте [шаблоны List.](synchronization-synchronizationtemplate-list.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает код отклика и объект `201 Created` [synchronizationJob](../resources/synchronization-synchronizationjob.md) в тексте отклика.
+В случае успешной работы возвращает код ответа и `201 Created` объект [синхронизацииJob](../resources/synchronization-synchronizationjob.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

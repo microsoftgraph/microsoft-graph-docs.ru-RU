@@ -1,16 +1,16 @@
 ---
 title: Получить вкладку в чате
 description: 'Извлечение свойств и связей указанной вкладки в чате. '
-author: nkramer
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ead58487b90fcb92bd402a8de11e0f58ad438fab
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d0cdba3257a6008005597dcc7c9f6a1cc60bdf06
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690004"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775845"
 ---
 # <a name="get-tab-in-chat"></a>Получить вкладку в чате
 
@@ -27,10 +27,15 @@ ms.locfileid: "49690004"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Для приложений | TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs/{tab-id}
 ```
@@ -49,7 +54,7 @@ GET /chats/{chat-id}/tabs/{tab-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [вкладки](../resources/teamstab.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [вкладки](../resources/teamstab.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -1,16 +1,16 @@
 ---
 title: 'teamsAppInstallation: обновление'
 description: Обновление приложения, установленного в чате, и его синхронизация с текущей версией, доступной в каталоге приложений клиента.
-author: laujan
+author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c830bf508ac10b2215aa5dda12384243e6f73b08
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: cf8c40ccf317349e50a81822ecd7bfcec028671a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689614"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775677"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: обновление
 

@@ -1,33 +1,33 @@
 ---
-title: Список заданий синхронизации
-description: Список существующих заданий для заданного экземпляра приложения (участников-служб).
+title: Задания синхронизации списков
+description: Список существующих заданий для данного экземпляра приложения (основной службы).
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8dafcb1120190244902c2fc4deaa56ee7d4d274c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 14b77ded78a494f08c457bbedeca4e0defaea272
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137496"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775122"
 ---
-# <a name="list-synchronization-jobs"></a>Список заданий синхронизации
+# <a name="list-synchronization-jobs"></a>Задания синхронизации списков
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список существующих заданий для заданного экземпляра приложения (участников-служб).
+Список существующих заданий для данного экземпляра приложения (основной службы).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Не поддерживается. | 
+|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) |Не поддерживается. |
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [synchronizationJob](../resources/synchronization-synchronizationjob.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [синхронизацииJob](../resources/synchronization-synchronizationjob.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

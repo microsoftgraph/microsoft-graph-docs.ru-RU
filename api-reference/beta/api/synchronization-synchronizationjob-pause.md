@@ -1,24 +1,24 @@
 ---
-title: 'synchronizationJob: pause'
-description: Временно остановите синхронизацию. Все ходы выполнения, включая состояние задания, сохраняются, и задание продолжит работу с того места, где оно было отключено при запуске вызова.
+title: 'синхронизацияJob: пауза'
+description: Временно прекратите синхронизацию. Все ходы, включая состояние задания, сохраняются, и задание будет продолжено с того места, где оно было отключено при запуске вызова.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: eba89e688b8dc9ea02fee633ee4beeb40bb55106
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 868184491c13e67b9bcd773f0a82383a5310d67b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137492"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50776237"
 ---
-# <a name="synchronizationjob-pause"></a>synchronizationJob: pause
+# <a name="synchronizationjob-pause"></a>синхронизацияJob: пауза
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Временно остановите синхронизацию. Все ходы выполнения, включая состояние задания, сохраняются, и задание продолжит работу с того места, где оно было отключено при [запуске](../api/synchronization-synchronizationjob-start.md) вызова.
+Временно прекратите синхронизацию. Все ходы, включая состояние задания, сохраняются, и задание будет продолжено [](../api/synchronization-synchronizationjob-start.md) с того места, где оно было отключено при запуске вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50137492"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.  |
-|Для приложений                            |Не поддерживается. | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `204 No Content` ответ. В тексте отклика не возвращается никаких данных.
+В случае успешного ответа `204 No Content` возвращается ответ. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
