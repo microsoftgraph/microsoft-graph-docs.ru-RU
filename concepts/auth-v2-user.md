@@ -3,14 +3,14 @@ title: Получение доступа от имени пользовател�
 description: Для чтения и записи ресурсов от имени пользователя с помощью Microsoft Graph ваше приложение должно получать маркер доступа из Azure AD и вкладывать этот маркер в запросы для Microsoft Graph.
 author: jackson-woods
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: af6a2fcd847f77fc3b9f6155a70f39a50e9181f2
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 6a055349efadca015887cfd8ece097c087d42701
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288912"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761460"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Получение доступа от имени пользователя
 

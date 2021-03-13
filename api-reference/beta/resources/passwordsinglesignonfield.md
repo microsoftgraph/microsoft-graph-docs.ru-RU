@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Пассвордсинглесигнонфиелд
-description: Поля для записи учетных данных для единого входа паролей
+title: тип ресурса passwordSingleSignOnField
+description: Поля для захвата учетных данных для SSO пароля
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d79f2347acabae0323e008a43adb7938d70d3768
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0db6198d61715603acee54e7351c9fd5f2fed88
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998196"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761551"
 ---
-# <a name="passwordsinglesignonfield-resource-type"></a>Тип ресурса Пассвордсинглесигнонфиелд
+# <a name="passwordsinglesignonfield-resource-type"></a>тип ресурса passwordSingleSignOnField
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит поля для заполнения, используемые для заполнения учетных данных для единого входа на основе пароля.
+Содержит поля для захвата для заполнения учетных данных использования для одного входа на основе пароля.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|кустомизедлабел|String|Переопределение названий и подписей для настройки.|
-|дефаултлабел|String|Метка, которая будет использоваться, если Кустомизедлабел не указан. Только для чтения.|
-|fieldId|String|Идентификатор, используемый для идентификации типа поля. Это внутренний идентификатор, и возможные значения: `param_1` ,, `param_2` `param_userName` , `param_password` .|
-|type|String|   Тип учетных данных. Возможные значения `text` : `password` .|
+|customizedLabel|String|Переопределение заголовка или метки для настройки.|
+|defaultLabel|String|Метка, которая будет использоваться, если не будет предоставлена настройкаLabel. Только для чтения.|
+|fieldId|String|Идентификатор, используемый для удостоверения типа поля. Это внутренний id и возможные значения `param_1` , `param_2` , `param_userName` `param_password` .|
+|type|String|   Тип учетных данных. Значения могут быть `text` , `password` .|
 
 ## <a name="json-representation"></a>Представление JSON
 

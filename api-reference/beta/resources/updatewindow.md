@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Упдатевиндов
-description: Тип ресурса Упдатевиндов.
+title: тип ресурса updateWindow
+description: тип ресурса updateWindow.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b2aa61d5d815d912caa47fd63d5907b62f882d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d8f12c7cfcb4c83075087d7b894dc95fe92a695
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003453"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761228"
 ---
-# <a name="updatewindow-resource-type"></a>Тип ресурса Упдатевиндов
+# <a name="updatewindow-resource-type"></a>тип ресурса updateWindow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет окно времени, в течение которого [агенты](onpremisesagent.md) могут получать обновления.
+Представляет окно времени, в [течение которого агенты](onpremisesagent.md) могут получать обновления.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|упдатевиндовендтиме|TimeOfDay|Конец интервала времени, в течение которого агенты могут получать обновления|
-|упдатевиндовстарттиме|TimeOfDay|Начало периода времени, в течение которого агенты могут получать обновления|
+|updateWindowEndTime|TimeOfDay|Конец окне времени, в течение которого агенты могут получать обновления|
+|updateWindowStartTime|TimeOfDay|Начало окна времени, в течение которого агенты могут получать обновления|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -4,14 +4,14 @@ description: Удалите изменения, внесенные в объек
 author: inbarckms
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 67d2a7ac5e7543e9aff68cf4b9db3a8fef2f2126
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f55afafed3863ffeab1c8bf786602606112e048b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475032"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761858"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethodconfiguration"></a>Удаление temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph

@@ -3,14 +3,14 @@ title: Получение доступа без пользователя
 description: Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Очень часто это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя.
 author: jackson-woods
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4c1726a5f974547e8fbd2c6e927431d8a40659f3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 63b9f184639c3cb7186c65940add3cf9d6b1a47d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288478"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761467"
 ---
 # <a name="get-access-without-a-user"></a>Получение доступа без пользователя
 

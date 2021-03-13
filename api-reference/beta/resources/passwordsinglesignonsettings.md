@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Пассвордсинглесигнонсеттингс
-description: Параметры, связанные с единым входом на основе паролей
+title: тип ресурса passwordSingleSignOnSettings
+description: Параметры, связанные с одним входом на основе пароля
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a1b2739ecbd5d09358e58203ab61d4e65c48716b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e7e4402e6416166dd7c288cdd9aa9ec5ecbba06
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998175"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761544"
 ---
-# <a name="passwordsinglesignonsettings-resource-type"></a>Тип ресурса Пассвордсинглесигнонсеттингс
+# <a name="passwordsinglesignonsettings-resource-type"></a>тип ресурса passwordSingleSignOnSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит коллекцию параметров единого входа на основе паролей.
+Содержит коллекцию параметров единой подписи на основе пароля.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|fields|Коллекция [пассвордсинглесигнонфиелд](passwordsinglesignonfield.md)||
+|fields|[коллекция passwordSingleSignOnField](passwordsinglesignonfield.md)||
 
 ## <a name="json-representation"></a>Представление JSON
 

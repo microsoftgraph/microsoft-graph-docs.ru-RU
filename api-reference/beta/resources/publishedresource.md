@@ -1,51 +1,51 @@
 ---
-title: Тип ресурса publishedResource
-description: Тип ресурса publishedResource.
+title: тип ресурса publishedResource
+description: тип ресурса publishedResource.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 1090e985fc9ffdec0c27f9793a361851d2fa5216
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: eb28f345aba008a0f2d5bb5ab4723c2ffbb8aca3
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155568"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760934"
 ---
-# <a name="publishedresource-resource-type"></a>Тип ресурса publishedResource
+# <a name="publishedresource-resource-type"></a>тип ресурса publishedResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет локально опубликованный ресурс. Администратор клиента может публиковать различные типы локального ресурса — корпоративные приложения, контроллеры домена, серверы и [т.](onpremisesagent.md) д. Установленные администратором клиента локально агенты можно настроить для доступа к определенному опубликованного ресурса и обработки запросов.
+Представляет локально опубликованный ресурс. Администратор клиента может публиковать различные типы локального ресурса — корпоративные приложения, контроллеры доменов, серверы и [т.](onpremisesagent.md) д. Агенты, установленные администратором клиента, могут быть настроены для доступа и обработки запросов к конкретному опубликованому ресурсу.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список publishedResources](../api/publishedresource-list.md) | [Коллекция объектов publishedResource](publishedresource.md) | Получите **коллекцию объектов publishedResources.** |
-| [Get publishedResource](../api/publishedresource-get.md) | [publishedResource](publishedresource.md) | Чтение свойств и связей объекта **publishedResource.** |
+| [Список опубликованныхResources](../api/publishedresource-list.md) | [коллекция объектов publishedResource](publishedresource.md) | Получите **коллекцию объектов publishedResources.** |
+| [Get publishedResource](../api/publishedresource-get.md) | [publishedResource](publishedresource.md) | Ознакомьтесь с свойствами и отношениями объекта **publishedResource.** |
 | [Создание publishedResource](../api/publishedresource-post.md) |  [publishedResource](publishedresource.md)  | Создание нового **publishedResource**. |
-| [Обновление publishedResource](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Обновление объекта **publishedResource.** |
-| [Удаление publishedResource](../api/publishedresource-delete.md) | Нет | Удаление объекта **publishedResource.** |
-| [Назначение publishedResource onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | Нет | **Назначьте объект publishedResource** **объекту onPremisesAgentGroup.** |
-| [Удаление publishedResource из onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | Нет |  Удаление объекта **publishedResource** из **onPremisesAgentGroup.**|
+| [Update publishedResource](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Обновление **объекта publishedResource.** |
+| [Удаление publishedResource](../api/publishedresource-delete.md) | Нет | Удаление **объекта publishedResource.** |
+| [Назначение publishedResource onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | Нет | Назначение **объекта publishedResource** в **onPremisesAgentGroup.** |
+| [Удаление publishedResource из onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | Нет |  Удалите **объект publishedResource** из **onPremisesAgentGroup.**|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String| Отображаемого имени publishedResource.|
-|id|String| ИД объекта publishedResource. Только для чтения.|
+|displayName|String| Отображение имени опубликованногоРесурса.|
+|id|String| ID объекта publishedResource. Только для чтения.|
 |publishingType|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
-|resourceName|String|Имя publishedResource.|
+|resourceName|String|Имя опубликованногоResource.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|agentGroups|[Коллекция onPremisesAgentGroup](onpremisesagentgroup.md)| Список **onPremisesAgentGroups,** которые **назначены publishedResource.** Только для чтения. Допускается значение null.|
+|agentGroups|[коллекция onPremisesAgentGroup](onpremisesagentgroup.md)| Список **onPremisesAgentGroups,** которые **назначены публикацииResource.** Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

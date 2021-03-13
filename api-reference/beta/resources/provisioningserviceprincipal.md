@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса ПровисионингсервицепринЦипал
-description: Представляет участника службы, используемого для подготовки.
+title: тип ресурса provisioningServicePrincipal
+description: Представляет принцип службы, используемый для обеспечения.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: aaa4b23a90be458fd3b3159c97159bfa152ff1db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5af9dc46de889eea780ca45eb25463ffafcf1260
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026455"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760997"
 ---
-# <a name="provisioningserviceprincipal-resource-type"></a>Тип ресурса ПровисионингсервицепринЦипал
+# <a name="provisioningserviceprincipal-resource-type"></a>тип ресурса provisioningServicePrincipal
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет участника службы, используемого для подготовки. 
+Представляет принцип службы, используемый для обеспечения. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Уникально идентифицирует **servicePrincipal** , используемый для подготовки.|
-|name|String| Определяемое пользователем имя для **servicePrincipal**.|
+|id|String|Уникально определяет **службуPrincipal, используемую** для предварительного обеспечения.|
+|name|String| Имя, определенное клиентом **для службыPrincipal.**|
 
 ## <a name="json-representation"></a>Представление JSON
 

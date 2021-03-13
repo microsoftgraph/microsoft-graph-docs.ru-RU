@@ -1,18 +1,18 @@
 ---
 title: authenticationMethodConfigurations
-description: Объект authenticationMethodConfigurations.
+description: объект authenticationMethodConfigurations.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cda2cda7756bb795c93e10dddbd344e5a4a92ed2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 691184b1dfbf0323204debd70488d232d77b4f7a
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159141"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761137"
 ---
-# <a name="authenticationmethodconfiguration-resource-type"></a>Тип ресурса authenticationMethodConfiguration
+# <a name="authenticationmethodconfiguration-resource-type"></a>тип ресурса authenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "50159141"
 |id|String|Имя политики.|
 |state|authenticationMethodState|Состояние политики. Возможные значения: `enabled`, `disabled`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

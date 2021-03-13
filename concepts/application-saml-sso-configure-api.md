@@ -3,14 +3,14 @@ title: Настройка единого входа на основе SAML с п
 description: Узнайте, как экономить время с помощью API Microsoft Graph, чтобы автоматизировать настройку единого входа на основе SAML.
 author: kenwith
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3ab54e4726635262579f3ef54625197f0191c5ae
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: ea4a0a23b19b0b7a7250966f59e3a92e94a40618
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272155"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761474"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Настройка единого входа на основе SAML для приложения с помощью API Microsoft Graph
 

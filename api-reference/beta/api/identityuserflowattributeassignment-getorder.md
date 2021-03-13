@@ -1,22 +1,22 @@
 ---
 title: 'identityUserFlowAttributeAssignment: getOrder'
-description: Получите порядок identityUserFlowAttributeAssignments, собираемого в пользовательском потоке.
+description: Получите порядок сбора удостоверенийUserFlowAttributeAssignments в потоке пользователей.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19172e8928716cb3f7ad49e67bc2f75de122de46
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 93308846ecf1549efd70ebe8fc4b2915626d7b81
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689266"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759960"
 ---
 # <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment: getOrder
 
 Пространство имен: microsoft.graph
 
-Получите порядок identityUserFlowAttributeAssignments, собираемого в пользовательском потоке.
+Получите порядок сбора удостоверенийUserFlowAttributeAssignments в потоке пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49689266"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,9 +50,9 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения эта функция возвращает код `200 OK` отклика и [assignmentOrder](../resources/assignmentorder.md) в тексте отклика.
+В случае успешного выполнения данной функции возвращается код ответа и `200 OK` [назначениеOrder](../resources/assignmentorder.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

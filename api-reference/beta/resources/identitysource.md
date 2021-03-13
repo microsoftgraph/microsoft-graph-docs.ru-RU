@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Идентитисаурце
-description: Тип Идентитисаурце является абстрактным базовым типом для источника удостоверения для подключенной Организации.
+title: Тип ресурса identitySource
+description: Тип identitySource — это абстрактный базовый тип источника удостоверений для связанной организации.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 623553e5d59bdda2f7df0d763a6d96980a3e0464
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d516aa2057feaf12449492c8e2246dfb04413c1
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089674"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761123"
 ---
-# <a name="identitysource-resource-type"></a>Тип ресурса Идентитисаурце
+# <a name="identitysource-resource-type"></a>Тип ресурса identitySource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Дочерние типы этого типа, [азуреактиведиректоритенант](azureactivedirectorytenant.md), [домаинидентитисаурце](domainidentitysource.md) и [екстерналдомаинфедератион](externaldomainfederation.md), используются в источниках идентификаторов [коннектедорганизатион](connectedOrganization.md).
+Подвиды этого [типа, azureActiveDirectoryTenant,](azureactivedirectorytenant.md) [domainIdentitySource](domainidentitysource.md) и [externalDomainFederation,](externaldomainfederation.md)используются в источниках удостоверений [подключеннойорганизации.](connectedOrganization.md)
 
 ## <a name="properties"></a>Свойства
 

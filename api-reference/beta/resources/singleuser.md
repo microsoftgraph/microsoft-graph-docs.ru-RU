@@ -1,24 +1,24 @@
 ---
-title: сложный тип SingleUser.
-description: Определяет пользователя в клиенте, который будет разрешен в качестве запрашивающего, утверждающего или проверяющего.
+title: сложный тип singleUser
+description: Определяет пользователя в клиенте, которому будет разрешено в качестве запрашивателя, утверждения или рецензента.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fb6b665814281629836f4c5148b567de776ef2ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8e1982eef048e1f68f579df7f2ebc6b0975f2f0b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067127"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761046"
 ---
-# <a name="singleuser-complex-type"></a>сложный тип SingleUser.
+# <a name="singleuser-complex-type"></a>сложный тип singleUser
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в параметрах просмотра запроса, утверждения и назначения для [политики назначения пакетов Access](accesspackageassignmentpolicy.md). `@odata.type`Это значение `#microsoft.graph.singleUser` указывает на то, что этот набор пользователей определяет определенного пользователя в клиенте, который будет разрешен в качестве запрашивающего, утверждающего или проверяющего.
+Используется в параметрах проверки запросов, утверждений и назначений политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) Это значение указывает на то, что этот набор пользователей определяет конкретного пользователя в клиенте, которому будет разрешено в качестве запрашивателя, утверждения или  `@odata.type` `#microsoft.graph.singleUser` рецензента.
 
 ## <a name="properties"></a>Свойства
 
@@ -26,13 +26,13 @@ ms.locfileid: "48067127"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | Идентификатор пользователя в Azure AD. |
+| id |String | ID пользователя в Azure AD. |
 | description |String | Имя пользователя в Azure AD. Только для чтения. |
-| Создание резервной копии | Boolean | Для **SingleUser.** на этапе утверждения указывает, является ли пользователь утверждающим резервной копии. |
+| isBackup | Boolean | Для **одного пользователя на** стадии утверждения указывает, является ли пользователь резервным кодом. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено представление типа в формате JSON.
+Ниже приводится представление JSON этого типа.
 
 <!-- {
   "blockType": "resource",

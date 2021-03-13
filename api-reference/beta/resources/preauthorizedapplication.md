@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса preAuthorizedApplication
-description: Список предварительно авторизованных клиентских приложений
+title: тип ресурса preAuthorizedApplication
+description: Списки предварительно авторизованных клиентских приложений
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 52b90914a3916c57cb07c8bfa84c9a8786ec1209
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 94a8dad23492ca7a145c5839410edf0fd4a34877
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003523"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761165"
 ---
-# <a name="preauthorizedapplication-resource-type"></a>Тип ресурса preAuthorizedApplication
+# <a name="preauthorizedapplication-resource-type"></a>тип ресурса preAuthorizedApplication
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисляет клиентские приложения, которые предварительно авторизованы с указанными разрешениями для доступа к API этого приложения. Пользователям не требуется согласие с какими-либо из предварительно разрешенных приложений (для указанных разрешений). Однако все дополнительные разрешения, не указанные в Преаусоризедаппликатионс (например, по запросу добавочного согласия), требуют согласия пользователя.
+Перечислены клиентские приложения, предварительно авторизованные с указанными разрешениями на доступ к API этого приложения. Пользователи не обязаны соглашаться на любое предварительно авторизованного приложения (для указанных разрешений). Однако для любых дополнительных разрешений, не указанных в preAuthorizedApplications (запрашивается, например, с помощью дополнительного согласия), потребуется согласие пользователя.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |appId|String| Уникальный идентификатор приложения. |
-|пермиссионидс|Коллекция String| Уникальный идентификатор для [oauth2PermissionScopes](permissionscope.md) , который требуется приложению. |
+|permissionIds|Коллекция String| Уникальный идентификатор [oauth2PermissionScopes,](permissionscope.md) который требуется приложению. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

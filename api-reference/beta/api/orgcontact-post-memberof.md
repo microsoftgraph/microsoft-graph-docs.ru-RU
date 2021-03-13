@@ -1,16 +1,16 @@
 ---
 title: Создание memberOf
-description: Используйте этот API для создания нового элемента memberOf.
+description: Используйте этот API для создания нового memberOf.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4f523427d14f5ae5fdba4eeee33399d895277229
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e88f669020d1566765f9313182ee21bc33fe1dd9
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969435"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759421"
 ---
 # <a name="create-memberof"></a>Создание memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "47969435"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для создания нового элемента memberOf.
+Используйте этот API для создания нового memberOf.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ POST /contacts/{id}/memberOf
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

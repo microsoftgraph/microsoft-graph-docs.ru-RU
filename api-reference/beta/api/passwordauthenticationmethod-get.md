@@ -3,14 +3,14 @@ title: Get passwordAuthenticationMethod
 description: Извлечение свойств и связей объекта passwordauthenticationmethod.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2112788ce5127326e0e82ef91c1068b5b56ec14a
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: a34939a59ca265fb7c50b82cf662095052763950
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515597"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761439"
 ---
 # <a name="get-passwordauthenticationmethod"></a>Get passwordAuthenticationMethod
 
@@ -28,17 +28,17 @@ ms.locfileid: "50515597"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -69,7 +69,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и запрашиваемого `200 OK` [пароляAuthenticationMethod](../resources/passwordauthenticationmethod.md) в тексте ответа.
 

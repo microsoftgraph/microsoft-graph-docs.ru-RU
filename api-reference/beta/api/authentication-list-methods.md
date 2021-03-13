@@ -3,14 +3,14 @@ title: Методы List
 description: Извлечение списка объектов метода проверки подлинности.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 48156b4f2c478b5d58978fba837a0f44ed17d502
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 37312a11458299505817be1bb18e3ddb9f620a08
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515508"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760044"
 ---
 # <a name="list-methods"></a>Методы List
 
@@ -28,17 +28,17 @@ ms.locfileid: "50515508"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -69,7 +69,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.
 

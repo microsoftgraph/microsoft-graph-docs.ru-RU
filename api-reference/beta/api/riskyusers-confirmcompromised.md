@@ -1,27 +1,27 @@
 ---
-title: Подтверждение Рискюсер скомпрометированных атак
-description: Подтвердите, что объект Рискюсер скомпрометирован.
+title: Подтверждение скомпрометации riskyUser
+description: Подтверждение объекта riskyUser как скомпрометированного.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: d9f3b141144654e21c47c523c46a3329865c7031
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 06de240619f121671b6fea8883bca0d3fa19e38a
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970947"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760948"
 ---
-# <a name="riskyuser-confirmcompromised"></a>Рискюсер: Конфирмкомпромисед
+# <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**Примечание:** Для API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** API riskyUsers требует лицензии Azure AD Premium P2.
 
-Подтвердите, что один или несколько объектов [рискюсер](../resources/riskyuser.md) считаются скомпрометированными. Это действие устанавливает высокий уровень риска для целевого пользователя.
+Подтвердим, что один или несколько [объектов riskyUser](../resources/riskyuser.md) могут быть скомпрометированы. Это действие задает высокий уровень риска целевого пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "48970947"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskyUser.ReadWrite.All |
+|Для приложений | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,13 +46,13 @@ POST /identityProtection/riskyUsers/confirmCompromised
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Укажите рискованные идентификаторы пользователей, которые нужно отклонить в теле запроса.
+Укажите рискованные пользовательские ИД, которые необходимо отклонять в теле запроса.
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="examples"></a>Примеры
-### <a name="example-1-confirm-users-as-compromised"></a>Пример 1: подтверждение раскрытого пользователя
+### <a name="example-1-confirm-users-as-compromised"></a>Пример 1. Подтверждение скомпрометации пользователей
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -99,7 +99,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-confirm-a-user-as-compromised"></a>Пример 2: подтверждение раскрытого пользователя
+### <a name="example-2-confirm-a-user-as-compromised"></a>Пример 2. Подтверждение скомпрометации пользователя
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

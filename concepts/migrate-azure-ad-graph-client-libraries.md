@@ -1,38 +1,38 @@
 ---
-title: Перенос приложений .NET для Azure AD Graph в Microsoft Graph
-description: Описывается перенос приложений API Azure Active Directory (Azure AD) в API Microsoft Graph.
+title: Перенос приложений Azure AD Graph .NET в Microsoft Graph
+description: Описывает перенос приложений API API Azure Active Directory (Azure AD) в API Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 7fea43e808d14f2d80dc01690055257908f7fe18
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.prod: applications
+ms.openlocfilehash: 286f631a9d5787d972e8d7db2559b0c359384c75
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288359"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761299"
 ---
-# <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Миграция использования клиентской библиотеки .NET в Microsoft Graph
+# <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Перенос использования клиентской библиотеки .NET в Microsoft Graph
 
-Эта статья входит в *Шаг 3: Ознакомьтесь со сведениями о* [процессе миграции приложений](migrate-azure-ad-graph-planning-checklist.md).
+Эта статья является *частью шага 3: просмотрите* сведения о процессе переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-Если ваше приложение использует клиентскую библиотеку Azure AD Graph, переключитесь на [клиентскую библиотеку Microsoft Graph .NET](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
+Если ваше приложение в настоящее время использует клиентскую библиотеку Azure AD Graph, переключиться на клиентскую библиотеку [Microsoft Graph .NET.](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 
->NOTE: клиентская библиотека Microsoft Graph .NET поддерживается только для .NET Framework 4,5 и .NET Standard 1,1.  Тем не менее, ознакомьтесь со статьей клиентская библиотека .NET для Microsoft Graph, чтобы получить последние сведения о поддержке.
+>ПРИМЕЧАНИЕ. Клиентская библиотека Microsoft Graph .NET поддерживается только для платформа .NET Framework 4.5 и .NET Standard 1.1.  Однако для получения последних сведений о поддержке обратитесь в клиентскую библиотеку Microsoft Graph .NET.
 
-В этой статье мы рассмотрим некоторые общие действия для перехода на клиентскую библиотеку Microsoft Graph .NET:
+Здесь мы посмотрим на некоторые общие действия для переноса в клиентскую библиотеку Microsoft Graph .NET:
 
-- Создание клиента Microsoft Graph с помощью маркера доступа (который можно получить с помощью ADAL или MSAL)
-- Как формулировать запросы
-- Использование построителей запросов
-- Обработка коллекций и разбиения по страницам  
+- Создание клиента Microsoft Graph с помощью маркера доступа (который можно приобрести с помощью ADAL или MSAL)
+- Как сформулировать запросы
+- Использование строителей запросов
+- Обработка коллекций и paging  
 
 ## <a name="overview-of-the-migration-steps"></a>Обзор этапов миграции
 
-В следующих шагах предполагается, что ваше приложение уже использует ADAL для получения маркеров доступа для вызова Azure AD Graph, и теперь вы будете продолжать использовать ADAL. Переключение на MSAL можно выполнить в отдельном действии, описанном в статье [Переход на MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).
+Следующие действия предполагают, что ваше приложение уже использует ADAL для приобретения маркеров доступа для вызова Azure AD Graph, и что пока вы будете продолжать использовать ADAL. Переход на MSAL можно сделать в качестве отдельного шага, описанного при [миграции в MSAL.](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal)
 
-1. Чтобы получить маркер доступа к Microsoft Graph, обновите **resourceurl экземпляром** с " `https://graph.windows.net` на" `https://graph.microsoft.com` .
+1. Чтобы приобрести маркер доступа к Microsoft Graph, **обнови ресурсUrl** от `https://graph.windows.net` до `https://graph.microsoft.com` .
 
-2. В приложении обновите ссылки на клиентскую библиотеку Microsoft Graph, изменив следующие компоненты:
+2. В приложении обновляйте ссылки на клиентскую библиотеку Microsoft Graph, изменяя:
 
     ``` csharp
     using Microsoft.Azure.ActiveDirectory.GraphClient;
@@ -44,11 +44,11 @@ ms.locfileid: "48288359"
     using Microsoft.Graph;
     ```
 
-3. С помощью диспетчера пакетов Скачайте и обновите [пакет NuGet для Microsoft Graph](https://www.nuget.org/packages/Microsoft.Graph/) и зависимости обновлений.
+3. Используйте диспетчер пакетов для загрузки и обновления пакета [Microsoft Graph NuGet](https://www.nuget.org/packages/Microsoft.Graph/) и обновления зависимостей.
 
-4. Обновите свой конструктор клиента, чтобы создать объект a `GraphServiceClient` , а не `ActiveDirectoryClient` .  Следующие фрагменты кода предполагают, что ваше приложение использует `AcquireTokenAsyncForUser()` метод для получения новых маркеров. Определение этого метода можно найти в [образце Active Directory — DotNet — графапи — Console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
+4. Обновите конструктор клиента, чтобы создать `GraphServiceClient` , а не `ActiveDirectoryClient` .  В следующих фрагментах кода предполагается, что приложение использует метод `AcquireTokenAsyncForUser()` для приобретения новых маркеров. Определение этого метода можно найти в примере [active-directory-dotnet-graphapi-console.](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs)
 
-    Настройки
+    Изменение:
 
     ``` csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
@@ -66,9 +66,9 @@ ms.locfileid: "48288359"
        }));
     ```
 
-    Для клиентской библиотеки Microsoft Graph `serviceRoot` значение также включает номер версии. В настоящее время это значение `https://graph.microsoft.com/v1.0` .
+    Для клиентской библиотеки Microsoft Graph значение `serviceRoot` также включает номер версии. В настоящее время это значение `https://graph.microsoft.com/v1.0` .
 
-5. Обновление запросов на использование синтаксиса построителя запросов клиентов Microsoft Graph путем изменения следующих параметров:
+5. Обновив запросы на использование синтаксиса строителя клиентских запросов Microsoft Graph, изменяя:
 
     ``` csharp
     signedInUser = (User)await client.Me.ExecuteAsync();
@@ -81,9 +81,9 @@ ms.locfileid: "48288359"
     ```
 
     >[!NOTE]
-    >В клиентской библиотеке Azure AD Graph поддерживался синтаксис запросов на основе LINQ. Однако клиентская библиотека Microsoft Graph не поддерживает эту функции.  Следовательно, вам потребуется преобразовать нужные запросы в другое выражение для RESTFUL.  
+    >Клиентская библиотека Azure AD Graph поддерживает синтаксис запросов на основе LINQ. Однако клиентская библиотека Microsoft Graph этого не делает.  Следовательно, необходимо преобразовать соответствующие запросы в более reSTful выражение.  
 
-    Для этого измените следующее:
+    Чтобы сделать это, измените:
 
     ``` csharp
     var groups = await
@@ -97,9 +97,9 @@ ms.locfileid: "48288359"
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
     ```
 
-6. Если страницы кода проходят через коллекции, внесите следующие небольшие изменения. В следующем примере сравниваются и сравниваются получение группы и разбиение по страницам с разбивкой по 5 за раз. Хотя код для Azure AD Graph требует конструкцию для извлечения членов группы, у Microsoft Graph нет такого требования. Кроме того, код является относительно похожим.  Чтобы быть кратким, отображаются только пользовательские элементы, условия try/catch и условия ошибок не отображаются, а фрагменты кода предназначены для однопотоковой консоли приложения.
+6. Если код страницы через коллекции, внести следующие незначительные изменения. В следующем примере сравнивается и контрастирует извлечение группы и прогона через ее членов по 5 за раз. Хотя для кода Azure AD Graph требуется конструкция выборщика для получения участников группы, Microsoft Graph не имеет такого требования. Кроме этого, код является относительно похожим.  Чтобы быть кратким, отображаются только пользователи, не отображаются условия try/catch и error, а фрагменты кода — для однопотокого приложения консоли.
 
-    Например, измените следующий код с помощью клиентской библиотеки .NET для Azure AD Graph:
+    Например, измените следующий код с помощью клиентской библиотеки Azure AD Graph .NET:
 
     ```csharp
     Group retrievedGroup = client.Groups.
@@ -124,7 +124,7 @@ ms.locfileid: "48288359"
 
     ```
 
-    Следующий код с помощью клиентской библиотеки .NET Microsoft Graph:
+    К следующему коду с помощью клиентской библиотеки Microsoft Graph .NET:
 
     ```csharp
     var membersPage = client.Groups[id].Members.Request().Top(5).GetAsync().Result;
@@ -147,15 +147,15 @@ ms.locfileid: "48288359"
 
     ```
 
-7. Построение и устранение ошибок ресурсов, свойств, навигации и действий служб, обычно связанных с изменением имен.
+7. Создайте и исправьте все ошибки в действиях ресурса, свойства, навигации и службы, обычно связанные с изменениями имен.
 
 ## <a name="see-also"></a>См. также
 
-[Приложение фрагментов кода консоли C#](https://github.com/microsoftgraph/console-csharp-snippets-sample) выделяет дополнительные различия между клиентской библиотекой Microsoft Graph и клиентской библиотекой Azure AD Graph.
+Фрагменты [C#](https://github.com/microsoftgraph/console-csharp-snippets-sample) консоли больше подчеркивают различия между клиентской библиотекой Microsoft Graph и клиентской библиотекой Azure AD Graph.
 
-Клиентская библиотека Azure AD Graph поддерживает только платформу .NET.  Тем не менее, клиентская библиотека Microsoft Graph поддерживает дополнительные [платформы и языки](/graph) , которые могут оказаться более удобными для ваших решений.
+Клиентская библиотека Azure AD Graph поддерживает только платформу .NET.  Однако клиентская библиотека Microsoft Graph поддерживает дополнительные [платформы](/graph) и языки, которые могут оказаться более полезными для ваших решений.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте, как [развертывать, тестировать и расширять](./migrate-azure-ad-graph-deploy-test-extend.md) приложения, перенесенные в Microsoft Graph.
-- Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .
+- Узнайте, как [развертывать, тестировать](./migrate-azure-ad-graph-deploy-test-extend.md) и расширять приложения, перенесенные в Microsoft Graph.
+- Снова [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список.

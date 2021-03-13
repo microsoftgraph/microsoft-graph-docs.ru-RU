@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Статусбасе
-description: Описывает состояние сводного события подготовки.
+title: тип ресурса statusBase
+description: Описывает состояние события сводки по подготовкам.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 5d655649f7e1edca4e269576c9bcb6d1f3014e89
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 951ef56ecbe2ff8c2ab9692e4eaa9ddf7811d959
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523030"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761025"
 ---
-# <a name="statusbase-resource-type"></a>Тип ресурса Статусбасе
+# <a name="statusbase-resource-type"></a>тип ресурса statusBase
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает состояние сводного события подготовки. 
+Описывает состояние события сводки по подготовкам. 
 
 ## <a name="properties"></a>Свойства
 

@@ -1,206 +1,206 @@
 ---
 title: Различия свойств между Azure AD Graph и Microsoft Graph
-description: Описывает различия свойств между ресурсами (сущностями) Azure AD Graph и Microsoft Graph, чтобы помочь в переносе приложений соответствующим образом.
+description: Описывает различия свойств между ресурсами Azure AD Graph (сущностями) и Microsoft Graph, чтобы помочь соответствующим образом перенести приложения.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 38d151fa5c6510f3b8279646db7ebe0c37c4926a
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.prod: applications
+ms.openlocfilehash: 17ab0707d320f94dff4a1dfa0a96ea6b47f5eb2b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705949"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761277"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Azure AD Graph и Microsoft Graph
 
-Эта статья является частью *шага 1. Обзор различий API* в [процессе переноса приложений.](migrate-azure-ad-graph-planning-checklist.md)
+Эта статья является *частью шага 1: просмотрите различия API* процесса переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-В общем случае лучший способ сравнить API Azure AD Graph с Microsoft Graph — сравнить общие метаданные для каждой службы, особенно описания ресурсов:
+В общем, лучший способ сравнить API Azure AD Graph с Microsoft Graph — это сравнить лежащие метаданные для каждой службы, особенно описания ресурсов:
 
 - [Метаданные Azure AD Graph](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
-- [Метаданные бета-версии Microsoft Graph](https://graph.microsoft.com/beta/$metadata)
-- [Метаданные Microsoft Graph 1.0](https://graph.microsoft.comv/1.0/$metadata)
+- [Бета-метаданные Microsoft Graph](https://graph.microsoft.com/beta/$metadata)
+- [Метаданные Microsoft Graph v1.0](https://graph.microsoft.comv/1.0/$metadata)
 
-Здесь выделяются различия свойств между ресурсами. Если свойство не отображается в этом списке, оно уже доступно в версии [1.0](/graph/api/overview?view=graph-rest-1.0) Microsoft Graph с точно таким же именем, как в Azure AD Graph.
+Здесь выделяются различия свойств между ресурсами. Если свойство не отображается в этом списке, оно уже доступно в [версии v1.0](/graph/api/overview?view=graph-rest-1.0) Microsoft Graph с точно таким же именем, как в Azure AD Graph.
 
-Так как пользователи и группы используются так часто, эти ресурсы отображаются первыми.  Другие ресурсы отображаются в алфавитном порядке.
+Так как пользователи и группы используются так часто, эти ресурсы отображаются в первую очередь.  Другие ресурсы отображаются в алфавитном порядке.
 
-## <a name="user-property-differences"></a>Различия в свойствах пользователей
+## <a name="user-property-differences"></a>Различия свойств пользователя
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br>свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br>свойство|Комментарии|
 |---|---|---|
-| **deletedTimestamp**| beta &nbsp; - &nbsp; **deletedDateTime** <br> v1.0 &nbsp; - &nbsp; **deletedDateTime** | |
-| **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
-| **facsimileTelephoneNumber** | beta &nbsp; - &nbsp; **faxNumber** <br> v1.0 &nbsp; - &nbsp; **faxNumber** | |
-| **immutableId** | beta &nbsp; - &nbsp; **onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId**  | |
-| **isCompromised** | &nbsp; - &nbsp; _Бета-версия недоступна_ <br> V1.0 &nbsp; - &nbsp; _Недоступна_ | API защиты [идентификации](/graph/api/resources/identityprotection-root?view=graph-rest-beta) Microsoft Graph предоставляет более сложные функции. |
-| **lastDirSyncDateTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
+| **deletedTimestamp**| &nbsp; - &nbsp; **бета-версия deletedDateTime** <br> v1.0 &nbsp; - &nbsp; **deletedDateTime** | |
+| **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
+| **facsimileTelephoneNumber** | beta &nbsp; - &nbsp; **faxNumber** <br> v1.0 &nbsp; - &nbsp; **факсНумбер** | |
+| **immutableId** | &nbsp; - &nbsp; **бета-версия onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId**  | |
+| **isCompromised** | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _Недоступны_ | API защиты [удостоверений](/graph/api/resources/identityprotection-root?view=graph-rest-beta) Microsoft Graph предоставляет более сложные функции. |
+| **lastDirSyncDateTime** | &nbsp; - &nbsp; **бета-версия наPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | &nbsp; - &nbsp; **бета-версия mobilePhone** <br> v1.0 &nbsp; - &nbsp; **mobilePhone** | |
-| **provisioningErrors** | &nbsp; - &nbsp; _Бета-версия недоступна_ <br> V1.0 &nbsp; - &nbsp; _Недоступна_ | Это свойство и его сведения неподготовлены.  Однако в **onPremisesProvisioningErrors** можно найти новое свойство, описывающие все ошибки, связанные с подготовкаю AD Connect |
+| **provisioningErrors** | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _Недоступны_ | Это свойство и его сведения неподготовлены.  Однако в **onPremisesProvisioningErrors** можно найти новое свойство, описывающие все связанные ошибки проготовки AD Connect. |
 | **refreshTokensValidFromDateTime** | beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v1.0 &nbsp; - &nbsp; **signinSessionsValidFromDateTime** | |
-| **signinNames** | beta &nbsp; - &nbsp; **identities/signInType** <br> удостоверения &nbsp; - v1.0/signInType; &nbsp;  | Это свойство теперь является частью ресурса [objectIdentity.](/graph/api/resources/objectIdentity?view=graph-rest-1.0)|
-| **telephoneNumber** | &nbsp; - &nbsp; **бета-версии бизнес-телефонов** <br> v1.0 &nbsp; - &nbsp; **businessPhones** | |
-| **thumbnailPhoto** | &nbsp; - &nbsp; **бета-версия фотографии,** фотографии <br> v1.0 &nbsp; - &nbsp; **photo**, photos | Фотография эскиза Azure AD недоступна в Microsoft Graph.  Вместо этого [используйте API](/graph/api/resources/profilephoto?view=graph-rest-1.0) фотографий. |
-| **userIdentities** | &nbsp; - &nbsp; **бета-версии удостоверений** <br> Удостоверения v1.0 &nbsp; - &nbsp;  | Дополнительные [сведения см. в](/graph/api/resources/objectIdentity?view=graph-rest-1.0) типе ресурса objectIdentity.|
+| **signinNames** | &nbsp; - &nbsp; **бета-идентификаторы/signInType** <br> v1.0 &nbsp; - &nbsp; **удостоверений/signInType** | Это свойство теперь является частью [ресурса objectIdentity.](/graph/api/resources/objectIdentity?view=graph-rest-1.0)|
+| **phoneNumber** | &nbsp; - &nbsp; **бета-версии businessPhones** <br> v1.0 &nbsp; - &nbsp; **businessPhones** | |
+| **thumbnailPhoto** | &nbsp; - &nbsp; **бета-фотография**, фотографии <br> v1.0 &nbsp; - &nbsp; **фото**, фотографии | Фотография эскиза Azure AD недоступна в Microsoft Graph.  Вместо этого [используйте API](/graph/api/resources/profilephoto?view=graph-rest-1.0) фотографий. |
+| **userIdentities** | идентификаторы &nbsp; - &nbsp; **бета-версии** <br> удостоверения v1.0 &nbsp; - &nbsp;  | Дополнительные сведения см. в типе ресурса [objectIdentity.](/graph/api/resources/objectIdentity?view=graph-rest-1.0)|
 | **userState** | beta &nbsp; - &nbsp; **externalUserState** <br> v1.0 &nbsp; - &nbsp; **externalUserState** | |
 | **userStateChangedOn** | beta &nbsp; - &nbsp; **externalUserStateChangeDateTime**<br>v1.0 &nbsp; - &nbsp; **externalUserStateChangeDateTime** | |
 
 ## <a name="group-property-differences"></a>Различия свойств группы
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
-| **immutableId** | beta &nbsp; - &nbsp; **onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId** | |
-| **lastDirSyncDateTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime**<br>v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
-| **provisioningErrors** | &nbsp; - &nbsp; _Бета-версия недоступна_ <br> V1.0 &nbsp; - &nbsp; _Недоступна_ | Это свойство и его сведения неподготовлены.  Однако в **onPremisesProvisioningErrors** можно найти новое свойство, описывающие все ошибки, связанные с подготовкаю AD Connect |
+| **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
+| **immutableId** | &nbsp; - &nbsp; **бета-версия onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId** | |
+| **lastDirSyncDateTime** | &nbsp; - &nbsp; **бета-версия наPremisesLastSyncDateTime**<br>v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
+| **provisioningErrors** | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _Недоступны_ | Это свойство и его сведения неподготовлены.  Однако в **onPremisesProvisioningErrors** можно найти новое свойство, описывающие все связанные ошибки проготовки AD Connect. |
 
-## <a name="application-property-differences"></a>Различия свойств приложения
+## <a name="application-property-differences"></a>Различия свойств приложений
 
-| Azure AD Graph <br>Свойство (v1.6) | Microsoft Graph<br> свойство                                                                                                                          | Примечания                                                                                                                                                                                                                                                                                                                     |
+| Azure AD Graph <br>(v1.6) свойство | Microsoft Graph<br> свойство                                                                                                                          | Комментарии                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **acceptMappedClaims**             | beta &nbsp; - &nbsp; **api/acceptMappedClaims** <br> API &nbsp; - v1.0/acceptMappedClaims &nbsp;                                                        | acceptMappedClaims теперь является частью нового ресурса api.                                                                                                                                                                                                                                                                      |
-| **availableToOtherTenants**        | beta &nbsp; - &nbsp; **signInAudience** <br> v1.0 &nbsp; - &nbsp; **signInAudience**                                                                      |                                                                                                                                                                                                                                                                                                                              |
-| **errorUrl**                       | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _недоступна_                                                                              | Это свойство является неподготовленным.                                                                                                                                                                                                                                                                                                 |
-| **homepage**                       | beta &nbsp; - &nbsp; **web/homePageUrl** <br> v1.0 &nbsp; - &nbsp; **web/homePageUrl**                                                                     | домашняя страницу теперь является частью нового веб-ресурса.                                                                                                                                                                                                                                                                                |
-| **informationalUrls**              | Сведения о &nbsp; - &nbsp; **бета-версии** <br> Сведения о v1.0 &nbsp; - &nbsp;                                                                                            |                                                                                                                                                                                                                                                                                                                              |
-| **knownClientApplications**        | beta &nbsp; - &nbsp; **api/knownClientApplications** <br> API &nbsp; - v1.0/knownClientApplications &nbsp;                                                | KnownClientApplications теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                 |
-| **logoutUrl**                      | beta &nbsp; - &nbsp; **web/logoutUrl** <br> v1.0 &nbsp; - &nbsp; **web/logoutUrl**                                                                         | logoutUrl теперь является частью веб-ресурса.                                                                                                                                                                                                                                                                                   |
-| **logoUrl**                        | beta &nbsp; - &nbsp; **info/logoUrl** <br> v1.0 &nbsp; - &nbsp; **info/logoUrl**                                                                           | logoUrl теперь является частью нового информационного ресурса.                                                                                                                                                                                                                                                                                |
-| **mainLogo**                       | Логотип &nbsp; - &nbsp; **бета-версии** <br> Логотип v1.0 &nbsp; - &nbsp;                                                                                             |                                                                                                                                                                                                                                                                                                                              |
-| **oauth2AllowIdTokenImplicitFlow** | beta &nbsp; - &nbsp; **web/implicitGrantSettings/enableIdTokenIssuance**<br>v1.0 &nbsp; - &nbsp; **web/implicitGrantSettings/enableIdTokenIssuance**         | Переименован и теперь является частью нового ресурса implicitGrantSettings.                                                                                                                                                                                                                                                             |
-| **oauth2AllowImplicitFlow**        | beta &nbsp; - &nbsp; **web/implicitGrantSettings/enableAccessTokenIssuance**<br>v1.0 &nbsp; - &nbsp; **web/implicitGrantSettings/enableAccessTokenIssuance** | Переименован и теперь является частью нового ресурса implicitGrantSettings.                                                                                                                                                                                                                                                             |
-| **oauth2AllowUrlPathMatching**     | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _недоступна_                                                                              | Это свойство является неподготовленным.                                                                                                                                                                                                                                                                                                 |
-| **oauth2Permissions**              | beta &nbsp; - &nbsp; **api/oauth2PermissionScopes**<br> &nbsp; - &nbsp; **api/oauth2PermissionScopes** v1.0                                                  | Переименован и теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                                |
-| **publicClient**                   | beta &nbsp; - &nbsp; **isFallbackPublicClient** <br> v1.0 &nbsp; - &nbsp; **isFallbackPublicClient**                                                      | Теперь это свойство имеет новое значение, которое содержит общедоступные &nbsp; - &nbsp; параметры клиента, такие как redirectUris. Определение того, является ли приложение общедоступным или конфиденциальным клиентом, теперь делается автоматически, при этом свойство isFallbackPublicClient обработчик одного специального случая, которое не может быть определено автоматически. |
-| **recordConsentConditions**        | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _недоступна_                                                                              | Это свойство является неподготовленным.                                                                                                                                                                                                                                                                                                 |
-| **replyUrls**                      | beta &nbsp; - &nbsp; **web/redirectUris**, **publicClient/redirectUris**<br> v1.0 &nbsp; - &nbsp; **web/redirectUris**, **publicClient/redirectUris**        | Как и переименование, redirectUris теперь является частью новых веб-ресурсов и ресурсов publicClient. Это позволяет разработчикам использовать определенные IS для своих веб-клиентов и общедоступных клиентов (например, установленное приложение на настольном устройстве).                                                                                           |
-| **samlMetadataUrl**                | &nbsp; - &nbsp; _Бета-версия пока недоступна_  <br> V1.0 &nbsp; - &nbsp; _Пока не доступен_                                                                  |                                                                                                                                                                                                                                                                                                                              |
-| **serviceEndpoints**               | &nbsp; - &nbsp; _Бета-версия недоступна_  <br> V1.0 &nbsp; - &nbsp; _Недоступна_                                                                          | Это свойство является неподготовленным, но планируется для servicePrincipal.                                                                                                                                                                                                                                                            |
+| **acceptMappedClaims**             | &nbsp; - &nbsp; **бета-api/acceptMappedClaims** <br> v1.0 &nbsp; - &nbsp; **api/acceptMappedClaims**                                                       | acceptMappedClaims теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                      |
+| **availableToOtherTenants**        | &nbsp; - &nbsp; **бета-версия signInAudience** <br> v1.0 &nbsp; - &nbsp; **signInAudience**                                                                      |                                                                                                                                                                                                                                                                                                                              |
+| **errorUrl**                       | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _недоступна_                                                                              | Это свойство обесценилось.                                                                                                                                                                                                                                                                                                 |
+| **homepage**                       | &nbsp; - &nbsp; **бета-версия веб/homePageUrl** <br> v1.0 &nbsp; - &nbsp; **web/homePageUrl**                                                                     | Теперь главная страницу является частью нового веб-ресурса.                                                                                                                                                                                                                                                                                |
+| **informationalUrls**              | сведения о &nbsp; - &nbsp; **бета-версии** <br> сведения о v1.0 &nbsp; - &nbsp;                                                                                            |                                                                                                                                                                                                                                                                                                                              |
+| **knownClientApplications**        | &nbsp; - &nbsp; **бета-api/knownClientApplications** <br> v1.0 &nbsp; - &nbsp; **api/knownClientApplications**                                               | knownClientApplications теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                 |
+| **logoutUrl**                      | &nbsp; - &nbsp; **бета-версия веб/logoutUrl** <br> v1.0 &nbsp; - &nbsp; **web/logoutUrl**                                                                         | logoutUrl теперь является частью веб-ресурса.                                                                                                                                                                                                                                                                                   |
+| **logoUrl**                        | &nbsp; - &nbsp; **бета-информация/logoUrl** <br> v1.0 &nbsp; - &nbsp; **info/logoUrl**                                                                           | logoUrl теперь является частью нового информационного ресурса.                                                                                                                                                                                                                                                                                |
+| **mainLogo**                       | логотип &nbsp; - &nbsp; **бета-версии** <br> логотип v1.0 &nbsp; - &nbsp;                                                                                             |                                                                                                                                                                                                                                                                                                                              |
+| **oauth2AllowIdTokenImplicitFlow** | &nbsp; - &nbsp; **бета-версия веб/implicitGrantSettings/enableIdTokenIssuance**<br>v1.0 &nbsp; - &nbsp; **web/implicitGrantSettings/enableIdTokenIssuance**         | Переименован, а теперь является частью нового ресурса implicitGrantSettings.                                                                                                                                                                                                                                                             |
+| **oauth2AllowImplicitFlow**        | &nbsp; - &nbsp; **бета-версия веб/implicitGrantSettings/enableAccessTokenIssuance**<br>v1.0 &nbsp; - &nbsp; **web/implicitGrantSettings/enableAccessTokenIssuance** | Переименован, а теперь является частью нового ресурса implicitGrantSettings.                                                                                                                                                                                                                                                             |
+| **oauth2AllowUrlPathMatching**     | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _недоступна_                                                                              | Это свойство обесценилось.                                                                                                                                                                                                                                                                                                 |
+| **oauth2Permissions**              | &nbsp; - &nbsp; **бета-api/oauth2PermissionScopes**<br> v1.0 &nbsp; - &nbsp; **api/oauth2PermissionScopes**                                                  | Переименовано и теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                                |
+| **publicClient**                   | &nbsp; - &nbsp; **бета-версия —FallbackPublicClient** <br> v1.0 &nbsp; - &nbsp; **isFallbackPublicClient**                                                      | Теперь это свойство имеет новое значение, содержающее общедоступные &nbsp; - &nbsp; параметры клиента, такие как redirectUris. Определение того, является ли приложение общедоступным или конфиденциальным клиентом, теперь делается автоматически, с свойством isFallbackPublicClient, которое не может быть определено автоматически. |
+| **recordConsentConditions**        | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _недоступна_                                                                              | Это свойство обесценилось.                                                                                                                                                                                                                                                                                                 |
+| **replyUrls**                      | &nbsp; - &nbsp; **бета-версия веб/redirectUris**, **publicClient/redirectUris**<br> v1.0 &nbsp; - &nbsp; **web/redirectUris**, **publicClient/redirectUris**        | Как и переименование, redirectUris теперь является частью новых веб-и общедоступных ресурсовClient. Это позволяет разработчикам использовать определенные URL-адреса для своих веб-клиентов и общедоступных клиентов (например, установленного приложения на настольном устройстве).                                                                                           |
+| **samlMetadataUrl**                | &nbsp; - &nbsp; _бета-версия еще недоступна_  <br> v1.0 &nbsp; - &nbsp; _Еще не доступен_                                                                  |                                                                                                                                                                                                                                                                                                                              |
+| **serviceEndpoints**               | &nbsp; - &nbsp; _бета-версия недоступна_  <br> v1.0 &nbsp; - &nbsp; _Недоступны_                                                                          | Это свойство не является амортизации, но планируется для servicePrincipal.                                                                                                                                                                                                                                                            |
 
-## <a name="approleassignment-differences"></a>Отличия AppRoleAssignment
+## <a name="approleassignment-differences"></a>Различия appRoleAssignment
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **creationTimestamp** | beta &nbsp; - &nbsp; **creationTimestamp** <br> v1.0 &nbsp; - &nbsp; **createdDateTime** | |
-| **id** | beta &nbsp; - &nbsp; **appRoleId** <br> v1.0 &nbsp; - &nbsp; **appRoleId** | |
+| **creationTimestamp** | &nbsp; - &nbsp; **бета-созданиеTimestamp** <br> v1.0 &nbsp; - &nbsp; **createdDateTime** | |
+| **id** | &nbsp; - &nbsp; **бета-приложениеRoleId** <br> v1.0 &nbsp; - &nbsp; **appRoleId** | |
 
-## <a name="contact-property-differences"></a>Различия свойств контакта
+## <a name="contact-property-differences"></a>Различия свойств контактов
 
-Ресурс контакта Azure AD Graph переименован в orgContact в Microsoft Graph.  Ниже различия между свойствами.
+Контактный ресурс Azure AD Graph переименован в orgContact в Microsoft Graph.  Вот различия свойств:
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **city** | &nbsp; - &nbsp; **бета-адреса (город)** <br> Адреса 1.0 &nbsp; - &nbsp; **(город)**  | Свойство city является частью коллекции ресурсов addresses. |
-| **country** | beta &nbsp; - &nbsp; **addresses** &nbsp; **(countryOrRegion)**<br> адреса v1.0 &nbsp; - &nbsp;  &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью коллекции ресурсов addresses. |
-| **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
-| **facsimileTelephoneNumber** | &nbsp; - &nbsp; **бета-версии** &nbsp; **телефонов (businessFax)** <br> Телефоны v1.0 &nbsp; - &nbsp;  &nbsp; **(businessFax)** | Теперь входит в коллекцию телефонов, которая поддерживает мобильные устройства, бизнес и businessFax. |
+| **city** | &nbsp; - &nbsp; **бета-адреса (город)** <br> v1.0 &nbsp; - &nbsp; **адреса (город)**  | Свойство city является частью коллекции ресурсов адресов. |
+| **country** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(countryOrRegion)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью коллекции ресурсов адресов. |
+| **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
+| **facsimileTelephoneNumber** | &nbsp; - &nbsp; **бета-телефоны** &nbsp; **(businessFax)** <br> v1.0 &nbsp; - &nbsp; **телефоны** &nbsp; **(businessFax)** | Теперь часть коллекции телефонов, которая поддерживает мобильные, бизнес и businessFax. |
 | **physicalDeliveryOfficeName** | beta &nbsp; - &nbsp; **officeLocation** <br> v1.0 &nbsp; - &nbsp; **officeLocation** | |
-| **postalCode** | beta &nbsp; - &nbsp; **addresses** &nbsp; **(postalCode)**<br> адреса v1.0 &nbsp; - &nbsp;  &nbsp; **(postalCode)** | Свойство postalCode является частью коллекции ресурсов addresses. |
-| **provisioningErrors** | &nbsp; - &nbsp; бета-версия недоступна <br> V1.0 &nbsp; - &nbsp; недоступна | Это свойство и его сведения неподготовлены.  Однако в **onPremisesProvisioningErrors** можно найти новое свойство, описывающие все ошибки, связанные с подготовкаю AD Connect. В настоящее время эта версия доступна только в бета-версии. |
-| **sipProxyAddress** |  beta &nbsp; - &nbsp; **imAddresses**<br> 1.0 &nbsp; - &nbsp; **imAddresses**  | |
-| **state** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(состояние)**<br> Адреса v1.0 &nbsp; - &nbsp;  &nbsp; **(состояние)**  | Свойство state является частью коллекции ресурсов addresses. |
-| **streetAddress** | beta &nbsp; - &nbsp; **addresses** &nbsp; **(street)**<br> адреса 1.0 &nbsp; - &nbsp;  &nbsp; **(street)**  | Свойство street является частью коллекции ресурсов addresses. |
-| **telephoneNumber** | &nbsp; - &nbsp; **бета-версии** &nbsp; **телефонов (бизнес)** <br> Телефоны v1.0 &nbsp; - &nbsp;  &nbsp; **(бизнес)** | Теперь входит в коллекцию телефонов, которая поддерживает мобильные устройства, бизнес и businessFax. |
-| **thumbnailPhoto** | &nbsp; - &nbsp; _Бета-версия &nbsp; пока &nbsp; недоступна_&nbsp;<br> V1.0 &nbsp; - &nbsp; _Пока не доступен_ | |
+| **postalCode** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(postalCode)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(почтовый индекс)** | Свойство postalCode является частью коллекции ресурсов адресов. |
+| **provisioningErrors** | &nbsp; - &nbsp; бета-версия недоступна <br> v1.0 &nbsp; - &nbsp; недоступна | Это свойство и его сведения неподготовлены.  Однако в **onPremisesProvisioningErrors** можно найти новое свойство, описывающие все связанные ошибки проготовки AD Connect. В настоящее время это доступно только в бета-версии. |
+| **sipProxyAddress** |  beta &nbsp; - &nbsp; **imAddresses**<br> v1.0 &nbsp; - &nbsp; **imAddresses**  | |
+| **state** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(состояние)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(состояние)**  | Свойство состояния является частью коллекции ресурсов адресов. |
+| **streetAddress** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(улица)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(улица)**  | Свойство street является частью коллекции ресурсов адресов. |
+| **phoneNumber** | &nbsp; - &nbsp; **бета-телефоны** &nbsp; **(бизнес)** <br> v1.0 &nbsp; - &nbsp; **телефоны** &nbsp; **(бизнес)** | Теперь часть коллекции телефонов, которая поддерживает мобильные, бизнес и businessFax. |
+| **thumbnailPhoto** | &nbsp; - &nbsp; _бета-версия &nbsp; еще &nbsp; недоступна_&nbsp;<br> v1.0 &nbsp; - &nbsp; _Еще не доступен_ | |
 
-## <a name="contract-property-differences"></a>Различия в свойствах контракта
+## <a name="contract-property-differences"></a>Различия свойств контрактов
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **customerContextId** | beta &nbsp; - &nbsp; **customerId** <br> v1.0 &nbsp; - &nbsp; **customerId**  |  |
 
 ## <a name="device-property-differences"></a>Различия свойств устройства
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **approximateLastLogonTimestamp** | beta &nbsp; - &nbsp; **approximateLastSignInDateTime** <br> v1.0 &nbsp; - &nbsp; **approximateLastSignInDateTime** |  |
-| **complianceExpiryTime** | beta &nbsp; - &nbsp; **complianceExpirationDateTime** <br> v1.0 &nbsp; - &nbsp; **complianceExpirationDateTime** |  |
-| **deviceObjectVersion** |  beta &nbsp; - &nbsp; **deviceVersion** <br> v1.0 &nbsp; - &nbsp; **deviceVersion** |  |
-| **deviceOSType** | beta &nbsp; - &nbsp; **operatingSystem** <br> v1.0 &nbsp; - &nbsp; **operatingSystem** |  |
-| **deviceOSVersion** | beta &nbsp; - &nbsp; **operatingSystemVersion** <br> v1.0 &nbsp; - &nbsp; **operatingSystemVersion** |  |
-| **devicePhysicalIds** | beta &nbsp; - &nbsp; **physicalIds** <br> physicalIds v1.0 &nbsp; - &nbsp;  |  |
-| **deviceTrustType** | beta &nbsp; - &nbsp; **trustType** <br> v1.0 &nbsp; - &nbsp; **trustType** |  |
-| **dirSyncEnabled** |  beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
-| **lastDirSyncTime** |  beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
+| **approximateLastLogonTimestamp** | &nbsp; - &nbsp; **бета-версия приблизительнымLastSignInDateTime** <br> v1.0 &nbsp; - &nbsp; **approximateLastSignInDateTime** |  |
+| **complianceExpiryTime** | &nbsp; - &nbsp; **бета-соответствиеExpirationDateTime** <br> v1.0 &nbsp; - &nbsp; **complianceExpirationDateTime** |  |
+| **deviceObjectVersion** |  &nbsp; - &nbsp; **бета-версия deviceVersion** <br> v1.0 &nbsp; - &nbsp; **deviceVersion** |  |
+| **deviceOSType** | &nbsp; - &nbsp; **бета-операционная Система** <br> v1.0 &nbsp; - &nbsp; **operatingSystem** |  |
+| **deviceOSVersion** | &nbsp; - &nbsp; **бета-операционнаяSystemVersion** <br> v1.0 &nbsp; - &nbsp; **operatingSystemVersion** |  |
+| **devicePhysicalIds** | beta &nbsp; - &nbsp; **physicalIds** <br> v1.0 &nbsp; - &nbsp; **physicalIds** |  |
+| **deviceTrustType** | &nbsp; - &nbsp; **бета-версия trustType** <br> v1.0 &nbsp; - &nbsp; **trustType** |  |
+| **dirSyncEnabled** |  &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
+| **lastDirSyncTime** |  &nbsp; - &nbsp; **бета-версия наPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
 
 ## <a name="directoryobjectreference-property-differences"></a>Различия свойств DirectoryObjectReference
 
-Ресурс directoryObjectReference Azure AD Graph переименован в directoryObjectPartnerReference в Microsoft Graph.  Ниже различия между свойствами.
+Ресурс Azure AD Graph directoryObjectReference переименован в directoryObjectPartnerReference в Microsoft Graph.  Вот различия свойств:
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **externalContextId** | beta &nbsp; - &nbsp; **externalPartnerTenantId** <br> v1.0 &nbsp; - &nbsp; **externalPartnerTenantId** |  |
 
 ## <a name="domain-property-differences"></a>Различия свойств домена
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **name** | &nbsp; - &nbsp; **бета-версия** <br> v1.0 &nbsp; - &nbsp; **id** | В Microsoft Graph уникальный идентификатор (идентификатор) содержит доменное имя; свойство `name` не существует. |
-| **forceDeleteState** |  состояние &nbsp; - &nbsp; **бета-версии** <br> Состояние 1.0 &nbsp; - &nbsp;  | В Azure AD Graph существуют отдельные свойства forceDelete и состояния домена.  В Microsoft Graph все состояния домена обрабатываются свойством state. |
-| **isDefaultForCloudRedirections** | &nbsp; - &nbsp; _Бета-версия &nbsp; пока &nbsp; недоступна_&nbsp;<br> V1.0 &nbsp; - &nbsp; _Пока не доступен_ | |
+| **name** | &nbsp; - &nbsp; **бета-версия** <br> v1.0 &nbsp; - &nbsp; **id** | В Microsoft Graph уникальный идентификатор (id) содержит доменное имя; свойство `name` не существует. |
+| **forceDeleteState** |  состояние &nbsp; - &nbsp; **бета-версии** <br> состояние v1.0 &nbsp; - &nbsp;  | В Azure AD Graph существуют отдельные свойства forceDelete и состояния домена.  В Microsoft Graph все состояния домена обрабатываются свойством состояния. |
+| **isDefaultForCloudRedirections** | &nbsp; - &nbsp; _бета-версия &nbsp; еще &nbsp; недоступна_&nbsp;<br> v1.0 &nbsp; - &nbsp; _Еще не доступен_ | |
 
-## <a name="oauth2permissionsgrant-property-differences"></a>Отличия свойств OAuth2PermissionsGrant
+## <a name="oauth2permissionsgrant-property-differences"></a>Различия свойств OAuth2PermissionsGrant
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> Удалена v1.0 &nbsp; - &nbsp;  | Это свойство не используется и удаляется в Microsoft Graph 1.0. |
-| **startTime** | beta &nbsp; - &nbsp; **startTime** <br> Удалена v1.0 &nbsp; - &nbsp;   | Это свойство не используется и удаляется в Microsoft Graph 1.0. |
+| **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> v1.0 &nbsp; - &nbsp; _Удален_ | Это свойство не используется и удаляется в Microsoft Graph v1.0. |
+| **startTime** | &nbsp; - &nbsp; **бета-версия startTime** <br> v1.0 &nbsp; - &nbsp; _Удален_  | Это свойство не используется и удаляется в Microsoft Graph v1.0. |
 
 ## <a name="policy-property-differences"></a>Различия свойств политики
 
-В Microsoft Graph существуют именованные типы политик (например, tokenIssuancePolicy или tokenLifetimePolicy), а не универсальный тип ресурса политики. Дополнительные сведения доступны в [обзоре политики.](/graph/api/resources/policy-overview?view=graph-rest-1.0)
+В Microsoft Graph имеются имена типов политик (например tokenIssuancePolicy или tokenLifetimePolicy), а не тип ресурсов общей политики. Дополнительные сведения доступны в [обзоре политики.](/graph/api/resources/policy-overview?view=graph-rest-1.0)
 
-## <a name="serviceendpoint-property-differences"></a>Различия в свойствах ServiceEndpoint
+## <a name="serviceendpoint-property-differences"></a>Различия свойств ServiceEndpoint
 
-Ресурс ServiceEndpoint Azure AD Graph переименован в конечную точку в Microsoft Graph.
+Ресурс Службы ServiceEndpoint Azure AD Graph переименован в конечную точку в Microsoft Graph.
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **serviceId** | beta &nbsp; - &nbsp; **providerId**<br> v1.0 &nbsp; - &nbsp; **providerId** | |
 | **serviceName** | beta &nbsp; - &nbsp; **providerName**<br> v1.0 &nbsp; - &nbsp; **providerName** | |
-| **resourceId** | beta &nbsp; - &nbsp; **providerResourceId**<br> v1.0 &nbsp; - &nbsp; **providerResourceId** | |
+| **resourceId** | &nbsp; - &nbsp; **бета-провайдерResourceId**<br> v1.0 &nbsp; - &nbsp; **providerResourceId** | |
 
 ## <a name="serviceprincipal-property-differences"></a>Различия свойств ServicePrincipal
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **appOwnerTenantId** | beta &nbsp; - &nbsp; **appOwnerOrganizationId** <br> v1.0 &nbsp; - &nbsp; **appOwnerOrganizationId** | Переименовано. |
-| **informationalUrls**| Сведения о &nbsp; - &nbsp; **бета-версии** <br> Сведения о v1.0 &nbsp; - &nbsp;  | |
+| **appOwnerTenantId** | бета &nbsp; - &nbsp; **appOwnerOrganizationId** <br> v1.0 &nbsp; - &nbsp; **appOwnerOrganizationId** | Переименовано. |
+| **informationalUrls**| сведения о &nbsp; - &nbsp; **бета-версии** <br> сведения о v1.0 &nbsp; - &nbsp;  | |
 | **oauth2Permissions** | beta &nbsp; - &nbsp; **publishedPermissionScopes** <br> v1.0 &nbsp; - &nbsp; **oauth2PermissionScopes** | Переименовано. |
-| **preferredTokenSigningKeyEndDateTime** | &nbsp; - &nbsp; _Бета-версия пока недоступна_ <br> V1.0 &nbsp; -  _Пока не доступен_ | |
-| **signInAudience** | &nbsp; - &nbsp; _Бета-версия пока недоступна_ <br> V1.0 &nbsp; -  _Пока не доступен_ | |
-| **serviceEndpoints** | &nbsp; - &nbsp; **Конечная точка бета-версии** <br> Конечная точка &nbsp; - &nbsp;  v1.0 | Переименовано. |
+| **preferredTokenSigningKeyEndDateTime** | &nbsp; - &nbsp; _бета-версия еще недоступна_ <br> v1.0 &nbsp; -  _Еще не доступен_ | |
+| **signInAudience** | &nbsp; - &nbsp; _бета-версия еще недоступна_ <br> v1.0 &nbsp; -  _Еще не доступен_ | |
+| **serviceEndpoints** | &nbsp; - &nbsp; **Конечная точка бета-версии** <br> конечная точка v1.0 &nbsp; - &nbsp;  | Переименовано. |
 
-## <a name="tenantdetails-property-differences"></a>Различия свойств TenantDetails
+## <a name="tenantdetails-property-differences"></a>TenantDetails property differences
 
-Ресурс TenantDetails Azure AD Graph переименован в организацию в Microsoft Graph.  Ниже различия между свойствами.
+Ресурс TenantDetails Azure AD Graph переименован в организацию в Microsoft Graph.  Вот различия свойств:
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **companyLastDirSyncTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
-| **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
-| **provisioningErrors** | &nbsp; - &nbsp; _Бета-версия недоступна_ <br> V1.0 &nbsp; - &nbsp; _Недоступна_ | Это свойство и его сведения неподготовлены.|
-| **telephoneNumber** | &nbsp; - &nbsp; **бета-версии бизнес-телефонов** <br> v1.0 &nbsp; - &nbsp; **businessPhones** |  |
+| **companyLastDirSyncTime** | &nbsp; - &nbsp; **бета-версия наPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
+| **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
+| **provisioningErrors** | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _Недоступны_ | Это свойство и его сведения неподготовлены.|
+| **phoneNumber** | &nbsp; - &nbsp; **бета-версии businessPhones** <br> v1.0 &nbsp; - &nbsp; **businessPhones** |  |
 
 ## <a name="trustedcasforpasswordlessauth-property-differences"></a>Различия свойств TrustedCasForPasswordlessAuth
 
-Ресурс Azure AD Graph TrustedCasForPasswordlessAuth переименован в [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)и доступен только в конечной точке бета-версии Microsoft Graph. Различия между свойствами не существуют; Однако существуют различия в типе ресурса **certificateAuthority,** используемом **свойством certificateAuthorities.**
+Ресурс Azure AD Graph TrustedCasForPasswordlessAuth переименован в [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)и доступен только в конечной точке бета-версии Microsoft Graph. Не существует различий в свойствах; однако существуют различия в типе ресурса **certificateAuthority,** используемом **свойством certificateAuthorities.**
 
 ### <a name="certificateauthorityinformation"></a>CertificateAuthorityInformation
 
-Сертификат CertificateAuthorityInformation Azure AD Graph переименован в **certificateAuthority** в Microsoft Graph. Ниже различия между свойствами.
+Сертификат Azure AD GraphAuthorityInformation переименован в **certificateAuthority** в Microsoft Graph. Ниже приводится различие свойств.
 
-|Azure AD Graph <br>Свойство (v1.6) |Microsoft Graph<br> свойство|Примечания|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **authorityType** | beta &nbsp; - &nbsp; **isRootAuthority**<br> v1.0 &nbsp; - &nbsp; **isRootAuthority** | Тип этого свойства также изменился на boolean. Ранее этому свойству приходилось устанавливать "RootAuthority" или "IntermediateAuthority". Установка для нового свойства **true** эквивалентна свойству RootAuthority. |
-| **crlDistributionPoint** | beta &nbsp; - &nbsp; **certificateRevocationListUrl** <br> v1.0 &nbsp; - &nbsp; **certificateRevocationListUrl** | |
+| **authorityType** | &nbsp; - &nbsp; **бета-версия isRootAuthority**<br> v1.0 &nbsp; - &nbsp; **isRootAuthority** | Тип этого свойства также изменился в Boolean. Ранее это свойство должно было быть задавалось как "RootAuthority" или "IntermediateAuthority". Настройка true нового **свойства** эквивалентна "RootAuthority". |
+| **crlDistributionPoint** | &nbsp; - &nbsp; **бета-сертификатRevocationListUrl** <br> v1.0 &nbsp; - &nbsp; **certificateRevocationListUrl** | |
 | **deltaCrlDistributionPoint** | beta &nbsp; - &nbsp; **deltaCertificateRevocationListUrl** <br> v1.0 &nbsp; - &nbsp; **deltaCertificateRevocationListUrl** | |
 | **trustedCertificate** | &nbsp; - &nbsp; **бета-сертификат** <br> v1.0 &nbsp; - &nbsp; **deltaCertificateRevocationListUrl** | |
-| **trustedIssuer** | beta &nbsp; - &nbsp; **issuer**<br> Issuer v1.0 &nbsp; - &nbsp;  | |
-| **trustedIssuerSki** | beta &nbsp; - &nbsp; **issuerSki**<br> IssuerSki 1.0 &nbsp; - &nbsp;  | |
+| **trustedIssuer** | &nbsp; - &nbsp; **бета-эмитент**<br> эмитент v1.0 &nbsp; - &nbsp;  | |
+| **trustedIssuerSki** | beta &nbsp; - &nbsp; **issuerSki**<br> v1.0 &nbsp; - &nbsp; **issuerSki** | |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте о [различиях методов](migrate-azure-ad-graph-method-differences.md) между Azure AD Graph и Microsoft Graph.
-- Еще раз [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список.
+- Снова [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список.
 

@@ -3,14 +3,14 @@ title: Тип ресурса extensionSchemaProperty
 description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 author: keylimesoda
-ms.openlocfilehash: c0bb3a423983b70066e2451a5029f4eaf2acaebd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f938f98c7f6060c41f7a162501ca42a553cace3
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026945"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761397"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -24,7 +24,7 @@ ms.locfileid: "48026945"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|String| Имя строго типизированного свойства, определенного как часть расширения схемы.|
+|name|String| Имя строго впечатаемого свойства, определяемого как часть расширения схемы.|
 |type|String| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
 #### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств 

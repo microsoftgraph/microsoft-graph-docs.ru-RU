@@ -1,24 +1,24 @@
 ---
-title: сложный тип Коннектедорганизатионмемберс
-description: Тип Коннектедорганизатионмемберс определяет коллекцию пользователей в клиенте, которые будут разрешены в качестве запрашивающего, утверждающего или проверяющего.
+title: connectedOrganizationMembers сложный тип
+description: Тип connectedOrganizationMembers определяет коллекцию пользователей в клиенте, которые будут разрешены в качестве запрашивателя, утверждения или рецензента.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d2df6b91ebcbc65f03ee39103768bdfad04df62f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 725926bc39583bda653294f0cc917ea7d2f08a45
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027197"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761820"
 ---
-# <a name="connectedorganizationmembers-complex-type"></a>сложный тип Коннектедорганизатионмемберс
+# <a name="connectedorganizationmembers-complex-type"></a>connectedOrganizationMembers сложный тип
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в параметрах запроса [политики назначения пакетов Access](accesspackageassignmentpolicy.md). `@odata.type`Значение `#microsoft.graph.connectedOrganizationMembers` указывает на то, что этот тип определяет коллекцию пользователей, которые связаны с [подключенной организацией](connectedorganization.md)и могут запрашивать пакет Access.
+Используется в параметрах запросов политики назначения [пакета доступа.](accesspackageassignmentpolicy.md) Значение указывает, что этот тип определяет коллекцию пользователей, связанных с подключенной организацией, которым будет разрешено `@odata.type` `#microsoft.graph.connectedOrganizationMembers` запрашивать пакет доступа. [](connectedorganization.md)
 
 ## <a name="properties"></a>Свойства
 
@@ -26,13 +26,13 @@ ms.locfileid: "48027197"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | Идентификатор подключенной Организации в управлении обслуживанием. |
-| description |String | Имя подключенной Организации. Только для чтения. |
-| Создание резервной копии | Boolean | Не используется в данный момент. |
+| id |String | ID связанной организации в управлении правами. |
+| description |String | Имя связанной организации. Только для чтения. |
+| isBackup | Boolean | Не используется в настоящее время. |
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено представление типа в формате JSON.
+Ниже приводится представление JSON этого типа.
 
 <!-- {
   "blockType": "resource",

@@ -3,14 +3,14 @@ title: тип ресурсов userSecurityState
 description: Содержит сведения о учетной записи пользователя.
 localization_priority: Normal
 author: jpettere
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: edd3f3eeb4e8efffde9abd4a8fb53a8a5ddb9ea3
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c95f898a729138a7af88eaf25fa4cbc0c5fc9bb9
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722267"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761783"
 ---
 # <a name="usersecuritystate-resource-type"></a>тип ресурсов userSecurityState
 
@@ -28,7 +28,7 @@ ms.locfileid: "50722267"
 |accountName|String|Имя учетной записи пользователя (без домена Active Directory или домена DNS) — (также `mailNickName` называемого).|
 |domainName|String|Домен учетной записи пользователя NetBIOS/Active Directory (то есть формат домена\учетной записи).|
 |emailRole|emailRole|Для оповещений, связанных с электронной почтой, — "роль" учетной записи пользователя. Возможные значения: `unknown`, `sender`, `recipient`.|
-|isVpn|Логический|Указывает, вошел ли пользователь в систему через VPN.|
+|isVpn|Boolean|Указывает, вошел ли пользователь в систему через VPN.|
 |logonDateTime|DateTimeOffset|Время, в которое произошел вход. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |logonId|String|ID для регистрации пользователя.|
 |logonIp|String|IP-адрес запроса на вход возник из.|

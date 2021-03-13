@@ -1,29 +1,29 @@
 ---
-title: Тип BitLocker
+title: тип bitlocker
 description: Ресурс BitLocker
 author: hafowler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3ad8a05e82cd3f300bedf034fe18f67ce3359f16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e714015b3834051371861880355360f02d12166
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038877"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761837"
 ---
-# <a name="bitlocker-resource-type"></a>Тип ресурса BitLocker
+# <a name="bitlocker-resource-type"></a>тип ресурса bitlocker
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Родительский ресурс для сохраненного ключа BitLocker с помощью свойства навигации **битлоккеррековерикэй** , содержащего фактический ключ восстановления.
+Родительский ресурс для сохраненного ключа BitLocker с свойством навигации **bitlockerRecoveryKey,** который содержит фактический ключ восстановления.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список Рековерикэйс](../api/bitlocker-list-recoverykeys.md)|Коллекция [битлоккеррековерикэй](../resources/bitlockerrecoverykey.md)|Получение списка объектов Битлоккеррековерикэй и их свойств.|
+|[Список recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Получите список объектов bitlockerRecoveryKey и их свойств.|
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -31,7 +31,7 @@ ms.locfileid: "48038877"
 ## <a name="relationships"></a>Связи
 | Связь | Тип | Описание |
 |--|--|--|
-| рековерикэйс | Коллекция [битлоккеррековерикэй](../resources/bitlockerrecoverykey.md) | Ключи восстановления, связанные с сущностью BitLocker. |
+| recoveryKeys | [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection | Ключи восстановления, связанные с объектом bitlocker. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

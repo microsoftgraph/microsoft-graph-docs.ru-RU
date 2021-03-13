@@ -3,14 +3,14 @@ title: Get smsAuthenticationMethodConfiguration
 description: Ознакомьтесь с свойствами и отношениями объекта smsAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 16a13c62192eedbecd232761fcea55e9a243e988
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: cc09a85fefb46142c46d5383a0d7225636041b8b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475662"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761852"
 ---
 # <a name="get-smsauthenticationmethodconfiguration"></a>Get smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -48,7 +48,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) в теле отклика.
 

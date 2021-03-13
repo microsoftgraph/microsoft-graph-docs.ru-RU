@@ -4,14 +4,14 @@ description: Представляет временный пропуск дост
 author: inbarckms
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 1bd5bd1ab118d7ec5c7443c47bda1ea614f31bf0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8c118978f9e7c8a7c3aa127ba12aba48f2cfe362
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442812"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760962"
 ---
 # <a name="temporaryaccesspassauthenticationmethod-resource-type"></a>temporaryAccessPassAuthenticationMethod type
 
@@ -24,10 +24,10 @@ ms.locfileid: "50442812"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список](../api/temporaryaccesspassauthenticationmethod-list.md)|[коллекция temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Извлечение списка временных **объектовAccessPassAuthenticationMethod** и их свойств. У пользователей может быть только один метод проверки подлинности временных пропусков доступа.|
+|[Перечисление](../api/temporaryaccesspassauthenticationmethod-list.md)|[коллекция temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Извлечение списка временных **объектовAccessPassAuthenticationMethod** и их свойств. У пользователей может быть только один метод проверки подлинности временных пропусков доступа.|
 |[Создание](../api/temporaryaccesspassauthenticationmethod-post.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Создайте временный **объектAccessPassAuthenticationMethod.**|
-|[получение](../api/temporaryaccesspassauthenticationmethod-get.md);|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Извлечение свойств объекта **temporaryAccessPassAuthenticationMethod** пользователя.||
-|[удаление](../api/temporaryaccesspassauthenticationmethod-delete.md);|Нет|Удаление объекта **temporaryAccessPassAuthenticationMethod** пользователя.|
+|[Получение](../api/temporaryaccesspassauthenticationmethod-get.md);|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Извлечение свойств объекта **temporaryAccessPassAuthenticationMethod** пользователя.||
+|[Удаление](../api/temporaryaccesspassauthenticationmethod-delete.md)|Нет|Удаление объекта **temporaryAccessPassAuthenticationMethod** пользователя.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -42,7 +42,7 @@ ms.locfileid: "50442812"
 |methodUsabilityReason|String|Сведения о состоянии использования (isUsable). Причины могут включать: `enabledByPolicy` `disabledByPolicy` , , , `expired` `notYetValid` `oneTimeUsed` .|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

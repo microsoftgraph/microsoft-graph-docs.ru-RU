@@ -3,14 +3,14 @@ title: тип ресурса conditionalAccessDevices
 description: Представляет устройства в области политики.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a42e6023ace493c5efb230ffd53eb9c4caee7d16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 94115e97c597bc34f03d843b8098f707ed39cd51
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440530"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761809"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>тип ресурса conditionalAccessDevices
 
@@ -24,12 +24,12 @@ ms.locfileid: "50440530"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeDevices | Коллекция строк | Состояния в области политики. `All` является единственным допустимым значением. |
-| excludeDevices | Коллекция строк | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
-| includeDeviceStates (deprecated)| Коллекция строк | Состояния в области политики. `All` является единственным допустимым значением. |
-| excludeDeviceStates (deprecated)| Коллекция строк | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeDevices | Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeDevices | Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeDeviceStates (deprecated)| Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeDeviceStates (deprecated)| Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса Рбакаппликатион
-description: Свойство навигации по управлению ролями
+title: Тип ресурса rbacApplication
+description: Свойство навигации по управлению ролью
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e7145509745bdb696ebe3342035096af27d89b38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3833d07e0fb9758cc8f4f5418f725889fd784dc
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993053"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760927"
 ---
-# <a name="rbacapplication-resource-type"></a>Тип ресурса Рбакаппликатион
+# <a name="rbacapplication-resource-type"></a>Тип ресурса rbacApplication
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер управления ролями для определения Объединенных ролей и назначений ролей для поставщиков Microsoft 365 RBAC. В настоящее время "каталог" является единственным поддерживаемым приложением RBAC.
+Контейнер управления ролью для унифицированных определений ролей и назначений ролей для поставщиков Microsoft 365 RBAC. В настоящее время "каталог" является единственным поддерживаемой приложением RBAC.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание Унифиедролеассигнмент](../api/rbacapplication-post-roleassignments.md) | [унифиедролеассигнмент](unifiedroleassignment.md) | Создание нового Унифиедролеассигнмент путем отправки в коллекцию roleAssignments. |
-| [Список объектов roleAssignment](../api/rbacapplication-list-roleassignments.md) | Коллекция [унифиедролеассигнмент](unifiedroleassignment.md) | Получение коллекции объектов Унифиедролеассигнмент. С помощью фильтрации на Роледефитионид или ПринЦипалид можно запрашивать только определенные экземпляры. |
-| [Создание Унифиедроледефинитион](../api/rbacapplication-post-roledefinitions.md) | [унифиедроледефинитион](unifiedroledefinition.md) | Создание нового Унифиедроледефинитион путем отправки в коллекцию перечисление roledefinition. |
-| [Перечисление объектов roleDefinition](../api/rbacapplication-list-roledefinitions.md) | Коллекция [унифиедроледефинитион](unifiedroledefinition.md) | Получение коллекции объектов Унифиедроледефинитион. |
+| [Создание unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Создайте новую унифицированную функциюRoleAssignment, разместив в коллекции roleAssignments. |
+| [Список объектов roleAssignment](../api/rbacapplication-list-roleassignments.md) | [коллекция unifiedRoleAssignment](unifiedroleassignment.md) | Получите коллекцию объектов unifiedRoleAssignment. Только определенные экземпляры можно запрашивать, фильтруя на roleDefitionId или principalId. |
+| [Создание unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Создайте новое единоеRoleDefinition, разместив в коллекции roleDefinitions. |
+| [Перечисление объектов roleDefinition](../api/rbacapplication-list-roledefinitions.md) | [коллекция unifiedRoleDefinition](unifiedroledefinition.md) | Получите коллекцию объектов unifiedRoleDefinition. |
 
 ## <a name="properties"></a>Свойства
 
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 

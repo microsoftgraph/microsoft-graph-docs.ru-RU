@@ -1,24 +1,24 @@
 ---
-title: Get temporaryAccessPassAuthenticationMethodConfiguration
-description: Чтение свойств и связей объекта temporaryAccessPassAuthenticationMethodConfiguration.
+title: Получить temporaryAccessPassAuthenticationMethodConfiguration
+description: Ознакомьтесь с свойствами и отношениями объекта temporaryAccessPassAuthenticationMethodConfiguration.
 author: inbarckms
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 52ea16ad502a24ac0eb75de94c2cad4c9fbe93d5
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 08a20da2f4c14a3d3a6d3581765eb5e168e8b721
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272679"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759512"
 ---
-# <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Get temporaryAccessPassAuthenticationMethodConfiguration
+# <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Получить temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей [временного объектаAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) который представляет [](../resources/authenticationmethodspolicies-overview.md) политику метода проверки подлинности "Временный доступ" для клиента Azure Active Directory (Azure AD).
+Ознакомьтесь с свойствами и отношениями объекта [temporaryAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) [](../resources/authenticationmethodspolicies-overview.md) который представляет политику метода проверки подлинности временных пропусков доступа для клиента Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "50272679"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
- Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в[ролях.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+ Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в[дополнительных сведениях.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,11 +45,11 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

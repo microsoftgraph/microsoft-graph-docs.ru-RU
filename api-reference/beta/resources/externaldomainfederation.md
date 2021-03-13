@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Екстерналдомаинфедератион
-description: Тип Екстерналдомаинфедератион определяет домен, не относящийся к клиенту, с настроенным поставщиком удостоверений в качестве источника удостоверений для подключенной Организации.
+title: тип ресурса externalDomainFederation
+description: Тип externalDomainFederation определяет домен, не нанимаемый клиентом, с настроенным поставщиком удостоверений в качестве источника удостоверений для связанной организации.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d81255a3687bf3d6aafe9369f901b209f5827b77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df88fef22c2acb86cadcfaed9a8f5be25da70f9d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026917"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760990"
 ---
-# <a name="externaldomainfederation-resource-type"></a>Тип ресурса Екстерналдомаинфедератион
+# <a name="externaldomainfederation-resource-type"></a>тип ресурса externalDomainFederation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в источниках удостоверений [коннектедорганизатион](connectedOrganization.md). `@odata.type`Значение `#microsoft.graph.externalDomainFederation` указывает на то, что этот тип определяет домен с настроенным поставщиком удостоверений в качестве источника удостоверений для подключенной Организации.
+Используется в источниках удостоверений [подключеннойорганизации.](connectedOrganization.md) Значение указывает, что этот тип определяет домен с настроенным поставщиком удостоверений в качестве источника удостоверений `@odata.type` `#microsoft.graph.externalDomainFederation` для связанной организации.
 
 ## <a name="properties"></a>Свойства
 
@@ -26,7 +26,7 @@ ms.locfileid: "48026917"
 | :--------------------------- | :------------------------ | :---------- |
 | displayName |String | Имя источника удостоверений, как правило, также доменное имя. Только для чтения. |
 | domainName |String | Доменное имя. Только для чтения. |
-| иссуерури |String | Иссуерури входящей Федерации. Только для чтения. |
+| issuerUri |String | IssuerURI входящих федераций. Только для чтения. |
 
 ## <a name="relationships"></a>Отношения
 
@@ -34,7 +34,7 @@ ms.locfileid: "48026917"
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже представлено представление типа в формате JSON.
+Ниже приводится представление JSON этого типа.
 
 <!-- {
   "blockType": "resource",

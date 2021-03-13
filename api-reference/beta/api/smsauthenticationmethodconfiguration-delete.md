@@ -3,14 +3,14 @@ title: Удаление smsAuthenticationMethodConfiguration
 description: Удаление объекта smsAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ec22cabd9ca43a6415509f114fa1592855f0b8a8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b573914ead8df3f5439eb3eddc85315fbca79adc
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475680"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761270"
 ---
 # <a name="delete-smsauthenticationmethodconfiguration"></a>Удаление smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph

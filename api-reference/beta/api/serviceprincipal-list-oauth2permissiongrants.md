@@ -3,14 +3,14 @@ title: Перечисление oauth2PermissionGrants
 description: Извлечение списка объектов oAuth2PermissionGrant, представляющих предоставленные делегированные разрешения.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8e726fd83ad10a35545ace929d57d636476fd4e7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8153b32c00890da1d575a49e75a29272025b968
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972579"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759862"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 

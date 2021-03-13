@@ -3,14 +3,14 @@ title: тип ресурса agreementAcceptance
 description: Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с использованием Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 55e0be212c0f7a9e655acff03606eda851a0e5c6
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4e00ae32078bd004ad4063a0f73ebb94b6a77f9c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722484"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761102"
 ---
 # <a name="agreementacceptance-resource-type"></a>тип ресурса agreementAcceptance
 
@@ -48,7 +48,7 @@ ms.locfileid: "50722484"
 |userId|String|ID пользователя, который принял соглашение.|
 |userPrincipalName|String|UPN пользователя при записи принятия.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

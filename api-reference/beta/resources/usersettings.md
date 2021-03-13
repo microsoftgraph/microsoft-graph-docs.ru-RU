@@ -3,14 +3,14 @@ title: Тип ресурса userSettings
 description: 'Параметры текущего пользователя для поиска контента. '
 author: jpettere
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 7b03b1b41c466582a219a034d93a16bb887fa356
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 12c75691b5b0515fbf8ef49b54ce1e4a0b806c2c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721441"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761774"
 ---
 # <a name="usersettings-resource-type"></a>Тип ресурса userSettings
 
@@ -50,7 +50,7 @@ ms.locfileid: "50721441"
 |contributionToContentDiscoveryDisabled|Логический|Если задано значение true, делегированный доступ к API [trending](insights-trending.md) пользователя отключен. Если задано значение true, документы в Office Delve пользователя отключены. Установка значения true влияет на релевантность содержимого, отображаемого в Microsoft 365, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Пользователи могут управлять этим параметром в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
 |contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отображает [параметр на уровне организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff), управляющий делегированным доступом к API [trending](insights-trending.md). Если задано значение true, у организации отсутствует доступ к Office Delve. Это влияет на релевантность содержимого, отображаемого в Microsoft 365 для всей организации, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Этот параметр доступен только для чтения и может изменяться только администраторами в [Центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|

@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Домаинднсткстрекорд
+title: тип ресурса domainDnsTxtRecord
 description: Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ecd280622a9937e85dfb9079416521853d85cfe4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e59c38028b414208744793945ed480dc708bf6c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010320"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760906"
 ---
-# <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса Домаинднсткстрекорд
+# <a name="domaindnstxtrecord-resource-type"></a>тип ресурса domainDnsTxtRecord
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
+Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от [объекта DomainDnsRecord.](domaindnsrecord.md)
 
 ## <a name="methods"></a>Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .
+Прямые запросы на этот ресурс не поддерживаются. Сведения о [том,](domain.md) как запрашивать записи службы домена, см. в разделе домен.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения. |
-|Переключатель|Boolean| Если этот параметр имеет значение false, запись TXT должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
-|label|String| Значение, используемое при настройке свойства *Name* записи TXT на узле DNS.|
-|recordType|String| Тип записи DNS. Значение всегда является *txt*. Key |
-|суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи TXT.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|текст|String| Значение, используемое при настройке свойства *Text* на узле DNS. |
-|используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS. Не допускает значение null |
+|id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения. |
+|isOptional|Boolean| Если это неверно, запись TXT должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
+|label|String| Значение, которое необходимо  использовать при настройке свойства имени записи TXT в хосте DNS.|
+|recordType|String| Тип записи DNS. Значение всегда *Txt*. Key |
+|supportedService|String| Microsoft Online Service или функция, зависимая от этой записи TXT.</br></br>Может быть одним из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|текст|String| Значение, используемее при настройке *свойства текста* в хосте DNS. |
+|ttl|Int32| Значение, используемого при настройке свойства времени для жизни *(ttl)* записи MX в хосте DNS. Не является недействительным |
 
 ## <a name="relationships"></a>Отношения
 Нет

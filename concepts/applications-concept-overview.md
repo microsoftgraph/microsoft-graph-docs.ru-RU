@@ -3,14 +3,14 @@ title: Общие сведения об API приложений
 description: Зарегистрируйте свое приложение в Azure AD, чтобы создать для него конфигурацию удостоверения для интеграции с Azure AD.
 author: davidmu1
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 38846c9560fdb02c9e3a8aac8bbd921a4f2c2eac
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d99f20d5bbf748030576e1cdc28fabb5f666bee0
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288149"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760828"
 ---
 # <a name="applications-api-overview"></a>Общие сведения об API приложений
 

@@ -1,22 +1,22 @@
 ---
 title: 'identityUserFlowAttributeAssignment: setOrder'
-description: Задайте порядок identityUserFlowAttributeAssignments, собираемого в пользовательском потоке.
+description: Задайте порядок сбора удостоверенийUserFlowAttributeAssignments в потоке пользователей.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc1487246f5a3370ce1b88f50eafcce7029baf4f
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 6470470e9c6933ba421acc9af5a38847f5bc0337
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752755"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759876"
 ---
 # <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment: setOrder
 
 Пространство имен: microsoft.graph
 
-Задайте порядок сборов identityUserFlowAttributeAssignments в потоке пользователя.
+Задайте порядок сбора удостоверенийUserFlowAttributeAssignments в потоке пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "49752755"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ POST /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/set
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|newAssignmentOrder|[assignmentOrder](../resources/assignmentorder.md)|Используется для определения порядка атрибутов, собираемого в пользовательском потоке.|
+|newAssignmentOrder|[assignmentOrder](../resources/assignmentorder.md)|Используется для определения порядка атрибутов, собираемого в потоке пользователей.|
 
 ## <a name="response"></a>Ответ
 

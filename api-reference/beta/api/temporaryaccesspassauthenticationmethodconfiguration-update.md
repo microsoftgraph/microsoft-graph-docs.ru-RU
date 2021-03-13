@@ -4,14 +4,14 @@ description: Обновление свойств объекта temporaryAccessP
 author: inbarckms
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0ddd4536c6a73885c16fb9762cedf47dd0a23528
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1d8d888f71fd59b8b2b00cd45c2c88151e940aea
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471868"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761767"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>Обновление temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph

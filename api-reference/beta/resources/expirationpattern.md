@@ -3,14 +3,14 @@ title: тип ресурса expirationPattern
 description: Шаблон истечения срока действия в расписании запросов может быть включен в запрос на назначение пакета доступа и присутствует в назначении пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b6587d8ba410ba0240c0fd75b7c8ec37105061d8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 250c01172e44d8ea5f3cdea94a9ac61a89a11c1b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721301"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761411"
 ---
 # <a name="expirationpattern-resource-type"></a>тип ресурса expirationPattern
 

@@ -1,22 +1,22 @@
 ---
-title: Настройка прокси приложения с помощью API Microsoft Graph
-description: Автоматически настраивать прокси приложения с помощью API Microsoft Graph, чтобы обеспечить удаленный доступ и единый вход в локальном приложении.
+title: Настройка прокси-сервера приложений с помощью API Microsoft Graph
+description: Автоматически настраивать прокси-сервер приложений с помощью API Microsoft Graph для обеспечения удаленного доступа и единого входного доступа к локальному приложению.
 author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 28bb376b094a648d246bba5401764952d5aec863
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.prod: applications
+ms.openlocfilehash: 98db70f1d5690b3021eb69a73007567c39b80c15
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943684"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761341"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Автоматизация настройки прокси приложения с помощью API Microsoft Graph.
 
-В этой статье вы узнаете, как создать и настроить прокси [](/azure/active-directory/manage-apps/what-is-application-proxy) приложения Azure Active Directory (Azure AD) для приложения. Прокси приложения обеспечивает безопасный удаленный доступ и единый вход в локальное веб-приложение. После настройки прокси приложения пользователи могут получать доступ к своим приложениям через внешний URL-адрес, портал "Мои приложения" или другие внутренние порталы приложений.
+В этой статье вы узнаете, как создать и настроить прокси-сервер приложения Azure Active Directory (Azure AD). [](/azure/active-directory/manage-apps/what-is-application-proxy) Прокси-сервер приложения обеспечивает безопасный удаленный доступ и один вход в локальное веб-приложение. После настройки прокси-сервера приложений для приложения пользователи могут получать доступ к своим внутренним приложениям с помощью внешнего URL-адреса, портала "Мои приложения" или других внутренних порталов приложений.
 
-В этой статье предполагается, что вы [](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) уже установили соединители и выполнили необходимые условия для прокси приложения, чтобы соединители могли взаимодействовать со службами Azure AD.
+В этой статье предполагается, что вы [](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) уже установили соединители и выполнили необходимые условия для прокси-серверов приложений, чтобы соединители могли взаимодействовать с службами Azure AD.
 
 Убедитесь, что у вас есть соответствующие разрешения для вызова следующих API.
 
@@ -28,22 +28,22 @@ ms.locfileid: "49943684"
 |[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Создать servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Обновление servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Создание appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 > [!NOTE]
-> В запросах, показанных в этой статье, используются примеры значений. Вам потребуется обновить их. Показанные объекты ответа также могут быть сокращены для учитаемости. 
+> В запросах, показанных в этой статье, используются примерные значения. Вам потребуется обновить эти данные. Показанные объекты ответа также могут быть сокращены для чтения. 
 
 ## <a name="step-1-create-an-application"></a>Шаг 1. Создание приложения
 
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API
 
 1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
-2. Выберите **вход с помощью Майкрософт** и во входе с помощью учетных данных глобального администратора Azure AD или администратора приложений.
-3. После успешного входе вы увидите сведения об учетной записи пользователя в левой области.
+2. Выберите **вход в Microsoft и** во входе с помощью глобального администратора Azure AD или учетных данных администратора приложений.
+3. При успешном входе вы увидите сведения о учетной записи пользователя в левой области.
 
 > [!NOTE]
-> Вход с помощью основного службы в настоящее время не поддерживается. 
+> В настоящее время не поддерживается вход с помощью директора службы. 
 
 ### <a name="create-an-application"></a>Создание приложения
 
-Чтобы настроить прокси приложения для приложения с помощью API, необходимо создать приложение, добавить в него основной объект-службу, а затем обновить свойство **onPremisesPublishing** приложения, чтобы настроить параметры прокси приложения. При создании приложения установите для **signInAudience** приложения "AzureADMyOrg".
+Чтобы настроить прокси-сервер приложения с помощью API, создайте приложение, добавьте в приложение главу службы, а затем обновим свойство **приложения onPremisesPublishing,** чтобы настроить параметры прокси-сервера приложения. При создании приложения установите знак **ПриложенияInAudience** на "AzureADMyOrg".
 
 #### <a name="request"></a>Запрос
 
@@ -122,16 +122,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="retrieve-the-application-object-id-and-appid"></a>Получение ИД объекта приложения и appId
-Используйте ответ из предыдущего вызова, чтобы получить и сохранить ИД объекта приложения и ИД приложения.
+### <a name="retrieve-the-application-object-id-and-appid"></a>Извлечение ID объекта приложения и appId
+Используйте ответ от предыдущего вызова, чтобы получить и сохранить ID объекта приложения и ID приложения.
 ```
 "application": {
   "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
   "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
 }
 ```
-### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>Создание servicePrincipal для приложения и добавление необходимых тегов
-Используйте **appId для** создания основного приложения-службы. Затем добавьте теги, необходимые для настройки прокси приложения для приложения.
+### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>Создание службыPrincipal для приложения и добавление необходимых тегов
+Используйте **appId,** чтобы создать главную службу для приложения. Затем добавьте теги, необходимые для настройки прокси-сервера приложения.
 
 #### <a name="request"></a>Запрос
 
@@ -218,11 +218,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-configure-application-proxy-properties"></a>Шаг 2. Настройка свойств прокси приложения
+## <a name="step-2-configure-application-proxy-properties"></a>Шаг 2. Настройка свойств прокси-сервера приложений
 
 ### <a name="set-the-onpremisespublishing-configuration"></a>Настройка конфигурации onPremisesPublishing
 
-Используйте ИД объекта приложения из предыдущего шага, чтобы настроить прокси приложения и обновить свойство **onPremisesPublishing** до нужной конфигурации. В этом примере вы используете приложение с внутренним URL-адресом и доменом по умолчанию `https://contosoiwaapp.com` для внешнего URL-адреса: `https://contosoiwaapp-contoso.msappproxy.net` . 
+Используйте ID объекта приложения на предыдущем этапе, чтобы настроить прокси-сервер приложения и обновить свойство **onPremisesPublishing** до нужной конфигурации. В этом примере вы используете приложение с внутренним URL-адресом и используете домен по умолчанию `https://contosoiwaapp.com` для внешнего URL-адреса: `https://contosoiwaapp-contoso.msappproxy.net` . 
 
 #### <a name="request"></a>Запрос
 
@@ -270,8 +270,8 @@ Content-type: appplication/json
 ```http
 HTTP/1.1 204 No content
 ```
-### <a name="complete-the-configuration-of-the-application"></a>Завершение настройки приложения
-Обновите свойства **redirectUri,** **identifierUri** и **homepageUrl** приложения до внешнего URL-адреса, настроенного в свойстве **onPremisesPublishing.** Затем [обновите implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) для `true` **enabledTokenIssuance** и `false` **enabledAccessTokenIssuance.**
+### <a name="complete-the-configuration-of-the-application"></a>Завершите конфигурацию приложения
+Обновление свойств **redirectUri,** **identifierUri** и **homepageUrl** для внешнего URL, настроенного в **свойстве onPremisesPublishing.** Затем [обновим implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) для `true` **enabledTokenIssuance** и `false` для **enabledAccessTokenIssuance.**
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -296,7 +296,7 @@ Content-type: appplication/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -307,11 +307,11 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-3-assign-the-connector-group-to-the-application"></a>Шаг 3. Назначение группы соединители приложению
+## <a name="step-3-assign-the-connector-group-to-the-application"></a>Шаг 3. Назначение группы соединители приложение
 
 ### <a name="get-connectors"></a>Получить соединители
 
-Перечислите соединители и используйте ответ для извлечения и сохранения ИД объекта соединители. Для назначения соединители группе соединители будет использоваться ИД объекта соединитела.
+Список соединитений и использование ответа для получения и сохранения ID объекта соединитетеля. ID объекта соединиттеля будет использоваться для назначения соединитетеля группе соединители.
 
 #### <a name="request"></a>Запрос
 
@@ -379,8 +379,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-a-connectorgroup"></a>Создание соединителиГруппы
-В этом примере создается новая группа connectorGroup с именем "Группа демонстрационных соединитеев IWA", которая используется для приложения. Этот шаг также можно пропустить, если соединители уже назначены соответствующей группе соединитеев. Извлеките и сохраните ИД объекта connectorGroup, который будет применяться на следующем этапе.
+### <a name="create-a-connectorgroup"></a>Создание соединителиГруп
+В этом примере создается новый соединитекторGroup с именем "IWA Demo Connector Group", который используется для приложения. Вы также можете пропустить этот шаг, если ваш соединитатель уже назначен соответствующей соединителиГруппе. Извлечение и сохранение ID объекта connectorGroup для использования на следующем шаге.
 
 #### <a name="request"></a>Запрос
 
@@ -398,7 +398,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -418,7 +418,7 @@ Content-type: connectorGroup/json
 }
 ```
 
-### <a name="assign-a-connector-to-the-connectorgroup"></a>Назначение соединители соединители группе
+### <a name="assign-a-connector-to-the-connectorgroup"></a>Назначение соединитетеля соединитетелем connectorGroup
 
 #### <a name="request"></a>Запрос
 
@@ -436,7 +436,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -447,7 +447,7 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-### <a name="assign-the-application-to-the-connectorgroup"></a>Назначение приложения соединителигруппе
+### <a name="assign-the-application-to-the-connectorgroup"></a>Назначение приложения в connectorGroup
 
 #### <a name="request"></a>Запрос
 
@@ -492,8 +492,8 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-4-configure-single-sign-on"></a>Шаг 4. Настройка единого входов
-Это приложение использует встроенную проверку подлинности Windows (IWA). Чтобы настроить IWA, установите свойства единого вход в типе ресурса [singleSignOnSettings.](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
+## <a name="step-4-configure-single-sign-on"></a>Шаг 4. Настройка единого входного
+В этом приложении используется интегрированная проверка подлинности Windows (IWA). Чтобы настроить IWA, установите свойства одного входного знака в [типе ресурса singleSignOnSettings.](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
 
 #### <a name="request"></a>Запрос
 
@@ -599,7 +599,7 @@ Content-type: application/json
 }
 ```
 
-Используйте ответ из предыдущего вызова, чтобы получить и сохранить ИД appRole для использования на следующем шаге.
+Используйте ответ из предыдущего вызова, чтобы получить и сохранить ID appRole, чтобы использовать для следующего шага.
 ```
       {
             "description": "User",
@@ -610,13 +610,13 @@ Content-type: application/json
 
 ### <a name="assign-users-and-groups-to-the-application"></a>Назначение пользователей и групп для приложения
 
-Используйте следующие свойства, чтобы назначить пользователя приложению.
+Чтобы назначить пользователя приложению, используйте следующие свойства.
 
 | Свойство  | Описание |Идентификатор  |
 |---------|---------|---------|
-| principalId | ИД пользователя, который будет назначен приложению | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
+| principalId | Пользовательский ID пользователя, назначенного приложению | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
 | principalType | Тип пользователя | Пользователь |
-| appRoleId |  ИД роли приложения для роли приложения по умолчанию в приложении | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
+| appRoleId |  ID роли приложения роли по умолчанию роли приложения | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
 | resourceId | ServicePrincipal ID приложения | a8cac399-cde5-4516-a674-819503c61313 |
 
 #### <a name="request"></a>Запрос
@@ -665,5 +665,5 @@ Content-type: application/json
 
 
 ## <a name="additional-steps"></a>Дополнительные действия
-- [Автоматизация настройки с помощью примеров PowerShell для прокси приложения](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
+- [Автоматизация конфигурации с помощью образцов PowerShell для прокси-серверов приложений](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
 - [Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)

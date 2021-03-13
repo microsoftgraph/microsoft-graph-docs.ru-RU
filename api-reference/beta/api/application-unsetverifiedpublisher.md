@@ -1,24 +1,24 @@
 ---
-title: 'Приложение: Унсетверифиедпублишер'
+title: 'приложение: unsetVerifiedPublisher'
 description: Удаление проверенного издателя приложения.
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 88bf73cbd90b5bf1eb2c4c8f22d11a232d1cc581
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 7560d9935a2cf35bcf67637ce2353932ba522d2b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634689"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759925"
 ---
-# <a name="application-unsetverifiedpublisher"></a>Приложение: Унсетверифиедпублишер
+# <a name="application-unsetverifiedpublisher"></a>приложение: unsetVerifiedPublisher
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмените настройку [верифиедпублишер](../resources/verifiedPublisher.md) , предварительно заданной для [приложения](../resources/application.md), удалив все проверенные свойства издателя. Для получения дополнительных сведений см [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview).
+Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set on an [application,](../resources/application.md)removing all verified publisher properties. Дополнительные сведения см. в [книге Проверка publisher.](/azure/active-directory/develop/publisher-verification-overview)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48634689"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение | Не поддерживается |
+|Для приложений | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /applications/{id}/unsetVerifiedPublisher
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

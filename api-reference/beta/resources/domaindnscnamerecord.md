@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Домаинднскнамерекорд
+title: тип ресурса domainDnsCnameRecord
 description: Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5dc5c70952f24463c0b483a290d41823f8904576
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ecbe5c0dd1d547a6abb116c5152a8d21f0ee3fd8
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095592"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760885"
 ---
-# <a name="domaindnscnamerecord-resource-type"></a>Тип ресурса Домаинднскнамерекорд
+# <a name="domaindnscnamerecord-resource-type"></a>тип ресурса domainDnsCnameRecord
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
+Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от [объекта DomainDnsRecord.](domaindnsrecord.md)
 
 
 ## <a name="methods"></a>Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .
+Прямые запросы на этот ресурс не поддерживаются. Сведения о [том,](domain.md) как запрашивать записи службы домена, см. в разделе домен.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|каноникалнаме|Строка| Каноническое имя записи CNAME. Используется для настройки записи CNAME на узле DNS. |
-|id|Строка| Уникальный идентификатор, назначенный этой сущности. Не допускает значение null, доступно только для чтения|
-|Переключатель|Boolean| Если значение равно false, запись CNAME должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. Не допускает значение null |
-|label|Строка| Значение, используемое при настройке *псевдонима/узла или имени* записи CNAME на узле DNS. |
-|recordType|Строка| Тип записи DNS. Значение всегда равно *CNAME*. Key|
-|суппортедсервице|Строка| Служба или компонент Microsoft Online, который имеет зависимость от этой записи CNAME.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|используем|Int32| Значение, используемое при настройке свойства срока жизни (TTL) записи CNAME на узле DNS. Не допускает значение null |
+|canonicalName|String| Каноническое имя записи CNAME. Используется для настройки записи CNAME в DNS-хозяйке. |
+|id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения|
+|isOptional|Boolean| Если это не так, запись CNAME должна быть настроена клиентом в хосте DNS, чтобы Microsoft Online Services правильно работать с доменом. Не является недействительным |
+|label|String| Значение, используемого при настройке *псевдонима/хоста/имени* записи CNAME в хосте DNS. |
+|recordType|String| Тип записи DNS. Значение всегда *CName*. Key|
+|supportedService|String| Microsoft Online Service или функция, зависимая от этой записи CNAME.</br></br>Может быть одним из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|ttl|Int32| Значение, используемого при настройке свойства "время на жизнь" записи CNAME в хосте DNS. Не является недействительным |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

@@ -1,23 +1,23 @@
 ---
-title: Список user usageRights
-description: Получить список объектов usageRights для пользователя.
+title: Список пользовательских ресурсовRights
+description: Извлечение списка объектов useRights для пользователя.
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2662458894fe6dab7fd42e0125c6b4c8f165a4e8
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 2df51b15de635df52ff4b667c3a9266fafea1511
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013648"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761495"
 ---
-# <a name="list-user-usagerights"></a>Список user usageRights
+# <a name="list-user-usagerights"></a>Список пользовательских ресурсовRights
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [usageRight](../resources/usageright.md) для заданного пользователя.
+Извлечение списка [объектов useRight](../resources/usageright.md) для данного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,32 +39,32 @@ GET /users/{userId}/usageRights
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот API поддерживает параметр $filter [OData.](/graph/query-parameters) Поддерживаются следующие $filter шаблоны:
+Этот API поддерживает параметр $filter [OData.](/graph/query-parameters) Поддерживаются следующие шаблоны $filter:
 
-- $filter = state eq 'value'
+- $filter = значение состояния eq
 - $filter = serviceIdentifier eq 'value'
-- $filter = state eq 'value' and serviceIdentifier eq 'value'
-- $filter = state in ('value1', 'value2')
+- $filter = состояние eq 'value' и serviceIdentifier eq 'value'
+- $filter = состояние в ('value1', 'value2')
 - $filter = serviceIdentifier в ('value1', 'value2')
-- $filter = state in ('value1', 'value2') and serviceIdentifier in ('value1', 'value2')
+- $filter = состояние в ('value1', 'value2') и serviceIdentifier в ('value1', 'value2')
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
-|odata.maxpagesize|Установите максимальный размер страницы результатов. Необязательный параметр.|
+|Авторизация|Bearer {токен}. Обязательный.|
+|odata.maxpagesize|Установите переоценку размера страницы максимального результата. Необязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [usageRight](../resources/usageright.md) в тексте отклика.
+## <a name="response"></a>Ответ
+В случае успешного использования этот метод возвращает код отклика и коллекцию `200 OK` [объектов useRight](../resources/usageright.md) в тексте отклика.
 
-Кроме того, если в отклике больше страниц, возвращается @odata.nextLink.
+Кроме того, если в ответе больше страниц, возвращается @odata.nextLink.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-all-usage-rights-for-a-user"></a>Пример 1. Получите все права на использование для пользователя
+### <a name="example-1-get-all-usage-rights-for-a-user"></a>Пример 1. Получить все права на использование для пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-usage-rights-for-a-user-with-specific-service-identifiers-and-states"></a>Пример 2. Получите права на использование для пользователя с определенными идентификаторами и состояниями службы
+### <a name="example-2-get-usage-rights-for-a-user-with-specific-service-identifiers-and-states"></a>Пример 2. Получить права на использование для пользователя с определенными идентификаторами и состояниями службы
 
 #### <a name="request"></a>Запрос
 

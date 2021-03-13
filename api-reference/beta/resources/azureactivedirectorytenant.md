@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса Азуреактиведиректоритенант
-description: Тип Азуреактиведиректоритенант определяет другого клиента Azure Active Directory в качестве источника удостоверения для подключенной Организации.
+title: тип ресурса azureActiveDirectoryTenant
+description: Тип azureActiveDirectoryTenant определяет другого клиента Azure Active Directory в качестве источника удостоверений для связанной организации.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c2fd1b8e1b2fcc2c2fef03db93a54d5d0b69b951
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: acd59c82f1968cbb161b74d1e7c1a551b6b2e397
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089777"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759911"
 ---
-# <a name="azureactivedirectorytenant-resource-type"></a>Тип ресурса Азуреактиведиректоритенант
+# <a name="azureactivedirectorytenant-resource-type"></a>тип ресурса azureActiveDirectoryTenant
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в источниках удостоверений [коннектедорганизатион](connectedOrganization.md). `@odata.type`Значение `#microsoft.graph.azureActiveDirectoryTenant` указывает на то, что этот тип определяет другого клиента Azure Active Directory в качестве источника удостоверений для подключенной Организации.
+Используется в источниках удостоверений [подключеннойорганизации.](connectedOrganization.md) Это значение указывает, что этот тип определяет другого клиента Azure Active Directory в качестве источника удостоверений `@odata.type` `#microsoft.graph.azureActiveDirectoryTenant` для связанной организации.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |Строка | Имя клиента Azure Active Directory. Только для чтения. |
-| tenantId |String | Идентификатор клиента Azure Active Directory. Только для чтения. |
+| displayName |String | Имя клиента Azure Active Directory. Только для чтения. |
+| tenantId |String | ID клиента Azure Active Directory. Только для чтения. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже представлено представление типа в формате JSON.
+Ниже приводится представление JSON этого типа.
 
 <!-- {
   "blockType": "resource",

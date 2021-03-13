@@ -1,23 +1,23 @@
 ---
-title: Get accessPackageResourceEnvironment
-description: Чтение свойств и связей объекта accessPackageResourceEnvironment.
+title: Получите accessPackageResourceEnvironment
+description: Ознакомьтесь с свойствами и отношениями объекта accessPackageResourceEnvironment.
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0169ad18a24ff27392c5679f91dfaecd43d76567
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 4530eec57a15a871cd7c633dd645c7f9beae2070
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176301"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759428"
 ---
-# <a name="get-accesspackageresourceenvironment"></a>Get accessPackageResourceEnvironment
+# <a name="get-accesspackageresourceenvironment"></a>Получите accessPackageResourceEnvironment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)
+Ознакомьтесь с свойствами и отношениями объекта [accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-В настоящее время этот метод не поддерживает [параметры запросов OData.](/graph/query-parameters)
+Этот метод в настоящее время не поддерживает [параметры запроса OData.](/graph/query-parameters)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -49,9 +49,9 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [объект accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

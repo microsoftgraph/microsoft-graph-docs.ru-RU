@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Рбакаппликатионмултипле
-description: Свойство навигации по управлению ролями
+title: Тип ресурса rbacApplicationMultiple
+description: Свойство навигации по управлению ролью
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5caf422293a0e06fa9ba524af2a4809b49709140
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba6c4973dd79f328c1d04ea26803a6b2aec39c7f
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026392"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760920"
 ---
-# <a name="rbacapplicationmultiple-resource-type"></a>Тип ресурса Рбакаппликатионмултипле
+# <a name="rbacapplicationmultiple-resource-type"></a>Тип ресурса rbacApplicationMultiple
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер управления ролями для универсальных определений ролей и назначений ролей для поставщиков Microsoft 365 RBAC, поддерживающих несколько субъектов и несколько областей в рамках одного назначения роли. Это отличается от типа ресурса [рбакаппликатион](rbacapplication.md) . Microsoft Intune это пример такого поставщика RBAC. Назначение роли в Intune может иметь массив субъектов и массив групп областей.
+Контейнер управления ролью для унифицированных определений ролей и назначений ролей для поставщиков Microsoft 365 RBAC, которые поддерживают несколько принципов и несколько областей в одном назначении ролей. Это отличается от типа ресурса [rbacApplication.](rbacapplication.md) Microsoft Intune является примером такого поставщика RBAC. Назначение ролей в Intune может иметь массив принципалов и массив групп областей.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-post.md) | [унифиедролеассигнментмултипле](unifiedroleassignmentmultiple.md) | Создание нового Унифиедролеассигнментмултипле путем отправки в коллекцию roleAssignments. |
-| [Список Ролеассигнментсмултипле](../api/unifiedroleassignmentmultiple-list.md) | Коллекция [унифиедролеассигнментмултипле](unifiedroleassignmentmultiple.md) | Получение коллекции объектов Унифиедролеассигнментмултипле. |
-| [Создание Унифиедроледефинитион](../api/rbacapplication-post-roledefinitions.md) | [унифиедроледефинитион](unifiedroledefinition.md) | Создание нового Унифиедроледефинитион путем отправки в коллекцию перечисление roledefinition. |
-| [Перечисление объектов roleDefinition](../api/rbacapplication-list-roledefinitions.md) | Коллекция [унифиедроледефинитион](unifiedroledefinition.md) | Получение коллекции объектов Унифиедроледефинитион. |
+| [Создание unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-post.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Создайте новый объединенныйRoleAssignmentMultiple, разместив в коллекции roleAssignments. |
+| [List roleAssignmentsMultiple](../api/unifiedroleassignmentmultiple-list.md) | [коллекция unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Получите коллекцию объектов unifiedRoleAssignmentMultiple. |
+| [Создание unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Создайте новое единоеRoleDefinition, разместив в коллекции roleDefinitions. |
+| [Перечисление объектов roleDefinition](../api/rbacapplication-list-roledefinitions.md) | [коллекция unifiedRoleDefinition](unifiedroledefinition.md) | Получите коллекцию объектов unifiedRoleDefinition. |
 
 ## <a name="properties"></a>Свойства
 

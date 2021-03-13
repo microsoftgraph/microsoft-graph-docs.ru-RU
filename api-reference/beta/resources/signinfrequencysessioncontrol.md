@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Сигнинфрекуенцисессионконтрол
-description: Управление сеансами для применения частоты входа.
+title: signInFrequencySessionControl type
+description: Управление сеансом для обеспечения частоты подписей.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8095469ddb29c79be3a22b84e58d7e4e52cd8d5c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc5123975dc15c7c49f0dcbec507c345cf057850
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067160"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761053"
 ---
-# <a name="signinfrequencysessioncontrol-resource-type"></a>Тип ресурса Сигнинфрекуенцисессионконтрол
+# <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Управление сеансами для обеспечения частоты входа. Наследуется от [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
+Управление сеансами для обеспечения частоты входов. Наследуется от [управления сеансами условного доступа.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
+|isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
 |type          |String       | Возможные значения: `days`, `hours`.|
 |value         |Int32        | Количество `days` или `hours` .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -3,14 +3,14 @@ title: Обновление smsAuthenticationMethodConfiguration
 description: Обновление свойств объекта smsAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dbdcddf77f2e85517b6c8d1685b4129b1e8d83f0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 08988f75df38facbce7f17a376f335babb3258b2
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475631"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761006"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Обновление smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -58,7 +58,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 
 >**Примечание:** Свойство `@odata.type` со значением `#microsoft.graph.smsAuthenticationMethodConfiguration` должно быть включено в тело.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) в тексте ответа.
 

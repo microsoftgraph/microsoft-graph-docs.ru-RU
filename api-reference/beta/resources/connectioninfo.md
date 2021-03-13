@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса connectionInfo
-description: Объект connectionInfo определяет сведения о под соединении, используемые для связи с ресурсом.
+title: тип ресурса connectionInfo
+description: Объект connectionInfo определяет сведения о подключении, используемые для связи с ресурсом.
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 454dc7fcd045bb91819b39ad30f603191bab8380
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8bbab1e93cf5af0fcfbd401b6b726f3165f595b4
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137736"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761823"
 ---
-# <a name="connectioninfo-resource-type"></a>Тип ресурса connectionInfo
+# <a name="connectioninfo-resource-type"></a>тип ресурса connectionInfo
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект connectionInfo определяет локатор ресурсов, используемый для связи с ресурсом в azure AD Entitlement Management.
+Объект connectionInfo определяет локатор ресурсов, используемый для связи с ресурсом в Azure AD Entitlement Management.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |url|String|Конечная точка, используемая управлением правами для связи с ресурсом пакета доступа.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

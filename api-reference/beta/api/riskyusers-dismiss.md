@@ -1,19 +1,19 @@
 ---
-title: Отклонить Рискюсер
-description: Отклонение риска для объекта Рискюсер.
+title: Увольнение riskyUser
+description: Отклонять риск объекта riskyUser.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 8ae21d3adb754798ea2332c1b9acc7880b4a6d99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47b749e1ac5d782d96210b493ed1451db19184c7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975903"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761488"
 ---
-# <a name="riskyuser-dismiss"></a>Рискюсер: отклонить
+# <a name="riskyuser-dismiss"></a>riskyUser: увольнение
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,8 @@ ms.locfileid: "48975903"
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
-Отклонить риск одного или нескольких объектов [рискюсер](../resources/riskyuser.md) . Это действие задает для уровня риска целевого пользователя значение нет.
+Отклонять риск одного или более [объектов riskyUser.](../resources/riskyuser.md) Это действие задает целевому пользователю уровень риска ни к одному. Максимальное количество пользователей, отклоняться при одном вызове, — 60.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +30,7 @@ ms.locfileid: "48975903"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskyUser.ReadWrite.All |
+|Для приложений | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,13 +46,13 @@ GET /identityProtection/riskyUsers/dismiss
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Укажите идентификаторы пользователя, которые нужно отклонить в теле запроса.
+Укажите пользовательские интерфейсы, которые необходимо отклонять в теле запроса.
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="examples"></a>Примеры
-### <a name="example-1-dismiss-risky-users"></a>Пример 1: отклонение рискованных пользователей
+### <a name="example-1-dismiss-risky-users"></a>Пример 1. Увольнение рискованных пользователей
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -99,7 +100,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-dismiss-a-risky-user"></a>Пример 2: отклонение опасного пользователя
+### <a name="example-2-dismiss-a-risky-user"></a>Пример 2. Увольнение рискованного пользователя
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

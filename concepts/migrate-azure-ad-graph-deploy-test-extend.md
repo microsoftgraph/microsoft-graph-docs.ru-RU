@@ -3,13 +3,13 @@ title: Развертывание, тестирование и расширен�
 description: 'Описывает миграцию приложений Azure Active Directory (Azure AD) для использования API Microsoft Graph (REST); в этом рассмотрен шаг 3: развертывание, тестирование и расширение.'
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 55bca2b1d8499ef7ad788555f55f5f92033d1818
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.prod: applications
+ms.openlocfilehash: 6460b768381cdf3223699d95d1d5b9ce9ed629e8
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470615"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761292"
 ---
 # <a name="deploy-test-and-extend"></a>Развертывание, тестирование и расширение
 

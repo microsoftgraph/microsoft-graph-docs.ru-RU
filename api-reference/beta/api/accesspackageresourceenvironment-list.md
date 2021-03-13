@@ -3,14 +3,14 @@ title: Список accessPackageResourceEnvironments
 description: Извлечение списка объектов accessPackageResourceEnvironment.
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0c8319198ae13894f6f5498bc4c018a26615ce59
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 823abc8a71cfce4ac7872f4e6e86ae7d08e92411
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50439499"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759414"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>Список accessPackageResourceEnvironments
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50439499"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,10 +46,10 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в тексте ответа.
 

@@ -3,14 +3,14 @@ title: тип ресурса accessPackageResourceEnvironment
 description: Среда ресурсов пакета доступа является ссылкой на среду геолокации, в которой находится ресурс.
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 09bd318036874bb52bfab0ed522a2948cbe83233
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b21c0f1ae8fd70ac2df76dfa50bc886bca04de19
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722202"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760857"
 ---
 # <a name="accesspackageresourceenvironment-resource-type"></a>тип ресурса accessPackageResourceEnvironment
 
@@ -41,10 +41,10 @@ ms.locfileid: "50722202"
 |OriginId|String|Уникальный идентификатор этой среды в системе происхождения.|
 |originSystem|String|Тип ресурса в системе происхождения, например `SharePointOnline` . Поддерживает `$filter`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|accessPackageResources|[коллекция accessPackageResource](../resources/accesspackageresource.md)|Только для чтения. Обязательный атрибут.|
+|accessPackageResources|[коллекция accessPackageResource](../resources/accesspackageresource.md)|Только для чтения. Обязательный.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

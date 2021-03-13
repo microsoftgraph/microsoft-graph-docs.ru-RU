@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Кондитионалакцессдевицестатес
-description: Представляет состояния устройства в области политики.
+title: conditionalAccessDeviceStates Тип ресурса
+description: Представляет состояния устройств в области политики.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 262657c015e4b3416baa9e6e533d1b8f76c1a536
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 152c4edbd641d68f6211111cb29e9794e2a88260
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040079"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761802"
 ---
-# <a name="conditionalaccessdevicestates-resource-type"></a>Тип ресурса Кондитионалакцессдевицестатес
+# <a name="conditionalaccessdevicestates-resource-type"></a>conditionalAccessDeviceStates Тип ресурса
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет состояния устройства в области политики.
+Представляет состояния устройств в области политики.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклудестатес | Коллекция String | Состояния политики. `All` — Единственное допустимое значение. |
-| ексклудестатес | Коллекция String | Состояния, исключенные из области применения политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeStates | Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeStates | Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Отношения
 

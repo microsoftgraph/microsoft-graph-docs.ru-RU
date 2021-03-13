@@ -1,18 +1,18 @@
 ---
-title: Get authenticationMethod
+title: Получить проверку подлинностиMethod
 description: Извлечение свойств и связей объекта authenticationMethod.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e951cf5e7b64bf7fef411728acac0f8d21b9e51d
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 10495d9b66c63207ec1b1376efcb1796b9e4c9ad
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796474"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760030"
 ---
-# <a name="get-authenticationmethod"></a>Get authenticationMethod
+# <a name="get-authenticationmethod"></a>Получить проверку подлинностиMethod
 
 Пространство имен: microsoft.graph
 
@@ -24,18 +24,18 @@ ms.locfileid: "49796474"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения, действующие на себя (от наименее привилегированных) | Разрешения, действующие над другими (от наименее привилегированных)|
+| Тип разрешения                        | Разрешения, действующие на себя (от наименее до самых привилегированных) | Разрешения, действующие на других (от наименее привилегированных)|
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Приложение                            | Не применимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | Неприменимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только маскирование номеров телефонов)
+* Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -60,9 +60,9 @@ GET /users/{id | userPrincipalName}/authentication/methods/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [requested authenticationMethod](../resources/authenticationmethod.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемую проверку `200 OK` [подлинностиMethod](../resources/authenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

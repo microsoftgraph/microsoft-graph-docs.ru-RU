@@ -2,14 +2,14 @@
 title: Создание маркеров подтверждения владения для смены ключей
 description: В рамках подтверждения запроса для методов addKey и removeKey требуется маркер подтверждения владения. В этом документе приведены инструкции по созданию маркера подтверждения владения.
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: davidmu1
-ms.openlocfilehash: de27890f9e822f3cc75d1e8a1007794a0e70bf8c
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: c459159c780b819589b196dcc44ee0a0cf9a65af
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086741"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760835"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Создание маркеров подтверждения владения для смены ключей
 

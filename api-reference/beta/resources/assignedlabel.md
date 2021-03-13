@@ -2,15 +2,15 @@
 title: тип ресурса assignedLabel
 description: Представляет метку конфиденциальности, назначенную группе Microsoft 365. Метки конфиденциальности позволяют администраторам применять определенные групповые параметры в группе, назначая классификацию группе (например, конфиденциальность, высокая конфиденциальность или общие).
 localization_priority: Normal
-author: jpettere
+author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7c71e59c022eb9a3314771598b47e938a61a946a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f22bfdd6cce307a83a90ada1da6a312994a3538e
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720349"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761249"
 ---
 # <a name="assignedlabel-resource-type"></a>тип ресурса assignedLabel
 

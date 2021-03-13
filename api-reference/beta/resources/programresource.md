@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Програмресаурце
-description: Представляет ссылку на объект, который является целевым объектом проверки доступа.
+title: тип ресурса programResource
+description: Представляет ссылку на объект, который является объектом обзора доступа.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5ad3720587523e6937b4c3713a1c5a8c06d1e6e5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0ef610650887b1d34569465bd5babb7ec91c194d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601498"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761830"
 ---
-# <a name="programresource-resource-type"></a>Тип ресурса Програмресаурце
+# <a name="programresource-resource-type"></a>тип ресурса programResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект **програмресаурце** , содержащийся в объекте [програмконтрол](programcontrol.md) , представляет ссылку на объект, который является целевым объектом проверки доступа.
+Объект **programResource,** содержащийся в [объекте programControl,](programcontrol.md) представляет ссылку на объект, который является объектом, объектом обзора доступа.
 
-Этот тип наследуется от [Identity](identity.md).
+Этот тип наследует от [удостоверения](identity.md).
 
 ## <a name="properties"></a>Свойства
 

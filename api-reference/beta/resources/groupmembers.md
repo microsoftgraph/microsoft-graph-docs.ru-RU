@@ -1,37 +1,37 @@
 ---
-title: сложный тип Граупмемберс
-description: Определяет коллекцию пользователей в клиенте, которые будут разрешены в качестве запрашивающего, утверждающего или проверяющего.
+title: сложный тип groupMembers
+description: Определяет коллекцию пользователей в клиенте, которым будет разрешено в качестве запрашивателя, утверждения или рецензента.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 576fd13962dcafaa876225393cc9165e5ef2ece2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0069cd6a8fd738c17a9035b519c4f141c3a5fa55
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078439"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761418"
 ---
-# <a name="groupmembers-complex-type"></a>сложный тип Граупмемберс
+# <a name="groupmembers-complex-type"></a>сложный тип groupMembers
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в параметрах просмотра запроса, утверждения и назначения для [политики назначения пакетов Access](accesspackageassignmentpolicy.md). `@odata.type`Значение " `#microsoft.graph.groupMembers` " указывает, что этот тип определяет коллекцию пользователей в клиенте, которые будут разрешены запрашивающими лицами, утверждающими лицами или рецензентами, которые являются участниками определенной группы.
+Используется в параметрах проверки запросов, утверждений и назначений политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) Значение "" указывает, что этот тип определяет коллекцию пользователей в клиенте, которые будут разрешены в качестве запрашивателя, утверждения или рецензента, которые являются членами `@odata.type` `#microsoft.graph.groupMembers` определенной группы.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | Идентификатор группы в Azure AD. |
+| id |String | ID группы в Azure AD. |
 | description |String | Имя группы в Azure AD. Только для чтения. |
-| Создание резервной копии | Boolean | Для **граупмемберс** на этапе утверждения данное свойство указывает, что участники группы являются утверждающим резервным утверждающим. |
+| isBackup | Boolean | Для **groupMembers** на стадии утверждения это свойство указывает, что участники группы являются резервным утверждением резервного копирования. |
 
 ## <a name="json-representation"></a>Представление JSON
 
 
-Ниже представлено представление типа в формате JSON.
+Ниже приводится представление JSON этого типа.
 
 <!-- {
   "blockType": "resource",

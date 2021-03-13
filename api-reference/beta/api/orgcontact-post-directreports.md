@@ -3,14 +3,14 @@ title: Создание directReport
 description: Используйте этот API для создания нового directReport.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a090656c524f9d5c0a2ff7127ab4e0197714ef4b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd228b01123fa893a320a8a273eca379432b4b7e
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969468"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761011"
 ---
 # <a name="create-directreport"></a>Создание directReport
 
@@ -39,7 +39,7 @@ POST /contacts/{id}/directReports
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
