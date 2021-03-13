@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 281c793c6c566f63a6be54e80127de859710bda2
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 1a5c7c00c44510ceae7a80506c2748fde5450656
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638207"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807235"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const educationOutcome = {
-    @odata.type:"#microsoft.graph.educationPointsOutcome",
-    points:{
-        @odata.type:"#microsoft.graph.educationAssignmentPointsGrade",
-        points:85.0
+    '@odata.type':'#microsoft.graph.educationPointsOutcome',
+    points: {
+        '@odata.type':'#microsoft.graph.educationAssignmentPointsGrade',
+        points: 85.0
     }
 };
 
-let res = await client.api('/education/me/assignments/{id}/submissions/{id}/outcomes/{id}')
+await client.api('/education/me/assignments/{id}/submissions/{id}/outcomes/{id}')
     .version('beta')
     .update(educationOutcome);
 

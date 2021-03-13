@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 38313f1cfc1821ad8bbce44eabb021cc6810d40e
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 92176e089f87ff077377446643cceb1811159a8d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638323"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807725"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const workbookRangeFont = {
   bold: true,
-  color: "#4B180E",
+  color: '#4B180E',
   size: 26
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font')
+await client.api('/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font')
     .version('beta')
     .update(workbookRangeFont);
 
