@@ -5,12 +5,12 @@ description: Удаление типа контента из списка sharep
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8c27cfd2e16fc4c3bd7fade3f5546c08951f38c5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5cf3182f16871c4b56026ba10cfa61f6edcbff05
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447274"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770954"
 ---
 # <a name="delete-contenttype"></a>Удаление contentType
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "50447274"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,6 +55,8 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_contenttype"
@@ -64,6 +66,24 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ```http
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-contenttype-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-contenttype-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 <!-- {

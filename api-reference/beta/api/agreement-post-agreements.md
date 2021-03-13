@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 0a2484c8c9dbaf8f9cc873638b624aaf453e5d3f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c62fc34d83f8602cb0da56027e4def5d2d904e7e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471579"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771213"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -46,9 +46,9 @@ POST /identityGovernance/termsOfUse/agreements
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|String|Отображение имени соглашения.|
-|isViewingBeforeAcceptanceRequired|Логический|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
+|isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
 |files/fileName|String|Имя файла соглашения (например, TOU.pdf).|
-|files/isDefault|Логический|Указывает, является ли это файл соглашения по умолчанию, если ни одна из культур не соответствует предпочтениям клиента. Если ни один файл не помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
+|files/isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если ни одна из культур не соответствует предпочтениям клиента. Если ни один файл не помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
 |файлы/язык|String|Культура файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
 |файлы/fileData/data|Binary|Данные, представляющие условия использования документа PDF.|
 
@@ -60,6 +60,8 @@ POST /identityGovernance/termsOfUse/agreements
 В органе запроса поставляем представление JSON объекта [соглашения.](../resources/agreement.md)
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agreement_from_agreements"
@@ -83,6 +85,24 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-agreement-from-agreements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agreement-from-agreements-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-agreement-from-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ##### <a name="response"></a>Отклик

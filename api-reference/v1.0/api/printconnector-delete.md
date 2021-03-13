@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4366aa9f3ab674861c404a4ce0f9c329a06b23e9
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 71edae5cf61e9e3ab7e9d8ec8b36ed679d0c04f6
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517476"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772158"
 ---
 # <a name="delete-printconnector"></a>Удаление printConnector
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "50517476"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintConnector.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,13 +53,15 @@ DELETE /print/connectors/{printConnectorId}
 
 ### <a name="error-conditions-and-messages"></a>Условия ошибки и сообщения
 
-|Сценарий|Method|Код|Сообщение|
+|Сценарий|Метод|Код|Сообщение|
 |--------|------|----|-------|
 |Пользователь пытается удалить соединителя, который имеет один или несколько принтеров зарегистрированы|DELETE|409|Перед удалением соединителя удаляйте связанные принтеры.|
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_printconnector"
@@ -68,6 +70,24 @@ DELETE /print/connectors/{printConnectorId}
 ``` http
 DELETE https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-printconnector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-printconnector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-printconnector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-printconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

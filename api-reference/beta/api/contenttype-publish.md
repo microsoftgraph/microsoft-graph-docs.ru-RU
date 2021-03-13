@@ -5,12 +5,12 @@ description: Публикация типа контента, присутств�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 072fb067114f9693f18a63c2d1e881fa55a7ca6b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2137c9fe371103d68785e67cfc815a15dba2ec54
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447221"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770445"
 ---
 # <a name="contenttype-publish"></a>contentType: публикация
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50447221"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Sites.FullControl.All    |
-|Приложение | Sites.FullControl.All |
+|Для приложений | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -54,6 +54,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_publish"
@@ -62,6 +64,24 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```http
 POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-publish-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-publish-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-publish-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

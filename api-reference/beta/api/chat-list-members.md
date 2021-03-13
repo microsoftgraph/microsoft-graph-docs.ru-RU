@@ -1,16 +1,16 @@
 ---
 title: Список участников чата
 description: Получение списка участников чата.
-author: clearab
+author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8343953e48a11500abb302b4cddaf5d1f6203457
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 224cd1dfd0f26eb61a1f1a0a410d9ab315863593
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753525"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770058"
 ---
 # <a name="list-members-of-a-chat"></a>Список участников чата
 
@@ -64,7 +64,7 @@ GET /users/{user-id}/chats/{chat-id}/members
 В случае успеха этот метод возвращает код отклика `200 OK` и список объектов [conversationMember](../resources/conversationmember.md) в тексте отклика.
 
 > [!NOTE]
-> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues.md#missing-tenantid-for-chat-members).
+> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#missing-properties-for-chat-members).
 
 ## <a name="example"></a>Пример
 

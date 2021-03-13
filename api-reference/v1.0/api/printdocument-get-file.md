@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7bde42e03af509f101515dc847283fc1e354c478
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 51997302289a3998192e104c9b025678de680857
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518040"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772088"
 ---
 # <a name="download-printdocument-binary-file"></a>Скачайте двоичный файл printDocument
 
@@ -27,8 +27,8 @@ ms.locfileid: "50518040"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                               |
+| Делегированное (рабочая или учебная учетная запись)     | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                               |
 | Приложение                            | PrintJob.Read.All, PrintJob.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,6 +52,8 @@ GET /print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$v
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_document_value"
@@ -59,6 +61,24 @@ GET /print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$v
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$value
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-document-value-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-document-value-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-document-value-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-document-value-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

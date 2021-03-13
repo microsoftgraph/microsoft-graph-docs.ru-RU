@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 58285c3c6908812edce8ad80915f44f4df08fcb8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: bd07e04aa2a4c8b459e90a55d537c683a677d8e9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517475"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772046"
 ---
 # <a name="printer-create"></a>принтер: создание
 Пространство имен: microsoft.graph
@@ -28,8 +28,8 @@ ms.locfileid: "50517475"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -55,13 +55,13 @@ POST /print/printers/create
 
 | Параметр      | Тип    |Описание| Обязательный? |
 |:---------------|:--------|:----------|:----------|
-|displayName|Строка|Имя отображения, которое необходимо назначить принтеру.|Да|
+|displayName|String|Имя отображения, которое необходимо назначить принтеру.|Да|
 |manufacturer|String|Производитель принтера.|Да|
 |model|String|Модель принтера.|Да|
-|physicalDeviceId|Строка|UUID физического устройства принтера. Обязательно, если `hasPhysicalDevice` свойство является верным.|Нет|
-|hasPhysicalDevice|Логический|True, если на принтере есть физическое выходное устройство, ложное в противном случае. Если значение опущено, значение по умолчанию является верным.|Нет|
+|physicalDeviceId|String|UUID физического устройства принтера. Обязательно, если `hasPhysicalDevice` свойство является верным.|Нет|
+|hasPhysicalDevice|Boolean|True, если на принтере есть физическое выходное устройство, ложное в противном случае. Если значение опущено, значение по умолчанию является верным.|Нет|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|Запрос на подписание сертификата X.509 (CSR) для сертификата, созданного и используемой принтером для идентификации.|Да|
-|connectorId|Строка|ID соединителя, действующего в качестве прокси-сервера принтера.|Нет|
+|connectorId|String|ID соединителя, действующего в качестве прокси-сервера принтера.|Нет|
 
 ## <a name="response"></a>Отклик
 В случае успешного использования этот метод возвращает код отклика и ссылку на связанный `202 Accepted` [принтерCreateOperation](../resources/printercreateoperation.md) в `Operation-Location` загонке.
@@ -71,6 +71,8 @@ POST /print/printers/create
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printer_create"
@@ -94,6 +96,24 @@ Content-length: 287
   "connectorId": null
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printer-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printer-create-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printer-create-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printer-create-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

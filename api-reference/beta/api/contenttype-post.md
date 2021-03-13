@@ -5,12 +5,12 @@ description: Создание типа контента на сайте.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f84ec9db88917b55f518bbdbd4660bf91e9321ed
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b9ab72a2d757e2d409f98c2aab4e6f7392769dfc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447224"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770474"
 ---
 # <a name="create-contenttype"></a>Создание contentType
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "50447224"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается    |
-|Приложение | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -60,6 +60,8 @@ POST /sites/{site-id}/contentTypes
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_contenttype"
@@ -80,6 +82,12 @@ Content-Type: application/json
     "group": "Document Set Content Types" 
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

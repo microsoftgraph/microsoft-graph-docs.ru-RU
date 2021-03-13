@@ -1,16 +1,16 @@
 ---
 title: Получение объекта conversationMember в чате
 description: Получение участника чата.
-author: clearab
+author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a5b37c6cde5c0bf8823a599d1720f3b8c5fcd6ad
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: ba86dc1d4ad5eb5ba6fcc926873d1896d55affb4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753735"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770100"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>Получение объекта conversationMember в чате
 
@@ -61,7 +61,7 @@ GET /users/{user-id}/chats/{chat-id}/members/{membership-id}
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [conversationMember](../resources/conversationmember.md) в тексте отклика.
 
 > [!NOTE]
-> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues.md#missing-tenantid-for-chat-members).
+> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#missing-properties-for-chat-members).
 
 ## <a name="example"></a>Пример
 

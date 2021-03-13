@@ -1,16 +1,16 @@
 ---
 title: Список приложений в каталоге
 description: Список приложений, установленных в чате.
-author: nkramer
+author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f14a13c53771c375b43451234d90c90f5ee28cd1
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 1fc41102d92926e52b5703d3732a4eba02b3b06f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843740"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770131"
 ---
 # <a name="list-apps-in-chat"></a>Список приложений в каталоге
 
@@ -250,7 +250,7 @@ GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {

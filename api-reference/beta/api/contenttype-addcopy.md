@@ -5,12 +5,12 @@ description: Добавьте копию типа контента сайта в
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 955afab160cb5c927771db4132ec208b85e80b2a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 97c93929fbc0c370bd4dac53b068439f5bbd5b82
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447306"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771150"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Пространство имен: microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "50447306"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -66,6 +66,8 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopy"
@@ -79,6 +81,24 @@ Content-Type: application/json
   "contentType": "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-addcopy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-addcopy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-addcopy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

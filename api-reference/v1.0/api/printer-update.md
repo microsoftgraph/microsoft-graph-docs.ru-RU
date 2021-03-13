@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e29335cab6d88c736825684b2ab46e65db64d563
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7adf522284be5778c927c0104889bc42a7674737
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517386"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771787"
 ---
 # <a name="update-printer"></a>Обновление принтера
 Пространство имен: microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "50517386"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Printer.ReadWrite.All |
+|Для приложений| Printer.ReadWrite.All |
 
 >**Примечание:** В настоящее время только принтеры, не оснащенные физическим устройством, могут обновляться с помощью разрешений приложений.
 
@@ -62,7 +62,7 @@ PATCH /print/printers/{printerId}
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
 |location|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение принтера.|
-|displayName|Строка|Имя принтера.|
+|displayName|String|Имя принтера.|
 
 ### <a name="application-permissions-and-json-payload"></a>Разрешения приложения и полезной нагрузки JSON
 В теле запроса укажи значения [](../resources/printer.md) для соответствующих полей принтера, которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. 
@@ -73,11 +73,11 @@ PATCH /print/printers/{printerId}
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|Возможности принтера, связанного с этим разделом принтера.|
-|displayName|Строка|Имя принтера.|
+|displayName|String|Имя принтера.|
 |manufacturer|String|Производитель принтера.|
 |model|String|Имя модели принтера.|
 |status|[printerStatus](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
-|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
+|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
@@ -102,6 +102,8 @@ PATCH /print/printers/{printerId}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printer"
@@ -121,6 +123,16 @@ Content-length: 581
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -1,16 +1,16 @@
 ---
 title: Удаление приложения в чате
 description: Удалить (удалить) приложение, установленное в чате.
-author: nkramer
+author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 212a033198a5bb1b6303b3d1a848ad32da4df5ab
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 014ef8e056ca117bd1680cb5b0be0595f20d8571
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690109"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770074"
 ---
 # <a name="uninstall-app-in-a-chat"></a>Удаление приложения в чате
 
@@ -41,6 +41,14 @@ ms.locfileid: "49690109"
 ```http
 DELETE /chats/{chat-id}/installedApps/{app-installation-id}
 ```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 

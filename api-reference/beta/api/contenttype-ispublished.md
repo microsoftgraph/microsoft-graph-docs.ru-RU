@@ -5,12 +5,12 @@ description: Проверьте состояние публикации типа
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: d6f5700015dcb69ce3440be187654941816e0a9d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 150caec3be0740d82563e280e6425d0d3b827ecd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447250"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770578"
 ---
 # <a name="contenttype-ispublished"></a>contentType: isPublished
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50447250"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Приложение | Sites.FullControl.All |
+|Для приложений | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,20 +45,40 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ## <a name="response"></a>Отклик
 В случае успешной работы этот вызов возвращает ответ и значение boolean, указывав состояние публикации `200 OK` типа контента.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_ispublished"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-ispublished-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-ispublished-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-ispublished-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-ispublished-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
