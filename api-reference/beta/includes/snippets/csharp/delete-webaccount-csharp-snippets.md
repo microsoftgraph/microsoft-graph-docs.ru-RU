@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: bc446d05f5e4e272ecf5f37b7a4023ea96f184f9
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 0a963bdb2e72f6045f7c02654cecfe2c1c8ab072
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37996226"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798579"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Profile.WebAccounts["{id}"]
+await graphClient.Me.Profile.WebAccounts["{webAccount-id}"]
     .Request()
     .DeleteAsync();
 
