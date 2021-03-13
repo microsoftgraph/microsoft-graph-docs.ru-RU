@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 09f9696cdb1776bf1f018ecddab6762a1c3b385f
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: cd39d7434371aebf1b241c097bec378facae1410
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566684"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783227"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var identityProvider = new IdentityProvider
     ResponseType = OpenIdConnectResponseTypes.Id_token
 };
 
-await graphClient.IdentityProviders["OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a"]
+await graphClient.IdentityProviders["{identityProvider-id}"]
     .Request()
     .UpdateAsync(identityProvider);
 
