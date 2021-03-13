@@ -5,32 +5,32 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 254d2422c344580e1a02dbbce0d76330d6df3ef8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1ef28e211e434b1806318fe4b4a52d354887bb23
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446864"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776503"
 ---
-# <a name="update-sourcecollection"></a><span data-ttu-id="1deca-103">Обновление sourceCollection</span><span class="sxs-lookup"><span data-stu-id="1deca-103">Update sourceCollection</span></span>
+# <a name="update-sourcecollection"></a><span data-ttu-id="e85fc-103">Обновление sourceCollection</span><span class="sxs-lookup"><span data-stu-id="e85fc-103">Update sourceCollection</span></span>
 
-<span data-ttu-id="1deca-104">Пространство имен: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="1deca-104">Namespace: microsoft.graph.ediscovery</span></span>
+<span data-ttu-id="e85fc-104">Пространство имен: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="e85fc-104">Namespace: microsoft.graph.ediscovery</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1deca-105">Обновление свойств объекта [sourceCollection.](../resources/ediscovery-sourcecollection.md)</span><span class="sxs-lookup"><span data-stu-id="1deca-105">Update the properties of a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.</span></span>
+<span data-ttu-id="e85fc-105">Обновление свойств объекта [sourceCollection.](../resources/ediscovery-sourcecollection.md)</span><span class="sxs-lookup"><span data-stu-id="e85fc-105">Update the properties of a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1deca-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1deca-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e85fc-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e85fc-106">Permissions</span></span>
 
-<span data-ttu-id="1deca-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1deca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e85fc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e85fc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1deca-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1deca-109">Permission type</span></span>|<span data-ttu-id="1deca-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1deca-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="e85fc-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e85fc-109">Permission type</span></span>|<span data-ttu-id="e85fc-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e85fc-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1deca-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1deca-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1deca-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1deca-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
-|<span data-ttu-id="1deca-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1deca-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1deca-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1deca-114">Not supported.</span></span>|
-|<span data-ttu-id="1deca-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1deca-115">Application</span></span>|<span data-ttu-id="1deca-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1deca-116">Not supported.</span></span>|
+|<span data-ttu-id="e85fc-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e85fc-111">Delegated (work or school account)</span></span>|<span data-ttu-id="e85fc-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e85fc-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
+|<span data-ttu-id="e85fc-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e85fc-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e85fc-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e85fc-114">Not supported.</span></span>|
+|<span data-ttu-id="e85fc-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e85fc-115">Application</span></span>|<span data-ttu-id="e85fc-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e85fc-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1deca-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1deca-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e85fc-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e85fc-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,32 +41,34 @@ ms.locfileid: "50446864"
 PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1deca-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1deca-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e85fc-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e85fc-118">Request headers</span></span>
 
-|<span data-ttu-id="1deca-119">Имя</span><span class="sxs-lookup"><span data-stu-id="1deca-119">Name</span></span>|<span data-ttu-id="1deca-120">Описание</span><span class="sxs-lookup"><span data-stu-id="1deca-120">Description</span></span>|
+|<span data-ttu-id="e85fc-119">Имя</span><span class="sxs-lookup"><span data-stu-id="e85fc-119">Name</span></span>|<span data-ttu-id="e85fc-120">Описание</span><span class="sxs-lookup"><span data-stu-id="e85fc-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="1deca-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1deca-121">Authorization</span></span>|<span data-ttu-id="1deca-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1deca-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="1deca-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1deca-124">Content-Type</span></span>|<span data-ttu-id="1deca-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1deca-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="e85fc-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e85fc-121">Authorization</span></span>|<span data-ttu-id="e85fc-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e85fc-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="e85fc-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e85fc-124">Content-Type</span></span>|<span data-ttu-id="e85fc-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e85fc-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1deca-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1deca-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e85fc-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e85fc-127">Request body</span></span>
 
-<span data-ttu-id="1deca-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="1deca-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="1deca-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="1deca-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="1deca-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="1deca-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="e85fc-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="e85fc-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="e85fc-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="e85fc-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="e85fc-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="e85fc-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-|<span data-ttu-id="1deca-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="1deca-131">Property</span></span>|<span data-ttu-id="1deca-132">Тип</span><span class="sxs-lookup"><span data-stu-id="1deca-132">Type</span></span>|<span data-ttu-id="1deca-133">Описание</span><span class="sxs-lookup"><span data-stu-id="1deca-133">Description</span></span>|
+|<span data-ttu-id="e85fc-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="e85fc-131">Property</span></span>|<span data-ttu-id="e85fc-132">Тип</span><span class="sxs-lookup"><span data-stu-id="e85fc-132">Type</span></span>|<span data-ttu-id="e85fc-133">Описание</span><span class="sxs-lookup"><span data-stu-id="e85fc-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1deca-134">contentQuery</span><span class="sxs-lookup"><span data-stu-id="1deca-134">contentQuery</span></span>|<span data-ttu-id="1deca-135">String</span><span class="sxs-lookup"><span data-stu-id="1deca-135">String</span></span>|<span data-ttu-id="1deca-136">Строка запроса в запросе KQL (Язык запросов ключевых слов).</span><span class="sxs-lookup"><span data-stu-id="1deca-136">The query string in KQL (Keyword Query Language) query.</span></span> <span data-ttu-id="1deca-137">Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](/microsoft-365/compliance/keyword-queries-and-search-conditions)</span><span class="sxs-lookup"><span data-stu-id="1deca-137">For details, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions).</span></span>  <span data-ttu-id="1deca-138">Поиск можно уточнить с помощью полей в паре со значениями; например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` .</span><span class="sxs-lookup"><span data-stu-id="1deca-138">You can refine searches by using fields paired with values; for example, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.</span></span>|
-|<span data-ttu-id="1deca-139">description</span><span class="sxs-lookup"><span data-stu-id="1deca-139">description</span></span>|<span data-ttu-id="1deca-140">String</span><span class="sxs-lookup"><span data-stu-id="1deca-140">String</span></span>|<span data-ttu-id="1deca-141">Описание **sourceCollection**.</span><span class="sxs-lookup"><span data-stu-id="1deca-141">The description of the **sourceCollection**.</span></span>|
-|<span data-ttu-id="1deca-142">displayName</span><span class="sxs-lookup"><span data-stu-id="1deca-142">displayName</span></span>|<span data-ttu-id="1deca-143">String</span><span class="sxs-lookup"><span data-stu-id="1deca-143">String</span></span>|<span data-ttu-id="1deca-144">Имя отображения **sourceCollection**.</span><span class="sxs-lookup"><span data-stu-id="1deca-144">The display name of the **sourceCollection**.</span></span>|
-|<span data-ttu-id="1deca-145">tenantSources</span><span class="sxs-lookup"><span data-stu-id="1deca-145">tenantSources</span></span>|<span data-ttu-id="1deca-146">microsoft.graph.ediscovery.tenantSources</span><span class="sxs-lookup"><span data-stu-id="1deca-146">microsoft.graph.ediscovery.tenantSources</span></span>|<span data-ttu-id="1deca-147">При указании коллекция будет охватывать всю службу для всей рабочей нагрузки.</span><span class="sxs-lookup"><span data-stu-id="1deca-147">When specified, the collection will span across a service for an entire workload.</span></span> <span data-ttu-id="1deca-148">Возможные значения: `allMailboxes`, `allSites`.</span><span class="sxs-lookup"><span data-stu-id="1deca-148">Possible values are: `allMailboxes`, `allSites`.</span></span>|
+|<span data-ttu-id="e85fc-134">contentQuery</span><span class="sxs-lookup"><span data-stu-id="e85fc-134">contentQuery</span></span>|<span data-ttu-id="e85fc-135">String</span><span class="sxs-lookup"><span data-stu-id="e85fc-135">String</span></span>|<span data-ttu-id="e85fc-136">Строка запроса в запросе KQL (Язык запросов ключевых слов).</span><span class="sxs-lookup"><span data-stu-id="e85fc-136">The query string in KQL (Keyword Query Language) query.</span></span> <span data-ttu-id="e85fc-137">Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](/microsoft-365/compliance/keyword-queries-and-search-conditions)</span><span class="sxs-lookup"><span data-stu-id="e85fc-137">For details, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions).</span></span>  <span data-ttu-id="e85fc-138">Поиск можно уточнить с помощью полей в паре со значениями; например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` .</span><span class="sxs-lookup"><span data-stu-id="e85fc-138">You can refine searches by using fields paired with values; for example, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.</span></span>|
+|<span data-ttu-id="e85fc-139">description</span><span class="sxs-lookup"><span data-stu-id="e85fc-139">description</span></span>|<span data-ttu-id="e85fc-140">String</span><span class="sxs-lookup"><span data-stu-id="e85fc-140">String</span></span>|<span data-ttu-id="e85fc-141">Описание **sourceCollection**.</span><span class="sxs-lookup"><span data-stu-id="e85fc-141">The description of the **sourceCollection**.</span></span>|
+|<span data-ttu-id="e85fc-142">displayName</span><span class="sxs-lookup"><span data-stu-id="e85fc-142">displayName</span></span>|<span data-ttu-id="e85fc-143">String</span><span class="sxs-lookup"><span data-stu-id="e85fc-143">String</span></span>|<span data-ttu-id="e85fc-144">Имя отображения **sourceCollection**.</span><span class="sxs-lookup"><span data-stu-id="e85fc-144">The display name of the **sourceCollection**.</span></span>|
+|<span data-ttu-id="e85fc-145">tenantSources</span><span class="sxs-lookup"><span data-stu-id="e85fc-145">tenantSources</span></span>|<span data-ttu-id="e85fc-146">microsoft.graph.ediscovery.tenantSources</span><span class="sxs-lookup"><span data-stu-id="e85fc-146">microsoft.graph.ediscovery.tenantSources</span></span>|<span data-ttu-id="e85fc-147">При указании коллекция будет охватывать всю службу для всей рабочей нагрузки.</span><span class="sxs-lookup"><span data-stu-id="e85fc-147">When specified, the collection will span across a service for an entire workload.</span></span> <span data-ttu-id="e85fc-148">Возможные значения: `allMailboxes`, `allSites`.</span><span class="sxs-lookup"><span data-stu-id="e85fc-148">Possible values are: `allMailboxes`, `allSites`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1deca-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="1deca-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e85fc-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="e85fc-149">Response</span></span>
 
-<span data-ttu-id="1deca-150">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="1deca-150">If successful, this action returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="e85fc-150">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="e85fc-150">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1deca-151">Примеры</span><span class="sxs-lookup"><span data-stu-id="1deca-151">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e85fc-151">Примеры</span><span class="sxs-lookup"><span data-stu-id="e85fc-151">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="1deca-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="1deca-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e85fc-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="e85fc-152">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="e85fc-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="e85fc-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_sourcecollection"
@@ -82,8 +84,26 @@ Content-length: 247
     "displayName": "Quarterly Financials search",
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="e85fc-154">C#</span><span class="sxs-lookup"><span data-stu-id="e85fc-154">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-sourcecollection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="1deca-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="1deca-153">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="e85fc-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e85fc-155">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-sourcecollection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="e85fc-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e85fc-156">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-sourcecollection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="e85fc-157">Java</span><span class="sxs-lookup"><span data-stu-id="e85fc-157">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-sourcecollection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="e85fc-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="e85fc-158">Response</span></span>
 
 <!-- {
   "blockType": "response",

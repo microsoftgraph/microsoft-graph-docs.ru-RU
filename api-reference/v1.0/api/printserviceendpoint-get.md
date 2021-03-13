@@ -5,24 +5,24 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 3b8b07311de58dde342b2f8a3278a0b020f5604c
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 4963f673f3f5d54bce4e302fd50f9e35abf26aad
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518036"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777540"
 ---
-# <a name="get-printserviceendpoint"></a><span data-ttu-id="c23af-103">Get printServiceEndpoint</span><span class="sxs-lookup"><span data-stu-id="c23af-103">Get printServiceEndpoint</span></span>
-<span data-ttu-id="c23af-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c23af-104">Namespace: microsoft.graph</span></span>
+# <a name="get-printserviceendpoint"></a><span data-ttu-id="7cbf1-103">Get printServiceEndpoint</span><span class="sxs-lookup"><span data-stu-id="7cbf1-103">Get printServiceEndpoint</span></span>
+<span data-ttu-id="7cbf1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7cbf1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-<span data-ttu-id="c23af-105">Извлечение свойств и связей конечной точки службы печати.</span><span class="sxs-lookup"><span data-stu-id="c23af-105">Retrieve the properties and relationships of a print service endpoint.</span></span>
+<span data-ttu-id="7cbf1-105">Извлечение свойств и связей конечной точки службы печати.</span><span class="sxs-lookup"><span data-stu-id="7cbf1-105">Retrieve the properties and relationships of a print service endpoint.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c23af-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c23af-106">Permissions</span></span>
-<span data-ttu-id="c23af-107">Для вызова **этого API** требуется одно из делегированных разрешений универсальной печати. [](/graph/permissions-reference#universal-print-permissions)</span><span class="sxs-lookup"><span data-stu-id="c23af-107">One of the **delegated** Universal Print [permissions](/graph/permissions-reference#universal-print-permissions) is required to call this API.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7cbf1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7cbf1-106">Permissions</span></span>
+<span data-ttu-id="7cbf1-107">Для вызова **этого API** требуется одно из делегированных разрешений универсальной печати. [](/graph/permissions-reference#universal-print-permissions)</span><span class="sxs-lookup"><span data-stu-id="7cbf1-107">One of the **delegated** Universal Print [permissions](/graph/permissions-reference#universal-print-permissions) is required to call this API.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c23af-108">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c23af-108">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7cbf1-108">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7cbf1-108">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -32,24 +32,26 @@ ms.locfileid: "50518036"
 GET /print/services/{printServiceId}/endpoints/{printServiceEndpointId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c23af-109">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c23af-109">Optional query parameters</span></span>
-<span data-ttu-id="c23af-110">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="c23af-110">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="c23af-111">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="c23af-111">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7cbf1-109">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7cbf1-109">Optional query parameters</span></span>
+<span data-ttu-id="7cbf1-110">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="7cbf1-110">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="7cbf1-111">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="7cbf1-111">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c23af-112">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c23af-112">Request headers</span></span>
-|<span data-ttu-id="c23af-113">Имя</span><span class="sxs-lookup"><span data-stu-id="c23af-113">Name</span></span>|<span data-ttu-id="c23af-114">Описание</span><span class="sxs-lookup"><span data-stu-id="c23af-114">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7cbf1-112">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7cbf1-112">Request headers</span></span>
+|<span data-ttu-id="7cbf1-113">Имя</span><span class="sxs-lookup"><span data-stu-id="7cbf1-113">Name</span></span>|<span data-ttu-id="7cbf1-114">Описание</span><span class="sxs-lookup"><span data-stu-id="7cbf1-114">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="c23af-115">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c23af-115">Authorization</span></span>|<span data-ttu-id="c23af-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c23af-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="7cbf1-115">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7cbf1-115">Authorization</span></span>|<span data-ttu-id="7cbf1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7cbf1-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c23af-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c23af-118">Request body</span></span>
-<span data-ttu-id="c23af-119">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c23af-119">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7cbf1-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7cbf1-118">Request body</span></span>
+<span data-ttu-id="7cbf1-119">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7cbf1-119">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c23af-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="c23af-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7cbf1-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cbf1-120">Response</span></span>
 
-<span data-ttu-id="c23af-121">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект printServiceEndpoint](../resources/printserviceendpoint.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="c23af-121">If successful, this method returns a `200 OK` response code and a [printServiceEndpoint](../resources/printserviceendpoint.md) object in the response body.</span></span>
+<span data-ttu-id="7cbf1-121">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект printServiceEndpoint](../resources/printserviceendpoint.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="7cbf1-121">If successful, this method returns a `200 OK` response code and a [printServiceEndpoint](../resources/printserviceendpoint.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c23af-122">Примеры</span><span class="sxs-lookup"><span data-stu-id="c23af-122">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7cbf1-122">Примеры</span><span class="sxs-lookup"><span data-stu-id="7cbf1-122">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c23af-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="c23af-123">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7cbf1-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="7cbf1-123">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="7cbf1-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="7cbf1-124">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printserviceendpoint"
@@ -58,10 +60,28 @@ GET /print/services/{printServiceId}/endpoints/{printServiceEndpointId}
 ``` http
 GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints/{printServiceEndpointId}
 ```
+# <a name="c"></a>[<span data-ttu-id="7cbf1-125">C#</span><span class="sxs-lookup"><span data-stu-id="7cbf1-125">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printserviceendpoint-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="7cbf1-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7cbf1-126">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printserviceendpoint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="7cbf1-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7cbf1-127">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printserviceendpoint-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7cbf1-128">Java</span><span class="sxs-lookup"><span data-stu-id="7cbf1-128">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printserviceendpoint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="c23af-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="c23af-124">Response</span></span>
-<span data-ttu-id="c23af-125">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="c23af-125">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+### <a name="response"></a><span data-ttu-id="7cbf1-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cbf1-129">Response</span></span>
+<span data-ttu-id="7cbf1-130">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="7cbf1-130">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
