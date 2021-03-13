@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9fce49384e791ed953078956fdd042a99ac9246c
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 547c306bc1ac0eb97ea7ade27cdc9f228ae42211
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863135"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790679"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/channels/{id}/filesFolder')
+let driveItem = await client.api('/teams/{id}/channels/{id}/filesFolder')
     .version('beta')
     .get();
 
