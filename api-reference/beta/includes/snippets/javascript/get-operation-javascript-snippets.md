@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a35ee56dc6602a084c985eda401e9ef502822f51
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 1204873fb08d127a11b27554cfa431e846026d0c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417753"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789034"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id | userPrincipalName}/authentication/operations/{id}')
+let longRunningOperation = await client.api('/users/{id | userPrincipalName}/authentication/operations/{id}')
     .version('beta')
     .get();
 
