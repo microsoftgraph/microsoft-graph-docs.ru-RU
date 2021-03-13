@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2a751a2dfd7b7306ceaf649c4b26598c7d895f01
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 38e68692f41bf0ce0686bb9d426fed2d7af582e5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813668"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805868"
 ---
 ```javascript
 
@@ -26,14 +26,14 @@ const team = {
   },
   funSettings: {
     allowGiphy: true,
-    giphyContentRating: "strict"
+    giphyContentRating: 'strict'
   },
   discoverySettings: {
     showInTeamsSearchAndSuggestions: true
   }
 };
 
-let res = await client.api('/teams/{id}')
+await client.api('/teams/{id}')
     .version('beta')
     .update(team);
 

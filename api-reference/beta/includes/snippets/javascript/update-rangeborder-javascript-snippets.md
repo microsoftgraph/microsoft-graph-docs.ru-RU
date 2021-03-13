@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: efe5ed145f710788a949eff0b9e1d463b38530d1
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 47fda936af6bd621edc67bff5ffdcacf16315539
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638377"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800330"
 ---
 ```javascript
 
@@ -16,13 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const workbookRangeBorder = {
-  color: "color-value",
-  style: "style-value",
-  sideIndex: "sideIndex-value",
-  weight: "weight-value"
+  color: 'color-value',
+  style: 'style-value',
+  sideIndex: 'sideIndex-value',
+  weight: 'weight-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}')
     .version('beta')
     .update(workbookRangeBorder);
 

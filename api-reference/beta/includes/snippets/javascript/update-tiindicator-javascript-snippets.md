@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9e94bf09f6c9006b70ae6204f84d6e523d344185
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 9725305a12db0a349566da56bc73055aae529880
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638302"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798998"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const tiIndicator = {
-  additionalInformation: "additionalInformation-after-update",
+  additionalInformation: 'additionalInformation-after-update',
   confidence: 42,
-  description: "description-after-update",
+  description: 'description-after-update',
 };
 
-let res = await client.api('/security/tiIndicators/{id}')
+await client.api('/security/tiIndicators/{id}')
     .version('beta')
     .update(tiIndicator);
 
