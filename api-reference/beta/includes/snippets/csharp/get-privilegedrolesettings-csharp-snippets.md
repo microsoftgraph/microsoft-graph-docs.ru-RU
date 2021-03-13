@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b5b4312c65a8a42db6c33d9728a1bf84f7e99bc6
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ab37f3f59259dc59282c2b4dcbdf855e4035e319
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48619457"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807359"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var privilegedRoleSettings = await graphClient.PrivilegedRoles["{id}"].Settings
+var privilegedRoleSettings = await graphClient.PrivilegedRoles["{privilegedRole-id}"].Settings
     .Request()
     .GetAsync();
 

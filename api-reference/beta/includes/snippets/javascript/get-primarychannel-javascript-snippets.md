@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: fcb2751781f813c2dbbe814bd9f6204268844020
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: a66960065fe03fb41835e0e30dcfda1e83a54cb0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863465"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792854"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/primaryChannel')
+let channel = await client.api('/teams/{id}/primaryChannel')
     .version('beta')
     .get();
 

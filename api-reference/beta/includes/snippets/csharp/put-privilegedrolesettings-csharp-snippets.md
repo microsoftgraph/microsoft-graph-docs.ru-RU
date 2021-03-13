@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7e48ac3c4398fce0cbc91ca3a2221e4c0e7b5ee0
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8584707b374f4d99aed0545b030a83d910116c1d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684258"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805133"
 ---
 ```csharp
 
@@ -30,7 +30,7 @@ var privilegedRoleSettings = new PrivilegedRoleSettings
     }
 };
 
-await graphClient.PrivilegedRoles["{id}"].Settings
+await graphClient.PrivilegedRoles["{privilegedRole-id}"].Settings
     .Request()
     .PutAsync(privilegedRoleSettings);
 
