@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 02ad49ae46ec2b7a831afe4906a5d0a411c04434
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 30300193c9564bd49c68548fa8fb05bbf2dc87a2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638408"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794814"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const mailFolder = {
-  @odata.type: "microsoft.graph.mailSearchFolder",
-  filterQuery: "contains(subject, 'Analytics')"
+  '@odata.type': 'microsoft.graph.mailSearchFolder',
+  filterQuery: 'contains(subject, \'Analytics\')'
 };
 
-let res = await client.api('/me/mailFolders/AAMkAGVmMDEzM')
+await client.api('/me/mailFolders/AAMkAGVmMDEzM')
     .version('beta')
     .update(mailFolder);
 
