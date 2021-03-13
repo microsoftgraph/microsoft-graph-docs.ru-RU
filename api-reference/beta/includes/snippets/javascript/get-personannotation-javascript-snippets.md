@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 960c7feb645b5399c339ec3b36f853e4a1d98e53
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: b12a12a5681d08fdea692f2ad981d5a9fba9b942
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819915"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799931"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/notes/{id}')
+let personAnnotation = await client.api('/me/profile/notes/{id}')
     .version('beta')
     .get();
 
