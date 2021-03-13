@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Упдатевиндов
-description: Тип ресурса Упдатевиндов.
+title: тип ресурса updateWindow
+description: тип ресурса updateWindow.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b2aa61d5d815d912caa47fd63d5907b62f882d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d8f12c7cfcb4c83075087d7b894dc95fe92a695
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003453"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761228"
 ---
-# <a name="updatewindow-resource-type"></a><span data-ttu-id="9ab53-103">Тип ресурса Упдатевиндов</span><span class="sxs-lookup"><span data-stu-id="9ab53-103">updateWindow resource type</span></span>
+# <a name="updatewindow-resource-type"></a><span data-ttu-id="7b9e4-103">тип ресурса updateWindow</span><span class="sxs-lookup"><span data-stu-id="7b9e4-103">updateWindow resource type</span></span>
 
-<span data-ttu-id="9ab53-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9ab53-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7b9e4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7b9e4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9ab53-105">Представляет окно времени, в течение которого [агенты](onpremisesagent.md) могут получать обновления.</span><span class="sxs-lookup"><span data-stu-id="9ab53-105">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
+<span data-ttu-id="7b9e4-105">Представляет окно времени, в [течение которого агенты](onpremisesagent.md) могут получать обновления.</span><span class="sxs-lookup"><span data-stu-id="7b9e4-105">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9ab53-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="9ab53-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7b9e4-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="7b9e4-106">Properties</span></span>
 
-| <span data-ttu-id="9ab53-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="9ab53-107">Property</span></span>     | <span data-ttu-id="9ab53-108">Тип</span><span class="sxs-lookup"><span data-stu-id="9ab53-108">Type</span></span>        | <span data-ttu-id="9ab53-109">Описание</span><span class="sxs-lookup"><span data-stu-id="9ab53-109">Description</span></span> |
+| <span data-ttu-id="7b9e4-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="7b9e4-107">Property</span></span>     | <span data-ttu-id="7b9e4-108">Тип</span><span class="sxs-lookup"><span data-stu-id="7b9e4-108">Type</span></span>        | <span data-ttu-id="7b9e4-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7b9e4-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="9ab53-110">упдатевиндовендтиме</span><span class="sxs-lookup"><span data-stu-id="9ab53-110">updateWindowEndTime</span></span>|<span data-ttu-id="9ab53-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="9ab53-111">TimeOfDay</span></span>|<span data-ttu-id="9ab53-112">Конец интервала времени, в течение которого агенты могут получать обновления</span><span class="sxs-lookup"><span data-stu-id="9ab53-112">End of a time window during which agents can receive updates</span></span>|
-|<span data-ttu-id="9ab53-113">упдатевиндовстарттиме</span><span class="sxs-lookup"><span data-stu-id="9ab53-113">updateWindowStartTime</span></span>|<span data-ttu-id="9ab53-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="9ab53-114">TimeOfDay</span></span>|<span data-ttu-id="9ab53-115">Начало периода времени, в течение которого агенты могут получать обновления</span><span class="sxs-lookup"><span data-stu-id="9ab53-115">Start of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="7b9e4-110">updateWindowEndTime</span><span class="sxs-lookup"><span data-stu-id="7b9e4-110">updateWindowEndTime</span></span>|<span data-ttu-id="7b9e4-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="7b9e4-111">TimeOfDay</span></span>|<span data-ttu-id="7b9e4-112">Конец окне времени, в течение которого агенты могут получать обновления</span><span class="sxs-lookup"><span data-stu-id="7b9e4-112">End of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="7b9e4-113">updateWindowStartTime</span><span class="sxs-lookup"><span data-stu-id="7b9e4-113">updateWindowStartTime</span></span>|<span data-ttu-id="7b9e4-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="7b9e4-114">TimeOfDay</span></span>|<span data-ttu-id="7b9e4-115">Начало окна времени, в течение которого агенты могут получать обновления</span><span class="sxs-lookup"><span data-stu-id="7b9e4-115">Start of a time window during which agents can receive updates</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9ab53-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="9ab53-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7b9e4-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7b9e4-116">JSON representation</span></span>
 
-<span data-ttu-id="9ab53-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9ab53-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7b9e4-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7b9e4-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,50 +1,50 @@
 ---
 title: 'Настройка подготовки с помощью интерфейсов API Microsoft Graph:'
-description: Узнайте, как сэкономить время с помощью API Microsoft Graph для автоматизации настройки автоматической настройки.
+description: Узнайте, как сэкономить время с помощью API Microsoft Graph для автоматизации конфигурации автоматического обеспечения.
 author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 689c95ee31ebfa0402e6c3867d81d479339e6c2b
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.prod: applications
+ms.openlocfilehash: 626593ada6c45de18bb24f9ec107fca7d077fb67
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777738"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761865"
 ---
-# <a name="configure-provisioning-using-microsoft-graph-apis"></a><span data-ttu-id="aec78-103">Настройка подготовки с помощью интерфейсов API Microsoft Graph:</span><span class="sxs-lookup"><span data-stu-id="aec78-103">Configure provisioning using Microsoft Graph APIs</span></span>
+# <a name="configure-provisioning-using-microsoft-graph-apis"></a><span data-ttu-id="9ab96-103">Настройка подготовки с помощью интерфейсов API Microsoft Graph:</span><span class="sxs-lookup"><span data-stu-id="9ab96-103">Configure provisioning using Microsoft Graph APIs</span></span>
 
-<span data-ttu-id="aec78-104">Портал Azure — это удобный способ настройки предоставления отдельных приложений по одному.</span><span class="sxs-lookup"><span data-stu-id="aec78-104">The Azure portal is a convenient way to configure provisioning for individual apps one at a time.</span></span> <span data-ttu-id="aec78-105">Но если вы создаете несколько (или даже сотни) экземпляров приложения, вам будет проще автоматизировать создание и настройку приложений с помощью API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="aec78-105">But if you're creating several—or even hundreds—of instances of an application, it can be easier to automate app creation and configuration with the Microsoft Graph APIs.</span></span> <span data-ttu-id="aec78-106">В этой статье описывается, как автоматизировать настройку подготовка с помощью API.</span><span class="sxs-lookup"><span data-stu-id="aec78-106">This article outlines how to automate provisioning configuration through APIs.</span></span> <span data-ttu-id="aec78-107">Этот метод часто используется для таких приложений, как [Amazon Web Services.](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso)</span><span class="sxs-lookup"><span data-stu-id="aec78-107">This method is commonly used for applications like [Amazon Web Services](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).</span></span>
+<span data-ttu-id="9ab96-104">Портал Azure — это удобный способ настроить подготовка для отдельных приложений по одному.</span><span class="sxs-lookup"><span data-stu-id="9ab96-104">The Azure portal is a convenient way to configure provisioning for individual apps one at a time.</span></span> <span data-ttu-id="9ab96-105">Но если вы создаете несколько или даже сотни экземпляров приложения, можно проще автоматизировать создание и конфигурацию приложений с API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="9ab96-105">But if you're creating several—or even hundreds—of instances of an application, it can be easier to automate app creation and configuration with the Microsoft Graph APIs.</span></span> <span data-ttu-id="9ab96-106">В этой статье описано, как автоматизировать конфигурацию подготовка с помощью API.</span><span class="sxs-lookup"><span data-stu-id="9ab96-106">This article outlines how to automate provisioning configuration through APIs.</span></span> <span data-ttu-id="9ab96-107">Этот метод обычно используется для таких приложений, как [Amazon Web Services.](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso)</span><span class="sxs-lookup"><span data-stu-id="9ab96-107">This method is commonly used for applications like [Amazon Web Services](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).</span></span>
 
-<span data-ttu-id="aec78-108">**Обзор действий по использованию API Microsoft Graph для автоматизации настройки подготовка**</span><span class="sxs-lookup"><span data-stu-id="aec78-108">**Overview of steps for using Microsoft Graph APIs to automate provisioning configuration**</span></span>
+<span data-ttu-id="9ab96-108">**Обзор действий по использованию API Microsoft Graph для автоматизации конфигурации подготовка**</span><span class="sxs-lookup"><span data-stu-id="9ab96-108">**Overview of steps for using Microsoft Graph APIs to automate provisioning configuration**</span></span>
 
 
-|<span data-ttu-id="aec78-109">Шаг</span><span class="sxs-lookup"><span data-stu-id="aec78-109">Step</span></span>  |<span data-ttu-id="aec78-110">Сведения</span><span class="sxs-lookup"><span data-stu-id="aec78-110">Details</span></span>  |
+|<span data-ttu-id="9ab96-109">Шаг</span><span class="sxs-lookup"><span data-stu-id="9ab96-109">Step</span></span>  |<span data-ttu-id="9ab96-110">Сведения</span><span class="sxs-lookup"><span data-stu-id="9ab96-110">Details</span></span>  |
 |---------|---------|
-|[<span data-ttu-id="aec78-111">Шаг 1. Создание приложения коллекции</span><span class="sxs-lookup"><span data-stu-id="aec78-111">Step 1. Create the gallery application</span></span>](#step-1-create-the-gallery-application)     |<span data-ttu-id="aec78-112">Вход в клиент API</span><span class="sxs-lookup"><span data-stu-id="aec78-112">Sign-in to the API client</span></span> <br> <span data-ttu-id="aec78-113">Получение шаблона приложения коллекции</span><span class="sxs-lookup"><span data-stu-id="aec78-113">Retrieve the gallery application template</span></span> <br> <span data-ttu-id="aec78-114">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="aec78-114">Create the gallery application</span></span>         |
-|[<span data-ttu-id="aec78-115">Шаг 2. Создание задания по обеспечению на основе шаблона</span><span class="sxs-lookup"><span data-stu-id="aec78-115">Step 2. Create provisioning job based on template</span></span>](#step-2-create-the-provisioning-job-based-on-the-template)     |<span data-ttu-id="aec78-116">Извлечение шаблона для соединители подготовка</span><span class="sxs-lookup"><span data-stu-id="aec78-116">Retrieve the template for the provisioning connector</span></span> <br> <span data-ttu-id="aec78-117">Создание задания по обеспечению</span><span class="sxs-lookup"><span data-stu-id="aec78-117">Create the provisioning job</span></span>         |
-|[<span data-ttu-id="aec78-118">Шаг 3. Авторизировать доступ</span><span class="sxs-lookup"><span data-stu-id="aec78-118">Step 3. Authorize access</span></span>](#step-3-authorize-access)     |<span data-ttu-id="aec78-119">Проверка подключения к приложению</span><span class="sxs-lookup"><span data-stu-id="aec78-119">Test the connection to the application</span></span> <br> <span data-ttu-id="aec78-120">Сохранение учетных данных</span><span class="sxs-lookup"><span data-stu-id="aec78-120">Save the credentials</span></span>         |
-|[<span data-ttu-id="aec78-121">Шаг 4. Запуск задания по обеспечению</span><span class="sxs-lookup"><span data-stu-id="aec78-121">Step 4. Start provisioning job</span></span>](#step-4-start-the-provisioning-job)     |<span data-ttu-id="aec78-122">Запуск задания</span><span class="sxs-lookup"><span data-stu-id="aec78-122">Start the job</span></span>         |
-|[<span data-ttu-id="aec78-123">Шаг 5. Мониторинг и подготовка</span><span class="sxs-lookup"><span data-stu-id="aec78-123">Step 5. Monitor provisioning</span></span>](#step-5-monitor-provisioning)     |<span data-ttu-id="aec78-124">Проверка состояния задания по обеспечению</span><span class="sxs-lookup"><span data-stu-id="aec78-124">Check the status of the provisioning job</span></span> <br> <span data-ttu-id="aec78-125">Извлечение журналов предоставления</span><span class="sxs-lookup"><span data-stu-id="aec78-125">Retrieve the provisioning logs</span></span>         |
+|[<span data-ttu-id="9ab96-111">Шаг 1. Создание приложения галереи</span><span class="sxs-lookup"><span data-stu-id="9ab96-111">Step 1. Create the gallery application</span></span>](#step-1-create-the-gallery-application)     |<span data-ttu-id="9ab96-112">Вход в клиент API</span><span class="sxs-lookup"><span data-stu-id="9ab96-112">Sign-in to the API client</span></span> <br> <span data-ttu-id="9ab96-113">Получение шаблона приложения галереи</span><span class="sxs-lookup"><span data-stu-id="9ab96-113">Retrieve the gallery application template</span></span> <br> <span data-ttu-id="9ab96-114">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="9ab96-114">Create the gallery application</span></span>         |
+|[<span data-ttu-id="9ab96-115">Шаг 2. Создание задания по подготовкам на основе шаблона</span><span class="sxs-lookup"><span data-stu-id="9ab96-115">Step 2. Create provisioning job based on template</span></span>](#step-2-create-the-provisioning-job-based-on-the-template)     |<span data-ttu-id="9ab96-116">Извлечение шаблона для соединиттеля подготовка</span><span class="sxs-lookup"><span data-stu-id="9ab96-116">Retrieve the template for the provisioning connector</span></span> <br> <span data-ttu-id="9ab96-117">Создание задания по подготовкам</span><span class="sxs-lookup"><span data-stu-id="9ab96-117">Create the provisioning job</span></span>         |
+|[<span data-ttu-id="9ab96-118">Шаг 3. Авторизировать доступ</span><span class="sxs-lookup"><span data-stu-id="9ab96-118">Step 3. Authorize access</span></span>](#step-3-authorize-access)     |<span data-ttu-id="9ab96-119">Проверка подключения к приложению</span><span class="sxs-lookup"><span data-stu-id="9ab96-119">Test the connection to the application</span></span> <br> <span data-ttu-id="9ab96-120">Сохранение учетных данных</span><span class="sxs-lookup"><span data-stu-id="9ab96-120">Save the credentials</span></span>         |
+|[<span data-ttu-id="9ab96-121">Шаг 4. Начало задания по подготовкам</span><span class="sxs-lookup"><span data-stu-id="9ab96-121">Step 4. Start provisioning job</span></span>](#step-4-start-the-provisioning-job)     |<span data-ttu-id="9ab96-122">Запуск задания</span><span class="sxs-lookup"><span data-stu-id="9ab96-122">Start the job</span></span>         |
+|[<span data-ttu-id="9ab96-123">Шаг 5. Мониторинг подготовка</span><span class="sxs-lookup"><span data-stu-id="9ab96-123">Step 5. Monitor provisioning</span></span>](#step-5-monitor-provisioning)     |<span data-ttu-id="9ab96-124">Проверка состояния задания подготовка</span><span class="sxs-lookup"><span data-stu-id="9ab96-124">Check the status of the provisioning job</span></span> <br> <span data-ttu-id="9ab96-125">Извлечение журналов подготовка</span><span class="sxs-lookup"><span data-stu-id="9ab96-125">Retrieve the provisioning logs</span></span>         |
 
-## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="aec78-126">Шаг 1. Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="aec78-126">Step 1: Create the gallery application</span></span>
+## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="9ab96-126">Шаг 1. Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="9ab96-126">Step 1: Create the gallery application</span></span>
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="aec78-127">Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API</span><span class="sxs-lookup"><span data-stu-id="aec78-127">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="9ab96-127">Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API</span><span class="sxs-lookup"><span data-stu-id="9ab96-127">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
 
-1. <span data-ttu-id="aec78-128">Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="aec78-128">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
-1. <span data-ttu-id="aec78-129">Выберите кнопку "Вход с помощью Майкрософт" и во входе, используя учетные данные глобального администратора Azure AD или администратора приложений.</span><span class="sxs-lookup"><span data-stu-id="aec78-129">Select the "Sign-In with Microsoft" button and sign in using Azure AD global administrator or App Admin credentials.</span></span>
+1. <span data-ttu-id="9ab96-128">Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="9ab96-128">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
+1. <span data-ttu-id="9ab96-129">Выберите кнопку "Вход с Microsoft" и впишитесь с помощью глобального администратора Azure AD или учетных данных администратора приложений.</span><span class="sxs-lookup"><span data-stu-id="9ab96-129">Select the "Sign-In with Microsoft" button and sign in using Azure AD global administrator or App Admin credentials.</span></span>
 
-    ![Вход в Graph](./images/application-provisioning-configure-api/wd_export_02.png)
+    ![Вход в граф](./images/application-provisioning-configure-api/wd_export_02.png)
 
-1. <span data-ttu-id="aec78-131">После успешного входа вы увидите данные учетной записи пользователя на панели слева.</span><span class="sxs-lookup"><span data-stu-id="aec78-131">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
+1. <span data-ttu-id="9ab96-131">После успешного входа вы увидите данные учетной записи пользователя на панели слева.</span><span class="sxs-lookup"><span data-stu-id="9ab96-131">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
 
-### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="aec78-132">Получение идентификатора шаблона для приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="aec78-132">Retrieve the gallery application template identifier</span></span>
-<span data-ttu-id="aec78-133">У каждого приложения в коллекции приложений Azure AD есть [шаблон](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta), описывающий метаданные для этого приложения.</span><span class="sxs-lookup"><span data-stu-id="aec78-133">Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application.</span></span> <span data-ttu-id="aec78-134">По этому шаблону вы можете создать экземпляр приложения и субъект-службу в клиенте для управления им.</span><span class="sxs-lookup"><span data-stu-id="aec78-134">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
+### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="9ab96-132">Получение идентификатора шаблона для приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="9ab96-132">Retrieve the gallery application template identifier</span></span>
+<span data-ttu-id="9ab96-133">У каждого приложения в коллекции приложений Azure AD есть [шаблон](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta), описывающий метаданные для этого приложения.</span><span class="sxs-lookup"><span data-stu-id="9ab96-133">Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application.</span></span> <span data-ttu-id="9ab96-134">По этому шаблону вы можете создать экземпляр приложения и субъект-службу в клиенте для управления им.</span><span class="sxs-lookup"><span data-stu-id="9ab96-134">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="aec78-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="aec78-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="aec78-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ab96-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ab96-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -53,22 +53,22 @@ ms.locfileid: "49777738"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
-# <a name="c"></a>[<span data-ttu-id="aec78-137">C#</span><span class="sxs-lookup"><span data-stu-id="aec78-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ab96-137">C#</span><span class="sxs-lookup"><span data-stu-id="9ab96-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="aec78-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aec78-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ab96-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ab96-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="aec78-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aec78-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ab96-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ab96-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="aec78-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ab96-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,14 +105,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-the-gallery-application"></a><span data-ttu-id="aec78-141">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="aec78-141">Create the gallery application</span></span>
+### <a name="create-the-gallery-application"></a><span data-ttu-id="9ab96-141">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="9ab96-141">Create the gallery application</span></span>
 
-<span data-ttu-id="aec78-142">Используйте ИД шаблона, полученный для приложения [](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) на последнем шаге, чтобы создать экземпляр приложения и основного приложения-службы в клиенте.</span><span class="sxs-lookup"><span data-stu-id="aec78-142">Use the template ID retrieved for your application in the last step to [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.</span></span>
+<span data-ttu-id="9ab96-142">На последнем шаге используйте ИД шаблона, [](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) извлеченный для приложения, чтобы создать экземпляр основного приложения и службы в клиенте.</span><span class="sxs-lookup"><span data-stu-id="9ab96-142">Use the template ID retrieved for your application in the last step to [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="aec78-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-143">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="aec78-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="aec78-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ab96-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ab96-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -126,22 +126,22 @@ Content-type: application/json
   "displayName": "AWS Contoso"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="aec78-145">C#</span><span class="sxs-lookup"><span data-stu-id="aec78-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ab96-145">C#</span><span class="sxs-lookup"><span data-stu-id="9ab96-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="aec78-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aec78-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ab96-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ab96-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="aec78-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aec78-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ab96-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ab96-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="aec78-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ab96-148">Response</span></span>
 
 
 <!-- {
@@ -188,16 +188,16 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-create-the-provisioning-job-based-on-the-template"></a><span data-ttu-id="aec78-149">Шаг 2. Создание задания подготовка на основе шаблона</span><span class="sxs-lookup"><span data-stu-id="aec78-149">Step 2: Create the provisioning job based on the template</span></span>
+## <a name="step-2-create-the-provisioning-job-based-on-the-template"></a><span data-ttu-id="9ab96-149">Шаг 2. Создание задания подготовка на основе шаблона</span><span class="sxs-lookup"><span data-stu-id="9ab96-149">Step 2: Create the provisioning job based on the template</span></span>
 
-### <a name="retrieve-the-template-for-the-provisioning-connector"></a><span data-ttu-id="aec78-150">Извлечение шаблона для соединители подготовка</span><span class="sxs-lookup"><span data-stu-id="aec78-150">Retrieve the template for the provisioning connector</span></span>
+### <a name="retrieve-the-template-for-the-provisioning-connector"></a><span data-ttu-id="9ab96-150">Извлечение шаблона для соединиттеля подготовка</span><span class="sxs-lookup"><span data-stu-id="9ab96-150">Retrieve the template for the provisioning connector</span></span>
 
-<span data-ttu-id="aec78-151">Приложения в коллекции, которые включены для предоставления, имеют шаблоны для упростить настройку.</span><span class="sxs-lookup"><span data-stu-id="aec78-151">Applications in the gallery that are enabled for provisioning have templates to streamline configuration.</span></span> <span data-ttu-id="aec78-152">Используйте запрос ниже, [чтобы получить шаблон для конфигурации подготовка.](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="aec78-152">Use the request below to [retrieve the template for the provisioning configuration](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="aec78-153">Обратите внимание, что вам потребуется предоставить этот ИД.</span><span class="sxs-lookup"><span data-stu-id="aec78-153">Note that you will need to provide the ID.</span></span> <span data-ttu-id="aec78-154">ИД ссылается на предыдущий ресурс, который в данном случае является ресурсом servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="aec78-154">The ID refers to the preceding resource, which in this case is the servicePrincipal resource.</span></span> 
+<span data-ttu-id="9ab96-151">Приложения в галерее, которые включены для подготовка, имеют шаблоны для оптимизации конфигурации.</span><span class="sxs-lookup"><span data-stu-id="9ab96-151">Applications in the gallery that are enabled for provisioning have templates to streamline configuration.</span></span> <span data-ttu-id="9ab96-152">Чтобы получить шаблон для конфигурации подготовка, используйте приведенную ниже [просьбу.](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="9ab96-152">Use the request below to [retrieve the template for the provisioning configuration](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="9ab96-153">Обратите внимание, что необходимо предоставить ID.</span><span class="sxs-lookup"><span data-stu-id="9ab96-153">Note that you will need to provide the ID.</span></span> <span data-ttu-id="9ab96-154">ID относится к предыдущему ресурсу, который в данном случае является ресурсом servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="9ab96-154">The ID refers to the preceding resource, which in this case is the servicePrincipal resource.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="aec78-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-155">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="aec78-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="aec78-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ab96-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ab96-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationtemplate"
@@ -205,15 +205,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates
 ```
-# <a name="c"></a>[<span data-ttu-id="aec78-157">C#</span><span class="sxs-lookup"><span data-stu-id="aec78-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ab96-157">C#</span><span class="sxs-lookup"><span data-stu-id="9ab96-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="aec78-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aec78-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ab96-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ab96-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="aec78-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aec78-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ab96-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ab96-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -221,7 +221,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 
 
-#### <a name="response"></a><span data-ttu-id="aec78-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ab96-160">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -245,12 +245,12 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="create-the-provisioning-job"></a><span data-ttu-id="aec78-161">Создание задания по обеспечению</span><span class="sxs-lookup"><span data-stu-id="aec78-161">Create the provisioning job</span></span>
-<span data-ttu-id="aec78-162">Чтобы включить подготовка, сначала необходимо [создать задание.](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="aec78-162">To enable provisioning, you'll first need to [create a job](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="aec78-163">Используйте следующий запрос для создания задания.</span><span class="sxs-lookup"><span data-stu-id="aec78-163">Use the following request to create a provisioning job.</span></span> <span data-ttu-id="aec78-164">Используйте templateId из предыдущего шага при указании шаблона, который будет использоваться для задания.</span><span class="sxs-lookup"><span data-stu-id="aec78-164">Use the templateId from the previous step when specifying the template to be used for the job.</span></span>
+### <a name="create-the-provisioning-job"></a><span data-ttu-id="9ab96-161">Создание задания по подготовкам</span><span class="sxs-lookup"><span data-stu-id="9ab96-161">Create the provisioning job</span></span>
+<span data-ttu-id="9ab96-162">Чтобы включить подготовка, сначала необходимо [создать задание.](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="9ab96-162">To enable provisioning, you'll first need to [create a job](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="9ab96-163">Чтобы создать задание по подготовкам, используйте следующий запрос.</span><span class="sxs-lookup"><span data-stu-id="9ab96-163">Use the following request to create a provisioning job.</span></span> <span data-ttu-id="9ab96-164">Используйте templateId с предыдущего шага при указании шаблона, который будет использоваться для задания.</span><span class="sxs-lookup"><span data-stu-id="9ab96-164">Use the templateId from the previous step when specifying the template to be used for the job.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="aec78-165">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-165">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-165">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-165">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="aec78-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="aec78-166">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ab96-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ab96-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_synchronizationjob_from_synchronization"
@@ -263,22 +263,22 @@ Content-type: application/json
     "templateId": "aws"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="aec78-167">C#</span><span class="sxs-lookup"><span data-stu-id="aec78-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ab96-167">C#</span><span class="sxs-lookup"><span data-stu-id="9ab96-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-synchronizationjob-from-synchronization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="aec78-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aec78-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ab96-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ab96-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-synchronizationjob-from-synchronization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="aec78-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aec78-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ab96-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ab96-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-synchronizationjob-from-synchronization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="aec78-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-170">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ab96-170">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -312,13 +312,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-authorize-access"></a><span data-ttu-id="aec78-171">Шаг 3. Авторизуя доступ</span><span class="sxs-lookup"><span data-stu-id="aec78-171">Step 3: Authorize access</span></span>
+## <a name="step-3-authorize-access"></a><span data-ttu-id="9ab96-171">Шаг 3. Авторизованный доступ</span><span class="sxs-lookup"><span data-stu-id="9ab96-171">Step 3: Authorize access</span></span>
 
-### <a name="test-the-connection-to-the-application"></a><span data-ttu-id="aec78-172">Проверка подключения к приложению</span><span class="sxs-lookup"><span data-stu-id="aec78-172">Test the connection to the application</span></span>
+### <a name="test-the-connection-to-the-application"></a><span data-ttu-id="9ab96-172">Проверка подключения к приложению</span><span class="sxs-lookup"><span data-stu-id="9ab96-172">Test the connection to the application</span></span>
 
-<span data-ttu-id="aec78-173">Проверьте подключение к стороне приложения.</span><span class="sxs-lookup"><span data-stu-id="aec78-173">Test the connection with the third-party application.</span></span> <span data-ttu-id="aec78-174">В следующем примере для приложения требуется секрет клиента и секретный маркер.</span><span class="sxs-lookup"><span data-stu-id="aec78-174">The following example is for an application that requires a client secret and secret token.</span></span> <span data-ttu-id="aec78-175">Каждое приложение имеет свои собственные требования.</span><span class="sxs-lookup"><span data-stu-id="aec78-175">Each application has its own requirements.</span></span> <span data-ttu-id="aec78-176">Приложения часто используют базовый адрес, а не секрет клиента.</span><span class="sxs-lookup"><span data-stu-id="aec78-176">Applications often use a base address in place of a client secret.</span></span> <span data-ttu-id="aec78-177">Чтобы определить, какие учетные данные требуются вашему приложению, перейдите на страницу конфигурации подготовка приложения и в режиме разработчика щелкните **тестовую связь.**</span><span class="sxs-lookup"><span data-stu-id="aec78-177">To determine what credentials your app requires, go to the provisioning configuration page for your application, and in developer mode, click **test connection**.</span></span> <span data-ttu-id="aec78-178">Сетевой трафик будет показывать параметры, используемые для учетных данных.</span><span class="sxs-lookup"><span data-stu-id="aec78-178">The network traffic will show the parameters used for credentials.</span></span> <span data-ttu-id="aec78-179">Полный список учетных данных см. в [synchronizationJob: validateCredentials.](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="aec78-179">For a full list of credentials, see [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="aec78-180">Большинство приложений, например Azure Databdresss, используют BaseAddress и SecretToken.</span><span class="sxs-lookup"><span data-stu-id="aec78-180">Most applications, such as Azure Databricks, rely on a BaseAddress and SecretToken.</span></span> <span data-ttu-id="aec78-181">The BaseAddress is refered to as a tenant URL in the Azure Portal.</span><span class="sxs-lookup"><span data-stu-id="aec78-181">The BaseAddress is refered to as a tenant URL in the Azure Portal.</span></span> 
+<span data-ttu-id="9ab96-173">Проверьте подключение к стороне приложения.</span><span class="sxs-lookup"><span data-stu-id="9ab96-173">Test the connection with the third-party application.</span></span> <span data-ttu-id="9ab96-174">Ниже приводится пример приложения, которое требует секрета клиента и секретного маркера.</span><span class="sxs-lookup"><span data-stu-id="9ab96-174">The following example is for an application that requires a client secret and secret token.</span></span> <span data-ttu-id="9ab96-175">Каждое приложение имеет свои требования.</span><span class="sxs-lookup"><span data-stu-id="9ab96-175">Each application has its own requirements.</span></span> <span data-ttu-id="9ab96-176">Приложения часто используют базовый адрес, а не клиентскую тайну.</span><span class="sxs-lookup"><span data-stu-id="9ab96-176">Applications often use a base address in place of a client secret.</span></span> <span data-ttu-id="9ab96-177">Чтобы определить, какие учетные данные требуются вашему приложению, перейдите на страницу конфигурации подготовка для приложения, а в режиме разработчика щелкните **тестовую подключение.**</span><span class="sxs-lookup"><span data-stu-id="9ab96-177">To determine what credentials your app requires, go to the provisioning configuration page for your application, and in developer mode, click **test connection**.</span></span> <span data-ttu-id="9ab96-178">В сетевом трафике покажут параметры, используемые для учетных данных.</span><span class="sxs-lookup"><span data-stu-id="9ab96-178">The network traffic will show the parameters used for credentials.</span></span> <span data-ttu-id="9ab96-179">Полный список учетных данных см. в [синхронизацииJob: validateCredentials.](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="9ab96-179">For a full list of credentials, see [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="9ab96-180">Большинство приложений, например Azure Databricks, используют BaseAddress и SecretToken.</span><span class="sxs-lookup"><span data-stu-id="9ab96-180">Most applications, such as Azure Databricks, rely on a BaseAddress and SecretToken.</span></span> <span data-ttu-id="9ab96-181">BaseAddress ссылаются на URL-адрес клиента на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="9ab96-181">The BaseAddress is refered to as a tenant URL in the Azure Portal.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="aec78-182">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-182">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-182">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-182">Request</span></span>
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 { 
@@ -328,7 +328,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
     ]
 }
 ```
-#### <a name="response"></a><span data-ttu-id="aec78-183">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-183">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-183">Ответ</span><span class="sxs-lookup"><span data-stu-id="9ab96-183">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -338,11 +338,11 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 HTTP/1.1 204 No Content
 ```
 
-### <a name="save-your-credentials"></a><span data-ttu-id="aec78-184">Сохранение учетных данных</span><span class="sxs-lookup"><span data-stu-id="aec78-184">Save your credentials</span></span>
+### <a name="save-your-credentials"></a><span data-ttu-id="9ab96-184">Сохранение учетных данных</span><span class="sxs-lookup"><span data-stu-id="9ab96-184">Save your credentials</span></span>
 
-<span data-ttu-id="aec78-185">Для настройки настройки необходимо установить доверие между Azure AD и приложением.</span><span class="sxs-lookup"><span data-stu-id="aec78-185">Configuring provisioning requires establishing a trust between Azure AD and the application.</span></span> <span data-ttu-id="aec78-186">Авторизузите доступ к стороне приложению.</span><span class="sxs-lookup"><span data-stu-id="aec78-186">Authorize access to the third-party application.</span></span> <span data-ttu-id="aec78-187">В следующем примере для приложения требуется секрет клиента и секретный маркер.</span><span class="sxs-lookup"><span data-stu-id="aec78-187">The following example is for an application that requires a client secret and a secret token.</span></span> <span data-ttu-id="aec78-188">Каждое приложение имеет свои собственные требования.</span><span class="sxs-lookup"><span data-stu-id="aec78-188">Each application has its own requirements.</span></span> <span data-ttu-id="aec78-189">Просмотрите [документацию по API,](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) чтобы просмотреть доступные варианты.</span><span class="sxs-lookup"><span data-stu-id="aec78-189">Review the [API documentation](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) to see the available options.</span></span> 
+<span data-ttu-id="9ab96-185">Настройка подготовка требует установления доверия между Azure AD и приложением.</span><span class="sxs-lookup"><span data-stu-id="9ab96-185">Configuring provisioning requires establishing a trust between Azure AD and the application.</span></span> <span data-ttu-id="9ab96-186">Авторизузить доступ к сторонним приложениям.</span><span class="sxs-lookup"><span data-stu-id="9ab96-186">Authorize access to the third-party application.</span></span> <span data-ttu-id="9ab96-187">Ниже приводится пример приложения, которое требует секрета клиента и секретного маркера.</span><span class="sxs-lookup"><span data-stu-id="9ab96-187">The following example is for an application that requires a client secret and a secret token.</span></span> <span data-ttu-id="9ab96-188">Каждое приложение имеет свои требования.</span><span class="sxs-lookup"><span data-stu-id="9ab96-188">Each application has its own requirements.</span></span> <span data-ttu-id="9ab96-189">Просмотрите [документацию по API,](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) чтобы просмотреть доступные варианты.</span><span class="sxs-lookup"><span data-stu-id="9ab96-189">Review the [API documentation](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) to see the available options.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="aec78-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-190">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-190">Request</span></span>
 ```msgraph-interactive
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets 
  
@@ -354,7 +354,7 @@ PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secr
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="aec78-191">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-191">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-191">Ответ</span><span class="sxs-lookup"><span data-stu-id="9ab96-191">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -364,13 +364,13 @@ PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secr
 HTTP/1.1 204 No Content
 ```
 
-## <a name="step-4-start-the-provisioning-job"></a><span data-ttu-id="aec78-192">Шаг 4. Запуск задания по обеспечению</span><span class="sxs-lookup"><span data-stu-id="aec78-192">Step 4: Start the provisioning job</span></span>
-<span data-ttu-id="aec78-193">Теперь, когда задание подготовка настроено, используйте следующую [команду, чтобы запустить задание.](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="aec78-193">Now that the provisioning job is configured, use the following command to [start the job](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta).</span></span> 
+## <a name="step-4-start-the-provisioning-job"></a><span data-ttu-id="9ab96-192">Шаг 4. Запуск задания по подготовкам</span><span class="sxs-lookup"><span data-stu-id="9ab96-192">Step 4: Start the provisioning job</span></span>
+<span data-ttu-id="9ab96-193">Теперь, когда задание подготовка настроено, для запуска задания используйте следующую [команду.](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="9ab96-193">Now that the provisioning job is configured, use the following command to [start the job](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta).</span></span> 
 
 
-#### <a name="request"></a><span data-ttu-id="aec78-194">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-194">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-194">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-194">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="aec78-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="aec78-195">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ab96-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ab96-195">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_start"
@@ -378,22 +378,22 @@ HTTP/1.1 204 No Content
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 ```
-# <a name="c"></a>[<span data-ttu-id="aec78-196">C#</span><span class="sxs-lookup"><span data-stu-id="aec78-196">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ab96-196">C#</span><span class="sxs-lookup"><span data-stu-id="9ab96-196">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-start-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="aec78-197">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aec78-197">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ab96-197">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ab96-197">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-start-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="aec78-198">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aec78-198">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ab96-198">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ab96-198">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-start-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="aec78-199">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-199">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-199">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ab96-199">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -404,15 +404,15 @@ HTTP/1.1 204 No Content
 ```
 
 
-## <a name="step-5-monitor-provisioning"></a><span data-ttu-id="aec78-200">Шаг 5. Мониторинг и подготовка</span><span class="sxs-lookup"><span data-stu-id="aec78-200">Step 5: Monitor provisioning</span></span>
+## <a name="step-5-monitor-provisioning"></a><span data-ttu-id="9ab96-200">Шаг 5. Мониторинг подготовка</span><span class="sxs-lookup"><span data-stu-id="9ab96-200">Step 5: Monitor provisioning</span></span>
 
-### <a name="monitor-the-provisioning-job-status"></a><span data-ttu-id="aec78-201">Отслеживание состояния задания по обеспечению</span><span class="sxs-lookup"><span data-stu-id="aec78-201">Monitor the provisioning job status</span></span>
+### <a name="monitor-the-provisioning-job-status"></a><span data-ttu-id="9ab96-201">Мониторинг состояния задания по подготовкам</span><span class="sxs-lookup"><span data-stu-id="9ab96-201">Monitor the provisioning job status</span></span>
 
-<span data-ttu-id="aec78-202">Теперь, когда задание по обеспечению запущено, используйте следующую команду для отслеживания хода выполнения текущего цикла, а также статистики на текущий момент, например количества пользователей и групп, созданных в целевой системе.</span><span class="sxs-lookup"><span data-stu-id="aec78-202">Now that the provisioning job is running, use the following command to track the progress of the current provisioning cycle as well as statistics to date such as the number of users and groups that have been created in the target system.</span></span> 
+<span data-ttu-id="9ab96-202">Теперь, когда задание по подготовкам запущено, используйте следующую команду для отслеживания хода текущего цикла подготовка, а также статистики на сегодняшний день, таких как количество пользователей и групп, созданных в целевой системе.</span><span class="sxs-lookup"><span data-stu-id="9ab96-202">Now that the provisioning job is running, use the following command to track the progress of the current provisioning cycle as well as statistics to date such as the number of users and groups that have been created in the target system.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="aec78-203">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-203">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-203">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-203">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="aec78-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="aec78-204">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ab96-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ab96-204">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationjob"
@@ -420,22 +420,22 @@ HTTP/1.1 204 No Content
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
-# <a name="c"></a>[<span data-ttu-id="aec78-205">C#</span><span class="sxs-lookup"><span data-stu-id="aec78-205">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ab96-205">C#</span><span class="sxs-lookup"><span data-stu-id="9ab96-205">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="aec78-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aec78-206">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ab96-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ab96-206">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="aec78-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aec78-207">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ab96-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ab96-207">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="aec78-208">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-208">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-208">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ab96-208">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -478,14 +478,14 @@ Content-length: 2577
 ```
 
 
-### <a name="monitor-provisioning-events-using-the-provisioning-logs"></a><span data-ttu-id="aec78-209">Отслеживание событий предоставления с помощью журналов.</span><span class="sxs-lookup"><span data-stu-id="aec78-209">Monitor provisioning events using the provisioning logs</span></span>
-<span data-ttu-id="aec78-210">Помимо отслеживания состояния задания, можно использовать журналы [](/graph/api/provisioningobjectsummary-list?tabs=http&view=graph-rest-beta) подготовка для запроса всех происходящих событий.</span><span class="sxs-lookup"><span data-stu-id="aec78-210">In addition to monitoring the status of the provisioning job, you can use the [provisioning logs](/graph/api/provisioningobjectsummary-list?tabs=http&view=graph-rest-beta) to query for all the events that are occurring.</span></span> <span data-ttu-id="aec78-211">Например, запросим определенного пользователя и определите, были ли они успешно завершены.</span><span class="sxs-lookup"><span data-stu-id="aec78-211">For example, query for a particular user and determine if they were successfully provisioned.</span></span>
+### <a name="monitor-provisioning-events-using-the-provisioning-logs"></a><span data-ttu-id="9ab96-209">Мониторинг событий подготовка с помощью журналов подготовка</span><span class="sxs-lookup"><span data-stu-id="9ab96-209">Monitor provisioning events using the provisioning logs</span></span>
+<span data-ttu-id="9ab96-210">В дополнение к мониторингу состояния задания подготовка, [](/graph/api/provisioningobjectsummary-list?tabs=http&view=graph-rest-beta) вы можете использовать журналы подготовка для запроса для всех событий, которые происходят.</span><span class="sxs-lookup"><span data-stu-id="9ab96-210">In addition to monitoring the status of the provisioning job, you can use the [provisioning logs](/graph/api/provisioningobjectsummary-list?tabs=http&view=graph-rest-beta) to query for all the events that are occurring.</span></span> <span data-ttu-id="9ab96-211">Например, запрос для конкретного пользователя и определите, были ли они успешно заданной.</span><span class="sxs-lookup"><span data-stu-id="9ab96-211">For example, query for a particular user and determine if they were successfully provisioned.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="aec78-212">Запрос</span><span class="sxs-lookup"><span data-stu-id="aec78-212">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9ab96-212">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ab96-212">Request</span></span>
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-#### <a name="response"></a><span data-ttu-id="aec78-213">Отклик</span><span class="sxs-lookup"><span data-stu-id="aec78-213">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9ab96-213">Ответ</span><span class="sxs-lookup"><span data-stu-id="9ab96-213">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -611,7 +611,7 @@ Content-type: application/json
 }
 
 ```
-## <a name="see-also"></a><span data-ttu-id="aec78-214">См. также</span><span class="sxs-lookup"><span data-stu-id="aec78-214">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ab96-214">См. также</span><span class="sxs-lookup"><span data-stu-id="9ab96-214">See also</span></span>
 
-- [<span data-ttu-id="aec78-215">Обзор документации по синхронизации Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="aec78-215">Review the synchronization Microsoft Graph documentation</span></span>](/graph/api/resources/synchronization-overview?view=graph-rest-beta)
-- [<span data-ttu-id="aec78-216">Интеграция настраиваемого приложения SCIM с Azure AD</span><span class="sxs-lookup"><span data-stu-id="aec78-216">Integrating a custom SCIM app with Azure AD</span></span>](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups)
+- [<span data-ttu-id="9ab96-215">Просмотрите документацию по синхронизации Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="9ab96-215">Review the synchronization Microsoft Graph documentation</span></span>](/graph/api/resources/synchronization-overview?view=graph-rest-beta)
+- [<span data-ttu-id="9ab96-216">Интеграция настраиваемого приложения SCIM с Azure AD</span><span class="sxs-lookup"><span data-stu-id="9ab96-216">Integrating a custom SCIM app with Azure AD</span></span>](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups)

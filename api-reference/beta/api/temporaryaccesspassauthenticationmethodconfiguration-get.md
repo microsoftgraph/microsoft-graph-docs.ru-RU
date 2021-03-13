@@ -1,37 +1,37 @@
 ---
-title: Get temporaryAccessPassAuthenticationMethodConfiguration
-description: Чтение свойств и связей объекта temporaryAccessPassAuthenticationMethodConfiguration.
+title: Получить temporaryAccessPassAuthenticationMethodConfiguration
+description: Ознакомьтесь с свойствами и отношениями объекта temporaryAccessPassAuthenticationMethodConfiguration.
 author: inbarckms
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 52ea16ad502a24ac0eb75de94c2cad4c9fbe93d5
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 08a20da2f4c14a3d3a6d3581765eb5e168e8b721
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272679"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759512"
 ---
-# <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a><span data-ttu-id="145f5-103">Get temporaryAccessPassAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="145f5-103">Get temporaryAccessPassAuthenticationMethodConfiguration</span></span>
-<span data-ttu-id="145f5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="145f5-104">Namespace: microsoft.graph</span></span>
+# <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a><span data-ttu-id="9de7c-103">Получить temporaryAccessPassAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="9de7c-103">Get temporaryAccessPassAuthenticationMethodConfiguration</span></span>
+<span data-ttu-id="9de7c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9de7c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="145f5-105">Чтение свойств и связей [временного объектаAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) который представляет [](../resources/authenticationmethodspolicies-overview.md) политику метода проверки подлинности "Временный доступ" для клиента Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="145f5-105">Read the properties and relationships of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object, which represents the Temporary Access Pass [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
+<span data-ttu-id="9de7c-105">Ознакомьтесь с свойствами и отношениями объекта [temporaryAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) [](../resources/authenticationmethodspolicies-overview.md) который представляет политику метода проверки подлинности временных пропусков доступа для клиента Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="9de7c-105">Read the properties and relationships of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object, which represents the Temporary Access Pass [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="145f5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="145f5-106">Permissions</span></span>
-<span data-ttu-id="145f5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="145f5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9de7c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9de7c-106">Permissions</span></span>
+<span data-ttu-id="9de7c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9de7c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="145f5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="145f5-109">Permission type</span></span>|<span data-ttu-id="145f5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="145f5-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="9de7c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9de7c-109">Permission type</span></span>|<span data-ttu-id="9de7c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9de7c-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="145f5-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="145f5-111">Delegated (work or school account)</span></span>|<span data-ttu-id="145f5-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="145f5-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
-|<span data-ttu-id="145f5-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="145f5-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="145f5-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="145f5-114">Not supported.</span></span>|
-|<span data-ttu-id="145f5-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="145f5-115">Application</span></span>|<span data-ttu-id="145f5-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="145f5-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="9de7c-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9de7c-111">Delegated (work or school account)</span></span>|<span data-ttu-id="9de7c-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="9de7c-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="9de7c-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9de7c-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9de7c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9de7c-114">Not supported.</span></span>|
+|<span data-ttu-id="9de7c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9de7c-115">Application</span></span>|<span data-ttu-id="9de7c-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="9de7c-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
 
- <span data-ttu-id="145f5-117">Для делегирования сценариев администратору требуется роль глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="145f5-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="145f5-118">Дополнительные сведения см. в[ролях.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="145f5-118">For more information, see[roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
+ <span data-ttu-id="9de7c-117">Для делегирования сценариев администратору требуется роль глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="9de7c-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="9de7c-118">Дополнительные сведения см. в[дополнительных сведениях.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="9de7c-118">For more information, see[roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="145f5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="145f5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9de7c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9de7c-119">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -40,18 +40,18 @@ ms.locfileid: "50272679"
 ``` http
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
 ```
-## <a name="request-headers"></a><span data-ttu-id="145f5-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="145f5-120">Request headers</span></span>
-|<span data-ttu-id="145f5-121">Имя</span><span class="sxs-lookup"><span data-stu-id="145f5-121">Name</span></span>|<span data-ttu-id="145f5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="145f5-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9de7c-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9de7c-120">Request headers</span></span>
+|<span data-ttu-id="9de7c-121">Имя</span><span class="sxs-lookup"><span data-stu-id="9de7c-121">Name</span></span>|<span data-ttu-id="9de7c-122">Описание</span><span class="sxs-lookup"><span data-stu-id="9de7c-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="145f5-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="145f5-123">Authorization</span></span>|<span data-ttu-id="145f5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="145f5-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="9de7c-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9de7c-123">Authorization</span></span>|<span data-ttu-id="9de7c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9de7c-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="145f5-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="145f5-126">Request body</span></span>
-<span data-ttu-id="145f5-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="145f5-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9de7c-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9de7c-126">Request body</span></span>
+<span data-ttu-id="9de7c-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9de7c-127">Do not supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="145f5-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="145f5-128">Response</span></span>
-<span data-ttu-id="145f5-129">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="145f5-129">The following is an example of the response.</span></span>
+### <a name="response"></a><span data-ttu-id="9de7c-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="9de7c-128">Response</span></span>
+<span data-ttu-id="9de7c-129">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9de7c-129">The following is an example of the response.</span></span>
 
-<span data-ttu-id="145f5-130">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="145f5-130">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="9de7c-130">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="9de7c-130">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

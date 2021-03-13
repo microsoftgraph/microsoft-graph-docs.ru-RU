@@ -1,34 +1,34 @@
 ---
-title: сложный тип Интерналспонсорс
-description: Определяет связь с другим пользователем в клиенте, который будет разрешен в качестве утверждающего.
+title: тип internalSponsors сложный
+description: Определяет отношение к другому пользователю в клиенте, которому будет разрешено в качестве утвержденного.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 56ae53e1b55be0a56a4c021449b8c5f4eb1a7c05
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84c53bbeacde51afc88f5c0b4b5c13bc4f68b430
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058392"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760899"
 ---
-# <a name="internalsponsors-complex-type"></a><span data-ttu-id="c8841-103">сложный тип Интерналспонсорс</span><span class="sxs-lookup"><span data-stu-id="c8841-103">internalSponsors complex type</span></span>
+# <a name="internalsponsors-complex-type"></a><span data-ttu-id="7e728-103">тип internalSponsors сложный</span><span class="sxs-lookup"><span data-stu-id="7e728-103">internalSponsors complex type</span></span>
 
-<span data-ttu-id="c8841-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8841-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7e728-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7e728-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c8841-105">Используется на этапе утверждения [политики назначения пакетов Access](accesspackageassignmentpolicy.md).</span><span class="sxs-lookup"><span data-stu-id="c8841-105">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="c8841-106">Это подтип набора [пользователей](userset.md), в котором `@odata.type` значение `#microsoft.graph.internalSponsors` указывает на то, что пользователь, подключенный к Организации, может быть утверждающим в качестве внутреннего спонсора.</span><span class="sxs-lookup"><span data-stu-id="c8841-106">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.internalSponsors` indicates that a requesting user's connected organization internal sponsors are to be the approver.</span></span> <span data-ttu-id="c8841-107">Этот утверждающий применяется только к запросам пользователей, которые являются частью подключенной Организации.</span><span class="sxs-lookup"><span data-stu-id="c8841-107">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="c8841-108">При создании этапа утверждения политики назначения пакетов Access с Интерналспонсорс также включает другой утверждающий, например одного пользователя или члена группы, если у подключенной Организации нет внутреннего спонсора.</span><span class="sxs-lookup"><span data-stu-id="c8841-108">When creating an access package assignment policy approval stage with internalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an internal sponsor.</span></span>
+<span data-ttu-id="7e728-105">Используется на этапе утверждения политики [назначения пакета доступа.](accesspackageassignmentpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="7e728-105">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="7e728-106">Это подтип [userSet,](userset.md)в котором значение указывает, что внутренними спонсорами, запрашивающие подключенную организацию пользователя, должны `@odata.type` `#microsoft.graph.internalSponsors` быть утверждены.</span><span class="sxs-lookup"><span data-stu-id="7e728-106">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.internalSponsors` indicates that a requesting user's connected organization internal sponsors are to be the approver.</span></span> <span data-ttu-id="7e728-107">Этот одобрение применимо только к запросам пользователей, которые являются частью связанной организации.</span><span class="sxs-lookup"><span data-stu-id="7e728-107">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="7e728-108">При создании этапа утверждения политики назначения пакетов доступа с помощью внутреннихSponsors также включаем другого участника, например одного пользователя или члена группы, в случае, если подключенная организация не имеет внутреннего спонсора.</span><span class="sxs-lookup"><span data-stu-id="7e728-108">When creating an access package assignment policy approval stage with internalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an internal sponsor.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c8841-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="c8841-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7e728-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="7e728-109">Properties</span></span>
 
-| <span data-ttu-id="c8841-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="c8841-110">Property</span></span>                     | <span data-ttu-id="c8841-111">Тип</span><span class="sxs-lookup"><span data-stu-id="c8841-111">Type</span></span>                      | <span data-ttu-id="c8841-112">Описание</span><span class="sxs-lookup"><span data-stu-id="c8841-112">Description</span></span> |
+| <span data-ttu-id="7e728-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="7e728-110">Property</span></span>                     | <span data-ttu-id="7e728-111">Тип</span><span class="sxs-lookup"><span data-stu-id="7e728-111">Type</span></span>                      | <span data-ttu-id="7e728-112">Описание</span><span class="sxs-lookup"><span data-stu-id="7e728-112">Description</span></span> |
 | :--------------------------- | :------------------------ | :---------- |
-| <span data-ttu-id="c8841-113">Создание резервной копии</span><span class="sxs-lookup"><span data-stu-id="c8841-113">isBackup</span></span> | <span data-ttu-id="c8841-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="c8841-114">Boolean</span></span> | <span data-ttu-id="c8841-115">Указывает, является ли спонсор резервным утверждающим.</span><span class="sxs-lookup"><span data-stu-id="c8841-115">Indicates whether the sponsor is a backup fallback approver.</span></span> |
+| <span data-ttu-id="7e728-113">isBackup</span><span class="sxs-lookup"><span data-stu-id="7e728-113">isBackup</span></span> | <span data-ttu-id="7e728-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="7e728-114">Boolean</span></span> | <span data-ttu-id="7e728-115">Указывает, является ли автор резервного копирования автором резервного копирования.</span><span class="sxs-lookup"><span data-stu-id="7e728-115">Indicates whether the sponsor is a backup fallback approver.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="c8841-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c8841-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7e728-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7e728-116">JSON representation</span></span>
 
-<span data-ttu-id="c8841-117">Ниже представлено представление типа в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c8841-117">The following is a JSON representation of the type.</span></span>
+<span data-ttu-id="7e728-117">Ниже приводится представление JSON этого типа.</span><span class="sxs-lookup"><span data-stu-id="7e728-117">The following is a JSON representation of the type.</span></span>
 
 <!-- {
   "blockType": "resource",

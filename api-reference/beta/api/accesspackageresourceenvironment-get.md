@@ -1,34 +1,34 @@
 ---
-title: Get accessPackageResourceEnvironment
-description: Чтение свойств и связей объекта accessPackageResourceEnvironment.
+title: Получите accessPackageResourceEnvironment
+description: Ознакомьтесь с свойствами и отношениями объекта accessPackageResourceEnvironment.
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0169ad18a24ff27392c5679f91dfaecd43d76567
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 4530eec57a15a871cd7c633dd645c7f9beae2070
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176301"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759428"
 ---
-# <a name="get-accesspackageresourceenvironment"></a><span data-ttu-id="5969d-103">Get accessPackageResourceEnvironment</span><span class="sxs-lookup"><span data-stu-id="5969d-103">Get accessPackageResourceEnvironment</span></span>
-<span data-ttu-id="5969d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5969d-104">Namespace: microsoft.graph</span></span>
+# <a name="get-accesspackageresourceenvironment"></a><span data-ttu-id="4f9bd-103">Получите accessPackageResourceEnvironment</span><span class="sxs-lookup"><span data-stu-id="4f9bd-103">Get accessPackageResourceEnvironment</span></span>
+<span data-ttu-id="4f9bd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4f9bd-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5969d-105">Чтение свойств и связей объекта [accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)</span><span class="sxs-lookup"><span data-stu-id="5969d-105">Read the properties and relationships of an [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) object.</span></span>
+<span data-ttu-id="4f9bd-105">Ознакомьтесь с свойствами и отношениями объекта [accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)</span><span class="sxs-lookup"><span data-stu-id="4f9bd-105">Read the properties and relationships of an [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5969d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5969d-106">Permissions</span></span>
-<span data-ttu-id="5969d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5969d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4f9bd-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4f9bd-106">Permissions</span></span>
+<span data-ttu-id="4f9bd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f9bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5969d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5969d-109">Permission type</span></span>|<span data-ttu-id="5969d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5969d-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="4f9bd-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4f9bd-109">Permission type</span></span>|<span data-ttu-id="4f9bd-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4f9bd-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5969d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5969d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="5969d-112">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5969d-112">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span>|
-|<span data-ttu-id="5969d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5969d-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5969d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5969d-114">Not supported.</span></span>|
-|<span data-ttu-id="5969d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5969d-115">Application</span></span>|<span data-ttu-id="5969d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5969d-116">Not supported.</span></span>|
+|<span data-ttu-id="4f9bd-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4f9bd-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4f9bd-112">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f9bd-112">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span>|
+|<span data-ttu-id="4f9bd-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4f9bd-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4f9bd-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4f9bd-114">Not supported.</span></span>|
+|<span data-ttu-id="4f9bd-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4f9bd-115">Application</span></span>|<span data-ttu-id="4f9bd-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4f9bd-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5969d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5969d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f9bd-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4f9bd-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,26 +38,26 @@ ms.locfileid: "50176301"
 GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/{accessPackageResourceEnvironmentId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5969d-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5969d-118">Optional query parameters</span></span>
-<span data-ttu-id="5969d-119">В настоящее время этот метод не поддерживает [параметры запросов OData.](/graph/query-parameters)</span><span class="sxs-lookup"><span data-stu-id="5969d-119">This method does not currently support [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4f9bd-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="4f9bd-118">Optional query parameters</span></span>
+<span data-ttu-id="4f9bd-119">Этот метод в настоящее время не поддерживает [параметры запроса OData.](/graph/query-parameters)</span><span class="sxs-lookup"><span data-stu-id="4f9bd-119">This method does not currently support [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5969d-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5969d-120">Request headers</span></span>
-|<span data-ttu-id="5969d-121">Имя</span><span class="sxs-lookup"><span data-stu-id="5969d-121">Name</span></span>|<span data-ttu-id="5969d-122">Описание</span><span class="sxs-lookup"><span data-stu-id="5969d-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4f9bd-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4f9bd-120">Request headers</span></span>
+|<span data-ttu-id="4f9bd-121">Имя</span><span class="sxs-lookup"><span data-stu-id="4f9bd-121">Name</span></span>|<span data-ttu-id="4f9bd-122">Описание</span><span class="sxs-lookup"><span data-stu-id="4f9bd-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="5969d-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5969d-123">Authorization</span></span>|<span data-ttu-id="5969d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5969d-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="4f9bd-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4f9bd-123">Authorization</span></span>|<span data-ttu-id="4f9bd-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4f9bd-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5969d-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5969d-126">Request body</span></span>
-<span data-ttu-id="5969d-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5969d-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f9bd-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4f9bd-126">Request body</span></span>
+<span data-ttu-id="4f9bd-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4f9bd-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5969d-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="5969d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4f9bd-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="4f9bd-128">Response</span></span>
 
-<span data-ttu-id="5969d-129">В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="5969d-129">If successful, this method returns a `200 OK` response code and an [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) object in the response body.</span></span>
+<span data-ttu-id="4f9bd-129">В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [объект accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4f9bd-129">If successful, this method returns a `200 OK` response code and an [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5969d-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="5969d-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4f9bd-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="4f9bd-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="5969d-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="5969d-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4f9bd-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="4f9bd-131">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5969d-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="5969d-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4f9bd-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="4f9bd-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageresourceenvironment"
@@ -66,19 +66,19 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceEnvironments/{accessPackageResourceEnvironmentId}
 ```
-# <a name="c"></a>[<span data-ttu-id="5969d-133">C#</span><span class="sxs-lookup"><span data-stu-id="5969d-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4f9bd-133">C#</span><span class="sxs-lookup"><span data-stu-id="4f9bd-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageresourceenvironment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5969d-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5969d-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4f9bd-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4f9bd-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageresourceenvironment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5969d-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5969d-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4f9bd-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4f9bd-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageresourceenvironment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5969d-136">Java</span><span class="sxs-lookup"><span data-stu-id="5969d-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4f9bd-136">Java</span><span class="sxs-lookup"><span data-stu-id="4f9bd-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourceenvironment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,8 +86,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 
 
-### <a name="response"></a><span data-ttu-id="5969d-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="5969d-137">Response</span></span>
-<span data-ttu-id="5969d-138">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5969d-138">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="4f9bd-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="4f9bd-137">Response</span></span>
+<span data-ttu-id="4f9bd-138">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="4f9bd-138">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

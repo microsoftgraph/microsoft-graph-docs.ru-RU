@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса ПровисионингсервицепринЦипал
-description: Представляет участника службы, используемого для подготовки.
+title: тип ресурса provisioningServicePrincipal
+description: Представляет принцип службы, используемый для обеспечения.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: aaa4b23a90be458fd3b3159c97159bfa152ff1db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5af9dc46de889eea780ca45eb25463ffafcf1260
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026455"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760997"
 ---
-# <a name="provisioningserviceprincipal-resource-type"></a><span data-ttu-id="8637f-103">Тип ресурса ПровисионингсервицепринЦипал</span><span class="sxs-lookup"><span data-stu-id="8637f-103">provisioningServicePrincipal resource type</span></span>
+# <a name="provisioningserviceprincipal-resource-type"></a><span data-ttu-id="83536-103">тип ресурса provisioningServicePrincipal</span><span class="sxs-lookup"><span data-stu-id="83536-103">provisioningServicePrincipal resource type</span></span>
 
-<span data-ttu-id="8637f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8637f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="83536-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="83536-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8637f-105">Представляет участника службы, используемого для подготовки.</span><span class="sxs-lookup"><span data-stu-id="8637f-105">Represents the service principal used for provisioning.</span></span> 
+<span data-ttu-id="83536-105">Представляет принцип службы, используемый для обеспечения.</span><span class="sxs-lookup"><span data-stu-id="83536-105">Represents the service principal used for provisioning.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="8637f-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="8637f-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="83536-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="83536-106">Properties</span></span>
 
-| <span data-ttu-id="8637f-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="8637f-107">Property</span></span>     | <span data-ttu-id="8637f-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8637f-108">Type</span></span>        | <span data-ttu-id="8637f-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8637f-109">Description</span></span> |
+| <span data-ttu-id="83536-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="83536-107">Property</span></span>     | <span data-ttu-id="83536-108">Тип</span><span class="sxs-lookup"><span data-stu-id="83536-108">Type</span></span>        | <span data-ttu-id="83536-109">Описание</span><span class="sxs-lookup"><span data-stu-id="83536-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="8637f-110">id</span><span class="sxs-lookup"><span data-stu-id="8637f-110">id</span></span>|<span data-ttu-id="8637f-111">String</span><span class="sxs-lookup"><span data-stu-id="8637f-111">String</span></span>|<span data-ttu-id="8637f-112">Уникально идентифицирует **servicePrincipal** , используемый для подготовки.</span><span class="sxs-lookup"><span data-stu-id="8637f-112">Uniquely identifies the **servicePrincipal** used for provisioning.</span></span>|
-|<span data-ttu-id="8637f-113">name</span><span class="sxs-lookup"><span data-stu-id="8637f-113">name</span></span>|<span data-ttu-id="8637f-114">String</span><span class="sxs-lookup"><span data-stu-id="8637f-114">String</span></span>| <span data-ttu-id="8637f-115">Определяемое пользователем имя для **servicePrincipal**.</span><span class="sxs-lookup"><span data-stu-id="8637f-115">Customer-defined name for the **servicePrincipal**.</span></span>|
+|<span data-ttu-id="83536-110">id</span><span class="sxs-lookup"><span data-stu-id="83536-110">id</span></span>|<span data-ttu-id="83536-111">String</span><span class="sxs-lookup"><span data-stu-id="83536-111">String</span></span>|<span data-ttu-id="83536-112">Уникально определяет **службуPrincipal, используемую** для предварительного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="83536-112">Uniquely identifies the **servicePrincipal** used for provisioning.</span></span>|
+|<span data-ttu-id="83536-113">name</span><span class="sxs-lookup"><span data-stu-id="83536-113">name</span></span>|<span data-ttu-id="83536-114">String</span><span class="sxs-lookup"><span data-stu-id="83536-114">String</span></span>| <span data-ttu-id="83536-115">Имя, определенное клиентом **для службыPrincipal.**</span><span class="sxs-lookup"><span data-stu-id="83536-115">Customer-defined name for the **servicePrincipal**.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="8637f-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8637f-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="83536-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="83536-116">JSON representation</span></span>
 
-<span data-ttu-id="8637f-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8637f-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="83536-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="83536-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
