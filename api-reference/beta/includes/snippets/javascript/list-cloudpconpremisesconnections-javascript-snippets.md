@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 822e68d23922cbda2154ac84a21a9f89b27169bf
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: af6b3ccafd9175034c98a6137ab68c10b4d2f897
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522632"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778663"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections')
+let onPremisesConnections = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections')
     .version('beta')
     .get();
 

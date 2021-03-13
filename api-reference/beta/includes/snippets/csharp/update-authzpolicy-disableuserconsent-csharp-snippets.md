@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 053c966090d35b875c6caf61098b73b97142dd11
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ccadc03216d85b701395f64bd7810ca742c8bf4f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457422"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779766"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var authorizationPolicy = new AuthorizationPolicy
     }
 };
 
-await graphClient.Policies.AuthorizationPolicy["authorizationPolicy"]
+await graphClient.Policies.AuthorizationPolicy["{authorizationPolicy-id}"]
     .Request()
     .UpdateAsync(authorizationPolicy);
 
