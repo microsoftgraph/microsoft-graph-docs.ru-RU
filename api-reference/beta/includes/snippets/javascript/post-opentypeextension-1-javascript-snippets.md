@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2a4d7978177aeccfa64de8a79e04dbbf4f65a287
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 8b68288026af04df8d696beaea3d1856e1ad9f33
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638398"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789560"
 ---
 ```javascript
 
@@ -16,30 +16,30 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  subject: "Annual review",
+  subject: 'Annual review',
   body: {
-    contentType: "HTML",
-    content: "You should be proud!"
+    contentType: 'HTML',
+    content: 'You should be proud!'
   },
   toRecipients: [
     {
       emailAddress: {
-        address: "rufus@contoso.com"
+        address: 'rufus@contoso.com'
       }
     }
   ],
   extensions: [
     {
-      @odata.type: "microsoft.graph.openTypeExtension",
-      extensionName: "Com.Contoso.Referral",
-      companyName: "Wingtip Toys",
-      expirationDate: "2015-12-30T11:00:00.000Z",
+      '@odata.type': 'microsoft.graph.openTypeExtension',
+      extensionName: 'Com.Contoso.Referral',
+      companyName: 'Wingtip Toys',
+      expirationDate: '2015-12-30T11:00:00.000Z',
       dealValue: 10000
     }
   ]
 };
 
-let res = await client.api('/me/messages')
+await client.api('/me/messages')
     .version('beta')
     .post(message);
 
