@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d358d54532fe6c6696dd9234a6520362d4a94da9
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 167ce3fc827274e7d1cb2c85ffd9fa98af659798
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638389"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787278"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const plannerBucketTaskBoardTaskFormat = {
-  orderHint: "A6673H Ejkl!"
+  orderHint: 'A6673H Ejkl!'
 };
 
-let res = await client.api('/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat')
+await client.api('/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat')
     .version('beta')
     .update(plannerBucketTaskBoardTaskFormat);
 

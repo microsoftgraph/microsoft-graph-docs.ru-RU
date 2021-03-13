@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b053761b988e867def6d9e30aae22feba273e190
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 107fb7f1d266fae1af9038d0f45ea47563be6828
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932907"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799224"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/bundles/{bundle-id}')
+let driveItem = await client.api('/drive/bundles/{bundle-id}')
     .version('beta')
     .get();
 
