@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1d119001589eb473a49a16dae4a853a6f621803a
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1c1eb4f2f26b7eb1ffccc797d8f37e94c1eb8939
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49755968"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786066"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var chatMessage = new ChatMessage
     }
 };
 
-await graphClient.Chats["{id}"].Messages
+await graphClient.Chats["{chat-id}"].Messages
     .Request()
     .AddAsync(chatMessage);
 

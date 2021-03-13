@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 313f1e16de284cc3442a25722b661473fb806abe
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: ac0c7b9bf87d4e70c0697d6c783452d631f0637d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417954"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783399"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword')
+await client.api('/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword')
     .version('beta')
     .post();
 

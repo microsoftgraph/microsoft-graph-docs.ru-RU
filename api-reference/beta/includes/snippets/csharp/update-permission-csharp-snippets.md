@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ee62ecc04570fbbecda01da11ffce9b401811f13
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: fa645ada368ee5d5572741ed88e7430fd2f2e084
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48607629"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789604"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var permission = new Permission
     }
 };
 
-await graphClient.Me.Drive.Items["{item-id}"].Permissions["{perm-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
     .Request()
     .UpdateAsync(permission);
 

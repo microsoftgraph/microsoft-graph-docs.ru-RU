@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 10993762f6db70a9b12aa37911629b986d9cc861
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6eb1c5fb454523fb98a966583e4db877b1210fa4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49350374"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791139"
 ---
 ```javascript
 
@@ -17,17 +17,17 @@ const client = Client.init(options);
 
 const addKey = {
     keyCredential: {
-        type: "X509CertAndPassword",
-        usage: "Sign",
-        key: "MIIDYDCCAki..."
+        type: 'X509CertAndPassword',
+        usage: 'Sign',
+        key: 'MIIDYDCCAki...'
     },
     passwordCredential: {
-        secretText: "MKTr0w1..."
+        secretText: 'MKTr0w1...'
     },
-    proof:"eyJ0eXAiOiJ..."
+    proof: 'eyJ0eXAiOiJ...'
 };
 
-let res = await client.api('/servicePrincipals/{id}/addKey')
+await client.api('/servicePrincipals/{id}/addKey')
     .version('beta')
     .post(addKey);
 
