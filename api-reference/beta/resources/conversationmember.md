@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a3ff911392d019bb387298dc2fb8252b222ed520
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: caa084ecb1d1d468e9be237f22bed2ab80cd1b41
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714139"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772417"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
@@ -19,7 +19,7 @@ ms.locfileid: "49714139"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет пользователя в [команде,](team.md) [канале или](channel.md) [чате.](chat.md)
-См. [также aadUserConversationMember.](aaduserconversationmember.md)
+См. [также aadUserConversationMember](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Методы
 
@@ -39,7 +39,7 @@ ms.locfileid: "49714139"
 |[Перечисление участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников чата.|
 |[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление участника в чат.| 
 |[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение участника чата.|
-|[Удаление участника чата](../api/chat-delete-members.md) | сайте | Удаление участника из чата.| 
+|[Удаление участника чата](../api/chat-delete-members.md) | Нет | Удаление участника из чата.| 
 
 ## <a name="properties"></a>Свойства
 

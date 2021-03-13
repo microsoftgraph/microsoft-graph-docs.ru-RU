@@ -1,16 +1,16 @@
 ---
 title: Список transitiveMemberOf
-description: Получите группы, в которые входит органзиационный контакт. Этот запрос API является транзитным и также возвращает все группы, вложенные пользователем.
+description: Получите группы, в которые входит организационный контакт. Этот запрос API является транзитным и также возвращает все группы, вложенные пользователем.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 94a41d23225615a6233b8d37a5cded8f569c7898
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 5049ecb59180eb6a62137ff2beaa83b42a19f7de
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625992"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773482"
 ---
 # <a name="list-transitivememberof"></a>Список transitiveMemberOf
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` [параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -61,6 +61,8 @@ GET /contacts/{id}/transitiveMemberOf
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_list_transitivememberof"
@@ -69,6 +71,24 @@ GET /contacts/{id}/transitiveMemberOf
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/{id}/transitiveMemberOf
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-list-transitivememberof-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-list-transitivememberof-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-list-transitivememberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/orgcontact-list-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

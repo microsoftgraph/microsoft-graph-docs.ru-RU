@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 419ea402d9e91c3b2b730dfc404dd8acf435d3d5
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 934a54b83b85c7096cc8b1a62f35a53fcfbbc169
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517969"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773496"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -66,7 +66,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime          | DateTime                                                     | Время окончания собрания в UTC.                                                                                                                   |
 | subject              | String                                                       | Тема собрания в Интернете.                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Участники, связанные с онлайн-собранием. Это включает организатора и участников.                                            |
-| isEntryExitAnnounced | Логический                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
+| isEntryExitAnnounced | Boolean                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Указывает, какие участники могут обойти вестибюль собрания.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Указывает, кто может быть презентовщиком на собрании. Возможные значения — это все, организация, roleIsPresenter, организатор и неизвестныйFutureValue. |
 
@@ -81,6 +81,8 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 > **Примечание:** ID собрания был усечен для чтения.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
@@ -96,6 +98,24 @@ Content-Type: application/json
   "subject": "Patch Meeting Subject"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-start-end-subject-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-start-end-subject-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-start-end-subject-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-start-end-subject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -151,6 +171,8 @@ Content-Type: application/json
 #### <a name="example-2-update-the-lobbybypasssettings"></a>Пример 2. Обновление lobbyBypassSettings
 > **Примечание:** ID собрания был усечен для чтения.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
@@ -166,6 +188,24 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-lobbybypasssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-lobbybypasssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-lobbybypasssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-lobbybypasssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

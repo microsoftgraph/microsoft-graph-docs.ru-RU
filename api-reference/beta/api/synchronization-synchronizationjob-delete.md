@@ -1,24 +1,24 @@
 ---
-title: Удаление synchronizationJob
-description: Остановите задание синхронизации и окончательно удалите все связанное с ним состояние.
+title: Удаление синхронизацииJob
+description: Остановите задание синхронизации и удалите навсегда все связанное с ним состояние.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: d10196464b9662a6ad2c24ec8aaee5ea5cf925fa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d4b154cca11b46c53d6929ea9522a7ff36c3b908
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129684"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50773580"
 ---
-# <a name="delete-synchronizationjob"></a>Удаление synchronizationJob
+# <a name="delete-synchronizationjob"></a>Удаление синхронизацииJob
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Остановите задание синхронизации и окончательно удалите все связанное с ним состояние. Синхронизированные учетные записи оставлены как есть.
+Остановите задание синхронизации и удалите навсегда все связанное с ним состояние. Синхронизированные учетные записи оставлены как есть.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50129684"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.  |
-|Для приложений                            |Не поддерживается. | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>Отклик
 
-В случае успеха возвращает `204 No Content` ответ. В тексте отклика не возвращается никаких данных.
+В случае успешного ответа `204 No Content` возвращается ответ. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
