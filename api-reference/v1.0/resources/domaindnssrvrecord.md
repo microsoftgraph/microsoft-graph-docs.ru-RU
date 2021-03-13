@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Домаинднссрврекорд
+title: тип ресурса domainDnsSrvRecord
 description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1c0ac0fce1291c5f6a5134bf7439cbe01c841fe9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7755779218b7120e24cc25f6e0a5a97d4c42db5d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018657"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761200"
 ---
-# <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса Домаинднссрврекорд
+# <a name="domaindnssrvrecord-resource-type"></a>тип ресурса domainDnsSrvRecord
 
 Пространство имен: microsoft.graph
 
-Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
+Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от [объекта DomainDnsRecord.](domaindnsrecord.md)
 
 ## <a name="methods"></a>Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .
+Прямые запросы на этот ресурс не поддерживаются. Сведения о [том,](domain.md) как запрашивать записи службы домена, см. в разделе домен.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
-|Переключатель|Boolean| Если задано значение false, запись SRV должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
-|label|String| Значение, используемое при настройке свойства *Name* записи SRV на узле DNS. |
-|наметаржет|String| Значение, используемое при настройке свойства *Target* записи SRV на узле DNS. |
-|порта|Int32| Значение, используемое при настройке свойства *Port* записи SRV на узле DNS. |
-|priority|Int32| Значение, используемое при настройке свойства *Priority* записи SRV на узле DNS. |
-|Protocol|String| Значение, используемое при настройке свойства *Protocol* записи SRV на узле DNS. |
-|recordType|String|  Тип записи DNS. Значение — всегда *SRV*. Key |
-|service|String| Значение, используемое при настройке свойства *Service* для записи SRV на узле DNS. |
-|суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи SRV.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи SRV на узле DNS. Не допускает значение null |
-|weight|Int32| Значение, используемое при настройке свойства *Weight* записи SRV на узле DNS. |
+|id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения.|
+|isOptional|Boolean| Если это неверно, запись SRV должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
+|label|String| Значение, используемого при настройке *свойства* имени записи SRV в хосте DNS. |
+|nameTarget|String| Значение, используемого при настройке *целевого* свойства записи SRV в хосте DNS. |
+|порт|Int32| Значение, используемого при  настройке свойства порта записи SRV в хосте DNS. |
+|priority|Int32| Значение, используемое при настройке *приоритетного* свойства записи SRV в хосте DNS. |
+|протокол|String| Значение, используемого при настройке свойства *протокола* записи SRV в DNS-хозяйне. |
+|recordType|String|  Тип записи DNS. Значение всегда *Srv*. Key |
+|service|String| Значение, используемого при  настройке свойства службы записи SRV в DNS-хозяйне. |
+|supportedService|String| Microsoft Online Service или функция, зависимая от этой записи SRV.</br></br>Может быть одним из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|ttl|Int32| Значение, используемого при настройке свойства "время на *жизнь"* записи SRV в DNS-хозяйне. Не является недействительным |
+|weight|Int32| Значение, используемого при  настройке свойства веса записи SRV в хосте DNS. |
 
 ## <a name="relationships"></a>Связи
 Нет

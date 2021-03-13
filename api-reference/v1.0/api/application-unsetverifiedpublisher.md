@@ -1,28 +1,28 @@
 ---
-title: 'Приложение: Унсетверифиедпублишер'
+title: 'приложение: unsetVerifiedPublisher'
 description: Удаление проверенного издателя приложения.
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dca739f5086e10fecdfba56cfd1338a9230b4d4d
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 3741529b51912a077bfb7abe217a6828f64d199f
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635519"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761320"
 ---
-# <a name="application-unsetverifiedpublisher"></a>Приложение: Унсетверифиедпублишер
+# <a name="application-unsetverifiedpublisher"></a>приложение: unsetVerifiedPublisher
 
 Пространство имен: microsoft.graph
 
-Отмените настройку [верифиедпублишер](../resources/verifiedPublisher.md) , предварительно заданной для [приложения](../resources/application.md), удалив все проверенные свойства издателя. Для получения дополнительных сведений см [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview).
+Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set on an [application,](../resources/application.md)removing all verified publisher properties. Дополнительные сведения см. в [книге Проверка publisher.](/azure/active-directory/develop/publisher-verification-overview)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 |Приложение | Не поддерживается |
 
@@ -40,7 +40,7 @@ POST /applications/{id}/unsetVerifiedPublisher
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

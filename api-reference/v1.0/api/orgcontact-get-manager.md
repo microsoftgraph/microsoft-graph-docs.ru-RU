@@ -1,31 +1,31 @@
 ---
 title: Получение имени руководителя
-description: Получение руководителя этого контакта в Организации.
+description: Получите менеджера этого организационного контакта.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb8cb0d3a6ac8e92550ebd7eb5e225194c9f84c5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74bab941c4ab22a626fbd1ed1cc8023768f08ffb
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062990"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761669"
 ---
 # <a name="get-manager"></a>Получение имени руководителя
 
 Пространство имен: microsoft.graph
 
-Получение руководителя этого контакта в Организации.
+Получите менеджера этого организационного контакта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL   |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -45,7 +45,7 @@ GET /contacts/{id}/manager
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

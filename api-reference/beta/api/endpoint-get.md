@@ -1,16 +1,16 @@
 ---
 title: Получение конечной точки
-description: Получение свойств и связей определенного объекта конечной точки.
+description: Извлечение свойств и связей определенного конечного объекта.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 author: yyuank
-ms.openlocfilehash: 5b2745d2914ccf1ce8c775053358ff12eaabf745
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ab98177176b85101e1122edc52789a7d77d27d15
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955069"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760723"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
 
@@ -18,7 +18,7 @@ ms.locfileid: "48955069"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей определенного объекта [конечной точки](../resources/endpoint.md) .
+Извлечение свойств и связей определенного [конечного](../resources/endpoint.md) объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ GET /groups/{id}/endpoints/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [конечной точки](../resources/endpoint.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [Endpoint](../resources/endpoint.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса iPv6CidrRange
-description: Представляет диапазон IPv6-адресов с использованием нотации CIDR.
+title: тип ресурса iPv6CidrRange
+description: Представляет диапазон IPv6 с помощью нотации CIDR.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 75c15484a310bdff66052b9381bea8b62779979c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8afeeed483b3610c5c1dde1afee5f4a24317ff4
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967459"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760864"
 ---
-# <a name="ipv6cidrrange-resource-type"></a>Тип ресурса iPv6CidrRange
+# <a name="ipv6cidrrange-resource-type"></a>тип ресурса iPv6CidrRange
 
 Пространство имен: microsoft.graph
 
-Представляет диапазон IPv6-адресов с использованием нотации CIDR.
+Представляет диапазон IPv6 с помощью нотации CIDR.
 
 Наследуется от ресурса [ipRange](../resources/iprange.md)
 
@@ -24,7 +24,7 @@ ms.locfileid: "47967459"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Цидраддресс|String|IPv6-адрес в нотации CIDR|
+|cidrAddress|String|Адрес IPv6 в нотации CIDR|
 
 ## <a name="json-representation"></a>Представление JSON
 

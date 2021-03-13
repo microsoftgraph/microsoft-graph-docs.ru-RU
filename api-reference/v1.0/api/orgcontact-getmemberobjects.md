@@ -1,31 +1,31 @@
 ---
 title: 'orgContact: getMemberObjects'
-description: Возврат всех групп, членом которых является это организационное Контактное лицо. Это транзитивная проверка.
+description: Верни все группы, в которые входит этот организационный контакт. Это транзитивная проверка.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7fd09f86c53252cb0fd7cbcc69b9ac4d3db3d47a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a51cd565b363e1fe080f5a1d48de9f51b38d78f7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988662"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761641"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 
 Пространство имен: microsoft.graph
 
-Возврат всех групп, членом которых является это [организационное Контактное лицо](../resources/orgcontact.md) . Это транзитивная проверка. Организационные контакты не могут быть членами ролей каталогов. Роли каталога не возвращаются.
+Верни все группы, в [которые](../resources/orgcontact.md) входит этот организационный контакт. Это транзитивная проверка. Организационные контакты не могут быть членами ролей каталога. Роли каталога не возвращаются.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,11 +44,11 @@ POST /contacts/{id}/getMemberObjects
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое|Значение `false` . Возвращение лишь защищенных групп поддерживается только для пользователей.|
+|securityEnabledOnly|Boolean|Установите `false` для . Возвращение лишь защищенных групп поддерживается только для пользователей.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="example"></a>Пример
 

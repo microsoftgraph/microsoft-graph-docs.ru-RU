@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса iPv4CidrRange
-description: Представляет диапазон IPv4-адресов с использованием нотации CIDR.
+title: тип ресурса iPv4CidrRange
+description: Представляет диапазон IPv4 с помощью нотации CIDR.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1b4276d038fd6c59460ed906ad30dcad925a3631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b1af8d424d3e8dfc6f1791fa83a633e571310e6
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041283"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760871"
 ---
-# <a name="ipv4cidrrange-resource-type"></a>Тип ресурса iPv4CidrRange
+# <a name="ipv4cidrrange-resource-type"></a>тип ресурса iPv4CidrRange
 
 Пространство имен: microsoft.graph
 
-Представляет диапазон IPv4-адресов с использованием нотации CIDR.
+Представляет диапазон IPv4 с помощью нотации CIDR.
 
 Наследуется от ресурса [ipRange](../resources/iprange.md)
 
@@ -24,7 +24,7 @@ ms.locfileid: "48041283"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Цидраддресс|String|IPv4-адрес в нотации CIDR|
+|cidrAddress|String|Адрес IPv4 в нотации CIDR|
 
 ## <a name="json-representation"></a>Представление JSON
 

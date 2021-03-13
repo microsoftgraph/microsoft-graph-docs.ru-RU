@@ -1,31 +1,31 @@
 ---
 title: Список directReports
-description: Получение подчиненных отчетов о контакте.
+description: Получите прямые отчеты контакта.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f1c530293fd763c1309adbc1d5e082a3a98cbd8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d294f80b8bf1e55e1575490fb1b888e78afbd47
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083339"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761634"
 ---
 # <a name="list-directreports"></a>Список directReports
 
 Пространство имен: microsoft.graph
 
-Получение подчиненных контактов для этого [организационного контакта](../resources/orgcontact.md).
+Получите прямые отчеты для этого [организационного контакта.](../resources/orgcontact.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

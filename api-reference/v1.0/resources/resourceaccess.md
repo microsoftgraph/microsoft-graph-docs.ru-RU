@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Ресаурцеакцесс
-description: Указывает область разрешений OAuth 2,0 или роль приложения, требуемую приложением.
+title: тип ресурса ResourceAccess
+description: Указывает область разрешений OAuth 2.0 или роль приложения, которая требуется приложению.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c5fb2478fbce4aeece78e70983ee15fda46ac602
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bad89764571b6ab3a2770432a950428fec0d9407
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967235"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761306"
 ---
-# <a name="resourceaccess-resource-type"></a>Тип ресурса Ресаурцеакцесс
+# <a name="resourceaccess-resource-type"></a>тип ресурса ResourceAccess
 
 Пространство имен: microsoft.graph
 
-Указывает область разрешений OAuth 2,0 или роль приложения, требуемую приложением. Свойство **ресаурцеакцесс** типа [рекуиредресаурцеакцесс](requiredresourceaccess.md) является коллекцией **ресаурцеакцесс**.
+Указывает область разрешений OAuth 2.0 или роль приложения, которая требуется приложению. Свойство **resourceAccess** типа [requiredResourceAccess](requiredresourceaccess.md) — это коллекция **ResourceAccess.**
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор для одного из экземпляров [oauth2PermissionScopes](permissionscope.md) или [аппроле](approle.md) , предоставляемых приложением ресурсов.|
-|type|String|Указывает, ссылается ли свойство **ID** на объект [oauth2PermissionScopes](permissionscope.md) или [аппроле](approle.md). Возможные значения: `Scope` или `Role` .|
+|id|GUID|Уникальный идентификатор для одного из [экземпляров oauth2PermissionScopes](permissionscope.md) или экземпляров [appRole,](approle.md) которые предоставляет приложение ресурса.|
+|type|String|Указывает, ссылается ли свойство **id** на [oauth2PermissionScopes](permissionscope.md) или [appRole.](approle.md) Возможные значения: `Scope` или `Role`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

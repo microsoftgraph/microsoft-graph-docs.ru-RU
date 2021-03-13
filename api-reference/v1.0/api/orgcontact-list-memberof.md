@@ -1,31 +1,31 @@
 ---
 title: Список memberOf
-description: Список групп, участником которых является этот контакт организаитонал.
+description: Список групп, в которые входит этот органоайтональный контакт.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d194fd78ca7bc8eb713ea06ee18656b888630a68
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4814a7dc4482c87edd3e27c7b8949e7fef388ec0
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461218"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761627"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
 Пространство имен: microsoft.graph
 
-Список групп, участником которых является это [организационное Контактное лицо](../resources/orgcontact.md) .
+Список групп, в [которые](../resources/orgcontact.md) входит этот организационный контакт.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "48461218"
 GET /contacts/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` для настройки ответа.
+Этот метод поддерживает [параметры запроса OData для](/graph/query-parameters) `$select` настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |

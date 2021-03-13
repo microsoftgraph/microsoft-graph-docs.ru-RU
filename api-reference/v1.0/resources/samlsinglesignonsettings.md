@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Самлсинглесигнонсеттингс
-description: Представляет параметры единого входа SAML.
+title: тип ресурса samlSingleSignOnSettings
+description: Представляет параметры единого входного знака SAML.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ccce89f6cb3e577eba526683f4d8eb25e68402cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c923c4c5b7294abb78e7fe93f852f14304601de6
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088435"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761088"
 ---
-# <a name="samlsinglesignonsettings-resource-type"></a>Тип ресурса Самлсинглесигнонсеттингс
+# <a name="samlsinglesignonsettings-resource-type"></a>тип ресурса samlSingleSignOnSettings
 
-Представляет контейнер для параметров, связанных с единым входом SAML.
+Представляет контейнер для параметров, связанных с одним входом SAML.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|релайстате|Строка| Относительный URI, по которому поставщик услуг перенаправляется после завершения процесса единого входа. |
+|relayState|String| Относительный URI, на который поставщик услуг перенаправляет после завершения единого потока входов. |
 
 
 ## <a name="json-representation"></a>Представление JSON

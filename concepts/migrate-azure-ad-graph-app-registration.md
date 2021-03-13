@@ -3,13 +3,13 @@ title: Просмотр вопросов регистрации, разреше�
 description: Описывает миграцию регистрации, разрешений и согласия приложений из Azure Active Directory (Azure AD) в API Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 06eeb5adeb1625559ca838a04590d2db65a03f97
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.prod: applications
+ms.openlocfilehash: 1ba0ad7c7b0826dae7c5d971f7580784447ec708
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470650"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760702"
 ---
 # <a name="review-app-registration-permissions-and-consent"></a>Просмотр регистрации, разрешений и согласия приложений
 

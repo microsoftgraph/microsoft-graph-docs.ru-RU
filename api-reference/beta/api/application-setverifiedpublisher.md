@@ -1,24 +1,24 @@
 ---
-title: 'Приложение: Сетверифиедпублишер'
+title: 'приложение: setVerifiedPublisher'
 description: Установка проверенного издателя приложения.
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3aa6156ca95e1d75376ac24be9883aa0ed3db04e
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: d3c66c064cc2628141abe7029fa9fe5121f86a20
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634585"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760660"
 ---
-# <a name="application-setverifiedpublisher"></a>Приложение: Сетверифиедпублишер
+# <a name="application-setverifiedpublisher"></a>приложение: setVerifiedPublisher
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задайте [верифиедпублишер](../resources/verifiedPublisher.md) для [приложения](../resources/application.md). Дополнительные сведения, включая предварительные требования для настройки проверенного издателя, можно найти в статье [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview).
+Установите [проверенныйPublisher](../resources/verifiedPublisher.md) в [приложении.](../resources/application.md) Дополнительные сведения, в том числе необходимые для установки проверенного издателя, см. в книге [Проверка Publisher.](/azure/active-directory/develop/publisher-verification-overview)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48634585"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение | Не поддерживается |
+|Для приложений | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,11 +45,11 @@ POST /applications/{id}/setVerifiedPublisher
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите следующие обязательные свойства.
+В теле запроса укажи следующие необходимые свойства.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| верифиедпублишерид | строка | Идентификатор сети партнерской сети (МПНИД) проверенного издателя, который необходимо задать для приложения, из учетной записи центра партнера издателя. |
+| verifiedPublisherId | string | ID microsoft Partner Network (MPNID) проверенного издателя, который будет задат в приложении, из учетной записи Центра партнеров издателя. |
 
 ## <a name="response"></a>Отклик
 

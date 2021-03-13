@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Домаинстате
+title: тип ресурса domainState
 description: Представляет состояние асинхронных операций, запланированных в домене.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fe1d6db925960214c19be27e218b254b31ea3f75
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ab9a4af3109e35cd1022b4d62869ce3bb034100
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018629"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761186"
 ---
-# <a name="domainstate-resource-type"></a>Тип ресурса Домаинстате
+# <a name="domainstate-resource-type"></a>тип ресурса domainState
 
 Пространство имен: microsoft.graph
 
@@ -22,9 +22,9 @@ ms.locfileid: "48018629"
 
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-| ластактиондатетиме | DateTimeOffset | Временная метка времени последнего действия. Значение обновляется при планировании операции асинхронная задача начинается и после завершения операции. |
-| восстановление | String | Тип асинхронной операции. Значения могут быть *форцеделете* или *верификацией* |
-| status | String | Текущее состояние операции. <br> *Запланированная* операция запланирована, но еще не запущена. <br> *Выполнение* — задача запущена и выполняется. <br> *Failed* — не удалось выполнить операцию. |
+| lastActionDateTime | DateTimeOffset | Timestamp для последнего действия. Значение обновляется, когда запланирована операция, начинается асинхронная задача и когда операция завершается. |
+| операция | String | Тип асинхронной операции. Значения могут быть *ForceDelete или* *Проверка* |
+| status | String | Текущее состояние операции. <br> *Запланированный* . Операция была запланирована, но не началась. <br> *InProgress* — задача запущена и находится в процессе выполнения. <br> *Failed* - Operation has failed. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

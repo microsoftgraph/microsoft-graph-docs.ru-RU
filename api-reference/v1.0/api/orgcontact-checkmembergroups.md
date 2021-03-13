@@ -1,24 +1,24 @@
 ---
-title: 'orgContact: Чеккмемберграупс'
-description: Проверка участия в указанном списке групп. Возвращает из списка идентификаторы групп, в которых Контактное лицо имеет прямое или транзитивное членство.
+title: 'orgContact: checkMemberGroups'
+description: Проверка участия в указанном списке групп. Возвращает из списка те групповые ИД, у которых организационный контакт имеет прямое или транзитное членство.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb91b50b49aca27f75f38586517e118dc0850ee9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5bdafc5ecaf7e2f95017267bf35ff140994bfb1d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063011"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761362"
 ---
-# <a name="orgcontact-checkmembergroups"></a>orgContact: Чеккмемберграупс
+# <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 
 Пространство имен: microsoft.graph
 
-Проверка участия в указанном списке групп. Возвращает из списка идентификаторы групп, в которых [Контактное лицо](../resources/orgcontact.md) имеет прямое или транзитивное членство.
+Проверка участия в указанном списке групп. Возвращает из списка те групповые ИД, у которых организационный контакт [имеет](../resources/orgcontact.md) прямое или транзитное членство.
 
-В одном запросе можно проверять до 20 групп. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure Active Directory (Azure AD).
+В одном запросе можно проверять до 20 групп. Эта функция поддерживает Microsoft 365 и другие типы групп, которые предусмотрены в Azure Active Directory (Azure AD).
 
 >[!NOTE]
 >Группы Microsoft 365 не могут содержать группы. Членство в группе Microsoft 365 всегда является прямым.
@@ -29,9 +29,9 @@ ms.locfileid: "48063011"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ POST /contacts/{id}/checkMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция строк | Список идентификаторов групп, которые необходимо проверить. |
+|groupIds|Коллекция строк | Список групп, которые необходимо проверить. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="example"></a>Пример
 

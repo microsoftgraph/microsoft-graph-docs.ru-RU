@@ -3,14 +3,14 @@ title: тип ресурса orgContact
 description: Представляет организационный контакт
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 05a78598cb249d203510674ac96b2dd69d236e26
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fe19b4b840f1f9d9ef5bc3eaff502bf448eb1432
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721546"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761221"
 ---
 # <a name="orgcontact-resource-type"></a>тип ресурса orgContact
 
@@ -32,9 +32,9 @@ ms.locfileid: "50721546"
 | [Список directReports](../api/orgcontact-list-directreports.md)           | Коллекция [directoryObject](directoryobject.md) | Список прямых отчетов контактов организации.                                                                           |
 | [Перечисление memberOf](../api/orgcontact-list-memberof.md)                     | Коллекция [directoryObject](directoryobject.md) | Список групп, в которые входит организационный контакт.                                                                   |
 | [Список transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | Коллекция [directoryObject](directoryobject.md) | Список групп, в которые входит организационный контакт, в том числе группы, в которых вложен организационный контакт. |
-| [checkMemberGroups](../api/orgcontact-checkmembergroups.md)             | Коллекция String                                | Проверка членства в группе.                                                                                                 |
-| [getMemberGroups](../api/orgcontact-getmembergroups.md)                 | Коллекция String                                | Верни все группы, в которые входит указанный организационный контакт.                                             |
-| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | Коллекция String                                | Возвращает список directoryObjects, в который входит организационный контакт.                                               |
+| [checkMemberGroups](../api/orgcontact-checkmembergroups.md)             | Коллекция строк                                | Проверка членства в группе.                                                                                                 |
+| [getMemberGroups](../api/orgcontact-getmembergroups.md)                 | Коллекция строк                                | Верни все группы, в которые входит указанный организационный контакт.                                             |
+| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | Коллекция строк                                | Возвращает список directoryObjects, в который входит организационный контакт.                                               |
 
 ## <a name="properties"></a>Свойства
 
@@ -51,9 +51,9 @@ ms.locfileid: "50721546"
 | mailNickname                 | String                                                                   | Псевдоним электронной почты (часть адреса электронной почты, предварительно ожидающих символ @) для этого организационного контакта.                                                                                                                                                                                           |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                                           | Дата и время последней синхронизации этого организационного контакта с локальной AD. Эта информация о дате и времени использует формат ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.                            |
 | onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Список ошибок в обеспечении синхронизации для этого организационного контакта.                                                                                                                                                                                                           |
-| onPremisesSyncEnabled        | Логический                                                                  | **верно,** если этот объект синхронизирован из локального каталога; **false,** если этот объект был первоначально синхронизирован из локального каталога, но больше не синхронизирован и теперь освоен в Exchange; **null,** если этот объект никогда не был синхронизирован из локального каталога (по умолчанию). |
+| onPremisesSyncEnabled        | Boolean                                                                  | **верно,** если этот объект синхронизирован из локального каталога; **false,** если этот объект был первоначально синхронизирован из локального каталога, но больше не синхронизирован и теперь освоен в Exchange; **null,** если этот объект никогда не был синхронизирован из локального каталога (по умолчанию). |
 | phones                       | Коллекция [phone](phone.md)                                             | Список телефонов для этого организационного контакта. Типы телефонов могут быть мобильными, бизнес и businessFax. Только один из каждого типа может присутствовать в коллекции.                                                                                                                         |
-| proxyAddresses               | Коллекция String                                                        | Например: SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$ фильтр.                                                                                                                |
+| proxyAddresses               | Коллекция строк                                                        | Например: SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$ фильтр.                                                                                                                |
 | surname                      | String                                                                   | Фамилия для этого организационного контакта.                                                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Связи

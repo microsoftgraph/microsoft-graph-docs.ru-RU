@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса policyBase
-description: Представляет абстрактный базовый тип для типов политик, от которые необходимо наследовать.
+description: Представляет абстрактный базовый тип для типов политик, от которые можно наследовать.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: deb6b11d9ebb8e2ef4ec9f5a2874903577f593b2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a091fb23be66f476b03b725e29dced32b138c9bc
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156338"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761516"
 ---
 # <a name="policybase-resource-type"></a>Тип ресурса policyBase
 
 Пространство имен: microsoft.graph
 
-Представляет абстрактный базовый тип для типов политик, от которые необходимо наследовать.
+Представляет абстрактный базовый тип для типов политик, от которые можно наследовать.
 
 ## <a name="methods"></a>Методы
 
@@ -28,7 +28,7 @@ ms.locfileid: "50156338"
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображаемого имени для этой политики. |
+|displayName|String| Отображение имени для этой политики. |
 
 ## <a name="relationships"></a>Связи
 

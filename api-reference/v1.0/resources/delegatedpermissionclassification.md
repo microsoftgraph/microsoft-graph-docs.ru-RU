@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Делегатедпермиссионклассификатион
+title: тип ресурса delegatedPermissionClassification
 description: Используется для указания классификации делегированного разрешения.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 7d5926bff0d7096080aa22fae49d0ed15c7d1fcd
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: ff9f4ca394e2065c69fd7cd08a19d60817fc4f99
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377419"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761760"
 ---
-# <a name="delegatedpermissionclassification-resource-type"></a>Тип ресурса Делегатедпермиссионклассификатион
+# <a name="delegatedpermissionclassification-resource-type"></a>тип ресурса delegatedPermissionClassification
 
 Пространство имен: microsoft.graph
 
 Используется для указания классификации делегированного разрешения.
 
-Делегированные классификации разрешений можно использовать в сочетании с параметрами согласия пользователя для выбора разрешений, на которые пользователю разрешено согласие. Узнайте, [как конечные пользователи](/azure/active-directory/manage-apps/configure-user-consent) могут узнать больше о классификациях разрешений для приложений.
+Делегированная классификация разрешений может использоваться в сочетании с настройками согласия пользователя для выбора разрешений, на которые разрешено согласие пользователя. Подробнее о классификации разрешений см. в приложении Configure how [end-users consent to applications.](/azure/active-directory/manage-apps/configure-user-consent)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| id | Строка | Уникальный идентификатор для ключа **делегатедпермиссионклассификатион** . Значение null не допускается. Только для чтения. |
-| classification | пермиссионклассификатионтипе | Заданное значение классификации. Возможные значения: `low` . Не поддерживает `$filter`. |
-| пермиссионид | Guid | Уникальный идентификатор (**ID**) для делегированного разрешения, указанного в коллекции **oauth2PermissionScopes** объекта [servicePrincipal](servicePrincipal.md). Требуется при создании. Не поддерживает `$filter`. |
-| пермиссионнаме | Строка | Значение утверждения (**value**) для делегированного разрешения, указанного в коллекции **oauth2PermissionScopes** объекта [servicePrincipal](servicePrincipal.md). Не поддерживает `$filter`. |
+| id | String | Уникальный идентификатор для ключа **делегированияPermissionClassification.** Значение null не допускается. Только для чтения. |
+| classification | permissionClassificationType | Задано значение классификации. Возможное значение: `low` . Не поддерживает `$filter`. |
+| permissionId | Guid | Уникальный идентификатор **(id)** для делегированного разрешения, перечисленного в **коллекции oauth2PermissionScopes** [службыPrincipal.](servicePrincipal.md) Требуется при создании. Не поддерживает `$filter`. |
+| permissionName | String | Значение утверждения **(значение)** для делегированного разрешения, перечисленного в **коллекции oauth2PermissionScopes** [службыPrincipal.](servicePrincipal.md) Не поддерживает `$filter`. |
 
 ## <a name="json-representation"></a>Представление JSON
 

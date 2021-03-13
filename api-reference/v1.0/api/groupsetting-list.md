@@ -1,22 +1,22 @@
 ---
 title: Параметры группы списка
-description: Получение списка объектов параметров групп.
+description: Извлечение списка объектов группового настройки.
 author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5ea98dc5d7fd2db802fb7b27e0e9536ef0830bcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6db805374ce4783ff9d339f128efd7bc416ab161
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973393"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761314"
 ---
 # <a name="list-group-settings"></a>Параметры группы списка
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов параметров групп.
+Извлечение списка объектов группового настройки.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,7 @@ ms.locfileid: "47973393"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Перечисление параметров на уровне клиента или группы.
+Список параметров клиента или группы.
 
 ```http
 GET /groupSettings
@@ -48,12 +48,12 @@ GET groups/{id}/settings
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [groupSetting](../resources/groupsetting.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [groupSetting](../resources/groupsetting.md) в тексте ответа.
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос

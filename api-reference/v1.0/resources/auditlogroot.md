@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Аудитлогрут
-description: Содержит различные типы журналов аудита. Эти ресурсы возвращают одноэлементный ресурс Аудитлог. Он не содержит пригодных для использования свойств.
+title: тип ресурсов auditLogRoot
+description: Содержит различные типы журналов аудита. Эти ресурсы возвращают однотонный ресурс auditLog. Он не содержит никаких полезных свойств.
 author: dhanyahk
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 86ecd0e7721ad804174359baf19bfde7a3230c16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 363d3a0c3aafbbd5b3d53914748dfdb1fd432b1b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009452"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759729"
 ---
-# <a name="auditlogroot-resource-type"></a>Тип ресурса Аудитлогрут
+# <a name="auditlogroot-resource-type"></a>тип ресурсов auditLogRoot
 
 Пространство имен: microsoft.graph
 
-Содержит различные типы журналов аудита. Эти ресурсы возвращают одноэлементный ресурс Аудитлог. Он не содержит пригодных для использования свойств.
+Содержит различные типы журналов аудита. Эти ресурсы возвращают однотонный ресурс auditLog. Он не содержит никаких полезных свойств.
 
 ## <a name="methods"></a>Методы
 
@@ -35,12 +35,12 @@ ms.locfileid: "48009452"
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|директоряудитс|Коллекция [директоряудит](directoryaudit.md)| Только для чтения. Допускается значение null.|
-|сигнинс|Коллекция [SignIn](signin.md)| Только для чтения. Допускается значение null.|
+|directoryAudits|[коллекция directoryAudit](directoryaudit.md)| Только для чтения. Допускается значение null.|
+|signIns|[signIn](signin.md) collection| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже показано представление ресурса в формате JSON.
 
 <!--{
   "blockType": "resource",

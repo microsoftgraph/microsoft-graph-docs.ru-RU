@@ -3,14 +3,14 @@ title: Регистрация приложения с помощью конеч�
 description: Приложение должно быть зарегистрировано в Azure AD. При регистрации приложения создается уникальный идентификатор и другие значения, используемые приложением для проверки подлинности в Azure AD и получения маркеров.
 author: jackson-woods
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 12cf99ba3e97c699ba4531cb7f0a02b6211e9627
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: c4790651e4f963d1d999fc3347f09ea3293f8791
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289500"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760737"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>Регистрация приложения с помощью платформы удостоверений Майкрософт
 
