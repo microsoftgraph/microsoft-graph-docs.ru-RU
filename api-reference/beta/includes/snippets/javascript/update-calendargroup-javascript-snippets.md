@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1af120c0137ad158141ff49bc16c8684ff39a534
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c38efeeb213dd6d4ef30327e96ccd4a80e90676a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638253"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50810224"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const calendarGroup = {
-  name: "name-value"
+  name: 'name-value'
 };
 
-let res = await client.api('/me/calendarGroups/{id}')
+await client.api('/me/calendarGroups/{id}')
     .version('beta')
     .update(calendarGroup);
 
