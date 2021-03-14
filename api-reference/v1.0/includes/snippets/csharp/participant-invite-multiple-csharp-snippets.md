@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c0bc0e049acb176872b3ccf75c9f10f2219bd469
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 48318049b5102ed019f262ce741c2c6cbb7306cb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866298"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782695"
 ---
 ```csharp
 
@@ -41,7 +41,7 @@ var participants = new List<InvitationParticipantInfo>()
 
 var clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
 
-await graphClient.Communications.Calls["7531d31f-d10d-44de-802f-c569dbca451c"].Participants
+await graphClient.Communications.Calls["{call-id}"].Participants
     .Invite(participants,clientContext)
     .Request()
     .PostAsync();
