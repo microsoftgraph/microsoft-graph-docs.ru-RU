@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5d2522b6b8dc677638c7fc07ab525874c40e988b
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 0f991fb117ab1d3df7eb7e98f2b604de5b435834
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691471"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802200"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-   defaultUserRolePermissions:{
-      allowedToCreateApps:false
+   defaultUserRolePermissions: {
+      allowedToCreateApps: false
    }
 };
 
-let res = await client.api('/policies/authorizationPolicy')
+await client.api('/policies/authorizationPolicy')
     .update(authorizationPolicy);
 
 ```
