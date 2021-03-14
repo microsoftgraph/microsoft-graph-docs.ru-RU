@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7aa776ed07782537b950f56a50504744d2cd801a
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 8e99c6ae5a8dc068b855a58e1335497c698fac66
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49756018"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782287"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/events/AAMkAGIAAAoZDOFAAA=')
+let event = await client.api('/me/events/AAMkAGIAAAoZDOFAAA=')
     .header('Prefer','outlook.timezone="Pacific Standard Time"')
     .select('subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees')
     .get();

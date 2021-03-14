@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 84e4582a7a728680a848bbe80dd013bd4efe8266
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: b101250d50b1838a2632fb212aaee26a5344f2e9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684639"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782826"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var fieldValueSet = new FieldValueSet
     }
 };
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Fields
+await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].Fields
     .Request()
     .UpdateAsync(fieldValueSet);
 

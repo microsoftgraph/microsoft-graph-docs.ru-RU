@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f76a9c8ee7b6e34bf07e1ed4bebaad21979e1db3
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: d9dd1f6b17717955613a9702c22c2fba72560556
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373466"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785450"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var channel = new Channel
     MembershipType = ChannelMembershipType.Standard
 };
 
-await graphClient.Teams["{id}"].Channels
+await graphClient.Teams["{team-id}"].Channels
     .Request()
     .AddAsync(channel);
 
