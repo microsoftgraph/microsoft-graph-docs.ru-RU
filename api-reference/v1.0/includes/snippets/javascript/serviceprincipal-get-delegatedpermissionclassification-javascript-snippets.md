@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2b95cf2b7ab154841861d5f82ac3d6d5aa2d0492
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 01dd51f9de837e22da86deba88049b66c9ddfb36
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524021"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786826"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals/{id}/delegatedPermissionClassifications')
+let delegatedPermissionClassifications = await client.api('/servicePrincipals/{id}/delegatedPermissionClassifications')
     .get();
 
 ```
