@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2cd945556cf542085a742ecd641a5ed8a79277db
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 747e127a702eee59eb845679ad1e8a12e7fe5aa9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620921"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792061"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/contactFolders/{id}/contacts/delta')
+let delta = await client.api('/me/contactFolders/{id}/contacts/delta')
     .header('Prefer','odata.maxpagesize=2')
     .select('displayName')
     .get();

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: de711a05ca4c7cfbc305a7e69568aa29ab932aae
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 7aa03556552128961548788330f973e7678eca42
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36638568"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778660"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const workbookChartPoint = {
   index: 8
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt')
     .post(workbookChartPoint);
 
 ```
