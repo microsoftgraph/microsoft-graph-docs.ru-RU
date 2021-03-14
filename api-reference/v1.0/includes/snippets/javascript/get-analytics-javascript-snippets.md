@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7cdbbb60fe41438f19cb9b969be2719983421102
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 2cd1c84b6c92764d0561100704926b23f2d2e835
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793934"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801427"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/followedSites')
+let itemAnalytics = await client.api('/drives/{drive-id}/items/{item-id}/analytics')
     .get();
 
 ```
