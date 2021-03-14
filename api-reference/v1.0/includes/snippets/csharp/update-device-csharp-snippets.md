@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 848afda8c51daa2aac2656192ec8205f77a67635
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 77d778bc87f9fefbb381faf7c78878cde05ac05b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48619379"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799251"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var device = new Device
     AccountEnabled = false
 };
 
-await graphClient.Devices["{id}"]
+await graphClient.Devices["{device-id}"]
     .Request()
     .UpdateAsync(device);
 
