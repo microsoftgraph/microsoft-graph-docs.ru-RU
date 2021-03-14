@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7e5fb1b431dbc94a63bd330fdd1d1ac4d12b966d
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: f7cb57bd8274e62335134993b2ffde89928dc6b7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998990"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804738"
 ---
 ```csharp
 
@@ -21,7 +21,7 @@ var extensionProperty = new ExtensionProperty
     }
 };
 
-await graphClient.Applications["{id}"].ExtensionProperties
+await graphClient.Applications["{application-id}"].ExtensionProperties
     .Request()
     .AddAsync(extensionProperty);
 
