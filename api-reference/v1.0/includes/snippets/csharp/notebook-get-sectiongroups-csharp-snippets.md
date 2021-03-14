@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 420e4f209a5ffe7a196ca697b73d6f1b4d6674f0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 07a8232884e9cc44b8832098aa61d5fc6aa4c3ae
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892777"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804774"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var sectionGroups = await graphClient.Me.Onenote.Notebooks["{id}"].SectionGroups
+var sectionGroups = await graphClient.Me.Onenote.Notebooks["{notebook-id}"].SectionGroups
     .Request()
     .GetAsync();
 
