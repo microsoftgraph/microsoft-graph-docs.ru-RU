@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5b8cb8f5fa1c29c3946255ebb311adaceec70c12
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 28e84cc2bad4317f6e562a94ae724d31c2fe67d8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365578"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801978"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var persistChanges = true;
 
-await graphClient.Me.Drive.Items["{id}"].Workbook
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook
     .CreateSession(persistChanges)
     .Request()
     .PostAsync();
