@@ -1,0 +1,23 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 1b1ecd8a98a56de213ba413d1f5ed9f3bf5179c5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946722"
+---
+```csharp
+
+GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var directoryObject = new DirectoryObject
+{
+    Id = "{id}"
+};
+
+await graphClient.Devices["{device-id}"].RegisteredUsers.References
+    .Request()
+    .AddAsync(directoryObject);
+
+```
