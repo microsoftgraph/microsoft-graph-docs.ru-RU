@@ -5,32 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2f1fce44d9f6aa4ac299497d6d0c6de11cc062c8
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: d7edf057ecb82eb42fa9f5368ef8a26c445a3a08
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576808"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943634"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="9ef3d-103">вызов: перенаправление</span><span class="sxs-lookup"><span data-stu-id="9ef3d-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="3df02-103">вызов: перенаправление</span><span class="sxs-lookup"><span data-stu-id="3df02-103">call: redirect</span></span>
 
-<span data-ttu-id="9ef3d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9ef3d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3df02-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3df02-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9ef3d-105">Перенаправьте входящий вызов, на который еще не ответили [и](./call-answer.md) [не ответили.](./call-reject.md)</span><span class="sxs-lookup"><span data-stu-id="9ef3d-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="9ef3d-106">Термины "перенаправление" и "переадресовка" вызова используются взаимозаменяемо.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
+<span data-ttu-id="3df02-105">Перенаправьте входящий вызов, на который еще не ответили [и](./call-answer.md) [не ответили.](./call-reject.md)</span><span class="sxs-lookup"><span data-stu-id="3df02-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="3df02-106">Термины "перенаправление" и "переадресовка" вызова используются взаимозаменяемо.</span><span class="sxs-lookup"><span data-stu-id="3df02-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
 
-<span data-ttu-id="9ef3d-107">Ожидается, что бот перенаправляет вызов до времени вызова. Текущее значение времени времени — 15 секунд.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
+<span data-ttu-id="3df02-107">Ожидается, что бот перенаправляет вызов до времени вызова. Текущее значение времени времени — 15 секунд.</span><span class="sxs-lookup"><span data-stu-id="3df02-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9ef3d-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9ef3d-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3df02-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3df02-108">Permissions</span></span>
 
-<span data-ttu-id="9ef3d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9ef3d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3df02-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3df02-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="9ef3d-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9ef3d-111">Permission type</span></span> | <span data-ttu-id="9ef3d-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9ef3d-112">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="3df02-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3df02-111">Permission type</span></span> | <span data-ttu-id="3df02-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3df02-112">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="9ef3d-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9ef3d-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="9ef3d-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="9ef3d-114">Not Supported</span></span>                |
-| <span data-ttu-id="9ef3d-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9ef3d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ef3d-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="9ef3d-116">Not Supported</span></span>                |
-| <span data-ttu-id="9ef3d-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="9ef3d-117">Application</span></span>     | <span data-ttu-id="9ef3d-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="9ef3d-118">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="3df02-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3df02-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="3df02-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="3df02-114">Not Supported</span></span>                |
+| <span data-ttu-id="3df02-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3df02-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3df02-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="3df02-116">Not Supported</span></span>                |
+| <span data-ttu-id="3df02-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3df02-117">Application</span></span>     | <span data-ttu-id="3df02-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="3df02-118">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="9ef3d-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9ef3d-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3df02-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3df02-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,33 +38,33 @@ ms.locfileid: "50576808"
 POST /communications/calls/{id}/redirect
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9ef3d-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9ef3d-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3df02-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3df02-120">Request headers</span></span>
 
-| <span data-ttu-id="9ef3d-121">Имя</span><span class="sxs-lookup"><span data-stu-id="9ef3d-121">Name</span></span>          | <span data-ttu-id="9ef3d-122">Описание</span><span class="sxs-lookup"><span data-stu-id="9ef3d-122">Description</span></span>               |
+| <span data-ttu-id="3df02-121">Имя</span><span class="sxs-lookup"><span data-stu-id="3df02-121">Name</span></span>          | <span data-ttu-id="3df02-122">Описание</span><span class="sxs-lookup"><span data-stu-id="3df02-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="9ef3d-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9ef3d-123">Authorization</span></span> | <span data-ttu-id="9ef3d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3df02-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3df02-123">Authorization</span></span> | <span data-ttu-id="3df02-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3df02-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9ef3d-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9ef3d-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3df02-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3df02-126">Request body</span></span>
 
-<span data-ttu-id="9ef3d-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-127">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="3df02-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="3df02-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="9ef3d-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="9ef3d-128">Parameter</span></span>      | <span data-ttu-id="9ef3d-129">Тип</span><span class="sxs-lookup"><span data-stu-id="9ef3d-129">Type</span></span>    |<span data-ttu-id="9ef3d-130">Описание</span><span class="sxs-lookup"><span data-stu-id="9ef3d-130">Description</span></span>|
+| <span data-ttu-id="3df02-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="3df02-128">Parameter</span></span>      | <span data-ttu-id="3df02-129">Тип</span><span class="sxs-lookup"><span data-stu-id="3df02-129">Type</span></span>    |<span data-ttu-id="3df02-130">Описание</span><span class="sxs-lookup"><span data-stu-id="3df02-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9ef3d-131">targets</span><span class="sxs-lookup"><span data-stu-id="9ef3d-131">targets</span></span>|<span data-ttu-id="9ef3d-132">Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="9ef3d-132">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="9ef3d-133">Целевые участники операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-133">The target participants of the redirect operation.</span></span> <span data-ttu-id="9ef3d-134">Если задано несколько целевых объектов, это симуляцный вызов.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-134">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="9ef3d-135">Это означает, что все целевые объекты будут одновременно звонили и подключена только первая цель, подбираемая.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-135">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="9ef3d-136">Мы поддерживаем до 25 целей для simulring.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-136">We support up to 25 targets for simulring.</span></span>
-|<span data-ttu-id="9ef3d-137">timeout</span><span class="sxs-lookup"><span data-stu-id="9ef3d-137">timeout</span></span>|<span data-ttu-id="9ef3d-138">Int32</span><span class="sxs-lookup"><span data-stu-id="9ef3d-138">Int32</span></span>|<span data-ttu-id="9ef3d-139">Период времени (в секундах) для операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-139">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="9ef3d-140">Диапазон значения времени от 15 до 90 секунд включительно.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-140">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="9ef3d-141">Значение времени по умолчанию — 55 секунд для одной цели и 60 секунд для нескольких целей (при условии изменения).</span><span class="sxs-lookup"><span data-stu-id="9ef3d-141">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
-|<span data-ttu-id="9ef3d-142">callbackUri</span><span class="sxs-lookup"><span data-stu-id="9ef3d-142">callbackUri</span></span>|<span data-ttu-id="9ef3d-143">String</span><span class="sxs-lookup"><span data-stu-id="9ef3d-143">String</span></span>|<span data-ttu-id="9ef3d-144">Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-144">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="9ef3d-145">Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-145">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="9ef3d-146">Это должно быть `https` .</span><span class="sxs-lookup"><span data-stu-id="9ef3d-146">This must be `https`.</span></span>|
+|<span data-ttu-id="3df02-131">targets</span><span class="sxs-lookup"><span data-stu-id="3df02-131">targets</span></span>|<span data-ttu-id="3df02-132">Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="3df02-132">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="3df02-133">Целевые участники операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="3df02-133">The target participants of the redirect operation.</span></span> <span data-ttu-id="3df02-134">Если задано несколько целевых объектов, это симуляцный вызов.</span><span class="sxs-lookup"><span data-stu-id="3df02-134">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="3df02-135">Это означает, что все целевые объекты будут одновременно звонили и подключена только первая цель, подбираемая.</span><span class="sxs-lookup"><span data-stu-id="3df02-135">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="3df02-136">Мы поддерживаем до 25 целей для simulring.</span><span class="sxs-lookup"><span data-stu-id="3df02-136">We support up to 25 targets for simulring.</span></span>
+|<span data-ttu-id="3df02-137">timeout</span><span class="sxs-lookup"><span data-stu-id="3df02-137">timeout</span></span>|<span data-ttu-id="3df02-138">Int32</span><span class="sxs-lookup"><span data-stu-id="3df02-138">Int32</span></span>|<span data-ttu-id="3df02-139">Период времени (в секундах) для операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="3df02-139">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="3df02-140">Диапазон значения времени от 15 до 90 секунд включительно.</span><span class="sxs-lookup"><span data-stu-id="3df02-140">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="3df02-141">Значение времени по умолчанию — 55 секунд для одной цели и 60 секунд для нескольких целей (при условии изменения).</span><span class="sxs-lookup"><span data-stu-id="3df02-141">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
+|<span data-ttu-id="3df02-142">callbackUri</span><span class="sxs-lookup"><span data-stu-id="3df02-142">callbackUri</span></span>|<span data-ttu-id="3df02-143">String</span><span class="sxs-lookup"><span data-stu-id="3df02-143">String</span></span>|<span data-ttu-id="3df02-144">Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений.</span><span class="sxs-lookup"><span data-stu-id="3df02-144">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="3df02-145">Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота.</span><span class="sxs-lookup"><span data-stu-id="3df02-145">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="3df02-146">Это должно быть `https` .</span><span class="sxs-lookup"><span data-stu-id="3df02-146">This must be `https`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9ef3d-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ef3d-147">Response</span></span>
-<span data-ttu-id="9ef3d-148">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-148">If successful, this method returns a `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="3df02-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="3df02-147">Response</span></span>
+<span data-ttu-id="3df02-148">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="3df02-148">If successful, this method returns a `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9ef3d-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="9ef3d-149">Examples</span></span>
-<span data-ttu-id="9ef3d-150">В этих примерах будет освещаться рабочий процесс уведомления о входящих вызовах и его перенаправление.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-150">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
+## <a name="examples"></a><span data-ttu-id="3df02-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="3df02-149">Examples</span></span>
+<span data-ttu-id="3df02-150">В этих примерах будет освещаться рабочий процесс уведомления о входящих вызовах и его перенаправление.</span><span class="sxs-lookup"><span data-stu-id="3df02-150">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
 
-> <span data-ttu-id="9ef3d-151">**Примечание:** Объекты ответа, показанные здесь, могут быть сокращены для читаемости.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-151">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="9ef3d-152">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-152">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3df02-151">**Примечание:** Объекты ответа, показанные здесь, могут быть сокращены для читаемости.</span><span class="sxs-lookup"><span data-stu-id="3df02-151">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="3df02-152">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3df02-152">All the properties will be returned from an actual call.</span></span>
 
-### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="9ef3d-153">Пример 1. Переадвока вызова в целевой объект</span><span class="sxs-lookup"><span data-stu-id="9ef3d-153">Example 1: Forward a Call to a Target</span></span>
+### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="3df02-153">Пример 1. Переадвока вызова в целевой объект</span><span class="sxs-lookup"><span data-stu-id="3df02-153">Example 1: Forward a Call to a Target</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="9ef3d-154">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="9ef3d-154">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="3df02-154">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="3df02-154">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -114,12 +114,12 @@ POST /communications/calls/{id}/redirect
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="9ef3d-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ef3d-155">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="3df02-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="3df02-155">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9ef3d-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ef3d-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3df02-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="3df02-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request", 
-  "name": "call-redirect"
+  "name": "call-redirect-1"
 } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
@@ -142,25 +142,25 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9ef3d-157">C#</span><span class="sxs-lookup"><span data-stu-id="9ef3d-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3df02-157">C#</span><span class="sxs-lookup"><span data-stu-id="3df02-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9ef3d-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ef3d-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3df02-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3df02-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9ef3d-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ef3d-159">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="3df02-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3df02-159">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9ef3d-160">Java</span><span class="sxs-lookup"><span data-stu-id="9ef3d-160">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="3df02-160">Java</span><span class="sxs-lookup"><span data-stu-id="3df02-160">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="9ef3d-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ef3d-161">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="3df02-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="3df02-161">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -169,11 +169,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---terminated"></a><span data-ttu-id="9ef3d-162">Уведомление — прекращено</span><span class="sxs-lookup"><span data-stu-id="9ef3d-162">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="3df02-162">Уведомление — прекращено</span><span class="sxs-lookup"><span data-stu-id="3df02-162">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
-  "name": "call-redirect"
+  "name": "call-redirect-2"
 } -->
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
@@ -229,9 +229,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="9ef3d-163">Пример 2. Перенацелив вызов на несколько целей с одновременным кольцом</span><span class="sxs-lookup"><span data-stu-id="9ef3d-163">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="3df02-163">Пример 2. Перенацелив вызов на несколько целей с одновременным кольцом</span><span class="sxs-lookup"><span data-stu-id="3df02-163">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="9ef3d-164">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="9ef3d-164">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="3df02-164">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="3df02-164">Notification - incoming</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -291,7 +291,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="9ef3d-165">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ef3d-165">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="3df02-165">Запрос</span><span class="sxs-lookup"><span data-stu-id="3df02-165">Request</span></span>
 
 <!-- {
   "blockType": "ignored", 
@@ -334,7 +334,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="9ef3d-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ef3d-166">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="3df02-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="3df02-166">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -345,7 +345,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="9ef3d-167">Уведомление — прекращено</span><span class="sxs-lookup"><span data-stu-id="9ef3d-167">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="3df02-167">Уведомление — прекращено</span><span class="sxs-lookup"><span data-stu-id="3df02-167">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -400,11 +400,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-forward-a-call-to-a-pstn-number"></a><span data-ttu-id="9ef3d-168">Пример 3. Переадмить вызов на номер PSTN</span><span class="sxs-lookup"><span data-stu-id="9ef3d-168">Example 3: Forward a call to a PSTN number</span></span>
+### <a name="example-3-forward-a-call-to-a-pstn-number"></a><span data-ttu-id="3df02-168">Пример 3. Переадмить вызов на номер PSTN</span><span class="sxs-lookup"><span data-stu-id="3df02-168">Example 3: Forward a call to a PSTN number</span></span>
 
-<span data-ttu-id="9ef3d-169">Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN.</span><span class="sxs-lookup"><span data-stu-id="9ef3d-169">This call requires an application instance with a PSTN number assigned.</span></span> <span data-ttu-id="9ef3d-170">Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)</span><span class="sxs-lookup"><span data-stu-id="9ef3d-170">For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).</span></span>
+<span data-ttu-id="3df02-169">Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN.</span><span class="sxs-lookup"><span data-stu-id="3df02-169">This call requires an application instance with a PSTN number assigned.</span></span> <span data-ttu-id="3df02-170">Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)</span><span class="sxs-lookup"><span data-stu-id="3df02-170">For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).</span></span>
 
-#### <a name="notification---incoming"></a><span data-ttu-id="9ef3d-171">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="9ef3d-171">Notification - incoming</span></span>
+#### <a name="notification---incoming"></a><span data-ttu-id="3df02-171">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="3df02-171">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -461,7 +461,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="request"></a><span data-ttu-id="9ef3d-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ef3d-172">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3df02-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="3df02-172">Request</span></span>
 
 <!-- {
   "blockType": "request", 
@@ -487,7 +487,7 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-#### <a name="response"></a><span data-ttu-id="9ef3d-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ef3d-173">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3df02-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="3df02-173">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -496,7 +496,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="notification---terminated"></a><span data-ttu-id="9ef3d-174">Уведомление — прекращено</span><span class="sxs-lookup"><span data-stu-id="9ef3d-174">Notification - terminated</span></span>
+#### <a name="notification---terminated"></a><span data-ttu-id="3df02-174">Уведомление — прекращено</span><span class="sxs-lookup"><span data-stu-id="3df02-174">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
