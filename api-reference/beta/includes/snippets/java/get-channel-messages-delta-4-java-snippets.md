@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 55b9776293181b3bfd0b7547ec96f5bb97d129ed
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5d98da79f04cd1831f29741e6375ed3fea07cda5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958291"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970969"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IChatMessageDeltaCollectionPage delta = graphClient.teams("{id}").channels("{id}").messages()
+ChatMessageDeltaCollectionPage delta = graphClient.teams("{id}").channels("{id}").messages()
     .delta()
     .buildRequest()
     .get();
