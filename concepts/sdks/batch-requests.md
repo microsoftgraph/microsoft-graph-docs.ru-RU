@@ -1,33 +1,33 @@
 ---
-title: Использование пакетов SDK Microsoft Graph для пакетных запросов
-description: Содержит инструкции по созданию пакета запросов API с помощью пакетов SDK Microsoft Graph.
+title: Использование SDKs Microsoft Graph для пакетных запросов
+description: Содержит инструкции по созданию пакета запросов API с помощью SDKs Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 721adb1631037055a2d2498d321bb06e68b6c257
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: bda68247c0375447913c3c64aae90ba2c88ab563
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932425"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953378"
 ---
-# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Использование пакетов SDK Microsoft Graph для пакетных запросов
+# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Использование SDKs Microsoft Graph для пакетных запросов
 
-[Пакетная обработка](../json-batching.md) — это способ объединения нескольких запросов в один HTTP-запрос. Запросы объединяются в одной полезной нагрузке JSON, которая отправляется с помощью POST в `\$batch` конечную точку. В пакетах SDK Microsoft Graph есть набор классов для упрощения создания полезных данных пакетных данных и синтаксического анализа полезных данных ответа пакетов.
+[Пакетирование](../json-batching.md) — это способ объединения нескольких запросов в один http-запрос. Запросы объединяются в одну полезной нагрузки JSON, которая отправляется через POST в `\$batch` конечную точку. В SDKs Microsoft Graph есть набор классов, упрощающий создание пакетных полезной нагрузки и разгрузку пакетных ответов.
 
 > [!IMPORTANT]
-> Текущие ограничения при использовании пакетной обработки JSON в Microsoft Graph приведены в статье [Известные проблемы](../known-issues.md#json-batching).
+> Текущие ограничения с пакетами JSON в Microsoft Graph см. в [выпуске Known Issues.](../known-issues.md#json-batching)
 
 ## <a name="create-a-batch-request"></a>Создание пакетного запроса
 
-Пакеты SDK Microsoft Graph предоставляют три класса для работы с пакетными запросами и ответами.
+SDKs Microsoft Graph предоставляют три класса для работы с пакетными запросами и ответами.
 
-- **Батчрекуестстеп** — представляет один запрос (например, `GET /me` ) в пакете. Он позволяет назначать запросам уникальный идентификатор и указывать зависимости между запросами.
-- **Батчрекуестконтент** — упрощает создание полезных данных пакетного запроса. Он содержит несколько объектов **батчрекуестстеп** .
-- **Батчреспонсеконтент** — упрощает анализ ответа от пакетного запроса. Он предоставляет возможность получать все ответы, получать определенный ответ по ИДЕНТИФИКАТОРу и получать свойство, если оно `@odata.nextLink` присутствует.
+- **BatchRequestStep** — представляет один запрос `GET /me` (например) в пакете. Это позволяет назначить уникальный идентификатор запросу и указать зависимости между запросами.
+- **BatchRequestContent** — упрощает создание полезной нагрузки пакетного запроса. Он содержит несколько **объектов BatchRequestStep.**
+- **BatchResponseContent** — упрощает размыв ответа из пакетного запроса. Он обеспечивает возможность получения всех ответов, получения определенного ответа по ID и получения `@odata.nextLink` свойства, если оно присутствует.
 
-## <a name="simple-batching-example"></a>Пример простой пакетной обработки
+## <a name="simple-batching-example"></a>Простой пример пакетной обработки
 
-В этом примере показано, как отправить несколько запросов в пакете, которые не зависят друг от друга. Запросы могут выполняться службой в любом порядке. В этом примере возвращается пользователь и возвращается представление календаря пользователя за текущий день.
+В этом примере показано, как отправлять несколько запросов в пакете, не зависящих друг от друга. Запросы могут быть запускаться службой в любом порядке. В этом примере пользователь получает представление календаря пользователя на текущий день.
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -160,15 +160,13 @@ if (calendarResponse.ok) {
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent();
+final BatchRequestContent batchRequestContent = new BatchRequestContent();
 
 // Use the Graph client to generate the request for GET /me
 final String meGetId = batchRequestContent
                         .addBatchRequestStep(graphClient
                                               .me()
-                                              .buildRequest()
-                                              .withHttpMethod(HttpMethod.GET)
-                                              .getHttpRequest());
+                                              .buildRequest());
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -182,69 +180,27 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest());
-
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
+                                          .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(graphClient);
 // Get the user response using the id assigned to the request
-final Response userResponse = batchResponseContent.getResponseById(meGetId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-if (userResponse.isSuccessful()) {
-    final User user = graphSerializer.deserializeObject(userResponse.body().string(), User.class);
-    System.out.println(String.format("Hello %s!", user.displayName));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(userResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting user: %s - %s", error.error.code, error.error.message));
-}
+final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
+System.out.println(String.format("Hello %s!", user.displayName));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---
 
 ## <a name="batches-with-dependent-requests"></a>Пакеты с зависимыми запросами
 
-В этом примере показано, как отправить несколько запросов в пакете, которые зависят друг от друга. Запросы будут выполняться службой в порядке, указанном в зависимости. В этом примере показано, как добавить в календарь пользователя событие с временем начала в текущий день и получить представление календаря пользователя за текущий день. Чтобы убедиться, что возвращаемое представление календаря включает новое созданное событие, запрос представления календаря настраивается как зависящий от запроса на добавление нового события. Это гарантирует, что запрос на событие Add будет выполнен первым.
+В этом примере показано, как отправлять несколько запросов в пакете, зависящих друг от друга. Запросы будут запускаться службой в порядке, указанном зависимостями. В этом примере событие со временем начала в течение текущего дня добавляется в календарь пользователя и получает представление календаря пользователя на текущий день. Чтобы убедиться, что возвращаемый обзор календаря включает созданное новое событие, запрос на просмотр календаря настроен в зависимости от запроса на добавление нового события. Это гарантирует, что сначала будет выполняться запрос на добавление события.
 
 > [!NOTE]
-> Если не удается выполнить запрос на добавление события, запрос на получение представления календаря завершится ошибкой `424 Failed Dependency` .
+> Если запрос добавить событие не удается, запрос на просмотр календаря будет сбой с `424 Failed Dependency` ошибкой.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -433,7 +389,7 @@ if (calendarResponse.ok)
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent(batchSteps);
+final BatchRequestContent batchRequestContent = new BatchRequestContent(batchSteps);
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -457,9 +413,7 @@ final String addEventRequestId = batchRequestContent
                                 .addBatchRequestStep(graphClient
                                                 .me()
                                                 .events()
-                                                .buildRequest()
-                                                .withHttpMethod(HttpMethod.POST)
-                                                .getHttpRequest(newEvent));
+                                                .buildRequest(), HttpMethod.POST, newEvent);
 
 // Use the Graph client to generate the request URL for
 // GET /me/calendarview?startDateTime="start"&endDateTime="end"
@@ -469,60 +423,20 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest(),
+                                          .buildRequest(calendarViewOptions),
+                                          HttpMethod.GET,
+                                          null,
                                           addEventRequestId);
 
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
-
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(client);
 // Get the user response using the id assigned to the request
-final Response addEventResponse = batchResponseContent.getResponseById(addEventRequestId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-  if (addEventResponse.isSuccessful()) {
-    final Event event = graphSerializer.deserializeObject(addEventResponse.body().string(), Event.class);
-    System.out.println(String.format("New event created with ID: %s", event.id));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(addEventResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error creating event: %s - %s", error.error.code, error.error.message));
-}
+final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
+System.out.println(String.format("New event created with ID: %s", event.id));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---

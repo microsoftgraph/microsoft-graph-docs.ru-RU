@@ -1,20 +1,20 @@
 ---
 title: Создание клиента Microsoft Graph
-description: Описывается создание клиента, который будет использоваться для звонков в Microsoft Graph. Включает как настроить проверку подлинности и выбрать облако публичном.
+description: Описывает, как создать клиента для звонков в Microsoft Graph. Включает в себя настройка проверки подлинности и выбор суверенного облака.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: bbcf8a624253a8db0602a9eb8c818980cb9d05b5
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: f32a779ac57d88da1ea66820a2b5a0bb30cbb89e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581112"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953357"
 ---
 # <a name="create-a-microsoft-graph-client"></a>Создание клиента Microsoft Graph
 
-Клиент Microsoft Graph предназначен для упрощения вызовов Microsoft Graph. Вы можете использовать один экземпляр клиента в течение всего времени существования приложения. Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в свой проект, можно найти в  [статье Установка пакета SDK](sdk-installation.md).
+Клиент Microsoft Graph разработан таким образом, чтобы сделать вызовы в Microsoft Graph простыми. Можно использовать один экземпляр клиента в течение всего срока службы приложения. Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в проект, см. в [сайте Install the SDK.](sdk-installation.md)
 
-В приведенных ниже примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Различные поставщики приложений поддерживают различные сценарии клиентов. Для получения дополнительных сведений о поставщиках и параметрах, которые подходят для вашего сценария, ознакомьтесь со статьей [Выбор поставщика проверки подлинности](choose-authentication-providers.md).
+В следующих примерах кода покажите, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Различные поставщики приложений поддерживают различные клиентские сценарии. Дополнительные сведения о том, какой поставщик и какие параметры подходят для вашего сценария, см. в материале [Выберите поставщика проверки подлинности.](choose-authentication-providers.md)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -48,28 +48,33 @@ const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphS
 # <a name="java"></a>[Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NationalCloud.Global);
+final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
+        .clientId(CLIENT_ID)
+        .clientSecret(CLIENT_SECRET)
+        .tenantId(TENANT_GUID)
+        .build();
 
-IGraphServiceClient graphClient = GraphServiceClient
+final TokenCredentialAuthProvider tokenCredAuthProvider = new TokenCredentialAuthProvider(SCOPES, clientSecretCredential);
+
+final GraphServiceClient graphClient = GraphServiceClient
                 .builder()
-                .authenticationProvider(authProvider)
+                .authenticationProvider(tokenCredAuthProvider)
                 .buildClient();
 ```
 
 # <a name="android"></a>[Android](#tab/Android)
 
 ```java
-PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+                .clientId(CLIENT_ID)
+                .redirectUrl("http://localhost:8765")
+                .build();
 
-MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationProvider(
-    getActivity(),
-    getApplication(),
-    publicClientApplication,
-    scopes);
+final TokenCredentialAuthProvider tokenCredAuthProvider = new TokenCredentialAuthProvider(SCOPES, interactiveBrowserCredential);
 
-IGraphServiceClient graphClient = GraphServiceClient
+GraphServiceClient graphClient = GraphServiceClient
                 .builder()
-                .authenticationProvider(authProvider)
+                .authenticationProvider(tokenCredAuthProvider)
                 .buildClient();
 ```
 

@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 587014aa0c9dbe4c05c0e3b946c3f6e44b7cb821
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e754bf9e5199de502672cdf0a0de5279eb5ef80f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442802"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953749"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -42,6 +42,10 @@ ms.locfileid: "50442802"
 | [Создание разрешений][]         | POST /sites/{site-id}/permissions
 | [Удаление разрешения][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Обновление разрешения][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+|[Перечисление типов контента][]          | GET /sites/{site-id}/contentTypes
+|[Создание contentType][]        | POST /sites/{site-id}/contentTypes
+|[Перечисление столбцов][]               | GET /sites/{site-id}/columns
+|[Создание столбца][]              | POST /sites/{site-id}/columns
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -60,6 +64,10 @@ ms.locfileid: "50442802"
 [Создание разрешений]: ../api/site-post-permissions.md
 [Удаление разрешения]: ../api/site-delete-permission.md
 [Обновление разрешения]: ../api/site-update-permission.md
+[Перечисление типов контента]: ../api/site-list-contenttypes.md
+[Создание contentType]: ../api/site-post-contenttypes.md
+[Перечисление столбцов]: ../api/site-list-columns.md
+[Создание столбца]: ../api/site-post-columns.md
 
 
 ## <a name="properties"></a>Свойства
@@ -76,7 +84,7 @@ ms.locfileid: "50442802"
 | **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
-| **webUrl**               | string (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
+| **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ### <a name="id-property"></a>Свойство id
 Ресурс **site** идентифицируется посредством уникального идентификатора, при создании которого используются следующие значения:

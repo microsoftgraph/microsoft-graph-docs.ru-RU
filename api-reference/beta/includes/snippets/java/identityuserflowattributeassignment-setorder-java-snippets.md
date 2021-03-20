@@ -1,15 +1,15 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9eaf7466bb856940cbbbdb1fb875b5ec093cab29
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: f905738e5f9494e305607fba6e290f4b6a20cde4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752756"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976336"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AssignmentOrder newAssignmentOrder = new AssignmentOrder();
 LinkedList<String> orderList = new LinkedList<String>();
@@ -18,7 +18,10 @@ orderList.add("extension_GUID_ShoeSize");
 newAssignmentOrder.order = orderList;
 
 graphClient.identity().b2cUserFlows("{id}").userAttributeAssignments()
-    .setOrder(newAssignmentOrder)
+    .setOrder(IdentityUserFlowAttributeAssignmentSetOrderParameterSet
+        .newBuilder()
+        .withNewAssignmentOrder(newAssignmentOrder)
+        .build())
     .buildRequest()
     .post();
 

@@ -1,18 +1,18 @@
 ---
 title: Настройка клиента службы SDK Microsoft Graph
-description: В этом разделе приведены инструкции по изменению поведения клиента службы SDK Microsoft Graph по умолчанию.
+description: Содержит инструкции по изменению поведения клиента службы службы Microsoft Graph SDK по умолчанию.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: dd8fdca9d093c8164dd486fb185d462b9de0ff0d
-ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
+ms.openlocfilehash: a9b2c4b1d77206e814dfb558481243a3da0c16d4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299279"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953350"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>Настройка клиента службы SDK Microsoft Graph
 
-Клиент SDK Microsoft Graph настраивает набор по умолчанию по промежуточного слоя, который позволяет пакету SDK общаться с конечными точками Microsoft Graph. Этот набор по умолчанию является настраиваемым, позволяя изменить поведение клиента. Например, можно вставить настраиваемое ведение журнала или добавить обработчик тестов для имитации определенных сценариев. Вы можете добавлять и удалять компоненты промежуточного слоя. Важно отметить, что порядок выполнения компонентов по промежуточного слоя важен.
+Клиент SDK Microsoft Graph настраивает по умолчанию набор средних программ, который позволяет SDK взаимодействовать с конечными точками Microsoft Graph. Этот набор по умолчанию настраивается, что позволяет изменить поведение клиента. Например, можно вставить настраиваемый журнал или добавить обработник тестирования для имитации определенных сценариев. Вы можете добавлять и удалять компоненты middleware. Важно отметить, что порядок запуска компонентов middleware имеет важное значение.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -69,7 +69,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-### <a name="simpleauthproviderts"></a>Симплеауспровидер. TS
+### <a name="simpleauthproviderts"></a>SimpleAuthProvider.ts
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -87,7 +87,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-### <a name="customlogginghandlerts"></a>Кустомлоггингхандлер. TS
+### <a name="customlogginghandlerts"></a>CustomLoggingHandler.ts
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -109,21 +109,17 @@ export default class CustomLoggingHandler implements Middleware {
 
 ```java
 // you can configure any OkHttpClient option and add interceptors
-// Note: com.microsoft.graph:microsoft-graph:2.3 or above is required
+// Note: com.microsoft.graph:microsoft-graph:3.0 or above is required
 // for a complete description of available configuration options https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/
-final OkHttpClient httpClient = HttpClients.createDefault(coreAuthenticationProvider)
+final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider)
                                 .newBuilder()
                                 .followSslRedirects(false) // sample configuration to apply to client
                                 .build();
 
-final IHttpProvider httpProvider = DefaultClientConfig
-                          .createWithAuthenticationProvider(authenticationProvider)
-                          .getHttpProvider(httpClient);
-
-final IGraphServiceClient graphServiceClient = GraphServiceClient
+final GraphServiceClient graphServiceClient = GraphServiceClient
                 .builder()
                 .authenticationProvider(authenticationProvider)
-                .httpProvider(httpProvider)
+                .httpClient(httpClient)
                 .buildClient();
 ```
 

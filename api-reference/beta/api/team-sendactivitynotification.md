@@ -1,21 +1,21 @@
 ---
-title: 'team: sendActivityNotification'
-description: Отправка уведомления веб-канала активности в области команды.
+title: 'команда: sendActivityNotification'
+description: Отправьте уведомление о канале действий в области группы.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2dc9da9024207cf04492af9bb8291ccc44e91eb0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 46b653f3d69111043c41ec0a83907ce041c10a81
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874188"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954133"
 ---
-# <a name="team-sendactivitynotification"></a>team: sendActivityNotification
+# <a name="team-sendactivitynotification"></a>команда: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправка уведомления веб-канала активности в области команды. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в отправке уведомлений [о действиях Teams.](/graph/teams-send-activityfeednotifications)
+Отправьте уведомление о канале действий в области группы. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в материале Отправка уведомлений о [действиях Teams.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "49874188"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamsActivity.Send|
+|Application|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,28 +42,28 @@ POST /teams/{teamId}/sendActivityNotification
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о который идет речь.|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
 |activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
-|chainId|Int64|Необязательное. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
-|previewText|[itemBody](../resources/itembody.md)|Предварительный просмотр текста уведомления. Microsoft Teams будет показывать только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
-|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient.](../resources/aadusernotificationrecipient.md) |
+|chainId|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams покажет только первые 150 символов.|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи ленты действий, соответствующие `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
+|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
-Следующие ресурсы поддерживаются при установке для свойства `source` **темы** значения `entityUrl` :
+При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityUrl` ресурсы:
 
 - [team](../resources/team.md)
 - [channel](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Примечание.** URL-адрес сущности должен быть тем же или иным ресурсом команды в URL-адресе. Кроме того, приложение [Teams](/microsoftteams/platform/overview) должно быть установлено в команде.
+> **Примечание:** URL-адрес объекта должен быть одним и тем же или детским ресурсом группы в URL-адресе. Кроме того, приложение [Teams должно](/microsoftteams/platform/overview) быть установлено в команде.
 
 ## <a name="response"></a>Ответ
 
@@ -71,16 +71,16 @@ POST /teams/{teamId}/sendActivityNotification
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a>Пример 1. Уведомление пользователя об ожидающих запросах на финансовое утверждение
+### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a>Пример 1. Уведомление пользователя о ожидающих запросах на утверждение финансирования
 
-В этом примере показано, как можно отправить уведомление веб-канала активности для команды. В этом примере владельцу команды сообщается об ожидающих запросах на финансовое утверждение.
+В этом примере показано, как можно отправить уведомление о канале действий для группы. В этом примере владелец группы сообщает о ожидающих запросах на утверждение финансирования.
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_1"
 }
 -->
 ``` http
@@ -109,19 +109,19 @@ Content-Type: application/json
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -139,12 +139,14 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-a-channel-tab"></a>Пример 2. Уведомление пользователя о вкладке канала
 
-Как и в предыдущем примере, в этом примере `entityUrl` используется для `topic` . Однако в этом примере ссылки на [вкладку](../resources/teamstab.md) в [канале.](../resources/channel.md) На вкладке размещена страница с состоянием резервирования в гостинице. При выборе уведомления пользователь перенаберется на вкладку, где он сможет проверить свое резервирование.
+Как и в предыдущем примере, в этом примере `entityUrl` используется `topic` для . Однако в этом примере ссылки на [вкладку](../resources/teamstab.md) в [канале](../resources/channel.md). На вкладке размещена страница, показывающая пользователю состояние бронирования в отеле. Выбор уведомления будет принимать пользователя на вкладке, где он может проверить свое бронирование.
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_2"
 }
 -->
 ``` http
@@ -176,6 +178,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 <!-- {
@@ -187,14 +207,16 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Пример 3. Уведомление пользователя о событии с помощью настраиваемой темы
+### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Пример 3. Уведомление пользователя о событии с использованием настраиваемой темы
 
-Как видно из предыдущих примеров, вы можете ссылаться на различные аспекты команды. Однако если вы хотите связать аспект, который не является частью команды или не представлен Microsoft Graph, или вы хотите настроить имя, вы можете настроить источник и передать для него настраиваемые `topic` `text` значения. `webUrl` требуется при установке `topic` для источника параметра `text` ..
+Как повествуют в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Однако, если вы хотите связаться с аспектом, который не является частью команды или не представлен Microsoft Graph, или вы хотите настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при настройке `topic` источника `text` для .
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_3"
 }
 -->
 ``` http
@@ -223,6 +245,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 <!-- {
