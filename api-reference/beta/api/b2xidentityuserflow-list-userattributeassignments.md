@@ -5,30 +5,30 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 332d8b6841fe5b15781e852a6c615a92fb7fb6d4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4264daf12c7374da798e03312c705435d90cb875
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438066"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944565"
 ---
-# <a name="list-userattributeassignments"></a><span data-ttu-id="41fac-103">Список userAttributeAssignments</span><span class="sxs-lookup"><span data-stu-id="41fac-103">List userAttributeAssignments</span></span>
+# <a name="list-userattributeassignments"></a><span data-ttu-id="f94c1-103">Список userAttributeAssignments</span><span class="sxs-lookup"><span data-stu-id="f94c1-103">List userAttributeAssignments</span></span>
 
-<span data-ttu-id="41fac-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="41fac-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f94c1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f94c1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="41fac-105">Получите ресурсы identityUserFlowAttributeAssignment из свойства навигации userAttributeAssignments в [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md).</span><span class="sxs-lookup"><span data-stu-id="41fac-105">Get the identityUserFlowAttributeAssignment resources from the userAttributeAssignments navigation property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md).</span></span>
+<span data-ttu-id="f94c1-105">Получите ресурсы identityUserFlowAttributeAssignment из свойства навигации userAttributeAssignments в [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md).</span><span class="sxs-lookup"><span data-stu-id="f94c1-105">Get the identityUserFlowAttributeAssignment resources from the userAttributeAssignments navigation property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="41fac-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="41fac-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f94c1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f94c1-106">Permissions</span></span>
 
-<span data-ttu-id="41fac-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="41fac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f94c1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f94c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="41fac-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="41fac-109">Permission type</span></span>|<span data-ttu-id="41fac-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="41fac-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="f94c1-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f94c1-109">Permission type</span></span>|<span data-ttu-id="f94c1-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f94c1-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="41fac-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="41fac-111">Delegated (work or school account)</span></span>|<span data-ttu-id="41fac-112">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41fac-112">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
-|<span data-ttu-id="41fac-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="41fac-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="41fac-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="41fac-114">Not supported</span></span>|
-|<span data-ttu-id="41fac-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="41fac-115">Application</span></span>|<span data-ttu-id="41fac-116">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41fac-116">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="f94c1-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f94c1-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f94c1-112">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f94c1-112">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="f94c1-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f94c1-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f94c1-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f94c1-114">Not supported</span></span>|
+|<span data-ttu-id="f94c1-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="f94c1-115">Application</span></span>|<span data-ttu-id="f94c1-116">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f94c1-116">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="41fac-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="41fac-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f94c1-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f94c1-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,63 +39,63 @@ ms.locfileid: "50438066"
 GET /identity/b2xUserFlows/{id}/userAttributeAssignments
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="41fac-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="41fac-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f94c1-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f94c1-118">Optional query parameters</span></span>
 
-<span data-ttu-id="41fac-119">Этот метод поддерживает параметры и сведения о атрибуте `$select` `$expand` потока пользователей.</span><span class="sxs-lookup"><span data-stu-id="41fac-119">This method supports the `$select` and `$expand` parameters to get the details of the user flow attribute.</span></span> <span data-ttu-id="41fac-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="41fac-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="f94c1-119">Этот метод поддерживает параметры и сведения о атрибуте `$select` `$expand` потока пользователей.</span><span class="sxs-lookup"><span data-stu-id="f94c1-119">This method supports the `$select` and `$expand` parameters to get the details of the user flow attribute.</span></span> <span data-ttu-id="f94c1-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="f94c1-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="41fac-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="41fac-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f94c1-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f94c1-121">Request headers</span></span>
 
-|<span data-ttu-id="41fac-122">Имя</span><span class="sxs-lookup"><span data-stu-id="41fac-122">Name</span></span>|<span data-ttu-id="41fac-123">Описание</span><span class="sxs-lookup"><span data-stu-id="41fac-123">Description</span></span>|
+|<span data-ttu-id="f94c1-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f94c1-122">Name</span></span>|<span data-ttu-id="f94c1-123">Описание</span><span class="sxs-lookup"><span data-stu-id="f94c1-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="41fac-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="41fac-124">Authorization</span></span>|<span data-ttu-id="41fac-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="41fac-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="f94c1-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f94c1-124">Authorization</span></span>|<span data-ttu-id="f94c1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f94c1-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="41fac-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="41fac-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f94c1-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f94c1-127">Request body</span></span>
 
-<span data-ttu-id="41fac-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="41fac-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f94c1-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f94c1-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="41fac-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="41fac-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f94c1-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="f94c1-129">Response</span></span>
 
-<span data-ttu-id="41fac-130">В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="41fac-130">If successful, this method returns a `200 OK` response code and a collection of [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="f94c1-130">В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="f94c1-130">If successful, this method returns a `200 OK` response code and a collection of [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="41fac-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="41fac-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f94c1-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="f94c1-131">Examples</span></span>
 
-### <a name="example-1-list-userattributeassignments-in-a-b2xidentityuserflow"></a><span data-ttu-id="41fac-132">Пример 1. Список userAttributeAssignments в b2xIdentityUserFlow</span><span class="sxs-lookup"><span data-stu-id="41fac-132">Example 1: List userAttributeAssignments in a b2xIdentityUserFlow</span></span>
+### <a name="example-1-list-userattributeassignments-in-a-b2xidentityuserflow"></a><span data-ttu-id="f94c1-132">Пример 1. Список userAttributeAssignments в b2xIdentityUserFlow</span><span class="sxs-lookup"><span data-stu-id="f94c1-132">Example 1: List userAttributeAssignments in a b2xIdentityUserFlow</span></span>
 
-#### <a name="request"></a><span data-ttu-id="41fac-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="41fac-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f94c1-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="f94c1-133">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="41fac-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="41fac-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f94c1-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="f94c1-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflowattributeassignment"
+  "name": "get_identityuserflowattributeassignment_2"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments
 ```
-# <a name="c"></a>[<span data-ttu-id="41fac-135">C#</span><span class="sxs-lookup"><span data-stu-id="41fac-135">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="f94c1-135">C#</span><span class="sxs-lookup"><span data-stu-id="f94c1-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="41fac-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="41fac-136">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="f94c1-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f94c1-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="41fac-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="41fac-137">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="f94c1-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f94c1-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="41fac-138">Java</span><span class="sxs-lookup"><span data-stu-id="41fac-138">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="f94c1-138">Java</span><span class="sxs-lookup"><span data-stu-id="f94c1-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="41fac-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="41fac-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f94c1-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="f94c1-139">Response</span></span>
 
-<span data-ttu-id="41fac-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="41fac-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="f94c1-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f94c1-140">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,43 +137,43 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-userattributeassignments-in-a-b2xidentityuserflow-and-expand-userattribute"></a><span data-ttu-id="41fac-141">Пример 2. Список userAttributeAssignments в b2xIdentityUserFlow и расширение userAttribute</span><span class="sxs-lookup"><span data-stu-id="41fac-141">Example 2: List userAttributeAssignments in a b2xIdentityUserFlow and expand userAttribute</span></span>
+### <a name="example-2-list-userattributeassignments-in-a-b2xidentityuserflow-and-expand-userattribute"></a><span data-ttu-id="f94c1-141">Пример 2. Список userAttributeAssignments в b2xIdentityUserFlow и расширение userAttribute</span><span class="sxs-lookup"><span data-stu-id="f94c1-141">Example 2: List userAttributeAssignments in a b2xIdentityUserFlow and expand userAttribute</span></span>
 
-#### <a name="request"></a><span data-ttu-id="41fac-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="41fac-142">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f94c1-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="f94c1-142">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="41fac-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="41fac-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f94c1-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="f94c1-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflowattributeassignment_expand"
+  "name": "get_identityuserflowattributeassignment_expand_2"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments?$expand=userAttribute
 ```
-# <a name="c"></a>[<span data-ttu-id="41fac-144">C#</span><span class="sxs-lookup"><span data-stu-id="41fac-144">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-expand-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="f94c1-144">C#</span><span class="sxs-lookup"><span data-stu-id="f94c1-144">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-expand-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="41fac-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="41fac-145">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-expand-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="f94c1-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f94c1-145">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-expand-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="41fac-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="41fac-146">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-expand-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="f94c1-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f94c1-146">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-expand-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="41fac-147">Java</span><span class="sxs-lookup"><span data-stu-id="41fac-147">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-expand-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="f94c1-147">Java</span><span class="sxs-lookup"><span data-stu-id="f94c1-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-expand-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="41fac-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="41fac-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f94c1-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="f94c1-148">Response</span></span>
 
-<span data-ttu-id="41fac-149">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="41fac-149">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="f94c1-149">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f94c1-149">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

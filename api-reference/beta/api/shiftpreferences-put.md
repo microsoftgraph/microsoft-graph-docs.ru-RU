@@ -1,36 +1,36 @@
 ---
-title: Обновление Шифтпреференцес
-description: Обновление настроек смены пользователя.
+title: Обновление shiftPreferences
+description: Обновление личных предпочтений пользователя.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80b503780c0b17db2cb4f33ee2e21c27b5c4afcd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 12eb1020f2daad820d9fbbf9fe20005e8ec00447
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969149"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945846"
 ---
-# <a name="update-shiftpreferences"></a><span data-ttu-id="ec19a-103">Обновление Шифтпреференцес</span><span class="sxs-lookup"><span data-stu-id="ec19a-103">Update shiftPreferences</span></span>
+# <a name="update-shiftpreferences"></a><span data-ttu-id="7e846-103">Обновление shiftPreferences</span><span class="sxs-lookup"><span data-stu-id="7e846-103">Update shiftPreferences</span></span>
 
-<span data-ttu-id="ec19a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ec19a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7e846-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7e846-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ec19a-105">Обновление свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) .</span><span class="sxs-lookup"><span data-stu-id="ec19a-105">Update the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
+<span data-ttu-id="7e846-105">Обновление свойств и связей объекта [shiftPreferences.](../resources/shiftpreferences.md)</span><span class="sxs-lookup"><span data-stu-id="7e846-105">Update the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ec19a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ec19a-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7e846-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7e846-106">Permissions</span></span>
 
-<span data-ttu-id="ec19a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ec19a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7e846-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7e846-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ec19a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ec19a-109">Permission type</span></span>      | <span data-ttu-id="ec19a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ec19a-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7e846-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7e846-109">Permission type</span></span>      | <span data-ttu-id="7e846-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7e846-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ec19a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ec19a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ec19a-112">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec19a-112">User.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ec19a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ec19a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ec19a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ec19a-114">Not supported.</span></span>    |
-|<span data-ttu-id="ec19a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ec19a-115">Application</span></span> | <span data-ttu-id="ec19a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ec19a-116">Not supported.</span></span> |
+|<span data-ttu-id="7e846-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7e846-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7e846-112">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e846-112">User.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7e846-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7e846-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e846-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7e846-114">Not supported.</span></span>    |
+|<span data-ttu-id="7e846-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7e846-115">Application</span></span> | <span data-ttu-id="7e846-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7e846-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ec19a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ec19a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7e846-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7e846-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,30 +38,30 @@ ms.locfileid: "48969149"
 PUT /users/{userId}/settings/shiftPreferences
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ec19a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ec19a-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7e846-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7e846-118">Request headers</span></span>
 
-| <span data-ttu-id="ec19a-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ec19a-119">Header</span></span>       | <span data-ttu-id="ec19a-120">Значение</span><span class="sxs-lookup"><span data-stu-id="ec19a-120">Value</span></span> |
+| <span data-ttu-id="7e846-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7e846-119">Header</span></span>       | <span data-ttu-id="7e846-120">Значение</span><span class="sxs-lookup"><span data-stu-id="7e846-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="ec19a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ec19a-121">Authorization</span></span>  | <span data-ttu-id="ec19a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ec19a-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ec19a-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ec19a-124">Content-Type</span></span>  | <span data-ttu-id="ec19a-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ec19a-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="7e846-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7e846-121">Authorization</span></span>  | <span data-ttu-id="7e846-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7e846-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7e846-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7e846-124">Content-Type</span></span>  | <span data-ttu-id="7e846-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7e846-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ec19a-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ec19a-127">Request body</span></span>
-<span data-ttu-id="ec19a-128">В тексте запроса добавьте представление объекта [шифтпреференцес](../resources/shiftpreferences.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ec19a-128">In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7e846-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7e846-127">Request body</span></span>
+<span data-ttu-id="7e846-128">В теле запроса поставляем представление JSON объекта [shiftPreferences.](../resources/shiftpreferences.md)</span><span class="sxs-lookup"><span data-stu-id="7e846-128">In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ec19a-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec19a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7e846-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e846-129">Response</span></span>
 
-<span data-ttu-id="ec19a-130">В случае успешного выполнения этот метод возвращает код отклика `204 NO CONTENT`.</span><span class="sxs-lookup"><span data-stu-id="ec19a-130">If successful, this method returns a `204 NO CONTENT` response code.</span></span>
+<span data-ttu-id="7e846-130">В случае успешного выполнения этот метод возвращает код отклика `204 NO CONTENT`.</span><span class="sxs-lookup"><span data-stu-id="7e846-130">If successful, this method returns a `204 NO CONTENT` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ec19a-131">Пример</span><span class="sxs-lookup"><span data-stu-id="ec19a-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7e846-131">Пример</span><span class="sxs-lookup"><span data-stu-id="7e846-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ec19a-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="ec19a-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7e846-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="7e846-132">Request</span></span>
 
-<span data-ttu-id="ec19a-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ec19a-133">The following is an example of the request.</span></span>
+<span data-ttu-id="7e846-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7e846-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ec19a-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ec19a-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7e846-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="7e846-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "shift-get-3"
 }-->
 ```msgraph-interactive
 PUT https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
@@ -88,28 +88,28 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ec19a-135">C#</span><span class="sxs-lookup"><span data-stu-id="ec19a-135">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="7e846-135">C#</span><span class="sxs-lookup"><span data-stu-id="7e846-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ec19a-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ec19a-136">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="7e846-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7e846-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ec19a-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ec19a-137">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="7e846-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7e846-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ec19a-138">Java</span><span class="sxs-lookup"><span data-stu-id="ec19a-138">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="7e846-138">Java</span><span class="sxs-lookup"><span data-stu-id="7e846-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ec19a-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec19a-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7e846-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e846-139">Response</span></span>
 
-<span data-ttu-id="ec19a-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ec19a-140">The following is an example of the response.</span></span>
+<span data-ttu-id="7e846-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="7e846-140">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response", 

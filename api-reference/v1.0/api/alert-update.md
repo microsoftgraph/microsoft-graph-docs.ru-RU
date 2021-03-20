@@ -5,32 +5,32 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 92edfc5e312b56170aa1c8924dad6b2b48970839
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: eecb8054402cd2922626c1e6e216ca5f465b3b2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721427"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945522"
 ---
-# <a name="update-alert"></a><span data-ttu-id="a36be-104">Обновление оповещения</span><span class="sxs-lookup"><span data-stu-id="a36be-104">Update alert</span></span>
+# <a name="update-alert"></a><span data-ttu-id="49eec-104">Обновление оповещения</span><span class="sxs-lookup"><span data-stu-id="49eec-104">Update alert</span></span>
 
-<span data-ttu-id="a36be-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a36be-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="49eec-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49eec-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a36be-106">Обновление свойства редактируемого **оповещения** в любом интегрированном решении, чтобы синхронизировать состояние оповещений и назначения между решениями.</span><span class="sxs-lookup"><span data-stu-id="a36be-106">Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions.</span></span> <span data-ttu-id="a36be-107">Этот метод обновляет любое решение, которое имеет запись ссылаемого ID оповещения.</span><span class="sxs-lookup"><span data-stu-id="a36be-107">This method updates any solution that has a record of the referenced alert ID.</span></span>
+<span data-ttu-id="49eec-106">Обновление свойства редактируемого **оповещения** в любом интегрированном решении, чтобы синхронизировать состояние оповещений и назначения между решениями.</span><span class="sxs-lookup"><span data-stu-id="49eec-106">Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions.</span></span> <span data-ttu-id="49eec-107">Этот метод обновляет любое решение, которое имеет запись ссылаемого ID оповещения.</span><span class="sxs-lookup"><span data-stu-id="49eec-107">This method updates any solution that has a record of the referenced alert ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a36be-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a36be-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="49eec-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="49eec-108">Permissions</span></span>
 
-<span data-ttu-id="a36be-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a36be-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="49eec-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49eec-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a36be-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a36be-111">Permission type</span></span>                        | <span data-ttu-id="a36be-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a36be-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="49eec-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="49eec-111">Permission type</span></span>                        | <span data-ttu-id="49eec-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="49eec-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="a36be-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a36be-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="a36be-114">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a36be-114">SecurityEvents.ReadWrite.All</span></span>        |
-| <span data-ttu-id="a36be-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a36be-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a36be-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a36be-116">Not supported.</span></span>                      |
-| <span data-ttu-id="a36be-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="a36be-117">Application</span></span>                            | <span data-ttu-id="a36be-118">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a36be-118">SecurityEvents.ReadWrite.All</span></span>        |
+| <span data-ttu-id="49eec-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="49eec-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="49eec-114">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49eec-114">SecurityEvents.ReadWrite.All</span></span>        |
+| <span data-ttu-id="49eec-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="49eec-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49eec-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="49eec-116">Not supported.</span></span>                      |
+| <span data-ttu-id="49eec-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="49eec-117">Application</span></span>                            | <span data-ttu-id="49eec-118">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49eec-118">SecurityEvents.ReadWrite.All</span></span>        |
 
-## <a name="http-request"></a><span data-ttu-id="a36be-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a36be-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="49eec-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="49eec-119">HTTP request</span></span>
 
-> <span data-ttu-id="a36be-120">**Примечание:** Необходимо включить **в** качестве параметра и поставщика ID оповещений, содержащего и `provider` с помощью этого `vendor` метода.</span><span class="sxs-lookup"><span data-stu-id="a36be-120">**Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.</span></span>
+> <span data-ttu-id="49eec-120">**Примечание:** Необходимо включить **в** качестве параметра и поставщика ID оповещений, содержащего и `provider` с помощью этого `vendor` метода.</span><span class="sxs-lookup"><span data-stu-id="49eec-120">**Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,45 +38,45 @@ ms.locfileid: "50721427"
 PATCH /security/alerts/{alert_id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a36be-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a36be-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="49eec-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="49eec-121">Request headers</span></span>
 
-| <span data-ttu-id="a36be-122">Имя</span><span class="sxs-lookup"><span data-stu-id="a36be-122">Name</span></span>          | <span data-ttu-id="a36be-123">Описание</span><span class="sxs-lookup"><span data-stu-id="a36be-123">Description</span></span>              |
+| <span data-ttu-id="49eec-122">Имя</span><span class="sxs-lookup"><span data-stu-id="49eec-122">Name</span></span>          | <span data-ttu-id="49eec-123">Описание</span><span class="sxs-lookup"><span data-stu-id="49eec-123">Description</span></span>              |
 |:--------------|:-------------------------|
-| <span data-ttu-id="a36be-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a36be-124">Authorization</span></span> | <span data-ttu-id="a36be-125">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="a36be-125">Bearer {code}.</span></span> <span data-ttu-id="a36be-126">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="a36be-126">Required.</span></span> |
-| <span data-ttu-id="a36be-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="a36be-127">Prefer</span></span>        | <span data-ttu-id="a36be-128">return=representation.</span><span class="sxs-lookup"><span data-stu-id="a36be-128">return=representation.</span></span> <span data-ttu-id="a36be-129">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="a36be-129">Optional.</span></span>   |
+| <span data-ttu-id="49eec-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="49eec-124">Authorization</span></span> | <span data-ttu-id="49eec-125">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="49eec-125">Bearer {code}.</span></span> <span data-ttu-id="49eec-126">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="49eec-126">Required.</span></span> |
+| <span data-ttu-id="49eec-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="49eec-127">Prefer</span></span>        | <span data-ttu-id="49eec-128">return=representation.</span><span class="sxs-lookup"><span data-stu-id="49eec-128">return=representation.</span></span> <span data-ttu-id="49eec-129">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="49eec-129">Optional.</span></span>   |
 
-## <a name="request-body"></a><span data-ttu-id="a36be-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a36be-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="49eec-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="49eec-130">Request body</span></span>
 
-<span data-ttu-id="a36be-131">В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены.</span><span class="sxs-lookup"><span data-stu-id="a36be-131">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="a36be-132">Тело должно **содержать** свойство **vendorInformation** с допустимым и `provider` `vendor` полями.</span><span class="sxs-lookup"><span data-stu-id="a36be-132">The body **must** contain the **vendorInformation** property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="a36be-133">В следующей таблице перечислены поля, которые можно обновить для оповещения.</span><span class="sxs-lookup"><span data-stu-id="a36be-133">The following table lists the fields that can be updated for an alert.</span></span> <span data-ttu-id="a36be-134">Значения для существующих свойств, не включенных в тело запроса, не изменятся.</span><span class="sxs-lookup"><span data-stu-id="a36be-134">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="a36be-135">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="a36be-135">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="49eec-131">В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены.</span><span class="sxs-lookup"><span data-stu-id="49eec-131">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="49eec-132">Тело должно **содержать** свойство **vendorInformation** с допустимым и `provider` `vendor` полями.</span><span class="sxs-lookup"><span data-stu-id="49eec-132">The body **must** contain the **vendorInformation** property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="49eec-133">В следующей таблице перечислены поля, которые можно обновить для оповещения.</span><span class="sxs-lookup"><span data-stu-id="49eec-133">The following table lists the fields that can be updated for an alert.</span></span> <span data-ttu-id="49eec-134">Значения для существующих свойств, не включенных в тело запроса, не изменятся.</span><span class="sxs-lookup"><span data-stu-id="49eec-134">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="49eec-135">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="49eec-135">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="a36be-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="a36be-136">Property</span></span>          | <span data-ttu-id="a36be-137">Тип</span><span class="sxs-lookup"><span data-stu-id="a36be-137">Type</span></span>                                                                   | <span data-ttu-id="a36be-138">Описание</span><span class="sxs-lookup"><span data-stu-id="a36be-138">Description</span></span> |
+| <span data-ttu-id="49eec-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="49eec-136">Property</span></span>          | <span data-ttu-id="49eec-137">Тип</span><span class="sxs-lookup"><span data-stu-id="49eec-137">Type</span></span>                                                                   | <span data-ttu-id="49eec-138">Описание</span><span class="sxs-lookup"><span data-stu-id="49eec-138">Description</span></span> |
 |:------------------|:-----------------------------------------------------------------------|:--|
-| <span data-ttu-id="a36be-139">assignedTo</span><span class="sxs-lookup"><span data-stu-id="a36be-139">assignedTo</span></span>        | <span data-ttu-id="a36be-140">String</span><span class="sxs-lookup"><span data-stu-id="a36be-140">String</span></span>                                                                 | <span data-ttu-id="a36be-141">Имя аналитика, на которое назначено оповещение для проверки, исследования или восстановления.</span><span class="sxs-lookup"><span data-stu-id="a36be-141">Name of the analyst the alert is assigned to for triage, investigation, or remediation.</span></span> |
-| <span data-ttu-id="a36be-142">closedDateTime</span><span class="sxs-lookup"><span data-stu-id="a36be-142">closedDateTime</span></span>    | <span data-ttu-id="a36be-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a36be-143">DateTimeOffset</span></span>                                                         | <span data-ttu-id="a36be-144">Время закрытия оповещения.</span><span class="sxs-lookup"><span data-stu-id="a36be-144">Time at which the alert was closed.</span></span> <span data-ttu-id="a36be-145">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="a36be-145">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="a36be-146">Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="a36be-146">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.</span></span> |
-| <span data-ttu-id="a36be-147">comments</span><span class="sxs-lookup"><span data-stu-id="a36be-147">comments</span></span>          | <span data-ttu-id="a36be-148">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="a36be-148">String collection</span></span>                                                      | <span data-ttu-id="a36be-149">Аналитик комментирует оповещение (для управления оповещениями клиентов).</span><span class="sxs-lookup"><span data-stu-id="a36be-149">Analyst comments on the alert (for customer alert management).</span></span> <span data-ttu-id="a36be-150">Этот метод может обновлять поле комментариев только с помощью следующих значений: `Closed in IPC` , `Closed in MCAS` .</span><span class="sxs-lookup"><span data-stu-id="a36be-150">This method can update the comments field with the following values only: `Closed in IPC`, `Closed in MCAS`.</span></span> |
-| <span data-ttu-id="a36be-151">feedback</span><span class="sxs-lookup"><span data-stu-id="a36be-151">feedback</span></span>          | <span data-ttu-id="a36be-152">alertFeedback</span><span class="sxs-lookup"><span data-stu-id="a36be-152">alertFeedback</span></span>                                                          | <span data-ttu-id="a36be-153">Отзыв аналитика об оповещении.</span><span class="sxs-lookup"><span data-stu-id="a36be-153">Analyst feedback on the alert.</span></span> <span data-ttu-id="a36be-154">Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.</span><span class="sxs-lookup"><span data-stu-id="a36be-154">Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.</span></span> |
-| <span data-ttu-id="a36be-155">status</span><span class="sxs-lookup"><span data-stu-id="a36be-155">status</span></span>            | <span data-ttu-id="a36be-156">alertStatus</span><span class="sxs-lookup"><span data-stu-id="a36be-156">alertStatus</span></span>                                                            | <span data-ttu-id="a36be-157">Оповещение состояния жизненного цикла (этап).</span><span class="sxs-lookup"><span data-stu-id="a36be-157">Alert life cycle status (stage).</span></span> <span data-ttu-id="a36be-158">Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`.</span><span class="sxs-lookup"><span data-stu-id="a36be-158">Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.</span></span> |
-| <span data-ttu-id="a36be-159">tags</span><span class="sxs-lookup"><span data-stu-id="a36be-159">tags</span></span>              | <span data-ttu-id="a36be-160">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="a36be-160">String collection</span></span>                                                      | <span data-ttu-id="a36be-161">Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").</span><span class="sxs-lookup"><span data-stu-id="a36be-161">User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).</span></span> |
-| <span data-ttu-id="a36be-162">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="a36be-162">vendorInformation</span></span> | [<span data-ttu-id="a36be-163">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="a36be-163">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="a36be-164">Сложный тип, содержащий подробные сведения о безопасности продавца продукта или услуги, поставщика субпоставщика (например, продавец = Майкрософт; поставщик = ATP в Защитнике Windows; субпоставщик = AppLocker).</span><span class="sxs-lookup"><span data-stu-id="a36be-164">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).</span></span> <span data-ttu-id="a36be-165">**Требуются поля поставщика и поставщика.**</span><span class="sxs-lookup"><span data-stu-id="a36be-165">**Provider and vendor fields are required.**</span></span> |
+| <span data-ttu-id="49eec-139">assignedTo</span><span class="sxs-lookup"><span data-stu-id="49eec-139">assignedTo</span></span>        | <span data-ttu-id="49eec-140">String</span><span class="sxs-lookup"><span data-stu-id="49eec-140">String</span></span>                                                                 | <span data-ttu-id="49eec-141">Имя аналитика, на которое назначено оповещение для проверки, исследования или восстановления.</span><span class="sxs-lookup"><span data-stu-id="49eec-141">Name of the analyst the alert is assigned to for triage, investigation, or remediation.</span></span> |
+| <span data-ttu-id="49eec-142">closedDateTime</span><span class="sxs-lookup"><span data-stu-id="49eec-142">closedDateTime</span></span>    | <span data-ttu-id="49eec-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="49eec-143">DateTimeOffset</span></span>                                                         | <span data-ttu-id="49eec-144">Время закрытия оповещения.</span><span class="sxs-lookup"><span data-stu-id="49eec-144">Time at which the alert was closed.</span></span> <span data-ttu-id="49eec-145">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="49eec-145">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="49eec-146">Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="49eec-146">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.</span></span> |
+| <span data-ttu-id="49eec-147">comments</span><span class="sxs-lookup"><span data-stu-id="49eec-147">comments</span></span>          | <span data-ttu-id="49eec-148">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="49eec-148">String collection</span></span>                                                      | <span data-ttu-id="49eec-149">Аналитик комментирует оповещение (для управления оповещениями клиентов).</span><span class="sxs-lookup"><span data-stu-id="49eec-149">Analyst comments on the alert (for customer alert management).</span></span> <span data-ttu-id="49eec-150">Этот метод может обновлять поле комментариев только с помощью следующих значений: `Closed in IPC` , `Closed in MCAS` .</span><span class="sxs-lookup"><span data-stu-id="49eec-150">This method can update the comments field with the following values only: `Closed in IPC`, `Closed in MCAS`.</span></span> |
+| <span data-ttu-id="49eec-151">feedback</span><span class="sxs-lookup"><span data-stu-id="49eec-151">feedback</span></span>          | <span data-ttu-id="49eec-152">alertFeedback</span><span class="sxs-lookup"><span data-stu-id="49eec-152">alertFeedback</span></span>                                                          | <span data-ttu-id="49eec-153">Отзыв аналитика об оповещении.</span><span class="sxs-lookup"><span data-stu-id="49eec-153">Analyst feedback on the alert.</span></span> <span data-ttu-id="49eec-154">Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.</span><span class="sxs-lookup"><span data-stu-id="49eec-154">Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.</span></span> |
+| <span data-ttu-id="49eec-155">status</span><span class="sxs-lookup"><span data-stu-id="49eec-155">status</span></span>            | <span data-ttu-id="49eec-156">alertStatus</span><span class="sxs-lookup"><span data-stu-id="49eec-156">alertStatus</span></span>                                                            | <span data-ttu-id="49eec-157">Оповещение состояния жизненного цикла (этап).</span><span class="sxs-lookup"><span data-stu-id="49eec-157">Alert life cycle status (stage).</span></span> <span data-ttu-id="49eec-158">Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`.</span><span class="sxs-lookup"><span data-stu-id="49eec-158">Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.</span></span> |
+| <span data-ttu-id="49eec-159">tags</span><span class="sxs-lookup"><span data-stu-id="49eec-159">tags</span></span>              | <span data-ttu-id="49eec-160">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="49eec-160">String collection</span></span>                                                      | <span data-ttu-id="49eec-161">Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").</span><span class="sxs-lookup"><span data-stu-id="49eec-161">User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).</span></span> |
+| <span data-ttu-id="49eec-162">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="49eec-162">vendorInformation</span></span> | [<span data-ttu-id="49eec-163">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="49eec-163">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="49eec-164">Сложный тип, содержащий подробные сведения о безопасности продавца продукта или услуги, поставщика субпоставщика (например, продавец = Майкрософт; поставщик = ATP в Защитнике Windows; субпоставщик = AppLocker).</span><span class="sxs-lookup"><span data-stu-id="49eec-164">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).</span></span> <span data-ttu-id="49eec-165">**Требуются поля поставщика и поставщика.**</span><span class="sxs-lookup"><span data-stu-id="49eec-165">**Provider and vendor fields are required.**</span></span> |
 
-## <a name="response"></a><span data-ttu-id="a36be-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="a36be-166">Response</span></span>
+## <a name="response"></a><span data-ttu-id="49eec-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="49eec-166">Response</span></span>
 
-<span data-ttu-id="a36be-167">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="a36be-167">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="49eec-167">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="49eec-167">If successful, this method returns a `204 No Content` response code.</span></span>
 
-<span data-ttu-id="a36be-168">Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект оповещения `200 OK` в тексте [](../resources/alert.md) ответа.</span><span class="sxs-lookup"><span data-stu-id="a36be-168">If the optional request header is used, the method returns a `200 OK` response code and the updated [alert](../resources/alert.md) object in the response body.</span></span>
+<span data-ttu-id="49eec-168">Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект оповещения `200 OK` в тексте [](../resources/alert.md) ответа.</span><span class="sxs-lookup"><span data-stu-id="49eec-168">If the optional request header is used, the method returns a `200 OK` response code and the updated [alert](../resources/alert.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a36be-169">Примеры</span><span class="sxs-lookup"><span data-stu-id="a36be-169">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="49eec-169">Примеры</span><span class="sxs-lookup"><span data-stu-id="49eec-169">Examples</span></span>
 
-### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="a36be-170">Пример 1. Запрос без загона Prefer</span><span class="sxs-lookup"><span data-stu-id="a36be-170">Example 1: Request without Prefer header</span></span>
+### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="49eec-170">Пример 1. Запрос без загона Prefer</span><span class="sxs-lookup"><span data-stu-id="49eec-170">Example 1: Request without Prefer header</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a36be-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="a36be-171">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="49eec-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="49eec-171">Request</span></span>
 
-<span data-ttu-id="a36be-172">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a36be-172">The following is an example of the request.</span></span>
+<span data-ttu-id="49eec-172">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="49eec-172">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a36be-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="a36be-173">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="49eec-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="49eec-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_alert"
+  "name": "update_alert_1"
 }-->
 
 ```http
@@ -100,20 +100,20 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a36be-174">C#</span><span class="sxs-lookup"><span data-stu-id="a36be-174">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="49eec-174">C#</span><span class="sxs-lookup"><span data-stu-id="49eec-174">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a36be-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a36be-175">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="49eec-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="49eec-175">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a36be-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a36be-176">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="49eec-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="49eec-176">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a36be-177">Java</span><span class="sxs-lookup"><span data-stu-id="a36be-177">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-alert-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="49eec-177">Java</span><span class="sxs-lookup"><span data-stu-id="49eec-177">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,9 +121,9 @@ Content-type: application/json
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="a36be-178">Отклик</span><span class="sxs-lookup"><span data-stu-id="a36be-178">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="49eec-178">Отклик</span><span class="sxs-lookup"><span data-stu-id="49eec-178">Response</span></span>
 
-<span data-ttu-id="a36be-179">Ниже представлен пример успешного отклика.</span><span class="sxs-lookup"><span data-stu-id="a36be-179">The following is an example of a successful response.</span></span>
+<span data-ttu-id="49eec-179">Ниже представлен пример успешного отклика.</span><span class="sxs-lookup"><span data-stu-id="49eec-179">The following is an example of a successful response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -135,15 +135,17 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="a36be-180">Пример 2. Запрос с помощью загона Prefer</span><span class="sxs-lookup"><span data-stu-id="a36be-180">Example 2: Request with Prefer header</span></span>
+### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="49eec-180">Пример 2. Запрос с помощью загона Prefer</span><span class="sxs-lookup"><span data-stu-id="49eec-180">Example 2: Request with Prefer header</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a36be-181">Запрос</span><span class="sxs-lookup"><span data-stu-id="a36be-181">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="49eec-181">Запрос</span><span class="sxs-lookup"><span data-stu-id="49eec-181">Request</span></span>
 
-<span data-ttu-id="a36be-182">В следующем примере показан запрос, который включает заглавную `Prefer` головку запроса.</span><span class="sxs-lookup"><span data-stu-id="a36be-182">The following example shows a request that includes the `Prefer` request header.</span></span>
+<span data-ttu-id="49eec-182">В следующем примере показан запрос, который включает заглавную `Prefer` головку запроса.</span><span class="sxs-lookup"><span data-stu-id="49eec-182">The following example shows a request that includes the `Prefer` request header.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="49eec-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="49eec-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_alert"
+  "name": "update_alert_2"
 }-->
 
 ```http
@@ -168,12 +170,30 @@ Prefer: return=representation
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="49eec-184">C#</span><span class="sxs-lookup"><span data-stu-id="49eec-184">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="a36be-183">Отклик</span><span class="sxs-lookup"><span data-stu-id="a36be-183">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="49eec-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="49eec-185">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="a36be-184">Ниже приводится пример ответа, когда используется необязательный `Prefer: return=representation` заглавной запрос.</span><span class="sxs-lookup"><span data-stu-id="a36be-184">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="49eec-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="49eec-186">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="a36be-p112">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a36be-p112">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="49eec-187">Java</span><span class="sxs-lookup"><span data-stu-id="49eec-187">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="49eec-188">Отклик</span><span class="sxs-lookup"><span data-stu-id="49eec-188">Response</span></span>
+
+<span data-ttu-id="49eec-189">Ниже приводится пример ответа, когда используется необязательный `Prefer: return=representation` заглавной запрос.</span><span class="sxs-lookup"><span data-stu-id="49eec-189">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
+
+> <span data-ttu-id="49eec-p112">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="49eec-p112">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

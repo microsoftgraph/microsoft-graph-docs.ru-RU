@@ -5,42 +5,42 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49c79732c2953f3e6627061b621a99c00315a4ed
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: d55f1889a8134196760b133827bee2ec8c82b20e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719968"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944423"
 ---
-# <a name="get-bitlockerrecoverykey"></a><span data-ttu-id="ea67b-103">Get bitlockerRecoveryKey</span><span class="sxs-lookup"><span data-stu-id="ea67b-103">Get bitlockerRecoveryKey</span></span>
-<span data-ttu-id="ea67b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ea67b-104">Namespace: microsoft.graph</span></span>
+# <a name="get-bitlockerrecoverykey"></a><span data-ttu-id="5b0aa-103">Get bitlockerRecoveryKey</span><span class="sxs-lookup"><span data-stu-id="5b0aa-103">Get bitlockerRecoveryKey</span></span>
+<span data-ttu-id="5b0aa-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b0aa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea67b-105">Извлечение свойств и связей [объекта bitlockerRecoveryKey.](../resources/bitlockerrecoverykey.md)</span><span class="sxs-lookup"><span data-stu-id="ea67b-105">Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object.</span></span> 
+<span data-ttu-id="5b0aa-105">Извлечение свойств и связей [объекта bitlockerRecoveryKey.](../resources/bitlockerrecoverykey.md)</span><span class="sxs-lookup"><span data-stu-id="5b0aa-105">Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object.</span></span> 
 
-<span data-ttu-id="ea67b-106">По умолчанию эта операция не возвращает ключевое **свойство,** которое представляет фактический ключ восстановления.</span><span class="sxs-lookup"><span data-stu-id="ea67b-106">By default, this operation does not return the **key** property that represents the actual recovery key.</span></span> <span data-ttu-id="ea67b-107">Чтобы включить **ключевое** свойство в ответ, используйте параметр `$select` запроса OData.</span><span class="sxs-lookup"><span data-stu-id="ea67b-107">To include the **key** property in the response, use the `$select` OData query parameter.</span></span> <span data-ttu-id="ea67b-108">В том числе параметр запроса запускает аудит Azure AD операции и `$select` создает журнал аудита.</span><span class="sxs-lookup"><span data-stu-id="ea67b-108">Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log.</span></span> <span data-ttu-id="ea67b-109">Журнал аудита [Azure AD](/azure/active-directory/reports-monitoring/concept-audit-logs) можно найти в категории KeyManagement.</span><span class="sxs-lookup"><span data-stu-id="ea67b-109">You can find the log in [Azure AD audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs) under the KeyManagement category.</span></span>
+<span data-ttu-id="5b0aa-106">По умолчанию эта операция не возвращает ключевое **свойство,** которое представляет фактический ключ восстановления.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-106">By default, this operation does not return the **key** property that represents the actual recovery key.</span></span> <span data-ttu-id="5b0aa-107">Чтобы включить **ключевое** свойство в ответ, используйте параметр `$select` запроса OData.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-107">To include the **key** property in the response, use the `$select` OData query parameter.</span></span> <span data-ttu-id="5b0aa-108">В том числе параметр запроса запускает аудит Azure AD операции и `$select` создает журнал аудита.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-108">Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log.</span></span> <span data-ttu-id="5b0aa-109">Журнал аудита [Azure AD](/azure/active-directory/reports-monitoring/concept-audit-logs) можно найти в категории KeyManagement.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-109">You can find the log in [Azure AD audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs) under the KeyManagement category.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ea67b-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ea67b-110">Permissions</span></span>
-<span data-ttu-id="ea67b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea67b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5b0aa-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5b0aa-110">Permissions</span></span>
+<span data-ttu-id="5b0aa-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b0aa-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ea67b-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ea67b-113">Permission type</span></span>|<span data-ttu-id="ea67b-114">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ea67b-114">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5b0aa-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5b0aa-113">Permission type</span></span>|<span data-ttu-id="5b0aa-114">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="5b0aa-114">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ea67b-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ea67b-115">Delegated (work or school account)</span></span>|<span data-ttu-id="ea67b-116">BitLocker.ReadBasic.All, BitLocker.Read.All</span><span class="sxs-lookup"><span data-stu-id="ea67b-116">BitLocker.ReadBasic.All, BitLocker.Read.All</span></span>|
-|<span data-ttu-id="ea67b-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ea67b-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ea67b-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ea67b-118">Not supported</span></span>|
-|<span data-ttu-id="ea67b-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ea67b-119">Application</span></span>|<span data-ttu-id="ea67b-120">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ea67b-120">Not supported</span></span>|
+|<span data-ttu-id="5b0aa-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5b0aa-115">Delegated (work or school account)</span></span>|<span data-ttu-id="5b0aa-116">BitLocker.ReadBasic.All, BitLocker.Read.All</span><span class="sxs-lookup"><span data-stu-id="5b0aa-116">BitLocker.ReadBasic.All, BitLocker.Read.All</span></span>|
+|<span data-ttu-id="5b0aa-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5b0aa-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5b0aa-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="5b0aa-118">Not supported</span></span>|
+|<span data-ttu-id="5b0aa-119">Приложение</span><span class="sxs-lookup"><span data-stu-id="5b0aa-119">Application</span></span>|<span data-ttu-id="5b0aa-120">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="5b0aa-120">Not supported</span></span>|
 
-><span data-ttu-id="ea67b-121">**Примечание:** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был подписан ключ BitLocker: </span><span class="sxs-lookup"><span data-stu-id="ea67b-121">**Note:** For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from:</span></span> 
-* <span data-ttu-id="ea67b-122">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="ea67b-122">Global administrator</span></span>
-* <span data-ttu-id="ea67b-123">Администратор облачных устройств</span><span class="sxs-lookup"><span data-stu-id="ea67b-123">Cloud device administrator</span></span>
-* <span data-ttu-id="ea67b-124">Администратор службы поддержки</span><span class="sxs-lookup"><span data-stu-id="ea67b-124">Helpdesk administrator</span></span>
-* <span data-ttu-id="ea67b-125">администратор службы Intune;</span><span class="sxs-lookup"><span data-stu-id="ea67b-125">Intune service administrator</span></span>
-* <span data-ttu-id="ea67b-126">Администратор безопасности</span><span class="sxs-lookup"><span data-stu-id="ea67b-126">Security administrator</span></span>
-* <span data-ttu-id="ea67b-127">Читатель безопасности</span><span class="sxs-lookup"><span data-stu-id="ea67b-127">Security reader</span></span>
-* <span data-ttu-id="ea67b-128">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="ea67b-128">Global reader</span></span>
+><span data-ttu-id="5b0aa-121">**Примечание:** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был подписан ключ BitLocker: </span><span class="sxs-lookup"><span data-stu-id="5b0aa-121">**Note:** For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from:</span></span> 
+* <span data-ttu-id="5b0aa-122">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="5b0aa-122">Global administrator</span></span>
+* <span data-ttu-id="5b0aa-123">Администратор облачных устройств</span><span class="sxs-lookup"><span data-stu-id="5b0aa-123">Cloud device administrator</span></span>
+* <span data-ttu-id="5b0aa-124">Администратор службы поддержки</span><span class="sxs-lookup"><span data-stu-id="5b0aa-124">Helpdesk administrator</span></span>
+* <span data-ttu-id="5b0aa-125">администратор службы Intune;</span><span class="sxs-lookup"><span data-stu-id="5b0aa-125">Intune service administrator</span></span>
+* <span data-ttu-id="5b0aa-126">Администратор безопасности</span><span class="sxs-lookup"><span data-stu-id="5b0aa-126">Security administrator</span></span>
+* <span data-ttu-id="5b0aa-127">Читатель безопасности</span><span class="sxs-lookup"><span data-stu-id="5b0aa-127">Security reader</span></span>
+* <span data-ttu-id="5b0aa-128">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="5b0aa-128">Global reader</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ea67b-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ea67b-129">HTTP request</span></span>
-<span data-ttu-id="ea67b-130">Чтобы получить указанный ключ BitLocker без возврата свойства **ключа:**</span><span class="sxs-lookup"><span data-stu-id="ea67b-130">To get the specified BitLocker key without returning the **key** property:</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b0aa-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5b0aa-129">HTTP request</span></span>
+<span data-ttu-id="5b0aa-130">Чтобы получить указанный ключ BitLocker без возврата свойства **ключа:**</span><span class="sxs-lookup"><span data-stu-id="5b0aa-130">To get the specified BitLocker key without returning the **key** property:</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -49,7 +49,7 @@ ms.locfileid: "50719968"
 GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-<span data-ttu-id="ea67b-131">Чтобы получить указанный ключ BitLocker, включая его **ключевое** свойство:</span><span class="sxs-lookup"><span data-stu-id="ea67b-131">To get the specified BitLocker key including its **key** property:</span></span>
+<span data-ttu-id="5b0aa-131">Чтобы получить указанный ключ BitLocker, включая его **ключевое** свойство:</span><span class="sxs-lookup"><span data-stu-id="5b0aa-131">To get the specified BitLocker key including its **key** property:</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -58,36 +58,36 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ea67b-132">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ea67b-132">Optional query parameters</span></span>
-<span data-ttu-id="ea67b-133">Этот метод поддерживает параметр `$select` запроса OData для возврата **свойства ключа.**</span><span class="sxs-lookup"><span data-stu-id="ea67b-133">This method supports the `$select` OData query parameter to return the **key** property.</span></span> <span data-ttu-id="ea67b-134">Подробные сведения [см. в примере 2](#example-2).</span><span class="sxs-lookup"><span data-stu-id="ea67b-134">For details, see [Example 2](#example-2).</span></span> <span data-ttu-id="ea67b-135">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="ea67b-135">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5b0aa-132">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5b0aa-132">Optional query parameters</span></span>
+<span data-ttu-id="5b0aa-133">Этот метод поддерживает параметр `$select` запроса OData для возврата **свойства ключа.**</span><span class="sxs-lookup"><span data-stu-id="5b0aa-133">This method supports the `$select` OData query parameter to return the **key** property.</span></span> <span data-ttu-id="5b0aa-134">Подробные сведения [см. в примере 2](#example-2).</span><span class="sxs-lookup"><span data-stu-id="5b0aa-134">For details, see [Example 2](#example-2).</span></span> <span data-ttu-id="5b0aa-135">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="5b0aa-135">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ea67b-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ea67b-136">Request headers</span></span>
-|<span data-ttu-id="ea67b-137">Имя</span><span class="sxs-lookup"><span data-stu-id="ea67b-137">Name</span></span>|<span data-ttu-id="ea67b-138">Описание</span><span class="sxs-lookup"><span data-stu-id="ea67b-138">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5b0aa-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5b0aa-136">Request headers</span></span>
+|<span data-ttu-id="5b0aa-137">Имя</span><span class="sxs-lookup"><span data-stu-id="5b0aa-137">Name</span></span>|<span data-ttu-id="5b0aa-138">Описание</span><span class="sxs-lookup"><span data-stu-id="5b0aa-138">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="ea67b-139">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ea67b-139">Authorization</span></span>|<span data-ttu-id="ea67b-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ea67b-p104">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="ea67b-142">ocp-client-name</span><span class="sxs-lookup"><span data-stu-id="ea67b-142">ocp-client-name</span></span>|<span data-ttu-id="ea67b-143">Имя клиентского приложения, которое выполняет вызов API.</span><span class="sxs-lookup"><span data-stu-id="ea67b-143">Name of the client application performing the API call.</span></span> <span data-ttu-id="ea67b-144">Обязательный атрибут.</span><span class="sxs-lookup"><span data-stu-id="ea67b-144">Required.</span></span>|
-|<span data-ttu-id="ea67b-145">ocp-client-version</span><span class="sxs-lookup"><span data-stu-id="ea67b-145">ocp-client-version</span></span>|<span data-ttu-id="ea67b-146">Версия клиентского приложения с вызовом API.</span><span class="sxs-lookup"><span data-stu-id="ea67b-146">Version of the client application performing the API call.</span></span> <span data-ttu-id="ea67b-147">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="ea67b-147">Required.</span></span>|
+|<span data-ttu-id="5b0aa-139">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5b0aa-139">Authorization</span></span>|<span data-ttu-id="5b0aa-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="5b0aa-142">ocp-client-name</span><span class="sxs-lookup"><span data-stu-id="5b0aa-142">ocp-client-name</span></span>|<span data-ttu-id="5b0aa-143">Имя клиентского приложения, которое выполняет вызов API.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-143">Name of the client application performing the API call.</span></span> <span data-ttu-id="5b0aa-144">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-144">Required.</span></span>|
+|<span data-ttu-id="5b0aa-145">ocp-client-version</span><span class="sxs-lookup"><span data-stu-id="5b0aa-145">ocp-client-version</span></span>|<span data-ttu-id="5b0aa-146">Версия клиентского приложения с вызовом API.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-146">Version of the client application performing the API call.</span></span> <span data-ttu-id="5b0aa-147">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-147">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ea67b-148">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ea67b-148">Request body</span></span>
-<span data-ttu-id="ea67b-149">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ea67b-149">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b0aa-148">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5b0aa-148">Request body</span></span>
+<span data-ttu-id="5b0aa-149">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-149">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ea67b-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea67b-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5b0aa-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b0aa-150">Response</span></span>
 
-<span data-ttu-id="ea67b-151">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ea67b-151">If successful, this method returns a `200 OK` response code and a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object in the response body.</span></span>
+<span data-ttu-id="5b0aa-151">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-151">If successful, this method returns a `200 OK` response code and a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ea67b-152">Примеры</span><span class="sxs-lookup"><span data-stu-id="ea67b-152">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5b0aa-152">Примеры</span><span class="sxs-lookup"><span data-stu-id="5b0aa-152">Examples</span></span>
 
-### <a name="example-1"></a><span data-ttu-id="ea67b-153">Пример 1</span><span class="sxs-lookup"><span data-stu-id="ea67b-153">Example 1</span></span>
-<span data-ttu-id="ea67b-154">Получите ключ BitLocker, указав **ключевой id.** В этом примере свойство **ключа не** возвращается.</span><span class="sxs-lookup"><span data-stu-id="ea67b-154">Get the BitLocker key by specifying the **key id**. This example does not return the **key** property.</span></span>
+### <a name="example-1"></a><span data-ttu-id="5b0aa-153">Пример 1</span><span class="sxs-lookup"><span data-stu-id="5b0aa-153">Example 1</span></span>
+<span data-ttu-id="5b0aa-154">Получите ключ BitLocker, указав **ключевой id.** В этом примере свойство **ключа не** возвращается.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-154">Get the BitLocker key by specifying the **key id**. This example does not return the **key** property.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ea67b-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="ea67b-155">Request</span></span>
-<span data-ttu-id="ea67b-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ea67b-156">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="5b0aa-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b0aa-155">Request</span></span>
+<span data-ttu-id="5b0aa-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-156">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ea67b-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea67b-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5b0aa-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b0aa-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"],
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_3"
 }
 -->
 ``` http
@@ -95,30 +95,30 @@ GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKey
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
-# <a name="c"></a>[<span data-ttu-id="ea67b-158">C#</span><span class="sxs-lookup"><span data-stu-id="ea67b-158">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="5b0aa-158">C#</span><span class="sxs-lookup"><span data-stu-id="5b0aa-158">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ea67b-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea67b-159">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="5b0aa-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b0aa-159">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ea67b-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea67b-160">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="5b0aa-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b0aa-160">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ea67b-161">Java</span><span class="sxs-lookup"><span data-stu-id="ea67b-161">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="5b0aa-161">Java</span><span class="sxs-lookup"><span data-stu-id="5b0aa-161">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-#### <a name="response"></a><span data-ttu-id="ea67b-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea67b-162">Response</span></span>
-<span data-ttu-id="ea67b-163">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ea67b-163">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="5b0aa-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b0aa-162">Response</span></span>
+<span data-ttu-id="5b0aa-163">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-163">The following is an example of the response.</span></span>
 
-<span data-ttu-id="ea67b-164">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ea67b-164">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="5b0aa-164">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-164">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -140,46 +140,46 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="ea67b-165">Пример 2</span><span class="sxs-lookup"><span data-stu-id="ea67b-165">Example 2</span></span>
-<span data-ttu-id="ea67b-166">Получите ключ BitLocker с **свойством ключа,** указав **ключевой id.**</span><span class="sxs-lookup"><span data-stu-id="ea67b-166">Get the BitLocker key with the **key** property by specifying the **key id**.</span></span>
+### <a name="example-2"></a><span data-ttu-id="5b0aa-165">Пример 2</span><span class="sxs-lookup"><span data-stu-id="5b0aa-165">Example 2</span></span>
+<span data-ttu-id="5b0aa-166">Получите ключ BitLocker с **свойством ключа,** указав **ключевой id.**</span><span class="sxs-lookup"><span data-stu-id="5b0aa-166">Get the BitLocker key with the **key** property by specifying the **key id**.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ea67b-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="ea67b-167">Request</span></span>
-<span data-ttu-id="ea67b-168">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ea67b-168">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="5b0aa-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b0aa-167">Request</span></span>
+<span data-ttu-id="5b0aa-168">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-168">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ea67b-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea67b-169">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5b0aa-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b0aa-169">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"],
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_4"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
-# <a name="c"></a>[<span data-ttu-id="ea67b-170">C#</span><span class="sxs-lookup"><span data-stu-id="ea67b-170">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="5b0aa-170">C#</span><span class="sxs-lookup"><span data-stu-id="5b0aa-170">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ea67b-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea67b-171">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="5b0aa-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b0aa-171">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ea67b-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea67b-172">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="5b0aa-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b0aa-172">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ea67b-173">Java</span><span class="sxs-lookup"><span data-stu-id="ea67b-173">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="5b0aa-173">Java</span><span class="sxs-lookup"><span data-stu-id="5b0aa-173">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-#### <a name="response"></a><span data-ttu-id="ea67b-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea67b-174">Response</span></span>
-<span data-ttu-id="ea67b-175">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ea67b-175">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="5b0aa-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b0aa-174">Response</span></span>
+<span data-ttu-id="5b0aa-175">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-175">The following is an example of the response.</span></span>
 
-<span data-ttu-id="ea67b-176">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ea67b-176">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="5b0aa-176">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5b0aa-176">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
