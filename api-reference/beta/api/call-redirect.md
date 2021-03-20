@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fb2aa01474a5c5d29ed1c87978c2d2aacae9ac92
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 51d25717f10db7ba29fb8364e513893c5e299266
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574897"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948492"
 ---
 # <a name="call-redirect"></a>вызов: перенаправление
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/redirect
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если задано несколько целевых объектов, это симуляцный вызов. Это означает, что все целевые объекты будут одновременно звонили и подключена только первая цель, подбираемая. Мы поддерживаем до 25 целей для simulring.
-|targetDisposition|String|(Неуловимый) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр обесценен, мы автоматически определяем, является ли это вызовом или симулируется из числа предоставляемых целей.|
+|targetDisposition|Строка|(Неуловимый) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр обесценен, мы автоматически определяем, является ли это вызовом или симулируется из числа предоставляемых целей.|
 |timeout|Int32|Период времени (в секундах) для операции перенаправления. Диапазон значения времени от 15 до 90 секунд включительно. Значение времени по умолчанию — 55 секунд для одной цели и 60 секунд для нескольких целей (при условии изменения). |
 |maskCallee|Boolean|Указывает, следует ли скрывать вызываемую от вызываемой. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
 |maskCaller|Boolean|Указывает, следует ли скрывать вызываемую от вызываемой стороны. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
@@ -128,7 +128,7 @@ POST /communications/calls/{id}/redirect
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
-  "name": "call-redirect"
+  "name": "call-redirect-1"
 } -->
 ``` http
 POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
@@ -160,11 +160,11 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,7 +182,7 @@ HTTP/1.1 202 Accepted
 
 <!-- {
   "blockType": "example", 
-  "name": "call-redirect"
+  "name": "call-redirect-2"
 } -->
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039

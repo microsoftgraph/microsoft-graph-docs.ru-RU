@@ -3,14 +3,14 @@ title: тип ресурса threatAssessmentResult
 description: Представляет элемент результатов оценки угроз.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9120ad0afe3efb2a559e913c7b6357a76e9ac49b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 307b3bbebd9059ffee057781b5f647e407657684
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722078"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950285"
 ---
 # <a name="threatassessmentresult-resource-type"></a>тип ресурса threatAssessmentResult
 
@@ -25,9 +25,9 @@ ms.locfileid: "50722078"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|id|String|Идентификатор результатов оценки угроз — это уникальный идентификатор глобального идентификатора (GUID).|
+|id|Строка|Идентификатор результатов оценки угроз — это уникальный идентификатор глобального идентификатора (GUID).|
 |message|String|Сообщение результата для каждой оценки угрозы.|
-|resultType|[threatAssessmentResultType](enums.md#threatassessmentresulttype-values)|Тип результатов оценки угроз. Возможные значения: `checkPolicy`, `rescan`.|
+|resultType|threatAssessmentResultType|Тип результатов оценки угроз. Возможные значения: `checkPolicy` (только для оценки почты) `rescan` .|
 
 ## <a name="json-representation"></a>Представление JSON
 

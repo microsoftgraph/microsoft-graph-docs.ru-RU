@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Лабелингоптионс
-description: Представляет параметры меток, которые могут быть предоставлены API оценки.
+title: Тип ресурса labelingOptions
+description: Представляет параметры маркировки, которые могут быть предоставлены API оценки.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: da2231ae3eb95260663d2907f56f91b96e08278c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d2409bf538de3d37ca32cdf2fd1afb78a659817
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084025"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950309"
 ---
-# <a name="labelingoptions-resource-type"></a>Тип ресурса Лабелингоптионс
+# <a name="labelingoptions-resource-type"></a>Тип ресурса labelingOptions
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры меток, которые могут быть предоставлены API оценки. **лабелингоптионс** необходимо передать в API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md) , чтобы указать сведения о метке, которую нужно применить. 
+Представляет параметры маркировки, которые могут быть предоставлены API оценки. **LabelingOptions** необходимо передать в API [evaluateApplication,](../api/informationprotectionlabel-evaluateapplication.md) чтобы указать сведения о метки, которая должна быть применена. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство               | Тип                                                | Описание                                                                                                                   |
 | :--------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | assignmentMethod       | Строка                                              | Возможные значения: `standard`, `privileged`, `auto`.                                                                        |
-| довнградежустификатион | [довнградежустификатион](downgradejustification.md) | Объект выравнивания на более ранней версии, указывающий, было ли понижение по ширине, и, если да, то причина.                          |
-| екстендедпропертиес     | Коллекция [keyValuePair](keyvaluepair.md)          | Расширенные свойства будут проанализированы и возвращены в стандартном формате метаданных МИП в составе сведений о метке. |
-| лабелид                | Guid                                                | GUID метки, которая должна быть применена к данным.                                                              |
+| downgradeJustification | [downgradeJustification](downgradejustification.md) | Объект обоснования понижения, который указывает, было ли понижение оправдано, и если да, то причина.                          |
+| расширенные свойства     | Коллекция [keyValuePair](keyvaluepair.md)          | Расширенные свойства будут разобрано и возвращены в стандартном формате метаданных MIP с меткой в качестве части сведений о метки. |
+| labelId                | Guid                                                | GUID метки, которая должна применяться к данным.                                                              |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

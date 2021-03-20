@@ -1,16 +1,16 @@
 ---
 title: Создание объекта chatMessage в канале
-description: Создайте новый chatMessage в указанном канале.
+description: Создание нового chatMessage в указанном канале.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: 0c6a6f5c8ee8fe98d1e65163c2c9a30bb5ec7301
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101911"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948296"
 ---
 # <a name="create-chatmessage-in-channel"></a>Создание chatMessage в канале
 
@@ -20,7 +20,7 @@ ms.locfileid: "50101911"
 
 Создайте [новый chatMessage](../resources/chatmessage.md) в указанном [канале.](../resources/channel.md)
 
-> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправлять только сообщения, которые будут читаться.
+> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправка сообщений, которые будут читаться людьми.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +28,12 @@ ms.locfileid: "50101911"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
 > **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от объема импортируемых данных.
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -56,17 +57,17 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [chatMessage](../resources/chatmessage.md) в JSON. Только свойство body является обязательным, другие свойства являются необязательными.
+В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md) Обязательным является только свойство body, другие свойства необязательны.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [chatMessage](../resources/chatmessage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-a-message-in-a-specified-channel"></a>Пример 1. Создание сообщения в указанном канале
 
-Более полный список примеров см. в примере [создания chatMessage в канале или чате.](chatmessage-post.md)
+Дополнительный список примеров см. в [странице Create chatMessage в канале или чате.](chatmessage-post.md)
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -74,7 +75,7 @@ POST /teams/{id}/channels/{id}/messages
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_1"
 }-->
 
 ```http
@@ -89,19 +90,19 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -160,11 +161,11 @@ Content-length: 160
 
 ### <a name="example-2-import-messages-text-only"></a>Пример 2. Импорт сообщений (только текст)
 
-> **Примечание.** Для этого `Teamwork.Migrate.All` сценария требуется область разрешений.
+> **Примечание.** Область `Teamwork.Migrate.All` разрешений требуется для этого сценария.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
-В следующем примере покажите, как импортировать сообщения во времени с помощью ключей и `createDateTime` ключей `from` в тексте запроса.
+В следующем примере покажите, как импортировать сообщения с использованием ключей и ключей в `createDateTime` `from` тексте запроса.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -202,7 +203,7 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -247,16 +248,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example-3-import-messages-with-inline-images"></a>Пример 3. Импорт сообщений со inline images
+### <a name="example-3-import-messages-with-inline-images"></a>Пример 3. Импорт сообщений с помощью inline images
 
 > [!NOTE]
-> В настоящее время inline images are the only media type supported by the import message API schema.
+> В настоящее время inline images are the only media type supported by the import message API schpi.
 
-> **Примечание.** Для этого `Teamwork.Migrate.All` сценария требуется область разрешений.
+> **Примечание.** Область `Teamwork.Migrate.All` разрешений требуется для этого сценария.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
-В следующем примере показано, как импортировать сообщения времени назад, содержащие в себя изображения, с помощью клавиш и ключей `createDateTime` `from` в тексте запроса.
+В следующем примере показано, как импортировать сообщения, содержащие inline-изображения с помощью клавиш и ключей в `createDateTime` `from` тексте запроса.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages

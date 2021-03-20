@@ -5,18 +5,18 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 88d6156b35063ccb5454278d38505c4f4dbd6291
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40e42061c16ee26cc08b2f78b3e39a706bdd1032
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020692"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50949136"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [plannerBucket](../resources/plannerbucket.md) , хранящихся в объекте [plannerPlan](../resources/plannerplan.md) .
+Извлечение списка [объектов plannerBucket,](../resources/plannerbucket.md) содержащихся в [объекте plannerPlan.](../resources/plannerplan.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,12 +37,12 @@ GET /planner/plans/{plan-id}/buckets
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [plannerBucket](../resources/plannerbucket.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [plannerBucket](../resources/plannerbucket.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Пример
@@ -52,25 +52,25 @@ GET /planner/plans/{plan-id}/buckets
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_buckets"
+  "name": "get_buckets_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,22 +1,22 @@
 ---
 title: Обновление объектов secureScoreControlProfile
-description: Обновление редактируемого объекта Секурескореконтролпрофиле в любом интегрированном решении для изменения различных свойств, таких как assignedTo или Тенантноте.
+description: Обновление редактируемого объекта secureScoreControlProfile в рамках любого интегрированного решения для изменения различных свойств, таких как назначеноTo или tenantNote.
 author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6192d33e2d7d1b98e61a4d9f28f863cd03e234d7
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: ddedbb28f16defa68cecd9d03ac24174c916b175
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330370"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948790"
 ---
 # <a name="update-securescorecontrolprofile"></a>Обновление объектов secureScoreControlProfile
 
 Пространство имен: microsoft.graph
 
-Обновление редактируемого объекта **секурескореконтролпрофиле** в любом интегрированном решении для изменения различных свойств, таких как **assignedTo** или **тенантноте**.
+Обновление редактируемого объекта **secureScoreControlProfile** в рамках любого интегрированного решения, чтобы изменить различные свойства, например **назначеноTo** или **tenantNote.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48330370"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | SecurityEvents.ReadWrite.All |
+|Для приложений | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,29 +41,29 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {код}. Обязательно.|
-|Prefer | Возврат = представление. |
+|Prefer | return=representation. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить. Текст **должен** содержать `vendorInformation` Свойство Valid `provider` и `vendor` Fields. В следующей таблице перечислены поля, которые можно обновить для **секурескореконтролпрофиле**. Значения для существующих свойств, не включенных в текст запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. Тело должно **содержать** свойство `vendorInformation` с допустимым и `provider` `vendor` полями. В следующей таблице перечислены поля, которые можно обновить для **secureScoreControlProfile.** Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|String|Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.|
-|comment|String|Комментарии аналитика в элементе управления (для управления клиентом).|
-|state| String|Управляемый аналитикой параметр для элемента управления. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Сложный тип, содержащий сведения о продукте, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре;). **Требуются поля поставщика и поставщика.** |
+|assignedTo|String|Имя аналитика, на который назначен контроль для выполнения, выполнения или устранения.|
+|comment|String|Аналитик комментирует управление (для управления клиентом).|
+|state| String|Параметр управления, управляемый аналитиком. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Сложный тип, содержащий сведения о поставщике продуктов и служб безопасности, поставщике и подпрограмме (например, поставщик=Microsoft; provider=SecureScore;). **Требуются поля поставщика и поставщика.** |
 
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-Если используется заголовок необязательного запроса, метод возвращает `200 OK` код отклика и обновленный объект [секурескореконтролпрофилес](../resources/securescorecontrolprofile.md) в тексте отклика.
+Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-request-without-prefer-header"></a>Пример 1: запрос без верхнего колонтитула
+### <a name="example-1-request-without-prefer-header"></a>Пример 1. Запрос без загона Prefer
 
 ### <a name="request"></a>Запрос
 
@@ -72,7 +72,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_1"
 }-->
 
 ```http
@@ -93,15 +93,15 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
@@ -124,15 +124,17 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>Пример 2: запрос с заголовком предпочтения
+### <a name="example-2-request-with-prefer-header"></a>Пример 2. Запрос с помощью загона Prefer
 
 #### <a name="request"></a>Запрос
 
-В приведенном ниже примере показан запрос, включающий `Prefer` заголовок запроса.
+В следующем примере показан запрос, который включает заглавную `Prefer` головку запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_2"
 }-->
 
 ```http
@@ -151,10 +153,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика при использовании заголовка необязательного `Prefer: return=representation` запроса.
+Ниже приводится пример ответа, когда используется необязательный `Prefer: return=representation` заглавной запрос.
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

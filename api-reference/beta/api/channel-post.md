@@ -1,16 +1,16 @@
 ---
 title: Создание канала
-description: Создайте новый канал в команде, как указано в теле запроса.
+description: Создание нового канала в команде, как указано в теле запроса.
 localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 549d4a3657655c9ee8be6be6bb82fee9dc9d769e
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 34576f37e9c635c58843c6f83ace63ced8e48643
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753859"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948331"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -27,12 +27,14 @@ ms.locfileid: "49753859"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
+
+> **Примечание.** В будущем Корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от количества импортируемых данных с помощью API Teamwork.Migrate.All и/или [переноса.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ POST /teams/{team-id}/channels
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [канала](../resources/channel.md) в JSON.
+В теле запроса поставляем представление JSON объекта [канала.](../resources/channel.md)
 
 ## <a name="response"></a>Отклик
 
@@ -58,7 +60,7 @@ POST /teams/{team-id}/channels
 При безуспешном запросе этот метод возвращает код отклика `400 Bad Request`. Ниже перечислены распространенные причины этого отклика.
 
 * Для **createdDateTime** установлено значение в будущем.
-* **createdDateTime** правильно задан, но атрибут экземпляра **channelCreationMode** отсутствует или задан как недопустимое значение.
+* **createdDateTime** правильно указывается, но атрибут **экземпляра channelCreationMode** отсутствует или задан для значения недействительным.
 
 ## <a name="examples"></a>Примеры
 
@@ -107,7 +109,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
@@ -133,7 +135,7 @@ Content-length: 201
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание частного канала и добавление пользователя в качестве владельца команды.
+В следующем примере показан запрос на создание частного канала и добавление пользователя в качестве владельца группы.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -184,7 +186,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -256,8 +258,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. Заглавная дорожка расположения содержимого в ответе указывает путь к каналу, который необходимо получить.
-После этого этот канал можно использовать для [импорта сообщений.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+Ниже приводится пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
+После предварительного использования этот канал можно использовать для [импорта сообщений.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -275,7 +277,7 @@ Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelI
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание стандартного канала с настройками модерации. Эту операцию можно выполнить только для стандартного канала.
+В следующем примере показан запрос на создание стандартного канала с настройками модерации. Эта операция может выполняться только для стандартного канала.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -349,7 +351,7 @@ Content-length: 201
 
 ## <a name="see-also"></a>См. также
 
-* [Завершение миграции для канала](channel-completemigration.md)
+* [Полная миграция для канала](channel-completemigration.md)
 * [Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [Создание команды](team-post.md)
 

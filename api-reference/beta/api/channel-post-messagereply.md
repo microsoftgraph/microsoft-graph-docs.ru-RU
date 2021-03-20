@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: db0164be77260c60c2d89c726b048b4af8dc741d
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: 29be6117b229da1d5b3921db7d52ae0e1897741c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101904"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948257"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -18,9 +18,9 @@ ms.locfileid: "50101904"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый ответ [на chatMessage](../resources/chatmessage.md) в указанном [канале.](../resources/channel.md)
+Создайте новый ответ [на chatMessage в](../resources/chatmessage.md) указанном [канале.](../resources/channel.md)
 
-> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправлять только сообщения, которые будут читаться.
+> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправка сообщений, которые будут читаться людьми.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -31,11 +31,12 @@ ms.locfileid: "50101904"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
 > **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от объема импортируемых данных.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,15 +50,15 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажу представление объекта [сообщения](../resources/chatmessage.md) в JSON. Только свойство body является обязательным, другие свойства являются необязательными.
+В тексте запроса поставляем представление JSON объекта [сообщения.](../resources/chatmessage.md) Обязательным является только свойство body, другие свойства необязательны.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `201 Created` код ответа с созданным сообщением. [](../resources/chatmessage.md)
+В случае успешной работы этот метод возвращает `201 Created` код ответа с [созданным](../resources/chatmessage.md) сообщением.
 
-## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Пример 1. Создание ответа на chatMessage
+## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Пример 1. Создание нового ответа на chatMessage
 
-Более полный список примеров см. в примере [создания chatMessage в канале или чате.](chatmessage-post.md)
+Дополнительный список примеров см. в [странице Create chatMessage в канале или чате.](chatmessage-post.md)
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -100,7 +101,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -149,11 +150,11 @@ Content-length: 160
 
 ### <a name="example-2-import-messages"></a>Пример 2. Импорт сообщений
 
-> **Примечание.** Для этого `Teamwork.Migrate.All` сценария требуется область разрешений.
+> **Примечание.** Область `Teamwork.Migrate.All` разрешений требуется для этого сценария.
 
 #### <a name="request"></a>Запрос
 
-В следующем примере покажите, как импортировать сообщения во времени с помощью ключей и `createDateTime` ключей `from` в тексте запроса.
+В следующем примере покажите, как импортировать сообщения с использованием ключей и ключей в `createDateTime` `from` тексте запроса.
 
 <!-- {
   "blockType": "response",

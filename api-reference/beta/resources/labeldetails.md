@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Лабелдетаилс
-description: Представляет сведения о метке метки защиты информации.
+title: тип ресурса labelDetails
+description: Представляет сведения метки защиты информации.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6b475c96b3ecbc2caa0aa147e3fc8fd0253ac243
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 214589dfcb26497b5271008f8a358d06a4fb700f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084039"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950312"
 ---
-# <a name="labeldetails-resource-type"></a>Тип ресурса Лабелдетаилс
+# <a name="labeldetails-resource-type"></a>тип ресурса labelDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения о метке метки защиты информации. **лабелдетаилс** предоставляет сведения об отдельной метке защиты информации. Могут возвращаться [евалуатеремовал](../api/informationprotectionlabel-evaluateremoval.md), [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md)и [екстрактлабел](../api/informationprotectionlabel-extractLabel.md)
+Представляет сведения метки защиты информации. **LabelDetails предоставляет** сведения о единой мете защиты информации. Можно вернуть по [оценкеRemoval,](../api/informationprotectionlabel-evaluateremoval.md) [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)и [extractLabel](../api/informationprotectionlabel-extractLabel.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип    | Описание                                                                                                  |
 | :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
-| color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если она настроена.                               |
-| description | Строка  | Заданное администратором описание метки.                                                                 |
-| id          | Строка  | ИДЕНТИФИКАТОР метки является глобальным уникальным идентификатором (GUID).                                                          |
-| isActive    | Boolean | Указывает, активна ли метка. Активные метки должны быть скрыты или отключены в пользовательских интерфейсах. |
-| name        | String  | Имя в виде открытого текста метки.                                                                             |
-| sensitivity | Int32   | Значение чувствительности метки, где меньше конфиденциально.                                           |
-| tooltip     | Строка  | Всплывающая подсказка, отображаемая для метки в пользовательском интерфейсе.                                      |
+| color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если настроен.                               |
+| description | Строка  | Описание метки, определенное администратором.                                                                 |
+| id          | Строка  | Идентификатор метки — это глобальный уникальный идентификатор (GUID).                                                          |
+| isActive    | Boolean | Указывает, активна метка или нет. Активные метки должны быть скрыты или отключены в пользовательских интерфейсах. |
+| name        | String  | Простое имя метки.                                                                             |
+| sensitivity | Int32   | Значение чувствительности метки, где более низкий уровень менее чувствителен.                                           |
+| tooltip     | Строка  | Инструмент, который должен отображаться для метки в пользовательском интерфейсе.                                      |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

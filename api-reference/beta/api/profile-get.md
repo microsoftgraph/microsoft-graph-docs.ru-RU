@@ -1,16 +1,16 @@
 ---
 title: Получение профиля
-description: Получение свойств и связей объекта Profile.
+description: Извлечение свойств и связей объекта профиля.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8334ebdf8c001cde4784cc07e1d990ca307029cb
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 5e75302cb787a898a0dd7b02498e99b898222fcb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352195"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950634"
 ---
 # <a name="get-profile"></a>Получение профиля
 
@@ -18,9 +18,9 @@ ms.locfileid: "49352195"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Profile](../resources/profile.md) для определенного пользователя.
+Извлечение свойств и связей объекта [профиля](../resources/profile.md) для данного пользователя.
 
-Ресурс **Profile** предоставляет различные расширенные свойства, которые могут быть описательными для пользователя как [отношения](../resources/profile.md#relationships), например юбилеи и действия по образованию. Чтобы получить одно из этих свойств навигации, используйте соответствующий метод GET для этого свойства. Просмотрите [методы](../resources/profile.md) , предоставляемые **профилем**.
+Ресурс **профиля** предоставляет различные богатые свойства, описательные для пользователя, как [отношения,](../resources/profile.md#relationships)например, юбилеи и образовательные мероприятия. Чтобы получить одно из этих свойств навигации, используйте соответствующий метод GET в этом свойстве. См. [методы,](../resources/profile.md) открытые **профилем**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "49352195"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Application                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/profile
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
+Этот метод поддерживает параметр `$select` запроса. Укажите список свойств, которые необходимо включить в ответ, разделив их запятой. Для оптимальной производительности выберите только подмножество необходимых свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,39 +58,39 @@ GET /users/{id | userPrincipalName}/profile
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Profile](../resources/profile.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого объекта `200 OK` профиля в тексте ответа. [](../resources/profile.md)
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-users-profile"></a>Пример 1: получение профиля пользователя
+### <a name="example-1-get-a-users-profile"></a>Пример 1. Получить профиль пользователя
 
-Ниже приведен пример запроса на получение профиля.
+Ниже приводится пример запроса на профиль GET.
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_profile"
+  "name": "get_profile_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -287,35 +287,35 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a>Пример 2: разверните элемент Names and Skills Collection и выберите свойства в объектах.
+### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a>Пример 2. Расширение коллекции имен и навыков и выбор свойств в сущностями
 
-Ниже приведен пример использования параметров запроса $expand и $select для получения частичных сведений из профиля пользователя.
+Ниже приводится пример использования параметров $expand и $select для получения частичной информации из профиля пользователя.
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_profile"
+  "name": "get_profile_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

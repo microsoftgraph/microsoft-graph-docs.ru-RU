@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cfd4e0721e43389a03e945db21fb8230a1eb9276
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: f4be30fff38c639ac55d126b0501b3f9f57afa52
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574883"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948460"
 ---
 # <a name="call-transfer"></a>вызов: передача
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/transfer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является объектом переноса.|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
@@ -70,7 +70,7 @@ POST /communications/calls/{id}/transfer
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/transfer
@@ -102,7 +102,7 @@ Content-Length: 430
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -256,7 +256,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "@odata.type": "call-transfer-2"
 }-->
 
 ```http

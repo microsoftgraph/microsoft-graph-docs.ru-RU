@@ -1,24 +1,24 @@
 ---
-title: Удаление звонка
-description: Удаление или разрыв активного вызова.
+title: Удаление вызова
+description: Удаление или подвешить активный вызов.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2fab1c2248414baab43db2bf9caf2e28c09df3ed
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dbdaf4a0332c52e932031da29e0427c3b054763b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959767"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948597"
 ---
-# <a name="delete-call"></a>Удаление звонка
+# <a name="delete-call"></a>Удаление вызова
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление или разрыв активного вызова. Для звонков по группам это приведет к удалению только той стороны звонка, а базовый вызов групп будет продолжаться.
+Удаление или подвешить активный вызов. Для групповых вызовов это удаляет только ногу вызова, а в основном групповой вызов будет по-прежнему продолжаться.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48959767"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложений                            | Нет.                                  |
+| Приложение                            | Отсутствуют.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -56,25 +56,25 @@ DELETE /communications/calls/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-call"
+  "name": "delete-call-1"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>Уведомление — завершение
+##### <a name="notification---terminating"></a>Уведомление — прекращение
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -121,7 +121,7 @@ Content-Type: application/json
   
 ```
 
-##### <a name="notification---terminated"></a>Уведомление — прервано
+##### <a name="notification---terminated"></a>Уведомление — прекращено
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -1,18 +1,18 @@
 ---
 title: Отправка больших файлов с помощью SDKs Microsoft Graph
-description: Руководство по отправке больших файлов с помощью SDKs Microsoft Graph.
+description: Предоставляет рекомендации по отправке больших файлов с помощью SDKs Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 323ee872db1962119a2b34f99ad032b18b5c31f0
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 54ff14071a81ac286cebbd785216c02dc9cf6c23
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777584"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948639"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Отправка больших файлов с помощью SDKs Microsoft Graph
 
-Ряд сущностям в [](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) Microsoft Graph поддерживает повторное отправку файлов, чтобы упростить отправку больших файлов. Вместо того чтобы пытаться отправить весь файл в одном запросе, файл разрезается на более мелкие части, и для отправки одного фрагмента используется запрос. Чтобы упростить этот процесс, в SDKs Microsoft Graph реализована большая задача отправки файлов, которая управляет отправкой фрагментов.
+Несколько сущностям в Microsoft Graph поддерживают [повторное](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) загрузку файлов, чтобы упростить отправку больших файлов. Вместо того, чтобы пытаться загрузить весь файл в одном запросе, файл нарезается на мелкие части, и для отправки одного среза используется запрос. Чтобы упростить этот процесс, SDKs Microsoft Graph реализует большую задачу загрузки файлов, которая управляет загрузкой срезов.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -114,19 +114,6 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
             String.format("Uploaded %d bytes of %d total bytes", current, max)
         );
     }
-
-    @Override
-    public void success(final DriveItem result) {
-        System.out.println(
-            String.format("Uploaded file with ID: %s", result.id)
-        );
-    }
-
-    public void failure(final ClientException ex) {
-        System.out.println(
-            String.format("Error uploading file: %s", ex.getMessage())
-        );
-    }
 };
 
 // Create an upload session
@@ -141,8 +128,8 @@ UploadSession uploadSession = graphClient
     .buildRequest()
     .post();
 
-ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
-    new ChunkedUploadProvider<DriveItem>
+LargeFileUploadTask<DriveItem> largeFileUploadTask =
+    new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
 // Config parameter is an array of integers
@@ -151,14 +138,14 @@ ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
 int[] customConfig = { 320 * 1024 };
 
 // Do the upload
-chunkedUploadProvider.upload(callback, customConfig);
+largeFileUploadTask.upload(callback, customConfig);
 ```
 
 ---
 
-## <a name="resuming-a-file-upload"></a>Resuming a file upload
+## <a name="resuming-a-file-upload"></a>Повторное загрузка файла
 
-SDKs Microsoft Graph поддерживают повторное [отправку.](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload) Если во время отправки приложение сталкивается с прерываниями подключения или состоянием HTTP 5.x.x, вы можете возобновить отправку.
+SDKs Microsoft Graph поддерживают [повторное](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload)загрузку в процессе выполнения. Если во время загрузки приложение сталкивается с прерываемой связью или состоянием HTTP 5.x.x, вы можете возобновить отправку.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -176,7 +163,7 @@ const resumedFile: DriveItem = await uploadTask.resume();
 ### <a name="java"></a>[Java](#tab/java)
 
 > [!NOTE]
-> В настоящее время Java SDK не поддерживает повторное скачивание.
+> В настоящее время SDK Java не поддерживает повторное скачивание в процессе выполнения.
 
 ---
 <!-- markdownlint-enable MD024 -->

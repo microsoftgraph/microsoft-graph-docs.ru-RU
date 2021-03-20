@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Жустифяктион
-description: Указывает, что для указанной операции необходимо обоснование.
+title: тип ресурса justifyAction
+description: Указывает, что для указанной операции требуется обоснование.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9e26cd675ecb1a3a50c505c019244c60eaee88c0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1db6a91987fd1345ca6a1503dfbd51e3178e9b89
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039358"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950319"
 ---
-# <a name="justifyaction-resource-type"></a>Тип ресурса Жустифяктион
+# <a name="justifyaction-resource-type"></a>тип ресурса justifyAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает, что для указанной операции необходимо обоснование. API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateApplication.md), [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateClassificationResults.md)или [евалуатеремовал](../api/informationprotectionlabel-evaluateRemoval.md) могут возвращать **жустифяктион**. Обоснование предоставляется с помощью [лабелингоптионс](../resources/labelingoptions.md). Предыдущий вызов должен повторяться, но свойство **довнградежустификатион** объекта **лабелингоптионс** Set с сообщением обоснования предоставляется с помощью пользовательского ввода или логики приложения.
+Указывает, что для указанной операции требуется обоснование. The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) API may return **justifyAction**. Обоснование предоставляется с [помощью метокOptions](../resources/labelingoptions.md). Предыдущий вызов должен быть повторен, но с свойством **downgradeJustification** **меткиOptions,** за набором с сообщением об оправдании, предоставляемым с помощью пользовательского ввода или логики приложения.
 
 ## <a name="properties"></a>Свойства
 

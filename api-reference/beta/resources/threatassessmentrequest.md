@@ -1,16 +1,16 @@
 ---
 title: тип ресурса threatAssessmentRequest
-description: Абстрактный тип повторного использования, используемый для представления элемента запроса на оценку угрозы.
+description: Абстрактный тип ресурса, используемый для представления элемента запроса на оценку угрозы.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 00a180d1d78c47a50e44fc7606d65fa94cc8e3e2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0be6931bf2589f20d26ee7fa37310f3181447b2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721602"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950273"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>тип ресурса threatAssessmentRequest
 
@@ -39,14 +39,14 @@ ms.locfileid: "50721602"
 
 | Свойство     | Тип        | Описание |
 | :-------------|:------------|:------------|
-|category|[threatCategory](enums.md#threatcategory-values)|Категория угроз. Возможные значения: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|Тип оценки угрозы контента. Возможные значения: `mail`, `url`, `file`.|
+|category|threatCategory|Категория угроз. Возможные значения: `spam`, `phishing`, `malware`.|
+|contentType|threatAssessmentContentType|Тип оценки угрозы контента. Возможные значения: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|Создатель запроса на оценку угроз.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|Ожидаемая оценка от подавщика. Возможные значения: `block`, `unblock`.|
-|id|String|Идентификатор запроса на оценку угрозы — это уникальный идентификатор глобального идентификатора (GUID).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угрозы. Возможные значения: `user`, `administrator`.|
-|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
+|expectedAssessment|threatExpectedAssessment|Ожидаемая оценка от подавщика. Возможные значения: `block`, `unblock`.|
+|id|Строка|Идентификатор запроса на оценку угрозы — это уникальный идентификатор глобального идентификатора (GUID).|
+|requestSource|threatAssessmentRequestSource|Источник запроса на оценку угрозы. Возможные значения: `user`, `administrator`.|
+|status|threatAssessmentStatus|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
 ## <a name="relationships"></a>Связи
 
