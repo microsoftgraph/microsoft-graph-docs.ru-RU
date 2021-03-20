@@ -1,16 +1,16 @@
 ---
 title: Публикация teamsapp
-description: Опубликуйте приложение в каталоге приложений Microsoft Teams.
+description: Публикация приложения в каталоге приложений Microsoft Teams.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9e8579bb2da482e18d2524c82bee985b9eb8ae39
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: a62760b46c66d2046c8d42a476275c5430ad043a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572186"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942230"
 ---
 # <a name="publish-teamsapp"></a>Публикация teamsApp
 
@@ -18,10 +18,10 @@ ms.locfileid: "49572186"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams.
-В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь значение свойства **distributionMethod** `organization` .
+Публикация приложения [в](../resources/teamsapp.md) каталоге приложений Microsoft Teams.
+В частности, этот API публикует приложение в каталог организации (каталог приложений клиента); созданный ресурс будет иметь **значение свойства distributionMethod** `organization` в .
 
-Свойство **рекуиресревиев** позволяет любому пользователю передавать приложение для просмотра администратором. Администраторы могут утверждать или отклонять эти приложения через этот API или центр администрирования Microsoft Teams.
+Свойство **requiresReview** позволяет любому пользователю отправлять приложение для проверки администратором. Администраторы могут утверждать или отклонить эти приложения с помощью этого API или центра администрирования Microsoft Teams.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "49572186"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированное (рабочая или учебная учетная запись) | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
@@ -41,7 +41,7 @@ ms.locfileid: "49572186"
 POST /appCatalogs/teamsApps
 ```
 
-Чтобы опубликовать приложение, для которого требуется проверка, выполните следующие действия:
+Публикация приложения, требуемая для проверки:
 
 ```http
 POST /appCatalogs/teamsApps?requiresReview:{Boolean}
@@ -51,35 +51,35 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Свойство|Тип|Описание|
 |----|----|----|
-|рекуиресревиев| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с правами администратора могут отсылать приложения, не запуская проверку. Если пользователям требуется предварительно запросить проверку перед публикацией, необходимо задать  `requiresReview` для них значение `true` . Пользователь с правами администратора может не устанавливать `requiresReview` или устанавливать значение `false`  , и приложение считается утвержденным и будет публиковаться мгновенно.|
+|requiresReview| Boolean | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
-| Content-Type  | Application/ZIP. Обязательно. |
+| Content-Type  | application/zip. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса включите полезные данные манифеста ZIP для Teams. Дополнительные сведения см. в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).  
+В теле запроса включите полезной нагрузкой манифест Teams zip. Дополнительные сведения см. [в материале Create an app package.](/microsoftteams/platform/concepts/apps/apps-package)  
 
-Каждое приложение в каталоге приложений должно иметь уникальный манифест `id` .
+Каждое приложение в каталоге приложений должно иметь уникальный `id` манифест.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [teamsApp](../resources/teamsapp.md) .
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект teamsApp.](../resources/teamsapp.md)
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-publish-an-app-to-the-app-catalog"></a>Пример 1: Публикация приложения в каталоге приложений
+### <a name="example-1-publish-an-app-to-the-app-catalog"></a>Пример 1. Публикация приложения в каталоге приложений
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_1"
 }-->
 
 ```http
@@ -91,7 +91,7 @@ Content-length: 244
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
@@ -100,7 +100,7 @@ Content-length: 244
 
 ---
 
-Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).
+Сведения о создании почтового файла приложения Microsoft Teams см. в статью [Создание пакета приложений.](/microsoftteams/platform/concepts/apps/apps-package)
 <!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>Отклик
 
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Пример 2: Отправка нового приложения для проверки в каталог приложений Организации
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Пример 2. Отправка нового приложения для проверки в каталог приложений организации
 
 #### <a name="request"></a>Запрос
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_2"
 }-->
 
 ```http
@@ -141,11 +141,11 @@ Content-length: 244
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,14 +172,14 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 }
 ```
 
-### <a name="example-3-approve-or-reject-an-app-pending-review"></a>Пример 3: утверждение или отклонение ожидающей проверки приложения
+### <a name="example-3-approve-or-reject-an-app-pending-review"></a>Пример 3. Утверждение или отклонение приложения до рассмотрения
 
 #### <a name="request"></a>Запрос
 
 **HTTP**
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_3"
 }-->
 
 ```http

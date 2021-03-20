@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 81b60ee83f2be23ad2484af50ff1b71915158f4c
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: fa815d9ccd3876075b0de941474c61aed01fc177
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844888"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942006"
 ---
 # <a name="list-apps-installed-for-user"></a>Перечисление приложений, установленных для пользователя
 
@@ -18,7 +18,7 @@ ms.locfileid: "49844888"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список [приложений, установленных](../resources/teamsappinstallation.md) в личной области указанного [пользователя.](../resources/user.md)
+Извлечение списка [приложений,](../resources/teamsappinstallation.md) установленных в личном поле указанного [пользователя.](../resources/user.md)
 
 > [!NOTE]
 > `id`Ресурс **teamsAppInstallation** имеет не то же значение, что и `id` связанный ресурс **teamsApp**.
@@ -31,7 +31,7 @@ ms.locfileid: "49844888"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Для приложений | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -70,25 +70,25 @@ GET /users/{user-id}/teamwork/installedApps
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps"
+  "name": "user_list_teamsApps_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps",
+  "name": "user_list_teamsApps_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -121,7 +121,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Пример 2. Просмотр имен и других сведений о приложениях, установленных для пользователя
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Пример 2. Получить имена и другие сведения о приложениях, установленных для пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -129,7 +129,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_details"
+  "name": "user_list_teamsApps_details_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=t
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps_details",
+  "name": "user_list_teamsApps_details_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -187,7 +187,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Пример 3. Получите ресурс установки приложения на основе ИД манифеста связанного приложения
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Пример 3. Получить ресурс установки приложения на основе манифеста ID связанного приложения
 
 #### <a name="request"></a>Запрос
 

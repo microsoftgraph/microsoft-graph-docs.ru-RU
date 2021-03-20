@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3ded1ad2ac77cfd08320c54480de5dd24d319b91
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 589c34a024097599e5b6f9de074cd635d28ccc77
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176957"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942199"
 ---
 # <a name="update-tiindicator"></a>Обновление объекта tiIndicator
 
@@ -28,7 +28,7 @@ ms.locfileid: "50176957"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,39 +42,39 @@ PATCH /security/tiIndicators/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {code} **Required** |
+| Authorization | Bearer {code} **Required** |
 |Prefer | return=representation |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Необходимые поля: `id` , `expirationDateTime` , `targetProduct` .
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Необходимые поля: `id` , `expirationDateTime` `targetProduct` .
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|action|string| Действие, применяемая при совпадении индикатора из средства безопасности targetProduct. Возможные значения: `unknown`, `allow`, `block`, `alert`.|
-|activityGroupNames|Коллекция String|Имена аналитики киберугроз для сторон, ответственных за вредоносные действия, на которые распространяется индикатор угроз.|
-|additionalInformation|String|Область catchall, в которую могут быть помещены дополнительные данные индикатора, не охваченные другими свойствами tiIndicator. Данные, помещенные в additionalInformation, как правило, не используются средством безопасности targetProduct.|
-|confidence|Int32|Integer representing the confidence the data within the indicator accurately identifies malicious behavior. Допустимые значения: 0–100, 100 — наивысшее.|
-|description|String|Краткое описание (не более 100 символов) угрозы, представляемой индикатором.|
-|diamondModel|[diamondModel](../resources/tiindicator.md#diamondmodel-values)|Область диамантской модели, в которой существует этот индикатор. Возможные значения: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
-|expirationDateTime|DateTimeOffset| Строка даты и времени, указывающая, когда истекает срок действия индикатора. Все индикаторы должны иметь дату окончания срока действия, чтобы избежать сохраняющихся устаревших индикаторов в системе. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
-|externalId|String|Идентификационный номер, который связывает индикатор с системой поставщика индикаторов (например, с внешней клавишей).|
-|isActive|Логическое|Используется для отключения индикаторов в системе. По умолчанию любой отправленный индикатор является активным. Однако поставщики могут отправлять существующие индикаторы с этим набором "False", чтобы деактивировать индикаторы в системе.|
-|killChain|[Коллекция killChain](../resources/tiindicator.md#killchain-values)|Массив строк JSON, который описывает точку или точку в цепочке событий, на которую направлен этот индикатор. Точные значения см. ниже в "killChain values".|
-|knownFalsePositives|String|Сценарии, в которых индикатор может вызывать ложные срабатываия. Это должен быть текст, читаемый человеком.|
-|lastReportedDateTime|DateTimeOffset|Время последнего увидеть индикатор. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
-|malwareFamilyNames|Коллекция String|Имя семейства вредоносных программ, связанное с индикатором, если оно существует. Корпорация Майкрософт по возможности предпочитает имя семейства вредоносных программ Майкрософт, которое можно найти с помощью Защитник Windows аналитики [безопасности.](https://www.microsoft.com/wdsi/threats)|
-|passiveOnly|Логическое|Определяет, должен ли индикатор вызывать событие, которое видно конечному пользователю. Если установлено "true", средства безопасности не будут уведомлять конечного пользователя о том, что произошло "попадание". Это чаще всего рассматривается как аудит или режим в тихом режиме продуктами безопасности, в которых они просто регистрировали совпадение, но не выполняли это действие. Значение по умолчанию − ложь.|
-|severity|Int32|Integer representing the severity of the malicious behavior identified by the data within the indicator. Допустимые значения: 0–5, где 5 — самый серьезный, а ноль — нет. Значение по умолчанию: 3.|
+|action|string| Действие, применяемая, если индикатор соответствует из средства безопасности targetProduct. Возможные значения: `unknown`, `allow`, `block`, `alert`.|
+|activityGroupNames|Коллекция строк|Имя разведки киберугроз для сторон, ответственных за вредоносную деятельность, подпадаемую под индикатор угрозы.|
+|additionalInformation|Строка|Область catchall, в которую могут быть помещены дополнительные данные из индикатора, не охваченного другими свойствами tiIndicator. Данные, помещенные в дополнительнуюinformation, как правило, не будут использоваться средством безопасности targetProduct.|
+|confidence|Int32|Integer, представляющий доверие к данным в индикаторе, точно определяет вредоносное поведение. Допустимые значения : 0 — 100, а 100 — самые высокие.|
+|description|Строка|Краткое описание (100 символов или менее) угрозы, представленной индикатором.|
+|diamondModel|[diamondModel](../resources/tiindicator.md#diamondmodel-values)|Область бриллиантовой модели, в которой существует этот индикатор. Возможные значения: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
+|expirationDateTime|DateTimeOffset| Строка DateTime, указывающая, когда истекает срок действия индикатора. Чтобы избежать сохраняющихся в системе устаревших индикаторов, все индикаторы должны иметь дату истечения срока действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|externalId|String|Идентификационный номер, который связывает индикатор с системой поставщика индикаторов (например, с иностранным ключом).|
+|isActive|Boolean|Используется для отключения индикаторов внутри системы. По умолчанию любой представленный индикатор задан как активный. Однако для отключения индикаторов в системе поставщики могут отправлять существующие индикаторы с этим набором в "False".|
+|killChain|[коллекция killChain](../resources/tiindicator.md#killchain-values)|Массив строк JSON, который описывает, какие точки или точки на цепочке убийств этот индикатор цели. Для точных значений см. ниже "killChain values".|
+|knownFalsePositives|Строка|Сценарии, в которых индикатор может вызывать ложные срабатыва- Это должен быть текст, читаемый для человека.|
+|lastReportedDateTime|DateTimeOffset|Последний раз индикатор был замечен. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|malwareFamilyNames|Коллекция строк|Семейство вредоносных программ, связанное с индикатором, если оно существует. Корпорация Майкрософт предпочитает имя семейства вредоносных программ Майкрософт, если это возможно, которое можно найти в энциклопедии Защитник Windows security [Intelligence.](https://www.microsoft.com/wdsi/threats)|
+|passiveOnly|Boolean|Определяет, должен ли индикатор вызвать событие, которое видно конечному пользователю. При наборе "true" средства безопасности не будут уведомлять конечного пользователя о том, что произошло "попадание". Это чаще всего рассматривается как режим аудита или бесшумного режима с помощью продуктов безопасности, в которых они просто регистрировали совпадение, но не выполняли действие. Значение по умолчанию − ложь.|
+|severity|Int32|Набор, представляющий серьезность вредоносного поведения, определяемого данными в индикаторе. Допустимые значения : 0 — 5, где 5 является самым строгим, а нуль — не очень серьезным. Значение по умолчанию: 3.|
 |tags|Коллекция String|Массив строк JSON, который хранит произвольные теги и ключевые слова.|
-|tlpLevel|[tlpLevel](../resources/tiindicator.md#tlplevel-values)| Значение протокола light traffic light для индикатора. Возможные значения: `unknown`, `white`, `green`, `amber`, `red`.|
+|tlpLevel|[tlpLevel](../resources/tiindicator.md#tlplevel-values)| Значение Протокола светофора для индикатора. Возможные значения: `unknown`, `white`, `green`, `amber`, `red`.|
 
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-Если используется необязательный заголовщик запроса, метод возвращает код отклика и обновленный объект `200 OK` [tiIndicator](../resources/tiindicator.md) в тексте отклика.
+Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный `200 OK` [объект tiIndicator](../resources/tiindicator.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -87,7 +87,7 @@ PATCH /security/tiIndicators/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_tiIndicator"
+  "name": "update_tiIndicator_1"
 }-->
 
 ```http
@@ -99,19 +99,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-tiindicator-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tiindicator-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-tiindicator-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tiindicator-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-tiindicator-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tiindicator-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,7 +119,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -131,15 +131,17 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>Пример 2. Запрос с заголбом Prefer
+### <a name="example-2-request-with-prefer-header"></a>Пример 2. Запрос с помощью загона Prefer
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, включаемого в `Prefer` заголок.
+Ниже приводится пример запроса, включаемого `Prefer` в заглавную.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_tiIndicator"
+  "name": "update_tiIndicator_2"
 }-->
 
 ```http
@@ -153,13 +155,31 @@ Prefer: return=representation
   "description": "description-after-update",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tiindicator-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tiindicator-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tiindicator-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Показанный здесь объект ответа может быть сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: eb28f345aba008a0f2d5bb5ab4723c2ffbb8aca3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e55abdad4a03319407b1c6e31e37e717739f0d10
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760934"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941766"
 ---
 # <a name="publishedresource-resource-type"></a>тип ресурса publishedResource
 
@@ -36,12 +36,12 @@ ms.locfileid: "50760934"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String| Отображение имени опубликованногоРесурса.|
-|id|String| ID объекта publishedResource. Только для чтения.|
-|publishingType|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|displayName|Строка| Отображение имени опубликованногоРесурса.|
+|id|Строка| ID объекта publishedResource. Только для чтения.|
+|publishingType|Строка| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 |resourceName|String|Имя опубликованногоResource.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

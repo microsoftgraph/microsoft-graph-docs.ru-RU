@@ -2,15 +2,15 @@
 title: Настройка сообщения приглашения
 description: Объект invitedUserMessageInfo позволяет настроить сообщение приглашения.
 localization_priority: Normal
-author: elisolMS
+author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d44542b26fd1c1ffb7b70dcfc019ada6f0cc02f5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5b20eb15cfc8eb2ae248d87e5ae61ffa0d5ea08d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129725"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941381"
 ---
 # <a name="configuring-the-invitation-message"></a>Настройка сообщения приглашения
 
@@ -22,9 +22,9 @@ ms.locfileid: "50129725"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ccRecipients|Коллекция объектов [Recipient](recipient.md)|Дополнительные получатели, на которые должно быть отправлено приглашение. В настоящее время поддерживается только один дополнительный получатель.|
-|customizedMessageBody|String|Настраиваемый текст сообщения, который необходимо отправить, если сообщение по умолчанию не нужно.|
-|messageLanguage|String|Язык, на который вы хотите отправить сообщение по умолчанию. Если задан параметр customizedMessageBody, это свойство игнорируется, и сообщение отправляется с помощью параметра customizedMessageBody. Формат языка должен быть в формате ISO 639. Значение по умолчанию : en-US.|
+|ccRecipients|Коллекция объектов [Recipient](recipient.md)|Дополнительные получатели, в которые должно быть отправлено приглашение. В настоящее время поддерживается только один дополнительный получатель.|
+|customizedMessageBody|Строка|Настраиваемый текст сообщения, который необходимо отправить, если не нужно сообщение по умолчанию.|
+|messageLanguage|Строка|Язык, на который нужно отправить сообщение по умолчанию. Если задан настраиваемыйMessageBody, это свойство игнорируется, и сообщение отправляется с помощью настраиваемогоMessageBody. Формат языка должен быть в ISO 639. По умолчанию — en-US.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -1,42 +1,42 @@
 ---
-title: 'application: addKey'
+title: 'приложение: addKey'
 description: Добавление учетных данных ключа в приложение.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9a6dcc39a529f3f2b84070dc0e6d2a0699b988cc
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 8951e72c9135ed9d21141c7c5172adf06c31926d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292044"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942782"
 ---
-# <a name="application-addkey"></a>application: addKey
+# <a name="application-addkey"></a>приложение: addKey
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте учетные данные ключа в [приложение.](../resources/application.md) Этот метод, наряду [с removeKey,](application-removekey.md)может использоваться приложением для автоматизации перетаскивания ключей окончания срока действия.
+Добавление учетных данных ключа в [приложение.](../resources/application.md) Этот метод, наряду с [removeKey,](application-removekey.md)может использоваться приложением для автоматизации проката истекающих ключей.
 
 > [!NOTE]
-> Вы можете продолжать [](../api/application-post-applications.md) использовать операции [](../api/application-update.md) создания приложения и обновления приложения для добавления и обновления учетных данных ключа для любого приложения с контекстом пользователя или без него. 
+> Вы можете продолжать использовать операции приложения [Create и](../api/application-post-applications.md) [Update](../api/application-update.md) для добавления и обновления учетных данных для любого приложения с контекстом пользователя или без него. 
 
-В рамках проверки запроса для этого метода перед выполнением действия проверяется подтверждение на владение существующим ключом. 
+В рамках проверки запроса для этого метода проверяется доказательство на наличие существующего ключа перед выполнением действия. 
 
-Приложения, у которых нет действительных сертификатов (сертификаты еще не добавлены или срок действия всех сертификатов истек), не смогут использовать это действие службы. Чтобы вместо этого выполнить обновление, вы можете использовать операцию [обновления приложения](../api/application-update.md).
+Приложения, у которых нет существующих действительных сертификатов (еще не добавлены сертификаты или истек срок действия всех сертификатов), не смогут использовать это действие службы. Чтобы вместо этого выполнить обновление, вы можете использовать операцию [обновления приложения](../api/application-update.md).
 
 ## <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Нет.  |
+|Делегированные (рабочая или учебная учетная запись) | Отсутствуют.  |
 |Делегированные (личная учетная запись Майкрософт) | Нет.    |
-|Приложение | Нет. |
+|Приложение | Отсутствуют. |
 
 > [!NOTE]
-> Приложению не требуется никаких специальных разрешений для переката собственных ключей. 
+> Приложение не нуждается в специальном разрешении для сверки собственных ключей. 
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,21 +55,21 @@ POST /applications/{id}/addKey
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажив следующие необходимые свойства.
+В теле запроса укажи следующие необходимые свойства.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа приложения, которые необходимо добавить. __Тип,__ __использование и__ __ключ__ являются свойствами, требуемой для этого использования. Поддерживаемые типы ключей:<br><ul><li>`AsymmetricX509Cert`: использование должно быть `Verify` .</li><li>`X509CertAndPassword`: использование должно быть `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей `X509CertAndPassword` типа. В противном `null` случае.|
-| proof | String | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа приложения. __Тип,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword` . Установите его в `null` противном случае.|
+| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-a-new-key-credential-to-an-application"></a>Пример 1. Добавление новых учетных данных ключа в приложение
+### <a name="example-1-add-a-new-key-credential-to-an-application"></a>Пример 1. Добавление новых учетных данных ключей в приложение
 
 #### <a name="request"></a>Запрос
 
@@ -79,7 +79,7 @@ POST /applications/{id}/addKey
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "application_addkey"
+  "name": "application_addkey_1"
 }-->
 
 ```http
@@ -97,19 +97,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/application-addkey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-addkey-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/application-addkey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-addkey-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/application-addkey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/application-addkey-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/application-addkey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/application-addkey-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -117,7 +117,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -140,9 +140,11 @@ Content-Type: application/json
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "application_addkey"
+  "name": "application_addkey_2"
 }-->
 
 ```http
@@ -161,6 +163,24 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-addkey-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-addkey-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-addkey-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-addkey-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

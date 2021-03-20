@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e4de431a5fca9321d2b60f4a3a978d5cb40fb973
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 7cc5d37c5dea66bc90661bf23b75ea43d82bc82e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760781"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942546"
 ---
 # <a name="get-approvalstep"></a>Получить утверждениеStep
 
@@ -48,7 +48,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект approvalStep](../resources/approvalstep.md) в тексте ответа. Однако если у вызываемого не имеется нужных разрешений, метод возвращает `403 Forbidden` код ответа.
 
@@ -59,14 +59,34 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 Ниже приведен пример запроса.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_approvalstep"
+  "name": "get_approvalstep_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-approvalstep-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-approvalstep-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-approvalstep-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-approvalstep-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

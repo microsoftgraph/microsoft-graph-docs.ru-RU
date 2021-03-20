@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 7a3adeaa6dc576182318cec5b096beced660ef5f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e73af2bb04a7806df0cb09e810f74f310a6f8b98
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719985"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942829"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50719985"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Application | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ PATCH /security/alerts/{alert_id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {код}. Обязательно.|
-|Prefer | return=representation. Необязательно. |
+|Prefer | return=representation. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -57,7 +57,7 @@ PATCH /security/alerts/{alert_id}
 |comments|Коллекция String|Аналитик комментирует оповещение (для управления оповещениями клиентов). Этот метод может обновлять поле комментариев только с помощью следующих значений: `Closed in IPC` , `Closed in MCAS` .|
 |feedback|enum alertFeedback|Отзыв аналитика об оповещении. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|alertStatus enum|Оповещение состояния жизненного цикла (этап). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|Коллекция объектов string|Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").|
+|tags|Коллекция String|Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Сложный тип, содержащий подробные сведения о безопасности продавца продукта или услуги, поставщика субпоставщика (например, продавец = Майкрософт; поставщик = ATP в Защитнике Windows; субпоставщик = AppLocker). **Требуются поля поставщика и поставщика.**|
 
 ## <a name="response"></a>Отклик
@@ -77,7 +77,7 @@ PATCH /security/alerts/{alert_id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_alert"
+  "name": "update_alert_1"
 }-->
 
 ```http
@@ -99,19 +99,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-alert-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -138,9 +138,11 @@ HTTP/1.1 204 No Content
 
 В следующем примере показан запрос, который включает заглавную `Prefer` головку запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_alert"
+  "name": "update_alert_2"
 }-->
 
 ```http
@@ -162,6 +164,24 @@ Prefer: return=representation
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

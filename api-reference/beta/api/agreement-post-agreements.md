@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: c62fc34d83f8602cb0da56027e4def5d2d904e7e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 491c91bb36d2ad3ba55f0f9ad8c2ad2765f15a2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771213"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942907"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -27,6 +27,11 @@ ms.locfileid: "50771213"
 |Делегированные (рабочая или учебная учетная запись)     | Agreement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
+
+При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
++ Глобальный администратор
++ Администратор условного доступа
++ Администратор безопасности
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +50,11 @@ POST /identityGovernance/termsOfUse/agreements
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображение имени соглашения.|
+|displayName|Строка|Отображение имени соглашения.|
 |isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
-|files/fileName|String|Имя файла соглашения (например, TOU.pdf).|
+|files/fileName|Строка|Имя файла соглашения (например, TOU.pdf).|
 |files/isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если ни одна из культур не соответствует предпочтениям клиента. Если ни один файл не помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
-|файлы/язык|String|Культура файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
+|файлы/язык|Строка|Культура файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
 |файлы/fileData/data|Binary|Данные, представляющие условия использования документа PDF.|
 
 ## <a name="response"></a>Отклик

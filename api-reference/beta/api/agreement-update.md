@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 88bab29854bd474221df81241698b57fa94be79a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: ee62ae7f42c958304549883afbd66e022230bdd5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773930"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942875"
 ---
 # <a name="update-agreement"></a>Обновление соглашения
 
@@ -28,6 +28,11 @@ ms.locfileid: "50773930"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
+При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
++ Глобальный администратор
++ Администратор условного доступа
++ Администратор безопасности
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,7 +48,7 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображение имени соглашения.|
+|displayName|Строка|Отображение имени соглашения.|
 |isViewingBeforeAcceptanceRequired|Boolean|Необходимо ли пользователю расширить и просмотреть соглашение перед его принятием.|
 
 ## <a name="response"></a>Отклик

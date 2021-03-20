@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса credentialUsageSummary
-description: Представляет текущее состояние того, сколько пользователей в организации используют возможности самостоятельного сброса паролей.
+title: тип ресурса credentialUsageSummary
+description: Представляет текущее состояние того, сколько пользователей в организации используют возможности сброса паролей самообслуживки.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 03ae7b4b03cf58301895e5246fa4cb86d1b79667
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9db31a0d0397f1394a342fb52796a1bec37bae36
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157703"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941832"
 ---
-# <a name="credentialusagesummary-resource-type"></a>Тип ресурса credentialUsageSummary
+# <a name="credentialusagesummary-resource-type"></a>тип ресурса credentialUsageSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние того, сколько пользователей в организации используют возможности самостоятельного сброса паролей.
+Представляет текущее состояние того, сколько пользователей в организации используют возможности сброса паролей самообслуживки.
 
 ## <a name="methods"></a>Методы
 
@@ -30,11 +30,11 @@ ms.locfileid: "50157703"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| authMethod | string | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (используется только для самостоятельного сброса `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode`  `alternateMobileCall` (поддерживается только для регистрации). |
-| failureActivityCount | Int64 | Предоставляет количество неудачных сбросов или регистрационных данных. |
-| feature | string | Определяет функцию для отчета. Возможные значения: `registration` и `reset` . |
-| id | String | Уникальный идентификатор действия. Только для чтения. |
-| successfulActivityCount | Int64 | Предоставляет количество успешных регистраций или сбросов. |
+| authMethod | useAuthMethod | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (только используется для самообслуживки сброс `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), , , ( `appNotification` `appCode` `alternateMobileCall` поддерживается `fido` `appPassword` `unknownFutureValue` только в регистрации), , , . |
+| failureActivityCount | Int64 | Обеспечивает количество сбойных сбросов или данных регистрации. |
+| функция | featureType | Определяет функцию для отчета. Возможные значения: `registration`, `reset`, `unknownFutureValue`. |
+| id | Строка | Уникальный идентификатор для этого действия. Только для чтения. |
+| successfulActivityCount | Int64 | Обеспечивает количество успешных регистраций или сбросов. |
 
 ## <a name="relationships"></a>Связи
 

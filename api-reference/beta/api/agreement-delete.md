@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 00429565e3b23547573653186fdea00b6aea760c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 13cf687f49715a74dfae6160ca0c883267f6fdac
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774028"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942930"
 ---
 # <a name="delete-agreement"></a>Удаление соглашения
 
@@ -27,6 +27,11 @@ ms.locfileid: "50774028"
 |Делегированные (рабочая или учебная учетная запись)     | Agreement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
+
+При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
++ Глобальный администратор
++ Администратор условного доступа
++ Администратор безопасности
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

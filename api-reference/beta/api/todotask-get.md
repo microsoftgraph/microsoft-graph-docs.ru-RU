@@ -1,21 +1,21 @@
 ---
 title: Get todoTask
-description: Чтение свойств и связей объекта todoTask.
+description: Ознакомьтесь с свойствами и отношениями объекта todoTask.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd137a23850e10b8e5ad29fa642e9a4ad6a89756
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8d188675fc35ac647ef11c2016104a52bfca87cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873432"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942131"
 ---
 # <a name="get-todotask"></a>Get todoTask
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [todoTask.](../resources/todotask.md)
+Ознакомьтесь с свойствами и отношениями [объекта todoTask.](../resources/todotask.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [todoTask](../resources/todotask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект todoTask](../resources/todotask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -60,26 +60,26 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADA1MTHgwAAA=", "721a35e2-35e2-721a-e235-1a72e2351a72"],
-  "name": "get_todotask"
+  "name": "get_todotask_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotask-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotask-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotask-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotask-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-todotask-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-todotask-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-todotask-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-todotask-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

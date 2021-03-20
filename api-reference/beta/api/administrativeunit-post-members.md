@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6df32e3023752d3edf32163b3e99a377df8a5de1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9f3aca05107b73232b11e42ed70a9e737c65a45b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438738"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942942"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -30,7 +30,7 @@ ms.locfileid: "50438738"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /administrativeUnits/{id}/members/$ref
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажи добавить пользователя, группу или `id` [directoryObject.](../resources/directoryobject.md) [](../resources/user.md) [](../resources/group.md)
 
 ## <a name="response"></a>Отклик
@@ -50,13 +50,16 @@ POST /administrativeUnits/{id}/members/$ref
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_administrativeUnits_members"
+} -->
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 Content-type: application/json
-Content-length: 109
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/groups/{id}"
@@ -65,9 +68,13 @@ Content-length: 109
 ```
 В теле запроса укажи объект пользователя или группы, который `id` необходимо добавить. [](../resources/user.md) [](../resources/group.md)
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
  
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```

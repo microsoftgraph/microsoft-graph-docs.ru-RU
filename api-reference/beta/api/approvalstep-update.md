@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 16c2796e94678b4ca0362c3be86268f69cdbcedb
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: b8ef436a9319e7a670e0aa5bdc728b39b53c2709
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760778"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942524"
 ---
 # <a name="update-approvalstep"></a>Обновление approvalStep
 
@@ -50,11 +50,11 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| reviewResult | String | Решение утвержденного. Возможные значения: `Approve`, `Deny`.|
-| обоснование | String | Обоснование, связанное с решением утвержденного. |
+| reviewResult | Строка | Решение утвержденного. Возможные значения: `Approve`, `Deny`.|
+| обоснование | Строка | Обоснование, связанное с решением утвержденного. |
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код `204 No Content` ответа в тексте ответа. Однако если у вызываемого не имеется нужных разрешений, метод возвращает код ответа или если код утверждения не найден, метод `403 Forbidden` `404 Not found` возвращается . Если запрос уже утвержден другим утверждением на том же этапе утверждения, метод возвращается `409 Conflict` в органе ответа.
 
@@ -64,6 +64,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_approvalstep"
@@ -72,6 +74,12 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
 ```
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-approvalstep-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

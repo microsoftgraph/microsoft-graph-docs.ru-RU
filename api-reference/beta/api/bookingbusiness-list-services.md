@@ -1,30 +1,30 @@
 ---
-title: Список служб
-description: Получение списка объектов Букингсервице в указанном букингбусинесс.
+title: Службы списка
+description: Получите список объектов bookingService в указанном bookingbusiness.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d896ba74d70a12fc5417be643366ddaeaffaa0c8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b0d27418d73e16b11f27c253a6dfd57dcd861974
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960764"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942458"
 ---
-# <a name="list-services"></a>Список служб
+# <a name="list-services"></a>Службы списка
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [букингсервице](../resources/bookingservice.md) в указанном [букингбусинесс](../resources/bookingbusiness.md).
+Получите список объектов [bookingService](../resources/bookingservice.md) в указанном [bookingbusiness.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -44,7 +44,7 @@ GET /bookingBusinesses/{id}/services
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингсервице](../resources/bookingservice.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию объектов [bookingService](../resources/bookingservice.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -52,25 +52,25 @@ GET /bookingBusinesses/{id}/services
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_services"
+  "name": "get_services_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-services-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-services-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-services-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-services-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-services-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-services-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

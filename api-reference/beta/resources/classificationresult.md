@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Классификатионресулт
+title: тип ресурса classificationResult
 description: Представляет результат запроса классификации.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 903284f99933c131a24474ac6f024a2c4c2550f1
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5ecc16197ef4671c6e83883bc69aed45b3ffa200
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405584"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941825"
 ---
-# <a name="classificationresult-resource-type"></a>Тип ресурса Классификатионресулт
+# <a name="classificationresult-resource-type"></a>тип ресурса classificationResult
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет результат операции классификации из модуля классификации Майкрософт. Результаты классификации данных в Azure Information Protection, Office и других службах Майкрософт могут возвращать [строго определенный набор типов классификации](/office365/securitycompliance/what-the-sensitive-information-types-look-for). Эти типы можно предоставлять в API [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) для разрешения конфиденциальной информации в метку Microsoft Information Protection. 
+Представляет результат операции классификации из системы классификации Майкрософт. Классификация данных из служб Azure Information Protection, Office и других служб Майкрософт может возвращать четко определенный набор [типов классификации.](/office365/securitycompliance/what-the-sensitive-information-types-look-for) Эти типы могут быть предоставлены API [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) для разрешения конфиденциальной информации на метку Microsoft Information Protection. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство        | Тип  | Описание                                                            |
 | :-------------- | :---- | :--------------------------------------------------------------------- |
-| confidenceLevel | Int32 | Степень вероятности результата — от 0 до 100.                         |
-| count           | Int32 | Число экземпляров определенного типа данных во входных данных. |
-| сенситиветипеид | GUID  | GUID обнаруженного типа конфиденциальной информации.                 |
+| confidenceLevel | Int32 | Уровень доверия от 0 до 100 результатов.                         |
+| count           | Int32 | Количество экземпляров определенного типа сведений в вводе. |
+| sensitiveTypeId | GUID  | GUID обнаруженного типа конфиденциальной информации.                 |
 
 ## <a name="json-representation"></a>Представление JSON
 

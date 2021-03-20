@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Протектдонотфорвардактион
-description: Информирует приложение о необходимости защиты от пересылки.
+title: тип ресурсов protectDoNotForwardAction
+description: Информирует приложение о применении защиты Do Not Forward.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 8fdb60651e98148eefb7bd964e8c4cd13ff81663
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a68771ea278ba8a904c032a86732b2b190eeeb43
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404387"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941773"
 ---
-# <a name="protectdonotforwardaction-resource-type"></a>Тип ресурса Протектдонотфорвардактион
+# <a name="protectdonotforwardaction-resource-type"></a>тип ресурсов protectDoNotForwardAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Информирует приложение о необходимости защиты от пересылки. **протектиондонотфорвардактион** может быть возвращено [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md) или [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) , если результирующая метка настроена для применения [защиты от пересылки](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). Приложение, использующее приложение, должно использовать клиентскую библиотеку для применения защиты с помощью Azure Information Protection.
+Информирует приложение о применении защиты Do Not Forward. **protectionDoNotForwardAction** может быть возвращена с помощью [оценкиApplication](../api/informationprotectionlabel-evaluateapplication.md) или [evaluateClassificationResults,](../api/informationprotectionlabel-evaluateclassificationresults.md) если результированная метка настроена для применения защиты [Do Not Forward.](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) Потребляемому приложению необходимо использовать клиентскую библиотеку для применения защиты с помощью Azure Information Protection.
 
 ## <a name="properties"></a>Свойства
 

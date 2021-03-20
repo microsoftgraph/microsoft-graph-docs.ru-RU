@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 620ca66a2f443f1cf935cb9b5accc35c68d7eb1d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8d636cab5663633ba78e76057dc9ba3d555fbdc4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773965"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942897"
 ---
 # <a name="list-agreements"></a>Список соглашений
 
@@ -24,9 +24,14 @@ ms.locfileid: "50773965"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | Agreement.Read.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)     | Agreement.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
+
+При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
++ Глобальный администратор
++ Администратор условного доступа
++ Администратор безопасности
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

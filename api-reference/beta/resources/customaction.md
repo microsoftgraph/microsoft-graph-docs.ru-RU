@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса customAction
-description: Представляет все настраиваемые действия, которые могут предоставляться метке, если она настроена администратором.
+description: Представляет любые настраиваемые действия, которые может предоставить метка, если настроен администратором.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5c71454a6647604d4155fc80c72ec48d22d85d03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d9c88715cba6fc8faede1419b3c8809c3ec3f54
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050012"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941808"
 ---
 # <a name="customaction-resource-type"></a>Тип ресурса customAction
 
@@ -18,14 +18,14 @@ ms.locfileid: "48050012"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет все настраиваемые действия, которые могут предоставляться метке, если она настроена администратором. Настраиваемые действия могут быть определены как часть [информатионпротектионлабел](informationProtectionLabel.md) с помощью модуля PowerShell центра безопасности и соответствия требованиям Office 365. Приложение должно понимать действия, которые использует приложение.
+Представляет любые настраиваемые действия, которые может предоставить метка, если настроен администратором. Настраиваемые действия можно определить как часть [informationProtectionLabel](informationProtectionLabel.md) с помощью модуля PowerShell Центра безопасности и соответствия требованиям Office 365. Действия должны быть понятны потребляемого приложения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип                                       | Описание                                          |
 | :--------- | :----------------------------------------- | :--------------------------------------------------- |
-| name       | String                                     | Имя дополнительного действия.                           |
-| properties | Коллекция [keyValuePair](keyvaluepair.md) | Свойства, в формате "комбинация значений ключей" действия. |
+| name       | String                                     | Имя настраиваемого действия.                           |
+| properties | Коллекция [keyValuePair](keyvaluepair.md) | Свойства в формате пары ключевых значений действия. |
 
 ## <a name="json-representation"></a>Представление JSON
 

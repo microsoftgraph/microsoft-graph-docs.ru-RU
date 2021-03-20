@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Довнградежустификатион
-description: Представляет ввод пользователя по причине выполнения возврата к предыдущей версии.
+title: тип ресурса downgradeJustification
+description: Представляет пользовательские сведения о том, почему было выполнено понижение.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7c0e34d70bd91ecd896eba4329d775a95d696bed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc7336469f93de9e6d2b07fe73df9dce2eafd47f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979653"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941801"
 ---
-# <a name="downgradejustification-resource-type"></a>Тип ресурса Довнградежустификатион
+# <a name="downgradejustification-resource-type"></a>тип ресурса downgradeJustification
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ввод пользователя по причине выполнения возврата к предыдущей версии. Выравнивание на более ранней версии может потребоваться на основе конфигурации политики меток в центре безопасности и соответствия требованиям Office.
+Представляет пользовательские сведения о том, почему было выполнено понижение. Обоснование понижения может потребоваться на основе конфигурации политики меток в Центре безопасности и соответствия требованиям Office.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип    | Описание                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
-| исдовнградежустифиед | Boolean | Указывает, является ли переход на предыдущее или не выровненный.                                              |
-| жустификатионмессаже | String  | Сообщение, указывающее, почему выравниваются более ранние версии. Сообщение будет отображаться в разделе Журналы администрирования. |
+| isDowngradeJustified | Boolean | Указывает, является ли понижение или не оправдано.                                              |
+| justificationMessage | Строка  | Сообщение, которое указывает, почему понижение является оправданным. Сообщение будет отображаться в административных журналах. |
 
 ## <a name="json-representation"></a>Представление JSON
 
