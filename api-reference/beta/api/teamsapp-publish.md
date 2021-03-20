@@ -1,39 +1,39 @@
 ---
 title: Публикация teamsapp
-description: Опубликуйте приложение в каталоге приложений Microsoft Teams.
+description: Публикация приложения в каталоге приложений Microsoft Teams.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9e8579bb2da482e18d2524c82bee985b9eb8ae39
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: a62760b46c66d2046c8d42a476275c5430ad043a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572186"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942230"
 ---
-# <a name="publish-teamsapp"></a><span data-ttu-id="7f4a2-103">Публикация teamsApp</span><span class="sxs-lookup"><span data-stu-id="7f4a2-103">Publish teamsApp</span></span>
+# <a name="publish-teamsapp"></a><span data-ttu-id="a00af-103">Публикация teamsApp</span><span class="sxs-lookup"><span data-stu-id="a00af-103">Publish teamsApp</span></span>
 
-<span data-ttu-id="7f4a2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7f4a2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a00af-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a00af-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7f4a2-105">Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-105">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams app catalog.</span></span>
-<span data-ttu-id="7f4a2-106">В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь значение свойства **distributionMethod** `organization` .</span><span class="sxs-lookup"><span data-stu-id="7f4a2-106">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have a **distributionMethod** property value of `organization`.</span></span>
+<span data-ttu-id="a00af-105">Публикация приложения [в](../resources/teamsapp.md) каталоге приложений Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="a00af-105">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams app catalog.</span></span>
+<span data-ttu-id="a00af-106">В частности, этот API публикует приложение в каталог организации (каталог приложений клиента); созданный ресурс будет иметь **значение свойства distributionMethod** `organization` в .</span><span class="sxs-lookup"><span data-stu-id="a00af-106">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have a **distributionMethod** property value of `organization`.</span></span>
 
-<span data-ttu-id="7f4a2-107">Свойство **рекуиресревиев** позволяет любому пользователю передавать приложение для просмотра администратором.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-107">The **requiresReview** property allows any user to submit an app for review by an administrator.</span></span> <span data-ttu-id="7f4a2-108">Администраторы могут утверждать или отклонять эти приложения через этот API или центр администрирования Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-108">Admins can approve or reject these apps via this API or the Microsoft Teams admin center.</span></span>
+<span data-ttu-id="a00af-107">Свойство **requiresReview** позволяет любому пользователю отправлять приложение для проверки администратором.</span><span class="sxs-lookup"><span data-stu-id="a00af-107">The **requiresReview** property allows any user to submit an app for review by an administrator.</span></span> <span data-ttu-id="a00af-108">Администраторы могут утверждать или отклонить эти приложения с помощью этого API или центра администрирования Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="a00af-108">Admins can approve or reject these apps via this API or the Microsoft Teams admin center.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7f4a2-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7f4a2-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a00af-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a00af-109">Permissions</span></span>
 
-<span data-ttu-id="7f4a2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7f4a2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a00af-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a00af-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7f4a2-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7f4a2-112">Permission Type</span></span>                        | <span data-ttu-id="7f4a2-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7f4a2-113">Permissions (from least to most privileged)</span></span>|
+| <span data-ttu-id="a00af-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a00af-112">Permission Type</span></span>                        | <span data-ttu-id="a00af-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a00af-113">Permissions (from least to most privileged)</span></span>|
 |:----------------------------------     |:-------------|
-| <span data-ttu-id="7f4a2-114">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7f4a2-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7f4a2-115">CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="7f4a2-115">AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-| <span data-ttu-id="7f4a2-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7f4a2-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f4a2-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7f4a2-117">Not supported</span></span>|
-| <span data-ttu-id="7f4a2-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7f4a2-118">Application</span></span>                            | <span data-ttu-id="7f4a2-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-119">Not supported.</span></span> |
+| <span data-ttu-id="a00af-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a00af-114">Delegated (work or school account)</span></span> | <span data-ttu-id="a00af-115">AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a00af-115">AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="a00af-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a00af-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a00af-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="a00af-117">Not supported</span></span>|
+| <span data-ttu-id="a00af-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a00af-118">Application</span></span>                            | <span data-ttu-id="a00af-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a00af-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7f4a2-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f4a2-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a00af-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a00af-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,45 +41,45 @@ ms.locfileid: "49572186"
 POST /appCatalogs/teamsApps
 ```
 
-<span data-ttu-id="7f4a2-121">Чтобы опубликовать приложение, для которого требуется проверка, выполните следующие действия:</span><span class="sxs-lookup"><span data-stu-id="7f4a2-121">To publish an app that requires a review:</span></span>
+<span data-ttu-id="a00af-121">Публикация приложения, требуемая для проверки:</span><span class="sxs-lookup"><span data-stu-id="a00af-121">To publish an app that requires a review:</span></span>
 
 ```http
 POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="7f4a2-122">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="7f4a2-122">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="a00af-122">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="a00af-122">Query parameters</span></span>
 
-|<span data-ttu-id="7f4a2-123">Свойство</span><span class="sxs-lookup"><span data-stu-id="7f4a2-123">Property</span></span>|<span data-ttu-id="7f4a2-124">Тип</span><span class="sxs-lookup"><span data-stu-id="7f4a2-124">Type</span></span>|<span data-ttu-id="7f4a2-125">Описание</span><span class="sxs-lookup"><span data-stu-id="7f4a2-125">Description</span></span>|
+|<span data-ttu-id="a00af-123">Свойство</span><span class="sxs-lookup"><span data-stu-id="a00af-123">Property</span></span>|<span data-ttu-id="a00af-124">Тип</span><span class="sxs-lookup"><span data-stu-id="a00af-124">Type</span></span>|<span data-ttu-id="a00af-125">Описание</span><span class="sxs-lookup"><span data-stu-id="a00af-125">Description</span></span>|
 |----|----|----|
-|<span data-ttu-id="7f4a2-126">рекуиресревиев</span><span class="sxs-lookup"><span data-stu-id="7f4a2-126">requiresReview</span></span>| <span data-ttu-id="7f4a2-127">Логический</span><span class="sxs-lookup"><span data-stu-id="7f4a2-127">Boolean</span></span> | <span data-ttu-id="7f4a2-128">Этот необязательный параметр запроса запускает процесс проверки приложения.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-128">This optional query parameter triggers the app review process.</span></span> <span data-ttu-id="7f4a2-129">Пользователи с правами администратора могут отсылать приложения, не запуская проверку.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-129">Users with admin privileges can submit apps without triggering a review.</span></span> <span data-ttu-id="7f4a2-130">Если пользователям требуется предварительно запросить проверку перед публикацией, необходимо задать  `requiresReview` для них значение `true` .</span><span class="sxs-lookup"><span data-stu-id="7f4a2-130">If users want to request a review before publishing, they must set  `requiresReview` to `true`.</span></span> <span data-ttu-id="7f4a2-131">Пользователь с правами администратора может не устанавливать `requiresReview` или устанавливать значение `false`  , и приложение считается утвержденным и будет публиковаться мгновенно.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-131">A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.</span></span>|
+|<span data-ttu-id="a00af-126">requiresReview</span><span class="sxs-lookup"><span data-stu-id="a00af-126">requiresReview</span></span>| <span data-ttu-id="a00af-127">Boolean</span><span class="sxs-lookup"><span data-stu-id="a00af-127">Boolean</span></span> | <span data-ttu-id="a00af-128">Этот необязательный параметр запроса запускает процесс проверки приложения.</span><span class="sxs-lookup"><span data-stu-id="a00af-128">This optional query parameter triggers the app review process.</span></span> <span data-ttu-id="a00af-129">Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки.</span><span class="sxs-lookup"><span data-stu-id="a00af-129">Users with admin privileges can submit apps without triggering a review.</span></span> <span data-ttu-id="a00af-130">Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true`</span><span class="sxs-lookup"><span data-stu-id="a00af-130">If users want to request a review before publishing, they must set  `requiresReview` to `true`.</span></span> <span data-ttu-id="a00af-131">Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.</span><span class="sxs-lookup"><span data-stu-id="a00af-131">A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="7f4a2-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7f4a2-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a00af-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a00af-132">Request headers</span></span>
 
-| <span data-ttu-id="7f4a2-133">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7f4a2-133">Header</span></span>        | <span data-ttu-id="7f4a2-134">Значение</span><span class="sxs-lookup"><span data-stu-id="7f4a2-134">Value</span></span>           |
+| <span data-ttu-id="a00af-133">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a00af-133">Header</span></span>        | <span data-ttu-id="a00af-134">Значение</span><span class="sxs-lookup"><span data-stu-id="a00af-134">Value</span></span>           |
 |:--------------|:--------------  |
-| <span data-ttu-id="7f4a2-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7f4a2-135">Authorization</span></span> | <span data-ttu-id="7f4a2-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7f4a2-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7f4a2-138">Content-Type</span></span>  | <span data-ttu-id="7f4a2-139">Application/ZIP.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-139">application/zip.</span></span> <span data-ttu-id="7f4a2-140">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-140">Required.</span></span> |
+| <span data-ttu-id="a00af-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a00af-135">Authorization</span></span> | <span data-ttu-id="a00af-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a00af-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a00af-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a00af-138">Content-Type</span></span>  | <span data-ttu-id="a00af-139">application/zip.</span><span class="sxs-lookup"><span data-stu-id="a00af-139">application/zip.</span></span> <span data-ttu-id="a00af-140">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="a00af-140">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7f4a2-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7f4a2-141">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a00af-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a00af-141">Request body</span></span>
 
-<span data-ttu-id="7f4a2-142">В тексте запроса включите полезные данные манифеста ZIP для Teams.</span><span class="sxs-lookup"><span data-stu-id="7f4a2-142">In the request body, include a Teams zip manifest payload.</span></span> <span data-ttu-id="7f4a2-143">Дополнительные сведения см. в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="7f4a2-143">For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>  
+<span data-ttu-id="a00af-142">В теле запроса включите полезной нагрузкой манифест Teams zip.</span><span class="sxs-lookup"><span data-stu-id="a00af-142">In the request body, include a Teams zip manifest payload.</span></span> <span data-ttu-id="a00af-143">Дополнительные сведения см. [в материале Create an app package.](/microsoftteams/platform/concepts/apps/apps-package)</span><span class="sxs-lookup"><span data-stu-id="a00af-143">For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>  
 
-<span data-ttu-id="7f4a2-144">Каждое приложение в каталоге приложений должно иметь уникальный манифест `id` .</span><span class="sxs-lookup"><span data-stu-id="7f4a2-144">Each app in the app catalog must have a unique manifest `id`.</span></span>
+<span data-ttu-id="a00af-144">Каждое приложение в каталоге приложений должно иметь уникальный `id` манифест.</span><span class="sxs-lookup"><span data-stu-id="a00af-144">Each app in the app catalog must have a unique manifest `id`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7f4a2-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f4a2-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a00af-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="a00af-145">Response</span></span>
 
-<span data-ttu-id="7f4a2-146">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [teamsApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="7f4a2-146">If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object.</span></span>
+<span data-ttu-id="a00af-146">В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект teamsApp.](../resources/teamsapp.md)</span><span class="sxs-lookup"><span data-stu-id="a00af-146">If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7f4a2-147">Примеры</span><span class="sxs-lookup"><span data-stu-id="7f4a2-147">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a00af-147">Примеры</span><span class="sxs-lookup"><span data-stu-id="a00af-147">Examples</span></span>
 
-### <a name="example-1-publish-an-app-to-the-app-catalog"></a><span data-ttu-id="7f4a2-148">Пример 1: Публикация приложения в каталоге приложений</span><span class="sxs-lookup"><span data-stu-id="7f4a2-148">Example 1: Publish an app to the app catalog</span></span>
+### <a name="example-1-publish-an-app-to-the-app-catalog"></a><span data-ttu-id="a00af-148">Пример 1. Публикация приложения в каталоге приложений</span><span class="sxs-lookup"><span data-stu-id="a00af-148">Example 1: Publish an app to the app catalog</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7f4a2-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="7f4a2-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a00af-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="a00af-149">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7f4a2-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f4a2-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a00af-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="a00af-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_1"
 }-->
 
 ```http
@@ -90,19 +90,19 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-# <a name="javascript"></a>[<span data-ttu-id="7f4a2-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f4a2-151">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="a00af-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a00af-151">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7f4a2-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f4a2-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a00af-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a00af-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="7f4a2-153">Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="7f4a2-153">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<span data-ttu-id="a00af-153">Сведения о создании почтового файла приложения Microsoft Teams см. в статью [Создание пакета приложений.](/microsoftteams/platform/concepts/apps/apps-package)</span><span class="sxs-lookup"><span data-stu-id="a00af-153">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
 <!-- markdownlint-disable MD024 -->
-#### <a name="response"></a><span data-ttu-id="7f4a2-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f4a2-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a00af-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="a00af-154">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -123,15 +123,15 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a><span data-ttu-id="7f4a2-155">Пример 2: Отправка нового приложения для проверки в каталог приложений Организации</span><span class="sxs-lookup"><span data-stu-id="7f4a2-155">Example 2: Upload a new application for review to an organization's app catalog</span></span>
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a><span data-ttu-id="a00af-155">Пример 2. Отправка нового приложения для проверки в каталог приложений организации</span><span class="sxs-lookup"><span data-stu-id="a00af-155">Example 2: Upload a new application for review to an organization's app catalog</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7f4a2-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="7f4a2-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a00af-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="a00af-156">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7f4a2-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f4a2-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a00af-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="a00af-157">HTTP</span></span>](#tab/http)
 
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_2"
 }-->
 
 ```http
@@ -140,17 +140,17 @@ Content-type: application/zip
 Content-length: 244
 ```
 
-# <a name="javascript"></a>[<span data-ttu-id="7f4a2-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f4a2-158">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="a00af-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a00af-158">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7f4a2-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f4a2-159">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="a00af-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a00af-159">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="7f4a2-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f4a2-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a00af-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="a00af-160">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -172,14 +172,14 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 }
 ```
 
-### <a name="example-3-approve-or-reject-an-app-pending-review"></a><span data-ttu-id="7f4a2-161">Пример 3: утверждение или отклонение ожидающей проверки приложения</span><span class="sxs-lookup"><span data-stu-id="7f4a2-161">Example 3: Approve or reject an app pending review</span></span>
+### <a name="example-3-approve-or-reject-an-app-pending-review"></a><span data-ttu-id="a00af-161">Пример 3. Утверждение или отклонение приложения до рассмотрения</span><span class="sxs-lookup"><span data-stu-id="a00af-161">Example 3: Approve or reject an app pending review</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7f4a2-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="7f4a2-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a00af-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="a00af-162">Request</span></span>
 
-<span data-ttu-id="7f4a2-163">**HTTP**</span><span class="sxs-lookup"><span data-stu-id="7f4a2-163">**HTTP**</span></span>
+<span data-ttu-id="a00af-163">**HTTP**</span><span class="sxs-lookup"><span data-stu-id="a00af-163">**HTTP**</span></span>
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_3"
 }-->
 
 ```http
@@ -194,7 +194,7 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="7f4a2-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f4a2-164">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a00af-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="a00af-164">Response</span></span>
 
 <!-- {
   "blockType": "response",
