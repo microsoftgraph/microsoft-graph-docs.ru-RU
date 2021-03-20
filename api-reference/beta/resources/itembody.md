@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: grangeryy
-ms.openlocfilehash: 8ee076b96df14b4d4c4958b4c1d6bdf36fecdde2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 21f2be43bc31d7611cf43ebd228850e3993807fa
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075618"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952790"
 ---
 # <a name="itembody-resource-type"></a>Тип ресурса itemBody
 
@@ -24,7 +24,7 @@ ms.locfileid: "48075618"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |content|String|Содержимое элемента.|
-|contentType|String|Тип контента. Возможные значения: `text` и `html`.|
+|contentType|bodyType|Тип контента. Возможные значения: `text` и `html`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,15 +2,15 @@
 title: Тип ресурса invitation
 description: Представляет приглашение, используемое для добавления внешних пользователей в организацию.
 localization_priority: Normal
-author: elisolMS
+author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5f132f1fb79c9f74df636b4684f6d42cdbe5bdc7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d27825f33e3afa65ad7b89b24c940e9a8a29634e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443008"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952809"
 ---
 # <a name="invitation-resource-type"></a>Тип ресурса invitation
 
@@ -45,9 +45,9 @@ ms.locfileid: "50443008"
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
 |sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: false.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
-|inviteRedeemUrl|String|URL-адрес, который пользователь может использовать для выкупа приглашения. Только для чтения.|
-|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. Значение по умолчанию: Guest. Вы можете пригласить в качестве участника, если вы администратор компании. |
-|status|String|Состояние приглашения. Возможные значения: PendingAcceptance, Completed, InProgress и Error|
+|inviteRedeemUrl|Строка|URL-адрес для активации приглашения. Только для чтения.|
+|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. По умолчанию это `Guest` . Вы можете пригласить, `Member` как администратора компании. |
+|status|String|Состояние приглашения. Возможные значения: `PendingAcceptance` `Completed` , , `InProgress` и `Error`|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

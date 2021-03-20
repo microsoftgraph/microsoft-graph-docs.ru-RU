@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 228fbe473fe65fe84c9dfa7c62f3689681d47e39
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e5d9b64faafb7dfe4ec4e6f3487643e62885236a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443190"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952818"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem type
 
@@ -28,21 +28,21 @@ ms.locfileid: "50443190"
 |:---------------|:--------|:----------|
 |[List accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Списки всех accessReviewInstanceDecisionItem для определенного accessReviewInstance. |
 |[Список accessReviewInstanceDecisionItems до утверждения](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem.](accessreviewinstancedecisionitem.md) | Получите все accessReviewInstanceDecisionItems, назначенные вызываемой пользователю, для определенного accessReviewInstance. |
-|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Для любого accessReviewInstanceDecisionItems, на который вызывается пользователь, на который назначен рецензент, вызывающий пользователь может записать решение, заплатив объект решения. |
+|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Отсутствуют. | Для любого accessReviewInstanceDecisionItems, на который вызывается пользователь, на который назначен рецензент, вызывающий пользователь может записать решение, заплатив объект решения. |
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип |  Описание |
 | :---------------| :---- | :---------- |
-| id | String | Идентификатор решения. |
-| accessReviewId | String | Идентификатор родителя accessReviewInstance. |
+| id | Строка | Идентификатор решения. |
+| accessReviewId | Строка | Идентификатор родителя accessReviewInstance. |
 | reviewedBy | [userIdentity](useridentity.md) | Идентификатор рецензента. |
-| reviewedDateTime | DateTimeOffset | DateTime при просмотре. |
-| решение | String | Результат проверки. Возможные значения: `Approve` `Deny` , , или `NotReviewed` `DontKnow` . |
-| обоснование | String | Обоснование решения по пересмотру. |
+| reviewedDateTime | DateTimeOffset | Время, затмив время проверки. |
+| решение | Строка | Результат проверки. Возможные значения: `Approve` `Deny` , , или `NotReviewed` `DontKnow` . |
+| обоснование | Строка | Обоснование решения по пересмотру. |
 | appliedBy | [userIdentity](useridentity.md) | Идентификатор пользователя, который применил решение. |
-| appliedDateTime | DateTimeOffset | DateTime, когда было применено решение об утверждении. |
-| applyResult | String | Результат применения решения. Возможные значения: `NotApplied` , , , , или `Success` `Failed` `NotFound` `NotSupported` . |
-| рекомендация | String | Сгенерированная системой рекомендация для принятия решения об утверждении. Возможные значения: `Approve` `Deny` , или `NotAvailable` .  |
+| appliedDateTime | DateTimeOffset | Время, за которое было применено решение об утверждении. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+| applyResult | Строка | Результат применения решения. Возможные значения: `NotApplied` , , , , или `Success` `Failed` `NotFound` `NotSupported` . |
+| рекомендация | Строка | Сгенерированная системой рекомендация для принятия решения об утверждении. Возможные значения: `Approve` `Deny` , или `NotAvailable` .  |
 | target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | Цель этого конкретного решения. Целевые показатели принятия решений могут быть разных типов , каждый из которых имеет свои собственные свойства. См. [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). |
 
 ## <a name="relationships"></a>Связи

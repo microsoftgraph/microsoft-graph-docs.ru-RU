@@ -1,22 +1,22 @@
 ---
-title: Получение Свапшифтсчанжерекуест
-description: Получение свойств и связей объекта Свапшифтсчанжерекуест.
+title: Get swapShiftsChangeRequest
+description: Извлечение свойств и связей объекта swapShiftsChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: da6962e7c782e455c1bf0ca61d27a8cbdf77950a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66d6775a6d2e059cfa7f338a0c2810098311631d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971041"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952666"
 ---
-# <a name="get-swapshiftschangerequest"></a>Получение Свапшифтсчанжерекуест
+# <a name="get-swapshiftschangerequest"></a>Get swapShiftsChangeRequest
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
+Извлечение свойств и связей объекта [swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "47971041"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +48,13 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -66,26 +66,26 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest"
+  "name": "get_swapshiftschangerequest_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-swapshiftschangerequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-swapshiftschangerequest-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

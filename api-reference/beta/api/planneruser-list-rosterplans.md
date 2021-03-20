@@ -1,23 +1,23 @@
 ---
-title: Список rosterPlans
+title: Список списковPlans
 description: Получите ресурсы plannerPlan из свойства навигации rosterPlans.
 author: tarkansevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 199697f7cd3ee050caac983e9822007cdc38a557
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 68b62d68620f205f3933f7a876746e19ab8f3e0c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272487"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953244"
 ---
-# <a name="list-rosterplans"></a>Список rosterPlans
+# <a name="list-rosterplans"></a>Список списковPlans
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список [plannerPlans,](../resources/plannerplan.md) содержащихся в [планировщикеRosters,](../resources/plannerroster.md) участником которых является пользователь.
+Получите список [plannerPlans,](../resources/plannerplan.md) которые содержатся планировщикомRosters, членом которого является пользователь. [](../resources/plannerroster.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,12 +50,12 @@ GET /users/{usersId}/planner/rosterPlans
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -64,26 +64,26 @@ GET /users/{usersId}/planner/rosterPlans
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_plannerplan"
+  "name": "list_plannerplan_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplan-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplan-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-plannerplan-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-plannerplan-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

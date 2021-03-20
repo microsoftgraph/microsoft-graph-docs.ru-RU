@@ -1,16 +1,16 @@
 ---
 title: Список dailyPrintUsageSummariesByUser
-description: Получить список сводок по ежедневному использованию печати, сгруппных по пользователю.
+description: Извлечение списка сводок ежедневного использования печати, сгруппив по пользователю.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5f67c8907986ad9aa5672030ee69e47c1749f2a6
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b6cd4365ce11a0c090410f4787932968ebdc5012
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982777"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953098"
 ---
 # <a name="list-dailyprintusagesummariesbyuser"></a>Список dailyPrintUsageSummariesByUser
 
@@ -18,18 +18,18 @@ ms.locfileid: "49982777"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список сводок по ежедневному использованию печати, сгруппных по пользователю.
+Извлечение списка сводок ежедневного использования печати, сгруппив по пользователю.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент пользователя должен иметь активную подписку универсальной печати.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Application|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /print/reports/dailyPrintUsageSummariesByUser
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -57,25 +57,25 @@ GET /print/reports/dailyPrintUsageSummariesByUser
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_endpoints"
+  "name": "get_endpoints_4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUser
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,18 +1,18 @@
 ---
-title: Список Таскфолдерс
-description: Получение папок задач Outlook в определенном outlookTaskGroup.
+title: Список taskFolders
+description: Получите папки задач Outlook в определенном outlookTaskGroup.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 541788d964623b4bf99a6619c5af166db11ecbbf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bc83f3d5c17f5d2f40b2d13440633b088674577d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978053"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953280"
 ---
-# <a name="list-taskfolders-deprecated"></a>Список Таскфолдерс (не рекомендуется)
+# <a name="list-taskfolders-deprecated"></a>List taskFolders (deprecated)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48978053"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получение папок задач Outlook в определенном [outlookTaskGroup](../resources/outlooktaskgroup.md).
+Получите папки задач Outlook в определенном [outlookTaskGroup.](../resources/outlooktaskgroup.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов OutlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -58,25 +58,25 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_taskfolders"
+  "name": "get_taskfolders_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/taskFolders
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-taskfolders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-taskfolders-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-taskfolders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-taskfolders-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-taskfolders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-taskfolders-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-taskfolders-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-taskfolders-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

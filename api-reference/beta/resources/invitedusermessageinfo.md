@@ -4,13 +4,13 @@ description: Объект invitedUserMessageInfo позволяет настро
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
-author: elisolMS
-ms.openlocfilehash: 6092a5bd493377480c0a835b28982aec2d95c522
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: Sammak
+ms.openlocfilehash: 610a82646b87775e4f50651a2fc8f617f1782108
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131501"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952797"
 ---
 # <a name="configuring-the-invitation-message"></a>Настройка сообщения приглашения
 
@@ -24,11 +24,11 @@ ms.locfileid: "50131501"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ccRecipients|Коллекция [recipient](recipient.md)|Дополнительные получатели, на которые должно быть отправлено приглашение. В настоящее время поддерживается только один дополнительный получатель.|
-|customizedMessageBody|Строка|Настраиваемый текст сообщения, который необходимо отправить, если сообщение по умолчанию не нужно.|
-|messageLanguage|Строка|Язык, на который вы хотите отправить сообщение по умолчанию. Если задан параметр customizedMessageBody, это свойство игнорируется, и сообщение отправляется с помощью параметра customizedMessageBody. Формат языка должен быть в формате ISO 639. Значение по умолчанию : en-US.|
+|ccRecipients|Коллекция [recipient](recipient.md)|Дополнительные получатели, в которые должно быть отправлено приглашение. В настоящее время поддерживается только один дополнительный получатель.|
+|customizedMessageBody|Строка|Настраиваемый текст сообщения, который необходимо отправить, если не нужно сообщение по умолчанию.|
+|messageLanguage|Строка|Язык, на который нужно отправить сообщение по умолчанию. Если задан настраиваемыйMessageBody, это свойство игнорируется, и сообщение отправляется с помощью настраиваемогоMessageBody. Формат языка должен быть в ISO 639. По умолчанию — en-US.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->

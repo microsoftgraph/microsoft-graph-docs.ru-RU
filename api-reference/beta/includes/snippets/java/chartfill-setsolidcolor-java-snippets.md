@@ -1,20 +1,23 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c21a7adfd2090732a5976e645773b8d787ea7b50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a1434cb389bd20624d1116cee7673cd2c03975ab
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958759"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50973746"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String color = "color-value";
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").format().fill()
-    .setSolidColor(color)
+    .setSolidColor(WorkbookChartFillSetSolidColorParameterSet
+        .newBuilder()
+        .withColor(color)
+        .build())
     .buildRequest()
     .post();
 

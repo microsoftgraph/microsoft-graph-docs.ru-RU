@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 57e63c083e75a84eff13ffc5094041224bdd43d7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e6755328e47b39a36d0882fa2fb15921a25a4456
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436064"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953329"
 ---
 # <a name="list-fido2authenticationmethod"></a>Список fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50436064"
 |:---|:---|:--|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Приложение                            | Неприменимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Application                            | Неприменимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
@@ -54,7 +54,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 |:---|:---|
 |Authorization|Bearer {token}|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -68,26 +68,26 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_fido2authenticationmethod"
+  "name": "get_fido2authenticationmethod_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethod-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-fido2authenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-fido2authenticationmethod-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-fido2authenticationmethod-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-fido2authenticationmethod-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethod-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethod-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
