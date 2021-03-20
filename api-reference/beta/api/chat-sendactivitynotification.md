@@ -1,21 +1,21 @@
 ---
-title: 'chat: sendActivityNotification'
-description: Отправка уведомления веб-канала активности в области чата.
+title: 'чат: sendActivityNotification'
+description: Отправьте уведомление о канале действий в области чата.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7147ad0019b9c066f19f30b9829e80e1a75570ca
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4fd0d8a2e8b9d7d6239c2de8610415407c5f5f03
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872861"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948062"
 ---
-# <a name="chat-sendactivitynotification"></a>chat: sendActivityNotification
+# <a name="chat-sendactivitynotification"></a>чат: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправка уведомления веб-канала активности в области чата. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в отправке уведомлений [о действиях Teams.](/graph/teams-send-activityfeednotifications)
+Отправьте уведомление о канале действий в области чата. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в материале Отправка уведомлений о [действиях Teams.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "49872861"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamsActivity.Send|
+|Application|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,26 +42,26 @@ POST /chats/{chatId}/sendActivityNotification
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о который идет речь.|
-|activityType|String|Тип действия. Это должно быть объявлено в манифесте [приложения Teams.](/microsoftteams/platform/overview)|
-|chainId|Int64|Необязательное. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
-|previewText|[itemBody](../resources/itembody.md)|Предварительный просмотр текста уведомления. Microsoft Teams будет показывать только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
-|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient.](../resources/aadusernotificationrecipient.md) |
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
+|activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
+|chainId|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams покажет только первые 150 символов.|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи ленты действий, соответствующие `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
+|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
-Следующие ресурсы поддерживаются при установке для свойства `source` **темы** значения `entityURL` :
+При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityURL` ресурсы:
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **Примечание.** URL-адрес сущности должен быть таким же, как или его дитя в чате в URL-адресе. Кроме того, приложение [Teams должно](/microsoftteams/platform/overview) быть установлено в чате.
+> **Примечание:** URL-адрес объекта должен быть таким же, как или детский ресурс чата в URL-адресе. Кроме того, приложение [Teams должно](/microsoftteams/platform/overview) быть установлено в чате.
 
 ## <a name="response"></a>Ответ
 
@@ -71,14 +71,14 @@ POST /chats/{chatId}/sendActivityNotification
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Пример 1. Уведомление пользователя о задаче, созданной в чате
 
-В этом примере показано, как можно отправить уведомление веб-канала активности для новой задачи, созданной в чате. Дополнительные сведения [см. в отправке уведомлений об активности Teams.](/graph/teams-send-activityfeednotifications)
+В этом примере показано, как можно отправить уведомление о ленте действий для новой задачи, созданной в чате. Дополнительные сведения см. в [материале Отправка уведомлений о действиях Teams.](/graph/teams-send-activityfeednotifications)
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_1"
 }
 -->
 ``` http
@@ -107,19 +107,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -137,12 +137,14 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-a-approval-needed-in-a-chat-message"></a>Пример 2. Уведомление пользователя об утверждении, необходимом в сообщении чата
 
-Как и в предыдущем примере, в этом примере `entityUrl` используется для `topic` . Однако в этом случае он ссылайтесь на сообщение в чате. Сообщение может содержит карточку с кнопкой утверждения.
+Как и в предыдущем примере, в этом примере `entityUrl` используется `topic` для . Однако в этом случае он связывается с сообщением в чате. В сообщении может быть карточка с кнопкой утверждения.
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_2"
 }
 -->
 ``` http
@@ -170,6 +172,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 <!-- {
@@ -183,12 +203,14 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Пример 3. Уведомление пользователя о событии по отношению к чату
 
-Как показано в предыдущих примерах, вы можете ссылаться на различные аспекты чата. Однако если вы хотите связать аспект, который не является частью чата или не представлен Microsoft Graph, вы можете установить источник и передать для него пользовательское `topic` `text` значение. Кроме того, `webUrl` требуется при установке `topic` для источника параметра `text` ..
+Как показано в предыдущих примерах, вы можете связаться с различными аспектами чата. Однако, если вы хотите связаться с аспектом, который не является частью чата или не представлен Microsoft Graph, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. Кроме того, `webUrl` требуется при настройке `topic` источника для `text` .
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_3"
 }
 -->
 ``` http
@@ -217,6 +239,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 <!-- {

@@ -1,22 +1,22 @@
 ---
 author: swapnil1993
-title: Столбцы спискаDefinitions
+title: Список columnDefinitions в типе контента
 description: Список столбцов в типе контента.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 67ca1c05a9f92714b31932056d55c889006b129e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8e1327f092816fd6ef2d5db88f03af6e3e4973bd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770535"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946983"
 ---
-# <a name="list-columndefinitions"></a>Столбцы спискаDefinitions
+# <a name="list-columns-in-a-content-type"></a>Список столбцов в типе контента
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Получите коллекцию [столбцов][columnDefinition] в [типе контента.][contentType]
+Получите коллекцию столбцов, представленную в качестве [ресурсов columnDefinitionDefinition,][] в [типе контента.][contentType]
 
   
 
@@ -32,7 +32,7 @@ ms.locfileid: "50770535"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 
   
 

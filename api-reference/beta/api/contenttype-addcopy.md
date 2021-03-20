@@ -5,18 +5,18 @@ description: Добавьте копию типа контента сайта в
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 97c93929fbc0c370bd4dac53b068439f5bbd5b82
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f388799e409a5f2037182bb3bc331a6a6adbc45f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771150"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947032"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Добавьте копию типа [контента][site] [сайта][contentType] в [список][list].
+Добавьте копию контента [типа][контентаType] с сайта [в][site] [список][list].
  
   
 
@@ -28,9 +28,9 @@ ms.locfileid: "50771150"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Делегированные (рабочая или учебная учетная запись) |Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -40,7 +40,6 @@ ms.locfileid: "50771150"
 }
 -->
 ```http
-
 POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ```
 
@@ -61,7 +60,7 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа этот вызов возвращает `204 No Content` ответ.
+В случае успешного ответа этот вызов возвращает код отклика и `201 Created` [объект contentType][] в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -105,11 +104,30 @@ Content-Type: application/json
 ### <a name="response"></a>Отклик
 
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true} -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 
+{
+    "id": "0x0101",
+    "description": "Create a new custom CSR JavaScript Display Template.",
+    "group": "Display Template Content Types",
+    "hidden": false,
+    "name": "JavaScript Display Template",
+    "parentId": "0x01",
+    "readOnly": false,
+    "sealed": false,
+    "base": {
+        "id": "0x01",
+        "description": "Create a new custom CSR JavaScript Display Template.",
+        "group": "Display Template Content Types",
+        "hidden": false,
+        "name": "JavaScript Display Template",
+        "readOnly": false,
+        "sealed": false
+    }
+}
 ```
 
 [site]: ../resources/site.md

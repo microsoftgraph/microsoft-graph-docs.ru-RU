@@ -1,24 +1,24 @@
 ---
-title: Список ответов
-description: Получение списка объектов chatmessage.
+title: Ответы списка
+description: Извлечение списка объектов chatmessage.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a0dbe898085d31c8d00ad9b816c441e67b735474
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 025607cb1b2b9bb33820b8877cbde1d6a1fac844
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958150"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947819"
 ---
-# <a name="list-replies"></a>Список ответов
+# <a name="list-replies"></a>Ответы списка
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов chatmessage.
+Извлечение списка объектов chatmessage.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -68,26 +68,26 @@ GET /chats/{id}/messages/{id}/replies
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_replies"
+  "name": "get_replies_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-replies-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-replies-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-replies-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-replies-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -95,10 +95,10 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

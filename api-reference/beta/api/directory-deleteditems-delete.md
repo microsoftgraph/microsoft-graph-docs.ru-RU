@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5fe36d8a129a42dcd139b36577f0ae7fab45a6f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d31044ce98248ae4759a7c7086e9ec14d336df8f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437060"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946696"
 ---
 # <a name="permanently-delete-item"></a>Удаление элемента без возможности восстановления
 
@@ -33,6 +33,8 @@ ms.locfileid: "50437060"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
+У запросителя должна быть одна из следующих ролей: *Глобальный администратор* или *администратор приложений.*
+
 Для пользователей:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -41,6 +43,8 @@ ms.locfileid: "50437060"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Не поддерживается. |
 
+Пользователю, заявляемму, должна быть одна из следующих ролей: *Глобальный администратор* или *администратор пользователя.*
+
 Для групп:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -48,6 +52,8 @@ ms.locfileid: "50437060"
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
+
+У запросителя должна быть одна из следующих ролей: *Глобальный администратор* или *администратор групп.*
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +66,7 @@ DELETE /directory/deleteditems/{id}
 | Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

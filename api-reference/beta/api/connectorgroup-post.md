@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0d0954ebee00cfb3e979aa3fb39676f6b927f28f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 188bb45cc664681cf536617a77072a0bb409f755
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130054"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947088"
 ---
 # <a name="create-connectorgroup"></a>Создание connectorGroup
 
@@ -38,24 +38,24 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer. Обязательный параметр.|
+| Authorization  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажет представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
-В следующей таблице перечислены свойства, доступные для **connectorGroup.** Свойство **name** является обязательной.
+В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
+В следующей таблице перечислены свойства, доступные для **connectorGroup.** Свойство **name** — обязательное свойство.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Указывает тип гибридного агента. Это свойство заранее заданной системой.|
-|id|string| Уникальный идентификатор для этого соединителиГруппы. Только для чтения. |
-|isDefault|boolean| Указывает, является ли connectorGroup значением по умолчанию. Только одна группа соединительных соединительных групп может быть соединитетелем по умолчанию, и это предварительно заданной системой. |
+|id|string| Уникальный идентификатор для этого соединитетеляGroup. Только для чтения. |
+|isDefault|boolean| Указывает, является ли соединительщикGroup по умолчанию. Соединительщиком по умолчанию может быть только одна группа соединительных групп, и это заранее заданной системой. |
 |name|string| Имя, связанное с соединитетелемGroup. |
-|region|string| Регион, для который назначен соединительГрупп и для который будет оптимизирована трафик. Этот регион можно установить только в **том** случае, если соединители или приложения не назначены соединительной группе. Доступны следующие регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|регион|string| Регион, в который назначен connectorGroup, и будет оптимизировать трафик. Этот регион можно установить только в **том** случае, если соединители или приложения не назначены соединительгруппе. Доступные регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [connectorGroup](../resources/connectorgroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -63,7 +63,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_connectorgroup"
+  "name": "update_connectorgroup_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
@@ -76,19 +76,19 @@ Content-length: 99
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-connectorgroup-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-connectorgroup-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-connectorgroup-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-connectorgroup-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

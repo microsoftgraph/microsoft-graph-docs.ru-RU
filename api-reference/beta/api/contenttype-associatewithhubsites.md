@@ -5,12 +5,12 @@ description: Связать тип контента со списком узло
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: e60d93b601f4b98eb2434bf1596b31e199fd0d41
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dbddfcd4f2f3fc94c9be4ebf30aeb0c8522ea855
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771122"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947018"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -30,9 +30,9 @@ ms.locfileid: "50771122"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------
-|Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -80,12 +80,10 @@ POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubS
 Content-Type: application/json
 
 {
-  "hubSiteUrls":
-    [
+   "hubSiteUrls":[
       "https://graph.microsoft.com/beta/sites/id"
-      
-    ],
-    "propagateToExistingLists": false
+   ],
+   "propagateToExistingLists":false
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -116,7 +114,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   

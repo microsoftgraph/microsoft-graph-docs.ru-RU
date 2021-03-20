@@ -1,23 +1,23 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: Создание columnDefinition
+title: Создание columnDefinition в типе контента
 description: Добавление столбца в тип контента.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 071a855c79c055179022157b991b4a9f2789cad1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7071322064d55c21123fabd5ddc80d63fa5575ac
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447230"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946966"
 ---
-# <a name="create-columndefinition"></a>Создание columnDefinition
+# <a name="create-columndefinition-for-a-content-type"></a>Создание columnDefinition для типа контента
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Добавляет существующий столбец [столбец]сайта или[спискаDefinition] в [контент типа][контентаType.]
+Добавление столбца в [тип контента.][contentType] in a site or list by specifying a [columnDefinition][columnDefinition]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,9 +27,9 @@ ms.locfileid: "50447230"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -38,16 +38,16 @@ ms.locfileid: "50447230"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /sites/{site-id}/contentTypes/{contentType-id}/columns
-POST /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns
+POST /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте представление JSON ресурса [columnDefinition.][]  
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект contentType][] в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект columnDefinition][] в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -64,9 +64,9 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ответ возвращает список всех столбцов, добавленных в тип контента.
+Ответ возвращает столбец, добавленный в тип контента.
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true, "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true} -->
 
   
 

@@ -5,12 +5,12 @@ description: Обновление типа контента
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 52cdcdc18b106c1b09b69d37cc027dc610630611
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: bb7b898a8eb05c70c4c9ec187d36d3d5a4ce69db
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773314"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946959"
 ---
 # <a name="update-contenttype"></a>Обновление contentType
 Пространство имен: microsoft.graph
@@ -29,9 +29,9 @@ ms.locfileid: "50773314"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений |Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application |Sites.Manage.All, Sites.FullControl.All |
 
   
 

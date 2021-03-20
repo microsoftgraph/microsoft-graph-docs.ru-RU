@@ -1,16 +1,16 @@
 ---
 title: Отправка chatMessage в канале или чате
-description: Отправка нового chatMessage в указанном канале или чате.
+description: Отправьте новый chatMessage в указанном канале или чате.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 179f3f3ccd4afae57ca5c34c2789a311ecb69bd0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 34c423e5b1a55068e9bc2f1cb79d34986e4b216b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958136"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947960"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -18,11 +18,11 @@ ms.locfileid: "48958136"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [chatMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md) или [чате](../resources/chat.md).
+Создание нового [чатаMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md) или [чате.](../resources/chat.md)
 
-> **Note** : мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
+> **Примечание.** Мы не рекомендуем использовать этот API для переноса данных. Он не имеет пропускной способности, необходимой для обычной миграции.
 
-> **Note** : нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправка сообщений, которые будут читаться людьми.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,14 +31,14 @@ ms.locfileid: "48958136"
 ### <a name="permissions-for-channel"></a>Разрешения для канала
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Чаннелмессаже. Send, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChatMessage. Send, Chat. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -75,18 +75,18 @@ POST /users/{id}/chats/{id}/messages
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным; другие свойства являются необязательными.
+В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md) Обязательным является только свойство body; другие свойства необязательны.
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-В следующих примерах URL-адрес может использовать [синтаксис HTTP](#http-request) , описанный [для отправки сообщения в чат](chat-post-message.md), [отправки сообщения в канал](channel-post-message.md)или [отправки ответа каналу](channel-post-messagereply.md).
+В следующих примерах URL-адрес может использовать синтаксис [HTTP,](#http-request) описанный для отправки сообщения в [чат,](chat-post-message.md)отправки сообщения на канал или отправки ответа на [канал.](channel-post-messagereply.md) [](channel-post-message.md)
 
-### <a name="example-1-hello-world"></a>Пример 1: Hello World
+### <a name="example-1-hello-world"></a>Пример 1. Hello World
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -94,7 +94,7 @@ POST /users/{id}/chats/{id}/messages
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_2"
 }-->
 
 ```http
@@ -108,19 +108,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,9 +182,11 @@ Content-length: 160
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_3"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -210,10 +212,24 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -274,16 +290,18 @@ Content-length: 160
 }
 ```
 
-### <a name="example-3-cards"></a>Пример 3: карты
+### <a name="example-3-cards"></a>Пример 3. Карты
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** Идентификатор вложения должен быть уникальным и может быть новым случайно созданным идентификатором GUID. Однако идентификатор вложения должен быть одинаковым в элементах _Body_ и _вложениях_ .
+> **Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID. Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений._
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_4"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -307,10 +325,28 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -365,16 +401,18 @@ Content-length: 160
 }
 ```
 
-### <a name="example-4-file-attachments"></a>Пример 4: вложенные файлы
+### <a name="example-4-file-attachments"></a>Пример 4. Вложения файлов
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
->**Примечание:** Файл уже должен находиться в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например,/дривес/{ИД}/итемс/{ИД}. Идентификатор вложения — это идентификатор GUID в элементе **ETag** объекта **DriveItem** , вложение **ContentURL** — это **webUrl** папки **driveItem** плюс имя **driveItem** , а имя вложения — имя **driveItem**.
+>**Примечание:** Файл уже должен быть в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например, /drives/{id}/items/{id}. Ваш ИД вложения — это GUID в **eTag** **driveItem,** содержимое вложения — это **webUrl** папки driveItem плюс имя **driveItem,** а имя вложения — имя  **driveItem.** 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_5"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -395,10 +433,28 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -453,18 +509,20 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-sending-inline-images-along-with-the-message"></a>Пример 5: отправка встроенных изображений вместе с сообщением
+### <a name="example-5-sending-inline-images-along-with-the-message"></a>Пример 5. Отправка inline изображений вместе с сообщением
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** **Темпорарид** в коллекции **хостедконтентс** — это случайный идентификатор, который должен быть одинаковым для элементов **Body** и **хостедконтентс** . (Обратите внимание, что для **темпорарид** задано значение **1** , а ссылка в основном тексте как `../hostedContents/1/$value` .)
+> **Примечание:** TemporaryId **в** коллекции **hostedContents** — это случайный ID,  но он должен быть одинаковым по всему телу и элементам **hostedContents.** (Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value` .)
 
-для **contentBytes** должны быть заданы байты двоичных строк в кодировке Base64. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_6"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -484,10 +542,28 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -539,18 +615,20 @@ Content-length: 160
 }
 ```
 
-### <a name="example-6-card-with-inline-images"></a>Пример 6: карточка с встроенными изображениями
+### <a name="example-6-card-with-inline-images"></a>Пример 6. Карточка с изображениями в линию
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** **Темпорарид** в коллекции **хостедконтентс** — это случайный идентификатор, который должен быть одинаковым для элементов **содержимого** (в **вложениях** ) и **хостедконтентс** . (Обратите внимание, что для **темпорарид** задано значение **1** , а ссылка в содержимом как `../hostedContents/1/$value` .)
+> **Примечание:** TemporaryId в коллекции **hostedContents** — это случайный ID, но должен быть одинаковым для контента **(в** вложениях) и элементов **hostedContents.**  (Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value` .)
 
-для **contentBytes** должны быть заданы байты двоичных строк в кодировке Base64. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_7"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -581,6 +659,24 @@ Content-type: application/json
     }]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-7-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-7-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-7-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-7-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

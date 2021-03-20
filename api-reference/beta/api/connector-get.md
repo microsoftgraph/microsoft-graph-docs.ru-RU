@@ -1,16 +1,16 @@
 ---
 title: Получение соединителя
-description: Извлечение свойств объекта соединители.
+description: Извлечение свойств соединитеного объекта.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 84d3d5d3b2ae8375304844e5d88315896722d110
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b978663f17e4aa17a5599b055633ff4eb2622c80
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130096"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947197"
 ---
 # <a name="get-connector"></a>Получение соединителя
 
@@ -41,14 +41,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer. Обязательна|
+| Authorization  | Носителер. Обязательный|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` соединители [](../resources/connector.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [соединители](../resources/connector.md) объект в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -59,25 +59,25 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connector"
+  "name": "get_connector_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connector-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connector-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connector-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connector-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connector-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-connector-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connector-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-connector-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
