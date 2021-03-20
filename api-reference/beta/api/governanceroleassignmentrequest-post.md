@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 2cb6ee71c888e90ee082c1f70ecced2c21199939
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4883fedc71cfdcc6c50ab87b46299fdb173552a5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435863"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950874"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -75,18 +75,18 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Авторизация | Bearer {code}    |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем представление JSON объекта [governanceRoleAssignmentRequest.](../resources/governanceroleassignmentrequest.md)
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
 | resourceId       | String                                                   | Идентификатор ресурса. Обязательный. |
-| roleDefinitionId | String                                                   | ID определения роли. Обязательный. |
-| subjectId        | String                                                   | ID субъекта. Обязательный. |
-| assignmentState  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
-| type             | String                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательный. |
-| reason           | String                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
+| roleDefinitionId | Строка                                                   | ID определения роли. Обязательный. |
+| subjectId        | Строка                                                   | ID субъекта. Обязательный. |
+| assignmentState  | Строка                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
+| type             | Строка                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательный. |
+| reason           | Строка                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение ролей. Для типа `UserAdd` запроса `AdminAdd` , и , это `AdminUpdate` `AdminExtend` необходимо. |
 
 ## <a name="response"></a>Отклик
@@ -120,11 +120,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да                      | \<subjectId\> |
-| assignmentState  | String                                                   | Да                      | Подходящая / Активная |
-| type             | String                                                   | Да                      | AdminAdd |
-| reason           | String                                                   | зависит от параметров ролей |   |
+| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да                      | Подходящая / Активная |
+| type             | Строка                                                   | Да                      | AdminAdd |
+| reason           | Строка                                                   | зависит от параметров ролей |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос
@@ -133,7 +133,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_1"
 }-->
 
 ```http
@@ -155,19 +155,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -232,18 +232,20 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да                      | \<subjectId\> |
-| assignmentState  | String                                                   | Да                      | Активное |
-| type             | String                                                   | Да                      | UserAdd |
-| reason           | String                                                   | зависит от параметров ролей |   |
+| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да                      | Активное |
+| type             | Строка                                                   | Да                      | UserAdd |
+| reason           | Строка                                                   | зависит от параметров ролей |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_2"
 }-->
 
 ```http
@@ -265,6 +267,24 @@ Content-type: application/json
   "linkedEligibleRoleAssignmentId": "e327f4be-42a0-47a2-8579-0a39b025b394"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -335,18 +355,20 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да      | \<subjectId\> |
-| assignmentState  | String                                                   | Да      | Активное |
-| type             | String                                                   | Да      | UserRemove |
-| reason           | String                                                   | Нет       |   |
+| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да      | Активное |
+| type             | Строка                                                   | Да      | UserRemove |
+| reason           | Строка                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_3"
 }-->
 
 ```http
@@ -363,6 +385,24 @@ Content-type: application/json
   "linkedEligibleRoleAssignmentId": "cb8a533e-02d5-42ad-8499-916b1e4822ec"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -405,18 +445,20 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да      | \<subjectId\> |
-| assignmentState  | String                                                   | Да      | Подходящая / Активная |
-| type             | String                                                   | Да      | AdminRemove |
-| reason           | String                                                   | Нет       |   |
+| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да      | Подходящая / Активная |
+| type             | Строка                                                   | Да      | AdminRemove |
+| reason           | Строка                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_4"
 }-->
 
 ```http
@@ -431,6 +473,24 @@ Content-type: application/json
   "type": "AdminRemove"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -473,18 +533,20 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да                     | \<subjectId\> |
-| assignmentState  | String                                                   | Да                     | Подходящая / Активная |
-| type             | String                                                   | Да                     | AdminUpdate |
-| reason           | String                                                   | зависит от ролиSettings |   |
+| roleDefinitionId | Строка                                                   | Да                     | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да                     | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да                     | Подходящая / Активная |
+| type             | Строка                                                   | Да                     | AdminUpdate |
+| reason           | Строка                                                   | зависит от ролиSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_5"
 }-->
 
 ```http
@@ -504,6 +566,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -564,18 +644,20 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да                     | \<subjectId\> |
-| assignmentState  | String                                                   | Да                     | Подходящая / Активная |
-| type             | String                                                   | Да                     | AdminExtend |
-| reason           | String                                                   | зависит от ролиSettings |   |
+| roleDefinitionId | Строка                                                   | Да                     | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да                     | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да                     | Подходящая / Активная |
+| type             | Строка                                                   | Да                     | AdminExtend |
+| reason           | Строка                                                   | зависит от ролиSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_6"
 }-->
 
 ```http
@@ -596,6 +678,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

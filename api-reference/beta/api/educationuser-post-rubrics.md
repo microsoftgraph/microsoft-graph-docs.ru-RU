@@ -1,24 +1,24 @@
 ---
-title: Создание Едукатионрубрик
-description: Создание нового объекта Едукатионрубрик.
+title: Создание educationRubric
+description: Создайте новый объект educationRubric.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 60c9f0338cd79db41221efd379227dbbb2055bd5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0ce2f6bc0c284ac14ac4494cfbc506986a4e7cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955169"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951085"
 ---
-# <a name="create-educationrubric"></a>Создание Едукатионрубрик
+# <a name="create-educationrubric"></a>Создание educationRubric
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [едукатионрубрик](../resources/educationrubric.md) .
+Создайте новый [объект educationRubric.](../resources/educationrubric.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48955169"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)             |
 | :------------------------------------- | :------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                          |
 | Для приложений                            | Не поддерживается.                                          |
 
@@ -46,24 +46,24 @@ POST /education/me/rubrics
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [едукатионрубрик](../resources/educationrubric.md) в формате JSON.
+В органе запроса поставляем представление JSON объекта [educationRubric.](../resources/educationrubric.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и `201 Created` новый [объект educationRubric](../resources/educationrubric.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-posting-a-credit-rubric"></a>Пример 1: учет кредитных Rubric
+### <a name="example-1-posting-a-credit-rubric"></a>Пример 1. Публикация кредитной рубрики
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на разноску кредита Rubric (Rubric без точек).
+Ниже приводится пример запроса на публикацию кредитной рубрики (рубрика без баллов).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_1"
 }-->
 
 ```http
@@ -137,19 +137,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,10 +157,10 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -244,12 +244,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-posting-a-points-rubric"></a>Пример 2: отправка точек Rubric
+### <a name="example-2-posting-a-points-rubric"></a>Пример 2. Публикация рубрики Points
 
-Ниже приведен пример запроса на размещение Rubric с точками.
+Ниже приводится пример запроса на публикацию рубрики с точками.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_2"
 }-->
 
 ```http
@@ -335,13 +337,31 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
