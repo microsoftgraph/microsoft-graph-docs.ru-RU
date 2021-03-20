@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3aa114c23888ccc6852314e2274b8a89ca440344
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e69125d4119e7d2083189f459ad7c86816ddcd8e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761530"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952559"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>тип ресурса appliedConditionalAccessPolicy
 
@@ -25,8 +25,8 @@ ms.locfileid: "50761530"
 |displayName|String|Ссылается на имя политики условного доступа (например: "Require MFA for Salesforce").|
 |enforcedGrantControls|Коллекция строк|Относится к средствам управления грантами, которые применяются в политике условного доступа (пример: "Требуется многофакторная проверка подлинности").|
 |enforcedSessionControls|Коллекция строк|Относится к средствам управления сеансами, которые применяются в политике условного доступа (пример: "Требуется принудительное управление приложениями").|
-|id|String|Уникальный GUID политики условного доступа.|
-|result|String| Указывает результат срабатываемой политики ЦС. Возможные значения:<br/>`success`<br/>`failure`<br/>`notApplied` - Политика не применяется, так как условия политики не были выполнены.<br/>`notEnabled` - Это связано с политикой в состоянии отключения.|
+|id|String|Идентификатор политики условного доступа.|
+|result|appliedConditionalAccessPolicyResult| Указывает результат срабатываемой политики ЦС. Возможные значения: , ( Политика не применяется, так как условия политики не были выполнены), (Это связано с политикой в состоянии `success` `failure` `notApplied` `notEnabled` отключения), `unknown` , `unknownFutureValue` .|
 
 ## <a name="json-representation"></a>Представление JSON
 

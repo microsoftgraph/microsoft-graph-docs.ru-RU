@@ -1,16 +1,16 @@
 ---
 title: Удаление educationAssignment
-description: Удаление существующего назначения. Удалять назначения могут только преподаватели внутри класса.
+description: Удаление существующего назначения. Удалить назначения могут только преподаватели в классе.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3e85d23fc4ef128a3c1231f51a8a037036b0a3d7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbab9c5a42c54d660e7962e16211158bdde7da05
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966609"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951887"
 ---
 # <a name="delete-educationassignment"></a>Удаление educationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48966609"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление существующего назначения. Удалять назначения могут только преподаватели внутри класса.
+Удаление существующего назначения. Удалить назначения могут только преподаватели в классе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48966609"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)             |
 | :------------------------------------- | :------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                          |
-| Для приложения                            | Не поддерживается.                                          |
+| Application                            | Не поддерживается.                                          |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,26 +62,26 @@ DELETE /education/classes/{id}/assignments/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_educationassignment"
+  "name": "delete_educationassignment_1"
 }-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,14 +3,14 @@ title: тип ресурса threatAssessmentResult
 description: Представляет элемент результатов оценки угроз.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0657cef555cd982c6649f6a8a4f40b7e5e15eaab
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b127de108633389342a5d21ff8fac7d5e670b395
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722103"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952496"
 ---
 # <a name="threatassessmentresult-resource-type"></a>тип ресурса threatAssessmentResult
 

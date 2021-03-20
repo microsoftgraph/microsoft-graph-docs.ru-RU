@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1a9069c33078b89fb818e27a9ce099ec546d1c5c
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: acfcb3dc067f69e8cf7e3e3b9295a6e9e5c8396c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479921"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952545"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -69,17 +69,17 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | callChainId         | String                                                                                                 | Уникальный идентификатор всех звонков участника конференции или уникальный идентификатор двух звонков участника в звонке P2P.  Необходимо скопировать из `Microsoft.Graph.Call.CallChainId`. |
 | callRoutes         | Коллекция [callRoute](callRoute.md)                                                                                                 | Сведения маршрутизации о том, как был перенаправлен вызов. Только для чтения.                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Сведения о чате. Сведения, необходимые для присоединения к собранию.                                                                                                                              |
-| direction           | String                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения.                                                                                            |
+| direction           | callDirection                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения.                                                                                            |
 | id                  | String                                                                                                 | Идентификатор вызова. Только для чтения.                                                                                                                                                                        |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательно.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании, необходимые для присоединения к собранию.                                                                                                            |
 transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | Сведения расшифровки для звонка. Только для чтения.    |
 | myParticipantId     | String                                                                                                 | Только для чтения.                                                                                                                                                                        |
-| requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| requestedModalities | Коллекция modality                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения.                                                                                                        |
 | source              | [participantInfo](participantinfo.md)                                                                  | Создатель вызова.                                                                                                                                                                         |
-| state               | String                                                                                                 | Состояние вызова. Возможные значения: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Только для чтения.                          |
+| state               | callState                                                                                                 | Состояние вызова. Возможные значения: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Только для чтения.                          |
 | subject             | String                                                                                                 | Тема беседы.                                                                                                                                                                    |
 | targets             | Коллекция [invitationParticipantInfo](participantinfo.md)                                             | Целевые объекты вызова. Обязательные сведения для создания одноранговых вызовов.                                                                                                            |
 toneInfo            | [toneInfo](toneinfo.md)                                                                                | Только для чтения.                                                                                                                                                                        |

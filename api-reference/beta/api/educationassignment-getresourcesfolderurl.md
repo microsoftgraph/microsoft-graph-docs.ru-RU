@@ -1,32 +1,32 @@
 ---
-title: 'educationAssignment: Жетресаурцесфолдерурл'
-description: 'Эта функция возвращает URL-адрес OneDrive, где будут отправляться все файловые ресурсы (Word, Excel и т. д.).  '
+title: 'educationAssignment: getResourcesFolderUrl'
+description: 'Эта функция возвращает URL-адрес OneDrive, куда должны быть загружены все ресурсы на основе файлов (Word, Excel и так далее).  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0aacf6169faf55e9196cb65e3abde4084ae2ac98
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ce5f35560a25f2a57742d93293788038e13cb179
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966574"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951852"
 ---
-# <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: Жетресаурцесфолдерурл
+# <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Эта функция возвращает URL-адрес OneDrive, где будут отправляться все файловые ресурсы (Word, Excel и т. д.).  
-Обратите внимание, что файлы должны находиться в этой папке, чтобы добавить их в качестве ресурсов. Файлы, которые требуется отправить, могут определить только преподаватель в классе. 
+Эта функция возвращает URL-адрес OneDrive, куда должны быть загружены все ресурсы на основе файлов (Word, Excel и так далее).  
+Обратите внимание, что файлы должны быть размещены в этой папке, чтобы они были добавлены в качестве ресурсов. Только учитель в классе может определить, какие файлы загрузить. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. ReadBasic, EduAssignments. Read  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Основной текст будет содержать URL-адрес OneDrive папки, в которую будут помещены все файловые ресурсы.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. В теле будет содержаться URL-адрес папки OneDrive, в который будут помещаться все ресурсы на основе файлов.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -54,25 +54,25 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "educationassignment_publish"
+  "name": "educationassignment_publish_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
