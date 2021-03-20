@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac7d879f35a9d98051650e830e7a75a94a98de5e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d596d39330ecf332313ca0d82766c71d977980c0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775383"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942298"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -31,6 +31,7 @@ ms.locfileid: "50775383"
 | Для приложений                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешение Teamwork.Migrate.All поддерживается *только* для [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -597,6 +598,8 @@ Content-Length: 0
 #### <a name="request"></a>Запрос
 
 В следующем примере показано, как создать команду для импортированных сообщений.
+
+>**Примечание**. В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.|
 
 >**Примечание.** Команды, созданные в режиме миграции, поддерживают только шаблон `standard`.
 

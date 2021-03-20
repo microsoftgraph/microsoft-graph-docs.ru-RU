@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b4b6ee584e671e070955eb7c065c59cb8481c375
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b6138bc52e5686af94a94cfa13762b71a6242c4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440355"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945692"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>тип ресурса entitlementManagementSettings
 
@@ -31,8 +31,8 @@ ms.locfileid: "50440355"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|String|Один `None` из `BlockSignIn` , или `BlockSignInAndDelete` . |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|Если это так, то количество дней после блокировки внешнего пользователя при входе до удаления `externalUserLifecycleAction` `BlockSignInAndDelete` учетной записи.|
+|externalUserLifecycleAction|Строка|Один `None` из `BlockSignIn` , или `BlockSignInAndDelete` . |
+|daysUntilExternalUserDeletedAfterBlocked|Int64|Если **externalUserLifecycleAction** — количество дней после блокировки внешнего пользователя до удаления `BlockSignInAndDelete` учетной записи.|
 
 ## <a name="relationships"></a>Связи
 

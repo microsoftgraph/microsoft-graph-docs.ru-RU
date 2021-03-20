@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b06fd0b88a87dabb5a12e09b788094b8e00b8960
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 249396b0c2bfc4b39ca21c198958adc3d0b9e228
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440257"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945647"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>тип ресурса identitySecurityDefaultsEnforcementPolicy
 
@@ -33,10 +33,10 @@ ms.locfileid: "50440257"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание этой политики. Только для чтения.|
-|displayName|String|Отображение имени для этой политики. Только для чтения.|
-|id|String|Идентификатор для этой политики. Только для чтения.|
-|isEnabled|Boolean|Если установлено значение true, по умолчанию безопасность Azure Active Directory включена для клиента.|
+|description|Строка|Описание этой политики. Только для чтения.|
+|displayName|Строка|Отображение имени для этой политики. Только для чтения.|
+|id|Строка|Идентификатор для этой политики. Только для чтения.|
+|isEnabled|Boolean|Если установлено значение, по умолчанию `true` безопасность Azure Active Directory включена для клиента.|
 
 ## <a name="relationships"></a>Связи
 

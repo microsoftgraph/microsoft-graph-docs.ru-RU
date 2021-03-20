@@ -1,24 +1,24 @@
 ---
-title: Обновление Шифтпреференцес
-description: Обновление настроек смены пользователя.
+title: Обновление shiftPreferences
+description: Обновление личных предпочтений пользователя.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80b503780c0b17db2cb4f33ee2e21c27b5c4afcd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 12eb1020f2daad820d9fbbf9fe20005e8ec00447
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969149"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945846"
 ---
-# <a name="update-shiftpreferences"></a>Обновление Шифтпреференцес
+# <a name="update-shiftpreferences"></a>Обновление shiftPreferences
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) .
+Обновление свойств и связей объекта [shiftPreferences.](../resources/shiftpreferences.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ PUT /users/{userId}/settings/shiftPreferences
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [шифтпреференцес](../resources/shiftpreferences.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [shiftPreferences.](../resources/shiftpreferences.md)
 
 ## <a name="response"></a>Отклик
 
@@ -61,7 +61,7 @@ PUT /users/{userId}/settings/shiftPreferences
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "shift-get-3"
 }-->
 ```msgraph-interactive
 PUT https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
@@ -89,19 +89,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

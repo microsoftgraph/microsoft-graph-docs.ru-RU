@@ -1,16 +1,16 @@
 ---
 title: тип ресурса approvalStep
-description: Объект approvalStep, связанный с accessPackageAssignmentRequest.
+description: Объект approvalStep, связанный с accessPackageAssignmentRequest или userConsentRequest.
 localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 263e809e5858cdc23b34b8401171bb5fce668721
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 94c37320d17a72e0734d856c24cdff49308c9463
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761256"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945713"
 ---
 # <a name="approvalstep-resource-type"></a>тип ресурса approvalStep
 
@@ -19,6 +19,8 @@ ms.locfileid: "50761256"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В [Azure AD Entitlement Management](entitlementmanagement-root.md)объект approvalStep для решений, связанных с `accessPackageAssignmentRequest` . Он используется для различия решений для различных действий рабочего процесса утверждения, на которые могут действовать одобрители.
+
+В [userConsentRequests](../resources/userconsentrequest.md)решения об утверждении, связанные с запросом.
 
 ## <a name="methods"></a>Методы
 
@@ -31,16 +33,17 @@ ms.locfileid: "50761256"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор шага, связанного с объектом утверждения. Только для чтения.|
-|displayName|String|Метка, предоставленная создателем политики для определения шага утверждения. Только для чтения|
-|status|String|Состояние шага. Возможные значения: `InProgress` или `Completed` . Только для чтения.|
 |assignedToMe|Boolean|Указывает, назначен ли шаг пользователю вызова для проверки. Только для чтения.|
+|displayName|Строка|Метка, предоставленная создателем политики для определения шага утверждения. Только для чтения.|
+|id|Строка|Идентификатор шага, связанного с объектом утверждения. Только для чтения.|
+|обоснование|Строка|Обоснование, связанное с решением о шаге утверждения.|
+|reviewResult|Строка|Результат этой записи утверждения. Возможные значения: `NotReviewed` , `Approved` , `Denied` .|
 |reviewedBy|[коллекция userIdentity](useridentity.md) | Идентификатор рецензента. Только для чтения.|
-|reviewedDateTime|DateTimeOffset|Дата и время записи решения. Только для чтения.|
-|reviewResult|String|Результат этой записи утверждения. Возможные значения: `NotReviewed` , `Approved` , `Denied` .|
-|обоснование|String|Обоснование, связанное с решением о шаге утверждения.|
+|reviewedDateTime|DateTimeOffset|Дата и время записи решения. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
+|status|String|Состояние шага. Возможные значения: `InProgress` `Initializing` , , `Completed` `Expired` . Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |утверждение|[коллекция утверждений](../resources/approval.md)|Объект утверждения решений, связанных с `accessPackageAssignmentRequest` .|

@@ -1,33 +1,33 @@
 ---
 author: daspek
-description: Присутствие ресурса Акцессактион в itemActivity указывает на то, что действие получило доступ к элементу.
+description: Наличие ресурса accessAction в itemActivity указывает на то, что действие имеет доступ к элементу.
 ms.date: 09/12/2018
-title: акцессактион
+title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a09946574973590badc818cf84c2b146e652b3c9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 1c01a989b56e78beccb09930ac67ba262fa374f5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081776"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945725"
 ---
-# <a name="accessaction-resource-type"></a>Тип ресурса Акцессактион
+# <a name="accessaction-resource-type"></a>тип ресурса accessAction
 
 Пространство имен: microsoft.graph
 
 
 
-Присутствие ресурса **акцессактион** в [**itemActivity**][activity] указывает на то, что действие получило доступ к элементу.
+Наличие ресурса **accessAction** в [**itemActivity**][activity] указывает на то, что действие имеет доступ к элементу.
 
->**Примечание:** Записи действий Access доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий доступа в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
 ## <a name="properties"></a>Свойства
 
-У этого типа ресурса нет свойств.
+Этот тип ресурса не имеет свойств.
 
 ## <a name="json-representation"></a>Представление JSON
 

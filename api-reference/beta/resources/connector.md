@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса connector
-description: Представляет соединители прокси приложения.
+title: тип ресурса соединитетеля
+description: Представляет соединители прокси-сервер приложений.
 author: japere
 localization_priority: Normal
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 53a5726456ce3d03ea537e87ec0dddb901623601
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 567b67576c5300419c9671de8bd82df84bf49685
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136781"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945699"
 ---
-# <a name="connector-resource-type"></a>Тип ресурса connector
+# <a name="connector-resource-type"></a>тип ресурса соединитетеля
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Соединители — это облегченные агенты, которые находятся локально и облегчают исходящие подключения к службе прокси приложения [Azure AD.](https://aka.ms/whyappproxy) Каждый соединители являются частью [connectorGroup.](connectorgroup.md)
+Соединители — это легкие агенты, которые находятся на месте и облегчают исходящие подключения к прокси-службе [приложения Azure AD.](https://aka.ms/whyappproxy) Каждый соединитектор является частью [соединителиГруп](connectorgroup.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление соединителей](../api/connector-list.md) | [коллекция соединители](connector.md) | Получить список объектов соединители. | 
-| [Получение соединителя](../api/connector-get.md) | [connector](connector.md) | Чтение свойств и связей объекта соединители. |
-| [Перечисление memberOf](../api/connector-list-memberof.md) | [Коллекция connectorGroup](connectorgroup.md) | Укажете коллекцию объектов connectorGroup, участником группы. |
-| [Добавление соединителя для connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Добавление соединителю в connectorGroup. |
+| [Перечисление соединителей](../api/connector-list.md) | [коллекция соединители](connector.md) | Извлечение списка объектов соединители. | 
+| [Получение соединителя](../api/connector-get.md) | [connector](connector.md) | Чтение свойств и связей соединитеного объекта. |
+| [Перечисление memberOf](../api/connector-list-memberof.md) | [коллекция connectorGroup](connectorgroup.md) | Укажете коллекцию объектов connectorGroup, членом в которая является соедините. |
+| [Добавление соединителя для connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Добавьте соединителю в соединителюGroup. |
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |externalIp|Строка| Внешний IP-адрес, обнаруженный сервером соединители. Только для чтения. |
-|id|Строка| Уникальный идентификатор соединители. Только для чтения. |
-|machineName|Строка| Имя компьютера, на который установлен и запущен соедините. |
-|status|string| Указывает состояние соединители. Возможные значения: `active`, `inactive`. Только для чтения. |
+|id|Строка| Уникальный идентификатор соединитетеля. Только для чтения. |
+|machineName|Строка| Имя машины, на которое установлен соединитатель, и запущено. |
+|status|connectorStatus| Указывает состояние соединитетеля. Возможные значения: `active`, `inactive`. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|memberOf|[Коллекция connectorGroup](connectorgroup.md)| СоединителиГруппы, в которые входит соединитестройка. Только для чтения. |
+|memberOf|[коллекция connectorGroup](connectorgroup.md)| СоединитекторGroup, членом который является соединитектор. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
 

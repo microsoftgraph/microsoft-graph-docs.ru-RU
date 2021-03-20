@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: bc5123975dc15c7c49f0dcbec507c345cf057850
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 1f224c1e9ba72e114fd9c9bcacdd74670713837d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761053"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945629"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl type
 
@@ -25,10 +25,10 @@ ms.locfileid: "50761053"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
-|type          |String       | Возможные значения: `days`, `hours`.|
+|type          |signinFrequencyType       | Возможные значения: `days`, `hours`.|
 |value         |Int32        | Количество `days` или `hours` .|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

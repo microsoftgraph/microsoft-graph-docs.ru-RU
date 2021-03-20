@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a6cfed32f6e657608b70c799d348c6818e56a8c7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 11c0598f19fcc5bf6f9862a2d87fa1f08acb8a2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440334"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945671"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>тип ресурса fido2AuthenticationMethod
 
@@ -31,13 +31,13 @@ ms.locfileid: "50440334"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор метода проверки подлинности.|
-|displayName|String|Отображает имя ключа, заданное пользователем.|
+|id|Строка|Идентификатор метода проверки подлинности.|
+|displayName|Строка|Отображает имя ключа, заданное пользователем.|
 |creationDateTime|DateTimeOffset|Время регистрации этого ключа пользователю.|
-|aaGuid|String|GUID проверки подлинности, идентификатор, который указывает тип (например, make и model) аутентиста.|
+|aaGuid|Строка|GUID проверки подлинности, идентификатор, который указывает тип (например, make и model) аутентиста.|
 |model|String|Назначенная производителем модель ключа безопасности FIDO2.|
 |attestationCertificates|Коллекция строк|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
-|attestationLevel|attestationLevel|Уровень проверки этого ключа безопасности FIDO2. Возможные значения: `attested` или `notAttested` .|
+|attestationLevel|attestationLevel|Уровень проверки этого ключа безопасности FIDO2. Возможные значения: `attested`, `notAttested`, `unknownFutureValue`.|
 
 
 ## <a name="relationships"></a>Связи
