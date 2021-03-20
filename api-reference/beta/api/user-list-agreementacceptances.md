@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b0bc9630d503847832b8fb3ab73e8064fa90c96c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 178e6afe9b9bd62e1f921f6ddc6c3c9148c57cb9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720062"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943700"
 ---
 # <a name="list-agreementacceptances"></a>Перечисление agreementAcceptances
 
@@ -24,7 +24,7 @@ ms.locfileid: "50720062"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AgreementAcceptance.Read |
+|Делегированные (рабочая или учебная учетная запись)     | AgreementAcceptance.Read, AgreementAcceptance.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -41,7 +41,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

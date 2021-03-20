@@ -6,18 +6,33 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: aab34ebe8a0cb7539775ba3e7b07e8ad7b3c357b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cddab6ee01cea34902ee892e593e0e81b3cde8af
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444341"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961302"
 ---
 # <a name="columndefinition-resource-type"></a>тип ресурса columnDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Представляет столбец на [сайте,][] [списке или][] [contentType.][]
+
+## <a name="methods"></a>Методы
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Список столбцов на сайте](../api/site-list-columns.md)|[коллекция columnDefinition](../resources/columndefinition.md)|Получите список объектов [columnDefinition](../resources/columndefinition.md) и их свойств на [сайте.](../resources/site.md)|
+|[Список столбцов в списке](../api/list-list-columns.md)|[коллекция columnDefinition](../resources/columndefinition.md)|Получите список объектов [columnDefinition](../resources/columndefinition.md) и их свойств в [списке.](../resources/list.md)|
+|[Список столбцов в типе контента](../api/contenttype-list-columns.md)|[коллекция columnDefinition](../resources/columndefinition.md)|Получите список объектов [columnDefinition](../resources/columndefinition.md) и их свойств в [типе контента.](../resources/contenttype.md)|
+|[Создание columnDefinition для сайта](../api/site-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Создание нового [объекта columnDefinition](../resources/columndefinition.md) на [сайте.](../resources/site.md)|
+|[Создание columnDefinition для списка](../api/list-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Создайте новый [объект columnDefinition](../resources/columndefinition.md) в [списке](../resources/list.md).|
+|[Создание columnDefinition для типа контента](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Создание нового [объекта columnDefinition](../resources/columndefinition.md) в [типе контента.](../resources/contenttype.md)|
+|[Получить columnDefinition](../api/columndefinition-get.md)|[columnDefinition](../resources/columndefinition.md)|Ознакомьтесь с свойствами и отношениями объекта [columnDefinition.](../resources/columndefinition.md)|
+|[Обновление столбцаDefinition](../api/columndefinition-update.md)|[columnDefinition](../resources/columndefinition.md)|Обновление свойств объекта [columnDefinition.](../resources/columndefinition.md)|
+|[Удаление columnDefinition](../api/columndefinition-delete.md)|Нет|Удаляет объект [columnDefinition.](../resources/columndefinition.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -106,7 +121,7 @@ ms.locfileid: "50444341"
 | **термин**     | [termColumn][] | В этом столбце хранится таксономия терминов.
 | **sourceContentType**   |[contentTypeInfo][]  | ContentType, от которого наследуется этот столбец. Используется только при извлечении столбцов contentTypes.
 | **thumbnail**           |[thumbnailColumn][]      | В этом столбце хранится эскизные значения.
-| **тип**         | columnTypes  | Для столбцов сайта тип столбца. Только для чтения
+| **type**         | columnTypes  | Для столбцов сайта тип столбца. Только для чтения
 | **contentApprovalStatus**| [contentApprovalStatusColumn][]     | В этом столбце сохраняется состояние утверждения контента.
 
 ## <a name="relationships"></a>Связи
@@ -129,13 +144,16 @@ ms.locfileid: "50444341"
 [calculatedColumn]: calculatedcolumn.md
 [choiceColumn]: choicecolumn.md
 [columnDefinition]: columnDefinition.md
+[contentType]: contenttype.md
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
 [geolocationColumn]: geolocationcolumn.md
+[list]: list.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md
+[site]: site.md
 [textColumn]: textcolumn.md
 [fieldValueSet]: fieldvalueset.md
 [fields]: fieldvalueset.md

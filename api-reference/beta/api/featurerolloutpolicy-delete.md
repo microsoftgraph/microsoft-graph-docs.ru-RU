@@ -2,19 +2,21 @@
 title: Удаление featureRolloutPolicy
 description: Удаление объекта featureRolloutPolicy.
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62395dec00e5a7713ffb959f1a871eedd1da50c5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ac2d8f8acba29db911030718fbb37e4ddfe53093
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471189"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955933"
 ---
 # <a name="delete-featurerolloutpolicy"></a>Удаление featureRolloutPolicy
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,14 +37,14 @@ ms.locfileid: "50471189"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directory/featureRolloutPolicies/{id}
+DELETE /policies/featureRolloutPolicies/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {code} |
+| Авторизация | Bearer {token}. Обязательный |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,11 +61,11 @@ DELETE /directory/featureRolloutPolicies/{id}
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "delete_featurerolloutpolicy"
+  "name": "delete_featurerolloutpolicy_policies"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
+DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
 
 ### <a name="response"></a>Отклик

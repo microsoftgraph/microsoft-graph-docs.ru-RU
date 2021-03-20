@@ -1,16 +1,16 @@
 ---
 title: Перечисление конечных точек
-description: Получение списка объектов конечной точки.
+description: Извлечение списка конечных объектов.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ca0227145cd6a1533943ab54719ee18ef6584045
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eeb51a9ae92d1e995eac5fdc1235afc5532d3974
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965096"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961784"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -18,7 +18,7 @@ ms.locfileid: "48965096"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [конечной точки](../resources/endpoint.md) .
+Извлечение списка [конечных объектов.](../resources/endpoint.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48965096"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,14 +41,14 @@ GET /groups/{id}/endpoints
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
-| Content-Type   | Приложение/JSON |
+| Content-Type   | Application/Json |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Endpoint](../resources/endpoint.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [endpoint](../resources/endpoint.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 
@@ -56,32 +56,32 @@ GET /groups/{id}/endpoints
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_endpoints"
+  "name": "get_endpoints_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,19 +2,21 @@
 title: Get featureRolloutPolicy
 description: Извлечение свойств и связей объекта featurerolloutpolicy.
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d7f73b5c584f5862d272807876d6cd0d76ecc0ea
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 956f5cada595471a1e9425b1399c69b4f4bc728c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471224"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955926"
 ---
 # <a name="get-featurerolloutpolicy"></a>Get featureRolloutPolicy
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +37,7 @@ ms.locfileid: "50471224"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /directory/featureRolloutPolicies/{id}
+GET /policies/featureRolloutPolicies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,7 +48,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {code} |
+| Авторизация | Bearer {token}. Обязательный |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -58,39 +60,21 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-a-feature-rollout-policy"></a>Пример 1. Получить политику выкатки функций
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_featurerolloutpolicy"
+  "name": "get_featurerolloutpolicy_policies"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
+GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -116,44 +100,26 @@ Content-type: application/json
 }
 ```
 
-### <a name="request"></a>Запрос
+### <a name="example-2-get-a-feature-rollout-policy-and-expand-appliesto"></a>Пример 2. Получить политику выкатки функций и расширить appliesTo
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_featurerolloutpolicy"
+  "name": "get_featurerolloutpolicy_expandAppliesTo_policies"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
+GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
-> [!NOTE]
-> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

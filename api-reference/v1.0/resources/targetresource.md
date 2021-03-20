@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса targetResource
-description: Представляет целевые типы ресурсов, связанные с действиями аудита.
+title: тип ресурса targetResource
+description: Представляет целевые типы ресурсов, связанные с деятельностью аудита.
 localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 66470d9e29bad5c662bfa6aa3227091b2ec739bc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 148591f603a45d0e8752e4af87beaabd39152fae
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130152"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961890"
 ---
-# <a name="targetresource-resource-type"></a>Тип ресурса targetResource
+# <a name="targetresource-resource-type"></a>тип ресурса targetResource
 
 Пространство имен: microsoft.graph
 
-Представляет целевые типы ресурсов, связанные с действиями аудита. 
+Представляет целевые типы ресурсов, связанные с деятельностью аудита. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String|Указывает уникальный ИД ресурса.|
+|id|String|Указывает уникальный ID ресурса.|
 |displayName|String|Указывает видимое имя, определенное для ресурса. Обычно указывается, когда создается ресурс.|
-|type|String|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , и `ServicePrincipal` `User` .|
-|userPrincipalName|String|Если **за** установлен тип, это включает имя пользователя, инициа которого было инициировано действие; для `User` других `null` типов.|
-|groupType|String|Если **за** установлен `Group` тип, это указывает на тип группы.|
-|modifiedProperties|[Коллекция modifiedProperty](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого из измененных атрибутов. Значения свойств зависят от типа **операции.**|
+|type|String|Описывает тип ресурса.  Примеры значений включают `Application` `Group` , и `ServicePrincipal` `User` .|
+|userPrincipalName|String|При **наборе** типа включается имя пользователя, которое `User` инициировало действие; для других `null` типов.|
+|groupType|groupType|При **наборе** типа указывается тип `Group` группы. Возможные значения: `unifiedGroups` `azureAD` , и `unknownFutureValue`|
+|modifiedProperties|[измененная коллекцияProperty](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого измененного атрибута. Значения свойств зависят от **типа операции.**|
 
 ## <a name="json-representation"></a>Представление JSON
 

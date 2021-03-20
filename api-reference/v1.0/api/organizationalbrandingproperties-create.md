@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kexia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6f5e16a87f78be5e0664af624d058fff64f70bba
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: de4392b1fb66f174c1f7ca4643100b2ac4fbd9f6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722670"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50949460"
 ---
 # <a name="create-organizationalbrandingproperties"></a>Создание organizationalBrandingProperties
 
@@ -46,7 +46,7 @@ PATCH /organization/{id}/branding
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательное свойство.  |
+| Content-Language  | Locale. Необязательный параметр.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,12 +54,12 @@ PATCH /organization/{id}/branding
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|backgroundColor|String|Цвет, который отображается на месте фонового изображения в подключениях с низкой пропускной способностью. Здесь рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal (например, белый #FFFFFF).|
+|backgroundColor|Строка|Цвет, который отображается на месте фонового изображения в подключениях с низкой пропускной способностью. Здесь рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal (например, белый #FFFFFF).|
 |backgroundImage|Stream|Изображение, которое отображается в качестве фона страницы регистрации. Изображение — это .png или .jpg, размером не более 1920x1080 и меньше 300kb. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страниц более высокой.|
 |bannerLogo|Stream|Баннерная версия логотипа вашей компании, которая отображается на странице входного знака. Баннер — это .png или .jpg размером не более 36x245px. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
-|signInPageText|String|Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов.|
+|signInPageText|Строка|Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов.|
 |squareLogo|Stream|Квадратная версия логотипа вашей компании. Это отображается в windows 10 вне окна (OOBE) опытом и когда Windows Автопилот включен для развертывания. Логотип — это .png или .jpg размером не более 240x240px и размером не более 10 кб. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
-|usernameHintText|String|Подсказка в текстовом ящике имени пользователя на экране входной записи. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
+|usernameHintText|Строка|Подсказка в текстовом ящике имени пользователя на экране входной записи. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
 
 ## <a name="response"></a>Отклик
 
@@ -73,9 +73,11 @@ PATCH /organization/{id}/branding
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_1"
 }-->
 
 ```http
@@ -89,10 +91,28 @@ Content-Language: en-US
     "usernameHintText":"hint"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

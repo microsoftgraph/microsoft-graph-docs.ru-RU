@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1010f2a5e1a26f834eeeabc9bfe7946515a529bd
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 8f158edb52b67d70c8878ae33311c648be2dca9e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292086"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955506"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
@@ -18,25 +18,25 @@ ms.locfileid: "50292086"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавляет учетные данные ключа в [servicePrincipal.](../resources/serviceprincipal.md) Этот метод вместе с [removeKey](serviceprincipal-removekey.md) может использоваться servicePrincipal для автоматизации перетаскивания ключей окончания срока действия.
+Добавляет ключевые учетные данные [в службуPrincipal.](../resources/serviceprincipal.md) Этот метод наряду с [removeKey](serviceprincipal-removekey.md) может использоваться службойPrincipal для автоматизации проката истекающих ключей.
 
 > [!NOTE]
-> [Операции создания servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления ключевых учетных данных для любого servicePrincipal с контекстом пользователя или без него.
+> [Создание службыPrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных для любой службыPrincipal с контекстом пользователя или без него.
 
-В рамках проверки запроса для этого метода перед выполнением действия проверяется подтверждение на владение существующим ключом. 
+В рамках проверки запроса для этого метода проверяется доказательство на наличие существующего ключа перед выполнением действия. 
 
-ServicePrincipals, у которых нет действительных сертификатов (т. е. сертификаты еще не добавлены или срок действия всех сертификатов истек), не смогут использовать это действие службы. [Обновление servicePrincipal](../api/serviceprincipal-update.md) можно использовать для выполнения обновления.
+ServicePrincipals, у которых нет существующих действительных сертификатов (например, еще не добавлены сертификаты или истек срок действия всех сертификатов), не смогут использовать это действие службы. Для выполнения обновления можно использовать службу [UpdatePrincipal.](../api/serviceprincipal-update.md)
 
 ## <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Нет.  |
+|Делегированные (рабочая или учебная учетная запись) | Отсутствуют.  |
 |Делегированные (личная учетная запись Майкрософт) | Нет.    |
-|Приложение | Нет. |
+|Приложение | Отсутствуют. |
 
 > [!NOTE]
-> ServicePrincipal не нуждается в специальном разрешении для переката собственных ключей.
+> СлужбаPrincipal не нуждается в специальном разрешении для отката собственных ключей.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,21 +55,21 @@ POST /servicePrincipals/{id}/addKey
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажив следующие необходимые свойства.
+В теле запроса укажи следующие необходимые свойства.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа servicePrincipal, которые необходимо добавить. __Тип,__ __использование и__ __ключ__ являются свойствами, требуемой для этого использования. Поддерживаемые типы ключей:<br><ul><li>`AsymmetricX509Cert`: использование должно быть `Verify` .</li><li>`X509CertAndPassword`: использование должно быть `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей `X509CertAndPassword` типа. В противном `null` случае.|
-| proof | String | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer должен быть __ид__  servicePrincipal, который делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа servicePrincipal. __Тип,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword` . Установите его в `null` противном случае.|
+| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>Пример 1. Добавление новых учетных данных ключа в servicePrincipal
+### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>Пример 1. Добавление новых учетных данных ключа в службуPrincipal
 
 #### <a name="request"></a>Запрос
 
@@ -79,7 +79,7 @@ POST /servicePrincipals/{id}/addKey
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_1"
 }-->
 
 ```http
@@ -97,7 +97,7 @@ Content-type: application/json
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -105,7 +105,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -128,9 +128,11 @@ Content-Type: application/json
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_2"
 }-->
 
 ```http
@@ -149,6 +151,12 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

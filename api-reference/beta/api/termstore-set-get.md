@@ -1,21 +1,21 @@
 ---
-title: Get set
-description: Чтение свойств и связей объекта set.
+title: Набор
+description: Ознакомьтесь с свойствами и отношениями установленного объекта.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 17659b9ce22787477afb2d65c4f0102714f50664
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: fcdd099ac3dd0664cd4af914fc3f9d0798d90261
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873789"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955429"
 ---
-# <a name="get-set"></a>Get set
+# <a name="get-set"></a>Набор
 Пространство имен: microsoft.graph.termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [set.](../resources/termstore-set.md)
+Ознакомьтесь с свойствами и отношениями [установленного](../resources/termstore-set.md) объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /termStore/sets/{setId}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [set](../resources/termstore-set.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` заданной объект в тексте ответа. [](../resources/termstore-set.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -60,26 +60,26 @@ GET /termStore/sets/{setId}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_set"
+  "name": "get_set_2"
 }-->
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-set-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-set-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-set-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-set-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-set-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-set-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-set-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-set-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
