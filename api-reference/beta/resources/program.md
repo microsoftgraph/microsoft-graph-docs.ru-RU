@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f10ee2a54a310018d87500e5dd4f939d1fe38a0e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb04c1e05c669758e282aebdcccfa4e55507e659
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443988"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960373"
 ---
 # <a name="program-resource-type"></a>Тип ресурса программы
 
@@ -28,7 +28,7 @@ ms.locfileid: "50443988"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание программы](../api/program-create.md) |   [программа](program.md)   |   Создание новой программы.|
-|[Удаление программы](../api/program-delete.md) |   Нет.   |   Удаление программы.|
+|[Удаление программы](../api/program-delete.md) |   Отсутствуют.   |   Удаление программы.|
 |[Списки программ](../api/program-list.md) |  [коллекция](program.md) программ|   Получите коллекцию всех программ.|
 |[Список программКонтроли программы](../api/program-listcontrols.md) |      [коллекция programControl](programcontrol.md)| Получите коллекцию элементов управления программы.|
 |[Программа обновления](../api/program-update.md) |   [программа](program.md)|  Обновление программы.|
@@ -36,9 +36,9 @@ ms.locfileid: "50443988"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  Идентификатор программы, заданная функцией.                    |
-| `displayName`               |`String`                              |  Имя программы.  Требуется при создании.                  |
-| `description`               |`String`                              |  Описание программы.           |
+| id                        |Строка                              |  Идентификатор программы, заданная функцией.                    |
+| displayName               |Строка                              |  Имя программы.  Требуется при создании.                  |
+| description               |Строка                              |  Описание программы.           |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

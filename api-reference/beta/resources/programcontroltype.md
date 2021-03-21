@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 593d8a8fa36c03515dbad9a1ee1dd0b267f98577
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 58c9ee3ade6e3969de9653f54c5181a66f087ea5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443960"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960364"
 ---
 # <a name="programcontroltype-resource-type"></a>тип ресурса programControlType
 
@@ -32,8 +32,8 @@ ms.locfileid: "50443960"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | Идентификатор типа управления программой, заданная функцией                                      |
-| `displayName`            |`String`                | Имя типа управления программой                                                             |
+| id                     |Строка                | Идентификатор типа управления программой, заданная функцией                                      |
+| displayName            |Строка                | Имя типа управления программой                                                             |
 
 
 ## <a name="relationships"></a>Связи

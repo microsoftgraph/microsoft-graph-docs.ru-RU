@@ -5,28 +5,351 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0ca783518b3244230c776d33609bb6890d8a448c
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 0a46ecda87e254a8fb7341412b7c75aca059d2a1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516117"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959286"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
 
+### <a name="externalemailotpstate-values"></a>значения externalEmailOtpState
+
+|Member|
+|:---|
+|default|
+|включено|
+|отключено|
+|unknownFutureValue|
+
+### <a name="authenticatorappcontexttype-values"></a>значения authenticatorAppContextType
+
+|Member|
+|:---|
+|расположение|
+|приложение|
+
+### <a name="fido2restrictionenforcementtype-values"></a>значения fido2RestrictionEnforcementType
+
+|Member|
+|:---|
+|разрешить|
+|block|
+
+### <a name="attestationlevel-values"></a>значения attestationLevel
+
+|Member|
+|:---|
+|засвидетель-|
+|notAttested|
+
+### <a name="authenticationmethodtargettype-values"></a>Значения authenticationMethodTargetType
+
+|Member|
+|:---|
+|пользователь|
+|group|
+
+### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
+
+|Member|
+|:---|
+|включено|
+|отключено|
+
+### <a name="microsoftauthenticatorauthenticationmode-values"></a>значения MicrosoftAuthenticatorAuthenticationMode
+
+|Member|
+|:---|
+|любой|
+|push|
+|deviceBasedPush|
+
+### <a name="keystrength-values"></a>значения keyStrength
+
+|Member|
+|:---|
+|нормальный|
+|слабый|
+|unknown|
+
+### <a name="authenticationmethodkeystrength-values"></a>значения authenticationMethodKeyStrength
+
+|Member|
+|:---|
+|нормальный|
+|слабый|
+|unknown|
+
+### <a name="authenticatorappfeaturesettings-values"></a>значения authenticatorAppFeatureSettings
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
+
+### <a name="allowinvitesfrom-values"></a>allowInvitesFrom values
+
+|Member|
+|:---|
+|Нет|
+|adminsAndGuestInviters|
+|adminsGuestInvitersAndAllMembers|
+|все|
+|unknownFutureValue|
+
+### <a name="datapolicyoperationstatus-values"></a>значения dataPolicyOperationStatus
+
+|Member|
+|:---|
+|notStarted|
+|запуск|
+|complete|
+|не удалось|
+|unknownFutureValue|
+
+### <a name="conditionalaccessdeviceplatform-values"></a>значения conditionalAccessDevicePlatform
+
+| Member       |
+|:--------------|
+|Android|
+|iOS|
+|Windows|
+|WindowsPhone|
+|macOS|
+|все|
+|unknownFutureValue|
+
+### <a name="signinfrequencytype-values"></a>значения signinFrequencyType
+
+| Member       |
+|:--------------|
+|days|
+|часы|
+
+### <a name="persistentbrowsersessionmode-values"></a>persistentBrowserSessionMode values
+
+| Member       |
+|:--------------|
+|всегда|
+|никогда|
+
+### <a name="cloudappsecuritysessioncontroltype-values"></a>значения cloudAppSecuritySessionControlType
+
+| Member       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+|unknownFutureValue|
+
+### <a name="conditionalaccessgrantcontrol-values"></a>значения conditionalAccessGrantControl
+
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+|passwordChange|
+|unknownFutureValue|
+
+### <a name="conditionalaccessclientapp-values"></a>значения conditionalAccessClientApp
+
+|Member|
+|:---|
+|все|
+|Обозреватель|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|другие|
+|unknownFutureValue|
+
+### <a name="conditionalaccesspolicystate-values"></a>значения conditionalAccessPolicyState
+
+|Member|
+|:---|
+|включено|
+|отключено|
+|enabledForReportingButNotEnforced|
+
+#### <a name="deviceprofiletype-values"></a>значения deviceProfileType
+|Member|
+|:---|
+|RegisteredDevice|
+|SecureVM|
+|Принтер|
+|Shared|
+|IoT|
+
+### <a name="appliedconditionalaccesspolicyresult-values"></a>appliedConditionalAccessPolicyResult values 
+
+|Member|
+|:---|
+|success|
+|сбой|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+
+### <a name="grouptype-values"></a>значения groupType 
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### <a name="conditionalaccessstatus-values"></a>значения conditionalAccessStatus
+
+|Member|
+|:---|
+|success|
+|сбой|
+|notApplied|
+|unknownFutureValue|
+
+### <a name="operationresult-values"></a>значения operationResult
+
+|Member|
+|:---|
+|success|
+|сбой|
+|timeout|
+|unknownFutureValue|
+
+### <a name="tone-values"></a>значения тона
+
+|Member|
+|:---|
+|tone0|
+|tone1|
+|tone2|
+|tone3|
+|tone4|
+|tone5|
+|tone6|
+|tone7|
+|tone8|
+|tone9|
+|звезда|
+|pound|
+|a|
+|b|
+|c|
+|d|
+|flash|
+
+### <a name="mediastate-values"></a>значения mediaState
+
+|Member|
+|:---|
+|active|
+|неактивно|
+|unknownFutureValue|
+
+### <a name="basicstatus-values"></a>значения basicStatus
+
+|Member|
+|:---|
+|active|
+|неактивно|
+
+### <a name="callstate-values"></a>значения callState
+
+|Member|
+|:---|
+|входящий|
+|создание|
+|звон|
+|установлено|
+|удержание|
+|перенос|
+|transferAccepted|
+|перенаправление|
+|прекращение|
+|прекращено|
+
+### <a name="calltype-values"></a>значения callType
+
+|Member|
+|:---|
+|unknown|
+|groupCall|
+|peerToPeer|
+|unknownFutureValue|
+
+### <a name="onlinemeetingrole-values"></a>значения onlineMeetingRole
+
+|Member|
+|:---|
+|attendee|
+|presenter|
+|unknownFutureValue|
+
+### <a name="modality-values"></a>значения модальности 
+
+|Member|
+|:---|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+|screenSharing|
+|unknownFutureValue|
+
+### <a name="calldirection-values"></a>значения callDirection
+
+|Member|
+|:---|
+|входящий|
+|исходяние|
+
+### <a name="signinaudience-values"></a>signInAudience values
+
+|Member|
+|:---|
+|AzureADMyOrg|
+|AzureADMultipleOrgs|
+|AzureADandPersonalMicrosoftAccount|
+|PersonalMicrosoftAccount|
+
+### <a name="groupmembershipclaims-values"></a>значения groupMembershipClaims
+
+|Member|
+|:---|
+|Нет|
+|SecurityGroup|
+|Все|
+
+### <a name="recipientscopetype-values"></a>значения recipientScopeType
+
+|Member|
+|:---|
+|Нет|
+|внутренний|
+|внешние|
+|externalPartner|
+|externalNonPartner|
+
 ### <a name="activitytype-values"></a>значения activityType
 
-|Элемент|
+|Member|
 |:---|
 |signin|
-|user|
+|пользователь|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>значения riskDetectionTimingType
 
-|Элемент|
+|Member|
 |:---|
 |notDefined|
 |realtime|
@@ -36,7 +359,7 @@ ms.locfileid: "50516117"
 
 ### <a name="tokenissuertype-values"></a>значения tokenIssuerType
 
-|Элемент|
+|Member|
 |:---|
 |AzureAD|
 |ADFederationServices|
@@ -44,7 +367,7 @@ ms.locfileid: "50516117"
 
 ### <a name="attachmenttype-values"></a>Значения attachmentType
 
-| Элемент
+| Member
 |:--------------
 | file
 | item
@@ -55,9 +378,9 @@ ms.locfileid: "50516117"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |родитель|0|Родитель пользователя.|
-|относительный|1 | Родственник пользователя.|
-|помощник|2 | Помощник пользователя.|
-|врач|3 | Врач пользователя.|
+|относительный|1| Родственник пользователя.|
+|помощник|2| Помощник пользователя.|
+|врач|3| Врач пользователя.|
 |guardian|4 | Хранитель пользователя.|
 |child|5 | Ребенок пользователя.|
 |другие|6 | Неустановленное отношение к пользователю.|
@@ -65,7 +388,7 @@ ms.locfileid: "50516117"
 
 ### <a name="scheduleentitytheme-values"></a>значения scheduleEntityTheme
 
-| Элемент
+| Member
 |:-------------------------
 | white
 | blue
@@ -84,7 +407,7 @@ ms.locfileid: "50516117"
 
 ### <a name="timeoffreasonicontype-values"></a>значения timeOffReasonIconType
 
-|Элемент|
+|Member|
 |:---|
 |Нет|
 |автомобиль|
@@ -111,7 +434,7 @@ ms.locfileid: "50516117"
 
 ### <a name="timezonestandard-values"></a>значения timeZoneStandard
 
-| Элемент
+| Member
 |:-----------------
 | Windows
 | iana
@@ -122,16 +445,16 @@ ms.locfileid: "50516117"
 | Элемент            |Значение
 |:------------------|:-------
 | бесплатно              | 0
-| предварительная         | 1 
-| занят              | 2 
-| oof               | 3 
+| предварительная         | 1
+| занят              | 2
+| oof               | 3
 | workingElsewhere  | 4 
 | unknown           | –1
 
 
 ### <a name="attendeetype-values"></a>значения attendeeType
 
-| Элемент
+| Member
 |:-------------------------
 | Обязательный
 | необязательный
@@ -140,7 +463,7 @@ ms.locfileid: "50516117"
 
 ### <a name="externalaudiencescope-values"></a>значения externalAudienceScope
 
-| Элемент
+| Member
 |:-------------------------
 | Нет
 | contactsOnly
@@ -149,7 +472,7 @@ ms.locfileid: "50516117"
 
 ### <a name="automaticrepliesstatus-values"></a>значения automaticRepliesStatus
 
-| Элемент
+| Member
 |:-------------------------
 | отключено
 | alwaysEnabled
@@ -162,9 +485,9 @@ ms.locfileid: "50516117"
 |:-----------|:----------
 | Авто       | –1
 | lightBlue  | 0
-| lightGreen | 1 
-| lightOrange| 2 
-| lightGray  | 3 
+| lightGreen | 1
+| lightOrange| 2
+| lightGray  | 3
 | lightYellow| 4 
 | lightTeal  | 5 
 | lightPink  | 6 
@@ -175,7 +498,7 @@ ms.locfileid: "50516117"
 
 ### <a name="educationexternalsource-values"></a>значения educationExternalSource
 
-| Элемент
+| Member
 |:-------------------------
 | sis
 | Вручную
@@ -184,7 +507,7 @@ ms.locfileid: "50516117"
 
 ### <a name="educationgender-values"></a>значения educationGender
 
-| Элемент
+| Member
 |:-------------------------
 | женский
 | мужской
@@ -194,7 +517,7 @@ ms.locfileid: "50516117"
 
 ### <a name="eventtype-values"></a>значения eventType
 
-| Элемент
+| Member
 |:-------------------------
 | singleInstance
 | возникновение
@@ -204,7 +527,7 @@ ms.locfileid: "50516117"
 
 ### <a name="sensitivity-values"></a>значения чувствительности
 
-| Элемент
+| Member
 |:-------------------------
 | нормальный
 | personal
@@ -214,7 +537,7 @@ ms.locfileid: "50516117"
 
 ### <a name="importance-values"></a>значения важности
 
-| Элемент
+| Member
 |:-------------------------
 | низкий
 | нормальный
@@ -222,14 +545,14 @@ ms.locfileid: "50516117"
 
 
 ### <a name="educationuserrole-values"></a>значения educationUserRole
-| Элемент
+| Member
 |:---------------------
 | student
 | teacher
 
 ### <a name="meetingmessagetype-values"></a>значения meetingMessageType
 
-| Элемент
+| Member
 |:-----------------
 | Нет
 | meetingRequest
@@ -241,7 +564,7 @@ ms.locfileid: "50516117"
 
 ### <a name="followupflagstatus-values"></a>followupFlagStatus values
 
-| Элемент
+| Member
 |:-------------------------
 | notFlagged
 | complete
@@ -250,7 +573,7 @@ ms.locfileid: "50516117"
 
 ### <a name="inferenceclassificationtype-values"></a>значения inferenceClassificationType
 
-| Элемент
+| Member
 |:-----------------
 | сфокусировано
 | другие
@@ -258,7 +581,7 @@ ms.locfileid: "50516117"
 
 ### <a name="iosnotificationalerttype-values"></a>значения iosNotificationAlertType
 
-| Элемент
+| Member
 |:-------------------------
 | deviceDefault
 | баннер
@@ -267,7 +590,7 @@ ms.locfileid: "50516117"
 
 ### <a name="deviceenrollmentfailurereason-values"></a>значения deviceEnrollmentFailureReason
 
-| Элемент
+| Member
 |:-------------
 | unknown
 | проверка подлинности
@@ -283,15 +606,15 @@ ms.locfileid: "50516117"
 
 
 ### <a name="bodytype-values"></a>значения bodyType
-| Элемент
+| Member
 |:---------
 | текст
-| HTML
+| html
 
 
 ### <a name="locationtype-values"></a>Значения locationType
 
-| Элемент
+| Member
 |:-------------------------
 | default
 | conferenceRoom
@@ -306,7 +629,7 @@ ms.locfileid: "50516117"
 
 ### <a name="locationuniqueidtype-values"></a>значения locationUniqueIdType
 
-| Элемент
+| Member
 |:-------------------------
 | unknown
 | locationStore
@@ -317,7 +640,7 @@ ms.locfileid: "50516117"
 
 ### <a name="messageactionflag-values"></a>значения messageActionFlag
 
-| Элемент
+| Member
 |:-------------------------
 | любой
 | call
@@ -337,24 +660,24 @@ ms.locfileid: "50516117"
 | Элемент      | Значение
 |:------------|:------------
 | Владелец       | 0
-| Участник | 1 
-| Reader      | 2 
+| Участник | 1
+| Reader      | 2
 | Нет        | –1
 
 
 ### <a name="operationstatus-values"></a>значения operationStatus
 
-| Элемент
+| Member
 |:-----------------
-| NotStarted
-| Выполняется
-| Completed
-| Не выполнено
+|NotStarted
+|Работает
+|Completed
+|Не выполнено
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения onenotePatchActionType
 
-| Элемент
+| Member
 |:-------------------------
 | Заменить
 | Приложение
@@ -364,7 +687,7 @@ ms.locfileid: "50516117"
 
 ### <a name="onenotepatchinsertposition-values"></a>значения onenotePatchInsertPosition
 
-| Элемент
+| Member
 |:-------------------------
 | После
 | До
@@ -372,7 +695,7 @@ ms.locfileid: "50516117"
 
 ### <a name="phonetype-values"></a>значения phoneType
 
-| Элемент
+| Member
 |:-------------------------
 | главная
 | бизнес
@@ -388,18 +711,18 @@ ms.locfileid: "50516117"
 
 ### <a name="plannerpreviewtype-values"></a>Значения plannerPreviewType
 
-| Элемент
+| Member
 |:-------------------------
 | Автоматически
 | noPreview
 | checklist
-| description
+| описание
 | справочник
 
 
 ### <a name="status-values"></a>значения состояния
 
-| Элемент
+| Member
 |:-----------------
 | active
 | обновлено
@@ -410,7 +733,7 @@ ms.locfileid: "50516117"
 
 ### <a name="weekindex-values"></a>weekIndex values
 
-| Элемент
+| Member
 |:-------------------------
 | во-первых
 | во-вторых
@@ -421,7 +744,7 @@ ms.locfileid: "50516117"
 
 ### <a name="dayofweek-values"></a>значения dayOfWeek
 
-| Элемент
+| Member
 |:-------------------------
 | воскресенье
 | понедельник
@@ -433,7 +756,7 @@ ms.locfileid: "50516117"
 
 ### <a name="recurrencepatterntype-values"></a>значения recurrencePatternType
 
-| Элемент
+| Member
 |:-------------------------
 | ежедневно
 | еженедельно
@@ -445,7 +768,7 @@ ms.locfileid: "50516117"
 
 ### <a name="recurrencerangetype-values"></a>значения recurrenceRangeType
 
-| Элемент
+| Member
 |:-------------------------
 | endDate
 | noEnd
@@ -453,7 +776,7 @@ ms.locfileid: "50516117"
 
 
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
-| Элемент
+| Member
 |:---------------------
 | Неизвестно
 | OneDrive
@@ -463,7 +786,7 @@ ms.locfileid: "50516117"
 
 ### <a name="responsetype-values"></a>Значения responseType
 
-| Элемент
+| Member
 |:-------------------------
 | Нет
 | organizer
@@ -475,7 +798,7 @@ ms.locfileid: "50516117"
 
 ### <a name="activitydomain-values"></a>значения activityDomain
 
-| Элемент
+| Member
 |:-------------------------
 | unknown
 | work
@@ -485,7 +808,7 @@ ms.locfileid: "50516117"
 
 ### <a name="websitetype-values"></a>Значения websiteType
 
-| Элемент
+| Member
 |:-------------------------
 | другие
 | главная
@@ -500,9 +823,9 @@ ms.locfileid: "50516117"
 |:---------|:--------
 | Нет     | –1
 | preset0  | 0
-| preset1  | 1 
-| preset2  | 2 
-| preset3  | 3 
+| preset1  | 1
+| preset2  | 2
+| preset3  | 3
 | preset4  | 4 
 | preset5  | 5 
 | preset6  | 6 
@@ -532,9 +855,9 @@ ms.locfileid: "50516117"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестно.|
-|truePositive|1 |Оповещение — это верно-положительно.|
-|falsePositive|2 | Оповещение является ложным срабатывательным.|
-|benignPositive|3 | Оповещение является доброкачественным.|
+|truePositive|1|Оповещение — это верно-положительно.|
+|falsePositive|2| Оповещение является ложным срабатывательным.|
+|benignPositive|3| Оповещение является доброкачественным.|
 
 ### <a name="filehashtype-values"></a>значения fileHashType
 
@@ -543,9 +866,9 @@ Enum для типов hash файла.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестный тип.|
-|sha1|1 |Тип hash SHA1.|
-|sha256|2 | Тип hash SHA256.|
-|md5|3 | Тип hash MD5.|
+|sha1|1|Тип hash SHA1.|
+|sha256|2| Тип hash SHA256.|
+|md5|3| Тип hash MD5.|
 |authenticodeHash256|4 | Тип hash AuthenticodeHash256.|
 |lsHash|5 | Тип hash LsHash.|
 |ctph|6 | Тип хаши CTPH.|
@@ -559,8 +882,8 @@ Enum для направления сетевого подключения (вх
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестное подключение.|
-|входящий|1 |Входящий подключение.|
-|исходящие|2 | Исходящие подключения.|
+|входящий|1|Входящий подключение.|
+|исходящие|2| Исходящие подключения.|
 
 ### <a name="connectionstatus-values"></a>значения connectionStatus
 
@@ -569,9 +892,9 @@ Enum для состояния подключений.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние неизвестного подключения.|
-|попытка|1 |Попытка подключения.|
-|успешно|2 | Подключение удалось.|
-|заблокировано|3 | Подключение заблокировано.|
+|попытка|1|Попытка подключения.|
+|успешно|2| Подключение удалось.|
+|заблокировано|3| Подключение заблокировано.|
 |не удалось|4 | Сбой подключения.|
 
 ### <a name="processintegritylevel-values"></a>значения processIntegrityLevel
@@ -594,9 +917,9 @@ Enum для ульев реестра, как [определено /windows/des
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестный улей.|
-|currentConfig|1 |HKEY_CURRENT_CONFIG улей.|
-|currentUser|2 | HKEY_CURRENT_USER улей.|
-|localMachineSam|3 | HKEY_LOCAL_MACHINE\SAM улей.|
+|currentConfig|1|HKEY_CURRENT_CONFIG улей.|
+|currentUser|2| HKEY_CURRENT_USER улей.|
+|localMachineSam|3| HKEY_LOCAL_MACHINE\SAM улей.|
 |localMachineSamSoftware|4 | HKEY_LOCAL_MACHINE\Software улей.|
 |localMachineSystem|5 | HKEY_LOCAL_MACHINE\System улей.|
 |usersDefault|6 | HKEY_USERS \\ . Улей DEFAULT.|
@@ -608,9 +931,9 @@ Enum для ульев реестра, как [определено /windows/des
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестный тип значения реестра.|
-|create|1 |Создание реестра.|
-|изменение|2 |Изменение реестра.|
-|delete|3 |Удаление реестра.|
+|create|1|Создание реестра.|
+|изменение|2|Изменение реестра.|
+|delete|3|Удаление реестра.|
 
 ### <a name="registryvaluetype-values"></a>значения registryValueType
 
@@ -619,9 +942,9 @@ Enum для типов значений реестра, определяемог
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестный тип значения реестра.|
-|двоичный|1 |REG_BINARY типа значения реестра.|
-|dword|2 | REG_DWORD типа значения реестра.|
-|dwordLittleEndian|3 | REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
+|двоичный|1|REG_BINARY типа значения реестра.|
+|dword|2| REG_DWORD типа значения реестра.|
+|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
 |dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN тип значения реестра.|
 |expandSz|5 | REG_EXPAND_SZ тип значения реестра.|
 |ссылка|6 | REG_LINK тип значения реестра.|
@@ -638,9 +961,9 @@ Enum для серьезности оповещений.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Серьезность неизвестна.|
-|информационная|1 |Строгость только для сведений.|
-|низкий|2 | Серьезность низкая.|
-|medium|3 | Серьезность является средней.|
+|информационная|1|Строгость только для сведений.|
+|низкий|2| Серьезность низкая.|
+|medium|3| Серьезность является средней.|
 |высокая|4 | Серьезность высока.|
 
 ### <a name="alertstatus-values"></a>значения alertStatus
@@ -660,8 +983,8 @@ Enum для серьезности оповещений.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестная роль.|
-|sender|1 |Отправитель электронной почты.|
-|получатель;|2 |Получатель электронной почты.|
+|sender|1|Отправитель электронной почты.|
+|получатель;|2|Получатель электронной почты.|
 
 ### <a name="logontype-values"></a>значения logonType
 
@@ -671,39 +994,42 @@ Enum для серьезности оповещений.
 |:---|:---|:---|
 |unknown|–1|Неизвестно.|
 |интерактивный|0|Logon является интерактивным.|
-|remoteInteractive|1 | Logon — это удаленный интерактивный.|
-|сеть|2 | Logon — это сеть.|
-|batch|3 | Logon является пакетным.|
+|remoteInteractive|1| Logon — это удаленный интерактивный.|
+|сеть|2| Logon — это сеть.|
+|batch|3| Logon является пакетным.|
 |служба|4 | Logon — это служба.|
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
 Возможные значения для типов учетных записей пользователей (членство в группе) в определении Windows.
 
-|Элемент|Member|Описание|
+|Member|Member|Описание|
 |:---|:---|:---|
 |unknown|–1|Неизвестно.|
 |стандартный|0|Член группы стандартных пользователей.|
-|power|1 | Член группы Power Users.|
-|администратор|2 | Член группы Администраторы.|
+|power|1| Член группы Power Users.|
+|администратор|2| Член группы Администраторы.|
 
 ### <a name="riskdetail-values"></a>значения riskDetail
 
-| Элемент
-|:-------------------------
-| adminGeneratedTemporaryPassword
-| userPerformedSecuredPasswordChange
-| userPerformedSecuredPasswordReset
-| adminConfirmedSigninSafe
-| aiConfirmedSigninSafe
-| userPassedMFADrivenByRiskBasedPolicy
-| adminDismissedAllRiskForUser
-| AdminConfirmedSigninCompromised
-| unknownFutureValue
+|Member|
+|:---|
+|Нет|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|AdminConfirmedSigninCompromised|
+|AdminConfirmedUserCompromised|
+|hidden|
+|unknownFutureValue|
 
 ### <a name="riskeventtypes-values"></a>значения riskEventTypes
 
-| Элемент
+| Member
 |:-------------------------
 | unlikelyTravel
 | anonymizedIPAddress
@@ -718,7 +1044,7 @@ Enum для серьезности оповещений.
 
 ### <a name="riskeventtype-values"></a>значения riskEventType
 
-|Элемент|
+|Member|
 |:---|
 |unlikelyTravel|
 |anonymizedIPAddress|
@@ -738,7 +1064,7 @@ Enum для серьезности оповещений.
 
 ### <a name="risklevel-values"></a>значения riskLevel
 
-| Элемент
+| Member
 |:-------------------------
 | Нет
 | низкий
@@ -749,7 +1075,7 @@ Enum для серьезности оповещений.
 
 ### <a name="riskstate-values"></a>значения riskState
 
-| Элемент
+| Member
 |:-------------------------
 | Нет
 | confirmedSafe
@@ -761,7 +1087,7 @@ Enum для серьезности оповещений.
 
 ### <a name="exchangeidformat-values"></a>Значения exchangeIdFormat
 
-|Элемент|
+|Member|
 |:---|
 |entryId|
 |ewsId|
@@ -771,7 +1097,7 @@ Enum для серьезности оповещений.
 
 ### <a name="onlinemeetingprovidertype-values"></a>значения onlineMeetingProviderType
 
-|Элемент|
+|Member|
 |:---|
 |unknown|
 |SkypeForBusiness|
@@ -780,7 +1106,7 @@ Enum для серьезности оповещений.
 
 ### <a name="delegatemeetingmessagedeliveryoptions-values"></a>значения delegateMeetingMessageDeliveryOptions
 
-|Элемент|
+|Member|
 |:---|
 |sendToDelegateAndInformationToPrincipal|
 |sendToDelegateAndPrincipal|
@@ -788,7 +1114,7 @@ Enum для серьезности оповещений.
 
 ### <a name="calendarroletype-values"></a>значения calendarRoleType
 
-|Элемент|
+|Member|
 |:---|
 |Нет|
 |freeBusyRead|
@@ -803,57 +1129,57 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1      | Угроза почты.            |
-| url    | 2      | УГРОЗА URL-адреса.             |
-| file   | 3      | Угроза файла вложения. |
+| mail   | 1     | Угроза почты.            |
+| url    | 2     | УГРОЗА URL-адреса.             |
+| file   | 3     | Угроза файла вложения. |
 
 ### <a name="threatexpectedassessment-values"></a>значения threatExpectedAssessment
 
 | Элемент  | Значение | Описание                       |
 |:--------|:------|:----------------------------------|
-| block   | 1      | Угроза должна быть заблокирована.     |
-| разблокировка | 2      | Угрозу не следует блокировать. |
+| block   | 1     | Угроза должна быть заблокирована.     |
+| разблокировка | 2     | Угрозу не следует блокировать. |
 
 ### <a name="threatcategory-values"></a>значения threatCategory
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
-| уверенности               | 1      | Угроза нежелательной почты.       |
-| степенью           | 2      | Фишинговая угроза.   |
-| вредоносные программы            | 3      | Угроза вредоносных программ.    |
+| спам               | 1     | Угроза нежелательной почты.       |
+| степенью           | 2     | Фишинговая угроза.   |
+| вредоносная программа            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4      | Член-часовой. |
 
 ### <a name="threatassessmentstatus-values"></a>значения threatAssessmentStatus
 
 | Элемент    | Значение | Описание                              |
 |:----------|:------|:-----------------------------------------|
-| ожидание   | 1      | Оценка угрозы по-прежнему продолжается. |
-| завершено | 2      | Оценка угроз завершена.         |
+| ожидание   | 1     | Оценка угрозы по-прежнему продолжается. |
+| завершено | 2     | Оценка угроз завершена.         |
 
 ### <a name="threatassessmentrequestsource-values"></a>значения threatAssessmentRequestSource
 
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| user          | 1      | Отправка пользователя.         |
-| администратор | 2      | Отправка администратора клиента. |
+| пользователь          | 1     | Отправка пользователя.         |
+| администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
 
 | Элемент             | Значение | Описание                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| checkPolicy        | 1      | Результат проверки политики только для `mail` оценки. |
-| rescan             | 2      | Результат rescan.                                   |
-| unknownFutureValue | 3      | Член-часовой.                                   |
+| checkPolicy        | 1     | Результат проверки политики только для `mail` оценки. |
+| rescan             | 2     | Результат rescan.                                   |
+| unknownFutureValue | 3     | Член-часовой.                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>значения mailDestinationRoutingReason
 
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | Нет                  | 0     | Еще не знаю.                       |
-| mailFlowRule          | 1      | Правило транспорта Exchange.            |
-| safeSender            | 2      | Безопасный список отправитель.                   |
-| blockedSender         | 3      | Заблокированный список отправитель.                |
+| mailFlowRule          | 1     | Правило транспорта Exchange.            |
+| safeSender            | 2     | Безопасный список отправитель.                   |
+| blockedSender         | 3     | Заблокированный список отправитель.                |
 | advancedSpamFiltering | 4      | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5      | Список разрешаемой области отправитель.           |
 | domainBlockList       | 6      | Список блоков домена отправитель.           |
@@ -878,19 +1204,19 @@ Enum для серьезности оповещений.
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>значения chatMessagePolicyViolationUserActionType
 
-| Элемент   | Значение Int |  Описание |
+| Member   | Значение Int |  Описание |
 |:---------------|:--------|:----------|
 | Нет | 0 | Значение по умолчанию. Это значение для сообщения, если пользователь не принял действий по сообщению, заблокированного DLP. |
-| Override | 1  | Отправитель переопределил вердикт сообщения и отправил сообщение в любом случае.|
-| ReportFalsePositive | 2  | Отправитель сообщил об отправке сообщения администраторам как ложный срабатыв.|
+| Override | 1 | Отправитель переопределил вердикт сообщения и отправил сообщение в любом случае.|
+| ReportFalsePositive | 2 | Отправитель сообщил об отправке сообщения администраторам как ложный срабатыв.|
 
 ### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>значения chatMessagePolicyViolationVerdictDetailsType
 
-| Элемент   | Значение Int |  Описание |
+| Member   | Значение Int |  Описание |
 |:---------------|:--------|:----------|
 | Нет | 0 |  Пользователю не разрешается переопределять сообщение. Пользователь не может сообщать о сообщении как о ложном срабатывке, если политикаTip не предоставлена. Во всех остальных сценариях пользователь может сообщить о сообщении как о ложном срабатыве.|
-| AllowFalsePositiveOverride | 1  |  Пользователю не разрешается явно переопределять блок, если он не объедин с `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` флагами или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
-| AllowOverrideWithoutJustification | 2  | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив `AllowOverrideWithJustification` для . |
+| AllowFalsePositiveOverride | 1 |  Пользователю не разрешается явно переопределять блок, если он не объедин с `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` флагами или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
+| AllowOverrideWithoutJustification | 2 | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив `AllowOverrideWithJustification` для . |
 | AllowOverrideWithJustification | 4  |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив `AllowOverrideWithoutJustification` для .|
 
 ### <a name="channelmembershiptype-values"></a>Значения channelMembershipType
@@ -898,10 +1224,10 @@ Enum для серьезности оповещений.
 | Элемент             | Значение |Описание|
 | :----------------- | :---- |:-----------|
 | стандартный           | 0     |Канал наследует список членов родительской команды.|
-| частный            | 1      |Канал может иметь членов, которые являются подмножество всех членов родительской команды.|
-| unknownFutureValue | 2      |      |
+| частный            | 1     |Канал может иметь членов, которые являются подмножество всех членов родительской команды.|
+| unknownFutureValue | 2     |      |
 ### <a name="wellknownlistname-values"></a>значения wellknownListName
-| Элемент
+| Member
 |:----------------------
 | Нет
 | defaultList
@@ -909,7 +1235,7 @@ Enum для серьезности оповещений.
 | unknownFutureValue
 
 ### <a name="taskstatus-values"></a>значения taskStatus
-| Элемент
+| Member
 |:----------------------
 | notStarted
 | inProgress
@@ -919,13 +1245,13 @@ Enum для серьезности оповещений.
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType
 
-| Элемент
+| Member
 |:-------
 | низкий
 
 ### <a name="permissiontype-values"></a>значения permissionType
 
-| Элемент
+| Member
 |:-------------------------
 | приложение
 | делегирована
@@ -933,7 +1259,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printcolormode-values"></a>printColorMode values 
 
-|Элемент|
+|Member|
 |:---|
 |blackAndWhite|
 |grayscale|
@@ -943,7 +1269,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printduplexmode-values"></a>значения printDuplexMode 
 
-|Элемент|
+|Member|
 |:---|
 |flipOnLongEdge|
 |flipOnShortEdge|
@@ -952,7 +1278,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printerfeedorientation-values"></a>значения printerFeedOrientation 
 
-|Элемент|
+|Member|
 |:---|
 |longEdgeFirst|
 |shortEdgeFirst|
@@ -960,7 +1286,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printfinishing-values"></a>printFinishing values 
 
-|Элемент|
+|Member|
 |:---|
 |Нет|
 |staple|
@@ -985,7 +1311,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printmultipagelayout-values"></a>значения printMultipageLayout 
 
-|Элемент|
+|Member|
 |:---|
 |clockwiseFromTopLeft|
 |counterclockwiseFromTopLeft|
@@ -999,7 +1325,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printorientation-values"></a>значения printOrientation 
 
-|Элемент|
+|Member|
 |:---|
 |портрет|
 |ландшафт|
@@ -1009,7 +1335,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printquality-values"></a>значения printQuality 
 
-|Элемент|
+|Member|
 |:---|
 |низкий|
 |medium|
@@ -1018,7 +1344,7 @@ Enum для серьезности оповещений.
 
 ### <a name="printscaling-values"></a>значения printScaling 
 
-|Элемент|
+|Member|
 |:---|
 |Авто|
 |shrinkToFit|

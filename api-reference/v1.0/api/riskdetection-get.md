@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ded8ac4a0b55d189e4695b6f458adc78b5faf7b9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 117ca62f0684eb1fd0f3747b8da40ec7cdb33783
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440110"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959538"
 ---
 # <a name="get-riskdetection"></a>Get riskDetection
 Пространство имен: microsoft.graph
@@ -59,7 +59,7 @@ GET /identityProtection/riskDetections/{riskDetectionId}
 ### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
-  "name": "get_riskdetection"
+  "name": "get_riskdetection_1"
 }
 -->
 ``` http

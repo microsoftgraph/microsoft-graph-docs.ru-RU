@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Метадатаактион
-description: Представляет метаданные, которые необходимо записать или удалить из файла.
+title: тип ресурса metadataAction
+description: Представляет метаданные, которые будут написаны или удалены из файла.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 55ddd644428662f6a646fd9c003761ab6f7c1e9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23305d8a3e1e89d198b4700e794dd264eabf003b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021387"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960399"
 ---
-# <a name="metadataaction-resource-type"></a>Тип ресурса Метадатаактион
+# <a name="metadataaction-resource-type"></a>тип ресурса metadataAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метаданные, которые необходимо записать или удалить из файла. **метадатаактион** могут возвращаться с помощью API [евалуатеремовал](../api/informationprotectionlabel-evaluateremoval.md), [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md)и [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) . Действие информирует приложение использования определенных пар "ключ-значение", которые следует добавить в файл, или конкретные ключи метаданных, которые следует удалить из файла. Эти метаданные описывают файл или сведения, *помеченные как отмеченные*.
+Представляет метаданные, которые будут написаны или удалены из файла. **MetadataAction** может быть возвращено с помощью API [evaluateRemoval,](../api/informationprotectionlabel-evaluateremoval.md) [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)и [evaluateClassificationResults.](../api/informationprotectionlabel-evaluateclassificationresults.md) Действие информирует о потребляемом приложении определенных пар ключей и значений, которые необходимо добавить в файл, или о конкретных ключах метаданных, которые должны быть удалены из файла. Эти метаданные описывают файл или сведения как *помеченные.*
 
 ## <a name="properties"></a>Свойства
 
 | Свойство         | Тип                                       | Описание                                                                        |
 | :--------------- | :----------------------------------------- | :--------------------------------------------------------------------------------- |
-| метадататоадд    | Коллекция [keyValuePair](keyvaluepair.md) | Коллекция пар "ключ-значение", которые следует добавить в файл.                  |
-| метадататоремове | Коллекция String                          | Коллекция строк, указывающая, какие ключи необходимо удалить из метаданных файла. |
+| metadataToAdd    | Коллекция [keyValuePair](keyvaluepair.md) | Коллекция пар ключевых значений, которые необходимо добавить в файл.                  |
+| metadataToRemove | Коллекция строк                          | Коллекция строк, которые указывают, какие ключи следует удалить из метаданных файла. |
 
 ## <a name="json-representation"></a>Представление JSON
 

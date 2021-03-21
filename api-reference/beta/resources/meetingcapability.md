@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Митингкапабилити
+title: Тип ресурса meetingCapability
 description: Содержит возможности собрания
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 29da5c8d4796e393bfead08979aca8e58a95024d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8e1d3985f95ecc28bd986218d7ff668f65b1db8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971687"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960407"
 ---
-# <a name="meetingcapability-resource-type"></a>Тип ресурса Митингкапабилити
+# <a name="meetingcapability-resource-type"></a>Тип ресурса meetingCapability
 
 Пространство имен: microsoft.graph
 
@@ -24,9 +24,9 @@ ms.locfileid: "47971687"
 
 | Свойство                          | Тип    | Описание                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| аллованонимаусусерстодиалаут      | Boolean | Указывает, разрешено ли исходящие вызовы анонимных пользователей на собрании. |
-| аллованонимаусусерстостартмитинг | Boolean | Указывает, разрешено ли анонимным пользователям начинать собрание.  |
-| аутоадмиттедусерс                 | String  | Возможные значения: `everyoneInCompany`, `everyone`.              |
+| allowAnonymousUsersToDialOut      | Boolean | Указывает, разрешен ли анонимный диалог пользователей на собрании. |
+| allowAnonymousUsersToStartMeeting | Boolean | Указывает, разрешено ли анонимным пользователям начинать собрание.  |
+| autoAdmittedUsers                 | autoAdmittedUsersType  | Возможные значения: `everyoneInCompany`, `everyone`.              |
 
 ## <a name="json-representation"></a>Представление JSON
 

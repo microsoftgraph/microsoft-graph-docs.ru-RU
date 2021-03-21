@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса keyValuePair
-description: Ключевое значение для параметров Action.
+description: Пара ключевых значений для параметров действия.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: c2f68a6311eb0271506a307c2fa877b830621514
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8897ea3d3788ce3fa846d845cb0854101b0b2ce7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058118"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960427"
 ---
 # <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
 
@@ -18,14 +18,14 @@ ms.locfileid: "48058118"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ключевое значение для параметров Action.
+Пара ключевых значений для параметров действия.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|name|String|Имя для этой пары "ключ-значение"|
-|value|String|Значение для этой пары "ключ-значение"|
+|name|String|Имя этой пары значений ключа. Возможные имена: `AdditionalWSFedEndpointCheckResult` , , , , , , ,  `AllowedAuthenticationClassReferencesCheckResult` , `AlwaysRequireAuthenticationCheckResult`   `AutoUpdateEnabledCheckResult` `ClaimsProviderNameCheckResult` `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult`  `DelegationAuthorizationRulesCheckResult` `IssuanceAuthorizationRulesCheckResult` `IssuanceTransformRulesCheckResult` .|
+|value|String|Значение для этой пары ключ-значение. Возможные значения результатов : (когда проверка проверки прошла), (когда проверка проверки не прошла) или (когда проверка проверки является `0` `1` `2` предупреждением).|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 40fa938f94f5f43a61c191a3d3c14b0dbbb10d6f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: af77e46c688d514f3a7b49aff3c785712706f3e2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440138"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960350"
 ---
 # <a name="riskdetection-resource-type"></a>тип ресурса riskDetection
 
@@ -38,27 +38,27 @@ Azure AD непрерывно [](riskyuser.md) оценивает риски п�
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|`id`|`string`|Уникальный ID обнаружения рисков. |
-|`requestId`|`string`|Запрос iD входного знака, связанного с обнаружением рисков. Это свойство является null, если обнаружение риска не связано с входом.|
-|`correlationId`|`string`|Корреляция ID входного знака, связанного с обнаружением риска. Это свойство является null, если обнаружение риска не связано с входом. |
-|`riskEventType`|`string`|Тип обнаруженного события риска. Возможные `unlikelyTravel` значения: `anonymizedIPAddress` , `maliciousIPAddress` , , , , , , , , `unfamiliarFeatures` и `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . |
-|`riskType`|`riskEventType`|Список типов событий риска.<br/>**Примечание:** Это свойство обесценилось. Вместо **этого используйте riskEventTypes.** |
-|`riskState`|`riskState`|Состояние обнаруженного рискованного пользователя или входной записи. Возможные значения не являются никакими, подтвержденнымиSafe, исправленными, уволенными, atRisk, confirmedCompromised и unknownFutureValue. |
-|`riskLevel`|`riskLevel`|Уровень обнаруженного риска. Возможные значения : низкие, средние, высокие, скрытые, неизвестные. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут `hidden` возвращены.|
-|`riskDetail`|`riskDetail`|Сведения об обнаружении риска. Возможные значения не являются никакими, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут `hidden` возвращены.|
-|`source`|`string`|Источник обнаружения рисков. Например, "activeDirectory". |
-|`detectionTimingType`|`riskDetectionTimingType`|Сроки обнаружения риска (в режиме реального времени и в автономном режиме). Возможные значения неDefined, realtime, nearRealtime, автономно, unknownFutureValue. |
-|`activity`|`activityType`|Указывает тип активности, с чем связан обнаруженный риск. Возможные значения : signin, user, unknownFutureValue. |
-|`tokenIssuerType`|`tokenIssuerType`|Указывает тип эмитента маркеров для обнаруженного риска входного знака. Возможные значения : AzureAD, ADFederationServices и unknownFutureValue. |
-|`ipAddress`|`string`|Предоставляет IP-адрес клиента, откуда возник риск. |
-|`location`|[signInLocation](signinlocation.md)|Расположение входного знака. |
-|`activityDateTime`|`datetimeoffset`|Дата и время возникновения рискованных действий. |
-|`detectedDateTime`|`datetimeoffset`|Дата и время обнаружения риска. |
-|`lastUpdatedDateTime`|`datetime`|Дата и время последнего обновления обнаружения рисков. |
-|`userId`|`string`|Уникальный идентификатор пользователя. |
-|`userDisplayName`|`string`|Имя пользователя. |
-|`userPrincipalName`|`string`|Имя участника-пользователя. |
-|`additionalInfo`|`string`|Дополнительные сведения, связанные с обнаружением рисков в формате JSON. |
+|id|string|Уникальный ID обнаружения рисков. |
+|requestId|string|Запрос iD входного знака, связанного с обнаружением рисков. Это свойство является null, если обнаружение риска не связано с входом.|
+|correlationId|string|Корреляция ID входного знака, связанного с обнаружением риска. Это свойство является null, если обнаружение риска не связано с входом. |
+|riskEventType|string|Тип обнаруженного события риска. Возможные `unlikelyTravel` значения: `anonymizedIPAddress` , `maliciousIPAddress` , , , , , , , , `unfamiliarFeatures` и `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `generic` `adminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . |
+|riskType|riskEventType|Список типов событий риска.<br />**Примечание:** Это свойство обесценилось. Вместо **этого используйте riskEventType.** |
+|riskState|riskState|Состояние обнаруженного рискованного пользователя или входной записи. Возможные значения `none` , `confirmedSafe` `remediated` , , , `dismissed` , и `atRisk` `confirmedCompromised` `unknownFutureValue` . |
+|riskLevel|riskLevel|Уровень обнаруженного риска. Возможные значения `low` , `medium` `high` , , `hidden` , `none` `unknownFutureValue` . <br />**Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут `hidden` возвращены.|
+|riskDetail|riskDetail|Сведения об обнаружении риска. Возможные `none` значения: `adminGeneratedTemporaryPassword` , `userPerformedSecuredPasswordChange` , , , , `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` , `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` `unknownFutureValue` , . <br />**Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут `hidden` возвращены.|
+|source|string|Источник обнаружения рисков. Например, `activeDirectory`. |
+|detectionTimingType|riskDetectionTimingType|Сроки обнаружения риска (в режиме реального времени и в автономном режиме). Возможные значения `notDefined` , `realtime` `nearRealtime` , , `offline` `unknownFutureValue` . |
+|действие|activityType|Указывает тип активности, с чем связан обнаруженный риск. Возможные значения `signin` , `user` `unknownFutureValue` . |
+|tokenIssuerType|tokenIssuerType|Указывает тип эмитента маркеров для обнаруженного риска входного знака. Возможные значения: `AzureAD`, `ADFederationServices` и `unknownFutureValue`. |
+|ipAddress|string|Предоставляет IP-адрес клиента, откуда возник риск. |
+|location|[signInLocation](signinlocation.md)|Расположение входного знака. |
+|activityDateTime|DateTimeOffset|Дата и время возникновения рискованных действий. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|detectedDateTime|DateTimeOffset|Дата и время обнаружения риска. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+|lastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления обнаружения рисков. |
+|userId|строка|Уникальный идентификатор пользователя.  Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|userDisplayName|string|Имя пользователя. |
+|userPrincipalName|string|Имя участника-пользователя. |
+|additionalInfo|string|Дополнительные сведения, связанные с обнаружением рисков в формате JSON. |
 
 ## <a name="json-representation"></a>Представление JSON
 

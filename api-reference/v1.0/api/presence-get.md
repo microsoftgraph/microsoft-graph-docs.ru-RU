@@ -1,16 +1,16 @@
 ---
 title: Получить присутствие
 description: Получите сведения о присутствии пользователя.
-author: elvinyang-msft
+author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f0b807775de40758514e5a839a3af1b1d3a20a01
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: ccd05e056f4d751184dd2b5fbb9605377a9a64a0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690587"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959698"
 ---
 # <a name="get-presence"></a>Получить присутствие
 
@@ -23,11 +23,11 @@ ms.locfileid: "49690587"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All      |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                        |
-| Приложение                            | Не поддерживается.                        |
+| Делегированные (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All      |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                        |
+| Для приложений                            | Не поддерживается.                        |
 
-> **Примечание.** Максимальная скорость запросов для этого API составляет 1500 запросов API в течение 30 секунд на приложение на клиента.
+> **Примечание:** Максимальная скорость запроса для этого API — 1500 запросов API в течение 30 секунд на каждого клиента.
 
 ## <a name="http-requests"></a>HTTP-запросы
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /users/{id}/presence
 GET /communications/presences
 ```
 
-## <a name="request-headers"></a>Заглавные запросы
+## <a name="request-headers"></a>Запрашивать заглавные
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
@@ -48,11 +48,11 @@ GET /communications/presences
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [присутствия](../resources/presence.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [присутствия](../resources/presence.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-your-own-presence-information"></a>Пример 1. Получите сведения о присутствии
+### <a name="example-1-get-your-own-presence-information"></a>Пример 1. Получить сведения о собственном присутствии
 
 В следующем примере показано, как получить собственные сведения о присутствии. Для этой операции требуется разрешение Presence.Read.
 
@@ -111,7 +111,7 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>Пример 2. Получите сведения о присутствии другого пользователя
+### <a name="example-2-get-the-presence-information-of-another-user"></a>Пример 2. Получить сведения о присутствии другого пользователя
 
 В следующем примере показано, как получить сведения о присутствии для другого пользователя. Для этой операции требуется разрешение Presence.Read.All.
 
@@ -169,7 +169,7 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>Пример 3. Получите сведения о присутствии другого пользователя
+### <a name="example-3-get-the-presence-information-of-another-user"></a>Пример 3. Получить сведения о присутствии другого пользователя
 
 В следующем примере показано, как получить сведения о присутствии для другого пользователя. Для этой операции требуется разрешение Presence.Read.All.
 

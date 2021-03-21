@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ef1baa85f405ffdb36ec86d97df858d864ead3cb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f3af631bc0c49d6b0ea2a71325df2b559917a2e2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440075"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959524"
 ---
 # <a name="get-history"></a>Получить историю
 Пространство имен: microsoft.graph
@@ -59,7 +59,7 @@ GET /identityProtection/riskyUsers/{userId}/history
 ### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuserhistoryitem"
+  "name": "get_riskyuserhistoryitem_1"
 }
 -->
 ``` http

@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса provisioningStep
-description: 'Описывает действия, выполняемые для выполнения действия. '
+title: тип ресурса provisioningStep
+description: 'Описывает действия, предпринятые для выполнения действия. '
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: bfc0fef09c1dfa8da4161a75449894e391ca1974
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6baf1656cb470cfc8dc01908f5a398ac5d421eb1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135354"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960343"
 ---
-# <a name="provisioningstep-resource-type"></a>Тип ресурса provisioningStep
+# <a name="provisioningstep-resource-type"></a>тип ресурса provisioningStep
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает действия, выполняемые для выполнения действия.
+Описывает действия, предпринятые для выполнения действия.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Сводка того, что произошло во время шага.|
-|details|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло во время шага.|
+|description|Строка|Сводка о том, что произошло во время шага.|
+|подробности|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло во время шага.|
 |name|String|Имя шага.|
-|provisioningStepType|Строка| Тип шага. Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
-|status|String| Состояние шага. Возможные значения: `success` , , , `warning`  `failure` `skipped` `unknownFutureValue` .|
+|provisioningStepType|provisioningStepType| Тип шага. Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
+|status|provisioningResult| Состояние шага. Возможные значения: `success` `warning` , , ,  `failure` `skipped` `unknownFutureValue` .|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

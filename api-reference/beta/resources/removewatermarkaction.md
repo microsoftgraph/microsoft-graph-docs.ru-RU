@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Ремовеватермаркактион
-description: Представляет действие, задающее сведения о подложке контента, которая будет удалена из информации, если это возможно.
+title: removeWatermarkAction resource type
+description: Представляет действие, которое указывает сведения о водяном знаке контента, который должен быть удален из сведений, если это применимо.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0b75a001e7673bbeb1513eaac82555d228d712f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a2365b2c9bc1080db9b6bf58b2035d88832881a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023963"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960357"
 ---
-# <a name="removewatermarkaction-resource-type"></a>Тип ресурса Ремовеватермаркактион
+# <a name="removewatermarkaction-resource-type"></a>removeWatermarkAction resource type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие, задающее сведения о подложке контента, которая будет удалена из информации, если это возможно. API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md), [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md)или [евалуатеремовал](../api/informationprotectionlabel-evaluateremoval.md) могут возвращать **ремовеватермаркактион** , если водяной знак необходимо удалить в результате обновления или удаления метки. Действие предписывает приложению, которое использует приложение, удалить определенный элемент пользовательского интерфейса, который содержит Подводя содержимого, который использовался ранее.
+Представляет действие, которое указывает сведения о водяном знаке контента, который должен быть удален из сведений, если это применимо. [ОценкаApplication,](../api/informationprotectionlabel-evaluateapplication.md) [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)или оценка APIRemoval могут возвращать **removeWatermarkAction,** если водяной знак будет удален в результате обновления или удаления метки. [](../api/informationprotectionlabel-evaluateremoval.md) Действие предписывает потребляемому приложению удалить определенный элемент пользовательского интерфейса, содержащий ранее применимый водяной знак контента.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип              | Описание                           |
 | :------------- | :---------------- | :------------------------------------ |
-| уиелементнамес | Коллекция String | Имя удаляемого элемента пользовательского интерфейса нижнего колонтитула. |
+| uiElementNames | Коллекция строк | Имя элемента пользовательского интерфейса подножки, который следует удалить. |
 
 ## <a name="json-representation"></a>Представление JSON
 

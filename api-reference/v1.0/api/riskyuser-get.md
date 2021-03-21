@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc7b7758b7d368ffe248cbfe57c29c98955b3ef6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fac6527f330bfc6f45e3a6acc773ac4323fcea75
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440033"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959454"
 ---
 # <a name="get-riskyuser"></a>Get riskyUser
 Пространство имен: microsoft.graph
@@ -58,7 +58,7 @@ GET /identityProtection/riskyUsers/{riskyUserId}
 ### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser_1"
 }
 -->
 ``` http
