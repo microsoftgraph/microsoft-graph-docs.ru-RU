@@ -2,15 +2,15 @@
 title: Создание приглашения
 description: Используйте этот API для создания приглашения. Приглашение позволяет добавить внешнего пользователя в организацию.
 localization_priority: Normal
-author: elisolMS
+author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c8304d62940b14e802857b0695d78e6801f97163
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a74643bbc75de77f68f5084310d739a1ffceccfa
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434211"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954638"
 ---
 # <a name="create-invitation"></a>Создание приглашения
 

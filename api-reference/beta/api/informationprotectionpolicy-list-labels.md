@@ -1,24 +1,24 @@
 ---
-title: 'Информатионпротектионлабел: Листлабелс'
-description: Получение списка меток защиты информации.
+title: 'informationProtectionLabel: listLabels'
+description: Извлечение списка меток защиты информации.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: dc78485300ea59ae526d93f174212b9f8b5328bd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 00119bf52541db03c2c6ae00c2f9ba7497b38465
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964663"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954648"
 ---
-# <a name="informationprotectionlabel-listlabels"></a>Информатионпротектионлабел: Листлабелс
+# <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение набора [меток защиты информации](../resources/informationprotectionlabel.md) , доступных пользователю или организации.
+Получите коллекцию меток [защиты информации,](../resources/informationprotectionlabel.md) доступных пользователю или организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,18 +28,18 @@ ms.locfileid: "48964663"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложения                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
-Чтобы получить метки, доступные пользователю, вошедшего в систему, или указанному пользователю:
+Чтобы получить метки, доступные пользователю или указанному пользователю:
 ```http
 GET /me/informationProtection/policy/labels
 GET /users/{id | user-principal-name}/informationProtection/policy/labels
 ```
 
-Чтобы получить метки, доступные в Организации, выполните указанные ниже действия.
+Чтобы получить метки, доступные организации:
 ```http
 GET /informationProtection/policy/labels
 ```
@@ -53,7 +53,7 @@ GET /informationProtection/policy/labels
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [информатионпротектионлабел](../resources/informationprotectionlabel.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

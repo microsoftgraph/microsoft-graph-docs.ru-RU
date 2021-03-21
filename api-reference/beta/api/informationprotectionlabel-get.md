@@ -1,24 +1,24 @@
 ---
-title: Получение Информатионпротектионлабел
-description: Получение свойств и связей указанного объекта Информатионпротектионлабел.
+title: Получить informationProtectionLabel
+description: Извлечение свойств и связей указанного объекта informationProtectionLabel.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 804417015528d79c65e13fef4d702f548c2b7773
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8400ceb42bb9f35a00c844369f904ae791b08534
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964710"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954662"
 ---
-# <a name="get-informationprotectionlabel"></a>Получение Информатионпротектионлабел
+# <a name="get-informationprotectionlabel"></a>Получить informationProtectionLabel
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [информатионпротектионлабел](../resources/informationprotectionlabel.md) .
+Извлечение свойств и связей объекта [informationProtectionLabel.](../resources/informationprotectionlabel.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,18 +28,18 @@ ms.locfileid: "48964710"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложения                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
-Чтобы получить метку, доступную для вошедшего пользователя или указанного пользователя:
+Чтобы получить метку, доступную для подписанного пользователя или указанного пользователя:
 ```http
 GET /me/informationProtection/policy/labels/{id}
 GET /users/{id | user-principal-name}/informationProtection/policy/labels/{id}
 ```
 
-Чтобы получить метку, доступную для Организации:
+Чтобы получить метку, доступную организации:
 ```http
 GET /informationProtection/policy/labels/{id}
 ```
@@ -53,7 +53,7 @@ GET /informationProtection/policy/labels/{id}
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [информатионпротектионлабел](../resources/informationprotectionlabel.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

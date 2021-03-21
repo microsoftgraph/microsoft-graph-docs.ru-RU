@@ -1,27 +1,27 @@
 ---
-title: 'Информатионпротектионлабел: Екстрактлабел'
-description: Получение Информатионпротектионконтентлабел с помощью метаданных из объекта с меткой.
+title: 'informationProtectionLabel: extractLabel'
+description: Извлечение сведенийПротекцияContentLabel с помощью метаданных из помеченного объекта.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: aaa9fe32f9ca07efa9dc4703fe9b78ee61443239
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cfc46fcc6ccafadd938ebc7eb6dc1c28fac1f328
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964722"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954675"
 ---
-# <a name="informationprotectionlabel-extractlabel"></a>Информатионпротектионлабел: Екстрактлабел
+# <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используя метаданные, существующие на основе уже помеченных данных, разрешите метаданные в соответствии с определенными метками чувствительности. Входные данные [контентинфо](../resources/contentinfo.md) разрешаются в [информатионпротектионконтентлабел](../resources/informationprotectioncontentlabel.md).
+С помощью метаданных, которые существуют на уже помеченной части информации, разрешим метаданные определенной метке чувствительности. Вход [contentInfo](../resources/contentinfo.md) разрешен к [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
 
 >[!NOTE]
->Ресурс **[информатионпротектионконтентлабел](../resources/informationprotectioncontentlabel.md)** представляет метку конфиденциальности, которая была применена к части данных. объекты [информатионпротектионлабел](../resources/informationprotectionlabel.md) — это абстрактные метки, которые входят в политику организационных наклеек и могут быть применены к данным.
+>Ресурс **[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** представляет метку конфиденциальности, примененную к части информации. [объекты informationProtectionLabel](../resources/informationprotectionlabel.md) — это абстрактные метки, которые являются частью политики организационной маркировки и могут применяться к данным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "48964722"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложения                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,8 +46,8 @@ POST /informationprotection/policy/labels/extractLabel
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| Content-Type  | Content-Type: Application/JSON. Обязательный.                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| Content-Type  | Тип контента: приложение/json. Обязательный.                                                                                                                                         |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,15 +55,15 @@ POST /informationprotection/policy/labels/extractLabel
 
 | Параметр   | Тип                                       | Описание                                                                                                                         |
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| контентинфо | [контентинфо](../resources/contentinfo.md) | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение". |
+| contentInfo | [contentInfo](../resources/contentinfo.md) | Содержит сведения о формате контента, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в качестве пар ключей и значений. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [информатионпротектионконтентлабел](../resources/informationprotectioncontentlabel.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и новый объект `200 OK` [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-Ниже приведен пример вызова этого API.
+Ниже приводится пример вызова этого API.
 
 ### <a name="request"></a>Запрос
 
