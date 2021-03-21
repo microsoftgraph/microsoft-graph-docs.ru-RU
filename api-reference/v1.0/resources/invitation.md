@@ -2,15 +2,15 @@
 title: Тип ресурса invitation
 description: Представляет приглашение, используемое для добавления внешних пользователей в организацию.
 localization_priority: Priority
-author: elisolMS
+author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 484ac459d36d98353038fa68af4a2c8c9312ac56
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ff977732b4d0894767f06ccfcf03451a8cc77f61
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516614"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941367"
 ---
 # <a name="invitation-resource-type"></a>Тип ресурса invitation
 
@@ -41,9 +41,9 @@ ms.locfileid: "50516614"
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
 |sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: false.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
-|inviteRedeemUrl|Строка|URL-адрес для активации приглашения. Только для чтения.|
-|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. Значение по умолчанию: Guest. Администратор компании может заменить его на Member. |
-|status|String|Состояние приглашения. Возможные значения: PendingAcceptance, Completed, InProgress и Error|
+|inviteRedeemUrl|Строка|URL-адрес для активации приглашения. Только для чтения.|.
+|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. По умолчанию это значение равно `Guest`. Администратор компании может заменить его на `Member`. |
+|status|String|Состояние приглашения. Возможные значения: `PendingAcceptance`, `Completed`, `InProgress` и `Error`|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

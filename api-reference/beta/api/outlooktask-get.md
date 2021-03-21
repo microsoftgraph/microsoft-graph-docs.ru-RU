@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f3d1c4ac017a00fd4a7665175ac2432d84eccc4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2fccd7dea62dd0d08f56f119a75dd71037d00c90
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974140"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957626"
 ---
-# <a name="get-outlooktask-deprecated"></a>Получение outlookTask (не рекомендуется)
+# <a name="get-outlooktask-deprecated"></a>Get outlookTask (deprecated)
 
 Пространство имен: microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "48974140"
 
 Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
 
-По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+По умолчанию эта операция (и POST, [](../api/outlooktask-complete.md) PATCH и полные операции задач) возвращает свойства, связанные с датами в UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +53,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя                     | Описание                                       |
 |:-------------------------|:--------------------------------------------------|
 | Авторизация            | Bearer {токен}. Обязательный.                         |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство. |
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,11 +61,11 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект OutlookTask](../resources/outlooktask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-an-outlook-task"></a>Пример 1: получение задачи Outlook
+### <a name="example-1-get-an-outlook-task"></a>Пример 1. Получить задачу Outlook
 
 #### <a name="request"></a>Запрос
 
@@ -74,26 +74,26 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,17 +150,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2: получение задачи Outlook со свойствами даты и времени в стандартном Тихоокеанском времени
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2. Получить задачу Outlook со свойствами даты в тихоокеанском стандартном времени
 
 #### <a name="request"></a>Запрос
 
-В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать в ответе свойства даты и времени в ответе в стандартном Тихоокеанском времени.
+В этом примере заголовка указывает, что API должен возвращать свойства даты в ответе `Prefer: outlook.timezone` в тихоокеанском стандартном времени.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_2"
 }-->
 
 ```msgraph-interactive
@@ -168,19 +168,19 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -188,7 +188,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Свойства даты и времени в отклике возвращаются в указанном тихоокеанском стандартном Тихоокеанском времени.
+Ниже приведен пример отклика. Свойства времени даты в ответе возвращаются в указанное тихоокеанское стандартное время.
 
 > **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

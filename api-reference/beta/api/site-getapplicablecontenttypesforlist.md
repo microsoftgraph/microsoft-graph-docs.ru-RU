@@ -5,12 +5,12 @@ description: Получите типы контента сайта, которы
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 99ca8f23b153f8835fc841e142b79684601bd293
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8609c15eef73090864f9908aadfb3ffcaf13a2fd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772452"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958981"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>сайт: getApplicableContentTypesForList
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "50772452"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается    |
-|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,8 +55,8 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Параметр|Тип|Описание|
-|-|-|-|-|
-|listId| String | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательный. |
+|-|-|-|
+|listId| Строка | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательный. |
 
 ## <a name="response"></a>Отклик
 

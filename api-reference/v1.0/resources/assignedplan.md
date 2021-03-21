@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9e2c9c3dd04c2c3842fa984308d5f2ba002e607e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 182ef3239437234c74945fa37483924429f2200b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720818"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958096"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -23,8 +23,8 @@ ms.locfileid: "50720818"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedDateTime|DateTimeOffset|дата и время, в которые был назначен план; например: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Условие назначения возможностей. Возможные значения `Enabled` , `Warning` `Suspended` , , `Deleted` `LockedOut` .|
+|assignedDateTime|DateTimeOffset|Дата и время, в которые был назначен план. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|capabilityStatus|String|Условие назначения возможностей. Возможные значения `Enabled` , `Warning` `Suspended` , , `Deleted` `LockedOut` . См. [подробное описание](#capabilitystatus-values) каждого значения.|
 |service|String|Имя службы, например "Exchange".|
 |servicePlanId|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
@@ -33,7 +33,7 @@ ms.locfileid: "50720818"
 
 | Member | Описание  |
 |:---------------|:--------|
-| Включен | Доступно для нормального использования. |
+| Включено | Доступно для нормального использования. |
 | Предупреждение | Доступно для нормального использования, но находится в льготном периоде. |
 | Suspended | Недоступны, но все данные, связанные с этой возможностью, должны быть сохранены. |
 | Deleted | Недоступные и любые данные, связанные с этой возможностью, могут быть удалены. |

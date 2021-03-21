@@ -5,18 +5,18 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bd6af2af85c713556c7847853cd24db1013714d4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c4cebe3c5b35e44d5d81289dbc77cd78332350e7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131462"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958645"
 ---
 # <a name="add-owner"></a>Добавление владельца
 
 Пространство имен: microsoft.graph
 
-Добавление владельца в приложение [путем](../resources/application.md) добавления в коллекцию владельцев.
+Добавьте владельца в [приложение,](../resources/application.md) разместив его в коллекции владельцев.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,6 +26,8 @@ ms.locfileid: "50131462"
 |Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
+
+> **Примечание.** **Application.ReadWrite.OwnedBy** будет недостаточно для добавления другого владельца. Согласие также **на application.ReadWrite.All**. 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +41,7 @@ POST /applications/{id}/owners/$ref
 | Авторизация | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укавите идентификатор объекта каталога, который должен быть назначен владельцем.
+В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
 
 ## <a name="response"></a>Отклик
 

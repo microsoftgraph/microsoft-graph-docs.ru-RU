@@ -5,18 +5,18 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3a8cf2d9c262551beb060c8b412c77ce50ffeeda
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2b6794d9aa4955b5b2260549641e4f7530c23e2a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444401"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944852"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
 Пространство имен: microsoft.graph
 
-Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщиком удостоверений может быть Майкрософт, Google, Facebook, Amazon, LinkedIn или Twitter. Поставщики удостоверений в предварительной версии: Weibo, QQ, WeChat, GitHub и любой поставщик, поддерживаемый OpenID Connect. 
+Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщиком удостоверений может быть корпорация **Майкрософт**, **Google**, **Facebook**, **Amazon**, **LinkedIn** или **Twitter**. Поставщики удостоверений в предварительной версии: **Weibo**, **QQ**, **WeChat**, **GitHub** и любой поставщик, поддерживаемый OpenID Connect. 
 
 Возможности для пользователей в результате настройки поставщика удостоверений в клиенте Azure AD B2C:
 
@@ -37,13 +37,13 @@ ms.locfileid: "50444401"
 
 ## <a name="properties"></a>Свойства
 
-|Свойство|Тип|Обязательное|Допускается значение null|Описание|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
-|clientSecret|String|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
-|id|String|Нет|Нет|Идентификатор поставщика удостоверений.|
-|name|String|Нет|Нет|Отображаемое имя поставщика удостоверений.|
-|type|String|Да|Нет|Тип поставщика удостоверений Для сценариев B2C должно быть присвоено одно из указанных ниже значений. <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Для сценариев B2B должно быть присвоено значение Google или Facebook.|
+|Свойство|Тип|Описание|
+|:---------------|:--------|:--------|
+|clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Обязательно. Значение NULL не допускается.|
+|clientSecret|String|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "`****`".  Обязательно. Значение null не допускается.|
+|id|String|Идентификатор поставщика удостоверений.|
+|name|String|Отображаемое имя поставщика удостоверений. Значение NULL не допускается.|
+|type|Строка|Тип поставщика удостоверений является обязательным полем. Для сценария B2B: `Google`, `Facebook`. Для сценария B2C: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`,`QQ`, `WeChat`, `OpenIDConnect`. Значение NULL не допускается.|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Где взять идентификатор и секрет клиента
 

@@ -1,22 +1,22 @@
 ---
-title: Удаление appRoleAssignment, предоставленного для основного приложения-службы
-description: Удаление appRoleAssignment, предоставленного для основного приложения-службы.
+title: Удаление appRoleAssignment, предоставленного для директора службы
+description: Удаление appRoleAssignment, предоставленного для директора службы.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fd6263fa3fdb479bb0290b6c27846ea03155c34b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6e0e124d285bbc22a87ef6073339cdf0f8ab7741
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128731"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958204"
 ---
-# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>Удаление appRoleAssignment, предоставленного для основного приложения-службы
+# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>Удаление appRoleAssignment, предоставленного для директора службы
 
 Пространство имен: microsoft.graph
 
-Удаляет [appRoleAssignment,](../resources/approleassignment.md) предоставленное пользователем, группой или клиентской службой для основного ресурса.
+Удаляет [appRoleAssignment](../resources/approleassignment.md) о том, что директору службы ресурсов, группе или директору клиентской службы предоставлено приложение appRoleAssignment.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,7 +37,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 
 > [!NOTE]
-> Рекомендуется удалять назначения ролей приложения через связь с основными службами ресурсов, а не через отношение назначенного пользователя, группы или `appRoleAssignedTo`  `appRoleAssignments` основного пользователя-службы.
+> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью отношений директора службы ресурсов, а не отношений назначенного пользователя, группы или директора `appRoleAssignedTo`  `appRoleAssignments` службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -87,6 +87,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
 
 ---
 
+В этом примере будет id основного средства службы ресурсов и будет id назначенного пользователя, группы или `{resource-SP-id}` `{principalId}` директора клиентской службы.
 
 ### <a name="response"></a>Отклик
 

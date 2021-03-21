@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2feec9b37375da3b76191ec84869346c07af36f3
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 52b9d681c9eb56fe7428634d253adf5b6c0cc545
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573770"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958623"
 ---
 # <a name="call-transfer"></a>вызов: передача
 
@@ -29,7 +29,7 @@ ms.locfileid: "50573770"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Приложение     | Calls.Initiate.All                                  |
+| Для приложений     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +66,7 @@ POST /communications/calls/{id}/transfer
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/transfer
@@ -96,7 +96,7 @@ Content-Length: 430
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
@@ -255,7 +255,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "@odata.type": "call-transfer-2"
 }-->
 
 ```http

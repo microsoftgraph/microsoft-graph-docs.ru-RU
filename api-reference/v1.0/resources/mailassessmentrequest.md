@@ -3,14 +3,14 @@ title: тип ресурса mailAssessmentRequest
 description: Используется для создания и получения оценки угроз почты.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 35b94380392b6dc1d0237d7d4655ca45f6347a1a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c6df66260673e6319f8b91bf52c7ca351adb85a7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719960"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958075"
 ---
 # <a name="mailassessmentrequest-resource-type"></a>тип ресурса mailAssessmentRequest
 

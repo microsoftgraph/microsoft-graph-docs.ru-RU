@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: eff24fe8b86f6b0726cc83fae277a9b9b0a50399
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8537f8eaa3847fe9bb8c7cd414a31bb979402ff4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721245"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958089"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 
@@ -36,10 +36,10 @@ ms.locfileid: "50721245"
 | correlationId       | GUID                                                | Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.                                                                                                                                                |
 | id                  | String                                              | Указывает уникальный идентификатор для действия. Это идентификатор GUID.                                                                                                                                                                                                                          |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Указывает сведения о пользователе или приложении, запустившем действие.                                                                                                                                                                                                                |
-| loggedByService     | String                                              | Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).                                                                      |
-| result              | string                                              | Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                                   |
-| resultReason        | String                                              | Описывает причину "сбоя" или "разгона" результатов.                                                                                                                                                                                                                                 |
-| targetResources     | Коллекция [targetResource](targetresource.md)      | Указывает, какой ресурс был изменен в результате действия. Возможные типы целевых ресурсов: User, Device, Directory, App, Role, Group, Policy или Other.                                                                                                                   |
+| loggedByService     | String                                              | Указывает сведения о том, какая служба инициировала действие (например: `Self-service Password Management` , , , , , , `Core Directory` `B2C` `Invited Users` `Microsoft Identity Manager` `Privileged Identity Management` .                                                                      |
+| result              | operationResult                                              | Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                                   |
+| resultReason        | String                                              | Указывает причину сбоя, если **результат** `failure` или `timeout` .                                                                                                                                                                                                                                 |
+| targetResources     | Коллекция [targetResource](targetresource.md)      | Указывает, какой ресурс был изменен в результате действия. Тип целевого ресурса может быть `User` , , , , , или `Device` `Directory` `App` `Role` `Group` `Policy` `Other` .                                                                                                                   |
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a10d262444b0a33dfbeadbb21611d914d9253e0d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: deb5c93570a9921bc1830bfcb0772d643eed68b7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719908"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958733"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>тип ресурса userCredentialUsageDetails
 
@@ -30,10 +30,10 @@ ms.locfileid: "50719908"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| authMethod | Строка | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (только используется для самообслуживки сброс `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), `appNotification` , и `appCode` `alternateMobileCall` (поддерживается только в регистрации). |
-| eventDateTime | DateTimeOffset | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| authMethod | useAuthMethod | Представляет метод проверки подлинности, используемый пользователем. Возможные значения: , , , , (только используется для самообслуживки сброс `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` пароля), `appNotification` , , ( `appCode` `alternateMobileCall` поддерживается только в регистрации), `fido` , `appPassword` ,`unknownFutureValue` |
+| eventDateTime | DateTimeOffset | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. |
 | failureReason | String | Предоставляет причину сбоя для соответствующего рабочего процесса сброса или регистрации. |
-| функция | Строка | Возможные значения: `registration` и `reset` . |
+| функция | featureType | Возможные значения: `registration`, `reset`, `unknownFutureValue`. |
 | id | String | Только для чтения. Уникальный идентификатор для этого действия. Только для чтения.|
 | isSuccess | Boolean | Указывает на успешность или сбой рабочего процесса. |
 | userDisplayName | String | Имя пользователя, который выполняет рабочий процесс сброса или регистрации. |
