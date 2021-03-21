@@ -1,26 +1,26 @@
 ---
-title: Список Среатассессментрекуестс
-description: Получение списка объектов среатассессментрекуест.
+title: List threatAssessmentRequests
+description: Извлечение списка объектов threatassessmentrequest.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: eeeb17bd23f5ecf4d840cc20b6aa62b2b03d3829
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffc58d43be57ec99d7d7ec8dfc7abb4f239bf16a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952956"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954718"
 ---
-# <a name="list-threatassessmentrequests"></a>Список Среатассессментрекуестс
+# <a name="list-threatassessmentrequests"></a>List threatAssessmentRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [среатассессментрекуест](../resources/threatassessmentrequest.md) .
+Извлечение списка [объектов threatAssessmentRequest.](../resources/threatassessmentrequest.md)
 
-Запрос на оценку угроз может иметь один из следующих типов:
+Запрос на оценку угроз может быть одним из следующих типов:
 
 * [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
@@ -35,7 +35,7 @@ ms.locfileid: "48952956"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | ThreatAssessment.Read.All                  |
+| Application                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,12 +47,12 @@ GET /informationProtection/threatAssessmentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по убыванию по значению **createdDateTime** .                                                                          |
+|$filter         |string   |Ограничивает ответ только теми объектами, которые содержат указанные критерии.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в ответе будут нисходящими по своему **значению createdDateTime.**                                                                          |
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
 |$skipToken      |string   |Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.                                                                                               |
 
@@ -68,7 +68,7 @@ GET /informationProtection/threatAssessmentRequests
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

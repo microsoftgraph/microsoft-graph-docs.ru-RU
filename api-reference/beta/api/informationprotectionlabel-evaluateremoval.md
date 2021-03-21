@@ -1,33 +1,33 @@
 ---
-title: 'Информатионпротектионлабел: Евалуатеремовал'
-description: Определите, какую метку удалить, и как ее удалить на основе существующей информации о контенте.
+title: 'informationProtectionLabel: evaluateRemoval'
+description: Оцените, какую метку удалить и как удалить ее на основе существующей информации о контенте.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2333bd038b59c7e27d78f9f81c06fa2e65c75072
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d86f5cc5bd8d52ea4c902b06bd2f0013d11aaf12
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952907"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954700"
 ---
-# <a name="informationprotectionlabel-evaluateremoval"></a>Информатионпротектионлабел: Евалуатеремовал
+# <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Укажите, какие действия необходимо предпринять для удаления сведений о наклейках в приложении, используемом для использования.
+Указать потребляемму приложению, какие действия следует принять для удаления сведений о метки.
 
-В [качестве](../resources/contentinfo.md) входных данных, которые включают существующие [пары ключ/значение](../resources/keyvaluepair.md)метаданных содержимого, API возвращает объект [информатионпротектионактион](../resources/informationprotectionaction.md) , который содержит несколько комбинаций одного из следующих элементов: 
+С [учетом contentInfo](../resources/contentinfo.md) в качестве входного ввода, который включает существующие пары ключа/значения метаданных контента, API возвращает [informationProtectionAction,](../resources/informationprotectionaction.md) который содержит некоторое сочетание одного из следующих ниже: [](../resources/keyvaluepair.md) 
 
-* [жустифяктион](../resources/justifyaction.md)
-* [метадатаактион](../resources/metadataaction.md)
-* [ремовеконтентфутерактион](../resources/removecontentfooteraction.md)
-* [ремовеконтенсеадерактион](../resources/removecontentheaderaction.md)
-* [ремовепротектионактион](../resources/removeprotectionaction.md)
-* [ремовеватермаркактион](../resources/removewatermarkaction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
+* [removeContentFooterAction](../resources/removecontentfooteraction.md)
+* [removeContentHeaderAction](../resources/removecontentheaderaction.md)
+* [removeProtectionAction](../resources/removeprotectionaction.md)
+* [removeWatermarkAction](../resources/removewatermarkaction.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,7 +37,7 @@ ms.locfileid: "48952907"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /informationProtection/policy/labels/evaluateRemoval
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
 | Content-Type  | application/json. Обязательный.                                                                                                                                                       |
-| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,17 +61,17 @@ POST /informationProtection/policy/labels/evaluateRemoval
 
 | Параметр              | Тип                                                             | Описание                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| контентинфо            | [контентинфо](../resources/contentinfo.md)                       | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение". |
-| довнградежустификатион | [довнградежустификатион](../resources/downgradejustification.md) | Обоснование, которое должно быть предоставлено логикой пользователя или приложения.                                                               |
+| contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Содержит сведения о формате контента, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в качестве пар ключей и значений. |
+| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Обоснование, которое должно быть предоставлено пользователем или логикой приложения.                                                               |
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика. [Объект информатионпротектионактион](../resources/informationprotectionaction.md) будет содержать объект [метадатаактион](../resources/metadataaction.md) , который информирует приложение о том, какие метаданные необходимо удалить. 
+В случае успешной работы этот метод возвращает код ответа и новый объект `200 OK` [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа. Объект [informationProtectionAction](../resources/informationprotectionaction.md) будет содержать объект [metadataAction,](../resources/metadataaction.md) который информирует приложение, которое метаданные удалить. 
 
 ## <a name="examples"></a>Примеры
 
-Ниже приведен пример вызова этого API.
+Ниже приводится пример вызова этого API.
 
 ### <a name="request"></a>Запрос
 
