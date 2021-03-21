@@ -1,15 +1,15 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9aba4dfc821868f3e887e596ff0e2166eca753ec
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 50bc1ad1bca9ec26370d62c8ed0e9a61c3ce0e21
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335280"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50968747"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OAuth2PermissionGrant oAuth2PermissionGrant = new OAuth2PermissionGrant();
 oAuth2PermissionGrant.scope = "scope-value";
