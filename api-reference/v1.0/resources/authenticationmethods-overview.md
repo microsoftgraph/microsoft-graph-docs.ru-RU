@@ -1,0 +1,37 @@
+---
+title: Обзор API методов проверки подлинности Azure AD
+description: Методы проверки подлинности — это проверка подлинности пользователями в Azure AD.
+localization_priority: Normal
+author: mmcla
+ms.prod: microsoft-identity-platform
+doc_type: conceptualPageType
+ms.openlocfilehash: 1f39a7d231a9db7f4198aec4a440811ccce989f5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964989"
+---
+# <a name="azure-ad-authentication-methods-api-overview"></a><span data-ttu-id="49644-103">Обзор API методов проверки подлинности Azure AD</span><span class="sxs-lookup"><span data-stu-id="49644-103">Azure AD authentication methods API overview</span></span>
+
+<span data-ttu-id="49644-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49644-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="49644-105">[Методы проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) — это способы проверки подлинности пользователями в Azure Active Directory (AD).</span><span class="sxs-lookup"><span data-stu-id="49644-105">[Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (AD).</span></span> <span data-ttu-id="49644-106">Методы проверки подлинности в Azure AD включают пароль и телефон (например, SMS и голосовые вызовы), которые сегодня можно использовать в конечной точке бета-версии Microsoft Graph, среди многих других, таких как ключи безопасности FIDO2 и приложение Microsoft Authenticator.</span><span class="sxs-lookup"><span data-stu-id="49644-106">Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph beta endpoint today, among many others such as FIDO2 security keys and the Microsoft Authenticator app.</span></span> <span data-ttu-id="49644-107">Способы проверки подлинности используются в ходе основной, двухфакторной проверки подлинности, проверки подлинности повышенного уровня, а также в процессе самостоятельного сброса пароля (SSPR).</span><span class="sxs-lookup"><span data-stu-id="49644-107">Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.</span></span>
+
+<span data-ttu-id="49644-108">API метода проверки подлинности используются для управления методами проверки подлинности пользователя.</span><span class="sxs-lookup"><span data-stu-id="49644-108">The authentication method APIs are used to manage a user's authentication methods.</span></span> <span data-ttu-id="49644-109">Например:</span><span class="sxs-lookup"><span data-stu-id="49644-109">For example:</span></span>
+
+* <span data-ttu-id="49644-110">Вы можете получить сведения о ключе безопасности FIDO2 пользователя и удалить его, если пользователь потерял ключ.</span><span class="sxs-lookup"><span data-stu-id="49644-110">You can retrieve details of a user's FIDO2 Security Key, and delete it if the user has lost the key.</span></span>
+* <span data-ttu-id="49644-111">Вы можете получить сведения о регистрации Microsoft Authenticator пользователя и удалить его, если пользователь потерял телефон.</span><span class="sxs-lookup"><span data-stu-id="49644-111">You can retrieve details of a user's Microsoft Authenticator registration, and delete it if the user has lost the phone.</span></span>
+
+## <a name="what-authentication-methods-can-be-managed-in-microsoft-graph"></a><span data-ttu-id="49644-112">Какие методы проверки подлинности можно управлять в Microsoft Graph?</span><span class="sxs-lookup"><span data-stu-id="49644-112">What authentication methods can be managed in Microsoft Graph?</span></span>
+
+|<span data-ttu-id="49644-113">Способ проверки подлинности </span><span class="sxs-lookup"><span data-stu-id="49644-113">Authentication method</span></span>       | <span data-ttu-id="49644-114">Описание</span><span class="sxs-lookup"><span data-stu-id="49644-114">Description</span></span> |<span data-ttu-id="49644-115">Примеры</span><span class="sxs-lookup"><span data-stu-id="49644-115">Examples</span></span>     |
+|:---------------------------|:------------|:------------|
+|[<span data-ttu-id="49644-116">fido2AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="49644-116">fido2AuthenticationMethod</span></span>](fido2authenticationmethod.md)|<span data-ttu-id="49644-117">Ключ безопасности FIDO2 может быть использован пользователем для регистрации в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="49644-117">A FIDO2 Security Key can be used by a user to sign-in to Azure AD.</span></span>|<span data-ttu-id="49644-118">Удаление потерянного ключа безопасности FIDO2.</span><span class="sxs-lookup"><span data-stu-id="49644-118">Delete a lost FIDO2 Security Key.</span></span>|
+|[<span data-ttu-id="49644-119">MicrosoftAuthenticatorAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="49644-119">microsoftAuthenticatorAuthenticationMethod</span></span>](microsoftauthenticatorauthenticationmethod.md)|<span data-ttu-id="49644-120">Microsoft Authenticator может использоваться пользователем для регистрации или выполнения многофакторной проверки подлинности в Azure AD</span><span class="sxs-lookup"><span data-stu-id="49644-120">Microsoft Authenticator can be used by a user to sign-in or perform multi-factor authentication to Azure AD</span></span>|<span data-ttu-id="49644-121">Удаление метода проверки подлинности Microsoft Authenticator.</span><span class="sxs-lookup"><span data-stu-id="49644-121">Delete a Microsoft Authenticator authentication method.</span></span>|
+|[<span data-ttu-id="49644-122">windowsHelloForBusinessAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="49644-122">windowsHelloForBusinessAuthenticationMethod</span></span>](windowsHelloForBusinessAuthenticationMethod.md)|<span data-ttu-id="49644-123">Windows Hello для бизнеса — это метод без паролей для регистрации на устройствах Windows.</span><span class="sxs-lookup"><span data-stu-id="49644-123">Windows Hello for Business is a passwordless sign-in method on Windows devices.</span></span>|<span data-ttu-id="49644-124">См. устройства, на которых пользователь включил вход в Windows Hello для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="49644-124">See devices where a user has enabled Windows Hello for Business sign-in.</span></span> <span data-ttu-id="49644-125">Удаление учетных данных Windows Hello для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="49644-125">Delete a Windows Hello for Business credential.</span></span>|
+
+## <a name="next-steps"></a><span data-ttu-id="49644-126">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="49644-126">Next steps</span></span>
+
+* <span data-ttu-id="49644-127">Просмотрите типы методов проверки подлинности и их различные методы.</span><span class="sxs-lookup"><span data-stu-id="49644-127">Review the authentication method types and their various methods.</span></span>
+* <span data-ttu-id="49644-128">Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="49644-128">Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
