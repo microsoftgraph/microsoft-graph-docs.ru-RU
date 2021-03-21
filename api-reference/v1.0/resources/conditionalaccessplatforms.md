@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса conditionalAccessPlatforms
-description: Платформы, включенные в область политики и исключенные из нее.
+title: тип ресурса conditionalAccessPlatforms
+description: Платформы, включенные и исключенные из области политики.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6d5a6d85e1341a7c742c1691a8fa126b1d5644dd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b6dac42062d84746196caaa0a11c26af1549b555
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130783"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962485"
 ---
-# <a name="conditionalaccessplatforms-resource-type"></a>Тип ресурса conditionalAccessPlatforms
+# <a name="conditionalaccessplatforms-resource-type"></a>тип ресурса conditionalAccessPlatforms
 
 Пространство имен: microsoft.graph
 
-Платформы, включенные в область политики и исключенные из нее.
+Платформы, включенные и исключенные из области политики.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|includePlatforms|Коллекция String| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
-|excludePlatforms|Коллекция String| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.|
+|includePlatforms|коллекция conditionalAccessDevicePlatform| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
+|excludePlatforms|коллекция conditionalAccessDevicePlatform| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 

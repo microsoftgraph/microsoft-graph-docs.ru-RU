@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса cloudAppSecuritySessionControl
-description: Контроль сеансов, используемый для принудительной проверки безопасности облачных приложений.
+title: тип ресурса cloudAppSecuritySessionControl
+description: Управление сеансами, используемая для обеспечения проверки безопасности облачных приложений.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b1eee93b3f80b6d7d916f38d783ca94cef8e81a1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c52322928b5ef2e2538031ae8c251bc9c1a4caac
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133058"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962513"
 ---
-# <a name="cloudappsecuritysessioncontrol-resource-type"></a>Тип ресурса cloudAppSecuritySessionControl
+# <a name="cloudappsecuritysessioncontrol-resource-type"></a>тип ресурса cloudAppSecuritySessionControl
 
 Пространство имен: microsoft.graph
 
-Управление сеансами, используемая для принудительной проверки безопасности облачных приложений. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Управление сеансами, используемая для обеспечения проверки безопасности облачных приложений. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
-|cloudAppSecurityType|String| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Дополнительные сведения [см. в теме "Развертывание функции управления приложениями условного доступа для рекомендуемых приложений".](/cloud-app-security/proxy-deployment-aad) |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Дополнительные сведения см. в [приложении Deploy Conditional Access App Control для рекомендуемых приложений.](/cloud-app-security/proxy-deployment-aad) |
 
 ## <a name="relationships"></a>Связи
 

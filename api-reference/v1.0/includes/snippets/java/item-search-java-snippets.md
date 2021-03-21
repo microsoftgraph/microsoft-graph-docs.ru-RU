@@ -1,18 +1,21 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ba76a050dcd130f2d0ba415a13074e4b018b9290
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7cbd5a6d6d500806878e3cd213211522b8d26848
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983043"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50974920"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDriveItemSearchCollectionPage search = graphClient.me().drive().root()
-    .search("Contoso Project")
+DriveItemSearchCollectionPage search = graphClient.me().drive().root()
+    .search(DriveItemSearchParameterSet
+        .newBuilder()
+        .withQ("Contoso Project")
+        .build())
     .buildRequest()
     .get();
 

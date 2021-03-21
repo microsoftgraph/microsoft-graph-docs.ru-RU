@@ -1,38 +1,30 @@
 ---
-title: Тип ресурса МитингпартиЦипантинфо
-description: Сведения о участниках собрания.
+title: тип ресурса meetingParticipantInfo
+description: Сведения о участнике собрания.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a642532579d127fdeb48b4c69524975b293ff959
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 40209354f1621839bd51a20fcbafa4cd58b4fd8d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742001"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962457"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса МитингпартиЦипантинфо
+# <a name="meetingparticipantinfo-resource-type"></a>тип ресурса meetingParticipantInfo
 
 Пространство имен: microsoft.graph
 
-Сведения о участниках собрания.
+Сведения о участнике собрания.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип                          | Описание                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
-| хищения | [identitySet](identityset.md) | Сведения об удостоверении участника.                                            |
-| Основное      | String                        | Имя участника пользователя.                                             |
-| role     | онлинемитингроле             | Указывает роль участника в собрании.  Возможные значения перечислены в следующей таблице. |
-
-### <a name="onlinemeetingrole-values"></a>значения Онлинемитингроле
-
-| Значение              | Описание                     |
-| ------------------ | ------------------------------- |
-| attendee           | Участник является участником. |
-| докладчика          | Участник является выступающим. |
-| unknownFutureValue | Неизвестное будущее значение.           |
+| identity | [identitySet](identityset.md) | Сведения о удостоверениях участника.                                            |
+| upn      | String                        | Основное имя участника пользователя.                                             |
+| role     | onlineMeetingRole             | Указывает роль участника собрания.  Возможные значения: `attendee`, `presenter` и `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
