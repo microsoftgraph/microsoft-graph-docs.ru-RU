@@ -1,15 +1,15 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a7d306e3e20440198eef5cf978bfc300935120a3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a4a6199468fd27a07652219080b26b041fad5dc1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970387"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50982849"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String reason = "reason-value";
 
@@ -20,7 +20,13 @@ String ticketNumber = "ticketNumber-value";
 String ticketSystem = "ticketSystem-value";
 
 graphClient.privilegedRoles("{id}")
-    .selfActivate(reason,duration,ticketNumber,ticketSystem)
+    .selfActivate(PrivilegedRoleSelfActivateParameterSet
+        .newBuilder()
+        .withReason(reason)
+        .withDuration(duration)
+        .withTicketNumber(ticketNumber)
+        .withTicketSystem(ticketSystem)
+        .build())
     .buildRequest()
     .post();
 
