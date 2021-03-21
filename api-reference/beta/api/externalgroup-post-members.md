@@ -1,16 +1,16 @@
 ---
 title: Создание externalGroupMember
-description: Создание объекта externalGroupMember.
+description: Создание нового внешнего объектаGroupMember.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7029a0016099dc8ecdbd3ce86983c98b62dc61b1
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: d08e2646d34a165ac49176a1694613bd735682d4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873180"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956051"
 ---
 # <a name="create-externalgroupmember"></a>Создание externalGroupMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "49873180"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [externalGroupMember.](../resources/externalgroupmember.md)
+Создание нового [внешнего объектаGroupMember.](../resources/externalgroupmember.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,21 +48,21 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [externalGroupMember](../resources/externalgroupmember.md) в JSON.
+В теле запроса поставляем представление JSON внешнего [объектаGroupMember.](../resources/externalgroupmember.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта externalGroupMember.](../resources/externalgroupmember.md)
+В следующей таблице показаны свойства, необходимые при создании [externalGroupMember.](../resources/externalgroupmember.md)
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | Уникальный `id` член. Это будет objectId в случае пользователей или групп Azure Active Directory и externalGroupId в случае внешних групп.                                    |
-| type           | externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user` или когда идентификатор `group` identitySource и только `azureActiveDirectory` `group` тогда, когда идентификатор identitySource имеет значение `external` . |
-| identitySource | identitySourceType      | Источник удостоверений, к которой принадлежит участник. Возможные значения: `azureActiveDirectory`, `external`.                                                                                         |
+| id             | Строка                  | Уникальный `id` член. Это будет objectId в случае пользователей Или групп Azure Active Directory и externalGroupId в случае внешних групп.                                    |
+| type           | externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: или когда identitySource является и только `user` `group` `azureActiveDirectory` `group` тогда, когда identitySource `external` является . |
+| identitySource | identitySourceType      | Источник удостоверений, к которой принадлежит член. Возможные значения: `azureActiveDirectory`, `external`.                                                                                         |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [externalGroupMember](../resources/externalgroupmember.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [внешний объектGroupMember](../resources/externalgroupmember.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -74,7 +74,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from_"
+  "name": "create_externalgroupmember_from__1"
 }
 -->
 
@@ -90,19 +90,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalgroupmember-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalgroupmember-from--1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroupmember-from--objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroupmember-from--1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -135,9 +135,11 @@ Content-Type: application/json
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from_"
+  "name": "create_externalgroupmember_from__2"
 }
 -->
 
@@ -152,6 +154,24 @@ Content-Type: application/json
   "identitySource": "azureActiveDirectory"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalgroupmember-from--2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroupmember-from--2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
@@ -179,9 +199,11 @@ Content-Type: application/json
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from_"
+  "name": "create_externalgroupmember_from__3"
 }
 -->
 
@@ -196,6 +218,24 @@ Content-Type: application/json
   "identitySource": "external"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalgroupmember-from--3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroupmember-from--3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -1,22 +1,22 @@
 ---
 title: Создание объекта threatAssessmentRequest
-description: Создайте новый запрос на оценку угроз.
+description: Создайте новый запрос на оценку угрозы.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d26434d06d300fd24bb42d9f6b1a35d93e51b205
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: a31c1a4fc532de2f59132aba8c10eafa397a023f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330020"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956556"
 ---
 # <a name="create-threatassessmentrequest"></a>Создание объекта threatAssessmentRequest
 
-Создайте новый запрос на оценку угроз.
+Создайте новый запрос на оценку угрозы.
 
-Запрос на оценку угроз может иметь один из следующих типов:
+Запрос на оценку угроз может быть одним из следующих типов:
 
 * [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
@@ -49,15 +49,15 @@ POST /informationProtection/threatAssessmentRequests
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [среатассессментрекуест](../resources/threatassessmentrequest.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [threatAssessmentRequest.](../resources/threatassessmentrequest.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и новый объект `201 Created` [threatAssessmentRequest](../resources/threatassessmentrequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-mail-assessment-request"></a>Пример 1: Создание запроса на оценку почты
+### <a name="example-1-create-a-mail-assessment-request"></a>Пример 1. Создание запроса на оценку почты
 
 #### <a name="request"></a>Запрос
 
@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-email-assessment-request"></a>Пример 2: Создание запроса на оценку электронной почты
+### <a name="example-2-create-an-email-assessment-request"></a>Пример 2. Создание запроса на оценку электронной почты
 
 #### <a name="request"></a>Запрос
 
@@ -221,7 +221,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-file-assessment-request"></a>Пример 3: Создание запроса на оценку файла
+### <a name="example-3-create-a-file-assessment-request"></a>Пример 3. Создание запроса на оценку файлов
 
 #### <a name="request"></a>Запрос
 
@@ -302,7 +302,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-an-url-assessment-request"></a>Пример 4: Создание запроса на оценку URL-адреса
+### <a name="example-4-create-an-url-assessment-request"></a>Пример 4. Создание запроса на оценку URL-адреса
 
 #### <a name="request"></a>Запрос
 

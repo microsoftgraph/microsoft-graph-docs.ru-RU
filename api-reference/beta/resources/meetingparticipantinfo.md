@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса МитингпартиЦипантинфо
-description: Сведения о участниках собрания.
+title: тип ресурса meetingParticipantInfo
+description: Сведения о участнике собрания.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8e77322dee3f8d94fe8eaee226dce029133a578d
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 03d2c207d8c64d3e8b63dae223b624f575b193fd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635200"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956955"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса МитингпартиЦипантинфо
+# <a name="meetingparticipantinfo-resource-type"></a>тип ресурса meetingParticipantInfo
 
 Пространство имен: microsoft.graph
 
@@ -24,19 +24,11 @@ ms.locfileid: "48635200"
 
 | Свойство | Тип                          | Описание                                                                        |
 | :------- | :---------------------------- | :--------------------------------------------------------------------------------- |
-| хищения | [identitySet](identityset.md) | Сведения об удостоверении участника.                                           |
-| Основное      | String                        | Имя участника пользователя.                                            |
-| role     | онлинемитингроле             | Указывает роль участника в собрании.  Возможные значения: `attendee`, `presenter` и `unknownFutureValue`.|
+| identity | [identitySet](identityset.md) | Сведения о удостоверениях участника.                                           |
+| upn      | Строка                        | Основное имя участника пользователя.                                            |
+| role     | onlineMeetingRole             | Указывает роль участника собрания.  Возможные значения `attendee` , `presenter` и `producer` `unknownFutureValue` .|
 
-### <a name="onlinemeetingrole-values"></a>значения Онлинемитингроле
-
-| Значение              | Описание                     |
-| ------------------ | ------------------------------- |
-| attendee           | Участник является участником. |
-| докладчика          | Участник является выступающим. |
-| unknownFutureValue | Неизвестное будущее значение.           |
-
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

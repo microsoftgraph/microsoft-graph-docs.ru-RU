@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb34b77a381d22e22813539f0c186078077b3037
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e673ffebf6bfae9c7d4271ef117d9a8c388ab58a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442070"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956762"
 ---
 # <a name="permanently-delete-item"></a>Удаление элемента без возможности восстановления
 
@@ -31,6 +31,8 @@ ms.locfileid: "50442070"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
+У запросителя должна быть одна из следующих ролей: *Глобальный администратор* или *администратор приложений.*
+
 Для пользователей:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -39,6 +41,8 @@ ms.locfileid: "50442070"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Не поддерживается. |
 
+Пользователю, заявляемму, должна быть одна из следующих ролей: *Глобальный администратор* или *администратор пользователя.*
+
 Для групп:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -46,6 +50,8 @@ ms.locfileid: "50442070"
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
+
+У запросителя должна быть одна из следующих ролей: *Глобальный администратор* или *администратор групп.*
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

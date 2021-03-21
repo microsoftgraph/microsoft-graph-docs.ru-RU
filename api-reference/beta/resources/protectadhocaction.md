@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Протектадхокактион
-description: Информирует приложение о том, что необходимо применить нерегламентированную защиту.
+title: тип ресурса protectAdhocAction
+description: Информирует приложение о том, что должна применяться неохваляемая защита.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 77fa6cd57f6887fae16592041d31fd433e1086fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 611e935464006dce61287bdb181828544c37ab10
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078204"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956850"
 ---
-# <a name="protectadhocaction-resource-type"></a>Тип ресурса Протектадхокактион
+# <a name="protectadhocaction-resource-type"></a>тип ресурса protectAdhocAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Информирует приложение о том, что необходимо применить нерегламентированную защиту. **Протектадхокактион** информирует приложения о том, что метка должна применять нерегламентированную защиту. Нерегламентированная защита определяется пользователем или приложением во время выполнения. Приложение, использующее приложение, должно использовать пакет SDK для Microsoft Information Protection для локального применения защиты к файлу или данным.
+Информирует приложение о том, что должна применяться неохваляемая защита. **ProtectAdhocAction** информирует приложения о том, что метка должна применяться в качестве защиты. Ad hoc protection is defined at runtime by the user or application. Потребляющие приложения должны использовать SDK Microsoft Information Protection для локального применения защиты к файлу или данным.
 
 ## <a name="properties"></a>Свойства
 

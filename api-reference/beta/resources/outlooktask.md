@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 05f11678242aca85f64c742a3a74b2db287aa7bf
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1cf1958dc4d07c9bf2b322e6a4b576ce4a8191f6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721812"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956857"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>Тип ресурса outlookTask (нерекомендуемый)
 
@@ -69,16 +69,16 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
 |hasAttachments|Boolean|Присвоено значение true, если у задачи есть вложения.|
 |id|String| Уникальный идентификатор задачи. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
-|importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
+|importance|importance|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |owner|String|Имя пользователя, создавшего задачу.|
 |parentFolderId|String|Уникальный идентификатор родительской папки задачи.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время появления напоминания о задаче.|
-|sensitivity|string|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
+|sensitivity|sensitivity|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть начата.|
-|status|string|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|Краткое описание или название задачи.|
 
 ## <a name="relationships"></a>Связи

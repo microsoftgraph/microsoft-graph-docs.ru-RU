@@ -1,22 +1,22 @@
 ---
 title: Получение directoryAudit
-description: Описывает метод get ресурса directoryAudit (сущности) из API Microsoft Graph.
+description: Описывает метод получения ресурса directoryAudit из API Microsoft Graph.
 localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d54a39393b86d3e986c1723466adaf9203378529
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 068bc198b767afdb18e43e05fed316fb9ddaca57
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131735"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956752"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
 Пространство имен: microsoft.graph
 
-Получите определенный элемент журнала аудита Azure Active Directory. К ним относится элемент журнала аудита, созданный различными службами в Azure Active Directory, например пользователем, приложением, управлением устройствами и группой, привилегированным управлением удостоверениями (PIM), проверками доступа, условиями использования, защитой удостоверений, управлением паролями (самостоятельный сброс паролей и сброс паролей администратора), управлением группой самообслужения и так далее.
+Получите определенный элемент журнала аудита Azure Active Directory. Это включает элемент журнала аудита, созданный различными службами в Azure Active Directory, например пользователем, приложениями, управлением устройствами и группой, привилегированным управлением удостоверениями (PIM), обзорами доступа, условиями использования, защитой удостоверений, управление паролями (сбросы паролей самообслуживающего и администратора), управление группой самообслуживаний и так далее.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [directoryAudit](../resources/directoryaudit.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект directoryAudit](../resources/directoryaudit.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -62,26 +62,26 @@ GET /auditLogs/directoryAudits/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryaudit"
+  "name": "get_directoryaudit_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

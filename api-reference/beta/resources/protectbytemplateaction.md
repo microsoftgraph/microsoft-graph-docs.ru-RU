@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Протектбитемплатеактион
-description: Информирует приложение о том, что шаблон защиты Azure Information Protection должен быть применен.
+title: тип ресурса protectByTemplateAction
+description: Информирует приложение о том, что должен применяться шаблон защиты от информационных данных Azure.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 19103cd07404677b680606a6fd0ec9d4caa43600
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6524774af3faa496b141e37ec270f8a73770ee63
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993162"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956829"
 ---
-# <a name="protectbytemplateaction-resource-type"></a>Тип ресурса Протектбитемплатеактион
+# <a name="protectbytemplateaction-resource-type"></a>тип ресурса protectByTemplateAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Информирует приложение о том, что шаблон защиты Azure Information Protection должен быть применен. **протектионбитемплатеактион** может быть возвращено [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md) или [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) , если полученная метка настроена на применение защиты. Приложение-приложение должно прочитать templateId из результата, а затем использовать клиентскую библиотеку, например Microsoft Information Protection SDK, для применения защиты с помощью Azure Information Protection.
+Информирует приложение о том, что должен применяться шаблон защиты от информационных данных Azure. **ProtectionByTemplateAction** может быть возвращена с помощью [оценкиApplication](../api/informationprotectionlabel-evaluateapplication.md) или [evaluateClassificationResults,](../api/informationprotectionlabel-evaluateclassificationresults.md) если в результате метка настроена на применение защиты. Потребляющие приложения должны считыть шаблонId из результата, а затем использовать клиентскую библиотеку, например SDK Microsoft Information Protection, для применения защиты с помощью Azure Information Protection.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип   | Описание                                                                        |
 | :--------- | :----- | :--------------------------------------------------------------------------------- |
-| templateId | String | GUID шаблона Azure Information Protection для применения к данным. |
+| templateId | Строка | GUID шаблона Azure Information Protection для применения к данным. |
 
 ## <a name="json-representation"></a>Представление JSON
 

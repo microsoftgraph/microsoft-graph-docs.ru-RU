@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 3e8707627b09784972a1a578fe4b6b84a623f4dd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8262d8c77d31abbd25aaaae26018c651f0dcfbe5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440244"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957018"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>Тип ресурса identityUserFlowAttribute
 
@@ -39,8 +39,8 @@ ms.locfileid: "50440244"
 |id|String|Идентификатор атрибута потока пользователей. Это автоматически созданный атрибут только для чтения.|
 |displayName|String|Отображаемое имя атрибута потока пользователей.|
 |description|String|Описание атрибута потока пользователей, демонстрируемое пользователю при регистрации.|
-|userFlowAttributeType|String|Тип атрибута потока пользователей. Это автоматически настроенный атрибут только для чтения. В зависимости от типа атрибута значением этого свойства является `builtIn` или `custom`.|
-|dataType|String|Тип данных атрибута потока пользователей. Это свойство нельзя изменить после создания атрибута потока пользователей. Поддерживаемые значения для **dataType**:<br/><ul><li>`string` — указывает, что dataType для identityUserFlowAttribute является строкой. </li><li>`boolean` — указывает, что dataType для identityUserFlowAttribute является логическим значением.</li><li>`int64` — указывает, что dataType для identityUserFlowAttribute является целым числом.</li></ul>|
+|userFlowAttributeType|identityUserFlowAttributeType|Тип атрибута потока пользователей. Это автоматически настроенный атрибут только для чтения. В зависимости от типа атрибута значением этого свойства является `builtIn`, `custom` или `required`.|
+|dataType|identityUserFlowAttributeDataType|Тип данных атрибута потока пользователей. Это свойство нельзя изменить после создания атрибута потока пользователей. Поддерживаемые значения для **dataType**: `string`, `boolean`, `int64`, `stringCollection`, `dateTime`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

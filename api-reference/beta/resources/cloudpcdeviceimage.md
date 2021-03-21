@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса cloudPcDeviceImage
-description: Представляет ресурс изображения на облачном компьютере.
+title: тип ресурса cloudPcDeviceImage
+description: Представляет ресурс изображений на облачном компьютере.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 14e3f28d9e7d91df953405bc36afff4d3405c886
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: d4a88bb4d826ead30d1d739e696dec76df5cbb2f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033901"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957067"
 ---
-# <a name="cloudpcdeviceimage-resource-type"></a>Тип ресурса cloudPcDeviceImage
+# <a name="cloudpcdeviceimage-resource-type"></a>тип ресурса cloudPcDeviceImage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ресурс изображения на облачном компьютере.
+Представляет ресурс изображений на облачном компьютере.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,40 +26,42 @@ ms.locfileid: "50033901"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список deviceImages](../api/virtualendpoint-list-deviceimages.md)|[Коллекция cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Список свойств и связей объектов [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
-|[Get cloudPcDeviceImage](../api/cloudpcdeviceimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Чтение свойств и связей объекта [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
-|[Создание cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Создание объекта [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
-|[Удаление cloudPcDeviceImage](../api/cloudpcdeviceimage-delete.md)|Нет|Удаление объекта [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
-|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[Коллекция cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md)|Получите [объекты cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md)|
+|[Список устройствImages](../api/virtualendpoint-list-deviceimages.md)|[коллекция cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Список свойств и связей объектов [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
+|[Get cloudPcDeviceImage](../api/cloudpcdeviceimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Ознакомьтесь с свойствами и отношениями объекта [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
+|[Создание cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
+|[Удаление cloudPcDeviceImage](../api/cloudpcdeviceimage-delete.md)|Нет|Удаление [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
+|[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[коллекция cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md)|Получите [объекты cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md)|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор ресурса изображения на облачном компьютере. Только для чтения.|
-|sourceImageResourceId|String|ИД ресурса исходных изображений в Azure. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
-|displayName|String|Отображаемая фамилия изображения.|
+|id|Строка|Уникальный идентификатор для ресурса изображений на облачном компьютере. Только для чтения.|
+|sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|Строка|Имя отображения изображения.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
-|osBuildNumber|String|Версия сборки ОС образа. Например: 1909.|
-|operatingSystem|String|Операционная система образа. Например: Windows 10 Корпоративная.|
-|lastModifiedDateTime|DateTimeOffset|Данные и время последнего изменения изображения. Время отображается в формате ISO 8601 и времени в формате UTC. Например, полночь 1 января 2014 г. в UTC отображается как "2014-01-01T00:00:00Z".|
+|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
+|operatingSystem|String|Операционная система изображения. Например: Windows 10 Enterprise.|
+|lastModifiedDateTime|DateTimeOffset|Данные и время последнего изменения изображения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC). Например, полночь UTC 1 января 2014 г. отображается как '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|Состояние изображения на облачном компьютере. Возможные значения: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, которые указывают, почему не удалось отправить, если применимо. Возможные значения: `internalServerError`, `sourceImageNotFound`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, который указывает, почему не удалось загрузить, если применимо. Возможные значения: `internalServerError`, `sourceImageNotFound`.|
 
-### <a name="cloudpcdeviceimagestatus-values"></a>Значения cloudPcDeviceImageStatus
-
-|Member|Описание|
-|:---|:---|
-|pending|Идет отправка изображения.|
-|ready|Изображение готово к использованию на облачных ПК.|
-|failed|Не удалось отправить изображение. |
-
-### <a name="cloudpcdeviceimagestatusdetails-values"></a>Значения cloudPcDeviceImageStatusDetails
+### <a name="cloudpcdeviceimagestatus-values"></a>значения cloudPcDeviceImageStatus
 
 |Member|Описание|
 |:---|:---|
-|internalServerError|При обработке образа произошла внутренняя ошибка сервера.|
-|sourceImageNotFound|Исходный образ не является допустимым для предоставления к ней ВМ Для Windows.|
+|ожидание|Загрузка изображения продолжается.|
+|готово|Изображение готово для использования на облачных ПК.|
+|не удалось|Изображение не может быть загружено. |
+
+### <a name="cloudpcdeviceimagestatusdetails-values"></a>значения cloudPcDeviceImageStatusDetails
+
+|Member|Описание|
+|:---|:---|
+|internalServerError|При обработке изображения произошла внутренняя ошибка сервера.|
+|sourceImageNotFound|Исходный образ недоступен или не найден.|
+|osVersionNotSupported| Версия ОС не поддерживается.|
+|sourceImageInvalid|Исходный образ не является допустимым для обеспечения windows VM с ним.|
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 895e14894e6fed97031911744288c3e78dac8b36
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 33865876b1750c13c6f2eec77aa09f4fa57191d2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721203"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957129"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -50,16 +50,12 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.  
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` и `$expand` для настройки отклика.  
 
-Если ваш запрос включает параметр `$expand=manager($levels=n)` для получения цепочки руководителей, вы также должны указать следующее:
-
-- Параметр строки запроса `$count=true`
-- Заголовок запроса `ConsistencyLevel=eventual`
-
->**Примечание.** Значение `n` `$levels` может быть `max` (для возврата всех руководителей) или числа от 1 до 1000.  
-> Если параметр `$level` не указан, возвращается только непосредственный руководитель.  
-> Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей: `$expand=manager($levels=max;$select=id,displayName)`
+>**Примечание:** 
+> + Значение может быть (для возврата всех менеджеров) или числом от 1 до `n` `$levels` `max` 1000.  
+> + Если параметр `$levels` не указан, возвращается только непосредственный руководитель.  
+> + Вы можете `$select` указать внутри, чтобы выбрать свойства `$expand` отдельного менеджера. Параметр `$levels` необходим: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -87,25 +83,25 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_manager"
+  "name": "get_manager_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

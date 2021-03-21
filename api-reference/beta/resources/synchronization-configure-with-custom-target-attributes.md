@@ -1,16 +1,16 @@
 ---
 title: Настройка синхронизации с настраиваемых целевых атрибутов
-description: Настройте схему синхронизации так, чтобы она включала настраиваемые атрибуты, определенные в целевом каталоге.
+description: Настройте схему синхронизации, чтобы включить настраиваемые атрибуты, определенные в целевом каталоге.
 localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ecaecceed2ae45a3a8b5de66497d061227365ffe
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 865cde06cded24f9f2920e63535e037a2b477330
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134699"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956913"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с настраиваемых целевых атрибутов
 
@@ -18,13 +18,13 @@ ms.locfileid: "50134699"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Схему синхронизации можно настроить так, чтобы она включала настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается настройка подписки Salesforce путем добавления нового поля под названием `officeCode` . Вы настроили синхронизацию из Azure Active Directory (Azure AD) в Salesforce, и для каждого пользователя вы заполните поле в Salesforce значением из поля `officeCode` `extensionAttribute10` в Azure AD.
+Можно настроить схему синхронизации, чтобы включить настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается настройка подписки Salesforce путем добавления нового поля под названием `officeCode` . Вы настроили синхронизацию из Azure Active Directory (Azure AD) в Salesforce, и для каждого пользователя поле Salesforce будет заполнено значением из поля `officeCode` `extensionAttribute10` Azure AD.
 
-В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью портала [Azure,](https://portal.azure.com)что вы знаете отображаемого имени приложения и у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, см. в подзапуске маркеров доступа [для вызова Microsoft Graph.](/graph/auth/)
+В этой статье предполагается, что вы уже добавили в клиент приложение, которое поддерживает синхронизацию с клиентом через портал [Azure,](https://portal.azure.com)что вы знаете имя отображения приложения и что у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, см. в записи [Get access tokens to call Microsoft Graph.](/graph/auth/)
 
-## <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта-службы по отображаемой имени
+## <a name="find-the-service-principal-object-by-display-name"></a>Поиск основного объекта службы по имени отображения
 
-В следующем примере показано, как найти объект-службу с отображаемой именем Salesforce.
+В следующем примере показано, как найти основной объект службы с отображаемой именем Salesforce.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -55,9 +55,9 @@ Authorization: Bearer {Token}
 The `{servicePrincipalId}` is `167e33e9-f80e-490e-b4d8-698d4a80fb3e` .
 
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Список заданий синхронизации в контексте основного службы 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Задания синхронизации списков в контексте основного задания службы 
 
-В следующем примере показано, как получить необходимые `jobId` данные. Как правило, ответ возвращает только одно задание.
+В следующем примере показано, как получить необходимое `jobId` для работы. Как правило, ответ возвращает только одну работу.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -86,32 +86,32 @@ The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationschema"
+  "name": "get_synchronizationschema_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",
@@ -209,20 +209,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Добавление определения для атрибута officeCode и сопоставления между атрибутами
+## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Добавление определения атрибута OfficeCode и сопоставления между атрибутами
 
-Используйте обычный текстовый редактор по вашему выбору (например, [Блокнот++](https://notepad-plus-plus.org/) или [JSON Editor Online),](https://www.jsoneditoronline.org/)чтобы:
+Используйте обычный текстовый редактор по вашему выбору (например, [Notepad++](https://notepad-plus-plus.org/) или [JSON Editor Online),](https://www.jsoneditoronline.org/)чтобы:
 
-1. Добавьте определение [атрибута](synchronization-attributedefinition.md) `officeCode` для атрибута. 
+1. Добавьте определение [атрибута](synchronization-attributedefinition.md) для `officeCode` атрибута. 
 
-    - В каталогах найдите каталог с именем salesforce.com, а в массиве объекта найдите каталог с именем **User**.
+    - В каталогах найдите каталог с именем salesforce.com, а в массиве объекта найдите имя **Пользователя.**
     - Добавьте новый атрибут в список, указав имя и тип, как показано в следующем примере.
 
-2. Добавьте [сопоставление атрибутов между](synchronization-attributemapping.md) `officeCode` и `extensionAttribute10` .
+2. Добавьте [сопоставление атрибутов](synchronization-attributemapping.md) между `officeCode` и `extensionAttribute10` .
 
-    - В [synchronizationRules](synchronization-synchronizationrule.md)найдите правило, которое указывает Azure AD в качестве источника каталога, и Salesforce.com в качестве целевого каталога ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
-    - В [объектахmappings](synchronization-objectmapping.md) правила найдите сопоставление между пользователями ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
-    - В массив [attributeMappings](synchronization-attributemapping.md) **объектаMapping** добавьте новую запись, как показано в следующем примере.
+    - В [рамках синхронизацииRules](synchronization-synchronizationrule.md)найдите правило, которое указывает Azure AD в качестве источника каталога, а Salesforce.com в качестве целевого каталога ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
+    - В [objectMappings правила](synchronization-objectmapping.md) найдите сопоставление между пользователями ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
+    - В [массиве attributeMappings](synchronization-attributemapping.md) **объектаMapping** добавьте новую запись, как показано в следующем примере.
 
 ```json
 {  
@@ -274,7 +274,7 @@ Content-Type: application/json
 
 ## <a name="save-the-modified-synchronization-schema"></a>Сохранение измененной схемы синхронизации
 
-При сохранение обновленной схемы синхронизации убедитесь, что включена вся схема, включая неизмененые части. Этот запрос заменит существующую схему на предоставляемую.
+При сохранения обновленной схемы синхронизации убедитесь, что в нее включена вся схема, включая неизменененные части. Этот запрос заменит существующую схему на предоставляемую.
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -287,7 +287,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-Если схема успешно сохранена, при следующей итерации задания синхронизации она начнет повторно обрабатывать все учетные записи в Azure AD, и новые сопоставления будут применены для всех учетных записей, которые были готовы.
+Если схема была успешно сохранена, при следующей итерации задания синхронизации она начнет повторно обрабатывать все учетные записи в Azure AD, и новые сопоставления будут применены для всех учетных записей.
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

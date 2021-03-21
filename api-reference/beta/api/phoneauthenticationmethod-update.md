@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: af68131407948d1986a74e6f6d97540891f617b4
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 62d6dfbdf2e9025b3bdd0732b69b54e036045913
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516810"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957291"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Обновление phoneAuthenticationMethod
 
@@ -32,17 +32,17 @@ ms.locfileid: "50516810"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -57,6 +57,10 @@ ms.locfileid: "50516810"
 PUT /me/authentication/phoneMethods/{id}
 PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
+Значение, `id` соответствующее обновлению phoneType, является одним из следующих:
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` обновление `alternateMobile` **phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` обновление `office` **phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` обновление `mobile` **phoneType**.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

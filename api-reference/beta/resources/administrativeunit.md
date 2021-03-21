@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 251aa5113e6ebd20b4f58f4cde340dbfbbd3d2ce
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 44f0c10e6eb1cd1b95bdd4ba887721b65293d3f1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433238"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957095"
 ---
 # <a name="administrativeunit-resource-type"></a>тип ресурса administrativeUnit
 
@@ -59,7 +59,7 @@ ms.locfileid: "50433238"
 |description|string|Необязательное описание административного подразделения.|
 |displayName|string|Отображение имени административного подразделения.|
 |id|string|Уникальный идентификатор для административного подразделения. Только для чтения.|
-|visibility|string|Контролирует, скрыта ли админстративная единица и ее члены. Можно установить в HiddenMembership или Public. Если не установлено, поведение по умолчанию является общедоступным. При наборе к HiddenMembership только члены административного подразделения могут перечислять других членов админстративного подразделения.|
+|visibility|string|Контролирует, скрыта ли административная единица и ее члены. Можно установить `HiddenMembership` или `Public` . Если не установлено, по умолчанию поведение `Public` . При наборе только члены административного подразделения могут перечислять других членов `HiddenMembership` административного подразделения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
