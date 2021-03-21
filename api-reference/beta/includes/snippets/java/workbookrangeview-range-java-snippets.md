@@ -1,18 +1,21 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b30b82234053a4dedf3336303217a98013b15c2c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 899320e73a14b0a8ef7f300512e68d4205405ec2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970786"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50972495"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRange workbookRange = graphClient.drive().root().workbook().worksheets("{id}")
-    .range("A1:Z10")
+    .range(WorkbookWorksheetRangeParameterSet
+        .newBuilder()
+        .withAddress("A1:Z10")
+        .build())
     .visibleView()
     .range()
     .buildRequest()
