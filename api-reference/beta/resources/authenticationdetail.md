@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 134c3e502fa39fea626216315056adfeef5aef13
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0f7042b8b2be369c97e19cb038d7cf82fe07e96d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720342"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964568"
 ---
 # <a name="authenticationdetail-resource-type"></a>Тип ресурса authenticationDetail
 
@@ -24,11 +24,11 @@ ms.locfileid: "50720342"
 
 | Свойство                       | Тип           | Описание                                                                                                                                                                                                              |
 |:-------------------------------|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| authenticationMethod           | String         | Тип метода проверки подлинности, используемого для выполнения этого шага проверки подлинности. Возможные значения: `Password` , , , , `SMS` `Voice` `Authenticator App` `Software OATH token` `Satisfied by token` .                            |
-| authenticationMethodDetail     | String         | Сведения о методе проверки подлинности, используемом для выполнения этого шага проверки подлинности. Например, номер телефона (для SMS и голосовой связи), имя устройства (для приложения Authenticator) и источник паролей (например, облако, AD FS, PTA, PHS). |
+| authenticationMethod           | Строка         | Тип метода проверки подлинности, используемого для выполнения этого шага проверки подлинности. Возможные значения: `Password` , , , , , `SMS` `Voice` `Authenticator App` `Software OATH token` `Satisfied by token` `Previously satisfied` .                            |
+| authenticationMethodDetail     | Строка         | Сведения о методе проверки подлинности, используемом для выполнения этого шага проверки подлинности. Например, номер телефона (для SMS и голосовой связи), имя устройства (для приложения Authenticator) и источник паролей (например, облако, AD FS, PTA, PHS). |
 | authenticationStepDateTime     | DateTimeOffset | Представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.                                           |
-| authenticationStepRequirement  | String         | Шаг проверки подлинности, который это удовлетворит. Например, первичная проверка подлинности или многофакторная проверка подлинности.                                                                                                     |
-| authenticationStepResultDetail | String         | Сведения о том, почему этот шаг был успешным или неудачным. Например, пользователь заблокирован, введен код мошенничества, нет ввода телефона - приурочиваемый, телефон недоступен, или утверждение в маркере.                                                     |
+| authenticationStepRequirement  | Строка         | Шаг проверки подлинности, который это удовлетворит. Например, первичная проверка подлинности или многофакторная проверка подлинности.                                                                                                     |
+| authenticationStepResultDetail | Строка         | Сведения о том, почему этот шаг был успешным или неудачным. Например, пользователь заблокирован, введен код мошенничества, нет ввода телефона - приурочиваемый, телефон недоступен, или утверждение в маркере.                                                     |
 | успешно                      | Boolean        | Указывает состояние шага проверки подлинности. Возможные значения: `succeeded` , `failed` .                                                                                                                                 |
 
 ## <a name="json-representation"></a>Представление JSON

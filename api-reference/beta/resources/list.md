@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7eae3ca5530b04d004888edf1cfe75e67a83b310
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bc255a0bcddadbbf9190decc2d429eb88e91e67
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055318"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964563"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -32,15 +32,21 @@ ms.locfileid: "48055318"
 
 | Стандартная задача               | Метод HTTP
 |:--------------------------|:------------------------------
-| [Получение списка][]              | GET /lists/{list-id}
+| [Получить списки на сайте][]   | GET /sites/{site-id}/lists
 | [Создание списка][]           | POST /lists
+| [Получение списка][]              | GET /lists/{list-id}
 | [Перечисление элементов списка][]  | GET /lists/{list-id}/items
 | [Обновление элемента списка][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Создание элемента в списке][]      | POST /lists/{list-id}
 | [Получение последних действий][] | GET /lists/{list-id}/activities
 | [Получение канала WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
+|[Типы содержимого списка][]          | GET /lists/{list-id}/contentTypes
+|[Добавление копии типа контента с сайта][] | POST /lists/{list-id}/contentTypes/addCopy
+|[Список столбцов][]               | GET /lists/{list-id}/columns
+|[Создание столбца][]              | POST /lists/{list-id}/columns
 
+[Получить списки на сайте]: ../api/list-list.md
 [Получение списка]: ../api/list-get.md
 [Создание списка]: ../api/list-create.md
 [Перечисление элементов списка]: ../api/listitem-list.md
@@ -49,7 +55,10 @@ ms.locfileid: "48055318"
 [Создание элемента в списке]: ../api/listitem-create.md
 [Получение последних действий]: ../api/activities-list.md
 [Получение канала WebSocket]: ../api/subscriptions-socketio.md
-
+[Типы содержимого списка]: ../api/list-list-contenttypes.md
+[Добавление копии типа контента с сайта]: ../api/contenttype-addCopy.md
+[Список столбцов]: ../api/list-list-columns.md
+[Создание столбца]: ../api/list-post-columns.md
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса **list** в формате JSON.
