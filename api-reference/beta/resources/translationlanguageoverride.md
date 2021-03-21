@@ -3,14 +3,14 @@ title: тип ресурса translationLanguageOverride
 description: Ресурс, представляющий запись в переопределяемом списке языка перевода.
 localization_priority: Normal
 author: jasonbro
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 791908546c64cbb0ea7ee7434bece3dca5c894cc
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c9fa8d600ee3fb503446965d78491563c4ceae2e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518172"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954953"
 ---
 # <a name="translationlanguageoverride-resource-type"></a>тип ресурса translationLanguageOverride
 
@@ -24,7 +24,7 @@ ms.locfileid: "50518172"
 
 |Свойство             |Тип                                         |Описание                                                            |
 |---------------------|-------------------------------------------------------------|-----------------------------------------------------------------------|
-|LanguageTag          |String                                       |Язык для применения переопределения.<br><br>Возвращается по умолчанию. Значение null не допускается.       |                   
+|LanguageTag          |Строка                                       |Язык для применения переопределения.<br><br>Возвращается по умолчанию. Значение null не допускается.       |                   
 |translationBehavior  |[translationBehavior](translationPreferences.md#translationbehavior-values)        |Переопределять поведение перевода для языка, если таково.<br><br>Возвращается по умолчанию. Значение null не допускается.|
 
 ## <a name="json-representation"></a>Представление JSON

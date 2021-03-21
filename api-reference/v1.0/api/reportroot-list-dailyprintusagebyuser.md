@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 6e3e83749dcb64476f3c1cd83a1ef8594e25ef59
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: fcb2987cee07d21082323ad5e4cf62b11b4db2d8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774843"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954822"
 ---
 # <a name="list-dailyprintusagebyuser"></a>Список dailyPrintUsageByUser
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "50774843"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,26 +62,26 @@ GET /reports/dailyPrintUsageByUser
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_printusagebyuser"
+  "name": "list_printusagebyuser_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-printusagebyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printusagebyuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-printusagebyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printusagebyuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-printusagebyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printusagebyuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

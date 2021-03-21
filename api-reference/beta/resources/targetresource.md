@@ -1,36 +1,36 @@
 ---
-title: Сложный тип ресурса targetResource — API Microsoft Graph
-description: Определяет сложный тип ресурса объекта targetResource для API Microsoft Graph, который поддерживает действия организации (клиента) по отчетам журнала аудита.
+title: тип сложного типа ресурсов targetResource — API Microsoft Graph
+description: Определяет сложный тип API microsoft Graph, который поддерживает деятельность организации (клиента) по отчету о журнале аудита.
 author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 2dc8adea2edf11674d844cee4e5548da96882f7d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 12030bdb5c51e41e821218e3db67c4878a90c53d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137587"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954960"
 ---
-# <a name="targetresource-resource-type"></a>Тип ресурса targetResource
+# <a name="targetresource-resource-type"></a>тип ресурса targetResource
 
 Пространство имен: microsoft.graph
 
-Представляет целевые типы ресурсов, связанные с действиями аудита. 
+Представляет целевые типы ресурсов, связанные с деятельностью аудита. 
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка|Указывает уникальный ИД ресурса.|
+|id|Строка|Указывает уникальный ID ресурса.|
 |displayName|Строка|Указывает видимое имя, определенное для ресурса. Обычно указывается, когда создается ресурс.|
-|type|Строка|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , и `ServicePrincipal` `User` .|
-|userPrincipalName|String|Если **за** установлен тип, это включает имя пользователя, инициа которого было инициировано действие; для `User` других `null` типов.|
-|groupType|Строка|Если **за** установлен `Group` тип, это указывает на тип группы.|
-|modifiedProperties|[Коллекция modifiedProperty](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого из измененных атрибутов. Значения свойств зависят от типа **операции.**|
+|type|Строка|Описывает тип ресурса.  Примеры значений включают `Application` `Group` , и `ServicePrincipal` `User` .|
+|userPrincipalName|String|При **наборе** типа включается имя пользователя, которое `User` инициировало действие; для других `null` типов.|
+|groupType|groupType|При **наборе** типа указывается тип `Group` группы.  Возможные значения: `unifiedGroups` `azureAD` , и `unknownFutureValue`|
+|modifiedProperties|[измененная коллекцияProperty](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого измененного атрибута. Значения свойств зависят от **типа операции.**|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

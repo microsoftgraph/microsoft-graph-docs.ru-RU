@@ -1,24 +1,24 @@
 ---
-title: Получение параметров для пользователя Analytics
-description: Получение свойств объекта Settings для пользователя Analytics.
+title: Получить параметры для аналитики пользователей
+description: Извлечение свойств объекта параметров для пользовательской аналитики.
 localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 34041ad8f48a97c79399bc5a0f161cb7987a6957
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 607ddeea17942211cbd9988f5f3248385a0c7283
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974013"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955324"
 ---
-# <a name="get-settings-for-user-analytics"></a>Получение параметров для пользователя Analytics
+# <a name="get-settings-for-user-analytics"></a>Получить параметры для аналитики пользователей
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [Settings](../resources/settings.md) , который подходит для API аналитики.
+Извлечение свойств объекта [параметров](../resources/settings.md) в соответствии с API аналитики.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,13 +40,13 @@ GET /me/analytics/settings
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ GET /me/analytics/settings
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Settings](../resources/settings.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта параметров `200 OK` в тексте [](../resources/settings.md) ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -65,26 +65,26 @@ GET /me/analytics/settings
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_settings"
+  "name": "get_settings_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/analytics/settings
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-settings-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-settings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-settings-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-settings-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

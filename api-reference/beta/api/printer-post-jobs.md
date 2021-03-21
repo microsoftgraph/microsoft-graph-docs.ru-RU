@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: da2a664a6748f73b7dd5df78b7f5e75850860794
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 7ec456e899424f5c2831136cad6bb90f07e4b0cd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784864"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955695"
 ---
 # <a name="create-printjob-for-a-printer"></a>Создание printJob для принтера
 
@@ -23,13 +23,13 @@ ms.locfileid: "49784864"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, у пользователя или клиента приложения должна быть активная подписка на универсальную печать и разрешение, которое предоставляет [доступ к принтеру.](printer-get.md) Пользователь, выписав его, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Помимо следующих разрешений, пользователь или клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение, которое предоставляет [доступ к принтеру Get.](printer-get.md) Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Application| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,12 +44,12 @@ POST print/printers/{id}/jobs
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажийте представление объекта [printJob](../resources/printjob.md) в JSON. Объект printJob должен содержать только **конфигурацию.** Все свойства **конфигурации имеют** null. Все остальные поля, включая задания и ИД документов, задаются автоматически во время создания ресурса.
+В теле запроса поставляем представление JSON объекта [printJob.](../resources/printjob.md) Объект printJob должен содержать только **конфигурацию.** Все свойства **конфигурации** являются недействительными. Все остальные поля, включая ИД рабочих мест и документов, устанавливаются автоматически во время создания ресурсов.
 
-Сейчас универсальная печать поддерживает только один **объект printDocument для** **каждого объекта printJob.**
+Сейчас универсальный шрифт поддерживает только одну **печатьDocument на** **объект printJob.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа, объект `201 Created` [printJob](../resources/printjob.md) и связанный объект [printDocument](../resources/printDocument.md) в тексте отклика. 
+В случае успешного выполнения этот метод возвращает код отклика и объект printJob и связанный с ним `201 Created` [шрифтDocument](../resources/printDocument.md) в тексте ответа. [](../resources/printjob.md) 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -57,7 +57,7 @@ POST print/printers/{id}/jobs
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob"
+  "name": "create_printjob_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs
@@ -98,19 +98,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

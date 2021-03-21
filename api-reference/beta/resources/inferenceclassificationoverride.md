@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса inferenceClassificationOverride
-description: Представляет переопределения пользователя на то, как входящие сообщения от определенного отправитель всегда должны классифицироваться как
+description: Представляет переопределения пользователя в том, как всегда следует классифицировать входящие сообщения от конкретного отправи-
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 63149690230f1c83ba62f60e963a64a7300d22dc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 537032c220ed98fc9052afe6a31376359836fa94
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130895"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954999"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130895"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет переопределения пользователя в том, как входящие сообщения от определенного отправитель всегда должны классифицироваться как входящие в [отправляемые](manage-focused-inbox.md)сообщения.
+Представляет переопределения пользователя в том, как всегда следует классифицировать входящие сообщения от конкретного отправитель, как в [сфокусированных почтовых ящиках.](manage-focused-inbox.md)
 
 
 ## <a name="methods"></a>Методы
@@ -26,12 +26,12 @@ ms.locfileid: "50130895"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Обновление](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения указанным образом. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
+|[удаление](../api/inferenceclassificationoverride-delete.md); | Нет |Удаление переопределения по идентификатору. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classifyAs|string| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
+|classifyAs|inferenceClassificationType| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
 |id|string| Уникальный идентификатор переопределения. Только для чтения.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Сведения об электронном адресе отправителя, для которого создано переопределение.|
 

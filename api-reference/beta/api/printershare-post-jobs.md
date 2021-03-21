@@ -1,35 +1,35 @@
 ---
-title: Создание printJob для Принтершаре
-description: Создание нового printJob для объекта Принтершаре.
+title: Создание printJob для принтераShare
+description: Создайте новый printJob для принтераShare.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1e04b2eb45f39326010eefdc302c9e14980a09ba
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 643038023af0a805e32d88ea6d315a111541d2e8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968365"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955626"
 ---
-# <a name="create-printjob-for-a-printershare"></a>Создание printJob для Принтершаре
+# <a name="create-printjob-for-a-printershare"></a>Создание printJob для принтераShare
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [printJob](../resources/printJob.md) для объекта [принтершаре](../resources/printerShare.md). 
+Создайте новый [printJob](../resources/printJob.md) для [принтераShare](../resources/printerShare.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям пользователь или клиент приложения должен иметь активную универсальную подписку на печать и иметь разрешение на получение доступа к [принтершаре](printerShare-get.md) . Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Помимо следующих разрешений, пользователь или клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение, дава которое предоставляет доступ [get printerShare.](printerShare-get.md) Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| Не поддерживается. |
+|Application| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,14 +44,14 @@ POST print/shares/{id}/jobs
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [printJob](../resources/printjob.md) в формате JSON.
-Объект printJob должен содержать только **конфигурацию**. Все свойства **конфигурации** допускают значение null.
-Все остальные поля, включая задания и идентификаторы документов, задаются автоматически при создании ресурса.
+В теле запроса поставляем представление JSON объекта [printJob.](../resources/printjob.md)
+Объект printJob должен содержать только **конфигурацию.** Все свойства **конфигурации** являются недействительными.
+Все остальные поля, включая ИД рабочих мест и документов, задаются автоматически во время создания ресурсов.
 
-Теперь для универсальной печати поддерживается только один **printDocument** для каждого объекта **printJob** .
+Сейчас универсальный шрифт поддерживает только одну **печатьDocument на** **объект printJob.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [printJob](../resources/printjob.md) и связанный с [printDocument](../resources/printDocument.md) в теле отклика. 
+В случае успешного выполнения этот метод возвращает код отклика и объект printJob и связанный с ним `201 Created` [шрифтDocument](../resources/printDocument.md) в тексте ответа. [](../resources/printjob.md) 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -59,7 +59,7 @@ POST print/shares/{id}/jobs
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob"
+  "name": "create_printjob_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/jobs
@@ -100,19 +100,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

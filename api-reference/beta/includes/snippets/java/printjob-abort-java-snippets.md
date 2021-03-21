@@ -1,18 +1,21 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5a2349d78e02ffca8dd11e5d0448ca626f607ea9
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 94b61c15a724edeecd6ab2a62376826c6d17cfc6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691104"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50972563"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 graphClient.print().printers("{id}").jobs("{id}")
-    .abort(null)
+    .abort(PrintJobAbortParameterSet
+        .newBuilder()
+        .withReason(null)
+        .build())
     .buildRequest()
     .post();
 
