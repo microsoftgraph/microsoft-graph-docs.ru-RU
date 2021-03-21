@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Ремовепротектионактион
-description: Представляет действие для удаления защиты из файла или информации.
+title: removeProtectionAction resource type
+description: Представляет действие по удалению защиты из файла или сведений.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: bf4ad367038367d3572f0451bfa7d3eb0a25368d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b315c9d2641524d8a134f0e0b9704c51419ada4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073399"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962037"
 ---
-# <a name="removeprotectionaction-resource-type"></a><span data-ttu-id="445d9-103">Тип ресурса Ремовепротектионактион</span><span class="sxs-lookup"><span data-stu-id="445d9-103">removeProtectionAction resource type</span></span>
+# <a name="removeprotectionaction-resource-type"></a><span data-ttu-id="efdf9-103">removeProtectionAction resource type</span><span class="sxs-lookup"><span data-stu-id="efdf9-103">removeProtectionAction resource type</span></span>
 
-<span data-ttu-id="445d9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="445d9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="efdf9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="efdf9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="445d9-105">Представляет действие для удаления защиты из файла или информации.</span><span class="sxs-lookup"><span data-stu-id="445d9-105">Represents an action to remove protection from the file or information.</span></span> <span data-ttu-id="445d9-106">API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md), [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md)или [евалуатеремовал](../api/informationprotectionlabel-evaluateremoval.md) могут возвращать **ремовепротектионактион** , если необходимо удалить защиту в результате обновления или удаления метки.</span><span class="sxs-lookup"><span data-stu-id="445d9-106">The [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) APIs may return the **removeProtectionAction** if protection is to be removed as a result of updating or removing the label.</span></span> <span data-ttu-id="445d9-107">Действие предписывает приложению, которое использует приложение, удалить определенный элемент пользовательского интерфейса, который содержит заданный ранее заголовок контента.</span><span class="sxs-lookup"><span data-stu-id="445d9-107">The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content header.</span></span> <span data-ttu-id="445d9-108">Защита должна быть удалена с помощью клиентской библиотеки, например Microsoft Information Protection SDK, только в том случае, если вызывающий пользователь имеет достаточные права на удаление защиты.</span><span class="sxs-lookup"><span data-stu-id="445d9-108">Protection should be removed via a client library, such as the Microsoft Information Protection SDK, only if the calling user has sufficient rights to remove protection.</span></span>
+<span data-ttu-id="efdf9-105">Представляет действие по удалению защиты из файла или сведений.</span><span class="sxs-lookup"><span data-stu-id="efdf9-105">Represents an action to remove protection from the file or information.</span></span> <span data-ttu-id="efdf9-106">[ОценкаApplication,](../api/informationprotectionlabel-evaluateapplication.md) [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)или оценка APIRemoval могут вернуть **removeProtectionAction,** если защита будет удалена в результате обновления или удаления метки. [](../api/informationprotectionlabel-evaluateremoval.md)</span><span class="sxs-lookup"><span data-stu-id="efdf9-106">The [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) APIs may return the **removeProtectionAction** if protection is to be removed as a result of updating or removing the label.</span></span> <span data-ttu-id="efdf9-107">Действие предписывает потребляемому приложению удалить определенный элемент пользовательского интерфейса, содержащий ранее применимый заголовок контента.</span><span class="sxs-lookup"><span data-stu-id="efdf9-107">The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content header.</span></span> <span data-ttu-id="efdf9-108">Защита должна быть удалена с помощью клиентской библиотеки, например SDK Microsoft Information Protection, только если у вызываемого пользователя достаточно прав для удаления защиты.</span><span class="sxs-lookup"><span data-stu-id="efdf9-108">Protection should be removed via a client library, such as the Microsoft Information Protection SDK, only if the calling user has sufficient rights to remove protection.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="445d9-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="445d9-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="efdf9-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="efdf9-109">Properties</span></span>
 
-<span data-ttu-id="445d9-110">Нет</span><span class="sxs-lookup"><span data-stu-id="445d9-110">None</span></span>
+<span data-ttu-id="efdf9-110">Нет</span><span class="sxs-lookup"><span data-stu-id="efdf9-110">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="445d9-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="445d9-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="efdf9-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="efdf9-111">JSON representation</span></span>
 
-<span data-ttu-id="445d9-112">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="445d9-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="efdf9-112">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="efdf9-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
