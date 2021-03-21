@@ -5,34 +5,34 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: eade8383dd6ec9868e529ad1045ec3aa56971385
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 18852d96fe1ba37447c600b20895359584b3580a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776860"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959652"
 ---
-# <a name="create-printjob-for-a-printershare"></a><span data-ttu-id="b3a87-103">Создание printJob для принтераShare</span><span class="sxs-lookup"><span data-stu-id="b3a87-103">Create printJob for a printerShare</span></span>
-<span data-ttu-id="b3a87-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b3a87-104">Namespace: microsoft.graph</span></span>
+# <a name="create-printjob-for-a-printershare"></a><span data-ttu-id="7ca1f-103">Создание printJob для принтераShare</span><span class="sxs-lookup"><span data-stu-id="7ca1f-103">Create printJob for a printerShare</span></span>
+<span data-ttu-id="7ca1f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7ca1f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-<span data-ttu-id="b3a87-105">Создайте новый [printJob](../resources/printJob.md) для [принтераShare](../resources/printerShare.md).</span><span class="sxs-lookup"><span data-stu-id="b3a87-105">Create a new [printJob](../resources/printJob.md) for a [printerShare](../resources/printerShare.md).</span></span> 
+<span data-ttu-id="7ca1f-105">Создайте новый [printJob](../resources/printJob.md) для [принтераShare](../resources/printerShare.md).</span><span class="sxs-lookup"><span data-stu-id="7ca1f-105">Create a new [printJob](../resources/printJob.md) for a [printerShare](../resources/printerShare.md).</span></span> 
 
-<span data-ttu-id="b3a87-106">Также создается новый [printDocument,](../resources/printDocument.md) связанный с printJob.</span><span class="sxs-lookup"><span data-stu-id="b3a87-106">Also creates a new [printDocument](../resources/printDocument.md) associated with the printJob.</span></span>
+<span data-ttu-id="7ca1f-106">Также создается новый [printDocument,](../resources/printDocument.md) связанный с printJob.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-106">Also creates a new [printDocument](../resources/printDocument.md) associated with the printJob.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b3a87-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b3a87-107">Permissions</span></span>
-<span data-ttu-id="b3a87-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b3a87-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ca1f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7ca1f-107">Permissions</span></span>
+<span data-ttu-id="7ca1f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ca1f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="b3a87-110">Помимо следующих разрешений, пользователь или клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение, дава которое предоставляет доступ [get printerShare.](printerShare-get.md)</span><span class="sxs-lookup"><span data-stu-id="b3a87-110">In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printerShare](printerShare-get.md) access.</span></span> <span data-ttu-id="b3a87-111">Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="b3a87-111">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="7ca1f-110">Помимо следующих разрешений, пользователь или клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение, дава которое предоставляет доступ [get printerShare.](printerShare-get.md)</span><span class="sxs-lookup"><span data-stu-id="7ca1f-110">In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printerShare](printerShare-get.md) access.</span></span> <span data-ttu-id="7ca1f-111">Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="7ca1f-111">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="b3a87-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b3a87-112">Permission type</span></span> | <span data-ttu-id="b3a87-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b3a87-113">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="7ca1f-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7ca1f-112">Permission type</span></span> | <span data-ttu-id="7ca1f-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7ca1f-113">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="b3a87-114">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b3a87-114">Delegated (work or school account)</span></span>| <span data-ttu-id="b3a87-115">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3a87-115">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
-|<span data-ttu-id="b3a87-116">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b3a87-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b3a87-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b3a87-117">Not Supported.</span></span>|
-|<span data-ttu-id="b3a87-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="b3a87-118">Application</span></span>| <span data-ttu-id="b3a87-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b3a87-119">Not Supported.</span></span> |
+|<span data-ttu-id="7ca1f-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7ca1f-114">Delegated (work or school account)</span></span>| <span data-ttu-id="7ca1f-115">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ca1f-115">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
+|<span data-ttu-id="7ca1f-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7ca1f-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7ca1f-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-117">Not Supported.</span></span>|
+|<span data-ttu-id="7ca1f-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7ca1f-118">Application</span></span>| <span data-ttu-id="7ca1f-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-119">Not Supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b3a87-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b3a87-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ca1f-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7ca1f-120">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -42,29 +42,29 @@ ms.locfileid: "50776860"
 POST /print/shares/{printerShareId}/jobs
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b3a87-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b3a87-121">Request headers</span></span>
-|<span data-ttu-id="b3a87-122">Имя</span><span class="sxs-lookup"><span data-stu-id="b3a87-122">Name</span></span>|<span data-ttu-id="b3a87-123">Описание</span><span class="sxs-lookup"><span data-stu-id="b3a87-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7ca1f-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7ca1f-121">Request headers</span></span>
+|<span data-ttu-id="7ca1f-122">Имя</span><span class="sxs-lookup"><span data-stu-id="7ca1f-122">Name</span></span>|<span data-ttu-id="7ca1f-123">Описание</span><span class="sxs-lookup"><span data-stu-id="7ca1f-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="b3a87-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b3a87-124">Authorization</span></span>|<span data-ttu-id="b3a87-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b3a87-p103">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="b3a87-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b3a87-127">Content-Type</span></span>|<span data-ttu-id="b3a87-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b3a87-p104">application/json. Required.</span></span>|
+|<span data-ttu-id="7ca1f-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7ca1f-124">Authorization</span></span>|<span data-ttu-id="7ca1f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="7ca1f-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7ca1f-127">Content-Type</span></span>|<span data-ttu-id="7ca1f-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b3a87-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b3a87-130">Request body</span></span>
-<span data-ttu-id="b3a87-131">В теле запроса поставляем представление JSON объекта [printJob.](../resources/printjob.md)</span><span class="sxs-lookup"><span data-stu-id="b3a87-131">In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.</span></span> <span data-ttu-id="b3a87-132">Объект printJob должен содержать только **свойство конфигурации.**</span><span class="sxs-lookup"><span data-stu-id="b3a87-132">The printJob object should only contain **configuration** property.</span></span> <span data-ttu-id="b3a87-133">Все свойства **конфигурации** являются недействительными.</span><span class="sxs-lookup"><span data-stu-id="b3a87-133">All properties of **configuration** are nullable.</span></span> <span data-ttu-id="b3a87-134">Все другие поля, включая ИД рабочих мест и документов, устанавливаются автоматически во время создания ресурсов и не должны предоставляться в запросе.</span><span class="sxs-lookup"><span data-stu-id="b3a87-134">All other fields, including job and document IDs, are set automatically during resource creation and should not be provided in request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ca1f-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7ca1f-130">Request body</span></span>
+<span data-ttu-id="7ca1f-131">В теле запроса поставляем представление JSON объекта [printJob.](../resources/printjob.md)</span><span class="sxs-lookup"><span data-stu-id="7ca1f-131">In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.</span></span> <span data-ttu-id="7ca1f-132">Объект printJob должен содержать только **свойство конфигурации.**</span><span class="sxs-lookup"><span data-stu-id="7ca1f-132">The printJob object should only contain **configuration** property.</span></span> <span data-ttu-id="7ca1f-133">Все свойства **конфигурации** являются недействительными.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-133">All properties of **configuration** are nullable.</span></span> <span data-ttu-id="7ca1f-134">Все другие поля, включая ИД рабочих мест и документов, устанавливаются автоматически во время создания ресурсов и не должны предоставляться в запросе.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-134">All other fields, including job and document IDs, are set automatically during resource creation and should not be provided in request.</span></span>
 
-<span data-ttu-id="b3a87-135">Сейчас универсальный шрифт поддерживает только одну **печатьDocument на** **объект printJob.**</span><span class="sxs-lookup"><span data-stu-id="b3a87-135">Right now, Universal Print supports only one **printDocument** per **printJob** object.</span></span>
+<span data-ttu-id="7ca1f-135">Сейчас универсальный шрифт поддерживает только одну **печатьDocument на** **объект printJob.**</span><span class="sxs-lookup"><span data-stu-id="7ca1f-135">Right now, Universal Print supports only one **printDocument** per **printJob** object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b3a87-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3a87-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7ca1f-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ca1f-136">Response</span></span>
 
-<span data-ttu-id="b3a87-137">В случае успешного выполнения этот метод возвращает код отклика и объект printJob и связанный с ним `201 Created` [шрифтDocument](../resources/printDocument.md) в тексте ответа. [](../resources/printjob.md)</span><span class="sxs-lookup"><span data-stu-id="b3a87-137">If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body.</span></span> 
+<span data-ttu-id="7ca1f-137">В случае успешного выполнения этот метод возвращает код отклика и объект printJob и связанный с ним `201 Created` [шрифтDocument](../resources/printDocument.md) в тексте ответа. [](../resources/printjob.md)</span><span class="sxs-lookup"><span data-stu-id="7ca1f-137">If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body.</span></span> 
 
-## <a name="examples"></a><span data-ttu-id="b3a87-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="b3a87-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7ca1f-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="7ca1f-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="b3a87-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="b3a87-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7ca1f-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="7ca1f-139">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b3a87-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="b3a87-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7ca1f-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="7ca1f-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob_from_"
+  "name": "create_printjob_from__2"
 }
 -->
 ``` http
@@ -106,28 +106,28 @@ Content-length: 376
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="b3a87-141">C#</span><span class="sxs-lookup"><span data-stu-id="b3a87-141">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-from--csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="7ca1f-141">C#</span><span class="sxs-lookup"><span data-stu-id="7ca1f-141">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-from--2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b3a87-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b3a87-142">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-from--javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="7ca1f-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ca1f-142">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-from--2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b3a87-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b3a87-143">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-from--objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="7ca1f-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7ca1f-143">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-from--2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b3a87-144">Java</span><span class="sxs-lookup"><span data-stu-id="b3a87-144">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-from--java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="7ca1f-144">Java</span><span class="sxs-lookup"><span data-stu-id="7ca1f-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-from--2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-### <a name="response"></a><span data-ttu-id="b3a87-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3a87-145">Response</span></span>
-<span data-ttu-id="b3a87-146">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b3a87-146">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="7ca1f-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ca1f-145">Response</span></span>
+<span data-ttu-id="7ca1f-146">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="7ca1f-146">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

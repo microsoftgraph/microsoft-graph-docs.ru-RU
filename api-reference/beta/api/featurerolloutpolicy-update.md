@@ -2,75 +2,77 @@
 title: Обновление функцииRolloutPolicy
 description: Обновление свойств объекта featurerolloutpolicy.
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 26d5f16bd6d61689ff4cfe73b83c4a45add9c2f7
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 91567639b46a369305e8b02a3ee4cdde77f21aad
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471105"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959272"
 ---
-# <a name="update-featurerolloutpolicy"></a><span data-ttu-id="30ea6-103">Обновление featurerolloutpolicy</span><span class="sxs-lookup"><span data-stu-id="30ea6-103">Update featurerolloutpolicy</span></span>
+# <a name="update-featurerolloutpolicy"></a><span data-ttu-id="770e3-103">Обновление featurerolloutpolicy</span><span class="sxs-lookup"><span data-stu-id="770e3-103">Update featurerolloutpolicy</span></span>
 
-<span data-ttu-id="30ea6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="30ea6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="770e3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="770e3-104">Namespace: microsoft.graph</span></span>
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="30ea6-105">Обновление свойств [объекта featureRolloutPolicy.](../resources/featurerolloutpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="30ea6-105">Update the properties of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.</span></span>
+<span data-ttu-id="770e3-105">Обновление свойств [объекта featureRolloutPolicy.](../resources/featurerolloutpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="770e3-105">Update the properties of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="30ea6-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="30ea6-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="770e3-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="770e3-106">Permissions</span></span>
 
-<span data-ttu-id="30ea6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="30ea6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="770e3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="770e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="30ea6-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="30ea6-109">Permission type</span></span>                        | <span data-ttu-id="30ea6-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="30ea6-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="770e3-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="770e3-109">Permission type</span></span>                        | <span data-ttu-id="770e3-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="770e3-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="30ea6-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="30ea6-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="30ea6-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30ea6-112">Directory.ReadWrite.All</span></span> |
-| <span data-ttu-id="30ea6-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="30ea6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30ea6-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="30ea6-114">Not supported.</span></span> |
-| <span data-ttu-id="30ea6-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="30ea6-115">Application</span></span>                            | <span data-ttu-id="30ea6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="30ea6-116">Not supported.</span></span> |
+| <span data-ttu-id="770e3-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="770e3-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="770e3-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="770e3-112">Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="770e3-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="770e3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="770e3-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="770e3-114">Not supported.</span></span> |
+| <span data-ttu-id="770e3-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="770e3-115">Application</span></span>                            | <span data-ttu-id="770e3-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="770e3-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="30ea6-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="30ea6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="770e3-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="770e3-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /directory/featureRolloutPolicies/{id}
+PATCH /policies/featureRolloutPolicies/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="30ea6-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="30ea6-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="770e3-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="770e3-118">Request headers</span></span>
 
-| <span data-ttu-id="30ea6-119">Имя</span><span class="sxs-lookup"><span data-stu-id="30ea6-119">Name</span></span>       | <span data-ttu-id="30ea6-120">Описание</span><span class="sxs-lookup"><span data-stu-id="30ea6-120">Description</span></span>|
+| <span data-ttu-id="770e3-119">Имя</span><span class="sxs-lookup"><span data-stu-id="770e3-119">Name</span></span>       | <span data-ttu-id="770e3-120">Описание</span><span class="sxs-lookup"><span data-stu-id="770e3-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="30ea6-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="30ea6-121">Authorization</span></span> | <span data-ttu-id="30ea6-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="30ea6-122">Bearer {code}</span></span> |
+| <span data-ttu-id="770e3-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="770e3-121">Authorization</span></span> | <span data-ttu-id="770e3-122">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="770e3-122">Bearer {token}.</span></span> <span data-ttu-id="770e3-123">Обязательный</span><span class="sxs-lookup"><span data-stu-id="770e3-123">Required</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="30ea6-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="30ea6-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="770e3-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="770e3-124">Request body</span></span>
 
-<span data-ttu-id="30ea6-124">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="30ea6-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="30ea6-125">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="30ea6-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="30ea6-126">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="30ea6-126">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="770e3-125">В теле запроса укажи значения для соответствующих свойств, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="770e3-125">In the request body, supply the values for relevant properties that should be updated.</span></span> <span data-ttu-id="770e3-126">Предыдущие значения существующих свойств, не включенных в тело запроса, остаются прежними или повторно вычисляются с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="770e3-126">Existing properties that are not included in the request body maintain their previous values or are recalculated based on changes to other property values.</span></span> <span data-ttu-id="770e3-127">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="770e3-127">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="30ea6-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="30ea6-127">Property</span></span>     | <span data-ttu-id="30ea6-128">Тип</span><span class="sxs-lookup"><span data-stu-id="30ea6-128">Type</span></span>        | <span data-ttu-id="30ea6-129">Описание</span><span class="sxs-lookup"><span data-stu-id="30ea6-129">Description</span></span> |
+| <span data-ttu-id="770e3-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="770e3-128">Property</span></span>     | <span data-ttu-id="770e3-129">Тип</span><span class="sxs-lookup"><span data-stu-id="770e3-129">Type</span></span>        | <span data-ttu-id="770e3-130">Описание</span><span class="sxs-lookup"><span data-stu-id="770e3-130">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="30ea6-130">description</span><span class="sxs-lookup"><span data-stu-id="30ea6-130">description</span></span>|<span data-ttu-id="30ea6-131">String</span><span class="sxs-lookup"><span data-stu-id="30ea6-131">String</span></span>|<span data-ttu-id="30ea6-132">Описание этой политики.</span><span class="sxs-lookup"><span data-stu-id="30ea6-132">A description for this policy.</span></span>|
-|<span data-ttu-id="30ea6-133">displayName</span><span class="sxs-lookup"><span data-stu-id="30ea6-133">displayName</span></span>|<span data-ttu-id="30ea6-134">String</span><span class="sxs-lookup"><span data-stu-id="30ea6-134">String</span></span>|<span data-ttu-id="30ea6-135">Имя отображения для этой политики.</span><span class="sxs-lookup"><span data-stu-id="30ea6-135">The display name for this policy.</span></span>|
-|<span data-ttu-id="30ea6-136">isAppliedToOrganization</span><span class="sxs-lookup"><span data-stu-id="30ea6-136">isAppliedToOrganization</span></span>|<span data-ttu-id="30ea6-137">Логический</span><span class="sxs-lookup"><span data-stu-id="30ea6-137">Boolean</span></span>|<span data-ttu-id="30ea6-138">Указывает, следует ли применять эту политику выкатки функций ко всей организации.</span><span class="sxs-lookup"><span data-stu-id="30ea6-138">Indicates whether this feature rollout policy should be applied to the entire organization.</span></span>|
-|<span data-ttu-id="30ea6-139">isEnabled</span><span class="sxs-lookup"><span data-stu-id="30ea6-139">isEnabled</span></span>|<span data-ttu-id="30ea6-140">Boolean</span><span class="sxs-lookup"><span data-stu-id="30ea6-140">Boolean</span></span>|<span data-ttu-id="30ea6-141">Указывает, включена ли выкатка функций.</span><span class="sxs-lookup"><span data-stu-id="30ea6-141">Indicates whether the feature rollout is enabled.</span></span>|
+|<span data-ttu-id="770e3-131">description</span><span class="sxs-lookup"><span data-stu-id="770e3-131">description</span></span>|<span data-ttu-id="770e3-132">Строка</span><span class="sxs-lookup"><span data-stu-id="770e3-132">String</span></span>|<span data-ttu-id="770e3-133">Описание этой политики.</span><span class="sxs-lookup"><span data-stu-id="770e3-133">A description for this policy.</span></span>|
+|<span data-ttu-id="770e3-134">displayName</span><span class="sxs-lookup"><span data-stu-id="770e3-134">displayName</span></span>|<span data-ttu-id="770e3-135">Строка</span><span class="sxs-lookup"><span data-stu-id="770e3-135">String</span></span>|<span data-ttu-id="770e3-136">Имя отображения для этой политики.</span><span class="sxs-lookup"><span data-stu-id="770e3-136">The display name for this policy.</span></span>|
+|<span data-ttu-id="770e3-137">isAppliedToOrganization</span><span class="sxs-lookup"><span data-stu-id="770e3-137">isAppliedToOrganization</span></span>|<span data-ttu-id="770e3-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="770e3-138">Boolean</span></span>|<span data-ttu-id="770e3-139">Указывает, следует ли применять эту политику выкатки функций ко всей организации.</span><span class="sxs-lookup"><span data-stu-id="770e3-139">Indicates whether this feature rollout policy should be applied to the entire organization.</span></span>|
+|<span data-ttu-id="770e3-140">isEnabled</span><span class="sxs-lookup"><span data-stu-id="770e3-140">isEnabled</span></span>|<span data-ttu-id="770e3-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="770e3-141">Boolean</span></span>|<span data-ttu-id="770e3-142">Указывает, включена ли выкатка функций.</span><span class="sxs-lookup"><span data-stu-id="770e3-142">Indicates whether the feature rollout is enabled.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="30ea6-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="30ea6-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="770e3-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="770e3-143">Response</span></span>
 
-<span data-ttu-id="30ea6-143">В случае успешной работы этот метод возвращает код ответа и `200 OK` обновленный [объект featureRolloutPolicy](../resources/featurerolloutpolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="30ea6-143">If successful, this method returns a `200 OK` response code and an updated [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="770e3-144">В случае успешного выполнения этот метод возвращает код отклика `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="770e3-144">If successful, this method returns a `204 No content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="30ea6-144">Примеры</span><span class="sxs-lookup"><span data-stu-id="30ea6-144">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="770e3-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="770e3-145">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="30ea6-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="30ea6-145">Request</span></span>
+### <a name="request"></a><span data-ttu-id="770e3-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="770e3-146">Request</span></span>
 
-<span data-ttu-id="30ea6-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="30ea6-146">The following is an example of the request.</span></span>
+<span data-ttu-id="770e3-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="770e3-147">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "update_featurerolloutpolicy"
+  "name": "update_featurerolloutpolicy_policies"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
+PATCH https://graph.microsoft.com/beta/policies/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
 Content-type: application/json
 
 {
@@ -81,16 +83,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="30ea6-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="30ea6-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="770e3-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="770e3-148">Response</span></span>
 
-<span data-ttu-id="30ea6-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="30ea6-148">The following is an example of the response.</span></span>
-
-> <span data-ttu-id="30ea6-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="30ea6-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="770e3-149">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="770e3-149">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.featureRolloutPolicy"
 } -->
 
 ```http
