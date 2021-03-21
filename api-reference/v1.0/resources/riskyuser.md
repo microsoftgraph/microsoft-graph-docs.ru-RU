@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 00a284f4a3592ccf378e0e6f218c56902c219d51
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 82b622838ddd5e7fb8c00a969184bdd729926b23
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448993"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961085"
 ---
 # <a name="riskyuser-resource-type"></a>тип ресурса riskyUser
 
@@ -37,10 +37,10 @@ ms.locfileid: "50448993"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный ID пользователя в опасности.|
-|isDeleted|Логический|Указывает, удален ли пользователь. Возможные значения: `true` , `false`|
-|isProcessing|Логический|Указывает, что рискованное состояние пользователя обрабатывается backend|
+|isDeleted|Boolean|Указывает, удален ли пользователь. Возможные значения: `true`, `false`.|
+|isProcessing|Boolean|Указывает, обрабатывается ли приложением рискованное состояние пользователя.|
 |riskDetail|riskDetail|Сведения об обнаружении риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskLastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.|
+|riskLastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.  Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |riskLevel|riskLevel|Уровень обнаруженного рискованного пользователя. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|Состояние риска пользователя. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |userDisplayName|String|Рискованное имя отображения пользователя.|

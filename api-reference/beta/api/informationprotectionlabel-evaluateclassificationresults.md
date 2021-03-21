@@ -1,42 +1,42 @@
 ---
-title: 'Информатионпротектионлабел: Евалуатеклассификатионресултс'
-description: Определите, какую метку применить, на основе существующей информации о контенте и результата классификации.
+title: 'informationProtectionLabel: evaluateClassificationResults'
+description: Оцените, какую метку применять на основе существующих данных о контенте и результата классификации.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 25fafc91e9b230eb088bf379b33760ff83552882
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 46fdfc7ad1cfd798ecaf8685e1473da09701c1c1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952942"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960949"
 ---
-# <a name="informationprotectionlabel-evaluateclassificationresults"></a>Информатионпротектионлабел: Евалуатеклассификатионресултс
+# <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используя [Результаты классификации](../resources/classificationresult.md), рассчитать [метку защиты информации](../resources/informationprotectionlabel.md) , которая должна быть применена, и возвратить набор действий, которые необходимо выполнить, чтобы правильно обозначить информацию. Этот API полезен, если метка должна быть задана автоматически на основе классификации содержимого файла, а не непосредственно пользователем или службой. 
+С [помощью результатов](../resources/classificationresult.md) [](../resources/informationprotectionlabel.md) классификации вычислите метку защиты информации, которая должна быть применена, и верните набор действий, которые необходимо принять для правильной маркировки сведений. Этот API полезен, когда метка должна быть заданной автоматически на основе классификации содержимого файла, а не метки непосредственно пользователем или службой. 
 
-Для оценки на основе результатов классификации предоставьте [контентинфо](../resources/contentinfo.md), включающий существующие [пары "ключ-значение" и "](../resources/keyvaluepair.md)метаданные контента", а также [Результаты классификации](../resources/classificationresult.md). API возвращает объект [информатионпротектионактион](../resources/informationprotectionaction.md) , который содержит один из следующих элементов: 
+Чтобы оценить на основе результатов классификации, предостаточная [оценка контентаInfo,](../resources/contentinfo.md)который включает существующие пары [ключей/значений](../resources/keyvaluepair.md)метаданных контента и [результаты классификации.](../resources/classificationresult.md) API возвращает [informationProtectionAction,](../resources/informationprotectionaction.md) который содержит один из следующих ниже: 
 
-* [аддконтентфутерактион](../resources/addcontentfooteraction.md)
-* [аддконтенсеадерактион](../resources/addcontentheaderaction.md)
-* [аддватермаркактион](../resources/addWatermarkaction.md)
-* [апплилабелактион](../resources/applylabelaction.md)
-* [Запис](../resources/customaction.md)
-* [жустифяктион](../resources/justifyaction.md)
-* [метадатаактион](../resources/metadataaction.md)
-* [протектадхокактион](../resources/protectadhocaction.md)
-* [протектбитемплатеактион](../resources/protectBytemplateaction.md)
-* [протектиондонотфорвардактион](../resources/protectdonotforwardaction.md)
-* [рекоммендлабелактион](../resources/recommendlabelaction.md)
-* [ремовеконтентфутерактион](../resources/removecontentfooteraction.md)
-* [ремовеконтенсеадерактион](../resources/removecontentheaderaction.md)
-* [ремовепротектионактион](../resources/removeprotectionaction.md)
-* [ремовеватермаркактион](../resources/removewatermarkaction.md)
+* [addContentFooterAction](../resources/addcontentfooteraction.md)
+* [addContentHeaderAction](../resources/addcontentheaderaction.md)
+* [addWatermarkAction](../resources/addWatermarkaction.md)
+* [applyLabelAction](../resources/applylabelaction.md)
+* [customAction](../resources/customaction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
+* [protectAdhocAction](../resources/protectadhocaction.md)
+* [protectByTemplateAction](../resources/protectBytemplateaction.md)
+* [protectionDoNotForwardAction](../resources/protectdonotforwardaction.md)
+* [recommendLabelAction](../resources/recommendlabelaction.md)
+* [removeContentFooterAction](../resources/removecontentfooteraction.md)
+* [removeContentHeaderAction](../resources/removecontentheaderaction.md)
+* [removeProtectionAction](../resources/removeprotectionaction.md)
+* [removeWatermarkAction](../resources/removewatermarkaction.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ ms.locfileid: "48952942"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,7 +62,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
-| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -70,12 +70,12 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 
 | Параметр             | Тип                                                                    | Описание                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| контентинфо           | [контентинфо](../resources/contentInfo.md)                              | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение".                                                                                                                                                   |
-| классификатионресултс | Коллекция [классификатионресулт](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемых конечной точкой классификации данных. Сведения об классификации используются для определения соответствующей метки на основе конфигурации меток политики защиты информации Майкрософт в центре безопасности и соответствия требованиям Office 365. |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Содержит сведения о формате контента, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в качестве пар ключей и значений.                                                                                                                                                   |
+| classificationResults | [коллекция classificationResult](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемого конечной точкой классификации данных. Сведения о классификации используются для определения соответствующей метки на основе конфигурации метки политики защиты информации Майкрософт в Центре безопасности и соответствия требованиям Office 365. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и новый объект `200 OK` [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

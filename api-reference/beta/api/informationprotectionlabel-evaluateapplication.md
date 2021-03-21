@@ -1,42 +1,42 @@
 ---
-title: 'Информатионпротектионлабел: Евалуатеаппликатион'
-description: Определите, какую метку применить, на основе существующей информации о содержимом и желаемого состояния контента.
+title: 'informationProtectionLabel: evaluateApplication'
+description: Оцените, какую метку применять на основе существующей информации о контенте и желаемого состояния контента.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 6f3d4fc5915c79e41fc316d7dd0eeb0a46047c59
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b48fd3e0137e90232b484acd142224a9a8cdc70c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952886"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960961"
 ---
-# <a name="informationprotectionlabel-evaluateapplication"></a>Информатионпротектионлабел: Евалуатеаппликатион
+# <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel: evaluateApplication
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисление [Метки защиты информации](../resources/informationprotectionlabel.md) , которая должна быть применена, и возврат набора действий, которые необходимо выполнить, чтобы правильно обозначить информацию. Этот API полезен, если метку следует задать вручную или явным образом пользователем или службой, а не на основе содержимого файлов. 
+Вычислить [метку защиты](../resources/informationprotectionlabel.md) информации, которая должна применяться, и вернуть набор действий, которые необходимо принять для правильной метки информации. Этот API полезен, когда метка должна быть заданной пользователем или службой вручную или явно, а не автоматически на основе содержимого файла. 
 
-В данном [контентинфо](../resources/contentInfo.md), который включает существующие [пары ключей и значений](../resources/keyvaluepair.md)метаданных содержимого, и [лабелингоптионс](../resources/labelingoptions.md) в качестве входных данных, API возвращает объект [информатионпротектионактион](../resources/informationprotectionaction.md) , который содержит один из следующих элементов: 
+Учитывая [contentInfo,](../resources/contentInfo.md)который включает существующие пары [ключей/значений](../resources/keyvaluepair.md)метаданных контента и [меткиOptions](../resources/labelingoptions.md) в качестве ввода, API возвращает объект [informationProtectionAction,](../resources/informationprotectionaction.md) содержащий один из следующих ниже: 
 
-* [аддконтентфутерактион](../resources/addcontentfooteraction.md)
-* [аддконтенсеадерактион](../resources/addcontentheaderaction.md)
-* [аддватермаркактион](../resources/addWatermarkaction.md)
-* [апплилабелактион](../resources/applylabelaction.md)
-* [Запис](../resources/customaction.md)
-* [жустифяктион](../resources/justifyaction.md)
-* [метадатаактион](../resources/metadataaction.md)
-* [протектадхокактион](../resources/protectadhocaction.md)
-* [протектбитемплатеактион](../resources/protectBytemplateaction.md)
-* [протектиондонотфорвардактион](../resources/protectdonotforwardaction.md)
-* [рекоммендлабелактион](../resources/recommendlabelaction.md)
-* [ремовеконтентфутерактион](../resources/removecontentfooteraction.md)
-* [ремовеконтенсеадерактион](../resources/removecontentheaderaction.md)
-* [ремовепротектионактион](../resources/removeprotectionaction.md)
-* [ремовеватермаркактион](../resources/removewatermarkaction.md)
+* [addContentFooterAction](../resources/addcontentfooteraction.md)
+* [addContentHeaderAction](../resources/addcontentheaderaction.md)
+* [addWatermarkAction](../resources/addWatermarkaction.md)
+* [applyLabelAction](../resources/applylabelaction.md)
+* [customAction](../resources/customaction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
+* [protectAdhocAction](../resources/protectadhocaction.md)
+* [protectByTemplateAction](../resources/protectBytemplateaction.md)
+* [protectionDoNotForwardAction](../resources/protectdonotforwardaction.md)
+* [recommendLabelAction](../resources/recommendlabelaction.md)
+* [removeContentFooterAction](../resources/removecontentfooteraction.md)
+* [removeContentHeaderAction](../resources/removecontentheaderaction.md)
+* [removeProtectionAction](../resources/removeprotectionaction.md)
+* [removeWatermarkAction](../resources/removewatermarkaction.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ ms.locfileid: "48952886"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,7 +63,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
-| User-Agent    | Описывает имя вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User-Agent    | Описывает имя вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -71,12 +71,12 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 | Параметр       | Тип                                               | Описание                                                                                                                      |
 | :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| контентинфо     | [контентинфо](../resources/contentinfo.md)         | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение". |
-| лабелингоптионс | [лабелингоптионс](../resources/labelingoptions.md) | Предоставляет сведения о желаемом состоянии контента.                                                                         |
+| contentInfo     | [contentInfo](../resources/contentinfo.md)         | Предоставляет сведения о формате контента, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в качестве пар ключей и значений. |
+| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | Предоставляет сведения о желаемом состоянии контента.                                                                         |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и новый объект `200 OK` [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
