@@ -5,33 +5,33 @@ author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8f465a92440b973f15557916be3d362ad0db8645
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 682a43113d46509b8db5ae18ce01f749cc2836f3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777323"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958245"
 ---
-# <a name="add-app-to-chat"></a><span data-ttu-id="df9da-103">Добавление приложения в чат</span><span class="sxs-lookup"><span data-stu-id="df9da-103">Add app to chat</span></span>
+# <a name="add-app-to-chat"></a><span data-ttu-id="78334-103">Добавление приложения в чат</span><span class="sxs-lookup"><span data-stu-id="78334-103">Add app to chat</span></span>
 
-<span data-ttu-id="df9da-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="df9da-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="78334-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="78334-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="df9da-105">Установка [teamsApp](../resources/teamsapp.md) в указанном [чате](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="df9da-105">Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="78334-105">Установка [teamsApp](../resources/teamsapp.md) в указанном [чате](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="78334-105">Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).</span></span>
 
-> <span data-ttu-id="df9da-106">**Примечание.** Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md), объект **teamsApp** будет установлен для собрания.</span><span class="sxs-lookup"><span data-stu-id="df9da-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.</span></span>
+> <span data-ttu-id="78334-106">**Примечание.** Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md), объект **teamsApp** будет установлен для собрания.</span><span class="sxs-lookup"><span data-stu-id="78334-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="df9da-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="df9da-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="78334-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="78334-107">Permissions</span></span>
 
-<span data-ttu-id="df9da-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="df9da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="78334-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78334-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df9da-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="df9da-110">Permission type</span></span>      | <span data-ttu-id="df9da-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="df9da-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="78334-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="78334-110">Permission type</span></span>      | <span data-ttu-id="78334-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="78334-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="df9da-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="df9da-112">Delegated (work or school account)</span></span> | <span data-ttu-id="df9da-113">TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span><span class="sxs-lookup"><span data-stu-id="df9da-113">TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span></span> |
-|<span data-ttu-id="df9da-114">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="df9da-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df9da-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df9da-115">Not supported.</span></span>    |
-|<span data-ttu-id="df9da-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="df9da-116">Application</span></span> | <span data-ttu-id="df9da-117">TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span><span class="sxs-lookup"><span data-stu-id="df9da-117">TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span></span> |
+|<span data-ttu-id="78334-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="78334-112">Delegated (work or school account)</span></span> | <span data-ttu-id="78334-113">TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span><span class="sxs-lookup"><span data-stu-id="78334-113">TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span></span> |
+|<span data-ttu-id="78334-114">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="78334-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78334-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78334-115">Not supported.</span></span>    |
+|<span data-ttu-id="78334-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="78334-116">Application</span></span> | <span data-ttu-id="78334-117">TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span><span class="sxs-lookup"><span data-stu-id="78334-117">TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="df9da-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="df9da-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="78334-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="78334-118">HTTP request</span></span>
 
 <!-- { 
 "blockType": "ignored" 
@@ -41,26 +41,28 @@ ms.locfileid: "50777323"
 POST /chats/{chat-id}/installedApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="df9da-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="df9da-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="78334-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="78334-119">Request headers</span></span>
 
-| <span data-ttu-id="df9da-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="df9da-120">Header</span></span>       | <span data-ttu-id="df9da-121">Значение</span><span class="sxs-lookup"><span data-stu-id="df9da-121">Value</span></span> |
+| <span data-ttu-id="78334-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="78334-120">Header</span></span>       | <span data-ttu-id="78334-121">Значение</span><span class="sxs-lookup"><span data-stu-id="78334-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="df9da-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="df9da-122">Authorization</span></span>  | <span data-ttu-id="df9da-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="df9da-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="df9da-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="df9da-125">Content-Type</span></span>  | <span data-ttu-id="df9da-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="df9da-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="78334-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="78334-122">Authorization</span></span>  | <span data-ttu-id="78334-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="78334-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="78334-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="78334-125">Content-Type</span></span>  | <span data-ttu-id="78334-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="78334-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="df9da-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="df9da-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="78334-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="78334-128">Request body</span></span>
 
-<span data-ttu-id="df9da-129">Текст запроса должен содержать идентификатор приложения, созданный приложением каталога.</span><span class="sxs-lookup"><span data-stu-id="df9da-129">The request body should contain the catalog app's generated app ID.</span></span> <span data-ttu-id="df9da-130">Дополнительные сведения см. в разделе [Свойства teamsApp](../resources/teamsapp.md#properties).</span><span class="sxs-lookup"><span data-stu-id="df9da-130">For details, see [teamsApp properties](../resources/teamsapp.md#properties).</span></span>
+<span data-ttu-id="78334-129">Текст запроса должен содержать идентификатор приложения, созданный приложением каталога.</span><span class="sxs-lookup"><span data-stu-id="78334-129">The request body should contain the catalog app's generated app ID.</span></span> <span data-ttu-id="78334-130">Дополнительные сведения см. в разделе [Свойства teamsApp](../resources/teamsapp.md#properties).</span><span class="sxs-lookup"><span data-stu-id="78334-130">For details, see [teamsApp properties](../resources/teamsapp.md#properties).</span></span>
 
-## <a name="response"></a><span data-ttu-id="df9da-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="df9da-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="78334-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="78334-131">Response</span></span>
 
-<span data-ttu-id="df9da-132">В случае успешного выполнения этот метод возвращает код отклика `201 Created`.</span><span class="sxs-lookup"><span data-stu-id="df9da-132">If successful, this method returns a `201 Created` response code.</span></span>
+<span data-ttu-id="78334-132">В случае успешного выполнения этот метод возвращает код отклика `201 Created`.</span><span class="sxs-lookup"><span data-stu-id="78334-132">If successful, this method returns a `201 Created` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="df9da-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="df9da-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="78334-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="78334-133">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="df9da-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="df9da-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="78334-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="78334-134">Request</span></span>
 
 
+
+# <a name="http"></a>[<span data-ttu-id="78334-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="78334-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_app_in_chat"
@@ -74,9 +76,27 @@ Content-Type: application/json
 "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="78334-136">C#</span><span class="sxs-lookup"><span data-stu-id="78334-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-app-in-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="78334-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="78334-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-app-in-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="78334-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="78334-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-app-in-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="78334-139">Java</span><span class="sxs-lookup"><span data-stu-id="78334-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-app-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="df9da-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="df9da-135">Response</span></span>
+
+### <a name="response"></a><span data-ttu-id="78334-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="78334-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
