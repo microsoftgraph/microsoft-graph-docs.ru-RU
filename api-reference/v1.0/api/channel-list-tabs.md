@@ -1,32 +1,32 @@
 ---
 title: Список вкладок на канале
-description: 'Получить список вкладок в указанном канале в команде. '
+description: 'Извлечение списка вкладок в указанном канале в группе. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8e5b05654fb61da0c249aaa542a6c84be844f448
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 978e20366c7e0bc49b4bf7ba2a5172a5996847de
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690476"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964399"
 ---
 # <a name="list-tabs-in-channel"></a>Список вкладок на канале
 
 Пространство имен: microsoft.graph
 
 
-Получить список [вкладок в](../resources/teamstab.md) указанном [канале](../resources/channel.md) в [команде.](../resources/team.md) 
+Извлечение списка [вкладок](../resources/teamstab.md) в указанном [канале](../resources/channel.md) в [группе.](../resources/team.md) 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab.Read.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | TeamsTab.Read.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -51,7 +51,7 @@ GET /teams/{id}/channels/{id}/tabs
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [вкладок](../resources/teamstab.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [вкладок](../resources/teamstab.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -63,7 +63,7 @@ GET /teams/{id}/channels/{id}/tabs
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_channel_app_filter"
+  "name": "list_tabs_in_channel_app_filter_1"
 }
 -->
 
@@ -71,19 +71,19 @@ GET /teams/{id}/channels/{id}/tabs
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-app-filter-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-app-filter-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-app-filter-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-app-filter-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-app-filter-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-app-filter-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-app-filter-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-app-filter-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,7 +147,7 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_channel_app_filter"
+  "name": "list_tabs_in_channel_app_filter_2"
 }
 -->
 
@@ -155,19 +155,19 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.planner'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-app-filter-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-app-filter-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-app-filter-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-app-filter-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-app-filter-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-app-filter-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-app-filter-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-app-filter-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

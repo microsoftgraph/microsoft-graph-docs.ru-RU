@@ -1,22 +1,22 @@
 ---
-title: Удаление звонка
-description: Удаление или разрыв активного вызова.
+title: Удаление вызова
+description: Удаление или подвешить активный вызов.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e0759edf0a1b21a0c66cec8401c4198213535722
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cd34638570614aa0bae3e66a08f1558f361694a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966368"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964448"
 ---
-# <a name="delete-call"></a>Удаление звонка
+# <a name="delete-call"></a>Удаление вызова
 
 Пространство имен: microsoft.graph
 
-Удаление или разрыв активного вызова. Для звонков по группам это приведет к удалению только той стороны звонка, а базовый вызов групп будет продолжаться.
+Удаление или подвешить активный вызов. Для групповых вызовов это удаляет только ногу вызова, а в основном групповой вызов будет по-прежнему продолжаться.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "47966368"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложений                            | Нет.                                  |
+| Для приложений                            | Отсутствуют.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ DELETE /communications/calls/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -52,25 +52,25 @@ DELETE /communications/calls/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-call"
+  "name": "delete-call-1"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>Уведомление — завершение
+##### <a name="notification---terminating"></a>Уведомление — прекращение
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -117,7 +117,7 @@ Content-Type: application/json
   
 ```
 
-##### <a name="notification---terminated"></a>Уведомление — прервано
+##### <a name="notification---terminated"></a>Уведомление — прекращено
 
 ```http
 POST https://bot.contoso.com/api/calls

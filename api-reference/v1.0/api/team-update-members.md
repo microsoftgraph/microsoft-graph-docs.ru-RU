@@ -1,18 +1,18 @@
 ---
-title: Обновление участника команды
-description: Обновим роль участника в команде.
+title: Обновление участника в команде
+description: Обнови роль участника в команде.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 10f6c314b32229d88a64d65b75b9c42c23b46a54
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 8d4350b6409929d3b0b9116e81f8cfba785fc273
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49943705"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963639"
 ---
-# <a name="update-member-in-team"></a>Обновление участника команды
+# <a name="update-member-in-team"></a>Обновление участника в команде
 
 Пространство имен: microsoft.graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "49943705"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|TeamMember.ReadWrite.All. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|TeamMember.ReadWrite.All. |
+|Для приложений|TeamMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -43,27 +43,27 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укавите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укажи значения для обновления соответствующих полей. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роль пользователя. Должен быть `owner` пустым или пустым. Гостевых пользователей автоматически помеяют `guest` ролью, и это значение нельзя обновить. |
+|roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто. Гостевой пользователь автоматически штампуется `guest` ролью, и это значение не может быть обновлено. |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [conversationMember](../resources/conversationmember.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект conversationMember](../resources/conversationmember.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится запрос на применение роли `owner` к существующему участнику команды.
+Ниже приводится запрос на применение роли `owner` к существующему члену группы.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_member"
+  "name": "update_member_2"
 } -->
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
@@ -76,19 +76,19 @@ content-length: 26
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-member-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-member-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-member-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-member-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

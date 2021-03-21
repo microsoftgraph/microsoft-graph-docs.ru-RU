@@ -1,22 +1,22 @@
 ---
-title: Получение Тимеоффрекуест
-description: Получение свойств и связей объекта Тимеоффрекуест.
+title: Get timeOffRequest
+description: Извлечение свойств и связей объекта timeOffRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35d873a4019719ceee0557e22cdf52f37267281d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a55e4b9bda896084d177cef09908807162284c26
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044041"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963592"
 ---
-# <a name="get-timeoffrequest"></a>Получение Тимеоффрекуест
+# <a name="get-timeoffrequest"></a>Get timeOffRequest
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [тимеоффрекуест](../resources/timeoffrequest.md) .
+Извлечение свойств и связей объекта [timeoffrequest.](../resources/timeoffrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48044041"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками. в настоящее время только частный предварительный просмотр и недоступно для общедоступного использования.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами. в настоящее время только в закрытом предварительном просмотре и недоступны для общего пользования.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает параметры запросов OData для настройки отклика.
+Этот метод не поддерживает параметры запроса OData для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [тимеоффрекуест](../resources/timeoffrequest.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [timeOffRequest](../resources/timeoffrequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -66,26 +66,26 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_timeoffrequest"
+  "name": "get_timeoffrequest_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-timeoffrequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-timeoffrequest-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-timeoffrequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-timeoffrequest-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-timeoffrequest-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-timeoffrequest-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-timeoffrequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-timeoffrequest-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 630423c787f8a89734c56362b079a402a5606929
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 68266c75995fed51038319cf50e0925d5057fa91
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135620"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964536"
 ---
 # <a name="webapplication-resource-type"></a>Тип ресурса webApplication
 
@@ -24,12 +24,12 @@ ms.locfileid: "50135620"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| `homePageUrl` | String | Главная или начальная страница приложения. |
-| `implicitGrantSettings` | [implicitGrantSettings](implicitgrantsettings.md)| Указывает, может ли это веб-приложение запрашивать маркеры с помощью неявного потока OAuth 2.0. |
-| `logoutUrl` | String | Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
-| `redirectUris` | Коллекция объектов string | Указывает URL-адреса, в которые отправляются маркеры пользователей для входов, или URIS перенаправления, в которые отправляются коды авторизации OAuth 2.0 и маркеры доступа. |
+| homePageUrl | String | Главная или начальная страница приложения. |
+| implicitGrantSettings | [implicitGrantSettings](implicitgrantsettings.md)| Указывает, может ли это веб-приложение запрашивать маркеры с помощью неявного потока OAuth 2.0. |
+| logoutUrl | String | Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
+| redirectUris | Коллекция строк | Указывает URL-адреса, куда отправляются маркеры пользователей для регистрации, или URL-адреса перенаправления, куда отправляются коды авторизации OAuth 2.0 и маркеры доступа. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
