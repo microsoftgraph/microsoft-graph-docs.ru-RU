@@ -1,15 +1,15 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1f3dc5dd7720d34e443b4a62330750ed21bc7b54
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: 5875301239960708de2d22e32857c2959a89f66f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44055572"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50974026"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String type = "view";
 
@@ -18,7 +18,14 @@ String password = "ThisIsMyPrivatePassword";
 String scope = "anonymous";
 
 graphClient.me().drive().items("{item-id}")
-    .createLink(type,scope,null,password,null)
+    .createLink(DriveItemCreateLinkParameterSet
+        .newBuilder()
+        .withType(type)
+        .withScope(scope)
+        .withExpirationDateTime(null)
+        .withPassword(password)
+        .withMessage(null)
+        .build())
     .buildRequest()
     .post();
 

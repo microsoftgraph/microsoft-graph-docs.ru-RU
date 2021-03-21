@@ -1,22 +1,26 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c5fde4d01e3242d516459a63094072e335ad6f6e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e26b02a0eeee9546f4e110a206e55abf1a37ec6a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983995"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50983729"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String comment = "comment-value";
 
 Boolean sendResponse = true;
 
 graphClient.me().events("{id}")
-    .accept(comment,sendResponse)
+    .accept(EventAcceptParameterSet
+        .newBuilder()
+        .withComment(comment)
+        .withSendResponse(sendResponse)
+        .build())
     .buildRequest()
     .post();
 

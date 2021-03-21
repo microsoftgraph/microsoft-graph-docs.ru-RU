@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 57b633f469f4abe9edba550f151b13a8c71023f3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d4bcc59315eee0f4578963b9d29b40a3d4369ab2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881728"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978289"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDriveItemVersionCollectionPage versions = graphClient.me().drive().items("{item-id}").versions()
+DriveItemVersionCollectionPage versions = graphClient.me().drive().items("{item-id}").versions()
     .buildRequest()
     .get();
 
