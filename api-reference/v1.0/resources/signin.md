@@ -5,12 +5,12 @@ author: besiler
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d4ce200ba33cbc3896c967d85c6b83ce21a2bc63
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a4f3a16defa48f1f57072f3c009d4f8c223f47d8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721749"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961939"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 
@@ -31,8 +31,8 @@ ms.locfileid: "50721749"
 |appDisplayName|String|Имя приложения, отображаемая на портале Azure.|
 |appId|String|Уникальный GUID, представляющий ID приложения в Azure Active Directory.|
 |appliedConditionalAccessPolicy|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Предоставляет список политик условного доступа, запускаемых соответствующим действием входа.|
-|clientAppUsed|String|Определяет устаревший клиент, используемый для действий по входу.  Включает Браузер, Exchange Active Sync, современные клиенты, IMAP, MAPI, SMTP и POP.|
-|conditionalAccessStatus|string| Отчеты о состоянии активированной политики условного доступа. Возможные значения: `success` , , и `failure` `notApplied` `unknownFutureValue` .|
+|clientAppUsed|String|Определяет устаревший клиент, используемый для действий по входу.  Включает `Browser` , `Exchange Active Sync` `modern clients` , , , `IMAP` , , `MAPI` `SMTP` и `POP` .|
+|conditionalAccessStatus|conditionalAccessStatus| Отчеты о состоянии активированной политики условного доступа. Возможные значения: `success` , , и `failure` `notApplied` `unknownFutureValue` .|
 |correlationId|String|ID запроса, отправленный от клиента при входе; для устранения неполадок при входе.|
 |createdDateTime|DateTimeOffset|Дата и время (UTC) началась входная точка. Пример: полночь 1 января 2014 г. сообщается как `2014-01-01T00:00:00Z` .|
 |deviceDetail|[deviceDetail](devicedetail.md)|Сведения о устройстве, откуда произошла входная информация; включает ID устройства, операционную систему и браузер. |
@@ -44,7 +44,7 @@ ms.locfileid: "50721749"
 |resourceId|String|ID ресурса, в который подписан пользователь.|
 |riskDetail|riskDetail|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись. <br>**Примечание:** Сведения об этом свойстве требуют лицензии Azure AD Premium P2. Другие лицензии возвращают значение `hidden` .|
 |riskEventTypes|коллекция riskEventType|Типы событий риска, связанные с входом. Допустимые значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` и `unknownFutureValue`.|
-|riskEventTypes_v2|Коллекция объектов string|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` , , , , , , , , `anonymizedIPAddress` или `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` .|
+|riskEventTypes_v2|Коллекция строк|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` , , , , , , , , `anonymizedIPAddress` или `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` .|
 |riskLevelAggregated|riskLevel|Совокупный уровень риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskLevelDuringSignIn|riskLevel|Уровень риска при входе. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskState|riskState|Отчеты о состоянии рискованного пользователя, входе или событии риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|

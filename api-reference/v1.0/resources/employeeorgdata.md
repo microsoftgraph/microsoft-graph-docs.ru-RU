@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Емплойиоргдата
+title: тип ресурса employeeOrgData
 description: Представляет данные организации, связанные с пользователем.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: users
 author: cmmdesai
-ms.openlocfilehash: 841d3c7965309721d662475f2cba553c378c49ee
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 5e3ea0401730ffc8b15cae8c371d9352995c6f28
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635612"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961995"
 ---
-# <a name="employeeorgdata-resource-type"></a>Тип ресурса Емплойиоргдата
+# <a name="employeeorgdata-resource-type"></a>тип ресурса employeeOrgData
 
 Пространство имен: microsoft.graph
 
-Представляет данные организации, связанные с пользователем. Свойство **емплойиоргдата** объекта [User](user.md) — это коллекция атрибутов Организации.
+Представляет данные организации, связанные с пользователем. Свойство **employeeOrgData** сущности [пользователя](user.md) — это коллекция атрибутов организации.
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| division | String | Имя подразделения, в котором работает пользователь. <br><br>Возвращается только на `$select`. Поддерживает `$filter`. |
-| costCenter | String | Центр затрат, связанный с пользователем. <br><br>Возвращается только на `$select`. Поддерживает `$filter`. |
+| division | String | Имя подразделения, в котором работает пользователь. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
+| costCenter | String | Центр затрат, связанный с пользователем. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

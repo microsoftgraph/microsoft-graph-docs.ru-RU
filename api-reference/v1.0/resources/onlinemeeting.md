@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 8ded2e79f8a9a2004f2ffa412b6d42e3275556b8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ce334002b58849671ab2e602594af0c8335b1377
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516096"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961946"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -24,7 +24,7 @@ ms.locfileid: "50516096"
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | [Создание объекта onlineMeeting](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | Создание собрания в Интернете.                                                                                    |
 | [Get onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Ознакомьтесь с свойствами и отношениями **объекта onlineMeeting.**                                        |
-| [обновление](../api/onlinemeeting-update.md).                           | [onlineMeeting](onlinemeeting.md) | Обновление свойств объекта **onlineMeeting.** |
+| [Обновление](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Обновление свойств объекта **onlineMeeting.** |
 | [Удаление onlineMeeting](../api/onlinemeeting-delete.md)             | Нет                              | Удаление **объекта onlineMeeting.**                                                                                    |
 | [Создание или доступ к onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте **объект onlineMeeting** с пользовательским внешним ID. Если собрание уже существует, извлекай его свойства. |
 
@@ -32,20 +32,20 @@ ms.locfileid: "50516096"
 
 | Свойство              | Тип                                          | Описание                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| allowedPresenters     | onlineMeetingPresenters                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения перечислены в следующей таблице.                          |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения перечислены в следующей таблице.                          |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения.                                                   |
 | chatInfo              | [chatInfo](chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                                                  |
 | creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
 | endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                               |
-| id                    | Строка                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
-| isEntryExitAnnounced  | Логический                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                     |
+| id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
+| isEntryExitAnnounced  | Boolean                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанные в `Accept-Language` заглавной странице HTTP запроса. Только для чтения. |
-| joinWebUrl            | Строка                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
+| joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием.  Это включает организатора и участников.                       |
 | startDateTime         | DateTime                                      | Время начала собрания в UTC.                                                                                             |
 | subject               | String                                        | Тема собрания в Интернете.                                                                                         |
-| videoTeleconferenceId | Строка                                        | ID видеоконференции. Только для чтения.                                                                                  |
+| videoTeleconferenceId | String                                        | ID видеоконференции. Только для чтения.                                                                                  |
 
 ### <a name="onlinemeetingpresenters-values"></a>значения onlineMeetingPresenters
 

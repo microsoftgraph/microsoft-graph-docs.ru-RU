@@ -5,18 +5,17 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 937272ee969478b8dfa0cac6c6ce44a1e9644f08
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: eba6202f06b66f75c439e24b5ae7a75aa52fda1c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882936"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962408"
 ---
 # <a name="register-schema-for-the-microsoft-graph-connection"></a>Схема регистрации для связей Microsoft Graph
 
 [Схема](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) связей определяет, как ваше содержимое будет использоваться в различных интерфейсах Microsoft Graph. Схема — это плоский список всех свойств, которые вы планируете добавить в связь, а также их атрибуты, метки и псевдонимы. Перед добавлением элементов в связь вы должны зарегистрировать схему.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 ## <a name="example-schema"></a>Пример схемы
 

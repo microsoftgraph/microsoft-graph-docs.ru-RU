@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Ремовеконтенсеадерактион
-description: Представляет действие, задающее сведения о заголовке контента, которые необходимо удалить из информации (если это возможно).
+title: removeContentHeaderAction resource type
+description: Представляет действие, которое указывает сведения о загонах контента, которые будут удалены из сведений, если это применимо.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 63dc9556ace567f4505b40c1882bd56b087a7835
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9170556f5fc04e7b270d9886cd81f48c45e07122
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073427"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962084"
 ---
-# <a name="removecontentheaderaction-resource-type"></a>Тип ресурса Ремовеконтенсеадерактион
+# <a name="removecontentheaderaction-resource-type"></a>removeContentHeaderAction resource type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие, задающее сведения о заголовке контента, которые необходимо удалить из информации (если это возможно). API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md), [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md)или [евалуатеремовал](../api/informationprotectionlabel-evaluateremoval.md) могут возвращать **ремовеконтенсеадерактион** , если заголовок будет удален в результате обновления или удаления метки. Действие предписывает приложению, которое использует приложение, удалить определенный элемент пользовательского интерфейса, который содержит заданный ранее заголовок контента.
+Представляет действие, которое указывает сведения о загонах контента, которые будут удалены из сведений, если это применимо. [ОценкаApplication,](../api/informationprotectionlabel-evaluateapplication.md) [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)или оценка APIRemoval могут возвращать **удалениеContentHeaderAction,** если заголовок должен быть удален в результате обновления или удаления метки. [](../api/informationprotectionlabel-evaluateremoval.md) Действие предписывает потребляемому приложению удалить определенный элемент пользовательского интерфейса, содержащий ранее применимый заголовок контента.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип              | Описание                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| уиелементнамес | Коллекция String | Имя элемента пользовательского интерфейса заголовка, который требуется удалить. |
+| uiElementNames | Коллекция строк | Имя элемента пользовательского интерфейса удаляемого заголовщика. |
 
 ## <a name="json-representation"></a>Представление JSON
 

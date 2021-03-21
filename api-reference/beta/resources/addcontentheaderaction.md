@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Аддконтенсеадерактион
-description: Представляет действие, задающее сведения о заголовке контента, которые будут добавлены к данным (если это возможно).
+title: тип ресурса addContentHeaderAction
+description: Представляет действие, которое указывает сведения о загонщике контента, который будет добавлен в сведения, если это применимо.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7e7a5675cdf150f03b283f664e248319d49c820d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 65754bffc034611fd319403cd81d931addfea9f0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024523"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962139"
 ---
-# <a name="addcontentheaderaction-resource-type"></a>Тип ресурса Аддконтенсеадерактион
+# <a name="addcontentheaderaction-resource-type"></a>тип ресурса addContentHeaderAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие, задающее сведения о заголовке контента, которые будут добавлены к данным (если это возможно).
+Представляет действие, которое указывает сведения о загонщике контента, который будет добавлен в сведения, если это применимо.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип   | Описание                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| alignment     | String | Возможные значения: `left`, `right`, `center`.               |
-| фонтколор     | String | Цвет шрифта, который будет использоваться для заголовка.                      |
-| fontName      | String | Имя шрифта, используемого для заголовка.                       |
-| fontSize      | Int32  | Размер шрифта, используемый для заголовка.                              |
-| margin        | Int32  | Поле заголовка, начиная с верхнего края документа.        |
-| текст          | String | Содержимое самого верхнего колонтитула.                            |
-| уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить заголовок. |
+| alignment     | Строка | Возможные значения: `left`, `right`, `center`.               |
+| fontColor     | Строка | Цвет шрифта, используемого для загона.                      |
+| fontName      | Строка | Имя шрифта, используемого для загона.                       |
+| fontSize      | Int32  | Размер шрифта, который можно использовать для загона.                              |
+| margin        | Int32  | Поле загонщика в верхней части документа.        |
+| текст          | Строка | Содержимое самого загона.                            |
+| uiElementName | Строка | Имя элемента пользовательского интерфейса, в котором должен быть размещен заголовщик. |
 
 ## <a name="json-representation"></a>Представление JSON
 

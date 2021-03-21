@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Тонеинфо
+title: тип ресурса toneInfo
 description: Одно событие DTMF.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bd386d77dcd3122e1bcd243230062f47b17b5749
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 880ca55e273c1bcaccb494eb3583103496f890ab
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090650"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962422"
 ---
-# <a name="toneinfo-resource-type"></a>Тип ресурса Тонеинфо
+# <a name="toneinfo-resource-type"></a>тип ресурса toneInfo
 
 Пространство имен: microsoft.graph
 
@@ -22,8 +22,8 @@ ms.locfileid: "48090650"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| секуенцеид | Int64 | Добавочный идентификатор, используемый для упорядочивания событий DTMF. |
-| Новая | Строка | Возможные значения: `tone0` , `tone1` ,,,,, `tone2` `tone3` `tone4` `tone5` `tone6` ,,, `tone7` `tone8` `tone9` , `star` , `pound` |
+| sequenceId | Int64 | Дополнительный идентификатор, используемый для заказа событий DTMF. |
+| тон | тон | Возможные значения: `tone0` `tone1` , , , , , `tone2` , , `tone3` , `tone4` `tone5` `tone6` `tone7` `tone8` `tone9` `star` `pound` `a` `b` `c` `d` `flash` . |
 
 ## <a name="json-representation"></a>Представление JSON
 

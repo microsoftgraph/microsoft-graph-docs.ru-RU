@@ -1,45 +1,45 @@
 ---
-title: 'Группа: Евалуатединамикмембершип'
-description: Оцените, является ли пользователь или устройство участником динамической группы.
+title: 'группа: оценкаDynamicMembership'
+description: Оцените, является ли пользователь или устройство членом динамической группы.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a9dffefdc8a7f967cd44d16168ad83c822bacc69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94594d31c4e7630b91905edb244f616cac1b21ab
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965327"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961917"
 ---
-# <a name="group-evaluatedynamicmembership"></a>Группа: Евалуатединамикмембершип
+# <a name="group-evaluatedynamicmembership"></a>группа: оценкаDynamicMembership
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определите, может ли пользователь или устройство являться членом динамической группы. Правило членства возвращается вместе с другими сведениями, использованными в ходе оценки. Эту операцию можно выполнить следующими способами: 
+Определите, может ли пользователь или устройство являться членом динамической группы. Правило членства возвращается вместе с другими сведениями, которые были использованы в оценке. Эту операцию можно выполнить следующими способами: 
 
-- Оценка того, является ли пользователь или устройство членом указанной динамической группы.  
-- Оценка того, будет ли пользователь или устройство участником динамической группы на основе идентификатора пользователя или устройства и правила членства.
+- Оцените, является ли пользователь или устройство членом указанной динамической группы.  
+- Оцените, будет ли пользователь или устройство членом динамической группы на основе ID пользователя или устройства и правила членства.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a>Оценка динамического членства с ИДЕНТИФИКАТОРом участника и ИДЕНТИФИКАТОРом группы
+### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a>Оценка динамического членства с помощью ID участника и группового ИД
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись) | Для пользователя: Group. Read. ALL и User. Read. ALL, Directory. Read. ALL<br>Для Device: Group. Read. ALL и Device. Read. ALL, Directory. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись) | Для пользователя: Group.Read.All и User.Read.All, Directory.Read.All<br>Для устройства: Group.Read.All и Device.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>Оценка динамического членства с ИДЕНТИФИКАТОРом участника и правилом членства
+### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>Оценка динамического членства с помощью ID и правила членства
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись) | Для пользователя: User. Read. ALL, Directory. Read. ALL<br>Для Device: Device. Read. ALL, Directory. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись) | Для пользователя: User.Read.All, Directory.Read.All<br>Для устройства: Device.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -61,22 +61,22 @@ POST /groups/evaluateDynamicMembership
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите необходимые свойства.
+В теле запроса укажи необходимые свойства.
 
-В следующей таблице перечислены свойства, которые необходимы при оценке членства в группе.
+В следующей таблице перечислены свойства, необходимые при оценке членства в группе.
 
 | Параметр | Тип | Описание |
 | :-------- | :--- | :---------- |
-| Идентификатора | Коллекция строк | memberId это идентификатор объекта для оцениваемого пользователя или устройства. |
-| membershipRule | Коллекция строк | Правило, используемое для оценки членства. Если это свойство не указано, оценивается правило для существующей группы. Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| memberId | Коллекция строк | memberId — это объектный id пользователя или устройства, для оценки. |
+| membershipRule | Коллекция строк | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [видеоролике Динамические правила членства для групп в Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership)|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [евалуатединамикмембершипресулт](../resources/evaluatedynamicmembershipresult.md) .
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект evaluateDynamicMembershipResult.](../resources/evaluatedynamicmembershipresult.md)
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-evaluate-if-a-user-or-device-is-a-member-of-an-existing-group"></a>Пример 1: Оценка того, является ли пользователь или устройство участником существующей группы
+### <a name="example-1-evaluate-if-a-user-or-device-is-a-member-of-an-existing-group"></a>Пример 1. Оценка того, является ли пользователь или устройство членом существующей группы
 
 #### <a name="request"></a>Запрос
 
@@ -86,7 +86,7 @@ POST /groups/evaluateDynamicMembership
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_evaluatedynamicmembership"
+  "name": "group_evaluatedynamicmembership_1"
 }-->
 
 ```http
@@ -98,19 +98,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -118,7 +118,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 <!-- {
   "blockType": "response",
@@ -146,7 +146,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a>Пример 2: Оценка того, будет ли пользователь или устройство участником группы на основе правила членства
+### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a>Пример 2. Оценка того, будет ли пользователь или устройство членом группы на основе правила членства
 
 #### <a name="request"></a>Запрос
 
@@ -156,7 +156,7 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_evaluatedynamicmembership"
+  "name": "group_evaluatedynamicmembership_2"
 }-->
 
 ```http
@@ -169,19 +169,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

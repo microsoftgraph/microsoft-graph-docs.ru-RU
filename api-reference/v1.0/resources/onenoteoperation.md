@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса onenoteOperation
-description: Состояние определенных длительно выполняемых операций OneNote.
+title: тип ресурса onenoteOperation
+description: Состояние некоторых длительных операций OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 6c2778dc08867acba2e458a041dc11aae65c0a9b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 146cfec00c630fc0abde326a57374549d7b2d378
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079013"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961953"
 ---
-# <a name="onenoteoperation-resource-type"></a>Тип ресурса onenoteOperation
+# <a name="onenoteoperation-resource-type"></a>тип ресурса onenoteOperation
 
 Пространство имен: microsoft.graph
 
-Состояние определенных длительно выполняемых операций OneNote.
+Состояние некоторых длительных операций OneNote.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,13 +46,13 @@ ms.locfileid: "48079013"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
-|error|[оненотеоператионеррор](onenoteoperationerror.md)|Ошибка, возвращенная операцией.|
-|id|string|Идентификатор операции. только для чтения.|
-|ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
-|resourceId|string|Идентификатор ресурса.|
-|ресаурцелокатион|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
-|status|string|Текущее состояние операции: `notstarted` ,, `running` `completed` , `failed` |
-|percentComplete|string|Процент завершения операции, если операция все еще находится в `running` состоянии.
+|error|[onenoteOperationError](onenoteoperationerror.md)|Ошибка, возвращаемая операцией.|
+|id|string|ID операции. Только для чтения.|
+|lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
+|resourceId|string|ID ресурса.|
+|resourceLocation|string|URI ресурса для объекта. Например, ресурс URI для скопированной страницы или раздела. |
+|status|operationStatus|Текущий статус операции: `NotStarted` `Running` , , `Completed` `Failed` . |
+|percentComplete|string|Если операция по-прежнему находится в состоянии, операция будет `running` завершена в процентах.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -62,7 +62,7 @@ ms.locfileid: "48079013"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение операции](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |Получение состояния операции. |
+|[Получить операцию](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |Получите состояние операции. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

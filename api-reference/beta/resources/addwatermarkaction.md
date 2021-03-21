@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Аддватермаркактион
-description: Представляет действие, задающее сведения о подложке контента, которую необходимо добавить к сведениям, если это возможно.
+title: тип ресурса addWatermarkAction
+description: Представляет действие, которое указывает сведения о водяном знаке контента, который будет добавлен в сведения, если это применимо.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 884553ce1181fd3d79fe0e953fe7703b386698b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db493c57d6de7c840e5f0606743392698cb475b6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024451"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962128"
 ---
-# <a name="addwatermarkaction-resource-type"></a>Тип ресурса Аддватермаркактион
+# <a name="addwatermarkaction-resource-type"></a>тип ресурса addWatermarkAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие, задающее сведения о подложке контента, которую необходимо добавить к сведениям, если это возможно.
+Представляет действие, которое указывает сведения о водяном знаке контента, который будет добавлен в сведения, если это применимо.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип   | Описание                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| фонтколор     | String | Цвет шрифта, который будет использоваться для водяного знака.                      |
-| fontName      | String | Имя шрифта, который будет использоваться для водяного знака.                       |
-| fontSize      | Int32  | Размер шрифта, используемый для водяного знака.                              |
+| fontColor     | Строка | Цвет шрифта, используемого для водяного знака.                      |
+| fontName      | Строка | Имя шрифта, используемого для водяного знака.                       |
+| fontSize      | Int32  | Размер шрифта для водяного знака.                              |
 | макет        | String | Возможные значения: `horizontal`, `diagonal`.                   |
-| текст          | String | Содержимое водяного знака.                            |
-| уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить водяной знак. |
+| текст          | Строка | Содержимое самого водяного знака.                            |
+| uiElementName | Строка | Имя элемента пользовательского интерфейса, в котором должен быть размещен водяной знак. |
 
 ## <a name="json-representation"></a>Представление JSON
 

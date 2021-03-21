@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 18294905754cd962ec1c18136b61ca20799eee3d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f7b07cb2906eb1a3d01d6c24ca5b91fec35ec7c8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718445"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962002"
 ---
 # <a name="datapolicyoperation-resource-type"></a>тип ресурса dataPolicyOperation
 
@@ -33,7 +33,7 @@ ms.locfileid: "50718445"
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Представляет, когда запрос на эту операцию политики данных был выполнен во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Null до завершения операции.|
 |id|String| Уникальный ключ для этой операции. |
-|status|string| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
+|status|dataPolicyOperationStatus| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|Расположение URL-адреса, куда экспортируются данные для запросов на экспорт.|
 |userId|String|ID для пользователя, на котором выполняется операция.|
 |submittedDateTime|DateTimeOffset|Представляет при отправке запроса на эту операцию данных во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|

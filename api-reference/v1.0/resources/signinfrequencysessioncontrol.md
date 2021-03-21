@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса signInFrequencySessionControl
-description: Управление сеансом для принудительной регистрации.
+title: signInFrequencySessionControl type
+description: Управление сеансом для обеспечения частоты подписей.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4a89a9337bc032210873de3ceb05949f935693f1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 15255f44971694ff2b815e8f49e1800b91502af3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137125"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961932"
 ---
-# <a name="signinfrequencysessioncontrol-resource-type"></a>Тип ресурса signInFrequencySessionControl
+# <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl type
 
 Пространство имен: microsoft.graph
 
-Управление сеансом для принудительной частоты входов. Наследуется от [контроля сеанса условного доступа.](conditionalaccesssessioncontrol.md)
+Управление сеансами для обеспечения частоты входов. Наследуется от [управления сеансами условного доступа.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
-|type          |String       | Возможные значения: `days`, `hours`.|
-|value         |Int32        | Количество или `days` `hours` .|
+|type          |signinFrequencyType| Возможные значения: `days`, `hours`.|
+|value         |Int32        | Количество `days` или `hours` .|
 
 ## <a name="relationships"></a>Связи
 

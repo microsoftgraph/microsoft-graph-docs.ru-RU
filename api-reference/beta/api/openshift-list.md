@@ -1,24 +1,24 @@
 ---
-title: Список Опеншифтс
-description: Перечисление объектов опеншифт в команде.
+title: Список openShifts
+description: Список объектов openshift в группе.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bc10a41d05a09c8076a52861e24eea0d0b9edec0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0b297a9f1a995dbe3424596dd1fa15f310010631
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968764"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962361"
 ---
-# <a name="list-openshift"></a>Список Опеншифт
+# <a name="list-openshift"></a>Список openShift
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление объектов [опеншифт](../resources/openshift.md) в команде.
+Список [объектов openshift](../resources/openshift.md) в группе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET /teams/{id}/schedule/openShifts
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и все объекты [опеншифт](../resources/openshift.md) в команде в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и все `200 OK` [объекты openShift](../resources/openshift.md) в группе в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -65,26 +65,26 @@ GET /teams/{id}/schedule/openShifts
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_openshift"
+  "name": "get_openshift_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-openshift-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-openshift-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

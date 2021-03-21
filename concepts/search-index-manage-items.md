@@ -5,18 +5,16 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 4ac64724a676c2da2d39a68d842039bd14138161
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: c2cae0ca25d55fd95a7b26c0175f7e5313d6e532
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883181"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962401"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-graph-connection"></a>Создание, обновление и удаление элементов, добавленных приложением в связь Microsoft Graph
 
 Элементы, добавленные приложением в службу "Поиск (Майкрософт)", представлены ресурсом [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) в Microsoft Graph.
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 После создания связи вы можете добавить содержимое. Каждый элемент из источника данных должен быть представлен в виде [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) в Microsoft Graph с уникальным идентификатором элемента. Этот идентификатор используется для создания, обновления или удаления элемента в Microsoft Graph. Вы можете использовать первичный ключ из источника данных в качестве itemId или получить его из одного или нескольких полей. [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) содержит три основных компонента: список управления доступом, свойства и содержимое.
 

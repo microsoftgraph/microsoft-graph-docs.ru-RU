@@ -5,18 +5,16 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: b5d675b8780e7fd7389d8c929d16fcb6756059eb
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 52162b23bbd56544be8bee48fbea1cfa00891e7a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883174"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962394"
 ---
 # <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>Создание, обновление и удаление подключений в Microsoft Graph
 
 Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) в Microsoft Graph.
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Платформа подключений Microsoft Graph — это простой способ добавления внешних данных в Microsoft Graph. Подключение — это логический контейнер для внешних данных, которыми администратор управляет как единым целым.
 

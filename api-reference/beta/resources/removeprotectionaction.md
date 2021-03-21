@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Ремовепротектионактион
-description: Представляет действие для удаления защиты из файла или информации.
+title: removeProtectionAction resource type
+description: Представляет действие по удалению защиты из файла или сведений.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: bf4ad367038367d3572f0451bfa7d3eb0a25368d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b315c9d2641524d8a134f0e0b9704c51419ada4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073399"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962037"
 ---
-# <a name="removeprotectionaction-resource-type"></a>Тип ресурса Ремовепротектионактион
+# <a name="removeprotectionaction-resource-type"></a>removeProtectionAction resource type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие для удаления защиты из файла или информации. API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md), [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md)или [евалуатеремовал](../api/informationprotectionlabel-evaluateremoval.md) могут возвращать **ремовепротектионактион** , если необходимо удалить защиту в результате обновления или удаления метки. Действие предписывает приложению, которое использует приложение, удалить определенный элемент пользовательского интерфейса, который содержит заданный ранее заголовок контента. Защита должна быть удалена с помощью клиентской библиотеки, например Microsoft Information Protection SDK, только в том случае, если вызывающий пользователь имеет достаточные права на удаление защиты.
+Представляет действие по удалению защиты из файла или сведений. [ОценкаApplication,](../api/informationprotectionlabel-evaluateapplication.md) [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)или оценка APIRemoval могут вернуть **removeProtectionAction,** если защита будет удалена в результате обновления или удаления метки. [](../api/informationprotectionlabel-evaluateremoval.md) Действие предписывает потребляемому приложению удалить определенный элемент пользовательского интерфейса, содержащий ранее применимый заголовок контента. Защита должна быть удалена с помощью клиентской библиотеки, например SDK Microsoft Information Protection, только если у вызываемого пользователя достаточно прав для удаления защиты.
 
 ## <a name="properties"></a>Свойства
 

@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Аддконтентфутерактион
-description: Представляет действие, задающее сведения о нижнем колонтитуле контента, добавляемом к данным, если это возможно.
+title: тип ресурса addContentFooterAction
+description: Представляет действие, которое указывает сведения на подножке контента, которая должна быть добавлена в сведения, если это применимо.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5b4e9edf4007d7bc5d4028e4f9202e09647ca863
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20debce7dc408bd10d4f62b905efa55156d4d4ca
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024521"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962142"
 ---
-# <a name="addcontentfooteraction-resource-type"></a>Тип ресурса Аддконтентфутерактион
+# <a name="addcontentfooteraction-resource-type"></a>тип ресурса addContentFooterAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие, задающее сведения о нижнем колонтитуле контента, добавляемом к данным, если это возможно.
+Представляет действие, которое указывает сведения на подножке контента, которая должна быть добавлена в сведения, если это применимо.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип   | Описание                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| alignment     | String | Возможные значения: `left`, `right`, `center`.               |
-| фонтколор     | String | Цвет шрифта, который будет использоваться для нижнего колонтитула.                      |
-| fontName      | String | Имя шрифта, который будет использоваться для нижнего колонтитула.                       |
-| fontSize      | Int32  | Размер шрифта, который будет использоваться для нижнего колонтитула.                              |
-| margin        | Int32  | Поле заголовка из нижней части документа.     |
-| текст          | String | Содержимое нижнего колонтитула.                            |
-| уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить нижний колонтитул. |
+| alignment     | Строка | Возможные значения: `left`, `right`, `center`.               |
+| fontColor     | Строка | Цвет шрифта, используемого для подножки.                      |
+| fontName      | Строка | Имя шрифта, используемого для подножки.                       |
+| fontSize      | Int32  | Размер шрифта для использования для подножки.                              |
+| margin        | Int32  | Поле заглавной строки из нижней части документа.     |
+| текст          | Строка | Содержимое самого подножки.                            |
+| uiElementName | Строка | Имя элемента пользовательского интерфейса, в котором должен размещаться подножка. |
 
 ## <a name="json-representation"></a>Представление JSON
 
