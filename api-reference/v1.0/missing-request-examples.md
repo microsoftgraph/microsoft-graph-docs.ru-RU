@@ -1,43 +1,43 @@
 ---
 title: Определение /me как одноэлементного класса
-description: Вот что нужно было добавить в документы, чтобы убедиться, что сканер Markdown
+description: Это вещи, которые мне пришлось добавить в документы, чтобы убедиться, что Markdown-Scanner
 localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 7c47801cd7c76c201f543587012ba22d34660ee7
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 741a486bbaae5a666cb5c7d83f2a9c954523c2ec
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730360"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955989"
 ---
-# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="429ed-103">Вспомогательный код (примеры, не включенные в документы)</span><span class="sxs-lookup"><span data-stu-id="429ed-103">Helpers (examples that aren't included in the docs)</span></span>
+# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="c27af-103">Вспомогательный код (примеры, не включенные в документы)</span><span class="sxs-lookup"><span data-stu-id="c27af-103">Helpers (examples that aren't included in the docs)</span></span>
 
-<span data-ttu-id="429ed-104">Ниже представлены фрагменты, которые пришлось добавить в документы, чтобы средство Markdown-Scanner могло правильно обработать документы по Graph.</span><span class="sxs-lookup"><span data-stu-id="429ed-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
-
-
-## <a name="define-the-me-as-singleton"></a><span data-ttu-id="429ed-105">Определение /me как одноэлементного класса</span><span class="sxs-lookup"><span data-stu-id="429ed-105">Define the /me as singleton</span></span>
+<span data-ttu-id="c27af-104">Ниже представлены фрагменты, которые пришлось добавить в документы, чтобы средство Markdown-Scanner могло правильно обработать документы по Graph.</span><span class="sxs-lookup"><span data-stu-id="c27af-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="429ed-106">HTTP</span><span class="sxs-lookup"><span data-stu-id="429ed-106">HTTP</span></span>](#tab/http)
+## <a name="define-the-me-as-singleton"></a><span data-ttu-id="c27af-105">Определение /me как одноэлементного класса</span><span class="sxs-lookup"><span data-stu-id="c27af-105">Define the /me as singleton</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="c27af-106">HTTP</span><span class="sxs-lookup"><span data-stu-id="c27af-106">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "get_current_user" } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me
 ```
-# <a name="c"></a>[<span data-ttu-id="429ed-107">C#</span><span class="sxs-lookup"><span data-stu-id="429ed-107">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c27af-107">C#</span><span class="sxs-lookup"><span data-stu-id="c27af-107">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-current-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="429ed-108">JavaScript</span><span class="sxs-lookup"><span data-stu-id="429ed-108">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c27af-108">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c27af-108">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-current-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="429ed-109">Objective-C</span><span class="sxs-lookup"><span data-stu-id="429ed-109">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c27af-109">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c27af-109">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-current-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="429ed-110">Java</span><span class="sxs-lookup"><span data-stu-id="429ed-110">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c27af-110">Java</span><span class="sxs-lookup"><span data-stu-id="c27af-110">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-current-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -54,26 +54,26 @@ Content-Type: application/json
 ```
 
 
-## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="429ed-111">Определение drives как набора EntitySet, поддерживающего запросы</span><span class="sxs-lookup"><span data-stu-id="429ed-111">Define drives as an queryable entityset</span></span>
+## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="c27af-111">Определение drives как набора EntitySet, поддерживающего запросы</span><span class="sxs-lookup"><span data-stu-id="c27af-111">Define drives as an queryable entityset</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="429ed-112">HTTP</span><span class="sxs-lookup"><span data-stu-id="429ed-112">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c27af-112">HTTP</span><span class="sxs-lookup"><span data-stu-id="c27af-112">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="429ed-113">C#</span><span class="sxs-lookup"><span data-stu-id="429ed-113">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c27af-113">C#</span><span class="sxs-lookup"><span data-stu-id="c27af-113">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-from-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="429ed-114">JavaScript</span><span class="sxs-lookup"><span data-stu-id="429ed-114">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c27af-114">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c27af-114">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-from-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="429ed-115">Objective-C</span><span class="sxs-lookup"><span data-stu-id="429ed-115">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c27af-115">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c27af-115">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-from-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="429ed-116">Java</span><span class="sxs-lookup"><span data-stu-id="429ed-116">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c27af-116">Java</span><span class="sxs-lookup"><span data-stu-id="c27af-116">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-from-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,28 +90,28 @@ Content-Type: application/json
 ```
 
 
-## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="429ed-117">Определение users как EntitySet, поддерживающего запросы</span><span class="sxs-lookup"><span data-stu-id="429ed-117">define users as an queryable entityset</span></span>
+## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="c27af-117">Определение users как EntitySet, поддерживающего запросы</span><span class="sxs-lookup"><span data-stu-id="c27af-117">define users as an queryable entityset</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="429ed-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="429ed-118">HTTP</span></span>](#tab/http)
-<!-- {"blockType": "request", "name": "get_users" } -->
+# <a name="http"></a>[<span data-ttu-id="c27af-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="c27af-118">HTTP</span></span>](#tab/http)
+<!-- {"blockType": "request", "name": "get_users_1" } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="429ed-119">C#</span><span class="sxs-lookup"><span data-stu-id="429ed-119">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="c27af-119">C#</span><span class="sxs-lookup"><span data-stu-id="c27af-119">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="429ed-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="429ed-120">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="c27af-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c27af-120">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="429ed-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="429ed-121">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="c27af-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c27af-121">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="429ed-122">Java</span><span class="sxs-lookup"><span data-stu-id="429ed-122">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="c27af-122">Java</span><span class="sxs-lookup"><span data-stu-id="c27af-122">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
