@@ -1,15 +1,15 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e59869ee0f864e23b31432480167551711856027
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 19d68b6ef607e52281c7ca941e131341bbe93e1c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883604"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970445"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Post post = new Post();
 ItemBody body = new ItemBody();
@@ -18,7 +18,10 @@ body.content = "content-value";
 post.body = body;
 
 graphClient.groups("{id}").threads("{id}")
-    .reply(post)
+    .reply(ConversationThreadReplyParameterSet
+        .newBuilder()
+        .withPost(post)
+        .build())
     .buildRequest()
     .post();
 
