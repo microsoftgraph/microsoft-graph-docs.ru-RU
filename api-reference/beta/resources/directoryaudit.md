@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e2c6cb6dfee9f3efb015e7bcb7b44968236d7e1a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f7d7031033a791bb6cf02e2bad527d4decf2b3ea
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721651"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962618"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 
@@ -39,9 +39,9 @@ ms.locfileid: "50721651"
 | id                  | String                                              | Указывает уникальный идентификатор для действия.                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Указывает сведения о пользователе или приложении, запустившем действие.                                                                                                                                                                                                    |
 | loggedByService     | String                                              | Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).                                                          |
-| result              | string                                              | Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
-| resultReason        | String                                              | Указывает причину сбоя, если результатом является Failure (Сбой) или timeout (время ожидания).                                                                                                                                                                                              |
-| targetResources     | Коллекция [targetResource](targetresource.md)      | Указывает, какой ресурс был изменен в результате действия. Возможные типы целевых ресурсов: User, Device, Directory, App, Role, Group, Policy или Other.                                                                                                       |
+| result              | operationResult                                              | Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
+| resultReason        | String                                              | Указывает причину сбоя, если **результат** `failure` или `timeout` .                                                                                                                                                                                              |
+| targetResources     | Коллекция [targetResource](targetresource.md)      | Указывает, какой ресурс был изменен в результате действия. Тип целевого ресурса может быть `User` , , , , , или `Device` `Directory` `App` `Role` `Group` `Policy` `Other` .                                                                                                       |
 
 ## <a name="relationships"></a>Связи
 Нет

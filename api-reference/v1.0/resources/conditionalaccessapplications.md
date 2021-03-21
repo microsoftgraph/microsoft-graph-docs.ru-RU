@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса conditionalAccessApplications
-description: Представляет приложения и действия пользователей, включенные в область политики и исключенные из нее.
+title: тип ресурса conditionalAccessApplications
+description: Представляет приложения и действия пользователей, включенные и исключенные из области политики.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 42ceafb6c786666378d1327ecd158a04559d7f0d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3d864acfdd794bc5bcb914c460b29800c4a86291
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132162"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962506"
 ---
-# <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса conditionalAccessApplications
+# <a name="conditionalaccessapplications-resource-type"></a>тип ресурса conditionalAccessApplications
 
 Пространство имен: microsoft.graph
 
@@ -22,9 +22,9 @@ ms.locfileid: "50132162"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeApplications | Коллекция String | Список ИД приложений, к которых применяется политика, за исключением явно исключенных (в excludeApplications). Также может быть установлено в `All` . |
-| excludeApplications | Коллекция String | Список явно исключенных из политики ИД приложений. |
-| includeUserActions | Коллекция String | Действия пользователей, которые необходимо включить. Пример: `urn:user:registersecurityinfo` |
+| includeApplications | Коллекция строк | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
+| excludeApplications | Коллекция строк | Список ID приложений явно исключен из политики. |
+| includeUserActions | Коллекция строк | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
 
 ## <a name="relationships"></a>Связи
 

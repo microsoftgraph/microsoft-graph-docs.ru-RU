@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e4820cf85d3160c04372df79072b4b40708ef868
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 27b5debdbb9e55eafe55a4c1a7bc66d87b7290cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443182"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962667"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>тип ресурса accessReviewScheduleDefinition
 
@@ -31,23 +31,23 @@ AccessReviewScheduleDefinition содержит список [объектов a
 |[Список accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition collection](accessreviewscheduledefinition.md) | Списки всех accessReviewScheduleDefinition. Не включает связанные экземпляры accessReviewInstance в списки. |
 |[Получить accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Получите accessReviewScheduleDefinition с указанным id. |
 |[Создание accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создание нового accessReviewScheduleDefinition. |
-|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удалите accessReviewScheduleDefinition с указанным идентификатором. |
-|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств accessReviewScheduleDefinition с указанным идентификатором. |
+|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Отсутствуют. | Удалите accessReviewScheduleDefinition с указанным идентификатором. |
+|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Отсутствуют. | Обновление свойств accessReviewScheduleDefinition с указанным идентификатором. |
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :------------------| :-------------- | :---------- |
-| id | String | Уникальный идентификатор обзора доступа, назначенного функцией.|
-| displayName | String   | Имя серии обзоров доступа. Требуется при создании. |
-| createdDateTime  |DateTimeOffset  | DateTime, когда была создана серия обзоров. |
-| lastModifiedDateTime | DateTimeOffset   | DateTime при последней модификации серии обзоров.|
-| status  |string   | Это поле только для чтения указывает состояние accessReview. Типичные состояния `Initializing` включают , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
+| id | Строка | Уникальный идентификатор обзора доступа, назначенного функцией.|
+| displayName | Строка   | Имя серии обзоров доступа. Требуется при создании. |
+| createdDateTime  |DateTimeOffset  | Timestamp при создания серии обзоров. |
+| lastModifiedDateTime | DateTimeOffset   | Timestamp при последней модификации серии обзоров.|
+| status  |String   | Это поле только для чтения указывает состояние accessReview. Типичные состояния `Initializing` включают , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
 | descriptionForAdmins  |string  |  Описание, предоставленное создателями обзора, чтобы предоставить администраторам дополнительный контекст обзора. |
 | descriptionForReviewers |string | Описание, предоставленное создателями обзора, чтобы предоставить рецензентам дополнительный контекст обзора. Рецензенты увидят это описание в отправленной им электронной почте с запросом на отзыв. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | Пользователь, создавший этот обзор. |
-| scope  |[accessReviewScope](../resources/accessreviewscope.md)  | Определяет область рассмотренных пользователей. Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) Требуется при создании. |
+| область  |[accessReviewScope](../resources/accessreviewscope.md)  | Определяет область рассмотренных пользователей. Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) Требуется при создании. |
 | instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | В случае проверки гостевых пользователей во всех группах Microsoft 365 это определяет область просмотра групп. Каждая группа станет уникальным accessReviewInstance из серии обзоров доступа.  Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) | 
-| параметры  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа см. ниже определение типа. |
+| settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа см. ниже определение типа. |
 | рецензенты   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Эта коллекция областей обзора доступа используется для определения тех, кто является рецензентами. См. [accessReviewReviewerScope.](accessreviewreviewerscope.md) Требуется при создании. |
 | backupReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Эта коллекция областей рецензентов используется для определения списка рецензентов откатов. Эти рецензенты откатов будут уведомлены о необходимости принятия мер, если пользователи не будут найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует. См. [accessReviewReviewerScope.](accessreviewreviewerscope.md) |
 | instances |Collection(microsoft.graph.accessReviewInstance)|  Набор экземпляров обзоров доступа для этой серии обзоров доступа. Обзоры доступа, которые не повторялись, будут иметь только один экземпляр; в противном случае для каждого повторения будет иметься экземпляр. |

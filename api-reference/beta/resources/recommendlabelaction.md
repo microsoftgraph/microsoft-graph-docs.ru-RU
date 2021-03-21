@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Рекоммендлабелактион
-description: Представляет метку, которая должна быть рекомендована пользователю для приложения в файл на основе типов конфиденциальной информации.
+title: recommendLabelAction resource type
+description: Представляет метку, которую следует рекомендовать пользователю для приложения к файлу на основе типов конфиденциальной информации.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: b5deebaec460bd8c1993cc0c308e68e6f6f986a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10d3ac687605ab648cdd3d68d6a3721c8fba2e30
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055186"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962576"
 ---
-# <a name="recommendlabelaction-resource-type"></a>Тип ресурса Рекоммендлабелактион
+# <a name="recommendlabelaction-resource-type"></a>recommendLabelAction resource type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метку, которая должна быть рекомендована пользователю для приложения в файл на основе обнаруженных типов конфиденциальной информации. [Евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateClassificationResults.md) может возвращать **рекоммендлабелактион** , если для политики метки Microsoft Information Protection задано значение **рекомендовать** и подпись, а не задано применение метки. Пользователь или апплиатион может игнорировать или принять рекомендацию. 
+Представляет метку, которую следует рекомендовать пользователю для приложения к файлу на основе обнаруженных типов конфиденциальной информации. В [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) может быть возвращена **рекомендацияLabelAction,** если политика  маркировки Microsoft Information Protection настроена на рекомендации и метку, а не на принудительное выполнение метки. Пользователь или прикладный пользователь может игнорировать или принимать эту рекомендацию. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                    | Тип                                                                     | Описание                                                           |
 | :-------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| актионсаурце                | String                                                                   | Возможные значения: `manual`, `automatic`, `recommended`, `default`. |
-| actions                     | Коллекция [информатионпротектионактион](informationprotectionaction.md) | Действия, которые необходимо выполнить, если пользователь принимает метку.                                                                       |
-| label                       | [лабелдетаилс](labeldetails.md)                                          | Рекомендуемая метка.                                                                      |
-| респонсиблесенситиветипеидс | Коллекция объектов Guid                                                          | Идентификаторы GUID типа конфиденциальной информации, которые привели к выдано рекомендация.                                                                      |
+| actionSource                | String                                                                   | Возможные значения: `manual`, `automatic`, `recommended`, `default`. |
+| actions                     | [коллекция informationProtectionAction](informationprotectionaction.md) | Действия, которые необходимо принять, если метка принята пользователем.                                                                       |
+| label                       | [labelDetails](labeldetails.md)                                          | Метка, которая рекомендуется.                                                                      |
+| responsibleSensitiveTypeIds | Коллекция объектов Guid                                                          | GUID типа конфиденциальной информации, из-за чего была дана рекомендация.                                                                      |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

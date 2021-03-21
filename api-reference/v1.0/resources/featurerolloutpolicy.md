@@ -1,0 +1,121 @@
+---
+title: тип ресурса featureRolloutPolicy
+description: Представляет политику выкатки функций, связанную с объектом каталога.
+localization_priority: Normal
+author: madhavpatel6
+ms.prod: identity-and-sign-in
+doc_type: resourcePageType
+ms.openlocfilehash: 889ff6c7a36be5580a6a419b6bd99e7e85240632
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964970"
+---
+# <a name="featurerolloutpolicy-resource-type"></a>тип ресурса featureRolloutPolicy
+
+Пространство имен: microsoft.graph
+
+Представляет политику выкатки функций, связанную с объектом каталога. Создание политики внедрения компонентов помогает администраторам клиентов пилотным функциям Azure AD с определенной группой, прежде чем включать функции для всей организации. Это минимизирует влияние и помогает администраторам постепенно тестировать и выкатывать связанные функции проверки подлинности.
+
+Ниже представлены ограничения для выкатки функций:
+
+- Каждая функция поддерживает не более 10 групп.
+- Поле **appliesTo** поддерживает только группы.
+- Динамические группы и вложенные группы не поддерживаются.
+
+Ниже представлены предварительные требования для каждой из функций, которые в настоящее время подаваются в суд для выкатки с помощью этой политики выкатки.
+
+### <a name="passthrough-authentication"></a>Проверка подлинности через проход
+
+* Определите сервер с Windows Server 2012 R2 или более поздней версии, на котором необходимо запустить агент [PassthroughAuthentication.](/azure/active-directory/hybrid/how-to-connect-pta)Убедитесь, что сервер соединен с доменом, может проверить подлинность выбранных пользователей с помощью Active Directory и взаимодействовать с Azure AD в исходящие порты и URL-адреса.
+* [Скачайте](https://aka.ms/getauthagent) & установите агент проверки подлинности Microsoft Azure AD Connect на сервере.
+* Чтобы обеспечить высокую доступность, установите дополнительные агенты проверки подлинности на других серверах, как описано [здесь.](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
+* Убедитесь, что вы правильно настроили параметры [smart lockout.](/azure/active-directory/authentication/howto-password-smart-lockout) Это необходимо для обеспечения того, чтобы учетные записи активных каталогов пользователей не блокировалися плохими субъектами.
+
+### <a name="seamlesssso"></a>SeamlessSso
+
+* Включить [SeamlessSso](/azure/active-directory/hybrid/how-to-connect-sso) для лесов AD на основе [этих](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) инструкций.
+
+### <a name="passwordhashsync"></a>PasswordHashSync
+
+* Включении [PasswordHashSync со](/azure/active-directory/hybrid/whatis-phs)   страницы "Необязательные функции" в Azure AD Connect.
+
+### <a name="emailasalternateid"></a>EmailAsAlternateId
+
+* Связывать альтернативные сообщения электронной почты с учетными записями пользователей.
+
+## <a name="methods"></a>Методы
+
+| Метод                                                                         | Возвращаемый тип                                     | Описание                                                               |
+|:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
+| [Функция ListRolloutPolicies](../api/featurerolloutpolicies-list.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Извлечение списка объектов featureRolloutPolicy.                          |
+| [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Извлечение свойств и связей объекта featurerolloutpolicy. |
+| [Создание featureRolloutPolicy](../api/featurerolloutpolicies-post.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Создайте новый объект featureRolloutPolicy.                                 |
+| [Обновление функцииRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Обновление свойств объекта featurerolloutpolicy.                     |
+| [Удаление featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | Нет                                            | Удаление объекта featureRolloutPolicy.                                     |
+| [Назначение appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Назначение каталогаОбект для выкатки функций.                              |
+| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Нет                                            | Удалите directoryObject из выкатки функций.                            |
+
+## <a name="properties"></a>Свойства
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|description|String|Описание этой политики выкатки функций.|
+|displayName|String|Имя отображения для этой политики выкатки функций.|
+|функция|stagedFeatureName| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
+|id|String| Только для чтения.|
+|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|isEnabled|Boolean|Указывает, включена ли выкатка функций.|
+
+### <a name="stagedfeaturename-values"></a>значения stagedFeatureName 
+
+|Member|
+|:---|
+|passthroughAuthentication|
+|seamlessSso|
+|passwordHashSync|
+|emailAsAlternateId|
+|unknownFutureValue|
+
+## <a name="relationships"></a>Связи
+
+| Связь | Тип        | Описание |
+|:-------------|:------------|:------------|
+|appliesTo|Коллекция [directoryObject](directoryobject.md)| Допускается значение null. Указывает список directoryObjects, для которые включена функция.|
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже указано представление ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.featureRolloutPolicy",
+  "keyProperty": "id"
+}-->
+
+```json
+{
+  "description": "String",
+  "displayName": "String",
+  "feature": "string",
+  "id": "String (identifier)",
+  "isAppliedToOrganization": false,
+  "isEnabled": true
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "featureRolloutPolicy resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
+

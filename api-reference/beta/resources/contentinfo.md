@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Контентинфо
-description: Представляет текущее состояние некоторых сведений, которые необходимо подписать.
+title: тип ресурса contentInfo
+description: Представляет текущее состояние некоторых сведений, которые должны быть помечены.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d7e0c159d46cb680329efc6a93896ca3df7270f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 939d7730c0de2ffb13d4dbdcade6f7c2fbce5de4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998923"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962653"
 ---
-# <a name="contentinfo-resource-type"></a>Тип ресурса Контентинфо
+# <a name="contentinfo-resource-type"></a>тип ресурса contentInfo
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние некоторых сведений, которые необходимо подписать. **контентинфо** передается в API [евалуатеремовал](../api/informationprotectionlabel-evaluateRemoval.md), [ЕВАЛУАТЕАППЛИКАТИОН](../api/informationprotectionlabel-evaluateApplication.md)и [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateClassificationResults.md) для описания API текущего состояния информации. В этом **контентинфо** подробные сведения о том, какие метаданные, маркировка содержимого и защита должны добавляться или удаляться при применении, обновлении или удалении метки. 
+Представляет текущее состояние некоторых сведений, которые должны быть помечены. **contentInfo** передается в a [evaluateRemoval,](../api/informationprotectionlabel-evaluateRemoval.md) [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)и [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) API, чтобы описать API текущее состояние информации. В **этом содержимогоInfo** приводится информация о том, какие метаданные, маркировка контента и защита должны быть добавлены или удалены при нанесении, обновлении или удалении метки. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип                                       | Описание                                                                                                                     |
 | :--------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | format     | String                                     | Возможные значения: `default`, `email`.                                                                                        |
-| идентификатор | String                                     | Идентификатор, используемый для аналитики Azure Information Protection.                                                                     |
-| метаданных   | Коллекция [keyValuePair](keyvaluepair.md) | Существующие метаданные Microsoft Information Protection передаются в виде пар "ключ-значение", где ключ — это MSIP_Label_GUID_PropName. |
+| идентификатор | Строка                                     | Идентификатор, используемый для Azure Information Protection Analytics.                                                                     |
+| метаданные   | Коллекция [keyValuePair](keyvaluepair.md) | Существующие метаданные Microsoft Information Protection передаются в виде пар ключей и значений, где ключом является MSIP_Label_GUID_PropName. |
 | state      | String                                     | Возможные значения: `rest`, `motion`, `use`.                                                                                   |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 531b688fe64f4cadb7a23cbc7db6cba313b86a0c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4eb1cbdcbf0a1256c2bf2bf0cec35479b8bbc2cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440481"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962625"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Тип ресурса directory (удаленные элементы)
 
@@ -31,8 +31,8 @@ ms.locfileid: "50440481"
 |[Перечисление удаленных элементов](../api/directory-deleteditems-list.md) |Коллекция [directoryObject](directoryobject.md)| Получает список недавно удаленных элементов. |
 |[Окончательное удаление элемента](../api/directory-deleteditems-delete.md) | None | Окончательно удаляет элемент. |
 |[Список удаленных элементов, которые принадлежат пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Списки элементов каталогов, которые принадлежат пользователю. |
-|[Функция ListRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [коллекция featureRolloutPolicy](featurerolloutpolicy.md) | Извлечение списка объектов featureRolloutPolicy. |
-|[Создание featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Создайте новый объект featureRolloutPolicy. |
+|[Функция ListRolloutPolicies](../api/list-featurerolloutpolicies.md) | [коллекция featureRolloutPolicy](featurerolloutpolicy.md) | Извлечение списка объектов featureRolloutPolicy. |
+|[Создание featureRolloutPolicy](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Создайте новый объект featureRolloutPolicy. |
 | [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Извлечение свойств и связей объекта featurerolloutpolicy. |
 | [Обновление функцииRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Обновление свойств объекта featurerolloutpolicy. |
 | [Удаление featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | Нет | Удаление объекта featureRolloutPolicy. |
@@ -40,7 +40,7 @@ ms.locfileid: "50440481"
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта, например 12345678-9abc-def0-1234-56789abcde. Ключ. Значение null не допускается. Только для чтения.|
+|id|Строка| Уникальный идентификатор объекта, например 12345678-9abc-def0-1234-56789abcde. Ключ. Значение null не допускается. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

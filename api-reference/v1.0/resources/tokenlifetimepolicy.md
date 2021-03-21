@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f950ce0c5a269aee5159349c76e9bea1c4c7a505
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b4d8d814278855e164fa00643b8f56ebc544a789
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442504"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963360"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>тип ресурса tokenLifetimePolicy
 
@@ -42,8 +42,8 @@ ms.locfileid: "50442504"
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
 |определение|Коллекция строк| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательно.|
-|isOrganizationDefault|Логический|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
+|displayName|String| Отображение имени для этой политики. Обязательный.|
+|isOrganizationDefault|Boolean|Если `true` установлено, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию `false` .|
 
 
 ### <a name="properties-of-a-token-lifetime-policy-definition"></a>Свойства определения политики жизни маркера
@@ -65,7 +65,7 @@ ms.locfileid: "50442504"
 | Свойство     | Тип   |Описание| Значение Min | Максимальное значение | Значение по умолчанию|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |AccessTokenLifetime|String|Контролирует, как долго и доступ, и маркеры ID считаются допустимыми.|10 минут|1 день|1 час|
-|Версия|Целое число|Значение 1. Обязательно.|Нет|Нет|Нет|
+|Версия|Целое число|Значение 1. Обязательный.|Нет|Нет|Нет|
 
 ## <a name="relationships"></a>Связи
 

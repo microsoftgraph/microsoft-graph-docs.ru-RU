@@ -1,16 +1,16 @@
 ---
 title: Получение объекта threatAssessmentRequest
-description: Получение свойств и связей указанного объекта среатассессментрекуест.
+description: Извлечение свойств и связей указанного объекта threatassessmentrequest.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a93923673f9c7629fbe3d1d0e536501dfbf5bd08
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0c4f179243f8fa14ee59e22a07fbd643f9ccb850
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977871"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962823"
 ---
 # <a name="get-threatassessmentrequest"></a>Получение объекта threatAssessmentRequest
 
@@ -18,9 +18,9 @@ ms.locfileid: "48977871"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей указанного объекта [среатассессментрекуест](../resources/threatassessmentrequest.md) .
+Извлечение свойств и связей указанного объекта [threatAssessmentRequest.](../resources/threatassessmentrequest.md)
 
-Запрос на оценку угроз может иметь один из следующих типов:
+Запрос на оценку угроз может быть одним из следующих типов:
 
 * [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
@@ -35,7 +35,7 @@ ms.locfileid: "48977871"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложения                            | ThreatAssessment.Read.All                  |
+| Для приложений                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,11 +47,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$expand         |string   |Использование `$expand=results` в запросе для получения результатов оценки угроз.                                                                                              |
+|$expand         |string   |Использование `$expand=results` в запросе для получения результата оценки угрозы.                                                                                              |
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -66,11 +66,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика. Возвращаются свойства этого типа: [маилассессментрекуест](../resources/mailAssessmentRequest.md), [емаилфилеассессментрекуест](../resources/emailFileAssessmentRequest.md), [филеассессментрекуест](../resources/fileAssessmentRequest.md), [урлассессментрекуест](../resources/urlAssessmentRequest.md).
+В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) в тексте ответа. Возвращаются свойства этого типа: [mailAssessmentRequest,](../resources/mailAssessmentRequest.md) [emailFileAssessmentRequest,](../resources/emailFileAssessmentRequest.md) [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Пример 1: получение свойств запроса на оценку почты
+### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Пример 1. Получить свойства запроса на оценку почты
 
 #### <a name="request"></a>Запрос
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Пример 2: получение свойств запроса на оценку файла электронной почты
+### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Пример 2. Получить свойства запроса на оценку файлов электронной почты
 
 #### <a name="request"></a>Запрос
 
@@ -214,7 +214,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Пример 3: получение свойств запроса на оценку файла
+### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Пример 3. Получить свойства запроса на оценку файлов
 
 #### <a name="request"></a>Запрос
 
@@ -285,7 +285,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Пример 4: получение свойств запроса на оценку URL-адреса
+### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Пример 4. Получить свойства запроса на оценку URL-адреса
 
 #### <a name="request"></a>Запрос
 
@@ -355,7 +355,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Пример 5: развертывание результатов оценки угроз для запроса
+### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Пример 5. Расширение результатов оценки угроз для запроса
 
 #### <a name="request"></a>Запрос
 

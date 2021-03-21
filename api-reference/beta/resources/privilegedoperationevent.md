@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 408eb2ca06168b4e22b945aa9d3d6faa2b1a561a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b8a2a67d86a647ca42b6ecd86c5dad5025ede0de
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440164"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962583"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>тип ресурса privilegedOperationEvent
 
@@ -31,12 +31,12 @@ ms.locfileid: "50440164"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |additionalInformation|string|Подробные сведения о читаемом человеке для события.|
-|creationDateTime|dateTimeOffset|Указывает время создания события.|
-|expirationDateTime|dateTimeOffset|Это используется только тогда, когда requestType является "Активировать", и указывает время истечения срока действия активации роли.|
+|creationDateTime|DateTimeOffset|Указывает время создания события.|
+|expirationDateTime|DateTimeOffset|Это используется только тогда, когда **requestType** — и указывает время истечения срока действия `Activate` активации роли.|
 |id|string|Уникальный идентификатор для privilegedOperationEvent. Только для чтения.|
 |referenceKey|string|Номер билета incident/Request во время активации роли. Значение представлено только в том случае, если номер билета предоставляется во время активации роли.|
 |referenceSystem|string|Система билетов incident/Request, предоставляемая во время активации tole. Значение представлено только в том случае, если система билетов предоставляется во время активации роли.|
-|requestType|string|Тип операции запроса. Значение requestType может быть: ```Assign``` (назначение ```Activate``` ролей), (активация роли), (удаление назначения ролей), (отключение роли), (сканирование оповещений о безопасности), (устранение проблемы оповещения о безопасности), (просмотрите обзор доступа), (создайте обзор ```Unassign``` ```Deactivate``` ```ScanAlersNow``` ```DismissAlert``` ```FixAlertItem``` ```AccessReview_Review``` ```AccessReview_Create``` доступа), ```AccessReview_Update``` (обновите ```AccessReview_Delete``` обзор доступа) и (удалите обзор доступа).|
+|requestType|Строка|Тип операции запроса. Значение requestType может быть: `Assign` (назначение ролей), (активация роли), (удаление назначения ролей), (отключение роли), (сканирование оповещений о безопасности), (устранение проблемы оповещения о безопасности), (просмотрите обзор доступа), (создайте обзор доступа) (обновите обзор `Activate` `Unassign` `Deactivate` `ScanAlertsNow` `DismissAlert` `FixAlertItem`  `AccessReview_Review` `AccessReview_Create` `AccessReview_Update` доступа), `AccessReview_Delete` (удалите обзор доступа).|
 |requestorId|string|Пользовательский id запросителя, который инициирует операцию.|
 |requestorName|string|Имя пользователя запросителя, который инициирует операцию.|
 |roleId|string|ID роли, связанной с операцией.|

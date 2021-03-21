@@ -5,12 +5,12 @@ author: jerrysai
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 58c4f913c8a5fc3b4f7c1c129c7126437035cbe7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f34fdacf75b991ff339f4b7cdd823290438e8fea
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444282"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962642"
 ---
 # <a name="continuousaccessevaluationpolicy-resource-type"></a>тип ресурса continuousAccessEvaluationPolicy
 
@@ -29,10 +29,10 @@ ms.locfileid: "50444282"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|String|Непрерывная оценка доступа автоматически блокирует доступ к ресурсам и приложениям в режиме реального времени при удалении доступа пользователя или изменениях IP-адресов клиента. Только для чтения.|
-|displayName|String| Значение всегда является "Оценка непрерывного доступа". Только для чтения.|
+|description|Строка|Непрерывная оценка доступа автоматически блокирует доступ к ресурсам и приложениям в режиме реального времени при удалении доступа пользователя или изменениях IP-адресов клиента. Только для чтения.|
+|displayName|Строка| Значение всегда `Continuous Access Evaluation` . Только для чтения.|
 |groups|Коллекция строк|Коллекция идентификаторов групп в области для оценки. Все группы находятся в области, когда коллекция пуста.|
-|id|String|Указывает идентификатор объекта continuousAccessEvaluationPolicy. Только для чтения.|
+|id|Строка|Указывает идентификатор объекта [continuousAccessEvaluationPolicy.](#continuousaccessevaluationpolicy-resource-type) Только для чтения.|
 |isEnabled|Boolean| `true` указать, следует ли проводить оценку непрерывного доступа; в противном `false` случае . |
 |users|Коллекция строк|Коллекция идентификаторов пользователей в области для оценки. Все пользователи находятся в области, когда коллекция пуста.|
 

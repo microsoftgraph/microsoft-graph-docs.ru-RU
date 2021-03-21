@@ -5,12 +5,12 @@ title: contentType
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 2af8291f33f62517e33349fb66408131f576e89a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bcd888d01f47b98fa5a55a4b6da2fdfe2028e05b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444296"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962660"
 ---
 # <a name="contenttype-resource-type"></a>тип ресурса contentType
 
@@ -18,8 +18,27 @@ ms.locfileid: "50444296"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет тип _контента в_ SharePoint.
+Представляет тип контента в SharePoint.
 Типы контента позволяют определить набор столбцов, которые должны присутствовать на каждом [**listItem**][listItem] в [**списке.**][list]
+
+## <a name="methods"></a>Методы
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Список contentTypes на сайте](../api/site-list-contenttypes.md)|[коллекция contentType](../resources/contenttype.md)|Получите список объектов [contentType](../resources/contenttype.md) и их свойств на [сайте.](../resources/site.md)|
+|[Список contentTypes в списке](../api/list-list-contenttypes.md)|[коллекция contentType](../resources/contenttype.md)|Получите список объектов [contentType](../resources/contenttype.md) и их свойств в [списке.](../resources/list.md)|
+|[Создание contentType для сайта](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|Создание нового [объекта contentType](../resources/contenttype.md) на [сайте.](../resources/site.md)|
+|[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Ознакомьтесь с свойствами и отношениями объекта [contentType.](../resources/contenttype.md)|
+|[Обновление contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Обновление свойств объекта [contentType.](../resources/contenttype.md)|
+|[Удаление contentType](../api/contenttype-delete.md)|Нет|Удаляет объект [contentType.](../resources/contenttype.md)|
+|[isPublished](../api/contenttype-ispublished.md)|Boolean| Проверка [публикации contentType.](../resources/contenttype.md)|
+|[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Публикация [контентаType](../resources/contenttype.md).|
+|[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
+|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Добавьте копию [contentType](../resources/contenttype.md) с [сайта](../resources/site.md) в [список).](../resources/list.md)|
+|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Связывает [contentType](../resources/contenttype.md) со списком концентраторов.|
+|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Скопируйте файл в расположение контента по умолчанию в [contentType.](../resources/contenttype.md)|
+|[Список столбцов](../api/contenttype-list-columns.md)|[коллекция columnDefinition](../resources/columnDefinition.md)|Получите коллекцию столбцов, представленных в [качестве ресурсов columnDefinition,](../resources/columnDefinition.md) в **contentType.**|
+|[Создание столбца](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Добавление столбца к **типу контента** на сайте или в списке.|
+
 
 ## <a name="properties"></a>Свойства
 

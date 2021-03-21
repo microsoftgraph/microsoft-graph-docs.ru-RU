@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ce482195ce7921eb43f2e4d1845a95f750688f1a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 85af4636f52e49717e864f2ccb9d710fea313eb2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448872"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962520"
 ---
 # <a name="authorizationpolicy-resource-type"></a>тип ресурса authorizationPolicy
 
@@ -28,15 +28,24 @@ ms.locfileid: "50448872"
 ## <a name="properties"></a>Свойства  
 | Свойство | Тип | Описание | 
 |-|-|-|
-|id|String| ID политики авторизации. Обязательно. Только для чтения.| 
+|id|String| ID политики авторизации. Обязательный. Только для чтения.| 
 |displayName|String| Отображение имени для этой политики. |  
 |description|String| Описание этой политики.|  
-|blockMsolPowerShell|Логический| Чтобы отключить использование MSOL PowerShell, установите это свойство true. Настройка true также отключит пользовательский доступ к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не влияет на Azure AD Connect или Microsoft Graph. | 
+|blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите это свойство true. Настройка true также отключит пользовательский доступ к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не влияет на Azure AD Connect или Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](defaultuserrolepermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
-|allowedToUseSSPR|Логический| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
-|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. | 
-|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. | 
-|allowInvitesFrom|String|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения:<ul><li>`none` - Запретить всем, включая администраторов, приглашать внешних пользователей. Параметр по умолчанию для правительства США.</li><li>`adminsAndGuestInviters` - Разрешить участникам глобальных администраторов, администраторов пользователей и приглашенных приглашений приглашать внешних пользователей.</li><li>`adminsGuestInvitersAndAllMembers` - Разрешить вышеперечисленные роли администратора и всем другим участникам роли пользователя приглашать внешних пользователей.</li><li>`everyone` - Разрешить всем в организации, включая гостевых пользователей, приглашать внешних пользователей. Параметр по умолчанию для всех облачных сред, кроме правительства США.</li></ul> |
+|allowedToUseSSPR|Boolean| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. | 
+|allowInvitesFrom|allowInvitesFrom|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` — это параметр по умолчанию для всех облачных сред, за исключением правительства США. Подробнее в таблице [ниже](#allowinvitesfrom-values). |
+
+### <a name="allowinvitesfrom-values"></a>allowInvitesFrom values
+
+|Member|Описание|
+|:---|:---|
+|Нет|Запретить всем, включая администраторов, приглашать внешних пользователей. Параметр по умолчанию для правительства США.|
+|adminsAndGuestInviters|Разрешить участникам глобальных администраторов, администраторов пользователей и приглашенных приглашений приглашать внешних пользователей.|
+|adminsGuestInvitersAndAllMembers|Разрешить вышеперечисленные роли администратора и всем другим участникам роли пользователя приглашать внешних пользователей.|
+|все|Разрешить всем в организации, включая гостевых пользователей, приглашать внешних пользователей. Параметр по умолчанию для всех облачных сред, кроме правительства США.|
 
 ## <a name="relationships"></a>Связи
 

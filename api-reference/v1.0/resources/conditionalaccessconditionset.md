@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса conditionalAccessConditionSet
-description: Представляет тип условий, управляющих применимой политикой.
+title: тип ресурса conditionalAccessConditionSet
+description: Представляет тип условий, которые регулируются при применяемой политике.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ff7159c09b0afcaf223a5840584d531e99be2da6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3d448b2d54fbc94c63588712f06492ce7d38a33a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132136"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962499"
 ---
-# <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса conditionalAccessConditionSet
+# <a name="conditionalaccessconditionset-resource-type"></a>тип ресурса conditionalAccessConditionSet
 
 Пространство имен: microsoft.graph
 
-Представляет тип условий, управляющих применимой политикой.
+Представляет тип условий, которые регулируются при применяемой политике.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователей, включенные в политику и исключенные из нее. Обязательный элемент. |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательный элемент. |
-|clientAppTypes|Коллекция String| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
-|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Расположения, включенные в политику и исключенные из нее. |
-|платформы|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
-|signInRiskLevels|Коллекция String| Уровни риска для входов, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
-|userRiskLevels|Коллекция String| Уровни риска для пользователей, включенные в политику. Возможные значения: `low`, `medium`, `high`.|
+|приложения|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователей, включенные и исключенные из политики. Обязательный. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательный. |
+|clientAppTypes|коллекция conditionalAccessClientApp| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Обязательный.|
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Расположения, включенные и исключенные из политики. |
+|платформы|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные и исключенные из политики. |
+|signInRiskLevels|коллекция riskLevel| Уровни риска для входов, включенные в политику. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Обязательный.|
+|userRiskLevels|коллекция riskLevel| Уровни риска пользователей, включенные в политику. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Обязательный.|
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 3311986bf054fa6daca8580a41f11c97f03079e9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a63d50594f427c58a84702e7c925f1a04a7c2bae
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134277"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962845"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -26,7 +26,7 @@ ms.locfileid: "50134277"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Application.ReadWrite.All, Directory.Read.All |
 
@@ -137,7 +137,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

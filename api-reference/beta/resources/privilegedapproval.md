@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 7d7842b89bce06d582aa827b853e4170b0693ff8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8d092d6c877f9fa2bdce2d645ef56a84508c510d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721609"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962590"
 ---
 # <a name="privilegedapproval-resource-type"></a>тип ресурса privilegedApproval
 
@@ -35,13 +35,13 @@ ms.locfileid: "50721609"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|Строка| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalState|approvalState| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalType|Строка||
+|approverReason|Строка||
 |endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Строка||
+|roleId|Строка||
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |userId|String||
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bbb38453015f1b00b9a290913eeb9c03a090b045
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1d9f9256a7fea09ab7219ef460ed2f2dc9154538
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721553"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962478"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>тип ресурса conditionalAccessPolicy
 
@@ -39,7 +39,7 @@ ms.locfileid: "50721553"
 |id|String| Указывает идентификатор объекта conditionalAccessPolicy. Только для чтения.|
 |modifiedDateTime| DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Указывает элементы управления сеансами, которые применяются после регистрации. |
-|состояние|string| Указывает состояние объекта conditionalAccessPolicy. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательный. |
+|state|conditionalAccessPolicyState| Указывает состояние объекта conditionalAccessPolicy. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 

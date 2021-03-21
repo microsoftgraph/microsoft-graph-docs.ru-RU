@@ -1,21 +1,21 @@
 ---
-title: Задачи списка дел
+title: Задачи списка Todo
 description: Получите ресурсы todoTask из свойства навигации задач указанного todoTaskList.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eaa56486c1198f58171202ecf4651d9364e42f75
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f95864aa3988f7e5598376e202c9b8d697184458
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873537"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963376"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 Пространство имен: microsoft.graph
 
-Получите ресурсы **todoTask** из свойства навигации **задач** указанного [todoTaskList.](../resources/todotasklist.md)
+Получите ресурсы **todoTask** из **свойства** навигации задач указанного [todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "49873537"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [todoTask](../resources/todotask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [todoTask](../resources/todotask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -61,26 +61,26 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 <!-- {
   "blockType": "request",
   "sampleKeys": ["35e2-35e2-721a-e235-1a72e2351a7"],
-  "name": "get_todotask"
+  "name": "get_todotask_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotask-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotask-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotask-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotask-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-todotask-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-todotask-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-todotask-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-todotask-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
