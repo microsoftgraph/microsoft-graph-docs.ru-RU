@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: 7b5a713d5860da2b74401f2a484bffa253142641
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 19ff391309089802dcb15494eba1ac6345325b24
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193136"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51030983"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -22,6 +22,8 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | **Ресурс** | **Поддерживаемые пути ресурсов** | **Можно ли данные ресурсов включать в уведомления**                  |
 |:----------------|:------------|:-----------------------------------------|
+| [printer][] облачной печати | Изменения, когда задание печати готово к скачиванию (событие JobFetchable):<br>`/print/printers/{id}/jobs` | Нет |
+| [printTaskDefinition][] облачной печати | Изменения, когда доступно допустимое задание в очереди (событие JobStarted):<br>`/print/printtaskdefinition/{id}/tasks` | Нет |
 | [Сообщение][] Outlook | Изменения во всех сообщениях в почтовом ящике пользователя: <br>`/users/{id}/messages`<br>Изменения в сообщениях в папке «Входящие» пользователя:<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
 | [Событие][] Outlook | Изменения всех событий в почтовом ящике пользователя:<br>`/users/{id}/events` | Нет |
 | Личный [контакт][] Outlook | Изменения всех личных контактов в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Нет |
@@ -45,7 +47,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Делегированное — рабочая или учебная учетная запись     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
 | Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
-| Приложение                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][]|
+| Приложение                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [printer][], [printTaskDefinition][]|
 
 
 ## <a name="see-also"></a>См. также
@@ -69,4 +71,6 @@ REST API Microsoft Graph использует механизм веб-перех
 [user]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
+[printer]: ./printer.md
+[printTaskDefinition]: ./printtaskdefinition.md
 

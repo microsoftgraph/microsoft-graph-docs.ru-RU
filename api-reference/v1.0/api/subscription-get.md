@@ -2,15 +2,15 @@
 title: Получение подписки
 description: Получение свойств и связей подписки.
 localization_priority: Priority
-author: davidmu1
-ms.prod: ''
+author: Jumaodhiss
+ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 93b614c8ba93b5643b5f630294e40fee1edf002c
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 36eff9ff9f54ad6873d0948d58b7637722d9a97f
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761537"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031123"
 ---
 # <a name="get-subscription"></a>Получение подписки
 
@@ -39,6 +39,8 @@ ms.locfileid: "50761537"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -128,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions/{id}
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -150,7 +152,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 

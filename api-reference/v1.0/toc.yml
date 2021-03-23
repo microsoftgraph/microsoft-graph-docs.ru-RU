@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1082,7 +1082,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Categories
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1315,7 +1315,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -4157,34 +4157,34 @@ items:
                             href: api/namedlocation-get.md
                           - name: Удаление
                             href: api/namedlocation-delete.md
-                      - name: Расположение с именем страны
-                        items:
                           - name: Расположение с именем страны
-                            href: resources/countrynamedlocation.md
-                          - name: Список
-                            href: api/conditionalaccessroot-list-namedlocations.md
-                          - name: Создание
-                            href: api/conditionalaccessroot-post-namedlocations.md
-                          - name: Получение
-                            href: api/countrynamedlocation-get.md
-                          - name: Обновление
-                            href: api/countrynamedlocation-update.md
-                          - name: Delete
-                            href: api/countrynamedlocation-delete.md
-                      - name: Расположение с именем IP
-                        items:
+                            items:
+                              - name: Расположение с именем страны
+                                href: resources/countrynamedlocation.md
+                              - name: Список
+                                href: api/conditionalaccessroot-list-namedlocations.md
+                              - name: Создание
+                                href: api/conditionalaccessroot-post-namedlocations.md
+                              - name: Получение
+                                href: api/countrynamedlocation-get.md
+                              - name: Обновление
+                                href: api/countrynamedlocation-update.md
+                              - name: Delete
+                                href: api/countrynamedlocation-delete.md
                           - name: Расположение с именем IP
-                            href: resources/ipnamedlocation.md
-                          - name: Список
-                            href: api/conditionalaccessroot-list-namedlocations.md
-                          - name: Создание
-                            href: api/conditionalaccessroot-post-namedlocations.md
-                          - name: Получение
-                            href: api/ipnamedlocation-get.md
-                          - name: Обновление
-                            href: api/ipnamedlocation-update.md
-                          - name: Delete
-                            href: api/ipnamedlocation-delete.md
+                            items:
+                              - name: Расположение с именем IP
+                                href: resources/ipnamedlocation.md
+                              - name: Список
+                                href: api/conditionalaccessroot-list-namedlocations.md
+                              - name: Создание
+                                href: api/conditionalaccessroot-post-namedlocations.md
+                              - name: Получение
+                                href: api/ipnamedlocation-get.md
+                              - name: Обновление
+                                href: api/ipnamedlocation-update.md
+                              - name: Delete
+                                href: api/ipnamedlocation-delete.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
                 items:
@@ -4458,7 +4458,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4560,7 +4560,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор
@@ -4729,7 +4729,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5112,7 +5112,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
