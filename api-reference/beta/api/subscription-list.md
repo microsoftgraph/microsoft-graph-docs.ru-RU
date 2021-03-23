@@ -1,16 +1,16 @@
 ---
 title: Перечисление подписок
-description: " в приведенных ниже сценариях представлены подробные сведения."
+description: " см. ниже сценарии."
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 5ce70af9462ab0669dade856725f2589257743e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: change-notifications
+ms.openlocfilehash: 25b37c652eac03eb827abfc4f6b43481e8d3e8c3
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972047"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031011"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -18,7 +18,7 @@ ms.locfileid: "48972047"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка подписок на веб-перехватчик. Содержимое ответа зависит от контекста, в котором приложение вызывается; в приведенных ниже сценариях представлены подробные сведения.
+Извлечение списка подписки на веб-ок. Содержимое ответа зависит от контекста, в котором вызывается приложение; см. ниже сценарии.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48972047"
 
 | Тип разрешения  | Разрешения (в порядке повышения привилегий)  |
 |:---------------- |:-------------------------------------------- |
-| [Делегированная](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Делегированная](/graph/auth-v2-user) учетная запись (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Делегированная](/graph/auth-v2-user) (работа или учетная запись школы) | Разрешение, необходимое [для создания подписки](subscription-post-subscriptions.md) или подписки.Read.All (см. ниже). |
+| [Делегированная](/graph/auth-v2-user) (личная учетная запись Майкрософт) | Разрешение, необходимое [для создания подписки](subscription-post-subscriptions.md) или подписки.Read.All (см. ниже). |
+| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое [для создания подписки.](subscription-post-subscriptions.md) |
 
 Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Note: ответ, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Показанный здесь ответ может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -142,7 +142,8 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }

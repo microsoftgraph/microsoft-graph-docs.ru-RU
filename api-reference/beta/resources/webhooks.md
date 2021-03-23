@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 1450b357fe620aca29c38615446ceedec182159b
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 27a67797830513a951c778e994bc8033ddab5bea
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597426"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51030997"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -24,7 +24,8 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | **Ресурс** | **Поддерживаемые пути ресурсов** | **Можно ли данные ресурсов включать в уведомления**                  |
 |:----------------|:------------|:-----------------------------------------|
-| [Принттаскдефинитион][] облачной печати | Изменения всех событий в определении задачи печати:<br>`/print/printtaskdefinition/{id}/tasks` | Нет |
+| Облачная печать [printer][] | Изменения при загрузке задания печати (событие JobFetchable):<br>`/print/printers/{id}/jobs` | Нет |
+| Облачная печать [printTaskDefinition][] | Изменения при допустимой работе в очереди (событие JobStarted) :<br>`/print/printtaskdefinition/{id}/tasks` | Нет |
 | [driveItem][]на OneDrive для бизнеса | Изменения содержимого в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
 | [driveItem][]на OneDrive (личный) | Изменения содержимого в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
 | [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в конкретной группе:<br>`/groups/{id}`<br>Изменения для владельцев конкретной группы:<br>`/groups/{id}/owners`<br>Изменения для участников конкретной группы:<br>`/groups/{id}/members` | Нет |
@@ -36,8 +37,8 @@ REST API Microsoft Graph использует механизм веб-перех
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
 | [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
-| [Присутствие][] в Teams | Изменения, внесенные в сведения о присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения, внесенные в сведения о присутствии нескольких пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
-| [тодотаск][] | Изменения во всех задачах в определенном списке задач:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Нет |
+| Присутствие [команд][] | Изменения в присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения нескольких присутствий пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
+| [todoTask][] | Изменения всех задач в определенном списке задач:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Нет |
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
 
 
@@ -49,9 +50,9 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Делегированное — рабочая или учебная учетная запись     | [оповещение][], [контакт][], [беседа][], [driveItem][], [список][], [событие][], [Группа][], [сообщение][], [пользователь][], [присутствие][], [chatMessage][] (Предварительная версия), [тодотаск][] |
-| Делегированное — личная учетная запись Майкрософт | [Contact][], [driveItem][], [List][], [event][], [Message][],[тодотаск][]                                     |
-| Приложение                            | [Alert][], [Contact][], [driveItem][], [List][], [event][], [Group][], [Message][], [User][], [каллрекорд][], [chatMessage][], [принттаскдефинитион][]|
+| Делегированное — рабочая или учебная учетная запись     | [оповещение][], контакт , [беседа][], [driveItem][], [список][], [событие][], [группа][] [,][]сообщение [,][]пользователь [,][]присутствие , [chatMessage][] (предварительный просмотр), [todoTask][] [][] |
+| Делегированное — личная учетная запись Майкрософт | [контакт][], [driveItem][], [список][], [событие][], [сообщение][],[todoTask][]                                     |
+| Для приложений                            | [оповещение][] [,][]контакт , [driveItem][], [список][] [,][]событие [,][]группа [,][]сообщение [,][]пользователь , [callRecord][], [chatMessage][] [,][]принтер , [printTaskDefinition][]|
 
 ## <a name="see-also"></a>См. также
 
@@ -75,6 +76,7 @@ REST API Microsoft Graph использует механизм веб-перех
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
 [presence]: ./presence.md
+[printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[тодотаск]: ./todoTask.md
+[todoTask]: ./todoTask.md
 

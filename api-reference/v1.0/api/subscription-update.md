@@ -1,17 +1,8 @@
 ---
-title: Обновление подписки
-description: Возобновление подписки путем увеличения срока действия.
-localization_priority: Normal
-author: davidmu1
-ms.prod: ''
-doc_type: apiPageType
-ms.openlocfilehash: e63f810e6e11d18d2e03fb702a629cee74d768fe
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759505"
+заголовок: описание "Обновление подписки": "Обновление подписки путем продления срока ее действия".
+localization_priority: Обычный автор: "Jumaodhiss" ms.prod: ""change-notifications" doc_type: apiPageType
 ---
+
 # <a name="update-subscription"></a>Обновление подписки
 
 Пространство имен: microsoft.graph
@@ -41,6 +32,8 @@ ms.locfileid: "50759505"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -128,7 +121,7 @@ Content-type: application/json
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -150,7 +143,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 
