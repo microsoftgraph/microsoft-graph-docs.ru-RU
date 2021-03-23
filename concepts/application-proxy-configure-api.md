@@ -1,91 +1,60 @@
 ---
 title: Настройка прокси-сервера приложений с помощью API Microsoft Graph
-description: Автоматически настраивать прокси-сервер приложений с помощью API Microsoft Graph для обеспечения удаленного доступа и единого входного доступа к локальному приложению.
+description: Настройте прокси-сервер приложений с помощью API Microsoft Graph, чтобы обеспечить удаленный доступ и один вход в локальное приложение.
 author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 98db70f1d5690b3021eb69a73007567c39b80c15
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: efc22ff03bf5b32398be6711a8f44394bf623050
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761341"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031093"
 ---
-# <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Автоматизация настройки прокси приложения с помощью API Microsoft Graph.
+# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Настройка прокси-сервера приложения с помощью API Microsoft Graph
 
-В этой статье вы узнаете, как создать и настроить прокси-сервер приложения Azure Active Directory (Azure AD). [](/azure/active-directory/manage-apps/what-is-application-proxy) Прокси-сервер приложения обеспечивает безопасный удаленный доступ и один вход в локальное веб-приложение. После настройки прокси-сервера приложений для приложения пользователи могут получать доступ к своим внутренним приложениям с помощью внешнего URL-адреса, портала "Мои приложения" или других внутренних порталов приложений.
+В этой статье вы узнаете, как настроить прокси-сервер приложения Azure Active Directory (Azure AD). Прокси-сервер приложения обеспечивает безопасный удаленный доступ и один вход в локальное веб-приложение. После настройки прокси-сервера приложений для приложения пользователи могут получать доступ к своим внутренним приложениям с помощью внешнего URL-адреса, портала "Мои приложения" или других внутренних порталов приложений.
 
-В этой статье предполагается, что вы [](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) уже установили соединители и выполнили необходимые условия для прокси-серверов приложений, чтобы соединители могли взаимодействовать с службами Azure AD.
+## <a name="prerequisites"></a>Необходимые условия
 
-Убедитесь, что у вас есть соответствующие разрешения для вызова следующих API.
+- В этом руководстве предполагается, что вы [](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) уже установили соединители и выполнили необходимые условия для прокси-сервера приложений, чтобы соединители могли взаимодействовать с службами Azure AD.
+- В этом руководстве предполагается, что вы используете песочницу Microsoft Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Чтобы настроить разрешения в песочнице Microsoft Graph, выполните следующие действия.
+    1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
+    2. Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетную запись глобального администратора Azure AD. После успешного входа вы увидите данные учетной записи пользователя на панели слева.
+    3. Щелкните значок параметров справа от сведений об учетной записи пользователя и нажмите **Выбор разрешений**.
 
-|Тип ресурса |Метод |
-|---------|---------|
-|[applications](/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Создание приложения](/graph/api/application-post-applications?tabs=http&view=graph-rest-beta) <br> [Обновление приложения](/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в connectorGroup](/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
-|[connector](/graph/api/resources/connector?view=graph-rest-beta)| [Получить соединители](/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Создание connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Добавление соединителя для connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Создать servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Обновление servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Создание appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+        ![Установка разрешений](./images/application-proxy-configure-api/set-permissions.png)
+        
+    4. Прокрутите список разрешений **в Каталог (3),** разйдите и выберите `Directory.ReadWrite.All` .
 
-> [!NOTE]
-> В запросах, показанных в этой статье, используются примерные значения. Вам потребуется обновить эти данные. Показанные объекты ответа также могут быть сокращены для чтения. 
+        ![Поиск разрешений](./images/application-proxy-configure-api/select-permissions.png)
+    
+    5. Нажмите **Согласие** и выберите **Принять**, чтобы согласиться принять разрешения. Вам не нужно предоставлять согласие от имени организации для этих разрешений.
 
-## <a name="step-1-create-an-application"></a>Шаг 1. Создание приложения
-
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API
-
-1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
-2. Выберите **вход в Microsoft и** во входе с помощью глобального администратора Azure AD или учетных данных администратора приложений.
-3. При успешном входе вы увидите сведения о учетной записи пользователя в левой области.
+        ![Прием разрешений](./images/application-proxy-configure-api/accept-permissions.png)
 
 > [!NOTE]
-> В настоящее время не поддерживается вход с помощью директора службы. 
+> Показанные объекты отклика могут быть сокращены для читаемости. 
 
-### <a name="create-an-application"></a>Создание приложения
+## <a name="step-1-create-a-custom-application"></a>Шаг 1. Создание настраиваемой программы
 
-Чтобы настроить прокси-сервер приложения с помощью API, создайте приложение, добавьте в приложение главу службы, а затем обновим свойство **приложения onPremisesPublishing,** чтобы настроить параметры прокси-сервера приложения. При создании приложения установите знак **ПриложенияInAudience** на "AzureADMyOrg".
+Чтобы настроить прокси-сервер приложения для приложения с помощью API, сначала создайте настраиваемое приложение, а затем обновим свойство **приложения onPremisesPublishing** для настройки параметров прокси-сервера приложения. В этом руководстве используется шаблон приложения для создания экземпляра настраиваемого приложения и основного клиента для управления. ID шаблона для настраиваемой заявки `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+
+Запись **id,** **appId**, **servicePrincipalId** приложения для использования позже в учебнике.
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_application"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/applications
+```http
+POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "displayName": "Contoso IWA App",
-  "signInAudience":"AzureADMyOrg"
+  "displayName": "Contoso IWA App"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
-} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -122,168 +91,26 @@ Content-type: application/json
 }
 ```
 
-### <a name="retrieve-the-application-object-id-and-appid"></a>Извлечение ID объекта приложения и appId
-Используйте ответ от предыдущего вызова, чтобы получить и сохранить ID объекта приложения и ID приложения.
-```
-"application": {
-  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
-}
-```
-### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>Создание службыPrincipal для приложения и добавление необходимых тегов
-Используйте **appId,** чтобы создать главную службу для приложения. Затем добавьте теги, необходимые для настройки прокси-сервера приложения.
+## <a name="step-2-configure-application-proxy"></a>Шаг 2. Настройка прокси-сервера приложения
+
+Чтобы запустить конфигурацию прокси-приложения, используйте **id,** записанный для приложения. Обновление следующих свойств:
+
+- **onPremisesPublishing** . В этом примере вы используете приложение с внутренним URL-адресом: `https://contosoiwaapp.com` . Вы также используете домен по умолчанию для внешнего URL-адреса: `https://contosoiwaapp-contoso.msappproxy.net` . 
+- **redirectUri,** **identifierUri** и **homepageUrl** — установите тот же внешний URL-адрес, настроенный в **свойстве onPremisesPublishing.**
+- **implicitGrantSettings** - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance.**
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_servicePrincipal"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/serviceprincipals
-Content-type: appplication/json
-
-{
-  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "tags": [
-    "WindowsAzureActiveDirectoryIntegratedApp",
-    "WindowsAzureActiveDirectoryOnPremApp"
-  ]
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Отклик
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
-} -->
-
 ```http
-HTTP/1.1 201 Created
+PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
-  "id": "a8cac399-cde5-4516-a674-819503c61313",
-  "deletedDateTime": null,
-  "accountEnabled": true,
-  "alternativeNames": [],
-  "createdDateTime": null,
-  "deviceManagementAppType": null,
-  "appDescription": null,
-  "appDisplayName": "Contoso IWA App",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "applicationTemplateId": null,
-  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
-  "appRoleAssignmentRequired": false,
-  "description": null,
-  "displayName": "vtestapi2",
-  "errorUrl": null,
-  "homepage": null,
-  "isAuthorizationServiceEnabled": false,
-  "loginUrl": null,
-  "logoutUrl": null,
-  "notes": null,
-  "notificationEmailAddresses": [],
-  "preferredSingleSignOnMode": null,
-  "preferredTokenSigningKeyEndDateTime": null,
-  "preferredTokenSigningKeyThumbprint": null,
-  "publisherName": "f/128 Photography",
-  "replyUrls": [],
-  "samlMetadataUrl": null,
-  "samlSingleSignOnSettings": null,
-  "servicePrincipalNames": [
-      "b92b92d4-3874-46a5-b715-a00ea01cff93"
-  ],
-  "servicePrincipalType": "Application",
-}
-```
-
-## <a name="step-2-configure-application-proxy-properties"></a>Шаг 2. Настройка свойств прокси-сервера приложений
-
-### <a name="set-the-onpremisespublishing-configuration"></a>Настройка конфигурации onPremisesPublishing
-
-Используйте ID объекта приложения на предыдущем этапе, чтобы настроить прокси-сервер приложения и обновить свойство **onPremisesPublishing** до нужной конфигурации. В этом примере вы используете приложение с внутренним URL-адресом и используете домен по умолчанию `https://contosoiwaapp.com` для внешнего URL-адреса: `https://contosoiwaapp-contoso.msappproxy.net` . 
-
-#### <a name="request"></a>Запрос
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
-Content-type: appplication/json
-
-{
-    "onPremisesPublishing": {
-        "externalAuthenticationType": "aadPreAuthentication",
-        "internalUrl": "https://contosoiwaapp.com",
-        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-    }
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Отклик
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204 No content
-```
-### <a name="complete-the-configuration-of-the-application"></a>Завершите конфигурацию приложения
-Обновление свойств **redirectUri,** **identifierUri** и **homepageUrl** для внешнего URL, настроенного в **свойстве onPremisesPublishing.** Затем [обновим implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) для `true` **enabledTokenIssuance** и `false` для **enabledAccessTokenIssuance.**
-
-#### <a name="request"></a>Запрос
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
-Content-type: appplication/json
-
-{
+  "onPremisesPublishing": {
+    "externalAuthenticationType": "aadPreAuthentication",
+    "internalUrl": "https://contosoiwaapp.com",
+    "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+  }
   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
   "web": {
     "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
@@ -296,125 +123,76 @@ Content-type: appplication/json
 }
 ```
 
-#### <a name="response"></a>Ответ
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
+#### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-3-assign-the-connector-group-to-the-application"></a>Шаг 3. Назначение группы соединители приложение
+## <a name="step-3-assign-a-connector-group-to-the-application"></a>Шаг 3. Назначение группы соединители для приложения
 
 ### <a name="get-connectors"></a>Получить соединители
 
-Список соединитений и использование ответа для получения и сохранения ID объекта соединитетеля. ID объекта соединиттеля будет использоваться для назначения соединитетеля группе соединители.
+Список доступных соединитений. **Записываю id** соединитетеля, который необходимо назначить группе соединители.
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "connector"
-}-->
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
-
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.connectors",
-  "isCollection": true
-} -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectors",
-    "value": [
-        {
-            "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
-            "machineName": "connectorA.redmond.contoso.com"",
-            "externalIp": "131.137.147.164",
-            "status": "active"
-        },
-        {
-            "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
-            "machineName": "connectorB.contoso.com"",
-            "externalIp": "68.0.191.210",
-            "status": "active"
-        },
-        {
-            "id": "8555cc3c-5c8b-48a8-a8b2-5e97c32ef907",
-            "machineName": "connectorC.contoso.com",
-            "externalIp": "40.78.66.161",
-            "status": "active"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectors",
+  "value": [
+    {
+      "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
+      "machineName": "connectorA.redmond.contoso.com"",
+      "externalIp": "131.137.147.164",
+      "status": "active"
+    },
+    {
+      "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
+      "machineName": "connectorB.contoso.com"",
+      "externalIp": "68.0.191.210",
+      "status": "active"
+    }
+  ]
 }
 ```
 
 ### <a name="create-a-connectorgroup"></a>Создание соединителиГруп
-В этом примере создается новый соединитекторGroup с именем "IWA Demo Connector Group", который используется для приложения. Вы также можете пропустить этот шаг, если ваш соединитатель уже назначен соответствующей соединителиГруппе. Извлечение и сохранение ID объекта connectorGroup для использования на следующем шаге.
+
+В этом примере создается новый соединитекторGroup, `IWA Demo Connector Group` который используется для приложения. Запись **возвращенного для** использования id на следующем шаге.
 
 #### <a name="request"></a>Запрос
 
-<!-- {
-  "blockType": "request",
-  "name": "connectorGroup"
-}-->
-
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 Content-type: application/json
 {
-   "name": "IWA Demo Connector Group"
+  "name": "IWA Demo Connector Group"
 }
 ```
 
-#### <a name="response"></a>Ответ
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
+#### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 201
 Content-type: connectorGroup/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectorGroups/$entity",
-    "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
-    "name": "IWA Demo Connector Group",
-    "connectorGroupType": "applicationProxy",
-    "isDefault": false
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectorGroups/$entity",
+  "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
+  "name": "IWA Demo Connector Group",
+  "connectorGroupType": "applicationProxy",
+  "isDefault": false
 }
 ```
 
@@ -422,26 +200,16 @@ Content-type: connectorGroup/json
 
 #### <a name="request"></a>Запрос
 
-<!-- {
-  "blockType": "request",
-  "name": "connectorGroup"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/8555cc3c-5c8b-48a8-a8b2-5e97c32ef907/memberOf/$ref
-
+```http
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/f2cab422-a1c8-4d70-a47e-2cb297a2e051/memberOf/$ref
 Content-type: application/json
+
 {
   "@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
 
-#### <a name="response"></a>Ответ
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
+#### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 204 No content
@@ -451,14 +219,7 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "connectorGroup"
-}-->
-
-```msgraph-interactive
+```http
 PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/connectorGroup/$ref
 Content-type: application/json
 
@@ -466,172 +227,135 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 204 No content
 ```
 
 ## <a name="step-4-configure-single-sign-on"></a>Шаг 4. Настройка единого входного
-В этом приложении используется интегрированная проверка подлинности Windows (IWA). Чтобы настроить IWA, установите свойства одного входного знака в [типе ресурса singleSignOnSettings.](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
+
+В этом приложении используется интегрированная проверка подлинности Windows (IWA). Чтобы настроить IWA, установите свойства единого входного знака **для onPremisesPublishing**.
 
 #### <a name="request"></a>Запрос
 
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
-}-->
-
-```msgraph-interactive
+```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
 
 {
-   "onPremisesPublishing": {
-      "singleSignOnSettings": {
-         "kerberosSignOnSettings": {
-            "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
+  "onPremisesPublishing": {
+    "singleSignOnSettings": {
+      "kerberosSignOnSettings": {
+        "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
         "kerberosSignOnMappingAttributeType": "userPrincipalName"
-         },
-         "singleSignOnMode": "onPremisesKerberos"
-      }
-   }
+      },
+      "singleSignOnMode": "onPremisesKerberos"
+    }
+  } 
 }
 ```
 
 #### <a name="response"></a>Отклик
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-5-assign-users"></a>Шаг 5. Назначение пользователей
-### <a name="retrieve-approle-for-the-applicaiton"></a>Получение appRole для приложения
+## <a name="step-5-assign-a-user"></a>Шаг 5. Назначение пользователя
+
+### <a name="retrieve-the-approle-for-the-application"></a>Получение appRole для приложения
+
+Получение ролей приложения для приложения с помощью **id** директора службы. Запись **id** роли **приложения пользователя,** которая будет использоваться на следующем шаге.
 
 #### <a name="request"></a>Запрос
 
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
-    "value": [
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "User",
-            "displayName": "User",
-            "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
-            "isEnabled": true,
-            "origin": "Application",
-            "value": null
-        },
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "msiam_access",
-            "displayName": "msiam_access",
-            "id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
-            "isEnabled": true,
-            "origin": "Application",
-            "value": null
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
+  "value": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "User",
+      "displayName": "User",
+      "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": null
+    },
+  ]
 }
 ```
 
-Используйте ответ из предыдущего вызова, чтобы получить и сохранить ID appRole, чтобы использовать для следующего шага.
-```
-      {
-            "description": "User",
-            "displayName": "User",
-            "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f"
-        }
-```
+### <a name="create-a-user-account"></a>Создание учетной записи пользователя
 
-### <a name="assign-users-and-groups-to-the-application"></a>Назначение пользователей и групп для приложения
-
-Чтобы назначить пользователя приложению, используйте следующие свойства.
-
-| Свойство  | Описание |Идентификатор  |
-|---------|---------|---------|
-| principalId | Пользовательский ID пользователя, назначенного приложению | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
-| principalType | Тип пользователя | Пользователь |
-| appRoleId |  ID роли приложения роли по умолчанию роли приложения | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | ServicePrincipal ID приложения | a8cac399-cde5-4516-a674-819503c61313 |
+В этом руководстве создается учетная запись пользователя, назначенная роли приложения. В теле запроса `contoso.com` измените доменное имя клиента. Информацию о клиенте можно найти на странице обзора в Azure Active Directory. Запись **id** учетной записи пользователя, которая будет использоваться на следующем шаге.
 
 #### <a name="request"></a>Запрос
 
-<!-- {
-  "blockType": "ignored",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
+```http
+POST https://graph.microsoft.com/v1.0/users
+Content-type: application/json
 
+{
+  "accountEnabled":true,
+  "displayName":"MyTestUser1",
+  "mailNickname":"MyTestUser1",
+  "userPrincipalName":"MyTestUser1@contoso.com",
+  "passwordProfile": {
+    "forceChangePasswordNextSignIn":true,
+    "password":"Contoso1234"
+  }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "id": "4628e7df-dff3-407c-a08f-75f08c0806dc",
+  "businessPhones": [],
+  "displayName": "MyTestUser1",
+  "givenName": null,
+  "jobTitle": null,
+  "mail": null,
+  "mobilePhone": null,
+  "officeLocation": null,
+  "preferredLanguage": null,
+  "surname": null,
+  "userPrincipalName": "MyTestUser1@contoso.com"
+}
+```
+
+### <a name="assign-the-user-to-the-application"></a>Назначение пользователя приложению
+
+В следующем примере замените значения этих свойств:
+
+- **principalId** с **id** пользователя
+- **appRoleId** с **id** роли приложения
+- **resourceId** с **id** директора службы
+
+#### <a name="request"></a>Запрос
+
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
 Content-type: appRoleAssignments/json
 
 {
-  "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
+  "principalId": "4628e7df-dff3-407c-a08f-75f08c0806dc",
   "principalType": "User",
   "appRoleId":"18d14569-c3bd-439b-9a66-3a2aee01d14f",
   "resourceId":"a8cac399-cde5-4516-a674-819503c61313"
@@ -640,30 +364,84 @@ Content-type: appRoleAssignments/json
 
 #### <a name="response"></a>Отклик
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
-    "id": "I23pL8ZdNU-CIgQmqMEVyLJ0E6fx0ixEo92az8MnhtU",
-    "creationTimestamp": "2020-06-09T00:06:07.5129268Z",
-    "appRoleId": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
-    "principalDisplayName": "Jean Green",
-    "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
-    "principalType": "User",
-    "resourceDisplayName": "Contoso IWA App",
-    "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
+  "id": "I23pL8ZdNU-CIgQmqMEVyLJ0E6fx0ixEo92az8MnhtU",
+  "creationTimestamp": "2020-06-09T00:06:07.5129268Z",
+  "appRoleId": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+  "principalDisplayName": "MyTestUser1",
+  "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
+  "principalType": "User",
+  "resourceDisplayName": "Contoso IWA App",
+  "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
+## <a name="step-6-test-access-to-the-application"></a>Шаг 6. Тестовый доступ к приложению
 
-Дополнительные сведения см. в документации по типу ресурса [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta).
+Проверьте приложение, посетив внешний **URL-адрес,** настроенный для приложения в браузере, а затем во входе с тестируемым пользователем. Вы должны иметь возможность войти в приложение и получить доступ к приложению.
 
+## <a name="step-7-clean-up-resources"></a>Шаг 7. Очистка ресурсов
 
-## <a name="additional-steps"></a>Дополнительные действия
-- [Автоматизация конфигурации с помощью образцов PowerShell для прокси-серверов приложений](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+Созданные в этом руководстве ресурсы не предназначены для использования в производственной среде. На этом шаге вы удаляете созданные ресурсы.
+
+### <a name="delete-the-user-account"></a>Удаление учетной записи пользователя
+
+Удалите учетную запись пользователя MyTestUser1.
+
+#### <a name="request"></a>Запрос
+
+```http
+DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+No Content - 204
+```
+
+### <a name="delete-the-application"></a>Удаление приложения
+
+#### <a name="request"></a>Запрос
+
+```http
+DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+No Content - 204
+```
+
+### <a name="delete-the-connector-group"></a>Удаление группы соединители
+
+#### <a name="request"></a>Запрос
+
+```http
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+No Content - 204
+```
+
+## <a name="see-also"></a>См. также
+
+- [Прокси-сервер приложения](/azure/active-directory/manage-apps/what-is-application-proxy)
+- [application](/graph/api/resources/application?view=graph-rest-1.0)
+- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
+- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
+- [connector](/graph/api/resources/connector?view=graph-rest-beta)
+- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
+- [локальной публикации профилей](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
+- [user](/graph/api/resources/user?view=graph-rest-1.0)

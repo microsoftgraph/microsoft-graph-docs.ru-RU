@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0d4cbaabb6fc05df3d9a58d1ced467bee0b8ef04
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f5413cc178f220b34c37aa1fc4840596003561bc
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515732"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031109"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Подписка на уведомления об изменениях из API облачной печати с использованием Microsoft Graph
 
@@ -47,11 +47,11 @@ ms.locfileid: "50515732"
 
 Чтобы подписаться на уведомления о заданиях печати, для приложений должны быть утверждены следующие области разрешений в клиенте Azure AD пользователя. 
 
-* Для инициированного события printTask (JobStarted) разрешения перечислены в статье [Получение taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-beta&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
+* Для инициированного события printTask (JobStarted) разрешения перечислены в статье [Получение taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-v1.0&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
 
-* Для события JobFetchable разрешения перечислены в статье [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http).
+* Для события JobFetchable разрешения перечислены в статье [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http).
 
-Приложения должны [создавать и использовать маркер безопасности Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) в заголовке запроса API Microsoft Graph. Маркер безопасности содержит утверждения согласно областям, одобренным администратором для клиента Azure AD.  
+Приложения должны [создавать и использовать маркер безопасности Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) в заголовке запроса API Microsoft Graph. Маркер безопасности содержит утверждения согласно областям, одобренным администратором для клиента Azure AD.  
 
 
 ## <a name="create-subscription-printtask-triggered-jobstarted-event"></a>Создание подписки: инициировано событие printTask (JobStarted) 
@@ -60,20 +60,20 @@ ms.locfileid: "50515732"
 
 Перед созданием уведомления для инициированного события **printTask**, убедитесь, что приложение создало следующие элементы: 
 
-- [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http)  для клиента Azure AD пользователя. Одно определение задачи можно связать с одним или несколькими принтерами в одном клиенте Azure AD. 
+- [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-v1.0&tabs=http)  для клиента Azure AD пользователя. Одно определение задачи можно связать с одним или несколькими принтерами в одном клиенте Azure AD. 
 
-- [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&tabs=http) для всех очередей принтеров, для которых партнер хочет получать уведомление при запуске нового задания печати. **printTaskTrigger** требуется связать с **printTaskDefinition**. 
+- [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-v1.0&tabs=http) для всех очередей принтеров, для которых партнер хочет получать уведомление при запуске нового задания печати. **printTaskTrigger** требуется связать с **printTaskDefinition**. 
 
 >[!NOTE]
 >Один принтер можно связать только с одним объектом **printTaskTrigger**, а один объект **printTaskTrigger** можно связать только с одним элементом **printTaskDefinition**. Однако один элемент **printTaskDefinition** можно связать с несколькими объектами **printTaskTriggers**. 
 
-С помощью элемента **printTaskDefinition**, существующего для клиента Azure AD пользователя, приложение может [создать подписку на инициированное событие printTask (JobStarted) с помощью printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). При создании подписки:  
+С помощью элемента **printTaskDefinition**, существующего для клиента Azure AD пользователя, приложение может [создать подписку на инициированное событие printTask (JobStarted) с помощью printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http). При создании подписки:  
 
 * Полю `resource` требуется присвоить значение `print/taskDefinitions/{printTaskDefinition ID}/tasks`. 
 * Полю `changeType` требуется присвоить значение `created`. 
-* Поле `expirationDateTime` не должное превышать [максимальный срок действия](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
+* Поле `expirationDateTime` не должное превышать [максимальный срок действия](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). 
 
-Дополнительные сведения см. в разделе [Свойства типа ресурса subscription](/graph/api/resources/subscription?view=graph-rest-beta#properties).
+Дополнительные сведения см. в разделе [Свойства типа ресурса subscription](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
 
 Ниже приведен пример запроса.
 <!-- {
@@ -81,7 +81,7 @@ ms.locfileid: "50515732"
   "name": "create_subscription"
 }--> 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions 
+POST https://graph.microsoft.com/v1.0/subscriptions 
 Content-Type: application/json
 { 
     "changeType":"created", 
@@ -103,7 +103,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Content-Type: application/json
 { 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
     "resource": "print/taskDefinitions/{printTaskDefinition ID}/tasks", 
     "applicationId": "{application ID}", 
@@ -131,9 +131,9 @@ Content-Type: application/json
 * Полю `resource` требуется присвоить значение "print/printers/{printer id}/jobs". 
 * Полю `changeType` требуется присвоить значение `updated`. 
 * Полю `notificationQueryOptions` требуется присвоить значение `$filter = isFetchable eq true`. 
-* Поле `expirationDateTime` не должное превышать [максимальный срок действия](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
+* Поле `expirationDateTime` не должное превышать [максимальный срок действия](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). 
 
-Дополнительные сведения см. в разделе [Свойства типа ресурса subscription](/graph/api/resources/subscription?view=graph-rest-beta#properties).
+Дополнительные сведения см. в разделе [Свойства типа ресурса subscription](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
 
 Ниже приведен пример запроса.
 <!-- {
@@ -141,7 +141,7 @@ Content-Type: application/json
   "name": "create_subscription"
 }--> 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
     "changeType":"updated",
@@ -164,7 +164,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Content-Type: application/json
 { 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
     "resource": "print/printers/{printer ID}/jobs", 
     "applicationId": "{Application ID}", 
@@ -185,11 +185,11 @@ Content-Type: application/json
 
 ## <a name="renewing-a-notification-subscription"></a>Возобновление подписки на уведомления
 
-В Microsoft Graph срок действия ограничен. Дополнительные сведения см. в разделе о [максимальном сроке действия](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). Чтобы продолжать получать уведомления, подписку требуется периодически обновлять с помощью [API обновления подписки](/graph/api/subscription-update?view=graph-rest-beta&tabs=http). 
+В Microsoft Graph срок действия ограничен. Дополнительные сведения см. в разделе о [максимальном сроке действия](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). Чтобы продолжать получать уведомления, подписку требуется периодически обновлять с помощью [API обновления подписки](/graph/api/subscription-update?view=graph-rest-v1.0&tabs=http). 
 
 ## <a name="other-operations-on-notification-subscriptions"></a>Другие операции с подпиской на уведомления 
 
-Приложения могут [получать](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) сведения о подписке или [удалять](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) подписку при необходимости. Подробности см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](/graph/api/resources/webhooks?view=graph-rest-beta).
+Приложения могут [получать](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=http) сведения о подписке или [удалять](/graph/api/subscription-delete?view=graph-rest-v1.0&tabs=http) подписку при необходимости. Подробности см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](/graph/api/resources/webhooks?view=graph-rest-v1.0).
 
 
 ## <a name="faqs"></a>Вопросы и ответы
@@ -201,7 +201,7 @@ Content-Type: application/json
 Приложения должны обрабатывать и подтверждать каждое полученное уведомление об изменении. Подробности см. в разделе [Обработка уведомлений об изменениях](/graph/webhooks#processing-the-change-notification).
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>Как получить список активных подписок?
-Сведения о том, как получить список подписок на веб-перехватчики, см. в разделе [Перечисление подписок](/graph/api/subscription-list?view=graph-rest-beta&tabs=http).
+Сведения о том, как получить список подписок на веб-перехватчики, см. в разделе [Перечисление подписок](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http).
 
 
 ## <a name="see-also"></a>См. также
