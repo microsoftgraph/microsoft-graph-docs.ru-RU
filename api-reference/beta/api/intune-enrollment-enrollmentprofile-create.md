@@ -1,34 +1,34 @@
 ---
-title: Создание объекта enrollmentprofile
-description: Создание нового объекта объекта enrollmentprofile.
+title: Создание enrollmentProfile
+description: Создайте новый объект enrollmentProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 244644720a8a8a76931a05a590baef666251d0c1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 246ec711489fa02bdbe1827290e7000b78caaad1
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263633"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145847"
 ---
-# <a name="create-enrollmentprofile"></a>Создание объекта enrollmentprofile
+# <a name="create-enrollmentprofile"></a>Создание enrollmentProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) .
+Создайте новый [объект enrollmentProfile.](../resources/intune-enrollment-enrollmentprofile.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,28 +43,28 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта объекта enrollmentprofile в формате JSON.
+В теле запроса поставляем представление JSON для объекта enrollmentProfile.
 
-В следующей таблице приведены свойства, необходимые при создании объекта enrollmentprofile.
+В следующей таблице показаны свойства, необходимые при создании enrollmentProfile.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
-|displayName|String|Имя профиля|
-|description|String|Описание профиля|
-|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователя|
-|конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации|
-|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
+|id|Строка|GUID объекта|
+|displayName|Строка|Имя профиля|
+|description|Строка|Описание профиля|
+|requiresUserAuthentication|Boolean|Указывает, требует ли профиль проверки подлинности пользователя|
+|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для регистрации|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника установки Apple вместо портала компании.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Указывает, что портал компании необходим для устройств, зарегистрированных помощником установки|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и объект `201 Created` [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

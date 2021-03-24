@@ -1,34 +1,34 @@
 ---
-title: Создание Ентерприсекодесигнингцертификате
-description: Создание нового объекта Ентерприсекодесигнингцертификате.
+title: Создание enterpriseCodeSigningCertificate
+description: Создание нового объекта enterpriseCodeSigningCertificate.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdd4330638d0652d1838f523634ca91c9e3324a3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d0c5d96d6e5362866c279211f4252bd9cd544c1e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49253224"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51144292"
 ---
-# <a name="create-enterprisecodesigningcertificate"></a>Создание Ентерприсекодесигнингцертификате
+# <a name="create-enterprisecodesigningcertificate"></a>Создание enterpriseCodeSigningCertificate
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) .
+Создание нового [объекта enterpriseCodeSigningCertificate.](../resources/intune-apps-enterprisecodesigningcertificate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,30 +43,30 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Ентерприсекодесигнингцертификате в формате JSON.
+В теле запроса поставляем представление JSON для объекта enterpriseCodeSigningCertificate.
 
-В следующей таблице приведены свойства, необходимые при создании Ентерприсекодесигнингцертификате.
+В следующей таблице показаны свойства, необходимые при создании enterpriseCodeSigningCertificate.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|содержимое|Binary|Сертификат Windows корпоративный Code-Signing в формате необработанных данных.|
-|status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
+|id|Строка|Ключ объекта.|
+|содержимое|Binary|Сертификат предприятия Windows Code-Signing в формате необработанных данных.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние сертификата, предварительное или не предварительное. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
-|subject|String|Значение субъекта для сертификата.|
-|иссуернаме|String|Имя поставщика сертификата.|
-|имени|String|Значение издателя для сертификата.|
-|expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
-|уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
+|subject|String|Значение subject для сертификата.|
+|issuerName|Строка|Имя эмитента для сертификата.|
+|эмитент|Строка|Значение Issuer для сертификата.|
+|expirationDateTime|DateTimeOffset|Срок действия сертификата.|
+|uploadDateTime|DateTimeOffset|Время даты отправки сертификата CodeSigning.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

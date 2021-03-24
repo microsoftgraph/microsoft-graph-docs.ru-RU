@@ -1,34 +1,34 @@
 ---
-title: Обновление Мобилеаппинсталлсуммари
-description: Обновление свойств объекта Мобилеаппинсталлсуммари.
+title: Обновление mobileAppInstallSummary
+description: Обновление свойств объекта mobileAppInstallSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efe0816dc084dd0ff4f8c95e9a4b3aac8f5a6097
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9ecf2214cd2853112a23c4dab105d32a2e1a839e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49248317"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51143152"
 ---
-# <a name="update-mobileappinstallsummary"></a>Обновление Мобилеаппинсталлсуммари
+# <a name="update-mobileappinstallsummary"></a>Обновление mobileAppInstallSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) .
+Обновление свойств объекта [mobileAppInstallSummary.](../resources/intune-apps-mobileappinstallsummary.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,32 +43,32 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта mobileAppInstallSummary.](../resources/intune-apps-mobileappinstallsummary.md)
 
-В следующей таблице приведены свойства, необходимые при создании [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md).
+В следующей таблице показаны свойства, необходимые при создании [mobileAppInstallSummary.](../resources/intune-apps-mobileappinstallsummary.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|installedDeviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
-|failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
-|notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
-|notInstalledDeviceCount|Int32|Количество устройств, на которых не установлено это приложение.|
-|пендингинсталлдевицекаунт|Int32|Количество устройств, которые были уведомлены об установке этого приложения.|
-|installedUserCount|Int32|Количество пользователей, чьи устройства успешно выполнили установку этого приложения.|
-|failedUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не удалось установить это приложение.|
-|notApplicableUserCount|Int32|Количество пользователей, чьи устройства были неприменимы к этому приложению.|
-|notInstalledUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не установили это приложение.|
-|пендингинсталлусеркаунт|Int32|Количество пользователей с 1 или больше устройств, которые были уведомлены об установке этого приложения и имеют 0 устройств с ошибками.|
+|id|Строка|Ключ объекта.|
+|installedDeviceCount|Int32|Количество устройств, успешно установленных в этом приложении.|
+|failedDeviceCount|Int32|Количество устройств, которые не смогли установить это приложение.|
+|notApplicableDeviceCount|Int32|Количество устройств, которые не применимы для этого приложения.|
+|notInstalledDeviceCount|Int32|Количество устройств, на которые не установлено это приложение.|
+|pendingInstallDeviceCount|Int32|Количество устройств, которые были уведомлены об установке этого приложения.|
+|installedUserCount|Int32|Число пользователей, устройства которых успешно установили это приложение.|
+|failedUserCount|Int32|Число пользователей, у них есть 1 или более устройств, которые не смогли установить это приложение.|
+|notApplicableUserCount|Int32|Число пользователей, устройства которых не были применимы к этому приложению.|
+|notInstalledUserCount|Int32|Число пользователей с 1 или более устройствами, которые не установили это приложение.|
+|pendingInstallUserCount|Int32|Число пользователей с 1 или более устройствами, которые были уведомлены об установке этого приложения, и имеют 0 устройств с ошибками.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
