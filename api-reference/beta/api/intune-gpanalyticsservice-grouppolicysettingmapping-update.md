@@ -1,35 +1,35 @@
 ---
-title: Обновление Граупполицисеттингмаппинг
-description: Обновление свойств объекта Граупполицисеттингмаппинг.
+title: Update groupPolicySettingMapping
+description: Обновление свойств объекта groupPolicySettingMapping.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75c94b0842afd1c7bd5b6e5c48160fa9b1e65e9e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 82575a97badaba93f179c841502727e07ebff0af
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49277962"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51149830"
 ---
-# <a name="update-grouppolicysettingmapping"></a>Обновление Граупполицисеттингмаппинг
+# <a name="update-grouppolicysettingmapping"></a>Update groupPolicySettingMapping
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .
+Обновление свойств объекта [groupPolicySettingMapping.](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,42 +43,42 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта groupPolicySettingMapping.](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)
 
-В следующей таблице приведены свойства, необходимые при создании [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md).
+В следующей таблице показаны свойства, необходимые при создании [groupPolicySettingMapping.](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|parentId|String|Родительский идентификатор параметра групповой политики.|
-|чилдидлист|Коллекция строк|Список дочерних идентификаторов параметра групповой политики.|
+|id|Строка|Пока не задокументировано.|
+|parentId|Строка|Родительский Id параметра групповой политики.|
+|childIdList|Коллекция String|Список детских ид параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
-|settingValue|String|Значение этого параметра групповой политики.|
-|сеттингвалуетипе|String|Тип значения этого параметра групповой политики.|
-|сеттингдисплайнаме|String|Отображаемое имя этого параметра групповой политики.|
-|сеттингдисплайвалуе|String|Отображаемое значение этого параметра групповой политики.|
-|сеттингдисплайвалуетипе|String|Отображаемый тип значения этого параметра групповой политики.|
-|сеттингвалуедисплайунитс|String|Отображаемые единицы значения параметра групповой политики|
-|сеттингкатегори|String|Категория, в которой находится параметр групповой политики.|
-|мдмкспнаме|String|Имя CSP, которое сопоставляется параметру групповой политики.|
-|мдмсеттингури|String|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
-|мдмминимумосверсион|Int32|Минимальная версия ОС, поддерживаемая параметром MDM.|
-|сеттингтипе|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (Security или ADMX) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|исмдмсуппортед|Boolean|Указывает, поддерживается ли Intune или нет|
-|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
-|сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
-|интунесеттингурилист|Коллекция строк|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
-|интунесеттингдефинитионид|String|Идентификатор определения параметра Intune|
-|адмкссеттингдефинитионид|String|Идентификатор групповой политики ADMX|
+|settingValue|Строка|Значение этого параметра групповой политики.|
+|settingValueType|Строка|Тип значения этого параметра групповой политики.|
+|settingDisplayName|Строка|Отображение имени этого параметра групповой политики.|
+|settingDisplayValue|Строка|Отображение значения этого параметра групповой политики.|
+|settingDisplayValueType|Строка|Тип отображения значения этого параметра групповой политики.|
+|settingValueDisplayUnits|Строка|Отображаемая единица этого значения групповой политики|
+|settingCategory|Строка|Категория, в которая находится параметр групповой политики.|
+|mdmCspName|Строка|CSP назовет эту групповую политику, устанавливая карты.|
+|mdmSettingUri|Строка|MDM CSP URI этой групповой политики, устанавливая карты.|
+|mdmMinimumOSVersion|Int32|Минимальная версия ОС, поддерживаемая этим параметром mdm.|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (безопасность или admx) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
+|isMdmSupported|Boolean|Указывает, поддерживает ли параметр Intune или нет.|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в Mdm или нет. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
+|settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область настройки. Возможные значения: `unknown`, `device`, `user`.|
+|intuneSettingUriList|Коллекция String|Список URL-адресов intune Setting this group policy setting maps to|
+|intuneSettingDefinitionId|Строка|Id определения параметра Intune|
+|admxSettingDefinitionId|Строка|Admx Group Policy Id|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,35 +1,35 @@
 ---
-title: Создание Сиделоадингкэй
-description: Создание нового объекта Сиделоадингкэй.
+title: Создание sideLoadingKey
+description: Создайте новый объект sideLoadingKey.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cdde6b87f573414860abab77d82c17216c09170
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5a484745aae11ba967f3077bf674c9bc8dd8c6db
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276898"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51148745"
 ---
-# <a name="create-sideloadingkey"></a>Создание Сиделоадингкэй
+# <a name="create-sideloadingkey"></a>Создание sideLoadingKey
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) .
+Создайте новый [объект sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,27 +43,27 @@ POST /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Сиделоадингкэй в формате JSON.
+В теле запроса поставляем представление JSON для объекта sideLoadingKey.
 
-В следующей таблице приведены свойства, необходимые при создании Сиделоадингкэй.
+В следующей таблице показаны свойства, необходимые при создании sideLoadingKey.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор ключа загрузки на стороне.|
-|value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
-|displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
-|description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
-|тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|id|Строка|Уникальный ID side Loading Key.|
+|value|String|Ключевое значение side Loading — это значение 5x5, разделенное hiphens.|
+|displayName|Строка|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
+|description|Строка|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
+|totalActivation|Int32|Полная активация клавиши боковой загрузки, отображаемая администраторам ITPro.|
+|lastUpdatedDateTime|Строка|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f43b890de04a3a5392b1daefd74f6ae47fe6cb05
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 169dbfc6d2c6266f707299a52a4663c0ee647036
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153769"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51148556"
 ---
 # <a name="update-action"></a>Действие обновления
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "50153769"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|addedPolicySetItems|[Коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
-|updatedPolicySetItems|[Коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
+|addedPolicySetItems|[коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
+|updatedPolicySetItems|[коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
 |deletedPolicySetItems|Коллекция строк|Н/Д|
-|assignments|[Коллекция policySetAssignment](../resources/intune-policyset-policysetassignment.md)|Пока не задокументировано.|
+|assignments|[коллекция policySetAssignment](../resources/intune-policyset-policysetassignment.md)|Пока не задокументировано.|
 
 
 

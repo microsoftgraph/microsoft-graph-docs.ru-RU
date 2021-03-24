@@ -1,22 +1,22 @@
 ---
-title: Действие getAssignmentFiltersStatusDetails
+title: действие getAssignmentFiltersStatusDetails
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40bcb746bc4997c2cb0742dd2ef66ff1f84a0634
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2538cc410dbe3b80ea1b2e26c5fe3c4c9bedafca
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160679"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51148675"
 ---
-# <a name="getassignmentfiltersstatusdetails-action"></a>Действие getAssignmentFiltersStatusDetails
+# <a name="getassignmentfiltersstatusdetails-action"></a>действие getAssignmentFiltersStatusDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "50160679"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/getAssignmentFiltersStatusDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +63,7 @@ POST /deviceManagement/getAssignmentFiltersStatusDetails
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения это действие возвращает код отклика и `200 OK` [assignmentFilterStatusDetails](../resources/intune-policyset-assignmentfilterstatusdetails.md) в тексте отклика.
+В случае успешного выполнения это действие возвращает код ответа и `200 OK` [назначениеFilterStatusDetails](../resources/intune-policyset-assignmentfilterstatusdetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -92,7 +92,7 @@ Content-length: 214
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 947
+Content-Length: 1216
 
 {
   "value": {
@@ -116,7 +116,14 @@ Content-Length: 947
         "assignmentFilterPlatform": "androidForWork",
         "evaluationResult": "match",
         "evaluationDateTime": "2016-12-31T23:58:01.2047675-08:00",
-        "assignmentFilterType": "include"
+        "assignmentFilterType": "include",
+        "assignmentFilterTypeAndEvaluationResults": [
+          {
+            "@odata.type": "microsoft.graph.assignmentFilterTypeAndEvaluationResult",
+            "assignmentFilterType": "include",
+            "evaluationResult": "match"
+          }
+        ]
       }
     ]
   }
