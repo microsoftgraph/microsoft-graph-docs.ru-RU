@@ -1,15 +1,15 @@
 ---
-title: Регистрация корпоративных устройств с помощью Intune-API Microsoft Graph
-description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), которые регистрируют устройства для организации клиента.
+title: Регистрация корпоративных устройств с помощью Intune - API Microsoft Graph
+description: Перечислены API Microsoft Graph для конечных точек Intune (REST), которые регистрировать устройства для организации-клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e8e1a03f5194b5790ba68c10dad8eae23a706945
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a85db8c4397659789feafa395195a39542928f01
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735241"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51131955"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -24,11 +24,12 @@ ms.locfileid: "48735241"
 Для управления корпоративными устройствами в Intune используются перечисленные ниже ресурсы Graph.
 
 - [Профиль Windows AutoPilot Deployment для Active Directory](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
-- [Назначение профилей регистрации Apple](intune-enrollment-appleenrollmentprofileassignment.md)
-- [Тип регистрации типа владельца Apple](intune-enrollment-appleownertypeenrollmenttype.md)
-- [Профиль регистрации, инициированный пользователем Apple](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
+- [Назначение профиля регистрации Apple](intune-enrollment-appleenrollmentprofileassignment.md)
+- [Тип регистрации владельца Apple](intune-enrollment-appleownertypeenrollmenttype.md)
+- [Пользователь Apple инициировал регистрацию профиля](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 - [Тип регистрации, инициированный пользователем Apple](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Профиль Windows AutoPilot Deployment для Azure AD](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
+- [Удаленное состояние устройства автопилота Windows](intune-enrollment-deletedwindowsautopilotdevicestate.md)
 - [Базовые профиль регистрации DEP](intune-enrollment-depenrollmentbaseprofile.md)
 - [Профиль регистрации DEP](intune-enrollment-depenrollmentprofile.md)
 - [Профиль регистрации iOS DEP](intune-enrollment-depiosenrollmentprofile.md)
@@ -50,8 +51,9 @@ ms.locfileid: "48735241"
 - [Сертификат управления с отпечатком](intune-enrollment-managementcertificatewiththumbprint.md)
 - [Параметры запуска при первом включении компьютера](intune-enrollment-outofboxexperiencesettings.md)
 - [Платформа](intune-enrollment-platform.md)
-- [Рекомендуемое предельное значение регистрации](intune-enrollment-suggestedenrollmentlimit.md)
+- [Рекомендуемый предел регистрации](intune-enrollment-suggestedenrollmentlimit.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
+- [Состояние удаления устройства автопилота Windows](intune-enrollment-windowsautopilotdevicedeletionstate.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Тип устройства с Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Полное состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)

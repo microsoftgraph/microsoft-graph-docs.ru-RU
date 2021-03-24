@@ -1,35 +1,35 @@
 ---
-title: Создание Девицеманажементинтентдевицестате
-description: Создание нового объекта Девицеманажементинтентдевицестате.
+title: Создание deviceManagementIntentDeviceState
+description: Создание нового объекта deviceManagementIntentDeviceState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5de043e10960e54b9f8ba15c28380af9b003406
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: acb09abea15606ff2b0594da665784aabbef1571
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49289491"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132032"
 ---
-# <a name="create-devicemanagementintentdevicestate"></a>Создание Девицеманажементинтентдевицестате
+# <a name="create-devicemanagementintentdevicestate"></a>Создание deviceManagementIntentDeviceState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицеманажементинтентдевицестате](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) .
+Создание нового [объекта deviceManagementIntentDeviceState.](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,28 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицеманажементинтентдевицестате в формате JSON.
+В корпусе запроса поставляем представление JSON для объекта deviceManagementIntentDeviceState.
 
-В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентдевицестате.
+В следующей таблице показаны свойства, необходимые при создании устройстваManagementIntentDeviceState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор|
-|userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
-|userName|String|Имя пользователя, сообщаемое на устройстве|
-|deviceDisplayName|String|Имя устройства, о котором сообщается|
-|lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
-|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|String|Идентификатор устройства, о котором сообщается|
+|id|Строка|The ID|
+|userPrincipalName|String|Основное имя пользователя, которое сообщается на устройстве|
+|userName|String|Имя пользователя, которое сообщается на устройстве|
+|deviceDisplayName|String|Имя устройства, которое сообщается|
+|lastReportedDateTime|DateTimeOffset|Последнее измененное время даты отчета о намерениях|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние устройства для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|deviceId|String|ID устройства, который сообщается|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтентдевицестате](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и `201 Created` [объект deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

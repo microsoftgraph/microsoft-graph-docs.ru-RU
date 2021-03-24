@@ -1,35 +1,35 @@
 ---
-title: Обновление Девицеманажементинтентдевицесеттингстатесуммари
-description: Обновление свойств объекта Девицеманажементинтентдевицесеттингстатесуммари.
+title: Обновление deviceManagementIntentDeviceSettingStateSummary
+description: Обновление свойств объекта deviceManagementIntentDeviceSettingStateSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9314385e14008836d57f66398d6b55d50b633d0e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: be1189953214b68196e10eefd36a9b055f5bb99d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49289526"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132046"
 ---
-# <a name="update-devicemanagementintentdevicesettingstatesummary"></a>Обновление Девицеманажементинтентдевицесеттингстатесуммари
+# <a name="update-devicemanagementintentdevicesettingstatesummary"></a>Обновление deviceManagementIntentDeviceSettingStateSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) .
+Обновление свойств объекта [deviceManagementIntentDeviceSettingStateSummary.](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,29 +43,29 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) в формате JSON.
+В корпусе запроса поставляем представление JSON для [объекта deviceManagementIntentDeviceSettingStateSummary.](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваManagementIntentDeviceSettingStateSummary.](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор|
+|id|Строка|The ID|
 |settingName|String|Имя параметра|
-|комплианткаунт|Int32|Количество устройств, соответствующих требованиям.|
-|conflictCount|Int32|Количество конфликтующих устройств|
+|compliantCount|Int32|Количество устройств, соответствующих требованиям.|
+|conflictCount|Int32|Количество устройств в конфликте|
 |errorCount|Int32|Количество устройств с ошибками.|
-|нонкомплианткаунт|Int32|Количество устройств, не соответствующих требованиям|
+|nonCompliantCount|Int32|Число устройств, не совместимых с соответствием требованиям|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
-|ремедиатедкаунт|Int32|Количество исправленных устройств.|
+|исправленоКоунт|Int32|Количество исправленных устройств.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

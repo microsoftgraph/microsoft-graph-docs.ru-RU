@@ -1,35 +1,35 @@
 ---
-title: Создание Девицехеалсскриптдевицестате
-description: Создание нового объекта Девицехеалсскриптдевицестате.
+title: Создание deviceHealthScriptDeviceState
+description: Создание нового объекта deviceHealthScriptDeviceState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2acce4768081fc9515f9a57bc206c0a611ef793e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3a115878511d7d0317bc17bc38f88538de503b9e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49219344"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51130737"
 ---
-# <a name="create-devicehealthscriptdevicestate"></a>Создание Девицехеалсскриптдевицестате
+# <a name="create-devicehealthscriptdevicestate"></a>Создание deviceHealthScriptDeviceState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .
+Создание нового [объекта deviceHealthScriptDeviceState.](../resources/intune-devices-devicehealthscriptdevicestate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,32 +43,32 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицехеалсскриптдевицестате в формате JSON.
+В корпусе запроса поставляем представление JSON для объекта deviceHealthScriptDeviceState.
 
-В следующей таблице приведены свойства, необходимые при создании Девицехеалсскриптдевицестате.
+В следующей таблице показаны свойства, необходимые при создании устройстваHealthScriptDeviceState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния устройства сценария работоспособности. Это свойство доступно только для чтения.|
-|детектионстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние обнаружения с последнего выполнения сценария работоспособности устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|ластстатеупдатедатетиме|DateTimeOffset|Последняя метка времени выполнения сценария работоспособности устройства|
-|експектедстатеупдатедатетиме|DateTimeOffset|Следующий штамп времени, когда ожидается выполнение сценария работоспособности устройства.|
-|lastSyncDateTime|DateTimeOffset|Время последнего синхронизации расширения управления Intune с Intune|
-|преремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения перед исправлением|
-|преремедиатиондетектионскриптеррор|String|Ошибка сценария обнаружения перед исправлением|
-|ремедиатионскриптеррор|String|Вывод ошибок сценария исправления|
-|постремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения после исправления|
-|постремедиатиондетектионскриптеррор|String|Ошибка сценария обнаружения после исправления|
-|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправления с последнего выполнения скрипта работоспособности устройства. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|id|Строка|Ключ состояния состояния скрипта устройства для устройства. Это свойство доступно только для чтения.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Состояние обнаружения из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения скрипта для здоровья устройств|
+|expectedStateUpdateDateTime|DateTimeOffset|Следующий период, когда ожидается выполнение сценария состояния устройства|
+|lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
+|preRemediationDetectionScriptOutput|Строка|Выход сценария обнаружения перед исправлением|
+|preRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения перед исправлением|
+|remediationScriptError|Строка|Выход ошибки сценария восстановления|
+|postRemediationDetectionScriptOutput|Строка|Вывод скрипта обнаружения после устранения|
+|postRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения после устранения|
+|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправлений из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

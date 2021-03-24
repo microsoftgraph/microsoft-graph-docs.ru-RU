@@ -1,34 +1,34 @@
 ---
-title: Обновление Девицеманажементинтентусерстате
-description: Обновление свойств объекта Девицеманажементинтентусерстате.
+title: Обновление deviceManagementIntentUserState
+description: Обновление свойств объекта deviceManagementIntentUserState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8986e5e224c63a61e1958e6a86047eaa0e8d235a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 223a10e2a46f650e3d390611380bf6c74073b560
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49213030"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132011"
 ---
-# <a name="update-devicemanagementintentuserstate"></a>Обновление Девицеманажементинтентусерстате
+# <a name="update-devicemanagementintentuserstate"></a>Обновление deviceManagementIntentUserState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) .
+Обновление свойств объекта [deviceManagementIntentUserState.](../resources/intune-deviceintent-devicemanagementintentuserstate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,27 +43,27 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceManagementIntentUserState.](../resources/intune-deviceintent-devicemanagementintentuserstate.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваManagementIntentUserState.](../resources/intune-deviceintent-devicemanagementintentuserstate.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор|
-|userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
-|userName|String|Имя пользователя, сообщаемое на устройстве|
-|deviceCount|Int32|Количество устройств, принадлежащие пользователю для намерения|
-|lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
-|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|id|Строка|The ID|
+|userPrincipalName|String|Основное имя пользователя, которое сообщается на устройстве|
+|userName|String|Имя пользователя, которое сообщается на устройстве|
+|deviceCount|Int32|Количество устройств, принадлежащих пользователю для намерения|
+|lastReportedDateTime|DateTimeOffset|Последнее измененное время даты отчета о намерениях|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

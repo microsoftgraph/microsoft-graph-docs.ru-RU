@@ -1,35 +1,35 @@
 ---
-title: Обновление Девицекомплианцескриптрунсуммари
-description: Обновление свойств объекта Девицекомплианцескриптрунсуммари.
+title: Обновление deviceComplianceScriptRunSummary
+description: Обновление свойств объекта deviceComplianceScriptRunSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b9f723b924028a73facdee32073508f1743511a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7bbd7d35373caaaf9a463955fa3de09025839e38
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49310869"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51130765"
 ---
-# <a name="update-devicecompliancescriptrunsummary"></a>Обновление Девицекомплианцескриптрунсуммари
+# <a name="update-devicecompliancescriptrunsummary"></a>Обновление deviceComplianceScriptRunSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) .
+Обновление свойств объекта [deviceComplianceScriptRunSummary.](../resources/intune-devices-devicecompliancescriptrunsummary.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,27 +43,27 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceComplianceScriptRunSummary.](../resources/intune-devices-devicecompliancescriptrunsummary.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваComplianceScriptRunSummary.](../resources/intune-devices-devicecompliancescriptrunsummary.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключевой объект сводки запуска сценария соответствия устройства. Это свойство доступно только для чтения.|
-|ноиссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения не обнаружил проблему, и устройство находится в работоспособном состоянии. Допустимые значения: от 2147483648 до 2147483647|
-|иссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения обнаружил неполадку. Допустимые значения: от 2147483648 до 2147483647|
-|детектионскриптеррордевицекаунт|Int32|Количество устройств, на которых возникла ошибка при выполнении сценария обнаружения и который не был выполнен. Допустимые значения: от 2147483648 до 2147483647|
-|детектионскриптпендингдевицекаунт|Int32|Количество устройств, на которых еще не выполнялась последняя версия сценария соответствия требованиям устройства. Допустимые значения: от 2147483648 до 2147483647|
-|ластскриптрундатетиме|DateTimeOffset|Время последнего запуска сценария на всех устройствах|
+|id|Строка|Клавиша скрипта соответствия устройству запускать сводную сущность. Это свойство доступно только для чтения.|
+|noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым. Допустимые значения -2147483648 до 2147483647|
+|issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему. Допустимые значения -2147483648 до 2147483647|
+|detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена. Допустимые значения -2147483648 до 2147483647|
+|detectionScriptPendingDeviceCount|Int32|Количество устройств, которые еще не запускают последнюю версию сценария соответствия требованиям. Допустимые значения -2147483648 до 2147483647|
+|lastScriptRunDateTime|DateTimeOffset|Время последнего запуска сценария на всех устройствах|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) в тексте отклика.
+В случае успешного использования этот метод возвращает код ответа и обновленный объект `200 OK` [deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
