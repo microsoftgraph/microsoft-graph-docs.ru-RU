@@ -1,34 +1,34 @@
 ---
-title: Создание Микрософттуннелсервер
-description: Создание нового объекта Микрософттуннелсервер.
+title: Создание microsoftTunnelServer
+description: Создание нового объекта microsoftTunnelServer.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 146de9c8b03d2934ad6507b5adf2aecc3d778d75
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9636422495a2c7834dc7ed678c49a389e16b0df9
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301984"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141801"
 ---
-# <a name="create-microsofttunnelserver"></a>Создание Микрософттуннелсервер
+# <a name="create-microsofttunnelserver"></a>Создание microsoftTunnelServer
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md) .
+Создание нового [объекта microsoftTunnelServer.](../resources/intune-mstunnel-microsofttunnelserver.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,25 +43,25 @@ POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTun
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Микрософттуннелсервер в формате JSON.
+В теле запроса поставляем представление JSON для объекта microsoftTunnelServer.
 
-В следующей таблице приведены свойства, необходимые при создании Микрософттуннелсервер.
+В следующей таблице показаны свойства, необходимые при создании microsoftTunnelServer.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор Микрософттуннелсервер|
-|displayName|String|Отображаемое имя Микрософттуннелсервер|
-|туннелсерверхеалсстатус|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние работоспособности Микрософттуннелсервер. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
-|ластчеккиндатетиме|DateTimeOffset|При последнем возвращенном Микрософттуннелсервер|
+|id|Строка|Id MicrosoftTunnelServer|
+|displayName|Строка|Имя отображения MicrosoftTunnelServer|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние здоровья MicrosoftTunnelServer. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
+|lastCheckinDateTime|DateTimeOffset|При последней регистрации в MicrosoftTunnelServer|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект MicrosoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

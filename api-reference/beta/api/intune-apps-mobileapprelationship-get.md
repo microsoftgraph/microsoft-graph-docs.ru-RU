@@ -1,35 +1,35 @@
 ---
-title: Получение Мобилеаппрелатионшип
-description: Чтение свойств и связей объекта Мобилеаппрелатионшип.
+title: Get mobileAppRelationship
+description: Чтение свойств и связей объекта mobileAppRelationship.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58ae5d54fd8b2922fbaf8ce8b9ec63a764bce479
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 22e78fa6666c1fd0e98bcea399cbe673c05e0884
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49248002"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51143103"
 ---
-# <a name="get-mobileapprelationship"></a>Получение Мобилеаппрелатионшип
+# <a name="get-mobileapprelationship"></a>Get mobileAppRelationship
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md) .
+Чтение свойств и связей объекта [mobileAppRelationship.](../resources/intune-apps-mobileapprelationship.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelati
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

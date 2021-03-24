@@ -1,35 +1,35 @@
 ---
-title: Создание Виндовсинформатионпротектионвипеактион
-description: Создание нового объекта Виндовсинформатионпротектионвипеактион.
+title: Создание windowsInformationProtectionWipeAction
+description: Создание нового объекта windowsInformationProtectionWipeAction.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 10fec19e07a94f39230f97ba652645bd56f94d74
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9bee06b2221a80a303d2754568e31b09e6c5adec
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274938"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141871"
 ---
-# <a name="create-windowsinformationprotectionwipeaction"></a>Создание Виндовсинформатионпротектионвипеактион
+# <a name="create-windowsinformationprotectionwipeaction"></a>Создание windowsInformationProtectionWipeAction
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) .
+Создание нового [объекта windowsInformationProtectionWipeAction.](../resources/intune-mam-windowsinformationprotectionwipeaction.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,28 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Виндовсинформатионпротектионвипеактион в формате JSON.
+В теле запроса поставляем представление JSON для объекта windowsInformationProtectionWipeAction.
 
-В следующей таблице приведены свойства, необходимые при создании Виндовсинформатионпротектионвипеактион.
+В следующей таблице показаны свойства, необходимые при создании windowsInformationProtectionWipeAction.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|таржетедусерид|String|UserId, целевой для этого действия очистки.|
-|таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
-|таржетеддевиценаме|String|Имя целевого устройства.|
-|таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
-|ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
+|id|Строка|Ключ объекта.|
+|status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|targetedUserId|Строка|Объект UserId, на который нацелено это действие стирки.|
+|targetedDeviceRegistrationId|Строка|Объект DeviceRegistrationId, нацеленный этим действием на стирку.|
+|targetedDeviceName|Строка|Целевое имя устройства.|
+|targetedDeviceMacAddress|Строка|Адрес Mac целевого устройства.|
+|lastCheckInDateTime|DateTimeOffset|Время последней проверки устройства, на которое было нацелено это действие стирки.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

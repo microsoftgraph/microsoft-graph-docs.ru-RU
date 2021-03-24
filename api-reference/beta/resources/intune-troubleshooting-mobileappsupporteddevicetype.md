@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса mobileAppSupportedDeviceType
+title: тип ресурса mobileAppSupportedDeviceType
 description: Свойства устройства
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31edf2c846acc9e940cb6decf83b2b71df98d910
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 559dc38a5fc8d2e9b7142efb43d83a97f29db10c
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155827"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141381"
 ---
-# <a name="mobileappsupporteddevicetype-resource-type"></a>Тип ресурса mobileAppSupportedDeviceType
+# <a name="mobileappsupporteddevicetype-resource-type"></a>тип ресурса mobileAppSupportedDeviceType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "50155827"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|[deviceType](../resources/intune-shared-devicetype.md)|Тип устройства. Возможные значения: `desktop` , , , `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` , `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `linux` `blackberry` `palm` `unknown` .|
-|minimumOperatingSystemVersion|String|Минимальная версия ОС|
-|maximumOperatingSystemVersion|String|Максимальная версия ОС|
+|type|[deviceType](../resources/intune-shared-devicetype.md)|Тип устройства. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` , `unknown` `cloudPC` , .|
+|minimumOperatingSystemVersion|Строка|Минимальная версия ОС|
+|maximumOperatingSystemVersion|Строка|Максимальная версия ОС|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

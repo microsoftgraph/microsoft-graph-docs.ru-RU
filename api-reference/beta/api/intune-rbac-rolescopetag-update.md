@@ -1,35 +1,35 @@
 ---
-title: Обновление Ролескопетаг
-description: Обновление свойств объекта Ролескопетаг.
+title: Update roleScopeTag
+description: Обновление свойств объекта roleScopeTag.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3a8164aeed2a489a1568977444c7a02139b1502
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 56ba0645b7aff34a7902417f15ab40f75c07c1a9
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49304436"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141514"
 ---
-# <a name="update-rolescopetag"></a>Обновление Ролескопетаг
+# <a name="update-rolescopetag"></a>Update roleScopeTag
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [ролескопетаг](../resources/intune-rbac-rolescopetag.md) .
+Обновление свойств объекта [roleScopeTag.](../resources/intune-rbac-rolescopetag.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,25 +44,25 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта roleScopeTag.](../resources/intune-rbac-rolescopetag.md)
 
-В следующей таблице приведены свойства, необходимые при создании [ролескопетаг](../resources/intune-rbac-rolescopetag.md).
+В следующей таблице показаны свойства, необходимые при создании [ролиScopeTag.](../resources/intune-rbac-rolescopetag.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображаемое или понятное имя тега области применения роли.|
-|description|String|Описание тега области применения роли.|
-|isBuiltIn|Boolean|Описание тега области применения роли.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|Строка|Отображение или дружеское имя тега Область ролей.|
+|description|Строка|Описание тега Область ролей.|
+|isBuiltIn|Boolean|Описание тега Область ролей.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` [roleScopeTag](../resources/intune-rbac-rolescopetag.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -193,11 +193,11 @@ items:
   - name: Документация для бета-версий
     expanded: true
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -497,7 +497,7 @@ items:
                 href: api/usersettings-update.md
       - name: Группы
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -672,7 +672,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1253,9 +1253,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Категория
+          - name: Category
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1269,7 +1269,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1397,7 +1397,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/callrecords-api-overview.md
               - name: Запись вызова
                 items:
@@ -1447,11 +1447,11 @@ items:
       - name: Соответствие требованиям (предварительная версия)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/complianceapioverview.md
-          - name: Обнаружение электронных данных
+          - name: Обнаружение электронных данных (eDiscovery)
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Дело обнаружения электронных данных
                 href: resources/ediscovery-case.md
@@ -1603,7 +1603,7 @@ items:
       - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -3150,6 +3150,8 @@ items:
                         href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-delete.md
                       - name: Обновление
                         href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-update.md
+                  - name: Удаленное состояние устройства автопилота Windows
+                    href: resources/intune-enrollment-deletedwindowsautopilotdevicestate.md
                   - name: Базовые профиль регистрации DEP
                     href: resources/intune-enrollment-depenrollmentbaseprofile.md
                     items:
@@ -3346,6 +3348,8 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md
                       - name: Обновление
                         href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-update.md
+                  - name: Состояние удаления устройства автопилота Windows
+                    href: resources/intune-enrollment-windowsautopilotdevicedeletionstate.md
                   - name: Удостоверение устройства с Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdeviceidentity.md
                     items:
@@ -3367,6 +3371,8 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
                       - name: Действие unassignResourceAccountFromDevice
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+                      - name: deleteDevices action
+                        href: api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md
                   - name: Тип устройства с Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdevicetype.md
                   - name: Полное состояние назначения профиля Windows AutoPilot
@@ -5774,51 +5780,12 @@ items:
                     href: resources/intune-deviceconfig-omasettingstring.md
                   - name: 'Параметр OMA, строка, XML'
                     href: resources/intune-deviceconfig-omasettingstringxml.md
-                  - name: На предварительно зашифрованной полезной нагрузке
-                    href: resources/intune-raimportcerts-onpremencryptedpayload.md
-                    items:
-                      - name: Список
-                        href: api/intune-raimportcerts-onpremencryptedpayload-list.md
-                      - name: Получение
-                        href: api/intune-raimportcerts-onpremencryptedpayload-get.md
-                      - name: Создание
-                        href: api/intune-raimportcerts-onpremencryptedpayload-create.md
-                      - name: Удалить
-                        href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
-                      - name: Обновление
-                        href: api/intune-raimportcerts-onpremencryptedpayload-update.md
                   - name: Диапазон версий операционной системы
                     href: resources/intune-deviceconfig-operatingsystemversionrange.md
                   - name: Оператор
                     href: resources/intune-deviceconfig-operator.md
                   - name: Совершенная группа секретности вперед
                     href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
-                  - name: Запрос на перешифровку Pfx
-                    href: resources/intune-raimportcerts-pfxrecryptionrequest.md
-                    items:
-                      - name: Список
-                        href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
-                      - name: Получение
-                        href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
-                      - name: Создание
-                        href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
-                      - name: Удалить
-                        href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
-                      - name: Обновление
-                        href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
-                  - name: Сертификат пользователя Pfx
-                    href: resources/intune-raimportcerts-pfxusercertificate.md
-                    items:
-                      - name: Список
-                        href: api/intune-raimportcerts-pfxusercertificate-list.md
-                      - name: Получение
-                        href: api/intune-raimportcerts-pfxusercertificate-get.md
-                      - name: Создание
-                        href: api/intune-raimportcerts-pfxusercertificate-create.md
-                      - name: Удалить
-                        href: api/intune-raimportcerts-pfxusercertificate-delete.md
-                      - name: Обновление
-                        href: api/intune-raimportcerts-pfxusercertificate-update.md
                   - name: Тип действия power
                     href: resources/intune-deviceconfig-poweractiontype.md
                   - name: Предварительные версии функций
@@ -6707,16 +6674,10 @@ items:
                   - name: Запрос коллекции журналов приложения
                     href: resources/intune-devices-applogcollectionrequest.md
                     items:
-                      - name: Список
-                        href: api/intune-devices-applogcollectionrequest-list.md
                       - name: Получение
                         href: api/intune-devices-applogcollectionrequest-get.md
                       - name: Создание
                         href: api/intune-devices-applogcollectionrequest-create.md
-                      - name: Удалить
-                        href: api/intune-devices-applogcollectionrequest-delete.md
-                      - name: Обновление
-                        href: api/intune-devices-applogcollectionrequest-update.md
                       - name: Действие createDownloadUrl
                         href: api/intune-devices-applogcollectionrequest-createdownloadurl.md
                   - name: Алгоритм расшифровку журнала приложения
@@ -6764,6 +6725,8 @@ items:
                     href: resources/intune-auditing-auditproperty.md
                   - name: Ресурс аудита
                     href: resources/intune-auditing-auditresource.md
+                  - name: Зарегистрированное состояние Azure
+                    href: resources/intune-devices-azureadregisteredstate.md
                   - name: Выражение условия двоичного управления
                     href: resources/intune-fencing-binarymanagementconditionexpression.md
                   - name: Тип оператора выражения условия двоичного управления
@@ -6772,8 +6735,6 @@ items:
                     href: resources/intune-devices-bulkmanageddeviceactionresult.md
                   - name: Тип корпуса
                     href: resources/intune-devices-chassistype.md
-                  - name: Свойство устройства Chrome o s
-                    href: resources/intune-devices-chromeosdeviceproperty.md
                   - name: Условие управления циклического геофенсинга
                     href: resources/intune-fencing-circulargeofencemanagementcondition.md
                     items:
@@ -7835,8 +7796,6 @@ items:
                         href: api/intune-deviceintent-securitybaselinetemplate-update.md
                   - name: Пользователь общего устройства Apple
                     href: resources/intune-devices-sharedappledeviceuser.md
-                  - name: Tuple_2 выполнения type_ i collection_1 операции
-                    href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: Выражение условия унарного управления
                     href: resources/intune-fencing-unarymanagementconditionexpression.md
                   - name: Тип оператора выражения условия унарного управления
@@ -7934,6 +7893,8 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-update.md
+                  - name: Сводка устройств автопилота для аналитики пользовательских интерфейсов
+                    href: resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md
                   - name: Базовый базовый уровень аналитики пользовательских интерфейсов
                     href: resources/intune-devices-userexperienceanalyticsbaseline.md
                     items:
@@ -7954,6 +7915,8 @@ items:
                         href: api/intune-devices-userexperienceanalyticscategory-get.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticscategory-update.md
+                  - name: Сводка устройств облачного управления с аналитикой пользовательских интерфейсов
+                    href: resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md
                   - name: Производительность устройства аналитики пользовательских интерфейсов
                     href: resources/intune-devices-userexperienceanalyticsdeviceperformance.md
                     items:
@@ -8068,6 +8031,19 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
+                  - name: Аналитика пользовательских интерфейсов не готового устройства автопилота
+                    href: resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-update.md
                   - name: Категория перезапуска операционной системы для аналитики пользовательского опыта
                     href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Обзор аналитики пользовательских интерфейсов
@@ -8133,6 +8109,10 @@ items:
                     href: resources/intune-devices-userexperienceanalyticssettings.md
                   - name: 'Аналитика пользовательских интерфейсов, обобщенная'
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
+                  - name: Сводка аналитики пользовательских интерфейсов для устройств Windows 10
+                    href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
+                  - name: Аналитика пользовательских интерфейсов работает из любой сводки устройств
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md
                   - name: Выражение условия переменного управления
                     href: resources/intune-fencing-variablemanagementconditionexpression.md
                   - name: Состояние развертывания автопилота Windows
@@ -9056,6 +9036,29 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
+                  - name: Отчеты службы управления устройствами
+                    href: resources/intune-shared-devicemanagementreports.md
+                    items:
+                      - name: Получение
+                        href: api/intune-reporting-devicemanagementreports-get.md
+                      - name: Обновление
+                        href: api/intune-reporting-devicemanagementreports-update.md
+                      - name: действие getDeviceNonComplianceReport
+                        href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
+                      - name: действие getPolicyNonComplianceReport
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
+                      - name: действие getPolicyNonComplianceMetadata
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
+                      - name: getPolicyNonComplianceSummaryReport action
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
+                      - name: getSettingNonComplianceReport action
+                        href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
+                      - name: действие getReportFilters
+                        href: api/intune-reporting-devicemanagementreports-getreportfilters.md
+                      - name: getHistoricalReport action
+                        href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
+                      - name: действие getCachedReport
+                        href: api/intune-reporting-devicemanagementreports-getcachedreport.md
                   - name: Сценарий управления устройствами
                     href: resources/intune-shared-devicemanagementscript.md
                     items:
@@ -9075,6 +9078,8 @@ items:
                         href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
                   - name: Тип платформы устройства
                     href: resources/intune-shared-deviceplatformtype.md
+                  - name: Тип устройства
+                    href: resources/intune-shared-devicetype.md
                   - name: Включение
                     href: resources/intune-shared-enablement.md
                   - name: Параметры доступности регистрации
@@ -9147,8 +9152,79 @@ items:
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: 'Настройки назначения приложения macOS, приобретенного по программе VPP'
                     href: resources/intune-shared-macosvppappassignmentsettings.md
+                  - name: Управляемое устройство
+                    href: resources/intune-shared-manageddevice.md
+                    items:
+                      - name: Перечисление
+                        href: api/intune-policyset-manageddevice-list.md
+                      - name: Получение
+                        href: api/intune-policyset-manageddevice-get.md
+                      - name: Создание
+                        href: api/intune-policyset-manageddevice-create.md
+                      - name: Удалить
+                        href: api/intune-policyset-manageddevice-delete.md
+                      - name: Обновление
+                        href: api/intune-policyset-manageddevice-update.md
+                      - name: Действие executeAction
+                        href: api/intune-devices-manageddevice-executeaction.md
+                      - name: Действие enableLostMode
+                        href: api/intune-devices-manageddevice-enablelostmode.md
+                      - name: Действие playLostModeSound
+                        href: api/intune-devices-manageddevice-playlostmodesound.md
+                      - name: Действие setDeviceName
+                        href: api/intune-devices-manageddevice-setdevicename.md
+                      - name: действия rotateFileVaultKey
+                        href: api/intune-devices-manageddevice-rotatefilevaultkey.md
+                      - name: createDeviceLogCollectionRequest action
+                        href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
+                      - name: Действие retire
+                        href: api/intune-devices-manageddevice-retire.md
+                      - name: Действие wipe
+                        href: api/intune-devices-manageddevice-wipe.md
+                      - name: Действие resetPasscode
+                        href: api/intune-devices-manageddevice-resetpasscode.md
+                      - name: Действие remoteLock
+                        href: api/intune-devices-manageddevice-remotelock.md
+                      - name: Действие requestRemoteAssistance
+                        href: api/intune-devices-manageddevice-requestremoteassistance.md
+                      - name: Действие disableLostMode
+                        href: api/intune-devices-manageddevice-disablelostmode.md
+                      - name: Действие locateDevice
+                        href: api/intune-devices-manageddevice-locatedevice.md
+                      - name: Действие bypassActivationLock
+                        href: api/intune-devices-manageddevice-bypassactivationlock.md
+                      - name: Действие rebootNow
+                        href: api/intune-devices-manageddevice-rebootnow.md
+                      - name: Действие shutDown
+                        href: api/intune-devices-manageddevice-shutdown.md
+                      - name: Действие recoverPasscode
+                        href: api/intune-devices-manageddevice-recoverpasscode.md
+                      - name: Действие cleanWindowsDevice
+                        href: api/intune-devices-manageddevice-cleanwindowsdevice.md
+                      - name: Действие logoutSharedAppleDeviceActiveUser
+                        href: api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
+                      - name: Действие deleteUserFromSharedAppleDevice
+                        href: api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
+                      - name: Действие syncDevice
+                        href: api/intune-devices-manageddevice-syncdevice.md
+                      - name: Действие windowsDefenderScan
+                        href: api/intune-devices-manageddevice-windowsdefenderscan.md
+                      - name: Действие windowsDefenderUpdateSignatures
+                        href: api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
+                      - name: Действие updateWindowsDeviceAccount
+                        href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
+                      - name: Действие revokeAppleVppLicenses
+                        href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
+                      - name: rotateBitLockerKeys action
+                        href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
+                      - name: Действие sendCustomNotificationToCompanyPortal
+                        href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
+                      - name: действие triggerConfigurationManagerAction
+                        href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
                   - name: Тип владельца управляемого устройства
                     href: resources/intune-shared-manageddeviceownertype.md
+                  - name: Тип агента управления
+                    href: resources/intune-shared-managementagenttype.md
                   - name: Политика Windows Information Protection для MDM
                     href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                     items:
@@ -9202,6 +9278,8 @@ items:
                         href: api/intune-shared-mobileapptroubleshootingevent-update.md
                   - name: Тип владельца
                     href: resources/intune-shared-ownertype.md
+                  - name: Тип платформы политики
+                    href: resources/intune-shared-policyplatformtype.md
                   - name: Проксируемый домен
                     href: resources/intune-shared-proxieddomain.md
                   - name: Отчет
@@ -9537,7 +9615,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Категория
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11444,7 +11522,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12041,7 +12119,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13221,7 +13299,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: Список
                     href: api/offershiftrequest-list.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/offershiftrequest-approve.md
                   - name: Отклонение
                     href: api/offershiftrequest-decline.md
@@ -13247,7 +13325,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/openshiftchangerequest-approve.md
                   - name: Отклонение
                     href: api/openshiftchangerequest-decline.md
@@ -13267,7 +13345,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/swapshiftschangerequest-approve.md
                   - name: Отклонение
                     href: api/swapshiftschangerequest-decline.md
@@ -13304,7 +13382,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/timeoffrequest-approve.md
                   - name: Отклонение
                     href: api/timeoffrequest-decline.md
@@ -13468,7 +13546,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Категория
+                  - name: Category
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

@@ -1,34 +1,34 @@
 ---
-title: Создание Импортеддевицеидентити
-description: Создание нового объекта Импортеддевицеидентити.
+title: Создание importedDeviceIdentity
+description: Создание нового объекта importedDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47556de0dad4de9fee7fa1406d862ca39363b214
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a803d8916da8ffeaed9d3e642c802143413152cf
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49228255"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51142375"
 ---
-# <a name="create-importeddeviceidentity"></a>Создание Импортеддевицеидентити
+# <a name="create-importeddeviceidentity"></a>Создание importedDeviceIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) .
+Создание нового [объекта importedDeviceIdentity.](../resources/intune-enrollment-importeddeviceidentity.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,30 +43,30 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Импортеддевицеидентити в формате JSON.
+В теле запроса поставляем представление JSON для объекта importedDeviceIdentity.
 
-В следующей таблице приведены свойства, необходимые при создании Импортеддевицеидентити.
+В следующей таблице показаны свойства, необходимые при создании импортируемого объектаDeviceId.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор импортированного удостоверения устройства|
-|импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
-|импортеддевицеидентититипе|[импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
-|createdDateTime|DateTimeOffset|Дата и время создания устройства|
-|ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения к устройству|
-|description|String|Описание устройства|
-|енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|id|Строка|Идентификатор импортируемого удостоверения устройства|
+|importedDeviceIdentifier|Строка|Идентификатор импортируемого устройства|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортируемого удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
+|lastModifiedDateTime|DateTimeOffset|Последнее изменение dateTime описания|
+|createdDateTime|DateTimeOffset|Время создания даты устройства|
+|lastContactedDateTime|DateTimeOffset|Время последней контактной даты устройства|
+|description|Строка|Описание устройства|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |платформа|[платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

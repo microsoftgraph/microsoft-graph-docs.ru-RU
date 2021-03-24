@@ -1,34 +1,34 @@
 ---
-title: действие Упдатедевицепропертиес
-description: Обновляет свойства устройств с автопилотом.
+title: действие updateDeviceProperties
+description: Обновляет свойства на устройствах автопилота.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09598a47f945878ccd815f497e30df207db79040
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 58ff137b41ad9ec6c985e9ef23f1c6364464f7bb
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212372"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51142137"
 ---
-# <a name="updatedeviceproperties-action"></a>действие Упдатедевицепропертиес
+# <a name="updatedeviceproperties-action"></a>действие updateDeviceProperties
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновляет свойства устройств с автопилотом.
+Обновляет свойства на устройствах автопилота.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,9 +55,9 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userPrincipalName|String|Пока не задокументировано.|
-|аддрессаблеусернаме|String|Пока не задокументировано.|
-|грауптаг|String|Пока не задокументировано.|
-|displayName|String|Пока не задокументировано.|
+|addressableUserName|String|Пока не задокументировано.|
+|groupTag|String|Пока не задокументировано.|
+|displayName|Строка|Пока не задокументировано.|
 
 
 

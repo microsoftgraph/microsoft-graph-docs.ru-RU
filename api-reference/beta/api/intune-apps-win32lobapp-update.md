@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 242341eca66747ed401f177880677bbc5cb017af
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c6b7b96c9071741fbfecf29e86db64a455d86e46
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157143"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51142879"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "50157143"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,19 +45,19 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажийте представление объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) в JSON.
+В теле запроса поставляем представление JSON для [объекта win32LobApp.](../resources/intune-apps-win32lobapp.md)
 
 В следующей таблице показаны свойства, необходимые при создании [win32LobApp.](../resources/intune-apps-win32lobapp.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -68,38 +68,38 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|uploadState|Int32|Состояние отправки. Возможные значения: 0- `Not Ready` , 1 - `Ready` , 2 - `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp.](../resources/intune-shared-mobileapp.md) Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Boolean|Значение, указывающее, назначено ли приложению хотя бы одна группа. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список ид тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|dependentAppCount|Int32|Общее количество зависимостей, которые есть у этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|supersedingAppCount|Int32|Общее количество приложений, которые это приложение напрямую или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|supersededAppCount|Int32|Общее количество приложений, которые это приложение напрямую или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|uploadState|Int32|Состояние загрузки. Возможные значения: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|Значение, указывающее, назначено ли приложению по крайней мере одна группа. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список ids тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|dependentAppCount|Int32|Общее число зависимостей, которые имеет детское приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|supersedingAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|supersededAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно вымежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|String|Командная строка для установки этого приложения|
-|uninstallCommandLine|String|Командная строка для удалить это приложение|
+|installCommandLine|Строка|Командная строка для установки этого приложения|
+|uninstallCommandLine|Строка|Командная строка, чтобы удалить это приложение|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
-|minimumFreeDiskSpaceInMB|Int32|Значение минимального свободного места на диске, необходимое для установки этого приложения.|
-|minimumMemoryInMB|Int32|Минимальное значение физической памяти, необходимое для установки этого приложения.|
-|minimumNumberOfProcessors|Int32|Минимальное число процессоров, необходимое для установки этого приложения.|
-|minimumCpuSpeedInMHz|Int32|Значение минимальной скорости ЦП, необходимой для установки этого приложения.|
-|detectionRules|[Коллекция win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|Правила обнаружения для обнаружения приложения Win32 Line of Business (LoB).|
-|requirementRules|[Коллекция win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|Правила требований для обнаружения бизнес-приложения Win32.|
-|правила|[Коллекция win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|Правила обнаружения и требования для этого приложения.|
-|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка этого приложения.|
-|returnCodes|[Коллекция win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
-|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения MSI, если это приложение Win32 является приложением MSI.|
-|setupFilePath|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
-|minimumSupportedWindowsRelease|String|Значение минимального поддерживаемых выпусков Windows.|
-|displayVersion|String|Версия, отображаемая в UX-приложении для этого приложения.|
+|minimumFreeDiskSpaceInMB|Int32|Значение минимального свободного пространства диска, необходимого для установки этого приложения.|
+|minimumMemoryInMB|Int32|Значение минимальной физической памяти, необходимой для установки этого приложения.|
+|minimumNumberOfProcessors|Int32|Значение минимального числа процессоров, необходимое для установки этого приложения.|
+|minimumCpuSpeedInMHz|Int32|Значение минимальной скорости процессора, необходимой для установки этого приложения.|
+|detectionRules|[коллекция win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|Правила обнаружения для обнаружения приложения Win32 Line of Business (LoB).|
+|requirementRules|[коллекция win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|Правила требования для обнаружения приложения Win32 Line of Business (LoB).|
+|правила|[коллекция win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|Правила обнаружения и требования для этого приложения.|
+|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Возможность установки этого приложения.|
+|returnCodes|[коллекция win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
+|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
+|setupFilePath|Строка|Относительный путь файла установки в зашифрованном пакете Win32LobApp.|
+|minimumSupportedWindowsRelease|Строка|Значение для минимального поддерживаемых выпусков windows.|
+|displayVersion|Строка|Версия, отображаемая в UX для этого приложения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
