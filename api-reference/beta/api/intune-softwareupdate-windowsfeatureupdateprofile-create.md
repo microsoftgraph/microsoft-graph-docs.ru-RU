@@ -1,37 +1,37 @@
 ---
-title: Создание Виндовсфеатуреупдатепрофиле
-description: Создание нового объекта Виндовсфеатуреупдатепрофиле.
+title: Создание windowsFeatureUpdateProfile
+description: Создайте новый объект windowsFeatureUpdateProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e42d1b840bd41bd02efd8f59201775e6d4ce4e1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 83decaf1a8e8721cce6b23480626dcabfcbb5f36
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261778"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134286"
 ---
-# <a name="create-windowsfeatureupdateprofile"></a><span data-ttu-id="f2ba9-103">Создание Виндовсфеатуреупдатепрофиле</span><span class="sxs-lookup"><span data-stu-id="f2ba9-103">Create windowsFeatureUpdateProfile</span></span>
+# <a name="create-windowsfeatureupdateprofile"></a><span data-ttu-id="222bb-103">Создание windowsFeatureUpdateProfile</span><span class="sxs-lookup"><span data-stu-id="222bb-103">Create windowsFeatureUpdateProfile</span></span>
 
-<span data-ttu-id="f2ba9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2ba9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="222bb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="222bb-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f2ba9-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="222bb-105">**Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="222bb-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f2ba9-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="222bb-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="222bb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f2ba9-107">Создание нового объекта [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="f2ba9-107">Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.</span></span>
+<span data-ttu-id="222bb-107">Создайте [новый объект windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)</span><span class="sxs-lookup"><span data-stu-id="222bb-107">Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f2ba9-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="f2ba9-108">Prerequisites</span></span>
-<span data-ttu-id="f2ba9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2ba9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="222bb-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="222bb-108">Prerequisites</span></span>
+<span data-ttu-id="222bb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="222bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2ba9-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f2ba9-111">Permission type</span></span>|<span data-ttu-id="f2ba9-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f2ba9-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="222bb-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="222bb-111">Permission type</span></span>|<span data-ttu-id="222bb-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="222bb-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f2ba9-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f2ba9-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f2ba9-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2ba9-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="f2ba9-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f2ba9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f2ba9-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-116">Not supported.</span></span>|
-|<span data-ttu-id="f2ba9-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="f2ba9-117">Application</span></span>|<span data-ttu-id="f2ba9-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2ba9-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="222bb-113">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="222bb-113">Delegated (work or school account)</span></span>|<span data-ttu-id="222bb-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="222bb-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="222bb-115">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="222bb-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="222bb-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="222bb-116">Not supported.</span></span>|
+|<span data-ttu-id="222bb-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="222bb-117">Application</span></span>|<span data-ttu-id="222bb-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="222bb-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f2ba9-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f2ba9-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="222bb-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="222bb-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,40 +40,41 @@ ms.locfileid: "49261778"
 POST /deviceManagement/windowsFeatureUpdateProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f2ba9-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="f2ba9-120">Request headers</span></span>
-|<span data-ttu-id="f2ba9-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f2ba9-121">Header</span></span>|<span data-ttu-id="f2ba9-122">Значение</span><span class="sxs-lookup"><span data-stu-id="f2ba9-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="222bb-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="222bb-120">Request headers</span></span>
+|<span data-ttu-id="222bb-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="222bb-121">Header</span></span>|<span data-ttu-id="222bb-122">Значение</span><span class="sxs-lookup"><span data-stu-id="222bb-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f2ba9-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f2ba9-123">Authorization</span></span>|<span data-ttu-id="f2ba9-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f2ba9-125">Accept</span><span class="sxs-lookup"><span data-stu-id="f2ba9-125">Accept</span></span>|<span data-ttu-id="f2ba9-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f2ba9-126">application/json</span></span>|
+|<span data-ttu-id="222bb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="222bb-123">Authorization</span></span>|<span data-ttu-id="222bb-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="222bb-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="222bb-125">Accept</span><span class="sxs-lookup"><span data-stu-id="222bb-125">Accept</span></span>|<span data-ttu-id="222bb-126">application/json</span><span class="sxs-lookup"><span data-stu-id="222bb-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f2ba9-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f2ba9-127">Request body</span></span>
-<span data-ttu-id="f2ba9-128">В тексте запроса добавьте представление объекта Виндовсфеатуреупдатепрофиле в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-128">In the request body, supply a JSON representation for the windowsFeatureUpdateProfile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="222bb-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="222bb-127">Request body</span></span>
+<span data-ttu-id="222bb-128">В теле запроса поставляем представление JSON для объекта windowsFeatureUpdateProfile.</span><span class="sxs-lookup"><span data-stu-id="222bb-128">In the request body, supply a JSON representation for the windowsFeatureUpdateProfile object.</span></span>
 
-<span data-ttu-id="f2ba9-129">В следующей таблице приведены свойства, необходимые при создании Виндовсфеатуреупдатепрофиле.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-129">The following table shows the properties that are required when you create the windowsFeatureUpdateProfile.</span></span>
+<span data-ttu-id="222bb-129">В следующей таблице показаны свойства, необходимые при создании windowsFeatureUpdateProfile.</span><span class="sxs-lookup"><span data-stu-id="222bb-129">The following table shows the properties that are required when you create the windowsFeatureUpdateProfile.</span></span>
 
-|<span data-ttu-id="f2ba9-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="f2ba9-130">Property</span></span>|<span data-ttu-id="f2ba9-131">Тип</span><span class="sxs-lookup"><span data-stu-id="f2ba9-131">Type</span></span>|<span data-ttu-id="f2ba9-132">Описание</span><span class="sxs-lookup"><span data-stu-id="f2ba9-132">Description</span></span>|
+|<span data-ttu-id="222bb-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="222bb-130">Property</span></span>|<span data-ttu-id="222bb-131">Тип</span><span class="sxs-lookup"><span data-stu-id="222bb-131">Type</span></span>|<span data-ttu-id="222bb-132">Описание</span><span class="sxs-lookup"><span data-stu-id="222bb-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f2ba9-133">id</span><span class="sxs-lookup"><span data-stu-id="f2ba9-133">id</span></span>|<span data-ttu-id="f2ba9-134">String</span><span class="sxs-lookup"><span data-stu-id="f2ba9-134">String</span></span>|<span data-ttu-id="f2ba9-135">Идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-135">The Identifier of the entity.</span></span>|
-|<span data-ttu-id="f2ba9-136">displayName</span><span class="sxs-lookup"><span data-stu-id="f2ba9-136">displayName</span></span>|<span data-ttu-id="f2ba9-137">String</span><span class="sxs-lookup"><span data-stu-id="f2ba9-137">String</span></span>|<span data-ttu-id="f2ba9-138">Отображаемое имя профиля.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-138">The display name of the profile.</span></span>|
-|<span data-ttu-id="f2ba9-139">description</span><span class="sxs-lookup"><span data-stu-id="f2ba9-139">description</span></span>|<span data-ttu-id="f2ba9-140">String</span><span class="sxs-lookup"><span data-stu-id="f2ba9-140">String</span></span>|<span data-ttu-id="f2ba9-141">Описание профиля, указанного пользователем.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-141">The description of the profile which is specified by the user.</span></span>|
-|<span data-ttu-id="f2ba9-142">феатуреупдатеверсион</span><span class="sxs-lookup"><span data-stu-id="f2ba9-142">featureUpdateVersion</span></span>|<span data-ttu-id="f2ba9-143">String</span><span class="sxs-lookup"><span data-stu-id="f2ba9-143">String</span></span>|<span data-ttu-id="f2ba9-144">Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-144">The feature update version that will be deployed to the devices targeted by this profile.</span></span> <span data-ttu-id="f2ba9-145">Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-145">The version could be any supported version for example 1709, 1803 or 1809 and so on.</span></span>|
-|<span data-ttu-id="f2ba9-146">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="f2ba9-146">createdDateTime</span></span>|<span data-ttu-id="f2ba9-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f2ba9-147">DateTimeOffset</span></span>|<span data-ttu-id="f2ba9-148">Дата и время создания профиля.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-148">The date time that the profile was created.</span></span>|
-|<span data-ttu-id="f2ba9-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f2ba9-149">lastModifiedDateTime</span></span>|<span data-ttu-id="f2ba9-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f2ba9-150">DateTimeOffset</span></span>|<span data-ttu-id="f2ba9-151">Дата и время последнего изменения профиля.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-151">The date time that the profile was last modified.</span></span>|
-|<span data-ttu-id="f2ba9-152">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="f2ba9-152">roleScopeTagIds</span></span>|<span data-ttu-id="f2ba9-153">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="f2ba9-153">String collection</span></span>|<span data-ttu-id="f2ba9-154">Список тегов областей для этого элемента обновления компонента.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-154">List of Scope Tags for this Feature Update entity.</span></span>|
+|<span data-ttu-id="222bb-133">id</span><span class="sxs-lookup"><span data-stu-id="222bb-133">id</span></span>|<span data-ttu-id="222bb-134">Строка</span><span class="sxs-lookup"><span data-stu-id="222bb-134">String</span></span>|<span data-ttu-id="222bb-135">Идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="222bb-135">The Identifier of the entity.</span></span>|
+|<span data-ttu-id="222bb-136">displayName</span><span class="sxs-lookup"><span data-stu-id="222bb-136">displayName</span></span>|<span data-ttu-id="222bb-137">Строка</span><span class="sxs-lookup"><span data-stu-id="222bb-137">String</span></span>|<span data-ttu-id="222bb-138">Имя отображения профиля.</span><span class="sxs-lookup"><span data-stu-id="222bb-138">The display name of the profile.</span></span>|
+|<span data-ttu-id="222bb-139">description</span><span class="sxs-lookup"><span data-stu-id="222bb-139">description</span></span>|<span data-ttu-id="222bb-140">Строка</span><span class="sxs-lookup"><span data-stu-id="222bb-140">String</span></span>|<span data-ttu-id="222bb-141">Описание профиля, указанного пользователем.</span><span class="sxs-lookup"><span data-stu-id="222bb-141">The description of the profile which is specified by the user.</span></span>|
+|<span data-ttu-id="222bb-142">featureUpdateVersion</span><span class="sxs-lookup"><span data-stu-id="222bb-142">featureUpdateVersion</span></span>|<span data-ttu-id="222bb-143">Строка</span><span class="sxs-lookup"><span data-stu-id="222bb-143">String</span></span>|<span data-ttu-id="222bb-144">Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль.</span><span class="sxs-lookup"><span data-stu-id="222bb-144">The feature update version that will be deployed to the devices targeted by this profile.</span></span> <span data-ttu-id="222bb-145">Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.</span><span class="sxs-lookup"><span data-stu-id="222bb-145">The version could be any supported version for example 1709, 1803 or 1809 and so on.</span></span>|
+|<span data-ttu-id="222bb-146">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="222bb-146">createdDateTime</span></span>|<span data-ttu-id="222bb-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="222bb-147">DateTimeOffset</span></span>|<span data-ttu-id="222bb-148">Время создания профиля.</span><span class="sxs-lookup"><span data-stu-id="222bb-148">The date time that the profile was created.</span></span>|
+|<span data-ttu-id="222bb-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="222bb-149">lastModifiedDateTime</span></span>|<span data-ttu-id="222bb-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="222bb-150">DateTimeOffset</span></span>|<span data-ttu-id="222bb-151">Дата последнего изменения профиля.</span><span class="sxs-lookup"><span data-stu-id="222bb-151">The date time that the profile was last modified.</span></span>|
+|<span data-ttu-id="222bb-152">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="222bb-152">roleScopeTagIds</span></span>|<span data-ttu-id="222bb-153">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="222bb-153">String collection</span></span>|<span data-ttu-id="222bb-154">Список тегов области для этого объекта обновления функций.</span><span class="sxs-lookup"><span data-stu-id="222bb-154">List of Scope Tags for this Feature Update entity.</span></span>|
+|<span data-ttu-id="222bb-155">deployableContentDisplayName</span><span class="sxs-lookup"><span data-stu-id="222bb-155">deployableContentDisplayName</span></span>|<span data-ttu-id="222bb-156">Строка</span><span class="sxs-lookup"><span data-stu-id="222bb-156">String</span></span>|<span data-ttu-id="222bb-157">Удобное отображаемое имя развернутого контента профиля обновления качества</span><span class="sxs-lookup"><span data-stu-id="222bb-157">Friendly display name of the quality update profile deployable content</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="f2ba9-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2ba9-155">Response</span></span>
-<span data-ttu-id="f2ba9-156">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-156">If successful, this method returns a `201 Created` response code and a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="222bb-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="222bb-158">Response</span></span>
+<span data-ttu-id="222bb-159">В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="222bb-159">If successful, this method returns a `201 Created` response code and a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f2ba9-157">Пример</span><span class="sxs-lookup"><span data-stu-id="f2ba9-157">Example</span></span>
+## <a name="example"></a><span data-ttu-id="222bb-160">Пример</span><span class="sxs-lookup"><span data-stu-id="222bb-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f2ba9-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2ba9-158">Request</span></span>
-<span data-ttu-id="f2ba9-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-159">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="222bb-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="222bb-161">Request</span></span>
+<span data-ttu-id="222bb-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="222bb-162">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
-Content-length: 269
+Content-length: 345
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -82,16 +83,17 @@ Content-length: 269
   "featureUpdateVersion": "Feature Update Version value",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f2ba9-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2ba9-160">Response</span></span>
-<span data-ttu-id="f2ba9-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f2ba9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="222bb-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="222bb-163">Response</span></span>
+<span data-ttu-id="222bb-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="222bb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 441
+Content-Length: 517
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -103,7 +105,8 @@ Content-Length: 441
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
