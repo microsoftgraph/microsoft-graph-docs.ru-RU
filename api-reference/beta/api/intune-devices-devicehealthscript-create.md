@@ -1,35 +1,35 @@
 ---
-title: Создание Девицехеалсскрипт
-description: Создание нового объекта Девицехеалсскрипт.
+title: Создание deviceHealthScript
+description: Создайте новый объект deviceHealthScript.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55a8005a7e1ad223b099c0e07e120be819fe3465
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cb2fc4cde6aeffd30950e08c7a9183348388aa7b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49235219"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146393"
 ---
-# <a name="create-devicehealthscript"></a>Создание Девицехеалсскрипт
+# <a name="create-devicehealthscript"></a>Создание deviceHealthScript
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) .
+Создайте новый [объект deviceHealthScript.](../resources/intune-devices-devicehealthscript.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,38 +43,38 @@ POST /deviceManagement/deviceHealthScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицехеалсскрипт в формате JSON.
+В теле запроса поставляем представление JSON для объекта deviceHealthScript.
 
-В следующей таблице приведены свойства, необходимые при создании Девицехеалсскрипт.
+В следующей таблице показаны свойства, необходимые при создании устройстваHealthScript.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сценария работоспособности устройства|
-|publisher|String|Имя издателя сценария работоспособности устройства|
-|version|String|Версия сценария работоспособности устройства|
-|displayName|String|Имя сценария работоспособности устройства|
-|description|String|Описание сценария работоспособности устройства|
-|детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
-|ремедиатионскриптконтент|Binary|Все содержимое скрипта PowerShell об исправлении|
-|createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
+|id|Строка|Уникальный идентификатор для скрипта здоровья устройств|
+|publisher|String|Имя издателя скриптов для здоровья устройств|
+|version|String|Версия сценария состояния устройства|
+|displayName|Строка|Имя сценария состояния устройства|
+|description|Строка|Описание сценария состояния устройства|
+|detectionScriptContent|Binary|Все содержимое сценария powershell обнаружения|
+|remediationScriptContent|Binary|Все содержимое сценария powershell исправлений|
+|createdDateTime|DateTimeOffset|Время создания скрипта здоровья устройства. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Время изменения скрипта здоровья устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
-|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
-|детектионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Детектионскриптпараметерс в ComplexType.|
-|ремедиатионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Ремедиатионскриптпараметерс в ComplexType.|
+|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для скрипта здоровья устройств|
+|isGlobalScript|Boolean|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
+|highestAvailableVersion|Строка|Самая доступная версия для сценария Microsoft Proprietary|
+|detectionScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType DetectionScriptParameters.|
+|remediationScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType RemediationScriptParameters.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект deviceHealthScript](../resources/intune-devices-devicehealthscript.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

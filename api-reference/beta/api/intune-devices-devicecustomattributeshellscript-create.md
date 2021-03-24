@@ -1,34 +1,34 @@
 ---
-title: Создание Девицекустоматтрибутешеллскрипт
-description: Создание нового объекта Девицекустоматтрибутешеллскрипт.
+title: Создание устройстваCustomAttributeShellScript
+description: Создайте новый объект deviceCustomAttributeShellScript.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cab38c372bfea1185fdee6fa2015608ebb9fde8c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b7db71c2c35aaf514a893749a0f6aaf1565c460b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49219435"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146421"
 ---
-# <a name="create-devicecustomattributeshellscript"></a>Создание Девицекустоматтрибутешеллскрипт
+# <a name="create-devicecustomattributeshellscript"></a>Создание устройстваCustomAttributeShellScript
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .
+Создайте новый [объект deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,32 +43,32 @@ POST /deviceManagement/deviceCustomAttributeShellScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицекустоматтрибутешеллскрипт в формате JSON.
+В теле запроса поставляем представление JSON для объекта deviceCustomAttributeShellScript.
 
-В следующей таблице приведены свойства, необходимые при создании Девицекустоматтрибутешеллскрипт.
+В следующей таблице показаны свойства, необходимые при создании устройстваCustomAttributeShellScript.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для объекта настраиваемого атрибута.|
-|кустоматтрибутенаме|String|Имя настраиваемого атрибута.|
-|кустоматтрибутетипе|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
-|displayName|String|Имя скрипта управления устройствами.|
-|description|String|Необязательное описание скрипта управления устройствами.|
-|скриптконтент|Binary|Содержимое скрипта.|
+|id|Строка|Уникальный идентификатор для настраиваемого объекта атрибута.|
+|customAttributeName|Строка|Имя настраиваемого атрибута.|
+|customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
+|displayName|Строка|Имя сценария управления устройствами.|
+|description|Строка|Необязательное описание сценария управления устройствами.|
+|scriptContent|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|fileName|String|Имя файла скрипта.|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

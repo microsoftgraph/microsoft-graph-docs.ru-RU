@@ -1,35 +1,35 @@
 ---
-title: Обновление Девицеманажементсеттингдефинитион
-description: Обновление свойств объекта Девицеманажементсеттингдефинитион.
+title: Обновление deviceManagementSettingDefinition
+description: Обновление свойств объекта deviceManagementSettingDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0185feea03956ee3037e3eacd70d29316757d4b5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 343971cccdbcf64bbb04279de069ac3e0020362f
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300257"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146575"
 ---
-# <a name="update-devicemanagementsettingdefinition"></a>Обновление Девицеманажементсеттингдефинитион
+# <a name="update-devicemanagementsettingdefinition"></a>Обновление deviceManagementSettingDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) .
+Обновление свойств объекта [deviceManagementSettingDefinition.](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,33 +46,33 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceManagementSettingDefinition.](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваManagementSettingDefinition.](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор определения параметра|
-|Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|String|Отображаемое имя параметра|
-|истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
-|description|String|Описание параметра|
-|плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
-|документатионурл|String|URL-адрес для установки документации|
-|хеадертитле|String|Заголовок параметра "заголовок" представляет категорию или раздел параметров или параметров|
-|хеадерсубтитле|String|Подзаголовок заголовка параметра для дополнительных сведений о категории или разделе|
-|keywords|Коллекция строк|Ключевые слова, связанные с параметром|
-|провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
-|зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
+|id|Строка|ID определения параметра|
+|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
+|displayName|Строка|Имя отображения параметра|
+|isTopLevel|Boolean|Если параметр верхнего уровня, его можно настроить без необходимости завернутой в коллекцию или сложный параметр|
+|description|Строка|Описание параметра|
+|placeholderText|Строка|Текст placeholder в качестве примера допустимого ввода|
+|documentationUrl|Строка|URL-адрес для настройки документации|
+|headerTitle|Строка|заголовок параметра представляет категорию/раздел параметра/параметров|
+|headerSubtitle|Строка|субтитры заголовок параметра для получения дополнительных сведений о категории/разделе|
+|keywords|Коллекция String|Ключевые слова, связанные с параметром|
+|ограничения|[коллекция deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
+|зависимости|[коллекция deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей от других параметров|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

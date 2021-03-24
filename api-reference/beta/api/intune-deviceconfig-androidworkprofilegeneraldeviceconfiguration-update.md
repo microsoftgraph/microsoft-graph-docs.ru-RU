@@ -1,35 +1,35 @@
 ---
 title: Обновление androidWorkProfileGeneralDeviceConfiguration
-description: Обновление свойств объекта androidWorkProfileGeneralDeviceConfiguration.
+description: Обновление свойств объекта AndroidWorkProfileGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7b8e9f0bcfcde7ffc4dbc19a469e663b2d8f12b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: e1a0c563e83051968d970c9b5bdda69f178b9f68
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154686"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51148115"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>Обновление androidWorkProfileGeneralDeviceConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [androidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)
+Обновление свойств объекта [AndroidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,75 +45,75 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предоставляем представление объекта [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в JSON.
+В теле запроса предоставляем представление JSON для [объекта AndroidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта androidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)
+В следующей таблице показаны свойства, необходимые при создании [androidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли конфигурация устройства назначение тегов области. Назначение свойству ScopeTags запрещено, если это значение имеет значение false, а сущности не будут видны пользователям с заданной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и их можно устранить, удавшись и повторно создав политику на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпуска ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|passwordBlockFaceUnlock|Boolean|Указывает, следует ли заблокировать разблокировку лиц.|
+|passwordBlockFaceUnlock|Boolean|Указывает, следует ли блокировать разблокирование лица.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|passwordBlockIrisUnlock|Boolean|Указывает, следует ли заблокировать разблокировку радужной оболочки радужной оболочки.|
+|passwordBlockIrisUnlock|Boolean|Указывает, следует ли блокировать разблокировку радужной оболочки радужной оболочки.|
 |passwordBlockTrustAgents|Boolean|Указывает, следует ли блокировать Smart Lock и другие агенты безопасности.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordMinimumLength|Int32|Минимальная длина паролей. Допустимые значения: от 4 до 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время с момента последнего действия до отключения экрана (в минутах).|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения: от 1 до 16|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения от 1 до 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileAllowAppInstallsFromUnknownSources|Boolean|Указывает, следует ли разрешить установку приложений из неизвестных источников.|
-|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Тип разрешенного общего доступа к данным. Возможные значения: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
+|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Тип разрешенного обмена данными. Возможные значения: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Указывает, следует ли блокировать уведомления во время блокировки устройства.|
 |workProfileBlockAddingAccounts|Boolean|Блокировать добавление и удаление учетных записей в профиле работы.|
 |workProfileBluetoothEnableContactSharing|Boolean|Разрешить устройствам Bluetooth доступ к корпоративным контактам.|
-|workProfileBlockScreenCapture|Boolean|Блокировка снимка экрана в профиле работы.|
-|workProfileBlockCrossProfileCallerId|Boolean|Заблокируют ид вызываемой области для отображения в личном профиле.|
+|workProfileBlockScreenCapture|Boolean|Блокировка захвата экрана в профиле работы.|
+|workProfileBlockCrossProfileCallerId|Boolean|Блокировка ИД вызываемой личности вызываемой на экране работы в личном профиле.|
 |workProfileBlockCamera|Boolean|Блокировка камеры профиля работы.|
-|workProfileBlockCrossProfileContactsSearch|Boolean|Блокировка доступности контактов в личном профиле.|
-|workProfileBlockCrossProfileCopyPaste|Boolean|Boolean, который указывает, включен ли параметр для перекрестной копии профиля или в виде вися.|
+|workProfileBlockCrossProfileContactsSearch|Boolean|Блокировка доступности контактов профилей работы в личном профиле.|
+|workProfileBlockCrossProfileCopyPaste|Boolean|Boolean, который указывает, включен ли параметр, который не позволяет копировать/вклеить перекрестный профиль.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|workProfilePasswordBlockFaceUnlock|Boolean|Указывает, следует ли заблокировать разблокировку лиц для работы профиля.|
-|workProfilePasswordBlockFingerprintUnlock|Boolean|Указывает, следует ли заблокировать разблокировку отпечатков пальцев для работы профиля.|
-|workProfilePasswordBlockIrisUnlock|Boolean|Указывает, следует ли заблокировать разблокировку радужной оболочки радужной оболочки для работы профиля.|
-|workProfilePasswordBlockTrustAgents|Boolean|Указывает, следует ли заблокировать smart Lock и другие агенты доверия для работы профиля.|
+|workProfilePasswordBlockFaceUnlock|Boolean|Указывает, следует ли блокировать разблокировку лица для профиля работы.|
+|workProfilePasswordBlockFingerprintUnlock|Boolean|Указывает, следует ли блокировать разблокировку отпечатков пальцев для профиля работы.|
+|workProfilePasswordBlockIrisUnlock|Boolean|Указывает, следует ли блокировать разблокировку радужной оболочки радужной оболочки для профиля работы.|
+|workProfilePasswordBlockTrustAgents|Boolean|Указывает, следует ли блокировать Smart Lock и другие агенты доверия для профиля работы.|
 |workProfilePasswordExpirationDays|Int32|Количество дней до истечения срока действия пароля профиля работы. Допустимые значения: от 1 до 365.|
 |workProfilePasswordMinimumLength|Int32|Минимальная длина пароля профиля работы. Допустимые значения: от 4 до 16.|
-|workProfilePasswordMinNumericCharacters|Int32|Минимальное число цифр, необходимое для пароля профиля работы. Допустимые значения: от 1 до 10|
-|workProfilePasswordMinNonLetterCharacters|Int32|Минимальное количество символов, не букв, необходимых для пароля профиля работы. Допустимые значения: от 1 до 10|
-|workProfilePasswordMinLetterCharacters|Int32|Минимальное количество букв в пароле профиля работы. Допустимые значения: от 1 до 10|
-|workProfilePasswordMinLowerCaseCharacters|Int32|Минимальное количество символов нижнего уровня, необходимых для пароля профиля работы. Допустимые значения: от 1 до 10|
-|workProfilePasswordMinUpperCaseCharacters|Int32|Минимальное количество символов верхнего уровня, необходимых для пароля профиля работы. Допустимые значения: от 1 до 10|
-|workProfilePasswordMinSymbolCharacters|Int32|Минимальное количество символов, необходимых для пароля профиля работы. Допустимые значения: от 1 до 10|
+|workProfilePasswordMinNumericCharacters|Int32|Минимум # числимые символы, необходимые в пароле профиля работы. Допустимые значения от 1 до 10|
+|workProfilePasswordMinNonLetterCharacters|Int32|Минимальное количество символов без букв, необходимых в пароле профиля работы. Допустимые значения от 1 до 10|
+|workProfilePasswordMinLetterCharacters|Int32|Минимальный # буквы символов, необходимых в пароле профиля работы. Допустимые значения от 1 до 10|
+|workProfilePasswordMinLowerCaseCharacters|Int32|Минимальное количество символов нижнего уровня, необходимых для пароля профиля работы. Допустимые значения от 1 до 10|
+|workProfilePasswordMinUpperCaseCharacters|Int32|Минимальный # символов верхнего уровня, необходимых в пароле профиля работы. Допустимые значения от 1 до 10|
+|workProfilePasswordMinSymbolCharacters|Int32|Минимальный # символов, необходимых в пароле профиля работы. Допустимые значения от 1 до 10|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|Время с момента последнего действия до отключения экрана (в минутах).|
-|workProfilePasswordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей профилей, которые необходимо заблокировать. Допустимые значения: от 0 до 24.|
-|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных входов, разрешенных до удаления профиля работы и удаления всех корпоративных данных. Допустимые значения: от 1 до 16|
-|workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Тип требуемого пароля профиля работы. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfilePasswordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей профилей работы для блокировки. Допустимые значения: от 0 до 24.|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Количество входов в сбои, разрешенные до удаления профиля работы и удаления всех корпоративных данных. Допустимые значения от 1 до 16|
+|workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Тип необходимого пароля профиля работы. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Boolean|Пароль требуется или не требуется для профиля работы|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
-|vpnAlwaysOnPackageIdentifier|String|Включить режим блокировки для постоянно в сети VPN.|
-|vpnEnableAlwaysOnLockdownMode|Boolean|Включить режим блокировки для постоянно в сети VPN.|
-|workProfileAllowWidgets|Boolean|Разрешить виджеты из приложений рабочего профиля.|
-|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Запретить установку приложений из неизвестных источников в личном профиле.|
+|vpnAlwaysOnPackageIdentifier|Строка|Включить режим блокировки для всегда на VPN.|
+|VPNEnableAlwaysOnLockdownMode|Boolean|Включить режим блокировки для всегда на VPN.|
+|workProfileAllowWidgets|Boolean|Разрешить виджеты из приложений профиля работы.|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Предотвращение установок приложений из неизвестных источников в личном профиле.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,35 +1,35 @@
 ---
-title: Обновление Даташарингконсент
-description: Обновление свойств объекта Даташарингконсент.
+title: Обновление dataSharingConsent
+description: Обновление свойств объекта dataSharingConsent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7a417a30b8c34da52d151ce64cc9f655fabdbdd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0d617546464b1333af2b535bbc1c17f61fa03386
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49310995"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146547"
 ---
-# <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
+# <a name="update-datasharingconsent"></a>Обновление dataSharingConsent
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .
+Обновление свойств объекта [dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,28 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)
 
-В следующей таблице приведены свойства, необходимые при создании [даташарингконсент](../resources/intune-devices-datasharingconsent.md).
+В следующей таблице показаны свойства, необходимые при создании [dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор согласия общего доступа к данным|
-|сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
-|термсурл|String|Термсурл для согласия общего доступа к данным|
-|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
-|грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
+|id|Строка|ID согласия для общего доступа к данным|
+|serviceDisplayName|Строка|Имя отображения потока работы службы|
+|termsUrl|Строка|TermsUrl для согласия на обмен данными|
+|granted|Boolean|Предоставлено состояние для согласия на обмен данными|
+|grantDateTime|DateTimeOffset|Для этой учетной записи было предоставлено согласие на время|
+|grantedByUpn|Строка|Upn пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUserId|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект dataSharingConsent](../resources/intune-devices-datasharingconsent.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
