@@ -1,35 +1,35 @@
 ---
-title: Создание Девицеманажементинтент
-description: Создание нового объекта Девицеманажементинтент.
+title: Создание deviceManagementIntent
+description: Создание нового объекта deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cde7ad8536edbcab146a5d93e1a94624491c3b3f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 20cb05e52b7b065f2cbf1768895e9686bd4a49d0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278277"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51128917"
 ---
-# <a name="create-devicemanagementintent"></a>Создание Девицеманажементинтент
+# <a name="create-devicemanagementintent"></a>Создание deviceManagementIntent
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .
+Создание нового [объекта deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,28 @@ POST /deviceManagement/intents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицеманажементинтент в формате JSON.
+В теле запроса поставляем представление JSON для объекта deviceManagementIntent.
 
-В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтент.
+В следующей таблице показаны свойства, необходимые при создании устройстваManagementIntent.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор намерения|
-|displayName|String|Имя пользователя для данного отображаемого имени|
-|description|String|Описание, заданное пользователем|
-|isAssigned|Boolean|Указывает, назначена ли пользователю задача|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|id|Строка|ID намерения|
+|displayName|Строка|Имя отображения, заданное пользователю|
+|description|Строка|Описание пользователя|
+|isAssigned|Boolean|Означает, назначены ли намерения пользователям|
+|lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
+|templateId|Строка|ID шаблона, который был создан из (если таково)|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и `201 Created` [объект deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

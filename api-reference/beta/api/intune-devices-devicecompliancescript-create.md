@@ -1,34 +1,34 @@
 ---
-title: Создание Девицекомплианцескрипт
-description: Создание нового объекта Девицекомплианцескрипт.
+title: Создание deviceComplianceScript
+description: Создайте новый объект deviceComplianceScript.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 972623447f6ff60efa050204cdbdc2a8c314269a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c900a21083ec1ee775a355a514c9e323ae96314f
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49229200"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51128665"
 ---
-# <a name="create-devicecompliancescript"></a>Создание Девицекомплианцескрипт
+# <a name="create-devicecompliancescript"></a>Создание deviceComplianceScript
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицекомплианцескрипт](../resources/intune-devices-devicecompliancescript.md) .
+Создайте новый [объект deviceComplianceScript.](../resources/intune-devices-devicecompliancescript.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,33 +43,33 @@ POST /deviceManagement/deviceComplianceScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицекомплианцескрипт в формате JSON.
+В теле запроса поставляем представление JSON для объекта deviceComplianceScript.
 
-В следующей таблице приведены свойства, необходимые при создании Девицекомплианцескрипт.
+В следующей таблице показаны свойства, необходимые при создании устройстваComplianceScript.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сценария соответствия требованиям устройства|
-|publisher|String|Имя издателя сценариев соответствия требованиям устройства|
+|id|Строка|Уникальный идентификатор для сценария соответствия требованиям к устройству|
+|publisher|String|Имя издателя сценариев соответствия требованиям устройств|
 |version|String|Версия сценария соответствия требованиям устройства|
-|displayName|String|Имя сценария соответствия требованиям устройства|
-|description|String|Описание сценария соответствия требованиям устройства|
-|детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
-|createdDateTime|DateTimeOffset|Метка времени создания сценария соответствия устройства требованиям. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
+|displayName|Строка|Имя сценария соответствия требованиям устройства|
+|description|Строка|Описание сценария соответствия требованиям устройства|
+|detectionScriptContent|Binary|Все содержимое сценария powershell обнаружения|
+|createdDateTime|DateTimeOffset|Время создания сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Время изменения сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария соответствия требованиям устройств|
+|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для сценария соответствия требованиям к устройству|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицекомплианцескрипт](../resources/intune-devices-devicecompliancescript.md) в тексте отклика.
+В случае успешного использования этот метод возвращает код отклика и `201 Created` [объект deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

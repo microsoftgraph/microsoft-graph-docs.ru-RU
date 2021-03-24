@@ -1,34 +1,34 @@
 ---
-title: Обновление Девицеманажементинтент
-description: Обновление свойств объекта Девицеманажементинтент.
+title: Обновление deviceManagementIntent
+description: Обновление свойств объекта deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef0ed2763d7b1721bb87e883fa981f04956f07ec
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c801fe8c2f6ecb6cd64d8aef5f9748f3cbc1ddf3
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49229746"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51128861"
 ---
-# <a name="update-devicemanagementintent"></a>Обновление Девицеманажементинтент
+# <a name="update-devicemanagementintent"></a>Обновление deviceManagementIntent
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .
+Обновление свойств объекта [deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,28 +43,28 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор намерения|
-|displayName|String|Имя пользователя для данного отображаемого имени|
-|description|String|Описание, заданное пользователем|
-|isAssigned|Boolean|Указывает, назначена ли пользователю задача|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|id|Строка|ID намерения|
+|displayName|Строка|Имя отображения, заданное пользователю|
+|description|Строка|Описание пользователя|
+|isAssigned|Boolean|Означает, назначены ли намерения пользователям|
+|lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
+|templateId|Строка|ID шаблона, который был создан из (если таково)|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
