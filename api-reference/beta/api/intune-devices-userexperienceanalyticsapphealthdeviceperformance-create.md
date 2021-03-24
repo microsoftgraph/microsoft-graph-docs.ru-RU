@@ -1,34 +1,34 @@
 ---
-title: Создание Усерекспериенцеаналитиксапфеалсдевицеперформанце
-description: Создание нового объекта Усерекспериенцеаналитиксапфеалсдевицеперформанце.
+title: Создание userExperienceAnalyticsAppHealthDevicePerformance
+description: Создание нового объекта userExperienceAnalyticsAppHealthDevicePerformance.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef02600ac660ab328e79df1da68be17c4f1776ed
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b10beeca6d79b8dc596cfa509a5a1a817af9a346
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202852"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136134"
 ---
-# <a name="create-userexperienceanalyticsapphealthdeviceperformance"></a>Создание Усерекспериенцеаналитиксапфеалсдевицеперформанце
+# <a name="create-userexperienceanalyticsapphealthdeviceperformance"></a>Создание userExperienceAnalyticsAppHealthDevicePerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [усерекспериенцеаналитиксапфеалсдевицеперформанце](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) .
+Создание нового [объекта userExperienceAnalyticsAppHealthDevicePerformance.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,32 +43,32 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксапфеалсдевицеперформанце в формате JSON.
+В теле запроса поставляем представление JSON для объекта userExperienceAnalyticsAppHealthDevicePerformance.
 
-В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксапфеалсдевицеперформанце.
+В следующей таблице показаны свойства, необходимые при создании userExperienceAnalyticsAppHealthDevicePerformance.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
 |deviceModel|String|Имя модели устройства.|
-|девицемануфактурер|String|Название изготовителя устройства.|
-|аппкрашкаунт|Int32|Количество сбоев приложений для устройства. Допустимые значения: от 2147483648 до 2147483647|
-|крашедаппкаунт|Int32|Количество отдельных сбоев приложений для устройства. Допустимые значения: от 2147483648 до 2147483647|
-|апфангкаунт|Int32|Количество зависаний приложения для устройства. Допустимые значения: от 2147483648 до 2147483647|
-|меантиметофаилуреинминутес|Int32|Среднее время до сбоя устройства в минутах. Допустимые значения: от 2147483648 до 2147483647|
-|девицеапфеалсскоре|Двойное с плавающей точкой|Показатель работоспособности приложения для устройства. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
-|девицеапфеалсстатус|String|Общее состояние работоспособности приложений для устройства.|
-|deviceId|String|Идентификатор устройства.|
+|deviceManufacturer|Строка|Имя производителя устройства.|
+|appCrashCount|Int32|Количество сбоей приложения для устройства. Допустимые значения -2147483648 до 2147483647|
+|crashedAppCount|Int32|Количество различных сбоей приложения для устройства. Допустимые значения -2147483648 до 2147483647|
+|appHangCount|Int32|Для устройства зависает число приложений. Допустимые значения -2147483648 до 2147483647|
+|meanTimeToFailureInMinutes|Int32|Время сбоя устройства в минутах. Допустимые значения -2147483648 до 2147483647|
+|deviceAppHealthScore|Двойное с плавающей точкой|Оценка состояния приложения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|deviceAppHealthStatus|Строка|Общее состояние состояния здоровья приложения на устройстве.|
+|deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксапфеалсдевицеперформанце](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и `201 Created` [объект userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

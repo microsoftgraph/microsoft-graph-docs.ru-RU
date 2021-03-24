@@ -1,34 +1,34 @@
 ---
-title: Создание Вулнераблеманажеддевице
-description: Создание нового объекта Вулнераблеманажеддевице.
+title: Создание vulnerableManagedDevice
+description: Создайте новый объект vulnerableManagedDevice.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d9bab17be811156f9aa0efcae52f024388f260d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 02ada5a0926a3b96e448b8027b3b68ed4be8fe26
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49270416"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134748"
 ---
-# <a name="create-vulnerablemanageddevice"></a>Создание Вулнераблеманажеддевице
+# <a name="create-vulnerablemanageddevice"></a>Создание vulnerableManagedDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .
+Создайте новый [объект vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,25 +43,25 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Вулнераблеманажеддевице в формате JSON.
+В теле запроса поставляем представление JSON для уязвимого объектаManagedDevice.
 
-В следующей таблице приведены свойства, необходимые при создании Вулнераблеманажеддевице.
+В следующей таблице показаны свойства, необходимые при создании vulnerableManagedDevice.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности и идентификатор устройства AAD.|
-|манажеддевицеид|String|Идентификатор управляемого устройства Intune.|
-|displayName|String|Имя устройства.|
-|lastSyncDateTime|DateTimeOffset|Дата последней синхронизации.|
+|id|Строка|Ключ сущности и ID устройства AAD.|
+|managedDeviceId|Строка|ID управляемого устройства Intune.|
+|displayName|Строка|Имя устройства.|
+|lastSyncDateTime|DateTimeOffset|Последняя дата синхронизации.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и уязвимый `201 Created` [объектManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

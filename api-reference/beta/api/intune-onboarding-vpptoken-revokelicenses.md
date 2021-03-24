@@ -1,34 +1,34 @@
 ---
 title: Действие revokeLicenses
-description: Отзыв лицензий, связанных с определенным appleVolumePurchaseProgramToken
+description: Отзыва лицензий, связанных с определенным appleVolumePurchaseProgramToken
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c9670e993cd47475c10573ad3d02dd4bdfda614
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a06d60cdcb49b05258a438b7a5631be02c58173a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49211497"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134993"
 ---
 # <a name="revokelicenses-action"></a>Действие revokeLicenses
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Отзыв лицензий, связанных с определенным appleVolumePurchaseProgramToken
+Отзыва лицензий, связанных с определенным appleVolumePurchaseProgramToken
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +53,8 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|нотифиманажеддевицес|Boolean|Н/Д|
-|ревокеунтраккедлиценсес|Boolean|Н/Д|
+|notifyManagedDevices|Boolean|Н/Д|
+|revokeUntrackedLicenses|Boolean|Н/Д|
 
 
 

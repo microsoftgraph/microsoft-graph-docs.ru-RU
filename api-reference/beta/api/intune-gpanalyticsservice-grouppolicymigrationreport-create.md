@@ -1,34 +1,34 @@
 ---
-title: Создание Граупполицимигратионрепорт
-description: Создание нового объекта Граупполицимигратионрепорт.
+title: Создание groupPolicyMigrationReport
+description: Создайте новый объект GroupPolicyMigrationReport.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6b63022cc67ad0f5d6e51bf3eec3f7dd2272839
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 08901e26346c1bae90e080e2bc2313c7cd46ed8d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263122"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135581"
 ---
-# <a name="create-grouppolicymigrationreport"></a>Создание Граупполицимигратионрепорт
+# <a name="create-grouppolicymigrationreport"></a>Создание groupPolicyMigrationReport
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .
+Создайте новый [объект GroupPolicyMigrationReport.](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,34 +43,34 @@ POST /deviceManagement/groupPolicyMigrationReports
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Граупполицимигратионрепорт в формате JSON.
+В теле запроса поставляем представление JSON для объекта GroupPolicyMigrationReport.
 
-В следующей таблице приведены свойства, необходимые при создании Граупполицимигратионрепорт.
+В следующей таблице показаны свойства, необходимые при создании groupPolicyMigrationReport.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|displayName|String|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|String|Различающееся имя подразделения.|
-|createdDateTime|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
-|граупполицикреатеддатетиме|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
-|граупполициластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
-|мигратионреадинесс|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|таржетединактиведиректори|Boolean|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
-|тоталсеттингскаунт|Int32|Общее количество параметров групповой политики из файла GPO.|
-|суппортедсеттингскаунт|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
-|суппортедсеттингсперцент|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
+|id|Строка|Пока не задокументировано.|
+|groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
+|displayName|Строка|Имя объекта групповой политики из контента GPO Xml|
+|ouDistinguishedName|Строка|Отличительное имя OU.|
+|createdDateTime|DateTimeOffset|Дата и время создания GroupPolicyMigrationReport.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyMigrationReport.|
+|groupPolicyCreatedDateTime|DateTimeOffset|Дата и время создания GroupPolicyMigrationReport.|
+|groupPolicyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyMigrationReport.|
+|migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Покрытие Intune для связанного объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
+|targetedInActiveDirectory|Boolean|Свойство Targeted in AD из GPO Xml Content|
+|totalSettingsCount|Int32|Общее число параметров групповой политики из GPO-файла.|
+|supportedSettingsCount|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
+|supportedSettingsPercent|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

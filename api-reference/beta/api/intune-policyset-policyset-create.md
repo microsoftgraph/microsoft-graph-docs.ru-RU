@@ -1,35 +1,35 @@
 ---
-title: Создание политики
-description: Создайте новый объект Policy.
+title: Создание policySet
+description: Создание нового объекта policySet.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ccb9aa18879698e73d179a4c0458c66560acdf62
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 864df7c89a6dbbcc80932e87f6616c79d52eca99
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49296260"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134643"
 ---
-# <a name="create-policyset"></a>Создание политики
+# <a name="create-policyset"></a>Создание policySet
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый объект [Policy](../resources/intune-policyset-policyset.md) .
+Создание нового [объекта policySet.](../resources/intune-policyset-policyset.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,30 +43,30 @@ POST /deviceAppManagement/policySets
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Policy в формате JSON.
+В теле запроса поставляем представление JSON для объекта policySet.
 
-В следующей таблице приведены свойства, необходимые при создании этого параметра.
+В следующей таблице показаны свойства, необходимые при создании политикиSet.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ набора политик.|
-|createdDateTime|DateTimeOffset|Время создания набора политик.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения набора политик.|
-|displayName|String|DisplayName набора политик.|
-|description|String|Описание набора политик.|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция строк|Теги в руководстве по развертыванию|
-|roleScopeTags|Коллекция строк|RoleScopeTags набора политик|
+|id|Строка|Клавиша PolicySet.|
+|createdDateTime|DateTimeOffset|Время создания PolicySet.|
+|lastModifiedDateTime|DateTimeOffset|Последнее измененное время в PolicySet.|
+|displayName|Строка|DisplayName of the PolicySet.|
+|description|Строка|Описание PolicySet.|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Проверка/присвоение состояния PolicySet. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если таковое произошло. Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|guidedDeploymentTags|Коллекция String|Теги управляемого развертывания|
+|roleScopeTags|Коллекция String|RoleScopeTags of the PolicySet|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Policy](../resources/intune-policyset-policyset.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` объект [policySet](../resources/intune-policyset-policyset.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,35 +1,35 @@
 ---
-title: Функция getEncryptionPublicKey
-description: Получение открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple
+title: функция getEncryptionPublicKey
+description: Получите общедоступный ключ для шифрования маркера программы регистрации устройств Apple
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01b17c853c56a8f7b6e74ae3ac4a4aecc4a5c2cf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5304935f24c4826714f6d3cbd77c4e4e90684243
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49201669"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135700"
 ---
-# <a name="getencryptionpublickey-function"></a>Функция getEncryptionPublicKey
+# <a name="getencryptionpublickey-function"></a>функция getEncryptionPublicKey
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Получение открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple
+Получите общедоступный ключ для шифрования маркера программы регистрации устройств Apple
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,14 +43,14 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха эта функция возвращает `200 OK` код отклика и строку в теле отклика.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` строку в тексте ответа.
 
 ## <a name="example"></a>Пример
 

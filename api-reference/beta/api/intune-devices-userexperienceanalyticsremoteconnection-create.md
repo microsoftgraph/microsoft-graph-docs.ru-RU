@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5937a7bc044ff56776242e3446a71ca5dd45cbac
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d044809eebf198e4347bb6182388cb7096fa882d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446738"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135973"
 ---
 # <a name="create-userexperienceanalyticsremoteconnection"></a>Создание userExperienceAnalyticsRemoteConnection
 
@@ -25,10 +25,10 @@ ms.locfileid: "50446738"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,18 +46,18 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON для объекта userExperienceAnalyticsRemoteConnection.
 
 В следующей таблице показаны свойства, необходимые при создании userExperienceAnalyticsRemoteConnection.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта удаленного подключения для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта удаленного подключения для аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
-|virtualNetwork|String|Виртуальная сеть аналитики пользовательских интерфейсов.|
+|virtualNetwork|Строка|Виртуальная сеть аналитики пользовательских интерфейсов.|
 |deviceCount|Int32|Количество удаленных подключений. Допустимые значения от 0 до 2147483647|
 |cloudPcRoundTripTime|Двойное с плавающей точкой|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
 |cloudPcSignInTime|Двойное с плавающей точкой|Вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|

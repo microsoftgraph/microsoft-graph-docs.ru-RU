@@ -1,34 +1,34 @@
 ---
 title: Обновление windowsProtectionState
-description: Обновление свойств объекта windowsProtectionState.
+description: Обновление свойств объекта WindowsProtectionState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c5317326018404986a63243678455c59302683f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2a500c5f1510a28638e58be0ef32d328cc598776
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212694"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135833"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .
+Обновление свойств объекта [WindowsProtectionState.](../resources/intune-devices-windowsprotectionstate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,42 +43,42 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в формате JSON.
+В теле запроса подарйте представление JSON для [объекта WindowsProtectionState.](../resources/intune-devices-windowsprotectionstate.md)
 
-В следующей таблице приведены свойства, необходимые при создании [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md).
+В следующей таблице показаны свойства, необходимые при создании [windowsProtectionState.](../resources/intune-devices-windowsprotectionstate.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для объекта состояния защиты устройства. Это идентификатор устройства для устройства.|
-|малварепротектионенаблед|Boolean|Защита от вредоносных программ включена или нет|
-|девицестате|[виндовсдевицехеалсстате](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или Ожидание перезагрузки и т. д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|реалтимепротектионенаблед|Boolean|Защита в режиме реального времени включена или нет?|
-|нетворкинспектионсистеменаблед|Boolean|Система проверки сети включена или нет?|
-|куиккскановердуе|Boolean|Быстрая проверка просрочена или нет?|
-|фуллскановердуе|Boolean|Полная проверка просрочена или нет?|
-|сигнатуреупдатеовердуе|Boolean|Подпись устарела или нет?|
-|ребутрекуиред|Boolean|Требуется перезагрузка или нет?|
-|фуллсканрекуиред|Boolean|Необходима полная проверка или нет?|
-|енгиневерсион|String|Текущая версия модуля Endpoint Protection|
-|сигнатуреверсион|String|Текущая версия определений вредоносных программ|
-|антималвареверсион|String|Текущая версия защиты от вредоносных программ|
-|ласткуиккскандатетиме|DateTimeOffset|Дата и время последнего быстрого сканирования|
-|ластфуллскандатетиме|DateTimeOffset|Дата и время последнего быстрого сканирования|
-|ласткуиккскансигнатуреверсион|String|Последняя версия подписи быстрого сканирования|
-|ластфуллскансигнатуреверсион|String|Версия последней полной проверки подписи|
-|lastReportedDateTime|DateTimeOffset|Последнее состояние работоспособности устройства в отчете о времени|
-|продуктстатус|[виндовсдефендерпродуктстатус](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта антивирусной программы "Защитник Windows". Возможные значения:,,,,,,,,,,, `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` ,,,,,,, `systemInitiatedCleanInProgress` `samplesPendingSubmission` , `productRunningInEvaluationMode` , `productRunningInNonGenuineMode` , `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` ,,,,,,,,,,,,,,,,,.|
-|исвиртуалмачине|Boolean|Указывает, является ли устройство виртуальной машиной.|
-|тамперпротектионенаблед|Boolean|Указывает, включена ли функция защиты от несанкционированного защитника Windows.|
+|id|Строка|Уникальный идентификатор для объекта защиты от устройства. Это id устройства|
+|malwareProtectionEnabled|Boolean|Включено или не включено вредоносное ПО|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или ожидающих перезагрузки и т.д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
+|realTimeProtectionEnabled|Boolean|Включена защита в режиме реального времени или нет?|
+|networkInspectionSystemEnabled|Boolean|Включена или нет включена система сетевого контроля?|
+|quickScanOverdue|Boolean|Быстрое сканирование просрочено или нет?|
+|fullScanOverdue|Boolean|Полная просроченная проверка или нет?|
+|signatureUpdateOverdue|Boolean|Подпись устарела или нет?|
+|rebootRequired|Boolean|Перезагрузка требуется или нет?|
+|fullScanRequired|Boolean|Полное сканирование требуется или нет?|
+|engineVersion|Строка|Версия двигателя защиты конечной точки|
+|signatureVersion|Строка|Текущая версия определений вредоносных программ|
+|antiMalwareVersion|Строка|Текущая версия антивирусных программ|
+|lastQuickScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
+|lastFullScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
+|lastQuickScanSignatureVersion|Строка|Последняя версия подписи быстрого сканирования|
+|lastFullScanSignatureVersion|Строка|Последняя версия подписи полного сканирования|
+|lastReportedDateTime|DateTimeOffset|Время последнего состояния состояния устройства|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта Защитник Windows антивируса. Возможные значения: `noStatus` `serviceNotRunning` , `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` . `windowsSModeSignaturesInUseOnNonWin10SInstall`|
+|isVirtualMachine|Boolean|Указывает, является ли устройство виртуальной машиной.|
+|tamperProtectionEnabled|Boolean|Указывает, включена ли Защитник Windows защита от взлома.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

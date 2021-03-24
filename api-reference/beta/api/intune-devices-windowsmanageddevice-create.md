@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c755c02905de30b905f26b5fde3662ab6f6caaea
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 575d7667086a186da61d0b8c814cf0c1d16198f1
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441447"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135868"
 ---
 # <a name="create-windowsmanageddevice"></a>Создание windowsManagedDevice
 
@@ -25,10 +25,10 @@ ms.locfileid: "50441447"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,14 +49,14 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON для объекта WindowsManagedDevice.
 
 В следующей таблице показаны свойства, необходимые при создании windowsManagedDevice.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
+|id|Строка|Уникальный идентификатор для устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |userId|String|Уникальный идентификатор для пользователя, связанного с устройством. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |deviceName|String|Имя устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Подробные сведения для устройства.  Включает такие сведения, как пространство для хранения, производитель, серийный номер и т.д. Это свойство только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
@@ -119,20 +119,20 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |autopilotEnrolled|Boolean|Отчеты о регистрации управляемого устройства с помощью автопилотирования. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |requireUserEnrollmentApproval|Boolean|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты о сроках действия сертификата управления устройствами. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
-|iccid|String|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
-|udid|String|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
-|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра устройства. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
+|iccid|Строка|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
+|udid|Строка|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра устройства. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Количество исправленных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |notes|String|Заметки на устройстве, созданном ИТ-администратором, унаследованные от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Состояние здоровья клиента диспетчера конфигурации, допустимо только для устройств, управляемых агентом MDM/ConfigMgr, унаследованных от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Сведения о клиенте диспетчера конфигурации, действительные только для устройств, управляемых, управляемых дуэлями или трехуправленных агентом ConfigMgr, унаследованных от [managedDevice](../resources/intune-shared-manageddevice.md)|
-|ethernetMacAddress|String|Mac Ethernet. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
+|ethernetMacAddress|Строка|Mac Ethernet. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |physicalMemoryInBytes|Int64|Общая память в bytes. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Архитектура процессора. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-shared-manageddevice.md). Возможные значения: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
-|specificationVersion|String|Версия спецификации. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
+|specificationVersion|Строка|Версия спецификации. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Тип присоединиться к устройству, унаследованный от [managedDevice.](../resources/intune-shared-manageddevice.md) Возможные значения: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
-|skuFamily|String|Семейство устройств sku, унаследованные от [managedDevice](../resources/intune-shared-manageddevice.md)|
+|skuFamily|Строка|Семейство устройств sku, унаследованные от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |skuNumber|Int32|Номер sku устройства см. также: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-shared-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Функции управления устройствами, унаследованные [от managedDevice.](../resources/intune-shared-manageddevice.md) Возможные значения: `none`, `microsoftManagedDesktop`.|
 

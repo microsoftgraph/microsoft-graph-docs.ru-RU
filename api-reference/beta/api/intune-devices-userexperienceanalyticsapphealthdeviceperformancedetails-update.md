@@ -1,34 +1,34 @@
 ---
-title: Обновление Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс
-description: Обновление свойств объекта Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс.
+title: Обновление userExperienceAnalyticsAppHealthDevicePerformanceDetails
+description: Обновление свойств объекта userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bb2e656a1fd26b0baeeb26fd392825629cab273e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4d4a922aa2d6101667024dff7fa458f43fb82f25
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202607"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136015"
 ---
-# <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Обновление Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс
+# <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Обновление userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) .
+Обновление свойств объекта [userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,27 +43,27 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
 
-В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md).
+В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
-|eventDateTime|DateTimeOffset|Время возникновения события.|
-|eventType|String|Тип события.|
-|appDisplayName|String|Понятное имя приложения, для которого произошло событие.|
-|deviceId|String|Идентификатор устройства.|
+|id|Строка|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
+|eventDateTime|DateTimeOffset|Время события.|
+|eventType|Строка|Тип события.|
+|appDisplayName|String|Удобное имя приложения, для которого произошло событие.|
+|deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

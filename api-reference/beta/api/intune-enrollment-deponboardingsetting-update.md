@@ -5,30 +5,30 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01f3a97e2a964d1a933c6de0dae26e11cbd01a73
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 36e173595f1199000f912c3ba4ff8a96e99df8b9
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263640"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135672"
 ---
 # <a name="update-deponboardingsetting"></a>Обновление depOnboardingSetting
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
+Обновление свойств объекта [depOnboardingSetting.](../resources/intune-enrollment-deponboardingsetting.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,34 +43,34 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта depOnboardingSetting.](../resources/intune-enrollment-deponboardingsetting.md)
 
-В следующей таблице приведены свойства, необходимые при создании [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).
+В следующей таблице показаны свойства, необходимые при создании [depOnboardingSetting.](../resources/intune-enrollment-deponboardingsetting.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID объекта.|
-|appleIdentifier|String|Идентификатор Apple ID, используемый для получения текущего маркера.|
+|id|Строка|UUID объекта.|
+|appleIdentifier|String|ID Apple, используемый для получения текущего маркера.|
 |tokenExpirationDateTime|DateTimeOffset|По истечении срока действия маркера.|
-|lastModifiedDateTime|DateTimeOffset|При подключении службы.|
-|ластсукцессфулсинкдатетиме|DateTimeOffset|Когда служба последний синед с Intune|
-|ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
-|Свойства sharetokenwithschooldatasyncservice|Boolean|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
-|Lastsyncerrorcode к объекту|Int32|Код ошибки, полученный от Apple во время последней синхронизации DEP.|
-|токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|токеннаме|String|Понятное имя для токена DEP|
-|синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
-|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|lastModifiedDateTime|DateTimeOffset|Когда служба была на борту.|
+|lastSuccessfulSyncDateTime|DateTimeOffset|Когда служба последний раз синхронизирована с Intune|
+|lastSyncTriggeredDateTime|DateTimeOffset|Когда Intune в последний раз запрашивала синхронизацию.|
+|shareTokenWithSchoolDataSyncService|Boolean|Включено ли совместное использование маркеров Dep с помощью службы синхронизации данных школы.|
+|lastSyncErrorCode|Int32|Код ошибки, сообщаемой Apple во время последней синхронизации dep.|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип маркера Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
+|tokenName|Строка|Friendly Name for Dep Token|
+|syncedDeviceCount|Int32|Получает синхронизированное количество устройств|
+|dataSharingConsentGranted|Boolean|Согласие, предоставленное для обмена данными с службой Apple Dep|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

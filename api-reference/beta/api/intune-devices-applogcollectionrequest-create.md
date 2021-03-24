@@ -1,35 +1,35 @@
 ---
 title: Создание appLogCollectionRequest
-description: Создание нового объекта appLogCollectionRequest.
+description: Создайте новый объект appLogCollectionRequest.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66a8f19f82186d066dc50eb6309e64c88516eda8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: dbd19f042c6dbfe80a4c02ec224fde5b1e5fb696
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49306025"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136484"
 ---
 # <a name="create-applogcollectionrequest"></a>Создание appLogCollectionRequest
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
+Создайте новый [объект appLogCollectionRequest.](../resources/intune-devices-applogcollectionrequest.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,26 +43,26 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта appLogCollectionRequest в формате JSON.
+В теле запроса поставляем представление JSON для объекта appLogCollectionRequest.
 
-В следующей таблице приведены свойства, необходимые при создании appLogCollectionRequest.
+В следующей таблице показаны свойства, необходимые при создании appLogCollectionRequest.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
-|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
-|кустомлогфолдерс|Коллекция строк|Список папок журналов. |
-|completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
+|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Состояние загрузки журнала. Возможные значения: `pending`, `completed`, `failed`.|
+|errorMessage|Строка|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
+|customLogFolders|Коллекция String|Список папок журнала. |
+|completedDateTime|DateTimeOffset|Время, в течение которого запрос журнала загрузки достиг состояния терминала|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,35 +1,35 @@
 ---
-title: Обновление Девицеаппманажементтаск
-description: Обновление свойств объекта Девицеаппманажементтаск.
+title: Обновление устройстваAppManagementTask
+description: Обновление свойств объекта deviceAppManagementTask.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc784f0016ddd810e6a842f81b40d597123f12d0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c22587015dbf22b1537c7774244d551225e8690f
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49305254"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134881"
 ---
-# <a name="update-deviceappmanagementtask"></a>Обновление Девицеаппманажементтаск
+# <a name="update-deviceappmanagementtask"></a>Обновление устройстваAppManagementTask
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) .
+Обновление свойств объекта [deviceAppManagementTask.](../resources/intune-partnerintegration-deviceappmanagementtask.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,32 +43,32 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceAppManagementTask.](../resources/intune-partnerintegration-deviceappmanagementtask.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваAppManagementTask.](../resources/intune-partnerintegration-deviceappmanagementtask.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Имя.|
-|description|String|Описание.|
+|id|Строка|Ключ сущности.|
+|displayName|Строка|Имя.|
+|description|Строка|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
-|dueDateTime|DateTimeOffset|Дата выполнения.|
+|dueDateTime|DateTimeOffset|Срок действия.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
-|creator|String|Адрес электронной почты создателя.|
-|креаторнотес|String|Заметки автора.|
-|assignedTo|String|Имя или электронная почта администратора, которому назначена эта задача.|
+|creator|Строка|Адрес электронной почты создателя.|
+|creatorNotes|Строка|Заметки от создателя.|
+|assignedTo|String|Имя или электронная почта администратора этой задачи назначены.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
