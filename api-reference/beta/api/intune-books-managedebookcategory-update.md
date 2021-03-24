@@ -1,34 +1,34 @@
 ---
-title: Обновление Манажедебуккатегори
-description: Обновление свойств объекта Манажедебуккатегори.
+title: Обновление managedEBookCategory
+description: Обновление свойств объекта managedEBookCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d126ab73c26543815d734abf6105c932a64f555f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 177aa30f633b4a9cdf8c6637fdf383fe3e758af5
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49244761"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51133012"
 ---
-# <a name="update-managedebookcategory"></a>Обновление Манажедебуккатегори
+# <a name="update-managedebookcategory"></a>Обновление managedEBookCategory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [манажедебуккатегори](../resources/intune-books-managedebookcategory.md) .
+Обновление свойств объекта [managedEBookCategory.](../resources/intune-books-managedebookcategory.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,24 +44,24 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [манажедебуккатегори](../resources/intune-books-managedebookcategory.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта managedEBookCategory.](../resources/intune-books-managedebookcategory.md)
 
-В следующей таблице приведены свойства, необходимые при создании [манажедебуккатегори](../resources/intune-books-managedebookcategory.md).
+В следующей таблице показаны свойства, необходимые при создании [управляемогоEBookCategory.](../resources/intune-books-managedebookcategory.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Имя категории электронной книги.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Манажедебуккатегори.|
+|id|Строка|Ключ объекта.|
+|displayName|Строка|Имя категории электронных книг.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения managedEBookCategory.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [манажедебуккатегори](../resources/intune-books-managedebookcategory.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект managedEBookCategory](../resources/intune-books-managedebookcategory.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

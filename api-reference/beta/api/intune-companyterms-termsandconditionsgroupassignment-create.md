@@ -1,34 +1,34 @@
 ---
-title: Создание Термсандкондитионсграупассигнмент
-description: Создание нового объекта Термсандкондитионсграупассигнмент.
+title: Создание терминовAndConditionsGroupAssignment
+description: Создайте новый объект TermsAndConditionsGroupAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c16bda97a7d341c8152d442e34c2b66641f3e04
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 92f24d359791507485f73ef4f7198cdc5f98572a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49243655"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132914"
 ---
-# <a name="create-termsandconditionsgroupassignment"></a>Создание Термсандкондитионсграупассигнмент
+# <a name="create-termsandconditionsgroupassignment"></a>Создание терминовAndConditionsGroupAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .
+Создайте новый [объект TermsAndConditionsGroupAssignment.](../resources/intune-companyterms-termsandconditionsgroupassignment.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,23 +43,23 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Термсандкондитионсграупассигнмент в формате JSON.
+В теле запроса поставляем представление JSON для объекта termsAndConditionsGroupAssignment.
 
-В следующей таблице приведены свойства, необходимые при создании Термсандкондитионсграупассигнмент.
+В следующей таблице показаны свойства, необходимые при создании терминовAndConditionsGroupAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
-|таржетграупид|String|Уникальный идентификатор группы, которой назначена политика T&C.|
+|id|Строка|Уникальный идентификатор объекта.|
+|targetGroupId|Строка|Уникальный идентификатор группы, для&C.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и объект `201 Created` [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
