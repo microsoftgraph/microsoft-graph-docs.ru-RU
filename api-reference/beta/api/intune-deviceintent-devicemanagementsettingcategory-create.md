@@ -1,34 +1,34 @@
 ---
-title: Создание Девицеманажементсеттингкатегори
-description: Создание нового объекта Девицеманажементсеттингкатегори.
+title: Создание deviceManagementSettingCategory
+description: Создание нового объекта deviceManagementSettingCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c889962597896fefc5a2be03a44bc4121d5a7fb5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 85406e5dac6e3039f611e693855c606ec747a6d7
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49203584"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136687"
 ---
-# <a name="create-devicemanagementsettingcategory"></a>Создание Девицеманажементсеттингкатегори
+# <a name="create-devicemanagementsettingcategory"></a>Создание deviceManagementSettingCategory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) .
+Создание нового [объекта deviceManagementSettingCategory.](../resources/intune-deviceintent-devicemanagementsettingcategory.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,24 +43,24 @@ POST /deviceManagement/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицеманажементсеттингкатегори в формате JSON.
+В теле запроса поставляем представление JSON для объекта deviceManagementSettingCategory.
 
-В следующей таблице приведены свойства, необходимые при создании Девицеманажементсеттингкатегори.
+В следующей таблице показаны свойства, необходимые при создании устройстваManagementSettingCategory.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор категории|
-|displayName|String|Имя категории|
-|хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
+|id|Строка|ID категории|
+|displayName|Строка|Имя категории|
+|hasRequiredSetting|Boolean|Категория содержит требуемую настройку верхнего уровня|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
