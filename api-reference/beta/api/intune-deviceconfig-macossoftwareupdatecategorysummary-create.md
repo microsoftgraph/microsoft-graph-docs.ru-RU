@@ -1,34 +1,34 @@
 ---
-title: Создание Макоссофтвареупдатекатегорисуммари
-description: Создание нового объекта Макоссофтвареупдатекатегорисуммари.
+title: Создание macOSSoftwareUpdateCategorySummary
+description: Создайте новый объект macOSSoftwareUpdateCategorySummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f117769a5216a5522d91e254957605d938b9f89b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cc47fac234f046d69235af431db9d75dc1093e40
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49236667"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51129715"
 ---
-# <a name="create-macossoftwareupdatecategorysummary"></a>Создание Макоссофтвареупдатекатегорисуммари
+# <a name="create-macossoftwareupdatecategorysummary"></a>Создание macOSSoftwareUpdateCategorySummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .
+Создайте новый [объект macOSSoftwareUpdateCategorySummary.](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,30 +43,30 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Макоссофтвареупдатекатегорисуммари в формате JSON.
+В теле запроса поставляем представление JSON для объекта macOSSoftwareUpdateCategorySummary.
 
-В следующей таблице приведены свойства, необходимые при создании Макоссофтвареупдатекатегорисуммари.
+В следующей таблице показаны свойства, необходимые при создании macOSSoftwareUpdateCategorySummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Имя отчета|
-|deviceId|String|ИДЕНТИФИКАТОР устройства.|
+|id|Строка|Ключ объекта.|
+|displayName|Строка|Имя отчета|
+|deviceId|String|ID устройства.|
 |userId|String|Идентификатор пользователя.|
-|упдатекатегори|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
-|сукцессфулупдатекаунт|Int32|Количество успешных обновлений на устройстве|
-|фаиледупдатекаунт|Int32|Количество неудачных обновлений на устройстве|
-|тоталупдатекаунт|Int32|Общее количество обновлений на устройстве|
-|lastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления отчета для этого устройства.|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
+|successfulUpdateCount|Int32|Количество успешных обновлений на устройстве|
+|failedUpdateCount|Int32|Количество сбойных обновлений на устройстве|
+|totalUpdateCount|Int32|Количество обновлений на устройстве|
+|lastUpdatedDateTime|DateTimeOffset|Последняя дата обновления отчета для этого устройства.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект macOSSoftwareUpdateCategorySummary](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

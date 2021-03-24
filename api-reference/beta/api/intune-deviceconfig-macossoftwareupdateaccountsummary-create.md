@@ -1,34 +1,34 @@
 ---
-title: Создание Макоссофтвареупдатеаккаунтсуммари
-description: Создание нового объекта Макоссофтвареупдатеаккаунтсуммари.
+title: Создание macOSSoftwareUpdateAccountSummary
+description: Создайте новый объект macOSSoftwareUpdateAccountSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 650cf62516b34552de066743e010d6da17b7e6b9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0a34b35952ee240784a4b4f28705fe49354024cb
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49236738"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51129757"
 ---
-# <a name="create-macossoftwareupdateaccountsummary"></a>Создание Макоссофтвареупдатеаккаунтсуммари
+# <a name="create-macossoftwareupdateaccountsummary"></a>Создание macOSSoftwareUpdateAccountSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .
+Создайте новый [объект macOSSoftwareUpdateAccountSummary.](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,32 +43,32 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Макоссофтвареупдатеаккаунтсуммари в формате JSON.
+В теле запроса поставляем представление JSON для объекта macOSSoftwareUpdateAccountSummary.
 
-В следующей таблице приведены свойства, необходимые при создании Макоссофтвареупдатеаккаунтсуммари.
+В следующей таблице показаны свойства, необходимые при создании macOSSoftwareUpdateAccountSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Имя отчета|
-|deviceId|String|ИДЕНТИФИКАТОР устройства.|
+|id|Строка|Ключ объекта.|
+|displayName|Строка|Имя отчета|
+|deviceId|String|ID устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceName|String|Имя устройства.|
-|userPrincipalName|String|Имя участника пользователя|
+|userPrincipalName|String|Имя основного пользователя|
 |osVersion|String|Версия ОС.|
-|сукцессфулупдатекаунт|Int32|Количество успешных обновлений на устройстве.|
-|фаиледупдатекаунт|Int32|Количество неудачных обновлений на устройстве.|
-|тоталупдатекаунт|Int32|Общее количество обновлений на устройстве.|
-|lastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления отчета для этого устройства.|
+|successfulUpdateCount|Int32|Количество успешных обновлений на устройстве.|
+|failedUpdateCount|Int32|Количество сбойных обновлений на устройстве.|
+|totalUpdateCount|Int32|Количество обновлений на устройстве.|
+|lastUpdatedDateTime|DateTimeOffset|Последняя дата обновления отчета для этого устройства.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

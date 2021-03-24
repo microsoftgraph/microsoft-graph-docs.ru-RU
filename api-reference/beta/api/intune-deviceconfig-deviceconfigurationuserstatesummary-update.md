@@ -1,35 +1,35 @@
 ---
-title: Обновление Девицеконфигуратионусерстатесуммари
-description: Обновление свойств объекта Девицеконфигуратионусерстатесуммари.
+title: Обновление устройстваConfigurationUserStateSummary
+description: Обновление свойств объекта deviceConfigurationUserStateSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 553447bfd38ead0577b0a88726894419a6ee1597
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e8458c2f82562454c16dd73e584de5609a6e8393
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49291402"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51130086"
 ---
-# <a name="update-deviceconfigurationuserstatesummary"></a>Обновление Девицеконфигуратионусерстатесуммари
+# <a name="update-deviceconfigurationuserstatesummary"></a>Обновление устройстваConfigurationUserStateSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
+Обновление свойств объекта [deviceConfigurationUserStateSummary.](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,29 +43,29 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в формате JSON.
+В корпусе запроса поставляем представление JSON для [объекта deviceConfigurationUserStateSummary.](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваConfigurationUserStateSummary.](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|unknownUserCount|Int32|Количество неизвестных пользователей|
-|notApplicableUserCount|Int32|Количество неприменимых пользователей|
-|compliantUserCount|Int32|Число соответствующих пользователей|
-|remediatedUserCount|Int32|Количество исправленных пользователей|
-|nonCompliantUserCount|Int32|Количество несоответствующих пользователей|
-|errorUserCount|Int32|Количество пользователей с ошибками|
-|conflictUserCount|Int32|Количество конфликтующих пользователей|
+|id|Строка|Ключ объекта.|
+|unknownUserCount|Int32|Число неизвестных пользователей|
+|notApplicableUserCount|Int32|Число не применимых пользователей|
+|compliantUserCount|Int32|Количество совместимых пользователей|
+|remediatedUserCount|Int32|Число исправленных пользователей|
+|nonCompliantUserCount|Int32|Число некомплиентных пользователей|
+|errorUserCount|Int32|Число пользователей ошибок|
+|conflictUserCount|Int32|Число пользователей конфликтов|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
