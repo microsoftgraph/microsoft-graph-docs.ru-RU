@@ -1,34 +1,34 @@
 ---
-title: Создание Девицелогколлектионреспонсе
-description: Создание нового объекта Девицелогколлектионреспонсе.
+title: Создание deviceLogCollectionResponse
+description: Создайте новый объект deviceLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f56a27bc54d883cca340a35e3413488c21314da1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b9e01048af19572e26c7ba017c65ac6664b8fbc9
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49235058"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51127069"
 ---
-# <a name="create-devicelogcollectionresponse"></a>Создание Девицелогколлектионреспонсе
+# <a name="create-devicelogcollectionresponse"></a>Создание deviceLogCollectionResponse
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .
+Создайте новый [объект deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,30 +43,30 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицелогколлектионреспонсе в формате JSON.
+В теле запроса поставляем представление JSON для объекта deviceLogCollectionResponse.
 
-В следующей таблице приведены свойства, необходимые при создании Девицелогколлектионреспонсе.
+В следующей таблице показаны свойства, необходимые при создании устройстваLogCollectionResponse.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
-|status|String|Состояние запроса на сбор журналов|
-|манажеддевицеид|Guid|Идентификатор устройства|
-|errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
-|рекуестеддатетимеутк|DateTimeOffset|Дата и время запроса|
-|рецеиведдатетимеутк|DateTimeOffset|Дата и время получения запроса|
-|Свойства initiatedbyuserprincipalname|String|Имя участника-пользователя, который инициировал запрос.|
-|експиратиондатетимеутк|DateTimeOffset|Дата и время истечения срока действия журналов|
-|size|Двойное с плавающей точкой|Размер журналов. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
+|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|status|String|Состояние запроса на коллекцию журналов|
+|managedDeviceId|Guid|Id устройства|
+|errorCode|Int64|Код ошибки, если таковое есть. Допустимые значения -9.2237203685478E+18 до 9.22337203685478E+18|
+|requestedDateTimeUTC|DateTimeOffset|DateTime запроса|
+|receivedDateTimeUTC|DateTimeOffset|DateTime, в который был получен запрос|
+|initiatedByUserPrincipalName|Строка|UpN для тех, кто инициировал запрос|
+|expirationDateTimeUTC|DateTimeOffset|DateTime истечения срока действия журналов|
+|size|Двойное с плавающей точкой|Размер журналов. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

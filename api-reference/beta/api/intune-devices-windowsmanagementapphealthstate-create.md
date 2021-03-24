@@ -1,34 +1,34 @@
 ---
-title: Создание Виндовсманажементапфеалсстате
-description: Создание нового объекта Виндовсманажементапфеалсстате.
+title: Создание windowsManagementAppHealthState
+description: Создание нового объекта WindowsManagementAppHealthState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0784b612e996f018112662cbf242f38f3da505aa
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0ba082150ea5b032a4621bfea33b7d85f5ad2a16
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49218735"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51126384"
 ---
-# <a name="create-windowsmanagementapphealthstate"></a>Создание Виндовсманажементапфеалсстате
+# <a name="create-windowsmanagementapphealthstate"></a>Создание windowsManagementAppHealthState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .
+Создание нового [объекта WindowsManagementAppHealthState.](../resources/intune-devices-windowsmanagementapphealthstate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,27 +43,27 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Виндовсманажементапфеалсстате в формате JSON.
+В теле запроса укажи представление JSON для объекта WindowsManagementAppHealthState.
 
-В следующей таблице приведены свойства, необходимые при создании Виндовсманажементапфеалсстате.
+В следующей таблице показаны свойства, необходимые при создании windowsManagementAppHealthState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows. Это свойство доступно только для чтения.|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|инсталледверсион|String|Установленная версия приложения управления Windows.|
-|ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
-|deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|id|Строка|Уникальный идентификатор для состояния здоровья приложения управления Windows. Это свойство доступно только для чтения.|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние здоровья приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
+|installedVersion|Строка|Установленная версия приложения для управления Windows.|
+|lastCheckInDateTime|DateTimeOffset|Приложение для управления Windows во время последней проверки.|
+|deviceName|String|Имя устройства, на котором установлено приложение для управления Windows.|
+|deviceOSVersion|Строка|Windows 10 ОС версии устройства, на котором установлено приложение для управления Windows.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

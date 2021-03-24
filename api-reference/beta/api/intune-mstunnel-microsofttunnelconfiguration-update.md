@@ -1,34 +1,34 @@
 ---
-title: Обновление Микрософттуннелконфигуратион
-description: Обновление свойств объекта Микрософттуннелконфигуратион.
+title: Обновление microsoftTunnelConfiguration
+description: Обновление свойств объекта microsoftTunnelConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9dd8018fb274dc9221eaa85a80f9cd2f15abcf90
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 258fe480a1154d12b3c6c7e716329bb704e09eef
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301987"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51125921"
 ---
-# <a name="update-microsofttunnelconfiguration"></a>Обновление Микрософттуннелконфигуратион
+# <a name="update-microsofttunnelconfiguration"></a>Обновление microsoftTunnelConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [микрософттуннелконфигуратион](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .
+Обновление свойств объекта [microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,34 +44,34 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [микрософттуннелконфигуратион](../resources/intune-mstunnel-microsofttunnelconfiguration.md) в формате JSON.
+В теле запроса предоставляем представление JSON для [объекта MicrosoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
 
-В следующей таблице приведены свойства, необходимые при создании [микрософттуннелконфигуратион](../resources/intune-mstunnel-microsofttunnelconfiguration.md).
+В следующей таблице показаны свойства, необходимые при создании [microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор Микрософттуннелконфигуратион|
-|displayName|String|Отображаемое имя Микрософттуннелконфигуратион|
-|description|String|Описание Микрософттуннелконфигуратион|
-|сетью|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов.|
-|днссерверс|Коллекция строк|DNS-серверы, которые будут использоваться клиентами;|
-|дефаултдомаинсуффикс|String|Приложение домена по умолчанию, которое будет использоваться клиентами.|
-|раутесинклуде|Коллекция строк|Маршрутизации, которые будут маршрутизироваться сервером|
-|раутесексклуде|Коллекция строк|Подмножества маршрутов, которые не будут маршрутизироваться сервером|
-|сплитднс|Коллекция строк|Домены, которые будут разрешены с помощью предоставленных DNS-серверов|
-|листенпорт|Int32|Порт, прослушиваемый портами TCP и UPD на сервере|
-|адванцедсеттингс|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
-|lastUpdateDateTime|DateTimeOffset|При последнем обновлении Микрософттуннелконфигуратион|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|id|Строка|Id MicrosoftTunnelConfiguration|
+|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
+|description|Строка|Описание MicrosoftTunnelConfiguration|
+|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
+|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
+|advancedSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
+|lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [микрософттуннелконфигуратион](../resources/intune-mstunnel-microsofttunnelconfiguration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
