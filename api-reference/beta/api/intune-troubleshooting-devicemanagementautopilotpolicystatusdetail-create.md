@@ -1,35 +1,35 @@
 ---
 title: Создание deviceManagementAutopilotPolicyStatusDetail
-description: Создание объекта deviceManagementAutopilotPolicyStatusDetail.
+description: Создание нового объекта deviceManagementAutopilotPolicyStatusDetail.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dabf8f2a81a01a696a0402f1cb23771e82c89ce0
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: f3f2b6614d980911c35babfa71425a2e5b0ac7e3
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154987"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134201"
 ---
 # <a name="create-devicemanagementautopilotpolicystatusdetail"></a>Создание deviceManagementAutopilotPolicyStatusDetail
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание объекта [deviceManagementAutopilotPolicyStatusDetail.](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
+Создание нового [объекта deviceManagementAutopilotPolicyStatusDetail.](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,28 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предопределение представления объекта deviceManagementAutopilotPolicyStatusDetail в JSON.
+В корпусе запроса поставляем представление JSON для объекта deviceManagementAutopilotPolicyStatusDetail.
 
-В следующей таблице показаны свойства, необходимые при создании объекта deviceManagementAutopilotPolicyStatusDetail.
+В следующей таблице показаны свойства, необходимые при создании устройстваManagementAutopilotPolicyStatusDetail.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID объекта.|
-|displayName|String|Удобное имя политики.|
+|id|Строка|UUID объекта.|
+|displayName|Строка|Удобное имя политики.|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|Тип политики. Возможные значения: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|Состояние соответствия политике. Возможные значения: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|trackedOnEnrollmentStatus|Boolean|Указывает, отслеживался ли этот выпуск в рамках сеанса синхронизации регистрации при загрузке Autopilot|
-|lastReportedDateTime|DateTimeOffset|Timestamp of the reported policy status|
-|errorCode|Int32|Об ошибке, связанной с состоянием соответствия или выполнения политики. Код ошибки для состояния принудения имеет приоритет, если он существует.|
+|trackedOnEnrollmentStatus|Boolean|Указывает, отслеживалась ли эта пролиза в рамках сеанса синхронизации синхронизации с загрузкой автопилота.|
+|lastReportedDateTime|DateTimeOffset|Timestamp состояния политик, о чем сообщалось|
+|errorCode|Int32|Ошибка, связанная со статусом соответствия или правоприменения политики. Код ошибки для состояния правоприменения имеет приоритет, если он существует.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и `201 Created` [объект deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

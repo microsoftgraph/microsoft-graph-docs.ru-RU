@@ -1,35 +1,35 @@
 ---
-title: Обновление Виндовсфеатуреупдатепрофиле
-description: Обновление свойств объекта Виндовсфеатуреупдатепрофиле.
+title: Обновление windowsFeatureUpdateProfile
+description: Обновление свойств объекта windowsFeatureUpdateProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 230d2dc672a1f0c24caa712eba77e0cd595dc12d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 92ab58d8f3d42f9a942e24b2df0a679ac17a21a4
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295763"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134258"
 ---
-# <a name="update-windowsfeatureupdateprofile"></a>Обновление Виндовсфеатуреупдатепрофиле
+# <a name="update-windowsfeatureupdateprofile"></a>Обновление windowsFeatureUpdateProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .
+Обновление свойств объекта [windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,29 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)
 
-В следующей таблице приведены свойства, необходимые при создании [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).
+В следующей таблице показаны свойства, необходимые при создании [windowsFeatureUpdateProfile.](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
-|displayName|String|Отображаемое имя профиля.|
-|description|String|Описание профиля, указанного пользователем.|
-|феатуреупдатеверсион|String|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
-|createdDateTime|DateTimeOffset|Дата и время создания профиля.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого элемента обновления компонента.|
+|id|Строка|Идентификатор объекта.|
+|displayName|Строка|Имя отображения профиля.|
+|description|Строка|Описание профиля, указанного пользователем.|
+|featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|createdDateTime|DateTimeOffset|Время создания профиля.|
+|lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
+|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -73,7 +74,7 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
 Content-type: application/json
-Content-length: 269
+Content-length: 345
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -82,7 +83,8 @@ Content-length: 269
   "featureUpdateVersion": "Feature Update Version value",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
@@ -91,7 +93,7 @@ Content-length: 269
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 441
+Content-Length: 517
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -103,7 +105,8 @@ Content-Length: 441
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 

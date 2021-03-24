@@ -1,34 +1,34 @@
 ---
-title: Обновление Виндовсдефендераппликатионконтролсупплементалполици
-description: Обновление свойств объекта Виндовсдефендераппликатионконтролсупплементалполици.
+title: Обновление windowsDefenderApplicationControlSupplementalPolicy
+description: Обновление свойств объекта WindowsDefenderApplicationControlSupplementalPolicy.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a008f96bda8be55c2a7105ebebfa76672a085c24
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c6740654616d112db2d64910b5dd716111a582c0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226785"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134027"
 ---
-# <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Обновление Виндовсдефендераппликатионконтролсупплементалполици
+# <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Обновление windowsDefenderApplicationControlSupplementalPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .
+Обновление свойств объекта [WindowsDefenderApplicationControlSupplementalPolicy.](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,30 +44,30 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта WindowsDefenderApplicationControlSupplementalPolicy.](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)
 
-В следующей таблице приведены свойства, необходимые при создании [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md).
+В следующей таблице показаны свойства, необходимые при создании [windowsDefenderApplicationControlSupplementalPolicy.](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ для дополнительной политики Виндовсдефендераппликатионконтрол.|
-|displayName|String|Отображаемое имя дополнительной политики Виндовсдефендераппликатионконтрол.|
-|description|String|Описание дополнительной политики Виндовсдефендераппликатионконтрол.|
-|содержимое|Binary|Содержимое дополнительной политики Виндовсдефендераппликатионконтрол в формате массива байтов.|
-|контентфиленаме|String|Имя файла дополнительной политики Виндовсдефендераппликатионконтрол.|
-|version|String|Версия дополнительной политики Виндовсдефендераппликатионконтрол.|
-|креатиондатетиме|DateTimeOffset|Дата и время отправки дополнительной политики Виндовсдефендераппликатионконтрол.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения дополнительной политики Виндовсдефендераппликатионконтрол.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для данной дополнительной политики Виндовсдефендераппликатионконтрол.|
+|id|Строка|Ключ для дополнительной политики WindowsDefenderApplicationControl.|
+|displayName|Строка|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
+|description|Строка|Описание дополнительной политики WindowsDefenderApplicationControl.|
+|содержимое|Binary|Контент дополнительной политики WindowsDefenderApplicationControl в формате byte array.|
+|contentFileName|Строка|Имя файла дополнительного контента политики WindowsDefenderApplicationControl.|
+|version|String|Версия дополнительной политики WindowsDefenderApplicationControl.|
+|creationDateTime|DateTimeOffset|Дата и время отправки дополнительной политики WindowsDefenderApplicationControl.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики дополнительных приложений WindowsDefenderApplicationControl.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта дополнительной политики WindowsDefenderApplicationControl.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
