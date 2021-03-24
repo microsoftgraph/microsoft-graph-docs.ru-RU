@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45bb4504fc2d65a7d9284e15e73d6c5da575f881
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3bf17e10744dd5f2795ac0d5b116bf54419674da
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155316"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51139736"
 ---
 # <a name="update-mobileappdependency"></a>Обновление mobileAppDependency
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "50155316"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,30 +43,30 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса указав представление объекта [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) в JSON.
+В теле запроса поставляем представление JSON для [объекта mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)
+В следующей таблице показаны свойства, необходимые при создании [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ИД сущности отношения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|ИД целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|String|Отображаемое имя целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayVersion|String|Отображаемая версия целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetPublisher|String|Издатель целевого мобильного приложения. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или родительским. Наследуется [от mobileAppRelationship.](../resources/intune-apps-mobileapprelationship.md) Возможные значения: `child`, `parent`.|
-|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимостей между родительским и родительским приложениями. Возможные значения: `detect`, `autoInstall`.|
-|dependentAppCount|Int32|Общее количество приложений, которые напрямую или косвенно зависят от родительского приложения.|
-|dependsOnAppCount|Int32|Общее количество приложений, от которых непосредственно или косвенно зависит это приложение.|
+|id|Строка|ID сущности отношений. Унаследованный от [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|Строка|ID приложения целевого мобильного приложения. Унаследованный от [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|Строка|Имя отображения целевого мобильного приложения. Унаследованный от [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|Строка|Отображаемая версия целевого мобильного приложения. Унаследованный от [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|Строка|Издатель целевого мобильного приложения. Унаследованный от [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип отношений, указывающий, является ли цель родителем или ребенком. Наследуется [от mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Возможные значения: `child`, `parent`.|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип зависимости между родительскими и детскими приложениями. Возможные значения: `detect`, `autoInstall`.|
+|dependentAppCount|Int32|Общее число приложений, которые напрямую или косвенно зависят от родительского приложения.|
+|dependsOnAppCount|Int32|Общее число приложений, от которых напрямую или косвенно зависит детское приложение.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

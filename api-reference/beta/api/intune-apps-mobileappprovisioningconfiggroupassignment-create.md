@@ -1,34 +1,34 @@
 ---
-title: Создание К mobileappprovisioningconfiggroupassignment.
-description: Создание нового объекта К mobileappprovisioningconfiggroupassignment..
+title: Создание mobileAppProvisioningConfigGroupAssignment
+description: Создание нового объекта mobileAppProvisioningConfigGroupAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a338b082f98e5e74a88f7251c8cfd43a7aafb0a6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 173f8704ffb44750e3ef382160363dc6e1ce2e48
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49248310"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51139687"
 ---
-# <a name="create-mobileappprovisioningconfiggroupassignment"></a>Создание К mobileappprovisioningconfiggroupassignment.
+# <a name="create-mobileappprovisioningconfiggroupassignment"></a>Создание mobileAppProvisioningConfigGroupAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [к mobileappprovisioningconfiggroupassignment.](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) .
+Создание нового [объекта mobileAppProvisioningConfigGroupAssignment.](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,23 +43,23 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта К mobileappprovisioningconfiggroupassignment. в формате JSON.
+В теле запроса поставляем представление JSON для объекта mobileAppProvisioningConfigGroupAssignment.
 
-В следующей таблице приведены свойства, необходимые при создании К mobileappprovisioningconfiggroupassignment..
+В следующей таблице показаны свойства, необходимые при создании mobileAppProvisioningConfigGroupAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|таржетграупид|String|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
-|id|String|Ключ объекта.|
+|targetGroupId|Строка|ID группы AAD, в которой ориентирована конфигурация подготовка приложений.|
+|id|Строка|Ключ объекта.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [к mobileappprovisioningconfiggroupassignment.](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

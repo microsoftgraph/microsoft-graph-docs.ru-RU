@@ -5,30 +5,30 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a31fe8fcaaf27e37fc1119460e521ad18339dcee
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bc1edeade6d629fa2eecd1fb6bb7b29eb96a5619
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49247687"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51139393"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .
+Обновление свойств объекта [symantecCodeSigningCertificate.](../resources/intune-apps-symanteccodesigningcertificate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,31 +43,31 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта symantecCodeSigningCertificate.](../resources/intune-apps-symanteccodesigningcertificate.md)
 
-В следующей таблице приведены свойства, необходимые при создании [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).
+В следующей таблице показаны свойства, необходимые при создании [symantecCodeSigningCertificate.](../resources/intune-apps-symanteccodesigningcertificate.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|содержимое|Binary|Сертификат Code-Signing Windows Symantec в формате необработанных данных.|
-|status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
-|password|Строка|Пароль, необходимый для PFX-файла.|
+|id|Строка|Ключ объекта.|
+|содержимое|Binary|Сертификат Windows Symantec Code-Signing в формате необработанных данных.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние Cert Provisioned или not Provisioned. Возможные значения: `notProvisioned`, `provisioned`.|
+|password|Строка|Пароль, необходимый для файла .pfx.|
 |subjectName|String|Имя субъекта для сертификата.|
-|subject|String|Значение субъекта для сертификата.|
-|иссуернаме|String|Имя поставщика сертификата.|
-|имени|String|Значение издателя для сертификата.|
-|expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
-|уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
+|subject|String|Значение Subject для сертификата.|
+|issuerName|Строка|Имя эмитента для сертификата.|
+|эмитент|Строка|Значение Issuer для сертификата.|
+|expirationDateTime|DateTimeOffset|Срок действия сертификата.|
+|uploadDateTime|DateTimeOffset|Тип cert CodeSigning как Symantec Cert.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
