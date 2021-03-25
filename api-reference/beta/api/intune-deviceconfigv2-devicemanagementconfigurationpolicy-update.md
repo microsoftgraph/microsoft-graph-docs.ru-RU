@@ -1,34 +1,34 @@
 ---
-title: Обновление Девицеманажементконфигуратионполици
-description: Обновление свойств объекта Девицеманажементконфигуратионполици.
+title: Обновление deviceManagementConfigurationPolicy
+description: Обновление свойств объекта deviceManagementConfigurationPolicy.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cc4ba12c9c989f1066d7ce690135f4fc5499479
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 68cc244764c3675145ea2019678ddc61af873db8
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242304"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150880"
 ---
-# <a name="update-devicemanagementconfigurationpolicy"></a>Обновление Девицеманажементконфигуратионполици
+# <a name="update-devicemanagementconfigurationpolicy"></a>Обновление deviceManagementConfigurationPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементконфигуратионполици](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) .
+Обновление свойств объекта [deviceManagementConfigurationPolicy.](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,32 +43,32 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементконфигуратионполици](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceManagementConfigurationPolicy.](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементконфигуратионполици](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваManagementConfigurationPolicy.](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ документа политики. Создается автоматически.|
+|id|Строка|Ключ документа политики. Автоматически созданный.|
 |name|String|Имя политики|
-|description|String|Описание политики|
-|Embedded|[девицеманажементконфигуратионплатформс](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
-|технологически|[девицеманажементконфигуратионтечнологиес](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`.|
+|description|Строка|Описание политики|
+|платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
+|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
 |settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
-|креатионсаурце|String|Источник создания политики|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|creationSource|Строка|Источник создания политики|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементконфигуратионполици](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,34 +1,34 @@
 ---
-title: Обновление Девицеманажементскриптрунсуммари
-description: Обновление свойств объекта Девицеманажементскриптрунсуммари.
+title: Обновление deviceManagementScriptRunSummary
+description: Обновление свойств объекта deviceManagementScriptRunSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ff9ae6493fb61bc29180d62ffcb36760c128c31
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 58087ebd6c58607ef37a1326841fa2e47ba18452
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49228808"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150390"
 ---
-# <a name="update-devicemanagementscriptrunsummary"></a>Обновление Девицеманажементскриптрунсуммари
+# <a name="update-devicemanagementscriptrunsummary"></a>Обновление deviceManagementScriptRunSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) .
+Обновление свойств объекта [deviceManagementScriptRunSummary.](../resources/intune-devices-devicemanagementscriptrunsummary.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,26 +45,26 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceManagementScriptRunSummary.](../resources/intune-devices-devicemanagementscriptrunsummary.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваManagementScriptRunSummary.](../resources/intune-devices-devicemanagementscriptrunsummary.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Key объекта сводки запуска сценария управления устройствами. Это свойство доступно только для чтения.|
-|сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
-|errorDeviceCount|Int32|Количество устройств с ошибками.|
-|сукцессусеркаунт|Int32|Число пользователей Success.|
-|errorUserCount|Int32|Количество пользователей с ошибками.|
+|id|Строка|Клавиша скрипта управления устройствами запустит объект сводки. Это свойство доступно только для чтения.|
+|successDeviceCount|Int32|Количество устройств успешности.|
+|errorDeviceCount|Int32|Количество устройств ошибки.|
+|successUserCount|Int32|Количество пользователей успешности.|
+|errorUserCount|Int32|Количество пользователей ошибки.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

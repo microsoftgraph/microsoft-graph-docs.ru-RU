@@ -1,34 +1,34 @@
 ---
-title: Обновление Девицешеллскрипт
-description: Обновление свойств объекта Девицешеллскрипт.
+title: Обновление deviceShellScript
+description: Обновление свойств объекта deviceShellScript.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2791932af6b9c9e4963dd5fa1da66a32876c1541
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b340b51afda2b4d06f86456e34f36a5347fa36f3
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49228514"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150229"
 ---
-# <a name="update-deviceshellscript"></a>Обновление Девицешеллскрипт
+# <a name="update-deviceshellscript"></a>Обновление deviceShellScript
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .
+Обновление свойств объекта [deviceShellScript.](../resources/intune-devices-deviceshellscript.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,33 +43,33 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceShellScript.](../resources/intune-devices-deviceshellscript.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваShellScript.](../resources/intune-devices-deviceshellscript.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ексекутионфрекуенци|Длительность|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
-|ретрикаунт|Int32|Количество повторных попыток выполнения скрипта в случае сбоя|
-|блоккексекутионнотификатионс|Boolean|Не уведомляет пользователя о выполнении сценария|
-|id|String|Уникальный идентификатор для сценария управления устройствами.|
-|displayName|String|Имя скрипта управления устройствами.|
-|description|String|Необязательное описание скрипта управления устройствами.|
-|скриптконтент|Binary|Содержимое скрипта.|
+|executionFrequency|Duration|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
+|retryCount|Int32|Количество случаев повторного и повторного и повторного повторного и повторного списания сценария|
+|blockExecutionNotifications|Boolean|Не уведомляет пользователя о выполнении сценария|
+|id|Строка|Уникальный идентификатор для сценария управления устройствами.|
+|displayName|Строка|Имя сценария управления устройствами.|
+|description|Строка|Необязательное описание сценария управления устройствами.|
+|scriptContent|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|fileName|String|Имя файла скрипта.|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект deviceShellScript](../resources/intune-devices-deviceshellscript.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

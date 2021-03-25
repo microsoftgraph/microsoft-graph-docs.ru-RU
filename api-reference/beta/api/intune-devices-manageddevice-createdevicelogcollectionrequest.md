@@ -1,22 +1,22 @@
 ---
-title: действие Креатедевицелогколлектионрекуест
+title: createDeviceLogCollectionRequest action
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da026dd038043cbc0a4df3585e2bcb70384cd98d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fb303df2b0590d1986b7853992a2c2aa2c741573
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49310540"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150117"
 ---
-# <a name="createdevicelogcollectionrequest-action"></a>действие Креатедевицелогколлектионрекуест
+# <a name="createdevicelogcollectionrequest-action"></a>createDeviceLogCollectionRequest action
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49310540"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,12 +59,12 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|TemplateType — тип|[deviceLogCollectionRequest](../resources/intune-devices-devicelogcollectionrequest.md)|Пока не задокументировано.|
+|templateType|[deviceLogCollectionRequest](../resources/intune-devices-devicelogcollectionrequest.md)|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-При успешном выполнении это действие возвращает `200 OK` код отклика и объект [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) в тексте отклика.
+В случае успеха это действие возвращает код отклика и `200 OK` [устройствоLogCollectionResponse в](../resources/intune-devices-devicelogcollectionresponse.md) тексте ответа.
 
 ## <a name="example"></a>Пример
 

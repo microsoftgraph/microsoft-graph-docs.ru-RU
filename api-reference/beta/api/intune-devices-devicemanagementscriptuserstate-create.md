@@ -1,34 +1,34 @@
 ---
-title: Создание Девицеманажементскриптусерстате
-description: Создание нового объекта Девицеманажементскриптусерстате.
+title: Создание deviceManagementScriptUserState
+description: Создайте новый объект deviceManagementScriptUserState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09e7d0a093c870155b14ac8db4424a127ffeda12
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: db11481f61661070fff23d9b6edc56839c55a601
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49228787"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150369"
 ---
-# <a name="create-devicemanagementscriptuserstate"></a>Создание Девицеманажементскриптусерстате
+# <a name="create-devicemanagementscriptuserstate"></a>Создание deviceManagementScriptUserState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md) .
+Создайте новый [объект deviceManagementScriptUserState.](../resources/intune-devices-devicemanagementscriptuserstate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,25 +45,25 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Девицеманажементскриптусерстате в формате JSON.
+В теле запроса укажи представление JSON для объекта deviceManagementScriptUserState.
 
-В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптусерстате.
+В следующей таблице показаны свойства, необходимые при создании устройстваManagementScriptUserState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния пользователя скрипта управления устройствами. Это свойство доступно только для чтения.|
-|сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
-|errorDeviceCount|Int32|Количество устройств с ошибками для определенного пользователя.|
-|userPrincipalName|String|Имя участника, указанного пользователем.|
+|id|Строка|Ключ пользовательского состояния скрипта управления устройствами. Это свойство доступно только для чтения.|
+|successDeviceCount|Int32|Количество устройств успешности для определенного пользователя.|
+|errorDeviceCount|Int32|Количество устройств ошибки для определенного пользователя.|
+|userPrincipalName|String|Имя принципа пользователя конкретного пользователя.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,35 +1,35 @@
 ---
-title: Создание Мобилеаппинтентандстате
-description: Создание нового объекта Мобилеаппинтентандстате.
+title: Создание mobileAppIntentAndState
+description: Создание нового объекта mobileAppIntentAndState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 16b30c08bcac15344aca2dca266ab117fab643bb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e6cc7b00e0220a0337547ac994b266ce951961c9
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49289176"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51151860"
 ---
-# <a name="create-mobileappintentandstate"></a>Создание Мобилеаппинтентандстате
+# <a name="create-mobileappintentandstate"></a>Создание mobileAppIntentAndState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) .
+Создание нового [объекта mobileAppIntentAndState.](../resources/intune-troubleshooting-mobileappintentandstate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,25 +43,25 @@ POST /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Мобилеаппинтентандстате в формате JSON.
+В теле запроса поставляем представление JSON для объекта mobileAppIntentAndState.
 
-В следующей таблице приведены свойства, необходимые при создании Мобилеаппинтентандстате.
+В следующей таблице показаны свойства, необходимые при создании mobileAppIntentAndState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID объекта.|
+|id|Строка|UUID объекта.|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
-|мобилеапплист|Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список целей и состояний полезных данных для клиента.|
+|mobileAppList|[коллекция mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список намерений и состояния полезной нагрузки для клиента.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
