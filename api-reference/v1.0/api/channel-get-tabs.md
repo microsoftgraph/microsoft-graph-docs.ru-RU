@@ -1,16 +1,16 @@
 ---
-title: Получение вкладки в канале
-description: 'Получение свойств и связей указанной вкладки. '
+title: Получение вкладки на канале
+description: 'Извлечение свойств и связей указанной вкладки. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 05ca22544b228f8661e2ea77a0d716f4edf3ac29
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: dedb3350b5e5ec32d26a56e33d01d1de04fdb094
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607432"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202907"
 ---
 # <a name="get-tab"></a>Получение вкладки
 
@@ -18,16 +18,16 @@ ms.locfileid: "49607432"
 
 
 
-Получение свойств и связей указанной [вкладки](../resources/teamstab.md) в [канале](../resources/channel.md) в [группе](../resources/team.md). 
+Извлечение свойств и связей [](../resources/teamstab.md) указанной вкладки в [канале](../resources/channel.md) в [команде.](../resources/team.md) 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab. Read. ALL, TeamsTab. Реадвритефортеам, TeamsTab. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab. Read. Group *, TeamsTab. ReadWrite. Group*, TeamsTab. Read. ALL, TeamsTab. Реадвритефортеам. ALL, TeamsTab. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | TeamsTab.Read.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -40,7 +40,7 @@ GET /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает $select и $expand [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Этот метод поддерживает параметры $select и $expand [OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -52,17 +52,17 @@ GET /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Tab](../resources/teamstab.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [вкладки](../resources/teamstab.md) в тексте ответа.
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
