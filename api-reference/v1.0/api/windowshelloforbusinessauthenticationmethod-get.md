@@ -5,45 +5,45 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 892c94dc8d5704e78910f323d6940e23e9b8471d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9d24d3200574551601f3d7beb65ce299de505759
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964838"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202199"
 ---
-# <a name="get-windowshelloforbusinessauthenticationmethod"></a><span data-ttu-id="421ad-103">Get windowsHelloForBusinessAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="421ad-103">Get windowsHelloForBusinessAuthenticationMethod</span></span>
-<span data-ttu-id="421ad-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="421ad-104">Namespace: microsoft.graph</span></span>
+# <a name="get-windowshelloforbusinessauthenticationmethod"></a><span data-ttu-id="bd09d-103">Get windowsHelloForBusinessAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="bd09d-103">Get windowsHelloForBusinessAuthenticationMethod</span></span>
+<span data-ttu-id="bd09d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bd09d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="421ad-105">Ознакомьтесь с свойствами и отношениями [объекта windowsHelloForBusinessAuthenticationMethod.](../resources/windowshelloforbusinessauthenticationmethod.md)</span><span class="sxs-lookup"><span data-stu-id="421ad-105">Read the properties and relationships of a [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) object.</span></span>
+<span data-ttu-id="bd09d-105">Ознакомьтесь с свойствами и отношениями [объекта windowsHelloForBusinessAuthenticationMethod.](../resources/windowshelloforbusinessauthenticationmethod.md)</span><span class="sxs-lookup"><span data-stu-id="bd09d-105">Read the properties and relationships of a [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="421ad-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="421ad-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bd09d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bd09d-106">Permissions</span></span>
 
-<span data-ttu-id="421ad-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="421ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bd09d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bd09d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-acting-on-self"></a><span data-ttu-id="421ad-109">Разрешения, действующие на себя</span><span class="sxs-lookup"><span data-stu-id="421ad-109">Permissions acting on self</span></span>
+### <a name="permissions-acting-on-self"></a><span data-ttu-id="bd09d-109">Разрешения, действующие на себя</span><span class="sxs-lookup"><span data-stu-id="bd09d-109">Permissions acting on self</span></span>
 
-|<span data-ttu-id="421ad-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="421ad-110">Permission type</span></span>      | <span data-ttu-id="421ad-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="421ad-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bd09d-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bd09d-110">Permission type</span></span>      | <span data-ttu-id="bd09d-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bd09d-111">Permissions (from least to most privileged)</span></span>              |
 |:---------------------------------------|:-------------------------|
-| <span data-ttu-id="421ad-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="421ad-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="421ad-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="421ad-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span></span> |
-| <span data-ttu-id="421ad-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="421ad-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="421ad-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="421ad-115">Not supported.</span></span> |
-| <span data-ttu-id="421ad-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="421ad-116">Application</span></span>                            | <span data-ttu-id="421ad-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="421ad-117">Not supported.</span></span> |
+| <span data-ttu-id="bd09d-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bd09d-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="bd09d-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bd09d-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span></span> |
+| <span data-ttu-id="bd09d-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bd09d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bd09d-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bd09d-115">Not supported.</span></span> |
+| <span data-ttu-id="bd09d-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bd09d-116">Application</span></span>                            | <span data-ttu-id="bd09d-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bd09d-117">Not supported.</span></span> |
 
-### <a name="permissions-acting-on-other-users"></a><span data-ttu-id="421ad-118">Разрешения, действующие на других пользователей</span><span class="sxs-lookup"><span data-stu-id="421ad-118">Permissions acting on other users</span></span>
+### <a name="permissions-acting-on-other-users"></a><span data-ttu-id="bd09d-118">Разрешения, действующие на других пользователей</span><span class="sxs-lookup"><span data-stu-id="bd09d-118">Permissions acting on other users</span></span>
 
-|<span data-ttu-id="421ad-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="421ad-119">Permission type</span></span>      | <span data-ttu-id="421ad-120">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="421ad-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bd09d-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bd09d-119">Permission type</span></span>      | <span data-ttu-id="bd09d-120">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bd09d-120">Permissions (from least to most privileged)</span></span>              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="421ad-121">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="421ad-121">Delegated (work or school account)</span></span>     | <span data-ttu-id="421ad-122">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="421ad-122">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="421ad-123">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="421ad-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="421ad-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="421ad-124">Not supported.</span></span> |
-| <span data-ttu-id="421ad-125">Для приложений</span><span class="sxs-lookup"><span data-stu-id="421ad-125">Application</span></span>                            | <span data-ttu-id="421ad-126">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="421ad-126">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="bd09d-121">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bd09d-121">Delegated (work or school account)</span></span>     | <span data-ttu-id="bd09d-122">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bd09d-122">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="bd09d-123">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bd09d-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bd09d-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bd09d-124">Not supported.</span></span> |
+| <span data-ttu-id="bd09d-125">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bd09d-125">Application</span></span>                            | <span data-ttu-id="bd09d-126">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bd09d-126">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
 
-<span data-ttu-id="421ad-127">Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="421ad-127">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
-* <span data-ttu-id="421ad-128">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="421ad-128">Global admin</span></span>
-* <span data-ttu-id="421ad-129">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="421ad-129">Global reader</span></span>
-* <span data-ttu-id="421ad-130">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="421ad-130">Privileged authentication admin</span></span>
-* <span data-ttu-id="421ad-131">Администратор проверки подлинности (видит только номера телефонов в масках)</span><span class="sxs-lookup"><span data-stu-id="421ad-131">Authentication admin (only sees masked phone numbers)</span></span>
+<span data-ttu-id="bd09d-127">Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="bd09d-127">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+* <span data-ttu-id="bd09d-128">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="bd09d-128">Global admin</span></span>
+* <span data-ttu-id="bd09d-129">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="bd09d-129">Global reader</span></span>
+* <span data-ttu-id="bd09d-130">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="bd09d-130">Privileged authentication admin</span></span>
+* <span data-ttu-id="bd09d-131">Администратор проверки подлинности (видит только номера телефонов в масках)</span><span class="sxs-lookup"><span data-stu-id="bd09d-131">Authentication admin (only sees masked phone numbers)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="421ad-132">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="421ad-132">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bd09d-132">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bd09d-132">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -54,25 +54,27 @@ GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAu
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="421ad-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="421ad-133">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bd09d-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="bd09d-133">Optional query parameters</span></span>
 
-<span data-ttu-id="421ad-134">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="421ad-134">Not supported.</span></span>
+<span data-ttu-id="bd09d-134">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bd09d-134">Not supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="421ad-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="421ad-135">Request headers</span></span>
-|<span data-ttu-id="421ad-136">Имя</span><span class="sxs-lookup"><span data-stu-id="421ad-136">Name</span></span>|<span data-ttu-id="421ad-137">Описание</span><span class="sxs-lookup"><span data-stu-id="421ad-137">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bd09d-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bd09d-135">Request headers</span></span>
+|<span data-ttu-id="bd09d-136">Имя</span><span class="sxs-lookup"><span data-stu-id="bd09d-136">Name</span></span>|<span data-ttu-id="bd09d-137">Описание</span><span class="sxs-lookup"><span data-stu-id="bd09d-137">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="421ad-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="421ad-138">Authorization</span></span>|<span data-ttu-id="421ad-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="421ad-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="bd09d-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bd09d-138">Authorization</span></span>|<span data-ttu-id="bd09d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bd09d-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="421ad-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="421ad-141">Request body</span></span>
-<span data-ttu-id="421ad-142">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="421ad-142">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bd09d-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bd09d-141">Request body</span></span>
+<span data-ttu-id="bd09d-142">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="bd09d-142">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="421ad-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="421ad-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bd09d-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="bd09d-143">Response</span></span>
 
-<span data-ttu-id="421ad-144">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="421ad-144">If successful, this method returns a `200 OK` response code and a [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) object in the response body.</span></span>
+<span data-ttu-id="bd09d-144">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="bd09d-144">If successful, this method returns a `200 OK` response code and a [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="421ad-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="421ad-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="bd09d-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="bd09d-145">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="421ad-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="421ad-146">Request</span></span>
+### <a name="request"></a><span data-ttu-id="bd09d-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="bd09d-146">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="bd09d-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="bd09d-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_windowshelloforbusinessauthenticationmethod"
@@ -81,9 +83,27 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 ``` http
 GET https://graph.microsoft.com/v1.0/users/annie@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
+# <a name="c"></a>[<span data-ttu-id="bd09d-148">C#</span><span class="sxs-lookup"><span data-stu-id="bd09d-148">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-windowshelloforbusinessauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="421ad-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="421ad-147">Response</span></span>
-<span data-ttu-id="421ad-148">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="421ad-148">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="bd09d-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bd09d-149">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-windowshelloforbusinessauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="bd09d-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bd09d-150">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-windowshelloforbusinessauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="bd09d-151">Java</span><span class="sxs-lookup"><span data-stu-id="bd09d-151">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-windowshelloforbusinessauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="bd09d-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="bd09d-152">Response</span></span>
+<span data-ttu-id="bd09d-153">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="bd09d-153">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
