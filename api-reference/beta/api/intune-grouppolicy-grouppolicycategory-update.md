@@ -1,35 +1,35 @@
 ---
-title: Обновление Граупполицикатегори
-description: Обновление свойств объекта Граупполицикатегори.
+title: Update groupPolicyCategory
+description: Обновление свойств объекта groupPolicyCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e766f9742a04197ea5750ee727040754c034f3e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0a70edcb1f05ceb19a7dbb7a65d2d4b501a724dc
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49309119"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153484"
 ---
-# <a name="update-grouppolicycategory"></a>Обновление Граупполицикатегори
+# <a name="update-grouppolicycategory"></a>Update groupPolicyCategory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) .
+Обновление свойств объекта [groupPolicyCategory.](../resources/intune-grouppolicy-grouppolicycategory.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,25 +46,25 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта GroupPolicyCategory.](../resources/intune-grouppolicy-grouppolicycategory.md)
 
-В следующей таблице приведены свойства, необходимые при создании [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md).
+В следующей таблице показаны свойства, необходимые при создании [groupPolicyCategory.](../resources/intune-grouppolicy-grouppolicycategory.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Идентификатор строки отображаемого имени категории|
-|Корень|Boolean|Определяет, является ли категория корневой категорией|
-|id|String|Ключ объекта.|
+|displayName|Строка|Строковой id имени отображения категории|
+|isRoot|Boolean|Определяет, является ли категория корневой.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект GroupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

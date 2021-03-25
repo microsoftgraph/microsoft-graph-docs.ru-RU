@@ -1,34 +1,34 @@
 ---
-title: Создание Микрософттуннелсите
-description: Создание нового объекта Микрософттуннелсите.
+title: Создание microsoftTunnelSite
+description: Создайте новый объект microsoftTunnelSite.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f1604133399aeb9f7a5787b195a3680f398c04c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0f8f6eb29565ead693cc94d95cb0ad59ba4e15e7
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301957"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152966"
 ---
-# <a name="create-microsofttunnelsite"></a>Создание Микрософттуннелсите
+# <a name="create-microsofttunnelsite"></a>Создание microsoftTunnelSite
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [микрософттуннелсите](../resources/intune-mstunnel-microsofttunnelsite.md) .
+Создайте новый [объект microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,26 +43,26 @@ POST /deviceManagement/microsoftTunnelSites
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Микрософттуннелсите в формате JSON.
+В теле запроса устройте представление JSON для объекта microsoftTunnelSite.
 
-В следующей таблице приведены свойства, необходимые при создании Микрософттуннелсите.
+В следующей таблице показаны свойства, необходимые при создании microsoftTunnelSite.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор Микрософттуннелсите|
-|displayName|String|Отображаемое имя Микрософттуннелсите|
-|description|String|Описание Микрософттуннелсите|
-|публикаддресс|String|Имя или IP-адрес общедоступного домена Микрософттуннелсите|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|id|Строка|Id MicrosoftTunnelSite|
+|displayName|Строка|Имя отображения MicrosoftTunnelSite|
+|description|Строка|Описание MicrosoftTunnelSite|
+|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [микрософттуннелсите](../resources/intune-mstunnel-microsofttunnelsite.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

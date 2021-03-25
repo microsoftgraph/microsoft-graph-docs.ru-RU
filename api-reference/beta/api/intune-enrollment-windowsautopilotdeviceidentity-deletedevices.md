@@ -1,18 +1,18 @@
 ---
-title: Действие assign
+title: deleteDevices action
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52d066e80372a8cc81cccec8b47f15ba10a1b8a2
+ms.openlocfilehash: d790acee9d501391c74ebfc1d299ca6fe85ae831
 ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153456"
+ms.locfileid: "51159464"
 ---
-# <a name="assign-action"></a>Действие назначения
+# <a name="deletedevices-action"></a>deleteDevices action
 
 Пространство имен: microsoft.graph
 
@@ -37,7 +37,8 @@ ms.locfileid: "51153456"
 }
 -->
 ``` http
-POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/assign
+POST /deviceManagement/windowsAutopilotDeviceIdentities/deleteDevices
+POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/deleteDevices
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -53,36 +54,26 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/as
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|[коллекция groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Пока не задокументировано.|
+|serialNumbers|Коллекция строк|Н/Д|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения это действие возвращает код ответа и `200 OK` [коллекцию groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) в тексте ответа.
+В случае успеха это действие возвращает код ответа и удаленную `200 OK` [коллекциюWindowsAutopilotDeviceState](../resources/intune-enrollment-deletedwindowsautopilotdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/deleteDevices
 
 Content-type: application/json
-Content-length: 581
+Content-length: 59
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.groupPolicyConfigurationAssignment",
-      "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      }
-    }
+  "serialNumbers": [
+    "Serial Numbers value"
   ]
 }
 ```
@@ -92,20 +83,16 @@ Content-length: 581
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 575
+Content-Length: 301
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.groupPolicyConfigurationAssignment",
-      "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      }
+      "@odata.type": "microsoft.graph.deletedWindowsAutopilotDeviceState",
+      "serialNumber": "Serial Number value",
+      "deviceRegistrationId": "Device Registration Id value",
+      "deletionState": "failed",
+      "errorMessage": "Error Message value"
     }
   ]
 }

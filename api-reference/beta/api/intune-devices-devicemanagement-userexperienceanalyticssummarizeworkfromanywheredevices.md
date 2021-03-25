@@ -1,18 +1,18 @@
 ---
-title: Get deviceManagementDomainJoinConnector
-description: Чтение свойств и связей объекта deviceManagementDomainJoinConnector.
+title: функция userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a092ca1add44a4cb676dac1d3d140fc3a3f8f779
+ms.openlocfilehash: 5d953398b4e9df606971b560315c21ed2cd3c8c5
 ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152805"
+ms.locfileid: "51159456"
 ---
-# <a name="get-devicemanagementdomainjoinconnector"></a>Get deviceManagementDomainJoinConnector
+# <a name="userexperienceanalyticssummarizeworkfromanywheredevices-function"></a>функция userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "51152805"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта deviceManagementDomainJoinConnector.](../resources/intune-odj-devicemanagementdomainjoinconnector.md)
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,13 +37,10 @@ ms.locfileid: "51152805"
 }
 -->
 ``` http
-GET /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorId}
+GET /deviceManagement/userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
@@ -53,14 +50,14 @@ GET /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorI
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) в тексте ответа.
+В случае успешной работы эта функция возвращает код ответа и `200 OK` [userExperienceAnalyticsWorkFromAnywhereDevicesSummary](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,16 +65,26 @@ GET https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 315
+Content-Length: 758
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementDomainJoinConnector",
-    "id": "77296cf7-6cf7-7729-f76c-2977f76c2977",
-    "displayName": "Display Name value",
-    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
-    "state": "error",
-    "version": "Version value"
+    "@odata.type": "microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevicesSummary",
+    "autopilotDevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
+      "devicesNotAutopilotRegistered": 13,
+      "devicesWithoutAutopilotProfileAssigned": 6
+    },
+    "cloudManagementDevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
+      "coManagedDeviceCount": 4,
+      "intuneDeviceCount": 1,
+      "tenantAttachDeviceCount": 7
+    },
+    "windows10DevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
+      "unsupportedOSversionDeviceCount": 15
+    }
   }
 }
 ```

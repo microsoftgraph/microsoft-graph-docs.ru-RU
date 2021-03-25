@@ -1,35 +1,35 @@
 ---
-title: Получение windowsAutopilotDeviceIdentity
+title: Get windowsAutopilotDeviceIdentity
 description: Чтение свойств и связей объекта windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ac585ee387d51bab54d6cd5b0e519131a6d4da6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9856a471113d1cab2fc5c4f9d5c0dd2af79acfa5
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49309434"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153813"
 ---
-# <a name="get-windowsautopilotdeviceidentity"></a>Получение windowsAutopilotDeviceIdentity
+# <a name="get-windowsautopilotdeviceidentity"></a>Get windowsAutopilotDeviceIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
+Чтение свойств и связей объекта [windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,14 +47,14 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1187
+Content-Length: 1189
 
 {
   "value": {
@@ -78,7 +78,6 @@ Content-Length: 1187
     "deploymentProfileAssignmentStatus": "assignedInSync",
     "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
     "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-    "orderIdentifier": "Order Identifier value",
     "groupTag": "Group Tag value",
     "purchaseOrderIdentifier": "Purchase Order Identifier value",
     "serialNumber": "Serial Number value",
@@ -93,6 +92,7 @@ Content-Length: 1187
     "skuNumber": "Sku Number value",
     "systemFamily": "System Family value",
     "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+    "azureAdDeviceId": "Azure Ad Device Id value",
     "managedDeviceId": "Managed Device Id value",
     "displayName": "Display Name value"
   }

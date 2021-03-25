@@ -1,34 +1,34 @@
 ---
-title: Создание Усерпфксцертификате
-description: Создание нового объекта Усерпфксцертификате.
+title: Создание userPFXCertificate
+description: Создайте новый объект userPFXCertificate.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fc7dc63c771714079ee9a3b8d3e5c36cbc44095
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2f8b60d952f4d9ab8013636541a647a49ffdc05d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49270031"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152252"
 ---
-# <a name="create-userpfxcertificate"></a>Создание Усерпфксцертификате
+# <a name="create-userpfxcertificate"></a>Создание userPFXCertificate
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) .
+Создайте новый [объект userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,34 +43,34 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Усерпфксцертификате в формате JSON.
+В теле запроса поставляем представление JSON для объекта userPFXCertificate.
 
-В следующей таблице приведены свойства, необходимые при создании Усерпфксцертификате.
+В следующей таблице показаны свойства, необходимые при создании пользователяPFXCertificate.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
-|startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
-|expirationDateTime|DateTimeOffset|Дата и время действия сертификата.|
-|providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
-|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
-|паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
-|енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
-|createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|
+|id|Строка|Уникальный идентификатор для сертификата PFX.|
+|отпечатки пальцев|Строка|Отпечатки sha-1 сертификата PFX.|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Предназначение сертификата с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|userPrincipalName|String|Имя пользователя сертификата PFX.|
+|startDateTime|DateTimeOffset|Дата начала действия сертификата.|
+|expirationDateTime|DateTimeOffset|Срок действия сертификата.|
+|providerName|Строка|Поставщик криптографии, используемый для шифрования этого blob.|
+|keyName|Строка|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком при шифровании и расшифровке. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|зашифрованныйPfxBlob|Binary|Зашифрованный BLOB PFX.|
+|зашифрованныйPfxPassword|Строка|Зашифрованный пароль PFX.|
+|createdDateTime|DateTimeOffset|Дата и время импорта этого сертификата PFX.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого сертификата PFX.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и `201 Created` [объект userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

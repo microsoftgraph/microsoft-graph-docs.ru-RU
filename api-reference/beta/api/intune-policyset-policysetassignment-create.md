@@ -1,35 +1,35 @@
 ---
-title: Создание policySetAssignment
-description: Создание объекта policySetAssignment.
+title: Создание политикиSetAssignment
+description: Создание нового объекта policySetAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c2616cecf5cd66ec008dc4754670e916af1718b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 66cc853d9fc34a2de3a155e6a0dd6ddce2f5f815
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153762"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152378"
 ---
-# <a name="create-policysetassignment"></a>Создание policySetAssignment
+# <a name="create-policysetassignment"></a>Создание политикиSetAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание объекта [policySetAssignment.](../resources/intune-policyset-policysetassignment.md)
+Создание нового [объекта policySetAssignment.](../resources/intune-policyset-policysetassignment.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,24 +43,24 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта policySetAssignment в JSON.
+В теле запроса поставляем представление JSON для объекта policySetAssignment.
 
 В следующей таблице показаны свойства, необходимые при создании политикиSetAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ policySetAssignment.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения policySetAssignment.|
+|id|Строка|Клавиша PolicySetAssignment.|
+|lastModifiedDateTime|DateTimeOffset|Последнее измененное время policySetAssignment.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевая группа PolicySetAssignment|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [policySetAssignment](../resources/intune-policyset-policysetassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и `201 Created` объект [policySetAssignment](../resources/intune-policyset-policysetassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
