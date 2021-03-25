@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29be6117b229da1d5b3921db7d52ae0e1897741c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b7c9e4b706e848218d55ab1898a03096f2d5aba9
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948257"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201108"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -31,17 +31,17 @@ ms.locfileid: "50948257"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
 > **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
-В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от объема импортируемых данных.
+В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/messages/{id}/replies
+POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -56,11 +56,13 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 
 В случае успешной работы этот метод возвращает `201 Created` код ответа с [созданным](../resources/chatmessage.md) сообщением.
 
-## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Пример 1. Создание нового ответа на chatMessage
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Пример 1. Создание нового ответа на chatMessage
 
 Дополнительный список примеров см. в [странице Create chatMessage в канале или чате.](chatmessage-post.md)
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -70,7 +72,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 Content-type: application/json
 
 {
@@ -99,9 +101,9 @@ Content-type: application/json
 
 ---
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -114,10 +116,10 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages('id-value')/replies/$entity",
-    "id": "id-value",
-    "replyToId": null,
-    "etag": "id-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+    "id": "1591039710682",
+    "replyToId": "1590776551682",
+    "etag": "1591039710682",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
     "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
@@ -133,7 +135,7 @@ Content-length: 160
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
+            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
             "displayName": "Joh Doe",
             "userIdentityType": "aadUser"
         }
@@ -162,36 +164,20 @@ Content-length: 160
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 
 {
-   "replyToId":null,
-   "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
-   "lastModifiedDateTime":null,
-   "deleted":false,
-   "subject":null,
-   "summary":null,
-   "importance":"normal",
-   "locale":"en-us",
-   "policyViolation":null,
    "from":{
-      "application":null,
-      "device":null,
-      "conversation":null,
       "user":{
-         "id":"id-value",
-         "displayName":"Joh Doe",
-         "userIdentityType":"aadUser"
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+         "displayName":"Joh Doe"
       }
    },
    "body":{
       "contentType":"html",
       "content":"Hello World"
-   },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
+   }
 }
 ```
 
@@ -209,10 +195,10 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams/{teamId}/channels/{channelId}/messages/$entity",
-   "id":"id-value",
-   "replyToId":null,
-   "etag":"id-value",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+   "id":"1591039710682",
+   "replyToId":"1590776551682",
+   "etag":"1591039710682",
    "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
    "lastModifiedDateTime":null,
@@ -227,7 +213,7 @@ HTTP/1.1 200 OK
       "device":null,
       "conversation":null,
       "user":{
-         "id":"id-value",
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
          "displayName":"Joh Doe",
          "userIdentityType":"aadUser"
       }

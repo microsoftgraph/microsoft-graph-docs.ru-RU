@@ -1,16 +1,16 @@
 ---
 title: Удаление канала
-description: Удаление канала.
+description: Удалите канал.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5511c19f23be69a2aad14acc35bbef9c3710fc88
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c804f607d5c3919036ebeee01319cf591fa5b966
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959312"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200975"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -27,9 +27,9 @@ ms.locfileid: "48959312"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel. Delete. Group *, Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись) | Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | Channel.Delete.Group*, Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
@@ -38,7 +38,7 @@ ms.locfileid: "48959312"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/channels/{id}
+DELETE /teams/{team-id}/channels/{channel-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |

@@ -1,26 +1,26 @@
 ---
-title: 'команда: Комплетемигратион'
-description: Завершите Перенос внешних сообщений, удалив из команды режим миграции.
+title: 'команда: completeMigration'
+description: Выполните миграцию внешних сообщений, удалив режим миграции из группы.
 localization_priority: Normal
-author: laujan
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3422c67c34c62fd037b2acf214c4664b21f83900
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6edd393475eecba7da736fe0c72571ffc244b73e
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951509"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200765"
 ---
-# <a name="team-completemigration"></a>команда: Комплетемигратион
+# <a name="team-completemigration"></a>команда: completeMigration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Завершите процесс переноса сообщений, удалив `migration mode` из [команды](../resources/team.md). `Migration mode` — Это специальное состояние, в котором отменяются определенные операции, например операции отправки и участия в сообщениях во время процесса переноса данных.
+Завершите процесс миграции сообщений, `migration mode` удалив его из [группы.](../resources/team.md) `Migration mode` это специальное состояние, в котором определенные операции запрещены, например post сообщения и операции членства во время процесса миграции данных.
 
-После выполнения запроса **комплетемигратион** вы не можете импортировать в команду Дополнительные сообщения. Вы можете добавлять участников в команду после того, как запрос возвращает успешный ответ.
+После выполнения **запроса completeMigration** вы не можете импортировать дополнительные сообщения в команду. Вы можете добавить членов в команду после успешного ответа на запрос.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,7 +35,7 @@ ms.locfileid: "48951509"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{teamId}/completeMigration
+POST /teams/{team-id}/completeMigration
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -61,32 +61,15 @@ POST /teams/{teamId}/completeMigration
 <!-- markdownlint-disable MD022 -->
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_team"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/completeMigration
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/completeMigration
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/completemigration-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/completemigration-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->

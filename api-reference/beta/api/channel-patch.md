@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d3d5fc3fbe63844e814dd0ce29d2cb656df2f22f
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: f20b72ef2840b5fcaa45985ee83f544df250d92f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843713"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200933"
 ---
 # <a name="update-channel"></a>Ветвь обновлений 
 
@@ -26,9 +26,9 @@ ms.locfileid: "49843713"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -37,7 +37,7 @@ ms.locfileid: "49843713"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}/channels/{id}
+PATCH /teams/{team-id}/channels/{channel-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -49,7 +49,7 @@ PATCH /teams/{id}/channels/{id}
 
 Предоставьте в тексте запроса описание объекта [channel](../resources/channel.md) в формате JSON.
 
-> **Примечание.** Невозможно обновить значение `membershipType` существующего канала.
+> **Примечание:** Невозможно обновить `membershipType` значение для существующего канала.
 
 ## <a name="response"></a>Отклик
 
@@ -63,24 +63,17 @@ PATCH /teams/{id}/channels/{id}
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,21 +83,20 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-channel-with-moderation-settings"></a>Пример 2. Обновление канала с помощью параметров модерации
+### <a name="example-2-update-channel-with-moderation-settings"></a>Пример 2. Обновление канала с настройками модерации
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан [](../resources/channelmoderationsettings.md) запрос на обновление параметров модерации канала. Эту операцию может выполнить только владелец команды.
+В следующем примере показан запрос на обновление [параметров модерации](../resources/channelmoderationsettings.md) канала. Эта операция может выполняться только владельцем группы.
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel_with_moderationSettings"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}
+PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 Content-type: application/json
 
 {
@@ -118,23 +110,6 @@ Content-type: application/json
     }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-channel-with-moderationsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-channel-with-moderationsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-with-moderationsettings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-channel-with-moderationsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

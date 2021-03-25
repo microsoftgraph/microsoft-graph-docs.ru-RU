@@ -1,30 +1,30 @@
 ---
-title: 'канал: Комплетемигратион'
-description: Завершите Перенос внешних сообщений, удалив режим миграции из канала.
+title: 'канал: completeMigration'
+description: Завершите миграцию внешних сообщений, удалив режим миграции из канала.
 localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 46d93265721924181030fbb9cd95bf71cef38d8d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 144ec67ef6e21e11716bec0e61f53c5e079d96cf
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959354"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200968"
 ---
-# <a name="channel-completemigration"></a>канал: Комплетемигратион
+# <a name="channel-completemigration"></a>канал: completeMigration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Завершите процесс переноса сообщений, удалив `migration mode` из [канала](../resources/channel.md) в команде. `Migration mode` — Это специальное состояние, которое предотвращает некоторые операции, например отправку сообщений и добавление участников, в процессе переноса данных.
+Завершите процесс миграции сообщений, `migration mode` удалив [канал](../resources/channel.md) в команде. `Migration mode` это специальное состояние, которое предотвращает определенные операции, например отправку сообщений и добавление участников, во время процесса миграции данных.
 
-После выполнения запроса **комплетемигратион** вы не можете импортировать в команду Дополнительные сообщения. Вы можете добавлять участников в команду после того, как запрос возвращает успешный ответ.
+После выполнения **запроса completeMigration** вы не можете импортировать дополнительные сообщения в команду. Вы можете добавить членов в команду после успешного ответа на запрос.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется следующее разрешение. Чтобы узнать больше, *Ознакомьтесь* с [разрешениями](/graph/permissions-reference).
+Для вызова этого API требуется следующее разрешение. Дополнительные дополнительные новости *см. в см. в* ["Разрешениях".](/graph/permissions-reference)
 
 |Тип разрешения      | Разрешение  |
 |:--------------------|:---------------------------------------------------------|
@@ -35,7 +35,7 @@ ms.locfileid: "48959354"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{teamId}/channels/{channelId}/completeMigration
+POST /teams/{team-id}/channels/{channel-id}/completeMigration
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -61,32 +61,14 @@ POST /teams/{teamId}/channels/{channelId}/completeMigration
 <!-- markdownlint-disable MD022 -->
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/completeMigration
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-channel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-channel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/completemigration-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/completemigration-channel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
