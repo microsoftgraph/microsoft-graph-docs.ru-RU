@@ -1,37 +1,37 @@
 ---
-title: Обновление Усерекспериенцеаналитиксметрик
-description: Обновление свойств объекта Усерекспериенцеаналитиксметрик.
+title: Обновление userExperienceAnalyticsMetric
+description: Обновление свойств объекта userExperienceAnalyticsMetric.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbd083bc466bf06d17abe393c55bdc26c1c49253
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d2faace9e102011f8f7f0f7b9382e69a03355c27
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49310043"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159272"
 ---
-# <a name="update-userexperienceanalyticsmetric"></a><span data-ttu-id="9f56c-103">Обновление Усерекспериенцеаналитиксметрик</span><span class="sxs-lookup"><span data-stu-id="9f56c-103">Update userExperienceAnalyticsMetric</span></span>
+# <a name="update-userexperienceanalyticsmetric"></a><span data-ttu-id="13799-103">Обновление userExperienceAnalyticsMetric</span><span class="sxs-lookup"><span data-stu-id="13799-103">Update userExperienceAnalyticsMetric</span></span>
 
-<span data-ttu-id="9f56c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9f56c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="13799-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="13799-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9f56c-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9f56c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="13799-105">**Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="13799-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9f56c-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9f56c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="13799-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="13799-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9f56c-107">Обновление свойств объекта [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) .</span><span class="sxs-lookup"><span data-stu-id="9f56c-107">Update the properties of a [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object.</span></span>
+<span data-ttu-id="13799-107">Обновление свойств объекта [userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)</span><span class="sxs-lookup"><span data-stu-id="13799-107">Update the properties of a [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9f56c-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="9f56c-108">Prerequisites</span></span>
-<span data-ttu-id="9f56c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9f56c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="13799-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="13799-108">Prerequisites</span></span>
+<span data-ttu-id="13799-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="13799-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9f56c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9f56c-111">Permission type</span></span>|<span data-ttu-id="9f56c-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9f56c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="13799-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="13799-111">Permission type</span></span>|<span data-ttu-id="13799-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="13799-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9f56c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9f56c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9f56c-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f56c-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="9f56c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9f56c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9f56c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9f56c-116">Not supported.</span></span>|
-|<span data-ttu-id="9f56c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9f56c-117">Application</span></span>|<span data-ttu-id="9f56c-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f56c-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="13799-113">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="13799-113">Delegated (work or school account)</span></span>|<span data-ttu-id="13799-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13799-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="13799-115">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="13799-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="13799-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="13799-116">Not supported.</span></span>|
+|<span data-ttu-id="13799-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="13799-117">Application</span></span>|<span data-ttu-id="13799-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13799-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9f56c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9f56c-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="13799-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="13799-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -44,32 +44,32 @@ PATCH /deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnal
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues/{userExperienceAnalyticsMetricId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9f56c-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="9f56c-120">Request headers</span></span>
-|<span data-ttu-id="9f56c-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9f56c-121">Header</span></span>|<span data-ttu-id="9f56c-122">Значение</span><span class="sxs-lookup"><span data-stu-id="9f56c-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="13799-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="13799-120">Request headers</span></span>
+|<span data-ttu-id="13799-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="13799-121">Header</span></span>|<span data-ttu-id="13799-122">Значение</span><span class="sxs-lookup"><span data-stu-id="13799-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9f56c-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9f56c-123">Authorization</span></span>|<span data-ttu-id="9f56c-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9f56c-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9f56c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="9f56c-125">Accept</span></span>|<span data-ttu-id="9f56c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9f56c-126">application/json</span></span>|
+|<span data-ttu-id="13799-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="13799-123">Authorization</span></span>|<span data-ttu-id="13799-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="13799-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="13799-125">Accept</span><span class="sxs-lookup"><span data-stu-id="13799-125">Accept</span></span>|<span data-ttu-id="13799-126">application/json</span><span class="sxs-lookup"><span data-stu-id="13799-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9f56c-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9f56c-127">Request body</span></span>
-<span data-ttu-id="9f56c-128">В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9f56c-128">In the request body, supply a JSON representation for the [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="13799-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="13799-127">Request body</span></span>
+<span data-ttu-id="13799-128">В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)</span><span class="sxs-lookup"><span data-stu-id="13799-128">In the request body, supply a JSON representation for the [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object.</span></span>
 
-<span data-ttu-id="9f56c-129">В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md).</span><span class="sxs-lookup"><span data-stu-id="9f56c-129">The following table shows the properties that are required when you create the [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md).</span></span>
+<span data-ttu-id="13799-129">В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)</span><span class="sxs-lookup"><span data-stu-id="13799-129">The following table shows the properties that are required when you create the [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md).</span></span>
 
-|<span data-ttu-id="9f56c-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="9f56c-130">Property</span></span>|<span data-ttu-id="9f56c-131">Тип</span><span class="sxs-lookup"><span data-stu-id="9f56c-131">Type</span></span>|<span data-ttu-id="9f56c-132">Описание</span><span class="sxs-lookup"><span data-stu-id="9f56c-132">Description</span></span>|
+|<span data-ttu-id="13799-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="13799-130">Property</span></span>|<span data-ttu-id="13799-131">Тип</span><span class="sxs-lookup"><span data-stu-id="13799-131">Type</span></span>|<span data-ttu-id="13799-132">Описание</span><span class="sxs-lookup"><span data-stu-id="13799-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9f56c-133">id</span><span class="sxs-lookup"><span data-stu-id="9f56c-133">id</span></span>|<span data-ttu-id="9f56c-134">String</span><span class="sxs-lookup"><span data-stu-id="9f56c-134">String</span></span>|<span data-ttu-id="9f56c-135">Уникальный идентификатор метрики аналитики взаимодействия с пользователем.</span><span class="sxs-lookup"><span data-stu-id="9f56c-135">The unique identifier of the user experience analytics metric.</span></span>|
-|<span data-ttu-id="9f56c-136">значение</span><span class="sxs-lookup"><span data-stu-id="9f56c-136">value</span></span>|<span data-ttu-id="9f56c-137">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="9f56c-137">Double</span></span>|<span data-ttu-id="9f56c-138">Значение метрики аналитики взаимодействия с пользователем.</span><span class="sxs-lookup"><span data-stu-id="9f56c-138">The value of the user experience analytics metric.</span></span>|
-|<span data-ttu-id="9f56c-139">устройств</span><span class="sxs-lookup"><span data-stu-id="9f56c-139">unit</span></span>|<span data-ttu-id="9f56c-140">String</span><span class="sxs-lookup"><span data-stu-id="9f56c-140">String</span></span>|<span data-ttu-id="9f56c-141">Единица измерения показателя взаимодействия с пользователем.</span><span class="sxs-lookup"><span data-stu-id="9f56c-141">The unit of the user experience analytics metric.</span></span>|
+|<span data-ttu-id="13799-133">id</span><span class="sxs-lookup"><span data-stu-id="13799-133">id</span></span>|<span data-ttu-id="13799-134">Строка</span><span class="sxs-lookup"><span data-stu-id="13799-134">String</span></span>|<span data-ttu-id="13799-135">Уникальный идентификатор метрики аналитики пользовательских интерфейсов.</span><span class="sxs-lookup"><span data-stu-id="13799-135">The unique identifier of the user experience analytics metric.</span></span>|
+|<span data-ttu-id="13799-136">значение</span><span class="sxs-lookup"><span data-stu-id="13799-136">value</span></span>|<span data-ttu-id="13799-137">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="13799-137">Double</span></span>|<span data-ttu-id="13799-138">Значение метрики аналитики пользовательских интерфейсов.</span><span class="sxs-lookup"><span data-stu-id="13799-138">The value of the user experience analytics metric.</span></span>|
+|<span data-ttu-id="13799-139">unit</span><span class="sxs-lookup"><span data-stu-id="13799-139">unit</span></span>|<span data-ttu-id="13799-140">Строка</span><span class="sxs-lookup"><span data-stu-id="13799-140">String</span></span>|<span data-ttu-id="13799-141">Единица метрики аналитики пользовательского опыта.</span><span class="sxs-lookup"><span data-stu-id="13799-141">The unit of the user experience analytics metric.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9f56c-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="9f56c-142">Response</span></span>
-<span data-ttu-id="9f56c-143">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9f56c-143">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="13799-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="13799-142">Response</span></span>
+<span data-ttu-id="13799-143">В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="13799-143">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9f56c-144">Пример</span><span class="sxs-lookup"><span data-stu-id="9f56c-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="13799-144">Пример</span><span class="sxs-lookup"><span data-stu-id="13799-144">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9f56c-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="9f56c-145">Request</span></span>
-<span data-ttu-id="9f56c-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9f56c-146">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="13799-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="13799-145">Request</span></span>
+<span data-ttu-id="13799-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="13799-146">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression/{userExperienceAnalyticsMetricId}
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 128
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9f56c-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="9f56c-147">Response</span></span>
-<span data-ttu-id="9f56c-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9f56c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="13799-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="13799-147">Response</span></span>
+<span data-ttu-id="13799-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="13799-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

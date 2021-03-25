@@ -1,37 +1,37 @@
 ---
-title: Обновление Вулнераблеманажеддевице
-description: Обновление свойств объекта Вулнераблеманажеддевице.
+title: Обновление vulnerableManagedDevice
+description: Обновление свойств уязвимого объектаManagedDevice.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f6ae6504e96d2412198b2e9423be2a90a0b5ce8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5f054105fcbea0c4d6c9d5ae0411341702d46520
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49270351"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158747"
 ---
-# <a name="update-vulnerablemanageddevice"></a><span data-ttu-id="623ea-103">Обновление Вулнераблеманажеддевице</span><span class="sxs-lookup"><span data-stu-id="623ea-103">Update vulnerableManagedDevice</span></span>
+# <a name="update-vulnerablemanageddevice"></a><span data-ttu-id="76acf-103">Обновление vulnerableManagedDevice</span><span class="sxs-lookup"><span data-stu-id="76acf-103">Update vulnerableManagedDevice</span></span>
 
-<span data-ttu-id="623ea-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="623ea-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="76acf-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="76acf-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="623ea-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="623ea-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="76acf-105">**Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76acf-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="623ea-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="623ea-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="76acf-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="76acf-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="623ea-107">Обновление свойств объекта [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .</span><span class="sxs-lookup"><span data-stu-id="623ea-107">Update the properties of a [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) object.</span></span>
+<span data-ttu-id="76acf-107">Обновление свойств уязвимого [объектаManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)</span><span class="sxs-lookup"><span data-stu-id="76acf-107">Update the properties of a [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="623ea-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="623ea-108">Prerequisites</span></span>
-<span data-ttu-id="623ea-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="623ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="76acf-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="76acf-108">Prerequisites</span></span>
+<span data-ttu-id="76acf-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="76acf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="623ea-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="623ea-111">Permission type</span></span>|<span data-ttu-id="623ea-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="623ea-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="76acf-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="76acf-111">Permission type</span></span>|<span data-ttu-id="76acf-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="76acf-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="623ea-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="623ea-113">Delegated (work or school account)</span></span>|<span data-ttu-id="623ea-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="623ea-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="623ea-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="623ea-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="623ea-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="623ea-116">Not supported.</span></span>|
-|<span data-ttu-id="623ea-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="623ea-117">Application</span></span>|<span data-ttu-id="623ea-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="623ea-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="76acf-113">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="76acf-113">Delegated (work or school account)</span></span>|<span data-ttu-id="76acf-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76acf-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="76acf-115">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="76acf-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="76acf-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76acf-116">Not supported.</span></span>|
+|<span data-ttu-id="76acf-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="76acf-117">Application</span></span>|<span data-ttu-id="76acf-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76acf-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="623ea-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="623ea-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="76acf-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="76acf-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +40,33 @@ ms.locfileid: "49270351"
 PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevice not found
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="623ea-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="623ea-120">Request headers</span></span>
-|<span data-ttu-id="623ea-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="623ea-121">Header</span></span>|<span data-ttu-id="623ea-122">Значение</span><span class="sxs-lookup"><span data-stu-id="623ea-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="76acf-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="76acf-120">Request headers</span></span>
+|<span data-ttu-id="76acf-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="76acf-121">Header</span></span>|<span data-ttu-id="76acf-122">Значение</span><span class="sxs-lookup"><span data-stu-id="76acf-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="623ea-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="623ea-123">Authorization</span></span>|<span data-ttu-id="623ea-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="623ea-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="623ea-125">Accept</span><span class="sxs-lookup"><span data-stu-id="623ea-125">Accept</span></span>|<span data-ttu-id="623ea-126">application/json</span><span class="sxs-lookup"><span data-stu-id="623ea-126">application/json</span></span>|
+|<span data-ttu-id="76acf-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="76acf-123">Authorization</span></span>|<span data-ttu-id="76acf-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="76acf-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="76acf-125">Accept</span><span class="sxs-lookup"><span data-stu-id="76acf-125">Accept</span></span>|<span data-ttu-id="76acf-126">application/json</span><span class="sxs-lookup"><span data-stu-id="76acf-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="623ea-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="623ea-127">Request body</span></span>
-<span data-ttu-id="623ea-128">В тексте запроса добавьте представление объекта [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="623ea-128">In the request body, supply a JSON representation for the [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="76acf-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="76acf-127">Request body</span></span>
+<span data-ttu-id="76acf-128">В теле запроса поставляем представление JSON для уязвимого [объектаManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)</span><span class="sxs-lookup"><span data-stu-id="76acf-128">In the request body, supply a JSON representation for the [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) object.</span></span>
 
-<span data-ttu-id="623ea-129">В следующей таблице приведены свойства, необходимые при создании [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md).</span><span class="sxs-lookup"><span data-stu-id="623ea-129">The following table shows the properties that are required when you create the [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md).</span></span>
+<span data-ttu-id="76acf-129">В следующей таблице показаны свойства, необходимые при создании [vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)</span><span class="sxs-lookup"><span data-stu-id="76acf-129">The following table shows the properties that are required when you create the [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md).</span></span>
 
-|<span data-ttu-id="623ea-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="623ea-130">Property</span></span>|<span data-ttu-id="623ea-131">Тип</span><span class="sxs-lookup"><span data-stu-id="623ea-131">Type</span></span>|<span data-ttu-id="623ea-132">Описание</span><span class="sxs-lookup"><span data-stu-id="623ea-132">Description</span></span>|
+|<span data-ttu-id="76acf-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="76acf-130">Property</span></span>|<span data-ttu-id="76acf-131">Тип</span><span class="sxs-lookup"><span data-stu-id="76acf-131">Type</span></span>|<span data-ttu-id="76acf-132">Описание</span><span class="sxs-lookup"><span data-stu-id="76acf-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="623ea-133">id</span><span class="sxs-lookup"><span data-stu-id="623ea-133">id</span></span>|<span data-ttu-id="623ea-134">String</span><span class="sxs-lookup"><span data-stu-id="623ea-134">String</span></span>|<span data-ttu-id="623ea-135">Ключ сущности и идентификатор устройства AAD.</span><span class="sxs-lookup"><span data-stu-id="623ea-135">The entity key, and AAD device ID.</span></span>|
-|<span data-ttu-id="623ea-136">манажеддевицеид</span><span class="sxs-lookup"><span data-stu-id="623ea-136">managedDeviceId</span></span>|<span data-ttu-id="623ea-137">String</span><span class="sxs-lookup"><span data-stu-id="623ea-137">String</span></span>|<span data-ttu-id="623ea-138">Идентификатор управляемого устройства Intune.</span><span class="sxs-lookup"><span data-stu-id="623ea-138">The Intune managed device ID.</span></span>|
-|<span data-ttu-id="623ea-139">displayName</span><span class="sxs-lookup"><span data-stu-id="623ea-139">displayName</span></span>|<span data-ttu-id="623ea-140">String</span><span class="sxs-lookup"><span data-stu-id="623ea-140">String</span></span>|<span data-ttu-id="623ea-141">Имя устройства.</span><span class="sxs-lookup"><span data-stu-id="623ea-141">The device name.</span></span>|
-|<span data-ttu-id="623ea-142">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="623ea-142">lastSyncDateTime</span></span>|<span data-ttu-id="623ea-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="623ea-143">DateTimeOffset</span></span>|<span data-ttu-id="623ea-144">Дата последней синхронизации.</span><span class="sxs-lookup"><span data-stu-id="623ea-144">The last sync date.</span></span>|
+|<span data-ttu-id="76acf-133">id</span><span class="sxs-lookup"><span data-stu-id="76acf-133">id</span></span>|<span data-ttu-id="76acf-134">Строка</span><span class="sxs-lookup"><span data-stu-id="76acf-134">String</span></span>|<span data-ttu-id="76acf-135">Ключ сущности и ID устройства AAD.</span><span class="sxs-lookup"><span data-stu-id="76acf-135">The entity key, and AAD device ID.</span></span>|
+|<span data-ttu-id="76acf-136">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="76acf-136">managedDeviceId</span></span>|<span data-ttu-id="76acf-137">Строка</span><span class="sxs-lookup"><span data-stu-id="76acf-137">String</span></span>|<span data-ttu-id="76acf-138">ID управляемого устройства Intune.</span><span class="sxs-lookup"><span data-stu-id="76acf-138">The Intune managed device ID.</span></span>|
+|<span data-ttu-id="76acf-139">displayName</span><span class="sxs-lookup"><span data-stu-id="76acf-139">displayName</span></span>|<span data-ttu-id="76acf-140">Строка</span><span class="sxs-lookup"><span data-stu-id="76acf-140">String</span></span>|<span data-ttu-id="76acf-141">Имя устройства.</span><span class="sxs-lookup"><span data-stu-id="76acf-141">The device name.</span></span>|
+|<span data-ttu-id="76acf-142">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="76acf-142">lastSyncDateTime</span></span>|<span data-ttu-id="76acf-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="76acf-143">DateTimeOffset</span></span>|<span data-ttu-id="76acf-144">Последняя дата синхронизации.</span><span class="sxs-lookup"><span data-stu-id="76acf-144">The last sync date.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="623ea-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="623ea-145">Response</span></span>
-<span data-ttu-id="623ea-146">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="623ea-146">If successful, this method returns a `200 OK` response code and an updated [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="76acf-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="76acf-145">Response</span></span>
+<span data-ttu-id="76acf-146">В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="76acf-146">If successful, this method returns a `200 OK` response code and an updated [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="623ea-147">Пример</span><span class="sxs-lookup"><span data-stu-id="623ea-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="76acf-147">Пример</span><span class="sxs-lookup"><span data-stu-id="76acf-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="623ea-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="623ea-148">Request</span></span>
-<span data-ttu-id="623ea-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="623ea-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="76acf-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="76acf-148">Request</span></span>
+<span data-ttu-id="76acf-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="76acf-149">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta** Entity URI for microsoft.management.services.api.vulnerableManagedDevice not found
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 214
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="623ea-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="623ea-150">Response</span></span>
-<span data-ttu-id="623ea-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="623ea-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="76acf-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="76acf-150">Response</span></span>
+<span data-ttu-id="76acf-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="76acf-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
