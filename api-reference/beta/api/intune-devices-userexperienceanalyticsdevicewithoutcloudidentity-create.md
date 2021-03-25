@@ -1,35 +1,35 @@
 ---
-title: Создание объекта userExperienceAnalyticsDeviceWithoutCloudIdentity
-description: Создание объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.
+title: Создание userExperienceAnalyticsDeviceWithoutCloudIdentity
+description: Создание нового объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3022153d740837f0c05864decfb2caba8fc9a43
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b1ba3c28e300ec44d104326e5fe11166cb18c37a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162540"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51157900"
 ---
-# <a name="create-userexperienceanalyticsdevicewithoutcloudidentity"></a>Создание объекта userExperienceAnalyticsDeviceWithoutCloudIdentity
+# <a name="create-userexperienceanalyticsdevicewithoutcloudidentity"></a>Создание userExperienceAnalyticsDeviceWithoutCloudIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание объекта [userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
+Создание нового [объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,24 +43,24 @@ POST /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта userExperienceAnalyticsDeviceWithoutCloudIdentity в JSON.
+В теле запроса поставляем представление JSON для объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.
 
 В следующей таблице показаны свойства, необходимые при создании объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства с присоединением клиента аналитики пользовательского интерфейса.|
-|deviceName|String|Имя устройства с присоединением клиента.|
-|azureAdDeviceId|String|ИД устройства Azure Active Directory|
+|id|Строка|Уникальный идентификатор устройства для клиентской аналитики пользовательского интерфейса.|
+|deviceName|String|Клиент прикрепит имя устройства.|
+|azureAdDeviceId|Строка|Azure Active Directory Device Id|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

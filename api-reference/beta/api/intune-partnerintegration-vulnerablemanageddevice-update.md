@@ -1,34 +1,34 @@
 ---
-title: Обновление Вулнераблеманажеддевице
-description: Обновление свойств объекта Вулнераблеманажеддевице.
+title: Обновление vulnerableManagedDevice
+description: Обновление свойств уязвимого объектаManagedDevice.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f6ae6504e96d2412198b2e9423be2a90a0b5ce8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5f054105fcbea0c4d6c9d5ae0411341702d46520
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49270351"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158747"
 ---
-# <a name="update-vulnerablemanageddevice"></a>Обновление Вулнераблеманажеддевице
+# <a name="update-vulnerablemanageddevice"></a>Обновление vulnerableManagedDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .
+Обновление свойств уязвимого [объектаManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,25 +43,25 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в формате JSON.
+В теле запроса поставляем представление JSON для уязвимого [объектаManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)
 
-В следующей таблице приведены свойства, необходимые при создании [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md).
+В следующей таблице показаны свойства, необходимые при создании [vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности и идентификатор устройства AAD.|
-|манажеддевицеид|String|Идентификатор управляемого устройства Intune.|
-|displayName|String|Имя устройства.|
-|lastSyncDateTime|DateTimeOffset|Дата последней синхронизации.|
+|id|Строка|Ключ сущности и ID устройства AAD.|
+|managedDeviceId|Строка|ID управляемого устройства Intune.|
+|displayName|Строка|Имя устройства.|
+|lastSyncDateTime|DateTimeOffset|Последняя дата синхронизации.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

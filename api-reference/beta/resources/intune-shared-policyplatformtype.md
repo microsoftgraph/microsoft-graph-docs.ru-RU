@@ -1,22 +1,22 @@
 ---
-title: Тип enum policyPlatformType
+title: тип enum policyPlatformType
 description: Поддерживаемые типы платформ для политик.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3316405626d2bef9ced62599d43f339301309fa
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ad3e4a578db77fa9b2880cd7ff861cb15c6f1d9e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161413"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159293"
 ---
-# <a name="policyplatformtype-enum-type"></a>Тип enum policyPlatformType
+# <a name="policyplatformtype-enum-type"></a>тип enum policyPlatformType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,16 +25,17 @@ ms.locfileid: "50161413"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|android|0|Android.|
-|androidForWork|1 |AndroidForWork.|
-|iOS|2 |iOS.|
-|macOS|3 |MacOS.|
+|Android|0|Android.|
+|AndroidForWork|1|AndroidForWork.|
+|iOS|2|iOS.|
+|macOS|3|MacOS.|
 |windowsPhone81|4 |WindowsPhone 8.1.|
-|windows81AndLater|5 |Windows 8.1 и более поздних|
-|windows10AndLater|6 |Windows 10 и более поздние версии.|
-|androidWorkProfile|7 |AndroidWorkProfile.|
+|windows81AndLater|5 |Windows 8.1 и более поздней|
+|windows10AndLater|6 |Windows 10 и более поздней версии.|
+|AndroidWorkProfile|7 |AndroidWorkProfile.|
 |windows10XProfile|8 |Windows10XProfile.|
-|all|100|Все платформы.|
+|все|100|Все платформы.|
+
 
 
 

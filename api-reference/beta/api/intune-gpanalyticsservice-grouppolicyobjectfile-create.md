@@ -1,34 +1,34 @@
 ---
-title: Создание Граупполициобжектфиле
-description: Создание нового объекта Граупполициобжектфиле.
+title: Создание groupPolicyObjectFile
+description: Создайте новый объект groupPolicyObjectFile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53507ce45286de3689ae248c3873c8fb535007d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a321b735313373b0d412d722edd849eb1370a2ca
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49201123"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158999"
 ---
-# <a name="create-grouppolicyobjectfile"></a>Создание Граупполициобжектфиле
+# <a name="create-grouppolicyobjectfile"></a>Создание groupPolicyObjectFile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) .
+Создайте новый [объект groupPolicyObjectFile.](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,27 +43,27 @@ POST /deviceManagement/groupPolicyObjectFiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Граупполициобжектфиле в формате JSON.
+В теле запроса поставляем представление JSON для объекта groupPolicyObjectFile.
 
-В следующей таблице приведены свойства, необходимые при создании Граупполициобжектфиле.
+В следующей таблице показаны свойства, необходимые при создании groupPolicyObjectFile.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|String|Различающееся имя подразделения.|
-|createdDateTime|DateTimeOffset|Дата и время первой загрузки Граупполици.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполициобжектфиле.|
-|content|String|Содержимое файла объекта групповой политики.|
+|id|Строка|Пока не задокументировано.|
+|groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
+|ouDistinguishedName|Строка|Отличительное имя OU.|
+|createdDateTime|DateTimeOffset|Дата и время, в которые была впервые загружена GroupPolicy.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyObjectFile.|
+|content|String|Контент объекта групповой политики.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

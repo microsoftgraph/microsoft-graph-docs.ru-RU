@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5e29fadfe2e323614ae2c12f412955b39c4a2bd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ae30966ec42edc00dc4245fb9f8b58ad85461346
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441503"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159160"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Get userExperienceAnalyticsOverview
 
@@ -25,11 +25,11 @@ ms.locfileid: "50441503"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /deviceManagement/userExperienceAnalyticsOverview
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOve
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1026
+Content-Length: 1123
 
 {
   "value": {
@@ -77,6 +77,7 @@ Content-Length: 1026
     "overallScore": 12,
     "deviceBootPerformanceOverallScore": 1,
     "bestPracticesOverallScore": 9,
+    "workFromAnywhereOverallScore": 12,
     "appHealthOverallScore": 5,
     "resourcePerformanceOverallScore": 15,
     "insights": [
@@ -96,6 +97,7 @@ Content-Length: 1026
     "state": "insufficientData",
     "deviceBootPerformanceHealthState": "insufficientData",
     "bestPracticesHealthState": "insufficientData",
+    "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
     "resourcePerformanceState": "insufficientData"
   }

@@ -1,34 +1,34 @@
 ---
-title: Обновление Девицеандаппманажементассигнментфилтер
-description: Обновление свойств объекта Девицеандаппманажементассигнментфилтер.
+title: Обновление устройстваAndAppManagementAssignmentFilter
+description: Обновление свойств объекта deviceAndAppManagementAssignmentFilter.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 396fc74e9ba44610810a4c260b33aebe334219c5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fa80ffa96fcd558ec7c89363406737ca538b6733
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49227121"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158642"
 ---
-# <a name="update-deviceandappmanagementassignmentfilter"></a>Обновление Девицеандаппманажементассигнментфилтер
+# <a name="update-deviceandappmanagementassignmentfilter"></a>Обновление устройстваAndAppManagementAssignmentFilter
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .
+Обновление свойств объекта [deviceAndAppManagementAssignmentFilter.](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,29 +43,29 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта deviceAndAppManagementAssignmentFilter.](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)
 
-В следующей таблице приведены свойства, необходимые при создании [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md).
+В следующей таблице показаны свойства, необходимые при создании [устройстваAndAppManagementAssignmentFilter.](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ фильтра назначений.|
-|createdDateTime|DateTimeOffset|Время создания фильтра назначений.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения фильтра назначений.|
-|displayName|String|DisplayName фильтра назначений.|
-|description|String|Описание фильтра назначений.|
-|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правила|String|Определение правила для фильтра назначений.|
-|roleScopeTags|Коллекция строк|RoleScopeTags фильтра назначений.|
+|id|Строка|Ключ фильтра назначения.|
+|createdDateTime|DateTimeOffset|Время создания фильтра назначения.|
+|lastModifiedDateTime|DateTimeOffset|Последнее измененное время фильтра назначения.|
+|displayName|Строка|DisplayName фильтра назначения.|
+|description|Строка|Описание фильтра назначения.|
+|платформа|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|правило|Строка|Определение правила фильтра назначения.|
+|roleScopeTags|Коллекция String|RoleScopeTags фильтра назначения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ca67205cd47625b08ba31173c2bbcf152147581
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ad5d90a7232e3e2723306f0e7ed0c7504b16d0de
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434974"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159202"
 ---
 # <a name="update-userexperienceanalyticsmetrichistory"></a>Обновление userExperienceAnalyticsMetricHistory
 
@@ -25,10 +25,10 @@ ms.locfileid: "50434974"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,17 +47,17 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceMetricHistory/{userExperien
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)
 
 В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsMetricHistory.](../resources/intune-devices-userexperienceanalyticsmetrichistory.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор метрики аналитики пользовательского опыта.|
+|id|Строка|Уникальный идентификатор метрики аналитики пользовательского опыта.|
 |deviceId|String|ID устройства аналитики пользовательского интерфейса.|
 |metricDateTime|DateTimeOffset|Время даты даты аналитики пользовательского интерфейса.|
-|metricType|String|Тип метрики аналитики пользовательского опыта.|
+|metricType|Строка|Тип метрики аналитики пользовательского опыта.|
 
 
 

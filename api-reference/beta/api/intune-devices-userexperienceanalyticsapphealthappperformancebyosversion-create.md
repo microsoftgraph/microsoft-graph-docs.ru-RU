@@ -1,34 +1,34 @@
 ---
-title: Создание Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион
-description: Создание нового объекта Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион.
+title: Создание userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
+description: Создание нового объекта userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1c3ac5f96c506e01492c11aaf6c0fef2ea75686
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4e90ced56c6831005d9d878bcec6ab613e8060c8
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49203147"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158033"
 ---
-# <a name="create-userexperienceanalyticsapphealthappperformancebyosversion"></a>Создание Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион
+# <a name="create-userexperienceanalyticsapphealthappperformancebyosversion"></a>Создание userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) .
+Создание нового [объекта userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,31 +43,31 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByO
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион в формате JSON.
+В теле запроса поставляем представление JSON для объекта userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.
 
-В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион.
+В следующей таблице показаны свойства, необходимые при создании userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности "версия приложения аналитики взаимодействия с пользователем".|
-|osVersion|String|Версия операционной системы приложения.|
-|осбуилднумбер|String|Номер сборки ОС приложения.|
-|активедевицекаунт|Int32|Количество устройств, в которых приложение было активно. Допустимые значения: от 2147483648 до 2147483647|
+|id|Строка|Уникальный идентификатор объекта производительности версии версии пользовательского интерфейса для аналитики приложений.|
+|osVersion|String|Версия ос приложения.|
+|osBuildNumber|Строка|Число сборки ос приложения.|
+|activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения -2147483648 до 2147483647|
 |appName|String|Имя приложения.|
-|appDisplayName|String|Понятное имя приложения.|
-|апппублишер|String|Издатель приложения.|
-|аппусажедуратион|Int32|Общее время использования приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
-|аппкрашкаунт|Int32|Число сбоев для приложения. Допустимые значения: от 2147483648 до 2147483647|
-|меантиметофаилуреинминутес|Int32|Среднее время до сбоя приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
+|appDisplayName|String|Удобное имя приложения.|
+|appPublisher|Строка|Издатель приложения.|
+|appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения -2147483648 до 2147483647|
+|appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения -2147483648 до 2147483647|
+|meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения -2147483648 до 2147483647|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,35 +1,35 @@
 ---
-title: Создание Конфигманажерколлектион
-description: Создание нового объекта Конфигманажерколлектион.
+title: Создание configManagerCollection
+description: Создайте новый объект configManagerCollection.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a16a878140e233e44960d842687f05f0c2c7a79e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2a7fc439408d357d2463fd14c0a8c738e403148a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302134"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158754"
 ---
-# <a name="create-configmanagercollection"></a>Создание Конфигманажерколлектион
+# <a name="create-configmanagercollection"></a>Создание configManagerCollection
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [конфигманажерколлектион](../resources/intune-partnerintegration-configmanagercollection.md) .
+Создайте новый [объект configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,28 @@ POST /deviceManagement/configManagerCollections
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Конфигманажерколлектион в формате JSON.
+В теле запроса поставляем представление JSON для объекта configManagerCollection.
 
-В следующей таблице приведены свойства, необходимые при создании Конфигманажерколлектион.
+В следующей таблице показаны свойства, необходимые при создании configManagerCollection.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ для коллекции Конфигманажер.|
-|displayName|String|DisplayName.|
-|коллектионидентифиер|String|Идентификатор коллекции в SCCM.|
-|хиерарчинаме|String|Хиерарчинаме.|
-|хиерарчидентифиер|String|Идентификатор иерархии.|
+|id|Строка|Ключ для коллекции ConfigManager.|
+|displayName|Строка|The DisplayName.|
+|collectionIdentifier|Строка|Идентификатор коллекции в SCCM.|
+|hierarchyName|Строка|Имя иерархии.|
+|hierarchyIdentifier|Строка|Идентификатор иерархии.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [конфигманажерколлектион](../resources/intune-partnerintegration-configmanagercollection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

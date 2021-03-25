@@ -1,35 +1,35 @@
 ---
-title: Обновление Граупполицидефинитионфиле
-description: Обновление свойств объекта Граупполицидефинитионфиле.
+title: Update groupPolicyDefinitionFile
+description: Обновление свойств объекта groupPolicyDefinitionFile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7ff86aa8f842f2079d0152ba6462e00cf1991b1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0910406f564f86decf211285ed472f57792267c5
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274944"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158894"
 ---
-# <a name="update-grouppolicydefinitionfile"></a>Обновление Граупполицидефинитионфиле
+# <a name="update-grouppolicydefinitionfile"></a>Update groupPolicyDefinitionFile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .
+Обновление свойств объекта [groupPolicyDefinitionFile.](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,30 +45,30 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта groupPolicyDefinitionFile.](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)
 
-В следующей таблице приведены свойства, необходимые при создании [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md).
+В следующей таблице показаны свойства, необходимые при создании [groupPolicyDefinitionFile.](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Локализованное понятное имя файла ADMX.|
-|description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
-|лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
-|таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
-|Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
-|полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|последним|String|Версия редакции, связанная с файлом.|
-|id|String|Ключ объекта.|
+|displayName|Строка|Локализованное удобное имя файла ADMX.|
+|description|Строка|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
+|languageCodes|Коллекция String|Поддерживаемые языковые коды для файла ADMX.|
+|targetPrefix|Строка|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|targetNamespace|Строка|Указывает URI, используемую для определения пространства имен в файле ADMX.|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|изменение|Строка|Версия изменения, связанная с файлом.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

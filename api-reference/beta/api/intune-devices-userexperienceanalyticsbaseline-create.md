@@ -1,34 +1,34 @@
 ---
-title: Создание Усерекспериенцеаналитиксбаселине
-description: Создание нового объекта Усерекспериенцеаналитиксбаселине.
+title: Создание userExperienceAnalyticsBaseline
+description: Создание нового объекта userExperienceAnalyticsBaseline.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f78a3f9684068d9859c91ed75c91507a50f01bc9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4887e2d15e1a8d1b89dab3b72aa53344f499d523
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202537"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51157963"
 ---
-# <a name="create-userexperienceanalyticsbaseline"></a>Создание Усерекспериенцеаналитиксбаселине
+# <a name="create-userexperienceanalyticsbaseline"></a>Создание userExperienceAnalyticsBaseline
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) .
+Создание нового [объекта userExperienceAnalyticsBaseline.](../resources/intune-devices-userexperienceanalyticsbaseline.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,26 +43,26 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксбаселине в формате JSON.
+В теле запроса поставляем представление JSON для объекта userExperienceAnalyticsBaseline.
 
-В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксбаселине.
+В следующей таблице показаны свойства, необходимые при создании пользовательского интерфейсаExperienceAnalyticsBaseline.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор базового идентификатора аналитики взаимодействия с пользователем.|
-|displayName|String|Имя базового объекта аналитики взаимодействия с пользователем.|
-|овераллскоре|Int32|Общий показатель базового уровня для аналитики взаимодействия с пользователем.|
-|isBuiltIn|Boolean|Указывает, является ли текущий базовый планом коммерческого медианы или настраиваемым базовым планом.|
-|createdDateTime|DateTimeOffset|Дата создания настраиваемого базового плана.|
+|id|Строка|Уникальный идентификатор базовой базы аналитики пользовательского интерфейса.|
+|displayName|Строка|Имя базовой базы аналитики пользовательского интерфейса.|
+|overallScore|Int32|Общая оценка базовой базы аналитики пользовательских интерфейсов.|
+|isBuiltIn|Boolean|Означает, является ли текущий базовый уровень коммерческим медианым или настраиваемой базовой базой.|
+|createdDateTime|DateTimeOffset|Дата создания настраиваемой базовой линии.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
