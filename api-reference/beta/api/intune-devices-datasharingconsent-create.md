@@ -1,34 +1,34 @@
 ---
-title: Создание Даташарингконсент
-description: Создание нового объекта Даташарингконсент.
+title: Создание dataSharingConsent
+description: Создание нового объекта dataSharingConsent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f5daca2ade6749e41358a0d2938079b4a88121c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 87e9044fc48f857aa64c75f7a9b5579d8ae7573a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49229354"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154429"
 ---
-# <a name="create-datasharingconsent"></a>Создание Даташарингконсент
+# <a name="create-datasharingconsent"></a>Создание dataSharingConsent
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .
+Создание нового [объекта dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,28 +43,28 @@ POST /deviceManagement/dataSharingConsents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Даташарингконсент в формате JSON.
+В теле запроса поставляем представление JSON для объекта dataSharingConsent.
 
-В следующей таблице приведены свойства, необходимые при создании Даташарингконсент.
+В следующей таблице показаны свойства, необходимые при создании dataSharingConsent.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор согласия общего доступа к данным|
-|сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
-|термсурл|String|Термсурл для согласия общего доступа к данным|
-|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
-|грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
+|id|Строка|ID согласия для общего доступа к данным|
+|serviceDisplayName|Строка|Имя отображения потока работы службы|
+|termsUrl|Строка|TermsUrl для согласия на обмен данными|
+|granted|Boolean|Предоставлено состояние для согласия на обмен данными|
+|grantDateTime|DateTimeOffset|Для этой учетной записи было предоставлено согласие на время|
+|grantedByUpn|Строка|Upn пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUserId|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект dataSharingConsent](../resources/intune-devices-datasharingconsent.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,35 +1,35 @@
 ---
-title: Получение Аппликспедитедчеккинконфигуратионбасе
-description: Чтение свойств и связей объекта Аппликспедитедчеккинконфигуратионбасе.
+title: Get appleExpeditedCheckinConfigurationBase
+description: Чтение свойств и связей объекта appleExpeditedCheckinConfigurationBase.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b36141d2a07aa149844610f460ed5594d295d2a5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9552117cb3cf796e7c76530ca4fbef0a83ca9766
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221087"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51155885"
 ---
-# <a name="get-appleexpeditedcheckinconfigurationbase"></a>Получение Аппликспедитедчеккинконфигуратионбасе
+# <a name="get-appleexpeditedcheckinconfigurationbase"></a>Get appleExpeditedCheckinConfigurationBase
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [аппликспедитедчеккинконфигуратионбасе](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md) .
+Чтение свойств и связей [объекта appleExpeditedCheckinConfigurationBase.](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,14 +48,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аппликспедитедчеккинконфигуратионбасе](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект appleExpeditedCheckinConfigurationBase](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 

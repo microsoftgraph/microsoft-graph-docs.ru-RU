@@ -1,34 +1,34 @@
 ---
-title: Создание Манажедаллдевицецертификатестате
-description: Создание нового объекта Манажедаллдевицецертификатестате.
+title: Создание managedAllDeviceCertificateState
+description: Создайте новый объект managedAllDeviceCertificateState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a3ce5624e9b54d58cfab25d438b3ded71c023a1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2f240bde656806928dd03d478acb26c73bcfe8d0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49264704"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51155199"
 ---
-# <a name="create-managedalldevicecertificatestate"></a>Создание Манажедаллдевицецертификатестате
+# <a name="create-managedalldevicecertificatestate"></a>Создание managedAllDeviceCertificateState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .
+Создайте новый [объект managedAllDeviceCertificateState.](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,34 +43,34 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Манажедаллдевицецертификатестате в формате JSON.
+В теле запроса поставляем представление JSON для объекта managedAllDeviceCertificateState.
 
-В следующей таблице приведены свойства, необходимые при создании Манажедаллдевицецертификатестате.
+В следующей таблице показаны свойства, необходимые при создании управляемогоAllDeviceCertificateState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
-|манажеддевицедисплайнаме|String|Отображаемое имя устройства|
+|id|Строка|Ключ объекта.|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзови статус. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|Время последнего изменения состояния отвода|
+|managedDeviceDisplayName|Строка|Имя отображения устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
-|цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|цертификатеиссуернаме|String|Издатель|
-|certificateThumbprint|String|Thumbprint|
-|цертификатесериалнумбер|String|Серийный номер|
-|цертификатесубжектнаме|String|Имя субъекта сертификата|
-|цертификатекэйусажес|Int32|Использование ключа|
-|цертификатикстендедкэйусажес|String|Расширенное использование ключа|
-|цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
+|certificateExpirationDateTime|DateTimeOffset|Дата истечения срока действия сертификата|
+|certificateIssuerName|Строка|Издатель|
+|certificateThumbprint|Строка|Thumbprint|
+|certificateSerialNumber|Строка|Серийный номер|
+|certificateSubjectName|Строка|Имя субъекта сертификата|
+|certificateKeyUsages|Int32|Использование ключей|
+|certificateExtendedKeyUsages|Строка|Расширенное использование ключей|
+|certificateIssuanceDateTime|DateTimeOffset|Дата выпуска|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

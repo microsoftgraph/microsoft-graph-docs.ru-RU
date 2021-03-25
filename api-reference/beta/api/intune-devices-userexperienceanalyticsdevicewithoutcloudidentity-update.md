@@ -1,22 +1,22 @@
 ---
-title: Обновление объекта userExperienceAnalyticsDeviceWithoutCloudIdentity
+title: Обновление userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: Обновление свойств объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01ed006ffdc3b3ae2d13d015edb5799324b33efb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 633183db5824aae24c66f072d918974f5d3cd4fe
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161036"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154016"
 ---
-# <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>Обновление объекта userExperienceAnalyticsDeviceWithoutCloudIdentity
+# <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>Обновление userExperienceAnalyticsDeviceWithoutCloudIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "50161036"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,24 +43,24 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity/{user
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) в JSON.
+В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
 
 В следующей таблице показаны свойства, необходимые при создании [объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства с присоединением клиента аналитики пользовательского интерфейса.|
-|deviceName|String|Имя устройства с присоединением клиента.|
-|azureAdDeviceId|String|ИД устройства Azure Active Directory|
+|id|Строка|Уникальный идентификатор устройства для клиентской аналитики пользовательского интерфейса.|
+|deviceName|String|Клиент прикрепит имя устройства.|
+|azureAdDeviceId|Строка|Azure Active Directory Device Id|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

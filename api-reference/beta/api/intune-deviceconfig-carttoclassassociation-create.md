@@ -1,34 +1,34 @@
 ---
-title: Создание КарттоклассассоЦиатион
-description: Создание нового объекта КарттоклассассоЦиатион.
+title: Создание cartToClassAssociation
+description: Создайте новый объект cartToClassAssociation.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6adbb4dbdb9611b4624bbc87412b24704ee62437
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 50d99bd3f8c00e7c3fe1e4079447243248d93776
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49220968"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51155836"
 ---
-# <a name="create-carttoclassassociation"></a>Создание КарттоклассассоЦиатион
+# <a name="create-carttoclassassociation"></a>Создание cartToClassAssociation
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .
+Создайте новый [объект cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,29 +43,29 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта КарттоклассассоЦиатион в формате JSON.
+В теле запроса поставляем представление JSON для объекта cartToClassAssociation.
 
-В следующей таблице приведены свойства, необходимые при создании КарттоклассассоЦиатион.
+В следующей таблице показаны свойства, необходимые при создании cartToClassAssociation.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|version|Int32|Версия КарттоклассассоЦиатион.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
-|description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|version|Int32|Версия CartToClassAssociation.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|description|Строка|Администратор предоставил описание CartToClassAssociation.|
+|deviceCartIds|Коллекция String|Идентификаторы тележек устройств, связанных с классами.|
+|classroomIds|Коллекция String|Идентификаторы классов, связанных с тележками устройств.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

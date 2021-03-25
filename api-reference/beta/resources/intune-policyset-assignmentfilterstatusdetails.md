@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса assignmentFilterStatusDetails
-description: Представляет сведения о состоянии для устройства и полезной нагрузки, а также всех связанных примененных фильтров.
+title: тип ресурса assignmentFilterStatusDetails
+description: Представляем сведения о состоянии для устройства и полезной нагрузки и всех связанных с ними прикладных фильтров.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a376b1ff3d554753120860f1d3541f7952dd6130
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: be36fae74e412395bd74a24b11b36b48cbf165ff
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160897"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51155976"
 ---
-# <a name="assignmentfilterstatusdetails-resource-type"></a>Тип ресурса assignmentFilterStatusDetails
+# <a name="assignmentfilterstatusdetails-resource-type"></a>тип ресурса assignmentFilterStatusDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет сведения о состоянии для устройства и полезной нагрузки, а также всех связанных примененных фильтров.
+Представляем сведения о состоянии для устройства и полезной нагрузки и всех связанных с ними прикладных фильтров.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|managedDeviceId|String|Уникальный идентификатор объекта устройства.|
-|payloadId|String|Уникальный идентификатор объекта полезной нагрузки.|
-|userId|String|Уникальный идентификатор объекта UserId. Может иметь null|
-|deviceProperties|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Свойства устройства, используемые для оценки фильтра во время регистрации устройства.|
-|evalutionSummaries|[Коллекция assignmentFilterEvaluationSummary](../resources/intune-policyset-assignmentfilterevaluationsummary.md)|Сводка результатов оценки для каждого фильтра, связанного с устройством и полезной нагрузкой|
+|managedDeviceId|Строка|Уникальный идентификатор для объекта устройства.|
+|payloadId|Строка|Уникальный идентификатор для объекта полезной нагрузки.|
+|userId|String|Уникальный идентификатор для объекта UserId. Может быть null|
+|свойства устройств|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Свойства устройства, используемые для оценки фильтра во время регистрации устройства.|
+|evalutionSummaries|[assignmentFilterEvaluationSummary](../resources/intune-policyset-assignmentfilterevaluationsummary.md) collection|Сводки результатов оценки для каждого фильтра, связанного с устройством и полезной нагрузкой|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,7 +63,14 @@ ms.locfileid: "50160897"
       "assignmentFilterPlatform": "String",
       "evaluationResult": "String",
       "evaluationDateTime": "String (timestamp)",
-      "assignmentFilterType": "String"
+      "assignmentFilterType": "String",
+      "assignmentFilterTypeAndEvaluationResults": [
+        {
+          "@odata.type": "microsoft.graph.assignmentFilterTypeAndEvaluationResult",
+          "assignmentFilterType": "String",
+          "evaluationResult": "String"
+        }
+      ]
     }
   ]
 }

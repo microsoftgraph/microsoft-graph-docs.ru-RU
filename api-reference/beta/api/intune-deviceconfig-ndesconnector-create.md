@@ -1,35 +1,35 @@
 ---
-title: Создание Ндесконнектор
-description: Создание нового объекта Ндесконнектор.
+title: Создание ndesConnector
+description: Создайте новый объект ndesConnector.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6e7d4af96843416e63bcaa500e087b27d108ab8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0d5d1fdcadc99034f1f02044d02dc32de1dc1a0f
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49282876"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51155129"
 ---
-# <a name="create-ndesconnector"></a>Создание Ндесконнектор
+# <a name="create-ndesconnector"></a>Создание ndesConnector
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) .
+Создайте новый [объект ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,25 +43,25 @@ POST /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Ндесконнектор в формате JSON.
+В теле запроса поставляем представление JSON для объекта ndesConnector.
 
-В следующей таблице приведены свойства, необходимые при создании Ндесконнектор.
+В следующей таблице показаны свойства, необходимые при создании ndesConnector.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ соединителя NDES Connector.|
-|lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
-|state|[ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|String|Понятное имя соединителя NDES Connector.|
+|id|Строка|Ключ соединиттеля NDES.|
+|lastConnectionDateTime|DateTimeOffset|Последнее время подключения для соединитетеля Ndes|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединитетеля Ndes. Возможные значения: `none`, `active`, `inactive`.|
+|displayName|Строка|Дружеское имя соединиттеля Ndes.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

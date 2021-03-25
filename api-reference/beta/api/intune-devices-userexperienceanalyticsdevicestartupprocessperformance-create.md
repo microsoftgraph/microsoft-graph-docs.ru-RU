@@ -1,34 +1,34 @@
 ---
-title: Создание Усерекспериенцеаналитиксдевицестартуппроцессперформанце
-description: Создание нового объекта Усерекспериенцеаналитиксдевицестартуппроцессперформанце.
+title: Создание userExperienceAnalyticsDeviceStartupProcessPerformance
+description: Создание нового объекта userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a342229f1b470c15ed501ce8e181749ca4a8271
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5da588641c970adf10d3631f232669743d011c2d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263801"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154030"
 ---
-# <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Создание Усерекспериенцеаналитиксдевицестартуппроцессперформанце
+# <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Создание userExperienceAnalyticsDeviceStartupProcessPerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) .
+Создание нового [объекта userExperienceAnalyticsDeviceStartupProcessPerformance.](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,28 +43,28 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксдевицестартуппроцессперформанце в формате JSON.
+В теле запроса поставляем представление JSON для объекта userExperienceAnalyticsDeviceStartupProcessPerformance.
 
-В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксдевицестартуппроцессперформанце.
+В следующей таблице показаны свойства, необходимые при создании пользователяExperienceAnalyticsDeviceStartupProcessPerformance.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
-|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
-|productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
-|publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
-|deviceCount|Int64|Сводка по процессу запуска при запуске устройства с пользовательским интерфейсом.|
-|медианимпактинмс|Int32|Поведение при запуске устройства Analytics для пользователя в течение среднего влияния в миллисекундах.|
-|тоталимпактинмс|Int32|Общее влияние на процесс запуска пользователя при запуске устройства Analytics (в миллисекундах).|
+|id|Строка|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
+|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
+|publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
+|deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|
+|medianImpactInMs|Int32|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
+|totalImpactInMs|Int32|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

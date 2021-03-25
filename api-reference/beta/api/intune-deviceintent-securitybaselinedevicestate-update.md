@@ -1,35 +1,35 @@
 ---
-title: Обновление Секуритибаселинедевицестате
-description: Обновление свойств объекта Секуритибаселинедевицестате.
+title: Обновление securityBaselineDeviceState
+description: Обновление свойств объекта securityBaselineDeviceState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d783dff194d35bcfa09e1b0f1eef48273df065b2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8890d0ab917c5c916041f7b15abb31fe67ca73b5
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49306074"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154548"
 ---
-# <a name="update-securitybaselinedevicestate"></a>Обновление Секуритибаселинедевицестате
+# <a name="update-securitybaselinedevicestate"></a>Обновление securityBaselineDeviceState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md) .
+Обновление свойств объекта [securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,27 +43,27 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)
 
-В следующей таблице приведены свойства, необходимые при создании [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md).
+В следующей таблице показаны свойства, необходимые при создании [securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта|
-|манажеддевицеид|String|Идентификатор устройства Intune|
-|deviceDisplayName|String|Отображаемое имя устройства|
+|id|Строка|Уникальный идентификатор сущности|
+|managedDeviceId|Строка|ID устройства Intune|
+|deviceDisplayName|String|Отображение имени устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
-|lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия базовым требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|lastReportedDateTime|DateTimeOffset|Последнее измененное время даты отчета о политике|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
