@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 362f611560aab0dc83c81f347b902860af23bfc0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1d001949ac60b8d3c6335bf4a6e79cba5488c072
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969057"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202263"
 ---
 # <a name="update-team"></a>Обновление объекта команды
 
@@ -18,7 +18,7 @@ ms.locfileid: "48969057"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств указанной [команды](../resources/team.md).
+Обновление свойств указанной [группы.](../resources/team.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "48969057"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
@@ -37,7 +37,7 @@ ms.locfileid: "48969057"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}
+PATCH /teams/{team-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -46,7 +46,7 @@ PATCH /teams/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [группы](../resources/team.md) в формате JSON.
+В теле запроса поставляют представление JSON объекта [группы.](../resources/team.md)
 
 ## <a name="response"></a>Отклик
 

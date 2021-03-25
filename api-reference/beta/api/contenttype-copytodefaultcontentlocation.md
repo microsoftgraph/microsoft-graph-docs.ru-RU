@@ -5,12 +5,12 @@ description: Скопируйте файл в расположение конт�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 879615cac7dce92b4044c0a876006ef9f4edec01
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: afe4a5aebe4e19dd3957e0be0cca334a33035981
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771108"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201990"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "50771108"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Делегированное (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -40,7 +40,6 @@ ms.locfileid: "50771108"
 -->
 
 ```http
-
 POST /sites/id/contentTypes/id/copyToDefaultContentLocation 
 ```
 
@@ -58,8 +57,8 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|sourceFile| [itemReference](../resources/itemreference.md) |Метаданные о исходных файлах, которые необходимо скопировать в расположение контента по умолчанию. Обязательный.|
-|destinationFileName| string |Имя файла назначения. 
+|sourceFile| [itemReference](../resources/itemreference.md) |Метаданные о исходных файлах, которые необходимо скопировать в расположение контента по умолчанию. Обязательное.|
+|destinationFileName| строка |Имя файла назначения. 
 
 ## <a name="response"></a>Отклик
 
@@ -81,13 +80,13 @@ POST https://graph.microsoft.com/beta/sites/{id}/contentTypes/{contentTypeId}/co
 Content-Type: application/json
 
 {
-    "sourceFile": {
-        "sharepointIds": {
-            "listId": "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
-            "listItemId": "2"
-        }
-    },
-    "destinationFileName": "newname.txt"
+   "sourceFile":{
+      "sharepointIds":{
+         "listId":"e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
+         "listItemId":"2"
+      }
+   },
+   "destinationFileName":"newname.txt"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -118,7 +117,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   

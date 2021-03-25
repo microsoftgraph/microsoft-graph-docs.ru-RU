@@ -1,22 +1,22 @@
 ---
-title: Канал исправлений
+title: Канал патчей
 description: Обновление свойств указанного канала.
-author: clearab
+author: anandjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b90e3abff3d0624b7639195f02e342f7fa11c5ee
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 975623111ad2ecde6afa13432cba5fcd3f7fef4f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848929"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202221"
 ---
-# <a name="patch-channel"></a>Канал исправлений
+# <a name="patch-channel"></a>Канал патчей
 
 Пространство имен: microsoft.graph
 
-Обновление свойств указанного [канала](../resources/channel.md).
+Обновление свойств указанного [канала.](../resources/channel.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,29 +24,31 @@ ms.locfileid: "48848929"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Чаннелсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Чаннелсеттингс. ReadWrite. Group *, Чаннелсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}/channels/{id}
+PATCH /teams/{team-id}/channels/{channel-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
 Предоставьте в тексте запроса описание объекта [channel](../resources/channel.md) в формате JSON.
 
-> **Примечание:** Вы не можете обновить `membershipType` значение для существующего канала.
+> **Примечание:** Невозможно обновить `membershipType` значение для существующего канала.
 
 ## <a name="response"></a>Отклик
 
@@ -58,18 +60,17 @@ PATCH /teams/{id}/channels/{id}
 
 Ниже приведен пример запроса.
 
-```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
-```
-
 <!-- {
   "blockType": "request",
-  "name": "update_channel"
+  "name": "patch_channel"
 }-->
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
+```
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true,

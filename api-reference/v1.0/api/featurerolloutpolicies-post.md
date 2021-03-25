@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0a88d66594d9fa345c54a999f6452a7a287d0b08
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bbd11d73cf8453eac184708324b1001144c1a36c
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964923"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201597"
 ---
 # <a name="create-featurerolloutpolicy"></a>Создание featureRolloutPolicy
 
@@ -40,7 +40,7 @@ POST /policies/featureRolloutPolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Обязательный |
+| Авторизация | Bearer {token}. Обязательна |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,7 +52,7 @@ POST /policies/featureRolloutPolicies
 |:---------------|:--------|:----------|
 |displayName |string |Имя отображения для этой политики выкатки функций.|
 |функция |stagedFeatureName |Функция, которая будет выкатываться с помощью этой политики.|
-|isEnabled |string |Указывает, включена ли выкатка функций.|
+|isEnabled |Строка |Указывает, включена ли выкатка функций.|
 
 ## <a name="response"></a>Отклик
 
@@ -64,6 +64,8 @@ POST /policies/featureRolloutPolicies
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_featurerolloutpolicy_from_directory"
@@ -81,6 +83,24 @@ Content-type: application/json
   "isAppliedToOrganization": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-featurerolloutpolicy-from-directory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-featurerolloutpolicy-from-directory-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-featurerolloutpolicy-from-directory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-featurerolloutpolicy-from-directory-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: Создание канала
-description: Создайте новый канал в команде Майкрософт, как указано в теле запроса.
+description: Создание нового канала в команде, как указано в теле запроса.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ec64a58a88d410abf84acbbb6fd92ccaf3940b3e
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 7ab9a2d0bdd204e77b9bc149860e9fdfab9d2fcf
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848936"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202697"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -24,16 +24,20 @@ ms.locfileid: "48848936"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel. Create. Group *, Channel. Create, Branch. Migrate. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
+> **Примечания.** Разрешения, отмеченные * использование [согласия, определенного для ресурсов.]( https://aka.ms/teams-rsc)
+>
+> Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
+>
+> В будущем Корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от объема импортируемых данных с помощью API Teamwork.Migrate.All и/или [переноса.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels
+POST /teams/{team-id}/channels
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,19 +57,18 @@ POST /teams/{id}/channels
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-standard-channel"></a>Пример 1: создание стандартного канала
+### <a name="example-1-create-a-standard-channel"></a>Пример 1. Создание стандартного канала
 #### <a name="request"></a>Запрос
 
-В приведенном ниже примере показан запрос на создание стандартного канала.
+В следующем примере показан запрос на создание стандартного канала.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -74,27 +77,13 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
----
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
-> **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -108,26 +97,25 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
+  "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Пример 2: создание закрытого канала от имени пользователя
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Пример 2. Создание частного канала от имени пользователя
 
 #### <a name="request"></a>Запрос
 
-В приведенном ниже примере показан запрос на создание закрытого канала и Добавление пользователя в качестве владельца группы.
+В следующем примере показан запрос на создание частного канала и добавление пользователя в качестве владельца группы.
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{group_id}/channels
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -139,34 +127,18 @@ Content-type: application/json
      [
         {
            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('{user_id}')",
+           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('62855810-484b-4823-9e01-60667f8b12ae')",
            "roles":["owner"]
         }
      ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-user-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -180,14 +152,68 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{group_id}')/channels/$entity",
-    "id": "{channel_id}",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",
     "displayName": "My First Private Channel",
     "description": "This is my first private channels",
     "isFavoriteByDefault": null,
     "email": "",
-    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
+}
+```
+
+### <a name="example-3-create-a-channel-in-migration-mode"></a>Пример 3. Создание канала в режиме миграции
+
+#### <a name="request"></a>Запрос
+
+В следующем примере показано, как создать канал, который будет использоваться для импорта сообщений.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_for_migration"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-Type: application/json
+
+{
+  "@microsoft.graph.channelCreationMode": "migration",
+  "displayName": "Import_150958_99z",
+  "description": "Import_150958_99z",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+
+#### <a name="response"></a>Отклик
+
+Ниже показан пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
+После предварительного использования этот канал можно использовать для [импорта сообщений.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create_channel_for_migration",
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:987c7a9fbe6447ccb3ea31bcded5c75c@thread.tacv2",
+    "createdDateTime": null,
+    "displayName": "Import_150958_99z",
+    "description": "Import_150958_99z",
+    "isFavoriteByDefault": null,
+    "email": null,
+    "webUrl": null,
+    "membershipType": null,
+    "moderationSettings": null
 }
 ```
 

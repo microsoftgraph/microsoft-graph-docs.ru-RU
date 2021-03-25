@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 473f3523310a17c2ffb2b17fed2051922421faa0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6e31be45d212cf8180df8b692ab15eda34cd41e7
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964928"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201632"
 ---
 # <a name="list-featurerolloutpolicies"></a>Функция ListRolloutPolicies
 
@@ -44,7 +44,7 @@ GET /policies/featureRolloutPolicies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Обязательный |
+| Авторизация | Bearer {token}. Обязательна |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -60,6 +60,8 @@ GET /policies/featureRolloutPolicies
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_featurerolloutpolicies"
@@ -68,6 +70,24 @@ GET /policies/featureRolloutPolicies
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

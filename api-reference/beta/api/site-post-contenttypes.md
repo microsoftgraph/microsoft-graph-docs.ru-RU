@@ -5,12 +5,12 @@ description: Создание типа контента для сайта.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8d2d4ce3bef4264d5bf0764b9003f2123e7cf014
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9617d43291e241bb937e7743dcbfddbb83cb6edd
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965152"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202070"
 ---
 # <a name="create-contenttype"></a>Создание contentType
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "50965152"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |Sites.Manage.All, Sites.FullControl.All    |
+|Делегированное (рабочая или учебная учетная запись) |Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается    |
 |Приложение |Sites.Manage.All, Sites.FullControl.All |
 
@@ -84,6 +84,18 @@ Content-Type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-contenttype-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-contenttype-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

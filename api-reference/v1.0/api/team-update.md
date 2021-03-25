@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30467e6103dbc858e0b42de7012e9c2171f7372a
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: d16a58f8ba019b0a9dbd4eb47356074bed4319d8
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848782"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202648"
 ---
 # <a name="update-team"></a>Обновление объекта команды
 
@@ -18,7 +18,7 @@ ms.locfileid: "48848782"
 
 
 
-Обновление свойств указанной [команды](../resources/team.md).
+Обновление свойств указанной [группы.](../resources/team.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,16 +28,16 @@ ms.locfileid: "48848782"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Теамсеттингс. ReadWrite. Group *, Теамсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}
+PATCH /teams/{team-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,7 +47,7 @@ PATCH /teams/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [группы](../resources/team.md) в формате JSON.
+В теле запроса поставляют представление JSON объекта [группы.](../resources/team.md)
 
 ## <a name="response"></a>Отклик
 

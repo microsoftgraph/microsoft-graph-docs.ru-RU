@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c6f1eb9254b0af1ce0ec8b11fbaf775482197104
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: ca4e3c55c56d6b4a469515dc20a9fbff5cbec36f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714272"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202095"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -37,12 +37,13 @@ ms.locfileid: "49714272"
 |[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
 |[Добавление участника](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
 |[Получение участника](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
-|[Удаление участника](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
 |[Обновление роли участника](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
+|[Удаление участника](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
 |[Архивация команды](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Перевод команды в состояние только для чтения. |
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
 |[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
+|[Завершение миграции](../api/team-completemigration.md)|[team](team.md)| Удаление режима миграции из команды, после чего команда становится доступной для публикации и чтения сообщений пользователями.|
 |[Перечисление приложений, установленных в команде](../api/team-list-installedapps.md) | Коллекция [teamsAppInstallation](teamsappinstallation.md) | Перечисление приложений, установленных в команде.|
 |[Добавление приложения в команду](../api/team-post-installedapps.md) |Нет | Добавление (установка) приложения в команду.|
 |[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение указанного приложения, установленного в команде.|
@@ -65,6 +66,17 @@ ms.locfileid: "49714272"
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
 |webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
+|createdDateTime|dateTimeOffset|Метка времени создания команды.|
+
+### <a name="instance-attributes"></a>Атрибуты экземпляра
+
+Атрибуты экземпляра — это свойства с особым поведением. Эти свойства — временные и а) определяют поведение выполнения службы; или б) предоставляют краткосрочные значения свойств, например URL-адрес скачивания элемента, у которого истекает срок действия.
+
+| Имя свойства| Тип   | Описание
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.teamCreationMode|Строка|Указывает, что команда находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`. **Примечание**. В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.|
+
+Пример запроса POST см. в разделе [Запрос (создание команды в состоянии миграции)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="relationships"></a>Связи
 
@@ -99,7 +111,8 @@ ms.locfileid: "49714272"
   "internalId": "string",
   "isArchived": false,
   "webUrl": "string (URL)",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 

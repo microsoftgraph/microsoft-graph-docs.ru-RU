@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a8c05b71c440925425d47fc19e5b836559e42b85
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 439522645966f35c2ba68795be71c698b2808e97
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950291"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202655"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -68,7 +68,7 @@ ms.locfileid: "50950291"
 |webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Настройка параметров класса. Доступна только в том случае, если команда представляет класс.|
 |isMembershipLimitedToOwners|Boolean|Если присвоено значение `true`, команда в настоящее время находится в состоянии участия только для владельцев команды и недоступна другим участникам, например учащимся.|
-|createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания команды.|
+|createdDateTime|dateTimeOffset|Метка времени создания команды.|
 
 ### <a name="instance-attributes"></a>Атрибуты экземпляра
 
@@ -123,7 +123,7 @@ ms.locfileid: "50950291"
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 

@@ -5,35 +5,37 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4b13ce1738125a9c28b84d384a1191d2ae5fb383
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 0e56d43e84dc7ba2cc47fd30ac47e9cb2fdcc8ea
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373904"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202256"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
 Пространство имен: microsoft.graph
 
-Создание нового ответа на [сообщение](../resources/chatmessage.md) в указанном [канале](../resources/channel.md).
+Создайте новый ответ [на chatMessage в](../resources/chatmessage.md) указанном [канале.](../resources/channel.md)
 
-> **Note**: мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Чаннелмессаже. Send, Group. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Для приложений                           | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:--------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Teamwork.Migrate.All |
+
+> **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/messages/{id}/replies
+POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,23 +46,25 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [Message](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
+В тексте запроса поставляем представление JSON объекта [сообщения.](../resources/chatmessage.md) Обязательным является только свойство body, другие свойства необязательны.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика с созданным [сообщением](../resources/chatmessage.md) .
+В случае успешной работы этот метод возвращает `201 Created` код ответа с [созданным](../resources/chatmessage.md) сообщением.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Пример 1. Создание нового ответа на chatMessage
 
-# <a name="http"></a>[HTTP](#tab/http)
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/replies
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 Content-type: application/json
 
 {
@@ -70,26 +74,10 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-message-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Отклик
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### <a name="response"></a>Отклик
-
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,10 +90,10 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages('id-value')/replies/$entity",
-    "id": "id-value",
-    "replyToId": null,
-    "etag": "id-value",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+    "id": "1591039710682",
+    "replyToId": "1590776551682",
+    "etag": "1591039710682",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
     "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
@@ -121,7 +109,7 @@ Content-length: 160
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
+            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
             "displayName": "Joh Doe",
             "userIdentityType": "aadUser"
         }
@@ -133,6 +121,84 @@ Content-length: 160
     "attachments": [],
     "mentions": [],
     "reactions": []
+}
+```
+
+### <a name="example-2-import-messages"></a>Пример 2. Импорт сообщений
+
+> **Примечание.** Область `Teamwork.Migrate.All` разрешений требуется для этого сценария.
+
+#### <a name="request"></a>Запрос
+
+В следующем примере покажите, как импортировать сообщения с использованием ключей и ключей в `createDateTime` `from` тексте запроса.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
+
+{
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "from":{
+      "user":{
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+         "displayName":"Joh Doe"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   }
+}
+
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 200 OK
+
+{
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+   "id":"1591039710682",
+   "replyToId":"1590776551682",
+   "etag":"1591039710682",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
 }
 ```
 

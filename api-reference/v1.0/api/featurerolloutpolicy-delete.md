@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 351e0a78f52491118ba89b19cc8d3de44793b5c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1b06a82259d2bd0694cf8bf66807a8625d3b1b84
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964887"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201377"
 ---
 # <a name="delete-featurerolloutpolicy"></a>Удаление featureRolloutPolicy
 
@@ -40,7 +40,7 @@ DELETE /policies/featureRolloutPolicies/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Обязательный |
+| Авторизация | Bearer {token}. Обязательна |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,6 +55,8 @@ DELETE /policies/featureRolloutPolicies/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_featurerolloutpolicy"
@@ -63,6 +65,24 @@ DELETE /policies/featureRolloutPolicies/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-featurerolloutpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-featurerolloutpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-featurerolloutpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-featurerolloutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
