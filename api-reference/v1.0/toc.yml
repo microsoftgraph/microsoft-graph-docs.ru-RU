@@ -195,7 +195,7 @@ items:
     items:
       - name: Обзор
         href: overview.md
-      - name: Пользователи
+      - name: Users
         items:
           - name: Обзор
             href: resources/users.md
@@ -217,7 +217,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: Список
+              - name: List
                 href: api/user-list-approleassignments.md
               - name: Добавить
                 href: api/user-post-approleassignments.md
@@ -260,7 +260,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Предоставление делегированных разрешений
             items:
-              - name: Список
+              - name: List
                 href: api/user-list-oauth2permissiongrants.md
           - name: Объекты каталога
             href: resources/directoryobject.md
@@ -548,7 +548,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: Список
+              - name: List
                 href: api/group-list-approleassignments.md
               - name: Добавить
                 href: api/group-post-approleassignments.md
@@ -744,7 +744,7 @@ items:
                     href: api/application-delete-extensionproperty.md
               - name: Владельцы
                 items:
-                  - name: Список
+                  - name: List
                     href: api/application-list-owners.md
                   - name: Добавить
                     href: api/application-post-owners.md
@@ -757,7 +757,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -766,7 +766,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -801,7 +801,7 @@ items:
               - name: Назначение ролей приложений
                 href: resources/approleassignment.md
                 items:
-                  - name: Список
+                  - name: List
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Добавить
                     href: api/serviceprincipal-post-approleassignments.md
@@ -825,7 +825,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Предоставление делегированных разрешений
                 items:
-                  - name: Список
+                  - name: List
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Классификация делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
@@ -852,7 +852,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Владельцы
                 items:
-                  - name: Список
+                  - name: List
                     href: api/serviceprincipal-list-owners.md
                   - name: Добавить
                     href: api/serviceprincipal-post-owners.md
@@ -865,7 +865,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -874,7 +874,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -911,7 +911,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -920,7 +920,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1080,9 +1080,9 @@ items:
                 href: api/calendarpermission-update.md
               - name: Delete
                 href: api/calendarpermission-delete.md
-          - name: Categories
+          - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4458,7 +4458,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4729,7 +4729,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5226,8 +5226,10 @@ items:
                 href: api/user-list-joinedteams.md
               - name: Получить основной канал
                 href: api/team-get-primarychannel.md
-              - name: Список всех команд
+              - name: Перечисление всех команд
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
+              - name: Полная миграция для группы
+                href: api/team-completemigration.md
           - name: Группа (команда)
             href: resources/group.md
             items:
@@ -5294,6 +5296,8 @@ items:
                 href: api/channel-update-members.md
               - name: Удаление участника
                 href: api/channel-delete-members.md
+              - name: Полная миграция для канала
+                href: api/channel-completemigration.md
               - name: Получение папки с файлами
                 href: api/channel-get-filesfolder.md
               - name: Перечисление сообщений в каналах
@@ -5411,7 +5415,7 @@ items:
             items:
               - name: Вкладка в канале
                 items:
-                  - name: Список вкладок на канале
+                  - name: Перечисление вкладок в канале
                     href: api/channel-list-tabs.md
                   - name: Добавление вкладки в канал
                     href: api/channel-post-tabs.md
@@ -5500,9 +5504,9 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Список
+                  - name: List
                     href: api/offershiftrequest-list.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/offershiftrequest-approve.md
                   - name: Отклонение
                     href: api/offershiftrequest-decline.md
@@ -5528,7 +5532,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/openshiftchangerequest-approve.md
                   - name: Отклонение
                     href: api/openshiftchangerequest-decline.md
@@ -5548,7 +5552,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/swapshiftschangerequest-approve.md
                   - name: Отклонение
                     href: api/swapshiftschangerequest-decline.md
@@ -5585,7 +5589,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/timeoffrequest-approve.md
                   - name: Отклонение
                     href: api/timeoffrequest-decline.md
@@ -5645,7 +5649,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Task
             href: resources/todotask.md
             items:
               - name: Перечисление задач
