@@ -1,35 +1,35 @@
 ---
 title: Создание windowsQualityUpdateProfile
-description: Создание объекта windowsQualityUpdateProfile.
+description: Создайте новый объект WindowsQualityUpdateProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb1f1e20460c1bb9e109b45dea555ef0f475bd70
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 19a6a9c7b267ad4de2e675a43f5fd5420736a5c6
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160748"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156249"
 ---
 # <a name="create-windowsqualityupdateprofile"></a>Создание windowsQualityUpdateProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание объекта [windowsQualityUpdateProfile.](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)
+Создайте [новый объект WindowsQualityUpdateProfile.](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,30 @@ POST /deviceManagement/windowsQualityUpdateProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта windowsQualityUpdateProfile в JSON.
+В теле запроса поставляем представление JSON для объекта WindowsQualityUpdateProfile.
 
-В следующей таблице показаны свойства, необходимые при создании объекта windowsQualityUpdateProfile.
+В следующей таблице показаны свойства, необходимые при создании windowsQualityUpdateProfile.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ИД политики Intune.|
-|displayName|String|Отображаемая имя профиля.|
-|description|String|Описание профиля, указанного пользователем.|
-|expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Параметры ускорения обновления.|
-|createdDateTime|DateTimeOffset|Дата создания профиля.|
+|id|Строка|ID политики Intune.|
+|displayName|Строка|Имя отображения для профиля.|
+|description|Строка|Описание профиля, указанного пользователем.|
+|expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Параметры ускоренного обновления.|
+|createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления качества.|
+|releaseDateDisplayName|Строка|Содружественная дата выпуска для отображения для выпуска обновления качества|
+|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект WindowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -73,7 +75,7 @@ POST /deviceManagement/windowsQualityUpdateProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfiles
 Content-type: application/json
-Content-length: 418
+Content-length: 558
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -86,7 +88,9 @@ Content-length: 418
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
@@ -95,7 +99,7 @@ Content-length: 418
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 730
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -111,7 +115,9 @@ Content-Length: 590
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 

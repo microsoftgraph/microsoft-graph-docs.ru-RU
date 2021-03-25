@@ -1,35 +1,35 @@
 ---
-title: Обновление Ролеманажемент
-description: Обновление свойств объекта Ролеманажемент.
+title: Обновление roleManagement
+description: Обновление свойств объекта roleManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2f64e6c7d6f06a4808a37a12ae2c8f55bcb21a8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 549d3ab5bc3e4d248ba81bf5c0059a6fcd0d5e90
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49304715"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156676"
 ---
-# <a name="update-rolemanagement"></a>Обновление Ролеманажемент
+# <a name="update-rolemanagement"></a>Обновление roleManagement
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [ролеманажемент](../resources/intune-rbac-rolemanagement.md) .
+Обновление свойств объекта [roleManagement.](../resources/intune-rbac-rolemanagement.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,22 +43,22 @@ PATCH /roleManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [ролеманажемент](../resources/intune-rbac-rolemanagement.md) в формате JSON.
+В теле запроса поставляем представление JSON для [объекта roleManagement.](../resources/intune-rbac-rolemanagement.md)
 
-В следующей таблице приведены свойства, необходимые при создании [ролеманажемент](../resources/intune-rbac-rolemanagement.md).
+В следующей таблице показаны свойства, необходимые при создании [roleManagement.](../resources/intune-rbac-rolemanagement.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [ролеманажемент](../resources/intune-rbac-rolemanagement.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [roleManagement](../resources/intune-rbac-rolemanagement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
