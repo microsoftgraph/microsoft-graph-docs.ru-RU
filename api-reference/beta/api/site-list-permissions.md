@@ -5,28 +5,30 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e1dd8c4dd30d6cc4279178e88088b305aea3b87c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: b4c950aec7b58eb6583e8b7a0a209a64f022368e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176476"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473215"
 ---
-# <a name="list-permissions"></a><span data-ttu-id="21574-103">Разрешения списка</span><span class="sxs-lookup"><span data-stu-id="21574-103">List permissions</span></span>
-<span data-ttu-id="21574-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="21574-104">Namespace: microsoft.graph</span></span>
+# <a name="list-permissions"></a><span data-ttu-id="619eb-103">Разрешения списка</span><span class="sxs-lookup"><span data-stu-id="619eb-103">List permissions</span></span>
+<span data-ttu-id="619eb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="619eb-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="21574-105">Получите ресурсы [разрешений](../resources/permission.md) из свойства навигации разрешений на сайте.</span><span class="sxs-lookup"><span data-stu-id="21574-105">Get the [permission](../resources/permission.md) resources from the permissions navigation property on a site.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="21574-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="21574-106">Permissions</span></span>
-<span data-ttu-id="21574-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="21574-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="619eb-105">Получите ресурсы [разрешений](../resources/permission.md) из свойства навигации разрешений на сайте.</span><span class="sxs-lookup"><span data-stu-id="619eb-105">Get the [permission](../resources/permission.md) resources from the permissions navigation property on a site.</span></span>
 
-|<span data-ttu-id="21574-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="21574-109">Permission type</span></span>                        | <span data-ttu-id="21574-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="21574-110">Permissions (from least to most privileged)</span></span>
+## <a name="permissions"></a><span data-ttu-id="619eb-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="619eb-106">Permissions</span></span>
+<span data-ttu-id="619eb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="619eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="619eb-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="619eb-109">Permission type</span></span>                        | <span data-ttu-id="619eb-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="619eb-110">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="21574-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="21574-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="21574-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="21574-112">Not supported.</span></span>
-|<span data-ttu-id="21574-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="21574-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="21574-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="21574-114">Not supported.</span></span>
-|<span data-ttu-id="21574-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="21574-115">Application</span></span>                            | <span data-ttu-id="21574-116">Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="21574-116">Sites.FullControl.All</span></span>
+|<span data-ttu-id="619eb-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="619eb-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="619eb-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="619eb-112">Not supported.</span></span>
+|<span data-ttu-id="619eb-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="619eb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="619eb-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="619eb-114">Not supported.</span></span>
+|<span data-ttu-id="619eb-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="619eb-115">Application</span></span>                            | <span data-ttu-id="619eb-116">Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="619eb-116">Sites.FullControl.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="21574-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="21574-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="619eb-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="619eb-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -36,26 +38,26 @@ ms.locfileid: "50176476"
 GET /sites/{sitesId}/permissions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="21574-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="21574-118">Optional query parameters</span></span>
-<span data-ttu-id="21574-119">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="21574-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="21574-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="21574-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="619eb-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="619eb-118">Optional query parameters</span></span>
+<span data-ttu-id="619eb-119">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="619eb-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="619eb-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="619eb-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="21574-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="21574-121">Request headers</span></span>
-|<span data-ttu-id="21574-122">Имя</span><span class="sxs-lookup"><span data-stu-id="21574-122">Name</span></span>|<span data-ttu-id="21574-123">Описание</span><span class="sxs-lookup"><span data-stu-id="21574-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="619eb-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="619eb-121">Request headers</span></span>
+|<span data-ttu-id="619eb-122">Имя</span><span class="sxs-lookup"><span data-stu-id="619eb-122">Name</span></span>|<span data-ttu-id="619eb-123">Описание</span><span class="sxs-lookup"><span data-stu-id="619eb-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="21574-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="21574-124">Authorization</span></span>|<span data-ttu-id="21574-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="21574-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="619eb-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="619eb-124">Authorization</span></span>|<span data-ttu-id="619eb-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="619eb-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="21574-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="21574-127">Request body</span></span>
-<span data-ttu-id="21574-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="21574-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="619eb-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="619eb-127">Request body</span></span>
+<span data-ttu-id="619eb-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="619eb-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="21574-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="21574-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="619eb-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="619eb-129">Response</span></span>
 
-<span data-ttu-id="21574-130">В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [разрешений](../resources/permission.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="21574-130">If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.</span></span>
+<span data-ttu-id="619eb-130">В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` разрешений в [](../resources/permission.md) тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="619eb-130">If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="21574-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="21574-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="619eb-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="619eb-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="21574-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="21574-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="619eb-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="619eb-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="21574-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="21574-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="619eb-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="619eb-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_permission"
@@ -64,19 +66,19 @@ GET /sites/{sitesId}/permissions
 ``` http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 ```
-# <a name="c"></a>[<span data-ttu-id="21574-134">C#</span><span class="sxs-lookup"><span data-stu-id="21574-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="619eb-134">C#</span><span class="sxs-lookup"><span data-stu-id="619eb-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="21574-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="21574-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="619eb-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="619eb-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="21574-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="21574-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="619eb-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="619eb-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="21574-137">Java</span><span class="sxs-lookup"><span data-stu-id="21574-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="619eb-137">Java</span><span class="sxs-lookup"><span data-stu-id="619eb-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -84,8 +86,8 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 
 
 
-### <a name="response"></a><span data-ttu-id="21574-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="21574-138">Response</span></span>
-<span data-ttu-id="21574-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="21574-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="619eb-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="619eb-138">Response</span></span>
+<span data-ttu-id="619eb-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="619eb-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,28 +99,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "1",
-      "roles": ["read"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
-        }
-      }]
-    },
-    {
-      "id": "2",
-      "roles": ["write"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
-        }
-      }]
-    }
-  ]
+   "value":[
+      {
+         "id":"1",
+         "roles":[
+            "read"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+                  "displayName":"Contoso Time Manager App"
+               }
+            }
+         ]
+      },
+      {
+         "id":"2",
+         "roles":[
+            "write"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+                  "displayName":"Fabrikam Dashboard App"
+               }
+            }
+         ]
+      }
+   ]
 }
 ```
 

@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса resourceData
-description: Представляет данные ресурсов, вложенные в уведомление об изменении, отправляемое подписчику.
+title: тип ресурса resourceData
+description: Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: 29fb3d93db939ec077444c367d74aadc7cd751fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: change-notifications
+ms.openlocfilehash: d852268ee1a007b60014a224b34d12f25100fe8c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967228"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467969"
 ---
-# <a name="resourcedata-resource-type"></a><span data-ttu-id="4e953-103">Тип ресурса resourceData</span><span class="sxs-lookup"><span data-stu-id="4e953-103">resourceData resource type</span></span>
+# <a name="resourcedata-resource-type"></a><span data-ttu-id="6fd29-103">тип ресурса resourceData</span><span class="sxs-lookup"><span data-stu-id="6fd29-103">resourceData resource type</span></span>
 
-<span data-ttu-id="4e953-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4e953-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6fd29-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6fd29-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4e953-105">Представляет данные ресурсов, вложенные в уведомление об изменении, отправляемое подписчику.</span><span class="sxs-lookup"><span data-stu-id="4e953-105">Represents the resouce data attached to the change notification sent to the subscriber.</span></span>
+<span data-ttu-id="6fd29-105">Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.</span><span class="sxs-lookup"><span data-stu-id="6fd29-105">Represents the resouce data attached to the change notification sent to the subscriber.</span></span>
 
-<span data-ttu-id="4e953-106">Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="4e953-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
+<span data-ttu-id="6fd29-106">Подробности см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="6fd29-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="4e953-107">Методы</span><span class="sxs-lookup"><span data-stu-id="4e953-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="6fd29-107">Методы</span><span class="sxs-lookup"><span data-stu-id="6fd29-107">Methods</span></span>
 
-<span data-ttu-id="4e953-108">Нет.</span><span class="sxs-lookup"><span data-stu-id="4e953-108">None.</span></span>
+<span data-ttu-id="6fd29-108">Нет.</span><span class="sxs-lookup"><span data-stu-id="6fd29-108">None.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4e953-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="4e953-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6fd29-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="6fd29-109">Properties</span></span>
 
-<span data-ttu-id="4e953-110">Для ресурсов Outlook **resourceData** содержит следующие поля:</span><span class="sxs-lookup"><span data-stu-id="4e953-110">For Outlook resources, **resourceData** contains the following fields:</span></span>
+<span data-ttu-id="6fd29-110">Для ресурсов Outlook **resourceData содержит** следующие поля:</span><span class="sxs-lookup"><span data-stu-id="6fd29-110">For Outlook resources, **resourceData** contains the following fields:</span></span>
 
-| <span data-ttu-id="4e953-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="4e953-111">Property</span></span> | <span data-ttu-id="4e953-112">Тип</span><span class="sxs-lookup"><span data-stu-id="4e953-112">Type</span></span> | <span data-ttu-id="4e953-113">Описание</span><span class="sxs-lookup"><span data-stu-id="4e953-113">Description</span></span> |
+| <span data-ttu-id="6fd29-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="6fd29-111">Property</span></span> | <span data-ttu-id="6fd29-112">Тип</span><span class="sxs-lookup"><span data-stu-id="6fd29-112">Type</span></span> | <span data-ttu-id="6fd29-113">Описание</span><span class="sxs-lookup"><span data-stu-id="6fd29-113">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="4e953-114">@odata.type</span><span class="sxs-lookup"><span data-stu-id="4e953-114">@odata.type</span></span> | <span data-ttu-id="4e953-115">строка</span><span class="sxs-lookup"><span data-stu-id="4e953-115">string</span></span> | <span data-ttu-id="4e953-116">@odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект.</span><span class="sxs-lookup"><span data-stu-id="4e953-116">The OData entity type in Microsoft Graph that describes the represented object.</span></span> |
-| <span data-ttu-id="4e953-117">@odata.id</span><span class="sxs-lookup"><span data-stu-id="4e953-117">@odata.id</span></span> | <span data-ttu-id="4e953-118">строка</span><span class="sxs-lookup"><span data-stu-id="4e953-118">string</span></span> | <span data-ttu-id="4e953-119">@odata.id — идентификатор OData для объекта.</span><span class="sxs-lookup"><span data-stu-id="4e953-119">The OData identifier of the object.</span></span> |
-| <span data-ttu-id="4e953-120">@odata.etag</span><span class="sxs-lookup"><span data-stu-id="4e953-120">@odata.etag</span></span> | <span data-ttu-id="4e953-121">строка</span><span class="sxs-lookup"><span data-stu-id="4e953-121">string</span></span> | <span data-ttu-id="4e953-122">@odata.etag — HTTP-тег сущности, представляющий версию объекта.</span><span class="sxs-lookup"><span data-stu-id="4e953-122">The HTTP entity tag that represents the version of the object.</span></span> |
-| <span data-ttu-id="4e953-123">id</span><span class="sxs-lookup"><span data-stu-id="4e953-123">id</span></span> | <span data-ttu-id="4e953-124">строка</span><span class="sxs-lookup"><span data-stu-id="4e953-124">string</span></span> | <span data-ttu-id="4e953-125">Идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="4e953-125">The identifier of the object.</span></span> |
+| <span data-ttu-id="6fd29-114">@odata.type</span><span class="sxs-lookup"><span data-stu-id="6fd29-114">@odata.type</span></span> | <span data-ttu-id="6fd29-115">строка</span><span class="sxs-lookup"><span data-stu-id="6fd29-115">string</span></span> | <span data-ttu-id="6fd29-116">@odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект.</span><span class="sxs-lookup"><span data-stu-id="6fd29-116">The OData entity type in Microsoft Graph that describes the represented object.</span></span> |
+| <span data-ttu-id="6fd29-117">@odata.id</span><span class="sxs-lookup"><span data-stu-id="6fd29-117">@odata.id</span></span> | <span data-ttu-id="6fd29-118">строка</span><span class="sxs-lookup"><span data-stu-id="6fd29-118">string</span></span> | <span data-ttu-id="6fd29-119">@odata.id — идентификатор OData для объекта.</span><span class="sxs-lookup"><span data-stu-id="6fd29-119">The OData identifier of the object.</span></span> |
+| <span data-ttu-id="6fd29-120">@odata.etag</span><span class="sxs-lookup"><span data-stu-id="6fd29-120">@odata.etag</span></span> | <span data-ttu-id="6fd29-121">строка</span><span class="sxs-lookup"><span data-stu-id="6fd29-121">string</span></span> | <span data-ttu-id="6fd29-122">@odata.etag — HTTP-тег сущности, представляющий версию объекта.</span><span class="sxs-lookup"><span data-stu-id="6fd29-122">The HTTP entity tag that represents the version of the object.</span></span> |
+| <span data-ttu-id="6fd29-123">id</span><span class="sxs-lookup"><span data-stu-id="6fd29-123">id</span></span> | <span data-ttu-id="6fd29-124">строка</span><span class="sxs-lookup"><span data-stu-id="6fd29-124">string</span></span> | <span data-ttu-id="6fd29-125">Идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="6fd29-125">The identifier of the object.</span></span> |
 
-> <span data-ttu-id="4e953-126">**Примечание:** `id` Значение, указанное в **resourceData** , является допустимым во время создания уведомления об изменении.</span><span class="sxs-lookup"><span data-stu-id="4e953-126">**Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated.</span></span> <span data-ttu-id="4e953-127">Некоторые действия, например перемещение сообщения в другую папку, могут привести к `id` недействительности при обработке уведомления об изменении.</span><span class="sxs-lookup"><span data-stu-id="4e953-127">Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.</span></span>
+> <span data-ttu-id="6fd29-126">**Примечание:** Значение, `id` предоставляемого **в resourceData,** допустимо на момент сгенерировании уведомления об изменении.</span><span class="sxs-lookup"><span data-stu-id="6fd29-126">**Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated.</span></span> <span data-ttu-id="6fd29-127">Некоторые действия, например перенос сообщения в другую папку, могут привести к неодержительным действиям при обработке `id` уведомления об изменении.</span><span class="sxs-lookup"><span data-stu-id="6fd29-127">Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="4e953-128">Связи</span><span class="sxs-lookup"><span data-stu-id="4e953-128">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="6fd29-128">Связи</span><span class="sxs-lookup"><span data-stu-id="6fd29-128">Relationships</span></span>
 
-<span data-ttu-id="4e953-129">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="4e953-129">None.</span></span>
+<span data-ttu-id="6fd29-129">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="6fd29-129">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4e953-130">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="4e953-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6fd29-130">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="6fd29-130">JSON representation</span></span>
 
-<span data-ttu-id="4e953-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4e953-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6fd29-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6fd29-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
