@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Чанженотификатионенкриптедконтент
-description: Объект Чанженотификатионенкриптедконтент представляет зашифрованные данные, вложенные в уведомление об изменении.
+title: тип ресурса changeNotificationEncryptedContent
+description: Объект changeNotificationEncryptedContent представляет зашифрованные данные, присоединенные к уведомлению об изменении.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: c3d5f576c5259ba69f6fa2194cf52d7834a1f717
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.prod: change-notifications
+ms.openlocfilehash: 193f5eb36f19de1b3fd44112bf6bc56b19746911
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192163"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468746"
 ---
-# <a name="changenotificationencryptedcontent-resource-type"></a>Тип ресурса Чанженотификатионенкриптедконтент
+# <a name="changenotificationencryptedcontent-resource-type"></a>тип ресурса changeNotificationEncryptedContent
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет зашифрованные данные, вложенные в уведомление об изменении.
+Представляет зашифрованные данные, присоединенные к уведомлению об изменении.
 
-Дополнительные сведения см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов (Предварительная версия)](/graph/webhooks-with-resource-data.md).
+Подробные сведения см. [в материале Настройка уведомлений об изменении, включаем в себя данные ресурсов (предварительный просмотр).](/graph/webhooks-with-resource-data.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| data | string | Зашифрованные данные в кодировке Base64, которые создают полный респресентед ресурсов как JSON. Данные зашифрованы с `dataKey` помощью `AES/CBC/PKCS5PADDING` комплекта шифров. |
-| Подпись | string | Хэш-код HMAC-SHA256 данных для целей проверки в кодировке Base64. |
-| датакэй | string | Симметричный ключ в кодировке Base64, созданный Microsoft Graph для шифрования значения данных и создания подписи данных. Этот ключ шифруется с помощью открытого ключа сертификата, предоставленного во время подписки. Его необходимо расшифровать с помощью закрытого ключа сертификата, прежде чем его можно будет использовать для расшифровки данных или проверки подписи. Этот ключ зашифрован с помощью следующего комплекта шифра: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
-| енкриптионцертификатеид | string | Идентификатор сертификата, используемого для шифрования `dataKey` . |
-| енкриптионцертификатесумбпринт | string | Шестнадцатеричное представление отпечатка сертификата, используемого для шифрования `dataKey` . |
+| data | Строка | Зашифрованные данные с кодом Base64, которые создают полный ресурс, повторно задав его в качестве JSON. Данные шифруются с помощью набора `dataKey` `AES/CBC/PKCS5PADDING` шифров. |
+| dataSignature | Строка | Хэш HMAC-SHA256 с кодом Base64 для целей проверки. |
+| dataKey | Строка | Симметричный ключ с кодом Base64, созданный Microsoft Graph для шифрования значения данных и создания подписи данных. Этот ключ шифруется с общедоступным ключом сертификата, который был предоставлен во время подписки. Его необходимо расшифровать с помощью закрытого ключа сертификата, прежде чем его можно будет использовать для расшифровки данных или проверки подписи. Этот ключ шифруется следующим набором шифров: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
+| encryptionCertificateId | string | ID сертификата, используемого для шифрования `dataKey` . |
+| encryptionCertificateThumbprint | Строка | Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey` . |
 
 ## <a name="json-representation"></a>Представление JSON
 

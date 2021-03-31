@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c50b0a3197e682d00688ab8ec3527ed279aefa8
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 458c2b977f9c5f488b3a7b31d599b0c398993cfa
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201500"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468928"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>Получить adminConsentRequestPolicy
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "51201500"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
+|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
 
 При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
 + Глобальный администратор

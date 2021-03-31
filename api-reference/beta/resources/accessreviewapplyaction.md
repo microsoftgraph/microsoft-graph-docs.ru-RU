@@ -1,28 +1,30 @@
 ---
-title: Тип ресурса accessReviewApplyAction
-description: Представляет действие, необходимое для проверяемой пользователей после завершения экземпляра проверки доступа.
+title: тип ресурса accessReviewApplyAction
+description: Представляет действия, которые необходимо принять для рассмотренных пользователей после завершения экземпляра проверки доступа.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7360c2a3a058eb4f884cb786c05a83efe09a6193
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 09e23095f62c2e09b623e1e0634987f712e56730
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133541"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "51469404"
 ---
-# <a name="accessreviewapplyaction-resource-type"></a>Тип ресурса accessReviewApplyAction
+# <a name="accessreviewapplyaction-resource-type"></a>тип ресурса accessReviewApplyAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет базовый класс для применения действий [в accessReviewScheduleSettings](accessreviewschedulesettings.md) [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Поддерживаемые производные типы:
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-- **removeAccessApplyAction** — это производный тип accessReviewApplyAction, который указывает на удаление доступа к объекту, проверяемого по завершении проверки. Это тип по умолчанию для свойства applyActions в accessReviewScheduleSettings, который не требуется задан.
+Представляет базовый класс для применения действий в [accessReviewScheduleSettings](accessreviewschedulesettings.md) [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Поддерживаемые производные типы:
 
-- **disableAndDeleteUserApplyAction** — это производный тип accessReviewApplyAction, который указывает на отключение и удаление пользователя, проверяемого по завершении проверки. Этот тип не является типом по умолчанию и должен быть указан в accessReviewScheduleSettings.
+- **removeAccessApplyAction** — это производный тип accessReviewApplyAction, который указывает на удаление доступа к объекту, проверяемого по завершении проверки. Это тип по умолчанию для свойства applyActions в accessReviewScheduleSettings и не требует указаний.
+
+- **disableAndDeleteUserApplyAction** — это производный тип accessReviewApplyAction, который указывает на отключение и удаление пользователя, проверяемого по завершении проверки. Это тип по умолчанию, который должен быть указан в accessReviewScheduleSettings.
 
 ## <a name="properties"></a>Свойства
 Нет

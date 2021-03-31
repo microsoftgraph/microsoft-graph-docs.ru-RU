@@ -3,14 +3,14 @@ title: тип ресурса selfSignedCertificate
 description: Содержит сведения о публичной части сертификата подписи.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: luleonpla
-ms.openlocfilehash: f73cb515ce400762771c7553f6f668c295645b90
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 641748720be99272569c08874d91be7b7bb56888
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965256"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469033"
 ---
 # <a name="selfsignedcertificate-resource-type"></a>тип ресурса selfSignedCertificate
 
@@ -23,15 +23,15 @@ ms.locfileid: "50965256"
 ## <a name="properties"></a>Свойства
 Свойство|Тип|Описание
 ----|--|---
-|customKeyIdentifier|Binary| Настраиваемый идентификатор ключа |
-| displayName | Строка | Удобное имя для ключа. |
+|customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа |
+| displayName | String | Удобное имя для ключа. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
 |keyId|Guid|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
-|type|Строка|Тип учетных данных ключей. "AsymmetricX509Cert".|
-|использование|Строка|Строка, описываемая цель, для которой можно использовать ключ. Например, "Проверка".|
+|type|String|Тип учетных данных ключей. "AsymmetricX509Cert".|
+|использование|String|Строка, описываемая цель, для которой можно использовать ключ. Например, "Проверка".|
 |key|Двоичный| Значение для учетных данных ключа. Должно быть закодированное значение base-64. |
-|отпечатки пальцев| Строка | Значение отпечатка пальца для ключа.|
+|отпечатки пальцев| String | Значение отпечатка пальца для ключа.|
 
 ## <a name="json-representation"></a>Представление JSON
 

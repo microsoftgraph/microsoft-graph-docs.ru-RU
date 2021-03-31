@@ -4,12 +4,12 @@ description: Узнайте, как настроить приложения дл
 author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 23f46fec732895d33b2caa08c51493e9b5999b29
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f80db867829ac2bead2671c0ed6bc184e0e786f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961841"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468963"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Разрешить приложениям получать доступ к собраниям в Интернете от имени пользователя
 
@@ -23,7 +23,7 @@ ms.locfileid: "50961841"
 
 Чтобы настроить политику доступа к приложениям и разрешить приложениям получать доступ к собраниям в Интернете с разрешениями приложений:
 
-1. Определите applcation (client) ID приложения и пользовательские ID пользователей, от имени которых приложение будет уполномочено получать доступ к собраниям в Интернете.
+1. Определите ID приложения (клиента) и пользовательские ИД пользователей, от имени которых приложение будет уполномочено получать доступ к собраниям в Интернете.
 
     - Определите идентификатор приложения (клиента) на [портале регистрации приложений Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Идентификация пользователя (объекта) на портале управления пользователями [Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)

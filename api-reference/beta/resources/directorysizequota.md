@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса directorySizeQuota
-description: Представляет используемую компанию и общую квоту каталога.
+title: тип ресурса directorySizeQuota
+description: Представляет используемую и общую квоту каталогов компании.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: davidmu1
-ms.openlocfilehash: 3af82a957e152f0edf4d87e6fdf9a7888d4b64e4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: Jumaodhiss
+ms.openlocfilehash: 54e2280fdb416e5ccfd0853ee77a2ef3f90ddf37
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133989"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469376"
 ---
-# <a name="directorysizequota-resource-type"></a>Тип ресурса directorySizeQuota
+# <a name="directorysizequota-resource-type"></a>тип ресурса directorySizeQuota
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет используемую компанию и общую квоту каталога.
+Представляет используемую и общую квоту каталогов компании.
 
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|used|Int32| Использованная сумма квоты каталога. |
+|used|Int32| Используемая сумма квоты каталога. |
 |total|Int32| Общая сумма квоты каталога.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

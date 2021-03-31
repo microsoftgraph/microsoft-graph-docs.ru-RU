@@ -1,26 +1,26 @@
 ---
-title: Удаление appRoleAssignment из основного приложения-службы
-description: Удаление appRoleAssignment из основного приложения-службы.
+title: Удаление appRoleAssignment из основной службы
+description: Удаление appRoleAssignment из основной службы.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d16fd569b218c58accded22a2c23b6cb2d0f5b68
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2aa0ccdc0e10bdffac2eb60f7f5af3adb42dccd4
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128490"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469145"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление appRoleAssignment, предоставленного для основного приложения-службы
+# <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление appRoleAssignment, предоставленного директору службы
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет [appRoleAssignment,](../resources/approleassignment.md) предоставленное для основного приложения-службы.
+Удаляет [приложение AppRoleAssignment,](../resources/approleassignment.md) предоставленное директору службы.
 
-Роли приложений, которые назначены основным службам, также [называются разрешениями приложений.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Удаление назначения роли приложения для основного приложения-службы эквивалентно отмене предоставления разрешений только для приложений.
+Роли приложений, которые назначены директорам служб, также называются [разрешениями приложений.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Удаление назначения роли приложения для директора службы эквивалентно отмене разрешения только для приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Рекомендуется удалять назначения ролей приложения через связь с основными службами ресурсов, а не через отношение назначенного пользователя, группы или `appRoleAssignedTo`  `appRoleAssignments` основного пользователя-службы.
+> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью отношений директора службы ресурсов, а не отношений назначенного пользователя, группы или директора `appRoleAssignedTo`  `appRoleAssignments` службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -118,4 +118,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-

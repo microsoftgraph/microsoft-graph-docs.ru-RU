@@ -1,16 +1,16 @@
 ---
 title: Добавление участника
-description: Добавьте члена в группу Microsoft 365 или группу безопасности с помощью свойства навигации **Members** .
+description: Добавьте участника в группу Microsoft 365 или группу безопасности через свойство **навигации** членов.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e7e214c23aab13c45abf73e1242aa64ec71bfa3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 188f93c82734c9ae9fe0986114e3c4e4d2bd1772
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965006"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468875"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -18,12 +18,14 @@ ms.locfileid: "48965006"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте члена в группу Microsoft 365 или группу безопасности с помощью свойства навигации **Members** .
+Добавьте участника в группу Microsoft 365 или группу безопасности через свойство **навигации** членов.
 
-Вы можете добавлять пользователей, участников служб или другие группы. 
+Можно добавить пользователей, директоров служб или другие группы. 
 
 > [!Important]
-> Вы можете добавлять пользователей только в группы безопасности и группы Microsoft 365, управляемые через облако.
+> + Вы можете добавлять пользователей только в группы безопасности и группы Microsoft 365, управляемые через облако.
+> + Нельзя добавлять группы безопасности в группы Microsoft 365.
+> + Нельзя добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +34,7 @@ ms.locfileid: "48965006"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -87,11 +89,11 @@ Content-length: 30
 
 ---
 
-В тексте запроса `id` добавьте представление объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [группы](../resources/group.md) , который вы хотите добавить, в формате JSON.
+В теле запроса устройте JSON-представление объекта `id` [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или группового объекта, который необходимо добавить. [](../resources/group.md)
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

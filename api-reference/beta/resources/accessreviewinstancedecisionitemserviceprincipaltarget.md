@@ -1,31 +1,35 @@
 ---
-title: Тип ресурса accessReviewInstanceDecisionItemServicePrincipalTarget
-description: Представляет целевой объект проверки в качестве основного целевого объекта службы.
+title: accessReviewInstanceDecisionItemServicePrincipalTarget type
+description: Представляет цель проверки в качестве основной целевой задачи службы.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ef944fdd1b8dbe989b1ad92e3d49b1b057fdef74
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7d8032282d7ddaf41779b73f707b0749e3c82dd0
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133499"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "51469229"
 ---
-# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemServicePrincipalTarget
+# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>accessReviewInstanceDecisionItemServicePrincipalTarget type
 
 Пространство имен: microsoft.graph
 
-Представляет проверяемую службу в [accessReviewInstance.](accessreviewinstance.md)
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Наследуется [от accessReviewInstanceDecisionItemTarget.](../resources/accessreviewinstancedecisionitemtarget.md)
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
+
+Представляет главу службы, на рассмотрении в [accessReviewInstance](accessreviewinstance.md).
+
+Наследует [от accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| servicePrincipalID | Строка | Идентификатор основного службы, доступ которого просматривается. |
-| servicePrincipalDisplayName | Строка | Отображаемого имени основного службы, доступ которого просматривается. |
-| appId | String | AppId для проверяемого объекта субъекта-службы. |
+| servicePrincipalID | String | Идентификатор директора службы, доступ к которой пересматривается. |
+| servicePrincipalDisplayName | String | Отображает имя директора службы, доступ к которой пересматривается. |
+| appId | String | AppId для проверяемого основного объекта службы. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

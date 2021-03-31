@@ -1,57 +1,57 @@
 ---
-title: Тип ресурса Локатедрискевент
-description: Событие риска, обнаруженное защитой удостоверений Azure Active Directory на основе данных о расположении. К найденным относятся следующие типы событий риска.
+title: тип ресурса locatedRiskEvent
+description: 'Событие риска, обнаруженное Azure Active Directory Identity Protection, основанное на данных расположения. Типы событий, связанных с расположенными рисками, включают:'
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 461f20233e92edca48b9dd51fa417b33ab9f386c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 902dc864ea16bd677d0499711faa078131ca015d
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404674"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469460"
 ---
-# <a name="locatedriskevent-resource-type"></a>Тип ресурса Локатедрискевент
+# <a name="locatedriskevent-resource-type"></a>тип ресурса locatedRiskEvent
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Событие риска, обнаруженное [защитой удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) на основе данных о расположении. К найденным относятся следующие типы событий риска.
-* [входы с анонимными IP-адресами](anonymousipriskevent.md)
-* [входы с зараженных вредоносными программами устройств](malwareriskevent.md)
-* [невозможность перемещаться к необычным расположениям](impossibletravelriskevent.md)
-* [входы из подозрительных IP-адресов](suspiciousipriskevent.md)
-* [входы из незнакомых расположений](unfamiliarlocationriskevent.md) Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](/azure/active-directory/identity-protection/overview-identity-protection).
+Событие риска, обнаруженное [Azure Active Directory Identity Protection,](/azure/active-directory/identity-protection/overview-identity-protection) основанное на данных расположения. Типы событий, связанных с расположенными рисками, включают:
+* [входы с анонимных IP-адресов](anonymousipriskevent.md)
+* [входы с устройств, зараженных вредоносными программами](malwareriskevent.md)
+* [невозможное путешествие в нетипичные расположения](impossibletravelriskevent.md)
+* [входы с подозрительных IP-адресов](suspiciousipriskevent.md)
+* [входы из незнакомых мест](unfamiliarlocationriskevent.md) Полные сведения о событиях риска можно найти в документации [azure AD Identity Protection.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Локатедрискевент](../api/locatedriskevent-get.md) | [локатедрискевент](locatedriskevent.md) |Чтение свойств и связей объекта Локатедрискевент.|
+|[Get locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |Чтение свойств и связей объекта locatedRiskEvent.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
-|createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
+|createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно дате самого события риска. Это правильное свойство, используемее в качестве фильтра при запросе событий риска.|
 |id|string| Только для чтения|
-|ipAddress|string| IP-адрес входа|
-|location|string| Расположение, подключенное к IP-адресу входа|
-|рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|ipAddress|Строка| IP-адрес входного|
+|location|string| Расположение, прикрепленное к IP-адресу входного|
+|riskEventDateTime|dateTimeOffset| Дата и время возникновения события риска|
+|riskEventStatus|Строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|рискевенттипе|string| Тип риска|
-|userDisplayName|string| Имя пользователя под угрозой|
-|userId|строка| Идентификатор пользователя, который подвергается риску|
-|userPrincipalName|string| Имя участника пользователя, который подвергается риску|
+|riskEventType|Строка| Тип риска|
+|userDisplayName|Строка| Имя пользователя, на которого существует риск|
+|userId|строка| ID пользователя, на который существует риск|
+|userPrincipalName|string| Основное имя пользователя пользователя, на которого существует риск|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
+|impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

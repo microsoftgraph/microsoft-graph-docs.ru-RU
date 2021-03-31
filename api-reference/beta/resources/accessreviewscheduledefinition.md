@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 27b5debdbb9e55eafe55a4c1a7bc66d87b7290cc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 391b50e54c331c3f514bc68089b64f8d1d4fc169
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962667"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469337"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>тип ресурса accessReviewScheduleDefinition
 
@@ -31,19 +31,19 @@ AccessReviewScheduleDefinition содержит список [объектов a
 |[Список accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition collection](accessreviewscheduledefinition.md) | Списки всех accessReviewScheduleDefinition. Не включает связанные экземпляры accessReviewInstance в списки. |
 |[Получить accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Получите accessReviewScheduleDefinition с указанным id. |
 |[Создание accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создание нового accessReviewScheduleDefinition. |
-|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Отсутствуют. | Удалите accessReviewScheduleDefinition с указанным идентификатором. |
-|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Отсутствуют. | Обновление свойств accessReviewScheduleDefinition с указанным идентификатором. |
+|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удалите accessReviewScheduleDefinition с указанным идентификатором. |
+|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств accessReviewScheduleDefinition с указанным идентификатором. |
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :------------------| :-------------- | :---------- |
-| id | Строка | Уникальный идентификатор обзора доступа, назначенного функцией.|
-| displayName | Строка   | Имя серии обзоров доступа. Требуется при создании. |
+| id | String | Уникальный идентификатор обзора доступа, назначенного функцией.|
+| displayName | String   | Имя серии обзоров доступа. Требуется при создании. |
 | createdDateTime  |DateTimeOffset  | Timestamp при создания серии обзоров. |
 | lastModifiedDateTime | DateTimeOffset   | Timestamp при последней модификации серии обзоров.|
 | status  |String   | Это поле только для чтения указывает состояние accessReview. Типичные состояния `Initializing` включают , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
-| descriptionForAdmins  |string  |  Описание, предоставленное создателями обзора, чтобы предоставить администраторам дополнительный контекст обзора. |
-| descriptionForReviewers |string | Описание, предоставленное создателями обзора, чтобы предоставить рецензентам дополнительный контекст обзора. Рецензенты увидят это описание в отправленной им электронной почте с запросом на отзыв. |
+| descriptionForAdmins  |Строка  |  Описание, предоставленное создателями обзора, чтобы предоставить администраторам дополнительный контекст обзора. |
+| descriptionForReviewers |Строка | Описание, предоставленное создателями обзора, чтобы предоставить рецензентам дополнительный контекст обзора. Рецензенты увидят это описание в отправленной им электронной почте с запросом на отзыв. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | Пользователь, создавший этот обзор. |
 | область  |[accessReviewScope](../resources/accessreviewscope.md)  | Определяет область рассмотренных пользователей. Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) Требуется при создании. |
 | instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | В случае проверки гостевых пользователей во всех группах Microsoft 365 это определяет область просмотра групп. Каждая группа станет уникальным accessReviewInstance из серии обзоров доступа.  Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) | 
@@ -58,14 +58,18 @@ AccessReviewScheduleDefinition содержит список [объектов a
 |:---------------|:--------|:----------|
 | `instances`               |[accessReviewInstance](accessreviewinstance.md) collection         | Если это `accessReviewScheduleDefinition` повторяющийся обзор доступа, экземпляры представляют каждое повторение. Обзор, который не повторяется, будет иметь точно один экземпляр. Экземпляры также представляют каждый уникальный ресурс, рассмотренный в `accessReviewScheduleDefinition` . Если обзор имеет несколько ресурсов и несколько экземпляров, каждый ресурс будет иметь уникальный экземпляр для каждого повторения. |
 
-### <a name="supported-queries-for-accessreviewscheduledefinition"></a>Поддерживаемые запросы для accessReviewScheduleDefinition
+### <a name="supported-search-queries-for-accessreviewscheduledefinition"></a>Поддерживаемые поисковые запросы для accessReviewScheduleDefinition
 Ниже приводится запросы, поддерживаемые [в accessReviewScheduleDefinition](accessreviewscheduledefinition.md) на основе [accessReviewScope.](accessreviewscope.md)
 
 |Сценарий| Запрос |
 |--|--|
-| Список всех отдельных групп (исключает определения для всех `accessReviewScheduleDefinition` групп Microsoft 365 с гостевых пользователей) | /beta/identityGovernance/accessReviews/definitions?$filter=contains (scope/query, '/groups') |
-| Список каждого из них в определенной группе (исключает определения для всех `accessReviewScheduleDefinition` групп Microsoft 365 с гостевых пользователей) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
-| Список всех `accessReviewScheduleDefinition` областей для всех групп Microsoft 365 с гостевых пользователей | /beta/identityGovernance/accessReviews/definitions?$filter=contains (scope/query, './members') |
+| Список всех отдельных групп (исключает определения для всех `accessReviewScheduleDefinition` групп Microsoft 365 с гостевых пользователей) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups') |
+| Список каждого из них в определенной группе (исключает определения для всех `accessReviewScheduleDefinition` групп Microsoft 365 с гостевых пользователей) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups/{group id}') |
+| Список всех `accessReviewScheduleDefinition` областей для всех групп Microsoft 365 с гостевых пользователей | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members') |
+| Список всех `accessReviewScheduleDefinition` в пакете доступа | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'accessPackageAssignments') |
+| Список каждого `accessReviewScheduleDefinition` для главных служб, назначенных привилегированной роли | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'roleAssignmentScheduleInstances') |
+
+
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

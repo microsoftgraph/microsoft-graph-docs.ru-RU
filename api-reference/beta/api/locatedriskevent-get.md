@@ -1,24 +1,24 @@
 ---
-title: Получение Локатедрискевент
-description: Получение свойств и связей объекта локатедрискевент.
+title: Get locatedRiskEvent
+description: Извлечение свойств и связей объекта locatedriskevent.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: davidmu1
-ms.openlocfilehash: bf1f17524609e7a94e019019db37ebb9d45d91a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-access
+author: cloudhandler
+ms.openlocfilehash: b366859d98ece78e8a8af3742bb82612a1fd413d
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053680"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469194"
 ---
-# <a name="get-locatedriskevent"></a>Получение Локатедрискевент
+# <a name="get-locatedriskevent"></a>Get locatedRiskEvent
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта локатедрискевент.
+Извлечение свойств и связей объекта locatedriskevent.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ ms.locfileid: "48053680"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /locatedRiskEvents/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [локатедрискевент](../resources/locatedriskevent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [располагает объектRiskEvent](../resources/locatedriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

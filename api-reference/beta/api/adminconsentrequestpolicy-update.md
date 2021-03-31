@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3fcd6bb895a4f1cb36f099269c8414669dc98620
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 5efe85f8d78e11ea5c97799c426bba383300c24a
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201495"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468921"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>Обновление adminConsentRequestPolicy
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "51201495"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Policy.ReadWrite.ConsentRequest|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Policy.ReadWrite.ConsentRequest|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
 
 При вызове от имени пользователя пользователю необходимо принадлежать к роли [глобального](/azure/active-directory/roles/permissions-reference) администратора.
 
@@ -54,8 +54,8 @@ PUT /policies/adminConsentRequestPolicy
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isEnabled|Boolean|Указывает, включена или отключена функция запроса на согласие администратора.|
-|notifyReviewers|Boolean|Указывает, будут ли рецензенты получать уведомления.|
-|remindersEnabled|Boolean|Указывает, будут ли рецензенты получать сообщения напоминания.|
+|notifyReviewers|Логический|Указывает, будут ли рецензенты получать уведомления.|
+|remindersEnabled|Логический|Указывает, будут ли рецензенты получать сообщения напоминания.|
 |requestDurationInDays|Int32|Указывает продолжительность действия запроса до его автоматического истечения, если не будет применено решение.|
 |рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Список рецензентов для согласия администратора.|
 

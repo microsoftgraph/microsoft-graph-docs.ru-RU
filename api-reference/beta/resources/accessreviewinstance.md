@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: af2f3b0512ead453413a4fd65aa3337c7d9b2cd0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8ef2e48900484c32669a56c15b88de87dc4710d3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952825"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469058"
 ---
 # <a name="accessreviewinstance-resource-type"></a>тип ресурсов accessReviewInstance
 
@@ -31,18 +31,17 @@ ms.locfileid: "50952825"
 |[Список accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
 |[Получить accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Возвращает accessReviewInstance для accessReviewScheduleDefinition. Не включает связанный accessReviewInstanceDecisionItem в объекте. |
 |[Список ожидающихAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [accessReviewInstance collection.](accessreviewinstance.md) | Получите все ожидающих accessReviewInstance ресурсы, назначенные вызываемой пользователю. |
-|[Отправка напоминания accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Отсутствуют. | Отправьте напоминание рецензентам accessReviewInstance. |
-|[Остановка accessReviewInstance](../api/accessreviewinstance-stop.md) | Отсутствуют. | Вручную остановите accessReviewInstance. |
-|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Отсутствуют. | Позволяет вызываемой пользователю принять рекомендацию по принятию решений для каждого notReviewed accessReviewInstanceDecisionItem, на которых он является рецензентом для определенного accessReviewInstance. |
-|[Применение решений](../api/accessreviewinstance-applydecisions.md) | Отсутствуют. | Вручную применить решение для accessReviewInstance. |
-
-
+|[Отправка напоминания accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Нет. | Отправьте напоминание рецензентам accessReviewInstance. |
+|[Остановка accessReviewInstance](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите accessReviewInstance. |
+|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендацию по принятию решений для каждого notReviewed accessReviewInstanceDecisionItem, на которых он является рецензентом для определенного accessReviewInstance. |
+|[Применение решений](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную применить решение для accessReviewInstance. |
+|[Решения о пакетной записи](../api/accessreviewinstance-batchrecorddecisions.md)|Нет|Просмотр пакетов принципов или ресурсов в одном вызове.|
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :-------------------------| :---------------------------------- | :---------- |
-| id | Строка | Уникальный идентификатор экземпляра. |
-| displayName | Строка | Имя родительского [доступаReviewScheduleDefinition](accessreviewscheduledefinition.md). |
+| id | String | Уникальный идентификатор экземпляра. |
+| displayName | String | Имя родительского [доступаReviewScheduleDefinition](accessreviewscheduledefinition.md). |
 | startDateTime | DateTimeOffset | DateTime при запуске экземпляра проверки. Может быть в будущем. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | endDateTime | DateTimeOffset | DateTime, когда экземпляр проверки должен завершиться. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | status | String | Указывает состояние accessReview. Типичные состояния `Initializing` включают , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` .  Только для чтения.|

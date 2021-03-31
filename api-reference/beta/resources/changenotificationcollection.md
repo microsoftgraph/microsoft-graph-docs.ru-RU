@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса changeNotificationCollection
-description: Представляет коллекцию уведомлений о подписке, отправляемых подписчику.
+description: Представляет коллекцию уведомлений о подписке, отправленных абоненту.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: 4b273ecf2873842bb93b840241f2bf0a1741f1aa
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.prod: change-notifications
+ms.openlocfilehash: f2e634f8635927a1ac6f9be42f7de0971f7b1604
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192179"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469383"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Тип ресурса changeNotificationCollection
 
@@ -18,20 +18,20 @@ ms.locfileid: "48192179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет коллекцию уведомлений об изменении ресурсов, отправляемых подписчику.
+Представляет коллекцию уведомлений об изменении ресурсов, отправленных абоненту.
 
-Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).
+Подробности см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](webhooks.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
-Отсутствуют.
+Нет.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| валидатионтокенс | Коллекция (string) | Содержит массив маркеров JWT, созданных приложением Microsoft Graph для проверки источника уведомлений. Microsoft Graph создает один маркер для каждой отдельной записи приложения и клиента для элемента, если он существует в массиве значений. Имейте в виду, что уведомления могут содержать набор элементов для различных приложений и клиентов, подписанных с использованием того же URL-адреса уведомления. Предоставляется только для [уведомлений об изменениях с данными ресурсов](/graph/webhooks-with-resource-data.md) . |
-| значение | Коллекция ([чанженотификатион](changenotification.md)) | Набор уведомлений, отправляемых на URL-адрес уведомлений. Обязательный. |
+| validationTokens | Коллекция (string) | Содержит массив маркеров JWT, созданных Microsoft Graph для приложения для проверки происхождения уведомлений. Microsoft Graph создает один маркер для каждого отдельного приложения и пары клиента для элемента, если он существует в массиве значений. Имейте в виду, что уведомления могут содержать сочетание элементов для различных приложений и клиентов, которые подписывались с помощью одного и того же URL-адреса уведомлений. Только для [уведомлений об изменениях с данными ресурса Необязательный.](/graph/webhooks-with-resource-data.md) |
+| значение | [collection(changeNotification)](changenotification.md) | Набор уведомлений, отосланных на URL-адрес уведомления. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 

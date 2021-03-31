@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4322009b4f574e9a32958c25bf65320d4e535435
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 68c5bbbee46ad8df64b09700c66d6731c2a51bb1
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439116"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468935"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Обновление accessReviewInstanceDecisionItem
 
@@ -47,7 +47,7 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 
 | Свойство     | Тип       | Описание |
 |:-------------|:------------|:------------|
-| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve` `Deny` `NotReviewed` `DontKnow` . Обязательный.  |
+| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve` `Deny` `NotReviewed` `DontKnow` . Обязательное.  |
 |  обоснование | String | Контекст обзора, предоставленного администраторам. Обязательно, если оправданиеRequiredOnApproval является true на accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Отклик
@@ -59,45 +59,30 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 Это пример утверждения доступа для пользователя, представленного пользователем `accessReviewInstanceDecisionItem` .
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/654b34e7-b48f-4772-a2d4-08f1d0dd014c
+``` http
+PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
+Content-Type: application/json
+Content-length: 730
 
 {
   "decision": "Approve",
-  "justification": "I trust this person"
+  "justification": "This person is still on my team",
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewinstancedecisionitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewinstancedecisionitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewinstancedecisionitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
----
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
-  "truncated": false
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem"
 } -->
 ```http
 HTTP/1.1 204 Accepted

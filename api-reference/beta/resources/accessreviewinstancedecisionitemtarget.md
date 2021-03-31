@@ -1,24 +1,26 @@
 ---
-title: Тип ресурса accessReviewInstanceDecisionItemTarget
-description: 'Представляет целевой объект проверки как целевой объект пользователя или основной целевой объект службы. '
+title: accessReviewInstanceDecisionItemTarget type
+description: 'Представляет цель проверки как объект пользователя или основной целевой объект службы. '
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: dc6b21634735ed1e7061bd738617f44e446e3288
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c49af4f136e860edbfbcc635b7fc44e67814117c
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133506"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "51469224"
 ---
-# <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemTarget
+# <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>accessReviewInstanceDecisionItemTarget type
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет базовый класс для различных типов целевых объектов проверки, каждый из которых имеет собственные свойства. Поддерживаемые целевые типы: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) и [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
+
+Представляет базовый класс для различных типов целей проверки, каждый из которых имеет свои собственные свойства. Поддерживаемые целевые типы: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) и [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
 
 ## <a name="properties"></a>Свойства
 Отсутствуют.

@@ -3,14 +3,14 @@ author: isabelleatmsft
 ms.topic: include
 ms.date: 02/08/2021
 ms.author: isabelleatmsft
-ms.openlocfilehash: 3e58d24f35df662e98143a5f7af494b9d0d253e2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 099b7dc842ea261961ffa96fd7a139126371d2dd
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50500518"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469061"
 ---
 <!-- markdownlint-disable MD041-->
 
 >[!NOTE]
->API проверки доступа в этом разделе применяются только к членам группы. Обзоры доступа ко всем другим поддерживаемых типам ресурсов см. в [обзоре Access.](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta)
+>API обзора доступа в этом разделе — это рекомендуемые API обзоров доступа. Более старая версия, [Обзоры доступа,](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta)будут обесценить.

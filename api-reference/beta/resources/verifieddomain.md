@@ -4,13 +4,13 @@ description: Задает домен клиента. Свойство **verified
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: davidmu1
-ms.openlocfilehash: 2c4e833042a7bca3f3b85d3c9eb15bd7eb12925d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: Jumaodhiss
+ms.openlocfilehash: b4a3a5bed105fe0e0849ddf7c21d7a1b087942ca
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135851"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468686"
 ---
 # <a name="verifieddomain-resource-type"></a>Тип ресурса verifiedDomain
 
@@ -28,9 +28,9 @@ ms.locfileid: "50135851"
 |isDefault|Boolean|                Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.            |
 |isInitial|Boolean|Значение **true** указывает, что это первоначальный домен, связанный с клиентом. В противном случае используется значение **false**.|
 |name|String|Доменное имя, например "contoso.onmicrosoft.com"|
-|type|Строка|Пример: "Managed".|
+|type|String|Пример: "Managed".|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
