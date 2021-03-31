@@ -5,15 +5,17 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e1dd8c4dd30d6cc4279178e88088b305aea3b87c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: b4c950aec7b58eb6583e8b7a0a209a64f022368e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176476"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473215"
 ---
 # <a name="list-permissions"></a>Разрешения списка
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите ресурсы [разрешений](../resources/permission.md) из свойства навигации разрешений на сайте.
 
@@ -49,7 +51,7 @@ GET /sites/{sitesId}/permissions
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [разрешений](../resources/permission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` разрешений в [](../resources/permission.md) тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,28 +99,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "1",
-      "roles": ["read"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
-        }
-      }]
-    },
-    {
-      "id": "2",
-      "roles": ["write"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
-        }
-      }]
-    }
-  ]
+   "value":[
+      {
+         "id":"1",
+         "roles":[
+            "read"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+                  "displayName":"Contoso Time Manager App"
+               }
+            }
+         ]
+      },
+      {
+         "id":"2",
+         "roles":[
+            "write"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+                  "displayName":"Fabrikam Dashboard App"
+               }
+            }
+         ]
+      }
+   ]
 }
 ```
 

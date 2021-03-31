@@ -3,14 +3,14 @@ title: Список microsoftAuthenticatorAuthenticationMethods
 description: Получите список объектов MicrosoftAuthenticatorAuthenticationMethod и их свойств.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5538a954edb69793e693a8cce109e8088b4f5926
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: c23c72d9ee7addfd48f762a718731874ce450231
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202584"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469187"
 ---
 # <a name="list-microsoftauthenticatorauthenticationmethods"></a>Список microsoftAuthenticatorAuthenticationMethods
 Пространство имен: microsoft.graph

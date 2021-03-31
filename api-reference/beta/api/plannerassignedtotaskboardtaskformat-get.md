@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 64c3b0e2b0eaeb132f794ac72d56b48896dddb44
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 35a4e4fda3fba813873727ab7fa4cf013e610b2c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978405"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473327"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>Получение объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -24,7 +24,7 @@ ms.locfileid: "48978405"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 

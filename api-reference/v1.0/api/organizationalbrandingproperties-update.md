@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kexia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 73c19acc4967842b41c943dc18cd99d714c9478c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d93b8052dd4db67fc4fa8a4db5bb3669990658b7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949383"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469467"
 ---
 # <a name="update-organizationalbrandingproperties"></a>Обновление организационных свойств
 
@@ -41,7 +41,7 @@ PUT /organization/{id}/branding/{property name}
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательный параметр.  |
+| Content-Language  | Locale. Необязательное свойство.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -49,14 +49,14 @@ PUT /organization/{id}/branding/{property name}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|backgroundColor|Строка|Цвет, который будет отображаться на месте фонового изображения в подключениях с низкой пропускной способностью. Здесь рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal (например, белый #FFFFFF).|
+|backgroundColor|String|Цвет, который будет отображаться на месте фонового изображения в подключениях с низкой пропускной способностью. Здесь рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal (например, белый #FFFFFF).|
 |backgroundImage|Stream|Изображение, которое отображается в качестве фона знака на странице. .png или .jpg не больше 1920x1080 и меньше 300kb. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страниц более высокой.|
 |bannerLogo|Stream|На странице входного знака отображается баннерная версия логотипа вашей компании. .png или .jpg не больше 36x245px. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
-|signInPageText|Строка|Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов.|
+|signInPageText|String|Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов.|
 |squareLogo|Stream|Квадратная версия логотипа вашей компании. Это отображается в windows 10 вне окна (OOBE) опытом и когда Windows Автопилот включен для развертывания. .png или .jpg размером не более 240x240px и размером не более 10 кб. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
-|usernameHintText|Строка|Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
+|usernameHintText|String|Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
 
-Свойство `id` игнорируется при проходе.
+Свойство **id** игнорируется при проходе.
 
 ## <a name="response"></a>Отклик
 
@@ -64,7 +64,7 @@ PUT /organization/{id}/branding/{property name}
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-update-default-branding"></a>Пример 1. Обновление брандминга по умолчанию
-Если брендинг уже существует, PATCH заменит только указанные свойства, оставив неустановленные свойства без изменений. 
+Если брендинг уже существует, заменит только указанные свойства, оставив `PATCH` неустановленные свойства без изменений. 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -103,7 +103,6 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
@@ -117,7 +116,7 @@ Content-Type: application/json
 HTTP/1.1 204 OK
 ```
 
-В этом случае значения по умолчанию /брендинга обновляются, но никакие значения не меняются при любой локализации.
+В этом случае значения брендинга по умолчанию обновляются, но никакие значения не меняются при любой локализации.
 
 ### <a name="example-2-update-bannerlogo-for-default-branding"></a>Пример 2. Обновление bannerLogo для брендинга по умолчанию
 Следующий запрос обновляет логотип баннера для фирменого знака по умолчанию.
@@ -138,24 +137,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
@@ -171,7 +152,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-3-update-localized-branding"></a>Пример 3. Обновление локализованного брендинга
-Если заготвка Content-Language задана, создается локализация, связанная с Языком контента, если она еще не существует, а затем обновляется с помощью указанных значений. Брендинг по умолчанию не меняется.
+Если **заглавное** заглавье content-Language задано, локализация, связанная с **Content-Language,** сначала создается, если она еще не существует, а затем обновляется с помощью указанных значений. Брендинг по умолчанию не меняется.
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -203,10 +184,10 @@ Content-Language: fr
 HTTP/1.1 204 No Content
 ```
 
-После этого запроса локализация fr обновляется с новым значением backgroundColor, но не меняется значение по умолчанию /branding.
+После этого запроса локализация обновляется с новым значением backgroundColor, но в брандминг по умолчанию не `fr` меняется. 
 
 ### <a name="example-4-replace-default-branding-and-all-localizations"></a>Пример 4. Замена брендинга по умолчанию и всех локализации
-Если брендинг уже существует, PUT заменит брендинг по умолчанию и любые локализации.
+Если брендинг уже существует, заменит брендинг по умолчанию `PUT` и любые локализации.
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -259,7 +240,7 @@ Content-Language: fr
 HTTP/1.1 204 No Content
 ```
 
-После этого запроса брендинг по умолчанию имеет только указанный фонColor и имеет точно одну локализацию с id fr, а также с набором backgroundColor.
+После этого запроса брендинг по умолчанию имеет только **указанный backgroundColor** и имеет точно одну локализацию с **id,** также `fr` с **набором backgroundColor.**
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

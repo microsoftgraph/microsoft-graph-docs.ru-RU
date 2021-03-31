@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 351dd84a03ba3d0020293d1ca4b873962a72e4a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 18bd1fae45c75f15e5ed5661253dca4a388e02c9
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967858"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473313"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -22,7 +22,7 @@ ms.locfileid: "47967858"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 

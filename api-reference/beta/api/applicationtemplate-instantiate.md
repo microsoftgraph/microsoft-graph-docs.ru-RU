@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bc94c8abe1de8d45324fc6ad65e44e7c1329c3f5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d0a3d39d7903b3d7870d5b71fa821bd7f7ad3b6b
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471535"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473264"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instantiate
 
@@ -28,7 +28,7 @@ ms.locfileid: "50471535"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 

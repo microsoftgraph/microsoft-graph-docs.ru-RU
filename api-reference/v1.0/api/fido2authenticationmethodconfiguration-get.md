@@ -3,14 +3,14 @@ title: Get fido2AuthenticationMethodConfiguration
 description: Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4f1420ffc51305777e3b40710cfb85893f7c4b2e
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 7d67b65577546b187f616462e3faeefa7aedb7b4
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202619"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469019"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Get fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

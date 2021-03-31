@@ -3,14 +3,14 @@ title: Обновление emailAuthenticationMethodConfiguration
 description: Обновление свойств объекта emailAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 67255cc6ada971e8e07f3dc0571e17950959cb9a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ce5d52d99f2f80b4ff285a5ebfc1971db1932383
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949025"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469278"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>Обновление emailAuthenticationMethodConfiguration
 

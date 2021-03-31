@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ac25e8c54b4e5201a484f139a39136027ac543fe
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c23e300d0320fe4740f90c42bc013414ed99e422
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952510"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473355"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -106,6 +106,7 @@ ms.locfileid: "50952510"
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|Коллекция для параметров, связанных с единым входом SAML.|
 |ServicePrincipalNames|Коллекция объектов string|Содержит список объектов **identifiersUris**, скопированных из связанного объекта [application](application.md). К гибридным приложениям можно добавить дополнительные значения. С помощью этих значений можно идентифицировать разрешения, предоставленные этим приложением в Azure AD. Пример.<ul><li>Клиентские приложения могут указывать URI ресурса, основанный на значениях этого свойства, чтобы получать маркер доступа, который представляет собой URI, возвращенный в запросе "aud".</li></ul><br>Оператор "any" требуется для выражений фильтров, применяемых к многозначным свойствам. Значение null не допускается.|
 |servicePrincipalType|Строка|Указывает, что представляет субъект-служба: приложение или управляемое удостоверение. Это значение устанавливается внутри Azure AD. Если субъект-служба представляет [приложение](./application.md), указывается значение __Application__. Если субъект-служба представляет [управляемое удостоверение](/azure/active-directory/managed-identities-azure-resources/overview), указывается значение __ManagedIdentity__.|
+| signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Только для чтения. <br><br>Поддерживаемые значения:<ul><li>`AzureADMyOrg` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (один клиент).</li><li>`AzureADMultipleOrgs` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (несколько клиентов).</li><li>`AzureADandPersonalMicrosoftAccount` — пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации.</li><li>`PersonalMicrosoftAccount` — пользователи только с личной учетной записью Майкрософт.</li></ul> |
 |tags|Коллекция объектов string| Настраиваемые строки, которые можно использовать для классификации и определения субъекта-службы. Значение null не допускается. |
 | tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. Если это свойство настроено, Azure AD выпускает маркеры для этого приложения в зашифрованном виде; шифрование производится с помощью ключа, указанного эти свойством. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Определяет проверенного издателя приложения, которое представляет этот субъект-служба.

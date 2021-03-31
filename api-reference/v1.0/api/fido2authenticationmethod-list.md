@@ -3,14 +3,14 @@ title: Список fido2AuthenticationMethod
 description: Извлечение списка объектов fido2AuthenticationMethod и их свойств.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9c735a12bba47baaddcfbed0359a3f794c473b8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 166ac533d85e43fdc413f614ce848cdbdb5c56e7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964869"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469271"
 ---
 # <a name="list-fido2authenticationmethod"></a>Список fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

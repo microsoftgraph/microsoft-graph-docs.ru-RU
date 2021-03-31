@@ -1,16 +1,16 @@
 ---
 title: Список объектов contactFolder
-description: Получение всех папок контактов в почтовом ящике вошедшего пользователя.
+description: Получите все папки контактов в почтовом ящике подписанного пользователя.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cb43b621fa43a32516a18a5bb6de04ea0ab8bea3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 33e73e44b260787c43da3a98e3bf2e3972cdfd84
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982225"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473159"
 ---
 # <a name="list-contactfolders"></a>Список объектов contactFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "48982225"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех папок контактов в почтовом ящике вошедшего пользователя.
+Получите все папки контактов в почтовом ящике подписанного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /users/{id | userPrincipalName}/contactFolders
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ContactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -90,15 +90,14 @@ GET https://graph.microsoft.com/beta/me/contactFolders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 145
 
 {
   "value": [
     {
-      "parentFolderId": "parentFolderId-value",
-      "displayName": "displayName-value",
-      "wellKnownName": "wellKnownName-value",
-      "id": "id-value"
+      "parentFolderId": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBCAAAAA==",
+      "displayName": "Contacts",
+      "id": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+      "wellKnownName": "contacts"
     }
   ]
 }

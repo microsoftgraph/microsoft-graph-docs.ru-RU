@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1a73baf5e1978a76985f52ad1215e2686cf8798f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 02c558b1a28ad4348f28c3f7738bf6e2b21ddd3e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095760"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473341"
 ---
 # <a name="update-plannertaskdetails"></a>Обновление объекта plannertaskdetails
 
@@ -24,7 +24,7 @@ ms.locfileid: "48095760"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -45,13 +45,13 @@ PATCH /planner/tasks/{id}/details
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
-|description|Строка|Описание задачи.|
+|description|String|Описание задачи.|
 |previewType|string|Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerTaskDetails](../resources/plannertaskdetails.md) в тексте ответа.
+В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент. Если запрос указывает заголовку с предпочтением, этот метод возвращает код отклика и обновленный объект `Prefer` `return=representation` `200 OK` [plannerTaskDetails](../resources/plannertaskdetails.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -68,6 +68,7 @@ PATCH /planner/tasks/{id}/details
 PATCH https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
 Content-type: application/json
 Content-length: 857
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 79b49ff64cfce03068af46c05018cf3402be5a80
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b1d8898da9b71474d298de5f76b17000f7ef7b8b
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131560"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469418"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-group"></a>Удаление appRoleAssignment, предоставленного группе
 
@@ -37,7 +37,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Рекомендуется удалять назначения ролей приложения через связь с основными службами ресурсов, а не через отношение назначенного пользователя, группы или `appRoleAssignedTo`  `appRoleAssignments` основного пользователя-службы.
+> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью отношений директора службы ресурсов, а не отношений назначенного пользователя, группы или директора `appRoleAssignedTo`  `appRoleAssignments` службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

@@ -3,14 +3,14 @@ title: Обновление microsoftAuthenticatorAuthenticationMethodConfigurat
 description: Обновление свойств объекта MicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cbbd1523791fa7578b5a200a84cdb737d33e6823
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 3967d145a0d732e66bc7c77a2ab3539b129be043
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202728"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469166"
 ---
 # <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>Обновление microsoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph

@@ -195,7 +195,7 @@ items:
     items:
       - name: Обзор
         href: overview.md
-      - name: Users
+      - name: Пользователи
         items:
           - name: Обзор
             href: resources/users.md
@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Notes
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1082,7 +1082,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4376,6 +4376,34 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
       - name: Управление
         items:
+          - name: Запросы согласия
+            href: resources/consentrequests-root.md
+            items:
+              - name: Политика запроса на согласие администратора
+                href: resources/adminconsentrequestpolicy.md
+                items:
+                  - name: Получение
+                    href: api/adminconsentrequestpolicy-get.md
+                  - name: Обновление
+                    href: api/adminconsentrequestpolicy-update.md
+              - name: Запросы на согласие приложения
+                href: resources/appconsentrequest.md
+                items:
+                  - name: Список
+                    href: api/appconsentrequest-list.md
+                  - name: Получение
+                    href: api/appconsentrequest-get.md
+                  - name: Фильтр текущего пользователя
+                    href: api/appconsentrequest-filterByCurrentUser.md
+              - name: Запросы на согласие пользователей
+                href: resources/userconsentrequest.md
+                items:
+                  - name: Список
+                    href: api/userconsentrequest-list.md
+                  - name: Получение
+                    href: api/userconsentrequest-get.md
+                  - name: Фильтр текущего пользователя
+                    href: api/userconsentrequest-filterByCurrentUser.md
           - name: Условия использования
             href: resources/agreement.md
             items:
@@ -4458,7 +4486,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4729,7 +4757,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5410,6 +5438,14 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
+          - name: Веб-канал активности
+            items:
+              - name: Отправка уведомления пользователю в чате
+                href: api/chat-sendactivitynotification.md
+              - name: Отправка уведомления пользователю в команде
+                href: api/team-sendactivitynotification.md
+              - name: Отправка уведомления пользователю
+                href: api/userteamwork-sendactivitynotification.md
           - name: Tab
             href: resources/teamstab.md
             items:

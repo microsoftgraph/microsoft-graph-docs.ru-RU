@@ -193,11 +193,11 @@ items:
   - name: Документация для бета-версий
     expanded: true
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: overview.md
       - name: Пользователи
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -362,7 +362,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Notes
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -497,7 +497,7 @@ items:
                 href: api/usersettings-update.md
       - name: Группы
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -672,7 +672,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -805,7 +805,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -814,7 +814,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -998,7 +998,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1007,7 +1007,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1016,7 +1016,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1025,7 +1025,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1253,9 +1253,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1269,7 +1269,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1397,7 +1397,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/callrecords-api-overview.md
               - name: Запись вызова
                 items:
@@ -1409,7 +1409,7 @@ items:
                 items:
                   - name: Session
                     href: resources/callrecords-session.md
-                  - name: Список
+                  - name: List
                     href: api/callrecords-session-list.md
               - name: Вызовы PSTN
                 items:
@@ -1447,11 +1447,11 @@ items:
       - name: Соответствие требованиям (предварительная версия)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/complianceapioverview.md
-          - name: Обнаружение электронных данных (eDiscovery)
+          - name: Обнаружение электронных данных
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Дело обнаружения электронных данных
                 href: resources/ediscovery-case.md
@@ -1603,7 +1603,7 @@ items:
       - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -9032,7 +9032,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Обновление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: Список
+                      - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -9615,7 +9615,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11048,7 +11048,7 @@ items:
                         href: api/identityapiconnector-delete.md
           - name: Управление
             items:
-              - name: Обзоры доступа для групп
+              - name: Проверки доступа
                 href: resources/accessreviewsv2-root.md
                 items:
                   - name: Определение расписания просмотра доступа
@@ -11081,16 +11081,18 @@ items:
                         href: api/accessreviewinstance-acceptrecommendations.md
                       - name: Применение решений
                         href: api/accessreviewinstance-applydecisions.md
+                      - name: Решения о пакетной записи
+                        href: api/accessreviewinstance-batchrecorddecisions.md
                   - name: Элемент решения экземпляра проверки доступа
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/accessreviewinstancedecisionitem-list.md
                       - name: Список ожидающих утверждения
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Update
                         href: api/accessreviewinstancedecisionitem-update.md
-              - name: Проверки доступа
+              - name: Отзывы доступа (устаревшие)
                 href: resources/accessreviews-root.md
                 items:
                   - name: Проверка доступа
@@ -11201,7 +11203,7 @@ items:
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/accesspackageassignment-list.md
                   - name: Политика назначения пакета доступа
                     href: resources/accesspackageassignmentpolicy.md
@@ -11522,7 +11524,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -11884,7 +11886,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Заметки
+              - name: Notes
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -12072,9 +12074,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Параметры
+              - name: Settings
                 items:
-                  - name: Параметры
+                  - name: Settings
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -12119,7 +12121,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12210,7 +12212,7 @@ items:
                   - name: Подробный сводка "Опираясь на стороне"
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -12694,7 +12696,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: Список
+              - name: List
                 href: resources/list.md
               - name: Получить списки на сайте
                 href: api/list-list.md
@@ -12806,7 +12808,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Список
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -13206,7 +13208,7 @@ items:
             items:
               - name: Вкладка в канале
                 items:
-                  - name: Список вкладок на канале
+                  - name: Перечисление вкладок в канале
                     href: api/channel-list-tabs.md
                   - name: Добавление вкладки в канал
                     href: api/channel-post-tabs.md
@@ -13297,7 +13299,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Список
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md
@@ -13442,7 +13444,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Task
             href: resources/todotask.md
             items:
               - name: Перечисление задач
@@ -13546,7 +13548,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

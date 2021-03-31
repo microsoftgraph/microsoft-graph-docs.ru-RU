@@ -3,14 +3,14 @@ title: тип ресурса emailAuthenticationMethodConfiguration
 description: Представляет политику методов проверки подлинности OTP электронной почты
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 99e4f642db1bc49c2717a4d2a262dbba5943b4c7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bcc1a355db78dc697df892cd2f6129ef3caa3bac
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964947"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469068"
 ---
 # <a name="emailauthenticationmethodconfiguration-resource-type"></a>тип ресурса emailAuthenticationMethodConfiguration
 

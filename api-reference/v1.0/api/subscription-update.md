@@ -1,8 +1,17 @@
 ---
-заголовок: описание "Обновление подписки": "Обновление подписки путем продления срока ее действия".
-localization_priority: Обычный автор: "Jumaodhiss" ms.prod: ""change-notifications" doc_type: apiPageType
+title: Обновление подписки
+description: Возобновление подписки путем увеличения срока действия.
+localization_priority: Normal
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: 3b00e7d72833e1f871b59aa0a906a295d42fbc5f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468823"
 ---
-
 # <a name="update-subscription"></a>Обновление подписки
 
 Пространство имен: microsoft.graph

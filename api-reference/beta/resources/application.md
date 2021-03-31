@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 501290407b08e8fc6f461de5f7ec446dab53bccd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e5d1c03a4c4c5fb47f63640993705fa62709d47c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945748"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472200"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -97,6 +97,7 @@ ms.locfileid: "50945748"
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.|
 | tokenEncryptionKeyId |Guid|Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке Azure AD шифрует все созданные маркеры с помощью ключа, на который указывает это свойство. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Указывает проверенного издателя приложения.|
+| uniqueName | Строка | Уникальный идентификатор, который можно назначить приложению в качестве альтернативного идентификатора. Неизменяемый. Только для чтения. |
 | web |[webApplication](webapplication.md)| Указывает параметры для веб-приложения. |
 
 ### <a name="signinaudience-values"></a>Значения signInAudience
@@ -161,6 +162,7 @@ ms.locfileid: "50945748"
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
+  "uniqueName": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }

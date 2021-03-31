@@ -3,14 +3,14 @@ title: тип ресурса windowsHelloForBusinessAuthenticationMethod
 description: Представление экземпляра Windows Hello для бизнеса, зарегистрированного для пользователя. Windows Hello для бизнеса — это метод проверки подлинности.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ad3fd83605d49351e2c57b469339fcfe222f05cb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cd7784bca9b6eab1390d40286431efd658c401d3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964857"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468956"
 ---
 # <a name="windowshelloforbusinessauthenticationmethod-resource-type"></a>тип ресурса windowsHelloForBusinessAuthenticationMethod
 

@@ -3,14 +3,14 @@ title: тип ресурса microsoftAuthenticatorAuthenticationMethod
 description: Представление приложения Microsoft Authenticator, зарегистрированного для пользователя. Microsoft Authenticator — это метод проверки подлинности.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: aeb2d1d7b111c9424da2f927dbaf3030a356c6b6
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f7438ca72a4f5d4063eec0444d3b0028237083d9
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964827"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468991"
 ---
 # <a name="microsoftauthenticatorauthenticationmethod-resource-type"></a>тип ресурса microsoftAuthenticatorAuthenticationMethod
 

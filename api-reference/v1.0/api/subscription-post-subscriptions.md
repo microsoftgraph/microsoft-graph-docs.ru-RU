@@ -1,8 +1,17 @@
 ---
-заголовок: описание "Создание подписки": "Подписывает приложение-прослушиватель для получения уведомлений об изменениях при изменении данных в Microsoft Graph".
-localization_priority. Автор приоритета: "Jumaodhiss" ms.prod: "change-notifications" doc_type: apiPageType
+title: Создание подписки
+description: Создание подписки для приложения прослушивателя, позволяющей ему получать уведомления об изменении данных в Microsoft Graph.
+localization_priority: Priority
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: 5d0a5afd29b799e51662ceba23c5ee415aa69689
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468837"
 ---
-
 # <a name="create-subscription"></a>Создание подписки
 
 Пространство имен: microsoft.graph
@@ -141,7 +150,7 @@ Content-type: application/json
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
-|[пользователи](../resources/user.md);|`users`|
+|[Пользователи](../resources/user.md)|`users`|
 
 > **Примечание.** Любой путь, начинающийся с `me`, также можно использовать с `users/{id}` вместо `me`, чтобы указать определенного пользователя, а не текущего пользователя.
 

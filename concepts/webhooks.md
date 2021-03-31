@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 046610705fe4d8a2e44f5adf35b0ae7797eee383
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: fda7792cab92391aba441ec62004ffb604f3ac3c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934634"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469446"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -90,9 +90,11 @@ API Microsoft Graph использует механизм веб-перехва�
 
 `/users/sh.o'neal@contoso.com/messages`
 
-Используйте: 
+Используйте:
 
 `/users/{guid-user-id}/messages`
+
+Доступно не более 1000 активных подписок на почтовый ящик для всех приложений.
 
 ### <a name="teams-resource-limitations"></a>Ограничения ресурсов Teams
 

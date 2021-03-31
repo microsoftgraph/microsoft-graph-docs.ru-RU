@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Планнерекстерналреференцес
-description: Ресурс **планнерекстерналреференцес** представляет коллекцию ссылок на задачу. Это открытый тип. Он является частью объекта сведений о задаче. Значение в параметре "свойство-значение" является объектом Екстерналреференце.
+title: тип ресурса plannerExternalReferences
+description: Ресурс **plannerExternalReferences** представляет коллекцию ссылок на задачу. Это открытый тип. Это часть объекта сведений о задачах. Значение в паре свойство-значение — объект externalReference.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 08e8a19db315846357feebb00a21f9572eea7fff
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: d4580d2e54b1f9b913b7dab5c283e9af7391b964
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329992"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473397"
 ---
-# <a name="plannerexternalreferences-resource-type"></a>Тип ресурса Планнерекстерналреференцес
+# <a name="plannerexternalreferences-resource-type"></a>тип ресурса plannerExternalReferences
 
 Пространство имен: microsoft.graph
 
-Ресурс **планнерекстерналреференцес** представляет коллекцию ссылок на задачу. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md) . Значение в параметре "свойство-значение" является объектом [екстерналреференце](plannerexternalreference.md) .
+Ресурс **plannerExternalReferences** представляет коллекцию ссылок на задачу. Это открытый тип. Это часть объекта [сведений о задачах.](plannertaskdetails.md) Значение в паре свойство-значение — [объект externalReference.](plannerexternalreference.md)
 
 
 ## <a name="properties"></a>Свойства
-Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставить **действительные URL-адреса** на основе протоколов **HTTP/HTTPS** , а их значения должны быть объектами [екстерналреференце](plannerexternalreference.md) . На основе OData имена свойств в открытых типах не могут содержать следующие символы: `.` , `:` и `%`  поэтому их необходимо закодировать. Пример показан ниже. Чтобы удалить ссылку, присвойте свойству значение `null` .
+Свойства открытого типа могут быть определены клиентом. В этом случае клиент должен предоставить допустимые **URL-адреса** на основе протоколов **HTTP/HTTPS,** так как свойствами и их значениями должны быть [объекты externalReference.](plannerexternalreference.md) На основе OData имена свойств в Open Types не могут содержать следующие символы: , , , поэтому они `.` `:` должны быть `%` `@` `#` закодированы. Пример показан ниже. Чтобы удалить ссылку, установите значение свойства `null` .
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fd3a38fe2bcc0fef706f3d7d2f428fda7d8a992
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 401423f8afb678f8440f6e951bcd32079147c8af
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979418"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473166"
 ---
 # <a name="list-calendargroups"></a>Список объектов calendarGroup
 
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/calendarGroups
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [CalendarGroup](../resources/calendargroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -89,15 +89,14 @@ GET https://graph.microsoft.com/beta/me/calendarGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 155
 
 {
   "value": [
     {
-      "name": "name-value",
-      "classId": "classId-value",
-      "changeKey": "changeKey-value",
-      "id": "id-value"
+      "name": "My Calendars",
+      "classId": "0006f0b7-0000-0000-c000-000000000046",
+      "changeKey": "NreqLYgxdE2DpHBBId74XwAAAAAGZw==",
+      "id": "AQMkADIxYjJiYgEzLTFmN_F8AAAIBBgAA_F8AAAJjIQAAAA=="
     }
   ]
 }

@@ -3,14 +3,14 @@ title: тип ресурса fido2AuthenticationMethod
 description: Представление ключа безопасности FIDO2, зарегистрированного для пользователя. FIDO2 — это метод проверки подлинности.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0c79a704d9a2aa899ffc2a3f4592f76a30d30126
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8e1dceac5e7c901cdeeba7788c6a1541fdc26867
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964965"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469152"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>тип ресурса fido2AuthenticationMethod
 
@@ -22,8 +22,8 @@ ms.locfileid: "50964965"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список](../api/fido2authenticationmethod-list.md)|[коллекция fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Извлечение списка объектов fido2AuthenticationMethod пользователя и их свойств.|
-|[получение](../api/fido2authenticationmethod-get.md);|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethod пользователя.|
+|[Перечисление](../api/fido2authenticationmethod-list.md)|[коллекция fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Извлечение списка объектов fido2AuthenticationMethod пользователя и их свойств.|
+|[Получение](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethod пользователя.|
 |[удаление](../api/fido2authenticationmethod-delete.md);|Нет|Удаляет объект fido2AuthenticationMethod пользователя.|
 
 ## <a name="properties"></a>Свойства
@@ -34,7 +34,7 @@ ms.locfileid: "50964965"
 |createdDateTime|DateTimeOffset|Время регистрации этого ключа пользователю.|
 |aaGuid|String|GUID проверки подлинности, идентификатор, который указывает тип (например, make и model) аутентиста.|
 |model|String|Назначенная производителем модель ключа безопасности FIDO2.|
-|attestationCertificates|Коллекция строк|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
+|attestationCertificates|Коллекция String|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
 |attestationLevel|attestationLevel|Уровень проверки этого ключа безопасности FIDO2. Возможные значения: `attested` или `notAttested` .|
 
 

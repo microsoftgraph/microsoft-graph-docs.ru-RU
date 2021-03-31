@@ -1,8 +1,17 @@
 ---
-заголовок: описание "Подписки на список": "Извлечение свойств и связей подписки веб-пользователя на основе ID приложения, пользователя и роли пользователя с клиентом".
-localization_priority. Автор приоритета: "Jumaodhiss" ms.prod: "change-notifications" doc_type: apiPageType
+title: Перечисление подписок
+description: Получение свойств и связей подписок на веб-перехватчики с учетом идентификатора приложения, пользователя и его роли в клиенте.
+localization_priority: Priority
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: cd5c72305e070745407c2c89cc5213758ce591b3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468847"
 ---
-
 # <a name="list-subscriptions"></a>Перечисление подписок
 
 Пространство имен: microsoft.graph

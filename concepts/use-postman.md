@@ -3,12 +3,12 @@ title: Использование Postman с API Microsoft Graph
 description: Используйте коллекцию Microsoft Graph Postman, чтобы начать работу с API Microsoft Graph в считанные минуты.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 34be5bab88acbd7545caa958db0809a010660fb4
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 04668cd76a7d8ca298e2ad16483be902c59983c5
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059688"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469047"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Использование Postman с API Microsoft Graph
 Вы можете использовать коллекцию Microsoft Graph Postman, чтобы начать работу с API Microsoft Graph в считанные минуты.
@@ -59,8 +59,8 @@ ms.locfileid: "50059688"
 
 У приложения Azure AD теперь есть разрешения на выполнение запросов от имени пользователя для вызова Mail.Read и вызова User.Read.All в качестве приложения.
 
-## <a name="step-4---configuring-authentication"></a>Шаг 4. Настройка проверки подлинности
-Настройте несколько переменных среды, используемых для получения маркера доступа.
+## <a name="step-4---configuring-authentication-in-postman"></a>Шаг 4. Настройка проверки подлинности в Postman
+Перейдите в Postman и убедитесь, что вы выбрали рабочее пространство, созданное на шаге 1. Настройте несколько переменных среды, используемых для получения маркера доступа.
 
 1. Щелкните значок с изображением глаза в правом верхнем углу рядом с раскрывающимся списком **No environment** (Нет среды).
 2. В правом верхнем углу всплывающего окна нажмите **Add** (Добавить).

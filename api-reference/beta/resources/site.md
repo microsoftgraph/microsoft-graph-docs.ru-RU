@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: e754bf9e5199de502672cdf0a0de5279eb5ef80f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a8cab7859c68224acc734a88f941a952ca82798b
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953749"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472116"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -111,6 +111,7 @@ ms.locfileid: "50953749"
 | **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
 | **permissions**   | Collection([permission][])         | Разрешения, связанные с сайтом. Допускается значение NULL.
 | **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
+| **termStore**     | [microsoft.graph.termStore.store]  | TermStore на этом сайте.
 | **externalColumns**     | Collection([columnDefinition][])  | Коллекция определений столбцов, доступных на сайте, на которые ссылаются сайты в родительской иерархии текущего сайта.
 
 [columnDefinition]: columndefinition.md
@@ -126,6 +127,7 @@ ms.locfileid: "50953749"
 [site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
+[microsoft.graph.termStore.store]: termstore-store.md
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -167,6 +169,7 @@ ms.locfileid: "50953749"
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
   "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",

@@ -5,18 +5,18 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 5ee215dff7fafaa25e4601ade1819322d8894e5a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 16941390274371031c2ee1ec48f35d15edfa61c7
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401577"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473404"
 ---
 # <a name="list-shared"></a>Список "Общие"
 
 Пространство имен: microsoft.graph
 
-Вычисляемое представление, включающее список документов, к которым пользователь предоставил доступ.
+Вычисляемая информация, которая включает список документов, общих пользователю.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,16 +28,16 @@ ms.locfileid: "48401577"
 |Для приложений | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-Получение списка документов, доступ к которым предоставлен вошедшего пользователя.
+Получите список документов, общих пользователю, вписав его.
 
->**Note**: только пользователь может выполнять запросы, используя идентификатор пользователя или имя субъекта.
+>**Примечание.** Только пользователь может делать запросы с помощью id или основного имени пользователя.
 
 ```http
 GET /me/insights/shared
 GET /users/{id | userPrincipalName}/insights/shared
 ```
 
-Разверните ресурс, на который ссылается **совместное** представление:
+Расширение ресурса, на который ссылается общая **информация:**
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
@@ -45,17 +45,17 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-`$filter`С помощью параметра запроса можно фильтровать общие элементы. Например, на основе **типа**:
+Параметр запроса можно `$filter` использовать для фильтрации общих элементов. Например, в зависимости от **типа:**
 
 `https://graph.microsoft.com/v1.0/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
+В [resourceVisualization](../resources/insights-resourcevisualization.md)см. доступные типы и типы контейнеров, которые можно фильтровать.
 
-Вы также можете получить файлы, к которым предоставлен доступ конкретному пользователю. Например, указав `lastshared/sharedby/address` свойство:
+Вы также можете получить файлы, общие для определенного пользователя. Например, укажите `lastshared/sharedby/address` свойство:
 
 `https://graph.microsoft.com/v1.0/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-Просмотр сложного типа [шарингдетаил](../resources/insights-sharingdetail.md) .
+См. [сложный тип sharingDetail.](../resources/insights-sharingdetail.md)
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [общих](../resources/insights-shared.md) элементов в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и список общих элементов `200 OK` в тексте [](../resources/insights-shared.md) ответа.
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
@@ -82,38 +82,41 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
 ##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "value": [
-        {   
-            "id": "id-value",
-            "lastShared" : { 
-                "sharedDateTime" : "sharedDateTime-value",  
-                "sharingSubject" : "sharingSubject-value",
-                "sharingType" : "sharingType-value", 
-                "sharedBy" : { 
-                    "displayName" : "displayName-value", 
-                    "id": "id-value" 
-                }
-                "sharingReference" : { 
-                    "webUrl" : "webUrl-value",
-                    "type: "type-value", 
-                    "id": "id-value"
-                } 
+        {
+            "id": "AWb0Qy4TEA1KhLW-k1L5mSjtxZAcxDFkTKiTNA-2kZDTXzrMX_4FhECOU0bKZVj1uReivYoYYoJNqTeuC-x1Agtm9EMuExANSoS1vpNS-ZkoBA",
+            "lastShared": {
+                "sharedDateTime": "2021-03-23T08:41:05Z",
+                "sharingType": "Direct",
+                "sharedBy": {
+                    "displayName": "Megan Bowen",
+                    "address": "MeganB@contoso.com",
+                    "id": "3e0c9f05-b9b8-4cf5-9b35-a4e11b24b5b7"
+                },
+                "sharingReference": {}
             },
-            "resourceVisualization": { 
-                "title" : "title-value, 
-                "type"  : "type-value",
-                "mediaType" : "mediaType-value",
-                "previewImageUrl" : previewImageUrl-value, 
-                "previewText" : "previewText-value", 
-                "containerWebUrl" : "containerWebUrl-value", 
-                "containerDisplayName" : "containerDisplayName-value", 
-                "containerType" : "containerType-value" 
-            }, 
-            "resourceReference" : { 
-                "webUrl" : "webUrl-value", 
-                "id": "id-value", 
-                "type: "type-value" 
+            "resourceVisualization": {
+                "title": "CE Annual Report",
+                "type": "Word",
+                "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "previewImageUrl": "https://contoso-my.sharepoint.com/_api/v2.0/drives/b!ZvRDLhMQDUqEtb6TUvmZKO3FkBzEMWRMqJM0D7aRkNNfOsxf_gWEQI5TRsplWPW5/items/01K6ZMU4QXUK6YUGDCQJG2SN5OBPWHKAQL/thumbnails/0/small/thumbnailContent",
+                "previewText": "Contoso Annual Report Anne Wallace Sales Contoso today announced financial results for its most recent fi",
+                "containerWebUrl": "https://contoso-my.sharepoint.com/personal/meganb_m365x841051_onmicrosoft_com/Documents/Forms/All.aspx",
+                "containerDisplayName": "Megan Bowen",
+                "containerType": "OneDriveBusiness"
+            },
+            "resourceReference": {
+                "webUrl": "https://contoso-my.sharepoint.com/personal/meganb_m365x841051_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B8ABDA217-6218-4D82-A937-AE0BEC75020B%7D&file=CE%20Annual%20Report.docx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "id": "drives/b!ZvRDLhMQDUqEtb6TUvmZKO3FkBzEMWRMqJM0D7aRkNNfOsxf_gWEQI5TRsplWPW5/items/01K6ZMU4QXUK6YUGDCQJG2SN5OBPWHKAQL",
+                "type": "microsoft.graph.driveItem"
+            }
+        }
+    ]
 }
 ```

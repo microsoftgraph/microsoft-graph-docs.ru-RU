@@ -5,16 +5,14 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 95e0847e837d64915191182d1df20817249a4c8d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5cc91c3e07e55d332785c689b28c55cb82aaa3b9
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440754"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468858"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных для субъект-службы
-
-Пространство имен: microsoft.graph
 
 Пространство имен: microsoft.graph
 
@@ -51,7 +49,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -141,4 +139,3 @@ Content-type: application/json
   ]
 }
 -->
-

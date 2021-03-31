@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса resourceData
-description: Представляет данные ресурсов, вложенные в уведомление об изменении, отправляемое подписчику.
+title: тип ресурса resourceData
+description: Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: 29fb3d93db939ec077444c367d74aadc7cd751fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: change-notifications
+ms.openlocfilehash: d852268ee1a007b60014a224b34d12f25100fe8c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967228"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467969"
 ---
-# <a name="resourcedata-resource-type"></a>Тип ресурса resourceData
+# <a name="resourcedata-resource-type"></a>тип ресурса resourceData
 
 Пространство имен: microsoft.graph
 
-Представляет данные ресурсов, вложенные в уведомление об изменении, отправляемое подписчику.
+Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.
 
-Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).
+Подробности см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](webhooks.md).
 
 ## <a name="methods"></a>Методы
 
@@ -26,7 +26,7 @@ ms.locfileid: "47967228"
 
 ## <a name="properties"></a>Свойства
 
-Для ресурсов Outlook **resourceData** содержит следующие поля:
+Для ресурсов Outlook **resourceData содержит** следующие поля:
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
@@ -35,7 +35,7 @@ ms.locfileid: "47967228"
 | @odata.etag | строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
 | id | строка | Идентификатор объекта. |
 
-> **Примечание:** `id` Значение, указанное в **resourceData** , является допустимым во время создания уведомления об изменении. Некоторые действия, например перемещение сообщения в другую папку, могут привести к `id` недействительности при обработке уведомления об изменении.
+> **Примечание:** Значение, `id` предоставляемого **в resourceData,** допустимо на момент сгенерировании уведомления об изменении. Некоторые действия, например перенос сообщения в другую папку, могут привести к неодержительным действиям при обработке `id` уведомления об изменении.
 
 ## <a name="relationships"></a>Связи
 

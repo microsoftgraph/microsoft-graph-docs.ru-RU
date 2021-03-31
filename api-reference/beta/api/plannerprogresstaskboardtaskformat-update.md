@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 4d0f874a4de109ea60d2b0f1af47f654791ca3d7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f28c9e703d82983d6a24ef15992ff65be9805cba
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973466"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473306"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Обновление объекта plannerProgressTaskBoardTaskFormat
 
@@ -24,7 +24,7 @@ ms.locfileid: "48973466"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -44,11 +44,11 @@ PATCH /planner/tasks/{id}/progressTaskBoardFormat
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHint|String|Значение подсказки, используемое для упорядочивания задачи в представлении "ход выполнения" доски задач. Формат определяется в разделе [Использование подсказок порядка в планировщике](../resources/planner-order-hint-format.md).|
+|orderHint|String|Значение подсказки, используемого для заказа задачи в представлении "Прогресс" доски задач. Формат определяется в [подсказках по порядку в Planner.](../resources/planner-order-hint-format.md)|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) в тексте ответа.
+В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент. Если запрос указывает заголовку с предпочтением, этот метод возвращает код ответа и обновленный `Prefer` `return=representation` объект `200 OK` [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) в теле ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -65,6 +65,7 @@ PATCH /planner/tasks/{id}/progressTaskBoardFormat
 PATCH https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 Content-type: application/json
 Content-length: 34
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

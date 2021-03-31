@@ -1,26 +1,26 @@
 ---
 title: Список "Использованные"
-description: 'Вычислите и перечислите документы, которые пользователь просматривал или изменил. '
+description: 'Вычислять и перечислять документы, которые пользователь просмотрел или изменил. '
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0c8d00f03d98c5dc5d18411f238ca9a507eaca30
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e9da9bd6847872c9b85adf49cd51ecef503c485
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973199"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473411"
 ---
 # <a name="list-used"></a>Список "Использованные"
 
 Пространство имен: microsoft.graph
 
-Вычислите и перечислите документы, которые пользователь просматривал или изменил. 
+Вычислять и перечислять документы, которые пользователь просмотрел или изменил. 
 
 Для вошедшего пользователя:
-- Этот метод включает документы, измененные пользователем; см. [Пример 1](#example-1-return-documents-that-user-has-modified). 
-- Использование `$orderby` параметра запроса в свойстве **свойство lastaccesseddatetime** Возвращает самые последние просмотренные документы, которые пользователь может не изменять; см. [Пример 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
+- Этот метод включает документы, которые пользователь изменил; см. [пример 1](#example-1-return-documents-that-user-has-modified). 
+- Использование параметра запроса в свойстве `$orderby` **lastAccessedDateTime** возвращает самые недавно просмотренные документы, которые пользователь может изменить или не изменить; см. пример [2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
 
 Для других пользователей этот метод включает только документы, измененные пользователем.
 
@@ -36,21 +36,21 @@ ms.locfileid: "47973199"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-- Получение списка документов, измененных пользователем, вошедших в систему:
+- Получите список документов, которые изменил пользователь, вписанный в него:
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/insights/used
   ```
 
-- Получение списка документов, измененных указанным пользователем.
+- Получите список документов, измененных указанным пользователем:
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
-  >**Примечание**. Запрос документов, **использованных** другим пользователем, возвращает результаты, отсортированные по **lastModifiedDateTime**. Затем для **свойство lastaccesseddatetime** устанавливается значение **lastModifiedDateTime**.
+  >**Примечание.** Запрос документов, используемых другим **пользователем,** возвращает результаты, отсортифицированные **lastModifiedDateTime.** **LastAccessedDateTime** затем устанавливается **lastModifiedDateTime.**
 
 
-- Разверните ресурс, на который ссылается **использованная** аналитика:
+- Расширение ресурса, на который ссылается **использованная информация:**
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/insights/used/{id}/resource
@@ -58,24 +58,24 @@ ms.locfileid: "47973199"
   ```
 
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика:
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа:
 
-- Используйте `$filter` параметр запроса для фильтрации используемых элементов. Например, на основе **типа**:
+- Используйте параметр `$filter` запроса для фильтрации используемых элементов. Например, в зависимости от **типа:**
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- Используется `$filter` для фильтрации используемых элементов на основе  **контаинертипе**:
+- Использование `$filter` для фильтрации используемых элементов на основе **containerType:**
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-  Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
+  В [resourceVisualization](../resources/insights-resourcevisualization.md)см. доступные типы и типы контейнеров, которые можно фильтровать.
 
-- Используйте `$orderBy` параметр запроса, чтобы отсортировать документы, которые были просмотрены или изменены _пользователем, вошедшего_в систему, на основе свойства **свойство lastaccesseddatetime** :
+- Используйте параметр запроса для сортировки документов, которые последний раз просматривались или изменены пользователем, в соответствии с свойством `$orderBy` **lastAccessedDateTime:** 
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/v1.0/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**Примечание**. Используйте этот параметр запроса _только для вошедшего пользователя_. Этот API нельзя использовать для получения документов, которые можно просматривать или изменять другим пользователем. См. [Пример 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
+  >**Примечание.** Используйте этот параметр запроса только для _подписанного пользователя._ Этот API нельзя использовать для просмотра или изменения документов другим пользователем. См. [пример 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -84,15 +84,15 @@ ms.locfileid: "47973199"
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [использованных](../resources/insights-used.md) элементов в теле отклика.
+В случае успешного использования этот метод возвращает код ответа и список используемых элементов `200 OK` в тексте [](../resources/insights-used.md) ответа.
 ## <a name="example"></a>Пример
 
-### <a name="example-1-return-documents-that-user-has-modified"></a>Пример 1: возврат документов, измененных пользователем
+### <a name="example-1-return-documents-that-user-has-modified"></a>Пример 1. Возвращение документов, измененных пользователем
 
 #### <a name="request"></a>Запрос
 
@@ -151,59 +151,15 @@ Content-type: application/json
                 "title": "Org Chart",
                 "type": "Visio",
                 "mediaType": "application/vnd.visio",
-                "previewImageUrl": "https://m365x887078.sharepoint.com/_api/v2.0/drives/b!uTdl5maWCEyFRUo_2bKAOg8Q9Rst52JPvFvtTIaQiSaOy9HgmWBFQYDbyM0zog0D/items/01JSNPH6EZHFDPJNKPRNHZTFEWRRLDKPC3/thumbnails/0/small/thumbnailContent",
+                "previewImageUrl": "https://contoso.sharepoint.com/_api/v2.0/drives/b!uTdl5maWCEyFRUo_2bKAOg8Q9Rst52JPvFvtTIaQiSaOy9HgmWBFQYDbyM0zog0D/items/01JSNPH6EZHFDPJNKPRNHZTFEWRRLDKPC3/thumbnails/0/small/thumbnailContent",
                 "previewText": "Page-1",
-                "containerWebUrl": "https://m365x887078.sharepoint.com/sites/Retail/Shared Documents/NC460 Sales",
+                "containerWebUrl": "https://contoso.sharepoint.com/sites/Retail/Shared Documents/NC460 Sales",
                 "containerDisplayName": "Retail",
                 "containerType": "Site"
             },
             "resourceReference": {
-                "webUrl": "https://m365x887078.sharepoint.com/sites/Retail/_layouts/15/Doc.aspx?sourcedoc=%7BF4463999-4FB5-4F8B-9994-968C56353C5B%7D&file=Org%20Chart.vsdx&action=default&DefaultItemOpen=1",
+                "webUrl": "https://contoso.sharepoint.com/sites/Retail/_layouts/15/Doc.aspx?sourcedoc=%7BF4463999-4FB5-4F8B-9994-968C56353C5B%7D&file=Org%20Chart.vsdx&action=default&DefaultItemOpen=1",
                 "id": "drives/b!uTdl5maWCEyFRUo_2bKAOg8Q9Rst52JPvFvtTIaQiSaOy9HgmWBFQYDbyM0zog0D/items/01JSNPH6EZHFDPJNKPRNHZTFEWRRLDKPC3",
-                "type": "microsoft.graph.driveItem"
-            }
-        },
-        {
-            "id": "AaVI6n5KqI5FjDqNnB_O-IwPEPUbLediT7xb7UyGkIkmjsvR4JlgRUGA28jNM6INA5T7emOJwqlCit_j9Q5CpWSlSOp-SqiORYw6jZwfzviMBQ",
-            "lastUsed": {
-                "lastAccessedDateTime": "2019-05-25T07:12:26Z",
-                "lastModifiedDateTime": "2019-05-25T07:12:26Z"
-            },
-            "resourceVisualization": {
-                "title": "USA Sales",
-                "type": "Excel",
-                "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                "previewImageUrl": "https://m365x887078.sharepoint.com/_api/v2.0/drives/b!pUjqfkqojkWMOo2cH874jA8Q9Rst52JPvFvtTIaQiSaOy9HgmWBFQYDbyM0zog0D/items/01YAUTJM4U7N5GHCOCVFBIVX7D6UHEFJLE/thumbnails/0/small/thumbnailContent",
-                "previewText": "Product Category Product  Product Category - Product Target Revenue TY YTD Revenue Variance to Target Revenue COGS List Price % of List Price Actual Margin Target Margin Audio Car Audio Audio - Car Audio 4910000 4664500 245500 3928000 4320800 -736500 Audi",
-                "containerWebUrl": "https://m365x887078.sharepoint.com/sites/SalesAndMarketing/Shared Documents/Monthly Reports",
-                "containerDisplayName": "Sales and Marketing",
-                "containerType": "Site"
-            },
-            "resourceReference": {
-                "webUrl": "https://m365x887078.sharepoint.com/sites/SalesAndMarketing/_layouts/15/Doc.aspx?sourcedoc=%7B637AFB94-C289-42A9-8ADF-E3F50E42A564%7D&file=USA%20Sales.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
-                "id": "drives/b!pUjqfkqojkWMOo2cH874jA8Q9Rst52JPvFvtTIaQiSaOy9HgmWBFQYDbyM0zog0D/items/01YAUTJM4U7N5GHCOCVFBIVX7D6UHEFJLE",
-                "type": "microsoft.graph.driveItem"
-            }
-        },
-        {
-            "id": "AaVI6n5KqI5FjDqNnB_O-IwPEPUbLediT7xb7UyGkIkmjsvR4JlgRUGA28jNM6INAy6LlBcXfAJCmOiEWgBJjh-lSOp-SqiORYw6jZwfzviMBQ",
-            "lastUsed": {
-                "lastAccessedDateTime": "2019-05-25T07:11:49Z",
-                "lastModifiedDateTime": "2019-05-25T07:11:48Z"
-            },
-            "resourceVisualization": {
-                "title": "UK Sales",
-                "type": "Excel",
-                "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                "previewImageUrl": "https://m365x887078.sharepoint.com/_api/v2.0/drives/b!pUjqfkqojkWMOo2cH874jA8Q9Rst52JPvFvtTIaQiSaOy9HgmWBFQYDbyM0zog0D/items/01YAUTJMZOROKBOF34AJBJR2EELIAETDQ7/thumbnails/0/small/thumbnailContent",
-                "previewText": "Product Category Product  Product Category - Product Target Revenue TY YTD Revenue Variance to Target Revenue COGS List Price % of List Price Actual Margin Target Margin Electronics Wearable Technology Electronics - Wearable Technology 2226000 2114700 111",
-                "containerWebUrl": "https://m365x887078.sharepoint.com/sites/SalesAndMarketing/Shared Documents/Monthly Reports",
-                "containerDisplayName": "Sales and Marketing",
-                "containerType": "Site"
-            },
-            "resourceReference": {
-                "webUrl": "https://m365x887078.sharepoint.com/sites/SalesAndMarketing/_layouts/15/Doc.aspx?sourcedoc=%7B17948B2E-7C17-4202-98E8-845A00498E1F%7D&file=UK%20Sales.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
-                "id": "drives/b!pUjqfkqojkWMOo2cH874jA8Q9Rst52JPvFvtTIaQiSaOy9HgmWBFQYDbyM0zog0D/items/01YAUTJMZOROKBOF34AJBJR2EELIAETDQ7",
                 "type": "microsoft.graph.driveItem"
             }
         }
@@ -211,7 +167,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified"></a>Пример 2: возврат последних просмотренных документов, которые могут быть не изменены пользователем, вошедшего в систему 
+### <a name="example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified"></a>Пример 2. Возвращаем недавно просмотрённые документы, которые пользователь, вписанный, мог изменить или не изменить. 
 
 #### <a name="request"></a>Запрос
 
@@ -267,55 +223,15 @@ Content-type: application/json
                 "title": "Executive Corner",
                 "type": "spsite",
                 "mediaType": "application/octet-stream",
-                "previewImageUrl": "https://m365x887078.sharepoint.com/_api/v2.0/drives/b!ZOatQFjNPEyy-0guRSS0ho36wOcydFFNioHF6KHhtRQAAAAAAAAAAAAAAAAAAAAA/items/01NTE4NPQAAAAAAAAAAAAAAAAAAAAAAAAA/thumbnails/0/small/thumbnailContent",
+                "previewImageUrl": "https://contoso.sharepoint.com/_api/v2.0/drives/b!ZOatQFjNPEyy-0guRSS0ho36wOcydFFNioHF6KHhtRQAAAAAAAAAAAAAAAAAAAAA/items/01NTE4NPQAAAAAAAAAAAAAAAAAAAAAAAAA/thumbnails/0/small/thumbnailContent",
                 "previewText": "",
                 "containerDisplayName": "Executive Corner",
                 "containerType": "Site"
             },
             "resourceReference": {
-                "webUrl": "https://m365x887078.sharepoint.com/sites/Exec",
-                "id": "sites/m365x887078.sharepoint.com,40ade664-cd58-4c3c-b2fb-482e4524b486,e7c0fa8d-7432-4d51-8a81-c5e8a1e1b514",
+                "webUrl": "https://contoso.sharepoint.com/sites/Exec",
+                "id": "sites/contoso.sharepoint.com,40ade664-cd58-4c3c-b2fb-482e4524b486,e7c0fa8d-7432-4d51-8a81-c5e8a1e1b514",
                 "type": "microsoft.graph.siteItem"
-            }
-        },
-        {
-            "id": "AahdFRA14_FMrGLq9V4WmyiN-sDnMnRRTYqBxeih4bUUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoXRUQNePxTKxi6vVeFpsoBA",
-            "lastUsed": {
-                "lastAccessedDateTime": "2020-03-16T13:31:55Z",
-                "lastModifiedDateTime": "0001-01-01T00:00:00Z"
-            },
-            "resourceVisualization": {
-                "title": "Contoso Landings",
-                "type": "spsite",
-                "mediaType": "application/octet-stream",
-                "previewImageUrl": "https://m365x887078.sharepoint.com/_api/v2.0/drives/b!qF0VEDXj8UysYur1XhabKI36wOcydFFNioHF6KHhtRQAAAAAAAAAAAAAAAAAAAAA/items/01UHO6LBAAAAAAAAAAAAAAAAAAAAAAAAAA/thumbnails/0/small/thumbnailContent",
-                "previewText": "",
-                "containerDisplayName": "Contoso Landings",
-                "containerType": "Site"
-            },
-            "resourceReference": {
-                "webUrl": "https://m365x887078.sharepoint.com/sites/ContosoLandings",
-                "id": "sites/m365x887078.sharepoint.com,10155da8-e335-4cf1-ac62-eaf55e169b28,e7c0fa8d-7432-4d51-8a81-c5e8a1e1b514",
-                "type": "microsoft.graph.siteItem"
-            }
-        },
-        {
-            "id": "AaVI6n5KqI5FjDqNnB_O-IztQAKAS6acR7HFoIKDqOPE6bjkeoHWtEu7LoUIsZkHSkzLaA_67htEozMGRwifyaqlSOp-SqiORYw6jZwfzviMBQ",
-            "lastUsed": {
-                "lastAccessedDateTime": "2020-03-16T13:31:54Z",
-                "lastModifiedDateTime": "0001-01-01T00:00:00Z"
-            },
-            "resourceVisualization": {
-                "title": "Media Preview Packages",
-                "type": "Web",
-                "mediaType": "text/html",
-                "previewImageUrl": "https://m365x887078.sharepoint.com/_api/v2.0/drives/b!pUjqfkqojkWMOo2cH874jO1AAoBLppxHscWggoOo48TpuOR6gda0S7suhQixmQdK/items/01RGQ6XKCMZNUA76XODNCKGMYGI4EJ7SNK/thumbnails/0/small/thumbnailContent",
-                "previewText": "",
-                "containerWebUrl": "https://m365x887078.sharepoint.com/sites/SalesAndMarketing/CampaignsEvents/SitePages/Forms/ByAuthor.aspx",
-                "containerDisplayName": "Campaigns - Events"
-            },
-            "resourceReference": {
-                "webUrl": "https://m365x887078.sharepoint.com/sites/SalesAndMarketing/CampaignsEvents/SitePages/Media-Preview-Packages.aspx"
             }
         }
     ]

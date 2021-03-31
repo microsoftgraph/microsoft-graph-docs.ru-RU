@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 83accede4b6af1f1bbc255f94e9e54fb4de4b90f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8cf1e651e42dbff4c588f9cd9d2ea5e1ead1256c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964646"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473236"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -18,7 +18,7 @@ ms.locfileid: "48964646"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисляемое представление, которое включает в себя список документов, которые обходить пользователь.
+Вычисляемая информация, которая включает список документов, включающих тенденции вокруг пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "48964646"
 |Для приложений | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-Получение списка документов, обменяющих пользователя, выполнившего вход, или указанного пользователя:
+Получите список документов, которые будут ходить по пользователю или указанному пользователю:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -39,7 +39,7 @@ GET /me/insights/trending
 GET /users/{id | userPrincipalName}/insights/trending
 ```
 
-Разверните ресурс, на который ссылается анализ **тенденций** :
+Расширение ресурса, на который ссылается **трендовая** информация:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -50,17 +50,17 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-`$filter`С помощью параметра запроса можно фильтровать элементы тенденции. Например, на основе **типа** :
+Параметр запроса можно использовать для `$filter` фильтрации элементов тренда. Например, в зависимости от **типа:**
 <!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
-Или на основе **контаинертипе** :
+Или на основе **containerType:**
 <!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
+В [resourceVisualization](../resources/insights-resourcevisualization.md)см. доступные типы и типы контейнеров, которые можно фильтровать.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -74,9 +74,9 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список элементов [тенденции](../resources/insights-trending.md) в тексте отклика. Каждый элемент содержит свойства зрительного образа для отображения элемента в интерфейсе пользователя.
+В случае успешной работы этот метод возвращает код ответа и список элементов `200 OK` [тренда](../resources/insights-trending.md) в тексте ответа. Каждый элемент содержит свойства визуализации для отображения элемента в вашем опыте.
 
-Если сведения об элементе целевого пользователя отключены, этот метод возвращает результат `403 Forbidden` и следующую ошибку:
+Если представление элементов целевого пользователя отключено, этот метод возвращается `403 Forbidden` и следующая ошибка:
 <!-- { "blockType": "ignored" } -->
 
 ```
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. Пример неусеченного ответа в нижней части страницы.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. В нижней части страницы см. пример не усеченного ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -136,29 +136,28 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 801
 
 {
-    "value": [
-        {
-            "id": "id-value",
-            "weight": "weight-value",
-            "resourceVisualization": {
-                "title": "title-value",
-                "type": "type-value",
-                "mediaType": "mediaType-value",
-                "previewImageUrl": "previewImageUrl-value",
-                "previewText": "previewText-value",
-                "containerWebUrl": "containerWebUrl-value",
-                "containerDisplayName": "containerDisplayName-value",
-                "containerType": "containerType-value"
-            },
-            "resourceReference": {
-                "webUrl": "webUrl-value",
-                "id": "id-value",
-                "type": "type-value"
-            }
-        }
-    ]
+  "value": [
+    {
+      "id": "AWMiSOpKHlJCpP_ZoVJQXi9ees4wFhDQQqF55Pm5DlaMzvtd2zra4UWSTEvpTldvb6EhQ289G4BAsxnrajQyjW1jIkjqSh5SQqT_2aFSUF4vBQ",
+      "weight": "0.1583399742569597",
+      "resourceVisualization": {
+        "title": "LiveCaptions",
+        "type": "Image",
+        "mediaType": "application/octet-stream",
+        "previewImageUrl": "https://contoso.sharepoint.com/_api/v2.0/drives/b!YyJI6koeUkKk_9mhUlBeL156zjAWENBCoXnk-bkOVozO-13bOtrhRZJMS-lOV29v/items/01H273TR5BEFBW6PI3QBALGGPLNI2DFDLN/thumbnails/0/small/thumbnailContent",
+        "previewText": "",
+        "containerWebUrl": "https://contoso.sharepoint.com/sites/Mark8ProjectTeam/Shared Documents/Go to Market Plan",
+        "containerDisplayName": "Mark 8 Project Team",
+        "containerType": "Site"
+      },
+      "resourceReference": {
+        "webUrl": "https://contoso.sharepoint.com/sites/Mark8ProjectTeam/Shared%20Documents/Go%20to%20Market%20Plan/LiveCaptions.gif",
+        "id": "drives/b!YyJI6koeUkKk_9mhUlBeL156zjAWENBCoXnk-bkOVozO-13bOtrhRZJMS-lOV29v/items/01H273TR5BEFBW6PI3QBALGGPLNI2DFDLN",
+        "type": "microsoft.graph.driveItem"
+      }
+    }
+  ]
 }
 ```

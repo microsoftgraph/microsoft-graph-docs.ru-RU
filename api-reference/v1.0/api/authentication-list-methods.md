@@ -3,14 +3,14 @@ title: Методы List
 description: Извлечение списка объектов метода проверки подлинности.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4dd76103f14daad826d78dfbf2dc5be6e333aa0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1cca7f87bc5eb6b0c12108b0214ab81db99f0568
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950242"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468599"
 ---
 # <a name="list-methods"></a>Методы List
 

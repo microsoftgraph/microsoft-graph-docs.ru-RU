@@ -3,14 +3,14 @@ title: тип ресурса fido2KeyRestrictions
 description: Представляет основные ограничения, которые применяются в рамках политики методов проверки подлинности ключей безопасности FIDO2.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0fd319b64d124fc2c80c7f851a2e062d3568c2d4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c1781e39952bb3bf7cfb307d06ca3167ff58a2a6
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964959"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469453"
 ---
 # <a name="fido2keyrestrictions-resource-type"></a>тип ресурса fido2KeyRestrictions
 
@@ -21,9 +21,9 @@ ms.locfileid: "50964959"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|aaGuids|Коллекция строк|Коллекция GUID-интерфейсов проверки подлинности. AADGUID определяет ключевые типы и производителей.|
+|aaGuids|Коллекция String|Коллекция GUID-интерфейсов проверки подлинности. AADGUID определяет ключевые типы и производителей.|
 |enforcementType|fido2RestrictionEnforcementType|Тип правоприменения. Возможные значения: `allow`, `block`.|
-|isEnforced|Boolean|Определяет, включено ли правоприменительных ключевых элементов.|
+|isEnforced|Логический|Определяет, включено ли правоприменительных ключевых элементов.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

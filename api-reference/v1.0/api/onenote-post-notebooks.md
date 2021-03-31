@@ -5,18 +5,18 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 4a64a54385d0bff66cd6302323034057ac87ed0e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2dec1f425c16a69ca0f1389975c0f250c67b2992
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066595"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473117"
 ---
 # <a name="create-notebook"></a>Создание записной книжки
 
 Пространство имен: microsoft.graph
 
-Создайте новую [записную книжку](../resources/notebook.md)OneNote.
+Создание новой записной [](../resources/notebook.md)книжки OneNote.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,19 +41,17 @@ POST /sites/{id}/onenote/notebooks
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите имя записной книжки. 
+В теле запроса укажи имя записной книжки. 
 
-Имена записных книжек должны быть уникальными. Имя не может содержать более 128 символов или содержать следующие символы:? * \/ : <>| ' "
+Имена записных записей должны быть уникальными. Имя не может содержать более 128 символов или содержать следующие символы: ?* \/ :<>|'"
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [записной книжки](../resources/notebook.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый объект `201 Created` [записной](../resources/notebook.md) книжки в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_notebook_from_onenote"
@@ -61,32 +59,13 @@ POST /sites/{id}/onenote/notebooks
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
 Content-type: application/json
-Content-length: 30
 
 {
-  "displayName": "Notebook name"
+    "displayName": "My Private notebook"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-notebook-from-onenote-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-notebook-from-onenote-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-notebook-from-onenote-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-notebook-from-onenote-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -96,23 +75,24 @@ Content-length: 30
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 284
 
 {
-  "isDefault": true,
-  "userRole": {
-  },
-  "isShared": true,
-  "sectionsUrl": "sectionsUrl-value",
-  "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "links": {
-    "oneNoteClientUrl": {
-      "href": "href-value"
-    },
-    "oneNoteWebUrl": {
-      "href": "href-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('7d54cb02-aaa3-4016-9f9c-a4b49422dd9b')/onenote/notebooks/$entity",
+    "id": "1-10143016-70dc-4449-b92a-3015225f800d",
+    "self": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d",
+    "displayName": "My Private notebook",
+    "userRole": "Owner",
+    "isShared": false,
+    "sectionsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sections",
+    "sectionGroupsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sectionGroups",
+    "links": {
+        "oneNoteClientUrl": {
+            "href": "onenote:https://contoso-my.sharepoint.com/personal/admin_m365x841051_onmicrosoft_com/Documents/Notebooks/My%20Private%20notebook"
+        },
+        "oneNoteWebUrl": {
+            "href": "https://contoso-my.sharepoint.com/personal/admin_m365x841051_onmicrosoft_com/Documents/Notebooks/My%20Private%20notebook"
+        }
     }
-  }
 }
 ```
 

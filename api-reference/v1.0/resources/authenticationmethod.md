@@ -3,14 +3,14 @@ title: тип ресурса authenticationMethod
 description: Представляет метод проверки подлинности, зарегистрированный пользователем.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 283b81981417494e86a225770427f5497490809a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b052a6034484a5d1d1f8edc8ff9adc3feac52e98
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949074"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469138"
 ---
 # <a name="authenticationmethod-resource-type"></a>тип ресурса authenticationMethod
 
@@ -29,7 +29,7 @@ ms.locfileid: "50949074"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Идентификатор этого экземпляра метода проверки подлинности, зарегистрированного для этого пользователя. Только для чтения. |
+|id|String| Идентификатор этого экземпляра метода проверки подлинности, зарегистрированного для этого пользователя. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
 

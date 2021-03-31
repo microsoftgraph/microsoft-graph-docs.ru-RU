@@ -3,14 +3,14 @@ title: Список windowsHelloForBusinessAuthenticationMethods
 description: Получите список объектов windowsHelloForBusinessAuthenticationMethod и их свойств.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3376d5ab01bd12b4e59c37f45effa8aa483e9816
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 6458ba926220d9e28ee3e5ad617c3d40cdf9afb4
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201704"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467934"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>Список windowsHelloForBusinessAuthenticationMethods
 Пространство имен: microsoft.graph

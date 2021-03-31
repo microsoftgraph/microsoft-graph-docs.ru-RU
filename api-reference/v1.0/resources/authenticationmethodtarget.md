@@ -3,14 +3,14 @@ title: тип ресурса authenticationMethodTarget
 description: Коллекция пользователей или групп, включенная для использования метода проверки подлинности в рамках политики метода проверки подлинности.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c9265fa359e5b60da6f8e36c13d1a4340ba6d1a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f75a0ee81f1c43923a910bd86df4828c276706e
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964983"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469110"
 ---
 # <a name="authenticationmethodtarget-resource-type"></a>тип ресурса authenticationMethodTarget
 
@@ -23,9 +23,9 @@ ms.locfileid: "50964983"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Объект Id пользователя или группы Azure AD.|
-|isRegistrationRequired|Boolean|Определяет, принудит ли пользователь зарегистрировать метод проверки подлинности.|
+|isRegistrationRequired|Логический|Определяет, принудит ли пользователь зарегистрировать метод проверки подлинности.|
 |targetType|authenticationMethodTargetType|Возможные значения: `user`, `group`.|
-|useForSignIn|Boolean|Определяет, можно ли использовать метод проверки подлинности для входов в Azure AD.|
+|useForSignIn|Логический|Определяет, можно ли использовать метод проверки подлинности для входов в Azure AD.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

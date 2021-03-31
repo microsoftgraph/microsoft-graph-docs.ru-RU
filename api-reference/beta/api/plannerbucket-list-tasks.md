@@ -1,16 +1,16 @@
 ---
 title: Перечисление задач
-description: Получение списка объектов **plannerTask** , связанных с объектом plannerBucket.
+description: Получение списка объектов **plannerTask**, связанных с объектом plannerBucket.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 826c3ea013f2ad3519bc23def4bd17282e246dc2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 57413c3b1bf58699c505984413d01bf8ec563f2e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973873"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473180"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -18,13 +18,13 @@ ms.locfileid: "48973873"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов **plannerTask** , связанных с объектом [plannerBucket](../resources/plannerbucket.md).
+Получение списка объектов **plannerTask**, связанных с объектом [plannerBucket](../resources/plannerbucket.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 

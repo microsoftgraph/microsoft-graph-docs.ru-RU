@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 60c18961c8f6b1adc9a1d498dee11cef62278da2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6f58f116b82c0f6b8c5d45f6d55aff695fcabd44
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944859"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468648"
 ---
 # <a name="approleassignment-resource-type"></a>Тип ресурса appRoleAssignment
 
@@ -31,7 +31,7 @@ ms.locfileid: "50944859"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 | id | Строка | Уникальный идентификатор ключа **appRoleAssignment**. Значение null не допускается. Только для чтения. |
-| creationTimestamp | DateTimeOffset | Время создания назначения роли приложения. Тип Timestamp представляет сведения о времени и дате в формате ISO 8601 (всегда используется время в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.  |
+| createdDateTime | DateTimeOffset | Время создания назначения роли приложения. Тип Timestamp представляет сведения о времени и дате в формате ISO 8601 (всегда используется время в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.  |
 | principalId | Guid | Уникальный идентификатор (**ИД**) [пользователя](user.md), [группы](group.md) или [субъекта-службы](serviceprincipal.md), которым предоставляется роль приложения. Требуется при создании.  |
 | principalType | Строка | Тип назначенного субъекта. Это может быть `User`, `Group` или `ServicePrincipal`. Только для чтения.  |
 | principalDisplayName | Строка |Отображаемое имя пользователя, группа или субъекта-службы, которым было предоставлено назначение роли приложения. Только для чтения. Поддерживает `$filter` (`eq` и `startswith`). |
@@ -54,7 +54,7 @@ ms.locfileid: "50944859"
 ```json
 {
   "id": "string",
-  "creationTimestamp": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "principalDisplayName": "string",
   "principalId": "guid",
   "principalType": "string",

@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e13a7d3f79da8227e0599d30182ea30e6799ed96
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 86a96855c330e581e98da902b5e38f16cc857ec9
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961340"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473299"
 ---
 # <a name="get-group"></a>Вывод группы
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [группового](../resources/termstore-group.md) объекта.
+Ознакомьтесь с свойствами и отношениями объекта группы [терминов](../resources/termstore-group.md) store.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,11 +50,13 @@ GET /termStore/groups/{groupId}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [group](../resources/termstore-group.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект Microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-a-termstore-group"></a>Пример 1. Получить группу termStore
+
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,9 +86,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 ---
 
-
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -106,6 +106,43 @@ Content-Type: application/json
   "scope" : "global",
   "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
   "displayName": "myGroup"  
+}
+```
+### <a name="example-2-get-a-termstore-group-and-its-parent-site-id"></a>Пример 2. Получить группу termStore и ее родительский ИД сайта
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parentSiteId
+```
+
+#### <a name="response"></a>Отклик
+
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.group"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "createdDateTime": "2019-06-21T20:01:37Z",
+  "description": "My term group",
+  "scope" : "global",
+  "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
+  "displayName": "myGroup",
+  "parentSiteId": "microsoft.sharepoint.com,05259ba9-25a8-4c93-a9a9-f995ef1fc51f,a785ad58-1d57-4f8a-aa71-77170459bd0d"
 }
 ```
 

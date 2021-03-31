@@ -1,21 +1,20 @@
 ---
 title: Предоставление appRoleAssignment субъекту-службе
-description: Предоставление назначения роли приложения субъекту-службе
+description: Предоставляйте назначение роли приложения субъекту-службе.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 9b0fe2f32fccd04c745f1dd6ccb7aa685ddd3b5a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: psignoret
+ms.openlocfilehash: f2aeb0c6abaad90b7da38285437da2f95d123ef3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434269"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468655"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 
 Пространство имен: microsoft.graph
-
 
 Назначение роли приложения для этого субъекта-службы пользователю, группе или субъекту-службе клиента.
 
@@ -33,9 +32,9 @@ ms.locfileid: "50434269"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AppRoleAssignment.ReadWrite.All, |
+|Для приложений | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -128,7 +127,7 @@ Content-type: application/json
   "principalDisplayName": "Parents of Contoso",
   "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
   "principalType": "Group",
-  "resourceDisplayName": "Yammer",
+  "resourceDisplayName": "Fabrikam App",
   "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```

@@ -3,14 +3,14 @@ title: тип ресурса microsoftAuthenticatorAuthenticationMethodTarget
 description: Коллекция пользователей или групп, включенная для использования политики методов проверки подлинности Microsoft Authenticator.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 233eed9e49ca25fafbdebc0097b513122bdb9a4b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 43c8e5a4ba92e838a64ec5f345ae82c744b53dee
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964935"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469250"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>тип ресурса microsoftAuthenticatorAuthenticationMethodTarget
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "50964935"
 |id|String|Объектный ID пользователя или группы Azure AD.|
 |authenticationMode|MicrosoftAuthenticatorAuthenticationMode|Определяет, какие типы уведомлений можно использовать для регистрации. Возможные значения: `any` , `deviceBasedPush` (только без паролей), `push` .|
 |featureSettings|authenticatorAppFeatureSettings|Определяет, какие дополнительные параметры следует применить к Microsoft Authenticator. Возможные значения: `null` , `requireNumberMatching` (Требуется совпадение номеров для уведомлений MFA. Значение игнорируется для уведомлений о входе в телефон).|
-|isRegistrationRequired|Boolean|Определяет, принудит ли пользователь зарегистрировать метод проверки подлинности. *Не поддерживается.* |
+|isRegistrationRequired|Логический|Определяет, принудит ли пользователь зарегистрировать метод проверки подлинности. *Не поддерживается.* |
 |shownContext|authenticatorAppContextType|(Частный предварительный просмотр) Определяет, какие типы контекста о входе должны быть показаны пользователю в теле уведомления. Возможные значения: `location`, `app`.|
 |targetType|authenticationMethodTargetType| Возможные значения: `user`, `group`.|
 
