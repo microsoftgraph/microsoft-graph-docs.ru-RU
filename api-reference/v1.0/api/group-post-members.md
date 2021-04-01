@@ -1,27 +1,29 @@
 ---
 title: Добавление участника
-description: Добавление члена в группу Microsoft 365 или группу безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members** .
+description: Добавление члена в группу Microsoft 365 или группу безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**.
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 17321cff45b4d1af9cf625ce47002b934953b948
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: d7272266893579d0524423a7bd968ad56ff7e694
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796964"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469005"
 ---
 # <a name="add-member"></a>Добавление участника
 
 Пространство имен: microsoft.graph
 
-Добавляйте участника в группу Microsoft 365 или группу безопасности через свойство навигации **members** .
+Добавляйте участника в группу Microsoft 365 или группу безопасности через свойство навигации **members**.
 
 Вы можете добавлять пользователей, контакты организации, cубъект-службы или другие группы. 
 
 > [!IMPORTANT]
-> Вы можете добавлять пользователей только в группы безопасности и группы Microsoft 365, управляемые через облако.
+> + Вы можете добавлять пользователей только в группы безопасности и группы Microsoft 365, управляемые через облако.
+> + Вы не можете добавлять группы безопасности в группы Microsoft 365.
+> + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
 
 ## <a name="permissions"></a>Разрешения
 

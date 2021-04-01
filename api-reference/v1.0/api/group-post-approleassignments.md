@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: e17f94e0b1d62015bfbff8d849c4d205a48cba2a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d574b638d190b1d63cc7fd859160d6ae144c9aab
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949930"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469012"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Предоставление appRoleAssignment группе
 
@@ -132,6 +132,8 @@ Content-type: application/json
   "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
+
+В этом примере обратите внимание, что значение, используемое в качестве **ИД** пользователя в URL-адресе запроса (`cde330e5-2150-4c11-9c5b-14bfdc948c79`), совпадает со свойством **principalId** в тексте сообщения.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
