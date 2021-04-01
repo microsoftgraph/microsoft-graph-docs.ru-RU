@@ -1,26 +1,26 @@
 ---
-title: Создание Екстерналитем
-description: Создание нового Екстерналитем.
+title: Создание externalItem
+description: Создание нового externalItem.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6e0ee2ca2eebcca9b912c62242c2606590d9cbc4
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: b4617596a10a85a4378b1e7ad4c4ca94fb16ffac
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192268"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51491011"
 ---
-# <a name="create-externalitem"></a>Создание Екстерналитем
+# <a name="create-externalitem"></a>Создание externalItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [екстерналитем](../resources/externalitem.md).
+Создание нового [externalItem](../resources/externalitem.md).
 
-Этот API можно использовать для создания настраиваемого элемента. Укажите тип, который вы создаете, включив `@odata.type` свойство в текст JSON. В содержащем [екстерналконнектион](../resources/externalconnection.md) должна быть зарегистрирована [схема](../resources/schema.md) соответствующего типа.
+Этот API можно использовать для создания настраиваемой номенклатуры. Укажите тип, который вы создаете, включив `@odata.type` свойство в тело JSON. Содержащая [externalConnection](../resources/externalconnection.md) должна иметь [схему,](../resources/schema.md) зарегистрированную соответствующего типа.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -46,8 +46,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ИД подключения | string | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
-| item-id       | string | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). Если такой элемент уже не существует `id` , создается новый элемент. Если такой элемент уже существует `id` , он перезаписывается объектом, отправленным в теле. |
+| connection-id | string | `id`Свойствосодержащего [externalConnection](../resources/externalconnection.md) |
+| item-id       | string | Свойство `id` [externalItem,](../resources/externalitem.md)предоставленное разработчиком. Если с этим элементом уже не `id` существует, создается новый элемент. Если элемент уже существует с этим, он `id` перезаписывается объектом, отправленным в тело. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,17 +58,17 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [екстерналитем](../resources/externalitem.md) в формате JSON. Размер полезных данных не может превышать 4 МБ.
+В теле запроса поставляем представление JSON объекта [externalItem.](../resources/externalitem.md) Нагрузка ограничена 4 МБ.
 
-### <a name="creating-an-externalitem"></a>Создание Екстерналитем
+### <a name="creating-an-externalitem"></a>Создание externalItem
 
-При создании `externalItem` необходимо указать следующие поля: `@odata.type` , `acl` , и `properties` . `properties`Объект должен содержать по крайней мере одно свойство.
+При создании поля требуются следующие `externalItem` поля: `@odata.type` и `acl` `properties` . Объект `properties` должен содержать по крайней мере одно свойство.
 
 Все `DateTime` свойства типа должны быть в формате ISO 8601.
 
-Свойства в `externalItem` полезных данных должны использовать описатели типов в следующих сценариях:
+Свойства на объекте должны использовать указанные типы в полезной `externalItem` нагрузке в следующих сценариях:
 
-- Для `String` свойств Type, если значение содержит символы, не входящие в набор ASCII.
+- Для `String` свойств типа, если значение содержит символы, не относимые к ASCII.
 
     ```json
     "description@odata.type": "String",
@@ -86,7 +86,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > При включении свойства типа `Collection(DateTime)` необходимо использовать описатель типа `Collection(DateTimeOffset)` .
+    > При включаем свойстве типа `Collection(DateTime)` необходимо использовать указанный `Collection(DateTimeOffset)` тип.
 
 ## <a name="response"></a>Отклик
 
@@ -94,7 +94,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-create-a-custom-item"></a>Пример: Создание настраиваемого элемента
+### <a name="example-create-a-custom-item"></a>Пример: Создание настраиваемой номенклатуры
 
 #### <a name="request"></a>Запрос
 
@@ -107,7 +107,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {

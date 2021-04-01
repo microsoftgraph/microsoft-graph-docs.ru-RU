@@ -5,16 +5,23 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 2ff9dfc6b0665e79d121ce66ab5adb9b82a0e2b4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: da886cc799f638d981c6aa0d9ee213518c6deedc
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958669"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51491028"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="countrylookupmethodtype-values"></a>значения countryLookupMethodType
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
 
 ### <a name="approvalstate-values"></a>значения approvalState
 
@@ -65,11 +72,11 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Справочные материалы|
-|Binary|
-|Boolean|
+|Справка|
+|В двоичном формате|
+|Логический|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -185,7 +192,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |noMissedCall|
 |отключениеForwardingExceptPhone|
 |отключениеForwarding|
@@ -261,7 +268,7 @@ ms.locfileid: "50958669"
 ### <a name="recipientscopetype-values"></a>значения recipientScopeType
 |Member|
 |:---|
-|Нет|
+|нет|
 |внутренний|
 |внешние|
 |externalPartner|
@@ -319,7 +326,7 @@ ms.locfileid: "50958669"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -335,7 +342,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |бесплатно|
 |основные|
 |premiumP1|
@@ -346,7 +353,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |приложение|
 |users|
 |devicePlatform|
@@ -390,7 +397,7 @@ ms.locfileid: "50958669"
 |все|
 |privilegedAdmin|
 |Администратор|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>значения includedUserTypes 
@@ -406,7 +413,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -466,7 +473,7 @@ ms.locfileid: "50958669"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -499,7 +506,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |внутренний|
 |внешние|
 |externalPartner|
@@ -544,14 +551,14 @@ ms.locfileid: "50958669"
 |medium|
 |высокая|
 |hidden|
-|Нет|
+|нет|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>значения riskState 
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |confirmedSafe|
 |исправлено|
 |отклонено|
@@ -595,7 +602,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |assignIfOpen|
 |unknownFutureValue|
 
@@ -691,7 +698,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -720,7 +727,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -791,7 +798,7 @@ ms.locfileid: "50958669"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -855,7 +862,7 @@ ms.locfileid: "50958669"
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |автомобиль|
 |calendar|
 |запуск|
@@ -908,7 +915,7 @@ ms.locfileid: "50958669"
 
 | Member
 |:----------------------------
-|Нет
+|нет
 |shift
 |swapRequest
 |openShift
@@ -958,7 +965,7 @@ ms.locfileid: "50958669"
 
 | Member
 |:-------------------------
-| Нет
+| нет
 | contactsOnly
 | все
 
@@ -1073,7 +1080,7 @@ ms.locfileid: "50958669"
 
 | Member
 |:-----------------
-| Нет
+| нет
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -1105,7 +1112,7 @@ ms.locfileid: "50958669"
 | deviceDefault
 | баннер
 | modal
-| Нет
+| нет
 
 ### <a name="deviceenrollmentfailurereason-values"></a>значения deviceEnrollmentFailureReason
 
@@ -1235,7 +1242,7 @@ ms.locfileid: "50958669"
 | Автоматически
 | noPreview
 | checklist
-| описание
+| description
 | справочник
 
 
@@ -1307,7 +1314,7 @@ ms.locfileid: "50958669"
 
 | Member
 |:-------------------------
-| Нет
+| нет
 | organizer
 | предварительноAccepted
 | принято
@@ -1340,7 +1347,7 @@ ms.locfileid: "50958669"
 
 | Элемент   | Значение |
 | :------- | :---- |
-| Нет     | –1    |
+| нет     | –1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
@@ -1354,7 +1361,7 @@ ms.locfileid: "50958669"
 | preset10 | 10     |
 | preset11 | 11    |
 | preset12 | 12     |
-| preset13 | 13     |
+| preset13 | 13    |
 | preset14 | 14     |
 | preset15 | 15     |
 | preset16 | 16     |
@@ -1460,7 +1467,7 @@ Enum для типов значений реестра, определенных
 | expandSz          | 5      | REG_EXPAND_SZ тип значения реестра.           |
 | ссылка              | 6      | REG_LINK тип значения реестра.                |
 | multiSz           | 7      | REG_MULTI_SZ тип значения реестра.            |
-| Нет              | 8      | REG_NONE тип значения реестра.                |
+| нет              | 8      | REG_NONE тип значения реестра.                |
 | qword             | 9      | REG_QWORD тип значения реестра.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN типа значения реестра. |
 | sz                | 11    | REG_SZ тип значения реестра.                  |
@@ -1526,7 +1533,7 @@ Enum для серьезности оповещений.
 
 | Значение |
 |:-----------------|
-| Нет |
+| нет |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1546,14 +1553,14 @@ Enum для серьезности оповещений.
 |medium|
 |высокая|
 |hidden|
-|Нет|
+|нет|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>значения riskState
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |confirmedSafe|
 |исправлено|
 |отклонено|
@@ -1565,7 +1572,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1719,7 +1726,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |signin|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>значения chatMessagePolicyViolationUserActionType
@@ -1770,7 +1777,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |freeBusyRead|
 |limitedRead|
 |read|
@@ -1888,13 +1895,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1926,7 +1933,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| user          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -1941,7 +1948,7 @@ Enum для серьезности оповещений.
 
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
-| Нет                  | 0     | Еще не знаю.                       |
+| нет                  | 0     | Еще не знаю.                       |
 | mailFlowRule          | 1     | Правило транспорта Exchange.            |
 | safeSender            | 2     | Безопасный список отправитель.                   |
 | blockedSender         | 3     | Заблокированный список отправитель.                |
@@ -1954,7 +1961,7 @@ Enum для серьезности оповещений.
 | autoPurgeToJunk       | 10     | TimeTravel перемещает сообщение в нежелательное.    |
 | autoPurgeToDeleted    | 11    | TimeTravel перемещает сообщение на удаление. |
 | исходящие              | 12     | Исходящие сообщения.                      |
-| notJunk               | 13     | Разрешить из-за не нежелательной.              |
+| notJunk               | 13    | Разрешить из-за не нежелательной.              |
 | нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
 | unknownFutureValue    | 15     | Член-часовой.                  |
 
@@ -1989,7 +1996,7 @@ Enum для серьезности оповещений.
 
 | Member
 |:----------------------
-| Нет
+| нет
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -2017,7 +2024,7 @@ Enum для серьезности оповещений.
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
 |boolean | Столбец Да/Нет. |
-|пользователь | столбец персоны или группы. |
+|user | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
 |расположение | столбец расположения. |
@@ -2047,7 +2054,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>значения identityUserFlowAttributeDataType
@@ -2131,7 +2138,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|Нет|
+|нет|
 |onPremisesKerberos|
 |aadHeaderBased|
 |pingHeaderBased|

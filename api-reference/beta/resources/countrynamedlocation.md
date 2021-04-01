@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f6a986907ee82ea3f40c7b294cf21bf4dcc191a4
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c01811ce3940c77a3586196db7b5d2fdf82ebbbb
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721658"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51491035"
 ---
 # <a name="countrynamedlocation-resource-type"></a>тип ресурса countryNamedLocation
 
@@ -36,12 +36,14 @@ ms.locfileid: "50721658"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Коллекция объектов string|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|countriesAndRegions|Коллекция String|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|countryLookupMethod|countryLookupMethodType|Определяет, какой метод используется для определения страны, в которой находится пользователь. Возможные значения: `clientIpAddress` и `authenticatorAppGps`.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |displayName|String|Понятное человеку имя расположения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|includeUnknownCountriesAndRegions|Boolean|Верно, если IP-адреса, которые не относятся к стране или региону, должны быть включены в именоваемом расположении.|
+|includeUnknownCountriesAndRegions|Логический|Верно, если IP-адреса, которые не относятся к стране или региону, должны быть включены в именоваемом расположении.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
+
 
 ## <a name="relationships"></a>Связи
 
@@ -62,6 +64,7 @@ ms.locfileid: "50721658"
 ```json
 {
   "countriesAndRegions": ["String"],
+  "countryLookupMethod": "countryLookedupMethodType",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",

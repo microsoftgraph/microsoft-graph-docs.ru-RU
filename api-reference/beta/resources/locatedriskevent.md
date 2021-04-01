@@ -3,14 +3,14 @@ title: тип ресурса locatedRiskEvent
 description: 'Событие риска, обнаруженное Azure Active Directory Identity Protection, основанное на данных расположения. Типы событий, связанных с расположенными рисками, включают:'
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: 902dc864ea16bd677d0499711faa078131ca015d
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: c53c503132a0b280c8b7fb02c99816d2ee7a5f03
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469460"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51490993"
 ---
 # <a name="locatedriskevent-resource-type"></a>тип ресурса locatedRiskEvent
 
@@ -38,13 +38,13 @@ ms.locfileid: "51469460"
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно дате самого события риска. Это правильное свойство, используемее в качестве фильтра при запросе событий риска.|
 |id|string| Только для чтения|
-|ipAddress|Строка| IP-адрес входного|
+|ipAddress|string| IP-адрес входного|
 |location|string| Расположение, прикрепленное к IP-адресу входного|
 |riskEventDateTime|dateTimeOffset| Дата и время возникновения события риска|
-|riskEventStatus|Строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventStatus|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|riskEventType|Строка| Тип риска|
-|userDisplayName|Строка| Имя пользователя, на которого существует риск|
+|riskEventType|string| Тип риска|
+|userDisplayName|string| Имя пользователя, на которого существует риск|
 |userId|строка| ID пользователя, на который существует риск|
 |userPrincipalName|string| Основное имя пользователя пользователя, на которого существует риск|
 
