@@ -5,56 +5,56 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 586d8bf1112dbf98f1a710f514e93735c9c449b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aaf755928309219e0653b241d1df23b033a2626d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984756"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473593"
 ---
-# <a name="update-plannerbuckettaskboardtaskformat"></a><span data-ttu-id="4ba14-103">Обновление объекта plannerBucketTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="4ba14-103">Update plannerBucketTaskBoardTaskFormat</span></span>
+# <a name="update-plannerbuckettaskboardtaskformat"></a><span data-ttu-id="8a5d7-103">Обновление объекта plannerBucketTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="8a5d7-103">Update plannerBucketTaskBoardTaskFormat</span></span>
 
-<span data-ttu-id="4ba14-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4ba14-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8a5d7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a5d7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4ba14-105">Обновление свойств объекта **plannerBucketTaskBoardTaskFormat**.</span><span class="sxs-lookup"><span data-stu-id="4ba14-105">Update the properties of **plannerBucketTaskBoardTaskFormat** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4ba14-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4ba14-106">Permissions</span></span>
-<span data-ttu-id="4ba14-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4ba14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8a5d7-105">Обновление свойств объекта **plannerBucketTaskBoardTaskFormat**.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-105">Update the properties of **plannerBucketTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8a5d7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8a5d7-106">Permissions</span></span>
+<span data-ttu-id="8a5d7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a5d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4ba14-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4ba14-109">Permission type</span></span>      | <span data-ttu-id="4ba14-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4ba14-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8a5d7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8a5d7-109">Permission type</span></span>      | <span data-ttu-id="8a5d7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8a5d7-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4ba14-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4ba14-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4ba14-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ba14-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4ba14-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4ba14-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ba14-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ba14-114">Not supported.</span></span>    |
-|<span data-ttu-id="4ba14-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4ba14-115">Application</span></span> | <span data-ttu-id="4ba14-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ba14-116">Not supported.</span></span> |
+|<span data-ttu-id="8a5d7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8a5d7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8a5d7-112">Tasks.ReadWrite, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a5d7-112">Tasks.ReadWrite, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8a5d7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8a5d7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a5d7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-114">Not supported.</span></span>    |
+|<span data-ttu-id="8a5d7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8a5d7-115">Application</span></span> | <span data-ttu-id="8a5d7-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4ba14-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4ba14-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8a5d7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a5d7-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="4ba14-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4ba14-118">Optional request headers</span></span>
-| <span data-ttu-id="4ba14-119">Имя</span><span class="sxs-lookup"><span data-stu-id="4ba14-119">Name</span></span>       | <span data-ttu-id="4ba14-120">Описание</span><span class="sxs-lookup"><span data-stu-id="4ba14-120">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="8a5d7-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8a5d7-118">Optional request headers</span></span>
+| <span data-ttu-id="8a5d7-119">Имя</span><span class="sxs-lookup"><span data-stu-id="8a5d7-119">Name</span></span>       | <span data-ttu-id="8a5d7-120">Описание</span><span class="sxs-lookup"><span data-stu-id="8a5d7-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="4ba14-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4ba14-121">Authorization</span></span>  | <span data-ttu-id="4ba14-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4ba14-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4ba14-124">If-Match</span><span class="sxs-lookup"><span data-stu-id="4ba14-124">If-Match</span></span>  | <span data-ttu-id="4ba14-p103">Последнее известное значение ETag обновляемого объекта **plannerBucketTaskBoardTaskFormat**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4ba14-p103">Last known ETag value for the **plannerBucketTaskBoardTaskFormat** to be updated. Required.</span></span>|
+| <span data-ttu-id="8a5d7-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8a5d7-121">Authorization</span></span>  | <span data-ttu-id="8a5d7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8a5d7-124">If-Match</span><span class="sxs-lookup"><span data-stu-id="8a5d7-124">If-Match</span></span>  | <span data-ttu-id="8a5d7-p103">Последнее известное значение ETag обновляемого объекта **plannerBucketTaskBoardTaskFormat**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-p103">Last known ETag value for the **plannerBucketTaskBoardTaskFormat** to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4ba14-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="4ba14-127">Request body</span></span>
-<span data-ttu-id="4ba14-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="4ba14-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8a5d7-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8a5d7-127">Request body</span></span>
+<span data-ttu-id="8a5d7-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="4ba14-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="4ba14-131">Property</span></span>     | <span data-ttu-id="4ba14-132">Тип</span><span class="sxs-lookup"><span data-stu-id="4ba14-132">Type</span></span>   |<span data-ttu-id="4ba14-133">Описание</span><span class="sxs-lookup"><span data-stu-id="4ba14-133">Description</span></span>|
+| <span data-ttu-id="8a5d7-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="8a5d7-131">Property</span></span>     | <span data-ttu-id="8a5d7-132">Тип</span><span class="sxs-lookup"><span data-stu-id="8a5d7-132">Type</span></span>   |<span data-ttu-id="8a5d7-133">Описание</span><span class="sxs-lookup"><span data-stu-id="8a5d7-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4ba14-134">orderHint</span><span class="sxs-lookup"><span data-stu-id="4ba14-134">orderHint</span></span>|<span data-ttu-id="4ba14-135">String</span><span class="sxs-lookup"><span data-stu-id="4ba14-135">String</span></span>|<span data-ttu-id="4ba14-p105">Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="4ba14-p105">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](../resources/planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="8a5d7-134">orderHint</span><span class="sxs-lookup"><span data-stu-id="8a5d7-134">orderHint</span></span>|<span data-ttu-id="8a5d7-135">String</span><span class="sxs-lookup"><span data-stu-id="8a5d7-135">String</span></span>|<span data-ttu-id="8a5d7-p105">Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="8a5d7-p105">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](../resources/planner-order-hint-format.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4ba14-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ba14-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8a5d7-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a5d7-138">Response</span></span>
 
-<span data-ttu-id="4ba14-139">В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4ba14-139">If successful, this method returns a `200 OK` response code and updated [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.</span></span>
+<span data-ttu-id="8a5d7-139">В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-139">If successful, this method returns `204 No Content` response and empty content.</span></span> <span data-ttu-id="8a5d7-140">Если запрос указывает заголовку с предпочтением, этот метод возвращает код ответа и обновленный объект `Prefer` `return=representation` `200 OK` [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-140">If the request specifies `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and updated [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.</span></span>
 
-<span data-ttu-id="4ba14-p106">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="4ba14-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="8a5d7-p107">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="8a5d7-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="4ba14-143">Пример</span><span class="sxs-lookup"><span data-stu-id="4ba14-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4ba14-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="4ba14-144">Request</span></span>
-<span data-ttu-id="4ba14-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4ba14-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8a5d7-144">Пример</span><span class="sxs-lookup"><span data-stu-id="8a5d7-144">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8a5d7-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="8a5d7-145">Request</span></span>
+<span data-ttu-id="8a5d7-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-146">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4ba14-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="4ba14-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8a5d7-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a5d7-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannerbuckettaskboardtaskformat"
@@ -63,32 +63,33 @@ PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardFormat
 Content-type: application/json
 Content-length: 34
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
   "orderHint": "A6673H Ejkl!"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4ba14-147">C#</span><span class="sxs-lookup"><span data-stu-id="4ba14-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8a5d7-148">C#</span><span class="sxs-lookup"><span data-stu-id="8a5d7-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerbuckettaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4ba14-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4ba14-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8a5d7-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8a5d7-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerbuckettaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4ba14-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4ba14-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8a5d7-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8a5d7-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerbuckettaskboardtaskformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4ba14-150">Java</span><span class="sxs-lookup"><span data-stu-id="4ba14-150">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8a5d7-151">Java</span><span class="sxs-lookup"><span data-stu-id="8a5d7-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-plannerbuckettaskboardtaskformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="4ba14-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ba14-151">Response</span></span>
-<span data-ttu-id="4ba14-p107">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4ba14-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8a5d7-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a5d7-152">Response</span></span>
+<span data-ttu-id="8a5d7-p108">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8a5d7-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
