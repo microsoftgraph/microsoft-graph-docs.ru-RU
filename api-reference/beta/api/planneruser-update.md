@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 20c50b423962e9c8289ba3c00556deeba22b50e4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 0555d7ccfd843fbfac3cf51fe43c61e16930421a
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474040"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473929"
 ---
 # <a name="update-planneruser"></a>Обновление plannerUser
 
@@ -25,7 +25,7 @@ ms.locfileid: "50474040"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -49,7 +49,7 @@ PATCH /me/planner
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md).|Изменения в коллекции, содержащие ссылки на планы, которые пользователь недавно просмотрел.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [plannerUser](../resources/planneruser.md) в тексте ответа.
+В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент. Если запрос указывает заголовщик с предпочтением, этот метод возвращает код ответа и обновленный `Prefer` `return=representation` объект `200 OK` [plannerUser](../resources/planneruser.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Пример
@@ -66,6 +66,7 @@ PATCH /me/planner
 PATCH https://graph.microsoft.com/beta/me/planner
 Content-type: application/json
 Content-length: 504
+Prefer: return=representation
 If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 
 {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e7fd44a48691f9eae5739602e70a7b3fbafd3019
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee352ace90f9bb778b241ee5e6bfe9dcd62efc8d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025573"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473761"
 ---
 # <a name="delete-plannerbucket"></a>Удаление объекта plannerBucket
 
@@ -22,7 +22,7 @@ ms.locfileid: "48025573"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -37,7 +37,7 @@ DELETE /planner/buckets/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | If-Match  | Последнее известное значение ETag удаляемого объекта **plannerBucket**. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,28 +1,28 @@
 ---
 title: Перечисление задач
-description: Получение списка объектов **plannerTask** , связанных с объектом plannerPlan.
+description: Извлечение списка **объектов plannerTask,** связанных с объектом plannerPlan.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c50b84fce3773d9b9e50fd1e85998f2af74b6fc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3aaa96e3e5755dc366b514a32c8b85f445488973
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020690"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473866"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [plannerTask](../resources/plannertask.md) , связанных с объектом [plannerPlan](../resources/plannerplan.md) .
+Извлечение списка [объектов plannerTask,](../resources/plannertask.md) связанных с [объектом plannerPlan.](../resources/plannerplan.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -37,12 +37,12 @@ GET /planner/plans/{plan-id}/tasks
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [plannerTask](../resources/plannertask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [plannerTask](../resources/plannertask.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 

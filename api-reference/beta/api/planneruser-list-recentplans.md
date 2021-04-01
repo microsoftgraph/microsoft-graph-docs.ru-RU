@@ -1,16 +1,16 @@
 ---
 title: Список объектов recentPlans
-description: Получение списка объектов plannerPlan, недавно просмотренных пользователем. Вы можете обновить недавно просмотренные планы, обновив ресурс plannerUser.
+description: Получение списка объектов plannerPlan, недавно просмотренных пользователем. Вы можете обновить недавно просмотримые планы, обновив ресурс plannerUser.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b08b674e03145520654d1aa6b79096b6f1e99472
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: abe618b63bdd15e3053c831352490255468bb0f2
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980494"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473474"
 ---
 # <a name="list-recentplans"></a>Список объектов recentPlans
 
@@ -18,13 +18,13 @@ ms.locfileid: "48980494"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [планов](../resources/plannerplan.md) , недавно просмотренных пользователем. Вы можете обновить недавно просмотренные планы, [обновив ресурс plannerUser](planneruser-update.md).
+Извлечение списка [планировщикаPlans,](../resources/plannerplan.md) недавно просмотреного пользователем. Вы можете обновить недавно просмотримые планы, [обновив ресурс plannerUser.](planneruser-update.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.Read, Tasks.ReadWrite, Group.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -43,7 +43,7 @@ GET /users/{id}/planner/recentPlans
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

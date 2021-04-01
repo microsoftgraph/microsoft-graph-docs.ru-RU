@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Шарингдетаил
+title: тип ресурса sharingDetail
 description: 'Сложный тип, содержащий свойства общих элементов. '
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 0540ebae50cb766b25daaad6e80d8b3248e79e42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31ae4dd98949938cf14c2b5d57cb8b7f9ef3c1e5
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054793"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473985"
 ---
-# <a name="sharingdetail-resource-type"></a>Тип ресурса Шарингдетаил
+# <a name="sharingdetail-resource-type"></a>тип ресурса sharingDetail
 
 Пространство имен: microsoft.graph
 
-Сложный тип, содержащий свойства элементов [шарединсигхт](insights-shared.md) . 
+Сложный тип, содержащий свойства [элементов sharedInsight.](insights-shared.md) 
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже показано представление JSON ресурса.
@@ -33,7 +33,7 @@ ms.locfileid: "48054793"
   "sharingSubject": "string",
   "sharingType": "string",
   "sharedBy": "insightIdentity",
-  "resourceReference": "resourceReference"
+  "sharingReference": "resourceReference"
 }
 ```
 
@@ -41,9 +41,9 @@ ms.locfileid: "48054793"
 
 | Свойство              | Тип          | Описание  |
 | -------------         |-----------    | -------------|
-| sharedDateTime        | DateTimeOffset| Дата и время последнего предоставления общего доступа к файлу. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.  |
-| шарингсубжект        | String          | Тема, к которой был предоставлен общий доступ к документу. |
-| шарингтипе             | String        | Определяет способ предоставления общего доступа к документу, который может быть "ссылка", "вложение", "Группа", "сайт".     |
-| sharedBy                | [insightIdentity](insights-insightidentity.md)      | Пользователь, имеющий общий доступ к документу.  |
-| шарингреференце        | [ресаурцереференце](insights-resourcereference.md)      |  |
+| sharedDateTime        | DateTimeOffset| Дата и время последнего общего делиться файлом. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.  |
+| sharingSubject        | String          | Тема, с которой был общий документ. |
+| sharingType             | String        | Определяет способ общего делиться документом с помощью "Link", "Attachment", "Group", "Site".     |
+| sharedBy                | [insightIdentity](insights-insightidentity.md)      | Пользователь, который поделился документом.  |
+| sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
 

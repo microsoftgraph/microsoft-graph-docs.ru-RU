@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3c058c92e4fbb490c2e6ac701b164b158f1a567e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fff440ecbbdf79ac7b5e49642fb6f86330128dff
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982155"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473418"
 ---
 # <a name="create-calendargroup"></a>Создание объекта CalendarGroup
 
@@ -48,10 +48,9 @@ POST /users/{id | userPrincipalName}/calendarGroups
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [CalendarGroup](../resources/calendargroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_calendargroup_from_user"
@@ -59,34 +58,14 @@ POST /users/{id | userPrincipalName}/calendarGroups
 ```http
 POST https://graph.microsoft.com/beta/me/calendarGroups
 Content-type: application/json
-Content-length: 90
 
 {
-  "name": "name-value",
-  "classId": "classId-value",
-  "changeKey": "changeKey-value"
+  "name": "Personal events"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-calendargroup-from-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-calendargroup-from-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-calendargroup-from-user-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-calendargroup-from-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 Предоставьте в тексте запроса описание объекта [calendarGroup](../resources/calendargroup.md) в формате JSON.
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -96,13 +75,13 @@ Content-length: 90
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 110
 
 {
-  "name": "name-value",
-  "classId": "classId-value",
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('7d54cb02-aaa3-4016-9f9c-a4b49422dd9b')/calendarGroups/$entity",
+    "id": "AAMkADIxYjJiYmIzLTFmNjYtNGNhMy0YOkcEEh3vhfAAAGgdFjAAA=",
+    "name": "Personal events",
+    "classId": "44288f7d-7710-4293-8c8e-36f310ed2e6a",
+    "changeKey": "NreqLYgxdE2DpHBBId74XwAABn6y8Q=="
 }
 ```
 

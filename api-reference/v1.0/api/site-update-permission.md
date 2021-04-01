@@ -5,12 +5,12 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 98a8b0b85577a4843664e7440978837563f44e23
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 6908e6d8667157de28a678f657827210abcf320d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176742"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473614"
 ---
 # <a name="update-permission"></a>Обновление разрешения
 Пространство имен: microsoft.graph
@@ -42,12 +42,12 @@ PATCH /sites/{sitesId}/permissions/{permissionId}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта разрешений в [JSON.](../resources/permission.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [разрешения.](../resources/permission.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `200 OK` объект [разрешения](../resources/permission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект разрешения в тексте ответа. [](../resources/permission.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ Content-Type: application/json
     "grantedToIdentities": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Bar App"
+        "displayName": "Fabrikam Dashboard App"
       }
     }]
 }

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2f9840d87ad613d560c0572a1ef9a7c73fa1b701
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20f933fe2145d21acc6465a7b0a12105cec641c6
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978771"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473530"
 ---
 # <a name="create-plannerbucket"></a>Создание объекта plannerBucket
 
@@ -23,7 +23,7 @@ ms.locfileid: "47978771"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -38,7 +38,7 @@ POST /planner/buckets
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Включите в текст запроса описание объекта [plannerBucket](../resources/plannerbucket.md) в формате JSON.
 
 ## <a name="response"></a>Ответ

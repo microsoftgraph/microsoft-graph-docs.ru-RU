@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 048936a5d1a4c2f311a8d7bea483e01486ed2afb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e05a358c49443dea5a44185b5dc38c629a3aedce
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081918"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473915"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Обновление объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -24,7 +24,7 @@ ms.locfileid: "48081918"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -44,12 +44,12 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказок, используемых для упорядочивания задач в представлении AssignedTo доски задач. Ключом каждой записи является один из пользователей, которому назначена задача, а значением является подсказка порядка. Формат каждого значения определяется в разделе [использование подсказок порядка в планировщике (.. /ресаурцес/planner_order_hint_format. md).|
-|unassignedOrderHint|Строка|Значение подсказки используется для упорядочивания задачи в представлении AssignedTo доски задач, когда задача не назначена никому, или если словарь Ордерхинтсбяссигни не предоставляет подсказку порядка для пользователя, которому назначена задача. Формат определяется в разделе [Использование подсказок порядка в планировщике](../resources/planner-order-hint-format.md).|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказок, используемых для заказа задач в представлении AssignedTo для доски задач. Ключ каждой записи — это один из пользователей, на который назначена задача, а значение — подсказка заказа. Формат каждого значения определяется в [Using order hints in Planner(.). /resources/planner_order_hint_format.md).|
+|unassignedOrderHint|Строка|Значение подсказки, используемого для заказа задачи в представлении AssignedTo доски задач, когда задача никому не назначена, или если словарь orderHintsByAssignee не предоставляет пользователю подсказку заказа, на которую назначена задача. Формат определяется в [подсказках по порядку в Planner.](../resources/planner-order-hint-format.md)|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) в тексте ответа.
+В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент. Если запрос указывает заголовку с предпочтением, этот метод возвращает код ответа и обновленный объект `Prefer` `return=representation` `200 OK` [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -66,6 +66,7 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
 Content-type: application/json
 Content-length: 96
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

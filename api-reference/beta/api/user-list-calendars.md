@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2cc3e747e70626d83817660ed02254689d447ae6
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7a680b7c7fb77b9962aecf13ad39f9d7a87a6372
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516768"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473936"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -24,9 +24,9 @@ ms.locfileid: "50516768"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    |
-|Для приложений | Calendars.Read, Calendars.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Для приложений | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Calendar](../resources/calendar.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/me/calendars
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

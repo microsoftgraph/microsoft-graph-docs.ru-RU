@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca29bdc8f33ed7aab9b79f59f8f1b29e3d88a636
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 15c3c855e5d1ce42d4f154886aac4760015282f4
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721924"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51474055"
 ---
 # <a name="list-user-transitive-memberof"></a>Перечисление user transitive memberOf
 
@@ -149,9 +149,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Пример 3. Использование OData cast для получения только количества транзитивных участников в группах
 
@@ -170,7 +170,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response"
@@ -178,9 +178,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`588`
+588
+```
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование $search и OData для получения переходного членства в группах с отображаемыми именами, содержами буквы "tier", включая количество возвращенных объектов.
 

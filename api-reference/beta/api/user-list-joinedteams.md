@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38f9d9ac6fbe3b2ccbd6589f51935b8b2601c641
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b68afeb4a44247e16c101b961288a43e8687e0d6
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975751"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473712"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -57,7 +57,7 @@ GET /users/{id}/joinedTeams
 При успешном выполнении этот метод возвращает `200 OK`код ответа и коллекцию объектов [team](../resources/team.md) в теле ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,8 +86,8 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,12 +97,11 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
     }
   ]
 }

@@ -1,16 +1,16 @@
 ---
 title: Список объектов favoritePlans
-description: Получение списка объектов plannerPlan, отмеченных пользователем как избранные. Вы можете пометить план как избранный, обновив ресурс plannerUser.
+description: Получение списка объектов plannerPlan, отмеченных пользователем как избранные. Вы можете отметить план как любимый, обновив ресурс plannerUser.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 00ee82c8830b61dc31cfbf6beafd13063e9de6e4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1650ea55e1fc7dc6200e4985e417fdfb67fb0ee3
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980510"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473488"
 ---
 # <a name="list-favoriteplans"></a>Список объектов favoritePlans
 
@@ -18,14 +18,14 @@ ms.locfileid: "48980510"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [планов](../resources/plannerplan.md) , помеченных пользователем как избранный. Вы можете пометить план как избранный, [обновив ресурс plannerUser](planneruser-update.md).
+Извлечение списка [plannerPlans,](../resources/plannerplan.md) помеченных пользователем как любимые. Вы можете отметить план как любимый, [обновив ресурс plannerUser.](planneruser-update.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.Read, Tasks.ReadWrite, Group.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -46,7 +46,7 @@ GET /users/{id}/planner/favoritePlans
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

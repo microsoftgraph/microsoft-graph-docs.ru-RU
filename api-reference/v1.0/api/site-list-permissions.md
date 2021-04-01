@@ -5,12 +5,12 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7beb13d789aae8b3e57be7ff10ea471620067e3e
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 33085513c2a6279a9c765fe43fa9eb8a025d1057
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176833"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473703"
 ---
 # <a name="list-permissions"></a>Разрешения списка
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ GET /sites/{sitesId}/permissions
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [разрешений](../resources/permission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` разрешений в [](../resources/permission.md) тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,7 +103,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
+          "displayName": "Contoso Time Manager App"
         }
       }]
     },
@@ -113,7 +113,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
+          "displayName": "Fabrikam Dashboard App"
         }
       }]
     }

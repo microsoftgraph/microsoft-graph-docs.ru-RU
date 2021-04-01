@@ -1,18 +1,18 @@
 ---
-title: Обновление plannerPlan
+title: Планировщик обновленияPlan
 description: Обновление свойств объекта **plannerPlan.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 30a0c76d4e2d1a84d897edeadfd7370448ce7b80
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 0ac2b6e80a8111beb65c75c21bd7a93ae68738d3
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882920"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473943"
 ---
-# <a name="update-plannerplan"></a>Обновление plannerPlan
+# <a name="update-plannerplan"></a>Планировщик обновленияPlan
 
 Пространство имен: microsoft.graph
 
@@ -25,7 +25,7 @@ ms.locfileid: "49882920"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -43,11 +43,11 @@ PATCH /planner/plans/{plan-id}
 | If-Match  | Последнее известное значение ETag обновляемого объекта plannerPlan. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укавите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укажи значения для обновления соответствующих полей. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте отклика.
+В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент. Если запрос указывает заголовщик с предпочтением, этот метод возвращает код ответа и обновленный объект `Prefer` `return=representation` `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -64,6 +64,7 @@ PATCH /planner/plans/{plan-id}
 PATCH https://graph.microsoft.com/beta/planner/plans/{id}
 Content-type: application/json
 Content-length: 29
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 52b9d681c9eb56fe7428634d253adf5b6c0cc545
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 59b009aed4440fd30a4b038bc4eb40eba208c5ef
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958623"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473446"
 ---
 # <a name="call-transfer"></a>вызов: передача
 
@@ -49,7 +49,6 @@ POST /communications/calls/{id}/transfer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является объектом переноса.|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
@@ -83,8 +82,7 @@ Content-Length: 430
       }
     },
     "replacesCallId": "replacesCallId-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -275,8 +273,7 @@ Content-Type: application/json
       }
     },
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 

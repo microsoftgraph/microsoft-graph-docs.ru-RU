@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 87ec5ccb1bf98cf7c461d8fbc8dcf8213175e5e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1bb26d2858cf3b37ca6d61095eedca5ec8a4294d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025713"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473635"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
 
@@ -24,7 +24,7 @@ ms.locfileid: "48025713"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All                         |
+| Делегированные (рабочая или учебная учетная запись)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
@@ -41,7 +41,7 @@ POST /planner/plans
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON. В качестве свойства владельца **PlannerPlan** необходимо указать идентификатор объекта [group](../resources/group.md).
 

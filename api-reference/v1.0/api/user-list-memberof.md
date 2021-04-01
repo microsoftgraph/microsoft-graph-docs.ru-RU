@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4dc7904d696fb760847a3dce8d3149e759a93d6a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4dde83056bed84fdbb2b2dd33d23deb5ea9d4b2d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721959"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473971"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -143,6 +143,8 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+17
 ```
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Пример 3. Использование OData cast для получения только количества участия в группах
@@ -170,6 +172,8 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+16
 ```
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование параметра $search и приведения к OData для получения участия пользователей в группах с отображаемыми именами, содержащими буквы «tier», включая количество возвращаемых объектов

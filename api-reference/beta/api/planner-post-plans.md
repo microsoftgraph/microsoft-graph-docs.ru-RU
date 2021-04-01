@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f56bab29e538afd8841ddd86a57b6a5456b969d8
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: a12e055c4972f7064cdf91239502b7bb54e5c787
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883209"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473817"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "49883209"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте **планировщик.**
+Создание нового **планировщикаPlan**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "49883209"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All                         |
+| Делегированные (рабочая или учебная учетная запись)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
@@ -47,9 +47,9 @@ POST /planner/plans
 ## <a name="request-body"></a>Текст запроса
 
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON.
-Необходимо настроить свойство контейнера **plannerPlan.**
+Необходимо установить свойство контейнера **plannerPlan.**
 
->**Примечание.** Если контейнер является группой Microsoft 365, пользователь, создавший план, должен быть членом группы, которая будет содержать этот план. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
+>**Примечание:** Если контейнер — это группа Microsoft 365, пользователь, создавший план, должен быть членом группы, которая будет содержать план. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
 
 ## <a name="response"></a>Отклик
 

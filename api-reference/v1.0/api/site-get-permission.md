@@ -5,12 +5,12 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e6854858c98536cfe5ef1719364eaa42c39bcb66
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 65284bfb79121c49ed9323eef005f0276e8d0d20
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176875"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473719"
 ---
 # <a name="get-permission"></a>Получение разрешения
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ GET /sites/{sitesId}/permissions/{permissionId}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [разрешения](../resources/permission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [разрешения](../resources/permission.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -101,7 +101,7 @@ Content-Type: application/json
   "grantedToIdentities": [{
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Foo App"
+      "displayName": "Contoso Time Manager App"
     }
   }]
 }

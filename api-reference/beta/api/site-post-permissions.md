@@ -1,21 +1,21 @@
 ---
-title: Создание разрешения
-description: Создание объекта разрешений.
+title: Создание разрешений
+description: Создание нового объекта разрешений.
 author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5be2324a8b38622a9607fa16a7c934474b04a3c0
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 34ef9db31610c930c0b516b822b63372cddab0b5
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176430"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51474076"
 ---
-# <a name="create-permission"></a>Создание разрешения
+# <a name="create-permission"></a>Создание разрешений
 Пространство имен: microsoft.graph
 
-Создание объекта [разрешений](../resources/permission.md) на сайте.
+Создание нового [объекта разрешений](../resources/permission.md) на сайте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,11 +43,11 @@ POST /sites/{sitesId}/permissions
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта разрешений в [JSON.](../resources/permission.md)
+В теле запроса поставляем представление JSON объекта [разрешения.](../resources/permission.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `201 Created` объект [разрешения](../resources/permission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` объект разрешения в тексте ответа. [](../resources/permission.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -68,7 +68,7 @@ Content-Type: application/json
   "grantedToIdentities": [{
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Foo App"
+      "displayName": "Contoso Time Manager App"
     }
   }]
 }
@@ -111,7 +111,7 @@ Content-Type: application/json
     "grantedToIdentities": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Foo App"
+        "displayName": "Contoso Time Manager App"
       }
     }]
 }

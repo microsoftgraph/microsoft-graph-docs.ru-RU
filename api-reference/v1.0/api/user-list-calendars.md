@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 277a7d9e1c5389ecde9f49c6d367a4589f37b591
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e11593b968976792fe65eb1e38d2a7572df3f801
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516724"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473656"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -22,9 +22,9 @@ ms.locfileid: "50516724"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    |
-|Для приложений | Calendars.Read, Calendars.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Для приложений | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

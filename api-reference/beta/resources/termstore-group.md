@@ -1,55 +1,56 @@
 ---
 author: mohitpcad
-title: Тип ресурса Group
+title: Тип группового ресурса
 doc_type: resourcePageType
-description: Представляет группу, используемую в банке терминов.
+description: Представляет группу, используемую в магазине терминов.
 localization_priority: Normal
 ms.prod: Sharepoint
-ms.openlocfilehash: aa86722dfd0a761525a8ec4d142ed27dc93be6c2
-ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
+ms.openlocfilehash: 1249f94b96e0c6ff7251a2a97f4885a21258aaeb
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48258433"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473467"
 ---
-# <a name="group-resource-type"></a>Тип ресурса Group
+# <a name="group-resource-type"></a>Тип группового ресурса
 
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Представляет группу, используемую в [банке](../resources/termstore-store.md)терминов. Группа — это логическая иерархия, содержащая коллекцию наборов. 
+Представляет группу, используемую в магазине [терминов.](../resources/termstore-store.md) Группа — это логическая иерархия, которая содержит коллекцию наборов под ней. 
 
-Наследуется от [объекта Entity](../resources/entity.md).
+Наследует от [объекта](../resources/entity.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                   | Тип возвращаемых данных       |    Описание
 |:---------------------------------------------------------|:------------------|:---------------------
-| [Создание группы](../api/termstore-group-post.md)                     | [Microsoft. Graph. Банк.] | Создайте группу в [банке]терминов.
-| [Получение группы](../api/termstore-store-get-group.md)                           | [Microsoft. Graph. Банк.] | Получение данных группы в [банке]терминов.
-| [Удаление группы](../api/termstore-group-delete.md)                     | Нет |  Удаление группы в [банке]терминов.
+| [Создание группы](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Создание группы в магазине [терминов.]
+| [Получение группы](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Извлечение данных группы в магазине [терминов.]
+| [Удаление группы](../api/termstore-group-delete.md)                     | Нет |  Удаление группы в магазине [терминов].
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:------------------------------------
 | createdDateTime      | DateTimeOffset     | Дата и время создания группы. Только для чтения.
-| description          | string             | Описание, содержащее сведения об использовании терминов.
+| description          | string             | Описание с подробными сведениями об использовании термина.
 | id                   | string             | Уникальный идентификатор группы. Только для чтения.
 | displayName          | string             | Имя группы.
-| scope                | string              | Возвращает тип группы. Возможные значения: "Global", "System" и "siteCollection".
+| scope                | string              | Возвращает тип группы. Возможные значения : "глобальный", "системный" и "siteCollection".
+| parentSiteId         | Строка             | Id родительского сайта этой группы.
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь       | Тип                        | Описание
 |:-------------------|:----------------------------|:--------------------------
-| предваритель           | Коллекция [Microsoft. Graph. Банк. Set для Microsoft. Graph.][] | Все наборы в группе в [банке]терминов.
+| наборы           | [коллекция microsoft.graph.termStore.set][] | Все наборы в группе в магазине [терминов].
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено представление ресурса **Group** в формате JSON.
+Ниже приводится представление JSON **группового** ресурса.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -65,17 +66,18 @@ ms.locfileid: "48258433"
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "scope" : "microsoft.graph.termStore.groupScope",
-  "displayName": "string" 
+  "displayName": "string",
+  "parentSiteId" : "string"
 }
 ```
 
 
 
 [identitySet]: identitySet.md
-[Microsoft. Graph. банка. Set]: termstore-set.md
-[Microsoft. Graph. Банк.]: termstore-group.md
+[microsoft.graph.termStore.set]: termstore-set.md
+[microsoft.graph.termStore.group]: termstore-group.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[восстановлен]: ../resources/termstore-store.md
+[магазин]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 <!--

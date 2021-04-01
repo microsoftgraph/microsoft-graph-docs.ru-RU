@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6598db1fa98e3fb91a70040c9bf3ffe6e9a0c86f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 130338318fc3e7e970838dbbcb8d5f70e726e857
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721987"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473523"
 ---
 # <a name="list-directreports"></a>Список directReports
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/directReports
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/directReports
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -94,12 +94,11 @@ GET https://graph.microsoft.com/beta/me/directReports
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
     }
   ]
 }
