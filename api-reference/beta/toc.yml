@@ -362,7 +362,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Notes
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -9731,7 +9731,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Files
+      - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -10681,6 +10681,30 @@ items:
                         href: api/riskyusers-dismiss.md
               - name: Поставщик удостоверений
                 items:
+                  - name: База поставщиков удостоверений
+                    href: resources/identityproviderbase.md
+                  - name: Встроенный поставщик удостоверений
+                    href: resources/builtinidentityprovider.md
+                  - name: Поставщик социальных удостоверений
+                    href: resources/socialidentityprovider.md
+                  - name: Поставщик удостоверений Apple
+                    href: resources/appleidentityprovider.md
+                  - name: Поставщик удостоверений OpenID Connect
+                    href: resources/openidconnectidentityprovider.md
+                  - name: Список
+                    href: api/identityproviderbase-list.md
+                  - name: Создание
+                    href: api/identityproviderbase-post-identityproviders.md
+                  - name: Получение
+                    href: api/identityproviderbase-get.md
+                  - name: Обновление
+                    href: api/identityproviderbase-update.md
+                  - name: Delete
+                    href: api/identityproviderbase-delete.md
+                  - name: Перечисление доступных типов поставщиков
+                    href: api/identityproviderbase-list-availableprovidertypes.md
+              - name: Поставщик удостоверений (неподготовленный)
+                items:
                   - name: Тип поставщика удостоверений
                     href: resources/identityprovider.md
                   - name: Тип поставщика удостоверений OpenID Connect
@@ -11626,7 +11650,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -11886,7 +11910,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Notes
+              - name: Примечания
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -12845,7 +12869,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
