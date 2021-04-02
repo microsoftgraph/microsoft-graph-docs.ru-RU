@@ -3,33 +3,33 @@ title: Использование SDKs Microsoft Graph для пакетных �
 description: Содержит инструкции по созданию пакета запросов API с помощью SDKs Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: bda68247c0375447913c3c64aae90ba2c88ab563
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f9caf9ad7f20dd2b6601501fa8c6a8fb1541bde
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953378"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509011"
 ---
-# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a><span data-ttu-id="2b6e2-103">Использование SDKs Microsoft Graph для пакетных запросов</span><span class="sxs-lookup"><span data-stu-id="2b6e2-103">Use the Microsoft Graph SDKs to batch requests</span></span>
+# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a><span data-ttu-id="caf45-103">Использование SDKs Microsoft Graph для пакетных запросов</span><span class="sxs-lookup"><span data-stu-id="caf45-103">Use the Microsoft Graph SDKs to batch requests</span></span>
 
-<span data-ttu-id="2b6e2-104">[Пакетирование](../json-batching.md) — это способ объединения нескольких запросов в один http-запрос.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-104">[Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request.</span></span> <span data-ttu-id="2b6e2-105">Запросы объединяются в одну полезной нагрузки JSON, которая отправляется через POST в `\$batch` конечную точку.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-105">The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint.</span></span> <span data-ttu-id="2b6e2-106">В SDKs Microsoft Graph есть набор классов, упрощающий создание пакетных полезной нагрузки и разгрузку пакетных ответов.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-106">Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.</span></span>
+<span data-ttu-id="caf45-104">[Пакетирование](../json-batching.md) — это способ объединения нескольких запросов в один http-запрос.</span><span class="sxs-lookup"><span data-stu-id="caf45-104">[Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request.</span></span> <span data-ttu-id="caf45-105">Запросы объединяются в одну полезной нагрузки JSON, которая отправляется через POST в `\$batch` конечную точку.</span><span class="sxs-lookup"><span data-stu-id="caf45-105">The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint.</span></span> <span data-ttu-id="caf45-106">В SDKs Microsoft Graph есть набор классов, упрощающий создание пакетных полезной нагрузки и разгрузку пакетных ответов.</span><span class="sxs-lookup"><span data-stu-id="caf45-106">Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="2b6e2-107">Текущие ограничения с пакетами JSON в Microsoft Graph см. в [выпуске Known Issues.](../known-issues.md#json-batching)</span><span class="sxs-lookup"><span data-stu-id="2b6e2-107">For current limitations with JSON batching in Microsoft Graph, see [Known Issues](../known-issues.md#json-batching).</span></span>
+> <span data-ttu-id="caf45-107">Текущие ограничения с пакетами JSON в Microsoft Graph см. в [выпуске Known Issues.](../known-issues.md#json-batching)</span><span class="sxs-lookup"><span data-stu-id="caf45-107">For current limitations with JSON batching in Microsoft Graph, see [Known Issues](../known-issues.md#json-batching).</span></span>
 
-## <a name="create-a-batch-request"></a><span data-ttu-id="2b6e2-108">Создание пакетного запроса</span><span class="sxs-lookup"><span data-stu-id="2b6e2-108">Create a batch request</span></span>
+## <a name="create-a-batch-request"></a><span data-ttu-id="caf45-108">Создание пакетного запроса</span><span class="sxs-lookup"><span data-stu-id="caf45-108">Create a batch request</span></span>
 
-<span data-ttu-id="2b6e2-109">SDKs Microsoft Graph предоставляют три класса для работы с пакетными запросами и ответами.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-109">The Microsoft Graph SDKs provide three classes to work with batch requests and responses.</span></span>
+<span data-ttu-id="caf45-109">SDKs Microsoft Graph предоставляют три класса для работы с пакетными запросами и ответами.</span><span class="sxs-lookup"><span data-stu-id="caf45-109">The Microsoft Graph SDKs provide three classes to work with batch requests and responses.</span></span>
 
-- <span data-ttu-id="2b6e2-110">**BatchRequestStep** — представляет один запрос `GET /me` (например) в пакете.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-110">**BatchRequestStep** - Represents a single request (such as `GET /me`) within a batch.</span></span> <span data-ttu-id="2b6e2-111">Это позволяет назначить уникальный идентификатор запросу и указать зависимости между запросами.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-111">It enables assigning a unique identifier to the request and specifying dependencies between requests.</span></span>
-- <span data-ttu-id="2b6e2-112">**BatchRequestContent** — упрощает создание полезной нагрузки пакетного запроса.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-112">**BatchRequestContent** - Simplifies creating the batch request payload.</span></span> <span data-ttu-id="2b6e2-113">Он содержит несколько **объектов BatchRequestStep.**</span><span class="sxs-lookup"><span data-stu-id="2b6e2-113">It contains multiple **BatchRequestStep** objects.</span></span>
-- <span data-ttu-id="2b6e2-114">**BatchResponseContent** — упрощает размыв ответа из пакетного запроса.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-114">**BatchResponseContent** - Simplifies parsing the response from a batch request.</span></span> <span data-ttu-id="2b6e2-115">Он обеспечивает возможность получения всех ответов, получения определенного ответа по ID и получения `@odata.nextLink` свойства, если оно присутствует.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-115">It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.</span></span>
+- <span data-ttu-id="caf45-110">**BatchRequestStep** — представляет один запрос `GET /me` (например) в пакете.</span><span class="sxs-lookup"><span data-stu-id="caf45-110">**BatchRequestStep** - Represents a single request (such as `GET /me`) within a batch.</span></span> <span data-ttu-id="caf45-111">Это позволяет назначить уникальный идентификатор запросу и указать зависимости между запросами.</span><span class="sxs-lookup"><span data-stu-id="caf45-111">It enables assigning a unique identifier to the request and specifying dependencies between requests.</span></span>
+- <span data-ttu-id="caf45-112">**BatchRequestContent** — упрощает создание полезной нагрузки пакетного запроса.</span><span class="sxs-lookup"><span data-stu-id="caf45-112">**BatchRequestContent** - Simplifies creating the batch request payload.</span></span> <span data-ttu-id="caf45-113">Он содержит несколько **объектов BatchRequestStep.**</span><span class="sxs-lookup"><span data-stu-id="caf45-113">It contains multiple **BatchRequestStep** objects.</span></span>
+- <span data-ttu-id="caf45-114">**BatchResponseContent** — упрощает размыв ответа из пакетного запроса.</span><span class="sxs-lookup"><span data-stu-id="caf45-114">**BatchResponseContent** - Simplifies parsing the response from a batch request.</span></span> <span data-ttu-id="caf45-115">Он обеспечивает возможность получения всех ответов, получения определенного ответа по ID и получения `@odata.nextLink` свойства, если оно присутствует.</span><span class="sxs-lookup"><span data-stu-id="caf45-115">It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.</span></span>
 
-## <a name="simple-batching-example"></a><span data-ttu-id="2b6e2-116">Простой пример пакетной обработки</span><span class="sxs-lookup"><span data-stu-id="2b6e2-116">Simple batching example</span></span>
+## <a name="simple-batching-example"></a><span data-ttu-id="caf45-116">Простой пример пакетной обработки</span><span class="sxs-lookup"><span data-stu-id="caf45-116">Simple batching example</span></span>
 
-<span data-ttu-id="2b6e2-117">В этом примере показано, как отправлять несколько запросов в пакете, не зависящих друг от друга.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-117">This example shows how to send multiple requests in a batch that are not dependent on each other.</span></span> <span data-ttu-id="2b6e2-118">Запросы могут быть запускаться службой в любом порядке.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-118">The requests can be run by the service in any order.</span></span> <span data-ttu-id="2b6e2-119">В этом примере пользователь получает представление календаря пользователя на текущий день.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-119">This example gets the user and gets the user's calendar view for the current day.</span></span>
+<span data-ttu-id="caf45-117">В этом примере показано, как отправлять несколько запросов в пакете, не зависящих друг от друга.</span><span class="sxs-lookup"><span data-stu-id="caf45-117">This example shows how to send multiple requests in a batch that are not dependent on each other.</span></span> <span data-ttu-id="caf45-118">Запросы могут быть запускаться службой в любом порядке.</span><span class="sxs-lookup"><span data-stu-id="caf45-118">The requests can be run by the service in any order.</span></span> <span data-ttu-id="caf45-119">В этом примере пользователь получает представление календаря пользователя на текущий день.</span><span class="sxs-lookup"><span data-stu-id="caf45-119">This example gets the user and gets the user's calendar view for the current day.</span></span>
 
-### <a name="c"></a>[<span data-ttu-id="2b6e2-120">C#</span><span class="sxs-lookup"><span data-stu-id="2b6e2-120">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="caf45-120">C#</span><span class="sxs-lookup"><span data-stu-id="caf45-120">C#</span></span>](#tab/csharp)
 
 ```csharp
 // Use the request builder to generate a regular
@@ -87,7 +87,7 @@ catch (ServiceException ex)
 }
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="2b6e2-121">TypeScript</span><span class="sxs-lookup"><span data-stu-id="2b6e2-121">TypeScript</span></span>](#tab/typescript)
+### <a name="typescript"></a>[<span data-ttu-id="caf45-121">TypeScript</span><span class="sxs-lookup"><span data-stu-id="caf45-121">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 // Create a batch request step to GET /me
@@ -156,7 +156,7 @@ if (calendarResponse.ok) {
 }
 ```
 
-### <a name="java"></a>[<span data-ttu-id="2b6e2-122">Java</span><span class="sxs-lookup"><span data-stu-id="2b6e2-122">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="caf45-122">Java</span><span class="sxs-lookup"><span data-stu-id="caf45-122">Java</span></span>](#tab/java)
 
 ```java
 // Create the batch request content with the steps
@@ -183,7 +183,7 @@ final String calendarViewRequestStepId = batchRequestContent
                                           .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(graphClient);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
 final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
 System.out.println(String.format("Hello %s!", user.displayName));
@@ -195,15 +195,15 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 
 ---
 
-## <a name="batches-with-dependent-requests"></a><span data-ttu-id="2b6e2-123">Пакеты с зависимыми запросами</span><span class="sxs-lookup"><span data-stu-id="2b6e2-123">Batches with dependent requests</span></span>
+## <a name="batches-with-dependent-requests"></a><span data-ttu-id="caf45-123">Пакеты с зависимыми запросами</span><span class="sxs-lookup"><span data-stu-id="caf45-123">Batches with dependent requests</span></span>
 
-<span data-ttu-id="2b6e2-124">В этом примере показано, как отправлять несколько запросов в пакете, зависящих друг от друга.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-124">This example shows how to send multiple requests in a batch that are dependent on each other.</span></span> <span data-ttu-id="2b6e2-125">Запросы будут запускаться службой в порядке, указанном зависимостями.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-125">The requests will be run by the service in the order specified by the dependencies.</span></span> <span data-ttu-id="2b6e2-126">В этом примере событие со временем начала в течение текущего дня добавляется в календарь пользователя и получает представление календаря пользователя на текущий день.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-126">This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day.</span></span> <span data-ttu-id="2b6e2-127">Чтобы убедиться, что возвращаемый обзор календаря включает созданное новое событие, запрос на просмотр календаря настроен в зависимости от запроса на добавление нового события.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-127">To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event.</span></span> <span data-ttu-id="2b6e2-128">Это гарантирует, что сначала будет выполняться запрос на добавление события.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-128">This ensures that the add event request will execute first.</span></span>
+<span data-ttu-id="caf45-124">В этом примере показано, как отправлять несколько запросов в пакете, зависящих друг от друга.</span><span class="sxs-lookup"><span data-stu-id="caf45-124">This example shows how to send multiple requests in a batch that are dependent on each other.</span></span> <span data-ttu-id="caf45-125">Запросы будут запускаться службой в порядке, указанном зависимостями.</span><span class="sxs-lookup"><span data-stu-id="caf45-125">The requests will be run by the service in the order specified by the dependencies.</span></span> <span data-ttu-id="caf45-126">В этом примере событие со временем начала в течение текущего дня добавляется в календарь пользователя и получает представление календаря пользователя на текущий день.</span><span class="sxs-lookup"><span data-stu-id="caf45-126">This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day.</span></span> <span data-ttu-id="caf45-127">Чтобы убедиться, что возвращаемый обзор календаря включает созданное новое событие, запрос на просмотр календаря настроен в зависимости от запроса на добавление нового события.</span><span class="sxs-lookup"><span data-stu-id="caf45-127">To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event.</span></span> <span data-ttu-id="caf45-128">Это гарантирует, что сначала будет выполняться запрос на добавление события.</span><span class="sxs-lookup"><span data-stu-id="caf45-128">This ensures that the add event request will execute first.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2b6e2-129">Если запрос добавить событие не удается, запрос на просмотр календаря будет сбой с `424 Failed Dependency` ошибкой.</span><span class="sxs-lookup"><span data-stu-id="2b6e2-129">If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.</span></span>
+> <span data-ttu-id="caf45-129">Если запрос добавить событие не удается, запрос на просмотр календаря будет сбой с `424 Failed Dependency` ошибкой.</span><span class="sxs-lookup"><span data-stu-id="caf45-129">If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="c"></a>[<span data-ttu-id="2b6e2-130">C#</span><span class="sxs-lookup"><span data-stu-id="2b6e2-130">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="caf45-130">C#</span><span class="sxs-lookup"><span data-stu-id="caf45-130">C#</span></span>](#tab/csharp)
 
 ```csharp
 var today = DateTime.Now.Date;
@@ -293,7 +293,7 @@ catch (ServiceException ex)
 }
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="2b6e2-131">TypeScript</span><span class="sxs-lookup"><span data-stu-id="2b6e2-131">TypeScript</span></span>](#tab/typescript)
+### <a name="typescript"></a>[<span data-ttu-id="caf45-131">TypeScript</span><span class="sxs-lookup"><span data-stu-id="caf45-131">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 // 5:00 PM
@@ -385,7 +385,7 @@ if (calendarResponse.ok)
 }
 ```
 
-### <a name="java"></a>[<span data-ttu-id="2b6e2-132">Java</span><span class="sxs-lookup"><span data-stu-id="2b6e2-132">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="caf45-132">Java</span><span class="sxs-lookup"><span data-stu-id="caf45-132">Java</span></span>](#tab/java)
 
 ```java
 // Create the batch request content with the steps
@@ -429,7 +429,7 @@ final String calendarViewRequestStepId = batchRequestContent
                                           addEventRequestId);
 
 // Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(client);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
 final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
 System.out.println(String.format("New event created with ID: %s", event.id));
