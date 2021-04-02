@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 2b988fa0aab5e59e165defc9f953cc267606dd84
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 099f77722e6f08a27dea01200246320cd8ae4eec
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961000"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507833"
 ---
-# <a name="list-identityproviders"></a>Перечисление объектов identityProvider
-
+# <a name="list-identityproviders-deprecated"></a>List identityProviders (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Извлечение списка [объектов identityProviders.](../resources/identityprovider.md)
 
@@ -28,9 +28,10 @@ ms.locfileid: "50961000"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
 
@@ -143,5 +144,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

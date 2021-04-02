@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f09503674cf3f340ef6b7ebe7a918c7c061368c9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2924b7b4174f1457d212f4905dd829a23d636296
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435492"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508866"
 ---
-# <a name="delete-identityprovider"></a>Удаление identityProvider
-
+# <a name="delete-identityprovider-deprecated"></a>Удаление identityProvider (удалено)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Удаление [identityProvider](../resources/identityprovider.md).
 
@@ -31,6 +31,7 @@ ms.locfileid: "50435492"
 |Приложение|IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
 
@@ -47,7 +48,7 @@ DELETE /identityProviders/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -61,8 +62,6 @@ DELETE /identityProviders/{id}
 
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -72,6 +71,11 @@ DELETE /identityProviders/{id}
 ``` http
 DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ```
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,17 +88,11 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -107,5 +105,3 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-

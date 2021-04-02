@@ -5,18 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 8a91b4d52dcb3eb9cd889d8406349bd057948208
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fc51780f2f5ab9a783b431d49e19136c1f5e3fef
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961071"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508626"
 ---
-# <a name="get-identityprovider"></a>Получение identityProvider
+# <a name="get-identityprovider-deprecated"></a>Get identityProvider (deprecated)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Извлечение свойств и связей [identityProvider](../resources/identityprovider.md).
 
@@ -28,9 +29,10 @@ ms.locfileid: "50961071"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
 
@@ -41,6 +43,7 @@ ms.locfileid: "50961071"
 ```http
 GET /identityProviders/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя|Описание|
@@ -115,6 +118,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 ### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Пример 2. Извлечение определенного openIDConnectProvider (только для Azure AD B2C)
 
 #### <a name="request"></a>Запрос
@@ -185,5 +189,3 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
-
-

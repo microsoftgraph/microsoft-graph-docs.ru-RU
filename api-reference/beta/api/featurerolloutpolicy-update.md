@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 91567639b46a369305e8b02a3ee4cdde77f21aad
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8d30e3df9d807289787f599e436427a02544c055
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959272"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508605"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление featurerolloutpolicy
 
@@ -44,7 +44,7 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token}. Обязательный |
+| Авторизация | Bearer {token}. Обязательна |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,9 +52,9 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Описание этой политики.|
-|displayName|Строка|Имя отображения для этой политики.|
-|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|description|String|Описание этой политики.|
+|displayName|String|Имя отображения для этой политики.|
+|isAppliedToOrganization|Логический|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
 |isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ## <a name="response"></a>Отклик
@@ -66,6 +66,8 @@ PATCH /policies/featureRolloutPolicies/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_featurerolloutpolicy_policies"
@@ -82,6 +84,24 @@ Content-type: application/json
   "isAppliedToOrganization": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-featurerolloutpolicy-policies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-featurerolloutpolicy-policies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-featurerolloutpolicy-policies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-featurerolloutpolicy-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

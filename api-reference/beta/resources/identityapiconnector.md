@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a267fdb60dfcbcbbadfe75c65d49137f46425434
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f7ecb96a9ca2f4397c1f0ee52908a7802374df0f
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443029"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508108"
 ---
 # <a name="identityapiconnector-resource-type"></a>тип ресурса identityApiConnector
 
@@ -30,9 +30,10 @@ ms.locfileid: "50443029"
 |:---|:---|:---|
 |[Список](../api/identityapiconnector-list.md)|[коллекция identityApiConnector](identityapiconnector.md)| Получить список соединителов API|
 |[Создание](../api/identityapiconnector-create.md)|[identityApiConnector](identityapiconnector.md)|Создание нового соединитетеля API. |
-|[получение](../api/identityapiconnector-get.md);|[identityApiConnector](identityapiconnector.md)|Ознакомьтесь с свойствами [объекта identityApiConnector.](../resources/identityapiconnector.md)|
+|[Получение](../api/identityapiconnector-get.md)|[identityApiConnector](identityapiconnector.md)|Ознакомьтесь с свойствами [объекта identityApiConnector.](../resources/identityapiconnector.md)|
 |[Обновление](../api/identityapiconnector-update.md)|[identityApiConnector](identityapiconnector.md)|Обновление свойств соединиттеля API.|
-|[удаление](../api/identityapiconnector-delete.md);|Нет|Удаление соединитетеля API.|
+|[Загрузка клиентского сертификата](../api/identityapiconnector-uploadclientcertificate.md)|[identityApiConnector](identityapiconnector.md)|Загрузите клиентский сертификат для проверки подлинности.|
+|[Удаление](../api/identityapiconnector-delete.md)|Нет|Удаление соединитетеля API.|
 
 ## <a name="properties"></a>Свойства
 
@@ -41,7 +42,7 @@ ms.locfileid: "50443029"
 |id|String|Случайно созданный ID соединиттеля API. |
 |displayName|String| Имя соединитетеля API. |
 |targetUrl|String| URL-адрес конечной точки API для вызова. |
-|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. В [настоящее время](basicauthentication.md) поддерживается только базовая проверка подлинности.|
+|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. Поддерживается клиентский сертификат Basic и PKCS 12.|
 
 ## <a name="relationships"></a>Связи
 

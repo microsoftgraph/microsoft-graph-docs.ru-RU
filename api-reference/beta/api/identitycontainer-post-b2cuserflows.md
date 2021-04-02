@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: edb0a8eab1406c3bcdd3856c158b4fb936228eb5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 620d6a395c87c8507a9fd6c2bb9d5742a8b560da
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435541"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508885"
 ---
 # <a name="create-b2cidentityuserflow"></a>Создание b2cIdentityUserFlow
 
@@ -58,10 +58,10 @@ POST /identity/b2cUserFlows
 |:---------------|:--------|:----------|
 |id|String|Обязательный. Имя пользовательского потока. После создания имя будет предварительно заранее. `B2C_1`|
 |userFlowType|String|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
-|userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
-|isLanguageCustomizationEnabled|Логический|Необязательное. Определяет, включена ли настройка языка в потоке пользователей Azure AD B2C. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
+|userFlowTypeVersion|С плавающей запятой|Обязательно. Версия пользовательского потока.|
+|isLanguageCustomizationEnabled|Логический|Необязательное свойство. Определяет, включена ли настройка языка в потоке пользователей Azure AD B2C. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
 |defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
 
 ## <a name="response"></a>Отклик
 
@@ -114,7 +114,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -190,7 +190,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -251,10 +251,10 @@ Content-length: 154
     "userFlowTypeVersion": 1,
     "apiConnectorConfiguration":{
         "postFederationSignup":{
-            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+            "@odata.id": "{apiConnectorId}"
         },
         "postAttributeCollection":{
-            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+            "@odata.id": "{apiConnectorId}"
         }
     }
 }
@@ -280,7 +280,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

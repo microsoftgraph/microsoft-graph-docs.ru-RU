@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e2ff03ae081a1d406a56c5a826664bb402983a4f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 06515ca0ca1f302ee94cb06e7a58c5dcae518c1b
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435630"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508861"
 ---
 # <a name="create-identityapiconnector"></a>Создание identityApiConnector
 
@@ -63,7 +63,7 @@ POST /identity/apiConnectors
 |:---|:---|:---|
 |displayName|String| Имя соединитетеля API. |
 |targetUrl|String| URL-адрес конечной точки API для вызова. |
-|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. Поддерживается [только базовая](../resources/basicauthentication.md) проверка подлинности.|
+|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. [Поддерживается базовая](../resources/basicauthentication.md) проверка подлинности и [клиентский сертификат PKCS 12.](../resources/pkcs12certificate.md)|
 
 ## <a name="response"></a>Отклик
 
@@ -71,7 +71,9 @@ POST /identity/apiConnectors
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-create-an-api-connector-with-basic-authentication"></a>Пример 1. Создание соединителя API с базовой проверкой подлинности
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -116,11 +118,11 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -142,6 +144,70 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.basicAuthentication",
         "username": "<USERNAME>",
         "password": "******"
+    }
+}
+```
+
+### <a name="example-2-create-an-api-connector-with-client-certificate-authentication"></a>Пример 2. Создание соединителя API с проверкой подлинности сертификата клиента
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+> **Примечание:** `authenticationConfiguration` в запросе имеется тип [microsoft.graph.pkcs12certificate,](../resources/pkcs12certificate.md)который представляет конфигурацию сертификата, необходимого для загрузки или создания.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_identityapiconnector"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/identity/apiConnectors
+Content-Type: application/json
+
+{
+    "displayName":"Test API",
+    "targetUrl":"https://someotherapi.com/api",
+    "authenticationConfiguration": {
+        "@odata.type":"#microsoft.graph.pkcs12Certificate",
+        "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+        "password": "<password>"
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+> **Примечание:** `authenticationConfiguration` в ответе — тип [microsoft.graph.clientCertificateAuthentication,](../resources/clientcertificateauthentication.md) так как это представляет общедоступные сведения о загруженных сертификатах.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityApiConnector"
+}
+-->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
+    "id":"guid",
+    "displayName": "Test API",
+    "targetUrl": "https://someotherapi.com/api",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+        "certificateList": [
+            {
+                "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                "notAfter": 1666350522,
+                "notBefore": 1508670522,
+                "isActive": true
+            }
+        ]
     }
 }
 ```

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f20b72ef2840b5fcaa45985ee83f544df250d92f
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: c8eb387934342b030f5a7d7c50397c3accbed3e4
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200933"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509034"
 ---
 # <a name="update-channel"></a>Ветвь обновлений 
 
@@ -26,9 +26,9 @@ ms.locfileid: "51200933"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -64,12 +64,13 @@ PATCH /teams/{team-id}/channels/{channel-id}
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "patch_channel"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
+
 
 #### <a name="response"></a>Отклик
 
@@ -90,6 +91,8 @@ HTTP/1.1 204 No Content
 В следующем примере показан запрос на обновление [параметров модерации](../resources/channelmoderationsettings.md) канала. Эта операция может выполняться только владельцем группы.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel_with_moderationSettings"
@@ -110,6 +113,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-channel-with-moderationsettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-channel-with-moderationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-with-moderationsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-channel-with-moderationsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

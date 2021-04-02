@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ef78aea89344c480e9a0bc9a89e19144b7726ea0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ed8b9243a1eeb9886868b01e86fe175c2270f993
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435471"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508871"
 ---
-# <a name="list-availableprovidertypes"></a>Список доступныхProviderTypes
-
+# <a name="list-availableprovidertypes-deprecated"></a>Список доступныхProviderTypes (обесценив)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Извлекает все типы поставщиков удостоверений, доступные в каталоге.
 
@@ -31,6 +31,7 @@ ms.locfileid: "50435471"
 |Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
 
@@ -48,7 +49,7 @@ GET /identityProviders/availableProviderTypes
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -60,8 +61,6 @@ GET /identityProviders/availableProviderTypes
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes"
@@ -71,6 +70,11 @@ GET /identityProviders/availableProviderTypes
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,16 +87,11 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -123,5 +122,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-
