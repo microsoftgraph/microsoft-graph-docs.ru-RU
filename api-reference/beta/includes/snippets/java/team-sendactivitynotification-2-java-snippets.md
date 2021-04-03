@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 378278b1ee92cb805ad2b39c44856abfd3910299
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 4694e4a7c85a57f26dff132e06c3c16cfef846f6
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51210937"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573744"
 ---
 ```java
 
@@ -44,7 +44,6 @@ graphClient.teams("{teamId}")
         .withPreviewText(previewText)
         .withTemplateParameters(templateParametersList)
         .withRecipient(recipient)
-        .withTeamsAppId(null)
         .build())
     .buildRequest()
     .post();

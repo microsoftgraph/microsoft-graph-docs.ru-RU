@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 86adc1cdcc89e181ec5954a6483b469ccdaf9f9d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e813156d5a59a7f3272c5a069d41cbb78c9b5f69
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954154"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573748"
 ---
 ```csharp
 
@@ -44,7 +44,7 @@ var templateParameters = new List<KeyValuePair>()
 };
 
 await graphClient.Teams["{team-id}"]
-    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient,null)
+    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
     .Request()
     .PostAsync();
 

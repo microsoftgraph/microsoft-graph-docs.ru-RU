@@ -2,33 +2,33 @@
 title: Удаление organizationalBrandingProperties
 description: Удаление организационных свойств.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 56035ccd7d0f8e829e239552d2d38226080c5318
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eba5a039143c55b4ac77610ac07a5a721ae3a3f4
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955760"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582734"
 ---
-# <a name="delete-organizationalbrandingproperties"></a><span data-ttu-id="f95bb-103">Удаление organizationalBrandingProperties</span><span class="sxs-lookup"><span data-stu-id="f95bb-103">Delete organizationalBrandingProperties</span></span>
+# <a name="delete-organizationalbrandingproperties"></a><span data-ttu-id="690fe-103">Удаление organizationalBrandingProperties</span><span class="sxs-lookup"><span data-stu-id="690fe-103">Delete organizationalBrandingProperties</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f95bb-104">Удаление [объекта organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)</span><span class="sxs-lookup"><span data-stu-id="f95bb-104">Delete an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
+<span data-ttu-id="690fe-104">Удаление [объекта organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)</span><span class="sxs-lookup"><span data-stu-id="690fe-104">Delete an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f95bb-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f95bb-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="690fe-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="690fe-105">Permissions</span></span>
 
-<span data-ttu-id="f95bb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f95bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="690fe-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="690fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f95bb-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f95bb-108">Permission type</span></span>                        | <span data-ttu-id="f95bb-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f95bb-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="690fe-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="690fe-108">Permission type</span></span>                        | <span data-ttu-id="690fe-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="690fe-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f95bb-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f95bb-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f95bb-111">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f95bb-111">Organization.ReadWrite.All</span></span> |
-| <span data-ttu-id="f95bb-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f95bb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f95bb-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f95bb-113">Not supported.</span></span> |
-| <span data-ttu-id="f95bb-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f95bb-114">Application</span></span>                            | <span data-ttu-id="f95bb-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f95bb-115">Not supported.</span></span> |
+| <span data-ttu-id="690fe-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="690fe-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="690fe-111">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="690fe-111">Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="690fe-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="690fe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="690fe-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="690fe-113">Not supported.</span></span> |
+| <span data-ttu-id="690fe-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="690fe-114">Application</span></span>                            | <span data-ttu-id="690fe-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="690fe-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f95bb-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f95bb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="690fe-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="690fe-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "50955760"
 DELETE /organization/{id}/branding
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f95bb-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f95bb-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="690fe-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="690fe-117">Request headers</span></span>
 
-| <span data-ttu-id="f95bb-118">Имя</span><span class="sxs-lookup"><span data-stu-id="f95bb-118">Name</span></span>          | <span data-ttu-id="f95bb-119">Описание</span><span class="sxs-lookup"><span data-stu-id="f95bb-119">Description</span></span>   |
+| <span data-ttu-id="690fe-118">Имя</span><span class="sxs-lookup"><span data-stu-id="690fe-118">Name</span></span>          | <span data-ttu-id="690fe-119">Описание</span><span class="sxs-lookup"><span data-stu-id="690fe-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="f95bb-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f95bb-120">Authorization</span></span> | <span data-ttu-id="f95bb-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f95bb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="690fe-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="690fe-120">Authorization</span></span> | <span data-ttu-id="690fe-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="690fe-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f95bb-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f95bb-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="690fe-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="690fe-123">Request body</span></span>
 
-<span data-ttu-id="f95bb-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f95bb-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="690fe-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="690fe-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f95bb-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="f95bb-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="690fe-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="690fe-125">Response</span></span>
 
-<span data-ttu-id="f95bb-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f95bb-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="690fe-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="690fe-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f95bb-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="f95bb-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="690fe-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="690fe-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f95bb-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="f95bb-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="690fe-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="690fe-129">Request</span></span>
 
-<span data-ttu-id="f95bb-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f95bb-130">The following is an example of the request.</span></span>
+<span data-ttu-id="690fe-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="690fe-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f95bb-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="f95bb-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="690fe-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="690fe-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_organizationalbrandingproperties_1"
@@ -65,28 +65,28 @@ DELETE /organization/{id}/branding
 ```http
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
-# <a name="c"></a>[<span data-ttu-id="f95bb-132">C#</span><span class="sxs-lookup"><span data-stu-id="f95bb-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="690fe-132">C#</span><span class="sxs-lookup"><span data-stu-id="690fe-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbrandingproperties-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f95bb-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f95bb-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="690fe-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="690fe-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbrandingproperties-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f95bb-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f95bb-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="690fe-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="690fe-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbrandingproperties-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f95bb-135">Java</span><span class="sxs-lookup"><span data-stu-id="f95bb-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="690fe-135">Java</span><span class="sxs-lookup"><span data-stu-id="690fe-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandingproperties-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f95bb-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="f95bb-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="690fe-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="690fe-136">Response</span></span>
 
-<span data-ttu-id="f95bb-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f95bb-137">The following is an example of the response.</span></span>
+<span data-ttu-id="690fe-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="690fe-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

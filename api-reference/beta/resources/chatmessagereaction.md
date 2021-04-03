@@ -5,34 +5,34 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: bc7a3a5cbff2aee1191383ac18128e97075b4b99
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f66b37ee9f9ae69f5f0ccb1f4a2f45f3a3522163
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721623"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582244"
 ---
-# <a name="chatmessagereaction-resource-type"></a><span data-ttu-id="53272-103">тип ресурса chatMessageReaction</span><span class="sxs-lookup"><span data-stu-id="53272-103">chatMessageReaction resource type</span></span>
+# <a name="chatmessagereaction-resource-type"></a><span data-ttu-id="2ac59-103">тип ресурса chatMessageReaction</span><span class="sxs-lookup"><span data-stu-id="2ac59-103">chatMessageReaction resource type</span></span>
 
-<span data-ttu-id="53272-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="53272-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2ac59-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ac59-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="53272-105">Представляет реакцию на [объект chatMessage.](chatmessage.md)</span><span class="sxs-lookup"><span data-stu-id="53272-105">Represents a reaction to a [chatMessage](chatmessage.md) entity.</span></span> 
+<span data-ttu-id="2ac59-105">Представляет реакцию на [объект chatMessage.](chatmessage.md)</span><span class="sxs-lookup"><span data-stu-id="2ac59-105">Represents a reaction to a [chatMessage](chatmessage.md) entity.</span></span> 
 
-<span data-ttu-id="53272-106">Объект типа возвращается в рамках API сообщения get channel, как часть `chatMessageReaction` [сущности chatMessage.](chatmessage.md) [](../api/channel-get-message.md)</span><span class="sxs-lookup"><span data-stu-id="53272-106">An entity of type `chatMessageReaction` is returned as part of the [Get channel message](../api/channel-get-message.md) API, as a part of the [chatMessage](chatmessage.md) entity.</span></span>
+<span data-ttu-id="2ac59-106">Объект типа возвращается в рамках API сообщения get channel, как часть `chatMessageReaction` [сущности chatMessage.](chatmessage.md) [](../api/chatmessage-get.md)</span><span class="sxs-lookup"><span data-stu-id="2ac59-106">An entity of type `chatMessageReaction` is returned as part of the [Get channel message](../api/chatmessage-get.md) API, as a part of the [chatMessage](chatmessage.md) entity.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="53272-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="53272-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2ac59-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="2ac59-107">Properties</span></span>
 
-| <span data-ttu-id="53272-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="53272-108">Property</span></span>     | <span data-ttu-id="53272-109">Тип</span><span class="sxs-lookup"><span data-stu-id="53272-109">Type</span></span>        | <span data-ttu-id="53272-110">Описание</span><span class="sxs-lookup"><span data-stu-id="53272-110">Description</span></span> |
+| <span data-ttu-id="2ac59-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="2ac59-108">Property</span></span>     | <span data-ttu-id="2ac59-109">Тип</span><span class="sxs-lookup"><span data-stu-id="2ac59-109">Type</span></span>        | <span data-ttu-id="2ac59-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2ac59-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="53272-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="53272-111">createdDateTime</span></span>|<span data-ttu-id="53272-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="53272-112">DateTimeOffset</span></span>|<span data-ttu-id="53272-113">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="53272-113">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="53272-114">Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="53272-114">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`</span></span>|
-|<span data-ttu-id="53272-115">reactionType</span><span class="sxs-lookup"><span data-stu-id="53272-115">reactionType</span></span>|<span data-ttu-id="53272-116">String</span><span class="sxs-lookup"><span data-stu-id="53272-116">String</span></span>|<span data-ttu-id="53272-117">Поддерживаемые значения `like` : , , , , `angry` `sad` `laugh` `heart` `surprised` .</span><span class="sxs-lookup"><span data-stu-id="53272-117">Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`.</span></span> |
-|<span data-ttu-id="53272-118">user</span><span class="sxs-lookup"><span data-stu-id="53272-118">user</span></span>|[<span data-ttu-id="53272-119">identitySet</span><span class="sxs-lookup"><span data-stu-id="53272-119">identitySet</span></span>](identityset.md)|<span data-ttu-id="53272-120">Пользователь, реагирувший на сообщение.</span><span class="sxs-lookup"><span data-stu-id="53272-120">The user who reacted to the message.</span></span>|
+|<span data-ttu-id="2ac59-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="2ac59-111">createdDateTime</span></span>|<span data-ttu-id="2ac59-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2ac59-112">DateTimeOffset</span></span>|<span data-ttu-id="2ac59-113">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="2ac59-113">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="2ac59-114">Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="2ac59-114">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`</span></span>|
+|<span data-ttu-id="2ac59-115">reactionType</span><span class="sxs-lookup"><span data-stu-id="2ac59-115">reactionType</span></span>|<span data-ttu-id="2ac59-116">String</span><span class="sxs-lookup"><span data-stu-id="2ac59-116">String</span></span>|<span data-ttu-id="2ac59-117">Поддерживаемые значения `like` : , , , , `angry` `sad` `laugh` `heart` `surprised` .</span><span class="sxs-lookup"><span data-stu-id="2ac59-117">Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`.</span></span> |
+|<span data-ttu-id="2ac59-118">user</span><span class="sxs-lookup"><span data-stu-id="2ac59-118">user</span></span>|[<span data-ttu-id="2ac59-119">identitySet</span><span class="sxs-lookup"><span data-stu-id="2ac59-119">identitySet</span></span>](identityset.md)|<span data-ttu-id="2ac59-120">Пользователь, реагирувший на сообщение.</span><span class="sxs-lookup"><span data-stu-id="2ac59-120">The user who reacted to the message.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="53272-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="53272-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2ac59-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2ac59-121">JSON representation</span></span>
 
-<span data-ttu-id="53272-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="53272-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2ac59-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2ac59-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

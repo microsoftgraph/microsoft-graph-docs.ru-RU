@@ -5,100 +5,94 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 34c423e5b1a55068e9bc2f1cb79d34986e4b216b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2595ac4d8c9a1cafc1465a074221cd705fa20771
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947960"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582678"
 ---
-# <a name="send-chatmessage-in-a-channel-or-a-chat"></a><span data-ttu-id="a74d2-103">Отправка chatMessage в канале или чате</span><span class="sxs-lookup"><span data-stu-id="a74d2-103">Send chatMessage in a channel or a chat</span></span>
+# <a name="send-chatmessage-in-a-channel-or-a-chat"></a><span data-ttu-id="6433f-103">Отправка chatMessage в канале или чате</span><span class="sxs-lookup"><span data-stu-id="6433f-103">Send chatMessage in a channel or a chat</span></span>
 
-<span data-ttu-id="a74d2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a74d2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6433f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6433f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a74d2-105">Создание нового [чатаMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md) или [чате.](../resources/chat.md)</span><span class="sxs-lookup"><span data-stu-id="a74d2-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="6433f-105">Отправьте новый [chatMessage в](../resources/chatmessage.md) указанном [канале](../resources/channel.md) или [в чате.](../resources/chat.md)</span><span class="sxs-lookup"><span data-stu-id="6433f-105">Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
 
-> <span data-ttu-id="a74d2-106">**Примечание.** Мы не рекомендуем использовать этот API для переноса данных.</span><span class="sxs-lookup"><span data-stu-id="a74d2-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="a74d2-107">Он не имеет пропускной способности, необходимой для обычной миграции.</span><span class="sxs-lookup"><span data-stu-id="a74d2-107">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="6433f-106">**Примечание.** Мы не рекомендуем использовать этот API для переноса данных.</span><span class="sxs-lookup"><span data-stu-id="6433f-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="6433f-107">Он не имеет пропускной способности, необходимой для обычной миграции.</span><span class="sxs-lookup"><span data-stu-id="6433f-107">It does not have the throughput necessary for a typical migration.</span></span>
 
-> <span data-ttu-id="a74d2-108">**Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use)</span><span class="sxs-lookup"><span data-stu-id="a74d2-108">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="a74d2-109">Отправка сообщений, которые будут читаться людьми.</span><span class="sxs-lookup"><span data-stu-id="a74d2-109">Only send messages that people will read.</span></span>
+> <span data-ttu-id="6433f-108">**Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use)</span><span class="sxs-lookup"><span data-stu-id="6433f-108">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="6433f-109">Отправка сообщений, которые будут читаться людьми.</span><span class="sxs-lookup"><span data-stu-id="6433f-109">Only send messages that people will read.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a74d2-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a74d2-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6433f-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6433f-110">Permissions</span></span>
 
-<span data-ttu-id="a74d2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a74d2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6433f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6433f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-for-channel"></a><span data-ttu-id="a74d2-113">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="a74d2-113">Permissions for Channel</span></span>
-| <span data-ttu-id="a74d2-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a74d2-114">Permission type</span></span>                        | <span data-ttu-id="a74d2-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a74d2-115">Permissions (from least to most privileged)</span></span> |
+### <a name="permissions-for-channel"></a><span data-ttu-id="6433f-113">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="6433f-113">Permissions for channel</span></span>
+| <span data-ttu-id="6433f-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6433f-114">Permission type</span></span>                        | <span data-ttu-id="6433f-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6433f-115">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a74d2-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a74d2-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="a74d2-117">ChannelMessage.Send, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a74d2-117">ChannelMessage.Send, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="a74d2-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a74d2-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a74d2-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a74d2-119">Not supported.</span></span> |
-| <span data-ttu-id="a74d2-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a74d2-120">Application</span></span>                            | <span data-ttu-id="a74d2-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a74d2-121">Not supported.</span></span> |
+| <span data-ttu-id="6433f-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6433f-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="6433f-117">ChannelMessage.Send, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6433f-117">ChannelMessage.Send, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="6433f-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6433f-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6433f-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6433f-119">Not supported.</span></span> |
+| <span data-ttu-id="6433f-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6433f-120">Application</span></span>                            | <span data-ttu-id="6433f-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6433f-121">Not supported.</span></span> |
 
-### <a name="permissions-for-chat"></a><span data-ttu-id="a74d2-122">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="a74d2-122">Permissions for Chat</span></span>
-| <span data-ttu-id="a74d2-123">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a74d2-123">Permission type</span></span>                        | <span data-ttu-id="a74d2-124">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a74d2-124">Permissions (from least to most privileged)</span></span> |
+### <a name="permissions-for-chat"></a><span data-ttu-id="6433f-122">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="6433f-122">Permissions for chat</span></span>
+| <span data-ttu-id="6433f-123">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6433f-123">Permission type</span></span>                        | <span data-ttu-id="6433f-124">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6433f-124">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a74d2-125">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a74d2-125">Delegated (work or school account)</span></span>     | <span data-ttu-id="a74d2-126">ChatMessage.Send, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a74d2-126">ChatMessage.Send, Chat.ReadWrite</span></span> |
-| <span data-ttu-id="a74d2-127">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a74d2-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a74d2-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a74d2-128">Not supported.</span></span> |
-| <span data-ttu-id="a74d2-129">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a74d2-129">Application</span></span>                            | <span data-ttu-id="a74d2-130">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a74d2-130">Not supported.</span></span> |
+| <span data-ttu-id="6433f-125">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6433f-125">Delegated (work or school account)</span></span>     | <span data-ttu-id="6433f-126">ChatMessage.Send, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6433f-126">ChatMessage.Send, Chat.ReadWrite</span></span> |
+| <span data-ttu-id="6433f-127">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6433f-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6433f-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6433f-128">Not supported.</span></span> |
+| <span data-ttu-id="6433f-129">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6433f-129">Application</span></span>                            | <span data-ttu-id="6433f-130">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6433f-130">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a74d2-131">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a74d2-131">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6433f-131">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6433f-131">HTTP request</span></span>
 
-### <a name="sending-message-in-a-channel"></a><span data-ttu-id="a74d2-132">Отправка сообщения в канале</span><span class="sxs-lookup"><span data-stu-id="a74d2-132">Sending message in a channel</span></span>
+<span data-ttu-id="6433f-132">**Отправка сообщения в канале**</span><span class="sxs-lookup"><span data-stu-id="6433f-132">**Sending message in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /teams/{id}/channels/{id}/messages
+POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
-### <a name="sending-replies-in-a-channel"></a><span data-ttu-id="a74d2-133">Отправка ответов в канале</span><span class="sxs-lookup"><span data-stu-id="a74d2-133">Sending replies in a channel</span></span>
+<span data-ttu-id="6433f-133">**Отправка ответов в канале**</span><span class="sxs-lookup"><span data-stu-id="6433f-133">**Sending replies in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /teams/{id}/channels/{id}/messages/{id}/replies
+POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
-### <a name="sending-message-in-a-chat"></a><span data-ttu-id="a74d2-134">Отправка сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="a74d2-134">Sending message in a chat</span></span>
+<span data-ttu-id="6433f-134">**Отправка сообщения в чате**</span><span class="sxs-lookup"><span data-stu-id="6433f-134">**Sending message in a chat**</span></span>
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /chats/{id}/messages
-POST /users/{id}/chats/{id}/messages
+POST /chats/{chat-id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a74d2-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a74d2-135">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6433f-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6433f-135">Request headers</span></span>
 
-| <span data-ttu-id="a74d2-136">Имя</span><span class="sxs-lookup"><span data-stu-id="a74d2-136">Name</span></span>          | <span data-ttu-id="a74d2-137">Описание</span><span class="sxs-lookup"><span data-stu-id="a74d2-137">Description</span></span>   |
+| <span data-ttu-id="6433f-136">Имя</span><span class="sxs-lookup"><span data-stu-id="6433f-136">Name</span></span>          | <span data-ttu-id="6433f-137">Описание</span><span class="sxs-lookup"><span data-stu-id="6433f-137">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="a74d2-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a74d2-138">Authorization</span></span> | <span data-ttu-id="a74d2-139">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="a74d2-139">Bearer {code}.</span></span> <span data-ttu-id="a74d2-140">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="a74d2-140">Required.</span></span> |
-| <span data-ttu-id="a74d2-141">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a74d2-141">Content-type</span></span> | <span data-ttu-id="a74d2-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a74d2-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="6433f-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6433f-138">Authorization</span></span> | <span data-ttu-id="6433f-139">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="6433f-139">Bearer {code}.</span></span> <span data-ttu-id="6433f-140">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="6433f-140">Required.</span></span> |
+| <span data-ttu-id="6433f-141">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6433f-141">Content-type</span></span> | <span data-ttu-id="6433f-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6433f-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a74d2-144">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a74d2-144">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6433f-144">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6433f-144">Request body</span></span>
 
-<span data-ttu-id="a74d2-145">В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md)</span><span class="sxs-lookup"><span data-stu-id="a74d2-145">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="a74d2-146">Обязательным является только свойство body; другие свойства необязательны.</span><span class="sxs-lookup"><span data-stu-id="a74d2-146">Only the body property is mandatory; other properties are optional.</span></span>
+<span data-ttu-id="6433f-145">В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md)</span><span class="sxs-lookup"><span data-stu-id="6433f-145">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="6433f-146">Обязательным является только свойство body; другие свойства необязательны.</span><span class="sxs-lookup"><span data-stu-id="6433f-146">Only the body property is mandatory; other properties are optional.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="a74d2-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="a74d2-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6433f-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="6433f-147">Response</span></span>
 
-<span data-ttu-id="a74d2-148">В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="a74d2-148">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="6433f-148">В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="6433f-148">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a74d2-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="a74d2-149">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6433f-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="6433f-149">Examples</span></span>
 
-<span data-ttu-id="a74d2-150">В следующих примерах URL-адрес может использовать синтаксис [HTTP,](#http-request) описанный для отправки сообщения в [чат,](chat-post-message.md)отправки сообщения на канал или отправки ответа на [канал.](channel-post-messagereply.md) [](channel-post-message.md)</span><span class="sxs-lookup"><span data-stu-id="a74d2-150">In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-message.md), [send a message to a channel](channel-post-message.md), or [send reply to a channel](channel-post-messagereply.md).</span></span>
+<span data-ttu-id="6433f-150">В следующих примерах URL-адрес может использовать синтаксис [HTTP,](#http-request) описанный для отправки сообщения в [чат,](chat-post-messages.md)отправки сообщения на канал или отправки ответа на [канал.](chatmessage-post-replies.md) [](channel-post-messages.md)</span><span class="sxs-lookup"><span data-stu-id="6433f-150">In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).</span></span>
 
-### <a name="example-1-hello-world"></a><span data-ttu-id="a74d2-151">Пример 1. Hello World</span><span class="sxs-lookup"><span data-stu-id="a74d2-151">Example 1: Hello World</span></span>
+### <a name="example-1-send-a-hello-world-message-in-a-channel"></a><span data-ttu-id="6433f-151">Пример 1. Отправка сообщения Hello World в канале</span><span class="sxs-lookup"><span data-stu-id="6433f-151">Example 1: Send a Hello World message in a channel</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a74d2-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="a74d2-152">Request</span></span>
-<span data-ttu-id="a74d2-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a74d2-153">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6433f-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="6433f-152">Request</span></span>
+<span data-ttu-id="6433f-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6433f-153">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a74d2-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="a74d2-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_2"
+  "name": "post_chatmessage_1"
 }-->
-
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -107,70 +101,54 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a74d2-155">C#</span><span class="sxs-lookup"><span data-stu-id="a74d2-155">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a74d2-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a74d2-156">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="6433f-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="6433f-154">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="a74d2-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a74d2-157">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="a74d2-158">Java</span><span class="sxs-lookup"><span data-stu-id="a74d2-158">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="a74d2-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="a74d2-159">Response</span></span>
-
-<span data-ttu-id="a74d2-160">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a74d2-160">The following is an example of the response.</span></span>
-
-> <span data-ttu-id="a74d2-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a74d2-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6433f-155">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6433f-155">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
-    "id": "id-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616990032035",
     "replyToId": null,
-    "etag": "id-value",
+    "etag": "1616990032035",
     "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T03:53:52.035Z",
+    "lastModifiedDateTime": "2021-03-29T03:53:52.035Z",
     "lastEditedDateTime": null,
-    "deleted": false,
+    "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990032035?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990032035&parentMessageId=1616990032035",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
-        "contentType": "html",
+        "contentType": "text",
         "content": "Hello World"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [],
     "mentions": [],
@@ -178,18 +156,17 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-mentions"></a><span data-ttu-id="a74d2-163">Пример 2: @mentions</span><span class="sxs-lookup"><span data-stu-id="a74d2-163">Example 2: @mentions</span></span>
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a><span data-ttu-id="6433f-156">Пример 2. @mentions пользователя в сообщении канала</span><span class="sxs-lookup"><span data-stu-id="6433f-156">Example 2: @mentions a user in a channel message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a74d2-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="a74d2-164">Request</span></span>
-<span data-ttu-id="a74d2-165">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a74d2-165">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6433f-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="6433f-157">Request</span></span>
+<span data-ttu-id="6433f-158">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6433f-158">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a74d2-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="a74d2-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_3"
+  "name": "post_chatmessage_2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -212,24 +189,10 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a74d2-167">C#</span><span class="sxs-lookup"><span data-stu-id="a74d2-167">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a74d2-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a74d2-168">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="6433f-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="6433f-159">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="a74d2-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a74d2-169">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-3-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="a74d2-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="a74d2-170">Response</span></span>
-
-<span data-ttu-id="a74d2-171">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a74d2-171">The following is an example of the response.</span></span>
+<span data-ttu-id="6433f-160">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6433f-160">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -238,36 +201,41 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
-    "id": "id-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616965872395",
     "replyToId": null,
-    "etag": "id-value",
+    "etag": "1616965872395",
     "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-28T21:11:12.395Z",
+    "lastModifiedDateTime": "2021-03-28T21:11:12.395Z",
     "lastEditedDateTime": null,
-    "deleted": false,
+    "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616965872395?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616965872395&parentMessageId=1616965872395",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "html",
         "content": "Hello World <at id=\"0\">Jane Smith</at>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [],
     "mentions": [
@@ -290,21 +258,19 @@ Content-length: 160
 }
 ```
 
-### <a name="example-3-cards"></a><span data-ttu-id="a74d2-172">Пример 3. Карты</span><span class="sxs-lookup"><span data-stu-id="a74d2-172">Example 3: Cards</span></span>
+### <a name="example-3-send-message-containing-cards"></a><span data-ttu-id="6433f-161">Пример 3. Отправка сообщений, содержащих карты</span><span class="sxs-lookup"><span data-stu-id="6433f-161">Example 3: Send message containing cards</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a74d2-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="a74d2-173">Request</span></span>
-<span data-ttu-id="a74d2-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a74d2-174">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6433f-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="6433f-162">Request</span></span>
+<span data-ttu-id="6433f-163">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6433f-163">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="a74d2-175">**Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID.</span><span class="sxs-lookup"><span data-stu-id="a74d2-175">**Note:** The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="a74d2-176">Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений._</span><span class="sxs-lookup"><span data-stu-id="a74d2-176">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
+> <span data-ttu-id="6433f-164">**Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID.</span><span class="sxs-lookup"><span data-stu-id="6433f-164">**Note:** The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="6433f-165">Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений._</span><span class="sxs-lookup"><span data-stu-id="6433f-165">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="a74d2-177">HTTP</span><span class="sxs-lookup"><span data-stu-id="a74d2-177">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_4"
+  "name": "post_chatmessage_3"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -325,28 +291,10 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a74d2-178">C#</span><span class="sxs-lookup"><span data-stu-id="a74d2-178">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a74d2-179">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a74d2-179">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="6433f-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="6433f-166">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="a74d2-180">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a74d2-180">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-4-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="a74d2-181">Java</span><span class="sxs-lookup"><span data-stu-id="a74d2-181">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-4-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="a74d2-182">Отклик</span><span class="sxs-lookup"><span data-stu-id="a74d2-182">Response</span></span>
-
-<span data-ttu-id="a74d2-183">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a74d2-183">The following is an example of the response.</span></span>
+<span data-ttu-id="6433f-167">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6433f-167">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -355,30 +303,31 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('bdb7bcda-9c3b-4341-b9a9-f52bf9a23407')/channels('19%3A786524f437c042b68bac5c0511ad6be2%40thread.skype')/messages/$entity",
-    "id": "1554837297516",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616991851162",
     "replyToId": null,
-    "etag": "1554837297516",
+    "etag": "1616991851162",
     "messageType": "message",
-    "createdDateTime": "2019-04-09T19:14:57.516Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:24:11.162Z",
+    "lastModifiedDateTime": "2021-03-29T04:24:11.162Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -386,12 +335,16 @@ Content-length: 160
         "contentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+    },
     "attachments": [
         {
             "id": "74d20c7f34aa4a7fb74e2b30004247c5",
             "contentType": "application/vnd.microsoft.card.thumbnail",
             "contentUrl": null,
-            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\n\\r\\n\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\n\\r\\n\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+            "content": "{  \"title\": \"This is an example of posting a card\",  \"subtitle\": \"<h3>This is the subtitle</h3>\",  \"text\": \"Here is some body text. <br>\\\\And a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\\\And below that is some buttons:\",  \"buttons\": [    {      \"type\": \"messageBack\",      \"title\": \"Login to FakeBot\",      \"text\": \"login\",      \"displayText\": \"login\",      \"value\": \"login\"    }  ]}",
             "name": null,
             "thumbnailUrl": null
         }
@@ -401,21 +354,19 @@ Content-length: 160
 }
 ```
 
-### <a name="example-4-file-attachments"></a><span data-ttu-id="a74d2-184">Пример 4. Вложения файлов</span><span class="sxs-lookup"><span data-stu-id="a74d2-184">Example 4: File attachments</span></span>
+### <a name="example-4-send-a-message-with-file-attachment-in-it"></a><span data-ttu-id="6433f-168">Пример 4. Отправка сообщения с вложением файла в нем</span><span class="sxs-lookup"><span data-stu-id="6433f-168">Example 4: Send a message with file attachment in it</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a74d2-185">Запрос</span><span class="sxs-lookup"><span data-stu-id="a74d2-185">Request</span></span>
-<span data-ttu-id="a74d2-186">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a74d2-186">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6433f-169">Запрос</span><span class="sxs-lookup"><span data-stu-id="6433f-169">Request</span></span>
+<span data-ttu-id="6433f-170">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6433f-170">The following is an example of the request.</span></span>
 
-><span data-ttu-id="a74d2-187">**Примечание:** Файл уже должен быть в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="a74d2-187">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="a74d2-188">Чтобы найти свойства файла, получите **driveItem** для файла.</span><span class="sxs-lookup"><span data-stu-id="a74d2-188">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="a74d2-189">Например, /drives/{id}/items/{id}.</span><span class="sxs-lookup"><span data-stu-id="a74d2-189">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="a74d2-190">Ваш ИД вложения — это GUID в **eTag** **driveItem,** содержимое вложения — это **webUrl** папки driveItem плюс имя **driveItem,** а имя вложения — имя  **driveItem.** </span><span class="sxs-lookup"><span data-stu-id="a74d2-190">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
+><span data-ttu-id="6433f-171">**Примечание:** Файл уже должен быть в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="6433f-171">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="6433f-172">Чтобы найти свойства файла, получите **driveItem** для файла.</span><span class="sxs-lookup"><span data-stu-id="6433f-172">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="6433f-173">Например, /drives/{id}/items/{id}.</span><span class="sxs-lookup"><span data-stu-id="6433f-173">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="6433f-174">Ваш ИД вложения — это GUID в **eTag** **driveItem,** содержимое вложения — это **webUrl** папки driveItem плюс имя **driveItem,** а имя вложения — имя  **driveItem.** </span><span class="sxs-lookup"><span data-stu-id="6433f-174">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="a74d2-191">HTTP</span><span class="sxs-lookup"><span data-stu-id="a74d2-191">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_5"
+  "name": "post_chatmessage_4"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -433,28 +384,10 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a74d2-192">C#</span><span class="sxs-lookup"><span data-stu-id="a74d2-192">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-5-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a74d2-193">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a74d2-193">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-5-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="6433f-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="6433f-175">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="a74d2-194">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a74d2-194">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-5-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="a74d2-195">Java</span><span class="sxs-lookup"><span data-stu-id="a74d2-195">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-5-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="a74d2-196">Отклик</span><span class="sxs-lookup"><span data-stu-id="a74d2-196">Response</span></span>
-
-<span data-ttu-id="a74d2-197">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a74d2-197">The following is an example of the response.</span></span>
+<span data-ttu-id="6433f-176">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6433f-176">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -465,34 +398,39 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
-    "id": "1589481435511",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616991899452",
     "replyToId": null,
-    "etag": "1589481435511",
+    "etag": "1616991899452",
     "messageType": "message",
-    "createdDateTime": "2020-05-14T18:37:15.511Z",
-    "lastModifiedDateTime": "2020-07-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:24:59.452Z",
+    "lastModifiedDateTime": "2021-03-29T04:24:59.452Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1589481435511?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1589481435511&parentMessageId=1589481435511",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991899452?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991899452&parentMessageId=1616991899452",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "598efcd4-e549-402a-9602-0b50201faebe",
-            "displayName": "MOD Administrator",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "html",
         "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [
         {
@@ -509,23 +447,21 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-sending-inline-images-along-with-the-message"></a><span data-ttu-id="a74d2-198">Пример 5. Отправка inline изображений вместе с сообщением</span><span class="sxs-lookup"><span data-stu-id="a74d2-198">Example 5: Sending inline images along with the message</span></span>
+### <a name="example-5-send-inline-images-along-with-the-message"></a><span data-ttu-id="6433f-177">Пример 5. Отправка изображений в линию вместе с сообщением</span><span class="sxs-lookup"><span data-stu-id="6433f-177">Example 5: Send inline images along with the message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a74d2-199">Запрос</span><span class="sxs-lookup"><span data-stu-id="a74d2-199">Request</span></span>
-<span data-ttu-id="a74d2-200">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a74d2-200">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6433f-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="6433f-178">Request</span></span>
+<span data-ttu-id="6433f-179">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6433f-179">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="a74d2-201">**Примечание:** TemporaryId **в** коллекции **hostedContents** — это случайный ID,  но он должен быть одинаковым по всему телу и элементам **hostedContents.**</span><span class="sxs-lookup"><span data-stu-id="a74d2-201">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements.</span></span> <span data-ttu-id="a74d2-202">(Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="a74d2-202">(Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)</span></span>
+> <span data-ttu-id="6433f-180">**Примечание:** TemporaryId **в** коллекции **hostedContents** — это случайный ID,  но он должен быть одинаковым по всему телу и элементам **hostedContents.**</span><span class="sxs-lookup"><span data-stu-id="6433f-180">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements.</span></span> <span data-ttu-id="6433f-181">(Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="6433f-181">(Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)</span></span>
 
-<span data-ttu-id="a74d2-203">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="a74d2-203">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="a74d2-204">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="a74d2-204">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
+<span data-ttu-id="6433f-182">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="6433f-182">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="6433f-183">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="6433f-183">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="a74d2-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="a74d2-205">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_6"
+  "name": "post_chatmessage_5"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
 Content-type: application/json
 
 {
@@ -542,28 +478,10 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a74d2-206">C#</span><span class="sxs-lookup"><span data-stu-id="a74d2-206">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-6-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a74d2-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a74d2-207">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-6-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="6433f-184">Отклик</span><span class="sxs-lookup"><span data-stu-id="6433f-184">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="a74d2-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a74d2-208">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-6-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="a74d2-209">Java</span><span class="sxs-lookup"><span data-stu-id="a74d2-209">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-6-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="a74d2-210">Отклик</span><span class="sxs-lookup"><span data-stu-id="a74d2-210">Response</span></span>
-
-<span data-ttu-id="a74d2-211">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a74d2-211">The following is an example of the response.</span></span>
+<span data-ttu-id="6433f-185">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6433f-185">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -572,42 +490,38 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
-    "id": "1596261390440",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages/$entity",
+    "id": "1616991962672",
     "replyToId": null,
-    "etag": "1596261390440",
+    "etag": "1616991962672",
     "messageType": "message",
-    "createdDateTime": "2020-08-01T05:56:30.44Z",
-    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:26:02.672Z",
+    "lastModifiedDateTime": "2021-03-29T04:26:02.672Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
-    "chatId": null,
+    "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
     "importance": "normal",
     "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1596261390440?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1596261390440&parentMessageId=1596261390440",
+    "webUrl": null,
+    "channelIdentity": null,
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "598efcd4-e549-402a-9602-0b50201faebe",
-            "displayName": "MOD Administrator",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div>\n<div><span><img height=\"297\" src=\"https://graph.microsoft.com/beta/teams/233ae542-57e7-4593-b5bf-50549df74710/channels/19:8af03d1e70f5455fbb74d36acbe2957f@thread.tacv2/messages/1596261390440/hostedContents/aWQ9eF8wLWNhbmFyeWN1cy1kNS1jNjU0M2NjNjhkNjdlMzY1ZDUwODQ1MGU1MTRhNjEwNSx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLWNhbmFyeWN1cy1kNS1jNjU0M2NjNjhkNjdlMzY1ZDUwODQ1MGU1MTRhNjEwNS92aWV3cy9pbWdv/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>"
-    },
-    "channelIdentity": {
-        "teamId": "13a99602-a5d3-4fed-99d2-7dc3ffe3730d",
-        "channelId": "19:8af03d1e70f5455fbb74d36acbe2957f@thread.tacv2"
+        "content": "<div><div><div><span><img height=\"297\" src=\"https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616991962672/hostedContents/aWQ9eF8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yyx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yy92aWV3cy9pbWdv/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span></div></div></div>"
     },
     "attachments": [],
     "mentions": [],
@@ -615,23 +529,21 @@ Content-length: 160
 }
 ```
 
-### <a name="example-6-card-with-inline-images"></a><span data-ttu-id="a74d2-212">Пример 6. Карточка с изображениями в линию</span><span class="sxs-lookup"><span data-stu-id="a74d2-212">Example 6: Card with inline images</span></span>
+### <a name="example-6-send-a-card-with-inline-images"></a><span data-ttu-id="6433f-186">Пример 6. Отправка карточки с inline изображениями</span><span class="sxs-lookup"><span data-stu-id="6433f-186">Example 6: Send a card with inline images</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a74d2-213">Запрос</span><span class="sxs-lookup"><span data-stu-id="a74d2-213">Request</span></span>
-<span data-ttu-id="a74d2-214">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a74d2-214">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6433f-187">Запрос</span><span class="sxs-lookup"><span data-stu-id="6433f-187">Request</span></span>
+<span data-ttu-id="6433f-188">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6433f-188">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="a74d2-215">**Примечание:** TemporaryId в коллекции **hostedContents** — это случайный ID, но должен быть одинаковым для контента **(в** вложениях) и элементов **hostedContents.** </span><span class="sxs-lookup"><span data-stu-id="a74d2-215">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements.</span></span> <span data-ttu-id="a74d2-216">(Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="a74d2-216">(Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)</span></span>
+> <span data-ttu-id="6433f-189">**Примечание:** TemporaryId в коллекции **hostedContents** — это случайный ID, но должен быть одинаковым для контента **(в** вложениях) и элементов **hostedContents.** </span><span class="sxs-lookup"><span data-stu-id="6433f-189">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements.</span></span> <span data-ttu-id="6433f-190">(Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="6433f-190">(Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)</span></span>
 
-<span data-ttu-id="a74d2-217">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="a74d2-217">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="a74d2-218">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="a74d2-218">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
+<span data-ttu-id="6433f-191">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="6433f-191">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="6433f-192">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="6433f-192">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="a74d2-219">HTTP</span><span class="sxs-lookup"><span data-stu-id="a74d2-219">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_7"
+  "name": "post_chatmessage_6"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -659,26 +571,8 @@ Content-type: application/json
     }]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a74d2-220">C#</span><span class="sxs-lookup"><span data-stu-id="a74d2-220">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-7-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a74d2-221">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a74d2-221">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-7-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="a74d2-222">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a74d2-222">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-7-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="a74d2-223">Java</span><span class="sxs-lookup"><span data-stu-id="a74d2-223">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-7-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="a74d2-224">Отклик</span><span class="sxs-lookup"><span data-stu-id="a74d2-224">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="6433f-193">Отклик</span><span class="sxs-lookup"><span data-stu-id="6433f-193">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -690,13 +584,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
-    "id": "1597182390555",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616992043931",
     "replyToId": null,
-    "etag": "1597182390555",
+    "etag": "1616992043931",
     "messageType": "message",
-    "createdDateTime": "2020-08-11T21:46:30.555Z",
-    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:27:23.931Z",
+    "lastModifiedDateTime": "2021-03-29T04:27:23.931Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
@@ -704,15 +598,15 @@ Content-type: application/json
     "chatId": null,
     "importance": "normal",
     "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1597182390555?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1597182390555&parentMessageId=1597182390555",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616992043931?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616992043931&parentMessageId=1616992043931",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "598efcd4-e549-402a-9602-0b50201faebe",
-            "displayName": "MOD Administrator",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -721,25 +615,27 @@ Content-type: application/json
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
-        "teamId": "13a99602-a5d3-4fed-99d2-7dc3ffe3730d",
-        "channelId": "19:8af03d1e70f5455fbb74d36acbe2957f@thread.tacv2"
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
-    "attachments": [{
-        "id": "74d20c7f34aa4a7fb74e2b30004247c5",
-        "contentType": "application/vnd.microsoft.card.adaptive",
-        "contentUrl": null,
-        "content": "{\r\n  \"type\": \"AdaptiveCard\",\r\n  \"body\": [\r\n    {\r\n      \"items\": [\r\n        {\r\n          \"columns\": [\r\n            {\r\n              \"width\": \"auto\",\r\n              \"items\": [\r\n                {\r\n                  \"size\": \"medium\",\r\n                  \"url\": \"https://graph.microsoft.com/beta/teams/13a99602-a5d3-4fed-99d2-7dc3ffe3730d/channels/19:b770d7701fdb40eab5386bf2ab2bcb41@thread.skype/messages/1597182390555/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtY2FuYXJ5Y3VzLWQxLTlkNWFkNGUzZTUzMmVlNjE2Mzg4ZTQ5NTRjMDg1NjAwL3ZpZXdzL2ltZ28=/$value\",\r\n                  \"height\": \"auto\",\r\n                  \"type\": \"Image\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"SHADES\",\r\n                  \"weight\": \"bolder\",\r\n                  \"type\": \"TextBlock\"\r\n                }\r\n              ],\r\n              \"type\": \"Column\"\r\n            },\r\n            {\r\n              \"width\": \"stretch\",\r\n              \"items\": [\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"08/31/2019 19:30:00\",\r\n                  \"type\": \"TextBlock\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"Final\",\r\n                  \"spacing\": \"None\",\r\n                  \"type\": \"TextBlock\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"size\": \"extraLarge\",\r\n                  \"text\": \"40 - 7\",\r\n                  \"type\": \"TextBlock\"\r\n                }\r\n              ],\r\n              \"spacing\": \"Medium\",\r\n              \"separator\": true,\r\n              \"type\": \"Column\"\r\n            },\r\n            {\r\n              \"width\": \"auto\",\r\n              \"items\": [\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"size\": \"medium\",\r\n                  \"url\": \"https://graph.microsoft.com/beta/teams/13a99602-a5d3-4fed-99d2-7dc3ffe3730d/channels/19:b770d7701fdb40eab5386bf2ab2bcb41@thread.skype/messages/1597182390555/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtY2FuYXJ5Y3VzLWQxLTFhZDQwYWNlMmFhZWE3MGM3YjgxMTIxMjE4MjM2ZTkzL3ZpZXdzL2ltZ28=/$value\",\r\n                  \"height\": \"auto\",\r\n                  \"type\": \"Image\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"SKINS\",\r\n                  \"weight\": \"bolder\",\r\n                  \"type\": \"TextBlock\"\r\n                }\r\n              ],\r\n              \"spacing\": \"Medium\",\r\n              \"separator\": true,\r\n              \"type\": \"Column\"\r\n            }\r\n          ],\r\n          \"type\": \"ColumnSet\"\r\n        }\r\n      ],\r\n      \"type\": \"Container\"\r\n    }\r\n  ],\r\n  \"speak\": \"The Seattle Seahawks beat the Carolina Panthers 40-7\",\r\n  \"$schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n  \"version\": \"1.2\"\r\n}",
-        "name": null,
-        "thumbnailUrl": null
-    }],
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.adaptive",
+            "contentUrl": null,
+            "content": "{  \"type\": \"AdaptiveCard\",  \"body\": [    {      \"items\": [        {          \"columns\": [            {              \"width\": \"auto\",              \"items\": [                {                  \"size\": \"medium\",                  \"url\": \"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616992043931/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQyLWEyNDc1OWVjOGZiZDRmOWFjYTkxN2M5N2EyOGNlNTQ1L3ZpZXdzL2ltZ28=/$value\",                  \"height\": \"auto\",                  \"type\": \"Image\"                },                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"SHADES\",                  \"weight\": \"bolder\",                  \"type\": \"TextBlock\"                }              ],              \"type\": \"Column\"            },            {              \"width\": \"stretch\",              \"items\": [                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"08/31/2019 19:30:00\",                  \"type\": \"TextBlock\"                },                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"Final\",                  \"spacing\": \"None\",                  \"type\": \"TextBlock\"                },                {                  \"horizontalAlignment\": \"center\",                  \"size\": \"extraLarge\",                  \"text\": \"40 - 7\",                  \"type\": \"TextBlock\"                }              ],              \"spacing\": \"Medium\",              \"separator\": true,              \"type\": \"Column\"            },            {              \"width\": \"auto\",              \"items\": [                {                  \"horizontalAlignment\": \"center\",                  \"size\": \"medium\",                  \"url\": \"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616992043931/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ1LTg1ZmNmMDQyNDc3MDJjNjkxODdiOTMwZjcwNTY3OTFhL3ZpZXdzL2ltZ28=/$value\",                  \"height\": \"auto\",                  \"type\": \"Image\"                },                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"SKINS\",                  \"weight\": \"bolder\",                  \"type\": \"TextBlock\"                }              ],              \"spacing\": \"Medium\",              \"separator\": true,              \"type\": \"Column\"            }          ],          \"type\": \"ColumnSet\"        }      ],      \"type\": \"Container\"    }  ],  \"speak\": \"The Seattle Seahawks beat the Carolina Panthers 40-7\",  \"$schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",  \"version\": \"1.2\"}",
+            "name": null,
+            "thumbnailUrl": null
+        }
+    ],
     "mentions": [],
     "reactions": []
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a74d2-225">См. также</span><span class="sxs-lookup"><span data-stu-id="a74d2-225">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6433f-194">См. также</span><span class="sxs-lookup"><span data-stu-id="6433f-194">See also</span></span>
 
-- [<span data-ttu-id="a74d2-226">Ссылки на карточки</span><span class="sxs-lookup"><span data-stu-id="a74d2-226">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
+- [<span data-ttu-id="6433f-195">Ссылки на карточки</span><span class="sxs-lookup"><span data-stu-id="6433f-195">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
