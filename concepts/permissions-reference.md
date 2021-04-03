@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5519b7b9d14b26f83ef3422021c292eb712220fc
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: df96ef3a92a0e22d01feea0cb991dffc4da137f1
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473516"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508171"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -183,7 +183,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 * _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta&preserve-view=true) (`GET /beta/me/analytics/settings`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 Отсутствуют.
 
@@ -215,7 +215,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 Отсутствуют.
 
@@ -345,7 +345,6 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _Calendars.Read_. Поиск событий, организованных пользователем bob@contoso.com, в календаре конференц-зала (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
 * _Calendars.Read_: список всех событий в календаре пользователя за май (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`).
 * _Calendars.ReadWrite_. Добавление в пользовательский календарь события для утвержденного нерабочего времени (`POST /users/{id | userPrincipalName}/events`).
-* _Calendars.Send_: отправка сообщения (`POST /users/{id | userPrincipalName}/sendCalendars`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -373,7 +372,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
 * _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
@@ -884,7 +883,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _GroupMember.ReadWrite.All_. Обновление участников группы (`POST /groups/{id}/members/$ref`).
 > **Примечание.** При этом также необходимо разрешение _User.ReadBasic.All_ для чтения пользователя, чтобы добавить его как участника.
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _Group.Read.All_. Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_. Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
@@ -1252,7 +1251,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Делегированные разрешения
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -2080,7 +2079,7 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 * _ThreatAssessment.ReadWrite.All_: чтение и запись запросов на оценку угроз (`POST /informationProtection/threatAssessmentRequests`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _ThreatAssessment.Read.All_: чтение запросов на оценку угроз (`GET /informationProtection/threatAssessmentRequests`)
 

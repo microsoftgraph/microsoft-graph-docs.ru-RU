@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b87e79923b0ea22b9ac32c465885a1f9e259a47f
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: cf1e0dcf104c540f8a223678adfc2e9eb8fe432e
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469642"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508278"
 ---
 # <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest: filterByCurrentUser
 
@@ -45,7 +45,7 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса appConsentRequests, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательное.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса appConsentRequests, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -69,6 +69,8 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "appconsentrequest_filterbycurrentuser"
@@ -77,6 +79,24 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='reviewer')?$filter=userConsentRequests/any(u:u/status eq 'InProgress')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/appconsentrequest-filterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/appconsentrequest-filterbycurrentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/appconsentrequest-filterbycurrentuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/appconsentrequest-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
