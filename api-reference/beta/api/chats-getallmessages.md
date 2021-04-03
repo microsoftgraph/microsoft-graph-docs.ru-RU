@@ -1,16 +1,16 @@
 ---
 title: 'чаты: getAllMessages'
 description: Получение сообщений из всех чатах, в которых пользователь является участником.
-author: laujan
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb23dd527a4f1bf78863602c1c8b01fa0e848b9d
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 12b645943297d34504bb4d4586ecbd8d3e79b7c6
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597767"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582657"
 ---
 # <a name="chats-getallmessages"></a>чаты: getAllMessages
 
@@ -22,7 +22,7 @@ ms.locfileid: "49597767"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуются следующие разрешения. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуются разрешения ниже. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|

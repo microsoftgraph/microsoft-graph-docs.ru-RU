@@ -2,15 +2,15 @@
 title: 'канал: completeMigration'
 description: Завершите миграцию внешних сообщений, удалив режим миграции из канала.
 localization_priority: Normal
-author: laujan
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fb56abf4a30bfe55021535526e86b0e34ebe4bbb
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 91316139c19b67ee0de96f95cfcbc1677b196943
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508782"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582307"
 ---
 # <a name="channel-completemigration"></a>канал: completeMigration
 

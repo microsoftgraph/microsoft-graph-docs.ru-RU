@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса чата
 description: Чат — это коллекция chatMessages между одним или более участниками.
-author: clearab
+author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f9162e39e1326d89818f959e846ccde5f04350e9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 51980c166652ea2a2d863049e5877b3cc6d632ba
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776818"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582790"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -22,7 +22,7 @@ ms.locfileid: "50776818"
 
 ## <a name="methods"></a>Методы
 
-|  Метод       |  Возвращаемый тип  | Описание|
+|  Метод       |  Возвращаемый тип  | Описание| 
 |:---------------|:--------|:----------|
 |[Создание чата](../api/chat-post.md) | [chat](chat.md) | Создайте новый чат.| 
 |[Получение чата](../api/chat-get.md) | [chat](chat.md) | Чтение свойств и связей чата.| 
@@ -31,6 +31,8 @@ ms.locfileid: "50776818"
 |[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление пользователя в чат.| 
 |[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.| 
 |[Удаление участника чата](../api/chat-delete-members.md)|Нет|Удалите пользователя из чата.|
+|[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получать сообщения в чате. | 
+|[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
 |[Общение в чате между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Получите один-на-один чат между пользователем и приложением |
 |[Список приложений в каталоге](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в чате (и связанном собрании).|
 |[Получить приложение в чате](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получите определенное приложение, установленное в чате (и связанное собрание).|
@@ -61,8 +63,8 @@ ms.locfileid: "50776818"
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Указывает, что чат — это чат 1:1. Размер реестра фиксирован для этого типа чата; не могут быть удалены или добавлены.|
 |group               | 1     | Указывает, что чат — это групповой чат. Размер реестра (не менее двух человек) может быть обновлен для этого типа чата. Участники могут быть удалены или добавлены позже.|
-|собрание             | 2      | Указывает, что чат связан с собранием в Интернете. Этот тип чата создается только в рамках создания собрания в Интернете.|
-|unknownFutureValue  | 3      | Значение Sentinel, чтобы указать будущие значения. |
+|собрание             | 2     | Указывает, что чат связан с собранием в Интернете. Этот тип чата создается только в рамках создания собрания в Интернете.|
+|unknownFutureValue  | 3     | Значение Sentinel, чтобы указать будущие значения. |
 
 ## <a name="relationships"></a>Связи
 

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 6e0b791d253b52ff8c9a6cfca7a3742c579d2ae7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1a9fc690b36ec324391ab67d9e52e27adac38f6d
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948050"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573644"
 ---
 ```csharp
 
@@ -40,7 +40,7 @@ var templateParameters = new List<KeyValuePair>()
 };
 
 await graphClient.Chats["{chat-id}"]
-    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient,null)
+    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
     .Request()
     .PostAsync();
 

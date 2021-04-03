@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 580b32d40be28a64bf1fbd33e16d0f62829d3904
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 8967f939bd0d61f4821375cac3ddfc9861cabe5a
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50634326"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582769"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>тип ресурса chatMessageHostedContent
 
@@ -23,7 +23,7 @@ ms.locfileid: "50634326"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список chatMessageHostedContent](../api/chatmessage-list-chatmessagehostedcontents.md) | [коллекция chatMessageHostedContent](chatmessagehostedcontent.md) | Извлечение списка **chatMessageHostedContent** для сообщения. |
+| [Список chatMessageHostedContent](../api/chatmessage-list-hostedcontents.md) | [коллекция chatMessageHostedContent](chatmessagehostedcontent.md) | Извлечение списка **chatMessageHostedContent** для сообщения. |
 | [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Ознакомьтесь с свойствами и отношениями объекта **chatMessageHostedContent.** |
 
 ## <a name="properties"></a>Свойства
@@ -43,7 +43,7 @@ chatMessageHostedContent происходит из [teamworkHostedContent](teamw
 
 | Имя свойства                     | Тип   | Описание
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | Строка | Только для записи. Представляет временный ИД для размещенного контента при отправке сообщения для ссылки на размещаемую информацию в **отправленных ресурсах chatMessage.**|
+| @microsoft.graph.temporaryId      | string | Только для записи. Представляет временный ИД для размещенного контента при отправке сообщения для ссылки на размещаемую информацию в **отправленных ресурсах chatMessage.**|
 
 ## <a name="relationships"></a>Связи
 

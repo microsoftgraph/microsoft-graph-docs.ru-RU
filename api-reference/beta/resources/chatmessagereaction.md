@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: bc7a3a5cbff2aee1191383ac18128e97075b4b99
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f66b37ee9f9ae69f5f0ccb1f4a2f45f3a3522163
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721623"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582244"
 ---
 # <a name="chatmessagereaction-resource-type"></a>тип ресурса chatMessageReaction
 
@@ -20,7 +20,7 @@ ms.locfileid: "50721623"
 
 Представляет реакцию на [объект chatMessage.](chatmessage.md) 
 
-Объект типа возвращается в рамках API сообщения get channel, как часть `chatMessageReaction` [сущности chatMessage.](chatmessage.md) [](../api/channel-get-message.md)
+Объект типа возвращается в рамках API сообщения get channel, как часть `chatMessageReaction` [сущности chatMessage.](chatmessage.md) [](../api/chatmessage-get.md)
 
 ## <a name="properties"></a>Свойства
 

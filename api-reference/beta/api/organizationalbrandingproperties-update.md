@@ -2,15 +2,15 @@
 title: Обновление организационных свойств
 description: Обновление свойств объекта organizationalBrandingProperties.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: af27dcecac0c6dca57323a602387867148b0f5ba
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b1b6d4b040290fa71dfed43ffe87236b290c1169
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469257"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582720"
 ---
 # <a name="update-organizationalbrandingproperties"></a>Обновление организационных свойств
 
@@ -43,7 +43,7 @@ PUT /organization/{id}/branding
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательное свойство.  |
+| Content-Language  | Locale. Необязательно.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -139,7 +139,7 @@ Content-Type: image/jpeg
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -172,7 +172,7 @@ Content-Language: fr
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -227,7 +227,7 @@ Content-Language: fr
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

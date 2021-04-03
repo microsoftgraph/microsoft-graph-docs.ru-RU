@@ -1,16 +1,16 @@
 ---
 title: Получение чата
 description: Получение одного объекта chat.
-author: bhartono
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4041abae0053de6adebad2ce57c2a9bcb400bbc5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4734cb09b948bb8e900d6a16c660d606e4cbaf88
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775824"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582692"
 ---
 # <a name="get-chat"></a>Получение чата
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже показан пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

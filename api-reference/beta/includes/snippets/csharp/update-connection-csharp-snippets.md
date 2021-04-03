@@ -1,23 +1,23 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 20c94f06e2a24f19da97140aafec09f82bdad8d0
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2bf54783a1512f084e61a694d75a69b3022cf740
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50810369"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573724"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalConnection = new ExternalConnection
+var externalConnection = new Microsoft.Graph.ExternalConnectors.ExternalConnection
 {
     Name = "Contoso HR Service Tickets",
     Description = "Connection to index HR service tickets"
 };
 
-await graphClient.Connections["{externalConnection-id}"]
+await graphClient.Connections["{externalConnectors.externalConnection-id}"]
     .Request()
     .UpdateAsync(externalConnection);
 

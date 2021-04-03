@@ -2,15 +2,15 @@
 title: Get chatMessageHostedContent
 description: Извлечение свойств и связей объекта chatMessageHostedContent.
 localization_priority: Normal
-author: clearab
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56c96c812c1c5f8e8a6d471224bf8faef2733045
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 23a62d1d25c442d4f305f3b68228712c97eff05b
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947783"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582664"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Get chatMessageHostedContent
 
@@ -24,11 +24,21 @@ ms.locfileid: "50947783"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="permissions-for-channel"></a>Разрешения для канала
+
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Для **пользователя или** ресурса **чата:** Chat.Read, Chat.ReadWrite<br/><br/>Для **ресурса** канала: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application| Для **пользователя** или **ресурса чата:** Chat.Read.All, Chat.ReadWrite.All<br/><br/>Для **ресурса** канала: ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Для приложений| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+
+### <a name="permissions-for-chat"></a>Разрешения для чата
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:--------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)| Chat.Read, Chat.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения| Chat.Read.All, Chat.ReadWrite.All|
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -37,12 +47,18 @@ ms.locfileid: "50947783"
 
 ## <a name="http-request"></a>HTTP-запрос
 
+**Получать контент в сообщении канала**
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /chats/{id}/messages/{id}/hostedContents/{id}
-GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
-GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents/{hosted-content-id}
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents/{hosted-content-id}
+```
+
+**Получать контент в сообщении чата**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
+GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -65,58 +81,39 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-hosted-content"></a>Пример 1. Получить хостинг контента
+### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a>Пример 1. Для получения содержимого для сообщения в чате
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent_1"
+  "name": "get_hostedcontentchatmessage_1"
 }-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}
+```http
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
-> [!NOTE]
-> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+> **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessageHostedContent"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages('1615971548136')/hostedContents/$entity",
+    "id": "aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv",
+    "contentBytes": null,
+    "contentType": null
 }
 ```
 
@@ -124,35 +121,17 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent_2"
+  "name": "get_hostedcontentchatmessage_2"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
+```http
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
+
+Ответ содержит bytes для размещенного контента в теле. `content-type` Заглавный заглавник указывает тип содержимого, на который установлено.
 
 <!-- {
   "blockType": "response",
@@ -162,8 +141,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 
 ```http
 HTTP/1.1 200 OK
-Content-type: image/jpeg
-Content-length: 201
+content-type: image/png
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

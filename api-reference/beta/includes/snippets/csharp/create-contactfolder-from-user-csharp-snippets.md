@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4744ca346f9c6ad6b47a49d79f002dfcdb2fb0f0
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f28170ecd224622113170465a4b8a2f90249b44d
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48610005"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509350"
 ---
 ```csharp
 
@@ -13,8 +13,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contactFolder = new ContactFolder
 {
-    ParentFolderId = "parentFolderId-value",
-    DisplayName = "displayName-value"
+    ParentFolderId = "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+    DisplayName = "Important contacts"
 };
 
 await graphClient.Me.ContactFolders

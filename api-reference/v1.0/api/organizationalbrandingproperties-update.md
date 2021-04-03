@@ -2,15 +2,15 @@
 title: Обновление организационных свойств
 description: Обновление свойств объекта organizationalBrandingProperties.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d93b8052dd4db67fc4fa8a4db5bb3669990658b7
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: f6b1d4327ce036f9623d4ad62aa0d872746eb20f
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469467"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582811"
 ---
 # <a name="update-organizationalbrandingproperties"></a>Обновление организационных свойств
 
@@ -41,7 +41,7 @@ PUT /organization/{id}/branding/{property name}
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательное свойство.  |
+| Content-Language  | Locale. Необязательно.  |
 
 ## <a name="request-body"></a>Текст запроса
 

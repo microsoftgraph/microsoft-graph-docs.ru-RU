@@ -1,16 +1,16 @@
 ---
 title: Обновление chatMessage
 description: Обновление свойства policyViolation для chatMessage.
-author: laujan
+author: RamjotSingh
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 06ceb5aae99955062c9d409eb69dac5fdef0d6d9
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: dc4afbd651bb6d4c498240dd49bac56a586446b2
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515613"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582629"
 ---
 # <a name="update-chatmessage"></a>Обновление chatMessage
 
@@ -24,12 +24,14 @@ ms.locfileid: "50515613"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Chat.UpdatePolicyViolation.All для сообщения чата.</br>ChannelMessage.UpdatePolicyViolation.All для сообщения канала. |
+|Для приложений | Chat.UpdatePolicyViolation.All для сообщения чата.</br>ChannelMessage.UpdatePolicyViolation.All для сообщения канала. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,11 +61,9 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
   "blockType": "request",
   "name": "chatMessage.PatchPolicyViolation.All"
 }-->
-
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
-Content-Length: 248
 
 {
   "policyViolation": {
@@ -96,7 +96,6 @@ Content-Length: 248
 ---
 
 
-<!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.

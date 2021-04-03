@@ -1,16 +1,16 @@
 ---
 title: Получение чата
 description: Получение одного объекта chat.
-author: bhartono
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 866bfb702ff80474ee9791a230d14179a82c2faf
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 80f49fea90b332068216fa3afd5fc20d93e1f946
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950179"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582860"
 ---
 # <a name="get-chat"></a>Получение чата
 
@@ -57,7 +57,7 @@ GET /chats/{chat-id}
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [chat](../resources/chat.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 
@@ -88,9 +88,10 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ---
 
 
+---
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+##### <a name="response"></a>Отклик
+Ниже показан пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

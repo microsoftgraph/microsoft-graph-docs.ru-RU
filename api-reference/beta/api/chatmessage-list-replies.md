@@ -1,16 +1,16 @@
 ---
-title: Ответы списка
-description: Извлечение списка объектов chatmessage.
-localization_priority: Normal
+title: Списки сообщений канала
+description: Список всех ответов сообщения в канале группы.
 author: RamjotSingh
+localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 025607cb1b2b9bb33820b8877cbde1d6a1fac844
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6eb0ff547204ef6640a7f826acf656c589f3c4e3
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947819"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582160"
 ---
 # <a name="list-replies"></a>Ответы списка
 
@@ -18,87 +18,63 @@ ms.locfileid: "50947819"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов chatmessage.
+Список всех ответов на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) группы.
+
+В этом методе перечислены только ответы указанного сообщения, если таково. Чтобы получить само сообщение, просто позвоните [получить сообщение канала](chatmessage-get.md).
+
+> **Примечание**. Этот API поддерживает подписку на изменения (создание, обновление и удаление) с использованием [уведомлений об изменениях](../resources/webhooks.md). Это позволяет вызывающим подписаться на изменения и получать их в режиме реального времени. Дополнительные сведения см. в разделе [Получение уведомлений о сообщениях](/graph/teams-changenotifications-chatmessage).
 
 ## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|---------|-------------|
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-|:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Chat.Read, Chat.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Chat.Read.All, Chat.ReadWrite.All |
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /chats/{id}/messages/{id}/replies
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Эта операция не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике. Максимально `$top` допустимые значения — 50.
+Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
 
 ## <a name="request-headers"></a>Заголовки запросов
-
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация | Bearer {code} |
+| Заголовок       | Значение |
+|:---------------|:--------|
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/chatmessage.md) в тексте отклика.
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](../resources/chatmessage.md) в тексте отклика.
-
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+В этом примере указанное сообщение имеет три ответа.
 
-Ниже приведен пример запроса.
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_replies_1"
+  "name": "get_listmessagereplies_1"
 }-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
+```http
+GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616989510408/replies
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-replies-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-replies-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
-
-> [!NOTE]
-> Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -106,48 +82,142 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "replyToId": "replyToId-value",
-      "from": {
-        "application": {
-          "id": "id-value",
-          "displayName": "displayName-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages('1616989510408')/replies",
+    "@odata.count": 3,
+    "value": [
+        {
+            "id": "1616989753153",
+            "replyToId": "1616989510408",
+            "etag": "1616989753153",
+            "messageType": "message",
+            "createdDateTime": "2021-03-29T03:49:13.153Z",
+            "lastModifiedDateTime": "2021-03-29T03:49:13.153Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989753153?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989753153&parentMessageId=1616989510408",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "Reply3"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
         },
-        "device": {
-          "id": "id-value",
-          "displayName": "displayName-value"
+        {
+            "id": "1616989750004",
+            "replyToId": "1616989510408",
+            "etag": "1616989750004",
+            "messageType": "message",
+            "createdDateTime": "2021-03-29T03:49:10.004Z",
+            "lastModifiedDateTime": "2021-03-29T03:49:10.004Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989750004?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989750004&parentMessageId=1616989510408",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "Reply2"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
         },
-        "user": {
-          "id": "id-value",
-          "displayName": "displayName-value"
+        {
+            "id": "1616989747416",
+            "replyToId": "1616989510408",
+            "etag": "1616989747416",
+            "messageType": "message",
+            "createdDateTime": "2021-03-29T03:49:07.416Z",
+            "lastModifiedDateTime": "2021-03-29T03:49:07.416Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989747416?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989747416&parentMessageId=1616989510408",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "Reply1"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
         }
-      },
-      "etag": "etag-value",
-      "messageType": "messageType-value",
-      "createdDateTime": "datetime-value"
-    }
-  ]
+    ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
-  "description": "List replies",
+  "description": "List channel message replies",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
   ]
-}-->
-
-
+}
+-->

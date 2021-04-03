@@ -5,18 +5,18 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d6d549435cd9350f9baf1136fd10f174eb1d0938
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cdbae695cff9469f31d4a2e813312a9608e3bb98
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952552"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509319"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
 Пространство имен: microsoft.graph
 
-Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для [пользователя](user.md) или стандартный календарь для [группы](group.md) Microsoft 365.
+Представляет контейнер для ресурсов [event](event.md). Это может быть календарь для [пользователя](user.md) или стандартный календарь для [группы](group.md) Microsoft 365.
 
 > **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей и календарями групп:
 
