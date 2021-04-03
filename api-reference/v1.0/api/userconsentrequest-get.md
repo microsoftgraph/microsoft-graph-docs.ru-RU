@@ -5,30 +5,30 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6ee2823c4312a3e0fc98f307826efe542ef304ec
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 921600ae2200428eae7ea5ed9b58e3c2c1e5f11c
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469711"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506954"
 ---
-# <a name="get-userconsentrequest"></a><span data-ttu-id="77e1d-103">Get userConsentRequest</span><span class="sxs-lookup"><span data-stu-id="77e1d-103">Get userConsentRequest</span></span>
+# <a name="get-userconsentrequest"></a><span data-ttu-id="98fe0-103">Get userConsentRequest</span><span class="sxs-lookup"><span data-stu-id="98fe0-103">Get userConsentRequest</span></span>
 
-<span data-ttu-id="77e1d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="77e1d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="98fe0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98fe0-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="77e1d-105">Ознакомьтесь с свойствами и отношениями [объекта userConsentRequest.](../resources/userconsentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="77e1d-105">Read the properties and relationships of a [userConsentRequest](../resources/userconsentrequest.md) object.</span></span>
+<span data-ttu-id="98fe0-105">Ознакомьтесь с свойствами и отношениями [объекта userConsentRequest.](../resources/userconsentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="98fe0-105">Read the properties and relationships of a [userConsentRequest](../resources/userconsentrequest.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="77e1d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="77e1d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="98fe0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="98fe0-106">Permissions</span></span>
 
-<span data-ttu-id="77e1d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="77e1d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98fe0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="98fe0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="77e1d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="77e1d-109">Permission type</span></span>|<span data-ttu-id="77e1d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="77e1d-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="98fe0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="98fe0-109">Permission type</span></span>|<span data-ttu-id="98fe0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="98fe0-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="77e1d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="77e1d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="77e1d-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77e1d-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
-|<span data-ttu-id="77e1d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="77e1d-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="77e1d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="77e1d-114">Not supported.</span></span>|
-|<span data-ttu-id="77e1d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="77e1d-115">Application</span></span>|<span data-ttu-id="77e1d-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77e1d-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
+|<span data-ttu-id="98fe0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="98fe0-111">Delegated (work or school account)</span></span>|<span data-ttu-id="98fe0-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98fe0-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
+|<span data-ttu-id="98fe0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="98fe0-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="98fe0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="98fe0-114">Not supported.</span></span>|
+|<span data-ttu-id="98fe0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="98fe0-115">Application</span></span>|<span data-ttu-id="98fe0-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98fe0-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="77e1d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="77e1d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98fe0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="98fe0-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,28 +38,30 @@ ms.locfileid: "51469711"
 GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/userConsentRequests/{userconsentrequest-id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="77e1d-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="77e1d-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="98fe0-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="98fe0-118">Optional query parameters</span></span>
 
-<span data-ttu-id="77e1d-119">Этот метод поддерживает параметр  `$select` запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="77e1d-119">This method supports the `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="77e1d-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="77e1d-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="98fe0-119">Этот метод поддерживает параметр  `$select` запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="98fe0-119">This method supports the `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="98fe0-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="98fe0-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="77e1d-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="77e1d-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="98fe0-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="98fe0-121">Request headers</span></span>
 
-|<span data-ttu-id="77e1d-122">Имя</span><span class="sxs-lookup"><span data-stu-id="77e1d-122">Name</span></span>|<span data-ttu-id="77e1d-123">Описание</span><span class="sxs-lookup"><span data-stu-id="77e1d-123">Description</span></span>|
+|<span data-ttu-id="98fe0-122">Имя</span><span class="sxs-lookup"><span data-stu-id="98fe0-122">Name</span></span>|<span data-ttu-id="98fe0-123">Описание</span><span class="sxs-lookup"><span data-stu-id="98fe0-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="77e1d-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="77e1d-124">Authorization</span></span>|<span data-ttu-id="77e1d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="77e1d-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="98fe0-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="98fe0-124">Authorization</span></span>|<span data-ttu-id="98fe0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="98fe0-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="77e1d-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="77e1d-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="98fe0-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="98fe0-127">Request body</span></span>
 
-<span data-ttu-id="77e1d-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="77e1d-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="98fe0-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="98fe0-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="77e1d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="77e1d-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98fe0-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="98fe0-129">Response</span></span>
 
-<span data-ttu-id="77e1d-130">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="77e1d-130">If successful, this method returns a `200 OK` response code and a [userConsentRequest](../resources/userconsentrequest.md) object in the response body.</span></span>
+<span data-ttu-id="98fe0-130">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="98fe0-130">If successful, this method returns a `200 OK` response code and a [userConsentRequest](../resources/userconsentrequest.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="77e1d-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="77e1d-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="98fe0-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="98fe0-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="77e1d-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="77e1d-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="98fe0-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="98fe0-132">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="98fe0-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="98fe0-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_userconsentrequest"
@@ -68,10 +70,28 @@ GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/use
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/acef2660-d194-4943-b927-4fe4fb5cb7e3
 ```
+# <a name="c"></a>[<span data-ttu-id="98fe0-134">C#</span><span class="sxs-lookup"><span data-stu-id="98fe0-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userconsentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="77e1d-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="77e1d-133">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="98fe0-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98fe0-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userconsentrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="77e1d-134">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="77e1d-134">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="98fe0-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="98fe0-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userconsentrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="98fe0-137">Java</span><span class="sxs-lookup"><span data-stu-id="98fe0-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-userconsentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="98fe0-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="98fe0-138">Response</span></span>
+
+<span data-ttu-id="98fe0-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="98fe0-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

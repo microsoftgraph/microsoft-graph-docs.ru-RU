@@ -5,100 +5,100 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 186df4e81f5958501d7defe8b25e1ea092ab2971
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 871d990342807a9742ce9125c62e730fec39cd10
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368091"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507954"
 ---
-# <a name="create-group"></a><span data-ttu-id="bb3bb-103">Создание группы</span><span class="sxs-lookup"><span data-stu-id="bb3bb-103">Create group</span></span>
+# <a name="create-group"></a><span data-ttu-id="642e5-103">Создание группы</span><span class="sxs-lookup"><span data-stu-id="642e5-103">Create group</span></span>
 
-<span data-ttu-id="bb3bb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bb3bb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="642e5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="642e5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bb3bb-105">Создание [группы](../resources/group.md) согласно инструкциям в тексте запроса.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-105">Create a new [group](../resources/group.md) as specified in the request body.</span></span> <span data-ttu-id="bb3bb-106">Можно создать одну из следующих групп:</span><span class="sxs-lookup"><span data-stu-id="bb3bb-106">You can create one of the following groups:</span></span>
+<span data-ttu-id="642e5-105">Создание [группы](../resources/group.md) согласно инструкциям в тексте запроса.</span><span class="sxs-lookup"><span data-stu-id="642e5-105">Create a new [group](../resources/group.md) as specified in the request body.</span></span> <span data-ttu-id="642e5-106">Можно создать одну из следующих групп:</span><span class="sxs-lookup"><span data-stu-id="642e5-106">You can create one of the following groups:</span></span>
 
-* <span data-ttu-id="bb3bb-107">Группа Microsoft 365 (единая группа)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-107">Microsoft 365 group (unified group)</span></span>
-* <span data-ttu-id="bb3bb-108">Группа безопасности</span><span class="sxs-lookup"><span data-stu-id="bb3bb-108">Security group</span></span>
+* <span data-ttu-id="642e5-107">Группа Microsoft 365 (единая группа)</span><span class="sxs-lookup"><span data-stu-id="642e5-107">Microsoft 365 group (unified group)</span></span>
+* <span data-ttu-id="642e5-108">Группа безопасности</span><span class="sxs-lookup"><span data-stu-id="642e5-108">Security group</span></span>
 
-<span data-ttu-id="bb3bb-109">Эта операция по умолчанию возвращает только подмножество свойств для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-109">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="bb3bb-110">Эти свойства по умолчанию указаны в разделе [Свойства](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="bb3bb-110">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="bb3bb-111">Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре запроса OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-111">To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.</span></span>
+<span data-ttu-id="642e5-109">Эта операция по умолчанию возвращает только подмножество свойств для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="642e5-109">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="642e5-110">Эти свойства по умолчанию указаны в разделе [Свойства](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="642e5-110">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="642e5-111">Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре запроса OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="642e5-111">To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.</span></span>
 
-><span data-ttu-id="bb3bb-112">**Примечание.** Чтобы создать [команду](../resources/team.md), сначала создайте группу и добавьте команду в нее, см. раздел [Создание команды](../api/team-put-teams.md).</span><span class="sxs-lookup"><span data-stu-id="bb3bb-112">**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).</span></span>
+><span data-ttu-id="642e5-112">**Примечание.** Чтобы создать [команду](../resources/team.md), сначала создайте группу и добавьте команду в нее, см. раздел [Создание команды](../api/team-put-teams.md).</span><span class="sxs-lookup"><span data-stu-id="642e5-112">**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bb3bb-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bb3bb-113">Permissions</span></span>
-<span data-ttu-id="bb3bb-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bb3bb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="642e5-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="642e5-113">Permissions</span></span>
+<span data-ttu-id="642e5-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="642e5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bb3bb-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bb3bb-116">Permission type</span></span>      | <span data-ttu-id="bb3bb-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="642e5-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="642e5-116">Permission type</span></span>      | <span data-ttu-id="642e5-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="642e5-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bb3bb-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-118">Delegated (work or school account)</span></span> | <span data-ttu-id="bb3bb-119">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bb3bb-119">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
-|<span data-ttu-id="bb3bb-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bb3bb-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-121">Not supported.</span></span>    |
-|<span data-ttu-id="bb3bb-122">Приложение</span><span class="sxs-lookup"><span data-stu-id="bb3bb-122">Application</span></span> | <span data-ttu-id="bb3bb-123">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bb3bb-123">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="642e5-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="642e5-118">Delegated (work or school account)</span></span> | <span data-ttu-id="642e5-119">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="642e5-119">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
+|<span data-ttu-id="642e5-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="642e5-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="642e5-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="642e5-121">Not supported.</span></span>    |
+|<span data-ttu-id="642e5-122">Приложение</span><span class="sxs-lookup"><span data-stu-id="642e5-122">Application</span></span> | <span data-ttu-id="642e5-123">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="642e5-123">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bb3bb-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bb3bb-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="642e5-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="642e5-124">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bb3bb-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bb3bb-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="642e5-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="642e5-125">Request headers</span></span>
 
-| <span data-ttu-id="bb3bb-126">Имя</span><span class="sxs-lookup"><span data-stu-id="bb3bb-126">Name</span></span>       | <span data-ttu-id="bb3bb-127">Тип</span><span class="sxs-lookup"><span data-stu-id="bb3bb-127">Type</span></span> | <span data-ttu-id="bb3bb-128">Описание</span><span class="sxs-lookup"><span data-stu-id="bb3bb-128">Description</span></span>|
+| <span data-ttu-id="642e5-126">Имя</span><span class="sxs-lookup"><span data-stu-id="642e5-126">Name</span></span>       | <span data-ttu-id="642e5-127">Тип</span><span class="sxs-lookup"><span data-stu-id="642e5-127">Type</span></span> | <span data-ttu-id="642e5-128">Описание</span><span class="sxs-lookup"><span data-stu-id="642e5-128">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="bb3bb-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="bb3bb-129">Authorization</span></span>  | <span data-ttu-id="bb3bb-130">string</span><span class="sxs-lookup"><span data-stu-id="bb3bb-130">string</span></span>  | <span data-ttu-id="bb3bb-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="642e5-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="642e5-129">Authorization</span></span>  | <span data-ttu-id="642e5-130">string</span><span class="sxs-lookup"><span data-stu-id="642e5-130">string</span></span>  | <span data-ttu-id="642e5-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="642e5-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bb3bb-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bb3bb-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="642e5-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="642e5-133">Request body</span></span>
 
-<span data-ttu-id="bb3bb-134">В приведенной ниже таблице показаны свойства ресурса [group](../resources/group.md), которые необходимо указать при создании группы.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-134">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
+<span data-ttu-id="642e5-134">В приведенной ниже таблице показаны свойства ресурса [group](../resources/group.md), которые необходимо указать при создании группы.</span><span class="sxs-lookup"><span data-stu-id="642e5-134">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
 
-| <span data-ttu-id="bb3bb-135">Свойство</span><span class="sxs-lookup"><span data-stu-id="bb3bb-135">Property</span></span> | <span data-ttu-id="bb3bb-136">Тип</span><span class="sxs-lookup"><span data-stu-id="bb3bb-136">Type</span></span> | <span data-ttu-id="bb3bb-137">Описание</span><span class="sxs-lookup"><span data-stu-id="bb3bb-137">Description</span></span>|
+| <span data-ttu-id="642e5-135">Свойство</span><span class="sxs-lookup"><span data-stu-id="642e5-135">Property</span></span> | <span data-ttu-id="642e5-136">Тип</span><span class="sxs-lookup"><span data-stu-id="642e5-136">Type</span></span> | <span data-ttu-id="642e5-137">Описание</span><span class="sxs-lookup"><span data-stu-id="642e5-137">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="bb3bb-138">displayName</span><span class="sxs-lookup"><span data-stu-id="bb3bb-138">displayName</span></span> | <span data-ttu-id="bb3bb-139">string</span><span class="sxs-lookup"><span data-stu-id="bb3bb-139">string</span></span> | <span data-ttu-id="bb3bb-140">Имя, которое следует отобразить в адресной книге для группы.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-140">The name to display in the address book for the group.</span></span> <span data-ttu-id="bb3bb-141">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-141">Required.</span></span> |
-| <span data-ttu-id="bb3bb-142">description</span><span class="sxs-lookup"><span data-stu-id="bb3bb-142">description</span></span> | <span data-ttu-id="bb3bb-143">строка</span><span class="sxs-lookup"><span data-stu-id="bb3bb-143">string</span></span> | <span data-ttu-id="bb3bb-144">Описание группы.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-144">A description for the group.</span></span> <span data-ttu-id="bb3bb-145">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-145">Optional.</span></span> |
-| <span data-ttu-id="bb3bb-146">isAssignableToRole</span><span class="sxs-lookup"><span data-stu-id="bb3bb-146">isAssignableToRole</span></span> | <span data-ttu-id="bb3bb-147">Логическое</span><span class="sxs-lookup"><span data-stu-id="bb3bb-147">Boolean</span></span> | <span data-ttu-id="bb3bb-148">Значение **true**, чтобы группу можно было назначить роли Azure AD.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-148">Set to **true** to enable the group to be assigned to an Azure AD role.</span></span> <span data-ttu-id="bb3bb-149">Только администратор привилегированных ролей и глобальный администратор может настроить значение этого свойства.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-149">Only Privileged Role Administrator and Global Administrator can set the value of this property.</span></span> <span data-ttu-id="bb3bb-150">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-150">Optional.</span></span> |
-| <span data-ttu-id="bb3bb-151">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="bb3bb-151">mailEnabled</span></span> | <span data-ttu-id="bb3bb-152">boolean</span><span class="sxs-lookup"><span data-stu-id="bb3bb-152">boolean</span></span> | <span data-ttu-id="bb3bb-153">Установите значение **true** для групп, поддерживающих почту.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-153">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="bb3bb-154">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-154">Required.</span></span> |
-| <span data-ttu-id="bb3bb-155">mailNickname</span><span class="sxs-lookup"><span data-stu-id="bb3bb-155">mailNickname</span></span> | <span data-ttu-id="bb3bb-156">string</span><span class="sxs-lookup"><span data-stu-id="bb3bb-156">string</span></span> | <span data-ttu-id="bb3bb-157">Почтовый псевдоним для группы.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-157">The mail alias for the group.</span></span> <span data-ttu-id="bb3bb-158">Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-158">These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`.</span></span> <span data-ttu-id="bb3bb-159">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-159">Required.</span></span> |
-| <span data-ttu-id="bb3bb-160">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="bb3bb-160">securityEnabled</span></span> | <span data-ttu-id="bb3bb-161">boolean</span><span class="sxs-lookup"><span data-stu-id="bb3bb-161">boolean</span></span> | <span data-ttu-id="bb3bb-162">Значение **true** для групп безопасности, включая группы Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-162">Set to **true** for security-enabled groups, including Microsoft 365 groups.</span></span> <span data-ttu-id="bb3bb-163">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-163">Required.</span></span> |
-| <span data-ttu-id="bb3bb-164">owners</span><span class="sxs-lookup"><span data-stu-id="bb3bb-164">owners</span></span> | <span data-ttu-id="bb3bb-165">Коллекция [directoryObject](../resources/directoryobject.md)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-165">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="bb3bb-166">Это свойство представляет владельцев группы на момент создания.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-166">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="bb3bb-167">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-167">Optional.</span></span> |
-| <span data-ttu-id="bb3bb-168">members</span><span class="sxs-lookup"><span data-stu-id="bb3bb-168">members</span></span> | <span data-ttu-id="bb3bb-169">Коллекция [directoryObject](../resources/directoryobject.md)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-169">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="bb3bb-170">Это свойство представляет участников группы на момент создания.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-170">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="bb3bb-171">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-171">Optional.</span></span> |
-|<span data-ttu-id="bb3bb-172">visibility</span><span class="sxs-lookup"><span data-stu-id="bb3bb-172">visibility</span></span>|<span data-ttu-id="bb3bb-173">String</span><span class="sxs-lookup"><span data-stu-id="bb3bb-173">String</span></span>|<span data-ttu-id="bb3bb-174">Определяет видимость группы Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-174">Specifies the visibility of a Microsoft 365 group.</span></span> <span data-ttu-id="bb3bb-175">Возможные значения: `Private`, `Public`, `HiddenMembership` или пустое значение (обрабатывается как `Public`).</span><span class="sxs-lookup"><span data-stu-id="bb3bb-175">Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).</span></span>|
+| <span data-ttu-id="642e5-138">displayName</span><span class="sxs-lookup"><span data-stu-id="642e5-138">displayName</span></span> | <span data-ttu-id="642e5-139">string</span><span class="sxs-lookup"><span data-stu-id="642e5-139">string</span></span> | <span data-ttu-id="642e5-140">Имя, которое следует отобразить в адресной книге для группы.</span><span class="sxs-lookup"><span data-stu-id="642e5-140">The name to display in the address book for the group.</span></span> <span data-ttu-id="642e5-141">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="642e5-141">Required.</span></span> |
+| <span data-ttu-id="642e5-142">description</span><span class="sxs-lookup"><span data-stu-id="642e5-142">description</span></span> | <span data-ttu-id="642e5-143">строка</span><span class="sxs-lookup"><span data-stu-id="642e5-143">string</span></span> | <span data-ttu-id="642e5-144">Описание группы.</span><span class="sxs-lookup"><span data-stu-id="642e5-144">A description for the group.</span></span> <span data-ttu-id="642e5-145">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="642e5-145">Optional.</span></span> |
+| <span data-ttu-id="642e5-146">isAssignableToRole</span><span class="sxs-lookup"><span data-stu-id="642e5-146">isAssignableToRole</span></span> | <span data-ttu-id="642e5-147">Логическое</span><span class="sxs-lookup"><span data-stu-id="642e5-147">Boolean</span></span> | <span data-ttu-id="642e5-148">Значение **true**, чтобы группу можно было назначить роли Azure AD.</span><span class="sxs-lookup"><span data-stu-id="642e5-148">Set to **true** to enable the group to be assigned to an Azure AD role.</span></span> <span data-ttu-id="642e5-149">Только администратор привилегированных ролей и глобальный администратор может настроить значение этого свойства.</span><span class="sxs-lookup"><span data-stu-id="642e5-149">Only Privileged Role Administrator and Global Administrator can set the value of this property.</span></span> <span data-ttu-id="642e5-150">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="642e5-150">Optional.</span></span> |
+| <span data-ttu-id="642e5-151">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="642e5-151">mailEnabled</span></span> | <span data-ttu-id="642e5-152">boolean</span><span class="sxs-lookup"><span data-stu-id="642e5-152">boolean</span></span> | <span data-ttu-id="642e5-153">Установите значение **true** для групп, поддерживающих почту.</span><span class="sxs-lookup"><span data-stu-id="642e5-153">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="642e5-154">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="642e5-154">Required.</span></span> |
+| <span data-ttu-id="642e5-155">mailNickname</span><span class="sxs-lookup"><span data-stu-id="642e5-155">mailNickname</span></span> | <span data-ttu-id="642e5-156">string</span><span class="sxs-lookup"><span data-stu-id="642e5-156">string</span></span> | <span data-ttu-id="642e5-157">Почтовый псевдоним для группы.</span><span class="sxs-lookup"><span data-stu-id="642e5-157">The mail alias for the group.</span></span> <span data-ttu-id="642e5-158">Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`.</span><span class="sxs-lookup"><span data-stu-id="642e5-158">These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`.</span></span> <span data-ttu-id="642e5-159">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="642e5-159">Required.</span></span> |
+| <span data-ttu-id="642e5-160">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="642e5-160">securityEnabled</span></span> | <span data-ttu-id="642e5-161">boolean</span><span class="sxs-lookup"><span data-stu-id="642e5-161">boolean</span></span> | <span data-ttu-id="642e5-162">Значение **true** для групп безопасности, включая группы Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="642e5-162">Set to **true** for security-enabled groups, including Microsoft 365 groups.</span></span> <span data-ttu-id="642e5-163">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="642e5-163">Required.</span></span> |
+| <span data-ttu-id="642e5-164">owners</span><span class="sxs-lookup"><span data-stu-id="642e5-164">owners</span></span> | <span data-ttu-id="642e5-165">Коллекция [directoryObject](../resources/directoryobject.md)</span><span class="sxs-lookup"><span data-stu-id="642e5-165">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="642e5-166">Это свойство представляет владельцев группы на момент создания.</span><span class="sxs-lookup"><span data-stu-id="642e5-166">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="642e5-167">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="642e5-167">Optional.</span></span> |
+| <span data-ttu-id="642e5-168">members</span><span class="sxs-lookup"><span data-stu-id="642e5-168">members</span></span> | <span data-ttu-id="642e5-169">Коллекция [directoryObject](../resources/directoryobject.md)</span><span class="sxs-lookup"><span data-stu-id="642e5-169">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="642e5-170">Это свойство представляет участников группы на момент создания.</span><span class="sxs-lookup"><span data-stu-id="642e5-170">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="642e5-171">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="642e5-171">Optional.</span></span> |
+|<span data-ttu-id="642e5-172">visibility</span><span class="sxs-lookup"><span data-stu-id="642e5-172">visibility</span></span>|<span data-ttu-id="642e5-173">String</span><span class="sxs-lookup"><span data-stu-id="642e5-173">String</span></span>|<span data-ttu-id="642e5-174">Определяет видимость группы Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="642e5-174">Specifies the visibility of a Microsoft 365 group.</span></span> <span data-ttu-id="642e5-175">Возможные значения: `Private`, `Public`, `HiddenMembership` или пустое значение (обрабатывается как `Public`).</span><span class="sxs-lookup"><span data-stu-id="642e5-175">Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).</span></span>|
 
-> <span data-ttu-id="bb3bb-176">**Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-176">**Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.</span></span>
+> <span data-ttu-id="642e5-176">**Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.</span><span class="sxs-lookup"><span data-stu-id="642e5-176">**Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.</span></span>
 
-<span data-ttu-id="bb3bb-177">Так как ресурс **group** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к группе при ее создании.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-177">Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.</span></span>
+<span data-ttu-id="642e5-177">Так как ресурс **group** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к группе при ее создании.</span><span class="sxs-lookup"><span data-stu-id="642e5-177">Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.</span></span>
 
-><span data-ttu-id="bb3bb-178">**Примечание:** создание группы с помощью разрешения приложения Group.Create без указания владельцев анонимно создает группу, которая не будет изменяться.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-178">**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable.</span></span> <span data-ttu-id="bb3bb-179">Вы можете использовать операцию `POST` и добавить владельцев в группу при ее создании, чтобы указать владельцев, которые могут изменять группу.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-179">You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.</span></span>
+><span data-ttu-id="642e5-178">**Примечание:** создание группы с помощью разрешения приложения Group.Create без указания владельцев анонимно создает группу, которая не будет изменяться.</span><span class="sxs-lookup"><span data-stu-id="642e5-178">**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable.</span></span> <span data-ttu-id="642e5-179">Вы можете использовать операцию `POST` и добавить владельцев в группу при ее создании, чтобы указать владельцев, которые могут изменять группу.</span><span class="sxs-lookup"><span data-stu-id="642e5-179">You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.</span></span>
 
-> <span data-ttu-id="bb3bb-180">Создание группы Microsoft 365 программным путем с контекстом только для приложений, а также без указания владельцев будет анонимным.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-180">Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously.</span></span> <span data-ttu-id="bb3bb-181">Это может привести к тому, что связанный с ней сайт SharePoint Online не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-181">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
+> <span data-ttu-id="642e5-180">Создание группы Microsoft 365 программным путем с контекстом только для приложений, а также без указания владельцев будет анонимным.</span><span class="sxs-lookup"><span data-stu-id="642e5-180">Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously.</span></span> <span data-ttu-id="642e5-181">Это может привести к тому, что связанный с ней сайт SharePoint Online не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.</span><span class="sxs-lookup"><span data-stu-id="642e5-181">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
 
-<span data-ttu-id="bb3bb-182">При необходимости укажите другие записываемые свойства для своей группы.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-182">Specify other writable properties as necessary for your group.</span></span> <span data-ttu-id="bb3bb-183">Дополнительные сведения см. в таблице свойств ресурса [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="bb3bb-183">For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
+<span data-ttu-id="642e5-182">При необходимости укажите другие записываемые свойства для своей группы.</span><span class="sxs-lookup"><span data-stu-id="642e5-182">Specify other writable properties as necessary for your group.</span></span> <span data-ttu-id="642e5-183">Дополнительные сведения см. в таблице свойств ресурса [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="642e5-183">For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
 
-### <a name="grouptypes-options"></a><span data-ttu-id="bb3bb-184">Параметры groupTypes</span><span class="sxs-lookup"><span data-stu-id="bb3bb-184">groupTypes options</span></span>
+### <a name="grouptypes-options"></a><span data-ttu-id="642e5-184">Параметры groupTypes</span><span class="sxs-lookup"><span data-stu-id="642e5-184">groupTypes options</span></span>
 
-<span data-ttu-id="bb3bb-185">Свойство **groupTypes** используется для управления типом группы и участием в ней, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-185">Use the **groupTypes** property to control the type of group and its membership, as shown.</span></span>
+<span data-ttu-id="642e5-185">Свойство **groupTypes** используется для управления типом группы и участием в ней, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="642e5-185">Use the **groupTypes** property to control the type of group and its membership, as shown.</span></span>
 
-| <span data-ttu-id="bb3bb-186">Тип группы</span><span class="sxs-lookup"><span data-stu-id="bb3bb-186">Type of group</span></span> | <span data-ttu-id="bb3bb-187">Назначенное участие</span><span class="sxs-lookup"><span data-stu-id="bb3bb-187">Assigned membership</span></span> | <span data-ttu-id="bb3bb-188">Динамическое членство</span><span class="sxs-lookup"><span data-stu-id="bb3bb-188">Dynamic membership</span></span> |
+| <span data-ttu-id="642e5-186">Тип группы</span><span class="sxs-lookup"><span data-stu-id="642e5-186">Type of group</span></span> | <span data-ttu-id="642e5-187">Назначенное участие</span><span class="sxs-lookup"><span data-stu-id="642e5-187">Assigned membership</span></span> | <span data-ttu-id="642e5-188">Динамическое членство</span><span class="sxs-lookup"><span data-stu-id="642e5-188">Dynamic membership</span></span> |
 |:--------------|:------------------------|:---------------|
-| <span data-ttu-id="bb3bb-189">Microsoft 365 (как единая группа)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-189">Microsoft 365 (aka unified group)</span></span>| `["Unified"]` | `["Unified","DynamicMembership"]`
-| <span data-ttu-id="bb3bb-190">Динамический</span><span class="sxs-lookup"><span data-stu-id="bb3bb-190">Dynamic</span></span> | <span data-ttu-id="bb3bb-191">`[]` (_null_)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-191">`[]` (_null_)</span></span> | `["DynamicMembership"]`|
+| <span data-ttu-id="642e5-189">Microsoft 365 (как единая группа)</span><span class="sxs-lookup"><span data-stu-id="642e5-189">Microsoft 365 (aka unified group)</span></span>| `["Unified"]` | `["Unified","DynamicMembership"]`
+| <span data-ttu-id="642e5-190">Динамический</span><span class="sxs-lookup"><span data-stu-id="642e5-190">Dynamic</span></span> | <span data-ttu-id="642e5-191">`[]` (_null_)</span><span class="sxs-lookup"><span data-stu-id="642e5-191">`[]` (_null_)</span></span> | `["DynamicMembership"]`|
 
-## <a name="response"></a><span data-ttu-id="bb3bb-192">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb3bb-192">Response</span></span>
+## <a name="response"></a><span data-ttu-id="642e5-192">Отклик</span><span class="sxs-lookup"><span data-stu-id="642e5-192">Response</span></span>
 
-<span data-ttu-id="bb3bb-193">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [group](../resources/group.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-193">If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="bb3bb-194">Отклик включает в себя только свойства по умолчанию для группы.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-194">The response includes only the default properties of the group.</span></span>
+<span data-ttu-id="642e5-193">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [group](../resources/group.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="642e5-193">If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="642e5-194">Отклик включает в себя только свойства по умолчанию для группы.</span><span class="sxs-lookup"><span data-stu-id="642e5-194">The response includes only the default properties of the group.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bb3bb-195">Примеры</span><span class="sxs-lookup"><span data-stu-id="bb3bb-195">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="642e5-195">Примеры</span><span class="sxs-lookup"><span data-stu-id="642e5-195">Examples</span></span>
 
-### <a name="example-1-create-a-microsoft-365-group"></a><span data-ttu-id="bb3bb-196">Пример 1. Создание группы Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="bb3bb-196">Example 1: Create a Microsoft 365 group</span></span>
+### <a name="example-1-create-a-microsoft-365-group"></a><span data-ttu-id="642e5-196">Пример 1. Создание группы Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="642e5-196">Example 1: Create a Microsoft 365 group</span></span>
 
-<span data-ttu-id="bb3bb-197">В следующем примере создается группа Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-197">The following example creates a Microsoft 365 group.</span></span>
+<span data-ttu-id="642e5-197">В следующем примере создается группа Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="642e5-197">The following example creates a Microsoft 365 group.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb3bb-198">Запрос</span><span class="sxs-lookup"><span data-stu-id="bb3bb-198">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="642e5-198">Запрос</span><span class="sxs-lookup"><span data-stu-id="642e5-198">Request</span></span>
 
-<span data-ttu-id="bb3bb-199">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-199">The following is an example of the request.</span></span>
+<span data-ttu-id="642e5-199">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="642e5-199">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb3bb-200">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb3bb-200">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="642e5-200">HTTP</span><span class="sxs-lookup"><span data-stu-id="642e5-200">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -119,30 +119,30 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb3bb-201">C#</span><span class="sxs-lookup"><span data-stu-id="bb3bb-201">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="642e5-201">C#</span><span class="sxs-lookup"><span data-stu-id="642e5-201">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb3bb-202">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb3bb-202">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="642e5-202">JavaScript</span><span class="sxs-lookup"><span data-stu-id="642e5-202">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb3bb-203">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb3bb-203">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="642e5-203">Objective-C</span><span class="sxs-lookup"><span data-stu-id="642e5-203">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="bb3bb-204">Java</span><span class="sxs-lookup"><span data-stu-id="bb3bb-204">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="642e5-204">Java</span><span class="sxs-lookup"><span data-stu-id="642e5-204">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bb3bb-205">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb3bb-205">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="642e5-205">Отклик</span><span class="sxs-lookup"><span data-stu-id="642e5-205">Response</span></span>
 
-<span data-ttu-id="bb3bb-206">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-206">The following is an example of the response.</span></span>
+<span data-ttu-id="642e5-206">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="642e5-206">The following is an example of the response.</span></span>
 
-><span data-ttu-id="bb3bb-207">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-207">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bb3bb-208">В результате реального вызова возвращаются все свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-208">All the default properties are returned from an actual call.</span></span>
+><span data-ttu-id="642e5-207">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="642e5-207">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="642e5-208">В результате реального вызова возвращаются все свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="642e5-208">All the default properties are returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -191,16 +191,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-security-group-with-an-owner-and-members"></a><span data-ttu-id="bb3bb-209">Пример 2. Создание группы безопасности с владельцем и участниками</span><span class="sxs-lookup"><span data-stu-id="bb3bb-209">Example 2: Create a security group with an owner and members</span></span>
+### <a name="example-2-create-a-security-group-with-an-owner-and-members"></a><span data-ttu-id="642e5-209">Пример 2. Создание группы безопасности с владельцем и участниками</span><span class="sxs-lookup"><span data-stu-id="642e5-209">Example 2: Create a security group with an owner and members</span></span>
 
-<span data-ttu-id="bb3bb-210">В следующем примере создается группа безопасности с указанным владельцем и участниками.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-210">The following example creates a security group with an owner and members specified.</span></span> <span data-ttu-id="bb3bb-211">Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-211">Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation.</span></span> <span data-ttu-id="bb3bb-212">Позже вы можете добавить дополнительных участников с помощью API [добавления участников](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) или пакетной обработки JSON.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-212">You can subsequently add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API or JSON batching.</span></span>
+<span data-ttu-id="642e5-210">В следующем примере создается группа безопасности с указанным владельцем и участниками.</span><span class="sxs-lookup"><span data-stu-id="642e5-210">The following example creates a security group with an owner and members specified.</span></span> <span data-ttu-id="642e5-211">Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников.</span><span class="sxs-lookup"><span data-stu-id="642e5-211">Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation.</span></span> <span data-ttu-id="642e5-212">Позже вы можете добавить дополнительных участников с помощью API [добавления участников](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) или пакетной обработки JSON.</span><span class="sxs-lookup"><span data-stu-id="642e5-212">You can subsequently add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API or JSON batching.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb3bb-213">Запрос</span><span class="sxs-lookup"><span data-stu-id="bb3bb-213">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="642e5-213">Запрос</span><span class="sxs-lookup"><span data-stu-id="642e5-213">Request</span></span>
 
-<span data-ttu-id="bb3bb-214">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-214">The following is an example of the request.</span></span>
+<span data-ttu-id="642e5-214">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="642e5-214">The following is an example of the request.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
 ``` http
@@ -225,11 +225,11 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="bb3bb-215">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb3bb-215">Response</span></span> 
+#### <a name="response"></a><span data-ttu-id="642e5-215">Отклик</span><span class="sxs-lookup"><span data-stu-id="642e5-215">Response</span></span> 
 
-<span data-ttu-id="bb3bb-216">Ниже представлен пример успешного отклика.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-216">The following is an example of a successful response.</span></span> <span data-ttu-id="bb3bb-217">Он включает только свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-217">It includes only default properties.</span></span> <span data-ttu-id="bb3bb-218">Вы можете получить свойства навигации **owners** или **members** группы, чтобы проверить владельца или участников.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-218">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
+<span data-ttu-id="642e5-216">Ниже представлен пример успешного отклика.</span><span class="sxs-lookup"><span data-stu-id="642e5-216">The following is an example of a successful response.</span></span> <span data-ttu-id="642e5-217">Он включает только свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="642e5-217">It includes only default properties.</span></span> <span data-ttu-id="642e5-218">Вы можете получить свойства навигации **owners** или **members** группы, чтобы проверить владельца или участников.</span><span class="sxs-lookup"><span data-stu-id="642e5-218">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
 
-><span data-ttu-id="bb3bb-219">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-219">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bb3bb-220">В результате реального вызова возвращаются все свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-220">All the default properties are returned from an actual call.</span></span>
+><span data-ttu-id="642e5-219">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="642e5-219">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="642e5-220">В результате реального вызова возвращаются все свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="642e5-220">All the default properties are returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -277,14 +277,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a><span data-ttu-id="bb3bb-221">Пример 3. Создание группы, которую можно назначить роли Azure AD</span><span class="sxs-lookup"><span data-stu-id="bb3bb-221">Example 3: Create a group that can be assigned to an Azure AD role</span></span>
+### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a><span data-ttu-id="642e5-221">Пример 3. Создание группы, которую можно назначить роли Azure AD</span><span class="sxs-lookup"><span data-stu-id="642e5-221">Example 3: Create a group that can be assigned to an Azure AD role</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb3bb-222">Запрос</span><span class="sxs-lookup"><span data-stu-id="bb3bb-222">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="642e5-222">Запрос</span><span class="sxs-lookup"><span data-stu-id="642e5-222">Request</span></span>
 
-<span data-ttu-id="bb3bb-223">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-223">The following is an example of the request.</span></span>
+<span data-ttu-id="642e5-223">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="642e5-223">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="bb3bb-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb3bb-224">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="642e5-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="642e5-224">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_role_enabled_group"
@@ -306,30 +306,30 @@ Content-Type: application/json
   "visibility" : "Private"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb3bb-225">C#</span><span class="sxs-lookup"><span data-stu-id="bb3bb-225">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="642e5-225">C#</span><span class="sxs-lookup"><span data-stu-id="642e5-225">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-role-enabled-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb3bb-226">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb3bb-226">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="642e5-226">JavaScript</span><span class="sxs-lookup"><span data-stu-id="642e5-226">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-role-enabled-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb3bb-227">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb3bb-227">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="642e5-227">Objective-C</span><span class="sxs-lookup"><span data-stu-id="642e5-227">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-role-enabled-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="bb3bb-228">Java</span><span class="sxs-lookup"><span data-stu-id="bb3bb-228">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="642e5-228">Java</span><span class="sxs-lookup"><span data-stu-id="642e5-228">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-role-enabled-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-> <span data-ttu-id="bb3bb-229">**Примечание.** Свойства **visibility** и **groupTypes** необязательны для создания, но заполняются автоматически этими значениями.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-229">**Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values.</span></span> <span data-ttu-id="bb3bb-230">Группа, свойству **isAssignableToRole** которой присвоено значение `true`, не может относиться к типу с динамическим членством.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-230">A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type.</span></span> <span data-ttu-id="bb3bb-231">Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).</span><span class="sxs-lookup"><span data-stu-id="bb3bb-231">For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).</span></span>
+> <span data-ttu-id="642e5-229">**Примечание.** Свойства **visibility** и **groupTypes** необязательны для создания, но заполняются автоматически этими значениями.</span><span class="sxs-lookup"><span data-stu-id="642e5-229">**Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values.</span></span> <span data-ttu-id="642e5-230">Группа, свойству **isAssignableToRole** которой присвоено значение `true`, не может относиться к типу с динамическим членством.</span><span class="sxs-lookup"><span data-stu-id="642e5-230">A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type.</span></span> <span data-ttu-id="642e5-231">Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).</span><span class="sxs-lookup"><span data-stu-id="642e5-231">For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).</span></span>
 
-#### <a name="response"></a><span data-ttu-id="bb3bb-232">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb3bb-232">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="642e5-232">Отклик</span><span class="sxs-lookup"><span data-stu-id="642e5-232">Response</span></span>
 
-<span data-ttu-id="bb3bb-233">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-233">The following is an example of the response.</span></span> <span data-ttu-id="bb3bb-234">Он включает только свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="bb3bb-234">It includes only default properties.</span></span>
+<span data-ttu-id="642e5-233">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="642e5-233">The following is an example of the response.</span></span> <span data-ttu-id="642e5-234">Он включает только свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="642e5-234">It includes only default properties.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -377,11 +377,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="bb3bb-235">См. также</span><span class="sxs-lookup"><span data-stu-id="bb3bb-235">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="642e5-235">См. также</span><span class="sxs-lookup"><span data-stu-id="642e5-235">See also</span></span>
 
-- [<span data-ttu-id="bb3bb-236">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="bb3bb-236">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="bb3bb-237">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-237">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="bb3bb-238">Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="bb3bb-238">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="642e5-236">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="642e5-236">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="642e5-237">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="642e5-237">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="642e5-238">Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="642e5-238">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

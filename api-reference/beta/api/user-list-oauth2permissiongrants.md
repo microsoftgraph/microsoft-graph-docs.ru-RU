@@ -5,35 +5,35 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: e0443b62e67e0fce72f0000592e2b8d7c959abd8
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: dacce15ee977280c04291d8dcdf3cba174b7af01
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473677"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508813"
 ---
-# <a name="list-oauth2permissiongrants"></a><span data-ttu-id="305a5-103">Перечисление oauth2PermissionGrants</span><span class="sxs-lookup"><span data-stu-id="305a5-103">List oauth2PermissionGrants</span></span>
+# <a name="list-oauth2permissiongrants"></a><span data-ttu-id="daa85-103">Перечисление oauth2PermissionGrants</span><span class="sxs-lookup"><span data-stu-id="daa85-103">List oauth2PermissionGrants</span></span>
 
-<span data-ttu-id="305a5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="305a5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="daa85-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="daa85-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="305a5-105">Извлечение списка объектов [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md), представляющих делегированные разрешения, предоставленные клиентскому приложению для доступа к API от имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="305a5-105">Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, which represent delegated permissions granted to enable a client application to access an API on behalf of the user.</span></span>
+<span data-ttu-id="daa85-105">Извлечение списка объектов [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md), представляющих делегированные разрешения, предоставленные клиентскому приложению для доступа к API от имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="daa85-105">Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, which represent delegated permissions granted to enable a client application to access an API on behalf of the user.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="305a5-106">При запросе предоставленных делегированных разрешений для пользователя будут возвращаться только предоставленные делегированные разрешения, предназначенные для данного пользователя.</span><span class="sxs-lookup"><span data-stu-id="305a5-106">Querying the delegated permission grants for a user will only return delegated permissions grants that are specifically for the given user.</span></span> <span data-ttu-id="305a5-107">Делегированные разрешения, предоставленные от имени всех пользователей в организации, _не_ включаются в ответ.</span><span class="sxs-lookup"><span data-stu-id="305a5-107">Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.</span></span>
+> <span data-ttu-id="daa85-106">При запросе предоставленных делегированных разрешений для пользователя будут возвращаться только предоставленные делегированные разрешения, предназначенные для данного пользователя.</span><span class="sxs-lookup"><span data-stu-id="daa85-106">Querying the delegated permission grants for a user will only return delegated permissions grants that are specifically for the given user.</span></span> <span data-ttu-id="daa85-107">Делегированные разрешения, предоставленные от имени всех пользователей в организации, _не_ включаются в ответ.</span><span class="sxs-lookup"><span data-stu-id="daa85-107">Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="305a5-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="305a5-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="daa85-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="daa85-108">Permissions</span></span>
 
-<span data-ttu-id="305a5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="305a5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="daa85-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="daa85-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="305a5-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="305a5-111">Permission type</span></span>      | <span data-ttu-id="305a5-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="305a5-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="daa85-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="daa85-111">Permission type</span></span>      | <span data-ttu-id="daa85-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="daa85-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="305a5-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="305a5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="305a5-114">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="305a5-114">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="305a5-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="305a5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="305a5-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="305a5-116">Not supported.</span></span>    |
-|<span data-ttu-id="305a5-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="305a5-117">Application</span></span> | <span data-ttu-id="305a5-118">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="305a5-118">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="daa85-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="daa85-113">Delegated (work or school account)</span></span> | <span data-ttu-id="daa85-114">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="daa85-114">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="daa85-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="daa85-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="daa85-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="daa85-116">Not supported.</span></span>    |
+|<span data-ttu-id="daa85-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="daa85-117">Application</span></span> | <span data-ttu-id="daa85-118">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="daa85-118">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="305a5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="305a5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="daa85-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="daa85-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,30 +42,32 @@ GET /me/oauth2PermissionGrants
 GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="305a5-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="305a5-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="daa85-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="daa85-120">Optional query parameters</span></span>
 
-<span data-ttu-id="305a5-121">Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="305a5-121">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="daa85-121">Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="daa85-121">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="305a5-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="305a5-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="daa85-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="daa85-122">Request headers</span></span>
 
-| <span data-ttu-id="305a5-123">Имя</span><span class="sxs-lookup"><span data-stu-id="305a5-123">Name</span></span>           | <span data-ttu-id="305a5-124">Описание</span><span class="sxs-lookup"><span data-stu-id="305a5-124">Description</span></span>                |
+| <span data-ttu-id="daa85-123">Имя</span><span class="sxs-lookup"><span data-stu-id="daa85-123">Name</span></span>           | <span data-ttu-id="daa85-124">Описание</span><span class="sxs-lookup"><span data-stu-id="daa85-124">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="305a5-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="305a5-125">Authorization</span></span>  | <span data-ttu-id="305a5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="305a5-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="daa85-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="daa85-125">Authorization</span></span>  | <span data-ttu-id="daa85-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="daa85-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="305a5-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="305a5-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="daa85-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="daa85-128">Request body</span></span>
 
-<span data-ttu-id="305a5-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="305a5-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="daa85-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="daa85-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="305a5-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="305a5-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="daa85-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="daa85-130">Response</span></span>
 
-<span data-ttu-id="305a5-131">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="305a5-131">If successful, this method returns a `200 OK` response code and a collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.</span></span>
+<span data-ttu-id="daa85-131">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="daa85-131">If successful, this method returns a `200 OK` response code and a collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="305a5-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="305a5-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="daa85-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="daa85-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="305a5-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="305a5-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="daa85-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="daa85-133">Request</span></span>
 
-<span data-ttu-id="305a5-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="305a5-134">Here is an example of the request.</span></span>
+<span data-ttu-id="daa85-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="daa85-134">Here is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="daa85-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="daa85-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_oAuth2PermissionGrants"
@@ -74,12 +76,30 @@ GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/oauth2PermissionGrants
 ```
+# <a name="c"></a>[<span data-ttu-id="daa85-136">C#</span><span class="sxs-lookup"><span data-stu-id="daa85-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="305a5-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="305a5-135">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="daa85-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="daa85-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-oauth2permissiongrants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="305a5-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="305a5-136">Here is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="daa85-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="daa85-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-oauth2permissiongrants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="305a5-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="305a5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="daa85-139">Java</span><span class="sxs-lookup"><span data-stu-id="daa85-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="daa85-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="daa85-140">Response</span></span>
+
+<span data-ttu-id="daa85-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="daa85-141">Here is an example of the response.</span></span> 
+
+> <span data-ttu-id="daa85-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="daa85-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

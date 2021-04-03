@@ -5,36 +5,36 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f9a6d19c1671265034ca5f2663ab55aa701eeda8
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: cfbd3cd98c17c9e261711932a0169c977b1d59ba
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469660"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508301"
 ---
-# <a name="get-adminconsentrequestpolicy"></a><span data-ttu-id="94747-103">Получить adminConsentRequestPolicy</span><span class="sxs-lookup"><span data-stu-id="94747-103">Get adminConsentRequestPolicy</span></span>
+# <a name="get-adminconsentrequestpolicy"></a><span data-ttu-id="2f1e0-103">Получить adminConsentRequestPolicy</span><span class="sxs-lookup"><span data-stu-id="2f1e0-103">Get adminConsentRequestPolicy</span></span>
 
-<span data-ttu-id="94747-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="94747-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2f1e0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f1e0-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="94747-105">Ознакомьтесь с свойствами и отношениями объекта [adminConsentRequestPolicy.](../resources/adminconsentrequestpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="94747-105">Read the properties and relationships of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.</span></span>
+<span data-ttu-id="2f1e0-105">Ознакомьтесь с свойствами и отношениями объекта [adminConsentRequestPolicy.](../resources/adminconsentrequestpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="2f1e0-105">Read the properties and relationships of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="94747-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="94747-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2f1e0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2f1e0-106">Permissions</span></span>
 
-<span data-ttu-id="94747-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94747-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2f1e0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f1e0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="94747-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="94747-109">Permission type</span></span>|<span data-ttu-id="94747-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="94747-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="2f1e0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f1e0-109">Permission type</span></span>|<span data-ttu-id="2f1e0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f1e0-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="94747-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="94747-111">Delegated (work or school account)</span></span>|<span data-ttu-id="94747-112">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="94747-112">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span></span>|
-|<span data-ttu-id="94747-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="94747-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="94747-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="94747-114">Not supported.</span></span>|
-|<span data-ttu-id="94747-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="94747-115">Application</span></span>|<span data-ttu-id="94747-116">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="94747-116">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span></span>|
+|<span data-ttu-id="2f1e0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f1e0-111">Delegated (work or school account)</span></span>|<span data-ttu-id="2f1e0-112">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f1e0-112">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span></span>|
+|<span data-ttu-id="2f1e0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f1e0-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2f1e0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f1e0-114">Not supported.</span></span>|
+|<span data-ttu-id="2f1e0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2f1e0-115">Application</span></span>|<span data-ttu-id="2f1e0-116">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f1e0-116">Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All</span></span>|
 
-<span data-ttu-id="94747-117">При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога.</span><span class="sxs-lookup"><span data-stu-id="94747-117">When calling on behalf of a user, the user needs to belong to one of the following directory roles.</span></span> <span data-ttu-id="94747-118">Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)</span><span class="sxs-lookup"><span data-stu-id="94747-118">To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):</span></span>
-+ <span data-ttu-id="94747-119">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="94747-119">Global Administrator</span></span>
-+ <span data-ttu-id="94747-120">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="94747-120">Global Reader</span></span>
-+ <span data-ttu-id="94747-121">Администратор облачного приложения</span><span class="sxs-lookup"><span data-stu-id="94747-121">Cloud Application Administrator</span></span>
-+ <span data-ttu-id="94747-122">Администратор приложения</span><span class="sxs-lookup"><span data-stu-id="94747-122">Application Administrator</span></span>
+<span data-ttu-id="2f1e0-117">При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога.</span><span class="sxs-lookup"><span data-stu-id="2f1e0-117">When calling on behalf of a user, the user needs to belong to one of the following directory roles.</span></span> <span data-ttu-id="2f1e0-118">Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)</span><span class="sxs-lookup"><span data-stu-id="2f1e0-118">To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):</span></span>
++ <span data-ttu-id="2f1e0-119">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="2f1e0-119">Global Administrator</span></span>
++ <span data-ttu-id="2f1e0-120">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="2f1e0-120">Global Reader</span></span>
++ <span data-ttu-id="2f1e0-121">Администратор облачного приложения</span><span class="sxs-lookup"><span data-stu-id="2f1e0-121">Cloud Application Administrator</span></span>
++ <span data-ttu-id="2f1e0-122">Администратор приложения</span><span class="sxs-lookup"><span data-stu-id="2f1e0-122">Application Administrator</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="94747-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="94747-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2f1e0-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f1e0-123">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -44,28 +44,30 @@ ms.locfileid: "51469660"
 GET /policies/adminConsentRequestPolicy
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="94747-124">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="94747-124">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2f1e0-124">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2f1e0-124">Optional query parameters</span></span>
 
-<span data-ttu-id="94747-125">Этот метод поддерживает параметр  `$select`   запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="94747-125">This method supports the `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="94747-126">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="94747-126">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="2f1e0-125">Этот метод поддерживает параметр  `$select`   запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="2f1e0-125">This method supports the `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="2f1e0-126">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="2f1e0-126">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="94747-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="94747-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2f1e0-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2f1e0-127">Request headers</span></span>
 
-|<span data-ttu-id="94747-128">Имя</span><span class="sxs-lookup"><span data-stu-id="94747-128">Name</span></span>|<span data-ttu-id="94747-129">Описание</span><span class="sxs-lookup"><span data-stu-id="94747-129">Description</span></span>|
+|<span data-ttu-id="2f1e0-128">Имя</span><span class="sxs-lookup"><span data-stu-id="2f1e0-128">Name</span></span>|<span data-ttu-id="2f1e0-129">Описание</span><span class="sxs-lookup"><span data-stu-id="2f1e0-129">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="94747-130">Авторизация</span><span class="sxs-lookup"><span data-stu-id="94747-130">Authorization</span></span>|<span data-ttu-id="94747-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="94747-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="2f1e0-130">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2f1e0-130">Authorization</span></span>|<span data-ttu-id="2f1e0-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f1e0-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="94747-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="94747-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2f1e0-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2f1e0-133">Request body</span></span>
 
-<span data-ttu-id="94747-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="94747-134">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2f1e0-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2f1e0-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="94747-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="94747-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2f1e0-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f1e0-135">Response</span></span>
 
-<span data-ttu-id="94747-136">В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="94747-136">If successful, this method returns a `200 OK` response code and an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="2f1e0-136">В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="2f1e0-136">If successful, this method returns a `200 OK` response code and an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="94747-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="94747-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2f1e0-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="2f1e0-137">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="94747-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="94747-138">Request</span></span>
+### <a name="request"></a><span data-ttu-id="2f1e0-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f1e0-138">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="2f1e0-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f1e0-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_adminconsentrequestpolicy"
@@ -74,10 +76,28 @@ GET /policies/adminConsentRequestPolicy
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/adminConsentRequestPolicy
 ```
+# <a name="c"></a>[<span data-ttu-id="2f1e0-140">C#</span><span class="sxs-lookup"><span data-stu-id="2f1e0-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-adminconsentrequestpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="94747-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="94747-139">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="2f1e0-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f1e0-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-adminconsentrequestpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="94747-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="94747-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="2f1e0-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f1e0-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-adminconsentrequestpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="2f1e0-143">Java</span><span class="sxs-lookup"><span data-stu-id="2f1e0-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="2f1e0-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f1e0-144">Response</span></span>
+
+<span data-ttu-id="2f1e0-145">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="2f1e0-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
