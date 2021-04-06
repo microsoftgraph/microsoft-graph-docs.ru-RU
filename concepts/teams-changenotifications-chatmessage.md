@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e6e859e76e35e4eefd5ef18a26f0f1339c01a8a2
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 2e5490549e4ff204957c46e5da39a5516ed7d866
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761572"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594863"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -182,9 +182,9 @@ Content-Type: application/json
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживается в версии |
 |:--------------------|:---------------------------------------------------------|:---------------------|
-|Делегированные (рабочая или учебная учетная запись) | Chat.Read | Бета-версия |
+|Делегированные (рабочая или учебная учетная запись) | Chat.Read | Бета-версия, версия 1.0 |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Chat.Read.All | Бета-версия |
+|Приложение | Chat.Read.All | Бета-версия, версия 1.0 |
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>Пример 1. Подписка на сообщения в чате
 
