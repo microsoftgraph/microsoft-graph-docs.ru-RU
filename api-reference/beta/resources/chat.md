@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 635982c8610bc524de027632dd07c00e1a3d26b1
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: b15d6a50bfb6d7826bc26f85805c6b7311d33c41
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582167"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594870"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -48,6 +48,7 @@ ms.locfileid: "51582167"
 |[Добавление вкладки в чат](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Добавьте (пин-код) вкладку в чат (и связанное собрание).|
 |[Обновление вкладки в чате](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки в чате (и связанное собрание).|
 |[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет | Удалите (открепите) вкладку из чата (и связанного собрания).|
+|[Гранты на получение разрешений списка](../api/chat-list-permissiongrants.md) | [коллекция resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных приложениям в этом чате.|
 
 >**Примечание:** При использовании разрешений приложений убедитесь, что вы знаете, как получить ID чата. Так как чаты с разрешениями приложений не поддерживаются, возможны не все сценарии. Можно получить ID чата с делегированными разрешениями, а также из уведомлений об изменении [для /chats/getAllMessages](../api/subscription-post-subscriptions.md) с разрешениями приложений.
 
@@ -77,6 +78,7 @@ ms.locfileid: "51582167"
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | Коллекция всех приложений в чате. Допускается значение null. |
 | members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех участников в чате. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
+| permissionGrants| [коллекция resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для чата.|
 
 ## <a name="json-representation"></a>Представление JSON
 
