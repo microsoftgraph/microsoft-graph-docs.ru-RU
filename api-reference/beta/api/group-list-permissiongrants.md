@@ -1,0 +1,119 @@
+---
+title: Список объектов permissionGrants группы
+description: Получение списка объектов permissionGrants группы.
+author: akjo
+localization_priority: Priority
+ms.prod: microsoft-teams
+doc_type: apiPageType
+ms.openlocfilehash: 136cfd8c663526882efa32ce837d2d292cf0ff5e
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594912"
+---
+# <a name="list-permissiongrants-of-a-group"></a>Список объектов permissionGrants группы
+
+Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [группе](../resources/group.md). Это список приложений Azure AD, имеющих доступ к чату, одновременно с доступом, который имеет каждое приложение.
+
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                          |
+| :------------------------------------- | :----------------------------------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                       |
+| Приложение                            | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{group-id}/permissionGrants
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Эта операция не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+
+## <a name="request-headers"></a>Заголовки запросов
+
+| Заголовок           | Значение                      |
+| :--------------- | :------------------------- |
+| Авторизация    | Bearer {токен}. Обязательный.  |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успеха этот метод возвращает код отклика `200 OK` и список объектов [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) в тексте отклика.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "group_list_permission_grants"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/14c981a4-dca9-4565-bae6-e13ada8861be/permissionGrants
+```
+
+---
+
+### <a name="response"></a>Отклик
+
+Ниже показан пример отклика.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.resourceSpecificPermissionGrant"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#permissionGrants",
+    "value": [
+        {
+            "id": "ZfwbxSIj9OGOBxsBmwY555mOHr_W6qN7LEbFYIIcM5A",
+            "deletedDateTime": null,
+            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
+            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "permissionType": "Application",
+            "permission": "TeamMember.Read.Group"
+        },
+        {
+            "id": "WsYCHhlwjliiK19ONpJiWq6rtFy-Tg1q8h9-f-DATto",
+            "deletedDateTime": null,
+            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
+            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "permissionType": "Application",
+            "permission": "TeamsTab.Create.Group"
+        },
+        {
+            "id": "wtAZautz7ilRA0kgHYWr2Ss2FTK3jPkf-HPhj3FS1wo",
+            "deletedDateTime": null,
+            "clientId": "74c92190-dc0e-485a-81c6-fdffd4aadfd8",
+            "clientAppId": "69024002-35ae-4574-a219-f261183580b4",
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "permissionType": "Application",
+            "permission": "TeamMember.Read.Group"
+        }
+    ]
+}
+```
