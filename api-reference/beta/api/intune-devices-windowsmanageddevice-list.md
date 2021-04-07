@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a57ca8c423e8bd70de4a28c64794a4db0e9de197
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5eb48d6410b72d0a3adb9f0a305612c17184a241
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135840"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51609523"
 ---
 # <a name="list-windowsmanageddevices"></a>Список windowsManagedDevices
 
@@ -27,8 +27,8 @@ ms.locfileid: "51135840"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8941
+Content-Length: 9213
 
 {
   "value": [
@@ -258,7 +258,16 @@ Content-Length: 8941
       "joinType": "azureADJoined",
       "skuFamily": "Sku Family value",
       "skuNumber": 9,
-      "managementFeatures": "microsoftManagedDesktop"
+      "managementFeatures": "microsoftManagedDesktop",
+      "chromeOSDeviceInfo": [
+        {
+          "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
+          "name": "Name value",
+          "value": "Value value",
+          "valueType": "Value Type value",
+          "updatable": true
+        }
+      ]
     }
   ]
 }

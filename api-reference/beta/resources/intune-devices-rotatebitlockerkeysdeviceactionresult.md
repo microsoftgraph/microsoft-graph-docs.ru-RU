@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Ротатебитлоккеркэйсдевицеактионресулт
-description: Результат действия устройства Ротатебитлоккеркэйс
+title: rotateBitLockerKeysDeviceActionResult resource type
+description: Результат действия устройства RotateBitLockerKeys
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4196c25146ba72e0b9fec5fc67dce9d521275d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 527e90eab465045c5987830c08a6124ccacf16bf
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299101"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51612044"
 ---
-# <a name="rotatebitlockerkeysdeviceactionresult-resource-type"></a>Тип ресурса Ротатебитлоккеркэйсдевицеактионресулт
+# <a name="rotatebitlockerkeysdeviceactionresult-resource-type"></a>rotateBitLockerKeysDeviceActionResult resource type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Результат действия устройства Ротатебитлоккеркэйс
+Результат действия устройства RotateBitLockerKeys
 
 
 Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
@@ -29,10 +29,10 @@ ms.locfileid: "49299101"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|Состояние действия, унаследованной от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
-|errorCode|Int32|Код ошибки действия Ротатебитлоккеркэйс|
+|errorCode|Int32|Код ошибки действия RotateBitLockerKeys|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Ревокеапплевпплиценсесактионресулт
-description: Отзыв результатов действий для лицензий Apple VPP
+title: тип ресурса revokeAppleVppLicensesActionResult
+description: Отозвить результат действий по лицензиям Apple Vpp
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dadfd90dcd06c3628088c15d39cd8ba1d5655392
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 56fce51fb5de4066136199a99670c4767b6ad724
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267266"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611862"
 ---
-# <a name="revokeapplevpplicensesactionresult-resource-type"></a>Тип ресурса Ревокеапплевпплиценсесактионресулт
+# <a name="revokeapplevpplicensesactionresult-resource-type"></a>тип ресурса revokeAppleVppLicensesActionResult
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Отзыв результатов действий для лицензий Apple VPP
+Отозвить результат действий по лицензиям Apple Vpp
 
 
 Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
@@ -29,11 +29,11 @@ ms.locfileid: "49267266"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|Состояние действия, унаследованной от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
-|тоталлиценсескаунт|Int32|Общее количество связанных лицензий Apple VPP|
-|фаиледлиценсескаунт|Int32|Общее количество лицензий Apple VPP, которые не удалось отозвать|
+|totalLicensesCount|Int32|Общее число связанных лицензий Apple Vpp|
+|failedLicensesCount|Int32|Общее число лицензий на Vpp Apple, которые не удалось отоискить|
 
 ## <a name="relationships"></a>Связи
 Нет

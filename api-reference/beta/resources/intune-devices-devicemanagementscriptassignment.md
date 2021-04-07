@@ -1,41 +1,41 @@
 ---
 title: Тип ресурса deviceManagementScriptAssignment
-description: Содержит свойства, используемые для назначения группе скрипта управления устройствами.
+description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8eac4db0ce0bec29602b2b340e7d1604f4fa241d
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 4d64f6793aa4cd59027488e6223c74de281f79b3
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158165"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611939"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>Тип ресурса deviceManagementScriptAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства, используемые для назначения группе скрипта управления устройствами.
+Содержит свойства, используемые для назначения скрипта управления устройствами группе.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список deviceManagementScriptAssignments](../api/intune-devices-devicemanagementscriptassignment-list.md)|[Коллекция deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Список свойств и связей объектов [deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
-|[Get deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-get.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md);|Чтение свойств и связей объекта [deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
-|[Создание deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-create.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md);|Создание объекта [deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
-|[Удаление deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-delete.md)|Нет|Удаляет [deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
+|[Списки deviceManagementScriptAssignments](../api/intune-devices-devicemanagementscriptassignment-list.md)|[коллекция deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Список свойств и связей объектов [deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
+|[Get deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-get.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md);|Чтение свойств и связей [объекта deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
+|[Создание deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-create.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md);|Создание нового [объекта deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
+|[Удаление deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-delete.md)|Нет|Удаляет [устройствоManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md).|
 |[Обновление deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-update.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md);|Обновление свойств объекта [deviceManagementScriptAssignment.](../resources/intune-devices-devicemanagementscriptassignment.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|ИД группы Azure Active Directory, на который мы нацелим сценарий.|
+|id|String|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|Id группы Azure Active Directory, на который мы нацелены сценарий.|
 
 ## <a name="relationships"></a>Связи
 Нет

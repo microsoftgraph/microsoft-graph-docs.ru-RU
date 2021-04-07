@@ -5,12 +5,12 @@ description: Список столбцов в списке.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 7dd2b59086b930b0e7536033b662e61088b15372
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 4ad913c79adcb72978ec522102cd92968dd6c03d
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201075"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611764"
 ---
 # <a name="list-columns-in-a-list"></a>Список столбцов в списке
 Пространство имен: microsoft.graph
@@ -30,9 +30,9 @@ ms.locfileid: "51201075"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Приложение | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 
   
 
@@ -44,7 +44,6 @@ ms.locfileid: "51201075"
 }
 -->
 ```http
-
 GET /sites/{site-id}/lists/{list-id}/columns
 ```
 

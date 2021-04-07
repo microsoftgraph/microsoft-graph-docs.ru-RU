@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5a2ee897506a2d642dd4dcb9df75ed8a3198ca4
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 2673f7325d3be8285e01d75e5dbcc3b7cb691dda
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159307"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611126"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -39,7 +39,7 @@ ms.locfileid: "51159307"
 - Удаленный доступ
 - Партнеры удаленной помощи
 - Политики управления доступом на основе ролей (RBAC)
-- Reporting
+- Отчётность
 - Партнеры по управлению телекоммуникационными ресурсами
 - События устранения неполадок
 - Сводки по защите информации Windows
@@ -64,10 +64,10 @@ ms.locfileid: "51159307"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор, связанный с устройством.|
+|id|String|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |intuneAccountId|Guid|ID учетной записи Intune для данного клиента|
-|legacyPcManangementEnabled|Boolean|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
+|legacyPcManangementEnabled|Логический|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
 |maximumDepTokens|Int32|Максимальное количество маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -85,7 +85,7 @@ ms.locfileid: "51159307"
 |**Odj**|
 |domainJoinConnectors|[коллекция deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|Список объектов соединитений.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
 |**Android для работы**|
@@ -130,10 +130,13 @@ ms.locfileid: "51159307"
 |deviceShellScripts|[коллекция deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Список сценариев оболочки устройств, связанных с клиентом.|
 |deviceHealthScripts|[коллекция deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Список скриптов для здоровья устройств, связанных с клиентом.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Обзор устройств|
-|managedDevices|Коллекция [managedDevice](../resources/intune-shared-manageddevice.md)|Список управляемых устройств.|
+|managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Список управляемых устройств.|
 |remoteActionAudits|[коллекция remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Список аудитов удаленного действия устройства с клиентом.|
 |windowsMalwareInformation|[коллекция windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|Список затронутых вредоносных программ в клиенте.|
 |mobileAppTroubleshootingEvents|[коллекция mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Свойство коллекции MobileAppTroubleshootingEvent.|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|Обзор аналитики пользовательских интерфейсов|
+|userExperienceAnalyticsBaselines|[коллекция userExperienceAnalyticsBaseline](../resources/intune-devices-userExperienceAnalyticsBaseline.md)|Базовые показатели аналитики пользовательских интерфейсов|
+|UserExperienceAnalyticsCategories|[коллекция userExperienceAnalyticsCategory](../resources/intune-devices-userExperienceAnalyticsCategory.md)|Категории аналитики пользовательских интерфейсов|
 |userExperienceAnalyticsDevicePerformance|[коллекция userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md)|Производительность устройства аналитики пользовательских интерфейсов|
 |userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|Сводка регрессии аналитики пользовательских интерфейсов|
 |userExperienceAnalyticsDeviceStartupHistory|[коллекция userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md)|История запуска устройства для аналитики пользовательских интерфейсов|
