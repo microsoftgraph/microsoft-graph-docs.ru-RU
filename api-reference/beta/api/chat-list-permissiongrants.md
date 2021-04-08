@@ -18,7 +18,7 @@ ms.locfileid: "51594909"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md). Это список приложений Azure AD, имеющих доступ к чату, одновременно с доступом, который имеет каждое приложение.
+Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md). Это список приложений Azure AD, имеющих доступ к чату, а также тип доступа, который имеет каждое приложение.
 
 ## <a name="permissions"></a>Разрешения
 
