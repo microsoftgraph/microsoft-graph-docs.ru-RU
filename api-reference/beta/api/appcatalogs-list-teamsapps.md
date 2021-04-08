@@ -1,28 +1,28 @@
 ---
-title: Список teamsApp
+title: List teamsApp
 description: 'Список приложений из каталога приложений Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0aa3aeea81bf0d559fd97fe45598c662c9cdb4ae
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: c4d559cb7778e6a0147e0e0fd4b8fc5f63bfb168
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844162"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638874"
 ---
-# <a name="list-teamsapp"></a>Список teamsApp
+# <a name="list-teamsapp"></a>List teamsApp
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Список [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
-К ним относятся приложения из Магазина Microsoft Teams, а также приложения из каталога приложений вашей организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите `organization` в качестве **distributionMethod** в запросе.
+К ним относятся приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите в запросе `organization` **рассылкуMethod.**
 
 > [!NOTE]
-> Ресурс teamsApp создается сервером и не является тем же, что указан в `id`  `id` манифесте приложения Teams. Предоставленный разработчиком в составе манифеста приложения Teams помеяется как ресурс `id` `externalId` **teamsApp.**
+> Ресурс `id` **teamsApp** создается сервером и не является таким же, как указанный в `id` манифесте приложения Teams. Предоставленный разработчиком в рамках манифеста приложения Teams штампуется как ресурс `id` `externalId` **teamsApp.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,9 +46,9 @@ GET /appCatalogs/teamsApps
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
-Using `$expand=AppDefinitions` will return more information about the state of the app, such as the **publishingState**, which reflects the app submission review status and returns whether an app has been approved, rejected, or remains under review. 
+Использование возвращает дополнительные сведения о состоянии приложения, например `$expand=AppDefinitions` **publishingState,** которое отражает состояние проверки отправки приложения и возвращает, было ли приложение утверждено, отклонено или остается в стадии рассмотрения. 
 
-> **Примечание.** Можно отфильтровать любые поля объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Можно использовать любую из следующих операций фильтра: "Равно", "не равно" и "или" или "нет".
+> **Примечание:** Вы можете фильтровать любое из полей объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Вы можете использовать любую из следующих операций фильтра: Равная, не равная, и, или, и нет.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -62,13 +62,13 @@ Using `$expand=AppDefinitions` will return more information about the state of t
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и список объектов `200 OK` [teamsApp](../resources/teamsapp.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и список объектов `200 OK` [teamsApp](../resources/teamsapp.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Список всех приложений, характерных для клиента
+### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Список всех приложений, определенных для клиента
 
-В следующем примере перечислены все приложения, специфичные для вашего клиента.
+В следующем примере перечислены все приложения, которые специфичны для клиента.
 
 #### <a name="request"></a>Запрос
 
@@ -192,7 +192,7 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе ИД манифеста приложения Teams
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе ID манифеста приложения Teams
 
 В следующем примере перечислены приложения, которые соответствуют "id", указанному в манифесте приложения Teams. В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
@@ -254,9 +254,9 @@ Content-Type: application/json
   }
 ```
 
-### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4. Список приложений с заданным ИД и возврат состояния проверки отправки
+### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4. Список приложений с заданным ИД и возвращение состояния проверки отправки
 
-В следующем примере перечисляются приложения с заданным ИД и **расширяются appDefinitions** для возврата **publishingState,** что отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в состоянии ожидания, означает, что приложение утверждено администратором, и означает, что приложение было `published` `rejected` отклонено администратором.
+В следующем примере перечислены приложения с заданным ID и расширены **приложенияDefinitions,** чтобы вернуть **publishingState,** что отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в стадии ожидания, означает, что приложение было утверждено администратором, а значит, приложение было отклонено `published` `rejected` администратором.
 
 #### <a name="request"></a>Запрос
 
@@ -328,9 +328,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Пример 5. Список сведений только о тех приложениях в каталоге, которые содержат бота
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Пример 5. Список сведений только о тех приложениях в каталоге, которые содержат бот
 
-В следующем примере перечислены только те приложения в каталоге, которые содержат бота.
+В следующем примере перечислены только те приложения в каталоге, которые содержат бот.
 
 #### <a name="request"></a>Запрос
 
@@ -450,6 +450,57 @@ Content-Type: application/json
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }
+                }
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-6-list-the-details-of-apps-filtered-by-app-installation-scope"></a>Пример 6. Список сведений о приложениях, отфильтрованных в области установки приложений
+
+В следующем примере перечислены только те приложения, которые можно установить в личном поле пользователя.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_in_personal_scope"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($select=id,displayName,allowedInstallationScopes)&$filter=appDefinitions/any(a:a/allowedInstallationScopes has 'personal')
+```
+---
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_in_personal_scope",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(id,displayName,allowedInstallationScopes))",
+    "value": [
+        {
+            "id": "5a542e1c-5f8c-4793-8b0c-6082464b2378",
+            "externalId": "4b3ec336-b998-4623-9e25-d4182fb82159",
+            "displayName": "Carriage",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a542e1c-5f8c-4793-8b0c-6082464b2378')/appDefinitions(id,displayName,allowedInstallationScopes)",
+            "appDefinitions": [
+                {
+                    "id": "MWE1NDJlMWMtNWY4Yy00NzkzLThiMGMtNjA4MjQ2NGIyMzc4IyMxLjAuMCMjUHVibGlzaGVk",
+                    "displayName": "Carriage",
+                    "allowedInstallationScopes": "personal"
                 }
             ]
         }

@@ -1,41 +1,42 @@
 ---
-title: Тип ресурса teamsAppDefinition
+title: тип ресурса teamsAppDefinition
 description: Сведения об одной версии teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6b5fd771d1fb38de5354c74778f5eae798ccc91e
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 205c656e81ed9dfc75e97cbe0734eeb36c5c0127
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706117"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638909"
 ---
-# <a name="teamsappdefinition-resource-type"></a>Тип ресурса teamsAppDefinition
+# <a name="teamsappdefinition-resource-type"></a>тип ресурса teamsAppDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о версии [teamsApp.](teamsapp.md)
+Сведения о версии [teamsApp](teamsapp.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Уникальный ид (не appid teams). |
-| teamsAppId          | string   | ИД из манифеста приложения Teams. |
-| publishingState| string|Состояние публикации определенной версии приложения Teams. Возможные значения:</br>`submitted` — конкретная версия приложения Teams была отправлена и находится на рассмотрении. </br>`published`  — запрос на публикацию определенной версии приложения Teams утвержден администратором, и приложение опубликовано. </br> `rejected` — запрос на публикацию определенной версии приложения Teams был отклонен администратором. |
-| azureADAppId        | string   | WebApplicationInfo.id из манифеста приложения Teams. |
-| displayName         | string   | Имя приложения, предоставленное разработчиком приложения. |
-| version             | string   | Номер версии приложения. |
+| id                  | string   | Уникальный id (а не командный appid). |
+| teamsAppId          | Строка   | Id из манифеста Teams App. |
+| publishingState| Строка|Опубликованный статус определенной версии приложения Teams. Возможные значения:</br>`submitted` — конкретная версия приложения Teams была представлена и находится на рассмотрении. </br>`published`  — Запрос на публикацию конкретной версии приложения Teams был утвержден администратором и приложение опубликовано. </br> `rejected` — Запрос на публикацию конкретной версии приложения Teams был отклонен администратором. |
+| azureADAppId        | Строка   | В WebApplicationInfo.id из манифеста Teams App. |
+| displayName         | string   | Имя приложения, предоставленного разработчиком приложения. |
+| version             | Строка   | Номер версии приложения. |
+| allowedInstallationScopes | teamsAppInstallationScope collection | Коллекция областей, в которых можно установить приложение Teams. Возможные значения:</br>`team` — указывает, что приложение Teams может быть установлено в команде и уполномочено получать доступ к данным этой группы. </br>`groupChat`  — указывает, что приложение Teams может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата. </br> `personal` — указывает, что приложение Teams может быть установлено в личном поле пользователя и уполномочено получать доступ к данным этого пользователя. | 
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
-|bot|[teamworkBot](teamworkbot.md) | Сведения о боте, указанном в манифесте приложения Teams. |
+|бот|[teamworkBot](teamworkbot.md) | Сведения о боте, указанном в манифесте приложения Teams. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

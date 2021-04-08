@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: da886cc799f638d981c6aa0d9ee213518c6deedc
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 194669c6dcf19e72732c9d798d3081d8ed4606e0
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491028"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638916"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -74,7 +74,7 @@ ms.locfileid: "51491028"
 |:---|
 |String|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |В двоичном формате|
 |Логический|
 |DateTime|
@@ -810,7 +810,7 @@ ms.locfileid: "51491028"
 |Member|
 |:---|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalItem|
 |site|
@@ -1173,10 +1173,10 @@ ms.locfileid: "51491028"
 | doNotForward
 | followUp
 | fyi
-| forward
+| вперед
 | noResponseNecessary
 | read
-| reply
+| ответ
 | replyToAll
 | обзор
 
@@ -1675,7 +1675,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|message|
+|сообщение|
 
 ### <a name="chatmessageimportance-values"></a>значения chatMessageImportance
 
@@ -1751,7 +1751,7 @@ Enum для серьезности оповещений.
 | Member       |
 |:--------------|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2160,3 +2160,10 @@ Enum для серьезности оповещений.
 |другие|
 |unknownFutureValue|
 
+### <a name="teamsappinstallationscope-values"></a>teamsAppInstallationScope values
+
+|Элемент    |Значение    |Описание |
+|:---------|:--------|:----------- |
+|team      |0        |Указывает, что приложение Teams может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|groupChat |1        |Указывает, что приложение Teams может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
+|personal  |2        |Указывает, что приложение Teams может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
