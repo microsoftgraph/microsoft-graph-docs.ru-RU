@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d4a88bb4d826ead30d1d739e696dec76df5cbb2f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c38895059461f814a3ad0f8e663082972cc8663
+ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957067"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654130"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>тип ресурса cloudPcDeviceImage
 
@@ -36,15 +36,15 @@ ms.locfileid: "50957067"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для ресурса изображений на облачном компьютере. Только для чтения.|
-|sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
-|displayName|Строка|Имя отображения изображения.|
+|id|String|Уникальный идентификатор для ресурса изображений на облачном компьютере. Только для чтения.|
+|sourceImageResourceId|String|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|String|Имя отображения изображения.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
-|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
+|osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|Данные и время последнего изменения изображения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC). Например, полночь UTC 1 января 2014 г. отображается как '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|Состояние изображения на облачном компьютере. Возможные значения: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, который указывает, почему не удалось загрузить, если применимо. Возможные значения: `internalServerError`, `sourceImageNotFound`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, который указывает, почему не удалось загрузить, если применимо. Возможные значения: `internalServerError` , , и `sourceImageNotFound` `osVersionNotSupported` `sourceImageInvalid` .|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>значения cloudPcDeviceImageStatus
 
