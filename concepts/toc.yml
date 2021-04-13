@@ -453,7 +453,7 @@ items:
           - name: Регулирование
             href: throttling.md
           - name: Уведомления об изменениях
-            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            displayName: 'Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             items:
               - name: Обзор
                 href: webhooks.md
@@ -467,6 +467,8 @@ items:
                 href: change-notifications-delivery.md
               - name: Получение уведомлений об изменениях для сообщений чатов или каналов
                 href: teams-changenotifications-chatmessage.md
+              - name: Уведомления об изменениях облачной печати
+                href: universal-print-webhook-notifications.md
           - name: Отслеживание изменений
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
