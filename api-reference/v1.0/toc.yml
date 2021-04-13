@@ -431,7 +431,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Получить чат для пользователя
                 href: api/chat-get.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -447,7 +447,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -1082,7 +1082,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -3864,7 +3864,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверение и доступ
+      - name: Удостоверения и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -4405,8 +4405,9 @@ items:
                       - name: Фильтр текущего пользователя
                         href: api/userconsentrequest-filterByCurrentUser.md
               - name: Условия использования
-                href: resources/agreement.md
                 items:
+                  - name: Соглашение
+                    href: resources/agreement.md
                   - name: Список
                     href: api/agreement-list.md
                   - name: Создание
@@ -4486,7 +4487,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4757,7 +4758,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5098,7 +5099,7 @@ items:
                 href: api/site-unfollow.md
               - name: Перечисление отслеживаемых сайтов
                 href: api/sites-list-followed.md
-              - name: Разрешения
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: Получить разрешение сайта
@@ -5140,7 +5141,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
