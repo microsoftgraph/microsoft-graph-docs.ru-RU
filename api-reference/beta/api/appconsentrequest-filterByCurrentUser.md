@@ -1,32 +1,32 @@
 ---
-title: 'appConsentRequests: filterByCurrentUser'
-description: Извлечение appConsentRequests, для которых текущий пользователь является рецензентом.
+title: 'appConsentRequest: filterByCurrentUser'
+description: Извлечение объектов appConsentRequest, для которых текущий пользователь является рецензентом.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2fa7c1c345abe68c0fd2af2d588f07d00468e462
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: ab52efea1ffe02453187c825727f641cde61995c
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201772"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698064"
 ---
-# <a name="appconsentrequests-filterbycurrentuser"></a>appConsentRequests: filterByCurrentUser
+# <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечения [appConsentRequests,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом и состояние userConsentRequest `InProgress` является .
+Извлечение коллекции объектов [appConsentRequest,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом, и состояние пользователяConsentRequest для доступа к указанному приложению `InProgress` .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,10 +44,10 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса appConsentRequests, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательное.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов appConsentRequest, для которых текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Эта функция требует, чтобы параметр запроса OData возвращал коллекцию  `$filter` [userConsentRequests,](../resources/userconsentrequest.md) состояние которых `InProgress` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+## <a name="query-parameters"></a>Параметры запроса
+Эта функция требует, чтобы параметр запроса OData возвращал коллекцию объектов  `$filter` [userConsentRequest,](../resources/userconsentrequest.md) для которых имеется `InProgress` состояние. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -61,7 +61,7 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [appConsentRequest](../resources/appconsentrequest.md) в тексте отклика.
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 

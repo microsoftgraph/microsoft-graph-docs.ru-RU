@@ -1,50 +1,52 @@
 ---
-title: Тип ресурса pstnCallLogRow
-description: Представляет строку данных в журнале вызовов телефонной сети общего коммутатора (PSTN).
+title: тип ресурсов pstnCallLogRow
+description: Представляет строку данных в журнале вызовов для общедоступных телефонных сетей коммутатора (PSTN).
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5103404bdaa6ac4eafbfcffd45deef41c217600a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 584efcd6e320a95dc6e62f59b112d1041535f054
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155582"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697174"
 ---
-# <a name="pstncalllogrow-resource-type"></a>Тип ресурса pstnCallLogRow
+# <a name="pstncalllogrow-resource-type"></a>тип ресурсов pstnCallLogRow
 
 Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет строку данных в журнале вызовов телефонной сети общего коммутатора (PSTN). Каждая строка сопозовна одному вызову.
+Представляет строку данных в журнале вызовов для общедоступных телефонных сетей коммутатора (PSTN). Каждая строка сопомна одному вызову.
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор вызова. GUID.|
+|callDurationSource|pstnCallDurationSource|Источник данных о продолжительности вызова. Если при вызове используется сторонний оператор связи через программу "Подключение оператора", оператор может предоставить собственные данные о продолжительности вызова. В этом случае значение свойства `operator` . В противном случае значение `microsoft` .|
+|calleeNumber|String|Номер, набраный [в формате E.164.](https://en.wikipedia.org/wiki/E.164)|
+|callerNumber|String|Номер, который получил вызов для входящие вызовы или номер, набраный для исходящие вызовы. Формат E.164.|
 |callId|String|Идентификатор вызова. Не гарантируется уникальность.|
-|userId|String|ИД вызываемого пользователя в Graph. GUID. Эти и другие сведения о пользователе будут пустыми или пустыми для типов вызовов ботов (ucap_in, ucap_out).|
-|userPrincipalName|String|UserPrincipalName (имя для регистрации) в Azure Active Directory. Обычно он такой же, как SIP-адрес пользователя, и может быть таким же, как и адрес электронной почты пользователя.|
-|userDisplayName|String|Отображаемое имя пользователя.|
-|startDateTime|DateTimeOffset|Время начала вызова.|
-|endDateTime|DateTimeOffset|Время окончания вызова.|
-|duration|Int32|Время подключения вызова в секундах.|
-|charge|Двойное с плавающей точкой|Сумма денег или стоимость вызова, который взимается с вашей учетной записи.|
-|callType|String|Был ли вызов исходящие или входящие вызовы STN, а также тип вызова, например звонок, который был сделан пользователем или аудиоконференции.|
-|currency|String|Тип валюты, используемой для расчета стоимости вызова[(ISO 4217).](https://en.wikipedia.org/wiki/ISO_4217)|
-|calleeNumber|String|Номер, набираемый [в формате E.164.](https://en.wikipedia.org/wiki/E.164)|
-|usageCountryCode|String|Код страны пользователя, [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
-|tenantCountryCode|String|Код страны клиента, [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|callType|String|Был ли вызов исходящие или входящие вызовы PSTN и тип вызова, например вызов, размещенный пользователем или аудиоконференции.|
+|заряд|Двойное с плавающей точкой|Сумма денег или стоимость звонка, который взимается с вашей учетной записи.|
+|conferenceId|String|ID аудиоконференции.|
 |connectionCharge|Двойное с плавающей точкой|Цена платы за подключение.|
-|callerNumber|String|Номер, который принял вызов для входящие вызовы, или номер, набираемый для исходящие вызовы. Формат E.164.|
-|destinationContext|String|Был ли звонок внутренним (внутри страны или региона) или международным (за пределами страны или региона) в зависимости от расположения пользователя.|
-|destinationName|String|Страна или регион набрана.|
-|conferenceId|String|ИД аудиоконференции.|
+|валюта|String|Тип валюты, используемой для расчета стоимости вызова[(ISO 4217).](https://en.wikipedia.org/wiki/ISO_4217)|
+|destinationContext|String|Был ли вызов внутренним (в пределах страны или региона) или международным (за пределами страны или региона) в зависимости от расположения пользователя.|
+|destinationName|String|Страна или регион, набрана.|
+|duration|Int32|Сколько времени вызов был подключен, в секундах.|
+|endDateTime|DateTimeOffset|Время окончания вызова.|
+|id|String|Уникальный идентификатор вызовов. GUID.|
+|inventoryType|String|Тип номера телефона пользователя, например служба бесплатного номера.|
 |licenseCapability|String|Лицензия, используемая для вызова.|
-|inventoryType|String|Тип номера телефона пользователя, например служба бесплатных номеров.|
+|operator|String|Оператор связи, предоставлял службы PSTN для этого вызова. Это может быть Корпорация Майкрософт или сторонний оператор через [программу подключения оператора.](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398)|
+|startDateTime|DateTimeOffset|Время начала вызова.|
+|tenantCountryCode|String|Код страны клиента [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|useCountryCode|String|Код страны пользователя [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|userDisplayName|String|Отображаемое имя пользователя.|
+|userId|String|Вызов ID пользователя в Графе. GUID. Эта и другие сведения о пользователях будут null/empty для типов вызовов ботов (ucap_in, ucap_out).|
+|userPrincipalName|String|UserPrincipalName (имя регистрации) в Azure Active Directory. Это обычно то же самое, что и SIP-адрес пользователя, и может быть таким же, как и адрес электронной почты пользователя.|
 
 ## <a name="relationships"></a>Связи
 
@@ -84,7 +86,9 @@ ms.locfileid: "50155582"
   "destinationName": "String",
   "conferenceId": "String",
   "licenseCapability": "String",
-  "inventoryType": "String"
+  "inventoryType": "String",
+  "operator": "String",
+  "callDurationSource": "String"
 }
 ```
 

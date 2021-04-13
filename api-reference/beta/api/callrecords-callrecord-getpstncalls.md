@@ -1,16 +1,16 @@
 ---
 title: 'callRecord: getPstnCalls'
-description: Получите журнал вызовов STN.
+description: Получить журнал вызовов PSTN.
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6aa3c85c25373ecee98894ce0704b35a6de25cdb
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 57f29fdef863671c36f8b9e063c99a370e1173d1
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872914"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697195"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872914"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите журнал вызовов STN как коллекцию записей [pstnCallLogRow.](../resources/callrecords-pstncalllogrow.md)
+Получите журнал вызовов PSTN в качестве коллекции записей [pstnCallLogRow.](../resources/callrecords-pstncalllogrow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872914"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | CallRecords.Read.All |
+| Для приложений                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /communications/callRecords/getPstnCalls
 |toDateTime|DateTimeOffset|Конец диапазона времени для запроса. UTC включительно.|
 
 > [!IMPORTANT]
-> Значения **fromDateTime** и **toDateTime** не могут быть больше даты в диапазоне 90 дней.
+> Значения **fromDateTime** и **toDateTime** не могут быть больше диапазона дат в 90 дней.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -62,9 +62,9 @@ GET /communications/callRecords/getPstnCalls
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает код отклика и коллекцию записей `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код ответа и коллекцию записей `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) в тексте ответа.
   
-Если в диапазоне дат содержится более 1000 записей, тело также содержит URL-адрес для запроса следующей страницы `@odata.NextLink` записей вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. в [разгонах данных Microsoft Graph в приложении.](/graph/paging)
+Если в диапазоне дат более 1000 записей, тело также включает URL-адрес для запроса следующей страницы записей `@odata.NextLink` вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. в дополнительных сведениях [о сборе данных Microsoft Graph в приложении.](/graph/paging)
 
 ## <a name="examples"></a>Примеры
 
@@ -117,7 +117,9 @@ HTTP/1.1 200 OK
             "destinationName": "United States",
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
-            "inventoryType": "Subscriber"
+            "inventoryType": "Subscriber",
+            "operator": "Microsoft",
+            "callDurationSource": "microsoft"
         }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }
@@ -125,5 +127,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>См. также
 
-* [Отчет об использовании STN Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Отчет об использовании microsoft Teams PSTN](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Отчет о прямой маршрутике в Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)

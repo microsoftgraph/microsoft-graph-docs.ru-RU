@@ -1,16 +1,16 @@
 ---
 title: тип ресурса appConsentRequest
-description: Запрос, который представляет собой агрегацию userConsentRequests для определенного приложения.
+description: Запрос, представляюща коллекцию объектов userConsentRequest для определенного приложения.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f823f64d4c0324aeca74c3268d6fc95d313e2f00
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d9c01fd4e752bca0fe9518553f52312e523da3a3
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965235"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697903"
 ---
 # <a name="appconsentrequest-resource-type"></a>тип ресурса appConsentRequest
 
@@ -18,22 +18,22 @@ ms.locfileid: "50965235"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aggregation of [userConsentRequests](../resources/userconsentrequest.md) for a specific application.
+Коллекция объектов [userConsentRequest](../resources/userconsentrequest.md) для определенного приложения.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список appConsentRequests](../api/appconsentrequest-list.md)|[коллекция appConsentRequest](../resources/appconsentrequest.md)|Получите список объектов [appConsentRequest](../resources/appconsentrequest.md) и их свойств.|
+|[Список appConsentRequests](../api/appconsentrequest-list.md)|[коллекция appConsentRequest](../resources/appconsentrequest.md)|Извлечение коллекции [объектов appConsentRequest](appconsentrequest.md) и их свойств.|
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Ознакомьтесь с свойствами и отношениями [объекта appConsentRequest.](../resources/appconsentrequest.md)|
-|[Список appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Список [appConsentRequests,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом|
+|[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Ознакомьтесь с свойствами объектов [appConsentRequest,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом, и состояние запроса на согласие пользователя `InProgress` .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |appDisplayName|String|Отображение имени приложения, для которого запрашивается согласие. Обязательный. Поддерживает `$filter` `eq` (только) и `$orderby` . |
 |appId|String|Идентификатор приложения. Обязательный. Поддерживает `$filter` `eq` (только) и `$orderby` . |
-|consentType|Строка|Тип согласия запроса. Возможные значения: `Static`   и  `Dynamic` . Они представляют статические и динамические разрешения, соответственно, запрашиваются в рабочего процесса согласия. Поддерживает `$filter` `eq` (только) и `$orderby` . Обязательный.|
-|id|Строка|Идентификатор запроса на согласие приложения. Обязательный.|
+|consentType|String|Тип согласия запроса. Возможные значения: `Static`   и  `Dynamic` . Они представляют статические и динамические разрешения, соответственно, запрашиваются в рабочего процесса согласия. Поддерживает `$filter` `eq` (только) и `$orderby` . Обязательный.|
+|id|String|Идентификатор запроса на согласие приложения. Обязательный.|
 |pendingScopes|[коллекция appConsentRequestScope](../resources/appconsentrequestscope.md)|Список ожидающих утверждения областей. Это пусто, если consentType `Static` . Обязательный.|
 
 ## <a name="relationships"></a>Связи

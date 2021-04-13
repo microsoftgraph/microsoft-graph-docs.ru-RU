@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d3d91688a0a385ea319dee6df90b45c52bd4ec89
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ea9520e34237a0e4b60e5e077a487182b18369e6
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965189"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698072"
 ---
 # <a name="userconsentrequest-resource-type"></a>тип ресурса userConsentRequest
 
@@ -23,20 +23,20 @@ ms.locfileid: "50965189"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список userConsentRequests](../api/userconsentrequest-list.md)|[коллекция userConsentRequest](../resources/userconsentrequest.md)|Получите список объектов [userConsentRequest](../resources/userconsentrequest.md) и их свойств.|
+|[Список userConsentRequests](../api/userconsentrequest-list.md)|[коллекция userConsentRequest](../resources/userconsentrequest.md)|Извлечение коллекции [объектов userConsentRequest](userconsentrequest.md) для [приложенияConsentRequest.](appconsentrequest.md)|
 |[Get userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|Ознакомьтесь с свойствами и отношениями [объекта userConsentRequest.](../resources/userconsentrequest.md)|
-|[Список userConsentRequests: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[коллекция userConsentRequest](../resources/userconsentrequest.md)|Получите список объектов [userConsentRequest](../resources/userconsentrequest.md) и их свойств.|
+|[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[коллекция userConsentRequest](../resources/userconsentrequest.md)|Ознакомьтесь с свойствами [объектов userConsentRequest](../resources/userconsentrequest.md) для [приложенияConsentRequest,](appconsentrequest.md) для которого текущий пользователь является рецензентом.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|approvalId|Строка|Id утверждения. Это значение равно значению `id` .|
+|approvalId|String|Id утверждения. Это значение равно значению `id` .|
 |completedDateTime|DateTimeOffset|Дата и время, когда **состояние** запроса было отмечено как `Completed` . Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший запрос.|
 |createdDateTime|DateTimeOffset|Дата и время создания запроса. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$filter` `eq` (только) и `$orderby` .|
-|customData|Строка|Свободное текстовое поле для определения настраиваемой информации для запроса согласия пользователя. Не используется.|
-|id|Строка|Идентификатор запроса. |
-|reason|Строка|Обоснование пользователем необходимости доступа к приложению. Поддерживает `$filter` `eq` (только) и `$orderby` .  |
+|customData|String|Свободное текстовое поле для определения настраиваемой информации для запроса согласия пользователя. Не используется.|
+|id|String|Идентификатор запроса. |
+|reason|String|Обоснование пользователем необходимости доступа к приложению. Поддерживает `$filter` `eq` (только) и `$orderby` .  |
 |status|String|Состояние запроса на согласие приложения пользователя. Возможные значения: `Initializing` , `InProgress` и `Completed` . Поддерживает `$filter` `eq` (только) и `$orderby` . |
 
 ## <a name="relationships"></a>Связи

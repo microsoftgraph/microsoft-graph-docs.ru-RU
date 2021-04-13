@@ -3,12 +3,12 @@ title: Поставщики набор средств Microsoft Graph
 description: Поставщики набор средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для всех компонентов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: c6fa59632464d0cfa801b07a30d6a5cf94ae5c76
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1bebdb6bd2445873d8b45412b61f8793673db216
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470286"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697181"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Поставщики набор средств Microsoft Graph
 
@@ -130,7 +130,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
+  const token = await Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 

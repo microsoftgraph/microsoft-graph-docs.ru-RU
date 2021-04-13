@@ -1,32 +1,32 @@
 ---
-title: 'userConsentRequests: filterByCurrentUser'
-description: Извлечение userConsentRequests, для которых текущий пользователь является рецензентом.
+title: 'userConsentRequest: filterByCurrentUser'
+description: Извлечение объектов userConsentRequest, для которых текущий пользователь является рецензентом.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ddef281b50a4a60895f141b433289a2fc3e8a1d3
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 939e0c113f2ff5935c89530b304c3ad95b4e46e7
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201877"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698092"
 ---
-# <a name="userconsentrequests-filterbycurrentuser"></a>userConsentRequests: filterByCurrentUser
+# <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечения [userConsentRequests](../resources/userconsentrequest.md) для appConsentRequest, для которого текущий пользователь является рецензентом и состояние userConsentRequest `InProgress` является .
+Извлечение коллекции [объектов userConsentRequest](../resources/userconsentrequest.md) для доступа к указанному приложению, для которого текущий пользователь является рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса userConsentRequests для приложенияConsentRequest, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательное.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов userConsentRequest для объекта appConsentRequest, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Эта функция поддерживает параметр  `$filter` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -61,9 +61,11 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.
 
-## <a name="example-list-all-userconsentrequests-for-which-the-current-user-is-the-reviewer-and-the-status-is-completed"></a>Пример. Список всех userConsentRequests, для которых текущий пользователь является рецензентом и состояние завершено
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+В этом запросе вы перечислите все **объекты userConsentRequest,** для которых текущий пользователь является рецензентом и состояние `Completed` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

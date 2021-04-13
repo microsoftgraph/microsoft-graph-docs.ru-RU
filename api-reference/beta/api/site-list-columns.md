@@ -5,12 +5,12 @@ description: Список столбцов на сайте.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 30cb4348c1203d188a62f72d0545cd9d95de4112
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: dd7abfad63b268efb9748335ff0ef34d3b485312
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200792"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697216"
 ---
 # <a name="list-columns-in-a-site"></a>Список столбцов на сайте
 Пространство имен: microsoft.graph
@@ -30,9 +30,9 @@ ms.locfileid: "51200792"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 
   
 
@@ -44,7 +44,6 @@ ms.locfileid: "51200792"
 }
 -->
 ```http
-
 GET /sites/{site-id}/columns
 ```
 
@@ -111,39 +110,39 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "description": "",
-      "displayName": "Title",
-      "hidden": false,
-      "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Title",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
+   "value":[
+      {
+         "description":"",
+         "displayName":"Title",
+         "hidden":false,
+         "id":"99ddcf45-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Title",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
+      },
+      {
+         "description":"",
+         "displayName":"Address",
+         "id":"11dfef35-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Address",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
       }
-    },
-    {
-      "description": "",
-      "displayName": "Address",
-      "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Address",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
-      }
-    }
-  ]
+   ]
 }
 ```
 
