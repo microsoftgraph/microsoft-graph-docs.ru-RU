@@ -5,18 +5,18 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 591b053818b3cd58e66d103fba7f3c1f739818d6
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dca8bb6e38e3bb828327888dedfe86f54565dcb9
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507391"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698089"
 ---
 # <a name="list-userconsentrequests"></a>Список userConsentRequests
 
 Пространство имен: microsoft.graph
 
-[Извлечение объектов userConsentRequest](../resources/userconsentrequest.md) и их свойств.
+Извлечение коллекции [объектов userConsentRequest](../resources/userconsentrequest.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 

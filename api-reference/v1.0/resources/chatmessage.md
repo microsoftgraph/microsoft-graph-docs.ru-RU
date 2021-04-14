@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: a5ce4d046c70e0c247629ca238aa7b5deef79d8e
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: e96319854f1f11bf85507868918f2bb18bcabed9
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582783"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698008"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -44,7 +44,7 @@ ms.locfileid: "51582783"
 |[Обновление сообщения в чате](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление **свойства policyViolation** сообщения чата.|
 |**Содержимое с хост-контентом**| | |
 |[Список всего содержимого, на которое было организовано](../api/chatmessage-list-hostedcontents.md) | [коллекция chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Получите все содержимое, связанное с сообщением.|
-|[Получить контент с хост-контентом](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Получите у себя содержимое (и это bytes) для сообщения.|
+|[Получить контент с хост-контентом](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Получите у себя содержимое (и его bytes) для сообщения.|
 
 
 ## <a name="properties"></a>Свойства
@@ -55,7 +55,7 @@ ms.locfileid: "51582783"
 |replyToId| string | Только для чтения. Id родительского сообщения чата или корневого сообщения чата потока. (Применяется только к чатам в каналах, а не к чатам.) |
 |from|[identitySet](identityset.md)| Только для чтения. Сведения о отправителье сообщения чата.|
 |etag| string | Только для чтения. Номер версии сообщения чата. |
-|messageType|string|Тип сообщения чата. Возможные значения: `message` .|
+|messageType|Строка|Тип сообщения чата. Возможное значение: `message` .|
 |createdDateTime|dateTimeOffset|Время создания сообщения чата.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда сообщение чата создается (начальный параметр) или изменено, в том числе при добавлении или удалении реакции. |
 |lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда были сделаны изменения в сообщении чата. Вызывает флаг "Отредактирован" в пользовательском интерфейсе Teams. Если изменение не выполнено, значение `null` .|
@@ -69,7 +69,7 @@ ms.locfileid: "51582783"
 |reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на это сообщение чата (например, Like).|
 |языковые стандарты|string|Локализовать сообщение чата, за набором клиентом. Всегда задавайте значение `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, установленные приложением для предотвращения потери данных (DLP).|
-|chatId|string|Если сообщение было отправлено в чате, представляет собой удостоверение чата.|
+|chatId|Строка|Если сообщение было отправлено в чате, представляет собой удостоверение чата.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
 |webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
 ## <a name="relationships"></a>Связи
@@ -77,7 +77,7 @@ ms.locfileid: "51582783"
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |ответы|[chatMessage](chatmessage.md)| Ответы на указанное сообщение. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, которое было организовано Microsoft Teams, например изображения, фрагменты кода и т.д. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, которое было организовано Microsoft Teams, например, изображения, фрагменты кода и т.д. |
 
 ## <a name="json-representation"></a>Представление JSON
 

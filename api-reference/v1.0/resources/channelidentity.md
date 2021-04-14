@@ -5,12 +5,12 @@ author: Kanaka
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: teamwork
-ms.openlocfilehash: 866469745a4dd3aaf7b22c2a6710e327992e9fee
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: eae8533f549ba0064d9d392fcf60a5baa6479e2c
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582962"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698022"
 ---
 # <a name="channelidentity-resource-type"></a>тип ресурсов channelIdentity
 
@@ -23,8 +23,8 @@ ms.locfileid: "51582962"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|channelId|string|  Идентификатор канала, в котором было размещено сообщение.|
-|teamId|string|  Удостоверение группы, в которой было размещено сообщение.|
+|channelId|Строка|  Идентификатор канала, в котором было размещено сообщение.|
+|teamId|Строка|  Удостоверение группы, в которой было размещено сообщение.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,9 +40,8 @@ ms.locfileid: "51582962"
 
 ```json
 {
-  "channelId": "string",
-  "teamId": "string",
-  
+   "channelId":"string",
+   "teamId":"string"
 }
 ```
 

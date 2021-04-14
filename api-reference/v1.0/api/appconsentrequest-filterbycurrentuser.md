@@ -1,22 +1,22 @@
 ---
 title: 'appConsentRequest: filterByCurrentUser'
-description: Извлечение appConsentRequests, для которых текущий пользователь является рецензентом.
+description: Извлечение объектов appConsentRequest, для которых текущий пользователь является рецензентом.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cf1e0dcf104c540f8a223678adfc2e9eb8fe432e
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: c17e44b27b135eec034eb66399d5ce5163a5928f
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508278"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697959"
 ---
 # <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest: filterByCurrentUser
 
 Пространство имен: microsoft.graph
 
-Извлечения [appConsentRequests,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом и состояние userConsentRequest `InProgress` является .
+Извлечение коллекции объектов [appConsentRequest,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом, и состояние пользователяConsentRequest для доступа к указанному приложению `InProgress` .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,11 +45,11 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса appConsentRequests, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов appConsentRequest, для которых текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="query-parameters"></a>Параметры запроса
 
-Эта функция требует, чтобы параметр запроса OData возвращал коллекцию  `$filter` [userConsentRequests,](../resources/userconsentrequest.md) для которых имеется `InProgress` состояние. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Эта функция требует, чтобы параметр запроса OData возвращал коллекцию объектов  `$filter` [userConsentRequest,](../resources/userconsentrequest.md) для которых имеется `InProgress` состояние. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -63,9 +63,9 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию appConsentRequest](../resources/appconsentrequest.md) в тексте ответа.
+В случае успеха эта функция возвращает код отклика и коллекцию объектов `200 OK` [appConsentRequest](../resources/appconsentrequest.md)  в тексте отклика.
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
@@ -119,7 +119,7 @@ Content-Type: application/json
       "id": "af330b30-dd59-4482-a848-0fd81b0438ed",
       "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
       "appDisplayName": "Moodle",
-      "consentType": "Dynamic",
+      "pendingScopes": [],
       "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }

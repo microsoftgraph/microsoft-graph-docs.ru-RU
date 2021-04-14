@@ -1,22 +1,22 @@
 ---
 title: 'userConsentRequest: filterByCurrentUser'
-description: Извлечение userConsentRequests, для которых текущий пользователь является рецензентом.
+description: Извлечение объектов userConsentRequest, для которых текущий пользователь является рецензентом.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffcbb985adfc21c267291f27e45e8c50b53ccb4f
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: e30d94934f0ccce140610a8ee713e16aff83c3d6
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507993"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698083"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest: filterByCurrentUser
 
 Пространство имен: microsoft.graph
 
-Извлечения [userConsentRequests](../resources/userconsentrequest.md) для appConsentRequest, для которого текущий пользователь является рецензентом и состояние userConsentRequest `InProgress` является .
+Извлечение коллекции [объектов userConsentRequest](../resources/userconsentrequest.md) для доступа к указанному приложению, для которого текущий пользователь является рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса userConsentRequests для приложенияConsentRequest, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов userConsentRequest для объекта appConsentRequest, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -63,12 +63,13 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.
+В случае успешной работы эта функция возвращает код отклика и коллекцию объектов `200 OK` [userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
+В этом запросе вы перечислите все **объекты userConsentRequest,** для которых текущий пользователь является рецензентом и состояние `Completed` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
