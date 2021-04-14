@@ -5,61 +5,63 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f6a6d61007d49359123e8d6f77fe7dcdd2d6e064
-ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.openlocfilehash: 2d5da4231039a88161bfb691034fbe2cab806f4e
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51594909"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51610700"
 ---
-# <a name="list-permissiongrants-of-a-chat"></a><span data-ttu-id="4c120-103">Список объектов permissionGrants чата</span><span class="sxs-lookup"><span data-stu-id="4c120-103">List permissionGrants of a chat</span></span>
+# <a name="list-permissiongrants-of-a-chat"></a><span data-ttu-id="8ee61-103">Список объектов permissionGrants чата</span><span class="sxs-lookup"><span data-stu-id="8ee61-103">List permissionGrants of a chat</span></span>
 
-<span data-ttu-id="4c120-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4c120-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8ee61-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8ee61-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4c120-105">Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="4c120-105">List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md).</span></span> <span data-ttu-id="4c120-106">Это список приложений Azure AD, имеющих доступ к чату, а также тип доступа, который имеет каждое приложение.</span><span class="sxs-lookup"><span data-stu-id="4c120-106">This is a list of Azure AD apps that have access to the chat along with the kind of access that each app has.</span></span>
+<span data-ttu-id="8ee61-105">Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="8ee61-105">List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md).</span></span> <span data-ttu-id="8ee61-106">Это список приложений Azure AD, имеющих доступ к чату, одновременно с доступом, который имеет каждое приложение.</span><span class="sxs-lookup"><span data-stu-id="8ee61-106">This is a list of Azure AD apps that have access to the chat along with the kind of access that each app has.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4c120-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4c120-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8ee61-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8ee61-107">Permissions</span></span>
 
-<span data-ttu-id="4c120-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4c120-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8ee61-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8ee61-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4c120-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4c120-110">Permission Type</span></span>                        | <span data-ttu-id="4c120-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4c120-111">Permissions (from least to most privileged)</span></span>                                                                                                                                                        |
+| <span data-ttu-id="8ee61-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8ee61-110">Permission Type</span></span>                        | <span data-ttu-id="8ee61-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8ee61-111">Permissions (from least to most privileged)</span></span>                                                                                                                                                        |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="4c120-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4c120-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="4c120-113">ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span><span class="sxs-lookup"><span data-stu-id="4c120-113">ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span></span>                                    |
-| <span data-ttu-id="4c120-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4c120-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c120-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4c120-115">Not supported.</span></span>                                                                                                                                                                                     |
-| <span data-ttu-id="4c120-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="4c120-116">Application</span></span>                            | <span data-ttu-id="4c120-117">Chat.Manage.Chat\*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span><span class="sxs-lookup"><span data-stu-id="4c120-117">Chat.Manage.Chat\*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span></span> |
+| <span data-ttu-id="8ee61-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8ee61-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="8ee61-113">ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span><span class="sxs-lookup"><span data-stu-id="8ee61-113">ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat</span></span>                                    |
+| <span data-ttu-id="8ee61-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8ee61-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8ee61-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8ee61-115">Not supported.</span></span>                                                                                                                                                                                     |
+| <span data-ttu-id="8ee61-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="8ee61-116">Application</span></span>                            | <span data-ttu-id="8ee61-117">Chat.Manage.Chat\*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span><span class="sxs-lookup"><span data-stu-id="8ee61-117">Chat.Manage.Chat\*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4c120-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4c120-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8ee61-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8ee61-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/permissionGrants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4c120-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="4c120-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="8ee61-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="8ee61-119">Optional query parameters</span></span>
 
-<span data-ttu-id="4c120-120">Эта операция не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="4c120-120">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="8ee61-120">Эта операция не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="8ee61-120">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4c120-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4c120-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8ee61-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8ee61-121">Request headers</span></span>
 
-| <span data-ttu-id="4c120-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4c120-122">Header</span></span>           | <span data-ttu-id="4c120-123">Значение</span><span class="sxs-lookup"><span data-stu-id="4c120-123">Value</span></span>                      |
+| <span data-ttu-id="8ee61-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8ee61-122">Header</span></span>           | <span data-ttu-id="8ee61-123">Значение</span><span class="sxs-lookup"><span data-stu-id="8ee61-123">Value</span></span>                      |
 | :--------------- | :------------------------- |
-| <span data-ttu-id="4c120-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4c120-124">Authorization</span></span>    | <span data-ttu-id="4c120-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4c120-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8ee61-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8ee61-124">Authorization</span></span>    | <span data-ttu-id="8ee61-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8ee61-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4c120-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4c120-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8ee61-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8ee61-127">Request body</span></span>
 
-<span data-ttu-id="4c120-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4c120-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="8ee61-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8ee61-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4c120-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="4c120-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8ee61-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="8ee61-129">Response</span></span>
 
-<span data-ttu-id="4c120-130">В случае успеха этот метод возвращает код отклика `200 OK` и список объектов [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4c120-130">If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.</span></span>
+<span data-ttu-id="8ee61-130">В случае успеха этот метод возвращает код отклика `200 OK` и список объектов [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8ee61-130">If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4c120-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="4c120-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="8ee61-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="8ee61-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="4c120-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="4c120-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8ee61-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="8ee61-132">Request</span></span>
 
-<span data-ttu-id="4c120-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4c120-133">The following is an example of the request.</span></span>
+<span data-ttu-id="8ee61-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8ee61-133">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="8ee61-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="8ee61-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_list_permission_grants"
@@ -67,14 +69,32 @@ GET /chats/{chat-id}/permissionGrants
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@thread.v2/permissionGrants
 ```
+# <a name="c"></a>[<span data-ttu-id="8ee61-135">C#</span><span class="sxs-lookup"><span data-stu-id="8ee61-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-list-permission-grants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="8ee61-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8ee61-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-list-permission-grants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="8ee61-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8ee61-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-list-permission-grants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="8ee61-138">Java</span><span class="sxs-lookup"><span data-stu-id="8ee61-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-list-permission-grants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="4c120-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="4c120-134">Response</span></span>
 
-<span data-ttu-id="4c120-135">Ниже показан пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4c120-135">The following example shows the response.</span></span>
+---
 
-><span data-ttu-id="4c120-136">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="4c120-136">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="8ee61-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="8ee61-139">Response</span></span>
+
+<span data-ttu-id="8ee61-140">Ниже показан пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8ee61-140">The following example shows the response.</span></span>
+
+><span data-ttu-id="8ee61-141">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8ee61-141">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
