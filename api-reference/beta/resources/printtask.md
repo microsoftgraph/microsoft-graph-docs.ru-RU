@@ -1,45 +1,47 @@
 ---
-title: Тип ресурса Принттаск
-description: Представляет задачу, которая выполняется или была выполнена в результате универсального события печати.
+title: тип ресурса printTask
+description: Представляет задачу, выполненную или выполненную в результате события универсальной печати.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: fb41bc68112aa04e1eea825d45982f2f3f0db48c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c684ff64aa4c3667214b61b70a422690381525b3
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973794"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766303"
 ---
-# <a name="printtask-resource-type"></a>Тип ресурса Принттаск
+# <a name="printtask-resource-type"></a>тип ресурса printTask
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет задачу, которая выполняется или была выполнена в результате универсального события печати.
+Представляет задачу, выполненную или выполненную в результате события универсальной печати.
 
-Дополнительные сведения о том, как использовать этот ресурс для поддержки печати по запросу в универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот ресурс для добавления поддержки печати в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список (из Принттаскдефинтион)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получение списка задач, созданных на основе определенного Принттаскдефинитион. Список содержит текущие выполняемые задачи и недавно выполненные задачи. |
+| [Список (от printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получите список задач, созданных на основе определенного шрифтаTaskDefinition. Список включает в себя выполнение текущих задач и недавно завершенных задач. |
+| [Get](../api/printtask-get.md) | [printTask](printtask.md) | Сведения о задаче печати. |
+| [Обновление](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Обновляет задачу печати. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор Принттаск. Только для чтения.|
-|status|[printTaskStatus](printtaskstatus.md)|Текущее состояние выполнения этого Принттаск. **Вызывающее приложение несет ответственность за обновление этого состояния после завершения обработки, если связанный с ним метод printJob не будет перенаправлен на другой принтер.** Если не выполнить отчет о завершении, то соответствующее задание печати блокируется для печати и в конечном итоге удалено. |
-|parentUrl|String|URL-адрес объекта печати, который инициировал эту задачу. Например, `https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}`. Только для чтения.|
+|id|String|Идентификатор printTask. Только для чтения.|
+|status|[printTaskStatus](printtaskstatus.md)|Текущее состояние выполнения этого printTask. **Приложение вызовов отвечает за обновление этого состояния по завершению обработки, если соответствующий printJob не был перенаправлен на другой принтер.** Невыполнение отчетов о завершении приведет к блокировке связанного задания печати от печати и в конечном итоге к их удаляемой работе. |
+|parentUrl|String|URL-адрес для объекта печати, который вызвал эту задачу. Например, `https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}`. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|активирован|[printTaskTrigger](printtasktrigger.md)|Принттасктригжер, который инициировал выполнение этой задачи. Только для чтения.|
-|RDLC|[printTaskDefinition](printtaskdefinition.md)|Принттаскдефинитион, который использовался для создания этой задачи. Только для чтения.|
+|триггер|[printTaskTrigger](printtasktrigger.md)|PrintTaskTrigger, который вызвал выполнение этой задачи. Только для чтения.|
+|определение|[printTaskDefinition](printtaskdefinition.md)|PrintTaskDefinition, который использовался для создания этой задачи. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

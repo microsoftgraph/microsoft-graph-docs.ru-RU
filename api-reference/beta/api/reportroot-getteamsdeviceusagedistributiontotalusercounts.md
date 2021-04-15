@@ -1,24 +1,24 @@
 ---
-title: 'reportRoot: getTeamsDeviceUsageDistributionUserCounts'
-description: Получите количество уникальных лицензированных пользователей Microsoft Teams по типу устройства за выбранный период времени.
+title: 'reportRoot: getTeamsDeviceUsageDistributionTotalUserCounts'
+description: Получите число уникальных пользователей Microsoft Teams, лицензированных или не лицензированных по типу устройства за выбранный период времени.
 localization_priority: Normal
 ms.prod: reports
-author: sarahwxy
+author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c6d6e8cf10071b46d660f5e50e80a45b2a0c1e10
+ms.openlocfilehash: cbb19c4aefaf31060d9c96091bbd5375f83a39ea
 ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766191"
+ms.locfileid: "51766966"
 ---
-# <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
+# <a name="reportroot-getteamsdeviceusagedistributiontotalusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionTotalUserCounts
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите количество уникальных лицензированных пользователей Microsoft Teams по типу устройства за выбранный период времени.
+Получите число уникальных пользователей Microsoft Teams, лицензированных или не лицензированных по типу устройства за выбранный период времени.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,14 +30,14 @@ ms.locfileid: "51766191"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+>**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')
+GET /reports/getTeamsDeviceUsageDistributionTotalUserCounts(period='D7')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -48,7 +48,9 @@ GET /reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
-Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако если требуется указать тип вывода, можно использовать параметр запроса OData, заданный для `$format` text/csv или application/json.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -79,7 +81,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект teamsDeviceUsageDistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект teamsDeviceUsageDistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -91,14 +93,13 @@ CSV-файл содержит столбцы со следующими заго�
 
 Ниже приведен пример запроса.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsdeviceusagedistributionusercounts_csv"
+  "name": "reportroot_getteamsdeviceusagedistributiontotalusercounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionTotalUserCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -137,23 +138,21 @@ Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Li
 
 Ниже приведен пример запроса.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsdeviceusagedistributionusercounts_json"
+  "name": "reportroot_getteamsdeviceusagedistributiontotalusercounts_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionTotalUserCounts(period='D7')?$format=application/json
 ```
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,9 +174,9 @@ Content-Length: 243
       "androidPhone": 34, 
       "ios": 76, 
       "mac": 40, 
+      "windows": 491, 
       "chromeOS": 100, 
       "linux": 60, 
-      "windows": 491, 
       "reportPeriod": "7"
     }
   ]
@@ -194,5 +193,3 @@ Content-Length: 243
   "suppressions": [
   ]
 }-->
-
-

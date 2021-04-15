@@ -1,16 +1,16 @@
 ---
 title: Обновление принтера
-description: Обновление свойств объекта Printer.
+description: Обновление свойств объекта принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 95af5526edbbd40a65e3356efa7cee76cf135c14
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 2a0d40490365a2974a83683f7b9564063f8e25c0
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993980"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766226"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -18,22 +18,22 @@ ms.locfileid: "48993980"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [Printer](../resources/printer.md) .
+Обновление свойств объекта [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
-Только приложение, которое зарегистрировало принтер, может обновлять принтер с помощью разрешений приложения.
+Только приложение, которое зарегистрировал принтер, может обновлять принтер с помощью разрешений приложений.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer. ReadWrite. ALL, Printer. FullControl. ALL |
+|Делегированные (рабочая или учебная учетная запись)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| Printer.ReadWrite.All |
 
->**Примечание:** Сейчас только принтеры, на которых не установлено физическое устройство, могут обновляться с помощью разрешений приложения.
+>**Примечание:** В настоящее время только принтеры, не оснащенные физическим устройством, могут обновляться с помощью разрешений приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,56 +44,61 @@ PATCH /print/printers/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type  | `application/json` При использовании делегированных разрешений `application/ipp` при использовании разрешений приложения. Обязательно.|
+| Content-Type  | `application/json` при использовании делегирования разрешений или `application/ipp` `application/json` при использовании разрешений приложений. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
-### <a name="delegated-permissions-and-json-payload"></a>Делегированные разрешения и полезные данные JSON
+### <a name="delegated-permissions-and-json-payload"></a>Делегирование разрешений и полезной нагрузки JSON
 
-Если в тексте запроса используется делегированные разрешения, укажите значения для соответствующих полей [принтера](../resources/printer.md) , которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. 
+При использовании делегирования разрешений в теле запроса поставляют значения для соответствующих полей принтера, которые необходимо обновить. [](../resources/printer.md) Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. 
 
-Следующие свойства можно обновлять с делегированными разрешениями.
+Следующие свойства можно обновить с помощью делегирования разрешений.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|defaults|[принтердефаултс](../resources/printerdefaults.md)|Параметры печати по умолчанию для принтера.|
-|расположение|[принтерлокатион](../resources/printerlocation.md)|Физическое и/или организационное расположение принтера.|
+|defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
+|расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |displayName|String|Имя принтера.|
 
-### <a name="application-permissions-and-json-payload"></a>Разрешения приложений и полезные данные JSON
-В тексте запроса укажите значения для соответствующих полей [принтера](../resources/printer.md) , которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. 
+### <a name="application-permissions-and-json-payload"></a>Разрешения приложения и полезной нагрузки JSON
+В теле запроса укажи значения [](../resources/printer.md) для соответствующих полей принтера, которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. 
 
-Следующие свойства можно обновлять с помощью разрешений приложения.
+Следующие свойства можно обновить с помощью разрешений приложений.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|defaults|[принтердефаултс](../resources/printerdefaults.md)|Параметры печати по умолчанию для принтера.|
-|capabilities|[принтеркапабилитиес](../resources/printerCapabilities.md)|Возможности принтера, связанного с этим общим принтером.|
+|defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
+|capabilities|[printerCapabilities](../resources/printerCapabilities.md)|Возможности принтера, связанного с этим разделом принтера.|
 |displayName|String|Имя принтера.|
 |manufacturer|String|Производитель принтера.|
 |model|String|Имя модели принтера.|
-|status|[принтерстатус](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
+|status|[printerStatus](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
 |isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
 
-### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезные данные IPP
+### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
-С разрешениями приложения принтер также может обновляться с помощью полезных данных протокола Internet Printing Protocol (IPP). В этом случае текст запроса содержит двоичный поток, представляющий группу атрибутов принтера в [кодировке IPP](https://tools.ietf.org/html/rfc8010).
+С разрешениями приложений принтер также может обновляться с помощью полезной нагрузки протокола интернет-печати (IPP). В этом случае тело запроса содержит двоичный поток, представляюющий группу атрибутов принтера в [кодовом коде IPP.](https://tools.ietf.org/html/rfc8010)
 
-Клиент должен предоставить набор атрибутов принтера с одним или несколькими значениями (включая явно разрешенные значения из диапазона), как определено в [разделе RFC8011 section 5,2](https://tools.ietf.org/html/rfc8011#section-5.2) атрибуты шаблона задания ("XXX-Default", "XXX-supported" и "XXX-Ready"), [Section 5,4](https://tools.ietf.org/html/rfc8011#section-5.4) атрибуты описания принтера и все расширения атрибутов, поддерживаемые принтером. Значения каждого из указанных атрибутов принтера заменяют значения соответствующего атрибута принтера для целевого объекта Printer. Для атрибутов, которые могут иметь несколько значений (1setOf), все значения, предоставляемые клиентом, заменяют все значения атрибута соответствующего объекта Printer.
+Клиент должен предоставить набор атрибутов принтера с одним или более значениями (включая явно разрешенные вне диапазона значения), как это определено в разделе [RFC8011 раздела 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Атрибуты шаблона работы ("xxx-default", "xxx-supported" и "xxx-ready"), Атрибуты описания принтера [5.4](https://tools.ietf.org/html/rfc8011#section-5.4) и все расширения атрибутов, поддерживаемые принтером. Значение (ы) каждого предоставленного атрибута принтера заменяет значение (ы) соответствующего атрибута принтера на объекте целевого принтера. Для атрибутов, которые могут иметь несколько значений (1setOf), все значения, предоставленные клиентом, заменяют все значения соответствующего атрибута объекта Printer.
+
+> **Примечание:** Не пропускать атрибуты операции в теле запроса. Тело запроса должно содержать только атрибуты принтера.
+
+
+> **Примечание:** Чтобы принтеры работали с определенной платформой, она должна соответствовать требованиям этой платформы. Например, на клиенте Windows ожидается, что принтер указывает все атрибуты, которые считаются обязательными в спецификациях [MOPRIA.](https://mopria.org) Обратите внимание, что спецификации MOPRIA доступны только платным членам MOPRIA.
 
 ## <a name="response"></a>Отклик
 
-### <a name="delegated-permissions-and-json-payload"></a>Делегированные разрешения и полезные данные JSON
+### <a name="delegated-permissions-and-json-payload"></a>Делегирование разрешений и полезной нагрузки JSON
 
-При успешном использовании делегированных разрешений этот метод возвращает `200 OK` код отклика и обновленный объект [Printer](../resources/printer.md) в тексте отклика.
+При использовании делегирования разрешений при успешном использовании этот метод возвращает код отклика и обновленный объект принтера `200 OK` в тексте [](../resources/printer.md) ответа.
 
-### <a name="application-permissions-and-json-payload"></a>Разрешения приложений и полезные данные JSON
+### <a name="application-permissions-and-json-payload"></a>Разрешения приложения и полезной нагрузки JSON
 
-При успешном использовании делегированных разрешений этот метод возвращает `200 OK` код отклика и обновленный объект [Printer](../resources/printer.md) в тексте отклика.
+При использовании делегирования разрешений при успешном использовании этот метод возвращает код отклика и обновленный объект принтера `200 OK` в тексте [](../resources/printer.md) ответа.
 
-### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезные данные IPP
+### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
-Если при успешном использовании разрешений приложения этот метод возвращает `204 No content` код отклика. Метод не возвращает данные в теле отклика.
+При использовании разрешений приложений при успешном использовании этот метод возвращает `204 No content` код ответа. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -119,21 +124,6 @@ Content-length: 124
   }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-printer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -153,20 +143,20 @@ Content-length: 1313
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
+  "displayName": "PrinterName",
   "manufacturer": "PrinterManufacturer",
   "model": "PrinterModel",
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
+  "isAcceptingJobs": true,
   "status": {
-    "processingState": "idle",
-    "processingStateReasons": [],
-    "processingStateDescription": ""
+    "state": "idle",
+    "details": [],
+    "description": ""
   },
   "defaults": {
     "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
+    "contentType": "application/oxps",
     "finishings": ["none"],
     "mediaType": "stationery"
   },
@@ -184,9 +174,9 @@ Content-length: 1313
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",

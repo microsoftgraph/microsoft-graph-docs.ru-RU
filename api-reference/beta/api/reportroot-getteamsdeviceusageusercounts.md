@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageUserCounts'
-description: Получение сведений о количестве уникальных пользователей Microsoft Teams в день с сортировкой по типам устройств.
+description: Получите количество ежедневных уникальных пользователей Microsoft Teams, лицензированных по типу устройства.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: e04d0ca1a0c283aca593e0a17dadc24f564045f4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 3675fbc498ae3dfb888ebaf7e8062f149b1200a5
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983225"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766219"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983225"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение сведений о количестве уникальных пользователей Microsoft Teams в день с сортировкой по типам устройств.
+Получите количество ежедневных уникальных пользователей Microsoft Teams, лицензированных по типу устройства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,7 +48,7 @@ GET /reports/getTeamsDeviceUsageUserCounts(period='D7')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
-Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип выходных данных по умолчанию — text/csv. Однако если требуется указать тип выходных данных, можно использовать параметр запроса OData $format text/csv или application/json.
+Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -73,18 +73,20 @@ CSV-файл содержит столбцы со следующими заго�
 - "iOS";
 - "Mac";
 - "Windows";
-- "Report Date" (Дата отчета);
+- Chrome OS
+- Linux
+- Report Date (дата отчета)
 - Report Period (отчетный период)
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` **[teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md)** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md)** в теле ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="csv"></a>CSV
 
-Ниже приводится пример вывода CSV-данных.
+Ниже приводится пример, который выводит CSV.
 
 #### <a name="request"></a>Запрос
 
@@ -125,7 +127,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Linux,Report Date,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -175,6 +177,8 @@ Content-Length: 269
       "ios": 75, 
       "mac": 16, 
       "windows": 257, 
+      "chromeOS": 10, 
+      "linux": 5, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

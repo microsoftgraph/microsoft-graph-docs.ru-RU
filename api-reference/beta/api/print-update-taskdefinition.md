@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bd3b7059b46feaac596edb2618e3aba4a7126c21
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5923c66eca2da9f2f2016434cfd0d92a0cfa7bef
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966922"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766492"
 ---
 # <a name="update-taskdefinition"></a>Обновление taskDefinition
 
@@ -20,18 +20,18 @@ ms.locfileid: "48966922"
 
 Обновление определения задачи.
 
-Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| PrintTaskDefinition.ReadWrite.All |
+|Приложение| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,15 +46,15 @@ PATCH /print/taskDefinitions/{id}
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для соответствующих полей [принттаскдефинитион](../resources/printtaskdefinition.md) , которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укажи значения для соответствующих полей [printTaskDefinition,](../resources/printtaskdefinition.md) которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Имя Принттаскдефинитион.|
-|createdBy|String|Сведения о приложении, которое создало определение задачи. `createdBy.displayName`Можно обновить только свойство.|
+|displayName|String|Имя печатиTaskDefinition.|
+|createdBy|String|Сведения о приложении, создав определение задачи. Только `createdBy.displayName` свойство может быть обновлено.|
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [printTaskDefinition](../resources/printtaskdefinition.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -101,10 +101,24 @@ Content-length: 122
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response"
-} -->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printTaskDefinition"
+}
+-->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",
+  "id": "fab143fd-ee61-4358-8558-2c7dee953982",
+  "displayName": "Test TaskDefinitionName",
+  "createdBy": {
+    "appId" : "479688a0-cc3a-4993-ab24-54c7c80b047e",
+    "displayName": "Requesting App Display Name"
+  }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

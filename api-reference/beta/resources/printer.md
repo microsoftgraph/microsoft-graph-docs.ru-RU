@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 9adb08cd553857cbc7f7f9ebb257773b8775fa3f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d90bf05b77c8843fc9fa5e5f32ecae29ffdaf48e
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442889"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765918"
 ---
 # <a name="printer-resource-type"></a>тип ресурса принтера
 
@@ -28,9 +28,9 @@ ms.locfileid: "50442889"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Создание](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
-| [получение](../api/printer-get.md); | [printer](printer.md) | Ознакомьтесь с свойствами и отношениями объекта принтера. |
+| [Get](../api/printer-get.md) | [printer](printer.md) | Ознакомьтесь с свойствами и отношениями объекта принтера. |
 | [Обновление](../api/printer-update.md) | [printer](printer.md) | Обновление объекта принтера. |
-| [удаление](../api/printer-delete.md); | Нет | Отрегистрим физический принтер из службы универсальной печати. |
+| [Delete](../api/printer-delete.md) | Нет | Отрегистрим физический принтер из службы универсальной печати. |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Нет | Восстановление параметров по умолчанию принтера до значений, заданных производителем. |
 | [Список заданий](../api/printer-list-jobs.md) | [коллекция printJob](printjob.md) | Получите список заданий печати, которые в очереди для обработки принтером. |
 | [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создайте новое задание печати для принтера. Чтобы приступить к печати задания, используйте [start](../api/printjob-start.md). |
@@ -42,18 +42,18 @@ ms.locfileid: "50442889"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор документа. Только для чтения.|
+|id|String|Идентификатор принтера. Только для чтения.|
 |displayName|String|Имя принтера.|
 |manufacturer|String|Производитель сообщил на принтере.|
 |model|String|Имя модели, о чем сообщает принтер.|
 |registeredDateTime|DateTimeOffset|DateTimeOffset при регистрации принтера. Только для чтения.|
 |status|[printerStatus](printerstatus.md)|Состояние обработки принтера, включая ошибки.|
 |IsShared|Boolean|True, если принтер является общим; false в противном случае. Только для чтения.|
-|hasPhysicalDevice|Boolean|True, если на принтере есть физическое устройство для печати. Только для чтения.|
-|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
+|hasPhysicalDevice|Логический|True, если на принтере есть физическое устройство для печати. Только для чтения.|
+|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
 |расположение|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |defaults|[printerDefaults](printerdefaults.md)|Параметры печати принтера по умолчанию.|
-|capabilities|[printerCapabilities](printercapabilities.md)|Возможности принтера, связанного с этим разделом принтера.|
+|capabilities|[printerCapabilities](printercapabilities.md)|Возможности принтера.|
 |lastSeenDateTime|DateTimeOffset|Самая недавняя датаTimeOffset при взаимодействии принтера с универсальной печатью. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

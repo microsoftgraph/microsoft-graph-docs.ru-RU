@@ -1,35 +1,35 @@
 ---
-title: Создание Алловедграуп для Принтершаре
-description: Предоставление указанному групповому доступу на отправку заданий печати на связанный принтер.
+title: Создание allowedGroup для принтераShare
+description: Предоставление указанной группе доступа для отправки заданий печати на связанный принтер.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0d1217c43b88803645fa1c4013a53691941717cc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 57f844b98da47f5063ee3aaee7534b5e242ad5d0
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967791"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765995"
 ---
-# <a name="create-allowedgroup-for-printershare"></a>Создание Алловедграуп для Принтершаре
+# <a name="create-allowedgroup-for-printershare"></a>Создание allowedGroup для принтераShare
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предоставление указанному групповому доступу на отправку заданий печати связанному [принтершаре](../resources/printershare.md).
+Предоставление указанной группе доступа для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,10 +43,10 @@ POST /print/shares/{id}/allowedGroups/$ref
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса добавьте ссылку на объект Group с помощью `@odata.id` формата, как показано в следующем примере.
+В теле запроса укажи ссылку на объект группы с помощью формата, как показано `@odata.id` в следующем примере.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `201 Created`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -86,7 +86,7 @@ Content-length: 67
 ---
 
 
-В теле запроса добавьте ссылку на объект Group, указав URI Microsoft Graph в `@odata.id` поле тела JSON.
+В теле запроса укажи ссылку на объект группы, включив URI Microsoft Graph группы в поле `@odata.id` тела JSON.
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 

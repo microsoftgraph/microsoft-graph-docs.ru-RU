@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bfd3f6e71e8fd56c630cfcaa5b56cc32eff4e148
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 42804622f94207e304ada3a9538f860415ddbf53
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034060"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766254"
 ---
 # <a name="get-printer"></a>Получение принтера
 
@@ -21,15 +21,15 @@ ms.locfileid: "50034060"
 Извлечение свойств и связей объекта [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Пользователь, выписав его, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Printer.Read.All, Printer.ReadWrite.All |
+|Приложение| Printer.Read.All, Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,9 +39,9 @@ GET /print/shares/{id}/printer
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запроса OData, в том числе $select, $expand для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запроса OData, включая $select, $expand, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-например, 
+например. 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
@@ -53,8 +53,8 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект](../resources/printer.md) принтера в тексте отклика.
-По умолчанию отклик не будет содержать [printerCapabilities.](../resources/printerCapabilities.md) Чтобы получить **printerCapabilities,** используйте параметр `$select` запроса. 
+В случае успешного использования этот метод возвращает код отклика и `200 OK` объект [принтера](../resources/printer.md) в тексте отклика.
+По умолчанию ответ не будет содержать [printerCapabilities](../resources/printerCapabilities.md). Чтобы получить **printerCapabilities,** используйте параметр `$select` запроса. 
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -102,22 +102,39 @@ Content-length: 1313
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
+  "displayName": "PrinterName",
   "manufacturer": "PrinterManufacturer",
   "model": "PrinterModel",
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
+  "isAcceptingJobs": true,
   "status": {
-    "processingState": "stopped",
-    "processingStateReasons": ["disconnected"],
-    "processingStateDescription": ""
+     "state": "stopped",
+    "details": [
+      "disconnected"
+    ],
+    "description": ""
   },
   "defaults": {
-    "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
-    "finishings": ["none"],
-    "mediaType": "stationery"
+    "copiesPerJob": 1,
+    "finishings": [
+      "none"
+    ],
+    "mediaColor": "Unknown",
+    "mediaType": "stationery",
+    "mediaSize": "North America Letter",
+    "pagesPerSheet": 1,
+    "orientation": "portrait",
+    "outputBin": "auto",
+    "inputBin": "auto",
+    "contentType": "application/oxps",
+    "fitPdfToPage": false,
+    "multipageLayout": null,
+    "colorMode": "color",
+    "quality": "medium",
+    "duplexMode": "oneSided",
+    "dpi": 600,
+    "scaling": null
   },
   "location": {
     "latitude": 1.1,
@@ -133,9 +150,9 @@ Content-length: 1313
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",

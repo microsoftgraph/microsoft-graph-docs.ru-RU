@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f4f143b66ba93b488c747eebfda7777e9800aea5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 5e7ccf00729e9acaffd08c2618d3f3249a2a268e
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883048"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697202"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -40,9 +40,9 @@ ms.locfileid: "49883048"
 > ```powershell
 >    Select-MgProfile beta
 > ```
-Чтобы получить конфигурацию аналитики элементов для организации, используйте модуль PowerShell Microsoft Graph и следующую команду, заменив в ней `$OrgID` на применимый идентификатор вашей организации:
+Чтобы получить конфигурацию аналитики элементов для организации, используйте модуль PowerShell Microsoft Graph и следующую команду, заменив в ней `$TenantId` на идентификатор вашего клиента Azure Active Directory. Этот идентификатор можно получить на странице обзора Azure Active Directory.
 ```powershell
-   Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
+   Get-MgOrganizationSettingItemInsight -OrganizationId $TenantId
 ```
 
 По умолчанию аналитика элементов включена для всей организации. С помощью модуля PowerShell Microsoft Graph можно изменить это и отключить аналитику элементов для всех пользователей в организации. 
@@ -52,13 +52,13 @@ ms.locfileid: "49883048"
 >    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
 > ```
 
-Используйте следующую команду, заменив `$OrgID` на идентификатор организации и указав `-IsEnabledInOrganization` как `false`.
+Используйте следующую команду, заменив `$TenantId` на ваш идентификатор клиента Azure Active Directory и указав для `-IsEnabledInOrganization` значение `false`.
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -IsEnabledInOrganization:$false
 ```
-Также можно изменить поведение по умолчанию и отключить аналитику элементов для определенной группы Azure AD. Используйте следующую команду, заменив `$OrgID` на идентификатор организации, а `$GroupID` — на идентификатор группы Azure AD.
+Также можно изменить поведение по умолчанию и отключить аналитику элементов для определенной группы Azure AD. Используйте следующую команду, заменив `$TenantId` на ваш идентификатор клиента Azure Active Directory, а `$GroupID` — на идентификатор группы Azure Active Directory.
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -DisabledForGroup $GroupId
 ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>Настройка аналитики элементов с помощью API REST

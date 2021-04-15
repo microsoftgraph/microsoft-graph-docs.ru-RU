@@ -1,16 +1,16 @@
 ---
 title: 'printJob: перенаправление'
-description: Перенаправить задание печати на другой принтер.
+description: Перенаправляйте задание печати на другой принтер.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2b99f9e2e6d0def97c1f2a23837f79e61b8e3341
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 8e31cfdff953feb689e7799954dd5ae260e9943e
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689367"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766422"
 ---
 # <a name="printjob-redirect"></a>printJob: перенаправление
 
@@ -18,14 +18,14 @@ ms.locfileid: "49689367"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Перенаправить задание печати](../resources/printjob.md) на другой [принтер.](../resources/printer.md)
+[Перенаправляйте задание печати](../resources/printjob.md) на другой [принтер.](../resources/printer.md)
 
-Дополнительные сведения о том, как использовать этот API для добавления поддержки печати потягивки в универсальную печать, см. в подразделе "Расширение универсальной печати для поддержки печати [с помощью оттягивать".](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть [](printer-get.md) активная подписка универсальной печати, разрешение на получение доступа к принтеру и одно из разрешений, перечисленных в следующей таблице.
+Чтобы использовать службу универсальной печати, клиент пользователя или приложения должен иметь активную подписку на универсальную печать, разрешение на получение доступа к принтеру и одно из разрешений, перечисленных в следующей таблице. [](printer-get.md)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -44,15 +44,15 @@ POST /print/printers/{id}/jobs/{id}/redirect
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укавите ИД принтера, на который должно быть перенаправлено задание печати.
+В теле запроса укажи ID принтера, на который необходимо перенаправить задание печати.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|destinationPrinterId|Строка|ИД принтера, на который должно быть перенаправлено задание печати.|
-|configuration|microsoft.graph.printJobConfiguration|Обновлена конфигурация задания печати.|
+|destinationPrinterId|String|ID принтера, на который должно быть перенаправлено задание печати.|
+|configuration|microsoft.graph.printJobConfiguration|Обновленная конфигурация задания печати.|
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [printJob,](../resources/printjob.md) в очереди для принтера назначения.
+В случае успешного использования этот метод возвращает код отклика и объект `200 OK` [printJob](../resources/printjob.md) в очереди для принтера назначения.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -69,24 +69,40 @@ POST /print/printers/{id}/jobs/{id}/redirect
 POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/redirect
 
 {
-  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
+  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
+  }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -114,8 +130,40 @@ Content-length: 437
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "processing",
-    "processingStateDescription": "The print job is currently being processed by the printer."
+    "state": "processing",
+    "description": "The print job is currently being processed by the printer.",
+    "details": ["interpreting"]
+  },
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
   }
 }
 ```

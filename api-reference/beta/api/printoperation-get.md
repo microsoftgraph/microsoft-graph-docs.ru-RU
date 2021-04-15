@@ -1,33 +1,33 @@
 ---
-title: Получение Принтоператион
-description: Получение объекта Принтоператион.
+title: Get printOperation
+description: Извлечение printOperation.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 35521daa461c60290567a0202c07e2619de73ae5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c2af9b1a257943bb1bf05d864286c6382a4e9304
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968246"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766415"
 ---
-# <a name="get-printoperation"></a>Получение Принтоператион
+# <a name="get-printoperation"></a>Get printOperation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [принтоператион](../resources/printoperation.md) .
+Извлечение свойств и связей объекта [printOperation.](../resources/printoperation.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer. Create, Printer. ReadWrite. ALL, Printer. FullControl. ALL |
+|Делегированные (рабочая или учебная учетная запись)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| Не поддерживается. |
 
@@ -45,7 +45,7 @@ GET /print/operations/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтоператион](../resources/printOperation.md) (или производный от **принтоператион** ) в теле отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [printOperation](../resources/printOperation.md) (или производный **printOperation)** в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -92,7 +92,7 @@ Content-type: application/json
 Content-length: 1199
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#print/operations/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations/$entity",
     "@odata.type": "#microsoft.graph.printerCreateOperation",
     "id": "81f4cca3-b3b7-47ea-9f88-7ddbf7208ef4",
     "createdDateTime": "2020-06-15T22:27:03.031849Z",
@@ -103,26 +103,20 @@ Content-length: 1199
     },
     "printer": {
         "registeredDateTime": "2020-06-15T22:27:12.0920077Z",
-        "acceptingJobs": null,
         "isShared": false,
         "id": "e56f9cdd-acec-486f-a05e-b622ff0bcc7d",
-        "name": "Test Printer",
+        "displayName": "Test Printer",
         "manufacturer": "Test Printer Manufacturer",
         "model": "Test Printer Model",
         "isAcceptingJobs": null,
-        "capabilities": null,
         "status": {
-            "processingState": "unknown",
-            "processingStateReasons": [],
-            "processingStateDescription": ""
+            "state": "unknown",
+            "details": [],
+            "description": ""
         },
         "location": {
             "latitude": null,
             "longitude": null
-        },
-        "defaults": {
-            "copiesPerJob": 1,
-            "finishings": []
         }
     }
 }

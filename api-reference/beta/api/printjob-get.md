@@ -1,16 +1,16 @@
 ---
 title: Получение printJob
-description: Получение свойств и связей задания печати.
+description: Извлечение свойств и связей задания печати.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: eba94363ccb030096f9ee13a303a159c9383cb33
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c19306c2426603c39fb7892177be262feee03982
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968348"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766457"
 ---
 # <a name="get-printjob"></a>Получение printJob
 
@@ -18,28 +18,28 @@ ms.locfileid: "48968348"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей задания печати.
+Извлечение свойств и связей задания печати.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям пользователь или клиент приложения должен иметь активную универсальную подписку на печать и иметь разрешение на получение доступа к [принтеру](printer-get.md) или [Получение](printershare-get.md) доступа к принтершаре в зависимости от того, используется ли принтер или принтершаре.
+Помимо следующих разрешений, клиент пользователя или приложения должен иметь активную подписку на универсальную печать и иметь разрешение, которое предоставляет доступ [к принтеру Get](printer-get.md) или [Get printerShare](printershare-get.md) в зависимости от того, используется ли принтер или принтер.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| PrintJob. ReadBasic, PrintJob. Read, PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Приложение| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Чтобы получить задание с принтера:
+Чтобы получить задание на принтере:
 ```http
 GET /print/printers/{id}/jobs/{id}
 ```
 
-Чтобы получить задание из общей папки принтера, выполните следующие действия:
+Чтобы получить задание из доли принтера:
 ```http
 GET /print/shares/{id}/jobs/{id}
 ```
@@ -55,13 +55,13 @@ GET /print/shares/{id}/jobs/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [printJob](../resources/printjob.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект printJob](../resources/printjob.md) в тексте ответа.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-print-job"></a>Пример 1: получение задания печати
+### <a name="example-1-get-print-job"></a>Пример 1. Задание печати
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса на получение метаданных для задания печати.
+Ниже приводится пример запроса на получения метаданных для задания печати.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -108,16 +108,21 @@ Content-length: 408
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
   "createdBy": {},
   "status": {
-    "processingState": "completed",
-    "processingStateDescription": "The print job has completed successfully and no further processing will take place."
-  }
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false
 }
 ```
 
-### <a name="example-2-get-print-job-with-task-list"></a>Пример 2: получение задания печати со списком задач
+### <a name="example-2-get-print-job-with-task-list"></a>Пример 2. Получить задание печати со списком задач
 
 #### <a name="request"></a>Запрос
-Ниже приведен запрос на получение задания печати и всех выполняемых или выполненных [задач](../resources/printtask.md) .
+Ниже приводится запрос на выполнение задания [](../resources/printtask.md) печати и любые задачи, которые выполняются или выполняются.
 
 <!-- {
   "blockType": "request",
@@ -150,8 +155,15 @@ Content-length: 774
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "pendingHeld",
-    "processingStateDescription": "The job is not a candidate for processing yet."
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "tasks": [
     {
@@ -166,10 +178,10 @@ Content-length: 774
 }
 ```
 
-### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>Пример 3: получение задания печати и связанных с ним данных документа
+### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>Пример 3. Получить задание печати и связанные с ним данные документов
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса на получение задания печати и связанных с ним данных документа.
+Ниже приводится пример запроса на задание печати и связанных с ним данных документов.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -224,8 +236,15 @@ Content-length: 1688
     "oDataType": null
   },
   "status": {
-  "processingState": "aborted",
-  "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+  "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
@@ -233,28 +252,7 @@ Content-length: 1688
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
       "displayName": "",
       "contentType": "application/oxps",
-      "size": 276604,
-      "configuration": {
-        "quality": "medium",
-        "dpi": 300,
-        "feedDirection": null,
-        "orientation": "landscape",
-        "duplexMode": "oneSided",
-        "copies": 2,
-        "colorMode": "color",
-        "inputBin": null,
-        "outputBin": null,
-        "mediaSize": null,
-        "mediaType": null,
-        "finishings": [],
-        "pagesPerSheet": null,
-        "multipageLayout": "clockwiseFromTopLeft",
-        "collate": true,
-        "scaling": null,
-        "fitPdfToPage": null,
-        "margin": null,
-        "pageRanges": []
-      }
+      "size": 276604
     }
   ]
 }

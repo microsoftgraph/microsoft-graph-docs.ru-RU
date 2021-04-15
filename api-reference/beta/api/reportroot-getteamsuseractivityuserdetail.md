@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: fd7e09dde34eb77a78b63cfaf10de31c4796e908
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: eba2f5d05a5571bf7f4fa4cd72d9a945b9936481
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982903"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766401"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -52,7 +52,7 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип выходных данных по умолчанию — text/csv. Однако если требуется указать тип выходных данных, можно использовать параметр запроса OData $format text/csv или application/json.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -80,20 +80,35 @@ CSV-файл содержит столбцы со следующими заго�
 - Private Chat Message Count (Количество сообщений в приватных чатах);
 - Call Count (Количество звонков);
 - Meeting Count (Количество собраний);
+- Организованный подсчет собраний
+- Собрания, на которые было посчитано
+- Ad Hoc Meetings Organized Count
+- Ad Hoc Meetings Attended Count
+- Запланированный разовый подсчет собраний
+- Плановые одновековые собрания, на которые присутствовало количество
+- Запланированные повторные собрания Организованный подсчет
+- Запланированные повторяющиеся собрания, на которые присутствовало количество
+- Продолжительность звука
+- Длительность видео
+- Продолжительность обмена экранами
+- Продолжительность звука в секундах
+- Длительность видео в секундах
+- Продолжительность обмена экрана в секундах
 - Has Other Action (Есть другое действие);
-- Report Period (Отчетный период).
+- Лицензировано
+- Report Period (отчетный период)
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` **[teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** в тексте ответа.
 
-Размер страницы по умолчанию для этого запроса составляет 2000 элементов.
+Размер страницы по умолчанию для этого запроса — 2000 элементов.
 
 ## <a name="example"></a>Пример
 
 ### <a name="csv"></a>CSV
 
-Ниже приводится пример вывода CSV-данных.
+Ниже приводится пример, который выводит CSV.
 
 #### <a name="request"></a>Запрос
 
@@ -134,7 +149,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -179,6 +194,7 @@ Content-Length: 452
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -189,6 +205,17 @@ Content-Length: 452
       "privateChatMessageCount": 49, 
       "callCount": 2, 
       "meetingCount": 0, 
+      "meetingsOrganizedCount": 0, 
+      "meetingsAttendedCount": 0, 
+      "adHocMeetingsOrganizedCount": 0, 
+      "adHocMeetingsAttendedCount": 0, 
+      "scheduledOneTimeMeetingsOrganizedCount": 0, 
+      "scheduledOneTimeMeetingsAttendedCount": 0, 
+      "scheduledRecurringMeetingsOrganizedCount": 0, 
+      "scheduledRecurringMeetingsAttendedCount": 0, 
+      "audioDuration": 00:00:00, 
+      "videoDuration": 00:00:00, 
+      "screenShareDuration": 00:00:00, 
       "hasOtherAction": true, 
       "reportPeriod": "7"
     }

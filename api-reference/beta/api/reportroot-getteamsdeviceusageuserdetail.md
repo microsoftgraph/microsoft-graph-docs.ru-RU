@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: db365af8a666e128dc4047c204de05cab8b8f24f
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ebb9bd025ae17806a2b4c8060d453915c6d05cae
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982966"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766163"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -52,7 +52,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип выходных данных по умолчанию — text/csv. Однако если требуется указать тип выходных данных, можно использовать параметр запроса OData $format text/csv или application/json.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -74,26 +74,29 @@ CSV-файл содержит столбцы со следующими заго�
 - "User Principal Name" (Имя участника-пользователя);
 - Last Activity Date (Дата последнего действия);
 - Is Deleted (Удален);
-- "Deleted Date" (Дата удаления);
+- Deleted Date (дата удаления)
 - Used Web (использовал браузер);
 - Used Windows Phone (использовал телефон с Windows);
 - Used iOS (использовал iOS);
 - Used Mac (использовал Mac);
 - Used Android Phone (использовал телефон с Android);
 - Used Windows (использовал Windows);
-- Report Period (отчетный период).
+- Используемая ОС Chrome
+- Использованный Linux
+- Лицензировано
+- Report Period (отчетный период)
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` **[teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md)** в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md)** в тексте ответа.
 
-Размер страницы по умолчанию для этого запроса составляет 2000 элементов.
+Размер страницы по умолчанию для этого запроса — 2000 элементов.
 
 ## <a name="example"></a>Пример
 
 ### <a name="csv"></a>CSV
 
-Ниже приводится пример вывода CSV-данных.
+Ниже приводится пример, который выводит CSV.
 
 #### <a name="request"></a>Запрос
 
@@ -134,7 +137,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -179,6 +182,7 @@ Content-Length: 374
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -188,6 +192,8 @@ Content-Length: 374
       "usedMac": false, 
       "usedAndroidPhone": false, 
       "usedWindows": true, 
+      "usedChromeOS": false, 
+      "usedLinux": false, 
       "reportPeriod": "7"
     }
   ]

@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса Принттасктригжер
-description: Определяет условия, при которых новый Принттаск будет выполняться на основе связанного Принттаскдефинитион.
+title: тип ресурса printTaskTrigger
+description: Определяет условия, при которых будет выполнен новый printTask на основе связанного печатиTaskDefinition.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: fc05fe9011d91ac9da5f74a6079537ebfba25160
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de2da4f94894d9744fdfdd302b310251cd91fdb3
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078294"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766324"
 ---
-# <a name="printtasktrigger-resource-type"></a>Тип ресурса Принттасктригжер
+# <a name="printtasktrigger-resource-type"></a>тип ресурса printTaskTrigger
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определяет условие, при котором новый [принттаск](printtask.md) будет запускаться на основе связанного [принттаскдефинитион](printtaskdefinition.md).
+Определяет условие, при котором будет запускаться новый [printTask](printtask.md) на основе связанного с ним [принтаTaskDefinition.](printtaskdefinition.md)
 
-Дополнительные сведения о том, как использовать этот ресурс для поддержки печати по запросу в универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот ресурс для добавления поддержки печати в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/printer-list-tasktriggers.md) | Коллекция [принттасктригжер](printtasktrigger.md) | Получение списка Принттасктригжерс, связанных с определенным [принтером](printer.md). |
-| [получение](../api/printtasktrigger-get.md); | [printTaskTrigger](printtasktrigger.md) | Получение Принттасктригжер, связанного с определенным [принттаск](printtask.md). |
+| [Список](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Получите список printTaskTriggers, связанных с определенным [принтером.](printer.md) |
+| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Получите определенный шрифтTaskTrigger, связанный с определенным [принтером.](printer.md)|
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор Принттасктригжер. Только для чтения.|
-|event|принтевент|Универсальное событие печати, которое вызывает срабатывание нового [принттаск](printtask.md) . Допустимые значения описаны в приведенной ниже таблице.|
+|id|String|Идентификатор printTaskTrigger. Только для чтения.|
+|event|printEvent|Событие Universal Print, которое приведет к запуску новой [печатиTask.](printtask.md) Допустимые значения описаны в следующей таблице.|
 
-### <a name="printevent-values"></a>значения Принтевент
+### <a name="printevent-values"></a>printEvent values
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|жобстартед|нуль|Представляет событие, возникающее при запуске нового задания печати.|
-|unknownFutureValue|1 |Значение Sentinel для перечисления расширяемые. Не следует использовать.|
+|jobStarted|0|Представляет событие, которое происходит при работе с новой печатью.|
+|unknownFutureValue|1|Эволюционирующее значение sentinel. Не следует использовать.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|[printTaskDefinition](printtaskdefinition.md)|Абстрактное определение, которое будет использоваться для создания объекта [принттаск](printtask.md) при запуске события Print. Только для чтения.|
+|определение|[printTaskDefinition](printtaskdefinition.md)|Абстрактное определение, которое будет использоваться для создания [printTask](printtask.md) при запуске события печати. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

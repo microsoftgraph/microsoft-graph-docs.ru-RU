@@ -1,16 +1,16 @@
 ---
 title: Получение printerShare
-description: Извлечение свойств и связей из обоймы принтера.
+description: Извлечение свойств и связей совместной работы принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a30f670d429fb57d92c7c0cf5f615ffb60bb2d59
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: f5f760f8b4fe3fa41046cd32e2c3ae5fe8674532
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784866"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766268"
 ---
 # <a name="get-printershare"></a>Получение printerShare
 
@@ -18,30 +18,30 @@ ms.locfileid: "49784866"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей из обоймы принтера.
+Извлечение свойств и связей совместной работы принтера.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, у пользователя или клиента приложения должна быть активная подписка универсальной печати.
+Помимо следующих разрешений, клиент или клиент приложения должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}
-GET /print/printers/{id}/share
+GET /print/shares/{printerShareId}
+GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запроса OData, в том числе $select, $expand для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запроса OData, включая $select, $expand, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-например, 
+например. 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
@@ -57,8 +57,8 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [printerShare](../resources/printershare.md) в тексте отклика.
-По умолчанию отклик не будет содержать [printerCapabilities.](../resources/printerCapabilities.md) Чтобы получить **printerCapabilities,** используйте параметр `$select` запроса. 
+В случае успешного использования этот метод возвращает код отклика и `200 OK` объект [printerShare](../resources/printershare.md) в тексте отклика.
+По умолчанию ответ не будет содержать [printerCapabilities](../resources/printerCapabilities.md). Чтобы получить **printerCapabilities,** используйте параметр `$select` запроса. 
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
