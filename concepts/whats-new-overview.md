@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 53a1b89dfbd7ba160f62ea36451a0428fe9757f1
-ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
+ms.openlocfilehash: 3450055fbbd834381d5b9a74208425befe029eac
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654095"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766541"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -20,8 +20,8 @@ ms.locfileid: "51654095"
 ## <a name="april-2021-new-and-generally-available"></a>Апрель 2021 г.: новые и общедоступные возможности
 
 ### <a name="teamwork"></a>Командная работа
-- Определяйте канал по свойству **channelIdentity**, если [chatMessage](/graph/api/resources/chatmessage) находится в канале.
-- Определяйте чат по свойству **chatId**, если **chatMessage** находится в чате.
+- Определяйте канал по свойству **channelIdentity**, если [chatMessage](/graph/api/resources/chatmessage) находится в [канале](/graph/api/resources/channel).
+- Определяйте чат по свойству **chatId**, если **[chatMessage](/graph/api/resources/chatmessage)** находится в [чате](/graph/api/resources/chat).
 - Используйте связь **messages**, чтобы получить все ресурсы [chatMessage](/graph/api/resources/chatmessage) в [чате](/graph/api/resources/chat).
 
 ## <a name="april-2021-new-in-preview-only"></a>Апрель 2021 г.: новые возможности только в предварительной версии

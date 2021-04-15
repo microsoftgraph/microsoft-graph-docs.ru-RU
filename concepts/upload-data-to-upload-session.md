@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 448c0525a318cac64bb5d381b986c238f563025d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c51d027a0e76f24f6ec4788ae1429adcc29f2948
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515703"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766317"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Отправка документов с помощью API универсальной печати Microsoft Graph
 
@@ -44,7 +44,10 @@ Content-Range: bytes=0-72796/4533322
 Content-Length: 72797
 
 <bytes 0-72796 of the file>
+
 ```
+
+Здесь 0 и 72796 — это индексы начала и окончания сегмента файла, а 4533322 — размер документа.
 ### <a name="http-response"></a>HTTP-ответ
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
