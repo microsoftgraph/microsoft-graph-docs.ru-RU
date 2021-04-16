@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7adf522284be5778c927c0104889bc42a7674737
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a479aff38b24105e80d3fc0c3f098299b9eeafb4
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771787"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765883"
 ---
 # <a name="update-printer"></a>Обновление принтера
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "50771787"
 Обновление свойств объекта [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
@@ -48,7 +48,7 @@ PATCH /print/printers/{printerId}
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|application/json. Обязательный.|
+|Content-Type|`application/json` при использовании делегирования разрешений или `application/ipp` `application/json` при использовании разрешений приложений. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ PATCH /print/printers/{printerId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
-|location|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение принтера.|
+|расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |displayName|String|Имя принтера.|
 
 ### <a name="application-permissions-and-json-payload"></a>Разрешения приложения и полезной нагрузки JSON
@@ -77,13 +77,18 @@ PATCH /print/printers/{printerId}
 |manufacturer|String|Производитель принтера.|
 |model|String|Имя модели принтера.|
 |status|[printerStatus](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
-|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
+|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
 С разрешениями приложений принтер также может обновляться с помощью полезной нагрузки протокола интернет-печати (IPP). В этом случае тело запроса содержит двоичный поток, представляюющий группу атрибутов принтера в [кодовом коде IPP.](https://tools.ietf.org/html/rfc8010)
 
 Клиент должен предоставить набор атрибутов принтера с одним или более значениями (включая явно разрешенные вне диапазона значения), как это определено в разделе [RFC8011 раздела 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Атрибуты шаблона работы ("xxx-default", "xxx-supported" и "xxx-ready"), Атрибуты описания принтера [5.4](https://tools.ietf.org/html/rfc8011#section-5.4) и все расширения атрибутов, поддерживаемые принтером. Значение (ы) каждого предоставленного атрибута принтера заменяет значение (ы) соответствующего атрибута принтера на объекте целевого принтера. Для атрибутов, которые могут иметь несколько значений (1setOf), все значения, предоставленные клиентом, заменяют все значения соответствующего атрибута объекта Printer.
+
+> **Примечание:** Не пропускать атрибуты операции в теле запроса. Тело запроса должно содержать только атрибуты принтера.
+
+
+> **Примечание:** Чтобы принтеры работали с определенной платформой, она должна соответствовать требованиям этой платформы. Например, на клиенте Windows ожидается, что принтер указывает все атрибуты, которые считаются обязательными в спецификациях [MOPRIA.](https://mopria.org) Обратите внимание, что спецификации MOPRIA доступны только платным членам MOPRIA.
 
 ## <a name="response"></a>Отклик
 

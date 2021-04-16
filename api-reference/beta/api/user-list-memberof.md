@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 72528905e87c7aa46cb1f7e4cec6d88beb931eb0
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 677af1dedf00fa7fa917a36e70480805bf03f672
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473684"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836978"
 ---
 # <a name="list-user-memberof"></a>Перечисление user memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "51473684"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите группы, роли каталогов и административные единицы, в которые пользователь входит напрямую. Эта операция не является транзитивной.
+Получите [группы,](../resources/group.md) [роли каталогов](../resources/directoryrole.md)и [административные](../resources/administrativeunit.md) единицы, в которые пользователь входит напрямую. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 

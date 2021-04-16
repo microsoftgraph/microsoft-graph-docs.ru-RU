@@ -10059,7 +10059,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -12300,8 +12300,12 @@ items:
                     href: api/reportroot-getteamsdeviceusageuserdetail.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getteamsdeviceusageusercounts.md
-                  - name: Получение количества пользователей рассылки
+                  - name: Общее количество пользователей
+                    href: api/reportroot-getteamsdeviceusagetotalusercounts.md
+                  - name: Получение распределенного количества пользователей
                     href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
+                  - name: Общее количество пользователей в распределении
+                    href: api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md
               - name: Активность пользователей Microsoft Teams
                 href: resources/microsoft-teams-user-activity-reports.md
                 items:
@@ -12309,8 +12313,16 @@ items:
                     href: api/reportroot-getteamsuseractivityuserdetail.md
                   - name: Получение количества действий
                     href: api/reportroot-getteamsuseractivitycounts.md
+                  - name: Общее количество действий
+                    href: api/reportroot-getteamsuseractivitytotalcounts.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getteamsuseractivityusercounts.md
+                  - name: Общее количество пользователей
+                    href: api/reportroot-getteamsuseractivitytotalusercounts.md
+                  - name: Получение распределенного количества пользователей
+                    href: api/reportroot-getteamsuseractivitydistributionusercounts.md
+                  - name: Общее количество пользователей в распределении
+                    href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
               - name: Действия в Outlook
                 href: resources/email-activity-reports.md
                 items:
@@ -12709,7 +12721,7 @@ items:
                 href: api/list-create.md
               - name: Список дочерних сайтов
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: Разрешения
                 items:
                   - name: Разрешение
                     href: resources/permission.md
@@ -12874,7 +12886,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
