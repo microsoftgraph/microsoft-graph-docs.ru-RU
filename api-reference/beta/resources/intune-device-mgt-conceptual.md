@@ -4,12 +4,12 @@ description: Перечислены API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6e7fc3fac47f6b2adecab2c61a6d04d1e069705e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f14fe5075e18a046698bc5725ccb9bb1d2618a89
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159321"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863943"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -31,7 +31,6 @@ ms.locfileid: "51159321"
 - [Событие аудита](intune-auditing-auditevent.md)
 - [Свойство аудита](intune-auditing-auditproperty.md)
 - [Ресурс аудита](intune-auditing-auditresource.md)
-- [Зарегистрированное состояние Azure](intune-devices-azureadregisteredstate.md)
 - [Выражение условия двоичного управления](intune-fencing-binarymanagementconditionexpression.md)
 - [Тип оператора выражения условия двоичного управления](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Результат группового действия в отношении управляемых устройств](intune-devices-bulkmanageddeviceactionresult.md)
@@ -169,6 +168,7 @@ ms.locfileid: "51159321"
 - [Вошедший пользователь](intune-devices-loggedonuser.md)
 - [Состояние режима пропажи](intune-devices-lostmodestate.md)
 - [Состояние вредоносных программ для устройства Windows](intune-devices-malwarestateforwindowsdevice.md)
+- [Управляемое устройство](intune-devices-manageddevice.md)
 - [Архитектура управляемых устройств](intune-devices-manageddevicearchitecture.md)
 - [Настройки очистки управляемых устройств](intune-devices-manageddevicecleanupsettings.md)
 - [Функции управления управляемыми устройствами](intune-devices-manageddevicemanagementfeatures.md)
@@ -219,6 +219,7 @@ ms.locfileid: "51159321"
 - [Сводка состояния базового плана безопасности](intune-deviceintent-securitybaselinestatesummary.md)
 - [Шаблон базового плана безопасности](intune-deviceintent-securitybaselinetemplate.md)
 - [Пользователь общего устройства Apple](intune-devices-sharedappledeviceuser.md)
+- [Tuple_2 выполнения type_ i collection_1 операции](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Выражение условия унарного управления](intune-fencing-unarymanagementconditionexpression.md)
 - [Тип оператора выражения условия унарного управления](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -234,6 +235,7 @@ ms.locfileid: "51159321"
 - [Категория аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticscategory.md)
 - [Сводка устройств облачного управления с аналитикой пользовательских интерфейсов](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
 - [Производительность устройства аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsdeviceperformance.md)
+- [Оценки устройств аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsdevicescores.md)
 - [История запуска устройства для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 - [Процесс запуска устройства аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
 - [Производительность процесса запуска устройства для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
@@ -255,7 +257,9 @@ ms.locfileid: "51159321"
 - [Параметры аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticssettings.md)
 - [Аналитика пользовательских интерфейсов, обобщенная](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Сводка аналитики пользовательских интерфейсов для устройств Windows 10](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [Аналитика пользовательских интерфейсов работает с любого устройства](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [Аналитика пользовательских интерфейсов работает из любой сводки устройств](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
+- [Аналитика пользовательских интерфейсов работает из любой метрики](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Состояние развертывания автопилота Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Тип регистрации автопилота Windows](intune-troubleshooting-windowsautopilotenrollmenttype.md)

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса windowsDomainJoinConfiguration
 description: Конфигурация устройства Для windows Domain Join.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e48eb1c245de182e5060493df689a5e63c5e1d2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 787806f935a834b0387151816422d4cf7d811d1f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474633"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864153"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>тип ресурса windowsDomainJoinConfiguration
 
@@ -30,7 +30,7 @@ ms.locfileid: "50474633"
 |[Список windowsDomainJoinConfigurations](../api/intune-shared-windowsdomainjoinconfiguration-list.md)|[коллекция windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Список свойств и связей [объектов windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
 |[Получить windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-get.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Чтение свойств и связей [объекта windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
 |[Создание windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-create.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Создайте [новый объект windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
-|[Удаление windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-delete.md)|Нет|Удаляет [объект windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
+|[Удаление windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-delete.md)|Нет|Удаляет [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).|Удаление [объекта windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
 |[Обновление windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-update.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Обновление свойств объекта [windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
@@ -46,7 +46,7 @@ ms.locfileid: "50474633"
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |organizationalUnit|String|Организационное подразделение (OU), в котором будет создана учетная запись компьютера. Если этот параметр NULL, хорошо известный контейнер объектов компьютера будет использоваться как опубликованный в домене.|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
@@ -64,7 +64,7 @@ ms.locfileid: "50474633"
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.  Примечание. Представленный здесь объект ответа может быть усечен для краткости. Объекты ответа будут содержать свойства, соответствующие контексту вызова.
+Ниже представлено описание ресурса в формате JSON.  Примечание. Представленный здесь объект отклика может быть усечен для краткости. Объекты ответа будут содержать свойства, соответствующие контексту вызова.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

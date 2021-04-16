@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0804e0c367e379a68305b7b8790d29405a3e235
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 74a0396c4627a8c7f4e496df78964de0ff2965cd
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152931"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863831"
 ---
 # <a name="update-microsofttunnelsite"></a>Обновление microsoftTunnelSite
 
@@ -27,9 +27,9 @@ ms.locfileid: "51152931"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelSite|
-|displayName|Строка|Имя отображения MicrosoftTunnelSite|
-|description|Строка|Описание MicrosoftTunnelSite|
-|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|id|String|Id MicrosoftTunnelSite|
+|displayName|String|Имя отображения MicrosoftTunnelSite|
+|description|String|Описание MicrosoftTunnelSite|
+|publicAddress|String|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 

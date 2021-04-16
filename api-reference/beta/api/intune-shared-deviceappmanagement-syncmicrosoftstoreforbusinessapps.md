@@ -1,16 +1,16 @@
 ---
 title: Действие syncMicrosoftStoreForBusinessApps
 description: Синхронизирует учетную запись Intune с Microsoft Store для бизнеса
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1be868185e634ba74f9f58f1ab4c388efcf5ed3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b1bd3cc43c5b585cab0702540102cb3e560546a0
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474871"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864594"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Действие syncMicrosoftStoreForBusinessApps
 
@@ -27,10 +27,10 @@ ms.locfileid: "50474871"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Адаптация** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **Адаптация** |DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Адаптация** | DeviceManagementApps.ReadWrite.All|
+|Для приложения||
+| &nbsp; &nbsp; **Адаптация** |DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

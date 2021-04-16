@@ -1,22 +1,22 @@
 ---
-title: Функция Жетрелатедаппстатес
+title: функция getRelatedAppStates
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d59a56df349f1deb5f8c8ba110cf4e5db69a7bb9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ded1fe924c5fb849ddee6cd0e8a4be7d7d2904d7
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49285151"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863312"
 ---
-# <a name="getrelatedappstates-function"></a>Функция Жетрелатедаппстатес
+# <a name="getrelatedappstates-function"></a>функция getRelatedAppStates
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "49285151"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Приложения)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Для приложения||
 | &nbsp;&nbsp; **Приложения)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -62,7 +62,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [мобилеаппрелатионшипстате](../resources/intune-apps-mobileapprelationshipstate.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
