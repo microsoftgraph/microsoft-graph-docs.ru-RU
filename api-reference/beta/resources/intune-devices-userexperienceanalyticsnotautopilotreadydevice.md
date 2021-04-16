@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af2a8acce3b98a0615ce8c9b5df86351c69ee903
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8166c5215ab83a8f756a13234bad9bf9121fdbd4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159506"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868031"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>тип ресурса userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -34,18 +34,18 @@ ms.locfileid: "51159506"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства intune.|
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
 |model|String|Модель устройства intune.|
-|managedBy|Строка|Устройство intune управляется.|
-|autoPilotRegistered|Boolean|Автопилотрегистер устройства intune.|
-|autoPilotProfileAssigned|Boolean|Автопилот Устройства intuneProfileAssigned.|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|Устройство intune azureAdRegistered. Возможные значения: `no`, `yes`, `unknown`.|
-|azureAdJoinType|Строка|Azure Ad ad для устройства intune присоединяется кType.|
+|managedBy|String|Устройство intune управляется.|
+|autoPilotRegistered|Логический|Автопилотрегистер устройства intune.|
+|autoPilotProfileAssigned|Логический|Автопилот Устройства intuneProfileAssigned.|
+|azureAdRegistered|Логический|Устройство intune azureAdRegistered.|
+|azureAdJoinType|String|Azure Ad ad для устройства intune присоединяется кType.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,7 +67,7 @@ ms.locfileid: "51159506"
   "managedBy": "String",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "String",
+  "azureAdRegistered": true,
   "azureAdJoinType": "String"
 }
 ```

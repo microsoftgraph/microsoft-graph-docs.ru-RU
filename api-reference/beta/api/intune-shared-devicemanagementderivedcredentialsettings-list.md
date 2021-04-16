@@ -1,26 +1,26 @@
 ---
-title: Список Девицеманажементдериведкредентиалсеттингсес
-description: Список свойств и связей объектов Девицеманажементдериведкредентиалсеттингс.
-author: dougeby
+title: List deviceManagementDerivedCredentialSettingses
+description: Список свойств и связей объектов deviceManagementDerivedCredentialSettings.
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab1a9a6f0c62aea714381c926fab183a15e1fcaa
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 806cb2a4eb3844f9d9f279b45d00cf23114bbbc6
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49210090"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867863"
 ---
-# <a name="list-devicemanagementderivedcredentialsettingses"></a>Список Девицеманажементдериведкредентиалсеттингсес
+# <a name="list-devicemanagementderivedcredentialsettingses"></a>List deviceManagementDerivedCredentialSettingses
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [девицеманажементдериведкредентиалсеттингс](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) .
+Список свойств и связей [объектов deviceManagementDerivedCredentialSettings.](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "49210090"
 |Делегированные (рабочая или учебная учетная запись)||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,7 +52,7 @@ GET /deviceManagement/derivedCredentials
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементдериведкредентиалсеттингс](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 

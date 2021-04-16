@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75f747552f3ff080385862b3540cca36fc88ae4b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: aa0fffb7a5589d618c566b3845968a4f4ca6ae3f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159495"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867576"
 ---
 # <a name="list-userexperienceanalyticsnotautopilotreadydevices"></a>Список userExperienceAnalyticsNotAutopilotReadyDevices
 
@@ -27,9 +27,9 @@ ms.locfileid: "51159495"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsNot
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 548
+Content-Length: 547
 
 {
   "value": [
@@ -79,7 +79,7 @@ Content-Length: 548
       "managedBy": "Managed By value",
       "autoPilotRegistered": true,
       "autoPilotProfileAssigned": true,
-      "azureAdRegistered": "yes",
+      "azureAdRegistered": true,
       "azureAdJoinType": "Azure Ad Join Type value"
     }
   ]

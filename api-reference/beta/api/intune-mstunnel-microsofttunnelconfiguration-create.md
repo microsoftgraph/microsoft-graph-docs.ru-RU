@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3adc02714b7cc71a210e0279e04cec0fb6c894b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e17cd32c6fedf529cab0c840bea93e7d81c1a4cf
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135217"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868157"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Создание microsoftTunnelConfiguration
 
@@ -27,9 +27,9 @@ ms.locfileid: "51135217"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ POST /deviceManagement/microsoftTunnelConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelConfiguration|
-|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
-|description|Строка|Описание MicrosoftTunnelConfiguration|
-|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|id|String|Id MicrosoftTunnelConfiguration|
+|displayName|String|Имя отображения MicrosoftTunnelConfiguration|
+|description|String|Описание MicrosoftTunnelConfiguration|
+|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
 |dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
-|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
 |routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
 |routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
 |splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|

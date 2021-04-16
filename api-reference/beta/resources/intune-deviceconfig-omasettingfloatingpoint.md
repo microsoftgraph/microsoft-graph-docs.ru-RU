@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43c3c73d01eb5e2e44c5f5a0a9e85c2e6577262e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e335f0e99b342df6c596900aab8f1a1933703b9f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273125"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867422"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Тип ресурса omaSettingFloatingPoint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,8 @@ ms.locfileid: "49273125"
 |displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|isEncrypted|Boolean|Указывает, зашифровано ли поле "значение". Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|secretReferenceValueId|String|ReferenceId для поисков секрета для расшифровки. Это свойство доступно только для чтения. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Указывает, зашифровано ли поле значений. Это свойство доступно только для чтения. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Single|Значение.|
 
 ## <a name="relationships"></a>Связи
@@ -50,6 +51,7 @@ ms.locfileid: "49273125"
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "secretReferenceValueId": "String",
   "isEncrypted": true,
   "value": 4.2
 }

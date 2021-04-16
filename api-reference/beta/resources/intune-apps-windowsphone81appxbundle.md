@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса windowsPhone81AppXBundle
-description: Содержит свойства и унаследованные свойства для бизнес-приложений пакета AppX для Windows Phone 8.1.
+title: тип ресурса windowsPhone81AppXBundle
+description: Содержит свойства и унаследованные свойства для приложений пакета Приложений Для Windows Phone 8.1 AppX.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 350a762226d3cc507d1c456b0f8133874f94be4f
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 1de2ee5a013b40bb9b965b4ffc1613d766ebfd30
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154364"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867695"
 ---
-# <a name="windowsphone81appxbundle-resource-type"></a>Тип ресурса windowsPhone81AppXBundle
+# <a name="windowsphone81appxbundle-resource-type"></a>тип ресурса windowsPhone81AppXBundle
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства и унаследованные свойства для бизнес-приложений пакета AppX для Windows Phone 8.1.
+Содержит свойства и унаследованные свойства для приложений пакета Приложений Для Windows Phone 8.1 AppX.
 
 
-Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
+Наследует [от windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список windowsPhone81AppXBundles](../api/intune-apps-windowsphone81appxbundle-list.md)|[Коллекция windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Список свойств и связей объектов [windowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
-|[Get windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-get.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Чтение свойств и связей объекта [windowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
-|[Создание windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-create.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Создание объекта [windowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
-|[Удаление windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-delete.md)|Нет|Удаляет [windowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
-|[Обновление windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-update.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Обновление свойств объекта [windowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
+|[Список windowsPhone81AppXBundles](../api/intune-apps-windowsphone81appxbundle-list.md)|[коллекция windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Список свойств и связей [объектов WindowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
+|[Получить windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-get.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Чтение свойств и связей [объекта WindowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
+|[Создание windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-create.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Создайте [новый объект WindowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
+|[Удаление windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-delete.md)|Нет|Удаляет [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md).|
+|[Обновление windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-update.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Обновление свойств объекта [WindowsPhone81AppXBundle.](../resources/intune-apps-windowsphone81appxbundle.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -50,25 +50,25 @@ ms.locfileid: "50154364"
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|uploadState|Int32|Состояние отправки. Возможные значения: 0- `Not Ready` , 1 - `Ready` , 2 - `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp.](../resources/intune-shared-mobileapp.md) Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Boolean|Значение, указывающее, назначено ли приложению хотя бы одна группа. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список ид тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|dependentAppCount|Int32|Общее количество зависимостей, которые есть у этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|supersedingAppCount|Int32|Общее количество приложений, которые это приложение напрямую или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|supersededAppCount|Int32|Общее количество приложений, которые это приложение напрямую или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|uploadState|Int32|Состояние загрузки. Возможные значения: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|Значение, указывающее, назначено ли приложению по крайней мере одна группа. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список ids тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|dependentAppCount|Int32|Общее число зависимостей, которые имеет детское приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|supersedingAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|supersededAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно вымежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Наследуется от [windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md) Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|identityName|String|Имя удостоверения. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|identityPublisherHash|String|Хэш издателей удостоверений. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|identityResourceIdentifier|String|Идентификатор ресурса Identity. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phoneProductIdentifier|String|Идентификатор продукта телефона. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phonePublisherId|String|ИД издателя телефона. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|identityVersion|String|Версия удостоверения. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|appXPackageInformationList|[Коллекция windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md)|Список сведений о пакете AppX.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Унаследовано от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md). Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|identityName|String|Имя удостоверения. Унаследованный от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityPublisherHash|String|Хэш издателей удостоверений. Унаследованный от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityResourceIdentifier|String|Идентификатор ресурса Identity. Унаследованный от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы. Унаследованный от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phoneProductIdentifier|String|Идентификатор продукта phone. Унаследованный от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phonePublisherId|String|Id издателя телефона. Унаследованный от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityVersion|String|Версия удостоверения. Унаследованный от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|appXPackageInformationList|[коллекция windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md)|Список сведений о пакете AppX.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -76,9 +76,9 @@ ms.locfileid: "50154364"
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|deviceStatuses|[Коллекция mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояния установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|userStatuses|[Коллекция userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Список состояния установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|relationships|[Коллекция mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Набор прямых связей для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|deviceStatuses|[коллекция mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояния установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|userStatuses|[коллекция userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Список состояния установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|отношения|[коллекция mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Набор прямых связей для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |contentVersions|Коллекция [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|Список версий содержимого для этого приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -137,7 +137,8 @@ ms.locfileid: "50154364"
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   },
   "phoneProductIdentifier": "String",
   "phonePublisherId": "String",
@@ -163,7 +164,8 @@ ms.locfileid: "50154364"
         "v10_1809": true,
         "v10_1903": true,
         "v10_1909": true,
-        "v10_2004": true
+        "v10_2004": true,
+        "v10_2H20": true
       }
     }
   ]

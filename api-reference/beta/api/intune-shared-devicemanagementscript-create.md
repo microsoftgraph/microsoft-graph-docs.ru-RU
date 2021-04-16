@@ -1,16 +1,16 @@
 ---
 title: Создание deviceManagementScript
 description: Создание нового объекта deviceManagementScript.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e301f1583e1245982de1b8ecf3f21bf9e97f22ea
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d077f34cef3c75680c48229680c76f0a045694c9
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448034"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867814"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -31,7 +31,7 @@ ms.locfileid: "50448034"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -47,10 +47,10 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON для объекта deviceManagementScript.
 
 В следующей таблице показаны свойства, необходимые при создании deviceManagementScript.
@@ -60,15 +60,14 @@ POST /deviceManagement/deviceManagementScripts
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
 |description|String|Необязательное описание сценария управления устройствами.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
-|scriptContent|Binary|Содержимое скрипта.|
+|scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта.|
+|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра PowerShellScript.|
-|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
 
 
 

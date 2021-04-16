@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 21c8c8b4e5dc6f2d2be27969fe713ebc086ea64b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8fa76a6c4a9138ae406322c1060552992ff0b3e7
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51126222"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867016"
 ---
 # <a name="create-importedappledeviceidentity"></a>Создание объекта importedAppleDeviceIdentity
 
@@ -27,9 +27,9 @@ ms.locfileid: "51126222"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |serialNumber|String|Серийный номер устройства|
-|requestedEnrollmentProfileId|Строка|Администратор ID профиля регистрации намерен примениться к устройству во время следующей регистрации|
+|requestedEnrollmentProfileId|String|Администратор ID профиля регистрации намерен примениться к устройству во время следующей регистрации|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль времени регистрации был назначен устройству|
-|isSupervised|Boolean|Указывает, контролируется ли устройство Apple. Дополнительные сведения можно получить по: https://support.apple.com/HT202837|
+|isSupervised|Boolean|Указывает, контролируется ли устройство Apple. Дополнительные сведения можно получить по: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Boolean|Указывает, удалено ли устройство из Apple Business Manager|
+|isDeleted|Логический|Указывает, удалено ли устройство из Apple Business Manager|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
 |lastContactedDateTime|DateTimeOffset|Время последней контактной даты устройства|
-|description|Строка|Описание устройства|
+|description|String|Описание устройства|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |платформа|[платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

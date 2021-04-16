@@ -1,22 +1,22 @@
 ---
 title: Действие assign
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8175530500ae1ef8459edf476866102fdbc84df2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4b9e31c360eec26c40c326f0b472034b10e86f3f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49232475"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867730"
 ---
 # <a name="assign-action"></a>Действие назначения
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "49232475"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -55,8 +55,8 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|апппровисионингконфигуратионграупассигнментс|Коллекция [к mobileappprovisioningconfiggroupassignment.](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|Пока не задокументировано.|
-|иослобапппровисионингконфигассигнментс|Коллекция [иослобапппровисионингконфигуратионассигнмент](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Пока не задокументировано.|
+|appProvisioningConfigurationGroupAssignments|[коллекция mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|Пока не задокументировано.|
+|iOSLobAppProvisioningConfigAssignments|[коллекция iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Пока не задокументировано.|
 
 
 

@@ -1,26 +1,26 @@
 ---
 title: Удаление iosLobAppProvisioningConfiguration
-description: Удаляет объект iosLobAppProvisioningConfiguration.
-author: dougeby
+description: Удаляет iosLobAppProvisioningConfiguration.
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d78b79483a871085da03293805bad196594ee4eb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 975774547e760f2a0b9baaa540c2a648e3a9f3f4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49232433"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867709"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>Удаление iosLobAppProvisioningConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md).
+Удаляет [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "49232433"
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 

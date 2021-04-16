@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af504a01a4a32e739bdc2faff823fc6192d5c8bd
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3b7cf68452f5b1c2a0b6d8b4df3a06554e4faae7
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134363"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866939"
 ---
 # <a name="create-windowsfeatureupdatecatalogitem"></a>Создание windowsFeatureUpdateCatalogItem
 
@@ -27,9 +27,9 @@ ms.locfileid: "51134363"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsUpdateCatalogItems
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,9 +53,10 @@ POST /deviceManagement/windowsUpdateCatalogItems
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|displayName|Строка|Имя отображения элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|id|String|ID элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|displayName|String|Имя отображения элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|Дата выпуска элемента каталога, наследуемого [из windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата для элемента каталога, наследуемого [из windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |version|String|Версия обновления функций|
 
 
@@ -70,12 +71,13 @@ POST /deviceManagement/windowsUpdateCatalogItems
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems
 Content-type: application/json
-Content-length: 203
+Content-length: 263
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateCatalogItem",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "version": "Version value"
 }
 ```
@@ -85,13 +87,14 @@ Content-length: 203
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 252
+Content-Length: 312
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateCatalogItem",
   "id": "cbd85729-5729-cbd8-2957-d8cb2957d8cb",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "version": "Version value"
 }
 ```

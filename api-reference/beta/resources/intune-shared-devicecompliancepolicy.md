@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса deviceCompliancePolicy
 description: 'Это базовый класс для политик обеспечения соответствия требованиям. Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса. '
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e78f451a93ffe0958f2ed1ebd831893377514e92
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 46aa0a0136bbc2ad00fdf70d4ab9a8d3bc6ef7f1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222375"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867296"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,15 +30,15 @@ ms.locfileid: "49222375"
 |**Конфигурация устройств**|
 |[Действие assign](../api/intune-shared-devicecompliancepolicy-assign.md)|Коллекция [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Н/Д|
 |Действие scheduleActionsForRules|Нет|Н/Д|
-|действие Рефрешдевицекомплианцерепортсуммаризатион] (.. /АПИ/интуне-Шаред-девицекомплианцеполици-рефрешдевицекомплианцерепортсуммаризатион.МД)|Нет|Н/Д|
+|refreshDeviceComplianceReportSummarization action].. /api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|Нет|Н/Д|
 |**Набор политик**|
-|[действие Хаспайлоадлинкс](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|Коллекция [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md)|Н/Д|
+|[действие hasPayloadLinks](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67fcf5574b3cb4481286ecc7b4448018d64e0f44
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8729dd6251f9dbaf062fbfee3d024de265565020
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472029"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867457"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -31,8 +31,9 @@ ms.locfileid: "50472029"
 |displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|isEncrypted|Boolean|Указывает, зашифровано ли поле значений. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|Имя файла, связанное с свойством Value (*.cer \| *.crt \| *.p7b \| *.bin).|
+|secretReferenceValueId|String|ReferenceId для поисков секрета для расшифровки. Это свойство доступно только для чтения. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Указывает, зашифровано ли поле значений. Это свойство доступно только для чтения. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|fileName|String|Имя файла, связанное со свойством Value (CER,  | *.crt | *.p7b | *.bin).|
 |value|String|Значение (строка в кодировке Base64).|
 
 ## <a name="relationships"></a>Связи
@@ -51,6 +52,7 @@ ms.locfileid: "50472029"
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "secretReferenceValueId": "String",
   "isEncrypted": true,
   "fileName": "String",
   "value": "String"

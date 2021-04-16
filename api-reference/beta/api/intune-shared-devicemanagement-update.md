@@ -1,22 +1,22 @@
 ---
 title: Обновление объекта deviceManagement
 description: Обновление свойств объекта deviceManagement.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bf6b5031c53da45af63517e52f03d344f71a4c3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 80f5fc4065d8db2f0bbb7659f244a14c9ef9331d
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49210132"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867527"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -28,50 +28,50 @@ ms.locfileid: "49210132"
 
 Обратите внимание, что разрешение зависит от рабочего процесса.
 
-| &nbsp;Тип разрешения &nbsp; (по &nbsp; рабочим процессам) | Разрешения (в порядке убывания привилегий) |
+| Тип &nbsp; разрешения &nbsp; &nbsp; (по рабочего процесса) | Разрешения (в порядке убывания привилегий) |
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) ||
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Намерение устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **Фехтования** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Управление расходами по телекоммуникационной** связи | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Траублехутинг** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Управление расходами телекома** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-| Приложение ||
+| Для приложения ||
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Намерение устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **Фехтования** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Управление расходами по телекоммуникационной** связи | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Траублехутинг** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Управление расходами телекома** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -98,24 +98,24 @@ PATCH /deviceManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства.|
+|id|String|Уникальный идентификатор для устройства.|
 |**Конфигурация устройств**|
-|интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
-|максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
+|intuneAccountId|GUID|ID учетной записи Intune для данного клиента|
+|legacyPcManangementEnabled|Логический|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
+|maximumDepTokens|Int32|Максимальное количество маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
-|аккаунтмовекомплетиондатетиме|DateTimeOffset|Дата & время, когда данные клиента перемещаются между скалеунитс.|
-|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Сведения о согласия администратора.|
-|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md);|Общие сведения о защите устройств.|
+|accountMoveCompletionDateTime|DateTimeOffset|Дата &, когда данные клиента перемещаются между scaleunits.|
+|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Сведения о согласии администратора.|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md);|Обзор защиты устройств.|
 |managedDeviceCleanupSettings;|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md);|Правило очистки устройств|
-|subscriptionState|[девицеманажементсубскриптионстате](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|subscriptions|[девицеманажементсубскриптионс](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Обзор вредоносных программ для устройств с Windows.|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptions|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Обзор вредоносных программ для устройств Windows.|
 |**Адаптация**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.|
 
-Поддержка свойств текста запроса зависит от рабочего процесса.
+Поддержка свойств тела запроса зависит от рабочего процесса.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [deviceManagement](../resources/intune-shared-devicemanagement.md) в теле отклика.
@@ -124,7 +124,7 @@ PATCH /deviceManagement
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, который следует за рабочим процессом управления устройствами:
+Вот пример запроса, следующего за процессом управления устройствами:
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
@@ -159,7 +159,7 @@ Content-length: 751
 
 Ниже приведен пример отклика. 
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращаемые свойства различаются в зависимости от рабочего процесса и контекста.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращенные свойства различаются в зависимости от рабочего процесса и контекста.
 
 ``` http
 HTTP/1.1 200 OK

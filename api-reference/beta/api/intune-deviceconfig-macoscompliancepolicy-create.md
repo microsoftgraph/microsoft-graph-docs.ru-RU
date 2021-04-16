@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd41f34c4f2386ee48cb73361a53e5eed8a3beb1
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 93309af2ea431905a443453f28e703d1ffbdddf8
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129841"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867968"
 ---
 # <a name="create-macoscompliancepolicy"></a>Create macOSCompliancePolicy
 
@@ -27,9 +27,9 @@ ms.locfileid: "51129841"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,11 +54,11 @@ POST /deviceManagement/deviceCompliancePolicies
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |passwordRequired|Boolean|Определяет, нужно ли запрашивать ввод пароля.|
 |passwordBlockSimple|Boolean|Указывает, требуется ли блокировать простые пароли.|
@@ -70,16 +70,17 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|String|Минимальная версия MacOS.|
 |osMaximumVersion|String|Максимальная версия MacOS.|
-|osMinimumBuildVersion|Строка|Минимальная версия сборки MacOS.|
-|osMaximumBuildVersion|Строка|Максимальная версия сборки MacOS.|
+|osMinimumBuildVersion|String|Минимальная версия сборки MacOS.|
+|osMaximumBuildVersion|String|Максимальная версия сборки MacOS.|
 |systemIntegrityProtectionEnabled|Boolean|Указывает на то, что защита целостности системы для устройств должна быть включена.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP требует минимального уровня риска для защиты от мобильных угроз, чтобы сообщить о несоблюдении. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Mac OS.|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметр System и Privacy, который определяет, какие приложения для скачивания можно запускать на macOS-устройстве. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Boolean|Следует ли включить брандмауэр или нет.|
-|брандмауэрBlockAllIncoming|Boolean|Соответствует параметру "Блокировка всех входящих подключений".|
-|firewallEnableStealthMode|Boolean|Соответствует режиму "Включить режим стелс".|
+|firewallEnabled|Логический|Следует ли включить брандмауэр или нет.|
+|брандмауэрBlockAllIncoming|Логический|Соответствует параметру "Блокировка всех входящих подключений".|
+|firewallEnableStealthMode|Логический|Соответствует режиму "Включить режим стелс".|
 
 
 
@@ -93,7 +94,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1083
+Content-length: 1146
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -118,6 +119,7 @@ Content-length: 1083
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true,
   "gatekeeperAllowedAppSource": "macAppStore",
   "firewallEnabled": true,
@@ -131,7 +133,7 @@ Content-length: 1083
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1255
+Content-Length: 1318
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -159,6 +161,7 @@ Content-Length: 1255
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true,
   "gatekeeperAllowedAppSource": "macAppStore",
   "firewallEnabled": true,

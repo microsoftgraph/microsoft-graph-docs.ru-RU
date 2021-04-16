@@ -1,26 +1,26 @@
 ---
-title: Удаление Виндовсдомаинжоинконфигуратион
-description: Удаляет объект Виндовсдомаинжоинконфигуратион.
-author: dougeby
+title: Удаление windowsDomainJoinConfiguration
+description: Удаляет windowsDomainJoinConfiguration.
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fced3b84b7dc10cc19b38dd5899d1192cbb4e1d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1d99fd2971efb3330d370af6cad99b8137f689ce
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217398"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866960"
 ---
-# <a name="delete-windowsdomainjoinconfiguration"></a>Удаление Виндовсдомаинжоинконфигуратион
+# <a name="delete-windowsdomainjoinconfiguration"></a>Удаление windowsDomainJoinConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md).
+Удаляет [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ ms.locfileid: "49217398"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос

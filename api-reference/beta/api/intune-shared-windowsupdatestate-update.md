@@ -1,16 +1,16 @@
 ---
 title: Обновление windowsUpdateState
 description: Обновление свойств объекта WindowsUpdateState.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6505707c957ad890d07c9d418512b41e09ff5109
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb09a2b39c5810385b51b25c00909ca6aa800f25
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443799"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866951"
 ---
 # <a name="update-windowsupdatestate"></a>Обновление windowsUpdateState
 
@@ -31,7 +31,7 @@ ms.locfileid: "50443799"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -47,10 +47,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажи представление JSON для [объекта WindowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)
 
 В следующей таблице показаны свойства, необходимые при создании [windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |userId|String|ID пользователя.|
 |deviceDisplayName|String|Имя отображения устройства.|
 |userPrincipalName|String|Имя основного пользователя.|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Состояние udpate Windows. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Состояние udpate Windows. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|String|Версия обновления качества устройства.|
 |featureUpdateVersion|String|Текущая версия обновления функций устройства.|
 |lastScanDateTime|DateTimeOffset|Время даты успешного сканирования агентом обновления Windows.|

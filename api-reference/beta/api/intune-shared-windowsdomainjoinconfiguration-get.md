@@ -1,26 +1,26 @@
 ---
-title: Получение Виндовсдомаинжоинконфигуратион
-description: Чтение свойств и связей объекта Виндовсдомаинжоинконфигуратион.
-author: dougeby
+title: Получить windowsDomainJoinConfiguration
+description: Чтение свойств и связей объекта windowsDomainJoinConfiguration.
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc0c72d78c4dc89a052d82ec8e846d2391a61c33
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7e331d74999eff64663b5e7bd86959e718a6eca4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217377"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866952"
 ---
-# <a name="get-windowsdomainjoinconfiguration"></a>Получение Виндовсдомаинжоинконфигуратион
+# <a name="get-windowsdomainjoinconfiguration"></a>Получить windowsDomainJoinConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md) .
+Чтение свойств и связей [объекта windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
@@ -32,7 +32,7 @@ ms.locfileid: "49217377"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-**Регистрации**
+**Регистрация**
 <!-- {
   "blockType": "ignored"
 }
@@ -75,7 +75,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства, возвращаемые при фактическом вызове, зависят от контекста.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства, возвращенные при фактическом вызове, зависят от контекста.
 
 ``` http
 HTTP/1.1 200 OK

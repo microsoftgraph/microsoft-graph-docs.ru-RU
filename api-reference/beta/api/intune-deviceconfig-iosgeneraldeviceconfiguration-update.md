@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9559168fc46a49181f3204b4029396d028ce26e3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 6f6bea4ac6012a2f7b6fcd9c3d57bdb8d4b46555
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51131563"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867233"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Обновление объекта iosGeneralDeviceConfiguration
 
@@ -27,9 +27,9 @@ ms.locfileid: "51131563"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,16 +55,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |accountBlockModification|Boolean|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
 |activationLockAllowWhenSupervised|Boolean|Указывает, следует ли запретить блокировку активации, когда устройство находится в защищенном режиме.|
@@ -82,20 +82,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |appStoreBlockInAppPurchases|Boolean|Указывает, следует ли запретить пользователю совершать покупки из приложения.|
 |appStoreBlockUIAppInstallation|Boolean|Указывает, следует ли заблокировать приложение App Store, не ограничивая установку через ведущие приложения. Применяется только к защищенному режиму (iOS 9.0 и более поздних версий).|
 |appStoreRequirePassword|Boolean|Указывает, требуется ли пароль, когда вы используете приложение App Store.|
-|autoFillForceAuthentication|Boolean|Указывает, следует ли принудительно использовать проверку подлинности пользователей перед автозаполнением паролей и сведений о кредитных картах в Safari и других приложениях на контролируемых устройствах.|
+|autoFillForceAuthentication|Логический|Указывает, следует ли принудительно использовать проверку подлинности пользователей перед автозаполнением паролей и сведений о кредитных картах в Safari и других приложениях на контролируемых устройствах.|
 |bluetoothBlockModification|Boolean|Указывает, можно ли изменять настройки Bluetooth, когда устройство находится в защищенном режиме (iOS 10.0 и более поздних версий).|
 |cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства. Требуется контролируемое устройство для iOS 13 и более поздней.|
 |cellularBlockDataRoaming|Boolean|Указывает, следует ли блокировать передачу данных в роуминге.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Указывает, следует ли заблокировать получение фоновых данных в роуминге.|
 |cellularBlockPerAppDataModification|Boolean|Указывает, можно ли изменять настройки передачи данных по сотовой сети в приложении, когда устройство находится в защищенном режиме.|
 |cellularBlockPersonalHotspot|Boolean|Указывает, следует ли заблокировать личный хот-спот.|
-|cellularBlockPlanModification|Boolean|Указывает, следует ли разрешить пользователям изменять параметры сотовой программы на контролируемом устройстве.|
+|cellularBlockPlanModification|Логический|Указывает, следует ли разрешить пользователям изменять параметры сотовой программы на контролируемом устройстве.|
 |cellularBlockVoiceRoaming|Boolean|Указывает, следует ли заблокировать голосовой роуминг.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Указывает, следует ли заблокировать ненадежные сертификаты TLS.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Указывает, следует ли запретить удаленное наблюдение за экраном в приложении "Класс", когда устройство находится в защищенном режиме (iOS 9.3 и более поздних версий).|
 |classroomAppForceUnpromptedScreenObservation|Boolean|Указывает, следует ли предоставлять учителю управляемого курса в приложении "Класс" разрешение на просмотр экрана учащегося автоматически, когда устройство находится в защищенном режиме.|
-|classroomForceAutomaticallyJoinClasses|Boolean|Указывает, следует ли автоматически давать разрешения на запросы преподавателя, не подсказывая учащемуся, когда устройство находится в контролируемом режиме.|
-|classroomForceUnpromptedAppAndDeviceLock|Boolean|Указывает, следует ли разрешить преподавателю заблокировать приложения или устройство без запроса учащегося. Только в защищенном режиме.|
+|classroomForceAutomaticallyJoinClasses|Логический|Указывает, следует ли автоматически давать разрешения на запросы преподавателя, не подсказывая учащемуся, когда устройство находится в контролируемом режиме.|
+|classroomForceUnpromptedAppAndDeviceLock|Логический|Указывает, следует ли разрешить преподавателю заблокировать приложения или устройство без запроса учащегося. Только в защищенном режиме.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Boolean|Указывает, следует ли запретить интерактивную установку профилей и сертификатов конфигурации, когда устройство находится в защищенном режиме.|
@@ -110,7 +110,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |emailInDomainSuffixes|Коллекция String|Адрес электронной почты без суффикса, соответствующего одной из этих строк, будет считаться внешним.|
 |enterpriseAppBlockTrust|Boolean|Указывает, следует ли запретить пользователю подтверждать доверие корпоративному приложению.|
 |enterpriseAppBlockTrustModification|Boolean|\[Неоконфигурированная настройка этого параметра и установка значения "true" не влияет \] на устройство.|
-|esimBlockModification|Boolean|Указывает, следует ли разрешить добавление или удаление сотовых планов на eSIM контролируемого устройства.|
+|esimBlockModification|Логический|Указывает, следует ли разрешить добавление или удаление сотовых планов на eSIM контролируемого устройства.|
 |faceTimeBlocked|Boolean|Указывает, следует ли запретить использовать FaceTime. Требуется контролируемое устройство для iOS 13 и более поздней.|
 |findMyFriendsBlocked|Boolean|Указывает, следует ли блокировать изменения в "Найти друзей", когда устройство находится в режиме контроля.|
 |gamingBlockGameCenterFriends|Boolean|Указывает, следует ли запретить пользователю добавлять друзей в Game Center. Требуется контролируемое устройство для iOS 13 и более поздней.|
@@ -138,24 +138,24 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskModeAllowAssistiveSpeak|Boolean|Указывает, можно ли использовать специальные возможности речеобразования в режиме киоска.|
 |kioskModeAllowAssistiveTouchSettings|Boolean|Указывает, следует ли запретить доступ к настройкам сенсорного управления со специальными возможностями в режиме киоска.|
 |kioskModeAllowAutoLock|Boolean|Указывает, следует ли запретить автоблокировку устройства в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте KioskModeBlockAutoLock.|
-|kioskModeBlockAutoLock|Boolean|Указывает, следует ли блокировать автоматическую блокировку устройства во время работы в режиме киоска.|
+|kioskModeBlockAutoLock|Логический|Указывает, следует ли блокировать автоматическую блокировку устройства во время работы в режиме киоска.|
 |kioskModeAllowColorInversionSettings|Boolean|Указывает, следует ли запретить доступ к настройкам инверсии цвета в режиме киоска.|
 |kioskModeAllowRingerSwitch|Boolean|Указывает, можно ли использовать переключатель звонка в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте KioskModeBlockRingerSwitch.|
-|kioskModeBlockRingerSwitch|Boolean|Указывает, следует ли блокировать использование переключателя звона во время работы в режиме киоска.|
+|kioskModeBlockRingerSwitch|Логический|Указывает, следует ли блокировать использование переключателя звона во время работы в режиме киоска.|
 |kioskModeAllowScreenRotation|Boolean|Указывает, следует ли запретить поворот экрана в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockScreenRotation.|
-|kioskModeBlockScreenRotation|Boolean|Указывает, следует ли блокировать поворот экрана во время работы в режиме киоска.|
+|kioskModeBlockScreenRotation|Логический|Указывает, следует ли блокировать поворот экрана во время работы в режиме киоска.|
 |kioskModeAllowSleepButton|Boolean|Указывает, можно ли использовать кнопку "Сон" в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockSleepButton.|
 |kioskModeBlockSleepButton|Boolean|Указывает, следует ли блокировать использование кнопки сна во время работы в режиме киоска.|
 |kioskModeAllowTouchscreen|Boolean|Указывает, можно ли использовать сенсорный экран в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockTouchscreen.|
-|kioskModeBlockTouchscreen|Boolean|Указывает, следует ли блокировать использование сенсорного экрана в режиме киоска.|
-|kioskModeEnableVoiceControl|Boolean|Указывает, следует ли включить голосовое управление в режиме киоска.|
-|kioskModeAllowVoiceControlModification|Boolean|Указывает, следует ли разрешить пользователю управлять голосом в режиме киоска.|
+|kioskModeBlockTouchscreen|Логический|Указывает, следует ли блокировать использование сенсорного экрана в режиме киоска.|
+|kioskModeEnableVoiceControl|Логический|Указывает, следует ли включить голосовое управление в режиме киоска.|
+|kioskModeAllowVoiceControlModification|Логический|Указывает, следует ли разрешить пользователю управлять голосом в режиме киоска.|
 |kioskModeAllowVoiceOverSettings|Boolean|Указывает, следует ли запретить доступ к настройкам VoiceOver в режиме киоска.|
 |kioskModeAllowVolumeButtons|Boolean|Указывает, можно ли использовать кнопки громкости в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockVolumeButtons.|
 |kioskModeBlockVolumeButtons|Boolean|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
 |kioskModeAllowZoomSettings|Boolean|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
 |kioskModeAppStoreUrl|String|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
-|kioskModeBuiltInAppId|Строка|ID для встроенных приложений, которые можно использовать для режима киоска. Используется, когда не заданы KioskModeManagedAppId и KioskModeAppStoreUrl.|
+|kioskModeBuiltInAppId|String|ID для встроенных приложений, которые можно использовать для режима киоска. Используется, когда не заданы KioskModeManagedAppId и KioskModeAppStoreUrl.|
 |kioskModeRequireAssistiveTouch|Boolean|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Boolean|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Boolean|Указывает, обязательно ли использовать монозвук в режиме киоска.|
@@ -193,7 +193,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Указывает, обязательно ли использовать секретный код.|
 |podcastsBlocked|Boolean|Указывает, следует ли запретить использовать подкасты на защищенном устройстве (iOS 8.0 и более поздних версий).|
-|proximityBlockSetupToNewDevice|Boolean|Указывает, следует ли включить запрос на установку расположенных поблизости устройств с помощью контролируемого устройства.|
+|proximityBlockSetupToNewDevice|Логический|Указывает, следует ли включить запрос на установку расположенных поблизости устройств с помощью контролируемого устройства.|
 |safariBlockAutofill|Boolean|Указывает, следует ли запретить использовать автозаполнение в Safari. Требуется контролируемое устройство для iOS 13 и более поздней.|
 |safariBlockJavaScript|Boolean|Указывает, следует ли заблокировать JavaScript в Safari.|
 |safariBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в Safari.|
@@ -208,42 +208,43 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |siriBlockUserGeneratedContent|Boolean|Указывает, следует ли запретить Siri запрашивать данные о пользовательском контенте на защищенном устройстве.|
 |siriRequireProfanityFilter|Boolean|Указывает, следует ли запретить Siri записывать или произносить нецензурные выражения на защищенном устройстве.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Задает время, за которое будет отламывно обновление программного обеспечения для контролируемого устройства. Допустимые значения: от 0 до 90.|
-|softwareUpdatesForceDelayed|Boolean|Указывает, задерживать или не задерживать видимость обновлений программного обеспечения, когда устройство находится в контролируемом режиме.|
+|softwareUpdatesForceDelayed|Логический|Указывает, задерживать или не задерживать видимость обновлений программного обеспечения, когда устройство находится в контролируемом режиме.|
 |spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить показывать результаты из Интернета при поиске полезных сведений на защищенном устройстве.|
 |voiceDialingBlocked|Boolean|Указывает, следует ли заблокировать голосовой набор.|
 |wallpaperBlockModification|Boolean|Указывает, можно ли изменять обои на защищенном устройстве (iOS 9.0 и более поздних версий).|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|Указывает, обязательно ли использовать только сети Wi-Fi из профилей конфигурации, когда устройство находится в защищенном режиме.|
-|classroomForceRequestPermissionToLeaveClasses|Boolean|Указывает, будет ли учащийся, зарегистрированный на неугодном курсе через Класс, запрашивать разрешения у преподавателя при попытке покинуть курс (iOS 11.3 и более поздний).|
-|keychainBlockCloudSync|Boolean|Указывает, заблокирована ли синхронизация ключей iCloud. Требуется контролируемое устройство для iOS 13 и более поздней.|
-|pkiBlockOTAUpdates|Boolean|Указывает, заблокированы ли обновления PKI на воздухе. Настройка этого ограничения для false не отключает проверки CRL и OCSP (iOS 7.0 и более поздней).|
-|privacyForceLimitAdTracking|Boolean|Указывает, ограничено ли отслеживание. (iOS 7.0 и более поздний).|
-|enterpriseBookBlockBackup|Boolean|Указывает, заблокирована или не заблокирована книга предприятия.|
-|enterpriseBookBlockMetadataSync|Boolean|Указывает, заблокирована ли синхронизация записей и выделений для корпоративных книг.|
-|airPrintBlocked|Boolean|Указывает, заблокирована или не заблокирована AirPrint (iOS 11.0 и более поздней).|
-|airPrintBlockCredentialsStorage|Boolean|Указывает, заблокировано ли хранение имени пользователя и пароля для Airprint (iOS 11.0 и более поздней части).|
-|airPrintForceTrustedTLS|Boolean|Указывает, требуются ли доверенные сертификаты для связи печати TLS (iOS 11.0 и более поздней).|
-|airPrintBlockiBeaconDiscovery|Boolean|Указывает, заблокировано ли обнаружение принтеров AirPrint для iBeacon. Это предотвращает фишинговые маячки Bluetooth AirPrint для сетевого трафика (iOS 11.0 и более поздней).|
-|filesNetworkDriveAccessBlocked|Boolean|Указывает, могут ли устройства получать доступ к файлам или другим ресурсам на сетевом сервере с помощью протокола Блокировка сообщений сервера (SMB). Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
-|filesUsbDriveAccessBlocked|Boolean|Указывает, могут ли севики с доступом подключаться к файлам и открывать их на USB-диске. Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
-|wifiPowerOnForced|Boolean|Указывает, остается ли Wi-Fi, даже если устройство находится в режиме самолета. Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
-|blockSystemAppRemoval|Boolean|Указывает, блокируется ли удаление системных приложений с устройства на контролируемом устройстве (iOS 11.0 и более поздней части).|
-|VPNBlockCreation|Boolean|Указывает, заблокировано ли создание конфигураций VPN (iOS 11.0 и более поздней части).|
-|appRemovalBlocked|Boolean|Указывает, разрешено ли удаление приложений.|
-|usbRestrictedModeBlocked|Boolean|Указывает, разрешено ли подключение к USB-аксессуарам во время блокировки устройства (iOS 11.4.1 и более поздней).|
-|passwordBlockAutoFill|Boolean|Указывает, разрешена ли функция паролей AutoFill (iOS 12.0 и более поздней).|
-|passwordBlockProximityRequests|Boolean|Указывает, следует ли блокировать запрашивающие пароли с близлежащих устройств (iOS 12.0 и более поздней).|
-|passwordBlockAirDropSharing|Boolean|Указывает, следует ли блокировать совместное использование паролей с помощью паролей AirDrop с функцией iOS 12.0 и более поздней.|
-|dateAndTimeForceSetAutomatically|Boolean|Указывает, включена ли функция "Дата и время автоматически" и не может быть отключена пользователем (iOS 12.0 и более поздней).|
-|contactsAllowManagedToUnmanagedWrite|Boolean|Указывает, могут ли управляемые приложения записывать контакты в учетные записи неугодных контактов (iOS 12.0 и более поздние).|
-|contactsAllowUnmanagedToManagedRead|Boolean|Указывает, могут ли неуправляемые приложения читать из учетных записей управляемых контактов (iOS 12.0 или более поздней).|
-|cellularBlockPersonalHotspotModification|Boolean|Указывает, следует ли блокировать пользователю изменение личных параметров точки доступа (iOS 12.2 или более поздней).|
-|continuousPathKeyboardBlocked|Boolean|Указывает, следует ли блокировать клавиатуру непрерывного пути при контроле устройства (iOS 13 или более поздней).|
-|findMyDeviceInFindMyAppBlocked|Boolean|Указывает, следует ли блокировать find My Device, когда устройство контролируется (iOS 13 или более поздней).|
-|findMyFriendsInFindMyAppBlocked|Boolean|Указывает, следует ли блокировать "Найти друзей", когда устройство находится под наблюдением (iOS 13 или более поздней).|
-|iTunesBlocked|Boolean|Указывает, следует ли блокировать приложение iTunes. Требуется контролируемое устройство для iOS 13 и более поздней.|
-|sharedDeviceBlockTemporarySessions|Boolean|Указывает, следует ли блокировать временные сеансы на общих iPads (iOS 13.4 или более поздней).|
-|appClipsBlocked|Boolean|Не позволяет пользователю добавлять какие-либо клипы приложений и удаляет существующие клипы приложений на устройстве.|
-|applePersonalizedAdsBlocked|Boolean|Ограничивает персонализированную рекламу Apple, если это так. Доступна в iOS 14 и более поздней.|
+|classroomForceRequestPermissionToLeaveClasses|Логический|Указывает, будет ли учащийся, зарегистрированный на неугодном курсе через Класс, запрашивать разрешения у преподавателя при попытке покинуть курс (iOS 11.3 и более поздний).|
+|keychainBlockCloudSync|Логический|Указывает, заблокирована ли синхронизация ключей iCloud. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|pkiBlockOTAUpdates|Логический|Указывает, заблокированы ли обновления PKI на воздухе. Настройка этого ограничения для false не отключает проверки CRL и OCSP (iOS 7.0 и более поздней).|
+|privacyForceLimitAdTracking|Логический|Указывает, ограничено ли отслеживание. (iOS 7.0 и более поздний).|
+|enterpriseBookBlockBackup|Логический|Указывает, заблокирована или не заблокирована книга предприятия.|
+|enterpriseBookBlockMetadataSync|Логический|Указывает, заблокирована ли синхронизация записей и выделений для корпоративных книг.|
+|airPrintBlocked|Логический|Указывает, заблокирована или не заблокирована AirPrint (iOS 11.0 и более поздней).|
+|airPrintBlockCredentialsStorage|Логический|Указывает, заблокировано ли хранение имени пользователя и пароля для Airprint (iOS 11.0 и более поздней части).|
+|airPrintForceTrustedTLS|Логический|Указывает, требуются ли доверенные сертификаты для связи печати TLS (iOS 11.0 и более поздней).|
+|airPrintBlockiBeaconDiscovery|Логический|Указывает, заблокировано ли обнаружение принтеров AirPrint для iBeacon. Это предотвращает фишинговые маячки Bluetooth AirPrint для сетевого трафика (iOS 11.0 и более поздней).|
+|filesNetworkDriveAccessBlocked|Логический|Указывает, могут ли устройства получать доступ к файлам или другим ресурсам на сетевом сервере с помощью протокола Блокировка сообщений сервера (SMB). Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
+|filesUsbDriveAccessBlocked|Логический|Указывает, могут ли севики с доступом подключаться к файлам и открывать их на USB-диске. Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
+|wifiPowerOnForced|Логический|Указывает, остается ли Wi-Fi, даже если устройство находится в режиме самолета. Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
+|blockSystemAppRemoval|Логический|Указывает, блокируется ли удаление системных приложений с устройства на контролируемом устройстве (iOS 11.0 и более поздней части).|
+|VPNBlockCreation|Логический|Указывает, заблокировано ли создание конфигураций VPN (iOS 11.0 и более поздней части).|
+|appRemovalBlocked|Логический|Указывает, разрешено ли удаление приложений.|
+|usbRestrictedModeBlocked|Логический|Указывает, разрешено ли подключение к USB-аксессуарам во время блокировки устройства (iOS 11.4.1 и более поздней).|
+|passwordBlockAutoFill|Логический|Указывает, разрешена ли функция паролей AutoFill (iOS 12.0 и более поздней).|
+|passwordBlockProximityRequests|Логический|Указывает, следует ли блокировать запрашивающие пароли с близлежащих устройств (iOS 12.0 и более поздней).|
+|passwordBlockAirDropSharing|Логический|Указывает, следует ли блокировать совместное использование паролей с помощью паролей AirDrop с функцией iOS 12.0 и более поздней.|
+|dateAndTimeForceSetAutomatically|Логический|Указывает, включена ли функция "Дата и время автоматически" и не может быть отключена пользователем (iOS 12.0 и более поздней).|
+|contactsAllowManagedToUnmanagedWrite|Логический|Указывает, могут ли управляемые приложения записывать контакты в учетные записи неугодных контактов (iOS 12.0 и более поздние).|
+|contactsAllowUnmanagedToManagedRead|Логический|Указывает, могут ли неуправляемые приложения читать из учетных записей управляемых контактов (iOS 12.0 или более поздней).|
+|cellularBlockPersonalHotspotModification|Логический|Указывает, следует ли блокировать пользователю изменение личных параметров точки доступа (iOS 12.2 или более поздней).|
+|continuousPathKeyboardBlocked|Логический|Указывает, следует ли блокировать клавиатуру непрерывного пути при контроле устройства (iOS 13 или более поздней).|
+|findMyDeviceInFindMyAppBlocked|Логический|Указывает, следует ли блокировать find My Device, когда устройство контролируется (iOS 13 или более поздней).|
+|findMyFriendsInFindMyAppBlocked|Логический|Указывает, следует ли блокировать "Найти друзей", когда устройство находится под наблюдением (iOS 13 или более поздней).|
+|iTunesBlocked|Логический|Указывает, следует ли блокировать приложение iTunes. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|sharedDeviceBlockTemporarySessions|Логический|Указывает, следует ли блокировать временные сеансы на общих iPads (iOS 13.4 или более поздней).|
+|appClipsBlocked|Логический|Не позволяет пользователю добавлять какие-либо клипы приложений и удаляет существующие клипы приложений на устройстве.|
+|applePersonalizedAdsBlocked|Логический|Ограничивает персонализированную рекламу Apple, если это так. Доступна в iOS 14 и более поздней.|
+|nfcBlocked|Boolean|Отключить NFC, чтобы предотвратить сопряжение устройств с другими устройствами с поддержкой NFC. Доступно для устройств iOS/iPadOS с 14.2 и более поздним доступом.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Тип приложения для работы в режиме киоска. Возможные значения: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -258,7 +259,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10633
+Content-length: 10656
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -549,6 +550,7 @@ Content-length: 10633
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -558,7 +560,7 @@ Content-length: 10633
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10805
+Content-Length: 10828
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -852,6 +854,7 @@ Content-Length: 10805
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```

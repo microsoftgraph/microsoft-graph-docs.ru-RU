@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: e5d1c03a4c4c5fb47f63640993705fa62709d47c
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 9afb0b76073e4c834911e289fcf7c2382c4ef7c2
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51472200"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836950"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -72,6 +72,7 @@ ms.locfileid: "51472200"
 | addIns | Коллекция [addIn](addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Office 365, вызывать приложение в контексте документов, над которыми работает пользователь. |
 | api | [apiApplication](apiapplication.md) | Задает параметры приложения, реализующего веб-API. |
 | appId | String | Уникальный идентификатор приложения, назначенный с помощью Azure AD. Значение null не допускается. Только для чтения. |
+|applicationTemplateId | Строка | Уникальный идентификатор applicationTemplate. |
 | appRoles | Коллекция [appRole](approle.md) | Совокупность ролей, назначенных приложению. С помощью команды [назначения ролей приложений](approleassignment.md) эти роли можно назначать пользователям, группам или субъектам-службам, связанным с другими приложениями. Значение null не допускается. |
 | createdDateTime | DateTimeOffset | Дата и время регистрации приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 | deletedDateTime | DateTimeOffset | Дата и время удаления приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
@@ -80,6 +81,7 @@ ms.locfileid: "51472200"
 | id | String | Уникальный идентификатор приложения. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | identifierUris | Коллекция String | URI, идентифицирующие приложение в клиенте Azure AD или в проверенном личном домене, если приложение является мультитенантным. Дополнительные сведения см. в разделе [Объекты приложения и субъекта-службы](/azure/active-directory/develop/app-objects-and-service-principals). Оператор `any` требуется для выражений фильтров, применяемых к многозначным свойствам. Значение null не допускается. |
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
+| isDeviceOnlyAuthSupported | Логический | Указывает, поддерживает ли приложение проверку подлинности устройства без пользователя. Значение по умолчанию: `false`.  |
 | isFallbackPublicClient | Boolean | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию — `false`. Это означает, что резервный тип приложения является конфиденциальным клиентом, таким как веб-приложение. В некоторых ситуациях Azure AD не может определить тип клиентского приложения. Например, при потоке [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3), когда приложение настроено без указания URI перенаправления. В таких случаях Azure AD интерпретирует тип приложения на основе значения этого свойства.|
 | keyCredentials | Коллекция [keyCredential](keycredential.md) | Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. |
 | logo | Stream | Основной логотип для приложения. Значение null не допускается. |
@@ -140,6 +142,7 @@ ms.locfileid: "51472200"
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
+  "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
@@ -148,6 +151,7 @@ ms.locfileid: "51472200"
   "id": "String (identifier)",
   "identifierUris": ["String"],
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
+  "isDeviceOnlyAuthSupported": false,
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
@@ -160,6 +164,7 @@ ms.locfileid: "51472200"
   "publisherDomain": "String",
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
+  "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "uniqueName": "String",

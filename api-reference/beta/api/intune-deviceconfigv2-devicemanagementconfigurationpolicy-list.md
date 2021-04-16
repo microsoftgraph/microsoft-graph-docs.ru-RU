@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e19a3b30212899d6cdf341e14f9627e54fb8742
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c5d81a644d14d55a57a132332dd67db1ada46912
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127167"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867093"
 ---
 # <a name="list-devicemanagementconfigurationpolicies"></a>Список deviceManagementConfigurationPolicies
 
@@ -27,9 +27,9 @@ ms.locfileid: "51127167"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,12 +38,13 @@ ms.locfileid: "51127167"
 -->
 ``` http
 GET /deviceManagement/configurationPolicies
+GET /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 607
+Content-Length: 974
 
 {
   "value": [
@@ -83,7 +84,14 @@ Content-Length: 607
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "isAssigned": true
+      "isAssigned": true,
+      "templateReference": {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+        "templateId": "Template Id value",
+        "templateFamily": "endpointSecurityAntivirus",
+        "templateDisplayName": "Template Display Name value",
+        "templateDisplayVersion": "Template Display Version value"
+      }
     }
   ]
 }

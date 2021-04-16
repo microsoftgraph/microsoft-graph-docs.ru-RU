@@ -1,26 +1,26 @@
 ---
-title: Создание Виндовсдомаинжоинконфигуратион
-description: Создание нового объекта Виндовсдомаинжоинконфигуратион.
-author: dougeby
+title: Создание windowsDomainJoinConfiguration
+description: Создайте новый объект windowsDomainJoinConfiguration.
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e495e656e047b8122c5f12f517a001dff9c3420f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 55244869dd22c626d211a2b24e30e7befa28c6af
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217412"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866981"
 ---
-# <a name="create-windowsdomainjoinconfiguration"></a>Создание Виндовсдомаинжоинконфигуратион
+# <a name="create-windowsdomainjoinconfiguration"></a>Создание windowsDomainJoinConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md) .
+Создайте [новый объект windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ ms.locfileid: "49217412"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,31 +51,31 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта Виндовсдомаинжоинконфигуратион в формате JSON.
+В корпусе запроса поставляем представление JSON для объекта windowsDomainJoinConfiguration.
 
-В следующей таблице приведены свойства, необходимые при создании Виндовсдомаинжоинконфигуратион.
+В следующей таблице показаны свойства, необходимые при создании windowsDomainJoinConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |**Конфигурация устройств**|
-|активедиректоридомаиннаме|String|Имя домена Active Directory, к которому необходимо присоединиться.|
-|компутернаместатикпрефикс|String|Фиксированный префикс, который будет использоваться для имени компьютера.|
-|компутернамесуффиксрандомчаркаунт|Int32|Динамически создаваемые символы, используемые в качестве суффикса для имени компьютера. Допустимые значения — от 3 до 14.|
+|activeDirectoryDomainName|String|Доменное имя Active Directory для пользования.|
+|computerNameStaticPrefix|String|Исправленная префикс, которая будет использоваться для имени компьютера.|
+|computerNameSuffixRandomCharCount|Int32|Динамически созданные символы, используемые в качестве суффикса для имени компьютера. Допустимые значения от 3 до 14|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|organizationalUnit|String|Подразделение (OU), в котором будет создана учетная запись компьютера. Если этот параметр имеет значение NULL, известный контейнер объект-компьютера будет использоваться как опубликованный в домене.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|organizationalUnit|String|Организационное подразделение (OU), в котором будет создана учетная запись компьютера. Если этот параметр NULL, хорошо известный контейнер объектов компьютера будет использоваться как опубликованный в домене.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

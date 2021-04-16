@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6849c3d8adb7ff10a8322d83707af0aeb328ddd0
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 276104e49a12ff64fcbc585b3a5ce07570377397
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612079"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867329"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>тип ресурса deviceHealthScriptAssignment
 
@@ -35,9 +35,8 @@ ms.locfileid: "51612079"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта назначения скрипта для скрипта устройства. Это свойство доступно только для чтения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, нацелив сценарий на|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, нацелив сценарий на|
 |runRemediationScript|Логический|Определите, нужно ли запускать только сценарий обнаружения или запускать сценарий обнаружения и сценарий восстановления.|
-|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Расписание запуска скрипта для целевой группы|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -60,13 +59,7 @@ ms.locfileid: "51612079"
     "deviceAndAppManagementAssignmentFilterType": "String",
     "collectionId": "String"
   },
-  "runRemediationScript": true,
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
-    "interval": 1024,
-    "useUtc": true,
-    "time": "String (time of day)"
-  }
+  "runRemediationScript": true
 }
 ```
 

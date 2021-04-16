@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 926802a89f0d5ae5472cb2523b228cbc14d7728d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3007fdf3fff4b1670e217e8e0e7c60a1d827a331
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134356"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866932"
 ---
 # <a name="get-windowsfeatureupdatecatalogitem"></a>Get windowsFeatureUpdateCatalogItem
 
@@ -27,9 +27,9 @@ ms.locfileid: "51134356"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 343
 
 {
   "value": {
@@ -76,6 +76,7 @@ Content-Length: 281
     "id": "cbd85729-5729-cbd8-2957-d8cb2957d8cb",
     "displayName": "Display Name value",
     "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+    "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
     "version": "Version value"
   }
 }

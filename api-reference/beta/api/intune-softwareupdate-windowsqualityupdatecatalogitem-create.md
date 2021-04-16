@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d49f8c4140c385a40ee80d00a89b25933c2ed84
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: aec5d998ed02c946059816d164188bb566ddec7e
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156319"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866883"
 ---
 # <a name="create-windowsqualityupdatecatalogitem"></a>Создание windowsQualityUpdateCatalogItem
 
@@ -27,9 +27,9 @@ ms.locfileid: "51156319"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsUpdateCatalogItems
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,13 @@ POST /deviceManagement/windowsUpdateCatalogItems
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|displayName|Строка|Имя отображения элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|id|String|ID элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|displayName|String|Имя отображения элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|Дата выпуска элемента каталога, наследуемого [из windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|kbArticleId|Строка|ID статьи базы знаний|
+|endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата для элемента каталога, наследуемого [из windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|kbArticleId|String|ID статьи базы знаний|
 |classification|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|Классификация обновления качества. Возможные значения: `all`, `security`, `nonSecurity`.|
-|isExpeditable|Boolean|Флаг, указывающий, имеет ли обновление право на ускорение|
+|isExpeditable|Логический|Флаг, указывающий, имеет ли обновление право на ускорение|
 
 
 
@@ -72,12 +73,13 @@ POST /deviceManagement/windowsUpdateCatalogItems
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems
 Content-type: application/json
-Content-length: 272
+Content-length: 332
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
   "isExpeditable": true
@@ -89,13 +91,14 @@ Content-length: 272
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 321
+Content-Length: 381
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
   "id": "8eb831ba-31ba-8eb8-ba31-b88eba31b88e",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
   "isExpeditable": true
