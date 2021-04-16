@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7423f8187bf3c61d1507f3ef9e1634e3ffad5101
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 6b34323a883b24f9849f4b5d140f0dc0dc5faa08
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136827"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866274"
 ---
 # <a name="update-devicemanagementconfigurationcategory"></a>Обновление deviceManagementConfigurationCategory
 
@@ -27,9 +27,9 @@ ms.locfileid: "51136827"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор элемента|
-|description|Строка|Описание элемента|
-|helpText|Строка|Справка текста элемента|
+|id|String|Идентификатор элемента|
+|description|String|Описание элемента|
+|helpText|String|Справка текста элемента|
 |name|String|Имя элемента|
-|displayName|Строка|Отображение имени элемента|
+|displayName|String|Отображение имени элемента|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`.|
-|parentCategoryId|Строка|Родительский id категории.|
-|rootCategoryId|Строка|Корневой id категории.|
+|parentCategoryId|String|Родительский id категории.|
+|rootCategoryId|String|Корневой id категории.|
 |childCategoryIds|Коллекция String|Список детских ids этой категории.|
 
 

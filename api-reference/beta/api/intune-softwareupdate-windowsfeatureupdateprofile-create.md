@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83decaf1a8e8721cce6b23480626dcabfcbb5f36
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3f4f727455c735e130eb39cf395d7f7a0ff35030
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134286"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865364"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание windowsFeatureUpdateProfile
 
@@ -27,9 +27,9 @@ ms.locfileid: "51134286"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,15 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта.|
-|displayName|Строка|Имя отображения профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
-|featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|id|String|Идентификатор объекта.|
+|displayName|String|Имя отображения профиля.|
+|description|String|Описание профиля, указанного пользователем.|
+|featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
-|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
 
 
@@ -74,7 +75,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
-Content-length: 345
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -84,7 +85,8 @@ Content-length: 345
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "deployableContentDisplayName": "Deployable Content Display Name value"
+  "deployableContentDisplayName": "Deployable Content Display Name value",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
 
@@ -93,7 +95,7 @@ Content-length: 345
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 517
+Content-Length: 577
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -106,7 +108,8 @@ Content-Length: 517
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "deployableContentDisplayName": "Deployable Content Display Name value"
+  "deployableContentDisplayName": "Deployable Content Display Name value",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
 

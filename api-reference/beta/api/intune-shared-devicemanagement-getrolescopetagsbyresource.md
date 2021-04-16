@@ -1,22 +1,22 @@
 ---
-title: Функция Жетролескопетагсбиресаурце
+title: функция getRoleScopeTagsByResource
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 248027085635c02cff0fb0e4247896e9134d14ae
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 47742e8ea1611810bf36be8ca3c004c17b07425b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49210299"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865945"
 ---
-# <a name="getrolescopetagsbyresource-function"></a>Функция Жетролескопетагсбиресаурце
+# <a name="getrolescopetagsbyresource-function"></a>функция getRoleScopeTagsByResource
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "49210299"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -58,7 +58,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код отклика и коллекцию `200 OK` [roleScopeTag](../resources/intune-rbac-rolescopetag.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

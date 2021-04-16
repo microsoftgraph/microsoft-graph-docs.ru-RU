@@ -1,22 +1,22 @@
 ---
 title: Действие sendCustomNotificationToCompanyPortal
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b6663c86676982149e42945a8db82c4a6a84aa0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bc8e4c95ae0408e342177544c3a40ecbb8f6c886
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49210142"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865931"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,10 +27,10 @@ ms.locfileid: "49210142"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения||
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
   "blockType": "ignored"
@@ -53,9 +53,9 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|нотификатионтитле|String|Пока не задокументировано.|
-|нотификатионбоди|String|Пока не задокументировано.|
-|граупстонотифи|Коллекция строк|Н/Д|
+|notificationTitle|String|Пока не задокументировано.|
+|notificationBody|String|Пока не задокументировано.|
+|groupsToNotify|Коллекция строк|Н/Д|
 
 
 

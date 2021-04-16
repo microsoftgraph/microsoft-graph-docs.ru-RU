@@ -1,22 +1,22 @@
 ---
-title: Функция getLoggedOnManagedDevices
+title: функция getLoggedOnManagedDevices
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 315e05f322e00122876e4f246d970c58b97e180b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c4d4b2a8bbe663369c535ba0aee19c4ebb73d584
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157787"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865112"
 ---
-# <a name="getloggedonmanageddevices-function"></a>Функция getLoggedOnManagedDevices
+# <a name="getloggedonmanageddevices-function"></a>функция getLoggedOnManagedDevices
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии /beta в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "50157787"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Для приложения||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -56,7 +56,7 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает код отклика и коллекцию `200 OK` [managedDevice](../resources/intune-shared-manageddevice.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию managedDevice](../resources/intune-devices-manageddevice.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 737929f4526bb26a81cca1ab8fe72f762d79dcb6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 086be5d1ab1f9b01191f3b34749fc194436bde15
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152028"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864783"
 ---
 # <a name="querybyplatformtype-action"></a>действие queryByPlatformType
 
@@ -27,9 +27,9 @@ ms.locfileid: "51152028"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/resourceAccessProfiles/queryByPlatformType
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ POST /deviceManagement/resourceAccessProfiles/queryByPlatformType
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия возвращается код ответа и iQueryable_1OfDeviceManagementResourceAccessProfileBase в `200 OK` тексте ответа.
+В случае успешного действия возвращается код ответа `200 OK` [и iQueryable_1OfDeviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-iqueryable_1ofdevicemanagementresourceaccessprofilebase.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

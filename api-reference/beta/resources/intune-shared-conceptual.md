@@ -4,12 +4,12 @@ description: Перечислены API Microsoft Graph для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 6c0b11847ff5ec0f4431a20e4ffa197ddd21dbcf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4de0e8477d7d20894981c0d0e68956d806d926c4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440180"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866148"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -80,6 +80,7 @@ ms.locfileid: "50440180"
 - [Параметры времени установки мобильного приложения](intune-shared-mobileappinstalltimesettings.md)
 - [Устранение неполадок с мобильным приложением: событие](intune-shared-mobileapptroubleshootingevent.md)
 - [Тип владельца](intune-shared-ownertype.md)
+- [Тип платформы политики](intune-shared-policyplatformtype.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)

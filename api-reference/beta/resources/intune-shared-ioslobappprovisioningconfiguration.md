@@ -1,16 +1,16 @@
 ---
 title: тип ресурса iosLobAppProvisioningConfiguration
 description: В этом разделе описаны объявленные методы, свойства и связи, открытые ресурсом конфигурации приложений iOS Lob.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c3745089ff34bc4bb0554b7e9364e112a11ab31
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 357eabcf6a6102ddcdbd3de4d0cb7afb96de8462
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472358"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866120"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>тип ресурса iosLobAppProvisioningConfiguration
 
@@ -40,9 +40,9 @@ ms.locfileid: "50472358"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |expirationDateTime|DateTimeOffset|Необязательный срок действия профиля.|
-|payloadFileName|String|Имя файла полезной нагрузки (*.mobileprovision \| *.xml).|
+|payloadFileName|String|Имя файла полезной нагрузки (*.mobileprovision) | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого объекта конфигурации конфигурации приложения iOS LOB.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта конфигурации конфигурации приложения iOS LOB.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea8ead87af7e1f0b968ee9b85aaf0b7b4efbbcb6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 79f08f9d1b8b4696f3c122c653ef45e428bd88b1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133390"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865791"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>тип ресурса windowsFeatureUpdateProfile
 
@@ -35,16 +35,17 @@ ms.locfileid: "51133390"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта.|
-|displayName|Строка|Имя отображения профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
-|featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|id|String|Идентификатор объекта.|
+|displayName|String|Имя отображения профиля.|
+|description|String|Описание профиля, указанного пользователем.|
+|featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
-|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|[коллекция windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md)|Список групповых назначений профиля.|
@@ -70,7 +71,8 @@ ms.locfileid: "51133390"
   "roleScopeTagIds": [
     "String"
   ],
-  "deployableContentDisplayName": "String"
+  "deployableContentDisplayName": "String",
+  "endOfSupportDate": "String (timestamp)"
 }
 ```
 

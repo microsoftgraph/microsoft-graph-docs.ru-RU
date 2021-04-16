@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3842a478ab89e03366a111a52aed901613959dce
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1473c0a856636dc5373239c1bed4c2caed9ea78b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159472"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865224"
 ---
 # <a name="create-userexperienceanalyticsnotautopilotreadydevice"></a>Создание userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "51159472"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства intune.|
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
 |model|String|Модель устройства intune.|
-|managedBy|Строка|Устройство intune управляется.|
-|autoPilotRegistered|Boolean|Автопилотрегистер устройства intune.|
-|autoPilotProfileAssigned|Boolean|Автопилот Устройства intuneProfileAssigned.|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|Устройство intune azureAdRegistered. Возможные значения: `no`, `yes`, `unknown`.|
-|azureAdJoinType|Строка|Azure Ad ad для устройства intune присоединяется кType.|
+|managedBy|String|Устройство intune управляется.|
+|autoPilotRegistered|Логический|Автопилотрегистер устройства intune.|
+|autoPilotProfileAssigned|Логический|Автопилот Устройства intuneProfileAssigned.|
+|azureAdRegistered|Логический|Устройство intune azureAdRegistered.|
+|azureAdJoinType|String|Azure Ad ad для устройства intune присоединяется кType.|
 
 
 
@@ -76,7 +76,7 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 Content-type: application/json
-Content-length: 422
+Content-length: 421
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -87,7 +87,7 @@ Content-length: 422
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
@@ -97,7 +97,7 @@ Content-length: 422
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 470
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -109,7 +109,7 @@ Content-Length: 471
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```

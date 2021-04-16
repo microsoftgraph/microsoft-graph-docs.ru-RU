@@ -1,22 +1,22 @@
 ---
-title: действие Упдатерелатионшипс
+title: действие updateRelationships
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3455025f9d2749b9a309d9a2eb621a3a1941bd4e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d6c88756958b158077e08b61e527e5887bb4e5f8
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49285109"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865882"
 ---
-# <a name="updaterelationships-action"></a>действие Упдатерелатионшипс
+# <a name="updaterelationships-action"></a>действие updateRelationships
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "49285109"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Для приложения||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,7 +57,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Пока не задокументировано.|
+|отношения|[коллекция mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Пока не задокументировано.|
 
 
 

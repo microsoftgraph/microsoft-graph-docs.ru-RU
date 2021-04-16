@@ -1,36 +1,36 @@
 ---
-title: Функция Манажеддевицеенроллментабандонментдетаилс
-description: Метаданные для отчета о прекращении регистрации
-author: dougeby
+title: функция managedDeviceEnrollmentAbandonmentDetails
+description: Отчет о метаданных для отказа от регистрации
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d55d2c8bc6b18760b3cbc5327a8e955ddcd89408
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d52b4329a1d0fff604a7dc80e7de58db170dd15f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200606"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865420"
 ---
-# <a name="manageddeviceenrollmentabandonmentdetails-function"></a>Функция Манажеддевицеенроллментабандонментдетаилс
+# <a name="manageddeviceenrollmentabandonmentdetails-function"></a>функция managedDeviceEnrollmentAbandonmentDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метаданные для отчета о прекращении регистрации
+Отчет о метаданных для отказа от регистрации
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
-| &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложения||
+| &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

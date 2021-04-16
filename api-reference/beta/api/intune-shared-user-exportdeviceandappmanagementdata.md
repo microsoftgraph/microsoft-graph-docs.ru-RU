@@ -1,22 +1,22 @@
 ---
-title: Функция Експортдевицеандаппманажементдата
+title: exportDeviceAndAppManagementData
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3b044fafe87c6520ff76e1737f449731037ac48
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 831e02372a365a3a6600f5efb7e4f8722a85eb59
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49232188"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865371"
 ---
-# <a name="exportdeviceandappmanagementdata-function"></a>Функция Експортдевицеандаппманажементдата
+# <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "49232188"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -62,7 +62,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 ## <a name="response"></a>Ответ
 
-В случае успеха эта функция возвращает `200 OK` код отклика и объект [девицеандаппманажементдата](../resources/intune-onboarding-deviceandappmanagementdata.md) в тексте отклика.
+В случае успешного выполнения эта функция возвращает код отклика и `200 OK` [устройствоAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

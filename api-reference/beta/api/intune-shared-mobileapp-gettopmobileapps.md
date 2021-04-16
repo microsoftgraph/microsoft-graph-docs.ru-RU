@@ -1,22 +1,22 @@
 ---
-title: Функция getTopMobileApps
+title: функция getTopMobileApps
 description: Пока не задокументировано.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf2d8bcd344f6ac12263f0821db98a48b2aa7c43
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 426d79529414bd44f0a2327d503adf388943aaf5
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49285144"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865910"
 ---
-# <a name="gettopmobileapps-function"></a>Функция getTopMobileApps
+# <a name="gettopmobileapps-function"></a>функция getTopMobileApps
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "49285144"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Для приложения||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -60,7 +60,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [mobileApp](../resources/intune-shared-mobileapp.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию mobileApp](../resources/intune-shared-mobileapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

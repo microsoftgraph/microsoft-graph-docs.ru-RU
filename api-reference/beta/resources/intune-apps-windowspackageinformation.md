@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса windowsPackageInformation
-description: Содержит свойства сведений о пакете для бизнес-приложения Для Windows.
+title: тип ресурса windowsPackageInformation
+description: Содержит свойства для сведений о пакете для бизнес-приложения Windows.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c53ce1f9dac5c4b01129df32ff96ceb8645a842a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 7b2474fe5458c7a8c8fcc54d354f46ec7386952e
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154392"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866309"
 ---
-# <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
+# <a name="windowspackageinformation-resource-type"></a>тип ресурса windowsPackageInformation
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства сведений о пакете для бизнес-приложения Для Windows.
+Содержит свойства для сведений о пакете для бизнес-приложения Windows.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, для которой может работать это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|String|Отображаемая фамилия.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, для которой это приложение может работать. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|displayName|String|Имя отображения.|
 |identityName|String|Имя удостоверения.|
 |identityPublisher|String|Издатель удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
@@ -64,7 +64,8 @@ ms.locfileid: "50154392"
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   }
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae30966ec42edc00dc4245fb9f8b58ad85461346
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: a12988b034070ddfc16919f599f60f1289a9ba53
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159160"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866267"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Get userExperienceAnalyticsOverview
 
@@ -27,9 +27,9 @@ ms.locfileid: "51159160"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsOverview
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOve
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1123
+Content-Length: 1129
 
 {
   "value": {
@@ -99,7 +99,7 @@ Content-Length: 1123
     "bestPracticesHealthState": "insufficientData",
     "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
-    "resourcePerformanceState": "insufficientData"
+    "resourcePerformanceHealthState": "insufficientData"
   }
 }
 ```

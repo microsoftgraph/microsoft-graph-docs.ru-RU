@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса iosVppAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения VPP для iOS группе.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b3f9f3b055cf05460a417098603e8854d11e92f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 56e19bb10115faaf7386e6f54dc5ca2dc368ee33
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300586"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866092"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Тип ресурса iosVppAppAssignmentSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "49300586"
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 |**Приложения**|
-|унинсталлондевицеремовал|Boolean|Указывает, следует ли удалить приложение, когда устройство удалено из Intune.|
+|uninstallOnDeviceRemoval|Логический|Следует ли удалить приложение при удалении устройства из Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет

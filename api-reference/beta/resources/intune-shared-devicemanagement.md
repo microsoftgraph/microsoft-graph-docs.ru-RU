@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  '
 localization_priority: Normal
-author: dougeby
+author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2673f7325d3be8285e01d75e5dbcc3b7cb691dda
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 73aa7497c6e519ca139856104a692c6f939fbf2f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611126"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866134"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -185,7 +185,7 @@ ms.locfileid: "51611126"
 |roleDefinitions|Коллекция [roleDefinition](../resources/intune-rbac-roledefinition.md)|Определения ролей.|
 |roleScopeTags|[Коллекция roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Теги области ролей.|
 |**Создание отчетов**|
-|отчеты|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Отчеты singleton|
+|отчеты|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Отчеты singleton|
 |**Обновление программного обеспечения**|
 |windowsFeatureUpdateProfiles|[коллекция windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Коллекция профилей обновления функций Windows|
 |**Управление расходами на телеком (TEM)**|

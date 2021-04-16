@@ -1,22 +1,22 @@
 ---
 title: Действие wipeManagedAppRegistrationByDeviceTag
 description: Стирает данные о регистрации приложений с указанным тегом приложения.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69004f1f88d1b6f16625368fdda7f9f9ef9b6821
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 402069753a2c965b9d9d776b67f260d835bd1c57
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303778"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865056"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Действие wipeManagedAppRegistrationByDeviceTag
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,8 +30,8 @@ ms.locfileid: "49303778"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
