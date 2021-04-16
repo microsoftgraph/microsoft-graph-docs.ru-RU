@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 14d083bb6ed6e74fe1017ab4a7a87ed2bf159cc9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d7579a29132a3f122d525b81ab04f7d3fa49b6e8
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775607"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870053"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -46,7 +46,7 @@ PATCH /me/onlineMeetings/{meetingId}
 PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-> **Примечания.**
+> [!NOTE]
 > - `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 
@@ -68,7 +68,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime          | DateTime                                                     | Время окончания собрания в UTC.                                                                                                                   |
 | subject              | String                                                       | Тема собрания в Интернете.                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Участники, связанные с онлайн-собранием. Это включает организатора и участников.                                            |
-| isEntryExitAnnounced | Boolean                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
+| isEntryExitAnnounced | Логический                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Указывает, какие участники могут обойти вестибюль собрания.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Указывает, кто может быть презентовщиком на собрании. Возможные значения — это все, организация, roleIsPresenter, организатор и неизвестныйFutureValue. |
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68cc244764c3675145ea2019678ddc61af873db8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 344b8c710a89be0cd187df995852ce03c2ee638b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150880"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868248"
 ---
 # <a name="update-devicemanagementconfigurationpolicy"></a>Обновление deviceManagementConfigurationPolicy
 
@@ -27,9 +27,9 @@ ms.locfileid: "51150880"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,12 +38,13 @@ ms.locfileid: "51150880"
 -->
 ``` http
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,17 +54,18 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ документа политики. Автоматически созданный.|
+|id|String|Ключ документа политики. Автоматически созданный.|
 |name|String|Имя политики|
-|description|Строка|Описание политики|
+|description|String|Описание политики|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
 |settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
-|creationSource|Строка|Источник создания политики|
+|creationSource|String|Источник создания политики|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
+|templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения по шаблонам|
 
 
 
@@ -77,7 +79,7 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
-Content-length: 346
+Content-length: 685
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -90,7 +92,14 @@ Content-length: 346
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 
@@ -99,7 +108,7 @@ Content-length: 346
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 857
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -115,7 +124,14 @@ Content-Length: 518
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 

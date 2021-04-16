@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 81ef5019ad98af32cd2a393b1f531ee6b5b0ba87
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 02466f23b1ffbb7e91cfffba6c5bf5748cdc1892
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515886"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870018"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -51,7 +51,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-> **Примечание:**
+> [!NOTE]
 > - `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 > - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)

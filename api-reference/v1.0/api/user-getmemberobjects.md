@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a54eefc638808aafbe21ff42bdf9129e3519daf
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 36aacb2885fb7ac3b913074a759e6ac9381063f1
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722127"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870074"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -22,9 +22,9 @@ ms.locfileid: "50722127"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

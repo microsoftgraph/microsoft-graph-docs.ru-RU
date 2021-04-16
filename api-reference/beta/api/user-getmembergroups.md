@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1d2819f6475df39b25a27ce5523d201eab162939
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b4777bbcec6f05684e857254424c093e03fdeb0c
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720083"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869906"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -28,9 +28,9 @@ ms.locfileid: "50720083"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read, User.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
-| Для приложения                            | User.Read.All, Directory.Read.All, Directory.ReadWrite.All            |
+| Для приложения                            | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All            |
 
 ## <a name="http-request"></a>HTTP-запрос
 

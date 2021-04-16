@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c23e300d0320fe4740f90c42bc013414ed99e422
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 89b1e1071e759cbf95c6515e73d030b856ef6462
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473355"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869661"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 

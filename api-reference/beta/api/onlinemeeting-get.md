@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f930a0c60b228942781086b4ecae0a17b0e20b91
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ca2ef5d4dde7d6364ec4646721c1ebc1801565a7
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516019"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870109"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -25,7 +25,7 @@ ms.locfileid: "50516019"
 - Используйте путь, чтобы получить отчет участника о событии `/attendeeReport` в прямом эфире, как показано [в примере 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
 - Используйте пути и пути для получения записей живого события, как `/recording` `/alternativeRecording` показано [в примере 5](#example-5-retrieve-the-recording-of-a-live-event).
 
->**Примечания.** 
+> [!NOTE]
 >- В настоящее время отчеты и записи участников доступны только для живых событий.
 >- Только организатор событий может получить доступ к отчетам и записям участников.
 >- Отчеты и записи участников доступны только по завершению события в прямом эфире.
@@ -37,8 +37,8 @@ ms.locfileid: "50516019"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
 | :------------------------------------- | :---------------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                        |
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
 | Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
@@ -84,7 +84,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
->**Примечания.**
+> [!NOTE]
 >- Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 >- `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 >- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
@@ -106,7 +106,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
 
 - Если вы получаете онлайн-собрание на основе ID собрания, **videoTeleconferenceId** или **joinWebUrl,** этот метод также возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
 - Если вы получаете отчет участника или запись собрания в режиме онлайн, этот метод также возвращает заготку, которая указывает URI на отчет или запись `Location` участника, соответственно.

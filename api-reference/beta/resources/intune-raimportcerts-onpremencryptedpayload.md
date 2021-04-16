@@ -1,0 +1,89 @@
+---
+title: onPremEncryptedPayload resource type
+description: Пока не задокументировано.
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: resourcePageType
+ms.openlocfilehash: 9bd49e99cfa9c5d6e17bdd77c713312d241f5f3c
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869102"
+---
+# <a name="onpremencryptedpayload-resource-type"></a>onPremEncryptedPayload resource type
+
+Пространство имен: microsoft.graph
+
+> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+
+Н/Д
+
+## <a name="methods"></a>Методы
+|Метод|Возвращаемый тип|Описание|
+|:---|:---|:---|
+|[Список onPremEncryptedPayloads](../api/intune-raimportcerts-onpremencryptedpayload-list.md)|[onPremEncryptedPayload collection](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Список свойств и связей объектов [onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
+|[Get onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-get.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Чтение свойств и связей [объекта onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
+|[Создание onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-create.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Создание нового [объекта onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
+|[Удаление наPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-delete.md)|Нет|Удаляет [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md).|
+|[Обновление onPremEncryptedPayload](../api/intune-raimportcerts-onpremencryptedpayload-update.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md)|Обновление свойств объекта [onPremEncryptedPayload.](../resources/intune-raimportcerts-onpremencryptedpayload.md)|
+
+## <a name="properties"></a>Свойства
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
+|deviceId|Guid|Пока не задокументировано.|
+|payloadId|Guid|Пока не задокументировано.|
+|deviceKeyThumbprint|String|Пока не задокументировано.|
+|cert1PayloadUUID|String|Пока не задокументировано.|
+|cert2PayloadUUID|String|Пока не задокументировано.|
+|cert3PayloadUUID|String|Пока не задокументировано.|
+|plistTemplate|String|Пока не задокументировано.|
+|encryptedBlob|В двоичном формате|Пока не задокументировано.|
+|payloadVersion|Int32|Пока не задокументировано.|
+|status|Int32|Пока не задокументировано.|
+|createdTime|DateTimeOffset|Пока не задокументировано.|
+|lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
+|eTag|String|Пока не задокументировано.|
+|isDeleted|Boolean|Н/Д|
+
+## <a name="relationships"></a>Связи
+Нет
+
+## <a name="json-representation"></a>Представление JSON
+Ниже представлено описание ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.onPremEncryptedPayload"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.onPremEncryptedPayload",
+  "tenantId": "Guid",
+  "userId": "Guid",
+  "deviceId": "Guid",
+  "payloadId": "Guid",
+  "deviceKeyThumbprint": "String",
+  "cert1PayloadUUID": "String",
+  "cert2PayloadUUID": "String",
+  "cert3PayloadUUID": "String",
+  "plistTemplate": "String",
+  "encryptedBlob": "binary",
+  "payloadVersion": 1024,
+  "status": 1024,
+  "createdTime": "String (timestamp)",
+  "lastModifiedTime": "String (timestamp)",
+  "eTag": "String",
+  "isDeleted": true
+}
+```
+
+
+
+

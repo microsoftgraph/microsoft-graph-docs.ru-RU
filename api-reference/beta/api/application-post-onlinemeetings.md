@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 255c7e02b601b05b54b80ed7dbb3bd15df8925d9
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 00564efd81650941559c4d3b01833d3d797c2d4c
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515599"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869731"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -20,7 +20,8 @@ ms.locfileid: "50515599"
 
 Чтобы создать собрание по сети от имени пользователя, используйте идентификатор объекта (OID) в маркере пользователя (делегированное разрешение) или путь запроса (разрешение приложения).
 
-> **Примечание.** Собрание не отображается в календаре пользователя.
+> [!NOTE]
+> Собрание не отображается в календаре пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +49,8 @@ POST /me/onlineMeetings
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Примечание.** `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
+> [!NOTE]
+> `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

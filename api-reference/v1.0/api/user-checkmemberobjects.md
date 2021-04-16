@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4f27a53030e1c01b3efb1967f9f0620033e36f28
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: df3cf26e98f3769bea4ceba632dccd24030494b0
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722393"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870067"
 ---
 # <a name="user-checkmemberobjects"></a>пользователь: checkMemberObjects
 
@@ -24,9 +24,9 @@ ms.locfileid: "50722393"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>Кроме того:<br><br><ul><li>При проверке на членство в группах: Group.Read.All, Group.ReadWrite.All</li><li>При проверке на членство в административных подразделениях: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>При проверке на членство в ролях каталога: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>И:<ul><li>При проверке на членство в группах: Group.Read.All, Group.ReadWrite.All</li><li>При проверке на членство в административных подразделениях: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>При проверке на членство в ролях каталога: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

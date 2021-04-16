@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 43cca80f5873e1349c8e057ded8270d710cfe632
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3256e99798de12d4a79da37888551d562ed6027e
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957844"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869864"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -47,7 +47,8 @@ POST /me/onlineMeetings/createOrGet
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **Примечание.** `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
+> [!NOTE]
+> `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание                 |

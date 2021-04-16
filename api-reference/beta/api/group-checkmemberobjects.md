@@ -1,24 +1,24 @@
 ---
-title: 'Группа: Чеккмемберобжектс'
-description: Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта Group.
+title: 'группа: checkMemberObjects'
+description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта группы.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e6d2b4ee6f316d4c11b34940d3bbe9504f2ed67c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bd5b12d938b04108e67d99ab815668ac7f28b29d
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954347"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869724"
 ---
-# <a name="group-checkmemberobjects"></a>Группа: Чеккмемберобжектс
+# <a name="group-checkmemberobjects"></a>группа: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверка членства в списке групп или административных единиц для указанной группы. Этот метод является транзитивным.
+Проверка членства в списке групп или административных подразделений для указанной группы. Этот метод является транзитным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48954347"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All<br>С<br><ul><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Group.Read.All, Group.ReadWrite.All<br>С<br><ul><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /groups/{id}/checkMemberObjects
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /groups/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ids|Коллекция String| Коллекция, содержащая идентификаторы объектов групп, ролей каталогов, административных единиц или идентификаторов Ролетемплате ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов. |
+|ids|Коллекция String| Коллекция, в которой содержатся объектные ИД групп, роли каталога, административные единицы или roleTemplate ID ролей каталога, в которых необходимо проверить членство. Может быть указано до 20 объектов. |
 
 ## <a name="response"></a>Отклик
 

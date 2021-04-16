@@ -1,22 +1,22 @@
 ---
 title: 'servicePrincipal: checkMemberObjects'
-description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта принципов службы.
+description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта принципа службы.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 529699aafe2051f6e3aebfa115cde3bc2c26400e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 433cc101fa69d2b4f659b82a1d40b1b58b073548
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131387"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870081"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
-Проверьте членство в списке групп, ролей каталога или административных единиц для указанного объекта [servicePrincipal.](../resources/serviceprincipal.md) Этот метод является транзитивным.
+Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного [объекта servicePrincipal.](../resources/serviceprincipal.md) Этот метод является транзитным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "50131387"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All|
+| Делегированные (рабочая или учебная учетная запись)     | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ids|Коллекция String|Коллекция, которая содержит объектные ИД групп, роли каталога, административные единицы или roleTemplate ИД ролей каталогов, в которых необходимо проверить членство. Может быть указано до 20 объектов.|
+|ids|Коллекция String|Коллекция, в которой содержатся объектные ИД групп, роли каталога, административные единицы или roleTemplate ID ролей каталога, в которых необходимо проверить членство. Может быть указано до 20 объектов.|
 
 ## <a name="response"></a>Отклик
 

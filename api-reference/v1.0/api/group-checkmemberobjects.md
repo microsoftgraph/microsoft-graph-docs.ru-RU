@@ -1,22 +1,22 @@
 ---
-title: 'group: checkMemberObjects'
+title: 'группа: checkMemberObjects'
 description: Проверьте членство в списке групп или ролей каталога для указанного объекта группы.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 35ad4cc491d0a3d8513ca070a258ecc8e6080e8f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 076fb6007d856d02f06eb874f0ea3e3f6e211a66
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135592"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870025"
 ---
-# <a name="group-checkmemberobjects"></a>group: checkMemberObjects
+# <a name="group-checkmemberobjects"></a>группа: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
-Проверьте членство в списке групп или ролей каталога для указанной группы. Этот метод является транзитивным.
+Проверка членства в списке групп или ролей каталога для указанной группы. Этот метод является транзитным.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "50135592"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All<br>И:<br><ul><li>При проверке членства в административных единицах: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Group.Read.All, Group.ReadWrite.All<br>И:<br><ul><li>При проверке членства в административных единицах: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ POST /groups/{id}/checkMemberObjects
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|ids|Коллекция String| Коллекция, которая содержит ИД объектов групп, ролей каталога или roleTemplate ID ролей каталога, в которых проверяется членство. Можно указать до 20 объектов. |
+|ids|Коллекция String| Коллекция, которая содержит объектные ID групп, роли каталога или roleTemplate ID ролей каталога, в которых необходимо проверить членство. Можно указать до 20 объектов. |
 
 ## <a name="response"></a>Отклик
 
