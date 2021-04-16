@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f07bd7d8f8132b86365f0bd46fbcda90f3709d7
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5b9d2aef40be40f5de9f2afdf5f3bb9ef56fcbcc
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152959"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864797"
 ---
-# <a name="delete-microsofttunnelsite"></a><span data-ttu-id="1c225-103">Удаление microsoftTunnelSite</span><span class="sxs-lookup"><span data-stu-id="1c225-103">Delete microsoftTunnelSite</span></span>
+# <a name="delete-microsofttunnelsite"></a><span data-ttu-id="16228-103">Удаление microsoftTunnelSite</span><span class="sxs-lookup"><span data-stu-id="16228-103">Delete microsoftTunnelSite</span></span>
 
-<span data-ttu-id="1c225-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1c225-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="16228-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16228-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1c225-105">**Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1c225-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="16228-105">**Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16228-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1c225-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1c225-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="16228-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="16228-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1c225-107">Удаляет [microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)</span><span class="sxs-lookup"><span data-stu-id="1c225-107">Deletes a [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md).</span></span>
+<span data-ttu-id="16228-107">Удаляет [microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)</span><span class="sxs-lookup"><span data-stu-id="16228-107">Deletes a [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1c225-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="1c225-108">Prerequisites</span></span>
-<span data-ttu-id="1c225-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c225-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="16228-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="16228-108">Prerequisites</span></span>
+<span data-ttu-id="16228-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16228-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1c225-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1c225-111">Permission type</span></span>|<span data-ttu-id="1c225-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1c225-112">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="16228-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="16228-111">Permission type</span></span>|<span data-ttu-id="16228-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="16228-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1c225-113">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1c225-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1c225-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c225-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="1c225-115">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1c225-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1c225-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1c225-116">Not supported.</span></span>|
-|<span data-ttu-id="1c225-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="1c225-117">Application</span></span>|<span data-ttu-id="1c225-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c225-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="16228-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="16228-113">Delegated (work or school account)</span></span>|<span data-ttu-id="16228-114">DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16228-114">DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All</span></span>|
+|<span data-ttu-id="16228-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="16228-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="16228-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16228-116">Not supported.</span></span>|
+|<span data-ttu-id="16228-117">Для приложения</span><span class="sxs-lookup"><span data-stu-id="16228-117">Application</span></span>|<span data-ttu-id="16228-118">MicrosoftTunnelGateway.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16228-118">MicrosoftTunnelGateway.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1c225-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1c225-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="16228-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="16228-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "51152959"
 DELETE /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1c225-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="1c225-120">Request headers</span></span>
-|<span data-ttu-id="1c225-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1c225-121">Header</span></span>|<span data-ttu-id="1c225-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1c225-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="16228-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="16228-120">Request headers</span></span>
+|<span data-ttu-id="16228-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="16228-121">Header</span></span>|<span data-ttu-id="16228-122">Значение</span><span class="sxs-lookup"><span data-stu-id="16228-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1c225-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c225-123">Authorization</span></span>|<span data-ttu-id="1c225-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1c225-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1c225-125">Accept</span><span class="sxs-lookup"><span data-stu-id="1c225-125">Accept</span></span>|<span data-ttu-id="1c225-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1c225-126">application/json</span></span>|
+|<span data-ttu-id="16228-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="16228-123">Authorization</span></span>|<span data-ttu-id="16228-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="16228-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="16228-125">Accept</span><span class="sxs-lookup"><span data-stu-id="16228-125">Accept</span></span>|<span data-ttu-id="16228-126">application/json</span><span class="sxs-lookup"><span data-stu-id="16228-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1c225-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1c225-127">Request body</span></span>
-<span data-ttu-id="1c225-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1c225-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="16228-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="16228-127">Request body</span></span>
+<span data-ttu-id="16228-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="16228-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1c225-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="1c225-129">Response</span></span>
-<span data-ttu-id="1c225-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="1c225-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="16228-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="16228-129">Response</span></span>
+<span data-ttu-id="16228-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="16228-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1c225-131">Пример</span><span class="sxs-lookup"><span data-stu-id="1c225-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="16228-131">Пример</span><span class="sxs-lookup"><span data-stu-id="16228-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1c225-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1c225-132">Request</span></span>
-<span data-ttu-id="1c225-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1c225-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="16228-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="16228-132">Request</span></span>
+<span data-ttu-id="16228-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="16228-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 ```
 
-### <a name="response"></a><span data-ttu-id="1c225-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="1c225-134">Response</span></span>
-<span data-ttu-id="1c225-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1c225-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="16228-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="16228-134">Response</span></span>
+<span data-ttu-id="16228-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="16228-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
