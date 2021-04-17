@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ca2ef5d4dde7d6364ec4646721c1ebc1801565a7
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 44996342ee74e29cb6aef5834e930bfdf24ddb89
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870109"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882336"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -24,12 +24,14 @@ ms.locfileid: "51870109"
 - Сведения о onlineMeeting с помощью [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 - Используйте путь, чтобы получить отчет участника о событии `/attendeeReport` в прямом эфире, как показано [в примере 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
 - Используйте пути и пути для получения записей живого события, как `/recording` `/alternativeRecording` показано [в примере 5](#example-5-retrieve-the-recording-of-a-live-event).
+- Используйте путь `/meetingAttendanceReport` для получения отчета о посещаемости для запланированного собрания, как показано в [примере 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
 
 > [!NOTE]
->- В настоящее время отчеты и записи участников доступны только для живых событий.
->- Только организатор событий может получить доступ к отчетам и записям участников.
->- Отчеты и записи участников доступны только по завершению события в прямом эфире.
->- Срок действия ссылки на `302 Found` [скачивание в ответе](#example-4-retrieve-the-attendee-report-of-a-live-event) истекает **через 60** секунд.
+>- Отчеты о посещаемости собраний доступны для собраний, не имеющих живых событий, и доступны только по завершению собрания.
+>- Только организатор собрания может получить доступ к отчетам о посещаемости собраний.
+>- Записи и отчеты участников доступны только для живых событий и доступны только по завершению живого события.
+>- Только организатор событий в прямом эфире может получить доступ к отчетам и записям участников.
+>- Срок действия ссылок на скачивание отчетов и записей участников событий в прямом эфире истекает через 60 секунд.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -84,9 +86,15 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
+Чтобы получить отчет о посещаемости собрания с делегированным разрешением:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
+```
+
 > [!NOTE]
 >- Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
->- `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+>- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 >- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 > - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
 >- `joinWebUrl` должен быть закодирован URL-адрес, и этот маршрут можно использовать только для получения собраний, созданных `userId` .
@@ -444,3 +452,85 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
   ]
 }
 -->
+
+### <a name="example-6-retrieve-the-attendance-report-of-a-meeting"></a>Пример 6. Извлечение отчета о посещаемости собрания
+В следующем примере показан запрос на получения отчета о посещаемости собрания.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
+  "name": "get-meetingAttendanceReport"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+---
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1876
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
+    "attendanceRecords": [
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1558,
+            "role": "Organizer",
+            "identity": {
+                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
+                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
+                    "durationInSeconds": 1558
+                }
+            ]
+        },
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1152,
+            "role": "Presenter",
+            "identity": {
+                "id": "(redacted)",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
+                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
+                    "durationInSeconds": 415
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
+                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
+                    "durationInSeconds": 427
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
+                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
+                    "durationInSeconds": 310
+                }
+            ]
+        }
+    ]
+}
+
+```

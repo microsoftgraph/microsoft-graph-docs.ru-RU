@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 70e7bdde1261d26ae62712964223d724cba971dc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 48697a400cbc7b39fea6bf2f0be917218f9f36b7
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134466"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882574"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -142,9 +142,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Использование параметров $filter и $top для получения субъект-службы с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов
 

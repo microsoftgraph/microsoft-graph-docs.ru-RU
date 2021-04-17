@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 136ec05c83d260388fc967b99aea951537987019
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 56333744aea1f48803931f08c9fe285e5a088aec
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473439"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882231"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -57,7 +57,7 @@ ms.locfileid: "51473439"
 |[Перечисление memberOf](../api/serviceprincipal-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, непосредственным участником которых является субъект-служба, из свойства навигации memberOf.|
 |[Перечисление транзитивных свойств memberOf](../api/serviceprincipal-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, в которых участвует субъект-служба. Эта операция является транзитивной и включает группы, в которых состоит субъект-служба. |
 |[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Коллекция String|Проверка участия в указанном списке групп.|
-|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Коллекция String|Проверка участия в указанном списке группы, роли каталога или объектах административных единиц.|
+|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Коллекция String|Проверка участия в указанном списке групп, ролях каталога или объектах административных единиц.|
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Коллекция String|Список групп, в которых участвует субъект-служба.|
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Коллекция String|Список групп и ролей каталога, в которых участвует субъект-служба.|
 |**Владельцы**| | |
@@ -105,7 +105,7 @@ ms.locfileid: "51473439"
 | id | String | Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение null не допускается.            |
-|loginUrl|String|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
+|loginUrl|Строка|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|
 |notes|String|Поле с произвольным текстом для записи сведений о субъекте-службе, обычно применяемых в рабочих целях. Максимальная длина — 1024 символа.|
 |notificationEmailAddresses|Коллекция строк|Указывает список адресов электронной почты, по которым Azure AD отправляет уведомление, когда приближается срок окончания действия активного сертификата. Используется только для сертификатов, с помощью которых подписан маркер SAML, выпущенный для приложений коллекции Azure AD.|

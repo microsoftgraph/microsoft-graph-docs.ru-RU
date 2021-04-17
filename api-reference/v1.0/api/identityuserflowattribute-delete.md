@@ -1,0 +1,85 @@
+---
+title: Удаление identityUserFlowAttribute
+description: Удаление identityUserFlowAttribute.
+localization_priority: Normal
+doc_type: apiPageType
+author: jkdouglas
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: c5289130cb54ca68889cb5875d6277fe73de1e09
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882484"
+---
+# <a name="delete-identityuserflowattribute"></a>Удаление identityUserFlowAttribute
+
+Пространство имен: microsoft.graph
+
+Удаление [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Удалить можно только настраиваемые атрибуты потока пользователей.
+
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
+
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+
+* Глобальный администратор
+* Администратор атрибута потока внешних удостоверений
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /identity/userFlowAttributes/{id}
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+
+|Имя|Описание|
+|:---------------|:----------|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+
+## <a name="example"></a>Пример
+
+### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_userFlowAttributes"
+}
+-->
+
+``` http
+DELETE https://graph.microsoft.com/v1.0/identity/userFlowAttributes/extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby
+```
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

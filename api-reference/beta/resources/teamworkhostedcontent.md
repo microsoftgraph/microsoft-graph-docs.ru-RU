@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 93b3b4fc817c1fe3aa3973a112b9cf887c825b6e
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: da0b157bab78867bd3309b4529afe8ef734f0144
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578862"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882315"
 ---
 # <a name="teamworkhostedcontent-resource-type"></a>тип ресурса teamworkHostedContent
 
@@ -20,12 +20,18 @@ ms.locfileid: "50578862"
 
 Представляет богатый контент, например изображения и фрагменты кода в Microsoft Teams. Для богатого [контента в сообщениях](chatMessage.md)каналов и чатов см. [в странице chatMessageHostedContent.](chatMessageHostedContent.md)
 
+## <a name="methods"></a>Методы
+
+| Метод                                            | Возвращаемый тип                                       | Описание                                                    | 
+| :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
+| [Получите иконки приложений](../api/teamsappicon-get.md)     | [teamworkHostedContent](teamworkhostedcontent.md)                   | Получите bytes of the hosted content backing a Teams app icon. |
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |contentBytes|Двоичный|Только напишите. Bytes for the hosted content (such as images).|
 |contentType|String|Только напишите. Тип контента, например изображение/png, изображение/jpg.|
-|id|String|ID хост-контента.|
+|id|Строка|ID хост-контента.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

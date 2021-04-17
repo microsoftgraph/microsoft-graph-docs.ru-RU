@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e4bdbc361de50a4d261596c6b7b4f0c070f2a299
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 626d72434194f89842b394ac8b6ac51f5b1ab492
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957060"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882217"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -61,7 +61,7 @@ ms.locfileid: "50957060"
 |id|Строка|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения.|
 |isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Только для чтения. Это может быть обновлено только intune для любого типа ОС устройства или утвержденным [приложением MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows.|
 |isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено только intune для любого типа ОС устройства или утвержденным [приложением MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows. |
-|isRooted|Boolean|`true` если устройство коренится; `false` если устройство не работает в тюрьме. Это может быть обновлено только в Intune.|
+|isRooted|Логическое|`true` если устройство коренится; `false` если устройство не работает в тюрьме. Это может быть обновлено только в Intune.|
 |managementType|String|Канал управления устройством.  Это свойство заданной Intune. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |manufacturer|String| Производитель устройства. Только для чтения. |
 |mdmAppId|Строка|Идентификатор приложения, используемый для регистрации устройства в MDM. Только для чтения. Поддерживает `$filter`.|
@@ -86,11 +86,13 @@ ms.locfileid: "50957060"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
+|Команды  | [коллекция](command.md) команд | Набор команд, отправленных на это устройство.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
+|memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которые входит это устройство. Только для чтения. Допускается значение null.|
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)| Пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца. Только для чтения. Допускается значение null.|
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)| Коллекция зарегистрированных пользователей устройства. В случае зарегистрированных личных устройств или устройств, присоединенных через облако, при регистрации для обычных пользователей задается то же значение, что и для владельцев. Только для чтения. Допускается значение null.|
-|Команды  | [коллекция](command.md) команд | Набор команд, отправленных на это устройство|
-|usageRight|Коллекция [usageRight](usageright.md)|Представляет права использования, предоставленные устройству. |
+|transitiveMemberOf |Коллекция [directoryObject](directoryobject.md)| Группы, в которые входит это устройство. Эта операция является транзитной. |
+|useRights|Коллекция [usageRight](usageright.md)|Представляет права использования, предоставленные устройству. |
 
 ## <a name="json-representation"></a>Представление JSON
 

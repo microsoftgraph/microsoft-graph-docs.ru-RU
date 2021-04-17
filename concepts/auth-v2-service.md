@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 63b9f184639c3cb7186c65940add3cf9d6b1a47d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 004b133c458db4bf7b0ab5644dcd4b470b68d95f
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761467"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882308"
 ---
 # <a name="get-access-without-a-user"></a>Получение доступа без пользователя
 
@@ -225,3 +225,7 @@ Content-Length: 407
 
 - Дополнительные сведения об использовании платформы удостоверений Майкрософт для различных типов приложений см. по ссылкам **Начало работы** в [документации по платформе удостоверений Майкрософт](/azure/active-directory/develop/active-directory-developers-guide). Руководство содержит ссылки на обзорные статьи, краткие руководства, учебники, примеры кода и документацию по протоколам для различных типов приложений, поддерживаемых платформой удостоверений Майкрософт.
 - Сведения о библиотеке проверки подлинности Майкрософт (MSAL) и серверном ПО промежуточного слоя, доступном для использования с конечной точкой платформы удостоверений Майкрософт, см. в статье [Библиотеки проверки подлинности Майкрософт](/azure/active-directory/develop/active-directory-authentication-libraries).
+
+## <a name="see-also"></a>См. также
+
+Пример веб-приложения, размещаемого в службе приложений Azure, которое вызывает Microsoft Graph в качестве приложения (с помощью управляемых удостоверений), см. в разделе [Учебник. Доступ к Microsoft Graph из защищенного приложения](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). В этом руководстве показано, как создать в веб-приложении управляемое удостоверение, назначенное системой, добавить разрешения API Microsoft Graph к управляемому удостоверению и вызвать Microsoft Graph.

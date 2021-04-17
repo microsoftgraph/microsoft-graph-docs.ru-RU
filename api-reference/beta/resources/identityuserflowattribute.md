@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 8262d8c77d31abbd25aaaae26018c651f0dcfbe5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ca8930a5cb11edb1cf7345464666478cfc01bcda
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957018"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882602"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>Тип ресурса identityUserFlowAttribute
 
@@ -21,6 +21,8 @@ ms.locfileid: "50957018"
 Представляет атрибуты потоков пользователей в клиенте Azure Active Directory (Azure AD) и клиенте Azure AD B2C.
 
 Настройка атрибутов потоков пользователей в клиенте Azure AD или Azure AD B2C позволяет вам собирать сведения о пользователе во время регистрации. Вы можете выбрать сбор встроенного набора атрибутов, например имени, фамилии, города и почтового индекса. Кроме того, вы можете настроить специальные атрибуты потоков пользователей для сбора сведений о пользователе, которые не встроены в каталог. Настраиваемые атрибуты потоков пользователей — это абстрагирование от [расширений схемы Azure Active Directory](/azure/active-directory/develop/active-directory-schema-extensions).
+
+[identityBuiltInUserFlowAttributes](../resources/identitybuiltinuserflowattribute.md) и [identityCustomUserFlowAttributes](../resources/identitycustomuserflowattribute.md) наследуются от этого базового типа.
 
 ## <a name="methods"></a>Методы
 

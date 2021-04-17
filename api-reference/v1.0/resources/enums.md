@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: ebb237ec12d7f5526133e96d25652f5191d0fa23
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f2eeed42a528ea59a2edd1ac0d117bb82a3b2777
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473789"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882238"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -35,7 +35,7 @@ ms.locfileid: "51473789"
 
 |Member|
 |:---|
-|расположение;|
+|расположение|
 |приложение|
 
 ### <a name="fido2restrictionenforcementtype-values"></a>значения fido2RestrictionEnforcementType
@@ -56,7 +56,7 @@ ms.locfileid: "51473789"
 
 |Member|
 |:---|
-|пользователь;|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -350,7 +350,7 @@ ms.locfileid: "51473789"
 |Member|
 |:---|
 |signin|
-|пользователь;|
+|user|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>значения riskDetectionTimingType
@@ -653,10 +653,10 @@ ms.locfileid: "51473789"
 | doNotForward
 | followUp
 | fyi
-| forward
+| вперед
 | noResponseNecessary
 | read
-| reply
+| ответ
 | replyToAll
 | обзор
 
@@ -722,7 +722,7 @@ ms.locfileid: "51473789"
 | Автоматически
 | noPreview
 | checklist
-| (описание)
+| description
 | справочник
 
 
@@ -784,7 +784,7 @@ ms.locfileid: "51473789"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1135,7 +1135,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1167,7 +1167,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| пользователь;          | 1     | Отправка пользователя.         |
+| user          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -1358,6 +1358,49 @@ Enum для серьезности оповещений.
 |fit|
 |нет|
 |unknownFutureValue|
+
+### <a name="userflowtype-values"></a>значения userFlowType
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwner
+| unknownFutureValue
+
+### <a name="identityuserflowattributedatatype-values"></a>значения identityUserFlowAttributeDataType
+
+| Member                |
+|:----------------------|
+| Строка                |
+| boolean               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
+
+### <a name="identityuserflowattributetype-values"></a>значения identityUserFlowAttributeType
+
+| Member                |
+|:----------------------|
+| builtIn               |
+| настраиваемый                |
+| Обязательный              |
+| unknownFutureValue    |
+
+### <a name="identityuserflowattributeinputtype-values"></a>значения identityUserFlowAttributeInputType
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
 
 ### <a name="teamworkactivitytopicsource-values"></a>значения teamworkActivityTopicSource 
 
