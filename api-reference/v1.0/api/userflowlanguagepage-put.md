@@ -1,0 +1,106 @@
+---
+title: Обновление userFlowLanguagePage
+description: Обновление значений в объекте userFlowLanguagePage.
+author: jkdouglas
+localization_priority: Normal
+ms.prod: identity-and-sign-in
+doc_type: apiPageType
+ms.openlocfilehash: cf97de92946a256adfb2a7a175ee86909656b07a
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882491"
+---
+# <a name="update-userflowlanguagepage"></a><span data-ttu-id="b89de-103">Обновление userFlowLanguagePage</span><span class="sxs-lookup"><span data-stu-id="b89de-103">Update userFlowLanguagePage</span></span>
+
+<span data-ttu-id="b89de-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b89de-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="b89de-105">Обновление значений в объекте userFlowLanguagePage.</span><span class="sxs-lookup"><span data-stu-id="b89de-105">Update the values in an userFlowLanguagePage object.</span></span> <span data-ttu-id="b89de-106">Вы можете обновлять значения только в переопределяемой странице, которая используется для настройки значений, показанных пользователю во время пользовательского пути, определенного потоком пользователей.</span><span class="sxs-lookup"><span data-stu-id="b89de-106">You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="b89de-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b89de-107">Permissions</span></span>
+
+<span data-ttu-id="b89de-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b89de-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="b89de-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b89de-110">Permission type</span></span>      | <span data-ttu-id="b89de-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b89de-111">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="b89de-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b89de-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b89de-113">IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b89de-113">IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="b89de-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b89de-114">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="b89de-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b89de-115">Not supported.</span></span>|
+|<span data-ttu-id="b89de-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b89de-116">Application</span></span>|<span data-ttu-id="b89de-117">IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b89de-117">IdentityUserFlow.ReadWrite.All</span></span>|
+
+<span data-ttu-id="b89de-118">Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:</span><span class="sxs-lookup"><span data-stu-id="b89de-118">The work or school account needs to belong to one of the following roles:</span></span>
+
+* <span data-ttu-id="b89de-119">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="b89de-119">Global administrator</span></span>
+* <span data-ttu-id="b89de-120">Администратор потока внешних пользователей удостоверений</span><span class="sxs-lookup"><span data-stu-id="b89de-120">External Identity User Flow administrator</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="b89de-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b89de-121">HTTP request</span></span>
+
+<span data-ttu-id="b89de-122">Чтобы ссылаться на содержимое объекта, необходимо использовать `$value` .</span><span class="sxs-lookup"><span data-stu-id="b89de-122">To reference the content within the object, you must use `$value`.</span></span> <span data-ttu-id="b89de-123">Это возвращает содержимое объекта и позволяет ссылаться на него напрямую.</span><span class="sxs-lookup"><span data-stu-id="b89de-123">This returns the content within the object and allows you to reference it directly.</span></span>
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+PUT /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
+```
+
+## <a name="request-headers"></a><span data-ttu-id="b89de-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b89de-124">Request headers</span></span>
+
+|<span data-ttu-id="b89de-125">Имя</span><span class="sxs-lookup"><span data-stu-id="b89de-125">Name</span></span>|<span data-ttu-id="b89de-126">Описание</span><span class="sxs-lookup"><span data-stu-id="b89de-126">Description</span></span>|
+|:---|:---|
+|<span data-ttu-id="b89de-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b89de-127">Authorization</span></span>|<span data-ttu-id="b89de-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b89de-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b89de-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b89de-130">Content-Type</span></span>|<span data-ttu-id="b89de-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b89de-p105">application/json. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="b89de-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b89de-133">Request body</span></span>
+
+<span data-ttu-id="b89de-134">В теле запроса поставляем представление JSON для значений, содержащихся в [пользовательском интерфейсеFlowLanguagePage.](../resources/userflowlanguagepage.md)</span><span class="sxs-lookup"><span data-stu-id="b89de-134">In the request body, supply a JSON representation for the values contained within a [userFlowLanguagePage](../resources/userflowlanguagepage.md).</span></span>
+
+## <a name="response"></a><span data-ttu-id="b89de-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="b89de-135">Response</span></span>
+
+<span data-ttu-id="b89de-136">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="b89de-136">If successful, this method returns a `204 No Content` response code.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="b89de-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="b89de-137">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="b89de-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="b89de-138">Request</span></span>
+
+<span data-ttu-id="b89de-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b89de-139">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "update_overridespages"
+}
+-->
+
+``` http
+PUT https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
+Content-Type: application/json
+
+{
+"LocalizedStrings": [
+      {
+          "ElementType": "UxElement",
+          "ElementId": null,
+          "StringId": "alert_message",
+          "Override": true,
+          "Value": "Are you sure that you want to cancel entering your information?"
+      }
+  ]
+}
+```
+
+### <a name="response"></a><span data-ttu-id="b89de-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="b89de-140">Response</span></span>
+
+<span data-ttu-id="b89de-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b89de-141">The following is an example of the response.</span></span>
+
+<span data-ttu-id="b89de-142">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b89de-142">**Note:** The response object shown here might be shortened for readability.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
