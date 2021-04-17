@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1602,7 +1602,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Удаление элемента журнала
                     href: api/projectrome-delete-historyitem.md
-      - name: Запись клиентов (предварительная версия)
+      - name: Резервирование для клиентов (ознакомительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Обзор
@@ -9725,7 +9725,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Files
+      - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -11647,7 +11647,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор
@@ -11851,7 +11851,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: Адрес электронной почты
+              - name: адрес электронной почты;
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -11907,7 +11907,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -13176,7 +13176,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Каталог приложений
+          - name: Приложение
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
@@ -13188,7 +13188,14 @@ items:
                 href: api/teamsapp-update.md
               - name: Удаление приложения из каталога
                 href: api/teamsapp-delete.md
-          - name: Приложение
+              - name: Значок приложения
+                href: resources/teamsappicon.md
+                items:
+                  - name: Получить значок
+                    href: api/teamsappicon-get.md
+                  - name: Получить контент с хост-контентом
+                    href: api/teamworkhostedcontent-get.md
+          - name: Установка приложения
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
