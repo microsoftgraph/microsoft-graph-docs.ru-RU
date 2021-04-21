@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f841dec2b6de97ca7a67b01bf0d9e4b16dade843
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: e5e8e8ba5c67e81abe9bf108be5f72bacfe2739f
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870039"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921933"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -37,7 +37,7 @@ ms.locfileid: "51870039"
 - Используйте свойство **signInAudience** объекта [servicePrincipal](/graph/api/resources/serviceprincipal), чтобы получить учетные записи пользователей, поддерживаемые текущим приложением.
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
-- Общая доступность [API облачной печати](universal-print-concept-overview.md) для универсальной печати! Ознакомьтесь с [объявлением](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778) и узнайте, как [начать работу с универсальной печатью](https://docs.microsoft.com/universal-print/fundamentals/universal-print-license).
+- Общая доступность [API облачной печати](universal-print-concept-overview.md) для универсальной печати! Ознакомьтесь с [объявлением](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778) и узнайте, как [начать работу с универсальной печатью](/universal-print/fundamentals/universal-print-license).
 - [Подписывайтесь на уведомления об изменениях](universal-print-webhook-notifications.md) в [определении задачи печати](/graph/api/resources/printtaskdefinition) или ресурсе [printer](/graph/api/resources/printer).
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление

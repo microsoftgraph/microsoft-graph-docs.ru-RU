@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Micro
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 9efc445fa1d239cc180b7bfeeb71bb5d0848f227
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f3e40662d2e750514ef6c71b3faa604e13ccc773
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474948"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921660"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 
@@ -701,5 +701,5 @@ not | `not contains(tolower(title),'school')` |
 - [Входной и выходной HTML-код для страниц OneNote](onenote-input-output-html.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](https://docs.microsoft.com/ru-RU/answers/topics/microsoft-graph-notes.html)
-- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](/answers/topics/microsoft-graph-notes.html)
+- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)
