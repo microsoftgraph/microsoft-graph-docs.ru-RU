@@ -3,12 +3,12 @@ title: Используйте microsoft Graph набор средств с эл�
 description: Начало работы с помощью microsoft Graph набор средств в приложении Electron.
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: ad0d13ceb8a6ef12535dd635bf7eb011d765db9d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b57315e3fcc44f94cc18d3f4a93826b00a5ce4b9
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471430"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920056"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Используйте microsoft Graph набор средств с электронным
 
@@ -245,6 +245,5 @@ let config: MsalElectronConfig = {
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).
-- Задайте вопрос [в Microsoft Q&A](https://aka.ms/askgraph).
+- Задайте вопрос [в Microsoft Q&A](/answers/products/m365#microsoft-graph).
 - Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).
-    

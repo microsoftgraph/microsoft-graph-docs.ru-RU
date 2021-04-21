@@ -4,12 +4,12 @@ description: " Корпоративные записные книжки в Micro
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: be9d85811842939be0931416970bb5b7e800938a
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 6fe0d1603e2cd5b94e753b4e8d6b1a7e47b5aacf
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470531"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921919"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>Использование тегов заметок на страницах OneNote
 
@@ -364,8 +364,5 @@ Microsoft Graph возвращает указанные ниже сведени�
 - [Обновление содержимого страницы OneNote](onenote-update-page.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](/answers/topics/microsoft-graph-notes.html)
 - [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)
-
-
-

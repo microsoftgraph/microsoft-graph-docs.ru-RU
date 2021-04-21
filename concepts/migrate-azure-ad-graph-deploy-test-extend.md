@@ -4,12 +4,12 @@ description: 'Описывает миграцию приложений Azure Act
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 6460b768381cdf3223699d95d1d5b9ce9ed629e8
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: cdd2414652e675223b6de42a6a63de5c7e8c5c8a
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761292"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921926"
 ---
 # <a name="deploy-test-and-extend"></a>Развертывание, тестирование и расширение
 
@@ -57,7 +57,7 @@ ms.locfileid: "50761292"
 Если в процессе миграции возникают проблемы или требуется помощь, вы можете:
 
 - Снова [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список
-- Публикация вопросов [в Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-applications.html) 
+- Публикация вопросов [в Microsoft Q&A](/answers/topics/microsoft-graph-applications.html) 
 - Просмотрите примеры Microsoft Graph, чтобы сравнить их с существующим кодом приложения:
   - **Приложения, которые используют API REST:** изучить быстрые запуски и [примеры,](https://developer.microsoft.com/graph/get-started)выбрав платформу выбора и выполнить быстрый запуск или поиск соответствующего примера
   - **Приложение, которое использует клиентскую** библиотеку .NET: обзор [консоли-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)

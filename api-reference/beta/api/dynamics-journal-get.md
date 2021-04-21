@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f359d9b8b0daaaa9ab6f25a6924d85feb9f230cc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e814dd9afe56633c15825ede842f799bd85b0700
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474374"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921674"
 ---
 # <a name="get-journals"></a>Получать журналы
 
@@ -29,11 +29,11 @@ ms.locfileid: "50474374"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Приложение|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
-```
+```http
 GET /financials/companies/{id}/journals/{id}
 ```
 

@@ -4,16 +4,16 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1ff5373cc671f7f60e0a8a4870d69340f7538ea0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1000172e015ad8a48da906e38be32eca0fdf6662
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473492"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920203"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Правила использования фирменной символики для разработчиков API OneNote 
  
-**Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
+**Область применения**: пользовательские записные книжки в OneDrive | корпоративные записные книжки в Microsoft 365
 
 Следуйте инструкциям, приведенным в этой статье, чтобы наилучшим образом интегрировать торговую марку OneNote в ваш продукт, а также соблюсти требования к фирменной символике OneNote.
 
@@ -180,7 +180,5 @@ ms.locfileid: "50473492"
 - [Правила использования фирменной символики для разработчиков решений на основе API OneNote](https://www.microsoft.com/download/details.aspx?id=42977) (страница скачивания)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
-
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](/answers/topics/microsoft-graph-notes.html)
+- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)

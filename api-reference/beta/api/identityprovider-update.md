@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: bbd86180864421044e1b818080e58bcba087ff28
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: eb441c036fd4d555a7991c30a986258300282c35
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508248"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921569"
 ---
 # <a name="update-identityprovider-deprecated"></a>Обновление identityProvider (неподготовленное)
 
@@ -73,10 +73,10 @@ PATCH /identityProviders/{id}
 |name|String|Отображаемое имя поставщика удостоверений.|
 |type|String|Тип поставщика удостоверений Значение должно быть `OpenIdConnect` .|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|После того как поставщик OIDC отправляет маркер ID обратно в Azure AD, Azure AD должна иметь возможность составить карту утверждений от полученного маркера к утверждениям, которые Azure AD распознает и использует. Этот сложный тип захватывает это сопоставление.|
-|domainHint|String|Подсказку домена можно использовать для перехода непосредственно на вход на страницу указанного поставщика удостоверений вместо того, чтобы пользователь вошел в список доступных поставщиков удостоверений.|
-|metadataUrl|String|URL-адрес документа метаданных поставщика удостоверений Open Id Connect.|
-|responseMode|String|Определяет метод, который следует использовать для отправки данных от поставщика пользовательских удостоверений в Azure AD B2C. Можно использовать следующие режимы ответа: <ul><li/>`form_post` . Этот режим ответа рекомендуется для лучшей безопасности. Ответ передается методом HTTP POST, код или маркер кодируются в теле с помощью формата application/x-www-form-urlencoded.<li/>`query` Код или маркер возвращаются в качестве параметра запроса.</ul>|
-|responseType|String|Описывает, какие сведения отправляются в исходном вызове в authorization_endpoint поставщика пользовательских удостоверений. Можно использовать следующие типы ответов:<ul><li/> `code` . В результате потока кода авторизации код возвращается обратно в Azure AD B2C. Azure AD B2C продолжает вызывать token_endpoint, чтобы обменять код на маркер.<li/> `id_token` . Маркер ID возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. <li/>`token` . Маркер доступа возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. (На данный момент это значение не поддерживается Azure AD B2C)</ul>|
+|domainHint|Строка|Подсказку домена можно использовать для перехода непосредственно на вход на страницу указанного поставщика удостоверений вместо того, чтобы пользователь вошел в список доступных поставщиков удостоверений.|
+|metadataUrl|Строка|URL-адрес документа метаданных поставщика удостоверений Open Id Connect.|
+|responseMode|Строка|Определяет метод, который следует использовать для отправки данных от поставщика пользовательских удостоверений в Azure AD B2C. Можно использовать следующие режимы ответа: <ul><li/>`form_post` . Этот режим ответа рекомендуется для лучшей безопасности. Ответ передается методом HTTP POST, код или маркер кодируются в теле с помощью формата application/x-www-form-urlencoded.<li/>`query` Код или маркер возвращаются в качестве параметра запроса.</ul>|
+|responseType|Строка|Описывает, какие сведения отправляются в исходном вызове в authorization_endpoint поставщика пользовательских удостоверений. Можно использовать следующие типы ответов:<ul><li/> `code` . В результате потока кода авторизации код возвращается обратно в Azure AD B2C. Azure AD B2C продолжает вызывать token_endpoint, чтобы обменять код на маркер.<li/> `id_token` . Маркер ID возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. <li/>`token` . Маркер доступа возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. (На данный момент это значение не поддерживается Azure AD B2C)</ul>|
 |scope|String|Область определяет сведения и разрешения, которые вы хотите получить от настраиваемого поставщика удостоверений.|
 
 ## <a name="response"></a>Отклик
@@ -127,7 +127,7 @@ Content-length: 41
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -162,6 +162,18 @@ Content-length: 41
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-openidconnectprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

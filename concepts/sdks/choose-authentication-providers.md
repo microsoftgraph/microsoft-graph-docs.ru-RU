@@ -3,12 +3,12 @@ title: Выберите поставщика проверки подлиннос
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: f174ae516ca6bde01456349a7a0ed7742b8b0ba1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 726fbf1334a99ab6a854bd4627052d154187105c
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953371"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921128"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выберите поставщика проверки подлинности Microsoft Graph в зависимости от сценария
 
@@ -34,7 +34,7 @@ ms.locfileid: "50953371"
 | [Мобильное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Интерактивны | Делегированная потребительская/org | [Интерактивный поставщик](#InteractiveProvider) |
 
-> Примечание. Разработчикам Java и Android необходимо добавить библиотеку [azure-identity,](https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable) чтобы получить доступ к различным типам учетных данных.
+> Примечание. Разработчикам Java и Android необходимо добавить библиотеку [azure-identity,](/java/api/overview/azure/identity-readme?view=azure-java-stable) чтобы получить доступ к различным типам учетных данных.
 
 ## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>Поставщик кода авторизации
 
@@ -489,7 +489,7 @@ final User me = graphClient.me().buildRequest().get();
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Поставщикам проверки подлинности требуется идентификация клиента. Вы захотите [зарегистрировать свое приложение после](https://portal.azure.com/) того, как настроите поставщика проверки подлинности.
 * Дайте нам знать, если необходимый поток OAuth в настоящее время не поддерживается путем голосования или открытия запроса [функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).

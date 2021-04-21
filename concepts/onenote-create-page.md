@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Micro
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 815c42257449dde122958cc4ab3f9293387c0cb3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 856a266a435bf0fb2146fc786ec72058e38debce
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472792"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920196"
 ---
 # <a name="create-onenote-pages"></a>Создание страниц OneNote
 
@@ -276,5 +276,5 @@ Microsoft Graph требует строгого соответствия нек�
 - [Использование тегов заметок](onenote-note-tags.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](/answers/topics/microsoft-graph-notes.html)
 - [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)

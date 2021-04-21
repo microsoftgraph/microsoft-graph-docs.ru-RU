@@ -4,12 +4,12 @@ description: 'В этой статье описываются возможнос
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 3f6e3a03c02986856b8a7e7dc80f369c6f86263f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2e8025bbcb3b2858db467444d155cd8186e57dce
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470069"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921940"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Партнерство с API безопасности Microsoft Graph — возможности партнеров по технологиям
 
@@ -121,7 +121,7 @@ API безопасности входит в состав Microsoft Graph — �
 ### <a name="help-and-support"></a>Справка и поддержка
 
 - Если у вас есть вопросы по интеграции приложений или служб или продуктов с API безопасности Microsoft Graph, протянуться до сообщества технологий [Using Microsoft Security Graph API](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/bd-p/SecurityGraphAPI)
-- Следуйте обсуждениям [по microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-security.html)  с тегом: microsoft-graph-security.
+- Следуйте обсуждениям [по microsoft Q&A](/answers/topics/microsoft-graph-security.html)  с тегом: microsoft-graph-security.
 - Если вы найдете ошибки в примерах или запросах документации или проблемах с файлами ошибок в соответствующем репозитории [образцов.](https://github.com/microsoftgraph/security-api-solutions/blob/master/sample-repos.md)
 - Если у вас есть новые примеры запросов или проблем, которые не являются областью для одного [примера,](https://github.com/microsoftgraph/security-api-solutions/issues/new) проблемы с файлами в репозитории [Microsoft Graph Security Solutions](https://github.com/microsoftgraph/security-api-solutions).
 

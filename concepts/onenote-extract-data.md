@@ -4,12 +4,12 @@ description: " Корпоративные записные книжки в Micro
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 601ada5a98e42aeb1e0e1eb19dfd225451a6a27d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d575ab5609adcc60f4886c726c50ced9bcb10d0b
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474969"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920189"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Использование тегов div API OneNote для извлечения данных из записанного содержимого 
 
@@ -296,6 +296,5 @@ API оптимизирован для работы с товарами со мн
 - [Добавление изображений и файлов](onenote-images-files.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](/answers/topics/microsoft-graph-notes.html)
+- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 779b4e6d7800ad9284c77295145ea1c5f27d82a3
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: ed5491867a08999ede0a7db12482b6ee4e0598c8
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509395"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920094"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
@@ -56,8 +56,8 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|pkcs12Value|String| Это поле для отправки контента pfx. Значение должно быть кодированной версией базового-64 фактического контента сертификата. Обязательно.|
-|password|Строка| Это пароль для файла pfx. Обязательно. Если пароль не используется, необходимо по-прежнему предоставлять значение `""` .|
+|pkcs12Value|Строка| Это поле для отправки контента pfx. Значение должно быть кодированной версией базового-64 фактического контента сертификата. Обязательный.|
+|password|Строка| Это пароль для файла pfx. Обязательный. Если пароль не используется, необходимо по-прежнему предоставлять значение `""` .|
 
 ## <a name="response"></a>Отклик
 
@@ -69,6 +69,8 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityapiconnector_uploadclientcertificate"
@@ -83,10 +85,28 @@ Content-type: application/json
     "password": "<password>"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/identityapiconnector-uploadclientcertificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/identityapiconnector-uploadclientcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/identityapiconnector-uploadclientcertificate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание:** `authenticationConfiguration` в ответе — тип [microsoft.graph.clientCertificateAuthentication,](../resources/clientcertificateauthentication.md) так как это представляет общедоступные сведения о загруженных сертификатах.
 

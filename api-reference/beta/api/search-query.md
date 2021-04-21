@@ -1,18 +1,18 @@
 ---
-title: 'Сеарчентити: запрос'
+title: 'объект поиска: запрос'
 description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1d2302c647e55e377209aaf630dc06e7a24d55a1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 346f6941d23387fce06f99ec4e7fcdf2907d0c0e
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978759"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921842"
 ---
-# <a name="searchentity-query"></a>Сеарчентити: запрос
+# <a name="searchentity-query"></a>объект поиска: запрос
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978759"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Mail. Read, mail. ReadWrite, Calendars. Read, Calendars. ReadWrite, Files. Read. ALL, Files. ReadWrite. ALL, sites. Read. ALL, sites. ReadWrite. ALL, Екстерналитем. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -51,11 +51,11 @@ POST /search/query
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|обращения|Коллекция [сеарчрекуест](../resources/searchrequest.md)|Коллекция из одного или нескольких запросов на поиск, отформатированных в большом двоичном объекте JSON. Каждый большой двоичный объект JSON содержит типы ресурсов, ожидаемых в ответе, базовые источники, параметры разбиения по страницам, запрашиваемые поля и фактический поисковый запрос. <br> Помните об [известных ограничениях](../resources/search-api-overview.md#known-limitations) на поиск определенных комбинаций типов сущностей, сортировку или статистическую обработку результатов поиска. |
+|запросы|[коллекция searchRequest](../resources/searchrequest.md)|Коллекция из одного или более запросов поиска, каждый из которых отформатирован в BLOB JSON. Каждая blob JSON содержит типы ресурсов, ожидаемых в ответе, основные источники, параметры paging, запрашиваемого поля и фактический запрос поиска. <br> Будьте в курсе [известных ограничений](../resources/search-api-overview.md#known-limitations) на поиск определенных комбинаций типов сущностей, а также сортировку или агрегирование результатов поиска. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `HTTP 200 OK` код отклика и объект коллекции [сеарчреспонсе](../resources/searchresponse.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `HTTP 200 OK` [коллекции searchResponse](../resources/searchresponse.md) в тексте ответа.
  
 
 ## <a name="examples"></a>Примеры
@@ -160,12 +160,12 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>См. также
-- Поиск в [сообщениях электронной почты](/graph/search-concept-messages)
-- Поиск [событий календаря](/graph/search-concept-events)
-- Поиск контента в SharePoint и OneDrive ([файлы, списки и сайты](/graph/search-concept-files))
-- Данные о [настраиваемых типах поиска (соединители Graph)](/graph/search-concept-custom-types)
+- Поиск [сообщений почты](/graph/search-concept-messages)
+- События [календаря поиска](/graph/search-concept-events)
+- Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)
+- Пользовательские [типы поиска (графовые соединители)](/graph/search-concept-custom-types) данных
 - [Сортировка](/graph/search-concept-sort) результатов поиска
-- Использование [агрегатов](/graph/search-concept-aggregations) для уточнения результатов поиска
+- Использование [агрегаций для](/graph/search-concept-aggregations) уточнения результатов поиска
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

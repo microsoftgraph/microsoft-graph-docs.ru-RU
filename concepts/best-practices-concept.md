@@ -3,12 +3,12 @@ title: Рекомендации по работе с Microsoft Graph
 description: Эта статья содержит рекомендации по эффективному использованию Microsoft Graph в приложениях, независимо от текущей задачи — знакомство с Microsoft Graph, увеличение производительности или повышение надежности приложения.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6a91eaea5211b58cc821f098822ddb683a58cc22
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d6227c3bb90e620d741f387978f84ac12c171e19
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473436"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920035"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Рекомендации по работе с Microsoft Graph
 
@@ -148,4 +148,4 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 - Откройте подключения ко всем объявленным ответам DNS.
 - Обеспечьте создание уникального GUID и его отправку при каждом запросе REST Microsoft Graph. Это позволит Майкрософт быстрее изучить ошибки, если вы сообщите о проблеме с Microsoft Graph.
   - При каждом запросе Microsoft Graph должен создаваться уникальный GUID, а затем отправляться в заголовке HTTP-запроса `client-request-id`. Регистрируйте его в журналах приложения.
-  - Всегда вносите в журнал `request-id`, `timestamp` и `x-ms-ags-diagnostic` из заголовков HTTP-откликов. Они, а также `client-request-id` требуются при сообщении о проблемах на сайте [Вопросы и ответы Майкрософт](https://aka.ms/askgraph) или службе поддержки Майкрософт.
+  - Всегда вносите в журнал `request-id`, `timestamp` и `x-ms-ags-diagnostic` из заголовков HTTP-откликов. Они, а также `client-request-id` требуются при сообщении о проблемах на сайте [Вопросы и ответы Майкрософт](/answers/products/m365#microsoft-graph) или службе поддержки Майкрософт.

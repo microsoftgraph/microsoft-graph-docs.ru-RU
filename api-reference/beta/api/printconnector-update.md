@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ad196f179a81f9d5467ba715a08730b09ad4b88c
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 740884e815a3006929d2fcd15b62a2cd6cae8139
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766044"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921893"
 ---
 # <a name="update-printconnector"></a>Обновление printConnector
 
@@ -21,7 +21,7 @@ ms.locfileid: "51766044"
 Обновление свойств объекта **printConnector.**
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
@@ -48,9 +48,9 @@ PATCH /print/connectors/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |name|String|Имя соединитетеля.|
-|fullyQualifiedDomainName|String|Имя хост-имени соединители.|
+|fullyQualifiedDomainName|Строка|Имя хост-имени соединители.|
 |operatingSystem|String|Версия операционной системы соединитетеля.|
-|appVersion|String|Версия соединиттеля.|
+|appVersion|Строка|Версия соединиттеля.|
 |расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
 
 ## <a name="response"></a>Отклик
@@ -58,6 +58,8 @@ PATCH /print/connectors/{id}
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,6 +83,24 @@ Content-length: 300
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-connector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-connector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

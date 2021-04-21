@@ -4,16 +4,16 @@ description: " Корпоративная записная книжка в Micro
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9a30197744cb3d03255ea3d215ff0774546ae023
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8786bcf8a0aa3aafaca8406f11e6243b8dd7b49c
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472337"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920105"
 ---
 # <a name="update-onenote-page-content"></a>Обновление содержимого страниц OneNote
 
-**Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
+**Область применения**: пользовательские записные книжки в OneDrive | корпоративные записные книжки в Microsoft 365
 
 
 Чтобы обновить содержимое страницы OneNote, необходимо отправить запрос PATCH в конечную точку *content* страницы:
@@ -490,5 +490,5 @@ Content-Type: image/png
 - [Добавление изображений и файлов](onenote-images-files.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](/answers/topics/microsoft-graph-notes.html)
 - [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)
