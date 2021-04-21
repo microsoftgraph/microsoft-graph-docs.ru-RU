@@ -4,16 +4,16 @@ description: В этой статье содержатся рекомендац�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8ceb848e4d48954d9a08c8bc9f7b28e2521c9aed
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d5fdffe531e8b04bc0f64caad8ea81cd9a3bda27
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472806"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920210"
 ---
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Рекомендации по работе с API OneNote в Microsoft Graph
 
-В этой статье содержатся рекомендации по работе с API OneNote в Microsoft Graph. Эти рекомендации основаны на ответах на распространенные вопросы в [Microsoft Q&a и](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)  Twitter.
+В этой статье содержатся рекомендации по работе с API OneNote в Microsoft Graph. Эти рекомендации основаны на ответах на распространенные вопросы в [Microsoft Q&a и](/answers/topics/microsoft-graph-notes.html)  Twitter.
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>Используйте оператор $select, чтобы выбрать минимальный набор необходимых свойств
 

@@ -1,22 +1,22 @@
 ---
-title: 'searchEntity: запрос'
-description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в отклике.
+title: 'объект поиска: запрос'
+description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e675b9b9301e7b0fc918c4631757a9bb21f82ce7
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 8194b23ede8856f0237b179aa4d50a5ce0c1ebc9
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983764"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920112"
 ---
-# <a name="searchentity-query"></a>searchEntity: запрос
+# <a name="searchentity-query"></a>объект поиска: запрос
 
 Пространство имен: microsoft.graph
 
-Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в отклике.
+Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -25,8 +25,8 @@ ms.locfileid: "49983764"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Mail.Read, Mail.ReadWrite, Calendars.Read, Calendars.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, ExternalItem.Read.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,11 +48,11 @@ POST /search/query
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|requests|[Коллекция searchRequest](../resources/searchrequest.md)|Коллекция из одного или более поисковых запросов, каждый из которых отформатирован в BLOB-blob JSON. Каждый BLOB-ресурс JSON содержит типы ресурсов, ожидаемых в ответе, основные источники, параметры разбитого поля, запрашиваемую поля и фактический поисковый запрос. <br> Следует помнить об [известных ограничениях](../resources/search-api-overview.md#known-limitations) поиска определенных комбинаций типов сущностей, а также сортировки или агрегации результатов поиска. |
+|запросы|[коллекция searchRequest](../resources/searchrequest.md)|Коллекция из одного или более запросов поиска, каждый из которых отформатирован в BLOB JSON. Каждая blob JSON содержит типы ресурсов, ожидаемых в ответе, основные источники, параметры paging, запрашиваемого поля и фактический запрос поиска. <br> Будьте в курсе [известных ограничений](../resources/search-api-overview.md#known-limitations) на поиск определенных комбинаций типов сущностей, а также сортировку или агрегирование результатов поиска. |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект коллекции `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `HTTP 200 OK` [коллекции searchResponse](../resources/searchresponse.md) в тексте ответа.
  
 
 ## <a name="examples"></a>Примеры
@@ -163,10 +163,10 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>См. также
-- Поиск [в почтовых сообщениях](/graph/search-concept-messages)
-- Поиск [событий календаря](/graph/search-concept-events)
-- Поиск контента в SharePoint и OneDrive ([файлы, списки и сайты)](/graph/search-concept-files)
-- Данные [настраиваемого типа поиска (соединители Graph)](/graph/search-concept-custom-types)
+- Поиск [сообщений почты](/graph/search-concept-messages)
+- События [календаря поиска](/graph/search-concept-events)
+- Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)
+- Пользовательские [типы поиска (графовые соединители)](/graph/search-concept-custom-types) данных
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

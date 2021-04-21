@@ -4,12 +4,12 @@ description: В тексте страницы OneNote может содержа�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: e21ad3fb97b807bc91ecf6a993483f3bb83c82b8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3921b89d811013a8966e7b1057a3c3614a978703
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472841"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920217"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>Создание элементов с абсолютным положением на страницах OneNote
 
@@ -165,6 +165,5 @@ API OneNote возвращает указанные ниже сведения в
 - [Обновление содержимого страницы OneNote](onenote-update-page.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Вопросы разработки OneNote для Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
+- [Вопросы разработки OneNote на сайте «Вопросы и ответы Майкрософт»](/answers/topics/microsoft-graph-notes.html)
+- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)

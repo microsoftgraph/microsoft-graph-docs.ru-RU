@@ -4,12 +4,12 @@ description: Узнайте, как настроить приложения дл
 author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 2f80db867829ac2bead2671c0ed6bc184e0e786f
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: ff14ae4506cc19adf58ab61cde436a0252bd6f5c
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468963"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920399"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Разрешить приложениям получать доступ к собраниям в Интернете от имени пользователя
 
@@ -46,8 +46,7 @@ ms.locfileid: "51468963"
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
    ```
 
-> **Примечание** 
-> 
+> [!NOTE]
 > - _Identity_ ссылается на имя политики при создании политики, но идентификатор пользователя при предоставлении политики.
 > - Изменение политик доступа к приложениям может занять до 30 минут, чтобы внести изменения в API API MICROSOFT Graph REST.
 
