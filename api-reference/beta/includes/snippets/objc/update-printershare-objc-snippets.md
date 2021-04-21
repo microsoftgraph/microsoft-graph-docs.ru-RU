@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2bd1cbbffb627f6ce95fff7e606a02190756ac78
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 167897c10d58ad158951bab438e9dd0ed5be8ea7
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44216744"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51922624"
 ---
 ```objc
 
@@ -17,7 +17,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPrinterShare *printerShare = [[MSGraphPrinterShare alloc] init];
-[printerShare setName:@"ShareName"];
+[printerShare setDisplayName:@"ShareName"];
+[printerShare setAllowAllUsers: true];
 
 NSError *error;
 NSData *printerShareData = [printerShare getSerializedDataWithError:&error];

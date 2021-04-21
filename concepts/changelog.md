@@ -1501,7 +1501,7 @@ ms.locfileid: "51920441"
 
 ### <a name="search"></a>Поиск
 
-| Тип изменения | Версия | Description                                                                                                                                               |
+| Тип изменения | Версия | Описание                                                                                                                                               |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Изменение      | Бета    | Ресурс [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) не рекомендуется.                                                  |
 | Изменение      | Бета    | Для ресурса [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) теперь поддерживается обновление свойств **содержимое** и **свойства**.      |
@@ -3863,7 +3863,7 @@ ms.locfileid: "51920441"
 
 ### <a name="education"></a>Образование
 
-|Тип изменения|Версия|Description|
+|Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Изменение|Бета-версия|Добавлено свойство reportableIdentifier объекта [educationsynchronizationerror](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta&preserve-view=true).|
 |Изменение|Бета-версия|Обновлены варианты ответа для API [uploadUrl](/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta&preserve-view=true).|
@@ -3960,7 +3960,7 @@ ms.locfileid: "51920441"
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Дополнение|1.0|Добавлены новые объекты:<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0&preserve-view=true);<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0&preserve-view=true).<br/>|
-|Дополнение|1.0|Добавлены новые сложные типы:<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0&preserve-view=true).<br/>|
+|Дополнение|v1.0|Добавлены новые сложные типы:<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0&preserve-view=true).<br/>|
 |Дополнение|1.0|Добавлено действие [syncLicenses](/graph/api/intune-onboarding-vpptoken-synclicenses?view=graph-rest-1.0&preserve-view=true) для объекта [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0&preserve-view=true). |
 |Дополнение|1.0|Добавлено свойство навигации **vppTokens** для объекта [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0&preserve-view=true).|
 |Дополнение|Бета|Добавлено свойство **managementCertificateExpirationDate** объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta&preserve-view=true).|
@@ -4043,7 +4043,7 @@ ms.locfileid: "51920441"
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
-|Тип изменения|Версия|Description|
+|Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Изменение|Бета|Добавлены свойства **applicationID** и **creatorUserID** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). |
 |Изменение|Бета|Добавлена операция [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true) для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true). |
@@ -4075,7 +4075,7 @@ ms.locfileid: "51920441"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-|Дополнение|Бета-версия|Добавлено свойство **siteId** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true).|
+|Дополнение|бета|Добавлено свойство **siteId** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="workbooks-and-charts"></a>Книги и диаграммы
 
@@ -4128,7 +4128,7 @@ ms.locfileid: "51920441"
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
-|Дополнение|Бета-версия|Добавлены новые сложные типы:<br/>[plannerPlanContext](/graph/api/resources/plannerplancontext?view=graph-rest-beta&preserve-view=true);<br/>[plannerPlanContextDetails](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta&preserve-view=true);<br/>[plannerPlanContextCollection](/graph/api/resources/plannerplancontextcollection?view=graph-rest-beta&preserve-view=true);<br/>[plannerPlanContextDetailsCollection](/graph/api/resources/plannerplancontextdetailscollection?view=graph-rest-beta&preserve-view=true);<br/>[plannerFavoritePlanReference](/graph/api/resources/plannerfavoriteplanreference?view=graph-rest-beta&preserve-view=true);<br/>[plannerRecentPlanReference](/graph/api/resources/plannerrecentplanreference?view=graph-rest-beta&preserve-view=true);<br/>[plannerFavoritePlanReferenceCollection](/graph/api/resources/plannerfavoriteplanreferencecollection?view=graph-rest-beta&preserve-view=true);<br/>[plannerRecentPlanReferenceCollection](/graph/api/resources/plannerrecentplanreferencecollection?view=graph-rest-beta&preserve-view=true).|
+|Дополнение|бета|Добавлены новые сложные типы:<br/>[plannerPlanContext](/graph/api/resources/plannerplancontext?view=graph-rest-beta&preserve-view=true);<br/>[plannerPlanContextDetails](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta&preserve-view=true);<br/>[plannerPlanContextCollection](/graph/api/resources/plannerplancontextcollection?view=graph-rest-beta&preserve-view=true);<br/>[plannerPlanContextDetailsCollection](/graph/api/resources/plannerplancontextdetailscollection?view=graph-rest-beta&preserve-view=true);<br/>[plannerFavoritePlanReference](/graph/api/resources/plannerfavoriteplanreference?view=graph-rest-beta&preserve-view=true);<br/>[plannerRecentPlanReference](/graph/api/resources/plannerrecentplanreference?view=graph-rest-beta&preserve-view=true);<br/>[plannerFavoritePlanReferenceCollection](/graph/api/resources/plannerfavoriteplanreferencecollection?view=graph-rest-beta&preserve-view=true);<br/>[plannerRecentPlanReferenceCollection](/graph/api/resources/plannerrecentplanreferencecollection?view=graph-rest-beta&preserve-view=true).|
 |Дополнение|Бета-версия|Добавлены свойства `favoritePlanReferences` и `recentPlanReferences` для объекта [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета-версия|Добавлены свойства навигации `favoritePlans` и `recentPlans` для объекта [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета-версия|Добавлено свойство `contexts` для объекта [plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true). |
@@ -4143,7 +4143,7 @@ ms.locfileid: "51920441"
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Дополнение|1.0|Добавлена поддержка [пакетной обработки JSON](json-batching.md). Установлено ограничение в 20 внутренних запросов.|
-|Изменение|Бета-версия|Максимальное количество внутренних запросов при [пакетной обработке JSON](json-batching.md) увеличено с 5 до 20.|
+|Изменение|бета|Максимальное количество внутренних запросов при [пакетной обработке JSON](json-batching.md) увеличено с 5 до 20.|
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 |Тип изменения|Версия|Описание|
@@ -4203,8 +4203,8 @@ ms.locfileid: "51920441"
 |Изменение|Версия 1.0|Добавлено свойство **deviceEnrollmentLimit** для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0&preserve-view=true).|
 |Изменение|Версия 1.0|Добавлены свойства навигации **managedDevices**, **managedAppRegistrations** и **deviceManagementTroubleshootingEvents** для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0&preserve-view=true).|
 |||
-|Дополнение|Бета-версия|Добавлены новые объекты:<br/>[deviceManagementScriptAssignment](/graph/api/resources/intune-devices-devicemanagementscriptassignment?view=graph-rest-beta&preserve-view=true);<br/>[iosCertificateProfile](/graph/api/resources/intune-deviceconfig-ioscertificateprofile?view=graph-rest-beta&preserve-view=true);<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-beta&preserve-view=true).<br/>|
-|Дополнение|Бета-версия|Добавлены новые сложные типы:<br/>[revokeAppleVppLicensesActionResult](/graph/api/resources/intune-devices-revokeapplevpplicensesactionresult?view=graph-rest-beta&preserve-view=true);<br/>[vppTokenRevokeLicensesActionResult](/graph/api/resources/intune-onboarding-vpptokenrevokelicensesactionresult?view=graph-rest-beta&preserve-view=true).<br/>|
+|Дополнение|бета|Добавлены новые объекты:<br/>[deviceManagementScriptAssignment](/graph/api/resources/intune-devices-devicemanagementscriptassignment?view=graph-rest-beta&preserve-view=true);<br/>[iosCertificateProfile](/graph/api/resources/intune-deviceconfig-ioscertificateprofile?view=graph-rest-beta&preserve-view=true);<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-beta&preserve-view=true).<br/>|
+|Дополнение|бета|Добавлены новые сложные типы:<br/>[revokeAppleVppLicensesActionResult](/graph/api/resources/intune-devices-revokeapplevpplicensesactionresult?view=graph-rest-beta&preserve-view=true);<br/>[vppTokenRevokeLicensesActionResult](/graph/api/resources/intune-onboarding-vpptokenrevokelicensesactionresult?view=graph-rest-beta&preserve-view=true).<br/>|
 |Дополнение|Бета-версия|Добавлено действие [revokeToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken?view=graph-rest-beta&preserve-view=true) для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta&preserve-view=true) для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-devices-devicemanagementscript-assign?view=graph-rest-beta&preserve-view=true) к объекту [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta&preserve-view=true). |
@@ -4212,7 +4212,7 @@ ms.locfileid: "51920441"
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-deviceconfig-devicecompliancepolicy-assign?view=graph-rest-beta&preserve-view=true) для объекта [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета-версия|Добавлено действие [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta&preserve-view=true) для объекта [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета-версия|Добавлено действие [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-beta&preserve-view=true) для объекта [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta&preserve-view=true). |
-|Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-beta&preserve-view=true) для объекта [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta&preserve-view=true). |
+|Дополнение|Бета|Добавлено действие [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-beta&preserve-view=true) для объекта [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta&preserve-view=true). |
 |Дополнение|Бета-версия|Добавлена функция [getEffectiveDeviceEnrollmentConfigurations](/graph/api/intune-onboarding-user-geteffectivedeviceenrollmentconfigurations?view=graph-rest-beta&preserve-view=true) для объекта [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta&preserve-view=true). |
 |Удаление|Бета-версия|Удалены следующие объекты:<br/>**appReportingOverviewStatus**<br/>**complianceSettingStateSummary**;<br/>**deviceConfigurationUserStateSummary**;<br/>**eBookGroupAssignment**;<br/>**eBookVppGroupAssignment**;<br/>**mobileAppGroupAssignment**;<br/>**mobileAppVppGroupAssignment**.<br/>|
 |Удаление|Бета-версия|Удалены следующие сложные типы:<br/>**androidForWorkAppConfigurationExample**;<br/>**androidForWorkAppConfigurationExampleJson**;<br/>**appInstallationFailure**;<br/>**appsComplianceListItem**;<br/>**defaultDeviceEnrollmentRestrictions**;<br/>**defaultDeviceEnrollmentWindowsHelloForBusinessSettings**;<br/>**deviceEnrollmentPlatformRestrictions**.<br/>|
