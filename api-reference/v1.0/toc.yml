@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -512,6 +512,8 @@ items:
                 href: api/group-list-owners.md
               - name: Перечисление фотографий
                 href: api/group-list-photos.md
+              - name: Гранты на получение разрешений списка
+                href: api/group-list-permissiongrants.md
               - name: Удаление из избранного
                 href: api/group-removefavorite.md
               - name: Удаление члена
@@ -4687,7 +4689,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -5239,7 +5241,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
