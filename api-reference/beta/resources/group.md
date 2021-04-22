@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1a08d7cf055734440a9c02ca5aa7390bf5175cc6
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: bd30d40c59c27c5ea0b244810a604aa3c2b6ad29
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469040"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944256"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -189,7 +189,8 @@ ms.locfileid: "51469040"
 |membersWithLicenseErrors|Коллекция объектов [user](user.md)|Список участников группы с ошибками лицензий после группового назначения лицензий. Только для чтения.|
 |onenote|[onenote](onenote.md)| Только для чтения.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение null.|
-|photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|Разрешение, предоставленное группе для определенного приложения.|
+|photo;|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
 |planner|[plannerGroup](plannergroup.md)| Выборочные службы Планировщика, доступные для группы. Только для чтения. Допускается значение null. |
 |rejectedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым запрещено создавать записи или события календаря в этой группе. Допускается значение null.|

@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 64d3eaf0fde0dc6e822dbb0bfaa3a52daab680f4
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: ab1189d7c01a521af65cdb6b241b8068687e7c84
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611366"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944277"
 ---
 # <a name="list-permissiongrants-of-a-group"></a>Список объектов permissionGrants группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "51611366"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [группе](../resources/group.md). Это список приложений Azure AD, имеющих доступ к чату, одновременно с доступом, который имеет каждое приложение.
+Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [группе](../resources/group.md). Это список приложений Azure AD, имеющих доступ к группе, одновременно с доступом, который имеет каждое приложение.
 
 ## <a name="permissions"></a>Разрешения
 

@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00564efd81650941559c4d3b01833d3d797c2d4c
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 4c6ac941cd5b678f3470cd4a0c242ff9e70ee920
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869731"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944270"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -20,7 +20,7 @@ ms.locfileid: "51869731"
 
 Чтобы создать собрание по сети от имени пользователя, используйте идентификатор объекта (OID) в маркере пользователя (делегированное разрешение) или путь запроса (разрешение приложения).
 
-> [!NOTE]
+> [!TIP]
 > Собрание не отображается в календаре пользователя.
 
 ## <a name="permissions"></a>Разрешения

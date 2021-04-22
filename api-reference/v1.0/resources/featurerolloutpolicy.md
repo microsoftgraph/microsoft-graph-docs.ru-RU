@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 889ff6c7a36be5580a6a419b6bd99e7e85240632
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c655b69a588ced1777221289d41175a73c696854
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964970"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944221"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>тип ресурса featureRolloutPolicy
 
@@ -24,7 +24,7 @@ ms.locfileid: "50964970"
 - Поле **appliesTo** поддерживает только группы.
 - Динамические группы и вложенные группы не поддерживаются.
 
-Ниже представлены предварительные требования для каждой из функций, которые в настоящее время подаваются в суд для выкатки с помощью этой политики выкатки.
+Ниже представлены предварительные требования к каждому из компонентов, которые в настоящее время поддерживаются для выкатки с помощью этой политики.
 
 ### <a name="passthrough-authentication"></a>Проверка подлинности через проход
 

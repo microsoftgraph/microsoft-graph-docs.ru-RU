@@ -225,6 +225,14 @@ items:
             items:
               - name: Управление доступом к ресурсам
                 href: tutorial-access-package-api.md
+              - name: Проверка доступа к группам
+                items:
+                  - name: Обзор API проверок доступа
+                    href: accessreviews-overview.md
+                  - name: Проверка доступа к группе безопасности
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Проверка доступа к группе Microsoft 365
+                    href: tutorial-accessreviews-M365group.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:

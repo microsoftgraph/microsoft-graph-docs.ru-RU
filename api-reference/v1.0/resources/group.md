@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2fb76f1409b779c40a3f624cc429cb3040cc0eaf
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 027f3df4ef061d4b620d9eaa177327d2edce9140
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468802"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944207"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -179,7 +179,8 @@ ms.locfileid: "51468802"
 |membersWithLicenseErrors|Коллекция [User](user.md)|Список участников группы с ошибками лицензий после группового назначения лицензий. Только для чтения.|
 |onenote|[Onenote](onenote.md)| Только для чтения.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Максимальное количество владельцев: 100. Методы HTTP:GET (поддерживается для всех групп), POST (поддерживается для групп Microsoft 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Microsoft 365 и групп безопасности). Допускается значение null.|
-|photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|Разрешение, предоставленное группе для определенного приложения.|
+|photo;|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
 |planner|[plannerGroup](plannergroup.md)| Точка входа в ресурс Planner, который может существовать для единой группы.|
 |rejectedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым запрещено создавать записи или события календаря в этой группе. Допускается значение null.|

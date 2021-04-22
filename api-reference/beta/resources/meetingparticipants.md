@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса МитингпартиЦипантс
+title: тип ресурса meetingParticipants
 description: Участники собрания.
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e6d53d0359b9dc71e538c5bbe025e093a4912ffb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93ca3d73518f9739cc3115c80efd2aec551629b5
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971659"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944165"
 ---
-# <a name="meetingparticipants-resource-type"></a>Тип ресурса МитингпартиЦипантс
+# <a name="meetingparticipants-resource-type"></a>тип ресурса meetingParticipants
 
 Пространство имен: microsoft.graph
 
@@ -22,12 +22,15 @@ ms.locfileid: "47971659"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство       | Тип    | Описание|
-|:---------------|:--------|:----------|
-| attendees | Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md) |  |
-| organizer | [митингпартиЦипантинфо](meetingparticipantinfo.md) |  |
-| производители | Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md) | Только для широковещательного собрания. |
-| участники | Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md) | Только для широковещательного собрания. |
+| Свойство                  | Тип                                                           | Описание                           |
+| :------------------------ | :------------------------------------------------------------- | :------------------------------------ |
+| attendees                 | [коллекция meetingParticipantInfo](meetingparticipantinfo.md) | Сведения участников собрания. |
+| organizer                 | [meetingParticipantInfo](meetingparticipantinfo.md)            | Сведения организатора собрания. |
+| производители (неподготовленные)    | [коллекция meetingParticipantInfo](meetingparticipantinfo.md) | Только для собрания трансляции.           |
+| вкладчики (неподготовленные) | [коллекция meetingParticipantInfo](meetingparticipantinfo.md) | Только для собрания трансляции.           |
+
+> [!CAUTION]
+> Свойства **производителей** и **авторов** неоценимы. Все участники собрания возвращаются в **коллекцию участников.** Используйте **свойство role** [meetingParticipantInfo](meetingparticipantinfo.md) для определения роли собрания участника.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -35,17 +38,12 @@ ms.locfileid: "47971659"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.meetingParticipants"
 }-->
 ```json
 {
   "attendees": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
   "organizer": {"@odata.type": "#microsoft.graph.meetingParticipantInfo"},
-  "producers": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
-  "contributors": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
 }
 ```
 

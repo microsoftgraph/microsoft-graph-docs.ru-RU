@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 34c094323716f0245381084400383e41c3936397
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: efcf2876ce7963e3bc6cb38dcbdab7c2b7e0e9d6
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719792"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944284"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -83,10 +83,10 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>Пример 1. Создание события в указанном часовом поясе и назначение событию необязательного значения transactionId
+### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>Пример 1. Создание события в указанном часовом поясе и назначение события необязательным значением transactionId
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Он использует заготвитель запроса Prefer: outlook.timezone, чтобы указать часовой пояс для времени начала и окончания в ответе. Он также настраивает свойство transactionId, чтобы сократить количество ненужных повторных попыток на сервере.
+Ниже приведен пример запроса. В нем используется заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени начала и окончания в отклике. Он также настраивает свойство transactionId, чтобы сократить количество ненужных повторных попыток на сервере.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -482,7 +482,7 @@ Content-length: 2985
 ```
 
 
-### <a name="example-3-create-a-weekly-recurring-event"></a>Пример 3. Создание еженедельного повторяющегося события
+### <a name="example-3-create-a-weekly-recurring-event"></a>Пример 3. Создание еженедельно повторяющегося события
 
 #### <a name="request"></a>Запрос
 В третьем примере показано, как создать событие, повторяющееся раз в неделю. Событие происходит с 12:00 до 14:00 каждый понедельник с 4 сентября 2017 г. до конца года.
@@ -555,7 +555,7 @@ Content-type: application/json
 ---
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -674,10 +674,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-a-daily-recurring-event"></a>Пример 4. Создание ежедневно повторяющегося события
+### <a name="example-4-create-a-daily-recurring-event"></a>Пример 4. Создание ежедневного повторяющегося события
 
 #### <a name="request"></a>Запрос
-В четвертом примере показано, как создать событие, повторяющееся ежедневно. Событие происходит с 12:00 до 14:00 каждый день, начиная с 25 февраля 2020 г., для двух случаев.
+В четвертом примере показано, как создать событие, повторяющееся ежедневно. Событие происходит с 12:00 до 14:00 каждый день, начиная с 25 февраля 2020 г., в течение двух случаев.
 
 <!-- {
   "blockType": "request",
@@ -845,7 +845,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>Пример 5. Создание и включить событие в качестве собрания по сети
+### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>Пример 5. Создание и включить событие в качестве собрания в Интернете
 
 #### <a name="request"></a>Запрос
 Вот пример запроса, который создает событие и включает его в качестве онлайн-встречи. Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.

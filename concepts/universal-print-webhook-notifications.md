@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f5413cc178f220b34c37aa1fc4840596003561bc
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: d7b4aa230e3f3b93997de51e014c52581d5f9f8b
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031109"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920392"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Подписка на уведомления об изменениях из API облачной печати с использованием Microsoft Graph
 
@@ -31,7 +31,7 @@ ms.locfileid: "51031109"
 В настоящее время универсальная печать поддерживает уведомления для двух сценариев, связанных с заданиями печати.
 
 * Инициирована задача PrintTask (JobStarted): приложение может подписаться на получение уведомлений при инициировании printTask(hook).
-Дополнительные сведения о том, как инициировать задачу, см. в разделе [Расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing). В настоящее задачу printTask можно инициировать только для события JobStarted. Событие JobStarted возникает, когда создано задание печати, загружены его полезные данные и запущена обработка задания.  
+Дополнительные сведения о том, как инициировать задачу, см. в разделе [Расширение универсальной печати для поддержки печати по запросу](./universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing). В настоящее задачу printTask можно инициировать только для события JobStarted. Событие JobStarted возникает, когда создано задание печати, загружены его полезные данные и запущена обработка задания.  
 
 * JobFetchable: после запуска задания сторонние приложения печати или универсальная печать могут выполнять некоторую обработку (например, преобразовать полезные данные XPS в формат PDF для принтера PDF). После завершения обработки и готовности полезных данных к загрузке принтером возникает событие JobFetchable для соответствующего задания печати.
 
@@ -40,7 +40,7 @@ ms.locfileid: "51031109"
 
 ### <a name="create-an-application-to-listen-to-notifications"></a>Создание приложения для прослушивания уведомлений
 
-Сведения о том, как прослушивать уведомления Microsoft Graph, см. в разделах [Использование уведомлений об изменениях и отслеживание изменений с помощью Microsoft Graph](https://docs.microsoft.com/learn/modules/msgraph-changenotifications-trackchanges/) и [Настройка уведомлений об изменениях пользовательских данных — примеры кода](/graph/webhooks#code-samples).
+Сведения о том, как прослушивать уведомления Microsoft Graph, см. в разделах [Использование уведомлений об изменениях и отслеживание изменений с помощью Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) и [Настройка уведомлений об изменениях пользовательских данных — примеры кода](./webhooks.md#code-samples).
 
 
 ### <a name="scopes"></a>Области
@@ -51,7 +51,7 @@ ms.locfileid: "51031109"
 
 * Для события JobFetchable разрешения перечислены в статье [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http).
 
-Приложения должны [создавать и использовать маркер безопасности Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) в заголовке запроса API Microsoft Graph. Маркер безопасности содержит утверждения согласно областям, одобренным администратором для клиента Azure AD.  
+Приложения должны [создавать и использовать маркер безопасности Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2F1.0) в заголовке запроса API Microsoft Graph. Маркер безопасности содержит утверждения согласно областям, одобренным администратором для клиента Azure AD.  
 
 
 ## <a name="create-subscription-printtask-triggered-jobstarted-event"></a>Создание подписки: инициировано событие printTask (JobStarted) 
@@ -195,10 +195,10 @@ Content-Type: application/json
 ## <a name="faqs"></a>Вопросы и ответы
 ### <a name="how-does-microsoft-graph-validate-notification-urls"></a>Как Microsoft Graph проверяет URL-адреса уведомлений?
 Прежде чем создать подписку, Microsoft Graph проверяет конечную точку уведомлений в свойстве **notificationUrl** запроса подписки.
-Подробности см. в разделе [Проверка конечной точки уведомлений](/graph/webhooks#notification-endpoint-validation).
+Подробности см. в разделе [Проверка конечной точки уведомлений](./webhooks.md#notification-endpoint-validation).
 
 ### <a name="what-are-applications-expected-to-do-after-receiving-a-change-notification"></a>Каковы предполагаемые действия приложений после получения уведомления об изменении?
-Приложения должны обрабатывать и подтверждать каждое полученное уведомление об изменении. Подробности см. в разделе [Обработка уведомлений об изменениях](/graph/webhooks#processing-the-change-notification).
+Приложения должны обрабатывать и подтверждать каждое полученное уведомление об изменении. Подробности см. в разделе [Обработка уведомлений об изменениях](./webhooks.md#processing-the-change-notification).
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>Как получить список активных подписок?
 Сведения о том, как получить список подписок на веб-перехватчики, см. в разделе [Перечисление подписок](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http).
