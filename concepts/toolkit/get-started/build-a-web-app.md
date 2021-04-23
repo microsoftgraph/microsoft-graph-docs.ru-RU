@@ -3,16 +3,16 @@ title: Создание веб-приложения с помощью Microsoft 
 description: Знакомство с разработкой веб-приложений с помощью Microsoft Graph Toolkit
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 73e61e9d2c1c453ec67e61dce1f088b5119d1e8d
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
-ms.translationtype: HT
+ms.openlocfilehash: 974f6351bdce985089d93f607210c8eb47b902ba
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664018"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961354"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Создание веб-приложения с помощью Microsoft Graph Toolkit
 
-В этом разделе описывается, как начать работу с Microsoft Graph Toolkit в веб-приложении, написанном на простом JavaScript. Чтобы узнать, как использовать Toolkit в веб-среде, см. статью [Создание веб-приложения (React)](./use-toolkit-with-react.md) или [Создание веб-приложения (Angular)](./use-toolkit-with-angular.md).
+В этом разделе описывается, как начать работу с Microsoft Graph Toolkit в веб-приложении, написанном на простом JavaScript. В пошаговом руководстве попробуйте начать работу с [модулем Microsoft Graph набор средств.](/learn/modules/msgraph-toolkit-intro/) Чтобы узнать, как использовать Toolkit в веб-среде, см. статью [Создание веб-приложения (React)](./use-toolkit-with-react.md) или [Создание веб-приложения (Angular)](./use-toolkit-with-angular.md).
 
 Начало работы с Microsoft Graph Toolkit включает:
 1. Добавление Microsoft Graph Toolkit в проект.
@@ -125,7 +125,7 @@ document.body.appendChild((component()));
 > **Примечание.** Убедитесь в том, что **URI перенаправления** в приложении регистрации настроен на порт localhost, на котором размещено приложение. Перейдите в службу регистрации приложения на [портале Azure](https://portal.azure.com), в разделе управления выберите пункт **Проверка подлинности**, и укажите соответствующий **URI перенаправления**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Ознакомьтесь с пошаговыми инструкциями для [создания простого веб-приложения](https://developer.microsoft.com/microsoft-365/blogs/a-lap-around-microsoft-graph-toolkit-day-2-zero-to-hero/).
+- Ознакомьтесь с [пошаговой](/learn/modules/msgraph-toolkit-intro/) инструкцией по началу набор средств Microsoft Graph.
 - Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).
 - Задавайте вопросы на сайте [Stack Overflow](https://aka.ms/mgt-question).
 - Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).

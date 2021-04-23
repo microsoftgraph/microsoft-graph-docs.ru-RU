@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6f6751807f0dcb042958104c4b3146a555b22189
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8365ff5f42d85698965fe0d63d70c719a037f530
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945729"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961375"
 ---
 # <a name="approval-resource-type"></a>Тип ресурса утверждения
 
@@ -32,7 +32,7 @@ ms.locfileid: "50945729"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта утверждения.|
+|id|String|Идентификатор объекта утверждения.  В управлении правами это тот же идентификатор, что и идентификатор запроса на назначение пакета [доступа.](accesspackageassignmentrequest.md)|
 |действия|[коллекция approvalStep](../resources/approvalstep.md)|Используется для представления решения, связанного с одним шагом в процессе утверждения, настроенного в [approvalStage.](../resources/approvalstage.md)|
 
 ## <a name="relationships"></a>Связи

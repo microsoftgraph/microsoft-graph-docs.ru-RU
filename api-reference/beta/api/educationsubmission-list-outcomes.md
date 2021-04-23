@@ -1,16 +1,16 @@
 ---
 title: Результаты списка
-description: Получение списка объектов едукатионауткоме.
+description: Извлечение списка объектов educationoutcome.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5b9676e60e710ed3acd57e6719f9882f2b96d410
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 623fd7562dcfc925553996eda139377f623fa4a3
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965894"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961228"
 ---
 # <a name="list-outcomes"></a>Результаты списка
 
@@ -18,17 +18,17 @@ ms.locfileid: "48965894"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [едукатионауткоме](../resources/educationoutcome.md) .  Существует три типа результатов: **едукатионпоинтсауткоме** , **едукатионфидбаккауткоме** и **едукатионрубрикауткоме**.
+Извлечение списка [объектов educationOutcome.](../resources/educationoutcome.md)  Существует три типа результатов: **educationPointsOutcome,** **educationFeedbackOutcome** и **educationRubricOutcome.**
 
-При отправке для назначения кредита (у которого нет значения Point без точки и ни одного Rubric) будет [едукатионфидбаккауткоме](../resources/educationpointsoutcome.md). (Он также может возвращать [едукатионпоинтсауткоме](../resources/educationpointsoutcome.md), но этот результат игнорируется.)
+Отправка для назначения кредита (не имеет значения точки и нет рубрики) будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md). (Это может также вернуть [educationPointsOutcome,](../resources/educationpointsoutcome.md)но этот результат игнорируется.)
 
-Отправка для назначения баллов (у которой есть назначенное значение точки) будет иметь как [едукатионфидбаккауткоме](../resources/educationpointsoutcome.md) , так и [едукатионпоинтсауткоме](../resources/educationpointsoutcome.md).
+Отправка для назначения точек (назначенное значение точки) будет иметь как [educationFeedbackOutcome,](../resources/educationpointsoutcome.md) так и [educationPointsOutcome.](../resources/educationpointsoutcome.md)
 
-Отправка для назначения с присоединенным Rubric, если Rubric является кредит Rubric (нет точек), будут иметь [едукатионфидбаккауткоме](../resources/educationpointsoutcome.md) и [едукатионрубрикауткоме](../resources/educationrubricoutcome.md). (Он также может возвращать [едукатионпоинтсауткоме](../resources/educationpointsoutcome.md), но этот результат игнорируется.)
+Отправка для назначения с прикрепленной рубрикой, если рубрика является кредитной рубрикой (без баллов), будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md) и [educationRubricOutcome](../resources/educationrubricoutcome.md). (Это может также вернуть [educationPointsOutcome,](../resources/educationpointsoutcome.md)но этот результат игнорируется.)
 
-Отправка для назначения с присоединенным Rubric, если Rubric является точкой Rubric, будет иметь [едукатионфидбаккауткоме](../resources/educationpointsoutcome.md), [едукатионпоинтсауткоме] (.. /ресаурцес/едукатионпоинтсауткоме.МД и [едукатионрубрикауткоме](../resources/educationrubricoutcome.md).
+Отправка для назначения с прикрепленной рубрикой, если рубрика является рубрикой точек, будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md), [educationPointsOutcome].. /resources/educationpointsoutcome.md и [educationRubricOutcome](../resources/educationrubricoutcome.md).
 
-Все типы результатов имеют обычные и опубликованные свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс** , **Отзывы** и **публишедфидбакк**.  Регулярное свойство является последним значением, обновленным преподавателем; свойство Published — это последнее значение, возвращенное студенту.
+Все типы результатов имеют обычное и опубликованное свойство, соответствующее этому типу результатов; например, **точки** и **опубликованныеPoints,** **отзывы** и **опубликованныеFeedback**.  Обычное свойство — это последнее значение, обновленное преподавателем; опубликованное свойство — это самое последнее значение, возвращенное студенту.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,9 +36,9 @@ ms.locfileid: "48965894"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -60,7 +60,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионауткоме](../resources/educationoutcome.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [educationOutcome](../resources/educationoutcome.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

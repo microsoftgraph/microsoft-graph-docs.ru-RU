@@ -1,24 +1,24 @@
 ---
-title: Получение Едукатионкатегори
-description: Получение объекта Category.
+title: Get educationCategory
+description: Извлечение объекта категории.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1c23642bff2805998aba4e8f547613cb3170629b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 94e509f35f57692956f3df207b83be526a031c58
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403561"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961270"
 ---
-# <a name="get-educationcategory"></a>Получение Едукатионкатегори
+# <a name="get-educationcategory"></a>Get educationCategory
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [едукатионкатегори](../resources/educationcategory.md) .
+Извлечение [объекта educationCategory.](../resources/educationcategory.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48403561"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Для приложений                            | Не поддерживается.                                                                                         |
+| Приложение                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионкатегори](../resources/educationcategory.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект educationCategory](../resources/educationcategory.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

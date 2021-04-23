@@ -1,16 +1,16 @@
 ---
 title: Отправки списков
-description: Список всех представлений, связанных с этим назначением. Учитель может получать все материалы, в то время как студент может получать только те материалы, с которые они связаны.
+description: Список всех представлений, связанных с этим назначением. Учитель или приложение с разрешениями на приложения могут получать все материалы, в то время как студент может получать только те материалы, с которые они связаны.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f1d679e91974fb905c3a0ecc981fc06a49752e6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c27472d82521c1972b468ebef7925e194efbae7f
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472216"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961291"
 ---
 # <a name="list-submissions"></a>Отправки списков
 
@@ -18,7 +18,7 @@ ms.locfileid: "50472216"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех представлений, связанных с этим назначением. Учитель может получать все материалы, в то время как студент может получать только те материалы, с которые они связаны.
+Список всех представлений, связанных с этим назначением. Учитель или приложение с разрешениями на приложения могут получать все материалы, в то время как студент может получать только те материалы, с которые они связаны.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50472216"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | Не поддерживается. | 
+|Приложение | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

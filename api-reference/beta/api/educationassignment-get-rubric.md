@@ -1,24 +1,24 @@
 ---
-title: Получение Едукатионрубрик, подключенных к educationAssignment
-description: Получение Едукаитонрубрик, присоединенного к educationAssignment, если таковой существует.
+title: Get educationRubric attached to educationAssignment
+description: Получите educationRubric, присоединенный к educationAssignment, если оно существует.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e2d176c547c3e17cc28173c03ee55e75e35ed18a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 827a72185c4df930ec3ec530c9c080737ed1ceab
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966604"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961326"
 ---
-# <a name="get-educationrubric-attached-to-educationassignment"></a>Получение Едукатионрубрик, подключенных к educationAssignment
+# <a name="get-educationrubric-attached-to-educationassignment"></a>Get educationRubric attached to educationAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [едукатионрубрик](../resources/educationrubric.md) , присоединенного к [educationAssignment](../resources/educationassignment.md), если он существует.
+Получите [объект educationRubric,](../resources/educationrubric.md) присоединенный к [educationAssignment,](../resources/educationassignment.md)если он существует.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48966604"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект educationRubric](../resources/educationrubric.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

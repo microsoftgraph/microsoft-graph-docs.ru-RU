@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: da034f07aa83a483417161e0524661d97ca327e9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 083064a405525a33855340bcf920900e3d70ca91
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942615"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961368"
 ---
 # <a name="get-approval"></a>Получить утверждение
 
@@ -18,7 +18,7 @@ ms.locfileid: "50942615"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств объекта [утверждения.](../resources/approval.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекает свойства объекта [утверждения.](../resources/approval.md)  Этот вызов может быть выполнен одобрением, предоставляя идентификатор запроса назначения пакета [доступа.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 

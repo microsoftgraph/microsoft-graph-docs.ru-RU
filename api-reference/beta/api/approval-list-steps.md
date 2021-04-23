@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 81df11f30ece700fc64361d7d6e9c154ed35eb49
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 797d2715dd2c273c5673e608a4794fc0c56a6f45
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942584"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961361"
 ---
 # <a name="list-approvalsteps"></a>Утверждение спискаSteps
 
@@ -18,7 +18,7 @@ ms.locfileid: "50942584"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список объектов [approvalStep,](../resources/approvalstep.md) связанных с объектом [утверждения.](../resources/approval.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)перечислены [объекты approvalStep,](../resources/approvalstep.md) связанные с объектом [утверждения.](../resources/approval.md)  Этот вызов может быть выполнен одобрением, предоставляя идентификатор запроса назначения пакета [доступа.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 

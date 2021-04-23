@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: feed3844717dffbfcc98a0e11db31da4a0550e05
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7fa35d99c8c77240a182b5d28a0fdb896153aa8b
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945681"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961137"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>тип ресурса featureRolloutPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50945681"
 - Поле **appliesTo** поддерживает только группы.
 - Динамические группы и вложенные группы не поддерживаются.
 
-Ниже представлены предварительные требования для каждой из функций, которые в настоящее время подаваются в суд для выкатки с помощью этой политики выкатки.
+Ниже представлены предварительные требования к каждому из компонентов, которые в настоящее время поддерживаются для выкатки с помощью этой политики.
 
 ### <a name="passthrough-authentication"></a>Проверка подлинности через проход
 
@@ -65,11 +65,11 @@ ms.locfileid: "50945681"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Описание этой политики выкатки функций.|
-|displayName|Строка|Имя отображения для этой политики выкатки функций.|
+|description|String|Описание этой политики выкатки функций.|
+|displayName|String|Имя отображения для этой политики выкатки функций.|
 |функция|stagedFeatureName| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
 |id|String| Только для чтения.|
-|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|isAppliedToOrganization|Логический|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
 |isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ## <a name="relationships"></a>Связи

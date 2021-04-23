@@ -1,26 +1,26 @@
 ---
-title: Получение Едукатионрубрик
-description: Получение свойств и связей объекта едукатионрубрик.
+title: Get educationRubric
+description: Извлечение свойств и связей образовательного объекта.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 265b94d9ba9c4ccf3532b071c0bdae77e899a93b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3e5c474869d906b9597324c678f6ef0733ae57b
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966007"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961249"
 ---
-# <a name="get-educationrubric"></a>Получение Едукатионрубрик
+# <a name="get-educationrubric"></a>Get educationRubric
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [едукатионрубрик](../resources/educationrubric.md) .
+Извлечение свойств и связей [объекта educationRubric.](../resources/educationrubric.md)
 
-Обратите внимание, что возвращаемое значение Rubric ( `GET /education/me/assignments/{id}/rubric` ) является неизменяемой копией исходного Rubric, который существует в разделе `/education/users/{id}/rubrics` . Копия связана с этим конкретным назначением.
+Обратите внимание, что при получении рубрики назначения (), возвращаемая является неоменяемой копией исходной рубрики, которая `GET /education/me/assignments/{id}/rubric` существует под `/education/users/{id}/rubrics` . Копия связана с этим конкретным назначением.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "48966007"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /education/me/rubrics/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [educationRubric](../resources/educationrubric.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 Ниже приведен пример отклика.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
