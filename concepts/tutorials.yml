@@ -1,20 +1,20 @@
 ### YamlMime:Landing
 title: Руководства по Microsoft Graph
-summary: Учебники по Microsoft Graph — это пошаговая обучающая программа, которая поможет вам создать базовое приложение, которое будет получать доступ к данным через Microsoft Graph.
+summary: Учебники Microsoft Graph — это пошаговая подготовка, которая поможет вам создать базовое приложение, которое будет получать доступ к данным с помощью Microsoft Graph.
 metadata:
   title: Руководства по Microsoft Graph
-  description: Учебники по Microsoft Graph — это пошаговая обучающая программа, которая поможет вам создать базовое приложение, которое будет получать доступ к данным через Microsoft Graph.
+  description: Учебники Microsoft Graph — это пошаговая подготовка, которая поможет вам создать базовое приложение, которое будет получать доступ к данным с помощью Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 15a26f4ebffbcd3518db742f216b4f6a57cac98f
-  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+  ms.openlocfilehash: 1e9c5ac18c874d458131691b26dacd75c266dab5
+  ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "50240481"
+  ms.lasthandoff: 04/23/2021
+  ms.locfileid: "51960962"
 landingContent:
-- title: Создание первого серверного приложения
+- title: Создание первого приложения на стороне сервера
   linkLists:
   - linkListType: get-started
     links:
@@ -30,7 +30,7 @@ landingContent:
       url: /graph/tutorials/python
     - text: Ruby
       url: /graph/tutorials/ruby
-- title: Создание первого нативного приложения
+- title: Создание первого родного приложения
   linkLists:
   - linkListType: get-started
     links:
@@ -50,7 +50,7 @@ landingContent:
       url: /graph/tutorials/uwp
     - text: Xamarin
       url: /graph/tutorials/xamarin
-- title: Создание первого однострого приложения
+- title: Создайте первое одно-страницное приложение
   linkLists:
   - linkListType: get-started
     links:
@@ -78,13 +78,17 @@ landingContent:
       url: /graph/tutorials/spfx
     - text: Teams
       url: /graph/tutorials/teams
-- title: Сценарии
+    - text: Microsoft Graph Toolkit
+      url: /learn/modules/msgraph-toolkit-intro
+- title: Узнайте модули
   linkLists:
-  - linkListType: tutorial
+  - linkListType: learn
     links:
-    - text: Уведомления об изменениях и отслеживание изменений
-      url: /learn/modules/msgraph-changenotifications-trackchanges
-    - text: Оптимизация использования данных с помощью параметров запроса
-      url: /learn/modules/optimize-data-usage
-    - text: Оптимизация сетевого трафика
-      url: /learn/modules/optimize-network-traffic
+    - text: Основы Microsoft Graph
+      url: /learn/paths/m365-msgraph-fundamentals
+    - text: Создание приложений с помощью Microsoft Graph — ассоциированные приложения
+      url: /learn/paths/m365-msgraph-associate
+    - text: Начало работы с Microsoft Graph набор средств
+      url: /learn/modules/msgraph-toolkit-intro
+    - text: Изучите сценарии Microsoft Graph для разработки JavaScript
+      url: /learn/paths/m365-msgraph-scenarios
