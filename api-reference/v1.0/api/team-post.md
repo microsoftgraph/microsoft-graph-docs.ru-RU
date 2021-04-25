@@ -5,12 +5,12 @@ author: anandjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 77aa0a93e175138d978af98e55388bb124ccf58c
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: f8e20e52f103a0ee921d67e8f2987c19a94fef12
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509308"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996117"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -601,7 +601,7 @@ Content-Length: 0
 
 В следующем примере показано, как создать команду для импортированных сообщений.
 
->**Примечание**. В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.|
+>**Примечание**. В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 >**Примечание.** Команды, созданные в режиме миграции, поддерживают только шаблон `standard`.
 

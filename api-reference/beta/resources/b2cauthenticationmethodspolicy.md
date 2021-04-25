@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3a7a7e5218e58891649a0caae7d7de43e5629288
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e6b49f389e59b3f314414e2766a5e8fe9e3a9a6c
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433168"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996103"
 ---
 # <a name="b2cauthenticationmethodspolicy-resource-type"></a>Тип ресурса b2cAuthenticationMethodsPolicy
 
@@ -36,6 +36,7 @@ Azure Active Directory (Azure AD) B2C позволяет администрат�
 |id|String|Идентификатор политики методов проверки подлинности B2C. Это свойство только для чтения и ключ.|
 |isEmailPasswordAuthenticationEnabled|Логическое|Администратор клиента может настраивать локальные учетные записи, используя электронную почту, если включен метод проверки подлинности электронной почты и пароля.|
 |isUserNameAuthenticationEnabled|Логическое|Администратор клиента может настраивать локальные учетные записи, используя имя пользователя, если включен метод проверки подлинности электронной почты и пароля.|
+|isPhoneOneTimePasswordAuthenticationEnabled|Логический|Администратор клиента может настраивать локальные учетные записи, используя номер телефона, если включен метод проверки подлинности по номеру телефона и одноразовому паролю.|
 
 ## <a name="relationships"></a>Связи
 
@@ -58,7 +59,8 @@ Azure Active Directory (Azure AD) B2C позволяет администрат�
 {
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
-    "isUserNameAuthenticationEnabled": false
+    "isUserNameAuthenticationEnabled": false,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 
