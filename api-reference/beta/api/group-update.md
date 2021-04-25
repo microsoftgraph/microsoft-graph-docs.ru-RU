@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 13d605efafb3d74cbaa78d79fb7fc634168b016a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 300369a97237865faa8c8bb9842352880007a1ea
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468865"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996138"
 ---
 # <a name="update-group"></a>Update group
 
@@ -50,10 +50,9 @@ PATCH /groups/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Логический|Значение по умолчанию: `false`. Указывает, могут ли внешние люди в организации отправлять сообщения группе.|
-|autoSubscribeNewMembers|Логический|Значение по умолчанию: `false`. Указывает, будут ли новые участники, добавленные в группу, автоматически подписываться на получение уведомлений по электронной почте. **AutoSubscribeNewMembers** не может быть, если задаваемый `true` для группы **subscriptionEnabled.** `false`|
+|allowExternalSenders|Логический|Значение по умолчанию: `false`. Указывает, могут ли пользователи за пределами организации отправлять сообщения в группу.|
+|autoSubscribeNewMembers|Логический|Значение по умолчанию: `false`. Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. **AutoSubscribeNewMembers** не может быть `true`, если в группе установлено `false` для **subscriptionEnabled**.|
 |description|String|Необязательное описание для группы.|
-|description|String|Необязательное описание для группы. |
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. |
 |groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит объект **Unified**, эта группа является группой Microsoft 365. В противном случае она является группой безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. |
@@ -64,9 +63,9 @@ PATCH /groups/{id}
 Поскольку **ресурс группы** поддерживает [расширения,](/graph/extensibility-overview)вы можете использовать операцию для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` группы. 
 
 
-> **Примечание:**
+> **Примечание.**
 >
-> - Вы можете обновить **allowExternalSenders** и **autoSubscribeNewMembers,** указав их в собственном запросе PATCH без указания других свойств в таблице выше.
+> - Свойства **allowExternalSenders** и **autoSubscribeNewMembers** можно изменить, указав их в отдельном запросе PATCH, не затрагивающем другие свойства, описанные в таблице выше.
 > - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#group).
 > - Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
 
@@ -74,7 +73,7 @@ PATCH /groups/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика, за исключением кода ответа при обновлении следующих `204 No Content` `200 OK` свойств: **allowExternalSenders,** **autoSubscribeNewMembers,** **hideFromAddressLists,** **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+В случае успеха этот метод возвращает код отклика `204 No Content`, за исключением кода отклика `200 OK` при обновлении следующих свойств: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
 ## <a name="examples"></a>Примеры
 
