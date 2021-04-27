@@ -2,16 +2,15 @@
 title: Создание temporaryAccessPassAuthenticationMethod
 description: Создание нового объекта temporaryAccessPassAuthenticationMethod.
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 801f82d30baf5a231b0fea78c3613773d4dd8f53
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 504b81b94252ffde5e9247e0357763e05fb806ac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761095"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049662"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>Создание temporaryAccessPassAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -41,7 +40,7 @@ ms.locfileid: "50761095"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -69,15 +68,15 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 
 В следующей таблице описываются необязательные свойства, которые можно использовать при создании [временногоAccessPassAuthenticationMethod.](../resources/temporaryaccesspassauthenticationmethod.md)
 
-|Свойство|Тип|Описание|Обязательная| 
+|Свойство|Тип|Описание|Обязательный| 
 |:---|:---|:---|:---|
 |startDateTime|DateTimeOffset|Дата и время, когда временныйAccessPass станет доступным для использования, если не задать временный пропуск доступа, можно использовать во время создания.| Нет|
 |lifetimeInMinutes|Int32|Срок службы temporaryAccessPass в минутах, начиная с момента создания или при наборе startDateTime. Минимум 10, максимум 43200 (эквивалент 30 дней).| Нет|
-|isUsableOnce|Boolean|Определяет, ограничен ли пропуск одно время использования. Если true — пропуск можно использовать один раз, если false — пропуск можно использовать несколько раз в течение временного времени службыAccessPass. Многоцелевой временный пропуск доступа (isUsableOnce = false) может быть создан и использован для регистрации, если это разрешено политикой метода проверки подлинности временного доступа.|  Нет|
+|isUsableOnce|Логический|Определяет, ограничен ли пропуск одно время использования. Если true — пропуск можно использовать один раз, если false — пропуск можно использовать несколько раз в течение временного времени службыAccessPass. Многоцелевой временный пропуск доступа (isUsableOnce = false) может быть создан и использован для регистрации, если это разрешено политикой метода проверки подлинности временного доступа.|  Нет|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код ответа и временный `201 Created` [объектAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в тексте ответа.
 

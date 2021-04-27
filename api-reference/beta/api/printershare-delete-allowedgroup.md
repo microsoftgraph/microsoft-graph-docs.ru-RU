@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: be6d50dad54ac5f9c7995c4dd9b39b49d5b5c1fe
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dce2a4d044b555116396953e926ef3c5d8c13fb0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777358"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051062"
 ---
 # <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из принтераShare
 
@@ -27,8 +27,8 @@ ms.locfileid: "50777358"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -78,8 +78,8 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$re
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

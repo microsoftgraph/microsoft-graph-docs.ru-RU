@@ -1,16 +1,16 @@
 ---
 title: Список taskFolders
-description: Получите папки задач Outlook в определенном outlookTaskGroup.
+description: Получите Outlook папки задач в определенном outlookTaskGroup.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc83f3d5c17f5d2f40b2d13440633b088674577d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bb6d875d1c8f2999c8ace5a69dad0f31cd2d24f9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953280"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049228"
 ---
 # <a name="list-taskfolders-deprecated"></a>List taskFolders (deprecated)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50953280"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получите папки задач Outlook в определенном [outlookTaskGroup.](../resources/outlooktaskgroup.md)
+Получите Outlook папки задач в определенном [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

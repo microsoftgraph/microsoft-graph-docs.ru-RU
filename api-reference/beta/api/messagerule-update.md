@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 19e4390cee58d9236e6fa22d3caf92940136977f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fbe28b13276c4e5b1debae51a95d9a1655eff93f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131056"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050124"
 ---
 # <a name="update-rule"></a>Обновление правила
 
@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
-| displayName | Строка | Отображаемое имя правила. |
+| displayName | String | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия исключения для правила. |
 | isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
 | isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
@@ -96,7 +96,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

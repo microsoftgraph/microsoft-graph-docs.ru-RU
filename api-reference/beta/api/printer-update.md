@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 41f24b9b5c76502080441efac63f927018bfb1ec
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0602c04ab890f773866d8721580c0c099cccbeb4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921990"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051076"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -58,7 +58,7 @@ PATCH /print/printers/{id}
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
 |расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение принтера.|
-|displayName|Строка|Имя принтера.|
+|displayName|String|Имя принтера.|
 
 ### <a name="application-permissions-and-json-payload"></a>Разрешения приложения и полезной нагрузки JSON
 В теле запроса укажи значения [](../resources/printer.md) для соответствующих полей принтера, которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. 
@@ -69,11 +69,11 @@ PATCH /print/printers/{id}
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|Возможности принтера, связанного с этим разделом принтера.|
-|displayName|Строка|Имя принтера.|
+|displayName|String|Имя принтера.|
 |manufacturer|String|Производитель принтера.|
 |model|String|Имя модели принтера.|
 |status|[printerStatus](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
-|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
+|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
@@ -148,8 +148,8 @@ Content-length: 124
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

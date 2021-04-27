@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 06eeeed15e6f46c8bbe802e504a1d7b15a83d867
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b9e92d36a699934a9bd4480b9a7158418a78272d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721782"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049830"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Список программКонтроли программы
 
@@ -26,7 +26,7 @@ ms.locfileid: "50721782"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Приложение                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
  Подписанный пользователь также должен быть в роли каталога, которая позволяет им читать программу.
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b8
 
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: 41300d4983e494e6d53f6de53d4052a0322d6d2f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1499a56ade39a8dcd3285933e932b66487098f6d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444863"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050740"
 ---
 # <a name="list-unfamiliarlocationriskevents-deprecated"></a>Список незнакомыхLocationRiskEvents (отстает)
 
@@ -42,7 +42,7 @@ GET /unfamiliarLocationRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -59,7 +59,7 @@ GET /unfamiliarLocationRiskEvents
 GET https://graph.microsoft.com/v1.0/unfamiliarLocationRiskEvents
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

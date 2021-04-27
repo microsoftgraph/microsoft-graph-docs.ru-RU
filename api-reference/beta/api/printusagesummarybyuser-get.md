@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 20cb026334e88dc6113db579be07a9de01dfaaa7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bf5674126b62a1933899c92da7573d52215f59b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441411"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049872"
 ---
 # <a name="get-printusagesummarybyuser"></a>Получение printUsageSummaryByUser
 
@@ -48,7 +48,7 @@ GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект printUsageSummaryByUser](../resources/printusagesummarybyuser.md) в тексте ответа.
@@ -83,8 +83,8 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUse
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

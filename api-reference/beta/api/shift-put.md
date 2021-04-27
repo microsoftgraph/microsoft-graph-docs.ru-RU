@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9f18b176255892e2ad6f1089d00644db84e407c3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 63ae7275372a2caed4e675b3e8360b4e29478aed
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969179"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051860"
 ---
 # <a name="replace-shift"></a>Замена смены
 
@@ -18,9 +18,9 @@ ms.locfileid: "48969179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Замените существующую [смену](../resources/shift.md).
+Замените [существующий сдвиг.](../resources/shift.md)
 
-Если указанная [Смена](../resources/shift.md) не существует, этот метод возвращает значение `404 Not found` .
+Если указанной [смены](../resources/shift.md) не существует, этот метод `404 Not found` возвращается.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "48969179"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule.ReadWrite.All |
+|Приложение | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [сдвига](../resources/shift.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [переноса.](../resources/shift.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [сдвига](../resources/shift.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [переноса](../resources/shift.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -141,9 +141,9 @@ Prefer: return=representation
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

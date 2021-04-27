@@ -5,20 +5,20 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 540ce931e77b5f9347015fe5792c7c2e0f5486f8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0959c7eec1b1e52ff3a9295ad7e5af07b416a3bd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972739"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051104"
 ---
-# <a name="update-personname"></a>Обновление PersonName
+# <a name="update-personname"></a>Обновление имени пользователя
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [PersonName](../resources/personname.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [personName](../resources/personname.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48972739"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,27 +50,27 @@ PATCH /users/{id | userPrincipalName}/profile/names/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-В следующей таблице приведены свойства, которые можно обновлять в существующем объекте [PersonName](../resources/personname.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно обновить в существующем объекте [personName](../resources/personname.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Предоставляет упорядоченную визуализацию имени и фамилии в зависимости от языкового стандарта пользователя или устройства.|
-|первыми|String|Имя пользователя.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Предоставляет упорядоченную отрисовку firstName и lastName в зависимости от локализа пользователя или устройства.|
+|во-первых|String|Имя пользователя.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |initials|String|Инициалы пользователя.|
-|лангуажетаг|String|Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.   |
-|Фамили|String|Фамилия пользователя.|
-|маиден|String|Маиден имя пользователя. |
-|назван|String|Отчество пользователя.|
-|прозвищ|String|Псевдоним пользователя.|
-|произношение|[йомиперсоннаме](../resources/yomipersonname.md)|Руководство по произношению имени пользователя.|
-|суффикс|String|Обозначения, используемые после имени пользователя (например, "доктор").  |
-|title|String|Хонорификс используется для префикса имени пользователя (например, Dr, Sir, мадам, MRS).|
+|LanguageTag|String|Содержит имя языка (en-US, no-NB, ru-AU) в формате IETF BCP47.   |
+|последний|String|Фамилия пользователя.|
+|maiden|String|Девичья фамилия пользователя. |
+|средний|String|Среднее имя пользователя.|
+|nickname|String|Прозвище пользователя.|
+|произношение|[yomiPersonName](../resources/yomipersonname.md)|Руководство по произносить имя пользователей.|
+|суффикс|String|Назначенные элементы, используемые после имени пользователей (например: PhD.)  |
+|title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Msam, Mrs.)|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [PersonName](../resources/personname.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` [personName](../resources/personname.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,9 +113,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

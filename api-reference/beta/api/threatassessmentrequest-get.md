@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0c4f179243f8fa14ee59e22a07fbd643f9ccb850
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7a0eeedc76e9a155d62fdf3018badafbe6382269
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962823"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050803"
 ---
 # <a name="get-threatassessmentrequest"></a>Получение объекта threatAssessmentRequest
 
@@ -24,7 +24,7 @@ ms.locfileid: "50962823"
 
 * [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
-* [File](../resources/fileAssessmentRequest.md)
+* [Файл](../resources/fileAssessmentRequest.md)
 * [URL-адрес](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>Разрешения
@@ -35,7 +35,7 @@ ms.locfileid: "50962823"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | ThreatAssessment.Read.All                  |
+| Приложение                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -106,9 +106,9 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -178,9 +178,9 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -250,9 +250,9 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -321,9 +321,9 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -391,9 +391,9 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

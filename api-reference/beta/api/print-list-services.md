@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d32cd0467db0106ef8d923275b7624ec4bd0dead
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3461665b6d027fdba0ecd88e97af422b4f3865ff
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962292"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051097"
 ---
 # <a name="list-printservices"></a>PrintServices списка
 
@@ -20,7 +20,7 @@ ms.locfileid: "50962292"
 
 Извлечение списка [объектов printService,](../resources/printservice.md) которые представляют **службы,** доступные вашему клиенту.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова этого API не требуется никаких разрешений, но для использования службы универсальной печати клиент пользователя или клиента приложения должен иметь активную подписку универсальной печати.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
@@ -78,8 +78,8 @@ GET https://graph.microsoft.com/beta/print/services
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ee12fd4607f4f3b2fad4f32e0473698fbe95b601
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: ef2cae44d68d7cca7fea973a49030bb35b334295
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473586"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050019"
 ---
 # <a name="update-plannerplandetails"></a>Обновление объекта plannerplandetails
 
@@ -45,7 +45,7 @@ PATCH /planner/plans/{id}/details
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|Объект с описаниями шести категорий, которые могут быть связаны с задачами в плане.|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Набор пользовательских ids, с помощью которые мы делим этот план. Если вы используете группы Microsoft 365, используйте API групп для управления членством в группе, чтобы поделиться планом [группы.](../resources/group.md) Вы также можете добавить в эту коллекцию существующих членов группы, хотя для них не требуется доступ к плану, который принадлежит группе.|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Набор пользовательских ids, с помощью которые мы делим этот план. Если вы используете Microsoft 365 группы, используйте API групп для управления членством в группе, чтобы поделиться [планом](../resources/group.md) группы. Вы также можете добавить в эту коллекцию существующих членов группы, хотя для них не требуется доступ к плану, который принадлежит группе.|
 
 ## <a name="response"></a>Отклик
 
@@ -99,7 +99,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

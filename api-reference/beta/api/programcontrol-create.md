@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 4d70ea6dacb12b56a4ae14486cb0ed5adcb6850b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cd4a00faeee1b97adc525727c1c01d69f26e4a27
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442217"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049823"
 ---
 # <a name="create-programcontrol"></a>Создание programControl
 
@@ -48,7 +48,7 @@ POST /programControls
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [programControl.](../resources/programcontrol.md)
 
 В следующей таблице показаны свойства, необходимые при создании управления программой.
@@ -103,7 +103,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

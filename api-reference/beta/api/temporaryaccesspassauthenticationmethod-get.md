@@ -2,16 +2,15 @@
 title: Get temporaryAccessPassAuthenticationMethod
 description: Ознакомьтесь с свойствами и отношениями объекта temporaryAccessPassAuthenticationMethod.
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6567ee2f287f33837f5e3354c327b1c5b8c16f20
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: ccaa0d574c2fb2261c8cb0e0e0091473ec389f1f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761502"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049676"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethod"></a>Get temporaryAccessPassAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -37,7 +36,7 @@ ms.locfileid: "50761502"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -66,7 +65,7 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{t
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код ответа и временный `200 OK` [объектAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в тексте ответа.
 

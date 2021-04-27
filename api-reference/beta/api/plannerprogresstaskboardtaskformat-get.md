@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bb42d9ed10d042c116481a42cbc107d5f8757c0b
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 644066685ecb8fcc17dfe3bc2df59c05271352cd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473579"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050012"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>Получение объекта plannerProgressTaskBoardTaskFormat
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

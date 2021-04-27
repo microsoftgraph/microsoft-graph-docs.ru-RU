@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: Profile
 doc_type: apiPageType
-ms.openlocfilehash: ec6b24daf3b2314e8175a7456f3187f2ac67178c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1651e88411e864adbab36d43d8acd76ef08f36f7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443320"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049592"
 ---
 # <a name="get-useraccountinformation"></a>Get userAccountInformation
 
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/profile/account/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/beta/me/profile/account/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

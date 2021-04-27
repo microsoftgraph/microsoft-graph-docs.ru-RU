@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8638eeadd59ba7efaae0e6ad32bd4f740dab6d36
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: af2081afcf12d2cac33abf188ad6592e5e4720e1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291995"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049585"
 ---
 # <a name="update-useraccountinformation"></a>Обновление useraccountinformation
 
@@ -52,14 +52,14 @@ PATCH /users/{id | userPrincipalName}/profile/account/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется [от itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|String|Содержит двух символьный код страны, связанный с учетной записью пользователя.  |
-|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если сущность создается или изменяется приложением. Наследуется [от itemFacet](../resources/itemfacet.md).|
-|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал как предпочтительный для учетной записи.   |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|String|Содержит код страны с двумя символами, связанный с учетной записью пользователей.  |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал в качестве предпочтительного для учетной записи.   |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userAccountInformation](../resources/useraccountinformation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект userAccountInformation](../resources/useraccountinformation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -102,9 +102,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

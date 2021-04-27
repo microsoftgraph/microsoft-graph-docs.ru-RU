@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1650ea55e1fc7dc6200e4985e417fdfb67fb0ee3
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: c1d8da785836dd91ef98468b4a15762570eaac6b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473488"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049949"
 ---
 # <a name="list-favoriteplans"></a>Список объектов favoritePlans
 
@@ -78,9 +78,9 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

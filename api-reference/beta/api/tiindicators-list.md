@@ -1,24 +1,24 @@
 ---
-title: Список индикаторов логики операций с угрозами
-description: Получение списка объектов тииндикатор.
+title: Список показателей сведении об угрозах
+description: Извлечение списка объектов tiindicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1d3b92153f10797b4cc4312f4ac9acbc790e1320
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5e26dab1b49d21953ab6e7fbe52916c867172183
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971987"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050768"
 ---
-# <a name="list-threat-intelligence-indicators"></a>Список индикаторов логики операций с угрозами
+# <a name="list-threat-intelligence-indicators"></a>Список показателей сведении об угрозах
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [тииндикатор](../resources/tiindicator.md) .
+Извлечение списка [объектов tiIndicator.](../resources/tiindicator.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48971987"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /security/tiIndicators
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в [окне Параметры запроса OData.](/graph/query-parameters)
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /security/tiIndicators
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [tiIndicator](../resources/tiindicator.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,10 +92,10 @@ GET https://graph.microsoft.com/beta/security/tiIndicators
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 75bc2129f7f92c4c4ad48a2ec5d123d026b69188
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 9832431657097efc28b77a72a23de23feeb40e5a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575240"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049578"
 ---
 # <a name="get-workbookapplication"></a>Get workbookApplication
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

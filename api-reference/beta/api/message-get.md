@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4292b5146ab426accae7d2f331047eeed287d120
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a727179016a5352a55d0923dfcd5ac5834f73d84
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131217"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050159"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -18,9 +18,9 @@ ms.locfileid: "50131217"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [message.](../resources/message.md)
+Извлечение свойств и связей объекта [сообщения.](../resources/message.md)
 
-Например, вы можете получить сообщение и развернуть все [экземпляры](../resources/mention.md) упоминания в сообщении. См. [пример](#example-2-get-all-mentions-in-a-specific-message) ниже.
+Например, вы можете получить сообщение и расширить все [экземпляры](../resources/mention.md) упоминания в сообщении. См. [пример](#example-2-get-all-mentions-in-a-specific-message) ниже.
 
 Вы можете использовать параметр `$value`, чтобы [получить MIME-содержимое сообщения](/graph/outlook-get-mime-message). Также см. [пример](#example-5-get-mime-content) ниже.
 
@@ -61,7 +61,7 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-Чтобы получить сообщение и развернуть все упоминания в сообщении:
+Чтобы получить сообщение и расширить все упоминания в сообщении:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
@@ -97,7 +97,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-get-a-specific-message"></a>Пример 1. Получение определенного сообщения
 #### <a name="request"></a>Запрос
-В первом примере возвращается указанное сообщение. В нем не указывается заголовка для указания нужного формата возвращаемого тела.
+В первом примере получается указанное сообщение. Он не указывает какой-либо заголовок, чтобы указать нужный формат тела, который будет возвращен.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -127,8 +127,8 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Тело **и** **свойства uniqueBody** возвращаются в формате HTML по умолчанию.
-Примечание. Показанный здесь объект отклика усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Свойства **body** и **uniqueBody** возвращаются в формате HTML по умолчанию.
+Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -158,9 +158,9 @@ Content-length: 523
 ```
 
 
-### <a name="example-2-get-all-mentions-in-a-specific-message"></a>Пример 2. Просмотр всех упоминаний в определенном сообщении
+### <a name="example-2-get-all-mentions-in-a-specific-message"></a>Пример 2. Получить все упоминания в определенном сообщении
 #### <a name="request"></a>Запрос
-В следующем примере пользователем, выписав пользователя Dana Swope, является Dana Swope. В примере показано получение сведений о всех упоминаниях в указанном сообщении в почтовом ящике Аны.
+В следующем примере пользователь, вписав его, — Дана Swope. В примере показано получение сведений о всех упоминаниях в указанном сообщении в почтовом ящике Даны.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -190,7 +190,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_mentions_in_message",
@@ -354,10 +354,10 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### <a name="example-4-get-internet-message-headers"></a>Пример 4. Получите заглавные сообщения Интернета
+### <a name="example-4-get-internet-message-headers"></a>Пример 4. Получить заглавные главы сообщений в Интернете
 #### <a name="request"></a>Запрос
 
-В четвертом примере показано, как получить заглавные сообщения Интернета для определенного сообщения.  
+В четвертом примере показано, как получить в Интернете заглавные главы определенного сообщения.  
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -391,7 +391,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Количество заглавных сообщений Интернета в объекте ответа было уменьшено для краткости.
+Ниже приведен пример отклика. Примечание. Количество заглавных сообщений Интернета в объекте ответа сократилось для краткости.
 
 <!-- {
   "blockType": "response",
@@ -434,9 +434,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-get-mime-content"></a>Пример 5. Получите содержимое MIME
+### <a name="example-5-get-mime-content"></a>Пример 5. Получить контент MIME
 #### <a name="request"></a>Запрос
-В пятом примере возвращается содержимое MIME сообщения в почтовом ящике пользователя, выписав его.
+В пятом примере получается содержимое MIME сообщения в почтовом ящике пользователя, вписав его.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

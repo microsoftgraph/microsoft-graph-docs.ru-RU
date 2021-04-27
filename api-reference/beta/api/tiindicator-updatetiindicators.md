@@ -1,24 +1,24 @@
 ---
-title: 'Тииндикатор: Упдатетииндикаторс'
-description: Обновляйте несколько индикаторов системы анализа угроз (TI) в одном запросе, а не нескольких запросах.
+title: 'tiIndicator: updateTiIndicators'
+description: Обновление нескольких индикаторов аналитики угроз (TI) в одном запросе вместо нескольких запросов.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a5531b9d43b0700451e902a7c1f89c2c9020a37e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4c594c9ba75ea0ee1cd1fcb8390d4b9ff738d48c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972005"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050775"
 ---
-# <a name="tiindicator-updatetiindicators"></a>Тииндикатор: Упдатетииндикаторс
+# <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновляйте несколько индикаторов системы анализа угроз (TI) в одном запросе, а не нескольких запросах.
+Обновление нескольких индикаторов аналитики угроз (TI) в одном запросе вместо нескольких запросов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48972005"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,15 +46,15 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Дополнительные сведения о свойствах, которые можно обновлять, можно найти в [статье Update тииндикатор](tiindicator-update.md). Обязательные поля для каждого Тииндикатор: `id` , `expirationDateTime` , `targetProduct` .
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Сведения о свойствах, которые можно обновить, см. в обновленном [tiIndicator.](tiindicator-update.md) Необходимые поля для каждого tiIndicator: `id` , `expirationDateTime` , `targetProduct` .
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция Тииндикатор| Коллекция **тииндикаторс** , которую требуется обновить. У каждой сущности должен быть **идентификатор** и другие редактируемые свойства, которые необходимо обновить.|
+|значение|коллекция tiIndicator| Коллекция **tiIndicators** для обновления. Каждая сущность должна иметь **id** и другие редактируемые свойства для обновления.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает `206 Partial Content` код отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [tiIndicator](../resources/tiindicator.md) в тексте отклика.  При ошибке этот метод возвращает `206 Partial Content` код ответа.  Дополнительные [сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
 
 ## <a name="examples"></a>Примеры
 
@@ -109,10 +109,10 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

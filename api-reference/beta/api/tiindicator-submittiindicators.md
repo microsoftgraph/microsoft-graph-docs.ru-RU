@@ -1,24 +1,24 @@
 ---
-title: 'Тииндикатор: Субмиттииндикаторс'
-description: Отправьте несколько индикаторов системы анализа угроз (TI) в одном запросе, а не нескольких запросах.
+title: 'tiIndicator: submitTiIndicators'
+description: Upload нескольких индикаторов разведки угроз (TI) в одном запросе вместо нескольких запросов.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bb3542c678fbee89a4de293585d31094502c857e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ed4ccd5adf087ecf8be69d8d192ae180ec685090
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975869"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050782"
 ---
-# <a name="tiindicator-submittiindicators"></a>Тииндикатор: Субмиттииндикаторс
+# <a name="tiindicator-submittiindicators"></a>tiIndicator: submitTiIndicators
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте несколько индикаторов системы анализа угроз (TI) в одном запросе, а не нескольких запросах.
+Upload нескольких индикаторов разведки угроз (TI) в одном запросе вместо нескольких запросов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48975869"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,13 +50,13 @@ POST /security/tiIndicators/submitTiIndicators
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция Тииндикатор| Коллекция объектов **тииндикаторс** , которую необходимо создать. |
+|значение|коллекция tiIndicator| Коллекция **tiIndicators** JSON, которая будет создана. |
 
-Для каждого Тииндикатор добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в формате JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), [файл](../resources/tiindicator.md#indicator-observables---file)или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля:,, `action` ,, `description` `expirationDateTime` `targetProduct` `threatType` , `tlpLevel` .
+Для каждого tiIndicator поставляем JSON-представление объекта [tiIndicator,](../resources/tiindicator.md) [](../resources/tiindicator.md#indicator-observables---file)содержащего [](../resources/tiindicator.md#indicator-observables---network) по крайней мере одну электронную [почту,](../resources/tiindicator.md#indicator-observables---email)файл или сеть, наблюдаемую, и следующие необходимые поля: `action` , , , , `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` .
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает `206 Partial Content` код отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [tiIndicator](../resources/tiindicator.md) в тексте отклика.  При ошибке этот метод возвращает `206 Partial Content` код ответа.  Дополнительные [сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
 
 ## <a name="examples"></a>Примеры
 
@@ -135,10 +135,10 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b731778c096470f23799540919ff93f9a8e52853
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 020513c2eb1fdc8b05d49b1f34979dcfecf17623
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508357"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049921"
 ---
 # <a name="create-featurerolloutpolicy"></a>Создание featureRolloutPolicy
 
@@ -56,7 +56,7 @@ POST /policies/featureRolloutPolicies
 |:---------------|:--------|:----------|
 |displayName |string |Имя отображения для этой политики выкатки функций.|
 |функция |stagedFeatureName |Функция, которая будет выкатываться с помощью этой политики.|
-|isEnabled |string |Указывает, включена ли выкатка функций.|
+|isEnabled |String |Указывает, включена ли выкатка функций.|
 
 ## <a name="response"></a>Отклик
 
@@ -108,9 +108,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

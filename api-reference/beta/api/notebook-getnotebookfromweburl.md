@@ -1,26 +1,26 @@
 ---
-title: 'Записная книжка: Жетнотебукфромвебурл'
-description: Получение свойств и связей объекта записной книжки с помощью URL-пути.
+title: 'блокнот: getNotebookFromWebUrl'
+description: Извлечение свойств и связей объекта записной книжки с помощью url-адреса.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0d18a0597b6a295a8f2d7433e7208dc4e05e32ed
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 25c0731270edd5576ab2416682a6e6395b0e41b9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971325"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049242"
 ---
-# <a name="notebook-getnotebookfromweburl"></a>Записная книжка: Жетнотебукфромвебурл
+# <a name="notebook-getnotebookfromweburl"></a>блокнот: getNotebookFromWebUrl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [записной книжки](../resources/notebook.md) с помощью URL-пути.
+Извлечение свойств и связей объекта [записной книжки](../resources/notebook.md) с помощью url-адреса.
 
-Местоположение может представлять собой записные книжки пользователя Microsoft 365, групповые записные книжки или размещенные на сайтах SharePoint записные книжки группы в Microsoft 365.
+Расположение может быть пользовательскими записными книжками в Microsoft 365, групповых записных книжках или SharePoint записных книжках Microsoft 365.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -44,15 +44,15 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление в формате JSON полного URL-пути к записной книжке, которую необходимо получить.
+В тексте запроса поставляем представление JSON полного URL-адреса в ноутбук, который необходимо получить.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | Путь URL-адреса извлекаемой записной книжки. Он также может содержать префикс "OneNote:".|
+| `webUrl`     |`String`     | Путь URL-адреса для получения записной книжки. Он также может содержать префикс "onenote:".|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [записной](../resources/notebook.md) книжки в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -89,7 +89,7 @@ Content-type: application/json
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

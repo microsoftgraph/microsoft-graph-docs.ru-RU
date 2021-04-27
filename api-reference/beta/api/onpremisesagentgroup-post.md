@@ -1,16 +1,16 @@
 ---
 title: Создание onPremisesAgentGroup
-description: Создание объекта **onPremisesAgentGroup.**
+description: Создание нового **объекта onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2486c83d9e22304f57dbd64d322029fcec201c83
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bd010c8832d98242f00341f8357af5bde9e78688
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136383"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051118"
 ---
 # <a name="create-onpremisesagentgroup"></a>Создание onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136383"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+Создание нового [объекта onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса предоставляем представление объекта [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в JSON.
+В теле запроса поставляем представление JSON объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ```json
 {
@@ -56,7 +56,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-В теле запроса предоставляем представление объекта [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в JSON.
+В теле запроса поставляем представление JSON [объекта onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ```json
 {
@@ -94,9 +94,9 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

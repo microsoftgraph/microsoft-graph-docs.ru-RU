@@ -1,18 +1,18 @@
 ---
-title: Получение outlookTaskGroup
-description: Получение свойств и связей указанной группы задач Outlook.
+title: Get outlookTaskGroup
+description: Получите свойства и связи указанной Outlook группы задач.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6ca937e6aca7b5defc79e08161dc3fd9836dc0d2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6abb0d4103cf63fc0ff48a8070cc81c32469f139
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978081"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049214"
 ---
-# <a name="get-outlooktaskgroup-deprecated"></a>Получение outlookTaskGroup (не рекомендуется)
+# <a name="get-outlooktaskgroup-deprecated"></a>Получить outlookTaskGroup (обесценилось)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48978081"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получение свойств и связей указанной группы задач Outlook.
+Получите свойства и связи указанной Outlook группы задач.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект OutlookTaskGroup](../resources/outlooktaskgroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

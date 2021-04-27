@@ -1,18 +1,18 @@
 ---
 title: Обновление outlooktaskgroup
-description: Обновление свойств, доступных для записи, для группы задач Outlook.
+description: Обновим писаемые свойства группы Outlook задач.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8b0dbeffd373e702bdd0ac8560f659436e24dee6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37bf87e8d52ac320d29fd7be1f6cdd3dae7165ea
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978032"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049207"
 ---
-# <a name="update-outlooktaskgroup-deprecated"></a>Обновление outlooktaskgroup (не рекомендуется)
+# <a name="update-outlooktaskgroup-deprecated"></a>Обновление outlooktaskgroup (неподготовленное)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48978032"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Обновление свойств, доступных для записи, для группы задач Outlook.
+Обновим писаемые свойства группы Outlook задач.
 
 Обратите внимание, что нельзя изменить имя группы задач по умолчанию "Мои задачи".
 ## <a name="permissions"></a>Разрешения
@@ -53,10 +53,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` обновленный [объект OutlookTaskGroup](../resources/outlooktaskgroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере имя группы задач изменяется на "личные задачи". 
+В следующем примере изменяется имя группы задач на "Личные задачи". 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ Content-length: 28
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0b27be914e14371c091ff4de7547f96e4d6c003b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ef845c380dabab204b113f31b27b42d8d680bc85
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443764"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049319"
 ---
 # <a name="list-leakedcredentialsriskevents-deprecated"></a>Список просочилсяКридентиалыRiskEvents (неаккументален)
 
@@ -42,7 +42,7 @@ GET /leakedCredentialsRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -59,7 +59,7 @@ GET /leakedCredentialsRiskEvents
 GET https://graph.microsoft.com/v1.0/leakedCredentialsRiskEvents
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Создание mailSearchFolder
-description: Этот API используется для создания нового mailSearchFolder в почтовом ящике указанного пользователя.
+description: Используйте этот API для создания нового mailSearchFolder в указанном почтовом ящике пользователя.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a03aef5158db175339ba1abecae03ce2d791fc5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9899276551b09c7e4a4da6e6b92f046d594d5ad5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136831"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051146"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136831"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте [новый mailSearchFolder](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
+Создайте [новую mailSearchFolder](../resources/mailsearchfolder.md) в указанном почтовом ящике пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,7 +39,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительская папка в URL-адресе запроса в качестве ИД папки или известного имени папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительную папку в URL-адресе запроса в качестве ИД папки или имени известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,21 +54,21 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| @odata.type | Строка | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
-| displayName | Строка | Отображаемое имя новой папки.|
-| includeNestedFolders | Boolean | Указывает, как должна проходить иерархия папок почтового ящика в поиске. `true`означает, что следует глубоко искать, чтобы включить в иерархию каждой папки, явно указанной в **sourceFolderIds.** `false`означает неглубокий поиск только каждой папки, явно указанной в **sourceFolderIds.** |
-| sourceFolderIds | Коллекция объектов string | Папки почтового ящика, которые необходимо миновать. |
-| filterQuery | Строка | Запрос OData для фильтрации сообщений. |
+| @odata.type | String | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
+| displayName | String | Отображаемое имя новой папки.|
+| includeNestedFolders | Логический | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
+| sourceFolderIds | Коллекция объектов string | Папки почтовых ящиков, которые необходимо добыть. |
+| filterQuery | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [mailSearchFolder](../resources/mailsearchfolder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект mailSearchFolder](../resources/mailsearchfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса— он создает папку поиска сообщений, содержащих строку "weekly digest" в теме. Папка поиска находится в той же папке, к которой применяется указанный запрос фильтра.
+Ниже приводится пример запроса — он создает папку поиска сообщений, содержащих строку "еженедельный дайджест" в субъекте. Папка поиска находится в той же папке, в которой применяется указанный запрос фильтра.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -111,9 +111,9 @@ Content-length: 159
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

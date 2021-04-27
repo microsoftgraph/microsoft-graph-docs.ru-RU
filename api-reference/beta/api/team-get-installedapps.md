@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3a46a661dd324331a15e334548825af8af0180f2
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: c9096bab3717f7e81130856313da56236d5a0f02
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659557"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050824"
 ---
 # <a name="get-installed-app-in-team"></a>Получить установленное приложение в команде
 
@@ -18,7 +18,7 @@ ms.locfileid: "49659557"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлекать [приложение,](../resources/teamsappinstallation.md) установленное в указанной [команде.](../resources/team.md)
+[Извлечение приложения,](../resources/teamsappinstallation.md) установленного в указанной [группе.](../resources/team.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "49659557"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -50,11 +50,11 @@ GET /teams/{id}/installedApps/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [teamsAppInstallation](../resources/teamsappinstallation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект teamsAppInstallation](../resources/teamsappinstallation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-installed-app"></a>Пример 1. Получите установленное приложение
+### <a name="example-1-get-the-installed-app"></a>Пример 1. Получить установленное приложение
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -92,8 +92,8 @@ GET /teams/{id}/installedApps/{id}
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_installed_teams_apps",
@@ -115,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-the-installed-app"></a>Пример 2. Просмотр имен и других сведений об установленном приложении
+### <a name="example-2-get-the-names-and-other-details-of-the-installed-app"></a>Пример 2. Получить имена и другие сведения об установленном приложении
 
 #### <a name="request"></a>Запрос
 
@@ -154,9 +154,9 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}?$expand=teams
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_installed_teams_apps_expand",

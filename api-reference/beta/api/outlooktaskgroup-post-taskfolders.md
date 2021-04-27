@@ -1,16 +1,16 @@
 ---
 title: Создание outlookTaskFolder
-description: Создайте папку задач Outlook в указанном outlookTaskGroup.
+description: Создайте папку Outlook задач в соответствии с указанным outlookTaskGroup.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae45fb686c3b76156b0423ee3890fd306502aa82
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e7fd36eae4980a533f4d3bc02223bab788f8e7a4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774252"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049221"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>Создание outlookTaskFolder (амортизации)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50774252"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Создайте папку задач Outlook в указанном [outlookTaskGroup.](../resources/outlooktaskgroup.md)
+Создайте папку Outlook задач в указанном [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -89,7 +89,7 @@ Content-length: 131
 
 В теле запроса поставляем представление JSON объекта [OutlookTaskFolder.](../resources/outlooktaskfolder.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

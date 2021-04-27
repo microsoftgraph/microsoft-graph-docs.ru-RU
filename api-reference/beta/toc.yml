@@ -1257,9 +1257,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1453,7 +1453,7 @@ items:
         items:
           - name: Обзор
             href: resources/complianceapioverview.md
-          - name: Обнаружение электронных данных
+          - name: Обнаружение электронных данных (eDiscovery)
             items:
               - name: Обзор
                 href: resources/ediscovery-eDiscoveryapioverview.md
@@ -9611,7 +9611,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11546,7 +11546,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12143,7 +12143,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12879,7 +12879,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -13591,7 +13591,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md
@@ -13722,10 +13722,14 @@ items:
                 href: api/table-list-rows.md
               - name: Создание строки
                 href: api/table-post-rows.md
+              - name: Удаление строки
+                href: api/tablerow-delete.md
               - name: Перечисление столбцов
                 href: api/table-list-columns.md
               - name: Создание столбца
                 href: api/table-post-columns.md
+              - name: Удаление столбца
+                href: api/tablecolumn-delete.md
               - name: Получение диапазона
                 href: api/table-range.md
           - name: Диаграмма

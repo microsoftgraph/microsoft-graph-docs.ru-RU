@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 58d2372356f43167b15f2b84d245f9acc98b38c8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4ff1500ade221a24970f6cfbde38fab9101b67dc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721098"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049599"
 ---
 # <a name="user-reprocesslicenseassignment"></a>пользователь: reprocessLicenseAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "50721098"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перепроцес всех групповых назначений лицензий для пользователя. Дополнительные информацию о лицензировании на основе групп см. в видеоролике Что такое групповое лицензирование [в Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Дополнительные сведения см. в материале [Identify and resolve license assignment problems for a group in Azure Active Directory.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)
+Перепроцес всех групповых назначений лицензий для пользователя. Дополнительные информацию о групповом лицензировании см. в этой [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Дополнительные сведения см. в материале Определение и решение проблем с назначением лицензий для [группы в Azure Active Directory.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)
 
 
 ## <a name="permissions"></a>Разрешения
@@ -83,7 +83,7 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 ### <a name="response"></a>Отклик
 Ответ — это обновленный объект пользователя.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

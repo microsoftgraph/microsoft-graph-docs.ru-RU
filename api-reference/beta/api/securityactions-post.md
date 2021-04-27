@@ -1,16 +1,16 @@
 ---
 title: Создание объекта securityAction
-description: Создайте новый объект securityAction. "
+description: Создайте новый объект securityAction".
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: dbbb6ce1b566ec0dec977a51d02426c2c62f7117
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f1d513ca1a24a1314be48f550be1ceae81282609
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970920"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049739"
 ---
 # <a name="create-securityaction"></a>Создание объекта securityAction
 
@@ -18,7 +18,7 @@ ms.locfileid: "48970920"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый объект [securityAction](../resources/securityaction.md) .
+Создание нового [объекта securityAction.](../resources/securityaction.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48970920"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | SecurityActions.ReadWrite.All |
+| Приложение                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,11 +46,11 @@ POST /security/securityActions
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [securityAction](../resources/securityaction.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [securityAction.](../resources/securityaction.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [securityAction](../resources/securityaction.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [securityAction](../resources/securityaction.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -104,10 +104,10 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1de23b474cf2cd12191da9ce5c876417fbaad984
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d7f8ec86ae12f7aa1c6ae9620d7dbfb0f41aeebc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50775474"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049718"
 ---
 # <a name="synchronizationschema-parseexpression"></a>синхронизацияSchema: parseExpression
 
@@ -27,8 +27,8 @@ ms.locfileid: "50775474"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт) |Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
 |Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |выражение               |String               |Выражение для размыкать.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Протестировать объект данных для оценки выражений. Необязательный параметр.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Протестировать объект данных для оценки выражений. Необязательное.|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет относяться к этому выражению. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
@@ -135,9 +135,9 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

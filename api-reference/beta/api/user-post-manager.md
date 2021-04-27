@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3949306eb646fe3dd83419c88ed306dd20e63c41
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 05d3f30e3061a39e3104293691448e0f4534790b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721718"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049613"
 ---
 # <a name="assign-a-manager"></a>Назначение руководителя
 
@@ -85,7 +85,7 @@ Content-length: xxx
 
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 7487e8a5fc6a4e15e0b4fa4230ab0748af3a699f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 01ca1661045d2f6c5695ad3879beec3cf9f5bf5e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957410"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049865"
 ---
 # <a name="list-privilegedroleassignments"></a>Список privilegedRoleAssignments
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -203,7 +203,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -267,7 +267,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Отклик 
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Получение объекта schedulingGroup
-description: Получение свойств и связей объекта [счедулингграуп](../resources/schedulinggroup.md) по идентификатору.
+description: Извлечение свойств и связей [schedulingGroup](../resources/schedulinggroup.md) по ID.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b8784aa4e3f5b2c77b0da185e5c3e5eb30856fa3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 100c8cd2942668f3cca48d65abcd42eea1ed21de
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975741"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049032"
 ---
 # <a name="get-schedulinggroup"></a>Получение объекта schedulingGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48975741"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [счедулингграуп](../resources/schedulinggroup.md) по идентификатору.
+Извлечение свойств и связей [schedulingGroup](../resources/schedulinggroup.md) по ID.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48975741"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает параметры запросов OData для настройки отклика.
+Этот метод не поддерживает параметры запроса OData для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -53,7 +53,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект schedulingGroup](../resources/schedulinggroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -90,9 +90,9 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{s
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

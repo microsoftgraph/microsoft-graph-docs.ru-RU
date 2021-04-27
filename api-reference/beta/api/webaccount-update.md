@@ -1,24 +1,24 @@
 ---
-title: Обновление учетной записи
-description: Обновление свойств объекта учетной записи.
+title: Обновление webAccount
+description: Обновление свойств объекта webAccount.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6df75e05761d47e513272a222e956ee64235bde3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bc907445655085ff863094f58d2afe337a9074fe
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973962"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050712"
 ---
-# <a name="update-webaccount"></a>Обновление учетной записи
+# <a name="update-webaccount"></a>Обновление webAccount
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [учетной записи](../resources/webaccount.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [webAccount](../resources/webaccount.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48973962"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,17 +53,17 @@ PATCH /users/{id | userPrincipalName}/profile/webAccounts/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|служба|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
-|статусмессаже|String|Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано. |
-|userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Содержит описание, предоставленное пользователем для учетной записи в службе, на который ссылается.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|служба|[serviceInformation](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
+|statusMessage|String|Содержит сообщение о состоянии облачной службы при условии или синхронизации. |
+|userId|String|Имя пользователя, отображаемая для webaccount.  |
 |webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [учетной записи](../resources/webaccount.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект webAccount](../resources/webaccount.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -106,9 +106,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -2,16 +2,15 @@
 title: Удаление temporaryAccessPassAuthenticationMethod
 description: Удаляет объект temporaryAccessPassAuthenticationMethod.
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 590a0d3d7581b0d8f1b109351c9c563812a973e6
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 5c9046137e5c8de5420a14f5c313c30e5f47fac1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761509"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049683"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethod"></a>Удаление temporaryAccessPassAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -39,7 +38,7 @@ ms.locfileid: "50761509"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор

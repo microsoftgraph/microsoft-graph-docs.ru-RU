@@ -1,24 +1,24 @@
 ---
-title: Получение учетной записи службы
-description: Получение свойств и связей объекта учетной записи.
+title: Получить webAccount
+description: Извлечение свойств и связей объекта webAccount.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 124778b379e1362d223467446bf74b569197422a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1d1f873632721f5fac2b0dd656b65f0f8128c132
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973971"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050719"
 ---
-# <a name="get-webaccount"></a>Получение учетной записи службы
+# <a name="get-webaccount"></a>Получить webAccount
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [учетной записи](../resources/webaccount.md) сайта из [профиля](../resources/profile.md)пользователя.
+Извлечение свойств и связей объекта [webAccount](../resources/webaccount.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48973971"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/profile/webAccounts/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
+Этот метод поддерживает параметр `$select` запроса. Укажите список свойств, которые необходимо включить в ответ, разделив их запятой. Для оптимальной производительности выберите только подмножество необходимых свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/profile/webAccounts/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [учетной записи](../resources/webaccount.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [webAccount](../resources/webaccount.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0d189927f50d400110f68d029a6ad4abf363c196
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fbb61ab1fd37c8bf322b144974eee7b799bf6650
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962194"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051888"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Перечисление ownedObjects
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
->Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

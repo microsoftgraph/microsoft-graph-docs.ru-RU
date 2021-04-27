@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e64cf90e3d5fd78fb8515fe72dbcfd7bd889ab01
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: fe8a3a4b5d5318661856cc2f26f05a78283a43bf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509149"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049312"
 ---
 # <a name="list-featurerolloutpolicies"></a>Функция ListRolloutPolicies
 
@@ -95,9 +95,9 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

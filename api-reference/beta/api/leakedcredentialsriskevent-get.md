@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c76eab673cc93f31dfa4f95cb2847c91a427d2f2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 63abf3f0f1fa4ec1ca7c63f9a8a6169b0c61a821
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443785"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049326"
 ---
 # <a name="get-leakedcredentialsriskevent-deprecated"></a>Get leakedCredentialsRiskEvent (deprecated)
 
@@ -42,7 +42,7 @@ GET /leakedCredentialsRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -59,7 +59,7 @@ GET /leakedCredentialsRiskEvents/{id}
 GET https://graph.microsoft.com/v1.0/leakedCredentialsRiskEvents/8c793a18-c86a-b5f9-7d9a-b3d024f33eee-278dc452-4163-dbc6-84eb-a050c37fc931-1a01abd3-b87a-cece-3f4d-c788b055c182
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

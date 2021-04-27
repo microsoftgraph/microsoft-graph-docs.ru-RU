@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 67308337242a87d39f55b1c4208d64a0844c2f83
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e4a7b89a221b446ed82fa2625ca74b4c48d241bf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131077"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050117"
 ---
 # <a name="get-rule"></a>Получение правила
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5d
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC. 
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

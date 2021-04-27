@@ -1,34 +1,34 @@
 ---
-title: 'printJob: start'
-description: Отправка задания печати на связанный принтер или printerShare. Он будет печататься после завершения всех ожидающих заданий, отмены или отмены.
+title: 'printJob: начните'
+description: Отправка задания печати на связанный принтер или принтерShare. Она будет напечатана после завершения, отмены или отмены существующих ожидающих заданий.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: d2cb4a5413d592d170e31a882be93d900deca8c1
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 288e3b8cfcd1458f7d71c8fb43ae57ac97237e56
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784802"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049879"
 ---
-# <a name="printjob-start"></a>printJob: start
+# <a name="printjob-start"></a>printJob: начните
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправка задания печати на связанный [принтер](../resources/printer.md) или [printerShare.](../resources/printershare.md) Он будет печататься после  завершения, отмены или отмены всех ожидающих заданий.
+Отправка задания печати на [связанный](../resources/printer.md) принтер или [принтерShare](../resources/printershare.md). Он будет напечатан после завершения, отмены или отмены существующих ожидающих заданий. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, у пользователя или клиента приложения должна быть активная подписка [](printer-get.md) универсальной печати и разрешение на получение принтера или [get printerShare](printershare-get.md) в зависимости от того, используется ли принтер или printerShare.
+Помимо следующих разрешений, клиент пользователя или приложения должен иметь активную подписку на универсальную печать и иметь разрешение, которое предоставляет [get printer](printer-get.md) или Get printerShare в зависимости от того, используется принтер или [принтерShare.](printershare-get.md)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /print/shares/{id}/jobs/{id}/start
 Не отправлять тело запроса для этого метода. 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [printJobStatus](../resources/printjobstatus.md) в теле.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [printJobStatus](../resources/printjobstatus.md) в теле.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -56,8 +56,8 @@ POST https://graph.microsoft.com/beta/print/shares/{id}/jobs/{id}/start
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 681c845f25e8bfa92749f5ec2e976b1404490b11
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 878d2f92297673d7ce66a23aeafdb2fb392dad7b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131210"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050152"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-В частности, можно использовать параметр $expand, чтобы включить все вложения в сообщения вместе с остальными свойствами сообщения. Например:
+В частности, можно использовать параметр $expand запроса, чтобы включить все вложения сообщений в линию с остальными свойствами сообщения. Например:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_beta",

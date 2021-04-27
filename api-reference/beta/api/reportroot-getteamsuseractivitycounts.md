@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityCounts'
-description: Получение количества действий в Microsoft Teams по каждому типу. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний. Действия выполняются лицензированными пользователями Microsoft Teams.
+description: Получение количества действий в Microsoft Teams по каждому типу. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний. Действия выполняются Microsoft Teams лицензированными пользователями.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 8ac375460208e9f9f44d947ad4b764b82c390973
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: be6fd27c9e4b99e8d8311bf9f60e2ee057ac4ce2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766156"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049046"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766156"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение количества действий Microsoft Teams по типам. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний. Действия выполняются лицензированными пользователями Microsoft Teams.
+Получение количества действий Microsoft Teams по типам. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний. Действия выполняются Microsoft Teams лицензированными пользователями.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -146,9 +146,9 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

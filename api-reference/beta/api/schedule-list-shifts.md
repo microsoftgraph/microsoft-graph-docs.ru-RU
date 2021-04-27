@@ -1,23 +1,23 @@
 ---
 title: Перечисление смен
-description: Получение списка смен по расписанию.
+description: Получите список сдвигов в расписании.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c498255e64da1d1535dbfa5de2b05d6ed2c12390
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0565f3e0d5e81bf7bc8cc3c9f153935a01bf90e6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970618"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050887"
 ---
 # <a name="list-shifts"></a>Перечисление смен
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Получение списка экземпляров [смены](../resources/shift.md) в [расписании](../resources/schedule.md).
+Получите список [экземпляров смены](../resources/shift.md) в [расписании.](../resources/schedule.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,9 +25,9 @@ ms.locfileid: "48970618"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает $filter [параметр запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр запроса $filter [OData,](/graph/query-parameters) чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,13 +51,13 @@ GET /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [SHIFT](../resources/shift.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [переноса](../resources/shift.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, который получает все объекты **SHIFT** с общей версией и черновой версией в диапазоне от 11 марта 2019 г.
+Ниже приводится пример запроса,  который получает все объекты переноса, которые имеют общую версию и черновик версии в период с 11 марта по 18 марта 2019 г.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -88,9 +88,9 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

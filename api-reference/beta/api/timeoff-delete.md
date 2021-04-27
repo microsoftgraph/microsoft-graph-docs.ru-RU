@@ -1,24 +1,24 @@
 ---
-title: Удаление Тимеофф
-description: Удаление экземпляра Тимеофф по расписанию.
+title: Удаление timeOff
+description: Удаление экземпляра timeOff из расписания.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80e9ce10de55d3d343b46a5d5f42b8555eb04752
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 459cf68eb91f47b5c5ffaec965ebbe605a8d783b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981461"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050754"
 ---
-# <a name="delete-timeoff"></a>Удаление Тимеофф
+# <a name="delete-timeoff"></a>Удаление timeOff
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление экземпляра [тимеофф](../resources/timeoff.md) по [расписанию](../resources/schedule.md).
+Удаление [экземпляра timeOff](../resources/timeoff.md) из [расписания.](../resources/schedule.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +28,11 @@ ms.locfileid: "48981461"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule. ReadWrite. ALL * |
+|Приложение | Schedule.ReadWrite.All* |
 
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
+>\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -90,9 +90,9 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

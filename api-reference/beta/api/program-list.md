@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 0ea0dcf1b053b66e3532d7774f0052d523386068
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4995cd66af99031051e67a2853f4a2453430f684
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440983"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049837"
 ---
 # <a name="list-programs"></a>Списки программ
 
@@ -40,7 +40,7 @@ GET /programs
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/programs
 
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

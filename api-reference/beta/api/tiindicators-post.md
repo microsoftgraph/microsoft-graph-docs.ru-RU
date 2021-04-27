@@ -1,24 +1,24 @@
 ---
-title: Создание индикатора для логики операций с угрозами
-description: Создание нового Тииндикатор.
+title: Создание индикатора сведении об угрозах
+description: Создайте новый tiIndicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: be0e89fd353cbe54a9f3d9d6dbb3108a1b4da8db
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14620ff345c5d74075548b17e26bc7923f942da6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981481"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050761"
 ---
-# <a name="create-threat-intelligence-indicator"></a>Создание индикатора для логики операций с угрозами
+# <a name="create-threat-intelligence-indicator"></a>Создание индикатора сведении об угрозах
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [тииндикатор](../resources/tiindicator.md) .
+Создайте [новый объект tiIndicator.](../resources/tiindicator.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48981481"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,11 +46,11 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в формате JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), [файл](../resources/tiindicator.md#indicator-observables---file)или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля:,, `action` ,, `description` `expirationDateTime` `targetProduct` `threatType` , `tlpLevel` . 
+В корпусе запроса поставляем JSON-представление объекта [tiIndicator,](../resources/tiindicator.md) содержащего [](../resources/tiindicator.md#indicator-observables---network) по крайней мере одно сообщение [электронной](../resources/tiindicator.md#indicator-observables---email)почты, [](../resources/tiindicator.md#indicator-observables---file)файл или сеть, наблюдаемые, и следующие необходимые поля: , , `action` , , `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` . 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [тииндикатор](../resources/tiindicator.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект tiIndicator](../resources/tiindicator.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -107,10 +107,10 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
