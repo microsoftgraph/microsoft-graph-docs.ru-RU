@@ -1,36 +1,36 @@
 ---
-title: Создание Опеншифт
-description: Создайте экземпляр объекта опеншифт.
+title: Создание openShift
+description: Создайте экземпляр объекта openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f9b02e5463c5215e67aef206d5876400ef275a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 313c5a8ecdd940d9811dab653152e04ad15c59f4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019952"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052091"
 ---
-# <a name="create-openshift"></a><span data-ttu-id="38d2a-103">Создание Опеншифт</span><span class="sxs-lookup"><span data-stu-id="38d2a-103">Create openShift</span></span>
+# <a name="create-openshift"></a><span data-ttu-id="1555f-103">Создание openShift</span><span class="sxs-lookup"><span data-stu-id="1555f-103">Create openShift</span></span>
 
-<span data-ttu-id="38d2a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38d2a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1555f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1555f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="38d2a-105">Создайте экземпляр объекта [опеншифт](../resources/openshift.md) .</span><span class="sxs-lookup"><span data-stu-id="38d2a-105">Create an instance of an [openshift](../resources/openshift.md) object.</span></span>
+<span data-ttu-id="1555f-105">Создание экземпляра [объекта openshift.](../resources/openshift.md)</span><span class="sxs-lookup"><span data-stu-id="1555f-105">Create an instance of an [openshift](../resources/openshift.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="38d2a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="38d2a-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1555f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1555f-106">Permissions</span></span>
 
-<span data-ttu-id="38d2a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38d2a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1555f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1555f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="38d2a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="38d2a-109">Permission type</span></span>                        | <span data-ttu-id="38d2a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="38d2a-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="1555f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1555f-109">Permission type</span></span>                        | <span data-ttu-id="1555f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1555f-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="38d2a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="38d2a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="38d2a-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38d2a-112">Group.Read.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="38d2a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="38d2a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38d2a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38d2a-114">Not supported.</span></span> |
-| <span data-ttu-id="38d2a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="38d2a-115">Application</span></span>                            | <span data-ttu-id="38d2a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38d2a-116">Not supported.</span></span> |
+| <span data-ttu-id="1555f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1555f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1555f-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1555f-112">Group.Read.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="1555f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1555f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1555f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1555f-114">Not supported.</span></span> |
+| <span data-ttu-id="1555f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1555f-115">Application</span></span>                            | <span data-ttu-id="1555f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1555f-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="38d2a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="38d2a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1555f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1555f-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,26 +38,26 @@ ms.locfileid: "48019952"
 POST /teams/{id}/schedule/openShifts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="38d2a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="38d2a-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1555f-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1555f-118">Request headers</span></span>
 
-| <span data-ttu-id="38d2a-119">Имя</span><span class="sxs-lookup"><span data-stu-id="38d2a-119">Name</span></span>      |<span data-ttu-id="38d2a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="38d2a-120">Description</span></span>|
+| <span data-ttu-id="1555f-119">Имя</span><span class="sxs-lookup"><span data-stu-id="1555f-119">Name</span></span>      |<span data-ttu-id="1555f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="1555f-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="38d2a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="38d2a-121">Authorization</span></span> | <span data-ttu-id="38d2a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="38d2a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="38d2a-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="38d2a-124">Content-type</span></span> | <span data-ttu-id="38d2a-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="38d2a-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="1555f-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1555f-121">Authorization</span></span> | <span data-ttu-id="1555f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1555f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1555f-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1555f-124">Content-type</span></span> | <span data-ttu-id="1555f-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1555f-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="38d2a-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="38d2a-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1555f-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1555f-127">Request body</span></span>
 
-<span data-ttu-id="38d2a-128">Укажите новый объект [опеншифт](../resources/openshift.md) в тексте запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="38d2a-128">Provide the new [openshift](../resources/openshift.md) object in the request body for this method.</span></span>
+<span data-ttu-id="1555f-128">Предокажи [новый объект openshift](../resources/openshift.md) в теле запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1555f-128">Provide the new [openshift](../resources/openshift.md) object in the request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="38d2a-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="38d2a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1555f-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="1555f-129">Response</span></span>
 
-<span data-ttu-id="38d2a-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [опеншифт](../resources/openshift.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="38d2a-130">If successful, this method returns a `200 OK` response code and the requested [openShift](../resources/openshift.md) object in the response body.</span></span>
+<span data-ttu-id="1555f-130">В случае успешной работы этот метод возвращает код ответа и запрашиваемого `200 OK` [объекта openShift](../resources/openshift.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="1555f-130">If successful, this method returns a `200 OK` response code and the requested [openShift](../resources/openshift.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="38d2a-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="38d2a-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1555f-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="1555f-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="38d2a-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="38d2a-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1555f-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1555f-132">Request</span></span>
 
-<span data-ttu-id="38d2a-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="38d2a-133">The following is an example of the request.</span></span>
+<span data-ttu-id="1555f-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1555f-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request"
 }-->
@@ -103,11 +103,11 @@ Content-length: 244
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="38d2a-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="38d2a-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1555f-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="1555f-134">Response</span></span>
 
-<span data-ttu-id="38d2a-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="38d2a-135">The following is an example of the response.</span></span>
+<span data-ttu-id="1555f-135">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="1555f-135">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="38d2a-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="38d2a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1555f-136">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="1555f-136">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
