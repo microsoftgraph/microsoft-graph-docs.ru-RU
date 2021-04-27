@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityDistributionUserCounts'
-description: Получите число лицензированных пользователей Microsoft Teams по типу активности за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+description: Получите количество лицензированных Microsoft Teams по типу действия за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 91a9f503ad2798f154d7415e93e7c4be28cd7c32
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 69bdcafd963c96274034f53158337d0e38c3d654
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766967"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053519"
 ---
 # <a name="reportroot-getteamsuseractivitydistributionusercounts"></a>reportRoot: getTeamsUserActivityDistributionUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766967"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите число лицензированных пользователей Microsoft Teams по типу активности за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+Получите количество лицензированных Microsoft Teams по типу действия за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -146,9 +146,9 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionUse
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

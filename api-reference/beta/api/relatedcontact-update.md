@@ -2,16 +2,15 @@
 title: Update relatedContacts
 description: Обновление связанной коллекцииContact объекта educationUser.
 author: mmast-msft
-ms.author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f6217c1ea0859de21fa70c53810e825327d497f2
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 25c3655318ef063d702f328f008441653437945e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200918"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052868"
 ---
 # <a name="update-relatedcontacts"></a>Update relatedContacts
 
@@ -32,7 +31,7 @@ ms.locfileid: "51200918"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Application                            | EduRoster.ReadWrite.All                     |
+| Приложение                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadSecret'
-description: Загрузите секрет в набор ключей.
+description: Upload секрет для наборов ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b008e1ae41d61fb14dbd80e5a820208355bb670d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 104e11956a388ccc7ae65cf4a70e609f3eb9b08f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444975"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053414"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -18,7 +18,7 @@ ms.locfileid: "50444975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Загрузите простой текстовый секрет в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Примеры секретов — секреты приложений в Azure Active Directory, Google, Facebook или любом другом поставщике удостоверений. его метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload простой текстовый секрет [для trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Примеры секретов — секреты приложений в Azure Active Directory, Google, Facebook или любом другом поставщике удостоверений. его метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -104,9 +104,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

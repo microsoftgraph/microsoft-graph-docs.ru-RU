@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0a15472fd7935dc3eacc38c0a34a6e7a5c0eaf67
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: f5f08fe16c7a349fef81b4fba3006e662cb23274
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766275"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052917"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>Список разрешенных Групп для принтераShare
 
@@ -21,7 +21,7 @@ ms.locfileid: "51766275"
 Извлечение списка групп, которые получили доступ для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Помимо следующих разрешений, клиент пользователя или приложения должен иметь активную подписку на универсальную печать и иметь разрешение, да которое предоставляет доступ [к группам](group-list.md) списков. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
@@ -78,8 +78,8 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

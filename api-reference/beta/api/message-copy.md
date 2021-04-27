@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b02ef34b362cbe2b97623219a942b63ebd6d7eb
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: dff98e9e10cf8e909b1785c94c86797467c795d9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128794"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053659"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -106,7 +106,7 @@ Content-length: 44
 
 Ниже приведен пример отклика.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

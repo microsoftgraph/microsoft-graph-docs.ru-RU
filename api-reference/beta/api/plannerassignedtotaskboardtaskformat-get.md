@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 35a4e4fda3fba813873727ab7fa4cf013e610b2c
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 53d01aff369c4ab980f434cf8e34e373a79e1f8b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473327"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055346"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>Получение объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 63603ccc2feb93185bb73d28b0276c81d87d1d61
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0926ae86158b2a3bc521230ff3303fe609cb5f20
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964075"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053337"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `201 Created` код отклика и объект [Contact](../resources/contact.md) в тексте отклика.
+В случае успешной работы этот метод возвращает `201 Created` код отклика и [контактный](../resources/contact.md) объект в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -107,7 +107,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 078e5b81a3a3696cf07e7852fa466c0586ae6d09
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 989104dc6b4244bd38def513e18557d9576b8b15
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136919"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053022"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -52,11 +52,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|destinationId|String|ИД папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
+|destinationId|String|ID папки или хорошо известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [mailFolder](../resources/mailfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -104,7 +104,7 @@ Content-length: 44
 
 Ниже приведен пример отклика.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

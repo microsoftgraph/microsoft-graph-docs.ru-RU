@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a15b82fdc595da0a032b2d6962cdcf02b57843fc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2d62c98b5140757e923ff8c25736c5a7fe53a926
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433921"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052952"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Создание permissionGrantConditionSet исключает коллекцию разрешенийGrantPolicy
 
@@ -57,7 +57,7 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>Запрос
 
-В этом  примере все делегированные разрешения для Microsoft Graph **(appId** 00000003-0000-0000-0000-000000000000000) исключены из политики предоставления разрешений.
+В этом  примере все делегированные разрешения для Microsoft Graph **(appId** 00000003-0000-0000-0000-0000000000000) исключены из политики предоставления разрешений.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,9 +97,9 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

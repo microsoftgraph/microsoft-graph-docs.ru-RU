@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 09a8f9d46597d96d51d5bd66f7fcac750e46809c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 35ff88db1fb8cde5c84a6010fc6e33b81661c387
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775537"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055486"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask: полный (неподготовленный)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50775537"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Выполните задачу Outlook, которая задает **свойство completedDateTime** к текущей дате и свойство **состояния** `completed` .
+Выполните задачу Outlook, которая задает свойство **completedDateTime** к текущей дате, а свойство **состояния** `completed` — .
 
 Если вы завершаете задачу в повторяющейся серии, в ответе коллекция задач будет содержать завершенную задачу в серии и следующую задачу в серии.
 
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -104,7 +104,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 Ниже приведен пример отклика. Свойства **completedDateTime** и другие свойства, связанные с датами в ответе, выражены в PST.
 
-> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

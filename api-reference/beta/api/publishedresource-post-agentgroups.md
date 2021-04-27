@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6e30689074c566511e638db484e7b29db6f9373e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3cbd9e434701cad6ac7eff47daed6080c5979863
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130678"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055171"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Назначение publishedResource onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130678"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Назначьте объект publishedResource](../resources/publishedresource.md) [объекту onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+[Назначьте объект publishedResource](../resources/publishedresource.md) [объекту OnPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,11 +46,11 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/ag
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса предоставляем представление объекта [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в JSON.
+В теле запроса поставляем представление JSON объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [publishedResource](../resources/publishedresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект publishedResource](../resources/publishedresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -74,9 +74,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

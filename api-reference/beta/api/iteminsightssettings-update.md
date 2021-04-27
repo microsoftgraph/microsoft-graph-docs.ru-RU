@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: bf7a661663779b618d1de191386294cdab5b915f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0eb17d9e0a4f3285858800f32e6954bbd344dc27
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443827"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053036"
 ---
 # <a name="update-iteminsightssettings"></a>Обновление itemInsightsSettings
 
@@ -48,13 +48,13 @@ PATCH /organization/{organizationId}/settings/itemInsights
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` если включена информация о элементах организации; `false` если сведения о элементах организации отключены для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное.|
+|isEnabledInOrganization|Логический| `true` если включена информация о элементах организации; `false` если сведения о элементах организации отключены для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное.|
 |disabledForGroup|String| ID группы Azure AD, из которой отключены сведения о элементах участников. Значение по умолчанию: `empty`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

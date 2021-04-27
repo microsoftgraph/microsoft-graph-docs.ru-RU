@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3b1bf0939a7fe5e33b31ad9d2200e55da8464a67
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ff171910adbe92e3ed936f2ea868487e761c3b05
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957775"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055570"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: get manager
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 
 #### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a155646dc09e7dd9ab4b69ebf7168bed3dd9f9e8
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: a681a4edfe244bd835d7fe07d5aac3ceeedff472
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869976"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053372"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -28,7 +28,7 @@ ms.locfileid: "51869976"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ Content-length: 33
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

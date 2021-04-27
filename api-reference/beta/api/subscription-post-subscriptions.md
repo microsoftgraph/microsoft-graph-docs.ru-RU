@@ -1,16 +1,16 @@
 ---
 title: Создание подписки
-description: Подписывает приложение-прослушиватель для получения уведомлений об изменениях при изменении данных о ресурсе Microsoft Graph.
+description: Подписывает приложение-слушатель для получения уведомлений об изменениях при изменении данных о Graph microsoft.
 localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: f89720d18db554a8700e5d14b2bafd15d92d5f0f
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 7fe6db48038b68d7d2bfe507af60a26846962832
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031034"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054877"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -171,7 +171,7 @@ Content-type: application/json
 
 Ниже показан пример отклика. 
 
->**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

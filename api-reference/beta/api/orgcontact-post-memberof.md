@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ab55324f80b53011e7bf15747902344042e6a2a9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b8919fb0a9513d2278d07a73cf1dc95327fdc983
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957689"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055514"
 ---
 # <a name="create-memberof"></a>Создание memberOf
 
@@ -77,7 +77,7 @@ Content-length: 30
 
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

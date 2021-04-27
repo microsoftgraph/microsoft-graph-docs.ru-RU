@@ -1,18 +1,18 @@
 ---
-title: Получение outlookTaskFolder
-description: Получение свойств и связей указанной папки задач Outlook.
+title: Get outlookTaskFolder
+description: Получите свойства и связи указанной папки Outlook задачи.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c9bc8832f5e0e692dc022ce443c4715dfaee243
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6de43ed163c49a52df82df4368eca1aff1e51f8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981826"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055458"
 ---
-# <a name="get-outlooktaskfolder-deprecated"></a>Получение outlookTaskFolder (не рекомендуется)
+# <a name="get-outlooktaskfolder-deprecated"></a>Get outlookTaskFolder (deprecated)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48981826"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получение свойств и связей указанной папки задач Outlook.
+Получите свойства и связи указанной папки Outlook задачи.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект OutlookTaskFolder](../resources/outlooktaskfolder.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAAABrJAAA=
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

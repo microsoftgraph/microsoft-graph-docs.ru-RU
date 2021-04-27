@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a6ba8e018e31b001066ae86b6d016bfe21c94cc2
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: b3cb5cc7be6e79b44a9860ae5acef9dc80b63f83
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573990"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055129"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

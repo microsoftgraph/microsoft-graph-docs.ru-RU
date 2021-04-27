@@ -1,16 +1,16 @@
 ---
 title: Перечисление taskTriggers
-description: Получение списка триггеров задач, связанных с принтером.
+description: Извлечение списка триггеров задач, связанных с принтером.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 22d4d9b27117159b93c3913c54c2be9debb9fafe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dbea7cf06139ca976a76a2716f9cba783498f4d6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979845"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052924"
 ---
 # <a name="list-tasktriggers"></a>Перечисление taskTriggers
 
@@ -18,18 +18,18 @@ ms.locfileid: "48979845"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [триггеров задач](../resources/printtasktrigger.md) , связанных с [принтером](../resources/printer.md). Список триггеров задач определяет, какие задачи будут вызываться в результате событий, происходящих во время печати.
+Извлечение списка [триггеров задач,](../resources/printtasktrigger.md) связанных с [принтером.](../resources/printer.md) Список триггеров задач определяет, какие задачи будут запускаться в результате событий, которые происходят во время печати.
 
-Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer. Read. ALL, Printer. ReadWrite. ALL, Printer. FullControl. ALL. |
+|Делегированные (рабочая или учебная учетная запись)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| Не поддерживается. |
 
@@ -43,7 +43,7 @@ GET /print/printers/{id}/taskTriggers
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceptions
-Некоторые операторы не поддерживаются: `$count` , `$format` , `$search` , `$select` , `$skip` , `$top` .
+Некоторые операторы не поддерживаются: `$count` , , , , `$format` `$search` `$select` `$skip` `$top` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -53,7 +53,7 @@ GET /print/printers/{id}/taskTriggers
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принттасктригжер](../resources/printtasktrigger.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов printTaskTrigger](../resources/printtasktrigger.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -89,8 +89,8 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

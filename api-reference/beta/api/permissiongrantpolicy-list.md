@@ -1,16 +1,16 @@
 ---
 title: List permissionGrantPolicies
-description: Извлечение списка объектов permissionGrantPolicy.
+description: Получение списка объектов permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a3bb3377100559583f7e9511ac009dba18f36f16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7333c765bd556a4c9bbb9de49f2e82519569258b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433924"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052966"
 ---
 # <a name="list-permissiongrantpolicies"></a>List permissionGrantPolicies
 
@@ -48,7 +48,7 @@ GET /policies/permissionGrantPolicies
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

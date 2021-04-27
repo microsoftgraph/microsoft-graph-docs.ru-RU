@@ -1,16 +1,16 @@
 ---
 title: Получение taskTrigger
-description: Получение триггера задачи для принтера.
+description: Получите триггер задачи с принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c985552c56caf5a3396a75d54485c67166696b89
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3976b61801d6f7bff3a1355666849a8e46f56c70
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970240"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053568"
 ---
 # <a name="get-tasktrigger"></a>Получение taskTrigger
 
@@ -18,20 +18,20 @@ ms.locfileid: "48970240"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение [триггера задачи](../resources/printtasktrigger.md) для [принтера](../resources/printer.md).
+Получите [триггер задачи](../resources/printtasktrigger.md) с [принтера.](../resources/printer.md)
 
-Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer. Read. ALL, Printer. ReadWrite. ALL, Printer. FullControl. ALL. |
+|Делегированные (рабочая или учебная учетная запись)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /print/printers/{id}/taskTriggers/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принттасктригжер](../resources/printtasktrigger.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [печать объектаTaskTrigger](../resources/printtasktrigger.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -83,8 +83,8 @@ GET https://graph.microsoft.com/beta/print/printers/{printerId}/taskTriggers/{ta
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

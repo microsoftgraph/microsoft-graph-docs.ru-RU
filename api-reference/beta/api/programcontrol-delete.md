@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: c80aed58daa58cb12d8366761580327450300dfb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3a3622c7e9d1390c956c926f8e04d85ecfe7b7c2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442206"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055227"
 ---
 # <a name="delete-programcontrol"></a>Удаление программыControl
 
@@ -40,7 +40,7 @@ DELETE /programControls/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-
 ---
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,16 +1,16 @@
 ---
 title: Создание cloudPcOnPremisesConnection
-description: Создайте локальное подключение для предоставления облачных компьютеров.
+description: Создайте локальное подключение для создания облачных компьютеров.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 22f2e0f4b66742322f3ff6b1f18a50092fdf4895
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3f37d57516d78c1f9027346633213b7520d35dd8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162078"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053330"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Создание cloudPcOnPremisesConnection
 
@@ -18,7 +18,7 @@ ms.locfileid: "50162078"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) для предоставления облачных компьютеров.
+Создайте новый [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) для создания облачных компьютеров.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -52,24 +52,24 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса предоставляем представление объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в JSON.
+В теле запроса поставляем представление JSON объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+В следующей таблице показаны свойства, необходимые при создании [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемого имени для локального подключения.|
-|subscriptionId|String|ИД целевой подписки Azure, связанной с клиентом.|
-|adDomainName|String|Полное доменное имя домена Active Directory, к нему нужно присоединиться.|
-|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: admin@contoso.com.|
+|displayName|String|Имя отображения локального подключения.|
+|subscriptionId|String|ID целевой подписки Azure, связанной с клиентом.|
+|adDomainName|String|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
+|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: admin@contoso.com.|
 |adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|resourceGroupId|String|ИД целевой группы ресурсов. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|String|ИД целевой виртуальной сети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|String|ИД целевой подсети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|resourceGroupId|String|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|String|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -122,7 +122,7 @@ Content-length: 800
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Вот пример отклика. Показанный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+**Примечание:** Вот пример ответа. Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

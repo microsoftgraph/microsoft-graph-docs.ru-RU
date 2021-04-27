@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6c721c4c7b4e534fc22e71db221c73670b5e477a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 57d755532e2e56934f32aaa0940504073eef7473
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921151"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053631"
 ---
 # <a name="create-printershare"></a>Создание printerShare
 
@@ -50,8 +50,8 @@ POST /print/shares
 |Свойство|Тип|Описание|Обязательный?|
 |:---|:---|:---|:---|
 |принтер|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте `printer@odata.bind` синтаксис, как показано в следующем примере.|Да|
-|displayName|Строка|Имя доли принтера, которую должны отображать клиенты печати. Максимальная разрешенная длина — 50 символов.|Да|
-|allowAllUsers|Boolean| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|Нет|
+|displayName|String|Имя доли принтера, которую должны отображать клиенты печати. Максимальная разрешенная длина — 50 символов.|Да|
+|allowAllUsers|Логический| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|Нет|
 
 ## <a name="response"></a>Отклик
 В случае успешного использования этот метод возвращает код отклика и `201 Created` объект [printerShare](../resources/printershare.md) в тексте отклика.
@@ -99,8 +99,8 @@ Content-length: 114
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

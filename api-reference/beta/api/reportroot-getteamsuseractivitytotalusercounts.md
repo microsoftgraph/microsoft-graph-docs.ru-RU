@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityTotalUserCounts'
-description: Получите число пользователей Microsoft Teams, лицензированных или не лицензированных по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+description: Получите число пользователей, Microsoft Teams лицензированных или не лицензированных пользователей по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 9c62a7bf316f8b11b908f30eb3db1865b7a4f1df
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a534070cf178f93fe999728893ab5de5e707d9ab
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766979"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055003"
 ---
 # <a name="reportroot-getteamsuseractivitytotalusercounts"></a>reportRoot: getTeamsUserActivityTotalUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766979"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите число пользователей Microsoft Teams, лицензированных или не лицензированных по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+Получите число пользователей, Microsoft Teams лицензированных или не лицензированных пользователей по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -148,9 +148,9 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

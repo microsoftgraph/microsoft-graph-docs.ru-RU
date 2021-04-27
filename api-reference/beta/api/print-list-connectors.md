@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 36cf3775da6a2fbc5e721c6f8dc80be714e14851
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 7483553e73dc078ff544cfe3ce0a192de8155cbc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766520"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052938"
 ---
 # <a name="list-printconnectors"></a>PrintConnectors списка
 
@@ -21,7 +21,7 @@ ms.locfileid: "51766520"
 Извлечение списка соединитений печати.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
@@ -83,8 +83,8 @@ GET https://graph.microsoft.com/beta/print/connectors
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

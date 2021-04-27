@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 8d6554ee2207d91d10045a74a6b92ec42e4323d3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6aabcec3edf3deac15dc60936c13a0c7c4935a49
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441312"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055283"
 ---
 # <a name="list-privilegedoperationevents"></a>Список privilegedOperationEvents
 
@@ -18,7 +18,7 @@ ms.locfileid: "50441312"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов privilegedOperationEvent,](../resources/privilegedoperationevent.md) которые представляют события аудита, созданные управлением привилегированных удостоверений для операций ролей. Сведения о событии аудита можно услать [на privilegedOperationEvent.](../resources/privilegedoperationevent.md) Для фильтрации результатов запроса используйте стандартное выражение ``$filter`` OData.
+Извлечение списка [объектов privilegedOperationEvent,](../resources/privilegedoperationevent.md) которые представляют события аудита, созданные управление привилегированными пользователями для операций ролей. Сведения о событии аудита можно услать [на privilegedOperationEvent.](../resources/privilegedoperationevent.md) Для фильтрации результатов запроса используйте стандартное выражение ``$filter`` OData.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -47,7 +47,7 @@ GET /privilegedOperationEvents
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,7 @@ GET /privilegedOperationEvents
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +126,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -187,7 +187,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -230,7 +230,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 43037069608f8cbdfa317e9cfbe0b3f82d194d07
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4992950a05726dde407ea4bc344c5fe0f06e4d49
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958902"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054849"
 ---
 # <a name="list-swapshiftschangerequest"></a>Список swapShiftsChangeRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "50958902"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | Schedule.Read.All *, Schedule.ReadWrite.All*  |
+| Приложение | Schedule.Read.All *, Schedule.ReadWrite.All*  |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -94,9 +94,9 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeReq
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

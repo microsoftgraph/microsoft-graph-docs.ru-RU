@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bb8a9f21de74cab6a2dd9cf4afe96ca786c8d964
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d2a45ffc46c15b28e81c1c3a871b39b1b7ffed93
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957701"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055521"
 ---
 # <a name="create-directreport"></a>Создание directReport
 
@@ -77,7 +77,7 @@ Content-length: 30
 
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Список taskFolders
-description: Получите все папки задач Outlook в почтовом ящике пользователя.
+description: Получите все Outlook папки задач в почтовом ящике пользователя.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 17a8742393a8c245c638db64f04ce641e760e7f7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f863aa4edb26ef0d3ac1325404c07737ae0285af
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957516"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052980"
 ---
 # <a name="list-taskfolders-deprecated"></a>List taskFolders (deprecated)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50957516"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получите все папки задач Outlook в почтовом ящике пользователя.
+Получите все Outlook папки задач в почтовом ящике пользователя.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

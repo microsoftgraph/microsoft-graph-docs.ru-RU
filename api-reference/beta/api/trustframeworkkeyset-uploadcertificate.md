@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadCertificate'
-description: Загрузите сертификат в набор ключей.
+description: Upload сертификат на набор ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 279794743f6f6b4cbd80fd9b3793195a73ff0e18
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 841a99797e737b79ee9d480b14a06c90a2bc2f48
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433616"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053421"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "50433616"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Загрузите сертификат в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Входное значение — это закодированное значение содержимого сертификата базового значения 64. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload сертификат в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Входное значение — это закодированное значение содержимого сертификата базового значения 64. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -98,9 +98,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

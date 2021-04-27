@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 035cd43487f83cc23f86b3d8b979af5052c708fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ad5ff716396a2971c4112e98239484be97c2cfce
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130426"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055192"
 ---
 # <a name="list-provisioningobjectsummary"></a>Список provisioningObjectSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130426"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех событий, произошедших в клиенте, таких как удаление группы в целевом приложении или создание пользователя при предоставлении учетных записей пользователей из системы управления персоналом. 
+Получите все события, которые произошли в клиенте, например удаление группы в целевом приложении или создание пользователя при создании учетных записей пользователей из вашей системы управления персоналом. 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,13 +40,13 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Обратите внимание, что все фильтры чувствительны к делу, кроме состояния. 
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Обратите внимание, что все фильтры чувствительны к делу, за исключением состояния. 
 
 |Имя     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Фильтрует результаты (строки). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/provisioning?$top=20`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо передать верхний фильтр в запросе. Нельзя указать количество пропускаемого результата.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо пройти верхний фильтр запроса. Нельзя указать количество пропущенных результатов.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query_parameters).
 
@@ -54,25 +54,25 @@ GET /auditLogs/provisioning
 
 |Имя атрибута |Поддерживаемые операторы|
 |:----------------|:------|
-|id| eq, contains|
+|id| eq, содержит|
 |activityDateTime| eq|
-|tenantid|eq, contains|
-|jobid|eq, contains|
-|changeid|eq, contains|
-|cycleid|eq, contains|
-|action|eq, contains|
-|statusInfo/status|eq, contains|
-|sourceSystem/displayName|eq, contains|
-|targetSystem/displayName|eq, contains|
-|sourceIdentity/identityType|eq, contains|
-|targetIdentity/identityType|eq, contains|
-|sourceIdentity/id|eq, contains|
+|tenantid|eq, содержит|
+|jobid|eq, содержит|
+|changeid|eq, содержит|
+|cycleid|eq, содержит|
+|action|eq, содержит|
+|statusInfo/status|eq, содержит|
+|sourceSystem/displayName|eq, содержит|
+|targetSystem/displayName|eq, содержит|
+|sourceIdentity/identityType|eq, содержит|
+|targetIdentity/identityType|eq, содержит|
+|sourceIdentity/id|eq, содержит|
 |servicePrincipal/id|eq|
 |servicePrincipal/name|eq|
-|targetIdentity/id|eq, contains|
-|sourceIdentity/displayName|eq, contains|
-|targetIdentity/displayName|eq, contains|
-|initiatedBy/displayName|eq, contains|
+|targetIdentity/id|eq, содержит|
+|sourceIdentity/displayName|eq, содержит|
+|targetIdentity/displayName|eq, содержит|
+|initiatedBy/displayName|eq, содержит|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -86,7 +86,7 @@ GET /auditLogs/provisioning
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -126,9 +126,9 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика на успешное событие.
+Ниже приводится пример ответа на успешное событие.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a>Пример 2. Реответ ошибки
+### <a name="example-2-error-reponse"></a>Пример 2. Повторное сообщение об ошибке
 
 ### <a name="request"></a>Запрос
 
@@ -278,9 +278,9 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика на событие сбойной подготовка.
+Ниже приводится пример ответа на неудалось событие подготовка.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

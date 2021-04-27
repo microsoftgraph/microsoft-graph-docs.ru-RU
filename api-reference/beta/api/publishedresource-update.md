@@ -1,18 +1,18 @@
 ---
-title: Обновление publishedResource
+title: Update publishedResource
 description: Обновление свойств объекта [publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8c8a6cfe8eead7219918daf5ac2e87090cc18888
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 22544845ededf639bc71f14dec72a7163ded7c90
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137678"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055157"
 ---
-# <a name="update-publishedresource"></a>Обновление publishedResource
+# <a name="update-publishedresource"></a>Update publishedResource
 
 Пространство имен: microsoft.graph
 
@@ -46,13 +46,13 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса укавите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укажи значения для обновления соответствующих полей. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 В следующей таблице перечислены свойства, которые можно обновить.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Представляет локально опубликованное имя ресурса.|
+|displayName|String|Представляет локальное имя опубликованного ресурса.|
 
 ## <a name="response"></a>Отклик
 
@@ -98,9 +98,9 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

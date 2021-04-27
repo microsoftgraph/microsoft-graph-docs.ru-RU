@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 045df17f2d59f7d8f3081fb28b8a39314e9cacf1
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 3e759ab18f0de22a0b769b01f19df44bf1ac6fad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766506"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053645"
 ---
 # <a name="list-shares"></a>Перечисление общих ресурсов
 
@@ -21,7 +21,7 @@ ms.locfileid: "51766506"
 Извлечение списка **printerShares**.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице.
 
@@ -85,8 +85,8 @@ GET https://graph.microsoft.com/beta/print/shares
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

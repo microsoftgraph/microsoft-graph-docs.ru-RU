@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 968e90bc659cdbdf2c654bb62c58e64ab250627f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 062cd1d5c39c64eab9018289127eb5c6e691bd44
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444807"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054758"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "50444807"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список [объекта unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте это, чтобы получить список назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [унифицированныеRoleAssignment.](../resources/unifiedroleassignment.md)
+Получите список [объекта unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Используйте это, чтобы получить список назначений ролей в Microsoft Intune. Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 |:---- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 ### <a name="response"></a>Отклик
 
 Ниже приводится пример ответа:
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

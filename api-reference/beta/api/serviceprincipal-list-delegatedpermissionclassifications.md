@@ -1,24 +1,24 @@
 ---
-title: Список коллекции delegatedPermissionClassifications servicePrincipal
-description: Извлекает список классификаций, которые даются делегированию разрешений, которые предоставляет основной службы API.
+title: Список делегированной Коллекции servicePrincipal
+description: Извлечение списка классификаций, данных делегированию разрешений, выставленных директором службы API.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: fa32de810f7afa8a972bbe59632a5fa90ee8663e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 980038094e551a1779b5b74b7d31884cfe38278d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132173"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053477"
 ---
-# <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Список коллекции delegatedPermissionClassifications servicePrincipal
+# <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Список делегированной Коллекции servicePrincipal
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список [делегированияPermissionClassification,](../resources/delegatedpermissionclassification.md) настроенный в настоящее время для делегируемых разрешений, которые могут быть выявимы aPI.
+Извлечение списка [делегированияPermissionClassification,](../resources/delegatedpermissionclassification.md) настроенного в настоящее время для делегируемых разрешений, выставленных API.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50132173"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Приложение | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ GET /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [делегированияПермиссииКлассификация](../resources/delegatedpermissionclassification.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -92,9 +92,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionC
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

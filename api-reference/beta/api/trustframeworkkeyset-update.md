@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c86b9e64e06434f5c669b53e8303248ed42c521b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c0375dbb052c061330d26120783f69d4a8327440
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433630"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053435"
 ---
 # <a name="update-trustframeworkkeyset"></a>Обновление trustFrameworkKeySet
 
@@ -118,9 +118,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

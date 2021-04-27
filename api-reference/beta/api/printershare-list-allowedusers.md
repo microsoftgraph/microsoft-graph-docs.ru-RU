@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d66ba6d7d9eadecc4b6b1dc2346fbf6afe1e7378
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 32a72815cd291b013f588d7684c97143beb3cd3e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766009"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052910"
 ---
 # <a name="list-allowedusers-for-printershare"></a>Список allowedUsers для printerShare
 
@@ -21,7 +21,7 @@ ms.locfileid: "51766009"
 Извлечение списка пользователей, которым был предоставлен доступ для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Помимо следующих разрешений, клиент или клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение, да которое предоставляет [доступ пользователям списка.](user-list.md) Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
@@ -79,8 +79,8 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

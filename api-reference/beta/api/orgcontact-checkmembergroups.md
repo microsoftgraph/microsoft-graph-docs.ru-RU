@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: checkMemberGroups'
-description: Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
+description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e5218d27e8f0ba12ac7db48bd2dd3a58963ab38c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 97e6ce54099301600a0343fe837b947bb0ac18dc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434027"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055584"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 
@@ -38,7 +38,7 @@ POST /contacts/{id}/checkMemberGroups
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -90,7 +90,7 @@ Content-length: 44
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

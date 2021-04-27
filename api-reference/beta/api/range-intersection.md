@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e75337a9617c4311c6704bc1bea4e5e95db75869
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: dbfc9c1e1ed3977046ded1926af66b42ae390244
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577109"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055101"
 ---
 # <a name="range-intersection"></a>Range: Intersection
 
@@ -75,7 +75,7 @@ Content-length: 42
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

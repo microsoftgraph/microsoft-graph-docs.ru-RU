@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9e60e01bcf530533f6827af2d93a90573f39c760
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0ebdf4a68247a4b6c62d5c2cf1431b903fd140a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720046"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054716"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -54,7 +54,7 @@ POST /users
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |True, если учетная запись включена; в противном случае, false.|
+|accountEnabled |Логический |True, если учетная запись включена; в противном случае, false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
@@ -123,7 +123,7 @@ Content-type: application/json
 Ниже приведен пример отклика. 
 
 >[!NOTE]
->Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+>Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -219,7 +219,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

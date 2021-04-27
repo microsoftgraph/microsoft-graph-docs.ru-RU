@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageDistributionUserCounts'
-description: Получите количество уникальных лицензированных пользователей Microsoft Teams по типу устройства за выбранный период времени.
+description: Получите количество уникальных пользователей Microsoft Teams по типу устройства за выбранный период времени.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c6d6e8cf10071b46d660f5e50e80a45b2a0c1e10
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 23bcbb90a3cfd55f2585d1136f443cd38f125b77
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766191"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052749"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766191"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите количество уникальных лицензированных пользователей Microsoft Teams по типу устройства за выбранный период времени.
+Получите количество уникальных пользователей Microsoft Teams по типу устройства за выбранный период времени.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -150,9 +150,9 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionUser
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Создание publishedResource
-description: Создание объекта **publishedResource.**
+description: Создание нового **объекта publishedResource.**
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2b87c40556cb7612e6c354ddb8e5815fb4d08760
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0cf0b586010b6d68a36f4d710bc24f0035ecafa7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130391"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055164"
 ---
 # <a name="create-publishedresource"></a>Создание publishedResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130391"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [publishedResource.](../resources/publishedresource.md)
+Создание нового [объекта publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,18 +46,18 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса укажу представление объекта [publishedResource](../resources/publishedresource.md) в JSON.
+В теле запроса поставляем представление JSON объекта [publishedResource.](../resources/publishedresource.md)
 
-Укавите значения для следующих свойств.
+Поставляем значения для следующих свойств.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображаемого имени publishedResource.|
-|resourceName|String|Имя publishedResource.|
+|displayName|String|Отображение имени опубликованногоРесурса.|
+|resourceName|String|Имя опубликованногоResource.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `201 Created` [объект publishedResource](../resources/publishedresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект publishedResource](../resources/publishedresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -101,9 +101,9 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

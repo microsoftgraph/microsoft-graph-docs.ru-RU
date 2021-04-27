@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fccd7dea62dd0d08f56f119a75dd71037d00c90
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8db32df8b0e92451c98e4d6bde6a2c503bb17c67
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957626"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055493"
 ---
 # <a name="get-outlooktask-deprecated"></a>Get outlookTask (deprecated)
 
@@ -53,7 +53,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя                     | Описание                                       |
 |:-------------------------|:--------------------------------------------------|
 | Авторизация            | Bearer {токен}. Обязательный.                         |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр. |
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -65,7 +65,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-an-outlook-task"></a>Пример 1. Получить задачу Outlook
+### <a name="example-1-get-an-outlook-task"></a>Пример 1. Получить Outlook задачу
 
 #### <a name="request"></a>Запрос
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 Ниже приведен пример отклика. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.
 
-> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -150,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2. Получить задачу Outlook со свойствами даты в тихоокеанском стандартном времени
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2. Outlook задачу со свойствами даты в тихоокеанском стандартном времени
 
 #### <a name="request"></a>Запрос
 
@@ -190,7 +190,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 Ниже приведен пример отклика. Свойства времени даты в ответе возвращаются в указанное тихоокеанское стандартное время.
 
-> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

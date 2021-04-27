@@ -1,16 +1,16 @@
 ---
 title: Создание объекта outlookTask
-description: Создайте задачу Outlook в указанной папке задач.
+description: Создайте Outlook задачу в указанной папке задач.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5986d4fe2ab77cf8c4634f3d872d966819ebca7
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 233e93529c2b4644a69643fd8bf1f49562765127
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774308"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055437"
 ---
 # <a name="create-outlooktask-deprecated"></a>Создание объекта outlookTask (не рекомендуется)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50774308"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Создайте задачу Outlook в указанной папке задач.
+Создайте Outlook задачу в указанной папке задач.
 
 Метод POST всегда игнорирует временную часть **startDateTime** и **dueDateTime** в теле запроса и предполагает время, когда всегда будет полночь в указанном часовом поясе.
 
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON [объекта OutlookTask.](../resources/outlooktask.md)
@@ -103,7 +103,7 @@ Content-length: 376
 ##### <a name="response"></a>Отклик
 Метод POST игнорирует время в теле запроса и предполагает время, когда всегда будет полночь в указанном часовом поясе (PST). Затем метод POST по умолчанию преобразует и отображает все связанные с датой свойства в UTC в ответе.
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

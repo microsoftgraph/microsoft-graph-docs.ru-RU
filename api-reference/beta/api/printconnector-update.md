@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 740884e815a3006929d2fcd15b62a2cd6cae8139
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 49b3cb83c3fb93867f8038d170a5c68b7b4c61cb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921893"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055318"
 ---
 # <a name="update-printconnector"></a>Обновление printConnector
 
@@ -48,9 +48,9 @@ PATCH /print/connectors/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |name|String|Имя соединитетеля.|
-|fullyQualifiedDomainName|Строка|Имя хост-имени соединители.|
+|fullyQualifiedDomainName|String|Имя хост-имени соединители.|
 |operatingSystem|String|Версия операционной системы соединитетеля.|
-|appVersion|Строка|Версия соединиттеля.|
+|appVersion|String|Версия соединиттеля.|
 |расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
 
 ## <a name="response"></a>Отклик
@@ -105,8 +105,8 @@ Content-length: 300
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

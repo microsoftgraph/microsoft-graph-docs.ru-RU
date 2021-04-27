@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 796b4de4ade4c9a59d7aeade843f8acad5bc31be
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ae11f0c21a4dcb314d12f4b74e570ea4cafc03a8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441188"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052903"
 ---
 # <a name="create-privilegedroleassignment"></a>Создание privilegedRoleAssignment
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignments
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [privilegedRoleAssignment.](../resources/privilegedroleassignment.md)
 
 ## <a name="response"></a>Отклик
@@ -87,7 +87,7 @@ Content-length: 164
 
 В теле запроса поставляем представление JSON объекта [privilegedRoleAssignment.](../resources/privilegedroleassignment.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: ec11b8eb813a8087b9913288fd46fb9eaabbb04b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a0d879e95de6fdfe70b74ad4b9632ab1c650b0bb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433777"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054870"
 ---
 # <a name="get-suspiciousipriskevent-deprecated"></a>Get suspiciousIpRiskEvent (deprecated)
 
@@ -42,7 +42,7 @@ GET /suspiciousIpRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -59,7 +59,7 @@ GET /suspiciousIpRiskEvents/{id}
 GET https://graph.microsoft.com/v1.0/suspiciousIpRiskEvents/02e8bfd1-5231-1006-01cc-434f84e0859e-97b7301f-bc05-8e2c-fdfa-2004eb66ff70-287e7b9b-1d60-aa96-6ddb-65c81ee31475
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

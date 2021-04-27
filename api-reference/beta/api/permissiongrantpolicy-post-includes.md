@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: d98162be084e40c06f81c871a46fb804a7d612c8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 704f7f3165b990dc9a26b779681d98c312b8e673
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433910"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052945"
 ---
 # <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Создание permissionGrantConditionSet включает коллекцию разрешенийGrantPolicy
 
@@ -97,9 +97,9 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

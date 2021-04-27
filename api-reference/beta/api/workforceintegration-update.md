@@ -1,24 +1,24 @@
 ---
-title: Обновление рабочей силы
-description: Обновление свойств объекта workforceintegration.
+title: Обновление реинтеграции рабочей силы
+description: Обновление свойств объекта по реинтеграции рабочей силы.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6885976681e11640ea3205ce841fe1f6620e626a
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 2da287f8b78beae39ce5842307c08ff15ef78007
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910638"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054681"
 ---
-# <a name="update-workforceintegration"></a>Обновление рабочей силы
+# <a name="update-workforceintegration"></a>Обновление реинтеграции рабочей силы
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [workforceintegration.](../resources/workforceintegration.md)
+Обновление свойств объекта [по реинтеграции](../resources/workforceintegration.md) рабочей силы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,16 +51,16 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции сотрудников.|
-|шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции сотрудников. |
-|isActive|Boolean|Указывает, активна ли в настоящее время интеграция с сотрудниками.|
-|поддерживает|string| Возможные значения: `none` `shift` , , `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем регистре.|
-|supportedEntities|string| Это свойство заменит **поддержку** в v1.0. Рекомендуется использовать это свойство вместо **поддержки.** Пока **свойство supports** будет поддерживаться в бета-версии. Возможные значения: `none` `shift` , , `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем регистре.|
-|url|String| URL-адрес интеграции сотрудников для вызовов из службы Shift. |
+|displayName|String|Имя интеграции рабочей силы.|
+|шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции рабочей силы. |
+|isActive|Логический|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
+|поддерживает|String| Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
+|supportedEntities|String| Это свойство заменит **поддержки** в v1.0. Рекомендуется использовать это свойство вместо **поддержки.** Свойство **поддерживается** в бета-версии в настоящее время. Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
+|url|String| URL-адрес интеграции рабочей силы для вызовов из службы Shift. |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -115,9 +115,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -142,9 +142,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Пример 2. Создание нового workforceIntegration с включенной фильтрацией на соответствие требованиям SwapRequest
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Пример 2. Создание новой рабочей силыИнтеграция с помощью SwapRequest, включенной для фильтрации прав
 
-В следующем примере создается новый **сотрудникIntegration** с включенным фильтром swapRequest.
+В следующем примере создается новая **рабочая силаИнтеграция** с поддержкой SwapRequest для фильтрации прав.
 
 #### <a name="request"></a>Запрос
 
@@ -188,15 +188,15 @@ HTTP/1.1 200 OK
 }
 
 ```
-Чтобы создать новую **рабочую** регионацию с включенной фильтрацией правомерности SwapRequest, см. метод [Create.](../api/workforceintegration-post.md)
+Чтобы создать новую **рабочую силуИнтеграция** с помощью SwapRequest, включенной для фильтрации прав, см. в [методе Create.](../api/workforceintegration-post.md)
 
-### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример 3. Получение подходящих смен, когда SwapRequest включен в eligibilityFilteringEnabledEntities
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример 3. Получение подходящих сдвигов при включении SwapRequest в eligibilityFilteringEnabledEntities
 
-Взаимодействие между конечными точками интеграции приложения Shifts и сотрудников будет выполняться по существующему шаблону.
+Взаимодействие между конечными точками интеграции shifts и рабочей силой будет следовать существующему шаблону.
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, сделанного shifts на конечную точку интеграции персонала для получения подходящих смен для запроса на замену.
+Ниже приводится пример запроса shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -213,7 +213,7 @@ Accept-Language: en-us
 ```
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример ответа от службы интеграции сотрудников.
+Ниже приводится пример ответа службы интеграции рабочей силы.
 ```
 HTTP/1.1 200 OK
 {

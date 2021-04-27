@@ -1,16 +1,16 @@
 ---
 title: Перечисление задач
-description: Получение всех задач Outlook в указанной папке.
+description: Получите все Outlook задач в указанной папке.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1864524c954d66bdfcee7b1fb11862e26a2247cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f2d512828361cd4a51f7e21648a28a24760e2d06
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974823"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055451"
 ---
 # <a name="list-tasks-deprecated"></a>Перечисление задач (не рекомендуется)
 
@@ -21,11 +21,11 @@ ms.locfileid: "48974823"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получение всех задач Outlook в указанной папке.
+Получите все Outlook задач в указанной папке.
 
-По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC.  С помощью `Prefer: outlook.timezone` заголовка запроса можно получить все свойства, связанные с датами, в ответе, представленном в часовом поясе, отличном от UTC. [Пример](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) получения одной задачи. Заголовок можно применить точно так же, как и для получения нескольких задач.
+По умолчанию эта операция (и POST, [](../api/outlooktask-complete.md) PATCH и полные операции задач) возвращает свойства, связанные с датами в UTC.  Вы можете использовать заглавный запрос, чтобы все свойства, связанные с датой, в ответе были представлены в часовом поясе, отличаемом `Prefer: outlook.timezone` от UTC. Пример для [получения](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) одной задачи. Вы можете применить заглавную так же, чтобы получить несколько задач.
 
-Если имеется несколько групп задач, и вы хотите получить все задачи в определенной группе задач, сначала [получите все папки задач в этой группе задач](outlooktaskgroup-list-taskfolders.md), а затем получите задачи в каждой из этих папок задач.
+Если существует несколько групп задач, и вы хотите получить все задачи в определенной группе задач, сначала получите все папки задач в этой группе [задач,](outlooktaskgroup-list-taskfolders.md)а затем получите задачи в каждой из этих папок задач.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,14 +51,14 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTask](../resources/outlooktask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию [объектов OutlookTask](../resources/outlooktask.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

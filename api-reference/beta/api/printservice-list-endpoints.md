@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 09951136399d27caa65db2b22da4585014ffc3e3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9441b8e704edb328afa2fe372204f0a2c1acc5ed
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961526"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053610"
 ---
 # <a name="list-printserviceendpoints"></a>PrintServiceEndpoints списка
 
@@ -20,7 +20,7 @@ ms.locfileid: "50961526"
 
 Извлечение списка конечных точек, выставленных службой печати.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова этого API не требуется никаких разрешений, но для использования службы универсальной печати клиент пользователя или клиента приложения должен иметь активную подписку универсальной печати.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
@@ -78,8 +78,8 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

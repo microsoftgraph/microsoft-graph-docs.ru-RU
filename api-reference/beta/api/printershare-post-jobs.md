@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 643038023af0a805e32d88ea6d315a111541d2e8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3d5d248e75472d7c0d60b43e5242d1668b4a5119
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955626"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055311"
 ---
 # <a name="create-printjob-for-a-printershare"></a>Создание printJob для принтераShare
 
@@ -29,7 +29,7 @@ ms.locfileid: "50955626"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application| Не поддерживается. |
+|Приложение| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -121,8 +121,8 @@ Content-type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

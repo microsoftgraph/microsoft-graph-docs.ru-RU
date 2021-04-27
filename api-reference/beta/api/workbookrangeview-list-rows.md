@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 94286d8e4faeca95a5ba87c653acaeb5f1563715
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 02d20166119580c69326a3e8fa9e4f7e74845145
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578593"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053302"
 ---
 # <a name="list-rangeview-rows"></a>Получение списка строк rangeView
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

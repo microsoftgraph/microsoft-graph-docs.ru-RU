@@ -1,16 +1,16 @@
 ---
 title: Список relyingPartyDetailedSummary
-description: Получить список объектов relyingPartyDetailedSummary.
+description: Извлечение списка объектов relyingPartyDetailedSummary.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7512cc10db5b37cce6c899f5399f0c51194ab59c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 17e4c4b3e92173593c768267f6db957942241cdf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131406"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052861"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Список relyingPartyDetailedSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131406"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов **relyingPartyDetailedSummary.**
+Извлечение списка **объектов relyingPartyDetailedSummary.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50131406"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Report.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Report.Read.All |
+| Приложение                            | Report.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. 
 
-- Этот параметр можно использовать `$filter` для фильтрации по relyingPartyId, migrationStatus и другим атрибутам. Например, $filter= relyingPartyId eq 'identifier'.
+- Этот параметр можно `$filter` фильтровать, полагаясь наPartyId, migrationStatus и другие атрибуты. Например, $filter= идентификатор eq relyingPartyId.
 - Вы можете использовать `$orderby` `$top` параметры и `$skip` параметры запроса в любом запросе GET.
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -65,7 +65,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и запрашиваемого `200 OK` [объекта relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,9 +103,9 @@ GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(peri
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

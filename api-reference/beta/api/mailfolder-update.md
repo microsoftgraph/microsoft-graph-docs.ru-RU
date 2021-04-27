@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd94327f83be7fba7360416ea3e76ea5fdcb9010
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b6039bf189d88c46612fab8ec71ac6ae4eb7909b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136866"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053008"
 ---
 # <a name="update-mailfolder"></a>Обновление mailFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136866"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [mailFolder.](../resources/mailfolder.md)
+Обновление свойств [объекта mailFolder.](../resources/mailfolder.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -90,8 +90,8 @@ Content-length: 159
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Перечисление задач
-description: Получение списка задач, связанных с определением задачи.
+description: Извлечение списка задач, связанных с определением задачи.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5c7f698b0fadcc9bb60697b7a217ec49a7deefa9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e489a7a1c34a60d1f1da45d151a50e46511e6ca0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968140"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053582"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -18,20 +18,20 @@ ms.locfileid: "48968140"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [задач](../resources/printtask.md) , связанных с [определением задачи](../resources/printtaskdefinition.md).
+Извлечение списка [задач, связанных](../resources/printtask.md) с [определением задач.](../resources/printtaskdefinition.md)
 
-Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| PrintTaskDefinition.ReadWrite.All |
+|Приложение| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ GET /print/taskDefinitions/{id}/tasks
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceptions
-Некоторые операторы не поддерживаются: `$count` , `$format` , `$search` , `$select` , `$skip` , `$top` .
+Некоторые операторы не поддерживаются: `$count` , , , , `$format` `$search` `$select` `$skip` `$top` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -53,7 +53,7 @@ GET /print/taskDefinitions/{id}/tasks
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принттаск](../resources/printtask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию [объектов printTask](../resources/printtask.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -89,8 +89,8 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/92d72a3d-cad7-4809-89
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

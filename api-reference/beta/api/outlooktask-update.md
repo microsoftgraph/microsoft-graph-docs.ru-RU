@@ -1,16 +1,16 @@
 ---
 title: Обновление outlooktask
-description: Изменение писаных свойств задачи Outlook.
+description: Изменение writable свойств задачи Outlook задачи.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5fb3fff99b200c2342f745556c81139ee8d2e298
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 04fbf6862914b8ddcb1086197a0284fd482cbb53
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720601"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055465"
 ---
 # <a name="update-outlooktask-deprecated"></a>Обновление outlooktask (износ)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50720601"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Изменение писаных свойств задачи Outlook.
+Изменение writable свойств задачи Outlook задачи.
 
 Свойство **completedDateTime** может быть  задано полным действием или явно операцией PATCH. Если вы используете PATCH для **набора completedDateTime,** убедитесь, что вы **также** установите `completed` состояние.
 
@@ -128,7 +128,7 @@ Content-length: 76
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

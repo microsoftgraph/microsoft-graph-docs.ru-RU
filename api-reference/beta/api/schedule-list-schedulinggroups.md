@@ -1,24 +1,24 @@
 ---
 title: Список объектов schedulingGroup
-description: Получение списка Счедулингграуп в этом расписании.
+description: Получите список schedulingGroup в этом расписании.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 58f9109e3f4fd2ce2bfb0eacce37eee30dff0bb7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e4d45bb7b3948a6e8626299fd35adc1308a33a6c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969870"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053512"
 ---
-# <a name="list-schedulegroups"></a>Список Счедулеграупс
+# <a name="list-schedulegroups"></a>Расписание списковGroups
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [счедулингграупс](../resources/schedulinggroup.md) в этом [расписании](../resources/schedule.md).
+Получите список [schedulingGroups в](../resources/schedulinggroup.md) этом [расписании.](../resources/schedule.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48969870"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [schedulingGroup](../resources/schedulinggroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -86,9 +86,9 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

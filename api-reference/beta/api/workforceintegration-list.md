@@ -1,24 +1,24 @@
 ---
-title: Список Воркфорцеинтегратионс
-description: Получение списка объектов Воркфорцеинтегратион.
+title: Список рабочей силыИнтеграции
+description: Извлечение списка объектов workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d7d0d383d4b92f74bac7c605379435efd294820e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e28e40ec75833cde86d80cca26ea4d0a423ff018
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970723"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054702"
 ---
-# <a name="list-workforceintegrations"></a>Список Воркфорцеинтегратионс
+# <a name="list-workforceintegrations"></a>Список рабочей силыИнтеграции
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [воркфорцеинтегратион](../resources/workforceintegration.md) .
+Извлечение списка [объектов workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48970723"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. Read. ALL, Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -54,7 +54,7 @@ GET /teamwork/workforceIntegrations
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,9 +92,9 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

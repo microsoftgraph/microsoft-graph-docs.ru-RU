@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 122faba32899a04b9df9b7a9c745cb02f75328a9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: afdf3ba022ec5138849fb3cee0732a50d44aef8e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434043"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055577"
 ---
 # <a name="orgcontact-delta"></a>orgContact: delta
 
@@ -64,10 +64,10 @@ GET /contacts/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательный.|
+| Авторизация  | Носитель &lt;токен&gt;. Обязательный.|
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/beta/contacts/delta
 
 Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

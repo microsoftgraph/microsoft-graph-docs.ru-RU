@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 87c098fa50ed1498d4bf81952247decf70b2c02c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 0cd78b2046d65f8f4d5095fe2555c0c587aa20ec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469474"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054730"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Предоставление appRoleAssignment пользователю
 
@@ -107,7 +107,7 @@ Content-Type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

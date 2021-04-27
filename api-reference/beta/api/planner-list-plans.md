@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ff7ec4d26fc64534650fbd6a5fd4ce99f1d4412d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 5f79508d8459c52a6c3677b689054344da395e1c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473572"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055374"
 ---
 # <a name="list-plans"></a>Список планов
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/planner/plans
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a8de1f8b16ccac69a865d3c09f3d5eebdcc46c5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8e0af76933aee154f16e735d82a7d744444f54c3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447813"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055535"
 ---
 # <a name="orgcontact-list-directreports"></a>orgContact: Список directReports
 
@@ -44,7 +44,7 @@ GET /contacts/{id}/directReports
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/directReports
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

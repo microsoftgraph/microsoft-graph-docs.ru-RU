@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 98e208816a2415f176407d1d76194046c0284250
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 0ff77908a5a5f2d695e39f3780d3592a3fd3eb01
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470811"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054891"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>отчеты: getGroupArchivedPrintJobs
 
@@ -29,7 +29,7 @@ ms.locfileid: "50470811"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -66,8 +66,8 @@ GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(gro
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

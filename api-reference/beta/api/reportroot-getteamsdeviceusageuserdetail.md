@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: ebb9bd025ae17806a2b4c8060d453915c6d05cae
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: ceff341f4f75690263267fcc8924db19e0a19a16
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766163"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053526"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -161,9 +161,9 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(perio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

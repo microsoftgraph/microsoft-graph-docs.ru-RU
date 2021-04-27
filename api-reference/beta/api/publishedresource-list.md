@@ -1,24 +1,24 @@
 ---
-title: Список publishedResources
-description: Получить список объектов publishedResource.
+title: Список опубликованныхResources
+description: Извлечение списка объектов publishedResource.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7d3681d9c1000a4549908b248d40cf3d3b96bd98
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7670583a4614dac3466fbb21ede09b7aea03f73c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135529"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055178"
 ---
-# <a name="list-publishedresources"></a>Список publishedResources
+# <a name="list-publishedresources"></a>Список опубликованныхResources
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [publishedResource.](../resources/publishedresource.md)
+Извлечение списка [объектов publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [publishedResource](../resources/publishedresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [publishedResource](../resources/publishedresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,9 +92,9 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{publishingTyp
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

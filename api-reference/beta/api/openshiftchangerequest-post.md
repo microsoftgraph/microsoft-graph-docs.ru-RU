@@ -1,16 +1,16 @@
 ---
 title: Создание openShiftChangeRequest
-description: Создание экземпляра объекта openShiftChangeRequest.
+description: Создайте экземпляр объекта openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 915e08a395cad734b8a84c7123f4c8f89ad902d1
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 7c991a7b798f114df204c1731eba6a4a71bf29cf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292214"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052994"
 ---
 # <a name="create-openshiftchangerequest"></a>Создание openShiftChangeRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "50292214"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание экземпляра объекта [openShiftChangeRequest.](../resources/openshiftchangerequest.md)
+Создание экземпляра [объекта openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,9 +27,9 @@ ms.locfileid: "50292214"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Schedule.ReadWrite.All*  |
+| Приложение                            | Schedule.ReadWrite.All*  |
 
->\***Важно!** Разрешения приложений в настоящее время доступны только в закрытой предварительной версии и недоступны для общего использования.
+>\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,11 +51,11 @@ POST /teams/{id}/schedule/openShiftChangeRequests
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предостерегать представление нового объекта [openShiftChangeRequest](../resources/openshiftchangerequest.md) в JSON.
+В теле запроса предостерегать представление JSON нового [объекта openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и созданный объект `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) в теле отклика.
+В случае успеха этот метод возвращает код ответа и `200 OK` созданный [объект openShiftChangeRequest](../resources/openshiftchangerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -80,9 +80,9 @@ Content-length: 244
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 758eac6e54d8ed04852bfc598dabefb619f86bef
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: f3e7de29404775b3eb888fe617018503d81fea49
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573784"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055136"
 ---
 # <a name="range-column"></a>Range: Column
 
@@ -76,7 +76,7 @@ Content-length: 21
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

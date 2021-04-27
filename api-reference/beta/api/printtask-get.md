@@ -1,16 +1,16 @@
 ---
 title: Вывод задачи
-description: Получение сведений о задаче печати.
+description: Сведения о задаче печати.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0aa1f4479aeec18f3637fe263aa9d34f3ec2b222
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 06e83c3ca75c0e0e0f2a7fda730456388a43d7bb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968190"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053596"
 ---
 # <a name="get-task"></a>Вывод задачи
 
@@ -18,20 +18,20 @@ ms.locfileid: "48968190"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение сведений о задаче печати.
+Сведения о задаче печати.
 
-Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| PrintTaskDefinition.ReadWrite.All |
+|Приложение| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /print/taskDefinitions/{id}/tasks/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принттаск](../resources/printtask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект printTask](../resources/printtask.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -83,8 +83,8 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-81
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

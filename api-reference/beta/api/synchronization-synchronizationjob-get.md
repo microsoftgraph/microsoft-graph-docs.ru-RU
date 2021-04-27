@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 64d5b801b7529b94cbc6a02bf20315cf4374eff4
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 7fd473b0d289f92a28ef92d094d7450ecac8431d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625985"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054842"
 ---
 # <a name="get-synchronizationjob"></a>Получить синхронизациюJob
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

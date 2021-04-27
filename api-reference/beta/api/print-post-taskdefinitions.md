@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4b2a655047ed3700d42e8c672115f0457cc879e9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2e6a9eaca89e7ec68d2eee2053ead369cbcd5831
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966992"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053624"
 ---
 # <a name="create-taskdefinition"></a>Создание taskDefinition
 
@@ -20,18 +20,18 @@ ms.locfileid: "48966992"
 
 Создайте новое определение задачи.
 
-Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| PrintTaskDefinition.ReadWrite.All |
+|Приложение| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,12 +46,12 @@ POST /print/taskDefinitions
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [принттаскдефинитион](../resources/printtaskdefinition.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [printTaskDefinition.](../resources/printtaskdefinition.md)
 
-Свойства [принттаскдефинитион](../resources/printtaskdefinition.md) **ID** и **createdBy. AppID** задаются автоматически при создании ресурса.
+Свойства id и **createdBy.appId** для [печатиTaskDefinition](../resources/printtaskdefinition.md)автоматически заданы при создании ресурсов. 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [принттаскдефинитион](../resources/printtaskdefinition.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект printTaskDefinition](../resources/printtaskdefinition.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -96,8 +96,8 @@ Content-length: 122
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

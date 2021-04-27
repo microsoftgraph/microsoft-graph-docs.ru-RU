@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9fc98fd56e958a558a9f5afc6dec72412e35a6d1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a5ed73afcc88b416015159853686787322c8d117
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134738"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053015"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательный.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное свойство.|
-|displayName| Строка  | Отображаемое имя правила. Обязательный.|
+|displayName| String  | Отображаемое имя правила. Обязательный.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное свойство. |
 |isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
 |sequence| Int32 | Определяет последовательность выполнения правила среди прочих правил. Обязательный.|
@@ -114,7 +114,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

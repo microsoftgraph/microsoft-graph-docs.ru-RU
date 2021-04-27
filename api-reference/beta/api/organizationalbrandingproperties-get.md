@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d5193b03bdf820b2a8142dd23c6dce1a742314ef
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: b47103d8ce338e2070ab039de0551abe2aea1038
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582727"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055605"
 ---
 # <a name="get-organizationalbrandingproperties"></a>Get organizationalBrandingProperties
 
@@ -62,7 +62,7 @@ GET /organization/{id}/branding
 ### <a name="example-1-get-the-default-branding"></a>Пример 1. Получить брендинг по умолчанию
 
 >[!NOTE]
->Если вы попробуете пример в Graph Explorer, необходимо также включить загон Accept-Language запроса с допустимым локальным кодом ISO-639, чтобы избежать ошибки "Недействительное значение удостоверения местного значения en-US,en;q=0.9. Это должен быть допустимый локал ISO-639".
+>Если вы попробуете пример в Graph Explorer, необходимо также включить Accept-Language запроса с допустимым локальным кодом ISO-639, чтобы избежать ошибки "Недействительное значение id locale en-US,en;q=0.9. Это должен быть допустимый локал ISO-639".
 
 #### <a name="request"></a>Запрос
 
@@ -98,9 +98,9 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -177,9 +177,9 @@ Accept-Language: fr
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

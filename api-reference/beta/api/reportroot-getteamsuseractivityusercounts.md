@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityUserCounts'
-description: Получите число лицензированных пользователей Microsoft Teams по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+description: Получите количество лицензированных Microsoft Teams по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3d83084b28872079a5784c499d7a29de0b6a2b15
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: c43667c435d7183c0298d99a743c5c81abd4751d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766394"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055010"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766394"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите число лицензированных пользователей Microsoft Teams по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+Получите количество лицензированных Microsoft Teams по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -148,9 +148,9 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserCounts(peri
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

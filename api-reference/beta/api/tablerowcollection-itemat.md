@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e26b77addf8d31e61c93e2d028db908410647401
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 1fcb87a1422b28c8f086dc619076dba6ddd578c5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574988"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054786"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -86,7 +86,7 @@ Content-length: 20
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

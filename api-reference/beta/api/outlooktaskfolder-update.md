@@ -1,18 +1,18 @@
 ---
 title: Обновление outlooktaskfolder
-description: Обновление свойств, доступных для записи, папки задач Outlook.
+description: Обновим рукописные свойства папки Outlook задач.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 82a02fe08f4f5d2e1ae3582dde0558a3bff96fd8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 07bf8e50dae35458f6071f92cfc361b91e7e2f91
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974826"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055444"
 ---
-# <a name="update-outlooktaskfolder-deprecated"></a>Обновление outlooktaskfolder (не рекомендуется)
+# <a name="update-outlooktaskfolder-deprecated"></a>Обновление outlooktaskfolder (износ)
 
 Пространство имен: microsoft.graph
 
@@ -21,9 +21,9 @@ ms.locfileid: "48974826"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Обновление свойств, доступных для записи, папки задач Outlook.
+Обновим рукописные свойства папки Outlook задач.
 
-Вы не можете изменить значение свойства **Name** папки задач по умолчанию, "задачи".
+Невозможно изменить значение **свойства имени** папки задач по умолчанию "Задачи".
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -55,10 +55,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект OutlookTaskFolder](../resources/outlooktaskfolder.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере показано изменение имени указанной папки задач на `Charity work` .
+В следующем примере имя указанной папки задач изменяется на `Charity work` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ Content-length: 31
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

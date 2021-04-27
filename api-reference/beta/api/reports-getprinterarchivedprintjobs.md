@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: daf0acf2ab9bc285d05aae9f3b875ffc6f329b03
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8a0daedcc8c8b035e6e2ffba7a5a0e49e632f7ec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472414"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054898"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>отчеты: getPrinterArchivedPrintJobs
 
@@ -29,7 +29,7 @@ ms.locfileid: "50472414"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -66,8 +66,8 @@ GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(p
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

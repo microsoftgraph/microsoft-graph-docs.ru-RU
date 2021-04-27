@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 0bab4a86c614360991a334e7bd2c8450f7d3dfb0
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 89d65455ecc1eea427c0e2186a97fbad39789884
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777680"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053547"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -45,7 +45,7 @@ PATCH /privilegedApproval/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalState|String| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset||
@@ -98,7 +98,7 @@ Content-length: 180
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c4295de0e6a6e361a28932fa4755b35aca80b64b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 909198910f311053af9cca71c1dae34beb65e13c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444986"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053449"
 ---
 # <a name="create-trustframeworkkeyset"></a>Создание trustFrameworkKeySet
 
@@ -97,9 +97,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
-> **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -163,9 +163,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

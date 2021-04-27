@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 52a36d4afaaee71775b0b88a690d54c30ce36cc6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 23f93a48e808a72e312c55def59fae0a89d6daeb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134343"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053491"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: Перечисление createdObjects
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
->Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

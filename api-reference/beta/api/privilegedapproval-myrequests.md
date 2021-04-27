@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 5c552e49826c28368657af6dd574811288986cb5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 93f174018efe918b0b0762548800f4168d8c8cdf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442252"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055297"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

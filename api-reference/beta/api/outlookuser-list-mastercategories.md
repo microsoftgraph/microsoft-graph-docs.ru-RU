@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: df7b158bc66159e2de889f48d12cbfd8a7f4bfdd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 37b70fc798163f3b6f0fe5e58b856cdcdda2198c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133079"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052987"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

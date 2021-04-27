@@ -1,18 +1,18 @@
 ---
 title: Список вложений
-description: Получение списка объектов вложений, вложенных в задачу Outlook.
+description: Получите список объектов вложений, присоединенных к Outlook задаче.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ed5ec108da53f4c68c0e9d701d78f929e0f8dc9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 87b7a341be4e280a8b211bf03e814006d8240755
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974126"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055479"
 ---
-# <a name="list-attachments-deprecated"></a>Список вложений (не рекомендуется)
+# <a name="list-attachments-deprecated"></a>Вложения списка (неподготовленные)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48974126"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получение списка объектов [вложений](../resources/attachment.md) , вложенных в задачу Outlook.
+Получите список объектов [вложений,](../resources/attachment.md) присоединенных к Outlook задачи.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -58,7 +58,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вложений](../resources/attachment.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` вложений в [](../resources/attachment.md) тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

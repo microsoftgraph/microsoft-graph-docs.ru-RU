@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 29b30bd80dba96b061d0c83f2710d224c3da8758
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 420d64bbef69aac415380905500054313790513d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721784"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053540"
 ---
 # <a name="update-program"></a>Программа обновления
 
@@ -92,7 +92,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

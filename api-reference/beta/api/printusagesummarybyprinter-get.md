@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: 8cfda5016861ada120914cc61b19c00081dc5297
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: bc7e8a88600a19494312e7fc2db7aebb455e8a2a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515655"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053561"
 ---
 # <a name="get-printusagesummarybyprinter"></a>Получение printUsageSummaryByPrinter
 
@@ -84,8 +84,8 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByPri
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

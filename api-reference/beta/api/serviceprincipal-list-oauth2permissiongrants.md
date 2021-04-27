@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a8153b32c00890da1d575a49e75a29272025b968
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: eb2f7cef7db877080360e1798d568f76239ed3ea
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759862"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053470"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oauth2PermissionGran
 
 Ниже приведен пример отклика. 
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

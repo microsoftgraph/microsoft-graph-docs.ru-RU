@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7575dc8dc35995491a0f7143e55734ecff52cfa7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a7ba73373ee0c575ca32ab9a1e594089ae9cc93e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953192"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054926"
 ---
 # <a name="list-dailyprintusagesummariesbyprinter"></a>Список dailyPrintUsageSummariesByPrinter
 
@@ -29,7 +29,7 @@ ms.locfileid: "50953192"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -78,8 +78,8 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByPri
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

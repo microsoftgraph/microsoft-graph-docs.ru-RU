@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadPkcs12'
-description: Загрузите ключ формата PKCS 12 (PFX) в набор ключей.
+description: Upload клавишу формата PKCS 12 (PFX) в набор ключей.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9de90df699c3086261321b38375373a00b464da1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 520508293c6336e5c5c1e715eeb4f02de9209b4e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433602"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053428"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet: uploadPkcs12
 
@@ -18,7 +18,7 @@ ms.locfileid: "50433602"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Загрузите ключ формата PKCS12 (PFX) в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Входное значение — это закодированное значение содержимого сертификата Pfx. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload PKCS12 формата (PFX) в [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Входное значение — это закодированное значение содержимого сертификата Pfx. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -100,9 +100,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

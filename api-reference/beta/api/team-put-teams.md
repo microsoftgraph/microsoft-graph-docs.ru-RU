@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f17d6db22e2076b66d62453da900216a55a899ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6a4009c5fc6d9a421cfd5ffdae8c7ab4cc31d393
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977460"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054772"
 ---
 # <a name="create-team-from-group"></a>Создание команды из группы
 
@@ -115,9 +115,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

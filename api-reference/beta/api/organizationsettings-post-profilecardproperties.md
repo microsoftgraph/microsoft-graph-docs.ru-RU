@@ -1,26 +1,26 @@
 ---
-title: Создание Профилекардпроперти
-description: Используйте этот API для создания нового Профилекардпроперти.
+title: Создание profileCardProperty
+description: Используйте этот API для создания нового профиляCardProperty.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 597ff7f2bafcf05e4f2827932bc29cbc98df10c1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c9b43c3ca76416db4d319fdfcd7631d5eaf3a9b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964019"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055591"
 ---
-# <a name="create-profilecardproperty"></a>Создание Профилекардпроперти
+# <a name="create-profilecardproperty"></a>Создание profileCardProperty
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [профилекардпроперти](../resources/profilecardproperty.md) для Организации. Новое свойство определяется свойством **директорипропертинаме** .
+Создайте новый [профильCardProperty](../resources/profilecardproperty.md) для организации. Новое свойство определено **свойством directoryPropertyName.**
 
-Дополнительные сведения о добавлении свойств в карточку профиля для организации можно узнать в статье [Настройка карточки профиля](/graph/add-properties-profilecard).
+Дополнительные сведения о добавлении свойств в карточку профилей для организации см. в примере [настройка карточки профиля.](/graph/add-properties-profilecard)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +28,11 @@ ms.locfileid: "48964019"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
->**Примечание:** Для этой операции с делегированными разрешениями необходимо, чтобы вошедшего в систему пользователя была назначена роль администратора клиента или роль глобального администратора.
+>**Примечание:** Использование делегирования разрешений для этой операции требует от пользователя, вписаного, роли администратора клиента или глобального администратора.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,11 +51,11 @@ POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/pro
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [профилекардпроперти](../resources/profilecardproperty.md) в формате JSON.
+В корпусе запроса поставляем представление JSON объекта [profileCardProperty.](../resources/profilecardproperty.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [профилекардпроперти](../resources/profilecardproperty.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект profileCardProperty](../resources/profilecardproperty.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -109,9 +109,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

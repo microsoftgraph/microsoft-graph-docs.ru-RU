@@ -1,24 +1,24 @@
 ---
-title: Создание Воркфорцеинтегратион
-description: Создание нового объекта Воркфорцеинтегратион.
+title: Создание рабочей силыИнтеграция
+description: Создание нового объекта workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c67023a11f105008361de7167b8adc14ce5cfa40
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 76cb01efb15f7937c9e71e1fa26eb8d425f2b4d7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970710"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054688"
 ---
-# <a name="create-workforceintegration"></a>Создание Воркфорцеинтегратион
+# <a name="create-workforceintegration"></a>Создание рабочей силыИнтеграция
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [воркфорцеинтегратион](../resources/workforceintegration.md) .
+Создание нового [объекта workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48970710"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -47,19 +47,19 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [воркфорцеинтегратион](../resources/workforceintegration.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый объект `201 Created` [workforceIntegration](../resources/workforceintegration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-new-workforceintegration-object"></a>Пример 1: создание нового объекта Воркфорцеинтегратион.
+### <a name="example-1-create-a-new-workforceintegration-object"></a>Пример 1. Создание нового объекта workforceIntegration.
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на создание нового объекта **воркфорцеинтегратион** .
+Ниже приводится пример запроса на создание нового объекта **workforceIntegration.**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -104,9 +104,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -131,9 +131,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Пример 2: создание нового Воркфорцеинтегратион с включенной функцией Свапрекуест для фильтрации допустимости
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Пример 2. Создание новой рабочей силыИнтеграция с помощью SwapRequest, включенной для фильтрации прав
 
-Ниже приведен пример запроса с Свапрекуест, включенным для фильтрации приемлемости. 
+Ниже приводится пример запроса с помощью SwapRequest, включенного для фильтрации прав. 
 
 #### <a name="request"></a>Запрос
 
@@ -158,7 +158,7 @@ Content-type: application/json
 ```
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 {
@@ -176,15 +176,15 @@ HTTP/1.1 200 OK
 }
 
 ```
-Чтобы обновить существующий объект **воркфорцеинтегратион** с свапрекуест, включенным для фильтрации допустимости, ознакомьтесь со статьей метод [Update](../api/workforceintegration-update.md) .
+Чтобы обновить существующий **объект workforceIntegration** с помощью swapRequest, включенного для фильтрации прав, см. в [методе Update.](../api/workforceintegration-update.md)
 
-### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример 3: получение подходящих смен при включении Свапрекуест в Елигибилитифилтеринженабледентитиес
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример 3. Получение подходящих сдвигов при включении SwapRequest в eligibilityFilteringEnabledEntities
 
-Конечные точки интеграции "взаимодействие между сменами приложения" и "ресурсы" будут соответствовать существующему шаблону.
+Взаимодействие между конечными точками интеграции shifts и рабочей силой будет следовать существующему шаблону.
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, сделанного сменам конечной точки интеграции сотрудников для получения подходящих смен для запроса на замену.
+Ниже приводится пример запроса shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -201,7 +201,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа от службы интеграции сотрудников.
+Ниже приводится пример ответа службы интеграции рабочей силы.
 ```
 HTTP/1.1 200 OK
 {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 59a3f2e590f8770abd8af3f70e302fda215bdade
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 55b34694abea4200c9801acd60ca5efed77b7935
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952881"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054793"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -54,7 +54,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|number|Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.|
-|values|(boolean или string or number) collection|Необязательный параметр. Двухмерный массив неформатных значений строк таблицы.|
+|values|(boolean или string or number) collection|Необязательное. Двухмерный массив неформатных значений строк таблицы.|
 
 ## <a name="response"></a>Отклик
 
@@ -96,7 +96,7 @@ Content-length: 51
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

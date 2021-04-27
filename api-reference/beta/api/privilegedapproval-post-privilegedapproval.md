@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: ef3581fef523f14d5f84bb0f1859795860624c45
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3b85324bc8468f0fd6c3c5963ab417ba8c6a9acb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442245"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055290"
 ---
 # <a name="create-privilegedapproval"></a>Создание privilegedApproval
 
@@ -40,7 +40,7 @@ POST /privilegedApproval
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [privilegedApproval.](../resources/privilegedapproval.md)
 
 ## <a name="response"></a>Отклик
@@ -91,7 +91,7 @@ Content-length: 180
 
 В теле запроса поставляем представление JSON объекта [privilegedApproval.](../resources/privilegedapproval.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

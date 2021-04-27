@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2593b2d80b6e457b81e6c1309c29eda97743c832
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 14756a59adbbc84aeacd885420f72b26c053c1aa
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133089"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055507"
 ---
 # <a name="get-outlook-category"></a>Получение категории Outlook
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories/de912e4d-c790-4
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

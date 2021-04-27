@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6cd0cd5a0e55bb95f0a99a189d05796242d08389
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04e9dc2b4b59e54087f9da612330d87849ac3ca6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968603"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054709"
 ---
 # <a name="create-calendar"></a>Создание объекта Calendar
 
@@ -85,7 +85,7 @@ Content-type: application/json
 
 Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

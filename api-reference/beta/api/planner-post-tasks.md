@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f23e2b82857de803add42415a2a91ed99e6725c0
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: ba187286f88b22cb7c945ad98a75cc1669ab9127
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473810"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055353"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
 
@@ -85,7 +85,7 @@ Content-length: 285
 
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON.
 ##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62d6dfbdf2e9025b3bdd0732b69b54e036045913
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5230ca00a63f3543b95ef4f2a1dc7242c5460a1b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957291"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055409"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Обновление phoneAuthenticationMethod
 
@@ -42,7 +42,7 @@ ms.locfileid: "50957291"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -75,8 +75,8 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Номера телефонов используют формат "+ \<country code\> \<number\> \<extension\> x", при этом расширение необязательно. Например, допустимы +1 5555551234 или +1 5555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
-|phoneType|string| Возможные значения: `mobile`, `alternateMobile` или `office`.|
+|phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Телефон номера используют формат "+ \<country code\> \<number\> \<extension\> x", с необязательным расширением. Например, допустимы +1 5555551234 или +1 5555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
+|phoneType|String| Возможные значения: `mobile`, `alternateMobile` или `office`.|
 
 ## <a name="response"></a>Отклик
 
@@ -124,9 +124,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
