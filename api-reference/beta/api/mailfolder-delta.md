@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f0105e2da5c625e99250d3f6c2e4d383090a6be3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7bd7dc88530476efecad48c5ba81d8bfa531df4f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128493"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049291"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -104,7 +104,7 @@ Prefer: odata.maxpagesize=2
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
