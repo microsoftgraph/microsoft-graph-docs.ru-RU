@@ -1,24 +1,24 @@
 ---
 title: Список приложений
-description: Получение списка объектов приложений, связанных с соединитетелемGroup.
+description: Извлечение списка объектов приложений, связанных с соединитетелемGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3a25be9468f43e0bcaf911980a4f5e41a1e537f7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 85b9e7eb24d880ea6fe82a7461bfec20594cee97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129977"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047177"
 ---
-# <a name="list-applications-assigned-to-a-connectorgroup"></a>Список приложений, которые назначены соединителиГруппе
+# <a name="list-applications-assigned-to-a-connectorgroup"></a>Список приложений, назначенных соединителиГруп
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [приложений,](../resources/application.md) связанных с [connectorGroup.](../resources/connectorgroup.md) Этот список содержит все приложения, которые назначены определенной группе соединитений.
+Получение списка объектов [приложений,](../resources/application.md) связанных с [соединителиГруп.](../resources/connectorgroup.md) Этот список содержит все приложения, заданной определенной группе соединитений.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer. Обязательна|
+| Authorization  | Носителер. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [приложения](../resources/application.md) в тексте отклика.
+В случае успешного применения этот метод возвращает код отклика и `200 OK` коллекцию объектов приложений в тексте [](../resources/application.md) отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

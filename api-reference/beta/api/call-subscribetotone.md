@@ -1,27 +1,27 @@
 ---
-title: 'Call: Субскрибетотоне'
-description: Подпишитесь на DTMF (многочастотный многочастотный сигнал). Это позволяет получать уведомления, когда пользователь нажимает клавиши в "Диалпад".
+title: 'вызов: subscribeToTone'
+description: Подписка на DTMF (двухтонная многочастотная сигнализация). Это позволяет вам быть уведомленным, когда пользователь нажимает клавиши на "Dialpad".
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e034dcb4783c13bdb5f74aef28fdce0558d8b634
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7fb6cbbea2ff3e90f7e0b9ed33b79666146e8ec5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959494"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047625"
 ---
-# <a name="call-subscribetotone"></a>Call: Субскрибетотоне
+# <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подпишитесь на DTMF (многочастотный многочастотный сигнал). Это позволяет получать уведомления, когда пользователь нажимает клавиши в "Диалпад".
+Подписка на DTMF (двухтонная многочастотная сигнализация). Это позволяет вам быть уведомленным, когда пользователь нажимает клавиши на "Dialpad".
 
 > [!Note]
-> Действие **субскрибетотоне** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).
+> Действие **subscribeToTone** поддерживается только [для](../resources/call.md) звонков, инициированных с помощью [serviceHostedMediaConfig.](../resources/servicehostedmediaconfig.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +32,7 @@ ms.locfileid: "48959494"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
 | Для приложений     | Calls.AccessMedia.All                       |
 
->**Примечание:** Все указанные данные тона могут быть не сохранены. Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
+>**Примечание:** Любые предоставленные данные тона могут не сохраняться. Убедитесь, что вы соответствуете законам и правилам вашей области в отношении защиты данных и конфиденциальности сообщений. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| Контекст  | String  | Уникальная строка контекста клиента. Может содержать до 256 символов. |
+| clientContext  | String  | Уникальная строка контекста клиента. Может иметь не более 256 символов. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
@@ -98,7 +98,7 @@ Content-Length: 46
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -120,9 +120,9 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 ```
 
 
-##### <a name="notification---tone-notification"></a>Уведомление о тоновом уведомлении
+##### <a name="notification---tone-notification"></a>Уведомление — уведомление о тоне
 
-В уведомлении содержится информация о нажатии тона в ресурсе [тонеинфо](../resources/toneinfo.md) .
+Уведомление содержит сведения о тоне, нажатом в [ресурсе toneinfo.](../resources/toneinfo.md)
 
 ```http
 POST https://bot.contoso.com/api/calls

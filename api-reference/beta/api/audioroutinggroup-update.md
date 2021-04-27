@@ -1,16 +1,16 @@
 ---
 title: Обновление группы маршрутизации звука
-description: Изменение источников и приемников Аудиораутингграуп.
+description: Изменение источников и приемников audioRoutingGroup.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9ca123ad39a307a67c5a91b542eab368dc988b85
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6e8bfe43529632988249206a0d84cc6e50e8324e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961568"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048010"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961568"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Изменение источников и приемников [аудиораутингграуп](../resources/audioroutinggroup.md).
+Изменение источников и приемников [audioRoutingGroup.](../resources/audioroutinggroup.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48961568"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls.IniТиатеграупкаллс. ALL |
+| Приложение     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,12 +47,12 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| приемники | Коллекция строк | Целевые участники в Аудиораутингграуп. |
-| раутингмоде | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция строк | Участник источника в Аудиораутингграуп. |
+| приемники | Коллекция объектов string | Целевые участники audioRoutingGroup. |
+| routingMode | String | Возможные значения: `oneToOne`, `multicast`. |
+| sources | Коллекция объектов string | Исходный участник в audioRoutingGroup. |
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

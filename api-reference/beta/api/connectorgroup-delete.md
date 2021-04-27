@@ -1,16 +1,16 @@
 ---
 title: Удаление connectorGroup
-description: Удаление соединителиГруппы.
+description: Удаление соединитеной группы.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d5ad43b789dff0abdc7cf938746e3b75dc5f4ad4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d08c319f16e3f2329a0f944c1b2d313395052990
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130138"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047191"
 ---
 # <a name="delete-connectorgroup"></a>Удаление connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130138"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [соединителиГруппы.](../resources/connectorgroup.md) Все [соединители](../resources/connector.md) и приложения должны быть удалены из группы соединители, прежде чем можно будет удалить группу соединитеителей.
+Удаление [соединителиГруп](../resources/connectorgroup.md). Все [соединители](../resources/connector.md) и приложения должны быть удалены из группы соединитеителей, прежде чем группа соединитеителей может быть удалена.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ DELETE /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer. Обязательна|
+| Authorization  | Носителер. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

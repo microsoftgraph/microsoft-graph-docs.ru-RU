@@ -1,16 +1,16 @@
 ---
 title: Список участников
-description: Получить список объектов соединитений, связанных с connectorGroup.
+description: Извлечение списка объектов соединитений, связанных с соединитетелемGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 540a08d9b5b586c00de0553285d17f38d1ba994d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5a910360321db251a783f945d0146038d287c06a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129578"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047163"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129578"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [соединитений,](../resources/connector.md) связанных с [connectorGroup.](../resources/connectorgroup.md)
+Извлечение списка [объектов соединители,](../resources/connector.md) связанных с [соединитетелемGroup.](../resources/connectorgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer. Обязательна|
+| Authorization  | Носителер. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [соединители](../resources/connector.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [соединителов](../resources/connector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

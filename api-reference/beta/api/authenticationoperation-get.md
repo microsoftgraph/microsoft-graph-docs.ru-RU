@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 800eb549222fda99592701ba28a85021289fee95
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4222931f4a3ee05f403291d5e762b67a9731a498
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438444"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047961"
 ---
 # <a name="get-authentication-operation"></a>Операция проверки подлинности
 
@@ -21,7 +21,7 @@ ms.locfileid: "50438444"
 Извлечение свойств и связей [объекта](../resources/operation.md) операции. В настоящее время эти операции создаются путем инициации сброса пароля с помощью метода [сброса](passwordauthenticationmethod-resetpassword.md) пароля. Объект операции сообщает звониму о текущем состоянии операции сброса пароля. Возможные состояния:
 
 * NotStarted
-* Выполняется
+* Работает
 * Succeeded
 * Не выполнено
 
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -106,9 +106,9 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

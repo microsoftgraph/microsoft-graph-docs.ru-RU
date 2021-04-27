@@ -1,16 +1,16 @@
 ---
 title: Добавление соединителю в connectorGroup
-description: Этот API используется для добавления соединителю в новый connectorGroup.
+description: Используйте этот API, чтобы добавить соединителю в новый соединителюGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d4d9b9b31eafa0906b704b7f1ff1929b1cf35055
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2b3f2b5cd8813455d6a072fcdd8fecc05974d548
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129606"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047198"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129606"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [соединителю](../resources/connector.md) в [connectorGroup.](../resources/connectorgroup.md)
+Добавьте [соединителю](../resources/connector.md) в [соединителюGroup.](../resources/connectorgroup.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,14 +37,14 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer. Обязательна|
+| Authorization  | Носителер. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажет представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
+В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект connectorGroup](../resources/connectorgroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -82,9 +82,9 @@ Content-length: 99
 
 ---
 
-В теле запроса укажет представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
+В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

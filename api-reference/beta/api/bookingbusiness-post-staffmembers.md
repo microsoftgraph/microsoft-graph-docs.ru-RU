@@ -1,30 +1,30 @@
 ---
-title: Создание Букингстаффмембер
-description: Создайте новый сотрудник в заданном букингбусинесс.
+title: Создание bookingStaffMember
+description: Создание нового сотрудника в указанном bookingbusiness.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 95319f368550b37b3a2fa20bd4688df7b4ff15eb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e92b3cc416d3cfe462c65da35f8bb4dd6d2e6b50
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960656"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047856"
 ---
-# <a name="create-bookingstaffmember"></a>Создание Букингстаффмембер
+# <a name="create-bookingstaffmember"></a>Создание bookingStaffMember
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [сотрудник](../resources/bookingstaffmember.md) в заданном [букингбусинесс](../resources/bookingbusiness.md).
+Создание нового [сотрудника в](../resources/bookingstaffmember.md) указанном [bookingbusiness](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Резервирования. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -40,15 +40,15 @@ POST /bookingBusinesses/{id}/staffMembers
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [букингстаффмембер](../resources/bookingstaffmember.md) в формате JSON. Необходимо включить следующие свойства:
+В теле запроса указать JSON-представление [объекта bookingStaffMember.](../resources/bookingstaffmember.md) Необходимо включить следующие свойства:
 
 - **displayName**
 - **emailAddress**
-- **ролей**
+- **роль**
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [букингстаффмембер](../resources/bookingstaffmember.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201, Created` [объект bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -160,9 +160,9 @@ Content-length: 309
 
 ---
 
-В тексте запроса добавьте представление объекта [букингстаффмембер](../resources/bookingstaffmember.md) в формате JSON.
+В теле запроса указать JSON-представление [объекта bookingStaffMember.](../resources/bookingstaffmember.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

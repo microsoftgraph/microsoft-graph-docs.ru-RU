@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 75d1264371487adf4aaeca902eee860744b6f715
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 73f9e8359640efa733371b9dd04ba4be6491937a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957112"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047100"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "48957112"
 
 Получение папки контактов с помощью ее идентификатора.
 
-Существует два сценария, в которых приложение может получить папку контактов другого пользователя:
+Существует два сценария, в которых приложение может получить контактную папку другого пользователя:
 
 * У приложения есть разрешения для приложений; или
 * У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой контактов или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-contacts-folders).
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

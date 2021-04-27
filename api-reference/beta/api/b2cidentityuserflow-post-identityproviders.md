@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 8b2fa14fec9ea77cc017c51445ee1224a3656ded
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 4c6dcfc7dc1dce6866585b789539c17099eb8214
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625744"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047968"
 ---
 # <a name="add-identityprovider-to-a-b2cidentityuserflow"></a>Добавление identityProvider в b2cIdentityUserFlow
 
@@ -33,14 +33,14 @@ ms.locfileid: "50625744"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identity/b2cUserFlows/{id}/identityProviders/$ref
+POST /identity/b2cUserFlows/{id}/identityProviders/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -56,7 +56,7 @@ PATCH /identity/b2cUserFlows/{id}/identityProviders/$ref
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 
@@ -73,7 +73,7 @@ PATCH /identity/b2cUserFlows/{id}/identityProviders/$ref
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -112,5 +112,3 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

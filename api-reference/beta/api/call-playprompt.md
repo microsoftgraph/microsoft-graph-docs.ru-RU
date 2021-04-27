@@ -1,29 +1,29 @@
 ---
-title: 'Call: Плайпромпт'
-description: Проигрывать запрос в вызове.
+title: 'вызов: playPrompt'
+description: Воспроизведения запроса в вызове.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: adf46f91bba84940e7ae7632d7e6ae804be9b1e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6bfd7aa2cf7392a4abd16b339d31f58f9e64aff
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959640"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047646"
 ---
-# <a name="call-playprompt"></a>Call: Плайпромпт
+# <a name="call-playprompt"></a>вызов: playPrompt
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проигрывать запрос в вызове.
+Воспроизведения запроса в вызове.
 
-Дополнительные сведения об обработке операций можно найти в статье [коммсоператион](../resources/commsoperation.md)
+Дополнительные сведения об обработке операций см. в [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
-> Действие **плайпромпт** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).
+> Действие **playPrompt поддерживается** только [для](../resources/call.md) вызовов, инициированных с помощью [serviceHostedMediaConfig.](../resources/servicehostedmediaconfig.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +32,7 @@ ms.locfileid: "48959640"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Нет.                                        |
+| Для приложений                            | Отсутствуют.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,12 +53,12 @@ POST /communications/calls/{id}/playPrompt
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|выдан|Коллекция [медиапромпт](../resources/mediaprompt.md)| Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.|
-|CNAME|Логический| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
-|Контекст|String|Уникальная строка контекста клиента. Может содержать до 256 символов.|
+|подсказки|[Коллекция MediaPrompt](../resources/mediaprompt.md)| Подсказки для игры. Максимальный поддерживаемый размер коллекции mediaPrompt — 20.|
+|цикл|Логический| Значение цикла. True указывает на бесконечное циклику. Значение по умолчанию  false. |
+|clientContext|String|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект playPromptOperation](../resources/playpromptoperation.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -112,9 +112,9 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -134,9 +134,9 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
+##### <a name="notification---operation-completed"></a>Уведомление — операция завершена
 
- >**Примечание:** При возникновении бесконечного цикла это уведомление не отправляется.
+ >**Примечание:** Если происходит бесконечный цикл, это уведомление не отправляется.
  
 ```http
 POST https://bot.contoso.com/api/calls

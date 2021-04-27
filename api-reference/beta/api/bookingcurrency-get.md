@@ -1,31 +1,31 @@
 ---
-title: Получение Букингкурренци
-description: Получение свойств объекта Букингкурренци, доступного для корпоративных книг корпорации Майкрософт.
+title: Получить bookingCurrency
+description: Получите свойства объекта bookingCurrency, доступного для бизнеса Microsoft Bookings.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c27065ab0e799fdfa78e1ef46cd6bbfee70d5958
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6702d108c3b705749021ad79d7e9fe6ceb944b1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960542"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047842"
 ---
-# <a name="get-bookingcurrency"></a>Получение Букингкурренци
+# <a name="get-bookingcurrency"></a>Получить bookingCurrency
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств объекта [букингкурренци](../resources/bookingcurrency.md) , доступного для корпоративных книг корпорации Майкрософт. Чтобы указать валюту, используйте свойство **ID** , которое является кодом валюты.
+Получите свойства объекта [bookingCurrency,](../resources/bookingcurrency.md) доступного для бизнеса Microsoft Bookings. Чтобы указать валюту, используйте свойство **id,** которое является кодом валюты.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -45,7 +45,7 @@ GET /bookingCurrencies/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [букингкурренци](../resources/bookingcurrency.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект bookingCurrency](../resources/bookingcurrency.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

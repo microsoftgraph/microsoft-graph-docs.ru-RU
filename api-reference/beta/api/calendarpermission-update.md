@@ -1,22 +1,22 @@
 ---
-title: Обновление календарпермиссион
-description: Обновление свойств объекта календарпермиссион.
+title: Обновление календарной комиссии
+description: Обновление свойств объекта calendarpermission.
 localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0d151245252cb47503c92ab5d1c210db4f65736c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 116352b351d66bdc2c413eb1aad9357407d25631
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959843"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047681"
 ---
-# <a name="update-calendarpermission"></a>Обновление Календарпермиссион
+# <a name="update-calendarpermission"></a>Обновление calendarPermission
 
 Пространство имен: microsoft.graph
 
-Обновление разрешений, назначенных существующему общему ресурсу или представителю, с помощью соответствующего объекта [календарпермиссион](../resources/calendarpermission.md) для календаря.
+Обновление разрешений, присвоенных существующему sharee или делегированию, с помощью соответствующего [объекта calendarPermission](../resources/calendarpermission.md) для календаря.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,19 +29,19 @@ ms.locfileid: "48959843"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Обновление указанных разрешений для календаря пользователя:
+Обновление указанных разрешений календаря пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Обновление указанных разрешений для календаря группы:
+Обновление указанных разрешений группового календаря:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-Обновление указанных разрешений для календаря пользователя, содержащего идентифицированное событие:
+Обнови указанные разрешения пользовательского календаря, который содержит указанное событие:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
@@ -51,7 +51,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,17 +59,17 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|role|[календарролетипе](../resources/calendarpermission.md#calendarroletype-values)| Уровень разрешений, на который изменяется общий доступ к календарю или представитель. |
+|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| Уровень разрешений для изменения для обмена календарем или делегирования. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [календарпермиссион](../resources/calendarpermission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект calendarPermission](../resources/calendarpermission.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В следующем примере изменяется уровень разрешений для объекта Share, Александра, на `write` .
+В следующем примере изменяется уровень разрешений sharee, Adele, на `write` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -107,9 +107,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

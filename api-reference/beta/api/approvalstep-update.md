@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b8ef436a9319e7a670e0aa5bdc728b39b53c2709
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0fe071b58709a7816a4ffd9c82627542c1905243
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942524"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048045"
 ---
 # <a name="update-approvalstep"></a>Обновление approvalStep
 
@@ -42,7 +42,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,8 +50,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| reviewResult | Строка | Решение утвержденного. Возможные значения: `Approve`, `Deny`.|
-| обоснование | Строка | Обоснование, связанное с решением утвержденного. |
+| reviewResult | String | Решение утвержденного. Возможные значения: `Approve`, `Deny`.|
+| обоснование | String | Обоснование, связанное с решением утвержденного. |
 
 
 ## <a name="response"></a>Отклик
@@ -85,9 +85,9 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

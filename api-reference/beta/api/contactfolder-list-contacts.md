@@ -1,16 +1,16 @@
 ---
 title: Список контактов
-description: Получение всех контактов в почтовом ящике вошедшего пользователя (. ../ме/контактс) или из указанной папки контактов.
+description: Получите все контакты в почтовом ящике подписанного пользователя (.../me/contacts) или в указанной папке контактов.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 176a7834206944e8da1f9e6c58cdb95cd3021e18
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0cda56fb840d7a09ec5ad36614effe0e5564bc8b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957089"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047086"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957089"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех контактов в почтовом ящике вошедшего пользователя (. ../ме/контактс) или из указанной папки контактов.
+Получите все контакты в почтовом ящике подписанного пользователя (.../me/contacts) или в указанной папке контактов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

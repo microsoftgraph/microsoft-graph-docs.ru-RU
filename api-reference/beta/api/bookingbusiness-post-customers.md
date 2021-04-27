@@ -1,30 +1,30 @@
 ---
-title: Создание Букингкустомер
-description: Создание нового объекта Букингкустомер.
+title: Создание bookingCustomer
+description: Создайте новый объект bookingCustomer.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a8e89c3b33acbb69a34e66cb55be2d271a9c0cbf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5206c6969f2a0f9504cfecd347e7e215577caae1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960700"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047870"
 ---
-# <a name="create-bookingcustomer"></a>Создание Букингкустомер
+# <a name="create-bookingcustomer"></a>Создание bookingCustomer
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [букингкустомер](../resources/bookingcustomer.md) .
+Создайте новый [объект bookingCustomer.](../resources/bookingcustomer.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -40,11 +40,11 @@ POST /bookingBusinesses/{id}/customers
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [букингкустомер](../resources/bookingcustomer.md) в формате JSON.
+В теле запроса указать JSON-представление [объекта bookingCustomer.](../resources/bookingcustomer.md)
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [букингкустомер](../resources/bookingcustomer.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201, Created` [объект bookingCustomer](../resources/bookingcustomer.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -82,9 +82,9 @@ Content-type: application/json
 
 ---
 
-В тексте запроса добавьте представление объекта [букингкустомер](../resources/bookingcustomer.md) в формате JSON.
+В теле запроса указать JSON-представление [объекта bookingCustomer.](../resources/bookingcustomer.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

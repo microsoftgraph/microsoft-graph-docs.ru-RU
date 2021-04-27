@@ -5,12 +5,12 @@ description: Получить пакет driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8a3d74c5f4b746d6232bc39a9be7e82c5119d497
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b6f1619bbb169a92841d3999c43603860c0038fd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472750"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047793"
 ---
 # <a name="get-bundle"></a>Получить пакет
 
@@ -48,7 +48,7 @@ GET /drive/items/{bundle-id}
 | Имя          | Описание  |
 |:------------- |:------------ |
 | Авторизация | Носитель \{токен\}. Обязательный. |
-| if-none-match | eTag. Необязательно. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
+| if-none-match | eTag. Необязательное. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 ### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>Пример 2. Получить пакет и его детей в одном вызове
 
@@ -176,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 
 [bundle]: ../resources/bundle.md
@@ -190,7 +190,7 @@ Content-Type: application/json
   "description": "Retrieve metadata about a bundle and its children in OneDrive",
   "keywords": "retrieve,item,bundle,metadata",
   "section": "documentation",
-  "tocPath": "Bundles/Get Bundle Metadata"
+  "tocPath&quot;: &quot;Bundles/Get Bundle Metadata"
 } -->
 
 

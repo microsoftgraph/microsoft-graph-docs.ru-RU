@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 29b90fba024d97ceecfd4fe72f37a72de6f7fb8a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 69f6fe740b0e0377f73eedbef681589da2ffe56e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129214"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048122"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129214"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка владельцев приложения, которое является [объектами directoryObject.](../resources/directoryobject.md)
+Получение списка владельцев для приложения, которое [является объектами directoryObject.](../resources/directoryobject.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/applications/{id}/owners
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Создание connectorGroup
-description: Используйте этот API для создания соединителиGroup.
+description: Используйте этот API для создания нового соединитетеляGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 07adf13a703868eb1ec77bf67325d6a8eef45ebf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: dd11c3b86bc2e4036f56b3bd5d83f426fab0e1bd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129984"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047156"
 ---
 # <a name="create-connectorgroup"></a>Создание connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129984"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [соединителиГруппы.](../resources/connectorgroup.md)
+Создайте [новый соединитекторGroup](../resources/connectorgroup.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,14 +38,14 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer. Requried|
+| Authorization  | Носителер. Requried|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
+В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `201 Created` [объект connectorGroup](../resources/connectorgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект connectorGroup](../resources/connectorgroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -84,9 +84,9 @@ Content-length: 99
 
 ---
 
-В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
+В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

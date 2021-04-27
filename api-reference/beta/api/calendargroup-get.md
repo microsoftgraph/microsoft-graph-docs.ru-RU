@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3f45c6314a52074123657bc3d17e23e1e84b94f9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7288e5e96c4a32464d6e8a2574cd356f26d5c462
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959970"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047716"
 ---
 # <a name="get-calendargroup"></a>Получение объекта calendarGroup
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

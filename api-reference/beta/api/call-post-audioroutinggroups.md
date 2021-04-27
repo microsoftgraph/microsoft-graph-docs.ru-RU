@@ -1,16 +1,16 @@
 ---
 title: Создание группы маршрутизации звука
-description: Создание нового **аудиораутингграуп**.
+description: Создание новой **audioRoutingGroup**.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9dc787e7dc5c4339319c46f66f94ba7845c443d9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f4c7cbc969b676db6786bf0d708e92381fd4cecf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959606"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047632"
 ---
 # <a name="create-audio-routing-group"></a>Создание группы маршрутизации звука
 
@@ -18,7 +18,7 @@ ms.locfileid: "48959606"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового **аудиораутингграуп**.
+Создание новой **audioRoutingGroup**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48959606"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls.IniТиатеграупкаллс. ALL |
+| Для приложений                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,14 +43,14 @@ POST /communications/calls/{id}/audioRoutingGroups
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
+В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup.](../resources/audioroutinggroup.md)
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-one-to-one-audio-routing-group"></a>Пример 1: "одна к одной группе маршрутизации аудио"
+### <a name="example-1-one-to-one-audio-routing-group"></a>Пример 1. Группа маршрутизания звука один к одному
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -96,11 +96,11 @@ Content-Length: 233
 ---
 
 
-В тексте запроса добавьте представление объекта [аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
+В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup.](../resources/audioroutinggroup.md)
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -123,7 +123,7 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a>Пример 2: multicast Аудиораутингграуп
+### <a name="example-2-multicast-audioroutinggroup"></a>Пример 2. Многоуровневая аудионастройкаGroup
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -154,11 +154,11 @@ Content-Length: 233
 }
 ```
 
-В тексте запроса добавьте представление объекта [аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
+В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup.](../resources/audioroutinggroup.md)
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

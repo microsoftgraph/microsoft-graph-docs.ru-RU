@@ -1,30 +1,30 @@
 ---
-title: Обновление букингбусинесс
-description: Обновление свойств объекта Букингбусинесс.
+title: Обновление bookingbusiness
+description: Обновление свойств объекта bookingBusiness.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 734813632a17a8bb478c4438ece7c6a5b74946f6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 767d4b3a355c74f6941bd9d9d20579e1c0dcda23
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960558"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047849"
 ---
-# <a name="update-bookingbusiness"></a>Обновление букингбусинесс
+# <a name="update-bookingbusiness"></a>Обновление bookingbusiness
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [букингбусинесс](../resources/bookingbusiness.md) .
+Обновление свойств объекта [bookingBusiness.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Резервирования. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -43,21 +43,21 @@ PATCH /bookingBusinesses/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|Адрес в почтовом ящике организации.|
-|businessHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Количество часов работы для бизнеса.|
-|бусинесстипе|String|Тип бизнеса.|
-|дефаулткурренциисо|String|Код валюты, в которой работает предприятие, в Microsoft Books.|
-|displayName|String|Название организации, которая взаимодействует с клиентами.|
+|address|[physicalAddress](../resources/physicaladdress.md)|Адрес улицы бизнеса.|
+|businessHours|[коллекция bookingWorkHours](../resources/bookingworkhours.md)|Часы работы для бизнеса.|
+|businessType|String|Тип бизнеса.|
+|defaultCurrencyIso|String|Код валюты, в которую бизнес работает в Microsoft Bookings.|
+|displayName|String|Имя для бизнеса, который взаимодействует с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
-|счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
-|вебситеурл|String|URL-адрес веб-сайта компании.|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать заказы для этого бизнеса.|
+|webSiteUrl|String|URL-адрес веб-сайта бизнеса.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере показано, как обновить адрес электронной почты и политику планирования, чтобы изменить период резервирования по умолчанию для бизнеса на час, а затем выполнить резервное резервирование в течение 30 дней.
+В следующем примере обновляется бизнес-адрес электронной почты и политика планирования, чтобы изменить интервал времени бронирования по умолчанию для бизнеса на час, а также предварительное бронирование до 30 дней.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

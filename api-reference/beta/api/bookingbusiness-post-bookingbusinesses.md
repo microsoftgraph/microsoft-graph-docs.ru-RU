@@ -1,26 +1,26 @@
 ---
-title: Создание Букингбусинесс
-description: Создайте новую бизнес-деятельность Майкрософт в клиенте.
+title: Создание bookingBusiness
+description: Создание нового бизнеса Microsoft Bookings в клиенте.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0dca36dd9c07eee0f3c91d0a5c25251672a400fa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 251d1b6d5e73b646216bdb152289808e93882d38
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960705"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047884"
 ---
-# <a name="create-bookingbusiness"></a>Создание Букингбусинесс
+# <a name="create-bookingbusiness"></a>Создание bookingBusiness
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новую бизнес-деятельность Майкрософт в клиенте.
+Создание нового бизнеса Microsoft Bookings в клиенте.
 
-Это первый шаг при настройке учета для бизнеса, в котором необходимо указать отображаемое имя. Вы можете включить другие сведения, такие как рабочий адрес, адрес веб-сайта и политика планирования, или задать эту информацию позже [updating](bookingbusiness-update.md) , обновив **букингбусинесс**.
+Это первый шаг в настройке бизнеса Bookings, в котором необходимо указать имя бизнес-отображения. Вы можете включить другие сведения, такие как бизнес-адрес, адрес веб-сайта [](bookingbusiness-update.md) и политику планирования, или установить эту информацию позже, обновив **bookingBusiness.**
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -42,11 +42,11 @@ POST /bookingBusinesses
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [букингбусинесс](../resources/bookingbusiness.md) в формате JSON.
+В теле запроса указать JSON-представление [объекта bookingBusiness.](../resources/bookingbusiness.md)
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201, Created` [объект bookingBusiness](../resources/bookingbusiness.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -96,9 +96,9 @@ Content-type: application/json
 
 ---
 
-В тексте запроса добавьте представление объекта [букингбусинесс](../resources/bookingbusiness.md) в формате JSON.
+В теле запроса указать JSON-представление [объекта bookingBusiness.](../resources/bookingbusiness.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

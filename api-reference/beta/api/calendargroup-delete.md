@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 60d5455493bcfce5bf2794449f67335e00af1f3e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4de731bf72ebd91ec39132c6bd371f2efb5468a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959984"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047723"
 ---
 # <a name="delete-calendargroup"></a>Удаление объекта calendarGroup
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/me/calendarGroups/{id}
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

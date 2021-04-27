@@ -1,22 +1,22 @@
 ---
-title: Получение Календарпермиссион
-description: Получение свойств и связей объекта календарпермиссион.
+title: Get calendarPermission
+description: Получите свойства и связи объекта calendarpermission.
 localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b2cc187eea605ef1b5bcbdb257705cd1b729756b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e6286ec91e3ef75cf9ae5d35992a8794392d2ede
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959863"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047688"
 ---
-# <a name="get-calendarpermission"></a>Получение Календарпермиссион
+# <a name="get-calendarpermission"></a>Get calendarPermission
 
 Пространство имен: microsoft.graph
 
-Получение указанного объекта разрешений для календаря пользователя или группы, к которому предоставлен общий доступ.
+Получите указанный объект разрешений пользователя или группового календаря, который был общим.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,19 +29,19 @@ ms.locfileid: "48959863"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Получение указанных разрешений для основного календаря пользователя:
+Получите указанные разрешения основного календаря пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Получение указанных разрешений для календаря группы:
+Получите указанные разрешения группового календаря:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-Получение указанных разрешений для календаря пользователя, содержащего идентифицированное событие:
+Получите указанные разрешения пользовательского календаря, который содержит указанное событие:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
@@ -55,7 +55,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -63,7 +63,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [календарпермиссион](../resources/calendarpermission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [calendarPermission](../resources/calendarpermission.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -101,9 +101,9 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

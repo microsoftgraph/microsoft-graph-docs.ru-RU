@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 17f4a087d548ae06b69430c3ca442ead5ac38625
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5bb2acdcc76b26aac6ebd851359a4c85a0441015
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128990"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048073"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Получение applicationSignInDetailedSummary
 
@@ -49,7 +49,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) в тексте отклика.
+В случае успешного применения этот метод возвращает код ответа и объект `200 OK` [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -84,9 +84,9 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

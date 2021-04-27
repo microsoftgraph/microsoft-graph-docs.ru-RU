@@ -5,12 +5,12 @@ description: Обновление пакета driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5c27690f146924db2ade4baf8539a4973aa01ce2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7b6cd4001acd674d265748e24638c2bca5454967
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471525"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047779"
 ---
 # <a name="update-bundle"></a>Пакет обновления
 
@@ -49,7 +49,7 @@ PATCH /drive/items/{bundle-id}
 | Имя          | Описание  |
 |:------------- |:------------ |
 | Авторизация | Носитель \{токен\}. Обязательный. |
-| if-match      | eTag. Необязательно. Если этот загон запроса включен, а предоставленный eTag не соответствует текущему eTag на койке, `412 Precondition Failed` возвращается ответ.
+| if-match      | eTag. Необязательное. Если этот загон запроса включен, а предоставленный eTag не соответствует текущему eTag на койке, `412 Precondition Failed` возвращается ответ.
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 
 [bundle]: ../resources/bundle.md
@@ -127,7 +127,7 @@ Content-Type: application/json
   "description": "Update or replace the contents or properties of a bundle.",
   "keywords": "update,replace,contents,bundle",
   "section": "documentation",
-    "tocPath": "Bundles/Update"
+    "tocPath&quot;: &quot;Bundles/Update"
 } -->
 
 
