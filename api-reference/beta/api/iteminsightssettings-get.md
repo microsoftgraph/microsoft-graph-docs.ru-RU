@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 15ad2ffc4a110fd0357118b4578b56bb9060d72a
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: dfec7c1ea7ed8befcf3480a2efadd6dfcfaa3451
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031074"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038483"
 ---
 # <a name="get-iteminsightssettings"></a>Get itemInsightsSettings
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 ##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
-> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

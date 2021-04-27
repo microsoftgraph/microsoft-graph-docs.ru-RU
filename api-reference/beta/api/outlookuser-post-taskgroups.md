@@ -1,18 +1,18 @@
 ---
 title: Создание outlookTaskGroup
-description: Создайте группу задач Outlook в почтовом ящике пользователя.
+description: Создайте Outlook группу задач в почтовом ящике пользователя.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fd26a2853dcf69a12027fc6fb17fce84a2faecd0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cef21d441ba20c1bc97f7e4bf2e4f1c922d1f9c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971589"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038000"
 ---
-# <a name="create-outlooktaskgroup-deprecated"></a>Создание outlookTaskGroup (устаревшее)
+# <a name="create-outlooktaskgroup-deprecated"></a>Создание outlookTaskGroup (амортизации)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48971589"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Создайте группу задач Outlook в почтовом ящике пользователя.
+Создайте Outlook группу задач в почтовом ящике пользователя.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -43,11 +43,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [outlookTaskGroup](../resources/outlooktaskgroup.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [OutlookTaskGroup.](../resources/outlooktaskgroup.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект OutlookTaskGroup](../resources/outlooktaskgroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -85,9 +85,9 @@ Content-length: 40
 
 ---
 
-В тексте запроса добавьте представление объекта [outlookTaskGroup](../resources/outlooktaskgroup.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [OutlookTaskGroup.](../resources/outlooktaskgroup.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Обновление inferenceClassificationOverride
-description: 'Измените **поле classifyAs** переопределения focused inbox, как указано. '
+description: 'Измените **поле classifyAs** переопределения сфокусированного почтового ящика, как указано. '
 localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 9195466b1ea09b9b0dde4c00a057d95548184edf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 655be2a14ca6948bcb76bda02c1aaca43c5ad09b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130328"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040520"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Обновление inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130328"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Измените **поле classifyAs** переопределения [focused inbox,](../resources/manage-focused-inbox.md) как указано.
+Измените **поле classifyAs** переопределения сфокусированного почтового ящика, как указано. [](../resources/manage-focused-inbox.md)
 
 Вы не можете использовать операцию PATCH, чтобы менять поля в экземпляре [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).
 
@@ -95,7 +95,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

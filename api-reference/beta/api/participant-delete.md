@@ -6,12 +6,12 @@ author: jackry6350
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3fd701f9fb346a86c93359cdaa1a360c9b484223
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1ee50cd399b974b80fcb80ad514bbf3423c0471e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50769364"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037876"
 ---
 # <a name="delete-participant"></a>Удаление участника
 
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 
 ### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

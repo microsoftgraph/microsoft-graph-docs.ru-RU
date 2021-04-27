@@ -1084,7 +1084,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4587,7 +4587,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4858,7 +4858,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5241,7 +5241,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -5925,10 +5925,14 @@ items:
                 href: api/table-list-rows.md
               - name: Создание строки
                 href: api/table-post-rows.md
+              - name: Удаление строки
+                href: api/tablerow-delete.md
               - name: Перечисление столбцов
                 href: api/table-list-columns.md
               - name: Создание столбца
                 href: api/table-post-columns.md
+              - name: Удаление столбца
+                href: api/tablecolumn-delete.md
               - name: Получение диапазона
                 href: api/table-range.md
           - name: Диаграмма

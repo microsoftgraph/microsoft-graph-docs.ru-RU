@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 486d99db01c2efbbc0ff295730cf248aaffb643a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 07de9e0bb9d8992811b64a8fe19685a2a329a8c1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130741"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040611"
 ---
 # <a name="list-overrides"></a>Список переопределений
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130741"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [переопределения](../resources/manage-focused-inbox.md) отправляемой почты, которые пользователь настроил так, чтобы всегда классифицировать сообщения от определенных отправителей определенными способами.
+Получите [переопределения](../resources/manage-focused-inbox.md) сфокусированных почтовых ящиков, которые пользователь настроил, чтобы всегда классифицировать сообщения определенных отправителей определенными способами.
 
 Каждое переопределение соответствует SMTP-адресу отправителя. Изначально у пользователя нет переопределений.
 ## <a name="permissions"></a>Разрешения
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

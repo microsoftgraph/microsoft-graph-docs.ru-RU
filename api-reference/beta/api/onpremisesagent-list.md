@@ -1,16 +1,16 @@
 ---
 title: Список onPremisesAgents
-description: Получить список onPremisesAgents.
+description: Извлечение списка onPremisesAgents.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0699b9fddec71f312963375f25feb9d6ab669989
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8416b61583442017f3b1c14f2497d42bcbb9932e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136481"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038189"
 ---
 # <a name="list-onpremisesagents"></a>Список onPremisesAgents
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136481"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [onPremisesAgent.](../resources/onpremisesagent.md)
+Извлечение списка [объектов onPremisesAgent.](../resources/onpremisesagent.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agents
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agents
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,9 +92,9 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

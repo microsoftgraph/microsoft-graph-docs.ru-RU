@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 46fdfc7ad1cfd798ecaf8685e1473da09701c1c1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2477924e69cf83bc15f440956de76bc3cdd4347b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960949"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040415"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -46,7 +46,7 @@ ms.locfileid: "50960949"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Для приложений                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,7 +62,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
-| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -71,7 +71,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | Параметр             | Тип                                                                    | Описание                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Содержит сведения о формате контента, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в качестве пар ключей и значений.                                                                                                                                                   |
-| classificationResults | [коллекция classificationResult](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемого конечной точкой классификации данных. Сведения о классификации используются для определения соответствующей метки на основе конфигурации метки политики защиты информации Майкрософт в Центре безопасности и соответствия требованиям Office 365. |
+| classificationResults | [коллекция classificationResult](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемого конечной точкой классификации данных. Сведения о классификации используются для определения соответствующей метки на основе конфигурации метки политики защиты информации Майкрософт в центре Office 365 безопасности и соответствия требованиям. |
 
 ## <a name="response"></a>Отклик
 
@@ -135,9 +135,9 @@ User-agent: ContosoLOBApp/1.0
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

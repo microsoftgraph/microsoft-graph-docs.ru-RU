@@ -1,16 +1,16 @@
 ---
 title: Получение участника
-description: Получение свойств и связей объекта **участника** .
+description: Извлечение свойств и связей **объекта-участника.**
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 68d385a70ee359ccdf5307a70f557e75a82a1e37
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 928809a53cb85cf46a5d2b8dd352303dbb448b91
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523828"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037888"
 ---
 # <a name="get-participant"></a>Получение участника
 
@@ -18,15 +18,15 @@ ms.locfileid: "49523828"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта **участника** .
+Извлечение свойств и связей **объекта-участника.**
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Нет                                        |
+| Для приложений     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /communications/calls/{id}/participants/{id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [участника](../resources/participant.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [участника](../resources/participant.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

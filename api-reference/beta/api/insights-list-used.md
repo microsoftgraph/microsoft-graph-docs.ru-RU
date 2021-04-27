@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: b29089bf5cfe87ad0aede192a1c89430fc51b5e6
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 21c8306a67532313eef397235e8d1c8ed600b6bb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473229"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040240"
 ---
 # <a name="list-used"></a>Список "Использованные"
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/me/insights/used
 
 #### <a name="response"></a>Отклик
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,

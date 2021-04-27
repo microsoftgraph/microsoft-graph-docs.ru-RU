@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 8cf1e651e42dbff4c588f9cd9d2ea5e1ead1256c
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 5a790c23a0e3cee09079beb5b51151610f309dad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473236"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040247"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. В нижней части страницы см. пример не усеченного ответа.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В нижней части страницы см. пример не усеченного ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,

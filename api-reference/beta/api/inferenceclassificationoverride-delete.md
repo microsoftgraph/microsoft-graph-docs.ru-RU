@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта inferenceClassificationOverride
-description: Удаление переопределения "Отсвеченной почты", указанного по его ИД.
+description: Удаление переопределения "Сфокусированный почтовый ящик", указанного в его ID.
 localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 05d6f669faec8f701948546707d3aa7187af4a20
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cc10472cf6bfe4dfc31573be4dc0dd776600aa0f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130685"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040597"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Удаление объекта inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130685"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [переопределения](../resources/manage-focused-inbox.md) "Отсвеченной почты", указанного по его ИД.
+Удаление [переопределения](../resources/manage-focused-inbox.md) "Сфокусированный почтовый ящик", указанного в его ID.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

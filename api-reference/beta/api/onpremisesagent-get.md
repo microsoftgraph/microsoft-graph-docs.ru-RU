@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f91b5023d4b45d5ea097e6b09ba9b38eef88561c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 034ab82730afe99ef547d496d7addca1b503387d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136530"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038219"
 ---
 # <a name="get-onpremisesagent"></a>Get onPremisesAgent
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136530"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [onPremisesAgent.](../resources/onpremisesagent.md)
+Извлечение свойств и связей [объекта onPremisesAgent.](../resources/onpremisesagent.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGr
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGr
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [onPremisesAgent](../resources/onpremisesagent.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект onPremisesAgent](../resources/onpremisesagent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,9 +92,9 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

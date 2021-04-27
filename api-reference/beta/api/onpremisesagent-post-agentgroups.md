@@ -1,18 +1,18 @@
 ---
-title: Назначение onPremisesAgent для onPremisesAgentGroup
-description: Назначьте onPremisesAgent onPremisesAgentGroup.
+title: Назначение onPremisesAgent onPremisesAgentGroup
+description: Назначение onPremisesAgent для onPremisesAgentGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6e4899885573abebda0f5dfb23bdadf852673c02
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3ab4e1ed97dec2968bfac63c38d6f2044d4dfc21
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136428"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038168"
 ---
-# <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Назначение onPremisesAgent для onPremisesAgentGroup
+# <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Назначение onPremisesAgent onPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
@@ -42,15 +42,15 @@ POST /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$re
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса предопустим представление ссылки OData в JSON для объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+В теле запроса предоставляем JSON-представление ссылки OData на объект [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый объект `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-В теле запроса предоставляем ссылку OData в JSON на объект [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+В теле запроса предоставляем JSON-представление ссылки OData на [объект onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ```http
 {
@@ -88,9 +88,9 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

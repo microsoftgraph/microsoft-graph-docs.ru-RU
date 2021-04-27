@@ -1,16 +1,16 @@
 ---
 title: Создание параметра каталога для групп
-description: Используйте этот API, чтобы создать новый параметр каталога для группы.
+description: Используйте этот API для создания нового параметра каталога для группы.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9cb569ae63a5ee1b993166765c5ef5446fc70d1a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4204478494dc02bb2013e95c6952f9b2bef166af
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002015"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041178"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Создание параметра каталога для групп
 
@@ -18,7 +18,7 @@ ms.locfileid: "48002015"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый параметр каталога для группы.
+Используйте этот API для создания нового параметра каталога для группы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,14 +36,14 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Обязательно|
+| Authorization  | Bearer <token>. Обязательна|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -82,9 +82,9 @@ Content-length: 222
 
 ---
 
-В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
