@@ -1,24 +1,24 @@
 ---
-title: Создание Персонинтерест
-description: Создание нового Персонинтерест.
+title: Создание personInterest
+description: Создайте новый personInterest.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: People
 doc_type: apiPageType
-ms.openlocfilehash: 156e9f6cef6c0b0f6e9def42fc4d2417706e426b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e4f5648901ff1ed904d5e02fa278b6b9be329de8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975379"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036928"
 ---
-# <a name="create-personinterest"></a>Создание Персонинтерест
+# <a name="create-personinterest"></a>Создание personInterest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [Персонинтерест] (.. /ресаурцес/персонинтерест.МД] в [профиле](../resources/profile.md)пользователя.
+Создание нового [personInterest].. /resources/personinterest.md] в профиле [пользователя](../resources/profile.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48975379"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/interests
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [персонинтерест](../resources/personinterest.md) в формате JSON.
+В теле запроса поставляют представление JSON объекта [personInterest.](../resources/personinterest.md)
 
-В следующей таблице приведены свойства, которые можно задать в новом объекте [персонинтерест](../resources/personinterest.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить в новом [объекте personInterest](../resources/personinterest.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Содержит категории, которые пользователь связал с интересом (например, персональный, реЦипиес). |
-|коллаборатионтагс|Коллекция строк|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
-|description|String|Содержит описание интереса.|
-|displayName|String|Содержит понятное имя для интереса.  |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|webUrl|String|Содержит ссылку на веб-страницу или ресурс, представляющие интерес. |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, связанные с интересом пользователя (например, личные, личные). |
+|collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
+|description|String|Содержит описание интерес.|
+|displayName|String|Содержит удобное имя для интереса.  |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|webUrl|String|Содержит ссылку на веб-страницу или ресурс об интересе. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [персонинтерест](../resources/personinterest.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект personInterest](../resources/personinterest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,9 +113,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

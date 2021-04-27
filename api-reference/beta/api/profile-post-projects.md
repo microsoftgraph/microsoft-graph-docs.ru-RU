@@ -1,24 +1,24 @@
 ---
-title: Создание ПрожектпартиЦипатион
-description: Используйте этот API для создания нового ПрожектпартиЦипатион.
+title: Создание projectParticipation
+description: Используйте этот API для создания нового projectParticipation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2484fc7282d984bb06e7ee6390d116bf0f5b0657
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7fdfc23831b30495f35f1eb4c4d82e863bba07fd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979578"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036795"
 ---
-# <a name="create-projectparticipation"></a>Создание ПрожектпартиЦипатион
+# <a name="create-projectparticipation"></a>Создание projectParticipation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый объект [прожектпартиЦипатион](../resources/projectParticipation.md) в [профиле](../resources/profile.md)пользователя.
+Используйте этот API для создания нового [объекта projectParticipation](../resources/projectParticipation.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48979578"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,28 +48,28 @@ POST /users/{id | userPrincipalName}/profile/projects
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [прожектпартиЦипатион](../resources/projectparticipation.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [projectParticipation.](../resources/projectparticipation.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [прожектпартиЦипатион](../resources/projectParticipation.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить при создании нового объекта [projectParticipation](../resources/projectParticipation.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Содержит категории, связанные с проектом пользователем (например, цифровое преобразование, гидростенд). |
-|Клиенты|[компанидетаил](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для которого выполнялся проект. |
-|коллаборатионтагс|Коллекция строк|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
-|коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Список людей, которые также работали над проектом. |
-|описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о роли пользователя в проекте.|
-|displayName|String|Содержит понятное имя проекта.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|спонсорами|Коллекция [релатедперсон](../resources/relatedperson.md)|Пользователь или люди, которые спонсорируют проект.    |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, которые пользователь связал с проектом (например, цифровая трансформация, нефтяная вышка). |
+|клиент|[companyDetail](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для который был проект. |
+|collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
+|коллеги|[коллекция relatedPerson](../resources/relatedperson.md)|Списки людей, которые также работали над проектом. |
+|подробные|[positionDetail](../resources/positiondetail.md)|Содержит сведения о роли пользователя в проекте.|
+|displayName|String|Содержит удобное имя для проекта.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|спонсоры|[коллекция relatedPerson](../resources/relatedperson.md)|Лицо или люди, которые спонсировали проект.    |
 
 ## <a name="relationships"></a>Связи
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [прожектпартиЦипатион](../resources/projectparticipation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201, Created` [объект projectParticipation](../resources/projectparticipation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -131,9 +131,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

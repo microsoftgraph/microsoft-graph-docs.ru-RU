@@ -2,16 +2,15 @@
 title: тип ресурсов relatedContact
 description: Запись контактов, связанная с educationUser, который предоставляет информацию для опекунов, помощников, врачей и так далее.
 author: mmast-msft
-ms.author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 37c494d58896af34c1da12e6e500a0561d877911
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4859492f016b88a39c375d3556270f5496b8b318
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960336"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035955"
 ---
 # <a name="relatedcontact-resource-type"></a>тип ресурсов relatedContact
 
@@ -31,8 +30,8 @@ ms.locfileid: "50960336"
 
 | Свойство      | Тип                | Описание                                                                                                                                |
 | :------------ | :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName   | Строка              | Имя контакта. Обязательный.                                                                                                             |
-| accessConsent | Boolean             | Указывает, было ли получено согласие пользователя на доступ к данным учащихся.                                                                      |
+| displayName   | String              | Имя контакта. Обязательный.                                                                                                             |
+| accessConsent | Логический             | Указывает, было ли получено согласие пользователя на доступ к данным учащихся.                                                                      |
 | emailAddress  | String              | Адрес электронной почты контакта.                                                                                                              |
 | mobilePhone   | String              | Номер мобильного телефона контакта.                                                                                                        |
 | Отношение  | contactRelationship | Отношение к пользователю. Возможные значения: `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`. |

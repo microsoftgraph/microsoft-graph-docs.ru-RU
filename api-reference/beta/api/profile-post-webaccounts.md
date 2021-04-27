@@ -1,24 +1,24 @@
 ---
-title: Создание учетной записи
-description: Создайте новый объект учетной записи.
+title: Создание webAccount
+description: Создание нового объекта webAccount.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 697791bff68443cedd3e094c8ae2d3706ab2b072
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2d41cb9fe650fa8d506f8ea9c218a01d4f2c0605
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972655"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036767"
 ---
-# <a name="create-webaccount"></a>Создание учетной записи
+# <a name="create-webaccount"></a>Создание webAccount
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый объект [учетной записи](../resources/webaccount.md) в [профиле](../resources/profile.md)пользователя.
+Создание нового [объекта webAccount](../resources/webaccount.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48972655"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [учетной записи](../resources/webaccount.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [webAccount.](../resources/webaccount.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [учетной записи](../resources/webaccount.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить при создании нового объекта [webAccount](../resources/webaccount.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|служба|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|статусмессаже|String|Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано. |
-|userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Содержит описание, предоставленное пользователем для учетной записи в службе, на который ссылается.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|служба|[serviceInformation](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|statusMessage|String|Содержит сообщение о состоянии облачной службы при условии или синхронизации. |
+|userId|String|Имя пользователя, отображаемая для webaccount.  |
 |webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [учетной записи](../resources/webaccount.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый `201, Created` [объект webAccount](../resources/webaccount.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,9 +113,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

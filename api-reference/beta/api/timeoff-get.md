@@ -1,24 +1,24 @@
 ---
-title: Получение Тимеофф
-description: Получение Тимеофф по ИДЕНТИФИКАТОРу.
+title: Get timeOff
+description: Получите timeOff по ID.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4a26b0e1048a4a43a0dad833c07d901367cf40f9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cdd981d4638fc80d5ed9999a37fd3c15ff085be
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981452"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036333"
 ---
-# <a name="get-timeoff"></a>Получение Тимеофф
+# <a name="get-timeoff"></a>Get timeOff
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [тимеофф](../resources/timeoff.md) по идентификатору.
+Извлечение свойств и связей объекта [timeOff](../resources/timeoff.md) по ID.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +28,11 @@ ms.locfileid: "48981452"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
+|Для приложений | Schedule.Read.All *, Schedule.ReadWrite.All* |
 
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
+>\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает параметры запросов OData для настройки отклика.
+Этот метод не поддерживает параметры запроса OData для настройки ответа.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -58,7 +58,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеофф](../resources/timeoff.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -95,9 +95,9 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

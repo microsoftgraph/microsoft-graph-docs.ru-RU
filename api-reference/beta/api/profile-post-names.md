@@ -1,16 +1,16 @@
 ---
 title: Создание personName
-description: Используйте этот API, чтобы создать новый personName в профиле пользователя.
+description: Используйте этот API, чтобы создать новое имя пользователя в профиле пользователя.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b8cc9365132d102698edceb18c36838bfd8a3b2f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f29c138fbf2a0dfe374111bfa6f9d2511f5e62b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974763"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036886"
 ---
 # <a name="create-personname"></a>Создание personName
 
@@ -18,7 +18,7 @@ ms.locfileid: "48974763"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый объект [PersonName](../resources/personname.md) в [профиле](../resources/profile.md)пользователя.
+Используйте этот API для создания нового [объекта personName](../resources/personname.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48974763"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,30 +47,30 @@ POST /users/{id | userPrincipalName}/profile/names
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [PersonName](../resources/personname.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [personName.](../resources/personname.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании объекта [PersonName](../resources/personname.md) .
+В следующей таблице показаны свойства, которые можно установить при создании [объекта personName.](../resources/personname.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Предоставляет упорядоченную визуализацию имени и фамилии в зависимости от языкового стандарта пользователя или устройства.|
-|первыми|String|Имя пользователя.|
-|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Предоставляет упорядоченную отрисовку firstName и lastName в зависимости от локализа пользователя или устройства.|
+|во-первых|String|Имя пользователя.|
+|id|String|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |initials|String|Инициалы пользователя.|
-|лангуажетаг|String|Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.   |
-|Фамили|String|Фамилия пользователя.|
-|маиден|String|Маиден имя пользователя. |
-|назван|String|Отчество пользователя.|
-|прозвищ|String|Псевдоним пользователя.|
-|произношение|[йомиперсоннаме](../resources/yomipersonname.md)|Руководство по произношению имени пользователя.|
-|суффикс|String|Обозначения, используемые после имени пользователя (например, "доктор").  |
-|title|String|Хонорификс используется для префикса имени пользователя (например, Dr, Sir, мадам, MRS).|
+|LanguageTag|String|Содержит имя языка (en-US, no-NB, ru-AU) в формате IETF BCP47.   |
+|последний|String|Фамилия пользователя.|
+|maiden|String|Девичья фамилия пользователя. |
+|средний|String|Среднее имя пользователя.|
+|nickname|String|Прозвище пользователя.|
+|произношение|[yomiPersonName](../resources/yomipersonname.md)|Руководство по произносить имя пользователей.|
+|суффикс|String|Назначенные элементы, используемые после имени пользователей (например: PhD.)  |
+|title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Msam, Mrs.)|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [PersonName](../resources/personname.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201, Created` новый [объект personName](../resources/personname.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -118,9 +118,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

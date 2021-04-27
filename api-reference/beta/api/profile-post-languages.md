@@ -1,24 +1,24 @@
 ---
-title: Создание ЛангуажепрофиЦиенци
-description: Используйте этот API для создания нового ЛангуажепрофиЦиенци.
+title: Создание languageProficiency
+description: Используйте этот API для создания нового languageProficiency.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 38e46c90841e48358cef9fc4f7f486c2ea5da2e7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e8e550450c3fbc07eacd62378fa587d59fed9990
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979593"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036907"
 ---
-# <a name="create-languageproficiency"></a>Создание ЛангуажепрофиЦиенци
+# <a name="create-languageproficiency"></a>Создание languageProficiency
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый объект [лангуажепрофиЦиенци](../resources/languageproficiency.md) в [профиле](../resources/profile.md)пользователя.
+Используйте этот API для создания нового [объекта languageProficiency](../resources/languageproficiency.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48979593"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/languages
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [лангуажепрофиЦиенци](../resources/languageproficiency.md) в формате JSON.
+В теле запроса поставляют представление JSON объекта [languageProficiency.](../resources/languageproficiency.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [лангуажепрофиЦиенци](../resources/languageproficiency.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить при создании нового объекта [languageProficiency](../resources/languageproficiency.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Содержит имя языка в длинном формате. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|ознакомлен|лангуажепрофиЦиенцилевел|Представляет сведения о том, как пользователи читают сведения о языке, представленном объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|произносимого|лангуажепрофиЦиенцилевел|Представляет знание пользователей для языка, представленного объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|tag|String|Содержит четырехзначный BCP47 Name для языка (EN-US, No-NetBIOS, en-AU).|
-|образом|лангуажепрофиЦиенцилевел|Представляет пользователей, которым предназначено знание языка, представленного объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Содержит длинноформивное имя языка. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|чтение|languageProficiencyLevel|Представляет понимание чтения пользователями языка, представленного объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|разговорный|languageProficiencyLevel|Представляет для пользователей уровень владения языком, представленным объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|tag|String|Содержит имя BCP47 с четырьмя символами для языка (ru-US, no-NB, ru-AU).|
+|написана|languageProficiencyLevel|Представляет пользователям письменное знание языка, представленного объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [лангуажепрофиЦиенци](../resources/languageproficiency.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и новый `201, Created` [объект languageProficiency](../resources/languageproficiency.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -112,9 +112,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

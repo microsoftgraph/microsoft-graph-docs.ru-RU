@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: c457cc3c70e1a3f7cafec9a929c68ed3b7fddcea
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a66834f5937b8dea55391553536670ff06ae83c6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441202"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037377"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
@@ -43,14 +43,14 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|reason|string|Необязательный параметр. Причина для этого вызова.|
-|ticketNumber|string|Необязательный параметр. Номер билета, связанный с этим действием.|
-|ticketSystem|string|Необязательный параметр. Система билетов.|
+|reason|string|Необязательно. Причина для этого вызова.|
+|ticketNumber|string|Необязательно. Номер билета, связанный с этим действием.|
+|ticketSystem|string|Необязательно. Система билетов.|
 
 ## <a name="response"></a>Отклик
 
@@ -97,7 +97,7 @@ Content-length: 110
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,24 +1,24 @@
 ---
-title: Создание Персонвебсите
-description: Создание нового Персонвебсите.
+title: Создание personWebsite
+description: Создание нового personWebsite.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 46760fe344e924e29ba183e86ab0388b6893ad5a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f05a1cab47ef5500242cbda9fd0452a4e78a4750
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980880"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036712"
 ---
-# <a name="create-personwebsite"></a>Создание Персонвебсите
+# <a name="create-personwebsite"></a>Создание personWebsite
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [персонвебсите](../resources/personwebsite.md) в [профиле](../resources/profile.md)пользователя.
+Создание нового [объекта personWebsite](../resources/personwebsite.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48980880"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,23 +48,23 @@ POST /users/{id | userPrincipalName}/profile/websites
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [персонвебсите](../resources/personwebsite.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта personWebsite.](../resources/personwebsite.md)
 
-В следующей таблице приведены свойства, которые можно задать в новом объекте [персонвебсите](../resources/personwebsite.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно задать в новом [объекте personWebsite](../resources/personwebsite.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Содержит категории, связанные с веб-сайтом пользователя (например, персональный, рецепты).|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, связанные с веб-сайтом (например, личные, рецепты).|
 |description|String|Содержит описание веб-сайта.|
-|displayName|String|Содержит понятное имя для веб-сайта.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|displayName|String|Содержит удобное имя веб-сайта.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на сам веб-сайт.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [персонвебсите](../resources/personwebsite.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа и `201, Created` новый [объект personWebsite](../resources/personwebsite.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -111,9 +111,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

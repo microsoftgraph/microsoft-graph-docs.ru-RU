@@ -1,24 +1,24 @@
 ---
-title: Список Тимесофф
-description: Получение списка Тимесофф в этом расписании.
+title: Список timesOff
+description: Получите список timesOff в этом расписании.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0eaebbc1c5777f4c7d96d442076e2a382dfebea4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aec47b6dcd27c9e9b05a4794e1fdef3465e06eec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970576"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036676"
 ---
-# <a name="list-timesoff"></a>Список Тимесофф
+# <a name="list-timesoff"></a>Список timesOff
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка экземпляров [тимеофф](../resources/timeoff.md) по [расписанию](../resources/schedule.md).
+Получите список экземпляров [timeOff](../resources/timeoff.md) в [расписании.](../resources/schedule.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "48970576"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ ms.locfileid: "48970576"
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает $filter [параметр запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр запроса $filter [OData,](/graph/query-parameters) чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,13 +54,13 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тимеофф](../resources/timeoff.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, который получает все объекты **тимеофф** с общей версией и черновой версией в диапазоне от 11 марта 2019 г.
+Ниже приводится пример запроса, который получает все объекты **timeOff,** которые имеют общую версию и черновик версии в период с 11 марта по 18 марта 2019 г.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,9 +91,9 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

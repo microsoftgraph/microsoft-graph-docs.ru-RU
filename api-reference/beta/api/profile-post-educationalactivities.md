@@ -1,24 +1,24 @@
 ---
-title: Создание образовательной активности
-description: Создайте новую функцию educationalActivity.
+title: Создание educationalActivity
+description: Создание новой образовательной активности.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 43bd9ca20cf7fb151b92108b16a021aa65a1cd03
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 366417fd6cf8e218bf7fc3a0fe2f14bc9c0ac4d3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292111"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036942"
 ---
-# <a name="create-educationalactivity"></a>Создание образовательной активности
+# <a name="create-educationalactivity"></a>Создание educationalActivity
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте [новую возможность для образовательных учреждений](../resources/educationalactivity.md) в профиле [пользователя.](../resources/profile.md)
+Создание новой [образовательной активности](../resources/educationalactivity.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса включите представление объекта [educationalActivity](../resources/educationalactivity.md) в JSON.
+В теле запроса поставляем представление JSON объекта [educationalActivity.](../resources/educationalactivity.md)
 
-В следующей таблице показаны свойства, которые можно настроить при создании объекта [educationalActivity](../resources/educationalactivity.md) в профиле [пользователя.](../resources/profile.md)
+В следующей таблице показаны свойства, которые можно установить при создании нового объекта [educationalActivity](../resources/educationalactivity.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется [от itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Дата|Месяц и год, когда пользователь выполнил или выполнил действие. |
-|endMonthYear|Дата|Месяц и год, когда пользователь выполнил образовательные действия, на которые ссылается пользователь.|
-|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если сущность создается или изменяется приложением. Наследуется [от itemFacet](../resources/itemfacet.md).|
-|institution|[institutionData](../resources/institutiondata.md)|Содержит сведения об учреждении, по изучить в. |
-|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
-|source|[personDataSource](../resources/persondatasource.md)|Где значения возникают, если синхронизированы из другой службы. Наследуется [от itemFacet](../resources/itemfacet.md).|
-|startMonthYear|Дата|Месяц и год, когда пользователь начал действие, на который ссылается пользователь.|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Date|Месяц и год, когда пользователь закончил или завершил действие. |
+|endMonthYear|Date|Месяц и год, когда пользователь завершил ссылаемую образовательную деятельность.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|учреждение|[institutionData](../resources/institutiondata.md)|Содержит сведения об изучаемом учреждении. |
+|программа|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|startMonthYear|Date|Месяц и год, когда пользователь начал со ссылкой на действие.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `201 Created` [объект educationalActivity](../resources/educationalactivity.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` новый [объект educationalActivity](../resources/educationalactivity.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -135,9 +135,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -1,24 +1,24 @@
 ---
-title: Обновление Персонанниверсари
-description: Обновление свойств объекта Персонанниверсари.
+title: Обновление personAnniversary
+description: Обновление свойств объекта personAnniversary.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2951ccaf9368aec3bc28fdf6ab278437f5b9d18d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7506a62e45246de610ab31d6cd04fa042b0492c4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968449"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037853"
 ---
-# <a name="update-personanniversary"></a>Обновление Персонанниверсари
+# <a name="update-personanniversary"></a>Обновление personAnniversary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [персонанниверсари](../resources/personanniversary.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [personAnniversary](../resources/personanniversary.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48968449"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,18 +50,18 @@ PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-В следующей таблице приведены свойства, которые можно обновлять в существующем объекте [персонанниверсари](../resources/personanniversary.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно обновить в существующем объекте [personAnniversary](../resources/personanniversary.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|date|Date|Содержит дату, связанную с типом юбилея.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|type|анниверсаритипе|Тип юбилея даты. Возможные значения: `birthday`, `wedding`, `unknownFutureValue`.|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|date|Date|Содержит дату, связанную с юбилейным типом.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|type|anniversaryType|Тип юбилея, который представляет дата. Возможные значения: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонанниверсари](../resources/personanniversary.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект personAnniversary](../resources/personanniversary.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,9 +103,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
